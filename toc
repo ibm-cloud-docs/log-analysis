@@ -6,14 +6,14 @@ LogDNA
 
     {: .navgroup id="learn"}
     index.md
-    logdna_overview.md
+    overview.md
 
     {: .navgroup-end}
 
     {: .navgroup id="how"}
-    logdna_provision.md
-    logdna_ingestion_key.md
-    logdna_launch_webui.md
+    provision.md
+    ingestion_key.md
+    launch_webui.md
     {: .navgroup-end}
 
     {: .navgroup id="reference"}
