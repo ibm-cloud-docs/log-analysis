@@ -16,8 +16,8 @@ lastupdated: "2018-10-15"
 {:download: .download}
 
 
-# Tutorial: Managing Kubernetes cluster logs with IBM Log Analysis with LogDNA
-{: #tutorial1}
+# Managing Kubernetes cluster logs with IBM Log Analysis with LogDNA
+{: #kube}
 
 Use IBM Log Analysis with LogDNA to add log management capabilities to your {{site.data.keyword.Bluemix}} architecture. IBM Log Analysis with LogDNA is operated by LogDNA in partnership with {{site.data.keyword.IBM_notm}}.
 {:shortdesc}
