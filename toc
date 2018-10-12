@@ -10,7 +10,7 @@ LogDNA
 
     {: .navgroup-end}
 
-    {: .navgroup id="how"}
+    {: .navgroup id="how-to"}
     provision.md
     ingestion_key.md
     launch_webui.md
