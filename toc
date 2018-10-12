@@ -2,12 +2,11 @@
 {:topicgroup: .topicgroup}
 
 {: .toc subcollection="LogDNA" audience="service" href="/docs/services/LogDNA/index.html"}
-LogDNA
+IBM Log Analysis with LogDNA
 
     {: .navgroup id="learn"}
     index.md
     overview.md
-
     {: .navgroup-end}
 
     {: .navgroup id="howto"}
@@ -24,5 +23,4 @@ LogDNA
 
     {: .navgroup id="help"}
     gettinghelp.md
-
     {: .navgroup-end}
