@@ -7,6 +7,10 @@ IBM Log Analysis with LogDNA
     {: .navgroup id="learn"}
     index.md
     overview.md
+
+    {: .topicgroup}
+    Tutorials
+        tutorials/kube.md
     {: .navgroup-end}
 
     {: .navgroup id="howto"}
