@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018
-lastupdated: "2018-10-15"
+lastupdated: "2018-10-22"
 
 ---
 
@@ -33,11 +33,13 @@ To get the ingestion key for an IBM Log Analysis with LogDNA instance by using t
 
 	After you log in with your user ID and password, the {{site.data.keyword.Bluemix_notm}} UI opens.
 
-2. In the navigation menu, select **Observability**. The list of IBM Log Analysis with LogDNA instances that are available on {{site.data.keyword.Bluemix_notm}} is displayed.
+2. In the navigation menu, select **Observability**. 
+
+3. Select **Logging**. The IBM Log Analysis with LogDNA dashboard opens. You can see the list of logging instances that are available on {{site.data.keyword.Bluemix_notm}}.
 
 3. Identify the instance for which you want to get the ingestion key, and click **View ingestion key**.
 
-4. A pop up window opnes where you can click **Show** to view the ingestion key.
+4. A pop up window opens where you can click **Show** to view the ingestion key.
 
 
 

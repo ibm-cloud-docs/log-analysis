@@ -56,7 +56,7 @@ After you provision an instance, the *Edit sources* page opens. A service ID is 
 Next, configure a log source by adding a LogDNA agent. This agent is responsible for collecting and forwarding logs to LogDNA.
 
 
-## Provisioning a LogDNA instance through the CLI
+## Provisioning an instance through the CLI
 {: #logdna_provision_cli}
 
 To provision an instance of IBM Log Analysis with LogDNA through the command line, complete the following steps:
@@ -78,36 +78,36 @@ To provision an instance of IBM Log Analysis with LogDNA through the command lin
     ```
     ibmcloud resource service-instance-create NAME logdna SERVICE_PLAN_NAME LOCATION
     ```
-    {: pre}
+    {: codeblock}
 
     where
 
     * NAME is the name of the instance
     * *logdna** is the name of the IBM Log Analysis with LogDNA service in the {{site.data.keyword.Bluemix_notm}}
-    * SERVICE_PLAN_NAME is the type of plan. Valid values are: `lite`, `ibm-7day`, `ibm-14day`, `ibm-30day`
-    * LOCATION is the region where the LogDNA instance is created
+    * SERVICE_PLAN_NAME is the type of plan. Valid values are: *lite*, *ibm-7day*, *ibm-14day*, *ibm-30day*
+    * LOCATION is the region where the LogDNA instance is created. Valid values are: *us-south*
 
-    For example, to provision a LogDNA instance with the 7 day retention plan, run the following command:
+    For example, to provision an instance with the 7 day retention plan, run the following command:
 
     ```
     ibmcloud resource service-instance-create logdna-instance-01 logdna ibm-7day us-south
     ```
-    {: pre}
+    {: codeblock}
 
 5. Create a service key with permissions to operate the instance. Run the [`ibmcloud resource service-key-create`](/docs/cli/reference/ibmcloud/cli_resource_group.html#ibmcloud_resource_service_key_create) command:
 
     ```
     ibmcloud resource service-key-create NAME ROLE_NAME --instance-name SERVICE_INSTANCE_NAME
     ```
-    {: pre}
+    {: codeblock}
 
     where
 
     * NAME is the name of the API key. Suggestion: Name the API key like the IBM Log Analysis with LogDNA instance. This will help you  identify the API key later on.
-    * ROLE_NAME is the role that defines the permissions that are enabled. Valid values are: `editor`, `operator`, `administrator`
-    * SERVICE_INSTANCE_NAME is the name of the LogDNA instance in the {{site.data.keyword.Bluemix_notm}}
+    * ROLE_NAME is the role that defines the permissions that are enabled. Valid values are: *editor*, *operator*, *administrator*
+    * SERVICE_INSTANCE_NAME is the name of the instance in the {{site.data.keyword.Bluemix_notm}}
 
-    For example, to create an API key for the instance `logdna-instance-01` with editor permissions on the service instance, run the following command:
+    For example, to create an API key for the instance *logdna-instance-01* with *editor* permissions on the service instance, run the following command:
 
     ```
     ibmcloud resource service-key-create logdna-instance-01 Editor --instance-name logdna-instance-01

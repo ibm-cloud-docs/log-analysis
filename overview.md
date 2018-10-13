@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018
-lastupdated: "2018-10-15"
+lastupdated: "2018-10-22"
 
 ---
 
@@ -108,13 +108,6 @@ IBM Log Analysis with LogDNA offers a **Free** plan that you can use to view you
 ## Regions
 {: #regions}
 
-Logging with IBM Log Analysis with LogDNA is available in the **US South** region only.
+Logging with IBM Log Analysis with LogDNA is available in the **US South** region only. The **US South** region is also known as the **Dallas** region.
 
 
-
-## Support
-{: #support}
-
-For {{site.data.keyword.Bluemix_notm}} provisioning, billing, or account issues, submit a ticket through the IBM Cloud Support Center. For information about opening an IBM support ticket, or about support levels and ticket severities, see [Contacting support](/docs/get-support/howtogetsupport.html#getting-customer-support).
-
-For LogDNA issues, ......
