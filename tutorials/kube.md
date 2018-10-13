@@ -25,28 +25,23 @@ To manage cluster logs with the IBM Log Analysis with LogDNA service, you must p
 ## Before you begin
 {: #prereqs}
 
-You will be working in the US-South region.
+You will be working in the US-South region. Both resources, the IBM Log Analysis with LogDNA instance and the Kubernetes cluster are running in the same account.
 
 Read about IBM Log Analysis with LogDNA. For more information, see [About LogDNA](/docs/services/Log-Analysis-with-LogDNA/overview.html#about).
 
 You must have a user ID that is a member or an owner of an {{site.data.keyword.Bluemix_notm}} account. To get an {{site.data.keyword.Bluemix_notm}} user ID, go to: [Registration ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://console.bluemix.net/registration/){:new_window}.
 
-Your {{site.data.keyword.IBM_notm}}ID has `viewer` role for the `Default` resource group. 
+Your {{site.data.keyword.IBM_notm}}ID has `editor` role for the `Default` resource group for . 
 
 Your {{site.data.keyword.IBM_notm}}ID has `editor` service role for the IBM Log Analysis with LogDNA service. 
 
 Your {{site.data.keyword.IBM_notm}}ID has `editor` permissions for the Kubernetes Cloud service to work with a standard cluster in the US-South region.
 
-Your {{site.data.keyword.IBM_notm}}ID has `editor` permissions for the Cluster instance in the US-South region.
+Your {{site.data.keyword.IBM_notm}}ID has `editor` permissions for the Cluster instance in the US-South region. For more information, see [User access permissions](/docs/containers/cs_access_reference.html#understanding).
 
 Install the {{site.data.keyword.Bluemix_notm}} CLI. For more information, see [Installing the {{site.data.keyword.Bluemix_notm}} CLI](/docs/cli/index.html#overview).
 
-Install the Kubernetes CLI plugin. Run the following command: 0--> Check steps
-
-    ```
-    ibmcloud plugin install logging-cli -r Bluemix
-    ```
-    {: codeblock}
+Install the Kubernetes CLI plugin. For more information, see [Installing the CLI](/docs/containers/cs_cli_install.html#cs_cli_install).
 
 
 ## Step1: Provision an IBM Log Analysis with LogDNA instance
@@ -80,7 +75,7 @@ To provision an instance of IBM Log Analysis with LogDNA through the {{site.data
 
     By default, the **Free** plan is set.
 
-    For more information about other service plans, see [Service plans](/docs/services/.....).
+    For more information about other service plans, see [Pricing plans](/docs/services/Log-Analysis-with-LogDNA/overview.html#pricing_plans).
 
 9. To provision the IBM Log Analysis with LogDNA service in the {{site.data.keyword.Bluemix_notm}} resource group where you are logged in, click **Create**.
 
@@ -97,22 +92,29 @@ To configure your Kubernetes cluster to send logs to your IBM Log Analysis with 
 
 To configure your Kubernetes cluster to forward logs to your LogDNA instance, complete the following steps from the command line:
 
-1. Open a terminal. Then, log in to the {{site.data.keyword.Bluemix_notm}}. Run the following command:
+1. Open a terminal. Then, log in to the {{site.data.keyword.Bluemix_notm}}. Run the following command and follow the prompts:
 
     ```
+    ibmcloud login -a api.ng.bluemix.net
     ```
     {: codeblock}
 
-2. Set the cluster context. Run the following commands:
+    Select the account where you have provisioned the IBM Log Analysis with LogDNA instance.
+
+2. Set up the cluster environment. Run the following commands:
+
+    First, get the command to set the environment variable and download the Kubernetes configuration files.
 
     ```
+    ibmcloud ks cluster-config <cluster_name_or_ID>
     ```
     {: codeblock}
 
-    ```
-    ```
-    {: codeblock}
+    When the download of the configuration files is finished, a command is displayed that you can use to set the path to the local Kubernetes configuration file as an environment variable.
 
+    Then, copy and paste the command that is displayed in your terminal to set the KUBECONFIG environment variable.
+
+    **Note:** Every time you log in to the {{site.data.keyword.containerlong}} CLI to work with clusters, you must run these commands to set the path to the cluster's configuration file as a session variable. The Kubernetes CLI uses this variable to find a local configuration file and certificates that are necessary to connect with the cluster in {{site.data.keyword.Bluemix_notm}}.
 
 2. Add a secret to your Kubernetes cluster. Run the following command:
 
@@ -127,7 +129,7 @@ To configure your Kubernetes cluster to forward logs to your LogDNA instance, co
 3. Configure the LogDNA agent on every worker(node) of your Kubernetes cluster. Run the following command:
 
     ```
-    kubectl create -f https://raw.githubusercontent.com/logdna/logdna-agent/master/logdna-agent-ds.yaml
+    kubectl create -f https://raw.github.ibm.com/alchemy-logging/vendor-config/master/logdna-agent-ibm-staging-ds.yaml
     ```
     {: pre}
 
