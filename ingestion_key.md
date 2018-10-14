@@ -84,14 +84,5 @@ To get the ingestion key for an IBM Log Analysis with LogDNA instance through th
     The output from this command includes the field **ingestion_key** that contains the ingestion key for the LogDA instance.
 
 
-## Changing the ingestion key
-{: #logdna_change_key}
-
-If the ingestion key is compromissed, you can change it from the LogDNA web UI if you have the correct permissions.
-
-After you reset the value, you must create a new serviceID for the LogDNA instance in the {{site.data.keyword.Bluemix_notm}}, and update log sources with the new ingestion key.
-
-*****Check with LogDNA link to their docs where they document the process to reset the ingestion key.********
-
 
 

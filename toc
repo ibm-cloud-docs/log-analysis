@@ -7,7 +7,6 @@ IBM Log Analysis with LogDNA
     {: .navgroup id="learn"}
     index.md
     overview.md
-    integration.md
 
     {: .topicgroup}
     Tutorials
@@ -15,13 +14,13 @@ IBM Log Analysis with LogDNA
     {: .navgroup-end}
 
     {: .navgroup id="howto"}
+    launch_webui.md
+    iam.md
     provision.md
     ingestion_key.md
-    launch_webui.md
     {: .navgroup-end}
 
     {: .navgroup id="reference"}
-    iam.md
     [LogDNA Product Page](https://logdna.com/)
     [LogDNA Documentation](https://docs.logdna.com/docs)
     [LogDNA Blog](https://blog.logdna.com/)
