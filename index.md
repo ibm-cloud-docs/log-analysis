@@ -36,8 +36,38 @@ You must have a user ID that is a member or an owner of an {{site.data.keyword.B
 Install the {{site.data.keyword.Bluemix_notm}} CLI. For more information, see [Installing the {{site.data.keyword.Bluemix_notm}} CLI](/docs/cli/index.html#overview).
 
 
-## Step1: Choose a cloud resource for which you want to manage logs
+## Step1: Identify the IAM policies that a user needs to work with IBM Log Analysis with LogDNA
 {: #step1}
+
+As the **account owner** or as an **IBM Log Analysis with LogDNA service administrator**, you must have permissions to run the following actions: 
+
+* Grant other account members access to work with the service
+* Provision a service instance
+* Delete a service instance
+* View details of a service instance
+* Create a service ID
+
+Therefore, you need to have an IAM policy for the IBM Log Analysis with LogDNA service with the platform role **Administrator**.
+
+As a **Devops user**, you must have permissions to run the following actions: 
+
+* Provision a service instance
+* Delete a service instance
+* View details of a service instance
+* Create a service ID
+
+Therefore, you need to have an IAM policy for the IBM Log Analysis with LogDNA service with the platform role **Editor**.
+
+For **developers** and **auditors**, you must have permissions to run the following actions: 
+
+* View logs
+* Search logs
+* Filter logs
+
+Therefore, you need to have an IAM policy for the IBM Log Analysis with LogDNA service with the service role **Writer**, or **Manager**.
+
+## Step2: Choose a cloud resource for which you want to manage logs
+{: #step2}
 
 The following table lists cloud resources that you can configure to store and manage logs by using the IBM Log Analysis with LogDNA service. Complete the tutorial for a resource to get started working with the {{site.data.keyword.loganalysisshort}} service:
 
@@ -63,16 +93,7 @@ The following table lists cloud resources that you can configure to store and ma
   </tr>
 </table>
 
-## Step2: Identify the IAM policies that you need for different types of users
-{: #step2}
 
-For account administrators
-
-For service administrators
-
-For service operators
-
-For viewers
 
 ## Next steps
 {: #next_steps}
