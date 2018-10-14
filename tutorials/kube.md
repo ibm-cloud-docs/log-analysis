@@ -31,13 +31,17 @@ Read about IBM Log Analysis with LogDNA. For more information, see [About LogDNA
 
 You must have a user ID that is a member or an owner of an {{site.data.keyword.Bluemix_notm}} account. To get an {{site.data.keyword.Bluemix_notm}} user ID, go to: [Registration ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://console.bluemix.net/registration/){:new_window}.
 
-Your {{site.data.keyword.IBM_notm}}ID has `editor` role for the `Default` resource group for . 
+Your {{site.data.keyword.IBM_notm}}ID must have assigned IAM policies for each of the following resources: 
 
-Your {{site.data.keyword.IBM_notm}}ID has `editor` service role for the IBM Log Analysis with LogDNA service. 
+| Resource                             | Scope of the access policy | Role    | Region    | Information                  |
+|--------------------------------------|----------------------------|---------|-----------|------------------------------|
+| Resource group **Default**           |                            | Editor  | us-south  | This policy is required to allow your user to provision the IBM Log Analysis with LogDNA service within the Default resource group.    |
+| IBM Log Analysis with LogDNA service |                            | Editor  | us-south  | This policy is required to allow your user to provision and administer the IBM Log Analysis with LogDNA service.   |
+| {{site.data.keyword.containerlong}}  |                            | Editor  | us-south  | This policy is required to configure the LogDNA agent in the Kubernetes cluster. |
+| Cluster instance                     |                            | Editor  | us-south  | This policy is required to    |
+{: caption="Table 1. List of IAM policies required to complete the tutorial" caption-side="top"} 
 
-Your {{site.data.keyword.IBM_notm}}ID has `editor` permissions for the Kubernetes Cloud service to work with a standard cluster in the US-South region.
-
-Your {{site.data.keyword.IBM_notm}}ID has `editor` permissions for the Cluster instance in the US-South region. For more information, see [User access permissions](/docs/containers/cs_access_reference.html#understanding).
+For more information about the {{site.data.keyword.containerlong}} IAM roles, see [User access permissions](/docs/containers/cs_access_reference.html#understanding).
 
 Install the {{site.data.keyword.Bluemix_notm}} CLI. For more information, see [Installing the {{site.data.keyword.Bluemix_notm}} CLI](/docs/cli/index.html#overview).
 

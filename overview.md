@@ -93,17 +93,35 @@ Control the cost of your logging infrastructure in the IBM Cloud by configuring 
 ## Pricing plans
 {: #pricing_plans}
 
-Different pricing plans are available that you can choose for an IBM Log Analysis with LogDNA instance. Each plan defines the number of days that data is retained, the number of users allowed to manage the data, and the LogDNA features that are enabled.
+Different pricing plans are available that you can choose for an IBM Log Analysis with LogDNA instance. Each plan defines the number of days that data is retained for search, the number of users allowed to manage the data, and the LogDNA features that are enabled.
 
-| Plan                 | 
-|----------------------|
-| `30 days log search` |
-| `14 days log search` |
-| `7 days log search`  |
-| `Free LogDNA plan`   |
+| Plan                     | 
+|--------------------------|
+| `30 days log retention`  |
+| `14 days log retention`  |
+| `7 days log retention`   |
+| `Free `                  |
 {: caption="Table 1. List of service plans" caption-side="top"} 
 
 IBM Log Analysis with LogDNA offers a **Free** plan that you can use to view your logs as they pass through the system. You can view logs by using log tailing. You can also design filters to prepare for upgrading to a longer retention period plan. This plan has a 0-day retention period.
+
+The following tables outlines the different features that are included in each service plan:
+
+| Feature                    | Plan: `30 days log retention` | Plan: `14 days log retention` | Plan: `7 days log retention | Plan: `Free` | 
+|----------------------------------|-------------------------|-------------------------------|-----------------------------|--------------|
+| `Logs are stored and searchable` | Yes - for 30 days       | Yes - for 14 days             | Yes - for 7 days            | No           |
+| `Unlimited hosts and sources`    | Yes                     | Yes                           | Yes                         | Yes          |
+| `Live streaming tail`            | Yes                     | Yes                           | Yes                         | Yes          |
+| `Command Line (CLI) tail`        | Yes                     | Yes                           | Yes                         | No           |
+| `Unlimited saved views`          | Yes                     | Yes                           | Yes                         | No           |
+| `Archiving`                      | Yes                     | Yes                           | Yes                         | No           |
+| `Automatic field parsing`        | Yes                     | Yes                           | Yes                         | No           |
+| `Custom fields`                  | Yes                     | Yes                           | Yes                         | No           |
+| `Dynamically tagged host groups` | Yes                     | Yes                           | Yes                         | No           |
+| `Business associate agreement`   | Yes                     | Yes                           | Yes                         | Yes          |
+{: caption="Table 2. List of features available for each service plan" caption-side="top"} 
+
+
 
 ## Regions
 {: #regions}
