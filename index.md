@@ -25,23 +25,21 @@ Use IBM Log Analysis with LogDNA to add log management capabilities to your {{si
 ## Before you begin
 {: #prereqs}
 
-Choose a region. Currently, the service is only availab le in the **us-south**, therefore, you will be working in the US-South region. 
-
-The Cloud resource and the IBM Log Analysis with LogDNA instance must be running in the same account, and in the same region.
-
 Read about IBM Log Analysis with LogDNA. For more information, see [About LogDNA](/docs/services/Log-Analysis-with-LogDNA/overview.html#about).
+
+Check the regions where the service is available. For more information, see [Regions](/docs/services/Log-Analysis-with-LogDNA/overview.html#regions).
+
+The Cloud resource for which you want to manage logs and the IBM Log Analysis with LogDNA instance that you must use to manage those logs must run in the same account and in the same region.
 
 You must have a user ID that is a member or an owner of an {{site.data.keyword.Bluemix_notm}} account. To get an {{site.data.keyword.Bluemix_notm}} user ID, go to: [Registration ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://console.bluemix.net/registration/){:new_window}.
 
 Install the {{site.data.keyword.Bluemix_notm}} CLI. For more information, see [Installing the {{site.data.keyword.Bluemix_notm}} CLI](/docs/cli/index.html#overview).
 
 
-## Step1: Choose a cloud resource for which you want to see logs
+## Step1: Choose a cloud resource for which you want to manage logs
 {: #step1}
 
-To view and manage logs in the {{site.data.keyword.Bluemix_notm}}, the resource needs to be configured to send logs to LogDNA by using the IBM Log Analysis with LogDNA.
-
-The following table lists cloud resources that you can configure to store and manage logs by using the IBM Log Analysis with LogDNA. Complete the tutorial for a resource to get started working with the {{site.data.keyword.loganalysisshort}} service:
+The following table lists cloud resources that you can configure to store and manage logs by using the IBM Log Analysis with LogDNA service. Complete the tutorial for a resource to get started working with the {{site.data.keyword.loganalysisshort}} service:
 
 <table>
   <caption>Tutorials to get started working with the IBM Log Analysis with LogDNA service </caption>

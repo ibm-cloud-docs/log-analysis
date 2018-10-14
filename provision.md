@@ -21,7 +21,7 @@ lastupdated: "2018-10-22"
 Before you can monitor and manage log data with IBM Log Analysis with LogDNA, you must first provision an instance of the service in {{site.data.keyword.Bluemix}}.
 {:shortdesc}
 
-To provision an IBM Log Analysis with LogDNA instance in a Public Cloud region, you must select the service plan that is associated with the instance, the region where your logs are collected, and the plan that determines the retention period for your logs. You can choose from 7, 14, or 30-day retention periods.
+To provision an IBM Log Analysis with LogDNA instance in a Public Cloud region, you must select the service plan that is associated with the instance, the region where your logs are collected, and the plan that determines the retention period for your logs. You can choose from 7, 15, or 30-day retention periods.
 
 Alternatively, IBM Log Analysis with LogDNA offers a **Free** plan that you can use to view your logs as they pass through the system. You can view logs by using log tailing. You can also design filters to prepare for upgrading to a longer retention period plan. This plan has a 0-day retention period.
 
@@ -84,7 +84,7 @@ To provision an instance of IBM Log Analysis with LogDNA through the command lin
 
     * NAME is the name of the instance
     * *logdna** is the name of the IBM Log Analysis with LogDNA service in the {{site.data.keyword.Bluemix_notm}}
-    * SERVICE_PLAN_NAME is the type of plan. Valid values are: *lite*, *ibm-7day*, *ibm-14day*, *ibm-30day*
+    * SERVICE_PLAN_NAME is the type of plan. Valid values are: *lite*, *ibm-7day*, *ibm-15day*, *ibm-30day*
     * LOCATION is the region where the LogDNA instance is created. Valid values are: *us-south*
 
     For example, to provision an instance with the 7 day retention plan, run the following command:
