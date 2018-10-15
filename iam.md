@@ -16,7 +16,7 @@ lastupdated: "2018-10-22"
 {:download: .download}
 
  
-# Managing user access with Identity and Access Management
+# Managing user access with Identity and Access Management (IAM)
 {: #iam}
 
 {{site.data.keyword.iamlong}} (IAM) enables you to securely authenticate users and control access to all cloud resources consistently in the {{site.data.keyword.Bluemix_notm}}. 
@@ -45,7 +45,7 @@ Choose any of the following actions to manage IAM policies in the {{site.data.ke
 * To revoke permissions, see [Removing access](/docs/iam/mngiam.html#removing-access).
 * To review a user's permissions, see [Reviewing your assigned access](/docs/iam/mngiam.html#reviewing-your-assigned-access).
 
-Note: To manage access or assign new access for users by using IAM policies, you must be the account owner, administrator on all services in the account, or an administrator for the particular service or service instance.{: tip}
+**Note:** To manage access or assign new access for users by using IAM policies, you must be the account owner, administrator on all services in the account, or an administrator for the particular service or service instance.{: tip}
 
 ## Granting permissions to a user to become an administrator of the service in the {{site.data.keyword.Bluemix_notm}} account
 {: #admin_account}

@@ -19,26 +19,45 @@ lastupdated: "2018-10-22"
 # Managing Kubernetes cluster logs with IBM Log Analysis with LogDNA
 {: #kube}
 
-To manage cluster logs with the IBM Log Analysis with LogDNA service, you must provision an instance
+Use the IBM Log Analysis with LogDNA service to configure cluster-level logging on the {{site.data.keyword.Bluemix}} for Kubernetes clusters. 
 {:shortdesc}
+
+From the moment you provision a Kubernetes cluster in the Cloud, you want to know what is happening inside the cluster. You need to access logs to troubleshoot problems and pre-empt issues. At any time, you want to have access to different types of logs such as worker logs, pod logs, application logs, or network logs. In addition, you want to monitor different sources of log data in your Kubernetes cluster. Therefore, your ability to manage and access log records from any of these sources is critical. Your success managing and monitoring logs depends on how you configure the logging capabilities for your Kubernetes platform.
+
+To configure cluster-level logging for a Kubernetes cluster, consider the following information:
+
+* You must be able to store log data, system logs, and containerized application logs on separate storage from Kubernetes system components.
+* You must configure every node (worker) in a cluster with a logging agent. Specifically, this agent collects and forwards logs to an external logging back-end.
+* You must be able to centralize log data for analysis on an external logging back-end.
+
+
+On the {{site.data.keyword.Bluemix_notm}}, to configure cluster-level logging for a Kubernetes cluster, you must complete the following steps:
+
+1. Provision an instance of the IBM Log Analysis with LogDNA service. With thios step, you configure a centralized log management system where log data is hosted on {{site.data.keyword.Bluemix_notm}}.
+2. Provision a cluster on the {{site.data.keyword.containerlong_notm}}. Kubernetes v1.9+ clusters are supported.
+3. Configure the LogDNA agent on every worker (node) in a cluster.
+
+![LogDNA component overview on the {{site.data.keyword.Bluemix_notm}}](../images/kube.png "LogDNA component overview on the {{site.data.keyword.Bluemix_notm}}")
+
+In this tutorial, you will learn how to configure cluster-level logging.
 
 ## Before you begin
 {: #prereqs}
 
-You will be working in the US-South region. Both resources, the IBM Log Analysis with LogDNA instance and the Kubernetes cluster are running in the same account.
+Work in the US-South region. Both resources, the IBM Log Analysis with LogDNA instance and the Kubernetes cluster must run in the same account.
 
 Read about IBM Log Analysis with LogDNA. For more information, see [About LogDNA](/docs/services/Log-Analysis-with-LogDNA/overview.html#about).
 
-You must have a user ID that is a member or an owner of an {{site.data.keyword.Bluemix_notm}} account. To get an {{site.data.keyword.Bluemix_notm}} user ID, go to: [Registration ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://console.bluemix.net/registration/){:new_window}.
+Use a user ID that is a member or an owner of an {{site.data.keyword.Bluemix_notm}} account. To get an {{site.data.keyword.Bluemix_notm}} user ID, go to: [Registration ![External link icon](../../../icons/launch-glyph.svg "External link icon")](https://console.bluemix.net/registration/){:new_window}.
 
 Your {{site.data.keyword.IBM_notm}}ID must have assigned IAM policies for each of the following resources: 
 
 | Resource                             | Scope of the access policy | Role    | Region    | Information                  |
 |--------------------------------------|----------------------------|---------|-----------|------------------------------|
-| Resource group **Default**           |                            | Editor  | us-south  | This policy is required to allow your user to provision the IBM Log Analysis with LogDNA service within the Default resource group.    |
-| IBM Log Analysis with LogDNA service |                            | Editor  | us-south  | This policy is required to allow your user to provision and administer the IBM Log Analysis with LogDNA service.   |
-| {{site.data.keyword.containerlong}}  |                            | Editor  | us-south  | This policy is required to configure the LogDNA agent in the Kubernetes cluster. |
-| Cluster instance                     |                            | Editor  | us-south  | This policy is required to    |
+| Resource group **Default**           |  Resource group            | Viewer  | us-south  | This policy is required to allow the user to see service instances in the Default resource group.    |
+| IBM Log Analysis with LogDNA service |  Resource group            | Editor  | us-south  | This policy is required to allow the user to provision and administer the IBM Log Analysis with LogDNA service in the Default resource group.   |
+| {{site.data.keyword.containerlong}}  |  Account                  | viewer  | us-south  | This policy is required to view details of the Kubernetes cluster. |
+| Cluster instance                     |  Account                   | Editor  | us-south  | This policy is required to configure the LogDNA agent in the Kubernetes cluster. |
 {: caption="Table 1. List of IAM policies required to complete the tutorial" caption-side="top"} 
 
 For more information about the {{site.data.keyword.containerlong}} IAM roles, see [User access permissions](/docs/containers/cs_access_reference.html#understanding).
@@ -86,7 +105,7 @@ To provision an instance of IBM Log Analysis with LogDNA through the {{site.data
 After you provision an instance, the IBM Log Analysis with LogDNA dashboard opens. 
 
 
-**Note:** To provision an instance of LogDNA through the CLI, see [Provisioning LogDNA through the {{site.data.keyword.Bluemix_notm}} CLI]().
+**Note:** To provision an instance of LogDNA through the CLI, see [Provisioning LogDNA through the {{site.data.keyword.Bluemix_notm}} CLI](/docs/services/Log-Analysis-with-LogDNA/provision.html#logdna_provision_cli).
 
 
 ## Step2: Configure your Kubernetes cluster to send logs to your instance
