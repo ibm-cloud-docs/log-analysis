@@ -227,9 +227,9 @@ Complete the following steps to assign a user both policies for the IBM Log Anal
 ## {{site.data.keyword.Bluemix_notm}} platform roles
 {: #platform}
 
-Use the following table to identify the role that you can grant a user in the {{site.data.keyword.Bluemix_notm}} to run any of the following platform actions:
+Use the following table to identify the platform role that you can grant a user in the {{site.data.keyword.Bluemix_notm}} to run any of the following platform actions:
 
-| Actions                                                                 | {{site.data.keyword.Bluemix_notm}} Platform Roles    | 
+| Platform actions                                                        | {{site.data.keyword.Bluemix_notm}} Platform Roles    | 
 |-------------------------------------------------------------------------|------------------------------------------------------|
 | `Grant other account members access to work with the service`           | Administrator                                        | 
 | `Provision a service instance`                                          | Administrator </br>Editor                            | 
@@ -238,13 +238,23 @@ Use the following table to identify the role that you can grant a user in the {{
 | `View details of a service instance`                                    | Administrator </br>Editor </br>Operator </br>Viewer  | 
 {: caption="Table 1. IAM user roles and actions" caption-side="top"}
 
+Use the following table to identify the platform role that you can grant a user in the {{site.data.keyword.Bluemix_notm}} to run any of the following service actions:
+
+| Actions                                                                 | {{site.data.keyword.Bluemix_notm}} Service Roles     | 
+|-------------------------------------------------------------------------|------------------------------------------------------|
+| `Add LogDNA log sources`                                                | Administrator                                        |
+| `Configure alerts`                                                      | Administrator                                        | 
+| `Manage log data`                                                       | Administrator                                        |
+| `Manage the LogDNA Web UI`                                              | Administrator                                        |
+| `View logs through the LogDNA Web UI`                                   | Administrator                                        | 
+{: caption="Table 2. IAM user roles and actions" caption-side="top"}
 
 
 
 ## {{site.data.keyword.Bluemix_notm}} service roles
 {: #service}
 
-Use the following table to identify the roles that you can grant a user to run any of the following service actions:
+Use the following table to identify the service roles that you can grant a user to run any of the following service actions:
 
 | Actions                                                                 | {{site.data.keyword.Bluemix_notm}} Service Roles     | 
 |-------------------------------------------------------------------------|------------------------------------------------------|
@@ -253,10 +263,10 @@ Use the following table to identify the roles that you can grant a user to run a
 | `Manage log data`                                                       | Manager                                              |
 | `Manage the LogDNA Web UI`                                              | Manager                                              |
 | `View logs through the LogDNA Web UI`                                   | Manager </br>Writer </br>Reader                      | 
-{: caption="Table 2. IAM user roles and actions" caption-side="top"}
+{: caption="Table 3. IAM user roles and actions" caption-side="top"}
 
 
-
+**Note:** The **manager** service role maps directly to the LogDNA admin role.
 
 
 
