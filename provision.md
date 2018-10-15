@@ -84,13 +84,13 @@ To provision an instance of IBM Log Analysis with LogDNA through the command lin
 
     * NAME is the name of the instance
     * *logdna** is the name of the IBM Log Analysis with LogDNA service in the {{site.data.keyword.Bluemix_notm}}
-    * SERVICE_PLAN_NAME is the type of plan. Valid values are: *lite*, *ibm-7day*, *ibm-15day*, *ibm-30day*
+    * SERVICE_PLAN_NAME is the type of plan. Valid values are: *lite*, *7-day*, *15-day*, *30-day*
     * LOCATION is the region where the LogDNA instance is created. Valid values are: *us-south*
 
     For example, to provision an instance with the 7 day retention plan, run the following command:
 
     ```
-    ibmcloud resource service-instance-create logdna-instance-01 logdna ibm-7day us-south
+    ibmcloud resource service-instance-create logdna-instance-01 logdna 7-day us-south
     ```
     {: codeblock}
 

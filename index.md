@@ -32,10 +32,6 @@ Use IBM Log Analysis with LogDNA to add log management capabilities to your {{si
 
     To get an {{site.data.keyword.Bluemix_notm}} user ID, go to: [Registration ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://console.bluemix.net/registration/){:new_window}.
 
-* Install the {{site.data.keyword.Bluemix_notm}} CLI. 
-
-    For more information, see [Installing the {{site.data.keyword.Bluemix_notm}} CLI](/docs/cli/index.html#overview).
-
 
 ## [Step2] Get started
 {: #getstarted}
@@ -92,6 +88,6 @@ To learn more about IAM integration with the IBM Log Analysis with LogDNA servic
 | Platform Devops operator in a resource group        | [Granting permissions to a Devops user to manage the service within a resource group](/docs/services/Log-Analysis-with-LogDNA/iam.html#devops_rg) |
 | Service administrator in LogDNA                     | [Granting permissions to manage logs and configure alerts in LogDNA](/docs/services/Log-Analysis-with-LogDNA/iam.html#admin_user_logdna)              |
 | User / developer                                    | [Granting permissions to a user to view and manage logs in LogDNA](/docs/services/Log-Analysis-with-LogDNA/iam.html#user_logdna)               |
-{: caption="Table 1. Cloud roles in the {{site.data.keyword.Bluemix_notm}}" caption-side="top"}
+{: caption="Table 2. Cloud roles in the {{site.data.keyword.Bluemix_notm}}" caption-side="top"}
 
 
