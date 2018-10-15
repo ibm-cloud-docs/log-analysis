@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018
-lastupdated: "2018-10-15"
+lastupdated: "2018-10-22"
 
 ---
 
@@ -69,50 +69,20 @@ The following table lists cloud resources that you can configure to store and ma
 ## Next steps
 {: #next_steps}
 
-Upgrade the IBM Log Analysis with LogDNA service plan to a paid plan to be able to [filter logs](https://docs.logdna.com/docs/filters), [search logs](https://docs.logdna.com/docs/search), [define views](https://docs.logdna.com/docs/views), and [configure alerts](https://docs.logdna.com/docs/alerts).
-
-For more information about IBM Log Analysis with LogDNA service plans, see [Pricing plans](/docs/services/Log-Analysis-with-LogDNA/overview.html#pricing_plans).
+Upgrade the IBM Log Analysis with LogDNA service plan to a paid plan to be able to [filter logs](https://docs.logdna.com/docs/filters), [search logs](https://docs.logdna.com/docs/search), [define views](https://docs.logdna.com/docs/views), and [configure alerts](https://docs.logdna.com/docs/alerts). For more information about IBM Log Analysis with LogDNA service plans, see [Pricing plans](/docs/services/Log-Analysis-with-LogDNA/overview.html#pricing_plans).
 
 
 Learn more about IAM integration with the IBM Log Analysis with LogDNA service. For more information, see:
 
-
-
-| User role in the {{site.data.keyword.Bluemix_notm}} | Actions |  For more information  |
-|-----------------------------------------------------|------------------------------------------|----------------|
-| Account owner                                       |                              |
-| Platform service administrator in the account       |                  |
-| Platform service administrator in a resource group  |                  |
-| Service administrator in LogDNA                     |                  |
-| User / developer                                    |                  |
+| User role in the {{site.data.keyword.Bluemix_notm}} | For more information                     |
+|-----------------------------------------------------|------------------------------------------|
+| Account owner                                       | [Granting permissions to a user to become an administrator of the service in the {{site.data.keyword.Bluemix_notm}} account](/docs/services/Log-Analysis-with-LogDNA/iam.html#admin_account) |
+| Platform service administrator in the account       | [Granting permissions to a user to become an administrator of the service in the {{site.data.keyword.Bluemix_notm}} account](/docs/services/Log-Analysis-with-LogDNA/iam.html#admin_account) |
+| Platform service administrator in a resource group  | [Granting permissions to a user to become an administrator of the service within a resource group](/docs/services/Log-Analysis-with-LogDNA/iam.html#admin_rg) |
+| Platform Devops operator in the account           | [Granting permissions to a Devops user to manage the service in the {{site.data.keyword.Bluemix_notm}} account](/docs/services/Log-Analysis-with-LogDNA/iam.html#devops_account) |
+| Platform Devops operator in a resource group        | [Granting permissions to a Devops user to manage the service within a resource group](/docs/services/Log-Analysis-with-LogDNA/iam.html#devops_rg) |
+| Service administrator in LogDNA                     | [Granting permissions to manage logs and configure alerts in LogDNA](/docs/services/Log-Analysis-with-LogDNA/iam.html#admin_user_logdna)              |
+| User / developer                                    | [Granting permissions to a user to view and manage logs in LogDNA](/docs/services/Log-Analysis-with-LogDNA/iam.html#user_logdna)               |
 {: caption="Table 1. Cloud roles in the {{site.data.keyword.Bluemix_notm}}" caption-side="top"}
 
-
-
-As the **account owner** or as an **IBM Log Analysis with LogDNA service administrator**, you must have permissions to run the following actions: 
-
-* Grant other account members access to work with the service
-* Provision a service instance
-* Delete a service instance
-* View details of a service instance
-* Create a service ID
-
-Therefore, you need to have an IAM policy for the IBM Log Analysis with LogDNA service with the platform role **Administrator**.
-
-As a **Devops user**, you must have permissions to run the following actions: 
-
-* Provision a service instance
-* Delete a service instance
-* View details of a service instance
-* Create a service ID
-
-Therefore, you need to have an IAM policy for the IBM Log Analysis with LogDNA service with the platform role **Editor**.
-
-For **developers** and **auditors**, you must have permissions to run the following actions: 
-
-* View logs
-* Search logs
-* Filter logs
-
-Therefore, you need to have an IAM policy for the IBM Log Analysis with LogDNA service with the service role **Writer**, or **Manager**.
 
