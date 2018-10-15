@@ -235,17 +235,10 @@ Use the following table to identify the role that you can grant a user in the {{
 | `Provision a service instance`                                          | Administrator </br>Editor                            | 
 | `Delete a service instance`                                             | Administrator </br>Editor                            | 
 | `Create a service ID`                                                   | Administrator </br>Editor                            |
-| `View details of a service instance`                                    | Operator </br>Viewer                                 | 
+| `View details of a service instance`                                    | Administrator </br>Editor </br>Operator </br>Viewer  | 
 {: caption="Table 1. IAM user roles and actions" caption-side="top"}
 
 
-The following table maps the LogDNA roles to Platform {{site.data.keyword.Bluemix_notm}} roles:
-
-| LogDNA role                              |  {{site.data.keyword.Bluemix_notm}} role  |
-|------------------------------------------|-------------------------------------------|
-| Admin role                               | Administrator                             |
-| NO role                                  | Operator </br>Viewer                      |
-{: caption="Table 2. Mapping of LogDNA roles to Platform {{site.data.keyword.Bluemix_notm}} roles" caption-side="top"}
 
 
 ## {{site.data.keyword.Bluemix_notm}} service roles
@@ -253,22 +246,14 @@ The following table maps the LogDNA roles to Platform {{site.data.keyword.Bluemi
 
 Use the following table to identify the roles that you can grant a user to run any of the following service actions:
 
-| Actions                                                                 | {{site.data.keyword.Bluemix_notm}} Platform Roles    | 
+| Actions                                                                 | {{site.data.keyword.Bluemix_notm}} Service Roles     | 
 |-------------------------------------------------------------------------|------------------------------------------------------|
 | `Add LogDNA log sources`                                                | Manager                                              |
 | `Configure alerts`                                                      | Manager                                              | 
 | `Manage log data`                                                       | Manager                                              |
-| `View logs`                                                             | Manager </br>Writer                                  | 
-{: caption="Table 3. IAM user roles and actions" caption-side="top"}
-
-The following table maps LogDNA roles to service {{site.data.keyword.Bluemix_notm}} roles:
-
-| LogDNA role                              |  {{site.data.keyword.Bluemix_notm}} role  |
-|------------------------------------------|-------------------------------------------|
-| Admin role                               | Manager                                   |
-| User  role                               | Writer                                    |
-| NO role                                  | Reader                                    |
-{: caption="Table 4. Mapping of LogDNA roles to service {{site.data.keyword.Bluemix_notm}} roles" caption-side="top"}
+| `Manage the LogDNA Web UI`                                              | Manager                                              |
+| `View logs through the LogDNA Web UI`                                   | Manager </br>Writer </br>Reader                      | 
+{: caption="Table 2. IAM user roles and actions" caption-side="top"}
 
 
 
