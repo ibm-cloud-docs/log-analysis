@@ -25,19 +25,69 @@ Use IBM Log Analysis with LogDNA to add log management capabilities to your {{si
 ## Before you begin
 {: #prereqs}
 
-Read about IBM Log Analysis with LogDNA. For more information, see [About LogDNA](/docs/services/Log-Analysis-with-LogDNA/overview.html#about).
+* Read about IBM Log Analysis with LogDNA. For more information, see [About LogDNA](/docs/services/Log-Analysis-with-LogDNA/overview.html#about).
+* Check the regions where the service is available. For more information, see [Regions](/docs/services/Log-Analysis-with-LogDNA/overview.html#regions).
+* Get a user ID that is a member or an owner of an {{site.data.keyword.Bluemix_notm}} account. 
 
-Check the regions where the service is available. For more information, see [Regions](/docs/services/Log-Analysis-with-LogDNA/overview.html#regions).
+    To get an {{site.data.keyword.Bluemix_notm}} user ID, go to: [Registration ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://console.bluemix.net/registration/){:new_window}.
 
-The Cloud resource for which you want to manage logs and the IBM Log Analysis with LogDNA instance that you must use to manage those logs must run in the same account and in the same region.
+* Install the {{site.data.keyword.Bluemix_notm}} CLI. 
 
-You must have a user ID that is a member or an owner of an {{site.data.keyword.Bluemix_notm}} account. To get an {{site.data.keyword.Bluemix_notm}} user ID, go to: [Registration ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://console.bluemix.net/registration/){:new_window}.
-
-Install the {{site.data.keyword.Bluemix_notm}} CLI. For more information, see [Installing the {{site.data.keyword.Bluemix_notm}} CLI](/docs/cli/index.html#overview).
+    For more information, see [Installing the {{site.data.keyword.Bluemix_notm}} CLI](/docs/cli/index.html#overview).
 
 
-## Step1: Identify the IAM policies that a user needs to work with IBM Log Analysis with LogDNA
-{: #step1}
+## Choose a cloud resource for which you want to manage logs
+{: #choose_getstarted}
+
+The following table lists cloud resources that you can configure to store and manage logs by using the IBM Log Analysis with LogDNA service. Complete the tutorial for a resource to get started working with the {{site.data.keyword.loganalysisshort}} service:
+
+<table>
+  <caption>Tutorials to get started working with the IBM Log Analysis with LogDNA service </caption>
+  <tr>
+    <th>Resource</th>
+    <th>Tutorial</th>
+    <th>Cloud environment</th>
+    <th>Scenario</th>
+  </tr>
+  <tr>
+    <td>Containers running on the {{site.data.keyword.containershort}}</td>
+    <td>[Managing Kubernetes cluster logs with IBM Log Analysis with LogDNA]()</td>
+    <td>Public </td>
+    <td>![{{site.data.keyword.containershort}} and the IBM Log Analysis with LogDNA](images/components.png "{{site.data.keyword.containershort}} and the IBM Log Analysis with LogDNA")</td>
+  </tr>
+  <tr>
+    <td>Linux Ubuntu Debian</td>
+    <td>[Managing Linux Ubuntu logs with IBM Log Analysis with LogDNA]()</td>
+    <td>Public</td>
+    <td></td>
+  </tr>
+</table>
+
+**Note:** The Cloud resource for which you want to manage logs and the IBM Log Analysis with LogDNA instance that you must use to manage those logs must run in the same account and in the same region.
+
+
+## Next steps
+{: #next_steps}
+
+Upgrade the IBM Log Analysis with LogDNA service plan to a paid plan to be able to [filter logs](https://docs.logdna.com/docs/filters), [search logs](https://docs.logdna.com/docs/search), [define views](https://docs.logdna.com/docs/views), and [configure alerts](https://docs.logdna.com/docs/alerts).
+
+For more information about IBM Log Analysis with LogDNA service plans, see [Pricing plans](/docs/services/Log-Analysis-with-LogDNA/overview.html#pricing_plans).
+
+
+Learn more about IAM integration with the IBM Log Analysis with LogDNA service. For more information, see:
+
+
+
+| User role in the {{site.data.keyword.Bluemix_notm}} | Actions |  For more information  |
+|-----------------------------------------------------|------------------------------------------|----------------|
+| Account owner                                       |                              |
+| Platform service administrator in the account       |                  |
+| Platform service administrator in a resource group  |                  |
+| Service administrator in LogDNA                     |                  |
+| User / developer                                    |                  |
+{: caption="Table 1. Cloud roles in the {{site.data.keyword.Bluemix_notm}}" caption-side="top"}
+
+
 
 As the **account owner** or as an **IBM Log Analysis with LogDNA service administrator**, you must have permissions to run the following actions: 
 
@@ -66,38 +116,3 @@ For **developers** and **auditors**, you must have permissions to run the follow
 
 Therefore, you need to have an IAM policy for the IBM Log Analysis with LogDNA service with the service role **Writer**, or **Manager**.
 
-## Step2: Choose a cloud resource for which you want to manage logs
-{: #step2}
-
-The following table lists cloud resources that you can configure to store and manage logs by using the IBM Log Analysis with LogDNA service. Complete the tutorial for a resource to get started working with the {{site.data.keyword.loganalysisshort}} service:
-
-<table>
-  <caption>Tutorials to get started working with the IBM Log Analysis with LogDNA service </caption>
-  <tr>
-    <th>Resource</th>
-    <th>Tutorial</th>
-    <th>Cloud environment</th>
-    <th>Scenario</th>
-  </tr>
-  <tr>
-    <td>Containers running on the {{site.data.keyword.containershort}}</td>
-    <td>[Managing Kubernetes cluster logs with IBM Log Analysis with LogDNA]()</td>
-    <td>Public </td>
-    <td>![{{site.data.keyword.containershort}} and the IBM Log Analysis with LogDNA](images/components.png "{{site.data.keyword.containershort}} and the IBM Log Analysis with LogDNA")</td>
-  </tr>
-  <tr>
-    <td>Linux Ubuntu Debian</td>
-    <td>[Managing Linux Ubuntu logs with IBM Log Analysis with LogDNA]()</td>
-    <td>Public</td>
-    <td></td>
-  </tr>
-</table>
-
-
-
-## Next steps
-{: #next_steps}
-
-Upgrade the IBM Log Analysis with LogDNA service plan to a paid plan to be able to [filter logs](https://docs.logdna.com/docs/filters), [search logs](https://docs.logdna.com/docs/search), [define views](https://docs.logdna.com/docs/views), and [configure alerts](https://docs.logdna.com/docs/alerts).
-
-For more information about IBM Log Analysis with LogDNA service plans, see [Pricing plans](/docs/services/Log-Analysis-with-LogDNA/overview.html#pricing_plans).
