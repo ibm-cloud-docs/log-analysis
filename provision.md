@@ -43,9 +43,9 @@ To provision an instance of IBM Log Analysis with LogDNA by using the {{site.dat
 
 4. Click the **LogDNA** tile.
 
-5. Select a service plan. By default, the **Free** plan is set.
+5. Select a service plan. By default, the **Lite** plan is set.
 
-    For more information about the service plans, see [Service plans](/docs/services/.....).
+    For more information about the service plans, see [Service plans](/docs/services/Log-Analysis-with-LogDNA/overview.html#pricing_plans).
 
 6. Select a resource group. By default, the **default** one is set.
 
@@ -84,7 +84,7 @@ To provision an instance of IBM Log Analysis with LogDNA through the command lin
 
     * NAME is the name of the instance
     * *logdna** is the name of the IBM Log Analysis with LogDNA service in the {{site.data.keyword.Bluemix_notm}}
-    * SERVICE_PLAN_NAME is the type of plan. Valid values are: *lite*, *7-day*, *15-day*, *30-day*
+    * SERVICE_PLAN_NAME is the type of plan. Valid values are: *lite*, *7-day*, *14-day*, *30-day*
     * LOCATION is the region where the LogDNA instance is created. Valid values are: *us-south*
 
     For example, to provision an instance with the 7 day retention plan, run the following command:

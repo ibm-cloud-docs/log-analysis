@@ -98,7 +98,7 @@ Different pricing plans are available that you can choose for an IBM Log Analysi
 | Plan                     | 
 |--------------------------|
 | `30 days log retention`  |
-| `15 days log retention`  |
+| `14 days log retention`  |
 | `7 days log retention`   |
 | `Free `                  |
 {: caption="Table 1. List of service plans" caption-side="top"} 
@@ -107,9 +107,9 @@ IBM Log Analysis with LogDNA offers a **Free** plan that you can use to view you
 
 The following tables outlines the different features that are included in each service plan:
 
-| Feature                    | Plan: `30 days log retention` | Plan: `15 days log retention` | Plan: `7 days log retention | Plan: `Free` | 
+| Feature                    | Plan: `30 days log retention` | Plan: `14 days log retention` | Plan: `7 days log retention | Plan: `Free` | 
 |----------------------------------|-------------------------|-------------------------------|-----------------------------|--------------|
-| `Logs are stored and searchable` | Yes - for 30 days       | Yes - for 15 days             | Yes - for 7 days            | No           |
+| `Logs are stored and searchable` | Yes - for 30 days       | Yes - for 14 days             | Yes - for 7 days            | No           |
 | `Unlimited hosts and sources`    | Yes                     | Yes                           | Yes                         | Yes          |
 | `Live streaming tail`            | Yes                     | Yes                           | Yes                         | Yes          |
 | `Number of saved views`          | Yes - unlimited         | Yes - unlimited               | Yes - unlimited             | Yes - 3 saved views  |

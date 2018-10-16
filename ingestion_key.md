@@ -22,6 +22,8 @@ The ingestion key is a security key that you must use to configure LogDNA agents
 {:shortdesc}
 
 
+
+
 ## Getting the ingestion key through the {{site.data.keyword.Bluemix_notm}} UI
 {: #logdna_ui}
 
@@ -82,7 +84,5 @@ To get the ingestion key for an IBM Log Analysis with LogDNA instance through th
     * APIKEY_NAME is the name of the API key
  
     The output from this command includes the field **ingestion_key** that contains the ingestion key for the LogDA instance.
-
-
 
 

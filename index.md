@@ -50,7 +50,7 @@ The following table lists cloud resources that you can configure to store and ma
   </tr>
   <tr>
     <td>Containers running on the {{site.data.keyword.containershort}}</td>
-    <td>[Managing Kubernetes cluster logs with IBM Log Analysis with LogDNA]()</td>
+    <td>[Managing Kubernetes cluster logs with IBM Log Analysis with LogDNA](/docs/services/Log-Analysis-with-LogDNA/tutorials/kube.html#kube)</td>
     <td>Public </td>
     <td>![{{site.data.keyword.containershort}} and the IBM Log Analysis with LogDNA](images/kube.png "{{site.data.keyword.containershort}} and the IBM Log Analysis with LogDNA")</td>
   </tr>
