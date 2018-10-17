@@ -56,7 +56,6 @@ Your {{site.data.keyword.IBM_notm}}ID must have assigned IAM policies for each o
 |--------------------------------------|----------------------------|---------|-----------|------------------------------|
 | Resource group **Default**           |  Resource group            | Viewer  | us-south  | This policy is required to allow the user to see service instances in the Default resource group.    |
 | IBM Log Analysis with LogDNA service |  Resource group            | Editor  | us-south  | This policy is required to allow the user to provision and administer the IBM Log Analysis with LogDNA service in the Default resource group.   |
-| {{site.data.keyword.containerlong}}  |  Account                   | viewer  | us-south  | This policy is required to view details of the Kubernetes cluster. |
 | Cluster instance                     |  Account                   | Editor  | us-south  | This policy is required to configure the LogDNA agent in the Kubernetes cluster. |
 {: caption="Table 1. List of IAM policies required to complete the tutorial" caption-side="top"} 
 

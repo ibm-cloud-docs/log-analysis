@@ -59,16 +59,16 @@ To get the ingestion key for an IBM Log Analysis with LogDNA instance through th
 
 2. Log in to the region in the {{site.data.keyword.Bluemix_notm}} where the instance is running. Run the following command: [`ibmcloud login`](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_login)
 
-3. Set the resource group where the instance is running. Run the following command: [`ibmcloud target`](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_target) with the option `-g`.
+3. Set the resource group where the IBM Log Analysis with LogDNA instance is running. Run the following command: [`ibmcloud target`](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_target) with the option `-g`.
 
     By default, the `default` resource group is set.
 
 4. Get the name of the API key that is associated with the IBM Log Analysis with LogDNA instance. Run the [`ibmcloud resource service-keys`](/docs/cli/reference/ibmcloud/cli_resource_group.html#ibmcloud_resource_service_instances) command:
 
     ```
-    ibmcloud resource service-instances
+    ibmcloud resource service-keys
     ```
-    {: pre}
+    {: codeblock}
 
     Identify the service key that is associated to your instance.
 
@@ -77,7 +77,7 @@ To get the ingestion key for an IBM Log Analysis with LogDNA instance through th
     ```
     ibmcloud resource service-key APIKEY_NAME
     ```
-    {: pre}
+    {: codeblock}
 
     where
 

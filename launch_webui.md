@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018
-lastupdated: "2018-10-15"
+lastupdated: "2018-10-22"
 
 ---
 
@@ -33,8 +33,12 @@ To launch IBM the Log Analysis with LogDNA UI through the {{site.data.keyword.Bl
 
 	After you log in with your user ID and password, the {{site.data.keyword.Bluemix_notm}} Dashboard opens.
 
-2. In the navigation menu, select **Observability**. The list of IBM Log Analysis with LogDNA instances that are available on {{site.data.keyword.Bluemix_notm}} is displayed.
+2. In the navigation menu, select **Observability**. 
 
-3. Select one instance. Then, click **View logs**.
+3. Select **Logging**. 
+
+    The list of IBM Log Analysis with LogDNA instances that are available on {{site.data.keyword.Bluemix_notm}} is displayed.
+
+4. Select one instance. Then, click **View LogDNA**.
 
 The IBM Log Analysis with LogDNA Web UI opens and displays logs forwarded to that instance.

@@ -33,27 +33,40 @@ To provision an instance of IBM Log Analysis with LogDNA by using the {{site.dat
 
 1. Log in to your {{site.data.keyword.Bluemix_notm}} account.
 
-    The {{site.data.keyword.Bluemix_notm}} dashboard can be found at: [http://bluemix.net ![External link icon](../../../icons/launch-glyph.svg "External link icon")](http://bluemix.net){:new_window}.
+    The {{site.data.keyword.Bluemix_notm}} dashboard can be found at: [http://bluemix.net ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://bluemix.net){:new_window}.
 
 	After you log in with your user ID and password, the {{site.data.keyword.Bluemix_notm}} UI opens.
 
-2. Click **Catalog**. The list of the services that are available on {{site.data.keyword.Bluemix_notm}} opens.
+2. Click **Catalog**. The list of the services that are available in {{site.data.keyword.Bluemix_notm}} opens.
 
-3. Filter the list of services that is displayed. Select the **Developer Tools** category.
+3. To filter the list of services that is displayed, select the **Developer Tools** category.
 
-4. Click the **LogDNA** tile.
+4. Click the **IBM Log Analysis with LogDNA** tile.
 
-5. Select a service plan. By default, the **Lite** plan is set.
+5. Enter a name for the service instance.
 
-    For more information about the service plans, see [Service plans](/docs/services/Log-Analysis-with-LogDNA/overview.html#pricing_plans).
+6. Select the **Default** resource group. 
 
-6. Select a resource group. By default, the **default** one is set.
+    By default, the **Default** resource group is set.
 
-7. Click **Create** to provision an instance of the service in the {{site.data.keyword.Bluemix_notm}} resource group where you are logged in.
+7. Select **I understand that my data will be sent to LogDNA**. 
 
-After you provision an instance, the *Edit sources* page opens. A service ID is automatically created. You can use this service ID to get the ingestion key for your instance.
+    **Note:** You must accept LogDNA's terms and conditions before you can provision the service in the {{site.data.keyword.Bluemix_notm}}.
 
-Next, configure a log source by adding a LogDNA agent. This agent is responsible for collecting and forwarding logs to LogDNA.
+8. Select the **Lite** service plan. 
+
+    By default, the **Lite** plan is set.
+
+    For more information about other service plans, see [Pricing plans](/docs/services/Log-Analysis-with-LogDNA/overview.html#pricing_plans).
+
+9. To provision the IBM Log Analysis with LogDNA service in the {{site.data.keyword.Bluemix_notm}} resource group where you are logged in, click **Create**.
+
+After you provision an instance, 
+
+* The IBM Log Analysis with LogDNA dashboard opens. 
+* A service ID is automatically created. You can use this service ID to get the ingestion key for your instance.
+
+Next, configure a log source by adding a LogDNA agent. This agent is responsible for collecting and forwarding logs to LogDNA. 
 
 
 ## Provisioning an instance through the CLI
@@ -110,7 +123,7 @@ To provision an instance of IBM Log Analysis with LogDNA through the command lin
     For example, to create an API key for the instance *logdna-instance-01* with *editor* permissions on the service instance, run the following command:
 
     ```
-    ibmcloud resource service-key-create logdna-instance-01 Editor --instance-name logdna-instance-01
+    ibmcloud resource service-key-create logdna-instance-01 Administrator --instance-name logdna-instance-01
     ```
     {: pre}
 
