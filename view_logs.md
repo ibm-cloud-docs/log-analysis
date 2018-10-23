@@ -15,15 +15,30 @@ lastupdated: "2018-10-22"
 {:tip: .tip}
 {:download: .download}
 
-# Launching the IBM Log Analysis with LogDNA Web UI
-{: #launch_webui}
+# Viewing logs through the IBM Log Analysis with LogDNA Web UI
+{: #view_logs}
 
 After you provision an instance of the IBM Log Analysis with LogDNA service in the {{site.data.keyword.Bluemix}}, and configure a LogDNA agent for a log source, you can view, monitor, and manage log data through the IBM Log Analysis with LogDNA Web UI.
 {:shortdesc}
 
 
-## Launching the Web UI through the {{site.data.keyword.Bluemix_notm}} UI
-{: #logdna_launch_webui_ui}
+
+## Grant IAM policies to a user to view logs
+{: #iam}
+
+The following table lists the minimum policies that a user must have to be able to launch the IBM Log Analysis with LogDNA Web UI, and view logs:
+
+| Service                        | Role                      | Permission granted                                                                            | 
+|--------------------------------|---------------------------|-----------------------------------------------------------------------------------------------|       
+| `IBM Log Analysis with LogDNA` | Platform role: Viewer     | Allows the user to view the list of service instances in the Observability Logging dashboard. |
+| `IBM Log Analysis with LogDNA` | Service role: Reader      | Allows the user to launch the Web UI and view logs in the Web UI.                             |
+{: caption="Table 1. IAM policies" caption-side="top"} 
+
+For more information on how to configire these policies for a user, see [Granting permissions to a user to view logs in LogDNA](/docs/services/Log-Analysis-with-LogDNA/iam.html#user_logdna).
+
+
+## Launch the Web UI through the {{site.data.keyword.Bluemix_notm}} UI
+{: #launch_web_ui}
 
 To launch IBM the Log Analysis with LogDNA UI through the {{site.data.keyword.Bluemix_notm}} UI, complete the following steps:
 
@@ -42,3 +57,5 @@ To launch IBM the Log Analysis with LogDNA UI through the {{site.data.keyword.Bl
 4. Select one instance. Then, click **View LogDNA**.
 
 The IBM Log Analysis with LogDNA Web UI opens and displays logs forwarded to that instance.
+
+

@@ -14,10 +14,11 @@ IBM Log Analysis with LogDNA
     {: .navgroup-end}
 
     {: .navgroup id="howto"}
-    launch_webui.md
     iam.md
     provision.md
     ingestion_key.md
+    view_logs.md
+    archive.md
     {: .navgroup-end}
 
     {: .navgroup id="reference"}

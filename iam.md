@@ -189,10 +189,10 @@ Complete the following steps to assign a user both policies for the IBM Log Anal
 8. Select the service role **Manager**.
 8. Click **Assign**.
 
-## Granting permissions to a user to view and manage logs in LogDNA
+## Granting permissions to a user to view logs in LogDNA
 {: #user_logdna}
 
-As a **developer**, you must have permissions to run the following actions: 
+As a **user**, **auditor**, or **developer**, you might need permissions to run the following actions: 
 
 * View logs
 * Search logs
@@ -201,9 +201,9 @@ As a **developer**, you must have permissions to run the following actions:
 Therefore, you need the following policies:
 
 * An IAM policy for the IBM Log Analysis with LogDNA service with the platform role **Viewer**. This policy allows you to view the service instance details through the command line and in the {{site.data.keyword.Bluemix_notm}} dashboard.
-* An IAM policy for the IBM Log Analysis with LogDNA service with the service role **Writer**. This policy allows you to monitor, filter and search logs through the LogDNA web UI.
+* An IAM policy for the IBM Log Analysis with LogDNA service with the service role **Reader**. This policy allows you to view, filter and search logs through the LogDNA web UI.
 
-**Note:** As an administrator of the service, when you grant a developer these policies, consider doing it within the context of a resource group. An IBM Log Analysis with LogDNA instance is provisioned within the context of a resource group. Therefore, you should grant access permissions within the context of the resource group.
+**Note:** As an administrator of the service, when you grant a user these policies, consider doing it within the context of a resource group. An IBM Log Analysis with LogDNA instance is provisioned within the context of a resource group. Therefore, you should grant access permissions within the context of the resource group.
 
 Complete the following steps to assign a user both policies for the IBM Log Analysis with LogDNA service within the context of a resource group: 
 
@@ -242,6 +242,7 @@ Use the following table to identify the platform role that you can grant a user 
 
 | Actions                                                                 | {{site.data.keyword.Bluemix_notm}} Service Roles     | 
 |-------------------------------------------------------------------------|------------------------------------------------------|
+| `View service instances in the Observability Logging dashboard`         | Administrator </br>Editor </br>Operator </br>Viewer  | 
 | `Add LogDNA log sources`                                                | Administrator                                        |
 | `Configure alerts`                                                      | Administrator                                        | 
 | `Manage log data`                                                       | Administrator                                        |
