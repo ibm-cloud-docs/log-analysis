@@ -261,7 +261,7 @@ Use the following table to identify the service roles that you can grant a user 
 |-------------------------------------------------------------------------|------------------------------------------------------|
 | `Add LogDNA log sources`                                                | Manager                                              |
 | `Archive logs`                                                          | Manager                                              |
-| `Generate ingestion keys`                                               | Manager                                              |
+| `Renew the ingestion key`                                               | Manager                                              |
 | `Configure alerts`                                                      | Manager                                              | 
 | `Manage log data`                                                       | Manager                                              |
 | `Manage the LogDNA Web UI`                                              | Manager                                              |
