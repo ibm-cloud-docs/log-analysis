@@ -260,6 +260,7 @@ Use the following table to identify the service roles that you can grant a user 
 | Actions                                                                 | {{site.data.keyword.Bluemix_notm}} Service Roles     | 
 |-------------------------------------------------------------------------|------------------------------------------------------|
 | `Add LogDNA log sources`                                                | Manager                                              |
+| `Archiving logs        `                                                | Manager                                              |
 | `Configure alerts`                                                      | Manager                                              | 
 | `Manage log data`                                                       | Manager                                              |
 | `Manage the LogDNA Web UI`                                              | Manager                                              |

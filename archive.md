@@ -205,10 +205,12 @@ Complete the following steps to create a service ID with writing permissions for
     A new service ID is added to the list. 
 
 
-For the service ID that you just created, click **View credentials**. You can see information that is related to the service ID. You will use 
+For the service ID that you just created, click **View credentials**. You can see information that is related to the service ID. 
 
-"apikey": "Hsawp_Uga4TWjw61ZKgjtAtOlKJWrUyEoUP8U5608540",
-"resource_instance_id": "crn:v1:bluemix:public:cloud-object-storage:global:a/81de6380e6232019c6567c9c8de6dece:69002255-e226-424e-b6c7-23c887fdb8bf::"
+* Copy the API key. This is the value set for the field **apikey**.
+
+* Copy the resource instance ID. For the **resource_instance_id**, copy the last instance ID. For example, from the value 
+*crn:v1:bluemix:public:cloud-object-storage:global:a/jiejfhewur93485hfbfksbf:69002255-e226-424e-b6c7-23c887fdb8bf::*, copy *69002255-e226-424e-b6c7-23c887fdb8bf*.
 
 
 ## Step 4B: [Optional] Restrict the service ID to only have writing permissions for the bucket
@@ -261,19 +263,34 @@ Complete the following steps to obtain the endpoint for your bucket:
 ## Step 6: Grant IAM policies to a user to archive logs
 {: #step6}
 
-The following table lists the minimum policies that a user must have to be able to archive logs into IBM Log Analysis with LogDNA Web UI, and view logs:
+The following table lists the policies that a user must have to be able to configure archiving of logs from IBM Log Analysis with LogDNA Web UI into a bucket in a {{site.data.keyword.cos_short}} instance:
 
 | Service                        | Role                      | Permission granted                                                                            | 
 |--------------------------------|---------------------------|-----------------------------------------------------------------------------------------------|       
 | `IBM Log Analysis with LogDNA` | Platform role: Viewer     | Allows the user to view the list of service instances in the Observability Logging dashboard. |
-| `IBM Log Analysis with LogDNA` | Service role: Reader      | Allows the user to launch the Web UI and view logs in the Web UI.                             |
-| `Cloud Object Storage`         | 
+| `IBM Log Analysis with LogDNA` | Service role: Manager      | Allows the user to launch the Web UI and view logs in the Web UI.                             |
 {: caption="Table 2. IAM policies" caption-side="top"} 
 
 For more information on how to configire these policies for a user, see [Granting permissions to a user to view logs in LogDNA](/docs/services/Log-Analysis-with-LogDNA/iam.html#user_logdna).
 
+Complete the following steps to assign a user permissions to archive logs: 
 
-Assign access within the context of a resource group.
+1. From the menu bar, click **Manage** &gt; **Security** &gt; **Identity and Access**, and then select **Users**.
+2. From the row for the user that you want to assign access, select the **Actions** menu, and then click **Assign access**.
+3. Select **Assign access within a resource group**.
+4. Select a resource group.
+5. If the user does not have a role already granted for the selected resource group, choose a role for the **Assign access to a resource group** field. 
+
+    Depending on the role that you select, the user can view the resource group on their dashboard, edit the resource group name, or manage user access to the group. 
+    
+    You can select **No access**, if you want the user to only have access to the IBM Log Analysis with LogDNA service in the resource group.
+
+6. Select **IBM Log Analysis with LogDNA**.
+7. Select the platform role **Viewer**.
+8. Select the service role **Manager**.
+9. Click **Assign**.
+
+
 
 ## Step 7: Configure archiving of your IBM Log Analysis with LogDNA instance
 {: #step 7}
@@ -289,12 +306,12 @@ Complete the following steps to configure archiving of your IBM Log Analysis wit
 
 4. Set the bucket, endpoint, API key, and instance ID where you want logs to be archived.
 
-    | Field        | Value                                    | Sample                                                                                        | 
-    |--------------|------------------------------------------|-----------------------------------------------------------------------------------------------|       
-    | `Bucket`     | COS bucket name                          | accountN-logdna-1 |
-    | `Endpoint`   | COS bucket private endpoint              | s3.tor01.objectstorage.service.networklayer.com                 |
-    | `API Key`    | API key associated to the COS service ID |   |
-    | `Instance ID`| COS instance ID                          |
+    | Field        | Value                                    |
+    |--------------|------------------------------------------| 
+    | `Bucket`     | Set to the COS bucket name.                          | 
+    | `Endpoint`   | Set to the COS bucket private endpoint.              | 
+    | `API Key`    | Set to the API key associated to the COS service ID. | 
+    | `Instance ID`| Set to the COS instance ID.                         |  
     {: caption="Table 3. COS fields" caption-side="top"} 
 
 5. Click **Save**.
