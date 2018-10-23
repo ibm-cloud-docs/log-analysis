@@ -19,23 +19,30 @@ lastupdated: "2018-10-22"
 # Archiving logs to {{site.data.keyword.cos_full_notm}}
 {: #archiving}
 
-You can archive logs from an IBM Log Analysis with LogDNA instance into a bucket in {{site.data.keyword.cos_full_notm}} (COS). Logs are automaticaly archived once a day. 
+You can archive logs from an IBM Log Analysis with LogDNA instance into a bucket in an {{site.data.keyword.cos_full_notm}} (COS) instance. 
 {:shortdesc}
 
-**To archive logs, you must be a Manager for the IBM Log Analysis with LogDNA instance, have a service ID on the COS service, and permissions to add objects to a bucket on COS.**
+To configure archiving, you must have an IAM policy with platform role **Viewer** and service role **Manager** for the IBM Log Analysis with LogDNA service.
 
-Archiving is an automatic function that exports your logs from LogDNA to an external source. Archived logs are in JSON format and preserve metadata associated with each line. Once archiving is configured for your account, your logs will be exported daily in a compressed format (.json.gz). The first time you configure archiving, your archived logs will typically appear within 24-48 hours.
+You archive logs from an IBM Log Analysis with LogDNA instance into a bucket in an {{site.data.keyword.cos_full_notm}} (COS) instance. Each IBM Log Analysis with LogDNA instance has its own archiving configuration. 
 
-An {{site.data.keyword.cos_short}} instance is provisioned withing the context of a resource group.
+Logs are automaticaly archived once a day in a compressed format **(.json.gz)**. Each line preserves its metadata.
+
+Logs are archived within 24-48 hours after you save the configuration. 
+
+The {{site.data.keyword.cos_short}} instance is provisioned withing the context of a resource group. The IBM Log Analysis with LogDNA instance is also provisioned within the context of a resource group. Both instances can be grouped under the same resource group or in different ones. 
 
 IBM Log Analysis with LogDNA uses a service ID to communicate with the {{site.data.keyword.cos_short}} service.
 
 * The service ID that you create for an {{site.data.keyword.cos_short}} instance is used by the IBM Log Analysis with LogDNA to authenticate and access the {{site.data.keyword.cos_short}} instance. 
-* You can assign specific access policies to the service ID that restrict permissions on the {{site.data.keyword.cos_short}} instance.
+* You can assign specific access policies to the service ID that restrict permissions on the {{site.data.keyword.cos_short}} instance. Restrict the service ID to only have writing permissions on the bucket where you plan to archive the logs.
+
+The following figure shows a high level view of the different components that are integrated when archiving logs:
+
+![High level view archiving logs](images/archive.png "High level view archiving logs")
 
 
-
-Complete the following steps to archive an IBM Log Analysis with LogDNA instance into a bucket that is available in an {{site.data.keyword.cos_short}} instance:
+Complete the following steps to archive an IBM Log Analysis with LogDNA instance into a bucket in an {{site.data.keyword.cos_short}} instance:
 
 
 ## Step 1: Grant IAM policies to a user to work with the {{site.data.keyword.cos_full_notm}}
@@ -209,8 +216,7 @@ For the service ID that you just created, click **View credentials**. You can se
 
 * Copy the API key. This is the value set for the field **apikey**.
 
-* Copy the resource instance ID. For the **resource_instance_id**, copy the last instance ID. For example, from the value 
-*crn:v1:bluemix:public:cloud-object-storage:global:a/jiejfhewur93485hfbfksbf:69002255-e226-424e-b6c7-23c887fdb8bf::*, copy *69002255-e226-424e-b6c7-23c887fdb8bf*.
+* Copy the resource instance ID. This is the value set for the field **resource_instance_id**.
 
 
 ## Step 4B: [Optional] Restrict the service ID to only have writing permissions for the bucket
@@ -218,7 +224,7 @@ For the service ID that you just created, click **View credentials**. You can se
 
 If you want to restrict the service ID to only have writing permissions for a bucket, complete the following steps:
 
-1. Read the information for the service ID and write down the value of the **iam_apikey_name** field. 
+1. Read the information for the service ID and write down the value of the **iam_apikey_name** field and the **iam_apikey_name** field. 
 
 2. From the Dashboard, select **Manage** &gt; **Security** &gt; **Identity and Access**, and then select **Users**.
 
@@ -317,3 +323,4 @@ Complete the following steps to configure archiving of your IBM Log Analysis wit
 5. Click **Save**.
 
 
+After you save the configuration, logs are archived once a day.
