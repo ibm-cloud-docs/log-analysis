@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018
-lastupdated: "2018-10-22"
+lastupdated: "2018-10-29"
 
 ---
 
@@ -30,46 +30,46 @@ Logs are automaticaly archived once a day in a compressed format **(.json.gz)**.
 
 Logs are archived within 24-48 hours after you save the configuration. 
 
-The {{site.data.keyword.cos_short}} instance is provisioned withing the context of a resource group. The IBM Log Analysis with LogDNA instance is also provisioned within the context of a resource group. Both instances can be grouped under the same resource group or in different ones. 
+The {{site.data.keyword.cos_full_notm}} instance is provisioned withing the context of a resource group. The IBM Log Analysis with LogDNA instance is also provisioned within the context of a resource group. Both instances can be grouped under the same resource group or in different ones. 
 
-IBM Log Analysis with LogDNA uses a service ID to communicate with the {{site.data.keyword.cos_short}} service.
+IBM Log Analysis with LogDNA uses a service ID to communicate with the {{site.data.keyword.cos_full_notm}} service.
 
-* The service ID that you create for an {{site.data.keyword.cos_short}} instance is used by the IBM Log Analysis with LogDNA to authenticate and access the {{site.data.keyword.cos_short}} instance. 
-* You can assign specific access policies to the service ID that restrict permissions on the {{site.data.keyword.cos_short}} instance. Restrict the service ID to only have writing permissions on the bucket where you plan to archive the logs.
+* The service ID that you create for an {{site.data.keyword.cos_full_notm}} instance is used by the IBM Log Analysis with LogDNA to authenticate and access the {{site.data.keyword.cos_full_notm}} instance. 
+* You can assign specific access policies to the service ID that restrict permissions on the {{site.data.keyword.cos_full_notm}} instance. Restrict the service ID to only have writing permissions on the bucket where you plan to archive the logs.
 
 The following figure shows a high level view of the different components that are integrated when archiving logs:
 
 ![High level view archiving logs](images/archive.png "High level view archiving logs")
 
 
-Complete the following steps to archive an IBM Log Analysis with LogDNA instance into a bucket in an {{site.data.keyword.cos_short}} instance:
+Complete the following steps to archive an IBM Log Analysis with LogDNA instance into a bucket in an {{site.data.keyword.cos_full_notm}} instance:
 
 
 ## Step 1: Grant IAM policies to a user to work with the {{site.data.keyword.cos_full_notm}}
 {: #step1}
 
-**Note:** This step must be completed by the account owner or an administrator of the {{site.data.keyword.cos_short}} service on the {{site.data.keyword.Bluemix_notm}}.
+**Note:** This step must be completed by the account owner or an administrator of the {{site.data.keyword.cos_full_notm}} service on the {{site.data.keyword.Bluemix_notm}}.
 
-As an administrator of the {{site.data.keyword.cos_short}} service, you must be able to provision instances of the service, grant other users permissions to work with these instances, and create service IDs. 
+As an administrator of the {{site.data.keyword.cos_full_notm}} service, you must be able to provision instances of the service, grant other users permissions to work with these instances, and create service IDs. 
 
-There are different ways in which you can grant a user permissions to become an editor of the {{site.data.keyword.cos_short}} service:
+There are different ways in which you can grant a user permissions to become an editor of the {{site.data.keyword.cos_full_notm}} service:
 
-* As administrator of the service in the account, the user must have an IAM policy for the {{site.data.keyword.cos_short}} service with the platform role *Administrator*. You must assign this user access to an individual resource in the account. 
+* As administrator of the service in the account, the user must have an IAM policy for the {{site.data.keyword.cos_full_notm}} service with the platform role *Administrator*. You must assign this user access to an individual resource in the account. 
 
-* As administrator of the service withing the context of a resource group, the user must have an IAM policy for the {{site.data.keyword.cos_short}} service with the platform role *Administrator* within the context of the resource group. 
+* As administrator of the service withing the context of a resource group, the user must have an IAM policy for the {{site.data.keyword.cos_full_notm}} service with the platform role *Administrator* within the context of the resource group. 
 
 
-The following table lists the roles that a user can have to complete the actions listed for the {{site.data.keyword.cos_short}} service:
+The following table lists the roles that a user can have to complete the actions listed for the {{site.data.keyword.cos_full_notm}} service:
 
 | Service                    | Platform roles    | Action                                                                                        | 
 |----------------------------|-------------------|-----------------------------------------------------------------------------------------------|       
-| `Cloud Object Storage`     | Administrator     | Allows the user to assign policies to users in the account to work with the {{site.data.keyword.cos_short}} service. |
-| `Cloud Object Storage`     | Administrator </br>Editor | Allows the user to provision an instance of the {{site.data.keyword.cos_short}} service.    |
+| `Cloud Object Storage`     | Administrator     | Allows the user to assign policies to users in the account to work with the {{site.data.keyword.cos_full_notm}} service. |
+| `Cloud Object Storage`     | Administrator </br>Editor | Allows the user to provision an instance of the {{site.data.keyword.cos_full_notm}} service.    |
 | `Cloud Object Storage`     | Administrator </br>Editor </br>Operator | Allows the user to create a service ID.    | 
 {: caption="Table 1. Roles and actions" caption-side="top"} 
 
 
-Complete the following steps to assign a user administrator role to the {{site.data.keyword.cos_short}} service within the context of a resource group: 
+Complete the following steps to assign a user administrator role to the {{site.data.keyword.cos_full_notm}} service within the context of a resource group: 
 
 1. From the menu bar, click **Manage** &gt; **Security** &gt; **Identity and Access**, and then select **Users**.
 2. From the row for the user that you want to assign access, select the **Actions** menu, and then click **Assign access**.
@@ -87,12 +87,12 @@ Complete the following steps to assign a user administrator role to the {{site.d
 
 
 
-## Step 2: Provision an instance of {{site.data.keyword.cos_short}}
+## Step 2: Provision an instance of {{site.data.keyword.cos_full_notm}}
 {: #step2}
 
-**Note:** This step must be completed by an editor, or administrator of the {{site.data.keyword.cos_short}} service on the {{site.data.keyword.Bluemix_notm}}. 
+**Note:** This step must be completed by an editor, or administrator of the {{site.data.keyword.cos_full_notm}} service on the {{site.data.keyword.Bluemix_notm}}. 
 
-Complete the following steps to provision an {{site.data.keyword.cos_short}} instance:
+Complete the following steps to provision an {{site.data.keyword.cos_full_notm}} instance:
 
 1. Log in to your {{site.data.keyword.Bluemix_notm}} account.
 
@@ -123,9 +123,9 @@ Complete the following steps to provision an {{site.data.keyword.cos_short}} ins
 ## Step 3: Create a bucket
 {: #step3}
 
-Buckets are a way to organize your data in an {{site.data.keyword.cos_short}} instance. 
+Buckets are a way to organize your data in an {{site.data.keyword.cos_full_notm}} instance. 
 
-To manage buckets, your user must be granted permissions to work with buckets on the {{site.data.keyword.cos_short}} instance. The following table outlines the different actions and roles that a user can have to work with buckets:
+To manage buckets, your user must be granted permissions to work with buckets on the {{site.data.keyword.cos_full_notm}} instance. The following table outlines the different actions and roles that a user can have to work with buckets:
 
 | Service                    | Roles                   | Action                                                                                        | 
 |----------------------------|-------------------------|-----------------------------------------------------------------------------------------------|       
@@ -135,7 +135,7 @@ To manage buckets, your user must be granted permissions to work with buckets on
 | `Cloud Object Storage`     | Service role: reader    | Allows the user to list and download objects.                                                 |
 {: caption="Table 1. Roles and actions to work with buckets" caption-side="top"} 
 
-**Note:** To create a bucket, your user must have manager or writer permissions for the {{site.data.keyword.cos_short}} instance.
+**Note:** To create a bucket, your user must have manager or writer permissions for the {{site.data.keyword.cos_full_notm}} instance.
 
 Complete the following steps to create a bucket:
 
@@ -145,7 +145,7 @@ Complete the following steps to create a bucket:
 
 	After you log in with your user ID and password, the {{site.data.keyword.Bluemix_notm}} Dashboard opens.
 
-2. From the Dashboard, select the {{site.data.keyword.cos_short}} instance where you plan to create the bucket.
+2. From the Dashboard, select the {{site.data.keyword.cos_full_notm}} instance where you plan to create the bucket.
 
 3. Select **Buckets**. Then, click **Create Bucket**.
 
@@ -181,17 +181,17 @@ Complete the following steps to create a bucket:
 
 
 
-## Step 4A: Create a service ID for the IBM Cloud Object Storage instance
-{: #step4a}
+## Step 4: Create a service ID for the IBM Cloud Object Storage instance
+{: #step4}
 
 A service ID identifies a service similar to how a user ID identifies a user. Service IDs are not tied to a specific user. If the user that creates the service ID leaves your organization and is deleted from the account, the service ID remains.
 
-You must create a service ID for your {{site.data.keyword.cos_short}} instance. This service ID is used by the IBM Log Analysis with LogDNA instance to authenticate with your {{site.data.keyword.cos_short}} instance. 
+You must create a service ID for your {{site.data.keyword.cos_full_notm}} instance. This service ID is used by the IBM Log Analysis with LogDNA instance to authenticate with your {{site.data.keyword.cos_full_notm}} instance. 
 
 You must assign specific access policies to the service ID that restrict permissions for using specific services, or even combine permissions for accessing different services. For example, to restrict access to a single bucket, ensure that the service ID doesn't have any instance level policies using either the console or CLI.
 
 
-Complete the following steps to create a service ID with writing permissions for the {{site.data.keyword.cos_short}} instance:
+Complete the following steps to create a service ID with writing permissions for the {{site.data.keyword.cos_full_notm}} instance:
 
 1. Log in to your {{site.data.keyword.Bluemix_notm}} account.
 
@@ -199,7 +199,7 @@ Complete the following steps to create a service ID with writing permissions for
 
 	After you log in with your user ID and password, the {{site.data.keyword.Bluemix_notm}} Dashboard opens.
 
-2. From the Dashboard, select the {{site.data.keyword.cos_short}} instance where you plan to create the bucket.
+2. From the Dashboard, select the {{site.data.keyword.cos_full_notm}} instance where you plan to create the bucket.
 
 3. Select **Service credentials**. Then, select **New credential**.
 
@@ -219,8 +219,8 @@ For the service ID that you just created, click **View credentials**. You can se
 * Copy the resource instance ID. This is the value set for the field **resource_instance_id**.
 
 
-## Step 4B: [Optional] Restrict the service ID to only have writing permissions for the bucket
-{: #step4B}
+## Step 5: Restrict the service ID to only have writing permissions for the bucket
+{: #step5}
 
 If you want to restrict the service ID to only have writing permissions for a bucket, complete the following steps:
 
@@ -243,8 +243,8 @@ If you want to restrict the service ID to only have writing permissions for a bu
 **Note:** If you leave the Resource Type or Resource fields blank, the policy that is created is an instance-level policy.
 
 
-## Step 5: Select the endpoint
-{: #step 5}
+## Step 6: Select the endpoint
+{: #step 6}
 
 An endpoint defines where to look for a bucket. There are different endpoints depending on the region and type of resiliency. For more information, see [Select regions and endpoints](/docs/services/cloud-object-storage/basics/endpoints.html#select-regions-and-endpoints).
 
@@ -256,7 +256,7 @@ Complete the following steps to obtain the endpoint for your bucket:
 
 	After you log in with your user ID and password, the {{site.data.keyword.Bluemix_notm}} Dashboard opens.
 
-2. From the Dashboard, select the {{site.data.keyword.cos_short}} instance where you plan to create the bucket.
+2. From the Dashboard, select the {{site.data.keyword.cos_full_notm}} instance where you plan to create the bucket.
 
 3. Select **Buckets**. Then, select the bucket that you created where you want to archive logs.
 
@@ -266,10 +266,10 @@ Complete the following steps to obtain the endpoint for your bucket:
 
 
 
-## Step 6: Grant IAM policies to a user to archive logs
-{: #step6}
+## Step 7: Grant IAM policies to a user to archive logs
+{: #step7}
 
-The following table lists the policies that a user must have to be able to configure archiving of logs from IBM Log Analysis with LogDNA Web UI into a bucket in a {{site.data.keyword.cos_short}} instance:
+The following table lists the policies that a user must have to be able to configure archiving of logs from IBM Log Analysis with LogDNA Web UI into a bucket in a {{site.data.keyword.cos_full_notm}} instance:
 
 | Service                        | Role                      | Permission granted                                                                            | 
 |--------------------------------|---------------------------|-----------------------------------------------------------------------------------------------|       
@@ -298,8 +298,8 @@ Complete the following steps to assign a user permissions to archive logs:
 
 
 
-## Step 7: Configure archiving of your IBM Log Analysis with LogDNA instance
-{: #step 7}
+## Step 8: Configure archiving of your IBM Log Analysis with LogDNA instance
+{: #step 8}
 
 
 Complete the following steps to configure archiving of your IBM Log Analysis with LogDNA instance into a COS bucket:

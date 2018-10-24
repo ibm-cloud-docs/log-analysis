@@ -7,6 +7,7 @@ IBM Log Analysis with LogDNA
     {: .navgroup id="learn"}
     index.md
     overview.md
+    log_sources.md
 
     {: .topicgroup}
     Tutorials
