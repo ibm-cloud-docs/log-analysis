@@ -16,7 +16,7 @@ lastupdated: "2018-10-29"
 {:download: .download}
 
  
-# Archiving logs to {{site.data.keyword.cos_full_notm}}
+# Archiving logs to IBM Cloud Object Storage
 {: #archiving}
 
 You can archive logs from an IBM Log Analysis with LogDNA instance into a bucket in an {{site.data.keyword.cos_full_notm}} (COS) instance. 
@@ -45,7 +45,7 @@ The following figure shows a high level view of the different components that ar
 Complete the following steps to archive an IBM Log Analysis with LogDNA instance into a bucket in an {{site.data.keyword.cos_full_notm}} instance:
 
 
-## Step 1: Grant IAM policies to a user to work with the {{site.data.keyword.cos_full_notm}}
+## Step 1: Grant IAM policies to a user to work with IBM Cloud Object Storage
 {: #step1}
 
 **Note:** This step must be completed by the account owner or an administrator of the {{site.data.keyword.cos_full_notm}} service on the {{site.data.keyword.Bluemix_notm}}.
@@ -87,7 +87,7 @@ Complete the following steps to assign a user administrator role to the {{site.d
 
 
 
-## Step 2: Provision an instance of {{site.data.keyword.cos_full_notm}}
+## Step 2: Provision an instance of IBM Cloud Object Storage
 {: #step2}
 
 **Note:** This step must be completed by an editor, or administrator of the {{site.data.keyword.cos_full_notm}} service on the {{site.data.keyword.Bluemix_notm}}. 
@@ -298,7 +298,7 @@ Complete the following steps to assign a user permissions to archive logs:
 
 
 
-## Step 8: Configure archiving of your IBM Log Analysis with LogDNA instance
+## Step 8: Configure archiving for your IBM Log Analysis with LogDNA instance
 {: #step 8}
 
 

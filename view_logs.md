@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018
-lastupdated: "2018-10-22"
+lastupdated: "2018-10-29"
 
 ---
 
@@ -15,7 +15,7 @@ lastupdated: "2018-10-22"
 {:tip: .tip}
 {:download: .download}
 
-# Viewing logs through the IBM Log Analysis with LogDNA Web UI
+# Viewing logs
 {: #view_logs}
 
 After you provision an instance of the IBM Log Analysis with LogDNA service in the {{site.data.keyword.Bluemix}}, and configure a LogDNA agent for a log source, you can view, monitor, and manage log data through the IBM Log Analysis with LogDNA Web UI.

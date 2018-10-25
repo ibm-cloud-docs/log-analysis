@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018
-lastupdated: "2018-10-22"
+lastupdated: "2018-10-29"
 
 ---
 
@@ -15,7 +15,7 @@ lastupdated: "2018-10-22"
 {:tip: .tip}
 {:download: .download}
 
-# Working with the LogDNA instance ingestion key
+# Working with ingestion keys
 {: #ingestion_key}
 
 The ingestion key is a security key that you must use to configure LogDNA agents and successfully forward logs to your IBM Log Analysis with LogDNA instance in {{site.data.keyword.Bluemix}}. You automatically get the ingestion key when you provision an instance. Alternatively, you can also obtain the ingestion key by creating a service ID for the instance. 
