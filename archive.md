@@ -312,13 +312,29 @@ Complete the following steps to configure archiving of your IBM Log Analysis wit
 
 4. Set the bucket, endpoint, API key, and instance ID where you want logs to be archived.
 
-    | Field        | Value                                    |
-    |--------------|------------------------------------------| 
-    | `Bucket`     | Set to the COS bucket name.                          | 
-    | `Endpoint`   | Set to the COS bucket private endpoint.              | 
-    | `API Key`    | Set to the API key associated to the COS service ID. | 
-    | `Instance ID`| Set to the COS instance ID.                         |  
-    {: caption="Table 3. COS fields" caption-side="top"} 
+    <table>
+      <caption>Table 3. COS fields</caption>
+      <tr>
+         <th>Field</th>
+         <th>Value</th>
+      </tr>
+      <tr>
+         <td>Bucket</td>
+         <td>Set to the COS bucket name. </td>
+      </tr>
+      <tr>
+         <td>Endpoint</td>
+         <td>Set to the COS bucket private endpoint.</td>
+      </tr>
+      <tr>
+         <td>API Key</td>
+         <td>Set to the API key associated to the COS service ID.</td>
+      </tr>
+      <tr>
+         <td>Instance ID</td>
+         <td>Set to the COS instance ID. </td>
+      </tr>
+    </table>
 
 5. Click **Save**.
 
