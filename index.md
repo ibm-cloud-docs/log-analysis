@@ -54,12 +54,6 @@ The following table lists cloud resources that you can configure to store and ma
     <td>Public </td>
     <td>![{{site.data.keyword.containershort}} and the IBM Log Analysis with LogDNA](images/kube.png "{{site.data.keyword.containershort}} and the IBM Log Analysis with LogDNA")</td>
   </tr>
-  <tr>
-    <td>Linux Ubuntu Debian</td>
-    <td>[Managing Linux Ubuntu logs with IBM Log Analysis with LogDNA]()</td>
-    <td>Public</td>
-    <td></td>
-  </tr>
 </table>
 
 **Note:** The Cloud resource for which you want to manage logs and the IBM Log Analysis with LogDNA instance that you must use to manage those logs must run in the same account and in the same region.
