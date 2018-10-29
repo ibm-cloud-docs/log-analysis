@@ -23,7 +23,7 @@ Use IBM Log Analysis with LogDNA to add log management capabilities to your {{si
 {:shortdesc}
 
 
-## [Step1] Before you begin
+## [Step 1] Before you begin
 {: #prereqs}
 
 * Read about IBM Log Analysis with LogDNA. For more information, see [About IBM Log Analysis with LogDNA](/docs/services/Log-Analysis-with-LogDNA/overview.html#about).
@@ -33,7 +33,7 @@ Use IBM Log Analysis with LogDNA to add log management capabilities to your {{si
     To get an {{site.data.keyword.Bluemix_notm}} user ID, go to: [Registration ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://console.bluemix.net/registration/){:new_window}.
 
 
-## [Step2] Get started
+## [Step 2] Get started
 {: #getstarted}
 
 Choose a cloud resource for which you want to manage logs. Then, configure this log source so that you can monitor its logs through the IBM Log Analysis with LogDNA service.
@@ -65,14 +65,14 @@ The following table lists cloud resources that you can configure to store and ma
 **Note:** The Cloud resource for which you want to manage logs and the IBM Log Analysis with LogDNA instance that you must use to manage those logs must run in the same account and in the same region.
 
 
-## [Step3] Upgrade the plan
+## [Step 3] Upgrade the plan
 {: #upgrade}
 
 Enable additional logging features.
 
 Upgrade the IBM Log Analysis with LogDNA service plan to a paid plan to be able to [filter logs](https://docs.logdna.com/docs/filters), [search logs](https://docs.logdna.com/docs/search), [define views](https://docs.logdna.com/docs/views), and [configure alerts](https://docs.logdna.com/docs/alerts). For more information about IBM Log Analysis with LogDNA service plans, see [Pricing plans](/docs/services/Log-Analysis-with-LogDNA/overview.html#pricing_plans).
 
-## [Step4] Manage user access with IAM
+## [Step 4] Manage user access with IAM
 {: #iam}
 
 Identify the IAM policies that a user needs to work with the IBM Log Analysis with LogDNA service.

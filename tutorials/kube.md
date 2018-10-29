@@ -56,7 +56,7 @@ Your {{site.data.keyword.IBM_notm}}ID must have assigned IAM policies for each o
 |--------------------------------------|----------------------------|---------|-----------|------------------------------|
 | Resource group **Default**           |  Resource group            | Viewer  | us-south  | This policy is required to allow the user to see service instances in the Default resource group.    |
 | IBM Log Analysis with LogDNA service |  Resource group            | Editor  | us-south  | This policy is required to allow the user to provision and administer the IBM Log Analysis with LogDNA service in the Default resource group.   |
-| Cluster instance                     |  Account                   | Editor  | us-south  | This policy is required to configure the LogDNA agent in the Kubernetes cluster. |
+| Kubernetes cluster instance          |  Resource                 | Editor  | us-south  | This policy is required to configure the secret and the LogDNA agent in the Kubernetes cluster. |
 {: caption="Table 1. List of IAM policies required to complete the tutorial" caption-side="top"} 
 
 For more information about the {{site.data.keyword.containerlong}} IAM roles, see [User access permissions](/docs/containers/cs_access_reference.html#understanding).
@@ -89,17 +89,13 @@ To provision an instance of IBM Log Analysis with LogDNA through the {{site.data
 
     By default, the **Default** resource group is set.
 
-7. Select **I understand that my data will be sent to LogDNA**. 
-
-    **Note:** You must accept LogDNA's terms and conditions before you can provision the service in the {{site.data.keyword.Bluemix_notm}}.
-
-8. Select the **Lite** service plan. 
+7. Select the **Lite** service plan. 
 
     By default, the **Lite** plan is set.
 
     For more information about other service plans, see [Pricing plans](/docs/services/Log-Analysis-with-LogDNA/overview.html#pricing_plans).
 
-9. To provision the IBM Log Analysis with LogDNA service in the {{site.data.keyword.Bluemix_notm}} resource group where you are logged in, click **Create**.
+8. To provision the IBM Log Analysis with LogDNA service in the {{site.data.keyword.Bluemix_notm}} resource group where you are logged in, click **Create**.
 
 After you provision an instance, the IBM Log Analysis with LogDNA dashboard opens. 
 

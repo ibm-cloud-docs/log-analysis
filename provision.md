@@ -105,7 +105,7 @@ To provision an instance of IBM Log Analysis with LogDNA through the command lin
     ```
     {: codeblock}
 
-5. Create a service key with permissions to operate the instance. Run the [`ibmcloud resource service-key-create`](/docs/cli/reference/ibmcloud/cli_resource_group.html#ibmcloud_resource_service_key_create) command:
+5. Create a service key with **administrator** permissions to operate the instance. Run the [`ibmcloud resource service-key-create`](/docs/cli/reference/ibmcloud/cli_resource_group.html#ibmcloud_resource_service_key_create) command:
 
     ```
     ibmcloud resource service-key-create NAME ROLE_NAME --instance-name SERVICE_INSTANCE_NAME
@@ -118,7 +118,7 @@ To provision an instance of IBM Log Analysis with LogDNA through the command lin
     * ROLE_NAME is the role that defines the permissions that are enabled. Valid values are: *editor*, *operator*, *administrator*
     * SERVICE_INSTANCE_NAME is the name of the instance in the {{site.data.keyword.Bluemix_notm}}
 
-    For example, to create an API key for the instance *logdna-instance-01* with *editor* permissions on the service instance, run the following command:
+    For example, to create an API key for the instance *logdna-instance-01* with *administrator* permissions on the service instance, run the following command:
 
     ```
     ibmcloud resource service-key-create logdna-instance-01 Administrator --instance-name logdna-instance-01
