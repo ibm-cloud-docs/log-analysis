@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018
-lastupdated: "2018-11-02"
+lastupdated: "2018-10-22"
 
 ---
 
@@ -16,11 +16,16 @@ lastupdated: "2018-11-02"
 {:download: .download}
 
 
-# Managing Kubernetes cluster logs with IBM Log Analysis with LogDNA
-{: #kube}
+# Reseting the ingestion key used by a Kubernetes cluster to forward logs into an IBM Log Analysis with LogDNA instance
+{: #kube_reset}
 
 Use the IBM Log Analysis with LogDNA service to configure cluster-level logging on the {{site.data.keyword.Bluemix}} for Kubernetes clusters. 
 {:shortdesc}
+
+
+Reseting the ingestion key used by a cluster to forward logs to an IBM Log Analysis with LogDNA instance.
+
+
 
 From the moment you provision a Kubernetes cluster in the Cloud, you want to know what is happening inside the cluster. You need to access logs to troubleshoot problems and pre-empt issues. At any time, you want to have access to different types of logs such as worker logs, pod logs, application logs, or network logs. In addition, you want to monitor different sources of log data in your Kubernetes cluster. Therefore, your ability to manage and access log records from any of these sources is critical. Your success managing and monitoring logs depends on how you configure the logging capabilities for your Kubernetes platform.
 
@@ -202,9 +207,7 @@ From the LogDNA Web UI, you can view your logs as they pass through the system. 
 ## Next steps
 {: #next_steps}
 
-[Filter cluster logs](https://docs.logdna.com/docs/filters), [search cluster logs](https://docs.logdna.com/docs/search), [define views](https://docs.logdna.com/docs/views), and [configure alerts](https://docs.logdna.com/docs/alerts).
-
-**Note:** To use any of these features, you must upgrade the IBM Log Analysis with LogDNA plan to a paid plan.
+  If you want to [filter cluster logs](https://docs.logdna.com/docs/filters), [search cluster logs](https://docs.logdna.com/docs/search), [define views](https://docs.logdna.com/docs/views), and [configure alerts](https://docs.logdna.com/docs/alerts), you must upgrade the IBM Log Analysis with LogDNA plan to a paid plan.
 
 
 

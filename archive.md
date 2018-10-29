@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018
-lastupdated: "2018-10-29"
+lastupdated: "2018-11-02"
 
 ---
 
@@ -71,7 +71,7 @@ The following table lists the roles that a user can have to complete the actions
 
 Complete the following steps to assign a user administrator role to the {{site.data.keyword.cos_full_notm}} service within the context of a resource group: 
 
-1. From the menu bar, click **Manage** &gt; **Security** &gt; **Identity and Access**, and then select **Users**.
+1. From the menu bar, click **Manage** &gt; **Access (IAM)**, and then select **Users**.
 2. From the row for the user that you want to assign access, select the **Actions** menu, and then click **Assign access**.
 3. Select **Assign access within a resource group**.
 4. Select a resource group.
@@ -226,7 +226,7 @@ If you want to restrict the service ID to only have writing permissions for a bu
 
 1. Read the information for the service ID and write down the value of the **iam_apikey_name** field and the **iam_apikey_name** field. 
 
-2. From the Dashboard, select **Manage** &gt; **Security** &gt; **Identity and Access**, and then select **Users**.
+2. From the Dashboard, select **Manage** &gt; **Access (IAM)**, and then select **Users**.
 
 3. Select **Service IDs**.
 
@@ -281,7 +281,7 @@ For more information on how to configire these policies for a user, see [Grantin
 
 Complete the following steps to assign a user permissions to archive logs: 
 
-1. From the menu bar, click **Manage** &gt; **Security** &gt; **Identity and Access**, and then select **Users**.
+1. From the menu bar, click **Manage** &gt; **Access (IAM)**, and then select **Users**.
 2. From the row for the user that you want to assign access, select the **Actions** menu, and then click **Assign access**.
 3. Select **Assign access within a resource group**.
 4. Select a resource group.

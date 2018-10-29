@@ -62,7 +62,7 @@ Therefore, to grant a user administrator role to manage the service in the accou
 
 Complete the following steps to assign a user administrator role to the IBM Log Analysis with LogDNA service in the account: 
 
-1. From the menu bar, click **Manage** &gt; **Access (IAM)**, and then select **Users**.
+1. From the menu bar, click **Manage** &gt; **Security** &gt; **Identity and Access**, and then select **Users**.
 2. From the row for the user that you want to assign access, select the **Actions** menu, and then click **Assign access**.
 3. Select **Assign access to resources**.
 4. Select **IBM Log Analysis with LogDNA**.
@@ -87,7 +87,7 @@ Therefore, to grant a user administrator role to manage instances within a resou
 
 Complete the following steps to assign a user administrator role to the IBM Log Analysis with LogDNA service within the context of a resource group: 
 
-1. From the menu bar, click **Manage** &gt; **Access (IAM)**, and then select **Users**.
+1. From the menu bar, click **Manage** &gt; **Security** &gt; **Identity and Access**, and then select **Users**.
 2. From the row for the user that you want to assign access, select the **Actions** menu, and then click **Assign access**.
 3. Select **Assign access within a resource group**.
 4. Select a resource group.
@@ -116,7 +116,7 @@ Therefore, you need to have an IAM policy for the IBM Log Analysis with LogDNA s
 
 Complete the following steps to assign a user editor role to the IBM Log Analysis with LogDNA service in the account: 
 
-1. From the menu bar, click **Manage** &gt; **Access (IAM)**, and then select **Users**.
+1. From the menu bar, click **Manage** &gt; **Security** &gt; **Identity and Access**, and then select **Users**.
 2. From the row for the user that you want to assign access, select the **Actions** menu, and then click **Assign access**.
 3. Select **Assign access to resources**.
 4. Select **IBM Log Analysis with LogDNA**.
@@ -139,7 +139,7 @@ Therefore, you need an IAM policy for the IBM Log Analysis with LogDNA service w
 
 Complete the following steps to assign a user editor role to the IBM Log Analysis with LogDNA service within the context of a resource group: 
 
-1. From the menu bar, click **Manage** &gt; **Access (IAM)**, and then select **Users**.
+1. From the menu bar, click **Manage** &gt; **Security** &gt; **Identity and Access**, and then select **Users**.
 2. From the row for the user that you want to assign access, select the **Actions** menu, and then click **Assign access**.
 3. Select **Assign access within a resource group**.
 4. Select a resource group.
@@ -174,7 +174,7 @@ Therefore, you need the following policies:
 
 Complete the following steps to assign a user both policies for the IBM Log Analysis with LogDNA service within the context of a resource group: 
 
-1. From the menu bar, click **Manage** &gt; **Access (IAM)**, and then select **Users**.
+1. From the menu bar, click **Manage** &gt; **Security** &gt; **Identity and Access**, and then select **Users**.
 2. From the row for the user that you want to assign access, select the **Actions** menu, and then click **Assign access**.
 3. Select **Assign access within a resource group**.
 4. Select a resource group.
@@ -207,7 +207,7 @@ Therefore, you need the following policies:
 
 Complete the following steps to assign a user both policies for the IBM Log Analysis with LogDNA service within the context of a resource group: 
 
-1. From the menu bar, click **Manage** &gt; **Access (IAM)**, and then select **Users**.
+1. From the menu bar, click **Manage** &gt; **Security** &gt; **Identity and Access**, and then select **Users**.
 2. From the row for the user that you want to assign access, select the **Actions** menu, and then click **Assign access**.
 3. Select **Assign access within a resource group**.
 4. Select a resource group.

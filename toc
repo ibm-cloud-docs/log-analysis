@@ -1,7 +1,7 @@
 {:navgroup: .navgroup}
 {:topicgroup: .topicgroup}
 
-{: .toc subcollection="LogDNA" audience="service" href="/docs/services/Log-Analysis-with-LogDNA/index.html" path="/services/Log-Analysis-with-LogDNA"}
+{: .toc subcollection="LogDNA" audience="service" arm="" href="/docs/services/Log-Analysis-with-LogDNA/index.html" path="/services/Log-Analysis-with-LogDNA"}
 IBM Log Analysis with LogDNA
 
     {: .navgroup id="learn"}
@@ -12,6 +12,8 @@ IBM Log Analysis with LogDNA
     {: .topicgroup}
     Tutorials
         tutorials/kube.md
+        tutorials/kube_reset_ingestion.md
+        tutorials/ubuntu.md
     {: .navgroup-end}
 
     {: .navgroup id="howto"}

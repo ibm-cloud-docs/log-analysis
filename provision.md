@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018
-lastupdated: "2018-10-22"
+lastupdated: "2018-11-02"
 
 ---
 
@@ -45,21 +45,19 @@ To provision an instance of IBM Log Analysis with LogDNA by using the {{site.dat
 
 5. Enter a name for the service instance.
 
-6. Select the **Default** resource group. 
+6. Select a resource group. 
 
     By default, the **Default** resource group is set.
 
-7. Select **I understand that my data will be sent to LogDNA**. 
+    **Note:** If you are not able to select a resource group, check that you have editing permissions on the resource group where you want to provision the instance.
 
-    **Note:** You must accept LogDNA's terms and conditions before you can provision the service in the {{site.data.keyword.Bluemix_notm}}.
-
-8. Select the **Lite** service plan. 
+7. Select the **Lite** service plan. 
 
     By default, the **Lite** plan is set.
 
     For more information about other service plans, see [Pricing plans](/docs/services/Log-Analysis-with-LogDNA/overview.html#pricing_plans).
 
-9. To provision the IBM Log Analysis with LogDNA service in the {{site.data.keyword.Bluemix_notm}} resource group where you are logged in, click **Create**.
+8. To provision the IBM Log Analysis with LogDNA service in the {{site.data.keyword.Bluemix_notm}} resource group where you are logged in, click **Create**.
 
 After you provision an instance, 
 
