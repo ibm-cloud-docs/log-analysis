@@ -25,7 +25,7 @@ IBM Log Analysis with LogDNA
     view_logs.md
     work_iam.md
     ingestion_key.md
-    
+
     {: .navgroup-end}
 
     {: .navgroup id="reference"}

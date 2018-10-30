@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018
-lastupdated: "2018-10-29"
+lastupdated: "2018-11-02"
 
 ---
 
@@ -30,7 +30,7 @@ You can configure different log sources to forward logs to an IBM Log Analysis w
 | Tutorial | [Reseting the ingestion key used by a Kubernetes cluster to forward logs to an IBM Log Analysis with LogDNA instance](/docs/services/Log-Analysis-with-LogDNA/tutorials/kube_reset_ingestion.html#kube_reset) | 
 {: caption="Kubernetes tutorials" caption-side="top"} 
 
-[{{site.data.keyword.containerlong_notm}}](/docs/containers/container_index.html#container_index)
+For more information about the {{site.data.keyword.containerlong_notm}}, see [{{site.data.keyword.containerlong_notm}}](/docs/containers/container_index.html#container_index).
 
 
 ## Compute: Infrastructure services 
