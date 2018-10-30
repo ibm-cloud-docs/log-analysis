@@ -8,6 +8,7 @@ IBM Log Analysis with LogDNA
     index.md
     overview.md
     log_sources.md
+    iam.md
 
     {: .topicgroup}
     Tutorials
@@ -17,11 +18,14 @@ IBM Log Analysis with LogDNA
     {: .navgroup-end}
 
     {: .navgroup id="howto"}
-    iam.md
-    provision.md
-    ingestion_key.md
-    view_logs.md
     archive.md
+    export.md
+    provision.md
+    remove.md
+    view_logs.md
+    work_iam.md
+    ingestion_key.md
+    
     {: .navgroup-end}
 
     {: .navgroup id="reference"}

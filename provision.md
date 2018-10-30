@@ -68,7 +68,7 @@ Next, configure a log source by adding a LogDNA agent. This agent is responsible
 
 
 ## Provisioning an instance through the CLI
-{: #logdna_provision_cli}
+{: #provision_cli}
 
 To provision an instance of IBM Log Analysis with LogDNA through the command line, complete the following steps:
 
