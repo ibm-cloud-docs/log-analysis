@@ -16,42 +16,22 @@ lastupdated: "2018-11-02"
 {:download: .download}
 
  
-# Configuring network traffic in a Kubernetes cluster for custom firewall configurations in the {{site.data.keyword.Bluemix_notm}}
+# Configuring network traffic
 {: #network}
 
-When you have an additional firewall set up, or you have customized the firewall settings in your {{site.data.keyword.Bluemix_notm}} infrastructure (SoftLayer), you need to allow outgoing network traffic from the worker node to the {{site.data.keyword.loganalysisshort}} service. 
+When you have an additional firewall set up, or you have customized the firewall settings in your {{site.data.keyword.Bluemix_notm}} infrastructure (SoftLayer), you need to allow outgoing network traffic to the IBM Cloud Log Analysis with LogDNA service. 
 {:shortdesc}
 
 
+## Network traffic for custom firewall configurations in the {{site.data.keyword.Bluemix_notm}}
+{: #ips}
+
+The following table list the IP addresses per region that you must configure in your custom firewall to allow outgoing traffic:
+
+| Region      | Ingestion URL | Public IP addresses               |
+|-------------|---------------|-----------------------------------|
+| US South    |               | 169.60.166.43 </br>169.48.237.108 |
+{: caption="Table 1. IP addresses" caption-side="top"}
 
 
-
-You must open TCP port 443 and TCP port 9091 from each worker to the {{site.data.keyword.loganalysisshort}} service for the following IP addresses in your customized firewall:
-
-<table>
-  <tr>
-    <th>Region</th>
-    <th>Ingestion URL</th>
-	<th>Public IP addresses</th>
-  </tr>
-  <tr>
-    <td>Germany</td>
-	<td>ingest-eu-fra.logging.bluemix.net</td>
-	<td>158.177.88.43 <br>159.122.87.107</td>
-  </tr>
-  <tr>
-    <td>United Kingdom</td>
-	<td>ingest.logging.eu-gb.bluemix.net</td>
-	<td>169.50.115.113</td>
-  </tr>
-  <tr>
-    <td>US South</td>
-	<td>ingest.logging.ng.bluemix.net</td>
-	<td>169.48.79.236 <br>169.46.186.113</td>
-  </tr>
-  <tr>
-    <td>Sydney</td>
-	<td>ingest-au-syd.logging.bluemix.net</td>
-	<td>130.198.76.125 <br>168.1.209.20</td>
-  </tr>
-</table>
+For example, you must open TCP port 443 and TCP port 9091 in your customized firewall from each worker to the IBM Log Analysis with LogDNA service.
