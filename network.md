@@ -34,4 +34,4 @@ The following table list the IP addresses per region that you must configure in 
 {: caption="Table 1. IP addresses" caption-side="top"}
 
 
-For example, you must open TCP port 443 and TCP port 9091 in your customized firewall from each worker to the IBM Log Analysis with LogDNA service.
+You must allow outgoing traffic on TCP port 443 and TCP port 80 in your firewall. For example, you must open TCP port 443 and TCP port 80 from each worker to the IBM Log Analysis with LogDNA service.

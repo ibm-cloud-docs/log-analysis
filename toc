@@ -8,6 +8,7 @@ IBM Log Analysis with LogDNA
     index.md
     overview.md
     log_sources.md
+    network.md
     iam.md
 
     {: .topicgroup}

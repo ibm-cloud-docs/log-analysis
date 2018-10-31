@@ -124,4 +124,4 @@ To renew the ingestion key for an IBM Log Analysis with LogDNA instance by using
 
 5. Delete the old ingestion key. Click **delete**.
 
-**Note:** After you reset the ingestion key, you must update the ingestion key for any log sources that you have configured to forward logs to this IBM Log Analysis with logDNA instance.
+**Note:** After you reset the ingestion key, you must update the ingestion key for any log sources that you have configured to forward logs to this IBM Log Analysis with LogDNA instance.
