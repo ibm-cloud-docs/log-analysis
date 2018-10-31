@@ -23,10 +23,10 @@ You can export log data in JSONL format from an IBM Log Analysis with LogDNA ins
 {:shortdesc}
 
 Consider the following information when you export log data:
-* You export a set of log entries. 
-* To define the set of data that you want to export, you can apply filters, and searches. 
-* An email is sent to your email address with a link to a compressed file that includes the data. 
-* The data is available for a maximum of 48 hours. 
+* You export a set of log entries. To define the set of data that you want to export, you can apply filters and searches, and specify the time range. 
+* From the Web UI, when you export logs, you get an email, that is sent to your email address, with a link to a compressed file that includes the data. To get the data, you must click the link and download the compressed file.
+* When you export logs programmatically, you can choose to send an email or to stream logs into your terminal.
+* The compressed log file containing the data that you want to export is available for a maximum of 48 hours. 
 * The maximum number of lines that you can export is 10,000.
 
 
@@ -36,10 +36,10 @@ Consider the following information when you export log data:
 
 Complete the following steps to export log data:
 
-1. Click the **Views** icon ![Configuration icon](../images/views.png).
+1. Click the **Views** icon ![Configuration icon](images/views.png).
 2. Select **Everything** or a view.
 3. Apply a timeframe, filters and search criteria until you see the log entries that you want to export.
-4. Click **Unsaved View** if you are starting from the **Everything**** view. Click your view name if have selected a view in the previous step.
+4. Click **Unsaved View** if you are starting from the **Everything** view. Click your view name if have selected a view in the previous step.
 5. Select **Export lines**. A new window opens.
 6. Check the time range. If you need to change it, click the predefined time range in the Change the *Time Range for Export* field.
 7. Select **Prefer newer lines** or **Prefer older lines** in case the export request exceeds the line limit.
@@ -57,7 +57,7 @@ Complete the following steps to export logs programmatically:
 
     1. Launch the IBM Log Analysis with LogDNA web UI. For more information, see [Launching the IBM Log Analysis with LogDNA Web UI](/docs/services/Log-Analysis-with-LogDNA/launch_webui.html#launch_webui).
 
-    2. Select the **Configuration** icon ![Configuration icon](../images/admin.png). Then select **Organization**. 
+    2. Select the **Configuration** icon ![Configuration icon](images/admin.png). Then select **Organization**. 
 
     3. Select **API keys**.
 
