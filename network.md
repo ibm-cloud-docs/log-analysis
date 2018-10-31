@@ -28,9 +28,9 @@ When you have an additional firewall set up, or you have customized the firewall
 
 The following table list the IP addresses per region that you must configure in your custom firewall to allow outgoing traffic:
 
-| Region      | Ingestion URL | Public IP addresses               |
-|-------------|---------------|-----------------------------------|
-| US South    |               | 169.60.166.43 </br>169.48.237.108 |
+| Region      | Ingestion URL                                     | Public IP addresses               |
+|-------------|---------------------------------------------|-----------------------------------|
+| US South    | To send logs: logs.us-south.logging.cloud.ibm.com  </br>Using the collector:  api.us-south.logging.cloud.ibm.com             | 169.60.166.43 </br>169.48.237.108 |
 {: caption="Table 1. IP addresses" caption-side="top"}
 
 

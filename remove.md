@@ -15,7 +15,7 @@ lastupdated: "2018-11-02"
 {:tip: .tip}
 {:download: .download}
 
-# Removing an instance from the {{site.data.keyword.Bluemix_notm}}
+# Removing an instance
 {: #remove}
 
 You can remove an instance of the IBM Log Analysis with LogDNA service from the {{site.data.keyword.Bluemix}} UI or through the command line.

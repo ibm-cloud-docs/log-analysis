@@ -19,8 +19,16 @@ lastupdated: "2018-11-02"
 # Exporting logs to local file
 {: #export}
 
-You can export log data in JSONL format from an IBM Log Analysis with LogDNA instance into a local file.
+You can export log data in JSONL format from an IBM Log Analysis with LogDNA instance into a local file. You can export logs programmatically or from the IBM Log Analysis Web UI. 
 {:shortdesc}
+
+Consider the following information when you export log data:
+* You export a set of log entries. 
+* To define the set of data that you want to export, you can apply filters, and searches. 
+* An email is sent to your email address with a link to a compressed file that includes the data. 
+* The data is available for a maximum of 48 hours. 
+* The maximum number of lines that you can export is 10,000.
+
 
 
 ## Exporting logs from the Web UI
@@ -28,25 +36,59 @@ You can export log data in JSONL format from an IBM Log Analysis with LogDNA ins
 
 Complete the following steps to export log data:
 
-1. Perform your search query for the desired log lines.
-2. Click on the view menu to the left of the All Sources filter and select Export Lines.
-3. Select a time range to apply to the search results.
-4. Select an option to prefer newer or older lines in case the export exceeds our line limit.
-5. You will receive an email with a link download to your exported lines.
+1. Click the **Views** icon ![Configuration icon](../images/views.png).
+2. Select **Everything** or a view.
+3. Apply a timeframe, filters and search criteria until you see the log entries that you want to export.
+4. Click **Unsaved View** if you are starting from the **Everything**** view. Click your view name if have selected a view in the previous step.
+5. Select **Export lines**. A new window opens.
+6. Check the time range. If you need to change it, click the predefined time range in the Change the *Time Range for Export* field.
+7. Select **Prefer newer lines** or **Prefer older lines** in case the export request exceeds the line limit.
+8. Check your email. You will receive an email from **LogDNA** with a link to download your exported lines.
+
 
 ## Exporting logs programmatically by using the API
 {: #api}
 
+You can export logs programmatically. For more information, see [/v1/export [External link icon](../icons/launch-glyph.svg "External link icon")]
+(https://docs.logdna.com/v1.0/reference#v1export){:new_window}!.
 
-Complete the following steps:
+Complete the following steps to export logs :
 
-1. Generate a Service Key.
+1. Generate a Service Key. You must have **manager** role for the BM Log Analysis with LogDNA instance or service to complete this step.
 
-2. Run the cURL command:
+    1. Launch the IBM Log Analysis with LogDNA web UI. For more information, see [Launching the IBM Log Analysis with LogDNA Web UI](/docs/services/Log-Analysis-with-LogDNA/launch_webui.html#launch_webui).
 
-```curl "https://api.logdna.com/v1/export?to=$(date +%s)000&from=$(($(date +%s)-86400))000&levels=warn" \
--u INSERT_SERVICE_KEY:
+    2. Select the **Configuration** icon ![Configuration icon](../images/admin.png). Then select **Organization**. 
+
+    3. Select **API keys**.
+
+        You can see the service keys that have been created. 
+
+    4. Select **Generate Service Key**.
+
+        A new key is added to the list.
+
+2. Export logs. You can run the following cURL command:
+
+```curl "https://api.logdna.com/v1/export?to=$(date +%s)000&from=$(($(date +%s)-86400))000&levels=$(level)" -u INSERT_SERVICE_KEY:$(ServiceKey)
 ```
 {: codeblock}
 
-For more information, see [/v1/export](https://docs.logdna.com/v1.0/reference#v1export).
+The following table lists the query parameters that you can set to define the export:
+
+| Query parameter | Type       | Status     | Description |
+|-----------|------------|------------|-------------|
+| from      | int32      | required   | Start time. Set as Unix timestamp in seconds or milliseconds. |
+| to        | int32      | required   | End time. Set asUnix timestamp in seconds or milliseconds.    |
+| size      | string     | optional   | Number of log lines to include in the export.  | 
+| hosts     | string     | optional   | Comma separated list of hosts. |
+| apps      | string     | optional   | Comma separated list of applications. |
+| levels    | string     | optional   | Comma separated list of log levels. |
+| query     | string     | optional   | Search query. For more information, see [How to Search Logs in LogDNA docs [External link icon](../icons/launch-glyph.svg "External link icon").]
+(https://docs.logdna.com/docs/search){:new_window}! |
+| prefer    | string     | optional   | Defines the log lines that you want to export. Valid values are `head`, first log lines, and `tail`, last log lines. If not specified, defaults to tail.  |
+| email     | string     | optional   | Specifies the email with the downloadable link of your export. By default, the log lines are streamed.|
+| emailSubject | string     | optional   | Use to set the subject of the email. |
+{: caption="Query parameters" caption-side="top"} 
+
+
