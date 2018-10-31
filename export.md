@@ -49,12 +49,11 @@ Complete the following steps to export log data:
 ## Exporting logs programmatically by using the API
 {: #api}
 
-You can export logs programmatically. For more information, see [/v1/export [External link icon](../icons/launch-glyph.svg "External link icon")]
-(https://docs.logdna.com/v1.0/reference#v1export){:new_window}!.
+Complete the following steps to export logs programmatically:
 
-Complete the following steps to export logs :
+1. Generate a Service Key. 
 
-1. Generate a Service Key. You must have **manager** role for the BM Log Analysis with LogDNA instance or service to complete this step.
+    **Note:** You must have **manager** role for the IBM Log Analysis with LogDNA instance or service to complete this step.
 
     1. Launch the IBM Log Analysis with LogDNA web UI. For more information, see [Launching the IBM Log Analysis with LogDNA Web UI](/docs/services/Log-Analysis-with-LogDNA/launch_webui.html#launch_webui).
 
@@ -68,13 +67,28 @@ Complete the following steps to export logs :
 
         A new key is added to the list.
 
-2. Export logs. You can run the following cURL command:
+2. Export logs. Run the following cURL command:
 
-```curl "https://api.logdna.com/v1/export?to=$(date +%s)000&from=$(($(date +%s)-86400))000&levels=$(level)" -u INSERT_SERVICE_KEY:$(ServiceKey)
-```
-{: codeblock}
+    ```
+    curl "ENDPOINT/v1/export?QUERY_PARAMETERS" -u SERVICE_KEY:
+    ```
+    {: codeblock}
 
-The following table lists the query parameters that you can set to define the export:
+    where 
+
+    * ENDPOINT represents the entry point to the service. Each region has a different URL.
+    * QUERY_PARAMETERS are parameters that define the filtering criteria applied to the export request.
+    * SERVICE_KEY is the service key that you created in the previous step.
+
+The following table lists the endpoints per region:
+
+| Region         | Endpoint                                             | 
+|----------------|------------------------------------------------------|
+| us-south       | `https://api.us-south.logging.cloud.ibm.com `        |
+{: caption="Endpoints per region" caption-side="top"} 
+
+
+The following table lists the query parameters that you can set:
 
 | Query parameter | Type       | Status     | Description |
 |-----------|------------|------------|-------------|
@@ -88,7 +102,28 @@ The following table lists the query parameters that you can set to define the ex
 (https://docs.logdna.com/docs/search){:new_window}! |
 | prefer    | string     | optional   | Defines the log lines that you want to export. Valid values are `head`, first log lines, and `tail`, last log lines. If not specified, defaults to tail.  |
 | email     | string     | optional   | Specifies the email with the downloadable link of your export. By default, the log lines are streamed.|
-| emailSubject | string     | optional   | Use to set the subject of the email. |
+| emailSubject | string     | optional   | Use to set the subject of the email. </br>Use `%20` to represent a space. For example: Export%20logs |
 {: caption="Query parameters" caption-side="top"} 
 
+For example, to stream log lines into the terminal, you can run the following command:
+
+```
+curl "https://api.us-south.logging.cloud.ibm.com/v1/export?to=$(date +%s)000&from=$(($(date +%s)-86400))000&levels=info" -u e08c0c759663491880b0d61712346789:
+```
+{: screen}
+
+To send an email with the link to download the log lines specified on the export, you can run the following command:
+
+```
+curl "https://api.us-south.logging.cloud.ibm.com/v1/export?to=$(date +%s)000&from=$(($(date +%s)-86400))000&levels=info&email=joe@ibm.com" -u e08c0c759663491880b0d61712346789:
+```
+{: screen}
+
+
+To send an email with a custom subject, you can run the following command:
+
+```
+curl "https://api.us-south.logging.cloud.ibm.com/v1/export?to=$(date +%s)000&from=$(($(date +%s)-86400))000&levels=info&email=lopezdsr@uk.ibm.com&emailSubject=Export%20test" -u e08c0c759663491880b0d61712346789:
+```
+{: screen}
 
