@@ -17,7 +17,7 @@ lastupdated: "2018-11-02"
 
  
 # Managing user access with IAM
-{: iam}
+{: #iam}
 
 {{site.data.keyword.iamlong}} (IAM) enables you to securely authenticate users and control access to all cloud resources consistently in the {{site.data.keyword.Bluemix_notm}}. 
 {:shortdesc}

@@ -26,7 +26,7 @@ You can use IBM Log Analysis with LogDNA to manage system and application logs i
 
 IBM Log Analysis with LogDNA offers administrators, DevOps teams, and developers advanced features to filter, search, and tail log data, define alerts, and design custom views to monitor application and system logs.
 
-For more information about LogDNA, see [Log Management & Log Analysis Docs ![External link icon](../icons/launch-glyph.svg "External link icon")](https://docs.logdna.com/docs){: new_window}.
+For more information about LogDNA, see [Log Management & Log Analysis Docs ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://docs.logdna.com/docs){: new_window}.
 
 
 ## Overview

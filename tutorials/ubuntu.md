@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018
-lastupdated: "2018-10-29"
+lastupdated: "2018-11-02"
 
 ---
 
@@ -22,29 +22,51 @@ lastupdated: "2018-10-29"
 Use the IBM Log Analysis with LogDNA service to monitor and manage Ubuntu logs in a centralized logging system on the {{site.data.keyword.Bluemix}}. 
 {:shortdesc}
 
-From the moment you provision a Kubernetes cluster in the Cloud, you want to know what is happening inside the cluster. You need to access logs to troubleshoot problems and pre-empt issues. At any time, you want to have access to different types of logs such as worker logs, pod logs, application logs, or network logs. In addition, you want to monitor different sources of log data in your Kubernetes cluster. Therefore, your ability to manage and access log records from any of these sources is critical. Your success managing and monitoring logs depends on how you configure the logging capabilities for your Kubernetes platform.
+system and application logs
+run these commands on your Linux Debian-based hosts, it'll install our self-updating collector agent:
 
-To configure cluster-level logging for a Kubernetes cluster, consider the following information:
+The system log typically contains the greatest deal of information by default about your Ubuntu system. It is located at /var/log/syslog, and may contain information other logs do not. 
+All log files are located in /var/log directory. In that directory, there are specific files for each type of logs. For example, system logs, such as kernel activities are logged in syslog file.
 
-* You must be able to store log data, system logs, and containerized application logs on separate storage from Kubernetes system components.
-* You must configure every node (worker) in a cluster with a logging agent. Specifically, this agent collects and forwards logs to an external logging back-end.
-* You must be able to centralize log data for analysis on an external logging back-end.
+Some of the most common log files in that directory is :
+
+    In directory apt there is a file history.log which saves all the package installation and removal information even the initial system build as Live CD. You can open this file to see this very interesting file.
+
+    In directory dist-upgrade there is a file apt.log which logs the information during distribution upgrades
+
+    In directory installer the log files which are created during installation can be found.
+
+    There is an apport.log file which saves information about crashes in your system and reporting them.
+
+    The file auth.log includes information about the authentication activities such as when you authenticate as root user via sudo.
+
+    The file dpkg.log saves the low level details of package installation and removal related with dpkg. You might be aware that the apt system depends on dpkg for package installation and removal.
+
+    boot.log includes information of each booting.
+
+    kern.log saves kernel information such as warnings, errors etc.
+
+    alternatives.log includes the history of all the alternatives set by various packages and their removal via update-alternatives command.
+
+    Another important log file is Xorg.log which include information about the graphics driver, its failures, warnings etc.
+
+Some other types of Log files may be there depending on your installed packages. For example, My system also includes a log files epoptes.log which will only be there if you install epoptes package.
 
 
-On the {{site.data.keyword.Bluemix_notm}}, to configure cluster-level logging for a Kubernetes cluster, you must complete the following steps:
+On the {{site.data.keyword.Bluemix_notm}}, to configure an Ubuntu server to forward logs to an IBM Log Analysis with LogDNA instance, you must complete the following steps:
 
-1. Provision an instance of the IBM Log Analysis with LogDNA service. With thios step, you configure a centralized log management system where log data is hosted on {{site.data.keyword.Bluemix_notm}}.
-2. Provision a cluster on the {{site.data.keyword.containerlong_notm}}. Kubernetes v1.9+ clusters are supported.
-3. Configure the LogDNA agent on every worker (node) in a cluster.
+1. Provision an instance of the IBM Log Analysis with LogDNA service. 
+2. Configure the LogDNA agent in the Ubuntu server.
+3. Optionally, add more directories to monitor by the agent.
 
-![LogDNA component overview on the {{site.data.keyword.Bluemix_notm}}](../images/kube.png "LogDNA component overview on the {{site.data.keyword.Bluemix_notm}}")
+![Component overview on the {{site.data.keyword.Bluemix_notm}}](../images/ubuntu.png "Component overview on the {{site.data.keyword.Bluemix_notm}}")
 
-In this tutorial, you will learn how to configure cluster-level logging.
+In this tutorial, you will learn how to configure an Ubuntu server to forward logs to an IBM Log Analysis with LogDNA instance.
 
 ## Before you begin
 {: #prereqs}
 
-Work in the US-South region. Both resources, the IBM Log Analysis with LogDNA instance and the Kubernetes cluster must run in the same account.
+Work in the US-South region. 
 
 Read about IBM Log Analysis with LogDNA. For more information, see [About LogDNA](/docs/services/Log-Analysis-with-LogDNA/overview.html#about).
 
@@ -56,15 +78,10 @@ Your {{site.data.keyword.IBM_notm}}ID must have assigned IAM policies for each o
 |--------------------------------------|----------------------------|---------|-----------|------------------------------|
 | Resource group **Default**           |  Resource group            | Viewer  | us-south  | This policy is required to allow the user to see service instances in the Default resource group.    |
 | IBM Log Analysis with LogDNA service |  Resource group            | Editor  | us-south  | This policy is required to allow the user to provision and administer the IBM Log Analysis with LogDNA service in the Default resource group.   |
-| {{site.data.keyword.containerlong}}  |  Account                  | viewer  | us-south  | This policy is required to view details of the Kubernetes cluster. |
-| Cluster instance                     |  Account                   | Editor  | us-south  | This policy is required to configure the LogDNA agent in the Kubernetes cluster. |
 {: caption="Table 1. List of IAM policies required to complete the tutorial" caption-side="top"} 
-
-For more information about the {{site.data.keyword.containerlong}} IAM roles, see [User access permissions](/docs/containers/cs_access_reference.html#understanding).
 
 Install the {{site.data.keyword.Bluemix_notm}} CLI. For more information, see [Installing the {{site.data.keyword.Bluemix_notm}} CLI](/docs/cli/index.html#overview).
 
-Install the Kubernetes CLI plugin. For more information, see [Installing the CLI](/docs/containers/cs_cli_install.html#cs_cli_install).
 
 
 ## Step1: Provision an IBM Log Analysis with LogDNA instance
@@ -90,17 +107,13 @@ To provision an instance of IBM Log Analysis with LogDNA through the {{site.data
 
     By default, the **Default** resource group is set.
 
-7. Select **I understand that my data will be sent to LogDNA**. 
-
-    **Note:** You must accept LogDNA's terms and conditions before you can provision the service in the {{site.data.keyword.Bluemix_notm}}.
-
-8. Select the **Free** service plan. 
+7. Select the **Free** service plan. 
 
     By default, the **Free** plan is set.
 
     For more information about other service plans, see [Pricing plans](/docs/services/Log-Analysis-with-LogDNA/overview.html#pricing_plans).
 
-9. To provision the IBM Log Analysis with LogDNA service in the {{site.data.keyword.Bluemix_notm}} resource group where you are logged in, click **Create**.
+8. To provision the IBM Log Analysis with LogDNA service in the {{site.data.keyword.Bluemix_notm}} resource group where you are logged in, click **Create**.
 
 After you provision an instance, the IBM Log Analysis with LogDNA dashboard opens. 
 
@@ -108,57 +121,83 @@ After you provision an instance, the IBM Log Analysis with LogDNA dashboard open
 **Note:** To provision an instance of LogDNA through the CLI, see [Provisioning LogDNA through the {{site.data.keyword.Bluemix_notm}} CLI](/docs/services/Log-Analysis-with-LogDNA/provision.html#logdna_provision_cli).
 
 
-## Step2: Configure your Kubernetes cluster to send logs to your instance
+## Step2: Configure your Ubuntu server to send logs to your instance
 {: #step2}
 
-To configure your Kubernetes cluster to send logs to your IBM Log Analysis with LogDNA instance, you must install a `logdna-agent` pod on each node of your cluster. The LogDNA agent reads log files from the pod where it is installed, and forwards the log data to your LogDNA instance.
+To configure your Ubuntu server to send logs to your IBM Log Analysis with LogDNA instance, you must install a `logdna-agent`. The LogDNA agent reads log files from */var/log*, and forwards the log data to your LogDNA instance.
 
-To configure your Kubernetes cluster to forward logs to your LogDNA instance, complete the following steps from the command line:
+To configure your Ubuntu server to forward logs to your LogDNA instance, complete the following steps from an Ubuntu terminal:
 
-1. Open a terminal. Then, log in to the {{site.data.keyword.Bluemix_notm}}. Run the following command and follow the prompts:
-
-    ```
-    ibmcloud login -a api.ng.bluemix.net
-    ```
-    {: codeblock}
-
-    Select the account where you have provisioned the IBM Log Analysis with LogDNA instance.
-
-2. Set up the cluster environment. Run the following commands:
-
-    First, get the command to set the environment variable and download the Kubernetes configuration files.
+1. Install the LogDNA agent. Run the following commands:
 
     ```
-    ibmcloud ks cluster-config <cluster_name_or_ID>
+    echo "deb https://repo.logdna.com stable main" | sudo tee /etc/apt/sources.list.d/logdna.list 
     ```
     {: codeblock}
 
-    When the download of the configuration files is finished, a command is displayed that you can use to set the path to the local Kubernetes configuration file as an environment variable.
-
-    Then, copy and paste the command that is displayed in your terminal to set the KUBECONFIG environment variable.
-
-    **Note:** Every time you log in to the {{site.data.keyword.containerlong}} CLI to work with clusters, you must run these commands to set the path to the cluster's configuration file as a session variable. The Kubernetes CLI uses this variable to find a local configuration file and certificates that are necessary to connect with the cluster in {{site.data.keyword.Bluemix_notm}}.
-
-2. Add a secret to your Kubernetes cluster. Run the following command:
+    ```
+    wget -O- https://repo.logdna.com/logdna.gpg | sudo apt-key add - 
+    ```
+    {: codeblock}
 
     ```
-    kubectl create secret generic logdna-agent-key --from-literal=logdna-agent-key=LOGDNA_INGESTION_KEY_FOR_YOUR_INSTANCE
-    {: pre}
-
-    The LOGDNA_INGESTION_KEY_FOR_YOUR_INSTANCE shows the LogDNA ingestion key for your instance.
-
-    The Kubernetes secret contains the LogDNA ingestion key. The LogDNA ingestion key is used to authenticate the logging agent with the IBM Log Analysis with LogDNA service. It is used to open a secure web socket to the ingestion server on the logging back-end system.
-
-3. Configure the LogDNA agent on every worker(node) of your Kubernetes cluster. Run the following command:
+    sudo apt-get update
+    ```
+    {: codeblock}
 
     ```
-    kubectl create -f https://raw.github.ibm.com/alchemy-logging/vendor-config/master/logdna-agent-ibm-staging-ds.yaml
+    sudo apt-get install logdna-agent < "/dev/null"
     ```
-    {: pre}
+    {: codeblock}
 
-    The LogDNA agent is responsible for collecting and forwarding your logs.
+2. Set the ingestion key that the LogDNA agent must use to forward logs to the IBM Log Analysis with LogDNA instance.  
 
-    The agent collects automatically logs with extension *.log and extensionless files that are located under /var/log. By default, logs are collected from all namespaces, including the kube-system.
+    ```
+    sudo logdna-agent -k INGESTION_KEY
+    ```
+    {: codeblock}
+
+    where INGESTION_KEY contains the ingestion key active for the IBM Log Analysis with LogDNA instance where you are configuring to forward logs.
+
+3. Set the authentication endpoint. The LogDNA agent uses this host to authenticate and get the token to forward logs.
+
+    ```
+    sudo logdna-agent -s LOGDNA_APIHOST=api.us-south.logging.cloud.ibm.com
+    ```
+    {: codeblock}
+
+4. Set the ingestion endpoint.
+
+    ```
+    sudo logdna-agent -s LOGDNA_LOGHOST=logs.us-south.logging.cloud.ibm.com
+    ```
+    {: codeblock}
+
+5. Define more log paths to be monitored. Run the following command: 
+
+    ```
+    sudo logdna-agent -d /path/to/log/folders
+    ```
+    {: codeblock}
+
+    By default, **/var/log** is monitored.
+
+6. Optionally, configure the LogDNA agent to tag your hosts. Run the following commands:
+
+    ```
+    sudo logdna-agent -t TAG1,TAG2 
+    ```
+    {: codeblock}
+
+    ```
+    sudo update-rc.d logdna-agent defaults
+    ```
+    {: codeblock}
+
+    ``` 
+    sudo /etc/init.d/logdna-agent start
+    ```
+    {: codeblock}
 
 
 ## Step 3: Launch the LogDNA Web UI
@@ -190,12 +229,13 @@ From the LogDNA Web UI, you can view your logs as they pass through the system. 
 
 **Note:** With the **Free** service plan, you can only tail your latest logs.
 
+For more information, see [Viewing logs](/docs/services/Log-Analysis-with-LogDNA/view_logs.html#view_logs).
 
 
 ## Next steps
 {: #next_steps}
 
-  If you want to [filter cluster logs](https://docs.logdna.com/docs/filters), [search cluster logs](https://docs.logdna.com/docs/search), [define views](https://docs.logdna.com/docs/views), and [configure alerts](https://docs.logdna.com/docs/alerts), you must upgrade the IBM Log Analysis with LogDNA plan to a paid plan.
+[Filter logs](docs/services/Log-Analysis-with-LogDNA/view_logs.html#step5), [search logs](/docs/services/Log-Analysis-with-LogDNA/view_logs.html#step6), [define views](/docs/services/Log-Analysis-with-LogDNA/view_logs.html#step7), and [configure alerts](https://docs.logdna.com/docs/alerts). 
 
-
+**Note:** To use any of these features, you must upgrade the IBM Log Analysis with LogDNA plan to a paid plan.
 
