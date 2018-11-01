@@ -215,7 +215,6 @@ Complete the following steps to create a service ID with writing permissions for
 For the service ID that you just created, click **View credentials**. You can see information that is related to the service ID. 
 
 * Copy the API key. This is the value set for the field **apikey**.
-
 * Copy the resource instance ID. This is the value set for the field **resource_instance_id**.
 
 

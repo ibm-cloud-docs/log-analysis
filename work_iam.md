@@ -98,10 +98,9 @@ Complete the following steps to assign a user editor role to the IBM Log Analysi
 2. From the row for the user that you want to assign access, select the **Actions** menu, and then click **Assign access**.
 3. Select **Assign access to resources**.
 4. Select **IBM Log Analysis with LogDNA**.
-5. Select **All regions**.
-6. Select **All service instances**.
-7. Select the platform role **Editor**.
-8. Click Assign.
+5. Select **All service instances**.
+6. Select the platform role **Editor**.
+7. Click Assign.
 
 ## Granting permissions to a Devops user to manage an instance in the {{site.data.keyword.Bluemix_notm}} account
 {: #devops_account_instance}
@@ -112,10 +111,9 @@ Complete the following steps to assign a user editor role on one instance of the
 2. From the row for the user that you want to assign access, select the **Actions** menu, and then click **Assign access**.
 3. Select **Assign access to resources**.
 4. Select **IBM Log Analysis with LogDNA**.
-5. Select **All regions**.
-6. Select the instance.
-7. Select the platform role **Editor**.
-8. Click Assign.
+5. Select the instance.
+6. Select the platform role **Editor**.
+7. Click Assign.
 
 
 

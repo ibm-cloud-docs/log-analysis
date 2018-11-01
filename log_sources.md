@@ -54,3 +54,5 @@ The following table lists tutorials on common tasks:
 |-----------------------------------------------|
 | [Managing Ubuntu logs with IBM Log Analysis with LogDNA](/docs/services/Log-Analysis-with-LogDNA/tutorials/ubuntu.html#ubuntu) | 
 {: caption="Tutorials for Ubuntu server" caption-side="top"} 
+
+

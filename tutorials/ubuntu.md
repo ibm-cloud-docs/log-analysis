@@ -190,7 +190,7 @@ To launch IBM the Log Analysis with LogDNA dashboard through the {{site.data.key
 
     The list of IBM Log Analysis with LogDNA instances that are available on {{site.data.keyword.Bluemix_notm}} is displayed.
 
-3. Select one instance. Then, click **View logs**.
+3. Select one instance. Then, click **View LogDNA**.
 
     The LogDNA Web UI opens and displays your cluster logs.
 

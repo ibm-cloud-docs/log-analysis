@@ -133,7 +133,7 @@ Complete the following steps to delete a preset:
 4. Select **Delete**.
 5. Confirm that you want to delete the preset. Click **Delete**.
 
-## Dettach a view-specific alert from a view
+## Dettaching a view-specific alert from a view
 {: #delete_alert}
 
 Complete the following steps to delete a preset:
