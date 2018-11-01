@@ -45,19 +45,19 @@ The following table lists cloud resources that you can configure to store and ma
   <tr>
     <th>Resource</th>
     <th>Tutorial</th>
-    <th>Cloud environment</th>
+    <th>Environment</th>
     <th>Scenario</th>
   </tr>
   <tr>
     <td>Containers running on the {{site.data.keyword.containershort}}</td>
     <td>[Managing Kubernetes cluster logs with IBM Log Analysis with LogDNA](/docs/services/Log-Analysis-with-LogDNA/tutorials/kube.html#kube)</td>
-    <td>Public </td>
+    <td>{{site.data.keyword.Bluemix_notm}} Public </td>
     <td>![{{site.data.keyword.containershort}} and the IBM Log Analysis with LogDNA](images/kube.png "{{site.data.keyword.containershort}} and the IBM Log Analysis with LogDNA")</td>
   </tr>
   <tr>
     <td>Linux Ubuntu/Debian</td>
     <td>[Managing Linux Ubuntu logs with IBM Log Analysis with LogDNA](/docs/services/Log-Analysis-with-LogDNA/tutorials/ubuntu.html#ubuntu)</td>
-    <td>Public</td>
+    <td>On premisses</td>
     <td>![Ubuntu server and the IBM Log Analysis with LogDNA](images/ubuntu.png "Ubuntu server and the IBM Log Analysis with LogDNA")</td>
   </tr>
 </table>
