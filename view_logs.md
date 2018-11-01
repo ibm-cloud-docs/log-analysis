@@ -128,8 +128,8 @@ To create a group, select multiple values. Then, click **Save as group**. Enter 
 
 When you search log data, the search applies any log filters and time queries configured in that view.
 
-You can do simple searches (single term string search), compound search (multiple search terms and operators), field searches if the log line can be parsed, and others. For more information, see [How to Search Logs in LogDNA docs [External link icon](../../icons/launch-glyph.svg "External link icon")]
-(https://docs.logdna.com/docs/search){:new_window}!.
+You can do simple searches (single term string search), compound search (multiple search terms and operators), field searches if the log line can be parsed, and others. For more information, see [How to Search Logs in LogDNA docs ![External link icon](../../icons/launch-glyph.svg "External link icon")]
+(https://docs.logdna.com/docs/search){:new_window}.
 
 **Note:** AND and OR operators are case sensitive and must be capitalized.
 

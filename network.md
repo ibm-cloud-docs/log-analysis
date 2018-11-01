@@ -28,7 +28,7 @@ When you have an additional firewall set up, or you have customized the firewall
 
 You must allow outgoing traffic on TCP port 443 and TCP port 80 in your firewall. For example, you must open TCP port 443 and TCP port 80 from each worker to the IBM Log Analysis with LogDNA service.
 
-**Note:** The API endpoint is required for LogDNA agent authentication. The LogDNA agent gets a token that you can useto send logs to the Ingestion endpoint.
+**Note:** The API endpoint is required for LogDNA agent authentication. The LogDNA agent gets a token that you can use to send logs to the Ingestion endpoint.
 
 The following tables list the IP addresses per region that you must configure in your firewall to allow outgoing traffic:
 

@@ -20,6 +20,7 @@ IBM Log Analysis with LogDNA
 
     {: .navgroup id="howto"}
     archive.md
+    alerts.md
     export.md
     remove.md
     provision.md

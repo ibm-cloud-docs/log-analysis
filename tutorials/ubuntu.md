@@ -24,7 +24,7 @@ Use the IBM Log Analysis with LogDNA service to monitor and manage Ubuntu logs i
 
 You can collect and monitor system and application logs. 
 
-By default, the LogDNA agent for Ubuntu monitors log files in the **/var/log** directory. Therefore, the Ubuntu system log (*/var/log/syslog*) is monitored by default.
+By default, the LogDNA agent for Ubuntu monitors log files in the **/var/log** directory. For example, the Ubuntu system log (*/var/log/syslog*) is monitored by default.
 
 On the {{site.data.keyword.Bluemix_notm}}, to configure an Ubuntu server to forward logs to an IBM Log Analysis with LogDNA instance, you must complete the following steps:
 
