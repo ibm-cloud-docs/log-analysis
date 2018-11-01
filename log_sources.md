@@ -24,21 +24,32 @@ You can configure different log sources to forward logs to an IBM Log Analysis w
 ## Platform: Container services
 {: #kube}
 
-| [{{site.data.keyword.containerlong_notm}}](/docs/containers/container_index.html#container_index) | Description |
+You can manage logs from the [{{site.data.keyword.containerlong_notm}}](/docs/containers/container_index.html#container_index) with IBM Log Analysis with LogDNA.
+
+| Tutorials: Managing logs for the {{site.data.keyword.containerlong_notm}} |
 |---------------------------------------------------------------------------------------------------|-------------|
-| Tutorial | [Managing Kubernetes cluster logs with IBM Log Analysis with LogDNA](/docs/services/Log-Analysis-with-LogDNA/tutorials/kube.html#kube)| 
-| Tutorial | [Reseting the ingestion key used by a Kubernetes cluster to forward logs to an IBM Log Analysis with LogDNA instance](/docs/services/Log-Analysis-with-LogDNA/tutorials/kube_reset_ingestion.html#kube_reset) | 
+| [Managing Kubernetes cluster logs with IBM Log Analysis with LogDNA](/docs/services/Log-Analysis-with-LogDNA/tutorials/kube.html#kube)| 
+| [Reseting the ingestion key used by a Kubernetes cluster to forward logs to an IBM Log Analysis with LogDNA instance](/docs/services/Log-Analysis-with-LogDNA/tutorials/kube_reset_ingestion.html#kube_reset) | 
 {: caption="Kubernetes tutorials" caption-side="top"} 
 
 
 
+## Linux servers
+{: #linux}
 
-## Compute: Infrastructure services 
-{: #kube}
+You can manage logs from any of the following Linux servers with IBM Log Analysis with LogDNA:
 
-| Tutorial      | Description |
-|---------------|-------------|
-| [Tutorial ]() | Configuring an Ubuntu server to forward logs to an IBM Log Analysis with LogDNA instance. | 
-| [Tutorial ]() | Configuring an IBM Cloud Virtual Server to forward logs to an IBM Log Analysis with LogDNA instance. |
-| [Tutorial ]() | Reseting the ingestion used by an Ubuntu server to forward logs to an IBM Log Analysis with LogDNA instance.. | 
-{: caption="Kubernetes tutorials" caption-side="top"} 
+| Linux servers       | 
+|---------------------|
+| Linux Ubuntu/Debian | 
+| Linux RPM-based     |
+| Linux Gentoo        |
+{: caption="Linux servers" caption-side="top"} 
+
+
+The following table lists tutorials on common tasks:
+
+| Tutorials: Managing logs for an Ubuntu Server |
+|-----------------------------------------------|
+| [Managing Ubuntu logs with IBM Log Analysis with LogDNA](/docs/services/Log-Analysis-with-LogDNA/tutorials/ubuntu.html#ubuntu) | 
+{: caption="Tutorials for Ubuntu server" caption-side="top"} 
