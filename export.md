@@ -55,9 +55,9 @@ Complete the following steps to export logs programmatically:
 
     **Note:** You must have **manager** role for the IBM Log Analysis with LogDNA instance or service to complete this step. For more information, see [Granting permissions to manage logs and configure alerts in LogDNA](/docs/services/Log-Analysis-with-LogDNA/work_iam.html#admin_user_logdna).
 
-    1. Launch the IBM Log Analysis with LogDNA web UI. For more information, see [Launching the IBM Log Analysis with LogDNA Web UI](/docs/services/Log-Analysis-with-LogDNA/launch_webui.html#launch_webui).
+    1. Launch the IBM Log Analysis with LogDNA web UI. For more information, see [Launching the IBM Log Analysis with LogDNA Web UI](/docs/services/Log-Analysis-with-LogDNA/view_logs.html#step2).
 
-    2. Select the **Configuration** icon ![Configuration icon](images/admin.png). Then select **Organization**. 
+    2. Select the **Configuration** icon ![Configuration icon](images/admin.png). Then, select **Organization**. 
 
     3. Select **API keys**.
 

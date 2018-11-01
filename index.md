@@ -83,13 +83,13 @@ For example, learn how to grant permissions to a user to work with the IBM Log A
 
 | User role in the {{site.data.keyword.Bluemix_notm}} | For more information                     |
 |-----------------------------------------------------|------------------------------------------|
-| Account owner                                       | [Granting permissions to a user to become an administrator of the service in the {{site.data.keyword.Bluemix_notm}} account](/docs/services/Log-Analysis-with-LogDNA/iam.html#admin_account) |
-| Platform service administrator in the account       | [Granting permissions to a user to become an administrator of the service in the {{site.data.keyword.Bluemix_notm}} account](/docs/services/Log-Analysis-with-LogDNA/iam.html#admin_account) |
-| Platform service administrator in a resource group  | [Granting permissions to a user to become an administrator of the service within a resource group](/docs/services/Log-Analysis-with-LogDNA/iam.html#admin_rg) |
-| Platform Devops operator in the account           | [Granting permissions to a Devops user to manage the service in the {{site.data.keyword.Bluemix_notm}} account](/docs/services/Log-Analysis-with-LogDNA/iam.html#devops_account) |
-| Platform Devops operator in a resource group        | [Granting permissions to a Devops user to manage the service within a resource group](/docs/services/Log-Analysis-with-LogDNA/iam.html#devops_rg) |
-| Service administrator in LogDNA                     | [Granting permissions to manage logs and configure alerts in LogDNA](/docs/services/Log-Analysis-with-LogDNA/iam.html#admin_user_logdna)              |
-| User / developer                                    | [Granting permissions to a user to view and manage logs in LogDNA](/docs/services/Log-Analysis-with-LogDNA/iam.html#user_logdna)               |
+| Account owner                                       | [Granting permissions to a user to become an administrator of the service in the {{site.data.keyword.Bluemix_notm}} account](/docs/services/Log-Analysis-with-LogDNA/work_iam.html#admin_account) |
+| Platform service administrator in the account       | [Granting permissions to a user to become an administrator of the service in the {{site.data.keyword.Bluemix_notm}} account](/docs/services/Log-Analysis-with-LogDNA/work_iam.html#admin_account) |
+| Platform service administrator in a resource group  | [Granting permissions to a user to become an administrator of the service within a resource group](/docs/services/Log-Analysis-with-LogDNA/work_iam.html#admin_rg) |
+| Platform Devops operator in the account           | [Granting permissions to a Devops user to manage the service in the {{site.data.keyword.Bluemix_notm}} account](/docs/services/Log-Analysis-with-LogDNA/work_iam.html#devops_account) |
+| Platform Devops operator in a resource group        | [Granting permissions to a Devops user to manage the service within a resource group](/docs/services/Log-Analysis-with-LogDNA/work_iam.html#devops_rg) |
+| Service administrator in LogDNA                     | [Granting permissions to manage logs and configure alerts in LogDNA](/docs/services/Log-Analysis-with-LogDNA/work_iam.html#admin_user_logdna)              |
+| User / developer                                    | [Granting permissions to a user to view and manage logs in LogDNA](/docs/services/Log-Analysis-with-LogDNA/work_iam.html#user_logdna)               |
 {: caption="Table 2. Cloud roles in the {{site.data.keyword.Bluemix_notm}}" caption-side="top"}
 
 
