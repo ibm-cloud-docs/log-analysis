@@ -208,7 +208,7 @@ For more information, see [Viewing logs](/docs/services/Log-Analysis-with-LogDNA
 ## Next steps
 {: #next_steps}
 
-[Filter logs](docs/services/Log-Analysis-with-LogDNA/view_logs.html#step5), [search logs](/docs/services/Log-Analysis-with-LogDNA/view_logs.html#step6), [define views](/docs/services/Log-Analysis-with-LogDNA/view_logs.html#step7), and [configure alerts](https://docs.logdna.com/docs/alerts). 
+[Filter logs](/docs/services/Log-Analysis-with-LogDNA/view_logs.html#step5), [search logs](/docs/services/Log-Analysis-with-LogDNA/view_logs.html#step6), [define views](/docs/services/Log-Analysis-with-LogDNA/view_logs.html#step7), and [configure alerts](https://docs.logdna.com/docs/alerts). 
 
 **Note:** To use any of these features, you must upgrade the IBM Log Analysis with LogDNA plan to a paid plan.
 

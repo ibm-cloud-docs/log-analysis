@@ -18,7 +18,7 @@ lastupdated: "2018-11-02"
 # Log sources
 {: #log_sources}
 
-You can configure different log sources to forward logs to an IBM Log Analysis with LogDNA instance.
+You can configure different log sources to forward logs to an IBM Log Analysis with LogDNA instance. 
 {:shortdesc}
 
 ## Platform: Container services
