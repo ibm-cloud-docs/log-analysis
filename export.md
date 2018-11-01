@@ -98,8 +98,7 @@ The following table lists the query parameters that you can set:
 | hosts     | string     | optional   | Comma separated list of hosts. |
 | apps      | string     | optional   | Comma separated list of applications. |
 | levels    | string     | optional   | Comma separated list of log levels. |
-| query     | string     | optional   | Search query. For more information, see [How to Search Logs in LogDNA docs [External link icon](../icons/launch-glyph.svg "External link icon").]
-(https://docs.logdna.com/docs/search){:new_window}! |
+| query     | string     | optional   | Search query. For more information, see [Search Logs](/docs/services/Log-Analysis-with-LogDNA/view_logs.html#step6).] |
 | prefer    | string     | optional   | Defines the log lines that you want to export. Valid values are `head`, first log lines, and `tail`, last log lines. If not specified, defaults to tail.  |
 | email     | string     | optional   | Specifies the email with the downloadable link of your export. By default, the log lines are streamed.|
 | emailSubject | string     | optional   | Use to set the subject of the email. </br>Use `%20` to represent a space. For example: Export%20logs |
