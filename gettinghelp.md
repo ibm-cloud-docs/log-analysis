@@ -19,7 +19,7 @@ lastupdated: "2018-10-29"
 # Getting help and support
 {: #gettinghelp}
 
-If you have problems or questions when using the {{site.data.keyword.loganalysislong}}, you can get help by searching for information or by asking questions through a forum. You can also open a support ticket.
+If you have problems or questions when using the IBM Log Analysis with LogDNA, you can get help by searching for information or by asking questions through a forum. You can also open a support ticket.
 {:shortdesc}
 
 * You can check whether the {{site.data.keyword.Bluemix_notm}} is available by going to the [{{site.data.keyword.Bluemix_notm}} status page](https://developer.ibm.com/bluemix/support/#status){:new_window}.
