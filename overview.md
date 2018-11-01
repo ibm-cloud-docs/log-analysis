@@ -26,7 +26,7 @@ You can use IBM Log Analysis with LogDNA to manage system and application logs i
 
 IBM Log Analysis with LogDNA offers administrators, DevOps teams, and developers advanced features to filter, search, and tail log data, define alerts, and design custom views to monitor application and system logs.
 
-For more information about LogDNA, see [Log Management & Log Analysis Docs ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://docs.logdna.com/docs){: new_window}.
+For more information about LogDNA, see [Log Management & Log Analysis Docs ![External link icon](../../../icons/launch-glyph.svg "External link icon")](https://docs.logdna.com/docs){: new_window}.
 
 
 ## Overview
@@ -36,7 +36,7 @@ To add logging features with LogDNA in the {{site.data.keyword.Bluemix_notm}}, y
 
 Before you provision an instance of IBM Log Analysis with LogDNA, consider the following information:
 
-* You must accept the terms and conditions that specify that your data is sent to a third party.
+* Log data is sent to a third party.
 * Your users must have platform permissions to create, view, and delete an instance of a service in the {{site.data.keyword.Bluemix_notm}}.
 * Your users must have platform permissions to create resources within the context of the resource group where you plan to provision the LogDNA instance.
 
@@ -44,15 +44,15 @@ You provision an IBM Log Analysis with LogDNA instance within the context of a r
 
 After you provision an instance of IBM Log Analysis with LogDNA, an account in created in LogDNA, and you receive the ingestion key for your account.
 
-Then, you must configure a LogDNA agent for each log source. A log source is a cloud resource that generates logs. For example, a log source can be a Kubernetes cluster. You use the ingestion key to configure the LogDNA agent that is responsible for collecting and forwarding logs to your LogDNA instance.
+Then, you must configure a LogDNA agent for each log source. A log source is a Cloud or on-prem resource that generates logs. For example, a log source can be a Kubernetes cluster. You use the ingestion key to configure the LogDNA agent that is responsible for collecting and forwarding logs to your IBM Log Analysis with LogDNA instance.
 
-After the LogDNA agent is deployed in a log source, collection and forwarding of logs to the LogDNA instance is automatic.
+After the LogDNA agent is deployed in a log source, collection and forwarding of logs to the IBM Log Analysis with LogDNA instance is automatic.
 
-You can launch the LogDNA Web UI to view, monitor, and manage your logs.
+You can launch the IBM Log Analysis with LogDNA Web UI to view, monitor, and manage your logs.
 
-The following figure shows the components overview for the LogDNA service that is running on {{site.data.keyword.Bluemix_notm}}:
+The following figure shows the components overview for the IBM Log Analysis with LogDNA service that is running on {{site.data.keyword.Bluemix_notm}}:
 
-![LogDNA component overview on the {{site.data.keyword.Bluemix_notm}}](images/components.png "LogDNA component overview on the {{site.data.keyword.Bluemix_notm}}")
+![IBM Log Analysis with LogDNA component overview on the {{site.data.keyword.Bluemix_notm}}](images/components.png "IBM Log Analysis with LogDNA component overview on the {{site.data.keyword.Bluemix_notm}}")
 
 
 ## Log data
