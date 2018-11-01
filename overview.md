@@ -110,17 +110,13 @@ The following tables outlines the different features that are included in each s
 | Feature                    | Plan: `30 days log retention` | Plan: `14 days log retention` | Plan: `7 days log retention | Plan: `Free` | 
 |----------------------------------|-------------------------|-------------------------------|-----------------------------|--------------|
 | `Logs are stored and searchable` | Yes - for 30 days       | Yes - for 14 days             | Yes - for 7 days            | No           |
-| `Unlimited hosts and sources`    | Yes                     | Yes                           | Yes                         | Yes          |
 | `Live streaming tail`            | Yes                     | Yes                           | Yes                         | Yes          |
-| `Number of saved views`          | Yes - unlimited         | Yes - unlimited               | Yes - unlimited             | Yes - 3 saved views  |
+| `Save views`                     | Yes                     | Yes                           | Yes                         | Yes          |
 | `Archiving`                      | Yes                     | Yes                           | Yes                         | No           |
-| `Automatic field parsing`        | Yes                     | Yes                           | Yes                         | Yes          |
-| `Custom fields`                  | Yes                     | Yes                           | Yes                         | Yes          |
-| `Dynamically tagged host groups` | Yes                     | Yes                           | Yes                         | Yes          |
 | `Multi-channel Alerting`         | Yes                     | Yes                           | Yes                         | No           | 
 {: caption="Table 2. List of features available for each service plan" caption-side="top"} 
 
-
+**Note:** Plan changes are effective the next business day (UTC 00:00).
 
 ## Regions
 {: #regions}
