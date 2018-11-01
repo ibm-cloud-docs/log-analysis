@@ -91,7 +91,7 @@ To provision an instance of IBM Log Analysis with LogDNA through the {{site.data
 After you provision an instance, the IBM Log Analysis with LogDNA dashboard opens. 
 
 
-**Note:** To provision an instance of LogDNA through the CLI, see [Provisioning LogDNA through the {{site.data.keyword.Bluemix_notm}} CLI](/docs/services/Log-Analysis-with-LogDNA/provision.html#logdna_provision_cli).
+**Note:** To provision an instance of LogDNA through the CLI, see [Provisioning LogDNA through the {{site.data.keyword.Bluemix_notm}} CLI](/docs/services/Log-Analysis-with-LogDNA/provision.html#provision_cli).
 
 
 ## Step2: Configure your Ubuntu server to send logs to your instance

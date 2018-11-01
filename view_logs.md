@@ -40,7 +40,7 @@ The following table lists the minimum policies that a user must have to be able 
 | `IBM Log Analysis with LogDNA` | Service role: Reader      | Allows the user to launch the Web UI and view logs in the Web UI.                             |
 {: caption="Table 1. IAM policies" caption-side="top"} 
 
-For more information on how to configure these policies for a user, see [Granting permissions to a user to view logs in LogDNA](/docs/services/Log-Analysis-with-LogDNA/iam.html#user_logdna).
+For more information on how to configure these policies for a user, see [Granting permissions to a user to view logs in LogDNA](/docs/services/Log-Analysis-with-LogDNA/work_iam.html#user_logdna).
 
 
 ## Step 2: Launch the Web UI through the {{site.data.keyword.Bluemix_notm}} UI
@@ -72,7 +72,7 @@ In the **USER PREFERENCES** section, you can modify the order of the data fields
 
 Complete the following steps to modify the format of a log line:
 
-1. Select the **Configuration** icon ![Configuration icon](images/admin.png).
+1. Select the **Configuration** icon ![Configuration icon](images/admin.png "Admin icon").
 2. Select **USER PREFERENCES**. A new window opens.
 3. Select **Log Format**.
 4. Modify the *Line Format* section to match your requirements. Drag and drop boxes.
@@ -85,7 +85,7 @@ At any time, you can view each log line in context.
 
 Complete the following steps: 
 
-1. Click the **Views** icon ![Configuration icon](images/views.png).
+1. Click the **Views** icon ![Configuration icon](images/views.png "Configuration icon").
 2. Select **Everything** or a view.
 3. Identify a line in the log that you want to explore.
 4. Expand the log line. 
@@ -110,7 +110,7 @@ You can filter logs by log source, application, and log level.
 
 Complete the following steps to filter logs:
 
-1. Click the **Views** icon ![Configuration icon](images/views.png).
+1. Click the **Views** icon ![Configuration icon](images/views.png "Configuration icon").
 2. Select **Everything** or a view.
 3. Expand **All Tags** to see the list of tags that are identified in the logs. Then, choose the ones that you want.
 4. Expand **All Sources** to see the list of log sources that are identified in the logs. Then, choose the ones that you want.
@@ -128,8 +128,7 @@ To create a group, select multiple values. Then, click **Save as group**. Enter 
 
 When you search log data, the search applies any log filters and time queries configured in that view.
 
-You can do simple searches (single term string search), compound search (multiple search terms and operators), field searches if the log line can be parsed, and others. For more information, see [How to Search Logs in LogDNA docs ![External link icon](../../icons/launch-glyph.svg "External link icon")]
-(https://docs.logdna.com/docs/search){:new_window}.
+You can do simple searches (single term string search), compound search (multiple search terms and operators), field searches if the log line can be parsed, and others. For more information, see [How to Search Logs in LogDNA docs ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://docs.logdna.com/docs/search){:new_window}.
 
 **Note:** AND and OR operators are case sensitive and must be capitalized.
 
@@ -141,7 +140,7 @@ You can do simple searches (single term string search), compound search (multipl
 
 Complete the following steps to create a view:
 
-1. Click the **Views** icon ![Configuration icon](images/views.png).
+1. Click the **Views** icon ![Configuration icon](images/views.png "Configuration icon").
 2. Select **Everything** or a view.
 3. Filter log data then click **Save as new view / alert**.
 
