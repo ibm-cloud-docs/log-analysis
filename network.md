@@ -38,7 +38,7 @@ The following tables list the IP addresses per region that you must configure in
 {: caption="Table 1. IP addresses to send logs" caption-side="top"}
 
 
-| Region      | API endpoint                                | Public IP addresses               | Ports   |
+| Region      | Authentication endpoint                     | Public IP addresses               | Ports   |
 |-------------|---------------------------------------------|-----------------------------------|---------|
 | US South    | api.us-south.logging.cloud.ibm.com          | 169.60.166.43                     | TCP 80  |
 {: caption="Table 2. IP addresses used by the LogDNA agent" caption-side="top"}
