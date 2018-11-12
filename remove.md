@@ -76,7 +76,7 @@ To remove an instance of IBM Log Analysis with LogDNA through the command line, 
 4. Remove the instance. Run the [`ibmcloud resource service-instance-delete`](/docs/cli/reference/ibmcloud/cli_resource_group.html#ibmcloud_resource_service_instance_create) command:
 
     ```
-    ibmcloud resource service-instance-create NAME 
+    ibmcloud resource service-instance-delete NAME 
     ```
     {: codeblock}
 
