@@ -79,13 +79,13 @@ Use the following table to identify the platform role that you can grant a user 
 | `Delete a service instance`                                             | Administrator </br>Editor                            | 
 | `Create a service ID`                                                   | Administrator </br>Editor                            |
 | `View details of a service instance`                                    | Administrator </br>Editor </br>Operator </br>Viewer  | 
+| `View service instances in the Observability Logging dashboard`         | Administrator </br>Editor </br>Operator </br>Viewer  | 
 {: caption="Table 1. IAM user roles and actions" caption-side="top"}
 
 Use the following table to identify the platform role that you can grant a user in the {{site.data.keyword.Bluemix_notm}} to run any of the following service actions:
 
-| Actions                                                                 | {{site.data.keyword.Bluemix_notm}} Service Roles     | 
+| Actions                                                                 | {{site.data.keyword.Bluemix_notm}} Platform Roles     | 
 |-------------------------------------------------------------------------|------------------------------------------------------|
-| `View service instances in the Observability Logging dashboard`         | Administrator </br>Editor </br>Operator </br>Viewer  | 
 | `Add LogDNA log sources`                                                | Administrator                                        |
 | `Configure alerts`                                                      | Administrator                                        | 
 | `Manage log data`                                                       | Administrator                                        |

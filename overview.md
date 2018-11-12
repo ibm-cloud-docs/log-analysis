@@ -26,8 +26,6 @@ You can use IBM Log Analysis with LogDNA to manage system and application logs i
 
 IBM Log Analysis with LogDNA offers administrators, DevOps teams, and developers advanced features to filter, search, and tail log data, define alerts, and design custom views to monitor application and system logs.
 
-For more information about LogDNA, see [Log Management & Log Analysis Docs ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://docs.logdna.com/docs){: new_window}.
-
 
 ## Overview
 {: #ov}
@@ -97,21 +95,20 @@ Different pricing plans are available that you can choose for an IBM Log Analysi
 
 | Plan                     | 
 |--------------------------|
-| `30 days log retention`  |
-| `14 days log retention`  |
-| `7 days log retention`   |
-| `Free `                  |
+| `30 day log search`  |
+| `14 day log search`  |
+| `7 day log search`   |
+| `Lite`                  |
 {: caption="Table 1. List of service plans" caption-side="top"} 
 
-IBM Log Analysis with LogDNA offers a **Free** plan that you can use to view your logs as they pass through the system. You can view logs by using log tailing. You can also design filters to prepare for upgrading to a longer retention period plan. This plan has a 0-day retention period.
+IBM Log Analysis with LogDNA offers a **Lite** plan that you can use to view your logs as they pass through the system. You can view logs by using log tailing. You can also design filters to prepare for upgrading to a longer retention period plan. This plan has a 0-day retention period.
 
 The following tables outlines the different features that are included in each service plan:
 
-| Feature                    | Plan: `30 days log retention` | Plan: `14 days log retention` | Plan: `7 days log retention | Plan: `Free` | 
+| Feature                    | Plan: `30 day log search` | Plan: `14 days log search` | Plan: `7 days log search | Plan: `Lite` | 
 |----------------------------------|-------------------------|-------------------------------|-----------------------------|--------------|
 | `Logs are stored and searchable` | Yes - for 30 days       | Yes - for 14 days             | Yes - for 7 days            | No           |
 | `Live streaming tail`            | Yes                     | Yes                           | Yes                         | Yes          |
-| `Save views`                     | Yes                     | Yes                           | Yes                         | Yes          |
 | `Archiving`                      | Yes                     | Yes                           | Yes                         | No           |
 | `Multi-channel Alerting`         | Yes                     | Yes                           | Yes                         | No           | 
 {: caption="Table 2. List of features available for each service plan" caption-side="top"} 

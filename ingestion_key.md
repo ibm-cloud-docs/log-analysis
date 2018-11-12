@@ -103,7 +103,7 @@ To get the ingestion key for an IBM Log Analysis with LogDNA instance through th
     The output from this command includes the field **ingestion_key** that contains the ingestion key for the LogDA instance.
 
 
-## Reset the ingestion key 
+## Reseting the ingestion key 
 {: #reset}
 
 If the ingestion key is compromissed or you have a policy to renew it after a number of days, you can generate a new key and delete the old one.

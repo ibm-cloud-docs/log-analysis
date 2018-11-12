@@ -62,7 +62,6 @@ The following table lists cloud resources that you can configure to store and ma
   </tr>
 </table>
 
-**Note:** The Cloud resource for which you want to manage logs and the IBM Log Analysis with LogDNA instance that you must use to manage those logs must run in the same account and in the same region.
 
 
 ## Step 3: Upgrade the plan

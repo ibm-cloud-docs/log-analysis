@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018
-lastupdated: "2018-11-02"
+lastupdated: "2018-11-05"
 
 ---
 
@@ -23,14 +23,14 @@ You can remove an instance of the IBM Log Analysis with LogDNA service from the 
 
 When you remove an instance from the {{site.data.keyword.Bluemix_notm}}, consider the following information to tidy up:
 
-1. Write down the list of sources that forward logs to the IBM Log Analysis with LogDNA instance that you want to remove. You must remove the LogDNA agent from each source.
+1. Write down the list of sources that forward metrics to the IBM Log Analysis with LogDNA instance that you want to remove. You must remove the LogDNA agent from each source.
 2. Remove permissions granted to users to work with the instance. 
 
     If you use an access group to manage access to the instance, you must remove the access group.
 
     If you use an access group to manage access to different service instances, you must remove the policies that grant permissions to the instance that you want to remove.
     
-    If you have granted individual policies to users, you must gather the information of each user that has access and remove one by one the policies that relate to the instance that you want to delete.
+    If you have granted individual policies to users, you must gather the information of each user that has access, and remove one by one the policies that relate to the instance that you want to delete.
 
 
 Then, delete the instance from the {{site.data.keyword.Bluemix_notm}} Dashboard.
@@ -47,11 +47,13 @@ To remove an instance of IBM Log Analysis with LogDNA by using the {{site.data.k
 
 	After you log in with your user ID and password, the {{site.data.keyword.Bluemix_notm}} UI opens.
 
-2. Select **Observability**. The list of the instances is displayed.
+2. Select **Observability**. 
 
-3. Select the instance that you want to delete.
+3. Select **Logging**. The list of the instances is displayed.
 
-4. From the *Action* menu, select **Remove**.
+4. Select the instance that you want to delete.
+
+5. From the *Action* menu, select **Remove**.
 
 
 ## Removing an instance through the CLI
@@ -78,7 +80,7 @@ To remove an instance of IBM Log Analysis with LogDNA through the command line, 
     ```
     {: codeblock}
 
-    where NAME is the name of the instance
+    where NAME is the name of the instance.
 
     For example, to remove an instance, run the following command:
 

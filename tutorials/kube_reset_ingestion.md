@@ -106,7 +106,7 @@ Complete the following steps:
 4. Remove the LogDNA agent on every worker(node) of your Kubernetes cluster. The LogDNA agent is responsible for collecting and forwarding your logs. Run the following command:
 
     ```
-    kubectl create -f https://repo.logdna.com/ibm/prod/logdna-agent-ds-us-south.yaml
+    kubectl delete daemonset logdna-agent
     ```
     {: codeblock}
 
