@@ -7,18 +7,26 @@ IBM Log Analysis with LogDNA
     {: .navgroup id="learn"}
     index.md
     overview.md
+    log_sources.md
+    network.md
+    iam.md
 
     {: .topicgroup}
     Tutorials
         tutorials/kube.md
+        tutorials/kube_reset_ingestion.md
+        tutorials/ubuntu.md
     {: .navgroup-end}
 
     {: .navgroup id="howto"}
-    iam.md
-    provision.md
-    ingestion_key.md
-    view_logs.md
     archive.md
+    alerts.md
+    export.md
+    remove.md
+    provision.md
+    view_logs.md
+    work_iam.md
+    ingestion_key.md
     {: .navgroup-end}
 
     {: .navgroup id="reference"}

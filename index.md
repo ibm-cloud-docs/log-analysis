@@ -23,7 +23,7 @@ Use IBM Log Analysis with LogDNA to add log management capabilities to your {{si
 {:shortdesc}
 
 
-## [Step1] Before you begin
+## Step 1: Before you begin
 {: #prereqs}
 
 * Read about IBM Log Analysis with LogDNA. For more information, see [About IBM Log Analysis with LogDNA](/docs/services/Log-Analysis-with-LogDNA/overview.html#about).
@@ -33,7 +33,7 @@ Use IBM Log Analysis with LogDNA to add log management capabilities to your {{si
     To get an {{site.data.keyword.Bluemix_notm}} user ID, go to: [Registration ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://console.bluemix.net/registration/){:new_window}.
 
 
-## [Step2] Get started
+## Step 2: Get started
 {: #getstarted}
 
 Choose a cloud resource for which you want to manage logs. Then, configure this log source so that you can monitor its logs through the IBM Log Analysis with LogDNA service.
@@ -45,43 +45,50 @@ The following table lists cloud resources that you can configure to store and ma
   <tr>
     <th>Resource</th>
     <th>Tutorial</th>
-    <th>Cloud environment</th>
+    <th>Environment</th>
     <th>Scenario</th>
   </tr>
   <tr>
     <td>Containers running on the {{site.data.keyword.containershort}}</td>
     <td>[Managing Kubernetes cluster logs with IBM Log Analysis with LogDNA](/docs/services/Log-Analysis-with-LogDNA/tutorials/kube.html#kube)</td>
-    <td>Public </td>
+    <td>{{site.data.keyword.Bluemix_notm}} Public </td>
     <td>![{{site.data.keyword.containershort}} and the IBM Log Analysis with LogDNA](images/kube.png "{{site.data.keyword.containershort}} and the IBM Log Analysis with LogDNA")</td>
+  </tr>
+  <tr>
+    <td>Linux Ubuntu/Debian</td>
+    <td>[Managing Linux Ubuntu logs with IBM Log Analysis with LogDNA](/docs/services/Log-Analysis-with-LogDNA/tutorials/ubuntu.html#ubuntu)</td>
+    <td>On premisses</td>
+    <td>![Ubuntu server and the IBM Log Analysis with LogDNA](images/ubuntu.png "Ubuntu server and the IBM Log Analysis with LogDNA")</td>
   </tr>
 </table>
 
-**Note:** The Cloud resource for which you want to manage logs and the IBM Log Analysis with LogDNA instance that you must use to manage those logs must run in the same account and in the same region.
 
 
-## [Step3] Upgrade the plan
+## Step 3: Upgrade the plan
 {: #upgrade}
 
 Enable additional logging features.
 
-Upgrade the IBM Log Analysis with LogDNA service plan to a paid plan to be able to [filter logs](https://docs.logdna.com/docs/filters), [search logs](https://docs.logdna.com/docs/search), [define views](https://docs.logdna.com/docs/views), and [configure alerts](https://docs.logdna.com/docs/alerts). For more information about IBM Log Analysis with LogDNA service plans, see [Pricing plans](/docs/services/Log-Analysis-with-LogDNA/overview.html#pricing_plans).
+Upgrade the IBM Log Analysis with LogDNA service plan to a paid plan to be able to [filter logs](/docs/services/Log-Analysis-with-LogDNA/view_logs.html#step5), [search logs](/docs/services/Log-Analysis-with-LogDNA/view_logs.html#step6), [define views](/docs/services/Log-Analysis-with-LogDNA/view_logs.html#step7), and [configure alerts](https://docs.logdna.com/docs/alerts). . For more information about IBM Log Analysis with LogDNA service plans, see [Pricing plans](/docs/services/Log-Analysis-with-LogDNA/overview.html#pricing_plans).
 
-## [Step4] Manage user access with IAM
+## Step 4: Manage user access with IAM
 {: #iam}
 
 Identify the IAM policies that a user needs to work with the IBM Log Analysis with LogDNA service.
 
-To learn more about IAM integration with the IBM Log Analysis with LogDNA service, see:
+To learn more about IAM integration with the IBM Log Analysis with LogDNA service, see [Managing user access with IAM](/docs/services/Log-Analysis-with-LogDNA/iam.html#iam).
+
+For example, learn how to grant permissions to a user to work with the IBM Log Analysis with LogDNA service:
 
 | User role in the {{site.data.keyword.Bluemix_notm}} | For more information                     |
 |-----------------------------------------------------|------------------------------------------|
-| Account owner                                       | [Granting permissions to a user to become an administrator of the service in the {{site.data.keyword.Bluemix_notm}} account](/docs/services/Log-Analysis-with-LogDNA/iam.html#admin_account) |
-| Platform service administrator in the account       | [Granting permissions to a user to become an administrator of the service in the {{site.data.keyword.Bluemix_notm}} account](/docs/services/Log-Analysis-with-LogDNA/iam.html#admin_account) |
-| Platform service administrator in a resource group  | [Granting permissions to a user to become an administrator of the service within a resource group](/docs/services/Log-Analysis-with-LogDNA/iam.html#admin_rg) |
-| Platform Devops operator in the account           | [Granting permissions to a Devops user to manage the service in the {{site.data.keyword.Bluemix_notm}} account](/docs/services/Log-Analysis-with-LogDNA/iam.html#devops_account) |
-| Platform Devops operator in a resource group        | [Granting permissions to a Devops user to manage the service within a resource group](/docs/services/Log-Analysis-with-LogDNA/iam.html#devops_rg) |
-| Service administrator in LogDNA                     | [Granting permissions to manage logs and configure alerts in LogDNA](/docs/services/Log-Analysis-with-LogDNA/iam.html#admin_user_logdna)              |
-| User / developer                                    | [Granting permissions to a user to view and manage logs in LogDNA](/docs/services/Log-Analysis-with-LogDNA/iam.html#user_logdna)               |
+| Account owner                                       | [Granting permissions to a user to become an administrator of the service in the {{site.data.keyword.Bluemix_notm}} account](/docs/services/Log-Analysis-with-LogDNA/work_iam.html#admin_account) |
+| Platform service administrator in the account       | [Granting permissions to a user to become an administrator of the service in the {{site.data.keyword.Bluemix_notm}} account](/docs/services/Log-Analysis-with-LogDNA/work_iam.html#admin_account) |
+| Platform service administrator in a resource group  | [Granting permissions to a user to become an administrator of the service within a resource group](/docs/services/Log-Analysis-with-LogDNA/work_iam.html#admin_rg) |
+| Platform Devops operator in the account           | [Granting permissions to a Devops user to manage the service in the {{site.data.keyword.Bluemix_notm}} account](/docs/services/Log-Analysis-with-LogDNA/work_iam.html#devops_account) |
+| Platform Devops operator in a resource group        | [Granting permissions to a Devops user to manage the service within a resource group](/docs/services/Log-Analysis-with-LogDNA/work_iam.html#devops_rg) |
+| Service administrator in LogDNA                     | [Granting permissions to manage logs and configure alerts in LogDNA](/docs/services/Log-Analysis-with-LogDNA/work_iam.html#admin_user_logdna)              |
+| User / developer                                    | [Granting permissions to a user to view and manage logs in LogDNA](/docs/services/Log-Analysis-with-LogDNA/work_iam.html#user_logdna)               |
 {: caption="Table 2. Cloud roles in the {{site.data.keyword.Bluemix_notm}}" caption-side="top"}
 
 

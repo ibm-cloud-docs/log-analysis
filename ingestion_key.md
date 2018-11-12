@@ -34,7 +34,7 @@ To get the ingestion key for an IBM Log Analysis with LogDNA instance by using t
 
 1. Log in to your {{site.data.keyword.Bluemix_notm}} account.
 
-    The {{site.data.keyword.Bluemix_notm}} dashboard can be found at: [http://bluemix.net ![External link icon](../../../icons/launch-glyph.svg "External link icon")](http://bluemix.net){:new_window}.
+    The {{site.data.keyword.Bluemix_notm}} dashboard can be found at: [http://bluemix.net ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://bluemix.net){:new_window}.
 
 	After you log in with your user ID and password, the {{site.data.keyword.Bluemix_notm}} UI opens.
 
@@ -52,7 +52,7 @@ To get the ingestion key for an IBM Log Analysis with LogDNA instance by using t
 
 To get the ingestion key for an IBM Log Analysis with LogDNA instance by using the IBM Log Analysis with LogDNA Web UI, complete the following steps:
 
-1. Launch the IBM Log Analysis with LogDNA web UI. For more information, see [Launching the IBM Log Analysis with LogDNA Web UI](/docs/services/Log-Analysis-with-LogDNA/launch_webui.html#launch_webui).
+1. Launch the IBM Log Analysis with LogDNA web UI. For more information, see [Launching the IBM Log Analysis with LogDNA Web UI](/docs/services/Log-Analysis-with-LogDNA/view_logs.html#step2).
 
 2. Select the **Configuration** icon. Then select **Organization**. 
 
@@ -102,3 +102,26 @@ To get the ingestion key for an IBM Log Analysis with LogDNA instance through th
  
     The output from this command includes the field **ingestion_key** that contains the ingestion key for the LogDA instance.
 
+
+## Reseting the ingestion key 
+{: #reset}
+
+If the ingestion key is compromissed or you have a policy to renew it after a number of days, you can generate a new key and delete the old one.
+
+To renew the ingestion key for an IBM Log Analysis with LogDNA instance by using the IBM Log Analysis with LogDNA Web UI, complete the following steps:
+
+1. Launch the IBM Log Analysis with LogDNA web UI. For more information, see [Launching the IBM Log Analysis with LogDNA Web UI](/docs/services/Log-Analysis-with-LogDNA/view_logs.html#step2).
+
+2. Select the **Configuration** icon. Then select **Organization**. 
+
+3. Select **API keys**.
+
+    You can see the ingestion keys that have been created. 
+
+4. Select **Generate Ingestion Key**.
+
+    A new key is added to the list.
+
+5. Delete the old ingestion key. Click **delete**.
+
+**Note:** After you reset the ingestion key, you must update the ingestion key for any log sources that you have configured to forward logs to this IBM Log Analysis with LogDNA instance.

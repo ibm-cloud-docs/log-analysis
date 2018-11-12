@@ -41,34 +41,36 @@ To provision an instance of IBM Log Analysis with LogDNA by using the {{site.dat
 
 3. To filter the list of services that is displayed, select the **Developer Tools** category.
 
-4. Click the **IBM Log Analysis with LogDNA** tile.
+4. Click the **IBM Log Analysis with LogDNA** tile. The *Observability* Dashboard opens.
 
-5. Enter a name for the service instance.
+5. Select **Create instance**. 
 
-6. Select a resource group. 
+6. Enter a name for the service instance.
+
+7. Select a resource group. 
 
     By default, the **Default** resource group is set.
 
     **Note:** If you are not able to select a resource group, check that you have editing permissions on the resource group where you want to provision the instance.
 
-7. Select the **Lite** service plan. 
+8. Select the **Lite** service plan. 
 
     By default, the **Lite** plan is set.
 
     For more information about other service plans, see [Pricing plans](/docs/services/Log-Analysis-with-LogDNA/overview.html#pricing_plans).
 
-8. To provision the IBM Log Analysis with LogDNA service in the {{site.data.keyword.Bluemix_notm}} resource group where you are logged in, click **Create**.
+9. To provision the IBM Log Analysis with LogDNA service in the {{site.data.keyword.Bluemix_notm}} resource group where you are logged in, click **Create**.
 
 After you provision an instance, 
 
-* The IBM Log Analysis with LogDNA dashboard opens. 
+* The *Observability* dashboard opens. 
 * A service ID is automatically created. You can use this service ID to get the ingestion key for your instance.
 
 Next, configure a log source by adding a LogDNA agent. This agent is responsible for collecting and forwarding logs to LogDNA. 
 
 
 ## Provisioning an instance through the CLI
-{: #logdna_provision_cli}
+{: #provision_cli}
 
 To provision an instance of IBM Log Analysis with LogDNA through the command line, complete the following steps:
 
@@ -94,8 +96,11 @@ To provision an instance of IBM Log Analysis with LogDNA through the command lin
     where
 
     * NAME is the name of the instance
+
     * *logdna** is the name of the IBM Log Analysis with LogDNA service in the {{site.data.keyword.Bluemix_notm}}
+
     * SERVICE_PLAN_NAME is the type of plan. Valid values are: *lite*, *7-day*, *14-day*, *30-day*
+    
     * LOCATION is the region where the LogDNA instance is created. Valid values are: *us-south*
 
     For example, to provision an instance with the 7 day retention plan, run the following command:
@@ -105,7 +110,7 @@ To provision an instance of IBM Log Analysis with LogDNA through the command lin
     ```
     {: codeblock}
 
-5. Create a service key with permissions to operate the instance. Run the [`ibmcloud resource service-key-create`](/docs/cli/reference/ibmcloud/cli_resource_group.html#ibmcloud_resource_service_key_create) command:
+5. Create a service key with **administrator** permissions to operate the instance. Run the [`ibmcloud resource service-key-create`](/docs/cli/reference/ibmcloud/cli_resource_group.html#ibmcloud_resource_service_key_create) command:
 
     ```
     ibmcloud resource service-key-create NAME ROLE_NAME --instance-name SERVICE_INSTANCE_NAME
@@ -115,10 +120,12 @@ To provision an instance of IBM Log Analysis with LogDNA through the command lin
     where
 
     * NAME is the name of the API key. Suggestion: Name the API key like the IBM Log Analysis with LogDNA instance. This will help you  identify the API key later on.
+
     * ROLE_NAME is the role that defines the permissions that are enabled. Valid values are: *editor*, *operator*, *administrator*
+
     * SERVICE_INSTANCE_NAME is the name of the instance in the {{site.data.keyword.Bluemix_notm}}
 
-    For example, to create an API key for the instance *logdna-instance-01* with *editor* permissions on the service instance, run the following command:
+    For example, to create an API key for the instance *logdna-instance-01* with *administrator* permissions on the service instance, run the following command:
 
     ```
     ibmcloud resource service-key-create logdna-instance-01 Administrator --instance-name logdna-instance-01

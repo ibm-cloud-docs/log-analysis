@@ -141,7 +141,7 @@ Complete the following steps to create a bucket:
 
 1. Log in to your {{site.data.keyword.Bluemix_notm}} account.
 
-    The {{site.data.keyword.Bluemix_notm}} dashboard can be found at: [http://bluemix.net ![External link icon](../../../icons/launch-glyph.svg "External link icon")](http://bluemix.net){:new_window}.
+    The {{site.data.keyword.Bluemix_notm}} dashboard can be found at: [http://bluemix.net ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://bluemix.net){:new_window}.
 
 	After you log in with your user ID and password, the {{site.data.keyword.Bluemix_notm}} Dashboard opens.
 
@@ -195,7 +195,7 @@ Complete the following steps to create a service ID with writing permissions for
 
 1. Log in to your {{site.data.keyword.Bluemix_notm}} account.
 
-    The {{site.data.keyword.Bluemix_notm}} dashboard can be found at: [http://bluemix.net ![External link icon](../../../icons/launch-glyph.svg "External link icon")](http://bluemix.net){:new_window}.
+    The {{site.data.keyword.Bluemix_notm}} dashboard can be found at: [http://bluemix.net ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://bluemix.net){:new_window}.
 
 	After you log in with your user ID and password, the {{site.data.keyword.Bluemix_notm}} Dashboard opens.
 
@@ -215,7 +215,6 @@ Complete the following steps to create a service ID with writing permissions for
 For the service ID that you just created, click **View credentials**. You can see information that is related to the service ID. 
 
 * Copy the API key. This is the value set for the field **apikey**.
-
 * Copy the resource instance ID. This is the value set for the field **resource_instance_id**.
 
 
@@ -252,7 +251,7 @@ Complete the following steps to obtain the endpoint for your bucket:
 
 1. Log in to your {{site.data.keyword.Bluemix_notm}} account.
 
-    The {{site.data.keyword.Bluemix_notm}} dashboard can be found at: [http://bluemix.net ![External link icon](../../../icons/launch-glyph.svg "External link icon")](http://bluemix.net){:new_window}.
+    The {{site.data.keyword.Bluemix_notm}} dashboard can be found at: [http://bluemix.net ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://bluemix.net){:new_window}.
 
 	After you log in with your user ID and password, the {{site.data.keyword.Bluemix_notm}} Dashboard opens.
 
@@ -277,7 +276,7 @@ The following table lists the policies that a user must have to be able to confi
 | `IBM Log Analysis with LogDNA` | Service role: Manager      | Allows the user to launch the Web UI and view logs in the Web UI.                             |
 {: caption="Table 2. IAM policies" caption-side="top"} 
 
-For more information on how to configire these policies for a user, see [Granting permissions to a user to view logs in LogDNA](/docs/services/Log-Analysis-with-LogDNA/iam.html#user_logdna).
+For more information on how to configure these policies for a user, see [Granting permissions to a user to view logs in LogDNA](/docs/services/Log-Analysis-with-LogDNA/work_iam.html#user_logdna).
 
 Complete the following steps to assign a user permissions to archive logs: 
 
@@ -304,7 +303,7 @@ Complete the following steps to assign a user permissions to archive logs:
 
 Complete the following steps to configure archiving of your IBM Log Analysis with LogDNA instance into a COS bucket:
 
-1. Launch the IBM Log Analysis with LogDNA web UI. For more information, see [Launching the IBM Log Analysis with LogDNA Web UI](/docs/services/Log-Analysis-with-LogDNA/launch_webui.html#launch_webui).
+1. Launch the IBM Log Analysis with LogDNA web UI. For more information, see [Launching the IBM Log Analysis with LogDNA Web UI](/docs/services/Log-Analysis-with-LogDNA/view_logs.html#step2).
 
 2. Select the **Configuration** icon. Then select **Archiving**. 
 
@@ -312,13 +311,29 @@ Complete the following steps to configure archiving of your IBM Log Analysis wit
 
 4. Set the bucket, endpoint, API key, and instance ID where you want logs to be archived.
 
-    | Field        | Value                                    |
-    |--------------|------------------------------------------| 
-    | `Bucket`     | Set to the COS bucket name.                          | 
-    | `Endpoint`   | Set to the COS bucket private endpoint.              | 
-    | `API Key`    | Set to the API key associated to the COS service ID. | 
-    | `Instance ID`| Set to the COS instance ID.                         |  
-    {: caption="Table 3. COS fields" caption-side="top"} 
+    <table>
+      <caption>Table 3. COS fields</caption>
+      <tr>
+         <th>Field</th>
+         <th>Value</th>
+      </tr>
+      <tr>
+         <td>Bucket</td>
+         <td>Set to the COS bucket name. </td>
+      </tr>
+      <tr>
+         <td>Endpoint</td>
+         <td>Set to the COS bucket private endpoint.</td>
+      </tr>
+      <tr>
+         <td>API Key</td>
+         <td>Set to the API key associated to the COS service ID.</td>
+      </tr>
+      <tr>
+         <td>Instance ID</td>
+         <td>Set to the COS instance ID. </td>
+      </tr>
+    </table>
 
 5. Click **Save**.
 

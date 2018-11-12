@@ -46,7 +46,7 @@ In this tutorial, you will learn how to configure cluster-level logging.
 
 Work in the US-South region. Both resources, the IBM Log Analysis with LogDNA instance and the Kubernetes cluster must run in the same account.
 
-Read about IBM Log Analysis with LogDNA. For more information, see [About LogDNA](/docs/services/Log-Analysis-with-LogDNA/overview.html#about).
+Read about IBM Log Analysis with LogDNA. For more information, see [About](/docs/services/Log-Analysis-with-LogDNA/overview.html#about).
 
 Use a user ID that is a member or an owner of an {{site.data.keyword.Bluemix_notm}} account. To get an {{site.data.keyword.Bluemix_notm}} user ID, go to: [Registration ![External link icon](../../../icons/launch-glyph.svg "External link icon")](https://console.bluemix.net/registration/){:new_window}.
 
@@ -56,7 +56,7 @@ Your {{site.data.keyword.IBM_notm}}ID must have assigned IAM policies for each o
 |--------------------------------------|----------------------------|---------|-----------|------------------------------|
 | Resource group **Default**           |  Resource group            | Viewer  | us-south  | This policy is required to allow the user to see service instances in the Default resource group.    |
 | IBM Log Analysis with LogDNA service |  Resource group            | Editor  | us-south  | This policy is required to allow the user to provision and administer the IBM Log Analysis with LogDNA service in the Default resource group.   |
-| Cluster instance                     |  Account                   | Editor  | us-south  | This policy is required to configure the LogDNA agent in the Kubernetes cluster. |
+| Kubernetes cluster instance          |  Resource                 | Editor  | us-south  | This policy is required to configure the secret and the LogDNA agent in the Kubernetes cluster. |
 {: caption="Table 1. List of IAM policies required to complete the tutorial" caption-side="top"} 
 
 For more information about the {{site.data.keyword.containerlong}} IAM roles, see [User access permissions](/docs/containers/cs_access_reference.html#understanding).
@@ -73,7 +73,7 @@ To provision an instance of IBM Log Analysis with LogDNA through the {{site.data
 
 1. Log in to your {{site.data.keyword.Bluemix_notm}} account.
 
-    The {{site.data.keyword.Bluemix_notm}} dashboard can be found at: [http://bluemix.net ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://bluemix.net){:new_window}.
+    The {{site.data.keyword.Bluemix_notm}} dashboard can be found at: [http://bluemix.net ![External link icon](../../../icons/launch-glyph.svg "External link icon")](http://bluemix.net){:new_window}.
 
 	After you log in with your user ID and password, the {{site.data.keyword.Bluemix_notm}} UI opens.
 
@@ -81,17 +81,15 @@ To provision an instance of IBM Log Analysis with LogDNA through the {{site.data
 
 3. To filter the list of services that is displayed, select the **Developer Tools** category.
 
-4. Click the **IBM Log Analysis with LogDNA** tile.
+4. Click the **IBM Log Analysis with LogDNA** tile. The *Observability* Dashboard opens.
 
-5. Enter a name for the service instance.
+5. Select **Create instance**. 
 
-6. Select the **Default** resource group. 
+6. Enter a name for the service instance.
+
+7. Select the **Default** resource group. 
 
     By default, the **Default** resource group is set.
-
-7. Select **I understand that my data will be sent to LogDNA**. 
-
-    **Note:** You must accept LogDNA's terms and conditions before you can provision the service in the {{site.data.keyword.Bluemix_notm}}.
 
 8. Select the **Lite** service plan. 
 
@@ -101,10 +99,10 @@ To provision an instance of IBM Log Analysis with LogDNA through the {{site.data
 
 9. To provision the IBM Log Analysis with LogDNA service in the {{site.data.keyword.Bluemix_notm}} resource group where you are logged in, click **Create**.
 
-After you provision an instance, the IBM Log Analysis with LogDNA dashboard opens. 
+After you provision an instance, the *Observability* dashboard opens. 
 
 
-**Note:** To provision an instance of LogDNA through the CLI, see [Provisioning LogDNA through the {{site.data.keyword.Bluemix_notm}} CLI](/docs/services/Log-Analysis-with-LogDNA/provision.html#logdna_provision_cli).
+**Note:** To provision an instance through the CLI, see [Provisioning an instance through the {{site.data.keyword.Bluemix_notm}} CLI](/docs/services/Log-Analysis-with-LogDNA/provision.html#provision_cli).
 
 
 ## Step2: Configure your Kubernetes cluster to send logs to your instance
@@ -138,14 +136,14 @@ To configure your Kubernetes cluster to forward logs to your LogDNA instance, co
 
     **Note:** Every time you log in to the {{site.data.keyword.containerlong}} CLI to work with clusters, you must run these commands to set the path to the cluster's configuration file as a session variable. The Kubernetes CLI uses this variable to find a local configuration file and certificates that are necessary to connect with the cluster in {{site.data.keyword.Bluemix_notm}}.
 
-3. Add a secret to your Kubernetes cluster. Run the following command:
+3. Add a secret to your Kubernetes cluster. Use the LOGDNA_INGESTION_KEY_FOR_YOUR_INSTANCE to run the following command:
 
     ```
     kubectl create secret generic logdna-agent-key --from-literal=logdna-agent-key=LOGDNA_INGESTION_KEY_FOR_YOUR_INSTANCE
     ```
     {: codeblock}
 
-    The LOGDNA_INGESTION_KEY_FOR_YOUR_INSTANCE shows the LogDNA ingestion key for your instance.
+    The LOGDNA_INGESTION_KEY_FOR_YOUR_INSTANCE must match the LogDNA ingestion key for your instance.
 
     The Kubernetes secret contains the LogDNA ingestion key. The LogDNA ingestion key is used to authenticate the logging agent with the IBM Log Analysis with LogDNA service. It is used to open a secure web socket to the ingestion server on the logging back-end system.
 
@@ -185,7 +183,7 @@ To launch IBM the Log Analysis with LogDNA dashboard through the {{site.data.key
 
     The list of IBM Log Analysis with LogDNA instances that are available on {{site.data.keyword.Bluemix_notm}} is displayed.
 
-3. Select one instance. Then, click **View logs**.
+3. Select one instance. Then, click **View LogDNA**.
 
     The LogDNA Web UI opens and displays your cluster logs.
 
@@ -197,12 +195,12 @@ From the LogDNA Web UI, you can view your logs as they pass through the system. 
 
 **Note:** With the **Free** service plan, you can only tail your latest logs.
 
-
+For more information, see [Viewing logs](/docs/services/Log-Analysis-with-LogDNA/view_logs.html#view_logs).
 
 ## Next steps
 {: #next_steps}
 
-[Filter cluster logs](https://docs.logdna.com/docs/filters), [search cluster logs](https://docs.logdna.com/docs/search), [define views](https://docs.logdna.com/docs/views), and [configure alerts](https://docs.logdna.com/docs/alerts).
+[Filter logs](/docs/services/Log-Analysis-with-LogDNA/view_logs.html#step5), [search logs](/docs/services/Log-Analysis-with-LogDNA/view_logs.html#step6), [define views](/docs/services/Log-Analysis-with-LogDNA/view_logs.html#step7), and [configure alerts](https://docs.logdna.com/docs/alerts). 
 
 **Note:** To use any of these features, you must upgrade the IBM Log Analysis with LogDNA plan to a paid plan.
 
