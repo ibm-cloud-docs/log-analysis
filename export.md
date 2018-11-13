@@ -39,7 +39,7 @@ Complete the following steps to export log data:
 1. Click the **Views** icon ![Configuration icon](images/views.png).
 2. Select **Everything** or a view.
 3. Apply a timeframe, filters and search criteria until you see the log entries that you want to export.
-4. Click **Unsaved View** if you are starting from the **Everything** view. Click your view name if have selected a view in the previous step.
+4. Click **Unsaved View** if you are starting from the **Everything** view. Click your view name if you have selected a view in the previous step.
 5. Select **Export lines**. A new window opens.
 6. Check the time range. If you need to change it, click the predefined time range in the Change the *Time Range for Export* field.
 7. Select **Prefer newer lines** or **Prefer older lines** in case the export request exceeds the line limit.

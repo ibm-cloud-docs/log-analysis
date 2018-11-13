@@ -80,9 +80,9 @@ To provision an instance of IBM Log Analysis with LogDNA through the {{site.data
 
     By default, the **Default** resource group is set.
 
-7. Select the **Free** service plan. 
+7. Select the **Lite** service plan. 
 
-    By default, the **Free** plan is set.
+    By default, the **Lite** plan is set.
 
     For more information about other service plans, see [Pricing plans](/docs/services/Log-Analysis-with-LogDNA/overview.html#pricing_plans).
 
