@@ -35,7 +35,7 @@ Complete the following steps to view logs:
 The following table lists the minimum policies that a user must have to be able to launch the IBM Log Analysis with LogDNA Web UI, and view logs:
 
 | Service                        | Role                      | Permission granted                                                                            |
-|--------------------------------|---------------------------|-----------------------------------------------------------------------------------------------|     | `IBM Log Analysis with LogDNA` | Platform role: Viewer     | Allows the user to view the list of service instances in the Observability Logging dashboard. |
+|--------------------------------|---------------------------|-----------------------------------------------------------------------------------------------|  | `IBM Log Analysis with LogDNA` | Platform role: Viewer     | Allows the user to view the list of service instances in the Observability Logging dashboard. |
 | `IBM Log Analysis with LogDNA` | Service role: Reader      | Allows the user to launch the Web UI and view logs in the Web UI.                             |
 {: caption="Table 1. IAM policies" caption-side="top"} 
 
