@@ -16,7 +16,7 @@ lastupdated: "2018-11-02"
 {:download: .download}
 
 
-# Reseting the ingestion key used by a Kubernetes cluster to forward logs to an IBM Log Analysis with LogDNA instance
+# Resetting the ingestion key used by a Kubernetes cluster to forward logs to an IBM Log Analysis with LogDNA instance
 {: #kube_reset}
 
 If the ingestion key that you use to forward logs from a cluster to an IBM Log Analysis with LogDNA instance in the {{site.data.keyword.Bluemix}} is compromised, you must reset the key and update the Kubernetes cluster configuration to use the new ingestion key. 
@@ -44,7 +44,7 @@ For more information about the {{site.data.keyword.containerlong}} IAM roles, se
 
 Install the {{site.data.keyword.Bluemix_notm}} CLI. For more information, see [Installing the {{site.data.keyword.Bluemix_notm}} CLI](/docs/cli/index.html#overview).
 
-Install the Kubernetes CLI plugin. For more information, see [Installing the CLI](/docs/containers/cs_cli_install.html#cs_cli_install).
+Install the Kubernetes CLI plug-in. For more information, see [Installing the CLI](/docs/containers/cs_cli_install.html#cs_cli_install).
 
 
 ## Step 1: Reset the ingestion key

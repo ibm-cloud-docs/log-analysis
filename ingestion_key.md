@@ -27,7 +27,7 @@ The ingestion key is a security key that you must use to configure LogDNA agents
 * To work with ingestion keys through the {{site.data.keyword.Bluemix_notm}} UI, you must have an IAM policy with platform role **Editor** and service role **Manager** for the IBM Log Analysis with LogDNA service. 
 
 
-## Getting the ingestion key through the {{site.data.keyword.Bluemix_notm}} UI
+## Get the ingestion key through the {{site.data.keyword.Bluemix_notm}} UI
 {: #ibm_cloud_ui}
 
 To get the ingestion key for an IBM Log Analysis with LogDNA instance by using the {{site.data.keyword.Bluemix_notm}} UI, complete the following steps:
@@ -44,10 +44,10 @@ To get the ingestion key for an IBM Log Analysis with LogDNA instance by using t
 
 3. Identify the instance for which you want to get the ingestion key, and click **View ingestion key**.
 
-4. A pop up window opens where you can click **Show** to view the ingestion key.
+4. A window opens where you can click **Show** to view the ingestion key.
 
 
-## Getting the ingestion key through the IBM Log Analysis with LogDNA Web UI
+## Get the ingestion key through the IBM Log Analysis with LogDNA Web UI
 {: #logdna_ui}
 
 To get the ingestion key for an IBM Log Analysis with LogDNA instance by using the IBM Log Analysis with LogDNA Web UI, complete the following steps:
@@ -63,7 +63,7 @@ You can see the ingestion keys that have been created.
 **Note:** Only one ingestion key is active at once. 
 
 
-## Getting the ingestion key through the {{site.data.keyword.Bluemix_notm}} CLI
+## Get the ingestion key through the {{site.data.keyword.Bluemix_notm}} CLI
 {: #ibm_cloud_cli}
 
 To get the ingestion key for an IBM Log Analysis with LogDNA instance through the command line, complete the following steps:
@@ -103,7 +103,7 @@ To get the ingestion key for an IBM Log Analysis with LogDNA instance through th
     The output from this command includes the field **ingestion_key** that contains the ingestion key for the instance.
 
 
-## Reseting the ingestion key 
+## Reset the ingestion key 
 {: #reset}
 
 If the ingestion key is compromised or you have a policy to renew it after a number of days, you can generate a new key and delete the old one.

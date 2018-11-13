@@ -74,10 +74,10 @@ Complete the following steps to modify the format of a log line:
 1. Select the **Configuration** icon ![Configuration icon](images/admin.png "Admin icon").
 2. Select **USER PREFERENCES**. A new window opens.
 3. Select **Log Format**.
-4. Modify the *Line Format* section to match your requirements. Drag and drop boxes.
+4. Modify the *Line Format* section to match your requirements. Drag boxes.
 
 
-## Step 4: Deep dive into a log line
+## Step 4: Look into a log line
 {: #step4}
 
 At any time, you can view each log line in context.
@@ -129,7 +129,7 @@ When you search log data, the search applies any log filters and time queries co
 
 You can do simple searches (single term string search), compound search (multiple search terms and operators), field searches if the log line can be parsed, and others. For more information, see [How to Search Logs in LogDNA docs ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://docs.logdna.com/docs/search){:new_window}.
 
-**Note:** AND and OR operators are case sensitive and must be capitalized.
+**Note:** AND and OR operators are case-sensitive and must be capitalized.
 
 
 

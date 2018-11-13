@@ -63,7 +63,7 @@ For more information about the {{site.data.keyword.containerlong}} IAM roles, se
 
 Install the {{site.data.keyword.Bluemix_notm}} CLI. For more information, see [Installing the {{site.data.keyword.Bluemix_notm}} CLI](/docs/cli/index.html#overview).
 
-Install the Kubernetes CLI plugin. For more information, see [Installing the CLI](/docs/containers/cs_cli_install.html#cs_cli_install).
+Install the Kubernetes CLI plug-in. For more information, see [Installing the CLI](/docs/containers/cs_cli_install.html#cs_cli_install).
 
 
 ## Step1: Provision an IBM Log Analysis with LogDNA instance

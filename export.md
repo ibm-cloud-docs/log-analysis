@@ -25,7 +25,7 @@ You can export log data in JSONL format from an IBM Log Analysis with LogDNA ins
 Consider the following information when you export log data:
 * You export a set of log entries. To define the set of data that you want to export, you can apply filters and searches, and specify the time range. 
 * From the Web UI, when you export logs, you get an email, that is sent to your email address, with a link to a compressed file that includes the data. To get the data, you must click the link and download the compressed file.
-* When you export logs programmatically, you can choose to send an email or to stream logs into your terminal.
+* When you export logs programmatically, you can choose to send an email or to stream logs in to your terminal.
 * The compressed log file containing the data that you want to export is available for a maximum of 48 hours. 
 * The maximum number of lines that you can export is 10,000.
 
