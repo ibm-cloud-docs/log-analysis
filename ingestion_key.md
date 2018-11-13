@@ -100,13 +100,13 @@ To get the ingestion key for an IBM Log Analysis with LogDNA instance through th
 
     * APIKEY_NAME is the name of the API key
  
-    The output from this command includes the field **ingestion_key** that contains the ingestion key for the LogDA instance.
+    The output from this command includes the field **ingestion_key** that contains the ingestion key for the instance.
 
 
 ## Reseting the ingestion key 
 {: #reset}
 
-If the ingestion key is compromissed or you have a policy to renew it after a number of days, you can generate a new key and delete the old one.
+If the ingestion key is compromised or you have a policy to renew it after a number of days, you can generate a new key and delete the old one.
 
 To renew the ingestion key for an IBM Log Analysis with LogDNA instance by using the IBM Log Analysis with LogDNA Web UI, complete the following steps:
 

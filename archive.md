@@ -26,11 +26,11 @@ To configure archiving, you must have an IAM policy with platform role **Viewer*
 
 You archive logs from an IBM Log Analysis with LogDNA instance into a bucket in an {{site.data.keyword.cos_full_notm}} (COS) instance. Each IBM Log Analysis with LogDNA instance has its own archiving configuration. 
 
-Logs are automaticaly archived once a day in a compressed format **(.json.gz)**. Each line preserves its metadata.
+Logs are automatically archived once a day in a compressed format **(.json.gz)**. Each line preserves its metadata.
 
 Logs are archived within 24-48 hours after you save the configuration. 
 
-The {{site.data.keyword.cos_full_notm}} instance is provisioned withing the context of a resource group. The IBM Log Analysis with LogDNA instance is also provisioned within the context of a resource group. Both instances can be grouped under the same resource group or in different ones. 
+The {{site.data.keyword.cos_full_notm}} instance is provisioned within the context of a resource group. The IBM Log Analysis with LogDNA instance is also provisioned within the context of a resource group. Both instances can be grouped under the same resource group or in different ones. 
 
 IBM Log Analysis with LogDNA uses a service ID to communicate with the {{site.data.keyword.cos_full_notm}} service.
 
@@ -56,7 +56,7 @@ There are different ways in which you can grant a user permissions to become an 
 
 * As administrator of the service in the account, the user must have an IAM policy for the {{site.data.keyword.cos_full_notm}} service with the platform role *Administrator*. You must assign this user access to an individual resource in the account. 
 
-* As administrator of the service withing the context of a resource group, the user must have an IAM policy for the {{site.data.keyword.cos_full_notm}} service with the platform role *Administrator* within the context of the resource group. 
+* As administrator of the service within the context of a resource group, the user must have an IAM policy for the {{site.data.keyword.cos_full_notm}} service with the platform role *Administrator* within the context of the resource group. 
 
 
 The following table lists the roles that a user can have to complete the actions listed for the {{site.data.keyword.cos_full_notm}} service:
@@ -235,7 +235,7 @@ If you want to restrict the service ID to only have writing permissions for a bu
 
 6. In the *Resource type* field enter **bucket**.
 
-7. In the *Reasource ID* field enter the name of your bucket.
+7. In the *Resource ID* field enter the name of your bucket.
 
 8. Click **Save**.
 
@@ -271,7 +271,7 @@ Complete the following steps to obtain the endpoint for your bucket:
 The following table lists the policies that a user must have to be able to configure archiving of logs from IBM Log Analysis with LogDNA Web UI into a bucket in a {{site.data.keyword.cos_full_notm}} instance:
 
 | Service                        | Role                      | Permission granted                                                                            | 
-|--------------------------------|---------------------------|-----------------------------------------------------------------------------------------------|       
+|--------------------------------|---------------------------|-----------------------------------------------------------------------------------------------|  
 | `IBM Log Analysis with LogDNA` | Platform role: Viewer     | Allows the user to view the list of service instances in the Observability Logging dashboard. |
 | `IBM Log Analysis with LogDNA` | Service role: Manager      | Allows the user to launch the Web UI and view logs in the Web UI.                             |
 {: caption="Table 2. IAM policies" caption-side="top"} 

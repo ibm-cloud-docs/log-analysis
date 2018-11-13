@@ -97,7 +97,7 @@ To provision an instance of IBM Log Analysis with LogDNA through the command lin
 
     * NAME is the name of the instance
 
-    * *logdna** is the name of the IBM Log Analysis with LogDNA service in the {{site.data.keyword.Bluemix_notm}}
+    * *logdna* is the name of the IBM Log Analysis with LogDNA service in the {{site.data.keyword.Bluemix_notm}}
 
     * SERVICE_PLAN_NAME is the type of plan. Valid values are: *lite*, *7-day*, *14-day*, *30-day*
     
