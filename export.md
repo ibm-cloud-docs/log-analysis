@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018
-lastupdated: "2018-11-02"
+lastupdated: "2018-11-15"
 
 ---
 
@@ -65,7 +65,7 @@ Complete the following steps to export logs programmatically:
 
     4. Select **Generate Service Key**.
 
-        A new key is added to the list.
+        A new key is added to the list. Copy this key.
 
 2. Export logs. Run the following cURL command:
 
