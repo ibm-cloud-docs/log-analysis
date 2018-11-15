@@ -22,8 +22,8 @@ IBM Log Analysis with LogDNA
     archive.md
     alerts.md
     export.md
-    ingest.md
     remove.md
+    ingest.md
     provision.md
     view_logs.md
     work_iam.md

@@ -63,7 +63,7 @@ Complete the following steps to export logs programmatically:
 
         You can see the service keys that have been created. 
 
-    4. Select **Generate Service Key**.
+    4. Click **Generate Service Key**.
 
         A new key is added to the list. Copy this key.
 

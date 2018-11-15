@@ -16,7 +16,7 @@ lastupdated: "2018-11-15"
 {:download: .download}
 
  
-# Sending logs programmatically by using the API
+# Sending logs
 {: #ingest}
 
 You can send log data to an IBM Log Analysis with LogDNA instance. 
@@ -38,7 +38,7 @@ Complete the following steps to send logs programmatically:
 
     You can see the service keys that have been created. 
 
-4. Select **Generate Service Key**.
+4. Click **Generate Service Key**.
 
     A new key is added to the list. Copy the key.
 
