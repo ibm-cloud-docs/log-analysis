@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018
-lastupdated: "2018-11-02"
+lastupdated: "2018-11-15"
 
 ---
 
@@ -34,13 +34,13 @@ The following tables list the IP addresses per region that you must configure in
 
 | Region      | Ingestion endpoint                          | Public IP addresses               | Ports   |
 |-------------|---------------------------------------------|-----------------------------------|---------|
-| US South    | logs.us-south.logging.cloud.ibm.com         | 169.48.237.108                    | TCP 443 </br>TCP 80 | 
+| US South    | logs.us-south.logging.cloud.ibm.com         | 169.48.237.107 </br>169.60.166.45 </br>169.47.224.77  | TCP 443 </br>TCP 80 | 
 {: caption="Table 1. IP addresses to send logs" caption-side="top"}
 
 
 | Region      | Authentication endpoint                     | Public IP addresses               | Ports   |
 |-------------|---------------------------------------------|-----------------------------------|---------|
-| US South    | api.us-south.logging.cloud.ibm.com          | 169.60.166.43                     | TCP 443 </br>TCP 80 |
+| US South    | api.us-south.logging.cloud.ibm.com          | 169.47.224.74  </br>169.60.166.44 </br>   169.48.237.109  | TCP 443 </br>TCP 80 |
 {: caption="Table 2. IP addresses used by the LogDNA agent" caption-side="top"}
 
 
