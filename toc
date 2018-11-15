@@ -1,7 +1,7 @@
 {:navgroup: .navgroup}
 {:topicgroup: .topicgroup}
 
-{: .toc subcollection="LogDNA" audience="service" href="/docs/services/Log-Analysis-with-LogDNA/index.html" path="services/Log-Analysis-with-LogDNA"}
+{: .toc subcollection="LogDNA" audience="service" arm="4158184" href="/docs/services/Log-Analysis-with-LogDNA/index.html" path="services/Log-Analysis-with-LogDNA"}
 IBM Log Analysis with LogDNA
 
     {: .navgroup id="learn"}

@@ -29,6 +29,7 @@ Complete the following steps to send logs programmatically:
 
 **Note:** You must have **manager** role for the IBM Log Analysis with LogDNA instance or service to complete this step. For more information, see [Granting permissions to manage logs and configure alerts in LogDNA](/docs/services/Log-Analysis-with-LogDNA/work_iam.html#admin_user_logdna).
 
+Complete the following steps to get the ingestion key:
     
 1. Launch the IBM Log Analysis with LogDNA web UI. For more information, see [Launching the IBM Log Analysis with LogDNA Web UI](/docs/services/Log-Analysis-with-LogDNA/view_logs.html#step2).
 
@@ -36,9 +37,9 @@ Complete the following steps to send logs programmatically:
 
 3. Select **API keys**.
 
-    You can see the service keys that have been created. 
+    You can see the ingestion keys that have been created. 
 
-4. Click **Generate Service Key**.
+4. Use an existing ingestion key or click **Generate Ingestion Key** to create a new one.
 
     A new key is added to the list. Copy the key.
 
@@ -49,7 +50,7 @@ Complete the following steps to send logs programmatically:
 To send logs, run the following cURL command:
 
 ```
-curl "ENDPOINT/logs/ingest?QUERY_PARAMETERS" -u SERVICE_KEY: --header "Content-Type: application/json; charset=UTF-8" -d "LOG_LINES"
+curl "ENDPOINT/logs/ingest?QUERY_PARAMETERS" -u INGESTION_KEY: --header "Content-Type: application/json; charset=UTF-8" -d "LOG_LINES"
 ```
 {: codeblock}
 
@@ -58,7 +59,7 @@ where
 * ENDPOINT represents the entry point to the service. Each region has a different URL.
 * QUERY_PARAMETERS are parameters that define the filtering criteria applied to the ingestion request.
 * LOG_LINES describe the set of log lines that you want to send. It is defined as an array of objects.
-* SERVICE_KEY is the API key that you created in the previous step.
+* INGESTION_KEY is the key that you created in the previous step.
 
 The following table lists the endpoints per region:
 
