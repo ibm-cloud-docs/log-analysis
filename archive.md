@@ -243,7 +243,7 @@ If you want to restrict the service ID to only have writing permissions for a bu
 
 
 ## Step 6: Select the endpoint
-{: #step 6}
+{: #step6}
 
 An endpoint defines where to look for a bucket. There are different endpoints depending on the region and type of resiliency. For more information, see [Select regions and endpoints](/docs/services/cloud-object-storage/basics/endpoints.html#select-regions-and-endpoints).
 
@@ -298,7 +298,7 @@ Complete the following steps to assign a user permissions to archive logs:
 
 
 ## Step 8: Configure archiving for your IBM Log Analysis with LogDNA instance
-{: #step 8}
+{: #step8}
 
 
 Complete the following steps to configure archiving of your IBM Log Analysis with LogDNA instance into a COS bucket:
