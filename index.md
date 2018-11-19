@@ -33,6 +33,7 @@ Use IBM Log Analysis with LogDNA to add log management capabilities to your {{si
     To get an {{site.data.keyword.Bluemix_notm}} user ID, go to: [Registration ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://console.bluemix.net/registration/){:new_window}.
 
 
+
 ## Step 2: Get started
 {: #getstarted}
 
