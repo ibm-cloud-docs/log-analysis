@@ -44,7 +44,6 @@ You can manage logs from any of the following Linux servers with IBM Log Analysi
 |---------------------|
 | Linux Ubuntu/Debian | 
 | Linux RPM-based     |
-| Linux Gentoo        |
 {: caption="Linux servers" caption-side="top"} 
 
 
