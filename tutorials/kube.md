@@ -53,12 +53,39 @@ To complete this tutorial, you must complete the following tasks:
 
 1. [Create an {{site.data.keyword.containerlong_notm}} cluster with a Kubernetes version of 1.10](/docs/containers/cs_clusters.html#clusters_ui) or higher in the US South location. IBM Log Analysis with LogDNA is supported in US South only. To configure logging for your cluster, the cluster and the IBM Log Analysis with LogDNA service must be in the same location. 
 2. Make sure that your user is assigned the following IAM permissions. 
-   | Resource                             | Scope of the access policy | Role    | Region    | Information                  |
-   |--------------------------------------|----------------------------|---------|-----------|------------------------------|
-   | Resource group **Default**           |  Resource group            | Viewer  | us-south  | This policy is required to allow the user to see service instances in the Default resource group.    |
-   | IBM Log Analysis with LogDNA service |  Resource group            | Editor  | us-south  | This policy is required to allow the user to provision and administer the IBM Log Analysis with LogDNA service in the Default resource group.   |
-   | Kubernetes cluster instance          |  Resource                 | Editor  | us-south  | This policy is required to configure the secret and the LogDNA agent in the Kubernetes cluster. |
-   {: caption="Table 1. List of IAM policies required to complete the tutorial" caption-side="top"} 
+   <table>
+   <caption>Table 1. List of IAM policies required to complete the tutorial</caption>
+   <thead>
+   <th>Resource</th>
+   <th>Scope of the access policy </th>
+   <th>Role</th>
+   <th>Region</th>
+   <th>Information</th>
+   </thead>
+   <tbody>
+   <tr>
+   <td>Resource group <strong>Default</strong></td>
+   <td>Resource group</td>
+   <td>Viewer</td>
+   <td>us-south</td>
+   <td>This policy is required to allow the user to see service instances in the <strong>Default</strong> resource group.</td>
+   </tr>
+   <tr>
+   <td>IBM Log Analysis with LogDNA service</td>
+   <td>Resource group</td>
+   <td>Editor</td>
+   <td>us-south</td>
+   <td>This policy is required to allow the user to provision and administer the IBM Log Analysis with LogDNA service in the <strong>Default</strong> resource group.</td>
+   </tr>
+   <tr>
+   <td>{{site.data.keyword.containerlong_notm}}</td>
+   <td>Resource</td>
+   <td>Editor</td>
+   <td>us-south</td>
+   <td>This policy is required to configure the secret and the LogDNA agent in the Kubernetes cluster.</td>
+   </tr>
+   </tbody>
+   </table>
 
    For more information about {{site.data.keyword.containerlong_notm}} IAM roles, see [User access permissions](/docs/containers/cs_access_reference.html#understanding).
    
