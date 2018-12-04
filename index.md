@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018
-lastupdated: "2018-11-02"
+lastupdated: "2018-11-15"
 
 ---
 
@@ -37,7 +37,7 @@ Use IBM Log Analysis with LogDNA to add log management capabilities to your {{si
 ## Step 2: Get started
 {: #getstarted}
 
-Choose a cloud resource for which you want to manage logs. Then, configure this log source so that you can monitor its logs through the IBM Log Analysis with LogDNA service.
+Choose a cloud resource for which you want to manage logs. Then, configure this log source so that you can monitor its logs through the IBM Log Analysis with LogDNA service. The log source can be located in the same region where you provision an {{site.data.keyword.la_full_notm}} instance or in a different region.
 
 The following table lists cloud resources that you can configure to store and manage logs by using the IBM Log Analysis with LogDNA service. Complete the tutorial for a resource to get started working with the {{site.data.keyword.loganalysisshort}} service:
 
