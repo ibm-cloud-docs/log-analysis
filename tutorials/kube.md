@@ -44,7 +44,7 @@ In this tutorial, you will learn how to configure cluster-level logging.
 ## Before you begin
 {: #prereqs}
 
-Work in the US-South region. Both resources, the IBM Log Analysis with LogDNA instance and the Kubernetes cluster must run in the same account.
+Work in the US-South region. The {{site.data.keyword.la_full_notm}} is currently available in the US South region. However, you can send data from a Kubernetes cluster that is located in the same region or in a different region. 
 
 Read about IBM Log Analysis with LogDNA. For more information, see [About](/docs/services/Log-Analysis-with-LogDNA/overview.html#about).
 
