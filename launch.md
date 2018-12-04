@@ -27,7 +27,7 @@ After you provision an instance of the {{site.data.keyword.la_full_notm}} servic
 
 **Note:** You must be an adminsitrator of the {{site.data.keyword.la_full_notm}} service, an administrator of an {{site.data.keyword.la_full_notm}} instance, or have account IAM permissions to grant other users policies.
 
-The following table lists the minimum policies that a user must have to be able to launch the IBM Cloud Monitoring with Sysdig Web UI, and view data:
+The following table lists the minimum policies that a user must have to be able to launch the IBM Cloud Monitoring with Sysdig web UI, and view data:
 
 | Service                              | Role                      | Permission granted                                                                            |
 |--------------------------------------|---------------------------|-----------------------------------------------------------------------------------------------|
@@ -64,4 +64,59 @@ The Web UI opens.
 
 ## Getting the web UI URL
 {: #get}
+
+To get the web UI URL, complete the following steps from a terminal:
+
+1. Set the resource group where the {{site.data.keyword.la_full_notm}} instance is provisioned.
+
+    ```
+    export logdna_rg_name=<Resource_Group_Name_Where_LogDNA_Instance_Is_Created>
+    ```
+    {: codeblock}
+
+2. Set the {{site.data.keyword.la_full_notm}} instance name.
+
+    ```
+    export logdna_instance_name=<Your_LogDNA_Instance_Name>
+    ```
+    {: codeblock}
+
+3. Set the endpoint.
+
+    ```
+    export rc_endpoint=resource-controller.bluemix.net
+    ```
+    {: codeblock}
+
+4. Set the IAM token.
+
+    ```
+    export iam_token=$(ic iam oauth-tokens | grep IAM | grep -oP  "eyJ.*")
+    ```
+    {: codeblock}
+
+    **Note:** If you are working on a MacOS terminal, the command is as follows: `export iam_token=$(ic iam oauth-tokens | grep IAM | grep -o  "eyJ.*")`
+
+5. Set the resource group ID.
+
+    ```
+    export resource_group_id=$(ic resource groups | grep "^$logdna_rg_name" | awk '{print $2}')
+    ```
+    {: codeblock}
+
+6. Set the web UI URL in a variable.
+
+    ```
+    export dashboard_url=$(curl -H "Accept: application/json" -H "Authorization: Bearer $iam_token" "https://$rc_endpoint/v1/resource_instances?resource_group_id=$resource_group_id&type=service_instance" | jq ".resources[] | select(.name==\"$logdna_instance_name\") | .dashboard_url")
+    ```
+    {: codeblock}
+
+7. Get the web UI URL.
+
+    ```
+    echo $dashboard_url
+    ```
+    {: codeblock}
+
+    
 
