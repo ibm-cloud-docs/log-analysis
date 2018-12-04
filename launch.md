@@ -62,7 +62,7 @@ Complete the following steps to launch the web UI:
 The Web UI opens.
 
 
-## Getting the web UI URL
+## Getting the web UI URL from the {{site.data.keyword.Bluemix_notm}}
 {: #get}
 
 To get the web UI URL, complete the following steps from a terminal:

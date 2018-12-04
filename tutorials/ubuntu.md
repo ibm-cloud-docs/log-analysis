@@ -41,7 +41,7 @@ In this tutorial, you will learn how to configure an Ubuntu server to forward lo
 
 Read about IBM Log Analysis with LogDNA. For more information, see [About LogDNA](/docs/services/Log-Analysis-with-LogDNA/overview.html#about).
 
-Work in the US-South region. The {{site.data.keyword.la_full_notm}} is currently available in the US South region. However, you can send data from an Ubunutu server that is located in the same region or in a different region. 
+Work in the US-South region. The {{site.data.keyword.la_full_notm}} is currently available in the US South region. **Note:** You can send data from an Ubuntu server that is located in the same region or in a different region. 
 
 Use a user ID that is a member or an owner of an {{site.data.keyword.Bluemix_notm}} account. To get an {{site.data.keyword.Bluemix_notm}} user ID, go to: [Registration ![External link icon](../../../icons/launch-glyph.svg "External link icon")](https://console.bluemix.net/registration/){:new_window}.
 
