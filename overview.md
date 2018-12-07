@@ -63,7 +63,7 @@ IBM Log Analysis with LogDNA collects and aggregates logs in one centralized log
 
 The service plan that you choose for an IBM Log Analysis with LogDNA instance defines the number of days that data is stored and retained in LogDNA. For example, if you choose the *Free* plan, data is not stored at all. However, if you choose the 7 day plan, data is stored for 7 days and you have access to it through the LogDNA Web UI.
 
-When you delete an instance of IBM Log Analysis with LogDNA from the {{site.data.keyword.Bluemix_notm}, all the data is deleted.
+When you delete an instance of IBM Log Analysis with LogDNA from the {{site.data.keyword.Bluemix_notm}}, all the data is deleted.
 
 
 
@@ -95,8 +95,8 @@ Different pricing plans are available that you can choose for an IBM Log Analysi
 
 | Plan                     | 
 |--------------------------|
-| `30 day log search`  |
-| `14 day log search`  |
+| `30 days log search`  |
+| `14 days log search`  |
 | `7 day log search`   |
 | `Lite`                  |
 {: caption="Table 1. List of service plans" caption-side="top"} 
