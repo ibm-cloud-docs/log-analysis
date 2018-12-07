@@ -113,7 +113,7 @@ The following tables outlines the different features that are included in each s
 | `Multi-channel Alerting`         | Yes                     | Yes                           | Yes                         | No           | 
 {: caption="Table 2. List of features available for each service plan" caption-side="top"} 
 
-**Note:** Plan changes are effective the next business day (UTC 00:00).
+
 
 ## Regions
 {: #regions}
