@@ -26,14 +26,51 @@ To provision an {{site.data.keyword.la_full_notm}} instance in a Public Cloud re
 Alternatively, {{site.data.keyword.la_full_notm}} offers a **Free** plan that you can use to view your logs as they pass through the system. You can view logs by using log tailing. You can also design filters to prepare for upgrading to a longer retention period plan. This plan has a 0-day retention period.
 
 
-## Provisioning an instance through the {{site.data.keyword.Bluemix_notm}} UI
+## Provisioning an instance through the Observability dashboard
 {: #provision_ui}
 
-To provision an instance of {{site.data.keyword.la_full_notm}} by using the {{site.data.keyword.Bluemix_notm}} UI, complete the following steps:
+To provision an instance from the Observability dashboard in the {{site.data.keyword.Bluemix_notm}}, complete the following steps:
 
 1. Log in to your {{site.data.keyword.Bluemix_notm}} account.
 
-    The {{site.data.keyword.Bluemix_notm}} dashboard can be found at: [http://cloud.ibm.com ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://cloud.ibm.com){:new_window}.
+    The {{site.data.keyword.Bluemix_notm}} dashboard can be found at: [https://cloud.ibm.com ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com){:new_window}.
+
+	After you log in with your user ID and password, the {{site.data.keyword.Bluemix_notm}} UI opens.
+
+2. Go to the Menu icon ![Menu icon](../../icons/icon_hamburger.svg) &gt; **Observability** to access the *Observability* Dashboard.
+
+3. Select **Logging**, then click **Create instance**. 
+
+4. Enter a name for the service instance.
+
+5. Select a resource group. 
+
+    By default, the **Default** resource group is set.
+
+    **Note:** If you are not able to select a resource group, check that you have editing permissions on the resource group where you want to provision the instance.
+
+6. Select the **Lite** service plan. 
+
+    By default, the **Lite** plan is set.
+
+    For more information about other service plans, see [Pricing plans](/docs/services/Log-Analysis-with-LogDNA/overview.html#pricing_plans).
+
+7. Click **Create**.
+
+After you provision an instance, the *Logging* dashboard opens. 
+
+Next, configure a log source by adding a LogDNA agent. This agent is responsible for collecting and forwarding logs to your instance. 
+
+
+
+## Provisioning an instance through the Catalog
+{: #provision_catalog}
+
+To provision an instance of {{site.data.keyword.la_full_notm}} through the {{site.data.keyword.Bluemix_notm}} Catalog, complete the following steps:
+
+1. Log in to your {{site.data.keyword.Bluemix_notm}} account.
+
+    The {{site.data.keyword.Bluemix_notm}} dashboard can be found at: [https://cloud.ibm.com ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com){:new_window}.
 
 	After you log in with your user ID and password, the {{site.data.keyword.Bluemix_notm}} UI opens.
 
@@ -41,32 +78,28 @@ To provision an instance of {{site.data.keyword.la_full_notm}} by using the {{si
 
 3. To filter the list of services that is displayed, select the **Developer Tools** category.
 
-4. Click the **{{site.data.keyword.la_full_notm}}** tile. The *Observability* Dashboard opens.
+4. Click the **{{site.data.keyword.la_full_notm}}** tile. 
 
-5. Select **Create instance**. 
+5. Enter a name for the service instance.
 
-6. Enter a name for the service instance.
-
-7. Select a resource group. 
+6. Select a resource group. 
 
     By default, the **Default** resource group is set.
 
     **Note:** If you are not able to select a resource group, check that you have editing permissions on the resource group where you want to provision the instance.
 
-8. Select the **Lite** service plan. 
+7. Select the **Lite** service plan. 
 
     By default, the **Lite** plan is set.
 
     For more information about other service plans, see [Pricing plans](/docs/services/Log-Analysis-with-LogDNA/overview.html#pricing_plans).
 
-9. To provision the {{site.data.keyword.la_full_notm}} service in the {{site.data.keyword.Bluemix_notm}} resource group where you are logged in, click **Create**.
+8. Click **Create**.
 
-After you provision an instance, 
+After you provision an instance, the *Logging* dashboard opens. 
 
-* The *Observability* dashboard opens. 
-* A service ID is automatically created. You can use this service ID to get the ingestion key for your instance.
+Next, configure a log source by adding a LogDNA agent. This agent is responsible for collecting and forwarding logs to your instance. 
 
-Next, configure a log source by adding a LogDNA agent. This agent is responsible for collecting and forwarding logs to LogDNA. 
 
 
 ## Provisioning an instance through the CLI
