@@ -33,7 +33,7 @@ IBM Log Analysis with LogDNA offers administrators, DevOps teams, and developers
 To add logging features with LogDNA in the {{site.data.keyword.Bluemix_notm}}, you must provision an instance of IBM Log Analysis with LogDNA.
 
 Before you provision an instance of IBM Log Analysis with LogDNA, consider the following information:
-
+* Log data is hosted on the {{site.data.keyword.Bluemix_notm}}.
 * Log data is sent to a third party.
 * Your users must have platform permissions to create, view, and delete an instance of a service in the {{site.data.keyword.Bluemix_notm}}.
 * Your users must have platform permissions to create resources within the context of the resource group where you plan to provision the LogDNA instance.

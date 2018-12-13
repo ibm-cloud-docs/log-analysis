@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018
-lastupdated: "2018-11-15"
+lastupdated: "2018-12-14"
 
 ---
 
@@ -18,22 +18,22 @@ lastupdated: "2018-11-15"
 # Provisioning an instance
 {: #provision}
 
-Before you can monitor and manage log data with IBM Log Analysis with LogDNA, you must first provision an instance of the service in {{site.data.keyword.Bluemix}}.
+Before you can monitor and manage log data with {{site.data.keyword.la_full_notm}}, you must first provision an instance of the service in {{site.data.keyword.Bluemix}}.
 {:shortdesc}
 
-To provision an IBM Log Analysis with LogDNA instance in a Public Cloud region, you must select the service plan that is associated with the instance, the region where your logs are collected, and the plan that determines the retention period for your logs. You can choose from 7, 15, or 30-day retention periods.
+To provision an {{site.data.keyword.la_full_notm}} instance in a Public Cloud region, you must select the service plan that is associated with the instance, the region where your logs are collected, and the plan that determines the retention period for your logs. You can choose from 7, 15, or 30-day retention periods.
 
-Alternatively, IBM Log Analysis with LogDNA offers a **Free** plan that you can use to view your logs as they pass through the system. You can view logs by using log tailing. You can also design filters to prepare for upgrading to a longer retention period plan. This plan has a 0-day retention period.
+Alternatively, {{site.data.keyword.la_full_notm}} offers a **Free** plan that you can use to view your logs as they pass through the system. You can view logs by using log tailing. You can also design filters to prepare for upgrading to a longer retention period plan. This plan has a 0-day retention period.
 
 
 ## Provisioning an instance through the {{site.data.keyword.Bluemix_notm}} UI
 {: #provision_ui}
 
-To provision an instance of IBM Log Analysis with LogDNA by using the {{site.data.keyword.Bluemix_notm}} UI, complete the following steps:
+To provision an instance of {{site.data.keyword.la_full_notm}} by using the {{site.data.keyword.Bluemix_notm}} UI, complete the following steps:
 
 1. Log in to your {{site.data.keyword.Bluemix_notm}} account.
 
-    The {{site.data.keyword.Bluemix_notm}} dashboard can be found at: [http://bluemix.net ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://bluemix.net){:new_window}.
+    The {{site.data.keyword.Bluemix_notm}} dashboard can be found at: [http://cloud.ibm.com ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://cloud.ibm.com){:new_window}.
 
 	After you log in with your user ID and password, the {{site.data.keyword.Bluemix_notm}} UI opens.
 
@@ -41,7 +41,7 @@ To provision an instance of IBM Log Analysis with LogDNA by using the {{site.dat
 
 3. To filter the list of services that is displayed, select the **Developer Tools** category.
 
-4. Click the **IBM Log Analysis with LogDNA** tile. The *Observability* Dashboard opens.
+4. Click the **{{site.data.keyword.la_full_notm}}** tile. The *Observability* Dashboard opens.
 
 5. Select **Create instance**. 
 
@@ -59,7 +59,7 @@ To provision an instance of IBM Log Analysis with LogDNA by using the {{site.dat
 
     For more information about other service plans, see [Pricing plans](/docs/services/Log-Analysis-with-LogDNA/overview.html#pricing_plans).
 
-9. To provision the IBM Log Analysis with LogDNA service in the {{site.data.keyword.Bluemix_notm}} resource group where you are logged in, click **Create**.
+9. To provision the {{site.data.keyword.la_full_notm}} service in the {{site.data.keyword.Bluemix_notm}} resource group where you are logged in, click **Create**.
 
 After you provision an instance, 
 
@@ -72,7 +72,7 @@ Next, configure a log source by adding a LogDNA agent. This agent is responsible
 ## Provisioning an instance through the CLI
 {: #provision_cli}
 
-To provision an instance of IBM Log Analysis with LogDNA through the command line, complete the following steps:
+To provision an instance of {{site.data.keyword.la_full_notm}} through the command line, complete the following steps:
 
 1. [Pre-requisite] Install the {{site.data.keyword.Bluemix_notm}} CLI.
 
@@ -95,15 +95,15 @@ To provision an instance of IBM Log Analysis with LogDNA through the command lin
 
     where
 
-    * NAME is the name of the instance
+    NAME is the name of the instance
 
-    * *logdna* is the name of the IBM Log Analysis with LogDNA service in the {{site.data.keyword.Bluemix_notm}}
+    *logdna* is the name of the {{site.data.keyword.la_full_notm}} service in the {{site.data.keyword.Bluemix_notm}}
 
-    * SERVICE_PLAN_NAME is the type of plan. Valid values are: *lite*, *7-day*, *14-day*, *30-day*
+    SERVICE_PLAN_NAME is the type of plan. Valid values are: *lite*, *7-days*, *14-days*, *30-days*
     
-    * LOCATION is the region where the LogDNA instance is created. Valid values are: *us-south*
+    LOCATION is the region where the LogDNA instance is created. Valid values are: *us-south*
 
-    For example, to provision an instance with the 7 day retention plan, run the following command:
+    For example, to provision an instance with the 7 days retention plan, run the following command:
 
     ```
     ibmcloud resource service-instance-create logdna-instance-01 logdna 7-day us-south
@@ -119,11 +119,11 @@ To provision an instance of IBM Log Analysis with LogDNA through the command lin
 
     where
 
-    * NAME is the name of the API key. Suggestion: Name the API key like the IBM Log Analysis with LogDNA instance. This will help you  identify the API key later on.
+    NAME is the name of the API key. Suggestion: Name the API key like the {{site.data.keyword.la_full_notm}} instance. This will help you  identify the API key later on.
 
-    * ROLE_NAME is the role that defines the permissions that are enabled. Valid values are: *editor*, *operator*, *administrator*
+    ROLE_NAME is the role that defines the permissions that are enabled. Valid values are: *editor*, *operator*, *administrator*
 
-    * SERVICE_INSTANCE_NAME is the name of the instance in the {{site.data.keyword.Bluemix_notm}}
+    SERVICE_INSTANCE_NAME is the name of the instance in the {{site.data.keyword.Bluemix_notm}}
 
     For example, to create an API key for the instance *logdna-instance-01* with *administrator* permissions on the service instance, run the following command:
 
