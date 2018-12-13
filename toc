@@ -20,6 +20,7 @@ IBM Log Analysis with LogDNA
     {: .navgroup id="howto"}
     provision.md
     remove.md
+    config_agent.md
     ingestion_key.md
     log_sources.md
     alerts.md
