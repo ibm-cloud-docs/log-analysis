@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2018
-lastupdated: "2018-12-14"
+  years: 2018, [{CURRENT_YEAR}]
+lastupdated: "[{LAST_UPDATED_DATE}]"
 
 ---
 
@@ -21,12 +21,26 @@ lastupdated: "2018-12-14"
 The LogDNA agent is responsible for collecting and forwarding logs to your {{site.data.keyword.la_full_notm}} instance. After you provision an instance of {{site.data.keyword.la_full}}, you must configure a LogDNA agent for each log source that you want to monitor.
 {:shortdesc}
 
-The LogDNA agent authenticates using your LogDNA Ingestion Key and opens a secure web socket to LogDNA's ingestion servers. It then 'tails' for new log data, as well as watches for new files added to your specific logging directories.
+* The LogDNA agent authenticates by using the LogDNA Ingestion Key and opens a secure web socket to the {{site.data.keyword.la_full_notm}} ingestion servers. 
+* By default, the agent monitors all files with extension *.log*,  and extensionless files under */var/log/*.
+* The agent tails for new log data, and looks for new files that have been added to the logging directories that the agent monitors.
 
-Use **tags** to group hosts automatically into dynamic groups.
+There are different parameters that you can configure to customize the LogDNA agent: 
+
+| Parameter | Description |
+|-----------|-------------|
+| `tags`    | Define tags to group hosts automatically into dynamic groups. |
+| `logdir`  | Define custom paths that you want the agent to monitor. </br>Separate multiple paths by using commas. You can use glob patterns. You can configure specific files. Enter glob patterns by using double quotes. |
+| `exclude` | Define the files that you do not want the LogDNA agent to monitor. **Note:** These files can be located in any of the paths that are defined through the logdir parameter. </br>Separate multiple files by using commas. You can use glob patterns. You can configure specific files. |
+| `exclude_regex` | Define regex patterns to filter out any lines that match the pattern. Do not include leading and trailing `/`. |
+| `hostname` | Define the hostname. This value overrides the operating system hostname. |
+| `autoupdate` | Set to `1` to update the agent automatically when the public repo agent definition is updated. Set to `0` to disable this feature. |  
+{: caption="Table 1. Parameters to customize a LogDNA agent" caption-side="top"} 
+
+
 
 ## Configuring a LogDNA agent on a Kubernetes cluster by using a script
-{: #kube_script}
+{: #config_agent-kube_script}
 
 To configure your Kubernetes cluster to send logs to your {{site.data.keyword.la_full_notm}} instance, you must install a *logdna-agent* pod on each node of your cluster. The LogDNA agent reads log files from the pod where it is installed, and forwards the log data to your LogDNA instance.
 
@@ -75,14 +89,17 @@ To configure your Kubernetes cluster to forward logs to your LogDNA instance, co
    {: pre}
    
 
-The deployment is successful when you see one or more LogDNA pods. **The number of LogDNA pods equals the number of worker nodes in your cluster.** All pods must be in a `Running` state.
+The deployment is successful when you see one or more LogDNA pods.
+* **The number of LogDNA pods equals the number of worker nodes in your cluster.** 
+* All pods must be in a `Running` state.
+* *Stdout* and *stderr* is automaticaly collected and forwarded from all containers, 
 
 This automatically installs a logdna-agent pod into each node in your cluster and ships stdout/stderr from all containers, both application logs and node logs. Note: By default, the agent pod will collect logs from all namespaces on each node, including kube-system
 
 
 
 ## Adding tags to a LogDNA agent on a Kubernetes cluster
-{: #kube_tags}
+{: #config_agent-kube_tags}
 
 Complete the following steps to add tags:
 
@@ -101,16 +118,36 @@ Complete the following steps to add tags:
 
     **Note:** Every time you log in to the {{site.data.keyword.containerlong}} CLI to work with clusters, you must run these commands to set the path to the cluster's configuration file as a session variable. The Kubernetes CLI uses this variable to find a local configuration file and certificates that are necessary to connect with the cluster in {{site.data.keyword.Bluemix_notm}}.
 
-2. Edit the *logdna-agent-configmap.yaml* file. 
+2. Check the update strategy of the DaemonSet. Then, choose whether to use *kubectl apply* or *kubectl edit* to modify the configuration file for the agent.
 
-    Run the following command:
+    To check the update strategy, run the following command:
+
+    ```
+    kubectl get ds/logdna-agent -o go-template='{{.spec.updateStrategy.type}}{{"\n"}}'
+    ```
+    {: pre}
+
+    Option 1: If the update strategy is set to *OnDelete* or if you have the configuration file managed through a version control system, update your local configuration file. Then, apply those changes to the LogDNA agent by using *kubectl apply*.
+
+    Option 2: If the update strategy is set to *RollingUpdate*, you can update and apply changes to the LogDNA agent by using *kubectl edit*.
+
+3. Edit the *logdna-agent-configmap.yaml* file. 
+
+    Option 1: Update the configuration file by modifying the local copy. **Note:** You can also generate the configuration file of the agent by running the following command:
+
+    ```
+    kubectl get configmap logdna-agent -o=yaml > prod-logdna-agent-configmap.yaml
+    ```
+    {: codeblock}
+
+    Option 2: Update the configuration file by using *kubectl edit*:
 
     ```
     kubectl edit configmap logdna-agent
     ```
     {: codeblock}
 
-3. Make changes. Add the section **LOGDNA_TAGS**.
+4. Make changes. Add the section **LOGDNA_TAGS**.
 
     ```
     - name: LOGDNA_TAGS
@@ -152,11 +189,18 @@ Complete the following steps to add tags:
     ```
     {: screen}
 
+5. Apply configuration changes if you edit the file locally. 
 
+    ```
+    kubectl apply -f logdna-agent-configmap.yaml
+    ```
+    {: codeblock}
+    
+    **Note:** If you use *kubectl edit*, changes are applied automatically when you save your modifications.
 
 
 ## Configuring a LogDNA agent on Linux Ubuntu/Debian
-{: #linux}
+{: #config_agent-linux}
 
 To configure your Ubuntu server to send logs to your {{site.data.keyword.la_full_notm}} instance, you must install a `logdna-agent`. The LogDNA agent reads log files from */var/log*, and forwards the log data to your LogDNA instance.
 
@@ -220,7 +264,7 @@ To configure your Ubuntu server to forward logs to your LogDNA instance, complet
 
 
 ## Adding tags to a LogDNA agent on Linux Ubuntu/Debian
-{: #linux_tags}
+{: #config_agent-linux_tags}
  
 
 Complete the following steps to add more tags to the LogDNA agent:
@@ -238,6 +282,7 @@ Complete the following steps to add more tags to the LogDNA agent:
 You can also edit the LogDNA configuration file and add tags. The configuration file is located in */etc/logdna.conf*.
 
 1. Edit the file.
+
     ```
     sudo update-rc.d logdna-agent defaults
     ```
@@ -255,8 +300,11 @@ You can also edit the LogDNA configuration file and add tags. The configuration 
 
 
 
-## Configuration File
-Normally a config file is automatically generated (e.g. when you set a key using -k), but you can create your own config file /etc/logdna.conf on Linux and C:\ProgramData\logdna\logdna.conf on Windows:
+## Adding more directories to a LogDNA agent on Linux Ubuntu/Debian
+{: #config_agent-linux_dir}
+
+
+When you deploy a LogDNA agent, a config file is automatically generated. To add more directories that the agent monitors and collects logs from, you can create the following custom configuration file: */etc/logdna.conf*.
 
 logdir = /var/log/myapp,/path/to/2nd/dir
 key = <YOUR LOGDNA INGESTION KEY>
@@ -264,15 +312,6 @@ On Windows, you can use Windows paths, just make sure to use \\ as a separator:
 
 logdir = C:\\Users\\username\\AppData\\myapp
 key = <YOUR LOGDNA INGESTION KEY>
-Options
-logdir: sets the paths that the agent will monitor for new files, separate multiple paths using ,, supports glob patterns + specific files. By default this option is set to monitor .log and extensionless files under /var/log/. Glob patterns should be given in double-quotes.
-exclude: excludes files that otherwise would've matched logdir, separate multiple excludes using ,, supports glob patterns + specific files
-exclude_regex: filters out any lines matching pattern in any file. Don't include leading and trailing /.
-key: your LogDNA Ingestion Key. You can obtain one by creating an account on LogDNA site and once logged in to the webapp, click the Gear icon, then Account Profile.
-tags: use tags to separate data for production, staging, or autoscaling use cases
-hostname: override os hostname
-autoupdate: sets whether the agent should update itself when new versions are available on the public repo (default is 1, set to 0 to disable)
-winevent: sets Windows Event Log Configurations in logname format
 
 
 
