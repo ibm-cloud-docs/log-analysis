@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2018, [{CURRENT_YEAR}]
-lastupdated: "[{LAST_UPDATED_DATE}]"
+  years: 2018, 2019
+lastupdated: "2018-12-14"
 
 ---
 
