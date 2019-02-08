@@ -120,7 +120,7 @@ The Web UI opens.
 
 From the LogDNA web UI, complete the following steps:
 
-1. Open the log sources panel on the LogDNA web UI. Select the *Install instructions icon*: ![Install instructions icon](../../images/logdna_install.png "Install instructions icon")
+1. Open the log sources panel on the LogDNA web UI. Select the *Install instructions icon*: ![Install instructions icon](../images/logdna_install.png "Install instructions icon")
 2. Select **View platform** &gt; **Cloud Foundry**.
 3. Click **Provision a Syslog port**.  
 
