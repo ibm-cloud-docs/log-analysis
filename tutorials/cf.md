@@ -27,7 +27,7 @@ To send CF logs to a {{site.data.keyword.la_short}} instance, consider the follo
 
 
 
-# Before you begin
+## Before you begin
 {: #cf-prereqs}
 
 The steps that are provided through this tutorial assume that you will be working in the US-South region. 
@@ -45,7 +45,9 @@ Your {{site.data.keyword.IBM_notm}}ID must have assigned IAM policies for each o
 | CF app                               |  Resource                  | Editor  | us-south  | This policy is required to configure the CF app to forward logs to the logging instance. |
 {: caption="Table 1. List of IAM policies required to complete the tutorial" caption-side="top"} 
 
-* Install the {{site.data.keyword.Cloud_notm}} CLI. For more information, see [Installing the {{site.data.keyword.Bluemix_notm}} CLI](/docs/cli/index.html#overview).
+You must install the {{site.data.keyword.Cloud_notm}} CLI. For more information, see [Installing the {{site.data.keyword.Bluemix_notm}} CLI](/docs/cli/index.html#overview).
+
+You must have a CF app available.
 
 
 ## Objectives
