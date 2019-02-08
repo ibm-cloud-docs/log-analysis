@@ -34,7 +34,7 @@ The steps that are provided through this tutorial assume that you will be workin
 
 Read about {{site.data.keyword.la_full_notm}}. For more information, see [About](/docs/services/Log-Analysis-with-LogDNA/overview.html#about).
 
-Use a user ID that is a member or an owner of an {{site.data.keyword.Cloud_notm}} account. To get an {{site.data.keyword.Cloud_notm}} user ID, go to: [Registration ![External link icon](../../../icons/launch-glyph.svg "External link icon")](http://cloud.ibm.com /registration/){:new_window}.
+Use a user ID that is a member or an owner of an {{site.data.keyword.cloud_notm}} account. To get an {{site.data.keyword.cloud_notm}} user ID, go to: [Registration ![External link icon](../../../icons/launch-glyph.svg "External link icon")](http://cloud.ibm.com /registration/){:new_window}.
 
 Your {{site.data.keyword.IBM_notm}}ID must have assigned IAM policies for each of the following resources: 
 
@@ -46,7 +46,7 @@ Your {{site.data.keyword.IBM_notm}}ID must have assigned IAM policies for each o
 
 Your {{site.data.keyword.IBM_notm}}ID must have the **developer** assigned for the Cloud Foundry space where the CF application is running.
 
-You must install the {{site.data.keyword.Cloud_notm}} CLI. For more information, see [Installing the {{site.data.keyword.Bluemix_notm}} CLI](/docs/cli/index.html#overview). This CLI includes the CF CLI.
+You must install the {{site.data.keyword.cloud_notm}} CLI. For more information, see [Installing the {{site.data.keyword.Bluemix_notm}} CLI](/docs/cli/index.html#overview). This CLI includes the CF CLI.
 
 You must have a CF app deployed and running.
 
@@ -66,7 +66,7 @@ In this tutorial, you can learn how to configure a CF application to send logs t
 
 To provision a service instance of {{site.data.keyword.la_full_notm}} through the {{site.data.keyword.Bluemix_notm}} console, complete the following steps:
 
-1. Log in to the [{{site.data.keyword.Cloud_notm}} account ![External link icon](../../../icons/launch-glyph.svg "External link icon")](http://cloud.ibm.com ) where you created your Kubernetes cluster.
+1. Log in to the [{{site.data.keyword.cloud_notm}} account ![External link icon](../../../icons/launch-glyph.svg "External link icon")](http://cloud.ibm.com ) where you created your Kubernetes cluster.
 
 2. Click **Catalog**. A list of {{site.data.keyword.Bluemix_notm}} services opens.
 
@@ -95,11 +95,11 @@ To provision an instance through the CLI, see [Provisioning an instance through 
 ### 1. Launch the LogDNA web UI
 {: #cf-step2-1}
 
-You launch the web UI within the context of an {{site.data.keyword.la_full_notm}} instance, from the {{site.data.keyword.Cloud_notm}} UI. 
+You launch the web UI within the context of an {{site.data.keyword.la_full_notm}} instance, from the {{site.data.keyword.cloud_notm}} UI. 
 
 Complete the following steps to launch the web UI:
 
-1. Log in to your {{site.data.keyword.Cloud_notm}} account.
+1. Log in to your {{site.data.keyword.cloud_notm}} account.
 
     The {{site.data.keyword.Bluemix_notm}} dashboard can be found at: [https://cloud.ibm.com ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com){:new_window}.
 
