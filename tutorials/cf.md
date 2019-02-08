@@ -42,12 +42,13 @@ Your {{site.data.keyword.IBM_notm}}ID must have assigned IAM policies for each o
 |--------------------------------------|----------------------------|---------|-----------|------------------------------|
 | Resource group **Default**           |  Resource group            | Viewer  | us-south  | This policy is required to allow the user to see service instances in the Default resource group.    |
 | {{site.data.keyword.la_full_notm}} service |  Resource group      | Editor  | us-south  | This policy is required to allow the user to provision and administer the {{site.data.keyword.la_full_notm}} service in the Default resource group.   |
-| CF app                               |  Resource                  | Editor  | us-south  | This policy is required to configure the CF app to forward logs to the logging instance. |
 {: caption="Table 1. List of IAM policies required to complete the tutorial" caption-side="top"} 
 
-You must install the {{site.data.keyword.Cloud_notm}} CLI. For more information, see [Installing the {{site.data.keyword.Bluemix_notm}} CLI](/docs/cli/index.html#overview).
+Your {{site.data.keyword.IBM_notm}}ID must have the **developer** assigned for the Cloud Foundry space where the CF application is running.
 
-You must have a CF app available.
+You must install the {{site.data.keyword.Cloud_notm}} CLI. For more information, see [Installing the {{site.data.keyword.Bluemix_notm}} CLI](/docs/cli/index.html#overview). This CLI includes the CF CLI.
+
+You must have a CF app deployed and running.
 
 
 ## Objectives
