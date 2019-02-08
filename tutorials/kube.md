@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2018
-lastupdated: "2018-12-14"
+  years: 2018, 2019
+lastupdated: "2019-01-08"
 
 ---
 
@@ -223,7 +223,7 @@ To launch the LogDNA dashboard through the {{site.data.keyword.Bluemix_notm}} co
 - [Define views](/docs/services/Log-Analysis-with-LogDNA/view_logs.html#step7)
 - [Configure alerts](https://docs.logdna.com/docs/alerts). 
 
-To use any of these features, you must upgrade the {{site.data.keyword.la_full_notm}} plan to a paid plan.
+**Note:** Some of these features require a plan upgrade.
 
 
 
