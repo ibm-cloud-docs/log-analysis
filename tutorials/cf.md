@@ -156,6 +156,7 @@ Complete the following steps:
 
     * *PORT_NUMBER* is the port number that you provisioned in your logging instance.
 
+
     A sample command looks as follows:
 
     ```
@@ -176,6 +177,7 @@ Complete the following steps:
 
     * *SVC_INSTANCE_NAME* is the name of the CF service instance.
 
+    
     A sample command looks as follows:
 
     ```
