@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018, 2019
-lastupdated: "2010-01-08"
+lastupdated: "2010-02-18"
 
 ---
 
@@ -95,7 +95,7 @@ To provision an instance through the CLI, see [Provisioning an instance through 
 {: #cf_step2}
 
 ### 1. Launch the LogDNA web UI
-{: #cf_step2-1}
+{: #cf_step2_1}
 
 You launch the web UI within the context of an {{site.data.keyword.la_full_notm}} instance, from the {{site.data.keyword.cloud_notm}} UI. 
 
@@ -119,7 +119,7 @@ The Web UI opens.
 
 
 ### 2. Provision a port
-{: #cf_step2-2}
+{: #cf_step2_2}
 
 From the LogDNA web UI, complete the following steps:
 

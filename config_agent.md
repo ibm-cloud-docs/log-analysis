@@ -40,7 +40,7 @@ There are different parameters that you can configure to customize the LogDNA ag
 
 
 ## Configuring a LogDNA agent on a Kubernetes cluster by using a script
-{: #config_agent-kube_script}
+{: #config_agent_kube_script}
 
 To configure your Kubernetes cluster to send logs to your {{site.data.keyword.la_full_notm}} instance, you must install a *logdna-agent* pod on each node of your cluster. The LogDNA agent reads log files from the pod where it is installed, and forwards the log data to your LogDNA instance.
 
@@ -99,7 +99,7 @@ This automatically installs a logdna-agent pod into each node in your cluster an
 
 
 ## Adding tags to a LogDNA agent on a Kubernetes cluster
-{: #config_agent-kube_tags}
+{: #config_agent_kube_tags}
 
 Complete the following steps to add tags:
 
@@ -200,7 +200,7 @@ Complete the following steps to add tags:
 
 
 ## Configuring a LogDNA agent on Linux Ubuntu/Debian
-{: #config_agent-linux}
+{: #config_agent_linux}
 
 To configure your Ubuntu server to send logs to your {{site.data.keyword.la_full_notm}} instance, you must install a `logdna-agent`. The LogDNA agent reads log files from */var/log*, and forwards the log data to your LogDNA instance.
 
@@ -301,7 +301,7 @@ You can also edit the LogDNA configuration file and add tags. The configuration 
 
 
 ## Adding more directories to a LogDNA agent on Linux Ubuntu/Debian
-{: #config_agent-linux_dir}
+{: #config_agent_linux_dir}
 
 
 When you deploy a LogDNA agent, a config file is automatically generated. To add more directories that the agent monitors and collects logs from, you can create the following custom configuration file: */etc/logdna.conf*.
