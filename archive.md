@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years:  2018
-lastupdated: "2019-01-14"
+  years:  2018, 2019
+lastupdated: "2019-02-18"
 
 ---
 
@@ -46,7 +46,7 @@ Complete the following steps to archive an IBM Log Analysis with LogDNA instance
 
 
 ## Step 1: Grant IAM policies to a user to work with IBM Cloud Object Storage
-{: #step1}
+{: #archiving_step1}
 
 **Note:** This step must be completed by the account owner or an administrator of the {{site.data.keyword.cos_full_notm}} service on the {{site.data.keyword.Bluemix_notm}}.
 
@@ -88,7 +88,7 @@ Complete the following steps to assign a user administrator role to the {{site.d
 
 
 ## Step 2: Provision an instance of IBM Cloud Object Storage
-{: #step2}
+{: #archiving_step2}
 
 **Note:** This step must be completed by an editor, or administrator of the {{site.data.keyword.cos_full_notm}} service on the {{site.data.keyword.Bluemix_notm}}. 
 
@@ -121,7 +121,7 @@ Complete the following steps to provision an {{site.data.keyword.cos_full_notm}}
 
 
 ## Step 3: Create a bucket
-{: #step3}
+{: #archiving_step3}
 
 Buckets are a way to organize your data in an {{site.data.keyword.cos_full_notm}} instance. 
 
@@ -182,7 +182,7 @@ Complete the following steps to create a bucket:
 
 
 ## Step 4: Create a service ID for the IBM Cloud Object Storage instance
-{: #step4}
+{: #archiving_step4}
 
 A service ID identifies a service similar to how a user ID identifies a user. Service IDs are not tied to a specific user. If the user that creates the service ID leaves your organization and is deleted from the account, the service ID remains.
 
@@ -219,7 +219,7 @@ For the service ID that you just created, click **View credentials**. You can se
 
 
 ## Step 5: Restrict the service ID to only have writing permissions for the bucket
-{: #step5}
+{: #archiving_step5}
 
 If you want to restrict the service ID to only have writing permissions for a bucket, complete the following steps:
 
@@ -243,7 +243,7 @@ If you want to restrict the service ID to only have writing permissions for a bu
 
 
 ## Step 6: Select the endpoint
-{: #step6}
+{: #archiving_step6}
 
 An endpoint defines where to look for a bucket. There are different endpoints depending on the region and type of resiliency. For more information, see [Select regions and endpoints](/docs/services/cloud-object-storage/basics/endpoints.html#select-regions-and-endpoints).
 
@@ -266,7 +266,7 @@ Complete the following steps to obtain the endpoint for your bucket:
 
 
 ## Step 7: Grant IAM policies to a user to archive logs
-{: #step7}
+{: #archiving_step7}
 
 The following table lists the policies that a user must have to be able to configure archiving of logs from IBM Log Analysis with LogDNA Web UI into a bucket in a {{site.data.keyword.cos_full_notm}} instance:
 
@@ -298,7 +298,7 @@ Complete the following steps to assign a user permissions to archive logs:
 
 
 ## Step 8: Configure archiving for your IBM Log Analysis with LogDNA instance
-{: #step8}
+{: #archiving_step8}
 
 
 Complete the following steps to configure archiving of your IBM Log Analysis with LogDNA instance into a COS bucket:
