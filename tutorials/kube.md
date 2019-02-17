@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018, 2019
-lastupdated: "2019-01-08"
+lastupdated: "2019-02-18"
 
 ---
 
@@ -43,7 +43,7 @@ On the {{site.data.keyword.Bluemix_notm}}, to configure cluster-level logging fo
 In this tutorial, you will learn how to configure cluster-level logging.
 
 ## Before you begin
-{: #prereqs}
+{: #kube_prereqs}
 
 Work in the US-South region. The {{site.data.keyword.la_full_notm}} is currently available in the US South region. **Note:** You can send data from a Kubernetes cluster that is located in the same region or in a different region. 
 
@@ -68,7 +68,7 @@ Install the Kubernetes CLI plug-in. For more information, see [Installing the CL
 
 
 ## Objectives
-{: #objectives}
+{: #kube_objectives}
 
 In this tutorial, you configure logging with LogDNA for your {{site.data.keyword.containerlong_notm}} cluster. In particular, you will:
 
@@ -78,7 +78,7 @@ In this tutorial, you configure logging with LogDNA for your {{site.data.keyword
 
 
 ## Prerequisites
-{: #prerequisites}
+{: #kube_prerequisites}
 
 To complete this tutorial, you must complete the following tasks: 
 
@@ -124,7 +124,7 @@ To complete this tutorial, you must complete the following tasks:
 
 
 ## Step1: Provision an {{site.data.keyword.la_full_notm}} service instance
-{: #step1}
+{: #kube_step1}
 
 To provision a service instance of {{site.data.keyword.la_full_notm}} through the {{site.data.keyword.Bluemix_notm}} console, complete the following steps:
 
@@ -151,7 +151,7 @@ To provision an instance through the CLI, see [Provisioning an instance through 
 
 
 ## Step2: Configure your Kubernetes cluster to send logs to your LogDNA instance
-{: #step2}
+{: #kube_step2}
 
 To configure your Kubernetes cluster to send logs to your {{site.data.keyword.la_full_notm}} instance, you must install a `logdna-agent` pod on each node of your cluster. The LogDNA agent reads log files from the pod where it is installed, and forwards the log data to your LogDNA instance.
 
@@ -203,7 +203,7 @@ To configure your Kubernetes cluster to forward logs to your LogDNA instance, co
 
 
 ## Step 3: Launch the LogDNA dashboard and view logs
-{: #step3}
+{: #kube_step3}
 
 To launch the LogDNA dashboard through the {{site.data.keyword.Bluemix_notm}} console, complete the following steps:
 
@@ -216,7 +216,7 @@ To launch the LogDNA dashboard through the {{site.data.keyword.Bluemix_notm}} co
 4. Select one instance and click **View LogDNA**. The LogDNA dashboard opens. **Note:** With the **Free** service plan, you can tail your latest logs only. For more information, see [Viewing logs](/docs/services/Log-Analysis-with-LogDNA/view_logs.html#view_logs).
 
 ## Next steps
-{: #next_steps}
+{: #kube_next_steps}
 
 - [Filter logs](/docs/services/Log-Analysis-with-LogDNA/view_logs.html#step5)
 - [Search logs](/docs/services/Log-Analysis-with-LogDNA/view_logs.html#step6)

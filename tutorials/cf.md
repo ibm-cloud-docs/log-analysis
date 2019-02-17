@@ -28,7 +28,7 @@ To send CF logs to a {{site.data.keyword.la_short}} instance, consider the follo
 
 
 ## Before you begin
-{: #cf-prereqs}
+{: #cf_prereqs}
 
 The steps that are provided through this tutorial assume that you will be working in the US-South region. 
 
@@ -52,7 +52,7 @@ You must have a CF app deployed and running.
 
 
 ## Objectives
-{: #cf-objectives}
+{: #cf_objectives}
 
 In this tutorial, you can learn how to configure a CF application to send logs to a logging instance. In particular, you will:
 
@@ -62,7 +62,7 @@ In this tutorial, you can learn how to configure a CF application to send logs t
 
 
 ## Step1: Provision an {{site.data.keyword.la_full_notm}} instance
-{: #cf-step1}
+{: #cf_step1}
 
 To provision a service instance of {{site.data.keyword.la_full_notm}} through the {{site.data.keyword.Bluemix_notm}} console, complete the following steps:
 
@@ -90,10 +90,10 @@ To provision an instance through the CLI, see [Provisioning an instance through 
 
 
 ## Step 2: Provision a syslog port in the logging instance
-{: #cf-step2}
+{: #cf_step2}
 
 ### 1. Launch the LogDNA web UI
-{: #cf-step2-1}
+{: #cf_step2-1}
 
 You launch the web UI within the context of an {{site.data.keyword.la_full_notm}} instance, from the {{site.data.keyword.cloud_notm}} UI. 
 
@@ -117,7 +117,7 @@ The Web UI opens.
 
 
 ### 2. Provision a port
-{: #cf-step2-2}
+{: #cf_step2-2}
 
 From the LogDNA web UI, complete the following steps:
 
@@ -129,7 +129,7 @@ A port is displayed. Copy the port.
 
 
 ## Step 3: Configure a user-provided service instance for your CF app
-{: #cf-step3}
+{: #cf_step3}
 
 Complete the following steps:
 
@@ -203,8 +203,8 @@ Complete the following steps:
     {: screen}
 
 
-## Step 3: Verify that CF app logs are displayed through the LogDNA web UI
-{: #cf-step3}
+## Step 4: Verify that CF app logs are displayed through the LogDNA web UI
+{: #cf_step4}
 
 Launch the LogDNA web UI. Then, search for your CF application logs. For more information, see [Filtering logs](/docs/services/Log-Analysis-with-LogDNA/view_logs.html#step5).
 

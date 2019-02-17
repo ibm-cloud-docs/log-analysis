@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2018
-lastupdated: "2018-11-15"
+  years: 2018, 2019
+lastupdated: "2019-02-18"
 
 ---
 
@@ -23,7 +23,7 @@ If the ingestion key that you use to forward logs from a cluster to an IBM Log A
 {:shortdesc}
 
 ## Before you begin
-{: #prereqs}
+{: #kube_reset_prereqs}
 
 Work in the US-South region. Both resources, the IBM Log Analysis with LogDNA instance and the Kubernetes cluster must run in the same account.
 
@@ -48,7 +48,7 @@ Install the Kubernetes CLI plug-in. For more information, see [Installing the CL
 
 
 ## Step 1: Reset the ingestion key
-{: #step1}
+{: #kube_reset_step1}
 
 To renew the ingestion key for an IBM Log Analysis with LogDNA instance by using the IBM Log Analysis with LogDNA Web UI, complete the following steps:
 
@@ -68,7 +68,7 @@ To renew the ingestion key for an IBM Log Analysis with LogDNA instance by using
 
 
 ## Step 2: Remove any configuration in the cluster that uses the old ingestion key
-{: #step2}
+{: #kube_reset_step2}
 
 Complete the following steps:
 
@@ -121,7 +121,7 @@ Complete the following steps:
 
 
 ## Step 3: Configure your Kubernetes cluster with the new ingestion key
-{: #step3}
+{: #kube_reset_step3}
 
 To configure your Kubernetes cluster to forward logs to your LogDNA instance, complete the following steps from the command line:
 
@@ -180,7 +180,7 @@ To configure your Kubernetes cluster to forward logs to your LogDNA instance, co
 
 
 ## Step 4: Launch the LogDNA Web UI
-{: #step4}
+{: #kube_reset_step4}
 
 To launch IBM the Log Analysis with LogDNA dashboard through the {{site.data.keyword.Bluemix_notm}} UI, complete the following steps:
 
@@ -202,7 +202,7 @@ To launch IBM the Log Analysis with LogDNA dashboard through the {{site.data.key
 
 
 ## Step 5: View your logs
-{: step5}
+{: #kube_reset_step5}
 
 From the LogDNA Web UI, you can view your logs as they pass through the system. You view logs by using log tailing. 
 
@@ -211,7 +211,7 @@ From the LogDNA Web UI, you can view your logs as they pass through the system. 
 
 
 ## Next steps
-{: #next_steps}
+{: #kube_reset_next_steps}
 
   If you want to [filter cluster logs](https://docs.logdna.com/docs/filters), [search cluster logs](https://docs.logdna.com/docs/search), [define views](https://docs.logdna.com/docs/views), and [configure alerts](https://docs.logdna.com/docs/alerts), you must upgrade the IBM Log Analysis with LogDNA plan to a paid plan.
 

@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2018
-lastupdated: "2018-11-15"
+  years: 2018, 2019
+lastupdated: "2019-02-18"
 
 ---
 
@@ -37,7 +37,7 @@ On the {{site.data.keyword.Bluemix_notm}}, to configure an Ubuntu server to forw
 In this tutorial, you will learn how to configure an Ubuntu server to forward logs to an IBM Log Analysis with LogDNA instance.
 
 ## Before you begin
-{: #prereqs}
+{: #ubuntu_prereqs}
 
 Read about IBM Log Analysis with LogDNA. For more information, see [About LogDNA](/docs/services/Log-Analysis-with-LogDNA/overview.html#about).
 
@@ -58,7 +58,7 @@ Install the {{site.data.keyword.Bluemix_notm}} CLI. For more information, see [I
 
 
 ## Step1: Provision an IBM Log Analysis with LogDNA instance
-{: #step1}
+{: #ubuntu_step1}
 
 To provision an instance of IBM Log Analysis with LogDNA through the {{site.data.keyword.Bluemix_notm}} UI, complete the following steps:
 
@@ -95,7 +95,7 @@ After you provision an instance, the IBM Log Analysis with LogDNA dashboard open
 
 
 ## Step2: Configure your Ubuntu server to send logs to your instance
-{: #step2}
+{: #ubuntu_step2}
 
 To configure your Ubuntu server to send logs to your IBM Log Analysis with LogDNA instance, you must install a `logdna-agent`. The LogDNA agent reads log files from */var/log*, and forwards the log data to your LogDNA instance.
 
@@ -174,7 +174,7 @@ To configure your Ubuntu server to forward logs to your LogDNA instance, complet
 
 
 ## Step 3: Launch the LogDNA Web UI
-{: #step3}
+{: #ubuntu_step3}
 
 To launch IBM the Log Analysis with LogDNA dashboard through the {{site.data.keyword.Bluemix_notm}} UI, complete the following steps:
 
@@ -196,7 +196,7 @@ To launch IBM the Log Analysis with LogDNA dashboard through the {{site.data.key
 
 
 ## Step 4: View your logs
-{: step4}
+{: #ubuntu_step4}
 
 From the LogDNA Web UI, you can view your logs as they pass through the system. You view logs by using log tailing. 
 
@@ -206,7 +206,7 @@ For more information, see [Viewing logs](/docs/services/Log-Analysis-with-LogDNA
 
 
 ## Next steps
-{: #next_steps}
+{: #ubuntu_next_steps}
 
 [Filter logs](/docs/services/Log-Analysis-with-LogDNA/view_logs.html#step5), [search logs](/docs/services/Log-Analysis-with-LogDNA/view_logs.html#step6), [define views](/docs/services/Log-Analysis-with-LogDNA/view_logs.html#step7), and [configure alerts](https://docs.logdna.com/docs/alerts). 
 
