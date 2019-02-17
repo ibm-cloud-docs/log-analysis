@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2018
-lastupdated: "2018-11-15"
+  years: 2018, 2019
+lastupdated: "2019-02-18"
 
 ---
 
@@ -28,7 +28,7 @@ Complete the following steps to view logs:
 
 
 ## Step 1: Grant IAM policies to a user to view logs
-{: #step1}
+{: #view_logs_step1}
 
 **Note:** You must be an adminsitrator of the IBM Log Analysis with LogDNA service, an administrator of the IBM Log Analysis with LogDNA instance, or have account IAM permissions to grant other users policies.
 
@@ -43,7 +43,7 @@ For more information on how to configure these policies for a user, see [Grantin
 
 
 ## Step 2: Launch the Web UI through the {{site.data.keyword.Bluemix_notm}} UI
-{: #step2}
+{: #view_logs_step2}
 
 To launch IBM the Log Analysis with LogDNA UI through the {{site.data.keyword.Bluemix_notm}} UI, complete the following steps:
 
@@ -65,7 +65,7 @@ The IBM Log Analysis with LogDNA Web UI opens and displays logs forwarded to tha
 
 
 ## Step 3: Customize your default view
-{: #step3}
+{: #view_logs_step3}
 
 In the **USER PREFERENCES** section, you can modify the order of the data fields that are displayed per line.
 
@@ -78,7 +78,7 @@ Complete the following steps to modify the format of a log line:
 
 
 ## Step 4: Look into a log line
-{: #step4}
+{: #view_logs_step4}
 
 At any time, you can view each log line in context.
 
@@ -99,7 +99,7 @@ When you are finished, close the line.
 
 
 ## Step 5: Filter logs
-{: #step5}
+{: #view_logs_step5}
 
 You can filter logs by log source, application, and log level. 
 
@@ -123,7 +123,7 @@ To create a group, select multiple values. Then, click **Save as group**. Enter 
 
 
 ## Step 6: Search logs
-{: #step6}
+{: #view_logs_step6}
 
 When you search log data, the search applies any log filters and time queries configured in that view.
 
@@ -134,7 +134,7 @@ You can do simple searches (single term string search), compound search (multipl
 
 
 ## Step 7: Create views
-{: #step7}
+{: #view_logs_step7}
 
 
 Complete the following steps to create a view:
