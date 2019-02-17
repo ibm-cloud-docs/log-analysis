@@ -23,7 +23,7 @@ You can configure {{site.data.keyword.Bluemix_notm}} log sources and on-premisse
 
 
 ## Platform: Container services
-{: #kube}
+{: #log_sources_kube}
 
 You can manage logs from the [{{site.data.keyword.containerlong_notm}}](/docs/containers/container_index.html#container_index) with IBM Log Analysis with LogDNA.
 
@@ -36,7 +36,7 @@ You can manage logs from the [{{site.data.keyword.containerlong_notm}}](/docs/co
 
 
 ## Linux servers
-{: #linux}
+{: #log_sources_linux}
 
 You can manage logs from any of the following Linux servers with IBM Log Analysis with LogDNA:
 
