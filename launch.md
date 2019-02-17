@@ -39,7 +39,7 @@ For more information on how to configure these policies for a user, see [Grantin
 
 
 ## Launching the web UI through the {{site.data.keyword.Cloud_notm}} UI
-{: #step2}
+{: #launch_step2}
 
 You launch the web UI within the context of an {{site.data.keyword.la_full_notm}} instance, from the {{site.data.keyword.Cloud_notm}} UI. 
 
@@ -63,7 +63,7 @@ The Web UI opens.
 
 
 ## Getting the web UI URL from the {{site.data.keyword.Cloud_notm}}
-{: #get}
+{: #launch_get}
 
 To get the web UI URL, complete the following steps from a terminal:
 

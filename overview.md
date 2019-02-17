@@ -54,7 +54,7 @@ The following figure shows the components overview for the IBM Log Analysis with
 
 
 ## Log data
-{: #data}
+{: #overview_data}
 
 IBM Log Analysis with LogDNA collects and aggregates logs in one centralized logging system.
 
@@ -68,7 +68,7 @@ When you delete an instance of IBM Log Analysis with LogDNA from the {{site.data
 
 
 ## Features
-{: #features}
+{: #overview_features}
 
 **Troubleshoot logs in real-time to diagnose issues and identify problems.**
 
@@ -89,7 +89,7 @@ Control the cost of your logging infrastructure in the IBM Cloud by configuring 
 
 
 ## Pricing plans
-{: #pricing_plans}
+{: #overview_pricing_plans}
 
 Different pricing plans are available that you can choose for an IBM Log Analysis with LogDNA instance. Each plan defines the number of days that data is retained for search, the number of users allowed to manage the data, and the LogDNA features that are enabled.
 
@@ -116,7 +116,7 @@ The following tables outlines the different features that are included in each s
 
 
 ## Regions
-{: #regions}
+{: #overview_regions}
 
 Logging with IBM Log Analysis with LogDNA is available in the **US South** region only. The **US South** region is also known as the **Dallas** region.
 
