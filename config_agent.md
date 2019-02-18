@@ -92,9 +92,8 @@ To configure your Kubernetes cluster to forward logs to your LogDNA instance, co
 The deployment is successful when you see one or more LogDNA pods.
 * **The number of LogDNA pods equals the number of worker nodes in your cluster.** 
 * All pods must be in a `Running` state.
-* *Stdout* and *stderr* is automaticaly collected and forwarded from all containers, 
-
-This automatically installs a logdna-agent pod into each node in your cluster and ships stdout/stderr from all containers, both application logs and node logs. Note: By default, the agent pod will collect logs from all namespaces on each node, including kube-system
+* *Stdout* and *stderr* is automaticaly collected and forwarded from all containers. Log data include application logs and worker logs. 
+* By default, the LogDNA agent pod that runs on a worker collects logs from all namespaces on that node, including kube-system logs.
 
 
 
@@ -299,19 +298,6 @@ You can also edit the LogDNA configuration file and add tags. The configuration 
 
 
 
-
-## Adding more directories to a LogDNA agent on Linux Ubuntu/Debian
-{: #config_agent_linux_dir}
-
-
-When you deploy a LogDNA agent, a config file is automatically generated. To add more directories that the agent monitors and collects logs from, you can create the following custom configuration file: */etc/logdna.conf*.
-
-logdir = /var/log/myapp,/path/to/2nd/dir
-key = <YOUR LOGDNA INGESTION KEY>
-On Windows, you can use Windows paths, just make sure to use \\ as a separator:
-
-logdir = C:\\Users\\username\\AppData\\myapp
-key = <YOUR LOGDNA INGESTION KEY>
 
 
 
