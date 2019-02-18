@@ -55,7 +55,7 @@ Complete the following steps to export logs programmatically:
 
     **Note:** You must have **manager** role for the IBM Log Analysis with LogDNA instance or service to complete this step. For more information, see [Granting permissions to manage logs and configure alerts in LogDNA](/docs/services/Log-Analysis-with-LogDNA/work_iam.html#admin_user_logdna).
 
-    1. Launch the IBM Log Analysis with LogDNA web UI. For more information, see [Launching the IBM Log Analysis with LogDNA Web UI](/docs/services/Log-Analysis-with-LogDNA/view_logs.html#step2).
+    1. Launch the IBM Log Analysis with LogDNA web UI. For more information, see [Launching the IBM Log Analysis with LogDNA Web UI](/docs/services/Log-Analysis-with-LogDNA/view_logs.html#view_logs_step2).
 
     2. Select the **Configuration** icon ![Configuration icon](images/admin.png). Then, select **Organization**. 
 
@@ -98,7 +98,7 @@ The following table lists the query parameters that you can set:
 | hosts     | string     | optional   | Comma separated list of hosts. |
 | apps      | string     | optional   | Comma separated list of applications. |
 | levels    | string     | optional   | Comma separated list of log levels. |
-| query     | string     | optional   | Search query. For more information, see [Search Logs](/docs/services/Log-Analysis-with-LogDNA/view_logs.html#step6). |
+| query     | string     | optional   | Search query. For more information, see [Search Logs](/docs/services/Log-Analysis-with-LogDNA/view_logs.html#view_logs_step6). |
 | prefer    | string     | optional   | Defines the log lines that you want to export. Valid values are `head`, first log lines, and `tail`, last log lines. If not specified, defaults to tail.  |
 | email     | string     | optional   | Specifies the email with the downloadable link of your export. By default, the log lines are streamed.|
 | emailSubject | string     | optional   | Use to set the subject of the email. </br>Use `%20` to represent a space. For example: Export%20logs |

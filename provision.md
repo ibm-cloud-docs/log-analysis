@@ -53,7 +53,7 @@ To provision an instance from the Observability dashboard in the {{site.data.key
 
     By default, the **Lite** plan is set.
 
-    For more information about other service plans, see [Pricing plans](/docs/services/Log-Analysis-with-LogDNA/overview.html#pricing_plans).
+    For more information about other service plans, see [Pricing plans](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-about#overview_pricing_plans).
 
 7. Click **Create**.
 
@@ -92,7 +92,7 @@ To provision an instance of {{site.data.keyword.la_full_notm}} through the {{sit
 
     By default, the **Lite** plan is set.
 
-    For more information about other service plans, see [Pricing plans](/docs/services/Log-Analysis-with-LogDNA/overview.html#pricing_plans).
+    For more information about other service plans, see [Pricing plans](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-about#overview_pricing_plans).
 
 8. Click **Create**.
 
@@ -109,7 +109,7 @@ To provision an instance of {{site.data.keyword.la_full_notm}} through the comma
 
 1. [Pre-requisite] Install the {{site.data.keyword.Bluemix_notm}} CLI.
 
-   For more information, see [Installing the {{site.data.keyword.Bluemix_notm}} CLI](/docs/cli/index.html#overview).
+   For more information, see [Installing the {{site.data.keyword.Bluemix_notm}} CLI](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-about#about).
 
    If the CLI is installed, continue with the next step.
 

@@ -47,9 +47,9 @@ In this tutorial, you will learn how to configure cluster-level logging.
 
 Work in the US-South region. The {{site.data.keyword.la_full_notm}} is currently available in the US South region. **Note:** You can send data from a Kubernetes cluster that is located in the same region or in a different region. 
 
-Read about {{site.data.keyword.la_full_notm}}. For more information, see [About](/docs/services/Log-Analysis-with-LogDNA/overview.html#about).
+Read about {{site.data.keyword.la_full_notm}}. For more information, see [About](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-about#about).
 
-Use a user ID that is a member or an owner of an {{site.data.keyword.Bluemix_notm}} account. To get an {{site.data.keyword.Bluemix_notm}} user ID, go to: [Registration ![External link icon](../../../icons/launch-glyph.svg "External link icon")](http://cloud.ibm.com /registration/){:new_window}.
+Use a user ID that is a member or an owner of an {{site.data.keyword.Bluemix_notm}} account. To get an {{site.data.keyword.Bluemix_notm}} user ID, go to: [Registration ![External link icon](../../../icons/launch-glyph.svg "External link icon")](http://cloud.ibm.com/registration/){:new_window}.
 
 Your {{site.data.keyword.IBM_notm}}ID must have assigned IAM policies for each of the following resources: 
 
@@ -60,11 +60,9 @@ Your {{site.data.keyword.IBM_notm}}ID must have assigned IAM policies for each o
 | Kubernetes cluster instance          |  Resource                 | Editor  | us-south  | This policy is required to configure the secret and the LogDNA agent in the Kubernetes cluster. |
 {: caption="Table 1. List of IAM policies required to complete the tutorial" caption-side="top"} 
 
-For more information about the {{site.data.keyword.containerlong}} IAM roles, see [User access permissions](/docs/containers/cs_access_reference.html#understanding).
+For more information about the {{site.data.keyword.containerlong}} IAM roles, see [User access permissions](/docs/containers?topic=containers-access_reference#access_reference).
 
-Install the {{site.data.keyword.Bluemix_notm}} CLI. For more information, see [Installing the {{site.data.keyword.Bluemix_notm}} CLI](/docs/cli/index.html#overview).
-
-Install the Kubernetes CLI plug-in. For more information, see [Installing the CLI](/docs/containers/cs_cli_install.html#cs_cli_install).
+Install the {{site.data.keyword.Bluemix_notm}} CLI and the Kubernetes CLI plug-in. For more information, see [Installing the {{site.data.keyword.Bluemix_notm}} CLI](/docs/cli?topic=cloud-cli-ibmcloud-cli#ibmcloud-cli).
 
 
 ## Objectives
@@ -75,52 +73,6 @@ In this tutorial, you configure logging with LogDNA for your {{site.data.keyword
 - Provision an {{site.data.keyword.la_full_notm}}. 
 - Configure the LogDNA agent in your cluster to start sending logs to LogDNA. 
 - Open the LogDNA dashboard to find your logs. 
-
-
-## Prerequisites
-{: #kube_prerequisites}
-
-To complete this tutorial, you must complete the following tasks: 
-
-1. [Create an {{site.data.keyword.containerlong_notm}} cluster with a Kubernetes version of 1.10](/docs/containers/cs_clusters.html#clusters_ui) or higher in the US South location. {{site.data.keyword.la_full_notm}} is supported in US South only. To configure logging for your cluster, the cluster and the {{site.data.keyword.la_full_notm}} service must be in the same location. 
-2. Make sure that your user is assigned the following IAM permissions. 
-   <table>
-   <caption>Table 1. List of IAM policies required to complete the tutorial</caption>
-   <thead>
-   <th>Resource</th>
-   <th>Scope of the access policy </th>
-   <th>Role</th>
-   <th>Region</th>
-   <th>Information</th>
-   </thead>
-   <tbody>
-   <tr>
-   <td>Resource group <strong>Default</strong></td>
-   <td>Resource group</td>
-   <td>Viewer</td>
-   <td>us-south</td>
-   <td>This policy is required to allow the user to see service instances in the <strong>Default</strong> resource group.</td>
-   </tr>
-   <tr>
-   <td>{{site.data.keyword.la_full_notm}} service</td>
-   <td>Resource group</td>
-   <td>Editor</td>
-   <td>us-south</td>
-   <td>This policy is required to allow the user to provision and administer the {{site.data.keyword.la_full_notm}} service in the <strong>Default</strong> resource group.</td>
-   </tr>
-   <tr>
-   <td>{{site.data.keyword.containerlong_notm}}</td>
-   <td>Resource</td>
-   <td>Editor</td>
-   <td>us-south</td>
-   <td>This policy is required to configure the secret and the LogDNA agent in the Kubernetes cluster.</td>
-   </tr>
-   </tbody>
-   </table>
-
-   For more information about {{site.data.keyword.containerlong_notm}} IAM roles, see [User access permissions](/docs/containers/cs_access_reference.html#understanding).
-   
-3. [Install the {{site.data.keyword.Bluemix_notm}} CLI and the {{site.data.keyword.containerlong_notm}} CLI plug-in](/docs/cli/index.html#overview). 
 
 
 ## Step1: Provision an {{site.data.keyword.la_full_notm}} service instance
@@ -142,11 +94,11 @@ To provision a service instance of {{site.data.keyword.la_full_notm}} through th
 
 7. Select the resource group that your cluster is in. By default, the **Default** resource group is set for you. 
 
-8. Choose a service plan for your service instance. By default, the **Lite** plan is selected for you. For more information about other service plans, see [Pricing plans](/docs/services/Log-Analysis-with-LogDNA/overview.html#pricing_plans).
+8. Choose a service plan for your service instance. By default, the **Lite** plan is selected for you. For more information about other service plans, see [Pricing plans](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-about#overview_pricing_plans).
 
 9. To provision the {{site.data.keyword.la_full_notm}} service in the {{site.data.keyword.Bluemix_notm}} resource group where you are logged in, click **Create**. The **Observability** dashboard opens and shows the details for your service. 
 
-To provision an instance through the CLI, see [Provisioning an instance through the {{site.data.keyword.Bluemix_notm}} CLI](/docs/services/Log-Analysis-with-LogDNA/provision.html#provision_cli).
+To provision an instance through the CLI, see [Provisioning an instance through the {{site.data.keyword.Bluemix_notm}} CLI](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-provision#provision_cli).
 {: tip}
 
 
@@ -213,14 +165,14 @@ To launch the LogDNA dashboard through the {{site.data.keyword.Bluemix_notm}} co
 
 3. Select **Logging**. The list of {{site.data.keyword.la_full_notm}} service instances that are available on {{site.data.keyword.Bluemix_notm}} is displayed.
 
-4. Select one instance and click **View LogDNA**. The LogDNA dashboard opens. **Note:** With the **Free** service plan, you can tail your latest logs only. For more information, see [Viewing logs](/docs/services/Log-Analysis-with-LogDNA/view_logs.html#view_logs).
+4. Select one instance and click **View LogDNA**. The LogDNA dashboard opens. **Note:** With the **Free** service plan, you can tail your latest logs only. For more information, see [Viewing logs](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-view_logs#view_logs).
 
 ## Next steps
 {: #kube_next_steps}
 
-- [Filter logs](/docs/services/Log-Analysis-with-LogDNA/view_logs.html#step5)
-- [Search logs](/docs/services/Log-Analysis-with-LogDNA/view_logs.html#step6)
-- [Define views](/docs/services/Log-Analysis-with-LogDNA/view_logs.html#step7)
+- [Filter logs](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-view_logs#view_logs_step5)
+- [Search logs](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-view_logs#view_logs_step6)
+- [Define views](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-view_logs#view_logs_step7)
 - [Configure alerts](https://docs.logdna.com/docs/alerts). 
 
 **Note:** Some of these features require a plan upgrade.

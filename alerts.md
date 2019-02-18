@@ -77,7 +77,7 @@ Complete the following steps to attach a preset to a view:
 
     Apply a timeframe, filters and search criteria to filter the log lines that are displayed through the view. 
 
-    For more information, see [Creating views](/docs/services/Log-Analysis-with-LogDNA/view_logs.html#step7).
+    For more information, see [Creating views](/docs/services/Log-Analysis-with-LogDNA/view_logs.html#view_logs_step7).
 
 3. Click the view name. Then, select **Attach an alert**.
 
@@ -98,7 +98,7 @@ Complete the following steps to attach an alert to a view:
 
     Apply a timeframe, filters and search criteria to filter the log lines that are displayed through the view. 
 
-    For more information, see [Creating views](/docs/services/Log-Analysis-with-LogDNA/view_logs.html#step7).
+    For more information, see [Creating views](/docs/services/Log-Analysis-with-LogDNA/view_logs.html#view_logs_step7).
 
 3. Click the view name. Then, select **Attach an alert**.
 
