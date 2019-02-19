@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years:  2018
-lastupdated: "2018-11-02"
+  years:  2018, 2019
+lastupdated: "2019-02-18"
 
 ---
 
@@ -42,7 +42,7 @@ A bell icon is displayed with the view to indicate that this view has an alert a
 
 
 
-## Configuring a preset (alert template)
+## Configure a preset (alert template)
 {: #config_preset}
 
 Complete the following steps to configure a preset:
@@ -67,7 +67,7 @@ Complete the following steps to configure a preset:
 
 
 
-## Configuring an alert by using a preset
+## Configure an alert by using a preset
 {: #config_alert_preset}
 
 Complete the following steps to attach a preset to a view:
@@ -77,7 +77,7 @@ Complete the following steps to attach a preset to a view:
 
     Apply a timeframe, filters and search criteria to filter the log lines that are displayed through the view. 
 
-    For more information, see [Creating views](/docs/services/Log-Analysis-with-LogDNA/view_logs.html#step7).
+    For more information, see [Creating views](/docs/services/Log-Analysis-with-LogDNA/view_logs.html#view_logs_step7).
 
 3. Click the view name. Then, select **Attach an alert**.
 
@@ -88,7 +88,7 @@ Complete the following steps to attach a preset to a view:
 
 
 
-## Configuring a view-specific alert
+## Configure a view-specific alert
 {: #config_alert_view}
 
 Complete the following steps to attach an alert to a view:
@@ -98,7 +98,7 @@ Complete the following steps to attach an alert to a view:
 
     Apply a timeframe, filters and search criteria to filter the log lines that are displayed through the view. 
 
-    For more information, see [Creating views](/docs/services/Log-Analysis-with-LogDNA/view_logs.html#step7).
+    For more information, see [Creating views](/docs/services/Log-Analysis-with-LogDNA/view_logs.html#view_logs_step7).
 
 3. Click the view name. Then, select **Attach an alert**.
 
@@ -122,7 +122,7 @@ Complete the following steps to attach an alert to a view:
 
 
 
-## Deleting a preset (alert template)
+## Delete a preset (alert template)
 {: #delete_preset}
 
 Complete the following steps to delete a preset:
@@ -133,16 +133,16 @@ Complete the following steps to delete a preset:
 4. Select **Delete**.
 5. Confirm that you want to delete the preset. Click **Delete**.
 
-## Dettaching a view-specific alert from a view
+## Detach a view-specific alert from a view
 {: #delete_alert}
 
-Complete the following steps to delete a preset:
+Complete the following steps to detach a preset:
 
 1. Select the **Configuration** icon ![Configuration icon](images/admin.png "Admin icon").
 2. Select **Alerts**.
 3. Hover the mouse over the *edit* button of the alert that you want to delete. The *delete* option shows.
-4. Select **Dettach**.
-5. Confirm that you want to delete the alert. Click **Dettach**.
+4. Select **Detach**.
+5. Confirm that you want to delete the alert. Click **Detach**.
 
 
 
@@ -160,7 +160,7 @@ The following table lists the notification channels that you can configure when 
 | OpsGenie          | You can configure the API key to connect to your OpsGenie system. |
 | Datadog           | You can configure the API key to connect to your Datadog system. |
 | AppOptics/Librato | You can configure the API key to connect to your AppOptics/Librato system. |
-| VictorOps         | You can configure the URL to notify when an alert is triggeres, the routing key, and an alert type. Valid alert types are: info, warning, critical |
+| VictorOps         | You can configure the URL to notify when an alert is triggered, the routing key, and an alert type. Valid alert types are: `info`, `warning`, `critical` |
 {: caption="Notification channels" caption-side="top"} 
 
 

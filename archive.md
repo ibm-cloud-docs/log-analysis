@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years:  2018
-lastupdated: "2018-11-02"
+  years:  2018, 2019
+lastupdated: "2019-02-18"
 
 ---
 
@@ -26,11 +26,11 @@ To configure archiving, you must have an IAM policy with platform role **Viewer*
 
 You archive logs from an IBM Log Analysis with LogDNA instance into a bucket in an {{site.data.keyword.cos_full_notm}} (COS) instance. Each IBM Log Analysis with LogDNA instance has its own archiving configuration. 
 
-Logs are automaticaly archived once a day in a compressed format **(.json.gz)**. Each line preserves its metadata.
+Logs are automatically archived once a day in a compressed format **(.json.gz)**. Each line preserves its metadata.
 
 Logs are archived within 24-48 hours after you save the configuration. 
 
-The {{site.data.keyword.cos_full_notm}} instance is provisioned withing the context of a resource group. The IBM Log Analysis with LogDNA instance is also provisioned within the context of a resource group. Both instances can be grouped under the same resource group or in different ones. 
+The {{site.data.keyword.cos_full_notm}} instance is provisioned within the context of a resource group. The IBM Log Analysis with LogDNA instance is also provisioned within the context of a resource group. Both instances can be grouped under the same resource group or in different ones. 
 
 IBM Log Analysis with LogDNA uses a service ID to communicate with the {{site.data.keyword.cos_full_notm}} service.
 
@@ -46,7 +46,7 @@ Complete the following steps to archive an IBM Log Analysis with LogDNA instance
 
 
 ## Step 1: Grant IAM policies to a user to work with IBM Cloud Object Storage
-{: #step1}
+{: #archiving_step1}
 
 **Note:** This step must be completed by the account owner or an administrator of the {{site.data.keyword.cos_full_notm}} service on the {{site.data.keyword.Bluemix_notm}}.
 
@@ -56,7 +56,7 @@ There are different ways in which you can grant a user permissions to become an 
 
 * As administrator of the service in the account, the user must have an IAM policy for the {{site.data.keyword.cos_full_notm}} service with the platform role *Administrator*. You must assign this user access to an individual resource in the account. 
 
-* As administrator of the service withing the context of a resource group, the user must have an IAM policy for the {{site.data.keyword.cos_full_notm}} service with the platform role *Administrator* within the context of the resource group. 
+* As administrator of the service within the context of a resource group, the user must have an IAM policy for the {{site.data.keyword.cos_full_notm}} service with the platform role *Administrator* within the context of the resource group. 
 
 
 The following table lists the roles that a user can have to complete the actions listed for the {{site.data.keyword.cos_full_notm}} service:
@@ -88,7 +88,7 @@ Complete the following steps to assign a user administrator role to the {{site.d
 
 
 ## Step 2: Provision an instance of IBM Cloud Object Storage
-{: #step2}
+{: #archiving_step2}
 
 **Note:** This step must be completed by an editor, or administrator of the {{site.data.keyword.cos_full_notm}} service on the {{site.data.keyword.Bluemix_notm}}. 
 
@@ -96,7 +96,7 @@ Complete the following steps to provision an {{site.data.keyword.cos_full_notm}}
 
 1. Log in to your {{site.data.keyword.Bluemix_notm}} account.
 
-    The {{site.data.keyword.Bluemix_notm}} dashboard can be found at: [http://bluemix.net ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://bluemix.net){:new_window}.
+    The {{site.data.keyword.Bluemix_notm}} dashboard can be found at: [http://cloud.ibm.com ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://cloud.ibm.com){:new_window}.
 
 	After you log in with your user ID and password, the {{site.data.keyword.Bluemix_notm}} UI opens.
 
@@ -121,7 +121,7 @@ Complete the following steps to provision an {{site.data.keyword.cos_full_notm}}
 
 
 ## Step 3: Create a bucket
-{: #step3}
+{: #archiving_step3}
 
 Buckets are a way to organize your data in an {{site.data.keyword.cos_full_notm}} instance. 
 
@@ -141,7 +141,7 @@ Complete the following steps to create a bucket:
 
 1. Log in to your {{site.data.keyword.Bluemix_notm}} account.
 
-    The {{site.data.keyword.Bluemix_notm}} dashboard can be found at: [http://bluemix.net ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://bluemix.net){:new_window}.
+    The {{site.data.keyword.Bluemix_notm}} dashboard can be found at: [http://cloud.ibm.com ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://cloud.ibm.com){:new_window}.
 
 	After you log in with your user ID and password, the {{site.data.keyword.Bluemix_notm}} Dashboard opens.
 
@@ -167,22 +167,22 @@ Complete the following steps to create a bucket:
     
     A Single Data Center will only distribute data across devices within a single site.
 
-    For more information, see [Select regions and endpoints](/docs/services/cloud-object-storage/basics/endpoints.html#select-regions-and-endpoints).
+    For more information, see [Select regions and endpoints](/docs/services/cloud-object-storage?topic=cloud-object-storage-endpoints#endpoints).
 
 6. Choose the type of *Storage class*.
 
-    You can create buckets with different storage classes. Choose the storage class for your bucket based on your requirements to retrieve data. For more information, see [Use storage classes](/docs/services/cloud-object-storage/basics/classes.html#use-storage-classes).
+    You can create buckets with different storage classes. Choose the storage class for your bucket based on your requirements to retrieve data. For more information, see [Use storage classes](/docs/services/cloud-object-storage?topic=cloud-object-storage-use-storage-classes#use-storage-classes).
 
-    **Note:** It is not possible to change the storage class of a bucket once the bucket is created. If objects need to be reclassified, it is necessary to move the data to another bucket with the desired storage class.
+    **Note:** It is not possible to change the storage class of a bucket once the bucket is created. If objects need to be reclassified, it is necessary to move the data to another bucket with the wanted storage class.
 
 7. Optionally, add a Key Protect Key to encrypt data at rest.
 
-    All objects are encrypted by default using randomly generated keys and an all-or-nothing-transform. While this default encryption model provides at-rest security, some workloads need to be in possession of the encryption keys used. For more information, see [Manage encryption](/docs/services/cloud-object-storage/basics/encryption.html#manage-encryption).
+    All objects are encrypted by default using randomly generated keys and an all-or-nothing-transform. While this default encryption model provides at-rest security, some workloads need to be in possession of the encryption keys used. For more information, see [Manage encryption](/docs/services/cloud-object-storage?topic=cloud-object-storage-manage-encryption#manage-encryption).
 
 
 
 ## Step 4: Create a service ID for the IBM Cloud Object Storage instance
-{: #step4}
+{: #archiving_step4}
 
 A service ID identifies a service similar to how a user ID identifies a user. Service IDs are not tied to a specific user. If the user that creates the service ID leaves your organization and is deleted from the account, the service ID remains.
 
@@ -195,7 +195,7 @@ Complete the following steps to create a service ID with writing permissions for
 
 1. Log in to your {{site.data.keyword.Bluemix_notm}} account.
 
-    The {{site.data.keyword.Bluemix_notm}} dashboard can be found at: [http://bluemix.net ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://bluemix.net){:new_window}.
+    The {{site.data.keyword.Bluemix_notm}} dashboard can be found at: [http://cloud.ibm.com ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://cloud.ibm.com){:new_window}.
 
 	After you log in with your user ID and password, the {{site.data.keyword.Bluemix_notm}} Dashboard opens.
 
@@ -219,7 +219,7 @@ For the service ID that you just created, click **View credentials**. You can se
 
 
 ## Step 5: Restrict the service ID to only have writing permissions for the bucket
-{: #step5}
+{: #archiving_step5}
 
 If you want to restrict the service ID to only have writing permissions for a bucket, complete the following steps:
 
@@ -235,7 +235,7 @@ If you want to restrict the service ID to only have writing permissions for a bu
 
 6. In the *Resource type* field enter **bucket**.
 
-7. In the *Reasource ID* field enter the name of your bucket.
+7. In the *Resource ID* field enter the name of your bucket.
 
 8. Click **Save**.
 
@@ -243,15 +243,15 @@ If you want to restrict the service ID to only have writing permissions for a bu
 
 
 ## Step 6: Select the endpoint
-{: #step6}
+{: #archiving_step6}
 
-An endpoint defines where to look for a bucket. There are different endpoints depending on the region and type of resiliency. For more information, see [Select regions and endpoints](/docs/services/cloud-object-storage/basics/endpoints.html#select-regions-and-endpoints).
+An endpoint defines where to look for a bucket. There are different endpoints depending on the region and type of resiliency. For more information, see [Select regions and endpoints](/docs/services/cloud-object-storage?topic=cloud-object-storage-endpoints#endpoints).
 
 Complete the following steps to obtain the endpoint for your bucket:
 
 1. Log in to your {{site.data.keyword.Bluemix_notm}} account.
 
-    The {{site.data.keyword.Bluemix_notm}} dashboard can be found at: [http://bluemix.net ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://bluemix.net){:new_window}.
+    The {{site.data.keyword.Bluemix_notm}} dashboard can be found at: [http://cloud.ibm.com ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://cloud.ibm.com){:new_window}.
 
 	After you log in with your user ID and password, the {{site.data.keyword.Bluemix_notm}} Dashboard opens.
 
@@ -266,12 +266,12 @@ Complete the following steps to obtain the endpoint for your bucket:
 
 
 ## Step 7: Grant IAM policies to a user to archive logs
-{: #step7}
+{: #archiving_step7}
 
 The following table lists the policies that a user must have to be able to configure archiving of logs from IBM Log Analysis with LogDNA Web UI into a bucket in a {{site.data.keyword.cos_full_notm}} instance:
 
-| Service                        | Role                      | Permission granted                                                                            | 
-|--------------------------------|---------------------------|-----------------------------------------------------------------------------------------------|       
+| Service                        | Role                      | Permission granted                  | 
+|--------------------------------|---------------------------|-------------------------------------|  
 | `IBM Log Analysis with LogDNA` | Platform role: Viewer     | Allows the user to view the list of service instances in the Observability Logging dashboard. |
 | `IBM Log Analysis with LogDNA` | Service role: Manager      | Allows the user to launch the Web UI and view logs in the Web UI.                             |
 {: caption="Table 2. IAM policies" caption-side="top"} 
@@ -298,12 +298,12 @@ Complete the following steps to assign a user permissions to archive logs:
 
 
 ## Step 8: Configure archiving for your IBM Log Analysis with LogDNA instance
-{: #step8}
+{: #archiving_step8}
 
 
 Complete the following steps to configure archiving of your IBM Log Analysis with LogDNA instance into a COS bucket:
 
-1. Launch the IBM Log Analysis with LogDNA web UI. For more information, see [Launching the IBM Log Analysis with LogDNA Web UI](/docs/services/Log-Analysis-with-LogDNA/view_logs.html#step2).
+1. Launch the IBM Log Analysis with LogDNA web UI. For more information, see [Launching the IBM Log Analysis with LogDNA Web UI](/docs/services/Log-Analysis-with-LogDNA/view_logs.html#view_logs_step2).
 
 2. Select the **Configuration** icon. Then select **Archiving**. 
 

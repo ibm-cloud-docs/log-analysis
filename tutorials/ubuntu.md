@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2018
-lastupdated: "2018-11-15"
+  years: 2018, 2019
+lastupdated: "2019-02-18"
 
 ---
 
@@ -37,13 +37,13 @@ On the {{site.data.keyword.Bluemix_notm}}, to configure an Ubuntu server to forw
 In this tutorial, you will learn how to configure an Ubuntu server to forward logs to an IBM Log Analysis with LogDNA instance.
 
 ## Before you begin
-{: #prereqs}
+{: #ubuntu_prereqs}
 
-Read about IBM Log Analysis with LogDNA. For more information, see [About LogDNA](/docs/services/Log-Analysis-with-LogDNA/overview.html#about).
+Read about IBM Log Analysis with LogDNA. For more information, see [About LogDNA](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-about#about).
 
 Work in the US-South region. The {{site.data.keyword.la_full_notm}} is currently available in the US South region. **Note:** You can send data from an Ubuntu server that is located in the same region or in a different region. 
 
-Use a user ID that is a member or an owner of an {{site.data.keyword.Bluemix_notm}} account. To get an {{site.data.keyword.Bluemix_notm}} user ID, go to: [Registration ![External link icon](../../../icons/launch-glyph.svg "External link icon")](https://console.bluemix.net/registration/){:new_window}.
+Use a user ID that is a member or an owner of an {{site.data.keyword.Bluemix_notm}} account. To get an {{site.data.keyword.Bluemix_notm}} user ID, go to: [Registration ![External link icon](../../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com/registration/){:new_window}.
 
 Your {{site.data.keyword.IBM_notm}}ID must have assigned IAM policies for each of the following resources: 
 
@@ -58,13 +58,13 @@ Install the {{site.data.keyword.Bluemix_notm}} CLI. For more information, see [I
 
 
 ## Step1: Provision an IBM Log Analysis with LogDNA instance
-{: #step1}
+{: #ubuntu_step1}
 
 To provision an instance of IBM Log Analysis with LogDNA through the {{site.data.keyword.Bluemix_notm}} UI, complete the following steps:
 
 1. Log in to your {{site.data.keyword.Bluemix_notm}} account.
 
-    The {{site.data.keyword.Bluemix_notm}} dashboard can be found at: [http://bluemix.net ![External link icon](../../../icons/launch-glyph.svg "External link icon")](http://bluemix.net){:new_window}.
+    The {{site.data.keyword.Bluemix_notm}} dashboard can be found at: [http://cloud.ibm.com ![External link icon](../../../icons/launch-glyph.svg "External link icon")](http://cloud.ibm.com){:new_window}.
 
 	After you log in with your user ID and password, the {{site.data.keyword.Bluemix_notm}} UI opens.
 
@@ -84,18 +84,18 @@ To provision an instance of IBM Log Analysis with LogDNA through the {{site.data
 
     By default, the **Lite** plan is set.
 
-    For more information about other service plans, see [Pricing plans](/docs/services/Log-Analysis-with-LogDNA/overview.html#pricing_plans).
+    For more information about other service plans, see [Pricing plans](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-about#overview_pricing_plans).
 
 8. To provision the IBM Log Analysis with LogDNA service in the {{site.data.keyword.Bluemix_notm}} resource group where you are logged in, click **Create**.
 
 After you provision an instance, the IBM Log Analysis with LogDNA dashboard opens. 
 
 
-**Note:** To provision an instance of LogDNA through the CLI, see [Provisioning LogDNA through the {{site.data.keyword.Bluemix_notm}} CLI](/docs/services/Log-Analysis-with-LogDNA/provision.html#provision_cli).
+**Note:** To provision an instance of LogDNA through the CLI, see [Provisioning LogDNA through the {{site.data.keyword.Bluemix_notm}} CLI](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-provision#provision_cli).
 
 
 ## Step2: Configure your Ubuntu server to send logs to your instance
-{: #step2}
+{: #ubuntu_step2}
 
 To configure your Ubuntu server to send logs to your IBM Log Analysis with LogDNA instance, you must install a `logdna-agent`. The LogDNA agent reads log files from */var/log*, and forwards the log data to your LogDNA instance.
 
@@ -174,13 +174,13 @@ To configure your Ubuntu server to forward logs to your LogDNA instance, complet
 
 
 ## Step 3: Launch the LogDNA Web UI
-{: #step3}
+{: #ubuntu_step3}
 
 To launch IBM the Log Analysis with LogDNA dashboard through the {{site.data.keyword.Bluemix_notm}} UI, complete the following steps:
 
 1. Log in to your {{site.data.keyword.Bluemix_notm}} account.
 
-    The {{site.data.keyword.Bluemix_notm}} dashboard can be found at: [http://bluemix.net ![External link icon](../../../icons/launch-glyph.svg "External link icon")](http://bluemix.net){:new_window}.
+    The {{site.data.keyword.Bluemix_notm}} dashboard can be found at: [http://cloud.ibm.com ![External link icon](../../../icons/launch-glyph.svg "External link icon")](http://cloud.ibm.com){:new_window}.
 
 	After you log in with your user ID and password, the {{site.data.keyword.Bluemix_notm}} Dashboard opens.
 
@@ -196,19 +196,19 @@ To launch IBM the Log Analysis with LogDNA dashboard through the {{site.data.key
 
 
 ## Step 4: View your logs
-{: step4}
+{: #ubuntu_step4}
 
 From the LogDNA Web UI, you can view your logs as they pass through the system. You view logs by using log tailing. 
 
 **Note:** With the **Free** service plan, you can only tail your latest logs.
 
-For more information, see [Viewing logs](/docs/services/Log-Analysis-with-LogDNA/view_logs.html#view_logs).
+For more information, see [Viewing logs](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-view_logs#view_logs).
 
 
 ## Next steps
-{: #next_steps}
+{: #ubuntu_next_steps}
 
-[Filter logs](/docs/services/Log-Analysis-with-LogDNA/view_logs.html#step5), [search logs](/docs/services/Log-Analysis-with-LogDNA/view_logs.html#step6), [define views](/docs/services/Log-Analysis-with-LogDNA/view_logs.html#step7), and [configure alerts](https://docs.logdna.com/docs/alerts). 
+[Filter logs](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-view_logs#view_logs_step5), [search logs](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-view_logs#view_logs_step6), [define views](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-view_logs#view_logs_step7), and [configure alerts](https://docs.logdna.com/docs/alerts). 
 
 **Note:** To use any of these features, you must upgrade the IBM Log Analysis with LogDNA plan to a paid plan.
 

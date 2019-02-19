@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years:  2018
-lastupdated: "2018-11-15"
+  years:  2018, 2019
+lastupdated: "2019-02-18"
 
 ---
 
@@ -25,13 +25,13 @@ You can send log data to an IBM Log Analysis with LogDNA instance.
 Complete the following steps to send logs programmatically:
 
 ## Step 1: Get the ingestion API key 
-{: #step1}
+{: #ingest_step1}
 
-**Note:** You must have **manager** role for the IBM Log Analysis with LogDNA instance or service to complete this step. For more information, see [Granting permissions to manage logs and configure alerts in LogDNA](/docs/services/Log-Analysis-with-LogDNA/work_iam.html#admin_user_logdna).
+**Note:** You must have **manager** role for the IBM Log Analysis with LogDNA instance or service to complete this step. For more information, see [Granting permissions to manage logs and configure alerts in LogDNA](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-work_iam#admin_user_logdna).
 
 Complete the following steps to get the ingestion key:
     
-1. Launch the IBM Log Analysis with LogDNA web UI. For more information, see [Launching the IBM Log Analysis with LogDNA Web UI](/docs/services/Log-Analysis-with-LogDNA/view_logs.html#step2).
+1. Launch the IBM Log Analysis with LogDNA web UI. For more information, see [Launching the IBM Log Analysis with LogDNA Web UI](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-view_logs#view_logs_step2).
 
 2. Select the **Configuration** icon ![Configuration icon](images/admin.png). Then, select **Organization**. 
 
@@ -45,7 +45,7 @@ Complete the following steps to get the ingestion key:
 
 
 ## Step 2: Send logs
-{: #step2}
+{: #ingest_step2}
 
 To send logs, run the following cURL command:
 
@@ -114,7 +114,7 @@ For example, the following sample shows the JSON for a log line that you want to
 
 
 ## Example
-{: #example}
+{: #ingest_example}
 
 The following sample shows the cURL command to send one log line to an instance of the IBM Log Analysis with LogDNA service: 
 

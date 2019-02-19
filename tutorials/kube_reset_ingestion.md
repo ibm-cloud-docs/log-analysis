@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2018
-lastupdated: "2018-11-02"
+  years: 2018, 2019
+lastupdated: "2019-02-18"
 
 ---
 
@@ -16,20 +16,20 @@ lastupdated: "2018-11-02"
 {:download: .download}
 
 
-# Reseting the ingestion key used by a Kubernetes cluster to forward logs to an IBM Log Analysis with LogDNA instance
+# Resetting the ingestion key used by a Kubernetes cluster to forward logs to an IBM Log Analysis with LogDNA instance
 {: #kube_reset}
 
 If the ingestion key that you use to forward logs from a cluster to an IBM Log Analysis with LogDNA instance in the {{site.data.keyword.Bluemix}} is compromised, you must reset the key and update the Kubernetes cluster configuration to use the new ingestion key. 
 {:shortdesc}
 
 ## Before you begin
-{: #prereqs}
+{: #kube_reset_prereqs}
 
 Work in the US-South region. Both resources, the IBM Log Analysis with LogDNA instance and the Kubernetes cluster must run in the same account.
 
 The IBM Log Analysis with LogDNA instance is provisioned in the **Default** resource group.
 
-Read about IBM Log Analysis with LogDNA. For more information, see [About LogDNA](/docs/services/Log-Analysis-with-LogDNA/overview.html#about).
+Read about IBM Log Analysis with LogDNA. For more information, see [About LogDNA](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-about#about).
 
 To complete the steps in this tutorial, your {{site.data.keyword.IBM_notm}}ID must have assigned IAM policies for each of the following resources: 
 
@@ -40,19 +40,17 @@ To complete the steps in this tutorial, your {{site.data.keyword.IBM_notm}}ID mu
 | Kubernetes cluster instance          |  Resource                  | Editor  | us-south  | This policy is required to delete and configure the secret and the LogDNA agent in the Kubernetes cluster. |
 {: caption="Table 1. List of IAM policies required to complete the tutorial" caption-side="top"} 
 
-For more information about the {{site.data.keyword.containerlong}} IAM roles, see [User access permissions](/docs/containers/cs_access_reference.html#understanding).
+For more information about the {{site.data.keyword.containerlong}} IAM roles, see [User access permissions](/docs/containers?topic=containers-access_reference#access_reference).
 
-Install the {{site.data.keyword.Bluemix_notm}} CLI. For more information, see [Installing the {{site.data.keyword.Bluemix_notm}} CLI](/docs/cli/index.html#overview).
-
-Install the Kubernetes CLI plugin. For more information, see [Installing the CLI](/docs/containers/cs_cli_install.html#cs_cli_install).
+Install the {{site.data.keyword.Bluemix_notm}} CLI and the Kubernetes CLI plug-in. For more information, see [Installing the {{site.data.keyword.Bluemix_notm}} CLI](/docs/cli?topic=cloud-cli-ibmcloud-cli#ibmcloud-cli).
 
 
 ## Step 1: Reset the ingestion key
-{: #step1}
+{: #kube_reset_step1}
 
 To renew the ingestion key for an IBM Log Analysis with LogDNA instance by using the IBM Log Analysis with LogDNA Web UI, complete the following steps:
 
-1. Launch the IBM Log Analysis with LogDNA web UI. For more information, see [Launching the IBM Log Analysis with LogDNA Web UI](/docs/services/Log-Analysis-with-LogDNA/view_logs.html#step2).
+1. Launch the IBM Log Analysis with LogDNA web UI. For more information, see [Launching the IBM Log Analysis with LogDNA Web UI](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-view_logs#view_logs_step2).
 
 2. Select the **Configuration** icon. Then select **Organization**. 
 
@@ -68,7 +66,7 @@ To renew the ingestion key for an IBM Log Analysis with LogDNA instance by using
 
 
 ## Step 2: Remove any configuration in the cluster that uses the old ingestion key
-{: #step2}
+{: #kube_reset_step2}
 
 Complete the following steps:
 
@@ -121,7 +119,7 @@ Complete the following steps:
 
 
 ## Step 3: Configure your Kubernetes cluster with the new ingestion key
-{: #step3}
+{: #kube_reset_step3}
 
 To configure your Kubernetes cluster to forward logs to your LogDNA instance, complete the following steps from the command line:
 
@@ -180,13 +178,13 @@ To configure your Kubernetes cluster to forward logs to your LogDNA instance, co
 
 
 ## Step 4: Launch the LogDNA Web UI
-{: #step4}
+{: #kube_reset_step4}
 
 To launch IBM the Log Analysis with LogDNA dashboard through the {{site.data.keyword.Bluemix_notm}} UI, complete the following steps:
 
 1. Log in to your {{site.data.keyword.Bluemix_notm}} account.
 
-    The {{site.data.keyword.Bluemix_notm}} dashboard can be found at: [http://bluemix.net ![External link icon](../../../icons/launch-glyph.svg "External link icon")](http://bluemix.net){:new_window}.
+    The {{site.data.keyword.Bluemix_notm}} dashboard can be found at: [http://cloud.ibm.com ![External link icon](../../../icons/launch-glyph.svg "External link icon")](http://cloud.ibm.com){:new_window}.
 
 	After you log in with your user ID and password, the {{site.data.keyword.Bluemix_notm}} Dashboard opens.
 
@@ -202,7 +200,7 @@ To launch IBM the Log Analysis with LogDNA dashboard through the {{site.data.key
 
 
 ## Step 5: View your logs
-{: step5}
+{: #kube_reset_step5}
 
 From the LogDNA Web UI, you can view your logs as they pass through the system. You view logs by using log tailing. 
 
@@ -211,7 +209,7 @@ From the LogDNA Web UI, you can view your logs as they pass through the system. 
 
 
 ## Next steps
-{: #next_steps}
+{: #kube_reset_next_steps}
 
   If you want to [filter cluster logs](https://docs.logdna.com/docs/filters), [search cluster logs](https://docs.logdna.com/docs/search), [define views](https://docs.logdna.com/docs/views), and [configure alerts](https://docs.logdna.com/docs/alerts), you must upgrade the IBM Log Analysis with LogDNA plan to a paid plan.
 

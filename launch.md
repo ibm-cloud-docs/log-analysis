@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2018
-lastupdated: "2018-12-04"
+  years: 2018, 2019
+lastupdated: "2019-01-08"
 
 ---
 
@@ -38,32 +38,32 @@ The following table lists the minimum policies that a user must have to be able 
 For more information on how to configure these policies for a user, see [Granting permissions to a user to view logs](/docs/services/Log-Analysis-with-LogDNA/work_iam.html#user_logdna).
 
 
-## Launching the web UI through the {{site.data.keyword.Bluemix_notm}} UI
-{: #step2}
+## Launching the web UI through the {{site.data.keyword.Cloud_notm}} UI
+{: #launch_step2}
 
-You launch the web UI within the context of an {{site.data.keyword.la_full_notm}} instance, from the {{site.data.keyword.Bluemix_notm}} UI. 
+You launch the web UI within the context of an {{site.data.keyword.la_full_notm}} instance, from the {{site.data.keyword.Cloud_notm}} UI. 
 
 Complete the following steps to launch the web UI:
 
-1. Log in to your {{site.data.keyword.Bluemix_notm}} account.
+1. Log in to your {{site.data.keyword.Cloud_notm}} account.
 
-    The {{site.data.keyword.Bluemix_notm}} dashboard can be found at: [http://bluemix.net ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://bluemix.net){:new_window}.
+    The {{site.data.keyword.Cloud_notm}} dashboard can be found at: [https://cloud.ibm.com ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com){:new_window}.
 
-	After you log in with your user ID and password, the {{site.data.keyword.Bluemix_notm}} Dashboard opens.
+	After you log in with your user ID and password, the {{site.data.keyword.Cloud_notm}} Dashboard opens.
 
 2. In the navigation menu, select **Observability**. 
 
 3. Select **Logging**. 
 
-    The list of instances that are available on {{site.data.keyword.Bluemix_notm}} is displayed.
+    The list of instances that are available on {{site.data.keyword.Cloud_notm}} is displayed.
 
 4. Select one instance. Then, click **View LogDNA**.
 
 The Web UI opens.
 
 
-## Getting the web UI URL from the {{site.data.keyword.Bluemix_notm}}
-{: #get}
+## Getting the web UI URL from the {{site.data.keyword.Cloud_notm}}
+{: #launch_get}
 
 To get the web UI URL, complete the following steps from a terminal:
 
