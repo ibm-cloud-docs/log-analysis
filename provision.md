@@ -49,7 +49,11 @@ To provision an instance from the Observability dashboard in the {{site.data.key
 
     **Note:** If you are not able to select a resource group, check that you have editing permissions on the resource group where you want to provision the instance.
 
-6. Select the **Lite** service plan. 
+6. Enable **IBM service logs**.
+
+    **Note:** Only one instance of the service can collect IBM service logs.
+
+7. Select the **Lite** service plan. 
 
     By default, the **Lite** plan is set.
 
