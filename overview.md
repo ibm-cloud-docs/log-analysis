@@ -14,7 +14,8 @@ lastupdated: "2018-11-15"
 {:codeblock: .codeblock}
 {:tip: .tip}
 {:download: .download}
-
+{:important: .important}
+{:note: .note}
 
 # About
 {: #about}
@@ -118,6 +119,14 @@ The following tables outlines the different features that are included in each s
 ## Regions
 {: #overview_regions}
 
-Logging with IBM Log Analysis with LogDNA is available in the **US South** region only. The **US South** region is also known as the **Dallas** region.
+Logging with IBM Log Analysis with LogDNA is available in the following regions:
 
+| Region                | Location  |
+|-----------------------|-----------|
+| **US South**          | Dallas    |
+| **EU-DE**             | Frankfurt | 
+{: caption="Table 3. List of regions where the service is available" caption-side="top"} 
+
+CVurrently, the **Frankfurt** location is **not** EU-managed.
+{: important}
 
