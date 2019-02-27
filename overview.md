@@ -127,6 +127,6 @@ Logging with IBM Log Analysis with LogDNA is available in the following regions:
 | **EU-DE**             | Frankfurt | 
 {: caption="Table 3. List of regions where the service is available" caption-side="top"} 
 
-CVurrently, the **Frankfurt** location is **not** EU-managed.
+Currently, the **Frankfurt** location is **not** EU-managed.
 {: important}
 
