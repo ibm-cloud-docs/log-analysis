@@ -25,7 +25,7 @@ When you have an additional firewall set up, or you have customized the firewall
 {:shortdesc}
 
 
-## Network traffic for custom firewall configurations in the {{site.data.keyword.cloud_notm}}
+## Network traffic for custom firewall configurations in the US South region
 {: #ips_us-south}
 
 You must allow outgoing traffic on TCP port 443 and TCP port 80 in your firewall. For example, you must open TCP port 443 and TCP port 80 from each worker to the {{site.data.keyword.la_full_notm}} service.
@@ -36,18 +36,18 @@ The following tables list the IP addresses per region that you must configure in
 
 | Region      | Ingestion endpoint                          | Public IP addresses               | Ports   |
 |-------------|---------------------------------------------|-----------------------------------|---------|
-| US South    | logs.us-south.logging.cloud.ibm.com         | 169.48.237.107 </br>169.60.166.45 </br>169.47.224.77  | TCP 443 </br>TCP 80 | 
+| `US South`    | logs.us-south.logging.cloud.ibm.com         | 169.48.237.107 </br>169.60.166.45 </br>169.47.224.77  | TCP 443 </br>TCP 80 | 
 {: caption="Table 1. IP addresses to send logs" caption-side="top"}
 
 
 | Region      | Authentication endpoint                     | Public IP addresses               | Ports   |
 |-------------|---------------------------------------------|-----------------------------------|---------|
-| US South    | api.us-south.logging.cloud.ibm.com          | 169.47.224.74  </br>169.60.166.44 </br>169.48.237.109  | TCP 443 </br>TCP 80 |
+| `US South`    | api.us-south.logging.cloud.ibm.com          | 169.47.224.74  </br>169.60.166.44 </br>169.48.237.109  | TCP 443 </br>TCP 80 |
 {: caption="Table 2. IP addresses used by the LogDNA agent" caption-side="top"}
 
 
 
-## Network traffic for custom firewall configurations in the {{site.data.keyword.cloud_notm}}
+## Network traffic for custom firewall configurations in the EU DE region
 {: #ips_eu-de}
 
 You must allow outgoing traffic on TCP port 443 and TCP port 80 in your firewall. For example, you must open TCP port 443 and TCP port 80 from each worker to the {{site.data.keyword.la_full_notm}} service.
@@ -58,13 +58,13 @@ The following tables list the IP addresses per region that you must configure in
 
 | Region      | Ingestion endpoint                          | Public IP addresses               | Ports   |
 |-------------|---------------------------------------------|-----------------------------------|---------|
-| US South    | logs.eu-de.logging.cloud.ibm.com         | 161.156.89.11 </br>149.81.86.68 </br>158.177.129.36  | TCP 443 </br>TCP 80 | 
+| `EU DE`     | logs.eu-de.logging.cloud.ibm.com         | 161.156.89.11 </br>149.81.86.68 </br>158.177.129.36  | TCP 443 </br>TCP 80 | 
 {: caption="Table 3. IP addresses to send logs" caption-side="top"}
 
 
 | Region      | Authentication endpoint                     | Public IP addresses               | Ports   |
 |-------------|---------------------------------------------|-----------------------------------|---------|
-| US South    | api.eu-de.logging.cloud.ibm.com          | 161.156.89.12  </br>149.81.86.66 </br>158.177.129.34    | TCP 443 </br>TCP 80 |
+| `EU DE`     | api.eu-de.logging.cloud.ibm.com          | 161.156.89.12  </br>149.81.86.66 </br>158.177.129.34    | TCP 443 </br>TCP 80 |
 {: caption="Table 4. IP addresses used by the LogDNA agent" caption-side="top"}
 
 
