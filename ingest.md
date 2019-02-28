@@ -26,7 +26,7 @@ You can send log data to an IBM Log Analysis with LogDNA instance.
 
 Complete the following steps to send logs programmatically:
 
-## Get the ingestion API key 
+## Step 1. Get the ingestion API key 
 {: #ingest_step1}
 
 **Note:** You must have **manager** role for the IBM Log Analysis with LogDNA instance or service to complete this step. For more information, see [Granting permissions to manage logs and configure alerts in LogDNA](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-work_iam#admin_user_logdna).
@@ -46,7 +46,7 @@ Complete the following steps to get the ingestion key:
     A new key is added to the list. Copy the key.
 
 
-## Send logs
+## Step 2. Send logs
 {: #ingest_step2}
 
 To send logs, run the following cURL command:

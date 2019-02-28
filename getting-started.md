@@ -24,8 +24,8 @@ Use IBM Log Analysis with LogDNA to add log management capabilities to your {{si
 {:shortdesc}
 
 
-## Step 1: Before you begin
-{: #index_prereqs}
+## Step 1. Before you begin
+{: #getting-started_prereqs}
 
 * Read about IBM Log Analysis with LogDNA. For more information, see [About IBM Log Analysis with LogDNA](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-about#about).
 * Check the regions where the service is available. For more information, see [Regions](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-about#overview_regions).
@@ -35,8 +35,8 @@ Use IBM Log Analysis with LogDNA to add log management capabilities to your {{si
 
 
 
-## Step 2: Get started
-{: #index_step2}
+## Step 2. Get started
+{: #getting-started_step2}
 
 Choose a cloud resource for which you want to manage logs. Then, configure this log source so that you can monitor its logs through the IBM Log Analysis with LogDNA service. The log source can be located in the same region where you provision an {{site.data.keyword.la_full_notm}} instance or in a different region.
 
@@ -66,15 +66,17 @@ The following table lists cloud resources that you can configure to store and ma
 
 
 
-## Step 3: Upgrade the plan
-{: #index_step3}
+## Step 3. Upgrade the plan
+{: #getting-started_step3}
 
 Enable additional logging features.
 
 Upgrade the IBM Log Analysis with LogDNA service plan to a paid plan to be able to [filter logs](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-view_logs#view_logs_step5), [search logs](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-view_logs#view_logs_step6), [define views](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-view_logs#view_logs_step7), and [configure alerts](https://docs.logdna.com/docs/alerts). . For more information about IBM Log Analysis with LogDNA service plans, see [Pricing plans](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-about#overview_pricing_plans).
 
-## Step 4: Manage user access with IAM
-{: #index_iam}
+## Step 4. Next steps 
+{: #getting-started_iam}
+
+Next, manage user access with IAM.
 
 Identify the IAM policies that a user needs to work with the IBM Log Analysis with LogDNA service.
 
