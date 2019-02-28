@@ -27,7 +27,7 @@ After you provision an instance of the {{site.data.keyword.la_full_notm}} servic
 ## Granting IAM policies to a user to view data 
 {: #step1}
 
-**Note:** You must be an adminsitrator of the {{site.data.keyword.la_full_notm}} service, an administrator of an {{site.data.keyword.la_full_notm}} instance, or have account IAM permissions to grant other users policies.
+**Note:** You must be an administrator of the {{site.data.keyword.la_full_notm}} service, an administrator of an {{site.data.keyword.la_full_notm}} instance, or have account IAM permissions to grant other users policies.
 
 The following table lists the minimum policies that a user must have to be able to launch the IBM Cloud Monitoring with Sysdig web UI, and view data:
 

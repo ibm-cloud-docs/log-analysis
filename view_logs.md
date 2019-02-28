@@ -32,7 +32,7 @@ Complete the following steps to view logs:
 ## Grant IAM policies to a user to view logs
 {: #view_logs_step1}
 
-**Note:** You must be an adminsitrator of the IBM Log Analysis with LogDNA service, an administrator of the IBM Log Analysis with LogDNA instance, or have account IAM permissions to grant other users policies.
+**Note:** You must be an administrator of the IBM Log Analysis with LogDNA service, an administrator of the IBM Log Analysis with LogDNA instance, or have account IAM permissions to grant other users policies.
 
 The following table lists the minimum policies that a user must have to be able to launch the IBM Log Analysis with LogDNA Web UI, and view logs:
 

@@ -94,7 +94,7 @@ To configure your Kubernetes cluster to forward logs to your LogDNA instance, co
 The deployment is successful when you see one or more LogDNA pods.
 * **The number of LogDNA pods equals the number of worker nodes in your cluster.** 
 * All pods must be in a `Running` state.
-* *Stdout* and *stderr* is automaticaly collected and forwarded from all containers. Log data include application logs and worker logs. 
+* *Stdout* and *stderr* is automatically collected and forwarded from all containers. Log data include application logs and worker logs. 
 * By default, the LogDNA agent pod that runs on a worker collects logs from all namespaces on that node, including kube-system logs.
 
 
