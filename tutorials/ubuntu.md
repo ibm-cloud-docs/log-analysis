@@ -18,30 +18,30 @@ lastupdated: "2019-02-28"
 {:note: .note}
 
 
-# Managing Ubuntu logs with IBM Log Analysis with LogDNA
+# Managing Ubuntu logs with {{site.data.keyword.la_full_notm}}
 {: #ubuntu}
 
-Use the IBM Log Analysis with LogDNA service to monitor and manage Ubuntu logs in a centralized logging system on the {{site.data.keyword.cloud_notm}}. 
+Use the {{site.data.keyword.la_full}} service to monitor and manage Ubuntu logs in a centralized logging system on the {{site.data.keyword.cloud_notm}}. 
 {:shortdesc}
 
 You can collect and monitor system and application logs. 
 
 By default, the LogDNA agent for Ubuntu monitors log files in the **/var/log** directory. For example, the Ubuntu system log (*/var/log/syslog*) is monitored by default.
 
-On the {{site.data.keyword.cloud_notm}}, to configure an Ubuntu server to forward logs to an IBM Log Analysis with LogDNA instance, you must complete the following steps:
+On the {{site.data.keyword.cloud_notm}}, to configure an Ubuntu server to forward logs to an {{site.data.keyword.la_full_notm}} instance, you must complete the following steps:
 
-1. Provision an instance of the IBM Log Analysis with LogDNA service. 
+1. Provision an instance of the {{site.data.keyword.la_full_notm}} service. 
 2. Configure the LogDNA agent in the Ubuntu server.
 3. Optionally, add more directories to monitor by the agent.
 
 ![Component overview on the {{site.data.keyword.cloud_notm}}](../images/ubuntu.png "Component overview on the {{site.data.keyword.cloud_notm}}")
 
-In this tutorial, you will learn how to configure an Ubuntu server to forward logs to an IBM Log Analysis with LogDNA instance.
+In this tutorial, you will learn how to configure an Ubuntu server to forward logs to an {{site.data.keyword.la_full_notm}} instance.
 
 ## Before you begin
 {: #ubuntu_prereqs}
 
-Read about IBM Log Analysis with LogDNA. For more information, see [About LogDNA](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-about#about).
+Read about {{site.data.keyword.la_full_notm}}. For more information, see [About LogDNA](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-about#about).
 
 Work in the US-South region. The {{site.data.keyword.la_full_notm}} is currently available in the US South region. **Note:** You can send data from an Ubuntu server that is located in the same region or in a different region. 
 
@@ -52,21 +52,21 @@ Your {{site.data.keyword.IBM_notm}}ID must have assigned IAM policies for each o
 | Resource                             | Scope of the access policy | Role    | Region    | Information                  |
 |--------------------------------------|----------------------------|---------|-----------|------------------------------|
 | Resource group **Default**           |  Resource group            | Viewer  | us-south  | This policy is required to allow the user to see service instances in the Default resource group.    |
-| IBM Log Analysis with LogDNA service |  Resource group            | Editor  | us-south  | This policy is required to allow the user to provision and administer the IBM Log Analysis with LogDNA service in the Default resource group.   |
+| {{site.data.keyword.la_full_notm}} service |  Resource group            | Editor  | us-south  | This policy is required to allow the user to provision and administer the {{site.data.keyword.la_full_notm}} service in the Default resource group.   |
 {: caption="Table 1. List of IAM policies required to complete the tutorial" caption-side="top"} 
 
 Install the {{site.data.keyword.cloud_notm}} CLI. For more information, see [Installing the {{site.data.keyword.cloud_notm}} CLI](/docs/cli/index.html#overview).
 
 
 
-## Step1: Provision an IBM Log Analysis with LogDNA instance
+## Step 1. Provision an {{site.data.keyword.la_full_notm}} instance
 {: #ubuntu_step1}
 
-To provision an instance of IBM Log Analysis with LogDNA through the {{site.data.keyword.cloud_notm}} UI, complete the following steps:
+To provision an instance of {{site.data.keyword.la_full_notm}} through the {{site.data.keyword.cloud_notm}} UI, complete the following steps:
 
 1. Log in to your {{site.data.keyword.cloud_notm}} account.
 
-    The {{site.data.keyword.cloud_notm}} dashboard can be found at: [http://cloud.ibm.com ![External link icon](../../../icons/launch-glyph.svg "External link icon")](http://cloud.ibm.com){:new_window}.
+    Click [{{site.data.keyword.cloud_notm}} dashboard ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com){:new_window} to launch the {{site.data.keyword.cloud_notm}} dashboard.
 
 	After you log in with your user ID and password, the {{site.data.keyword.cloud_notm}} UI opens.
 
@@ -74,7 +74,7 @@ To provision an instance of IBM Log Analysis with LogDNA through the {{site.data
 
 3. To filter the list of services that is displayed, select the **Developer Tools** category.
 
-4. Click the **IBM Log Analysis with LogDNA** tile.
+4. Click the **{{site.data.keyword.la_full_notm}}** tile.
 
 5. Enter a name for the service instance.
 
@@ -88,18 +88,18 @@ To provision an instance of IBM Log Analysis with LogDNA through the {{site.data
 
     For more information about other service plans, see [Pricing plans](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-about#overview_pricing_plans).
 
-8. To provision the IBM Log Analysis with LogDNA service in the {{site.data.keyword.cloud_notm}} resource group where you are logged in, click **Create**.
+8. To provision the {{site.data.keyword.la_full_notm}} service in the {{site.data.keyword.cloud_notm}} resource group where you are logged in, click **Create**.
 
-After you provision an instance, the IBM Log Analysis with LogDNA dashboard opens. 
+After you provision an instance, the {{site.data.keyword.la_full_notm}} dashboard opens. 
 
 
 **Note:** To provision an instance of LogDNA through the CLI, see [Provisioning LogDNA through the {{site.data.keyword.cloud_notm}} CLI](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-provision#provision_cli).
 
 
-## Step2: Configure your Ubuntu server to send logs to your instance
+## Step 2. Configure your Ubuntu server to send logs to your instance
 {: #ubuntu_step2}
 
-To configure your Ubuntu server to send logs to your IBM Log Analysis with LogDNA instance, you must install a `logdna-agent`. The LogDNA agent reads log files from */var/log*, and forwards the log data to your LogDNA instance.
+To configure your Ubuntu server to send logs to your {{site.data.keyword.la_full_notm}} instance, you must install a `logdna-agent`. The LogDNA agent reads log files from */var/log*, and forwards the log data to your LogDNA instance.
 
 To configure your Ubuntu server to forward logs to your LogDNA instance, complete the following steps from an Ubuntu terminal:
 
@@ -125,14 +125,14 @@ To configure your Ubuntu server to forward logs to your LogDNA instance, complet
     ```
     {: codeblock}
 
-2. Set the ingestion key that the LogDNA agent must use to forward logs to the IBM Log Analysis with LogDNA instance.  
+2. Set the ingestion key that the LogDNA agent must use to forward logs to the {{site.data.keyword.la_full_notm}} instance.  
 
     ```
     sudo logdna-agent -k INGESTION_KEY
     ```
     {: codeblock}
 
-    where INGESTION_KEY contains the ingestion key active for the IBM Log Analysis with LogDNA instance where you are configuring to forward logs.
+    where INGESTION_KEY contains the ingestion key active for the {{site.data.keyword.la_full_notm}} instance where you are configuring to forward logs.
 
 3. Set the authentication endpoint. The LogDNA agent uses this host to authenticate and get the token to forward logs.
 
@@ -175,14 +175,14 @@ To configure your Ubuntu server to forward logs to your LogDNA instance, complet
     {: codeblock}
 
 
-## Step 3: Launch the LogDNA Web UI
+## Step 3. Launch the LogDNA Web UI
 {: #ubuntu_step3}
 
 To launch IBM the Log Analysis with LogDNA dashboard through the {{site.data.keyword.cloud_notm}} UI, complete the following steps:
 
 1. Log in to your {{site.data.keyword.cloud_notm}} account.
 
-    The {{site.data.keyword.cloud_notm}} dashboard can be found at: [http://cloud.ibm.com ![External link icon](../../../icons/launch-glyph.svg "External link icon")](http://cloud.ibm.com){:new_window}.
+    Click [{{site.data.keyword.cloud_notm}} dashboard ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com){:new_window} to launch the {{site.data.keyword.cloud_notm}} dashboard.
 
 	After you log in with your user ID and password, the {{site.data.keyword.cloud_notm}} Dashboard opens.
 
@@ -190,14 +190,14 @@ To launch IBM the Log Analysis with LogDNA dashboard through the {{site.data.key
 
 3. Select **Logging**. 
 
-    The list of IBM Log Analysis with LogDNA instances that are available on {{site.data.keyword.cloud_notm}} is displayed.
+    The list of {{site.data.keyword.la_full_notm}} instances that are available on {{site.data.keyword.cloud_notm}} is displayed.
 
 3. Select one instance. Then, click **View LogDNA**.
 
     The LogDNA Web UI opens and displays your cluster logs.
 
 
-## Step 4: View your logs
+## Step 4. View your logs
 {: #ubuntu_step4}
 
 From the LogDNA Web UI, you can view your logs as they pass through the system. You view logs by using log tailing. 
@@ -212,5 +212,5 @@ For more information, see [Viewing logs](/docs/services/Log-Analysis-with-LogDNA
 
 [Filter logs](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-view_logs#view_logs_step5), [search logs](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-view_logs#view_logs_step6), [define views](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-view_logs#view_logs_step7), and [configure alerts](https://docs.logdna.com/docs/alerts). 
 
-**Note:** To use any of these features, you must upgrade the IBM Log Analysis with LogDNA plan to a paid plan.
+**Note:** To use any of these features, you must upgrade the {{site.data.keyword.la_full_notm}} plan to a paid plan.
 

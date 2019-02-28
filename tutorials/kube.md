@@ -76,12 +76,12 @@ In this tutorial, you configure logging with LogDNA for your {{site.data.keyword
 - Open the LogDNA dashboard to find your logs. 
 
 
-## Step1: Provision an {{site.data.keyword.la_full_notm}} service instance
+## Step 1. Provision an {{site.data.keyword.la_full_notm}} service instance
 {: #kube_step1}
 
 To provision a service instance of {{site.data.keyword.la_full_notm}} through the {{site.data.keyword.cloud_notm}} console, complete the following steps:
 
-1. Log in to the [{{site.data.keyword.cloud_notm}} account ![External link icon](../../../icons/launch-glyph.svg "External link icon")](http://cloud.ibm.com ) where you created your Kubernetes cluster.
+1. Log in to the [{{site.data.keyword.cloud_notm}} account ![External link icon](../../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com ) where you created your Kubernetes cluster.
 
 2. Click **Catalog**. A list of {{site.data.keyword.cloud_notm}} services opens.
 
@@ -160,7 +160,7 @@ To configure your Kubernetes cluster to forward logs to your LogDNA instance, co
 
 To launch the LogDNA dashboard through the {{site.data.keyword.cloud_notm}} console, complete the following steps:
 
-1. Log in to your [{{site.data.keyword.cloud_notm}} account ![External link icon](../../../icons/launch-glyph.svg "External link icon")](http://cloud.ibm.com ).
+1. Log in to your [{{site.data.keyword.cloud_notm}} account ![External link icon](../../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com ).
 
 2. From the menu ![Menu icon](../icons/icon_hamburger.svg "Menu icon"), select **Observability**.
 

@@ -18,27 +18,27 @@ lastupdated: "2019-02-28"
 {:note: .note}
 
 
-# Resetting the ingestion key used by a Kubernetes cluster to forward logs to an IBM Log Analysis with LogDNA instance
+# Resetting the ingestion key used by a Kubernetes cluster to forward logs to an {{site.data.keyword.la_full_notm}} instance
 {: #kube_reset}
 
-If the ingestion key that you use to forward logs from a cluster to an IBM Log Analysis with LogDNA instance in the {{site.data.keyword.cloud_notm}} is compromised, you must reset the key and update the Kubernetes cluster configuration to use the new ingestion key. 
+If the ingestion key that you use to forward logs from a cluster to an {{site.data.keyword.la_full_notm}} instance in the {{site.data.keyword.cloud_notm}} is compromised, you must reset the key and update the Kubernetes cluster configuration to use the new ingestion key. 
 {:shortdesc}
 
 ## Before you begin
 {: #kube_reset_prereqs}
 
-Work in the US-South region. Both resources, the IBM Log Analysis with LogDNA instance and the Kubernetes cluster must run in the same account.
+Work in the US-South region. Both resources, the {{site.data.keyword.la_full_notm}} instance and the Kubernetes cluster must run in the same account.
 
-The IBM Log Analysis with LogDNA instance is provisioned in the **Default** resource group.
+The {{site.data.keyword.la_full_notm}} instance is provisioned in the **Default** resource group.
 
-Read about IBM Log Analysis with LogDNA. For more information, see [About LogDNA](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-about#about).
+Read about {{site.data.keyword.la_full_notm}}. For more information, see [About LogDNA](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-about#about).
 
 To complete the steps in this tutorial, your {{site.data.keyword.IBM_notm}}ID must have assigned IAM policies for each of the following resources: 
 
 | Resource                             | Scope of the access policy | Roles    | Region    | Information                  |
 |--------------------------------------|----------------------------|---------|-----------|------------------------------|
 | Resource group **Default**           |  Resource group            | Viewer  | us-south  | This policy is required to allow the user to see service instances in the Default resource group.    |
-| IBM Log Analysis with LogDNA service |  Resource group            | Editor </br>Manager  | us-south  | This policy is required to allow the user to reset the ingestion key.   |
+| {{site.data.keyword.la_full_notm}} service |  Resource group            | Editor </br>Manager  | us-south  | This policy is required to allow the user to reset the ingestion key.   |
 | Kubernetes cluster instance          |  Resource                  | Editor  | us-south  | This policy is required to delete and configure the secret and the LogDNA agent in the Kubernetes cluster. |
 {: caption="Table 1. List of IAM policies required to complete the tutorial" caption-side="top"} 
 
@@ -50,9 +50,9 @@ Install the {{site.data.keyword.cloud_notm}} CLI and the Kubernetes CLI plug-in.
 ## Step 1: Reset the ingestion key
 {: #kube_reset_step1}
 
-To renew the ingestion key for an IBM Log Analysis with LogDNA instance by using the IBM Log Analysis with LogDNA Web UI, complete the following steps:
+To renew the ingestion key for an {{site.data.keyword.la_full_notm}} instance by using the {{site.data.keyword.la_full_notm}} Web UI, complete the following steps:
 
-1. Launch the IBM Log Analysis with LogDNA web UI. For more information, see [Launching the IBM Log Analysis with LogDNA Web UI](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-view_logs#view_logs_step2).
+1. Launch the {{site.data.keyword.la_full_notm}} web UI. For more information, see [Launching the {{site.data.keyword.la_full_notm}} Web UI](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-view_logs#view_logs_step2).
 
 2. Select the **Configuration** icon. Then select **Organization**. 
 
@@ -79,7 +79,7 @@ Complete the following steps:
     ```
     {: codeblock}
 
-    Select the account where you have provisioned the IBM Log Analysis with LogDNA instance.
+    Select the account where you have provisioned the {{site.data.keyword.la_full_notm}} instance.
 
 2. Set up the cluster environment. Run the following commands:
 
@@ -132,7 +132,7 @@ To configure your Kubernetes cluster to forward logs to your LogDNA instance, co
     ```
     {: codeblock}
 
-    Select the account where you have provisioned the IBM Log Analysis with LogDNA instance.
+    Select the account where you have provisioned the {{site.data.keyword.la_full_notm}} instance.
 
 2. Set up the cluster environment. Run the following commands:
 
@@ -158,7 +158,7 @@ To configure your Kubernetes cluster to forward logs to your LogDNA instance, co
 
     The LOGDNA_INGESTION_KEY_FOR_YOUR_INSTANCE shows the LogDNA ingestion key for your instance.
 
-    The Kubernetes secret contains the LogDNA ingestion key. The LogDNA ingestion key is used to authenticate the logging agent with the IBM Log Analysis with LogDNA service. It is used to open a secure web socket to the ingestion server on the logging back-end system.
+    The Kubernetes secret contains the LogDNA ingestion key. The LogDNA ingestion key is used to authenticate the logging agent with the {{site.data.keyword.la_full_notm}} service. It is used to open a secure web socket to the ingestion server on the logging back-end system.
 
 4. Configure the LogDNA agent on every worker(node) of your Kubernetes cluster. Run the following command:
 
@@ -179,26 +179,26 @@ To configure your Kubernetes cluster to forward logs to your LogDNA instance, co
     {: codeblock}
 
 
-## Step 4: Launch the LogDNA Web UI
+## Step 4: Launch the LogDNA web UI
 {: #kube_reset_step4}
 
 To launch IBM the Log Analysis with LogDNA dashboard through the {{site.data.keyword.cloud_notm}} UI, complete the following steps:
 
 1. Log in to your {{site.data.keyword.cloud_notm}} account.
 
-    The {{site.data.keyword.cloud_notm}} dashboard can be found at: [http://cloud.ibm.com ![External link icon](../../../icons/launch-glyph.svg "External link icon")](http://cloud.ibm.com){:new_window}.
+    Click [{{site.data.keyword.cloud_notm}} dashboard ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com){:new_window} to launch the {{site.data.keyword.cloud_notm}} dashboard.
 
-	After you log in with your user ID and password, the {{site.data.keyword.cloud_notm}} Dashboard opens.
+	After you log in with your user ID and password, the {{site.data.keyword.cloud_notm}} dashboard opens.
 
 2. In the navigation menu, select **Observability**. 
 
 3. Select **Logging**. 
 
-    The list of IBM Log Analysis with LogDNA instances that are available on {{site.data.keyword.cloud_notm}} is displayed.
+    The list of {{site.data.keyword.la_full_notm}} instances that are available on {{site.data.keyword.cloud_notm}} is displayed.
 
 3. Select one instance. Then, click **View logs**.
 
-    The LogDNA Web UI opens and displays your cluster logs.
+    The LogDNA web UI opens and displays your cluster logs.
 
 
 ## Step 5: View your logs
@@ -213,7 +213,7 @@ From the LogDNA Web UI, you can view your logs as they pass through the system. 
 ## Next steps
 {: #kube_reset_next_steps}
 
-  If you want to [filter cluster logs](https://docs.logdna.com/docs/filters), [search cluster logs](https://docs.logdna.com/docs/search), [define views](https://docs.logdna.com/docs/views), and [configure alerts](https://docs.logdna.com/docs/alerts), you must upgrade the IBM Log Analysis with LogDNA plan to a paid plan.
+  If you want to [filter cluster logs](https://docs.logdna.com/docs/filters), [search cluster logs](https://docs.logdna.com/docs/search), [define views](https://docs.logdna.com/docs/views), and [configure alerts](https://docs.logdna.com/docs/alerts), you must upgrade the {{site.data.keyword.la_full_notm}} plan to a paid plan.
 
 
 

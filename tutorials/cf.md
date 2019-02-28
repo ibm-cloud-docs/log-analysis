@@ -70,7 +70,7 @@ In this tutorial, you can learn how to configure a CF application to send logs t
 
 To provision a service instance of {{site.data.keyword.la_full_notm}} through the {{site.data.keyword.cloud_notm}} console, complete the following steps:
 
-1. Log in to the [{{site.data.keyword.cloud_notm}} account ![External link icon](../../../icons/launch-glyph.svg "External link icon")](http://cloud.ibm.com ) where you created your Kubernetes cluster.
+1. Log in to the [{{site.data.keyword.cloud_notm}} account ![External link icon](../../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com ) where you created your Kubernetes cluster.
 
 2. Click **Catalog**. A list of {{site.data.keyword.cloud_notm}} services opens.
 
@@ -105,7 +105,7 @@ Complete the following steps to launch the web UI:
 
 1. Log in to your {{site.data.keyword.cloud_notm}} account.
 
-    The {{site.data.keyword.cloud_notm}} dashboard can be found at: [https://cloud.ibm.com ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com){:new_window}.
+    Click [{{site.data.keyword.cloud_notm}} dashboard ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com){:new_window} to launch the {{site.data.keyword.cloud_notm}} dashboard.
 
 	After you log in with your user ID and password, the {{site.data.keyword.cloud_notm}} Dashboard opens.
 
@@ -117,7 +117,7 @@ Complete the following steps to launch the web UI:
 
 4. Select the logging instance where you want to send CF application logs. Then, click **View LogDNA**.
 
-The Web UI opens.
+The web UI opens.
 
 
 ### 2. Provision a port
@@ -153,14 +153,13 @@ Complete the following steps:
     ```
     {: codeblock}
 
-    where
+    Where
 
-    * *SVC_INSTANCE_NAME* is the name of the CF service instance.
+    *SVC_INSTANCE_NAME* is the name of the CF service instance.
 
-    * *SYSLOG_ENDPOINT_URL* is the endpoint URL in the region where the instance is running. For example, for us-south, the URL is: `syslog-a.us-south.logging.cloud.ibm.com`
+    *SYSLOG_ENDPOINT_URL* is the endpoint URL in the region where the instance is running. For example, for us-south, the URL is: `syslog-a.us-south.logging.cloud.ibm.com`
 
-    * *PORT_NUMBER* is the port number that you provisioned in your logging instance.
-
+    *PORT_NUMBER* is the port number that you provisioned in your logging instance.
 
     A sample command looks as follows:
 
@@ -176,7 +175,7 @@ Complete the following steps:
     ```
     {: codeblock}
 
-    where
+    Where
 
     * *CF_APP_NAME* is the name of the Cloud Foundry application.
 
@@ -197,7 +196,7 @@ Complete the following steps:
     ```
     {: codeblock}
 
-    where *CF_APP_NAME* is the name of the Cloud Foundry application.
+    Where *CF_APP_NAME* is the name of the Cloud Foundry application.
 
      A sample command looks as follows:
 
