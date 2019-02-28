@@ -21,7 +21,7 @@ lastupdated: "2019-02-28"
 # Managing network traffic
 {: #network}
 
-When you have an additional firewall set up, or you have customized the firewall settings in your {{site.data.keyword.cloud_notm}} infrastructure (SoftLayer), you need to allow outgoing network traffic to the IBM Cloud Log Analysis with LogDNA service. 
+When you have an additional firewall set up, or you have customized the firewall settings in your {{site.data.keyword.cloud_notm}} infrastructure, you need to allow outgoing network traffic to the IBM Cloud Log Analysis with LogDNA service. 
 {:shortdesc}
 
 

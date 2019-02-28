@@ -86,7 +86,7 @@ To get the web UI URL, complete the following steps from a terminal:
 3. Set the endpoint.
 
     ```
-    export rc_endpoint=resource-controller.bluemix.net
+    export rc_endpoint=resource-controller.cloud.ibm.com
     ```
     {: codeblock}
 

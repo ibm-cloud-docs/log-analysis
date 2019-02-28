@@ -20,7 +20,7 @@ lastupdated: "2019-02-28"
 # About
 {: #about}
 
-IBM Log Analysis with LogDNA is a third-party service that you can include as part of your {{site.data.keyword.Bluemix}} architecture to add log management capabilities. IBM Log Analysis with LogDNA is operated by LogDNA in partnership with {{site.data.keyword.IBM_notm}}.
+IBM Log Analysis with LogDNA is a third-party service that you can include as part of your {{site.data.keyword.cloud_notm}} architecture to add log management capabilities. IBM Log Analysis with LogDNA is operated by LogDNA in partnership with {{site.data.keyword.IBM_notm}}.
 {:shortdesc}
 
 You can use IBM Log Analysis with LogDNA to manage system and application logs in the {{site.data.keyword.cloud_notm}}.

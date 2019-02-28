@@ -21,7 +21,7 @@ lastupdated: "2019-02-28"
 # Managing Ubuntu logs with IBM Log Analysis with LogDNA
 {: #ubuntu}
 
-Use the IBM Log Analysis with LogDNA service to monitor and manage Ubuntu logs in a centralized logging system on the {{site.data.keyword.Bluemix}}. 
+Use the IBM Log Analysis with LogDNA service to monitor and manage Ubuntu logs in a centralized logging system on the {{site.data.keyword.cloud_notm}}. 
 {:shortdesc}
 
 You can collect and monitor system and application logs. 

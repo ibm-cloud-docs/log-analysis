@@ -20,7 +20,7 @@ lastupdated: "2019-02-28"
 # Viewing logs
 {: #view_logs}
 
-After you provision an instance of the IBM Log Analysis with LogDNA service in the {{site.data.keyword.Bluemix}}, and configure a LogDNA agent for a log source, you can view, monitor, and manage log data through the IBM Log Analysis with LogDNA Web UI.
+After you provision an instance of the IBM Log Analysis with LogDNA service in the {{site.data.keyword.cloud_notm}}, and configure a LogDNA agent for a log source, you can view, monitor, and manage log data through the IBM Log Analysis with LogDNA Web UI.
 {:shortdesc}
 
 When you launch the IBM Log Analysis with LogDNA Web UI, log entries are displayed with a predefined format. You can modify in the **User Preferences** section how the information in each log line is displayed. You can also filter logs and modify search settings, then bookmark the result as a *view*. You can attach and detach one or more alerts to a view. You can define a custom format for how your lines are shown in the view. You can expand a log line and see the data parsed.

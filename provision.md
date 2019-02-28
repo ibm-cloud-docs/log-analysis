@@ -20,7 +20,7 @@ lastupdated: "2019-02-28"
 # Provisioning an instance
 {: #provision}
 
-Before you can monitor and manage log data with {{site.data.keyword.la_full_notm}}, you must first provision an instance of the service in {{site.data.keyword.Bluemix}}.
+Before you can monitor and manage log data with {{site.data.keyword.la_full_notm}}, you must first provision an instance of the service in {{site.data.keyword.cloud_notm}}.
 {:shortdesc}
 
 To provision an {{site.data.keyword.la_full_notm}} instance in a Public Cloud region, you must select the service plan that is associated with the instance, the region where your logs are collected, and the plan that determines the retention period for your logs. You can choose from 7, 15, or 30-day retention periods.
