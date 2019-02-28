@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2018, 2019
-lastupdated: "2010-02-18"
+  years:  2018, 2019
+lastupdated: "2019-02-28"
 
 ---
 
@@ -14,6 +14,8 @@ lastupdated: "2010-02-18"
 {:codeblock: .codeblock}
 {:tip: .tip}
 {:download: .download}
+{:important: .important}
+{:note: .note}
 
 # Configuring a CF app to forward logs to a LogDNA instance
 {: #cf}
@@ -48,7 +50,7 @@ Your {{site.data.keyword.IBM_notm}}ID must have assigned IAM policies for each o
 
 Your {{site.data.keyword.IBM_notm}}ID must have the **developer** assigned for the Cloud Foundry space where the CF application is running.
 
-You must install the {{site.data.keyword.cloud_notm}} CLI. For more information, see [Installing the {{site.data.keyword.Bluemix_notm}} CLI](/docs/cli?topic=cloud-cli-ibmcloud-cli#ibmcloud-cli). This CLI includes the CF CLI.
+You must install the {{site.data.keyword.cloud_notm}} CLI. For more information, see [Installing the {{site.data.keyword.cloud_notm}} CLI](/docs/cli?topic=cloud-cli-ibmcloud-cli#ibmcloud-cli). This CLI includes the CF CLI.
 
 You must have a CF app deployed and running.
 
@@ -66,11 +68,11 @@ In this tutorial, you can learn how to configure a CF application to send logs t
 ## Step1: Provision an {{site.data.keyword.la_full_notm}} instance
 {: #cf_step1}
 
-To provision a service instance of {{site.data.keyword.la_full_notm}} through the {{site.data.keyword.Bluemix_notm}} console, complete the following steps:
+To provision a service instance of {{site.data.keyword.la_full_notm}} through the {{site.data.keyword.cloud_notm}} console, complete the following steps:
 
 1. Log in to the [{{site.data.keyword.cloud_notm}} account ![External link icon](../../../icons/launch-glyph.svg "External link icon")](http://cloud.ibm.com ) where you created your Kubernetes cluster.
 
-2. Click **Catalog**. A list of {{site.data.keyword.Bluemix_notm}} services opens.
+2. Click **Catalog**. A list of {{site.data.keyword.cloud_notm}} services opens.
 
 3. To filter the list of services that is displayed, select the **Developer Tools** category.
 
@@ -86,7 +88,7 @@ To provision a service instance of {{site.data.keyword.la_full_notm}} through th
 
 9. Click **Create**. The **Observability** dashboard opens and shows the details for your service. 
 
-To provision an instance through the CLI, see [Provisioning an instance through the {{site.data.keyword.Bluemix_notm}} CLI](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-provision#provision_cli).
+To provision an instance through the CLI, see [Provisioning an instance through the {{site.data.keyword.cloud_notm}} CLI](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-provision#provision_cli).
 {: tip}
 
 
@@ -103,15 +105,15 @@ Complete the following steps to launch the web UI:
 
 1. Log in to your {{site.data.keyword.cloud_notm}} account.
 
-    The {{site.data.keyword.Bluemix_notm}} dashboard can be found at: [https://cloud.ibm.com ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com){:new_window}.
+    The {{site.data.keyword.cloud_notm}} dashboard can be found at: [https://cloud.ibm.com ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com){:new_window}.
 
-	After you log in with your user ID and password, the {{site.data.keyword.Bluemix_notm}} Dashboard opens.
+	After you log in with your user ID and password, the {{site.data.keyword.cloud_notm}} Dashboard opens.
 
 2. In the navigation menu, select **Observability**. 
 
 3. Select **Logging**. 
 
-    The list of instances that are available on {{site.data.keyword.Bluemix_notm}} is displayed.
+    The list of instances that are available on {{site.data.keyword.cloud_notm}} is displayed.
 
 4. Select the logging instance where you want to send CF application logs. Then, click **View LogDNA**.
 

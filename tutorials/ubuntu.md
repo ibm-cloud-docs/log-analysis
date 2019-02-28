@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2018, 2019
-lastupdated: "2019-02-18"
+  years:  2018, 2019
+lastupdated: "2019-02-28"
 
 ---
 
@@ -14,6 +14,8 @@ lastupdated: "2019-02-18"
 {:codeblock: .codeblock}
 {:tip: .tip}
 {:download: .download}
+{:important: .important}
+{:note: .note}
 
 
 # Managing Ubuntu logs with IBM Log Analysis with LogDNA
@@ -26,13 +28,13 @@ You can collect and monitor system and application logs.
 
 By default, the LogDNA agent for Ubuntu monitors log files in the **/var/log** directory. For example, the Ubuntu system log (*/var/log/syslog*) is monitored by default.
 
-On the {{site.data.keyword.Bluemix_notm}}, to configure an Ubuntu server to forward logs to an IBM Log Analysis with LogDNA instance, you must complete the following steps:
+On the {{site.data.keyword.cloud_notm}}, to configure an Ubuntu server to forward logs to an IBM Log Analysis with LogDNA instance, you must complete the following steps:
 
 1. Provision an instance of the IBM Log Analysis with LogDNA service. 
 2. Configure the LogDNA agent in the Ubuntu server.
 3. Optionally, add more directories to monitor by the agent.
 
-![Component overview on the {{site.data.keyword.Bluemix_notm}}](../images/ubuntu.png "Component overview on the {{site.data.keyword.Bluemix_notm}}")
+![Component overview on the {{site.data.keyword.cloud_notm}}](../images/ubuntu.png "Component overview on the {{site.data.keyword.cloud_notm}}")
 
 In this tutorial, you will learn how to configure an Ubuntu server to forward logs to an IBM Log Analysis with LogDNA instance.
 
@@ -43,7 +45,7 @@ Read about IBM Log Analysis with LogDNA. For more information, see [About LogDNA
 
 Work in the US-South region. The {{site.data.keyword.la_full_notm}} is currently available in the US South region. **Note:** You can send data from an Ubuntu server that is located in the same region or in a different region. 
 
-Use a user ID that is a member or an owner of an {{site.data.keyword.Bluemix_notm}} account. To get an {{site.data.keyword.Bluemix_notm}} user ID, go to: [Registration ![External link icon](../../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com/registration/){:new_window}.
+Use a user ID that is a member or an owner of an {{site.data.keyword.cloud_notm}} account. To get an {{site.data.keyword.cloud_notm}} user ID, go to: [Registration ![External link icon](../../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com/registration/){:new_window}.
 
 Your {{site.data.keyword.IBM_notm}}ID must have assigned IAM policies for each of the following resources: 
 
@@ -53,22 +55,22 @@ Your {{site.data.keyword.IBM_notm}}ID must have assigned IAM policies for each o
 | IBM Log Analysis with LogDNA service |  Resource group            | Editor  | us-south  | This policy is required to allow the user to provision and administer the IBM Log Analysis with LogDNA service in the Default resource group.   |
 {: caption="Table 1. List of IAM policies required to complete the tutorial" caption-side="top"} 
 
-Install the {{site.data.keyword.Bluemix_notm}} CLI. For more information, see [Installing the {{site.data.keyword.Bluemix_notm}} CLI](/docs/cli/index.html#overview).
+Install the {{site.data.keyword.cloud_notm}} CLI. For more information, see [Installing the {{site.data.keyword.cloud_notm}} CLI](/docs/cli/index.html#overview).
 
 
 
 ## Step1: Provision an IBM Log Analysis with LogDNA instance
 {: #ubuntu_step1}
 
-To provision an instance of IBM Log Analysis with LogDNA through the {{site.data.keyword.Bluemix_notm}} UI, complete the following steps:
+To provision an instance of IBM Log Analysis with LogDNA through the {{site.data.keyword.cloud_notm}} UI, complete the following steps:
 
-1. Log in to your {{site.data.keyword.Bluemix_notm}} account.
+1. Log in to your {{site.data.keyword.cloud_notm}} account.
 
-    The {{site.data.keyword.Bluemix_notm}} dashboard can be found at: [http://cloud.ibm.com ![External link icon](../../../icons/launch-glyph.svg "External link icon")](http://cloud.ibm.com){:new_window}.
+    The {{site.data.keyword.cloud_notm}} dashboard can be found at: [http://cloud.ibm.com ![External link icon](../../../icons/launch-glyph.svg "External link icon")](http://cloud.ibm.com){:new_window}.
 
-	After you log in with your user ID and password, the {{site.data.keyword.Bluemix_notm}} UI opens.
+	After you log in with your user ID and password, the {{site.data.keyword.cloud_notm}} UI opens.
 
-2. Click **Catalog**. The list of the services that are available in {{site.data.keyword.Bluemix_notm}} opens.
+2. Click **Catalog**. The list of the services that are available in {{site.data.keyword.cloud_notm}} opens.
 
 3. To filter the list of services that is displayed, select the **Developer Tools** category.
 
@@ -86,12 +88,12 @@ To provision an instance of IBM Log Analysis with LogDNA through the {{site.data
 
     For more information about other service plans, see [Pricing plans](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-about#overview_pricing_plans).
 
-8. To provision the IBM Log Analysis with LogDNA service in the {{site.data.keyword.Bluemix_notm}} resource group where you are logged in, click **Create**.
+8. To provision the IBM Log Analysis with LogDNA service in the {{site.data.keyword.cloud_notm}} resource group where you are logged in, click **Create**.
 
 After you provision an instance, the IBM Log Analysis with LogDNA dashboard opens. 
 
 
-**Note:** To provision an instance of LogDNA through the CLI, see [Provisioning LogDNA through the {{site.data.keyword.Bluemix_notm}} CLI](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-provision#provision_cli).
+**Note:** To provision an instance of LogDNA through the CLI, see [Provisioning LogDNA through the {{site.data.keyword.cloud_notm}} CLI](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-provision#provision_cli).
 
 
 ## Step2: Configure your Ubuntu server to send logs to your instance
@@ -176,19 +178,19 @@ To configure your Ubuntu server to forward logs to your LogDNA instance, complet
 ## Step 3: Launch the LogDNA Web UI
 {: #ubuntu_step3}
 
-To launch IBM the Log Analysis with LogDNA dashboard through the {{site.data.keyword.Bluemix_notm}} UI, complete the following steps:
+To launch IBM the Log Analysis with LogDNA dashboard through the {{site.data.keyword.cloud_notm}} UI, complete the following steps:
 
-1. Log in to your {{site.data.keyword.Bluemix_notm}} account.
+1. Log in to your {{site.data.keyword.cloud_notm}} account.
 
-    The {{site.data.keyword.Bluemix_notm}} dashboard can be found at: [http://cloud.ibm.com ![External link icon](../../../icons/launch-glyph.svg "External link icon")](http://cloud.ibm.com){:new_window}.
+    The {{site.data.keyword.cloud_notm}} dashboard can be found at: [http://cloud.ibm.com ![External link icon](../../../icons/launch-glyph.svg "External link icon")](http://cloud.ibm.com){:new_window}.
 
-	After you log in with your user ID and password, the {{site.data.keyword.Bluemix_notm}} Dashboard opens.
+	After you log in with your user ID and password, the {{site.data.keyword.cloud_notm}} Dashboard opens.
 
 2. In the navigation menu, select **Observability**. 
 
 3. Select **Logging**. 
 
-    The list of IBM Log Analysis with LogDNA instances that are available on {{site.data.keyword.Bluemix_notm}} is displayed.
+    The list of IBM Log Analysis with LogDNA instances that are available on {{site.data.keyword.cloud_notm}} is displayed.
 
 3. Select one instance. Then, click **View LogDNA**.
 

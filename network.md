@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2019
-lastupdated: "2019-02-18"
+lastupdated: "2019-02-28"
 
 ---
 
@@ -14,16 +14,18 @@ lastupdated: "2019-02-18"
 {:codeblock: .codeblock}
 {:tip: .tip}
 {:download: .download}
+{:important: .important}
+{:note: .note}
 
  
 # Managing network traffic
 {: #network}
 
-When you have an additional firewall set up, or you have customized the firewall settings in your {{site.data.keyword.Bluemix_notm}} infrastructure (SoftLayer), you need to allow outgoing network traffic to the IBM Cloud Log Analysis with LogDNA service. 
+When you have an additional firewall set up, or you have customized the firewall settings in your {{site.data.keyword.cloud_notm}} infrastructure (SoftLayer), you need to allow outgoing network traffic to the IBM Cloud Log Analysis with LogDNA service. 
 {:shortdesc}
 
 
-## Network traffic for custom firewall configurations in the {{site.data.keyword.Bluemix_notm}}
+## Network traffic for custom firewall configurations in the {{site.data.keyword.cloud_notm}}
 {: #ips}
 
 You must allow outgoing traffic on TCP port 443 and TCP port 80 in your firewall. For example, you must open TCP port 443 and TCP port 80 from each worker to the IBM Log Analysis with LogDNA service.

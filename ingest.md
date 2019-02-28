@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2019
-lastupdated: "2019-02-18"
+lastupdated: "2019-02-28"
 
 ---
 
@@ -14,6 +14,8 @@ lastupdated: "2019-02-18"
 {:codeblock: .codeblock}
 {:tip: .tip}
 {:download: .download}
+{:important: .important}
+{:note: .note}
 
  
 # Sending logs

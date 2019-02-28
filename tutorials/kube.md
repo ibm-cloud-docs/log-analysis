@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2018, 2019
-lastupdated: "2019-02-18"
+  years:  2018, 2019
+lastupdated: "2019-02-28"
 
 ---
 
@@ -14,7 +14,8 @@ lastupdated: "2019-02-18"
 {:codeblock: .codeblock}
 {:tip: .tip}
 {:download: .download}
-{:note .note}
+{:important: .important}
+{:note: .note}
 
 
 # Managing Kubernetes cluster logs with {{site.data.keyword.la_full_notm}}
@@ -32,13 +33,13 @@ To configure cluster-level logging for a Kubernetes cluster, consider the follow
 * You must be able to centralize log data for analysis on an external logging back-end.
 
 
-On the {{site.data.keyword.Bluemix_notm}}, to configure cluster-level logging for a Kubernetes cluster, you must complete the following steps:
+On the {{site.data.keyword.cloud_notm}}, to configure cluster-level logging for a Kubernetes cluster, you must complete the following steps:
 
-1. Provision an instance of the {{site.data.keyword.la_full_notm}} service. With this step, you configure a centralized log management system where log data is hosted on {{site.data.keyword.Bluemix_notm}}.
+1. Provision an instance of the {{site.data.keyword.la_full_notm}} service. With this step, you configure a centralized log management system where log data is hosted on {{site.data.keyword.cloud_notm}}.
 2. Provision a cluster on the {{site.data.keyword.containerlong_notm}}. Kubernetes v1.9+ clusters are supported.
 3. Configure the LogDNA agent on every worker (node) in a cluster.
 
-![LogDNA component overview on the {{site.data.keyword.Bluemix_notm}}](../images/kube.png "LogDNA component overview on the {{site.data.keyword.Bluemix_notm}}")
+![LogDNA component overview on the {{site.data.keyword.cloud_notm}}](../images/kube.png "LogDNA component overview on the {{site.data.keyword.cloud_notm}}")
 
 In this tutorial, you will learn how to configure cluster-level logging.
 
@@ -49,7 +50,7 @@ Work in the US-South region. The {{site.data.keyword.la_full_notm}} is currently
 
 Read about {{site.data.keyword.la_full_notm}}. For more information, see [About](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-about#about).
 
-Use a user ID that is a member or an owner of an {{site.data.keyword.Bluemix_notm}} account. To get an {{site.data.keyword.Bluemix_notm}} user ID, go to: [Registration ![External link icon](../../../icons/launch-glyph.svg "External link icon")](http://cloud.ibm.com/registration/){:new_window}.
+Use a user ID that is a member or an owner of an {{site.data.keyword.cloud_notm}} account. To get an {{site.data.keyword.cloud_notm}} user ID, go to: [Registration ![External link icon](../../../icons/launch-glyph.svg "External link icon")](http://cloud.ibm.com/registration/){:new_window}.
 
 Your {{site.data.keyword.IBM_notm}}ID must have assigned IAM policies for each of the following resources: 
 
@@ -62,7 +63,7 @@ Your {{site.data.keyword.IBM_notm}}ID must have assigned IAM policies for each o
 
 For more information about the {{site.data.keyword.containerlong}} IAM roles, see [User access permissions](/docs/containers?topic=containers-access_reference#access_reference).
 
-Install the {{site.data.keyword.Bluemix_notm}} CLI and the Kubernetes CLI plug-in. For more information, see [Installing the {{site.data.keyword.Bluemix_notm}} CLI](/docs/cli?topic=cloud-cli-ibmcloud-cli#ibmcloud-cli).
+Install the {{site.data.keyword.cloud_notm}} CLI and the Kubernetes CLI plug-in. For more information, see [Installing the {{site.data.keyword.cloud_notm}} CLI](/docs/cli?topic=cloud-cli-ibmcloud-cli#ibmcloud-cli).
 
 
 ## Objectives
@@ -78,11 +79,11 @@ In this tutorial, you configure logging with LogDNA for your {{site.data.keyword
 ## Step1: Provision an {{site.data.keyword.la_full_notm}} service instance
 {: #kube_step1}
 
-To provision a service instance of {{site.data.keyword.la_full_notm}} through the {{site.data.keyword.Bluemix_notm}} console, complete the following steps:
+To provision a service instance of {{site.data.keyword.la_full_notm}} through the {{site.data.keyword.cloud_notm}} console, complete the following steps:
 
-1. Log in to the [{{site.data.keyword.Bluemix_notm}} account ![External link icon](../../../icons/launch-glyph.svg "External link icon")](http://cloud.ibm.com ) where you created your Kubernetes cluster.
+1. Log in to the [{{site.data.keyword.cloud_notm}} account ![External link icon](../../../icons/launch-glyph.svg "External link icon")](http://cloud.ibm.com ) where you created your Kubernetes cluster.
 
-2. Click **Catalog**. A list of {{site.data.keyword.Bluemix_notm}} services opens.
+2. Click **Catalog**. A list of {{site.data.keyword.cloud_notm}} services opens.
 
 3. To filter the list of services that is displayed, select the **Developer Tools** category.
 
@@ -96,9 +97,9 @@ To provision a service instance of {{site.data.keyword.la_full_notm}} through th
 
 8. Choose a service plan for your service instance. By default, the **Lite** plan is selected for you. For more information about other service plans, see [Pricing plans](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-about#overview_pricing_plans).
 
-9. To provision the {{site.data.keyword.la_full_notm}} service in the {{site.data.keyword.Bluemix_notm}} resource group where you are logged in, click **Create**. The **Observability** dashboard opens and shows the details for your service. 
+9. To provision the {{site.data.keyword.la_full_notm}} service in the {{site.data.keyword.cloud_notm}} resource group where you are logged in, click **Create**. The **Observability** dashboard opens and shows the details for your service. 
 
-To provision an instance through the CLI, see [Provisioning an instance through the {{site.data.keyword.Bluemix_notm}} CLI](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-provision#provision_cli).
+To provision an instance through the CLI, see [Provisioning an instance through the {{site.data.keyword.cloud_notm}} CLI](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-provision#provision_cli).
 {: tip}
 
 
@@ -109,7 +110,7 @@ To configure your Kubernetes cluster to send logs to your {{site.data.keyword.la
 
 To configure your Kubernetes cluster to forward logs to your LogDNA instance, complete the following steps from the command line:
 
-1. Open a terminal to log in to {{site.data.keyword.Bluemix_notm}}.
+1. Open a terminal to log in to {{site.data.keyword.cloud_notm}}.
 
    ```
    ibmcloud login -a api.ng.bluemix.net
@@ -157,13 +158,13 @@ To configure your Kubernetes cluster to forward logs to your LogDNA instance, co
 ## Step 3: Launch the LogDNA dashboard and view logs
 {: #kube_step3}
 
-To launch the LogDNA dashboard through the {{site.data.keyword.Bluemix_notm}} console, complete the following steps:
+To launch the LogDNA dashboard through the {{site.data.keyword.cloud_notm}} console, complete the following steps:
 
-1. Log in to your [{{site.data.keyword.Bluemix_notm}} account ![External link icon](../../../icons/launch-glyph.svg "External link icon")](http://cloud.ibm.com ).
+1. Log in to your [{{site.data.keyword.cloud_notm}} account ![External link icon](../../../icons/launch-glyph.svg "External link icon")](http://cloud.ibm.com ).
 
 2. From the menu ![Menu icon](../icons/icon_hamburger.svg "Menu icon"), select **Observability**.
 
-3. Select **Logging**. The list of {{site.data.keyword.la_full_notm}} service instances that are available on {{site.data.keyword.Bluemix_notm}} is displayed.
+3. Select **Logging**. The list of {{site.data.keyword.la_full_notm}} service instances that are available on {{site.data.keyword.cloud_notm}} is displayed.
 
 4. Select one instance and click **View LogDNA**. The LogDNA dashboard opens. **Note:** With the **Free** service plan, you can tail your latest logs only. For more information, see [Viewing logs](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-view_logs#view_logs).
 

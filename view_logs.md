@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2018, 2019
-lastupdated: "2019-02-18"
+  years:  2018, 2019
+lastupdated: "2019-02-28"
 
 ---
 
@@ -14,6 +14,8 @@ lastupdated: "2019-02-18"
 {:codeblock: .codeblock}
 {:tip: .tip}
 {:download: .download}
+{:important: .important}
+{:note: .note}
 
 # Viewing logs
 {: #view_logs}
@@ -42,22 +44,22 @@ The following table lists the minimum policies that a user must have to be able 
 For more information on how to configure these policies for a user, see [Granting permissions to a user to view logs in LogDNA](/docs/services/Log-Analysis-with-LogDNA/work_iam.html#user_logdna).
 
 
-## Step 2: Launch the Web UI through the {{site.data.keyword.Bluemix_notm}} UI
+## Step 2: Launch the Web UI through the {{site.data.keyword.cloud_notm}} UI
 {: #view_logs_step2}
 
-To launch IBM the Log Analysis with LogDNA UI through the {{site.data.keyword.Bluemix_notm}} UI, complete the following steps:
+To launch IBM the Log Analysis with LogDNA UI through the {{site.data.keyword.cloud_notm}} UI, complete the following steps:
 
-1. Log in to your {{site.data.keyword.Bluemix_notm}} account.
+1. Log in to your {{site.data.keyword.cloud_notm}} account.
 
-    The {{site.data.keyword.Bluemix_notm}} dashboard can be found at: [http://bluemix.net ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://bluemix.net){:new_window}.
+    The {{site.data.keyword.cloud_notm}} dashboard can be found at: [http://bluemix.net ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://bluemix.net){:new_window}.
 
-	After you log in with your user ID and password, the {{site.data.keyword.Bluemix_notm}} Dashboard opens.
+	After you log in with your user ID and password, the {{site.data.keyword.cloud_notm}} Dashboard opens.
 
 2. In the navigation menu, select **Observability**. 
 
 3. Select **Logging**. 
 
-    The list of IBM Log Analysis with LogDNA instances that are available on {{site.data.keyword.Bluemix_notm}} is displayed.
+    The list of IBM Log Analysis with LogDNA instances that are available on {{site.data.keyword.cloud_notm}} is displayed.
 
 4. Select one instance. Then, click **View LogDNA**.
 

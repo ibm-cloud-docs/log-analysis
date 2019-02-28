@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2019
-lastupdated: "2019-02-18"
+lastupdated: "2019-02-28"
 
 ---
 
@@ -14,6 +14,8 @@ lastupdated: "2019-02-18"
 {:codeblock: .codeblock}
 {:tip: .tip}
 {:download: .download}
+{:important: .important}
+{:note: .note}
 
  
 # Archiving logs to IBM Cloud Object Storage
@@ -48,7 +50,7 @@ Complete the following steps to archive an IBM Log Analysis with LogDNA instance
 ## Step 1: Grant IAM policies to a user to work with IBM Cloud Object Storage
 {: #archiving_step1}
 
-**Note:** This step must be completed by the account owner or an administrator of the {{site.data.keyword.cos_full_notm}} service on the {{site.data.keyword.Bluemix_notm}}.
+**Note:** This step must be completed by the account owner or an administrator of the {{site.data.keyword.cos_full_notm}} service on the {{site.data.keyword.cloud_notm}}.
 
 As an administrator of the {{site.data.keyword.cos_full_notm}} service, you must be able to provision instances of the service, grant other users permissions to work with these instances, and create service IDs. 
 
@@ -90,17 +92,17 @@ Complete the following steps to assign a user administrator role to the {{site.d
 ## Step 2: Provision an instance of IBM Cloud Object Storage
 {: #archiving_step2}
 
-**Note:** This step must be completed by an editor, or administrator of the {{site.data.keyword.cos_full_notm}} service on the {{site.data.keyword.Bluemix_notm}}. 
+**Note:** This step must be completed by an editor, or administrator of the {{site.data.keyword.cos_full_notm}} service on the {{site.data.keyword.cloud_notm}}. 
 
 Complete the following steps to provision an {{site.data.keyword.cos_full_notm}} instance:
 
-1. Log in to your {{site.data.keyword.Bluemix_notm}} account.
+1. Log in to your {{site.data.keyword.cloud_notm}} account.
 
-    The {{site.data.keyword.Bluemix_notm}} dashboard can be found at: [http://cloud.ibm.com ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://cloud.ibm.com){:new_window}.
+    The {{site.data.keyword.cloud_notm}} dashboard can be found at: [http://cloud.ibm.com ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://cloud.ibm.com){:new_window}.
 
-	After you log in with your user ID and password, the {{site.data.keyword.Bluemix_notm}} UI opens.
+	After you log in with your user ID and password, the {{site.data.keyword.cloud_notm}} UI opens.
 
-2. Click **Catalog**. The list of the services that are available in {{site.data.keyword.Bluemix_notm}} opens.
+2. Click **Catalog**. The list of the services that are available in {{site.data.keyword.cloud_notm}} opens.
 
 3. To filter the list of services that is displayed, select the **Storage** category.
 
@@ -139,11 +141,11 @@ To manage buckets, your user must be granted permissions to work with buckets on
 
 Complete the following steps to create a bucket:
 
-1. Log in to your {{site.data.keyword.Bluemix_notm}} account.
+1. Log in to your {{site.data.keyword.cloud_notm}} account.
 
-    The {{site.data.keyword.Bluemix_notm}} dashboard can be found at: [http://cloud.ibm.com ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://cloud.ibm.com){:new_window}.
+    The {{site.data.keyword.cloud_notm}} dashboard can be found at: [http://cloud.ibm.com ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://cloud.ibm.com){:new_window}.
 
-	After you log in with your user ID and password, the {{site.data.keyword.Bluemix_notm}} Dashboard opens.
+	After you log in with your user ID and password, the {{site.data.keyword.cloud_notm}} Dashboard opens.
 
 2. From the Dashboard, select the {{site.data.keyword.cos_full_notm}} instance where you plan to create the bucket.
 
@@ -193,11 +195,11 @@ You must assign specific access policies to the service ID that restrict permiss
 
 Complete the following steps to create a service ID with writing permissions for the {{site.data.keyword.cos_full_notm}} instance:
 
-1. Log in to your {{site.data.keyword.Bluemix_notm}} account.
+1. Log in to your {{site.data.keyword.cloud_notm}} account.
 
-    The {{site.data.keyword.Bluemix_notm}} dashboard can be found at: [http://cloud.ibm.com ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://cloud.ibm.com){:new_window}.
+    The {{site.data.keyword.cloud_notm}} dashboard can be found at: [http://cloud.ibm.com ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://cloud.ibm.com){:new_window}.
 
-	After you log in with your user ID and password, the {{site.data.keyword.Bluemix_notm}} Dashboard opens.
+	After you log in with your user ID and password, the {{site.data.keyword.cloud_notm}} Dashboard opens.
 
 2. From the Dashboard, select the {{site.data.keyword.cos_full_notm}} instance where you plan to create the bucket.
 
@@ -249,11 +251,11 @@ An endpoint defines where to look for a bucket. There are different endpoints de
 
 Complete the following steps to obtain the endpoint for your bucket:
 
-1. Log in to your {{site.data.keyword.Bluemix_notm}} account.
+1. Log in to your {{site.data.keyword.cloud_notm}} account.
 
-    The {{site.data.keyword.Bluemix_notm}} dashboard can be found at: [http://cloud.ibm.com ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://cloud.ibm.com){:new_window}.
+    The {{site.data.keyword.cloud_notm}} dashboard can be found at: [http://cloud.ibm.com ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://cloud.ibm.com){:new_window}.
 
-	After you log in with your user ID and password, the {{site.data.keyword.Bluemix_notm}} Dashboard opens.
+	After you log in with your user ID and password, the {{site.data.keyword.cloud_notm}} Dashboard opens.
 
 2. From the Dashboard, select the {{site.data.keyword.cos_full_notm}} instance where you plan to create the bucket.
 

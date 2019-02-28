@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2018, 2019
-lastupdated: "2019-02-18"
+  years:  2018, 2019
+lastupdated: "2019-02-28"
 
 ---
 
@@ -14,6 +14,8 @@ lastupdated: "2019-02-18"
 {:codeblock: .codeblock}
 {:tip: .tip}
 {:download: .download}
+{:important: .important}
+{:note: .note}
 
 
 # Resetting the ingestion key used by a Kubernetes cluster to forward logs to an IBM Log Analysis with LogDNA instance
@@ -42,7 +44,7 @@ To complete the steps in this tutorial, your {{site.data.keyword.IBM_notm}}ID mu
 
 For more information about the {{site.data.keyword.containerlong}} IAM roles, see [User access permissions](/docs/containers?topic=containers-access_reference#access_reference).
 
-Install the {{site.data.keyword.Bluemix_notm}} CLI and the Kubernetes CLI plug-in. For more information, see [Installing the {{site.data.keyword.Bluemix_notm}} CLI](/docs/cli?topic=cloud-cli-ibmcloud-cli#ibmcloud-cli).
+Install the {{site.data.keyword.cloud_notm}} CLI and the Kubernetes CLI plug-in. For more information, see [Installing the {{site.data.keyword.cloud_notm}} CLI](/docs/cli?topic=cloud-cli-ibmcloud-cli#ibmcloud-cli).
 
 
 ## Step 1: Reset the ingestion key
@@ -70,7 +72,7 @@ To renew the ingestion key for an IBM Log Analysis with LogDNA instance by using
 
 Complete the following steps:
 
-1. Open a terminal. Then, log in to the {{site.data.keyword.Bluemix_notm}}. Run the following command and follow the prompts:
+1. Open a terminal. Then, log in to the {{site.data.keyword.cloud_notm}}. Run the following command and follow the prompts:
 
     ```
     ibmcloud login -a api.ng.bluemix.net
@@ -92,7 +94,7 @@ Complete the following steps:
 
     Then, copy and paste the command that is displayed in your terminal to set the KUBECONFIG environment variable.
 
-    **Note:** Every time you log in to the {{site.data.keyword.containerlong}} CLI to work with clusters, you must run these commands to set the path to the cluster's configuration file as a session variable. The Kubernetes CLI uses this variable to find a local configuration file and certificates that are necessary to connect with the cluster in {{site.data.keyword.Bluemix_notm}}.
+    **Note:** Every time you log in to the {{site.data.keyword.containerlong}} CLI to work with clusters, you must run these commands to set the path to the cluster's configuration file as a session variable. The Kubernetes CLI uses this variable to find a local configuration file and certificates that are necessary to connect with the cluster in {{site.data.keyword.cloud_notm}}.
 
 3. Remove the secret from your Kubernetes cluster. The Kubernetes secret contains the LogDNA ingestion key. Run the following command:
 
@@ -123,7 +125,7 @@ Complete the following steps:
 
 To configure your Kubernetes cluster to forward logs to your LogDNA instance, complete the following steps from the command line:
 
-1. Open a terminal. Then, log in to the {{site.data.keyword.Bluemix_notm}}. Run the following command and follow the prompts:
+1. Open a terminal. Then, log in to the {{site.data.keyword.cloud_notm}}. Run the following command and follow the prompts:
 
     ```
     ibmcloud login -a api.ng.bluemix.net
@@ -145,7 +147,7 @@ To configure your Kubernetes cluster to forward logs to your LogDNA instance, co
 
     Then, copy and paste the command that is displayed in your terminal to set the KUBECONFIG environment variable.
 
-    **Note:** Every time you log in to the {{site.data.keyword.containerlong}} CLI to work with clusters, you must run these commands to set the path to the cluster's configuration file as a session variable. The Kubernetes CLI uses this variable to find a local configuration file and certificates that are necessary to connect with the cluster in {{site.data.keyword.Bluemix_notm}}.
+    **Note:** Every time you log in to the {{site.data.keyword.containerlong}} CLI to work with clusters, you must run these commands to set the path to the cluster's configuration file as a session variable. The Kubernetes CLI uses this variable to find a local configuration file and certificates that are necessary to connect with the cluster in {{site.data.keyword.cloud_notm}}.
 
 3. Add a secret to your Kubernetes cluster. Run the following command:
 
@@ -180,19 +182,19 @@ To configure your Kubernetes cluster to forward logs to your LogDNA instance, co
 ## Step 4: Launch the LogDNA Web UI
 {: #kube_reset_step4}
 
-To launch IBM the Log Analysis with LogDNA dashboard through the {{site.data.keyword.Bluemix_notm}} UI, complete the following steps:
+To launch IBM the Log Analysis with LogDNA dashboard through the {{site.data.keyword.cloud_notm}} UI, complete the following steps:
 
-1. Log in to your {{site.data.keyword.Bluemix_notm}} account.
+1. Log in to your {{site.data.keyword.cloud_notm}} account.
 
-    The {{site.data.keyword.Bluemix_notm}} dashboard can be found at: [http://cloud.ibm.com ![External link icon](../../../icons/launch-glyph.svg "External link icon")](http://cloud.ibm.com){:new_window}.
+    The {{site.data.keyword.cloud_notm}} dashboard can be found at: [http://cloud.ibm.com ![External link icon](../../../icons/launch-glyph.svg "External link icon")](http://cloud.ibm.com){:new_window}.
 
-	After you log in with your user ID and password, the {{site.data.keyword.Bluemix_notm}} Dashboard opens.
+	After you log in with your user ID and password, the {{site.data.keyword.cloud_notm}} Dashboard opens.
 
 2. In the navigation menu, select **Observability**. 
 
 3. Select **Logging**. 
 
-    The list of IBM Log Analysis with LogDNA instances that are available on {{site.data.keyword.Bluemix_notm}} is displayed.
+    The list of IBM Log Analysis with LogDNA instances that are available on {{site.data.keyword.cloud_notm}} is displayed.
 
 3. Select one instance. Then, click **View logs**.
 

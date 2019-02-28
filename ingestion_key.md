@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2018, 2019
-lastupdated: "2019-02-18"
+  years:  2018, 2019
+lastupdated: "2019-02-28"
 
 ---
 
@@ -14,6 +14,8 @@ lastupdated: "2019-02-18"
 {:codeblock: .codeblock}
 {:tip: .tip}
 {:download: .download}
+{:important: .important}
+{:note: .note}
 
 # Working with ingestion keys
 {: #ingestion_key}
@@ -24,23 +26,23 @@ The ingestion key is a security key that you must use to configure LogDNA agents
 **Note:** 
 
 * To work with ingestion keys through the IBM Log Analysis with LogDNA Web UI, you must have an IAM policy with platform role **Viewer** and service role **Manager** for the IBM Log Analysis with LogDNA service. 
-* To work with ingestion keys through the {{site.data.keyword.Bluemix_notm}} UI, you must have an IAM policy with platform role **Editor** and service role **Manager** for the IBM Log Analysis with LogDNA service. 
+* To work with ingestion keys through the {{site.data.keyword.cloud_notm}} UI, you must have an IAM policy with platform role **Editor** and service role **Manager** for the IBM Log Analysis with LogDNA service. 
 
 
-## Get the ingestion key through the {{site.data.keyword.Bluemix_notm}} UI
+## Get the ingestion key through the {{site.data.keyword.cloud_notm}} UI
 {: #ibm_cloud_ui}
 
-To get the ingestion key for an IBM Log Analysis with LogDNA instance by using the {{site.data.keyword.Bluemix_notm}} UI, complete the following steps:
+To get the ingestion key for an IBM Log Analysis with LogDNA instance by using the {{site.data.keyword.cloud_notm}} UI, complete the following steps:
 
-1. Log in to your {{site.data.keyword.Bluemix_notm}} account.
+1. Log in to your {{site.data.keyword.cloud_notm}} account.
 
-    The {{site.data.keyword.Bluemix_notm}} dashboard can be found at: [http://cloud.ibm.com ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://cloud.ibm.com){:new_window}.
+    The {{site.data.keyword.cloud_notm}} dashboard can be found at: [http://cloud.ibm.com ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://cloud.ibm.com){:new_window}.
 
-	After you log in with your user ID and password, the {{site.data.keyword.Bluemix_notm}} UI opens.
+	After you log in with your user ID and password, the {{site.data.keyword.cloud_notm}} UI opens.
 
 2. In the navigation menu, select **Observability**. 
 
-3. Select **Logging**. The IBM Log Analysis with LogDNA dashboard opens. You can see the list of logging instances that are available on {{site.data.keyword.Bluemix_notm}}.
+3. Select **Logging**. The IBM Log Analysis with LogDNA dashboard opens. You can see the list of logging instances that are available on {{site.data.keyword.cloud_notm}}.
 
 3. Identify the instance for which you want to get the ingestion key, and click **View ingestion key**.
 
@@ -63,18 +65,18 @@ You can see the ingestion keys that have been created.
 **Note:** Only one ingestion key is active at once. 
 
 
-## Get the ingestion key through the {{site.data.keyword.Bluemix_notm}} CLI
+## Get the ingestion key through the {{site.data.keyword.cloud_notm}} CLI
 {: #ibm_cloud_cli}
 
 To get the ingestion key for an IBM Log Analysis with LogDNA instance through the command line, complete the following steps:
 
-1. [Pre-requisite] Install the {{site.data.keyword.Bluemix_notm}} CLI.
+1. [Pre-requisite] Install the {{site.data.keyword.cloud_notm}} CLI.
 
-   For more information, see [Installing the {{site.data.keyword.Bluemix_notm}} CLI](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-about#about).
+   For more information, see [Installing the {{site.data.keyword.cloud_notm}} CLI](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-about#about).
 
    If the CLI is installed, continue with the next step.
 
-2. Log in to the region in the {{site.data.keyword.Bluemix_notm}} where the instance is running. Run the following command: [`ibmcloud login`](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_login)
+2. Log in to the region in the {{site.data.keyword.cloud_notm}} where the instance is running. Run the following command: [`ibmcloud login`](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_login)
 
 3. Set the resource group where the IBM Log Analysis with LogDNA instance is running. Run the following command: [`ibmcloud target`](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_target) with the option `-g`.
 

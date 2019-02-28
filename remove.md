@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2018
-lastupdated: "2018-12-14"
+  years:  2018, 2019
+lastupdated: "2019-02-28"
 
 ---
 
@@ -14,6 +14,8 @@ lastupdated: "2018-12-14"
 {:codeblock: .codeblock}
 {:tip: .tip}
 {:download: .download}
+{:important: .important}
+{:note: .note}
 
 # Removing an instance
 {: #remove}
@@ -21,7 +23,7 @@ lastupdated: "2018-12-14"
 You can remove an instance of the {{site.data.keyword.la_full_notm}} service from the {{site.data.keyword.Bluemix}} UI or through the command line.
 {:shortdesc}
 
-When you remove an instance from the {{site.data.keyword.Bluemix_notm}}, clean up by completing the following tasks, if required:
+When you remove an instance from the {{site.data.keyword.cloud_notm}}, clean up by completing the following tasks, if required:
 
 1. Write down the list of sources that forward metrics to the {{site.data.keyword.la_full_notm}} instance that you want to remove. You must remove the LogDNA agent from each source.
 2. Remove permissions granted to users to work with the instance. 
@@ -33,19 +35,19 @@ When you remove an instance from the {{site.data.keyword.Bluemix_notm}}, clean u
     If you have granted individual policies to users, you must gather the information of each user that has access, and remove one by one the policies that relate to the instance that you want to delete.
 
 
-Then, delete the instance from the {{site.data.keyword.Bluemix_notm}} Dashboard.
+Then, delete the instance from the {{site.data.keyword.cloud_notm}} Dashboard.
 
 
-## Removing an instance through the {{site.data.keyword.Bluemix_notm}} UI
+## Removing an instance through the {{site.data.keyword.cloud_notm}} UI
 {: #remove_ui}
 
-To remove an instance of {{site.data.keyword.la_full_notm}} by using the {{site.data.keyword.Bluemix_notm}} UI, complete the following steps:
+To remove an instance of {{site.data.keyword.la_full_notm}} by using the {{site.data.keyword.cloud_notm}} UI, complete the following steps:
 
-1. Log in to your {{site.data.keyword.Bluemix_notm}} account.
+1. Log in to your {{site.data.keyword.cloud_notm}} account.
 
-    The {{site.data.keyword.Bluemix_notm}} dashboard can be found at: [http://cloud.ibm.com ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://cloud.ibm.com){:new_window}.
+    The {{site.data.keyword.cloud_notm}} dashboard can be found at: [http://cloud.ibm.com ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://cloud.ibm.com){:new_window}.
 
-	After you log in with your user ID and password, the {{site.data.keyword.Bluemix_notm}} UI opens.
+	After you log in with your user ID and password, the {{site.data.keyword.cloud_notm}} UI opens.
 
 2. Go to the Menu icon ![Menu icon](../../icons/icon_hamburger.svg) &gt; **Observability** to access the *Observability* Dashboard.
 
@@ -61,13 +63,13 @@ To remove an instance of {{site.data.keyword.la_full_notm}} by using the {{site.
 
 To remove an instance of {{site.data.keyword.la_full_notm}} through the command line, complete the following steps:
 
-1. [Pre-requisite] Install the {{site.data.keyword.Bluemix_notm}} CLI.
+1. [Pre-requisite] Install the {{site.data.keyword.cloud_notm}} CLI.
 
-   For more information, see [Installing the {{site.data.keyword.Bluemix_notm}} CLI](/docs/cli?topic=cloud-cli-ibmcloud-cli#ibmcloud-cli).
+   For more information, see [Installing the {{site.data.keyword.cloud_notm}} CLI](/docs/cli?topic=cloud-cli-ibmcloud-cli#ibmcloud-cli).
 
    If the CLI is installed, continue with the next step.
 
-2. Log in to the region in the {{site.data.keyword.Bluemix_notm}} where you want to provision the instance. Run the following command: [`ibmcloud login`](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_login)
+2. Log in to the region in the {{site.data.keyword.cloud_notm}} where you want to provision the instance. Run the following command: [`ibmcloud login`](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_login)
 
 3. Set the resource group where the instance is provisioned. Run the following command: [`ibmcloud target`](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_target)
 

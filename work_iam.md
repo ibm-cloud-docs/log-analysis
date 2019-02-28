@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2019
-lastupdated: "2019-02-18"
+lastupdated: "2019-02-28"
 
 ---
 
@@ -14,18 +14,20 @@ lastupdated: "2019-02-18"
 {:codeblock: .codeblock}
 {:tip: .tip}
 {:download: .download}
+{:important: .important}
+{:note: .note}
 
  
 # Working with IAM policies and access groups
 {: #work_iam}
 
-{{site.data.keyword.iamlong}} (IAM) enables you to securely authenticate users and control access to all cloud resources consistently in the {{site.data.keyword.Bluemix_notm}}. 
+{{site.data.keyword.iamlong}} (IAM) enables you to securely authenticate users and control access to all cloud resources consistently in the {{site.data.keyword.cloud_notm}}. 
 {:shortdesc}
 
 For more information, see [Managing user access with IAM](/docs/services/Log-Analysis-with-LogDNA/iam.html#iam).
 
 
-## Granting permissions to a user to become an administrator of the service in the {{site.data.keyword.Bluemix_notm}} account
+## Granting permissions to a user to become an administrator of the service in the {{site.data.keyword.cloud_notm}} account
 {: #admin_account}
 
 As the **account owner** or as an **IBM Log Analysis with LogDNA service administrator**, you must have permissions to run the following actions: 
@@ -80,7 +82,7 @@ Complete the following steps to assign a user administrator role to the IBM Log 
 8. Click **Assign**.
 
 
-## Granting permissions to a Devops user to manage the service in the {{site.data.keyword.Bluemix_notm}} account
+## Granting permissions to a Devops user to manage the service in the {{site.data.keyword.cloud_notm}} account
 {: #devops_account}
 
 As a **Devops user**, you must have permissions to run the following actions: 
@@ -102,7 +104,7 @@ Complete the following steps to assign a user editor role to the IBM Log Analysi
 6. Select the platform role **Editor**.
 7. Click Assign.
 
-## Granting permissions to a Devops user to manage an instance in the {{site.data.keyword.Bluemix_notm}} account
+## Granting permissions to a Devops user to manage an instance in the {{site.data.keyword.cloud_notm}} account
 {: #devops_account_instance}
 
 Complete the following steps to assign a user editor role on one instance of the IBM Log Analysis with LogDNA service in the account: 
@@ -158,7 +160,7 @@ As an **admin user** in LogDNA, you must have permissions to run the following a
 
 Therefore, you need the following policies:
 
-* An IAM policy for the IBM Log Analysis with LogDNA service with the platform role **Editor**. This policy allows you to view the service instance details through the command line and in the {{site.data.keyword.Bluemix_notm}} dashboard.
+* An IAM policy for the IBM Log Analysis with LogDNA service with the platform role **Editor**. This policy allows you to view the service instance details through the command line and in the {{site.data.keyword.cloud_notm}} dashboard.
 * An IAM policy for the IBM Log Analysis with LogDNA service with the service role **Manager**. This policy allows you to monitor, filter and search log, and define alerts through the LogDNA web UI.
 
 **Note:** As an administrator of the service, when you grant a user these policies, consider doing it within the context of a resource group. An IBM Log Analysis with LogDNA instance is provisioned within the context of a resource group. Therefore, you should grant access permissions within the context of the resource group.
@@ -192,7 +194,7 @@ As a **user**, **auditor**, or **developer**, you might need permissions to run 
 
 Therefore, you need the following policies:
 
-* An IAM policy for the IBM Log Analysis with LogDNA service with the platform role **Viewer**. This policy allows you to view the service instance details through the command line and in the {{site.data.keyword.Bluemix_notm}} dashboard.
+* An IAM policy for the IBM Log Analysis with LogDNA service with the platform role **Viewer**. This policy allows you to view the service instance details through the command line and in the {{site.data.keyword.cloud_notm}} dashboard.
 * An IAM policy for the IBM Log Analysis with LogDNA service with the service role **Reader**. This policy allows you to view, filter and search logs through the LogDNA web UI.
 
 **Note:** As an administrator of the service, when you grant a user these policies, consider doing it within the context of a resource group. An IBM Log Analysis with LogDNA instance is provisioned within the context of a resource group. Therefore, you should grant access permissions within the context of the resource group.

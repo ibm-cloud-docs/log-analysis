@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2018, 2019
-lastupdated: "2019-02-18"
+  years:  2018, 2019
+lastupdated: "2019-02-28"
 
 ---
 
@@ -14,6 +14,8 @@ lastupdated: "2019-02-18"
 {:codeblock: .codeblock}
 {:tip: .tip}
 {:download: .download}
+{:important: .important}
+{:note: .note}
 
 # Configuring a LogDNA agent
 {: #config_agent}
@@ -46,7 +48,7 @@ To configure your Kubernetes cluster to send logs to your {{site.data.keyword.la
 
 To configure your Kubernetes cluster to forward logs to your LogDNA instance, complete the following steps from the command line:
 
-1. Open a terminal to log in to {{site.data.keyword.Bluemix_notm}}.
+1. Open a terminal to log in to {{site.data.keyword.cloud_notm}}.
 
    ```
    ibmcloud login -a api.ng.bluemix.net
@@ -115,7 +117,7 @@ Complete the following steps to add tags:
 
     Then, copy and paste the command that is displayed in your terminal to set the KUBECONFIG environment variable.
 
-    **Note:** Every time you log in to the {{site.data.keyword.containerlong}} CLI to work with clusters, you must run these commands to set the path to the cluster's configuration file as a session variable. The Kubernetes CLI uses this variable to find a local configuration file and certificates that are necessary to connect with the cluster in {{site.data.keyword.Bluemix_notm}}.
+    **Note:** Every time you log in to the {{site.data.keyword.containerlong}} CLI to work with clusters, you must run these commands to set the path to the cluster's configuration file as a session variable. The Kubernetes CLI uses this variable to find a local configuration file and certificates that are necessary to connect with the cluster in {{site.data.keyword.cloud_notm}}.
 
 2. Check the update strategy of the DaemonSet. Then, choose whether to use *kubectl apply* or *kubectl edit* to modify the configuration file for the agent.
 

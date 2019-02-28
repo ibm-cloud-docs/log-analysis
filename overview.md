@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2018
-lastupdated: "2018-11-15"
+  years:  2018, 2019
+lastupdated: "2019-02-28"
 
 ---
 
@@ -23,7 +23,7 @@ lastupdated: "2018-11-15"
 IBM Log Analysis with LogDNA is a third-party service that you can include as part of your {{site.data.keyword.Bluemix}} architecture to add log management capabilities. IBM Log Analysis with LogDNA is operated by LogDNA in partnership with {{site.data.keyword.IBM_notm}}.
 {:shortdesc}
 
-You can use IBM Log Analysis with LogDNA to manage system and application logs in the {{site.data.keyword.Bluemix_notm}}.
+You can use IBM Log Analysis with LogDNA to manage system and application logs in the {{site.data.keyword.cloud_notm}}.
 
 IBM Log Analysis with LogDNA offers administrators, DevOps teams, and developers advanced features to filter, search, and tail log data, define alerts, and design custom views to monitor application and system logs.
 
@@ -31,12 +31,12 @@ IBM Log Analysis with LogDNA offers administrators, DevOps teams, and developers
 ## Overview
 {: #ov}
 
-To add logging features with LogDNA in the {{site.data.keyword.Bluemix_notm}}, you must provision an instance of IBM Log Analysis with LogDNA.
+To add logging features with LogDNA in the {{site.data.keyword.cloud_notm}}, you must provision an instance of IBM Log Analysis with LogDNA.
 
 Before you provision an instance of IBM Log Analysis with LogDNA, consider the following information:
-* Log data is hosted on the {{site.data.keyword.Bluemix_notm}}.
+* Log data is hosted on the {{site.data.keyword.cloud_notm}}.
 * Log data is sent to a third party.
-* Your users must have platform permissions to create, view, and delete an instance of a service in the {{site.data.keyword.Bluemix_notm}}.
+* Your users must have platform permissions to create, view, and delete an instance of a service in the {{site.data.keyword.cloud_notm}}.
 * Your users must have platform permissions to create resources within the context of the resource group where you plan to provision the LogDNA instance.
 
 You provision an IBM Log Analysis with LogDNA instance within the context of a resource group. A resource group lets you organize your services for access control and billing purposes. You can provision the instance in the *default* resource group or in a custom resource group.
@@ -49,9 +49,9 @@ After the LogDNA agent is deployed in a log source, collection and forwarding of
 
 You can launch the IBM Log Analysis with LogDNA Web UI to view, monitor, and manage your logs.
 
-The following figure shows the components overview for the IBM Log Analysis with LogDNA service that is running on {{site.data.keyword.Bluemix_notm}}:
+The following figure shows the components overview for the IBM Log Analysis with LogDNA service that is running on {{site.data.keyword.cloud_notm}}:
 
-![IBM Log Analysis with LogDNA component overview on the {{site.data.keyword.Bluemix_notm}}](images/components.png "IBM Log Analysis with LogDNA component overview on the {{site.data.keyword.Bluemix_notm}}")
+![IBM Log Analysis with LogDNA component overview on the {{site.data.keyword.cloud_notm}}](images/components.png "IBM Log Analysis with LogDNA component overview on the {{site.data.keyword.cloud_notm}}")
 
 
 ## Log data
@@ -59,12 +59,12 @@ The following figure shows the components overview for the IBM Log Analysis with
 
 IBM Log Analysis with LogDNA collects and aggregates logs in one centralized logging system.
 
-* Log data is hosted on the {{site.data.keyword.Bluemix_notm}}.
+* Log data is hosted on the {{site.data.keyword.cloud_notm}}.
 * Data is colocated in the region where the IBM Log Analysis with LogDNA instance is provisioned. For example, log data for an instance provisioned in US South is hosted in the US South region.
 
 The service plan that you choose for an IBM Log Analysis with LogDNA instance defines the number of days that data is stored and retained in LogDNA. For example, if you choose the *Free* plan, data is not stored at all. However, if you choose the 7 day plan, data is stored for 7 days and you have access to it through the LogDNA Web UI.
 
-When you delete an instance of IBM Log Analysis with LogDNA from the {{site.data.keyword.Bluemix_notm}}, all the data is deleted.
+When you delete an instance of IBM Log Analysis with LogDNA from the {{site.data.keyword.cloud_notm}}, all the data is deleted.
 
 
 
@@ -129,4 +129,6 @@ Logging with IBM Log Analysis with LogDNA is available in the following regions:
 
 Currently, the **Frankfurt** location is **not** EU-managed.
 {: important}
+
+
 

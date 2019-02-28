@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2018
-lastupdated: "2018-11-15"
+  years:  2018, 2019
+lastupdated: "2019-02-28"
 
 ---
 
@@ -14,11 +14,13 @@ lastupdated: "2018-11-15"
 {:codeblock: .codeblock}
 {:tip: .tip}
 {:download: .download}
+{:important: .important}
+{:note: .note}
 
 # Log sources
 {: #log_sources}
 
-You can configure {{site.data.keyword.Bluemix_notm}} log sources and on-premisses log sources to forward logs to an IBM Log Analysis with LogDNA instance. 
+You can configure {{site.data.keyword.cloud_notm}} log sources and on-premisses log sources to forward logs to an IBM Log Analysis with LogDNA instance. 
 {:shortdesc}
 
 
