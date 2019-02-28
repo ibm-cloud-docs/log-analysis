@@ -29,7 +29,7 @@ When you launch the IBM Log Analysis with LogDNA Web UI, log entries are display
 Complete the following steps to view logs:
 
 
-## Step 1: Grant IAM policies to a user to view logs
+## Grant IAM policies to a user to view logs
 {: #view_logs_step1}
 
 **Note:** You must be an adminsitrator of the IBM Log Analysis with LogDNA service, an administrator of the IBM Log Analysis with LogDNA instance, or have account IAM permissions to grant other users policies.
@@ -44,7 +44,7 @@ The following table lists the minimum policies that a user must have to be able 
 For more information on how to configure these policies for a user, see [Granting permissions to a user to view logs in LogDNA](/docs/services/Log-Analysis-with-LogDNA/work_iam.html#user_logdna).
 
 
-## Step 2: Launch the Web UI through the {{site.data.keyword.cloud_notm}} UI
+## Navigate to the Web UI through the {{site.data.keyword.cloud_notm}} UI
 {: #view_logs_step2}
 
 To launch IBM the Log Analysis with LogDNA UI through the {{site.data.keyword.cloud_notm}} UI, complete the following steps:
@@ -66,7 +66,7 @@ To launch IBM the Log Analysis with LogDNA UI through the {{site.data.keyword.cl
 The IBM Log Analysis with LogDNA Web UI opens and displays logs forwarded to that instance.
 
 
-## Step 3: Customize your default view
+## Customize your default view
 {: #view_logs_step3}
 
 In the **USER PREFERENCES** section, you can modify the order of the data fields that are displayed per line.
@@ -79,7 +79,7 @@ Complete the following steps to modify the format of a log line:
 4. Modify the *Line Format* section to match your requirements. Drag boxes.
 
 
-## Step 4: Look into a log line
+## Look into a log line
 {: #view_logs_step4}
 
 At any time, you can view each log line in context.
@@ -100,7 +100,7 @@ Complete the following steps:
 When you are finished, close the line.
 
 
-## Step 5: Filter logs
+## Filter logs
 {: #view_logs_step5}
 
 You can filter logs by log source, application, and log level. 
@@ -124,7 +124,7 @@ Complete the following steps to filter logs:
 To create a group, select multiple values. Then, click **Save as group**. Enter a name for the group, and save it.
 
 
-## Step 6: Search logs
+## Search logs
 {: #view_logs_step6}
 
 When you search log data, the search applies any log filters and time queries configured in that view.
@@ -135,7 +135,7 @@ You can do simple searches (single term string search), compound search (multipl
 
 
 
-## Step 7: Create views
+## Create views
 {: #view_logs_step7}
 
 
