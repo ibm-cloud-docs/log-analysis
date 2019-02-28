@@ -21,7 +21,7 @@ lastupdated: "2019-02-28"
 # Sending logs
 {: #ingest}
 
-You can send log data to an IBM Log Analysis with LogDNA instance. 
+You can send log data to an {{site.data.keyword.la_full_notm}} instance. 
 {:shortdesc}
 
 Complete the following steps to send logs programmatically:
@@ -29,11 +29,11 @@ Complete the following steps to send logs programmatically:
 ## Step 1. Get the ingestion API key 
 {: #ingest_step1}
 
-**Note:** You must have **manager** role for the IBM Log Analysis with LogDNA instance or service to complete this step. For more information, see [Granting permissions to manage logs and configure alerts in LogDNA](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-work_iam#admin_user_logdna).
+**Note:** You must have **manager** role for the {{site.data.keyword.la_full_notm}} instance or service to complete this step. For more information, see [Granting permissions to manage logs and configure alerts in LogDNA](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-work_iam#admin_user_logdna).
 
 Complete the following steps to get the ingestion key:
     
-1. Launch the IBM Log Analysis with LogDNA web UI. For more information, see [Navigate to the IBM Log Analysis with LogDNA Web UI](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-view_logs#view_logs_step2).
+1. Launch the {{site.data.keyword.la_full_notm}} web UI. For more information, see [Navigate to the {{site.data.keyword.la_full_notm}} Web UI](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-view_logs#view_logs_step2).
 
 2. Select the **Configuration** icon ![Configuration icon](images/admin.png). Then, select **Organization**. 
 
@@ -118,7 +118,7 @@ For example, the following sample shows the JSON for a log line that you want to
 ## Example
 {: #ingest_example}
 
-The following sample shows the cURL command to send 1 log line to an instance of the IBM Log Analysis with LogDNA service: 
+The following sample shows the cURL command to send 1 log line to an instance of the {{site.data.keyword.la_full_notm}} service: 
 
 ```
 curl "https://logs.us-south.logging.cloud.ibm.com/logs/ingest?hostname=MYHOST&now=$(date +%s)000" -u xxxxxxxxxxxxxxxxxxxxxxx: --header "Content-Type: application/json; charset=UTF-8" -d "{\"lines\":[{\"line\":\"This is a sample test log statement\",\"timestamp\":\"2018-11-02T10:53:06+00:00\",\"level\":\"INFO\",\"app\":\"myapp\"}]}"

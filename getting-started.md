@@ -17,17 +17,17 @@ lastupdated: "2019-02-28"
 {:important: .important}
 {:note: .note}
 
-# Getting started with IBM Log Analysis with LogDNA
+# Getting started with {{site.data.keyword.la_full_notm}}
 {: #getting-started}
 
-Use IBM Log Analysis with LogDNA to add log management capabilities to your {{site.data.keyword.cloud_notm}} architecture. IBM Log Analysis with LogDNA is operated by LogDNA in partnership with {{site.data.keyword.IBM_notm}}.
+Use {{site.data.keyword.la_full}} to add log management capabilities to your {{site.data.keyword.cloud_notm}} architecture. {{site.data.keyword.la_full_notm}} is operated by LogDNA in partnership with {{site.data.keyword.IBM_notm}}.
 {:shortdesc}
 
 
 ## Step 1. Before you begin
 {: #getting-started_prereqs}
 
-* Read about IBM Log Analysis with LogDNA. For more information, see [About IBM Log Analysis with LogDNA](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-about#about).
+* Read about {{site.data.keyword.la_full_notm}}. For more information, see [About {{site.data.keyword.la_full_notm}}](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-about#about).
 * Check the regions where the service is available. For more information, see [Regions](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-about#overview_regions).
 * Get a user ID that is a member or an owner of an {{site.data.keyword.cloud_notm}} account. 
 
@@ -38,12 +38,12 @@ Use IBM Log Analysis with LogDNA to add log management capabilities to your {{si
 ## Step 2. Get started
 {: #getting-started_step2}
 
-Choose a cloud resource for which you want to manage logs. Then, configure this log source so that you can monitor its logs through the IBM Log Analysis with LogDNA service. The log source can be located in the same region where you provision an {{site.data.keyword.la_full_notm}} instance or in a different region.
+Choose a cloud resource for which you want to manage logs. Then, configure this log source so that you can monitor its logs through the {{site.data.keyword.la_full_notm}} service. The log source can be located in the same region where you provision an {{site.data.keyword.la_full_notm}} instance or in a different region.
 
-The following table lists cloud resources that you can configure to store and manage logs by using the IBM Log Analysis with LogDNA service. Complete the tutorial for a resource to get started working with the {{site.data.keyword.loganalysisshort}} service:
+The following table lists cloud resources that you can configure to store and manage logs by using the {{site.data.keyword.la_full_notm}} service. Complete the tutorial for a resource to get started working with the {{site.data.keyword.loganalysisshort}} service:
 
 <table>
-  <caption>Tutorials to get started working with the IBM Log Analysis with LogDNA service </caption>
+  <caption>Tutorials to get started working with the {{site.data.keyword.la_full_notm}} service </caption>
   <tr>
     <th>Resource</th>
     <th>Tutorial</th>
@@ -52,15 +52,15 @@ The following table lists cloud resources that you can configure to store and ma
   </tr>
   <tr>
     <td>Containers running on the {{site.data.keyword.containershort}}</td>
-    <td>[Managing Kubernetes cluster logs with IBM Log Analysis with LogDNA](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-kube#kube)</td>
+    <td>[Managing Kubernetes cluster logs with {{site.data.keyword.la_full_notm}}](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-kube#kube)</td>
     <td>{{site.data.keyword.cloud_notm}} Public </td>
-    <td>![{{site.data.keyword.containershort}} and the IBM Log Analysis with LogDNA](images/kube.png "{{site.data.keyword.containershort}} and the IBM Log Analysis with LogDNA")</td>
+    <td>![{{site.data.keyword.containershort}} and the {{site.data.keyword.la_full_notm}}](images/kube.png "{{site.data.keyword.containershort}} and the {{site.data.keyword.la_full_notm}}")</td>
   </tr>
   <tr>
     <td>Linux Ubuntu/Debian</td>
-    <td>[Managing Linux Ubuntu logs with IBM Log Analysis with LogDNA](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-ubuntu#ubuntu)</td>
+    <td>[Managing Linux Ubuntu logs with {{site.data.keyword.la_full_notm}}](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-ubuntu#ubuntu)</td>
     <td>On premisses</td>
-    <td>![Ubuntu server and the IBM Log Analysis with LogDNA](images/ubuntu.png "Ubuntu server and the IBM Log Analysis with LogDNA")</td>
+    <td>![Ubuntu server and the {{site.data.keyword.la_full_notm}}](images/ubuntu.png "Ubuntu server and the {{site.data.keyword.la_full_notm}}")</td>
   </tr>
 </table>
 
@@ -71,18 +71,18 @@ The following table lists cloud resources that you can configure to store and ma
 
 Enable additional logging features.
 
-Upgrade the IBM Log Analysis with LogDNA service plan to a paid plan to be able to [filter logs](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-view_logs#view_logs_step5), [search logs](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-view_logs#view_logs_step6), [define views](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-view_logs#view_logs_step7), and [configure alerts](https://docs.logdna.com/docs/alerts). . For more information about IBM Log Analysis with LogDNA service plans, see [Pricing plans](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-about#overview_pricing_plans).
+Upgrade the {{site.data.keyword.la_full_notm}} service plan to a paid plan to be able to [filter logs](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-view_logs#view_logs_step5), [search logs](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-view_logs#view_logs_step6), [define views](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-view_logs#view_logs_step7), and [configure alerts](https://docs.logdna.com/docs/alerts). . For more information about {{site.data.keyword.la_full_notm}} service plans, see [Pricing plans](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-about#overview_pricing_plans).
 
 ## Step 4. Next steps 
 {: #getting-started_iam}
 
 Next, manage user access with IAM.
 
-Identify the IAM policies that a user needs to work with the IBM Log Analysis with LogDNA service.
+Identify the IAM policies that a user needs to work with the {{site.data.keyword.la_full_notm}} service.
 
-To learn more about IAM integration with the IBM Log Analysis with LogDNA service, see [Managing user access with IAM](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-iam#iam).
+To learn more about IAM integration with the {{site.data.keyword.la_full_notm}} service, see [Managing user access with IAM](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-iam#iam).
 
-For example, learn how to grant permissions to a user to work with the IBM Log Analysis with LogDNA service:
+For example, learn how to grant permissions to a user to work with the {{site.data.keyword.la_full_notm}} service:
 
 | User role in the {{site.data.keyword.cloud_notm}} | For more information                     |
 |-----------------------------------------------------|------------------------------------------|

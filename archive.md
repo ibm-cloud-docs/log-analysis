@@ -21,22 +21,22 @@ lastupdated: "2019-02-28"
 # Archiving logs to IBM Cloud Object Storage
 {: #archiving}
 
-You can archive logs from an IBM Log Analysis with LogDNA instance into a bucket in an {{site.data.keyword.cos_full_notm}} (COS) instance. 
+You can archive logs from an {{site.data.keyword.la_full_notm}} instance into a bucket in an {{site.data.keyword.cos_full_notm}} (COS) instance. 
 {:shortdesc}
 
-To configure archiving, you must have an IAM policy with platform role **Viewer** and service role **Manager** for the IBM Log Analysis with LogDNA service.
+To configure archiving, you must have an IAM policy with platform role **Viewer** and service role **Manager** for the {{site.data.keyword.la_full_notm}} service.
 
-You archive logs from an IBM Log Analysis with LogDNA instance into a bucket in an {{site.data.keyword.cos_full_notm}} (COS) instance. Each IBM Log Analysis with LogDNA instance has its own archiving configuration. 
+You archive logs from an {{site.data.keyword.la_full_notm}} instance into a bucket in an {{site.data.keyword.cos_full_notm}} (COS) instance. Each {{site.data.keyword.la_full_notm}} instance has its own archiving configuration. 
 
 Logs are automatically archived once a day in a compressed format **(.json.gz)**. Each line preserves its metadata.
 
 Logs are archived within 24-48 hours after you save the configuration. 
 
-The {{site.data.keyword.cos_full_notm}} instance is provisioned within the context of a resource group. The IBM Log Analysis with LogDNA instance is also provisioned within the context of a resource group. Both instances can be grouped under the same resource group or in different ones. 
+The {{site.data.keyword.cos_full_notm}} instance is provisioned within the context of a resource group. The {{site.data.keyword.la_full_notm}} instance is also provisioned within the context of a resource group. Both instances can be grouped under the same resource group or in different ones. 
 
-IBM Log Analysis with LogDNA uses a service ID to communicate with the {{site.data.keyword.cos_full_notm}} service.
+{{site.data.keyword.la_full_notm}} uses a service ID to communicate with the {{site.data.keyword.cos_full_notm}} service.
 
-* The service ID that you create for an {{site.data.keyword.cos_full_notm}} instance is used by the IBM Log Analysis with LogDNA to authenticate and access the {{site.data.keyword.cos_full_notm}} instance. 
+* The service ID that you create for an {{site.data.keyword.cos_full_notm}} instance is used by the {{site.data.keyword.la_full_notm}} to authenticate and access the {{site.data.keyword.cos_full_notm}} instance. 
 * You can assign specific access policies to the service ID that restrict permissions on the {{site.data.keyword.cos_full_notm}} instance. Restrict the service ID to only have writing permissions on the bucket where you plan to archive the logs.
 
 The following figure shows a high level view of the different components that are integrated when archiving logs:
@@ -44,7 +44,7 @@ The following figure shows a high level view of the different components that ar
 ![High level view archiving logs](images/archive.png "High level view archiving logs")
 
 
-Complete the following steps to archive an IBM Log Analysis with LogDNA instance into a bucket in an {{site.data.keyword.cos_full_notm}} instance:
+Complete the following steps to archive an {{site.data.keyword.la_full_notm}} instance into a bucket in an {{site.data.keyword.cos_full_notm}} instance:
 
 
 ## Step 1: Grant IAM policies to a user to work with IBM Cloud Object Storage
@@ -81,7 +81,7 @@ Complete the following steps to assign a user administrator role to the {{site.d
 
     Depending on the role that you select, the user can view the resource group on their dashboard, edit the resource group name, or manage user access to the group. 
     
-    You can select **No access**, if you want the user to only have access to the IBM Log Analysis with LogDNA service in the resource group.
+    You can select **No access**, if you want the user to only have access to the {{site.data.keyword.la_full_notm}} service in the resource group.
 
 6. Select **Cloud Object Storage**.
 7. Select the platform role **Administrator**.
@@ -98,7 +98,7 @@ Complete the following steps to provision an {{site.data.keyword.cos_full_notm}}
 
 1. Log in to your {{site.data.keyword.cloud_notm}} account.
 
-    The {{site.data.keyword.cloud_notm}} dashboard can be found at: [https://cloud.ibm.com ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com){:new_window}.
+    Click [{{site.data.keyword.cloud_notm}} dashboard ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com){:new_window} to launch the {{site.data.keyword.cloud_notm}} dashboard.
 
 	After you log in with your user ID and password, the {{site.data.keyword.cloud_notm}} UI opens.
 
@@ -143,7 +143,7 @@ Complete the following steps to create a bucket:
 
 1. Log in to your {{site.data.keyword.cloud_notm}} account.
 
-    The {{site.data.keyword.cloud_notm}} dashboard can be found at: [https://cloud.ibm.com ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com){:new_window}.
+    Click [{{site.data.keyword.cloud_notm}} dashboard ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com){:new_window} to launch the {{site.data.keyword.cloud_notm}} dashboard.
 
 	After you log in with your user ID and password, the {{site.data.keyword.cloud_notm}} Dashboard opens.
 
@@ -155,9 +155,9 @@ Complete the following steps to create a bucket:
 
     **Note:** All buckets in all regions across the globe share a single namespace. 
 
-    You can use as part of the bucket name your IBM Log Analysis with LogDNA instance name. For example, for an instance with name *logdna-1*, you can use *accountN-logdna-1* as your bucket name.
+    You can use as part of the bucket name your {{site.data.keyword.la_full_notm}} instance name. For example, for an instance with name *logdna-1*, you can use *accountN-logdna-1* as your bucket name.
 
-    You will need this name to configure archiving through the IBM Log Analysis with LogDNA Web UI.
+    You will need this name to configure archiving through the {{site.data.keyword.la_full_notm}} web UI.
 
 5. Choose the type of resiliency and a location where you would like your data to be physically stored.
 
@@ -188,7 +188,7 @@ Complete the following steps to create a bucket:
 
 A service ID identifies a service similar to how a user ID identifies a user. Service IDs are not tied to a specific user. If the user that creates the service ID leaves your organization and is deleted from the account, the service ID remains.
 
-You must create a service ID for your {{site.data.keyword.cos_full_notm}} instance. This service ID is used by the IBM Log Analysis with LogDNA instance to authenticate with your {{site.data.keyword.cos_full_notm}} instance. 
+You must create a service ID for your {{site.data.keyword.cos_full_notm}} instance. This service ID is used by the {{site.data.keyword.la_full_notm}} instance to authenticate with your {{site.data.keyword.cos_full_notm}} instance. 
 
 You must assign specific access policies to the service ID that restrict permissions for using specific services, or even combine permissions for accessing different services. For example, to restrict access to a single bucket, ensure that the service ID doesn't have any instance level policies using either the console or CLI.
 
@@ -197,7 +197,7 @@ Complete the following steps to create a service ID with writing permissions for
 
 1. Log in to your {{site.data.keyword.cloud_notm}} account.
 
-    The {{site.data.keyword.cloud_notm}} dashboard can be found at: [https://cloud.ibm.com ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com){:new_window}.
+    Click [{{site.data.keyword.cloud_notm}} dashboard ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com){:new_window} to launch the {{site.data.keyword.cloud_notm}} dashboard.
 
 	After you log in with your user ID and password, the {{site.data.keyword.cloud_notm}} Dashboard opens.
 
@@ -253,7 +253,7 @@ Complete the following steps to obtain the endpoint for your bucket:
 
 1. Log in to your {{site.data.keyword.cloud_notm}} account.
 
-    The {{site.data.keyword.cloud_notm}} dashboard can be found at: [https://cloud.ibm.com ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com){:new_window}.
+    Click [{{site.data.keyword.cloud_notm}} dashboard ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com){:new_window} to launch the {{site.data.keyword.cloud_notm}} dashboard.
 
 	After you log in with your user ID and password, the {{site.data.keyword.cloud_notm}} Dashboard opens.
 
@@ -270,12 +270,12 @@ Complete the following steps to obtain the endpoint for your bucket:
 ## Step 7: Grant IAM policies to a user to archive logs
 {: #archiving_step7}
 
-The following table lists the policies that a user must have to be able to configure archiving of logs from IBM Log Analysis with LogDNA Web UI into a bucket in a {{site.data.keyword.cos_full_notm}} instance:
+The following table lists the policies that a user must have to be able to configure archiving of logs from {{site.data.keyword.la_full_notm}} web UI into a bucket in a {{site.data.keyword.cos_full_notm}} instance:
 
 | Service                        | Role                      | Permission granted                  | 
 |--------------------------------|---------------------------|-------------------------------------|  
-| `IBM Log Analysis with LogDNA` | Platform role: Viewer     | Allows the user to view the list of service instances in the Observability Logging dashboard. |
-| `IBM Log Analysis with LogDNA` | Service role: Manager      | Allows the user to launch the Web UI and view logs in the Web UI.                             |
+| `{{site.data.keyword.la_full_notm}}` | Platform role: Viewer     | Allows the user to view the list of service instances in the Observability Logging dashboard. |
+| `{{site.data.keyword.la_full_notm}}` | Service role: Manager      | Allows the user to launch the web UI and view logs in the web UI.                             |
 {: caption="Table 2. IAM policies" caption-side="top"} 
 
 For more information on how to configure these policies for a user, see [Granting permissions to a user to view logs in LogDNA](/docs/services/Log-Analysis-with-LogDNA/work_iam.html#user_logdna).
@@ -290,7 +290,7 @@ Complete the following steps to assign a user permissions to archive logs:
 
     Depending on the role that you select, the user can view the resource group on their dashboard, edit the resource group name, or manage user access to the group. 
     
-    You can select **No access**, if you want the user to only have access to the IBM Log Analysis with LogDNA service in the resource group.
+    You can select **No access**, if you want the user to only have access to the {{site.data.keyword.la_full_notm}} service in the resource group.
 
 6. Select **IBM Log Analysis with LogDNA**.
 7. Select the platform role **Viewer**.
@@ -299,13 +299,13 @@ Complete the following steps to assign a user permissions to archive logs:
 
 
 
-## Step 8: Configure archiving for your IBM Log Analysis with LogDNA instance
+## Step 8: Configure archiving for your {{site.data.keyword.la_full_notm}} instance
 {: #archiving_step8}
 
 
-Complete the following steps to configure archiving of your IBM Log Analysis with LogDNA instance into a COS bucket:
+Complete the following steps to configure archiving of your {{site.data.keyword.la_full_notm}} instance into a COS bucket:
 
-1. Launch the IBM Log Analysis with LogDNA web UI. For more information, see [Launching the IBM Log Analysis with LogDNA Web UI](/docs/services/Log-Analysis-with-LogDNA/view_logs.html#view_logs_step2).
+1. Launch the {{site.data.keyword.la_full_notm}} web UI. For more information, see [Launching the {{site.data.keyword.la_full_notm}} web UI](/docs/services/Log-Analysis-with-LogDNA/view_logs.html#view_logs_step2).
 
 2. Select the **Configuration** icon. Then select **Archiving**. 
 

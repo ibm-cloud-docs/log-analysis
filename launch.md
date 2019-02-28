@@ -31,13 +31,13 @@ After you provision an instance of the {{site.data.keyword.la_full_notm}} servic
 
 The following table lists the minimum policies that a user must have to be able to launch the IBM Cloud Monitoring with Sysdig web UI, and view data:
 
-| Service                              | Role                      | Permission granted                                                                            |
-|--------------------------------------|---------------------------|-----------------------------------------------------------------------------------------------|
+| Service                              | Role                      | Permission granted       |
+|--------------------------------------|---------------------------|---------------------|
 | `{{site.data.keyword.la_full_notm}}` | Platform role: Viewer     | Allows the user to view the list of service instances in the Observability Logging dashboard. |
-| `{{site.data.keyword.la_full_notm}}` | Service role: Writer      | Allows the user to launch the Web UI and view logs in the Web UI.                             |
+| `{{site.data.keyword.la_full_notm}}` | Service role: Writer      | Allows the user to launch the Web UI and view logs in the Web UI.    |
 {: caption="Table 1. IAM policies" caption-side="top"} 
 
-For more information on how to configure these policies for a user, see [Granting permissions to a user to view logs](/docs/services/Log-Analysis-with-LogDNA/work_iam.html#user_logdna).
+For more information on how to configure these policies for a user, see [Granting permissions to a user to view logs](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-work_iam#user_logdna).
 
 
 ## Launching the web UI through the {{site.data.keyword.cloud_notm}} UI
@@ -49,7 +49,7 @@ Complete the following steps to launch the web UI:
 
 1. Log in to your {{site.data.keyword.cloud_notm}} account.
 
-    The {{site.data.keyword.cloud_notm}} dashboard can be found at: [https://cloud.ibm.com ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com){:new_window}.
+    Click [{{site.data.keyword.cloud_notm}} dashboard ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com){:new_window} to launch the {{site.data.keyword.cloud_notm}} dashboard.
 
 	After you log in with your user ID and password, the {{site.data.keyword.cloud_notm}} Dashboard opens.
 

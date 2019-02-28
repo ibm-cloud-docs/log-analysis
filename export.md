@@ -21,7 +21,7 @@ lastupdated: "2019-02-28"
 # Exporting logs to local file
 {: #export}
 
-You can export log data in JSONL format from an IBM Log Analysis with LogDNA instance into a local file. You can export logs programmatically or from the IBM Log Analysis Web UI. 
+You can export log data in JSONL format from an {{site.data.keyword.la_full_notm}} instance into a local file. You can export logs programmatically or from the IBM Log Analysis Web UI. 
 {:shortdesc}
 
 Consider the following information when you export log data:
@@ -55,9 +55,9 @@ Complete the following steps to export logs programmatically:
 
 1. Generate a Service Key. 
 
-    **Note:** You must have **manager** role for the IBM Log Analysis with LogDNA instance or service to complete this step. For more information, see [Granting permissions to manage logs and configure alerts in LogDNA](/docs/services/Log-Analysis-with-LogDNA/work_iam.html#admin_user_logdna).
+    **Note:** You must have **manager** role for the {{site.data.keyword.la_full_notm}} instance or service to complete this step. For more information, see [Granting permissions to manage logs and configure alerts in LogDNA](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-work_iam#admin_user_logdna).
 
-    1. Launch the IBM Log Analysis with LogDNA web UI. For more information, see [Navigating to the IBM Log Analysis with LogDNA Web UI](/docs/services/Log-Analysis-with-LogDNA/view_logs.html#view_logs_step2).
+    1. Launch the {{site.data.keyword.la_full_notm}} web UI. For more information, see [Navigating to the {{site.data.keyword.la_full_notm}} web UI](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-view_logs#view_logs_step2).
 
     2. Select the **Configuration** icon ![Configuration icon](images/admin.png). Then, select **Organization**. 
 
@@ -100,7 +100,7 @@ The following table lists the query parameters that you can set:
 | `hosts`     | string     | Optional   | Comma-separated list of hosts. |
 | `apps`      | string     | Optional   | Comma-separated list of applications. |
 | `levels`    | string     | Optional   | Comma-separated list of log levels. |
-| `query`     | string     | Optional   | Search query. For more information, see [Search Logs](/docs/services/Log-Analysis-with-LogDNA/view_logs.html#view_logs_step6). |
+| `query`     | string     | Optional   | Search query. For more information, see [Search Logs](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-view_logs#view_logs_step6). |
 | `prefer`    | string     | Optional   | Defines the log lines that you want to export. Valid values are `head`, first log lines, and `tail`, last log lines. If not specified, defaults to tail.  |
 | `email`     | string     | Optional   | Specifies the email with the downloadable link of your export. By default, the log lines are streamed.|
 | `emailSubject` | string     | Optional   | Use to set the subject of the email. </br>Use `%20` to represent a space. For example, a sample value is `Export%20logs`. |
