@@ -1,12 +1,11 @@
 {:navgroup: .navgroup}
 {:topicgroup: .topicgroup}
 
-{: .toc subcollection="LogDNA" audience="service" arm="4158184" href="/docs/services/Log-Analysis-with-LogDNA/index.html" path="services/Log-Analysis-with-LogDNA"}
+{: .toc subcollection="LogDNA" audience="service" arm="4158184" href="/docs/services/Log-Analysis-with-LogDNA/getting-started.html" path="services/Log-Analysis-with-LogDNA"}
 IBM Log Analysis with LogDNA
 
     {: .navgroup id="learn"}
     getting-started.md
-    index.md
     overview.md
     network.md
     iam.md
