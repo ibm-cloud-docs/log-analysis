@@ -29,13 +29,13 @@ Alternatively, {{site.data.keyword.la_full_notm}} offers a **Free** plan that yo
 ## Provisioning an instance through the Observability dashboard
 {: #provision_ui}
 
-To provision an instance from the Observability dashboard in the {{site.data.keyword.Bluemix_notm}}, complete the following steps:
+To provision an instance from the Observability dashboard in the {{site.data.keyword.cloud_notm}}, complete the following steps:
 
-1. Log in to your {{site.data.keyword.Bluemix_notm}} account.
+1. Log in to your {{site.data.keyword.cloud_notm}} account.
 
-    The {{site.data.keyword.Bluemix_notm}} dashboard can be found at: [https://cloud.ibm.com ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com){:new_window}.
+    Click [{{site.data.keyword.cloud_notm}} dashboard ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com/login){:new_window} to launch the {{site.data.keyword.cloud_notm}} dashboard.
 
-	After you log in with your user ID and password, the {{site.data.keyword.Bluemix_notm}} UI opens.
+	After you log in with your user ID and password, the {{site.data.keyword.cloud_notm}} UI opens.
 
 2. Go to the Menu icon ![Menu icon](../../icons/icon_hamburger.svg) &gt; **Observability** to access the *Observability* Dashboard.
 
@@ -66,15 +66,15 @@ Next, configure a log source by adding a LogDNA agent. This agent is responsible
 ## Provisioning an instance through the Catalog
 {: #provision_catalog}
 
-To provision an instance of {{site.data.keyword.la_full_notm}} through the {{site.data.keyword.Bluemix_notm}} Catalog, complete the following steps:
+To provision an instance of {{site.data.keyword.la_full_notm}} through the {{site.data.keyword.cloud_notm}} Catalog, complete the following steps:
 
-1. Log in to your {{site.data.keyword.Bluemix_notm}} account.
+1. Log in to your {{site.data.keyword.cloud_notm}} account.
 
-    The {{site.data.keyword.Bluemix_notm}} dashboard can be found at: [https://cloud.ibm.com ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com){:new_window}.
+    Click [{{site.data.keyword.cloud_notm}} dashboard ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com/login){:new_window} to launch the {{site.data.keyword.cloud_notm}} dashboard.
 
-	After you log in with your user ID and password, the {{site.data.keyword.Bluemix_notm}} UI opens.
+	After you log in with your user ID and password, the {{site.data.keyword.cloud_notm}} UI opens.
 
-2. Click **Catalog**. The list of the services that are available in {{site.data.keyword.Bluemix_notm}} opens.
+2. Click **Catalog**. The list of the services that are available in {{site.data.keyword.cloud_notm}} opens.
 
 3. To filter the list of services that is displayed, select the **Developer Tools** category.
 
@@ -107,13 +107,13 @@ Next, configure a log source by adding a LogDNA agent. This agent is responsible
 
 To provision an instance of {{site.data.keyword.la_full_notm}} through the command line, complete the following steps:
 
-1. [Pre-requisite] Install the {{site.data.keyword.Bluemix_notm}} CLI.
+1. [Pre-requisite] Install the {{site.data.keyword.cloud_notm}} CLI.
 
-   For more information, see [Installing the {{site.data.keyword.Bluemix_notm}} CLI](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-about#about).
+   For more information, see [Installing the {{site.data.keyword.cloud_notm}} CLI](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-about#about).
 
    If the CLI is installed, continue with the next step.
 
-2. Log in to the region in the {{site.data.keyword.Bluemix_notm}} where you want to provision the instance. Run the following command: [`ibmcloud login`](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_login)
+2. Log in to the region in the {{site.data.keyword.cloud_notm}} where you want to provision the instance. Run the following command: [`ibmcloud login`](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_login)
 
 3. Set the resource group where you want to provision the instance. Run the following command: [`ibmcloud target`](/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_target)
 
@@ -130,7 +130,7 @@ To provision an instance of {{site.data.keyword.la_full_notm}} through the comma
 
     NAME is the name of the instance
 
-    *logdna* is the name of the {{site.data.keyword.la_full_notm}} service in the {{site.data.keyword.Bluemix_notm}}
+    *logdna* is the name of the {{site.data.keyword.la_full_notm}} service in the {{site.data.keyword.cloud_notm}}
 
     SERVICE_PLAN_NAME is the type of plan. Valid values are: *lite*, *7-days*, *14-days*, *30-days*
     
@@ -156,7 +156,7 @@ To provision an instance of {{site.data.keyword.la_full_notm}} through the comma
 
     ROLE_NAME is the role that defines the permissions that are enabled. Valid values are: *editor*, *operator*, *administrator*
 
-    SERVICE_INSTANCE_NAME is the name of the instance in the {{site.data.keyword.Bluemix_notm}}
+    SERVICE_INSTANCE_NAME is the name of the instance in the {{site.data.keyword.cloud_notm}}
 
     For example, to create an API key for the instance *logdna-instance-01* with *administrator* permissions on the service instance, run the following command:
 
