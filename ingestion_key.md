@@ -36,7 +36,7 @@ To get the ingestion key for an {{site.data.keyword.la_full_notm}} instance by u
 
 1. Log in to your {{site.data.keyword.cloud_notm}} account.
 
-    Click [{{site.data.keyword.cloud_notm}} dashboard ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com){:new_window} to launch the {{site.data.keyword.cloud_notm}} dashboard.
+    Click [{{site.data.keyword.cloud_notm}} dashboard ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com/login){:new_window} to launch the {{site.data.keyword.cloud_notm}} dashboard.
 
 	After you log in with your user ID and password, the {{site.data.keyword.cloud_notm}} UI opens.
 

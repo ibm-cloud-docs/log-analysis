@@ -31,7 +31,7 @@ Use {{site.data.keyword.la_full}} to add log management capabilities to your {{s
 * Check the regions where the service is available. For more information, see [Regions](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-about#overview_regions).
 * Get a user ID that is a member or an owner of an {{site.data.keyword.cloud_notm}} account. 
 
-    To get an {{site.data.keyword.cloud_notm}} user ID, go to: [Registration ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com/registration/){:new_window}.
+    To get an {{site.data.keyword.cloud_notm}} user ID, go to: [Registration ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com/login){:new_window}.
 
 
 
