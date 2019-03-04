@@ -17,7 +17,7 @@ lastupdated: "2019-02-28"
 {:important: .important}
 {:note: .note}
 
-# Getting started with {{site.data.keyword.la_full_notm}}
+# Getting started tutorial
 {: #getting-started}
 
 Use {{site.data.keyword.la_full}} to add log management capabilities to your {{site.data.keyword.cloud_notm}} architecture. {{site.data.keyword.la_full_notm}} is operated by LogDNA in partnership with {{site.data.keyword.IBM_notm}}.
