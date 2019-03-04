@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2019
-lastupdated: "2019-02-18"
+lastupdated: "2019-02-28"
 
 ---
 
@@ -14,6 +14,8 @@ lastupdated: "2019-02-18"
 {:codeblock: .codeblock}
 {:tip: .tip}
 {:download: .download}
+{:important: .important}
+{:note: .note}
 
  
 # Working with alerts
@@ -31,7 +33,7 @@ You can decide whether both conditions are checked or only one. If both conditio
 
 For example, you can configure an alert that is triggered after 30 seconds, or when a 100 log lines that match the view's filtering and search criteria are collected.
 
-You can configure multiple notification channels. Valid channels are: email, Slack, PagerDuty, Webhook, OpsGenie, Datadog, AppOptics, VictorOps
+You can configure multiple notification channels. Valid channels are: `email`, `Slack`, `PagerDuty`, `Webhook`, `OpsGenie`, `Datadog`, `AppOptics`, `VictorOps`
 
 You can also define a **preset**. A preset is an alert template that you can attach to any number of views. 
 
@@ -61,7 +63,7 @@ Complete the following steps to configure a preset:
 
 6. Add the details for the notification channel that you have chosen.
 
-    For example, for the email notification channel, add one or more recipients, and optionally a timezone.
+    For example, for the email notification channel, add one or more recipients, and optionally a time zone.
 
 7. Click **Save alert**.
 
@@ -75,9 +77,9 @@ Complete the following steps to attach a preset to a view:
 1. Click the **Views** icon ![Configuration icon](images/views.png).
 2. Create a view. 
 
-    Apply a timeframe, filters and search criteria to filter the log lines that are displayed through the view. 
+    Apply a time frame, filters and search criteria to filter the log lines that are displayed through the view. 
 
-    For more information, see [Creating views](/docs/services/Log-Analysis-with-LogDNA/view_logs.html#view_logs_step7).
+    For more information, see [Creating views](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-view_logs#view_logs_step7).
 
 3. Click the view name. Then, select **Attach an alert**.
 
@@ -96,9 +98,9 @@ Complete the following steps to attach an alert to a view:
 1. Click the **Views** icon ![Configuration icon](images/views.png).
 2. Create a view. 
 
-    Apply a timeframe, filters and search criteria to filter the log lines that are displayed through the view. 
+    Apply a time frame, filters and search criteria to filter the log lines that are displayed through the view. 
 
-    For more information, see [Creating views](/docs/services/Log-Analysis-with-LogDNA/view_logs.html#view_logs_step7).
+    For more information, see [Creating views](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-view_logs#view_logs_step7).
 
 3. Click the view name. Then, select **Attach an alert**.
 
@@ -116,7 +118,7 @@ Complete the following steps to attach an alert to a view:
 
 7. Add the details for the notification channel that you have chosen.
 
-    For example, for the email notification channel, add one or more recipients, and optionally a timezone.
+    For example, for the email notification channel, add one or more recipients, and optionally a time zone.
 
 8. Click **Save alert**.
 
@@ -153,14 +155,14 @@ The following table lists the notification channels that you can configure when 
 
 | Channel           | Configuration details | 
 |-------------------|-----------------------|
-| email             | You can configure one or more email addresses.  | 
-| Slack             | You can configure a slack channel. |
-| Webhook           | You can configure a web hook URL. |
-| PagerDuty         | You can configure connection details to your PagerDuty system, and select a service.|
-| OpsGenie          | You can configure the API key to connect to your OpsGenie system. |
-| Datadog           | You can configure the API key to connect to your Datadog system. |
-| AppOptics/Librato | You can configure the API key to connect to your AppOptics/Librato system. |
-| VictorOps         | You can configure the URL to notify when an alert is triggered, the routing key, and an alert type. Valid alert types are: `info`, `warning`, `critical` |
+| `email`             | You can configure one or more email addresses.  | 
+| `Slack`             | You can configure a slack channel. |
+| `Webhook`           | You can configure a web hook URL. |
+| `PagerDuty`         | You can configure connection details to your PagerDuty system, and select a service.|
+| `OpsGenie`          | You can configure the API key to connect to your OpsGenie system. |
+| `Datadog`           | You can configure the API key to connect to your `Datadog` system. |
+| `AppOptics/Librato` | You can configure the API key to connect to your AppOptics/Librato system. |
+| `VictorOps`         | You can configure the URL to notify when an alert is triggered, the routing key, and an alert type. Valid alert types are: `info`, `warning`, `critical` |
 {: caption="Notification channels" caption-side="top"} 
 
 

@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2018, 2019
-lastupdated: "2019-01-08"
+  years:  2018, 2019
+lastupdated: "2019-02-28"
 
 ---
 
@@ -14,55 +14,57 @@ lastupdated: "2019-01-08"
 {:codeblock: .codeblock}
 {:tip: .tip}
 {:download: .download}
+{:important: .important}
+{:note: .note}
 
 # Navigating to the Web UI
 {: #launch}
 
-After you provision an instance of the {{site.data.keyword.la_full_notm}} service in the {{site.data.keyword.Bluemix}}, and configure a LogDNA agent for a log data source, you can view, monitor, and manage logs through the {{site.data.keyword.la_full_notm}} web UI.
+After you provision an instance of the {{site.data.keyword.la_full_notm}} service in the {{site.data.keyword.cloud_notm}}, and configure a LogDNA agent for a log data source, you can view, monitor, and manage logs through the {{site.data.keyword.la_full_notm}} web UI.
 {:shortdesc}
 
 
 ## Granting IAM policies to a user to view data 
 {: #step1}
 
-**Note:** You must be an adminsitrator of the {{site.data.keyword.la_full_notm}} service, an administrator of an {{site.data.keyword.la_full_notm}} instance, or have account IAM permissions to grant other users policies.
+**Note:** You must be an administrator of the {{site.data.keyword.la_full_notm}} service, an administrator of an {{site.data.keyword.la_full_notm}} instance, or have account IAM permissions to grant other users policies.
 
 The following table lists the minimum policies that a user must have to be able to launch the IBM Cloud Monitoring with Sysdig web UI, and view data:
 
-| Service                              | Role                      | Permission granted                                                                            |
-|--------------------------------------|---------------------------|-----------------------------------------------------------------------------------------------|
+| Service                              | Role                      | Permission granted       |
+|--------------------------------------|---------------------------|---------------------|
 | `{{site.data.keyword.la_full_notm}}` | Platform role: Viewer     | Allows the user to view the list of service instances in the Observability Logging dashboard. |
-| `{{site.data.keyword.la_full_notm}}` | Service role: Writer      | Allows the user to launch the Web UI and view logs in the Web UI.                             |
+| `{{site.data.keyword.la_full_notm}}` | Service role: Writer      | Allows the user to launch the Web UI and view logs in the Web UI.    |
 {: caption="Table 1. IAM policies" caption-side="top"} 
 
-For more information on how to configure these policies for a user, see [Granting permissions to a user to view logs](/docs/services/Log-Analysis-with-LogDNA/work_iam.html#user_logdna).
+For more information on how to configure these policies for a user, see [Granting permissions to a user to view logs](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-work_iam#user_logdna).
 
 
-## Launching the web UI through the {{site.data.keyword.Cloud_notm}} UI
+## Launching the web UI through the {{site.data.keyword.cloud_notm}} UI
 {: #launch_step2}
 
-You launch the web UI within the context of an {{site.data.keyword.la_full_notm}} instance, from the {{site.data.keyword.Cloud_notm}} UI. 
+You launch the web UI within the context of an {{site.data.keyword.la_full_notm}} instance, from the {{site.data.keyword.cloud_notm}} UI. 
 
 Complete the following steps to launch the web UI:
 
-1. Log in to your {{site.data.keyword.Cloud_notm}} account.
+1. Log in to your {{site.data.keyword.cloud_notm}} account.
 
-    The {{site.data.keyword.Cloud_notm}} dashboard can be found at: [https://cloud.ibm.com ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com){:new_window}.
+    Click [{{site.data.keyword.cloud_notm}} dashboard ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com){:new_window} to launch the {{site.data.keyword.cloud_notm}} dashboard.
 
-	After you log in with your user ID and password, the {{site.data.keyword.Cloud_notm}} Dashboard opens.
+	After you log in with your user ID and password, the {{site.data.keyword.cloud_notm}} Dashboard opens.
 
 2. In the navigation menu, select **Observability**. 
 
 3. Select **Logging**. 
 
-    The list of instances that are available on {{site.data.keyword.Cloud_notm}} is displayed.
+    The list of instances that are available on {{site.data.keyword.cloud_notm}} is displayed.
 
 4. Select one instance. Then, click **View LogDNA**.
 
 The Web UI opens.
 
 
-## Getting the web UI URL from the {{site.data.keyword.Cloud_notm}}
+## Getting the web UI URL from the {{site.data.keyword.cloud_notm}}
 {: #launch_get}
 
 To get the web UI URL, complete the following steps from a terminal:
@@ -84,7 +86,7 @@ To get the web UI URL, complete the following steps from a terminal:
 3. Set the endpoint.
 
     ```
-    export rc_endpoint=resource-controller.bluemix.net
+    export rc_endpoint=resource-controller.cloud.ibm.com
     ```
     {: codeblock}
 

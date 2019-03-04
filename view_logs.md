@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2018, 2019
-lastupdated: "2019-02-18"
+  years:  2018, 2019
+lastupdated: "2019-02-28"
 
 ---
 
@@ -14,57 +14,60 @@ lastupdated: "2019-02-18"
 {:codeblock: .codeblock}
 {:tip: .tip}
 {:download: .download}
+{:important: .important}
+{:note: .note}
 
 # Viewing logs
 {: #view_logs}
 
-After you provision an instance of the IBM Log Analysis with LogDNA service in the {{site.data.keyword.Bluemix}}, and configure a LogDNA agent for a log source, you can view, monitor, and manage log data through the IBM Log Analysis with LogDNA Web UI.
+After you provision an instance of the {{site.data.keyword.la_full_notm}} service in the {{site.data.keyword.cloud_notm}}, and configure a LogDNA agent for a log source, you can view, monitor, and manage log data through the {{site.data.keyword.la_full_notm}} Web UI.
 {:shortdesc}
 
-When you launch the IBM Log Analysis with LogDNA Web UI, log entries are displayed with a predefined format. You can modify in the **User Preferences** section how the information in each log line is displayed. You can also filter logs and modify search settings, then bookmark the result as a *view*. You can attach and detach one or more alerts to a view. You can define a custom format for how your lines are shown in the view. You can expand a log line and see the data parsed.
+When you launch the {{site.data.keyword.la_full_notm}} web UI, log entries are displayed with a predefined format. You can modify in the **User Preferences** section how the information in each log line is displayed. You can also filter logs and modify search settings, then bookmark the result as a *view*. You can attach and detach one or more alerts to a view. You can define a custom format for how your lines are shown in the view. You can expand a log line and see the data parsed.
 
 
 Complete the following steps to view logs:
 
 
-## Step 1: Grant IAM policies to a user to view logs
+## Step 1. Grant IAM policies to a user to view logs
 {: #view_logs_step1}
 
-**Note:** You must be an adminsitrator of the IBM Log Analysis with LogDNA service, an administrator of the IBM Log Analysis with LogDNA instance, or have account IAM permissions to grant other users policies.
+**Note:** You must be an administrator of the {{site.data.keyword.la_full_notm}} service, an administrator of the {{site.data.keyword.la_full_notm}} instance, or have account IAM permissions to grant other users policies.
 
-The following table lists the minimum policies that a user must have to be able to launch the IBM Log Analysis with LogDNA Web UI, and view logs:
+The following table lists the minimum policies that a user must have to be able to launch the {{site.data.keyword.la_full_notm}} Web UI, and view logs:
 
-| Service                        | Role                      | Permission granted                                                                            |
-|--------------------------------|---------------------------|-----------------------------------------------------------------------------------------------|  | `IBM Log Analysis with LogDNA` | Platform role: Viewer     | Allows the user to view the list of service instances in the Observability Logging dashboard. |
-| `IBM Log Analysis with LogDNA` | Service role: Reader      | Allows the user to launch the Web UI and view logs in the Web UI.                             |
+| Service                        | Role                      | Permission granted            |
+|--------------------------------|---------------------------|-------------------------------|  
+| `{{site.data.keyword.la_full_notm}} ` | Platform role: Viewer     | Allows the user to view the list of service instances in the Observability Logging dashboard. |
+| `{{site.data.keyword.la_full_notm}} ` | Service role: Reader      | Allows the user to launch the Web UI and view logs in the Web UI.  |
 {: caption="Table 1. IAM policies" caption-side="top"} 
 
-For more information on how to configure these policies for a user, see [Granting permissions to a user to view logs in LogDNA](/docs/services/Log-Analysis-with-LogDNA/work_iam.html#user_logdna).
+For more information on how to configure these policies for a user, see [Granting permissions to a user to view logs in LogDNA](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-work_iam#user_logdna).
 
 
-## Step 2: Launch the Web UI through the {{site.data.keyword.Bluemix_notm}} UI
+## Step 2. Navigate to the web UI through the {{site.data.keyword.cloud_notm}} UI
 {: #view_logs_step2}
 
-To launch IBM the Log Analysis with LogDNA UI through the {{site.data.keyword.Bluemix_notm}} UI, complete the following steps:
+To launch the {{site.data.keyword.la_full_notm}}  UI through the {{site.data.keyword.cloud_notm}} UI, complete the following steps:
 
-1. Log in to your {{site.data.keyword.Bluemix_notm}} account.
+1. Log in to your {{site.data.keyword.cloud_notm}} account.
 
-    The {{site.data.keyword.Bluemix_notm}} dashboard can be found at: [http://bluemix.net ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://bluemix.net){:new_window}.
+    Click [{{site.data.keyword.cloud_notm}} dashboard ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com/login){:new_window} to launch the {{site.data.keyword.cloud_notm}} dashboard.
 
-	After you log in with your user ID and password, the {{site.data.keyword.Bluemix_notm}} Dashboard opens.
+	After you log in with your user ID and password, the {{site.data.keyword.cloud_notm}} *Dashboard* opens.
 
 2. In the navigation menu, select **Observability**. 
 
 3. Select **Logging**. 
 
-    The list of IBM Log Analysis with LogDNA instances that are available on {{site.data.keyword.Bluemix_notm}} is displayed.
+    The list of {{site.data.keyword.la_full_notm}} instances that are available on {{site.data.keyword.cloud_notm}} is displayed.
 
 4. Select one instance. Then, click **View LogDNA**.
 
-The IBM Log Analysis with LogDNA Web UI opens and displays logs forwarded to that instance.
+The {{site.data.keyword.la_full_notm}} web UI opens and displays logs forwarded to that instance.
 
 
-## Step 3: Customize your default view
+## Step 3. Customize your default view
 {: #view_logs_step3}
 
 In the **USER PREFERENCES** section, you can modify the order of the data fields that are displayed per line.
@@ -77,7 +80,7 @@ Complete the following steps to modify the format of a log line:
 4. Modify the *Line Format* section to match your requirements. Drag boxes.
 
 
-## Step 4: Look into a log line
+## Step 4. Look into a log line
 {: #view_logs_step4}
 
 At any time, you can view each log line in context.
@@ -98,7 +101,7 @@ Complete the following steps:
 When you are finished, close the line.
 
 
-## Step 5: Filter logs
+## Step 5. Filter logs
 {: #view_logs_step5}
 
 You can filter logs by log source, application, and log level. 
@@ -122,7 +125,7 @@ Complete the following steps to filter logs:
 To create a group, select multiple values. Then, click **Save as group**. Enter a name for the group, and save it.
 
 
-## Step 6: Search logs
+## Step 6. Search logs
 {: #view_logs_step6}
 
 When you search log data, the search applies any log filters and time queries configured in that view.
@@ -133,7 +136,7 @@ You can do simple searches (single term string search), compound search (multipl
 
 
 
-## Step 7: Create views
+## Step 7. Create views
 {: #view_logs_step7}
 
 

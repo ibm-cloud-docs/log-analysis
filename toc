@@ -1,13 +1,12 @@
 {:navgroup: .navgroup}
 {:topicgroup: .topicgroup}
 
-{: .toc subcollection="LogDNA" audience="service" arm="4158184" href="/docs/services/Log-Analysis-with-LogDNA/index.html" path="services/Log-Analysis-with-LogDNA"}
+{: .toc subcollection="LogDNA" audience="service" arm="4158184" href="/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-getting-started#getting-started" path="services/Log-Analysis-with-LogDNA"}
 IBM Log Analysis with LogDNA
 
     {: .navgroup id="learn"}
-    index.md
+    getting-started.md
     overview.md
-    log_sources.md
     network.md
     iam.md
 
@@ -19,16 +18,18 @@ IBM Log Analysis with LogDNA
     {: .navgroup-end}
 
     {: .navgroup id="howto"}
-    archive.md
-    alerts.md
-    export.md
+    provision.md
     remove.md
+    config_agent.md
+    ingestion_key.md
+    log_sources.md
+    alerts.md
+    archive.md
+    export.md
     ingest.md
     launch.md
-    provision.md
     view_logs.md
     work_iam.md
-    ingestion_key.md
     {: .navgroup-end}
 
     {: .navgroup id="reference"}
