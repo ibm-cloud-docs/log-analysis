@@ -4,7 +4,7 @@ copyright:
   years:  2018, 2019
 lastupdated: "2019-03-06"
 
-keywords: logging, iam, manage user access
+keywords: LogDNA, IBM, Log Analysis, logging, iam, manage user access
 
 subcollection: LogDNA
 

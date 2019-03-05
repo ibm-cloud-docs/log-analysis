@@ -4,7 +4,7 @@ copyright:
   years:  2018, 2019
 lastupdated: "2019-03-06"
 
-keywords: logging, archive logs, COS, cloud object storage
+keywords: LogDNA, IBM, Log Analysis, logging, archive logs, COS, cloud object storage
 
 subcollection: LogDNA
 

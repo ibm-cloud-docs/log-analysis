@@ -4,7 +4,7 @@ copyright:
   years:  2018, 2019
 lastupdated: "2019-03-06"
 
-keywords: iam, security, logging, access groups
+keywords: LogDNA, IBM, Log Analysis, iam, security, logging, access groups
 
 subcollection: LogDNA
 

@@ -4,7 +4,7 @@ copyright:
   years:  2018, 2019
 lastupdated: "2019-03-06"
 
-keywords: logging, network, IP addresses, port
+keywords: LogDNA, IBM, Log Analysis, logging, network, IP addresses, port
 
 subcollection: LogDNA
 

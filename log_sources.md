@@ -4,7 +4,7 @@ copyright:
   years:  2018, 2019
 lastupdated: "2019-03-06"
 
-keywords: logging, log sources
+keywords: LogDNA, IBM, Log Analysis, logging, log sources
 
 subcollection: LogDNA
 
@@ -28,12 +28,12 @@ You can configure {{site.data.keyword.cloud}} log sources and on-premisses log s
 {:shortdesc}
 
 
-## Platform: Container services
+## Platform container services
 {: #log_sources_kube}
 
 You can manage logs from the [{{site.data.keyword.containerlong_notm}}](/docs/containers?topic=containers-container_index#container_index) with {{site.data.keyword.la_full_notm}}.
 
-| Tutorials: Managing logs for the {{site.data.keyword.containerlong_notm}} |
+| Tutorials for managing logs for the {{site.data.keyword.containerlong_notm}} |
 |---------------------------------------------------------------------------------------------------|
 | [Managing Kubernetes cluster logs with {{site.data.keyword.la_full_notm}}](/docs/services/Log-Analysis-with-LogDNA/tutorials?topic=LogDNA-kube#kube)|
 | [Resetting the ingestion key used by a Kubernetes cluster to forward logs to an {{site.data.keyword.la_full_notm}} instance](/docs/services/Log-Analysis-with-LogDNA/tutorials?topic=LogDNA-kube_reset#kube_reset) | 
@@ -55,7 +55,7 @@ You can manage logs from any of the following Linux servers with {{site.data.key
 
 The following table lists tutorials on common tasks:
 
-| Tutorials: Managing logs for an Ubuntu Server |
+| Tutorials for managing logs for an Ubuntu Server |
 |-----------------------------------------------|
 | [Managing Ubuntu logs with {{site.data.keyword.la_full_notm}}](/docs/services/Log-Analysis-with-LogDNA/tutorials?topic=LogDNA-ubuntu#ubuntu) | 
 {: caption="Tutorials for Ubuntu server" caption-side="top"} 

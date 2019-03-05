@@ -4,7 +4,7 @@ copyright:
   years:  2018, 2019
 lastupdated: "2019-03-06"
 
-keywords: logging, web UI, browser
+keywords: LogDNA, IBM, Log Analysis, logging, web UI, browser
 
 subcollection: LogDNA
 
@@ -53,7 +53,7 @@ Complete the following steps to launch the web UI:
 
 1. Log in to your {{site.data.keyword.cloud_notm}} account.
 
-    Click [{{site.data.keyword.cloud_notm}} dashboard ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com){:new_window} to launch the {{site.data.keyword.cloud_notm}} dashboard.
+    Click [{{site.data.keyword.cloud_notm}} dashboard ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com/login){:new_window} to launch the {{site.data.keyword.cloud_notm}} dashboard.
 
 	After you log in with your user ID and password, the {{site.data.keyword.cloud_notm}} Dashboard opens.
 
