@@ -2,7 +2,11 @@
 
 copyright:
   years:  2018, 2019
-lastupdated: "2019-02-28"
+lastupdated: "2019-03-06"
+
+keywords: LogDNA, IBM, Log Analysis, logging, kubernetes, tutorial
+
+subcollection: LogDNA
 
 ---
 
@@ -181,7 +185,7 @@ To launch the LogDNA dashboard through the {{site.data.keyword.cloud_notm}} cons
 
 1. Log in to your [{{site.data.keyword.cloud_notm}} account ![External link icon](../../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com/login).
 
-2. From the menu ![Menu icon](../icons/icon_hamburger.svg "Menu icon"), select **Observability**.
+2. From the menu ![Menu icon](../../../icons/icon_hamburger.svg "Menu icon"), select **Observability**.
 
 3. Select **Logging**. The list of {{site.data.keyword.la_full_notm}} service instances that are available on {{site.data.keyword.cloud_notm}} is displayed.
 

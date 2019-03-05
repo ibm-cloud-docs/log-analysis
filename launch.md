@@ -2,7 +2,11 @@
 
 copyright:
   years:  2018, 2019
-lastupdated: "2019-02-28"
+lastupdated: "2019-03-06"
+
+keywords: LogDNA, IBM, Log Analysis, logging, web UI, browser
+
+subcollection: LogDNA
 
 ---
 
@@ -17,7 +21,7 @@ lastupdated: "2019-02-28"
 {:important: .important}
 {:note: .note}
 
-# Navigating to the Web UI
+# Navigating to the web UI
 {: #launch}
 
 After you provision an instance of the {{site.data.keyword.la_full_notm}} service in the {{site.data.keyword.cloud_notm}}, and configure a LogDNA agent for a log data source, you can view, monitor, and manage logs through the {{site.data.keyword.la_full_notm}} web UI.
@@ -93,7 +97,7 @@ To get the web UI URL, complete the following steps from a terminal:
 4. Set the IAM token.
 
     ```
-    export iam_token=$(ic iam oauth-tokens | grep IAM | grep -oP  "eyJ.*")
+    export iam_token=$(ibmcloud iam oauth-tokens | grep IAM | grep -oP  "eyJ.*")
     ```
     {: codeblock}
 
@@ -102,7 +106,7 @@ To get the web UI URL, complete the following steps from a terminal:
 5. Set the resource group ID.
 
     ```
-    export resource_group_id=$(ic resource groups | grep "^$logdna_rg_name" | awk '{print $2}')
+    export resource_group_id=$(ibmcloud resource groups | grep "^$logdna_rg_name" | awk '{print $2}')
     ```
     {: codeblock}
 

@@ -2,7 +2,11 @@
 
 copyright:
   years:  2018, 2019
-lastupdated: "2019-02-28"
+lastupdated: "2019-03-06"
+
+keywords: LogDNA, IBM, Log Analysis, logging instance, delete
+
+subcollection: LogDNA
 
 ---
 
@@ -23,16 +27,16 @@ lastupdated: "2019-02-28"
 You can remove an instance of the {{site.data.keyword.la_full_notm}} service from the {{site.data.keyword.Bluemix}} UI or through the command line.
 {:shortdesc}
 
-When you remove an instance from the {{site.data.keyword.cloud_notm}}, clean up by completing the following tasks, if required:
+When you remove an instance from the {{site.data.keyword.cloud_notm}}, clean up by completing the following tasks:
 
 1. Write down the list of sources that forward metrics to the {{site.data.keyword.la_full_notm}} instance that you want to remove. You must remove the LogDNA agent from each source.
-2. Remove permissions granted to users to work with the instance. 
+2. Remove permissions that are granted to users to work with the instance. 
 
-    If you use an access group to manage access to the instance, you must remove the access group.
+    If you manage access by using dedicated access groups to work with a specific instance, you must remove these access groups.
 
-    If you use an access group to manage access to different service instances, you must remove the policies that grant permissions to the instance that you want to remove.
+    If you manage access to multiple logging instances by using access groups, you must remove the policies that grant permissions to the instance that you want to remove.
     
-    If you have granted individual policies to users, you must gather the information of each user that has access, and remove one by one the policies that relate to the instance that you want to delete.
+    If you grant individual policies to users, you must gather the list of users that have permissions to work with that instance. Then, for each user that you identify, you must remove the policies that relate to the instance that you want to delete.
 
 
 Then, delete the instance from the {{site.data.keyword.cloud_notm}} Dashboard.
@@ -49,7 +53,7 @@ To remove an instance of {{site.data.keyword.la_full_notm}} by using the {{site.
 
 	After you log in with your user ID and password, the {{site.data.keyword.cloud_notm}} UI opens.
 
-2. Go to the Menu icon ![Menu icon](../../icons/icon_hamburger.svg) &gt; **Observability** to access the *Observability* Dashboard.
+2. Go to the menu icon ![menu icon](../../icons/icon_hamburger.svg) &gt; **Observability** to access the *Observability* Dashboard.
 
 3. Select **Logging**. The list of logging instances is displayed.
 
@@ -63,7 +67,7 @@ To remove an instance of {{site.data.keyword.la_full_notm}} by using the {{site.
 
 To remove an instance of {{site.data.keyword.la_full_notm}} through the command line, complete the following steps:
 
-1. [Pre-requisite] Install the {{site.data.keyword.cloud_notm}} CLI.
+1. [Pre-requisite] Installion of the {{site.data.keyword.cloud_notm}} CLI.
 
    For more information, see [Installing the {{site.data.keyword.cloud_notm}} CLI](/docs/cli?topic=cloud-cli-ibmcloud-cli#ibmcloud-cli).
 
@@ -82,7 +86,7 @@ To remove an instance of {{site.data.keyword.la_full_notm}} through the command 
     ```
     {: codeblock}
 
-    where NAME is the name of the instance.
+    Where NAME is the name of the instance.
 
     For example, to remove an instance, run the following command:
 
@@ -90,3 +94,6 @@ To remove an instance of {{site.data.keyword.la_full_notm}} through the command 
     ibmcloud resource service-instance-delete logdna-instance-01
     ```
     {: codeblock}
+
+
+

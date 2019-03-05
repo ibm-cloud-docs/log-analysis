@@ -2,7 +2,11 @@
 
 copyright:
   years:  2018, 2019
-lastupdated: "2019-02-28"
+lastupdated: "2019-03-06"
+
+keywords: LogDNA, IBM, Log Analysis, logging, archive logs, COS, cloud object storage
+
+subcollection: LogDNA
 
 ---
 
@@ -39,9 +43,9 @@ The {{site.data.keyword.cos_full_notm}} instance is provisioned within the conte
 * The service ID that you create for an {{site.data.keyword.cos_full_notm}} instance is used by the {{site.data.keyword.la_full_notm}} to authenticate and access the {{site.data.keyword.cos_full_notm}} instance. 
 * You can assign specific access policies to the service ID that restrict permissions on the {{site.data.keyword.cos_full_notm}} instance. Restrict the service ID to only have writing permissions on the bucket where you plan to archive the logs.
 
-The following figure shows a high level view of the different components that are integrated when archiving logs:
+The following figure shows a high-level view of the different components that are integrated when archiving logs:
 
-![High level view archiving logs](images/archive.png "High level view archiving logs")
+![High-level view archiving logs](images/archive.png "High-level view archiving logs")
 
 
 Complete the following steps to archive an {{site.data.keyword.la_full_notm}} instance into a bucket in an {{site.data.keyword.cos_full_notm}} instance:
@@ -54,7 +58,7 @@ Complete the following steps to archive an {{site.data.keyword.la_full_notm}} in
 
 As an administrator of the {{site.data.keyword.cos_full_notm}} service, you must be able to provision instances of the service, grant other users permissions to work with these instances, and create service IDs. 
 
-There are different ways in which you can grant a user permissions to become an editor of the {{site.data.keyword.cos_full_notm}} service:
+There are different ways in which you can grant a user permission to become an editor of the {{site.data.keyword.cos_full_notm}} service:
 
 * As administrator of the service in the account, the user must have an IAM policy for the {{site.data.keyword.cos_full_notm}} service with the platform role *Administrator*. You must assign this user access to an individual resource in the account. 
 
@@ -270,7 +274,7 @@ Complete the following steps to obtain the endpoint for your bucket:
 ## Step 7: Grant IAM policies to a user to archive logs
 {: #archiving_step7}
 
-The following table lists the policies that a user must have to be able to configure archiving of logs from {{site.data.keyword.la_full_notm}} web UI into a bucket in a {{site.data.keyword.cos_full_notm}} instance:
+The following table lists the policies that a user must have to configure archiving of logs from the {{site.data.keyword.la_full_notm}} web UI into a bucket in an {{site.data.keyword.cos_full_notm}} instance:
 
 | Service                        | Role                      | Permission granted                  | 
 |--------------------------------|---------------------------|-------------------------------------|  
@@ -280,7 +284,7 @@ The following table lists the policies that a user must have to be able to confi
 
 For more information on how to configure these policies for a user, see [Granting permissions to a user to view logs in LogDNA](/docs/services/Log-Analysis-with-LogDNA/work_iam.html#user_logdna).
 
-Complete the following steps to assign a user permissions to archive logs: 
+Complete the following steps to assign a user permission to archive logs: 
 
 1. From the menu bar, click **Manage** &gt; **Access (IAM)**, and then select **Users**.
 2. From the row for the user that you want to assign access, select the **Actions** menu, and then click **Assign access**.
@@ -305,7 +309,7 @@ Complete the following steps to assign a user permissions to archive logs:
 
 Complete the following steps to configure archiving of your {{site.data.keyword.la_full_notm}} instance into a COS bucket:
 
-1. Launch the {{site.data.keyword.la_full_notm}} web UI. For more information, see [Launching the {{site.data.keyword.la_full_notm}} web UI](/docs/services/Log-Analysis-with-LogDNA/view_logs.html#view_logs_step2).
+1. Launch the {{site.data.keyword.la_full_notm}} web UI. [Learn more](/docs/services/Log-Analysis-with-LogDNA/view_logs.html#view_logs_step2).
 
 2. Select the **Configuration** icon. Then select **Archiving**. 
 

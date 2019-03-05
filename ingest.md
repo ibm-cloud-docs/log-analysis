@@ -2,7 +2,11 @@
 
 copyright:
   years:  2018, 2019
-lastupdated: "2019-02-28"
+lastupdated: "2019-03-06"
+
+keywords: LogDNA, IBM, Log Analysis, logging, ingestion 
+
+subcollection: LogDNA
 
 ---
 
@@ -33,7 +37,7 @@ Complete the following steps to send logs programmatically:
 
 Complete the following steps to get the ingestion key:
     
-1. Launch the {{site.data.keyword.la_full_notm}} web UI. For more information, see [Navigate to the {{site.data.keyword.la_full_notm}} Web UI](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-view_logs#view_logs_step2).
+1. Launch the {{site.data.keyword.la_full_notm}} web UI. For more information, see [Go to to the {{site.data.keyword.la_full_notm}} web UI](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-view_logs#view_logs_step2).
 
 2. Select the **Configuration** icon ![Configuration icon](images/admin.png). Then, select **Organization**. 
 
@@ -75,11 +79,11 @@ The following table lists the query parameters:
 
 | Query parameter | Type       | Status     | Description |
 |-----------------|------------|------------|-------------|
-| `hostname`        | string     | required   | Host name of the source. |
-| `mac`            | string     | optional   | The network mac address of the host computer.    |
-| `ip`              | string     | optional   | The local IP address of the host computer.  | 
-| `now`             | date-time  | optional   | The source UNIX timestamp in milliseconds at the time of the request. Used to calculate time drift.|
-| `tags`            | string     | optional   | Tags that are used to dynamically group hosts. |
+| `hostname`      | `string`     | required   | Host name of the source. |
+| `mac`           | `string`     | optional   | The network mac address of the host computer.    |
+| `ip`            | `string`     | optional   | The local IP address of the host computer.  | 
+| `now`           | `date-time`  | optional   | The source UNIX timestamp in milliseconds at the time of the request. Used to calculate time drift.|
+| `tags`          | `string`     | optional   | Tags that are used to dynamically group hosts. |
 {: caption="Query parameters" caption-side="top"} 
 
 
@@ -89,9 +93,9 @@ The following table lists the data that is required per log line:
 | Parameters     | Type       | Description                                   |
 |----------------|------------|-----------------------------------------------|
 | `timestamp`      |            | UNIX timestamp, including milliseconds, when the log entry was recorded.       | 
-| `line`           | string     | Text of the log line.                                     |
-| `app`            | string     | Name of the application that generates the log line.  |
-| `level`          | string     | Set a value for the level. For example, sample values for this parameter are `INFO`, `WARNING`, `ERROR`. |
+| `line`           | `string`     | Text of the log line.                                     |
+| `app`            | `string`     | Name of the application that generates the log line.  |
+| `level`          | `string`     | Set a value for the level. For example, sample values for this parameter are `INFO`, `WARNING`, `ERROR`. |
 | `meta`           |            | This field is reserved for custom information that is associated with a log line. To add metadata to an API call, specify the meta field under the lines object. Metadata can be viewed inside that line's context.                      |
 {: caption="Line object fields" caption-side="top"} 
 

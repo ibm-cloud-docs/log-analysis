@@ -2,7 +2,11 @@
 
 copyright:
   years:  2018, 2019
-lastupdated: "2019-02-28"
+lastupdated: "2019-03-06"
+
+keywords: LogDNA, IBM, Log Analysis, logging, logs
+
+subcollection: LogDNA
 
 ---
 
@@ -155,3 +159,5 @@ Complete the following steps to create a view:
 6. Optionally, attach an alert. A new section is displayed for you to configure the alert.
 
 7. Click **Save View**
+
+

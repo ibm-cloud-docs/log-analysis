@@ -2,7 +2,11 @@
 
 copyright:
   years:  2018, 2019
-lastupdated: "2019-02-28"
+lastupdated: "2019-03-06"
+
+keywords: LogDNA, IBM, Log Analysis, logging, export logs
+
+subcollection: LogDNA
 
 ---
 
@@ -42,7 +46,7 @@ Complete the following steps to export log data:
 2. Select **Everything** or a view.
 3. Apply a time frame, filters and search criteria until you see the log entries that you want to export.
 4. Click **Unsaved View** if you are starting from the **Everything** view. Click your view name if you selected a view in the previous step.
-5. Select **Export lines**. A new window opens.
+5. Select `Export lines`. A new window opens.
 6. Check the time range. If you need to change it, click the predefined time range in the Change the *Time Range for export* field.
 7. Select **Prefer newer lines** or **Prefer older lines** in case the export request exceeds the line limit.
 8. Check your email. You receive an email from **LogDNA** with a link to download your exported lines.
@@ -57,7 +61,7 @@ Complete the following steps to export logs programmatically:
 
     **Note:** You must have **manager** role for the {{site.data.keyword.la_full_notm}} instance or service to complete this step. For more information, see [Granting permissions to manage logs and configure alerts in LogDNA](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-work_iam#admin_user_logdna).
 
-    1. Launch the {{site.data.keyword.la_full_notm}} web UI. For more information, see [Navigating to the {{site.data.keyword.la_full_notm}} web UI](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-view_logs#view_logs_step2).
+    1. Launch the {{site.data.keyword.la_full_notm}} web UI. For more information, see [Go to to the {{site.data.keyword.la_full_notm}} web UI](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-view_logs#view_logs_step2).
 
     2. Select the **Configuration** icon ![Configuration icon](images/admin.png). Then, select **Organization**. 
 
@@ -94,16 +98,16 @@ The following table lists the query parameters that you can set:
 
 | Query parameter | Type       | Status     | Description |
 |-----------|------------|------------|-------------|
-| `from`      | int32      | Required   | Start time. Set as UNIX timestamp in seconds or milliseconds. |
-| `to`        | int32      | Required   | End time. Set as UNIX timestamp in seconds or milliseconds.    |
-| `size`      | string     | Optional   | Number of log lines to include in the export.  | 
-| `hosts`     | string     | Optional   | Comma-separated list of hosts. |
-| `apps`      | string     | Optional   | Comma-separated list of applications. |
-| `levels`    | string     | Optional   | Comma-separated list of log levels. |
-| `query`     | string     | Optional   | Search query. For more information, see [Search Logs](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-view_logs#view_logs_step6). |
-| `prefer`    | string     | Optional   | Defines the log lines that you want to export. Valid values are `head`, first log lines, and `tail`, last log lines. If not specified, defaults to tail.  |
-| `email`     | string     | Optional   | Specifies the email with the downloadable link of your export. By default, the log lines are streamed.|
-| `emailSubject` | string     | Optional   | Use to set the subject of the email. </br>Use `%20` to represent a space. For example, a sample value is `Export%20logs`. |
+| `from`      | `int32`      | Required   | Start time. Set as UNIX timestamp in seconds or milliseconds. |
+| `to`        | `int32`      | Required   | End time. Set as UNIX timestamp in seconds or milliseconds.    |
+| `size`      | `string`     | Optional   | Number of log lines to include in the export.  | 
+| `hosts`     | `string`     | Optional   | Comma-separated list of hosts. |
+| `apps`      | `string`     | Optional   | Comma-separated list of applications. |
+| `levels`    | `string`     | Optional   | Comma-separated list of log levels. |
+| `query`     | `string`     | Optional   | Search query. For more information, see [Search Logs](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-view_logs#view_logs_step6). |
+| `prefer`    | `string`     | Optional   | Defines the log lines that you want to export. Valid values are `head`, first log lines, and `tail`, last log lines. If not specified, defaults to tail.  |
+| `email`     | `string`     | Optional   | Specifies the email with the downloadable link of your export. By default, the log lines are streamed.|
+| `emailSubject` | `string`     | Optional   | Use to set the subject of the email. </br>Use `%20` to represent a space. For example, a sample value is `Export%20logs`. |
 {: caption="Query parameters" caption-side="top"} 
 
 For example, to stream log lines into the terminal, you can run the following command:

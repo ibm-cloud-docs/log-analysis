@@ -1,7 +1,7 @@
 {:navgroup: .navgroup}
 {:topicgroup: .topicgroup}
 
-{: .toc subcollection="LogDNA" audience="service" arm="4158184" href="/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-getting-started" path="services/Log-Analysis-with-LogDNA"}
+{: .toc subcollection="LogDNA" audience="service" arm="4158184" href="/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-getting-started#getting-started" path="services/Log-Analysis-with-LogDNA"}
 IBM Log Analysis with LogDNA
 
     {: .navgroup id="learn"}
@@ -20,7 +20,6 @@ IBM Log Analysis with LogDNA
     {: .navgroup id="howto"}
     provision.md
     remove.md
-    config_agent.md
     ingestion_key.md
     log_sources.md
     alerts.md
