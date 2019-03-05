@@ -2,7 +2,11 @@
 
 copyright:
   years:  2018, 2019
-lastupdated: "2019-02-28"
+lastupdated: "2019-03-06"
+
+keywords: logging, web UI, browser
+
+subcollection: LogDNA
 
 ---
 
@@ -17,7 +21,7 @@ lastupdated: "2019-02-28"
 {:important: .important}
 {:note: .note}
 
-# Navigating to the Web UI
+# Navigating to the web UI
 {: #launch}
 
 After you provision an instance of the {{site.data.keyword.la_full_notm}} service in the {{site.data.keyword.cloud_notm}}, and configure a LogDNA agent for a log data source, you can view, monitor, and manage logs through the {{site.data.keyword.la_full_notm}} web UI.
