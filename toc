@@ -6,6 +6,7 @@ IBM Log Analysis with LogDNA
 
     {: .navgroup id="learn"}
     getting-started.md
+    index.md
     overview.md
     network.md
     iam.md
