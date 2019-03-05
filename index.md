@@ -17,7 +17,7 @@ lastupdated: "2019-02-18"
 
 
 # Getting started with IBM Log Analysis with LogDNA
-{: #getting-started}
+{: #index}
 
 Use IBM Log Analysis with LogDNA to add log management capabilities to your {{site.data.keyword.Bluemix}} architecture. IBM Log Analysis with LogDNA is operated by LogDNA in partnership with {{site.data.keyword.IBM_notm}}.
 {:shortdesc}
