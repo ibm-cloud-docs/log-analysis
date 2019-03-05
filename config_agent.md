@@ -29,14 +29,14 @@ The LogDNA agent is responsible for collecting and forwarding logs to your {{sit
 
 * The LogDNA agent authenticates by using the LogDNA Ingestion Key and opens a secure web socket to the {{site.data.keyword.la_full_notm}} ingestion servers. 
 * By default, the agent monitors all files with extension *.log*,  and extensionless files under */var/log/*.
-* The agent tails for new log data, and looks for new files that have been added to the logging directories that the agent monitors.
+* The agent tails for new log data, and looks for new files that are added to the logging directories that the agent monitors.
 
-There are different parameters that you can configure to customize the LogDNA agent: 
+You can configure the following parameters through the LogDNA agent: 
 
 | Parameter | Description |
 |-----------|-------------|
 | `tags`    | Define tags to group hosts automatically into dynamic groups. |
-| `logdir`  | Define custom paths that you want the agent to monitor. </br>Separate multiple paths by using commas. You can use glob patterns. You can configure specific files. Enter glob patterns by using double quotes. |
+| `logdir`  | Define custom paths that you want the agent to monitor. </br>Separate multiple paths by using commas. You can use glob patterns. You can configure specific files. Enter glob patterns by using double quotation marks. |
 | `exclude` | Define the files that you do not want the LogDNA agent to monitor. **Note:** These files can be located in any of the paths that are defined through the logdir parameter. </br>Separate multiple files by using commas. You can use glob patterns. You can configure specific files. |
 | `exclude_regex` | Define regex patterns to filter out any lines that match the pattern. Do not include leading and trailing `/`. |
 | `hostname` | Define the hostname. This value overrides the operating system hostname. |
@@ -59,7 +59,7 @@ To configure your Kubernetes cluster to forward logs to your LogDNA instance, co
    ```
    {: pre}
 
-   Select the account where you have provisioned the {{site.data.keyword.la_full_notm}} instance.
+   Select the account where you provisioned the {{site.data.keyword.la_full_notm}} instance.
 
 2. Set the cluster where you want to configure logging as the context for this session.
 
@@ -69,9 +69,6 @@ To configure your Kubernetes cluster to forward logs to your LogDNA instance, co
    {: pre}
 
    When the download of the configuration files is finished, a command is displayed that you can use to set the path to the local Kubernetes configuration file as an environment variable. Copy and paste the command that is displayed in your terminal to set the `KUBECONFIG` environment variable.
-
-   Every time you log in to the {{site.data.keyword.containerlong_notm}} CLI to work with your cluster, you must run this setup to set the path to the cluster's configuration file as a session variable. {{site.data.keyword.containerlong_notm}} uses this variable to find a local configuration file and certificates that are necessary to connect with your cluster.
-   {: tip}
 
 3. Create a Kubernetes secret to store your logDNA ingestion key for your service instance. The LogDNA ingestion key is used to open a secure web socket to the logDNA ingestion server and to authenticate the logging agent with the {{site.data.keyword.la_full_notm}} service.
 
@@ -98,7 +95,7 @@ To configure your Kubernetes cluster to forward logs to your LogDNA instance, co
 The deployment is successful when you see one or more LogDNA pods.
 * **The number of LogDNA pods equals the number of worker nodes in your cluster.** 
 * All pods must be in a `Running` state.
-* *Stdout* and *stderr* is automatically collected and forwarded from all containers. Log data include application logs and worker logs. 
+* *Stdout* and *stderr* are automatically collected and forwarded from all containers. Log data includes application logs and worker logs. 
 * By default, the LogDNA agent pod that runs on a worker collects logs from all namespaces on that node, including kube-system logs.
 
 
@@ -121,8 +118,6 @@ Complete the following steps to add tags:
 
     Then, copy and paste the command that is displayed in your terminal to set the KUBECONFIG environment variable.
 
-    **Note:** Every time you log in to the {{site.data.keyword.containerlong}} CLI to work with clusters, you must run these commands to set the path to the cluster's configuration file as a session variable. The Kubernetes CLI uses this variable to find a local configuration file and certificates that are necessary to connect with the cluster in {{site.data.keyword.cloud_notm}}.
-
 2. Check the update strategy of the DaemonSet. Then, choose whether to use *kubectl apply* or *kubectl edit* to modify the configuration file for the agent.
 
     To check the update strategy, run the following command:
@@ -132,20 +127,20 @@ Complete the following steps to add tags:
     ```
     {: pre}
 
-    Option 1: If the update strategy is set to *OnDelete* or if you have the configuration file managed through a version control system, update your local configuration file. Then, apply those changes to the LogDNA agent by using *kubectl apply*.
+    If the update strategy is set to *OnDelete* or if you have the configuration file that is managed through a version control system, update your local configuration file and apply changes to the LogDNA agent by using *kubectl apply*.
 
-    Option 2: If the update strategy is set to *RollingUpdate*, you can update and apply changes to the LogDNA agent by using *kubectl edit*.
+    If the update strategy is set to *RollingUpdate*, you can update and apply changes to the LogDNA agent by using *kubectl edit*.
 
-3. Edit the *logdna-agent-configmap.yaml* file. 
+3. Edit the `logdna-agent-configmap.yaml` file. 
 
-    Option 1: Update the configuration file by modifying the local copy. **Note:** You can also generate the configuration file of the agent by running the following command:
+    Update the configuration file by modifying the local copy. **Note:** You can also generate the configuration file of the agent by running the following command:
 
     ```
     kubectl get configmap logdna-agent -o=yaml > prod-logdna-agent-configmap.yaml
     ```
     {: codeblock}
 
-    Option 2: Update the configuration file by using *kubectl edit*:
+    Alternatively, update the configuration file by using *kubectl edit*.
 
     ```
     kubectl edit configmap logdna-agent
@@ -204,7 +199,7 @@ Complete the following steps to add tags:
     **Note:** If you use *kubectl edit*, changes are applied automatically when you save your modifications.
 
 
-## Configuring a LogDNA agent on Linux Ubuntu/Debian
+## Configuring a LogDNA agent on Linux Ubuntu or Debian
 {: #config_agent_linux}
 
 To configure your Ubuntu server to send logs to your {{site.data.keyword.la_full_notm}} instance, you must install a `logdna-agent`. The LogDNA agent reads log files from */var/log*, and forwards the log data to your LogDNA instance.
@@ -240,7 +235,7 @@ To configure your Ubuntu server to forward logs to your LogDNA instance, complet
     ```
     {: codeblock}
 
-    where INGESTION_KEY contains the ingestion key active for the {{site.data.keyword.la_full_notm}} instance where you are configuring to forward logs.
+    Where INGESTION_KEY contains the ingestion key active for the {{site.data.keyword.la_full_notm}} instance where you are configuring to forward logs.
 
 3. Set the authentication endpoint. The LogDNA agent uses this host to authenticate and get the token to forward logs.
 
@@ -268,7 +263,7 @@ To configure your Ubuntu server to forward logs to your LogDNA instance, complet
 6. Optionally, configure the LogDNA agent to tag your hosts. 
 
 
-## Adding tags to a LogDNA agent on Linux Ubuntu/Debian
+## Adding tags to a LogDNA agent on Linux Ubuntu or Debian
 {: #config_agent-linux_tags}
  
 
