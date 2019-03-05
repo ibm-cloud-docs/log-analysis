@@ -4,7 +4,7 @@ copyright:
   years:  2018, 2019
 lastupdated: "2019-03-06"
 
-keywords: LogDNA, IBM, Log Analysis, iam, security, logging, access groups
+keywords: LogDNA, IBM, Log Analysis, IAM, security, logging, access groups
 
 subcollection: LogDNA
 
@@ -22,10 +22,10 @@ subcollection: LogDNA
 {:note: .note}
 
  
-# Working with IAM policies and access groups
+# Managing IAM policies and access groups
 {: #work_iam}
 
-{{site.data.keyword.iamlong}} (IAM) enables you to securely authenticate users and control access to all cloud resources consistently in the {{site.data.keyword.cloud_notm}}. 
+You can use {{site.data.keyword.iamlong}} (IAM) to securely authenticate users and control access to all cloud resources consistently in the {{site.data.keyword.cloud_notm}}. 
 {:shortdesc}
 
 For more information, see [Managing user access with IAM](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-iam#iam).
@@ -75,21 +75,21 @@ Complete the following steps to assign a user administrator role to the {{site.d
 2. From the row for the user that you want to assign access, select the **Actions** menu, and then click **Assign access**.
 3. Select **Assign access within a resource group**.
 4. Select a resource group.
-5. If the user does not have a role already granted for the selected resource group, choose a role for the **Assign access to a resource group** field. 
+5. If the user does not have a role that is already granted for the selected resource group, choose a role for the **Assign access to a resource group** field. 
 
     Depending on the role that you select, the user can view the resource group on their dashboard, edit the resource group name, or manage user access to the group. 
     
-    You can select **No access**, if you want the user to only have access to the {{site.data.keyword.la_full_notm}} service in the resource group.
+    You can select **No access**, if you want the user to have access only to the {{site.data.keyword.la_full_notm}} service in the resource group.
 
 6. Select **IBM Log Analysis with LogDNA**.
 7. Select the platform role **Administrator**.
 8. Click **Assign**.
 
 
-## Granting permissions to a Devops user to manage the service in the {{site.data.keyword.cloud_notm}} account
+## Granting permissions to a DevOps user to manage the service in the {{site.data.keyword.cloud_notm}} account
 {: #devops_account}
 
-As a **Devops user**, you must have permissions to run the following actions: 
+As a **DevOps user**, you must have permissions to run the following actions: 
 
 * Provision a service instance
 * Delete a service instance
@@ -108,7 +108,7 @@ Complete the following steps to assign a user editor role to the {{site.data.key
 6. Select the platform role **Editor**.
 7. Click Assign.
 
-## Granting permissions to a Devops user to manage an instance in the {{site.data.keyword.cloud_notm}} account
+## Granting permissions to a DevOps user to manage an instance in the {{site.data.keyword.cloud_notm}} account
 {: #devops_account_instance}
 
 Complete the following steps to assign a user editor role on one instance of the {{site.data.keyword.la_full_notm}} service in the account: 
@@ -123,10 +123,10 @@ Complete the following steps to assign a user editor role on one instance of the
 
 
 
-## Granting permissions to a Devops user to manage the service within a resource group
+## Granting permissions to a DevOps user to manage the service within a resource group
 {: #devops_rg}
 
-As a **Devops user**, you must have permissions to run the following actions: 
+As a **DevOps user**, you must have permissions to run the following actions: 
 
 * Provision a service instance
 * Delete a service instance
@@ -141,11 +141,11 @@ Complete the following steps to assign a user editor role to the {{site.data.key
 2. From the row for the user that you want to assign access, select the **Actions** menu, and then click **Assign access**.
 3. Select **Assign access within a resource group**.
 4. Select a resource group.
-5. If the user does not have a role already granted for the selected resource group, choose a role for the **Assign access to a resource group** field. 
+5. If the user does not have a role that is already granted for the selected resource group, choose a role for the **Assign access to a resource group** field. 
 
     Depending on the role that you select, the user can view the resource group on their dashboard, edit the resource group name, or manage user access to the group. 
     
-    You can select **No access**, if you want the user to only have access to the {{site.data.keyword.la_full_notm}} service in the resource group.
+    You can select **No access**, if you want the user to have access only to the {{site.data.keyword.la_full_notm}} service in the resource group.
 
 6. Select **IBM Log Analysis with LogDNA**.
 7. Select the platform role **Editor**.
@@ -164,10 +164,10 @@ As an **admin user** in LogDNA, you must have permissions to run the following a
 
 Therefore, you need the following policies:
 
-* An IAM policy for the {{site.data.keyword.la_full_notm}} service with the platform role **Editor**. This policy allows you to view the service instance details through the command line and in the {{site.data.keyword.cloud_notm}} dashboard.
-* An IAM policy for the {{site.data.keyword.la_full_notm}} service with the service role **Manager**. This policy allows you to monitor, filter and search log, and define alerts through the LogDNA web UI.
+* An IAM policy for the {{site.data.keyword.la_full_notm}} service with the platform role **Editor**. This policy grants permissions to view the service instance details through the command line and in the {{site.data.keyword.cloud_notm}} dashboard.
+* An IAM policy for the {{site.data.keyword.la_full_notm}} service with the service role **Manager**. This policy grants permissions to monitor, filter and search log, and define alerts through the LogDNA web UI.
 
-**Note:** As an administrator of the service, when you grant a user these policies, consider doing it within the context of a resource group. An {{site.data.keyword.la_full_notm}} instance is provisioned within the context of a resource group. Therefore, you should grant access permissions within the context of the resource group.
+**Note:** As an administrator of the service, when you grant a user these policies, consider doing it within the context of a resource group. An {{site.data.keyword.la_full_notm}} instance is provisioned within the context of a resource group. Therefore, grant access permissions within the context of the resource group.
 
 
 Complete the following steps to assign a user both policies for the {{site.data.keyword.la_full_notm}} service within the context of a resource group: 
@@ -180,7 +180,7 @@ Complete the following steps to assign a user both policies for the {{site.data.
 
     Depending on the role that you select, the user can view the resource group on their dashboard, edit the resource group name, or manage user access to the group. 
     
-    You can select **No access**, if you want the user to only have access to the {{site.data.keyword.la_full_notm}} service in the resource group.
+    You can select **No access**, if you want the user to have access only to the {{site.data.keyword.la_full_notm}} service in the resource group.
 
 6. Select **IBM Log Analysis with LogDNA**.
 7. Select the platform role **Editor**.
@@ -198,10 +198,10 @@ As a **user**, **auditor**, or **developer**, you might need permissions to run 
 
 Therefore, you need the following policies:
 
-* An IAM policy for the {{site.data.keyword.la_full_notm}} service with the platform role **Viewer**. This policy allows you to view the service instance details through the command line and in the {{site.data.keyword.cloud_notm}} dashboard.
-* An IAM policy for the {{site.data.keyword.la_full_notm}} service with the service role **Reader**. This policy allows you to view, filter and search logs through the LogDNA web UI.
+* An IAM policy for the {{site.data.keyword.la_full_notm}} service with the platform role **Viewer**. This policy grants permissions to view the service instance details through the command line and in the {{site.data.keyword.cloud_notm}} dashboard.
+* An IAM policy for the {{site.data.keyword.la_full_notm}} service with the service role **Reader**. This policy grants permissions to view, filter and search logs through the LogDNA web UI.
 
-**Note:** As an administrator of the service, when you grant a user these policies, consider doing it within the context of a resource group. An {{site.data.keyword.la_full_notm}} instance is provisioned within the context of a resource group. Therefore, you should grant access permissions within the context of the resource group.
+**Note:** As an administrator of the service, when you grant a user these policies, consider doing it within the context of a resource group. An {{site.data.keyword.la_full_notm}} instance is provisioned within the context of a resource group. Therefore, grant access permissions to users within the context of the resource group.
 
 Complete the following steps to assign a user both policies for the {{site.data.keyword.la_full_notm}} service within the context of a resource group: 
 
