@@ -33,7 +33,7 @@ After you provision an instance of the {{site.data.keyword.la_full_notm}} servic
 
 **Note:** You must be an administrator of the {{site.data.keyword.la_full_notm}} service, an administrator of an {{site.data.keyword.la_full_notm}} instance, or have account IAM permissions to grant other users policies.
 
-The following table lists the minimum policies that a user must have to be able to launch the IBM Cloud Monitoring with Sysdig web UI, and view data:
+The following table lists the minimum policies that a user must have to be able to launch the web UI, and view data:
 
 | Service                              | Role                      | Permission granted       |
 |--------------------------------------|---------------------------|---------------------|
@@ -97,7 +97,7 @@ To get the web UI URL, complete the following steps from a terminal:
 4. Set the IAM token.
 
     ```
-    export iam_token=$(ic iam oauth-tokens | grep IAM | grep -oP  "eyJ.*")
+    export iam_token=$(ibmcloud iam oauth-tokens | grep IAM | grep -oP  "eyJ.*")
     ```
     {: codeblock}
 
@@ -106,7 +106,7 @@ To get the web UI URL, complete the following steps from a terminal:
 5. Set the resource group ID.
 
     ```
-    export resource_group_id=$(ic resource groups | grep "^$logdna_rg_name" | awk '{print $2}')
+    export resource_group_id=$(ibmcloud resource groups | grep "^$logdna_rg_name" | awk '{print $2}')
     ```
     {: codeblock}
 

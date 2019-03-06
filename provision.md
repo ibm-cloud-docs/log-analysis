@@ -65,7 +65,7 @@ To provision an instance from the Observability dashboard in the {{site.data.key
 
     For more information about other service plans, see [Pricing plans](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-about#overview_pricing_plans).
 
-7. Click **Create**.
+8. Click **Create**.
 
 After you provision an instance, the *Logging* dashboard opens. 
 
