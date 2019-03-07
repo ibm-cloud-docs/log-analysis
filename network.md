@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2019
-lastupdated: "2019-03-06"
+lastupdated: "2019-03-07"
 
 keywords: LogDNA, IBM, Log Analysis, logging, network, IP addresses, port
 
@@ -50,5 +50,25 @@ The following tables list the IP addresses per region that you must configure in
 {: caption="Table 2. IP addresses used by the LogDNA agent" caption-side="top"}
 
 
+
+## Network traffic for custom firewall configurations in the EU DE region
+{: #ips_eu-de}
+
+You must allow outgoing traffic on TCP port 443 and TCP port 80 in your firewall. For example, you must open TCP port 443 and TCP port 80 from each worker to the {{site.data.keyword.la_full_notm}} service.
+
+**Note:** The API endpoint is required for LogDNA agent authentication. The LogDNA agent gets a token that you can use to send logs to the Ingestion endpoint.
+
+The following tables list the IP addresses per region that you must configure in your firewall to allow outgoing traffic:
+
+| Region      | Ingestion endpoint                          | Public IP addresses               | Ports   |
+|-------------|---------------------------------------------|-----------------------------------|---------|
+| `EU DE`     | logs.eu-de.logging.cloud.ibm.com         | 161.156.89.11 </br>149.81.86.68 </br>158.177.129.36  | TCP 443 </br>TCP 80 | 
+{: caption="Table 3. IP addresses to send logs" caption-side="top"}
+
+
+| Region      | Authentication endpoint                     | Public IP addresses               | Ports   |
+|-------------|---------------------------------------------|-----------------------------------|---------|
+| `EU DE`     | api.eu-de.logging.cloud.ibm.com          | 161.156.89.12  </br>149.81.86.66 </br>158.177.129.34    | TCP 443 </br>TCP 80 |
+{: caption="Table 4. IP addresses used by the LogDNA agent" caption-side="top"}
 
 

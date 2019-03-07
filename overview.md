@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2019
-lastupdated: "2019-03-06"
+lastupdated: "2019-03-07"
 
 keywords: LogDNA, IBM, Log Analysis, logging, overview
 
@@ -120,11 +120,19 @@ The following tables outline the different features that are included in each se
 
 
 
-
 ## Regions
 {: #overview_regions}
 
-Logging with {{site.data.keyword.la_full_notm}} is available in the **US South** region only. The **US South** region is also known as the **Dallas** region.
+Logging with {{site.data.keyword.la_full_notm}} is available in the following regions:
+
+| Region                | Location  |
+|-----------------------|-----------|
+| **US South**          | Dallas    |
+| **EU-DE**             | Frankfurt | 
+{: caption="Table 3. List of regions where the service is available" caption-side="top"} 
+
+Currently, the **Frankfurt** location is **not** EU-managed. For more information, see [Enabling the EU Supported setting](/docs/account?topic=account-eu-hipaa-supported#bill_eusupported).
+{: important}
 
 
 

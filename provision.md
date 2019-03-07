@@ -113,9 +113,7 @@ Next, configure a log source by adding a LogDNA agent. This agent is responsible
 
 To provision an instance of {{site.data.keyword.la_full_notm}} through the command line, complete the following steps:
 
-1. [Pre-requisite] Installation of the {{site.data.keyword.cloud_notm}} CLI.
-
-   For more information, see [Installing the {{site.data.keyword.cloud_notm}} CLI](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-about#about).
+1. [Pre-requisite] Installation of the {{site.data.keyword.cloud_notm}} CLI. [Learn more](/docs/cli?topic=cloud-cli-ibmcloud-cli#ibmcloud-cli).
 
    If the CLI is installed, continue with the next step.
 

@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2019
-lastupdated: "2019-03-06"
+lastupdated: "2019-03-07"
 
 keywords: LogDNA, IBM, Log Analysis, logging, getting started
 
@@ -44,7 +44,7 @@ Use {{site.data.keyword.la_full}} to add log management capabilities to your {{s
 
 Choose a cloud resource for which you want to manage logs. Then, configure this log source so that you can monitor its logs through the {{site.data.keyword.la_full_notm}} service. The log source can be located in the same region where you provision an {{site.data.keyword.la_full_notm}} instance or in a different region.
 
-The following table lists cloud resources that you can configure to store and manage logs by using the {{site.data.keyword.la_full_notm}} service. Complete the tutorial for a resource to get started with the {{site.data.keyword.loganalysisshort}} service:
+The following table lists examples of cloud resources that you can configure to store and manage logs by using the {{site.data.keyword.la_full_notm}} service. Complete the tutorial for a resource to get started with the {{site.data.keyword.loganalysisshort}} service:
 
 <table>
   <caption>Tutorials to get started working with the {{site.data.keyword.la_full_notm}} service </caption>
