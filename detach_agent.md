@@ -24,7 +24,7 @@ subcollection: LogDNA
 # Detaching a LogDNA agent from an instance
 {: #detach_agent}
 
-To stop collecting and forwarding logs from a log source, that you have configured with a LogDNA agent, to a logging instance, you must remove the agent from that log source.
+Detach a LogDNA agent from a logging instance to stop collecting logs.
 {:shortdesc}
 
 ## Detaching a LogDNA agent from a Kubernetes cluster
