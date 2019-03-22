@@ -88,19 +88,6 @@ Use the following table to identify the platform role that you can grant a user 
 | `View service instances in the Observability Logging dashboard`         | Administrator </br>Editor </br>Operator </br>Viewer  | 
 {: caption="Table 1. IAM user roles and actions" caption-side="top"}
 
-Use the following table to identify the platform role that you can grant a user in the {{site.data.keyword.cloud_notm}} to run any of the following service actions:
-
-| Actions                                                                 | {{site.data.keyword.cloud_notm}} Platform Roles     | 
-|-------------------------------------------------------------------------|------------------------------------------------------|
-| `Add LogDNA log sources`                                                | Administrator                                        |
-| `Configure and customize LogDNA agents`                                 | Administrator                                        | 
-| `Configure alerts`                                                      | Administrator                                        | 
-| `Configure exclusion rules through the web UI`                          | Administrator                                        | 
-| `Filter and search log data`                                            | Administrator                                        |
-| `Configure user preferences in the LogDNA web UI`                       | Administrator                                        |
-| `View logs through the LogDNA Web UI`                                   | Administrator                                        | 
-{: caption="Table 2. IAM user roles and actions" caption-side="top"}
-
 
 
 ## {{site.data.keyword.cloud_notm}} service roles
@@ -114,11 +101,9 @@ Use the following table to identify the service roles that you can grant a user 
 | `Manage ingestion keys`                                                 | Manager                                              |
 | `Manage service keys`                                                   | Manager                                              |
 | `Archive logs`                                                          | Manager                                              |
-| `Manage parsing`                                                        | Manager                                              |
 | `Configure alerts`                                                      | Manager </br>Writer </br>Reader                      | 
 | `Filter and search log data`                                            | Manager </br>Writer </br>Reader                      |
 | `Create views`                                                          | Manager </br>Writer </br>Reader                      |
-| `Manage views`                                                          | Manager </br>Writer </br>Reader                      |
 | `Export log data`                                                       | Manager </br>Writer </br>Reader                      |
 | `Configure user preferences in the LogDNA web UI`                       | Manager </br>Writer </br>Reader                      |
 | `View logs through the LogDNA web UI`                                   | Manager </br>Writer </br>Reader                      | 
