@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2019
-lastupdated: "2019-03-06"
+lastupdated: "2019-03-07"
 
 keywords: LogDNA, IBM, Log Analysis, logging, network, IP addresses, port
 

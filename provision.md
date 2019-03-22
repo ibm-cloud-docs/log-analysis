@@ -119,7 +119,7 @@ To provision an instance of {{site.data.keyword.la_full_notm}} through the comma
 
 1. [Pre-requisite] Installation of the {{site.data.keyword.cloud_notm}} CLI.
 
-   For more information, see [Installing the {{site.data.keyword.cloud_notm}} CLI](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-about#about).
+   For more information, see [Installing the {{site.data.keyword.cloud_notm}} CLI](/docs/cli?topic=cloud-cli-ibmcloud-cli#ibmcloud-cli).
 
    If the CLI is installed, continue with the next step.
 
