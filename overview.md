@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2019
-lastupdated: "2019-03-07"
+lastupdated: "2019-03-23"
 
 keywords: LogDNA, IBM, Log Analysis, logging, overview
 
@@ -45,7 +45,7 @@ Before you provision an instance of {{site.data.keyword.la_full_notm}}, consider
 
 You provision an {{site.data.keyword.la_full_notm}} instance within the context of a resource group. You organize your services for access control and billing purposes by using resource groups. You can provision the instance in the *default* resource group or in a custom resource group.
 
-After you provision an instance of {{site.data.keyword.la_full_notm}}, an account in created in LogDNA, and you receive the ingestion key for your account.
+After you provision an instance of {{site.data.keyword.la_full_notm}}, an account is created in LogDNA, and you receive the ingestion key for your account.
 
 Then, you must configure a LogDNA agent for each log source. A log source is a Cloud or on-prem resource that generates logs. For example, a log source can be a Kubernetes cluster. You use the ingestion key to configure the LogDNA agent that is responsible for collecting and forwarding logs to your {{site.data.keyword.la_full_notm}} instance.
 

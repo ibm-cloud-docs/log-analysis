@@ -81,7 +81,7 @@ Use the following table to identify the platform role that you can grant a user 
 | Platform actions                                                        | {{site.data.keyword.cloud_notm}} Platform Roles    | 
 |-------------------------------------------------------------------------|------------------------------------------------------|
 | `Grant other account members access to work with the service`           | Administrator                                        | 
-| `Provision a service instance`                                          | Administrator </br>Editor                            | 
+| `Provision a service instance`                                          | Editor                            | 
 | `Delete a service instance`                                             | Administrator </br>Editor                            | 
 | `Create a service ID`                                                   | Administrator </br>Editor                            |
 | `View details of a service instance`                                    | Administrator </br>Editor </br>Operator </br>Viewer  | 
@@ -93,9 +93,11 @@ Use the following table to identify the platform role that you can grant a user 
 | Actions                                                                 | {{site.data.keyword.cloud_notm}} Platform Roles     | 
 |-------------------------------------------------------------------------|------------------------------------------------------|
 | `Add LogDNA log sources`                                                | Administrator                                        |
+| `Configure and customize LogDNA agents`                                 | Administrator                                        | 
 | `Configure alerts`                                                      | Administrator                                        | 
-| `Manage log data`                                                       | Administrator                                        |
-| `Manage the LogDNA Web UI`                                              | Administrator                                        |
+| `Configure exclusion rules through the web UI`                          | Administrator                                        | 
+| `Filter and search log data`                                            | Administrator                                        |
+| `Configure user preferences in the LogDNA web UI`                       | Administrator                                        |
 | `View logs through the LogDNA Web UI`                                   | Administrator                                        | 
 {: caption="Table 2. IAM user roles and actions" caption-side="top"}
 
@@ -109,12 +111,17 @@ Use the following table to identify the service roles that you can grant a user 
 | Actions                                                                 | {{site.data.keyword.cloud_notm}} Service Roles     | 
 |-------------------------------------------------------------------------|------------------------------------------------------|
 | `Add LogDNA log sources`                                                | Manager                                              |
+| `Manage ingestion keys`                                                 | Manager                                              |
+| `Manage service keys`                                                   | Manager                                              |
 | `Archive logs`                                                          | Manager                                              |
-| `Renew the ingestion key`                                               | Manager                                              |
-| `Configure alerts`                                                      | Manager                                              | 
-| `Manage log data`                                                       | Manager                                              |
-| `Manage the LogDNA Web UI`                                              | Manager                                              |
-| `View logs through the LogDNA Web UI`                                   | Manager </br>Writer </br>Reader                      | 
+| `Manage parsing`                                                        | Manager                                              |
+| `Configure alerts`                                                      | Manager </br>Writer </br>Reader                      | 
+| `Filter and search log data`                                            | Manager </br>Writer </br>Reader                      |
+| `Create views`                                                          | Manager </br>Writer </br>Reader                      |
+| `Manage views`                                                          | Manager </br>Writer </br>Reader                      |
+| `Export log data`                                                       | Manager </br>Writer </br>Reader                      |
+| `Configure user preferences in the LogDNA web UI`                       | Manager </br>Writer </br>Reader                      |
+| `View logs through the LogDNA web UI`                                   | Manager </br>Writer </br>Reader                      | 
 {: caption="Table 3. IAM user roles and actions" caption-side="top"}
 
 

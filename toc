@@ -21,6 +21,7 @@ IBM Log Analysis with LogDNA
     provision.md
     remove.md
     config_agent.md
+    detach_agent.md
     ingestion_key.md
     log_sources.md
     alerts.md

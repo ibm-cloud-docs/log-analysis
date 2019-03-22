@@ -51,7 +51,7 @@ The following figure shows a high-level view of the different components that ar
 Complete the following steps to archive an {{site.data.keyword.la_full_notm}} instance into a bucket in an {{site.data.keyword.cos_full_notm}} instance:
 
 
-## Step 1: Grant IAM policies to a user to work with IBM Cloud Object Storage
+## Step 1. Grant IAM policies to a user to work with {{site.data.keyword.cos_full_notm}}
 {: #archiving_step1}
 
 **Note:** This step must be completed by the account owner or an administrator of the {{site.data.keyword.cos_full_notm}} service on the {{site.data.keyword.cloud_notm}}.
@@ -93,7 +93,7 @@ Complete the following steps to assign a user administrator role to the {{site.d
 
 
 
-## Step 2: Provision an instance of IBM Cloud Object Storage
+## Step 2. Provision an instance of {{site.data.keyword.cos_full_notm}}
 {: #archiving_step2}
 
 **Note:** This step must be completed by an editor, or administrator of the {{site.data.keyword.cos_full_notm}} service on the {{site.data.keyword.cloud_notm}}. 
@@ -126,7 +126,7 @@ Complete the following steps to provision an {{site.data.keyword.cos_full_notm}}
 
 
 
-## Step 3: Create a bucket
+## Step 3. Create a bucket
 {: #archiving_step3}
 
 Buckets are a way to organize your data in an {{site.data.keyword.cos_full_notm}} instance. 
@@ -187,7 +187,7 @@ Complete the following steps to create a bucket:
 
 
 
-## Step 4: Create a service ID for the IBM Cloud Object Storage instance
+## Step 4. Create a service ID for the {{site.data.keyword.cos_full_notm}} instance
 {: #archiving_step4}
 
 A service ID identifies a service similar to how a user ID identifies a user. Service IDs are not tied to a specific user. If the user that creates the service ID leaves your organization and is deleted from the account, the service ID remains.
@@ -224,7 +224,7 @@ For the service ID that you just created, click **View credentials**. You can se
 * Copy the resource instance ID. This is the value set for the field **resource_instance_id**.
 
 
-## Step 5: Restrict the service ID to only have writing permissions for the bucket
+## Step 5. Restrict the service ID to only have writing permissions for the bucket
 {: #archiving_step5}
 
 If you want to restrict the service ID to only have writing permissions for a bucket, complete the following steps:
@@ -248,7 +248,7 @@ If you want to restrict the service ID to only have writing permissions for a bu
 **Note:** If you leave the Resource Type or Resource fields blank, the policy that is created is an instance-level policy.
 
 
-## Step 6: Select the endpoint
+## Step 6. Select the endpoint
 {: #archiving_step6}
 
 An endpoint defines where to look for a bucket. There are different endpoints depending on the region and type of resiliency. For more information, see [Select regions and endpoints](/docs/services/cloud-object-storage?topic=cloud-object-storage-endpoints#endpoints).
@@ -271,7 +271,7 @@ Complete the following steps to obtain the endpoint for your bucket:
 
 
 
-## Step 7: Grant IAM policies to a user to archive logs
+## Step 7. Grant IAM policies to a user to archive logs
 {: #archiving_step7}
 
 The following table lists the policies that a user must have to configure archiving of logs from the {{site.data.keyword.la_full_notm}} web UI into a bucket in an {{site.data.keyword.cos_full_notm}} instance:
@@ -303,7 +303,7 @@ Complete the following steps to assign a user permission to archive logs:
 
 
 
-## Step 8: Configure archiving for your {{site.data.keyword.la_full_notm}} instance
+## Step 8. Configure archiving for your {{site.data.keyword.la_full_notm}} instance
 {: #archiving_step8}
 
 
