@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2019
-lastupdated: "2019-03-06"
+lastupdated: "2019-03-26"
 
 keywords: LogDNA, IBM, Log Analysis, logging, config agent
 
@@ -136,14 +136,14 @@ Complete the following steps to add tags:
     Update the configuration file by modifying the local copy. **Note:** You can also generate the configuration file of the agent by running the following command:
 
     ```
-    kubectl get configmap logdna-agent -o=yaml > prod-logdna-agent-configmap.yaml
+    kubectl get daemonset logdna-agent -o=yaml > prod-logdna-agent-ds.yaml
     ```
     {: codeblock}
 
     Alternatively, update the configuration file by using *kubectl edit*.
 
     ```
-    kubectl edit configmap logdna-agent
+    kubectl edit daemonset logdna-agent
     ```
     {: codeblock}
 
@@ -192,7 +192,7 @@ Complete the following steps to add tags:
 5. Apply configuration changes if you edit the file locally. 
 
     ```
-    kubectl apply -f logdna-agent-configmap.yaml
+    kubectl apply -f prod-logdna-agent-ds.yaml
     ```
     {: codeblock}
     
