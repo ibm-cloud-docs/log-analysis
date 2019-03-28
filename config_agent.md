@@ -72,17 +72,28 @@ To configure your Kubernetes cluster to forward logs to your LogDNA instance, co
 
 3. Create a Kubernetes secret to store your logDNA ingestion key for your service instance. The LogDNA ingestion key is used to open a secure web socket to the logDNA ingestion server and to authenticate the logging agent with the {{site.data.keyword.la_full_notm}} service.
 
-   ```
-   kubectl create secret generic logdna-agent-key --from-literal=logdna-agent-key=<logDNA_ingestion_key>
-   ```
-   {: pre}
+    ```
+    kubectl create secret generic logdna-agent-key --from-literal=logdna-agent-key=<logDNA_ingestion_key>
+    ```
+    {: pre}
 
 4. Create a Kubernetes daemon set to deploy the LogDNA agent on every worker node of your Kubernetes cluster. The LogDNA agent collects logs with the extension `*.log` and extensionsless files that are stored in the `/var/log` directory of your pod. By default, logs are collected from all namespaces, including `kube-system`, and automatically forwarded to the {{site.data.keyword.la_full_notm}} service.
 
-   ```
-   kubectl create -f https://repo.logdna.com/ibm/prod/logdna-agent-ds-us-south.yaml
-   ```
-   {: pre}
+    <table>
+      <caption>Commands by region</caption>
+      <tr>
+        <th>Location</th>
+        <th>Command</th>
+      </tr>
+      <tr>
+        <td>`US-South`</td>
+        <td>`kubectl create -f https://repo.logdna.com/ibm/prod/logdna-agent-ds-us-south.yaml`</td>
+      </tr>
+      <tr>
+        <td>`EU-DE`</td>
+        <td>`kubectl create -f https://repo.logdna.com/ibm/prod/logdna-agent-ds-eu-de.yaml`</td>
+      </tr>
+    </table>
 
 5. Verify that the LogDNA agent is deployed successfully. 
 
