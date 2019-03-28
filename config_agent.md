@@ -250,17 +250,39 @@ To configure your Ubuntu server to forward logs to your LogDNA instance, complet
 
 3. Set the authentication endpoint. The LogDNA agent uses this host to authenticate and get the token to forward logs.
 
-    ```
-    sudo logdna-agent -s LOGDNA_APIHOST=api.us-south.logging.cloud.ibm.com
-    ```
-    {: codeblock}
+    <table>
+      <caption>Commands by region</caption>
+      <tr>
+        <th>Location</th>
+        <th>Command</th>
+      </tr>
+      <tr>
+        <td>`US-South`</td>
+        <td>`sudo logdna-agent -s LOGDNA_APIHOST=api.us-south.logging.cloud.ibm.com`</td>
+      </tr>
+      <tr>
+        <td>`EU-DE`</td>
+        <td>`sudo logdna-agent -s LOGDNA_APIHOST=api.eu-de.logging.cloud.ibm.com`</td>
+      </tr>
+    </table>
 
 4. Set the ingestion endpoint.
 
-    ```
-    sudo logdna-agent -s LOGDNA_LOGHOST=logs.us-south.logging.cloud.ibm.com
-    ```
-    {: codeblock}
+    <table>
+      <caption>Commands by region</caption>
+      <tr>
+        <th>Location</th>
+        <th>Command</th>
+      </tr>
+      <tr>
+        <td>`US-South`</td>
+        <td>`sudo logdna-agent -s LOGDNA_LOGHOST=logs.us-south.logging.cloud.ibm.com`</td>
+      </tr>
+      <tr>
+        <td>`EU-DE`</td>
+        <td>`sudo logdna-agent -s LOGDNA_LOGHOST=logs.eu-de.logging.cloud.ibm.com`</td>
+      </tr>
+    </table>
 
 5. Define more log paths to be monitored. Run the following command: 
 
