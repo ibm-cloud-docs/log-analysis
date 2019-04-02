@@ -54,5 +54,5 @@ The main *Observability* page opens.
 
 The instance that you choose to receive service logs shows the flag **Platform services logs**.
 
-For more information about the services that are enabled to send logs to {{site.data.keyword.la_full_notm}}, see [Cloud services]().
+For more information about the services that are enabled to send logs to {{site.data.keyword.la_full_notm}}, see [Cloud services](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-cloud_services#cloud_services).
 
