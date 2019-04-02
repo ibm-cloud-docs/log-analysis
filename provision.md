@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2019
-lastupdated: "2019-03-26"
+lastupdated: "2019-04-02"
 
 keywords: LogDNA, IBM, Log Analysis, logging instance, provision
 
@@ -55,17 +55,13 @@ To provision an instance from the Observability dashboard in the {{site.data.key
 
     **Note:** If you are not able to select a resource group, check that you have editing permissions on the resource group where you want to provision the instance.
 
-6. Enable **IBM service logs**.
-
-    **Note:** Only one instance of the service can collect IBM service logs.
-
-7. Select the `Lite` service plan. 
+6. Select the `Lite` service plan. 
 
     By default, the lite plan is set.
 
     For more information about other service plans, see [Pricing plans](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-about#overview_pricing_plans).
 
-8. Click **Create**.
+7. Click **Create**.
 
 After you provision an instance, the *Logging* dashboard opens. 
 

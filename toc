@@ -19,6 +19,7 @@ IBM Log Analysis with LogDNA
 
     {: .navgroup id="howto"}
     provision.md
+    config_svc_logs.md
     remove.md
     config_agent.md
     detach_agent.md
@@ -34,6 +35,7 @@ IBM Log Analysis with LogDNA
     {: .navgroup-end}
 
     {: .navgroup id="reference"}
+    cloud_services.md
     [LogDNA Product Page](https://logdna.com/)
     [LogDNA Documentation](https://docs.logdna.com/docs)
     [LogDNA Blog](https://blog.logdna.com/)
