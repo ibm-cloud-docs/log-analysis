@@ -28,7 +28,7 @@ subcollection: cloudloganalysis
 No {{site.data.keyword.Bluemix}}, é possível designar a um usuário uma ou mais funções do IAM. Essas funções definem quais tarefas estão ativadas para esse usuário para trabalhar com o serviço {{site.data.keyword.loganalysisshort}}.  
 {:shortdesc}
 
-Por exemplo, é possível conceder a um usuário a função de **operador** para permitir que ele gerencie logs. Se você desejar que apenas um usuário visualize logs da conta, será possível conceder ao usuário a função de **visualizador**. Para obter mais informações, veja [Funções do IAM](/docs/services/CloudLogAnalysis/security_ov.html#iam_roles).
+Por exemplo, é possível conceder a um usuário a função de **operador** para permitir que ele gerencie logs. Se você desejar que apenas um usuário visualize logs da conta, será possível conceder ao usuário a função de **visualizador**. Para obter mais informações, veja [Funções do IAM](/docs/services/CloudLogAnalysis?topic=cloudloganalysis-security_ov#iam_roles).
 
 **Nota:** 
 
@@ -52,7 +52,7 @@ Conclua as etapas a seguir para conceder a um usuário permissões para trabalha
 	
 3. Se o usuário é um membro da conta, selecione o nome do usuário na lista ou clique em **Gerenciar usuário** no menu *Ações*.
 
-    Se o usuário não é um membro da conta, veja [Convidando usuários](/docs/iam/iamuserinv.html#iamuserinv).
+    Se o usuário não é um membro da conta, veja [Convidando usuários](/docs/iam?topic=iam-iamuserinv#iamuserinv).
 
 4. Na seção **Políticas de acesso**, clique em **Designar acesso** e, em seguida, selecione **Designar acesso aos recursos**.
 
@@ -80,7 +80,7 @@ Conclua as etapas a seguir para conceder a um usuário permissões para trabalha
 	  </tr>
 	  <tr>
 	    <td>Funções</td>
-		<td>Selecione uma ou mais funções do IAM. <br>As funções válidas são: *administrador*, *operador*, *editor* e *visualizador*. <br>Para obter mais informações sobre as ações que são permitidas por função, veja [Funções do IAM](/docs/services/CloudLogAnalysis/security_ov.html#iam_roles).
+		<td>Selecione uma ou mais funções do IAM. <br>As funções válidas são: *administrador*, *operador*, *editor* e *visualizador*. <br>Para obter mais informações sobre as ações que são permitidas por função, veja [Funções do IAM](/docs/services/CloudLogAnalysis?topic=cloudloganalysis-security_ov#iam_roles).
 		</td>
 	  </tr>
      </table>
@@ -97,7 +97,7 @@ Conclua as etapas a seguir para conceder a um usuário acesso para visualizar lo
 
 1. Em um terminal, efetue login na conta do {{site.data.keyword.Bluemix_notm}}. 
 
-    Para obter mais informações, veja [Como efetuar login no {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/qa/cli_qa.html#login).
+    Para obter mais informações, veja [Como efetuar login no {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#login).
 
 2. Verifique se o usuário é um membro da conta. Execute o comando a seguir para obter a lista de usuários na conta:
 
@@ -108,7 +108,7 @@ Conclua as etapas a seguir para conceder a um usuário acesso para visualizar lo
 
 	Uma lista de usuários com seus GUIDs é exibida.
 
-3. Se o usuário não for um membro da conta, entre em contato com o proprietário da conta e solicite um convite do usuário para a conta. Para obter mais informações, veja [Convidando usuários](/docs/iam/iamuserinv.html#iamuserinv).
+3. Se o usuário não for um membro da conta, entre em contato com o proprietário da conta e solicite um convite do usuário para a conta. Para obter mais informações, veja [Convidando usuários](/docs/iam?topic=iam-iamuserinv#iamuserinv).
 
     **Dica:** o comando para convidar um usuário para uma conta é o seguinte: `ibmcloud iam account-user-invite USER_EMAIL`
 		
@@ -152,7 +152,7 @@ Conclua as etapas a seguir para conceder a um usuário permissões para trabalha
 	
 3. Se o usuário é um membro da conta, selecione o nome do usuário na lista ou clique em **Gerenciar usuário** no menu *Ações*.
 
-    Se o usuário não é um membro da conta, veja [Convidando usuários](/docs/iam/iamuserinv.html#iamuserinv).
+    Se o usuário não é um membro da conta, veja [Convidando usuários](/docs/iam?topic=iam-iamuserinv#iamuserinv).
 
 4. Selecione **Acesso do Cloud Foundry** e, em seguida, selecione a organização.
 

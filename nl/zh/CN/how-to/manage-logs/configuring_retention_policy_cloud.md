@@ -42,11 +42,11 @@ subcollection: cloudloganalysis
 
 1. 登录到 {{site.data.keyword.Bluemix_notm}} 中的区域、组织和空间。 
 
-    有关更多信息，请参阅[如何登录到 {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/qa/cli_qa.html#login)。
+    有关更多信息，请参阅[如何登录到 {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#login)。
 	
 2. 获取帐户标识。
 
-    有关更多信息，请参阅[如何获取帐户的 GUID](/docs/services/CloudLogAnalysis/qa/cli_qa.html#account_guid)。
+    有关更多信息，请参阅[如何获取帐户的 GUID](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#account_guid)。
     
 3. 将保留期设置为 **-1** 以禁用保留期。运行以下命令：
 
@@ -78,7 +78,7 @@ ibmcloud logging option-update -r account -i 12345677fgh436902a3 -e -1
 
 1. 登录到 {{site.data.keyword.Bluemix_notm}} 中的区域、组织和空间。 
 
-    有关更多信息，请参阅[如何登录到 {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/qa/cli_qa.html#login)。
+    有关更多信息，请参阅[如何登录到 {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#login)。
     
 2. 将保留期设置为 **-1** 以禁用保留期。运行以下命令：
 
@@ -108,11 +108,11 @@ ibmcloud logging option-update -e -1
 
 1. 登录到 {{site.data.keyword.Bluemix_notm}} 中的区域、组织和空间。 
 
-    有关更多信息，请参阅[如何登录到 {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/qa/cli_qa.html#login)。
+    有关更多信息，请参阅[如何登录到 {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#login)。
 
 2. 获取帐户标识。
 
-    有关更多信息，请参阅[如何获取帐户的 GUID](/docs/services/CloudLogAnalysis/qa/cli_qa.html#account_guid)。
+    有关更多信息，请参阅[如何获取帐户的 GUID](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#account_guid)。
     
 3. 获取保留期。运行以下命令：
 
@@ -139,7 +139,7 @@ ibmcloud logging option-update -e -1
 
 1. 登录到 {{site.data.keyword.Bluemix_notm}} 中的区域、组织和空间。 
 
-    有关更多信息，请参阅[如何登录到 {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/qa/cli_qa.html#login)。
+    有关更多信息，请参阅[如何登录到 {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#login)。
     
 2. 获取保留期。运行以下命令：
 
@@ -168,11 +168,11 @@ ibmcloud logging option-update -e -1
 
 1. 登录到 {{site.data.keyword.Bluemix_notm}} 中的区域、组织和空间。 
 
-    有关更多信息，请参阅[如何登录到 {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/qa/cli_qa.html#login)。
+    有关更多信息，请参阅[如何登录到 {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#login)。
 
 2. 获取帐户标识。
 
-    有关更多信息，请参阅[如何获取帐户的 GUID](/docs/services/CloudLogAnalysis/qa/cli_qa.html#account_guid)。
+    有关更多信息，请参阅[如何获取帐户的 GUID](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#account_guid)。
     
 3. 设置保留期。运行以下命令：
 
@@ -202,7 +202,7 @@ ibmcloud logging option-update -r account -i AccountID -e 15
 
 1. 登录到 {{site.data.keyword.Bluemix_notm}} 中的区域、组织和空间。 
 
-    有关更多信息，请参阅[如何登录到 {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/qa/cli_qa.html#login)。
+    有关更多信息，请参阅[如何登录到 {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#login)。
     
 2. 设置保留期。运行以下命令：
 

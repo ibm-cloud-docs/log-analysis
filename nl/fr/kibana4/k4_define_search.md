@@ -25,7 +25,7 @@ subcollection: cloudloganalysis
 # Définition de requêtes de recherche personnalisées
 {:#k4_define_search}
 
-Dans la barre de recherche de la page Discover,  vous pouvez définir et enregistrer des requêtes de recherche en utilisant le langage de requête Lucene. Pour chaque recherche, vous pouvez appliquer des filtres pour affiner les entrées disponibles pour l'analyse.
+Dans la barre de recherche de la page Discover, vous pouvez définir et enregistrer des requêtes de recherche en utilisant le langage de requête Lucene. Pour chaque recherche, vous pouvez appliquer des filtres pour affiner les entrées disponibles pour l'analyse.
 {:shortdesc}
 
 Pour définir une recherche personnalisée, procédez comme suit :
@@ -40,11 +40,11 @@ Pour définir une recherche personnalisée, procédez comme suit :
 
     2. Accédez à Kibana. Cliquez sur **Vue avancée** ![Lien Vue avancée](images/logging_advanced_view.jpg "Lien Vue avancée"). Le tableau de bord Kibana s'affiche.
     
-    Pour les conteneurs s'exécutant dans un cluster Kubernetes, [lancez Kibana depuis le navigateur](/docs/services/CloudLogAnalysis/kibana4/k4_launch.html#launch_Kibana_from_browser1). 
+    Pour les conteneurs s'exécutant dans un cluster Kubernetes, [lancez Kibana depuis le navigateur](/docs/services/CloudLogAnalysis/kibana4?topic=cloudloganalysis-k4_launch#launch_Kibana_from_browser1). 
     
     Lorsque vous accédez à Kibana, la recherche par défaut est appliquée. Vous pouvez voir les journaux de la liste d'instances de la ressource pour laquelle vous avez lancé Kibana. Vous pouvez filtrer les journaux pour une ressource {{site.data.keyword.Bluemix_notm}} spécifique ou pour toutes les ressources dans cet espace.
 
-2. Examinez la page Discover pour déterminer le sous-ensemble de données qu'elle affiche. Pour plus d'informations, voir  [Identification des données affichées dans votre page Kibana Discover](/docs/services/CloudLogAnalysis/kibana4/logging_kibana_analize_logs_interactively.html#k4_identify_data). Modifiez ensuite la recherche par défaut pour filtrer les entrées.
+2. Examinez la page Discover pour déterminer le sous-ensemble de données qu'elle affiche. Pour plus d'informations, voir [Identification des données affichées dans votre page Kibana Discover](/docs/services/CloudLogAnalysis/kibana4?topic=cloudloganalysis-kibana_analize_logs_interactively#k4_identify_data). Modifiez ensuite la recherche par défaut pour filtrer les entrées.
 
     **Remarque :** utilisez le langage Lucene pour définir votre requête par défaut. Pour plus d'informations, voir [Apache Lucene - Query Parser Syntax  ![Icône de lien externe](../../../icons/launch-glyph.svg "Icône de lien externe")](https://lucene.apache.org/core/2_9_4/queryparsersyntax.html){: new_window}
     

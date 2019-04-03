@@ -140,7 +140,7 @@ subcollection: cloudloganalysis
 
 **附註：**只有在使用服務方案佈建 {{site.data.keyword.loganalysisshort}} 服務的空間中才會啟用該方案中所含的特性。
 
-您可以透過 {{site.data.keyword.Bluemix_notm}} 使用者介面或透過指令行來變更方案。您隨時可以升級或降低方案。如需服務方案升級的相關資訊，請參閱[變更方案](/docs/services/CloudLogAnalysis/how-to/change_plan.html#change_plan)。 
+您可以透過 {{site.data.keyword.Bluemix_notm}} 使用者介面或透過指令行來變更方案。您隨時可以升級或降低方案。如需服務方案升級的相關資訊，請參閱[變更方案](/docs/services/CloudLogAnalysis/how-to?topic=cloudloganalysis-change_plan#change_plan)。 
 
 下表概述可用的方案：
 

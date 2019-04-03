@@ -43,7 +43,7 @@ subcollection: cloudloganalysis
     ```
     {: codeblock}
 
-    有关更多信息，请参阅[如何登录到 {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/qa/cli_qa.html#login)。
+    有关更多信息，请参阅[如何登录到 {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#login)。
 
 2. 运行 `ibmcloud logging quota-usage-show` CLI 命令。 
 
@@ -98,7 +98,7 @@ Daily Allotmant   Current Usage
     ```
     {: codeblock}
 
-    有关更多信息，请参阅[如何登录到 {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/qa/cli_qa.html#login)。
+    有关更多信息，请参阅[如何登录到 {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#login)。
 
 2. 运行带有 `-s` 参数的 `ibmcloud logging quota-usage-show` CLI 命令。 
 
@@ -141,7 +141,7 @@ Date         Allotmant   Usage
 
 1. 登录到 {{site.data.keyword.Bluemix_notm}}。 
 
-    有关更多信息，请参阅[如何登录到 {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/qa/cli_qa.html#login)。
+    有关更多信息，请参阅[如何登录到 {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#login)。
 
 2. 获取帐户的标识。运行以下命令：
 
@@ -161,7 +161,7 @@ Date         Allotmant   Usage
 
 3. 获取 UAA 令牌。 
 
-    有关更多信息，请参阅[获取 UAA 令牌](/docs/services/CloudLogAnalysis/security/auth_uaa.html#auth_uaa)。
+    有关更多信息，请参阅[获取 UAA 令牌](/docs/services/CloudLogAnalysis/security?topic=cloudloganalysis-auth_uaa#auth_uaa)。
 
     将 UAA 令牌导出到 shell 变量。请不要包含 `Bearer`。例如：
 	
@@ -177,7 +177,7 @@ Date         Allotmant   Usage
 	```
 	{: codeblock}
 	
-	其中，*ENDPOINT* 对于每个区域来说是不同的。有关每个区域的端点列表，请参阅[日志记录端点](/docs/services/CloudLogAnalysis/manage_logs.html#endpoints)。
+	其中，*ENDPOINT* 对于每个区域来说是不同的。有关每个区域的端点列表，请参阅[日志记录端点](/docs/services/CloudLogAnalysis?topic=cloudloganalysis-manage_logs#endpoints)。
 	
 	例如，运行 cURL 命令以获取美国南部区域中帐户的配额：
 	
@@ -220,11 +220,11 @@ Date         Allotmant   Usage
 
 1. 登录到 {{site.data.keyword.Bluemix_notm}}。 
 
-    有关更多信息，请参阅[如何登录到 {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/qa/cli_qa.html#login)。
+    有关更多信息，请参阅[如何登录到 {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#login)。
 
 2. 获取空间的标识。
 
-    有关更多信息，请参阅[如何获取空间的 GUID](/docs/services/CloudLogAnalysis/qa/cli_qa.html#space_guid)。
+    有关更多信息，请参阅[如何获取空间的 GUID](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#space_guid)。
 	
 	将空间标识导出到 shell 变量。例如：
 	
@@ -235,7 +235,7 @@ Date         Allotmant   Usage
 
 3. 获取 UAA 令牌。 
 
-    有关更多信息，请参阅[获取 UAA 令牌](/docs/services/CloudLogAnalysis/security/auth_uaa.html#auth_uaa)。
+    有关更多信息，请参阅[获取 UAA 令牌](/docs/services/CloudLogAnalysis/security?topic=cloudloganalysis-auth_uaa#auth_uaa)。
 
     将 UAA 令牌导出到 shell 变量。请不要包含 `Bearer`。例如：
 	
@@ -251,7 +251,7 @@ Date         Allotmant   Usage
 	```
 	{: codeblock}
 	
-	其中，*ENDPOINT* 对于每个区域来说是不同的。有关每个区域的端点列表，请参阅[日志记录端点](/docs/services/CloudLogAnalysis/manage_logs.html#endpoints)。
+	其中，*ENDPOINT* 对于每个区域来说是不同的。有关每个区域的端点列表，请参阅[日志记录端点](/docs/services/CloudLogAnalysis?topic=cloudloganalysis-manage_logs#endpoints)。
 
     例如，运行以下 cURL 命令以获取美国南部区域中空间域的配额和使用情况：
 	

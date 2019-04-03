@@ -34,15 +34,15 @@ En la página Descubrir, puede crear consultas de búsqueda y aplicar filtros pa
 
 Después de definir una nueva búsqueda, guárdela para poder utilizarla para un análisis posterior en la página Descubrir o para crear visualizaciones que puede utilizar en los paneles de control personalizados. 
 
-Cuando realiza una nueva búsqueda, el histograma, la tabla y la lista de campos se actualizan automáticamente para mostrar los resultados de la búsqueda. Para averiguar qué datos se muestran, consulte [Identificación de los datos que se muestran en la página Descubrir](/docs/services/CloudLogAnalysis/kibana4/logging_kibana_analize_logs_interactively.html#k4_identify_data).
+Cuando realiza una nueva búsqueda, el histograma, la tabla y la lista de campos se actualizan automáticamente para mostrar los resultados de la búsqueda. Para averiguar qué datos se muestran, consulte [Identificación de los datos que se muestran en la página Descubrir](/docs/services/CloudLogAnalysis/kibana4?topic=cloudloganalysis-kibana_analize_logs_interactively#k4_identify_data).
 
 Puede crear búsquedas personalizadas para filtrar los registros. En la lista siguiente se resumen algunos casos de ejemplo sobre cómo filtrar datos en los registros:
 
-* Puede buscar en el registro las entradas que incluyan un determinado texto en el valor de un campo. Para obtener más información, consulte [Filtrado de registros para un determinado texto en un valor de campo](/docs/services/CloudLogAnalysis/kibana4/k4_filter_logs.html#k4_filter_logs_spec_text).
+* Puede buscar en el registro las entradas que incluyan un determinado texto en el valor de un campo. Para obtener más información, consulte [Filtrado de registros para un determinado texto en un valor de campo](/docs/services/CloudLogAnalysis/kibana4?topic=cloudloganalysis-k4_filter_logs#k4_filter_logs_spec_text).
  
-* Puede buscar en el registro un determinado valor de campo o excluir del registro las entradas correspondientes a un valor de campo específico. Para obtener más información, consulte [Filtrado de registros para un determinado valor de campo](/docs/services/CloudLogAnalysis/kibana4/k4_filter_logs.html#k4_filter_logs_spec_field).
+* Puede buscar en el registro un determinado valor de campo o excluir del registro las entradas correspondientes a un valor de campo específico. Para obtener más información, consulte [Filtrado de registros para un determinado valor de campo](/docs/services/CloudLogAnalysis/kibana4?topic=cloudloganalysis-k4_filter_logs#k4_filter_logs_spec_field).
  
-* Puede filtrar los registros para que muestren las entradas comprendidas en un periodo de tiempo. Para obtener más información, consulte [Establecimiento de un filtro de tiempo](/docs/services/CloudLogAnalysis/kibana4/k4_filter_logs.html#set_time_filter1).
+* Puede filtrar los registros para que muestren las entradas comprendidas en un periodo de tiempo. Para obtener más información, consulte [Establecimiento de un filtro de tiempo](/docs/services/CloudLogAnalysis/kibana4?topic=cloudloganalysis-k4_filter_logs#set_time_filter1).
      
 
 ## Adición de un filtro para un valor que no aparece en la *Lista de campos*
@@ -52,7 +52,7 @@ Para añadir un filtro para un valor que no se muestra en la *Lista de campos*, 
 
 Siga los pasos siguientes para añadir un filtro para un valor que no está disponible en la lista que se muestra en la sección *Lista de campos*:
 
-1. Examine la página Descubrir de Kibana para ver el subconjunto de datos que muestra. Para obtener más información, consulte [Identificación de los datos que se muestran en la página Descubrir de Kibana](/docs/services/CloudLogAnalysis/kibana4/logging_kibana_analize_logs_interactively.html#k4_identify_data).
+1. Examine la página Descubrir de Kibana para ver el subconjunto de datos que muestra. Para obtener más información, consulte [Identificación de los datos que se muestran en la página Descubrir de Kibana](/docs/services/CloudLogAnalysis/kibana4?topic=cloudloganalysis-kibana_analize_logs_interactively#k4_identify_data).
 
     Por ejemplo, en la figura siguiente se muestran los valores de las instancias correspondientes a una app CF en la *Lista de campos*. 
     
@@ -91,13 +91,13 @@ Puede buscar entradas que incluyan un determinado valor de campo.
 
 Siga estos pasos para buscar entradas que incluyan un determinado valor de campo:
 
-1. Examine la página Descubrir de Kibana para ver el subconjunto de datos que muestra. Para obtener más información, consulte [Identificación de los datos que se muestran en la página Descubrir de Kibana](/docs/services/CloudLogAnalysis/kibana4/logging_kibana_analize_logs_interactively.html#k4_identify_data).
+1. Examine la página Descubrir de Kibana para ver el subconjunto de datos que muestra. Para obtener más información, consulte [Identificación de los datos que se muestran en la página Descubrir de Kibana](/docs/services/CloudLogAnalysis/kibana4?topic=cloudloganalysis-kibana_analize_logs_interactively#k4_identify_data).
 
 2. En la *Lista de campos*, identifique el campo para la que desee definir un filtro y pulse sobre el mismo.
 
     En el campo se muestra un máximo de 5 valores. Cada valor tiene dos botones de lupa. 
     
-    Si no puede ver el valor, consulte [Adición de un filtro para un valor que no aparece en la lista de campos](/docs/services/CloudLogAnalysis/kibana4/k4_filter_logs.html#k4_add_filter_out_value).
+    Si no puede ver el valor, consulte [Adición de un filtro para un valor que no aparece en la lista de campos](/docs/services/CloudLogAnalysis/kibana4?topic=cloudloganalysis-k4_filter_logs#k4_add_filter_out_value).
 
 3. Para añadir un filtro que busque entradas con un valor de campo, seleccione el botón de lupa ![Botón de lupa en modalidad de inclusión](images/k4_include_field_icon.jpg "Botón de lupa en modalidad de inclusión") para dicho valor.
 
@@ -150,7 +150,7 @@ Siga estos pasos para buscar entradas que incluyan un determinado valor de campo
 
 Siga estos pasos para buscar entradas que incluyan un determinado origen de registro:
 
-1. Examine la página Descubrir de Kibana para ver el subconjunto de datos que muestra. Para obtener más información, consulte [Identificación de los datos que se muestran en la página Descubrir de Kibana](/docs/services/CloudLogAnalysis/kibana4/logging_kibana_analize_logs_interactively.html#k4_identify_data).
+1. Examine la página Descubrir de Kibana para ver el subconjunto de datos que muestra. Para obtener más información, consulte [Identificación de los datos que se muestran en la página Descubrir de Kibana](/docs/services/CloudLogAnalysis/kibana4?topic=cloudloganalysis-kibana_analize_logs_interactively#k4_identify_data).
 
 2. En la *Lista de campos*, seleccione el campo **source_id**.
 
@@ -158,7 +158,7 @@ Siga estos pasos para buscar entradas que incluyan un determinado origen de regi
 
 3. Para añadir un filtro que busque las entradas que incluyan un determinado source_id, seleccione el botón de lupa ![Botón de lupa en modalidad de inclusión](images/k4_include_field_icon.jpg "Botón de lupa en modalidad de inclusión") para dicho valor.
 
-    Para obtener una lista de orígenes de registro que están disponibles para apps CF, consulte [Orígenes de registro para apps CF](/docs/services/CloudLogAnalysis/cfapps/logging_cf_apps.html#cf_apps_log_sources_diego).
+    Para obtener una lista de orígenes de registro que están disponibles para apps CF, consulte [Orígenes de registro para apps CF](/docs/services/CloudLogAnalysis/cfapps?topic=cloudloganalysis-logging_cf_apps#cf_apps_log_sources_diego).
 
     Por ejemplo, para añadir un filtro que incluya las entradas de registro sobre el inicio, detención o caída de una aplicación CF, seleccione el botón de lupa ![Botón de lupa en modalidad de inclusión](images/k4_include_field_icon.jpg "Botón de lupa en modalidad de inclusión") que está disponible para el valor *CELL* en la sección *Lista de campos*. En la figura siguiente se muestra el filtro para el valor de source_id *CELL* habilitado.
     
@@ -176,7 +176,7 @@ Siga estos pasos para buscar entradas que incluyan un determinado origen de regi
 
 Siga estos pasos para buscar entradas que incluyan un determinado tipo de registro:
 
-1. Examine la página Descubrir de Kibana para ver el subconjunto de datos que muestra. Para obtener más información, consulte [Identificación de los datos que se muestran en la página Descubrir de Kibana](/docs/services/CloudLogAnalysis/kibana4/logging_kibana_analize_logs_interactively.html#k4_identify_data).
+1. Examine la página Descubrir de Kibana para ver el subconjunto de datos que muestra. Para obtener más información, consulte [Identificación de los datos que se muestran en la página Descubrir de Kibana](/docs/services/CloudLogAnalysis/kibana4?topic=cloudloganalysis-kibana_analize_logs_interactively#k4_identify_data).
 
 2. En la *Lista de campos*, seleccione el campo **type**.
 
@@ -192,7 +192,7 @@ Siga estos pasos para buscar entradas que incluyan un determinado tipo de regist
 
     Para añadir un filtro que busque las entradas que no incluyan un determinado tipo de registro, seleccione el botón de lupa ![Botón de lupa en modalidad de exclusión](images/k4_exclude_field_icon.jpg "Botón de lupa en modalidad de exclusión") para el valor.
 
-     Por ejemplo, para añadir un filtro que excluya las entradas de registro para *syslog*, seleccione el botón de lupa ![Botón de lupa en modalidad de exclusión](images/k4_exclude_field_icon.jpg "Botón de lupa en modalidad de exclusión") que está disponible para el valor *syslog* en el *Lista de campos* sección.. La figura siguiente muestra el filtro que excluye entradas para el tipo de registro *syslog*.
+     Por ejemplo, para añadir un filtro que excluya las entradas de registro para *syslog*, seleccione el botón de lupa ![Botón de lupa en modalidad de exclusión](images/k4_exclude_field_icon.jpg "Botón de lupa en modalidad de exclusión") que está disponible para el valor *syslog* en el *Lista de campos* sección. La figura siguiente muestra el filtro que excluye entradas para el tipo de registro *syslog*.
      
      ![Filtro que excluye las entradas de tipo de registro para syslog](images/k4_filter_log_type_F3.jpg "Filtro que excluye las entradas de tipo de registro para syslog")
 
@@ -202,7 +202,7 @@ Siga estos pasos para buscar entradas que incluyan un determinado tipo de regist
 
 Siga estos pasos para ver y filtrar los registros por ID de instancia en el panel de control de Kibana:
 
-1. Examine la página Descubrir de Kibana para ver el subconjunto de datos que muestra. Para obtener más información, consulte [Identificación de los datos que se muestran en la página Descubrir de Kibana](/docs/services/CloudLogAnalysis/kibana4/logging_kibana_analize_logs_interactively.html#k4_identify_data).
+1. Examine la página Descubrir de Kibana para ver el subconjunto de datos que muestra. Para obtener más información, consulte [Identificación de los datos que se muestran en la página Descubrir de Kibana](/docs/services/CloudLogAnalysis/kibana4?topic=cloudloganalysis-kibana_analize_logs_interactively#k4_identify_data).
 
 2. En la *Lista de campos*, seleccione uno de los siguientes campos para buscar un determinado ID de instancia:
 
@@ -231,7 +231,7 @@ Siga estos pasos para ver y filtrar los registros por ID de instancia en el pane
 
 Siga estos pasos para buscar entradas que incluyan un determinado tipo de mensaje:
 
-1. Examine la página Descubrir de Kibana para ver el subconjunto de datos que muestra. Para obtener más información, consulte [Identificación de los datos que se muestran en la página Descubrir de Kibana](/docs/services/CloudLogAnalysis/kibana4/logging_kibana_analize_logs_interactively.html#k4_identify_data).
+1. Examine la página Descubrir de Kibana para ver el subconjunto de datos que muestra. Para obtener más información, consulte [Identificación de los datos que se muestran en la página Descubrir de Kibana](/docs/services/CloudLogAnalysis/kibana4?topic=cloudloganalysis-kibana_analize_logs_interactively#k4_identify_data).
 
 2. En la *Lista de campos*, seleccione el campo **message_type**.
 
@@ -247,7 +247,7 @@ Siga estos pasos para buscar entradas que incluyan un determinado tipo de mensaj
 
     Para añadir un filtro que busque las entradas que no incluyan un determinado *message_type*, elija el botón de lupa ![Botón de lupa en modalidad de exclusión](images/k4_exclude_field_icon.jpg "Botón de lupa en modalidad de exclusión") para el valor.
     
-    Por ejemplo, para añadir un filtro que excluye las entradas del registro para el message_type *OUT*, seleccione el botón de lupa ![Botón de lupa en modalidad de inclusión](images/k4_exclude_field_icon.jpg "Botón de lupa en modalidad de inclusión") que está disponible para el valor *CELL* en la *Lista de campos* sección.. La figura siguiente muestra el filtro que excluye entradas para el valor de message_type *OUT*.
+    Por ejemplo, para añadir un filtro que excluye las entradas del registro para el message_type *OUT*, seleccione el botón de lupa ![Botón de lupa en modalidad de inclusión](images/k4_exclude_field_icon.jpg "Botón de lupa en modalidad de inclusión") que está disponible para el valor *CELL* en la *Lista de campos* sección. La figura siguiente muestra el filtro que excluye entradas para el valor de message_type *OUT*.
 
     ![Filtro que excluye el valor de campo](images/k4_filter_by_msg_type_f3.jpg "Filtro que excluye el valor de campo")
 
@@ -263,11 +263,11 @@ Cuando Elasticsearch analiza el campo valor de una serie, divide el texto en lí
     
 Siga estos pasos para buscar entradas que incluyan un determinado texto en un valor de campo:
 
-1. Examine la página Descubrir de Kibana para ver el subconjunto de datos que muestra. Para obtener más información, consulte [Identificación de los datos que se muestran en la página Descubrir de Kibana](/docs/services/CloudLogAnalysis/kibana4/logging_kibana_analize_logs_interactively.html#k4_identify_data).
+1. Examine la página Descubrir de Kibana para ver el subconjunto de datos que muestra. Para obtener más información, consulte [Identificación de los datos que se muestran en la página Descubrir de Kibana](/docs/services/CloudLogAnalysis/kibana4?topic=cloudloganalysis-kibana_analize_logs_interactively#k4_identify_data).
 
 2. Identifique los campos que se analizan en ElasticSearch de forma predeterminada.
 
-    Para ver la lista completa de campos analizados que están disponibles para buscar y filtrar datos de registro, [vuelva a cargar la lista de campos](/docs/services/CloudLogAnalysis/kibana4/logging_kibana_analize_logs_interactively.html#kibana_discover_view_reload_fields). A continuación, en la *Lista de campos* disponible en la página Descubrir, siga los pasos siguientes:
+    Para ver la lista completa de campos analizados que están disponibles para buscar y filtrar datos de registro, [vuelva a cargar la lista de campos](/docs/services/CloudLogAnalysis/kibana4?topic=cloudloganalysis-kibana_analize_logs_interactively#kibana_discover_view_reload_fields). A continuación, en la *Lista de campos* disponible en la página Descubrir, siga los pasos siguientes:
     
     1. Pulse el icono de configuración ![Icono de configuración](images/k4_configure_icon.jpg "Icono de configuración"). Se muestra la sección **Campos seleccionados**, donde puede filtrar los campos.
 

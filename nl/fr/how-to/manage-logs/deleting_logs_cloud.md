@@ -25,7 +25,7 @@ subcollection: cloudloganalysis
 # Suppression de journaux
 {: #deleting_logs}
 
-Utilisez la commande [ibmcloud logging log-delete](/docs/services/CloudLogAnalysis/reference/log_analysis_cli_cloud.html#delete) pour supprimer des journaux de Log Collection. 
+Utilisez la commande [ibmcloud logging log-delete](/docs/services/CloudLogAnalysis/reference?topic=cloudloganalysis-log_analysis_cli#delete) pour supprimer des journaux de Log Collection. 
 {:shortdesc}
 
 * Vous pouvez supprimer des journaux dans un intervalle spécifique.
@@ -40,7 +40,7 @@ Procédez comme suit pour supprimer tous les journaux qui sont stockés dans un 
 
 1. Connectez-vous à une région, une organisation et un espace dans {{site.data.keyword.Bluemix_notm}}. 
 
-    Pour plus d'informations, voir [Comment se connecter à {{site.data.keyword.Bluemix_notm}} ?](/docs/services/CloudLogAnalysis/qa/cli_qa.html#login).
+    Pour plus d'informations, voir [Comment se connecter à {{site.data.keyword.Bluemix_notm}} ?](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#login)
     
 2. Exécutez la commande suivante pour afficher les journaux disponibles dans Log Collection :
 
@@ -89,7 +89,7 @@ Procédez comme suit pour supprimer par type de journal des journaux qui sont st
 
 1. Connectez-vous à une région, une organisation et un espace dans {{site.data.keyword.Bluemix_notm}}. 
 
-    Pour plus d'informations, voir [Comment se connecter à {{site.data.keyword.Bluemix_notm}} ?](/docs/services/CloudLogAnalysis/qa/cli_qa.html#login).
+    Pour plus d'informations, voir [Comment se connecter à {{site.data.keyword.Bluemix_notm}} ?](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#login)
     
 2. Exécutez la commande suivante pour afficher les journaux disponibles dans Log Collection :
 
@@ -140,11 +140,11 @@ Procédez comme suit :
 
 1. Connectez-vous à une région, une organisation et un espace dans {{site.data.keyword.Bluemix_notm}}. 
 
-    Pour plus d'informations, voir [Comment se connecter à {{site.data.keyword.Bluemix_notm}} ?](/docs/services/CloudLogAnalysis/qa/cli_qa.html#login).
+    Pour plus d'informations, voir [Comment se connecter à {{site.data.keyword.Bluemix_notm}} ?](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#login)
 	
 2. Obtenez l'ID de compte.
 
-    Pour plus d'informations, voir [Comment obtenir l'identificateur global unique d'un compte ?](/docs/services/CloudLogAnalysis/qa/cli_qa.html#account_guid).
+    Pour plus d'informations, voir [Comment obtenir l'identificateur global unique d'un compte ?](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#account_guid).
     
 3. Exécutez la commande suivante pour afficher les journaux qui sont disponibles dans Log Collection au niveau du compte :
 

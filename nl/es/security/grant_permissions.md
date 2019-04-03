@@ -22,13 +22,13 @@ subcollection: cloudloganalysis
 {:important: .important}
 {:note: .note}
 
-# Como otorgar permisos para gestionar registros y visualizar registros de cuentas
+# Cómo otorgar permisos para gestionar registros y visualizar registros de cuentas
 {: #grant_permissions}
 
-En {{site.data.keyword.Bluemix}}, puede asignar a un usuario uno o varios roles de IAM. Estos roles definen qué tareas están habilitadas para dicho usuario para trabajar con el servicio de {{site.data.keyword.loganalysisshort}}.  
+En {{site.data.keyword.Bluemix}}, puede asignar a un usuario uno o varios roles de IAM. Estos roles definen qué tareas están habilitadas para dicho usuario para trabajar con el servicio {{site.data.keyword.loganalysisshort}}.  
 {:shortdesc}
 
-Por ejemplo, puede otorgar a un usuario el rol de **operador** para que pueda gestionar registros. Si sólo desea que un usuario visualice los registros de la cuenta, puede otorgar al usuario el rol de **visor**. Para obtener más información, consulte [Roles de IAM](/docs/services/CloudLogAnalysis/security_ov.html#iam_roles).
+Por ejemplo, puede otorgar a un usuario el rol de **operador** para que pueda gestionar registros. Si sólo desea que un usuario visualice los registros de la cuenta, puede otorgar al usuario el rol de **visor**. Para obtener más información, consulte [Roles de IAM](/docs/services/CloudLogAnalysis?topic=cloudloganalysis-security_ov#iam_roles).
 
 **Nota:** 
 
@@ -39,11 +39,11 @@ usuario un rol de Cloud Foundry que describa las acciones que puede realizar est
 ## Asignación de una política de IAM a un usuario mediante la interfaz de usuario de {{site.data.keyword.Bluemix_notm}}
 {: #grant_permissions_ui_account}
 
-Complete los pasos siguientes para otorgar permisos a un usuario para trabajar con el servicio de {{site.data.keyword.loganalysisshort}}:
+Complete los pasos siguientes para otorgar permisos a un usuario para trabajar con el servicio {{site.data.keyword.loganalysisshort}}:
 
 1. Inicie sesión en la consola de {{site.data.keyword.Bluemix_notm}}.
 
-    Abra un navegador web y lance el panel de control de {{site.data.keyword.Bluemix_notm}}: [http://bluemix.net ![Icono de enlace externo](../../../icons/launch-glyph.svg "Icono de enlace externo")](http://bluemix.net){:new_window}
+    Abra un navegador web e inicie el panel de control de {{site.data.keyword.Bluemix_notm}}: [http://bluemix.net ![Icono de enlace externo](../../../icons/launch-glyph.svg "Icono de enlace externo")](http://bluemix.net){:new_window}
 	
 	Cuando inicia sesión con su ID de usuario y su contraseña, se abre la interfaz de usuario de {{site.data.keyword.Bluemix_notm}}.
 
@@ -53,7 +53,7 @@ Complete los pasos siguientes para otorgar permisos a un usuario para trabajar c
 	
 3. Si el usuario es un miembro de la cuenta, seleccione el nombre de usuario de la lista, o pulse **Gestionar usuario** del menú *Acciones*.
 
-    Si el usuario no es un miembro de la cuenta, consulte [Invitación a usuarios](/docs/iam/iamuserinv.html#iamuserinv).
+    Si el usuario no es un miembro de la cuenta, consulte [Invitación a usuarios](/docs/iam?topic=iam-iamuserinv#iamuserinv).
 
 4. En la sección **Políticas de acceso**, pulse **Asignar un acceso** y, a continuación, seleccione **Asignar acceso a recursos**.
 
@@ -81,7 +81,7 @@ Complete los pasos siguientes para otorgar permisos a un usuario para trabajar c
 	  </tr>
 	  <tr>
 	    <td>Roles</td>
-		<td>Seleccione uno o varios roles de IAM. <br>Los roles válidos son: *administrador*, *operador*, *editor*, y *visor*. <br>Para obtener más información sobre las acciones que están permitidas por rol, consulte [Roles de IAM](/docs/services/CloudLogAnalysis/security_ov.html#iam_roles).
+		<td>Seleccione uno o varios roles de IAM. <br>Los roles válidos son: *administrador*, *operador*, *editor*, y *visor*. <br>Para obtener más información sobre las acciones que están permitidas por rol, consulte [Roles de IAM](/docs/services/CloudLogAnalysis?topic=cloudloganalysis-security_ov#iam_roles).
 		</td>
 	  </tr>
      </table>
@@ -98,7 +98,7 @@ Siga los pasos siguientes para otorgar a un usuario acceso para ver registros de
 
 1. Desde un terminal, inicie una sesión en la cuenta de {{site.data.keyword.Bluemix_notm}}. 
 
-    Para obtener más información, consulte [Cómo iniciar la sesión en {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/qa/cli_qa.html#login).
+    Para obtener más información, consulte [Cómo iniciar la sesión en {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#login).
 
 2. Compruebe que el usuario es un miembro de la cuenta. Ejecute el siguiente mandato para obtener la lista de usuarios de la cuenta:
 
@@ -109,7 +109,7 @@ Siga los pasos siguientes para otorgar a un usuario acceso para ver registros de
 
 	Se muestra una lista de usuarios con sus GUID.
 
-3. Si el usuario no es miembro de la cuenta, póngase en contacto con el propietario de la cuenta y solicite una invitación a la cuenta para el usuario. Para obtener más información, consulte [Invitación a usuarios](/docs/iam/iamuserinv.html#iamuserinv).
+3. Si el usuario no es miembro de la cuenta, póngase en contacto con el propietario de la cuenta y solicite una invitación a la cuenta para el usuario. Para obtener más información, consulte [Invitación a usuarios](/docs/iam?topic=iam-iamuserinv#iamuserinv).
 
     **Consejo:** El mandato para invitar a un usuario a una cuenta es el siguiente: `ibmcloud iam account-user-invite USER_EMAIL`
 		
@@ -139,11 +139,11 @@ Siga los pasos siguientes para otorgar a un usuario acceso para ver registros de
 
 Para otorgar permisos a un usuario para ver registros en un espacio, debe asignar al usuario un rol de Cloud Foundry que describa las acciones que puede realizar este usuario con el servicio {{site.data.keyword.loganalysisshort}} en el espacio. 
 
-Complete los pasos siguientes para otorgar permisos a un usuario para trabajar con el servicio de {{site.data.keyword.loganalysisshort}}:
+Complete los pasos siguientes para otorgar permisos a un usuario para trabajar con el servicio {{site.data.keyword.loganalysisshort}}:
 
 1. Inicie sesión en la consola de {{site.data.keyword.Bluemix_notm}}.
 
-    Abra un navegador web y lance el panel de control de {{site.data.keyword.Bluemix_notm}}: [http://bluemix.net ![Icono de enlace externo](../../../icons/launch-glyph.svg "Icono de enlace externo")](http://bluemix.net){:new_window}
+    Abra un navegador web e inicie el panel de control de {{site.data.keyword.Bluemix_notm}}: [http://bluemix.net ![Icono de enlace externo](../../../icons/launch-glyph.svg "Icono de enlace externo")](http://bluemix.net){:new_window}
 	
 	Cuando inicia sesión con su ID de usuario y su contraseña, se abre la interfaz de usuario de {{site.data.keyword.Bluemix_notm}}.
 
@@ -153,7 +153,7 @@ Complete los pasos siguientes para otorgar permisos a un usuario para trabajar c
 	
 3. Si el usuario es un miembro de la cuenta, seleccione el nombre de usuario de la lista, o pulse **Gestionar usuario** del menú *Acciones*.
 
-    Si el usuario no es un miembro de la cuenta, consulte [Invitación a usuarios](/docs/iam/iamuserinv.html#iamuserinv).
+    Si el usuario no es un miembro de la cuenta, consulte [Invitación a usuarios](/docs/iam?topic=iam-iamuserinv#iamuserinv).
 
 4. Seleccione **Acceso de Cloud Foundry** y, a continuación, seleccione la organización.
 

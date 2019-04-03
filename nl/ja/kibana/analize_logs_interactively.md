@@ -28,7 +28,7 @@ subcollection: cloudloganalysis
 「Discover」ページで、ログを対話式に表示および分析できます。 Lucene 照会言語を使用して、そのデータをフィルタリングする検索照会を定義できます。 検索照会ごとに、フィルターを適用して、分析で使用可能な項目を詳細化できます。 検索を将来再使用するために保存できます。
 {:shortdesc}
 
-{{site.data.keyword.Bluemix_notm}} では、デフォルトで、{{site.data.keyword.Bluemix_notm}} UI から Kibana を起動したときに「Discover」ページに表示されるデータ・セットは、Kibana を起動した Cloud Foundry (CF) アプリケーションまたはコンテナーの項目のみを表示するように構成されています。 「Discover」ページで表示されるデータのサブセットを確認する方法について詳しくは、『[「Discover」ページで表示されているデータの識別](/docs/services/CloudLogAnalysis/kibana/analize_logs_interactively.html#identify_data)』を参照してください。
+{{site.data.keyword.Bluemix_notm}} では、デフォルトで、{{site.data.keyword.Bluemix_notm}} UI から Kibana を起動したときに「Discover」ページに表示されるデータ・セットは、Kibana を起動した Cloud Foundry (CF) アプリケーションまたはコンテナーの項目のみを表示するように構成されています。 「Discover」ページで表示されるデータのサブセットを確認する方法について詳しくは、『[「Discover」ページで表示されているデータの識別](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-analize_logs_interactively#identify_data)』を参照してください。
 
 以下の表では、{{site.data.keyword.Bluemix_notm}} から Kibana を起動したときのリソースごとのデフォルト照会を示します。
 
@@ -51,12 +51,12 @@ subcollection: cloudloganalysis
 
 | タスク | 説明 | 
 |------|-------------|
-| [フィールド列の追加](/docs/services/CloudLogAnalysis/kibana/analize_logs_interactively.html#discover_add_fields_to_table) | メッセージ全体ではなく、分析に必要な特定のデータを表示するためにフィールドを追加します。 |
-| [データの自動最新表示](/docs/services/CloudLogAnalysis/kibana/analize_logs_interactively.html#discover_view_refresh_interval) | 最新の項目を使用して、表内に表示されるデータを最新表示します。 デフォルトでは、最新表示は **OFF** です。 |
-| [索引フィールドの値による項目の配列](/docs/services/CloudLogAnalysis/kibana/analize_logs_interactively.html#discover_sort_by_table) | 分析しやすいように項目を再配列します。 |
-| [フィールド列の並べ替え](/docs/services/CloudLogAnalysis/kibana/analize_logs_interactively.html#discover_rearrange_fields_in_table) | 表内のフィールドの位置を必要な位置に移動します。 |
-| [フィールド列の削除](/docs/services/CloudLogAnalysis/kibana/analize_logs_interactively.html#discover_remove_fields_from_table) | 分析用にビュー内で不要になったフィールドを削除します。 |
-| [項目の表示](/docs/services/CloudLogAnalysis/kibana/analize_logs_interactively.html#discover_view_entry_in_table) | 表内の項目を展開して、フィールド別または JSON として解析された項目の詳細を表示します。 |
+| [フィールド列の追加](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-analize_logs_interactively#discover_add_fields_to_table) | メッセージ全体ではなく、分析に必要な特定のデータを表示するためにフィールドを追加します。 |
+| [データの自動最新表示](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-analize_logs_interactively#discover_view_refresh_interval) | 最新の項目を使用して、表内に表示されるデータを最新表示します。 デフォルトでは、最新表示は **OFF** です。 |
+| [索引フィールドの値による項目の配列](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-analize_logs_interactively#discover_sort_by_table) | 分析しやすいように項目を再配列します。 |
+| [フィールド列の並べ替え](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-analize_logs_interactively#discover_rearrange_fields_in_table) | 表内のフィールドの位置を必要な位置に移動します。 |
+| [フィールド列の削除](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-analize_logs_interactively#discover_remove_fields_from_table) | 分析用にビュー内で不要になったフィールドを削除します。 |
+| [項目の表示](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-analize_logs_interactively#discover_view_entry_in_table) | 表内の項目を展開して、フィールド別または JSON として解析された項目の詳細を表示します。 |
 {: caption="表 2. 表をカスタマイズするタスク" caption-side="top"}
 
 <br>
@@ -65,30 +65,30 @@ subcollection: cloudloganalysis
 
 ![Kibana の「Discover」ページ](images/discover_page.gif "Kibana の「Discover」ページ")
 
-他の検索を定義できます。 詳しくは、『[カスタム検索照会の定義によるログのフィルタリング](/docs/services/CloudLogAnalysis/kibana/define_search.html#define_search)』を参照してください。 新規検索を定義すると、ヒストグラムおよび表に表示されるデータが、自動的に更新されます。
+他の検索を定義できます。 詳しくは、『[カスタム検索照会の定義によるログのフィルタリング](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-define_search#define_search)』を参照してください。 新規検索を定義すると、ヒストグラムおよび表に表示されるデータが、自動的に更新されます。
 
 新規検索を定義するには、始めにデフォルト検索照会を使用してから、以下のタスクを実行して検索を詳細化します。
 
-* フィールド・フィルターを適用して、表示できるデータ・セットを詳細化します。 各フィルターを切り替えたり、ページにピン留めしたり、必要に応じて有効または無効にしたり、値を含める/除外するように構成できます。 詳しくは、『[Kibana でのログのフィルタリング](/docs/services/CloudLogAnalysis/kibana/filter_logs.html#filter_logs)』を参照してください。
+* フィールド・フィルターを適用して、表示できるデータ・セットを詳細化します。 各フィルターを切り替えたり、ページにピン留めしたり、必要に応じて有効または無効にしたり、値を含める/除外するように構成できます。 詳しくは、『[Kibana でのログのフィルタリング](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-filter_logs#filter_logs)』を参照してください。
 
-    **ヒント:** 「Discover」ページで、表示されるはずのフィールドが*フィールド・リスト* で見つからない場合、またはリストされているフィールドの横にある拡大鏡のいくつかが無効になっている場合は、「Settings」ページで索引パターンを最新表示することで、フィールドのリストを再ロードしてください。 詳しくは、『[フィールド・リストの再ロード](/docs/services/CloudLogAnalysis/kibana/analize_logs_interactively.html#discover_view_reload_fields)』を参照してください。
+    **ヒント:** 「Discover」ページで、表示されるはずのフィールドが*フィールド・リスト* で見つからない場合、またはリストされているフィールドの横にある拡大鏡のいくつかが無効になっている場合は、「Settings」ページで索引パターンを最新表示することで、フィールドのリストを再ロードしてください。 詳しくは、『[フィールド・リストの再ロード](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-analize_logs_interactively#discover_view_reload_fields)』を参照してください。
 
     例えば、CF アプリに複数のインスタンスが含まれている場合、特定の 1 つのインスタンスのデータを分析したいことがあります。 分析する特定のインスタンス ID 値のフィールド・フィルターを定義できます。 
     
-* 時間ベースのデータ用に*時間ピッカー* をカスタマイズします。 照会の絶対時間範囲、相対時間範囲を定義したり、一連の事前定義の値から選択したりすることができます。 詳しくは、『[時間フィルターの設定](/docs/services/CloudLogAnalysis/kibana/filter_logs.html#set_time_filter)』を参照してください。
+* 時間ベースのデータ用に*時間ピッカー* をカスタマイズします。 照会の絶対時間範囲、相対時間範囲を定義したり、一連の事前定義の値から選択したりすることができます。 詳しくは、『[時間フィルターの設定](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-filter_logs#set_time_filter)』を参照してください。
 
-分析するデータ・サブセットを定義した検索を構成した後に、後から再使用するためにその検索を保存できます。 詳しくは、『[検索の保存](/docs/services/CloudLogAnalysis/kibana/define_search.html#save_search)』を参照してください。
+分析するデータ・サブセットを定義した検索を構成した後に、後から再使用するためにその検索を保存できます。 詳しくは、『[検索の保存](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-define_search#save_search)』を参照してください。
 
 「Discover」ページで定義した検索について、以下のいずれかのタスクを実行できます。
 
 | タスク | 説明 |
 |------|-------------|
-| [検索の削除](/docs/services/CloudLogAnalysis/kibana/define_search.html#delete_search) | 不要になった検索を削除します。 |
-| [検索のエクスポート](/docs/services/CloudLogAnalysis/kibana/define_search.html#export_search) | 検索を共有するためにエクスポートします。  |
-| [検索のインポート](/docs/services/CloudLogAnalysis/kibana/define_search.html#import_search) | 検索をインポートします。  |
-| [検索の再ロード](/docs/services/CloudLogAnalysis/kibana/define_search.html#reload_search1)  | データ・セットを分析するために既存の検索を再度アップロードします。 |
-| [検索のデータの最新表示](/docs/services/CloudLogAnalysis/kibana/define_search.html#refresh_search) | 検索で表示されるデータの自動最新表示を構成します。  |
-| [検索の保存](/docs/services/CloudLogAnalysis/kibana/define_search.html#save_search) | 後から再使用するために検索を保存します。  |
+| [検索の削除](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-define_search#delete_search) | 不要になった検索を削除します。 |
+| [検索のエクスポート](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-define_search#export_search) | 検索を共有するためにエクスポートします。  |
+| [検索のインポート](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-define_search#import_search) | 検索をインポートします。  |
+| [検索の再ロード](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-define_search#reload_search1)  | データ・セットを分析するために既存の検索を再度アップロードします。 |
+| [検索のデータの最新表示](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-define_search#refresh_search) | 検索で表示されるデータの自動最新表示を構成します。  |
+| [検索の保存](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-define_search#save_search) | 後から再使用するために検索を保存します。  |
 {: caption="表 3. 検索を操作するタスク" caption-side="top"}
 
 
@@ -96,7 +96,7 @@ subcollection: cloudloganalysis
 * フィールドごとに統計を確認できます。 
 * 構成した `@timestamp` に従って、ヒストグラムで統計を確認できます。
 
-詳しくは、『[フィールド・データ統計の表示](/docs/services/CloudLogAnalysis/kibana/analize_logs_interactively.html#discover_view_fields_stats)』を参照してください。
+詳しくは、『[フィールド・データ統計の表示](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-analize_logs_interactively#discover_view_fields_stats)』を参照してください。
 
 **注:** 表およびヒストグラムで表示されるデータは、静的です。 最新の項目を表示し続ける場合は、最新表示間隔を設定する必要があります。 
 
@@ -129,7 +129,7 @@ subcollection: cloudloganalysis
 ## データの自動最新表示
 {: #discover_view_refresh_interval}
 
-デフォルトでは、{{site.data.keyword.Bluemix_notm}} において*自動最新表示* の期間は **OFF** に設定されており、Kibana で表示できるデータは、Kibana の起動後の過去 15 分間に対応します。 15 分間は、事前構成されている時間フィルターに対応しています。 これは、別の期間を設定することで変更できます。 詳しくは、『[時間フィルターの設定](/docs/services/CloudLogAnalysis/kibana/filter_logs.html#set_time_filter)』を参照してください。
+デフォルトでは、{{site.data.keyword.Bluemix_notm}} において*自動最新表示* の期間は **OFF** に設定されており、Kibana で表示できるデータは、Kibana の起動後の過去 15 分間に対応します。 15 分間は、事前構成されている時間フィルターに対応しています。 これは、別の期間を設定することで変更できます。 詳しくは、『[時間フィルターの設定](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-filter_logs#set_time_filter)』を参照してください。
 
 *自動最新表示* の期間を設定するには、以下のステップを実行します。
 

@@ -29,13 +29,13 @@ subcollection: cloudloganalysis
 Im Folgenden finden Sie Antworten auf häufig gestellte Fragen zur Verwendung der {{site.data.keyword.Bluemix}}-Befehlszeilenschnittstelle mit dem {{site.data.keyword.loganalysisshort}}-Service. 
 {:shortdesc}
 
-* [Wie melde ich mich bei {{site.data.keyword.Bluemix_notm}} an? ](/docs/services/CloudLogAnalysis/qa/cli_qa.html#login)
-* [Wie installiere ich die {{site.data.keyword.Bluemix_notm}}-Befehlszeilenschnittstelle](/docs/services/CloudLogAnalysis/qa/cli_qa.html#install_bmx_cli)
-* [Wie rufe ich die GUID eines Kontos ab?](/docs/services/CloudLogAnalysis/qa/cli_qa.html#account_guid)
-* [Wie rufe ich die GUID einer Organisation ab?](/docs/services/CloudLogAnalysis/qa/cli_qa.html#org_guid)
-* [Wie rufe ich die GUID eines Bereichs ab?](/docs/services/CloudLogAnalysis/qa/cli_qa.html#space_guid)
+* [Wie melde ich mich bei {{site.data.keyword.Bluemix_notm}} an?](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#login)
+* [Wie installiere ich die {{site.data.keyword.Bluemix_notm}}-Befehlszeilenschnittstelle](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#install_bmx_cli)
+* [Wie rufe ich die GUID eines Kontos ab?](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#account_guid)
+* [Wie rufe ich die GUID einer Organisation ab?](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#org_guid)
+* [Wie rufe ich die GUID eines Bereichs ab?](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#space_guid)
 
-## Wie melde ich mich bei IBM Cloud an? 
+## Wie melde ich mich bei IBM Cloud an?
 {: #login}
 
 Führen Sie den folgenden Befehl aus, um sich bei einer Region in {{site.data.keyword.Bluemix_notm}} anzumelden, in der der {{site.data.keyword.loganalysisshort}}-Service verfügbar ist:
@@ -97,7 +97,7 @@ Dabei gilt:
 ## Wie installiere ich die IBM Cloud-Befehlszeilenschnittstelle?
 {: #install_bmx_cli}
 
-Siehe [{{site.data.keyword.Bluemix}}-Befehlszeilenschnittstelle herunterladen und installieren](/docs/cli/index.html#overview).
+Weitere Informationen finden Sie in [{{site.data.keyword.Bluemix}}-Befehlszeilenschnittstelle herunterladen und installieren](/docs/cli?topic=cloud-cli-ibmcloud-cli#overview). 
 
 
 
@@ -108,7 +108,7 @@ Führen Sie die folgenden Schritte aus, um die GUID eines Kontos abzurufen:
 	
 1. Melden sich bei einer Region in {{site.data.keyword.Bluemix_notm}} an. 
 
-    Weitere Informationen finden Sie unter [Wie melde ich mich bei {{site.data.keyword.Bluemix_notm}} an?](/docs/services/CloudLogAnalysis/qa/cli_qa.html#login).
+    Weitere Informationen finden Sie in [Wie melde ich mich bei {{site.data.keyword.Bluemix_notm}} an?](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#login).
 	
 2. Führen Sie den Befehl `ibmcloud iam accounts` aus, um die GUID eines Kontos abzurufen.
 
@@ -137,7 +137,7 @@ Führen Sie die folgenden Schritte aus, um die GUID einer Organisation abzurufen
 	
 1. Melden Sie sich bei einer Region, Organisation und bei einem Bereich in {{site.data.keyword.Bluemix_notm}} an. 
 
-    Weitere Informationen finden Sie unter [Wie melde ich mich bei {{site.data.keyword.Bluemix_notm}} an?](/docs/services/CloudLogAnalysis/qa/cli_qa.html#login).
+    Weitere Informationen finden Sie in [Wie melde ich mich bei {{site.data.keyword.Bluemix_notm}} an?](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#login).
 
 2. Führen Sie den Befehl `ibmcloud iam org` aus, um die GUID der Organisation abzurufen. 
 
@@ -157,7 +157,7 @@ Führen Sie die folgenden Schritte aus, um die GUID eines Bereichs abzurufen:
 	
 1. Melden Sie sich bei einer Region, Organisation und bei einem Bereich in {{site.data.keyword.Bluemix_notm}} an. 
 
-    Weitere Informationen finden Sie unter [Wie melde ich mich bei {{site.data.keyword.Bluemix_notm}} an?](/docs/services/CloudLogAnalysis/qa/cli_qa.html#login).
+    Weitere Informationen finden Sie in [Wie melde ich mich bei {{site.data.keyword.Bluemix_notm}} an?](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#login).
 	
 2. Führen Sie den Befehl `ibmcloud iam space` aus, um die GUID des Bereichs abzurufen. 
 

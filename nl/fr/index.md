@@ -52,7 +52,7 @@ Le tableau suivant répertorie les différentes ressources de cloud. Suivez le t
   </tr>
   <tr>
     <td>Conteneurs exécutés sur le {{site.data.keyword.containershort}}</td>
-    <td>[Analyse dans Kibana des journaux d'une application déployée dans un cluster Kubernetes](/docs/services/CloudLogAnalysis/tutorials/container_logs.html#container_logs)</td>
+    <td>[Analyse dans Kibana des journaux d'une application déployée dans un cluster Kubernetes](/docs/services/CloudLogAnalysis/tutorials?topic=cloudloganalysis-container_logs#container_logs)</td>
     <td>Public </br>Dedicated</td>
     <td>![Présentation générale des composants pour les conteneursdéployés dans un cluster Kubernetes](containers/images/containers_kube_logs.png "Présentation générale des composants pour les conteneurs déployés dans un cluster Kubernetes")</td>
 
@@ -95,7 +95,7 @@ Procédez comme suit pour accorder à un utilisateur des droits permettant d'aff
 	
 3. Si l'utilisateur est membre du compte, sélectionnez le nom de l'utilisateur dans la liste ou cliquez sur **Gérer un utilisateur** dans le menu *Actions*.
 
-    Si l'utilisateur n'est pas membre du compte, voir [Invitation d'utilisateurs](/docs/iam/iamuserinv.html#iamuserinv).
+    Si l'utilisateur n'est pas membre du compte, voir [Invitation d'utilisateurs](/docs/iam?topic=iam-iamuserinv#iamuserinv).
 
 4. Sélectionnez **Accès Cloud Foundry**, puis sélectionnez l'organisation.
 
@@ -129,7 +129,7 @@ Procédez comme suit pour accorder à un utilisateur des droits permettant d'aff
 	
 3. Si l'utilisateur est membre du compte, sélectionnez le nom de l'utilisateur dans la liste ou cliquez sur **Gérer un utilisateur** dans le menu *Actions*.
 
-    Si l'utilisateur n'est pas membre du compte, voir [Invitation d'utilisateurs](/docs/iam/iamuserinv.html#iamuserinv).
+    Si l'utilisateur n'est pas membre du compte, voir [Invitation d'utilisateurs](/docs/iam?topic=iam-iamuserinv#iamuserinv).
 
 4. Dans la section **Règles d'accès**, cliquez sur **Affecter un accès**, puis cliquez sur **Affecter l'accès aux ressources**.
 
@@ -157,7 +157,7 @@ Procédez comme suit pour accorder à un utilisateur des droits permettant d'aff
 	  </tr>
 	  <tr>
 	    <td>Rôles</td>
-		<td>Sélectionnez un ou plusieurs rôles IAM. <br>Les rôles valides sont *administrateur*, *opérateur*, *éditeur* et *afficheur*. <br>Pour plus d'informations sur les actions autorisées pour chaque rôle, voir [Rôle IAM](/docs/services/CloudLogAnalysis/security_ov.html#iam_roles).
+		<td>Sélectionnez un ou plusieurs rôles IAM. <br>Les rôles valides sont *administrateur*, *opérateur*, *éditeur* et *afficheur*. <br>Pour plus d'informations sur les actions autorisées pour chaque rôle, voir [Rôle IAM](/docs/services/CloudLogAnalysis?topic=cloudloganalysis-security_ov#iam_roles).
 		</td>
 	  </tr>
      </table>
@@ -180,11 +180,11 @@ https://logging.ng.bluemix.net/
 {: codeblock}
 
 
-Pour plus d'informations sur le lancement de Kibana dans d'autres régions, voir [Accès à Kibana depuis un navigateur Web](/docs/services/CloudLogAnalysis/kibana/launch.html#launch_Kibana_from_browser).
+Pour plus d'informations sur le lancement de Kibana dans d'autres régions, voir [Accès à Kibana depuis un navigateur Web](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-launch#launch_Kibana_from_browser).
 
 **Remarque :** lorsque vous lancez Kibana, si un message signale que le *jeton bearer n'est pas valide* ; vérifiez vos droits dans le compte. Ce message indique que votre ID utilisateur ne dispose pas des droits permettant d'afficher les journaux.
 
-Ensuite, personnalisez Kibana pour afficher et analyser vos données de journal. Pour plus d'informations, voir [Affichage et analyse des journaux](/docs/services/CloudLogAnalysis/kibana/analyzing_logs_Kibana.html#analyzing_logs_Kibana).
+Ensuite, personnalisez Kibana pour afficher et analyser vos données de journal. Pour plus d'informations, voir [Affichage et analyse des journaux](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-analyzing_logs_Kibana#analyzing_logs_Kibana).
     
 
 

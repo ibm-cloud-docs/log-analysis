@@ -29,11 +29,11 @@ subcollection: cloudloganalysis
 {{site.data.keyword.loganalysisshort}} サービスでの {{site.data.keyword.Bluemix}} CLI の使用に関する一般的な質問の回答を以下に示します。 
 {:shortdesc}
 
-* [{{site.data.keyword.Bluemix_notm}} にログインするにはどうすればよいですか](/docs/services/CloudLogAnalysis/qa/cli_qa.html#login)
-* [{{site.data.keyword.Bluemix_notm}} CLI のインストール方法を教えてください](/docs/services/CloudLogAnalysis/qa/cli_qa.html#install_bmx_cli)
-* [アカウントの GUID の取得方法を教えてください](/docs/services/CloudLogAnalysis/qa/cli_qa.html#account_guid)
-* [組織の GUID の取得方法を教えてください](/docs/services/CloudLogAnalysis/qa/cli_qa.html#org_guid)
-* [スペースの GUID の取得方法を教えてください](/docs/services/CloudLogAnalysis/qa/cli_qa.html#space_guid)
+* [{{site.data.keyword.Bluemix_notm}} にログインするにはどうすればよいですか](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#login)
+* [{{site.data.keyword.Bluemix_notm}} CLI のインストール方法を教えてください](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#install_bmx_cli)
+* [アカウントの GUID の取得方法を教えてください](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#account_guid)
+* [組織の GUID の取得方法を教えてください](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#org_guid)
+* [スペースの GUID の取得方法を教えてください](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#space_guid)
 
 ## IBM Cloud にログインするにはどうすればよいですか
 {: #login}
@@ -97,7 +97,7 @@ ibmcloud target -o OrgName -s SpaceName
 ## IBM Cloud CLI のインストール方法を教えてください
 {: #install_bmx_cli}
 
-[『{{site.data.keyword.Bluemix}}CLI のダウンロードとインストール』](/docs/cli/index.html#overview)を参照してください。
+[『{{site.data.keyword.Bluemix}}CLI のダウンロードとインストール』](/docs/cli?topic=cloud-cli-ibmcloud-cli#overview)を参照してください。
 
 
 
@@ -108,7 +108,7 @@ ibmcloud target -o OrgName -s SpaceName
 	
 1. {{site.data.keyword.Bluemix_notm}} の地域にログインします。 
 
-    詳しくは、『[{{site.data.keyword.Bluemix_notm}} にログインするにはどうすればよいですか](/docs/services/CloudLogAnalysis/qa/cli_qa.html#login)』を参照してください。
+    詳しくは、『[{{site.data.keyword.Bluemix_notm}} にログインするにはどうすればよいですか](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#login)』を参照してください。
 	
 2. `ibmcloud iam accounts` コマンドを実行して、アカウントの GUID を取得します。
 
@@ -137,7 +137,7 @@ ibmcloud target -o OrgName -s SpaceName
 	
 1. {{site.data.keyword.Bluemix_notm}} で、地域、組織、およびスペースにログインします。 
 
-    詳しくは、『[{{site.data.keyword.Bluemix_notm}} にログインするにはどうすればよいですか](/docs/services/CloudLogAnalysis/qa/cli_qa.html#login)』を参照してください。
+    詳しくは、『[{{site.data.keyword.Bluemix_notm}} にログインするにはどうすればよいですか](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#login)』を参照してください。
 
 2. `ibmcloud iam org` コマンドを実行して、組織の GUID を取得します。 
 
@@ -157,7 +157,7 @@ ibmcloud target -o OrgName -s SpaceName
 	
 1. {{site.data.keyword.Bluemix_notm}} で、地域、組織、およびスペースにログインします。 
 
-    詳しくは、『[{{site.data.keyword.Bluemix_notm}} にログインするにはどうすればよいですか](/docs/services/CloudLogAnalysis/qa/cli_qa.html#login)』を参照してください。
+    詳しくは、『[{{site.data.keyword.Bluemix_notm}} にログインするにはどうすればよいですか](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#login)』を参照してください。
 	
 2. `ibmcloud iam space` コマンドを実行して、スペースの GUID を取得します。 
 

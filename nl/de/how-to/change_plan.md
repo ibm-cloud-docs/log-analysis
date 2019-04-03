@@ -58,7 +58,7 @@ Um Ihren Serviceplan in Bluemix über die Befehlszeilenschnittstelle zu ändern,
 
 1. Melden Sie sich bei einer Region, Organisation und bei einem Bereich in {{site.data.keyword.Bluemix_notm}} an. 
 
-    Weitere Informationen finden Sie unter [Wie melde ich mich bei {{site.data.keyword.Bluemix_notm}} an?](/docs/services/CloudLogAnalysis/qa/cli_qa.html#login).
+    Weitere Informationen finden Sie in [Wie melde ich mich bei {{site.data.keyword.Bluemix_notm}} an?](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#login).
 	
 2. Führen Sie den Befehl `ibmcloud service list` aus, um Ihren aktuellen Plan zu prüfen und um den {{site.data.keyword.loganalysisshort}}-Servicenamen aus der Liste der Services anzufordern, die in dem Bereich verfügbar sind. 
 

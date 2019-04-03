@@ -29,11 +29,11 @@ subcollection: cloudloganalysis
 下面是对有关使用 {{site.data.keyword.Bluemix}} CLI 与 {{site.data.keyword.loganalysisshort}} 服务的常见问题的解答。
 {:shortdesc}
 
-* [如何登录到 {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/qa/cli_qa.html#login)
-* [如何安装 {{site.data.keyword.Bluemix_notm}} CLI](/docs/services/CloudLogAnalysis/qa/cli_qa.html#install_bmx_cli)
-* [如何获取帐户的 GUID](/docs/services/CloudLogAnalysis/qa/cli_qa.html#account_guid)
-* [如何获取组织的 GUID](/docs/services/CloudLogAnalysis/qa/cli_qa.html#org_guid)
-* [如何获取空间的 GUID](/docs/services/CloudLogAnalysis/qa/cli_qa.html#space_guid)
+* [如何登录到 {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#login)
+* [如何安装 {{site.data.keyword.Bluemix_notm}} CLI](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#install_bmx_cli)
+* [如何获取帐户的 GUID](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#account_guid)
+* [如何获取组织的 GUID](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#org_guid)
+* [如何获取空间的 GUID](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#space_guid)
 
 ## 如何登录到 IBM Cloud？
 {: #login}
@@ -97,7 +97,7 @@ ibmcloud target -o OrgName -s SpaceName
 ## 如何安装 IBM Cloud CLI？
 {: #install_bmx_cli}
 
-请参阅[下载并安装 {{site.data.keyword.Bluemix}} CLI](/docs/cli/index.html#overview)。
+请参阅[下载并安装 {{site.data.keyword.Bluemix}} CLI](/docs/cli?topic=cloud-cli-ibmcloud-cli#overview)。
 
 
 
@@ -108,7 +108,7 @@ ibmcloud target -o OrgName -s SpaceName
 	
 1. 登录到 {{site.data.keyword.Bluemix_notm}} 中的区域。 
 
-    有关更多信息，请参阅[如何登录到 {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/qa/cli_qa.html#login)。
+    有关更多信息，请参阅[如何登录到 {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#login)。
 	
 2. 运行 `ibmcloud iam accounts` 命令以获取帐户的 GUID。
 
@@ -138,7 +138,7 @@ ibmcloud target -o OrgName -s SpaceName
 	
 1. 登录到 {{site.data.keyword.Bluemix_notm}} 中的区域、组织和空间。 
 
-    有关更多信息，请参阅[如何登录到 {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/qa/cli_qa.html#login)。
+    有关更多信息，请参阅[如何登录到 {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#login)。
 
 2. 运行 `ibmcloud iam org` 命令来获取组织 GUID。 
 
@@ -160,7 +160,7 @@ ibmcloud target -o OrgName -s SpaceName
 	
 1. 登录到 {{site.data.keyword.Bluemix_notm}} 中的区域、组织和空间。 
 
-    有关更多信息，请参阅[如何登录到 {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/qa/cli_qa.html#login)。
+    有关更多信息，请参阅[如何登录到 {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#login)。
 	
 2. 运行 `ibmcloud iam space` 命令来获取空间 GUID。 
 

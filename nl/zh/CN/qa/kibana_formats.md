@@ -96,7 +96,7 @@ subcollection: cloudloganalysis
 {: caption="表 3. Docker 容器的字段" caption-side="top"}
 
 
-## Message Hub 的 Kibana 日志格式
+## {{site.data.keyword.messagehub}} 的 Kibana 日志格式
 {: #kibana_log_format_messagehub}
 
 可以配置 Kibana 以在*发现*页面中显示每个日志条目的以下字段：
@@ -113,7 +113,7 @@ subcollection: cloudloganalysis
 |\_type|日志的类型；例如，*syslog*。|
 |loglevel|所记录事件的严重性；例如，**Info**。|
 |module|此字段设置为 **MessageHub**。|
-{: caption="表 4. 用于消息中心事件的字段" caption-side="top"}
+{: caption="表 4. 用于 {{site.data.keyword.messagehub}} 事件的字段" caption-side="top"}
 
 日志条目的示例：
 

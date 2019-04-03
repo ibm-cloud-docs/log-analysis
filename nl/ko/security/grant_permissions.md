@@ -28,7 +28,7 @@ subcollection: cloudloganalysis
 {{site.data.keyword.Bluemix}}에서는 사용자에게 하나 이상의 IAM 역할을 지정할 수 있습니다. 이러한 역할은 사용자가 {{site.data.keyword.loganalysisshort}} 서비스를 사용하여 수행할 수 있는 태스크를 정의합니다.  
 {:shortdesc}
 
-예를 들면, 특정 사용자에게 로그를 관리할 수 있도록 **운영자** 역할을 부여할 수 있습니다. 사용자가 계정 로그를 볼 수 있도록 하려는 경우에는 **뷰어** 역할을 부여할 수 있습니다. 자세한 정보는 [IAM 역할](/docs/services/CloudLogAnalysis/security_ov.html#iam_roles)을 참조하십시오.
+예를 들면, 특정 사용자에게 로그를 관리할 수 있도록 **운영자** 역할을 부여할 수 있습니다. 사용자가 계정 로그를 볼 수 있도록 하려는 경우에는 **뷰어** 역할을 부여할 수 있습니다. 자세한 정보는 [IAM 역할](/docs/services/CloudLogAnalysis?topic=cloudloganalysis-security_ov#iam_roles)을 참조하십시오.
 
 **참고:** 
 
@@ -52,7 +52,7 @@ subcollection: cloudloganalysis
 	
 3. 사용자가 계정의 구성원인 경우 목록에서 사용자 이름을 선택하거나 *조치* 메뉴에서 **사용자 관리**를 클릭하십시오.
 
-    사용자가 계정의 구성원이 아닌 경우 [사용자 초대](/docs/iam/iamuserinv.html#iamuserinv)를 참조하십시오.
+    사용자가 계정의 구성원이 아닌 경우 [사용자 초대](/docs/iam?topic=iam-iamuserinv#iamuserinv)를 참조하십시오.
 
 4. **액세스 정책** 섹션에서 **액세스 권한 지정**을 클릭한 후 **리소스에 대한 액세스 권한 지정**을 선택하십시오.
 
@@ -80,7 +80,7 @@ subcollection: cloudloganalysis
 	  </tr>
 	  <tr>
 	    <td>역할</td>
-		<td>하나 이상의 IAM 역할을 선택하십시오. <br>올바른 역할: *관리자*, *운영자*, *편집자* 및 *뷰어*. <br>각 역할에 허용되는 조치에 대한 자세한 정보는 [IAM 역할](/docs/services/CloudLogAnalysis/security_ov.html#iam_roles)을 참조하십시오.
+		<td>하나 이상의 IAM 역할을 선택하십시오. <br>올바른 역할: *관리자*, *운영자*, *편집자* 및 *뷰어*. <br>각 역할에 허용되는 조치에 대한 자세한 정보는 [IAM 역할](/docs/services/CloudLogAnalysis?topic=cloudloganalysis-security_ov#iam_roles)을 참조하십시오.
 		</td>
 	  </tr>
      </table>
@@ -97,7 +97,7 @@ subcollection: cloudloganalysis
 
 1. 터미널에서 {{site.data.keyword.Bluemix_notm}} 계정에 로그인하십시오. 
 
-    자세한 정보는 [{{site.data.keyword.Bluemix_notm}}에 로그인하는 방법](/docs/services/CloudLogAnalysis/qa/cli_qa.html#login)을 참조하십시오.
+    자세한 정보는 [{{site.data.keyword.Bluemix_notm}}에 로그인하는 방법](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#login)을 참조하십시오.
 
 2. 사용자가 계정의 구성원인지 확인하십시오. 다음 명령을 실행하여 계정의 사용자 목록을 가져오십시오.
 
@@ -108,7 +108,7 @@ subcollection: cloudloganalysis
 
 	사용자 및 해당 GUID의 목록이 표시됩니다.
 
-3. 사용자가 계정의 구성원이 아닌 경우 계정 소유자에게 문의하여 해당 사용자를 해당 계정에 초대하도록 요청하십시오. 자세한 정보는 [사용자 초대](/docs/iam/iamuserinv.html#iamuserinv)를 참조하십시오.
+3. 사용자가 계정의 구성원이 아닌 경우 계정 소유자에게 문의하여 해당 사용자를 해당 계정에 초대하도록 요청하십시오. 자세한 정보는 [사용자 초대](/docs/iam?topic=iam-iamuserinv#iamuserinv)를 참조하십시오.
 
     **팁:** 사용자를 계정에 초대하는 명령은 `ibmcloud iam account-user-invite USER_EMAIL`입니다.
 		
@@ -152,7 +152,7 @@ subcollection: cloudloganalysis
 	
 3. 사용자가 계정의 구성원인 경우 목록에서 사용자 이름을 선택하거나 *조치* 메뉴에서 **사용자 관리**를 클릭하십시오.
 
-    사용자가 계정의 구성원이 아닌 경우 [사용자 초대](/docs/iam/iamuserinv.html#iamuserinv)를 참조하십시오.
+    사용자가 계정의 구성원이 아닌 경우 [사용자 초대](/docs/iam?topic=iam-iamuserinv#iamuserinv)를 참조하십시오.
 
 4. **Cloud Foundry 액세스**를 선택한 후 조직을 선택하십시오.
 

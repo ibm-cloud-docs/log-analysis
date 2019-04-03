@@ -29,11 +29,11 @@ subcollection: cloudloganalysis
 Sono qui di seguito riportate le risposte alle domande comuni sull'utilizzo della CLI {{site.data.keyword.Bluemix}} con il servizio {{site.data.keyword.loganalysisshort}}. 
 {:shortdesc}
 
-* [Come accedo a {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/qa/cli_qa.html#login)
-* [Come installo la CLI {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/qa/cli_qa.html#install_bmx_cli)
-* [Come ottengo il GUID di un account](/docs/services/CloudLogAnalysis/qa/cli_qa.html#account_guid)
-* [Come ottengo il GUID di un'organizzazione](/docs/services/CloudLogAnalysis/qa/cli_qa.html#org_guid)
-* [Come ottengo il GUID di uno spazio](/docs/services/CloudLogAnalysis/qa/cli_qa.html#space_guid)
+* [Come accedo a {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#login)
+* [Come installo la CLI {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#install_bmx_cli)
+* [Come ottengo il GUID di un account](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#account_guid)
+* [Come ottengo il GUID di un'organizzazione](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#org_guid)
+* [Come ottengo il GUID di uno spazio](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#space_guid)
 
 ## Come accedo a IBM Cloud?
 {: #login}
@@ -97,7 +97,7 @@ dove
 ## Come installo la CLI IBM Cloud?
 {: #install_bmx_cli}
 
-Vedi [Scarica e installa la CLI {{site.data.keyword.Bluemix}}](/docs/cli/index.html#overview).
+Vedi [Scarica e installa la CLI {{site.data.keyword.Bluemix}}](/docs/cli?topic=cloud-cli-ibmcloud-cli#overview).
 
 
 
@@ -108,7 +108,7 @@ Per ottenere il GUID di un account, completa la seguente procedura:
 	
 1. Accedi a una regione in {{site.data.keyword.Bluemix_notm}}. 
 
-    Per ulteriori informazioni, vedi [Come accedo a {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/qa/cli_qa.html#login).
+    Per ulteriori informazioni, vedi [Come accedo a {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#login).
 	
 2. Esegui il comando `ibmcloud iam accounts` per ottenere il GUID di un account.
 
@@ -137,7 +137,7 @@ Completa la seguente procedura per ottenere il GUID di un organizzazione:
 	
 1. Accedi a una regione, un'organizzazione e uno spazio in {{site.data.keyword.Bluemix_notm}}. 
 
-    Per ulteriori informazioni, vedi [Come accedo a {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/qa/cli_qa.html#login).
+    Per ulteriori informazioni, vedi [Come accedo a {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#login).
 
 2. Esegui il comando `ibmcloud iam org` per ottenere il GUID dell'organizzazione. 
 
@@ -157,7 +157,7 @@ Completa la seguente procedura per ottenere il GUID di uno spazio:
 	
 1. Accedi a una regione, un'organizzazione e uno spazio in {{site.data.keyword.Bluemix_notm}}. 
 
-    Per ulteriori informazioni, vedi [Come accedo a {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/qa/cli_qa.html#login).
+    Per ulteriori informazioni, vedi [Come accedo a {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#login).
 	
 2. Esegui il comando `ibmcloud iam space` per ottenere il GUID dello spazio. 
 

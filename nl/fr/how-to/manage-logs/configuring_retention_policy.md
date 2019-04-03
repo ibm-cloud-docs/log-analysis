@@ -41,7 +41,7 @@ Effectuez les étapes suivantes pour désactiver une règle de conservation :
 
 1. Connectez-vous à une région, une organisation et un espace dans {{site.data.keyword.Bluemix_notm}}. 
 
-    Pour plus d'informations, voir [Comment se connecter à {{site.data.keyword.Bluemix_notm}} ?](/docs/services/CloudLogAnalysis/qa/cli_qa.html#login).
+    Pour plus d'informations, voir [Comment se connecter à {{site.data.keyword.Bluemix_notm}} ?](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#login)
     
 2. Définissez la valeur **-1** pour désactiver la durée de conservation. Exécutez la commande suivante :
 
@@ -79,7 +79,7 @@ Afin d'obtenir la durée de conservation définie pour un espace, procédez comm
 
 1. Connectez-vous à une région, une organisation et un espace dans {{site.data.keyword.Bluemix_notm}}. 
 
-    Pour plus d'informations, voir [Comment se connecter à {{site.data.keyword.Bluemix_notm}} ?](/docs/services/CloudLogAnalysis/qa/cli_qa.html#login).
+    Pour plus d'informations, voir [Comment se connecter à {{site.data.keyword.Bluemix_notm}} ?](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#login)
     
 2. Obtenez la durée de conservation. Exécutez la commande suivante :
 
@@ -107,7 +107,7 @@ Afin d'obtenir la durée de conservation définie pour chaque espace sur un comp
 
 1. Connectez-vous à une région, une organisation et un espace dans {{site.data.keyword.Bluemix_notm}}. 
 
-    Pour plus d'informations, voir [Comment se connecter à {{site.data.keyword.Bluemix_notm}} ?](/docs/services/CloudLogAnalysis/qa/cli_qa.html#login).
+    Pour plus d'informations, voir [Comment se connecter à {{site.data.keyword.Bluemix_notm}} ?](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#login)
     
 2. Obtenez la durée de conservation de chaque espace du compte. Exécutez la commande suivante :
 
@@ -137,7 +137,7 @@ Afin d'afficher la durée de conservation pour un compte, procédez comme suit :
 
 1. Connectez-vous à une région, une organisation et un espace dans {{site.data.keyword.Bluemix_notm}}. 
 
-    Pour plus d'informations, voir [Comment se connecter à {{site.data.keyword.Bluemix_notm}} ?](/docs/services/CloudLogAnalysis/qa/cli_qa.html#login).
+    Pour plus d'informations, voir [Comment se connecter à {{site.data.keyword.Bluemix_notm}} ?](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#login)
     
 2. Définissez la durée de conservation. Exécutez la commande suivante :
 
@@ -178,7 +178,7 @@ Afin d'afficher la durée de conservation pour un espace, procédez comme suit :
 
 1. Connectez-vous à une région, une organisation et un espace dans {{site.data.keyword.Bluemix_notm}}. 
 
-    Pour plus d'informations, voir [Comment se connecter à {{site.data.keyword.Bluemix_notm}} ?](/docs/services/CloudLogAnalysis/qa/cli_qa.html#login).
+    Pour plus d'informations, voir [Comment se connecter à {{site.data.keyword.Bluemix_notm}} ?](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#login)
     
 2. Définissez la durée de conservation. Exécutez la commande suivante :
 

@@ -141,7 +141,7 @@ Il servizio {{site.data.keyword.loganalysisshort}} fornisce più piani. Ogni pia
 
 **NOTA:** le funzioni incluse in un piano di servizio sono abilitate solo nello spazio dove si esegue il provisioning del servizio {{site.data.keyword.loganalysisshort}} con tale piano.
 
-Puoi modificare un piano tramite la IU {{site.data.keyword.Bluemix_notm}} o la riga di comando. Puoi aggiornare o ridurre il tuo piano in qualsiasi momento. Per ulteriori informazioni sugli upgrade di piano di servizio, vedi [Modifica del piano](/docs/services/CloudLogAnalysis/how-to/change_plan.html#change_plan). 
+Puoi modificare un piano tramite la IU {{site.data.keyword.Bluemix_notm}} o la riga di comando. Puoi aggiornare o ridurre il tuo piano in qualsiasi momento. Per ulteriori informazioni sugli upgrade di piano di servizio, vedi [Modifica del piano](/docs/services/CloudLogAnalysis/how-to?topic=cloudloganalysis-change_plan#change_plan). 
 
 La seguente tabella illustra i piani disponibili:
 

@@ -43,7 +43,7 @@ Procédez comme suit :
     ```
     {: codeblock}
 
-    Pour plus d'informations, voir [Comment se connecter à {{site.data.keyword.Bluemix_notm}} ?](/docs/services/CloudLogAnalysis/qa/cli_qa.html#login).
+    Pour plus d'informations, voir [Comment se connecter à {{site.data.keyword.Bluemix_notm}} ?](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#login)
 
 2. Exécutez la commande d'interface de ligne de commande `ibmcloud logging quota-usage-show`. 
 
@@ -98,7 +98,7 @@ Procédez comme suit :
     ```
     {: codeblock}
 
-    Pour plus d'informations, voir [Comment se connecter à {{site.data.keyword.Bluemix_notm}} ?](/docs/services/CloudLogAnalysis/qa/cli_qa.html#login).
+    Pour plus d'informations, voir [Comment se connecter à {{site.data.keyword.Bluemix_notm}} ?](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#login)
 
 2. Exécutez la commande d'interface de ligne de commande `ibmcloud logging quota-usage-show` avec le paramètre `-s`. 
 
@@ -141,7 +141,7 @@ Procédez comme suit :
 
 1. Connectez-vous à {{site.data.keyword.Bluemix_notm}}. 
 
-    Pour plus d'informations, voir [Comment se connecter à {{site.data.keyword.Bluemix_notm}} ?](/docs/services/CloudLogAnalysis/qa/cli_qa.html#login).
+    Pour plus d'informations, voir [Comment se connecter à {{site.data.keyword.Bluemix_notm}} ?](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#login)
 
 2. Obtenez l'ID du compte. Exécutez la commande suivante :
 
@@ -161,7 +161,7 @@ Procédez comme suit :
 
 3. Obtenez le jeton UAA. 
 
-    Pour plus d'informations, voir [Obtention du jeton UAA](/docs/services/CloudLogAnalysis/security/auth_uaa.html#auth_uaa).
+    Pour plus d'informations, voir [Obtention du jeton UAA](/docs/services/CloudLogAnalysis/security?topic=cloudloganalysis-auth_uaa#auth_uaa).
 
     Exportez le jeton UAA dans une variable de shell. N'incluez pas le préfixe `Bearer`. Exemple :
 	
@@ -177,7 +177,7 @@ Procédez comme suit :
 	```
 	{: codeblock}
 	
-	où *ENDPOINT* est différent selon la région. Pour la liste des noeuds finaux par région, voir [Noeuds finaux de journalisation](/docs/services/CloudLogAnalysis/manage_logs.html#endpoints).
+	où *ENDPOINT* est différent selon la région. Pour la liste des noeuds finaux par région, voir [Noeuds finaux de journalisation](/docs/services/CloudLogAnalysis?topic=cloudloganalysis-manage_logs#endpoints).
 	
 	Par exemple, exécutez la commande cURL afin d'obtenir le quota pour le compte dans la région Sud des Etats-Unis :
 	
@@ -214,11 +214,11 @@ Procédez comme suit :
 
 1. Connectez-vous à {{site.data.keyword.Bluemix_notm}}. 
 
-    Pour plus d'informations, voir [Comment se connecter à {{site.data.keyword.Bluemix_notm}} ?](/docs/services/CloudLogAnalysis/qa/cli_qa.html#login).
+    Pour plus d'informations, voir [Comment se connecter à {{site.data.keyword.Bluemix_notm}} ?](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#login)
 
 2. Obtenez l'ID de l'espace.
 
-    Pour plus d'informations, voir [Comment obtenir l'identificateur global unique d'un espace ?](/docs/services/CloudLogAnalysis/qa/cli_qa.html#space_guid).
+    Pour plus d'informations, voir [Comment obtenir l'identificateur global unique d'un espace ?](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#space_guid).
 	
 	Exportez l'ID d'espace dans une variable de shell. Exemple :
 	
@@ -229,7 +229,7 @@ Procédez comme suit :
 
 3. Obtenez le jeton UAA. 
 
-    Pour plus d'informations, voir [Obtention du jeton UAA](/docs/services/CloudLogAnalysis/security/auth_uaa.html#auth_uaa).
+    Pour plus d'informations, voir [Obtention du jeton UAA](/docs/services/CloudLogAnalysis/security?topic=cloudloganalysis-auth_uaa#auth_uaa).
 
     Exportez le jeton UAA dans une variable de shell. N'incluez pas le préfixe `Bearer`. Exemple :
 	
@@ -245,7 +245,7 @@ Procédez comme suit :
 	```
 	{: codeblock}
 	
-	où *ENDPOINT* est différent selon la région. Pour la liste des noeuds finaux par région, voir [Noeuds finaux de journalisation](/docs/services/CloudLogAnalysis/manage_logs.html#endpoints).
+	où *ENDPOINT* est différent selon la région. Pour la liste des noeuds finaux par région, voir [Noeuds finaux de journalisation](/docs/services/CloudLogAnalysis?topic=cloudloganalysis-manage_logs#endpoints).
 
     Par exemple, exécutez la commande cURL suivante pour obtenir le quota et l'utilisation d'un domaine d'espace dans la région Sud des Etats-Unis :
 	

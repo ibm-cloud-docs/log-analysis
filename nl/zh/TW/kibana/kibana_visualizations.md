@@ -51,12 +51,12 @@ subcollection: cloudloganalysis
 
 |作業 |相關資訊 |
 |------|------------------|
-|[建立新的視覺效果](/docs/services/CloudLogAnalysis/kibana/kibana_visualizations.html#create) |您可以從您定義並儲存在*探索* 頁面中的搜尋來建立視覺效果，也可以從您在*視覺化* 頁面中定義的新查詢來建立視覺效果。|
-|[刪除視覺效果](/docs/services/CloudLogAnalysis/kibana/kibana_visualizations.html#delete) |刪除不需要的視覺效果。|
-|[匯出視覺效果](/docs/services/CloudLogAnalysis/kibana/kibana_visualizations.html#export) |您可以將視覺效果匯出成 JSON 檔案。|
-|[匯入視覺效果](/docs/services/CloudLogAnalysis/kibana/kibana_visualizations.html#import1) |您可以將視覺效果匯入成 JSON 檔案。|
-|[載入視覺效果](/docs/services/CloudLogAnalysis/kibana/kibana_visualizations.html#reload2) |您可以上傳視覺效果，以更新其資料、予以修改或分析資料。|
-|[儲存視覺效果](/docs/services/CloudLogAnalysis/kibana/kibana_visualizations.html#save2) |您可以儲存視覺效果，以供之後重複使用。|
+|[建立新的視覺效果](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-kibana_visualizations#create) |您可以從您定義並儲存在*探索* 頁面中的搜尋來建立視覺效果，也可以從您在*視覺化* 頁面中定義的新查詢來建立視覺效果。|
+|[刪除視覺效果](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-kibana_visualizations#delete) |刪除不需要的視覺效果。|
+|[匯出視覺效果](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-kibana_visualizations#export) |您可以將視覺效果匯出成 JSON 檔案。|
+|[匯入視覺效果](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-kibana_visualizations#import1) |您可以將視覺效果匯入成 JSON 檔案。|
+|[載入視覺效果](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-kibana_visualizations#reload2) |您可以上傳視覺效果，以更新其資料、予以修改或分析資料。|
+|[儲存視覺效果](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-kibana_visualizations#save2) |您可以儲存視覺效果，以供之後重複使用。|
 {: caption="表 2. 使用視覺效果的作業" caption-side="top"}
 
 
@@ -81,7 +81,7 @@ subcollection: cloudloganalysis
 
     * 如果您選取**從新的搜尋，選取索引**，請定義新的查詢。此查詢用來定義視覺效果所擷取及使用的部分資料。
 
-        如需相關資訊，請參閱[透過定義自訂查詢過濾日誌](/docs/services/CloudLogAnalysis/kibana/define_search.html#define_search)。
+        如需相關資訊，請參閱[透過定義自訂查詢過濾日誌](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-define_search#define_search)。
 
 如需 Kibana 的相關資訊，請參閱 [Kibana User Guide ![外部鏈結圖示](../../../icons/launch-glyph.svg "外部鏈結圖示")](https://www.elastic.co/guide/en/kibana/5.1/index.html){: new_window}。
 

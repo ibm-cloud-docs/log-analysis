@@ -38,13 +38,13 @@ siga estos pasos:
 
 1. Instale la CLI de {{site.data.keyword.Bluemix_notm}}.
 
-   Para obtener más información, consulte [Instalación de la CLI de {{site.data.keyword.Bluemix_notm}}](/docs/cli/index.html#overview).
+   Para obtener más información, consulte [Instalación de la CLI de {{site.data.keyword.Bluemix_notm}}](/docs/cli?topic=cloud-cli-ibmcloud-cli#overview).
 
 2. Instale el plugin de {{site.data.keyword.loganalysisshort}} CF.
 
-    * Para Linux, consulte [Instalación de la CLI de {{site.data.keyword.loganalysisshort}} en Linux](/docs/services/CloudLogAnalysis/how-to/manage-logs/config_log_collection_cli.html#install_cli_linux1).
-    * Para Windows, consulte [Instalación de la CLI de {{site.data.keyword.loganalysisshort}} en Windows](/docs/services/CloudLogAnalysis/how-to/manage-logs/config_log_collection_cli.html#install_cli_windows1).
-    * Para Mac OS X, consulte [Instalación de la CLI de {{site.data.keyword.loganalysisshort}} en Mac OS X](/docs/services/CloudLogAnalysis/how-to/manage-logs/config_log_collection_cli.html#install_cli_mac1).
+    * Para Linux, consulte [Instalación de la CLI de {{site.data.keyword.loganalysisshort}} en Linux](/docs/services/CloudLogAnalysis/how-to/manage-logs?topic=cloudloganalysis-config_log_collection_cli1#install_cli_linux1).
+    * Para Windows, consulte [Instalación de la CLI de {{site.data.keyword.loganalysisshort}} en Windows](/docs/services/CloudLogAnalysis/how-to/manage-logs?topic=cloudloganalysis-config_log_collection_cli1#install_cli_windows1).
+    * Para Mac OS X, consulte [Instalación de la CLI de {{site.data.keyword.loganalysisshort}} en Mac OS X](/docs/services/CloudLogAnalysis/how-to/manage-logs?topic=cloudloganalysis-config_log_collection_cli1#install_cli_mac1).
  
 3. Verifique la instalación del plugin de la CLI.
   
@@ -281,7 +281,7 @@ Para obtener información general sobre la CLI y los mandatos soportados, siga l
 
 1. Inicie la sesión en una región, organización y espacio en {{site.data.keyword.Bluemix_notm}}. 
 
-    Para obtener más información, consulte [Cómo iniciar la sesión en {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/qa/cli_qa.html#login).
+    Para obtener más información, consulte [Cómo iniciar la sesión en {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#login).
     
 2. Obtenga información sobre los mandatos soportados y sobre la CLI. Ejecute el mandato siguiente:
 
@@ -299,7 +299,7 @@ Para obtener ayuda sobre cómo utilizar un mandato, siga los pasos siguientes:
 
 1. Inicie la sesión en una región, organización y espacio en {{site.data.keyword.Bluemix_notm}}. 
 
-    Para obtener más información, consulte [Cómo iniciar la sesión en {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/qa/cli_qa.html#login).
+    Para obtener más información, consulte [Cómo iniciar la sesión en {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#login).
     
 2. Obtenga la lista de mandatos soportados e identifique el que necesita. Ejecute el mandato:
 
@@ -326,7 +326,7 @@ Un mandato puede tener submandatos. Para obtener ayuda sobre los submandatos, si
 
 1. Inicie la sesión en una región, organización y espacio en {{site.data.keyword.Bluemix_notm}}. 
 
-    Para obtener más información, consulte [Cómo iniciar la sesión en {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/qa/cli_qa.html#login).
+    Para obtener más información, consulte [Cómo iniciar la sesión en {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#login).
     
 2. Obtenga la lista de mandatos soportados e identifique el que necesita. Ejecute el mandato:
 

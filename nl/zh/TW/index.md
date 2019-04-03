@@ -52,7 +52,7 @@ subcollection: cloudloganalysis
   </tr>
   <tr>
     <td>在 {{site.data.keyword.containershort}} 上執行的容器</td>
-    <td>[針對 Kubernetes 叢集中所部署的應用程式，在 Kibana 中分析日誌](/docs/services/CloudLogAnalysis/tutorials/container_logs.html#container_logs)</td>
+    <td>[針對 Kubernetes 叢集中所部署的應用程式，在 Kibana 中分析日誌](/docs/services/CloudLogAnalysis/tutorials?topic=cloudloganalysis-container_logs#container_logs)</td>
     <td>公用</br>專用</td>
     <td>![Kubernetes 叢集中所部署容器的高階元件概觀](containers/images/containers_kube_logs.png "Kubernetes 叢集中所部署容器的高階元件概觀")</td>
   </tr>
@@ -94,7 +94,7 @@ subcollection: cloudloganalysis
 	
 3. 如果使用者是帳戶成員，請從清單選取使用者名稱，或按一下*動作* 功能表中的**管理使用者**。
 
-    如果使用者不是帳戶成員，請參閱[邀請使用者](/docs/iam/iamuserinv.html#iamuserinv)。
+    如果使用者不是帳戶成員，請參閱[邀請使用者](/docs/iam?topic=iam-iamuserinv#iamuserinv)。
 
 4. 選取 **Cloud Foundry 存取權**，然後選取組織。
 
@@ -128,7 +128,7 @@ subcollection: cloudloganalysis
 	
 3. 如果使用者是帳戶成員，請從清單選取使用者名稱，或按一下*動作* 功能表中的**管理使用者**。
 
-    如果使用者不是帳戶成員，請參閱[邀請使用者](/docs/iam/iamuserinv.html#iamuserinv)。
+    如果使用者不是帳戶成員，請參閱[邀請使用者](/docs/iam?topic=iam-iamuserinv#iamuserinv)。
 
 4. 在**存取原則**區段中，按一下**指派存取權**，然後選取**指派資源的存取權**。
 
@@ -156,7 +156,7 @@ subcollection: cloudloganalysis
 	  </tr>
 	  <tr>
 	    <td>角色</td>
-		<td>選取一個以上的 IAM 角色。<br>有效的角色為：*管理者*、*操作員*、*編輯者* 及*檢視者*。<br>如需每個角色所容許動作的相關資訊，請參閱 [IAM 角色](/docs/services/CloudLogAnalysis/security_ov.html#iam_roles)。</td>
+		<td>選取一個以上的 IAM 角色。<br>有效的角色為：*管理者*、*操作員*、*編輯者* 及*檢視者*。<br>如需每個角色所容許動作的相關資訊，請參閱 [IAM 角色](/docs/services/CloudLogAnalysis?topic=cloudloganalysis-security_ov#iam_roles)。</td>
 	  </tr>
      </table>
 	
@@ -178,11 +178,11 @@ https://logging.ng.bluemix.net/
 {: codeblock}
 
 
-如需如何在其他地區中啟動 Kibana 的相關資訊，請參閱[從 Web 瀏覽器導覽至 Kibana](/docs/services/CloudLogAnalysis/kibana/launch.html#launch_Kibana_from_browser)。
+如需如何在其他地區中啟動 Kibana 的相關資訊，請參閱[從 Web 瀏覽器導覽至 Kibana](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-launch#launch_Kibana_from_browser)。
 
 **附註：**當您啟動 Kibana 時，如果所收到的訊息指出*載送記號無效*，則請檢查您在帳戶中的許可權。此訊息指出您的使用者 ID 沒有查看日誌的許可權。
 
-接下來，自訂 Kibana，以檢視及分析日誌資料。如需相關資訊，請參閱[檢視及分析日誌](/docs/services/CloudLogAnalysis/kibana/analyzing_logs_Kibana.html#analyzing_logs_Kibana)。
+接下來，自訂 Kibana，以檢視及分析日誌資料。如需相關資訊，請參閱[檢視及分析日誌](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-analyzing_logs_Kibana#analyzing_logs_Kibana)。
     
 
 

@@ -34,7 +34,7 @@ Führen Sie die folgenden Schritte aus, um Protokolldaten an einen Bereich in {{
 {: #prereqs1}
 
 * Eine {{site.data.keyword.Bluemix_notm}} ID für die Anmeldung bei {{site.data.keyword.Bluemix_notm}}.
-* Eine Benutzer-ID, die über Berechtigungen zum Arbeiten in einem Bereich mit dem {{site.data.keyword.loganalysisshort}}-Service verfügt. Weitere Informationen finden Sie unter [Sicherheit](/docs/services/CloudLogAnalysis/security_ov.html#security_ov).
+* Eine Benutzer-ID, die über Berechtigungen zum Arbeiten in einem Bereich mit dem {{site.data.keyword.loganalysisshort}}-Service verfügt. Weitere Informationen finden Sie unter [Sicherheit](/docs/services/CloudLogAnalysis?topic=cloudloganalysis-security_ov#security_ov).
 * Die in Ihrer lokalen Umgebung installierte {{site.data.keyword.loganalysisshort}}-Befehlszeilenschnittstelle.
 * Der {{site.data.keyword.loganalysisshort}}-Service, der in einem Bereich in Ihrem Konto mit einem Plan bereitgestellt wird, der die Protokollaufnahme ermöglicht.
 
@@ -46,7 +46,7 @@ Führen Sie in der Terminalsitzung, in der die {{site.data.keyword.loganalysissh
 
 1. Melden Sie sich bei einer Region, Organisation und bei einem Bereich in {{site.data.keyword.Bluemix_notm}} an. 
 
-    Weitere Informationen finden Sie unter [Wie melde ich mich bei {{site.data.keyword.Bluemix_notm}} an?](/docs/services/CloudLogAnalysis/qa/cli_qa.html#login).
+    Weitere Informationen finden Sie in [Wie melde ich mich bei {{site.data.keyword.Bluemix_notm}} an?](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#login).
     
 2. Führen Sie den Befehl `ibmcloud logging token-get` aus. 
 
@@ -206,7 +206,7 @@ Führen Sie die folgenden Schritte aus, um den Multi-Tenant Logstash Forwarder (
           </tr>
           <tr>
             <td>LSF_TARGET</td>
-            <td>Ziel-URL. Informationen zum Abrufen der Liste der URLs zum Einpflegen finden Sie unter [URLs für das Einpflegen](/docs/services/CloudLogAnalysis/log_ingestion.html#log_ingestion_urls). Legen Sie den Wert beispielsweise auf **ingest.logging.ng.bluemix.net:9091** fest, um Protokolle an die Region 'USA (Süden)' zu senden. </td>
+            <td>Ziel-URL. Informationen zum Abrufen der Liste der URLs zum Einpflegen finden Sie unter [URLs für das Einpflegen](/docs/services/CloudLogAnalysis?topic=cloudloganalysis-log_ingestion#log_ingestion_urls). Legen Sie den Wert beispielsweise auf **ingest.logging.ng.bluemix.net:9091** fest, um Protokolle an die Region 'USA (Süden)' zu senden. </td>
           </tr>
           <tr>
             <td>LSF_TENANT_ID</td>

@@ -51,12 +51,12 @@ Auf der Seite 'Visualize' können Sie eine der folgenden Tasks ausführen:
 
 | Task | Weitere Informationen |
 |------|------------------|
-| [Neue Visualisierung erstellen](/docs/services/CloudLogAnalysis/kibana/kibana_visualizations.html#create) | Sie können Visualisierungen aus einer Suche erstellen, die Sie auf der Seite *Discover* definieren und speichern, oder aus einer neuen Abfrage, die Sie auf der Seite *Visualize* definieren. |
-| [Visualisierung löschen](/docs/services/CloudLogAnalysis/kibana/kibana_visualizations.html#delete) | Nicht benötigte Visualisierungen können gelöscht werden. |
-| [Visualisierung exportieren](/docs/services/CloudLogAnalysis/kibana/kibana_visualizations.html#export) | Sie können eine Visualisierung als JSON-Datei exportieren.  |
-| [Visualisierung importieren](/docs/services/CloudLogAnalysis/kibana/kibana_visualizations.html#import1) | Sie können eine Visualisierung als JSON-Datei importieren.  |
-| [Visualisierung laden](/docs/services/CloudLogAnalysis/kibana/kibana_visualizations.html#reload2) | Sie können eine Visualisierung hochladen, um ihre Daten zu aktualisieren, um Änderungen vorzunehmen oder um die Daten zu analysieren. |
-| [Visualisierung speichern](/docs/services/CloudLogAnalysis/kibana/kibana_visualizations.html#save2) | Sie können Visualisierungen zur späteren Wiederverwendung speichern. |
+| [Neue Visualisierung erstellen](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-kibana_visualizations#create) | Sie können Visualisierungen aus einer Suche erstellen, die Sie auf der Seite *Discover* definieren und speichern, oder aus einer neuen Abfrage, die Sie auf der Seite *Visualize* definieren. |
+| [Visualisierung löschen](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-kibana_visualizations#delete) | Nicht benötigte Visualisierungen können gelöscht werden. |
+| [Visualisierung exportieren](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-kibana_visualizations#export) | Sie können eine Visualisierung als JSON-Datei exportieren.  |
+| [Visualisierung importieren](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-kibana_visualizations#import1) | Sie können eine Visualisierung als JSON-Datei importieren.  |
+| [Visualisierung laden](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-kibana_visualizations#reload2) | Sie können eine Visualisierung hochladen, um ihre Daten zu aktualisieren, um Änderungen vorzunehmen oder um die Daten zu analysieren. |
+| [Visualisierung speichern](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-kibana_visualizations#save2) | Sie können Visualisierungen zur späteren Wiederverwendung speichern. |
 {: caption="Tabelle 2. Tasks für die Arbeit mit Visualisierungen" caption-side="top"}
 
 
@@ -81,7 +81,7 @@ Führen Sie die folgenden Schritte aus, um eine Visualisierung über die Seite '
 
     * Bei Auswahl von **From a New Search, Select Index** definieren Sie eine neue Abfrage. Die Abfrage wird verwendet, um das Subset der Daten zu definieren, die von der Visualisierung abgerufen und verwendet werden.
 
-        Weitere Informationen finden Sie unter [Protokolle durch Definieren angepasster Abfragen filtern](/docs/services/CloudLogAnalysis/kibana/define_search.html#define_search).
+        Weitere Informationen finden Sie unter [Protokolle durch Definieren angepasster Abfragen filtern](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-define_search#define_search).
 
 Weitere Informationen zu Kibana finden Sie in der Veröffentlichung [Kibana User Guide ![Symbol für externen Link](../../../icons/launch-glyph.svg "Symbol für externen Link")](https://www.elastic.co/guide/en/kibana/5.1/index.html){: new_window}.
 

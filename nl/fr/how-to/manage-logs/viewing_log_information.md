@@ -25,7 +25,7 @@ subcollection: cloudloganalysis
 # Affichage des informations sur le journal
 {: #viewing_log_status}
 
-Utilisez la commande [cf logging status](/docs/services/CloudLogAnalysis/reference/logging_cli.html#status1) pour obtenir des informations sur les journaux qui sont collectés et stockés dans Collecte des journaux.
+Utilisez la commande [cf logging status](/docs/services/CloudLogAnalysis/reference?topic=cloudloganalysis-logging_cli#status1) pour obtenir des informations sur les journaux qui sont collectés et stockés dans Collecte des journaux.
 {:shortdesc}
 
 ## Obtention d'informations sur les journaux durant une période définie
@@ -44,7 +44,7 @@ Procédez comme suit pour obtenir des informations sur les journaux :
 
 1. Connectez-vous à une région, une organisation et un espace dans {{site.data.keyword.Bluemix_notm}}. 
 
-    Pour plus d'informations, voir [Comment se connecter à {{site.data.keyword.Bluemix_notm}} ?](/docs/services/CloudLogAnalysis/qa/cli_qa.html#login).
+    Pour plus d'informations, voir [Comment se connecter à {{site.data.keyword.Bluemix_notm}} ?](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#login)
     
 2. Exécutez la commande *status*.
 
@@ -82,7 +82,7 @@ Procédez comme suit pour obtenir des informations sur un type de journal pour u
 
 1. Connectez-vous à une région, une organisation et un espace dans {{site.data.keyword.Bluemix_notm}}. 
 
-    Pour plus d'informations, voir [Comment se connecter à {{site.data.keyword.Bluemix_notm}} ?](/docs/services/CloudLogAnalysis/qa/cli_qa.html#login).
+    Pour plus d'informations, voir [Comment se connecter à {{site.data.keyword.Bluemix_notm}} ?](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#login)
     
 2. Exécutez la commande *status*.
 
@@ -126,7 +126,7 @@ Procédez comme suit pour obtenir des informations de compte sur les journaux :
 
 1. Connectez-vous à une région, une organisation et un espace dans {{site.data.keyword.Bluemix_notm}}. 
 
-    Pour plus d'informations, voir [Comment se connecter à {{site.data.keyword.Bluemix_notm}} ?](/docs/services/CloudLogAnalysis/qa/cli_qa.html#login).
+    Pour plus d'informations, voir [Comment se connecter à {{site.data.keyword.Bluemix_notm}} ?](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#login)
     
 2. Exécutez la commande *status*.
 

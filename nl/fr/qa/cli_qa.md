@@ -29,11 +29,11 @@ subcollection: cloudloganalysis
 Vous trouverez ci-après les réponses aux questions fréquentes concernant l'utilisation de l'interface de ligne de commande {{site.data.keyword.Bluemix}} avec le service {{site.data.keyword.loganalysisshort}}. 
 {:shortdesc}
 
-* [Comment se connecter à {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/qa/cli_qa.html#login)
-* [Comment installer l'interface de ligne de commande {{site.data.keyword.Bluemix_notm}} ?](/docs/services/CloudLogAnalysis/qa/cli_qa.html#install_bmx_cli)
-* [Comment obtenir l'identificateur global unique d'un compte ?](/docs/services/CloudLogAnalysis/qa/cli_qa.html#account_guid)
-* [Comment obtenir l'identificateur global unique d'une organisation ?](/docs/services/CloudLogAnalysis/qa/cli_qa.html#org_guid)
-* [Comment obtenir l'identificateur global unique d'un espace ?](/docs/services/CloudLogAnalysis/qa/cli_qa.html#space_guid)
+* [Comment se connecter à {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#login)
+* [Comment installer l'interface de ligne de commande {{site.data.keyword.Bluemix_notm}} ?](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#install_bmx_cli)
+* [Comment obtenir l'identificateur global unique d'un compte ?](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#account_guid)
+* [Comment obtenir l'identificateur global unique d'une organisation ?](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#org_guid)
+* [Comment obtenir l'identificateur global unique d'un espace ?](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#space_guid)
 
 ## Comment se connecter à IBM Cloud ?
 {: #login}
@@ -62,7 +62,7 @@ Où *Endpoint* est l'URL permettant de se connecter à {{site.data.keyword.Bluem
 	  <td>api.au-syd.bluemix.net</td>
 	</tr>
 	<tr>
-	  <td>Sud des États-Unis</td>
+	  <td>Sud des Etats-Unis</td>
 	  <td>api.ng.bluemix.net</td>
 	</tr>
 	<tr>
@@ -71,7 +71,7 @@ Où *Endpoint* est l'URL permettant de se connecter à {{site.data.keyword.Bluem
 	</tr>
 </table>
 
-Par exemple, pour vous connecter à la région du sud des États-Unis, exécutez la commande suivante :
+Par exemple, pour vous connecter à la région du sud des Etats-Unis, exécutez la commande suivante :
 	
 ```
 ibmcloud login -a https://api.ng.bluemix.net
@@ -97,7 +97,7 @@ où
 ## Comment installer l'interface de ligne de commande IBM Cloud ?
 {: #install_bmx_cli}
 
-Voir [Téléchargement et installation de l'interface de ligne de commande {{site.data.keyword.Bluemix}}](/docs/cli/index.html#overview).
+Voir [Téléchargement et installation de l'interface de ligne de commande {{site.data.keyword.Bluemix}}](/docs/cli?topic=cloud-cli-ibmcloud-cli#overview).
 
 
 
@@ -108,7 +108,7 @@ Procédez comme suit pour obtenir l'identificateur global unique d'un compte :
 	
 1. Connectez-vous à une région dans {{site.data.keyword.Bluemix_notm}}. 
 
-    Pour plus d'informations, voir [Comment se connecter à {{site.data.keyword.Bluemix_notm}} ?](/docs/services/CloudLogAnalysis/qa/cli_qa.html#login).
+    Pour plus d'informations, voir [Comment se connecter à {{site.data.keyword.Bluemix_notm}} ?](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#login)
 	
 2. Exécutez la commande `ibmcloud iam accounts` pour obtenir l'identificateur global unique d'un compte.
 
@@ -137,7 +137,7 @@ Procédez comme suit pour obtenir l'identificateur global unique d'une organisat
 	
 1. Connectez-vous à une région, une organisation et un espace dans {{site.data.keyword.Bluemix_notm}}. 
 
-    Pour plus d'informations, voir [Comment se connecter à {{site.data.keyword.Bluemix_notm}} ?](/docs/services/CloudLogAnalysis/qa/cli_qa.html#login).
+    Pour plus d'informations, voir [Comment se connecter à {{site.data.keyword.Bluemix_notm}} ?](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#login)
 
 2. Exécutez la commande `ibmcloud iam org` pour obtenir l'identificateur global unique de l'organisation. 
 
@@ -157,7 +157,7 @@ Procédez comme suit pour obtenir l'identificateur global unique d'un espace :
 	
 1. Connectez-vous à une région, une organisation et un espace dans {{site.data.keyword.Bluemix_notm}}. 
 
-    Pour plus d'informations, voir [Comment se connecter à {{site.data.keyword.Bluemix_notm}} ?](/docs/services/CloudLogAnalysis/qa/cli_qa.html#login).
+    Pour plus d'informations, voir [Comment se connecter à {{site.data.keyword.Bluemix_notm}} ?](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#login)
 	
 2. Exécutez la commande `ibmcloud iam space` pour obtenir l'identificateur global unique de l'espace. 
 

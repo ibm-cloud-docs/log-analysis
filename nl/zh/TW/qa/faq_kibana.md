@@ -29,12 +29,12 @@ subcollection: cloudloganalysis
 以下是關於使用 {{site.data.keyword.Bluemix}} 記載功能的常見問題與解答。
 {:shortdesc}
 
-* [如果在 Kibana 的「探索」頁面中看不到資料，我該怎麼辦](/docs/services/CloudLogAnalysis/qa/faq_kibana.html#logging_qa_no_data_discover_kibana)
-* [如果發生鑑別異常狀況，我該怎麼辦](/docs/services/CloudLogAnalysis/qa/faq_kibana.html#logging_qa_no_data_dashboard_kibana)
-* [為什麼我會在 Kibana「探索」頁面的欄位旁看到 ? 符號](/docs/services/CloudLogAnalysis/qa/faq_kibana.html#logging_qa_kibana_question)
-* [變更預設索引型樣時發生 403 錯誤](/docs/services/CloudLogAnalysis/qa/faq_kibana.html#error_403)
-* [簡短 URL 沒有作用](/docs/services/CloudLogAnalysis/qa/faq_kibana.html#short_url)
-* [我可以在 Bluemix 中搜尋我的帳戶日誌嗎？](/docs/services/CloudLogAnalysis/qa/faq_kibana.html#acc_logs_1)
+* [如果在 Kibana 的「探索」頁面中看不到資料，我該怎麼辦](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-faq_kibana#logging_qa_no_data_discover_kibana)
+* [如果發生鑑別異常狀況，我該怎麼辦](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-faq_kibana#logging_qa_no_data_dashboard_kibana)
+* [為什麼我會在 Kibana「探索」頁面的欄位旁看到 ? 符號](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-faq_kibana#logging_qa_kibana_question)
+* [變更預設索引型樣時發生 403 錯誤](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-faq_kibana#error_403)
+* [簡短 URL 沒有作用](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-faq_kibana#short_url)
+* [我可以在 Bluemix 中搜尋我的帳戶日誌嗎？](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-faq_kibana#acc_logs_1)
 
 
 ## 如果在 Kibana 的「探索」頁面中看不到資料，我該怎麼辦
@@ -51,7 +51,7 @@ subcollection: cloudloganalysis
 
     **附註**：依預設，在 {{site.data.keyword.Bluemix_notm}} 中，*時間選取器* 設定為顯示過去 15 分鐘的資料。
 
-    如需如何設定*時間選取器* 的相關資訊，請參閱[設定時間過濾器](/docs/services/CloudLogAnalysis/kibana/filter_logs.html#set_time_filter1)。
+    如需如何設定*時間選取器* 的相關資訊，請參閱[設定時間過濾器](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-filter_logs#set_time_filter1)。
        
 2. 按一下位於*探索* 頁面搜尋列中的放大鏡。頁面資料會根據預設搜尋查詢來重新整理。
 
@@ -59,7 +59,7 @@ subcollection: cloudloganalysis
 
     **附註**：依預設，在 {{site.data.keyword.Bluemix_notm}} 中，*自動重新整理* 週期設定為**關閉**。
     
-    如需如何啟用此功能的相關資訊，請參閱[自動重新整理資料](/docs/services/CloudLogAnalysis/kibana/analize_logs_interactively.html#discover_view_refresh_interval)。
+    如需如何啟用此功能的相關資訊，請參閱[自動重新整理資料](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-analize_logs_interactively#discover_view_refresh_interval)。
 
 
 
@@ -90,7 +90,7 @@ subcollection: cloudloganalysis
 ## 為什麼我會在 Kibana「探索」頁面的欄位旁看到 ? 符號
 {: #logging_qa_kibana_question}
 
-當您在 Kibana 中開啟「探索」頁面時，可能會在可用欄位區段所列的欄位旁看到問號 `?`，而不是字元 `t`。當您重新載入欄位清單時，會分析欄位類型，並將問號 `?` 取代為字元 `t`。如需相關資訊，請參閱[重新載入欄位清單](/docs/services/CloudLogAnalysis/kibana/analize_logs_interactively.html#discover_view_reload_fields)。
+當您在 Kibana 中開啟「探索」頁面時，可能會在可用欄位區段所列的欄位旁看到問號 `?`，而不是字元 `t`。當您重新載入欄位清單時，會分析欄位類型，並將問號 `?` 取代為字元 `t`。如需相關資訊，請參閱[重新載入欄位清單](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-analize_logs_interactively#discover_view_reload_fields)。
 
 
 ## 變更預設索引型樣時發生 403 錯誤
@@ -112,7 +112,7 @@ subcollection: cloudloganalysis
 
 請完成下列步驟，以查看帳戶日誌：
 
-1. [啟動 Kibana](/docs/services/CloudLogAnalysis/kibana/launch.html#launch_Kibana_from_browser)。例如，針對美國南部地區，請使用 URL `https://logging.ng.bluemix.net`。
+1. [啟動 Kibana](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-launch#launch_Kibana_from_browser)。例如，針對美國南部地區，請使用 URL `https://logging.ng.bluemix.net`。
 
 2. 選取**檢視 AccountName 帳戶日誌**選項，以顯示帳戶日誌。*AccountName* 是帳戶的名稱。
 

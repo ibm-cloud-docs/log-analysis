@@ -25,7 +25,7 @@ subcollection: cloudloganalysis
 # 로그 정보 보기
 {: #viewing_log_status}
 
-[cf logging status](/docs/services/CloudLogAnalysis/reference/logging_cli.html#status1) 명령을 사용하여 로그 콜렉션에 수집해서 저장된 로그에 대한 정보를 얻습니다.
+[cf logging status](/docs/services/CloudLogAnalysis/reference?topic=cloudloganalysis-logging_cli#status1) 명령을 사용하여 로그 콜렉션에 수집해서 저장된 로그에 대한 정보를 얻습니다.
 {:shortdesc}
 
 ## 일정 기간 동안의 로그에 대한 정보 얻기
@@ -43,7 +43,7 @@ subcollection: cloudloganalysis
 
 1. {{site.data.keyword.Bluemix_notm}}의 지역, 조직 및 영역에 로그인하십시오. 
 
-    자세한 정보는 [{{site.data.keyword.Bluemix_notm}}에 로그인하는 방법](/docs/services/CloudLogAnalysis/qa/cli_qa.html#login)을 참조하십시오.
+    자세한 정보는 [{{site.data.keyword.Bluemix_notm}}에 로그인하는 방법](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#login)을 참조하십시오.
     
 2. *status* 명령을 실행하십시오.
 
@@ -80,7 +80,7 @@ subcollection: cloudloganalysis
 
 1. {{site.data.keyword.Bluemix_notm}}의 지역, 조직 및 영역에 로그인하십시오. 
 
-    자세한 정보는 [{{site.data.keyword.Bluemix_notm}}에 로그인하는 방법](/docs/services/CloudLogAnalysis/qa/cli_qa.html#login)을 참조하십시오.
+    자세한 정보는 [{{site.data.keyword.Bluemix_notm}}에 로그인하는 방법](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#login)을 참조하십시오.
     
 2. *status* 명령을 실행하십시오.
 
@@ -122,7 +122,7 @@ subcollection: cloudloganalysis
 
 1. {{site.data.keyword.Bluemix_notm}}의 지역, 조직 및 영역에 로그인하십시오. 
 
-    자세한 정보는 [{{site.data.keyword.Bluemix_notm}}에 로그인하는 방법](/docs/services/CloudLogAnalysis/qa/cli_qa.html#login)을 참조하십시오.
+    자세한 정보는 [{{site.data.keyword.Bluemix_notm}}에 로그인하는 방법](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#login)을 참조하십시오.
     
 2. *status* 명령을 실행하십시오.
 

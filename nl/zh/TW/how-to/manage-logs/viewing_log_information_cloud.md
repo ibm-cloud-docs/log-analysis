@@ -25,7 +25,7 @@ subcollection: cloudloganalysis
 # 檢視日誌資訊
 {: #viewing_log_status1}
 
-請使用 [ibmcloud logging log-show](/docs/services/CloudLogAnalysis/reference/log_analysis_cli_cloud.html#status) 指令，以取得「日誌收集」中所收集及儲存之日誌的相關資訊。您可以取得下列相關資訊：大小、記錄數目、日誌類型，以及日誌是否可用於 Kibana 分析。
+請使用 [ibmcloud logging log-show](/docs/services/CloudLogAnalysis/reference?topic=cloudloganalysis-log_analysis_cli#status) 指令，以取得「日誌收集」中所收集及儲存之日誌的相關資訊。您可以取得下列相關資訊：大小、記錄數目、日誌類型，以及日誌是否可用於 Kibana 分析。
 {:shortdesc}
 
 ## 取得一段時間內的日誌相關資訊
@@ -41,7 +41,7 @@ subcollection: cloudloganalysis
 
 1. 登入 {{site.data.keyword.Bluemix_notm}} 中的地區、組織及空間。 
 
-    如需相關資訊，請參閱[如何登入 {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/qa/cli_qa.html#login)。
+    如需相關資訊，請參閱[如何登入 {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#login)。
     
 2. 執行下列指令：
 
@@ -77,7 +77,7 @@ subcollection: cloudloganalysis
 
 1. 登入 {{site.data.keyword.Bluemix_notm}} 中的地區、組織及空間。 
 
-    如需相關資訊，請參閱[如何登入 {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/qa/cli_qa.html#login)。
+    如需相關資訊，請參閱[如何登入 {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#login)。
     
 2. 執行下列指令：
 
@@ -118,11 +118,11 @@ subcollection: cloudloganalysis
 
 1. 登入 {{site.data.keyword.Bluemix_notm}} 中的地區、組織及空間。 
 
-    如需相關資訊，請參閱[如何登入 {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/qa/cli_qa.html#login)。
+    如需相關資訊，請參閱[如何登入 {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#login)。
 	
 2. 取得帳戶 ID。
 
-    如需相關資訊，請參閱[如何取得帳戶的 GUID](/docs/services/CloudLogAnalysis/qa/cli_qa.html#account_guid)。
+    如需相關資訊，請參閱[如何取得帳戶的 GUID](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#account_guid)。
     
 3. 執行下列指令：
 
@@ -164,11 +164,11 @@ subcollection: cloudloganalysis
 
 1. 登入 {{site.data.keyword.Bluemix_notm}} 中的地區、組織及空間。 
 
-    如需相關資訊，請參閱[如何登入 {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/qa/cli_qa.html#login)。
+    如需相關資訊，請參閱[如何登入 {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#login)。
 	
 2. 取得帳戶 ID。
 
-    如需相關資訊，請參閱[如何取得組織的 GUID](/docs/services/CloudLogAnalysis/qa/cli_qa.html#org_guid)。
+    如需相關資訊，請參閱[如何取得組織的 GUID](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#org_guid)。
     
 3. 執行下列指令：
 

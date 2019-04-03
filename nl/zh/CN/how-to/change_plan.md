@@ -58,7 +58,7 @@ subcollection: cloudloganalysis
 
 1. 登录到 {{site.data.keyword.Bluemix_notm}} 中的区域、组织和空间。 
 
-    有关更多信息，请参阅[如何登录到 {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/qa/cli_qa.html#login)。
+    有关更多信息，请参阅[如何登录到 {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#login)。
 	
 2. 运行 `ibmcloud service list` 命令，以检查当前套餐，并从空间中可用的服务的列表中获取 {{site.data.keyword.loganalysisshort}} 服务名称。 
 

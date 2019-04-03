@@ -61,13 +61,13 @@ Por exemplo, é desse modo que o Kibana pode ser usado para mostrar informaçõe
 
     É possível ativar o Kibana para que os dados que você vê agreguem logs de serviços em um espaço fornecido.
 	
-	Para obter mais informações, veja [Navegando para o Kibana por meio do painel do serviço Log Analysis](/docs/services/CloudLogAnalysis/kibana/launch.html#launch_Kibana_from_log_analysis).
+	Para obter mais informações, veja [Navegando para o Kibana por meio do painel do serviço Log Analysis](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-launch#launch_Kibana_from_log_analysis).
 
 * No {{site.data.keyword.Bluemix_notm}}
 
-    É possível ativar seus logs específicos do app CF no Kibana dentro do contexto desse App específico. Para obter mais informações, veja [Navegando para o Kibana por meio do painel de um app CF](/docs/services/CloudLogAnalysis/kibana/launch.html#launch_Kibana_from_cf_app).
+    É possível ativar seus logs específicos do app CF no Kibana dentro do contexto desse App específico. Para obter mais informações, veja [Navegando para o Kibana por meio do painel de um app CF](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-launch#launch_Kibana_from_cf_app).
     
-    É possível ativar seus logs específicos do contêiner do Docker dentro do contexto desse contêiner específico. Esse recurso se aplica somente aos contêineres que são implementados na infraestrutura gerenciada pelo {{site.data.keyword.Bluemix_notm}}. Para obter mais informações, veja [Navegando para o Kibana por meio do painel de um contêiner](/docs/services/CloudLogAnalysis/kibana/launch.html#launch_Kibana_for_containers).
+    É possível ativar seus logs específicos do contêiner do Docker dentro do contexto desse contêiner específico. Esse recurso se aplica somente aos contêineres que são implementados na infraestrutura gerenciada pelo {{site.data.keyword.Bluemix_notm}}. Para obter mais informações, veja [Navegando para o Kibana por meio do painel de um contêiner](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-launch#launch_Kibana_for_containers).
     
     Para apps CF, a consulta que é usada para filtrar os dados que estão disponíveis para análise no Kibana recupera entradas de log para o aplicativo Cloud Foundry. As informações de log que o Kibana exibe estão todas relacionadas a um único aplicativo Cloud Foundry e a todas as suas instâncias. 
     
@@ -82,16 +82,16 @@ Por exemplo, é desse modo que o Kibana pode ser usado para mostrar informaçõe
     A consulta que é usada para filtrar os dados que são exibidos no painel recupera entradas de log para um espaço na organização do
     {{site.data.keyword.Bluemix_notm}}. As informações de log que o Kibana exibe incluem registros para todos os recursos que estiverem implementados no espaço da organização do {{site.data.keyword.Bluemix_notm}} na qual você estiver com login efetuado. 
     
-    Para obter mais informações, veja [Navegando para o painel do Kibana de um navegador da web](/docs/services/CloudLogAnalysis/kibana/launch.html#launch_Kibana_from_browser).
+    Para obter mais informações, veja [Navegando para o painel do Kibana de um navegador da web](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-launch#launch_Kibana_from_browser).
     
     
 
 ## Analisar dados interativamente
 {: #analyze_discover}
 
-Na página Descobrir, é possível definir novas consultas de procura e aplicar filtros por consulta. Os dados do log são exibidos por meio de uma tabela e de um histograma. É possível usar essas visualizações para analisar os dados interativamente. Para obter mais informações, consulte [Analisando logs interativamente no Kibana](/docs/services/CloudLogAnalysis/kibana/analize_logs_interactively.html#analize_logs_interactively).
+Na página Descobrir, é possível definir novas consultas de procura e aplicar filtros por consulta. Os dados do log são exibidos por meio de uma tabela e de um histograma. É possível usar essas visualizações para analisar os dados interativamente. Para obter mais informações, consulte [Analisando logs interativamente no Kibana](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-analize_logs_interactively#analize_logs_interactively).
 
-Também é possível configurar filtros de campos de log, por exemplo, message_type e instance_ID, e configurar um período de tempo. É possível ativar ou desativar dinamicamente esses filtros. A tabela e o histograma exibirão as entradas de log que atenderem aos critérios de consulta e de filtragem que você ativar. Para obter mais informações, consulte [Filtrando logs no Kibana](/docs/services/CloudLogAnalysis/kibana/filter_logs.html#filter_logs).
+Também é possível configurar filtros de campos de log, por exemplo, message_type e instance_ID, e configurar um período de tempo. É possível ativar ou desativar dinamicamente esses filtros. A tabela e o histograma exibirão as entradas de log que atenderem aos critérios de consulta e de filtragem que você ativar. Para obter mais informações, consulte [Filtrando logs no Kibana](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-filter_logs#filter_logs).
 
 ## Analisar dados por meio de uma visualização
 {: #analyze_visualize}
@@ -100,16 +100,16 @@ Na página Visualizar, é possível definir novas consultas de procura e visuali
 
 Para analisar os dados, é possível criar visualizações com base em uma procura nova ou existente. O Kibana inclui diferentes tipos de visualizações, como tabela, tendências e histograma, que podem ser usados para analisar as informações. O objetivo de cada visualização varia. Algumas visualizações são organizadas em linhas que fornecem os resultados de uma ou mais consultas. Outras visualizações exibem documentos ou informações customizadas. Os dados em uma visualização poderão ser corrigidos ou mudados, se uma consulta de procura for atualizada. É possível integrar a visualização em uma página da web ou compartilhá-la. 
 
-Para obter mais informações, consulte [Analisando logs usando visualizações](/docs/services/CloudLogAnalysis/kibana/kibana_visualizations.html#kibana_visualizations).
+Para obter mais informações, consulte [Analisando logs usando visualizações](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-kibana_visualizations#kibana_visualizations).
 
 ## Analisar dados em um painel
 {: #analyze_dashboard}
 
 Na página Painel, é possível customizar, salvar e compartilhar múltiplas visualizações e procuras simultaneamente. 
 
-É possível incluir, remover e reorganizar as visualizações no painel. Para obter mais informações, consulte [Analisando logs no Kibana por meio de um painel](/docs/services/CloudLogAnalysis/kibana/analize_logs_dashboard.html#analize_logs_dashboard).
+É possível incluir, remover e reorganizar as visualizações no painel. Para obter mais informações, consulte [Analisando logs no Kibana por meio de um painel](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-analize_logs_dashboard#analize_logs_dashboard).
     
-Depois de customizar um painel do Kibana, é possível analisar os dados por meio de suas visualizações e salvá-los para reutilização futura. Para obter mais informações, veja [Salvando um painel do Kibana](/docs/services/CloudLogAnalysis/kibana/analize_logs_dashboard.html#save).
+Depois de customizar um painel do Kibana, é possível analisar os dados por meio de suas visualizações e salvá-los para reutilização futura. Para obter mais informações, veja [Salvando um painel do Kibana](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-analize_logs_dashboard#save).
 
 ## Customizar o Kibana
 {: #analyze_management}
@@ -121,7 +121,7 @@ Também é possível configurar e gerenciar recursos do Kibana na página **Gere
 * Salvar, excluir, exportar e importar procuras. 
 * Salvar, excluir, exportar e importar visualizações.
 * Salvar, excluir, exportar e importar painéis.
-* [Atualizar a lista de campos.](/docs/services/CloudLogAnalysis/kibana/analize_logs_interactively.html#discover_view_reload_fields)
+* [Atualizar a lista de campos.](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-analize_logs_interactively#discover_view_reload_fields)
 
 ## Limitações
 {: #limitations}

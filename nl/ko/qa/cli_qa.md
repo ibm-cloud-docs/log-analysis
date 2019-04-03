@@ -29,11 +29,11 @@ subcollection: cloudloganalysis
 {{site.data.keyword.loganalysisshort}} 서비스에서 {{site.data.keyword.Bluemix}} CLI 사용에 대한 일반적인 질문에 대한 답변입니다. 
 {:shortdesc}
 
-* [{{site.data.keyword.Bluemix_notm}}에 로그인하는 방법](/docs/services/CloudLogAnalysis/qa/cli_qa.html#login)
-* [{{site.data.keyword.Bluemix_notm}} CLI를 설치하는 방법](/docs/services/CloudLogAnalysis/qa/cli_qa.html#install_bmx_cli)
-* [계정의 GUID를 가져오는 방법](/docs/services/CloudLogAnalysis/qa/cli_qa.html#account_guid)
-* [조직의 GUID를 가져오는 방법](/docs/services/CloudLogAnalysis/qa/cli_qa.html#org_guid)
-* [영역의 GUID를 가져오는 방법](/docs/services/CloudLogAnalysis/qa/cli_qa.html#space_guid)
+* [{{site.data.keyword.Bluemix_notm}}에 로그인하는 방법](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#login)
+* [{{site.data.keyword.Bluemix_notm}} CLI를 설치하는 방법](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#install_bmx_cli)
+* [계정의 GUID를 가져오는 방법](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#account_guid)
+* [조직의 GUID를 가져오는 방법](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#org_guid)
+* [영역의 GUID를 가져오는 방법](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#space_guid)
 
 ## IBM Cloud에 어떻게 로그인합니까?
 {: #login}
@@ -97,7 +97,7 @@ ibmcloud target -o OrgName -s SpaceName
 ## IBM Cloud CLI를 어떻게 설치합니까?
 {: #install_bmx_cli}
 
-[{{site.data.keyword.Bluemix}}CLI 다운로드 및 설치](/docs/cli/index.html#overview)를 참조하십시오.
+[{{site.data.keyword.Bluemix}}CLI 다운로드 및 설치](/docs/cli?topic=cloud-cli-ibmcloud-cli#overview)를 참조하십시오.
 
 
 
@@ -108,7 +108,7 @@ ibmcloud target -o OrgName -s SpaceName
 	
 1. {{site.data.keyword.Bluemix_notm}}의 지역에 로그인하십시오. 
 
-    자세한 정보는 [{{site.data.keyword.Bluemix_notm}}에 로그인하는 방법](/docs/services/CloudLogAnalysis/qa/cli_qa.html#login)을 참조하십시오.
+    자세한 정보는 [{{site.data.keyword.Bluemix_notm}}에 로그인하는 방법](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#login)을 참조하십시오.
 	
 2. `ibmcloud iam accounts` 명령을 실행하여 계정의 GUID를 가져오십시오.
 
@@ -137,7 +137,7 @@ ibmcloud target -o OrgName -s SpaceName
 	
 1. {{site.data.keyword.Bluemix_notm}}의 지역, 조직 및 영역에 로그인하십시오. 
 
-    자세한 정보는 [{{site.data.keyword.Bluemix_notm}}에 로그인하는 방법](/docs/services/CloudLogAnalysis/qa/cli_qa.html#login)을 참조하십시오.
+    자세한 정보는 [{{site.data.keyword.Bluemix_notm}}에 로그인하는 방법](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#login)을 참조하십시오.
 
 2. `ibmcloud iam org` 명령을 실행하여 조직 GUID를 가져오십시오. 
 
@@ -157,7 +157,7 @@ ibmcloud target -o OrgName -s SpaceName
 	
 1. {{site.data.keyword.Bluemix_notm}}의 지역, 조직 및 영역에 로그인하십시오. 
 
-    자세한 정보는 [{{site.data.keyword.Bluemix_notm}}에 로그인하는 방법](/docs/services/CloudLogAnalysis/qa/cli_qa.html#login)을 참조하십시오.
+    자세한 정보는 [{{site.data.keyword.Bluemix_notm}}에 로그인하는 방법](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#login)을 참조하십시오.
 	
 2. `ibmcloud iam space` 명령을 실행하여 영역 GUID를 가져오십시오. 
 

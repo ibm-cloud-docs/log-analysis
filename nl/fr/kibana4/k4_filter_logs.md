@@ -34,15 +34,15 @@ Dans la page Discover, vous pouvez définir de nouvelles requêtes de recherche 
 
 Lorsque vous définissez une nouvelle recherche, enregistrez-la pour pouvoir la réutiliser dans une requête future dans la page Discover ou pour créer des visualisations dans des tableaux de bord personnalisés. 
 
-Lorsque vous lancez une nouvelle recherche, l'histogramme, le tableau et la section Fields list sont mis à jour automatiquement en affichant les résultats de la recherche. Pour déterminer quelles données sont affichées, voir [Identification des données affichées dans la page Discover](/docs/services/CloudLogAnalysis/kibana4/logging_kibana_analize_logs_interactively.html#k4_identify_data).
+Lorsque vous lancez une nouvelle recherche, l'histogramme, le tableau et la section Fields list sont mis à jour automatiquement en affichant les résultats de la recherche. Pour déterminer quelles données sont affichées, voir [Identification des données affichées dans la page Discover](/docs/services/CloudLogAnalysis/kibana4?topic=cloudloganalysis-kibana_analize_logs_interactively#k4_identify_data).
 
 Vous pouvez créer des recherches personnalisées pour filtrer vos journaux. La liste suivante décrit des scénarios de filtrage des données de vos journaux :
 
-* Vous pouvez rechercher dans vos journaux des entrées contenant un texte spécifique dans la valeur d'une zone. Pour plus d'informations, voir [Filtrage de vos journaux d'après un texte spécifique dans la valeur d'une zone](/docs/services/CloudLogAnalysis/kibana4/k4_filter_logs.html#k4_filter_logs_spec_text).
+* Vous pouvez rechercher dans vos journaux des entrées contenant un texte spécifique dans la valeur d'une zone. Pour plus d'informations, voir [Filtrage de vos journaux d'après un texte spécifique dans la valeur d'une zone](/docs/services/CloudLogAnalysis/kibana4?topic=cloudloganalysis-k4_filter_logs#k4_filter_logs_spec_text).
  
-* Vous pouvez rechercher dans votre journal une valeur de zone spécifique ou exclure les entrées de journal contenant une valeur de zone spécifique. Pour plus d'informations, voir [Filtrage de vos journaux d'après une valeur de zone spécifique](/docs/services/CloudLogAnalysis/kibana4/k4_filter_logs.html#k4_filter_logs_spec_field).
+* Vous pouvez rechercher dans votre journal une valeur de zone spécifique ou exclure les entrées de journal contenant une valeur de zone spécifique. Pour plus d'informations, voir [Filtrage de vos journaux d'après une valeur de zone spécifique](/docs/services/CloudLogAnalysis/kibana4?topic=cloudloganalysis-k4_filter_logs#k4_filter_logs_spec_field).
  
-* Vous pouvez filtrer vos journaux afin d'afficher les entrées correspondant à une période donnée. Pour plus d'informations, voir [Définition d'un filtre temporel](/docs/services/CloudLogAnalysis/kibana4/k4_filter_logs.html#set_time_filter1).
+* Vous pouvez filtrer vos journaux afin d'afficher les entrées correspondant à une période donnée. Pour plus d'informations, voir [Définition d'un filtre temporel](/docs/services/CloudLogAnalysis/kibana4?topic=cloudloganalysis-k4_filter_logs#set_time_filter1).
      
 
 ## Ajout d'un filtre pour une valeur non répertoriée dans la section *Fields list*
@@ -52,7 +52,7 @@ Pour ajouter un filtre pour une valeur ne figurant pas dans la section *Field li
 
 Pour ajouter un filtre pour une valeur ne figurant pas dans la section *Fields list*, procédez comme suit :
 
-1. Examinez la page Discover de Kibana pour identifier le sous-ensemble de données qu'elle affiche. Pour plus d'informations, voir  [Identification des données affichées dans votre page Kibana Discover](/docs/services/CloudLogAnalysis/kibana4/logging_kibana_analize_logs_interactively.html#k4_identify_data).
+1. Examinez la page Discover de Kibana pour identifier le sous-ensemble de données qu'elle affiche. Pour plus d'informations, voir [Identification des données affichées dans votre page Kibana Discover](/docs/services/CloudLogAnalysis/kibana4?topic=cloudloganalysis-kibana_analize_logs_interactively#k4_identify_data).
 
     L'illustration ci-dessous, par exemple, présente les valeurs des instances pour une application CF dans la section *Fields list* (Liste des zones). 
     
@@ -91,13 +91,13 @@ Vous pouvez rechercher des entrées contenant une valeur de zone spécifique.
 
 Pour rechercher des entrées contenant une valeur de zone spécifique, procédez comme suit :
 
-1. Examinez la page Discover de Kibana pour identifier le sous-ensemble de données qu'elle affiche. Pour plus d'informations, voir  [Identification des données affichées dans votre page Kibana Discover](/docs/services/CloudLogAnalysis/kibana4/logging_kibana_analize_logs_interactively.html#k4_identify_data).
+1. Examinez la page Discover de Kibana pour identifier le sous-ensemble de données qu'elle affiche. Pour plus d'informations, voir [Identification des données affichées dans votre page Kibana Discover](/docs/services/CloudLogAnalysis/kibana4?topic=cloudloganalysis-kibana_analize_logs_interactively#k4_identify_data).
 
 2. Dans la zone *Field List*, identifiez celle pour laquelle vous voulez définir un filtre et cliquez dessus.
 
     5 valeurs au maximum sont affichées pour la zone. Chaque valeur comporte deux boutons en forme de loupe. 
     
-    Si vous ne voyez pas la valeur recherchée, voir [Ajout d'un filtre pour une valeur non répertoriée dans la liste des zones](/docs/services/CloudLogAnalysis/kibana4/k4_filter_logs.html#k4_add_filter_out_value).
+    Si vous ne voyez pas la valeur recherchée, voir [Ajout d'un filtre pour une valeur non répertoriée dans la liste des zones](/docs/services/CloudLogAnalysis/kibana4?topic=cloudloganalysis-k4_filter_logs#k4_add_filter_out_value).
 
 3. Pour ajouter un filtre recherchant des entrées avec une valeur de zone spécifique, sélectionnez la loupe ![Loupe en mode inclusif](images/k4_include_field_icon.jpg "Loupe en mode inclusif") en regard de cette valeur.
 
@@ -150,7 +150,7 @@ Pour rechercher des entrées contenant une valeur de zone spécifique, procédez
 
 Pour rechercher des entrées de journal se rapportant à une source de journal spécifique, procédez comme suit :
 
-1. Examinez la page Discover de Kibana pour identifier le sous-ensemble de données qu'elle affiche. Pour plus d'informations, voir  [Identification des données affichées dans votre page Kibana Discover](/docs/services/CloudLogAnalysis/kibana4/logging_kibana_analize_logs_interactively.html#k4_identify_data).
+1. Examinez la page Discover de Kibana pour identifier le sous-ensemble de données qu'elle affiche. Pour plus d'informations, voir [Identification des données affichées dans votre page Kibana Discover](/docs/services/CloudLogAnalysis/kibana4?topic=cloudloganalysis-kibana_analize_logs_interactively#k4_identify_data).
 
 2. Dans la section *Field List*, sélectionnez la zone **source_id**.
 
@@ -158,7 +158,7 @@ Pour rechercher des entrées de journal se rapportant à une source de journal s
 
 3. Pour ajouter un filtre recherchant des entrées incluant une valeur source_id spécifique, sélectionnez la loupe ![Bouton Loupe en mode inclusif](images/k4_include_field_icon.jpg "Bouton Loupe en mode inclusif") en regard de cette valeur.
 
-    Pour consulter la liste des sources de journal disponibles pour les applications CF, voir [Sources de journal pour les applications CF](/docs/services/CloudLogAnalysis/cfapps/logging_cf_apps.html#cf_apps_log_sources_diego).
+    Pour consulter la liste des sources de journal disponibles pour les applications CF, voir [Sources de journal pour les applications CF](/docs/services/CloudLogAnalysis/cfapps?topic=cloudloganalysis-logging_cf_apps#cf_apps_log_sources_diego).
 
     Par exemple, pour ajouter un filtre renvoyant les entrées de journal sur le démarrage, l'arrêt ou les pannes d'une application CF, sélectionnez la loupe ![Loupe en mode inclusif](images/k4_include_field_icon.jpg "Loupe en mode inclusif") en regard de la valeur *CELL* dans la section *Fields list* (Liste des zones). L'illustration suivante présente le filtre avec activation de la valeur source_id *CELL*.
     
@@ -176,7 +176,7 @@ Pour rechercher des entrées de journal se rapportant à une source de journal s
 
 Pour rechercher des entrées incluant un type de journal spécifique, procédez comme suit :
 
-1. Examinez la page Discover de Kibana pour identifier le sous-ensemble de données qu'elle affiche. Pour plus d'informations, voir  [Identification des données affichées dans votre page Kibana Discover](/docs/services/CloudLogAnalysis/kibana4/logging_kibana_analize_logs_interactively.html#k4_identify_data).
+1. Examinez la page Discover de Kibana pour identifier le sous-ensemble de données qu'elle affiche. Pour plus d'informations, voir [Identification des données affichées dans votre page Kibana Discover](/docs/services/CloudLogAnalysis/kibana4?topic=cloudloganalysis-kibana_analize_logs_interactively#k4_identify_data).
 
 2. Dans la section *Field List*, sélectionnez la zone **type**.
 
@@ -202,7 +202,7 @@ Pour rechercher des entrées incluant un type de journal spécifique, procédez 
 
 Pour afficher et filtrer vos journaux par ID d'instance dans le tableau de bord Kibana, procédez comme suit :
 
-1. Examinez la page Discover de Kibana pour identifier le sous-ensemble de données qu'elle affiche. Pour plus d'informations, voir  [Identification des données affichées dans votre page Kibana Discover](/docs/services/CloudLogAnalysis/kibana4/logging_kibana_analize_logs_interactively.html#k4_identify_data).
+1. Examinez la page Discover de Kibana pour identifier le sous-ensemble de données qu'elle affiche. Pour plus d'informations, voir [Identification des données affichées dans votre page Kibana Discover](/docs/services/CloudLogAnalysis/kibana4?topic=cloudloganalysis-kibana_analize_logs_interactively#k4_identify_data).
 
 2. Dans la liste des zones (*Field List*), sélectionnez l'une des zones suivantes pour rechercher un ID d'instance spécifique :
 
@@ -231,7 +231,7 @@ Pour afficher et filtrer vos journaux par ID d'instance dans le tableau de bord 
 
 Pour rechercher des entrées incluant un type de message spécifique, procédez comme suit :
 
-1. Examinez la page Discover de Kibana pour identifier le sous-ensemble de données qu'elle affiche. Pour plus d'informations, voir  [Identification des données affichées dans votre page Kibana Discover](/docs/services/CloudLogAnalysis/kibana4/logging_kibana_analize_logs_interactively.html#k4_identify_data).
+1. Examinez la page Discover de Kibana pour identifier le sous-ensemble de données qu'elle affiche. Pour plus d'informations, voir [Identification des données affichées dans votre page Kibana Discover](/docs/services/CloudLogAnalysis/kibana4?topic=cloudloganalysis-kibana_analize_logs_interactively#k4_identify_data).
 
 2. Dans la section *Field List*, sélectionnez la zone **message_type**.
 
@@ -263,11 +263,11 @@ Lorsque Elasticsearch analyse la valeur d'une zone de type chaîne, il décompos
     
 Pour rechercher des entrées contenant un texte spécifique dans une valeur de zone, procédez comme suit :
 
-1. Examinez la page Discover de Kibana pour identifier le sous-ensemble de données qu'elle affiche. Pour plus d'informations, voir  [Identification des données affichées dans votre page Kibana Discover](/docs/services/CloudLogAnalysis/kibana4/logging_kibana_analize_logs_interactively.html#k4_identify_data).
+1. Examinez la page Discover de Kibana pour identifier le sous-ensemble de données qu'elle affiche. Pour plus d'informations, voir [Identification des données affichées dans votre page Kibana Discover](/docs/services/CloudLogAnalysis/kibana4?topic=cloudloganalysis-kibana_analize_logs_interactively#k4_identify_data).
 
 2. Identifiez les zones analysées par défaut dans ElasticSearch.
 
-    Pour afficher la liste complète des zones analysées qui sont disponibles pour recherche et filtrage des données de journal, [rechargez la liste des zones](/docs/services/CloudLogAnalysis/kibana4/logging_kibana_analize_logs_interactively.html#kibana_discover_view_reload_fields). Ensuite, dans la liste des zones (*Fields list*) disponibles dans la page Discover, procédez comme suit :
+    Pour afficher la liste complète des zones analysées qui sont disponibles pour recherche et filtrage des données de journal, [rechargez la liste des zones](/docs/services/CloudLogAnalysis/kibana4?topic=cloudloganalysis-kibana_analize_logs_interactively#kibana_discover_view_reload_fields). Ensuite, dans la liste des zones (*Fields list*) disponibles dans la page Discover, procédez comme suit :
     
     1. Cliquez sur l'icône Configurer ![Icône Configurer](images/k4_configure_icon.jpg "Icône Configurer"). La section **Selected fields** est affichée et vous permet de filtrer les zones.
 

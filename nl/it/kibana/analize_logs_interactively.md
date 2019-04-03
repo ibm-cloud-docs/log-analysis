@@ -28,7 +28,7 @@ subcollection: cloudloganalysis
 Nella pagina Rileva, puoi visualizzare e analizzare i tuoi log interattivamente. Puoi definire le query di ricerca per filtrare i dati utilizzando il linguaggio di query Lucene. Per ogni query ricerca, puoi applicare i filtri per restringere le voci disponibili per l'analisi. Puoi salvare un ricerca per un riutilizzo futuro.
 {:shortdesc}
 
-In {{site.data.keyword.Bluemix_notm}}, per impostazione predefinita, la serie di dati visualizzata nella pagina Rileva quando avvii Kibana dalla IU {{site.data.keyword.Bluemix_notm}} è configurata per mostrare solo le voci per il contenitore o l'applicazione CF (Cloud Foundry) da cui hai avviato Kibana. Per ulteriori informazioni su come visualizzare quale sottoserie dei tuoi dati viene visualizzata dalla pagina Rileva, vedi [Identificazione dei dati visualizzati](/docs/services/CloudLogAnalysis/kibana/analize_logs_interactively.html#identify_data).
+In {{site.data.keyword.Bluemix_notm}}, per impostazione predefinita, la serie di dati visualizzata nella pagina Rileva quando avvii Kibana dalla IU {{site.data.keyword.Bluemix_notm}} è configurata per mostrare solo le voci per il contenitore o l'applicazione CF (Cloud Foundry) da cui hai avviato Kibana. Per ulteriori informazioni su come visualizzare quale sottoserie dei tuoi dati viene visualizzata dalla pagina Rileva, vedi [Identificazione dei dati visualizzati](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-analize_logs_interactively#identify_data).
 
 La seguente tabella mostra la query predefinita per ogni risorsa quando avvii Kibana da {{site.data.keyword.Bluemix_notm}}:
 
@@ -51,12 +51,12 @@ Puoi eseguire ognuna delle seguenti attività per personalizzare la tabella nell
 
 | Attività | Descrizione | 
 |------|-------------|
-| [Aggiungere una colonna di campo](/docs/services/CloudLogAnalysis/kibana/analize_logs_interactively.html#discover_add_fields_to_table) | Aggiungere i campi per visualizzare i dati specifici necessari per l'analisi invece del messaggio completo. |
-| [Aggiornare automaticamente i dati](/docs/services/CloudLogAnalysis/kibana/analize_logs_interactively.html#discover_view_refresh_interval) | Aggiornare i dati visualizzati nella tabella con le ultime voci. Per impostazione predefinita, l'aggiornamento è **DISATTIVO**. |
-| [Ordinare le voci per il valore di un campo indicizzato](/docs/services/CloudLogAnalysis/kibana/analize_logs_interactively.html#discover_sort_by_table) | Riordinare le voci per analisi più semplici. |
-| [Riorganizzare una colonna di campo](/docs/services/CloudLogAnalysis/kibana/analize_logs_interactively.html#discover_rearrange_fields_in_table) | Spostare la posizione di un campo nella tabella nella posizione che desideri. |
-| [Rimuovere una colonna di campo](/docs/services/CloudLogAnalysis/kibana/analize_logs_interactively.html#discover_remove_fields_from_table) | Rimuovere un campo quando non è più necessario nella vista delle analisi. |
-| [Visualizzare una voce](/docs/services/CloudLogAnalysis/kibana/analize_logs_interactively.html#discover_view_entry_in_table) | Espandere una voce nella tabella per visualizzare i dettagli della voce analizzata per il campo o come JSON. |
+| [Aggiungere una colonna di campo](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-analize_logs_interactively#discover_add_fields_to_table) | Aggiungere i campi per visualizzare i dati specifici necessari per l'analisi invece del messaggio completo. |
+| [Aggiornare automaticamente i dati](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-analize_logs_interactively#discover_view_refresh_interval) | Aggiornare i dati visualizzati nella tabella con le ultime voci. Per impostazione predefinita, l'aggiornamento è **DISATTIVO**. |
+| [Ordinare le voci per il valore di un campo indicizzato](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-analize_logs_interactively#discover_sort_by_table) | Riordinare le voci per analisi più semplici. |
+| [Riorganizzare una colonna di campo](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-analize_logs_interactively#discover_rearrange_fields_in_table) | Spostare la posizione di un campo nella tabella nella posizione che desideri. |
+| [Rimuovere una colonna di campo](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-analize_logs_interactively#discover_remove_fields_from_table) | Rimuovere un campo quando non è più necessario nella vista delle analisi. |
+| [Visualizzare una voce](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-analize_logs_interactively#discover_view_entry_in_table) | Espandere una voce nella tabella per visualizzare i dettagli della voce analizzata per il campo o come JSON. |
 {: caption="Tabella 2. Attività per personalizzare una tabella" caption-side="top"}
 
 <br>
@@ -65,30 +65,30 @@ La seguente figura mostra un esempio di una tabella nella pagina Rileva:
 
 ![Pagina Rileva in Kibana](images/discover_page.gif "Pagina Rileva in Kibana")
 
-Puoi definire altre ricerche. Per ulteriori informazioni, vedi [Filtro dei log definendo le ricerche personalizzate](/docs/services/CloudLogAnalysis/kibana/define_search.html#define_search). Quando definisci una nuova ricerca, i dati visualizzati nell'istogramma e nella tabella vengono automaticamente aggiornati.
+Puoi definire altre ricerche. Per ulteriori informazioni, vedi [Filtro dei log definendo le ricerche personalizzate](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-define_search#define_search). Quando definisci una nuova ricerca, i dati visualizzati nell'istogramma e nella tabella vengono automaticamente aggiornati.
 
 Per definire una nuova ricerca, utilizza la query di ricerca predefinita come tuo punto di partenza e quindi rifinisci la ricerca eseguendo le seguente attività:
 
-* Applica i filtri del campo per rifinire la serie di dati che puoi visualizzare. Puoi attivare/disattivare ogni filtro, bloccarlo nella pagina, abilitarlo o disabilitarlo se necessario e configurarlo per includere o escludere il valore. Per maggiori informazioni, vedi [Filtro dei log in Kibana](/docs/services/CloudLogAnalysis/kibana/filter_logs.html#filter_logs).
+* Applica i filtri del campo per rifinire la serie di dati che puoi visualizzare. Puoi attivare/disattivare ogni filtro, bloccarlo nella pagina, abilitarlo o disabilitarlo se necessario e configurarlo per includere o escludere il valore. Per maggiori informazioni, vedi [Filtro dei log in Kibana](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-filter_logs#filter_logs).
 
-    **Suggerimento:** se non puoi trovare un campo nell'*Elenco campi* che ti aspetti di visualizzare o alcune delle lenti di ingrandimento per i campi elencati sono disabilitate nella pagina Rileva, ricarica l'elenco dei campi aggiornando il modello di indice nella pagina Rileva. Per maggiori informazioni, vedi [Ricaricamento dell'elenco campo](/docs/services/CloudLogAnalysis/kibana/analize_logs_interactively.html#discover_view_reload_fields).
+    **Suggerimento:** se non puoi trovare un campo nell'*Elenco campi* che ti aspetti di visualizzare o alcune delle lenti di ingrandimento per i campi elencati sono disabilitate nella pagina Rileva, ricarica l'elenco dei campi aggiornando il modello di indice nella pagina Rileva. Per maggiori informazioni, vedi [Ricaricamento dell'elenco campo](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-analize_logs_interactively#discover_view_reload_fields).
 
     Ad esempio, se la tua applicazione CF ha più istanze, potresti voler analizzare i dati di un'istanza specifica. Puoi definire un filtro del campo per il valore dell'ID dell'istanza specifico che desideri analizzare. 
     
-* Personalizza il *Selezionatore di tempo* per i dati basati sul tempo. Puoi definire un intervallo di tempo assoluto per una query, uno relativo o scegliere da una serie di valori predefiniti. Per maggiori informazioni, vedi [Configurazione di un filtro temporale](/docs/services/CloudLogAnalysis/kibana/filter_logs.html#set_time_filter).
+* Personalizza il *Selezionatore di tempo* per i dati basati sul tempo. Puoi definire un intervallo di tempo assoluto per una query, uno relativo o scegliere da una serie di valori predefiniti. Per maggiori informazioni, vedi [Configurazione di un filtro temporale](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-filter_logs#set_time_filter).
 
-Dopo aver configurato la ricerca che definisce la sottoserie di dati che desideri analizzare, puoi salvarla per un riutilizzo successivo. Per maggiori informazioni, vedi [Salvataggio di una ricerca](/docs/services/CloudLogAnalysis/kibana/define_search.html#save_search).
+Dopo aver configurato la ricerca che definisce la sottoserie di dati che desideri analizzare, puoi salvarla per un riutilizzo successivo. Per maggiori informazioni, vedi [Salvataggio di una ricerca](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-define_search#save_search).
 
 Puoi eseguire ognuna delle seguenti attività con le ricerche che definisci nella pagina Rileva:
 
 | Attività | Descrizione |
 |------|-------------|
-| [Eliminare una ricerca](/docs/services/CloudLogAnalysis/kibana/define_search.html#delete_search) | Eliminare una ricerca quando non è più necessaria. |
-| [Esportare una ricerca](/docs/services/CloudLogAnalysis/kibana/define_search.html#export_search) | Esportare una ricerca per condividerla.  |
-| [Importare una ricerca](/docs/services/CloudLogAnalysis/kibana/define_search.html#import_search) | Importare una ricerca.  |
-| [Ricaricare una ricerca](/docs/services/CloudLogAnalysis/kibana/define_search.html#reload_search1)  | Caricare una ricerca esistente per analizzare nuovamente una serie di dati. |
-| [Aggiornare i dati di una ricerca](/docs/services/CloudLogAnalysis/kibana/define_search.html#refresh_search) | Configurare l'aggiornamento automatico dei dati visualizzati tramite la ricerca.  |
-| [Salvare una ricerca](/docs/services/CloudLogAnalysis/kibana/define_search.html#save_search) | Salvare la ricerca per un riutilizzo successivo.  |
+| [Eliminare una ricerca](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-define_search#delete_search) | Eliminare una ricerca quando non è più necessaria. |
+| [Esportare una ricerca](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-define_search#export_search) | Esportare una ricerca per condividerla.  |
+| [Importare una ricerca](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-define_search#import_search) | Importare una ricerca.  |
+| [Ricaricare una ricerca](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-define_search#reload_search1)  | Caricare una ricerca esistente per analizzare nuovamente una serie di dati. |
+| [Aggiornare i dati di una ricerca](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-define_search#refresh_search) | Configurare l'aggiornamento automatico dei dati visualizzati tramite la ricerca.  |
+| [Salvare una ricerca](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-define_search#save_search) | Salvare la ricerca per un riutilizzo successivo.  |
 {: caption="Tabella 3. Attività per lavorare con le ricerche" caption-side="top"}
 
 
@@ -96,7 +96,7 @@ Puoi inoltre esaminare le statistiche nella pagina Rileva:
 * Puoi visualizzare le statistiche per il campo. 
 * Puoi visualizzare le statistiche nell'istogramma per `@timestamp` che hai configurato.
 
-Per maggiori informazioni, vedi [Visualizzazione delle statistiche dei dati del campo](/docs/services/CloudLogAnalysis/kibana/analize_logs_interactively.html#discover_view_fields_stats).
+Per maggiori informazioni, vedi [Visualizzazione delle statistiche dei dati del campo](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-analize_logs_interactively#discover_view_fields_stats).
 
 **Nota:** i dati visualizzati nella tabella e nell'istogramma sono statici. Per continuare a visualizzare le ultime voci, devi impostare un intervallo di aggiornamento. 
 
@@ -129,7 +129,7 @@ Puoi aggiungere una colonna di campo alla tabella scegliendo una delle seguenti 
 ## Aggiornamento automatico dei dati
 {: #discover_view_refresh_interval}
 
-Per impostazione predefinita, in {{site.data.keyword.Bluemix_notm}}, il periodo di *Aggiornamento automatico* è impostato su **DISATTIVO** e i dati che puoi visualizzare in Kibana corrispondono agli ultimi 15 minuti da quando hai avviato Kibana. I 15 minuti corrispondono al filtro temporale preconfigurato. Puoi scegliere di impostare un periodo di tempo differente. Per maggiori informazioni, vedi [Configurazione di un filtro temporale](/docs/services/CloudLogAnalysis/kibana/filter_logs.html#set_time_filter).
+Per impostazione predefinita, in {{site.data.keyword.Bluemix_notm}}, il periodo di *Aggiornamento automatico* è impostato su **DISATTIVO** e i dati che puoi visualizzare in Kibana corrispondono agli ultimi 15 minuti da quando hai avviato Kibana. I 15 minuti corrispondono al filtro temporale preconfigurato. Puoi scegliere di impostare un periodo di tempo differente. Per maggiori informazioni, vedi [Configurazione di un filtro temporale](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-filter_logs#set_time_filter).
 
 Completa la seguente procedura per impostare un periodo di *Aggiornamento automatico*:
 

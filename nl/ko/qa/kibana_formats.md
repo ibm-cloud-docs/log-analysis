@@ -92,7 +92,7 @@ subcollection: cloudloganalysis
 {: caption="표 3. Docker 컨테이너의 필드" caption-side="top"}
 
 
-## Message Hub에 대한 Kibana 로그 형식
+## {{site.data.keyword.messagehub}}의 Kibana 로그 형식
 {: #kibana_log_format_messagehub}
 
 *검색* 페이지에서 각 로그 항목에 다음과 같은 필드를 표시하도록 Kibana를 구성할 수 있습니다.
@@ -107,7 +107,7 @@ subcollection: cloudloganalysis
 |\_type |로그의 유형입니다(예: *syslog*). |
 |loglevel |로그된 이벤트의 심각도입니다(예: **정보**). |
 |module |이 필드는 **MessageHub**로 설정됩니다. |
-{: caption="표 4. Message Hub 이벤트의 필드" caption-side="top"}
+{: caption="표 4. {{site.data.keyword.messagehub}} 이벤트의 필드" caption-side="top"}
 
 로그 항목의 예:
 

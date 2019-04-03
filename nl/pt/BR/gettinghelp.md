@@ -38,5 +38,5 @@ para que ela possa ser vista pelas equipes de desenvolvimento do {{site.data.key
 <!--Insert the appropriate dW Answers tag for your service for <service_keyword> in URL below:  -->
   * Para perguntas sobre o serviço e instruções de introdução, use o fórum do [{{site.data.keyword.IBM_notm}} developerWorks dW Answers](https://developer.ibm.com/answers/topics/log-analysis/?smartspace=ibm-cloud){:new_window}.
 
-* Se você ainda não puder resolver o problema, será possível abrir um chamado de suporte IBM. Para obter informações sobre como abrir um chamado de suporte IBM ou sobre níveis de suporte e severidades de chamado, consulte [Entrando em contato com o suporte](/docs/get-support/howtogetsupport.html#getting-customer-support).
+* Se você ainda não puder resolver o problema, será possível abrir um chamado de suporte IBM. Para obter informações sobre como abrir um chamado de suporte IBM ou sobre níveis de suporte e severidades de chamado, consulte [Entrando em contato com o suporte](/docs/get-support?topic=get-support-getting-customer-support#getting-customer-support).
 

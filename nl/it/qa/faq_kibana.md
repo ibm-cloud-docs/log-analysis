@@ -28,12 +28,12 @@ subcollection: cloudloganalysis
 
 Queste sono le risposte alle domandi comuni sull'utilizzo delle funzionalità di registrazione {{site.data.keyword.Bluemix}}. {:shortdesc}
 
-* [Cosa posso fare se non posso visualizzare i dati nella pagina Rileva in Kibana ](/docs/services/CloudLogAnalysis/qa/faq_kibana.html#logging_qa_no_data_discover_kibana)
-* [Cosa posso fare se ricevo un'eccezione di autenticazione ](/docs/services/CloudLogAnalysis/qa/faq_kibana.html#logging_qa_no_data_dashboard_kibana)
-* [Perché vedo il simbolo ? accanto ai campi nella pagina Rileva in Kibana](/docs/services/CloudLogAnalysis/qa/faq_kibana.html#logging_qa_kibana_question)
-* [Ottengo un errore 403 quando provo a modificare il modello di indice predefinito](/docs/services/CloudLogAnalysis/qa/faq_kibana.html#error_403)
-* [L'URL breve non funziona](/docs/services/CloudLogAnalysis/qa/faq_kibana.html#short_url)
-* [Posso cercare nei log del mio account in Bluemix?](/docs/services/CloudLogAnalysis/qa/faq_kibana.html#acc_logs_1)
+* [Cosa posso fare se non posso visualizzare i dati nella pagina Rileva in Kibana ](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-faq_kibana#logging_qa_no_data_discover_kibana)
+* [Cosa posso fare se ricevo un'eccezione di autenticazione ](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-faq_kibana#logging_qa_no_data_dashboard_kibana)
+* [Perché vedo il simbolo ? accanto ai campi nella pagina Rileva in Kibana](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-faq_kibana#logging_qa_kibana_question)
+* [Ottengo un errore 403 quando provo a modificare il modello di indice predefinito](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-faq_kibana#error_403)
+* [L'URL breve non funziona](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-faq_kibana#short_url)
+* [Posso cercare nei log del mio account in Bluemix?](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-faq_kibana#acc_logs_1)
 
 
 ## Cosa posso fare se non posso visualizzare i dati nella pagina Rileva in Kibana
@@ -50,7 +50,7 @@ Per risolvere questo problema, completa la seguente procedura:
 
     **Nota**: per impostazione predefinita, in {{site.data.keyword.Bluemix_notm}}, il *Selezionatore di tempo* è configurato per mostrare i dati degli ultimi 15 minuti.
 
-    Per ulteriori informazioni su come impostare il *Selezionatore di tempo*, vedi [Configurazione di un filtro temporale](/docs/services/CloudLogAnalysis/kibana/filter_logs.html#set_time_filter1).
+    Per ulteriori informazioni su come impostare il *Selezionatore di tempo*, vedi [Configurazione di un filtro temporale](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-filter_logs#set_time_filter1).
        
 2. Fai clic sulla lente di ingrandimento ubicata nella barra di ricerca della pagina *Rileva*. I dati della pagina vengono aggiornati in base alla query di ricerca predefinita.
 
@@ -58,7 +58,7 @@ Per risolvere questo problema, completa la seguente procedura:
 
     **Nota**: per impostazione predefinita, in {{site.data.keyword.Bluemix_notm}}, il periodo di *Aggiornamento automatico* è impostato su **DISATTIVO**.
     
-    Per ulteriori informazioni su come abilitarlo, vedi [Aggiornamento automatico dei dati](/docs/services/CloudLogAnalysis/kibana/analize_logs_interactively.html#discover_view_refresh_interval).
+    Per ulteriori informazioni su come abilitarlo, vedi [Aggiornamento automatico dei dati](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-analize_logs_interactively#discover_view_refresh_interval).
 
 
 
@@ -90,7 +90,7 @@ Per risolvere questo problema, completa la seguente procedura:
 ## Perché vedo il simbolo ? accanto ai campi nella pagina Rileva in Kibana
 {: #logging_qa_kibana_question}
 
-Quando apri la pagina Rileva in Kibana, potresti vedere un punto interrogativo `?` accanto ai campi elencati nella sezione dei campi disponibili invece del carattere `t`. Quando ricarichi l'elenco di campo, il tipo di campi viene analizzato e il punto interrogativo `?` viene sostituito dal carattere `t`. Per ulteriori informazioni, vedi [Ricaricamento dell'elenco dei campi](/docs/services/CloudLogAnalysis/kibana/analize_logs_interactively.html#discover_view_reload_fields).
+Quando apri la pagina Rileva in Kibana, potresti vedere un punto interrogativo `?` accanto ai campi elencati nella sezione dei campi disponibili invece del carattere `t`. Quando ricarichi l'elenco di campo, il tipo di campi viene analizzato e il punto interrogativo `?` viene sostituito dal carattere `t`. Per ulteriori informazioni, vedi [Ricaricamento dell'elenco dei campi](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-analize_logs_interactively#discover_view_reload_fields).
 
 
 ## Ottengo un errore 403 quando provo a modificare il modello di indice predefinito
@@ -112,7 +112,7 @@ In qualità di proprietario di un account, puoi cercare nei log del tuo account 
 
 Completa la seguente procedura per visualizzare i log del tuo account:
 
-1. [Avvia Kibana.](/docs/services/CloudLogAnalysis/kibana/launch.html#launch_Kibana_from_browser) Ad esempio, per la regione Stati Uniti Sud, utilizza l'URL `https://logging.ng.bluemix.net`,
+1. [Avvia Kibana.](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-launch#launch_Kibana_from_browser) Ad esempio, per la regione Stati Uniti Sud, utilizza l'URL `https://logging.ng.bluemix.net`,
 
 2. Seleziona l'opzione **Visualizza i log dell'account NomeAccount** per visualizzare i log dell'account. *NomeAccount* è il nome dell'account.
 

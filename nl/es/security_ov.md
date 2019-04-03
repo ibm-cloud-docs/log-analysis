@@ -38,11 +38,11 @@ Para trabajar con el servicio {{site.data.keyword.loganalysisshort}} mediante la
 
 El servicio {{site.data.keyword.loganalysisshort}} da soporte a los siguientes modelos de autenticación:
 
-* [Autenticación de UAA](/docs/services/CloudLogAnalysis/security/auth_uaa.html#auth_uaa)
+* [Autenticación de UAA](/docs/services/CloudLogAnalysis/security?topic=cloudloganalysis-auth_uaa#auth_uaa)
 
     Solo puede utilizar la CLI para gestionar las señales de UAA.
 	
-* [Autenticación de IAM](/docs/services/CloudLogAnalysis/security/auth_iam.html#auth_iam1)
+* [Autenticación de IAM](/docs/services/CloudLogAnalysis/security?topic=cloudloganalysis-auth_iam1#auth_iam1)
 
     El modelo de autenticación de IAM ofrece funciones de gestión de IU, CLI o API. 
 
@@ -51,13 +51,13 @@ El servicio {{site.data.keyword.loganalysisshort}} da soporte a los siguientes m
 ## Roles
 {: #roles3}
 
-Hay dos tipos de roles en {{site.data.keyword.Bluemix_notm}} que controlan las acciones que pueden llevar a cabo los usuarios cuando trabajan con el servicio {{site.data.keyword.loganalysisshort}}:
+Hay dos tipos de roles en {{site.data.keyword.cloud_notm}} que controlan las acciones que pueden llevar a cabo los usuarios cuando trabajan con el servicio {{site.data.keyword.loganalysisshort}}:
 
 * Roles de Cloud Foundry (CF): El usuario controla las acciones de {{site.data.keyword.loganalysisshort}} que puede realizar un usuario asignando uno o varios roles de CF. Con estos roles, controla los permisos del usuario para ver y gestionar registros en un espacio o una organización.
 * Roles de IAM: El usuario controla las acciones de {{site.data.keyword.loganalysisshort}} que puede realizar un usuario asignando uno o varios roles de IAM. Con estos roles, controla los permisos del usuario para ver y gestionar registros de cuentas. 
 
 
-En la tabla siguiente se muestra el tipo de roles y el dominio de {{site.data.keyword.Bluemix_notm}} que controlan:
+En la tabla siguiente se muestra el tipo de roles y el dominio de {{site.data.keyword.cloud_notm}} que controlan:
 
 <table>
   <caption>Tabla 1. Tipo de roles que controlan acciones por dominio</caption>
@@ -161,7 +161,7 @@ En la tabla siguiente se muestran las relaciones entre la API, una acción de se
     <td>GET /v1/logging/logs</td>
     <td>ibmcloud-log-analysis.domain.log_read</td>
 	<td>Administrador, Editor, Visor</td>
-	<td>Ver información sobre los registros en un espacio de {{site.data.keyword.Bluemix_notm}} o a nivel de cuenta.</td>
+	<td>Ver información sobre los registros en un espacio de {{site.data.keyword.cloud_notm}} o a nivel de cuenta.</td>
   </tr>
   <tr>
     <td>GET /v1/logging/logs/download</td>
@@ -173,13 +173,13 @@ En la tabla siguiente se muestran las relaciones entre la API, una acción de se
     <td>GET /v1/logging/logs/retention</td>
     <td>ibmcloud-log-analysis.domain.policy_read</td>
     <td>Administrador, Editor, Visor</td>
-    <td>Muestra el periodo de retención para los registros que están disponibles en un espacio o una cuenta de {{site.data.keyword.Bluemix_notm}}.</td>
+    <td>Muestra el periodo de retención para los registros que están disponibles en un espacio o una cuenta de {{site.data.keyword.cloud_notm}}.</td>
   </tr>
   <tr>
     <td>PUT /v1/logging/logs/retention</td>
     <td>ibmcloud-log-analysis.domain.policy_write</td>
     <td>Administrador, Editor</td>
-    <td>Actualiza el periodo de retención para los registros que están disponibles en un espacio o una cuenta de {{site.data.keyword.Bluemix_notm}}.</td>
+    <td>Actualiza el periodo de retención para los registros que están disponibles en un espacio o una cuenta de {{site.data.keyword.cloud_notm}}.</td>
   </tr>
   <tr>
     <td>GET /v1/logging/sessions</td>
@@ -217,14 +217,14 @@ Para gestionar registros mediante la API de {{site.data.keyword.loganalysisshort
 * Utilice la CLI de {{site.data.keyword.loganalysisshort}} para obtener la señal de UAA. 
 * La señal tiene un tiempo de caducidad. 
 
-Para obtener más información, consulte [Obtención de la señal de UAA](/docs/services/CloudLogAnalysis/security/auth_uaa.html#auth_uaa).
+Para obtener más información, consulte [Obtención de la señal de UAA](/docs/services/CloudLogAnalysis/security?topic=cloudloganalysis-auth_uaa#auth_uaa).
 
 **Cómo trabajar con los registros que están disponibles en el dominio de la cuenta**
 
-* Utilice la CLI de {{{site.data.keyword.Bluemix_notm}} para obtener la señal de IAM. 
+* Utilice la CLI de {{site.data.keyword.cloud_notm}} para obtener la señal de IAM. 
 * La señal tiene un tiempo de caducidad. 
 
-Para obtener más información, consulte [Obtención de la señal de IAM](/docs/services/CloudLogAnalysis/security/auth_iam.html#auth_iam1).
+Para obtener más información, consulte [Obtención de la señal de IAM](/docs/services/CloudLogAnalysis/security?topic=cloudloganalysis-auth_iam1#auth_iam1).
 
 
 ## Obtención de la señal de registro para enviar registros al análisis de registros
@@ -234,23 +234,23 @@ Para enviar registros al servicio {{site.data.keyword.loganalysisshort}}, necesi
 
 Para enviar registros a un dominio del espacio, elija uno de los siguientes métodos:
 
-* [Obtención de la señal de registro para enviar registros a un espacio mediante el mandato de {{site.data.keyword.Bluemix_notm}} ibmcloud service ](/docs/services/CloudLogAnalysis/security/logging_token.html#logging_token_cloud_cli)
-* [Obtención de la señal de registro para enviar registros a un espacio mediante la CLI de análisis de registro](/docs/services/CloudLogAnalysis/security/logging_token.html#logging_token_la_cloud_cli)
-* [Obtención de la señal de registro para enviar registros a un espacio mediante la API de análisis de registro](/docs/services/CloudLogAnalysis/security/logging_token.html#logging_token_api)
+* [Obtención de la señal de registro para enviar registros a un espacio mediante el mandato de {{site.data.keyword.cloud_notm}} ibmcloud service ](/docs/services/CloudLogAnalysis/security?topic=cloudloganalysis-logging_token#logging_token_cloud_cli)
+* [Obtención de la señal de registro para enviar registros a un espacio mediante la CLI de análisis de registro](/docs/services/CloudLogAnalysis/security?topic=cloudloganalysis-logging_token#logging_token_la_cloud_cli)
+* [Obtención de la señal de registro para enviar registros a un espacio mediante la API de análisis de registro](/docs/services/CloudLogAnalysis/security?topic=cloudloganalysis-logging_token#logging_token_api)
 
 
 ## Cómo otorgar permisos a un usuario para que trabaje con registros
 {: #grant_permissions1}
 
-Para que un usuario pueda gestionar registros o ver registros, se deben otorgar al usuario permisos en {{site.data.keyword.Bluemix_notm}} para trabajar con el servicio {{site.data.keyword.loganalysisshort}}.
+Para que un usuario pueda gestionar registros o ver registros, se deben otorgar al usuario permisos en {{site.data.keyword.cloud_notm}} para trabajar con el servicio {{site.data.keyword.loganalysisshort}}.
 
-* Para obtener información sobre los permisos necesarios para gestionar registros, consulte [Roles que necesita un usuario para gestionar registros](/docs/services/CloudLogAnalysis/manage_logs.html#roles1).
-* Para obtener información sobre los permisos necesarios para ver registros, consulte [Roles que necesita un usuario para ver registros](/docs/services/CloudLogAnalysis/kibana/analyzing_logs_Kibana.html#roles).
+* Para obtener información sobre los permisos necesarios para gestionar registros, consulte [Roles que necesita un usuario para gestionar registros](/docs/services/CloudLogAnalysis?topic=cloudloganalysis-manage_logs#roles1).
+* Para obtener información sobre los permisos necesarios para ver registros, consulte [Roles que necesita un usuario para ver registros](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-analyzing_logs_Kibana#roles).
 
 Para obtener más información sobre cómo otorgar permisos, consulte:
 
-* [Asignación de una política de IAM a un usuario mediante la interfaz de usuario de {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/security/grant_permissions.html#grant_permissions).
-* [Asignación de una política de IAM a un usuario mediante la línea de mandatos](/docs/services/CloudLogAnalysis/security/grant_permissions.html#grant_permissions_commandline).
-* [Cómo otorgar a un usuario permisos para ver registros del espacio mediante la interfaz de usuario de {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/security/grant_permissions.html#grant_permissions_ui_space).
+* [Asignación de una política de IAM a un usuario mediante la interfaz de usuario de {{site.data.keyword.cloud_notm}}](/docs/services/CloudLogAnalysis/security?topic=cloudloganalysis-grant_permissions#grant_permissions).
+* [Asignación de una política de IAM a un usuario mediante la línea de mandatos](/docs/services/CloudLogAnalysis/security?topic=cloudloganalysis-grant_permissions#grant_permissions_commandline).
+* [Cómo otorgar a un usuario permisos para ver registros del espacio mediante la interfaz de usuario de {{site.data.keyword.cloud_notm}}](/docs/services/CloudLogAnalysis/security?topic=cloudloganalysis-grant_permissions#grant_permissions_ui_space).
 
 

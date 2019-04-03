@@ -51,12 +51,12 @@ Kibana에서 *시각화* 페이지를 사용하여 로그 데이터를 분석하
 
 |태스크 |자세한 정보 |
 |------|------------------|
-|[새 시각화 작성](/docs/services/CloudLogAnalysis/kibana/kibana_visualizations.html#create) |*검색* 페이지에 저장하는 검색이나 *시각화* 페이지에 정의하는 새 조회에서 시각화를 작성할 수 있습니다. |
-|[시각화 삭제](/docs/services/CloudLogAnalysis/kibana/kibana_visualizations.html#delete) |필요하지 않은 시각화는 삭제합니다. |
-|[시각화 내보내기](/docs/services/CloudLogAnalysis/kibana/kibana_visualizations.html#export) |시각화를 JSON 파일로 내보낼 수 있습니다.  |
-|[시각화 가져오기](/docs/services/CloudLogAnalysis/kibana/kibana_visualizations.html#import1) |시각화를 JSON 파일로 가져올 수 있습니다.  |
-|[시각화 로드](/docs/services/CloudLogAnalysis/kibana/kibana_visualizations.html#reload2) |해당 데이터를 업데이트, 수정 또는 분석하기 위해 시각화를 업로드할 수 있습니다. |
-|[시각화 저장](/docs/services/CloudLogAnalysis/kibana/kibana_visualizations.html#save2) |나중에 다시 사용할 수 있도록 시각화를 저장할 수 있습니다. |
+|[새 시각화 작성](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-kibana_visualizations#create) |*검색* 페이지에 저장하는 검색이나 *시각화* 페이지에 정의하는 새 조회에서 시각화를 작성할 수 있습니다. |
+|[시각화 삭제](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-kibana_visualizations#delete) |필요하지 않은 시각화는 삭제합니다. |
+|[시각화 내보내기](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-kibana_visualizations#export) |시각화를 JSON 파일로 내보낼 수 있습니다.  |
+|[시각화 가져오기](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-kibana_visualizations#import1) |시각화를 JSON 파일로 가져올 수 있습니다.  |
+|[시각화 로드](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-kibana_visualizations#reload2) |해당 데이터를 업데이트, 수정 또는 분석하기 위해 시각화를 업로드할 수 있습니다. |
+|[시각화 저장](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-kibana_visualizations#save2) |나중에 다시 사용할 수 있도록 시각화를 저장할 수 있습니다. |
 {: caption="표 2. 시각화로 작업하는 태스크" caption-side="top"}
 
 
@@ -81,7 +81,7 @@ Kibana에서 *시각화* 페이지를 사용하여 로그 데이터를 분석하
 
     * **새 검색에서, 인덱스 선택**을 선택하는 경우 새 조회를 정의하십시오. 조회는 시각화에서 검색하고 사용하는 데이터의 서브세트를 정의하는 데 사용됩니다.
 
-        자세한 정보는 [사용자 정의 조회를 정의하여 로그 필터링](/docs/services/CloudLogAnalysis/kibana/define_search.html#define_search)을 참조하십시오.
+        자세한 정보는 [사용자 정의 조회를 정의하여 로그 필터링](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-define_search#define_search)을 참조하십시오.
 
 Kibana에 대한 자세한 정보는 [Kibana User Guide ![외부 링크 아이콘](../../../icons/launch-glyph.svg "외부 링크 아이콘")](https://www.elastic.co/guide/en/kibana/5.1/index.html){: new_window}를 참조하십시오.
 

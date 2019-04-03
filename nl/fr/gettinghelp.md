@@ -37,5 +37,5 @@ En cas de problème ou pour toute question lors de l'utilisation d'{{site.data.k
 <!--Insert the appropriate dW Answers tag for your service for <service_keyword> in URL below:  -->
   * Pour toute question relative au service et aux instructions de mise en route, utilisez le forum [{{site.data.keyword.IBM_notm}} developerWorks dW Answers](https://developer.ibm.com/answers/topics/log-analysis/?smartspace=ibm-cloud){:new_window}.
 
-* Si le problème persiste, vous pouvez ouvrir un ticket de demande de service IBM. Pour plus d'informations sur l'ouverture d'un ticket de demande de service IBM, sur les niveaux de support disponibles ou les niveaux de gravité des tickets, voir la rubrique décrivant [comment contacter le support](/docs/get-support/howtogetsupport.html#getting-customer-support).
+* Si le problème persiste, vous pouvez ouvrir un ticket de demande de service IBM. Pour plus d'informations sur l'ouverture d'un ticket de demande de service IBM, sur les niveaux de support disponibles ou les niveaux de gravité des tickets, voir la rubrique décrivant [comment contacter le support](/docs/get-support?topic=get-support-getting-customer-support#getting-customer-support).
 

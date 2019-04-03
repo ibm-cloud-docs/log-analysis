@@ -52,7 +52,7 @@ In der folgenden Tabelle sind die verschiedenen Cloudressourcen aufgelistet. Abs
   </tr>
   <tr>
     <td>Containers, die in {{site.data.keyword.containershort}} ausgeführt werden</td>
-    <td>[Protokolle in Kibana für eine App analysieren, die in einem Kubernetes-Cluster bereitgestellt ist](/docs/services/CloudLogAnalysis/tutorials/container_logs.html#container_logs)</td>
+    <td>[Protokolle in Kibana für eine App analysieren, die in einem Kubernetes-Cluster bereitgestellt ist](/docs/services/CloudLogAnalysis/tutorials?topic=cloudloganalysis-container_logs#container_logs)</td>
     <td>Public </br>Dedicated</td>
     <td>![Komponentenübersicht für in einem Kubernetes-Cluster bereitgestellte Container](containers/images/containers_kube_logs.png "Komponentenübersicht für in einem Kubernetes-Cluster bereitgestellte Container")</td>
   </tr>
@@ -75,7 +75,7 @@ Um die Aktionen in {{site.data.keyword.loganalysisshort}} zu steuern, die ein Be
 In {{site.data.keyword.Bluemix_notm}} gibt es zwei Typen von Sicherheitsberechtigungen, die die Aktionen steuern, die Benutzer bei der Arbeit mit dem {{site.data.keyword.loganalysisshort}}-Service ausführen können:
 
 * Cloud Foundry (CF)-Rollen: Sie erteilen einem Benutzer eine CF-Rolle, um die Berechtigungen des Benutzers für die Anzeige von Protokollen in einem Bereich zu definieren.
-* IAM-Rollen: Sie erteilen einem Benutzer eine IAM-Richtlinie, um die Berechtigungen des Benutzers für die Anzeige von Protokollen in der Kontodomäne zu definieren. 
+* IAM-Rollen: Sie erteilen einem Benutzer eine IAM-Richtlinie, um die Berechtigungen des Benutzers für die Anzeige von Protokollen in der Kontodomäne zu definieren.
 
 ### Berechtigungen für einen Benutzer einrichten, damit dieser Protokolle in einer Bereichsdomäne anzeigen kann
 {: #step42a}
@@ -94,7 +94,7 @@ Führen Sie die folgenden Schritte aus, um einem Benutzer Berechtigungen zur Anz
 	
 3. Wenn der Benutzer ein Mitglied des Kontos ist, wählen Sie den Benutzernamen aus der Liste aus oder klicken Sie im Menü *Aktionen* auf **Benutzer verwalten**.
 
-    Wenn der Benutzer kein Mitglied des Kontos ist, finden Sie unter [Benutzer einladen](/docs/iam/iamuserinv.html#iamuserinv) Informationen zum entsprechenden Vorgehen in diesem Fall.
+    Wenn der Benutzer kein Mitglied des Kontos ist, finden Sie unter [Benutzer einladen](/docs/iam?topic=iam-iamuserinv#iamuserinv) Informationen zum entsprechenden Vorgehen in diesem Fall.
 
 4. Wählen Sie **Cloud Foundry-Zugriff** und anschließend die Organisation aus.
 
@@ -114,7 +114,7 @@ Führen Sie die folgenden Schritte aus, um einem Benutzer Berechtigungen zur Anz
 {: #step24b}
 
 
-Führen Sie die folgenden Schritte aus, um einem Benutzer Berechtigungen zur Anzeige von Kontoprotokollen zu erteilen: 
+Führen Sie die folgenden Schritte aus, um einem Benutzer Berechtigungen zur Anzeige von Kontoprotokollen zu erteilen:
 
 1. Melden Sie sich bei der {{site.data.keyword.Bluemix_notm}}-Konsole an.
 
@@ -128,7 +128,7 @@ Führen Sie die folgenden Schritte aus, um einem Benutzer Berechtigungen zur Anz
 	
 3. Wenn der Benutzer ein Mitglied des Kontos ist, wählen Sie den Benutzernamen aus der Liste aus oder klicken Sie im Menü *Aktionen* auf **Benutzer verwalten**.
 
-    Wenn der Benutzer kein Mitglied des Kontos ist, finden Sie unter [Benutzer einladen](/docs/iam/iamuserinv.html#iamuserinv) Informationen zum entsprechenden Vorgehen in diesem Fall.
+    Wenn der Benutzer kein Mitglied des Kontos ist, finden Sie unter [Benutzer einladen](/docs/iam?topic=iam-iamuserinv#iamuserinv) Informationen zum entsprechenden Vorgehen in diesem Fall.
 
 4. Klicken Sie im Abschnitt **Zugriffsrichtlinien** auf **Zugriff zuweisen** und wählen Sie anschließend **Zugriff auf Ressourcen zuweisen**.
 
@@ -156,7 +156,7 @@ Führen Sie die folgenden Schritte aus, um einem Benutzer Berechtigungen zur Anz
 	  </tr>
 	  <tr>
 	    <td>Rollen</td>
-		<td>Wählen Sie eine oder mehrere IAM-Rollen aus. <br>Gültige Rollen sind: *Administrator*, *Operator*, *Editor* und *Anzeigeberechtigter*. <br>Weitere Informationen zu den Aktionen, die pro Rolle zulässig sind, finden Sie unter [IAM-Rollen](/docs/services/CloudLogAnalysis/security_ov.html#iam_roles).
+		<td>Wählen Sie eine oder mehrere IAM-Rollen aus. <br>Gültige Rollen sind: *Administrator*, *Operator*, *Editor* und *Anzeigeberechtigter*. <br>Weitere Informationen zu den Aktionen, die pro Rolle zulässig sind, finden Sie unter [IAM-Rollen](/docs/services/CloudLogAnalysis?topic=cloudloganalysis-security_ov#iam_roles).
 		</td>
 	  </tr>
      </table>
@@ -169,7 +169,7 @@ Die von Ihnen konfigurierte Richtlinie gilt für die ausgewählten Regionen.
 ## Nächste Schritte 
 {: #next_steps}
 
-**Hinweis:** Ein Benutzer muss über Zugriff auf Kibana in der Public-Cloud-Region verfügen, in der die Protokolldaten angezeigt und analysiert werden können.  
+**Hinweis:** Ein Benutzer muss über Zugriff auf Kibana in der Public-Cloud-Region verfügen, in der die Protokolldaten angezeigt und analysiert werden können. 
 
 Um beispielsweise in der Region "USA (Süden)" Kibana zu starten, öffnen Sie einen Web-Browser und geben Sie die folgende URL ein:
 
@@ -179,11 +179,11 @@ https://logging.ng.bluemix.net/
 {: codeblock}
 
 
-Weitere Informationen zum Starten von Kibana in anderen Regionen finden Sie unter [Von einem Web-Browser zu Kibana navigieren](/docs/services/CloudLogAnalysis/kibana/launch.html#launch_Kibana_from_browser).
+Weitere Informationen zum Starten von Kibana in anderen Regionen finden Sie unter [Von einem Web-Browser zu Kibana navigieren](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-launch#launch_Kibana_from_browser).
 
 **Hinweis:** Wenn Sie Kibana starten und die Nachricht *bearer token not valid* (Bearer-Token ungültig) erhalten, überprüfen Sie Ihre Berechtigungen für das Konto. Diese Nachricht weist darauf hin, dass Ihre Benutzer-ID nicht über die Berechtigungen zur Anzeige von Protokollen verfügt.
 
-Passen Sie als nächsten Schritt Kibana an, um Ihre Protokolldaten anzuzeigen und zu analysieren. Weitere Informationen finden Sie unter [Protokolle anzeigen und analysieren](/docs/services/CloudLogAnalysis/kibana/analyzing_logs_Kibana.html#analyzing_logs_Kibana).
+Passen Sie als nächsten Schritt Kibana an, um Ihre Protokolldaten anzuzeigen und zu analysieren. Weitere Informationen finden Sie unter [Protokolle anzeigen und analysieren](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-analyzing_logs_Kibana#analyzing_logs_Kibana).
     
 
 

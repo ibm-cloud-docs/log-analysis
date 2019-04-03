@@ -42,13 +42,13 @@ Conclua as tarefas a seguir para definir uma procura customizada:
 
     2. Acesse o Kibana. Clique em **Visualização avançada** ![Link de visualização avançada](images/logging_advanced_view.jpg "Link de visualização avançada"). O painel do Kibana é exibido.
     
-    Para contêineres que são executados em um cluster do Kubernetes, [ative o Kibana por meio do navegador](/docs/services/CloudLogAnalysis/kibana4/k4_launch.html#launch_Kibana_from_browser1). 
+    Para contêineres que são executados em um cluster do Kubernetes, [ative o Kibana por meio do navegador](/docs/services/CloudLogAnalysis/kibana4?topic=cloudloganalysis-k4_launch#launch_Kibana_from_browser1). 
     
     Ao acessar o Kibana, a procura padrão é aplicada. É possível ver os logs para a lista de instâncias
 do recurso para o qual você ativou o Kibana. É possível filtrar os logs para quaisquer ou todos os
 recursos do {{site.data.keyword.Bluemix_notm}} nesse espaço.
 
-2. Consulte a página Descobrir para ver qual subconjunto de seus dados é exibido. Para obter mais informações, consulte [Identificando os dados que são exibidos em sua página Descobrir do Kibana](/docs/services/CloudLogAnalysis/kibana4/logging_kibana_analize_logs_interactively.html#k4_identify_data). Em seguida, modifique a consulta padrão para
+2. Consulte a página Descobrir para ver qual subconjunto de seus dados é exibido. Para obter mais informações, consulte [Identificando os dados que são exibidos em sua página Descobrir do Kibana](/docs/services/CloudLogAnalysis/kibana4?topic=cloudloganalysis-kibana_analize_logs_interactively#k4_identify_data). Em seguida, modifique a consulta padrão para
 filtrar entradas.
 
     **Nota:** use a linguagem de consulta Lucene para definir sua consulta

@@ -37,13 +37,13 @@ Para obter o token de criação de log que pode ser usado para enviar logs para 
 
 1. Instale a CLI do {{site.data.keyword.Bluemix_notm}}.
 
-   Para obter mais informações, veja [Fazer download e instalar a CLI do {{site.data.keyword.Bluemix_notm}}](/docs/cli/index.html#overview).
+   Para obter mais informações, veja [Fazer download e instalar a CLI do {{site.data.keyword.Bluemix_notm}}](/docs/cli?topic=cloud-cli-ibmcloud-cli#overview).
    
    Se a CLI estiver instalada, continue com a próxima etapa.
     
 2. Efetue login em uma região, uma organização e um espaço no {{site.data.keyword.Bluemix_notm}}. 
 
-    Para obter mais informações, veja [Como efetuar login no {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/qa/cli_qa.html#login).
+    Para obter mais informações, veja [Como efetuar login no {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#login).
 	
 3. Execute o comando a seguir:
 
@@ -62,13 +62,13 @@ Para obter o token de criação de log que pode ser usado para enviar logs para 
 
 1. Instale a CLI do {{site.data.keyword.Bluemix_notm}}.
 
-   Para obter mais informações, veja [Fazer download e instalar a CLI do {{site.data.keyword.Bluemix_notm}}](/docs/cli/index.html#overview).
+   Para obter mais informações, veja [Fazer download e instalar a CLI do {{site.data.keyword.Bluemix_notm}}](/docs/cli?topic=cloud-cli-ibmcloud-cli#overview).
    
    Se a CLI estiver instalada, continue com a próxima etapa.
     
 2. Efetue login em uma região, uma organização e um espaço no {{site.data.keyword.Bluemix_notm}}. 
 
-    Para obter mais informações, veja [Como efetuar login no {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/qa/cli_qa.html#login).
+    Para obter mais informações, veja [Como efetuar login no {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#login).
 	
 3. Crie uma chave de serviço no espaço em que o serviço {{site.data.keyword.loganalysisshort}} é provisionado. Execute os seguintes comandos:
 
@@ -152,15 +152,15 @@ Para obter o token de criação de log que pode ser usado para enviar logs para 
 
 1. Instale a CLI do {{site.data.keyword.Bluemix_notm}}.
 
-   Para obter mais informações, veja [Fazer download e instalar a CLI do {{site.data.keyword.Bluemix_notm}}](/docs/cli/index.html#overview).
+   Para obter mais informações, veja [Fazer download e instalar a CLI do {{site.data.keyword.Bluemix_notm}}](/docs/cli?topic=cloud-cli-ibmcloud-cli#overview).
    
    Se a CLI estiver instalada, continue com a próxima etapa.
     
 2. Efetue login em uma região, uma organização e um espaço no {{site.data.keyword.Bluemix_notm}}. 
 
-    Para obter mais informações, veja [Como efetuar login no {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/qa/cli_qa.html#login).
+    Para obter mais informações, veja [Como efetuar login no {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#login).
 	
-3. Obtenha o [token do UAA](/docs/services/CloudLogAnalysis/security/auth_uaa.html#uaa_cli).
+3. Obtenha o [token do UAA](/docs/services/CloudLogAnalysis/security?topic=cloudloganalysis-auth_uaa#uaa_cli).
 
     Por exemplo, execute o comando `ibmcloud cf oauth-token` para obter o token UAA.
 
@@ -173,7 +173,7 @@ Para obter o token de criação de log que pode ser usado para enviar logs para 
 
 4. Obtenha o GUID do espaço.
 
-   Para obter mais informações, veja [Como obter o GUID de um espaço](/docs/services/CloudLogAnalysis/qa/cli_qa.html#space_guid2).  
+   Para obter mais informações, veja [Como obter o GUID de um espaço](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#space_guid2).  
 	
 5. Exporte as variáveis a seguir: TOKEN e SPACEID.
 
@@ -199,7 +199,7 @@ Para obter o token de criação de log que pode ser usado para enviar logs para 
 	Em que
 	* SPACEID é o GUID do espaço no qual o serviço está em execução.
 	* TOKEN é o token do UAA obtido em uma etapa anterior sem o prefixo bearer.
-	* LOGGING_ENDPOINT é o terminal do {{site.data.keyword.loganalysisshort}} para a região do {{site.data.keyword.Bluemix_notm}} na qual a organização e o espaço estão disponíveis. O LOGGING_ENDPOINT é diferente por região. Para ver as URLs para os diferentes terminais, veja [Terminais](/docs/services/CloudLogAnalysis/manage_logs.html#endpoints).
+	* LOGGING_ENDPOINT é o terminal do {{site.data.keyword.loganalysisshort}} para a região do {{site.data.keyword.Bluemix_notm}} na qual a organização e o espaço estão disponíveis. O LOGGING_ENDPOINT é diferente por região. Para ver as URLs para os diferentes terminais, veja [Terminais](/docs/services/CloudLogAnalysis?topic=cloudloganalysis-manage_logs#endpoints).
 	
     O comando retorna o token de criação de log que se deve usar para enviar logs para esse espaço.
 	

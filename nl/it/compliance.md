@@ -66,16 +66,16 @@ Tieni conto delle seguenti informazioni:
 
 * I log archiviati nella Raccolta dei log vengono eliminati dopo alcuni giorni quando configuri una politica di conservazione o quando li elimini manualmente. 
 
-    Puoi configurare una politica di conservazione log per definire il numero di giorni in cui desideri conservare i log nella raccolta di log. Per maggiori informazioni, consulta [Visualizzazione e configurazione della politica di conservazione dei log utilizzando il plugin {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/how-to/manage-logs/configuring_retention_policy_cloud.html#configuring_retention_policy).
+    Puoi configurare una politica di conservazione log per definire il numero di giorni in cui desideri conservare i log nella raccolta di log. Per maggiori informazioni, consulta [Visualizzazione e configurazione della politica di conservazione dei log utilizzando il plugin {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/how-to/manage-logs?topic=cloudloganalysis-configuring_retention_policy#configuring_retention_policy).
 
-    Puoi utilizzare la [API Raccolta dei log](https://console.bluemix.net/apidocs/948-ibm-cloud-log-collection-api?&language=node&env_id=ibm%3Ayp%3Aus-south#introduction){: new_window} oppure la [CLI Raccolta dei log](/docs/services/CloudLogAnalysis/reference/log_analysis_cli_cloud.html#log_analysis_cli){: new_window} per eliminare i log manualmente da Raccolta dei log. 
+    Puoi utilizzare la [API Raccolta dei log](https://console.bluemix.net/apidocs/948-ibm-cloud-log-collection-api?&language=node&env_id=ibm%3Ayp%3Aus-south#introduction){: new_window} oppure la [CLI Raccolta dei log](/docs/services/CloudLogAnalysis/reference?topic=cloudloganalysis-log_analysis_cli#log_analysis_cli){: new_window} per eliminare i log manualmente da Raccolta dei log. 
 
-    Puoi utilizzare la CLI per eliminare i log manualmente dalla Raccolta dei log. Per ulteriori informazioni, vedi [ibmcloud logging log-delete utilizzando il plugin {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/how-to/manage-logs/deleting_logs_cloud.html#deleting_logs).
+    Puoi utilizzare la CLI per eliminare i log manualmente dalla Raccolta dei log. Per ulteriori informazioni, vedi [ibmcloud logging log-delete utilizzando il plugin {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/how-to/manage-logs?topic=cloudloganalysis-deleting_logs#deleting_logs).
 
 
 Se passi da un piano a pagamento a uno standard o lite, i log nella Raccolta dei log saranno eliminati in circa un giorno.
 
-In qualsiasi momento, puoi aprire un ticket di supporto e richiedere che tutti i tuoi dati siano eliminati dalla Ricerca dei log o dalla Raccolta dei log. Per informazioni su come aprire un ticket di supporto IBM, vedi [Come contattare il supporto](/docs/get-support/howtogetsupport.html#getting-customer-support).
+In qualsiasi momento, puoi aprire un ticket di supporto e richiedere che tutti i tuoi dati siano eliminati dalla Ricerca dei log o dalla Raccolta dei log. Per informazioni su come aprire un ticket di supporto IBM, vedi [Come contattare il supporto](/docs/get-support?topic=get-support-getting-customer-support#getting-customer-support).
 
 
 

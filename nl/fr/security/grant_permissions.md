@@ -28,7 +28,7 @@ subcollection: cloudloganalysis
 Dans {{site.data.keyword.Bluemix}}, vous pouvez affecter un ou plusieurs rôles IAM à un utilisateur. Ces rôles définissent quelles tâches sont activées pour que cet utilisateur puisse utiliser le service {{site.data.keyword.loganalysisshort}}.  
 {:shortdesc}
 
-Par exemple, vous pouvez octroyer à un utilisateur le rôle **Opérateur** afin de lui permettre de gérer des journaux. Pour qu'un utilisateur puisse uniquement afficher des journaux de compte, vous pouvez lui octroyer le rôle **Afficheur**. Pour plus d'informations, voir [Rôles IAM](/docs/services/CloudLogAnalysis/security_ov.html#iam_roles).
+Par exemple, vous pouvez octroyer à un utilisateur le rôle **Opérateur** afin de lui permettre de gérer des journaux. Pour qu'un utilisateur puisse uniquement afficher des journaux de compte, vous pouvez lui octroyer le rôle **Afficheur**. Pour plus d'informations, voir [Rôles IAM](/docs/services/CloudLogAnalysis?topic=cloudloganalysis-security_ov#iam_roles).
 
 **Remarque :** 
 
@@ -52,7 +52,7 @@ Pour accorder à un utilisateur des droits permettant d'utiliser le service {{si
 	
 3. Si l'utilisateur est membre du compte, sélectionnez le nom de l'utilisateur dans la liste ou cliquez sur **Gérer un utilisateur** dans le menu *Actions*.
 
-    Si l'utilisateur n'est pas membre du compte, voir [Invitation d'utilisateurs](/docs/iam/iamuserinv.html#iamuserinv).
+    Si l'utilisateur n'est pas membre du compte, voir [Invitation d'utilisateurs](/docs/iam?topic=iam-iamuserinv#iamuserinv).
 
 4. Dans la section **Règles d'accès**, cliquez sur **Affecter un accès**, puis cliquez sur **Affecter l'accès aux ressources**.
 
@@ -80,7 +80,7 @@ Pour accorder à un utilisateur des droits permettant d'utiliser le service {{si
 	  </tr>
 	  <tr>
 	    <td>Rôles</td>
-		<td>Sélectionnez un ou plusieurs rôles IAM. <br>Les rôles valides sont *administrateur*, *opérateur*, *éditeur* et *afficheur*. <br>Pour plus d'informations sur les actions autorisées pour chaque rôle, voir [Rôle IAM](/docs/services/CloudLogAnalysis/security_ov.html#iam_roles).
+		<td>Sélectionnez un ou plusieurs rôles IAM. <br>Les rôles valides sont *administrateur*, *opérateur*, *éditeur* et *afficheur*. <br>Pour plus d'informations sur les actions autorisées pour chaque rôle, voir [Rôle IAM](/docs/services/CloudLogAnalysis?topic=cloudloganalysis-security_ov#iam_roles).
 		</td>
 	  </tr>
      </table>
@@ -97,9 +97,7 @@ Procédez comme suit pour accorder à un utilisateur le droit permettant d'affic
 
 1. A partir d'un terminal, connectez-vous au compte {{site.data.keyword.Bluemix_notm}}. 
 
-    Pour plus d'informations, voir
-[Comment se connecter
-à {{site.data.keyword.Bluemix_notm}} ?](/docs/services/CloudLogAnalysis/qa/cli_qa.html#login).
+    Pour plus d'informations, voir [Comment se connecter à {{site.data.keyword.Bluemix_notm}} ?](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#login)
 
 2. Vérifiez que l'utilisateur est membre du compte. Exécutez la commande suivante pour obtenir la liste des utilisateurs du compte :
 
@@ -110,7 +108,7 @@ Procédez comme suit pour accorder à un utilisateur le droit permettant d'affic
 
 	La liste des utilisateurs avec leur identificateur global unique s'affiche.
 
-3. Si l'utilisateur n'est pas membre du compte, contactez le propriétaire de compte et demandez une invitation autorisant l'utilisateur à accéder au compte. Pour plus d'informations, voir [Invitation d'utilisateurs](/docs/iam/iamuserinv.html#iamuserinv).
+3. Si l'utilisateur n'est pas membre du compte, contactez le propriétaire de compte et demandez une invitation autorisant l'utilisateur à accéder au compte. Pour plus d'informations, voir [Invitation d'utilisateurs](/docs/iam?topic=iam-iamuserinv#iamuserinv).
 
     **Astuce :** la commande permettant d'inviter un utilisateur à accéder à un compte est la suivante : `ibmcloud iam account-user-invite USER_EMAIL`
 		
@@ -154,7 +152,7 @@ Pour accorder à un utilisateur des droits permettant d'utiliser le service {{si
 	
 3. Si l'utilisateur est membre du compte, sélectionnez le nom de l'utilisateur dans la liste ou cliquez sur **Gérer un utilisateur** dans le menu *Actions*.
 
-    Si l'utilisateur n'est pas membre du compte, voir [Invitation d'utilisateurs](/docs/iam/iamuserinv.html#iamuserinv).
+    Si l'utilisateur n'est pas membre du compte, voir [Invitation d'utilisateurs](/docs/iam?topic=iam-iamuserinv#iamuserinv).
 
 4. Sélectionnez **Accès Cloud Foundry**, puis sélectionnez l'organisation.
 

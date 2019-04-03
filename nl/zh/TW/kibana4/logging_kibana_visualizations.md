@@ -51,13 +51,13 @@ subcollection: cloudloganalysis
 
 |作業 |相關資訊 |
 |------|------------------|
-| [建立新的視覺效果](/docs/services/CloudLogAnalysis/kibana4/logging_kibana_visualizations.html#logging_k4_visualizations_create) |您可以從您定義並儲存在*探索* 頁面中的搜尋來建立視覺效果，也可以從您在*視覺化* 頁面中定義的新查詢來建立視覺效果。|
-| [儲存視覺效果](/docs/services/CloudLogAnalysis/kibana4/logging_kibana_visualizations.html#logging_kibana_visualizations_save) |您可以儲存視覺效果，以供之後重複使用。|
-| [載入視覺效果](/docs/services/CloudLogAnalysis/kibana4/logging_kibana_visualizations.html#logging_kibana_visualizations_reload) |您可以上傳視覺效果，以更新其資料、予以修改或分析資料。|
-| [刪除視覺效果](/docs/services/CloudLogAnalysis/kibana4/logging_kibana_visualizations.html#logging_kibana_visualizations_delete) |刪除不需要的視覺效果。|
-| [匯出視覺效果](/docs/services/CloudLogAnalysis/kibana4/logging_kibana_visualizations.html#logging_kibana_visualizations_export) |您可以將視覺效果匯出成 JSON 檔案。|
-| [匯入視覺效果](/docs/services/CloudLogAnalysis/kibana4/logging_kibana_visualizations.html#logging_kibana_visualizations_import) |您可以將視覺效果匯入成 JSON 檔案。|
-| [共用視覺效果](/docs/services/CloudLogAnalysis/kibana4/logging_kibana_visualizations.html#logging_kibana_visualizations_share) |您可以透過 HTML 原始檔或透過 Kibana 儀表板來共用視覺效果。|
+|[建立新的視覺效果](/docs/services/CloudLogAnalysis/kibana4?topic=cloudloganalysis-logging_kibana_visualizations#logging_k4_visualizations_create) |您可以從您定義並儲存在*探索* 頁面中的搜尋來建立視覺效果，也可以從您在*視覺化* 頁面中定義的新查詢來建立視覺效果。|
+|[儲存視覺效果](/docs/services/CloudLogAnalysis/kibana4?topic=cloudloganalysis-logging_kibana_visualizations#logging_kibana_visualizations_save) |您可以儲存視覺效果，以供之後重複使用。|
+|[載入視覺效果](/docs/services/CloudLogAnalysis/kibana4?topic=cloudloganalysis-logging_kibana_visualizations#logging_kibana_visualizations_reload) |您可以上傳視覺效果，以更新其資料、予以修改或分析資料。|
+|[刪除視覺效果](/docs/services/CloudLogAnalysis/kibana4?topic=cloudloganalysis-logging_kibana_visualizations#logging_kibana_visualizations_delete) |刪除不需要的視覺效果。|
+|[匯出視覺效果](/docs/services/CloudLogAnalysis/kibana4?topic=cloudloganalysis-logging_kibana_visualizations#logging_kibana_visualizations_export) |您可以將視覺效果匯出成 JSON 檔案。|
+|[匯入視覺效果](/docs/services/CloudLogAnalysis/kibana4?topic=cloudloganalysis-logging_kibana_visualizations#logging_kibana_visualizations_import) |您可以將視覺效果匯入成 JSON 檔案。|
+| [共用視覺效果](/docs/services/CloudLogAnalysis/kibana4?topic=cloudloganalysis-logging_kibana_visualizations#logging_kibana_visualizations_share) |您可以透過 HTML 原始檔或透過 Kibana 儀表板來共用視覺效果。|
 {: caption="表 2. 使用視覺效果的作業" caption-side="top"}
 
 

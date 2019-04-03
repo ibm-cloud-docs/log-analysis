@@ -29,9 +29,9 @@ subcollection: cloudloganalysis
 {: shortdesc}
 
 **先决条件**
-* 运行 logging 命令之前，请先使用 `ibmcloud login` 命令登录到 {{site.data.keyword.Bluemix_notm}}，以生成 {{site.data.keyword.Bluemix_short}} 访问令牌并对会话进行认证。有关更多信息，请参阅[如何登录到 {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/qa/cli_qa.html#login)。
+* 运行 logging 命令之前，请先使用 `ibmcloud login` 命令登录到 {{site.data.keyword.Bluemix_notm}}，以生成 {{site.data.keyword.Bluemix_short}} 访问令牌并对会话进行认证。有关更多信息，请参阅[如何登录到 {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#login)。
 
-要了解如何使用 {{site.data.keyword.loganalysisshort}} CLI，请参阅[管理日志](/docs/services/CloudLogAnalysis/log_analysis_ov.html#log_analysis_ov)。
+要了解如何使用 {{site.data.keyword.loganalysisshort}} CLI，请参阅[管理日志](/docs/services/CloudLogAnalysis?topic=cloudloganalysis-log_analysis_ov#log_analysis_ov)。
 
 <table>
   <caption>用于管理日志的命令</caption>
@@ -190,7 +190,7 @@ ibmcloud cf logging delete -s 2017-05-25 -e 2017-05-25 -t linux_syslog
 
 将“日志收集”中的日志下载到本地文件，或者通过管道将日志传递到其他程序，例如 Elastic 堆栈。 
 
-**注**：要下载文件，需要首先创建会话。会话会根据日期范围、日志类型和帐户类型来定义要下载的日志。您将在会话上下文中下载日志。有关更多信息，请参阅 [ibmcloud cf logging session create (Beta)](/docs/services/CloudLogAnalysis/reference/logging_cli.html#session_create1)。
+**注**：要下载文件，需要首先创建会话。会话会根据日期范围、日志类型和帐户类型来定义要下载的日志。您将在会话上下文中下载日志。有关更多信息，请参阅 [ibmcloud cf logging session create (Beta)](/docs/services/CloudLogAnalysis/reference?topic=cloudloganalysis-logging_cli#session_create1)。
 
 ```
 ibmcloud cf logging download [parameters] [arguments]

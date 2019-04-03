@@ -74,6 +74,6 @@ Cloud Foundry 앱의 런타임 로그 또는 배치를 보려면 다음 단계�
 
 기본적으로 분석에 사용할 수 있는 로그에는 최근 15분 동안의 데이터가 포함되어 있습니다.
 
-**팁:** 사용자 정의 기간 동안의 데이터를 분석하려면 [Kibana를 사용한 고급 로그 분석](/docs/services/CloudLogAnalysis/kibana/analyzing_logs_Kibana.html#analyzing_logs_Kibana)을 참조하십시오. 
+**팁:** 사용자 정의 기간 동안의 데이터를 분석하려면 [Kibana를 사용한 고급 로그 분석](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-analyzing_logs_Kibana#analyzing_logs_Kibana)을 참조하십시오. 
 
 

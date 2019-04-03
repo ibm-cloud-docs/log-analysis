@@ -150,7 +150,7 @@ Le service {{site.data.keyword.loganalysisshort}} propose plusieurs plans. Chaqu
 
 **REMARQUE :** les fonctions qui sont incluses dans un plan de service sont activées uniquement dans l'espace dans lequel vous mettez à disposition le service {{site.data.keyword.loganalysisshort}} avec le plan en question.
 
-Vous pouvez modifier un plan via l'interface utilisateur {{site.data.keyword.Bluemix_notm}} ou via la ligne de commande. Vous pouvez passer à un plan de niveau inférieur ou supérieur à tout moment. Pour plus d'informations sur la sélection d'un plan de service de niveau supérieur, voir [Changement de plan](/docs/services/CloudLogAnalysis/how-to/change_plan.html#change_plan). 
+Vous pouvez modifier un plan via l'interface utilisateur {{site.data.keyword.Bluemix_notm}} ou via la ligne de commande. Vous pouvez passer à un plan de niveau inférieur ou supérieur à tout moment. Pour plus d'informations sur la sélection d'un plan de service de niveau supérieur, voir [Changement de plan](/docs/services/CloudLogAnalysis/how-to?topic=cloudloganalysis-change_plan#change_plan). 
 
 Le tableau suivant présente les plans disponibles :
 

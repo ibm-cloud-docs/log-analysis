@@ -140,7 +140,7 @@ O serviço {{site.data.keyword.loganalysisshort}} fornece múltiplos planos. Cad
 
 **NOTA:** os recursos que estão incluídos em um plano de serviço são ativados somente no espaço em que você provisiona o serviço {{site.data.keyword.loganalysisshort}} com esse plano.
 
-É possível mudar um plano por meio da UI do {{site.data.keyword.Bluemix_notm}} ou da linha de comandos. É possível fazer upgrade ou reduzir seu plano a qualquer momento. Para obter mais informações sobre upgrades de plano de serviço, veja [Mudando o plano](/docs/services/CloudLogAnalysis/how-to/change_plan.html#change_plan). 
+É possível mudar um plano por meio da UI do {{site.data.keyword.Bluemix_notm}} ou da linha de comandos. É possível fazer upgrade ou reduzir seu plano a qualquer momento. Para obter mais informações sobre upgrades de plano de serviço, veja [Mudando o plano](/docs/services/CloudLogAnalysis/how-to?topic=cloudloganalysis-change_plan#change_plan). 
 
 A tabela a seguir descreve os planos disponíveis:
 

@@ -37,5 +37,5 @@ subcollection: cloudloganalysis
 <!--Insert the appropriate dW Answers tag for your service for <service_keyword> in URL below:  -->
   * サービスおよび開始手順についての質問の場合、[{{site.data.keyword.IBM_notm}} developerWorks dW Answers](https://developer.ibm.com/answers/topics/log-analysis/?smartspace=ibm-cloud){:new_window} フォーラムを使用してください。
 
-* それでも問題を解決できない場合は、IBM サポート・チケットを開くことができます。 IBM サポート・チケットのオープン、またはサポート・レベルおよびチケットの重大度については、『[サポートへのお問い合わせ](/docs/get-support/howtogetsupport.html#getting-customer-support)』を参照してください。
+* それでも問題を解決できない場合は、IBM サポート・チケットを開くことができます。 IBM サポート・チケットのオープン、またはサポート・レベルおよびチケットの重大度については、『[サポートへのお問い合わせ](/docs/get-support?topic=get-support-getting-customer-support#getting-customer-support)』を参照してください。
 

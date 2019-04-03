@@ -26,24 +26,24 @@ subcollection: cloudloganalysis
 # Obtention du jeton IAM
 {: #auth_iam1}
 
-Pour gérer les journaux qui sont disponibles dans le domaine de compte via l'API {{site.data.keyword.loganalysisshort}}, vous devez utiliser un jeton d'authentification. Utilisez l'interface de ligne de commande {{{site.data.keyword.Bluemix_notm}} pour obtenir le jeton IAM. Le jeton possède un délai d'expiration. 
+Pour gérer les journaux qui sont disponibles dans le domaine de compte via l'API {{site.data.keyword.loganalysisshort}}, vous devez utiliser un jeton d'authentification. Utilisez l'interface de ligne de commande {{site.data.keyword.cloud_notm}} pour obtenir le jeton IAM. Le jeton possède un délai d'expiration. 
 {:shortdesc}
 
 
 ## Obtention du jeton IAM
 {: #iam_token_cli}
 
-Pour obtenir le jeton d'autorisation via l'interface de ligne de commande {{site.data.keyword.Bluemix_notm}}, procédez comme suit à partir d'un terminal :
+Pour obtenir le jeton d'autorisation via l'interface de ligne de commande {{site.data.keyword.cloud_notm}}, procédez comme suit à partir d'un terminal :
 
-1. Installez l'interface de ligne de commande {{site.data.keyword.Bluemix_notm}}.
+1. Installez l'interface de ligne de commande {{site.data.keyword.cloud_notm}}.
 
-   Pour plus d'informations, voir [Téléchargement et installation de l'interface de ligne de commande {{site.data.keyword.Bluemix}}](/docs/cli/index.html#overview).
+   Pour plus d'informations, voir [Téléchargement et installation de l'interface de ligne de commande {{site.data.keyword.Bluemix}}](/docs/cli?topic=cloud-cli-ibmcloud-cli#overview).
    
    Si l'interface de ligne de commande est installée, passez à l'étape suivante.
     
-2. Connectez-vous à une région dans {{site.data.keyword.Bluemix_notm}}. 
+2. Connectez-vous à une région dans {{site.data.keyword.cloud_notm}}. 
 
-    Pour plus d'informations, voir [Comment se connecter à {{site.data.keyword.Bluemix_notm}} ?](/docs/services/CloudLogAnalysis/qa/cli_qa.html#login).
+    Pour plus d'informations, voir [Comment se connecter à {{site.data.keyword.cloud_notm}} ?](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#login)
 	
 3. Exécutez la commande `ibmcloud iam oauth-tokens` pour obtenir le jeton IAM.
 

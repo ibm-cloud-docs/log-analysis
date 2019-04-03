@@ -28,7 +28,7 @@ subcollection: cloudloganalysis
 In {{site.data.keyword.Bluemix}} können Sie einem Benutzer eine oder mehrere IAM-Rollen zuweisen. Diese Rollen definieren, welche Tasks für diesen Benutzer für die Arbeit mit dem {{site.data.keyword.loganalysisshort}}-Service aktiviert sind.  
 {:shortdesc}
 
-Sie können einem Benutzer beispielsweise die Rolle **operator** erteilen, um ihm die Verwaltung von Protokollen zu ermöglichen. Wenn Sie einem Benutzer nur das Anzeigen von Protokollen ermöglichen möchten, können Sie diesem Benutzer die Rolle **viewer** erteilen. Weitere Informationen finden Sie unter [IAM-Rollen](/docs/services/CloudLogAnalysis/security_ov.html#iam_roles).
+Sie können einem Benutzer beispielsweise die Rolle **operator** erteilen, um ihm die Verwaltung von Protokollen zu ermöglichen. Wenn Sie einem Benutzer nur das Anzeigen von Protokollen ermöglichen möchten, können Sie diesem Benutzer die Rolle **viewer** erteilen. Weitere Informationen finden Sie unter [IAM-Rollen](/docs/services/CloudLogAnalysis?topic=cloudloganalysis-security_ov#iam_roles).
 
 **Hinweis:** 
 
@@ -52,7 +52,7 @@ Führen Sie die folgenden Schritte aus, um einem Benutzer Berechtigungen für di
 	
 3. Wenn der Benutzer ein Mitglied des Kontos ist, wählen Sie den Benutzernamen aus der Liste aus oder klicken Sie im Menü *Aktionen* auf **Benutzer verwalten**.
 
-    Wenn der Benutzer kein Mitglied des Kontos ist, finden Sie unter [Benutzer einladen](/docs/iam/iamuserinv.html#iamuserinv) Informationen zum entsprechenden Vorgehen in diesem Fall.
+    Wenn der Benutzer kein Mitglied des Kontos ist, finden Sie unter [Benutzer einladen](/docs/iam?topic=iam-iamuserinv#iamuserinv) Informationen zum entsprechenden Vorgehen in diesem Fall.
 
 4. Klicken Sie im Abschnitt **Zugriffsrichtlinien** auf **Zugriff zuweisen** und wählen Sie anschließend **Zugriff auf Ressourcen zuweisen**.
 
@@ -80,7 +80,7 @@ Führen Sie die folgenden Schritte aus, um einem Benutzer Berechtigungen für di
 	  </tr>
 	  <tr>
 	    <td>Rollen</td>
-		<td>Wählen Sie eine oder mehrere IAM-Rollen aus. <br>Gültige Rollen sind: *Administrator*, *Operator*, *Editor* und *Anzeigeberechtigter*. <br>Weitere Informationen zu den Aktionen, die pro Rolle zulässig sind, finden Sie unter [IAM-Rollen](/docs/services/CloudLogAnalysis/security_ov.html#iam_roles).
+		<td>Wählen Sie eine oder mehrere IAM-Rollen aus. <br>Gültige Rollen sind: *Administrator*, *Operator*, *Editor* und *Anzeigeberechtigter*. <br>Weitere Informationen zu den Aktionen, die pro Rolle zulässig sind, finden Sie unter [IAM-Rollen](/docs/services/CloudLogAnalysis?topic=cloudloganalysis-security_ov#iam_roles).
 		</td>
 	  </tr>
      </table>
@@ -97,7 +97,7 @@ Führen Sie die folgenden Schritte aus, um einem Benutzer über die Befehlszeile
 
 1. Meldne Sie sich über ein Terminal beim {{site.data.keyword.Bluemix_notm}}-Konto an. 
 
-    Weitere Informationen finden Sie unter [Wie melde ich mich bei {{site.data.keyword.Bluemix_notm}} an?](/docs/services/CloudLogAnalysis/qa/cli_qa.html#login).
+    Weitere Informationen finden Sie in [Wie melde ich mich bei {{site.data.keyword.Bluemix_notm}} an?](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#login).
 
 2. Überprüfen Sie, ob der Benutzer ein Mitglied für das Konto ist. Führen Sie den folgenden Befehl aus, um die Liste der Benutzer im Konto abzurufen:
 
@@ -108,7 +108,7 @@ Führen Sie die folgenden Schritte aus, um einem Benutzer über die Befehlszeile
 
 	Es wird eine Liste von Benutzern mit ihren jeweiligen GUIDs angezeigt.
 
-3. Wenn der Benutzer kein Mitglied des Kontos ist, wenden Sie sich an den Kontoeigner und fordern Sie eine Einladung dieses Benutzers für das Konto an. Weitere Informationen finden Sie in [Benutzer einladen](/docs/iam/iamuserinv.html#iamuserinv).
+3. Wenn der Benutzer kein Mitglied des Kontos ist, wenden Sie sich an den Kontoeigner und fordern Sie eine Einladung dieses Benutzers für das Konto an. Weitere Informationen finden Sie in [Benutzer einladen](/docs/iam?topic=iam-iamuserinv#iamuserinv).
 
     **Tipp:** Der Befehl zum Einladen eines Benutzers zu einem Konto lautet wie folgt: `ibmcloud iam account-user-invite USER_EMAIL`
 		
@@ -152,7 +152,7 @@ Führen Sie die folgenden Schritte aus, um einem Benutzer Berechtigungen für di
 	
 3. Wenn der Benutzer ein Mitglied des Kontos ist, wählen Sie den Benutzernamen aus der Liste aus oder klicken Sie im Menü *Aktionen* auf **Benutzer verwalten**.
 
-    Wenn der Benutzer kein Mitglied des Kontos ist, finden Sie unter [Benutzer einladen](/docs/iam/iamuserinv.html#iamuserinv) Informationen zum entsprechenden Vorgehen in diesem Fall.
+    Wenn der Benutzer kein Mitglied des Kontos ist, finden Sie unter [Benutzer einladen](/docs/iam?topic=iam-iamuserinv#iamuserinv) Informationen zum entsprechenden Vorgehen in diesem Fall.
 
 4. Wählen Sie **Cloud Foundry-Zugriff** und anschließend die Organisation aus.
 

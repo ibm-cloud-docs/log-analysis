@@ -32,19 +32,19 @@ Nella pagina Rileva, puoi creare le query di ricerca e applicare i filtri per vi
 
 * Puoi aggiungere filtri dall'*Elenco campi* o dalle voci della tabella. Un filtro ridefinisce la selezione dei dati includendo o escludendo informazioni. Puoi abilitare o disabilitare un filtro, invertire l'azione di filtro, attivare/disattivare il filtro o rimuoverlo completamente. 
 
-Dopo aver definito una nuova ricerca, salvala in modo da poterla riutilizzare per analisi future nella pagina Rileva o per creare le visualizzazioni che puoi utilizzare nei dashboard personalizzati. Per maggiori informazioni, vedi [Salvataggio di una ricerca](/docs/services/CloudLogAnalysis/kibana/define_search.html#save_search1).
+Dopo aver definito una nuova ricerca, salvala in modo da poterla riutilizzare per analisi future nella pagina Rileva o per creare le visualizzazioni che puoi utilizzare nei dashboard personalizzati. Per maggiori informazioni, vedi [Salvataggio di una ricerca](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-define_search#save_search1).
 
-Quando esegui una nuova ricerca, l'istogramma, la tabella e l'elenco dei campi vengono automaticamente aggiornati per visualizzare i risultati della ricerca. Per scoprire quali dati vengono visualizzati, vedi [Identificazione dei dati visualizzati nella pagina Rileva](/docs/services/CloudLogAnalysis/kibana/analize_logs_interactively.html#identify_data).
+Quando esegui una nuova ricerca, l'istogramma, la tabella e l'elenco dei campi vengono automaticamente aggiornati per visualizzare i risultati della ricerca. Per scoprire quali dati vengono visualizzati, vedi [Identificazione dei dati visualizzati nella pagina Rileva](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-analize_logs_interactively#identify_data).
 
 Il seguente elenco presenta gli scenari che mostrano come filtrare i dati nei tuoi log:
 
-* Puoi creare delle ricerche personalizzate per filtrare i tuoi log. Per ulteriori informazioni, vedi [Filtro dei log definendo query personalizzate](/docs/services/CloudLogAnalysis/kibana/define_search.html#define_search).
+* Puoi creare delle ricerche personalizzate per filtrare i tuoi log. Per ulteriori informazioni, vedi [Filtro dei log definendo query personalizzate](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-define_search#define_search).
 
-* Puoi eseguire la ricerca nel tuo log per le voci che includono un testo specifico nel valore di un campo. Per maggiori informazioni, vedi [Filtro dei tuoi log per un testo specifico in un valore del campo](/docs/services/CloudLogAnalysis/kibana/filter_logs.html#filter_logs_spec_text).
+* Puoi eseguire la ricerca nel tuo log per le voci che includono un testo specifico nel valore di un campo. Per maggiori informazioni, vedi [Filtro dei tuoi log per un testo specifico in un valore del campo](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-filter_logs#filter_logs_spec_text).
  
-* Puoi eseguire la ricerca nel tuo log per un valore del campo specifico o escludere voci dal log per un valore del campo specifico. Per maggiori informazioni, vedi [Filtro dei tuoi log per un valore del campo specifico](/docs/services/CloudLogAnalysis/kibana/filter_logs.html#filter_logs_spec_field).
+* Puoi eseguire la ricerca nel tuo log per un valore del campo specifico o escludere voci dal log per un valore del campo specifico. Per maggiori informazioni, vedi [Filtro dei tuoi log per un valore del campo specifico](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-filter_logs#filter_logs_spec_field).
  
-* Puoi filtrare i tuoi log per visualizzare le voci in un periodo di tempo. Per maggiori informazioni, vedi [Configurazione di un filtro temporale](/docs/services/CloudLogAnalysis/kibana/filter_logs.html#set_time_filter).
+* Puoi filtrare i tuoi log per visualizzare le voci in un periodo di tempo. Per maggiori informazioni, vedi [Configurazione di un filtro temporale](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-filter_logs#set_time_filter).
      
 
 ## Aggiunta di un filtro a un valore non elencato nell'*Elenco campi*
@@ -54,7 +54,7 @@ Per aggiungere un filtro a un valore non visualizzato nell'*Elenco campi*, ricer
 
 Completa la seguente procedura per aggiungere un filtro al valore che non è disponibile nell'elenco visualizzato nella sezione *Elenco campi*:
 
-1. Guarda nella pagina Rileva Kibana per visualizzare quale sottorete dei tuoi dati viene visualizzata. Per ulteriori informazioni, vedi [Identificazione dei dati visualizzati nella tua pagina Rileva Kibana](/docs/services/CloudLogAnalysis/kibana/analize_logs_interactively.html#identify_data).
+1. Guarda nella pagina Rileva Kibana per visualizzare quale sottorete dei tuoi dati viene visualizzata. Per ulteriori informazioni, vedi [Identificazione dei dati visualizzati nella tua pagina Rileva Kibana](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-analize_logs_interactively#identify_data).
 
 2. Nella pagina Rileva, modifica la query per ricercare un valore di campo specifico.
 
@@ -77,13 +77,13 @@ Puoi cercare le voci che includono un valore del campo specifico.
 
 Completa la seguente procedura per cercare le voci che includono un valore del campo specifico:
 
-1. Guarda nella pagina Rileva Kibana per visualizzare quale sottorete dei tuoi dati viene visualizzata. Per ulteriori informazioni, vedi [Identificazione dei dati visualizzati nella tua pagina Rileva Kibana](/docs/services/CloudLogAnalysis/kibana/analize_logs_interactively.html#identify_data).
+1. Guarda nella pagina Rileva Kibana per visualizzare quale sottorete dei tuoi dati viene visualizzata. Per ulteriori informazioni, vedi [Identificazione dei dati visualizzati nella tua pagina Rileva Kibana](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-analize_logs_interactively#identify_data).
 
 2. Nell'*Elenco campi*, identifica il campo per cui desideri definire un filtro e fai clic su di esso.
 
     Per il campo viene visualizzato un massimo di 5 valori. Ogni valore ha due pulsanti della lente di ingrandimento. 
     
-    Se non puoi visualizzare il valore, vedi [Aggiunta di un filtro a un valore non elencato nell'Elenco campi](/docs/services/CloudLogAnalysis/kibana/filter_logs.html#add_filter_out_value).
+    Se non puoi visualizzare il valore, vedi [Aggiunta di un filtro a un valore non elencato nell'Elenco campi](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-filter_logs#add_filter_out_value).
 
 3. Per aggiungere un filtro che cerca le voci con un valore di campo, scegli la lente di ingrandimento con un segno più ![Lente di ingrandimento in modalità inclusiva](images/include_field_icon.jpg "Pulsante di lente di ingrandimento in modalità inclusiva") per tale valore.
 
@@ -133,13 +133,13 @@ Completa la seguente procedura per cercare le voci che includono un valore del c
 
 Completa la seguente procedura per cercare le voci che includono un'origine del log specifica:
 
-1. Guarda nella pagina Rileva Kibana per visualizzare quale sottorete dei tuoi dati viene visualizzata. Per ulteriori informazioni, vedi [Identificazione dei dati visualizzati nella tua pagina Rileva Kibana](/docs/services/CloudLogAnalysis/kibana/analize_logs_interactively.html#identify_data).
+1. Guarda nella pagina Rileva Kibana per visualizzare quale sottorete dei tuoi dati viene visualizzata. Per ulteriori informazioni, vedi [Identificazione dei dati visualizzati nella tua pagina Rileva Kibana](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-analize_logs_interactively#identify_data).
 
 2. Nell'*Elenco campi*, seleziona il campo **source_id**.
 
 3. Per aggiungere un filtro che ricerca le voci che includono un source_id specifico, scegli il pulsante di lente di ingrandimento ![Pulsante di lente di ingrandimento nella modalità inclusiva](images/include_field_icon.jpg "Pulsante di lente di ingrandimento nella modalità inclusiva") per tale valore.
 
-    Per un elenco delle origini del log disponibili per le applicazioni CF, vedi [Origini log per le applicazioni CF](/docs/services/CloudLogAnalysis/cfapps/logging_cf_apps.html#logging_bluemix_cf_apps_log_sources).
+    Per un elenco delle origini del log disponibili per le applicazioni CF, vedi [Origini log per le applicazioni CF](/docs/services/CloudLogAnalysis/cfapps?topic=cloudloganalysis-logging_cf_apps#logging_bluemix_cf_apps_log_sources).
 
     Per aggiungere un filtro che ricerca le voci che non includono un source_id specifico, scegli il pulsante di lente di ingrandimento ![Pulsante di lente di ingrandimento nella modalità esclusiva](images/exclude_field_icon.jpg "Pulsante di lente di ingrandimento nella modalità esclusiva") per il valore.
     
@@ -150,7 +150,7 @@ Completa la seguente procedura per cercare le voci che includono un'origine del 
 
 Completa la seguente procedura per cercare le voci che includono un tipo di log specifico:
 
-1. Guarda nella pagina Rileva Kibana per visualizzare quale sottorete dei tuoi dati viene visualizzata. Per ulteriori informazioni, vedi [Identificazione dei dati visualizzati nella tua pagina Rileva Kibana](/docs/services/CloudLogAnalysis/kibana/analize_logs_interactively.html#identify_data).
+1. Guarda nella pagina Rileva Kibana per visualizzare quale sottorete dei tuoi dati viene visualizzata. Per ulteriori informazioni, vedi [Identificazione dei dati visualizzati nella tua pagina Rileva Kibana](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-analize_logs_interactively#identify_data).
 
 2. Nell'*Elenco campi*, seleziona il campo **tipo**.
 
@@ -165,7 +165,7 @@ Completa la seguente procedura per cercare le voci che includono un tipo di log 
 
 Completa le seguenti attività per visualizzare e filtrare i tuoi log per ID istanza nel dashboard Kibana:
 
-1. Guarda nella pagina Rileva Kibana per visualizzare quale sottorete dei tuoi dati viene visualizzata. Per ulteriori informazioni, vedi [Identificazione dei dati visualizzati nella tua pagina Rileva Kibana](/docs/services/CloudLogAnalysis/kibana/analize_logs_interactively.html#identify_data).
+1. Guarda nella pagina Rileva Kibana per visualizzare quale sottorete dei tuoi dati viene visualizzata. Per ulteriori informazioni, vedi [Identificazione dei dati visualizzati nella tua pagina Rileva Kibana](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-analize_logs_interactively#identify_data).
 
 2. Nell'*Elenco campi*, seleziona uno dei seguenti campi per la ricerca per un ID istanza specifico:
 
@@ -184,7 +184,7 @@ Completa le seguenti attività per visualizzare e filtrare i tuoi log per ID ist
 
 Completa la seguente procedura per cercare le voci che includono un tipo di messaggio specifico:
 
-1. Guarda nella pagina Rileva Kibana per visualizzare quale sottorete dei tuoi dati viene visualizzata. Per ulteriori informazioni, vedi [Identificazione dei dati visualizzati nella tua pagina Rileva Kibana](/docs/services/CloudLogAnalysis/kibana/analize_logs_interactively.html#identify_data).
+1. Guarda nella pagina Rileva Kibana per visualizzare quale sottorete dei tuoi dati viene visualizzata. Per ulteriori informazioni, vedi [Identificazione dei dati visualizzati nella tua pagina Rileva Kibana](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-analize_logs_interactively#identify_data).
 
 2. Nell'*Elenco campi*, seleziona il campo **message_type**.
 
@@ -208,11 +208,11 @@ Quando Elasticsearch analizza il valore di un campo stringa, suddivide il testo 
     
 Completa la seguente procedura per cercare le voci che includono testo specifico in un valore del campo:
 
-1. Guarda nella pagina Rileva Kibana per visualizzare quale sottorete dei tuoi dati viene visualizzata. Per ulteriori informazioni, vedi [Identificazione dei dati visualizzati nella tua pagina Rileva Kibana](/docs/services/CloudLogAnalysis/kibana/analize_logs_interactively.html#identify_data).
+1. Guarda nella pagina Rileva Kibana per visualizzare quale sottorete dei tuoi dati viene visualizzata. Per ulteriori informazioni, vedi [Identificazione dei dati visualizzati nella tua pagina Rileva Kibana](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-analize_logs_interactively#identify_data).
 
 2. Identifica i campi analizzati in ElasticSearch per impostazione predefinita.
 
-    Per visualizzare l'elenco completo dei campi analizzati disponibili per la ricerca e il filtro dei dati di log, [ricarica l'elenco dei campi](/docs/services/CloudLogAnalysis/kibana/analize_logs_interactively.html#discover_view_reload_fields). Quindi, nell'*Elenco campi* disponibile nella pagina Rileva, completa la seguente procedura:
+    Per visualizzare l'elenco completo dei campi analizzati disponibili per la ricerca e il filtro dei dati di log, [ricarica l'elenco dei campi](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-analize_logs_interactively#discover_view_reload_fields). Quindi, nell'*Elenco campi* disponibile nella pagina Rileva, completa la seguente procedura:
     
     1. Fai clic sull'icona di configurazione ![Icona di configurazione](images/configure_icon.jpg "Icona di configurazione"). Viene visualizzata la sezione **Campi selezionati** in cui puoi filtrare i campi.
 

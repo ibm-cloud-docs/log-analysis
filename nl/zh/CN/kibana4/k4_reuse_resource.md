@@ -57,9 +57,9 @@ subcollection: cloudloganalysis
 
 1. 启动要复制的搜索在其中可用的 Kibana。 
 
-    * 通过 {{site.data.keyword.Bluemix_notm}} UI 启动 Kibana：可以导出的 JSON 搜索文件包含以下字段：*空间标识*和 Cloud Foundry (CF) 应用程序的*应用程序标识*或容器的*实例标识*。有关更多信息，请参阅[通过 {{site.data.keyword.Bluemix_notm}} 仪表板访问 Kibana 仪表板](/docs/services/CloudLogAnalysis/kibana4/k4_launch.html#launch_Kibana_from_bluemix)。
+    * 通过 {{site.data.keyword.Bluemix_notm}} UI 启动 Kibana：可以导出的 JSON 搜索文件包含以下字段：*空间标识*和 Cloud Foundry (CF) 应用程序的*应用程序标识*或容器的*实例标识*。有关更多信息，请参阅[通过 {{site.data.keyword.Bluemix_notm}} 仪表板访问 Kibana 仪表板](/docs/services/CloudLogAnalysis/kibana4?topic=cloudloganalysis-k4_launch#launch_Kibana_from_bluemix)。
     
-    * 通过浏览器启动 Kibana：可以导出的 JSON 搜索文件包含*空间标识*字段。有关更多信息，请参阅[通过浏览器访问 Kibana 仪表板](/docs/services/CloudLogAnalysis/kibana4/k4_launch.html#launch_Kibana_from_browser1)。
+    * 通过浏览器启动 Kibana：可以导出的 JSON 搜索文件包含*空间标识*字段。有关更多信息，请参阅[通过浏览器访问 Kibana 仪表板](/docs/services/CloudLogAnalysis/kibana4?topic=cloudloganalysis-k4_launch#launch_Kibana_from_browser1)。
 
 2. 在*设置*页面中，选择**对象**，然后选择**搜索**选项卡。接着选择一个搜索，并复制以下信息：
 
@@ -95,7 +95,7 @@ subcollection: cloudloganalysis
     
 5. 启动要将搜索导入其中的 {{site.data.keyword.Bluemix_notm}} 空间的 Kibana，然后获取以下信息：
 
-    在 [Bluemix UI](/docs/services/CloudLogAnalysis/kibana4/k4_launch.html#launch_Kibana_from_bluemix) 中：
+    在 [Bluemix UI](/docs/services/CloudLogAnalysis/kibana4?topic=cloudloganalysis-k4_launch#launch_Kibana_from_bluemix) 中：
     
     <table>
       <tbody>
@@ -197,9 +197,9 @@ subcollection: cloudloganalysis
 
 1. 启动要复制的可视化项在其中可用的空间的 Kibana。 
 
-    * 通过 {{site.data.keyword.Bluemix_notm}} UI 启动 Kibana：可以导出的 JSON 搜索文件包含以下字段：*空间标识*和 Cloud Foundry (CF) 应用程序的*应用程序标识*或容器的*实例标识*。有关更多信息，请参阅[通过 {{site.data.keyword.Bluemix_notm}} 仪表板访问 Kibana 仪表板](/docs/services/CloudLogAnalysis/kibana4/k4_launch.html#launch_Kibana_from_bluemix)。
+    * 通过 {{site.data.keyword.Bluemix_notm}} UI 启动 Kibana：可以导出的 JSON 搜索文件包含以下字段：*空间标识*和 Cloud Foundry (CF) 应用程序的*应用程序标识*或容器的*实例标识*。有关更多信息，请参阅[通过 {{site.data.keyword.Bluemix_notm}} 仪表板访问 Kibana 仪表板](/docs/services/CloudLogAnalysis/kibana4?topic=cloudloganalysis-k4_launch#launch_Kibana_from_bluemix)。
     
-    * 通过浏览器启动 Kibana：可以导出的 JSON 搜索文件包含*空间标识*字段。有关更多信息，请参阅[通过浏览器访问 Kibana 仪表板](/docs/services/CloudLogAnalysis/kibana4/k4_launch.html#launch_Kibana_from_browser1)。
+    * 通过浏览器启动 Kibana：可以导出的 JSON 搜索文件包含*空间标识*字段。有关更多信息，请参阅[通过浏览器访问 Kibana 仪表板](/docs/services/CloudLogAnalysis/kibana4?topic=cloudloganalysis-k4_launch#launch_Kibana_from_browser1)。
     
 2. 在不同空间之间复制与可视化项关联的搜索。有关更多信息，请参阅[在不同 Bluemix 空间之间复制搜索](/docs/services/CloudLogAnalysis/kibana4/k4_reuse_resource.html#k4_reuse_search)。
 

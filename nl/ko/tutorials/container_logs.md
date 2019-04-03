@@ -51,15 +51,15 @@ subcollection: cloudloganalysis
     * *편집자*, *운영자* 또는 *관리자* 권한이 있는 {{site.data.keyword.containershort}}에 대한 IAM 정책
     * {{site.data.keyword.loganalysisshort}} 서비스가 *개발자* 권한으로 프로비저닝된 영역에 대한 CF 역할
     
-    자세한 정보는 [IBM Cloud UI를 통해 사용자에게 IAM 정책 지정](/docs/services/CloudLogAnalysis/security/grant_permissions.html#grant_permissions_ui_account) 및 [IBM Cloud UI를 사용하여 사용자에게 영역 로그를 볼 수 있는 권한 부여](/docs/services/CloudLogAnalysis/security/grant_permissions.html#grant_permissions_ui_space)를 참조하십시오.
+    자세한 정보는 [IBM Cloud UI를 통해 사용자에게 IAM 정책 지정](/docs/services/CloudLogAnalysis/security?topic=cloudloganalysis-grant_permissions#grant_permissions_ui_account) 및 [IBM Cloud UI를 사용하여 사용자에게 영역 로그를 볼 수 있는 권한 부여](/docs/services/CloudLogAnalysis/security?topic=cloudloganalysis-grant_permissions#grant_permissions_ui_space)를 참조하십시오.
 
 2. Kubernetes 클러스터를 관리할 수 있는 터미널 세션이 있고 명령행에서 앱을 배치합니다. 이 튜토리얼에 소개되는 예는 Ubuntu Linux 시스템에 대해 제공됩니다.
 
 3. Ubuntu 시스템에서 {{site.data.keyword.containershort}} 및 {{site.data.keyword.loganalysisshort}}에 대해 작업하기 위한 CLI를 설치하십시오.
 
-    * {{site.data.keyword.Bluemix_notm}} CLI를 설치하십시오. {{site.data.keyword.containershort}}에서 Kubernetes 클러스터를 작성 및 관리하고 컨테이너식 앱을 클러스터에 배치하기 위한 {{site.data.keyword.containershort}} CLI를 설치하십시오. 자세한 정보는 [{{site.data.keyword.Bluemix_notm}} CLI 설치](/docs/cli/index.html#overview)를 참조하십시오.
+    * {{site.data.keyword.Bluemix_notm}} CLI를 설치하십시오. {{site.data.keyword.containershort}}에서 Kubernetes 클러스터를 작성 및 관리하고 컨테이너식 앱을 클러스터에 배치하기 위한 {{site.data.keyword.containershort}} CLI를 설치하십시오. 자세한 정보는 [{{site.data.keyword.Bluemix_notm}} CLI 설치](/docs/cli?topic=cloud-cli-ibmcloud-cli#overview)를 참조하십시오.
     
-    * {{site.data.keyword.loganalysisshort}} CLI를 설치하십시오. 자세한 정보는 [Log Analysis CLI(IBM Cloud 플러그인) 구성](/docs/services/CloudLogAnalysis/how-to/manage-logs/config_log_collection_cli_cloud.html#config_log_collection_cli)을 참조하십시오.
+    * {{site.data.keyword.loganalysisshort}} CLI를 설치하십시오. 자세한 정보는 [Log Analysis CLI(IBM Cloud 플러그인) 구성](/docs/services/CloudLogAnalysis/how-to/manage-logs?topic=cloudloganalysis-config_log_collection_cli#config_log_collection_cli)을 참조하십시오.
     
 4. 미국 남부 지역의 계정에서 **dev**라는 영역에 액세스할 수 있도록 하십시오. 
 
@@ -81,11 +81,11 @@ subcollection: cloudloganalysis
 
 1. 표준 Kubernetes 클러스터를 작성하십시오.
 
-   자세한 정보는 [클러스터 작성](/docs/containers/cs_tutorials.html#cs_cluster_tutorial)을 참조하십시오.
+   자세한 정보는 [클러스터 작성](/docs/containers?topic=containers-cs_cluster_tutorial#cs_cluster_tutorial)을 참조하십시오.
 
 2. 터미널에서 클러스터 컨텍스트를 설정하십시오. 컨텍스트가 설정된 후에 Kubernetes 클러스터를 관리하고, Kubernetes 클러스터에서 애플리케이션을 배치할 수 있습니다.
 
-    작성한 클러스터와 연관된 {{site.data.keyword.Bluemix_notm}}의 지역, 조직 및 영역에 로그인하십시오. 자세한 정보는 [{{site.data.keyword.Bluemix_notm}}에 로그인하는 방법](/docs/services/CloudLogAnalysis/qa/cli_qa.html#login)을 참조하십시오.
+    작성한 클러스터와 연관된 {{site.data.keyword.Bluemix_notm}}의 지역, 조직 및 영역에 로그인하십시오. 자세한 정보는 [{{site.data.keyword.Bluemix_notm}}에 로그인하는 방법](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#login)을 참조하십시오.
 
 	{{site.data.keyword.containershort}} 서비스 플러그인을 초기화하십시오.
 
@@ -145,7 +145,7 @@ ae249c04-a3a9-4c29-a890-22d8da7bd1b2   container    *           ingest.logging.n
 ```
 {: screen}
 
-로깅 구성을 정의할 수 있는 로그 소스의 목록을 보려면 [로그 소스](/docs/services/CloudLogAnalysis/containers/containers_kubernetes.html#log_sources)를 참조하십시오.
+로깅 구성을 정의할 수 있는 로그 소스의 목록을 보려면 [로그 소스](/docs/services/CloudLogAnalysis/containers?topic=cloudloganalysis-containers_kubernetes#log_sources)를 참조하십시오.
 
 
 ### stderr 및 stdout 로그를 {{site.data.keyword.loganalysisshort}} 서비스에 전달하도록 클러스터 구성
@@ -176,7 +176,7 @@ stdout 및 stderr 로그를 영역 도메인으로 보내려면 다음 단계를
     여기서 
 
     * *ClusterName*은 클러스터의 이름입니다.
-    * *EndPoint*는 {{site.data.keyword.loganalysisshort}} 서비스가 프로비저닝된 영역의 로깅 서비스에 대한 URL입니다. 엔드포인트 목록은 [엔드포인트](/docs/services/CloudLogAnalysis/log_ingestion.html#log_ingestion_urls)를 참조하십시오.
+    * *EndPoint*는 {{site.data.keyword.loganalysisshort}} 서비스가 프로비저닝된 영역의 로깅 서비스에 대한 URL입니다. 엔드포인트 목록은 [엔드포인트](/docs/services/CloudLogAnalysis?topic=cloudloganalysis-log_ingestion#log_ingestion_urls)를 참조하십시오.
     * *OrgName*은 영역이 사용 가능한 조직의 이름입니다.
     * *SpaceName*은 {{site.data.keyword.loganalysisshort}} 서비스가 프로비저닝된 영역의 이름입니다.
 
@@ -218,7 +218,7 @@ ibmcloud cs logging-config-create mycluster --logsource container --type ibm --n
     여기서 
 
     * *ClusterName*은 클러스터의 이름입니다.
-    * *EndPoint*는 {{site.data.keyword.loganalysisshort}} 서비스가 프로비저닝된 영역의 로깅 서비스에 대한 URL입니다. 엔드포인트 목록은 [엔드포인트](/docs/services/CloudLogAnalysis/log_ingestion.html#log_ingestion_urls)를 참조하십시오.
+    * *EndPoint*는 {{site.data.keyword.loganalysisshort}} 서비스가 프로비저닝된 영역의 로깅 서비스에 대한 URL입니다. 엔드포인트 목록은 [엔드포인트](/docs/services/CloudLogAnalysis?topic=cloudloganalysis-log_ingestion#log_ingestion_urls)를 참조하십시오.
     * *OrgName*은 영역이 사용 가능한 조직의 이름입니다.
     * *SpaceName*은 {{site.data.keyword.loganalysisshort}} 서비스가 프로비저닝된 영역의 이름입니다.
 
@@ -251,7 +251,7 @@ ibmcloud cs logging-config-create mycluster --logsource worker  --type ibm --hos
 	
 3. 사용자가 계정의 구성원인 경우 목록에서 사용자 이름을 선택하거나 *조치* 메뉴에서 **사용자 관리**를 클릭하십시오.
 
-    사용자가 계정의 구성원이 아닌 경우 [사용자 초대](/docs/iam/iamuserinv.html#iamuserinv)를 참조하십시오.
+    사용자가 계정의 구성원이 아닌 경우 [사용자 초대](/docs/iam?topic=iam-iamuserinv#iamuserinv)를 참조하십시오.
 
 4. **Cloud Foundry 액세스**를 선택한 후 조직을 선택하십시오.
 
@@ -297,7 +297,7 @@ ibmcloud cs logging-config-create mycluster --logsource worker  --type ibm --hos
 	
     사용자의 ID를 선택하고 사용자에게 조직에 대한 *orgManager* 역할과 영역에 대한 *SpaceManager* 및 *개발자* 역할이 있는지 확인하십시오.
 
-    사용자에게 올바른 권한이 없는 경우 사용자에게 조직에 대한 *orgManager* 역할과 영역에 대한 *SpaceManager* 및 *개발자* 권한을 부여하십시오. 자세한 정보는 [IBM Cloud UI를 사용하여 사용자에게 영역 로그를 볼 수 있는 권한 부여](/docs/services/CloudLogAnalysis/security/grant_permissions.html#grant_permissions_ui_space)를 참조하십시오.
+    사용자에게 올바른 권한이 없는 경우 사용자에게 조직에 대한 *orgManager* 역할과 영역에 대한 *SpaceManager* 및 *개발자* 권한을 부여하십시오. 자세한 정보는 [IBM Cloud UI를 사용하여 사용자에게 영역 로그를 볼 수 있는 권한 부여](/docs/services/CloudLogAnalysis/security?topic=cloudloganalysis-grant_permissions#grant_permissions_ui_space)를 참조하십시오.
     
 3. {{site.data.keyword.containershort}} 키 소유자로 식별된 사용자에게 *관리자* 권한이 있는 {{site.data.keyword.loganalysisshort}} 서비스에 대한 IAM 정책이 있는지 확인하십시오.
 
@@ -305,7 +305,7 @@ ibmcloud cs logging-config-create mycluster --logsource worker  --type ibm --hos
 	
     사용자의 ID를 선택하고 사용자에게 IAM 정책 세트가 있는지 확인하십시오. 
 
-    사용자에게 IAM 정책이 없는 경우 [IBM Cloud UI를 통해 사용자에게 IAM 정책 지정](/docs/services/CloudLogAnalysis/security/grant_permissions.html#grant_permissions_ui_account)을 참조하십시오.
+    사용자에게 IAM 정책이 없는 경우 [IBM Cloud UI를 통해 사용자에게 IAM 정책 지정](/docs/services/CloudLogAnalysis/security?topic=cloudloganalysis-grant_permissions#grant_permissions_ui_account)을 참조하십시오.
 
 4. 로깅 구성을 새로 고치십시오. 다음 명령을 실행하십시오.
     
@@ -322,7 +322,7 @@ ibmcloud cs logging-config-create mycluster --logsource worker  --type ibm --hos
 ## 5단계: Kubernetes 클러스터에서 샘플 앱을 배치하여 stdout에 컨텐츠 생성
 {: #step53}
 
-Kubernetes 클러스터에서 샘플 앱을 배치하고 실행하십시오. [학습 1: Kubernetes 클러스터에 단일 인스턴스 앱 배치](/docs/containers/cs_tutorials_apps.html#cs_apps_tutorial_lesson1) 튜토리얼의 단계를 완료하여 샘플 앱을 배치하십시오.
+Kubernetes 클러스터에서 샘플 앱을 배치하고 실행하십시오. [학습 1: Kubernetes 클러스터에 단일 인스턴스 앱 배치](/docs/containers?topic=containers-cs_apps_tutorial#cs_apps_tutorial_lesson1) 튜토리얼의 단계를 완료하여 샘플 앱을 배치하십시오.
 
 앱은 Hello World Node.js 앱입니다.
 
@@ -353,7 +353,7 @@ app.listen(8080, function() {
 
 1. 브라우저에서 Kibana를 실행하십시오. 
 
-    Kibana 실행 방법에 대한 자세한 정보는 [웹 브라우저에서 Kibana로 이동](/docs/services/CloudLogAnalysis/kibana/launch.html#launch_Kibana_from_browser)을 참조하십시오.
+    Kibana 실행 방법에 대한 자세한 정보는 [웹 브라우저에서 Kibana로 이동](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-launch#launch_Kibana_from_browser)을 참조하십시오.
 
     클러스터에 대한 로그 데이터를 분석하려면 클러스터가 작성된 클라우드 공용 지역에서 Kibana에 액세스해야 합니다. 
     
@@ -366,7 +366,7 @@ app.listen(8080, function() {
 	
     Kibana가 열립니다.
     
-    **참고:** 클러스터 로그를 전달할 지역에서 Kibana를 실행하는지 확인하십시오. 지역별 URL에 대한 정보는 [로깅 엔드포인트](/docs/services/CloudLogAnalysis/kibana/analyzing_logs_Kibana.html#urls_kibana)를 참조하십시오.
+    **참고:** 클러스터 로그를 전달할 지역에서 Kibana를 실행하는지 확인하십시오. 지역별 URL에 대한 정보는 [로깅 엔드포인트](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-analyzing_logs_Kibana#urls_kibana)를 참조하십시오.
     	
 2. 영역 도메인에서 사용 가능한 로그 데이터를 보려면 다음 단계를 완료하십시오.
 
@@ -436,7 +436,7 @@ app.listen(8080, function() {
               </tr>
         </table>
      
-Kubernetes 클러스터와 관련된 다른 검색 필드에 대한 자세한 정보는 [로그 검색](/docs/services/CloudLogAnalysis/containers/containers_kubernetes.html#log_search)을 참조하십시오.
+Kubernetes 클러스터와 관련된 다른 검색 필드에 대한 자세한 정보는 [로그 검색](/docs/services/CloudLogAnalysis/containers?topic=cloudloganalysis-containers_kubernetes#log_search)을 참조하십시오.
 
 
 ## 7단계: Kibana에서 Kubernetes 클러스터 이름별로 데이터 필터링
@@ -475,9 +475,9 @@ Kubernetes 클러스터와 관련된 다른 검색 필드에 대한 자세한 �
 
 클러스터의 이름(*cluster1*)을 로그 데이터를 보려는 클러스터의 이름(*mycluster*)으로 바꾸십시오.
         
-데이터를 볼 수 없는 경우 시간 필터를 변경해보십시오. 자세한 정보는 [시간 필터 설정](/docs/services/CloudLogAnalysis/kibana/filter_logs.html#set_time_filter)을 참조하십시오.
+데이터를 볼 수 없는 경우 시간 필터를 변경해보십시오. 자세한 정보는 [시간 필터 설정](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-filter_logs#set_time_filter)을 참조하십시오.
 
-자세한 정보는 [Kibana에서 로그 필터링](/docs/services/CloudLogAnalysis/kibana/filter_logs.html#filter_logs)을 참조하십시오.
+자세한 정보는 [Kibana에서 로그 필터링](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-filter_logs#filter_logs)을 참조하십시오.
 
 
 ## {{site.data.keyword.containershort_notm}} 참조 자료
@@ -485,10 +485,10 @@ Kubernetes 클러스터와 관련된 다른 검색 필드에 대한 자세한 �
 
 CLI 명령:
 
-* [ibmcloud cs api-key-info](/docs/containers/cs_cli_reference.html#cs_api_key_info)
-* [ibmcloud cs logging-config-create](/docs/containers/cs_cli_reference.html#cs_logging_create)
-* [ibmcloud cs logging-config-get](/docs/containers/cs_cli_reference.html#cs_logging_get)
-* [ibmcloud cs logging-config-update](/docs/containers/cs_cli_reference.html#cs_logging_update)
-* [ibmcloud cs logging-config-rm](/docs/containers/cs_cli_reference.html#cs_logging_rm)
-* [ibmcloud cs logging-config-refresh](/docs/containers/cs_cli_reference.html#cs_logging_refresh)
+* [ibmcloud cs api-key-info](/docs/containers?topic=containers-cs_cli_reference#cs_api_key_info)
+* [ibmcloud cs logging-config-create](/docs/containers?topic=containers-cs_cli_reference#cs_logging_create)
+* [ibmcloud cs logging-config-get](/docs/containers?topic=containers-cs_cli_reference#cs_logging_get)
+* [ibmcloud cs logging-config-update](/docs/containers?topic=containers-cs_cli_reference#cs_logging_update)
+* [ibmcloud cs logging-config-rm](/docs/containers?topic=containers-cs_cli_reference#cs_logging_rm)
+* [ibmcloud cs logging-config-refresh](/docs/containers?topic=containers-cs_cli_reference#cs_logging_refresh)
 

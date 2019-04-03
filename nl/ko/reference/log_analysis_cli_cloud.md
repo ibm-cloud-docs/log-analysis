@@ -31,7 +31,7 @@ subcollection: cloudloganalysis
 **전제조건**
 * 로깅 명령을 실행하기 전에 `ibmcloud login` 명령으로 {{site.data.keyword.Bluemix_notm}}에 로그인하여 액세스 토큰을 생성하고 세션을 인증하십시오.
 
-{{site.data.keyword.loganalysisshort}} CLI 사용 방법에 대해 알아보려면 [로그 관리](/docs/services/CloudLogAnalysis/log_analysis_ov.html#log_analysis_ov)를 참조하십시오.
+{{site.data.keyword.loganalysisshort}} CLI 사용 방법에 대해 알아보려면 [로그 관리](/docs/services/CloudLogAnalysis?topic=cloudloganalysis-log_analysis_ov#log_analysis_ov)를 참조하십시오.
 
 <table>
   <caption>로그 관리 명령</caption>
@@ -186,7 +186,7 @@ ibmcloud logging log-delete -s 2017-05-25 -e 2017-05-25 -t linux_syslog
 
 로그 콜렉션에서 로컬 파일로 로그를 다운로드하거나 다른 프로그램(예: Elastic Stack)으로 로그를 보냅니다. 
 
-**참고:** 파일을 다운로드하려면 먼저 세션을 작성해야 합니다. 세션은 날짜 범위, 로그 유형 및 계정 유형을 기반으로 어느 로그를 다운로드할 것인지 정의합니다. 세션의 컨텍스트 내에서 로그를 다운로드합니다. 자세한 정보는 [ibmcloud logging session-create(베타)](/docs/services/CloudLogAnalysis/reference/log_analysis_cli_cloud.html#session_create)를 참조하십시오.
+**참고:** 파일을 다운로드하려면 먼저 세션을 작성해야 합니다. 세션은 날짜 범위, 로그 유형 및 계정 유형을 기반으로 어느 로그를 다운로드할 것인지 정의합니다. 세션의 컨텍스트 내에서 로그를 다운로드합니다. 자세한 정보는 [ibmcloud logging session-create(베타)](/docs/services/CloudLogAnalysis/reference?topic=cloudloganalysis-log_analysis_cli#session_create)를 참조하십시오.
 
 ```
  ibmcloud logging log-download  [-r,--resource-type RESOURCE_TYPE] [-i,--resource-id RESOURCE_ID] [-o, --output OUTPUT] SESSION_ID

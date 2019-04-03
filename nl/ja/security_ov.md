@@ -38,11 +38,11 @@ subcollection: cloudloganalysis
 
 {{site.data.keyword.loganalysisshort}} サービスでは、以下の認証モデルがサポートされます。
 
-* [UAA 認証](/docs/services/CloudLogAnalysis/security/auth_uaa.html#auth_uaa)
+* [UAA 認証](/docs/services/CloudLogAnalysis/security?topic=cloudloganalysis-auth_uaa#auth_uaa)
 
     UAA トークンを管理するには、CLI のみを使用できます。
 	
-* [IAM 認証](/docs/services/CloudLogAnalysis/security/auth_iam.html#auth_iam1)
+* [IAM 認証](/docs/services/CloudLogAnalysis/security?topic=cloudloganalysis-auth_iam1#auth_iam1)
 
     IAM 認証モデルは、UI、CLI、または API の管理機能を提供します。 
 
@@ -51,13 +51,13 @@ subcollection: cloudloganalysis
 ## 役割
 {: #roles3}
 
-{{site.data.keyword.Bluemix_notm}} には 2 つのタイプの役割があり、それらの役割によって、ユーザーが {{site.data.keyword.loganalysisshort}} サービスを使用した処理を行うときに実行できるアクションが制御されます。
+{{site.data.keyword.cloud_notm}} には 2 つのタイプの役割があり、それらの役割によって、ユーザーが {{site.data.keyword.loganalysisshort}} サービスを使用した処理を行うときに実行できるアクションが制御されます。
 
 * Cloud Foundry (CF) 役割: 1 つ以上の CF 役割を割り当てることによって、ユーザーが実行できる {{site.data.keyword.loganalysisshort}} アクションを制御します。 スペースまたは組織内のログを表示および管理するためのユーザーの許可を、これらの役割によって制御します。
 * IAM 役割: 1 つ以上の IAM 役割を割り当てることによって、ユーザーが実行できる {{site.data.keyword.loganalysisshort}} アクションを制御します。 アカウント・ログを表示および管理するためのユーザーの許可を、これらの役割によって制御します。 
 
 
-以下の表は、役割のタイプと、役割が制御する {{site.data.keyword.Bluemix_notm}} のドメインを示します。
+以下の表は、役割のタイプと、役割が制御する {{site.data.keyword.cloud_notm}} のドメインを示します。
 
 <table>
   <caption>表 1. アクションを制御するドメイン別の役割のタイプ</caption>
@@ -161,7 +161,7 @@ subcollection: cloudloganalysis
     <td>GET /v1/logging/logs</td>
     <td>ibmcloud-log-analysis.domain.log_read</td>
 	<td>管理者、エディター、ビューアー</td>
-	<td>{{site.data.keyword.Bluemix_notm}} スペース内のログまたはアカウント・レベルのログに関する情報を表示します。</td>
+	<td>{{site.data.keyword.cloud_notm}} スペース内のログまたはアカウント・レベルのログに関する情報を表示します。</td>
   </tr>
   <tr>
     <td>GET /v1/logging/logs/download</td>
@@ -173,13 +173,13 @@ subcollection: cloudloganalysis
     <td>GET /v1/logging/logs/retention</td>
     <td>ibmcloud-log-analysis.domain.policy_read</td>
     <td>管理者、エディター、ビューアー</td>
-    <td>{{site.data.keyword.Bluemix_notm}} スペースまたはアカウントで使用可能なログの保存期間を表示または変更します。</td>
+    <td>{{site.data.keyword.cloud_notm}} スペースまたはアカウントで使用可能なログの保存期間を表示または変更します。</td>
   </tr>
   <tr>
     <td>PUT /v1/logging/logs/retention</td>
     <td>ibmcloud-log-analysis.domain.policy_write</td>
     <td>管理者、エディター</td>
-    <td>{{site.data.keyword.Bluemix_notm}} スペースまたはアカウントで使用可能なログの保存期間を表示または更新します。</td>
+    <td>{{site.data.keyword.cloud_notm}} スペースまたはアカウントで使用可能なログの保存期間を表示または更新します。</td>
   </tr>
   <tr>
     <td>GET /v1/logging/sessions</td>
@@ -217,14 +217,14 @@ subcollection: cloudloganalysis
 * {{site.data.keyword.loganalysisshort}} CLI を使用して UAA トークンを取得します。 
 * トークンには有効期限があります。 
 
-詳しくは、『[UAA トークンの取得](/docs/services/CloudLogAnalysis/security/auth_uaa.html#auth_uaa)』を参照してください。
+詳しくは、『[UAA トークンの取得](/docs/services/CloudLogAnalysis/security?topic=cloudloganalysis-auth_uaa#auth_uaa)』を参照してください。
 
 **アカウント・ドメイン内にあるログの処理**
 
-* {{{site.data.keyword.Bluemix_notm}} CLI を使用して IAM トークンを取得します。 
+* {{site.data.keyword.cloud_notm}} CLI を使用して IAM トークンを取得します。 
 * トークンには有効期限があります。 
 
-詳しくは、『[IAM トークンの取得](/docs/services/CloudLogAnalysis/security/auth_iam.html#auth_iam1)』を参照してください。
+詳しくは、『[IAM トークンの取得](/docs/services/CloudLogAnalysis/security?topic=cloudloganalysis-auth_iam1#auth_iam1)』を参照してください。
 
 
 ## ログを Log Analysis に送信するためのロギング・トークンの取得
@@ -234,23 +234,23 @@ subcollection: cloudloganalysis
 
 スペース・ドメインにログを送信するには、以下のいずれかの方法を選択してください。
 
-* [{{site.data.keyword.Bluemix_notm}} コマンド ibmcloud service を使用して、ログをスペースに送信するためのロギング・トークンを取得する](/docs/services/CloudLogAnalysis/security/logging_token.html#logging_token_cloud_cli)
-* [Log Analysis CLI を使用して、ログをスペースに送信するためのロギング・トークンを取得する](/docs/services/CloudLogAnalysis/security/logging_token.html#logging_token_la_cloud_cli)
-* [Log Analysis API を使用して、ログをスペースに送信するためのロギング・トークンを取得する](/docs/services/CloudLogAnalysis/security/logging_token.html#logging_token_api)
+* [{{site.data.keyword.cloud_notm}} コマンド ibmcloud service を使用して、ログをスペースに送信するためのロギング・トークンを取得する](/docs/services/CloudLogAnalysis/security?topic=cloudloganalysis-logging_token#logging_token_cloud_cli)
+* [Log Analysis CLI を使用して、ログをスペースに送信するためのロギング・トークンを取得する](/docs/services/CloudLogAnalysis/security?topic=cloudloganalysis-logging_token#logging_token_la_cloud_cli)
+* [Log Analysis API を使用して、ログをスペースに送信するためのロギング・トークンを取得する](/docs/services/CloudLogAnalysis/security?topic=cloudloganalysis-logging_token#logging_token_api)
 
 
 ## ログを処理するためのユーザーへの許可の付与
 {: #grant_permissions1}
 
-ユーザーがログの管理または表示を実行できるためには、{{site.data.keyword.loganalysisshort}} サービスを使用して作業することの許可を {{site.data.keyword.Bluemix_notm}} においてユーザーに付与されている必要があります。
+ユーザーがログの管理または表示を実行できるためには、{{site.data.keyword.loganalysisshort}} サービスを使用して作業することの許可を {{site.data.keyword.cloud_notm}} においてユーザーに付与されている必要があります。
 
-* ログを管理するために必要な許可について詳しくは、『[ログを管理するユーザーに必要な役割](/docs/services/CloudLogAnalysis/manage_logs.html#roles1)』を参照してください。
-* ログを表示するために必要な許可について詳しくは、『[ログを表示するユーザーに必要な役割](/docs/services/CloudLogAnalysis/kibana/analyzing_logs_Kibana.html#roles)』を参照してください。
+* ログを管理するために必要な許可について詳しくは、『[ログを管理するユーザーに必要な役割](/docs/services/CloudLogAnalysis?topic=cloudloganalysis-manage_logs#roles1)』を参照してください。
+* ログを表示するために必要な許可について詳しくは、『[ログを表示するユーザーに必要な役割](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-analyzing_logs_Kibana#roles)』を参照してください。
 
 許可を付与する方法について詳しくは、以下を参照してください。
 
-* [{{site.data.keyword.Bluemix_notm}} UI を使用してユーザーに IAM ポリシーを割り当てる](/docs/services/CloudLogAnalysis/security/grant_permissions.html#grant_permissions)
-* [コマンド・ラインを使用してユーザーに IAM ポリシーを割り当てる](/docs/services/CloudLogAnalysis/security/grant_permissions.html#grant_permissions_commandline)
-* [{{site.data.keyword.Bluemix_notm}} UI を使用して、スペース・ログを表示する許可をユーザーに付与する](/docs/services/CloudLogAnalysis/security/grant_permissions.html#grant_permissions_ui_space)
+* [{{site.data.keyword.cloud_notm}} UI を使用してユーザーに IAM ポリシーを割り当てる](/docs/services/CloudLogAnalysis/security?topic=cloudloganalysis-grant_permissions#grant_permissions)
+* [コマンド・ラインを使用してユーザーに IAM ポリシーを割り当てる](/docs/services/CloudLogAnalysis/security?topic=cloudloganalysis-grant_permissions#grant_permissions_commandline)
+* [{{site.data.keyword.cloud_notm}} UI を使用して、スペース・ログを表示する許可をユーザーに付与する](/docs/services/CloudLogAnalysis/security?topic=cloudloganalysis-grant_permissions#grant_permissions_ui_space)
 
 

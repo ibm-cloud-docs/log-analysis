@@ -34,7 +34,7 @@ subcollection: cloudloganalysis
 
 **訊息說明**
 
-您已達到配置給 Bluemix 空間、針對 {{site.data.keyword.loganalysisfull}} 實例 {Instance GUID} 的每日配額。您的現行每日配額是日誌搜尋儲存空間 500 MB，這會保留在日誌搜尋儲存空間中 3 天的期間，在此期間內可以在 Kibana 中搜尋它。若要升級您的方案，以便每天能在日誌搜尋儲存空間中儲存更多資料，同時也將所有日誌保留在日誌收集儲存空間中，請升級此空間的 {{site.data.keyword.loganalysisshort}} 服務方案。如需服務方案及如何升級方案的相關資訊，請參閱[方案](/docs/services/CloudLogAnalysis/log_analysis_ov.html#plans)。
+您已達到配置給 Bluemix 空間、針對 {{site.data.keyword.loganalysisfull}} 實例 {Instance GUID} 的每日配額。您的現行每日配額是日誌搜尋儲存空間 500 MB，這會保留在日誌搜尋儲存空間中 3 天的期間，在此期間內可以在 Kibana 中搜尋它。若要升級您的方案，以便每天能在日誌搜尋儲存空間中儲存更多資料，同時也將所有日誌保留在日誌收集儲存空間中，請升級此空間的 {{site.data.keyword.loganalysisshort}} 服務方案。如需服務方案及如何升級方案的相關資訊，請參閱[方案](/docs/services/CloudLogAnalysis?topic=cloudloganalysis-log_analysis_ov#plans)。
 
 
 **訊息說明** 
@@ -43,7 +43,7 @@ subcollection: cloudloganalysis
 
 **回復**
 
-若要升級您的方案，以便每天能在日誌搜尋儲存空間中儲存更多資料，同時也將所有日誌保留在日誌收集儲存空間中，請升級此空間的 {{site.data.keyword.loganalysisshort}} 服務方案。如需服務方案及如何升級方案的相關資訊，請參閱[方案](/docs/services/CloudLogAnalysis/log_analysis_ov.html#plans)。
+若要升級您的方案，以便每天能在日誌搜尋儲存空間中儲存更多資料，同時也將所有日誌保留在日誌收集儲存空間中，請升級此空間的 {{site.data.keyword.loganalysisshort}} 服務方案。如需服務方案及如何升級方案的相關資訊，請參閱[方案](/docs/services/CloudLogAnalysis?topic=cloudloganalysis-log_analysis_ov#plans)。
 
 
 ## BXNLG020002W 
@@ -52,7 +52,7 @@ subcollection: cloudloganalysis
 
 **訊息說明**
 
-您已達到配置給 Bluemix 空間、針對 {{site.data.keyword.loganalysisfull}} 實例 {Instance GUID} 的每日配額。您的現行每日配額是日誌搜尋儲存空間 XXX，這會保留 3 天的期間，在此期間內可以在 Kibana 中搜尋它。這不會影響日誌收集儲存空間中的日誌保留原則。若要升級您的方案，以便每天能在日誌搜尋儲存空間中儲存更多資料，請升級此空間的 {{site.data.keyword.loganalysisshort}} 服務方案。如需服務方案及如何升級方案的相關資訊，請參閱[方案](/docs/services/CloudLogAnalysis/log_analysis_ov.html#plans)。
+您已達到配置給 Bluemix 空間、針對 {{site.data.keyword.loganalysisfull}} 實例 {Instance GUID} 的每日配額。您的現行每日配額是日誌搜尋儲存空間 XXX，這會保留 3 天的期間，在此期間內可以在 Kibana 中搜尋它。這不會影響日誌收集儲存空間中的日誌保留原則。若要升級您的方案，以便每天能在日誌搜尋儲存空間中儲存更多資料，請升級此空間的 {{site.data.keyword.loganalysisshort}} 服務方案。如需服務方案及如何升級方案的相關資訊，請參閱[方案](/docs/services/CloudLogAnalysis?topic=cloudloganalysis-log_analysis_ov#plans)。
 
 XXX 代表您的現行方案的可搜尋資料大小。
 
@@ -62,7 +62,7 @@ XXX 代表您的現行方案的可搜尋資料大小。
 
 **回復**
 
-若要升級您的方案，以便每天能在日誌搜尋儲存空間中儲存更多資料，請升級此空間的 {{site.data.keyword.loganalysisshort}} 服務方案。如需服務方案及如何升級方案的相關資訊，請參閱[方案](/docs/services/CloudLogAnalysis/log_analysis_ov.html#plans)。
+若要升級您的方案，以便每天能在日誌搜尋儲存空間中儲存更多資料，請升級此空間的 {{site.data.keyword.loganalysisshort}} 服務方案。如需服務方案及如何升級方案的相關資訊，請參閱[方案](/docs/services/CloudLogAnalysis?topic=cloudloganalysis-log_analysis_ov#plans)。
 
 
 

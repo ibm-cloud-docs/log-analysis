@@ -31,7 +31,7 @@ La CLI {{site.data.keyword.loganalysislong}} è un plug-in {{site.data.keyword.B
 **Prerequisiti **
 * Prima di eseguire i comandi di registrazione, accedi a {{site.data.keyword.Bluemix_notm}} con il comando `ibmcloud login` per generare un token di accesso e autenticare la tua sessione.
 
-Per informazioni su come utilizzare la CLI {{site.data.keyword.loganalysisshort}}, vedi [Gestione dei log](/docs/services/CloudLogAnalysis/log_analysis_ov.html#log_analysis_ov).
+Per informazioni su come utilizzare la CLI {{site.data.keyword.loganalysisshort}}, vedi [Gestione dei log](/docs/services/CloudLogAnalysis?topic=cloudloganalysis-log_analysis_ov#log_analysis_ov).
 
 <table>
   <caption>Comandi per la gestione dei log</caption>
@@ -186,7 +186,7 @@ ibmcloud logging log-delete -s 2017-05-25 -e 2017-05-25 -t linux_syslog
 
 Scarica i log dalla raccolta dei log in un file locale o li invia a un altro programma come uno stack Elastic. 
 
-**Nota:** per scaricare i file, devi prima creare una sessione. Una sessione definisce quali log scaricare in base all'intervallo di date, al tipo di log e al tipo di account. Scarica i log nel contesto di una sessione. Per ulteriori informazioni, vedi [ibmcloud logging session create (Beta)](/docs/services/CloudLogAnalysis/reference/log_analysis_cli_cloud.html#session_create).
+**Nota:** per scaricare i file, devi prima creare una sessione. Una sessione definisce quali log scaricare in base all'intervallo di date, al tipo di log e al tipo di account. Scarica i log nel contesto di una sessione. Per ulteriori informazioni, vedi [ibmcloud logging session create (Beta)](/docs/services/CloudLogAnalysis/reference?topic=cloudloganalysis-log_analysis_cli#session_create).
 
 ```
  ibmcloud logging log-download  [-r,--resource-type RESOURCE_TYPE] [-i,--resource-id RESOURCE_ID] [-o, --output OUTPUT] SESSION_ID

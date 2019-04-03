@@ -28,12 +28,12 @@ subcollection: cloudloganalysis
 
 Im Folgenden finden Sie Antworten auf häufig gestellte Fragen zur Verwendung der {{site.data.keyword.Bluemix}}-Protokollfunktionen. {:shortdesc}
 
-* [Was kann ich tun, wenn auf der Seite 'Discover' in Kibana keine Daten angezeigt werden?](/docs/services/CloudLogAnalysis/qa/faq_kibana.html#logging_qa_no_data_discover_kibana)
-* [Was kann ich tun, wenn ich eine Ausnahmebedingung bei der Authentifizierung erhalte?](/docs/services/CloudLogAnalysis/qa/faq_kibana.html#logging_qa_no_data_dashboard_kibana)
-* [Warum werden Fragezeichensymbole (?) für Felder auf der Kibana-Seite 'Discover' angezeigt?](/docs/services/CloudLogAnalysis/qa/faq_kibana.html#logging_qa_kibana_question)
-* [Wenn ich versuche, das Standardindexmuster zu ändern, wird Fehler 403 angezeigt.](/docs/services/CloudLogAnalysis/qa/faq_kibana.html#error_403)
-* [Kurz-URL funktioniert nicht](/docs/services/CloudLogAnalysis/qa/faq_kibana.html#short_url)
-* [Kann ich meine Kontoprotokolle in Bluemix durchsuchen?](/docs/services/CloudLogAnalysis/qa/faq_kibana.html#acc_logs_1)
+* [Was kann ich tun, wenn auf der Seite 'Discover' in Kibana keine Daten angezeigt werden?](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-faq_kibana#logging_qa_no_data_discover_kibana)
+* [Was kann ich tun, wenn ich eine Ausnahmebedingung bei der Authentifizierung erhalte?](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-faq_kibana#logging_qa_no_data_dashboard_kibana)
+* [Warum werden Fragezeichensymbole (?) für Felder auf der Kibana-Seite 'Discover' angezeigt?](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-faq_kibana#logging_qa_kibana_question)
+* [Wenn ich versuche, das Standardindexmuster zu ändern, wird Fehler 403 angezeigt.](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-faq_kibana#error_403)
+* [Kurz-URL funktioniert nicht](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-faq_kibana#short_url)
+* [Kann ich meine Kontoprotokolle in Bluemix durchsuchen?](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-faq_kibana#acc_logs_1)
 
 
 ## Was kann ich tun, wenn auf der Seite 'Discover' in Kibana keine Daten angezeigt werden?
@@ -50,7 +50,7 @@ Um das Problem zu beheben, führen Sie die folgenden Schritte aus:
 
     **Hinweis**: Standardmäßig ist der *Time Picker* in {{site.data.keyword.Bluemix_notm}} so eingestellt, dass Daten für die letzten 15 Minuten angezeigt werden.
 
-    Weitere Informationen zum Einstellen des *Time Picker* finden Sie unter [Zeitfilter festlegen](/docs/services/CloudLogAnalysis/kibana/filter_logs.html#set_time_filter1).
+    Weitere Informationen zum Einstellen des *Time Picker* finden Sie unter [Zeitfilter festlegen](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-filter_logs#set_time_filter1).
        
 2. Klicken Sie auf die Lupe, die sich in der Suchleiste der Seite *Discover* befindet. Die Seitendaten werden auf der Basis der Standardsuchabfrage aktualisiert.
 
@@ -58,7 +58,7 @@ Um das Problem zu beheben, führen Sie die folgenden Schritte aus:
 
     **Hinweis:** In {{site.data.keyword.Bluemix_notm}} ist das Zeitintervall für automatisches Aktualisieren (*Auto-refresh*) standardmäßig inaktiviert (**OFF**).
     
-    Informationen zum Aktivieren des Zeitintervalls finden Sie unter [Daten automatisch aktualisieren](/docs/services/CloudLogAnalysis/kibana/analize_logs_interactively.html#discover_view_refresh_interval).
+    Informationen zum Aktivieren des Zeitintervalls finden Sie unter [Daten automatisch aktualisieren](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-analize_logs_interactively#discover_view_refresh_interval).
 
 
 
@@ -90,7 +90,7 @@ Um das Problem zu beheben, führen Sie die folgenden Schritte aus:
 ## Warum werden Fragezeichensymbole (?) für Felder auf der Kibana-Seite 'Discover' angezeigt?
 {: #logging_qa_kibana_question}
 
-Wenn Sie die Seite 'Discover' in Kibana öffnen, werden möglicherweise Fragezeichen (`?`) für Felder im Abschnitt für verfügbare Felder anstelle des Zeichens `t` angezeigt. Wenn Sie die Feldliste erneut laden, wird der Typ der Felder analysiert und die Zeichen `?` werden durch das Zeichen `t` ersetzt. Weitere Informationen finden Sie unter [Feldliste neu laden](/docs/services/CloudLogAnalysis/kibana/analize_logs_interactively.html#discover_view_reload_fields).
+Wenn Sie die Seite 'Discover' in Kibana öffnen, werden möglicherweise Fragezeichen (`?`) für Felder im Abschnitt für verfügbare Felder anstelle des Zeichens `t` angezeigt. Wenn Sie die Feldliste erneut laden, wird der Typ der Felder analysiert und die Zeichen `?` werden durch das Zeichen `t` ersetzt. Weitere Informationen finden Sie unter [Feldliste neu laden](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-analize_logs_interactively#discover_view_reload_fields).
 
 
 ## Wenn ich versuche, das Standardindexmuster zu ändern, wird Fehler 403 angezeigt.
@@ -112,7 +112,7 @@ Als Kontoeigner können Sie Ihre Kontoprotokolle durchsuchen und analysieren.
 
 Führen Sie die folgenden Schritte aus, um die Kontoprotokolle anzuzeigen:
 
-1. [Starten Sie Kibana.](/docs/services/CloudLogAnalysis/kibana/launch.html#launch_Kibana_from_browser) Verwenden Sie beispielsweise für die Region 'USA (Süden)' die URL `https://logging.ng.bluemix.net`.
+1. [Starten Sie Kibana.](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-launch#launch_Kibana_from_browser) Verwenden Sie beispielsweise für die Region 'USA (Süden)' die URL `https://logging.ng.bluemix.net`.
 
 2. Wählen Sie die Option **View AccountName account Logs** aus, um die Kontoprotokolle anzuzeigen. *AccountName* ist der Name des Kontos.
 

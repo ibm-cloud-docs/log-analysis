@@ -59,7 +59,7 @@ Führen Sie die folgenden Schritte aus:
 
 1. Melden Sie sich bei einer Region, Organisation und bei einem Bereich in {{site.data.keyword.Bluemix_notm}} an. 
 
-    Weitere Informationen finden Sie unter [Wie melde ich mich bei {{site.data.keyword.Bluemix_notm}} an?](/docs/services/CloudLogAnalysis/qa/cli_qa.html#login).
+    Weitere Informationen finden Sie in [Wie melde ich mich bei {{site.data.keyword.Bluemix_notm}} an?](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#login).
     
 2. Initialisieren Sie das Plug-in für den {{site.data.keyword.loganalysisshort}}-Service.
 
@@ -91,11 +91,11 @@ Führen Sie die folgenden Schritte aus:
 
 Sie können festlegen, welche Clusterprotokolle an den {{site.data.keyword.loganalysisshort}}-Service weitergeleitet werden sollen. 
 
-* Informationen zur automatischen Protokollerfassung und Weiterleitung von 'stdout' und 'stderr' finden Sie unter [Automatische Protokollerfassung und Weiterleitung von Containerprotokollen aktivieren](/docs/services/CloudLogAnalysis/containers/containers_kube_other_logs.html#containers).
-* Informationen zur automatischen Erfassung von Protokollen und Weiterleitung von Anwendungsprotokollen finden Sie unter [Automatische Erfassung von Protokollen und Weiterleitung von Anwendungsprotokollen aktivieren](/docs/services/CloudLogAnalysis/containers/containers_kube_other_logs.html#apps).
-* Informationen zur automatischen Erfassung von Protokollen und Weiterleitung von Workerprotokollen finden Sie unter [Automatische Erfassung von Protokollen und Weiterleitung von Workerprotokollen aktivieren](/docs/services/CloudLogAnalysis/containers/containers_kube_other_logs.html#workers).
-* Informationen zur automatischen Erfassung von Protokollen und Weiterleitung von Protokollen von Kubernetes-Systemkomponenten finden Sie unter [Automatische Erfassung von Protokollen und Weiterleitung von Protokollen von Kubernetes-Systemkomponenten aktivieren](/docs/services/CloudLogAnalysis/containers/containers_kube_other_logs.html#system).
-* Informationen zur automatischen Erfassung von Protokollen und Weiterleitung von Kubernetes-Ingress-Controllerprotokollen finden Sie unter [Automatische Erfassung von Protokollen und Weiterleitung von Kubernetes-Ingress-Controllerprotokollen aktivieren](/docs/services/CloudLogAnalysis/containers/containers_kube_other_logs.html#controller).
+* Informationen zur automatischen Protokollerfassung und Weiterleitung von 'stdout' und 'stderr' finden Sie unter [Automatische Protokollerfassung und Weiterleitung von Containerprotokollen aktivieren](/docs/services/CloudLogAnalysis/containers?topic=cloudloganalysis-containers_kube_other_logs#containers).
+* Informationen zur automatischen Erfassung von Protokollen und Weiterleitung von Anwendungsprotokollen finden Sie unter [Automatische Erfassung von Protokollen und Weiterleitung von Anwendungsprotokollen aktivieren](/docs/services/CloudLogAnalysis/containers?topic=cloudloganalysis-containers_kube_other_logs#apps).
+* Informationen zur automatischen Erfassung von Protokollen und Weiterleitung von Workerprotokollen finden Sie unter [Automatische Erfassung von Protokollen und Weiterleitung von Workerprotokollen aktivieren](/docs/services/CloudLogAnalysis/containers?topic=cloudloganalysis-containers_kube_other_logs#workers).
+* Informationen zur automatischen Erfassung von Protokollen und Weiterleitung von Protokollen von Kubernetes-Systemkomponenten finden Sie unter [Automatische Erfassung von Protokollen und Weiterleitung von Protokollen von Kubernetes-Systemkomponenten aktivieren](/docs/services/CloudLogAnalysis/containers?topic=cloudloganalysis-containers_kube_other_logs#system).
+* Informationen zur automatischen Erfassung von Protokollen und Weiterleitung von Kubernetes-Ingress-Controllerprotokollen finden Sie unter [Automatische Erfassung von Protokollen und Weiterleitung von Kubernetes-Ingress-Controllerprotokollen aktivieren](/docs/services/CloudLogAnalysis/containers?topic=cloudloganalysis-containers_kube_other_logs#controller).
 
 
 
@@ -142,7 +142,7 @@ Führen Sie die folgenden Schritte aus:
  
 3. Wenn der Benutzer nicht über die richtigen Berechtigungen verfügt, führen Sie die folgenden Schritte aus:
 
-    1. Erteilen Sie dem Benutzer die folgenden Berechtigungen: die Rolle *Organisationsmanager* für die Organisation sowie die Rollen *Bereichsmanager* und *Entwickler* für den Bereich. Weitere Informationen finden Sie unter [Einem Benutzer Berechtigungen zum Anzeigen von Bereichsprotokollen unter Verwendung der IBM Cloud-Benutzerschnittstelle erteilen](/docs/services/CloudLogAnalysis/security/grant_permissions.html#grant_permissions_ui_space).
+    1. Erteilen Sie dem Benutzer die folgenden Berechtigungen: die Rolle *Organisationsmanager* für die Organisation sowie die Rollen *Bereichsmanager* und *Entwickler* für den Bereich. Weitere Informationen finden Sie unter [Einem Benutzer Berechtigungen zum Anzeigen von Bereichsprotokollen unter Verwendung der IBM Cloud-Benutzerschnittstelle erteilen](/docs/services/CloudLogAnalysis/security?topic=cloudloganalysis-grant_permissions#grant_permissions_ui_space).
     
     2. Aktualisieren Sie die Protokollierungskonfiguration. Führen Sie den folgenden Befehl aus:
     
@@ -170,7 +170,7 @@ ibmcloud ks logging-config-create ClusterName --logsource container --namespace 
 Dabei gilt: 
 
 * *ClusterName* ist der Name des Clusters.
-* *EndPoint* ist die URL zum Protokollierungsservice in der Region, in der der {{site.data.keyword.loganalysisshort}}-Service bereitgestellt ist. Eine Liste der Endpunkte finden Sie unter [Endpunkte](/docs/services/CloudLogAnalysis/log_ingestion.html#log_ingestion_urls).
+* *EndPoint* ist die URL zum Protokollierungsservice in der Region, in der der {{site.data.keyword.loganalysisshort}}-Service bereitgestellt ist. Eine Liste der Endpunkte finden Sie unter [Endpunkte](/docs/services/CloudLogAnalysis?topic=cloudloganalysis-log_ingestion#log_ingestion_urls).
 * *OrgName* ist der Name der Organisation, in der der Bereich verfügbar ist.
 * *SpaceName* ist der Name des Bereichs, in dem der {{site.data.keyword.loganalysisshort}}-Service bereitgestellt ist.
 
@@ -204,7 +204,7 @@ ibmcloud ks logging-config-create ClusterName --logsource application --type ibm
 Dabei gilt: 
 
 * *ClusterName* ist der Name des Clusters.
-* *EndPoint* ist die URL zum Protokollierungsservice in der Region, in der der {{site.data.keyword.loganalysisshort}}-Service bereitgestellt ist. Eine Liste der Endpunkte finden Sie unter [Endpunkte](/docs/services/CloudLogAnalysis/log_ingestion.html#log_ingestion_urls).
+* *EndPoint* ist die URL zum Protokollierungsservice in der Region, in der der {{site.data.keyword.loganalysisshort}}-Service bereitgestellt ist. Eine Liste der Endpunkte finden Sie unter [Endpunkte](/docs/services/CloudLogAnalysis?topic=cloudloganalysis-log_ingestion#log_ingestion_urls).
 * *OrgName* ist der Name der Organisation, in der der Bereich verfügbar ist.
 * *SpaceName* ist der Name des Bereichs, in dem der {{site.data.keyword.loganalysisshort}}-Service bereitgestellt ist.
 * *app-containers* ist ein optionaler Parameter, den Sie festlegen können, um eine Liste von Containern definieren können, die Sie überwachen möchten. Diese Container sind die einzigen, von denen Protokolle an {{site.data.keyword.loganalysisshort}} weitergeleitet werden. Sie können einen oder mehrere Container festlegen, indem Sie sie durch Kommas trennen.
@@ -240,7 +240,7 @@ ibmcloud ks logging-config-create ClusterName --logsource worker --type ibm --ho
 Dabei gilt: 
 
 * *ClusterName* ist der Name des Clusters.
-* *EndPoint* ist die URL zum Protokollierungsservice in der Region, in der der {{site.data.keyword.loganalysisshort}}-Service bereitgestellt ist. Eine Liste der Endpunkte finden Sie unter [Endpunkte](/docs/services/CloudLogAnalysis/log_ingestion.html#log_ingestion_urls).
+* *EndPoint* ist die URL zum Protokollierungsservice in der Region, in der der {{site.data.keyword.loganalysisshort}}-Service bereitgestellt ist. Eine Liste der Endpunkte finden Sie unter [Endpunkte](/docs/services/CloudLogAnalysis?topic=cloudloganalysis-log_ingestion#log_ingestion_urls).
 * *OrgName* ist der Name der Organisation, in der der Bereich verfügbar ist.
 * *SpaceName* ist der Name des Bereichs, in dem der {{site.data.keyword.loganalysisshort}}-Service bereitgestellt ist.
 
@@ -275,7 +275,7 @@ ibmcloud ks logging-config-create ClusterName --logsource kubernetes --type ibm 
 Dabei gilt: 
 
 * *ClusterName* ist der Name des Clusters.
-* *EndPoint* ist die URL zum Protokollierungsservice in der Region, in der der {{site.data.keyword.loganalysisshort}}-Service bereitgestellt ist. Eine Liste der Endpunkte finden Sie unter [Endpunkte](/docs/services/CloudLogAnalysis/log_ingestion.html#log_ingestion_urls).
+* *EndPoint* ist die URL zum Protokollierungsservice in der Region, in der der {{site.data.keyword.loganalysisshort}}-Service bereitgestellt ist. Eine Liste der Endpunkte finden Sie unter [Endpunkte](/docs/services/CloudLogAnalysis?topic=cloudloganalysis-log_ingestion#log_ingestion_urls).
 * *OrgName* ist der Name der Organisation, in der der Bereich verfügbar ist.
 * *SpaceName* ist der Name des Bereichs, in dem der {{site.data.keyword.loganalysisshort}}-Service bereitgestellt ist.
 
@@ -310,7 +310,7 @@ ibmcloud ks logging-config-create ClusterName --logsource ingress --type ibm --h
 Dabei gilt: 
 
 * *ClusterName* ist der Name des Clusters.
-* *EndPoint* ist die URL zum Protokollierungsservice in der Region, in der der {{site.data.keyword.loganalysisshort}}-Service bereitgestellt ist. Eine Liste der Endpunkte finden Sie unter [Endpunkte](/docs/services/CloudLogAnalysis/log_ingestion.html#log_ingestion_urls).
+* *EndPoint* ist die URL zum Protokollierungsservice in der Region, in der der {{site.data.keyword.loganalysisshort}}-Service bereitgestellt ist. Eine Liste der Endpunkte finden Sie unter [Endpunkte](/docs/services/CloudLogAnalysis?topic=cloudloganalysis-log_ingestion#log_ingestion_urls).
 * *OrgName* ist der Name der Organisation, in der der Bereich verfügbar ist.
 * *SpaceName* ist der Name des Bereichs, in dem der {{site.data.keyword.loganalysisshort}}-Service bereitgestellt ist.
 

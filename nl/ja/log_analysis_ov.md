@@ -140,7 +140,7 @@ Log Collection CLI または Log Collection API を使用して、ログをロ�
 
 **注:** サービス・プランに含まれるフィーチャーは、そのプランで {{site.data.keyword.loganalysisshort}} サービスをプロビジョンしたスペースでのみ有効になります。
 
-プランは {{site.data.keyword.Bluemix_notm}} UI またはコマンド・ラインを使用して変更できます。 プランはいつでもアップグレードまたは削減することができます。 サービス・プランのアップグレードについて詳しくは、『[プランの変更](/docs/services/CloudLogAnalysis/how-to/change_plan.html#change_plan)』を参照してください。 
+プランは {{site.data.keyword.Bluemix_notm}} UI またはコマンド・ラインを使用して変更できます。 プランはいつでもアップグレードまたは削減することができます。 サービス・プランのアップグレードについて詳しくは、『[プランの変更](/docs/services/CloudLogAnalysis/how-to?topic=cloudloganalysis-change_plan#change_plan)』を参照してください。 
 
 使用可能なプランの概要を次の表に示します。
 

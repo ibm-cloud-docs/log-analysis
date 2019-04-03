@@ -40,11 +40,11 @@ Completa le seguenti attività per definire una ricerca personalizzata:
 
     2. Accedi a Kibana. Fai clic su **Vista avanzata** ![Link Vista avanzata](images/logging_advanced_view.jpg "Link Vista avanzata"). Viene visualizzato il dashboard Kibana.
     
-    Per i contenitori eseguiti in un cluster Kubernetes, [avvia Kibana dal browser](/docs/services/CloudLogAnalysis/kibana4/k4_launch.html#launch_Kibana_from_browser1). 
+    Per i contenitori eseguiti in un cluster Kubernetes, [avvia Kibana dal browser](/docs/services/CloudLogAnalysis/kibana4?topic=cloudloganalysis-k4_launch#launch_Kibana_from_browser1). 
     
     Quando accedi a Kibana, viene applicata la ricerca predefinita. Puoi visualizzare i log per l'elenco di istanze delle risorse per cui hai avviato Kibana. Puoi filtrare i log per ognuna delle risorse {{site.data.keyword.Bluemix_notm}} in tale spazio.
 
-2. Guarda nella pagina Rileva per visualizzare quale sottorete dei tuoi dati viene visualizzata. Per ulteriori informazioni, vedi [Identificazione dei dati visualizzati nella tua pagina Rileva Kibana](/docs/services/CloudLogAnalysis/kibana4/logging_kibana_analize_logs_interactively.html#k4_identify_data). Quindi, modifica la query predefinita per filtrare le voci.
+2. Guarda nella pagina Rileva per visualizzare quale sottorete dei tuoi dati viene visualizzata. Per ulteriori informazioni, vedi [Identificazione dei dati visualizzati nella tua pagina Rileva Kibana](/docs/services/CloudLogAnalysis/kibana4?topic=cloudloganalysis-kibana_analize_logs_interactively#k4_identify_data). Quindi, modifica la query predefinita per filtrare le voci.
 
     **Nota:** utilizza il linguaggio di query Lucene per definire la tua query personalizzata. Per ulteriori informazioni, vedi [Apache Lucene - Query Parser Syntax  ![Icona link esterno](../../../icons/launch-glyph.svg "Icona link esterno")](https://lucene.apache.org/core/2_9_4/queryparsersyntax.html){: new_window}
     

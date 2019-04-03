@@ -92,7 +92,7 @@ Sie können Kibana so konfigurieren, dass auf der Seite *Discover* die folgenden
 {: caption="Tabelle 3. Felder für Docker-Container" caption-side="top"}
 
 
-## Kibana-Protokollformat für MessageHub
+## Kibana-Protokollformat für {{site.data.keyword.messagehub}}
 {: #kibana_log_format_messagehub}
 
 Sie können Kibana so konfigurieren, dass auf der Seite *Discover* die folgenden Felder für jeden Protokolleintrag angezeigt werden:
@@ -107,7 +107,7 @@ Sie können Kibana so konfigurieren, dass auf der Seite *Discover* die folgenden
 | \_type | Der Typ des Protokolls, z. B. *syslog*. |
 | loglevel | Die Wertigkeit des protokollierten Ereignisses, z. B. **Info**. |
 | module | Dieses Feld wird auf **MessageHub** eingestellt. |
-{: caption="Tabelle 4. Felder für MessageHub-Ereignisse" caption-side="top"}
+{: caption="Tabelle 4. Felder für {{site.data.keyword.messagehub}}-Ereignisse" caption-side="top"}
 
 Beispiel für einen Protokolleintrag:
 

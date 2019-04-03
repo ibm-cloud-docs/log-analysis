@@ -52,7 +52,7 @@ La seguente tabella elenca le differenti risorse cloud. Completa l'esercitazione
   </tr>
   <tr>
     <td>Contenitori in esecuzione in {{site.data.keyword.containershort}}</td>
-    <td>[Analizza i log in Kibana per un'applicazione distribuita in un cluster Kubernetes ](/docs/services/CloudLogAnalysis/tutorials/container_logs.html#container_logs)</td>
+    <td>[Analizza i log in Kibana per un'applicazione distribuita in un cluster Kubernetes ](/docs/services/CloudLogAnalysis/tutorials?topic=cloudloganalysis-container_logs#container_logs)</td>
     <td>Pubblico </br>Dedicato</td>
     <td>![Panoramica dei componenti di alto livello per i contenitori distribuiti in un cluster Kubernetes](containers/images/containers_kube_logs.png "Panoramica dei componenti di alto livello per i contenitori distribuiti in un cluster Kubernetes")</td>
   </tr>
@@ -94,7 +94,7 @@ Completa la seguente procedura per concedere a un utente le autorizzazioni a vis
 	
 3. Se l'utente è un membro dell'account, seleziona il suo nome dall'elenco o fai clic su **Gestisci utente** dal menu *Azioni*.
 
-    Se l'utente non è un membro dell'account, vedi [Invito di utenti](/docs/iam/iamuserinv.html#iamuserinv).
+    Se l'utente non è un membro dell'account, vedi [Invito di utenti](/docs/iam?topic=iam-iamuserinv#iamuserinv).
 
 4. Seleziona **Accesso Cloud Foundry** e seleziona quindi l'organizzazione.
 
@@ -128,7 +128,7 @@ Completa la seguente procedura per concedere a un utente le autorizzazioni per v
 	
 3. Se l'utente è un membro dell'account, seleziona il suo nome dall'elenco o fai clic su **Gestisci utente** dal menu *Azioni*.
 
-    Se l'utente non è un membro dell'account, vedi [Invito di utenti](/docs/iam/iamuserinv.html#iamuserinv).
+    Se l'utente non è un membro dell'account, vedi [Invito di utenti](/docs/iam?topic=iam-iamuserinv#iamuserinv).
 
 4. Nella sezione **Politiche di accesso**, fai clic su **Assegna accesso** e seleziona quindi **Assegna l'accesso alle risorse**.
 
@@ -156,7 +156,7 @@ Completa la seguente procedura per concedere a un utente le autorizzazioni per v
 	  </tr>
 	  <tr>
 	    <td>Ruoli</td>
-		<td>Seleziona uno o più ruoli IAM. <br>I ruoli validi sono: *amministratore*, *operatore*, *editor* e *visualizzatore*. <br>Per ulteriori informazioni sulle azioni consentite per ogni ruolo, vedi [Ruoli IAM](/docs/services/CloudLogAnalysis/security_ov.html#iam_roles).
+		<td>Seleziona uno o più ruoli IAM. <br>I ruoli validi sono: *amministratore*, *operatore*, *editor* e *visualizzatore*. <br>Per ulteriori informazioni sulle azioni consentite per ogni ruolo, vedi [Ruoli IAM](/docs/services/CloudLogAnalysis?topic=cloudloganalysis-security_ov#iam_roles).
 		</td>
 	  </tr>
      </table>
@@ -179,11 +179,11 @@ https://logging.ng.bluemix.net/
 {: codeblock}
 
 
-Per ulteriori informazioni su come avviare Kibana in altre regioni, vedi [Passaggio a Kibana da un browser web](/docs/services/CloudLogAnalysis/kibana/launch.html#launch_Kibana_from_browser).
+Per ulteriori informazioni su come avviare Kibana in altre regioni, vedi [Passaggio a Kibana da un browser web](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-launch#launch_Kibana_from_browser).
 
 **Nota:** quando avvii Kibana, se ricevi un messaggio che indica una condizione di *token di connessione non valido*, controlla le tue autorizzazioni nell'account. Questo messaggio è un'indicazione che il tuo ID utente non dispone delle autorizzazioni a visualizzare i log.
 
-Successivamente, personalizza Kibana per visualizzare ed analizzare i tuoi dati di log. Per maggiori informazioni, vedi [Visualizzazione e analisi dei log](/docs/services/CloudLogAnalysis/kibana/analyzing_logs_Kibana.html#analyzing_logs_Kibana)
+Successivamente, personalizza Kibana per visualizzare ed analizzare i tuoi dati di log. Per maggiori informazioni, vedi [Visualizzazione e analisi dei log](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-analyzing_logs_Kibana#analyzing_logs_Kibana)
     
 
 

@@ -83,7 +83,7 @@ Conclua as etapas a seguir para ativar o Kibana por meio do painel do serviço {
 
 Por padrão, a página **Descobrir** é carregada com o padrão de índice padrão selecionado e um filtro de tempo configurado para os últimos 15 minutos. 
 
-Se a página Descobrir não mostrar nenhuma entrada de log, ajuste o selecionador de tempo. Para obter mais informações, consulte [Configurando um filtro de tempo](/docs/services/CloudLogAnalysis/kibana/filter_logs.html#set_time_filter).
+Se a página Descobrir não mostrar nenhuma entrada de log, ajuste o selecionador de tempo. Para obter mais informações, consulte [Configurando um filtro de tempo](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-filter_logs#set_time_filter).
 
 	
 	
@@ -98,7 +98,7 @@ Conclua as etapas a seguir para ativar o Kibana em um navegador:
 
 1. Abra um navegador da web e ative o Kibana. Em seguida, efetue login na interface com o usuário do Kibana.
 
-    Para ver a lista de URLs por região, veja [URLs para ativar o Kibana](/docs/services/CloudLogAnalysis/kibana/analyzing_logs_Kibana.html#urls_kibana).
+    Para ver a lista de URLs por região, veja [URLs para ativar o Kibana](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-analyzing_logs_Kibana#urls_kibana).
     
     A página Descobrir no Kibana é aberto.
 	
@@ -115,7 +115,7 @@ Conclua as etapas a seguir para ativar o Kibana em um navegador:
 	
 	    em que *Space_ID* é o GUID do espaço no qual você deseja visualizar e analisar dados do log. 
 	
-Se a página Descobrir não mostrar nenhuma entrada de log, ajuste o selecionador de tempo. Para obter mais informações, consulte [Configurando um filtro de tempo](/docs/services/CloudLogAnalysis/kibana/filter_logs.html#set_time_filter).
+Se a página Descobrir não mostrar nenhuma entrada de log, ajuste o selecionador de tempo. Para obter mais informações, consulte [Configurando um filtro de tempo](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-filter_logs#set_time_filter).
 
 
 	
@@ -143,7 +143,7 @@ Para ver os logs de um aplicativo Cloud Foundry no Kibana, conclua as etapas a s
 
     Por padrão, a página **Descobrir** é carregada com o padrão de índice padrão selecionado e um filtro de tempo configurado para os últimos 15 minutos. A consulta de procura é configurada para corresponder todas as entradas para o app CF.
 
-    Se a página Descobrir não mostrar nenhuma entrada de log, ajuste o selecionador de tempo. Para obter mais informações, consulte [Configurando um filtro de tempo](/docs/services/CloudLogAnalysis/kibana/filter_logs.html#set_time_filter).
+    Se a página Descobrir não mostrar nenhuma entrada de log, ajuste o selecionador de tempo. Para obter mais informações, consulte [Configurando um filtro de tempo](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-filter_logs#set_time_filter).
 
 	
 	
@@ -192,7 +192,7 @@ Para ver os logs de um contêiner do Docker no Kibana, conclua as etapas a segui
 
     Por padrão, a página **Descobrir** é carregada com o modelo de índice padrão selecionado e com um filtro de tempo configurado para os últimos 30 segundos. A consulta de procura é configurada para corresponder todas as entradas do contêiner do Docker.
 
-    Se a página Descobrir não mostrar nenhuma entrada de log, ajuste o selecionador de tempo. Para obter mais informações, consulte [Configurando um filtro de tempo](/docs/services/CloudLogAnalysis/kibana/filter_logs.html#set_time_filter).
+    Se a página Descobrir não mostrar nenhuma entrada de log, ajuste o selecionador de tempo. Para obter mais informações, consulte [Configurando um filtro de tempo](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-filter_logs#set_time_filter).
 
 	
 

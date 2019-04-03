@@ -34,15 +34,15 @@ subcollection: cloudloganalysis
 
 在定义新搜索后将其保存，以便能够重复使用，将来在“发现”页面中用于分析，或用来创建可在定制仪表板中使用的可视化项。 
 
-执行新搜索时，直方图、表和字段列表会自动更新，以显示搜索结果。要了解显示哪些数据，请参阅[确定在“发现”页面中显示的数据](/docs/services/CloudLogAnalysis/kibana4/logging_kibana_analize_logs_interactively.html#k4_identify_data)。
+执行新搜索时，直方图、表和字段列表会自动更新，以显示搜索结果。要了解显示哪些数据，请参阅[确定在“发现”页面中显示的数据](/docs/services/CloudLogAnalysis/kibana4?topic=cloudloganalysis-kibana_analize_logs_interactively#k4_identify_data)。
 
 可以创建定制搜索来过滤日志。以下列表概述了有关如何过滤日志中数据的场景：
 
-* 可以搜索日志以查找在字段值中包含特定文本的条目。有关更多信息，请参阅[针对字段值中的特定文本过滤日志](/docs/services/CloudLogAnalysis/kibana4/k4_filter_logs.html#k4_filter_logs_spec_text)。
+* 可以搜索日志以查找在字段值中包含特定文本的条目。有关更多信息，请参阅[针对字段值中的特定文本过滤日志](/docs/services/CloudLogAnalysis/kibana4?topic=cloudloganalysis-k4_filter_logs#k4_filter_logs_spec_text)。
  
-* 可以搜索日志以查找特定字段值，也可以排除日志中包含特定字段值的条目。有关更多信息，请参阅[针对特定字段值过滤日志](/docs/services/CloudLogAnalysis/kibana4/k4_filter_logs.html#k4_filter_logs_spec_field)。
+* 可以搜索日志以查找特定字段值，也可以排除日志中包含特定字段值的条目。有关更多信息，请参阅[针对特定字段值过滤日志](/docs/services/CloudLogAnalysis/kibana4?topic=cloudloganalysis-k4_filter_logs#k4_filter_logs_spec_field)。
  
-* 可以过滤日志以显示某个时间段内的条目。有关更多信息，请参阅[设置时间过滤器](/docs/services/CloudLogAnalysis/kibana4/k4_filter_logs.html#set_time_filter1)。
+* 可以过滤日志以显示某个时间段内的条目。有关更多信息，请参阅[设置时间过滤器](/docs/services/CloudLogAnalysis/kibana4?topic=cloudloganalysis-k4_filter_logs#set_time_filter1)。
      
 
 ## 为*字段列表*中未列出的值添加过滤器
@@ -53,7 +53,7 @@ subcollection: cloudloganalysis
 
 要为在*字段列表*部分中显示的列表中不可用的值添加过滤器，请完成以下步骤：
 
-1. 查看 Kibana 的“发现”页面，以确定它显示的数据子集。有关更多信息，请参阅[确定在 Kibana 的“发现”页面中显示的数据](/docs/services/CloudLogAnalysis/kibana4/logging_kibana_analize_logs_interactively.html#k4_identify_data)。
+1. 查看 Kibana 的“发现”页面，以确定它显示的数据子集。有关更多信息，请参阅[确定在 Kibana 的“发现”页面中显示的数据](/docs/services/CloudLogAnalysis/kibana4?topic=cloudloganalysis-kibana_analize_logs_interactively#k4_identify_data)。
 
     例如，下图显示了*字段列表*中 CF 应用程序实例的值。 
     
@@ -92,13 +92,13 @@ subcollection: cloudloganalysis
 
 要搜索包含特定字段值的条目，请完成以下步骤：
 
-1. 查看 Kibana 的“发现”页面，以确定它显示的数据子集。有关更多信息，请参阅[确定在 Kibana 的“发现”页面中显示的数据](/docs/services/CloudLogAnalysis/kibana4/logging_kibana_analize_logs_interactively.html#k4_identify_data)。
+1. 查看 Kibana 的“发现”页面，以确定它显示的数据子集。有关更多信息，请参阅[确定在 Kibana 的“发现”页面中显示的数据](/docs/services/CloudLogAnalysis/kibana4?topic=cloudloganalysis-kibana_analize_logs_interactively#k4_identify_data)。
 
 2. 在*字段列表*中，确定要为其定义过滤器的字段，并单击该字段。
 
     该字段最多显示 5 个值。每个值有两个“放大镜”按钮。 
     
-    如果看不到值，请参阅[为字段列表中未列出的值添加过滤器](/docs/services/CloudLogAnalysis/kibana4/k4_filter_logs.html#k4_add_filter_out_value)。
+    如果看不到值，请参阅[为字段列表中未列出的值添加过滤器](/docs/services/CloudLogAnalysis/kibana4?topic=cloudloganalysis-k4_filter_logs#k4_add_filter_out_value)。
 
 3. 要添加过滤器以搜索具有某个字段值的条目，请选择该值的放大按钮 ![包含方式下的“放大镜”按钮](images/k4_include_field_icon.jpg "包含方式下的“放大镜”按钮")。
 
@@ -151,7 +151,7 @@ subcollection: cloudloganalysis
 
 要搜索包含特定日志源的条目，请完成以下步骤：
 
-1. 查看 Kibana 的“发现”页面，以确定它显示的数据子集。有关更多信息，请参阅[确定在 Kibana 的“发现”页面中显示的数据](/docs/services/CloudLogAnalysis/kibana4/logging_kibana_analize_logs_interactively.html#k4_identify_data)。
+1. 查看 Kibana 的“发现”页面，以确定它显示的数据子集。有关更多信息，请参阅[确定在 Kibana 的“发现”页面中显示的数据](/docs/services/CloudLogAnalysis/kibana4?topic=cloudloganalysis-kibana_analize_logs_interactively#k4_identify_data)。
 
 2. 在*字段列表*中，选择 **source_id** 字段。
 
@@ -159,7 +159,7 @@ subcollection: cloudloganalysis
 
 3. 要添加过滤器以搜索包含特定 source_id 的条目，请选择该值的放大按钮 ![包含方式下的“放大镜”按钮](images/k4_include_field_icon.jpg "包含方式下的“放大镜”按钮")。
 
-    有关可用于 CF 应用程序的日志源的列表，请参阅 [CF 应用程序的日志源](/docs/services/CloudLogAnalysis/cfapps/logging_cf_apps.html#cf_apps_log_sources_diego)。
+    有关可用于 CF 应用程序的日志源的列表，请参阅 [CF 应用程序的日志源](/docs/services/CloudLogAnalysis/cfapps?topic=cloudloganalysis-logging_cf_apps#cf_apps_log_sources_diego)。
 
     例如，要添加过滤器以包含有关 CF 应用程序的启动、停止或崩溃的日志条目，请选择*字段列表*部分中可用于值 *CELL* 的“放大镜”按钮 ![包含方式下的“放大镜”按钮](images/k4_include_field_icon.jpg "包含方式下的“放大镜”按钮")。下图显示了用于已启用 source_id 值 *CELL* 的过滤器。
     
@@ -177,7 +177,7 @@ subcollection: cloudloganalysis
 
 要搜索包含特定日志类型的条目，请完成以下步骤：
 
-1. 查看 Kibana 的“发现”页面，以确定它显示的数据子集。有关更多信息，请参阅[确定在 Kibana 的“发现”页面中显示的数据](/docs/services/CloudLogAnalysis/kibana4/logging_kibana_analize_logs_interactively.html#k4_identify_data)。
+1. 查看 Kibana 的“发现”页面，以确定它显示的数据子集。有关更多信息，请参阅[确定在 Kibana 的“发现”页面中显示的数据](/docs/services/CloudLogAnalysis/kibana4?topic=cloudloganalysis-kibana_analize_logs_interactively#k4_identify_data)。
 
 2. 在*字段列表*中，选择 **type** 字段。
 
@@ -203,7 +203,7 @@ subcollection: cloudloganalysis
 
 要在 Kibana 仪表板上按实例标识查看和过滤日志，请完成以下步骤：
 
-1. 查看 Kibana 的“发现”页面，以确定它显示的数据子集。有关更多信息，请参阅[确定在 Kibana 的“发现”页面中显示的数据](/docs/services/CloudLogAnalysis/kibana4/logging_kibana_analize_logs_interactively.html#k4_identify_data)。
+1. 查看 Kibana 的“发现”页面，以确定它显示的数据子集。有关更多信息，请参阅[确定在 Kibana 的“发现”页面中显示的数据](/docs/services/CloudLogAnalysis/kibana4?topic=cloudloganalysis-kibana_analize_logs_interactively#k4_identify_data)。
 
 2. 在*字段列表*中，选择以下其中一个字段来搜索特定实例标识：
 
@@ -232,7 +232,7 @@ subcollection: cloudloganalysis
 
 要搜索包含特定消息类型的条目，请完成以下步骤：
 
-1. 查看 Kibana 的“发现”页面，以确定它显示的数据子集。有关更多信息，请参阅[确定在 Kibana 的“发现”页面中显示的数据](/docs/services/CloudLogAnalysis/kibana4/logging_kibana_analize_logs_interactively.html#k4_identify_data)。
+1. 查看 Kibana 的“发现”页面，以确定它显示的数据子集。有关更多信息，请参阅[确定在 Kibana 的“发现”页面中显示的数据](/docs/services/CloudLogAnalysis/kibana4?topic=cloudloganalysis-kibana_analize_logs_interactively#k4_identify_data)。
 
 2. 在*字段列表*中，选择 **message_type** 字段。
 
@@ -265,11 +265,11 @@ Elasticsearch 分析字符串字段的值时，会根据 Unicode Consortium 定�
     
 要搜索在字段值中包含特定文本的条目，请完成以下步骤：
 
-1. 查看 Kibana 的“发现”页面，以确定它显示的数据子集。有关更多信息，请参阅[确定在 Kibana 的“发现”页面中显示的数据](/docs/services/CloudLogAnalysis/kibana4/logging_kibana_analize_logs_interactively.html#k4_identify_data)。
+1. 查看 Kibana 的“发现”页面，以确定它显示的数据子集。有关更多信息，请参阅[确定在 Kibana 的“发现”页面中显示的数据](/docs/services/CloudLogAnalysis/kibana4?topic=cloudloganalysis-kibana_analize_logs_interactively#k4_identify_data)。
 
 2. 确定缺省情况下 Elasticsearch 中分析的字段。
 
-    要显示可用于搜索和过滤日志数据的已分析字段的完整列表，请[重新装入字段列表](/docs/services/CloudLogAnalysis/kibana4/logging_kibana_analize_logs_interactively.html#kibana_discover_view_reload_fields)。然后，在“发现”页面中可用的*字段列表*中，完成以下步骤：
+    要显示可用于搜索和过滤日志数据的已分析字段的完整列表，请[重新装入字段列表](/docs/services/CloudLogAnalysis/kibana4?topic=cloudloganalysis-kibana_analize_logs_interactively#kibana_discover_view_reload_fields)。然后，在“发现”页面中可用的*字段列表*中，完成以下步骤：
     
     1. 单击“配置”图标 ![“配置”图标](images/k4_configure_icon.jpg "“配置”图标")。这将显示**所选字段**部分，在其中可以过滤字段。
 

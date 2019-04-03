@@ -26,24 +26,24 @@ subcollection: cloudloganalysis
 # 获取 IAM 令牌
 {: #auth_iam1}
 
-要使用 {{site.data.keyword.loganalysisshort}} API 来管理可在帐户域中使用的日志，您必须使用认证令牌。使用 {{{site.data.keyword.Bluemix_notm}} CLI 以获取 IAM 令牌。令牌具有到期时间。
+要使用 {{site.data.keyword.loganalysisshort}} API 来管理可在帐户域中使用的日志，您必须使用认证令牌。使用 {{site.data.keyword.cloud_notm}} CLI 以获取 IAM 令牌。令牌具有到期时间。
 {:shortdesc}
 
 
 ## 获取 IAM 令牌
 {: #iam_token_cli}
 
-要使用 {{site.data.keyword.Bluemix_notm}} CLI 获取授权令牌，请在终端上完成以下步骤：
+要使用 {{site.data.keyword.cloud_notm}} CLI 获取授权令牌，请在终端上完成以下步骤：
 
-1. 安装 {{site.data.keyword.Bluemix_notm}} CLI。
+1. 安装 {{site.data.keyword.cloud_notm}} CLI。
 
-   有关更多信息，请参阅[下载并安装 {{site.data.keyword.Bluemix}} CLI](/docs/cli/index.html#overview)。
+   有关更多信息，请参阅[下载并安装 {{site.data.keyword.Bluemix}} CLI](/docs/cli?topic=cloud-cli-ibmcloud-cli#overview)。
    
    如果 CLI 已安装，请继续执行下一步。
     
-2. 登录到 {{site.data.keyword.Bluemix_notm}} 中的区域。 
+2. 登录到 {{site.data.keyword.cloud_notm}} 中的区域。 
 
-    有关更多信息，请参阅[如何登录到 {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/qa/cli_qa.html#login)。
+    有关更多信息，请参阅[如何登录到 {{site.data.keyword.cloud_notm}}](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#login)。
 	
 3. 运行 `ibmcloud iam oauth-tokens` 命令以获取 IAM 令牌。
 

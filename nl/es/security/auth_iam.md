@@ -26,24 +26,24 @@ subcollection: cloudloganalysis
 # Obtención de la señal de IAM
 {: #auth_iam1}
 
-Para gestionar los registros disponibles en el dominio de la cuenta mediante la API de {{site.data.keyword.loganalysisshort}}, debe utilizar una señal de autenticación. Utilice la CLI de {{{site.data.keyword.Bluemix_notm}} para obtener la señal de IAM. La señal tiene un tiempo de caducidad. 
+Para gestionar los registros disponibles en el dominio de la cuenta mediante la API de {{site.data.keyword.loganalysisshort}}, debe utilizar una señal de autenticación. Utilice la CLI de {{site.data.keyword.cloud_notm}} para obtener la señal de IAM. La señal tiene un tiempo de caducidad. 
 {:shortdesc}
 
 
 ## Obtención de la señal de IAM
 {: #iam_token_cli}
 
-Para obtener la señal de autorización mediante la CLI de {{site.data.keyword.Bluemix_notm}}, siga los pasos siguientes desde el terminal:
+Para obtener la señal de autorización mediante la CLI de {{site.data.keyword.cloud_notm}}, siga los pasos siguientes desde el terminal:
 
-1. Instale la CLI de {{site.data.keyword.Bluemix_notm}}.
+1. Instale la CLI de {{site.data.keyword.cloud_notm}}.
 
-   Para obtener más información, consulte [Descargar e instalar la CLI de {{site.data.keyword.Bluemix}}](/docs/cli/index.html#overview).
+   Para obtener más información, consulte [Descargar e instalar la CLI de {{site.data.keyword.Bluemix}}](/docs/cli?topic=cloud-cli-ibmcloud-cli#overview).
    
    Si la CLI está instalada, continúe en el paso siguiente.
     
-2. Inicie una sesión en una región de {{site.data.keyword.Bluemix_notm}}. 
+2. Inicie una sesión en una región de {{site.data.keyword.cloud_notm}}. 
 
-    Para obtener más información, consulte [Cómo iniciar la sesión en {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/qa/cli_qa.html#login).
+    Para obtener más información, consulte [Cómo iniciar la sesión en {{site.data.keyword.cloud_notm}}](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#login).
 	
 3. Ejecute el mandato `ibmcloud iam oauth-tokens` para obtener la señal de IAM.
 

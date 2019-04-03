@@ -25,7 +25,7 @@ subcollection: cloudloganalysis
 # 查看日志信息
 {: #viewing_log_status}
 
-使用 [cf logging status](/docs/services/CloudLogAnalysis/reference/logging_cli.html#status1) 命令可获取有关在“日志收集”中收集并存储的日志的信息。
+使用 [cf logging status](/docs/services/CloudLogAnalysis/reference?topic=cloudloganalysis-logging_cli#status1) 命令可获取有关在“日志收集”中收集并存储的日志的信息。
 {:shortdesc}
 
 ## 获取有关日志在一段时间内的信息
@@ -43,7 +43,7 @@ subcollection: cloudloganalysis
 
 1. 登录到 {{site.data.keyword.Bluemix_notm}} 中的区域、组织和空间。 
 
-    有关更多信息，请参阅[如何登录到 {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/qa/cli_qa.html#login)。
+    有关更多信息，请参阅[如何登录到 {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#login)。
     
 2. 运行 *status* 命令。
 
@@ -80,7 +80,7 @@ subcollection: cloudloganalysis
 
 1. 登录到 {{site.data.keyword.Bluemix_notm}} 中的区域、组织和空间。 
 
-    有关更多信息，请参阅[如何登录到 {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/qa/cli_qa.html#login)。
+    有关更多信息，请参阅[如何登录到 {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#login)。
     
 2. 运行 *status* 命令。
 
@@ -122,7 +122,7 @@ subcollection: cloudloganalysis
 
 1. 登录到 {{site.data.keyword.Bluemix_notm}} 中的区域、组织和空间。 
 
-    有关更多信息，请参阅[如何登录到 {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/qa/cli_qa.html#login)。
+    有关更多信息，请参阅[如何登录到 {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#login)。
     
 2. 运行 *status* 命令。
 

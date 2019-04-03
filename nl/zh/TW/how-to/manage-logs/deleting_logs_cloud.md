@@ -25,7 +25,7 @@ subcollection: cloudloganalysis
 # 刪除日誌
 {: #deleting_logs}
 
-請使用 [ibmcloud logging log-delete](/docs/services/CloudLogAnalysis/reference/log_analysis_cli_cloud.html#delete) 指令，以從「日誌收集」中刪除日誌。
+請使用 [ibmcloud logging log-delete](/docs/services/CloudLogAnalysis/reference?topic=cloudloganalysis-log_analysis_cli#delete) 指令，以從「日誌收集」中刪除日誌。
 {:shortdesc}
 
 * 您可以刪除特定時間範圍內的日誌。
@@ -40,7 +40,7 @@ subcollection: cloudloganalysis
 
 1. 登入 {{site.data.keyword.Bluemix_notm}} 中的地區、組織及空間。 
 
-    如需相關資訊，請參閱[如何登入 {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/qa/cli_qa.html#login)。
+    如需相關資訊，請參閱[如何登入 {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#login)。
     
 2. 執行下列指令，以查看「日誌收集」中可用的日誌。
 
@@ -89,7 +89,7 @@ subcollection: cloudloganalysis
 
 1. 登入 {{site.data.keyword.Bluemix_notm}} 中的地區、組織及空間。 
 
-    如需相關資訊，請參閱[如何登入 {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/qa/cli_qa.html#login)。
+    如需相關資訊，請參閱[如何登入 {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#login)。
     
 2. 執行下列指令，以查看「日誌收集」中可用的日誌。
 
@@ -140,11 +140,11 @@ subcollection: cloudloganalysis
 
 1. 登入 {{site.data.keyword.Bluemix_notm}} 中的地區、組織及空間。 
 
-    如需相關資訊，請參閱[如何登入 {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/qa/cli_qa.html#login)。
+    如需相關資訊，請參閱[如何登入 {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#login)。
 	
 2. 取得帳戶 ID。
 
-    如需相關資訊，請參閱[如何取得帳戶的 GUID](/docs/services/CloudLogAnalysis/qa/cli_qa.html#account_guid)。
+    如需相關資訊，請參閱[如何取得帳戶的 GUID](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#account_guid)。
     
 3. 執行下列指令，以查看「日誌收集」中帳戶層次的可用日誌。
 

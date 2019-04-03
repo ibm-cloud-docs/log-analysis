@@ -26,24 +26,24 @@ subcollection: cloudloganalysis
 # IAM トークンの取得
 {: #auth_iam1}
 
-アカウント・ドメイン内にあるログを {{site.data.keyword.loganalysisshort}} API を使用して管理するには、認証トークンを使用する必要があります。 {{{site.data.keyword.Bluemix_notm}} CLI を使用して IAM トークンを取得します。 トークンには有効期限があります。 
+アカウント・ドメイン内にあるログを {{site.data.keyword.loganalysisshort}} API を使用して管理するには、認証トークンを使用する必要があります。 {{site.data.keyword.cloud_notm}} CLI を使用して IAM トークンを取得します。 トークンには有効期限があります。 
 {:shortdesc}
 
 
 ## IAM トークンの取得
 {: #iam_token_cli}
 
-{{site.data.keyword.Bluemix_notm}} CLI を使用して許可トークンを取得するには、端末から以下のステップを実行します。
+{{site.data.keyword.cloud_notm}} CLI を使用して許可トークンを取得するには、端末から以下のステップを実行します。
 
-1. {{site.data.keyword.Bluemix_notm}} CLI をインストールします。
+1. {{site.data.keyword.cloud_notm}} CLI をインストールします。
 
-   詳しくは、[『{{site.data.keyword.Bluemix}}CLI のダウンロードとインストール』](/docs/cli/index.html#overview)を参照してください。
+   詳しくは、[『{{site.data.keyword.Bluemix}}CLI のダウンロードとインストール』](/docs/cli?topic=cloud-cli-ibmcloud-cli#overview)を参照してください。
    
    CLI がインストールされている場合は、次のステップに進みます。
     
-2. {{site.data.keyword.Bluemix_notm}} の地域にログインします。 
+2. {{site.data.keyword.cloud_notm}} の地域にログインします。 
 
-    詳しくは、『[{{site.data.keyword.Bluemix_notm}} にログインするにはどうすればよいですか](/docs/services/CloudLogAnalysis/qa/cli_qa.html#login)』を参照してください。
+    詳しくは、『[{{site.data.keyword.cloud_notm}} にログインするにはどうすればよいですか](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#login)』を参照してください。
 	
 3. `ibmcloud iam oauth-tokens` コマンドを実行して、IAM トークンを取得します。
 

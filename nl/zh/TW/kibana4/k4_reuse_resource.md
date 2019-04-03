@@ -56,9 +56,9 @@ subcollection: cloudloganalysis
 
 1. 啟動您要複製的搜尋所在的 Kibana。 
 
-    * 從 {{site.data.keyword.Bluemix_notm}} 使用者介面啟動 Kibana：您可匯出的 JSON 搜尋檔案包括下列欄位：*空間 ID*，以及 Cloud Foundry (CF) 應用程式的*應用程式 ID* 或容器的*實例 ID*。如需相關資訊，請參閱[從 {{site.data.keyword.Bluemix_notm}} 儀表板進入 Kibana 儀表板](/docs/services/CloudLogAnalysis/kibana4/k4_launch.html#launch_Kibana_from_bluemix)。
+    * 從 {{site.data.keyword.Bluemix_notm}} 使用者介面啟動 Kibana：您可匯出的 JSON 搜尋檔案包括下列欄位：*空間 ID*，以及 Cloud Foundry (CF) 應用程式的*應用程式 ID* 或容器的*實例 ID*。如需相關資訊，請參閱[從 {{site.data.keyword.Bluemix_notm}} 儀表板進入 Kibana 儀表板](/docs/services/CloudLogAnalysis/kibana4?topic=cloudloganalysis-k4_launch#launch_Kibana_from_bluemix)。
     
-    * 從瀏覽器啟動 Kibana：您可匯出的 JSON 搜尋檔案包括*空間 ID* 欄位。如需相關資訊，請參閱[從瀏覽器進入 Kibana 儀表板](/docs/services/CloudLogAnalysis/kibana4/k4_launch.html#launch_Kibana_from_browser1)。
+    * 從瀏覽器啟動 Kibana：您可匯出的 JSON 搜尋檔案包括*空間 ID* 欄位。如需相關資訊，請參閱[從瀏覽器進入 Kibana 儀表板](/docs/services/CloudLogAnalysis/kibana4?topic=cloudloganalysis-k4_launch#launch_Kibana_from_browser1)。
 
 2. 在*設定* 頁面中，選取**物件**及**搜尋**標籤。然後選取搜尋，並複製下列資訊：
 
@@ -94,7 +94,7 @@ subcollection: cloudloganalysis
     
 5. 針對您要匯入搜尋的 {{site.data.keyword.Bluemix_notm}} 空間啟動 Kibana，然後取得下列資訊：
 
-    從 [Bluemix 使用者介面](/docs/services/CloudLogAnalysis/kibana4/k4_launch.html#launch_Kibana_from_bluemix)：
+    從 [Bluemix 使用者介面](/docs/services/CloudLogAnalysis/kibana4?topic=cloudloganalysis-k4_launch#launch_Kibana_from_bluemix)：
     
     <table>
       <tbody>
@@ -196,9 +196,9 @@ subcollection: cloudloganalysis
 
 1. 針對您要複製之視覺效果所在的空間啟動 Kibana。 
 
-    * 從 {{site.data.keyword.Bluemix_notm}} 使用者介面啟動 Kibana：您可匯出的 JSON 搜尋檔案包括下列欄位：*空間 ID*，以及 Cloud Foundry (CF) 應用程式的*應用程式 ID* 或容器的*實例 ID*。如需相關資訊，請參閱[從 {{site.data.keyword.Bluemix_notm}} 儀表板進入 Kibana 儀表板](/docs/services/CloudLogAnalysis/kibana4/k4_launch.html#launch_Kibana_from_bluemix)。
+    * 從 {{site.data.keyword.Bluemix_notm}} 使用者介面啟動 Kibana：您可匯出的 JSON 搜尋檔案包括下列欄位：*空間 ID*，以及 Cloud Foundry (CF) 應用程式的*應用程式 ID* 或容器的*實例 ID*。如需相關資訊，請參閱[從 {{site.data.keyword.Bluemix_notm}} 儀表板進入 Kibana 儀表板](/docs/services/CloudLogAnalysis/kibana4?topic=cloudloganalysis-k4_launch#launch_Kibana_from_bluemix)。
     
-    * 從瀏覽器啟動 Kibana：您可匯出的 JSON 搜尋檔案包括*空間 ID* 欄位。如需相關資訊，請參閱[從瀏覽器進入 Kibana 儀表板](/docs/services/CloudLogAnalysis/kibana4/k4_launch.html#launch_Kibana_from_browser1)。
+    * 從瀏覽器啟動 Kibana：您可匯出的 JSON 搜尋檔案包括*空間 ID* 欄位。如需相關資訊，請參閱[從瀏覽器進入 Kibana 儀表板](/docs/services/CloudLogAnalysis/kibana4?topic=cloudloganalysis-k4_launch#launch_Kibana_from_browser1)。
     
 2. 複製空間之間與視覺效果相關聯的搜尋。如需相關資訊，請參閱[在 Bluemix 空間之間複製搜尋](/docs/services/CloudLogAnalysis/kibana4/k4_reuse_resource.html#k4_reuse_search)。
 

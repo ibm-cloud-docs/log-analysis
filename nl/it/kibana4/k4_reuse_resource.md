@@ -56,9 +56,9 @@ Completa la seguente procedura per copiare una ricerca tra spazi in {{site.data.
 
 1. Avvia Kibana dove è disponibile la ricerca che vuoi copiare. 
 
-    * Avvia Kibana dalla IU {{site.data.keyword.Bluemix_notm}}: il file di ricerca JSON che puoi esportare include i seguenti campi: *ID spazio* e *ID applicazione* per le applicazioni CF (Cloud Foundry) oppure *ID istanza* per i contenitori. Per ulteriori informazioni, vedi [Accesso al dashboard Kibana dal dashboard {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/kibana4/k4_launch.html#launch_Kibana_from_bluemix).
+    * Avvia Kibana dalla IU {{site.data.keyword.Bluemix_notm}}: il file di ricerca JSON che puoi esportare include i seguenti campi: *ID spazio* e *ID applicazione* per le applicazioni CF (Cloud Foundry) oppure *ID istanza* per i contenitori. Per ulteriori informazioni, vedi [Accesso al dashboard Kibana dal dashboard {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/kibana4?topic=cloudloganalysis-k4_launch#launch_Kibana_from_bluemix).
     
-    * Avvia Kibana da un browser: Il file di ricerca JSON che puoi esportare include il campo *ID spazio*. Per ulteriori informazioni, vedi [Accesso al dashboard Kibana da un browser](/docs/services/CloudLogAnalysis/kibana4/k4_launch.html#launch_Kibana_from_browser1).
+    * Avvia Kibana da un browser: Il file di ricerca JSON che puoi esportare include il campo *ID spazio*. Per ulteriori informazioni, vedi [Accesso al dashboard Kibana da un browser](/docs/services/CloudLogAnalysis/kibana4?topic=cloudloganalysis-k4_launch#launch_Kibana_from_browser1).
 
 2. Nella pagina *Impostazioni*, seleziona **Oggetti** e la scheda **Ricerche**. Seleziona quindi una ricerca e copia le seguenti informazioni:
 
@@ -94,7 +94,7 @@ Completa la seguente procedura per copiare una ricerca tra spazi in {{site.data.
     
 5. Avvia Kibana dallo spazio {{site.data.keyword.Bluemix_notm}} dove vuoi importare la ricerca e ottieni quindi le seguenti informazioni:
 
-    Dall'[IU Bluemix](/docs/services/CloudLogAnalysis/kibana4/k4_launch.html#launch_Kibana_from_bluemix):
+    Dall'[IU Bluemix](/docs/services/CloudLogAnalysis/kibana4?topic=cloudloganalysis-k4_launch#launch_Kibana_from_bluemix):
     
     <table>
       <tbody>
@@ -196,9 +196,9 @@ Completa la seguente procedura per copiare in un altro spazio una visualizzazion
 
 1. Avvia Kibana per lo spazio in cui è disponibile la visualizzazione che vuoi copiare. 
 
-    * Avvia Kibana dalla IU {{site.data.keyword.Bluemix_notm}}: il file di ricerca JSON che puoi esportare include i seguenti campi: *ID spazio* e *ID applicazione* per le applicazioni CF (Cloud Foundry) oppure *ID istanza* per i contenitori. Per ulteriori informazioni, vedi [Accesso al dashboard Kibana dal dashboard {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/kibana4/k4_launch.html#launch_Kibana_from_bluemix).
+    * Avvia Kibana dalla IU {{site.data.keyword.Bluemix_notm}}: il file di ricerca JSON che puoi esportare include i seguenti campi: *ID spazio* e *ID applicazione* per le applicazioni CF (Cloud Foundry) oppure *ID istanza* per i contenitori. Per ulteriori informazioni, vedi [Accesso al dashboard Kibana dal dashboard {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/kibana4?topic=cloudloganalysis-k4_launch#launch_Kibana_from_bluemix).
     
-    * Avvia Kibana da un browser: Il file di ricerca JSON che puoi esportare include il campo *ID spazio*. Per ulteriori informazioni, vedi [Accesso al dashboard Kibana da un browser](/docs/services/CloudLogAnalysis/kibana4/k4_launch.html#launch_Kibana_from_browser1).
+    * Avvia Kibana da un browser: Il file di ricerca JSON che puoi esportare include il campo *ID spazio*. Per ulteriori informazioni, vedi [Accesso al dashboard Kibana da un browser](/docs/services/CloudLogAnalysis/kibana4?topic=cloudloganalysis-k4_launch#launch_Kibana_from_browser1).
     
 2. Copia la ricerca associata alla visualizzazione tra gli spazi. Per ulteriori informazioni, vedi [Copia di una ricerca tra spazi Bluemix](/docs/services/CloudLogAnalysis/kibana4/k4_reuse_resource.html#k4_reuse_search).
 

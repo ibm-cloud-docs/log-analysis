@@ -49,7 +49,7 @@ subcollection: cloudloganalysis
 
 5. 選取服務方案。依預設，會設定**精簡**方案。
 
-    如需服務方案的相關資訊，請參閱[服務方案](/docs/services/CloudLogAnalysis/log_analysis_ov.html#plans)。
+    如需服務方案的相關資訊，請參閱[服務方案](/docs/services/CloudLogAnalysis?topic=cloudloganalysis-log_analysis_ov#plans)。
 	
 6. 按一下**建立**，以在所登入的 {{site.data.keyword.Bluemix_notm}} 空間中佈建 {{site.data.keyword.loganalysisshort}} 服務。
   
@@ -62,13 +62,13 @@ subcollection: cloudloganalysis
 
 1. [必要條件] 安裝 {{site.data.keyword.Bluemix_notm}} CLI。
 
-   如需相關資訊，請參閱[安裝 {{site.data.keyword.Bluemix_notm}} CLI](/docs/cli/index.html#overview)。
+   如需相關資訊，請參閱[安裝 {{site.data.keyword.Bluemix_notm}} CLI](/docs/cli?topic=cloud-cli-ibmcloud-cli#overview)。
    
    如果已安裝 CLI，請繼續進行下一步。
     
 2. 登入 {{site.data.keyword.Bluemix_notm}} 中您要佈建服務的地區、組織及空間。 
 
-    如需相關資訊，請參閱[如何登入 {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/qa/cli_qa.html#login)。
+    如需相關資訊，請參閱[如何登入 {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#login)。
 	
 3. 執行 `ibmcloud service create` 指令，以佈建實例。
 
@@ -80,7 +80,7 @@ subcollection: cloudloganalysis
 	其中
 	
 	* service_name 是服務的名稱，亦即 **ibmLogAnalysis**。
-	* service_plan 是服務方案名稱。如需方案的清單，請參閱[服務方案](/docs/services/CloudLogAnalysis/log_analysis_ov.html#plans)。
+	* service_plan 是服務方案名稱。如需方案的清單，請參閱[服務方案](/docs/services/CloudLogAnalysis?topic=cloudloganalysis-log_analysis_ov#plans)。
 	* service_instance_name 是您要用於所建立之新服務實例的名稱。
 
 	例如，若要使用精簡方案建立 {{site.data.keyword.loganalysisshort}} 服務的實例，請執行下列指令：

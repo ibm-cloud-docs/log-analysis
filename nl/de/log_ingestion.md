@@ -29,7 +29,7 @@ subcollection: cloudloganalysis
 Sie können Protokolle außerhalb der {{site.data.keyword.IBM_notm}} Cloud über den Multi-Tenant Logstash Forwarder an den {{site.data.keyword.loganalysisshort}}-Service senden. 
 {:shortdesc}
 
-Diese Funktion ist nur für Servicepläne verfügbar, die das Einpflegen von Protokollen (Log Ingestion) zulassen. Weitere Informationen finden Sie unter [Servicepläne](/docs/services/CloudLogAnalysis/log_analysis_ov.html#plans).
+Diese Funktion ist nur für Servicepläne verfügbar, die das Einpflegen von Protokollen (Log Ingestion) zulassen. Weitere Informationen finden Sie unter [Servicepläne](/docs/services/CloudLogAnalysis?topic=cloudloganalysis-log_analysis_ov#plans).
 
 Um Protokolle außerhalb der {{site.data.keyword.IBM_notm}} Cloud an den {{site.data.keyword.loganalysisshort}}-Service zu senden, benötigen Sie die folgenden Cloud-Ressourcen:
 
@@ -38,7 +38,7 @@ Um Protokolle außerhalb der {{site.data.keyword.IBM_notm}} Cloud an den {{site.
 
 In der lokalen Umgebung müssen Sie den Multi-Tenant Logstash Forwarder (mt-logstash-forwarder) konfigurieren und die Protokolldateien angeben, die an den {{site.data.keyword.loganalysisshort}}-Service gesendet werden sollen.
 
-Weitere Informationen zum Konfigurieren der lokalen Umgebung zum Senden von Protokollen an den {{site.data.keyword.loganalysisshort}}-Service finden Sie unter [Lokale Daten an einen Bereich in {{site.data.keyword.Bluemix_notm}} senden](/docs/services/CloudLogAnalysis/how-to/send-data/send_data_mt.html#send_data_mt).
+Weitere Informationen zum Konfigurieren der lokalen Umgebung zum Senden von Protokollen an den {{site.data.keyword.loganalysisshort}}-Service finden Sie in [Lokale Daten an einen Bereich in {{site.data.keyword.Bluemix_notm}} senden](/docs/services/CloudLogAnalysis/how-to/send-data?topic=cloudloganalysis-send_data_mt#send_data_mt). 
 
 
 

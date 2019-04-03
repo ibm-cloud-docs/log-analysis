@@ -49,7 +49,7 @@ subcollection: cloudloganalysis
 
 5. 서비스 플랜을 선택하십시오. 기본적으로 **Lite** 플랜이 설정됩니다.
 
-    서비스 플랜에 대한 자세한 정보는 [서비스 플랜](/docs/services/CloudLogAnalysis/log_analysis_ov.html#plans)을 참조하십시오.
+    서비스 플랜에 대한 자세한 정보는 [서비스 플랜](/docs/services/CloudLogAnalysis?topic=cloudloganalysis-log_analysis_ov#plans)을 참조하십시오.
 	
 6. 사용자가 로그인한 {{site.data.keyword.Bluemix_notm}} 영역의 {{site.data.keyword.loganalysisshort}} 서비스를 프로비저닝하려면 **작성**을 클릭하십시오.
   
@@ -62,13 +62,13 @@ subcollection: cloudloganalysis
 
 1. [전제조건] {{site.data.keyword.Bluemix_notm}} CLI를 설치하십시오.
 
-   자세한 정보는 [{{site.data.keyword.Bluemix_notm}} CLI 설치](/docs/cli/index.html#overview)를 참조하십시오.
+   자세한 정보는 [{{site.data.keyword.Bluemix_notm}} CLI 설치](/docs/cli?topic=cloud-cli-ibmcloud-cli#overview)를 참조하십시오.
    
    CLI가 설치되면 다음 단계로 계속 진행하십시오.
     
 2. 서비스를 프로비저닝하려는 {{site.data.keyword.Bluemix_notm}}의 지역, 조직 및 영역에 로그인하십시오. 
 
-    자세한 정보는 [{{site.data.keyword.Bluemix_notm}}에 로그인하는 방법](/docs/services/CloudLogAnalysis/qa/cli_qa.html#login)을 참조하십시오.
+    자세한 정보는 [{{site.data.keyword.Bluemix_notm}}에 로그인하는 방법](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#login)을 참조하십시오.
 	
 3. `ibmcloud service create` 명령을 실행하여 인스턴스를 프로비저닝하십시오.
 
@@ -80,7 +80,7 @@ subcollection: cloudloganalysis
 	여기서,
 	
 	* service_name은 서비스 이름(즉 **ibmLogAnalysis**)입니다.
-	* service_plan은 서비스 플랜 이름입니다. 플랜 목록은 [서비스 플랜](/docs/services/CloudLogAnalysis/log_analysis_ov.html#plans)을 참조하십시오.
+	* service_plan은 서비스 플랜 이름입니다. 플랜 목록은 [서비스 플랜](/docs/services/CloudLogAnalysis?topic=cloudloganalysis-log_analysis_ov#plans)을 참조하십시오.
 	* service_instance_name은 작성하는 새 서비스 인스턴스에 사용할 이름입니다.
 
 	예를 들어, Lite 플랜으로 {{site.data.keyword.loganalysisshort}} 서비스의 인스턴스를 작성하려면 다음 명령을 실행하십시오.

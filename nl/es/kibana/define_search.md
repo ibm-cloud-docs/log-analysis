@@ -32,15 +32,15 @@ Complete las siguientes tareas para definir una búsqueda personalizada:
 
 1. Inicie Kibana.
 
-    Para las apps Cloud Foundry (CF), consulte [inicio de Kibana desde el panel de control de una app CF](/docs/services/CloudLogAnalysis/kibana/launch.html#launch_Kibana_from_cf_app).
+    Para las apps Cloud Foundry (CF), consulte [inicio de Kibana desde el panel de control de una app CF](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-launch#launch_Kibana_from_cf_app).
 
-	Para contenedores que se ejecutan en la infraestructura gestionada por {{site.data.keyword.Bluemix_notm}}, consulte [inicio de Kibana desde el panel de control de un contenedor](/docs/services/CloudLogAnalysis/kibana/launch.html#launch_Kibana_for_containers).
+	Para contenedores que se ejecutan en la infraestructura gestionada por {{site.data.keyword.Bluemix_notm}}, consulte [inicio de Kibana desde el panel de control de un contenedor](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-launch#launch_Kibana_for_containers).
     
-    Para todos los recursos de nube, por ejemplo los contenedores que se ejecutan en un clúster Kubernetes, consulte [inicio de Kibana desde el navegador](/docs/services/CloudLogAnalysis/kibana/launch.html#launch_Kibana_from_browser). 
+    Para todos los recursos de nube, por ejemplo los contenedores que se ejecutan en un clúster de Kubernetes, consulte [inicio de Kibana desde el navegador](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-launch#launch_Kibana_from_browser). 
 	
 	Cuando se accede a Kibana, se aplica la búsqueda predeterminada. Puede ver los registros de la lista de instancias del recurso que está consultando. Puede filtrar los registros para cualquiera de los recursos de {{site.data.keyword.Bluemix_notm}} o para todos ellos en este espacio.
 
-2. Examine la página Descubrir para ver el subconjunto de datos que muestra. Para obtener más información, consulte [Identificación de los datos que se muestran en la página Descubrir de Kibana](/docs/services/CloudLogAnalysis/kibana/analize_logs_interactively.html#identify_data). A continuación, modifique la consulta predeterminada para filtrar las entradas.
+2. Examine la página Descubrir para ver el subconjunto de datos que muestra. Para obtener más información, consulte [Identificación de los datos que se muestran en la página Descubrir de Kibana](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-analize_logs_interactively#identify_data). A continuación, modifique la consulta predeterminada para filtrar las entradas.
 
     **Nota:** Utilice el lenguaje de consulta de Lucene para definir la consulta personalizada. Para obtener más información, consulte [Apache Lucene - Sintaxis del analizador de consultas ![Icono de enlace externo](../../../icons/launch-glyph.svg "Icono de enlace externo")](https://lucene.apache.org/core/2_9_4/queryparsersyntax.html){: new_window}
     
@@ -52,11 +52,11 @@ Complete las siguientes tareas para definir una búsqueda personalizada:
     * Para buscar un valor dentro de un campo determinado, escriba la búsqueda con el siguiente formato: *log_field_name:search_term*; por ejemplo, `instance_id:"1"`.
     * Para buscar un rango de valores para un determinado campo de registro, escriba la búsqueda con el siguiente formato: *log_field_name:[start_of_range TO end_of_range]*; por ejemplo, `instance_id:["1" TO "2"]`.
 
-     Por ejemplo, para una app CF, puede crear una consulta `application_id:9d222152-8834-4bab-8685-3036cd25931a AND instance_id:["0" TO "1"]`que muestre solo  las entradas correspondientes a las instancias *0* y *1*. 
+     Por ejemplo, para una app CF, puede crear una consulta `application_id:9d222152-8834-4bab-8685-3036cd25931a AND instance_id:["0" TO "1"]` que muestre solo las entradas correspondientes a las instancias *0* y *1*. 
 
-3. Guarde la consulta para poderla reutilizar más adelante. Para obtener más información, consulte [Cómo guardar una búsqueda](/docs/services/CloudLogAnalysis/kibana/define_search.html#save_search1). 
+3. Guarde la consulta para poderla reutilizar más adelante. Para obtener más información, consulte [Cómo guardar una búsqueda](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-define_search#save_search1). 
 
-**Nota:** Si tiene que suprimir una consulta, consulte [Supresión de una búsqueda](/docs/services/CloudLogAnalysis/kibana/define_search.html#delete_search).
+**Nota:** Si tiene que suprimir una consulta, consulte [Supresión de una búsqueda](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-define_search#delete_search).
 
 
 

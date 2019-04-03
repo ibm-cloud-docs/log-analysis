@@ -30,9 +30,9 @@ La CLI {{site.data.keyword.loganalysislong}} è un plugin per gestire i log per 
 
 **Prerequisiti **
 * Prima di eseguire i comandi di registrazione, accedi a {{site.data.keyword.Bluemix_notm}} con il comando `ibmcloud login` per generare un token di accesso {{site.data.keyword.Bluemix_short}}
- e autenticare la tua sessione. Per ulteriori informazioni, vedi [Come accedo a {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/qa/cli_qa.html#login).
+ e autenticare la tua sessione. Per ulteriori informazioni, vedi [Come accedo a {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#login).
 
-Per informazioni su come utilizzare la CLI {{site.data.keyword.loganalysisshort}}, vedi [Gestione dei log](/docs/services/CloudLogAnalysis/log_analysis_ov.html#log_analysis_ov).
+Per informazioni su come utilizzare la CLI {{site.data.keyword.loganalysisshort}}, vedi [Gestione dei log](/docs/services/CloudLogAnalysis?topic=cloudloganalysis-log_analysis_ov#log_analysis_ov).
 
 <table>
   <caption>Comandi per la gestione dei log</caption>
@@ -198,7 +198,7 @@ ibmcloud cf logging delete -s 2017-05-25 -e 2017-05-25 -t linux_syslog
 
 Scarica i log dalla raccolta dei log in un file locale o li invia a un altro programma come uno stack Elastic. 
 
-**Nota:** per scaricare i file, devi prima creare una sessione. Una sessione definisce quali log scaricare in base all'intervallo di date, al tipo di log e al tipo di account. Scarica i log nel contesto di una sessione. Per ulteriori informazioni, vedi [ibmcloud cf logging session create (Beta)](/docs/services/CloudLogAnalysis/reference/logging_cli.html#session_create1).
+**Nota:** per scaricare i file, devi prima creare una sessione. Una sessione definisce quali log scaricare in base all'intervallo di date, al tipo di log e al tipo di account. Scarica i log nel contesto di una sessione. Per ulteriori informazioni, vedi [ibmcloud cf logging session create (Beta)](/docs/services/CloudLogAnalysis/reference?topic=cloudloganalysis-logging_cli#session_create1).
 
 ```
 ibmcloud cf logging download [parametri] [argomenti]

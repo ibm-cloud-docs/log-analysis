@@ -30,13 +30,13 @@ A seguir estão as respostas para perguntas comuns sobre como usar os recursos d
 do {{site.data.keyword.Bluemix}}. {:shortdesc}
 
 * [O que poderei fazer se eu não conseguir ver
-os dados na página Descobrir no Kibana?](/docs/services/CloudLogAnalysis/qa/faq_kibana.html#logging_qa_no_data_discover_kibana)
+os dados na página Descobrir no Kibana?](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-faq_kibana#logging_qa_no_data_discover_kibana)
 * [O que poderei fazer se eu receber uma
-exceção de autenticação?](/docs/services/CloudLogAnalysis/qa/faq_kibana.html#logging_qa_no_data_dashboard_kibana)
-* [Por que eu vejo o símbolo? por campos na página Descobrir do Kibana](/docs/services/CloudLogAnalysis/qa/faq_kibana.html#logging_qa_kibana_question)
-* [Recebo um erro 403 quando tento mudar o padrão de índice padrão](/docs/services/CloudLogAnalysis/qa/faq_kibana.html#error_403)
-* [URL curta não funciona](/docs/services/CloudLogAnalysis/qa/faq_kibana.html#short_url)
-* [Posso procurar meus logs de contas no Bluemix?](/docs/services/CloudLogAnalysis/qa/faq_kibana.html#acc_logs_1)
+exceção de autenticação?](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-faq_kibana#logging_qa_no_data_dashboard_kibana)
+* [Por que eu vejo o símbolo? por campos na página Descobrir do Kibana](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-faq_kibana#logging_qa_kibana_question)
+* [Recebo um erro 403 quando tento mudar o padrão de índice padrão](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-faq_kibana#error_403)
+* [URL curta não funciona](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-faq_kibana#short_url)
+* [Posso procurar meus logs de contas no Bluemix?](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-faq_kibana#acc_logs_1)
 
 
 ## O que poderei fazer se eu não conseguir ver os dados na página Descobrir no Kibana?
@@ -58,7 +58,7 @@ aumente o período de tempo.
 
     Para obter mais informações sobre como configurar o *Selecionador de Tempo*, consulte
 [Configurando um filtro de
-tempo](/docs/services/CloudLogAnalysis/kibana/filter_logs.html#set_time_filter1).
+tempo](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-filter_logs#set_time_filter1).
        
 2. Clique na lupa que está localizada na barra de procura da página *Descobrir*. Os dados da página são atualizados com base na consulta de procura padrão.
 
@@ -69,7 +69,7 @@ período de *Atualização automática* é configurado como **OFF**.
     
     Para obter mais informações sobre como ativá-lo, consulte
 [Atualizando
-os dados automaticamente](/docs/services/CloudLogAnalysis/kibana/analize_logs_interactively.html#discover_view_refresh_interval).
+os dados automaticamente](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-analize_logs_interactively#discover_view_refresh_interval).
 
 
 
@@ -110,7 +110,7 @@ equipe que usam o mesmo painel.
 ## Por que eu vejo o símbolo? por campos na página Descobrir do Kibana
 {: #logging_qa_kibana_question}
 
-Quando você abre a página Descobrir no Kibana, é possível ver um ponto de interrogação `?` por campos listados na seção de campos disponíveis, em vez do caractere `t`. Quando você recarrega a lista de campos, o tipo de campos é analisado, e o ponto de interrogação `?` é substituído pelo caractere `t`. Para obter mais informações, veja [Recarregando a lista de campos](/docs/services/CloudLogAnalysis/kibana/analize_logs_interactively.html#discover_view_reload_fields).
+Quando você abre a página Descobrir no Kibana, é possível ver um ponto de interrogação `?` por campos listados na seção de campos disponíveis, em vez do caractere `t`. Quando você recarrega a lista de campos, o tipo de campos é analisado, e o ponto de interrogação `?` é substituído pelo caractere `t`. Para obter mais informações, veja [Recarregando a lista de campos](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-analize_logs_interactively#discover_view_reload_fields).
 
 
 ## Recebo um erro 403 quando tento mudar o padrão de índice padrão
@@ -132,7 +132,7 @@ Como um proprietário da conta, é possível procurar e analisar seus logs de co
 
 Conclua as etapas a seguir para ver seus logs de contas:
 
-1. [Ative o Kibana](/docs/services/CloudLogAnalysis/kibana/launch.html#launch_Kibana_from_browser). Por exemplo para a região Sul dos EUA, use a URL `https://logging.ng.bluemix.net`,
+1. [Ative o Kibana](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-launch#launch_Kibana_from_browser). Por exemplo para a região Sul dos EUA, use a URL `https://logging.ng.bluemix.net`,
 
 2. Selecione a opção **Visualizar logs da conta AccountName** para exibir os logs da conta. *AccountName* é o nome da conta.
 

@@ -25,7 +25,7 @@ subcollection: cloudloganalysis
 # Supresión de registros
 {: #deleting_logs}
 
-Utilice el mandato [ibmcloud logging log-delete](/docs/services/CloudLogAnalysis/reference/log_analysis_cli_cloud.html#delete) para suprimir los registros de la recopilación de registros. 
+Utilice el mandato [ibmcloud logging log-delete](/docs/services/CloudLogAnalysis/reference?topic=cloudloganalysis-log_analysis_cli#delete) para suprimir los registros de la recopilación de registros. 
 {:shortdesc}
 
 * Puede suprimir los registros comprendidos en un determinado intervalo de tiempo.
@@ -40,7 +40,7 @@ Siga estos pasos para suprimir todos los registros almacenados en un dominio del
 
 1. Inicie la sesión en una región, organización y espacio en {{site.data.keyword.Bluemix_notm}}. 
 
-    Para obtener más información, consulte [Cómo iniciar la sesión en {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/qa/cli_qa.html#login).
+    Para obtener más información, consulte [Cómo iniciar la sesión en {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#login).
     
 2. Ejecute el siguiente mandato para ver los registros disponibles en la recopilación de registros.
 
@@ -89,7 +89,7 @@ Complete los pasos siguientes para suprimir registros según el tipo de registro
 
 1. Inicie la sesión en una región, organización y espacio en {{site.data.keyword.Bluemix_notm}}. 
 
-    Para obtener más información, consulte [Cómo iniciar la sesión en {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/qa/cli_qa.html#login).
+    Para obtener más información, consulte [Cómo iniciar la sesión en {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#login).
     
 2. Ejecute el siguiente mandato para ver los registros disponibles en la recopilación de registros.
 
@@ -140,11 +140,11 @@ Siga estos pasos:
 
 1. Inicie la sesión en una región, organización y espacio en {{site.data.keyword.Bluemix_notm}}. 
 
-    Para obtener más información, consulte [Cómo iniciar la sesión en {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/qa/cli_qa.html#login).
+    Para obtener más información, consulte [Cómo iniciar la sesión en {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#login).
 	
 2. Obtenga el ID de cuenta.
 
-    Para obtener más información, consulte [¿Cómo se obtiene el GUID de una cuenta?](/docs/services/CloudLogAnalysis/qa/cli_qa.html#account_guid)
+    Para obtener más información, consulte [¿Cómo se obtiene el GUID de una cuenta?](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#account_guid)
     
 3. Ejecute el siguiente mandato para ver los registros disponibles en la recopilación de registros a nivel de cuenta.
 

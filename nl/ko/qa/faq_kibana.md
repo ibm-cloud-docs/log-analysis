@@ -28,12 +28,12 @@ subcollection: cloudloganalysis
 
 {{site.data.keyword.Bluemix}} 로깅 기능 사용에 대한 일반적인 질문에 대한 답변입니다. {:shortdesc}
 
-* [Kibana의 검색 페이지에서 데이터를 볼 수 없는 경우 처리 방법](/docs/services/CloudLogAnalysis/qa/faq_kibana.html#logging_qa_no_data_discover_kibana)
-* [인증 예외가 발생하는 경우 처리 방법](/docs/services/CloudLogAnalysis/qa/faq_kibana.html#logging_qa_no_data_dashboard_kibana)
-* [Kibana 검색 페이지에서 필드 옆에 ? 기호가 표시되는 이유](/docs/services/CloudLogAnalysis/qa/faq_kibana.html#logging_qa_kibana_question)
-* [기본 인덱스 패턴 변경 시 403 오류 표시](/docs/services/CloudLogAnalysis/qa/faq_kibana.html#error_403)
-* [단축 URL이 작동하지 않음](/docs/services/CloudLogAnalysis/qa/faq_kibana.html#short_url)
-* [Bluemix에서 내 계정 로그를 검색할 수 있습니까?](/docs/services/CloudLogAnalysis/qa/faq_kibana.html#acc_logs_1)
+* [Kibana의 검색 페이지에서 데이터를 볼 수 없는 경우 처리 방법](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-faq_kibana#logging_qa_no_data_discover_kibana)
+* [인증 예외가 발생하는 경우 처리 방법](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-faq_kibana#logging_qa_no_data_dashboard_kibana)
+* [Kibana 검색 페이지에서 필드 옆에 ? 기호가 표시되는 이유](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-faq_kibana#logging_qa_kibana_question)
+* [기본 인덱스 패턴 변경 시 403 오류 표시](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-faq_kibana#error_403)
+* [단축 URL이 작동하지 않음](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-faq_kibana#short_url)
+* [Bluemix에서 내 계정 로그를 검색할 수 있습니까?](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-faq_kibana#acc_logs_1)
 
 
 ## Kibana의 검색 페이지에서 데이터를 볼 수 없는 경우 처리 방법
@@ -50,7 +50,7 @@ Kibana에서 데이터를 볼 수 없게 되는 다른 시나리오가 있습니
 
     **참고**: 기본적으로 {{site.data.keyword.Bluemix_notm}}에서 *시간 선택도구*는 최근 15분 동안의 데이터를 표시하도록 설정됩니다.
 
-    *시간 선택도구* 설정 방법에 대한 자세한 정보는 [시간 필터 설정](/docs/services/CloudLogAnalysis/kibana/filter_logs.html#set_time_filter1)을 참조하십시오.
+    *시간 선택도구* 설정 방법에 대한 자세한 정보는 [시간 필터 설정](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-filter_logs#set_time_filter1)을 참조하십시오.
        
 2. *검색* 페이지 검색 표시줄에 있는 돋보기를 클릭하십시오. 페이지 데이터는 기본 검색 조회를 기반으로 새로 고쳐집니다.
 
@@ -58,7 +58,7 @@ Kibana에서 데이터를 볼 수 없게 되는 다른 시나리오가 있습니
 
     **참고**: 기본적으로 {{site.data.keyword.Bluemix_notm}}에서 *자동으로 새로 고치기* 기간은 **OFF**로 설정됩니다.
     
-    사용 가능하게 설정하는 방법에 대한 자세한 정보는 [자동으로 데이터 새로 고치기](/docs/services/CloudLogAnalysis/kibana/analize_logs_interactively.html#discover_view_refresh_interval)를 참조하십시오.
+    사용 가능하게 설정하는 방법에 대한 자세한 정보는 [자동으로 데이터 새로 고치기](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-analize_logs_interactively#discover_view_refresh_interval)를 참조하십시오.
 
 
 
@@ -90,7 +90,7 @@ Kibana에서 데이터를 볼 수 없게 되는 다른 시나리오가 있습니
 ## Kibana 검색 페이지에서 필드 옆에 ? 기호가 표시되는 이유
 {: #logging_qa_kibana_question}
 
-Kibana에서 검색 페이지를 열 때 사용 가능한 필드 섹션에 나열된 필드 옆에 문자 `t` 대신에 물음표 `?`가 표시될 수 있습니다. 필드의 목록을 다시 로드하면 필드의 유형이 분석되고 물음표 `?`가 `t`로 대체됩니다. 자세한 정보는[필드의 목록 다시 로드](/docs/services/CloudLogAnalysis/kibana/analize_logs_interactively.html#discover_view_reload_fields)를 참조하십시오.
+Kibana에서 검색 페이지를 열 때 사용 가능한 필드 섹션에 나열된 필드 옆에 문자 `t` 대신에 물음표 `?`가 표시될 수 있습니다. 필드의 목록을 다시 로드하면 필드의 유형이 분석되고 물음표 `?`가 `t`로 대체됩니다. 자세한 정보는[필드의 목록 다시 로드](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-analize_logs_interactively#discover_view_reload_fields)를 참조하십시오.
 
 
 ## 기본 인덱스 패턴 변경 시 403 오류 표시
@@ -112,7 +112,7 @@ Kibana에서 검색 페이지를 열 때 사용 가능한 필드 섹션에 나�
 
 계정 로그를 보려면 다음 단계를 완료하십시오.
 
-1. [Kibana를 실행](/docs/services/CloudLogAnalysis/kibana/launch.html#launch_Kibana_from_browser)하십시오. 예를 들어 미국 남부 지역의 경우 `https://logging.ng.bluemix.net` URL을 사용하십시오,
+1. [Kibana를 실행](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-launch#launch_Kibana_from_browser)하십시오. 예를 들어 미국 남부 지역의 경우 `https://logging.ng.bluemix.net` URL을 사용하십시오,
 
 2. **AccountName 계정 로그 보기** 옵션을 선택하여 계정 로그를 표시하십시오. *AccountName*은 계정의 이름입니다.
 

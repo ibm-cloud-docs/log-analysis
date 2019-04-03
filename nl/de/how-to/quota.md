@@ -43,7 +43,7 @@ Führen Sie die folgenden Schritte aus:
     ```
     {: codeblock}
 
-    Weitere Informationen finden Sie unter [Wie melde ich mich bei {{site.data.keyword.Bluemix_notm}} an?](/docs/services/CloudLogAnalysis/qa/cli_qa.html#login).
+    Weitere Informationen finden Sie in [Wie melde ich mich bei {{site.data.keyword.Bluemix_notm}} an?](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#login).
 
 2. Führen Sie den CLI-Befehl `ibmcloud logging quota-usage-show` aus. 
 
@@ -98,7 +98,7 @@ Führen Sie die folgenden Schritte aus:
     ```
     {: codeblock}
 
-    Weitere Informationen finden Sie unter [Wie melde ich mich bei {{site.data.keyword.Bluemix_notm}} an?](/docs/services/CloudLogAnalysis/qa/cli_qa.html#login).
+    Weitere Informationen finden Sie in [Wie melde ich mich bei {{site.data.keyword.Bluemix_notm}} an?](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#login).
 
 2. Führen Sie den CLI-Befehl `ibmcloud logging quota-usage-show` mit dem Parameter `-s` aus. 
 
@@ -141,7 +141,7 @@ Führen Sie die folgenden Schritte aus:
 
 1. Melden Sie sich bei {{site.data.keyword.Bluemix_notm}} an. 
 
-    Weitere Informationen finden Sie unter [Wie melde ich mich bei {{site.data.keyword.Bluemix_notm}} an?](/docs/services/CloudLogAnalysis/qa/cli_qa.html#login).
+    Weitere Informationen finden Sie in [Wie melde ich mich bei {{site.data.keyword.Bluemix_notm}} an?](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#login).
 
 2. Rufen Sie die ID des Kontos ab. Führen Sie den folgenden Befehl aus:
 
@@ -161,7 +161,7 @@ Führen Sie die folgenden Schritte aus:
 
 3. Rufen Sie das UAA-Token ab. 
 
-    Weitere Informationen finden Sie unter [UAA-Token abrufen](/docs/services/CloudLogAnalysis/security/auth_uaa.html#auth_uaa).
+    Weitere Informationen finden Sie unter [UAA-Token abrufen](/docs/services/CloudLogAnalysis/security?topic=cloudloganalysis-auth_uaa#auth_uaa).
 
     Exportieren Sie das UAA-Token in eine Shellvariable. `Bearer` darf nicht mit eingeschlossen werden. Beispiel:
 	
@@ -177,7 +177,7 @@ Führen Sie die folgenden Schritte aus:
 	```
 	{: codeblock}
 	
-	Dabei ist *ENDPOINT* für jede Region anders. Eine Liste der Endpunkte pro Region finden Sie unter [Protokollierungsendpunkte](/docs/services/CloudLogAnalysis/manage_logs.html#endpoints).
+	Dabei ist *ENDPOINT* für jede Region anders. Eine Liste der Endpunkte pro Region finden Sie unter [Protokollierungsendpunkte](/docs/services/CloudLogAnalysis?topic=cloudloganalysis-manage_logs#endpoints).
 	
 	Führen Sie beispielsweise den cURL-Befehl aus, um das Kontingent für das Konto in der Region 'USA (Süden)' abzurufen:
 	
@@ -214,11 +214,11 @@ Führen Sie die folgenden Schritte aus:
 
 1. Melden Sie sich bei {{site.data.keyword.Bluemix_notm}} an. 
 
-    Weitere Informationen finden Sie unter [Wie melde ich mich bei {{site.data.keyword.Bluemix_notm}} an?](/docs/services/CloudLogAnalysis/qa/cli_qa.html#login).
+    Weitere Informationen finden Sie in [Wie melde ich mich bei {{site.data.keyword.Bluemix_notm}} an?](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#login).
 
 2. Rufen Sie die ID des Bereichs ab.
 
-    Weitere Informationen finden Sie unter [Wie rufe ich die GUID eines Bereichs ab?](/docs/services/CloudLogAnalysis/qa/cli_qa.html#space_guid).
+    Weitere Informationen finden Sie unter [Wie rufe ich die GUID eines Bereichs ab?](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#space_guid).
 	
 	Exportieren Sie die Bereichs-ID in eine Shellvariable. Beispiel:
 	
@@ -229,7 +229,7 @@ Führen Sie die folgenden Schritte aus:
 
 3. Rufen Sie das UAA-Token ab. 
 
-    Weitere Informationen finden Sie unter [UAA-Token abrufen](/docs/services/CloudLogAnalysis/security/auth_uaa.html#auth_uaa).
+    Weitere Informationen finden Sie unter [UAA-Token abrufen](/docs/services/CloudLogAnalysis/security?topic=cloudloganalysis-auth_uaa#auth_uaa).
 
     Exportieren Sie das UAA-Token in eine Shellvariable. `Bearer` darf nicht mit eingeschlossen werden. Beispiel:
 	
@@ -245,7 +245,7 @@ Führen Sie die folgenden Schritte aus:
 	```
 	{: codeblock}
 	
-	Dabei ist *ENDPOINT* für jede Region anders. Eine Liste der Endpunkte pro Region finden Sie unter [Protokollierungsendpunkte](/docs/services/CloudLogAnalysis/manage_logs.html#endpoints).
+	Dabei ist *ENDPOINT* für jede Region anders. Eine Liste der Endpunkte pro Region finden Sie unter [Protokollierungsendpunkte](/docs/services/CloudLogAnalysis?topic=cloudloganalysis-manage_logs#endpoints).
 
     Führen Sie beispielsweise den folgenden cURL-Befehl aus, um das Kontingent und die Nutzung für eine Bereichsdomäne in der Region 'USA (Süden)' abzurufen:
 	

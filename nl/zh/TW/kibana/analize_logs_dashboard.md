@@ -46,13 +46,13 @@ subcollection: cloudloganalysis
 
 |作業 |相關資訊 |
 |------|------------------|
-|[新增視覺效果](/docs/services/CloudLogAnalysis/kibana/analize_logs_dashboard.html#add_visualization) |您可以將現有視覺效果或搜尋新增至儀表板。|
-|[建立新的儀表板](/docs/services/CloudLogAnalysis/kibana/analize_logs_dashboard.html#new) |您可以建立多個儀表板。每一個儀表板都可以設計為包括不同的搜尋、視覺效果，以及不同部分的日誌資料。|
-|[刪除儀表板](/docs/services/CloudLogAnalysis/kibana/analize_logs_dashboard.html#delete) |刪除不需要的儀表板。|
-|[匯出儀表板](/docs/services/CloudLogAnalysis/kibana/analize_logs_dashboard.html#export) |您可以將儀表板匯出成 JSON 檔案。|
-|[匯入儀表板](/docs/services/CloudLogAnalysis/kibana/analize_logs_dashboard.html#import) |您可以將儀表板匯入成 JSON 檔案。|
-|[載入儀表板](/docs/services/CloudLogAnalysis/kibana/analize_logs_dashboard.html#reload3) |您可以上傳儀表板，以更新其資料、予以修改或分析資料。|
-|[儲存儀表板](/docs/services/CloudLogAnalysis/kibana/analize_logs_dashboard.html#save) |您可以儲存儀表板，以供之後重複使用。|
+|[新增視覺效果](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-analize_logs_dashboard#add_visualization) |您可以將現有視覺效果或搜尋新增至儀表板。|
+|[建立新的儀表板](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-analize_logs_dashboard#new) |您可以建立多個儀表板。每一個儀表板都可以設計為包括不同的搜尋、視覺效果，以及不同部分的日誌資料。|
+|[刪除儀表板](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-analize_logs_dashboard#delete) |刪除不需要的儀表板。|
+|[匯出儀表板](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-analize_logs_dashboard#export) |您可以將儀表板匯出成 JSON 檔案。|
+|[匯入儀表板](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-analize_logs_dashboard#import) |您可以將儀表板匯入成 JSON 檔案。|
+|[載入儀表板](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-analize_logs_dashboard#reload3) |您可以上傳儀表板，以更新其資料、予以修改或分析資料。|
+|[儲存儀表板](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-analize_logs_dashboard#save) |您可以儲存儀表板，以供之後重複使用。|
 {: caption="表 2. 使用儀表板的作業" caption-side="top"}
 
 如需 Kibana 的相關資訊，請參閱 [Kibana User Guide ![外部鏈結圖示](../../../icons/launch-glyph.svg "外部鏈結圖示")](https://www.elastic.co/guide/en/kibana/5.1/index.html){: new_window}。
@@ -81,13 +81,13 @@ subcollection: cloudloganalysis
 
 1. 在「儀表板」頁面的工具列中，按一下**新增**。 
 
-2. 新增一個以上的搜尋及視覺效果。如需相關資訊，請參閱[新增搜尋或視覺效果](/docs/services/CloudLogAnalysis/kibana/analize_logs_dashboard.html#add_visualization)。
+2. 新增一個以上的搜尋及視覺效果。如需相關資訊，請參閱[新增搜尋或視覺效果](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-analize_logs_dashboard#add_visualization)。
 
     當您新增搜尋或視覺效果時，會在儀表板中新增畫面。
 
 3. 將畫面拖放在您要放置的儀表板部分。
  
-4. 儲存儀表板，以供日後重複使用。如需相關資訊，請參閱[儲存 Kibana 儀表板](/docs/services/CloudLogAnalysis/kibana/analize_logs_dashboard.html#save)。
+4. 儲存儀表板，以供日後重複使用。如需相關資訊，請參閱[儲存 Kibana 儀表板](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-analize_logs_dashboard#save)。
 
 
 ## 刪除 Kibana 儀表板

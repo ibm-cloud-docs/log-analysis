@@ -51,15 +51,15 @@ subcollection: cloudloganalysis
     * {{site.data.keyword.containershort}} 的 IAM 原則與 *editor*、*operator* 或 *administrator* 許可權。
     * 使用 *developer* 許可權佈建 {{site.data.keyword.loganalysisshort}} 服務之空間的 CF 角色。
     
-    如需相關資訊，請參閱[透過 IBM Cloud 使用者介面將 IAM 原則指派給使用者](/docs/services/CloudLogAnalysis/security/grant_permissions.html#grant_permissions_ui_account)及[使用 IBM Cloud 使用者介面將檢視空間日誌許可權授與使用者](/docs/services/CloudLogAnalysis/security/grant_permissions.html#grant_permissions_ui_space)。
+    如需相關資訊，請參閱[透過 IBM Cloud 使用者介面將 IAM 原則指派給使用者](/docs/services/CloudLogAnalysis/security?topic=cloudloganalysis-grant_permissions#grant_permissions_ui_account)及[使用 IBM Cloud 使用者介面將檢視空間日誌許可權授與使用者](/docs/services/CloudLogAnalysis/security?topic=cloudloganalysis-grant_permissions#grant_permissions_ui_space)。
 
 2. 具有一個終端機階段作業，您可以在其中從指令行管理 Kubernetes 叢集並部署應用程式。此指導教學中提供的範例適用於 Ubuntu Linux 系統。
 
 3. 安裝 CLI，以在 Ubuntu 系統中使用 {{site.data.keyword.containershort}} 及 {{site.data.keyword.loganalysisshort}}。
 
-    * 安裝 {{site.data.keyword.Bluemix_notm}} CLI。安裝 {{site.data.keyword.containershort}} CLI，以在 {{site.data.keyword.containershort}} 中建立及管理 Kubernetes 叢集，以及將容器化應用程式部署至叢集。如需相關資訊，請參閱[安裝 {{site.data.keyword.Bluemix_notm}} CLI](/docs/cli/index.html#overview)。
+    * 安裝 {{site.data.keyword.Bluemix_notm}} CLI。安裝 {{site.data.keyword.containershort}} CLI，以在 {{site.data.keyword.containershort}} 中建立及管理 Kubernetes 叢集，以及將容器化應用程式部署至叢集。如需相關資訊，請參閱[安裝 {{site.data.keyword.Bluemix_notm}} CLI](/docs/cli?topic=cloud-cli-ibmcloud-cli#overview)。
     
-    * 安裝 {{site.data.keyword.loganalysisshort}} CLI。如需相關資訊，請參閱[配置 Log Analysis CLI（IBM Cloud 外掛程式）](/docs/services/CloudLogAnalysis/how-to/manage-logs/config_log_collection_cli_cloud.html#config_log_collection_cli)。
+    * 安裝 {{site.data.keyword.loganalysisshort}} CLI。如需相關資訊，請參閱[配置 Log Analysis CLI（IBM Cloud 外掛程式）](/docs/services/CloudLogAnalysis/how-to/manage-logs?topic=cloudloganalysis-config_log_collection_cli#config_log_collection_cli)。
     
 4. 在美國南部地區，有權存取帳戶中名為 **dev** 的空間。 
 
@@ -81,11 +81,11 @@ subcollection: cloudloganalysis
 
 1. 建立標準 Kubernetes 叢集。
 
-   如需相關資訊，請參閱[建立叢集](/docs/containers/cs_tutorials.html#cs_cluster_tutorial)。
+   如需相關資訊，請參閱[建立叢集](/docs/containers?topic=containers-cs_cluster_tutorial#cs_cluster_tutorial)。
 
 2. 在終端機中設定叢集環境定義。設定環境定義之後，您可以管理 Kubernetes 叢集，並在 Kubernetes 叢集中部署應用程式。
 
-    登入 {{site.data.keyword.Bluemix_notm}} 中與您所建立叢集相關聯的地區、組織及空間。如需相關資訊，請參閱[如何登入 {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/qa/cli_qa.html#login)。
+    登入 {{site.data.keyword.Bluemix_notm}} 中與您所建立叢集相關聯的地區、組織及空間。如需相關資訊，請參閱[如何登入 {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#login)。
 
 	起始設定 {{site.data.keyword.containershort}} 服務外掛程式。
 
@@ -145,7 +145,7 @@ ae249c04-a3a9-4c29-a890-22d8da7bd1b2   container    *           ingest.logging.n
 ```
 {: screen}
 
-若要查看您可定義記載配置的日誌來源清單，請參閱[日誌來源](/docs/services/CloudLogAnalysis/containers/containers_kubernetes.html#log_sources)。
+若要查看您可定義記載配置的日誌來源清單，請參閱[日誌來源](/docs/services/CloudLogAnalysis/containers?topic=cloudloganalysis-containers_kubernetes#log_sources)。
 
 
 ### 配置叢集以將 stderr 及 stdout 日誌轉遞至 {{site.data.keyword.loganalysisshort}} 服務
@@ -176,7 +176,7 @@ ae249c04-a3a9-4c29-a890-22d8da7bd1b2   container    *           ingest.logging.n
     其中 
 
     * *ClusterName* 是叢集的名稱。
-    * *EndPoint* 是 {{site.data.keyword.loganalysisshort}} 服務佈建所在地區中的記載服務 URL。如需端點清單，請參閱[端點](/docs/services/CloudLogAnalysis/log_ingestion.html#log_ingestion_urls)。
+    * *EndPoint* 是 {{site.data.keyword.loganalysisshort}} 服務佈建所在地區中的記載服務 URL。如需端點清單，請參閱[端點](/docs/services/CloudLogAnalysis?topic=cloudloganalysis-log_ingestion#log_ingestion_urls)。
     * *OrgName* 是可使用空間的組織名稱。
     * *SpaceName* 是 {{site.data.keyword.loganalysisshort}} 服務佈建所在空間的名稱。
 
@@ -218,7 +218,7 @@ ibmcloud cs logging-config-create mycluster --logsource container --type ibm --n
     其中 
 
     * *ClusterName* 是叢集的名稱。
-    * *EndPoint* 是 {{site.data.keyword.loganalysisshort}} 服務佈建所在地區中的記載服務 URL。如需端點清單，請參閱[端點](/docs/services/CloudLogAnalysis/log_ingestion.html#log_ingestion_urls)。
+    * *EndPoint* 是 {{site.data.keyword.loganalysisshort}} 服務佈建所在地區中的記載服務 URL。如需端點清單，請參閱[端點](/docs/services/CloudLogAnalysis?topic=cloudloganalysis-log_ingestion#log_ingestion_urls)。
     * *OrgName* 是可使用空間的組織名稱。
     * *SpaceName* 是 {{site.data.keyword.loganalysisshort}} 服務佈建所在空間的名稱。
 
@@ -251,7 +251,7 @@ ibmcloud cs logging-config-create mycluster --logsource worker  --type ibm --hos
 	
 3. 如果使用者是帳戶成員，請從清單選取使用者名稱，或按一下*動作* 功能表中的**管理使用者**。
 
-    如果使用者不是帳戶成員，請參閱[邀請使用者](/docs/iam/iamuserinv.html#iamuserinv)。
+    如果使用者不是帳戶成員，請參閱[邀請使用者](/docs/iam?topic=iam-iamuserinv#iamuserinv)。
 
 4. 選取 **Cloud Foundry 存取權**，然後選取組織。
 
@@ -297,7 +297,7 @@ ibmcloud cs logging-config-create mycluster --logsource worker  --type ibm --hos
 	
     選取使用者的 ID，並驗證使用者具有組織的 *orgManager* 角色，以及空間的 *SpaceManager* 及 *Developer*。
 
-    如果使用者沒有正確的許可權，請將下列許可權授與使用者：組織的 *orgManager* 角色，以及空間的 *SpaceManager* 及 *Developer*。如需相關資訊，請參閱[使用 IBM Cloud 使用者介面將檢視空間日誌許可權授與使用者](/docs/services/CloudLogAnalysis/security/grant_permissions.html#grant_permissions_ui_space)。
+    如果使用者沒有正確的許可權，請將下列許可權授與使用者：組織的 *orgManager* 角色，以及空間的 *SpaceManager* 及 *Developer*。如需相關資訊，請參閱[使用 IBM Cloud 使用者介面將檢視空間日誌許可權授與使用者](/docs/services/CloudLogAnalysis/security?topic=cloudloganalysis-grant_permissions#grant_permissions_ui_space)。
     
 3. 驗證識別為 {{site.data.keyword.containershort}} 金鑰擁有者的使用者具有 {{site.data.keyword.loganalysisshort}} 服務的 IAM 原則與 *Administrator* 許可權。
 
@@ -305,7 +305,7 @@ ibmcloud cs logging-config-create mycluster --logsource worker  --type ibm --hos
 	
     選取使用者的 ID，並驗證使用者具有 IAM 原則集。 
 
-    如果使用者沒有 IAM 原則，請參閱[透過 IBM Cloud 使用者介面將 IAM 原則指派給使用者](/docs/services/CloudLogAnalysis/security/grant_permissions.html#grant_permissions_ui_account)。
+    如果使用者沒有 IAM 原則，請參閱[透過 IBM Cloud 使用者介面將 IAM 原則指派給使用者](/docs/services/CloudLogAnalysis/security?topic=cloudloganalysis-grant_permissions#grant_permissions_ui_account)。
 
 4. 重新整理記載配置。執行下列指令：
     
@@ -322,7 +322,7 @@ ibmcloud cs logging-config-create mycluster --logsource worker  --type ibm --hos
 ## 步驟 5：在 Kubernetes 叢集中部署範例應用程式，以產生 stdout 中的內容
 {: #step53}
 
-在 Kubernetes 叢集中部署及執行範例應用程式。完成下列指導教學中的步驟，以部署範例應用程式：[課程 1：將單一實例應用程式部署至 Kubernetes 叢集](/docs/containers/cs_tutorials_apps.html#cs_apps_tutorial_lesson1)。
+在 Kubernetes 叢集中部署及執行範例應用程式。完成下列指導教學中的步驟，以部署範例應用程式：[課程 1：將單一實例應用程式部署至 Kubernetes 叢集](/docs/containers?topic=containers-cs_apps_tutorial#cs_apps_tutorial_lesson1)。
 
 應用程式是 Hello World Node.js 應用程式：
 
@@ -353,7 +353,7 @@ app.listen(8080, function() {
 
 1. 在瀏覽器中啟動 Kibana。 
 
-    如需如何啟動 Kibana 的相關資訊，請參閱[從 Web 瀏覽器導覽至 Kibana](/docs/services/CloudLogAnalysis/kibana/launch.html#launch_Kibana_from_browser)。
+    如需如何啟動 Kibana 的相關資訊，請參閱[從 Web 瀏覽器導覽至 Kibana](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-launch#launch_Kibana_from_browser)。
 
     若要分析叢集的日誌資料，您必須存取叢集建立所在之「雲端公用」地區的 Kibana。 
     
@@ -366,7 +366,7 @@ app.listen(8080, function() {
 	
     即會開啟 Kibana。
     
-    **附註：**請驗證您在要轉遞叢集日誌的地區中啟動 Kibana。如需每個地區之 URL 的相關資訊，請參閱[記載端點](/docs/services/CloudLogAnalysis/kibana/analyzing_logs_Kibana.html#urls_kibana)。
+    **附註：**請驗證您在要轉遞叢集日誌的地區中啟動 Kibana。如需每個地區之 URL 的相關資訊，請參閱[記載端點](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-analyzing_logs_Kibana#urls_kibana)。
     	
 2. 若要檢視空間網域中可用的日誌資料，請完成下列步驟：
 
@@ -436,7 +436,7 @@ app.listen(8080, function() {
               </tr>
         </table>
      
-如需 Kubernetes 叢集相關的其他搜尋欄位的相關資訊，請參閱[搜尋日誌](/docs/services/CloudLogAnalysis/containers/containers_kubernetes.html#log_search)。
+如需 Kubernetes 叢集相關的其他搜尋欄位的相關資訊，請參閱[搜尋日誌](/docs/services/CloudLogAnalysis/containers?topic=cloudloganalysis-containers_kubernetes#log_search)。
 
 
 ## 步驟 7：在 Kibana 中依 Kubernetes 叢集名稱過濾資料
@@ -475,9 +475,9 @@ app.listen(8080, function() {
 
 請將叢集名稱 (*cluster1*) 取代為您要檢視日誌資料的叢集名稱 *mycluster*。
         
-如果您看不到任何資料，請嘗試變更時間過濾器。如需相關資訊，請參閱[設定時間過濾器](/docs/services/CloudLogAnalysis/kibana/filter_logs.html#set_time_filter)。
+如果您看不到任何資料，請嘗試變更時間過濾器。如需相關資訊，請參閱[設定時間過濾器](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-filter_logs#set_time_filter)。
 
-如需相關資訊，請參閱[在 Kibana 中過濾日誌](/docs/services/CloudLogAnalysis/kibana/filter_logs.html#filter_logs)。
+如需相關資訊，請參閱[在 Kibana 中過濾日誌](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-filter_logs#filter_logs)。
 
 
 ## {{site.data.keyword.containershort_notm}} 參照資料
@@ -485,10 +485,10 @@ app.listen(8080, function() {
 
 CLI 指令：
 
-* [ibmcloud cs api-key-info](/docs/containers/cs_cli_reference.html#cs_api_key_info)
-* [ibmcloud cs logging-config-create](/docs/containers/cs_cli_reference.html#cs_logging_create)
-* [ibmcloud cs logging-config-get](/docs/containers/cs_cli_reference.html#cs_logging_get)
-* [ibmcloud cs logging-config-update](/docs/containers/cs_cli_reference.html#cs_logging_update)
-* [ibmcloud cs logging-config-rm](/docs/containers/cs_cli_reference.html#cs_logging_rm)
-* [ibmcloud cs logging-config-refresh](/docs/containers/cs_cli_reference.html#cs_logging_refresh)
+* [ibmcloud cs api-key-info](/docs/containers?topic=containers-cs_cli_reference#cs_api_key_info)
+* [ibmcloud cs logging-config-create](/docs/containers?topic=containers-cs_cli_reference#cs_logging_create)
+* [ibmcloud cs logging-config-get](/docs/containers?topic=containers-cs_cli_reference#cs_logging_get)
+* [ibmcloud cs logging-config-update](/docs/containers?topic=containers-cs_cli_reference#cs_logging_update)
+* [ibmcloud cs logging-config-rm](/docs/containers?topic=containers-cs_cli_reference#cs_logging_rm)
+* [ibmcloud cs logging-config-refresh](/docs/containers?topic=containers-cs_cli_reference#cs_logging_refresh)
 

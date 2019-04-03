@@ -25,7 +25,7 @@ subcollection: cloudloganalysis
 # 查看日志信息
 {: #viewing_log_status1}
 
-使用 [ibmcloud logging log-show](/docs/services/CloudLogAnalysis/reference/log_analysis_cli_cloud.html#status) 命令可获取有关在“日志收集”中收集并存储的日志的信息。
+使用 [ibmcloud logging log-show](/docs/services/CloudLogAnalysis/reference?topic=cloudloganalysis-log_analysis_cli#status) 命令可获取有关在“日志收集”中收集并存储的日志的信息。
 您可以获取有关大小、记录数、日志类型以及日志是否可用于在 Kibana 中进行分析的信息。
 {:shortdesc}
 
@@ -42,7 +42,7 @@ subcollection: cloudloganalysis
 
 1. 登录到 {{site.data.keyword.Bluemix_notm}} 中的区域、组织和空间。 
 
-    有关更多信息，请参阅[如何登录到 {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/qa/cli_qa.html#login)。
+    有关更多信息，请参阅[如何登录到 {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#login)。
     
 2. 运行以下命令：
 
@@ -78,7 +78,7 @@ subcollection: cloudloganalysis
 
 1. 登录到 {{site.data.keyword.Bluemix_notm}} 中的区域、组织和空间。 
 
-    有关更多信息，请参阅[如何登录到 {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/qa/cli_qa.html#login)。
+    有关更多信息，请参阅[如何登录到 {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#login)。
     
 2. 运行以下命令：
 
@@ -119,11 +119,11 @@ subcollection: cloudloganalysis
 
 1. 登录到 {{site.data.keyword.Bluemix_notm}} 中的区域、组织和空间。 
 
-    有关更多信息，请参阅[如何登录到 {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/qa/cli_qa.html#login)。
+    有关更多信息，请参阅[如何登录到 {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#login)。
 	
 2. 获取帐户标识。
 
-    有关更多信息，请参阅[如何获取帐户的 GUID](/docs/services/CloudLogAnalysis/qa/cli_qa.html#account_guid)。
+    有关更多信息，请参阅[如何获取帐户的 GUID](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#account_guid)。
     
 3. 运行以下命令：
 
@@ -165,11 +165,11 @@ subcollection: cloudloganalysis
 
 1. 登录到 {{site.data.keyword.Bluemix_notm}} 中的区域、组织和空间。 
 
-    有关更多信息，请参阅[如何登录到 {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/qa/cli_qa.html#login)。
+    有关更多信息，请参阅[如何登录到 {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#login)。
 	
 2. 获取帐户标识。
 
-    有关更多信息，请参阅[如何获取组织的 GUID](/docs/services/CloudLogAnalysis/qa/cli_qa.html#org_guid)。
+    有关更多信息，请参阅[如何获取组织的 GUID](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#org_guid)。
     
 3. 运行以下命令：
 

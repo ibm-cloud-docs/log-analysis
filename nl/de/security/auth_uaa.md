@@ -38,13 +38,13 @@ Führen Sie die folgenden Schritte aus, um das Berechtigungstoken abzurufen:
 
 1. Installieren Sie die {{site.data.keyword.Bluemix_notm}}-Befehlszeilenschnittstelle.
 
-   Weitere Informationen finden Sie unter [{{site.data.keyword.Bluemix}}-Befehlszeilenschnittstelle herunterladen und installieren](/docs/cli/index.html#overview).
+   Weitere Informationen finden Sie in [{{site.data.keyword.Bluemix}}-Befehlszeilenschnittstelle herunterladen und installieren](/docs/cli?topic=cloud-cli-ibmcloud-cli#overview). 
    
    Fahren Sie mit dem nächsten Schritt fort, wenn die Befehlszeilenschnittstelle bereits installiert ist.
     
 2. Melden Sie sich bei einer Region, Organisation und bei einem Bereich in {{site.data.keyword.Bluemix_notm}} an. 
 
-    Weitere Informationen finden Sie unter [Wie melde ich mich bei {{site.data.keyword.Bluemix_notm}} an?](/docs/services/CloudLogAnalysis/qa/cli_qa.html#login).
+    Weitere Informationen finden Sie in [Wie melde ich mich bei {{site.data.keyword.Bluemix_notm}} an?](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#login).
 	
 3. Um das UAA-Token für {{site.data.keyword.Bluemix_notm}} abzurufen, führen Sie den Befehl `ibmcloud iam oauth-token` aus.
 

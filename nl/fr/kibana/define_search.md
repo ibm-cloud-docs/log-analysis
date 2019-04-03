@@ -32,15 +32,15 @@ Pour définir une recherche personnalisée, procédez comme suit :
 
 1. Lancez Kibana.
 
-    Pour les applications Cloud Foundry (CF), voir [Accès à Kibana depuis le tableau de bord d'une application CF](/docs/services/CloudLogAnalysis/kibana/launch.html#launch_Kibana_from_cf_app).
+    Pour les applications Cloud Foundry (CF), voir [Accès à Kibana depuis le tableau de bord d'une application CF](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-launch#launch_Kibana_from_cf_app).
 
-	Pour les conteneurs qui s'exécutent dans l'infrastructure gérée par {{site.data.keyword.Bluemix_notm}}, voir [Accès à Kibana depuis le tableau de bord d'un conteneur](/docs/services/CloudLogAnalysis/kibana/launch.html#launch_Kibana_for_containers).
+	Pour les conteneurs qui s'exécutent dans l'infrastructure gérée par {{site.data.keyword.Bluemix_notm}}, voir [Accès à Kibana depuis le tableau de bord d'un conteneur](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-launch#launch_Kibana_for_containers).
     
-    Pour toutes les ressources de cloud, par exemple les conteneurs qui s'exécutent dans un cluster Kubernetes, voir [Accès à Kibana depuis le navigateur](/docs/services/CloudLogAnalysis/kibana/launch.html#launch_Kibana_from_browser). 
+    Pour toutes les ressources de cloud, par exemple les conteneurs qui s'exécutent dans un cluster Kubernetes, voir [Accès à Kibana depuis le navigateur](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-launch#launch_Kibana_from_browser). 
 	
 	Lorsque vous accédez à Kibana, la recherche par défaut est appliquée. Vous pouvez voir les journaux pour la liste d'instances de la ressource que vous interrogez. Vous pouvez filtrer les journaux pour une ressource {{site.data.keyword.Bluemix_notm}} spécifique ou pour toutes les ressources dans cet espace.
 
-2. Examinez la page Discover pour déterminer le sous-ensemble de données qu'elle affiche. Pour plus d'informations, voir [Identification des données affichées dans votre page Kibana Discover](/docs/services/CloudLogAnalysis/kibana/analize_logs_interactively.html#identify_data). Modifiez ensuite la recherche par défaut pour filtrer les entrées.
+2. Examinez la page Discover pour déterminer le sous-ensemble de données qu'elle affiche. Pour plus d'informations, voir [Identification des données affichées dans votre page Kibana Discover](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-analize_logs_interactively#identify_data). Modifiez ensuite la recherche par défaut pour filtrer les entrées.
 
     **Remarque :** utilisez le langage Lucene pour définir votre requête par défaut. Pour plus d'informations, voir [Apache Lucene - Query Parser Syntax  ![Icône de lien externe](../../../icons/launch-glyph.svg "Icône de lien externe")](https://lucene.apache.org/core/2_9_4/queryparsersyntax.html){: new_window}
     
@@ -54,9 +54,9 @@ Pour définir une recherche personnalisée, procédez comme suit :
 
      Par exemple, pour une application CF, vous pouvez créer une requête `application_id:9d222152-8834-4bab-8685-3036cd25931a AND instance_id:["0" TO "1"]` qui ne répertorie que des entrées pour les instances *0* et *1*. 
 
-3. Enregistrez la requête pour pouvoir la réutiliser ultérieurement. Pour plus d'informations, voir [Sauvegarde d'une recherche](/docs/services/CloudLogAnalysis/kibana/define_search.html#save_search1). 
+3. Enregistrez la requête pour pouvoir la réutiliser ultérieurement. Pour plus d'informations, voir [Sauvegarde d'une recherche](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-define_search#save_search1). 
 
-**Remarque :** si vous devez supprimer une requête, voir [Suppression d'une recherche](/docs/services/CloudLogAnalysis/kibana/define_search.html#delete_search).
+**Remarque :** si vous devez supprimer une requête, voir [Suppression d'une recherche](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-define_search#delete_search).
 
 
 

@@ -37,13 +37,13 @@ Para instalar a CLI do {{site.data.keyword.loganalysisshort}}, conclua as etapas
 
 1. Instale a CLI do {{site.data.keyword.Bluemix_notm}}.
 
-   Para obter mais informações, veja [Instalando a CLI do {{site.data.keyword.Bluemix_notm}}](/docs/cli/index.html#overview).
+   Para obter mais informações, veja [Instalando a CLI do {{site.data.keyword.Bluemix_notm}}](/docs/cli?topic=cloud-cli-ibmcloud-cli#overview).
 
 2. Instale o plug-in CF do {{site.data.keyword.loganalysisshort}}.
 
-    * Para Linux, veja [Instalando a CLI do {{site.data.keyword.loganalysisshort}} no Linux](/docs/services/CloudLogAnalysis/how-to/manage-logs/config_log_collection_cli.html#install_cli_linux1).
-    * Para Windows, veja [Instalando a CLI do {{site.data.keyword.loganalysisshort}} no Windows](/docs/services/CloudLogAnalysis/how-to/manage-logs/config_log_collection_cli.html#install_cli_windows1).
-    * Para Mac OS X, veja [Instalando a CLI do {{site.data.keyword.loganalysisshort}} no Mac OS X](/docs/services/CloudLogAnalysis/how-to/manage-logs/config_log_collection_cli.html#install_cli_mac1).
+    * Para Linux, veja [Instalando a CLI do {{site.data.keyword.loganalysisshort}} no Linux](/docs/services/CloudLogAnalysis/how-to/manage-logs?topic=cloudloganalysis-config_log_collection_cli1#install_cli_linux1).
+    * Para Windows, veja [Instalando a CLI do {{site.data.keyword.loganalysisshort}} no Windows](/docs/services/CloudLogAnalysis/how-to/manage-logs?topic=cloudloganalysis-config_log_collection_cli1#install_cli_windows1).
+    * Para Mac OS X, veja [Instalando a CLI do {{site.data.keyword.loganalysisshort}} no Mac OS X](/docs/services/CloudLogAnalysis/how-to/manage-logs?topic=cloudloganalysis-config_log_collection_cli1#install_cli_mac1).
  
 3. Verifique a instalação do plug-in da CLI.
   
@@ -280,7 +280,7 @@ Para obter informações gerais sobre a CLI e quais comandos são suportados, co
 
 1. Efetue login em uma região, uma organização e um espaço no {{site.data.keyword.Bluemix_notm}}. 
 
-    Para obter mais informações, veja [Como efetuar login no {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/qa/cli_qa.html#login).
+    Para obter mais informações, veja [Como efetuar login no {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#login).
     
 2. Liste informações sobre os comandos suportados e a CLI. Execute o comando a seguir:
 
@@ -298,7 +298,7 @@ Para obter ajuda sobre como usar um comando, conclua as etapas a seguir:
 
 1. Efetue login em uma região, uma organização e um espaço no {{site.data.keyword.Bluemix_notm}}. 
 
-    Para obter mais informações, veja [Como efetuar login no {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/qa/cli_qa.html#login).
+    Para obter mais informações, veja [Como efetuar login no {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#login).
     
 2. Obtenha a lista de comandos suportados e identifique aquele que você precisa. Execute o comando:
 
@@ -325,7 +325,7 @@ Um comando pode ter subcomandos. Para obter ajuda sobre subcomandos, conclua as 
 
 1. Efetue login em uma região, uma organização e um espaço no {{site.data.keyword.Bluemix_notm}}. 
 
-    Para obter mais informações, veja [Como efetuar login no {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/qa/cli_qa.html#login).
+    Para obter mais informações, veja [Como efetuar login no {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#login).
     
 2. Obtenha a lista de comandos suportados e identifique aquele que você precisa. Execute o comando:
 

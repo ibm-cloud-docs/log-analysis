@@ -29,7 +29,7 @@ subcollection: cloudloganalysis
 Vous pouvez envoyer des journaux depuis un emplacement hors d'{{site.data.keyword.IBM_notm}} Cloud au service {{site.data.keyword.loganalysisshort}} à l'aide de l'outil Logstash Forwarder à service partagé. 
 {:shortdesc}
 
-Cette fonction est disponible uniquement pour les plans de service autorisant l'ingestion des journaux. Pour plus d'informations, voir [Plans de service](/docs/services/CloudLogAnalysis/log_analysis_ov.html#plans).
+Cette fonction est disponible uniquement pour les plans de service autorisant l'ingestion des journaux. Pour plus d'informations, voir [Plans de service](/docs/services/CloudLogAnalysis?topic=cloudloganalysis-log_analysis_ov#plans).
 
 Pour envoyer des journaux depuis un emplacement hors d'{{site.data.keyword.IBM_notm}} au service {{site.data.keyword.loganalysisshort}}, vous avez besoin des ressources de cloud suivantes :
 
@@ -38,7 +38,7 @@ Pour envoyer des journaux depuis un emplacement hors d'{{site.data.keyword.IBM_n
 
 Dans votre environnement local, vous devez configurer mt-logstash-forwarder et spécifier les fichiers journaux à envoyer au service {{site.data.keyword.loganalysisshort}}.
 
-Pour plus d'informations sur la configuration de votre environnement local pour l'envoi de journaux au service {{site.data.keyword.loganalysisshort}}, voir [Envoi de données locales dans un espace dans {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/how-to/send-data/send_data_mt.html#send_data_mt).
+Pour plus d'informations sur la configuration de votre environnement local pour l'envoi de journaux au service {{site.data.keyword.loganalysisshort}}, voir [Envoi de données locales dans un espace dans {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/how-to/send-data?topic=cloudloganalysis-send_data_mt#send_data_mt).
 
 
 
@@ -66,7 +66,7 @@ Le tableau suivant répertorie les URL que vous devez utiliser pour envoyer des 
 	  <td>ingest.logging.eu-gb.bluemix.net:9091</td>
   </tr>
   <tr>
-    <td>Sud des États-Unis</td>
+    <td>Sud des Etats-Unis</td>
 	  <td>ingest.logging.ng.bluemix.net:9091</td>
   </tr>
 </table>

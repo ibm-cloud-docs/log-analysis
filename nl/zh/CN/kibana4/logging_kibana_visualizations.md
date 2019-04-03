@@ -52,13 +52,13 @@ subcollection: cloudloganalysis
 
 |任务|更多信息|
 |------|------------------|
-|[新建可视化项](/docs/services/CloudLogAnalysis/kibana4/logging_kibana_visualizations.html#logging_k4_visualizations_create)|通过在*发现*页面中定义并保存的搜索，或通过在*可视化*页面中定义的新查询，可以创建可视化项。|
-|[保存可视化项](/docs/services/CloudLogAnalysis/kibana4/logging_kibana_visualizations.html#logging_kibana_visualizations_save)|可以保存可视化项以供未来复用。|
-|[装入可视化项](/docs/services/CloudLogAnalysis/kibana4/logging_kibana_visualizations.html#logging_kibana_visualizations_reload)|可以上传可视化项以更新其数据，修改可视化项或分析数据。|
-|[删除可视化项](/docs/services/CloudLogAnalysis/kibana4/logging_kibana_visualizations.html#logging_kibana_visualizations_delete)|删除不需要的可视化项。|
-|[导出可视化项](/docs/services/CloudLogAnalysis/kibana4/logging_kibana_visualizations.html#logging_kibana_visualizations_export)|可以将可视化项导出为 JSON 文件。|
-|[导入可视化项](/docs/services/CloudLogAnalysis/kibana4/logging_kibana_visualizations.html#logging_kibana_visualizations_import)|可以将可视化项作为 JSON 文件导入。|
-|[共享可视化项](/docs/services/CloudLogAnalysis/kibana4/logging_kibana_visualizations.html#logging_kibana_visualizations_share)|可以通过 HTML 源或通过 Kibana 仪表板来共享可视化项。|
+|[新建可视化项](/docs/services/CloudLogAnalysis/kibana4?topic=cloudloganalysis-logging_kibana_visualizations#logging_k4_visualizations_create)|通过在*发现*页面中定义并保存的搜索，或通过在*可视化*页面中定义的新查询，可以创建可视化项。|
+|[保存可视化项](/docs/services/CloudLogAnalysis/kibana4?topic=cloudloganalysis-logging_kibana_visualizations#logging_kibana_visualizations_save)|可以保存可视化项以供未来复用。|
+|[装入可视化项](/docs/services/CloudLogAnalysis/kibana4?topic=cloudloganalysis-logging_kibana_visualizations#logging_kibana_visualizations_reload)|可以上传可视化项以更新其数据，修改可视化项或分析数据。|
+|[删除可视化项](/docs/services/CloudLogAnalysis/kibana4?topic=cloudloganalysis-logging_kibana_visualizations#logging_kibana_visualizations_delete)|删除不需要的可视化项。|
+|[导出可视化项](/docs/services/CloudLogAnalysis/kibana4?topic=cloudloganalysis-logging_kibana_visualizations#logging_kibana_visualizations_export)|可以将可视化项导出为 JSON 文件。|
+|[导入可视化项](/docs/services/CloudLogAnalysis/kibana4?topic=cloudloganalysis-logging_kibana_visualizations#logging_kibana_visualizations_import)|可以将可视化项作为 JSON 文件导入。|
+|[共享可视化项](/docs/services/CloudLogAnalysis/kibana4?topic=cloudloganalysis-logging_kibana_visualizations#logging_kibana_visualizations_share)|可以通过 HTML 源或通过 Kibana 仪表板来共享可视化项。|
 {: caption="表 2. 使用可视化项的任务" caption-side="top"}
 
 

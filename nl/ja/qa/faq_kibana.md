@@ -28,12 +28,12 @@ subcollection: cloudloganalysis
 
 ここでは、{{site.data.keyword.Bluemix}} ロギング機能の使用に関するよくある質問に対する回答を示します。 {:shortdesc}
 
-* [Kibana の「Discover」ページでデータを表示できない場合、どうすればよいですか?](/docs/services/CloudLogAnalysis/qa/faq_kibana.html#logging_qa_no_data_discover_kibana)
-* [認証例外を受け取った場合、どうすればよいですか?](/docs/services/CloudLogAnalysis/qa/faq_kibana.html#logging_qa_no_data_dashboard_kibana)
-* [Kibana の「Discover」ページでフィールドの横に ? 記号が表示されるのはなぜですか?](/docs/services/CloudLogAnalysis/qa/faq_kibana.html#logging_qa_kibana_question)
-* [デフォルトの索引パターンを変更しようとすると 403 エラーが表示されます](/docs/services/CloudLogAnalysis/qa/faq_kibana.html#error_403)
-* [短縮 URL が機能しません](/docs/services/CloudLogAnalysis/qa/faq_kibana.html#short_url)
-* [Bluemix でアカウント・ログを検索できますか?](/docs/services/CloudLogAnalysis/qa/faq_kibana.html#acc_logs_1)
+* [Kibana の「Discover」ページでデータを表示できない場合、どうすればよいですか?](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-faq_kibana#logging_qa_no_data_discover_kibana)
+* [認証例外を受け取った場合、どうすればよいですか?](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-faq_kibana#logging_qa_no_data_dashboard_kibana)
+* [Kibana の「Discover」ページでフィールドの横に ? 記号が表示されるのはなぜですか?](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-faq_kibana#logging_qa_kibana_question)
+* [デフォルトの索引パターンを変更しようとすると 403 エラーが表示されます](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-faq_kibana#error_403)
+* [短縮 URL が機能しません](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-faq_kibana#short_url)
+* [Bluemix でアカウント・ログを検索できますか?](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-faq_kibana#acc_logs_1)
 
 
 ## Kibana の「Discover」ページでデータを表示できない場合、どうすればよいですか?
@@ -50,7 +50,7 @@ Kibana でデータを表示できない場合、以下の異なるシナリオ�
 
     **注**: デフォルトでは、{{site.data.keyword.Bluemix_notm}} において*時間ピッカー* は、過去 15 分間のデータを表示するように設定されています。
 
-    *時間ピッカー* の設定方法について詳しくは、『[時間フィルターの設定](/docs/services/CloudLogAnalysis/kibana/filter_logs.html#set_time_filter1)』を参照してください。
+    *時間ピッカー* の設定方法について詳しくは、『[時間フィルターの設定](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-filter_logs#set_time_filter1)』を参照してください。
        
 2. 「*Discover*」ページの検索バーにある拡大鏡をクリックします。 ページ・データが、デフォルトの検索照会に基づいて最新表示されます。
 
@@ -58,7 +58,7 @@ Kibana でデータを表示できない場合、以下の異なるシナリオ�
 
     **注**: デフォルトでは、{{site.data.keyword.Bluemix_notm}} において*自動最新表示* の期間は、**OFF** に設定されています。
     
-    これを有効にする方法について詳しくは、『[データの自動最新表示](/docs/services/CloudLogAnalysis/kibana/analize_logs_interactively.html#discover_view_refresh_interval)』を参照してください。
+    これを有効にする方法について詳しくは、『[データの自動最新表示](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-analize_logs_interactively#discover_view_refresh_interval)』を参照してください。
 
 
 
@@ -90,7 +90,7 @@ Kibana でデータを表示できない場合、以下の異なるシナリオ�
 ## Kibana の「Discover」ページでフィールドの横に ? 記号が表示されるのはなぜですか?
 {: #logging_qa_kibana_question}
 
-Kibana で「Discover」ページを開くと、「available fields」セクションにリストされるフィールドの横に文字 `t` ではなく疑問符 `?` が表示されることがあります。フィールドのリストを再ロードすると、フィールドのタイプが分析され、疑問符 `?` は文字 `t` に置き換えられます。詳しくは、『[フィールド・リストの再ロード](/docs/services/CloudLogAnalysis/kibana/analize_logs_interactively.html#discover_view_reload_fields)』を参照してください。
+Kibana で「Discover」ページを開くと、「available fields」セクションにリストされるフィールドの横に文字 `t` ではなく疑問符 `?` が表示されることがあります。フィールドのリストを再ロードすると、フィールドのタイプが分析され、疑問符 `?` は文字 `t` に置き換えられます。詳しくは、『[フィールド・リストの再ロード](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-analize_logs_interactively#discover_view_reload_fields)』を参照してください。
 
 
 ## デフォルトの索引パターンを変更しようとすると 403 エラーが表示されます
@@ -112,7 +112,7 @@ Kibana で「Discover」ページを開くと、「available fields」セクシ�
 
 アカウント・ログを表示するには、以下のステップを実行します。
 
-1. [Kibana を起動します](/docs/services/CloudLogAnalysis/kibana/launch.html#launch_Kibana_from_browser)。 例えば、米国南部地域の場合は URL `https://logging.ng.bluemix.net` を使用します。
+1. [Kibana を起動します](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-launch#launch_Kibana_from_browser)。 例えば、米国南部地域の場合は URL `https://logging.ng.bluemix.net` を使用します。
 
 2. アカウント・ログを表示するため、オプション**「View AccountName account Logs」**を選択します。 *AccountName* はアカウントの名前です。
 

@@ -51,13 +51,13 @@ subcollection: cloudloganalysis
 
 | タスク | 詳細情報 |
 |------|------------------|
-| [新規視覚化の作成](/docs/services/CloudLogAnalysis/kibana4/logging_kibana_visualizations.html#logging_k4_visualizations_create) | 「*Discover*」ページで定義して保存した検索から、または「*Visualize*」ページで定義した新規照会から視覚化を作成できます。 |
-| [視覚化の保存](/docs/services/CloudLogAnalysis/kibana4/logging_kibana_visualizations.html#logging_kibana_visualizations_save) | 視覚化を将来再使用するために保存できます。 |
-| [視覚化のロード](/docs/services/CloudLogAnalysis/kibana4/logging_kibana_visualizations.html#logging_kibana_visualizations_reload) | 視覚化をアップロードして、そのデータを更新するか、視覚化を変更するか、データを分析できます。 |
-| [視覚化の削除](/docs/services/CloudLogAnalysis/kibana4/logging_kibana_visualizations.html#logging_kibana_visualizations_delete) | 必要ではない視覚化を削除します。 |
-| [視覚化のエクスポート](/docs/services/CloudLogAnalysis/kibana4/logging_kibana_visualizations.html#logging_kibana_visualizations_export) | 視覚化を JSON ファイルとしてエクスポートできます。  |
-| [視覚化のインポート](/docs/services/CloudLogAnalysis/kibana4/logging_kibana_visualizations.html#logging_kibana_visualizations_import) | 視覚化を JSON ファイルとしてインポートできます。  |
-| [視覚化の共有](/docs/services/CloudLogAnalysis/kibana4/logging_kibana_visualizations.html#logging_kibana_visualizations_share) | HTML ソースまたは Kibana ダッシュボードで視覚化を共有できます。  |
+| [新規視覚化の作成](/docs/services/CloudLogAnalysis/kibana4?topic=cloudloganalysis-logging_kibana_visualizations#logging_k4_visualizations_create) | 「*Discover*」ページで定義して保存した検索から、または「*Visualize*」ページで定義した新規照会から視覚化を作成できます。 |
+| [視覚化の保存](/docs/services/CloudLogAnalysis/kibana4?topic=cloudloganalysis-logging_kibana_visualizations#logging_kibana_visualizations_save) | 視覚化を将来再使用するために保存できます。 |
+| [視覚化のロード](/docs/services/CloudLogAnalysis/kibana4?topic=cloudloganalysis-logging_kibana_visualizations#logging_kibana_visualizations_reload) | 視覚化をアップロードして、そのデータを更新するか、視覚化を変更するか、データを分析できます。 |
+| [視覚化の削除](/docs/services/CloudLogAnalysis/kibana4?topic=cloudloganalysis-logging_kibana_visualizations#logging_kibana_visualizations_delete) | 必要ではない視覚化を削除します。 |
+| [視覚化のエクスポート](/docs/services/CloudLogAnalysis/kibana4?topic=cloudloganalysis-logging_kibana_visualizations#logging_kibana_visualizations_export) | 視覚化を JSON ファイルとしてエクスポートできます。  |
+| [視覚化のインポート](/docs/services/CloudLogAnalysis/kibana4?topic=cloudloganalysis-logging_kibana_visualizations#logging_kibana_visualizations_import) | 視覚化を JSON ファイルとしてインポートできます。  |
+| [視覚化の共有](/docs/services/CloudLogAnalysis/kibana4?topic=cloudloganalysis-logging_kibana_visualizations#logging_kibana_visualizations_share) | HTML ソースまたは Kibana ダッシュボードで視覚化を共有できます。  |
 {: caption="表 2. 視覚化を操作するタスク" caption-side="top"}
 
 

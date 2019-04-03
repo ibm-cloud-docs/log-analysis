@@ -47,13 +47,13 @@ subcollection: cloudloganalysis
 
 |任务|更多信息|
 |------|------------------|
-|[添加可视化项](/docs/services/CloudLogAnalysis/kibana/analize_logs_dashboard.html#add_visualization)|可以向仪表板添加现有可视化项或搜索。|
-|[新建仪表板](/docs/services/CloudLogAnalysis/kibana/analize_logs_dashboard.html#new)|可以创建多个仪表板。每个仪表板可以设计为包含不同的搜索、可视化项和不同的日志数据子集。|
-|[删除仪表板](/docs/services/CloudLogAnalysis/kibana/analize_logs_dashboard.html#delete)|删除不需要的仪表板。|
-|[导出仪表板](/docs/services/CloudLogAnalysis/kibana/analize_logs_dashboard.html#export)|可以将仪表板导出为 JSON 文件。|
-|[导入仪表板](/docs/services/CloudLogAnalysis/kibana/analize_logs_dashboard.html#import)|可以将仪表板作为 JSON 文件导入。|
-|[装入仪表板](/docs/services/CloudLogAnalysis/kibana/analize_logs_dashboard.html#reload3)|可以上传仪表板以更新其数据，修改仪表板或分析数据。|
-|[保存仪表板](/docs/services/CloudLogAnalysis/kibana/analize_logs_dashboard.html#save)|可以保存仪表板以供日后复用。|
+|[添加可视化项](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-analize_logs_dashboard#add_visualization)|可以向仪表板添加现有可视化项或搜索。|
+|[新建仪表板](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-analize_logs_dashboard#new)|可以创建多个仪表板。每个仪表板可以设计为包含不同的搜索、可视化项和不同的日志数据子集。|
+|[删除仪表板](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-analize_logs_dashboard#delete)|删除不需要的仪表板。|
+|[导出仪表板](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-analize_logs_dashboard#export)|可以将仪表板导出为 JSON 文件。|
+|[导入仪表板](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-analize_logs_dashboard#import)|可以将仪表板作为 JSON 文件导入。|
+|[装入仪表板](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-analize_logs_dashboard#reload3)|可以上传仪表板以更新其数据，修改仪表板或分析数据。|
+|[保存仪表板](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-analize_logs_dashboard#save)|可以保存仪表板以供日后复用。|
 {: caption="表 2. 使用仪表板的任务" caption-side="top"}
 
 有关 Kibana 的更多信息，请参阅 [Kibana User Guide ![外部链接图标](../../../icons/launch-glyph.svg "外部链接图标")](https://www.elastic.co/guide/en/kibana/5.1/index.html){: new_window}。
@@ -82,13 +82,13 @@ subcollection: cloudloganalysis
 
 1. 在“仪表板”页面的工具栏中，单击**添加**。 
 
-2. 添加一个或多个搜索和可视化项。有关更多信息，请参阅[添加新的搜索或可视化项](/docs/services/CloudLogAnalysis/kibana/analize_logs_dashboard.html#add_visualization)。
+2. 添加一个或多个搜索和可视化项。有关更多信息，请参阅[添加新的搜索或可视化项](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-analize_logs_dashboard#add_visualization)。
 
     添加搜索或可视化项时，将在仪表板中添加面板。
 
 3. 将面板拖放到仪表板中您希望将其定位到的部分。
  
-4. 保存仪表板以供未来复用。有关更多信息，请参阅[保存 Kibana 仪表板](/docs/services/CloudLogAnalysis/kibana/analize_logs_dashboard.html#save)。
+4. 保存仪表板以供未来复用。有关更多信息，请参阅[保存 Kibana 仪表板](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-analize_logs_dashboard#save)。
 
 
 ## 删除 Kibana 仪表板

@@ -61,13 +61,13 @@ Puoi avviare Kibana in uno dei seguenti modi:
 
     Puoi avviare Kibana in modo che i dati che visualizzi aggreghino i log dai servizi all'interno di uno spazio fornito.
 	
-	Per ulteriori informazioni, vedi [Passaggio a Kibana dal dashboard del servizio Analisi di log](/docs/services/CloudLogAnalysis/kibana/launch.html#launch_Kibana_from_log_analysis).
+	Per ulteriori informazioni, vedi [Passaggio a Kibana dal dashboard del servizio Analisi di log](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-launch#launch_Kibana_from_log_analysis).
 
 * Da {{site.data.keyword.Bluemix_notm}}
 
-    Puoi eseguire l'avvio ai tuoi specifici log dell'applicazione CF nel contesto di tale specifica applicazione. Per ulteriori informazioni, vedi [Passaggio a Kibana dal dashboard di una applicazione CF](/docs/services/CloudLogAnalysis/kibana/launch.html#launch_Kibana_from_cf_app).
+    Puoi eseguire l'avvio ai tuoi specifici log dell'applicazione CF nel contesto di tale specifica applicazione. Per ulteriori informazioni, vedi [Passaggio a Kibana dal dashboard di una applicazione CF](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-launch#launch_Kibana_from_cf_app).
     
-    Puoi eseguire l'avvio ai tuoi specifici log del contenitore Docker in Kibana nel contesto di tale specifico contenitore. Questa funzione si applica solo ai contenitori distribuiti nell'infrastruttura gestita da {{site.data.keyword.Bluemix_notm}}. Per ulteriori informazioni, vedi [Passaggio a Kibana dal dashboard di un contenitore](/docs/services/CloudLogAnalysis/kibana/launch.html#launch_Kibana_for_containers).
+    Puoi eseguire l'avvio ai tuoi specifici log del contenitore Docker in Kibana nel contesto di tale specifico contenitore. Questa funzione si applica solo ai contenitori distribuiti nell'infrastruttura gestita da {{site.data.keyword.Bluemix_notm}}. Per ulteriori informazioni, vedi [Passaggio a Kibana dal dashboard di un contenitore](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-launch#launch_Kibana_for_containers).
     
     Per le applicazioni CF, la query che viene utilizzata per filtrare i dati disponibili per l'analisi in Kibana richiama le voci di log per l'applicazione Cloud Foundry. Le informazioni di log visualizzate da Kibana per impostazione predefinita sono tutte correlate a un'unica applicazione Cloud Foundry e a tutte le sue istanze. 
     
@@ -83,16 +83,16 @@ Puoi avviare Kibana in uno dei seguenti modi:
 {{site.data.keyword.Bluemix_notm}}. Le informazioni di log visualizzate da Kibana includono i record per
 tutte le risorse che vengono distribuite all'interno dello spazio dell'organizzazione {{site.data.keyword.Bluemix_notm}} a cui sei collegato. 
     
-    Per ulteriori informazioni, vedi [Passaggio al dashboard Kibana da un browser web](/docs/services/CloudLogAnalysis/kibana/launch.html#launch_Kibana_from_browser).
+    Per ulteriori informazioni, vedi [Passaggio al dashboard Kibana da un browser web](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-launch#launch_Kibana_from_browser).
     
     
 
 ## Analizza i dati interattivamente
 {: #analyze_discover}
 
-Nella pagina Rileva, puoi definire nuove query di ricerca e applicare i filtri alle query. I dati di log sono visualizzati tramite una tabella e un istogramma. Puoi utilizzare queste visualizzazioni per analizzare i dati interattivamente. Per maggiori informazioni, vedi [Analisi dei log interattiva in Kibana](/docs/services/CloudLogAnalysis/kibana/analize_logs_interactively.html#analize_logs_interactively).
+Nella pagina Rileva, puoi definire nuove query di ricerca e applicare i filtri alle query. I dati di log sono visualizzati tramite una tabella e un istogramma. Puoi utilizzare queste visualizzazioni per analizzare i dati interattivamente. Per maggiori informazioni, vedi [Analisi dei log interattiva in Kibana](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-analize_logs_interactively#analize_logs_interactively).
 
-Puoi configurare i filtri dai campi di log, ad esempio, message_type e instance_ID e impostare un periodo di tempo. Puoi abilitare o disabilitare dinamicamente questi filtri. La tabella e l'istogramma visualizzeranno le voci di log che soddisfano la query e i criteri di filtro da te abilitati. Per maggiori informazioni, vedi [Filtro dei log in Kibana](/docs/services/CloudLogAnalysis/kibana/filter_logs.html#filter_logs).
+Puoi configurare i filtri dai campi di log, ad esempio, message_type e instance_ID e impostare un periodo di tempo. Puoi abilitare o disabilitare dinamicamente questi filtri. La tabella e l'istogramma visualizzeranno le voci di log che soddisfano la query e i criteri di filtro da te abilitati. Per maggiori informazioni, vedi [Filtro dei log in Kibana](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-filter_logs#filter_logs).
 
 ## Analizza i dati attraverso una visualizzazione
 {: #analyze_visualize}
@@ -101,16 +101,16 @@ Nella pagina Visualizza, puoi definire nuove visualizzazioni e query di ricerca.
 
 Per analizzare i dati, puoi creare visualizzazioni basate su una ricerca esistente o una nuova ricerca. Kibana include diversi tipi di visualizzazioni, come tabella, tendenze e istogramma, che puoi utilizzare per analizzare le informazioni. Ogni visualizzazione ha un obiettivo diverso. Alcune visualizzazioni sono organizzate in righe che forniscono i risultati di una o più query. Altre visualizzazioni mostrano documenti o informazioni personalizzate. I dati in una visualizzazione possono essere corretti o modificati se viene aggiornata una query di ricerca. Puoi incorporare la tua visualizzazione in una pagina web o condividerla. 
 
-Per maggiori informazioni, vedi [Analisi dei log utilizzando le visualizzazioni](/docs/services/CloudLogAnalysis/kibana/kibana_visualizations.html#kibana_visualizations).
+Per maggiori informazioni, vedi [Analisi dei log utilizzando le visualizzazioni](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-kibana_visualizations#kibana_visualizations).
 
 ## Analizza i dati in un dashboard
 {: #analyze_dashboard}
 
 Nella pagina Dashboard, puoi personalizzare, salvare e condividere più visualizzazioni e ricerche contemporaneamente. 
 
-Puoi aggiungere, rimuovere e riorganizzare le visualizzazioni nel dashboard. Per maggiori informazioni, vedi [Analisi dei log in Kibana tramite un dashboard](/docs/services/CloudLogAnalysis/kibana/analize_logs_dashboard.html#analize_logs_dashboard).
+Puoi aggiungere, rimuovere e riorganizzare le visualizzazioni nel dashboard. Per maggiori informazioni, vedi [Analisi dei log in Kibana tramite un dashboard](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-analize_logs_dashboard#analize_logs_dashboard).
     
-Dopo aver personalizzato un dashboard Kibana, puoi analizzare i dati tramite le relative visualizzazioni e salvarli per un utilizzo successivo. Per maggiori informazioni, vedi [Salvataggio di un dashboard Kibana ](/docs/services/CloudLogAnalysis/kibana/analize_logs_dashboard.html#save).
+Dopo aver personalizzato un dashboard Kibana, puoi analizzare i dati tramite le relative visualizzazioni e salvarli per un utilizzo successivo. Per maggiori informazioni, vedi [Salvataggio di un dashboard Kibana ](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-analize_logs_dashboard#save).
 
 ## Personalizza Kibana
 {: #analyze_management}
@@ -122,7 +122,7 @@ Puoi completare le seguenti attività:
 * Salva, elimina, esporta e importa ricerche. 
 * Salva, elimina, esporta e importa visualizzazioni.
 * Salva, elimina, esporta e importa dashboard.
-* [Aggiorna l'elenco campi.](/docs/services/CloudLogAnalysis/kibana/analize_logs_interactively.html#discover_view_reload_fields)
+* [Aggiorna l'elenco campi.](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-analize_logs_interactively#discover_view_reload_fields)
 
 ## Limitazioni
 {: #limitations}

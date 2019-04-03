@@ -51,12 +51,12 @@ subcollection: cloudloganalysis
 
 |作業 |說明 | 
 |------|-------------|
-| [新增欄位直欄](/docs/services/CloudLogAnalysis/kibana4/logging_kibana_analize_logs_interactively.html#kibana_discover_add_fields_to_table) |新增欄位，以查看分析所需的特定資料，而非完整訊息。|
-| [重新排列欄位直欄](/docs/services/CloudLogAnalysis/kibana4/logging_kibana_analize_logs_interactively.html#kibana_discover_rearrange_fields_in_table) |將表格中的欄位位置移到您想要的位置。|
-| [檢視項目](/docs/services/CloudLogAnalysis/kibana4/logging_kibana_analize_logs_interactively.html#kibana_discover_view_entry_in_table) |將表格中的項目展開，以查看依欄位剖析或剖析成 JSON 的項目詳細資料。|
-| [移除欄位直欄](/docs/services/CloudLogAnalysis/kibana4/logging_kibana_analize_logs_interactively.html#kibana_discover_remove_fields_from_table) |若視圖中有不需要分析的欄位，可以將它移除。|
-| [依已編製索引欄位的值來排序項目](/docs/services/CloudLogAnalysis/kibana4/logging_kibana_analize_logs_interactively.html#kibana_discover_sort_by_table) |將項目重新排序，以方便分析。|
-| [自動重新整理資料](/docs/services/CloudLogAnalysis/kibana4/logging_kibana_analize_logs_interactively.html#kibana_discover_view_refresh_interval) |以最新的項目來重新整理表格中顯示的資料。依預設，重新整理功能為**關閉**。|
+|[新增欄位直欄](/docs/services/CloudLogAnalysis/kibana4?topic=cloudloganalysis-kibana_analize_logs_interactively#kibana_discover_add_fields_to_table) |新增欄位，以查看分析所需的特定資料，而非完整訊息。|
+|[重新排列欄位直欄](/docs/services/CloudLogAnalysis/kibana4?topic=cloudloganalysis-kibana_analize_logs_interactively#kibana_discover_rearrange_fields_in_table) |將表格中的欄位位置移到您想要的位置。|
+|[檢視項目](/docs/services/CloudLogAnalysis/kibana4?topic=cloudloganalysis-kibana_analize_logs_interactively#kibana_discover_view_entry_in_table) |將表格中的項目展開，以查看依欄位剖析或剖析成 JSON 的項目詳細資料。|
+|[移除欄位直欄](/docs/services/CloudLogAnalysis/kibana4?topic=cloudloganalysis-kibana_analize_logs_interactively#kibana_discover_remove_fields_from_table) |若視圖中有不需要分析的欄位，可以將它移除。|
+|[依已編製索引欄位的值來排序項目](/docs/services/CloudLogAnalysis/kibana4?topic=cloudloganalysis-kibana_analize_logs_interactively#kibana_discover_sort_by_table) |將項目重新排序，以方便分析。|
+|[自動重新整理資料](/docs/services/CloudLogAnalysis/kibana4?topic=cloudloganalysis-kibana_analize_logs_interactively#kibana_discover_view_refresh_interval) |以最新的項目來重新整理表格中顯示的資料。依預設，重新整理功能為**關閉**。|
 {: caption="表 2. 自訂表格的作業" caption-side="top"}
 
 <br>
@@ -97,7 +97,7 @@ subcollection: cloudloganalysis
 * 您可以查看每個欄位的統計資料。 
 * 您可以針對所配置的每個 `@timestamp`，以直方圖查看統計資料。
 
-如需相關資訊，請參閱[檢視欄位資料的統計資料](/docs/services/CloudLogAnalysis/kibana4/logging_kibana_analize_logs_interactively.html#kibana_discover_view_fields_stats)。
+如需相關資訊，請參閱[檢視欄位資料的統計資料](/docs/services/CloudLogAnalysis/kibana4?topic=cloudloganalysis-kibana_analize_logs_interactively#kibana_discover_view_fields_stats)。
 
 **附註：**表格及直方圖中顯示的資料是靜態資料。若要持續檢視最新項目，您必須設定重新整理間隔。 
 

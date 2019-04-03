@@ -31,20 +31,20 @@ subcollection: cloudloganalysis
 
 若要管理日誌，請考量下列資訊：
 
-1. 使用者 ID 必須已在 {{site.data.keyword.Bluemix_notm}} 中針對 {{site.data.keyword.loganalysisshort}} 指派原則，並具有管理日誌許可權。 
+1. 使用者 ID 必須已在 {{site.data.keyword.cloud_notm}} 中針對 {{site.data.keyword.loganalysisshort}} 指派原則，並具有管理日誌許可權。 
 
-    如需 IAM 角色及每個角色之作業的清單，請參閱 [IAM 角色](/docs/services/CloudLogAnalysis/security_ov.html#iam_roles)。 
+    如需 IAM 角色及每個角色之作業的清單，請參閱 [IAM 角色](/docs/services/CloudLogAnalysis?topic=cloudloganalysis-security_ov#iam_roles)。 
 	
-	如需如何指派原則的相關資訊，請參閱[透過 {{site.data.keyword.Bluemix_notm}} 使用者介面將 IAM 原則指派給使用者](/docs/services/CloudLogAnalysis/security/grant_permissions.html#grant_permissions_ui_account)。
+	如需如何指派原則的相關資訊，請參閱[透過 {{site.data.keyword.cloud_notm}} 使用者介面將 IAM 原則指派給使用者](/docs/services/CloudLogAnalysis/security?topic=cloudloganalysis-grant_permissions#grant_permissions_ui_account)。
 	
 2. 此特性僅適用於容許日誌保留的服務方案。 
 
-    如需服務方案的相關資訊，請參閱[服務方案](/docs/services/CloudLogAnalysis/log_analysis_ov.html#plans)。
+    如需服務方案的相關資訊，請參閱[服務方案](/docs/services/CloudLogAnalysis?topic=cloudloganalysis-log_analysis_ov#plans)。
 
 {{site.data.keyword.loganalysisshort}} 服務提供兩個可用來管理日誌的 CLI：
 
-* {{site.data.keyword.loganalysisshort}} {{site.data.keyword.Bluemix_notm}} 外掛程式。如需 CLI 的相關資訊，請參閱 [{{site.data.keyword.loganalysisshort}} CLI（{{site.data.keyword.Bluemix_notm}} 外掛程式）](/docs/services/CloudLogAnalysis/reference/log_analysis_cli_cloud.html#log_analysis_cli)。
-* {{site.data.keyword.loganalysisshort}} CF 外掛程式（已淘汰）。如需 CLI 的相關資訊，請參閱[配置 Log Analysis CLI（CF 外掛程式）](/docs/services/CloudLogAnalysis/reference/logging_cli.html#logging_cli)。
+* {{site.data.keyword.loganalysisshort}} {{site.data.keyword.cloud_notm}} 外掛程式。如需 CLI 的相關資訊，請參閱 [{{site.data.keyword.loganalysisshort}} CLI（{{site.data.keyword.cloud_notm}} 外掛程式）](/docs/services/CloudLogAnalysis/reference?topic=cloudloganalysis-log_analysis_cli#log_analysis_cli)。
+* {{site.data.keyword.loganalysisshort}} CF 外掛程式（已淘汰）。如需 CLI 的相關資訊，請參閱[配置 Log Analysis CLI（CF 外掛程式）](/docs/services/CloudLogAnalysis/reference?topic=cloudloganalysis-logging_cli#logging_cli)。
 
 
 ## 配置日誌保留原則
@@ -59,12 +59,12 @@ subcollection: cloudloganalysis
 * 您隨時都可以變更保留原則。
 * 停用此原則的方式是將其值設為 *-1*。 
 
-**附註：**當您停用日誌保留原則時，必須在「日誌收集」中維護日誌。您可以使用 CLI 指令 [cf logging delete](/docs/services/CloudLogAnalysis/reference/logging_cli.html#delete4) 來刪除舊日誌。
+**附註：**當您停用日誌保留原則時，必須在「日誌收集」中維護日誌。您可以使用 CLI 指令 [cf logging delete](/docs/services/CloudLogAnalysis/reference?topic=cloudloganalysis-logging_cli#delete4) 來刪除舊日誌。
 
 如需相關資訊，請參閱：
 
-* [使用 {{site.data.keyword.Bluemix_notm}} 外掛程式檢視及配置日誌保留原則](/docs/services/CloudLogAnalysis/how-to/manage-logs/configuring_retention_policy_cloud.html#configuring_retention_policy)。
-* [使用 CF 外掛程式檢視及配置日誌保留原則](/docs/services/CloudLogAnalysis/how-to/manage-logs/configuring_retention_policy.html#configuring_retention_policy)。
+* [使用 {{site.data.keyword.cloud_notm}} 外掛程式檢視及配置日誌保留原則](/docs/services/CloudLogAnalysis/how-to/manage-logs?topic=cloudloganalysis-configuring_retention_policy#configuring_retention_policy)。
+* [使用 CF 外掛程式檢視及配置日誌保留原則](/docs/services/CloudLogAnalysis/how-to/manage-logs?topic=cloudloganalysis-configuring_retention_policy1#configuring_retention_policy)。
 
 
 ## 刪除日誌
@@ -74,11 +74,11 @@ subcollection: cloudloganalysis
 
 除非您配置保留原則，或手動予以刪除，否則會保留「日誌收集」中所儲存的日誌。 
 
-* 您可以配置日誌保留原則，以定義您要將日誌保留在「日誌收集」中的天數。如需相關資訊，請參閱[使用 {{site.data.keyword.Bluemix_notm}} 外掛程式檢視及配置日誌保留原則](/docs/services/CloudLogAnalysis/how-to/manage-logs/configuring_retention_policy_cloud.html#configuring_retention_policy)。
+* 您可以配置日誌保留原則，以定義您要將日誌保留在「日誌收集」中的天數。如需相關資訊，請參閱[使用 {{site.data.keyword.cloud_notm}} 外掛程式檢視及配置日誌保留原則](/docs/services/CloudLogAnalysis/how-to/manage-logs?topic=cloudloganalysis-configuring_retention_policy#configuring_retention_policy)。
 
-* 您可以使用[日誌收集 API](https://console.bluemix.net/apidocs/948-ibm-cloud-log-collection-api?&language=node&env_id=ibm%3Ayp%3Aus-south#introduction){: new_window} 或[日誌收集 CLI](/docs/services/CloudLogAnalysis/reference/log_analysis_cli_cloud.html#log_analysis_cli){: new_window}，手動刪除「日誌收集」中的日誌。 
+* 您可以使用[日誌收集 API](https://console.bluemix.net/apidocs/948-ibm-cloud-log-collection-api?&language=node&env_id=ibm%3Ayp%3Aus-south#introduction){: new_window} 或[日誌收集 CLI](/docs/services/CloudLogAnalysis/reference?topic=cloudloganalysis-log_analysis_cli#log_analysis_cli){: new_window}，手動刪除「日誌收集」中的日誌。 
 
-* 您可以使用 CLI。如需透過 CLI 手動刪除日誌的相關資訊，請參閱[使用 {{site.data.keyword.Bluemix_notm}} 外掛程式來執行 ibmcloud logging log-delete](/docs/services/CloudLogAnalysis/how-to/manage-logs/deleting_logs_cloud.html#deleting_logs)。
+* 您可以使用 CLI。如需透過 CLI 手動刪除日誌的相關資訊，請參閱[使用 {{site.data.keyword.cloud_notm}} 外掛程式來執行 ibmcloud logging log-delete](/docs/services/CloudLogAnalysis/how-to/manage-logs?topic=cloudloganalysis-deleting_logs#deleting_logs)。
     
 
 
@@ -89,8 +89,8 @@ subcollection: cloudloganalysis
 
 如需相關資訊，請參閱：
 
-* [使用 {{site.data.keyword.Bluemix_notm}} 外掛程式下載日誌](/docs/services/CloudLogAnalysis/how-to/manage-logs/downloading_logs_cloud.html#downloading_logs)。
-* [使用 CF 外掛程式下載日誌](/docs/services/CloudLogAnalysis/how-to/manage-logs/downloading_logs.html#downloading_logs1)。
+* [使用 {{site.data.keyword.cloud_notm}} 外掛程式下載日誌](/docs/services/CloudLogAnalysis/how-to/manage-logs?topic=cloudloganalysis-downloading_logs#downloading_logs)。
+* [使用 CF 外掛程式下載日誌](/docs/services/CloudLogAnalysis/how-to/manage-logs?topic=cloudloganalysis-downloading_logs1#downloading_logs1)。
 
 
 
@@ -99,23 +99,23 @@ subcollection: cloudloganalysis
 
 若要取得日誌的一般資訊，請使用 `ibmcloud logging log-show` 或 `cf logging status` 指令。如需相關資訊，請參閱：
 
-* [使用 {{site.data.keyword.Bluemix_notm}} 外掛程式檢視日誌資訊](/docs/services/CloudLogAnalysis/how-to/manage-logs/viewing_log_information_cloud.html#viewing_log_status1)
-* [使用 CF 外掛程式檢視日誌資訊](/docs/services/CloudLogAnalysis/how-to/manage-logs/viewing_log_information.html#viewing_log_status1)。
+* [使用 {{site.data.keyword.cloud_notm}} 外掛程式檢視日誌資訊](/docs/services/CloudLogAnalysis/how-to/manage-logs?topic=cloudloganalysis-viewing_log_status1#viewing_log_status1)
+* [使用 CF 外掛程式檢視日誌資訊](/docs/services/CloudLogAnalysis/how-to/manage-logs?topic=cloudloganalysis-viewing_log_status#viewing_log_status1)。
 
-例如，若要持續控制成本，您可能要監視一段時間內的應用程式日誌大小。例如，您可能要知道 {{site.data.keyword.Bluemix_notm}} 空間一週內每一種日誌類型的大小，才能識別是否有任何應用程式或服務所產生的日誌超出預期。若要檢查日誌大小，請使用 `ibmcloud logging log-show` 或 `cf logging status` 指令。
+例如，若要持續控制成本，您可能要監視一段時間內的應用程式日誌大小。例如，您可能要知道 {{site.data.keyword.cloud_notm}} 空間一週內每一種日誌類型的大小，才能識別是否有任何應用程式或服務所產生的日誌超出預期。若要檢查日誌大小，請使用 `ibmcloud logging log-show` 或 `cf logging status` 指令。
 
 您可以檢視空間網域、組織網域或帳戶網域中所儲存日誌的相關資訊。
 
 
 
-## 安裝 {{site.data.keyword.loganalysisshort_notm}} CLI（{{site.data.keyword.Bluemix_notm}} 外掛程式）
+## 安裝 {{site.data.keyword.loganalysisshort_notm}} CLI（{{site.data.keyword.cloud_notm}} 外掛程式）
 {: #install_cli2}
 
-若要瞭解如何安裝 CLI，請參閱[安裝記載 CLI](/docs/services/CloudLogAnalysis/how-to/manage-logs/config_log_collection_cli_cloud.html#config_log_collection_cli)。
+若要瞭解如何安裝 CLI，請參閱[安裝記載 CLI](/docs/services/CloudLogAnalysis/how-to/manage-logs?topic=cloudloganalysis-config_log_collection_cli#config_log_collection_cli)。
 
 若要檢查 CLI 版本，請執行指令 `ibmcloud plugin list`。
 
-若要取得如何執行指令的協助，請參閱[取得執行指令的指令行協助](/docs/services/CloudLogAnalysis/how-to/manage-logs/config_log_collection_cli_cloud.html#command_cli_help)。
+若要取得如何執行指令的協助，請參閱[取得執行指令的指令行協助](/docs/services/CloudLogAnalysis/how-to/manage-logs?topic=cloudloganalysis-config_log_collection_cli#command_cli_help)。
 
 
 ## 記載端點
@@ -150,7 +150,7 @@ subcollection: cloudloganalysis
 ## 使用者管理日誌所需的角色
 {: #roles1}
 
-在 {{site.data.keyword.Bluemix_notm}} 中，您可以將一個以上的角色指派給使用者。這些角色定義針對該使用者啟用以使用 {{site.data.keyword.loganalysisshort}} 服務的作業。 
+在 {{site.data.keyword.cloud_notm}} 中，您可以將一個以上的角色指派給使用者。這些角色定義針對該使用者啟用以使用 {{site.data.keyword.loganalysisshort}} 服務的作業。 
 
 下列各表列出使用者管理日誌必須具備的角色：
 

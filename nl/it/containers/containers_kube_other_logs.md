@@ -59,7 +59,7 @@ Completa la seguente procedura:
 
 1. Accedi a una regione, un'organizzazione e uno spazio in {{site.data.keyword.Bluemix_notm}}. 
 
-    Per ulteriori informazioni, vedi [Come accedo a {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/qa/cli_qa.html#login).
+    Per ulteriori informazioni, vedi [Come accedo a {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#login).
     
 2. Inizializza il plug-in del servizio {{site.data.keyword.loganalysisshort}}.
 
@@ -91,11 +91,11 @@ Completa la seguente procedura:
 
 Puoi scegliere quali log di cluster inoltrare al servizio {{site.data.keyword.loganalysisshort}}. 
 
-* Per abilitare la raccolta di log automatica e l'inoltro di stdout e stderr, vedi [Abilitazione della raccolta di log automatica e dell'inoltro dei log del contenitore](/docs/services/CloudLogAnalysis/containers/containers_kube_other_logs.html#containers).
-* Per abilitare la raccolta di log automatica e l'inoltro dei log di applicazione, vedi [Abilitazione della raccolta di log automatica e inoltro di log di applicazione](/docs/services/CloudLogAnalysis/containers/containers_kube_other_logs.html#apps).
-* Per abilitare la raccolta di log automatica e l'inoltro di log di lavoro, vedi [Abilitazione della raccolta di log automatica e inoltro di log di lavoro](/docs/services/CloudLogAnalysis/containers/containers_kube_other_logs.html#workers).
-* Per abilitare la raccolta di log automatica e l'inoltro dei log di componente di sistema Kubernetes, vedi [Abilitazione della raccolta di log automatica e inoltro dei log di componente di sistema Kubernetes](/docs/services/CloudLogAnalysis/containers/containers_kube_other_logs.html#system).
-* Per abilitare la raccolta di log automatica e l'inoltro dei log di controller Ingress Kubernetes, vedi [Abilitazione della raccolta di log automatica e inoltro dei log di controller Ingress Kubernetes](/docs/services/CloudLogAnalysis/containers/containers_kube_other_logs.html#controller).
+* Per abilitare la raccolta di log automatica e l'inoltro di stdout e stderr, vedi [Abilitazione della raccolta di log automatica e dell'inoltro dei log del contenitore](/docs/services/CloudLogAnalysis/containers?topic=cloudloganalysis-containers_kube_other_logs#containers).
+* Per abilitare la raccolta di log automatica e l'inoltro dei log di applicazione, vedi [Abilitazione della raccolta di log automatica e inoltro di log di applicazione](/docs/services/CloudLogAnalysis/containers?topic=cloudloganalysis-containers_kube_other_logs#apps).
+* Per abilitare la raccolta di log automatica e l'inoltro di log di lavoro, vedi [Abilitazione della raccolta di log automatica e inoltro di log di lavoro](/docs/services/CloudLogAnalysis/containers?topic=cloudloganalysis-containers_kube_other_logs#workers).
+* Per abilitare la raccolta di log automatica e l'inoltro dei log di componente di sistema Kubernetes, vedi [Abilitazione della raccolta di log automatica e inoltro dei log di componente di sistema Kubernetes](/docs/services/CloudLogAnalysis/containers?topic=cloudloganalysis-containers_kube_other_logs#system).
+* Per abilitare la raccolta di log automatica e l'inoltro dei log di controller Ingress Kubernetes, vedi [Abilitazione della raccolta di log automatica e inoltro dei log di controller Ingress Kubernetes](/docs/services/CloudLogAnalysis/containers?topic=cloudloganalysis-containers_kube_other_logs#controller).
 
 
 
@@ -142,7 +142,7 @@ Completa la seguente procedura:
  
 3. Se l'utente non dispone delle autorizzazioni corrette, completa la seguente procedura:
 
-    1. Concedi all'utente le seguenti autorizzazioni: *orgManager* (Gestore organizzazione) per l'organizzazione e *SpaceManager* (Gestore spazio) e *Developer* (Sviluppatore) per lo spazio. Per ulteriori informazioni, vedi [Concessione delle autorizzazioni a un utente per visualizzare i log dello spazio utilizzando la IU IBM Cloud](/docs/services/CloudLogAnalysis/security/grant_permissions.html#grant_permissions_ui_space).
+    1. Concedi all'utente le seguenti autorizzazioni: *orgManager* (Gestore organizzazione) per l'organizzazione e *SpaceManager* (Gestore spazio) e *Developer* (Sviluppatore) per lo spazio. Per ulteriori informazioni, vedi [Concessione delle autorizzazioni a un utente per visualizzare i log dello spazio utilizzando la IU IBM Cloud](/docs/services/CloudLogAnalysis/security?topic=cloudloganalysis-grant_permissions#grant_permissions_ui_space).
     
     2. Aggiorna la configurazione della registrazione. Esegui il seguente comando:
     
@@ -170,7 +170,7 @@ ibmcloud ks logging-config-create ClusterName --logsource container --namespace 
 dove 
 
 * *ClusterName* è il nome del cluster.
-* *EndPoint* è l'URL del servizio di registrazione nella regione in cui viene eseguito il provisioning del servizio {{site.data.keyword.loganalysisshort}}. Per un elenco degli endpoint, vedi [Endpoint](/docs/services/CloudLogAnalysis/log_ingestion.html#log_ingestion_urls).
+* *EndPoint* è l'URL del servizio di registrazione nella regione in cui viene eseguito il provisioning del servizio {{site.data.keyword.loganalysisshort}}. Per un elenco degli endpoint, vedi [Endpoint](/docs/services/CloudLogAnalysis?topic=cloudloganalysis-log_ingestion#log_ingestion_urls).
 * *OrgName* è il nome dell'organizzazione in cui è disponibile lo spazio.
 * *SpaceName* è il nome dello spazio in cui viene eseguito il provisioning del servizio {{site.data.keyword.loganalysisshort}}.
 
@@ -204,7 +204,7 @@ ibmcloud ks logging-config-create ClusterName --logsource application --type ibm
 dove 
 
 * *ClusterName* è il nome del cluster.
-* *EndPoint* è l'URL del servizio di registrazione nella regione in cui viene eseguito il provisioning del servizio {{site.data.keyword.loganalysisshort}}. Per un elenco degli endpoint, vedi [Endpoint](/docs/services/CloudLogAnalysis/log_ingestion.html#log_ingestion_urls).
+* *EndPoint* è l'URL del servizio di registrazione nella regione in cui viene eseguito il provisioning del servizio {{site.data.keyword.loganalysisshort}}. Per un elenco degli endpoint, vedi [Endpoint](/docs/services/CloudLogAnalysis?topic=cloudloganalysis-log_ingestion#log_ingestion_urls).
 * *OrgName* è il nome dell'organizzazione in cui è disponibile lo spazio.
 * *SpaceName* è il nome dello spazio in cui viene eseguito il provisioning del servizio {{site.data.keyword.loganalysisshort}}.
 * *app-containers* è un parametro facoltativo che puoi impostare per definire un elenco di contenitori che vuoi visualizzare. Questi contenitori sono gli unici da cui i log saranno instradati a {{site.data.keyword.loganalysisshort}}. Puoi impostare uno o più contenitori separandoli da virgole.
@@ -240,7 +240,7 @@ ibmcloud ks logging-config-create ClusterName --logsource worker --type ibm --ho
 dove 
 
 * *ClusterName* è il nome del cluster.
-* *EndPoint* è l'URL del servizio di registrazione nella regione in cui viene eseguito il provisioning del servizio {{site.data.keyword.loganalysisshort}}. Per un elenco degli endpoint, vedi [Endpoint](/docs/services/CloudLogAnalysis/log_ingestion.html#log_ingestion_urls).
+* *EndPoint* è l'URL del servizio di registrazione nella regione in cui viene eseguito il provisioning del servizio {{site.data.keyword.loganalysisshort}}. Per un elenco degli endpoint, vedi [Endpoint](/docs/services/CloudLogAnalysis?topic=cloudloganalysis-log_ingestion#log_ingestion_urls).
 * *OrgName* è il nome dell'organizzazione in cui è disponibile lo spazio.
 * *SpaceName* è il nome dello spazio in cui viene eseguito il provisioning del servizio {{site.data.keyword.loganalysisshort}}.
 
@@ -275,7 +275,7 @@ ibmcloud ks logging-config-create ClusterName --logsource kubernetes --type ibm 
 dove 
 
 * *ClusterName* è il nome del cluster.
-* *EndPoint* è l'URL del servizio di registrazione nella regione in cui viene eseguito il provisioning del servizio {{site.data.keyword.loganalysisshort}}. Per un elenco degli endpoint, vedi [Endpoint](/docs/services/CloudLogAnalysis/log_ingestion.html#log_ingestion_urls).
+* *EndPoint* è l'URL del servizio di registrazione nella regione in cui viene eseguito il provisioning del servizio {{site.data.keyword.loganalysisshort}}. Per un elenco degli endpoint, vedi [Endpoint](/docs/services/CloudLogAnalysis?topic=cloudloganalysis-log_ingestion#log_ingestion_urls).
 * *OrgName* è il nome dell'organizzazione in cui è disponibile lo spazio.
 * *SpaceName* è il nome dello spazio in cui viene eseguito il provisioning del servizio {{site.data.keyword.loganalysisshort}}.
 
@@ -310,7 +310,7 @@ ibmcloud ks logging-config-create ClusterName --logsource ingress --type ibm --h
 dove 
 
 * *ClusterName* è il nome del cluster.
-* *EndPoint* è l'URL del servizio di registrazione nella regione in cui viene eseguito il provisioning del servizio {{site.data.keyword.loganalysisshort}}. Per un elenco degli endpoint, vedi [Endpoint](/docs/services/CloudLogAnalysis/log_ingestion.html#log_ingestion_urls).
+* *EndPoint* è l'URL del servizio di registrazione nella regione in cui viene eseguito il provisioning del servizio {{site.data.keyword.loganalysisshort}}. Per un elenco degli endpoint, vedi [Endpoint](/docs/services/CloudLogAnalysis?topic=cloudloganalysis-log_ingestion#log_ingestion_urls).
 * *OrgName* è il nome dell'organizzazione in cui è disponibile lo spazio.
 * *SpaceName* è il nome dello spazio in cui viene eseguito il provisioning del servizio {{site.data.keyword.loganalysisshort}}.
 

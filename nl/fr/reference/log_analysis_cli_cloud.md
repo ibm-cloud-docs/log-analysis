@@ -32,7 +32,7 @@ L'interface de ligne de commande {{site.data.keyword.loganalysislong}} est un pl
 * Avant d'exécuter les commandes de journalisation, connectez-vous à {{site.data.keyword.Bluemix_notm}} avec la commande `ibmcloud login` pour générer un jeton d'accès et authentifier votre session.
 
 Pour savoir comment utiliser l'interface de ligne de commande {{site.data.keyword.loganalysisshort}},
-voir [Gestion des journaux](/docs/services/CloudLogAnalysis/log_analysis_ov.html#log_analysis_ov).
+voir [Gestion des journaux](/docs/services/CloudLogAnalysis?topic=cloudloganalysis-log_analysis_ov#log_analysis_ov).
 
 <table>
   <caption>Commandes de gestion des journaux</caption>
@@ -190,7 +190,7 @@ ibmcloud logging log-delete -s 2017-05-25 -e 2017-05-25 -t linux_syslog
 Télécharge les journaux depuis le composant Log Collection vers un fichier local ou dirige les journaux vers un autre programme, tel qu'Elastic Stack. 
 
 **Remarque :** pour télécharger les fichiers, vous devez d'abord créer une session. Une session définit quels journaux doivent être téléchargés en fonction de la plage
-de dates, du type de journal et du type de compte. Les journaux sont téléchargés dans le contexte d'une session. Pour plus d'informations, voir [ibmcloud logging session create (bêta)](/docs/services/CloudLogAnalysis/reference/log_analysis_cli_cloud.html#session_create).
+de dates, du type de journal et du type de compte. Les journaux sont téléchargés dans le contexte d'une session. Pour plus d'informations, voir [ibmcloud logging session create (bêta)](/docs/services/CloudLogAnalysis/reference?topic=cloudloganalysis-log_analysis_cli#session_create).
 
 ```
  ibmcloud logging log-download  [-r,--resource-type RESOURCE_TYPE] [-i,--resource-id RESOURCE_ID] [-o, --output OUTPUT] SESSION_ID

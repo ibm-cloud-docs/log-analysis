@@ -29,9 +29,9 @@ subcollection: cloudloganalysis
 {: shortdesc}
 
 **必要條件**
-* 在執行記載指令之前，請先使用 `ibmcloud login` 指令來登入 {{site.data.keyword.Bluemix_notm}}，以產生 {{site.data.keyword.Bluemix_short}} 存取記號，並鑑別您的階段作業。如需相關資訊，請參閱[如何登入 {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/qa/cli_qa.html#login)。
+* 在執行記載指令之前，請先使用 `ibmcloud login` 指令來登入 {{site.data.keyword.Bluemix_notm}}，以產生 {{site.data.keyword.Bluemix_short}} 存取記號，並鑑別您的階段作業。如需相關資訊，請參閱[如何登入 {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#login)。
 
-若要瞭解如何使用 {{site.data.keyword.loganalysisshort}} CLI，請參閱[管理日誌](/docs/services/CloudLogAnalysis/log_analysis_ov.html#log_analysis_ov)。
+若要瞭解如何使用 {{site.data.keyword.loganalysisshort}} CLI，請參閱[管理日誌](/docs/services/CloudLogAnalysis?topic=cloudloganalysis-log_analysis_ov#log_analysis_ov)。
 
 <table>
   <caption>用來管理日誌的指令</caption>
@@ -196,7 +196,7 @@ ibmcloud cf logging delete -s 2017-05-25 -e 2017-05-25 -t linux_syslog
 
 將日誌從「日誌收集」下載至本端檔案，或透過管道將日誌傳送至另一個程式（例如 Elastic Stack）。 
 
-**附註：**若要下載檔案，您需要先建立階段作業。階段作業會根據日期範圍、日誌類型及帳戶類型來定義要下載的日誌。您可以在階段作業環境定義內下載日誌。如需相關資訊，請參閱 [ibmcloud cf logging session create（測試版）](/docs/services/CloudLogAnalysis/reference/logging_cli.html#session_create1)。
+**附註：**若要下載檔案，您需要先建立階段作業。階段作業會根據日期範圍、日誌類型及帳戶類型來定義要下載的日誌。您可以在階段作業環境定義內下載日誌。如需相關資訊，請參閱 [ibmcloud cf logging session create（測試版）](/docs/services/CloudLogAnalysis/reference?topic=cloudloganalysis-logging_cli#session_create1)。
 
 ```
 ibmcloud cf logging download [parameters] [arguments]

@@ -51,12 +51,12 @@ Nella pagina Visualizza, puoi eseguire tutte le seguenti attività:
 
 | Attività | Ulteriori informazioni |
 |------|------------------|
-| [Creare una nuova visualizzazione](/docs/services/CloudLogAnalysis/kibana/kibana_visualizations.html#create) | Puoi creare le visualizzazioni da una ricerca che definisci e salvi nella pagina *Rileva* o da una nuova query che definisci nella pagina *Visualizza*. |
-| [Eliminare una visualizzazione](/docs/services/CloudLogAnalysis/kibana/kibana_visualizations.html#delete) | Elimina le visualizzazioni non richieste. |
-| [Esportare una visualizzazione](/docs/services/CloudLogAnalysis/kibana/kibana_visualizations.html#export) | Puoi esportare una visualizzazione come un file JSON.  |
-| [Importare una visualizzazione](/docs/services/CloudLogAnalysis/kibana/kibana_visualizations.html#import1) | Puoi importare una visualizzazione come un file JSON.  |
-| [Caricare una visualizzazione](/docs/services/CloudLogAnalysis/kibana/kibana_visualizations.html#reload2) | Puoi caricare una visualizzazione per aggiornarne i dati, modificarla o analizzare i dati. |
-| [Salvare una visualizzazione](/docs/services/CloudLogAnalysis/kibana/kibana_visualizations.html#save2) | Puoi salvare le visualizzazioni per un riutilizzo successivo. |
+| [Creare una nuova visualizzazione](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-kibana_visualizations#create) | Puoi creare le visualizzazioni da una ricerca che definisci e salvi nella pagina *Rileva* o da una nuova query che definisci nella pagina *Visualizza*. |
+| [Eliminare una visualizzazione](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-kibana_visualizations#delete) | Elimina le visualizzazioni non richieste. |
+| [Esportare una visualizzazione](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-kibana_visualizations#export) | Puoi esportare una visualizzazione come un file JSON.  |
+| [Importare una visualizzazione](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-kibana_visualizations#import1) | Puoi importare una visualizzazione come un file JSON.  |
+| [Caricare una visualizzazione](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-kibana_visualizations#reload2) | Puoi caricare una visualizzazione per aggiornarne i dati, modificarla o analizzare i dati. |
+| [Salvare una visualizzazione](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-kibana_visualizations#save2) | Puoi salvare le visualizzazioni per un riutilizzo successivo. |
 {: caption="Tabella 2. Attività per lavorare con le visualizzazioni" caption-side="top"}
 
 
@@ -81,7 +81,7 @@ Completa la seguente procedura per creare una visualizzazione dalla pagina Visua
 
     * Se selezioni **Da una nuova ricerca, seleziona indice**, definisci una nuova query. La query viene utilizzata per definire la sottorete di dati richiamati e utilizzati dalla visualizzazione.
 
-        Per ulteriori informazioni, vedi [Filtro dei log definendo query personalizzate](/docs/services/CloudLogAnalysis/kibana/define_search.html#define_search).
+        Per ulteriori informazioni, vedi [Filtro dei log definendo query personalizzate](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-define_search#define_search).
 
 Per ulteriori informazioni sulle applicazioni Kibana, vedi la [ ![Icona link esterno](../../../icons/launch-glyph.svg "Icona link esterno")](https://www.elastic.co/guide/en/kibana/5.1/index.html){: new_window}.
 

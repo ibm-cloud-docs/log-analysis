@@ -51,12 +51,12 @@ subcollection: cloudloganalysis
 
 | タスク | 詳細情報 |
 |------|------------------|
-| [新規視覚化の作成](/docs/services/CloudLogAnalysis/kibana/kibana_visualizations.html#create) | 「*Discover*」ページで定義して保存した検索から、または「*Visualize*」ページで定義した新規照会から視覚化を作成できます。 |
-| [視覚化の削除](/docs/services/CloudLogAnalysis/kibana/kibana_visualizations.html#delete) | 必要ではない視覚化を削除します。 |
-| [視覚化のエクスポート](/docs/services/CloudLogAnalysis/kibana/kibana_visualizations.html#export) | 視覚化を JSON ファイルとしてエクスポートできます。  |
-| [視覚化のインポート](/docs/services/CloudLogAnalysis/kibana/kibana_visualizations.html#import1) | 視覚化を JSON ファイルとしてインポートできます。  |
-| [視覚化のロード](/docs/services/CloudLogAnalysis/kibana/kibana_visualizations.html#reload2) | 視覚化をアップロードして、そのデータを更新するか、視覚化を変更するか、データを分析できます。 |
-| [視覚化の保存](/docs/services/CloudLogAnalysis/kibana/kibana_visualizations.html#save2) | 視覚化を将来再使用するために保存できます。 |
+| [新規視覚化の作成](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-kibana_visualizations#create) | 「*Discover*」ページで定義して保存した検索から、または「*Visualize*」ページで定義した新規照会から視覚化を作成できます。 |
+| [視覚化の削除](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-kibana_visualizations#delete) | 必要ではない視覚化を削除します。 |
+| [視覚化のエクスポート](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-kibana_visualizations#export) | 視覚化を JSON ファイルとしてエクスポートできます。  |
+| [視覚化のインポート](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-kibana_visualizations#import1) | 視覚化を JSON ファイルとしてインポートできます。  |
+| [視覚化のロード](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-kibana_visualizations#reload2) | 視覚化をアップロードして、そのデータを更新するか、視覚化を変更するか、データを分析できます。 |
+| [視覚化の保存](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-kibana_visualizations#save2) | 視覚化を将来再使用するために保存できます。 |
 {: caption="表 2. 視覚化を操作するタスク" caption-side="top"}
 
 
@@ -81,7 +81,7 @@ subcollection: cloudloganalysis
 
     * **「From a New Search, Select Index」**を選択した場合、新規照会を定義します。 照会は、視覚化で取得および使用されるデータのサブセットを定義するために使用されます。
 
-        詳しくは、『[カスタム検索照会の定義によるログのフィルタリング](/docs/services/CloudLogAnalysis/kibana/define_search.html#define_search)』を参照してください。
+        詳しくは、『[カスタム検索照会の定義によるログのフィルタリング](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-define_search#define_search)』を参照してください。
 
 Kibana について詳しくは、「[Kibana User Guide ![外部リンク・アイコン](../../../icons/launch-glyph.svg "外部リンク・アイコン")](https://www.elastic.co/guide/en/kibana/5.1/index.html){: new_window}」を参照してください。
 

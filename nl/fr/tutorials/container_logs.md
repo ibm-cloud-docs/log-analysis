@@ -51,15 +51,15 @@ Ce tutoriel vous guide tout au long des étapes à suivre pour le scénario de b
     * Une règle IAM pour {{site.data.keyword.containershort}} avec les droits *Editeur*, *Opérateur* ou *Administrateur*.
     * Un rôle CF pour l'espace dans lequel le service {{site.data.keyword.loganalysisshort}} a été mis à disposition avec les droits *Développeur*.
     
-    Pour plus d'informations, voir [Affectation d'une règle IAM à un utilisateur dans l'interface utilisateur IBM Cloud](/docs/services/CloudLogAnalysis/security/grant_permissions.html#grant_permissions_ui_account) et [Octroi à un utilisateur des droits permettant d'afficher les journaux d'espace dans l'interface utilisateur IBM Cloud](/docs/services/CloudLogAnalysis/security/grant_permissions.html#grant_permissions_ui_space).
+    Pour plus d'informations, voir [Affectation d'une règle IAM à un utilisateur dans l'interface utilisateur IBM Cloud](/docs/services/CloudLogAnalysis/security?topic=cloudloganalysis-grant_permissions#grant_permissions_ui_account) et [Octroi à un utilisateur des droits permettant d'afficher les journaux d'espace dans l'interface utilisateur IBM Cloud](/docs/services/CloudLogAnalysis/security?topic=cloudloganalysis-grant_permissions#grant_permissions_ui_space).
 
 2. Disposer d'une session de terminal depuis laquelle vous pouvez gérer le cluster Kubernetes et déployer des applications à partir de la ligne de commande. Les exemples dans ce tutoriel sont valables pour un système Ubuntu Linux.
 
 3. Installer les interfaces de ligne de commande pour pouvoir utiliser {{site.data.keyword.containershort}} et {{site.data.keyword.loganalysisshort}} sur votre système Ubuntu.
 
-    * Installer l'interface de ligne de commande {{site.data.keyword.Bluemix_notm}}. Installer l'interface de ligne de commande {{site.data.keyword.containershort}} pour pouvoir créer et gérer vos clusters Kubernetes dans {{site.data.keyword.containershort}}, et pour pouvoir déployer des applications conteneurisées dans votre cluster. Pour plus d'informations, voir [Installation de l'interface de ligne de commande {{site.data.keyword.Bluemix_notm}}.](/docs/cli/index.html#overview)
+    * Installer l'interface de ligne de commande {{site.data.keyword.Bluemix_notm}}. Installer l'interface de ligne de commande {{site.data.keyword.containershort}} pour pouvoir créer et gérer vos clusters Kubernetes dans {{site.data.keyword.containershort}}, et pour pouvoir déployer des applications conteneurisées dans votre cluster. Pour plus d'informations, voir [Installation de l'interface de ligne de commande {{site.data.keyword.Bluemix_notm}}.](/docs/cli?topic=cloud-cli-ibmcloud-cli#overview)
     
-    * Installer l'interface de ligne de commande {{site.data.keyword.loganalysisshort}}. Pour plus d'informations, voir [Configuration de l'interface de ligne de commande Log Analysis (plug-in IBM Cloud)](/docs/services/CloudLogAnalysis/how-to/manage-logs/config_log_collection_cli_cloud.html#config_log_collection_cli).
+    * Installer l'interface de ligne de commande {{site.data.keyword.loganalysisshort}}. Pour plus d'informations, voir [Configuration de l'interface de ligne de commande Log Analysis (plug-in IBM Cloud)](/docs/services/CloudLogAnalysis/how-to/manage-logs?topic=cloudloganalysis-config_log_collection_cli#config_log_collection_cli).
     
 4. Disposer d'un accès à un espace nommé **dev** sur votre compte dans la région Sud des Etats-Unis. 
 
@@ -81,13 +81,11 @@ Procédez comme suit :
 
 1. Créez un cluster Kubernetes standard.
 
-   Pour plus d'informations, voir [Création de clusters](/docs/containers/cs_tutorials.html#cs_cluster_tutorial).
+   Pour plus d'informations, voir [Création de clusters](/docs/containers?topic=containers-cs_cluster_tutorial#cs_cluster_tutorial).
 
 2. Configurez le contexte de cluster dans un terminal. Une fois le contexte défini, vous pouvez gérer le cluster Kubernetes et y déployer l'application.
 
-    Connectez-vous à la région, l'organisation et l'espace dans l'environnement {{site.data.keyword.Bluemix_notm}} associé au cluster que vous avez créé. Pour plus d'informations, voir
-[Comment se connecter
-à {{site.data.keyword.Bluemix_notm}} ?](/docs/services/CloudLogAnalysis/qa/cli_qa.html#login).
+    Connectez-vous à la région, l'organisation et l'espace dans l'environnement {{site.data.keyword.Bluemix_notm}} associé au cluster que vous avez créé. Pour plus d'informations, voir [Comment se connecter à {{site.data.keyword.Bluemix_notm}} ?](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#login)
 
 	Initialisez le plug-in du service
 {{site.data.keyword.containershort}}.
@@ -148,7 +146,7 @@ ae249c04-a3a9-4c29-a890-22d8da7bd1b2   container    *           ingest.logging.n
 ```
 {: screen}
 
-Pour afficher la liste des sources de journal pour lesquelles vous pouvez définir une configuration de journalisation, voir [Sources de journal](/docs/services/CloudLogAnalysis/containers/containers_kubernetes.html#log_sources).
+Pour afficher la liste des sources de journal pour lesquelles vous pouvez définir une configuration de journalisation, voir [Sources de journal](/docs/services/CloudLogAnalysis/containers?topic=cloudloganalysis-containers_kubernetes#log_sources).
 
 
 ### Configuration de votre cluster en vue du transfert des journaux d'erreur standard et de sortie standard au service {{site.data.keyword.loganalysisshort}}.
@@ -183,7 +181,7 @@ gestion des clusters, procédez comme suit :
     où 
 
     * *ClusterName* est le nom du cluster.
-    * *EndPoint* est l'URL du service de journalisation dans la région dans laquelle le service {{site.data.keyword.loganalysisshort}} a été mis à disposition. Pour la liste des noeuds finaux, voir [Noeuds finaux](/docs/services/CloudLogAnalysis/log_ingestion.html#log_ingestion_urls).
+    * *EndPoint* est l'URL du service de journalisation dans la région dans laquelle le service {{site.data.keyword.loganalysisshort}} a été mis à disposition. Pour la liste des noeuds finaux, voir [Noeuds finaux](/docs/services/CloudLogAnalysis?topic=cloudloganalysis-log_ingestion#log_ingestion_urls).
     * *OrgName* est le nom de l'organisation dans laquelle l'espace est disponible.
     * *SpaceName* est le nom de l'espace dans lequel le service {{site.data.keyword.loganalysisshort}} a été mis à disposition.
 
@@ -231,7 +229,7 @@ gestion des clusters, procédez comme suit :
     où 
 
     * *ClusterName* est le nom du cluster.
-    * *EndPoint* est l'URL du service de journalisation dans la région dans laquelle le service {{site.data.keyword.loganalysisshort}} a été mis à disposition. Pour la liste des noeuds finaux, voir [Noeuds finaux](/docs/services/CloudLogAnalysis/log_ingestion.html#log_ingestion_urls).
+    * *EndPoint* est l'URL du service de journalisation dans la région dans laquelle le service {{site.data.keyword.loganalysisshort}} a été mis à disposition. Pour la liste des noeuds finaux, voir [Noeuds finaux](/docs/services/CloudLogAnalysis?topic=cloudloganalysis-log_ingestion#log_ingestion_urls).
     * *OrgName* est le nom de l'organisation dans laquelle l'espace est disponible.
     * *SpaceName* est le nom de l'espace dans lequel le service {{site.data.keyword.loganalysisshort}} a été mis à disposition.
 
@@ -264,7 +262,7 @@ Pour accorder à un utilisateur des droits permettant d'utiliser le service {{si
 	
 3. Si l'utilisateur est membre du compte, sélectionnez le nom de l'utilisateur dans la liste ou cliquez sur **Gérer un utilisateur** dans le menu *Actions*.
 
-    Si l'utilisateur n'est pas membre du compte, voir [Invitation d'utilisateurs](/docs/iam/iamuserinv.html#iamuserinv).
+    Si l'utilisateur n'est pas membre du compte, voir [Invitation d'utilisateurs](/docs/iam?topic=iam-iamuserinv#iamuserinv).
 
 4. Sélectionnez **Accès Cloud Foundry**, puis sélectionnez l'organisation.
 
@@ -310,7 +308,7 @@ Procédez comme suit :
 	
     Sélectionnez l'ID de l'utilisateur et vérifiez que l'utilisateur possède le rôle *orgManager* pour l'organisation et les rôles *SpaceManager* et *Developer* pour l'espace.
 
-    Si l'utilisateur ne dispose pas des droits appropriés, accordez à l'utilisateur les droits suivants : le rôle *orgManager* pour l'organisation et les rôles *SpaceManager* et *Developer* pour l'espace. Pour plus d'informations, voir [Octroi à un utilisateur des droits permettant d'afficher les journaux d'espace dans l'interface utilisateur IBM Cloud](/docs/services/CloudLogAnalysis/security/grant_permissions.html#grant_permissions_ui_space).
+    Si l'utilisateur ne dispose pas des droits appropriés, accordez à l'utilisateur les droits suivants : le rôle *orgManager* pour l'organisation et les rôles *SpaceManager* et *Developer* pour l'espace. Pour plus d'informations, voir [Octroi à un utilisateur des droits permettant d'afficher les journaux d'espace dans l'interface utilisateur IBM Cloud](/docs/services/CloudLogAnalysis/security?topic=cloudloganalysis-grant_permissions#grant_permissions_ui_space).
     
 3. Vérifiez que l'utilisateur identifié comme propriétaire de clé {{site.data.keyword.containershort}} dispose d'une règle IAM pour le service {{site.data.keyword.loganalysisshort}} avec les droits *Administrateur*.
 
@@ -318,7 +316,7 @@ Procédez comme suit :
 	
     Sélectionnez l'ID de l'utilisateur et vérifiez que l'utilisateur dispose de l'ensemble de règles IAM. 
 
-    Si l'utilisateur ne dispose pas de la règle IAM, voir [Affectation d'une règle IAM à un utilisateur dans l'interface utilisateur IBM Cloud](/docs/services/CloudLogAnalysis/security/grant_permissions.html#grant_permissions_ui_account).
+    Si l'utilisateur ne dispose pas de la règle IAM, voir [Affectation d'une règle IAM à un utilisateur dans l'interface utilisateur IBM Cloud](/docs/services/CloudLogAnalysis/security?topic=cloudloganalysis-grant_permissions#grant_permissions_ui_account).
 
 4. Actualisez la configuration de journalisation. Exécutez la commande suivante :
     
@@ -335,7 +333,7 @@ Procédez comme suit :
 ## Etape 5 : Déploiement d'un exemple d'application dans le cluster Kubernetes pour générer un contenu dans la sortie standard
 {: #step53}
 
-Déployez et exécutez un exemple d'application dans le cluster Kubernetes. Effectuez les étapes du tutoriel suivant pour déployer l'exemple d'application : [Leçon 1 : Déploiement d'applications avec instance unique dans des clusters Kubernetes](/docs/containers/cs_tutorials_apps.html#cs_apps_tutorial_lesson1).
+Déployez et exécutez un exemple d'application dans le cluster Kubernetes. Effectuez les étapes du tutoriel suivant pour déployer l'exemple d'application : [Leçon 1 : Déploiement d'applications avec instance unique dans des clusters Kubernetes](/docs/containers?topic=containers-cs_apps_tutorial#cs_apps_tutorial_lesson1).
 
 L'application est une application Hello World Node.js :
 
@@ -366,7 +364,7 @@ Procédez comme suit :
 
 1. Lancez Kibana dans un navigateur. 
 
-    Pour plus d'informations sur le lancement de Kibana, voir [Accès à Kibana depuis un navigateur Web](/docs/services/CloudLogAnalysis/kibana/launch.html#launch_Kibana_from_browser).
+    Pour plus d'informations sur le lancement de Kibana, voir [Accès à Kibana depuis un navigateur Web](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-launch#launch_Kibana_from_browser).
 
     Afin d'analyser les données de journal pour un cluster, vous devez accéder à Kibana dans la région de cloud publique dans laquelle le cluster a été créé. 
     
@@ -379,7 +377,7 @@ Procédez comme suit :
 	
     Kibana s'ouvre.
     
-    **REMARQUE :** assurez-vous de lancer Kibana dans la région dans laquelle vous transférez vos journaux de cluster. Pour des informations sur les URL par région, voir [Noeuds finaux de journalisation](/docs/services/CloudLogAnalysis/kibana/analyzing_logs_Kibana.html#urls_kibana).
+    **REMARQUE :** assurez-vous de lancer Kibana dans la région dans laquelle vous transférez vos journaux de cluster. Pour des informations sur les URL par région, voir [Noeuds finaux de journalisation](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-analyzing_logs_Kibana#urls_kibana).
     	
 2. Pour afficher les données de journal qui sont disponibles dans le domaine d'espace, procédez comme suit :
 
@@ -449,7 +447,7 @@ Procédez comme suit :
               </tr>
         </table>
      
-Pour plus d'informations sur les autres zones de recherche pertinentes pour les clusters Kubernetes, voir [Recherche des journaux](/docs/services/CloudLogAnalysis/containers/containers_kubernetes.html#log_search).
+Pour plus d'informations sur les autres zones de recherche pertinentes pour les clusters Kubernetes, voir [Recherche des journaux](/docs/services/CloudLogAnalysis/containers?topic=cloudloganalysis-containers_kubernetes#log_search).
 
 
 ## Etape 7 : Filtrage des données par nom de cluster Kubernetes dans Kibana
@@ -488,9 +486,9 @@ La requête suivante est affichée :
 
 Remplacez le nom du cluster (*cluster1*) par le nom de cluster *mycluster* pour lequel afficher les données de journal.
         
-Si aucune donnée ne s'affiche, essayez de changer le filtre temporel. Pour plus d'informations, voir [Définition d'un filtre temporel](/docs/services/CloudLogAnalysis/kibana/filter_logs.html#set_time_filter).
+Si aucune donnée ne s'affiche, essayez de changer le filtre temporel. Pour plus d'informations, voir [Définition d'un filtre temporel](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-filter_logs#set_time_filter).
 
-Pour plus d'informations, voir [Filtrage des journaux dans Kibana](/docs/services/CloudLogAnalysis/kibana/filter_logs.html#filter_logs).
+Pour plus d'informations, voir [Filtrage des journaux dans Kibana](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-filter_logs#filter_logs).
 
 
 ## Documents de référence pour {{site.data.keyword.containershort_notm}}
@@ -498,10 +496,10 @@ Pour plus d'informations, voir [Filtrage des journaux dans Kibana](/docs/service
 
 Commandes de l'interface de ligne de commande :
 
-* [ibmcloud cs api-key-info](/docs/containers/cs_cli_reference.html#cs_api_key_info)
-* [ibmcloud cs logging-config-create](/docs/containers/cs_cli_reference.html#cs_logging_create)
-* [ibmcloud cs logging-config-get](/docs/containers/cs_cli_reference.html#cs_logging_get)
-* [ibmcloud cs logging-config-update](/docs/containers/cs_cli_reference.html#cs_logging_update)
-* [ibmcloud cs logging-config-rm](/docs/containers/cs_cli_reference.html#cs_logging_rm)
-* [ibmcloud cs logging-config-refresh](/docs/containers/cs_cli_reference.html#cs_logging_refresh)
+* [ibmcloud cs api-key-info](/docs/containers?topic=containers-cs_cli_reference#cs_api_key_info)
+* [ibmcloud cs logging-config-create](/docs/containers?topic=containers-cs_cli_reference#cs_logging_create)
+* [ibmcloud cs logging-config-get](/docs/containers?topic=containers-cs_cli_reference#cs_logging_get)
+* [ibmcloud cs logging-config-update](/docs/containers?topic=containers-cs_cli_reference#cs_logging_update)
+* [ibmcloud cs logging-config-rm](/docs/containers?topic=containers-cs_cli_reference#cs_logging_rm)
+* [ibmcloud cs logging-config-refresh](/docs/containers?topic=containers-cs_cli_reference#cs_logging_refresh)
 

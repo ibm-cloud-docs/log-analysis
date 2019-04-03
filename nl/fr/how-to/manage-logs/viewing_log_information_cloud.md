@@ -25,7 +25,7 @@ subcollection: cloudloganalysis
 # Affichage des informations sur le journal
 {: #viewing_log_status1}
 
-Utilisez la commande [ibmcloud logging log-show](/docs/services/CloudLogAnalysis/reference/log_analysis_cli_cloud.html#status) pour obtenir des informations sur les journaux qui sont collectés et stockés dans le composant Log Collection. Vous pouvez obtenir des informations sur la taille, le nombre d'enregistrements, les types de journaux, ainsi que sur la disponibilité des journaux pour l'analyse dans Kibana.
+Utilisez la commande [ibmcloud logging log-show](/docs/services/CloudLogAnalysis/reference?topic=cloudloganalysis-log_analysis_cli#status) pour obtenir des informations sur les journaux qui sont collectés et stockés dans le composant Log Collection. Vous pouvez obtenir des informations sur la taille, le nombre d'enregistrements, les types de journaux, ainsi que sur la disponibilité des journaux pour l'analyse dans Kibana.
 {:shortdesc}
 
 ## Obtention d'informations sur les journaux pour une période donnée
@@ -41,7 +41,7 @@ Procédez comme suit pour obtenir des informations sur les journaux qui sont sto
 
 1. Connectez-vous à une région, une organisation et un espace dans {{site.data.keyword.Bluemix_notm}}. 
 
-    Pour plus d'informations, voir [Comment se connecter à {{site.data.keyword.Bluemix_notm}} ?](/docs/services/CloudLogAnalysis/qa/cli_qa.html#login).
+    Pour plus d'informations, voir [Comment se connecter à {{site.data.keyword.Bluemix_notm}} ?](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#login)
     
 2. Exécutez la commande suivante :
 
@@ -77,7 +77,7 @@ Procédez comme suit pour obtenir des informations sur un type de journal pour u
 
 1. Connectez-vous à une région, une organisation et un espace dans {{site.data.keyword.Bluemix_notm}}. 
 
-    Pour plus d'informations, voir [Comment se connecter à {{site.data.keyword.Bluemix_notm}} ?](/docs/services/CloudLogAnalysis/qa/cli_qa.html#login).
+    Pour plus d'informations, voir [Comment se connecter à {{site.data.keyword.Bluemix_notm}} ?](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#login)
     
 2. Exécutez la commande suivante :
 
@@ -119,11 +119,11 @@ Procédez comme suit pour obtenir des informations de compte sur les journaux :
 
 1. Connectez-vous à une région, une organisation et un espace dans {{site.data.keyword.Bluemix_notm}}. 
 
-    Pour plus d'informations, voir [Comment se connecter à {{site.data.keyword.Bluemix_notm}} ?](/docs/services/CloudLogAnalysis/qa/cli_qa.html#login).
+    Pour plus d'informations, voir [Comment se connecter à {{site.data.keyword.Bluemix_notm}} ?](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#login)
 	
 2. Obtenez l'ID de compte.
 
-    Pour plus d'informations, voir [Comment obtenir l'identificateur global unique d'un compte ?](/docs/services/CloudLogAnalysis/qa/cli_qa.html#account_guid).
+    Pour plus d'informations, voir [Comment obtenir l'identificateur global unique d'un compte ?](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#account_guid).
     
 3. Exécutez la commande suivante :
 
@@ -166,11 +166,11 @@ Procédez comme suit pour obtenir des informations de compte sur les journaux :
 
 1. Connectez-vous à une région, une organisation et un espace dans {{site.data.keyword.Bluemix_notm}}. 
 
-    Pour plus d'informations, voir [Comment se connecter à {{site.data.keyword.Bluemix_notm}} ?](/docs/services/CloudLogAnalysis/qa/cli_qa.html#login).
+    Pour plus d'informations, voir [Comment se connecter à {{site.data.keyword.Bluemix_notm}} ?](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#login)
 	
 2. Obtenez l'ID de compte.
 
-    Pour plus d'informations, voir [Comment obtenir l'identificateur global unique d'une organisation ?](/docs/services/CloudLogAnalysis/qa/cli_qa.html#org_guid).
+    Pour plus d'informations, voir [Comment obtenir l'identificateur global unique d'une organisation ?](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#org_guid).
     
 3. Exécutez la commande suivante :
 

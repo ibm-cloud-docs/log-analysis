@@ -25,7 +25,7 @@ subcollection: cloudloganalysis
 # Eliminazione dei log
 {: #deleting_logs}
 
-Utilizza il comando [ibmcloud logging log-delete](/docs/services/CloudLogAnalysis/reference/log_analysis_cli_cloud.html#delete) per eliminare i log da Raccolta dei log. 
+Utilizza il comando [ibmcloud logging log-delete](/docs/services/CloudLogAnalysis/reference?topic=cloudloganalysis-log_analysis_cli#delete) per eliminare i log da Raccolta dei log. 
 {:shortdesc}
 
 * Puoi eliminare i log entro uno specifico intervallo di tempo.
@@ -40,7 +40,7 @@ Completa la seguente procedura per eliminare tutti i log archiviati in un domini
 
 1. Accedi a una regione, un'organizzazione e uno spazio in {{site.data.keyword.Bluemix_notm}}. 
 
-    Per ulteriori informazioni, vedi [Come accedo a {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/qa/cli_qa.html#login).
+    Per ulteriori informazioni, vedi [Come accedo a {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#login).
     
 2. Esegui questo comando per visualizzare i log disponibili in Raccolta dei log.
 
@@ -89,7 +89,7 @@ Completa la seguente procedura per eliminare i log in base al tipo di log archiv
 
 1. Accedi a una regione, un'organizzazione e uno spazio in {{site.data.keyword.Bluemix_notm}}. 
 
-    Per ulteriori informazioni, vedi [Come accedo a {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/qa/cli_qa.html#login).
+    Per ulteriori informazioni, vedi [Come accedo a {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#login).
     
 2. Esegui questo comando per visualizzare i log disponibili in Raccolta dei log.
 
@@ -140,11 +140,11 @@ Completa la seguente procedura:
 
 1. Accedi a una regione, un'organizzazione e uno spazio in {{site.data.keyword.Bluemix_notm}}. 
 
-    Per ulteriori informazioni, vedi [Come accedo a {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/qa/cli_qa.html#login).
+    Per ulteriori informazioni, vedi [Come accedo a {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#login).
 	
 2. Ottieni l'ID account.
 
-    Per ulteriori informazioni, vedi [Come ottengo il GUID di un account](/docs/services/CloudLogAnalysis/qa/cli_qa.html#account_guid).
+    Per ulteriori informazioni, vedi [Come ottengo il GUID di un account](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#account_guid).
     
 3. Esegui questo comando per visualizzare i log disponibili in Raccolta dei log a livello dell'account.
 

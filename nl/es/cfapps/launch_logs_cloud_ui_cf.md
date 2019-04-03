@@ -74,6 +74,6 @@ Para ver los registros de despliegue o de tiempo de ejecución de una app Cloud 
 
 De forma predeterminada, los registros que están disponibles para su análisis incluyen datos correspondientes a los últimos 15 minutos.
 
-**Consejo:** Para analizar datos correspondientes a un periodo personalizado, consulte [Análisis avanzado de registros con Kibana](/docs/services/CloudLogAnalysis/kibana/analyzing_logs_Kibana.html#analyzing_logs_Kibana). 
+**Consejo:** Para analizar datos correspondientes a un periodo personalizado, consulte [Análisis avanzado de registros con Kibana](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-analyzing_logs_Kibana#analyzing_logs_Kibana). 
 
 

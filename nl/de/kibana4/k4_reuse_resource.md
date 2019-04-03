@@ -56,9 +56,9 @@ Führen Sie die folgenden Schritte aus, um eine Suche zwischen Bereichen in {{si
 
 1. Starten Sie Kibana in dem Bereich, in dem die Suche verfügbar ist, die Sie kopieren möchten. 
 
-    * Kibana über die {{site.data.keyword.Bluemix_notm}}-Benutzerschnittstelle starten: Die JSON-Suchdatei, die Sie exportieren können, enthält die folgenden Felder: die *Bereichs-ID* und *Anwendungs-ID* für Cloud Foundry-Anwendungen (CF) oder die *Instanz-ID* für Container. Weitere Informationen finden Sie unter [Vom {{site.data.keyword.Bluemix_notm}}-Dashboard zum Kibana-Dashboard navigieren](/docs/services/CloudLogAnalysis/kibana4/k4_launch.html#launch_Kibana_from_bluemix).
+    * Kibana über die {{site.data.keyword.Bluemix_notm}}-Benutzerschnittstelle starten: Die JSON-Suchdatei, die Sie exportieren können, enthält die folgenden Felder: die *Bereichs-ID* und *Anwendungs-ID* für Cloud Foundry-Anwendungen (CF) oder die *Instanz-ID* für Container. Weitere Informationen finden Sie unter [Vom {{site.data.keyword.Bluemix_notm}}-Dashboard zum Kibana-Dashboard navigieren](/docs/services/CloudLogAnalysis/kibana4?topic=cloudloganalysis-k4_launch#launch_Kibana_from_bluemix).
     
-    * Kibana über einen Browser starten: Die JSON-Suchdatei, die Sie exportieren können, enthält das Feld für die *Bereichs-ID*. Weitere Informationen finden Sie unter [Zum Kibana-Dashboard über einen Browser navigieren](/docs/services/CloudLogAnalysis/kibana4/k4_launch.html#launch_Kibana_from_browser1).
+    * Kibana über einen Browser starten: Die JSON-Suchdatei, die Sie exportieren können, enthält das Feld für die *Bereichs-ID*. Weitere Informationen finden Sie unter [Zum Kibana-Dashboard über einen Browser navigieren](/docs/services/CloudLogAnalysis/kibana4?topic=cloudloganalysis-k4_launch#launch_Kibana_from_browser1).
 
 2. Wählen Sie auf der Seite *Settings* die Option **Objects** und anschließend die Registerkarte **Searches** aus. Suchen Sie dann eine Suche aus und kopieren Sie die folgenden Informationen:
 
@@ -94,7 +94,7 @@ Führen Sie die folgenden Schritte aus, um eine Suche zwischen Bereichen in {{si
     
 5. Starten Sie Kibana für den {{site.data.keyword.Bluemix_notm}}-Bereich, in dem Sie die Suche importieren möchten, und rufen Sie anschließend die folgenden Informationen ab:
 
-    Über die [Bluemix-Benutzerschnittstelle](/docs/services/CloudLogAnalysis/kibana4/k4_launch.html#launch_Kibana_from_bluemix):
+    Über die [Bluemix-Benutzerschnittstelle](/docs/services/CloudLogAnalysis/kibana4?topic=cloudloganalysis-k4_launch#launch_Kibana_from_bluemix):
     
     <table>
       <tbody>
@@ -196,9 +196,9 @@ Führen Sie die folgenden Schritte aus, um eine Visualisierung, mit der Sie Date
 
 1. Starten Sie Kibana für den Bereich, in dem die Visualisierung, die Sie kopieren möchten, verfügbar ist. 
 
-    * Kibana über die {{site.data.keyword.Bluemix_notm}}-Benutzerschnittstelle starten: Die JSON-Suchdatei, die Sie exportieren können, enthält die folgenden Felder: die *Bereichs-ID* und *Anwendungs-ID* für Cloud Foundry-Anwendungen (CF) oder die *Instanz-ID* für Container. Weitere Informationen finden Sie unter [Vom {{site.data.keyword.Bluemix_notm}}-Dashboard zum Kibana-Dashboard navigieren](/docs/services/CloudLogAnalysis/kibana4/k4_launch.html#launch_Kibana_from_bluemix).
+    * Kibana über die {{site.data.keyword.Bluemix_notm}}-Benutzerschnittstelle starten: Die JSON-Suchdatei, die Sie exportieren können, enthält die folgenden Felder: die *Bereichs-ID* und *Anwendungs-ID* für Cloud Foundry-Anwendungen (CF) oder die *Instanz-ID* für Container. Weitere Informationen finden Sie unter [Vom {{site.data.keyword.Bluemix_notm}}-Dashboard zum Kibana-Dashboard navigieren](/docs/services/CloudLogAnalysis/kibana4?topic=cloudloganalysis-k4_launch#launch_Kibana_from_bluemix).
     
-    * Kibana über einen Browser starten: Die JSON-Suchdatei, die Sie exportieren können, enthält das Feld für die *Bereichs-ID*. Weitere Informationen finden Sie unter [Zum Kibana-Dashboard über einen Browser navigieren](/docs/services/CloudLogAnalysis/kibana4/k4_launch.html#launch_Kibana_from_browser1).
+    * Kibana über einen Browser starten: Die JSON-Suchdatei, die Sie exportieren können, enthält das Feld für die *Bereichs-ID*. Weitere Informationen finden Sie unter [Zum Kibana-Dashboard über einen Browser navigieren](/docs/services/CloudLogAnalysis/kibana4?topic=cloudloganalysis-k4_launch#launch_Kibana_from_browser1).
     
 2. Kopieren Sie die Suche, die der Visualisierung zugeordnet ist, zwischen den Bereichen. Weitere Informationen finden Sie unter [Suche zwischen Bluemix-Bereichen kopieren](/docs/services/CloudLogAnalysis/kibana4/k4_reuse_resource.html#k4_reuse_search).
 

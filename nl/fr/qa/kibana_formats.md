@@ -54,7 +54,7 @@ Vous pouvez configurer Kibana pour afficher dans la page *Discover* les zones su
 | org_name | Nom de l'organisation {{site.data.keyword.Bluemix_notm}} dans laquelle votre application est constituée en préproduction. |
 | origin | Composant ayant généré l'événement. |
 | source_id | Composant qui génère les journaux. <br> La liste suivante décrit les journaux provenant de chaque composant : <br> * **API** : Réponses consignées vers les
-appels d'API qui requièrent une modification de l'état de votre application. <br> * **APP** : Réponses consignées depuis votre application. <br> * **CELL** : Réponses consignées depuis la cellule Diego et qui indique quand une application démarre, s'arrête ou tombe en panne. <br> * **LGR** : Réponses consignées depuis loggregator et qui indique des problèmes affectant le processus de journalisation. <br> * **RTR**:  Réponses consignées depuis le composant Router quand il achemine des demandes HTTP à votre application. <br> *
+appels d'API qui requièrent une modification de l'état de votre application. <br> * **APP** : Réponses consignées depuis votre application. <br> * **CELL** : Réponses consignées depuis la cellule Diego et qui indique quand une application démarre, s'arrête ou tombe en panne. <br> * **LGR** : Réponses consignées depuis loggregator et qui indique des problèmes affectant le processus de journalisation. <br> * **RTR**: Réponses consignées depuis le composant Router quand il achemine des demandes HTTP à votre application. <br> *
 **SSH** : Réponses consignées depuis la cellule Diego lorsqu'un utilisateur accède à un conteneur d'application à l'aide de la commande `cf ssh`. <br> *
 **STG** : Réponses consignées depuis la cellule Diego ou l'agent DEA (Droplet Execution Agent) quand votre application est constituée ou reconstituée en préproduction. |
 | space_name | Nom de l'espace {{site.data.keyword.Bluemix_notm}} dans lequel votre application est constituée en préproduction. |
@@ -95,7 +95,7 @@ Vous pouvez configurer Kibana pour afficher dans la page *Discover* les zones su
 {: caption="Tableau 3. Zones pour conteneurs Docker" caption-side="top"}
 
 
-## Format de journal Kibana pour Message Hub
+## Format de journal Kibana pour {{site.data.keyword.messagehub}}
 {: #kibana_log_format_messagehub}
 
 Vous pouvez configurer Kibana pour afficher dans la page *Discover* les zones suivantes pour chaque entrée de journal :
@@ -110,7 +110,7 @@ Vous pouvez configurer Kibana pour afficher dans la page *Discover* les zones su
 | \_type | Type de journal, par exemple, *syslog*. |
 | loglevel | Gravité de l'événement consigné. Par exemple, **Info**. |
 | module | Cette zone est définie sur **MessageHub**. |
-{: caption="Tableau 4. Zones pour événements Message Hub" caption-side="top"}
+{: caption="Tableau 4. Zones des événements {{site.data.keyword.messagehub}}" caption-side="top"}
 
 Exemple d'entrée de journal :
 

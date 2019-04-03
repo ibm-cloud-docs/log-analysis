@@ -37,13 +37,13 @@ subcollection: cloudloganalysis
 
 1. 安裝 {{site.data.keyword.Bluemix_notm}} CLI。
 
-   如需相關資訊，請參閱[下載並安裝 {{site.data.keyword.Bluemix_notm}} CLI](/docs/cli/index.html#overview)。
+   如需相關資訊，請參閱[下載並安裝 {{site.data.keyword.Bluemix_notm}} CLI](/docs/cli?topic=cloud-cli-ibmcloud-cli#overview)。
    
    如果已安裝 CLI，請繼續進行下一步。
     
 2. 登入 {{site.data.keyword.Bluemix_notm}} 中的地區、組織及空間。 
 
-    如需相關資訊，請參閱[如何登入 {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/qa/cli_qa.html#login)。
+    如需相關資訊，請參閱[如何登入 {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#login)。
 	
 3. 執行下列指令：
 
@@ -62,13 +62,13 @@ subcollection: cloudloganalysis
 
 1. 安裝 {{site.data.keyword.Bluemix_notm}} CLI。
 
-   如需相關資訊，請參閱[下載並安裝 {{site.data.keyword.Bluemix_notm}} CLI](/docs/cli/index.html#overview)。
+   如需相關資訊，請參閱[下載並安裝 {{site.data.keyword.Bluemix_notm}} CLI](/docs/cli?topic=cloud-cli-ibmcloud-cli#overview)。
    
    如果已安裝 CLI，請繼續進行下一步。
     
 2. 登入 {{site.data.keyword.Bluemix_notm}} 中的地區、組織及空間。 
 
-    如需相關資訊，請參閱[如何登入 {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/qa/cli_qa.html#login)。
+    如需相關資訊，請參閱[如何登入 {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#login)。
 	
 3. 在 {{site.data.keyword.loganalysisshort}} 服務佈建所在的空間中建立服務金鑰。執行下列指令：
 
@@ -154,15 +154,15 @@ subcollection: cloudloganalysis
 
 1. 安裝 {{site.data.keyword.Bluemix_notm}} CLI。
 
-   如需相關資訊，請參閱[下載並安裝 {{site.data.keyword.Bluemix_notm}} CLI](/docs/cli/index.html#overview)。
+   如需相關資訊，請參閱[下載並安裝 {{site.data.keyword.Bluemix_notm}} CLI](/docs/cli?topic=cloud-cli-ibmcloud-cli#overview)。
    
    如果已安裝 CLI，請繼續進行下一步。
     
 2. 登入 {{site.data.keyword.Bluemix_notm}} 中的地區、組織及空間。 
 
-    如需相關資訊，請參閱[如何登入 {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/qa/cli_qa.html#login)。
+    如需相關資訊，請參閱[如何登入 {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#login)。
 	
-3. 取得 [UAA 記號](/docs/services/CloudLogAnalysis/security/auth_uaa.html#uaa_cli)。
+3. 取得 [UAA 記號](/docs/services/CloudLogAnalysis/security?topic=cloudloganalysis-auth_uaa#uaa_cli)。
 
     例如，執行 `ibmcloud cf oauth-token` 指令來取得 UAA 記號。
 
@@ -175,7 +175,7 @@ subcollection: cloudloganalysis
 
 4. 取得空間的 GUID。
 
-   如需相關資訊，請參閱[如何取得空間的 GUID](/docs/services/CloudLogAnalysis/qa/cli_qa.html#space_guid2)。  
+   如需相關資訊，請參閱[如何取得空間的 GUID](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#space_guid2)。  
 	
 5. 匯出下列變數：TOKEN 及 SPACEID。
 
@@ -201,7 +201,7 @@ subcollection: cloudloganalysis
 	其中
 	* SPACEID 是服務執行所在空間的 GUID。
 	* TOKEN 是您在前一個步驟中取得的 UAA 記號，但沒有 Bearer 字首。
-	* LOGGING_ENDPOINT 是組織及空間所在 {{site.data.keyword.Bluemix_notm}} 地區的 {{site.data.keyword.loganalysisshort}} 端點。每個地區的 LOGGING_ENDPOINT 都不同。若要查看不同端點的 URL，請參閱[端點](/docs/services/CloudLogAnalysis/manage_logs.html#endpoints)。
+	* LOGGING_ENDPOINT 是組織及空間所在 {{site.data.keyword.Bluemix_notm}} 地區的 {{site.data.keyword.loganalysisshort}} 端點。每個地區的 LOGGING_ENDPOINT 都不同。若要查看不同端點的 URL，請參閱[端點](/docs/services/CloudLogAnalysis?topic=cloudloganalysis-manage_logs#endpoints)。
 	
     此指令會傳回必要的記載記號，以用來將日誌傳送至該空間。
 	

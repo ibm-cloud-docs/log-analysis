@@ -34,7 +34,7 @@ Será possível ver estas mensagens de erro ao usar o serviço {{site.data.keywo
 
 **Descrição da mensagem**
 
-Você atingiu a cota diária alocada para o espaço do Bluemix {GUID do espaço} para a instância do {{site.data.keyword.loganalysisfull}} {GUID da instância}. Sua dotação diária atual é 500 MB para armazenamento de Procura de log, que ficará retida no armazenamento de Procura de log por um período de 3 dias, durante o qual poderá ser procurada no Kibana. Para fazer upgrade de seu plano para que seja possível armazenar mais dados no armazenamento de Procura de log por dia e também reter todos os logs no armazenamento de Coleção de logs, faça upgrade do plano de serviço {{site.data.keyword.loganalysisshort}} para esse espaço. Para obter mais informações sobre planos de serviços e como fazer upgrade do plano, veja [Planos](/docs/services/CloudLogAnalysis/log_analysis_ov.html#plans).
+Você atingiu a cota diária alocada para o espaço do Bluemix {GUID do espaço} para a instância do {{site.data.keyword.loganalysisfull}} {GUID da instância}. Sua dotação diária atual é 500 MB para armazenamento de Procura de log, que ficará retida no armazenamento de Procura de log por um período de 3 dias, durante o qual poderá ser procurada no Kibana. Para fazer upgrade de seu plano para que seja possível armazenar mais dados no armazenamento de Procura de log por dia e também reter todos os logs no armazenamento de Coleção de logs, faça upgrade do plano de serviço {{site.data.keyword.loganalysisshort}} para esse espaço. Para obter mais informações sobre planos de serviços e como fazer upgrade do plano, veja [Planos](/docs/services/CloudLogAnalysis?topic=cloudloganalysis-log_analysis_ov#plans).
 
 
 **Explicação da mensagem** 
@@ -44,7 +44,7 @@ Você poderá receber uma mensagem com o ID *BXNLG020001W* ao atingir a cota de 
 **Recuperação
 **
 
-Para fazer upgrade de seu plano para que seja possível armazenar mais dados no armazenamento de Procura de log por dia e também reter todos os logs no armazenamento de Coleção de logs, faça upgrade do plano de serviço {{site.data.keyword.loganalysisshort}} para esse espaço. Para obter mais informações sobre planos de serviços e como fazer upgrade do plano, veja [Planos](/docs/services/CloudLogAnalysis/log_analysis_ov.html#plans).
+Para fazer upgrade de seu plano para que seja possível armazenar mais dados no armazenamento de Procura de log por dia e também reter todos os logs no armazenamento de Coleção de logs, faça upgrade do plano de serviço {{site.data.keyword.loganalysisshort}} para esse espaço. Para obter mais informações sobre planos de serviços e como fazer upgrade do plano, veja [Planos](/docs/services/CloudLogAnalysis?topic=cloudloganalysis-log_analysis_ov#plans).
 
 
 ## BXNLG020002W 
@@ -53,7 +53,7 @@ Para fazer upgrade de seu plano para que seja possível armazenar mais dados no 
 
 **Descrição da mensagem**
 
-Você atingiu a cota diária alocada para o espaço do Bluemix {GUID do espaço} para a instância do {{site.data.keyword.loganalysisfull}} {GUID da instância}.  Sua dotação diária atual é XXX para armazenamento de Procura de log, que ficará retida por um período de 3 dias, durante o qual poderá ser procurada no Kibana. Isso não afeta a política de retenção de log no armazenamento de Coleção de logs. Para fazer upgrade de seu plano para que seja possível armazenar mais dados no armazenamento de Procura de log por dia, faça upgrade do plano de serviço {{site.data.keyword.loganalysisshort}} para esse espaço. Para obter mais informações sobre planos de serviços e como fazer upgrade do plano, veja [Planos](/docs/services/CloudLogAnalysis/log_analysis_ov.html#plans).
+Você atingiu a cota diária alocada para o espaço do Bluemix {GUID do espaço} para a instância do {{site.data.keyword.loganalysisfull}} {GUID da instância}.  Sua dotação diária atual é XXX para armazenamento de Procura de log, que ficará retida por um período de 3 dias, durante o qual poderá ser procurada no Kibana. Isso não afeta a política de retenção de log no armazenamento de Coleção de logs. Para fazer upgrade de seu plano para que seja possível armazenar mais dados no armazenamento de Procura de log por dia, faça upgrade do plano de serviço {{site.data.keyword.loganalysisshort}} para esse espaço. Para obter mais informações sobre planos de serviços e como fazer upgrade do plano, veja [Planos](/docs/services/CloudLogAnalysis?topic=cloudloganalysis-log_analysis_ov#plans).
 
 XXX representa o tamanho dos dados que podem ser procurados para seu plano atual.
 
@@ -64,7 +64,7 @@ Você atingiu a cota diária alocada para o espaço {GUID do espaço} para a ins
 **Recuperação
 **
 
-Para fazer upgrade de seu plano para que seja possível armazenar mais dados no armazenamento de Procura de log por dia, faça upgrade do plano de serviço {{site.data.keyword.loganalysisshort}} para esse espaço. Para obter mais informações sobre planos de serviços e como fazer upgrade do plano, veja [Planos](/docs/services/CloudLogAnalysis/log_analysis_ov.html#plans).
+Para fazer upgrade de seu plano para que seja possível armazenar mais dados no armazenamento de Procura de log por dia, faça upgrade do plano de serviço {{site.data.keyword.loganalysisshort}} para esse espaço. Para obter mais informações sobre planos de serviços e como fazer upgrade do plano, veja [Planos](/docs/services/CloudLogAnalysis?topic=cloudloganalysis-log_analysis_ov#plans).
 
 
 

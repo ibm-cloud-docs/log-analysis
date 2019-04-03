@@ -34,7 +34,7 @@ Siga los pasos siguientes para enviar datos de registro a un espacio de {{site.d
 {: #prereqs1}
 
 * Un ID de {{site.data.keyword.Bluemix_notm}} para iniciar una sesión en {{site.data.keyword.Bluemix_notm}}.
-* Un ID de usuario que tenga permisos para trabajar en un espacio con el servicio {{site.data.keyword.loganalysisshort}}. Para obtener más información, consulte [Seguridad](/docs/services/CloudLogAnalysis/security_ov.html#security_ov).
+* Un ID de usuario que tenga permisos para trabajar en un espacio con el servicio {{site.data.keyword.loganalysisshort}}. Para obtener más información, consulte [Seguridad](/docs/services/CloudLogAnalysis?topic=cloudloganalysis-security_ov#security_ov).
 * La CLI de {{site.data.keyword.loganalysisshort}} instalada en el entorno local.
 * El servicio {{site.data.keyword.loganalysisshort}} suministrado en un espacio de la cuenta con un plan que permita la ingestión de registros.
 
@@ -46,7 +46,7 @@ Siga los pasos siguientes desde una sesión de terminal donde esté instalada la
 
 1. Inicie la sesión en una región, organización y espacio en {{site.data.keyword.Bluemix_notm}}. 
 
-    Para obtener más información, consulte [Cómo iniciar la sesión en {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/qa/cli_qa.html#login).
+    Para obtener más información, consulte [Cómo iniciar la sesión en {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#login).
     
 2. Ejecute el mandato `ibmcloud logging token-get`. 
 
@@ -77,7 +77,7 @@ Siga los pasos siguientes desde una sesión de terminal donde esté instalada la
 
 Siga los pasos siguientes para configurar mt-logstash-forwarder en el entorno en el que tiene intención de enviar registros en el servicio {{site.data.keyword.loganalysisshort}}:
 
-1.	Conéctese como usuario root. 
+1.	Inicie sesión como usuario root. 
 
     ```
     sudo -s
@@ -206,7 +206,7 @@ Siga los pasos siguientes para configurar mt-logstash-forwarder en el entorno en
           </tr>
           <tr>
             <td>LSF_TARGET</td>
-            <td>URL de destino. Para obtener la lista de los URL de ingestión, consulte [URL de ingestión](/docs/services/CloudLogAnalysis/log_ingestion.html#log_ingestion_urls). Por ejemplo, establezca el valor en **ingest.logging.ng.bluemix.net:9091** para enviar los registros a la región EE.UU. sur. </td>
+            <td>URL de destino. Para obtener la lista de los URL de ingestión, consulte [URL de ingestión](/docs/services/CloudLogAnalysis?topic=cloudloganalysis-log_ingestion#log_ingestion_urls). Por ejemplo, establezca el valor en **ingest.logging.ng.bluemix.net:9091** para enviar los registros a la región EE.UU. sur. </td>
           </tr>
           <tr>
             <td>LSF_TENANT_ID</td>

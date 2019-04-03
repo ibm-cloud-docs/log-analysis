@@ -43,7 +43,7 @@ Conclua as etapas a seguir:
     ```
     {: codeblock}
 
-    Para obter mais informações, veja [Como efetuar login no {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/qa/cli_qa.html#login).
+    Para obter mais informações, veja [Como efetuar login no {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#login).
 
 2. Execute o comando da CLI `ibmcloud logging quota-usage-show`. 
 
@@ -98,7 +98,7 @@ Conclua as etapas a seguir:
     ```
     {: codeblock}
 
-    Para obter mais informações, veja [Como efetuar login no {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/qa/cli_qa.html#login).
+    Para obter mais informações, veja [Como efetuar login no {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#login).
 
 2. Execute o comando da CLI `ibmcloud logging quota-usage-show` com o parâmetro `-s`. 
 
@@ -131,7 +131,7 @@ Conclua as etapas a seguir:
 
 1. Efetue login na {{site.data.keyword.Bluemix_notm}}. 
 
-    Para obter mais informações, veja [Como efetuar login no {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/qa/cli_qa.html#login).
+    Para obter mais informações, veja [Como efetuar login no {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#login).
 
 2. Obtenha o ID da conta. Execute o comando a seguir:
 
@@ -151,7 +151,7 @@ Conclua as etapas a seguir:
 
 3. Obtenha o token UAA. 
 
-    Para obter mais informações, veja [Obtendo o token do UAA](/docs/services/CloudLogAnalysis/security/auth_uaa.html#auth_uaa).
+    Para obter mais informações, veja [Obtendo o token do UAA](/docs/services/CloudLogAnalysis/security?topic=cloudloganalysis-auth_uaa#auth_uaa).
 
     Exporte o token do UAA para uma variável shell. Não inclua `Bearer`. Por exemplo:
 	
@@ -167,7 +167,7 @@ Conclua as etapas a seguir:
 	```
 	{: codeblock}
 	
-	em que *ENDPOINT* é diferente por região. Para obter uma lista de terminais por região, veja [Terminais de criação de log](/docs/services/CloudLogAnalysis/manage_logs.html#endpoints).
+	em que *ENDPOINT* é diferente por região. Para obter uma lista de terminais por região, veja [Terminais de criação de log](/docs/services/CloudLogAnalysis?topic=cloudloganalysis-manage_logs#endpoints).
 	
 	Por exemplo, execute o comando cURL para obter a cota para a conta na região Sul dos EUA:
 	
@@ -202,11 +202,11 @@ Conclua as etapas a seguir:
 
 1. Efetue login na {{site.data.keyword.Bluemix_notm}}. 
 
-    Para obter mais informações, veja [Como efetuar login no {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/qa/cli_qa.html#login).
+    Para obter mais informações, veja [Como efetuar login no {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#login).
 
 2. Obtenha o ID do espaço.
 
-    Para obter mais informações, veja [Como obter o GUID de um espaço](/docs/services/CloudLogAnalysis/qa/cli_qa.html#space_guid).
+    Para obter mais informações, veja [Como obter o GUID de um espaço](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#space_guid).
 	
 	Exporte o ID do espaço para uma variável shell. Por exemplo:
 	
@@ -217,7 +217,7 @@ Conclua as etapas a seguir:
 
 3. Obtenha o token UAA. 
 
-    Para obter mais informações, veja [Obtendo o token do UAA](/docs/services/CloudLogAnalysis/security/auth_uaa.html#auth_uaa).
+    Para obter mais informações, veja [Obtendo o token do UAA](/docs/services/CloudLogAnalysis/security?topic=cloudloganalysis-auth_uaa#auth_uaa).
 
     Exporte o token do UAA para uma variável shell. Não inclua `Bearer`. Por exemplo:
 	
@@ -233,7 +233,7 @@ Conclua as etapas a seguir:
 	```
 	{: codeblock}
 	
-	em que *ENDPOINT* é diferente por região. Para obter uma lista de terminais por região, veja [Terminais de criação de log](/docs/services/CloudLogAnalysis/manage_logs.html#endpoints).
+	em que *ENDPOINT* é diferente por região. Para obter uma lista de terminais por região, veja [Terminais de criação de log](/docs/services/CloudLogAnalysis?topic=cloudloganalysis-manage_logs#endpoints).
 
     Por exemplo, execute o comando cURL a seguir para obter a cota e uso de um domínio de espaço na região Sul dos EUA:
 	

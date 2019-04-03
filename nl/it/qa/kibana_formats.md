@@ -92,7 +92,7 @@ Puoi configurare Kibana in modo che visualizzi nella pagina *Ricerca* i seguenti
 {: caption="Tabella 3. Campi per i contenitori Docker" caption-side="top"}
 
 
-## Formato dei log Kibana per Message Hub
+## Formato dei log Kibana per {{site.data.keyword.messagehub}}
 {: #kibana_log_format_messagehub}
 
 Puoi configurare Kibana in modo che visualizzi nella pagina *Ricerca* i seguenti campi per ogni voce di log:
@@ -107,7 +107,7 @@ Puoi configurare Kibana in modo che visualizzi nella pagina *Ricerca* i seguenti
 | \_type | Il tipo di log, ad esempio *syslog*. |
 | loglevel | La severità dell'evento registrato, ad esempio, **Info**. |
 | module | Questo campo è impostato su **MessageHub**. |
-{: caption="Tabella 4. Campi per gli eventi Message Hub" caption-side="top"}
+{: caption="Tabella 4. Campi per gli eventi {{site.data.keyword.messagehub}} " caption-side="top"}
 
 Esempio di una voce di log:
 

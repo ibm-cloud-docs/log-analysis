@@ -46,13 +46,13 @@ Le tableau suivant répertorie différentes tâches que vous pouvez effectuer de
 
 | Tâche | Informations sur la tâche |
 |------|------------------|
-| [Ajouter une visualisation](/docs/services/CloudLogAnalysis/kibana/analize_logs_dashboard.html#add_visualization) | Vous pouvez ajouter une visualisation ou une recherche existante à un tableau de bord.|
-| [Créer un nouveau tableau de bord](/docs/services/CloudLogAnalysis/kibana/analize_logs_dashboard.html#new) | Vous pouvez créer plusieurs tableaux de bord. Chaque tableau de bord peut être conçu en vue d'inclure des recherches et des visualisations différentes, ainsi qu'un sous-ensemble distinct de données de journal.  |
-| [Supprimer un tableau de bord](/docs/services/CloudLogAnalysis/kibana/analize_logs_dashboard.html#delete) | Vous pouvez supprimer les tableaux de bord superflus. |
-| [Exporter un tableau de bord](/docs/services/CloudLogAnalysis/kibana/analize_logs_dashboard.html#export) | Vous pouvez exporter un tableau de bord sous forme de fichier JSON. |
-| [Importer un tableau de bord](/docs/services/CloudLogAnalysis/kibana/analize_logs_dashboard.html#import) | Vous pouvez importer un tableau de bord depuis un fichier JSON. |
-| [Charger un tableau de bord](/docs/services/CloudLogAnalysis/kibana/analize_logs_dashboard.html#reload3) | Vous pouvez charger un tableau de bord pour mettre à jour les données, les modifier, ou les analyser. |
-| [Sauvegarder un tableau de bord](/docs/services/CloudLogAnalysis/kibana/analize_logs_dashboard.html#save) | Vous pouvez sauvegarder un tableau de bord pour le réutiliser plus tard. |
+| [Ajouter une visualisation](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-analize_logs_dashboard#add_visualization) | Vous pouvez ajouter une visualisation ou une recherche existante à un tableau de bord.|
+| [Créer un nouveau tableau de bord](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-analize_logs_dashboard#new) | Vous pouvez créer plusieurs tableaux de bord. Chaque tableau de bord peut être conçu en vue d'inclure des recherches et des visualisations différentes, ainsi qu'un sous-ensemble distinct de données de journal.  |
+| [Supprimer un tableau de bord](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-analize_logs_dashboard#delete) | Vous pouvez supprimer les tableaux de bord superflus. |
+| [Exporter un tableau de bord](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-analize_logs_dashboard#export) | Vous pouvez exporter un tableau de bord sous forme de fichier JSON. |
+| [Importer un tableau de bord](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-analize_logs_dashboard#import) | Vous pouvez importer un tableau de bord depuis un fichier JSON. |
+| [Charger un tableau de bord](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-analize_logs_dashboard#reload3) | Vous pouvez charger un tableau de bord pour mettre à jour les données, les modifier, ou les analyser. |
+| [Sauvegarder un tableau de bord](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-analize_logs_dashboard#save) | Vous pouvez sauvegarder un tableau de bord pour le réutiliser plus tard. |
 {: caption="Tableau 2. Tâches de gestion de tableaux de bord" caption-side="top"}
 
 Pour plus d'informations sur Kibana, reportez-vous au manuel [Kibana User Guide ![Icône de lien externe](../../../icons/launch-glyph.svg "Icône de lien externe")](https://www.elastic.co/guide/en/kibana/5.1/index.html){: new_window}.
@@ -81,13 +81,13 @@ Pour créer un tableau de bord, procédez comme suit :
 
 1. Dans la barre d'outils de la page Dashboard, cliquez sur **Add**. 
 
-2. Ajoutez une ou plusieurs recherches et visualisations. Pour plus d'informations, voir [Ajout d'une nouvelle recherche ou visualisation](/docs/services/CloudLogAnalysis/kibana/analize_logs_dashboard.html#add_visualization).
+2. Ajoutez une ou plusieurs recherches et visualisations. Pour plus d'informations, voir [Ajout d'une nouvelle recherche ou visualisation](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-analize_logs_dashboard#add_visualization).
 
     Lorsque vous ajoutez une recherche ou une visualisation, un panneau est ajouté au tableau de bord.
 
 3. Faites glisser un panneau et déposez-le à l'emplacement de votre choix dans le tableau de bord.
  
-4. Sauvegardez le tableau de bord pour une réutilisation ultérieure. Pour plus d'informations, voir [Sauvegarde d'un tableau de bord Kibana](/docs/services/CloudLogAnalysis/kibana/analize_logs_dashboard.html#save).
+4. Sauvegardez le tableau de bord pour une réutilisation ultérieure. Pour plus d'informations, voir [Sauvegarde d'un tableau de bord Kibana](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-analize_logs_dashboard#save).
 
 
 ## Suppression d'un tableau de bord Kibana

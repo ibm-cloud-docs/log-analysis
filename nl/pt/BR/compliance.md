@@ -66,16 +66,16 @@ Considere as seguintes informações:
 
 * Os logs armazenados em Coleção de logs são excluídos após um número de dias em que você configurar uma política de retenção ou quando excluí-los manualmente. 
 
-    É possível configurar uma política de retenção de log para definir o número de dias que você deseja manter os logs na Coleção de logs. Para obter mais informações, veja [Visualizando e configurando a política de retenção de log usando o plug-in do {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/how-to/manage-logs/configuring_retention_policy_cloud.html#configuring_retention_policy).
+    É possível configurar uma política de retenção de log para definir o número de dias que você deseja manter os logs na Coleção de logs. Para obter mais informações, veja [Visualizando e configurando a política de retenção de log usando o plug-in do {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/how-to/manage-logs?topic=cloudloganalysis-configuring_retention_policy#configuring_retention_policy).
 
-    É possível usar a [API de Coleção de logs](https://console.bluemix.net/apidocs/948-ibm-cloud-log-collection-api?&language=node&env_id=ibm%3Ayp%3Aus-south#introduction){: new_window} ou a [CLI de Coleção de logs](/docs/services/CloudLogAnalysis/reference/log_analysis_cli_cloud.html#log_analysis_cli){: new_window} para excluir logs manualmente da Coleção de logs. 
+    É possível usar a [API de Coleção de logs](https://console.bluemix.net/apidocs/948-ibm-cloud-log-collection-api?&language=node&env_id=ibm%3Ayp%3Aus-south#introduction){: new_window} ou a [CLI de Coleção de logs](/docs/services/CloudLogAnalysis/reference?topic=cloudloganalysis-log_analysis_cli#log_analysis_cli){: new_window} para excluir logs manualmente da Coleção de logs. 
 
-    É possível usar a CLI para excluir os logs manualmente da Coleção de logs. Para obter mais informações, veja [ibmcloud logging log-delete usando o plug-in do {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/how-to/manage-logs/deleting_logs_cloud.html#deleting_logs).
+    É possível usar a CLI para excluir os logs manualmente da Coleção de logs. Para obter mais informações, veja [ibmcloud logging log-delete usando o plug-in do {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/how-to/manage-logs?topic=cloudloganalysis-deleting_logs#deleting_logs).
 
 
 Se você mudar de um plano pago para o plano padrão ou lite, os logs na Coleção de logs serão excluídos em aproximadamente um dia.
 
-A qualquer momento, será possível abrir um chamado de suporte e solicitar que todos os dados sejam excluídos da Procura de log e da Coleção de logs. Para obter informações sobre como abrir um chamado de suporte IBM, veja [Entrando em contato com o suporte](/docs/get-support/howtogetsupport.html#getting-customer-support).
+A qualquer momento, será possível abrir um chamado de suporte e solicitar que todos os dados sejam excluídos da Procura de log e da Coleção de logs. Para obter informações sobre como abrir um chamado de suporte IBM, veja [Entrando em contato com o suporte](/docs/get-support?topic=get-support-getting-customer-support#getting-customer-support).
 
 
 

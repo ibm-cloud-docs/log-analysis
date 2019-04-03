@@ -62,15 +62,15 @@ Vous pouvez lancer Kibana en procédant de l'une des manières suivantes :
 
     Vous pouvez lancer Kibana pour que les données affichées agrègent les journaux des services dans un espace spécifique.
 	
-	Pour plus d'informations, voir [Accès à Kibana à partir du tableau de bord du service Log Analysis. ](/docs/services/CloudLogAnalysis/kibana/launch.html#launch_Kibana_from_log_analysis)
+	Pour plus d'informations, voir [Accès à Kibana à partir du tableau de bord du service Log Analysis. ](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-launch#launch_Kibana_from_log_analysis)
 
 * Depuis {{site.data.keyword.Bluemix_notm}}
 
     Vous pouvez ouvrir vos journaux d'application CF spécifiques dans Kibana,
-dans le contexte de cette application spécifique. Pour plus d'informations, voir [Accès à Kibana depuis le tableau de bord ou une application CF](/docs/services/CloudLogAnalysis/kibana/launch.html#launch_Kibana_from_cf_app).
+dans le contexte de cette application spécifique. Pour plus d'informations, voir [Accès à Kibana depuis le tableau de bord ou une application CF](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-launch#launch_Kibana_from_cf_app).
     
     Vous pouvez ouvrir vos journaux de conteneur Docker spécifiques dans Kibana,
-dans le contexte de ce conteneur spécifique. Cette fonction s'applique uniquement aux conteneurs qui sont déployés dans l'infrastructure gérée par {{site.data.keyword.Bluemix_notm}}. Pour plus d'informations, voir [Accès à Kibana depuis le tableau de bord d'un conteneur](/docs/services/CloudLogAnalysis/kibana/launch.html#launch_Kibana_for_containers).
+dans le contexte de ce conteneur spécifique. Cette fonction s'applique uniquement aux conteneurs qui sont déployés dans l'infrastructure gérée par {{site.data.keyword.Bluemix_notm}}. Pour plus d'informations, voir [Accès à Kibana depuis le tableau de bord d'un conteneur](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-launch#launch_Kibana_for_containers).
     
     Pour les applications CF, la requête utilisée pour filtrer les données disponibles pour l'analyse dans Kibana extrait les entrées de journal de l'application Cloud Foundry. Les informations de journal affichées par défaut par Kibana ne concernent qu'une application Cloud Foundry unique et toutes ses instances. 
     
@@ -84,16 +84,16 @@ dans le contexte de ce conteneur spécifique. Cette fonction s'applique uniqueme
     
     La requête utilisée pour filtrer les données affichées dans le tableau de bord extrait des entrées de journal pour un espace dans l'organisation {{site.data.keyword.Bluemix_notm}}. Les informations de journal affichées par Kibana incluent des enregistrements sur toutes les ressources déployées dans l'espace de l'organisation {{site.data.keyword.Bluemix_notm}} à laquelle vous êtes connecté. 
     
-    Pour plus d'informations, voir [Accès au tableau de bord Kibana depuis un navigateur Web](/docs/services/CloudLogAnalysis/kibana/launch.html#launch_Kibana_from_browser).
+    Pour plus d'informations, voir [Accès au tableau de bord Kibana depuis un navigateur Web](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-launch#launch_Kibana_from_browser).
     
     
 
 ## Analyse des données de manière interactive
 {: #analyze_discover}
 
-Dans la page Discover, vous pouvez définir de nouvelles requêtes de recherche et appliquer des filtres par requête. Les données de journal sont affichées via un tableau et un histogramme. Vous pouvez utiliser ces visualisations pour analyser les données de manière interactive. Pour plus d'informations, voir [Analyses des données en mode interactif dans Kibana](/docs/services/CloudLogAnalysis/kibana/analize_logs_interactively.html#analize_logs_interactively).
+Dans la page Discover, vous pouvez définir de nouvelles requêtes de recherche et appliquer des filtres par requête. Les données de journal sont affichées via un tableau et un histogramme. Vous pouvez utiliser ces visualisations pour analyser les données de manière interactive. Pour plus d'informations, voir [Analyses des données en mode interactif dans Kibana](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-analize_logs_interactively#analize_logs_interactively).
 
-Vous pouvez configurer des filtres depuis les zones du journal, par exemple message_type (type de message) et instance_ID (ID d'instance), et définir une période de temps. Vous pouvez activer ou désactiver dynamiquement ces filtres. Le tableau et l'histogramme afficheront les entrées  de journal correspondant à la requête et aux critères de filtrage activés. Pour plus d'informations, voir [Filtrage des journaux dans Kibana](/docs/services/CloudLogAnalysis/kibana/filter_logs.html#filter_logs).
+Vous pouvez configurer des filtres depuis les zones du journal, par exemple message_type (type de message) et instance_ID (ID d'instance), et définir une période de temps. Vous pouvez activer ou désactiver dynamiquement ces filtres. Le tableau et l'histogramme afficheront les entrées  de journal correspondant à la requête et aux critères de filtrage activés. Pour plus d'informations, voir [Filtrage des journaux dans Kibana](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-filter_logs#filter_logs).
 
 ## Analyse des données via une visualisation
 {: #analyze_visualize}
@@ -103,16 +103,16 @@ visualisation.
 
 Pour analyser les données, vous pouvez créer des visualisations basées sur une recherche existante ou une nouvelle recherche. Kibana inclut différents types de visualisations (comme un tableau, des tendances et un histogramme) que vous pouvez utiliser pour analyser les informations. L'objectif de chaque visualisation varie. Certaines sont organisées en lignes qui affichent les résultats d'une ou de plusieurs requêtes. D'autres affichent des documents ou des informations personnalisées. Les données dans une visualisation peuvent être fixes ou changer si une requête de recherche est modifiée. Vous pouvez incorporer la visualisation dans une page Web ou la partager. 
 
-Pour plus d'informations, voir [Analyse des journaux à l'aide de visualisations](/docs/services/CloudLogAnalysis/kibana/kibana_visualizations.html#kibana_visualizations).
+Pour plus d'informations, voir [Analyse des journaux à l'aide de visualisations](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-kibana_visualizations#kibana_visualizations).
 
 ## Analyse des données dans un tableau de bord
 {: #analyze_dashboard}
 
 Dans la page Dashboard, vous pouvez personnaliser, sauvegarder et partager simultanément plusieurs visualisations et recherches. 
 
-Vous pouvez ajouter, retirer et réorganiser des visualisations dans le tableau de bord. Pour plus d'informations, voir [Analyse des journaux dans Kibana via un tableau de bord](/docs/services/CloudLogAnalysis/kibana/analize_logs_dashboard.html#analize_logs_dashboard).
+Vous pouvez ajouter, retirer et réorganiser des visualisations dans le tableau de bord. Pour plus d'informations, voir [Analyse des journaux dans Kibana via un tableau de bord](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-analize_logs_dashboard#analize_logs_dashboard).
     
-Après avoir personnalisé un tableau de bord Kibana, vous pouvez analyser les données par le biais de ses visualisations et le sauvegarder pour une réutilisation future. Pour plus d'informations, voir [Sauvegarde d'un tableau de bord Kibana](/docs/services/CloudLogAnalysis/kibana/analize_logs_dashboard.html#save).
+Après avoir personnalisé un tableau de bord Kibana, vous pouvez analyser les données par le biais de ses visualisations et le sauvegarder pour une réutilisation future. Pour plus d'informations, voir [Sauvegarde d'un tableau de bord Kibana](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-analize_logs_dashboard#save).
 
 ## Personnalisation de Kibana
 {: #analyze_management}
@@ -124,7 +124,7 @@ Vous pouvez effectuer les tâches suivantes :
 * Sauvegarder, supprimer, exporter et importer des recherches. 
 * Sauvegarder, supprimer, exporter et importer des visualisations.
 * Sauvegarder, supprimer, exporter et importer des tableaux de bord.
-* [Actualiser la liste des zones.](/docs/services/CloudLogAnalysis/kibana/analize_logs_interactively.html#discover_view_reload_fields)
+* [Actualiser la liste des zones.](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-analize_logs_interactively#discover_view_reload_fields)
 
 ## Limitations
 {: #limitations}

@@ -43,7 +43,7 @@ subcollection: cloudloganalysis
     ```
     {: codeblock}
 
-    詳しくは、『[{{site.data.keyword.Bluemix_notm}} にログインするにはどうすればよいですか](/docs/services/CloudLogAnalysis/qa/cli_qa.html#login)』を参照してください。
+    詳しくは、『[{{site.data.keyword.Bluemix_notm}} にログインするにはどうすればよいですか](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#login)』を参照してください。
 
 2. CLI コマンド `ibmcloud logging quota-usage-show` を実行します。 
 
@@ -98,7 +98,7 @@ Daily Allotmant   Current Usage
     ```
     {: codeblock}
 
-    詳しくは、『[{{site.data.keyword.Bluemix_notm}} にログインするにはどうすればよいですか](/docs/services/CloudLogAnalysis/qa/cli_qa.html#login)』を参照してください。
+    詳しくは、『[{{site.data.keyword.Bluemix_notm}} にログインするにはどうすればよいですか](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#login)』を参照してください。
 
 2. CLI コマンド `ibmcloud logging quota-usage-show` をパラメーター `-s` を指定して実行します。 
 
@@ -141,7 +141,7 @@ Date         Allotmant   Usage
 
 1. {{site.data.keyword.Bluemix_notm}} にログインします。 
 
-    詳しくは、『[{{site.data.keyword.Bluemix_notm}} にログインするにはどうすればよいですか](/docs/services/CloudLogAnalysis/qa/cli_qa.html#login)』を参照してください。
+    詳しくは、『[{{site.data.keyword.Bluemix_notm}} にログインするにはどうすればよいですか](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#login)』を参照してください。
 
 2. アカウントの ID を取得します。 次のコマンドを実行します。
 
@@ -161,7 +161,7 @@ Date         Allotmant   Usage
 
 3. UAA トークンを取得します。 
 
-    詳しくは、『[UAA トークンの取得](/docs/services/CloudLogAnalysis/security/auth_uaa.html#auth_uaa)』を参照してください。
+    詳しくは、『[UAA トークンの取得](/docs/services/CloudLogAnalysis/security?topic=cloudloganalysis-auth_uaa#auth_uaa)』を参照してください。
 
     UAA トークンをシェル変数にエクスポートします。 `Bearer` を含めないでください。 例えば次のようにします。
 	
@@ -177,7 +177,7 @@ Date         Allotmant   Usage
 	```
 	{: codeblock}
 	
-	ここで、*ENDPOINT* は地域ごとに異なります。 地域ごとのエンドポイントのリストについては、『[ロギング・エンドポイント](/docs/services/CloudLogAnalysis/manage_logs.html#endpoints)』を参照してください。
+	ここで、*ENDPOINT* は地域ごとに異なります。 地域ごとのエンドポイントのリストについては、『[ロギング・エンドポイント](/docs/services/CloudLogAnalysis?topic=cloudloganalysis-manage_logs#endpoints)』を参照してください。
 	
 	例えば、米国南部地域のアカウントの割り当て量を取得するには、次の cURL コマンドを実行します。
 	
@@ -214,11 +214,11 @@ Date         Allotmant   Usage
 
 1. {{site.data.keyword.Bluemix_notm}} にログインします。 
 
-    詳しくは、『[{{site.data.keyword.Bluemix_notm}} にログインするにはどうすればよいですか](/docs/services/CloudLogAnalysis/qa/cli_qa.html#login)』を参照してください。
+    詳しくは、『[{{site.data.keyword.Bluemix_notm}} にログインするにはどうすればよいですか](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#login)』を参照してください。
 
 2. スペースの ID を取得します。
 
-    詳しくは、『[スペースの GUID の取得方法を教えてください](/docs/services/CloudLogAnalysis/qa/cli_qa.html#space_guid)』を参照してください。
+    詳しくは、『[スペースの GUID の取得方法を教えてください](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#space_guid)』を参照してください。
 	
 	スペース ID をシェル変数にエクスポートします。 例えば次のようにします。
 	
@@ -229,7 +229,7 @@ Date         Allotmant   Usage
 
 3. UAA トークンを取得します。 
 
-    詳しくは、『[UAA トークンの取得](/docs/services/CloudLogAnalysis/security/auth_uaa.html#auth_uaa)』を参照してください。
+    詳しくは、『[UAA トークンの取得](/docs/services/CloudLogAnalysis/security?topic=cloudloganalysis-auth_uaa#auth_uaa)』を参照してください。
 
     UAA トークンをシェル変数にエクスポートします。 `Bearer` を含めないでください。 例えば次のようにします。
 	
@@ -245,7 +245,7 @@ Date         Allotmant   Usage
 	```
 	{: codeblock}
 	
-	ここで、*ENDPOINT* は地域ごとに異なります。 地域ごとのエンドポイントのリストについては、『[ロギング・エンドポイント](/docs/services/CloudLogAnalysis/manage_logs.html#endpoints)』を参照してください。
+	ここで、*ENDPOINT* は地域ごとに異なります。 地域ごとのエンドポイントのリストについては、『[ロギング・エンドポイント](/docs/services/CloudLogAnalysis?topic=cloudloganalysis-manage_logs#endpoints)』を参照してください。
 
     例えば、米国南部地域のスペース・ドメインの割り当て量および使用量を取得するには、以下の cURL コマンドを実行します。
 	

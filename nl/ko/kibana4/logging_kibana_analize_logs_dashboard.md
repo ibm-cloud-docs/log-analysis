@@ -46,14 +46,14 @@ Kibana의 *대시보드* 페이지를 사용하여 대시보드에 그룹화된 
 
 |태스크 |자세한 정보 |
 |------|------------------|
-|[새 대시보드 작성](/docs/services/CloudLogAnalysis/kibana4/logging_kibana_analize_logs_dashboard.html#K4_dashboard_new) |여러 대시보드를 작성할 수 있습니다. 여러 가지 검색, 시각화 및 다양한 로그 데이터의 서브세트를 포함하도록 각 대시보드를 디자인할 수 있습니다.  |
-|[대시보드 저장](/docs/services/CloudLogAnalysis/kibana4/logging_kibana_analize_logs_dashboard.html#k4_dashboard_save) |나중에 다시 사용할 수 있도록 대시보드를 저장할 수 있습니다. |
-|[대시보드 로드](/docs/services/CloudLogAnalysis/kibana4/logging_kibana_analize_logs_dashboard.html#k4_dashboard_reload) |해당 데이터를 업데이트, 수정 또는 분석하기 위해 대시보드를 업로드할 수 있습니다. |
-|[대시보드 삭제](/docs/services/CloudLogAnalysis/kibana4/logging_kibana_analize_logs_dashboard.html#k4_dashboard_delete) |필요하지 않은 대시보드는 삭제합니다. |
-|[대시보드 내보내기](/docs/services/CloudLogAnalysis/kibana4/logging_kibana_analize_logs_dashboard.html#k4_dashboard_export) |대시보드를 JSON 파일로 내보낼 수 있습니다. |
-|[대시보드 가져오기](/docs/services/CloudLogAnalysis/kibana4/logging_kibana_analize_logs_dashboard.html#k4_dashboard_import) |대시보드를 JSON 파일로 가져올 수 있습니다. |
-|[대시보드 공유](/docs/services/CloudLogAnalysis/kibana4/logging_kibana_analize_logs_dashboard.html#k4_dashboard_share) |HTML 소스 또는 Kibana 대시보드를 통해 대시보드를 공유할 수 있습니다. |
-|[시각화 추가](/docs/services/CloudLogAnalysis/kibana4/logging_kibana_analize_logs_dashboard.html#k4_dashboard_add_visualization) |기존 시각화 또는 검색을 대시보드에 추가할 수 있습니다.|
+|[새 대시보드 작성](/docs/services/CloudLogAnalysis/kibana4?topic=cloudloganalysis-kibana_analize_logs_dashboard#K4_dashboard_new) |여러 대시보드를 작성할 수 있습니다. 여러 가지 검색, 시각화 및 다양한 로그 데이터의 서브세트를 포함하도록 각 대시보드를 디자인할 수 있습니다.  |
+|[대시보드 저장](/docs/services/CloudLogAnalysis/kibana4?topic=cloudloganalysis-kibana_analize_logs_dashboard#k4_dashboard_save) |나중에 다시 사용할 수 있도록 대시보드를 저장할 수 있습니다. |
+|[대시보드 로드](/docs/services/CloudLogAnalysis/kibana4?topic=cloudloganalysis-kibana_analize_logs_dashboard#k4_dashboard_reload) |해당 데이터를 업데이트, 수정 또는 분석하기 위해 대시보드를 업로드할 수 있습니다. |
+|[대시보드 삭제](/docs/services/CloudLogAnalysis/kibana4?topic=cloudloganalysis-kibana_analize_logs_dashboard#k4_dashboard_delete) |필요하지 않은 대시보드는 삭제합니다. |
+|[대시보드 내보내기](/docs/services/CloudLogAnalysis/kibana4?topic=cloudloganalysis-kibana_analize_logs_dashboard#k4_dashboard_export) |대시보드를 JSON 파일로 내보낼 수 있습니다. |
+|[대시보드 가져오기](/docs/services/CloudLogAnalysis/kibana4?topic=cloudloganalysis-kibana_analize_logs_dashboard#k4_dashboard_import) |대시보드를 JSON 파일로 가져올 수 있습니다. |
+|[대시보드 공유](/docs/services/CloudLogAnalysis/kibana4?topic=cloudloganalysis-kibana_analize_logs_dashboard#k4_dashboard_share) |HTML 소스 또는 Kibana 대시보드를 통해 대시보드를 공유할 수 있습니다. |
+|[시각화 추가](/docs/services/CloudLogAnalysis/kibana4?topic=cloudloganalysis-kibana_analize_logs_dashboard#k4_dashboard_add_visualization) |기존 시각화 또는 검색을 대시보드에 추가할 수 있습니다.|
 {: caption="표 2. 대시보드로 작업하는 태스크" caption-side="top"}
 
 Kibana에 대한 자세한 정보는 [Kibana User Guide ![외부 링크 아이콘](../../../icons/launch-glyph.svg "외부 링크 아이콘")](https://www.elastic.co/guide/en/kibana/4.1/index.html){: new_window}를 참조하십시오.
@@ -80,7 +80,7 @@ Kibana에 대한 자세한 정보는 [Kibana User Guide ![외부 링크 아이�
 
 1. 대시보드 페이지의 도구 모음에서 **새 대시보드** 단추 ![새 대시보드](images/k4_dash_new_icon.jpg "새 대시보드")를 클릭하십시오.
 
-2. 하나 이상의 검색 및 시각화를 추가하십시오. 자세한 정보는 [새 검색 또는 시각화 추가](/docs/services/CloudLogAnalysis/kibana4/logging_kibana_visualizations.html#logging_k4_visualizations_create)를 참조하십시오.
+2. 하나 이상의 검색 및 시각화를 추가하십시오. 자세한 정보는 [새 검색 또는 시각화 추가](/docs/services/CloudLogAnalysis/kibana4?topic=cloudloganalysis-logging_kibana_visualizations#logging_k4_visualizations_create)를 참조하십시오.
 
     검색 또는 시각화를 추가하면 패널이 대시보드에 추가됩니다.
 

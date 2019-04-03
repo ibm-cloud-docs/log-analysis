@@ -37,13 +37,13 @@ Führen Sie die folgenden Schritte aus, um die Befehlszeilenschnittstelle für {
 
 1. Installieren Sie die {{site.data.keyword.Bluemix_notm}}-Befehlszeilenschnittstelle.
 
-   Weitere Informationen finden Sie in [{{site.data.keyword.Bluemix_notm}}-Befehlszeilenschnittstelle installieren](/docs/cli/index.html#overview).
+   Weitere Informationen finden Sie in [{{site.data.keyword.Bluemix_notm}}-Befehlszeilenschnittstelle installieren](/docs/cli?topic=cloud-cli-ibmcloud-cli#overview).
 
 2. Installieren Sie das CF-Plug-in für {{site.data.keyword.loganalysisshort}}.
 
-    * Die Schritte für Linux finden Sie unter [Befehlszeilenschnittstelle von {{site.data.keyword.loganalysisshort}} unter Linux installieren](/docs/services/CloudLogAnalysis/how-to/manage-logs/config_log_collection_cli.html#install_cli_linux1).
-    * Die Schritte für Windows finden Sie unter [Befehlszeilenschnittstelle von {{site.data.keyword.loganalysisshort}} unter Windows installieren](/docs/services/CloudLogAnalysis/how-to/manage-logs/config_log_collection_cli.html#install_cli_windows1).
-    * Die Schritte für Mac OS X finden Sie unter [Befehlszeilenschnittstelle von {{site.data.keyword.loganalysisshort}} unter Mac OS X installieren](/docs/services/CloudLogAnalysis/how-to/manage-logs/config_log_collection_cli.html#install_cli_mac1).
+    * Die Schritte für Linux finden Sie unter [Befehlszeilenschnittstelle von {{site.data.keyword.loganalysisshort}} unter Linux installieren](/docs/services/CloudLogAnalysis/how-to/manage-logs?topic=cloudloganalysis-config_log_collection_cli1#install_cli_linux1).
+    * Die Schritte für Windows finden Sie unter [Befehlszeilenschnittstelle von {{site.data.keyword.loganalysisshort}} unter Windows installieren](/docs/services/CloudLogAnalysis/how-to/manage-logs?topic=cloudloganalysis-config_log_collection_cli1#install_cli_windows1).
+    * Die Schritte für Mac OS X finden Sie unter [Befehlszeilenschnittstelle von {{site.data.keyword.loganalysisshort}} unter Mac OS X installieren](/docs/services/CloudLogAnalysis/how-to/manage-logs?topic=cloudloganalysis-config_log_collection_cli1#install_cli_mac1).
  
 3. Überprüfen Sie die Installation des Plug-ins für die Benutzerschnittstelle.
   
@@ -280,7 +280,7 @@ Führen Sie die folgenden Schritte aus, um allgemeine Informationen zur Befehlsz
 
 1. Melden Sie sich bei einer Region, Organisation und bei einem Bereich in {{site.data.keyword.Bluemix_notm}} an. 
 
-    Weitere Informationen finden Sie unter [Wie melde ich mich bei {{site.data.keyword.Bluemix_notm}} an?](/docs/services/CloudLogAnalysis/qa/cli_qa.html#login).
+    Weitere Informationen finden Sie in [Wie melde ich mich bei {{site.data.keyword.Bluemix_notm}} an?](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#login).
     
 2. Listen Sie Informationen zu den unterstützten Befehlen und zur Befehlszeilenschnittstelle auf. Führen Sie den folgenden Befehl aus:
 
@@ -298,7 +298,7 @@ Gehen Sie wie folgt vor, um Hilfe zur Verwendung eines Befehls abzurufen:
 
 1. Melden Sie sich bei einer Region, Organisation und bei einem Bereich in {{site.data.keyword.Bluemix_notm}} an. 
 
-    Weitere Informationen finden Sie unter [Wie melde ich mich bei {{site.data.keyword.Bluemix_notm}} an?](/docs/services/CloudLogAnalysis/qa/cli_qa.html#login).
+    Weitere Informationen finden Sie in [Wie melde ich mich bei {{site.data.keyword.Bluemix_notm}} an?](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#login).
     
 2. Rufen Sie die Liste der unterstützten Befehle auf und suchen Sie nach dem gewünschten Befehl. Führen Sie den folgenden Befehl aus:
 
@@ -325,7 +325,7 @@ Ein Befehl kann Unterbefehle haben. Gehen Sie wie folgt vor, um Hilfe zu Unterbe
 
 1. Melden Sie sich bei einer Region, Organisation und bei einem Bereich in {{site.data.keyword.Bluemix_notm}} an. 
 
-    Weitere Informationen finden Sie unter [Wie melde ich mich bei {{site.data.keyword.Bluemix_notm}} an?](/docs/services/CloudLogAnalysis/qa/cli_qa.html#login).
+    Weitere Informationen finden Sie in [Wie melde ich mich bei {{site.data.keyword.Bluemix_notm}} an?](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#login).
     
 2. Rufen Sie die Liste der unterstützten Befehle auf und suchen Sie nach dem gewünschten Befehl. Führen Sie den folgenden Befehl aus:
 

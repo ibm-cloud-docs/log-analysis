@@ -26,86 +26,106 @@ subcollection: cloudloganalysis
 # {{site.data.keyword.containershort_notm}}
 {: #containers_kubernetes}
 
-En {{site.data.keyword.Bluemix_notm}}, puede utilizar el servicio {{site.data.keyword.loganalysisshort}} para almacenar y analizar registros de contenedor y registros de clúster Kubernetes recopilados automáticamente por {{site.data.keyword.containershort}} en el entorno público y dedicado.
+En {{site.data.keyword.cloud_notm}}, puede utilizar el servicio {{site.data.keyword.loganalysisshort}} para almacenar y analizar registros de contenedor y registros de clúster de Kubernetes recopilados automáticamente por {{site.data.keyword.containershort}} en el entorno público y dedicado.
 {:shortdesc}
 
-Puede tener uno o varios clústeres Kubernetes en una cuenta. {{site.data.keyword.containershort}} recupera los registros automáticamente en cuanto se suministra el clúster. 
+Puede tener uno o varios clústeres de Kubernetes en una cuenta. {{site.data.keyword.containershort}} recupera los registros automáticamente en cuanto se suministra el clúster. 
+
+Para reenviar registros a {{site.data.keyword.loganalysisshort}} desde {{site.data.keyword.containershort}}, debe crear una configuración de registro. Puede habilitar el registro mediante la [línea de mandatos](/docs/containers/cs_health.html#logging) o mediante la página de visión general del clúster en el panel de control de {{site.data.keyword.containershort}}. Con una configuración establecida, {{site.data.keyword.containershort}} recopila registros cuando se suministra el clúster o cuando se despliega un pod. También se recopila automáticamente la información que un contenedor imprime en `stdout` (salida estándar) o `stderr` (error estándar). De forma predeterminada, los registros se reenvían a regiones específicas en función de la ubicación del clúster.
 
 * Los registros de la aplicación se recopilan en cuanto se despliega el pod. 
-* La información que imprime un proceso de contenedor en stdout (salida estándar) y stderr (error estándar) la recopila automáticamente el {{site.data.keyword.containershort}}.
+* {{site.data.keyword.containershort}} recopila automáticamente la información que un proceso de contenedor imprime en stdout (salida estándar) y stderr (error estándar).
 
-Para que estos registros estén disponibles para su análisis en el servicio {{site.data.keyword.loganalysisshort}}, debe configurar el clúster de modo que reenvíe los registros a {{site.data.keyword.loganalysisshort}}. Puede reenviar registros a la cuenta de {{site.data.keyword.loganalysisshort}} o a un dominio del espacio de su cuenta. De forma predeterminada:
+Consulte la siguiente tabla para ver las regiones a las que {{site.data.keyword.loganalysisshort}} envía registros en función de dónde está desplegado el clúster.
+ * {{site.data.keyword.containershort}} recopila automáticamente la información que un proceso de contenedor imprime en stdout (salida estándar) y stderr (error estándar).
+ 
+ <table>
+   <tr>
+     <th>Región del clúster</th>
+     <th>Región del servicio</th>
+   </tr>
+   <tr>
+     <td>EE.UU. sur</td>
+     <td>EE.UU. sur</td>
+   </tr>
+   <tr>
+     <td>EE.UU. este</td>
+     <td>EE.UU. sur</td>
+   </tr>
+   <tr>
+     <td>Alemania</td>
+     <td>Alemania</td>
+   </tr>
+   <tr>
+     <td>Sídney</td>
+     <td>Sídney</td>
+   </tr>
+   <tr>
+     <td>Reino Unido</td>
+     <td>Alemania</td>
+   </tr>
+ </table>
+ 
+ Asegúrese de establecer como destino la región, organización y espacio correctos al intentar ver los registros. También puede comprobar que está estableciendo como destino la organización y el espacio correctos mediante la GUI de {{site.data.keyword.loganalysisshort}}.
+ {: tip}
 
-* Los clústeres que están disponibles en la región EE.UU. sur envían los registros al servicio {{site.data.keyword.loganalysisshort}} que está disponible en la región EE.UU. sur.
-* Los clústeres que están disponibles en la región EE.UU. este envían los registros al servicio {{site.data.keyword.loganalysisshort}} que está disponible en la región EE.UU. sur.
-* Los clústeres que están disponibles en la región alemana envían los registros al servicio {{site.data.keyword.loganalysisshort}} que está disponible en la región alemana.
-* Los clústeres que están disponibles en la región Sídney envían los registros al servicio {{site.data.keyword.loganalysisshort}} que está disponible en la región Sidney.
-* Los clústeres que están disponibles en la región Reino Unido envían los registros al servicio {{site.data.keyword.loganalysisshort}} que está disponible en la región alemana.
-
-Tenga en cuenta la siguiente información al decidir si reenvía registros a un dominio de espacio o al dominio de la cuenta:
+Puede reenviar registros a la cuenta de {{site.data.keyword.loganalysisshort}} o a un dominio de espacio de su cuenta. Tenga en cuenta la siguiente información al decidir dónde reenviar registros:
 
 * Al enviar registros al dominio de la cuenta, la cuota de búsqueda es de 500 MB al día, y no se pueden almacenar registros en la Recopilación de registros para su almacenamiento a largo plazo.
 * Al enviar registros a un dominio de espacio, puede elegir un plan de servicio de {{site.data.keyword.loganalysisshort}} que defina la cuota de búsqueda por día, y puede almacenar registros de almacenamiento en la Recopilación de registros para el almacenamiento a largo plazo.
 
-**Nota:** De forma predeterminada, el envío de registros de un clúster al servicio de {{site.data.keyword.loganalysisshort}} no está habilitado automáticamente. Para habilitar el registro, debe crear una o varias configuraciones de registro en el clúster para reenviar automáticamente registros al servicio de {{site.data.keyword.loganalysisshort}}. Puede habilitar el registro mediante la línea de mandatos, mediante el mandato `ibmcloud cs logging-config-create` o mediante el panel de control del clúster disponible en la IU de {{site.data.keyword.Bluemix_notm}}. Para obtener más información, consulte [Habilitación de la recopilación automática de registros de clúster](/docs/services/CloudLogAnalysis/containers/containers_kube_other_logs.html#containers_kube_other_logs).
+**Nota:** De forma predeterminada, el envío de registros de un clúster al servicio de {{site.data.keyword.loganalysisshort}} no está habilitado automáticamente. Para habilitar el registro, debe crear una o varias configuraciones de registro en el clúster para reenviar automáticamente registros al servicio de {{site.data.keyword.loganalysisshort}}. Puede habilitar el registro mediante la línea de mandatos, mediante el mandato `ibmcloud cs logging-config-create` o mediante el panel de control del clúster disponible en la IU de {{site.data.keyword.cloud_notm}}. Para obtener más información, consulte [Habilitación de la recopilación automática de registros de clúster](/docs/services/CloudLogAnalysis/containers?topic=cloudloganalysis-containers_kube_other_logs#containers_kube_other_logs).
 
-Cuando trabaja con un clúster Kubernetes, se reservan los espacios de nombres *ibm-system* y *kube-system*. No cree, suprima, modifique ni cambie permisos de recursos que estén disponibles en dichos espacios de nombres. Los registros para estos espacios de nombres están para que {{site.data.keyword.IBM_notm}} los utilice.
+Cuando trabaja con un clúster de Kubernetes, se reservan los espacios de nombres *ibm-system* y *kube-system*. No cree, suprima, modifique ni cambie permisos de recursos que estén disponibles en dichos espacios de nombres. Los registros para estos espacios de nombres están para que {{site.data.keyword.IBM_notm}} los utilice.
+{: tip}
 
 
 
-## Reenvío de registros a un dominio del espacio
+### Reenvío de registros a un dominio del espacio
 {: #space}
 
-Cuando configure el clúster para que reenvíe los registros del clúster a {{site.data.keyword.loganalysisshort}}, tenga en cuenta la siguiente información:
+Cuando configure el clúster para que reenvíe los registros a {{site.data.keyword.loganalysisshort}}, tenga en cuenta la siguiente información:
 
 * Debe definir una organización y un espacio de Cloud Foundry donde se reenviarán estos registros. 
 * La organización y el espacio pueden estar disponibles en cualquier región de la nube pública de {{site.data.keyword.IBM_notm}}.
 
-**Nota:** Para los clústeres que se suministran en **{{site.data.keyword.Bluemix_notm}} dedicado**, no se puede configurar el clúster para que reenvíe los registros del clúster a espacios de Cloud Foundry que están disponibles en su cuenta dedicada.
+**Nota:** Para los clústeres que se suministran en **{{site.data.keyword.cloud_notm}} dedicado**, no se puede configurar el clúster para que reenvíe los registros del clúster a espacios de Cloud Foundry que están disponibles en su cuenta dedicada.
 
 Para analizar datos de registro en Kibana para un clúster que reenvía registros a un dominio del espacio, tenga en cuenta la siguiente información:
 
 * Debe iniciar Kibana en la región pública en la que están disponibles la organización y el espacio que recopilan los registros del clúster.
 * Para aumentar la cuota de búsqueda de Kibana y almacenar los registros en la recopilación de registros para su almacenamiento a largo plazo, debe suministrar el servicio {{site.data.keyword.loganalysisshort}} en el espacio donde se reenviarán los registros con un plan que se ajuste a sus necesidades. 
-* El ID de usuario debe tener permisos para ver registros. Para ver registros en el dominio del espacio, el usuario necesita un rol de CF. **Auditor** es el rol de nivel inferior que se puede otorgar para ver registros. Para obtener más información, consulte [Roles que necesita un usuario a ver registros](/docs/services/CloudLogAnalysis/kibana/analyzing_logs_Kibana.html#roles).
+* El ID de usuario debe tener permisos para ver registros. Para ver registros en el dominio del espacio, el usuario necesita un rol de CF. **Auditor** es el rol de nivel inferior que se puede otorgar para ver registros. Para obtener más información, consulte [Roles que necesita un usuario a ver registros](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-analyzing_logs_Kibana#roles).
 
-Para gestionar los datos de registro del clúster que se guardan en el almacenamiento a largo plazo (recopilación de registros), el ID de usuario debe tener una política de IAM para poder trabajar con el servicio {{site.data.keyword.loganalysisshort}}. El ID de usuario debe tener los permisos de **administrador**, **operador** o **editor**.  Para obtener más información, consulte [Roles que necesita un usuario para gestionar registros](/docs/services/CloudLogAnalysis/manage_logs.html#roles1).
+Para gestionar los datos de registro del clúster que se guardan en el almacenamiento a largo plazo (recopilación de registros), el ID de usuario debe tener una política de IAM para poder trabajar con el servicio {{site.data.keyword.loganalysisshort}}. El ID de usuario debe tener los permisos de **administrador**, **operador** o **editor**.  Para obtener más información, consulte [Roles que necesita un usuario para gestionar registros](/docs/services/CloudLogAnalysis?topic=cloudloganalysis-manage_logs#roles1).
 
 
 En la figura siguiente se muestra una vista general del registro en un entorno público para {{site.data.keyword.containershort}} cuando el clúster reenvía registros a un dominio de espacio:
 
-![Visión general de los componentes de alto nivel correspondientes a contenedores desplegados en un clúster Kubernetes](images/containers_kube_1.png "Visión general de los componentes de alto nivel correspondientes a contenedores desplegados en un clúster Kubernetes")
+![Visión general de los componentes de alto nivel correspondientes a contenedores desplegados en un clúster de Kubernetes](images/containers_kube_1.png "Visión general de los componentes de alto nivel correspondientes a contenedores desplegados en un clúster de Kubernetes")
 
    
 
-## Reenvío de registros al dominio de la cuenta
+### Reenvío de registros al dominio de la cuenta
 {: #acc_public}
 
-Cuando configure el clúster para que reenvíe los registros del clúster al dominio de la cuenta, tenga en cuenta la siguiente información:
+Puede configurar el clúster para reenviar registros a dominio de la cuenta si la cuenta está en el entorno tanto público como dedicado de {{site.data.keyword.cloud_notm}}.
+{: shortdesc}
 
-* **Clúster suministrado en {{site.data.keyword.Bluemix_notm}} público**: los registros se reenvían al dominio de la cuenta en la misma región de {{site.data.keyword.Bluemix_notm}} público en el que se ejecuta el clúster.
-* **Clúster suministrado en {{site.data.keyword.Bluemix_notm}} dedicado**: los registros se reenvían al dominio de la cuenta en la misma región de {{site.data.keyword.Bluemix_notm}} público en el que se ejecuta el clúster dedicado.
 
 Para analizar datos de registro en Kibana para un clúster que reenvía registros a un dominio de la cuenta, tenga en cuenta la siguiente información:
 
-* Debe iniciar Kibana en la región pública en la que el clúster envía registros al servicio {{site.data.keyword.loganalysisshort}}.
-
-    * Los clústeres que están disponibles en la región EE.UU. sur envían los registros al servicio {{site.data.keyword.loganalysisshort}} que está disponible en la región EE.UU. sur.
-    * Los clústeres que están disponibles en la región EE.UU. este envían los registros al servicio {{site.data.keyword.loganalysisshort}} que está disponible en la región EE.UU. sur.
-    * Los clústeres que están disponibles en la región alemana envían los registros al servicio {{site.data.keyword.loganalysisshort}} que está disponible en la región alemana.
-    * Los clústeres que están disponibles en la región Sídney envían los registros al servicio {{site.data.keyword.loganalysisshort}} que está disponible en la región Sidney.
-    * Los clústeres que están disponibles en la región Reino Unido envían los registros al servicio {{site.data.keyword.loganalysisshort}} que está disponible en la región alemana.
-
-* El ID de usuario debe tener permisos para ver registros. Para ver los registros en el dominio de la cuenta, un usuario necesita una política de IAM para el servicio {{site.data.keyword.loganalysisshort}}. El usuario necesita permisos de **Visor**. 
+* Debe iniciar Kibana en la región en la que el clúster envía registros al servicio {{site.data.keyword.loganalysisshort}}.
+* Para gestionar los datos de registro del clúster que se almacenan en la recopilación de registros, debe tener un rol de IAM que le permita trabajar con el servicio {{site.data.keyword.loganalysisshort}}. El ID de usuario debe tener los permisos de **administrador**, **operador** o **editor**. Para ver los registros, necesita permisos de **visor**.
 
 
-En la figura siguiente se muestra una vista general del registro en un entorno público para {{site.data.keyword.containershort}} cuando el clúster reenvía registros al dominio de la cuenta:
+En la siguiente imagen, puede ver una vista de alto nivel de cómo funciona el reenvío de registros a una cuenta en un entorno público.
 
-![Visión general de los componentes de alto nivel correspondientes a contenedores desplegados en un clúster Kubernetes](images/containers_kube.png "Visión general de los componentes de alto nivel correspondientes a contenedores desplegados en un clúster Kubernetes")
+![Visión general de los componentes de alto nivel correspondientes a contenedores desplegados en un clúster de Kubernetes](images/containers_kube.png "Visión general de los componentes de alto nivel correspondientes a contenedores desplegados en un clúster de Kubernetes")
 
-En la siguiente figura se muestra una vista general del registro en un entorno dedicado correspondiente a {{site.data.keyword.containershort}}:
+En la siguiente imagen, puede ver una vista de alto nivel de cómo funciona el reenvío de registros a una cuenta en un entorno privado.
 
-![Visión general de los componentes de alto nivel correspondientes a contenedores desplegados en un clúster Kubernetes](images/containers_kube_dedicated.png "Visión general de los componentes de alto nivel correspondientes a contenedores desplegados en un clúster Kubernetes")
+![Visión general de los componentes de alto nivel correspondientes a contenedores desplegados en un clúster de Kubernetes](images/containers_kube_dedicated.png "Visión general de los componentes de alto nivel correspondientes a contenedores desplegados en un clúster de Kubernetes")
 
 
 
@@ -114,22 +134,22 @@ En la siguiente figura se muestra una vista general del registro en un entorno d
 
 Puede elegir los registros del clúster que desea reenviar al servicio {{site.data.keyword.loganalysisshort}}. 
 
-Para obtener más información sobre cómo configurar el clúster para reenviar archivos de registro al servicio de {{site.data.keyword.loganalysisshort}}, consulte la sección [Habilitación de la recopilación automática de registros de clúster](/docs/services/CloudLogAnalysis/containers/containers_kube_other_logs.html#containers_kube_other_logs).
+Para obtener más información sobre cómo configurar el clúster para reenviar archivos de registro al servicio de {{site.data.keyword.loganalysisshort}}, consulte la sección [Habilitación de la recopilación automática de registros de clúster](/docs/services/CloudLogAnalysis/containers?topic=cloudloganalysis-containers_kube_other_logs#containers_kube_other_logs).
 
-* Para habilitar la recopilación automática de registros y el reenvío de stdout y stderr, consulte [Habilitación de la recopilación automática de registros y del reenvío de registros de contenedor](/docs/services/CloudLogAnalysis/containers/containers_kube_other_logs.html#containers).
-* Para habilitar la recopilación automática y el reenvío de registros de registros de la aplicación, consulte [Habilitación de la recopilación automática de registros y del reenvío de registro de aplicación](/docs/services/CloudLogAnalysis/containers/containers_kube_other_logs.html#apps). 
-* Para habilitar la recopilación automática de registros y el reenvío de registro de trabajo, consulte [Habilitación de la recopilación automática de registros y del reenvío de registros de trabajo](/docs/services/CloudLogAnalysis/containers/containers_kube_other_logs.html#workers). 
-* Para habilitar la recopilación automática de registros y el reenvío de registros de componentes del sistema Kubernetes, consulte [Habilitación de la recopilación automática de registros y del reenvío de registros de componentes del sistema Kubernetes](/docs/services/CloudLogAnalysis/containers/containers_kube_other_logs.html#system). 
-* Para habilitar la recopilación automática de registros y el reenvío de registros del controlador de Ingress de Kubernetes, consulte [Habilitación de la recopilación automática de registros y del reenvío de registros del controlador de Ingress de Kubernetes](/docs/services/CloudLogAnalysis/containers/containers_kube_other_logs.html#controller).
-
-
+* Para habilitar la recopilación automática de registros y el reenvío de stdout y stderr, consulte [Habilitación de la recopilación automática de registros y del reenvío de registros de contenedor](/docs/services/CloudLogAnalysis/containers?topic=cloudloganalysis-containers_kube_other_logs#containers).
+* Para habilitar la recopilación automática y el reenvío de registros de registros de la aplicación, consulte [Habilitación de la recopilación automática de registros y del reenvío de registro de aplicación](/docs/services/CloudLogAnalysis/containers?topic=cloudloganalysis-containers_kube_other_logs#apps). 
+* Para habilitar la recopilación automática de registros y el reenvío de registro de trabajo, consulte [Habilitación de la recopilación automática de registros y del reenvío de registros de trabajo](/docs/services/CloudLogAnalysis/containers?topic=cloudloganalysis-containers_kube_other_logs#workers). 
+* Para habilitar la recopilación automática de registros y el reenvío de registros de componentes del sistema Kubernetes, consulte [Habilitación de la recopilación automática de registros y del reenvío de registros de componentes del sistema Kubernetes](/docs/services/CloudLogAnalysis/containers?topic=cloudloganalysis-containers_kube_other_logs#system). 
+* Para habilitar la recopilación automática de registros y el reenvío de registros del controlador de Ingress de Kubernetes, consulte [Habilitación de la recopilación automática de registros y del reenvío de registros del controlador de Ingress de Kubernetes](/docs/services/CloudLogAnalysis/containers?topic=cloudloganalysis-containers_kube_other_logs#controller).
 
 
 
-## Configuración del tráfico de red para configuraciones personalizadas de cortafuegos en {{site.data.keyword.Bluemix_notm}}
+
+
+## Configuración del tráfico de red para configuraciones personalizadas de cortafuegos en {{site.data.keyword.cloud_notm}}
 {: #ports}
 
-Si tiene configurado un cortafuegos adicional, o si ha personalizado los valores de cortafuegos en la infraestructura de {{site.data.keyword.Bluemix_notm}} (SoftLayer), debe permitir el tráfico de red de salida entre el nodo trabajador y el servicio {{site.data.keyword.loganalysisshort}}. 
+Si tiene configurado un cortafuegos adicional, o si ha personalizado los valores de cortafuegos en la infraestructura de {{site.data.keyword.cloud_notm}} (SoftLayer), debe permitir el tráfico de red de salida entre el nodo trabajador y el servicio {{site.data.keyword.loganalysisshort}}.
 
 Debe abrir el puerto TCP 443 y el puerto TCP 9091 entre cada trabajador y el servicio {{site.data.keyword.loganalysisshort}} para las siguientes direcciones IP en el cortafuegos personalizado:
 
@@ -188,7 +208,7 @@ Cuando configure el clúster para que reenvíe registros personalizados, puede e
 Puede configurar el clúster para reenviar registros al servicio {{site.data.keyword.loganalysisshort}}. La tabla siguiente lista los distintos orígenes de registro que puede habilitar para reenviar registros al servicio {{site.data.keyword.loganalysisshort}}:
 
 <table>
-  <caption>Orígenes de registros para un clúster Kubernetes</caption>
+  <caption>Orígenes de registros para un clúster de Kubernetes</caption>
   <tr>
     <th>Origen reg.</th>
 	<th>Descripción</th>
@@ -224,9 +244,9 @@ Puede configurar el clúster para reenviar registros al servicio {{site.data.key
 ## Búsquedas en los registros
 {: #log_search}
 
-De forma predeterminada, puede utilizar Kibana para buscar un máximo de 500 MB de registros al día en {{site.data.keyword.Bluemix_notm}}. 
+De forma predeterminada, puede utilizar Kibana para buscar un máximo de 500 MB de registros al día en {{site.data.keyword.cloud_notm}}. 
 
-Para buscar registros de mayor tamaño, puede utilizar el servicio {{site.data.keyword.loganalysisshort}}. El servicio proporciona varios planes. Cada plan tiene distintas funciones de búsqueda de registros; por ejemplo, el plan *Recopilación de registros* le permite buscar un máximo de 1 GB de datos al día. Para obtener más información sobre los planes disponibles, consulte [Planes de servicio](/docs/services/CloudLogAnalysis/log_analysis_ov.html#plans).
+Para buscar registros de mayor tamaño, puede utilizar el servicio {{site.data.keyword.loganalysisshort}}. El servicio proporciona varios planes. Cada plan tiene distintas funciones de búsqueda de registros; por ejemplo, el plan *Recopilación de registros* le permite buscar un máximo de 1 GB de datos al día. Para obtener más información sobre los planes disponibles, consulte [Planes de servicio](/docs/services/CloudLogAnalysis?topic=cloudloganalysis-log_analysis_ov#plans).
 
 Cuando busque registros, tenga en cuenta los siguientes campos disponibles en Kibana:
 
@@ -360,8 +380,11 @@ Campos que pueden resultar útiles al analizar registros del controlador de Ingr
 ## Envío de registros para poder utilizar los campos en un mensaje como campos de búsqueda de Kibana
 {: #send_data_in_json}
 
-De forma predeterminada, la creación de registros se habilita de forma automática para los contenedores. Cada entrada en el archivo de registro de tiempo de ejecución del contenedor se visualiza en Kibana en el campo **message**. Si necesita filtrar y analizar sus datos en Kibana mediante un campo específico que sea parte de la entrada de registro del contenedor, configure su aplicación para enviar la salida en un formato JSON que sea válido. Por ejemplo, registre el mensaje en formato JSON para stdout (salida estándar) y (error estándar).
-
+De forma predeterminada, la creación de registros se habilita de forma automática para los contenedores. Cada entrada en el archivo de registro Docker se visualiza en Kibana en el campo **message**. Si necesita filtrar y analizar sus datos en Kibana mediante un campo específico que sea parte de la entrada de registro del contenedor, configure su aplicación para enviar la salida en un formato JSON que sea válido. Por ejemplo, registre el mensaje en formato JSON en `stdout` (salida estándar) y `stderr` (error estándar).
+ 
+Cada campo disponible en el mensaje se analiza para el tipo de campo que coincide con su valor.
+ 
+Por ejemplo, cada campo en el siguiente mensaje JSON está disponible como un campo que se puede utilizar para filtrar y realizar búsquedas.
 Cada campo disponible en el mensaje se analiza para el tipo de campo que coincide con su valor. Por ejemplo, cada campo en el siguiente mensaje JSON:
     
 ```
@@ -387,7 +410,7 @@ está disponible como un campo que se puede utilizar para filtrar y realizar bú
 {: #security}
 
 
-Para reenviar registros de clúster a {{site.data.keyword.loganalysisshort}}, debe otorgar permisos de {{site.data.keyword.Bluemix_notm}} al propietario de la clave de {{site.data.keyword.containershort}} y al ID de usuario que realiza las configuraciones de registros del clúster.
+Para reenviar registros de clúster a {{site.data.keyword.loganalysisshort}}, debe otorgar permisos de {{site.data.keyword.cloud_notm}} al propietario de la clave de {{site.data.keyword.containershort}} y al ID de usuario que realiza las configuraciones de registros del clúster.
 
 El ID de usuario que realiza las configuraciones de registros del clúster debe tener los permisos siguientes:
 
@@ -412,30 +435,30 @@ Para un clúster que reenvía registros al **dominio de la cuenta** de {{site.da
 ## Almacenamiento de registros en el componente de recopilación de registros
 {: #log_collection1}
 
-Tenga en cuenta la siguiente información sobre el comportamiento predeterminado de {{site.data.keyword.Bluemix_notm}} al trabajar con los registros:
+Tenga en cuenta la siguiente información sobre el comportamiento predeterminado de {{site.data.keyword.cloud_notm}} al trabajar con los registros:
 
-* {{site.data.keyword.Bluemix_notm}} almacena datos de registro durante un máximo de 3 días.
+* Los datos del registro se guardan durante un máximo de 3 días.
 * Se almacena un máximo de 500 MB de datos al día. Cualquier registro que supere dicha capacidad de 500 MB se descartará. Las asignaciones de capacidades se restablecen todos los días a las 12:30 AM UTC.
 * Se pueden buscar hasta 1,5 GB de datos para un máximo de 3 días. Los datos de registro se renuevan (Primero en entrar, primero en salir) una vez que se ha alcanzado 1,5 GB de datos o después de 3 días.
 * Los registros no se almacenan en la Recopilación de registros para el almacenamiento a largo plazo.
 
-El servicio {{site.data.keyword.loganalysisshort}} proporciona planes adicionales que le permiten almacenar registros en la recopilación de registros tanto tiempo como desee. Para obtener más información sobre el precio de cada plan, consulte [Planes de servicio](/docs/services/CloudLogAnalysis/log_analysis_ov.html#plans). 
+El servicio {{site.data.keyword.loganalysisshort}} proporciona planes adicionales que le permiten almacenar registros en la recopilación de registros tanto tiempo como desee. Para obtener más información sobre el precio de cada plan, consulte [Planes de servicio](/docs/services/CloudLogAnalysis?topic=cloudloganalysis-log_analysis_ov#plans). 
 
 Para gestionar registros en la Recopilación de registros, tenga en cuenta la siguiente información:
 
-* Puede configurar una política de retención de registros que puede utilizar para definir el número de días que desea conservar los registros en la recopilación de registros. Para obtener más información, consulte [Política de retención de registros](/docs/services/CloudLogAnalysis/manage_logs.html#log_retention_policy).
+* Puede configurar una política de retención de registros que puede utilizar para definir el número de días que desea conservar los registros en la recopilación de registros. Para obtener más información, consulte [Política de retención de registros](/docs/services/CloudLogAnalysis?topic=cloudloganalysis-manage_logs#log_retention_policy).
 * Puede suprimir los registros manualmente utilizando la CLI o la API de recopilación de registros. 
-* Para gestionar registros en la recopilación de registros, un usuario necesita una política de IAM con permisos para trabajar con el servicio de {{site.data.keyword.loganalysisshort}} en {{site.data.keyword.Bluemix_notm}}. Para obtener más información, consulte [Roles de IAM](/docs/services/CloudLogAnalysis/security_ov.html#iam_roles).
+* Para gestionar registros en la recopilación de registros, un usuario necesita una política de IAM con permisos para trabajar con el servicio de {{site.data.keyword.loganalysisshort}} en {{site.data.keyword.cloud_notm}}. Para obtener más información, consulte [Roles de IAM](/docs/services/CloudLogAnalysis?topic=cloudloganalysis-security_ov#iam_roles).
 
 ## Visualización y análisis de registros
 {: #logging_containers_ov_methods}
 
-Para analizar los datos de registro, utilice Kibana para realizar tareas de análisis avanzado. Kibana es una plataforma de visualización y análisis de código abierto que puede utilizar para supervisar, buscar, analizar y visualizar datos en diversos gráficos, como diagramas y tablas. Para obtener más información, consulte [Análisis de registros en Kibana](/docs/services/CloudLogAnalysis/kibana/analyzing_logs_Kibana.html#analyzing_logs_Kibana).
+Para analizar los datos de registro, utilice Kibana para realizar tareas de análisis avanzado. Kibana es una plataforma de visualización y análisis de código abierto que puede utilizar para supervisar, buscar, analizar y visualizar datos en diversos gráficos, como diagramas y tablas. Para obtener más información, consulte [Análisis de registros en Kibana](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-analyzing_logs_Kibana#analyzing_logs_Kibana).
 
 * Puede iniciar Kibana directamente desde un navegador web. Para obtener más información, consulte [Navegación a Kibana desde un navegador web](/docs/services/CloudLogAnalysis/kibana/launch.html#launch_Kibana_from_browser).
-* Puede iniciar Kibana desde la IU de [{{site.data.keyword.Bluemix_notm}} dentro del contexto de un clúster. Para obtener más información, consulte [Navegación a Kibana desde el panel de control de un contenedor desplegado en un clúster Kubernetes](/docs/services/CloudLogAnalysis/kibana/launch.html#launch_Kibana_for_containers_kube).
+* Puede iniciar Kibana desde la IU de {{site.data.keyword.cloud_notm}} dentro del contexto de un clúster. Para obtener más información, consulte [Navegación a Kibana desde el panel de control de un contenedor desplegado en un clúster de Kubernetes](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-launch#launch_Kibana_for_containers_kube).
 
-Si reenvía los datos de registro de una app que se ejecuta en contenedor al recopilador de registros de tiempo de ejecución del contenedor en un formato JSON, podrá buscar y analizar datos de registro en Kibana utilizando los campos JSON. Para obtener más información, consulte [Envío de registros para poder utilizar los campos en un mensaje como campos de búsqueda de Kibana](/docs/services/CloudLogAnalysis/containers/containers_kubernetes.html#send_data_in_json).
+Si reenvía los datos de registro de una app que se ejecuta en contenedor al recopilador de registros de tiempo de ejecución del contenedor en un formato JSON, podrá buscar y analizar datos de registro en Kibana utilizando los campos JSON. Para obtener más información, consulte [Envío de registros para poder utilizar los campos en un mensaje como campos de búsqueda de Kibana](/docs/services/CloudLogAnalysis/containers?topic=cloudloganalysis-containers_kubernetes#send_data_in_json).
 
 Para ver registros en Kibana, tenga en cuenta la siguiente información:
 
@@ -444,7 +467,7 @@ Para ver registros en Kibana, tenga en cuenta la siguiente información:
 
 
 
-## Guía de aprendizaje: Análisis de registros en Kibana para una app desplegada en un clúster Kubernetes
+## Guía de aprendizaje: Análisis de registros en Kibana para una app desplegada en un clúster de Kubernetes
 {: #tutorial1}
 
-Para aprender a utilizar Kibana para analizar los registros de un contenedor desplegado en un clúster de Kubernetes, consulte [Análisis de registros en Kibana para una app desplegada en un clúster Kubernetes](/docs/services/CloudLogAnalysis/tutorials/container_logs.html#container_logs).
+Para aprender a utilizar Kibana para analizar los registros de un contenedor desplegado en un clúster de Kubernetes, consulte [Análisis de registros en Kibana para una app desplegada en un clúster de Kubernetes](/docs/services/CloudLogAnalysis/tutorials?topic=cloudloganalysis-container_logs#container_logs).

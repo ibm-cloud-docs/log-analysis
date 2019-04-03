@@ -25,7 +25,7 @@ subcollection: cloudloganalysis
 # 로그 정보 보기
 {: #viewing_log_status1}
 
-로그 콜렉션에 수집되고 저장된 로그에 대한 정보를 얻으려면 [ibmcloud logging log-show](/docs/services/CloudLogAnalysis/reference/log_analysis_cli_cloud.html#status) 명령을 사용하십시오. 크기, 레코드 수, 로그 유형 및 Kibana에서 분석에 로그를 사용할 수 있는지 여부에 대한 정보를 얻을 수 있습니다.
+로그 콜렉션에 수집되고 저장된 로그에 대한 정보를 얻으려면 [ibmcloud logging log-show](/docs/services/CloudLogAnalysis/reference?topic=cloudloganalysis-log_analysis_cli#status) 명령을 사용하십시오. 크기, 레코드 수, 로그 유형 및 Kibana에서 분석에 로그를 사용할 수 있는지 여부에 대한 정보를 얻을 수 있습니다.
 {:shortdesc}
 
 ## 일정 기간 동안의 로그에 대한 정보 얻기
@@ -41,7 +41,7 @@ subcollection: cloudloganalysis
 
 1. {{site.data.keyword.Bluemix_notm}}의 지역, 조직 및 영역에 로그인하십시오. 
 
-    자세한 정보는 [{{site.data.keyword.Bluemix_notm}}에 로그인하는 방법](/docs/services/CloudLogAnalysis/qa/cli_qa.html#login)을 참조하십시오.
+    자세한 정보는 [{{site.data.keyword.Bluemix_notm}}에 로그인하는 방법](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#login)을 참조하십시오.
     
 2. 다음 명령을 실행하십시오.
 
@@ -77,7 +77,7 @@ subcollection: cloudloganalysis
 
 1. {{site.data.keyword.Bluemix_notm}}의 지역, 조직 및 영역에 로그인하십시오. 
 
-    자세한 정보는 [{{site.data.keyword.Bluemix_notm}}에 로그인하는 방법](/docs/services/CloudLogAnalysis/qa/cli_qa.html#login)을 참조하십시오.
+    자세한 정보는 [{{site.data.keyword.Bluemix_notm}}에 로그인하는 방법](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#login)을 참조하십시오.
     
 2. 다음 명령을 실행하십시오.
 
@@ -118,11 +118,11 @@ subcollection: cloudloganalysis
 
 1. {{site.data.keyword.Bluemix_notm}}의 지역, 조직 및 영역에 로그인하십시오. 
 
-    자세한 정보는 [{{site.data.keyword.Bluemix_notm}}에 로그인하는 방법](/docs/services/CloudLogAnalysis/qa/cli_qa.html#login)을 참조하십시오.
+    자세한 정보는 [{{site.data.keyword.Bluemix_notm}}에 로그인하는 방법](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#login)을 참조하십시오.
 	
 2. 계정 ID를 가져오십시오.
 
-    자세한 정보는 [계정의 GUID를 가져오는 방법](/docs/services/CloudLogAnalysis/qa/cli_qa.html#account_guid)을 참조하십시오.
+    자세한 정보는 [계정의 GUID를 가져오는 방법](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#account_guid)을 참조하십시오.
     
 3. 다음 명령을 실행하십시오.
 
@@ -164,11 +164,11 @@ subcollection: cloudloganalysis
 
 1. {{site.data.keyword.Bluemix_notm}}의 지역, 조직 및 영역에 로그인하십시오. 
 
-    자세한 정보는 [{{site.data.keyword.Bluemix_notm}}에 로그인하는 방법](/docs/services/CloudLogAnalysis/qa/cli_qa.html#login)을 참조하십시오.
+    자세한 정보는 [{{site.data.keyword.Bluemix_notm}}에 로그인하는 방법](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#login)을 참조하십시오.
 	
 2. 계정 ID를 가져오십시오.
 
-    자세한 정보는 [조직의 GUID를 가져오는 방법](/docs/services/CloudLogAnalysis/qa/cli_qa.html#org_guid)을 참조하십시오.
+    자세한 정보는 [조직의 GUID를 가져오는 방법](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#org_guid)을 참조하십시오.
     
 3. 다음 명령을 실행하십시오.
 

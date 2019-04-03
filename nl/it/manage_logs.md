@@ -31,20 +31,20 @@ Puoi utilizzare la CLI {{site.data.keyword.loganalysisshort}} e la API {{site.da
 
 Per gestire i log, tieni conto delle seguenti informazioni:
 
-1. L'ID utente deve avere una politica assegnata in {{site.data.keyword.Bluemix_notm}} per {{site.data.keyword.loganalysisshort}} con le autorizzazioni a gestire i log. 
+1. L'ID utente deve avere una politica assegnata in {{site.data.keyword.cloud_notm}} per {{site.data.keyword.loganalysisshort}} con le autorizzazioni a gestire i log. 
 
-    Per un elenco delle attività e dei ruoli IAM per ogni ruolo, vedi [Ruoli IAM](/docs/services/CloudLogAnalysis/security_ov.html#iam_roles). 
+    Per un elenco delle attività e dei ruoli IAM per ogni ruolo, vedi [Ruoli IAM](/docs/services/CloudLogAnalysis?topic=cloudloganalysis-security_ov#iam_roles). 
 	
-	Per ulteriori informazioni su come assegnare una politica, vedi [Assegna una politica IAM a un utente tramite la IU {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/security/grant_permissions.html#grant_permissions_ui_account).
+	Per ulteriori informazioni su come assegnare una politica, vedi [Assegna una politica IAM a un utente tramite la IU {{site.data.keyword.cloud_notm}}](/docs/services/CloudLogAnalysis/security?topic=cloudloganalysis-grant_permissions#grant_permissions_ui_account).
 	
 2. Questa funzione è disponibile solo per i piani di servizio che consentono la conservazione dei log. 
 
-    Per ulteriori informazioni sui piani di servizio, vedi [Piani di servizio](/docs/services/CloudLogAnalysis/log_analysis_ov.html#plans).
+    Per ulteriori informazioni sui piani di servizio, vedi [Piani di servizio](/docs/services/CloudLogAnalysis?topic=cloudloganalysis-log_analysis_ov#plans).
 
 Il servizio {{site.data.keyword.loganalysisshort}} offre due CLI che puoi utilizzare per gestire i log:
 
-* Un plugin {{site.data.keyword.loganalysisshort}} {{site.data.keyword.Bluemix_notm}}. Per ulteriori informazioni sulla CLI, vedi [CLI {{site.data.keyword.loganalysisshort}} (plugin {{site.data.keyword.Bluemix_notm}})](/docs/services/CloudLogAnalysis/reference/log_analysis_cli_cloud.html#log_analysis_cli).
-* Un plugin CF {{site.data.keyword.loganalysisshort}} (Obsoleto). Per ulteriori informazioni sulla CLI, vedi [Configurazione della CLI Analisi dei log (plugin CF)](/docs/services/CloudLogAnalysis/reference/logging_cli.html#logging_cli).
+* Un plugin {{site.data.keyword.loganalysisshort}} {{site.data.keyword.cloud_notm}}. Per ulteriori informazioni sulla CLI, vedi [CLI {{site.data.keyword.loganalysisshort}} (plugin {{site.data.keyword.cloud_notm}})](/docs/services/CloudLogAnalysis/reference?topic=cloudloganalysis-log_analysis_cli#log_analysis_cli).
+* Un plugin CF {{site.data.keyword.loganalysisshort}} (Obsoleto). Per ulteriori informazioni sulla CLI, vedi [Configurazione della CLI Analisi dei log (plugin CF)](/docs/services/CloudLogAnalysis/reference?topic=cloudloganalysis-logging_cli#logging_cli).
 
 
 ## Configurazione di una politica di conservazione dei log
@@ -59,12 +59,12 @@ Puoi utilizzare la CLI {{site.data.keyword.loganalysisshort}} per visualizzare e
 * Puoi modificare in qualsiasi momento la politica di conservazione.
 * Puoi disabilitare la politica impostandone il valore su *-1*. 
 
-**Nota:** quando disabiliti la politica di conservazione dei log, devi conservare i log nella Raccolta dei log. Puoi utilizzare il comando CLI [cf logging delete](/docs/services/CloudLogAnalysis/reference/logging_cli.html#delete4) per eliminare i log vecchi.
+**Nota:** quando disabiliti la politica di conservazione dei log, devi conservare i log nella Raccolta dei log. Puoi utilizzare il comando CLI [cf logging delete](/docs/services/CloudLogAnalysis/reference?topic=cloudloganalysis-logging_cli#delete4) per eliminare i log vecchi.
 
 Per ulteriori informazioni, vedi:
 
-* [Visualizzazione e configurazione della politica di conservazione dei log utilizzando il plugin {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/how-to/manage-logs/configuring_retention_policy_cloud.html#configuring_retention_policy).
-* [Visualizzazione e configurazione della politica di conservazione dei log utilizzando il plugin CF](/docs/services/CloudLogAnalysis/how-to/manage-logs/configuring_retention_policy.html#configuring_retention_policy).
+* [Visualizzazione e configurazione della politica di conservazione dei log utilizzando il plugin {{site.data.keyword.cloud_notm}}](/docs/services/CloudLogAnalysis/how-to/manage-logs?topic=cloudloganalysis-configuring_retention_policy#configuring_retention_policy).
+* [Visualizzazione e configurazione della politica di conservazione dei log utilizzando il plugin CF](/docs/services/CloudLogAnalysis/how-to/manage-logs?topic=cloudloganalysis-configuring_retention_policy1#configuring_retention_policy).
 
 
 ## Eliminazione dei log
@@ -74,11 +74,11 @@ I log archiviati nella Ricerca dei log vengono eliminati dopo 3 giorni.
 
 I log archiviati in Raccolta dei log vengono conservati finché non configuri una politica di conservazione o finché non li elimini manualmente. 
 
-* Puoi configurare una politica di conservazione log per definire il numero di giorni in cui desideri conservare i log nella raccolta di log. Per maggiori informazioni, consulta [Visualizzazione e configurazione della politica di conservazione dei log utilizzando il plugin {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/how-to/manage-logs/configuring_retention_policy_cloud.html#configuring_retention_policy).
+* Puoi configurare una politica di conservazione log per definire il numero di giorni in cui desideri conservare i log nella raccolta di log. Per maggiori informazioni, consulta [Visualizzazione e configurazione della politica di conservazione dei log utilizzando il plugin {{site.data.keyword.cloud_notm}}](/docs/services/CloudLogAnalysis/how-to/manage-logs?topic=cloudloganalysis-configuring_retention_policy#configuring_retention_policy).
 
-* Puoi utilizzare la [API Raccolta dei log](https://console.bluemix.net/apidocs/948-ibm-cloud-log-collection-api?&language=node&env_id=ibm%3Ayp%3Aus-south#introduction){: new_window} oppure la [CLI Raccolta dei log](/docs/services/CloudLogAnalysis/reference/log_analysis_cli_cloud.html#log_analysis_cli){: new_window} per eliminare i log manualmente da Raccolta dei log. 
+* Puoi utilizzare la [API Raccolta dei log](https://console.bluemix.net/apidocs/948-ibm-cloud-log-collection-api?&language=node&env_id=ibm%3Ayp%3Aus-south#introduction){: new_window} oppure la [CLI Raccolta dei log](/docs/services/CloudLogAnalysis/reference?topic=cloudloganalysis-log_analysis_cli#log_analysis_cli){: new_window} per eliminare i log manualmente da Raccolta dei log. 
 
-* Puoi utilizzare la CLI. Per ulteriori informazioni sull'eliminazione manuale dei log tramite la CLI, vedi [ibmcloud logging log-delete utilizzando il plugin {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/how-to/manage-logs/deleting_logs_cloud.html#deleting_logs).
+* Puoi utilizzare la CLI. Per ulteriori informazioni sull'eliminazione manuale dei log tramite la CLI, vedi [ibmcloud logging log-delete utilizzando il plugin {{site.data.keyword.cloud_notm}}](/docs/services/CloudLogAnalysis/how-to/manage-logs?topic=cloudloganalysis-deleting_logs#deleting_logs).
     
 
 
@@ -89,8 +89,8 @@ Puoi cercare nei log degli ultimi 3 giorni in Kibana. Per poter analizzare i dat
 
 Per ulteriori informazioni, vedi:
 
-* [Download dei log utilizzando il plugin {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/how-to/manage-logs/downloading_logs_cloud.html#downloading_logs).
-* [Download dei log utilizzando il plugin CF](/docs/services/CloudLogAnalysis/how-to/manage-logs/downloading_logs.html#downloading_logs1).
+* [Download dei log utilizzando il plugin {{site.data.keyword.cloud_notm}}](/docs/services/CloudLogAnalysis/how-to/manage-logs?topic=cloudloganalysis-downloading_logs#downloading_logs).
+* [Download dei log utilizzando il plugin CF](/docs/services/CloudLogAnalysis/how-to/manage-logs?topic=cloudloganalysis-downloading_logs1#downloading_logs1).
 
 
 
@@ -99,23 +99,23 @@ Per ulteriori informazioni, vedi:
 
 Per ottenere informazioni generali sui tuoi log, usa il comando `ibmcloud logging log-show` oppure il comando `cf logging status`. Per ulteriori informazioni, vedi:
 
-* [Visualizzazione di informazioni sui log utilizzando il plugin {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/how-to/manage-logs/viewing_log_information_cloud.html#viewing_log_status1)
-* [Visualizzazione di informazioni sui log utilizzando il plugin CF](/docs/services/CloudLogAnalysis/how-to/manage-logs/viewing_log_information.html#viewing_log_status1).
+* [Visualizzazione di informazioni sui log utilizzando il plugin {{site.data.keyword.cloud_notm}}](/docs/services/CloudLogAnalysis/how-to/manage-logs?topic=cloudloganalysis-viewing_log_status1#viewing_log_status1)
+* [Visualizzazione di informazioni sui log utilizzando il plugin CF](/docs/services/CloudLogAnalysis/how-to/manage-logs?topic=cloudloganalysis-viewing_log_status#viewing_log_status1).
 
-Ad esempio, per mantenere i costi sotto controllo, potresti voler monitorare la dimensione dei log delle tue applicazioni per un periodo di tempo. Ad esempio, potresti voler conoscere la dimensione di ogni tipo di log durante una settimana per uno spazio {{site.data.keyword.Bluemix_notm}} per identificare se un'applicazione o un servizio sta generando più log del previsto. Per controllare la dimensione dei tuoi log, usa il comando `ibmcloud logging log-show` oppure il comando `cf logging status`.
+Ad esempio, per mantenere i costi sotto controllo, potresti voler monitorare la dimensione dei log delle tue applicazioni per un periodo di tempo. Ad esempio, potresti voler conoscere la dimensione di ogni tipo di log durante una settimana per uno spazio {{site.data.keyword.cloud_notm}} per identificare se un'applicazione o un servizio sta generando più log del previsto. Per controllare la dimensione dei tuoi log, usa il comando `ibmcloud logging log-show` oppure il comando `cf logging status`.
 
 Puoi visualizzare le informazioni sui log archiviati in un dominio dello spazio, un dominio dell'organizzazione o un dominio dell'account.
 
 
 
-## Installazione della CLI {{site.data.keyword.loganalysisshort_notm}} (plugin {{site.data.keyword.Bluemix_notm}})
+## Installazione della CLI {{site.data.keyword.loganalysisshort_notm}} (plugin {{site.data.keyword.cloud_notm}})
 {: #install_cli2}
 
-Per informazioni su come installare la CLI, vedi [Installazione della CLI di registrazione](/docs/services/CloudLogAnalysis/how-to/manage-logs/config_log_collection_cli_cloud.html#config_log_collection_cli).
+Per informazioni su come installare la CLI, vedi [Installazione della CLI di registrazione](/docs/services/CloudLogAnalysis/how-to/manage-logs?topic=cloudloganalysis-config_log_collection_cli#config_log_collection_cli).
 
 Per controllare la versione della CLI, esegui il comando `ibmcloud plugin list`.
 
-Per ottenere supporto su come eseguire i comandi, vedi [Come ottenere supporto per la riga di comando per eseguire i comandi](/docs/services/CloudLogAnalysis/how-to/manage-logs/config_log_collection_cli_cloud.html#command_cli_help).
+Per ottenere supporto su come eseguire i comandi, vedi [Come ottenere supporto per la riga di comando per eseguire i comandi](/docs/services/CloudLogAnalysis/how-to/manage-logs?topic=cloudloganalysis-config_log_collection_cli#command_cli_help).
 
 
 ## Endpoint registrazione
@@ -150,7 +150,7 @@ La seguente tabella elenca gli URL di registrazione per ogni regione:
 ## Ruoli di cui un utente ha bisogno per gestire i log
 {: #roles1}
 
-In {{site.data.keyword.Bluemix_notm}}, puoi assegnare uno o più ruoli agli utenti. Questi ruoli definiscono quali attività sono abilitate per tale utente per lavorare con il servizio {{site.data.keyword.loganalysisshort}}. 
+In {{site.data.keyword.cloud_notm}}, puoi assegnare uno o più ruoli agli utenti. Questi ruoli definiscono quali attività sono abilitate per tale utente per lavorare con il servizio {{site.data.keyword.loganalysisshort}}. 
 
 Le seguenti tabelle elencano i ruoli che un utente deve avere per gestire i log:
 

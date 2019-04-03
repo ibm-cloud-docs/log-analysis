@@ -83,7 +83,7 @@ Kibana가 표시하는 로그 정보에는 사용자가 로그인한 조직의 �
 
 기본적으로 **검색** 페이지는 기본 인덱스 패턴이 선택되고 시간 필터가 최근 15분으로 설정되어 로드됩니다. 
 
-검색 페이지에 로그 항목이 표시되지 않는 경우, 시간 선택도구를 조정하십시오. 자세한 정보는 [시간 필터 설정](/docs/services/CloudLogAnalysis/kibana/filter_logs.html#set_time_filter)을 참조하십시오.
+검색 페이지에 로그 항목이 표시되지 않는 경우, 시간 선택도구를 조정하십시오. 자세한 정보는 [시간 필터 설정](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-filter_logs#set_time_filter)을 참조하십시오.
 
 	
 	
@@ -98,7 +98,7 @@ Kibana가 표시하는 로그 정보에는 사용자가 로그인한 조직의 �
 
 1. 웹 브라우저를 열고 Kibana를 실행하십시오. 그런 다음, Kibana 사용자 인터페이스에 로그인하십시오.
 
-    지역별 URL 목록을 보려면 [Kibana를 실행하는 URL](/docs/services/CloudLogAnalysis/kibana/analyzing_logs_Kibana.html#urls_kibana)을 참조하십시오.
+    지역별 URL 목록을 보려면 [Kibana를 실행하는 URL](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-analyzing_logs_Kibana#urls_kibana)을 참조하십시오.
     
     Kibana의 검색 페이지가 열립니다.
 	
@@ -115,7 +115,7 @@ Kibana가 표시하는 로그 정보에는 사용자가 로그인한 조직의 �
 	
 	    여기서 *Space_ID*는 로그 데이터를 보고 분석하려는 영역의 GUID입니다. 
 	
-검색 페이지에 로그 항목이 표시되지 않는 경우, 시간 선택도구를 조정하십시오. 자세한 정보는 [시간 필터 설정](/docs/services/CloudLogAnalysis/kibana/filter_logs.html#set_time_filter)을 참조하십시오.
+검색 페이지에 로그 항목이 표시되지 않는 경우, 시간 선택도구를 조정하십시오. 자세한 정보는 [시간 필터 설정](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-filter_logs#set_time_filter)을 참조하십시오.
 
 
 	
@@ -143,7 +143,7 @@ Kibana에서 Cloud Foundry 애플리케이션의 로그를 보려면 다음 단�
 
     기본적으로 **검색** 페이지는 기본 인덱스 패턴이 선택되고 시간 필터가 최근 15분으로 설정되어 로드됩니다. 검색 조회는 CF 앱의 모든 항목과 일치하도록 설정됩니다.
 
-    검색 페이지에 로그 항목이 표시되지 않는 경우, 시간 선택도구를 조정하십시오. 자세한 정보는 [시간 필터 설정](/docs/services/CloudLogAnalysis/kibana/filter_logs.html#set_time_filter)을 참조하십시오.
+    검색 페이지에 로그 항목이 표시되지 않는 경우, 시간 선택도구를 조정하십시오. 자세한 정보는 [시간 필터 설정](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-filter_logs#set_time_filter)을 참조하십시오.
 
 	
 	
@@ -192,7 +192,7 @@ Kibana에서 Docker 컨테이너의 로그를 보려면 다음 단계를 완료�
 
     기본적으로 **검색** 페이지는 기본 인덱스 패턴이 선택되고 시간 필터가 최근 30초로 설정되어 로드됩니다. 검색 조회는 Docker 컨테이너의 모든 항목과 일치하도록 설정됩니다.
 
-    검색 페이지에 로그 항목이 표시되지 않는 경우, 시간 선택도구를 조정하십시오. 자세한 정보는 [시간 필터 설정](/docs/services/CloudLogAnalysis/kibana/filter_logs.html#set_time_filter)을 참조하십시오.
+    검색 페이지에 로그 항목이 표시되지 않는 경우, 시간 선택도구를 조정하십시오. 자세한 정보는 [시간 필터 설정](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-filter_logs#set_time_filter)을 참조하십시오.
 
 	
 

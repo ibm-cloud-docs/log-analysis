@@ -52,12 +52,12 @@ subcollection: cloudloganalysis
 
 |任务|更多信息|
 |------|------------------|
-|[新建可视化项](/docs/services/CloudLogAnalysis/kibana/kibana_visualizations.html#create)|通过在*发现*页面中定义并保存的搜索，或通过在*可视化*页面中定义的新查询，可以创建可视化项。|
-|[删除可视化项](/docs/services/CloudLogAnalysis/kibana/kibana_visualizations.html#delete)|删除不需要的可视化项。|
-|[导出可视化项](/docs/services/CloudLogAnalysis/kibana/kibana_visualizations.html#export)|可以将可视化项导出为 JSON 文件。|
-|[导入可视化项](/docs/services/CloudLogAnalysis/kibana/kibana_visualizations.html#import1)|可以将可视化项作为 JSON 文件导入。|
-|[装入可视化项](/docs/services/CloudLogAnalysis/kibana/kibana_visualizations.html#reload2)|可以上传可视化项以更新其数据，修改可视化项或分析数据。|
-|[保存可视化项](/docs/services/CloudLogAnalysis/kibana/kibana_visualizations.html#save2)|可以保存可视化项以供未来复用。|
+|[新建可视化项](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-kibana_visualizations#create)|通过在*发现*页面中定义并保存的搜索，或通过在*可视化*页面中定义的新查询，可以创建可视化项。|
+|[删除可视化项](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-kibana_visualizations#delete)|删除不需要的可视化项。|
+|[导出可视化项](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-kibana_visualizations#export)|可以将可视化项导出为 JSON 文件。|
+|[导入可视化项](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-kibana_visualizations#import1)|可以将可视化项作为 JSON 文件导入。|
+|[装入可视化项](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-kibana_visualizations#reload2)|可以上传可视化项以更新其数据，修改可视化项或分析数据。|
+|[保存可视化项](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-kibana_visualizations#save2)|可以保存可视化项以供未来复用。|
 {: caption="表 2. 使用可视化项的任务" caption-side="top"}
 
 
@@ -82,7 +82,7 @@ subcollection: cloudloganalysis
 
     * 如果选择**通过新搜索选择索引**，请定义新查询。该查询用于定义由可视化项检索并使用的数据子集。
 
-        有关更多信息，请参阅[通过定义定制查询来过滤日志](/docs/services/CloudLogAnalysis/kibana/define_search.html#define_search)。
+        有关更多信息，请参阅[通过定义定制查询来过滤日志](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-define_search#define_search)。
 
 有关 Kibana 的更多信息，请参阅 [Kibana User Guide ![外部链接图标](../../../icons/launch-glyph.svg "外部链接图标")](https://www.elastic.co/guide/en/kibana/5.1/index.html){: new_window}。
 

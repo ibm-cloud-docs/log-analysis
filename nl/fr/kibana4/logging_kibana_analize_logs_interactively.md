@@ -51,12 +51,12 @@ Vous pouvez effectuez les tâches suivantes pour personnaliser le tableau de la 
 
 | Tâche | Description | 
 |------|-------------|
-| [Ajouter une colonne de zone](/docs/services/CloudLogAnalysis/kibana4/logging_kibana_analize_logs_interactively.html#kibana_discover_add_fields_to_table) | Ajout de zones pour affichage de données spécifiques requises pour l'analyse au lieu du message intégral. |
-| [Réorganiser une colonne de zone](/docs/services/CloudLogAnalysis/kibana4/logging_kibana_analize_logs_interactively.html#kibana_discover_rearrange_fields_in_table) | Déplacement de la position d'une zone vers celle voulue. |
-| [Afficher une entrée](/docs/services/CloudLogAnalysis/kibana4/logging_kibana_analize_logs_interactively.html#kibana_discover_view_entry_in_table) | Développement d'une entrée du tableau pour afficher ses informations détaillées analysées par zone ou en tant qu'objet JSON. |
-| [Supprimer une colonne de zone](/docs/services/CloudLogAnalysis/kibana4/logging_kibana_analize_logs_interactively.html#kibana_discover_remove_fields_from_table) | Suppression d'une zone superflue de la vue pour analyse. |
-| [Classer les entrées par valeur d'une zone indexée](/docs/services/CloudLogAnalysis/kibana4/logging_kibana_analize_logs_interactively.html#kibana_discover_sort_by_table) | Réorganisation des entrées pour faciliter l'analyse. |
-| [Actualiser les données automatiquement](/docs/services/CloudLogAnalysis/kibana4/logging_kibana_analize_logs_interactively.html#kibana_discover_view_refresh_interval) | Actualisation des données affichées dans le tableau avec les entrées les plus récentes. Par défaut, l'actualisation est en mode **OFF** (désactivée). |
+| [Ajouter une colonne de zone](/docs/services/CloudLogAnalysis/kibana4?topic=cloudloganalysis-kibana_analize_logs_interactively#kibana_discover_add_fields_to_table) | Ajout de zones pour affichage de données spécifiques requises pour l'analyse au lieu du message intégral. |
+| [Réorganiser une colonne de zone](/docs/services/CloudLogAnalysis/kibana4?topic=cloudloganalysis-kibana_analize_logs_interactively#kibana_discover_rearrange_fields_in_table) | Déplacement de la position d'une zone vers celle voulue. |
+| [Afficher une entrée](/docs/services/CloudLogAnalysis/kibana4?topic=cloudloganalysis-kibana_analize_logs_interactively#kibana_discover_view_entry_in_table) | Développement d'une entrée du tableau pour afficher ses informations détaillées analysées par zone ou en tant qu'objet JSON. |
+| [Supprimer une colonne de zone](/docs/services/CloudLogAnalysis/kibana4?topic=cloudloganalysis-kibana_analize_logs_interactively#kibana_discover_remove_fields_from_table) | Suppression d'une zone superflue de la vue pour analyse. |
+| [Classer les entrées par valeur d'une zone indexée](/docs/services/CloudLogAnalysis/kibana4?topic=cloudloganalysis-kibana_analize_logs_interactively#kibana_discover_sort_by_table) | Réorganisation des entrées pour faciliter l'analyse. |
+| [Actualiser les données automatiquement](/docs/services/CloudLogAnalysis/kibana4?topic=cloudloganalysis-kibana_analize_logs_interactively#kibana_discover_view_refresh_interval) | Actualisation des données affichées dans le tableau avec les entrées les plus récentes. Par défaut, l'actualisation est en mode **OFF** (désactivée). |
 {: caption="Tableau 2. Tâches de personnalisation d'un tableau" caption-side="top"}
 
 <br>
@@ -97,7 +97,7 @@ Vous pouvez également examiner des statistiques dans la page Discover :
 * Statistiques par zone. 
 * Statistiques dans l'histogramme selon l'horodatage (`@timestamp`) configuré.
 
-Pour plus d'informations, voir [Affichage des statistiques sur les données de zone](/docs/services/CloudLogAnalysis/kibana4/logging_kibana_analize_logs_interactively.html#kibana_discover_view_fields_stats).
+Pour plus d'informations, voir [Affichage des statistiques sur les données de zone](/docs/services/CloudLogAnalysis/kibana4?topic=cloudloganalysis-kibana_analize_logs_interactively#kibana_discover_view_fields_stats).
 
 **Remarque :** les données affichées dans le tableau et l'histogramme sont statiques. Pour pouvoir afficher les plus récentes, vous devez définir un intervalle d'actualisation. 
 
@@ -168,7 +168,7 @@ Prenez en compte les informations suivantes pour identifier les données disponi
 
     Le canevas d'index définit la requête de recherche appliquée par défaut pour afficher les entrées sur vos pages Kibana. Par défaut, il est préconfiguré et permet d'afficher toutes les données disponibles dans un espace. Exemple :
 
-    * Si vous lancez Kibana depuis l'interface utilisateur {{site.data.keyword.Bluemix_notm}}, à savoir depuis la section *Journal* des pages de l'interface utilisateur d'une ressource spécifique comme une application  ou un conteneur d'application Cloud Foundry (CF), le canevas d'index appliqué inclut toutes les entrées disponibles dans l'espace.
+    * Si vous lancez Kibana depuis l'interface utilisateur {{site.data.keyword.Bluemix_notm}}, à savoir depuis la section *Journal* des pages de l'interface utilisateur d'une ressource spécifique comme une application ou un conteneur d'application Cloud Foundry (CF), le canevas d'index appliqué inclut toutes les entrées disponibles dans l'espace.
     
     * Si vous lancez Kibana depuis un navigateur, le canevas d'index appliqué inclut toutes les entrées disponibles dans l'espace où Kibana indique que vous vous êtes connecté.
         

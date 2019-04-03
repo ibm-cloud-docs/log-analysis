@@ -51,12 +51,12 @@ Puoi eseguire ognuna delle seguenti attività per personalizzare la tabella nell
 
 | Attività | Descrizione | 
 |------|-------------|
-| [Aggiungere una colonna di campo](/docs/services/CloudLogAnalysis/kibana4/logging_kibana_analize_logs_interactively.html#kibana_discover_add_fields_to_table) | Aggiungere i campi per visualizzare i dati specifici necessari per l'analisi invece del messaggio completo. |
-| [Riorganizzare una colonna di campo](/docs/services/CloudLogAnalysis/kibana4/logging_kibana_analize_logs_interactively.html#kibana_discover_rearrange_fields_in_table) | Spostare la posizione di un campo nella tabella nella posizione che desideri. |
-| [Visualizzare una voce](/docs/services/CloudLogAnalysis/kibana4/logging_kibana_analize_logs_interactively.html#kibana_discover_view_entry_in_table) | Espandere una voce nella tabella per visualizzare i dettagli della voce analizzata per il campo o come JSON. |
-| [Rimuovere una colonna di campo](/docs/services/CloudLogAnalysis/kibana4/logging_kibana_analize_logs_interactively.html#kibana_discover_remove_fields_from_table) | Rimuovere un campo quando non è più necessario nella vista delle analisi. |
-| [Ordinare le voci per il valore di un campo indicizzato](/docs/services/CloudLogAnalysis/kibana4/logging_kibana_analize_logs_interactively.html#kibana_discover_sort_by_table) | Riordinare le voci per analisi più semplici. |
-| [Aggiornare automaticamente i dati](/docs/services/CloudLogAnalysis/kibana4/logging_kibana_analize_logs_interactively.html#kibana_discover_view_refresh_interval) | Aggiornare i dati visualizzati nella tabella con le ultime voci. Per impostazione predefinita, l'aggiornamento è **DISATTIVO**. |
+| [Aggiungere una colonna di campo](/docs/services/CloudLogAnalysis/kibana4?topic=cloudloganalysis-kibana_analize_logs_interactively#kibana_discover_add_fields_to_table) | Aggiungere i campi per visualizzare i dati specifici necessari per l'analisi invece del messaggio completo. |
+| [Riorganizzare una colonna di campo](/docs/services/CloudLogAnalysis/kibana4?topic=cloudloganalysis-kibana_analize_logs_interactively#kibana_discover_rearrange_fields_in_table) | Spostare la posizione di un campo nella tabella nella posizione che desideri. |
+| [Visualizzare una voce](/docs/services/CloudLogAnalysis/kibana4?topic=cloudloganalysis-kibana_analize_logs_interactively#kibana_discover_view_entry_in_table) | Espandere una voce nella tabella per visualizzare i dettagli della voce analizzata per il campo o come JSON. |
+| [Rimuovere una colonna di campo](/docs/services/CloudLogAnalysis/kibana4?topic=cloudloganalysis-kibana_analize_logs_interactively#kibana_discover_remove_fields_from_table) | Rimuovere un campo quando non è più necessario nella vista delle analisi. |
+| [Ordinare le voci per il valore di un campo indicizzato](/docs/services/CloudLogAnalysis/kibana4?topic=cloudloganalysis-kibana_analize_logs_interactively#kibana_discover_sort_by_table) | Riordinare le voci per analisi più semplici. |
+| [Aggiornare automaticamente i dati](/docs/services/CloudLogAnalysis/kibana4?topic=cloudloganalysis-kibana_analize_logs_interactively#kibana_discover_view_refresh_interval) | Aggiornare i dati visualizzati nella tabella con le ultime voci. Per impostazione predefinita, l'aggiornamento è **DISATTIVO**. |
 {: caption="Tabella 2. Attività per personalizzare una tabella" caption-side="top"}
 
 <br>
@@ -97,7 +97,7 @@ Puoi inoltre esaminare le statistiche nella pagina Rileva:
 * Puoi visualizzare le statistiche per il campo. 
 * Puoi visualizzare le statistiche nell'istogramma per `@timestamp` che hai configurato.
 
-Per maggiori informazioni, vedi [Visualizzazione delle statistiche dei dati del campo](/docs/services/CloudLogAnalysis/kibana4/logging_kibana_analize_logs_interactively.html#kibana_discover_view_fields_stats).
+Per maggiori informazioni, vedi [Visualizzazione delle statistiche dei dati del campo](/docs/services/CloudLogAnalysis/kibana4?topic=cloudloganalysis-kibana_analize_logs_interactively#kibana_discover_view_fields_stats).
 
 **Nota:** i dati visualizzati nella tabella e nell'istogramma sono statici. Per continuare a visualizzare le ultime voci, devi impostare un intervallo di aggiornamento. 
 

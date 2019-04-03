@@ -49,7 +49,7 @@ Führen Sie die folgenden Schritte aus, um eine Instanz des {{site.data.keyword.
 
 5. Wählen Sie einen Serviceplan aus. Standardmäßig ist der Plan **Lite** festgelegt.
 
-    Weitere Informationen zu Serviceplänen finden Sie unter [Servicepläne](/docs/services/CloudLogAnalysis/log_analysis_ov.html#plans).
+    Weitere Informationen zu Serviceplänen finden Sie unter [Servicepläne](/docs/services/CloudLogAnalysis?topic=cloudloganalysis-log_analysis_ov#plans).
 	
 6. Klicken Sie auf **Erstellen**, um den {{site.data.keyword.loganalysisshort}}-Service in dem {{site.data.keyword.Bluemix_notm}}-Bereich bereitzustellen, an dem Sie angemeldet sind.
   
@@ -62,13 +62,13 @@ Führen Sie die folgenden Schritte aus, um eine Instanz des {{site.data.keyword.
 
 1. [Voraussetzung] Installieren Sie die {{site.data.keyword.Bluemix_notm}}-Befehlszeilenschnittstelle.
 
-   Weitere Informationen finden Sie in [{{site.data.keyword.Bluemix_notm}}-Befehlszeilenschnittstelle installieren](/docs/cli/index.html#overview).
+   Weitere Informationen finden Sie in [{{site.data.keyword.Bluemix_notm}}-Befehlszeilenschnittstelle installieren](/docs/cli?topic=cloud-cli-ibmcloud-cli#overview).
    
    Fahren Sie mit dem nächsten Schritt fort, wenn die Befehlszeilenschnittstelle bereits installiert ist.
     
 2. Melden Sie sich unter {{site.data.keyword.Bluemix_notm}} an der Region, der Organisation und dem Bereich an, in der/dem Sie den Service bereitstellen möchten. 
 
-    Weitere Informationen finden Sie unter [Wie melde ich mich bei {{site.data.keyword.Bluemix_notm}} an?](/docs/services/CloudLogAnalysis/qa/cli_qa.html#login).
+    Weitere Informationen finden Sie in [Wie melde ich mich bei {{site.data.keyword.Bluemix_notm}} an?](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#login).
 	
 3. Führen Sie den Befehl `ibmcloud service create` aus, um eine Instanz bereitzustellen.
 
@@ -80,7 +80,7 @@ Führen Sie die folgenden Schritte aus, um eine Instanz des {{site.data.keyword.
 	Dabei gilt:
 	
 	* service_name ist der Name des Service, also **ibmLogAnalysis**.
-	* service_plan ist der Name des Serviceplans. Eine Liste der Pläne finden Sie unter [Servicepläne](/docs/services/CloudLogAnalysis/log_analysis_ov.html#plans).
+	* service_plan ist der Name des Serviceplans. Eine Liste der Pläne finden Sie unter [Servicepläne](/docs/services/CloudLogAnalysis?topic=cloudloganalysis-log_analysis_ov#plans).
 	* service_instance_name ist der Name, den Sie für die neue von Ihnen erstellte Serviceinstanz verwenden.
 
 	Beispiel: Führen Sie zum Erstellen einer Instanz des Service {{site.data.keyword.loganalysisshort}} mit einem Lite-Plan den folgenden Befehl aus:

@@ -25,7 +25,7 @@ subcollection: cloudloganalysis
 # Visualizando informações de log
 {: #viewing_log_status}
 
-Use o comando [cf logging status](/docs/services/CloudLogAnalysis/reference/logging_cli.html#status1) para obter informações sobre os logs coletados e armazenados na Coleção de logs.
+Use o comando [cf logging status](/docs/services/CloudLogAnalysis/reference?topic=cloudloganalysis-logging_cli#status1) para obter informações sobre os logs coletados e armazenados na Coleção de logs.
 {:shortdesc}
 
 ## Obtendo informações sobre logs em um período de tempo
@@ -43,7 +43,7 @@ Conclua as etapas a seguir para obter informações sobre logs:
 
 1. Efetue login em uma região, uma organização e um espaço no {{site.data.keyword.Bluemix_notm}}. 
 
-    Para obter mais informações, veja [Como efetuar login no {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/qa/cli_qa.html#login).
+    Para obter mais informações, veja [Como efetuar login no {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#login).
     
 2. Execute o comando *status*.
 
@@ -75,7 +75,7 @@ Conclua as etapas a seguir para obter informações sobre um tipo de log durante
 
 1. Efetue login em uma região, uma organização e um espaço no {{site.data.keyword.Bluemix_notm}}. 
 
-    Para obter mais informações, veja [Como efetuar login no {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/qa/cli_qa.html#login).
+    Para obter mais informações, veja [Como efetuar login no {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#login).
     
 2. Execute o comando *status*.
 
@@ -84,7 +84,7 @@ Conclua as etapas a seguir para obter informações sobre um tipo de log durante
     ```
     {: codeblock}
     
-    em que
+    Em que
     
     * *-s* é usado para configurar a data de início em Universal Coordinated Time (UTC): *AAAA-MM-DD*
     * *-e* é usado para configurar a data de encerramento em Universal Coordinated Time (UTC): *AAAA-MM-DD*
@@ -118,7 +118,7 @@ Conclua as etapas a seguir para obter dados da conta sobre logs:
 
 1. Efetue login em uma região, uma organização e um espaço no {{site.data.keyword.Bluemix_notm}}. 
 
-    Para obter mais informações, veja [Como efetuar login no {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/qa/cli_qa.html#login).
+    Para obter mais informações, veja [Como efetuar login no {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#login).
     
 2. Execute o comando *status*.
 
@@ -127,7 +127,7 @@ Conclua as etapas a seguir para obter dados da conta sobre logs:
     ```
     {: codeblock}
     
-    em que
+    Em que
     
     * *-a* é usado para especificar informações de nível de conta
     * *-s* é usado para configurar a data de início em Universal Coordinated Time (UTC): *AAAA-MM-DD*

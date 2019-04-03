@@ -36,16 +36,16 @@ A figura a seguir mostra uma visualização de alto nível de criação de log p
 
 ![Visão geral do componente de alto nível para apps CF](images/logging_cf_apps_ov.gif "Visão geral do componente de alto nível para apps CF")
  
-A criação de log de apps Cloud Foundry é ativada automaticamente quando a infraestrutura do Cloud Foundry é usada para executar apps no {{site.data.keyword.Bluemix_notm}}. Para visualizar os logs de tempo de execução do Cloud Foundry, deve-se gravar os logs em STDOUT e STDERR. Para obter mais informações, veja [Criação de log do aplicativo de tempo de execução por meio de apps CF](/docs/services/CloudLogAnalysis/cfapps/logging_writing_to_log_from_cf_app.html#logging_writing_to_log_from_cf_app).
+A criação de log de apps Cloud Foundry é ativada automaticamente quando a infraestrutura do Cloud Foundry é usada para executar apps no {{site.data.keyword.Bluemix_notm}}. Para visualizar os logs de tempo de execução do Cloud Foundry, deve-se gravar os logs em STDOUT e STDERR. Para obter mais informações, veja [Criação de log do aplicativo de tempo de execução por meio de apps CF](/docs/services/CloudLogAnalysis/cfapps?topic=cloudloganalysis-logging_writing_to_log_from_cf_app#logging_writing_to_log_from_cf_app).
 
-O {{site.data.keyword.Bluemix_notm}} mantém uma quantia limitada de informação de log. Quando as informações são registradas, as informações antigas são substituídas pelas informações mais novas. Caso precise obedecer às políticas organizacionais ou de segmento de mercado que requeiram que você guarde todas ou parte das informações de log para auditoria ou outros propósitos, será possível transmitir seus logs para um host do log externo, como um serviço de gerenciamento de log de terceiro ou outro host. Para obter mais informações, veja [Configurando hosts do log externo](/docs/services/CloudLogAnalysis/external/logging_external_hosts.html#thirdparty_logging).
+O {{site.data.keyword.Bluemix_notm}} mantém uma quantia limitada de informação de log. Quando as informações são registradas, as informações antigas são substituídas pelas informações mais novas. Caso precise obedecer às políticas organizacionais ou de segmento de mercado que requeiram que você guarde todas ou parte das informações de log para auditoria ou outros propósitos, será possível transmitir seus logs para um host do log externo, como um serviço de gerenciamento de log de terceiro ou outro host. Para obter mais informações, veja [Configurando hosts do log externo](/docs/services/CloudLogAnalysis/external?topic=cloudloganalysis-thirdparty_logging#thirdparty_logging).
 
 ## Ingestão de log
 {: #log_ingestion1}
 
-É possível enviar logs para o {{site.data.keyword.loganalysisshort}} usando o multi-tenant Logstash Forwarder. Para obter mais informações, veja [Enviar dados do log usando um Multi-Tenant Logstash Forwarder (mt-logstash-forwarder).](/docs/services/CloudLogAnalysis/how-to/send-data/send_data_mt.html#send_data_mt).
+É possível enviar logs para o {{site.data.keyword.loganalysisshort}} usando o multi-tenant Logstash Forwarder. Para obter mais informações, veja [Enviar dados do log usando um Multi-Tenant Logstash Forwarder (mt-logstash-forwarder).](/docs/services/CloudLogAnalysis/how-to/send-data?topic=cloudloganalysis-send_data_mt#send_data_mt).
 
-O serviço {{site.data.keyword.loganalysisshort}} oferece planos diferentes. Todos os planos, com a exceção do plano *Lite*, incluem a capacidade de enviar logs para a Coleção de logs. Para obter mais informações sobre os planos, veja [Planos de serviços](/docs/services/CloudLogAnalysis/log_analysis_ov.html#plans).
+O serviço {{site.data.keyword.loganalysisshort}} oferece planos diferentes. Todos os planos, com a exceção do plano *Lite*, incluem a capacidade de enviar logs para a Coleção de logs. Para obter mais informações sobre os planos, veja [Planos de serviços](/docs/services/CloudLogAnalysis?topic=cloudloganalysis-log_analysis_ov#plans).
 
 ## Coleta de registro
 {: #log_collection}
@@ -58,17 +58,17 @@ reconfiguradas diariamente às 0h30 UTC.
 
 O serviço {{site.data.keyword.loganalysisshort}} fornece planos adicionais que permitem armazenar logs na Coleção de logs o tempo que for necessário. 
 
-* É possível configurar uma política de retenção de log para definir o número de dias que você deseja manter os logs na Coleção de logs. Para obter mais informações, veja [Política de retenção de log](/docs/services/CloudLogAnalysis/manage_logs.html#log_retention_policy).
+* É possível configurar uma política de retenção de log para definir o número de dias que você deseja manter os logs na Coleção de logs. Para obter mais informações, veja [Política de retenção de log](/docs/services/CloudLogAnalysis?topic=cloudloganalysis-manage_logs#log_retention_policy).
 * É possível excluir logs manualmente usando a linha de comandos ou a API.
 
-Para obter mais informações sobre o preço de cada plano, veja [Planos de serviços](/docs/services/CloudLogAnalysis/log_analysis_ov.html#plans).
+Para obter mais informações sobre o preço de cada plano, veja [Planos de serviços](/docs/services/CloudLogAnalysis?topic=cloudloganalysis-log_analysis_ov#plans).
 
 ## Procura de log
 {: #log_search1}
 
 Por padrão, é possível usar o Kibana para procurar até 500 MB de logs por dia no {{site.data.keyword.Bluemix_notm}}. 
 
-O serviço {{site.data.keyword.loganalysisshort}} fornece múltiplos planos. Cada plano possui recursos de procura de log diferentes, por exemplo, o plano *Coleção de logs* permite procurar até 1 GB de dados por dia. Para obter mais informações sobre os planos, veja [Planos de serviços](/docs/services/CloudLogAnalysis/log_analysis_ov.html#plans).
+O serviço {{site.data.keyword.loganalysisshort}} fornece múltiplos planos. Cada plano possui recursos de procura de log diferentes, por exemplo, o plano *Coleção de logs* permite procurar até 1 GB de dados por dia. Para obter mais informações sobre os planos, veja [Planos de serviços](/docs/services/CloudLogAnalysis?topic=cloudloganalysis-log_analysis_ov#plans).
 
 
 ## Métodos para analisar logs do app CF
@@ -78,17 +78,17 @@ O serviço {{site.data.keyword.loganalysisshort}} fornece múltiplos planos. Cad
 
 * Analise o log na UI do {{site.data.keyword.Bluemix_notm}} para visualizar a atividade mais recente do aplicativo.
     
-    No {{site.data.keyword.Bluemix_notm}}, é possível visualizar, filtrar e analisar logs por meio da guia **Log** que está disponível para cada aplicativo Cloud Foundry. Para obter mais informações, veja [Analisando logs do app CF por meio do painel do app CF](/docs/services/CloudLogAnalysis/cfapps/launch_logs_cloud_ui_cf.html#cfapp_ui).
+    No {{site.data.keyword.Bluemix_notm}}, é possível visualizar, filtrar e analisar logs por meio da guia **Log** que está disponível para cada aplicativo Cloud Foundry. Para obter mais informações, veja [Analisando logs do app CF por meio do painel do app CF](/docs/services/CloudLogAnalysis/cfapps?topic=cloudloganalysis-launch_logs_cloud_ui_cf#cfapp_ui).
     
 * Analise os logs no Kibana para executar tarefas analíticas avançadas.
     
-    No {{site.data.keyword.Bluemix_notm}}, é possível usar o Kibana, uma plataforma de software livre de visualização e analítica, para monitorar, procurar, analisar e visualizar seus dados em uma variedade de gráficos, por exemplo, diagramas e tabelas. Para obter mais informações, veja [Analisando logs do app CF por meio da UI do {{site.data.keyword.loganalysisshort}}](/docs/services/CloudLogAnalysis/cfapps/launch_logs_cloud_ui_cf.html#cfapp_la).
+    No {{site.data.keyword.Bluemix_notm}}, é possível usar o Kibana, uma plataforma de software livre de visualização e analítica, para monitorar, procurar, analisar e visualizar seus dados em uma variedade de gráficos, por exemplo, diagramas e tabelas. Para obter mais informações, veja [Analisando logs do app CF por meio da IU do {{site.data.keyword.loganalysisshort}}](/docs/services/CloudLogAnalysis/cfapps?topic=cloudloganalysis-launch_logs_cloud_ui_cf#cfapp_la).
 	
-	**Dica:** para ativar kibana, veja [Navegando para o Kibana do painel de um app CF](/docs/services/CloudLogAnalysis/kibana/launch.html#launch_Kibana_from_cf_app).
+	**Dica:** para ativar kibana, veja [Navegando para o Kibana do painel de um app CF](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-launch#launch_Kibana_from_cf_app).
 
 * Analise os logs por meio da CLI para usar comandos para gerenciar os logs programaticamente.
     
-    No {{site.data.keyword.Bluemix_notm}}, é possível visualizar, filtrar e analisar logs por meio da interface da linha de comandos usando o comando **cf logs**. Para obter mais informações, veja [Analisando logs do app Cloud Foundry na interface da linha de comandos](/docs/services/CloudLogAnalysis/cfapps/logging_view_cli.html#analyzing_logs_cli).
+    No {{site.data.keyword.Bluemix_notm}}, é possível visualizar, filtrar e analisar logs por meio da interface da linha de comandos usando o comando **cf logs**. Para obter mais informações, veja [Analisando logs do app Cloud Foundry na interface da linha de comandos](/docs/services/CloudLogAnalysis/cfapps?topic=cloudloganalysis-analyzing_logs_cli#analyzing_logs_cli).
 
 
 ## Origens de log para apps CF implementados no Diego
@@ -145,7 +145,7 @@ Cada entrada de log contém os campos a seguir:
 |-------|-------------|
 | Registro de data e hora | O tempo da instrução de log. O registro de data e hora é definido até o milissegundo. |
 | Componente | O componente que produz o log. Para obter a lista dos componentes diferentes, consulte
-[Origens para apps CF](/docs/services/CloudLogAnalysis/cfapps/logging_cf_apps.html#logging_bluemix_cf_apps_log_sources). <br> Cada tipo de componente é seguido por uma barra e um dígito que indica a instância do aplicativo. 0 é o dígito alocado para a primeira instância, 1 é o dígito alocado para a segunda e assim por diante. |
+[Origens para apps CF](/docs/services/CloudLogAnalysis/cfapps?topic=cloudloganalysis-logging_cf_apps#logging_bluemix_cf_apps_log_sources). <br> Cada tipo de componente é seguido por uma barra e um dígito que indica a instância do aplicativo. 0 é o dígito alocado para a primeira instância, 1 é o dígito alocado para a segunda e assim por diante. |
 | Mensagem | A mensagem que é emitida pelo componente. A mensagem varia, dependendo do contexto. |
 {: caption="Tabela 1. Campos de entrada de log do app CF" caption-side="top"}
 

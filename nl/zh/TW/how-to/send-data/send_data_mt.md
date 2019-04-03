@@ -34,7 +34,7 @@ subcollection: cloudloganalysis
 {: #prereqs1}
 
 * 用來登入 {{site.data.keyword.Bluemix_notm}} 的 {{site.data.keyword.Bluemix_notm}} ID。
-* 有權使用 {{site.data.keyword.loganalysisshort}} 服務處理空間的使用者 ID。如需相關資訊，請參閱[安全](/docs/services/CloudLogAnalysis/security_ov.html#security_ov)。
+* 有權使用 {{site.data.keyword.loganalysisshort}} 服務處理空間的使用者 ID。如需相關資訊，請參閱[安全](/docs/services/CloudLogAnalysis?topic=cloudloganalysis-security_ov#security_ov)。
 * 本端環境中已安裝的 {{site.data.keyword.loganalysisshort}} CLI。
 * 以容許日誌汲取的方案將 {{site.data.keyword.loganalysisshort}} 服務佈建在您帳戶的空間中。
 
@@ -46,7 +46,7 @@ subcollection: cloudloganalysis
 
 1. 登入 {{site.data.keyword.Bluemix_notm}} 中的地區、組織及空間。 
 
-    如需相關資訊，請參閱[如何登入 {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/qa/cli_qa.html#login)。
+    如需相關資訊，請參閱[如何登入 {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#login)。
     
 2. 執行 `ibmcloud logging token-get` 指令。 
 
@@ -206,7 +206,7 @@ subcollection: cloudloganalysis
           </tr>
           <tr>
             <td>LSF_TARGET</td>
-            <td>目標 URL。若要取得汲取 URL 清單，請參閱[汲取 URL](/docs/services/CloudLogAnalysis/log_ingestion.html#log_ingestion_urls)。例如，將值設為 **ingest.logging.ng.bluemix.net:9091**，以傳送美國南部地區中的日誌。</td>
+            <td>目標 URL。若要取得汲取 URL 清單，請參閱[汲取 URL](/docs/services/CloudLogAnalysis?topic=cloudloganalysis-log_ingestion#log_ingestion_urls)。例如，將值設為 **ingest.logging.ng.bluemix.net:9091**，以傳送美國南部地區中的日誌。</td>
           </tr>
           <tr>
             <td>LSF_TENANT_ID</td>

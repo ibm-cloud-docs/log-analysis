@@ -37,13 +37,13 @@ subcollection: cloudloganalysis
 
 1. {{site.data.keyword.Bluemix_notm}} CLI をインストールします。
 
-   詳しくは、[『{{site.data.keyword.Bluemix_notm}}CLI のインストール』](/docs/cli/index.html#overview)を参照してください。
+   詳しくは、[『{{site.data.keyword.Bluemix_notm}}CLI のインストール』](/docs/cli?topic=cloud-cli-ibmcloud-cli#overview)を参照してください。
 
 2. {{site.data.keyword.loganalysisshort}} CF プラグインをインストールします。
 
-    * Linux の場合、『[Linux への {{site.data.keyword.loganalysisshort}} CLI のインストール](/docs/services/CloudLogAnalysis/how-to/manage-logs/config_log_collection_cli.html#install_cli_linux1)』を参照してください。
-    * Windows の場合、『[Windows への {{site.data.keyword.loganalysisshort}} CLI のインストール](/docs/services/CloudLogAnalysis/how-to/manage-logs/config_log_collection_cli.html#install_cli_windows1)』を参照してください。
-    * Mac OS X の場合、『[Mac OS X への {{site.data.keyword.loganalysisshort}} CLI のインストール](/docs/services/CloudLogAnalysis/how-to/manage-logs/config_log_collection_cli.html#install_cli_mac1)』を参照してください。
+    * Linux の場合、『[Linux への {{site.data.keyword.loganalysisshort}} CLI のインストール](/docs/services/CloudLogAnalysis/how-to/manage-logs?topic=cloudloganalysis-config_log_collection_cli1#install_cli_linux1)』を参照してください。
+    * Windows の場合、『[Windows への {{site.data.keyword.loganalysisshort}} CLI のインストール](/docs/services/CloudLogAnalysis/how-to/manage-logs?topic=cloudloganalysis-config_log_collection_cli1#install_cli_windows1)』を参照してください。
+    * Mac OS X の場合、『[Mac OS X への {{site.data.keyword.loganalysisshort}} CLI のインストール](/docs/services/CloudLogAnalysis/how-to/manage-logs?topic=cloudloganalysis-config_log_collection_cli1#install_cli_mac1)』を参照してください。
  
 3. CLI プラグインのインストールを検証します。
   
@@ -280,7 +280,7 @@ CLI に関する一般情報およびサポートされているコマンドに�
 
 1. {{site.data.keyword.Bluemix_notm}} で、地域、組織、およびスペースにログインします。 
 
-    詳しくは、『[{{site.data.keyword.Bluemix_notm}} にログインするにはどうすればよいですか](/docs/services/CloudLogAnalysis/qa/cli_qa.html#login)』を参照してください。
+    詳しくは、『[{{site.data.keyword.Bluemix_notm}} にログインするにはどうすればよいですか](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#login)』を参照してください。
     
 2. サポートされるコマンドおよび CLI についての情報をリストします。 次のコマンドを実行します。
 
@@ -298,7 +298,7 @@ CLI に関する一般情報およびサポートされているコマンドに�
 
 1. {{site.data.keyword.Bluemix_notm}} で、地域、組織、およびスペースにログインします。 
 
-    詳しくは、『[{{site.data.keyword.Bluemix_notm}} にログインするにはどうすればよいですか](/docs/services/CloudLogAnalysis/qa/cli_qa.html#login)』を参照してください。
+    詳しくは、『[{{site.data.keyword.Bluemix_notm}} にログインするにはどうすればよいですか](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#login)』を参照してください。
     
 2. サポートされるコマンドのリストを取得し、必要なコマンドを識別します。 コマンドを実行します。
 
@@ -325,7 +325,7 @@ CLI に関する一般情報およびサポートされているコマンドに�
 
 1. {{site.data.keyword.Bluemix_notm}} で、地域、組織、およびスペースにログインします。 
 
-    詳しくは、『[{{site.data.keyword.Bluemix_notm}} にログインするにはどうすればよいですか](/docs/services/CloudLogAnalysis/qa/cli_qa.html#login)』を参照してください。
+    詳しくは、『[{{site.data.keyword.Bluemix_notm}} にログインするにはどうすればよいですか](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#login)』を参照してください。
     
 2. サポートされるコマンドのリストを取得し、必要なコマンドを識別します。 コマンドを実行します。
 

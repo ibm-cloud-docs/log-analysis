@@ -51,15 +51,15 @@ Esta guía de aprendizaje le guía por los pasos necesarios para hacer que funci
     * Una política de IAM para {{site.data.keyword.containershort}} con los permisos *editor*, *operador* o *administrador*.
     * Un rol de CF para el espacio donde se suministra el servicio {{site.data.keyword.loganalysisshort}} con los permisos *desarrollador*.
     
-    Para obtener más información, consulte [Asignar una política de IAM a un usuario mediante la IU de IBM Cloud](/docs/services/CloudLogAnalysis/security/grant_permissions.html#grant_permissions_ui_account) y [Cómo otorgar permisos a un usuario para ver registros del espacio mediante la IU de IBM Cloud](/docs/services/CloudLogAnalysis/security/grant_permissions.html#grant_permissions_ui_space).
+    Para obtener más información, consulte [Asignar una política de IAM a un usuario mediante la IU de IBM Cloud](/docs/services/CloudLogAnalysis/security?topic=cloudloganalysis-grant_permissions#grant_permissions_ui_account) y [Cómo otorgar permisos a un usuario para ver registros del espacio mediante la IU de IBM Cloud](/docs/services/CloudLogAnalysis/security?topic=cloudloganalysis-grant_permissions#grant_permissions_ui_space).
 
 2. Tener una sesión de terminal desde la que gestionar el clúster de Kubernetes y desplegar apps desde la línea de mandatos. Los ejemplos en esta guía de aprendizaje se proporcionan para un sistema Ubuntu Linux.
 
 3. Instalar las CLI para trabajar con {{site.data.keyword.containershort}} y {{site.data.keyword.loganalysisshort}} en el sistema Ubuntu.
 
-    * Instale la CLI de {{site.data.keyword.Bluemix_notm}}. Instale la CLI de {{site.data.keyword.containershort}} para crear y gestionar sus clústeres de Kubernetes en {{site.data.keyword.containershort}}, y para desplegar apps contenerizadas en el clúster. Para obtener más información, consulte [Instalación de la CLI de {{site.data.keyword.Bluemix_notm}}](/docs/cli/index.html#overview).
+    * Instale la CLI de {{site.data.keyword.Bluemix_notm}}. Instale la CLI de {{site.data.keyword.containershort}} para crear y gestionar sus clústeres de Kubernetes en {{site.data.keyword.containershort}}, y para desplegar apps contenerizadas en el clúster. Para obtener más información, consulte [Instalación de la CLI de {{site.data.keyword.Bluemix_notm}}](/docs/cli?topic=cloud-cli-ibmcloud-cli#overview).
     
-    * Instale la CLI de {{site.data.keyword.loganalysisshort}}. Para obtener más información, consulte [Cómo configurar la CLI de Log Analysis (plugin de IBM Cloud)](/docs/services/CloudLogAnalysis/how-to/manage-logs/config_log_collection_cli_cloud.html#config_log_collection_cli).
+    * Instale la CLI de {{site.data.keyword.loganalysisshort}}. Para obtener más información, consulte [Cómo configurar la CLI de Log Analysis (plugin de IBM Cloud)](/docs/services/CloudLogAnalysis/how-to/manage-logs?topic=cloudloganalysis-config_log_collection_cli#config_log_collection_cli).
     
 4. Tener acceso a un espacio denominado **dev** en su cuenta en la región EE.UU. sur. 
 
@@ -81,11 +81,11 @@ Siga estos pasos:
 
 1. Cree un clúster de Kubernetes estándar.
 
-   Para obtener más información, consulte [Creación de clústeres](/docs/containers/cs_tutorials.html#cs_cluster_tutorial).
+   Para obtener más información, consulte [Creación de clústeres](/docs/containers?topic=containers-cs_cluster_tutorial#cs_cluster_tutorial).
 
-2. Configure el contexto del clúster en un terminal. Después de haber configurado el contexto, podrá gestionar el clúster de Kubernetes y desplegar la aplicación en dicho clúster Kubernetes.
+2. Configure el contexto del clúster en un terminal. Después de haber configurado el contexto, podrá gestionar el clúster de Kubernetes y desplegar la aplicación en dicho clúster de Kubernetes.
 
-    Inicie la sesión en la región, organización y espacio en {{site.data.keyword.Bluemix_notm}} que están asociados al clúster que ha creado. Para obtener más información, consulte [Cómo iniciar la sesión en {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/qa/cli_qa.html#login).
+    Inicie la sesión en la región, organización y espacio en {{site.data.keyword.Bluemix_notm}} que están asociados al clúster que ha creado. Para obtener más información, consulte [Cómo iniciar la sesión en {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#login).
 
 	Inicialice el plug-in del servicio {{site.data.keyword.containershort}}.
 
@@ -145,7 +145,7 @@ ae249c04-a3a9-4c29-a890-22d8da7bd1b2   container    *           ingest.logging.n
 ```
 {: screen}
 
-Para ver la lista de orígenes de registro para las que puede definir una configuración de registro, consulte [Orígenes de registros](/docs/services/CloudLogAnalysis/containers/containers_kubernetes.html#log_sources).
+Para ver la lista de orígenes de registro para las que puede definir una configuración de registro, consulte [Orígenes de registros](/docs/services/CloudLogAnalysis/containers?topic=cloudloganalysis-containers_kubernetes#log_sources).
 
 
 ### Configurar el clúster para reenviar los registros stderr y stdout al servicio {{site.data.keyword.loganalysisshort}}
@@ -158,7 +158,7 @@ Realice los pasos siguientes para enviar los registros stdout y stderr a un domi
 
     Para comprobar que el ID de usuario tiene una política de IAM asignada para gestionar clústeres, siga estos pasos:
     
-    1. Inicie sesión en la consola de {{site.data.keyword.Bluemix_notm}}. Abra un navegador web y lance el panel de control de {{site.data.keyword.Bluemix_notm}}: [http://bluemix.net ![Icono de enlace externo](../../../icons/launch-glyph.svg "Icono de enlace externo")](http://bluemix.net){:new_window} Después de iniciar sesión con su ID de usuario y contraseña, se abrirá la IU de {{site.data.keyword.Bluemix_notm}}.
+    1. Inicie sesión en la consola de {{site.data.keyword.Bluemix_notm}}. Abra un navegador web e inicie el panel de control de {{site.data.keyword.Bluemix_notm}}: [http://bluemix.net ![Icono de enlace externo](../../../icons/launch-glyph.svg "Icono de enlace externo")](http://bluemix.net){:new_window} Después de iniciar sesión con su ID de usuario y contraseña, se abrirá la IU de {{site.data.keyword.Bluemix_notm}}.
 
     2. En la barra de menús, pulse **Gestionar > Cuenta > Usuarios**.  La ventana *Usuarios* muestra una lista de usuarios con sus direcciones de correo electrónico para la cuenta seleccionada actualmente.
 	
@@ -176,7 +176,7 @@ Realice los pasos siguientes para enviar los registros stdout y stderr a un domi
     donde 
 
     * *ClusterName* es el nombre del clúster.
-    * *EndPoint* es el URL para el servicio de registro en la región donde se suministra el servicio de {{site.data.keyword.loganalysisshort}}. Para obtener una lista de puntos finales, consulte [Puntos finales](/docs/services/CloudLogAnalysis/log_ingestion.html#log_ingestion_urls).
+    * *EndPoint* es el URL para el servicio de registro en la región donde se suministra el servicio de {{site.data.keyword.loganalysisshort}}. Para obtener una lista de puntos finales, consulte [Puntos finales](/docs/services/CloudLogAnalysis?topic=cloudloganalysis-log_ingestion#log_ingestion_urls).
     * *OrgName* es el nombre de la organización donde está disponible el espacio.
     * *SpaceName* es el nombre del espacio donde se suministra el servicio de {{site.data.keyword.loganalysisshort}}.
 
@@ -200,7 +200,7 @@ Realice los pasos siguientes para enviar los registros de trabajo a un dominio d
 
     Para comprobar que el ID de usuario tiene una política de IAM asignada para gestionar clústeres, siga estos pasos:
     
-    1. Inicie sesión en la consola de {{site.data.keyword.Bluemix_notm}}. Abra un navegador web y lance el panel de control de {{site.data.keyword.Bluemix_notm}}: [http://bluemix.net ![Icono de enlace externo](../../../icons/launch-glyph.svg "Icono de enlace externo")](http://bluemix.net){:new_window} Después de iniciar sesión con su ID de usuario y contraseña, se abrirá la IU de {{site.data.keyword.Bluemix_notm}}.
+    1. Inicie sesión en la consola de {{site.data.keyword.Bluemix_notm}}. Abra un navegador web e inicie el panel de control de {{site.data.keyword.Bluemix_notm}}: [http://bluemix.net ![Icono de enlace externo](../../../icons/launch-glyph.svg "Icono de enlace externo")](http://bluemix.net){:new_window} Después de iniciar sesión con su ID de usuario y contraseña, se abrirá la IU de {{site.data.keyword.Bluemix_notm}}.
 
     2. En la barra de menús, pulse **Gestionar > Cuenta > Usuarios**.  La ventana *Usuarios* muestra una lista de usuarios con sus direcciones de correo electrónico para la cuenta seleccionada actualmente.
 	
@@ -218,7 +218,7 @@ Realice los pasos siguientes para enviar los registros de trabajo a un dominio d
     donde 
 
     * *ClusterName* es el nombre del clúster.
-    * *EndPoint* es el URL para el servicio de registro en la región donde se suministra el servicio de {{site.data.keyword.loganalysisshort}}. Para obtener una lista de puntos finales, consulte [Puntos finales](/docs/services/CloudLogAnalysis/log_ingestion.html#log_ingestion_urls).
+    * *EndPoint* es el URL para el servicio de registro en la región donde se suministra el servicio de {{site.data.keyword.loganalysisshort}}. Para obtener una lista de puntos finales, consulte [Puntos finales](/docs/services/CloudLogAnalysis?topic=cloudloganalysis-log_ingestion#log_ingestion_urls).
     * *OrgName* es el nombre de la organización donde está disponible el espacio.
     * *SpaceName* es el nombre del espacio donde se suministra el servicio de {{site.data.keyword.loganalysisshort}}.
 
@@ -237,11 +237,11 @@ ibmcloud cs logging-config-create mycluster --logsource worker  --type ibm --hos
 
 Para otorgar permisos a un usuario para ver registros en un espacio, debe asignar a ese usuario un rol de Cloud Foundry que describa las acciones que puede realizar este usuario con el servicio {{site.data.keyword.loganalysisshort}} en el espacio. 
 
-Complete los pasos siguientes para otorgar permisos a un usuario para trabajar con el servicio de {{site.data.keyword.loganalysisshort}}:
+Complete los pasos siguientes para otorgar permisos a un usuario para trabajar con el servicio {{site.data.keyword.loganalysisshort}}:
 
 1. Inicie sesión en la consola de {{site.data.keyword.Bluemix_notm}}.
 
-    Abra un navegador web y lance el panel de control de {{site.data.keyword.Bluemix_notm}}: [http://bluemix.net ![Icono de enlace externo](../../../icons/launch-glyph.svg "Icono de enlace externo")](http://bluemix.net){:new_window}
+    Abra un navegador web e inicie el panel de control de {{site.data.keyword.Bluemix_notm}}: [http://bluemix.net ![Icono de enlace externo](../../../icons/launch-glyph.svg "Icono de enlace externo")](http://bluemix.net){:new_window}
 	
 	Cuando inicia sesión con su ID de usuario y su contraseña, se abre la interfaz de usuario de {{site.data.keyword.Bluemix_notm}}.
 
@@ -251,7 +251,7 @@ Complete los pasos siguientes para otorgar permisos a un usuario para trabajar c
 	
 3. Si el usuario es un miembro de la cuenta, seleccione el nombre de usuario de la lista, o pulse **Gestionar usuario** del menú *Acciones*.
 
-    Si el usuario no es un miembro de la cuenta, consulte [Invitación a usuarios](/docs/iam/iamuserinv.html#iamuserinv).
+    Si el usuario no es un miembro de la cuenta, consulte [Invitación a usuarios](/docs/iam?topic=iam-iamuserinv#iamuserinv).
 
 4. Seleccione **Acceso de Cloud Foundry** y, a continuación, seleccione la organización.
 
@@ -291,13 +291,13 @@ Siga estos pasos:
 
 2. Verifique que el usuario que se identifica como el propietario de la clave de {{site.data.keyword.containershort}} tenga el rol *orgManager* para la organización, y *SpaceManager* y *Developer* para el espacio.
 
-    Inicie sesión en la consola de {{site.data.keyword.Bluemix_notm}}. Abra un navegador web y lance el panel de control de {{site.data.keyword.Bluemix_notm}}: [http://bluemix.net ![Icono de enlace externo](../../../icons/launch-glyph.svg "Icono de enlace externo")](http://bluemix.net){:new_window} Después de iniciar sesión con su ID de usuario y contraseña, se abrirá la IU de {{site.data.keyword.Bluemix_notm}}.
+    Inicie sesión en la consola de {{site.data.keyword.Bluemix_notm}}. Abra un navegador web e inicie el panel de control de {{site.data.keyword.Bluemix_notm}}: [http://bluemix.net ![Icono de enlace externo](../../../icons/launch-glyph.svg "Icono de enlace externo")](http://bluemix.net){:new_window} Después de iniciar sesión con su ID de usuario y contraseña, se abrirá la IU de {{site.data.keyword.Bluemix_notm}}.
 
     En la barra de menús, pulse **Gestionar > Cuenta > Usuarios**.  La ventana *Usuarios* muestra una lista de usuarios con sus direcciones de correo electrónico para la cuenta seleccionada actualmente.
 	
     Seleccione el ID del usuario, y verifique que el usuario tenga el rol *orgManager* para la organización, y *SpaceManager* y *Developer* para el espacio.
 
-    Si el usuario no tiene los permisos correctos, otorgue al usuario los permisos siguientes: rol de *orgManager* para la organización, y *SpaceManager* y *Developer* para el espacio. Para obtener más información, consulte [Cómo otorgar permisos a un usuario para ver registros del espacio mediante la IU de IBM Cloud](/docs/services/CloudLogAnalysis/security/grant_permissions.html#grant_permissions_ui_space).
+    Si el usuario no tiene los permisos correctos, otorgue al usuario los permisos siguientes: rol de *orgManager* para la organización, y *SpaceManager* y *Developer* para el espacio. Para obtener más información, consulte [Cómo otorgar permisos a un usuario para ver registros del espacio mediante la IU de IBM Cloud](/docs/services/CloudLogAnalysis/security?topic=cloudloganalysis-grant_permissions#grant_permissions_ui_space).
     
 3. Compruebe que el usuario identificado como el propietario de la clave de {{site.data.keyword.containershort}} tiene una política de IAM para el servicio {{site.data.keyword.loganalysisshort}} con permisos de *administrador*.
 
@@ -305,7 +305,7 @@ Siga estos pasos:
 	
     Seleccione el ID del usuario y verifique que el usuario tenga establecida la política de IAM. 
 
-    Si el usuario no tiene la política de IAM, consulte [Asignación de una política de IAM a un usuario mediante la interfaz de usuario de IBM Cloud](/docs/services/CloudLogAnalysis/security/grant_permissions.html#grant_permissions_ui_account).
+    Si el usuario no tiene la política de IAM, consulte [Asignación de una política de IAM a un usuario mediante la interfaz de usuario de IBM Cloud](/docs/services/CloudLogAnalysis/security?topic=cloudloganalysis-grant_permissions#grant_permissions_ui_account).
 
 4. Renueve la configuración de registro. Ejecute el mandato siguiente:
     
@@ -322,7 +322,7 @@ Siga estos pasos:
 ## Paso 5: Desplegar una app de ejemplo en el clúster de Kubernetes para generar contenido en stdout
 {: #step53}
 
-Desplegar y ejecutar una app de ejemplo en el clúster de Kubernetes. Complete los pasos de la siguiente guía de aprendizaje para desplegar la app de ejemplo: [Lección 1: Despliegue de apps de una sola instancia en clústeres Kubernetes](/docs/containers/cs_tutorials_apps.html#cs_apps_tutorial_lesson1).
+Desplegar y ejecutar una app de ejemplo en el clúster de Kubernetes. Complete los pasos de la siguiente guía de aprendizaje para desplegar la app de ejemplo: [Lección 1: Despliegue de apps de una sola instancia en clústeres de Kubernetes](/docs/containers?topic=containers-cs_apps_tutorial#cs_apps_tutorial_lesson1).
 
 La app es una app Node.js Hello World:
 
@@ -353,7 +353,7 @@ Siga estos pasos:
 
 1. Inicie Kibana en un navegador. 
 
-    Para obtener más información sobre cómo iniciar Kibana, consulte [Navegación a Kibana desde un navegador web](/docs/services/CloudLogAnalysis/kibana/launch.html#launch_Kibana_from_browser).
+    Para obtener más información sobre cómo iniciar Kibana, consulte [Navegación a Kibana desde un navegador web](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-launch#launch_Kibana_from_browser).
 
     Para analizar los datos de registro para un clúster, debe acceder a Kibana en la región Pública de la nube en la que se ha creado el clúster. 
     
@@ -366,7 +366,7 @@ Siga estos pasos:
 	
     Se abre Kibana.
     
-    **NOTA:** Compruebe que inicia Kibana en la región donde está reenviando los registros de clúster. Para obtener información sobre los URL por región, consulte [Puntos finales de registro](/docs/services/CloudLogAnalysis/kibana/analyzing_logs_Kibana.html#urls_kibana).
+    **NOTA:** Compruebe que inicia Kibana en la región donde está reenviando los registros de clúster. Para obtener información sobre los URL por región, consulte [Puntos finales de registro](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-analyzing_logs_Kibana#urls_kibana).
     	
 2. Para ver los datos de registro que están disponibles en el dominio del espacio, siga estos pasos:
 
@@ -436,7 +436,7 @@ Siga estos pasos:
               </tr>
         </table>
      
-Para obtener más información sobre otros campos de búsqueda que son relevantes para los clústeres de Kubernetes, consulte [Búsquedas en los registros](/docs/services/CloudLogAnalysis/containers/containers_kubernetes.html#log_search).
+Para obtener más información sobre otros campos de búsqueda que son relevantes para los clústeres de Kubernetes, consulte [Búsquedas en los registros](/docs/services/CloudLogAnalysis/containers?topic=cloudloganalysis-containers_kubernetes#log_search).
 
 
 ## Paso 7: Filtrar datos por nombre de clúster de Kubernetes en Kibana
@@ -475,9 +475,9 @@ Se visualiza la siguiente consulta:
 
 Sustituya el nombre del clúster (*cluster1*) por el nombre del clúster *mycluster* para el que desea ver datos de registro.
         
-Si no ve ningún dato, intente cambiar el filtro de tiempo. Para obtener más información, consulte [Establecimiento de un filtro de tiempo](/docs/services/CloudLogAnalysis/kibana/filter_logs.html#set_time_filter).
+Si no ve ningún dato, intente cambiar el filtro de tiempo. Para obtener más información, consulte [Establecimiento de un filtro de tiempo](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-filter_logs#set_time_filter).
 
-Para obtener más información, consulte [Filtrado de registros en Kibana](/docs/services/CloudLogAnalysis/kibana/filter_logs.html#filter_logs).
+Para obtener más información, consulte [Filtrado de registros en Kibana](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-filter_logs#filter_logs).
 
 
 ## Material de referencia de {{site.data.keyword.containershort_notm}}
@@ -485,10 +485,10 @@ Para obtener más información, consulte [Filtrado de registros en Kibana](/docs
 
 Mandatos de CLI:
 
-* [ibmcloud cs api-key-info](/docs/containers/cs_cli_reference.html#cs_api_key_info)
-* [ibmcloud cs logging-config-create](/docs/containers/cs_cli_reference.html#cs_logging_create)
-* [ibmcloud cs logging-config-get](/docs/containers/cs_cli_reference.html#cs_logging_get)
-* [ibmcloud cs logging-config-update](/docs/containers/cs_cli_reference.html#cs_logging_update)
-* [ibmcloud cs logging-config-rm](/docs/containers/cs_cli_reference.html#cs_logging_rm)
-* [ibmcloud cs logging-config-refresh](/docs/containers/cs_cli_reference.html#cs_logging_refresh)
+* [ibmcloud cs api-key-info](/docs/containers?topic=containers-cs_cli_reference#cs_api_key_info)
+* [ibmcloud cs logging-config-create](/docs/containers?topic=containers-cs_cli_reference#cs_logging_create)
+* [ibmcloud cs logging-config-get](/docs/containers?topic=containers-cs_cli_reference#cs_logging_get)
+* [ibmcloud cs logging-config-update](/docs/containers?topic=containers-cs_cli_reference#cs_logging_update)
+* [ibmcloud cs logging-config-rm](/docs/containers?topic=containers-cs_cli_reference#cs_logging_rm)
+* [ibmcloud cs logging-config-refresh](/docs/containers?topic=containers-cs_cli_reference#cs_logging_refresh)
 

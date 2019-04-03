@@ -25,7 +25,7 @@ subcollection: cloudloganalysis
 # ログ情報の表示
 {: #viewing_log_status1}
 
-収集されて Log Collection に保管されたログに関する情報を取得するには、[ibmcloud logging log-show](/docs/services/CloudLogAnalysis/reference/log_analysis_cli_cloud.html#status) コマンドを使用します。 取得できる情報は、サイズ、レコード数、ログ・タイプ、および、ログが Kibana での分析に使用可能かどうかです。
+収集されて Log Collection に保管されたログに関する情報を取得するには、[ibmcloud logging log-show](/docs/services/CloudLogAnalysis/reference?topic=cloudloganalysis-log_analysis_cli#status) コマンドを使用します。 取得できる情報は、サイズ、レコード数、ログ・タイプ、および、ログが Kibana での分析に使用可能かどうかです。
 {:shortdesc}
 
 ## 特定の期間のログに関する情報の取得
@@ -41,7 +41,7 @@ subcollection: cloudloganalysis
 
 1. {{site.data.keyword.Bluemix_notm}} で、地域、組織、およびスペースにログインします。 
 
-    詳しくは、『[{{site.data.keyword.Bluemix_notm}} にログインするにはどうすればよいですか](/docs/services/CloudLogAnalysis/qa/cli_qa.html#login)』を参照してください。
+    詳しくは、『[{{site.data.keyword.Bluemix_notm}} にログインするにはどうすればよいですか](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#login)』を参照してください。
     
 2. 次のコマンドを実行します。
 
@@ -77,7 +77,7 @@ subcollection: cloudloganalysis
 
 1. {{site.data.keyword.Bluemix_notm}} で、地域、組織、およびスペースにログインします。 
 
-    詳しくは、『[{{site.data.keyword.Bluemix_notm}} にログインするにはどうすればよいですか](/docs/services/CloudLogAnalysis/qa/cli_qa.html#login)』を参照してください。
+    詳しくは、『[{{site.data.keyword.Bluemix_notm}} にログインするにはどうすればよいですか](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#login)』を参照してください。
     
 2. 次のコマンドを実行します。
 
@@ -118,11 +118,11 @@ subcollection: cloudloganalysis
 
 1. {{site.data.keyword.Bluemix_notm}} で、地域、組織、およびスペースにログインします。 
 
-    詳しくは、『[{{site.data.keyword.Bluemix_notm}} にログインするにはどうすればよいですか](/docs/services/CloudLogAnalysis/qa/cli_qa.html#login)』を参照してください。
+    詳しくは、『[{{site.data.keyword.Bluemix_notm}} にログインするにはどうすればよいですか](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#login)』を参照してください。
 	
 2. アカウント ID を取得します。
 
-    詳しくは、『[アカウントの GUID の取得方法を教えてください](/docs/services/CloudLogAnalysis/qa/cli_qa.html#account_guid)』を参照してください。
+    詳しくは、『[アカウントの GUID の取得方法を教えてください](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#account_guid)』を参照してください。
     
 3. 次のコマンドを実行します。
 
@@ -164,11 +164,11 @@ subcollection: cloudloganalysis
 
 1. {{site.data.keyword.Bluemix_notm}} で、地域、組織、およびスペースにログインします。 
 
-    詳しくは、『[{{site.data.keyword.Bluemix_notm}} にログインするにはどうすればよいですか](/docs/services/CloudLogAnalysis/qa/cli_qa.html#login)』を参照してください。
+    詳しくは、『[{{site.data.keyword.Bluemix_notm}} にログインするにはどうすればよいですか](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#login)』を参照してください。
 	
 2. アカウント ID を取得します。
 
-    詳しくは、『[組織の GUID の取得方法を教えてください](/docs/services/CloudLogAnalysis/qa/cli_qa.html#org_guid)』を参照してください。
+    詳しくは、『[組織の GUID の取得方法を教えてください](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#org_guid)』を参照してください。
     
 3. 次のコマンドを実行します。
 

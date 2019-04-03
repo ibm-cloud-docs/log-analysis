@@ -66,16 +66,16 @@ Prenez en compte les informations suivantes :
 
 * Les journaux qui sont stockés dans le composant Log Collection sont supprimés après un certain nombre de jours lorsque vous configurez une règle de conservation, ou lorsque vous les supprimez manuellement. 
 
-    Vous pouvez configurer une règle de conservation des journaux pour définir le nombre de jours pendant lequel vous souhaitez conserver les journaux dans Log Collection. Pour plus d'informations, voir [Affichage et configuration de la règle de conservation des journaux avec le plug-in {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/how-to/manage-logs/configuring_retention_policy_cloud.html#configuring_retention_policy).
+    Vous pouvez configurer une règle de conservation des journaux pour définir le nombre de jours pendant lequel vous souhaitez conserver les journaux dans Log Collection. Pour plus d'informations, voir [Affichage et configuration de la règle de conservation des journaux avec le plug-in {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/how-to/manage-logs?topic=cloudloganalysis-configuring_retention_policy#configuring_retention_policy).
 
-    Vous pouvez utiliser l'[API Log Collection](https://console.bluemix.net/apidocs/948-ibm-cloud-log-collection-api?&language=node&env_id=ibm%3Ayp%3Aus-south#introduction){: new_window} ou l'[interface de ligne de commande Log Collection](/docs/services/CloudLogAnalysis/reference/log_analysis_cli_cloud.html#log_analysis_cli){: new_window} pour supprimer manuellement des journaux depuis le composant Log Collection. 
+    Vous pouvez utiliser l'[API Log Collection](https://console.bluemix.net/apidocs/948-ibm-cloud-log-collection-api?&language=node&env_id=ibm%3Ayp%3Aus-south#introduction){: new_window} ou l'[interface de ligne de commande Log Collection](/docs/services/CloudLogAnalysis/reference?topic=cloudloganalysis-log_analysis_cli#log_analysis_cli){: new_window} pour supprimer manuellement des journaux depuis le composant Log Collection. 
 
-    Vous pouvez utiliser l'interface de ligne de commande pour supprimer manuellement des journaux du composant Log Collection. Pour plus d'informations, voir [ibmcloud logging log-delete avec le plug-in {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/how-to/manage-logs/deleting_logs_cloud.html#deleting_logs).
+    Vous pouvez utiliser l'interface de ligne de commande pour supprimer manuellement des journaux du composant Log Collection. Pour plus d'informations, voir [ibmcloud logging log-delete avec le plug-in {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/how-to/manage-logs?topic=cloudloganalysis-deleting_logs#deleting_logs).
 
 
 Si vous passez d'un plan payant au plan standard ou Lite, les journaux situés dans le composant Log Collection seront supprimés au bout d'une journée environ.
 
-A tout moment, vous pouvez ouvrir un ticket de demande de service et demander que toutes vos données soient supprimées des composants Log Search et Log Collection. Pour plus d'informations sur l'ouverture d'un ticket de demande de service IBM, voir la rubrique décrivant [comment contacter le support](/docs/get-support/howtogetsupport.html#getting-customer-support).
+A tout moment, vous pouvez ouvrir un ticket de demande de service et demander que toutes vos données soient supprimées des composants Log Search et Log Collection. Pour plus d'informations sur l'ouverture d'un ticket de demande de service IBM, voir la rubrique décrivant [comment contacter le support](/docs/get-support?topic=get-support-getting-customer-support#getting-customer-support).
 
 
 

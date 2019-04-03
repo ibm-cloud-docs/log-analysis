@@ -32,15 +32,15 @@ subcollection: cloudloganalysis
 
 1. 啟動 Kibana。
 
-    針對 Cloud Foundry (CF) 應用程式，請參閱[從 CF 應用程式的儀表板啟動 Kibana](/docs/services/CloudLogAnalysis/kibana/launch.html#launch_Kibana_from_cf_app)。
+    針對 Cloud Foundry (CF) 應用程式，請參閱[從 CF 應用程式的儀表板啟動 Kibana](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-launch#launch_Kibana_from_cf_app)。
 
-	針對在 {{site.data.keyword.Bluemix_notm}} 所管理基礎架構中執行的容器，請參閱[從容器的儀表板啟動 Kibana](/docs/services/CloudLogAnalysis/kibana/launch.html#launch_Kibana_for_containers)。
+	針對在 {{site.data.keyword.Bluemix_notm}} 所管理基礎架構中執行的容器，請參閱[從容器的儀表板啟動 Kibana](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-launch#launch_Kibana_for_containers)。
     
-    針對所有雲端資源（例如，在 Kubernetes 叢集中執行的容器），請參閱[從瀏覽器啟動 Kibana](/docs/services/CloudLogAnalysis/kibana/launch.html#launch_Kibana_from_browser)。 
+    針對所有雲端資源（例如，在 Kubernetes 叢集中執行的容器），請參閱[從瀏覽器啟動 Kibana](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-launch#launch_Kibana_from_browser)。 
 	
 	當您存取 Kibana 時，會套用預設搜尋。您可以在日誌裡查看正在查詢的資源實例清單。您可以針對該空間中的任何或所有 {{site.data.keyword.Bluemix_notm}} 資源過濾日誌。
 
-2. 在「探索」頁面中，查看它顯示哪部分的資料。如需相關資訊，請參閱[識別 Kibana 探索頁面中顯示的資料](/docs/services/CloudLogAnalysis/kibana/analize_logs_interactively.html#identify_data)。然後，修改預設查詢來過濾項目。
+2. 在「探索」頁面中，查看它顯示哪部分的資料。如需相關資訊，請參閱[識別 Kibana 探索頁面中顯示的資料](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-analize_logs_interactively#identify_data)。然後，修改預設查詢來過濾項目。
 
     **附註：**請使用 Lucene 查詢語言來定義自訂查詢。如需相關資訊，請參閱 [Apache Lucene - 查詢剖析器語法 ![外部鏈結圖示](../../../icons/launch-glyph.svg "外部鏈結圖示")](https://lucene.apache.org/core/2_9_4/queryparsersyntax.html){: new_window}
     
@@ -54,9 +54,9 @@ subcollection: cloudloganalysis
 
      例如，若為 CF 應用程式，您可以建立查詢 `application_id:9d222152-8834-4bab-8685-3036cd25931a AND instance_id:["0" TO "1"]`，此查詢只列出實例 *0* 及 *1* 的項目。 
 
-3. 儲存查詢，以供之後重複使用。如需相關資訊，請參閱[儲存搜尋](/docs/services/CloudLogAnalysis/kibana/define_search.html#save_search1)。 
+3. 儲存查詢，以供之後重複使用。如需相關資訊，請參閱[儲存搜尋](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-define_search#save_search1)。 
 
-**附註：**如果您需要刪除查詢，請參閱[刪除搜尋](/docs/services/CloudLogAnalysis/kibana/define_search.html#delete_search)。
+**附註：**如果您需要刪除查詢，請參閱[刪除搜尋](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-define_search#delete_search)。
 
 
 

@@ -32,15 +32,15 @@ Completa le seguenti attività per definire una ricerca personalizzata:
 
 1. Avvia Kibana.
 
-    Per le applicazioni CF (Cloud Foundry), vedi [avvia Kibana dal dashboard di un'applicazione CF](/docs/services/CloudLogAnalysis/kibana/launch.html#launch_Kibana_from_cf_app).
+    Per le applicazioni CF (Cloud Foundry), vedi [avvia Kibana dal dashboard di un'applicazione CF](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-launch#launch_Kibana_from_cf_app).
 
-	Per i contenitori che vengono eseguiti nell'infrastruttura gestita da {{site.data.keyword.Bluemix_notm}}, vedi [Avvia Kibana dal dashboard di un contenitore](/docs/services/CloudLogAnalysis/kibana/launch.html#launch_Kibana_for_containers).
+	Per i contenitori che vengono eseguiti nell'infrastruttura gestita da {{site.data.keyword.Bluemix_notm}}, vedi [Avvia Kibana dal dashboard di un contenitore](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-launch#launch_Kibana_for_containers).
     
-    Per tutte le risorse cloud, ad esempio i contenitori in esecuzione in un cluster Kubernetes, vedi [avvia Kibana dal browser](/docs/services/CloudLogAnalysis/kibana/launch.html#launch_Kibana_from_browser). 
+    Per tutte le risorse cloud, ad esempio i contenitori in esecuzione in un cluster Kubernetes, vedi [avvia Kibana dal browser](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-launch#launch_Kibana_from_browser). 
 	
 	Quando accedi a Kibana, viene applicata la ricerca predefinita. Puoi visualizzare i log per l'elenco di istanza della risorsa di cui stai eseguendo la query. Puoi filtrare i log per ognuna delle risorse {{site.data.keyword.Bluemix_notm}} in tale spazio.
 
-2. Guarda nella pagina Rileva per visualizzare quale sottorete dei tuoi dati viene visualizzata. Per ulteriori informazioni, vedi [Identificazione dei dati visualizzati nella tua pagina Rileva Kibana](/docs/services/CloudLogAnalysis/kibana/analize_logs_interactively.html#identify_data). Quindi, modifica la query predefinita per filtrare le voci.
+2. Guarda nella pagina Rileva per visualizzare quale sottorete dei tuoi dati viene visualizzata. Per ulteriori informazioni, vedi [Identificazione dei dati visualizzati nella tua pagina Rileva Kibana](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-analize_logs_interactively#identify_data). Quindi, modifica la query predefinita per filtrare le voci.
 
     **Nota:** utilizza il linguaggio di query Lucene per definire la tua query personalizzata. Per ulteriori informazioni, vedi [Apache Lucene - Query Parser Syntax  ![Icona link esterno](../../../icons/launch-glyph.svg "Icona link esterno")](https://lucene.apache.org/core/2_9_4/queryparsersyntax.html){: new_window}
     
@@ -54,9 +54,9 @@ Completa le seguenti attività per definire una ricerca personalizzata:
 
      Ad esempio, per un'applicazione CF, puoi creare una query `application_id:9d222152-8834-4bab-8685-3036cd25931a AND instance_id:["0" TO "1"]` che elenca solo le voci per le istanze *0* e *1*. 
 
-3. Salva la query in modo da poterla riutilizzare successivamente. Per maggiori informazioni, vedi [Salvataggio di una ricerca](/docs/services/CloudLogAnalysis/kibana/define_search.html#save_search1). 
+3. Salva la query in modo da poterla riutilizzare successivamente. Per maggiori informazioni, vedi [Salvataggio di una ricerca](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-define_search#save_search1). 
 
-**Nota:** se devi eliminare una query, vedi [Eliminazione di una ricerca](/docs/services/CloudLogAnalysis/kibana/define_search.html#delete_search).
+**Nota:** se devi eliminare una query, vedi [Eliminazione di una ricerca](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-define_search#delete_search).
 
 
 

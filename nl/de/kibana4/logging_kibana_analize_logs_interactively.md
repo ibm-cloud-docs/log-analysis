@@ -51,12 +51,12 @@ Zur Anpassung der Tabelle auf der Seite 'Discover' können Sie beliebige der fol
 
 | Task | Beschreibung | 
 |------|-------------|
-| [Feldspalte hinzufügen](/docs/services/CloudLogAnalysis/kibana4/logging_kibana_analize_logs_interactively.html#kibana_discover_add_fields_to_table) | Sie können Felder hinzufügen, um anstelle der vollständigen Nachricht bestimmte Daten anzuzeigen, die für die Analyse erforderlich sind. |
-| [Feldspalte neu anordnen](/docs/services/CloudLogAnalysis/kibana4/logging_kibana_analize_logs_interactively.html#kibana_discover_rearrange_fields_in_table) | Verschieben Sie die Position eines Felds in der Tabelle auf der Position, an der Sie es wollen. |
-| [Eintrag anzeigen](/docs/services/CloudLogAnalysis/kibana4/logging_kibana_analize_logs_interactively.html#kibana_discover_view_entry_in_table) | Sie können einen Eintrag in der Tabelle erweitern, um die Details des Eintrags nach Feld geparst oder als JSON-Daten anzuzeigen. |
-| [Feldspalte entfernen](/docs/services/CloudLogAnalysis/kibana4/logging_kibana_analize_logs_interactively.html#kibana_discover_remove_fields_from_table) | Sie können ein Feld entfernen, wenn es in der Ansicht für die Analyse nicht erforderlich ist. |
-| [Einträge nach Wert eines indexierten Felds anordnen](/docs/services/CloudLogAnalysis/kibana4/logging_kibana_analize_logs_interactively.html#kibana_discover_sort_by_table) | Sie können die Einträge zur einfacheren Analyse neu sortieren. |
-| [Datenansicht automatisch aktualisieren](/docs/services/CloudLogAnalysis/kibana4/logging_kibana_analize_logs_interactively.html#kibana_discover_view_refresh_interval) | Sie können die Daten, die in der Tabelle angezeigt werden, mit den neuesten Einträgen aktualisieren. Standardmäßig ist die Aktualisierung inaktiviert (**OFF**). |
+| [Feldspalte hinzufügen](/docs/services/CloudLogAnalysis/kibana4?topic=cloudloganalysis-kibana_analize_logs_interactively#kibana_discover_add_fields_to_table) | Sie können Felder hinzufügen, um anstelle der vollständigen Nachricht bestimmte Daten anzuzeigen, die für die Analyse erforderlich sind. |
+| [Feldspalte neu anordnen](/docs/services/CloudLogAnalysis/kibana4?topic=cloudloganalysis-kibana_analize_logs_interactively#kibana_discover_rearrange_fields_in_table) | Verschieben Sie die Position eines Felds in der Tabelle auf der Position, an der Sie es wollen. |
+| [Eintrag anzeigen](/docs/services/CloudLogAnalysis/kibana4?topic=cloudloganalysis-kibana_analize_logs_interactively#kibana_discover_view_entry_in_table) | Sie können einen Eintrag in der Tabelle erweitern, um die Details des Eintrags nach Feld geparst oder als JSON-Daten anzuzeigen. |
+| [Feldspalte entfernen](/docs/services/CloudLogAnalysis/kibana4?topic=cloudloganalysis-kibana_analize_logs_interactively#kibana_discover_remove_fields_from_table) | Sie können ein Feld entfernen, wenn es in der Ansicht für die Analyse nicht erforderlich ist. |
+| [Einträge nach Wert eines indexierten Felds anordnen](/docs/services/CloudLogAnalysis/kibana4?topic=cloudloganalysis-kibana_analize_logs_interactively#kibana_discover_sort_by_table) | Sie können die Einträge zur einfacheren Analyse neu sortieren. |
+| [Datenansicht automatisch aktualisieren](/docs/services/CloudLogAnalysis/kibana4?topic=cloudloganalysis-kibana_analize_logs_interactively#kibana_discover_view_refresh_interval) | Sie können die Daten, die in der Tabelle angezeigt werden, mit den neuesten Einträgen aktualisieren. Standardmäßig ist die Aktualisierung inaktiviert (**OFF**). |
 {: caption="Tabelle 2. Tasks für die Anpassung einer Tabelle" caption-side="top"}
 
 <br>
@@ -97,7 +97,7 @@ Sie können auch Statistikdaten auf der Seite 'Discover' ansehen:
 * Sie können Statistiken pro Feld anzeigen. 
 * Sie können Statistiken im Histogramm pro konfigurierter Zeitmarke (`@timestamp`) anzeigen.
 
-Weitere Informationen finden Sie unter [Statistiken zu Felddaten anzeigen](/docs/services/CloudLogAnalysis/kibana4/logging_kibana_analize_logs_interactively.html#kibana_discover_view_fields_stats).
+Weitere Informationen finden Sie unter [Statistiken zu Felddaten anzeigen](/docs/services/CloudLogAnalysis/kibana4?topic=cloudloganalysis-kibana_analize_logs_interactively#kibana_discover_view_fields_stats).
 
 **Hinweis:** Die Daten, die in der Tabelle und im Histogramm angezeigt werden, sind statisch. Wenn Sie immer wieder die neuesten Einträge anzeigen wollen, müssen Sie ein Aktualisierungsintervall festlegen. 
 

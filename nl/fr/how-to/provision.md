@@ -49,7 +49,7 @@ Procédez comme suit pour mettre à disposition une instance du service {{site.d
 
 5. Sélectionnez un plan de service. Par défaut, le plan **Lite** est défini.
 
-    Pour plus d'informations sur les plans de service, voir [Plans de service](/docs/services/CloudLogAnalysis/log_analysis_ov.html#plans).
+    Pour plus d'informations sur les plans de service, voir [Plans de service](/docs/services/CloudLogAnalysis?topic=cloudloganalysis-log_analysis_ov#plans).
 	
 6. Cliquez sur **Créer** pour mettre à disposition le service {{site.data.keyword.loganalysisshort}} dans l'espace {{site.data.keyword.Bluemix_notm}} auquel vous êtes connecté.
   
@@ -62,13 +62,13 @@ Procédez comme suit pour mettre à disposition une instance du service {{site.d
 
 1. [Prérequis] Installez l'interface de ligne de commande {{site.data.keyword.Bluemix_notm}}.
 
-   Pour plus d'informations, voir [Installation de l'interface de ligne de commande {{site.data.keyword.Bluemix_notm}}.](/docs/cli/index.html#overview)
+   Pour plus d'informations, voir [Installation de l'interface de ligne de commande {{site.data.keyword.Bluemix_notm}}.](/docs/cli?topic=cloud-cli-ibmcloud-cli#overview)
    
    Si l'interface de ligne de commande est installée, passez à l'étape suivante.
     
 2. Connectez-vous à la région, l'organisation et l'espace dans l'environnement {{site.data.keyword.Bluemix_notm}} dans lequel mettre le service à disposition. 
 
-    Pour plus d'informations, voir [Comment se connecter à {{site.data.keyword.Bluemix_notm}} ?](/docs/services/CloudLogAnalysis/qa/cli_qa.html#login).
+    Pour plus d'informations, voir [Comment se connecter à {{site.data.keyword.Bluemix_notm}} ?](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#login)
 	
 3. Exécutez la commande `ibmcloud service create` pour mettre à disposition une instance.
 
@@ -80,7 +80,7 @@ Procédez comme suit pour mettre à disposition une instance du service {{site.d
 	Où
 	
 	* service_name est le nom du service, en l'occurrence **ibmLogAnalysis**.
-	* service_plan est le nom du plan de service. Pour la liste des plans, voir [Plans de service](/docs/services/CloudLogAnalysis/log_analysis_ov.html#plans).
+	* service_plan est le nom du plan de service. Pour la liste des plans, voir [Plans de service](/docs/services/CloudLogAnalysis?topic=cloudloganalysis-log_analysis_ov#plans).
 	* service_instance_name est le nom que vous souhaitez utiliser pour la nouvelle instance de service que vous créez.
 
 	Par exemple, pour créer une instance du service {{site.data.keyword.loganalysisshort}} avec le plan Lite, exécutez la commande suivante :

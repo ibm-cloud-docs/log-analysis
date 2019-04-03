@@ -31,20 +31,20 @@ subcollection: cloudloganalysis
 
 ログを管理するには、以下の情報を考慮してください。
 
-1. 使用するユーザー ID は、{{site.data.keyword.Bluemix_notm}} において {{site.data.keyword.loganalysisshort}} 用に割り当てられた、ログを管理する許可のあるポリシーを持っている必要があります。 
+1. 使用するユーザー ID は、{{site.data.keyword.cloud_notm}} において {{site.data.keyword.loganalysisshort}} 用に割り当てられた、ログを管理する許可のあるポリシーを持っている必要があります。 
 
-    IAM 役割のリストと役割ごとのタスクについては、『[IAM 役割](/docs/services/CloudLogAnalysis/security_ov.html#iam_roles)』を参照してください。 
+    IAM 役割のリストと役割ごとのタスクについては、『[IAM 役割](/docs/services/CloudLogAnalysis?topic=cloudloganalysis-security_ov#iam_roles)』を参照してください。 
 	
-	ポリシーの割り当て方法について詳しくは、『[{{site.data.keyword.Bluemix_notm}} UI を使用してユーザーに IAM ポリシーを割り当てる](/docs/services/CloudLogAnalysis/security/grant_permissions.html#grant_permissions_ui_account)』を参照してください。
+	ポリシーの割り当て方法について詳しくは、『[{{site.data.keyword.cloud_notm}} UI を使用してユーザーに IAM ポリシーを割り当てる](/docs/services/CloudLogAnalysis/security?topic=cloudloganalysis-grant_permissions#grant_permissions_ui_account)』を参照してください。
 	
 2. このフィーチャーは、ログ保存が許可されるサービス・プランでのみ使用可能です。 
 
-    サービス・プランについて詳しくは、『[サービス・プラン](/docs/services/CloudLogAnalysis/log_analysis_ov.html#plans)』を参照してください。
+    サービス・プランについて詳しくは、『[サービス・プラン](/docs/services/CloudLogAnalysis?topic=cloudloganalysis-log_analysis_ov#plans)』を参照してください。
 
 {{site.data.keyword.loganalysisshort}} サービスでは次の 2 つの CLI が提供されており、これらを使用してログを管理できます。
 
-* {{site.data.keyword.loganalysisshort}} {{site.data.keyword.Bluemix_notm}} プラグイン。 この CLI について詳しくは、『[{{site.data.keyword.loganalysisshort}} CLI ({{site.data.keyword.Bluemix_notm}} プラグイン)](/docs/services/CloudLogAnalysis/reference/log_analysis_cli_cloud.html#log_analysis_cli)』を参照してください。
-* {{site.data.keyword.loganalysisshort}} CF プラグイン (非推奨)。 詳しくは、『[Log Analysis CLI の構成 (CF プラグイン)](/docs/services/CloudLogAnalysis/reference/logging_cli.html#logging_cli)』を参照してください。
+* {{site.data.keyword.loganalysisshort}} {{site.data.keyword.cloud_notm}} プラグイン。 この CLI について詳しくは、『[{{site.data.keyword.loganalysisshort}} CLI ({{site.data.keyword.cloud_notm}} プラグイン)](/docs/services/CloudLogAnalysis/reference?topic=cloudloganalysis-log_analysis_cli#log_analysis_cli)』を参照してください。
+* {{site.data.keyword.loganalysisshort}} CF プラグイン (非推奨)。 詳しくは、『[Log Analysis CLI の構成 (CF プラグイン)](/docs/services/CloudLogAnalysis/reference?topic=cloudloganalysis-logging_cli#logging_cli)』を参照してください。
 
 
 ## ログ保存ポリシーの構成
@@ -59,12 +59,12 @@ subcollection: cloudloganalysis
 * 保存ポリシーはいつでも変更できます。
 * ポリシーの値を *-1* に設定することによって、ポリシーを無効にすることができます。 
 
-**注:** ログ保存ポリシーを無効にする場合、Log Collection 内のログをユーザー自身が保守する必要があります。 CLI コマンド [cf logging delete](/docs/services/CloudLogAnalysis/reference/logging_cli.html#delete4) を使用して、古いログを削除できます。
+**注:** ログ保存ポリシーを無効にする場合、Log Collection 内のログをユーザー自身が保守する必要があります。 CLI コマンド [cf logging delete](/docs/services/CloudLogAnalysis/reference?topic=cloudloganalysis-logging_cli#delete4) を使用して、古いログを削除できます。
 
 詳しくは、以下を参照してください。
 
-* [{{site.data.keyword.Bluemix_notm}} プラグインを使用したログ保存ポリシーの表示および構成](/docs/services/CloudLogAnalysis/how-to/manage-logs/configuring_retention_policy_cloud.html#configuring_retention_policy)
-* [CF プラグインを使用したログ保存ポリシーの表示および構成](/docs/services/CloudLogAnalysis/how-to/manage-logs/configuring_retention_policy.html#configuring_retention_policy)
+* [{{site.data.keyword.cloud_notm}} プラグインを使用したログ保存ポリシーの表示および構成](/docs/services/CloudLogAnalysis/how-to/manage-logs?topic=cloudloganalysis-configuring_retention_policy#configuring_retention_policy)
+* [CF プラグインを使用したログ保存ポリシーの表示および構成](/docs/services/CloudLogAnalysis/how-to/manage-logs?topic=cloudloganalysis-configuring_retention_policy1#configuring_retention_policy)
 
 
 ## ログの削除
@@ -74,11 +74,11 @@ Log Search に保管されたログは、3 日後に削除されます。
 
 Log Collection に保管されたログは、保存ポリシーを構成するか手動で削除するまで保持されます。 
 
-* ログ保存ポリシーを構成して、Log Collection 内でログを保持する日数を定義できます。 詳しくは、『[{{site.data.keyword.Bluemix_notm}} プラグインを使用したログ保存ポリシーの表示および構成](/docs/services/CloudLogAnalysis/how-to/manage-logs/configuring_retention_policy_cloud.html#configuring_retention_policy)』を参照してください。
+* ログ保存ポリシーを構成して、Log Collection 内でログを保持する日数を定義できます。 詳しくは、『[{{site.data.keyword.cloud_notm}} プラグインを使用したログ保存ポリシーの表示および構成](/docs/services/CloudLogAnalysis/how-to/manage-logs?topic=cloudloganalysis-configuring_retention_policy#configuring_retention_policy)』を参照してください。
 
-* [Log Collection API](https://console.bluemix.net/apidocs/948-ibm-cloud-log-collection-api?&language=node&env_id=ibm%3Ayp%3Aus-south#introduction){: new_window} または [Log Collection CLI](/docs/services/CloudLogAnalysis/reference/log_analysis_cli_cloud.html#log_analysis_cli){: new_window} を使用して、Log Collection からログを手動で削除できます。 
+* [Log Collection API](https://console.bluemix.net/apidocs/948-ibm-cloud-log-collection-api?&language=node&env_id=ibm%3Ayp%3Aus-south#introduction){: new_window} または [Log Collection CLI](/docs/services/CloudLogAnalysis/reference?topic=cloudloganalysis-log_analysis_cli#log_analysis_cli){: new_window} を使用して、Log Collection からログを手動で削除できます。 
 
-* CLI を使用できます。 CLI を使用してログを手動で削除することについて詳しくは、『[{{site.data.keyword.Bluemix_notm}} プラグインを使用した ibmcloud logging log-delete](/docs/services/CloudLogAnalysis/how-to/manage-logs/deleting_logs_cloud.html#deleting_logs)』を参照してください。
+* CLI を使用できます。 CLI を使用してログを手動で削除することについて詳しくは、『[{{site.data.keyword.cloud_notm}} プラグインを使用した ibmcloud logging log-delete](/docs/services/CloudLogAnalysis/how-to/manage-logs?topic=cloudloganalysis-deleting_logs#deleting_logs)』を参照してください。
     
 
 
@@ -89,8 +89,8 @@ Log Collection に保管されたログは、保存ポリシーを構成する�
 
 詳しくは、以下を参照してください。
 
-* [{{site.data.keyword.Bluemix_notm}} プラグインを使用したログのダウンロード](/docs/services/CloudLogAnalysis/how-to/manage-logs/downloading_logs_cloud.html#downloading_logs)
-* [CF プラグインを使用したログのダウンロード](/docs/services/CloudLogAnalysis/how-to/manage-logs/downloading_logs.html#downloading_logs1)
+* [{{site.data.keyword.cloud_notm}} プラグインを使用したログのダウンロード](/docs/services/CloudLogAnalysis/how-to/manage-logs?topic=cloudloganalysis-downloading_logs#downloading_logs)
+* [CF プラグインを使用したログのダウンロード](/docs/services/CloudLogAnalysis/how-to/manage-logs?topic=cloudloganalysis-downloading_logs1#downloading_logs1)
 
 
 
@@ -99,23 +99,23 @@ Log Collection に保管されたログは、保存ポリシーを構成する�
 
 ログに関する一般情報を取得するには、`ibmcloud logging log-show` コマンドまたは `cf logging status` コマンドを使用します。 詳しくは、以下を参照してください。
 
-* [{{site.data.keyword.Bluemix_notm}} プラグインを使用したログ情報の表示](/docs/services/CloudLogAnalysis/how-to/manage-logs/viewing_log_information_cloud.html#viewing_log_status1)
-* [CF プラグインを使用したログ情報の表示](/docs/services/CloudLogAnalysis/how-to/manage-logs/viewing_log_information.html#viewing_log_status1)
+* [{{site.data.keyword.cloud_notm}} プラグインを使用したログ情報の表示](/docs/services/CloudLogAnalysis/how-to/manage-logs?topic=cloudloganalysis-viewing_log_status1#viewing_log_status1)
+* [CF プラグインを使用したログ情報の表示](/docs/services/CloudLogAnalysis/how-to/manage-logs?topic=cloudloganalysis-viewing_log_status#viewing_log_status1)
 
-例えば、コストを制御するため、一定の期間にアプリのログのサイズをモニターしたい場合があります。 例えば、予想より多いログを生成しているアプリまたはサービスがあるかどうかを調べるため、ある {{site.data.keyword.Bluemix_notm}} スペースについて、1 週間における各ログ・タイプのサイズを把握したいといった場合が考えられます。 ログのサイズを確認するには、`ibmcloud logging log-show` コマンドまたは `cf logging status` コマンドを使用します。
+例えば、コストを制御するため、一定の期間にアプリのログのサイズをモニターしたい場合があります。 例えば、予想より多いログを生成しているアプリまたはサービスがあるかどうかを調べるため、ある {{site.data.keyword.cloud_notm}} スペースについて、1 週間における各ログ・タイプのサイズを把握したいといった場合が考えられます。 ログのサイズを確認するには、`ibmcloud logging log-show` コマンドまたは `cf logging status` コマンドを使用します。
 
 スペース・ドメイン、組織ドメイン、またはアカウント・ドメインに保管されたログに関する情報を表示できます。
 
 
 
-## {{site.data.keyword.loganalysisshort_notm}} CLI のインストール ({{site.data.keyword.Bluemix_notm}} プラグイン)
+## {{site.data.keyword.loganalysisshort_notm}} CLI のインストール ({{site.data.keyword.cloud_notm}} プラグイン)
 {: #install_cli2}
 
-CLI のインストール方法について詳しくは、『[ロギング CLI のインストール](/docs/services/CloudLogAnalysis/how-to/manage-logs/config_log_collection_cli_cloud.html#config_log_collection_cli)』を参照してください。
+CLI のインストール方法について詳しくは、『[ロギング CLI のインストール](/docs/services/CloudLogAnalysis/how-to/manage-logs?topic=cloudloganalysis-config_log_collection_cli#config_log_collection_cli)』を参照してください。
 
 CLI のバージョンを確認するには、`ibmcloud plugin list` コマンドを実行します。
 
-コマンドの実行方法についてのヘルプを利用するには、『[コマンドの実行に関するコマンド・ライン・ヘルプの利用](/docs/services/CloudLogAnalysis/how-to/manage-logs/config_log_collection_cli_cloud.html#command_cli_help)』を参照してください。
+コマンドの実行方法についてのヘルプを利用するには、『[コマンドの実行に関するコマンド・ライン・ヘルプの利用](/docs/services/CloudLogAnalysis/how-to/manage-logs?topic=cloudloganalysis-config_log_collection_cli#command_cli_help)』を参照してください。
 
 
 ## ロギング・エンドポイント
@@ -150,7 +150,7 @@ CLI のバージョンを確認するには、`ibmcloud plugin list` コマン�
 ## ログを管理するユーザーに必要な役割
 {: #roles1}
 
-{{site.data.keyword.Bluemix_notm}} では、ユーザーに 1 つ以上の役割を割り当てることができます。 これらの役割は、{{site.data.keyword.loganalysisshort}} サービスを使用して作業するためにユーザーが使用できるタスクを定義します。 
+{{site.data.keyword.cloud_notm}} では、ユーザーに 1 つ以上の役割を割り当てることができます。 これらの役割は、{{site.data.keyword.loganalysisshort}} サービスを使用して作業するためにユーザーが使用できるタスクを定義します。 
 
 以下の表は、ログを管理するために必要なユーザーの役割を示します。
 

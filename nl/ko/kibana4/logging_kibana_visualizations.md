@@ -51,13 +51,13 @@ Kibana에서 *시각화* 페이지를 사용하여 로그 데이터를 분석하
 
 |태스크 |자세한 정보 |
 |------|------------------|
-|[새 시각화 작성](/docs/services/CloudLogAnalysis/kibana4/logging_kibana_visualizations.html#logging_k4_visualizations_create) |*검색* 페이지에 저장하는 검색이나 *시각화* 페이지에 정의하는 새 조회에서 시각화를 작성할 수 있습니다. |
-|[시각화 저장](/docs/services/CloudLogAnalysis/kibana4/logging_kibana_visualizations.html#logging_kibana_visualizations_save) |나중에 다시 사용할 수 있도록 시각화를 저장할 수 있습니다. |
-|[시각화 로드](/docs/services/CloudLogAnalysis/kibana4/logging_kibana_visualizations.html#logging_kibana_visualizations_reload) |해당 데이터를 업데이트, 수정 또는 분석하기 위해 시각화를 업로드할 수 있습니다. |
-|[시각화 삭제](/docs/services/CloudLogAnalysis/kibana4/logging_kibana_visualizations.html#logging_kibana_visualizations_delete) |필요하지 않은 시각화는 삭제합니다. |
-|[시각화 내보내기](/docs/services/CloudLogAnalysis/kibana4/logging_kibana_visualizations.html#logging_kibana_visualizations_export) |시각화를 JSON 파일로 내보낼 수 있습니다.  |
-|[시각화 가져오기](/docs/services/CloudLogAnalysis/kibana4/logging_kibana_visualizations.html#logging_kibana_visualizations_import) |시각화를 JSON 파일로 가져올 수 있습니다.  |
-|[시각화 공유](/docs/services/CloudLogAnalysis/kibana4/logging_kibana_visualizations.html#logging_kibana_visualizations_share) |HTML 소스 또는 Kibana 대시보드를 통해 시각화를 공유할 수 있습니다.  |
+|[새 시각화 작성](/docs/services/CloudLogAnalysis/kibana4?topic=cloudloganalysis-logging_kibana_visualizations#logging_k4_visualizations_create) |*검색* 페이지에 저장하는 검색이나 *시각화* 페이지에 정의하는 새 조회에서 시각화를 작성할 수 있습니다. |
+|[시각화 저장](/docs/services/CloudLogAnalysis/kibana4?topic=cloudloganalysis-logging_kibana_visualizations#logging_kibana_visualizations_save) |나중에 다시 사용할 수 있도록 시각화를 저장할 수 있습니다. |
+|[시각화 로드](/docs/services/CloudLogAnalysis/kibana4?topic=cloudloganalysis-logging_kibana_visualizations#logging_kibana_visualizations_reload) |해당 데이터를 업데이트, 수정 또는 분석하기 위해 시각화를 업로드할 수 있습니다. |
+|[시각화 삭제](/docs/services/CloudLogAnalysis/kibana4?topic=cloudloganalysis-logging_kibana_visualizations#logging_kibana_visualizations_delete) |필요하지 않은 시각화는 삭제합니다. |
+|[시각화 내보내기](/docs/services/CloudLogAnalysis/kibana4?topic=cloudloganalysis-logging_kibana_visualizations#logging_kibana_visualizations_export) |시각화를 JSON 파일로 내보낼 수 있습니다.  |
+|[시각화 가져오기](/docs/services/CloudLogAnalysis/kibana4?topic=cloudloganalysis-logging_kibana_visualizations#logging_kibana_visualizations_import) |시각화를 JSON 파일로 가져올 수 있습니다.  |
+|[시각화 공유](/docs/services/CloudLogAnalysis/kibana4?topic=cloudloganalysis-logging_kibana_visualizations#logging_kibana_visualizations_share) |HTML 소스 또는 Kibana 대시보드를 통해 시각화를 공유할 수 있습니다.  |
 {: caption="표 2. 시각화로 작업하는 태스크" caption-side="top"}
 
 

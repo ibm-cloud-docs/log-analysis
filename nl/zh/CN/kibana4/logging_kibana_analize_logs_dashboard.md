@@ -47,14 +47,14 @@ subcollection: cloudloganalysis
 
 |任务|更多信息|
 |------|------------------|
-|[新建仪表板](/docs/services/CloudLogAnalysis/kibana4/logging_kibana_analize_logs_dashboard.html#K4_dashboard_new)|可以创建多个仪表板。每个仪表板可以设计为包含不同的搜索、可视化项和不同的日志数据子集。|
-|[保存仪表板](/docs/services/CloudLogAnalysis/kibana4/logging_kibana_analize_logs_dashboard.html#k4_dashboard_save)|可以保存仪表板以供日后复用。|
-|[装入仪表板](/docs/services/CloudLogAnalysis/kibana4/logging_kibana_analize_logs_dashboard.html#k4_dashboard_reload)|可以上传仪表板以更新其数据，修改仪表板或分析数据。|
-|[删除仪表板](/docs/services/CloudLogAnalysis/kibana4/logging_kibana_analize_logs_dashboard.html#k4_dashboard_delete)|删除不需要的仪表板。|
-|[导出仪表板](/docs/services/CloudLogAnalysis/kibana4/logging_kibana_analize_logs_dashboard.html#k4_dashboard_export)|可以将仪表板导出为 JSON 文件。|
-|[导入仪表板](/docs/services/CloudLogAnalysis/kibana4/logging_kibana_analize_logs_dashboard.html#k4_dashboard_import)|可以将仪表板作为 JSON 文件导入。|
-|[共享仪表板](/docs/services/CloudLogAnalysis/kibana4/logging_kibana_analize_logs_dashboard.html#k4_dashboard_share)|可以通过 HTML 源或通过 Kibana 仪表板来共享仪表板。|
-|[添加可视化项](/docs/services/CloudLogAnalysis/kibana4/logging_kibana_analize_logs_dashboard.html#k4_dashboard_add_visualization)|可以向仪表板添加现有可视化项或搜索。|
+|[新建仪表板](/docs/services/CloudLogAnalysis/kibana4?topic=cloudloganalysis-kibana_analize_logs_dashboard#K4_dashboard_new)|可以创建多个仪表板。每个仪表板可以设计为包含不同的搜索、可视化项和不同的日志数据子集。|
+|[保存仪表板](/docs/services/CloudLogAnalysis/kibana4?topic=cloudloganalysis-kibana_analize_logs_dashboard#k4_dashboard_save)|可以保存仪表板以供日后复用。|
+|[装入仪表板](/docs/services/CloudLogAnalysis/kibana4?topic=cloudloganalysis-kibana_analize_logs_dashboard#k4_dashboard_reload)|可以上传仪表板以更新其数据，修改仪表板或分析数据。|
+|[删除仪表板](/docs/services/CloudLogAnalysis/kibana4?topic=cloudloganalysis-kibana_analize_logs_dashboard#k4_dashboard_delete)|删除不需要的仪表板。|
+|[导出仪表板](/docs/services/CloudLogAnalysis/kibana4?topic=cloudloganalysis-kibana_analize_logs_dashboard#k4_dashboard_export)|可以将仪表板导出为 JSON 文件。|
+|[导入仪表板](/docs/services/CloudLogAnalysis/kibana4?topic=cloudloganalysis-kibana_analize_logs_dashboard#k4_dashboard_import)|可以将仪表板作为 JSON 文件导入。|
+|[共享仪表板](/docs/services/CloudLogAnalysis/kibana4?topic=cloudloganalysis-kibana_analize_logs_dashboard#k4_dashboard_share)|可以通过 HTML 源或通过 Kibana 仪表板来共享仪表板。|
+|[添加可视化项](/docs/services/CloudLogAnalysis/kibana4?topic=cloudloganalysis-kibana_analize_logs_dashboard#k4_dashboard_add_visualization)|可以向仪表板添加现有可视化项或搜索。|
 {: caption="表 2. 使用仪表板的任务" caption-side="top"}
 
 有关 Kibana 的更多信息，请参阅 [Kibana User Guide ![外部链接图标](../../../icons/launch-glyph.svg "外部链接图标")](https://www.elastic.co/guide/en/kibana/4.1/index.html){: new_window}。
@@ -81,7 +81,7 @@ subcollection: cloudloganalysis
 
 1. 在“仪表板”页面的工具栏中，单击**新建仪表板**按钮 ![新建仪表板](images/k4_dash_new_icon.jpg "新建仪表板")。
 
-2. 添加一个或多个搜索和可视化项。有关更多信息，请参阅[添加新的搜索或可视化项](/docs/services/CloudLogAnalysis/kibana4/logging_kibana_visualizations.html#logging_k4_visualizations_create)。
+2. 添加一个或多个搜索和可视化项。有关更多信息，请参阅[添加新的搜索或可视化项](/docs/services/CloudLogAnalysis/kibana4?topic=cloudloganalysis-logging_kibana_visualizations#logging_k4_visualizations_create)。
 
     添加搜索或可视化项时，将在仪表板中添加面板。
 

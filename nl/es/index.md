@@ -38,7 +38,7 @@ Debe tener un ID de usuario que sea miembro o un propietario de una cuenta de {{
 ## Paso 1: Elegir un recurso de la nube cuyos registros se desea ver
 {: #step1}
 
-En {{site.data.keyword.Bluemix_notm}}, las aplicaciones CF, los contenedores que se ejecutan en el {{site.data.keyword.containershort}} y servicios seleccionados recopilan datos de registro automáticamente y los reenvían al servicio {{site.data.keyword.loganalysisshort}}.
+En {{site.data.keyword.Bluemix_notm}}, las aplicaciones CF, los contenedores que se ejecutan en {{site.data.keyword.containershort}} y servicios seleccionados recopilan datos de registro automáticamente y los reenvían al servicio {{site.data.keyword.loganalysisshort}}.
 
 En la tabla siguiente encontrará los distintos recursos de la nube. Consulte la guía de aprendizaje de un recurso para empezar a trabajar con el servicio {{site.data.keyword.loganalysisshort}}:
 
@@ -51,10 +51,10 @@ En la tabla siguiente encontrará los distintos recursos de la nube. Consulte la
     <th>Escenario</th>
   </tr>
   <tr>
-    <td>Contenedores se ejecutan en {{site.data.keyword.containershort}}</td>
-    <td>[Análisis de registros en Kibana para una app desplegada en un clúster de Kubernetes](/docs/services/CloudLogAnalysis/tutorials/container_logs.html#container_logs)</td>
+    <td>Contenedores que se ejecutan en {{site.data.keyword.containershort}}</td>
+    <td>[Análisis de registros en Kibana para una app desplegada en un clúster de Kubernetes](/docs/services/CloudLogAnalysis/tutorials?topic=cloudloganalysis-container_logs#container_logs)</td>
     <td>Público </br>Dedicado</td>
-    <td>![Visión general de los componentes de alto nivel correspondientes a contenedores desplegados en un clúster Kubernetes](containers/images/containers_kube_logs.png "Visión general de los componentes de alto nivel correspondientes a contenedores desplegados en un clúster Kubernetes")</td>
+    <td>![Visión general de los componentes de alto nivel correspondientes a contenedores desplegados en un clúster de Kubernetes](containers/images/containers_kube_logs.png "Visión general de los componentes de alto nivel correspondientes a contenedores desplegados en un clúster de Kubernetes")</td>
   </tr>
   <tr>
     <td>Apps de CF</td>
@@ -84,7 +84,7 @@ Siga estos pasos para otorgar permisos a un usuario para ver registros en un esp
 
 1. Inicie sesión en la consola de {{site.data.keyword.Bluemix_notm}}.
 
-    Abra un navegador web y lance el panel de control de {{site.data.keyword.Bluemix_notm}}: [http://bluemix.net ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](http://bluemix.net){:new_window}
+    Abra un navegador web e inicie el panel de control de {{site.data.keyword.Bluemix_notm}}: [http://bluemix.net ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](http://bluemix.net){:new_window}
 	
 	Cuando inicia sesión con su ID de usuario y su contraseña, se abre la interfaz de usuario de {{site.data.keyword.Bluemix_notm}}.
 
@@ -94,13 +94,13 @@ Siga estos pasos para otorgar permisos a un usuario para ver registros en un esp
 	
 3. Si el usuario es un miembro de la cuenta, seleccione el nombre de usuario de la lista, o pulse **Gestionar usuario** del menú *Acciones*.
 
-    Si el usuario no es un miembro de la cuenta, consulte [Invitación a usuarios](/docs/iam/iamuserinv.html#iamuserinv).
+    Si el usuario no es un miembro de la cuenta, consulte [Invitación a usuarios](/docs/iam?topic=iam-iamuserinv#iamuserinv).
 
 4. Seleccione **Acceso de Cloud Foundry** y, a continuación, seleccione la organización.
 
     Se listará la lista de espacios disponibles en dicha organización.
 
-5. Seleccione el espacio donde se suministra el servicio de {{site.data.keyword.loganalysisshort}}. A continuación, desde la acción de menú, seleccione **Editar el rol de espacio**.
+5. Seleccione el espacio donde se suministra el servicio {{site.data.keyword.loganalysisshort}}. A continuación, desde la acción de menú, seleccione **Editar el rol de espacio**.
 
 6. Seleccione *Auditor*. 
 
@@ -118,7 +118,7 @@ Siga estos pasos para otorgar permisos a un usuario para ver registros de cuenta
 
 1. Inicie sesión en la consola de {{site.data.keyword.Bluemix_notm}}.
 
-    Abra un navegador web y lance el panel de control de {{site.data.keyword.Bluemix_notm}}: [http://bluemix.net ![Icono de enlace externo](../../../icons/launch-glyph.svg "Icono de enlace externo")](http://bluemix.net){:new_window}
+    Abra un navegador web e inicie el panel de control de {{site.data.keyword.Bluemix_notm}}: [http://bluemix.net ![Icono de enlace externo](../../../icons/launch-glyph.svg "Icono de enlace externo")](http://bluemix.net){:new_window}
 	
 	Cuando inicia sesión con su ID de usuario y su contraseña, se abre la interfaz de usuario de {{site.data.keyword.Bluemix_notm}}.
 
@@ -128,7 +128,7 @@ Siga estos pasos para otorgar permisos a un usuario para ver registros de cuenta
 	
 3. Si el usuario es un miembro de la cuenta, seleccione el nombre de usuario de la lista, o pulse **Gestionar usuario** del menú *Acciones*.
 
-    Si el usuario no es un miembro de la cuenta, consulte [Invitación a usuarios](/docs/iam/iamuserinv.html#iamuserinv).
+    Si el usuario no es un miembro de la cuenta, consulte [Invitación a usuarios](/docs/iam?topic=iam-iamuserinv#iamuserinv).
 
 4. En la sección **Políticas de acceso**, pulse **Asignar un acceso** y, a continuación, seleccione **Asignar acceso a recursos**.
 
@@ -156,7 +156,7 @@ Siga estos pasos para otorgar permisos a un usuario para ver registros de cuenta
 	  </tr>
 	  <tr>
 	    <td>Roles</td>
-		<td>Seleccione uno o varios roles de IAM. <br>Los roles válidos son: *administrador*, *operador*, *editor*, y *visor*. <br>Para obtener más información sobre las acciones que están permitidas por rol, consulte [Roles de IAM](/docs/services/CloudLogAnalysis/security_ov.html#iam_roles).
+		<td>Seleccione uno o varios roles de IAM. <br>Los roles válidos son: *administrador*, *operador*, *editor*, y *visor*. <br>Para obtener más información sobre las acciones que están permitidas por rol, consulte [Roles de IAM](/docs/services/CloudLogAnalysis?topic=cloudloganalysis-security_ov#iam_roles).
 		</td>
 	  </tr>
      </table>
@@ -179,11 +179,11 @@ https://logging.ng.bluemix.net/
 {: codeblock}
 
 
-Para obtener más información sobre cómo iniciar Kibana en otras regiones, consulte [Navegación a Kibana desde un navegador web](/docs/services/CloudLogAnalysis/kibana/launch.html#launch_Kibana_from_browser).
+Para obtener más información sobre cómo iniciar Kibana en otras regiones, consulte [Navegación a Kibana desde un navegador web](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-launch#launch_Kibana_from_browser).
 
 **Nota:** Cuando inicie Kibana, si obtiene un mensaje que indica *señal de transporte no válida*, compruebe sus permisos en la cuenta. Este mensaje es una indicación de que el ID de usuario no tiene permisos para ver registros.
 
-A continuación, personalice Kibana para ver y analizar sus datos de registro. Para obtener más información, consulte [Visualización y análisis de registros](/docs/services/CloudLogAnalysis/kibana/analyzing_logs_Kibana.html#analyzing_logs_Kibana).
+A continuación, personalice Kibana para ver y analizar sus datos de registro. Para obtener más información, consulte [Visualización y análisis de registros](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-analyzing_logs_Kibana#analyzing_logs_Kibana).
     
 
 

@@ -36,7 +36,7 @@ subcollection: cloudloganalysis
 
 1. 安裝 {{site.data.keyword.Bluemix_notm}} CLI。
 
-   如需相關資訊，請參閱[安裝 {{site.data.keyword.Bluemix_notm}} CLI](/docs/cli/index.html#overview)。
+   如需相關資訊，請參閱[安裝 {{site.data.keyword.Bluemix_notm}} CLI](/docs/cli?topic=cloud-cli-ibmcloud-cli#overview)。
    
 2. 在儲存庫中，找出外掛程式的名稱。執行下列指令：
 
@@ -82,13 +82,13 @@ subcollection: cloudloganalysis
 
 1. 安裝 {{site.data.keyword.Bluemix_notm}} CLI。
 
-   如需相關資訊，請參閱[安裝 {{site.data.keyword.Bluemix_notm}} CLI](/docs/cli/index.html#overview)。
+   如需相關資訊，請參閱[安裝 {{site.data.keyword.Bluemix_notm}} CLI](/docs/cli?topic=cloud-cli-ibmcloud-cli#overview)。
 
 2. 安裝 {{site.data.keyword.loganalysisshort}} 外掛程式。
 
-    * 若為 Linux，請參閱[在 Linux 上安裝 {{site.data.keyword.loganalysisshort}} 外掛程式](/docs/services/CloudLogAnalysis/how-to/manage-logs/config_log_collection_cli_cloud.html#install_cli_linux)。
-    * 若為 Windows，請參閱[在 Windows 上安裝 {{site.data.keyword.loganalysisshort}} 外掛程式](/docs/services/CloudLogAnalysis/how-to/manage-logs/config_log_collection_cli_cloud.html#install_cli_windows)。
-    * 若為 Mac OS X，請參閱[在 Mac OS X 上安裝 {{site.data.keyword.loganalysisshort}} 外掛程式](/docs/services/CloudLogAnalysis/how-to/manage-logs/config_log_collection_cli_cloud.html#install_cli_mac)。
+    * 若為 Linux，請參閱[在 Linux 上安裝 {{site.data.keyword.loganalysisshort}} 外掛程式](/docs/services/CloudLogAnalysis/how-to/manage-logs?topic=cloudloganalysis-config_log_collection_cli#install_cli_linux)。
+    * 若為 Windows，請參閱[在 Windows 上安裝 {{site.data.keyword.loganalysisshort}} 外掛程式](/docs/services/CloudLogAnalysis/how-to/manage-logs?topic=cloudloganalysis-config_log_collection_cli#install_cli_windows)。
+    * 若為 Mac OS X，請參閱[在 Mac OS X 上安裝 {{site.data.keyword.loganalysisshort}} 外掛程式](/docs/services/CloudLogAnalysis/how-to/manage-logs?topic=cloudloganalysis-config_log_collection_cli#install_cli_mac)。
  
 3. 驗證 CLI 外掛程式的安裝。
   
@@ -264,7 +264,7 @@ chmod u+x logging-cli-darwin-amd64-0.1.1
 
 1. 登入 {{site.data.keyword.Bluemix_notm}} 中的地區、組織及空間。 
 
-    如需相關資訊，請參閱[如何登入 {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/qa/cli_qa.html#login)。
+    如需相關資訊，請參閱[如何登入 {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#login)。
     
 2. 列出所支援指令及 CLI 的相關資訊。執行下列指令：
 
@@ -282,7 +282,7 @@ chmod u+x logging-cli-darwin-amd64-0.1.1
 
 1. 登入 {{site.data.keyword.Bluemix_notm}} 中的地區、組織及空間。 
 
-    如需相關資訊，請參閱[如何登入 {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/qa/cli_qa.html#login)。
+    如需相關資訊，請參閱[如何登入 {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#login)。
     
 2. 取得所支援指令的清單，並識別您需要的指令。執行下列指令：
 
@@ -309,7 +309,7 @@ chmod u+x logging-cli-darwin-amd64-0.1.1
 
 1. 登入 {{site.data.keyword.Bluemix_notm}} 中的地區、組織及空間。 
 
-    如需相關資訊，請參閱[如何登入 {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/qa/cli_qa.html#login)。
+    如需相關資訊，請參閱[如何登入 {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#login)。
     
 2. 取得所支援指令的清單，並識別您需要的指令。執行下列指令：
 

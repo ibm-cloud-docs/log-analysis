@@ -46,14 +46,14 @@ Le tableau suivant répertorie différentes tâches que vous pouvez effectuer de
 
 | Tâche | Informations sur la tâche |
 |------|------------------|
-| [Créer un nouveau tableau de bord](/docs/services/CloudLogAnalysis/kibana4/logging_kibana_analize_logs_dashboard.html#K4_dashboard_new) | Vous pouvez créer plusieurs tableaux de bord. Chaque tableau de bord peut être conçu en vue d'inclure des recherches et des visualisations différentes, ainsi qu'un sous-ensemble distinct de données de journal.  |
-| [Sauvegarder un tableau de bord](/docs/services/CloudLogAnalysis/kibana4/logging_kibana_analize_logs_dashboard.html#k4_dashboard_save) | Vous pouvez sauvegarder un tableau de bord pour le réutiliser plus tard. |
-| [Charger un tableau de bord](/docs/services/CloudLogAnalysis/kibana4/logging_kibana_analize_logs_dashboard.html#k4_dashboard_reload) | Vous pouvez charger un tableau de bord pour mettre à jour les données, les modifier, ou les analyser. |
-| [Supprimer un tableau de bord](/docs/services/CloudLogAnalysis/kibana4/logging_kibana_analize_logs_dashboard.html#k4_dashboard_delete) | Vous pouvez supprimer les tableaux de bord superflus. |
-| [Exporter un tableau de bord](/docs/services/CloudLogAnalysis/kibana4/logging_kibana_analize_logs_dashboard.html#k4_dashboard_export) | Vous pouvez exporter un tableau de bord sous forme de fichier JSON. |
-| [Importer un tableau de bord](/docs/services/CloudLogAnalysis/kibana4/logging_kibana_analize_logs_dashboard.html#k4_dashboard_import) | Vous pouvez importer un tableau de bord depuis un fichier JSON. |
-| [Partager un tableau de bord](/docs/services/CloudLogAnalysis/kibana4/logging_kibana_analize_logs_dashboard.html#k4_dashboard_share) | Vous pouvez partager un tableau de bord via votre source HTML ou via le tableau de bord Kibana. |
-| [Ajouter une visualisation](/docs/services/CloudLogAnalysis/kibana4/logging_kibana_analize_logs_dashboard.html#k4_dashboard_add_visualization) | Vous pouvez ajouter une visualisation ou une recherche existante à un tableau de bord.|
+| [Créer un nouveau tableau de bord](/docs/services/CloudLogAnalysis/kibana4?topic=cloudloganalysis-kibana_analize_logs_dashboard#K4_dashboard_new) | Vous pouvez créer plusieurs tableaux de bord. Chaque tableau de bord peut être conçu en vue d'inclure des recherches et des visualisations différentes, ainsi qu'un sous-ensemble distinct de données de journal.  |
+| [Sauvegarder un tableau de bord](/docs/services/CloudLogAnalysis/kibana4?topic=cloudloganalysis-kibana_analize_logs_dashboard#k4_dashboard_save) | Vous pouvez sauvegarder un tableau de bord pour le réutiliser plus tard. |
+| [Charger un tableau de bord](/docs/services/CloudLogAnalysis/kibana4?topic=cloudloganalysis-kibana_analize_logs_dashboard#k4_dashboard_reload) | Vous pouvez charger un tableau de bord pour mettre à jour les données, les modifier, ou les analyser. |
+| [Supprimer un tableau de bord](/docs/services/CloudLogAnalysis/kibana4?topic=cloudloganalysis-kibana_analize_logs_dashboard#k4_dashboard_delete) | Vous pouvez supprimer les tableaux de bord superflus. |
+| [Exporter un tableau de bord](/docs/services/CloudLogAnalysis/kibana4?topic=cloudloganalysis-kibana_analize_logs_dashboard#k4_dashboard_export) | Vous pouvez exporter un tableau de bord sous forme de fichier JSON. |
+| [Importer un tableau de bord](/docs/services/CloudLogAnalysis/kibana4?topic=cloudloganalysis-kibana_analize_logs_dashboard#k4_dashboard_import) | Vous pouvez importer un tableau de bord depuis un fichier JSON. |
+| [Partager un tableau de bord](/docs/services/CloudLogAnalysis/kibana4?topic=cloudloganalysis-kibana_analize_logs_dashboard#k4_dashboard_share) | Vous pouvez partager un tableau de bord via votre source HTML ou via le tableau de bord Kibana. |
+| [Ajouter une visualisation](/docs/services/CloudLogAnalysis/kibana4?topic=cloudloganalysis-kibana_analize_logs_dashboard#k4_dashboard_add_visualization) | Vous pouvez ajouter une visualisation ou une recherche existante à un tableau de bord.|
 {: caption="Tableau 2. Tâches de gestion de tableaux de bord" caption-side="top"}
 
 Pour plus d'informations sur Kibana, reportez-vous au manuel [Kibana User Guide ![Icône de lien externe](../../../icons/launch-glyph.svg "Icône de lien externe")](https://www.elastic.co/guide/en/kibana/4.1/index.html){: new_window}.
@@ -80,7 +80,7 @@ Pour créer un tableau de bord, procédez comme suit :
 
 1. Dans la barre d'outils du tableau de bord, cliquez sur le bouton **New dashboard** ![Nouveau tableau de bord](images/k4_dash_new_icon.jpg "Nouveau tableau de bord").
 
-2. Ajoutez une ou plusieurs recherches et visualisations. Pour plus d'informations, voir [Ajout d'une nouvelle recherche ou visualisation](/docs/services/CloudLogAnalysis/kibana4/logging_kibana_visualizations.html#logging_k4_visualizations_create).
+2. Ajoutez une ou plusieurs recherches et visualisations. Pour plus d'informations, voir [Ajout d'une nouvelle recherche ou visualisation](/docs/services/CloudLogAnalysis/kibana4?topic=cloudloganalysis-logging_kibana_visualizations#logging_k4_visualizations_create).
 
     Lorsque vous ajoutez une recherche ou une visualisation, un panneau est ajouté au tableau de bord.
 

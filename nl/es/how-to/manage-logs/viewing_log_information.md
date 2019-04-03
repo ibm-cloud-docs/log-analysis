@@ -25,7 +25,7 @@ subcollection: cloudloganalysis
 # Visualización de la información de registro
 {: #viewing_log_status}
 
-Utilice el mandato [cf logging status](/docs/services/CloudLogAnalysis/reference/logging_cli.html#status1) para obtener información sobre los registros que se recopilan y almacenan en el componente de recopilación de registros.
+Utilice el mandato [cf logging status](/docs/services/CloudLogAnalysis/reference?topic=cloudloganalysis-logging_cli#status1) para obtener información sobre los registros que se recopilan y almacenan en el componente de recopilación de registros.
 {:shortdesc}
 
 ## Obtención de información sobre los registros durante un periodo de tiempo
@@ -43,7 +43,7 @@ Siga estos pasos para obtener para obtener información sobre los registros:
 
 1. Inicie la sesión en una región, organización y espacio en {{site.data.keyword.Bluemix_notm}}. 
 
-    Para obtener más información, consulte [Cómo iniciar la sesión en {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/qa/cli_qa.html#login).
+    Para obtener más información, consulte [Cómo iniciar la sesión en {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#login).
     
 2. Ejecute el mandato *status*.
 
@@ -80,7 +80,7 @@ Siga estos pasos para obtener información sobre un tipo de registro durante un 
 
 1. Inicie la sesión en una región, organización y espacio en {{site.data.keyword.Bluemix_notm}}. 
 
-    Para obtener más información, consulte [Cómo iniciar la sesión en {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/qa/cli_qa.html#login).
+    Para obtener más información, consulte [Cómo iniciar la sesión en {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#login).
     
 2. Ejecute el mandato *status*.
 
@@ -122,7 +122,7 @@ Siga estos pasos para obtener para obtener información de la cuenta sobre los r
 
 1. Inicie la sesión en una región, organización y espacio en {{site.data.keyword.Bluemix_notm}}. 
 
-    Para obtener más información, consulte [Cómo iniciar la sesión en {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/qa/cli_qa.html#login).
+    Para obtener más información, consulte [Cómo iniciar la sesión en {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#login).
     
 2. Ejecute el mandato *status*.
 

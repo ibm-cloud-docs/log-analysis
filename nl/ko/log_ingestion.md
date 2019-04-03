@@ -29,7 +29,7 @@ subcollection: cloudloganalysis
 여러 테넌트 Logstash 포워더를 사용하여 로그를 {{site.data.keyword.IBM_notm}} Cloud 외부에서 {{site.data.keyword.loganalysisshort}} 서비스로 보낼 수 있습니다. 
 {:shortdesc}
 
-이 기능은 로그를 수집할 수 있는 서비스 플랜에 대해서만 사용할 수 있습니다. 자세한 정보는 [서비스 플랜](/docs/services/CloudLogAnalysis/log_analysis_ov.html#plans)을 참조하십시오.
+이 기능은 로그를 수집할 수 있는 서비스 플랜에 대해서만 사용할 수 있습니다. 자세한 정보는 [서비스 플랜](/docs/services/CloudLogAnalysis?topic=cloudloganalysis-log_analysis_ov#plans)을 참조하십시오.
 
 로그를 {{site.data.keyword.IBM_notm}} Cloud 외부에서 {{site.data.keyword.loganalysisshort}} 서비스로 보내려면 다음 Clould 리소스가 필요합니다.
 
@@ -38,7 +38,7 @@ subcollection: cloudloganalysis
 
 로컬 환경에서 mt-logstash-forwarder를 구성해야 하며 {{site.data.keyword.loganalysisshort}} 서비스로 보내려는 로그 파일을 지정해야 합니다.
 
-로그를 {{site.data.keyword.loganalysisshort}} 서비스로 보내도록 로컬 환경을 구성하는 방법에 대한 자세한 정보는 [{{site.data.keyword.Bluemix_notm}}의 영역으로 온프레미스 데이터 전송](/docs/services/CloudLogAnalysis/how-to/send-data/send_data_mt.html#send_data_mt)을 참조하십시오.
+로그를 {{site.data.keyword.loganalysisshort}} 서비스로 보내도록 로컬 환경을 구성하는 방법에 대한 자세한 정보는 [{{site.data.keyword.Bluemix_notm}}의 영역으로 온프레미스 데이터 전송](/docs/services/CloudLogAnalysis/how-to/send-data?topic=cloudloganalysis-send_data_mt#send_data_mt)을 참조하십시오.
 
 
 

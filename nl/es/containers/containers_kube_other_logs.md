@@ -41,7 +41,7 @@ Para comprobar que el ID de usuario tiene estas políticas de IAM, siga estos pa
 
 **Nota:** Solo el propietario de la cuenta o los usuarios con permisos para asignar políticas pueden realizar este paso.
 
-1. Inicie sesión en la consola de {{site.data.keyword.Bluemix_notm}}. Abra un navegador web y lance el panel de control de {{site.data.keyword.Bluemix_notm}}: [http://bluemix.net ![Icono de enlace externo](../../../icons/launch-glyph.svg "Icono de enlace externo")](http://bluemix.net){:new_window}
+1. Inicie sesión en la consola de {{site.data.keyword.Bluemix_notm}}. Abra un navegador web e inicie el panel de control de {{site.data.keyword.Bluemix_notm}}: [http://bluemix.net ![Icono de enlace externo](../../../icons/launch-glyph.svg "Icono de enlace externo")](http://bluemix.net){:new_window}
 	
 	Cuando inicia sesión con su ID de usuario y su contraseña, se abre la interfaz de usuario de {{site.data.keyword.Bluemix_notm}}.
 
@@ -59,7 +59,7 @@ Siga estos pasos:
 
 1. Inicie la sesión en una región, organización y espacio en {{site.data.keyword.Bluemix_notm}}. 
 
-    Para obtener más información, consulte [Cómo iniciar la sesión en {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/qa/cli_qa.html#login).
+    Para obtener más información, consulte [Cómo iniciar la sesión en {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#login).
     
 2. Inicialice el plug-in del servicio {{site.data.keyword.loganalysisshort}}.
 
@@ -91,11 +91,11 @@ Siga estos pasos:
 
 Puede elegir los registros del clúster que desea reenviar al servicio {{site.data.keyword.loganalysisshort}}. 
 
-* Para habilitar la recopilación automática de registros y el reenvío de stdout y stderr, consulte [Habilitación de la recopilación automática de registros y del reenvío de registros de contenedor](/docs/services/CloudLogAnalysis/containers/containers_kube_other_logs.html#containers).
-* Para habilitar la recopilación automática y el reenvío de registros de registros de la aplicación, consulte [Habilitación de la recopilación automática de registros y del reenvío de registro de aplicación](/docs/services/CloudLogAnalysis/containers/containers_kube_other_logs.html#apps).
-* Para habilitar la recopilación automática de registros y el reenvío de registro de trabajo, consulte [Habilitación de la recopilación automática de registros y del reenvío de registros de trabajo](/docs/services/CloudLogAnalysis/containers/containers_kube_other_logs.html#workers).
-* Para habilitar la recopilación automática de registros y el reenvío de registros de componentes del sistema Kubernetes, consulte [Habilitación de la recopilación automática de registros y del reenvío de registros de componentes del sistema Kubernetes](/docs/services/CloudLogAnalysis/containers/containers_kube_other_logs.html#system).
-* Para habilitar la recopilación automática de registros y el reenvío de registros del controlador de Ingress de Kubernetes, consulte [Habilitación de la recopilación automática de registros y del reenvío de registros del controlador de Ingress de Kubernetes](/docs/services/CloudLogAnalysis/containers/containers_kube_other_logs.html#controller).
+* Para habilitar la recopilación automática de registros y el reenvío de stdout y stderr, consulte [Habilitación de la recopilación automática de registros y del reenvío de registros de contenedor](/docs/services/CloudLogAnalysis/containers?topic=cloudloganalysis-containers_kube_other_logs#containers).
+* Para habilitar la recopilación automática y el reenvío de registros de registros de la aplicación, consulte [Habilitación de la recopilación automática de registros y del reenvío de registro de aplicación](/docs/services/CloudLogAnalysis/containers?topic=cloudloganalysis-containers_kube_other_logs#apps).
+* Para habilitar la recopilación automática de registros y el reenvío de registro de trabajo, consulte [Habilitación de la recopilación automática de registros y del reenvío de registros de trabajo](/docs/services/CloudLogAnalysis/containers?topic=cloudloganalysis-containers_kube_other_logs#workers).
+* Para habilitar la recopilación automática de registros y el reenvío de registros de componentes del sistema Kubernetes, consulte [Habilitación de la recopilación automática de registros y del reenvío de registros de componentes del sistema Kubernetes](/docs/services/CloudLogAnalysis/containers?topic=cloudloganalysis-containers_kube_other_logs#system).
+* Para habilitar la recopilación automática de registros y el reenvío de registros del controlador de Ingress de Kubernetes, consulte [Habilitación de la recopilación automática de registros y del reenvío de registros del controlador de Ingress de Kubernetes](/docs/services/CloudLogAnalysis/containers?topic=cloudloganalysis-containers_kube_other_logs#controller).
 
 
 
@@ -110,7 +110,7 @@ El propietario de la clave de {{site.data.keyword.containershort}} necesita las 
 
 Siga estos pasos: 
 
-1. Inicie sesión en la consola de {{site.data.keyword.Bluemix_notm}}. Abra un navegador web y lance el panel de control de {{site.data.keyword.Bluemix_notm}}: [http://bluemix.net ![Icono de enlace externo](../../../icons/launch-glyph.svg "Icono de enlace externo")](http://bluemix.net){:new_window}
+1. Inicie sesión en la consola de {{site.data.keyword.Bluemix_notm}}. Abra un navegador web e inicie el panel de control de {{site.data.keyword.Bluemix_notm}}: [http://bluemix.net ![Icono de enlace externo](../../../icons/launch-glyph.svg "Icono de enlace externo")](http://bluemix.net){:new_window}
 	
 	Cuando inicia sesión con su ID de usuario y su contraseña, se abre la interfaz de usuario de {{site.data.keyword.Bluemix_notm}}.
 
@@ -134,7 +134,7 @@ Siga estos pasos:
     
 2. Verifique que el usuario que se identifica como el propietario de la clave de {{site.data.keyword.containershort}} tenga el rol *orgManager* para la organización, y *SpaceManager* y *Developer* para el espacio.
 
-    Inicie sesión en la consola de {{site.data.keyword.Bluemix_notm}}. Abra un navegador web y lance el panel de control de {{site.data.keyword.Bluemix_notm}}: [http://bluemix.net ![Icono de enlace externo](../../../icons/launch-glyph.svg "Icono de enlace externo")](http://bluemix.net){:new_window} Después de iniciar sesión con su ID de usuario y contraseña, se abrirá la IU de {{site.data.keyword.Bluemix_notm}}.
+    Inicie sesión en la consola de {{site.data.keyword.Bluemix_notm}}. Abra un navegador web e inicie el panel de control de {{site.data.keyword.Bluemix_notm}}: [http://bluemix.net ![Icono de enlace externo](../../../icons/launch-glyph.svg "Icono de enlace externo")](http://bluemix.net){:new_window} Después de iniciar sesión con su ID de usuario y contraseña, se abrirá la IU de {{site.data.keyword.Bluemix_notm}}.
 
     En la barra de menús, pulse **Gestionar > Cuenta > Usuarios**.  La ventana *Usuarios* muestra una lista de usuarios con sus direcciones de correo electrónico para la cuenta seleccionada actualmente.
 	
@@ -142,7 +142,7 @@ Siga estos pasos:
  
 3. Si el usuario no tiene los permisos correctos, siga estos pasos:
 
-    1. Otorgue al usuario los permisos siguientes: rol de *orgManager* para la organización, y *SpaceManager* y *Developer* para el espacio. Para obtener más información, consulte [Cómo otorgar permisos a un usuario para ver registros del espacio mediante la IU de IBM Cloud](/docs/services/CloudLogAnalysis/security/grant_permissions.html#grant_permissions_ui_space).
+    1. Otorgue al usuario los permisos siguientes: rol de *orgManager* para la organización, y *SpaceManager* y *Developer* para el espacio. Para obtener más información, consulte [Cómo otorgar permisos a un usuario para ver registros del espacio mediante la IU de IBM Cloud](/docs/services/CloudLogAnalysis/security?topic=cloudloganalysis-grant_permissions#grant_permissions_ui_space).
     
     2. Renueve la configuración de registro. Ejecute el mandato siguiente:
     
@@ -170,7 +170,7 @@ ibmcloud ks logging-config-create ClusterName --logsource container --namespace 
 donde 
 
 * *ClusterName* es el nombre del clúster.
-* *EndPoint* es el URL para el servicio de registro en la región donde se suministra el servicio de {{site.data.keyword.loganalysisshort}}. Para obtener una lista de puntos finales, consulte [Puntos finales](/docs/services/CloudLogAnalysis/log_ingestion.html#log_ingestion_urls).
+* *EndPoint* es el URL para el servicio de registro en la región donde se suministra el servicio de {{site.data.keyword.loganalysisshort}}. Para obtener una lista de puntos finales, consulte [Puntos finales](/docs/services/CloudLogAnalysis?topic=cloudloganalysis-log_ingestion#log_ingestion_urls).
 * *OrgName* es el nombre de la organización donde está disponible el espacio.
 * *SpaceName* es el nombre del espacio donde se suministra el servicio de {{site.data.keyword.loganalysisshort}}.
 
@@ -204,7 +204,7 @@ ibmcloud ks logging-config-create ClusterName --logsource application --type ibm
 donde 
 
 * *ClusterName* es el nombre del clúster.
-* *EndPoint* es el URL para el servicio de registro en la región donde se suministra el servicio de {{site.data.keyword.loganalysisshort}}. Para obtener una lista de puntos finales, consulte [Puntos finales](/docs/services/CloudLogAnalysis/log_ingestion.html#log_ingestion_urls).
+* *EndPoint* es el URL para el servicio de registro en la región donde se suministra el servicio de {{site.data.keyword.loganalysisshort}}. Para obtener una lista de puntos finales, consulte [Puntos finales](/docs/services/CloudLogAnalysis?topic=cloudloganalysis-log_ingestion#log_ingestion_urls).
 * *OrgName* es el nombre de la organización donde está disponible el espacio.
 * *SpaceName* es el nombre del espacio donde se suministra el servicio de {{site.data.keyword.loganalysisshort}}.
 * *app-containers* es un parámetro opcional que puede establecer para definir una lista de contenedores que desea examinar. Estos contenedores son los únicos desde los que se reenviarán registros a {{site.data.keyword.loganalysisshort}}. Puede establecer uno o varios contenedores separados por comas.
@@ -240,7 +240,7 @@ ibmcloud ks logging-config-create ClusterName --logsource worker --type ibm --ho
 donde 
 
 * *ClusterName* es el nombre del clúster.
-* *EndPoint* es el URL para el servicio de registro en la región donde se suministra el servicio de {{site.data.keyword.loganalysisshort}}. Para obtener una lista de puntos finales, consulte [Puntos finales](/docs/services/CloudLogAnalysis/log_ingestion.html#log_ingestion_urls).
+* *EndPoint* es el URL para el servicio de registro en la región donde se suministra el servicio de {{site.data.keyword.loganalysisshort}}. Para obtener una lista de puntos finales, consulte [Puntos finales](/docs/services/CloudLogAnalysis?topic=cloudloganalysis-log_ingestion#log_ingestion_urls).
 * *OrgName* es el nombre de la organización donde está disponible el espacio.
 * *SpaceName* es el nombre del espacio donde se suministra el servicio de {{site.data.keyword.loganalysisshort}}.
 
@@ -275,7 +275,7 @@ ibmcloud ks logging-config-create ClusterName --logsource kubernetes --type ibm 
 donde 
 
 * *ClusterName* es el nombre del clúster.
-* *EndPoint* es el URL para el servicio de registro en la región donde se suministra el servicio de {{site.data.keyword.loganalysisshort}}. Para obtener una lista de puntos finales, consulte [Puntos finales](/docs/services/CloudLogAnalysis/log_ingestion.html#log_ingestion_urls).
+* *EndPoint* es el URL para el servicio de registro en la región donde se suministra el servicio de {{site.data.keyword.loganalysisshort}}. Para obtener una lista de puntos finales, consulte [Puntos finales](/docs/services/CloudLogAnalysis?topic=cloudloganalysis-log_ingestion#log_ingestion_urls).
 * *OrgName* es el nombre de la organización donde está disponible el espacio.
 * *SpaceName* es el nombre del espacio donde se suministra el servicio de {{site.data.keyword.loganalysisshort}}.
 
@@ -310,7 +310,7 @@ ibmcloud ks logging-config-create ClusterName --logsource ingress --type ibm --h
 donde 
 
 * *ClusterName* es el nombre del clúster.
-* *EndPoint* es el URL para el servicio de registro en la región donde se suministra el servicio de {{site.data.keyword.loganalysisshort}}. Para obtener una lista de puntos finales, consulte [Puntos finales](/docs/services/CloudLogAnalysis/log_ingestion.html#log_ingestion_urls).
+* *EndPoint* es el URL para el servicio de registro en la región donde se suministra el servicio de {{site.data.keyword.loganalysisshort}}. Para obtener una lista de puntos finales, consulte [Puntos finales](/docs/services/CloudLogAnalysis?topic=cloudloganalysis-log_ingestion#log_ingestion_urls).
 * *OrgName* es el nombre de la organización donde está disponible el espacio.
 * *SpaceName* es el nombre del espacio donde se suministra el servicio de {{site.data.keyword.loganalysisshort}}.
 

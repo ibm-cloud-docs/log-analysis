@@ -34,7 +34,7 @@ subcollection: cloudloganalysis
 
 **消息描述**
 
-您已达到分配给 {{site.data.keyword.loganalysisfull}} 实例 {Instance GUID} 的 Bluemix 空间 {Space GUID} 的每日配额。您当前为“日志搜索”存储器分配的每日存储量是 500 MB，数据在“日志搜索”存储器中保留 3 天，在此期间可以在 Kibana 中对其进行搜索。要升级套餐，以便每天可以在“日志搜索”存储器中存储更多数据，同时在“日志收集”存储器中保留所有日志，请升级此空间的 {{site.data.keyword.loganalysisshort}} 服务套餐。有关服务套餐以及如何升级套餐的更多信息，请参阅[套餐](/docs/services/CloudLogAnalysis/log_analysis_ov.html#plans)。
+您已达到分配给 {{site.data.keyword.loganalysisfull}} 实例 {Instance GUID} 的 Bluemix 空间 {Space GUID} 的每日配额。您当前为“日志搜索”存储器分配的每日存储量是 500 MB，数据在“日志搜索”存储器中保留 3 天，在此期间可以在 Kibana 中对其进行搜索。要升级套餐，以便每天可以在“日志搜索”存储器中存储更多数据，同时在“日志收集”存储器中保留所有日志，请升级此空间的 {{site.data.keyword.loganalysisshort}} 服务套餐。有关服务套餐以及如何升级套餐的更多信息，请参阅[套餐](/docs/services/CloudLogAnalysis?topic=cloudloganalysis-log_analysis_ov#plans)。
 
 
 **消息说明** 
@@ -43,7 +43,7 @@ subcollection: cloudloganalysis
 
 **恢复**
 
-要升级套餐，以便每天可以在“日志搜索”存储器中存储更多数据，同时在“日志收集”存储器中保留所有日志，请升级此空间的 {{site.data.keyword.loganalysisshort}} 服务套餐。有关服务套餐以及如何升级套餐的更多信息，请参阅[套餐](/docs/services/CloudLogAnalysis/log_analysis_ov.html#plans)。
+要升级套餐，以便每天可以在“日志搜索”存储器中存储更多数据，同时在“日志收集”存储器中保留所有日志，请升级此空间的 {{site.data.keyword.loganalysisshort}} 服务套餐。有关服务套餐以及如何升级套餐的更多信息，请参阅[套餐](/docs/services/CloudLogAnalysis?topic=cloudloganalysis-log_analysis_ov#plans)。
 
 
 ## BXNLG020002W 
@@ -52,7 +52,7 @@ subcollection: cloudloganalysis
 
 **消息描述**
 
-您已达到分配给 {{site.data.keyword.loganalysisfull}} 实例 {Instance GUID} 的 Bluemix 空间 {Space GUID} 的每日配额。您当前为“日志搜索”存储器分配的每日存储量是 XXX，数据会保留 3 天，在此期间可以在 Kibana 中对其进行搜索。这不会影响“日志收集”存储器中的日志保留时间策略。要升级套餐，以便每天可以在“日志搜索”存储器中存储更多数据，请升级此空间的 {{site.data.keyword.loganalysisshort}} 服务套餐。有关服务套餐以及如何升级套餐的更多信息，请参阅[套餐](/docs/services/CloudLogAnalysis/log_analysis_ov.html#plans)。
+您已达到分配给 {{site.data.keyword.loganalysisfull}} 实例 {Instance GUID} 的 Bluemix 空间 {Space GUID} 的每日配额。您当前为“日志搜索”存储器分配的每日存储量是 XXX，数据会保留 3 天，在此期间可以在 Kibana 中对其进行搜索。这不会影响“日志收集”存储器中的日志保留时间策略。要升级套餐，以便每天可以在“日志搜索”存储器中存储更多数据，请升级此空间的 {{site.data.keyword.loganalysisshort}} 服务套餐。有关服务套餐以及如何升级套餐的更多信息，请参阅[套餐](/docs/services/CloudLogAnalysis?topic=cloudloganalysis-log_analysis_ov#plans)。
 
 XXX 表示当前套餐可搜索数据的大小。
 
@@ -62,7 +62,7 @@ XXX 表示当前套餐可搜索数据的大小。
 
 **恢复**
 
-要升级套餐，以便每天可以在“日志搜索”存储器中存储更多数据，请升级此空间的 {{site.data.keyword.loganalysisshort}} 服务套餐。有关服务套餐以及如何升级套餐的更多信息，请参阅[套餐](/docs/services/CloudLogAnalysis/log_analysis_ov.html#plans)。
+要升级套餐，以便每天可以在“日志搜索”存储器中存储更多数据，请升级此空间的 {{site.data.keyword.loganalysisshort}} 服务套餐。有关服务套餐以及如何升级套餐的更多信息，请参阅[套餐](/docs/services/CloudLogAnalysis?topic=cloudloganalysis-log_analysis_ov#plans)。
 
 
 

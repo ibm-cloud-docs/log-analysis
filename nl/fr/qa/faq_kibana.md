@@ -28,12 +28,12 @@ subcollection: cloudloganalysis
 
 Ci-après figurent des réponses aux questions fréquentes concernant l'utilisation des fonctions de journalisation de {{site.data.keyword.Bluemix}}. {:shortdesc}
 
-* [Comment procéder si je ne vois pas de données dans la page Discover de Kibana ?](/docs/services/CloudLogAnalysis/qa/faq_kibana.html#logging_qa_no_data_discover_kibana)
-* [Que faire en cas de renvoi d'une exception d'authentification ?](/docs/services/CloudLogAnalysis/qa/faq_kibana.html#logging_qa_no_data_dashboard_kibana)
-* [Pourquoi le symbole ? s'affiche-t-il en regard de zones dans la page Kibana Discover ?](/docs/services/CloudLogAnalysis/qa/faq_kibana.html#logging_qa_kibana_question)
-* [Une erreur 403 s'affiche lorsque j'essaie de modifier le canevas d'index par défaut](/docs/services/CloudLogAnalysis/qa/faq_kibana.html#error_403)
-* [L'URL abrégée ne fonctionne pas](/docs/services/CloudLogAnalysis/qa/faq_kibana.html#short_url)
-* [Puis-je effectuer des recherches dans mes journaux de compte dans Bluemix ?](/docs/services/CloudLogAnalysis/qa/faq_kibana.html#acc_logs_1)
+* [Comment procéder si je ne vois pas de données dans la page Discover de Kibana ?](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-faq_kibana#logging_qa_no_data_discover_kibana)
+* [Que faire en cas de renvoi d'une exception d'authentification ?](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-faq_kibana#logging_qa_no_data_dashboard_kibana)
+* [Pourquoi le symbole ? s'affiche-t-il en regard de zones dans la page Kibana Discover ?](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-faq_kibana#logging_qa_kibana_question)
+* [Une erreur 403 s'affiche lorsque j'essaie de modifier le canevas d'index par défaut](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-faq_kibana#error_403)
+* [L'URL abrégée ne fonctionne pas](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-faq_kibana#short_url)
+* [Puis-je effectuer des recherches dans mes journaux de compte dans Bluemix ?](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-faq_kibana#acc_logs_1)
 
 
 ## Comment procéder si je ne vois pas de données dans la page Discover de Kibana ?
@@ -50,7 +50,7 @@ Pour résoudre ce problème, procédez comme suit :
 
     **Remarque** : par défaut dans {{site.data.keyword.Bluemix_notm}}, le *sélecteur de période* est configuré pour afficher les données des 15 dernières minutes.
 
-    Pour plus d'informations sur la configuration du *sélecteur de période*, voir [Définition d'un sélecteur de période](/docs/services/CloudLogAnalysis/kibana/filter_logs.html#set_time_filter1).
+    Pour plus d'informations sur la configuration du *sélecteur de période*, voir [Définition d'un sélecteur de période](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-filter_logs#set_time_filter1).
        
 2. Cliquez sur la loupe située dans la barre de recherche de la page *Discover*. Les données de la page sont actualisées en fonction de la requête de recherche par défaut.
 
@@ -58,7 +58,7 @@ Pour résoudre ce problème, procédez comme suit :
 
     **Remarque** : par défaut dans {{site.data.keyword.Bluemix_notm}}, la période d'*actualisation automatique* est **désactivée**.
     
-    Pour plus d'informations sur son activation, voir [Actualisation automatique des données](/docs/services/CloudLogAnalysis/kibana/analize_logs_interactively.html#discover_view_refresh_interval).
+    Pour plus d'informations sur son activation, voir [Actualisation automatique des données](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-analize_logs_interactively#discover_view_refresh_interval).
 
 
 
@@ -89,7 +89,7 @@ Pour résoudre ce problème, procédez comme suit :
 ## Pourquoi le symbole ? s'affiche-t-il dans la page Kibana Discover ?
 {: #logging_qa_kibana_question}
 
-Lorsque vous ouvrez la page Discover dans Kibana, un point d'interrogation (`?`) peut être affiché en regard de zones répertoriées comme disponibles au lieu du caractère `t`. Lorsque vous rechargez la liste des zones, le type des zones est analysé et le point d'interrogation `?` est remplacé par le caractère `t`. Pour plus d'informations, voir [Rechargement de la liste de zones](/docs/services/CloudLogAnalysis/kibana/analize_logs_interactively.html#discover_view_reload_fields).
+Lorsque vous ouvrez la page Discover dans Kibana, un point d'interrogation (`?`) peut être affiché en regard de zones répertoriées comme disponibles au lieu du caractère `t`. Lorsque vous rechargez la liste des zones, le type des zones est analysé et le point d'interrogation `?` est remplacé par le caractère `t`. Pour plus d'informations, voir [Rechargement de la liste de zones](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-analize_logs_interactively#discover_view_reload_fields).
 
 
 ## Une erreur 403 s'affiche lorsque j'essaie de modifier le canevas d'index par défaut
@@ -111,7 +111,7 @@ En tant que propriétaire de compte, vous pouvez effectuer des recherches dans v
 
 Procédez comme suit pour afficher vos journaux de compte :
 
-1. [Lancez Kibana.](/docs/services/CloudLogAnalysis/kibana/launch.html#launch_Kibana_from_browser) Par exemple, pour la région Sud des Etats-Unis, utilisez l'URL `https://logging.ng.bluemix.net`,
+1. [Lancez Kibana.](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-launch#launch_Kibana_from_browser) Par exemple, pour la région Sud des Etats-Unis, utilisez l'URL `https://logging.ng.bluemix.net`,
 
 2. Sélectionnez l'option **View AccountName account Logs** pour afficher les journaux de compte. *AccountName* est le nom du compte.
 

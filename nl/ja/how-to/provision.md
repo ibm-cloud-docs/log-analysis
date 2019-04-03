@@ -49,7 +49,7 @@ subcollection: cloudloganalysis
 
 5. サービス・プランを選択します。 デフォルトでは、**「ライト」**プランが設定されています。
 
-    サービス・プランについて詳しくは、『[サービス・プラン](/docs/services/CloudLogAnalysis/log_analysis_ov.html#plans)』を参照してください。
+    サービス・プランについて詳しくは、『[サービス・プラン](/docs/services/CloudLogAnalysis?topic=cloudloganalysis-log_analysis_ov#plans)』を参照してください。
 	
 6. **「作成」**をクリックして、ログインしている {{site.data.keyword.Bluemix_notm}} スペースで {{site.data.keyword.loganalysisshort}} サービスをプロビジョンします。
   
@@ -62,13 +62,13 @@ subcollection: cloudloganalysis
 
 1. [前提条件] {{site.data.keyword.Bluemix_notm}} CLI をインストールします。
 
-   詳しくは、[『{{site.data.keyword.Bluemix_notm}}CLI のインストール』](/docs/cli/index.html#overview)を参照してください。
+   詳しくは、[『{{site.data.keyword.Bluemix_notm}}CLI のインストール』](/docs/cli?topic=cloud-cli-ibmcloud-cli#overview)を参照してください。
    
    CLI がインストールされている場合は、次のステップに進みます。
     
 2. サービスをプロビジョンしたい、{{site.data.keyword.Bluemix_notm}} の地域、組織、およびスペースにログインします。 
 
-    詳しくは、『[{{site.data.keyword.Bluemix_notm}} にログインするにはどうすればよいですか](/docs/services/CloudLogAnalysis/qa/cli_qa.html#login)』を参照してください。
+    詳しくは、『[{{site.data.keyword.Bluemix_notm}} にログインするにはどうすればよいですか](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#login)』を参照してください。
 	
 3. `ibmcloud service create` コマンドを実行して、インスタンスをプロビジョンします。
 
@@ -80,7 +80,7 @@ subcollection: cloudloganalysis
 	説明
 	
 	* service_name はサービスの名前 (**ibmLogAnalysis**) です。
-	* service_plan はサービス・プラン名です。 プランのリストについては、『[サービス・プラン](/docs/services/CloudLogAnalysis/log_analysis_ov.html#plans)』を参照してください。
+	* service_plan はサービス・プラン名です。 プランのリストについては、『[サービス・プラン](/docs/services/CloudLogAnalysis?topic=cloudloganalysis-log_analysis_ov#plans)』を参照してください。
 	* service_instance_name は、作成する新規サービス・インスタンスに使用する名前です。
 
 	例えば、ライト・プランで {{site.data.keyword.loganalysisshort}} サービスのインスタンスを作成するには、以下のコマンドを実行します。

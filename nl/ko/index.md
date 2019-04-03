@@ -52,7 +52,7 @@ subcollection: cloudloganalysis
   </tr>
   <tr>
     <td>{{site.data.keyword.containershort}}에서 실행되는 컨테이너</td>
-    <td>[Kubernetes 클러스터에 배치된 앱에 대한 Kibana에서 로그 분석](/docs/services/CloudLogAnalysis/tutorials/container_logs.html#container_logs)</td>
+    <td>[Kubernetes 클러스터에 배치된 앱에 대한 Kibana에서 로그 분석](/docs/services/CloudLogAnalysis/tutorials?topic=cloudloganalysis-container_logs#container_logs)</td>
     <td>공용 </br>전용</td>
     <td>![Kubernetes 클러스터에 배치된 컨테이너의 상위 레벨 컴포넌트 개요](containers/images/containers_kube_logs.png "Kubernetes 클러스터에 배치된 컨테이너의 상위 레벨 컴포넌트 개요")</td>
   </tr>
@@ -94,7 +94,7 @@ subcollection: cloudloganalysis
 	
 3. 사용자가 계정의 구성원인 경우 목록에서 사용자 이름을 선택하거나 *조치* 메뉴에서 **사용자 관리**를 클릭하십시오.
 
-    사용자가 계정의 구성원이 아닌 경우 [사용자 초대](/docs/iam/iamuserinv.html#iamuserinv)를 참조하십시오.
+    사용자가 계정의 구성원이 아닌 경우 [사용자 초대](/docs/iam?topic=iam-iamuserinv#iamuserinv)를 참조하십시오.
 
 4. **Cloud Foundry 액세스**를 선택한 후 조직을 선택하십시오.
 
@@ -128,7 +128,7 @@ subcollection: cloudloganalysis
 	
 3. 사용자가 계정의 구성원인 경우 목록에서 사용자 이름을 선택하거나 *조치* 메뉴에서 **사용자 관리**를 클릭하십시오.
 
-    사용자가 계정의 구성원이 아닌 경우 [사용자 초대](/docs/iam/iamuserinv.html#iamuserinv)를 참조하십시오.
+    사용자가 계정의 구성원이 아닌 경우 [사용자 초대](/docs/iam?topic=iam-iamuserinv#iamuserinv)를 참조하십시오.
 
 4. **액세스 정책** 섹션에서 **액세스 권한 지정**을 클릭한 후 **리소스에 대한 액세스 권한 지정**을 선택하십시오.
 
@@ -156,7 +156,7 @@ subcollection: cloudloganalysis
 	  </tr>
 	  <tr>
 	    <td>역할</td>
-		<td>하나 이상의 IAM 역할을 선택하십시오. <br>올바른 역할: *관리자*, *운영자*, *편집자* 및 *뷰어*. <br>각 역할에 허용되는 조치에 대한 자세한 정보는 [IAM 역할](/docs/services/CloudLogAnalysis/security_ov.html#iam_roles)을 참조하십시오.
+		<td>하나 이상의 IAM 역할을 선택하십시오. <br>올바른 역할: *관리자*, *운영자*, *편집자* 및 *뷰어*. <br>각 역할에 허용되는 조치에 대한 자세한 정보는 [IAM 역할](/docs/services/CloudLogAnalysis?topic=cloudloganalysis-security_ov#iam_roles)을 참조하십시오.
 		</td>
 	  </tr>
      </table>
@@ -179,11 +179,11 @@ https://logging.ng.bluemix.net/
 {: codeblock}
 
 
-다른 지역에서 Kibana를 실행하는 방법에 대한 자세한 정보는 [웹 브라우저에서 Kibana로 이동](/docs/services/CloudLogAnalysis/kibana/launch.html#launch_Kibana_from_browser)을 참조하십시오.
+다른 지역에서 Kibana를 실행하는 방법에 대한 자세한 정보는 [웹 브라우저에서 Kibana로 이동](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-launch#launch_Kibana_from_browser)을 참조하십시오.
 
 **참고:** Kibana를 실행할 때 *bearer 토큰이 올바르지 않음*을 나타내는 메시지가 표시되는 경우 계정의 권한을 확인하십시오. 이 메시지는 사용자 ID에 로그를 볼 수 있는 권한이 없음을 표시합니다.
 
-그런 다음 로그 데이터를 보고 분석하려면 Kibana를 사용자 정의하십시오. 자세한 정보는 [로그 보기 및 분석](/docs/services/CloudLogAnalysis/kibana/analyzing_logs_Kibana.html#analyzing_logs_Kibana)을 참조하십시오.
+그런 다음 로그 데이터를 보고 분석하려면 Kibana를 사용자 정의하십시오. 자세한 정보는 [로그 보기 및 분석](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-analyzing_logs_Kibana#analyzing_logs_Kibana)을 참조하십시오.
     
 
 

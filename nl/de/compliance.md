@@ -66,16 +66,16 @@ Beachten Sie die folgenden Informationen:
 
 * Protokolle, die in 'Log Collection' gespeichert sind, werden nach einer bestimmten Anzahl von Tagen gelöscht, wenn Sie eine Aufbewahrungsrichtlinie konfigurieren oder wenn Sie sie manuell löschen. 
 
-    Sie können eine Protokollaufbewahrungsrichtlinie konfigurieren, die die Anzahl Tage definiert, für die Protokolle in 'Log Collection' aufbewahrt werden. Weitere Informationen finden Sie in [Protokollaufbewahrungsrichtlinie mithilfe des {{site.data.keyword.Bluemix_notm}}-Plug-ins anzeigen und konfigurieren](/docs/services/CloudLogAnalysis/how-to/manage-logs/configuring_retention_policy_cloud.html#configuring_retention_policy).
+    Sie können eine Protokollaufbewahrungsrichtlinie konfigurieren, die die Anzahl Tage definiert, für die Protokolle in 'Log Collection' aufbewahrt werden. Weitere Informationen finden Sie in [Protokollaufbewahrungsrichtlinie mithilfe des {{site.data.keyword.Bluemix_notm}}-Plug-ins anzeigen und konfigurieren](/docs/services/CloudLogAnalysis/how-to/manage-logs?topic=cloudloganalysis-configuring_retention_policy#configuring_retention_policy).
 
-    Sie können die ['Log Collection'-API](https://console.bluemix.net/apidocs/948-ibm-cloud-log-collection-api?&language=node&env_id=ibm%3Ayp%3Aus-south#introduction){: new_window} oder die ['Log Collection'-Befehlszeilenschnittstelle](/docs/services/CloudLogAnalysis/reference/log_analysis_cli_cloud.html#log_analysis_cli){: new_window} verwenden, um Protokolle manuell aus 'Log Collection' zu löschen. 
+    Sie können die ['Log Collection'-API](https://console.bluemix.net/apidocs/948-ibm-cloud-log-collection-api?&language=node&env_id=ibm%3Ayp%3Aus-south#introduction){: new_window} oder die ['Log Collection'-Befehlszeilenschnittstelle](/docs/services/CloudLogAnalysis/reference?topic=cloudloganalysis-log_analysis_cli#log_analysis_cli){: new_window} verwenden, um Protokolle manuell aus 'Log Collection' zu löschen. 
 
-    Sie können mit der Befehlszeilenschnittstelle die Protokolle aus 'Log Collection' manuell löschen. Weitere Informationen finden Sie in [ibmcloud logging log-delete mithilfe des {{site.data.keyword.Bluemix_notm}}-Plug-ins](/docs/services/CloudLogAnalysis/how-to/manage-logs/deleting_logs_cloud.html#deleting_logs).
+    Sie können mit der Befehlszeilenschnittstelle die Protokolle aus 'Log Collection' manuell löschen. Weitere Informationen finden Sie in [ibmcloud logging log-delete mithilfe des {{site.data.keyword.Bluemix_notm}}-Plug-ins](/docs/services/CloudLogAnalysis/how-to/manage-logs?topic=cloudloganalysis-deleting_logs#deleting_logs).
 
 
 Wenn Sie von einem kostenpflichtigen Plan in den Standard- oder Lite-Plan wechseln, werden in 'Log Collection' die Protokolle in ungefähr einem Tag gelöscht.
 
-Sie können jederzeit ein Support-Ticket öffnen und anfordern, dass alle Ihre Daten aus 'Log Search' und 'Log Collection' gelöscht werden. Informationen zum Öffnen eines IBM Support-Tickets finden Sie in [Kontaktaufnahme mit dem Support](/docs/get-support/howtogetsupport.html#getting-customer-support).
+Sie können jederzeit ein Support-Ticket öffnen und anfordern, dass alle Ihre Daten aus 'Log Search' und 'Log Collection' gelöscht werden. Informationen zum Öffnen eines IBM Support-Tickets finden Sie in [Kontaktaufnahme mit dem Support](/docs/get-support?topic=get-support-getting-customer-support#getting-customer-support).
 
 
 

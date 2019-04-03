@@ -51,15 +51,15 @@ subcollection: cloudloganalysis
     * *エディター*、*オペレーター*、または*管理者* の許可が設定された、{{site.data.keyword.containershort}} 用の IAM ポリシー。
     * {{site.data.keyword.loganalysisshort}} サービスがプロビジョンされるスペースの、*開発者* の許可が設定された CF 役割。
     
-    詳しくは、[IBM Cloud UI を使用してユーザーに IAM ポリシーを割り当てる](/docs/services/CloudLogAnalysis/security/grant_permissions.html#grant_permissions_ui_account)および [IBM Cloud UI を使用して、スペース・ログを表示する許可をユーザーに付与する](/docs/services/CloudLogAnalysis/security/grant_permissions.html#grant_permissions_ui_space)を参照してください。
+    詳しくは、[IBM Cloud UI を使用してユーザーに IAM ポリシーを割り当てる](/docs/services/CloudLogAnalysis/security?topic=cloudloganalysis-grant_permissions#grant_permissions_ui_account)および [IBM Cloud UI を使用して、スペース・ログを表示する許可をユーザーに付与する](/docs/services/CloudLogAnalysis/security?topic=cloudloganalysis-grant_permissions#grant_permissions_ui_space)を参照してください。
 
 2. コマンド・ラインから Kubernetes クラスターの管理およびアプリのデプロイを実行できる端末セッションを用意します。 このチュートリアルの例では Ubuntu Linux システムを使用しています。
 
 3. {{site.data.keyword.containershort}} および {{site.data.keyword.loganalysisshort}} の処理を行うための CLI を Ubuntu システムにインストールします。
 
-    * {{site.data.keyword.Bluemix_notm}} CLI をインストールします。 {{site.data.keyword.containershort}} での Kubernetes クラスターの作成と管理、およびクラスターへのコンテナー化アプリのデプロイを行うための {{site.data.keyword.containershort}} CLI をインストールします。 詳しくは、[『{{site.data.keyword.Bluemix_notm}}CLI のインストール』](/docs/cli/index.html#overview)を参照してください。
+    * {{site.data.keyword.Bluemix_notm}} CLI をインストールします。 {{site.data.keyword.containershort}} での Kubernetes クラスターの作成と管理、およびクラスターへのコンテナー化アプリのデプロイを行うための {{site.data.keyword.containershort}} CLI をインストールします。 詳しくは、[『{{site.data.keyword.Bluemix_notm}}CLI のインストール』](/docs/cli?topic=cloud-cli-ibmcloud-cli#overview)を参照してください。
     
-    * {{site.data.keyword.loganalysisshort}} CLI をインストールします。 詳しくは、『[Log Analysis CLI の構成 (IBM Cloud プラグイン)](/docs/services/CloudLogAnalysis/how-to/manage-logs/config_log_collection_cli_cloud.html#config_log_collection_cli)』を参照してください。
+    * {{site.data.keyword.loganalysisshort}} CLI をインストールします。 詳しくは、『[Log Analysis CLI の構成 (IBM Cloud プラグイン)](/docs/services/CloudLogAnalysis/how-to/manage-logs?topic=cloudloganalysis-config_log_collection_cli#config_log_collection_cli)』を参照してください。
     
 4. 米国南部地域で、ご使用のアカウント内の **dev** というスペースにアクセスできるようにします。 
 
@@ -81,11 +81,11 @@ subcollection: cloudloganalysis
 
 1. 標準の Kubernetes クラスターを作成します。
 
-   詳しくは、『[クラスターの作成](/docs/containers/cs_tutorials.html#cs_cluster_tutorial)』を参照してください。
+   詳しくは、『[クラスターの作成](/docs/containers?topic=containers-cs_cluster_tutorial#cs_cluster_tutorial)』を参照してください。
 
 2. 端末でクラスター・コンテキストをセットアップします。 コンテキストを設定すると、Kubernetes クラスターを管理し、Kubernetes クラスターにアプリケーションをデプロイできるようになります。
 
-    {{site.data.keyword.Bluemix_notm}}で、作成したクラスターに関連付けられた、地域、組織、およびスペースにログインします。 詳しくは、『[{{site.data.keyword.Bluemix_notm}} にログインするにはどうすればよいですか](/docs/services/CloudLogAnalysis/qa/cli_qa.html#login)』を参照してください。
+    {{site.data.keyword.Bluemix_notm}}で、作成したクラスターに関連付けられた、地域、組織、およびスペースにログインします。 詳しくは、『[{{site.data.keyword.Bluemix_notm}} にログインするにはどうすればよいですか](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#login)』を参照してください。
 
 	{{site.data.keyword.containershort}} サービス・プラグインを初期化します。
 
@@ -145,7 +145,7 @@ ae249c04-a3a9-4c29-a890-22d8da7bd1b2   container    *           ingest.logging.n
 ```
 {: screen}
 
-ロギング構成を定義できるログ・ソースのリストを確認するには、[ログ・ソース](/docs/services/CloudLogAnalysis/containers/containers_kubernetes.html#log_sources)を参照してください。
+ロギング構成を定義できるログ・ソースのリストを確認するには、[ログ・ソース](/docs/services/CloudLogAnalysis/containers?topic=cloudloganalysis-containers_kubernetes#log_sources)を参照してください。
 
 
 ### stderr および stdout のログを {{site.data.keyword.loganalysisshort}} サービスに転送するためのクラスターの構成
@@ -176,7 +176,7 @@ stdout および stderr のログをスペース・ドメインに送信する�
     各部分の説明: 
 
     * *ClusterName* はクラスターの名前です。
-    * *EndPoint* は、{{site.data.keyword.loganalysisshort}} サービスがプロビジョンされた地域内のロギング・サービスの URL です。 エンドポイントのリストについては、[エンドポイント](/docs/services/CloudLogAnalysis/log_ingestion.html#log_ingestion_urls)を参照してください。
+    * *EndPoint* は、{{site.data.keyword.loganalysisshort}} サービスがプロビジョンされた地域内のロギング・サービスの URL です。 エンドポイントのリストについては、[エンドポイント](/docs/services/CloudLogAnalysis?topic=cloudloganalysis-log_ingestion#log_ingestion_urls)を参照してください。
     * *OrgName* は、スペースがある組織の名前です。
     * *SpaceName* は、{{site.data.keyword.loganalysisshort}} サービスがプロビジョンされたスペースの名前です。
 
@@ -218,7 +218,7 @@ ibmcloud cs logging-config-create mycluster --logsource container --type ibm --n
     各部分の説明: 
 
     * *ClusterName* はクラスターの名前です。
-    * *EndPoint* は、{{site.data.keyword.loganalysisshort}} サービスがプロビジョンされた地域内のロギング・サービスの URL です。 エンドポイントのリストについては、[エンドポイント](/docs/services/CloudLogAnalysis/log_ingestion.html#log_ingestion_urls)を参照してください。
+    * *EndPoint* は、{{site.data.keyword.loganalysisshort}} サービスがプロビジョンされた地域内のロギング・サービスの URL です。 エンドポイントのリストについては、[エンドポイント](/docs/services/CloudLogAnalysis?topic=cloudloganalysis-log_ingestion#log_ingestion_urls)を参照してください。
     * *OrgName* は、スペースがある組織の名前です。
     * *SpaceName* は、{{site.data.keyword.loganalysisshort}} サービスがプロビジョンされたスペースの名前です。
 
@@ -251,7 +251,7 @@ ibmcloud cs logging-config-create mycluster --logsource worker  --type ibm --hos
 	
 3. ユーザーがアカウントのメンバーである場合、リストからユーザー名を選択するか、または、**「アクション」**メニューから*「ユーザーの管理」*をクリックします。
 
-    ユーザーがアカウントのメンバーでない場合、『[ユーザーの招待](/docs/iam/iamuserinv.html#iamuserinv)』を参照してください。
+    ユーザーがアカウントのメンバーでない場合、『[ユーザーの招待](/docs/iam?topic=iam-iamuserinv#iamuserinv)』を参照してください。
 
 4. **「Cloud Foundry アクセス権限」**を選択してから、組織を選択します。
 
@@ -297,7 +297,7 @@ ibmcloud cs logging-config-create mycluster --logsource worker  --type ibm --hos
 	
     ユーザーの ID を選択し、ユーザーに組織の *orgManager* 役割とスペースの *SpaceManager* および*開発者* の役割があることを確認します。
 
-    ユーザーに正しい許可がない場合、ユーザーに次の許可を付与します。組織の *orgManager* 役割と、スペースの *SpaceManager* および*開発者* の役割。 詳しくは、[IBM Cloud UI を使用して、スペース・ログを表示する許可をユーザーに付与する](/docs/services/CloudLogAnalysis/security/grant_permissions.html#grant_permissions_ui_space)を参照してください。
+    ユーザーに正しい許可がない場合、ユーザーに次の許可を付与します。組織の *orgManager* 役割と、スペースの *SpaceManager* および*開発者* の役割。 詳しくは、[IBM Cloud UI を使用して、スペース・ログを表示する許可をユーザーに付与する](/docs/services/CloudLogAnalysis/security?topic=cloudloganalysis-grant_permissions#grant_permissions_ui_space)を参照してください。
     
 3. {{site.data.keyword.containershort}} キー所有者として識別されたユーザーに、*管理者* の許可が設定された、{{site.data.keyword.loganalysisshort}} サービス用 IAM ポリシーがあることを検証します。
 
@@ -305,7 +305,7 @@ ibmcloud cs logging-config-create mycluster --logsource worker  --type ibm --hos
 	
     ユーザーの ID を選択し、ユーザーに IAM ポリシーが設定されていることを検証します。 
 
-    ユーザーが IAM ポリシーを持っていない場合、『[IBM Cloud UI を使用してユーザーに IAM ポリシーを割り当てる](/docs/services/CloudLogAnalysis/security/grant_permissions.html#grant_permissions_ui_account)』を参照してください。
+    ユーザーが IAM ポリシーを持っていない場合、『[IBM Cloud UI を使用してユーザーに IAM ポリシーを割り当てる](/docs/services/CloudLogAnalysis/security?topic=cloudloganalysis-grant_permissions#grant_permissions_ui_account)』を参照してください。
 
 4. ロギング構成を更新します。 次のコマンドを実行します。
     
@@ -322,7 +322,7 @@ ibmcloud cs logging-config-create mycluster --logsource worker  --type ibm --hos
 ## ステップ 5: Kubernetes クラスターにサンプル・アプリをデプロイして、stdout にコンテンツを生成する
 {: #step53}
 
-Kubernetes クラスター内でサンプル・アプリをデプロイし、実行します。 [レッスン 1: アプリの 1 つのインスタンスを Kubernetes クラスターにデプロイする](/docs/containers/cs_tutorials_apps.html#cs_apps_tutorial_lesson1)のチュートリアルにあるステップを実行して、サンプル・アプリをデプロイします。
+Kubernetes クラスター内でサンプル・アプリをデプロイし、実行します。 [レッスン 1: アプリの 1 つのインスタンスを Kubernetes クラスターにデプロイする](/docs/containers?topic=containers-cs_apps_tutorial#cs_apps_tutorial_lesson1)のチュートリアルにあるステップを実行して、サンプル・アプリをデプロイします。
 
 以下のアプリは Hello World Node.js アプリです。
 
@@ -353,7 +353,7 @@ app.listen(8080, function() {
 
 1. ブラウザーで Kibana を起動します。 
 
-    Kibana の起動方法について詳しくは、『[Web ブラウザーから Kibana へのナビゲート](/docs/services/CloudLogAnalysis/kibana/launch.html#launch_Kibana_from_browser)』を参照してください。
+    Kibana の起動方法について詳しくは、『[Web ブラウザーから Kibana へのナビゲート](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-launch#launch_Kibana_from_browser)』を参照してください。
 
     あるクラスターのログ・データを分析するには、そのクラスターが作成された Cloud Public 地域の Kibana にアクセスする必要があります。 
     
@@ -366,7 +366,7 @@ app.listen(8080, function() {
 	
     Kibana が開きます。
     
-    **注:** クラスター・ログを転送する地域で Kibana を起動していることを確認してください。 地域ごとの URL については、[ロギング・エンドポイント](/docs/services/CloudLogAnalysis/kibana/analyzing_logs_Kibana.html#urls_kibana)を参照してください。
+    **注:** クラスター・ログを転送する地域で Kibana を起動していることを確認してください。 地域ごとの URL については、[ロギング・エンドポイント](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-analyzing_logs_Kibana#urls_kibana)を参照してください。
     	
 2. スペース・ドメイン内で使用可能なログ・データを表示するには、以下のステップを実行します。
 
@@ -436,7 +436,7 @@ app.listen(8080, function() {
               </tr>
         </table>
      
-Kubernetes クラスターに関係するその他の検索フィールドについて詳しくは、[ログの検索](/docs/services/CloudLogAnalysis/containers/containers_kubernetes.html#log_search)を参照してください。
+Kubernetes クラスターに関係するその他の検索フィールドについて詳しくは、[ログの検索](/docs/services/CloudLogAnalysis/containers?topic=cloudloganalysis-containers_kubernetes#log_search)を参照してください。
 
 
 ## ステップ 7: Kibana で Kubernetes クラスター名によってデータをフィルタリングする
@@ -475,9 +475,9 @@ Kubernetes クラスターに関係するその他の検索フィールドにつ
 
 クラスターの名前 (*cluster1*) を、ログ・データを表示するクラスターの名前 *mycluster* に置き換えます。
         
-データが何も表示されない場合は、時間フィルターを変更してみてください。 詳しくは、『[時間フィルターの設定](/docs/services/CloudLogAnalysis/kibana/filter_logs.html#set_time_filter)』を参照してください。
+データが何も表示されない場合は、時間フィルターを変更してみてください。 詳しくは、『[時間フィルターの設定](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-filter_logs#set_time_filter)』を参照してください。
 
-詳しくは、『[Kibana でのログのフィルタリング](/docs/services/CloudLogAnalysis/kibana/filter_logs.html#filter_logs)』を参照してください。
+詳しくは、『[Kibana でのログのフィルタリング](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-filter_logs#filter_logs)』を参照してください。
 
 
 ## {{site.data.keyword.containershort_notm}} 参照資料
@@ -485,10 +485,10 @@ Kubernetes クラスターに関係するその他の検索フィールドにつ
 
 CLI コマンド:
 
-* [ibmcloud cs api-key-info](/docs/containers/cs_cli_reference.html#cs_api_key_info)
-* [ibmcloud cs logging-config-create](/docs/containers/cs_cli_reference.html#cs_logging_create)
-* [ibmcloud cs logging-config-get](/docs/containers/cs_cli_reference.html#cs_logging_get)
-* [ibmcloud cs logging-config-update](/docs/containers/cs_cli_reference.html#cs_logging_update)
-* [ibmcloud cs logging-config-rm](/docs/containers/cs_cli_reference.html#cs_logging_rm)
-* [ibmcloud cs logging-config-refresh](/docs/containers/cs_cli_reference.html#cs_logging_refresh)
+* [ibmcloud cs api-key-info](/docs/containers?topic=containers-cs_cli_reference#cs_api_key_info)
+* [ibmcloud cs logging-config-create](/docs/containers?topic=containers-cs_cli_reference#cs_logging_create)
+* [ibmcloud cs logging-config-get](/docs/containers?topic=containers-cs_cli_reference#cs_logging_get)
+* [ibmcloud cs logging-config-update](/docs/containers?topic=containers-cs_cli_reference#cs_logging_update)
+* [ibmcloud cs logging-config-rm](/docs/containers?topic=containers-cs_cli_reference#cs_logging_rm)
+* [ibmcloud cs logging-config-refresh](/docs/containers?topic=containers-cs_cli_reference#cs_logging_refresh)
 

@@ -52,12 +52,12 @@ subcollection: cloudloganalysis
 |任务|描述
 | 
 |------|-------------|
-|[添加字段列](/docs/services/CloudLogAnalysis/kibana4/logging_kibana_analize_logs_interactively.html#kibana_discover_add_fields_to_table)|添加字段以查看分析所需的特定数据，而不查看完整消息。|
-|[重新排列字段列](/docs/services/CloudLogAnalysis/kibana4/logging_kibana_analize_logs_interactively.html#kibana_discover_rearrange_fields_in_table)|将表中字段的位置移至所需的位置。|
-|[查看条目](/docs/services/CloudLogAnalysis/kibana4/logging_kibana_analize_logs_interactively.html#kibana_discover_view_entry_in_table)|展开表中的条目，以查看按字段解析或解析为 JSON 的条目的详细信息。|
-|[除去字段列](/docs/services/CloudLogAnalysis/kibana4/logging_kibana_analize_logs_interactively.html#kibana_discover_remove_fields_from_table)|除去视图中分析不需要的字段。|
-|[按已建立索引的字段的值对条目排序](/docs/services/CloudLogAnalysis/kibana4/logging_kibana_analize_logs_interactively.html#kibana_discover_sort_by_table)|对条目重新排序以更轻松地进行分析。|
-|[自动刷新数据](/docs/services/CloudLogAnalysis/kibana4/logging_kibana_analize_logs_interactively.html#kibana_discover_view_refresh_interval)|使用最新的条目刷新表中显示的数据。缺省情况下，刷新为**关闭**。|
+|[添加字段列](/docs/services/CloudLogAnalysis/kibana4?topic=cloudloganalysis-kibana_analize_logs_interactively#kibana_discover_add_fields_to_table)|添加字段以查看分析所需的特定数据，而不查看完整消息。|
+|[重新排列字段列](/docs/services/CloudLogAnalysis/kibana4?topic=cloudloganalysis-kibana_analize_logs_interactively#kibana_discover_rearrange_fields_in_table)|将表中字段的位置移至所需的位置。|
+|[查看条目](/docs/services/CloudLogAnalysis/kibana4?topic=cloudloganalysis-kibana_analize_logs_interactively#kibana_discover_view_entry_in_table)|展开表中的条目，以查看按字段解析或解析为 JSON 的条目的详细信息。|
+|[除去字段列](/docs/services/CloudLogAnalysis/kibana4?topic=cloudloganalysis-kibana_analize_logs_interactively#kibana_discover_remove_fields_from_table)|除去视图中分析不需要的字段。|
+|[按已建立索引的字段的值对条目排序](/docs/services/CloudLogAnalysis/kibana4?topic=cloudloganalysis-kibana_analize_logs_interactively#kibana_discover_sort_by_table)|对条目重新排序以更轻松地进行分析。|
+|[自动刷新数据](/docs/services/CloudLogAnalysis/kibana4?topic=cloudloganalysis-kibana_analize_logs_interactively#kibana_discover_view_refresh_interval)|使用最新的条目刷新表中显示的数据。缺省情况下，刷新为**关闭**。|
 {: caption="表 2. 定制表的任务" caption-side="top"}
 
 <br>
@@ -99,7 +99,7 @@ subcollection: cloudloganalysis
 * 可以按字段查看统计信息。 
 * 可以按已配置的 `@timestamp` 在直方图中查看统计信息。
 
-有关更多信息，请参阅[查看字段数据统计信息](/docs/services/CloudLogAnalysis/kibana4/logging_kibana_analize_logs_interactively.html#kibana_discover_view_fields_stats)。
+有关更多信息，请参阅[查看字段数据统计信息](/docs/services/CloudLogAnalysis/kibana4?topic=cloudloganalysis-kibana_analize_logs_interactively#kibana_discover_view_fields_stats)。
 
 **注**：表和直方图中显示的数据是静态的。要始终查看最新的条目，必须设置刷新时间间隔。 
 

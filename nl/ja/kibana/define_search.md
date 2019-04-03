@@ -32,15 +32,15 @@ subcollection: cloudloganalysis
 
 1. Kibana を起動します。
 
-    Cloud Foundry (CF) アプリの場合、『[CF アプリのダッシュボードからの Kibana の起動](/docs/services/CloudLogAnalysis/kibana/launch.html#launch_Kibana_from_cf_app)』を参照してください。
+    Cloud Foundry (CF) アプリの場合、『[CF アプリのダッシュボードからの Kibana の起動](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-launch#launch_Kibana_from_cf_app)』を参照してください。
 
-	{{site.data.keyword.Bluemix_notm}} が管理するインフラストラクチャーで実行しているコンテナーの場合、『[コンテナーのダッシュボードからの Kibana の起動](/docs/services/CloudLogAnalysis/kibana/launch.html#launch_Kibana_for_containers)』を参照してください。
+	{{site.data.keyword.Bluemix_notm}} が管理するインフラストラクチャーで実行しているコンテナーの場合、『[コンテナーのダッシュボードからの Kibana の起動](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-launch#launch_Kibana_for_containers)』を参照してください。
     
-    すべてのクラウド・リソース (例えば、Kubernetes クラスターで実行しているコンテナーなど) の場合、『[ブラウザーからの Kibana の起動](/docs/services/CloudLogAnalysis/kibana/launch.html#launch_Kibana_from_browser)』を参照してください。 
+    すべてのクラウド・リソース (例えば、Kubernetes クラスターで実行しているコンテナーなど) の場合、『[ブラウザーからの Kibana の起動](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-launch#launch_Kibana_from_browser)』を参照してください。 
 	
 	Kibana にアクセスすると、デフォルト検索が適用されます。 照会しているリソースのインスタンスのリストに関するログを確認できます。 そのスペース内の {{site.data.keyword.Bluemix_notm}} リソースのすべてまたは任意のものについて、ログをフィルタリングできます。
 
-2. 「Discover」ページを見て、表示されているデータのサブセットを確認します。 詳しくは、『[「Discover」ページで表示されているデータの識別](/docs/services/CloudLogAnalysis/kibana/analize_logs_interactively.html#identify_data)』を参照してください。 次に、項目をフィルタリングするためのデフォルト照会を変更します。
+2. 「Discover」ページを見て、表示されているデータのサブセットを確認します。 詳しくは、『[「Discover」ページで表示されているデータの識別](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-analize_logs_interactively#identify_data)』を参照してください。次に、項目をフィルタリングするためのデフォルト照会を変更します。
 
     **注:** カスタム照会の定義には、Lucene 照会言語を使用します。 詳しくは、『[Apache Lucene - Query Parser Syntax  ![外部リンク・アイコン](../../../icons/launch-glyph.svg "外部リンク・アイコン")](https://lucene.apache.org/core/2_9_4/queryparsersyntax.html){: new_window}』を参照してください。
     
@@ -54,9 +54,9 @@ subcollection: cloudloganalysis
 
      例えば、CF アプリの場合、インスタンス *0* および *1* の項目のみがリストされる照会 `application_id:9d222152-8834-4bab-8685-3036cd25931a AND instance_id:["0" TO "1"]` を作成できます。 
 
-3. 照会を保存して、後から再使用できるようにします。 詳しくは、『[検索の保存](/docs/services/CloudLogAnalysis/kibana/define_search.html#save_search1)』を参照してください。 
+3. 照会を保存して、後から再使用できるようにします。 詳しくは、『[検索の保存](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-define_search#save_search1)』を参照してください。 
 
-**注:** 照会を削除する必要がある場合は、『[検索の削除](/docs/services/CloudLogAnalysis/kibana/define_search.html#delete_search)』を参照してください。
+**注:** 照会を削除する必要がある場合は、『[検索の削除](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-define_search#delete_search)』を参照してください。
 
 
 

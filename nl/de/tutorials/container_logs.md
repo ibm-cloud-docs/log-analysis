@@ -51,15 +51,15 @@ In diesem Lernprogramm werden die Schritte gezeigt, die erforderlich sind, um da
     * Eine IAM-Richtlinie für den {{site.data.keyword.containershort}} mit den Berechtigungen *editor*, *operator* oder *administrator*.
     * Eine CF-Rolle für den Bereich, in dem der {{site.data.keyword.loganalysisshort}}-Service mit *Entwickler*-Berechtigungen bereitgestellt wird.
     
-    Weitere Informationen finden Sie unter [Einem Benutzer eine IAM-Richtlinie über die IBM Cloud-Benutzerschnittstelle zuweisen](/docs/services/CloudLogAnalysis/security/grant_permissions.html#grant_permissions_ui_account) und [Einem Benutzer Berechtigungen zum Anzeigen von Bereichsprotokollen unter Verwendung der IBM Cloud-Benutzerschnittstelle erteilen](/docs/services/CloudLogAnalysis/security/grant_permissions.html#grant_permissions_ui_space).
+    Weitere Informationen finden Sie unter [Einem Benutzer eine IAM-Richtlinie über die IBM Cloud-Benutzerschnittstelle zuweisen](/docs/services/CloudLogAnalysis/security?topic=cloudloganalysis-grant_permissions#grant_permissions_ui_account) und [Einem Benutzer Berechtigungen zum Anzeigen von Bereichsprotokollen unter Verwendung der IBM Cloud-Benutzerschnittstelle erteilen](/docs/services/CloudLogAnalysis/security?topic=cloudloganalysis-grant_permissions#grant_permissions_ui_space).
 
 2. Führen Sie eine Terminalsitzung durch, von der aus Sie den Kubernetes-Cluster verwalten und Apps über die Befehlszeile bereitstellen können. Die Beispiele in diesem Lernprogramm sind für ein Ubuntu Linux-System ausgelegt.
 
 3. Installieren Sie die CLIs für die Arbeit mit dem {{site.data.keyword.containershort}} und {{site.data.keyword.loganalysisshort}} in Ihrem Ubuntu-System.
 
-    * Installieren Sie die {{site.data.keyword.Bluemix_notm}}-Befehlszeilenschnittstelle. Installieren Sie die {{site.data.keyword.containershort}}-CLI, um Ihre Kubernetes-Cluster in {{site.data.keyword.containershort}} zu erstellen und zu verwalten und um containerisierte Apps für Ihren Cluster bereitzustellen. Weitere Informationen finden Sie in [{{site.data.keyword.Bluemix_notm}}-Befehlszeilenschnittstelle installieren](/docs/cli/index.html#overview).
+    * Installieren Sie die {{site.data.keyword.Bluemix_notm}}-Befehlszeilenschnittstelle. Installieren Sie die {{site.data.keyword.containershort}}-CLI, um Ihre Kubernetes-Cluster in {{site.data.keyword.containershort}} zu erstellen und zu verwalten und um containerisierte Apps für Ihren Cluster bereitzustellen. Weitere Informationen finden Sie in [{{site.data.keyword.Bluemix_notm}}-Befehlszeilenschnittstelle installieren](/docs/cli?topic=cloud-cli-ibmcloud-cli#overview). 
     
-    * Installieren Sie die {{site.data.keyword.loganalysisshort}}-Befehlszeilenschnittstelle. Weitere Informationen finden Sie unter [Log Analysis-CLI (IBM Cloud-Plug-in) konfigurieren](/docs/services/CloudLogAnalysis/how-to/manage-logs/config_log_collection_cli_cloud.html#config_log_collection_cli).
+    * Installieren Sie die {{site.data.keyword.loganalysisshort}}-Befehlszeilenschnittstelle. Weitere Informationen finden Sie unter [Log Analysis-CLI (IBM Cloud-Plug-in) konfigurieren](/docs/services/CloudLogAnalysis/how-to/manage-logs?topic=cloudloganalysis-config_log_collection_cli#config_log_collection_cli).
     
 4. Sie müssen Zugriff auf einen Bereich mit dem Namen **dev** in Ihrem Konto in der Region "USA (Süden)" haben. 
 
@@ -81,11 +81,11 @@ Führen Sie die folgenden Schritte aus:
 
 1. Erstellen Sie einen Standard-Kubernetes-Cluster.
 
-   Weitere Informationen finden Sie unter [Cluster erstellen](/docs/containers/cs_tutorials.html#cs_cluster_tutorial).
+   Weitere Informationen finden Sie unter [Cluster erstellen](/docs/containers?topic=containers-cs_cluster_tutorial#cs_cluster_tutorial).
 
 2. Richten Sie den Clusterkontext in einem Terminal ein. Nachdem der Kontext festgelegt ist, können Sie den Kubernetes-Cluster verwalten und die Anwendung im Kubernetes-Cluster bereitstellen.
 
-    Melden Sie sich bei einer Region, Organisation und bei einem Bereich in {{site.data.keyword.Bluemix_notm}} an, die/der dem von Ihnen erstellten Cluster zugeordnet ist. Weitere Informationen finden Sie unter [Wie melde ich mich bei {{site.data.keyword.Bluemix_notm}} an?](/docs/services/CloudLogAnalysis/qa/cli_qa.html#login).
+    Melden Sie sich bei einer Region, Organisation und bei einem Bereich in {{site.data.keyword.Bluemix_notm}} an, die/der dem von Ihnen erstellten Cluster zugeordnet ist. Weitere Informationen finden Sie in [Wie melde ich mich bei {{site.data.keyword.Bluemix_notm}} an?](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#login).
 
 	Initialisieren Sie das Plug-in für den {{site.data.keyword.containershort}}-Service.
 
@@ -145,7 +145,7 @@ ae249c04-a3a9-4c29-a890-22d8da7bd1b2   container    *           ingest.logging.n
 ```
 {: screen}
 
-Informationen zum Anzeigen der Liste von Protokollquellen, für die Sie eine Protokollierungskonfiguration definieren können, finden Sie unter [Protokollquellen](/docs/services/CloudLogAnalysis/containers/containers_kubernetes.html#log_sources).
+Informationen zum Anzeigen der Liste von Protokollquellen, für die Sie eine Protokollierungskonfiguration definieren können, finden Sie unter [Protokollquellen](/docs/services/CloudLogAnalysis/containers?topic=cloudloganalysis-containers_kubernetes#log_sources).
 
 
 ### Konfigurieren Sie Ihren Cluster so, dass 'stderr'- und 'stdout'-Protokolle an den {{site.data.keyword.loganalysisshort}}-Service weitergeleitet werden
@@ -176,7 +176,7 @@ Führen Sie die folgenden Schritte aus, um 'stdout'- und 'stderr'-Protokolle an 
     Dabei gilt: 
 
     * *ClusterName* ist der Name des Clusters.
-    * *EndPoint* ist die URL zum Protokollierungsservice in der Region, in der der {{site.data.keyword.loganalysisshort}}-Service bereitgestellt ist. Eine Liste der Endpunkte finden Sie unter [Endpunkte](/docs/services/CloudLogAnalysis/log_ingestion.html#log_ingestion_urls).
+    * *EndPoint* ist die URL zum Protokollierungsservice in der Region, in der der {{site.data.keyword.loganalysisshort}}-Service bereitgestellt ist. Eine Liste der Endpunkte finden Sie unter [Endpunkte](/docs/services/CloudLogAnalysis?topic=cloudloganalysis-log_ingestion#log_ingestion_urls).
     * *OrgName* ist der Name der Organisation, in der der Bereich verfügbar ist.
     * *SpaceName* ist der Name des Bereichs, in dem der {{site.data.keyword.loganalysisshort}}-Service bereitgestellt ist.
 
@@ -218,7 +218,7 @@ Führen Sie die folgenden Schritte aus, um Workerprotokolle an eine Bereichsdom�
     Dabei gilt: 
 
     * *ClusterName* ist der Name des Clusters.
-    * *EndPoint* ist die URL zum Protokollierungsservice in der Region, in der der {{site.data.keyword.loganalysisshort}}-Service bereitgestellt ist. Eine Liste der Endpunkte finden Sie unter [Endpunkte](/docs/services/CloudLogAnalysis/log_ingestion.html#log_ingestion_urls).
+    * *EndPoint* ist die URL zum Protokollierungsservice in der Region, in der der {{site.data.keyword.loganalysisshort}}-Service bereitgestellt ist. Eine Liste der Endpunkte finden Sie unter [Endpunkte](/docs/services/CloudLogAnalysis?topic=cloudloganalysis-log_ingestion#log_ingestion_urls).
     * *OrgName* ist der Name der Organisation, in der der Bereich verfügbar ist.
     * *SpaceName* ist der Name des Bereichs, in dem der {{site.data.keyword.loganalysisshort}}-Service bereitgestellt ist.
 
@@ -251,7 +251,7 @@ Führen Sie die folgenden Schritte aus, um einem Benutzer Berechtigungen für di
 	
 3. Wenn der Benutzer ein Mitglied des Kontos ist, wählen Sie den Benutzernamen aus der Liste aus oder klicken Sie im Menü *Aktionen* auf **Benutzer verwalten**.
 
-    Wenn der Benutzer kein Mitglied des Kontos ist, finden Sie unter [Benutzer einladen](/docs/iam/iamuserinv.html#iamuserinv) Informationen zum entsprechenden Vorgehen in diesem Fall.
+    Wenn der Benutzer kein Mitglied des Kontos ist, finden Sie unter [Benutzer einladen](/docs/iam?topic=iam-iamuserinv#iamuserinv) Informationen zum entsprechenden Vorgehen in diesem Fall.
 
 4. Wählen Sie **Cloud Foundry-Zugriff** und anschließend die Organisation aus.
 
@@ -297,7 +297,7 @@ Führen Sie die folgenden Schritte aus:
 	
     Wählen Sie die ID des Benutzers aus und überprüfen Sie, ob der Benutzer über die Rolle *Organisationsmanager* für die Organisation sowie die Rollen *Bereichsmanager* und *Entwickler* für den Bereich verfügt.
 
-    Wenn der Benutzer nicht über die richtigen Berechtigungen verfügt, erteilen Sie dem Benutzer die folgenden Berechtigungen: die Rolle *orgManager* für die Organisation sowie die Rollen *SpaceManager* und *Developer* für den Bereich. Weitere Informationen finden Sie unter [Einem Benutzer Berechtigungen zum Anzeigen von Bereichsprotokollen unter Verwendung der IBM Cloud-Benutzerschnittstelle erteilen](/docs/services/CloudLogAnalysis/security/grant_permissions.html#grant_permissions_ui_space).
+    Wenn der Benutzer nicht über die richtigen Berechtigungen verfügt, erteilen Sie dem Benutzer die folgenden Berechtigungen: die Rolle *orgManager* für die Organisation sowie die Rollen *SpaceManager* und *Developer* für den Bereich. Weitere Informationen finden Sie unter [Einem Benutzer Berechtigungen zum Anzeigen von Bereichsprotokollen unter Verwendung der IBM Cloud-Benutzerschnittstelle erteilen](/docs/services/CloudLogAnalysis/security?topic=cloudloganalysis-grant_permissions#grant_permissions_ui_space).
     
 3. Überprüfen Sie, ob der als {{site.data.keyword.containershort}}-Schlüsseleigner identifizierte Benutzer über die IAM-Richtlinie für den {{site.data.keyword.loganalysisshort}}-Service mit den Berechtigungen als *Administrator* verfügt.
 
@@ -305,7 +305,7 @@ Führen Sie die folgenden Schritte aus:
 	
     Wählen Sie die ID des Benutzers aus und überprüfen Sie, ob der Benutzer über den IAM-Richtliniensatz verfügt. 
 
-    Wenn der Benutzer nicht über die IAM-Richtlinie verfügt, siehe [Einem Benutzer über die IBM Cloud-Benutzerschnittstelle eine IAM-Richtlinie zuweisen](/docs/services/CloudLogAnalysis/security/grant_permissions.html#grant_permissions_ui_account).
+    Wenn der Benutzer nicht über die IAM-Richtlinie verfügt, siehe [Einem Benutzer über die IBM Cloud-Benutzerschnittstelle eine IAM-Richtlinie zuweisen](/docs/services/CloudLogAnalysis/security?topic=cloudloganalysis-grant_permissions#grant_permissions_ui_account).
 
 4. Aktualisieren Sie die Protokollierungskonfiguration. Führen Sie den folgenden Befehl aus:
     
@@ -322,7 +322,7 @@ Führen Sie die folgenden Schritte aus:
 ## Schritt 5: Eine Beispielapp im Kubernetes-Cluster bereitstellen, um Inhalt in 'stdout' zu generieren
 {: #step53}
 
-Stellen Sie eine Beispielapp im Kubernetes-Cluster bereit und führen Sie sie aus. Führen Sie die Schritte des folgenden Lernprogramms aus, um die Beispielapp bereitzustellen: [Lerneinheit 1: Apps für einzelne Instanzen in Kubernetes-Cluster bereitstellen](/docs/containers/cs_tutorials_apps.html#cs_apps_tutorial_lesson1).
+Stellen Sie eine Beispielapp im Kubernetes-Cluster bereit und führen Sie sie aus. Führen Sie die Schritte des folgenden Lernprogramms aus, um die Beispielapp bereitzustellen: [Lerneinheit 1: Apps für einzelne Instanzen in Kubernetes-Cluster bereitstellen](/docs/containers?topic=containers-cs_apps_tutorial#cs_apps_tutorial_lesson1).
 
 Die App ist eine 'Hello World'-Node.js-App:
 
@@ -353,7 +353,7 @@ Führen Sie die folgenden Schritte aus:
 
 1. Starten Sie Kibana in einem Browser. 
 
-    Weitere Informationen zum Starten von Kibana finden Sie unter [Zu Kibana über einen Web-Browser navigieren](/docs/services/CloudLogAnalysis/kibana/launch.html#launch_Kibana_from_browser).
+    Weitere Informationen zum Starten von Kibana finden Sie unter [Zu Kibana über einen Web-Browser navigieren](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-launch#launch_Kibana_from_browser).
 
     Zum Anzeigen von Protokolldaten für einen Cluster müssen Sie in der öffentlichen Cloudregion, in der der Cluster erstellt wird, auf Kibana zugreifen. 
     
@@ -366,7 +366,7 @@ Führen Sie die folgenden Schritte aus:
 	
     Kibana wird geöffnet.
     
-    **HINWEIS:** Achten Sie darauf, Kibana in der Region zu starten, an die Sie Ihre Clusterprotokolle weiterleiten. Informationen zu den URLs für die einzelnen Regionen finden Sie unter [Protokollierungsendpunkte](/docs/services/CloudLogAnalysis/kibana/analyzing_logs_Kibana.html#urls_kibana).
+    **HINWEIS:** Achten Sie darauf, Kibana in der Region zu starten, an die Sie Ihre Clusterprotokolle weiterleiten. Informationen zu den URLs für die einzelnen Regionen finden Sie unter [Protokollierungsendpunkte](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-analyzing_logs_Kibana#urls_kibana).
     	
 2. Führen Sie die folgenden Schritte aus, um Protokolldaten anzuzeigen, die in der Bereichsdomäne verfügbar sind:
 
@@ -436,7 +436,7 @@ Führen Sie die folgenden Schritte aus:
               </tr>
         </table>
      
-Weitere Informationen zu anderen Suchfeldern, die für Kubernetes-Cluster relevant sind, finden Sie unter [Protokolle durchsuchen](/docs/services/CloudLogAnalysis/containers/containers_kubernetes.html#log_search).
+Weitere Informationen zu anderen Suchfeldern, die für Kubernetes-Cluster relevant sind, finden Sie unter [Protokolle durchsuchen](/docs/services/CloudLogAnalysis/containers?topic=cloudloganalysis-containers_kubernetes#log_search).
 
 
 ## Schritt 7: Daten nach Kubernetes-Clusternamen in Kibana filtern
@@ -475,9 +475,9 @@ Die folgende Abfrage wird angezeigt:
 
 Ersetzen Sie den Namen des Clusters (*cluster1*) durch den Namen des Clusters *mycluster*, für den Sie Protokolldaten anzeigen möchten.
         
-Wenn keine Daten angezeigt werden, versuchen Sie, den Zeitfilter zu ändern. Weitere Informationen finden Sie unter [Zeitfilter festlegen](/docs/services/CloudLogAnalysis/kibana/filter_logs.html#set_time_filter).
+Wenn keine Daten angezeigt werden, versuchen Sie, den Zeitfilter zu ändern. Weitere Informationen finden Sie unter [Zeitfilter festlegen](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-filter_logs#set_time_filter).
 
-Weitere Informationen finden Sie unter [Protokolle in Kibana filtern](/docs/services/CloudLogAnalysis/kibana/filter_logs.html#filter_logs).
+Weitere Informationen finden Sie unter [Protokolle in Kibana filtern](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-filter_logs#filter_logs).
 
 
 ## {{site.data.keyword.containershort_notm}}-Referenzmaterial
@@ -485,10 +485,10 @@ Weitere Informationen finden Sie unter [Protokolle in Kibana filtern](/docs/serv
 
 CLI-Befehle:
 
-* [ibmcloud cs api-key-info](/docs/containers/cs_cli_reference.html#cs_api_key_info)
-* [ibmcloud cs logging-config-create](/docs/containers/cs_cli_reference.html#cs_logging_create)
-* [ibmcloud cs logging-config-get](/docs/containers/cs_cli_reference.html#cs_logging_get)
-* [ibmcloud cs logging-config-update](/docs/containers/cs_cli_reference.html#cs_logging_update)
-* [ibmcloud cs logging-config-rm](/docs/containers/cs_cli_reference.html#cs_logging_rm)
-* [ibmcloud cs logging-config-refresh](/docs/containers/cs_cli_reference.html#cs_logging_refresh)
+* [ibmcloud cs api-key-info](/docs/containers?topic=containers-cs_cli_reference#cs_api_key_info)
+* [ibmcloud cs logging-config-create](/docs/containers?topic=containers-cs_cli_reference#cs_logging_create)
+* [ibmcloud cs logging-config-get](/docs/containers?topic=containers-cs_cli_reference#cs_logging_get)
+* [ibmcloud cs logging-config-update](/docs/containers?topic=containers-cs_cli_reference#cs_logging_update)
+* [ibmcloud cs logging-config-rm](/docs/containers?topic=containers-cs_cli_reference#cs_logging_rm)
+* [ibmcloud cs logging-config-refresh](/docs/containers?topic=containers-cs_cli_reference#cs_logging_refresh)
 

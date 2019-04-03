@@ -29,7 +29,7 @@ subcollection: cloudloganalysis
 Puede enviar registros desde fuera de {{site.data.keyword.IBM_notm}} Cloud al servicio {{site.data.keyword.loganalysisshort}} utilizando el servicio Logstash Forwarder multiarrendatario. 
 {:shortdesc}
 
-Esta característica solo está disponible para los planes de servicio que permiten la ingestión de registros. Para obtener más información, consulte [Planes de servicio](/docs/services/CloudLogAnalysis/log_analysis_ov.html#plans).
+Esta característica solo está disponible para los planes de servicio que permiten la ingestión de registros. Para obtener más información, consulte [Planes de servicio](/docs/services/CloudLogAnalysis?topic=cloudloganalysis-log_analysis_ov#plans).
 
 Para enviar registros desde fuera de {{site.data.keyword.IBM_notm}} Cloud al servicio {{site.data.keyword.loganalysisshort}}, necesita los siguientes recursos de nube:
 
@@ -38,7 +38,7 @@ Para enviar registros desde fuera de {{site.data.keyword.IBM_notm}} Cloud al ser
 
 En el entorno local, debe configurar mt-logstash-forwarder y especificar los archivos de registro que desea enviar al servicio {{site.data.keyword.loganalysisshort}}.
 
-Para obtener más información sobre cómo configurar el entorno local para que envíe registros al servicio {{site.data.keyword.loganalysisshort}}, consulte [Envío de datos locales a un espacio en {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/how-to/send-data/send_data_mt.html#send_data_mt).
+Para obtener más información sobre cómo configurar el entorno local para que envíe registros al servicio {{site.data.keyword.loganalysisshort}}, consulte [Envío de datos locales a un espacio en {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/how-to/send-data?topic=cloudloganalysis-send_data_mt#send_data_mt).
 
 
 

@@ -35,7 +35,7 @@ Por padrão, o {{site.data.keyword.Bluemix_notm}} oferece recursos integrados de
 
 Deve-se ter um ID de usuário que seja membro ou proprietário de uma conta do {{site.data.keyword.Bluemix_notm}}. Para obter um ID de usuário do {{site.data.keyword.Bluemix_notm}}, acesse: [Registro ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](https://console.bluemix.net/registration/){:new_window}
 
-## Etapa 1: Escolher um recurso em nuvem cujos logs você deseja ver
+## Etapa 1: Escolha um recurso em nuvem para o qual você deseja ver os logs
 {: #step1}
 
 No {{site.data.keyword.Bluemix_notm}}, aplicativos CF, os contêineres executados no {{site.data.keyword.containershort}} e os serviços selecionados coletam dados do log automaticamente e os encaminham para o serviço {{site.data.keyword.loganalysisshort}}.
@@ -52,7 +52,7 @@ A tabela a seguir lista os diferentes recursos em nuvem. Conclua o tutorial para
   </tr>
   <tr>
     <td>Os contêineres em execução no {{site.data.keyword.containershort}}</td>
-    <td>[Analisar logs no Kibana para um app que é implementado em um cluster do Kubernetes](/docs/services/CloudLogAnalysis/tutorials/container_logs.html#container_logs)</td>
+    <td>[Analisar logs no Kibana para um app que é implementado em um cluster do Kubernetes](/docs/services/CloudLogAnalysis/tutorials?topic=cloudloganalysis-container_logs#container_logs)</td>
     <td>Público </br>Dedicado</td>
     <td>![Visão geral do componente de alto nível para contêineres implementados em um cluster do Kubernetes](containers/images/containers_kube_logs.png "Visão geral do componente de alto nível para contêineres implementados em um cluster do Kubernetes")</td>
   </tr>
@@ -94,7 +94,7 @@ Conclua as etapas a seguir para conceder a um usuário permissões para visualiz
 	
 3. Se o usuário é um membro da conta, selecione o nome do usuário na lista ou clique em **Gerenciar usuário** no menu *Ações*.
 
-    Se o usuário não é um membro da conta, veja [Convidando usuários](/docs/iam/iamuserinv.html#iamuserinv).
+    Se o usuário não é um membro da conta, veja [Convidando usuários](/docs/iam?topic=iam-iamuserinv#iamuserinv).
 
 4. Selecione **Acesso do Cloud Foundry** e, em seguida, selecione a organização.
 
@@ -128,7 +128,7 @@ Conclua as etapas a seguir para conceder a um usuário permissões para visualiz
 	
 3. Se o usuário é um membro da conta, selecione o nome do usuário na lista ou clique em **Gerenciar usuário** no menu *Ações*.
 
-    Se o usuário não é um membro da conta, veja [Convidando usuários](/docs/iam/iamuserinv.html#iamuserinv).
+    Se o usuário não é um membro da conta, veja [Convidando usuários](/docs/iam?topic=iam-iamuserinv#iamuserinv).
 
 4. Na seção **Políticas de acesso**, clique em **Designar acesso** e, em seguida, selecione **Designar acesso aos recursos**.
 
@@ -156,7 +156,7 @@ Conclua as etapas a seguir para conceder a um usuário permissões para visualiz
 	  </tr>
 	  <tr>
 	    <td>Funções</td>
-		<td>Selecione uma ou mais funções do IAM. <br>As funções válidas são: *administrador*, *operador*, *editor* e *visualizador*. <br>Para obter mais informações sobre as ações que são permitidas por função, veja [Funções do IAM](/docs/services/CloudLogAnalysis/security_ov.html#iam_roles).
+		<td>Selecione uma ou mais funções do IAM. <br>As funções válidas são: *administrador*, *operador*, *editor* e *visualizador*. <br>Para obter mais informações sobre as ações que são permitidas por função, veja [Funções do IAM](/docs/services/CloudLogAnalysis?topic=cloudloganalysis-security_ov#iam_roles).
 		</td>
 	  </tr>
      </table>
@@ -179,11 +179,11 @@ Https://logging.ng.bluemix.net/
 {: codeblock}
 
 
-Para obter mais informações sobre como ativar o Kibana em outras regiões, veja [Navegando para o Kibana por meio de um navegador da web](/docs/services/CloudLogAnalysis/kibana/launch.html#launch_Kibana_from_browser).
+Para obter mais informações sobre como ativar o Kibana em outras regiões, veja [Navegando para o Kibana por meio de um navegador da web](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-launch#launch_Kibana_from_browser).
 
 **Nota:** ao ativar o Kibana, se você receber uma mensagem que indica *token de acesso não válido*, verifique suas permissões na conta. Essa mensagem é uma indicação de que seu ID de usuário não tem permissões para ver logs.
 
-A seguir, customize o Kibana para visualizar e analisar seus dados do log. Para obter mais informações, veja [Visualizando e analisando logs](/docs/services/CloudLogAnalysis/kibana/analyzing_logs_Kibana.html#analyzing_logs_Kibana)
+A seguir, customize o Kibana para visualizar e analisar seus dados do log. Para obter mais informações, veja [Visualizando e analisando logs](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-analyzing_logs_Kibana#analyzing_logs_Kibana)
     
 
 

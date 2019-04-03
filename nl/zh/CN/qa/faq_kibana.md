@@ -29,12 +29,12 @@ subcollection: cloudloganalysis
 下面是对有关使用 {{site.data.keyword.Bluemix}} 日志记录功能的常见问题的解答。
 {:shortdesc}
 
-* [如果在 Kibana 的“发现”页面中看不到数据该怎么办](/docs/services/CloudLogAnalysis/qa/faq_kibana.html#logging_qa_no_data_discover_kibana)
-* [如果获得认证异常该怎么办](/docs/services/CloudLogAnalysis/qa/faq_kibana.html#logging_qa_no_data_dashboard_kibana)
-* [为什么在 Kibana 的“发现”页面中会看到字段旁边有符号 ?](/docs/services/CloudLogAnalysis/qa/faq_kibana.html#logging_qa_kibana_question)
-* [尝试更改缺省索引模式时，收到 403 错误](/docs/services/CloudLogAnalysis/qa/faq_kibana.html#error_403)
-* [简短 URL 不起作用](/docs/services/CloudLogAnalysis/qa/faq_kibana.html#short_url)
-* [可以在 Bluemix 中搜索帐户日志吗？](/docs/services/CloudLogAnalysis/qa/faq_kibana.html#acc_logs_1)
+* [如果在 Kibana 的“发现”页面中看不到数据该怎么办](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-faq_kibana#logging_qa_no_data_discover_kibana)
+* [如果获得认证异常该怎么办](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-faq_kibana#logging_qa_no_data_dashboard_kibana)
+* [为什么在 Kibana 的“发现”页面中会看到字段旁边有符号 ?](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-faq_kibana#logging_qa_kibana_question)
+* [尝试更改缺省索引模式时，收到 403 错误](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-faq_kibana#error_403)
+* [简短 URL 不起作用](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-faq_kibana#short_url)
+* [可以在 Bluemix 中搜索帐户日志吗？](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-faq_kibana#acc_logs_1)
 
 
 ## 如果在 Kibana 的“发现”页面中看不到数据该怎么办
@@ -51,7 +51,7 @@ subcollection: cloudloganalysis
 
     **注**：缺省情况下，在 {{site.data.keyword.Bluemix_notm}} 中，*时间选取器*设置为显示最近 15 分钟的数据。
 
-    有关如何设置*时间选取器*的更多信息，请参阅[设置时间过滤器](/docs/services/CloudLogAnalysis/kibana/filter_logs.html#set_time_filter1)。
+    有关如何设置*时间选取器*的更多信息，请参阅[设置时间过滤器](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-filter_logs#set_time_filter1)。
        
 2. 单击*发现*页面搜索栏中的放大镜。页面数据会基于缺省搜索查询进行刷新。
 
@@ -59,7 +59,7 @@ subcollection: cloudloganalysis
 
     **注**：缺省情况下，在 {{site.data.keyword.Bluemix_notm}} 中，*自动刷新*时间段设置为**关闭**。
     
-    有关如何将其启用的更多信息，请参阅[自动刷新数据](/docs/services/CloudLogAnalysis/kibana/analize_logs_interactively.html#discover_view_refresh_interval)。
+    有关如何将其启用的更多信息，请参阅[自动刷新数据](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-analize_logs_interactively#discover_view_refresh_interval)。
 
 
 
@@ -91,7 +91,7 @@ subcollection: cloudloganalysis
 ## 为什么在 Kibana 的“发现”页面中会看到字段旁边有符号 ?
 {: #logging_qa_kibana_question}
 
-在 Kibana 中打开“发现”页面时，您可能会在“可用字段”部分中所列出的字段旁边看到问号 `?` 而非字符 `t`。重新装入字段列表时，系统会分析字段的类型，而问号 `?` 会替换为字符 `t`。有关更多信息，请参阅[重新装入字段列表](/docs/services/CloudLogAnalysis/kibana/analize_logs_interactively.html#discover_view_reload_fields)。
+在 Kibana 中打开“发现”页面时，您可能会在“可用字段”部分中所列出的字段旁边看到问号 `?` 而非字符 `t`。重新装入字段列表时，系统会分析字段的类型，而问号 `?` 会替换为字符 `t`。有关更多信息，请参阅[重新装入字段列表](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-analize_logs_interactively#discover_view_reload_fields)。
 
 
 ## 尝试更改缺省索引模式时，收到 403 错误
@@ -113,7 +113,7 @@ subcollection: cloudloganalysis
 
 要查看帐户日志，请完成以下步骤：
 
-1. [启动 Kibana。](/docs/services/CloudLogAnalysis/kibana/launch.html#launch_Kibana_from_browser)例如，对于美国南部区域，请使用 URL `https://logging.ng.bluemix.net`。
+1. [启动 Kibana。](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-launch#launch_Kibana_from_browser)例如，对于美国南部区域，请使用 URL `https://logging.ng.bluemix.net`。
 
 2. 选择选项**查看 AccountName 帐户日志**以显示帐户日志。*AccountName* 是帐户的名称。
 

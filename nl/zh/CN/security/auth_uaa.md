@@ -38,13 +38,13 @@ subcollection: cloudloganalysis
 
 1. 安装 {{site.data.keyword.Bluemix_notm}} CLI。
 
-   有关更多信息，请参阅[下载并安装 {{site.data.keyword.Bluemix}} CLI](/docs/cli/index.html#overview)。
+   有关更多信息，请参阅[下载并安装 {{site.data.keyword.Bluemix}} CLI](/docs/cli?topic=cloud-cli-ibmcloud-cli#overview)。
    
    如果 CLI 已安装，请继续执行下一步。
     
 2. 登录到 {{site.data.keyword.Bluemix_notm}} 中的区域、组织和空间。 
 
-    有关更多信息，请参阅[如何登录到 {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/qa/cli_qa.html#login)。
+    有关更多信息，请参阅[如何登录到 {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#login)。
 	
 3. 运行 `ibmcloud iam oauth-token` 命令以获取 {{site.data.keyword.Bluemix_notm}} UAA 令牌。
 

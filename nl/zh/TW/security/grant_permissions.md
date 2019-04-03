@@ -28,7 +28,7 @@ subcollection: cloudloganalysis
 在 {{site.data.keyword.Bluemix}} 中，您可以將一個以上的 IAM 角色指派給使用者。這些角色定義針對該使用者啟用以使用 {{site.data.keyword.loganalysisshort}} 服務的作業。  
 {:shortdesc}
 
-例如，您可以將**操作員**角色授與使用者，以容許他管理日誌。如果您只想要使用者檢視帳戶日誌，則可以將**檢視者**角色授與使用者。如需相關資訊，請參閱 [IAM 角色](/docs/services/CloudLogAnalysis/security_ov.html#iam_roles)。
+例如，您可以將**操作員**角色授與使用者，以容許他管理日誌。如果您只想要使用者檢視帳戶日誌，則可以將**檢視者**角色授與使用者。如需相關資訊，請參閱 [IAM 角色](/docs/services/CloudLogAnalysis?topic=cloudloganalysis-security_ov#iam_roles)。
 
 **附註：** 
 
@@ -52,7 +52,7 @@ subcollection: cloudloganalysis
 	
 3. 如果使用者是帳戶成員，請從清單選取使用者名稱，或按一下*動作* 功能表中的**管理使用者**。
 
-    如果使用者不是帳戶成員，請參閱[邀請使用者](/docs/iam/iamuserinv.html#iamuserinv)。
+    如果使用者不是帳戶成員，請參閱[邀請使用者](/docs/iam?topic=iam-iamuserinv#iamuserinv)。
 
 4. 在**存取原則**區段中，按一下**指派存取權**，然後選取**指派資源的存取權**。
 
@@ -80,7 +80,7 @@ subcollection: cloudloganalysis
 	  </tr>
 	  <tr>
 	    <td>角色</td>
-		<td>選取一個以上的 IAM 角色。<br>有效的角色為：*管理者*、*操作員*、*編輯者* 及*檢視者*。<br>如需每個角色所容許動作的相關資訊，請參閱 [IAM 角色](/docs/services/CloudLogAnalysis/security_ov.html#iam_roles)。</td>
+		<td>選取一個以上的 IAM 角色。<br>有效的角色為：*管理者*、*操作員*、*編輯者* 及*檢視者*。<br>如需每個角色所容許動作的相關資訊，請參閱 [IAM 角色](/docs/services/CloudLogAnalysis?topic=cloudloganalysis-security_ov#iam_roles)。</td>
 	  </tr>
      </table>
 	
@@ -96,7 +96,7 @@ subcollection: cloudloganalysis
 
 1. 從終端機中，登入 {{site.data.keyword.Bluemix_notm}} 帳戶。 
 
-    如需相關資訊，請參閱[如何登入 {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/qa/cli_qa.html#login)。
+    如需相關資訊，請參閱[如何登入 {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#login)。
 
 2. 確認使用者是帳戶成員。執行下列指令，以取得帳戶中的使用者清單：
 
@@ -107,7 +107,7 @@ subcollection: cloudloganalysis
 
 	即會顯示使用者及其 GUID 的清單。
 
-3. 如果使用者不是帳戶成員，請聯絡帳戶擁有者，並提出邀請使用者加入帳戶的要求。如需相關資訊，請參閱[邀請使用者](/docs/iam/iamuserinv.html#iamuserinv)。
+3. 如果使用者不是帳戶成員，請聯絡帳戶擁有者，並提出邀請使用者加入帳戶的要求。如需相關資訊，請參閱[邀請使用者](/docs/iam?topic=iam-iamuserinv#iamuserinv)。
 
     **提示：**邀請使用者加入帳戶的指令如下：`ibmcloud iam account-user-invite USER_EMAIL`
 		
@@ -151,7 +151,7 @@ subcollection: cloudloganalysis
 	
 3. 如果使用者是帳戶成員，請從清單選取使用者名稱，或按一下*動作* 功能表中的**管理使用者**。
 
-    如果使用者不是帳戶成員，請參閱[邀請使用者](/docs/iam/iamuserinv.html#iamuserinv)。
+    如果使用者不是帳戶成員，請參閱[邀請使用者](/docs/iam?topic=iam-iamuserinv#iamuserinv)。
 
 4. 選取 **Cloud Foundry 存取權**，然後選取組織。
 

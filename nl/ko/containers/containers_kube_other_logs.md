@@ -59,7 +59,7 @@ subcollection: cloudloganalysis
 
 1. {{site.data.keyword.Bluemix_notm}}의 지역, 조직 및 영역에 로그인하십시오. 
 
-    자세한 정보는 [{{site.data.keyword.Bluemix_notm}}에 로그인하는 방법](/docs/services/CloudLogAnalysis/qa/cli_qa.html#login)을 참조하십시오.
+    자세한 정보는 [{{site.data.keyword.Bluemix_notm}}에 로그인하는 방법](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#login)을 참조하십시오.
     
 2. {{site.data.keyword.loganalysisshort}} 서비스 플러그인을 초기화하십시오.
 
@@ -91,11 +91,11 @@ subcollection: cloudloganalysis
 
 {{site.data.keyword.loganalysisshort}} 서비스로 전달하는 클러스터 로그를 선택할 수 있습니다. 
 
-* 자동 로그 수집을 사용하고 stdout 및 stderr을 전달하려면 [자동 로그 수집 사용 및 컨테이너 로그 전달](/docs/services/CloudLogAnalysis/containers/containers_kube_other_logs.html#containers)을 참조하십시오.
-* 자동 로그 수집을 사용하고 애플리케이션 로그를 전달하려면 [자동 로그 수집 사용 및 애플리케이션 로그 전달](/docs/services/CloudLogAnalysis/containers/containers_kube_other_logs.html#apps)을 참조하십시오.
-* 자동 로그 수집을 사용하고 작업자 로그를 전달하려면 [자동 로그 수집 사용 및 작업자 로그 전달](/docs/services/CloudLogAnalysis/containers/containers_kube_other_logs.html#workers)을 참조하십시오.
-* 자동 로그 수집을 사용하고 Kubernetes 시스템 컴포넌트 로그를 전달하려면 [자동 로그 수집 사용 및 Kubernetes 시스템 컴포넌트 로그 전달](/docs/services/CloudLogAnalysis/containers/containers_kube_other_logs.html#system)을 참조하십시오.
-* 자동 로그 수집을 사용하고 Kubernetes Ingress 제어기 로그를 전달하려면 [자동 로그 수집 사용 및 Kubernetes 유입 제어기 로그 전달](/docs/services/CloudLogAnalysis/containers/containers_kube_other_logs.html#controller)을 참조하십시오.
+* 자동 로그 수집을 사용하고 stdout 및 stderr을 전달하려면 [자동 로그 수집 사용 및 컨테이너 로그 전달](/docs/services/CloudLogAnalysis/containers?topic=cloudloganalysis-containers_kube_other_logs#containers)을 참조하십시오.
+* 자동 로그 수집을 사용하고 애플리케이션 로그를 전달하려면 [자동 로그 수집 사용 및 애플리케이션 로그 전달](/docs/services/CloudLogAnalysis/containers?topic=cloudloganalysis-containers_kube_other_logs#apps)을 참조하십시오.
+* 자동 로그 수집을 사용하고 작업자 로그를 전달하려면 [자동 로그 수집 사용 및 작업자 로그 전달](/docs/services/CloudLogAnalysis/containers?topic=cloudloganalysis-containers_kube_other_logs#workers)을 참조하십시오.
+* 자동 로그 수집을 사용하고 Kubernetes 시스템 컴포넌트 로그를 전달하려면 [자동 로그 수집 사용 및 Kubernetes 시스템 컴포넌트 로그 전달](/docs/services/CloudLogAnalysis/containers?topic=cloudloganalysis-containers_kube_other_logs#system)을 참조하십시오.
+* 자동 로그 수집을 사용하고 Kubernetes Ingress 제어기 로그를 전달하려면 [자동 로그 수집 사용 및 Kubernetes 유입 제어기 로그 전달](/docs/services/CloudLogAnalysis/containers?topic=cloudloganalysis-containers_kube_other_logs#controller)을 참조하십시오.
 
 
 
@@ -142,7 +142,7 @@ subcollection: cloudloganalysis
  
 3. 사용자에게 올바른 권한이 없는 경우 다음 단계를 완료하십시오.
 
-    1. 사용자에게 조직에 대한 *orgManager* 역할과 영역에 대한 *SpaceManager* 및 *개발자* 권한을 부여하십시오. 자세한 정보는 [IBM Cloud UI를 사용하여 사용자에게 영역 로그를 볼 수 있는 권한 부여](/docs/services/CloudLogAnalysis/security/grant_permissions.html#grant_permissions_ui_space)를 참조하십시오.
+    1. 사용자에게 조직에 대한 *orgManager* 역할과 영역에 대한 *SpaceManager* 및 *개발자* 권한을 부여하십시오. 자세한 정보는 [IBM Cloud UI를 사용하여 사용자에게 영역 로그를 볼 수 있는 권한 부여](/docs/services/CloudLogAnalysis/security?topic=cloudloganalysis-grant_permissions#grant_permissions_ui_space)를 참조하십시오.
     
     2. 로깅 구성을 새로 고치십시오. 다음 명령을 실행하십시오.
     
@@ -170,7 +170,7 @@ ibmcloud ks logging-config-create ClusterName --logsource container --namespace 
 여기서 
 
 * *ClusterName*은 클러스터의 이름입니다.
-* *EndPoint*는 {{site.data.keyword.loganalysisshort}} 서비스가 프로비저닝된 영역의 로깅 서비스에 대한 URL입니다. 엔드포인트 목록은 [엔드포인트](/docs/services/CloudLogAnalysis/log_ingestion.html#log_ingestion_urls)를 참조하십시오.
+* *EndPoint*는 {{site.data.keyword.loganalysisshort}} 서비스가 프로비저닝된 영역의 로깅 서비스에 대한 URL입니다. 엔드포인트 목록은 [엔드포인트](/docs/services/CloudLogAnalysis?topic=cloudloganalysis-log_ingestion#log_ingestion_urls)를 참조하십시오.
 * *OrgName*은 영역이 사용 가능한 조직의 이름입니다.
 * *SpaceName*은 {{site.data.keyword.loganalysisshort}} 서비스가 프로비저닝된 영역의 이름입니다.
 
@@ -204,7 +204,7 @@ ibmcloud ks logging-config-create ClusterName --logsource application --type ibm
 여기서 
 
 * *ClusterName*은 클러스터의 이름입니다.
-* *EndPoint*는 {{site.data.keyword.loganalysisshort}} 서비스가 프로비저닝된 영역의 로깅 서비스에 대한 URL입니다. 엔드포인트 목록은 [엔드포인트](/docs/services/CloudLogAnalysis/log_ingestion.html#log_ingestion_urls)를 참조하십시오.
+* *EndPoint*는 {{site.data.keyword.loganalysisshort}} 서비스가 프로비저닝된 영역의 로깅 서비스에 대한 URL입니다. 엔드포인트 목록은 [엔드포인트](/docs/services/CloudLogAnalysis?topic=cloudloganalysis-log_ingestion#log_ingestion_urls)를 참조하십시오.
 * *OrgName*은 영역이 사용 가능한 조직의 이름입니다.
 * *SpaceName*은 {{site.data.keyword.loganalysisshort}} 서비스가 프로비저닝된 영역의 이름입니다.
 * *app-containers*는 보려는 컨테이너 목록을 정의하도록 설정할 수 있는 선택적 매개변수입니다. 컨테이너는 로그가 {{site.data.keyword.loganalysisshort}}로 전달될 유일한 항목입니다. 쉼표로 구분하여 하나 이상의 컨테이너를 설정할 수 있습니다.
@@ -240,7 +240,7 @@ ibmcloud ks logging-config-create ClusterName --logsource worker --type ibm --ho
 여기서 
 
 * *ClusterName*은 클러스터의 이름입니다.
-* *EndPoint*는 {{site.data.keyword.loganalysisshort}} 서비스가 프로비저닝된 영역의 로깅 서비스에 대한 URL입니다. 엔드포인트 목록은 [엔드포인트](/docs/services/CloudLogAnalysis/log_ingestion.html#log_ingestion_urls)를 참조하십시오.
+* *EndPoint*는 {{site.data.keyword.loganalysisshort}} 서비스가 프로비저닝된 영역의 로깅 서비스에 대한 URL입니다. 엔드포인트 목록은 [엔드포인트](/docs/services/CloudLogAnalysis?topic=cloudloganalysis-log_ingestion#log_ingestion_urls)를 참조하십시오.
 * *OrgName*은 영역이 사용 가능한 조직의 이름입니다.
 * *SpaceName*은 {{site.data.keyword.loganalysisshort}} 서비스가 프로비저닝된 영역의 이름입니다.
 
@@ -275,7 +275,7 @@ ibmcloud ks logging-config-create ClusterName --logsource kubernetes --type ibm 
 여기서 
 
 * *ClusterName*은 클러스터의 이름입니다.
-* *EndPoint*는 {{site.data.keyword.loganalysisshort}} 서비스가 프로비저닝된 영역의 로깅 서비스에 대한 URL입니다. 엔드포인트 목록은 [엔드포인트](/docs/services/CloudLogAnalysis/log_ingestion.html#log_ingestion_urls)를 참조하십시오.
+* *EndPoint*는 {{site.data.keyword.loganalysisshort}} 서비스가 프로비저닝된 영역의 로깅 서비스에 대한 URL입니다. 엔드포인트 목록은 [엔드포인트](/docs/services/CloudLogAnalysis?topic=cloudloganalysis-log_ingestion#log_ingestion_urls)를 참조하십시오.
 * *OrgName*은 영역이 사용 가능한 조직의 이름입니다.
 * *SpaceName*은 {{site.data.keyword.loganalysisshort}} 서비스가 프로비저닝된 영역의 이름입니다.
 
@@ -310,7 +310,7 @@ ibmcloud ks logging-config-create ClusterName --logsource ingress --type ibm --h
 여기서 
 
 * *ClusterName*은 클러스터의 이름입니다.
-* *EndPoint*는 {{site.data.keyword.loganalysisshort}} 서비스가 프로비저닝된 영역의 로깅 서비스에 대한 URL입니다. 엔드포인트 목록은 [엔드포인트](/docs/services/CloudLogAnalysis/log_ingestion.html#log_ingestion_urls)를 참조하십시오.
+* *EndPoint*는 {{site.data.keyword.loganalysisshort}} 서비스가 프로비저닝된 영역의 로깅 서비스에 대한 URL입니다. 엔드포인트 목록은 [엔드포인트](/docs/services/CloudLogAnalysis?topic=cloudloganalysis-log_ingestion#log_ingestion_urls)를 참조하십시오.
 * *OrgName*은 영역이 사용 가능한 조직의 이름입니다.
 * *SpaceName*은 {{site.data.keyword.loganalysisshort}} 서비스가 프로비저닝된 영역의 이름입니다.
 

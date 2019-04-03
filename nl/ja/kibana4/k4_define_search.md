@@ -40,11 +40,11 @@ subcollection: cloudloganalysis
 
     2. Kibana にアクセスします。 **「詳細ビュー」** ![「詳細ビュー」リンク](images/logging_advanced_view.jpg "「詳細ビュー」リンク") をクリックします。 Kibana ダッシュボードが表示されます。
     
-    Kubernetes クラスター内で実行しているコンテナーの場合、[ブラウザーから Kibana を起動します](/docs/services/CloudLogAnalysis/kibana4/k4_launch.html#launch_Kibana_from_browser1)。 
+    Kubernetes クラスター内で実行しているコンテナーの場合、[ブラウザーから Kibana を起動します](/docs/services/CloudLogAnalysis/kibana4?topic=cloudloganalysis-k4_launch#launch_Kibana_from_browser1)。 
     
     Kibana にアクセスすると、デフォルト検索が適用されます。 Kibana を起動した対象リソースのインスタンスのリストに関するログを確認できます。 そのスペース内の {{site.data.keyword.Bluemix_notm}} リソースのすべてまたは任意のものについて、ログをフィルタリングできます。
 
-2. 「Discover」ページを見て、表示されているデータのサブセットを確認します。 詳しくは、『[「Discover」ページで表示されているデータの識別](/docs/services/CloudLogAnalysis/kibana4/logging_kibana_analize_logs_interactively.html#k4_identify_data)』を参照してください。 次に、項目をフィルタリングするためのデフォルト照会を変更します。
+2. 「Discover」ページを見て、表示されているデータのサブセットを確認します。 詳しくは、『[「Discover」ページで表示されているデータの識別](/docs/services/CloudLogAnalysis/kibana4?topic=cloudloganalysis-kibana_analize_logs_interactively#k4_identify_data)』を参照してください。次に、項目をフィルタリングするためのデフォルト照会を変更します。
 
     **注:** カスタム照会の定義には、Lucene 照会言語を使用します。 詳しくは、『[Apache Lucene - Query Parser Syntax  ![外部リンク・アイコン](../../../icons/launch-glyph.svg "外部リンク・アイコン")](https://lucene.apache.org/core/2_9_4/queryparsersyntax.html){: new_window}』を参照してください。
     

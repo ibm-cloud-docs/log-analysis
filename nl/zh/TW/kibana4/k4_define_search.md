@@ -40,11 +40,11 @@ subcollection: cloudloganalysis
 
     2. 存取 Kibana。按一下**進階視圖** ![「進階視圖」鏈結](images/logging_advanced_view.jpg "「進階視圖」鏈結")。即會顯示 Kibana 儀表板。
     
-    針對在 Kubernetes 叢集中執行的容器，[從瀏覽器啟動 Kibana](/docs/services/CloudLogAnalysis/kibana4/k4_launch.html#launch_Kibana_from_browser1)。 
+    針對在 Kubernetes 叢集中執行的容器，[從瀏覽器啟動 Kibana](/docs/services/CloudLogAnalysis/kibana4?topic=cloudloganalysis-k4_launch#launch_Kibana_from_browser1)。 
     
     當您存取 Kibana 時，會套用預設搜尋。您可以看到您為其啟動 Kibana 之資源實例清單的日誌。您可以針對該空間中的任何或所有 {{site.data.keyword.Bluemix_notm}} 資源過濾日誌。
 
-2. 在「探索」頁面中，查看它顯示哪部分的資料。如需相關資訊，請參閱[識別 Kibana 探索頁面中顯示的資料](/docs/services/CloudLogAnalysis/kibana4/logging_kibana_analize_logs_interactively.html#k4_identify_data)。然後，修改預設查詢來過濾項目。
+2. 在「探索」頁面中，查看它顯示哪部分的資料。如需相關資訊，請參閱[識別 Kibana 探索頁面中顯示的資料](/docs/services/CloudLogAnalysis/kibana4?topic=cloudloganalysis-kibana_analize_logs_interactively#k4_identify_data)。然後，修改預設查詢來過濾項目。
 
     **附註：**請使用 Lucene 查詢語言來定義自訂查詢。如需相關資訊，請參閱 [Apache Lucene - 查詢剖析器語法 ![外部鏈結圖示](../../../icons/launch-glyph.svg "外部鏈結圖示")](https://lucene.apache.org/core/2_9_4/queryparsersyntax.html){: new_window}
     

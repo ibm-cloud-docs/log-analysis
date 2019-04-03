@@ -60,7 +60,7 @@ Puede configurar Kibana para que muestre los campos siguientes para cada entrada
 
 
 
-## Formato de registro de Kibana para contenedores Docker desplegados en un clúster Kubernetes
+## Formato de registro de Kibana para contenedores Docker desplegados en un clúster de Kubernetes
 {: #kibana_log_format_containers_kubernetes}
 
 Puede configurar Kibana para que muestre los campos siguientes para cada entrada de registro en la página *Descubrir*. Estos campos los establece {{site.data.keyword.IBM}} e incluyen los datos de su mensaje. 
@@ -92,7 +92,7 @@ Puede configurar Kibana para que muestre los campos siguientes para cada entrada
 {: caption="Tabla 3. Campos para contenedores Docker" caption-side="top"}
 
 
-## Formato de registro de Kibana para Message Hub
+## Formato de registro de Kibana para {{site.data.keyword.messagehub}}
 {: #kibana_log_format_messagehub}
 
 Puede configurar Kibana para que muestre los campos siguientes para cada entrada de registro en la página *Descubrir*:
@@ -107,7 +107,7 @@ Puede configurar Kibana para que muestre los campos siguientes para cada entrada
 | \_type | El tipo de registro; por ejemplo, *syslog*. |
 | loglevel | La gravedad del suceso registrado; por ejemplo, **Info**. |
 | module | Este campo se establece en **MessageHub**. |
-{: caption="Tabla 4. Campos para sucesos de Message Hub" caption-side="top"}
+{: caption="Tabla 4. Campos para sucesos de {{site.data.keyword.messagehub}}" caption-side="top"}
 
 Ejemplo de una entrada de registro:
 

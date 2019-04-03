@@ -83,7 +83,7 @@ Kibana 所顯示的日誌資訊，包括部署在組織中您所登入空間內�
 
 依預設，**探索**頁面會載入，並選取預設索引型樣，且時間過濾器設為過去 15 分鐘。 
 
-如果「探索」頁面未顯示任何日誌項目，請調整時間選取器。如需相關資訊，請參閱[設定時間過濾器](/docs/services/CloudLogAnalysis/kibana/filter_logs.html#set_time_filter)。
+如果「探索」頁面未顯示任何日誌項目，請調整時間選取器。如需相關資訊，請參閱[設定時間過濾器](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-filter_logs#set_time_filter)。
 
 	
 	
@@ -98,7 +98,7 @@ Kibana 所顯示的日誌資訊，包括部署在組織中您所登入空間內�
 
 1. 開啟 Web 瀏覽器，並啟動 Kibana。然後，登入 Kibana 使用者介面。
 
-    若要查看每個地區的 URL 清單，請參閱[用來啟動 Kibana 的 URL](/docs/services/CloudLogAnalysis/kibana/analyzing_logs_Kibana.html#urls_kibana)。
+    若要查看每個地區的 URL 清單，請參閱[用來啟動 Kibana 的 URL](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-analyzing_logs_Kibana#urls_kibana)。
     
     即會開啟 Kibana 中的「探索」頁面。
 	
@@ -115,7 +115,7 @@ Kibana 所顯示的日誌資訊，包括部署在組織中您所登入空間內�
 	
 	    其中 *Space_ID* 是您要在其中檢視及分析日誌資料之空間的 GUID。 
 	
-如果「探索」頁面未顯示任何日誌項目，請調整時間選取器。如需相關資訊，請參閱[設定時間過濾器](/docs/services/CloudLogAnalysis/kibana/filter_logs.html#set_time_filter)。
+如果「探索」頁面未顯示任何日誌項目，請調整時間選取器。如需相關資訊，請參閱[設定時間過濾器](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-filter_logs#set_time_filter)。
 
 
 	
@@ -143,7 +143,7 @@ Kibana 所顯示的日誌資訊，包括部署在組織中您所登入空間內�
 
     依預設，**探索**頁面會載入，並選取預設索引型樣，且時間過濾器設為過去 15 分鐘。搜尋查詢設為符合 CF 應用程式的所有項目。
 
-    如果「探索」頁面未顯示任何日誌項目，請調整時間選取器。如需相關資訊，請參閱[設定時間過濾器](/docs/services/CloudLogAnalysis/kibana/filter_logs.html#set_time_filter)。
+    如果「探索」頁面未顯示任何日誌項目，請調整時間選取器。如需相關資訊，請參閱[設定時間過濾器](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-filter_logs#set_time_filter)。
 
 	
 	
@@ -192,7 +192,7 @@ Kibana 所顯示的日誌資訊，包括部署在組織中您所登入空間內�
 
     依預設，**探索**頁面會載入，並選取預設索引型樣，且時間過濾器設為過去 30 秒。搜尋查詢設為符合 Docker 容器的所有項目。
 
-    如果「探索」頁面未顯示任何日誌項目，請調整時間選取器。如需相關資訊，請參閱[設定時間過濾器](/docs/services/CloudLogAnalysis/kibana/filter_logs.html#set_time_filter)。
+    如果「探索」頁面未顯示任何日誌項目，請調整時間選取器。如需相關資訊，請參閱[設定時間過濾器](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-filter_logs#set_time_filter)。
 
 	
 

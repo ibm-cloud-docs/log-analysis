@@ -52,7 +52,7 @@ subcollection: cloudloganalysis
   </tr>
   <tr>
     <td>在 {{site.data.keyword.containershort}} 上运行的容器</td>
-    <td>[在 Kibana 中分析 Kubernetes 集群中部署的应用程序的日志](/docs/services/CloudLogAnalysis/tutorials/container_logs.html#container_logs)</td>
+    <td>[在 Kibana 中分析 Kubernetes 集群中部署的应用程序的日志](/docs/services/CloudLogAnalysis/tutorials?topic=cloudloganalysis-container_logs#container_logs)</td>
     <td>Public </br>Dedicated</td>
     <td>![在 Kubernetes 集群中部署的容器的高级别组件概览图](containers/images/containers_kube_logs.png "在 Kubernetes 集群中部署的容器的高级别组件概览图")</td>
   </tr>
@@ -94,7 +94,7 @@ subcollection: cloudloganalysis
 	
 3. 如果用户是帐户的成员，请从列表中选择用户名，或者从*操作*菜单中单击**管理用户**。
 
-    如果用户不是帐户的成员，请参阅[邀请用户](/docs/iam/iamuserinv.html#iamuserinv)。
+    如果用户不是帐户的成员，请参阅[邀请用户](/docs/iam?topic=iam-iamuserinv#iamuserinv)。
 
 4. 选择 **Cloud Foundry 访问权**，然后选择组织。
 
@@ -128,7 +128,7 @@ subcollection: cloudloganalysis
 	
 3. 如果用户是帐户的成员，请从列表中选择用户名，或者从*操作*菜单中单击**管理用户**。
 
-    如果用户不是帐户的成员，请参阅[邀请用户](/docs/iam/iamuserinv.html#iamuserinv)。
+    如果用户不是帐户的成员，请参阅[邀请用户](/docs/iam?topic=iam-iamuserinv#iamuserinv)。
 
 4. 在**访问策略**部分，单击**分配访问权**，然后选择**分配对资源的访问权**。
 
@@ -156,7 +156,7 @@ subcollection: cloudloganalysis
 	  </tr>
 	  <tr>
 	    <td>角色</td>
-		<td>选择一个或多个 IAM 角色。<br>有效角色为：*管理员*、*操作员*、*编辑者*和*查看者*。<br>有关每种角色所允许的操作的更多信息，请参阅 [IAM 角色](/docs/services/CloudLogAnalysis/security_ov.html#iam_roles)。</td>
+		<td>选择一个或多个 IAM 角色。<br>有效角色为：*管理员*、*操作员*、*编辑者*和*查看者*。<br>有关每种角色所允许的操作的更多信息，请参阅 [IAM 角色](/docs/services/CloudLogAnalysis?topic=cloudloganalysis-security_ov#iam_roles)。</td>
 	  </tr>
      </table>
 	
@@ -178,11 +178,11 @@ https://logging.ng.bluemix.net/
 {: codeblock}
 
 
-有关如何在其他区域中启动 Kibana 的更多信息，请参阅[通过 Web 浏览器导航至 Kibana](/docs/services/CloudLogAnalysis/kibana/launch.html#launch_Kibana_from_browser)。
+有关如何在其他区域中启动 Kibana 的更多信息，请参阅[通过 Web 浏览器导航至 Kibana](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-launch#launch_Kibana_from_browser)。
 
 **注：**启动 Kibana 时，如果收到指示*不记名令牌无效*的消息，请检查您在帐户中的许可权。此消息指示您的用户标识无权查看日志。
 
-然后，定制 Kibana 以查看和分析日志数据。有关更多信息，请参阅[查看和分析日志](/docs/services/CloudLogAnalysis/kibana/analyzing_logs_Kibana.html#analyzing_logs_Kibana)。
+然后，定制 Kibana 以查看和分析日志数据。有关更多信息，请参阅[查看和分析日志](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-analyzing_logs_Kibana#analyzing_logs_Kibana)。
     
 
 

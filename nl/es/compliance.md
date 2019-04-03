@@ -66,16 +66,16 @@ Considere la siguiente información:
 
 * Los registros que se almacenan en el componente de recopilación de registros se suprimen transcurridos un cierto número de días cuando se configura una política de retención o se conservan hasta que el usuario los suprime manualmente. 
 
-    Puede configurar una política de retención de registros para definir el número de días que desea conservar los registros en la recopilación de registros. Para obtener más información, consulte [Visualización y configuración de la política de retención de registros mediante el plugin de {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/how-to/manage-logs/configuring_retention_policy_cloud.html#configuring_retention_policy).
+    Puede configurar una política de retención de registros para definir el número de días que desea conservar los registros en la recopilación de registros. Para obtener más información, consulte [Visualización y configuración de la política de retención de registros mediante el plugin de {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/how-to/manage-logs?topic=cloudloganalysis-configuring_retention_policy#configuring_retention_policy).
 
-    Puede utilizar la [API de recopilación de registros](https://console.bluemix.net/apidocs/948-ibm-cloud-log-collection-api?&language=node&env_id=ibm%3Ayp%3Aus-south#introduction){: new_window} o la [CLI de recopilación de registros](/docs/services/CloudLogAnalysis/reference/log_analysis_cli_cloud.html#log_analysis_cli){: new_window} para suprimir registros manualmente del componente de recopilación de registros. 
+    Puede utilizar la [API de recopilación de registros](https://console.bluemix.net/apidocs/948-ibm-cloud-log-collection-api?&language=node&env_id=ibm%3Ayp%3Aus-south#introduction){: new_window} o la [CLI de recopilación de registros](/docs/services/CloudLogAnalysis/reference?topic=cloudloganalysis-log_analysis_cli#log_analysis_cli){: new_window} para suprimir registros manualmente del componente de recopilación de registros. 
 
-    Puede utilizar la CLI para suprimir registros manualmente del componente de recopilación de registros. Para obtener más información, consulte [ibmcloud logging log-delete mediante el plugin de {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/how-to/manage-logs/deleting_logs_cloud.html#deleting_logs).
+    Puede utilizar la CLI para suprimir registros manualmente del componente de recopilación de registros. Para obtener más información, consulte [ibmcloud logging log-delete mediante el plugin de {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/how-to/manage-logs?topic=cloudloganalysis-deleting_logs#deleting_logs).
 
 
 Si pasa de un plan de pago al plan lite o estándar, los registros de la recopilación de registros se suprimirán en un día aproximadamente.
 
-En cualquier momento, puede abrir una incidencia de soporte y pedir que todos sus datos se supriman del componente de búsqueda de registros o de recopilación de registros. Para obtener información sobre cómo abrir una incidencia de soporte de IBM, consulte [Cómo obtener soporte](/docs/get-support/howtogetsupport.html#getting-customer-support).
+En cualquier momento, puede abrir una incidencia de soporte y pedir que todos sus datos se supriman del componente de búsqueda de registros o de recopilación de registros. Para obtener información sobre cómo abrir una incidencia de soporte de IBM, consulte [Cómo obtener soporte](/docs/get-support?topic=get-support-getting-customer-support#getting-customer-support).
 
 
 
@@ -84,7 +84,7 @@ En cualquier momento, puede abrir una incidencia de soporte y pedir que todos su
 
 Para obtener más información, consulte:
 
-[Conformidad de la seguridad de {{site.data.keyword.Bluemix_notm}}](/docs/security/compliance.html#compliance)
+[Conformidad de seguridad de {{site.data.keyword.Bluemix_notm}}](/docs/security/compliance.html#compliance)
 
 [GDPR - Página oficial de {{site.data.keyword.IBM_notm}}](https://www.ibm.com/data-responsibility/gdpr/)
 

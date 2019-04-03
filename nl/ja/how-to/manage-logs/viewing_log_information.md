@@ -25,7 +25,7 @@ subcollection: cloudloganalysis
 # ログ情報の表示
 {: #viewing_log_status}
 
-収集されて Log Collection に保管されたログに関する情報を取得するには、[cf logging status](/docs/services/CloudLogAnalysis/reference/logging_cli.html#status1) コマンドを使用します。
+収集されて Log Collection に保管されたログに関する情報を取得するには、[cf logging status](/docs/services/CloudLogAnalysis/reference?topic=cloudloganalysis-logging_cli#status1) コマンドを使用します。
 {:shortdesc}
 
 ## 特定の期間のログに関する情報の取得
@@ -43,7 +43,7 @@ Log Collection に保管されたログについて、サイズ、カウント�
 
 1. {{site.data.keyword.Bluemix_notm}} で、地域、組織、およびスペースにログインします。 
 
-    詳しくは、『[{{site.data.keyword.Bluemix_notm}} にログインするにはどうすればよいですか](/docs/services/CloudLogAnalysis/qa/cli_qa.html#login)』を参照してください。
+    詳しくは、『[{{site.data.keyword.Bluemix_notm}} にログインするにはどうすればよいですか](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#login)』を参照してください。
     
 2. *status* コマンドを実行します。
 
@@ -80,7 +80,7 @@ Log Collection に保管されたログについて、サイズ、カウント�
 
 1. {{site.data.keyword.Bluemix_notm}} で、地域、組織、およびスペースにログインします。 
 
-    詳しくは、『[{{site.data.keyword.Bluemix_notm}} にログインするにはどうすればよいですか](/docs/services/CloudLogAnalysis/qa/cli_qa.html#login)』を参照してください。
+    詳しくは、『[{{site.data.keyword.Bluemix_notm}} にログインするにはどうすればよいですか](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#login)』を参照してください。
     
 2. *status* コマンドを実行します。
 
@@ -122,7 +122,7 @@ Log Collection に保管されたログについて、サイズ、カウント�
 
 1. {{site.data.keyword.Bluemix_notm}} で、地域、組織、およびスペースにログインします。 
 
-    詳しくは、『[{{site.data.keyword.Bluemix_notm}} にログインするにはどうすればよいですか](/docs/services/CloudLogAnalysis/qa/cli_qa.html#login)』を参照してください。
+    詳しくは、『[{{site.data.keyword.Bluemix_notm}} にログインするにはどうすればよいですか](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#login)』を参照してください。
     
 2. *status* コマンドを実行します。
 

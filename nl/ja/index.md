@@ -52,7 +52,7 @@ subcollection: cloudloganalysis
   </tr>
   <tr>
     <td>{{site.data.keyword.containershort}} で実行されているコンテナー</td>
-    <td>[Kubernetes クラスターにデプロイされたアプリに関する Kibana でのログの分析](/docs/services/CloudLogAnalysis/tutorials/container_logs.html#container_logs)</td>
+    <td>[Kubernetes クラスターにデプロイされたアプリに関する Kibana でのログの分析](/docs/services/CloudLogAnalysis/tutorials?topic=cloudloganalysis-container_logs#container_logs)</td>
     <td>Public </br>Dedicated</td>
     <td>![Kubernetes クラスターにデプロイされたコンテナーのコンポーネント概要図](containers/images/containers_kube_logs.png "Kubernetes クラスターにデプロイされたコンテナーのコンポーネント概要図")</td>
   </tr>
@@ -94,7 +94,7 @@ subcollection: cloudloganalysis
 	
 3. ユーザーがアカウントのメンバーである場合、リストからユーザー名を選択するか、または、**「アクション」**メニューから*「ユーザーの管理」*をクリックします。
 
-    ユーザーがアカウントのメンバーでない場合、『[ユーザーの招待](/docs/iam/iamuserinv.html#iamuserinv)』を参照してください。
+    ユーザーがアカウントのメンバーでない場合、『[ユーザーの招待](/docs/iam?topic=iam-iamuserinv#iamuserinv)』を参照してください。
 
 4. **「Cloud Foundry アクセス権限」**を選択してから、組織を選択します。
 
@@ -128,7 +128,7 @@ subcollection: cloudloganalysis
 	
 3. ユーザーがアカウントのメンバーである場合、リストからユーザー名を選択するか、または、**「アクション」**メニューから*「ユーザーの管理」*をクリックします。
 
-    ユーザーがアカウントのメンバーでない場合、『[ユーザーの招待](/docs/iam/iamuserinv.html#iamuserinv)』を参照してください。
+    ユーザーがアカウントのメンバーでない場合、『[ユーザーの招待](/docs/iam?topic=iam-iamuserinv#iamuserinv)』を参照してください。
 
 4. **「アクセス・ポリシー」**セクションで、**「アクセス権限の割り当て」**をクリックし、**「リソースへのアクセス権限の割り当て」**を選択します。
 
@@ -156,7 +156,7 @@ subcollection: cloudloganalysis
 	  </tr>
 	  <tr>
 	    <td>役割</td>
-		<td>1 つ以上の IAM 役割を選択してください。 <br>有効な役割は、*管理者*、*オペレーター*、*エディター*、*ビューアー*です。 <br>役割ごとの許可されるアクションについて詳しくは、『[IAM 役割](/docs/services/CloudLogAnalysis/security_ov.html#iam_roles)』を参照してください。
+		<td>1 つ以上の IAM 役割を選択してください。 <br>有効な役割は、*管理者*、*オペレーター*、*エディター*、*ビューアー*です。 <br>役割ごとの許可されるアクションについて詳しくは、『[IAM 役割](/docs/services/CloudLogAnalysis?topic=cloudloganalysis-security_ov#iam_roles)』を参照してください。
 		</td>
 	  </tr>
      </table>
@@ -179,11 +179,11 @@ https://logging.ng.bluemix.net/
 {: codeblock}
 
 
-その他の地域の Kibana を起動する方法について詳しくは、[Web ブラウザーから Kibana へのナビゲート](/docs/services/CloudLogAnalysis/kibana/launch.html#launch_Kibana_from_browser)を参照してください。
+その他の地域の Kibana を起動する方法について詳しくは、[Web ブラウザーから Kibana へのナビゲート](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-launch#launch_Kibana_from_browser)を参照してください。
 
 **注:** Kibana を起動したときに、*「無効なベアラー・トークン」*を示すメッセージが表示された場合、アカウントでの許可を確認してください。 このメッセージは、そのユーザー ID にログを表示するための許可がないことを示しています。
 
-次に、ログ・データを表示および分析するために Kibana をカスタマイズします。詳しくは、『[ログの表示と分析](/docs/services/CloudLogAnalysis/kibana/analyzing_logs_Kibana.html#analyzing_logs_Kibana)』を参照してください。
+次に、ログ・データを表示および分析するために Kibana をカスタマイズします。 詳しくは、『[ログの表示と分析](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-analyzing_logs_Kibana#analyzing_logs_Kibana)』を参照してください。
     
 
 

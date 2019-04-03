@@ -59,9 +59,7 @@ Pour modifier votre plan de service dans Bluemix via l'interface de ligne de com
 
 1. Connectez-vous à une région, une organisation et un espace dans {{site.data.keyword.Bluemix_notm}}. 
 
-    Pour plus d'informations, voir
-[Comment se connecter
-à {{site.data.keyword.Bluemix_notm}} ?](/docs/services/CloudLogAnalysis/qa/cli_qa.html#login).
+    Pour plus d'informations, voir [Comment se connecter à {{site.data.keyword.Bluemix_notm}} ?](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#login)
 	
 2. Exécutez la commande `ibmcloud service list` pour identifier le plan en cours et obtenir le nom du service {{site.data.keyword.loganalysisshort}} depuis la liste des services qui est disponible dans l'espace. 
 

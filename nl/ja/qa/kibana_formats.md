@@ -92,7 +92,7 @@ subcollection: cloudloganalysis
 {: caption="表 3. Docker コンテナー用のフィールド" caption-side="top"}
 
 
-## Message Hub の Kibana ログ・フォーマット
+## {{site.data.keyword.messagehub}} の Kibana ログ・フォーマット
 {: #kibana_log_format_messagehub}
 
 各ログ項目の以下のフィールドを「*Discover*」ページで表示するように Kibana を構成できます。
@@ -107,7 +107,7 @@ subcollection: cloudloganalysis
 | \_type | ログのタイプ (例: *syslog*)。 |
 | loglevel | ログに記録するイベントの重大度 (例えば、**Info**)。 |
 | module | このフィールドは、**MessageHub** に設定されます。 |
-{: caption="表 4. Message Hub イベント用のフィールド" caption-side="top"}
+{: caption="表 4. {{site.data.keyword.messagehub}} イベント用のフィールド" caption-side="top"}
 
 ログ項目の例:
 

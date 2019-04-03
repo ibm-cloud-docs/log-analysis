@@ -34,7 +34,7 @@ Procédez comme suit pour envoyer des données de journal dans un espace dans {{
 {: #prereqs1}
 
 * Un {{site.data.keyword.Bluemix_notm}}ID pour la connexion à {{site.data.keyword.Bluemix_notm}}.
-* Un ID utilisateur qui dispose de droits permettant d'utiliser le service {{site.data.keyword.loganalysisshort}} dans un espace. Pour plus d'informations, voir [Sécurité](/docs/services/CloudLogAnalysis/security_ov.html#security_ov).
+* Un ID utilisateur qui dispose de droits permettant d'utiliser le service {{site.data.keyword.loganalysisshort}} dans un espace. Pour plus d'informations, voir [Sécurité](/docs/services/CloudLogAnalysis?topic=cloudloganalysis-security_ov#security_ov).
 * L'interface de ligne de commande {{site.data.keyword.loganalysisshort}} installée dans votre environnement local.
 * Le service {{site.data.keyword.loganalysisshort}} mis à disposition dans un espace de votre compte avec un plan autorisant l'ingestion de journaux.
 
@@ -46,7 +46,7 @@ Effectuez les étapes suivantes depuis une session de terminal dans laquelle l'i
 
 1. Connectez-vous à une région, une organisation et un espace dans {{site.data.keyword.Bluemix_notm}}. 
 
-    Pour plus d'informations, voir [Comment se connecter à {{site.data.keyword.Bluemix_notm}} ?](/docs/services/CloudLogAnalysis/qa/cli_qa.html#login).
+    Pour plus d'informations, voir [Comment se connecter à {{site.data.keyword.Bluemix_notm}} ?](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#login)
     
 2. Exécutez la commande `ibmcloud logging token-get`. 
 
@@ -206,7 +206,7 @@ Procédez comme suit pour configurer mt-logstash-forwarder dans l'environnement 
           </tr>
           <tr>
             <td>LSF_TARGET</td>
-            <td>URL cible. Pour la liste des URL d'ingestion, voir [URL d'ingestion](/docs/services/CloudLogAnalysis/log_ingestion.html#log_ingestion_urls). Par exemple, définissez la valeur **ingest.logging.ng.bluemix.net:9091** pour envoyer des journaux dans la région Sud des Etats-Unis. </td>
+            <td>URL cible. Pour la liste des URL d'ingestion, voir [URL d'ingestion](/docs/services/CloudLogAnalysis?topic=cloudloganalysis-log_ingestion#log_ingestion_urls). Par exemple, définissez la valeur **ingest.logging.ng.bluemix.net:9091** pour envoyer des journaux dans la région Sud des Etats-Unis. </td>
           </tr>
           <tr>
             <td>LSF_TENANT_ID</td>

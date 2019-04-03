@@ -25,7 +25,7 @@ subcollection: cloudloganalysis
 # Protokollinformationen anzeigen
 {: #viewing_log_status1}
 
-Mit dem Befehl [ibmcloud logging log-show](/docs/services/CloudLogAnalysis/reference/log_analysis_cli_cloud.html#status) können Sie Informationen zu den Protokollen abrufen, die in 'Log Collection' erfasst und gespeichert werden. Dabei handelt es sich um Informationen zur Größe, Anzahl der Datensätze, zu den Protokolltypen und darüber, ob die Protokolle für die Analyse in Kibana verfügbar sind oder nicht.
+Mit dem Befehl [ibmcloud logging log-show](/docs/services/CloudLogAnalysis/reference?topic=cloudloganalysis-log_analysis_cli#status) können Sie Informationen zu den Protokollen abrufen, die in 'Log Collection' erfasst und gespeichert werden. Dabei handelt es sich um Informationen zur Größe, Anzahl der Datensätze, zu den Protokolltypen und darüber, ob die Protokolle für die Analyse in Kibana verfügbar sind oder nicht.
 {:shortdesc}
 
 ## Informationen zu Protokollen über einen Zeitraum abrufen
@@ -41,7 +41,7 @@ Führen Sie die folgenden Schritte aus, um Informationen zu Protokollen abzurufe
 
 1. Melden Sie sich bei einer Region, Organisation und bei einem Bereich in {{site.data.keyword.Bluemix_notm}} an. 
 
-    Weitere Informationen finden Sie unter [Wie melde ich mich bei {{site.data.keyword.Bluemix_notm}} an?](/docs/services/CloudLogAnalysis/qa/cli_qa.html#login).
+    Weitere Informationen finden Sie in [Wie melde ich mich bei {{site.data.keyword.Bluemix_notm}} an?](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#login).
     
 2. Führen Sie den folgenden Befehl aus:
 
@@ -77,7 +77,7 @@ Führen Sie die folgenden Schritte aus, um Informationen zu einem Protokolltyp �
 
 1. Melden Sie sich bei einer Region, Organisation und bei einem Bereich in {{site.data.keyword.Bluemix_notm}} an. 
 
-    Weitere Informationen finden Sie unter [Wie melde ich mich bei {{site.data.keyword.Bluemix_notm}} an?](/docs/services/CloudLogAnalysis/qa/cli_qa.html#login).
+    Weitere Informationen finden Sie in [Wie melde ich mich bei {{site.data.keyword.Bluemix_notm}} an?](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#login).
     
 2. Führen Sie den folgenden Befehl aus:
 
@@ -118,11 +118,11 @@ Führen Sie die folgenden Schritte aus, um Kontoinformationen zu Protokollen abz
 
 1. Melden Sie sich bei einer Region, Organisation und bei einem Bereich in {{site.data.keyword.Bluemix_notm}} an. 
 
-    Weitere Informationen finden Sie unter [Wie melde ich mich bei {{site.data.keyword.Bluemix_notm}} an?](/docs/services/CloudLogAnalysis/qa/cli_qa.html#login).
+    Weitere Informationen finden Sie in [Wie melde ich mich bei {{site.data.keyword.Bluemix_notm}} an?](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#login).
 	
 2. Rufen Sie die Konto-ID ab.
 
-    Weitere Informationen finden Sie unter [Wie rufe ich die GUID eines Kontos ab?](/docs/services/CloudLogAnalysis/qa/cli_qa.html#account_guid).
+    Weitere Informationen finden Sie unter [Wie rufe ich die GUID eines Kontos ab?](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#account_guid).
     
 3. Führen Sie den folgenden Befehl aus:
 
@@ -164,11 +164,11 @@ Führen Sie die folgenden Schritte aus, um Kontoinformationen zu Protokollen abz
 
 1. Melden Sie sich bei einer Region, Organisation und bei einem Bereich in {{site.data.keyword.Bluemix_notm}} an. 
 
-    Weitere Informationen finden Sie unter [Wie melde ich mich bei {{site.data.keyword.Bluemix_notm}} an?](/docs/services/CloudLogAnalysis/qa/cli_qa.html#login).
+    Weitere Informationen finden Sie in [Wie melde ich mich bei {{site.data.keyword.Bluemix_notm}} an?](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#login).
 	
 2. Rufen Sie die Konto-ID ab.
 
-    Weitere Informationen finden Sie unter [Wie rufe ich die GUID einer Organisation ab?](/docs/services/CloudLogAnalysis/qa/cli_qa.html#org_guid).
+    Weitere Informationen finden Sie unter [Wie rufe ich die GUID einer Organisation ab?](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#org_guid).
     
 3. Führen Sie den folgenden Befehl aus:
 

@@ -31,20 +31,20 @@ Sie können in 'Log Collection' gespeicherte Protokolle über die {{site.data.ke
 
 Berücksichtigen Sie bei der Verwaltung von Protokollen die folgenden Informationen:
 
-1. Der Benutzer-ID muss eine Richtlinie in {{site.data.keyword.Bluemix_notm}} für {{site.data.keyword.loganalysisshort}} zugewiesen sein, die Berechtigungen zum Verwalten von Protokollen enthält. 
+1. Der Benutzer-ID muss eine Richtlinie in {{site.data.keyword.cloud_notm}} für {{site.data.keyword.loganalysisshort}} zugewiesen sein, die Berechtigungen zum Verwalten von Protokollen enthält. 
 
-    Eine Liste der IAM-Rollen und den entsprechenden Tasks pro Rolle finden Sie unter [IAM-Rollen](/docs/services/CloudLogAnalysis/security_ov.html#iam_roles). 
+    Eine Liste der IAM-Rollen und den entsprechenden Tasks pro Rolle finden Sie unter [IAM-Rollen](/docs/services/CloudLogAnalysis?topic=cloudloganalysis-security_ov#iam_roles). 
 	
-	Weitere Informationen zum Zuweisen einer Richtlinie finden Sie unter [Benutzern eine IAM-Richtlinie über die {{site.data.keyword.Bluemix_notm}}-Benutzerschnittstelle zuweisen](/docs/services/CloudLogAnalysis/security/grant_permissions.html#grant_permissions_ui_account).
+	Weitere Informationen zum Zuweisen einer Richtlinie finden Sie unter [Benutzern eine IAM-Richtlinie über die {{site.data.keyword.cloud_notm}}-Benutzerschnittstelle zuweisen](/docs/services/CloudLogAnalysis/security?topic=cloudloganalysis-grant_permissions#grant_permissions_ui_account).
 	
 2. Diese Funktion ist nur für Servicepläne zur Verfügung, die eine Protokollaufbewahrung zulassen. 
 
-    Weitere Informationen zu Serviceplänen finden Sie unter [Servicepläne](/docs/services/CloudLogAnalysis/log_analysis_ov.html#plans).
+    Weitere Informationen zu Serviceplänen finden Sie unter [Servicepläne](/docs/services/CloudLogAnalysis?topic=cloudloganalysis-log_analysis_ov#plans).
 
 Der {{site.data.keyword.loganalysisshort}}-Service bietet zwei Befehlszeilenschnittstellen, über die Protokolle verwaltet werden können:
 
-* Ein {{site.data.keyword.Bluemix_notm}}-Plug-in für {{site.data.keyword.loganalysisshort}}. Weitere Informationen zu dieser Befehlszeilenschnittstelle finden Sie unter [{{site.data.keyword.loganalysisshort}}-Befehlszeilenschnittstelle ({{site.data.keyword.Bluemix_notm}}-Plug-in)](/docs/services/CloudLogAnalysis/reference/log_analysis_cli_cloud.html#log_analysis_cli).
-* Ein CF-Plug-in für {{site.data.keyword.loganalysisshort}} (veraltet). Weitere Informationen zu dieser Befehlszeilenschnittstelle finden Sie unter [Log Analysis-Befehlszeilenschnittstelle (CF-Plug-in) konfigurieren](/docs/services/CloudLogAnalysis/reference/logging_cli.html#logging_cli).
+* Ein {{site.data.keyword.cloud_notm}}-Plug-in für {{site.data.keyword.loganalysisshort}}. Weitere Informationen zu dieser Befehlszeilenschnittstelle finden Sie unter [{{site.data.keyword.loganalysisshort}}-Befehlszeilenschnittstelle ({{site.data.keyword.cloud_notm}}-Plug-in)](/docs/services/CloudLogAnalysis/reference?topic=cloudloganalysis-log_analysis_cli#log_analysis_cli).
+* Ein CF-Plug-in für {{site.data.keyword.loganalysisshort}} (veraltet). Weitere Informationen zu dieser Befehlszeilenschnittstelle finden Sie unter [Log Analysis-Befehlszeilenschnittstelle (CF-Plug-in) konfigurieren](/docs/services/CloudLogAnalysis/reference?topic=cloudloganalysis-logging_cli#logging_cli).
 
 
 ## Protokollaufbewahrungsrichtlinie konfigurieren
@@ -59,12 +59,12 @@ Sie können die Befehlszeilenschnittstelle von {{site.data.keyword.loganalysissh
 * Sie können die Aufbewahrungsrichtlinie jederzeit ändern.
 * Sie können die Richtlinie inaktivieren, indem Sie ihren Wert auf *-1* einstellen. 
 
-**Hinweis:** Wenn Sie die Protokollaufbewahrungsrichtlinie inaktivieren, müssen Sie die Protokolle in 'Log Collection' selbst verwalten. Sie können den CLI-Befehl [cf logging delete](/docs/services/CloudLogAnalysis/reference/logging_cli.html#delete4) verwenden, um alte Protokolle zu löschen.
+**Hinweis:** Wenn Sie die Protokollaufbewahrungsrichtlinie inaktivieren, müssen Sie die Protokolle in 'Log Collection' selbst verwalten. Sie können den CLI-Befehl [cf logging delete](/docs/services/CloudLogAnalysis/reference?topic=cloudloganalysis-logging_cli#delete4) verwenden, um alte Protokolle zu löschen.
 
 Weitere Informationen finden Sie in den folgenden Abschnitten:
 
-* [Protokollaufbewahrungsrichtlinie mithilfe des {{site.data.keyword.Bluemix_notm}}-Plug-ins anzeigen und konfigurieren](/docs/services/CloudLogAnalysis/how-to/manage-logs/configuring_retention_policy_cloud.html#configuring_retention_policy).
-* [Protokollaufbewahrungsrichtlinie mithilfe des CF-Plug-ins anzeigen und konfigurieren](/docs/services/CloudLogAnalysis/how-to/manage-logs/configuring_retention_policy.html#configuring_retention_policy).
+* [Protokollaufbewahrungsrichtlinie mithilfe des {{site.data.keyword.cloud_notm}}-Plug-ins anzeigen und konfigurieren](/docs/services/CloudLogAnalysis/how-to/manage-logs?topic=cloudloganalysis-configuring_retention_policy#configuring_retention_policy).
+* [Protokollaufbewahrungsrichtlinie mithilfe des CF-Plug-ins anzeigen und konfigurieren](/docs/services/CloudLogAnalysis/how-to/manage-logs?topic=cloudloganalysis-configuring_retention_policy1#configuring_retention_policy).
 
 
 ## Protokolle löschen
@@ -74,11 +74,11 @@ Protokolle, die in 'Log Search' gespeichert sind, werden nach drei Tagen gelösc
 
 Protokolle, die in 'Log Collection' gespeichert sind, werden so lange aufbewahrt, bis Sie entweder eine Aufbewahrungsrichtlinie konfigurieren oder sie manuell löschen. 
 
-* Sie können eine Protokollaufbewahrungsrichtlinie konfigurieren, die die Anzahl Tage definiert, für die Protokolle in 'Log Collection' aufbewahrt werden. Weitere Informationen finden Sie in [Protokollaufbewahrungsrichtlinie mithilfe des {{site.data.keyword.Bluemix_notm}}-Plug-ins anzeigen und konfigurieren](/docs/services/CloudLogAnalysis/how-to/manage-logs/configuring_retention_policy_cloud.html#configuring_retention_policy).
+* Sie können eine Protokollaufbewahrungsrichtlinie konfigurieren, die die Anzahl Tage definiert, für die Protokolle in 'Log Collection' aufbewahrt werden. Weitere Informationen finden Sie in [Protokollaufbewahrungsrichtlinie mithilfe des {{site.data.keyword.cloud_notm}}-Plug-ins anzeigen und konfigurieren](/docs/services/CloudLogAnalysis/how-to/manage-logs?topic=cloudloganalysis-configuring_retention_policy#configuring_retention_policy).
 
-* Sie können die ['Log Collection'-API](https://console.bluemix.net/apidocs/948-ibm-cloud-log-collection-api?&language=node&env_id=ibm%3Ayp%3Aus-south#introduction){: new_window} oder die ['Log Collection'-Befehlszeilenschnittstelle](/docs/services/CloudLogAnalysis/reference/log_analysis_cli_cloud.html#log_analysis_cli){: new_window} verwenden, um Protokolle manuell aus 'Log Collection' zu löschen. 
+* Sie können die ['Log Collection'-API](https://console.bluemix.net/apidocs/948-ibm-cloud-log-collection-api?&language=node&env_id=ibm%3Ayp%3Aus-south#introduction){: new_window} oder die ['Log Collection'-Befehlszeilenschnittstelle](/docs/services/CloudLogAnalysis/reference?topic=cloudloganalysis-log_analysis_cli#log_analysis_cli){: new_window} verwenden, um Protokolle manuell aus 'Log Collection' zu löschen. 
 
-* Sie können die Befehlszeilenschnittstelle verwenden. Weitere Informationen zum manuellen Löschen von Protokollen über die Befehlszeilenschnittstelle finden Sie in [ibmcloud logging log-delete durch Nutzung des {{site.data.keyword.Bluemix_notm}}-Plug-ins](/docs/services/CloudLogAnalysis/how-to/manage-logs/deleting_logs_cloud.html#deleting_logs).
+* Sie können die Befehlszeilenschnittstelle verwenden. Weitere Informationen zum manuellen Löschen von Protokollen über die Befehlszeilenschnittstelle finden Sie in [ibmcloud logging log-delete durch Nutzung des {{site.data.keyword.cloud_notm}}-Plug-ins](/docs/services/CloudLogAnalysis/how-to/manage-logs?topic=cloudloganalysis-deleting_logs#deleting_logs).
     
 
 
@@ -89,8 +89,8 @@ In Kibana können Sie Protokolle für die letzten 3 Tage durchsuchen. Wenn Sie �
 
 Weitere Informationen finden Sie in den folgenden Abschnitten:
 
-* [Protokolle mithilfe des {{site.data.keyword.Bluemix_notm}}-Plug-ins herunterladen](/docs/services/CloudLogAnalysis/how-to/manage-logs/downloading_logs_cloud.html#downloading_logs).
-* [Protokolle mithilfe des CF-Plug-ins herunterladen](/docs/services/CloudLogAnalysis/how-to/manage-logs/downloading_logs.html#downloading_logs1).
+* [Protokolle mithilfe des {{site.data.keyword.cloud_notm}}-Plug-ins herunterladen](/docs/services/CloudLogAnalysis/how-to/manage-logs?topic=cloudloganalysis-downloading_logs#downloading_logs).
+* [Protokolle mithilfe des CF-Plug-ins herunterladen](/docs/services/CloudLogAnalysis/how-to/manage-logs?topic=cloudloganalysis-downloading_logs1#downloading_logs1).
 
 
 
@@ -99,23 +99,23 @@ Weitere Informationen finden Sie in den folgenden Abschnitten:
 
 Allgemeine Informationen zu Ihren Protokollen können Sie über die Befehle `ibmcloud logging log-show` oder `cf logging status` abrufen. Weitere Informationen finden Sie in den folgenden Abschnitten:
 
-* [Protokollinformationen mithilfe des {{site.data.keyword.Bluemix_notm}}-Plug-ins anzeigen](/docs/services/CloudLogAnalysis/how-to/manage-logs/viewing_log_information_cloud.html#viewing_log_status1)
-* [Protokollinformationen mithilfe des CF-Plug-ins anzeigen](/docs/services/CloudLogAnalysis/how-to/manage-logs/viewing_log_information.html#viewing_log_status1).
+* [Protokollinformationen mithilfe des {{site.data.keyword.cloud_notm}}-Plug-ins anzeigen](/docs/services/CloudLogAnalysis/how-to/manage-logs?topic=cloudloganalysis-viewing_log_status1#viewing_log_status1)
+* [Protokollinformationen mithilfe des CF-Plug-ins anzeigen](/docs/services/CloudLogAnalysis/how-to/manage-logs?topic=cloudloganalysis-viewing_log_status#viewing_log_status1).
 
-Zur Kostenkontrolle können Sie unter anderem die Größe der Protokolle Ihrer Apps über einen bestimmten Zeitraum überwachen. Sie können sich beispielsweise über die Größe der einzelnen Protokolltypen für einen {{site.data.keyword.Bluemix_notm}}-Bereich innerhalb einer Woche informieren, um zu ermitteln, ob eine App oder ein Service mehr Protokolle erstellt als erwartet. Um die Größe Ihrer Protokolle zu überprüfen, können Sie die Befehle `ibmcloud logging log-show` oder `cf logging status` verwenden.
+Zur Kostenkontrolle können Sie unter anderem die Größe der Protokolle Ihrer Apps über einen bestimmten Zeitraum überwachen. Sie können sich beispielsweise über die Größe der einzelnen Protokolltypen für einen {{site.data.keyword.cloud_notm}}-Bereich innerhalb einer Woche informieren, um zu ermitteln, ob eine App oder ein Service mehr Protokolle erstellt als erwartet. Um die Größe Ihrer Protokolle zu überprüfen, können Sie die Befehle `ibmcloud logging log-show` oder `cf logging status` verwenden.
 
 Sie können Informationen zu Protokollen anzeigen, die in einer Bereichsdomäne, einer Organisationsdomäne oder ein Kontodomäne gespeichert sind.
 
 
 
-## {{site.data.keyword.loganalysisshort_notm}}-Befehlszeilenschnittstelle ({{site.data.keyword.Bluemix_notm}}-Plug-in) installieren
+## {{site.data.keyword.loganalysisshort_notm}}-Befehlszeilenschnittstelle ({{site.data.keyword.cloud_notm}}-Plug-in) installieren
 {: #install_cli2}
 
-Informationen zur Installation der Befehlszeilenschnittstelle (CLI) finden Sie unter [Befehlszeilenschnittstelle für Protokollierung installieren](/docs/services/CloudLogAnalysis/how-to/manage-logs/config_log_collection_cli_cloud.html#config_log_collection_cli).
+Informationen zur Installation der Befehlszeilenschnittstelle (CLI) finden Sie unter [Befehlszeilenschnittstelle für Protokollierung installieren](/docs/services/CloudLogAnalysis/how-to/manage-logs?topic=cloudloganalysis-config_log_collection_cli#config_log_collection_cli).
 
 Um die Version der Befehlszeilenschnittstelle zu prüfen, führen Sie den Befehl `ibmcloud plugin list` aus.
 
-Hilfeinformationen zur Befehlsausführung finden Sie unter [Befehlszeilenhilfe für die Befehlsausführung abrufen](/docs/services/CloudLogAnalysis/how-to/manage-logs/config_log_collection_cli_cloud.html#command_cli_help).
+Hilfeinformationen zur Befehlsausführung finden Sie unter [Befehlszeilenhilfe für die Befehlsausführung abrufen](/docs/services/CloudLogAnalysis/how-to/manage-logs?topic=cloudloganalysis-config_log_collection_cli#command_cli_help).
 
 
 ## Protokollierungsendpunkte
@@ -150,7 +150,7 @@ In der folgenden Tabelle sind die Protokollierungs-URLs nach Region aufgeführt:
 ## Benutzerrollen für die Verwaltung von Protokollen
 {: #roles1}
 
-In {{site.data.keyword.Bluemix_notm}} können Sie Benutzern eine oder mehrere Rollen zuweisen. Diese Rollen definieren, welche Tasks für diesen Benutzer für die Arbeit mit dem {{site.data.keyword.loganalysisshort}}-Service aktiviert sind. 
+In {{site.data.keyword.cloud_notm}} können Sie Benutzern eine oder mehrere Rollen zuweisen. Diese Rollen definieren, welche Tasks für diesen Benutzer für die Arbeit mit dem {{site.data.keyword.loganalysisshort}}-Service aktiviert sind. 
 
 In der folgenden Tabelle sind die Rollen aufgeführt, die einem Benutzer für die Verwaltung von Protokollen zugewiesen sein müssen:
 

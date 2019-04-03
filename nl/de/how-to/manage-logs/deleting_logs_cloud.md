@@ -25,7 +25,7 @@ subcollection: cloudloganalysis
 # Protokolle löschen
 {: #deleting_logs}
 
-Mit dem Befehl [ibmcloud logging log-delete](/docs/services/CloudLogAnalysis/reference/log_analysis_cli_cloud.html#delete) können Sie Protokolle aus 'Log Collection' löschen. 
+Mit dem Befehl [ibmcloud logging log-delete](/docs/services/CloudLogAnalysis/reference?topic=cloudloganalysis-log_analysis_cli#delete) können Sie Protokolle aus 'Log Collection' löschen. 
 {:shortdesc}
 
 * Sie können Protokolle für einen bestimmten Zeitraum löschen.
@@ -40,7 +40,7 @@ Führen Sie die folgenden Schritte aus, um alle Protokolle zu löschen, die in e
 
 1. Melden Sie sich bei einer Region, Organisation und bei einem Bereich in {{site.data.keyword.Bluemix_notm}} an. 
 
-    Weitere Informationen finden Sie unter [Wie melde ich mich bei {{site.data.keyword.Bluemix_notm}} an?](/docs/services/CloudLogAnalysis/qa/cli_qa.html#login).
+    Weitere Informationen finden Sie in [Wie melde ich mich bei {{site.data.keyword.Bluemix_notm}} an?](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#login).
     
 2. Führen Sie den folgenden Befehl aus, um die in 'Log Collection' verfügbaren Protokolle anzuzeigen.
 
@@ -89,7 +89,7 @@ Führen Sie die folgenden Schritte aus, um Protokolle nach Protokolltyp zu lösc
 
 1. Melden Sie sich bei einer Region, Organisation und bei einem Bereich in {{site.data.keyword.Bluemix_notm}} an. 
 
-    Weitere Informationen finden Sie unter [Wie melde ich mich bei {{site.data.keyword.Bluemix_notm}} an?](/docs/services/CloudLogAnalysis/qa/cli_qa.html#login).
+    Weitere Informationen finden Sie in [Wie melde ich mich bei {{site.data.keyword.Bluemix_notm}} an?](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#login).
     
 2. Führen Sie den folgenden Befehl aus, um die in 'Log Collection' verfügbaren Protokolle anzuzeigen.
 
@@ -140,11 +140,11 @@ Führen Sie die folgenden Schritte aus:
 
 1. Melden Sie sich bei einer Region, Organisation und bei einem Bereich in {{site.data.keyword.Bluemix_notm}} an. 
 
-    Weitere Informationen finden Sie unter [Wie melde ich mich bei {{site.data.keyword.Bluemix_notm}} an?](/docs/services/CloudLogAnalysis/qa/cli_qa.html#login).
+    Weitere Informationen finden Sie in [Wie melde ich mich bei {{site.data.keyword.Bluemix_notm}} an?](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#login).
 	
 2. Rufen Sie die Konto-ID ab.
 
-    Weitere Informationen finden Sie unter [Wie rufe ich die GUID eines Kontos ab?](/docs/services/CloudLogAnalysis/qa/cli_qa.html#account_guid).
+    Weitere Informationen finden Sie unter [Wie rufe ich die GUID eines Kontos ab?](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#account_guid).
     
 3. Führen Sie den folgenden Befehl aus, um die in 'Log Collection' verfügbaren Protokolle auf der Kontoebene anzuzeigen.
 

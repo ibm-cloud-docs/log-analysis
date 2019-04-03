@@ -34,7 +34,7 @@ subcollection: cloudloganalysis
 {: #prereqs1}
 
 * {{site.data.keyword.Bluemix_notm}}에 로그인할 {{site.data.keyword.Bluemix_notm}} ID.
-* 영역에서 {{site.data.keyword.loganalysisshort}} 서비스에 대한 작업을 수행할 수 있는 권한이 있는 사용자 ID. 자세한 정보는 [보안](/docs/services/CloudLogAnalysis/security_ov.html#security_ov)을 참조하십시오.
+* 영역에서 {{site.data.keyword.loganalysisshort}} 서비스에 대한 작업을 수행할 수 있는 권한이 있는 사용자 ID. 자세한 정보는 [보안](/docs/services/CloudLogAnalysis?topic=cloudloganalysis-security_ov#security_ov)을 참조하십시오.
 * 로컬 환경에 설치된 {{site.data.keyword.loganalysisshort}} CLI.
 * 로그 수집을 허용하는 플랜과 함께 계정의 영역에 프로비저닝된 {{site.data.keyword.loganalysisshort}} 서비스.
 
@@ -46,7 +46,7 @@ subcollection: cloudloganalysis
 
 1. {{site.data.keyword.Bluemix_notm}}의 지역, 조직 및 영역에 로그인하십시오. 
 
-    자세한 정보는 [{{site.data.keyword.Bluemix_notm}}에 로그인하는 방법](/docs/services/CloudLogAnalysis/qa/cli_qa.html#login)을 참조하십시오.
+    자세한 정보는 [{{site.data.keyword.Bluemix_notm}}에 로그인하는 방법](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#login)을 참조하십시오.
     
 2. `ibmcloud logging token-get` 명령을 실행하십시오. 
 
@@ -206,7 +206,7 @@ subcollection: cloudloganalysis
           </tr>
           <tr>
             <td>LSF_TARGET</td>
-            <td>대상 URL입니다. 수집 URL 목록을 가져오려면 [수집 URL](/docs/services/CloudLogAnalysis/log_ingestion.html#log_ingestion_urls)을 참조하십시오. 예를 들어 미국 남부 지역의 로그를 보내려면 값을 **ingest.logging.ng.bluemix.net:9091**로 설정하십시오. </td>
+            <td>대상 URL입니다. 수집 URL 목록을 가져오려면 [수집 URL](/docs/services/CloudLogAnalysis?topic=cloudloganalysis-log_ingestion#log_ingestion_urls)을 참조하십시오. 예를 들어 미국 남부 지역의 로그를 보내려면 값을 **ingest.logging.ng.bluemix.net:9091**로 설정하십시오. </td>
           </tr>
           <tr>
             <td>LSF_TENANT_ID</td>

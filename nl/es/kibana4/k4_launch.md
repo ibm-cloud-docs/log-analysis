@@ -46,7 +46,7 @@ En la siguiente tabla se muestra una lista de los recursos y métodos de navegac
     <td>Sí</td>
   <tr>  
   <tr>
-    <td>Contenedor desplegado en un clúster Kubernetes</td>
+    <td>Contenedor desplegado en un clúster de Kubernetes</td>
     <td>Sí</td>
     <td>Sí</td>
   <tr>  

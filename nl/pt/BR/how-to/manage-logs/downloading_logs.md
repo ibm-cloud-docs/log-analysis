@@ -124,7 +124,7 @@ ibmcloud cf logging download -o Log_File_Name Session_ID
 ```
 {: codeblock}
 
-em que
+Em que
 
 * Log_File_Name é o nome do arquivo de saída.
 * Session_ID é o GUID da sessão. Você obtém esse valor na etapa anterior.

@@ -140,7 +140,7 @@ subcollection: cloudloganalysis
 
 **注**：服务套餐中包含的功能仅在您向 {{site.data.keyword.loganalysisshort}} 服务供应该套餐的空间中启用。
 
-可以通过 {{site.data.keyword.Bluemix_notm}} UI 或通过命令行来更改套餐。您可以随时升级或降级套餐。有关服务套餐升级的更多信息，请参阅[更改套餐](/docs/services/CloudLogAnalysis/how-to/change_plan.html#change_plan)。 
+可以通过 {{site.data.keyword.Bluemix_notm}} UI 或通过命令行来更改套餐。您可以随时升级或降级套餐。有关服务套餐升级的更多信息，请参阅[更改套餐](/docs/services/CloudLogAnalysis/how-to?topic=cloudloganalysis-change_plan#change_plan)。 
 
 下表概括了可用的套餐：
 

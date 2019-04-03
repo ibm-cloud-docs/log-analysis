@@ -83,7 +83,7 @@ Kibana 显示的日志信息包括在您登录到的组织空间内部署的所�
 
 缺省情况下，**发现**页面会装入所选的缺省索引模式，并将时间过滤器设置为最近 15 分钟。 
 
-如果“发现”页面未显示任何日志条目，请调整时间选取器。有关更多信息，请参阅[设置时间过滤器](/docs/services/CloudLogAnalysis/kibana/filter_logs.html#set_time_filter)。
+如果“发现”页面未显示任何日志条目，请调整时间选取器。有关更多信息，请参阅[设置时间过滤器](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-filter_logs#set_time_filter)。
 
 	
 	
@@ -98,7 +98,7 @@ Kibana 显示的日志信息包括在您登录到的组织空间内部署的所�
 
 1. 打开 Web 浏览器并启动 Kibana。然后，登录到 Kibana 用户界面。
 
-    要查看每个区域的 URL 列表，请参阅[用于启动 Kibana 的 URL](/docs/services/CloudLogAnalysis/kibana/analyzing_logs_Kibana.html#urls_kibana)。
+    要查看每个区域的 URL 列表，请参阅[用于启动 Kibana 的 URL](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-analyzing_logs_Kibana#urls_kibana)。
     
     这将打开 Kibana 中的“发现”页面。
 	
@@ -115,7 +115,7 @@ Kibana 显示的日志信息包括在您登录到的组织空间内部署的所�
 	
 	    其中，*Space_ID* 是要查看并分析其中日志数据的空间的 GUID。 
 	
-如果“发现”页面未显示任何日志条目，请调整时间选取器。有关更多信息，请参阅[设置时间过滤器](/docs/services/CloudLogAnalysis/kibana/filter_logs.html#set_time_filter)。
+如果“发现”页面未显示任何日志条目，请调整时间选取器。有关更多信息，请参阅[设置时间过滤器](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-filter_logs#set_time_filter)。
 
 
 	
@@ -142,7 +142,7 @@ Kibana 显示的日志信息包括在您登录到的组织空间内部署的所�
 
     缺省情况下，**发现**页面会装入所选的缺省索引模式，并将时间过滤器设置为最近 15 分钟。搜索查询会设置为与 CF 应用程序的所有条目相匹配。
 
-    如果“发现”页面未显示任何日志条目，请调整时间选取器。有关更多信息，请参阅[设置时间过滤器](/docs/services/CloudLogAnalysis/kibana/filter_logs.html#set_time_filter)。
+    如果“发现”页面未显示任何日志条目，请调整时间选取器。有关更多信息，请参阅[设置时间过滤器](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-filter_logs#set_time_filter)。
 
 	
 	
@@ -191,7 +191,7 @@ Kibana 显示的日志信息包括在您登录到的组织空间内部署的所�
 
     缺省情况下，**发现**页面会装入所选的缺省索引模式，并将时间过滤器设置为最近 30 秒。搜索查询会设置为与 Docker 容器的所有条目相匹配。
 
-    如果“发现”页面未显示任何日志条目，请调整时间选取器。有关更多信息，请参阅[设置时间过滤器](/docs/services/CloudLogAnalysis/kibana/filter_logs.html#set_time_filter)。
+    如果“发现”页面未显示任何日志条目，请调整时间选取器。有关更多信息，请参阅[设置时间过滤器](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-filter_logs#set_time_filter)。
 
 	
 

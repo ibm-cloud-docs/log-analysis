@@ -83,7 +83,7 @@ Completa la seguente procedura per avviare Kibana dal dashboard del servizio {{s
 
 Per impostazione predefinita, la pagina **Rileva** viene caricata con il modello di indice predefinito selezionato al momento dell'impostazione del filtro negli ultimi 15 minuti. 
 
-Se la pagina Rileva non mostra alcuna voce di log, modifica il selezionatore di tempo. Per maggiori informazioni, vedi [Configurazione di un filtro temporale](/docs/services/CloudLogAnalysis/kibana/filter_logs.html#set_time_filter).
+Se la pagina Rileva non mostra alcuna voce di log, modifica il selezionatore di tempo. Per maggiori informazioni, vedi [Configurazione di un filtro temporale](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-filter_logs#set_time_filter).
 
 	
 	
@@ -98,7 +98,7 @@ Completa la seguente procedura per avviare Kibana da un browser:
 
 1. Apri un browser Web e avvia Kibana. Accedi quindi all'interfaccia utente Kibana.
 
-    Per visualizzare l'elenco di URL per ogni regione, vedi [URL per avviare Kibana](/docs/services/CloudLogAnalysis/kibana/analyzing_logs_Kibana.html#urls_kibana).
+    Per visualizzare l'elenco di URL per ogni regione, vedi [URL per avviare Kibana](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-analyzing_logs_Kibana#urls_kibana).
     
     Viene aperta la pagina Rileva in Kibana.
 	
@@ -115,7 +115,7 @@ Completa la seguente procedura per avviare Kibana da un browser:
 	
 	    dove *Space_ID* è il GUID dello spazio in cui desideri visualizzare e analizzare i dati di log. 
 	
-Se la pagina Rileva non mostra alcuna voce di log, modifica il selezionatore di tempo. Per maggiori informazioni, vedi [Configurazione di un filtro temporale](/docs/services/CloudLogAnalysis/kibana/filter_logs.html#set_time_filter).
+Se la pagina Rileva non mostra alcuna voce di log, modifica il selezionatore di tempo. Per maggiori informazioni, vedi [Configurazione di un filtro temporale](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-filter_logs#set_time_filter).
 
 
 	
@@ -143,7 +143,7 @@ Per visualizzare i log di un'applicazione Cloud Foundry in Kibana, completa la s
 
     Per impostazione predefinita, la pagina **Rileva** viene caricata con il modello di indice predefinito selezionato al momento dell'impostazione del filtro negli ultimi 15 minuti. La query di ricerca è impostata per corrispondere a tutte le voci per l'applicazione CF.
 
-    Se la pagina Rileva non mostra alcuna voce di log, modifica il selezionatore di tempo. Per maggiori informazioni, vedi [Configurazione di un filtro temporale](/docs/services/CloudLogAnalysis/kibana/filter_logs.html#set_time_filter).
+    Se la pagina Rileva non mostra alcuna voce di log, modifica il selezionatore di tempo. Per maggiori informazioni, vedi [Configurazione di un filtro temporale](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-filter_logs#set_time_filter).
 
 	
 	
@@ -192,7 +192,7 @@ Per visualizzare i log di un contenitore Docker in Kibana, completa la seguente 
 
     Per impostazione predefinita, la pagina **Rileva** viene caricata con il modello di indice predefinito selezionato al momento dell'impostazione del filtro negli ultimi 30 secondi. La query di ricerca è impostata per corrispondere a tutte le voci del contenitore Docker.
 
-    Se la pagina Rileva non mostra alcuna voce di log, modifica il selezionatore di tempo. Per maggiori informazioni, vedi [Configurazione di un filtro temporale](/docs/services/CloudLogAnalysis/kibana/filter_logs.html#set_time_filter).
+    Se la pagina Rileva non mostra alcuna voce di log, modifica il selezionatore di tempo. Per maggiori informazioni, vedi [Configurazione di un filtro temporale](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-filter_logs#set_time_filter).
 
 	
 

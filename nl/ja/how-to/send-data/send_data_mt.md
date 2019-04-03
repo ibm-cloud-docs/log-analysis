@@ -34,7 +34,7 @@ subcollection: cloudloganalysis
 {: #prereqs1}
 
 * {{site.data.keyword.Bluemix_notm}} にログインするための {{site.data.keyword.Bluemix_notm}} ID。
-* スペース内で {{site.data.keyword.loganalysisshort}} サービスと連携するための許可のあるユーザー ID。 詳しくは、『[セキュリティー](/docs/services/CloudLogAnalysis/security_ov.html#security_ov)』を参照してください。
+* スペース内で {{site.data.keyword.loganalysisshort}} サービスと連携するための許可のあるユーザー ID。 詳しくは、『[セキュリティー](/docs/services/CloudLogAnalysis?topic=cloudloganalysis-security_ov#security_ov)』を参照してください。
 * ローカル環境にインストールされた {{site.data.keyword.loganalysisshort}} CLI。
 * ログ取り込みを許可するプランを持つアカウント内のスペースにプロビジョンされた {{site.data.keyword.loganalysisshort}} サービス。
 
@@ -46,7 +46,7 @@ subcollection: cloudloganalysis
 
 1. {{site.data.keyword.Bluemix_notm}} で、地域、組織、およびスペースにログインします。 
 
-    詳しくは、『[{{site.data.keyword.Bluemix_notm}} にログインするにはどうすればよいですか](/docs/services/CloudLogAnalysis/qa/cli_qa.html#login)』を参照してください。
+    詳しくは、『[{{site.data.keyword.Bluemix_notm}} にログインするにはどうすればよいですか](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#login)』を参照してください。
     
 2. `ibmcloud logging token-get` コマンドを実行します。 
 
@@ -206,7 +206,7 @@ subcollection: cloudloganalysis
           </tr>
           <tr>
             <td>LSF_TARGET</td>
-            <td>ターゲット URL。 取り込み URL のリストを取得するには、『[取り込み URL](/docs/services/CloudLogAnalysis/log_ingestion.html#log_ingestion_urls)』を参照してください。 例えば、米国南部地域のログを送信するには、値を **ingest.logging.ng.bluemix.net:9091** に設定します。 </td>
+            <td>ターゲット URL。 取り込み URL のリストを取得するには、『[取り込み URL](/docs/services/CloudLogAnalysis?topic=cloudloganalysis-log_ingestion#log_ingestion_urls)』を参照してください。 例えば、米国南部地域のログを送信するには、値を **ingest.logging.ng.bluemix.net:9091** に設定します。 </td>
           </tr>
           <tr>
             <td>LSF_TENANT_ID</td>

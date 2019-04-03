@@ -74,6 +74,6 @@ subcollection: cloudloganalysis
 
 依預設，可供分析使用的日誌包括過去 15 分鐘的資料。
 
-**提示：**若要分析自訂時段的資料，請參閱[使用 Kibana 執行進階日誌分析](/docs/services/CloudLogAnalysis/kibana/analyzing_logs_Kibana.html#analyzing_logs_Kibana)。 
+**提示：**若要分析自訂時段的資料，請參閱[使用 Kibana 執行進階日誌分析](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-analyzing_logs_Kibana#analyzing_logs_Kibana)。 
 
 

@@ -83,7 +83,7 @@ Kibana に表示されるログ情報には、ログインしている組織の�
 
 デフォルトでは、**「Discover」**ページは、デフォルトの索引パターンが選択され、時間フィルターが過去 15 分に設定された状態でロードされます。 
 
-「Discover」ページでログ項目が表示されない場合は、時間ピッカーを調整します。 詳しくは、『[時間フィルターの設定](/docs/services/CloudLogAnalysis/kibana/filter_logs.html#set_time_filter)』を参照してください。
+「Discover」ページでログ項目が表示されない場合は、時間ピッカーを調整します。 詳しくは、『[時間フィルターの設定](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-filter_logs#set_time_filter)』を参照してください。
 
 	
 	
@@ -98,7 +98,7 @@ Kibana に表示されるログ情報には、ログインしている組織の�
 
 1. Web ブラウザーを開き、Kibana を起動します。 その後、Kibana ユーザー・インターフェースにログインします。
 
-    地域別の URL のリストを表示するには、『[Kibana を起動するための URL](/docs/services/CloudLogAnalysis/kibana/analyzing_logs_Kibana.html#urls_kibana)』を参照してください。
+    地域別の URL のリストを表示するには、『[Kibana を起動するための URL](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-analyzing_logs_Kibana#urls_kibana)』を参照してください。
     
     Kibana の「Discover」ページが開きます。
 	
@@ -115,7 +115,7 @@ Kibana に表示されるログ情報には、ログインしている組織の�
 	
 	    ここで、*Space_ID* は、ログ・データの表示および分析を行いたいスペースの GUID です。 
 	
-「Discover」ページでログ項目が表示されない場合は、時間ピッカーを調整します。 詳しくは、『[時間フィルターの設定](/docs/services/CloudLogAnalysis/kibana/filter_logs.html#set_time_filter)』を参照してください。
+「Discover」ページでログ項目が表示されない場合は、時間ピッカーを調整します。 詳しくは、『[時間フィルターの設定](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-filter_logs#set_time_filter)』を参照してください。
 
 
 	
@@ -143,7 +143,7 @@ Cloud Foundry アプリケーションのログを Kibana で表示するには�
 
     デフォルトでは、**「Discover」**ページは、デフォルトの索引パターンが選択され、時間フィルターが過去 15 分に設定された状態でロードされます。 検索照会は、CF アプリのすべての項目に突き合わせるように設定されます。
 
-    「Discover」ページでログ項目が表示されない場合は、時間ピッカーを調整します。 詳しくは、『[時間フィルターの設定](/docs/services/CloudLogAnalysis/kibana/filter_logs.html#set_time_filter)』を参照してください。
+    「Discover」ページでログ項目が表示されない場合は、時間ピッカーを調整します。 詳しくは、『[時間フィルターの設定](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-filter_logs#set_time_filter)』を参照してください。
 
 	
 	
@@ -192,7 +192,7 @@ Docker コンテナーのログを Kibana で表示するには、以下のス�
 
     デフォルトでは、**「Discover」**ページは、デフォルトの索引パターンが選択され、時間フィルターが過去 30 秒に設定された状態でロードされます。 検索照会は、Docker コンテナーのすべての項目に突き合わせるように設定されます。
 
-    「Discover」ページでログ項目が表示されない場合は、時間ピッカーを調整します。 詳しくは、『[時間フィルターの設定](/docs/services/CloudLogAnalysis/kibana/filter_logs.html#set_time_filter)』を参照してください。
+    「Discover」ページでログ項目が表示されない場合は、時間ピッカーを調整します。 詳しくは、『[時間フィルターの設定](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-filter_logs#set_time_filter)』を参照してください。
 
 	
 

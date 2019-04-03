@@ -93,7 +93,7 @@ subcollection: cloudloganalysis
 {: caption="表 3. Docker 容器的欄位" caption-side="top"}
 
 
-## Message Hub 的 Kibana 日誌格式
+## {{site.data.keyword.messagehub}} 的 Kibana 日誌格式
 {: #kibana_log_format_messagehub}
 
 您可以配置 Kibana，以在*探索* 頁面顯示每一個日誌項目的下列欄位：
@@ -109,7 +109,7 @@ subcollection: cloudloganalysis
 |\_type |日誌類型；例如 *syslog*。|
 |loglevel |所記載事件的嚴重性，例如 **Info**。|
 |module |此欄位設為 **MessageHub**。|
-{: caption="表 4. Message Hub 事件的欄位" caption-side="top"}
+{: caption="表 4. {{site.data.keyword.messagehub}} 事件的欄位" caption-side="top"}
 
 日誌項目的範例：
 

@@ -51,12 +51,12 @@ subcollection: cloudloganalysis
 
 |태스크 |설명 | 
 |------|-------------|
-|[필드 열 추가](/docs/services/CloudLogAnalysis/kibana4/logging_kibana_analize_logs_interactively.html#kibana_discover_add_fields_to_table) |전체 메시지 대신에 분석에 필요한 특정 데이터를 보기 위한 필드를 추가합니다. |
-|[필드 열 재배열](/docs/services/CloudLogAnalysis/kibana4/logging_kibana_analize_logs_interactively.html#kibana_discover_rearrange_fields_in_table) |표에서 필드의 위치를 원하는 위치로 이동합니다. |
-|[항목 보기](/docs/services/CloudLogAnalysis/kibana4/logging_kibana_analize_logs_interactively.html#kibana_discover_view_entry_in_table) |필드에 의해 구문 분석된 항목의 세부사항을 보거나 JSON으로 보기 위해 표에서 항목을 펼칩니다. |
-|[필드 열 제거](/docs/services/CloudLogAnalysis/kibana4/logging_kibana_analize_logs_interactively.html#kibana_discover_remove_fields_from_table) |필드가 분석을 위해 보기에서 필요하지 않은 경우 해당 필드를 제거합니다. |
-|[색인화된 필드의 값으로 항목 순서 지정](/docs/services/CloudLogAnalysis/kibana4/logging_kibana_analize_logs_interactively.html#kibana_discover_sort_by_table) |분석이 더 용이하도록 항목을 다시 정렬합니다. |
-|[자동으로 데이터 새로 고치기](/docs/services/CloudLogAnalysis/kibana4/logging_kibana_analize_logs_interactively.html#kibana_discover_view_refresh_interval) |표에 표시되는 데이터를 최신 항목으로 새로 고칩니다. 기본적으로 새로 고치기는 **OFF**입니다. |
+|[필드 열 추가](/docs/services/CloudLogAnalysis/kibana4?topic=cloudloganalysis-kibana_analize_logs_interactively#kibana_discover_add_fields_to_table) |전체 메시지 대신에 분석에 필요한 특정 데이터를 보기 위한 필드를 추가합니다. |
+|[필드 열 재배열](/docs/services/CloudLogAnalysis/kibana4?topic=cloudloganalysis-kibana_analize_logs_interactively#kibana_discover_rearrange_fields_in_table) |표에서 필드의 위치를 원하는 위치로 이동합니다. |
+|[항목 보기](/docs/services/CloudLogAnalysis/kibana4?topic=cloudloganalysis-kibana_analize_logs_interactively#kibana_discover_view_entry_in_table) |필드에 의해 구문 분석된 항목의 세부사항을 보거나 JSON으로 보기 위해 표에서 항목을 펼칩니다. |
+|[필드 열 제거](/docs/services/CloudLogAnalysis/kibana4?topic=cloudloganalysis-kibana_analize_logs_interactively#kibana_discover_remove_fields_from_table) |필드가 분석을 위해 보기에서 필요하지 않은 경우 해당 필드를 제거합니다. |
+|[색인화된 필드의 값으로 항목 순서 지정](/docs/services/CloudLogAnalysis/kibana4?topic=cloudloganalysis-kibana_analize_logs_interactively#kibana_discover_sort_by_table) |분석이 더 용이하도록 항목을 다시 정렬합니다. |
+|[자동으로 데이터 새로 고치기](/docs/services/CloudLogAnalysis/kibana4?topic=cloudloganalysis-kibana_analize_logs_interactively#kibana_discover_view_refresh_interval) |표에 표시되는 데이터를 최신 항목으로 새로 고칩니다. 기본적으로 새로 고치기는 **OFF**입니다. |
 {: caption="표 2. 표 사용자 정의 태스크" caption-side="top"}
 
 <br>
@@ -97,7 +97,7 @@ subcollection: cloudloganalysis
 * 필드별 통계를 볼 수 있습니다. 
 * 구성한 `@timestamp`별로 히스토그램에서 통계를 볼 수 있습니다.
 
-자세한 정보는 [필드 데이터 통계 보기](/docs/services/CloudLogAnalysis/kibana4/logging_kibana_analize_logs_interactively.html#kibana_discover_view_fields_stats)를 참조하십시오.
+자세한 정보는 [필드 데이터 통계 보기](/docs/services/CloudLogAnalysis/kibana4?topic=cloudloganalysis-kibana_analize_logs_interactively#kibana_discover_view_fields_stats)를 참조하십시오.
 
 **참고:** 표와 히스토그램에 표시된 데이터는 정적입니다. 최신 항목을 계속 보려면 새로 고치기 간격을 설정해야 합니다. 
 

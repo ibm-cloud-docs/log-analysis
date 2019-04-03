@@ -34,7 +34,7 @@ subcollection: cloudloganalysis
 
 **メッセージの説明**
 
-{{site.data.keyword.loganalysisfull}} インスタンス {インスタンス GUID} について Bluemix スペース {スペース GUID} に割り振られた毎日の割り当て量に達しました。 Log Searchストレージについての現在の毎日の割り当ては 500MB です。これは 3 日間Log Searchストレージに保存され、この間 Kibana での検索が可能です。 1 日により多くのデータをLog Searchストレージに保管して、すべてのログをLog Collection ストレージに保存できるようにプランをアップグレードするには、このスペースの {{site.data.keyword.loganalysisshort}} サービス・プランをアップグレードしてください。 サービス・プランとプランのアップグレード方法について詳しくは、『[プラン](/docs/services/CloudLogAnalysis/log_analysis_ov.html#plans)』を参照してください。
+{{site.data.keyword.loganalysisfull}} インスタンス {インスタンス GUID} について Bluemix スペース {スペース GUID} に割り振られた毎日の割り当て量に達しました。 Log Searchストレージについての現在の毎日の割り当ては 500MB です。これは 3 日間Log Searchストレージに保存され、この間 Kibana での検索が可能です。 1 日により多くのデータをLog Searchストレージに保管して、すべてのログをLog Collection ストレージに保存できるようにプランをアップグレードするには、このスペースの {{site.data.keyword.loganalysisshort}} サービス・プランをアップグレードしてください。 サービス・プランとプランのアップグレード方法について詳しくは、『[プラン](/docs/services/CloudLogAnalysis?topic=cloudloganalysis-log_analysis_ov#plans)』を参照してください。
 
 
 **メッセージの説明** 
@@ -43,7 +43,7 @@ subcollection: cloudloganalysis
 
 **リカバリー**
 
-1 日により多くのデータをLog Searchストレージに保管して、すべてのログをLog Collection ストレージに保存できるようにプランをアップグレードするには、このスペースの {{site.data.keyword.loganalysisshort}} サービス・プランをアップグレードしてください。 サービス・プランとプランのアップグレード方法について詳しくは、『[プラン](/docs/services/CloudLogAnalysis/log_analysis_ov.html#plans)』を参照してください。
+1 日により多くのデータをLog Searchストレージに保管して、すべてのログをLog Collection ストレージに保存できるようにプランをアップグレードするには、このスペースの {{site.data.keyword.loganalysisshort}} サービス・プランをアップグレードしてください。 サービス・プランとプランのアップグレード方法について詳しくは、『[プラン](/docs/services/CloudLogAnalysis?topic=cloudloganalysis-log_analysis_ov#plans)』を参照してください。
 
 
 ## BXNLG020002W 
@@ -52,7 +52,7 @@ subcollection: cloudloganalysis
 
 **メッセージの説明**
 
-{{site.data.keyword.loganalysisfull}} インスタンス {インスタンス GUID} について Bluemix スペース {スペース GUID} に割り振られた毎日の割り当て量に達しました。  Log Searchストレージについての現在の毎日の割り当ては XXX です。これは 3 日間保存され、この間 Kibana での検索が可能です。 これは、Log Collection ストレージでのログ保存ポリシーには影響を与えません。 1 日により多くのデータをLog Searchストレージに保管できるようにプランをアップグレードするには、このスペースの {{site.data.keyword.loganalysisshort}} サービス・プランをアップグレードしてください。 サービス・プランとプランのアップグレード方法について詳しくは、『[プラン](/docs/services/CloudLogAnalysis/log_analysis_ov.html#plans)』を参照してください。
+{{site.data.keyword.loganalysisfull}} インスタンス {インスタンス GUID} について Bluemix スペース {スペース GUID} に割り振られた毎日の割り当て量に達しました。  Log Searchストレージについての現在の毎日の割り当ては XXX です。これは 3 日間保存され、この間 Kibana での検索が可能です。 これは、Log Collection ストレージでのログ保存ポリシーには影響を与えません。 1 日により多くのデータをLog Searchストレージに保管できるようにプランをアップグレードするには、このスペースの {{site.data.keyword.loganalysisshort}} サービス・プランをアップグレードしてください。 サービス・プランとプランのアップグレード方法について詳しくは、『[プラン](/docs/services/CloudLogAnalysis?topic=cloudloganalysis-log_analysis_ov#plans)』を参照してください。
 
 XXX は、現在のプランで検索可能なデータのサイズを表します。
 
@@ -62,7 +62,7 @@ XXX は、現在のプランで検索可能なデータのサイズを表しま�
 
 **リカバリー**
 
-1 日により多くのデータをLog Searchストレージに保管できるようにプランをアップグレードするには、このスペースの {{site.data.keyword.loganalysisshort}} サービス・プランをアップグレードしてください。 サービス・プランとプランのアップグレード方法について詳しくは、『[プラン](/docs/services/CloudLogAnalysis/log_analysis_ov.html#plans)』を参照してください。
+1 日により多くのデータをLog Searchストレージに保管できるようにプランをアップグレードするには、このスペースの {{site.data.keyword.loganalysisshort}} サービス・プランをアップグレードしてください。 サービス・プランとプランのアップグレード方法について詳しくは、『[プラン](/docs/services/CloudLogAnalysis?topic=cloudloganalysis-log_analysis_ov#plans)』を参照してください。
 
 
 

@@ -40,11 +40,11 @@ subcollection: cloudloganalysis
 
     2. 访问 Kibana。单击**高级视图** ![“高级视图”链接](images/logging_advanced_view.jpg "“高级视图”链接")。这将显示 Kibana 仪表板。
     
-    对于在 Kubernetes 集群中运行的容器，请[从浏览器启动 Kibana](/docs/services/CloudLogAnalysis/kibana4/k4_launch.html#launch_Kibana_from_browser1)。 
+    对于在 Kubernetes 集群中运行的容器，请[从浏览器启动 Kibana](/docs/services/CloudLogAnalysis/kibana4?topic=cloudloganalysis-k4_launch#launch_Kibana_from_browser1)。 
     
     访问 Kibana 时，将应用缺省搜索。您可以看到已为其启动 Kibana 的资源实例列表的日志。可以过滤该空间中任何或全部 {{site.data.keyword.Bluemix_notm}} 资源的日志。
 
-2. 查看“发现”页面，以确定它显示的数据子集。有关更多信息，请参阅[确定在 Kibana 的“发现”页面中显示的数据](/docs/services/CloudLogAnalysis/kibana4/logging_kibana_analize_logs_interactively.html#k4_identify_data)。然后，修改缺省查询以过滤条目。
+2. 查看“发现”页面，以确定它显示的数据子集。有关更多信息，请参阅[确定在 Kibana 的“发现”页面中显示的数据](/docs/services/CloudLogAnalysis/kibana4?topic=cloudloganalysis-kibana_analize_logs_interactively#k4_identify_data)。然后，修改缺省查询以过滤条目。
 
     **注**：使用 Lucene 查询语言来定义定制查询。有关更多信息，请参阅 [Apache Lucene - Query Parser Syntax ![外部链接图标](../../../icons/launch-glyph.svg "外部链接图标")](https://lucene.apache.org/core/2_9_4/queryparsersyntax.html){: new_window}
     

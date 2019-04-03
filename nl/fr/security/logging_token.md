@@ -37,13 +37,13 @@ Pour obtenir le jeton de journalisation que vous pouvez utiliser pour envoyer de
 
 1. Installez l'interface de ligne de commande {{site.data.keyword.Bluemix_notm}}.
 
-   Pour plus d'informations, voir [Téléchargement et installation de l'interface de ligne de commande {{site.data.keyword.Bluemix_notm}}](/docs/cli/index.html#overview).
+   Pour plus d'informations, voir [Téléchargement et installation de l'interface de ligne de commande {{site.data.keyword.Bluemix_notm}}](/docs/cli?topic=cloud-cli-ibmcloud-cli#overview).
    
    Si l'interface de ligne de commande est installée, passez à l'étape suivante.
     
 2. Connectez-vous à une région, une organisation et un espace dans {{site.data.keyword.Bluemix_notm}}. 
 
-    Pour plus d'informations, voir [Comment se connecter à {{site.data.keyword.Bluemix_notm}} ?](/docs/services/CloudLogAnalysis/qa/cli_qa.html#login).
+    Pour plus d'informations, voir [Comment se connecter à {{site.data.keyword.Bluemix_notm}} ?](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#login)
 	
 3. Exécutez la commande suivante :
 
@@ -62,13 +62,13 @@ Pour obtenir le jeton de journalisation que vous pouvez utiliser pour envoyer de
 
 1. Installez l'interface de ligne de commande {{site.data.keyword.Bluemix_notm}}.
 
-   Pour plus d'informations, voir [Téléchargement et installation de l'interface de ligne de commande {{site.data.keyword.Bluemix_notm}}](/docs/cli/index.html#overview).
+   Pour plus d'informations, voir [Téléchargement et installation de l'interface de ligne de commande {{site.data.keyword.Bluemix_notm}}](/docs/cli?topic=cloud-cli-ibmcloud-cli#overview).
    
    Si l'interface de ligne de commande est installée, passez à l'étape suivante.
     
 2. Connectez-vous à une région, une organisation et un espace dans {{site.data.keyword.Bluemix_notm}}. 
 
-    Pour plus d'informations, voir [Comment se connecter à {{site.data.keyword.Bluemix_notm}} ?](/docs/services/CloudLogAnalysis/qa/cli_qa.html#login).
+    Pour plus d'informations, voir [Comment se connecter à {{site.data.keyword.Bluemix_notm}} ?](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#login)
 	
 3. Créez une clé de service dans l'espace dans lequel le service {{site.data.keyword.loganalysisshort}} est mis à disposition. Exécutez les commandes suivantes :
 
@@ -152,15 +152,15 @@ Pour obtenir le jeton de journalisation que vous pouvez utiliser pour envoyer de
 
 1. Installez l'interface de ligne de commande {{site.data.keyword.Bluemix_notm}}.
 
-   Pour plus d'informations, voir [Téléchargement et installation de l'interface de ligne de commande {{site.data.keyword.Bluemix_notm}}](/docs/cli/index.html#overview).
+   Pour plus d'informations, voir [Téléchargement et installation de l'interface de ligne de commande {{site.data.keyword.Bluemix_notm}}](/docs/cli?topic=cloud-cli-ibmcloud-cli#overview).
    
    Si l'interface de ligne de commande est installée, passez à l'étape suivante.
     
 2. Connectez-vous à une région, une organisation et un espace dans {{site.data.keyword.Bluemix_notm}}. 
 
-    Pour plus d'informations, voir [Comment se connecter à {{site.data.keyword.Bluemix_notm}} ?](/docs/services/CloudLogAnalysis/qa/cli_qa.html#login).
+    Pour plus d'informations, voir [Comment se connecter à {{site.data.keyword.Bluemix_notm}} ?](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#login)
 	
-3. Obtenez le [jeton UAA](/docs/services/CloudLogAnalysis/security/auth_uaa.html#uaa_cli).
+3. Obtenez le [jeton UAA](/docs/services/CloudLogAnalysis/security?topic=cloudloganalysis-auth_uaa#uaa_cli).
 
     Par exemple, exécutez la commande `ibmcloud cf oauth-token` pour obtenir le jeton UAA.
 
@@ -173,7 +173,7 @@ Pour obtenir le jeton de journalisation que vous pouvez utiliser pour envoyer de
 
 4. Obtenez l'identificateur global unique de l'espace.
 
-   Pour plus d'informations, voir [Comment obtenir l'identificateur global unique d'un espace ?](/docs/services/CloudLogAnalysis/qa/cli_qa.html#space_guid2).  
+   Pour plus d'informations, voir [Comment obtenir l'identificateur global unique d'un espace ?](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#space_guid2).  
 	
 5. Exportez les variables suivantes : TOKEN et SPACEID.
 
@@ -199,7 +199,7 @@ Pour obtenir le jeton de journalisation que vous pouvez utiliser pour envoyer de
 	où
 	* SPACEID est l'identificateur global unique de l'espace dans lequel le service s'exécute.
 	* TOKEN est le jeton UAA que vous avez obtenu à l'étape précédente sans le préfixe Bearer.
-	* LOGGING_ENDPOINT est le noeud final {{site.data.keyword.loganalysisshort}} pour la région {{site.data.keyword.Bluemix_notm}} où l'organisation et l'espace sont disponibles. LOGGING_ENDPOINT est différent selon la région. Pour afficher les URL des différents noeuds finaux, voir [Noeuds finaux](/docs/services/CloudLogAnalysis/manage_logs.html#endpoints).
+	* LOGGING_ENDPOINT est le noeud final {{site.data.keyword.loganalysisshort}} pour la région {{site.data.keyword.Bluemix_notm}} où l'organisation et l'espace sont disponibles. LOGGING_ENDPOINT est différent selon la région. Pour afficher les URL des différents noeuds finaux, voir [Noeuds finaux](/docs/services/CloudLogAnalysis?topic=cloudloganalysis-manage_logs#endpoints).
 	
     La commande renvoie le jeton de journalisation que vous devez utiliser pour envoyer des journaux dans cet espace.
 	

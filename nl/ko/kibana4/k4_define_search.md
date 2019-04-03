@@ -40,11 +40,11 @@ subcollection: cloudloganalysis
 
     2. Kibana에 액세스하십시오. **고급 보기** ![고급 보기 링크](images/logging_advanced_view.jpg "고급 보기 링크")를 클릭하십시오. Kibana 대시보드가 표시됩니다.
     
-    Kubernetes 클러스터에서 실행되는 컨테이너의 경우 [브라우저에서 Kibana를 실행](/docs/services/CloudLogAnalysis/kibana4/k4_launch.html#launch_Kibana_from_browser1)하십시오. 
+    Kubernetes 클러스터에서 실행되는 컨테이너의 경우 [브라우저에서 Kibana를 실행](/docs/services/CloudLogAnalysis/kibana4?topic=cloudloganalysis-k4_launch#launch_Kibana_from_browser1)하십시오. 
     
     Kibana에 액세스하면 기본 검색이 적용됩니다. Kibana를 실행한 리소스의 인스턴스 목록에 대한 로그를 볼 수 있습니다. 해당 영역의 일부 또는 모든 {{site.data.keyword.Bluemix_notm}} 리소스에 대해 로그를 필터링할 수 있습니다.
 
-2. 검색 페이지에서 표시하는 데이터의 서브세트를 확인하십시오. 자세한 정보는 [Kibana 검색 페이지에 표시된 데이터 식별](/docs/services/CloudLogAnalysis/kibana4/logging_kibana_analize_logs_interactively.html#k4_identify_data)을 참조하십시오. 그런 다음 항목을 필터링하도록 기본 조회를 수정하십시오.
+2. 검색 페이지에서 표시하는 데이터의 서브세트를 확인하십시오. 자세한 정보는 [Kibana 검색 페이지에 표시된 데이터 식별](/docs/services/CloudLogAnalysis/kibana4?topic=cloudloganalysis-kibana_analize_logs_interactively#k4_identify_data)을 참조하십시오. 그런 다음 항목을 필터링하도록 기본 조회를 수정하십시오.
 
     **참고:** Lucene 조회 언어를 사용하여 사용자 정의 조회를 정의합니다. 자세한 정보는 [Apache Lucene - 조회 구문 분석기 구문 ![외부 링크 아이콘](../../../icons/launch-glyph.svg "외부 링크 아이콘")](https://lucene.apache.org/core/2_9_4/queryparsersyntax.html){: new_window}을 참조하십시오.
     

@@ -66,16 +66,16 @@ subcollection: cloudloganalysis
 
 * 儲存在「日誌收集」中的日誌，會在您配置保留原則或手動予以刪除的幾天之後被刪除。 
 
-    您可以配置日誌保留原則，以定義您要將日誌保留在「日誌收集」中的天數。如需相關資訊，請參閱[使用 {{site.data.keyword.Bluemix_notm}} 外掛程式檢視及配置日誌保留原則](/docs/services/CloudLogAnalysis/how-to/manage-logs/configuring_retention_policy_cloud.html#configuring_retention_policy)。
+    您可以配置日誌保留原則，以定義您要將日誌保留在「日誌收集」中的天數。如需相關資訊，請參閱[使用 {{site.data.keyword.Bluemix_notm}} 外掛程式檢視及配置日誌保留原則](/docs/services/CloudLogAnalysis/how-to/manage-logs?topic=cloudloganalysis-configuring_retention_policy#configuring_retention_policy)。
 
-    您可以使用[日誌收集 API](https://console.bluemix.net/apidocs/948-ibm-cloud-log-collection-api?&language=node&env_id=ibm%3Ayp%3Aus-south#introduction){: new_window} 或[日誌收集 CLI](/docs/services/CloudLogAnalysis/reference/log_analysis_cli_cloud.html#log_analysis_cli){: new_window}，手動刪除「日誌收集」中的日誌。 
+    您可以使用[日誌收集 API](https://console.bluemix.net/apidocs/948-ibm-cloud-log-collection-api?&language=node&env_id=ibm%3Ayp%3Aus-south#introduction){: new_window} 或[日誌收集 CLI](/docs/services/CloudLogAnalysis/reference?topic=cloudloganalysis-log_analysis_cli#log_analysis_cli){: new_window}，手動刪除「日誌收集」中的日誌。 
 
-    您可以使用 CLI，手動刪除「日誌收集」中的日誌。如需相關資訊，請參閱[使用 {{site.data.keyword.Bluemix_notm}} 外掛程式來執行 ibmcloud logging log-delete](/docs/services/CloudLogAnalysis/how-to/manage-logs/deleting_logs_cloud.html#deleting_logs)。
+    您可以使用 CLI，手動刪除「日誌收集」中的日誌。如需相關資訊，請參閱[使用 {{site.data.keyword.Bluemix_notm}} 外掛程式來執行 ibmcloud logging log-delete](/docs/services/CloudLogAnalysis/how-to/manage-logs?topic=cloudloganalysis-deleting_logs#deleting_logs)。
 
 
 如果您從付費方案變更為標準或精簡方案，則「日誌收集」中的日誌將在大約一天內被刪除。
 
-您隨時都可以開立支援問題單，並要求從「日誌搜尋」及「日誌收集」刪除所有資料。如需開立 IBM 支援問題單的相關資訊，請參閱[與支援中心聯絡](/docs/get-support/howtogetsupport.html#getting-customer-support)。
+您隨時都可以開立支援問題單，並要求從「日誌搜尋」及「日誌收集」刪除所有資料。如需開立 IBM 支援問題單的相關資訊，請參閱[與支援中心聯絡](/docs/get-support?topic=get-support-getting-customer-support#getting-customer-support)。
 
 
 

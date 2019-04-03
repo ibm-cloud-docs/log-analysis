@@ -46,13 +46,13 @@ Kibana の「*Dashboard*」ページを使用して、ダッシュボードで�
 
 | タスク | 詳細情報 |
 |------|------------------|
-| [視覚化の追加](/docs/services/CloudLogAnalysis/kibana/analize_logs_dashboard.html#add_visualization) | 既存の視覚化または検索をダッシュボードに追加できます。|
-| [新規ダッシュボードの作成](/docs/services/CloudLogAnalysis/kibana/analize_logs_dashboard.html#new) | 複数のダッシュボードを作成できます。 各ダッシュボードは、異なる検索、視覚化、およびログ・データの異なるサブセットを含めるように設計できます。  |
-| [ダッシュボードの削除](/docs/services/CloudLogAnalysis/kibana/analize_logs_dashboard.html#delete) | 必要ではないダッシュボードを削除します。 |
-| [ダッシュボードのエクスポート](/docs/services/CloudLogAnalysis/kibana/analize_logs_dashboard.html#export) | ダッシュボードを JSON ファイルとしてエクスポートできます。 |
-| [ダッシュボードのインポート](/docs/services/CloudLogAnalysis/kibana/analize_logs_dashboard.html#import) | ダッシュボードを JSON ファイルとしてインポートできます。 |
-| [ダッシュボードのロード](/docs/services/CloudLogAnalysis/kibana/analize_logs_dashboard.html#reload3) | ダッシュボードをアップロードして、そのデータを更新するか、ダッシュボードを変更するか、データを分析できます。 |
-| [ダッシュボードの保存](/docs/services/CloudLogAnalysis/kibana/analize_logs_dashboard.html#save) | ダッシュボードを将来再使用するために保存できます。 |
+| [視覚化の追加](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-analize_logs_dashboard#add_visualization) | 既存の視覚化または検索をダッシュボードに追加できます。|
+| [新規ダッシュボードの作成](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-analize_logs_dashboard#new) | 複数のダッシュボードを作成できます。 各ダッシュボードは、異なる検索、視覚化、およびログ・データの異なるサブセットを含めるように設計できます。  |
+| [ダッシュボードの削除](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-analize_logs_dashboard#delete) | 必要ではないダッシュボードを削除します。 |
+| [ダッシュボードのエクスポート](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-analize_logs_dashboard#export) | ダッシュボードを JSON ファイルとしてエクスポートできます。 |
+| [ダッシュボードのインポート](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-analize_logs_dashboard#import) | ダッシュボードを JSON ファイルとしてインポートできます。 |
+| [ダッシュボードのロード](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-analize_logs_dashboard#reload3) | ダッシュボードをアップロードして、そのデータを更新するか、ダッシュボードを変更するか、データを分析できます。 |
+| [ダッシュボードの保存](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-analize_logs_dashboard#save) | ダッシュボードを将来再使用するために保存できます。 |
 {: caption="表 2. ダッシュボードを操作するタスク" caption-side="top"}
 
 Kibana について詳しくは、「[Kibana User Guide ![外部リンク・アイコン](../../../icons/launch-glyph.svg "外部リンク・アイコン")](https://www.elastic.co/guide/en/kibana/5.1/index.html){: new_window}」を参照してください。
@@ -81,13 +81,13 @@ Kibana について詳しくは、「[Kibana User Guide ![外部リンク・ア�
 
 1. 「Dashboard」ページのツールバーで、**「追加」** をクリックします。 
 
-2. 1 つ以上の検索および視覚化を追加します。 詳しくは、『[新規検索または視覚化の追加](/docs/services/CloudLogAnalysis/kibana/analize_logs_dashboard.html#add_visualization)』を参照してください。
+2. 1 つ以上の検索および視覚化を追加します。 詳しくは、『[新規検索または視覚化の追加](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-analize_logs_dashboard#add_visualization)』を参照してください。
 
     検索または視覚化を追加すると、パネルがダッシュボードに追加されます。
 
 3. パネルをドラッグし、ダッシュボード上の配置する部分にドロップします。
  
-4. 将来再使用するためにダッシュボードを保存します。 詳しくは、『[Kibana ダッシュボードの保存](/docs/services/CloudLogAnalysis/kibana/analize_logs_dashboard.html#save)』を参照してください。
+4. 将来再使用するためにダッシュボードを保存します。 詳しくは、『[Kibana ダッシュボードの保存](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-analize_logs_dashboard#save)』を参照してください。
 
 
 ## Kibana ダッシュボードの削除

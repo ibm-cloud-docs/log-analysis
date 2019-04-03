@@ -34,16 +34,16 @@ Conclua as tarefas a seguir para definir uma procura customizada:
 
 1. Ativar Kibana.
 
-    Para apps Cloud Foundry (CF), veja [ativar o Kibana por meio do painel de um app CF](/docs/services/CloudLogAnalysis/kibana/launch.html#launch_Kibana_from_cf_app).
+    Para apps Cloud Foundry (CF), veja [ativar o Kibana por meio do painel de um app CF](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-launch#launch_Kibana_from_cf_app).
 
-	Para contêineres que são executados na infraestrutura gerenciada pelo {{site.data.keyword.Bluemix_notm}}, veja [ativar o Kibana no painel de um contêiner](/docs/services/CloudLogAnalysis/kibana/launch.html#launch_Kibana_for_containers).
+	Para contêineres que são executados na infraestrutura gerenciada pelo {{site.data.keyword.Bluemix_notm}}, veja [ativar o Kibana no painel de um contêiner](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-launch#launch_Kibana_for_containers).
     
-    Para todos os recursos em nuvem, por exemplo, contêineres executados em um cluster do Kubernetes, veja [ativar o Kibana por meio do navegador](/docs/services/CloudLogAnalysis/kibana/launch.html#launch_Kibana_from_browser). 
+    Para todos os recursos em nuvem, por exemplo, contêineres executados em um cluster do Kubernetes, veja [ativar o Kibana por meio do navegador](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-launch#launch_Kibana_from_browser). 
 	
 	Ao acessar o Kibana, a procura padrão é aplicada. É possível ver os logs da lista de instâncias do recurso que está sendo consultado. É possível filtrar os logs para quaisquer ou todos os
 recursos do {{site.data.keyword.Bluemix_notm}} nesse espaço.
 
-2. Consulte a página Descobrir para ver qual subconjunto de seus dados é exibido. Para obter mais informações, consulte [Identificando os dados que são exibidos em sua página Descobrir do Kibana](/docs/services/CloudLogAnalysis/kibana/analize_logs_interactively.html#identify_data). Em seguida, modifique a consulta padrão para
+2. Consulte a página Descobrir para ver qual subconjunto de seus dados é exibido. Para obter mais informações, consulte [Identificando os dados que são exibidos em sua página Descobrir do Kibana](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-analize_logs_interactively#identify_data). Em seguida, modifique a consulta padrão para
 filtrar entradas.
 
     **Nota:** use a linguagem de consulta Lucene para definir sua consulta
@@ -63,10 +63,10 @@ formato a seguir: *log_field_name:[start_of_range TO end_of_range]*; por exemplo
      Por exemplo, para um app CF, é possível criar uma consulta `application_id:9d222152-8834-4bab-8685-3036cd25931a AND instance_id:["0" TO "1"]` que liste entradas para as instâncias *0* e *1* somente. 
 
 3. Salve a consulta para poder reutilizá-la posteriormente. Para obter mais
-informações, consulte [Salvando uma procura](/docs/services/CloudLogAnalysis/kibana/define_search.html#save_search1). 
+informações, consulte [Salvando uma procura](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-define_search#save_search1). 
 
 **Nota:** se precisar excluir uma consulta, consulte
-[Excluindo uma procura](/docs/services/CloudLogAnalysis/kibana/define_search.html#delete_search).
+[Excluindo uma procura](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-define_search#delete_search).
 
 
 

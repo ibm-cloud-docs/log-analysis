@@ -29,7 +29,7 @@ subcollection: cloudloganalysis
   
 {:shortdesc}
 
-例如，您可以授予用户**操作员**角色以允许该用户管理日志。如果只希望某个用户查看帐户日志，那么可授予该用户**查看者**角色。有关更多信息，请参阅 [IAM 角色](/docs/services/CloudLogAnalysis/security_ov.html#iam_roles)。
+例如，您可以授予用户**操作员**角色以允许该用户管理日志。如果只希望某个用户查看帐户日志，那么可授予该用户**查看者**角色。有关更多信息，请参阅 [IAM 角色](/docs/services/CloudLogAnalysis?topic=cloudloganalysis-security_ov#iam_roles)。
 
 **注：** 
 
@@ -55,7 +55,7 @@ subcollection: cloudloganalysis
 	
 3. 如果用户是帐户的成员，请从列表中选择用户名，或者从*操作*菜单中单击**管理用户**。
 
-    如果用户不是帐户的成员，请参阅[邀请用户](/docs/iam/iamuserinv.html#iamuserinv)。
+    如果用户不是帐户的成员，请参阅[邀请用户](/docs/iam?topic=iam-iamuserinv#iamuserinv)。
 
 4. 在**访问策略**部分，单击**分配访问权**，然后选择**分配对资源的访问权**。
 
@@ -83,7 +83,7 @@ subcollection: cloudloganalysis
 	  </tr>
 	  <tr>
 	    <td>角色</td>
-		<td>选择一个或多个 IAM 角色。<br>有效角色为：*管理员*、*操作员*、*编辑者*和*查看者*。<br>有关每种角色所允许的操作的更多信息，请参阅 [IAM 角色](/docs/services/CloudLogAnalysis/security_ov.html#iam_roles)。</td>
+		<td>选择一个或多个 IAM 角色。<br>有效角色为：*管理员*、*操作员*、*编辑者*和*查看者*。<br>有关每种角色所允许的操作的更多信息，请参阅 [IAM 角色](/docs/services/CloudLogAnalysis?topic=cloudloganalysis-security_ov#iam_roles)。</td>
 	  </tr>
      </table>
 	
@@ -99,7 +99,7 @@ subcollection: cloudloganalysis
 
 1. 在终端上，登录到 {{site.data.keyword.Bluemix_notm}} 帐户。 
 
-    有关更多信息，请参阅[如何登录到 {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/qa/cli_qa.html#login)。
+    有关更多信息，请参阅[如何登录到 {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#login)。
 
 2. 检查用户是否是帐户成员。运行以下命令来获取帐户中用户的列表：
 
@@ -110,7 +110,7 @@ subcollection: cloudloganalysis
 
 	这将显示用户及其 GUID 的列表。
 
-3. 如果用户不是帐户成员，请联系帐户所有者并请求邀请该用户加入帐户。有关更多信息，请参阅[邀请用户](/docs/iam/iamuserinv.html#iamuserinv)。
+3. 如果用户不是帐户成员，请联系帐户所有者并请求邀请该用户加入帐户。有关更多信息，请参阅[邀请用户](/docs/iam?topic=iam-iamuserinv#iamuserinv)。
 
     **提示**：用于邀请用户加入帐户的命令如下：`ibmcloud iam account-user-invite USER_EMAIL`
 		
@@ -156,7 +156,7 @@ subcollection: cloudloganalysis
 	
 3. 如果用户是帐户的成员，请从列表中选择用户名，或者从*操作*菜单中单击**管理用户**。
 
-    如果用户不是帐户的成员，请参阅[邀请用户](/docs/iam/iamuserinv.html#iamuserinv)。
+    如果用户不是帐户的成员，请参阅[邀请用户](/docs/iam?topic=iam-iamuserinv#iamuserinv)。
 
 4. 选择 **Cloud Foundry 访问权**，然后选择组织。
 

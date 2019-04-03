@@ -37,13 +37,13 @@ subcollection: cloudloganalysis
 
 1. {{site.data.keyword.Bluemix_notm}} CLI를 설치하십시오.
 
-   자세한 정보는 [{{site.data.keyword.Bluemix_notm}} CLI 설치](/docs/cli/index.html#overview)를 참조하십시오.
+   자세한 정보는 [{{site.data.keyword.Bluemix_notm}} CLI 설치](/docs/cli?topic=cloud-cli-ibmcloud-cli#overview)를 참조하십시오.
 
 2. {{site.data.keyword.loganalysisshort}} CF 플러그인을 설치하십시오.
 
-    * Linux의 경우 [Linux에서 {{site.data.keyword.loganalysisshort}} CLI 설치](/docs/services/CloudLogAnalysis/how-to/manage-logs/config_log_collection_cli.html#install_cli_linux1)를 참조하십시오.
-    * Windows의 경우 [Windows에서 {{site.data.keyword.loganalysisshort}} CLI 설치](/docs/services/CloudLogAnalysis/how-to/manage-logs/config_log_collection_cli.html#install_cli_windows1)를 참조하십시오.
-    * Mac OS X의 경우 [Mac OS X에서 {{site.data.keyword.loganalysisshort}} CLI 설치](/docs/services/CloudLogAnalysis/how-to/manage-logs/config_log_collection_cli.html#install_cli_mac1)를 참조하십시오.
+    * Linux의 경우 [Linux에서 {{site.data.keyword.loganalysisshort}} CLI 설치](/docs/services/CloudLogAnalysis/how-to/manage-logs?topic=cloudloganalysis-config_log_collection_cli1#install_cli_linux1)를 참조하십시오.
+    * Windows의 경우 [Windows에서 {{site.data.keyword.loganalysisshort}} CLI 설치](/docs/services/CloudLogAnalysis/how-to/manage-logs?topic=cloudloganalysis-config_log_collection_cli1#install_cli_windows1)를 참조하십시오.
+    * Mac OS X의 경우 [Mac OS X에서 {{site.data.keyword.loganalysisshort}} CLI 설치](/docs/services/CloudLogAnalysis/how-to/manage-logs?topic=cloudloganalysis-config_log_collection_cli1#install_cli_mac1)를 참조하십시오.
  
 3. CLI 플러그인의 설치를 확인하십시오.
   
@@ -280,7 +280,7 @@ CLI 및 지원되는 명령에 대한 일반적인 정보를 가져오려면 다
 
 1. {{site.data.keyword.Bluemix_notm}}의 지역, 조직 및 영역에 로그인하십시오. 
 
-    자세한 정보는 [{{site.data.keyword.Bluemix_notm}}에 로그인하는 방법](/docs/services/CloudLogAnalysis/qa/cli_qa.html#login)을 참조하십시오.
+    자세한 정보는 [{{site.data.keyword.Bluemix_notm}}에 로그인하는 방법](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#login)을 참조하십시오.
     
 2. 지원되는 명령 및 CLI에 대한 정보를 나열합니다. 다음 명령을 실행하십시오.
 
@@ -298,7 +298,7 @@ CLI 및 지원되는 명령에 대한 일반적인 정보를 가져오려면 다
 
 1. {{site.data.keyword.Bluemix_notm}}의 지역, 조직 및 영역에 로그인하십시오. 
 
-    자세한 정보는 [{{site.data.keyword.Bluemix_notm}}에 로그인하는 방법](/docs/services/CloudLogAnalysis/qa/cli_qa.html#login)을 참조하십시오.
+    자세한 정보는 [{{site.data.keyword.Bluemix_notm}}에 로그인하는 방법](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#login)을 참조하십시오.
     
 2. 지원되는 명령의 목록을 가져오고 필요로 하는 명령을 식별합니다. 다음 명령을 실행하십시오.
 
@@ -325,7 +325,7 @@ CLI 및 지원되는 명령에 대한 일반적인 정보를 가져오려면 다
 
 1. {{site.data.keyword.Bluemix_notm}}의 지역, 조직 및 영역에 로그인하십시오. 
 
-    자세한 정보는 [{{site.data.keyword.Bluemix_notm}}에 로그인하는 방법](/docs/services/CloudLogAnalysis/qa/cli_qa.html#login)을 참조하십시오.
+    자세한 정보는 [{{site.data.keyword.Bluemix_notm}}에 로그인하는 방법](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#login)을 참조하십시오.
     
 2. 지원되는 명령의 목록을 가져오고 필요로 하는 명령을 식별하십시오. 다음 명령을 실행하십시오.
 

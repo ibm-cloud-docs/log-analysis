@@ -26,50 +26,78 @@ subcollection: cloudloganalysis
 # {{site.data.keyword.containershort_notm}}
 {: #containers_kubernetes}
 
-在 {{site.data.keyword.Bluemix_notm}} 中，您可以使用 {{site.data.keyword.loganalysisshort}} 服務來儲存及分析 {{site.data.keyword.containershort}} 在「公用」及「專用」中自動收集的容器日誌和 Kubernetes 叢集日誌。
+在 {{site.data.keyword.cloud_notm}} 中，您可以使用 {{site.data.keyword.loganalysisshort}} 服務來儲存及分析 {{site.data.keyword.containershort}} 在「公用」及「專用」中自動收集的容器日誌和 Kubernetes 叢集日誌。
 {:shortdesc}
 
 在帳戶中，您可以有一個以上的 Kubernetes 叢集。一旦佈建叢集，{{site.data.keyword.containershort}} 就會自動收集日誌。 
 
+若要從 {{site.data.keyword.containershort}} 轉遞日誌給 {{site.data.keyword.loganalysisshort}}，您必須建立記載配置。您可以透過[指令行](/docs/containers/cs_health.html#logging)啟用記載功能，或透過 {{site.data.keyword.containershort}} 儀表板中的叢集概觀頁面。配置就緒之後，在佈建叢集時或是部署 Pod 時，{{site.data.keyword.containershort}} 便會收集日誌。容器列印至 `stdout` 或 `stderr` 的資訊也會自動收集。依預設，日誌會根據叢集的位置而轉遞至特定的地區。
+
 * 一旦部署 Pod，就會收集應用程式日誌。 
 * {{site.data.keyword.containershort}} 會自動收集容器處理程序列印到 stdout（標準輸出）及 stderr（標準錯誤）的資訊。
 
-若要讓這些日誌可在 {{site.data.keyword.loganalysisshort}} 服務中進行分析，您必須配置叢集，以將日誌轉遞至 {{site.data.keyword.loganalysisshort}}。您可以將日誌轉遞至 {{site.data.keyword.loganalysisshort}} 帳戶網域或是帳戶中的空間網域。依預設：
+請參閱下表以查看根據叢集的部署位置，{{site.data.keyword.loganalysisshort}} 會將日誌傳送到哪些地區。
+ * {{site.data.keyword.containershort}} 會自動收集容器處理程序列印到 stdout（標準輸出）及 stderr（標準錯誤）的資訊。
+ 
+ <table>
+   <tr>
+     <th>叢集地區</th>
+     <th>服務地區</th>
+   </tr>
+   <tr>
+     <td>美國南部</td>
+     <td>美國南部</td>
+   </tr>
+   <tr>
+     <td>美國東部</td>
+     <td>美國南部</td>
+   </tr>
+   <tr>
+     <td>德國</td>
+     <td>德國</td>
+   </tr>
+   <tr>
+     <td>雪梨</td>
+     <td>雪梨</td>
+   </tr>
+   <tr>
+     <td>英國</td>
+     <td>德國</td>
+   </tr>
+ </table>
+ 
+ 試圖檢視日誌時，請務必將目標設為正確的地區、組織及空間。您也可以透過 {{site.data.keyword.loganalysisshort}} GUI 確認您將目標設為正確的組織及空間。
+ {: tip}
 
-* 美國南部地區中可用的叢集，將日誌傳送至美國南部地區中可用的 {{site.data.keyword.loganalysisshort}} 服務。
-* 美國東部地區中可用的叢集，將日誌傳送至美國東部地區中可用的 {{site.data.keyword.loganalysisshort}} 服務。
-* 德國地區中可用的叢集，將日誌傳送至德國地區中可用的 {{site.data.keyword.loganalysisshort}} 服務。
-* 雪梨地區中可用的叢集，將日誌傳送至雪梨地區中可用的 {{site.data.keyword.loganalysisshort}} 服務。
-* 英國地區中可用的叢集，將日誌傳送至英國地區中可用的 {{site.data.keyword.loganalysisshort}} 服務。
-
-決定是否將日誌轉遞至空間網域或帳戶網域時，請考量下列資訊：
+您可以將日誌轉遞至 {{site.data.keyword.loganalysisshort}} 帳戶或是帳戶中的空間網域。決定將日誌轉遞至何處時，請考量下列資訊：
 
 * 當您將日誌傳送至帳戶網域時，每天的搜尋配額為 500 MB，而且您無法將日誌儲存至「日誌收集」來進行長期儲存。
 * 當您將日誌傳送至空間網域時，可以選擇定義每天搜尋配額的 {{site.data.keyword.loganalysisshort}} 服務方案，而且您可以將日誌儲存至「日誌收集」來進行長期儲存。
 
-**附註：**依預設，不會自動啟用將日誌從叢集傳送至 {{site.data.keyword.loganalysisshort}} 服務。若要啟用記載功能，您必須在叢集中建立一個以上的記載配置，以自動將日誌轉遞至 {{site.data.keyword.loganalysisshort}} 服務。您可以透過指令行啟用記載功能，方法是使用 `ibmcloud cs logging-config-create` 指令，或是透過 {{site.data.keyword.Bluemix_notm}} 使用者介面中提供的叢集儀表板。如需相關資訊，請參閱[啟用自動收集叢集日誌](/docs/services/CloudLogAnalysis/containers/containers_kube_other_logs.html#containers_kube_other_logs)。
+**附註：**依預設，不會自動啟用將日誌從叢集傳送至 {{site.data.keyword.loganalysisshort}} 服務。若要啟用記載功能，您必須在叢集中建立一個以上的記載配置，以自動將日誌轉遞至 {{site.data.keyword.loganalysisshort}} 服務。您可以透過指令行啟用記載功能，方法是使用 `ibmcloud cs logging-config-create` 指令，或是透過 {{site.data.keyword.cloud_notm}} 使用者介面中提供的叢集儀表板。如需相關資訊，請參閱[啟用自動收集叢集日誌](/docs/services/CloudLogAnalysis/containers?topic=cloudloganalysis-containers_kube_other_logs#containers_kube_other_logs)。
 
 當您使用 Kubernetes 叢集時，會保留名稱空間 *ibm-system* 及 *kube-system*。請不要在這些名稱空間中建立、刪除、修改或變更可用資源的許可權。這些名稱空間的日誌適用於 {{site.data.keyword.IBM_notm}}。
+{: tip}
 
 
 
-## 將日誌轉遞至空間網域
+### 將日誌轉遞至空間網域
 {: #space}
 
-當您配置叢集以將叢集日誌轉遞至 {{site.data.keyword.loganalysisshort}} 時，請考量下列資訊：
+當您配置叢集以將日誌轉遞至 {{site.data.keyword.loganalysisshort}} 時，請考量下列資訊：
 
 * 您必須定義這些日誌要轉遞至其中的 Cloud Foundry 組織及空間。 
 * 組織及空間可以在任何「{{site.data.keyword.IBM_notm}} 公用雲端」地區中使用。
 
-**附註：**對於佈建在 **{{site.data.keyword.Bluemix_notm}} Dedicated** 上的叢集，無法配置您的叢集，來將叢集日誌轉遞至您專用帳戶上可用的 Cloud Foundry 空間。
+**附註：**對於佈建在 **{{site.data.keyword.cloud_notm}} Dedicated** 上的叢集，無法配置您的叢集，來將叢集日誌轉遞至您專用帳戶上可用的 Cloud Foundry 空間。
 
 若要在 Kibana 中分析用於將日誌轉遞至空間網域之叢集的日誌資料，請考量下列資訊：
 
 * 您必須在收集叢集日誌的組織及空間可用的「公用」地區中啟動 Kibana。
 * 若要增加 Kibana 搜尋配額，並且將日誌儲存在「日誌收集」以進行長期儲存，您必須在以符合您需求的方案轉遞日誌的空間中佈建 {{site.data.keyword.loganalysisshort}} 服務。 
-* 使用者 ID 必須具有檢視日誌的許可權。若要查看空間網域中的日誌，使用者需要 CF 角色。**審核員**是可授與檢視日誌的最低角色。如需相關資訊，請參閱[使用者檢視日誌所需的角色](/docs/services/CloudLogAnalysis/kibana/analyzing_logs_Kibana.html#roles)。
+* 使用者 ID 必須具有檢視日誌的許可權。若要查看空間網域中的日誌，使用者需要 CF 角色。**審核員**是可授與檢視日誌的最低角色。如需相關資訊，請參閱[使用者檢視日誌所需的角色](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-analyzing_logs_Kibana#roles)。
 
-若要管理長期儲存（日誌收集）的叢集日誌資料，使用者 ID 必須具有 IAM 原則，才能使用 {{site.data.keyword.loganalysisshort}} 服務。使用者 ID 必須具有 **Administrator**、**Operator** 或 **Editor** 許可權。如需相關資訊，請參閱[使用者管理日誌所需的角色](/docs/services/CloudLogAnalysis/manage_logs.html#roles1)。
+若要管理長期儲存（日誌收集）的叢集日誌資料，使用者 ID 必須具有 IAM 原則，才能使用 {{site.data.keyword.loganalysisshort}} 服務。使用者 ID 必須具有 **Administrator**、**Operator** 或 **Editor** 許可權。如需相關資訊，請參閱[使用者管理日誌所需的角色](/docs/services/CloudLogAnalysis?topic=cloudloganalysis-manage_logs#roles1)。
 
 
 下圖顯示叢集將日誌轉遞至空間網域時，{{site.data.keyword.containershort}}「公用」中的高階記載視圖：
@@ -78,32 +106,24 @@ subcollection: cloudloganalysis
 
    
 
-## 將日誌轉遞至帳戶網域
+### 將日誌轉遞至帳戶網域
 {: #acc_public}
 
-當您配置叢集以將叢集日誌轉遞至帳戶網域時，請考量下列資訊：
+不論您的帳戶在 {{site.data.keyword.cloud_notm}} 公用或專用環境，您都可以配置叢集，以將日誌轉遞至帳戶網域。
+{: shortdesc}
 
-* **佈建在 {{site.data.keyword.Bluemix_notm}} Public 上的叢集**：日誌會轉遞至叢集執行所在之相同 {{site.data.keyword.Bluemix_notm}} Public 地區的帳戶網域中。
-* **佈建在 {{site.data.keyword.Bluemix_notm}} Dedicated 上的叢集**：日誌會轉遞至「專用」叢集執行所在之相同 {{site.data.keyword.Bluemix_notm}} Public 地區的帳戶網域中。
 
 若要在 Kibana 中分析用於將日誌轉遞至帳戶網域之叢集的日誌資料，請考量下列資訊：
 
-* 您必須在叢集將日誌傳送至 {{site.data.keyword.loganalysisshort}} 服務的「公用」地區中啟動 Kibana。
-
-    * 美國南部地區中可用的叢集，將日誌傳送至美國南部地區中可用的 {{site.data.keyword.loganalysisshort}} 服務。
-    * 美國東部地區中可用的叢集，將日誌傳送至美國東部地區中可用的 {{site.data.keyword.loganalysisshort}} 服務。
-    * 德國地區中可用的叢集，將日誌傳送至德國地區中可用的 {{site.data.keyword.loganalysisshort}} 服務。
-    * 雪梨地區中可用的叢集，將日誌傳送至雪梨地區中可用的 {{site.data.keyword.loganalysisshort}} 服務。
-    * 英國地區中可用的叢集，將日誌傳送至英國地區中可用的 {{site.data.keyword.loganalysisshort}} 服務。
-
-* 使用者 ID 必須具有檢視日誌的許可權。若要查看帳戶網域中的日誌，使用者需要 {{site.data.keyword.loganalysisshort}} 服務的 IAM 原則。使用者需要 **Viewer** 許可權。 
+* 您必須在叢集將日誌傳送至 {{site.data.keyword.loganalysisshort}} 服務的地區中啟動 Kibana。
+* 若要管理長期儲存在「日誌收集」的叢集日誌資料，您必須具有允許您使用 {{site.data.keyword.loganalysisshort}} 服務的 IAM 角色。使用者 ID 必須具有 **Administrator**、**Operator** 或 **Editor** 許可權。若要查看日誌，您需要 **Viewer** 許可權。
 
 
-下圖顯示叢集將日誌轉遞至帳戶網域時，{{site.data.keyword.containershort}}「公用」中的高階記載視圖：
+在下列影像中，您可以看到公用環境中轉遞日誌至帳戶如何運作的高階視圖。
 
 ![Kubernetes 叢集中所部署容器的高階元件概觀](images/containers_kube.png "Kubernetes 叢集中所部署容器的高階元件概觀")
 
-下圖顯示 {{site.data.keyword.containershort}}「專用」中的高階記載視圖：
+在下列影像中，您可以看到專用環境中轉遞日誌至帳戶如何運作的高階視圖。
 
 ![Kubernetes 叢集中所部署容器的高階元件概觀](images/containers_kube_dedicated.png "Kubernetes 叢集中所部署容器的高階元件概觀")
 
@@ -114,22 +134,22 @@ subcollection: cloudloganalysis
 
 您可以選擇要轉遞至 {{site.data.keyword.loganalysisshort}} 服務的叢集日誌。 
 
-如需如何配置叢集以將日誌檔轉遞至 {{site.data.keyword.loganalysisshort}} 服務的相關資訊，請參閱[啟用自動收集叢集日誌](/docs/services/CloudLogAnalysis/containers/containers_kube_other_logs.html#containers_kube_other_logs)小節。
+如需如何配置叢集以將日誌檔轉遞至 {{site.data.keyword.loganalysisshort}} 服務的相關資訊，請參閱[啟用自動收集叢集日誌](/docs/services/CloudLogAnalysis/containers?topic=cloudloganalysis-containers_kube_other_logs#containers_kube_other_logs)小節。
 
-* 若要啟用 stdout 及 stderr 的自動日誌收集及轉遞，請參閱[啟用容器日誌的自動日誌收集及轉遞](/docs/services/CloudLogAnalysis/containers/containers_kube_other_logs.html#containers)。
-* 若要啟用應用程式日誌的自動日誌收集及轉遞，請參閱[啟用應用程式日誌的自動日誌收集及轉遞](/docs/services/CloudLogAnalysis/containers/containers_kube_other_logs.html#apps)。 
-* 若要啟用工作者日誌的自動日誌收集及轉遞，請參閱[啟用工作者日誌的自動日誌收集及轉遞](/docs/services/CloudLogAnalysis/containers/containers_kube_other_logs.html#workers)。 
-* 若要啟用 Kubernetes 系統元件日誌的自動日誌收集及轉遞，請參閱[啟用 Kubernetes 系統元件日誌的自動日誌收集及轉遞](/docs/services/CloudLogAnalysis/containers/containers_kube_other_logs.html#system)。 
-* 若要啟用 Kubernetes Ingress 控制器日誌的自動日誌收集及轉遞，請參閱[啟用 Kubernetes Ingress 控制器日誌的自動日誌收集及轉遞](/docs/services/CloudLogAnalysis/containers/containers_kube_other_logs.html#controller)。
-
-
+* 若要啟用 stdout 及 stderr 的自動日誌收集及轉遞，請參閱[啟用容器日誌的自動日誌收集及轉遞](/docs/services/CloudLogAnalysis/containers?topic=cloudloganalysis-containers_kube_other_logs#containers)。
+* 若要啟用應用程式日誌的自動日誌收集及轉遞，請參閱[啟用應用程式日誌的自動日誌收集及轉遞](/docs/services/CloudLogAnalysis/containers?topic=cloudloganalysis-containers_kube_other_logs#apps)。 
+* 若要啟用工作者日誌的自動日誌收集及轉遞，請參閱[啟用工作者日誌的自動日誌收集及轉遞](/docs/services/CloudLogAnalysis/containers?topic=cloudloganalysis-containers_kube_other_logs#workers)。 
+* 若要啟用 Kubernetes 系統元件日誌的自動日誌收集及轉遞，請參閱[啟用 Kubernetes 系統元件日誌的自動日誌收集及轉遞](/docs/services/CloudLogAnalysis/containers?topic=cloudloganalysis-containers_kube_other_logs#system)。 
+* 若要啟用 Kubernetes Ingress 控制器日誌的自動日誌收集及轉遞，請參閱[啟用 Kubernetes Ingress 控制器日誌的自動日誌收集及轉遞](/docs/services/CloudLogAnalysis/containers?topic=cloudloganalysis-containers_kube_other_logs#controller)。
 
 
 
-## 配置 {{site.data.keyword.Bluemix_notm}} 中自訂防火牆配置的網路資料流量
+
+
+## 配置 {{site.data.keyword.cloud_notm}} 中自訂防火牆配置的網路資料流量
 {: #ports}
 
-如果您已設定其他防火牆，或已在 {{site.data.keyword.Bluemix_notm}} 基礎架構 (SoftLayer) 中自訂防火牆設定，則需要容許從工作者節點到 {{site.data.keyword.loganalysisshort}} 服務的送出網路資料流量。 
+如果您已設定其他防火牆，或已在 {{site.data.keyword.cloud_notm}} 基礎架構 (SoftLayer) 中自訂防火牆設定，則必須容許從工作者節點到 {{site.data.keyword.loganalysisshort}} 服務的送出網路資料流量。
 
 您必須針對自訂防火牆中的下列 IP 位址，開啟從每一個工作者到 {{site.data.keyword.loganalysisshort}} 服務的 TCP 埠 443 及 TCP 埠 9091：
 
@@ -224,9 +244,9 @@ subcollection: cloudloganalysis
 ## 搜尋日誌
 {: #log_search}
 
-依預設，在 {{site.data.keyword.Bluemix_notm}} 中，您可以使用 Kibana 每天最多搜尋 500 MB 的日誌。 
+依預設，在 {{site.data.keyword.cloud_notm}} 中，您可以使用 Kibana 每天最多搜尋 500 MB 的日誌。 
 
-若要搜尋較大的日誌，您可以使用 {{site.data.keyword.loganalysisshort}} 服務。此服務提供多個方案。每一個方案都有不同的日誌搜尋功能，例如，*日誌收集* 方案可讓您每天最多搜尋 1 GB 的資料。如需可用方案的相關資訊，請參閱[服務方案](/docs/services/CloudLogAnalysis/log_analysis_ov.html#plans)。
+若要搜尋較大的日誌，您可以使用 {{site.data.keyword.loganalysisshort}} 服務。此服務提供多個方案。每一個方案都有不同的日誌搜尋功能，例如，*日誌收集* 方案可讓您每天最多搜尋 1 GB 的資料。如需可用方案的相關資訊，請參閱[服務方案](/docs/services/CloudLogAnalysis?topic=cloudloganalysis-log_analysis_ov#plans)。
 
 當您搜尋日誌時，請考慮 Kibana 中的下列可用欄位：
 
@@ -360,9 +380,11 @@ subcollection: cloudloganalysis
 ## 傳送日誌，讓您可以使用訊息中的欄位作為 Kibana 搜尋欄位
 {: #send_data_in_json}
 
-依預設，會自動啟用容器的記載功能。容器運行環境日誌檔中的每個項目都會顯示在 Kibana 的 **message** 欄位中。如果您需要在 Kibana 中，使用屬於容器日誌項目一部分的特定欄位來過濾及分析資料，請配置應用程式以傳送有效的 JSON 格式化輸出。例如，將訊息以 JSON 格式記載到 stdout（標準輸出）及 stderr（標準錯誤）。
-
-訊息中可用的每一個欄位都會剖析成符合值的欄位類型。例如，下列 JSON 訊息中的每一個欄位：
+依預設，會自動啟用容器的記載功能。Docker 日誌檔中的每個項目都會顯示在 Kibana 的 **message** 欄位中。如果您需要在 Kibana 中，使用屬於容器日誌項目一部分的特定欄位來過濾及分析資料，請配置應用程式以傳送有效的 JSON 格式化輸出。例如，將訊息以 JSON 格式記載到 `stdout` 及 `stderr`。
+ 
+訊息中可用的每一個欄位都會剖析成符合值的欄位類型。
+ 
+例如，下列 JSON 訊息中的每一個欄位可作為用於過濾及搜尋的欄位：訊息中可用的每一個欄位都會剖析成符合值的欄位類型。例如，下列 JSON 訊息中的每一個欄位：
     
 ```
     {"field1":"string type",
@@ -387,7 +409,7 @@ subcollection: cloudloganalysis
 {: #security}
 
 
-若要將叢集日誌轉遞至 {{site.data.keyword.loganalysisshort}}，您必須將 {{site.data.keyword.Bluemix_notm}} 許可權授與 {{site.data.keyword.containershort}} 金鑰擁有者及用於配置記載叢集配置的使用者 ID。
+若要將叢集日誌轉遞至 {{site.data.keyword.loganalysisshort}}，您必須將 {{site.data.keyword.cloud_notm}} 許可權授與 {{site.data.keyword.containershort}} 金鑰擁有者及用於配置記載叢集配置的使用者 ID。
 
 用於配置記載叢集配置的使用者 ID 必須具有下列許可權：
 
@@ -412,30 +434,30 @@ subcollection: cloudloganalysis
 ## 在日誌收集中儲存日誌
 {: #log_collection1}
 
-請考量在使用日誌時 {{site.data.keyword.Bluemix_notm}} 中預設行為的下列資訊：
+請考量在使用日誌時 {{site.data.keyword.cloud_notm}} 中預設行為的下列資訊：
 
-* {{site.data.keyword.Bluemix_notm}} 會儲存最多 3 天的日誌資料。
+* 日誌資料會儲存最多 3 天。
 * 每天最多可儲存 500 MB 的資料。超過該 500 MB 上限的任何日誌都會被捨棄。上限配額會在每天凌晨 12:30（世界標準時間）重設。
 * 可搜尋最多 3 天、最多 1.5 GB 的資料。達到 1.5 GB 資料或在 3 天之後，日誌資料就會輪替（先進先出）。
 * 日誌不會儲存至「日誌收集」來進行長期儲存。
 
-{{site.data.keyword.loganalysisshort}} 服務提供其他方案，讓您依所需將日誌儲存在「日誌收集」。如需每一個方案價格的相關資訊，請參閱[服務方案](/docs/services/CloudLogAnalysis/log_analysis_ov.html#plans)。 
+{{site.data.keyword.loganalysisshort}} 服務提供其他方案，讓您依所需將日誌儲存在「日誌收集」。如需每一個方案價格的相關資訊，請參閱[服務方案](/docs/services/CloudLogAnalysis?topic=cloudloganalysis-log_analysis_ov#plans)。 
 
 若要在「日誌收集」中管理日誌，請考量下列資訊：
 
-* 您可以配置日誌保留原則，用來定義您要將日誌保留在「日誌收集」中的天數。如需相關資訊，請參閱[日誌保留原則](/docs/services/CloudLogAnalysis/manage_logs.html#log_retention_policy)。
+* 您可以配置日誌保留原則，用來定義您要將日誌保留在「日誌收集」中的天數。如需相關資訊，請參閱[日誌保留原則](/docs/services/CloudLogAnalysis?topic=cloudloganalysis-manage_logs#log_retention_policy)。
 * 您可以使用「日誌收集 CLI」或「日誌收集 API」，手動刪除日誌。 
-* 若要在日誌收集中管理日誌，使用者需要具有在 {{site.data.keyword.Bluemix_notm}} 中使用 {{site.data.keyword.loganalysisshort}} 服務之許可權的 IAM 原則。如需相關資訊，請參閱 [IAM 角色](/docs/services/CloudLogAnalysis/security_ov.html#iam_roles)。
+* 若要在日誌收集中管理日誌，使用者需要具有在 {{site.data.keyword.cloud_notm}} 中使用 {{site.data.keyword.loganalysisshort}} 服務之許可權的 IAM 原則。如需相關資訊，請參閱 [IAM 角色](/docs/services/CloudLogAnalysis?topic=cloudloganalysis-security_ov#iam_roles)。
 
 ## 檢視及分析日誌
 {: #logging_containers_ov_methods}
 
-若要分析日誌資料，請使用 Kibana 執行進階分析作業。Kibana 是一種開放程式碼分析與視覺化平台，可用來以各種圖形（例如圖表和表格）監視、搜尋、分析及視覺化您的資料。如需相關資訊，請參閱[在 Kibana 中分析日誌](/docs/services/CloudLogAnalysis/kibana/analyzing_logs_Kibana.html#analyzing_logs_Kibana)。
+若要分析日誌資料，請使用 Kibana 執行進階分析作業。Kibana 是一種開放程式碼分析與視覺化平台，可用來以各種圖形（例如圖表和表格）監視、搜尋、分析及視覺化您的資料。如需相關資訊，請參閱[在 Kibana 中分析日誌](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-analyzing_logs_Kibana#analyzing_logs_Kibana)。
 
 * 您可以直接從 Web 瀏覽器啟動 Kibana。如需相關資訊，請參閱[從 Web 瀏覽器導覽至 Kibana](/docs/services/CloudLogAnalysis/kibana/launch.html#launch_Kibana_from_browser)。
-* 您可以在叢集環境定義內從 {{site.data.keyword.Bluemix_notm}} 使用者介面中啟動 Kibana。如需相關資訊，請參閱[從 Kubernetes 叢集中所部署容器的儀表板導覽至 Kibana](/docs/services/CloudLogAnalysis/kibana/launch.html#launch_Kibana_for_containers_kube)。
+* 您可以在叢集環境定義內從 {{site.data.keyword.cloud_notm}} 使用者介面中啟動 Kibana。如需相關資訊，請參閱[從 Kubernetes 叢集中所部署容器的儀表板導覽至 Kibana](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-launch#launch_Kibana_for_containers_kube)。
 
-如果您將容器中所執行應用程式的日誌資料以 JSON 格式轉遞至容器運行環境日誌收集器，則可以在 Kibana 中使用 JSON 欄位來搜尋及分析日誌資料。如需相關資訊，請參閱[傳送日誌，讓您可以使用訊息中的欄位作為 Kibana 搜尋欄位](/docs/services/CloudLogAnalysis/containers/containers_kubernetes.html#send_data_in_json)。
+如果您將容器中所執行應用程式的日誌資料以 JSON 格式轉遞至容器運行環境日誌收集器，則可以在 Kibana 中使用 JSON 欄位來搜尋及分析日誌資料。如需相關資訊，請參閱[傳送日誌，讓您可以使用訊息中的欄位作為 Kibana 搜尋欄位](/docs/services/CloudLogAnalysis/containers?topic=cloudloganalysis-containers_kubernetes#send_data_in_json)。
 
 若要在 Kibana 中檢視日誌，請考量下列資訊：
 
@@ -447,4 +469,4 @@ subcollection: cloudloganalysis
 ## 指導教學：針對 Kubernetes 叢集中所部署的應用程式，在 Kibana 中分析日誌
 {: #tutorial1}
 
-若要瞭解如何使用 Kibana 來分析 Kubernetes 叢集中所部署容器的日誌，請參閱[針對 Kubernetes 叢集中所部署的應用程式，在 Kibana 中分析日誌](/docs/services/CloudLogAnalysis/tutorials/container_logs.html#container_logs)。
+若要瞭解如何使用 Kibana 來分析 Kubernetes 叢集中所部署容器的日誌，請參閱[針對 Kubernetes 叢集中所部署的應用程式，在 Kibana 中分析日誌](/docs/services/CloudLogAnalysis/tutorials?topic=cloudloganalysis-container_logs#container_logs)。

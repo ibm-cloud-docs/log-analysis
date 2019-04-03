@@ -38,11 +38,11 @@ Para trabalhar com o serviço {{site.data.keyword.loganalysisshort}} por meio da
 
 O serviço {{site.data.keyword.loganalysisshort}} suporta os modelos de autenticação a seguir:
 
-* [Autenticação do UAA](/docs/services/CloudLogAnalysis/security/auth_uaa.html#auth_uaa)
+* [Autenticação do UAA](/docs/services/CloudLogAnalysis/security?topic=cloudloganalysis-auth_uaa#auth_uaa)
 
     É possível usar a CLI apenas para gerenciar tokens do UAA.
 	
-* [Autenticação do IAM](/docs/services/CloudLogAnalysis/security/auth_iam.html#auth_iam1)
+* [Autenticação do IAM](/docs/services/CloudLogAnalysis/security?topic=cloudloganalysis-auth_iam1#auth_iam1)
 
     O modelo de autenticação do IAM oferece recursos de gerenciamento de UI, CLI ou API. 
 
@@ -51,13 +51,13 @@ O serviço {{site.data.keyword.loganalysisshort}} suporta os modelos de autentic
 ## Funções
 {: #roles3}
 
-Há dois tipos de funções no {{site.data.keyword.Bluemix_notm}} que controlam as ações que os usuários podem executar quando eles trabalham com o serviço {{site.data.keyword.loganalysisshort}}:
+Há dois tipos de funções no {{site.data.keyword.cloud_notm}} que controlam as ações que os usuários podem executar quando eles trabalham com o serviço {{site.data.keyword.loganalysisshort}}:
 
 * Funções do Cloud Foundry (CF): você controla quais ações do {{site.data.keyword.loganalysisshort}} um usuário pode executar, designando uma ou mais funções do CF. Com essas funções, você controla as permissões do usuário para visualizar e gerenciar logs em um espaço ou em uma organização.
 * Funções do IAM: você controla as ações do {{site.data.keyword.loganalysisshort}} que um usuário pode executar designando uma ou mais funções do IAM. Com essas funções, você controla as permissões do usuário para visualizar e gerenciar logs de contas. 
 
 
-A tabela a seguir lista o tipo de funções e o domínio no {{site.data.keyword.Bluemix_notm}} que elas controlam:
+A tabela a seguir lista o tipo de funções e o domínio no {{site.data.keyword.cloud_notm}} que elas controlam:
 
 <table>
   <caption>Tabela 1. Tipo de funções que controlam as ações por domínio</caption>
@@ -161,7 +161,7 @@ A tabela a seguir lista o relacionamento entre a API, uma ação de serviço e u
     <td>GET /v1/logging/logs</td>
     <td>ibmcloud-log-analysis.domain.log_read</td>
 	<td>Administrador, Editor, Visualizador</td>
-	<td>Visualize informações sobre os logs em um espaço do {{site.data.keyword.Bluemix_notm}} ou no nível de conta.</td>
+	<td>Visualize informações sobre os logs em um espaço do {{site.data.keyword.cloud_notm}} ou no nível de conta.</td>
   </tr>
   <tr>
     <td>GET /v1/logging/logs/download</td>
@@ -173,13 +173,13 @@ A tabela a seguir lista o relacionamento entre a API, uma ação de serviço e u
     <td>GET /v1/logging/logs/retention</td>
     <td>ibmcloud-log-analysis.domain.policy_read</td>
     <td>Administrador, Editor, Visualizador</td>
-    <td>Exibe o período de retenção para os logs que estão disponíveis em um espaço ou conta do {{site.data.keyword.Bluemix_notm}}.</td>
+    <td>Exibe o período de retenção para os logs que estão disponíveis em um espaço ou conta do {{site.data.keyword.cloud_notm}}.</td>
   </tr>
   <tr>
     <td>PUT /v1/logging/logs/retention</td>
     <td>ibmcloud-log-analysis.domain.policy_write</td>
     <td>Administrador, Editor</td>
-    <td>Atualiza o período de retenção para logs que estão disponíveis em um espaço ou conta do {{site.data.keyword.Bluemix_notm}}.</td>
+    <td>Atualiza o período de retenção para logs que estão disponíveis em um espaço ou conta do {{site.data.keyword.cloud_notm}}.</td>
   </tr>
   <tr>
     <td>GET /v1/logging/sessions</td>
@@ -217,14 +217,14 @@ Para gerenciar logs usando a API do {{site.data.keyword.loganalysisshort}}, deve
 * Use a CLI do {{site.data.keyword.loganalysisshort}} para obter o token do UAA. 
 * O token tem um tempo de expiração. 
 
-Para obter mais informações, veja [Obtendo o token do UAA](/docs/services/CloudLogAnalysis/security/auth_uaa.html#auth_uaa).
+Para obter mais informações, veja [Obtendo o token do UAA](/docs/services/CloudLogAnalysis/security?topic=cloudloganalysis-auth_uaa#auth_uaa).
 
 **Trabalhando com logs que estão disponíveis no domínio de contas**
 
-* Use a CLI do {{{site.data.keyword.Bluemix_notm}} para obter o token do IAM. 
+* Use a CLI do {{site.data.keyword.cloud_notm}} para obter o token do IAM. 
 * O token tem um tempo de expiração. 
 
-Para obter mais informações, veja [Obtendo o token do IAM](/docs/services/CloudLogAnalysis/security/auth_iam.html#auth_iam1).
+Para obter mais informações, veja [Obtendo o token do IAM](/docs/services/CloudLogAnalysis/security?topic=cloudloganalysis-auth_iam1#auth_iam1).
 
 
 ## Obtendo o token de criação de log para enviar logs para o Log Analysis
@@ -234,23 +234,25 @@ Para enviar logs para o serviço {{site.data.keyword.loganalysisshort}}, você p
 
 Para enviar logs para um domínio de espaço, escolha um dos métodos a seguir:
 
-* [Obtendo o token de criação de log para enviar logs para um espaço usando o comando ibmcloud service do {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/security/logging_token.html#logging_token_cloud_cli)
-* [Obtendo o token de criação de log para enviar logs para um espaço usando a CLI do Log Analysis](/docs/services/CloudLogAnalysis/security/logging_token.html#logging_token_la_cloud_cli)
-* [Obtendo o token de criação para enviar logs para um espaço usando a API do Log Analysis](/docs/services/CloudLogAnalysis/security/logging_token.html#logging_token_api)
+* [Obtendo o token de criação de log para enviar logs para um espaço usando o comando ibmcloud service do {{site.data.keyword.cloud_notm}}](/docs/services/CloudLogAnalysis/security?topic=cloudloganalysis-logging_token#logging_token_cloud_cli)
+* [Obtendo o token de criação de log para enviar logs para um espaço usando a CLI do Log Analysis](/docs/services/CloudLogAnalysis/security?topic=cloudloganalysis-logging_token#logging_token_la_cloud_cli)
+* [Obtendo o token de criação para enviar logs para um espaço usando a API do Log Analysis](/docs/services/CloudLogAnalysis/security?topic=cloudloganalysis-logging_token#logging_token_api)
 
 
 ## Concedendo permissões para um usuário para trabalhar com logs
 {: #grant_permissions1}
 
-Para que um usuário possa gerenciar logs ou visualizar logs, o usuário deve receber permissões no {{site.data.keyword.Bluemix_notm}} para trabalhar com o serviço {{site.data.keyword.loganalysisshort}}.
+Para que um usuário possa gerenciar logs ou visualizar logs, o usuário deve receber permissões no {{site.data.keyword.cloud_notm}} para trabalhar com o serviço {{site.data.keyword.loganalysisshort}}.
 
-* Para obter informações sobre as permissões necessárias para gerenciar os logs, veja [Funções que são necessárias para um usuário para gerenciar os logs](/docs/services/CloudLogAnalysis/manage_logs.html#roles1).
-* Para obter informações sobre as permissões necessárias para visualizar logs, veja [Funções que são necessárias para um usuário para visualizar logs](/docs/services/CloudLogAnalysis/kibana/analyzing_logs_Kibana.html#roles).
+* Para obter informações sobre as permissões necessárias para gerenciar os logs, veja [Funções que são necessárias para um usuário para gerenciar os logs](/docs/services/CloudLogAnalysis?topic=cloudloganalysis-manage_logs#roles1).
+* Para obter informações sobre as permissões necessárias para visualizar logs, veja [Funções que são necessárias para um usuário para visualizar logs](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-analyzing_logs_Kibana#roles).
 
 Para obter mais informações sobre como conceder permissões, veja:
 
-* [Designar uma política do IAM para um usuário por meio da UI do {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/security/grant_permissions.html#grant_permissions).
-* [Designar uma política do IAM para um usuário usando a linha de comandos](/docs/services/CloudLogAnalysis/security/grant_permissions.html#grant_permissions_commandline).
-* [Concedendo a um usuário permissões de usuário para visualizar logs de espaço usando a UI do {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/security/grant_permissions.html#grant_permissions_ui_space).
+* [Designar
+uma política do IAM a um usuário por meio da IU do {{site.data.keyword.cloud_notm}}](/docs/services/CloudLogAnalysis/security?topic=cloudloganalysis-grant_permissions#grant_permissions).
+* [Designar uma política do IAM para um usuário usando a linha de comandos](/docs/services/CloudLogAnalysis/security?topic=cloudloganalysis-grant_permissions#grant_permissions_commandline).
+* [Concedendo
+a um usuário permissões para visualizar logs de espaço usando a IU do {{site.data.keyword.cloud_notm}}](/docs/services/CloudLogAnalysis/security?topic=cloudloganalysis-grant_permissions#grant_permissions_ui_space).
 
 

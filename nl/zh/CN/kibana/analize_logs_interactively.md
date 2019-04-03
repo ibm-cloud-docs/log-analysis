@@ -28,7 +28,7 @@ subcollection: cloudloganalysis
 在“发现”页面中，可以通过交互方式查看和分析日志。可以使用 Lucene 查询语言来定义搜索查询以过滤这些数据。对于每个搜索查询，可以应用过滤器来优化可供分析的条目。可以保存搜索以供未来复用。
 {:shortdesc}
 
-在 {{site.data.keyword.Bluemix_notm}} 中，缺省情况下，通过 {{site.data.keyword.Bluemix_notm}} UI 启动 Kibana 时在“发现”页面中显示的数据集配置为仅显示从中启动 Kibana 的 Cloud Foundry (CF) 应用程序或容器的条目。有关如何查看“发现”页面显示的数据子集的更多信息，请参阅[确定显示的数据](/docs/services/CloudLogAnalysis/kibana/analize_logs_interactively.html#identify_data)。
+在 {{site.data.keyword.Bluemix_notm}} 中，缺省情况下，通过 {{site.data.keyword.Bluemix_notm}} UI 启动 Kibana 时在“发现”页面中显示的数据集配置为仅显示从中启动 Kibana 的 Cloud Foundry (CF) 应用程序或容器的条目。有关如何查看“发现”页面显示的数据子集的更多信息，请参阅[确定显示的数据](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-analize_logs_interactively#identify_data)。
 
 下表显示了通过 {{site.data.keyword.Bluemix_notm}} 启动 Kibana 时，每种资源的缺省查询：
 
@@ -52,12 +52,12 @@ subcollection: cloudloganalysis
 |任务|描述
 | 
 |------|-------------|
-|[添加字段列](/docs/services/CloudLogAnalysis/kibana/analize_logs_interactively.html#discover_add_fields_to_table)|添加字段以查看分析所需的特定数据，而不查看完整消息。|
-|[自动刷新数据](/docs/services/CloudLogAnalysis/kibana/analize_logs_interactively.html#discover_view_refresh_interval)|使用最新的条目刷新表中显示的数据。缺省情况下，刷新为**关闭**。|
-|[按已建立索引的字段的值对条目排序](/docs/services/CloudLogAnalysis/kibana/analize_logs_interactively.html#discover_sort_by_table)|对条目重新排序以更轻松地进行分析。|
-|[重新排列字段列](/docs/services/CloudLogAnalysis/kibana/analize_logs_interactively.html#discover_rearrange_fields_in_table)|将表中字段的位置移至所需的位置。|
-|[除去字段列](/docs/services/CloudLogAnalysis/kibana/analize_logs_interactively.html#discover_remove_fields_from_table)|除去视图中分析不需要的字段。|
-|[查看条目](/docs/services/CloudLogAnalysis/kibana/analize_logs_interactively.html#discover_view_entry_in_table)|展开表中的条目，以查看按字段解析或解析为 JSON 的条目的详细信息。|
+|[添加字段列](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-analize_logs_interactively#discover_add_fields_to_table)|添加字段以查看分析所需的特定数据，而不查看完整消息。|
+|[自动刷新数据](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-analize_logs_interactively#discover_view_refresh_interval)|使用最新的条目刷新表中显示的数据。缺省情况下，刷新为**关闭**。|
+|[按已建立索引的字段的值对条目排序](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-analize_logs_interactively#discover_sort_by_table)|对条目重新排序以更轻松地进行分析。|
+|[重新排列字段列](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-analize_logs_interactively#discover_rearrange_fields_in_table)|将表中字段的位置移至所需的位置。|
+|[除去字段列](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-analize_logs_interactively#discover_remove_fields_from_table)|除去视图中分析不需要的字段。|
+|[查看条目](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-analize_logs_interactively#discover_view_entry_in_table)|展开表中的条目，以查看按字段解析或解析为 JSON 的条目的详细信息。|
 {: caption="表 2. 定制表的任务" caption-side="top"}
 
 <br>
@@ -66,31 +66,31 @@ subcollection: cloudloganalysis
 
 ![Kibana 中的“发现”页面](images/discover_page.gif "Kibana 中的“发现”页面")
 
-可以定义其他搜索。有关更多信息，请参阅[通过定义定制搜索来过滤日志](/docs/services/CloudLogAnalysis/kibana/define_search.html#define_search)。定义新搜索时，直方图和表中显示的数据会自动更新。
+可以定义其他搜索。有关更多信息，请参阅[通过定义定制搜索来过滤日志](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-define_search#define_search)。定义新搜索时，直方图和表中显示的数据会自动更新。
 
 要定义新搜索，请将缺省搜索查询用作起点，然后通过执行以下任务来优化搜索：
 
-* 应用字段过滤器，以优化可以查看的数据集。可以切换每个过滤器，将过滤器锁定到页面，根据需要启用或禁用过滤器，以及配置过滤器以包含或排除值。有关更多信息，请参阅[在 Kibana 中过滤日志](/docs/services/CloudLogAnalysis/kibana/filter_logs.html#filter_logs)。
+* 应用字段过滤器，以优化可以查看的数据集。可以切换每个过滤器，将过滤器锁定到页面，根据需要启用或禁用过滤器，以及配置过滤器以包含或排除值。有关更多信息，请参阅[在 Kibana 中过滤日志](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-filter_logs#filter_logs)。
 
-    **提示：**如果在*字段列表*中找不到希望查看的字段，或者在“发现”页面中所列出字段旁的某些放大镜处于禁用状态，请通过刷新“设置”页面中的索引模式来重新装入字段列表。有关更多信息，请参阅[重新装入字段列表](/docs/services/CloudLogAnalysis/kibana/analize_logs_interactively.html#discover_view_reload_fields)。
+    **提示：**如果在*字段列表*中找不到希望查看的字段，或者在“发现”页面中所列出字段旁的某些放大镜处于禁用状态，请通过刷新“设置”页面中的索引模式来重新装入字段列表。有关更多信息，请参阅[重新装入字段列表](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-analize_logs_interactively#discover_view_reload_fields)。
 
     例如，如果 CF 应用程序具有多个实例，您可能会希望分析特定实例的数据。您可以针对要分析的特定实例标识值定义字段过滤器。 
     
-* 为基于时间的数据定制*时间选取器*。可以定义查询的绝对时间范围或相对时间范围，也可以从一组预定义的值中进行选择。有关更多信息，请参阅[设置时间过滤器](/docs/services/CloudLogAnalysis/kibana/filter_logs.html#set_time_filter)。
+* 为基于时间的数据定制*时间选取器*。可以定义查询的绝对时间范围或相对时间范围，也可以从一组预定义的值中进行选择。有关更多信息，请参阅[设置时间过滤器](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-filter_logs#set_time_filter)。
 
-配置了用于定义要分析的数据子集的搜索后，可以将其保存以供日后复用。有关更多信息，请参阅[保存搜索](/docs/services/CloudLogAnalysis/kibana/define_search.html#save_search)。
+配置了用于定义要分析的数据子集的搜索后，可以将其保存以供日后复用。有关更多信息，请参阅[保存搜索](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-define_search#save_search)。
 
 可以使用在“发现”页面中定义的搜索来执行以下任一任务：
 
 |任务|描述
 |
 |------|-------------|
-|[删除搜索](/docs/services/CloudLogAnalysis/kibana/define_search.html#delete_search)|删除不再需要的搜索。|
-|[导出搜索](/docs/services/CloudLogAnalysis/kibana/define_search.html#export_search)|导出搜索以进行共享。|
-|[导入搜索](/docs/services/CloudLogAnalysis/kibana/define_search.html#import_search)|导入搜索。|
-|[重新装入搜索](/docs/services/CloudLogAnalysis/kibana/define_search.html#reload_search1)|上传现有搜索以重新分析一组数据。|
-|[刷新搜索的数据](/docs/services/CloudLogAnalysis/kibana/define_search.html#refresh_search)|针对通过搜索显示的数据配置自动刷新。|
-|[保存搜索](/docs/services/CloudLogAnalysis/kibana/define_search.html#save_search)|保存搜索以供日后复用。|
+|[删除搜索](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-define_search#delete_search)|删除不再需要的搜索。|
+|[导出搜索](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-define_search#export_search)|导出搜索以进行共享。|
+|[导入搜索](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-define_search#import_search)|导入搜索。|
+|[重新装入搜索](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-define_search#reload_search1)|上传现有搜索以重新分析一组数据。|
+|[刷新搜索的数据](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-define_search#refresh_search)|针对通过搜索显示的数据配置自动刷新。|
+|[保存搜索](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-define_search#save_search)|保存搜索以供日后复用。|
 {: caption="表 3. 使用搜索的任务" caption-side="top"}
 
 
@@ -98,7 +98,7 @@ subcollection: cloudloganalysis
 * 可以按字段查看统计信息。 
 * 可以按已配置的 `@timestamp` 在直方图中查看统计信息。
 
-有关更多信息，请参阅[查看字段数据统计信息](/docs/services/CloudLogAnalysis/kibana/analize_logs_interactively.html#discover_view_fields_stats)。
+有关更多信息，请参阅[查看字段数据统计信息](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-analize_logs_interactively#discover_view_fields_stats)。
 
 **注**：表和直方图中显示的数据是静态的。要始终查看最新的条目，必须设置刷新时间间隔。 
 
@@ -131,7 +131,7 @@ subcollection: cloudloganalysis
 ## 自动刷新数据
 {: #discover_view_refresh_interval}
 
-缺省情况下，在 {{site.data.keyword.Bluemix_notm}} 中，*自动刷新*时间段设置为**关闭**，因此在 Kibana 中可以查看的数据对应于自启动 Kibana 以来最近 15 分钟的数据。15 分钟对应于预配置的时间过滤器。可以通过设置其他时间段来更改此时间。有关更多信息，请参阅[设置时间过滤器](/docs/services/CloudLogAnalysis/kibana/filter_logs.html#set_time_filter)。
+缺省情况下，在 {{site.data.keyword.Bluemix_notm}} 中，*自动刷新*时间段设置为**关闭**，因此在 Kibana 中可以查看的数据对应于自启动 Kibana 以来最近 15 分钟的数据。15 分钟对应于预配置的时间过滤器。可以通过设置其他时间段来更改此时间。有关更多信息，请参阅[设置时间过滤器](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-filter_logs#set_time_filter)。
 
 要设置*自动刷新*时间段，请完成以下步骤：
 

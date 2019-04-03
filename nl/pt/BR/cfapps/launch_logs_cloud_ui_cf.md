@@ -79,6 +79,6 @@ etapas a seguir:
 
 Por padrão, os logs disponíveis para análise incluem dados dos últimos 15 minutos.
 
-**Dica:** para analisar dados para um período customizado, veja [Análise de log avançada com o Kibana](/docs/services/CloudLogAnalysis/kibana/analyzing_logs_Kibana.html#analyzing_logs_Kibana). 
+**Dica:** para analisar dados para um período customizado, veja [Análise de log avançada com o Kibana](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-analyzing_logs_Kibana#analyzing_logs_Kibana). 
 
 

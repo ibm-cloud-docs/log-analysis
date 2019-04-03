@@ -58,7 +58,7 @@ CLI를 통해 Bluemix의 서비스 플랜을 변경하려면 다음 단계를 �
 
 1. {{site.data.keyword.Bluemix_notm}}의 지역, 조직 및 영역에 로그인하십시오. 
 
-    자세한 정보는 [{{site.data.keyword.Bluemix_notm}}에 로그인하는 방법](/docs/services/CloudLogAnalysis/qa/cli_qa.html#login)을 참조하십시오.
+    자세한 정보는 [{{site.data.keyword.Bluemix_notm}}에 로그인하는 방법](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#login)을 참조하십시오.
 	
 2. `ibmcloud service list` 명령을 실행하여 현재 플랜을 확인하고, 영역에서 사용할 수 있는 서비스 목록에서 {{site.data.keyword.loganalysisshort}} 서비스 이름을 가져오십시오. 
 

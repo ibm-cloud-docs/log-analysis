@@ -141,7 +141,7 @@ subcollection: cloudloganalysis
 
 **참고:** 서비스 플랜에 포함된 기능은 해당 플랜으로 {{site.data.keyword.loganalysisshort}} 서비스를 프로비저닝한 영역에서만 사용됩니다.
 
-{{site.data.keyword.Bluemix_notm}} UI 또는 명령행을 통해 플랜을 변경할 수 있습니다. 플랜은 언제든지 업그레이드하거나 줄일 수 있습니다. 서비스 플랜 업그레이드에 대한 자세한 정보는 [플랜 변경](/docs/services/CloudLogAnalysis/how-to/change_plan.html#change_plan)을 참조하십시오. 
+{{site.data.keyword.Bluemix_notm}} UI 또는 명령행을 통해 플랜을 변경할 수 있습니다. 플랜은 언제든지 업그레이드하거나 줄일 수 있습니다. 서비스 플랜 업그레이드에 대한 자세한 정보는 [플랜 변경](/docs/services/CloudLogAnalysis/how-to?topic=cloudloganalysis-change_plan#change_plan)을 참조하십시오. 
 
 다음 표에서는 사용 가능한 플랜에 대한 개요를 설명합니다.
 

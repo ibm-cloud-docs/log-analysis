@@ -29,7 +29,7 @@ subcollection: cloudloganalysis
 您可以使用「多方承租戶 Logstash 轉遞程式」，將日誌從 {{site.data.keyword.IBM_notm}} Cloud 外部傳送至 {{site.data.keyword.loganalysisshort}} 服務。
 {:shortdesc}
 
-此特性僅適用於容許日誌汲取的服務方案。如需相關資訊，請參閱[服務方案](/docs/services/CloudLogAnalysis/log_analysis_ov.html#plans)。
+此特性僅適用於容許日誌汲取的服務方案。如需相關資訊，請參閱[服務方案](/docs/services/CloudLogAnalysis?topic=cloudloganalysis-log_analysis_ov#plans)。
 
 若要將日誌從 {{site.data.keyword.IBM_notm}} Cloud 外部傳送至 {{site.data.keyword.loganalysisshort}} 服務，您需要下列 Cloud 資源：
 
@@ -38,7 +38,7 @@ subcollection: cloudloganalysis
 
 在本端環境中，您必須配置 mt-logstash-forwarder，並指定您要傳送至 {{site.data.keyword.loganalysisshort}} 服務的日誌檔。
 
-如需配置本端環境以將日誌傳送至 {{site.data.keyword.loganalysisshort}} 服務的相關資訊，請參閱[將內部部署資料傳送至 {{site.data.keyword.Bluemix_notm}} 中的空間](/docs/services/CloudLogAnalysis/how-to/send-data/send_data_mt.html#send_data_mt)。
+如需配置本端環境以將日誌傳送至 {{site.data.keyword.loganalysisshort}} 服務的相關資訊，請參閱[將內部部署資料傳送至 {{site.data.keyword.Bluemix_notm}} 中的空間](/docs/services/CloudLogAnalysis/how-to/send-data?topic=cloudloganalysis-send_data_mt#send_data_mt)。
 
 
 

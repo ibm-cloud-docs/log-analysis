@@ -37,13 +37,13 @@ subcollection: cloudloganalysis
 
 1. {{site.data.keyword.Bluemix_notm}} CLI をインストールします。
 
-   詳しくは、[『{{site.data.keyword.Bluemix_notm}}CLI のダウンロードとインストール』](/docs/cli/index.html#overview)を参照してください。
+   詳しくは、[『{{site.data.keyword.Bluemix_notm}}CLI のダウンロードとインストール』](/docs/cli?topic=cloud-cli-ibmcloud-cli#overview)を参照してください。
    
    CLI がインストールされている場合は、次のステップに進みます。
     
 2. {{site.data.keyword.Bluemix_notm}} で、地域、組織、およびスペースにログインします。 
 
-    詳しくは、『[{{site.data.keyword.Bluemix_notm}} にログインするにはどうすればよいですか](/docs/services/CloudLogAnalysis/qa/cli_qa.html#login)』を参照してください。
+    詳しくは、『[{{site.data.keyword.Bluemix_notm}} にログインするにはどうすればよいですか](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#login)』を参照してください。
 	
 3. 次のコマンドを実行します。
 
@@ -62,13 +62,13 @@ subcollection: cloudloganalysis
 
 1. {{site.data.keyword.Bluemix_notm}} CLI をインストールします。
 
-   詳しくは、[『{{site.data.keyword.Bluemix_notm}}CLI のダウンロードとインストール』](/docs/cli/index.html#overview)を参照してください。
+   詳しくは、[『{{site.data.keyword.Bluemix_notm}}CLI のダウンロードとインストール』](/docs/cli?topic=cloud-cli-ibmcloud-cli#overview)を参照してください。
    
    CLI がインストールされている場合は、次のステップに進みます。
     
 2. {{site.data.keyword.Bluemix_notm}} で、地域、組織、およびスペースにログインします。 
 
-    詳しくは、『[{{site.data.keyword.Bluemix_notm}} にログインするにはどうすればよいですか](/docs/services/CloudLogAnalysis/qa/cli_qa.html#login)』を参照してください。
+    詳しくは、『[{{site.data.keyword.Bluemix_notm}} にログインするにはどうすればよいですか](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#login)』を参照してください。
 	
 3. {{site.data.keyword.loganalysisshort}} サービスがプロビジョンされたスペース内でサービス・キーを作成します。 次のコマンドを実行します。
 
@@ -152,15 +152,15 @@ subcollection: cloudloganalysis
 
 1. {{site.data.keyword.Bluemix_notm}} CLI をインストールします。
 
-   詳しくは、[『{{site.data.keyword.Bluemix_notm}}CLI のダウンロードとインストール』](/docs/cli/index.html#overview)を参照してください。
+   詳しくは、[『{{site.data.keyword.Bluemix_notm}}CLI のダウンロードとインストール』](/docs/cli?topic=cloud-cli-ibmcloud-cli#overview)を参照してください。
    
    CLI がインストールされている場合は、次のステップに進みます。
     
 2. {{site.data.keyword.Bluemix_notm}} で、地域、組織、およびスペースにログインします。 
 
-    詳しくは、『[{{site.data.keyword.Bluemix_notm}} にログインするにはどうすればよいですか](/docs/services/CloudLogAnalysis/qa/cli_qa.html#login)』を参照してください。
+    詳しくは、『[{{site.data.keyword.Bluemix_notm}} にログインするにはどうすればよいですか](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#login)』を参照してください。
 	
-3. [UAA トークン](/docs/services/CloudLogAnalysis/security/auth_uaa.html#uaa_cli)を取得します。
+3. [UAA トークン](/docs/services/CloudLogAnalysis/security?topic=cloudloganalysis-auth_uaa#uaa_cli)を取得します。
 
     例えば、`ibmcloud cf oauth-token` コマンドを実行して、UAA トークンを取得します。
 
@@ -173,7 +173,7 @@ subcollection: cloudloganalysis
 
 4. スペースの GUID を取得します。
 
-   詳しくは、『[スペースの GUID の取得方法を教えてください](/docs/services/CloudLogAnalysis/qa/cli_qa.html#space_guid2)』を参照してください。  
+   詳しくは、『[スペースの GUID の取得方法を教えてください](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#space_guid2)』を参照してください。  
 	
 5. 変数 TOKEN および SPACEID をエクスポートします。
 
@@ -199,7 +199,7 @@ subcollection: cloudloganalysis
 	各部分の説明:
 	* SPACEID は、サービスが実行されているスペースの GUID です。
 	* TOKEN は、前のステップで取得した UAA トークンから bearer 接頭部を除外したものです。
-	* LOGGING_ENDPOINT は、組織およびスペースが使用可能な {{site.data.keyword.Bluemix_notm}} 地域の {{site.data.keyword.loganalysisshort}} エンドポイントです。 LOGGING_ENDPOINT は地域ごとに異なります。 様々なエンドポイントの URL を確認するには、『[エンドポイント](/docs/services/CloudLogAnalysis/manage_logs.html#endpoints)』を参照してください。.
+	* LOGGING_ENDPOINT は、組織およびスペースが使用可能な {{site.data.keyword.Bluemix_notm}} 地域の {{site.data.keyword.loganalysisshort}} エンドポイントです。 LOGGING_ENDPOINT は地域ごとに異なります。 様々なエンドポイントの URL を確認するには、『[エンドポイント](/docs/services/CloudLogAnalysis?topic=cloudloganalysis-manage_logs#endpoints)』を参照してください。.
 	
     このコマンドは、そのスペースにログを送信するめに使用する必要のあるロギング・トークンを返します。
 	

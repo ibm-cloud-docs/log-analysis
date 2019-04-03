@@ -40,11 +40,11 @@ Complete las siguientes tareas para definir una búsqueda personalizada:
 
     2. Acceda a Kibana. Pulse **Vista avanzada** ![Enlace Vista avanzada](images/logging_advanced_view.jpg "Enlace Vista avanzada"). Se visualiza el panel de control de Kibana.
     
-    Para contenedores que se ejecutan en un clúster Kubernetes, [inicie Kibana desde el navegador](/docs/services/CloudLogAnalysis/kibana4/k4_launch.html#launch_Kibana_from_browser1). 
+    Para contenedores que se ejecutan en un clúster de Kubernetes, [inicie Kibana desde el navegador](/docs/services/CloudLogAnalysis/kibana4?topic=cloudloganalysis-k4_launch#launch_Kibana_from_browser1). 
     
     Cuando se accede a Kibana, se aplica la búsqueda predeterminada. Puede ver los registros para consulta la lista de instancias del recurso para el que ha iniciado Kibana. Puede filtrar los registros para cualquiera de los recursos de {{site.data.keyword.Bluemix_notm}} o para todos ellos en este espacio.
 
-2. Examine la página Descubrir para ver el subconjunto de datos que muestra. Para obtener más información, consulte [Identificación de los datos que se muestran en la página Descubrir de Kibana](/docs/services/CloudLogAnalysis/kibana4/logging_kibana_analize_logs_interactively.html#k4_identify_data). A continuación, modifique la consulta predeterminada para filtrar las entradas.
+2. Examine la página Descubrir para ver el subconjunto de datos que muestra. Para obtener más información, consulte [Identificación de los datos que se muestran en la página Descubrir de Kibana](/docs/services/CloudLogAnalysis/kibana4?topic=cloudloganalysis-kibana_analize_logs_interactively#k4_identify_data). A continuación, modifique la consulta predeterminada para filtrar las entradas.
 
     **Nota:** Utilice el lenguaje de consulta de Lucene para definir la consulta personalizada. Para obtener más información, consulte [Apache Lucene - Sintaxis del analizador de consultas ![Icono de enlace externo](../../../icons/launch-glyph.svg "Icono de enlace externo")](https://lucene.apache.org/core/2_9_4/queryparsersyntax.html){: new_window}
     

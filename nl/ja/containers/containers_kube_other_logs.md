@@ -59,7 +59,7 @@ subcollection: cloudloganalysis
 
 1. {{site.data.keyword.Bluemix_notm}} で、地域、組織、およびスペースにログインします。 
 
-    詳しくは、『[{{site.data.keyword.Bluemix_notm}} にログインするにはどうすればよいですか](/docs/services/CloudLogAnalysis/qa/cli_qa.html#login)』を参照してください。
+    詳しくは、『[{{site.data.keyword.Bluemix_notm}} にログインするにはどうすればよいですか](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#login)』を参照してください。
     
 2. {{site.data.keyword.loganalysisshort}} サービス・プラグインを初期化します。
 
@@ -91,11 +91,11 @@ subcollection: cloudloganalysis
 
 どのクラスター・ログを {{site.data.keyword.loganalysisshort}} サービスに転送するのかを選択できます。 
 
-* stdout および stderr の自動ログ収集および転送を有効にするには、[コンテナー・ログの自動ログ収集および転送の有効化](/docs/services/CloudLogAnalysis/containers/containers_kube_other_logs.html#containers)を参照してください。
-* アプリケーション・ログの自動ログ収集および転送を有効にするには、[アプリケーション・ログの自動ログ収集および転送の有効化](/docs/services/CloudLogAnalysis/containers/containers_kube_other_logs.html#apps)を参照してください。
-* ワーカー・ログの自動ログ収集および転送を有効にするには、[ワーカー・ログの自動ログ収集および転送の有効化](/docs/services/CloudLogAnalysis/containers/containers_kube_other_logs.html#workers)を参照してください。
-* Kubernetes システム・コンポーネント・ログの自動ログ収集および転送を有効にするには、[Kubernetes システム・コンポーネント・ログの自動ログ収集および転送の有効化](/docs/services/CloudLogAnalysis/containers/containers_kube_other_logs.html#system)を参照してください。
-* Kubernetes Ingress コントローラー・ログの自動ログ収集および転送を有効にするには、[Kubernetes Ingress コントローラー・ログの自動ログ収集および転送の有効化](/docs/services/CloudLogAnalysis/containers/containers_kube_other_logs.html#controller)を参照してください。
+* stdout および stderr の自動ログ収集および転送を有効にするには、[コンテナー・ログの自動ログ収集および転送の有効化](/docs/services/CloudLogAnalysis/containers?topic=cloudloganalysis-containers_kube_other_logs#containers)を参照してください。
+* アプリケーション・ログの自動ログ収集および転送を有効にするには、[アプリケーション・ログの自動ログ収集および転送の有効化](/docs/services/CloudLogAnalysis/containers?topic=cloudloganalysis-containers_kube_other_logs#apps)を参照してください。
+* ワーカー・ログの自動ログ収集および転送を有効にするには、[ワーカー・ログの自動ログ収集および転送の有効化](/docs/services/CloudLogAnalysis/containers?topic=cloudloganalysis-containers_kube_other_logs#workers)を参照してください。
+* Kubernetes システム・コンポーネント・ログの自動ログ収集および転送を有効にするには、[Kubernetes システム・コンポーネント・ログの自動ログ収集および転送の有効化](/docs/services/CloudLogAnalysis/containers?topic=cloudloganalysis-containers_kube_other_logs#system)を参照してください。
+* Kubernetes Ingress コントローラー・ログの自動ログ収集および転送を有効にするには、[Kubernetes Ingress コントローラー・ログの自動ログ収集および転送の有効化](/docs/services/CloudLogAnalysis/containers?topic=cloudloganalysis-containers_kube_other_logs#controller)を参照してください。
 
 
 
@@ -142,7 +142,7 @@ subcollection: cloudloganalysis
  
 3. ユーザーに適切な許可がない場合は、以下のステップを実行します。
 
-    1. ユーザーに次の許可を付与します。組織の *orgManager* 役割。スペースの *SpaceManager* および*開発者* の役割。 詳しくは、[IBM Cloud UI を使用して、スペース・ログを表示する許可をユーザーに付与する](/docs/services/CloudLogAnalysis/security/grant_permissions.html#grant_permissions_ui_space)を参照してください。
+    1. ユーザーに次の許可を付与します。組織の *orgManager* 役割。スペースの *SpaceManager* および*開発者* の役割。 詳しくは、[IBM Cloud UI を使用して、スペース・ログを表示する許可をユーザーに付与する](/docs/services/CloudLogAnalysis/security?topic=cloudloganalysis-grant_permissions#grant_permissions_ui_space)を参照してください。
     
     2. ロギング構成を更新します。 次のコマンドを実行します。
     
@@ -170,7 +170,7 @@ ibmcloud ks logging-config-create ClusterName --logsource container --namespace 
 各部分の説明: 
 
 * *ClusterName* はクラスターの名前です。
-* *EndPoint* は、{{site.data.keyword.loganalysisshort}} サービスがプロビジョンされた地域内のロギング・サービスの URL です。 エンドポイントのリストについては、[エンドポイント](/docs/services/CloudLogAnalysis/log_ingestion.html#log_ingestion_urls)を参照してください。
+* *EndPoint* は、{{site.data.keyword.loganalysisshort}} サービスがプロビジョンされた地域内のロギング・サービスの URL です。 エンドポイントのリストについては、[エンドポイント](/docs/services/CloudLogAnalysis?topic=cloudloganalysis-log_ingestion#log_ingestion_urls)を参照してください。
 * *OrgName* は、スペースがある組織の名前です。
 * *SpaceName* は、{{site.data.keyword.loganalysisshort}} サービスがプロビジョンされたスペースの名前です。
 
@@ -204,7 +204,7 @@ ibmcloud ks logging-config-create ClusterName --logsource application --type ibm
 各部分の説明: 
 
 * *ClusterName* はクラスターの名前です。
-* *EndPoint* は、{{site.data.keyword.loganalysisshort}} サービスがプロビジョンされた地域内のロギング・サービスの URL です。 エンドポイントのリストについては、[エンドポイント](/docs/services/CloudLogAnalysis/log_ingestion.html#log_ingestion_urls)を参照してください。
+* *EndPoint* は、{{site.data.keyword.loganalysisshort}} サービスがプロビジョンされた地域内のロギング・サービスの URL です。 エンドポイントのリストについては、[エンドポイント](/docs/services/CloudLogAnalysis?topic=cloudloganalysis-log_ingestion#log_ingestion_urls)を参照してください。
 * *OrgName* は、スペースがある組織の名前です。
 * *SpaceName* は、{{site.data.keyword.loganalysisshort}} サービスがプロビジョンされたスペースの名前です。
 * *app-containers* はオプション・パラメーターであり、これを設定して、監視したいコンテナーのリストを定義できます。 それらのコンテナーのみから、ログが {{site.data.keyword.loganalysisshort}} に転送されます。 1 つ以上のコンテナーをコンマで区切って設定できます。
@@ -240,7 +240,7 @@ ibmcloud ks logging-config-create ClusterName --logsource worker --type ibm --ho
 各部分の説明: 
 
 * *ClusterName* はクラスターの名前です。
-* *EndPoint* は、{{site.data.keyword.loganalysisshort}} サービスがプロビジョンされた地域内のロギング・サービスの URL です。 エンドポイントのリストについては、[エンドポイント](/docs/services/CloudLogAnalysis/log_ingestion.html#log_ingestion_urls)を参照してください。
+* *EndPoint* は、{{site.data.keyword.loganalysisshort}} サービスがプロビジョンされた地域内のロギング・サービスの URL です。 エンドポイントのリストについては、[エンドポイント](/docs/services/CloudLogAnalysis?topic=cloudloganalysis-log_ingestion#log_ingestion_urls)を参照してください。
 * *OrgName* は、スペースがある組織の名前です。
 * *SpaceName* は、{{site.data.keyword.loganalysisshort}} サービスがプロビジョンされたスペースの名前です。
 
@@ -275,7 +275,7 @@ ibmcloud ks logging-config-create ClusterName --logsource kubernetes --type ibm 
 各部分の説明: 
 
 * *ClusterName* はクラスターの名前です。
-* *EndPoint* は、{{site.data.keyword.loganalysisshort}} サービスがプロビジョンされた地域内のロギング・サービスの URL です。 エンドポイントのリストについては、[エンドポイント](/docs/services/CloudLogAnalysis/log_ingestion.html#log_ingestion_urls)を参照してください。
+* *EndPoint* は、{{site.data.keyword.loganalysisshort}} サービスがプロビジョンされた地域内のロギング・サービスの URL です。 エンドポイントのリストについては、[エンドポイント](/docs/services/CloudLogAnalysis?topic=cloudloganalysis-log_ingestion#log_ingestion_urls)を参照してください。
 * *OrgName* は、スペースがある組織の名前です。
 * *SpaceName* は、{{site.data.keyword.loganalysisshort}} サービスがプロビジョンされたスペースの名前です。
 
@@ -310,7 +310,7 @@ ibmcloud ks logging-config-create ClusterName --logsource ingress --type ibm --h
 各部分の説明: 
 
 * *ClusterName* はクラスターの名前です。
-* *EndPoint* は、{{site.data.keyword.loganalysisshort}} サービスがプロビジョンされた地域内のロギング・サービスの URL です。 エンドポイントのリストについては、[エンドポイント](/docs/services/CloudLogAnalysis/log_ingestion.html#log_ingestion_urls)を参照してください。
+* *EndPoint* は、{{site.data.keyword.loganalysisshort}} サービスがプロビジョンされた地域内のロギング・サービスの URL です。 エンドポイントのリストについては、[エンドポイント](/docs/services/CloudLogAnalysis?topic=cloudloganalysis-log_ingestion#log_ingestion_urls)を参照してください。
 * *OrgName* は、スペースがある組織の名前です。
 * *SpaceName* は、{{site.data.keyword.loganalysisshort}} サービスがプロビジョンされたスペースの名前です。
 

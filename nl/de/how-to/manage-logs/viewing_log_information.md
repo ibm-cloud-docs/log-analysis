@@ -25,7 +25,7 @@ subcollection: cloudloganalysis
 # Protokollinformationen anzeigen
 {: #viewing_log_status}
 
-Mit dem Befehl [cf logging status](/docs/services/CloudLogAnalysis/reference/logging_cli.html#status1) können Sie Informationen zu den Protokollen abrufen, die in 'Log Collection' erfasst und gespeichert werden.
+Mit dem Befehl [cf logging status](/docs/services/CloudLogAnalysis/reference?topic=cloudloganalysis-logging_cli#status1) können Sie Informationen zu den Protokollen abrufen, die in 'Log Collection' erfasst und gespeichert werden.
 {:shortdesc}
 
 ## Informationen zu Protokollen über einen Zeitraum abrufen
@@ -43,7 +43,7 @@ Führen Sie die folgenden Schritte aus, um Informationen zu Protokollen abzurufe
 
 1. Melden Sie sich bei einer Region, Organisation und bei einem Bereich in {{site.data.keyword.Bluemix_notm}} an. 
 
-    Weitere Informationen finden Sie unter [Wie melde ich mich bei {{site.data.keyword.Bluemix_notm}} an?](/docs/services/CloudLogAnalysis/qa/cli_qa.html#login).
+    Weitere Informationen finden Sie in [Wie melde ich mich bei {{site.data.keyword.Bluemix_notm}} an?](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#login).
     
 2. Führen Sie den Befehl *status* aus.
 
@@ -80,7 +80,7 @@ Führen Sie die folgenden Schritte aus, um Informationen zu einem Protokolltyp �
 
 1. Melden Sie sich bei einer Region, Organisation und bei einem Bereich in {{site.data.keyword.Bluemix_notm}} an. 
 
-    Weitere Informationen finden Sie unter [Wie melde ich mich bei {{site.data.keyword.Bluemix_notm}} an?](/docs/services/CloudLogAnalysis/qa/cli_qa.html#login).
+    Weitere Informationen finden Sie in [Wie melde ich mich bei {{site.data.keyword.Bluemix_notm}} an?](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#login).
     
 2. Führen Sie den Befehl *status* aus.
 
@@ -122,7 +122,7 @@ Führen Sie die folgenden Schritte aus, um Kontoinformationen zu Protokollen abz
 
 1. Melden Sie sich bei einer Region, Organisation und bei einem Bereich in {{site.data.keyword.Bluemix_notm}} an. 
 
-    Weitere Informationen finden Sie unter [Wie melde ich mich bei {{site.data.keyword.Bluemix_notm}} an?](/docs/services/CloudLogAnalysis/qa/cli_qa.html#login).
+    Weitere Informationen finden Sie in [Wie melde ich mich bei {{site.data.keyword.Bluemix_notm}} an?](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#login).
     
 2. Führen Sie den Befehl *status* aus.
 

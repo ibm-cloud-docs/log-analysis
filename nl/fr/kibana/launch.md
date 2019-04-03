@@ -85,7 +85,7 @@ Procédez comme suit pour lancer Kibana depuis le tableau de bord du service {{s
 
 Par défaut, la page **Discover** se charge avec le canevas d'index par défaut sélectionné et un filtre temporel défini sur les 15 dernières minutes. 
 
-Si la page Discover n'affiche aucune entrée de journal, ajustez le sélecteur de période. Pour plus d'informations, voir [Définition d'un filtre temporel](/docs/services/CloudLogAnalysis/kibana/filter_logs.html#set_time_filter).
+Si la page Discover n'affiche aucune entrée de journal, ajustez le sélecteur de période. Pour plus d'informations, voir [Définition d'un filtre temporel](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-filter_logs#set_time_filter).
 
 	
 	
@@ -100,7 +100,7 @@ Pour lancer Kibana depuis un navigateur, procédez comme suit :
 
 1. Ouvrez un navigateur Web et lancez Kibana. Ensuite, connectez-vous à l'interface utilisateur Kibana.
 
-    Pour afficher la liste des URL par région, voir [URL d'ouverture de Kibana](/docs/services/CloudLogAnalysis/kibana/analyzing_logs_Kibana.html#urls_kibana).
+    Pour afficher la liste des URL par région, voir [URL d'ouverture de Kibana](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-analyzing_logs_Kibana#urls_kibana).
     
     La page Discover s'ouvre dans Kibana.
 	
@@ -117,7 +117,7 @@ Pour lancer Kibana depuis un navigateur, procédez comme suit :
 	
 	    où *Space_ID* est l'identificateur global unique de l'espace dans lequel vous voulez afficher et analyser les données de journal. 
 	
-Si la page Discover n'affiche aucune entrée de journal, ajustez le sélecteur de période. Pour plus d'informations, voir [Définition d'un filtre temporel](/docs/services/CloudLogAnalysis/kibana/filter_logs.html#set_time_filter).
+Si la page Discover n'affiche aucune entrée de journal, ajustez le sélecteur de période. Pour plus d'informations, voir [Définition d'un filtre temporel](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-filter_logs#set_time_filter).
 
 
 	
@@ -146,7 +146,7 @@ Pour afficher les journaux d'une application Cloud Foundry dans Kibana, procéde
 
     Par défaut, la page **Discover** se charge avec le canevas d'index par défaut sélectionné et un filtre temporel défini sur les 15 dernières minutes. La requête de recherche permet de rechercher toutes les entrées pour l'application CF.
 
-    Si la page Discover n'affiche aucune entrée de journal, ajustez le sélecteur de période. Pour plus d'informations, voir [Définition d'un filtre temporel](/docs/services/CloudLogAnalysis/kibana/filter_logs.html#set_time_filter).
+    Si la page Discover n'affiche aucune entrée de journal, ajustez le sélecteur de période. Pour plus d'informations, voir [Définition d'un filtre temporel](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-filter_logs#set_time_filter).
 
 	
 	
@@ -196,7 +196,7 @@ Pour afficher les journaux d'un conteneur Docker dans Kibana, procédez comme su
     Par défaut, la page **Discover** est chargée avec le canevas d'index par défaut et un filtre temporel est défini sur les 30 dernières secondes. La
 requête de recherche est définie pour porter sur toutes les entrées du conteneur Docker.
 
-    Si la page Discover n'affiche aucune entrée de journal, ajustez le sélecteur de période. Pour plus d'informations, voir [Définition d'un filtre temporel](/docs/services/CloudLogAnalysis/kibana/filter_logs.html#set_time_filter).
+    Si la page Discover n'affiche aucune entrée de journal, ajustez le sélecteur de période. Pour plus d'informations, voir [Définition d'un filtre temporel](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-filter_logs#set_time_filter).
 
 	
 

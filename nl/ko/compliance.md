@@ -66,16 +66,16 @@ GDPR(General Data Protection Regulation)은 전세계 모든 곳에서 이 데�
 
 * 로그 콜렉션에 저장된 로그는 보존 정책을 구성하거나 해당 로그를 수동으로 삭제할 때 며칠 후에 삭제됩니다. 
 
-    로그 콜렉션에 로그를 보존하기 원하는 일 수를 정의하기 위한 로그 보존 정책을 구성할 수 있습니다. 자세한 정보는 [{{site.data.keyword.Bluemix_notm}} 플러그인을 사용하여 로그 보존 정책 보기 및 구성](/docs/services/CloudLogAnalysis/how-to/manage-logs/configuring_retention_policy_cloud.html#configuring_retention_policy)을 참조하십시오.
+    로그 콜렉션에 로그를 보존하기 원하는 일 수를 정의하기 위한 로그 보존 정책을 구성할 수 있습니다. 자세한 정보는 [{{site.data.keyword.Bluemix_notm}} 플러그인을 사용하여 로그 보존 정책 보기 및 구성](/docs/services/CloudLogAnalysis/how-to/manage-logs?topic=cloudloganalysis-configuring_retention_policy#configuring_retention_policy)을 참조하십시오.
 
-    [로그 콜렉션 API](https://console.bluemix.net/apidocs/948-ibm-cloud-log-collection-api?&language=node&env_id=ibm%3Ayp%3Aus-south#introduction){: new_window} 또는 [로그 콜렉션 CLI](/docs/services/CloudLogAnalysis/reference/log_analysis_cli_cloud.html#log_analysis_cli){: new_window}를 사용하여 로그 콜렉션에서 로그를 수동으로 삭제할 수 있습니다. 
+    [로그 콜렉션 API](https://console.bluemix.net/apidocs/948-ibm-cloud-log-collection-api?&language=node&env_id=ibm%3Ayp%3Aus-south#introduction){: new_window} 또는 [로그 콜렉션 CLI](/docs/services/CloudLogAnalysis/reference?topic=cloudloganalysis-log_analysis_cli#log_analysis_cli){: new_window}를 사용하여 로그 콜렉션에서 로그를 수동으로 삭제할 수 있습니다. 
 
-    CLI를 사용하여 로그 콜렉션에서 로그를 수동으로 삭제할 수 있습니다. 자세한 정보는 [{{site.data.keyword.Bluemix_notm}} 플러그인을 사용한 ibmcloud logging log-delete](/docs/services/CloudLogAnalysis/how-to/manage-logs/deleting_logs_cloud.html#deleting_logs)를 참조하십시오.
+    CLI를 사용하여 로그 콜렉션에서 로그를 수동으로 삭제할 수 있습니다. 자세한 정보는 [{{site.data.keyword.Bluemix_notm}} 플러그인을 사용한 ibmcloud logging log-delete](/docs/services/CloudLogAnalysis/how-to/manage-logs?topic=cloudloganalysis-deleting_logs#deleting_logs)를 참조하십시오.
 
 
 유료 플랜에서 표준 또는 Lite 플랜으로 변경하는 경우 로그 콜렉션의 로그가 약 1일 후에 삭제됩니다.
 
-언제라도 지원 티켓을 열고 로그 검색 및 로그 콜렉션에서 모든 데이터가 삭제되도록 요청할 수 있습니다. IBM 지원 티켓 열기에 대한 정보는 [지원 문의](/docs/get-support/howtogetsupport.html#getting-customer-support)를 참조하십시오.
+언제라도 지원 티켓을 열고 로그 검색 및 로그 콜렉션에서 모든 데이터가 삭제되도록 요청할 수 있습니다. IBM 지원 티켓 열기에 대한 정보는 [지원 문의](/docs/get-support?topic=get-support-getting-customer-support#getting-customer-support)를 참조하십시오.
 
 
 

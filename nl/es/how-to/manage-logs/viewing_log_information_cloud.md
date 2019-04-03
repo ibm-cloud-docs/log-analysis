@@ -25,7 +25,7 @@ subcollection: cloudloganalysis
 # Visualización de la información de registro
 {: #viewing_log_status1}
 
-Utilice el mandato [ibmcloud logging log-show](/docs/services/CloudLogAnalysis/reference/log_analysis_cli_cloud.html#status) para obtener información sobre los registros que se recopilan y almacenan en el componente de recopilación de registros. Puede obtener información sobre el tamaño, el número de registros, los tipos de registro y si los registros están disponibles o no para su análisis en Kibana.
+Utilice el mandato [ibmcloud logging log-show](/docs/services/CloudLogAnalysis/reference?topic=cloudloganalysis-log_analysis_cli#status) para obtener información sobre los registros que se recopilan y almacenan en el componente de recopilación de registros. Puede obtener información sobre el tamaño, el número de registros, los tipos de registro y si los registros están disponibles o no para su análisis en Kibana.
 {:shortdesc}
 
 ## Obtención de información sobre los registros durante un periodo de tiempo
@@ -41,7 +41,7 @@ Siga estos pasos para obtener para obtener información sobre los registros alma
 
 1. Inicie la sesión en una región, organización y espacio en {{site.data.keyword.Bluemix_notm}}. 
 
-    Para obtener más información, consulte [Cómo iniciar la sesión en {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/qa/cli_qa.html#login).
+    Para obtener más información, consulte [Cómo iniciar la sesión en {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#login).
     
 2. Ejecute el mandato siguiente:
 
@@ -77,7 +77,7 @@ Siga estos pasos para obtener información sobre un tipo de registro durante un 
 
 1. Inicie la sesión en una región, organización y espacio en {{site.data.keyword.Bluemix_notm}}. 
 
-    Para obtener más información, consulte [Cómo iniciar la sesión en {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/qa/cli_qa.html#login).
+    Para obtener más información, consulte [Cómo iniciar la sesión en {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#login).
     
 2. Ejecute el mandato siguiente:
 
@@ -118,11 +118,11 @@ Siga estos pasos para obtener para obtener información de la cuenta sobre los r
 
 1. Inicie la sesión en una región, organización y espacio en {{site.data.keyword.Bluemix_notm}}. 
 
-    Para obtener más información, consulte [Cómo iniciar la sesión en {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/qa/cli_qa.html#login).
+    Para obtener más información, consulte [Cómo iniciar la sesión en {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#login).
 	
 2. Obtenga el ID de cuenta.
 
-    Para obtener más información, consulte [¿Cómo se obtiene el GUID de una cuenta?](/docs/services/CloudLogAnalysis/qa/cli_qa.html#account_guid)
+    Para obtener más información, consulte [¿Cómo se obtiene el GUID de una cuenta?](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#account_guid)
     
 3. Ejecute el mandato siguiente:
 
@@ -164,11 +164,11 @@ Siga estos pasos para obtener para obtener información de la cuenta sobre los r
 
 1. Inicie la sesión en una región, organización y espacio en {{site.data.keyword.Bluemix_notm}}. 
 
-    Para obtener más información, consulte [Cómo iniciar la sesión en {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/qa/cli_qa.html#login).
+    Para obtener más información, consulte [Cómo iniciar la sesión en {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#login).
 	
 2. Obtenga el ID de cuenta.
 
-    Para obtener más información, consulte [¿Cómo se obtiene el GUID de una organización?](/docs/services/CloudLogAnalysis/qa/cli_qa.html#org_guid)
+    Para obtener más información, consulte [¿Cómo se obtiene el GUID de una organización?](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#org_guid)
     
 3. Ejecute el mandato siguiente:
 

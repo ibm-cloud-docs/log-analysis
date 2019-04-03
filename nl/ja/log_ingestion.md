@@ -29,7 +29,7 @@ subcollection: cloudloganalysis
 マルチテナント Logstash Forwarder を使用することによって、ログを {{site.data.keyword.IBM_notm}} Cloud の外部から {{site.data.keyword.loganalysisshort}} サービスに送信できます。 
 {:shortdesc}
 
-この機能は、ログ取り込みが許可されるサービス・プランでのみ使用可能です。 詳しくは、『[サービス・プラン](/docs/services/CloudLogAnalysis/log_analysis_ov.html#plans)』を参照してください。
+この機能は、ログ取り込みが許可されるサービス・プランでのみ使用可能です。 詳しくは、『[サービス・プラン](/docs/services/CloudLogAnalysis?topic=cloudloganalysis-log_analysis_ov#plans)』を参照してください。
 
 ログを {{site.data.keyword.IBM_notm}} Cloud の外部から {{site.data.keyword.loganalysisshort}} サービスに送信するには、以下のクラウド・リソースが必要です。
 
@@ -38,7 +38,7 @@ subcollection: cloudloganalysis
 
 ローカル環境で、mt-logstash-forwarder を構成し、{{site.data.keyword.loganalysisshort}} サービスに送信したいログ・ファイルを指定する必要があります。
 
-{{site.data.keyword.loganalysisshort}} サービスにログを送信するためのローカル環境の構成について詳しくは、『[{{site.data.keyword.Bluemix_notm}} のスペースへのオンプレミス・データの送信](/docs/services/CloudLogAnalysis/how-to/send-data/send_data_mt.html#send_data_mt)』を参照してください。
+{{site.data.keyword.loganalysisshort}} サービスにログを送信するためのローカル環境の構成について詳しくは、『[{{site.data.keyword.Bluemix_notm}} のスペースへのオンプレミス・データの送信](/docs/services/CloudLogAnalysis/how-to/send-data?topic=cloudloganalysis-send_data_mt#send_data_mt)』を参照してください。
 
 
 

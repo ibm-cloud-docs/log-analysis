@@ -43,7 +43,7 @@ subcollection: cloudloganalysis
     ```
     {: codeblock}
 
-    자세한 정보는 [{{site.data.keyword.Bluemix_notm}}에 로그인하는 방법](/docs/services/CloudLogAnalysis/qa/cli_qa.html#login)을 참조하십시오.
+    자세한 정보는 [{{site.data.keyword.Bluemix_notm}}에 로그인하는 방법](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#login)을 참조하십시오.
 
 2. `ibmcloud logging quota-usage-show` cli 명령을 실행하십시오. 
 
@@ -98,7 +98,7 @@ Daily Allotmant   Current Usage
     ```
     {: codeblock}
 
-    자세한 정보는 [{{site.data.keyword.Bluemix_notm}}에 로그인하는 방법](/docs/services/CloudLogAnalysis/qa/cli_qa.html#login)을 참조하십시오.
+    자세한 정보는 [{{site.data.keyword.Bluemix_notm}}에 로그인하는 방법](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#login)을 참조하십시오.
 
 2. 매개변수 `-s`가 포함된 `ibmcloud logging quota-usage-show` cli 명령을 실행하십시오. 
 
@@ -141,7 +141,7 @@ Date         Allotmant   Usage
 
 1. {{site.data.keyword.Bluemix_notm}}에 로그인하십시오. 
 
-    자세한 정보는 [{{site.data.keyword.Bluemix_notm}}에 로그인하는 방법](/docs/services/CloudLogAnalysis/qa/cli_qa.html#login)을 참조하십시오.
+    자세한 정보는 [{{site.data.keyword.Bluemix_notm}}에 로그인하는 방법](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#login)을 참조하십시오.
 
 2. 계정 ID를 가져오십시오. 다음 명령을 실행하십시오.
 
@@ -161,7 +161,7 @@ Date         Allotmant   Usage
 
 3. UAA 토큰을 가져오십시오. 
 
-    자세한 정보는 [UAA 토큰 가져오기](/docs/services/CloudLogAnalysis/security/auth_uaa.html#auth_uaa)를 참조하십시오.
+    자세한 정보는 [UAA 토큰 가져오기](/docs/services/CloudLogAnalysis/security?topic=cloudloganalysis-auth_uaa#auth_uaa)를 참조하십시오.
 
     UAA 토큰을 쉘 변수로 내보내십시오. `Bearer`를 포함시키지 마십시오. 예:
 	
@@ -177,7 +177,7 @@ Date         Allotmant   Usage
 	```
 	{: codeblock}
 	
-	여기서 *ENDPOINT*는 지역에 따라 다릅니다. 지역별 엔드포인트의 목록은 [로깅 엔드포인트](/docs/services/CloudLogAnalysis/manage_logs.html#endpoints)를 참조하십시오.
+	여기서 *ENDPOINT*는 지역에 따라 다릅니다. 지역별 엔드포인트의 목록은 [로깅 엔드포인트](/docs/services/CloudLogAnalysis?topic=cloudloganalysis-manage_logs#endpoints)를 참조하십시오.
 	
 	예를 들어 미국 남부 지역에서 계정에 대한 할당량을 가져오려면 cURL 명령을 실행하십시오.
 	
@@ -214,11 +214,11 @@ Date         Allotmant   Usage
 
 1. {{site.data.keyword.Bluemix_notm}}에 로그인하십시오. 
 
-    자세한 정보는 [{{site.data.keyword.Bluemix_notm}}에 로그인하는 방법](/docs/services/CloudLogAnalysis/qa/cli_qa.html#login)을 참조하십시오.
+    자세한 정보는 [{{site.data.keyword.Bluemix_notm}}에 로그인하는 방법](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#login)을 참조하십시오.
 
 2. 영역 ID를 가져오십시오.
 
-    자세한 정보는 [영역의 GUID를 가져오는 방법](/docs/services/CloudLogAnalysis/qa/cli_qa.html#space_guid)을 참조하십시오.
+    자세한 정보는 [영역의 GUID를 가져오는 방법](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#space_guid)을 참조하십시오.
 	
 	영역 ID를 쉘 변수로 내보내십시오. 예:
 	
@@ -229,7 +229,7 @@ Date         Allotmant   Usage
 
 3. UAA 토큰을 가져오십시오. 
 
-    자세한 정보는 [UAA 토큰 가져오기](/docs/services/CloudLogAnalysis/security/auth_uaa.html#auth_uaa)를 참조하십시오.
+    자세한 정보는 [UAA 토큰 가져오기](/docs/services/CloudLogAnalysis/security?topic=cloudloganalysis-auth_uaa#auth_uaa)를 참조하십시오.
 
     UAA 토큰을 쉘 변수로 내보내십시오. `Bearer`를 포함시키지 마십시오. 예:
 	
@@ -245,7 +245,7 @@ Date         Allotmant   Usage
 	```
 	{: codeblock}
 	
-	여기서 *ENDPOINT*는 지역에 따라 다릅니다. 지역별 엔드포인트의 목록은 [로깅 엔드포인트](/docs/services/CloudLogAnalysis/manage_logs.html#endpoints)를 참조하십시오.
+	여기서 *ENDPOINT*는 지역에 따라 다릅니다. 지역별 엔드포인트의 목록은 [로깅 엔드포인트](/docs/services/CloudLogAnalysis?topic=cloudloganalysis-manage_logs#endpoints)를 참조하십시오.
 
     예를 들어 미국 남부 지역의 영역 도메인에 대한 할당량과 사용량을 가져오려면 다음 cURL 명령을 실행하십시오.
 	

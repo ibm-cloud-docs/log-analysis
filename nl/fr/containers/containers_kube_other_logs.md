@@ -64,9 +64,7 @@ Procédez comme suit :
 
 1. Connectez-vous à une région, une organisation et un espace dans {{site.data.keyword.Bluemix_notm}}. 
 
-    Pour plus d'informations, voir
-[Comment se connecter
-à {{site.data.keyword.Bluemix_notm}} ?](/docs/services/CloudLogAnalysis/qa/cli_qa.html#login).
+    Pour plus d'informations, voir [Comment se connecter à {{site.data.keyword.Bluemix_notm}} ?](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#login)
     
 2. Initialisez le plug-in du service
 {{site.data.keyword.loganalysisshort}}.
@@ -100,20 +98,20 @@ Procédez comme suit :
 Vous pouvez choisir les journaux de cluster à transmettre au service
 {{site.data.keyword.loganalysisshort}}. 
 
-* Pour activer la collecte et le transfert automatiques de la sortie et de l'erreur standard, voir [Activation de la collecte et du transfert automatiques des journaux de conteneur](/docs/services/CloudLogAnalysis/containers/containers_kube_other_logs.html#containers).
+* Pour activer la collecte et le transfert automatiques de la sortie et de l'erreur standard, voir [Activation de la collecte et du transfert automatiques des journaux de conteneur](/docs/services/CloudLogAnalysis/containers?topic=cloudloganalysis-containers_kube_other_logs#containers).
 * Pour activer la collecte et le transfert automatiques des journaux
 d'application, voir
 [Activation
-de la collecte et du transfert automatiques des journaux d'application](/docs/services/CloudLogAnalysis/containers/containers_kube_other_logs.html#apps).
+de la collecte et du transfert automatiques des journaux d'application](/docs/services/CloudLogAnalysis/containers?topic=cloudloganalysis-containers_kube_other_logs#apps).
 * Pour activer la collecte et le transfert automatiques des journaux
 d'agent, voir
 [Activation
-de la collecte et du transfert automatiques des journaux d'agent](/docs/services/CloudLogAnalysis/containers/containers_kube_other_logs.html#workers).
-* Pour activer la collecte et le transfert automatiques des journaux de composant système Kubernetes, voir [Activation de la collecte et du transfert automatiques des journaux de composant système Kubernetes](/docs/services/CloudLogAnalysis/containers/containers_kube_other_logs.html#system).
+de la collecte et du transfert automatiques des journaux d'agent](/docs/services/CloudLogAnalysis/containers?topic=cloudloganalysis-containers_kube_other_logs#workers).
+* Pour activer la collecte et le transfert automatiques des journaux de composant système Kubernetes, voir [Activation de la collecte et du transfert automatiques des journaux de composant système Kubernetes](/docs/services/CloudLogAnalysis/containers?topic=cloudloganalysis-containers_kube_other_logs#system).
 * Pour activer la collecte et le transfert automatiques des journaux de
 contrôleur Ingress, voir
 [Activation
-de la collecte et du transfert automatiques des journaux de contrôleur Ingress Kubernetes](/docs/services/CloudLogAnalysis/containers/containers_kube_other_logs.html#controller).
+de la collecte et du transfert automatiques des journaux de contrôleur Ingress Kubernetes](/docs/services/CloudLogAnalysis/containers?topic=cloudloganalysis-containers_kube_other_logs#controller).
 
 
 
@@ -160,7 +158,7 @@ Procédez comme suit :
  
 3. Si l'utilisateur ne dispose pas des droits appropriés, procédez comme suit :
 
-    1. Accordez à l'utilisateur les droits suivants : le rôle *orgManager* pour l'organisation et les rôles *SpaceManager* et *Developer* pour l'espace. Pour plus d'informations, voir [Octroi à un utilisateur des droits permettant d'afficher les journaux d'espace dans l'interface utilisateur IBM Cloud](/docs/services/CloudLogAnalysis/security/grant_permissions.html#grant_permissions_ui_space).
+    1. Accordez à l'utilisateur les droits suivants : le rôle *orgManager* pour l'organisation et les rôles *SpaceManager* et *Developer* pour l'espace. Pour plus d'informations, voir [Octroi à un utilisateur des droits permettant d'afficher les journaux d'espace dans l'interface utilisateur IBM Cloud](/docs/services/CloudLogAnalysis/security?topic=cloudloganalysis-grant_permissions#grant_permissions_ui_space).
     
     2. Actualisez la configuration de journalisation. Exécutez la commande suivante :
     
@@ -188,7 +186,7 @@ ibmcloud ks logging-config-create ClusterName --logsource container --namespace 
 où 
 
 * *ClusterName* est le nom du cluster.
-* *EndPoint* est l'URL du service de journalisation dans la région dans laquelle le service {{site.data.keyword.loganalysisshort}} a été mis à disposition. Pour la liste des noeuds finaux, voir [Noeuds finaux](/docs/services/CloudLogAnalysis/log_ingestion.html#log_ingestion_urls).
+* *EndPoint* est l'URL du service de journalisation dans la région dans laquelle le service {{site.data.keyword.loganalysisshort}} a été mis à disposition. Pour la liste des noeuds finaux, voir [Noeuds finaux](/docs/services/CloudLogAnalysis?topic=cloudloganalysis-log_ingestion#log_ingestion_urls).
 * *OrgName* est le nom de l'organisation dans laquelle l'espace est disponible.
 * *SpaceName* est le nom de l'espace dans lequel le service {{site.data.keyword.loganalysisshort}} a été mis à disposition.
 
@@ -224,7 +222,7 @@ ibmcloud ks logging-config-create ClusterName --logsource application --type ibm
 où 
 
 * *ClusterName* est le nom du cluster.
-* *EndPoint* est l'URL du service de journalisation dans la région dans laquelle le service {{site.data.keyword.loganalysisshort}} a été mis à disposition. Pour la liste des noeuds finaux, voir [Noeuds finaux](/docs/services/CloudLogAnalysis/log_ingestion.html#log_ingestion_urls).
+* *EndPoint* est l'URL du service de journalisation dans la région dans laquelle le service {{site.data.keyword.loganalysisshort}} a été mis à disposition. Pour la liste des noeuds finaux, voir [Noeuds finaux](/docs/services/CloudLogAnalysis?topic=cloudloganalysis-log_ingestion#log_ingestion_urls).
 * *OrgName* est le nom de l'organisation dans laquelle l'espace est disponible.
 * *SpaceName* est le nom de l'espace dans lequel le service {{site.data.keyword.loganalysisshort}} a été mis à disposition.
 * *app-containers* est un paramètre facultatif que vous pouvez configurer pour définir une liste de conteneurs à surveiller. Ces conteneurs sont les seuls à partir desquels les journaux seront réacheminés vers {{site.data.keyword.loganalysisshort}}. Vous pouvez définir un ou plusieurs conteneurs en les séparant par des virgules.
@@ -262,7 +260,7 @@ ibmcloud ks logging-config-create ClusterName --logsource worker --type ibm --ho
 où 
 
 * *ClusterName* est le nom du cluster.
-* *EndPoint* est l'URL du service de journalisation dans la région dans laquelle le service {{site.data.keyword.loganalysisshort}} a été mis à disposition. Pour la liste des noeuds finaux, voir [Noeuds finaux](/docs/services/CloudLogAnalysis/log_ingestion.html#log_ingestion_urls).
+* *EndPoint* est l'URL du service de journalisation dans la région dans laquelle le service {{site.data.keyword.loganalysisshort}} a été mis à disposition. Pour la liste des noeuds finaux, voir [Noeuds finaux](/docs/services/CloudLogAnalysis?topic=cloudloganalysis-log_ingestion#log_ingestion_urls).
 * *OrgName* est le nom de l'organisation dans laquelle l'espace est disponible.
 * *SpaceName* est le nom de l'espace dans lequel le service {{site.data.keyword.loganalysisshort}} a été mis à disposition.
 
@@ -299,7 +297,7 @@ ibmcloud ks logging-config-create ClusterName --logsource kubernetes --type ibm 
 où 
 
 * *ClusterName* est le nom du cluster.
-* *EndPoint* est l'URL du service de journalisation dans la région dans laquelle le service {{site.data.keyword.loganalysisshort}} a été mis à disposition. Pour la liste des noeuds finaux, voir [Noeuds finaux](/docs/services/CloudLogAnalysis/log_ingestion.html#log_ingestion_urls).
+* *EndPoint* est l'URL du service de journalisation dans la région dans laquelle le service {{site.data.keyword.loganalysisshort}} a été mis à disposition. Pour la liste des noeuds finaux, voir [Noeuds finaux](/docs/services/CloudLogAnalysis?topic=cloudloganalysis-log_ingestion#log_ingestion_urls).
 * *OrgName* est le nom de l'organisation dans laquelle l'espace est disponible.
 * *SpaceName* est le nom de l'espace dans lequel le service {{site.data.keyword.loganalysisshort}} a été mis à disposition.
 
@@ -336,7 +334,7 @@ ibmcloud ks logging-config-create ClusterName --logsource ingress --type ibm --h
 où 
 
 * *ClusterName* est le nom du cluster.
-* *EndPoint* est l'URL du service de journalisation dans la région dans laquelle le service {{site.data.keyword.loganalysisshort}} a été mis à disposition. Pour la liste des noeuds finaux, voir [Noeuds finaux](/docs/services/CloudLogAnalysis/log_ingestion.html#log_ingestion_urls).
+* *EndPoint* est l'URL du service de journalisation dans la région dans laquelle le service {{site.data.keyword.loganalysisshort}} a été mis à disposition. Pour la liste des noeuds finaux, voir [Noeuds finaux](/docs/services/CloudLogAnalysis?topic=cloudloganalysis-log_ingestion#log_ingestion_urls).
 * *OrgName* est le nom de l'organisation dans laquelle l'espace est disponible.
 * *SpaceName* est le nom de l'espace dans lequel le service {{site.data.keyword.loganalysisshort}} a été mis à disposition.
 

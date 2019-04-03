@@ -46,13 +46,13 @@ En la tabla siguiente se muestran las diferentes tareas que puede llevar a cabo 
 
 | Tarea | Más información |
 |------|------------------|
-| [Añadir una visualización](/docs/services/CloudLogAnalysis/kibana/analize_logs_dashboard.html#add_visualization) | Puede añadir una visualización existente o una búsqueda a un panel de control.|
-| [Crear un nuevo panel de control](/docs/services/CloudLogAnalysis/kibana/analize_logs_dashboard.html#new) | Puede crear varios paneles de control. Cada panel de control se puede diseñar de modo que incluya distintas búsquedas, visualizaciones y un subconjunto diferente de datos de registro.  |
-| [Suprimir un panel de control](/docs/services/CloudLogAnalysis/kibana/analize_logs_dashboard.html#delete) | Suprima los paneles de control que ya no necesite. |
-| [Exportar un panel de control](/docs/services/CloudLogAnalysis/kibana/analize_logs_dashboard.html#export) | Puede exportar un panel de control como archivo JSON. |
-| [Importar un panel de control](/docs/services/CloudLogAnalysis/kibana/analize_logs_dashboard.html#import) | Puede importar un panel de control como archivo JSON. |
-| [Cargar un panel de control](/docs/services/CloudLogAnalysis/kibana/analize_logs_dashboard.html#reload3) | Puede cargar un panel de control para actualizar sus datos, modificarlo o analizar los datos. |
-| [Guardar un panel de control](/docs/services/CloudLogAnalysis/kibana/analize_logs_dashboard.html#save) | Puede guardar un panel de control para reutilizarlo en el futuro. |
+| [Añadir una visualización](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-analize_logs_dashboard#add_visualization) | Puede añadir una visualización existente o una búsqueda a un panel de control.|
+| [Crear un nuevo panel de control](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-analize_logs_dashboard#new) | Puede crear varios paneles de control. Cada panel de control se puede diseñar de modo que incluya distintas búsquedas, visualizaciones y un subconjunto diferente de datos de registro.  |
+| [Suprimir un panel de control](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-analize_logs_dashboard#delete) | Suprima los paneles de control que ya no necesite. |
+| [Exportar un panel de control](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-analize_logs_dashboard#export) | Puede exportar un panel de control como archivo JSON. |
+| [Importar un panel de control](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-analize_logs_dashboard#import) | Puede importar un panel de control como archivo JSON. |
+| [Cargar un panel de control](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-analize_logs_dashboard#reload3) | Puede cargar un panel de control para actualizar sus datos, modificarlo o analizar los datos. |
+| [Guardar un panel de control](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-analize_logs_dashboard#save) | Puede guardar un panel de control para reutilizarlo en el futuro. |
 {: caption="Tabla 2. Tareas para trabajar con paneles de control" caption-side="top"}
 
 Para obtener más información sobre Kibana, consulte la [Guía del usuario de Kibana ![Icono de enlace externo](../../../icons/launch-glyph.svg "Icono de enlace externo")](https://www.elastic.co/guide/en/kibana/5.1/index.html){: new_window}.
@@ -81,13 +81,13 @@ Siga los siguientes pasos para crear un nuevo panel de control:
 
 1. En la barra de herramientas de la página Panel de control, pulse **Añadir**. 
 
-2. Añada una o varias búsquedas y visualizaciones. Para obtener más información, consulte [Adición de una nueva búsqueda o visualización](/docs/services/CloudLogAnalysis/kibana/analize_logs_dashboard.html#add_visualization).
+2. Añada una o varias búsquedas y visualizaciones. Para obtener más información, consulte [Adición de una nueva búsqueda o visualización](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-analize_logs_dashboard#add_visualization).
 
     Cuando añade una búsqueda o una visualización, se añade un panel al panel de control.
 
 3. Arrastre un panel y suéltelo en la parte del panel de control en el que lo desea colocar.
  
-4. Guarde el panel de control para su reutilización en el futuro. Para obtener más información, consulte [Cómo guardar un panel de control de Kibana](/docs/services/CloudLogAnalysis/kibana/analize_logs_dashboard.html#save).
+4. Guarde el panel de control para su reutilización en el futuro. Para obtener más información, consulte [Cómo guardar un panel de control de Kibana](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-analize_logs_dashboard#save).
 
 
 ## Supresión de un panel de control de Kibana

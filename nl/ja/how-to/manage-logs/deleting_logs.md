@@ -25,7 +25,7 @@ subcollection: cloudloganalysis
 # ログの削除
 {: #deleting_logs1}
 
-Log Collection からログを削除するには、[ibmcloud cf logging delete](/docs/services/CloudLogAnalysis/reference/logging_cli.html#status1) コマンドを使用します。 
+Log Collection からログを削除するには、[ibmcloud cf logging delete](/docs/services/CloudLogAnalysis/reference?topic=cloudloganalysis-logging_cli#status1) コマンドを使用します。 
 {:shortdesc}
 
 * 特定期間内のログを削除できます。
@@ -40,7 +40,7 @@ Log Collection からログを削除するには、[ibmcloud cf logging delete](
 
 1. {{site.data.keyword.Bluemix_notm}} で、地域、組織、およびスペースにログインします。 
 
-    詳しくは、『[{{site.data.keyword.Bluemix_notm}} にログインするにはどうすればよいですか](/docs/services/CloudLogAnalysis/qa/cli_qa.html#login)』を参照してください。
+    詳しくは、『[{{site.data.keyword.Bluemix_notm}} にログインするにはどうすればよいですか](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#login)』を参照してください。
     
 2. *status* コマンドを実行して、Log Collection 内にあるログを表示します。
 
@@ -90,7 +90,7 @@ Log Collection からログを削除するには、[ibmcloud cf logging delete](
 
 1. {{site.data.keyword.Bluemix_notm}} で、地域、組織、およびスペースにログインします。 
 
-    詳しくは、『[{{site.data.keyword.Bluemix_notm}} にログインするにはどうすればよいですか](/docs/services/CloudLogAnalysis/qa/cli_qa.html#login)』を参照してください。
+    詳しくは、『[{{site.data.keyword.Bluemix_notm}} にログインするにはどうすればよいですか](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#login)』を参照してください。
     
 2. *status* コマンドを実行して、Log Collection 内にあるログを表示します。
 
@@ -142,7 +142,7 @@ Log Collection からログを削除するには、[ibmcloud cf logging delete](
 
 1. {{site.data.keyword.Bluemix_notm}} で、地域、組織、およびスペースにログインします。 
 
-    詳しくは、『[{{site.data.keyword.Bluemix_notm}} にログインするにはどうすればよいですか](/docs/services/CloudLogAnalysis/qa/cli_qa.html#login)』を参照してください。
+    詳しくは、『[{{site.data.keyword.Bluemix_notm}} にログインするにはどうすればよいですか](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#login)』を参照してください。
     
 2. *status* コマンドを実行し、アカウント・レベルで Log Collection 内の使用可能なログを確認します。
 

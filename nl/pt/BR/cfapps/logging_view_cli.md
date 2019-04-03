@@ -30,7 +30,7 @@ No {{site.data.keyword.Bluemix}}, é possível visualizar, filtrar e analisar lo
 {:shortdesc}
 
 Para analisar os logs do aplicativo Cloud Foundry (CF), use o comando a seguir: `ibmcloud cf logs`
-Para obter mais informações, veja [cf logs](/docs/cli/reference/ibmcloud/cf_index.html#cf_logs).
+Para obter mais informações, veja [cf logs](/docs/cli/reference/ibmcloud?topic=cloud-cli-cf#cf_logs).
 
 
 ## Analisando logs do app CF na CLI
@@ -40,9 +40,9 @@ Use o comando **cf logs** para exibir logs de um app Cloud Foundry e dos compone
 
 Para visualizar os logs de seu interesse ou excluir o conteúdo que você não deseja visualizar, é possível usar o comando **cf logs** com opções de filtragem, como **cut** e **grep**, na interface da linha de comandos cf.
 
-* Para visualizar os logs para um app Cloud Foundry, veja [Visualizando o log para um app Cloud Foundry](/docs/services/CloudLogAnalysis/cfapps/logging_view_cli.html#full_log_cli).
-* Para visualizar os registros de log mais recentes para um app Cloud Foundry, veja [Visualizando as entradas de log mais recentes para um app Cloud Foundry](/docs/services/CloudLogAnalysis/cfapps/logging_view_cli.html#tailing_log_cli).
-* Para visualizar os registros de log para um app Cloud Foundry em um intervalo de tempo específico, veja [Visualizando uma seção dos logs](/docs/services/CloudLogAnalysis/cfapps/logging_view_cli.html#partial_log_cli).
+* Para visualizar os logs para um app Cloud Foundry, veja [Visualizando o log para um app Cloud Foundry](/docs/services/CloudLogAnalysis/cfapps?topic=cloudloganalysis-analyzing_logs_cli#full_log_cli).
+* Para visualizar os registros de log mais recentes para um app Cloud Foundry, veja [Visualizando as entradas de log mais recentes para um app Cloud Foundry](/docs/services/CloudLogAnalysis/cfapps?topic=cloudloganalysis-analyzing_logs_cli#tailing_log_cli).
+* Para visualizar os registros de log para um app Cloud Foundry em um intervalo de tempo específico, veja [Visualizando uma seção dos logs](/docs/services/CloudLogAnalysis/cfapps?topic=cloudloganalysis-analyzing_logs_cli#partial_log_cli).
 * Para visualizar as entradas nos logs para um app Cloud Foundry que contenham palavras-chave específicas, veja [Visualizando entradas de log que contenham determinadas palavras-chave](logging_view_cli.html#partial_by_keyword_log_cli).
 
 

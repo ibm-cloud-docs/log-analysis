@@ -74,6 +74,6 @@ Cloud Foundry アプリのデプロイメントまたはランタイムのログ
 
 デフォルトでは、分析に使用できるログには、過去 15 分間のデータが含まれます。
 
-**ヒント:** カスタム期間のデータを分析するには、『[Kibana での高度なログ分析](/docs/services/CloudLogAnalysis/kibana/analyzing_logs_Kibana.html#analyzing_logs_Kibana)』を参照してください。 
+**ヒント:** カスタム期間のデータを分析するには、『[Kibana での高度なログ分析](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-analyzing_logs_Kibana#analyzing_logs_Kibana)』を参照してください。 
 
 

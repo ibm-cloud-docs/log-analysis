@@ -38,11 +38,11 @@ Um den {{site.data.keyword.loganalysisshort}}-Service über die Befehlszeilensch
 
 Der {{site.data.keyword.loganalysisshort}}-Service unterstützt die folgenden Authentifizierungsmodelle:
 
-* [UAA-Authentifizierung](/docs/services/CloudLogAnalysis/security/auth_uaa.html#auth_uaa)
+* [UAA-Authentifizierung](/docs/services/CloudLogAnalysis/security?topic=cloudloganalysis-auth_uaa#auth_uaa)
 
     UAA-Token können nur über die Befehlszeilenschnittstelle verwaltet werden.
 	
-* [IAM-Authentifizierung](/docs/services/CloudLogAnalysis/security/auth_iam.html#auth_iam1)
+* [IAM-Authentifizierung](/docs/services/CloudLogAnalysis/security?topic=cloudloganalysis-auth_iam1#auth_iam1)
 
     Das IAM-Authentifizierungsmodell bietet Managementfunktionalität für die Benutzerschnittstelle, Befehlszeilenschnittstelle oder API. 
 
@@ -51,13 +51,13 @@ Der {{site.data.keyword.loganalysisshort}}-Service unterstützt die folgenden Au
 ## Rollen
 {: #roles3}
 
-In {{site.data.keyword.Bluemix_notm}} gibt es zwei Typen von Rollen, die die Aktionen steuern, die Benutzer bei der Arbeit mit dem {{site.data.keyword.loganalysisshort}}-Service ausführen können:
+In {{site.data.keyword.cloud_notm}} gibt es zwei Typen von Rollen, die die Aktionen steuern, die Benutzer bei der Arbeit mit dem {{site.data.keyword.loganalysisshort}}-Service ausführen können:
 
 * Cloud Foundry-Rollen (CF-Rollen): Sie steuern, welche {{site.data.keyword.loganalysisshort}}-Aktionen ein Benutzer ausführen kann, indem ihm eine oder mehrere CF-Rollen zuweisen. Mit diesen Rollen steuern Sie die Berechtigungen des Benutzers zum Anzeigen und Verwalten von Protokollen in einem Bereich oder einer Organisation.
 * IAM-Rollen: Sie steuern, welche {{site.data.keyword.loganalysisshort}}-Aktionen ein Benutzer ausführen kann, indem ihm eine oder mehrere IAM-Rollen zuweisen. Mit diesen Rollen steuern Sie die Berechtigungen des Benutzers zum Anzeigen und Verwalten von Kontoprotokollen. 
 
 
-In der folgenden Tabelle sind die Typen von Rollen und die entsprechende Domäne in {{site.data.keyword.Bluemix_notm}} aufgeführt, die mit diesen Rollen gesteuert werden kann:
+In der folgenden Tabelle sind die Typen von Rollen und die entsprechende Domäne in {{site.data.keyword.cloud_notm}} aufgeführt, die mit diesen Rollen gesteuert werden kann:
 
 <table>
   <caption>Tabelle 1. Typen von Rollen zum Steuern von Aktionen nach Domäne</caption>
@@ -161,7 +161,7 @@ In der folgenden Tabelle ist die Beziehung zwischen der API, einer Serviceaktion
     <td>GET /v1/logging/logs</td>
     <td>ibmcloud-log-analysis.domain.log_read</td>
 	<td>Administrator, Bearbeiter, Anzeigeberechtigter</td>
-	<td>Informationen zu den Protokollen in einem {{site.data.keyword.Bluemix_notm}}-Bereich oder auf Kontoebene anzeigen.</td>
+	<td>Informationen zu den Protokollen in einem {{site.data.keyword.cloud_notm}}-Bereich oder auf Kontoebene anzeigen.</td>
   </tr>
   <tr>
     <td>GET /v1/logging/logs/download</td>
@@ -173,13 +173,13 @@ In der folgenden Tabelle ist die Beziehung zwischen der API, einer Serviceaktion
     <td>GET /v1/logging/logs/retention</td>
     <td>ibmcloud-log-analysis.domain.policy_read</td>
     <td>Administrator, Bearbeiter, Anzeigeberechtigter</td>
-    <td>Aufbewahrungszeitraum für Protokolle anzeigen, die in einem {{site.data.keyword.Bluemix_notm}}-Bereich oder einem Konto verfügbar sind.</td>
+    <td>Aufbewahrungszeitraum für Protokolle anzeigen, die in einem {{site.data.keyword.cloud_notm}}-Bereich oder einem Konto verfügbar sind.</td>
   </tr>
   <tr>
     <td>PUT /v1/logging/logs/retention</td>
     <td>ibmcloud-log-analysis.domain.policy_write</td>
     <td>Administrator, Bearbeiter</td>
-    <td>Aufbewahrungszeitraum für Protokolle aktualisieren, die in einem {{site.data.keyword.Bluemix_notm}}-Bereich oder einem Konto verfügbar sind.</td>
+    <td>Aufbewahrungszeitraum für Protokolle aktualisieren, die in einem {{site.data.keyword.cloud_notm}}-Bereich oder einem Konto verfügbar sind.</td>
   </tr>
   <tr>
     <td>GET /v1/logging/sessions</td>
@@ -217,14 +217,14 @@ Zum Verwalten von Protokollen über die {{site.data.keyword.loganalysisshort}}-A
 * Sie können die Befehlszeilenschnittstelle von {{site.data.keyword.loganalysisshort}} verwenden, um das UAA-Token abzurufen. 
 * Das Token hat eine Ablaufzeit. 
 
-Weitere Informationen finden Sie unter [UAA-Token abrufen](/docs/services/CloudLogAnalysis/security/auth_uaa.html#auth_uaa).
+Weitere Informationen finden Sie unter [UAA-Token abrufen](/docs/services/CloudLogAnalysis/security?topic=cloudloganalysis-auth_uaa#auth_uaa).
 
 **Arbeiten mit Protokollen, die in der Kontodomäne verfügbar sind**
 
-* Sie können die Befehlszeilenschnittstelle von {{{site.data.keyword.Bluemix_notm}} verwenden, um das IAM-Token abzurufen. 
+* Sie können die Befehlszeilenschnittstelle von {{site.data.keyword.cloud_notm}} verwenden, um das IAM-Token abzurufen. 
 * Das Token hat eine Ablaufzeit. 
 
-Weitere Informationen finden Sie unter [IAM-Token abrufen](/docs/services/CloudLogAnalysis/security/auth_iam.html#auth_iam1).
+Weitere Informationen finden Sie unter [IAM-Token abrufen](/docs/services/CloudLogAnalysis/security?topic=cloudloganalysis-auth_iam1#auth_iam1).
 
 
 ## Protokollierungstoken zum Senden von Protokollen an Log Analysis abrufen
@@ -234,23 +234,23 @@ Zum Senden von Protokollen an den {{site.data.keyword.loganalysisshort}}-Service
 
 Wählen Sie eine der folgenden Methoden aus, um Protokolle an eine Bereichsdomäne zu senden:
 
-* [Protokollierungstoken zum Senden von Protokollen an einen Bereich mit dem {{site.data.keyword.Bluemix_notm}}-Befehl 'ibmcloud service' abrufen](/docs/services/CloudLogAnalysis/security/logging_token.html#logging_token_cloud_cli)
-* [Protokollierungstoken zum Senden von Protokollen an einen Bereich über die Log Analysis-Befehlszeilenschnittstelle abrufen](/docs/services/CloudLogAnalysis/security/logging_token.html#logging_token_la_cloud_cli)
-* [Protokollierungstoken zum Senden von Protokollen an einen Bereich über die Log Analysis-API abrufen](/docs/services/CloudLogAnalysis/security/logging_token.html#logging_token_api)
+* [Protokollierungstoken zum Senden von Protokollen an einen Bereich mit dem {{site.data.keyword.cloud_notm}}-Befehl 'ibmcloud service' abrufen](/docs/services/CloudLogAnalysis/security?topic=cloudloganalysis-logging_token#logging_token_cloud_cli)
+* [Protokollierungstoken zum Senden von Protokollen an einen Bereich über die Log Analysis-Befehlszeilenschnittstelle abrufen](/docs/services/CloudLogAnalysis/security?topic=cloudloganalysis-logging_token#logging_token_la_cloud_cli)
+* [Protokollierungstoken zum Senden von Protokollen an einen Bereich über die Log Analysis-API abrufen](/docs/services/CloudLogAnalysis/security?topic=cloudloganalysis-logging_token#logging_token_api)
 
 
 ## Benutzern Berechtigungen zum Arbeiten mit Protokollen erteilen
 {: #grant_permissions1}
 
-Damit ein Benutzer Protokolle verwalten oder Protokolle anzeigen kann, müssen ihm in {{site.data.keyword.Bluemix_notm}} Berechtigungen für die Arbeit mit {{site.data.keyword.loganalysisshort}}-Service erteilt werden.
+Damit ein Benutzer Protokolle verwalten oder Protokolle anzeigen kann, müssen ihm in {{site.data.keyword.cloud_notm}} Berechtigungen für die Arbeit mit {{site.data.keyword.loganalysisshort}}-Service erteilt werden.
 
-* Informationen zu Berechtigungen für die Verwaltung von Protokollen finden Sie unter [Rollen für die Verwaltung von Protokollen](/docs/services/CloudLogAnalysis/manage_logs.html#roles1).
-* Informationen zu Berechtigungen für das Anzeigen von Protokollen finden Sie unter [Rollen zum Anzeigen von Protokollen](/docs/services/CloudLogAnalysis/kibana/analyzing_logs_Kibana.html#roles).
+* Informationen zu Berechtigungen für die Verwaltung von Protokollen finden Sie unter [Rollen für die Verwaltung von Protokollen](/docs/services/CloudLogAnalysis?topic=cloudloganalysis-manage_logs#roles1).
+* Informationen zu Berechtigungen für das Anzeigen von Protokollen finden Sie unter [Rollen zum Anzeigen von Protokollen](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-analyzing_logs_Kibana#roles).
 
 Weitere Informationen zum Erteilen von Berechtigungen finden Sie in den folgenden Abschnitten:
 
-* [Einem Benutzer über die {{site.data.keyword.Bluemix_notm}}-Benutzerschnittstelle eine IAM-Richtlinie zuweisen](/docs/services/CloudLogAnalysis/security/grant_permissions.html#grant_permissions).
-* [Einem Benutzer über die Befehlszeile eine IAM-Richtlinie zuweisen](/docs/services/CloudLogAnalysis/security/grant_permissions.html#grant_permissions_commandline).
-* [Einem Benutzer über die {{site.data.keyword.Bluemix_notm}}-Benutzerschnittstelle Berechtigungen zum Anzeigen von Bereichsprotokollen erteilen](/docs/services/CloudLogAnalysis/security/grant_permissions.html#grant_permissions_ui_space).
+* [Einem Benutzer über die {{site.data.keyword.cloud_notm}}-Benutzerschnittstelle eine IAM-Richtlinie zuweisen](/docs/services/CloudLogAnalysis/security?topic=cloudloganalysis-grant_permissions#grant_permissions).
+* [Einem Benutzer über die Befehlszeile eine IAM-Richtlinie zuweisen](/docs/services/CloudLogAnalysis/security?topic=cloudloganalysis-grant_permissions#grant_permissions_commandline).
+* [Einem Benutzer über die {{site.data.keyword.cloud_notm}}-Benutzerschnittstelle Berechtigungen zum Anzeigen von Bereichsprotokollen erteilen](/docs/services/CloudLogAnalysis/security?topic=cloudloganalysis-grant_permissions#grant_permissions_ui_space).
 
 

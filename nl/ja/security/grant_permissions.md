@@ -28,7 +28,7 @@ subcollection: cloudloganalysis
 {{site.data.keyword.Bluemix}} では、1 人のユーザーに 1 つ以上の IAM 役割を割り当てることができます。 これらの役割は、{{site.data.keyword.loganalysisshort}} サービスを使用して作業するためにユーザーが使用できるタスクを定義します。  
 {:shortdesc}
 
-例えば、ユーザーに**オペレーター**の役割を付与して、そのユーザーにログの管理を許可することができます。 ユーザーにアカウント・ログを見てもらいたいだけなら、そのユーザーに**ビューアー**の役割を付与することができます。 詳しくは、[IAM 役割](/docs/services/CloudLogAnalysis/security_ov.html#iam_roles)を参照してください。
+例えば、ユーザーに**オペレーター**の役割を付与して、そのユーザーにログの管理を許可することができます。 ユーザーにアカウント・ログを見てもらいたいだけなら、そのユーザーに**ビューアー**の役割を付与することができます。 詳しくは、[IAM 役割](/docs/services/CloudLogAnalysis?topic=cloudloganalysis-security_ov#iam_roles)を参照してください。
 
 **注:** 
 
@@ -52,7 +52,7 @@ subcollection: cloudloganalysis
 	
 3. ユーザーがアカウントのメンバーである場合、リストからユーザー名を選択するか、または、**「アクション」**メニューから*「ユーザーの管理」*をクリックします。
 
-    ユーザーがアカウントのメンバーでない場合、『[ユーザーの招待](/docs/iam/iamuserinv.html#iamuserinv)』を参照してください。
+    ユーザーがアカウントのメンバーでない場合、『[ユーザーの招待](/docs/iam?topic=iam-iamuserinv#iamuserinv)』を参照してください。
 
 4. **「アクセス・ポリシー」**セクションで、**「アクセス権限の割り当て」**をクリックし、**「リソースへのアクセス権限の割り当て」**を選択します。
 
@@ -80,7 +80,7 @@ subcollection: cloudloganalysis
 	  </tr>
 	  <tr>
 	    <td>役割</td>
-		<td>1 つ以上の IAM 役割を選択してください。 <br>有効な役割は、*管理者*、*オペレーター*、*エディター*、*ビューアー*です。 <br>役割ごとの許可されるアクションについて詳しくは、『[IAM 役割](/docs/services/CloudLogAnalysis/security_ov.html#iam_roles)』を参照してください。
+		<td>1 つ以上の IAM 役割を選択してください。 <br>有効な役割は、*管理者*、*オペレーター*、*エディター*、*ビューアー*です。 <br>役割ごとの許可されるアクションについて詳しくは、『[IAM 役割](/docs/services/CloudLogAnalysis?topic=cloudloganalysis-security_ov#iam_roles)』を参照してください。
 		</td>
 	  </tr>
      </table>
@@ -97,7 +97,7 @@ subcollection: cloudloganalysis
 
 1. 端末から、{{site.data.keyword.Bluemix_notm}} アカウントにログインします。 
 
-    詳しくは、『[{{site.data.keyword.Bluemix_notm}} にログインするにはどうすればよいですか](/docs/services/CloudLogAnalysis/qa/cli_qa.html#login)』を参照してください。
+    詳しくは、『[{{site.data.keyword.Bluemix_notm}} にログインするにはどうすればよいですか](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#login)』を参照してください。
 
 2. ユーザーがアカウントのメンバーであることを確認します。 次のコマンドを実行して、アカウント内のユーザーのリストを取得します。
 
@@ -108,7 +108,7 @@ subcollection: cloudloganalysis
 
 	ユーザーとその GUID のリストが表示されます。
 
-3. ユーザーがアカウントのメンバーでない場合、アカウント所有者に連絡して、ユーザーをアカウントに招待するよう依頼します。 詳しくは、『[ユーザーの招待](/docs/iam/iamuserinv.html#iamuserinv)』を参照してください。
+3. ユーザーがアカウントのメンバーでない場合、アカウント所有者に連絡して、ユーザーをアカウントに招待するよう依頼します。 詳しくは、『[ユーザーの招待](/docs/iam?topic=iam-iamuserinv#iamuserinv)』を参照してください。
 
     **ヒント:** アカウントにユーザーを招待するコマンドは、`ibmcloud iam account-user-invite USER_EMAIL` です。
 		
@@ -152,7 +152,7 @@ subcollection: cloudloganalysis
 	
 3. ユーザーがアカウントのメンバーである場合、リストからユーザー名を選択するか、または、**「アクション」**メニューから*「ユーザーの管理」*をクリックします。
 
-    ユーザーがアカウントのメンバーでない場合、『[ユーザーの招待](/docs/iam/iamuserinv.html#iamuserinv)』を参照してください。
+    ユーザーがアカウントのメンバーでない場合、『[ユーザーの招待](/docs/iam?topic=iam-iamuserinv#iamuserinv)』を参照してください。
 
 4. **「Cloud Foundry アクセス権限」**を選択してから、組織を選択します。
 

@@ -46,13 +46,13 @@ A tabela a seguir lista as diferentes tarefas que podem ser executadas na págin
 
 | Tarefa | Informações Adicionais |
 |------|------------------|
-| [Incluir uma visualização](/docs/services/CloudLogAnalysis/kibana/analize_logs_dashboard.html#add_visualization) | É possível incluir uma visualização ou procura existente em um painel.|
-| [Criar um novo painel](/docs/services/CloudLogAnalysis/kibana/analize_logs_dashboard.html#new) | É possível criar múltiplos painéis. Cada painel pode ser projetado para incluir diversas procuras e visualizações e um subconjunto diferente de dados do log.  |
-| [Excluir um painel](/docs/services/CloudLogAnalysis/kibana/analize_logs_dashboard.html#delete) | Exclua painéis que não forem necessários. |
-| [Exportar um painel](/docs/services/CloudLogAnalysis/kibana/analize_logs_dashboard.html#export) | É possível exportar um painel como um arquivo JSON. |
-| [Importar um painel](/docs/services/CloudLogAnalysis/kibana/analize_logs_dashboard.html#import) | É possível importar um painel como um arquivo JSON. |
-| [Carregar um painel](/docs/services/CloudLogAnalysis/kibana/analize_logs_dashboard.html#reload3) | É possível fazer upload de um painel para atualizar, modificar ou analisar seus dados. |
-| [Salvar um painel](/docs/services/CloudLogAnalysis/kibana/analize_logs_dashboard.html#save) | É possível salvar um painel para reutilização posterior. |
+| [Incluir uma visualização](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-analize_logs_dashboard#add_visualization) | É possível incluir uma visualização ou procura existente em um painel.|
+| [Criar um novo painel](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-analize_logs_dashboard#new) | É possível criar múltiplos painéis. Cada painel pode ser projetado para incluir diversas procuras e visualizações e um subconjunto diferente de dados do log.  |
+| [Excluir um painel](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-analize_logs_dashboard#delete) | Exclua painéis que não forem necessários. |
+| [Exportar um painel](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-analize_logs_dashboard#export) | É possível exportar um painel como um arquivo JSON. |
+| [Importar um painel](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-analize_logs_dashboard#import) | É possível importar um painel como um arquivo JSON. |
+| [Carregar um painel](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-analize_logs_dashboard#reload3) | É possível fazer upload de um painel para atualizar, modificar ou analisar seus dados. |
+| [Salvar um painel](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-analize_logs_dashboard#save) | É possível salvar um painel para reutilização posterior. |
 {: caption="Tabela 2. Tarefas para trabalhar com painéis" caption-side="top"}
 
 Para obter mais informações sobre Kibana, veja o [Guia do Usuário do Kibana ![Ícone de link externo](../../../icons/launch-glyph.svg "Ícone de link externo")](https://www.elastic.co/guide/en/kibana/5.1/index.html){: new_window}.
@@ -81,13 +81,13 @@ Conclua as etapas a seguir para criar um novo painel:
 
 1. Na barra de ferramentas da página Painel, clique em **Incluir**. 
 
-2. Inclua uma ou mais procuras e visualizações. Para obter mais informações, consulte [Incluindo uma nova procura ou visualização](/docs/services/CloudLogAnalysis/kibana/analize_logs_dashboard.html#add_visualization).
+2. Inclua uma ou mais procuras e visualizações. Para obter mais informações, consulte [Incluindo uma nova procura ou visualização](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-analize_logs_dashboard#add_visualization).
 
     Ao incluir uma procura ou visualização, uma tela é incluída no painel.
 
 3. Arraste a tela e solte-a na parte do painel em que deseja posicioná-la.
  
-4. Salve o painel para reutilização futura. Para obter mais informações, veja [Salvando um painel do Kibana](/docs/services/CloudLogAnalysis/kibana/analize_logs_dashboard.html#save).
+4. Salve o painel para reutilização futura. Para obter mais informações, veja [Salvando um painel do Kibana](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-analize_logs_dashboard#save).
 
 
 ## Excluindo um painel do Kibana

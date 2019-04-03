@@ -30,7 +30,7 @@ subcollection: cloudloganalysis
 {:shortdesc}
 
 要分析 Cloud Foundry (CF) 应用程序日志，请使用以下命令：`ibmcloud cf logs`
-有关更多信息，请参阅 [cf logs](/docs/cli/reference/ibmcloud/cf_index.html#cf_logs)。
+有关更多信息，请参阅 [cf logs](/docs/cli/reference/ibmcloud?topic=cloud-cli-cf#cf_logs)。
 
 
 ## 通过 CLI 分析 CF 应用程序日志
@@ -40,9 +40,9 @@ subcollection: cloudloganalysis
 
 要查看感兴趣的日志或排除不想查看的内容，可以在 cf 命令行界面中将 **cf logs** 命令与过滤选项（例如，**cut** 和 **grep**）一起使用：
 
-* 要查看 Cloud Foundry 应用程序的日志，请参阅[查看 Cloud Foundry 应用程序的日志](/docs/services/CloudLogAnalysis/cfapps/logging_view_cli.html#full_log_cli)。
-* 要查看 Cloud Foundry 应用程序的最新日志记录，请参阅[查看 Cloud Foundry 应用程序的最新日志条目](/docs/services/CloudLogAnalysis/cfapps/logging_view_cli.html#tailing_log_cli)。
-* 要查看 Cloud Foundry 应用程序在特定时间范围内的日志记录，请参阅[查看日志的一部分](/docs/services/CloudLogAnalysis/cfapps/logging_view_cli.html#partial_log_cli)。
+* 要查看 Cloud Foundry 应用程序的日志，请参阅[查看 Cloud Foundry 应用程序的日志](/docs/services/CloudLogAnalysis/cfapps?topic=cloudloganalysis-analyzing_logs_cli#full_log_cli)。
+* 要查看 Cloud Foundry 应用程序的最新日志记录，请参阅[查看 Cloud Foundry 应用程序的最新日志条目](/docs/services/CloudLogAnalysis/cfapps?topic=cloudloganalysis-analyzing_logs_cli#tailing_log_cli)。
+* 要查看 Cloud Foundry 应用程序在特定时间范围内的日志记录，请参阅[查看日志的一部分](/docs/services/CloudLogAnalysis/cfapps?topic=cloudloganalysis-analyzing_logs_cli#partial_log_cli)。
 * 要查看 Cloud Foundry 应用程序日志中包含特定关键字的条目，请参阅[查看包含特定关键字的日志条目](logging_view_cli.html#partial_by_keyword_log_cli)。
 
 

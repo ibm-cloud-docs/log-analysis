@@ -37,5 +37,5 @@ Wenn bei Verwendung von {{site.data.keyword.loganalysislong}} Probleme auftreten
 <!--Insert the appropriate dW Answers tag for your service for <service_keyword> in URL below:  -->
   * Bei Fragen zum Service und ersten Schritten verwenden Sie das Forum [{{site.data.keyword.IBM_notm}} developerWorks dW Answers](https://developer.ibm.com/answers/topics/log-analysis/?smartspace=ibm-cloud){:new_window}.
 
-* Wenn sich das Problem so nicht lösen lässt, können Sie ein IBM Support-Ticket öffnen. Weitere Informationen zum Öffnen eines IBM Support-Tickets oder zu Support-Levels und zu Prioritätsstufen von Tickets finden Sie unter [Kontaktaufnahme mit dem Support](/docs/get-support/howtogetsupport.html#getting-customer-support).
+* Wenn sich das Problem so nicht lösen lässt, können Sie ein IBM Support-Ticket öffnen. Weitere Informationen zum Öffnen eines IBM Support-Tickets oder zu Support-Levels und zu Prioritätsstufen von Tickets finden Sie unter [Kontaktaufnahme mit dem Support](/docs/get-support?topic=get-support-getting-customer-support#getting-customer-support).
 

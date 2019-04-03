@@ -30,10 +30,10 @@ organisation {{site.data.keyword.Bluemix}}.
 {: shortdesc}
 
 **Prérequis**
-* Avant d'exécuter les commandes de journalisation, connectez-vous à {{site.data.keyword.Bluemix_notm}} avec la commande `ibmcloud login` pour générer un jeton d'accès {{site.data.keyword.Bluemix_short}} et authentifier votre session. Pour plus d'informations, voir [Comment se connecter à {{site.data.keyword.Bluemix_notm}} ?](/docs/services/CloudLogAnalysis/qa/cli_qa.html#login).
+* Avant d'exécuter les commandes de journalisation, connectez-vous à {{site.data.keyword.Bluemix_notm}} avec la commande `ibmcloud login` pour générer un jeton d'accès {{site.data.keyword.Bluemix_short}} et authentifier votre session. Pour plus d'informations, voir [Comment se connecter à {{site.data.keyword.Bluemix_notm}} ?](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#login)
 
 Pour savoir comment utiliser l'interface de ligne de commande {{site.data.keyword.loganalysisshort}},
-voir [Gestion des journaux](/docs/services/CloudLogAnalysis/log_analysis_ov.html#log_analysis_ov).
+voir [Gestion des journaux](/docs/services/CloudLogAnalysis?topic=cloudloganalysis-log_analysis_ov#log_analysis_ov).
 
 <table>
   <caption>Commandes de gestion des journaux</caption>
@@ -204,7 +204,7 @@ ibmcloud cf logging delete -s 2017-05-25 -e 2017-05-25 -t linux_syslog
 Télécharge les journaux de Log Collection vers un fichier local ou dirige les journaux vers un autre programme, tel qu'Elastic Stack. 
 
 **Remarque :** pour télécharger les fichiers, vous devez d'abord créer une session. Une session définit quels journaux doivent être téléchargés en fonction de la plage
-de dates, du type de journal et du type de compte. Les journaux sont téléchargés dans le contexte d'une session. Pour plus d'informations, voir [ibmcloud cf logging session create (bêta)](/docs/services/CloudLogAnalysis/reference/logging_cli.html#session_create1).
+de dates, du type de journal et du type de compte. Les journaux sont téléchargés dans le contexte d'une session. Pour plus d'informations, voir [ibmcloud cf logging session create (bêta)](/docs/services/CloudLogAnalysis/reference?topic=cloudloganalysis-logging_cli#session_create1).
 
 ```
 ibmcloud cf logging download [parameters] [arguments]

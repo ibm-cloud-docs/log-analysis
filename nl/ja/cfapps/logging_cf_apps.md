@@ -36,16 +36,16 @@ subcollection: cloudloganalysis
 
 ![CF アプリのコンポーネント概要](images/logging_cf_apps_ov.gif "CF アプリのコンポーネント概要")
  
-Cloud Foundry アプリのロギングは、Cloud Foundry インフラストラクチャーを使用して {{site.data.keyword.Bluemix_notm}} 上でアプリを実行すると自動的に有効になります。 Cloud Foundry ランタイム・ログを表示するには、ログを STDOUT および STDERR に書き込む必要があります。 詳しくは、『[CF アプリを介したランタイム・アプリケーションのロギング](/docs/services/CloudLogAnalysis/cfapps/logging_writing_to_log_from_cf_app.html#logging_writing_to_log_from_cf_app)』を参照してください。
+Cloud Foundry アプリのロギングは、Cloud Foundry インフラストラクチャーを使用して {{site.data.keyword.Bluemix_notm}} 上でアプリを実行すると自動的に有効になります。 Cloud Foundry ランタイム・ログを表示するには、ログを STDOUT および STDERR に書き込む必要があります。 詳しくは、『[CF アプリを介したランタイム・アプリケーションのロギング](/docs/services/CloudLogAnalysis/cfapps?topic=cloudloganalysis-logging_writing_to_log_from_cf_app#logging_writing_to_log_from_cf_app)』を参照してください。
 
-{{site.data.keyword.Bluemix_notm}} は、限られた量のログ情報を保持します。 情報がログに記録されると、古い情報が新しい情報に置き換えられます。 組織または業界の方針に準拠する必要があり、その方針では監査またはその他の目的のためにすべてのログ情報または一部のログ情報を保持しなければならない場合、外部ログ・ホスト (例えば、サード・パーティーのログ管理サービスまたはその他のホスト) にログをストリーミングできます。 詳しくは、『[外部ログ・ホストの構成](/docs/services/CloudLogAnalysis/external/logging_external_hosts.html#thirdparty_logging)』を参照してください。
+{{site.data.keyword.Bluemix_notm}} は、限られた量のログ情報を保持します。 情報がログに記録されると、古い情報が新しい情報に置き換えられます。 組織または業界の方針に準拠する必要があり、その方針では監査またはその他の目的のためにすべてのログ情報または一部のログ情報を保持しなければならない場合、外部ログ・ホスト (例えば、サード・パーティーのログ管理サービスまたはその他のホスト) にログをストリーミングできます。 詳しくは、『[外部ログ・ホストの構成](/docs/services/CloudLogAnalysis/external?topic=cloudloganalysis-thirdparty_logging#thirdparty_logging)』を参照してください。
 
 ## ログの取り込み
 {: #log_ingestion1}
 
-マルチテナント Logstash Forwarder を使用することによって、ログを {{site.data.keyword.loganalysisshort}} に送信できます。 詳しくは、『[マルチテナント Logstash Forwarder (mt-logstash-forwarder) を使用したログ・データの送信](/docs/services/CloudLogAnalysis/how-to/send-data/send_data_mt.html#send_data_mt)』を参照してください。
+マルチテナント Logstash Forwarder を使用することによって、ログを {{site.data.keyword.loganalysisshort}} に送信できます。 詳しくは、『[マルチテナント Logstash Forwarder (mt-logstash-forwarder) を使用したログ・データの送信](/docs/services/CloudLogAnalysis/how-to/send-data?topic=cloudloganalysis-send_data_mt#send_data_mt)』を参照してください。
 
-{{site.data.keyword.loganalysisshort}} サービスにはさまざまなプランが用意されています。 *ライト*・プランを除くすべてのプランには、Log Collection にログを送信する機能が含まれています。 各種プランについて詳しくは、『[サービス・プラン](/docs/services/CloudLogAnalysis/log_analysis_ov.html#plans)』を参照してください。
+{{site.data.keyword.loganalysisshort}} サービスにはさまざまなプランが用意されています。 *ライト*・プランを除くすべてのプランには、Log Collection にログを送信する機能が含まれています。 各種プランについて詳しくは、『[サービス・プラン](/docs/services/CloudLogAnalysis?topic=cloudloganalysis-log_analysis_ov#plans)』を参照してください。
 
 ## Log Collection
 {: #log_collection}
@@ -57,17 +57,17 @@ Cloud Foundry アプリのロギングは、Cloud Foundry インフラストラ�
 
 {{site.data.keyword.loganalysisshort}} サービスには、必要な期間 Log Collection にログを保管できる追加プランがあります。 
 
-* ログ保存ポリシーを構成して、Log Collection 内でログを保持する日数を定義できます。 詳しくは、『[ログ保存ポリシー](/docs/services/CloudLogAnalysis/manage_logs.html#log_retention_policy)』を参照してください。
+* ログ保存ポリシーを構成して、Log Collection 内でログを保持する日数を定義できます。 詳しくは、『[ログ保存ポリシー](/docs/services/CloudLogAnalysis?topic=cloudloganalysis-manage_logs#log_retention_policy)』を参照してください。
 * コマンド・ラインまたは API を使用して、ログを手動で削除できます。
 
-各プランの料金について詳しくは、『[サービス・プラン](/docs/services/CloudLogAnalysis/log_analysis_ov.html#plans)』を参照してください。
+各プランの料金について詳しくは、『[サービス・プラン](/docs/services/CloudLogAnalysis?topic=cloudloganalysis-log_analysis_ov#plans)』を参照してください。
 
 ## ログ検索
 {: #log_search1}
 
 デフォルトでは、{{site.data.keyword.Bluemix_notm}} では、1 日当たり 500 MB までのログを Kibana を使用して検索できます。 
 
-{{site.data.keyword.loganalysisshort}} サービスには複数のプランが用意されています。 ログ検索の機能はプランによって異なります。例えば、*Log Collection *プランでは、1 日当たり 1 GB までのデータを検索できます。 各種プランについて詳しくは、『[サービス・プラン](/docs/services/CloudLogAnalysis/log_analysis_ov.html#plans)』を参照してください。
+{{site.data.keyword.loganalysisshort}} サービスには複数のプランが用意されています。 ログ検索の機能はプランによって異なります。例えば、*Log Collection *プランでは、1 日当たり 1 GB までのデータを検索できます。 各種プランについて詳しくは、『[サービス・プラン](/docs/services/CloudLogAnalysis?topic=cloudloganalysis-log_analysis_ov#plans)』を参照してください。
 
 
 ## CF アプリ・ログを分析する方法
@@ -77,17 +77,17 @@ Cloud Foundry アプリケーションのログを分析するための方法に
 
 * {{site.data.keyword.Bluemix_notm}} UI でログを分析して、アプリケーションの最新アクティビティーを確認します。
     
-    {{site.data.keyword.Bluemix_notm}} では、Cloud Foundry アプリケーションごとにある**「ログ」**タブを使用して、ログの表示、フィルター操作、および分析を行うことができます。 詳しくは、『[CF アプリ・ダッシュボードを介した CF アプリ・ログの分析](/docs/services/CloudLogAnalysis/cfapps/launch_logs_cloud_ui_cf.html#cfapp_ui)』を参照してください。
+    {{site.data.keyword.Bluemix_notm}} では、Cloud Foundry アプリケーションごとにある**「ログ」**タブを使用して、ログの表示、フィルター操作、および分析を行うことができます。 詳しくは、『[CF アプリ・ダッシュボードを介した CF アプリ・ログの分析](/docs/services/CloudLogAnalysis/cfapps?topic=cloudloganalysis-launch_logs_cloud_ui_cf#cfapp_ui)』を参照してください。
     
 * Kibana でログを分析して、高機能な分析タスクを実行します。
     
-    {{site.data.keyword.Bluemix_notm}} では、分析および視覚化のためのオープン・ソース・プラットフォームである Kibana を使用して、さまざまなグラフ (図表や表など) でデータのモニター、検索、分析、および視覚化を行うことができます。 詳しくは、『[{{site.data.keyword.loganalysisshort}} UI を介した CF アプリ・ログの分析](/docs/services/CloudLogAnalysis/cfapps/launch_logs_cloud_ui_cf.html#cfapp_la)』を参照してください。
+    {{site.data.keyword.Bluemix_notm}} では、分析および視覚化のためのオープン・ソース・プラットフォームである Kibana を使用して、さまざまなグラフ (図表や表など) でデータのモニター、検索、分析、および視覚化を行うことができます。 詳しくは、『[{{site.data.keyword.loganalysisshort}} UI を介した CF アプリ・ログの分析](/docs/services/CloudLogAnalysis/cfapps?topic=cloudloganalysis-launch_logs_cloud_ui_cf#cfapp_la)』を参照してください。
 	
-	**ヒント:** Kibana の起動方法については、『[CF アプリのダッシュボードから Kibana へのナビゲート](/docs/services/CloudLogAnalysis/kibana/launch.html#launch_Kibana_from_cf_app)』を参照してください。
+	**ヒント:** Kibana の起動方法については、『[CF アプリのダッシュボードから Kibana へのナビゲート](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-launch#launch_Kibana_from_cf_app)』を参照してください。
 
 * CLI を介してログを分析して、コマンドを使用してログをプログラマチックに管理します。
     
-    {{site.data.keyword.Bluemix_notm}} では、**cf logs** コマンドを使用することによって、ログの表示、フィルター操作、および分析をコマンド・ライン・インターフェースを介して行うことができます。 詳しくは、『[コマンド・ライン・インターフェースからの Cloud Foundry アプリ・ログの分析](/docs/services/CloudLogAnalysis/cfapps/logging_view_cli.html#analyzing_logs_cli)』を参照してください。
+    {{site.data.keyword.Bluemix_notm}} では、**cf logs** コマンドを使用することによって、ログの表示、フィルター操作、および分析をコマンド・ライン・インターフェースを介して行うことができます。 詳しくは、『[コマンド・ライン・インターフェースからの Cloud Foundry アプリ・ログの分析](/docs/services/CloudLogAnalysis/cfapps?topic=cloudloganalysis-analyzing_logs_cli#analyzing_logs_cli)』を参照してください。
 
 
 ## Diego にデプロイされた CF アプリのログ・ソース
@@ -143,7 +143,7 @@ Droplet Execution Agent (DEA) アーキテクチャーにデプロイされた C
 | フィールド | 説明 |
 |-------|-------------|
 | タイム・スタンプ | ログ・ステートメントの時刻。 タイム・スタンプは、ミリ秒単位まで定義されます。 |
-| コンポーネント | ログを生成したコンポーネント。 各種コンポーネントのリストについては、『[CF アプリのログ・ソース](/docs/services/CloudLogAnalysis/cfapps/logging_cf_apps.html#logging_bluemix_cf_apps_log_sources)』を参照してください。 <br> 各コンポーネント・タイプの後に、1 個のスラッシュと、アプリケーション・インスタンスを示す数字が続きます。 0 は最初のインスタンスに割り当てられる数字、1 は 2 番目のインスタンスに割り当てられる数字であり、以下同様になります。 |
+| コンポーネント | ログを生成したコンポーネント。 各種コンポーネントのリストについては、『[CF アプリのログ・ソース](/docs/services/CloudLogAnalysis/cfapps?topic=cloudloganalysis-logging_cf_apps#logging_bluemix_cf_apps_log_sources)』を参照してください。 <br> 各コンポーネント・タイプの後に、1 個のスラッシュと、アプリケーション・インスタンスを示す数字が続きます。 0 は最初のインスタンスに割り当てられる数字、1 は 2 番目のインスタンスに割り当てられる数字であり、以下同様になります。 |
 | メッセージ | コンポーネントによって発行されたメッセージ。 メッセージは、コンテキストによって異なります。 |
 {: caption="表 1. CF アプリのログ項目フィールド" caption-side="top"}
 

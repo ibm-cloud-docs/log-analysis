@@ -46,14 +46,14 @@ Kibana の「*Dashboard*」ページを使用して、ダッシュボードで�
 
 | タスク | 詳細情報 |
 |------|------------------|
-| [新規ダッシュボードの作成](/docs/services/CloudLogAnalysis/kibana4/logging_kibana_analize_logs_dashboard.html#K4_dashboard_new) | 複数のダッシュボードを作成できます。 各ダッシュボードは、異なる検索、視覚化、およびログ・データの異なるサブセットを含めるように設計できます。  |
-| [ダッシュボードの保存](/docs/services/CloudLogAnalysis/kibana4/logging_kibana_analize_logs_dashboard.html#k4_dashboard_save) | ダッシュボードを将来再使用するために保存できます。 |
-| [ダッシュボードのロード](/docs/services/CloudLogAnalysis/kibana4/logging_kibana_analize_logs_dashboard.html#k4_dashboard_reload) | ダッシュボードをアップロードして、そのデータを更新するか、ダッシュボードを変更するか、データを分析できます。 |
-| [ダッシュボードの削除](/docs/services/CloudLogAnalysis/kibana4/logging_kibana_analize_logs_dashboard.html#k4_dashboard_delete) | 必要ではないダッシュボードを削除します。 |
-| [ダッシュボードのエクスポート](/docs/services/CloudLogAnalysis/kibana4/logging_kibana_analize_logs_dashboard.html#k4_dashboard_export) | ダッシュボードを JSON ファイルとしてエクスポートできます。 |
-| [ダッシュボードのインポート](/docs/services/CloudLogAnalysis/kibana4/logging_kibana_analize_logs_dashboard.html#k4_dashboard_import) | ダッシュボードを JSON ファイルとしてインポートできます。 |
-| [ダッシュボードの共有](/docs/services/CloudLogAnalysis/kibana4/logging_kibana_analize_logs_dashboard.html#k4_dashboard_share) | HTML ソースまたは Kibana ダッシュボードでダッシュボードを共有できます。 |
-| [視覚化の追加](/docs/services/CloudLogAnalysis/kibana4/logging_kibana_analize_logs_dashboard.html#k4_dashboard_add_visualization) | 既存の視覚化または検索をダッシュボードに追加できます。|
+| [新規ダッシュボードの作成](/docs/services/CloudLogAnalysis/kibana4?topic=cloudloganalysis-kibana_analize_logs_dashboard#K4_dashboard_new) | 複数のダッシュボードを作成できます。 各ダッシュボードは、異なる検索、視覚化、およびログ・データの異なるサブセットを含めるように設計できます。  |
+| [ダッシュボードの保存](/docs/services/CloudLogAnalysis/kibana4?topic=cloudloganalysis-kibana_analize_logs_dashboard#k4_dashboard_save) | ダッシュボードを将来再使用するために保存できます。 |
+| [ダッシュボードのロード](/docs/services/CloudLogAnalysis/kibana4?topic=cloudloganalysis-kibana_analize_logs_dashboard#k4_dashboard_reload) | ダッシュボードをアップロードして、そのデータを更新するか、ダッシュボードを変更するか、データを分析できます。 |
+| [ダッシュボードの削除](/docs/services/CloudLogAnalysis/kibana4?topic=cloudloganalysis-kibana_analize_logs_dashboard#k4_dashboard_delete) | 必要ではないダッシュボードを削除します。 |
+| [ダッシュボードのエクスポート](/docs/services/CloudLogAnalysis/kibana4?topic=cloudloganalysis-kibana_analize_logs_dashboard#k4_dashboard_export) | ダッシュボードを JSON ファイルとしてエクスポートできます。 |
+| [ダッシュボードのインポート](/docs/services/CloudLogAnalysis/kibana4?topic=cloudloganalysis-kibana_analize_logs_dashboard#k4_dashboard_import) | ダッシュボードを JSON ファイルとしてインポートできます。 |
+| [ダッシュボードの共有](/docs/services/CloudLogAnalysis/kibana4?topic=cloudloganalysis-kibana_analize_logs_dashboard#k4_dashboard_share) | HTML ソースまたは Kibana ダッシュボードでダッシュボードを共有できます。 |
+| [視覚化の追加](/docs/services/CloudLogAnalysis/kibana4?topic=cloudloganalysis-kibana_analize_logs_dashboard#k4_dashboard_add_visualization) | 既存の視覚化または検索をダッシュボードに追加できます。|
 {: caption="表 2. ダッシュボードを操作するタスク" caption-side="top"}
 
 Kibana について詳しくは、「[Kibana User Guide ![外部リンク・アイコン](../../../icons/launch-glyph.svg "外部リンク・アイコン")](https://www.elastic.co/guide/en/kibana/4.1/index.html){: new_window}」を参照してください。
@@ -80,7 +80,7 @@ Kibana について詳しくは、「[Kibana User Guide ![外部リンク・ア�
 
 1. 「Dashboard」ページのツールバーで、**「New dashboard」**ボタン![新規ダッシュボード](images/k4_dash_new_icon.jpg "新規ダッシュボード") をクリックします。
 
-2. 1 つ以上の検索および視覚化を追加します。 詳しくは、『[新規検索または視覚化の追加](/docs/services/CloudLogAnalysis/kibana4/logging_kibana_visualizations.html#logging_k4_visualizations_create)』を参照してください。
+2. 1 つ以上の検索および視覚化を追加します。 詳しくは、『[新規検索または視覚化の追加](/docs/services/CloudLogAnalysis/kibana4?topic=cloudloganalysis-logging_kibana_visualizations#logging_k4_visualizations_create)』を参照してください。
 
     検索または視覚化を追加すると、パネルがダッシュボードに追加されます。
 

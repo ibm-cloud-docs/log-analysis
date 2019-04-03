@@ -25,7 +25,7 @@ subcollection: cloudloganalysis
 # Visualizando informações de log
 {: #viewing_log_status1}
 
-Use o comando [ibmcloud logging log-show](/docs/services/CloudLogAnalysis/reference/log_analysis_cli_cloud.html#status) para obter informações sobre os logs coletados e armazenados na Coleção de logs. É possível obter informações sobre o tamanho, o número de registros, os tipos de log e se os logs estão disponíveis ou não para análise no Kibana.
+Use o comando [ibmcloud logging log-show](/docs/services/CloudLogAnalysis/reference?topic=cloudloganalysis-log_analysis_cli#status) para obter informações sobre os logs coletados e armazenados na Coleção de logs. É possível obter informações sobre o tamanho, o número de registros, os tipos de log e se os logs estão disponíveis ou não para análise no Kibana.
 {:shortdesc}
 
 ## Obtendo informações sobre logs em um período de tempo
@@ -41,7 +41,7 @@ Conclua as etapas a seguir para obter informações sobre os logs que são armaz
 
 1. Efetue login em uma região, uma organização e um espaço no {{site.data.keyword.Bluemix_notm}}. 
 
-    Para obter mais informações, veja [Como efetuar login no {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/qa/cli_qa.html#login).
+    Para obter mais informações, veja [Como efetuar login no {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#login).
     
 2. Execute o comando a seguir:
 
@@ -77,7 +77,7 @@ Conclua as etapas a seguir para obter informações sobre um tipo de log durante
 
 1. Efetue login em uma região, uma organização e um espaço no {{site.data.keyword.Bluemix_notm}}. 
 
-    Para obter mais informações, veja [Como efetuar login no {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/qa/cli_qa.html#login).
+    Para obter mais informações, veja [Como efetuar login no {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#login).
     
 2. Execute o comando a seguir:
 
@@ -118,11 +118,11 @@ Conclua as etapas a seguir para obter dados da conta sobre logs:
 
 1. Efetue login em uma região, uma organização e um espaço no {{site.data.keyword.Bluemix_notm}}. 
 
-    Para obter mais informações, veja [Como efetuar login no {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/qa/cli_qa.html#login).
+    Para obter mais informações, veja [Como efetuar login no {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#login).
 	
 2. Obtenha o ID da conta.
 
-    Para obter mais informações, veja [Como obter o GUID de uma conta](/docs/services/CloudLogAnalysis/qa/cli_qa.html#account_guid).
+    Para obter mais informações, veja [Como obter o GUID de uma conta](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#account_guid).
     
 3. Execute o comando a seguir:
 
@@ -163,11 +163,11 @@ Conclua as etapas a seguir para obter dados da conta sobre logs:
 
 1. Efetue login em uma região, uma organização e um espaço no {{site.data.keyword.Bluemix_notm}}. 
 
-    Para obter mais informações, veja [Como efetuar login no {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/qa/cli_qa.html#login).
+    Para obter mais informações, veja [Como efetuar login no {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#login).
 	
 2. Obtenha o ID da conta.
 
-    Para obter mais informações, veja [Como obter o GUID de uma organização](/docs/services/CloudLogAnalysis/qa/cli_qa.html#org_guid).
+    Para obter mais informações, veja [Como obter o GUID de uma organização](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#org_guid).
     
 3. Execute o comando a seguir:
 

@@ -34,7 +34,7 @@ Il se peut que les messages d'erreur suivants s'affichent lorsque vous utilisez 
 
 **Description du message**
 
-Vous avez atteint le quota journalier alloué à l'espace Bluemix {Space GUID} pour l'instance {{site.data.keyword.loganalysisfull}} {Instance GUID}. Votre allocation journalière est actuellement de 500 Mo pour le stockage Log Search, et elle est conservée pendant une période de 3 jours au cours de laquelle elle peut faire l'objet de recherches dans Kibana. Pour mettre à niveau votre plan afin de pouvoir stocker davantage de données dans le stockage Log Search chaque jour, et aussi pour conserver tous les journaux dans le stockage Log Collection, mettez à niveau le plan de service {{site.data.keyword.loganalysisshort}} pour cet espace. Pour plus d'informations sur les plans de service et pour savoir comment effectuer la mise à niveau de votre plan, voir [Plans](/docs/services/CloudLogAnalysis/log_analysis_ov.html#plans).
+Vous avez atteint le quota journalier alloué à l'espace Bluemix {Space GUID} pour l'instance {{site.data.keyword.loganalysisfull}} {Instance GUID}. Votre allocation journalière est actuellement de 500 Mo pour le stockage Log Search, et elle est conservée pendant une période de 3 jours au cours de laquelle elle peut faire l'objet de recherches dans Kibana. Pour mettre à niveau votre plan afin de pouvoir stocker davantage de données dans le stockage Log Search chaque jour, et aussi pour conserver tous les journaux dans le stockage Log Collection, mettez à niveau le plan de service {{site.data.keyword.loganalysisshort}} pour cet espace. Pour plus d'informations sur les plans de service et pour savoir comment effectuer la mise à niveau de votre plan, voir [Plans](/docs/services/CloudLogAnalysis?topic=cloudloganalysis-log_analysis_ov#plans).
 
 
 **Explication du message** 
@@ -43,7 +43,7 @@ Il se peut qu'un message *BXNLG020001W* s'affiche lorsque vous atteignez le quot
 
 **Que faire**
 
-Pour mettre à niveau votre plan afin de pouvoir stocker davantage de données dans le stockage Log Search chaque jour, et aussi pour conserver tous les journaux dans le stockage Log Collection, mettez à niveau le plan de service {{site.data.keyword.loganalysisshort}} pour cet espace. Pour plus d'informations sur les plans de service et pour savoir comment effectuer la mise à niveau de votre plan, voir [Plans](/docs/services/CloudLogAnalysis/log_analysis_ov.html#plans).
+Pour mettre à niveau votre plan afin de pouvoir stocker davantage de données dans le stockage Log Search chaque jour, et aussi pour conserver tous les journaux dans le stockage Log Collection, mettez à niveau le plan de service {{site.data.keyword.loganalysisshort}} pour cet espace. Pour plus d'informations sur les plans de service et pour savoir comment effectuer la mise à niveau de votre plan, voir [Plans](/docs/services/CloudLogAnalysis?topic=cloudloganalysis-log_analysis_ov#plans).
 
 
 ## BXNLG020002W 
@@ -52,7 +52,7 @@ Pour mettre à niveau votre plan afin de pouvoir stocker davantage de données d
 
 **Description du message**
 
-Vous avez atteint le quota journalier alloué à l'espace Bluemix {Space GUID} pour l'instance {{site.data.keyword.loganalysisfull}} {Instance GUID}.  Votre allocation journalière est actuellement de XXX pour le stockage Log Search, et elle est conservée pendant une période de 3 jours au cours de laquelle elle peut faire l'objet de recherches dans Kibana. Cela n'affecte pas la règle de conservation de journaux définie dans le stockage Log Collection. Pour mettre à niveau votre plan afin de pouvoir stocker davantage de données dans le stockage Log Search chaque jour, mettez à niveau le plan de service {{site.data.keyword.loganalysisshort}} pour cet espace. Pour plus d'informations sur les plans de service et pour savoir comment effectuer la mise à niveau de votre plan, voir [Plans](/docs/services/CloudLogAnalysis/log_analysis_ov.html#plans).
+Vous avez atteint le quota journalier alloué à l'espace Bluemix {Space GUID} pour l'instance {{site.data.keyword.loganalysisfull}} {Instance GUID}.  Votre allocation journalière est actuellement de XXX pour le stockage Log Search, et elle est conservée pendant une période de 3 jours au cours de laquelle elle peut faire l'objet de recherches dans Kibana. Cela n'affecte pas la règle de conservation de journaux définie dans le stockage Log Collection. Pour mettre à niveau votre plan afin de pouvoir stocker davantage de données dans le stockage Log Search chaque jour, mettez à niveau le plan de service {{site.data.keyword.loganalysisshort}} pour cet espace. Pour plus d'informations sur les plans de service et pour savoir comment effectuer la mise à niveau de votre plan, voir [Plans](/docs/services/CloudLogAnalysis?topic=cloudloganalysis-log_analysis_ov#plans).
 
 XXX représente la taille des données pouvant faire l'objet d'une recherche pour votre plan en cours.
 
@@ -62,7 +62,7 @@ Vous avez atteint le quota journalier alloué à l'espace {Space GUID} pour l'in
 
 **Que faire**
 
-Pour mettre à niveau votre plan afin de pouvoir stocker davantage de données dans le stockage Log Search chaque jour, mettez à niveau le plan de service {{site.data.keyword.loganalysisshort}} pour cet espace. Pour plus d'informations sur les plans de service et pour savoir comment effectuer la mise à niveau de votre plan, voir [Plans](/docs/services/CloudLogAnalysis/log_analysis_ov.html#plans).
+Pour mettre à niveau votre plan afin de pouvoir stocker davantage de données dans le stockage Log Search chaque jour, mettez à niveau le plan de service {{site.data.keyword.loganalysisshort}} pour cet espace. Pour plus d'informations sur les plans de service et pour savoir comment effectuer la mise à niveau de votre plan, voir [Plans](/docs/services/CloudLogAnalysis?topic=cloudloganalysis-log_analysis_ov#plans).
 
 
 

@@ -66,16 +66,16 @@ subcollection: cloudloganalysis
 
 * Log Collection に保管されたログは、手動で削除したときに削除されるか、または、保存ポリシーが構成されている場合は一定の日数後に削除されます。 
 
-    ログ保存ポリシーを構成して、Log Collection 内でログを保持する日数を定義できます。 詳しくは、『[{{site.data.keyword.Bluemix_notm}} プラグインを使用したログ保存ポリシーの表示および構成](/docs/services/CloudLogAnalysis/how-to/manage-logs/configuring_retention_policy_cloud.html#configuring_retention_policy)』を参照してください。
+    ログ保存ポリシーを構成して、Log Collection 内でログを保持する日数を定義できます。 詳しくは、『[{{site.data.keyword.Bluemix_notm}} プラグインを使用したログ保存ポリシーの表示および構成](/docs/services/CloudLogAnalysis/how-to/manage-logs?topic=cloudloganalysis-configuring_retention_policy#configuring_retention_policy)』を参照してください。
 
-    [Log Collection API](https://console.bluemix.net/apidocs/948-ibm-cloud-log-collection-api?&language=node&env_id=ibm%3Ayp%3Aus-south#introduction){: new_window} または [Log Collection CLI](/docs/services/CloudLogAnalysis/reference/log_analysis_cli_cloud.html#log_analysis_cli){: new_window} を使用して、Log Collection からログを手動で削除できます。 
+    [Log Collection API](https://console.bluemix.net/apidocs/948-ibm-cloud-log-collection-api?&language=node&env_id=ibm%3Ayp%3Aus-south#introduction){: new_window} または [Log Collection CLI](/docs/services/CloudLogAnalysis/reference?topic=cloudloganalysis-log_analysis_cli#log_analysis_cli){: new_window} を使用して、Log Collection からログを手動で削除できます。 
 
-    CLI を使用して、Log Collection からログを手動で削除できます。 詳しくは、『[{{site.data.keyword.Bluemix_notm}} プラグインを使用した ibmcloud logging log-delete](/docs/services/CloudLogAnalysis/how-to/manage-logs/deleting_logs_cloud.html#deleting_logs)』を参照してください。
+    CLI を使用して、Log Collection からログを手動で削除できます。 詳しくは、『[{{site.data.keyword.Bluemix_notm}} プラグインを使用した ibmcloud logging log-delete](/docs/services/CloudLogAnalysis/how-to/manage-logs?topic=cloudloganalysis-deleting_logs#deleting_logs)』を参照してください。
 
 
 有料プランから標準プランまたはライト・プランに変更すると、Log Collection 内のログは約 1 日後に削除されます。
 
-いつでも、サポート・チケットをオープンし、Log Search および Log Collection からすべてのデータを削除するよう依頼できます。 IBM サポート・チケットのオープンについては、『[サポートへのお問い合わせ](/docs/get-support/howtogetsupport.html#getting-customer-support)』を参照してください。
+いつでも、サポート・チケットをオープンし、Log Search および Log Collection からすべてのデータを削除するよう依頼できます。 IBM サポート・チケットのオープンについては、『[サポートへのお問い合わせ](/docs/get-support?topic=get-support-getting-customer-support#getting-customer-support)』を参照してください。
 
 
 

@@ -36,7 +36,7 @@ Per installare la CLI {{site.data.keyword.loganalysisshort}}, completa questa pr
 
 1. Installa la CLI {{site.data.keyword.Bluemix_notm}}.
 
-   Per ulteriori informazioni, vedi [Installazione della CLI {{site.data.keyword.Bluemix_notm}}](/docs/cli/index.html#overview).
+   Per ulteriori informazioni, vedi [Installazione della CLI {{site.data.keyword.Bluemix_notm}}](/docs/cli?topic=cloud-cli-ibmcloud-cli#overview).
    
 2. Identifica il nome del plugin nel repository. Esegui il seguente comando:
 
@@ -82,13 +82,13 @@ Per installare la CLI {{site.data.keyword.loganalysisshort}}, completa questa pr
 
 1. Installa la CLI {{site.data.keyword.Bluemix_notm}}.
 
-   Per ulteriori informazioni, vedi [Installazione della CLI {{site.data.keyword.Bluemix_notm}}](/docs/cli/index.html#overview).
+   Per ulteriori informazioni, vedi [Installazione della CLI {{site.data.keyword.Bluemix_notm}}](/docs/cli?topic=cloud-cli-ibmcloud-cli#overview).
 
 2. Installa il plugin {{site.data.keyword.loganalysisshort}}.
 
-    * Per Linux, vedi [Installazione del plugin {{site.data.keyword.loganalysisshort}} su Linux](/docs/services/CloudLogAnalysis/how-to/manage-logs/config_log_collection_cli_cloud.html#install_cli_linux).
-    * Per Windows, vedi [Installazione del plugin {{site.data.keyword.loganalysisshort}} su Windows](/docs/services/CloudLogAnalysis/how-to/manage-logs/config_log_collection_cli_cloud.html#install_cli_windows).
-    * Per Mac OS X, vedi [Installazione della plugin {{site.data.keyword.loganalysisshort}} su Mac OS X](/docs/services/CloudLogAnalysis/how-to/manage-logs/config_log_collection_cli_cloud.html#install_cli_mac).
+    * Per Linux, vedi [Installazione del plugin {{site.data.keyword.loganalysisshort}} su Linux](/docs/services/CloudLogAnalysis/how-to/manage-logs?topic=cloudloganalysis-config_log_collection_cli#install_cli_linux).
+    * Per Windows, vedi [Installazione del plugin {{site.data.keyword.loganalysisshort}} su Windows](/docs/services/CloudLogAnalysis/how-to/manage-logs?topic=cloudloganalysis-config_log_collection_cli#install_cli_windows).
+    * Per Mac OS X, vedi [Installazione della plugin {{site.data.keyword.loganalysisshort}} su Mac OS X](/docs/services/CloudLogAnalysis/how-to/manage-logs?topic=cloudloganalysis-config_log_collection_cli#install_cli_mac).
  
 3. Verifica l'installazione del plugin della CLI.
   
@@ -264,7 +264,7 @@ Per ottenere le informazioni generali sulla CLI e su quali comandi sono supporta
 
 1. Accedi a una regione, un'organizzazione e uno spazio in {{site.data.keyword.Bluemix_notm}}. 
 
-    Per ulteriori informazioni, vedi [Come accedo a {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/qa/cli_qa.html#login).
+    Per ulteriori informazioni, vedi [Come accedo a {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#login).
     
 2. Per elencare le informazioni sui comandi supportati e sulla CLI. Esegui il seguente comando:
 
@@ -282,7 +282,7 @@ Per ottenere supporto sull'utilizzo di un comando, completa la seguente procedur
 
 1. Accedi a una regione, un'organizzazione e uno spazio in {{site.data.keyword.Bluemix_notm}}. 
 
-    Per ulteriori informazioni, vedi [Come accedo a {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/qa/cli_qa.html#login).
+    Per ulteriori informazioni, vedi [Come accedo a {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#login).
     
 2. Per ottenere l'elenco dei comandi supportati e identificare il comando di cui hai bisogno. Esegui il comando:
 
@@ -309,7 +309,7 @@ Un comando può avere comandi secondari. Per ottenere supporto sui comandi secon
 
 1. Accedi a una regione, un'organizzazione e uno spazio in {{site.data.keyword.Bluemix_notm}}. 
 
-    Per ulteriori informazioni, vedi [Come accedo a {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/qa/cli_qa.html#login).
+    Per ulteriori informazioni, vedi [Come accedo a {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#login).
     
 2. Per ottenere l'elenco dei comandi supportati e identificare il comando di cui hai bisogno. Esegui il comando:
 

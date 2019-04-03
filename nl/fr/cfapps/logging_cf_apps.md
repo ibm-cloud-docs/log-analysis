@@ -36,19 +36,19 @@ Le diagramme suivant présente une vue d'ensemble de la journalisation des appli
 
 ![Vue d'ensemble des composants des applications CF](images/logging_cf_apps_ov.gif "Vue d'ensemble des composants des applications CF")
  
-La journalisation des applications Cloud Foundry est activée automatiquement lorsque vous utilisez l'infrastructure Cloud Foundry pour exécuter vos applications dans {{site.data.keyword.Bluemix_notm}}. Pour consulter les journaux d'exécution de Cloud Foundry, vous devez consigner vos journaux dans la sortie standard (STDOUT) et l'erreur standard (STDERR). Pour plus d'informations, voir [Journalisation d'application d'exécution via des applications CF](/docs/services/CloudLogAnalysis/cfapps/logging_writing_to_log_from_cf_app.html#logging_writing_to_log_from_cf_app).
+La journalisation des applications Cloud Foundry est activée automatiquement lorsque vous utilisez l'infrastructure Cloud Foundry pour exécuter vos applications dans {{site.data.keyword.Bluemix_notm}}. Pour consulter les journaux d'exécution de Cloud Foundry, vous devez consigner vos journaux dans la sortie standard (STDOUT) et l'erreur standard (STDERR). Pour plus d'informations, voir [Journalisation d'application d'exécution via des applications CF](/docs/services/CloudLogAnalysis/cfapps?topic=cloudloganalysis-logging_writing_to_log_from_cf_app#logging_writing_to_log_from_cf_app).
 
 {{site.data.keyword.Bluemix_notm}} conserve une quantité limitée d'informations de journal. Lorsque des informations sont journalisées, les anciennes informations sont remplacées par les informations plus récentes. Si vous devez vous mettre en conformité avec des politiques d'organisation ou d'industrie qui nécessitent de conserver une partie ou la totalité des informations de journal à des fins d'audit ou autres, vous pouvez compacter vos journaux sur un hôte de journaux externe, par exemple un service de gestion des
-journaux tiers ou sur un autre hôte. Pour plus d'informations, voir [Configuration d'hôtes de journaux externes](/docs/services/CloudLogAnalysis/external/logging_external_hosts.html#thirdparty_logging).
+journaux tiers ou sur un autre hôte. Pour plus d'informations, voir [Configuration d'hôtes de journaux externes](/docs/services/CloudLogAnalysis/external?topic=cloudloganalysis-thirdparty_logging#thirdparty_logging).
 
 ## Ingestion de journaux
 {: #log_ingestion1}
 
-Vous pouvez envoyer des journaux dans {{site.data.keyword.loganalysisshort}} à l'aide du réexpéditeur Logstash à service partagé. Pour plus d'informations, voir [Envoyer des données de journaux à l'aide d'un réexpéditeur Logstash à service partagé (mt-logstash-forwarder).](/docs/services/CloudLogAnalysis/how-to/send-data/send_data_mt.html#send_data_mt).
+Vous pouvez envoyer des journaux dans {{site.data.keyword.loganalysisshort}} à l'aide du réexpéditeur Logstash à service partagé. Pour plus d'informations, voir [Envoyer des données de journaux à l'aide d'un réexpéditeur Logstash à service partagé (mt-logstash-forwarder).](/docs/services/CloudLogAnalysis/how-to/send-data?topic=cloudloganalysis-send_data_mt#send_data_mt).
 
 Le service {{site.data.keyword.loganalysisshort}} propose différents plans. Tous les
 plans, à l'exception du plan *Lite*, permettent d'envoyer des journaux au composant Log Collection. Pour plus d'informations sur les plans, voir
-[Plans de service](/docs/services/CloudLogAnalysis/log_analysis_ov.html#plans).
+[Plans de service](/docs/services/CloudLogAnalysis?topic=cloudloganalysis-log_analysis_ov#plans).
 
 ## Collecte de journaux
 {: #log_collection}
@@ -63,10 +63,10 @@ limite de 1,5 Go de données est atteinte ou au bout de 3 jours.
 Le service {{site.data.keyword.loganalysisshort}} fournit des plans additionnels qui vous permettent de stocker des journaux dans Log Collection aussi longtemps que vous
 en avez besoin. 
 
-* Vous pouvez configurer une règle de conservation des journaux pour définir le nombre de jours pendant lequel vous souhaitez conserver les journaux dans Log Collection. Pour plus d'informations, voir [Règle de conservation des journaux](/docs/services/CloudLogAnalysis/manage_logs.html#log_retention_policy).
+* Vous pouvez configurer une règle de conservation des journaux pour définir le nombre de jours pendant lequel vous souhaitez conserver les journaux dans Log Collection. Pour plus d'informations, voir [Règle de conservation des journaux](/docs/services/CloudLogAnalysis?topic=cloudloganalysis-manage_logs#log_retention_policy).
 * Vous pouvez supprimer les journaux manuellement via l'interface de ligne de commande ou l'API.
 
-Pour obtenir plus d'informations sur le tarif de chaque plan, voir [Plans de service](/docs/services/CloudLogAnalysis/log_analysis_ov.html#plans).
+Pour obtenir plus d'informations sur le tarif de chaque plan, voir [Plans de service](/docs/services/CloudLogAnalysis?topic=cloudloganalysis-log_analysis_ov#plans).
 
 ## Recherche de journaux
 {: #log_search1}
@@ -75,7 +75,7 @@ Par défaut, vous pouvez utiliser Kibana pour rechercher jusqu'à 500 Mo de jour
 
 Le service {{site.data.keyword.loganalysisshort}} offre plusieurs plans. Chaque plan offre des fonctions de recherche de journaux différentes. Par exemple, le plan *Collecte
 de journaux* vous permet de rechercher jusqu'à 1 Go de données par jour. Pour plus d'informations sur les plans, voir
-[Plans de service](/docs/services/CloudLogAnalysis/log_analysis_ov.html#plans).
+[Plans de service](/docs/services/CloudLogAnalysis?topic=cloudloganalysis-log_analysis_ov#plans).
 
 
 ## Méthodes d'analyse de journaux d'application CF
@@ -85,18 +85,18 @@ Vous pouvez choisir l'une des méthodes suivantes pour analyser les journaux de 
 
 * Analyser le journal dans l'interface utilisateur {{site.data.keyword.Bluemix_notm}} pour afficher la dernière activité de l'application.
     
-    Dans {{site.data.keyword.Bluemix_notm}}, vous pouvez afficher, filtrer et analyser des journaux depuis l'onglet **Journal** disponible pour chaque application Cloud Foundry. Pour plus d'informations, voir [Analyse des journaux de l'application CF via le tableau de bord de l'application CF](/docs/services/CloudLogAnalysis/cfapps/launch_logs_cloud_ui_cf.html#cfapp_ui).
+    Dans {{site.data.keyword.Bluemix_notm}}, vous pouvez afficher, filtrer et analyser des journaux depuis l'onglet **Journal** disponible pour chaque application Cloud Foundry. Pour plus d'informations, voir [Analyse des journaux de l'application CF via le tableau de bord de l'application CF](/docs/services/CloudLogAnalysis/cfapps?topic=cloudloganalysis-launch_logs_cloud_ui_cf#cfapp_ui).
     
 * Analyser les journaux dans Kibana pour effectuer des tâches analytiques avancées.
     
-    Dans {{site.data.keyword.Bluemix_notm}}, vous pouvez utiliser la plateforme de visualisation et d'analyse open source Kibana pour surveiller, rechercher, analyser et afficher des données dans différents graphiques, par exemple des diagrammes et des tableaux. Pour plus d'informations, voir [Analyse des journaux de l'application CF via l'interface utilisateur {{site.data.keyword.loganalysisshort}}](/docs/services/CloudLogAnalysis/cfapps/launch_logs_cloud_ui_cf.html#cfapp_la).
+    Dans {{site.data.keyword.Bluemix_notm}}, vous pouvez utiliser la plateforme de visualisation et d'analyse open source Kibana pour surveiller, rechercher, analyser et afficher des données dans différents graphiques, par exemple des diagrammes et des tableaux. Pour plus d'informations, voir [Analyse des journaux de l'application CF via l'interface utilisateur {{site.data.keyword.loganalysisshort}}](/docs/services/CloudLogAnalysis/cfapps?topic=cloudloganalysis-launch_logs_cloud_ui_cf#cfapp_la).
 	
 	**Astuce :** pour lancer Kibana, voir [Accès à Kibana depuis le
-tableau de bord d'une application CF](/docs/services/CloudLogAnalysis/kibana/launch.html#launch_Kibana_from_cf_app).
+tableau de bord d'une application CF](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-launch#launch_Kibana_from_cf_app).
 
 * Analyser des journaux via l'interface de ligne de commande pour utiliser des commandes permettant de gérer des journaux à l'aide d'un programme.
     
-    Dans {{site.data.keyword.Bluemix_notm}}, vous pouvez afficher, filtrer et analyser des journaux via l'interface de ligne de commande avec la commande **cf logs**. Pour plus d'informations, voir [Analyse des journaux d'application Cloud Foundry depuis l'interface de ligne de commande](/docs/services/CloudLogAnalysis/cfapps/logging_view_cli.html#analyzing_logs_cli).
+    Dans {{site.data.keyword.Bluemix_notm}}, vous pouvez afficher, filtrer et analyser des journaux via l'interface de ligne de commande avec la commande **cf logs**. Pour plus d'informations, voir [Analyse des journaux d'application Cloud Foundry depuis l'interface de ligne de commande](/docs/services/CloudLogAnalysis/cfapps?topic=cloudloganalysis-analyzing_logs_cli#analyzing_logs_cli).
 
 
 ## Sources de journal pour applications CF déployées sur Diego
@@ -153,7 +153,7 @@ Chaque entrée de journal comporte les zones suivantes :
 | Zone | Description |
 |-------|-------------|
 | Horodatage | Date et heure de l'instruction de journal. L'horodatage est défini à la milliseconde près. |
-| Composant | Composant qui génère le journal. Pour la liste des différents composants, voir [Sources de journal pour les applications CF](/docs/services/CloudLogAnalysis/cfapps/logging_cf_apps.html#logging_bluemix_cf_apps_log_sources). <br> Chaque type de composant est suivi d'une barre oblique et d'un chiffre qui indique l'instance d'application. 0 est le chiffre attribué à la première instance, 1 est le chiffre attribué à la  deuxième instance, etc. |
+| Composant | Composant qui génère le journal. Pour la liste des différents composants, voir [Sources de journal pour les applications CF](/docs/services/CloudLogAnalysis/cfapps?topic=cloudloganalysis-logging_cf_apps#logging_bluemix_cf_apps_log_sources). <br> Chaque type de composant est suivi d'une barre oblique et d'un chiffre qui indique l'instance d'application. 0 est le chiffre attribué à la première instance, 1 est le chiffre attribué à la deuxième instance, etc. |
 | Message | Message émis par le composant. Il varie selon le contexte. |
 {: caption="Tableau 1. Zones d'entrée de journal d'une application CF" caption-side="top"}
 

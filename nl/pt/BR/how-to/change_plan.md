@@ -58,7 +58,7 @@ Para mudar o seu plano de serviço no Bluemix por meio da CLI, conclua as etapas
 
 1. Efetue login em uma região, uma organização e um espaço no {{site.data.keyword.Bluemix_notm}}. 
 
-    Para obter mais informações, veja [Como efetuar login no {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/qa/cli_qa.html#login).
+    Para obter mais informações, veja [Como efetuar login no {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#login).
 	
 2. Execute o comando `ibmcloud service list` para verificar seu plano atual e para obter o nome do serviço {{site.data.keyword.loganalysisshort}} na lista de serviços disponível no espaço. 
 
@@ -86,7 +86,7 @@ exemplo,
 	```
 	{: codeblock}
 	
-	em que 
+	Em que 
 	
 	* *service_name* é o nome de seu serviço. É possível executar o comando `ibmcloud service list` para obter o valor.
 	* *new_plan* é o nome do plano.

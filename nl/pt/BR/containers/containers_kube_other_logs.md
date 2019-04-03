@@ -59,7 +59,7 @@ Conclua as etapas a seguir:
 
 1. Efetue login em uma região, uma organização e um espaço no {{site.data.keyword.Bluemix_notm}}. 
 
-    Para obter mais informações, veja [Como efetuar login no {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/qa/cli_qa.html#login).
+    Para obter mais informações, veja [Como efetuar login no {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#login).
     
 2. Inicialize o plug-in do serviço {{site.data.keyword.loganalysisshort}}.
 
@@ -91,11 +91,11 @@ Conclua as etapas a seguir:
 
 É possível escolher quais logs de cluster serão encaminhados para o serviço {{site.data.keyword.loganalysisshort}}. 
 
-* Para ativar a coleção de logs automática e encaminhar stdout e stderr, veja [Ativando a coleção de logs automática e encaminhando logs do contêiner](/docs/services/CloudLogAnalysis/containers/containers_kube_other_logs.html#containers).
-* Para ativar a coleção automática de logs e o encaminhamento de logs do aplicativo, veja [Ativando a coleção automática de logs e o encaminhamento de logs do aplicativo](/docs/services/CloudLogAnalysis/containers/containers_kube_other_logs.html#apps).
-* Para ativar a coleção automática de logs e o encaminhamento de logs do trabalhador, veja [Ativando a coleção automática de logs e o encaminhamento de logs do trabalhador](/docs/services/CloudLogAnalysis/containers/containers_kube_other_logs.html#workers).
-* Para ativar a coleção automática de logs e o encaminhamento dos logs do componente do sistema do Kubernetes, veja [Ativando a coleção automática de logs e o encaminhamento dos logs do componente do sistema do Kubernetes](/docs/services/CloudLogAnalysis/containers/containers_kube_other_logs.html#system).
-* Para ativar a coleção automática de logs e o encaminhamento dos logs de controlador de ingresso do Kubernetes, veja [Ativando a coleção automática de logs e o encaminhamento dos logs de controlador de ingresso do Kubernetes](/docs/services/CloudLogAnalysis/containers/containers_kube_other_logs.html#controller).
+* Para ativar a coleção de logs automática e encaminhar stdout e stderr, veja [Ativando a coleção de logs automática e encaminhando logs do contêiner](/docs/services/CloudLogAnalysis/containers?topic=cloudloganalysis-containers_kube_other_logs#containers).
+* Para ativar a coleção automática de logs e o encaminhamento de logs do aplicativo, veja [Ativando a coleção automática de logs e o encaminhamento de logs do aplicativo](/docs/services/CloudLogAnalysis/containers?topic=cloudloganalysis-containers_kube_other_logs#apps).
+* Para ativar a coleção automática de logs e o encaminhamento de logs do trabalhador, veja [Ativando a coleção automática de logs e o encaminhamento de logs do trabalhador](/docs/services/CloudLogAnalysis/containers?topic=cloudloganalysis-containers_kube_other_logs#workers).
+* Para ativar a coleção automática de logs e o encaminhamento dos logs do componente do sistema do Kubernetes, veja [Ativando a coleção automática de logs e o encaminhamento dos logs do componente do sistema do Kubernetes](/docs/services/CloudLogAnalysis/containers?topic=cloudloganalysis-containers_kube_other_logs#system).
+* Para ativar a coleção automática de logs e o encaminhamento dos logs de controlador de ingresso do Kubernetes, veja [Ativando a coleção automática de logs e o encaminhamento dos logs de controlador de ingresso do Kubernetes](/docs/services/CloudLogAnalysis/containers?topic=cloudloganalysis-containers_kube_other_logs#controller).
 
 
 
@@ -142,7 +142,7 @@ Conclua as etapas a seguir:
  
 3. Se o usuário não tiver as permissões corretas, conclua as etapas a seguir:
 
-    1. Conceda ao usuário as permissões a seguir: função *orgManager* para a organização e *SpaceManager* e *Developer* para o espaço. Para obter mais informações, veja [Concedendo a um usuário permissões para visualizar logs de espaço usando a UI do IBM Cloud](/docs/services/CloudLogAnalysis/security/grant_permissions.html#grant_permissions_ui_space).
+    1. Conceda ao usuário as permissões a seguir: função *orgManager* para a organização e *SpaceManager* e *Developer* para o espaço. Para obter mais informações, veja [Concedendo a um usuário permissões para visualizar logs de espaço usando a UI do IBM Cloud](/docs/services/CloudLogAnalysis/security?topic=cloudloganalysis-grant_permissions#grant_permissions_ui_space).
     
     2. Atualize a configuração de criação de log. Execute o comando a seguir:
     
@@ -170,7 +170,7 @@ ibmcloud ks logging-config-create ClusterName --logsource container --namespace 
 Em que 
 
 * *ClusterName* é o nome do cluster.
-* *EndPoint* é a URL para o serviço de criação de log na região na qual o serviço do {{site.data.keyword.loganalysisshort}} é provisionado. Para obter uma lista de terminais, veja [Terminais](/docs/services/CloudLogAnalysis/log_ingestion.html#log_ingestion_urls).
+* *EndPoint* é a URL para o serviço de criação de log na região na qual o serviço do {{site.data.keyword.loganalysisshort}} é provisionado. Para obter uma lista de terminais, veja [Terminais](/docs/services/CloudLogAnalysis?topic=cloudloganalysis-log_ingestion#log_ingestion_urls).
 * *OrgName* é o nome da organização na qual o espaço está disponível.
 * *SpaceName* é o nome do espaço no qual o serviço é provisionado. {{site.data.keyword.loganalysisshort}}
 
@@ -204,7 +204,7 @@ ibmcloud ks logging-config-create ClusterName --logsource application --type ibm
 Em que 
 
 * *ClusterName* é o nome do cluster.
-* *EndPoint* é a URL para o serviço de criação de log na região na qual o serviço do {{site.data.keyword.loganalysisshort}} é provisionado. Para obter uma lista de terminais, veja [Terminais](/docs/services/CloudLogAnalysis/log_ingestion.html#log_ingestion_urls).
+* *EndPoint* é a URL para o serviço de criação de log na região na qual o serviço do {{site.data.keyword.loganalysisshort}} é provisionado. Para obter uma lista de terminais, veja [Terminais](/docs/services/CloudLogAnalysis?topic=cloudloganalysis-log_ingestion#log_ingestion_urls).
 * *OrgName* é o nome da organização na qual o espaço está disponível.
 * *SpaceName* é o nome do espaço no qual o serviço é provisionado. {{site.data.keyword.loganalysisshort}}
 * *app-containers* é um parâmetro opcional que pode ser configurado para definir uma lista de contêineres que você deseja observar. Esses contêineres são os únicos de onde os logs serão encaminhados para o {{site.data.keyword.loganalysisshort}}. É possível configurar um ou mais contêineres separando-os com vírgulas.
@@ -240,7 +240,7 @@ ibmcloud ks logging-config-create ClusterName --logsource worker --type ibm --ho
 Em que 
 
 * *ClusterName* é o nome do cluster.
-* *EndPoint* é a URL para o serviço de criação de log na região na qual o serviço do {{site.data.keyword.loganalysisshort}} é provisionado. Para obter uma lista de terminais, veja [Terminais](/docs/services/CloudLogAnalysis/log_ingestion.html#log_ingestion_urls).
+* *EndPoint* é a URL para o serviço de criação de log na região na qual o serviço do {{site.data.keyword.loganalysisshort}} é provisionado. Para obter uma lista de terminais, veja [Terminais](/docs/services/CloudLogAnalysis?topic=cloudloganalysis-log_ingestion#log_ingestion_urls).
 * *OrgName* é o nome da organização na qual o espaço está disponível.
 * *SpaceName* é o nome do espaço no qual o serviço é provisionado. {{site.data.keyword.loganalysisshort}}
 
@@ -275,7 +275,7 @@ ibmcloud ks logging-config-create ClusterName --logsource kubernetes --type ibm 
 Em que 
 
 * *ClusterName* é o nome do cluster.
-* *EndPoint* é a URL para o serviço de criação de log na região na qual o serviço do {{site.data.keyword.loganalysisshort}} é provisionado. Para obter uma lista de terminais, veja [Terminais](/docs/services/CloudLogAnalysis/log_ingestion.html#log_ingestion_urls).
+* *EndPoint* é a URL para o serviço de criação de log na região na qual o serviço do {{site.data.keyword.loganalysisshort}} é provisionado. Para obter uma lista de terminais, veja [Terminais](/docs/services/CloudLogAnalysis?topic=cloudloganalysis-log_ingestion#log_ingestion_urls).
 * *OrgName* é o nome da organização na qual o espaço está disponível.
 * *SpaceName* é o nome do espaço no qual o serviço é provisionado. {{site.data.keyword.loganalysisshort}}
 
@@ -310,7 +310,7 @@ ibmcloud ks logging-config-create ClusterName --logsource ingress --type ibm --h
 Em que 
 
 * *ClusterName* é o nome do cluster.
-* *EndPoint* é a URL para o serviço de criação de log na região na qual o serviço do {{site.data.keyword.loganalysisshort}} é provisionado. Para obter uma lista de terminais, veja [Terminais](/docs/services/CloudLogAnalysis/log_ingestion.html#log_ingestion_urls).
+* *EndPoint* é a URL para o serviço de criação de log na região na qual o serviço do {{site.data.keyword.loganalysisshort}} é provisionado. Para obter uma lista de terminais, veja [Terminais](/docs/services/CloudLogAnalysis?topic=cloudloganalysis-log_ingestion#log_ingestion_urls).
 * *OrgName* é o nome da organização na qual o espaço está disponível.
 * *SpaceName* é o nome do espaço no qual o serviço é provisionado. {{site.data.keyword.loganalysisshort}}
 

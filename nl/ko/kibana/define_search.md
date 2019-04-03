@@ -32,15 +32,15 @@ subcollection: cloudloganalysis
 
 1. Kibana를 실행하십시오.
 
-    CF(Cloud Foundry) 앱의 경우, [CF 앱의 대시보드에서 Kibana 실행](/docs/services/CloudLogAnalysis/kibana/launch.html#launch_Kibana_from_cf_app)을 참조하십시오.
+    CF(Cloud Foundry) 앱의 경우, [CF 앱의 대시보드에서 Kibana 실행](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-launch#launch_Kibana_from_cf_app)을 참조하십시오.
 
-	{{site.data.keyword.Bluemix_notm}} 관리 인프라에서 실행되는 컨테이너의 경우 [컨테이너의 대시보드에서 Kibana 실행](/docs/services/CloudLogAnalysis/kibana/launch.html#launch_Kibana_for_containers)을 참조하십시오.
+	{{site.data.keyword.Bluemix_notm}} 관리 인프라에서 실행되는 컨테이너의 경우 [컨테이너의 대시보드에서 Kibana 실행](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-launch#launch_Kibana_for_containers)을 참조하십시오.
     
-    모든 클라우드 리소스(예: Kubernetes 클러스터에서 실행되는 컨테이너)의 경우, [브라우저에서 Kibana 실행](/docs/services/CloudLogAnalysis/kibana/launch.html#launch_Kibana_from_browser)을 참조하십시오. 
+    모든 클라우드 리소스(예: Kubernetes 클러스터에서 실행되는 컨테이너)의 경우, [브라우저에서 Kibana 실행](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-launch#launch_Kibana_from_browser)을 참조하십시오. 
 	
 	Kibana에 액세스하면 기본 검색이 적용됩니다. 조회 중인 리소스에 해당하는 인스턴스의 목록에 대한 로그를 볼 수 있습니다. 해당 영역의 일부 또는 모든 {{site.data.keyword.Bluemix_notm}} 리소스에 대해 로그를 필터링할 수 있습니다.
 
-2. 검색 페이지에서 표시하는 데이터의 서브세트를 확인하십시오. 자세한 정보는 [Kibana 검색 페이지에 표시된 데이터 식별](/docs/services/CloudLogAnalysis/kibana/analize_logs_interactively.html#identify_data)을 참조하십시오. 그런 다음 항목을 필터링하도록 기본 조회를 수정하십시오.
+2. 검색 페이지에서 표시하는 데이터의 서브세트를 확인하십시오. 자세한 정보는 [Kibana 검색 페이지에 표시된 데이터 식별](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-analize_logs_interactively#identify_data)을 참조하십시오. 그런 다음 항목을 필터링하도록 기본 조회를 수정하십시오.
 
     **참고:** Lucene 조회 언어를 사용하여 사용자 정의 조회를 정의합니다. 자세한 정보는 [Apache Lucene - 조회 구문 분석기 구문 ![외부 링크 아이콘](../../../icons/launch-glyph.svg "외부 링크 아이콘")](https://lucene.apache.org/core/2_9_4/queryparsersyntax.html){: new_window}을 참조하십시오.
     
@@ -54,9 +54,9 @@ subcollection: cloudloganalysis
 
      예를 들어, CF 앱의 경우 인스턴스 *0* 및 *1*에 대한 항목만 나열하는 조회 `application_id:9d222152-8834-4bab-8685-3036cd25931a AND instance_id:["0" TO "1"]`을 작성할 수 있습니다. 
 
-3. 나중에 다시 사용할 수 있도록 조회를 저장하십시오. 자세한 정보는 [검색 저장](/docs/services/CloudLogAnalysis/kibana/define_search.html#save_search1)을 참조하십시오. 
+3. 나중에 다시 사용할 수 있도록 조회를 저장하십시오. 자세한 정보는 [검색 저장](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-define_search#save_search1)을 참조하십시오. 
 
-**참고:** 조회를 삭제해야 하는 경우, [검색 삭제](/docs/services/CloudLogAnalysis/kibana/define_search.html#delete_search)를 참조하십시오.
+**참고:** 조회를 삭제해야 하는 경우, [검색 삭제](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-define_search#delete_search)를 참조하십시오.
 
 
 

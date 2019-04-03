@@ -74,6 +74,6 @@ Per visualizzare i log di distribuzione o di runtime di un'applicazione Cloud Fo
 
 Per impostazione predefinita, i log disponibili per l'analisi includono i dati degli ultimi 15 minuti.
 
-**Suggerimento:** per analizzare i dati per un periodo personalizzato, consulta [Analisi log avanzata con Kibana](/docs/services/CloudLogAnalysis/kibana/analyzing_logs_Kibana.html#analyzing_logs_Kibana). 
+**Suggerimento:** per analizzare i dati per un periodo personalizzato, consulta [Analisi log avanzata con Kibana](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-analyzing_logs_Kibana#analyzing_logs_Kibana). 
 
 

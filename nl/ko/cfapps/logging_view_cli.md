@@ -30,7 +30,7 @@ subcollection: cloudloganalysis
 {:shortdesc}
 
 CF(Cloud Foundry) 애플리케이션 로그를 분석하려면 `ibmcloud cf logs` 명령을 사용하십시오.
-자세한 정보는 [cf logs](/docs/cli/reference/ibmcloud/cf_index.html#cf_logs)를 참조하십시오.
+자세한 정보는 [cf logs](/docs/cli/reference/ibmcloud?topic=cloud-cli-cf#cf_logs)를 참조하십시오.
 
 
 ## CLI에서 CF 앱 로그 분석
@@ -40,9 +40,9 @@ CF(Cloud Foundry) 애플리케이션 로그를 분석하려면 `ibmcloud cf logs
 
 관심이 있는 로그를 보거나 보고 싶지 않은 컨텐츠를 제외하기 위해 cf 명령행 인터페이스에서 **cut** 및 **grep**과 같은 필터링 옵션과 함께 **cf logs** 명령을 사용할 수 있습니다.
 
-* Cloud Foundry 앱에 대한 로그를 보려면 [Cloud Foundry 앱의 로그 보기](/docs/services/CloudLogAnalysis/cfapps/logging_view_cli.html#full_log_cli)를 참조하십시오.
-* Cloud Foundry 앱에 대한 최신 로그 레코드를 보려면 [Cloud Foundry 앱에 대한 최신 로그 항목 보기](/docs/services/CloudLogAnalysis/cfapps/logging_view_cli.html#tailing_log_cli)를 참조하십시오.
-* 특정 시간 범위에서 Cloud Foundry 앱에 대한 로그 레코드를 보려면 [로그의 섹션 보기](/docs/services/CloudLogAnalysis/cfapps/logging_view_cli.html#partial_log_cli)를 참조하십시오.
+* Cloud Foundry 앱에 대한 로그를 보려면 [Cloud Foundry 앱의 로그 보기](/docs/services/CloudLogAnalysis/cfapps?topic=cloudloganalysis-analyzing_logs_cli#full_log_cli)를 참조하십시오.
+* Cloud Foundry 앱에 대한 최신 로그 레코드를 보려면 [Cloud Foundry 앱에 대한 최신 로그 항목 보기](/docs/services/CloudLogAnalysis/cfapps?topic=cloudloganalysis-analyzing_logs_cli#tailing_log_cli)를 참조하십시오.
+* 특정 시간 범위에서 Cloud Foundry 앱에 대한 로그 레코드를 보려면 [로그의 섹션 보기](/docs/services/CloudLogAnalysis/cfapps?topic=cloudloganalysis-analyzing_logs_cli#partial_log_cli)를 참조하십시오.
 * 특정 키워드가 포함된 Cloud Foundry 앱에 대한 로그에서 항목을 보려면 [특정 키워드가 포함된 로그 항목 보기](logging_view_cli.html#partial_by_keyword_log_cli)를 참조하십시오.
 
 

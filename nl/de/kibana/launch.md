@@ -83,7 +83,7 @@ Führen Sie die folgenden Schritte aus, um Kibana von dem Dashboard des {{site.d
 
 Standardmäßig ist beim Laden der Seite **Discover** das Standardindexmuster ausgewählt und ein Zeitfilter auf die letzten 15 Minuten eingestellt. 
 
-Wenn auf der Seite 'Discover' nicht alle Protokolleinträge angezeigt werden, passen Sie das Zeitauswahlfeld an. Weitere Informationen finden Sie unter [Zeitfilter festlegen](/docs/services/CloudLogAnalysis/kibana/filter_logs.html#set_time_filter).
+Wenn auf der Seite 'Discover' nicht alle Protokolleinträge angezeigt werden, passen Sie das Zeitauswahlfeld an. Weitere Informationen finden Sie unter [Zeitfilter festlegen](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-filter_logs#set_time_filter).
 
 	
 	
@@ -98,7 +98,7 @@ Führen Sie die folgenden Schritte aus, um Kibana von einem Browser zu starten:
 
 1. Öffnen Sie einen Web-Browser und starten Sie Kibana. Melden Sie sich anschließend an der Kibana-Benutzerschnittstelle an.
 
-    Eine Liste der URLs nach Region finden Sie unter [URLs zum Starten von Kibana](/docs/services/CloudLogAnalysis/kibana/analyzing_logs_Kibana.html#urls_kibana).
+    Eine Liste der URLs nach Region finden Sie unter [URLs zum Starten von Kibana](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-analyzing_logs_Kibana#urls_kibana).
     
     Die Seite 'Discover' in Kibana wird geöffnet.
 	
@@ -115,7 +115,7 @@ Führen Sie die folgenden Schritte aus, um Kibana von einem Browser zu starten:
 	
 	    Dabei ist *Bereichs-ID* die GUID des Bereichs, in dem Sie Protokolldaten anzeigen und analysieren wollen. 
 	
-Wenn auf der Seite 'Discover' nicht alle Protokolleinträge angezeigt werden, passen Sie das Zeitauswahlfeld an. Weitere Informationen finden Sie unter [Zeitfilter festlegen](/docs/services/CloudLogAnalysis/kibana/filter_logs.html#set_time_filter).
+Wenn auf der Seite 'Discover' nicht alle Protokolleinträge angezeigt werden, passen Sie das Zeitauswahlfeld an. Weitere Informationen finden Sie unter [Zeitfilter festlegen](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-filter_logs#set_time_filter).
 
 
 	
@@ -143,7 +143,7 @@ Führen Sie die folgenden Schritte aus, um die Protokolle einer Cloud Foundry-An
 
     Standardmäßig ist beim Laden der Seite **Discover** das Standardindexmuster ausgewählt und ein Zeitfilter auf die letzten 15 Minuten eingestellt. Die Suchabfrage wird so eingestellt, dass sie allen Einträgen für der CF-App entspricht.
 
-    Wenn auf der Seite 'Discover' nicht alle Protokolleinträge angezeigt werden, passen Sie das Zeitauswahlfeld an. Weitere Informationen finden Sie unter [Zeitfilter festlegen](/docs/services/CloudLogAnalysis/kibana/filter_logs.html#set_time_filter).
+    Wenn auf der Seite 'Discover' nicht alle Protokolleinträge angezeigt werden, passen Sie das Zeitauswahlfeld an. Weitere Informationen finden Sie unter [Zeitfilter festlegen](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-filter_logs#set_time_filter).
 
 	
 	
@@ -192,7 +192,7 @@ Führen Sie die folgenden Schritte aus, um die Protokolle eines Docker-Container
 
     Standardmäßig ist beim Laden der Seite **Discover** das Standardindexmuster ausgewählt und ein Zeitfilter auf die letzten 30 Sekunden eingestellt. Die Suchabfrage wird so eingestellt, dass sie allen Einträgen für den Docker-Container entspricht.
 
-    Wenn auf der Seite 'Discover' nicht alle Protokolleinträge angezeigt werden, passen Sie das Zeitauswahlfeld an. Weitere Informationen finden Sie unter [Zeitfilter festlegen](/docs/services/CloudLogAnalysis/kibana/filter_logs.html#set_time_filter).
+    Wenn auf der Seite 'Discover' nicht alle Protokolleinträge angezeigt werden, passen Sie das Zeitauswahlfeld an. Weitere Informationen finden Sie unter [Zeitfilter festlegen](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-filter_logs#set_time_filter).
 
 	
 

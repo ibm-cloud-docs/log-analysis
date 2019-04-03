@@ -25,7 +25,7 @@ subcollection: cloudloganalysis
 # 로그 삭제
 {: #deleting_logs}
 
-로그 콜렉션에서 로그를 삭제하려면 [ibmcloud logging log-delete](/docs/services/CloudLogAnalysis/reference/log_analysis_cli_cloud.html#delete) 명령을 사용하십시오. 
+로그 콜렉션에서 로그를 삭제하려면 [ibmcloud logging log-delete](/docs/services/CloudLogAnalysis/reference?topic=cloudloganalysis-log_analysis_cli#delete) 명령을 사용하십시오. 
 {:shortdesc}
 
 * 특정 시간 범위 내의 로그를 삭제할 수 있습니다.
@@ -40,7 +40,7 @@ subcollection: cloudloganalysis
 
 1. {{site.data.keyword.Bluemix_notm}}의 지역, 조직 및 영역에 로그인하십시오. 
 
-    자세한 정보는 [{{site.data.keyword.Bluemix_notm}}에 로그인하는 방법](/docs/services/CloudLogAnalysis/qa/cli_qa.html#login)을 참조하십시오.
+    자세한 정보는 [{{site.data.keyword.Bluemix_notm}}에 로그인하는 방법](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#login)을 참조하십시오.
     
 2. 다음 명령을 실행하여 로그 콜렉션에서 사용할 수 있는 로그를 확인하십시오.
 
@@ -89,7 +89,7 @@ subcollection: cloudloganalysis
 
 1. {{site.data.keyword.Bluemix_notm}}의 지역, 조직 및 영역에 로그인하십시오. 
 
-    자세한 정보는 [{{site.data.keyword.Bluemix_notm}}에 로그인하는 방법](/docs/services/CloudLogAnalysis/qa/cli_qa.html#login)을 참조하십시오.
+    자세한 정보는 [{{site.data.keyword.Bluemix_notm}}에 로그인하는 방법](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#login)을 참조하십시오.
     
 2. 다음 명령을 실행하여 로그 콜렉션에서 사용할 수 있는 로그를 확인하십시오.
 
@@ -140,11 +140,11 @@ subcollection: cloudloganalysis
 
 1. {{site.data.keyword.Bluemix_notm}}의 지역, 조직 및 영역에 로그인하십시오. 
 
-    자세한 정보는 [{{site.data.keyword.Bluemix_notm}}에 로그인하는 방법](/docs/services/CloudLogAnalysis/qa/cli_qa.html#login)을 참조하십시오.
+    자세한 정보는 [{{site.data.keyword.Bluemix_notm}}에 로그인하는 방법](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#login)을 참조하십시오.
 	
 2. 계정 ID를 가져오십시오.
 
-    자세한 정보는 [계정의 GUID를 가져오는 방법](/docs/services/CloudLogAnalysis/qa/cli_qa.html#account_guid)을 참조하십시오.
+    자세한 정보는 [계정의 GUID를 가져오는 방법](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#account_guid)을 참조하십시오.
     
 3. 다음 명령을 실행하여 로그 콜렉션에서 사용할 수 있는 로그를 계정 레벨에서 확인하십시오.
 

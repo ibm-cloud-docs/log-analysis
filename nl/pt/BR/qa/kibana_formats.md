@@ -92,7 +92,7 @@ subcollection: cloudloganalysis
 {: caption="Tabela 3.  Campos para contêineres Dockar" caption-side="top"}
 
 
-## Formato de log do Kibana para Hub de Mensagens
+## Formato do log do Kibana para o {{site.data.keyword.messagehub}}
 {: #kibana_log_format_messagehub}
 
 É possível configurar o Kibana para exibição, na página *Descobrir*, dos seguintes campos para cada entrada de log:
@@ -107,7 +107,7 @@ subcollection: cloudloganalysis
 | \_type | O tipo de log; por exemplo, *syslog*. |
 | loglevel | A severidade do evento registrado, por exemplo, **Informações**. |
 | Módulo | Esse campo é configurado como **MessageHub**. |
-{: caption="Tabela 4. Campos para eventos de Hub de mensagens" caption-side="top"}
+{: caption="Tabela 4. Campos para eventos do {{site.data.keyword.messagehub}}" caption-side="top"}
 
 Exemplo de uma entrada de log:
 

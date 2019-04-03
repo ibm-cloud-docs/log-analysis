@@ -34,15 +34,15 @@ subcollection: cloudloganalysis
 
 定義新搜尋之後，請儲存它，以供日後在「探索」頁面中重複使用來進行分析，或是建立視覺效果，以用在自訂儀表板中。 
 
-當您執行新搜尋時，直方圖、表格及「欄位」清單會自動更新，以顯示搜尋結果。若要瞭解會顯示哪些資料，請參閱[識別探索頁面中顯示的資料](/docs/services/CloudLogAnalysis/kibana4/logging_kibana_analize_logs_interactively.html#k4_identify_data)。
+當您執行新搜尋時，直方圖、表格及「欄位」清單會自動更新，以顯示搜尋結果。若要瞭解會顯示哪些資料，請參閱[識別探索頁面中顯示的資料](/docs/services/CloudLogAnalysis/kibana4?topic=cloudloganalysis-kibana_analize_logs_interactively#k4_identify_data)。
 
 您可以建立自訂搜尋來過濾日誌。下列清單概述如何過濾日誌資料的情境：
 
-* 您可以在日誌中搜尋欄位值中包括特定文字的項目。如需相關資訊，請參閱[針對欄位值中的特定文字過濾日誌](/docs/services/CloudLogAnalysis/kibana4/k4_filter_logs.html#k4_filter_logs_spec_text)。
+* 您可以在日誌中搜尋欄位值中包括特定文字的項目。如需相關資訊，請參閱[針對欄位值中的特定文字過濾日誌](/docs/services/CloudLogAnalysis/kibana4?topic=cloudloganalysis-k4_filter_logs#k4_filter_logs_spec_text)。
  
-* 您可以在日誌中搜尋特定欄位值，或排除日誌中特定欄位值的項目。如需相關資訊，請參閱[針對特定欄位值過濾日誌](/docs/services/CloudLogAnalysis/kibana4/k4_filter_logs.html#k4_filter_logs_spec_field)。
+* 您可以在日誌中搜尋特定欄位值，或排除日誌中特定欄位值的項目。如需相關資訊，請參閱[針對特定欄位值過濾日誌](/docs/services/CloudLogAnalysis/kibana4?topic=cloudloganalysis-k4_filter_logs#k4_filter_logs_spec_field)。
  
-* 您可以過濾日誌，以顯示某時段內的項目。如需相關資訊，請參閱[設定時間過濾器](/docs/services/CloudLogAnalysis/kibana4/k4_filter_logs.html#set_time_filter1)。
+* 您可以過濾日誌，以顯示某時段內的項目。如需相關資訊，請參閱[設定時間過濾器](/docs/services/CloudLogAnalysis/kibana4?topic=cloudloganalysis-k4_filter_logs#set_time_filter1)。
      
 
 ## 新增過濾器以尋找未列在*欄位清單* 中的值
@@ -53,7 +53,7 @@ subcollection: cloudloganalysis
 
 請完成下列步驟，新增過濾器以尋找*欄位清單* 區段所顯示的清單中沒有的值：
 
-1. 在 Kibana 的「探索」頁面中，查看它顯示哪部分的資料。如需相關資訊，請參閱[識別 Kibana 探索頁面中顯示的資料](/docs/services/CloudLogAnalysis/kibana4/logging_kibana_analize_logs_interactively.html#k4_identify_data)。
+1. 在 Kibana 的「探索」頁面中，查看它顯示哪部分的資料。如需相關資訊，請參閱[識別 Kibana 探索頁面中顯示的資料](/docs/services/CloudLogAnalysis/kibana4?topic=cloudloganalysis-kibana_analize_logs_interactively#k4_identify_data)。
 
     例如，下圖顯示*欄位清單* 中 CF 應用程式實例的值。 
     
@@ -92,13 +92,13 @@ subcollection: cloudloganalysis
 
 請完成下列步驟，以搜尋包括特定欄位值的項目：
 
-1. 在 Kibana 的「探索」頁面中，查看它顯示哪部分的資料。如需相關資訊，請參閱[識別 Kibana 探索頁面中顯示的資料](/docs/services/CloudLogAnalysis/kibana4/logging_kibana_analize_logs_interactively.html#k4_identify_data)。
+1. 在 Kibana 的「探索」頁面中，查看它顯示哪部分的資料。如需相關資訊，請參閱[識別 Kibana 探索頁面中顯示的資料](/docs/services/CloudLogAnalysis/kibana4?topic=cloudloganalysis-kibana_analize_logs_interactively#k4_identify_data)。
 
 2. 在*欄位清單* 中，識別您要為其定義過濾器的欄位，然後按一下該欄位。
 
     針對該欄位，最多可顯示 5 個值。每一個值都有兩個放大鏡按鈕。 
     
-    如果您看不到該值，請參閱[新增過濾器以尋找未列在「欄位清單」中的值](/docs/services/CloudLogAnalysis/kibana4/k4_filter_logs.html#k4_add_filter_out_value)。
+    如果您看不到該值，請參閱[新增過濾器以尋找未列在「欄位清單」中的值](/docs/services/CloudLogAnalysis/kibana4?topic=cloudloganalysis-k4_filter_logs#k4_add_filter_out_value)。
 
 3. 若要新增過濾器，以搜尋包含欄位值的項目，請選擇該值的放大鏡按鈕 ![內含模式的放大鏡按鈕](images/k4_include_field_icon.jpg "內含模式的放大鏡按鈕")。
 
@@ -151,7 +151,7 @@ subcollection: cloudloganalysis
 
 請完成下列步驟，以搜尋包括特定日誌來源的項目：
 
-1. 在 Kibana 的「探索」頁面中，查看它顯示哪部分的資料。如需相關資訊，請參閱[識別 Kibana 探索頁面中顯示的資料](/docs/services/CloudLogAnalysis/kibana4/logging_kibana_analize_logs_interactively.html#k4_identify_data)。
+1. 在 Kibana 的「探索」頁面中，查看它顯示哪部分的資料。如需相關資訊，請參閱[識別 Kibana 探索頁面中顯示的資料](/docs/services/CloudLogAnalysis/kibana4?topic=cloudloganalysis-kibana_analize_logs_interactively#k4_identify_data)。
 
 2. 在*欄位清單* 中，選取 **source_id** 欄位。
 
@@ -159,7 +159,7 @@ subcollection: cloudloganalysis
 
 3. 若要新增過濾器，以搜尋包括特定 source_id 的項目，請選擇該值的放大鏡按鈕 ![內含模式的放大鏡按鈕](images/k4_include_field_icon.jpg "內含模式的放大鏡按鈕")。
 
-    如需 CF 應用程式可用的日誌來源清單，請參閱 [CF 應用程式的日誌來源](/docs/services/CloudLogAnalysis/cfapps/logging_cf_apps.html#cf_apps_log_sources_diego)。
+    如需 CF 應用程式可用的日誌來源清單，請參閱 [CF 應用程式的日誌來源](/docs/services/CloudLogAnalysis/cfapps?topic=cloudloganalysis-logging_cf_apps#cf_apps_log_sources_diego)。
 
     例如，若要新增過濾器，以包括關於 CF 應用程式啟動、停止或當機的日誌項目，請在*欄位清單* 區段中，選取值 *CELL* 可用的放大鏡按鈕 ![內含模式的放大鏡按鈕](images/k4_include_field_icon.jpg "內含模式的放大鏡按鈕")。下圖顯示已啟用 source_id 值 *CELL* 的過濾器。
     
@@ -177,7 +177,7 @@ subcollection: cloudloganalysis
 
 請完成下列步驟，以搜尋包括特定日誌類型的項目：
 
-1. 在 Kibana 的「探索」頁面中，查看它顯示哪部分的資料。如需相關資訊，請參閱[識別 Kibana 探索頁面中顯示的資料](/docs/services/CloudLogAnalysis/kibana4/logging_kibana_analize_logs_interactively.html#k4_identify_data)。
+1. 在 Kibana 的「探索」頁面中，查看它顯示哪部分的資料。如需相關資訊，請參閱[識別 Kibana 探索頁面中顯示的資料](/docs/services/CloudLogAnalysis/kibana4?topic=cloudloganalysis-kibana_analize_logs_interactively#k4_identify_data)。
 
 2. 在*欄位清單* 中，選取 **type** 欄位。
 
@@ -203,7 +203,7 @@ subcollection: cloudloganalysis
 
 請完成下列步驟，以在 Kibana 儀表板上，依實例 ID 檢視及過濾日誌：
 
-1. 在 Kibana 的「探索」頁面中，查看它顯示哪部分的資料。如需相關資訊，請參閱[識別 Kibana 探索頁面中顯示的資料](/docs/services/CloudLogAnalysis/kibana4/logging_kibana_analize_logs_interactively.html#k4_identify_data)。
+1. 在 Kibana 的「探索」頁面中，查看它顯示哪部分的資料。如需相關資訊，請參閱[識別 Kibana 探索頁面中顯示的資料](/docs/services/CloudLogAnalysis/kibana4?topic=cloudloganalysis-kibana_analize_logs_interactively#k4_identify_data)。
 
 2. 在*欄位清單* 中，選取下列其中一個欄位，以搜尋特定實例 ID：
 
@@ -232,7 +232,7 @@ subcollection: cloudloganalysis
 
 請完成下列步驟，以搜尋包括特定訊息類型的項目：
 
-1. 在 Kibana 的「探索」頁面中，查看它顯示哪部分的資料。如需相關資訊，請參閱[識別 Kibana 探索頁面中顯示的資料](/docs/services/CloudLogAnalysis/kibana4/logging_kibana_analize_logs_interactively.html#k4_identify_data)。
+1. 在 Kibana 的「探索」頁面中，查看它顯示哪部分的資料。如需相關資訊，請參閱[識別 Kibana 探索頁面中顯示的資料](/docs/services/CloudLogAnalysis/kibana4?topic=cloudloganalysis-kibana_analize_logs_interactively#k4_identify_data)。
 
 2. 在*欄位清單* 中，選取 **message_type** 欄位。
 
@@ -264,11 +264,11 @@ subcollection: cloudloganalysis
     
 請完成下列步驟，以搜尋欄位值中包括特定文字的項目：
 
-1. 在 Kibana 的「探索」頁面中，查看它顯示哪部分的資料。如需相關資訊，請參閱[識別 Kibana 探索頁面中顯示的資料](/docs/services/CloudLogAnalysis/kibana4/logging_kibana_analize_logs_interactively.html#k4_identify_data)。
+1. 在 Kibana 的「探索」頁面中，查看它顯示哪部分的資料。如需相關資訊，請參閱[識別 Kibana 探索頁面中顯示的資料](/docs/services/CloudLogAnalysis/kibana4?topic=cloudloganalysis-kibana_analize_logs_interactively#k4_identify_data)。
 
 2. 識別 ElasticSearch 中依預設分析的欄位。
 
-    若要顯示可用來搜尋及過濾日誌資料的分析欄位完整清單，請[重新載入欄位清單](/docs/services/CloudLogAnalysis/kibana4/logging_kibana_analize_logs_interactively.html#kibana_discover_view_reload_fields)。然後，在「探索」頁面可用的*欄位清單* 中，完成下列步驟：
+    若要顯示可用來搜尋及過濾日誌資料的分析欄位完整清單，請[重新載入欄位清單](/docs/services/CloudLogAnalysis/kibana4?topic=cloudloganalysis-kibana_analize_logs_interactively#kibana_discover_view_reload_fields)。然後，在「探索」頁面可用的*欄位清單* 中，完成下列步驟：
     
     1. 按一下「配置」圖示 ![「配置」圖示](images/k4_configure_icon.jpg "「配置」圖示")。即會顯示**選取的欄位**區段，您可以在這裡過濾欄位。
 

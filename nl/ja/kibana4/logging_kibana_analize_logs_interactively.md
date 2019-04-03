@@ -51,12 +51,12 @@ subcollection: cloudloganalysis
 
 | タスク | 説明 | 
 |------|-------------|
-| [フィールド列の追加](/docs/services/CloudLogAnalysis/kibana4/logging_kibana_analize_logs_interactively.html#kibana_discover_add_fields_to_table) | メッセージ全体ではなく、分析に必要な特定のデータを表示するためにフィールドを追加します。 |
-| [フィールド列の並べ替え](/docs/services/CloudLogAnalysis/kibana4/logging_kibana_analize_logs_interactively.html#kibana_discover_rearrange_fields_in_table) | 表内のフィールドの位置を必要な位置に移動します。 |
-| [項目の表示](/docs/services/CloudLogAnalysis/kibana4/logging_kibana_analize_logs_interactively.html#kibana_discover_view_entry_in_table) | 表内の項目を展開して、フィールド別または JSON として解析された項目の詳細を表示します。 |
-| [フィールド列の削除](/docs/services/CloudLogAnalysis/kibana4/logging_kibana_analize_logs_interactively.html#kibana_discover_remove_fields_from_table) | 分析用にビュー内で不要になったフィールドを削除します。 |
-| [索引フィールドの値による項目の配列](/docs/services/CloudLogAnalysis/kibana4/logging_kibana_analize_logs_interactively.html#kibana_discover_sort_by_table) | 分析しやすいように項目を再配列します。 |
-| [データの自動最新表示](/docs/services/CloudLogAnalysis/kibana4/logging_kibana_analize_logs_interactively.html#kibana_discover_view_refresh_interval) | 最新の項目を使用して、表内に表示されるデータを最新表示します。 デフォルトでは、最新表示は **OFF** です。 |
+| [フィールド列の追加](/docs/services/CloudLogAnalysis/kibana4?topic=cloudloganalysis-kibana_analize_logs_interactively#kibana_discover_add_fields_to_table) | メッセージ全体ではなく、分析に必要な特定のデータを表示するためにフィールドを追加します。 |
+| [フィールド列の並べ替え](/docs/services/CloudLogAnalysis/kibana4?topic=cloudloganalysis-kibana_analize_logs_interactively#kibana_discover_rearrange_fields_in_table) | 表内のフィールドの位置を必要な位置に移動します。 |
+| [項目の表示](/docs/services/CloudLogAnalysis/kibana4?topic=cloudloganalysis-kibana_analize_logs_interactively#kibana_discover_view_entry_in_table) | 表内の項目を展開して、フィールド別または JSON として解析された項目の詳細を表示します。 |
+| [フィールド列の削除](/docs/services/CloudLogAnalysis/kibana4?topic=cloudloganalysis-kibana_analize_logs_interactively#kibana_discover_remove_fields_from_table) | 分析用にビュー内で不要になったフィールドを削除します。 |
+| [索引フィールドの値による項目の配列](/docs/services/CloudLogAnalysis/kibana4?topic=cloudloganalysis-kibana_analize_logs_interactively#kibana_discover_sort_by_table) | 分析しやすいように項目を再配列します。 |
+| [データの自動最新表示](/docs/services/CloudLogAnalysis/kibana4?topic=cloudloganalysis-kibana_analize_logs_interactively#kibana_discover_view_refresh_interval) | 最新の項目を使用して、表内に表示されるデータを最新表示します。 デフォルトでは、最新表示は **OFF** です。 |
 {: caption="表 2. 表をカスタマイズするタスク" caption-side="top"}
 
 <br>
@@ -97,7 +97,7 @@ subcollection: cloudloganalysis
 * フィールドごとに統計を確認できます。 
 * 構成した `@timestamp` に従って、ヒストグラムで統計を確認できます。
 
-詳しくは、『[フィールド・データ統計の表示](/docs/services/CloudLogAnalysis/kibana4/logging_kibana_analize_logs_interactively.html#kibana_discover_view_fields_stats)』を参照してください。
+詳しくは、『[フィールド・データ統計の表示](/docs/services/CloudLogAnalysis/kibana4?topic=cloudloganalysis-kibana_analize_logs_interactively#kibana_discover_view_fields_stats)』を参照してください。
 
 **注:** 表およびヒストグラムで表示されるデータは、静的です。 最新の項目を表示し続ける場合は、最新表示間隔を設定する必要があります。 
 

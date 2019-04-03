@@ -34,7 +34,7 @@ Completa la seguente procedura per inviare i dati di log a uno spazio in {{site.
 {: #prereqs1}
 
 * Un ID {{site.data.keyword.Bluemix_notm}} per accedere a {{site.data.keyword.Bluemix_notm}}.
-* Un ID utente che dispone delle autorizzazioni per lavorare in uno spazio con il servizio {{site.data.keyword.loganalysisshort}}. Per ulteriori informazioni, vedi [Sicurezza](/docs/services/CloudLogAnalysis/security_ov.html#security_ov).
+* Un ID utente che dispone delle autorizzazioni per lavorare in uno spazio con il servizio {{site.data.keyword.loganalysisshort}}. Per ulteriori informazioni, vedi [Sicurezza](/docs/services/CloudLogAnalysis?topic=cloudloganalysis-security_ov#security_ov).
 * La CLI {{site.data.keyword.loganalysisshort}} installata nel tuo ambiente locale.
 * Il servizio {{site.data.keyword.loganalysisshort}} di cui è stato eseguito il provisioning in uno spazio nel tuo account con un piano che consente l'inserimento dei log.
 
@@ -46,7 +46,7 @@ Completa la seguente procedura da una sessione terminale in cui è installata la
 
 1. Accedi a una regione, un'organizzazione e uno spazio in {{site.data.keyword.Bluemix_notm}}. 
 
-    Per ulteriori informazioni, vedi [Come accedo a {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/qa/cli_qa.html#login).
+    Per ulteriori informazioni, vedi [Come accedo a {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#login).
     
 2. Esegui il comando `ibmcloud logging token-get`. 
 
@@ -206,7 +206,7 @@ Completa la seguente procedura per configurare mt-logstash-forwarder nell'ambien
           </tr>
           <tr>
             <td>LSF_TARGET</td>
-            <td>URL di destinazione. Per ottenere l'elenco di URL di inserimento, vedi [URL di inserimento](/docs/services/CloudLogAnalysis/log_ingestion.html#log_ingestion_urls). Ad esempio, imposta il valore su **ingest.logging.ng.bluemix.net:9091** per inviare i log nella regione Stati Uniti Sud. </td>
+            <td>URL di destinazione. Per ottenere l'elenco di URL di inserimento, vedi [URL di inserimento](/docs/services/CloudLogAnalysis?topic=cloudloganalysis-log_ingestion#log_ingestion_urls). Ad esempio, imposta il valore su **ingest.logging.ng.bluemix.net:9091** per inviare i log nella regione Stati Uniti Sud. </td>
           </tr>
           <tr>
             <td>LSF_TENANT_ID</td>

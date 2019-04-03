@@ -51,15 +51,15 @@ subcollection: cloudloganalysis
     * {{site.data.keyword.containershort}} 的 IAM 策略，以及*编辑者*、*操作员*或*管理员*许可权。
     * {{site.data.keyword.loganalysisshort}} 服务供应所在空间的 CF 角色，以及*开发者*许可权。
     
-    有关更多信息，请参阅[通过 IBM Cloud UI 向用户分配 IAM 策略](/docs/services/CloudLogAnalysis/security/grant_permissions.html#grant_permissions_ui_account)和[使用 IBM Cloud UI 向用户授予查看空间日志的许可权](/docs/services/CloudLogAnalysis/security/grant_permissions.html#grant_permissions_ui_space)。
+    有关更多信息，请参阅[通过 IBM Cloud UI 向用户分配 IAM 策略](/docs/services/CloudLogAnalysis/security?topic=cloudloganalysis-grant_permissions#grant_permissions_ui_account)和[使用 IBM Cloud UI 向用户授予查看空间日志的许可权](/docs/services/CloudLogAnalysis/security?topic=cloudloganalysis-grant_permissions#grant_permissions_ui_space)。
 
 2. 具有终端会话，您可以从中管理 Kubernetes 集群并从命令行部署应用程序。此教程的示例供 Ubuntu Linux 系统使用。
 
 3. 安装 CLI，以在 Ubuntu 系统中使用 {{site.data.keyword.containershort}} 和 {{site.data.keyword.loganalysisshort}}。
 
-    * 安装 {{site.data.keyword.Bluemix_notm}} CLI。安装 {{site.data.keyword.containershort}} CLI，以在 {{site.data.keyword.containershort}} 中创建和管理 Kubernetes 集群，以及将容器化应用程序部署到集群中。有关更多信息，请参阅[安装 {{site.data.keyword.Bluemix_notm}} CLI](/docs/cli/index.html#overview)。
+    * 安装 {{site.data.keyword.Bluemix_notm}} CLI。安装 {{site.data.keyword.containershort}} CLI，以在 {{site.data.keyword.containershort}} 中创建和管理 Kubernetes 集群，以及将容器化应用程序部署到集群中。有关更多信息，请参阅[安装 {{site.data.keyword.Bluemix_notm}} CLI](/docs/cli?topic=cloud-cli-ibmcloud-cli#overview)。
     
-    * 安装 {{site.data.keyword.loganalysisshort}} CLI。有关更多信息，请参阅[配置 Log Analysis CLI（IBM Cloud 插件）](/docs/services/CloudLogAnalysis/how-to/manage-logs/config_log_collection_cli_cloud.html#config_log_collection_cli)。
+    * 安装 {{site.data.keyword.loganalysisshort}} CLI。有关更多信息，请参阅[配置 Log Analysis CLI（IBM Cloud 插件）](/docs/services/CloudLogAnalysis/how-to/manage-logs?topic=cloudloganalysis-config_log_collection_cli#config_log_collection_cli)。
     
 4. 有权访问美国南部区域帐户中名为 **dev** 的空间。 
 
@@ -81,11 +81,11 @@ subcollection: cloudloganalysis
 
 1. 创建标准 Kubernetes 集群。
 
-   有关更多信息，请参阅[创建集群](/docs/containers/cs_tutorials.html#cs_cluster_tutorial)。
+   有关更多信息，请参阅[创建集群](/docs/containers?topic=containers-cs_cluster_tutorial#cs_cluster_tutorial)。
 
 2. 在终端中设置集群上下文。设置上下文后，您可以管理 Kubernetes 集群并在 Kubernetes 集群中部署应用程序。
 
-    登录到与您所创建的集群相关联的 {{site.data.keyword.Bluemix_notm}} 中的区域、组织和空间。有关更多信息，请参阅[如何登录到 {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/qa/cli_qa.html#login)。
+    登录到与您所创建的集群相关联的 {{site.data.keyword.Bluemix_notm}} 中的区域、组织和空间。有关更多信息，请参阅[如何登录到 {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#login)。
 
 	初始化 {{site.data.keyword.containershort}} 服务插件。
 
@@ -145,7 +145,7 @@ ae249c04-a3a9-4c29-a890-22d8da7bd1b2   container    *           ingest.logging.n
 ```
 {: screen}
 
-要查看可为其定义日志记录配置的日志源的列表，请参阅[日志源](/docs/services/CloudLogAnalysis/containers/containers_kubernetes.html#log_sources)。
+要查看可为其定义日志记录配置的日志源的列表，请参阅[日志源](/docs/services/CloudLogAnalysis/containers?topic=cloudloganalysis-containers_kubernetes#log_sources)。
 
 
 ### 配置集群以将 stderr 和 stdout 日志转发到 {{site.data.keyword.loganalysisshort}} 服务
@@ -176,7 +176,7 @@ ae249c04-a3a9-4c29-a890-22d8da7bd1b2   container    *           ingest.logging.n
     其中 
 
     * *ClusterName* 是集群的名称。
-    * *EndPoint* 是供应 {{site.data.keyword.loganalysisshort}} 服务的区域中的日志记录服务的 URL。有关端点的列表，请参阅[端点](/docs/services/CloudLogAnalysis/log_ingestion.html#log_ingestion_urls)。
+    * *EndPoint* 是供应 {{site.data.keyword.loganalysisshort}} 服务的区域中的日志记录服务的 URL。有关端点的列表，请参阅[端点](/docs/services/CloudLogAnalysis?topic=cloudloganalysis-log_ingestion#log_ingestion_urls)。
     * *OrgName* 是其中空间可用的组织的名称。
     * *SpaceName* 是供应 {{site.data.keyword.loganalysisshort}} 服务的空间的名称。
 
@@ -218,7 +218,7 @@ ibmcloud cs logging-config-create mycluster --logsource container --type ibm --n
     其中 
 
     * *ClusterName* 是集群的名称。
-    * *EndPoint* 是供应 {{site.data.keyword.loganalysisshort}} 服务的区域中的日志记录服务的 URL。有关端点的列表，请参阅[端点](/docs/services/CloudLogAnalysis/log_ingestion.html#log_ingestion_urls)。
+    * *EndPoint* 是供应 {{site.data.keyword.loganalysisshort}} 服务的区域中的日志记录服务的 URL。有关端点的列表，请参阅[端点](/docs/services/CloudLogAnalysis?topic=cloudloganalysis-log_ingestion#log_ingestion_urls)。
     * *OrgName* 是其中空间可用的组织的名称。
     * *SpaceName* 是供应 {{site.data.keyword.loganalysisshort}} 服务的空间的名称。
 
@@ -253,7 +253,7 @@ ibmcloud cs logging-config-create mycluster --logsource worker  --type ibm --hos
 	
 3. 如果用户是帐户的成员，请从列表中选择用户名，或者从*操作*菜单中单击**管理用户**。
 
-    如果用户不是帐户的成员，请参阅[邀请用户](/docs/iam/iamuserinv.html#iamuserinv)。
+    如果用户不是帐户的成员，请参阅[邀请用户](/docs/iam?topic=iam-iamuserinv#iamuserinv)。
 
 4. 选择 **Cloud Foundry 访问权**，然后选择组织。
 
@@ -299,7 +299,7 @@ ibmcloud cs logging-config-create mycluster --logsource worker  --type ibm --hos
 	
     选择用户标识并验证用户是否具有组织的 *orgManager* 角色，以及空间的 *SpaceManager* 和 *Developer* 角色。
 
-    如果用户没有正确的许可权，请授予用户以下许可权：组织的 *orgManager* 角色，以及空间的 *SpaceManager* 和 *Developer* 角色。有关更多信息，请参阅[使用 IBM Cloud UI 向用户授予查看空间日志的许可权](/docs/services/CloudLogAnalysis/security/grant_permissions.html#grant_permissions_ui_space)。
+    如果用户没有正确的许可权，请授予用户以下许可权：组织的 *orgManager* 角色，以及空间的 *SpaceManager* 和 *Developer* 角色。有关更多信息，请参阅[使用 IBM Cloud UI 向用户授予查看空间日志的许可权](/docs/services/CloudLogAnalysis/security?topic=cloudloganalysis-grant_permissions#grant_permissions_ui_space)。
     
 3. 验证身份为 {{site.data.keyword.containershort}} 密钥所有者的用户是否具有 {{site.data.keyword.loganalysisshort}} 服务的 IAM 策略，以及*管理员*许可权。
 
@@ -307,7 +307,7 @@ ibmcloud cs logging-config-create mycluster --logsource worker  --type ibm --hos
 	
     选择用户标识并验证用户是否已设置 IAM 策略。 
 
-    如果用户没有 IAM 策略，请参阅[通过 IBM Cloud UI 将 IAM 策略分配给用户](/docs/services/CloudLogAnalysis/security/grant_permissions.html#grant_permissions_ui_account)。
+    如果用户没有 IAM 策略，请参阅[通过 IBM Cloud UI 将 IAM 策略分配给用户](/docs/services/CloudLogAnalysis/security?topic=cloudloganalysis-grant_permissions#grant_permissions_ui_account)。
 
 4. 刷新日志记录配置。运行以下命令：
     
@@ -324,7 +324,7 @@ ibmcloud cs logging-config-create mycluster --logsource worker  --type ibm --hos
 ## 步骤 5：在 Kubernetes 集群中部署样本应用程序以在 stdout 中生成内容
 {: #step53}
 
-在 Kubernetes 集群中部署并运行样本应用程序。完成以下教程中的步骤以部署样本应用程序：[第 1 课：将单实例应用程序部署到 Kubernetes 集群](/docs/containers/cs_tutorials_apps.html#cs_apps_tutorial_lesson1)。
+在 Kubernetes 集群中部署并运行样本应用程序。完成以下教程中的步骤以部署样本应用程序：[第 1 课：将单实例应用程序部署到 Kubernetes 集群](/docs/containers?topic=containers-cs_apps_tutorial#cs_apps_tutorial_lesson1)。
 
 该应用程序是 Hello World Node.js 应用程序：
 
@@ -355,7 +355,7 @@ app.listen(8080, function() {
 
 1. 在浏览器中启动 Kibana。 
 
-    有关如何启动 Kibana 的更多信息，请参阅[通过 Web 浏览器导航至 Kibana](/docs/services/CloudLogAnalysis/kibana/launch.html#launch_Kibana_from_browser)。
+    有关如何启动 Kibana 的更多信息，请参阅[通过 Web 浏览器导航至 Kibana](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-launch#launch_Kibana_from_browser)。
 
     要分析集群的日志数据，必须在创建集群的云 Public 区域中访问 Kibana。 
     
@@ -368,7 +368,7 @@ app.listen(8080, function() {
 	
     这将打开 Kibana。
     
-    **注**：验证是否是在要转发集群日志的区域中启动的 Kibana。有关每个区域的 URL 的相关信息，请参阅[日志记录端点](/docs/services/CloudLogAnalysis/kibana/analyzing_logs_Kibana.html#urls_kibana)。
+    **注**：验证是否是在要转发集群日志的区域中启动的 Kibana。有关每个区域的 URL 的相关信息，请参阅[日志记录端点](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-analyzing_logs_Kibana#urls_kibana)。
     	
 2. 要查看空间域中可用的日志数据，请完成以下步骤：
 
@@ -438,7 +438,7 @@ app.listen(8080, function() {
               </tr>
         </table>
      
-有关与 Kubernetes 集群相关的其他搜索字段的更多信息，请参阅[搜索日志](/docs/services/CloudLogAnalysis/containers/containers_kubernetes.html#log_search)。
+有关与 Kubernetes 集群相关的其他搜索字段的更多信息，请参阅[搜索日志](/docs/services/CloudLogAnalysis/containers?topic=cloudloganalysis-containers_kubernetes#log_search)。
 
 
 ## 步骤 7：在 Kibana 中按 Kubernetes 集群名称过滤数据
@@ -477,9 +477,9 @@ app.listen(8080, function() {
 
 将集群的名称 (*cluster1*) 替换为要查看其日志数据的集群名称 *mycluster*。
         
-如果看不到任何数据，请尝试更改时间过滤器。有关更多信息，请参阅[设置时间过滤器](/docs/services/CloudLogAnalysis/kibana/filter_logs.html#set_time_filter)。
+如果看不到任何数据，请尝试更改时间过滤器。有关更多信息，请参阅[设置时间过滤器](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-filter_logs#set_time_filter)。
 
-有关更多信息，请参阅[在 Kibana 中过滤日志](/docs/services/CloudLogAnalysis/kibana/filter_logs.html#filter_logs)。
+有关更多信息，请参阅[在 Kibana 中过滤日志](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-filter_logs#filter_logs)。
 
 
 ## {{site.data.keyword.containershort_notm}} 参考资料
@@ -487,10 +487,10 @@ app.listen(8080, function() {
 
 CLI 命令：
 
-* [ibmcloud cs api-key-info](/docs/containers/cs_cli_reference.html#cs_api_key_info)
-* [ibmcloud cs logging-config-create](/docs/containers/cs_cli_reference.html#cs_logging_create)
-* [ibmcloud cs logging-config-get](/docs/containers/cs_cli_reference.html#cs_logging_get)
-* [ibmcloud cs logging-config-update](/docs/containers/cs_cli_reference.html#cs_logging_update)
-* [ibmcloud cs logging-config-rm](/docs/containers/cs_cli_reference.html#cs_logging_rm)
-* [ibmcloud cs logging-config-refresh](/docs/containers/cs_cli_reference.html#cs_logging_refresh)
+* [ibmcloud cs api-key-info](/docs/containers?topic=containers-cs_cli_reference#cs_api_key_info)
+* [ibmcloud cs logging-config-create](/docs/containers?topic=containers-cs_cli_reference#cs_logging_create)
+* [ibmcloud cs logging-config-get](/docs/containers?topic=containers-cs_cli_reference#cs_logging_get)
+* [ibmcloud cs logging-config-update](/docs/containers?topic=containers-cs_cli_reference#cs_logging_update)
+* [ibmcloud cs logging-config-rm](/docs/containers?topic=containers-cs_cli_reference#cs_logging_rm)
+* [ibmcloud cs logging-config-refresh](/docs/containers?topic=containers-cs_cli_reference#cs_logging_refresh)
 

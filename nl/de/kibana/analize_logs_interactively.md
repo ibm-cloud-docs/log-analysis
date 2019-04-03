@@ -28,7 +28,7 @@ subcollection: cloudloganalysis
 Auf der Seite 'Discover' können Sie Ihre Protokolle interaktiv anzeigen und analysieren. Sie können Suchabfragen in der Abfragesprache Lucene definieren, um die Daten zu filtern. Für jede Suchabfrage können Sie Filter anwenden, um die Einträge einzugrenzen, die für die Analyse verfügbar sind. Sie können eine Suche zur späteren Verwendung speichern.
 {:shortdesc}
 
-In {{site.data.keyword.Bluemix_notm}} ist die Gruppe von Daten, die auf der Seite 'Discover' angezeigt wird, wenn Sie Kibana in der {{site.data.keyword.Bluemix_notm}}-Benutzerschnittstelle starten, standardmäßig so konfiguriert, dass nur die Einträge für die Cloud Foundry-Anwendung (CF-Anwendung) oder den Cloud Foundry-Container angezeigt werden, aus der bzw. dem heraus Kibana gestartet wird. Weitere Informationen dazu, wie Sie ermitteln, welches Subset Ihrer Daten auf der Seite 'Discover' angezeigt wird, finden Sie unter [Angezeigte Daten ermitteln](/docs/services/CloudLogAnalysis/kibana/analize_logs_interactively.html#identify_data).
+In {{site.data.keyword.Bluemix_notm}} ist die Gruppe von Daten, die auf der Seite 'Discover' angezeigt wird, wenn Sie Kibana in der {{site.data.keyword.Bluemix_notm}}-Benutzerschnittstelle starten, standardmäßig so konfiguriert, dass nur die Einträge für die Cloud Foundry-Anwendung (CF-Anwendung) oder den Cloud Foundry-Container angezeigt werden, aus der bzw. dem heraus Kibana gestartet wird. Weitere Informationen dazu, wie Sie ermitteln, welches Subset Ihrer Daten auf der Seite 'Discover' angezeigt wird, finden Sie unter [Angezeigte Daten ermitteln](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-analize_logs_interactively#identify_data).
 
 In der folgenden Tabelle wird die Standardabfrage für jede Ressource beim Starten von Kibana über {{site.data.keyword.Bluemix_notm}} angegeben:
 
@@ -51,12 +51,12 @@ Zur Anpassung der Tabelle auf der Seite 'Discover' können Sie beliebige der fol
 
 | Task | Beschreibung | 
 |------|-------------|
-| [Feldspalte hinzufügen](/docs/services/CloudLogAnalysis/kibana/analize_logs_interactively.html#discover_add_fields_to_table) | Sie können Felder hinzufügen, um anstelle der vollständigen Nachricht bestimmte Daten anzuzeigen, die für die Analyse erforderlich sind. |
-| [Datenansicht automatisch aktualisieren](/docs/services/CloudLogAnalysis/kibana/analize_logs_interactively.html#discover_view_refresh_interval) | Sie können die Daten, die in der Tabelle angezeigt werden, mit den neuesten Einträgen aktualisieren. Standardmäßig ist die Aktualisierung inaktiviert (**OFF**). |
-| [Einträge nach Wert eines indexierten Felds anordnen](/docs/services/CloudLogAnalysis/kibana/analize_logs_interactively.html#discover_sort_by_table) | Sie können die Einträge zur einfacheren Analyse neu sortieren. |
-| [Feldspalte neu anordnen](/docs/services/CloudLogAnalysis/kibana/analize_logs_interactively.html#discover_rearrange_fields_in_table) | Verschieben Sie die Position eines Felds in der Tabelle auf der Position, an der Sie es wollen. |
-| [Feldspalte entfernen](/docs/services/CloudLogAnalysis/kibana/analize_logs_interactively.html#discover_remove_fields_from_table) | Sie können ein Feld entfernen, wenn es in der Ansicht für die Analyse nicht erforderlich ist. |
-| [Eintrag anzeigen](/docs/services/CloudLogAnalysis/kibana/analize_logs_interactively.html#discover_view_entry_in_table) | Sie können einen Eintrag in der Tabelle erweitern, um die Details des Eintrags nach Feld geparst oder als JSON-Daten anzuzeigen. |
+| [Feldspalte hinzufügen](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-analize_logs_interactively#discover_add_fields_to_table) | Sie können Felder hinzufügen, um anstelle der vollständigen Nachricht bestimmte Daten anzuzeigen, die für die Analyse erforderlich sind. |
+| [Datenansicht automatisch aktualisieren](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-analize_logs_interactively#discover_view_refresh_interval) | Sie können die Daten, die in der Tabelle angezeigt werden, mit den neuesten Einträgen aktualisieren. Standardmäßig ist die Aktualisierung inaktiviert (**OFF**). |
+| [Einträge nach Wert eines indexierten Felds anordnen](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-analize_logs_interactively#discover_sort_by_table) | Sie können die Einträge zur einfacheren Analyse neu sortieren. |
+| [Feldspalte neu anordnen](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-analize_logs_interactively#discover_rearrange_fields_in_table) | Verschieben Sie die Position eines Felds in der Tabelle auf der Position, an der Sie es wollen. |
+| [Feldspalte entfernen](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-analize_logs_interactively#discover_remove_fields_from_table) | Sie können ein Feld entfernen, wenn es in der Ansicht für die Analyse nicht erforderlich ist. |
+| [Eintrag anzeigen](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-analize_logs_interactively#discover_view_entry_in_table) | Sie können einen Eintrag in der Tabelle erweitern, um die Details des Eintrags nach Feld geparst oder als JSON-Daten anzuzeigen. |
 {: caption="Tabelle 2. Tasks für die Anpassung einer Tabelle" caption-side="top"}
 
 <br>
@@ -65,30 +65,30 @@ Die folgende Abbildung zeigt ein Beispiel für eine Tabelle auf der Seite 'Disco
 
 ![Seite 'Discover' in Kibana](images/discover_page.gif "Seite 'Discover' in Kibana")
 
-Sie können weitere Suchen definieren. Weitere Informationen finden Sie unter [Protokolle durch Definieren angepasster Suchen filtern](/docs/services/CloudLogAnalysis/kibana/define_search.html#define_search). Wenn Sie eine neue Suche definieren, werden die Daten, die im Histogramm und in der Tabelle angezeigt werden, automatisch aktualisiert.
+Sie können weitere Suchen definieren. Weitere Informationen finden Sie unter [Protokolle durch Definieren angepasster Suchen filtern](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-define_search#define_search). Wenn Sie eine neue Suche definieren, werden die Daten, die im Histogramm und in der Tabelle angezeigt werden, automatisch aktualisiert.
 
 Zum Definieren einer neuen Suche verwenden Sie die Standardsuchabfrage als Ausgangspunkt und grenzen die Suche dann durch folgende Aktionen ein:
 
-* Wenden Sie Feldfilter an, um die Gruppe von Daten einzugrenzen, die angezeigt wird. Sie können jeden Filter umschalten, auf der Seite fixieren, nach Bedarf aktivieren oder inaktivieren und so konfigurieren, dass der Wert eingeschlossen oder ausgeschlossen wird. Weitere Informationen finden Sie unter [Protokolle in Kibana filtern](/docs/services/CloudLogAnalysis/kibana/filter_logs.html#filter_logs).
+* Wenden Sie Feldfilter an, um die Gruppe von Daten einzugrenzen, die angezeigt wird. Sie können jeden Filter umschalten, auf der Seite fixieren, nach Bedarf aktivieren oder inaktivieren und so konfigurieren, dass der Wert eingeschlossen oder ausgeschlossen wird. Weitere Informationen finden Sie unter [Protokolle in Kibana filtern](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-filter_logs#filter_logs).
 
-    **Tipp:** Wenn Sie ein Feld in der Liste *Fields*  nicht finden können, das Sie erwarten, oder wenn einige der Lupensymbole neben den aufgelisteten Feldern auf der Seite 'Discover' inaktiviert sind, laden Sie die Feldliste erneut, indem Sie das Indexmuster auf der Seite 'Settings' aktualisieren. Weitere Informationen finden Sie unter [Feldliste erneut laden](/docs/services/CloudLogAnalysis/kibana/analize_logs_interactively.html#discover_view_reload_fields).
+    **Tipp:** Wenn Sie ein Feld in der Liste *Fields*  nicht finden können, das Sie erwarten, oder wenn einige der Lupensymbole neben den aufgelisteten Feldern auf der Seite 'Discover' inaktiviert sind, laden Sie die Feldliste erneut, indem Sie das Indexmuster auf der Seite 'Settings' aktualisieren. Weitere Informationen finden Sie unter [Feldliste erneut laden](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-analize_logs_interactively#discover_view_reload_fields).
 
     Wenn Ihre CF-App zum Beispiel viele Instanzen hat, möchten Sie möglicherweise die Daten für eine bestimmte Instanz analysieren. Sie können einen Feldfilter für den bestimmten Instanz-ID-Wert definieren, den Sie analysieren wollen. 
     
-* Passen Sie das Zeitauswahlfeld (*Timer Picker*) für zeitbasierte Daten an. Sie können einen absoluten Zeitbereich oder einen relativen Zeitbereich für eine Abfrage angeben oder Sie können einen Zeitbereich aus einer Reihe vordefinierter Werte auswählen. Weitere Informationen finden Sie unter [Zeitfilter festlegen](/docs/services/CloudLogAnalysis/kibana/filter_logs.html#set_time_filter).
+* Passen Sie das Zeitauswahlfeld (*Timer Picker*) für zeitbasierte Daten an. Sie können einen absoluten Zeitbereich oder einen relativen Zeitbereich für eine Abfrage angeben oder Sie können einen Zeitbereich aus einer Reihe vordefinierter Werte auswählen. Weitere Informationen finden Sie unter [Zeitfilter festlegen](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-filter_logs#set_time_filter).
 
-Wenn Sie die Suche, die das Datensubset definiert, das Sie analysieren wollen, konfiguriert haben, können Sie sie zur späteren Wiederverwendung speichern. Weitere Informationen finden Sie unter [Suche speichern](/docs/services/CloudLogAnalysis/kibana/define_search.html#save_search).
+Wenn Sie die Suche, die das Datensubset definiert, das Sie analysieren wollen, konfiguriert haben, können Sie sie zur späteren Wiederverwendung speichern. Weitere Informationen finden Sie unter [Suche speichern](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-define_search#save_search).
 
 Sie können eine der folgenden Tasks für Suchen ausführen, die Sie auf der Seite 'Discover' definieren:
 
 | Task | Beschreibung |
 |------|-------------|
-| [Suche löschen](/docs/services/CloudLogAnalysis/kibana/define_search.html#delete_search) | Sie können eine Suche löschen, wenn sie nicht mehr benötigt wird. |
-| [Suche exportieren](/docs/services/CloudLogAnalysis/kibana/define_search.html#export_search) | Sie können eine Suche zur gemeinsamen Nutzung exportieren.  |
-| [Suche importieren](/docs/services/CloudLogAnalysis/kibana/define_search.html#import_search) | Sie können eine Suche importieren.  |
-| [Suche neu laden](/docs/services/CloudLogAnalysis/kibana/define_search.html#reload_search1)  | Sie können eine vorhandene Suche hochladen, um eine Gruppe von Daten erneut zu analysieren. |
-| [Daten einer Suche aktualisieren](/docs/services/CloudLogAnalysis/kibana/define_search.html#refresh_search) | Sie können eine automatische Aktualisierung der Daten, die durch die Suche angezeigt wird, konfigurieren.  |
-| [Suche speichern](/docs/services/CloudLogAnalysis/kibana/define_search.html#save_search) | Sie können eine Suche zur späteren Verwendung speichern.  |
+| [Suche löschen](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-define_search#delete_search) | Sie können eine Suche löschen, wenn sie nicht mehr benötigt wird. |
+| [Suche exportieren](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-define_search#export_search) | Sie können eine Suche zur gemeinsamen Nutzung exportieren.  |
+| [Suche importieren](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-define_search#import_search) | Sie können eine Suche importieren.  |
+| [Suche neu laden](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-define_search#reload_search1)  | Sie können eine vorhandene Suche hochladen, um eine Gruppe von Daten erneut zu analysieren. |
+| [Daten einer Suche aktualisieren](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-define_search#refresh_search) | Sie können eine automatische Aktualisierung der Daten, die durch die Suche angezeigt wird, konfigurieren.  |
+| [Suche speichern](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-define_search#save_search) | Sie können eine Suche zur späteren Verwendung speichern.  |
 {: caption="Tabelle 3. Tasks für die Arbeit mit Suchen" caption-side="top"}
 
 
@@ -96,7 +96,7 @@ Sie können auch Statistikdaten auf der Seite 'Discover' ansehen:
 * Sie können Statistiken pro Feld anzeigen. 
 * Sie können Statistiken im Histogramm pro konfigurierter Zeitmarke (`@timestamp`) anzeigen.
 
-Weitere Informationen finden Sie unter [Statistiken zu Felddaten anzeigen](/docs/services/CloudLogAnalysis/kibana/analize_logs_interactively.html#discover_view_fields_stats).
+Weitere Informationen finden Sie unter [Statistiken zu Felddaten anzeigen](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-analize_logs_interactively#discover_view_fields_stats).
 
 **Hinweis:** Die Daten, die in der Tabelle und im Histogramm angezeigt werden, sind statisch. Wenn Sie immer wieder die neuesten Einträge anzeigen wollen, müssen Sie ein Aktualisierungsintervall festlegen. 
 
@@ -129,7 +129,7 @@ Sie können der Tabelle durch eine der folgenden Optionen eine Feldspalte hinzuf
 ## Datenansicht automatisch aktualisieren
 {: #discover_view_refresh_interval}
 
-In {{site.data.keyword.Bluemix_notm}} ist das Zeitintervall für automatisches Aktualisieren (*Auto-refresh*) standardmäßig inaktiviert (**OFF**) und die Daten, die in Kibana angezeigt werden, entsprechen den letzten 15 Minuten seit dem Start von Kibana. Die 15 Minuten entsprechen dem Zeitfilter, der vorkonfiguriert ist. Sie können diesen Zeitfilter ändern, indem Sie ein anderes Zeitintervall festlegen. Weitere Informationen finden Sie unter [Zeitfilter festlegen](/docs/services/CloudLogAnalysis/kibana/filter_logs.html#set_time_filter).
+In {{site.data.keyword.Bluemix_notm}} ist das Zeitintervall für automatisches Aktualisieren (*Auto-refresh*) standardmäßig inaktiviert (**OFF**) und die Daten, die in Kibana angezeigt werden, entsprechen den letzten 15 Minuten seit dem Start von Kibana. Die 15 Minuten entsprechen dem Zeitfilter, der vorkonfiguriert ist. Sie können diesen Zeitfilter ändern, indem Sie ein anderes Zeitintervall festlegen. Weitere Informationen finden Sie unter [Zeitfilter festlegen](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-filter_logs#set_time_filter).
 
 Führen Sie die folgenden Schritte aus, um ein Zeitintervall für automatisches Aktualisieren (*Auto-refresh*) festzulegen:
 

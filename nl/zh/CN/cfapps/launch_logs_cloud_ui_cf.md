@@ -74,6 +74,6 @@ subcollection: cloudloganalysis
 
 缺省情况下，可用于分析的日志包含最近 15 分钟的数据。
 
-**提示**：要分析定制时间段的数据，请参阅[使用 Kibana 进行高级日志分析](/docs/services/CloudLogAnalysis/kibana/analyzing_logs_Kibana.html#analyzing_logs_Kibana)。 
+**提示**：要分析定制时间段的数据，请参阅[使用 Kibana 进行高级日志分析](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-analyzing_logs_Kibana#analyzing_logs_Kibana)。 
 
 

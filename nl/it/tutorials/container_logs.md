@@ -51,15 +51,15 @@ Questa esercitazione illustra in modo dettagliato i passi necessari per rendere 
     * Una politica IAM per il {{site.data.keyword.containershort}} con le autorizzazioni *editor*, *operatore* o *amministratore*.
     * Un ruolo CF per lo spazio in cui viene eseguito il provisioning del servizio {{site.data.keyword.loganalysisshort}} con le autorizzazioni *sviluppatore*.
     
-    Per ulteriori informazioni, vedi [Assegnazione di una politica IAM a un utente tramite la IU Cloud](/docs/services/CloudLogAnalysis/security/grant_permissions.html#grant_permissions_ui_account) e [Concessione delle autorizzazioni a un utente per visualizzare i log dello spazio utilizzando la IU IBM Cloud](/docs/services/CloudLogAnalysis/security/grant_permissions.html#grant_permissions_ui_space).
+    Per ulteriori informazioni, vedi [Assegnazione di una politica IAM a un utente tramite la IU Cloud](/docs/services/CloudLogAnalysis/security?topic=cloudloganalysis-grant_permissions#grant_permissions_ui_account) e [Concessione delle autorizzazioni a un utente per visualizzare i log dello spazio utilizzando la IU IBM Cloud](/docs/services/CloudLogAnalysis/security?topic=cloudloganalysis-grant_permissions#grant_permissions_ui_space).
 
 2. Avere una sessione terminale dalla quale poter gestire il cluster Kubernetes e distribuire le applicazioni dalla riga di comando. Gli esempi in questa esercitazione vengono forniti per un sistema Linux Ubuntu.
 
 3. Installare le CLI per gestire il {{site.data.keyword.containershort}} e {{site.data.keyword.loganalysisshort}} nel tuo sistema Ubuntu.
 
-    * Installa la CLI {{site.data.keyword.Bluemix_notm}}. Installa la CLI {{site.data.keyword.containershort}} per creare e gestire i tuoi cluster Kubernetes in {{site.data.keyword.containershort}} e per distribuire le applicazioni inserite nel contenitore al tuo cluster. Per ulteriori informazioni, vedi [Installazione della CLI {{site.data.keyword.Bluemix_notm}}](/docs/cli/index.html#overview).
+    * Installa la CLI {{site.data.keyword.Bluemix_notm}}. Installa la CLI {{site.data.keyword.containershort}} per creare e gestire i tuoi cluster Kubernetes in {{site.data.keyword.containershort}} e per distribuire le applicazioni inserite nel contenitore al tuo cluster. Per ulteriori informazioni, vedi [Installazione della CLI {{site.data.keyword.Bluemix_notm}}](/docs/cli?topic=cloud-cli-ibmcloud-cli#overview).
     
-    * Installa la CLI {{site.data.keyword.loganalysisshort}}. Per ulteriori informazioni, vedi [Configurazione della CLI Analisi dei log (plugin IBM Cloud)](/docs/services/CloudLogAnalysis/how-to/manage-logs/config_log_collection_cli_cloud.html#config_log_collection_cli).
+    * Installa la CLI {{site.data.keyword.loganalysisshort}}. Per ulteriori informazioni, vedi [Configurazione della CLI Analisi dei log (plugin IBM Cloud)](/docs/services/CloudLogAnalysis/how-to/manage-logs?topic=cloudloganalysis-config_log_collection_cli#config_log_collection_cli).
     
 4. Disporre dell'accesso a uno spazio denominato **dev** nel tuo account nella regione Stati Uniti Sud. 
 
@@ -81,11 +81,11 @@ Completa la seguente procedura:
 
 1. Crea un cluster standard Kubernetes.
 
-   Per ulteriori informazioni, consulta [Creazione dei cluster](/docs/containers/cs_tutorials.html#cs_cluster_tutorial).
+   Per ulteriori informazioni, consulta [Creazione dei cluster](/docs/containers?topic=containers-cs_cluster_tutorial#cs_cluster_tutorial).
 
 2. Configura il contesto del cluster in un terminale. Dopo che il contesto è stato impostato, puoi gestire il cluster Kubernetes e distribuire l'applicazione nel cluster Kubernetes.
 
-    Accedi alla regione, all'organizzazione e allo spazio in {{site.data.keyword.Bluemix_notm}} che è associato al cluster che hai creato. Per ulteriori informazioni, vedi [Come accedo a {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/qa/cli_qa.html#login).
+    Accedi alla regione, all'organizzazione e allo spazio in {{site.data.keyword.Bluemix_notm}} che è associato al cluster che hai creato. Per ulteriori informazioni, vedi [Come accedo a {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#login).
 
 	Inizializza il plug-in del servizio {{site.data.keyword.containershort}}.
 
@@ -145,7 +145,7 @@ ae249c04-a3a9-4c29-a890-22d8da7bd1b2   container    *           ingest.logging.n
 ```
 {: screen}
 
-Per visualizzare un elenco delle origini log per cui puoi definire una configurazione di registrazione, vedi [Origini log](/docs/services/CloudLogAnalysis/containers/containers_kubernetes.html#log_sources).
+Per visualizzare un elenco delle origini log per cui puoi definire una configurazione di registrazione, vedi [Origini log](/docs/services/CloudLogAnalysis/containers?topic=cloudloganalysis-containers_kubernetes#log_sources).
 
 
 ### Configura il tuo cluster per inoltrare i log stderr e stdout al servizio {{site.data.keyword.loganalysisshort}}
@@ -176,7 +176,7 @@ Completa la seguente procedura per inviare i log stdout e stderr a un dominio di
     dove 
 
     * *ClusterName* è il nome del cluster.
-    * *EndPoint* è l'URL del servizio di registrazione nella regione in cui viene eseguito il provisioning del servizio {{site.data.keyword.loganalysisshort}}. Per un elenco degli endpoint, vedi [Endpoint](/docs/services/CloudLogAnalysis/log_ingestion.html#log_ingestion_urls).
+    * *EndPoint* è l'URL del servizio di registrazione nella regione in cui viene eseguito il provisioning del servizio {{site.data.keyword.loganalysisshort}}. Per un elenco degli endpoint, vedi [Endpoint](/docs/services/CloudLogAnalysis?topic=cloudloganalysis-log_ingestion#log_ingestion_urls).
     * *OrgName* è il nome dell'organizzazione in cui è disponibile lo spazio.
     * *SpaceName* è il nome dello spazio in cui viene eseguito il provisioning del servizio {{site.data.keyword.loganalysisshort}}.
 
@@ -218,7 +218,7 @@ Completa la seguente procedura per inviare i log worker a un dominio di spazio, 
     dove 
 
     * *ClusterName* è il nome del cluster.
-    * *EndPoint* è l'URL del servizio di registrazione nella regione in cui viene eseguito il provisioning del servizio {{site.data.keyword.loganalysisshort}}. Per un elenco degli endpoint, vedi [Endpoint](/docs/services/CloudLogAnalysis/log_ingestion.html#log_ingestion_urls).
+    * *EndPoint* è l'URL del servizio di registrazione nella regione in cui viene eseguito il provisioning del servizio {{site.data.keyword.loganalysisshort}}. Per un elenco degli endpoint, vedi [Endpoint](/docs/services/CloudLogAnalysis?topic=cloudloganalysis-log_ingestion#log_ingestion_urls).
     * *OrgName* è il nome dell'organizzazione in cui è disponibile lo spazio.
     * *SpaceName* è il nome dello spazio in cui viene eseguito il provisioning del servizio {{site.data.keyword.loganalysisshort}}.
 
@@ -251,7 +251,7 @@ Completa la seguente procedura per concedere a un utente le autorizzazioni a lav
 	
 3. Se l'utente è un membro dell'account, seleziona il suo nome dall'elenco o fai clic su **Gestisci utente** dal menu *Azioni*.
 
-    Se l'utente non è un membro dell'account, vedi [Invito di utenti](/docs/iam/iamuserinv.html#iamuserinv).
+    Se l'utente non è un membro dell'account, vedi [Invito di utenti](/docs/iam?topic=iam-iamuserinv#iamuserinv).
 
 4. Seleziona **Accesso Cloud Foundry** e seleziona quindi l'organizzazione.
 
@@ -297,7 +297,7 @@ Completa la seguente procedura:
 	
     Seleziona l'ID dell'utente e verifica che l'utente abbia il ruolo *orgManager* (Gestore organizzazione) per l'organizzazione e *SpaceManager* (Gestore spazio) e *Developer* (Sviluppatore) per lo spazio.
 
-    Se l'utente non ha le autorizzazioni corrette, concedi all'utente le seguenti autorizzazioni: *orgManager* (Gestore organizzazione) per l'organizzazione e *SpaceManager* (Gestore spazio) e *Developer* (Sviluppatore) per lo spazio. Per ulteriori informazioni, vedi [Concessione delle autorizzazioni a un utente per visualizzare i log dello spazio utilizzando la IU IBM Cloud](/docs/services/CloudLogAnalysis/security/grant_permissions.html#grant_permissions_ui_space).
+    Se l'utente non ha le autorizzazioni corrette, concedi all'utente le seguenti autorizzazioni: *orgManager* (Gestore organizzazione) per l'organizzazione e *SpaceManager* (Gestore spazio) e *Developer* (Sviluppatore) per lo spazio. Per ulteriori informazioni, vedi [Concessione delle autorizzazioni a un utente per visualizzare i log dello spazio utilizzando la IU IBM Cloud](/docs/services/CloudLogAnalysis/security?topic=cloudloganalysis-grant_permissions#grant_permissions_ui_space).
     
 3. Verifica che l'utente che è identificato come proprietario della chiave {{site.data.keyword.containershort}} abbia una politica IAM per il servizio {{site.data.keyword.loganalysisshort}} con le autorizzazioni *Amministratore*.
 
@@ -305,7 +305,7 @@ Completa la seguente procedura:
 	
     Seleziona l'ID dell'utente e verifica che l'utente abbia la politica IAM configurata. 
 
-    Se l'utente non dispone della politica IAM, vedi [Assegna una politica IAM a un utente tramite la IU IBM Cloud](/docs/services/CloudLogAnalysis/security/grant_permissions.html#grant_permissions_ui_account).
+    Se l'utente non dispone della politica IAM, vedi [Assegna una politica IAM a un utente tramite la IU IBM Cloud](/docs/services/CloudLogAnalysis/security?topic=cloudloganalysis-grant_permissions#grant_permissions_ui_account).
 
 4. Aggiorna la configurazione della registrazione. Esegui il seguente comando:
     
@@ -322,7 +322,7 @@ Completa la seguente procedura:
 ## Passo 5: distribuisci un'applicazione di esempio nel cluster Kubernetes per generare il contenuto in stdout
 {: #step53}
 
-Distribuisci ed esegui un'applicazione di esempio nel cluster Kubernetes. Completa la procedura in questa esercitazione per distribuire l'applicazione di esempio:[Lezione 1: distribuzione di singole applicazioni dell'istanza ai cluster Kubernetes](/docs/containers/cs_tutorials_apps.html#cs_apps_tutorial_lesson1).
+Distribuisci ed esegui un'applicazione di esempio nel cluster Kubernetes. Completa la procedura in questa esercitazione per distribuire l'applicazione di esempio:[Lezione 1: distribuzione di singole applicazioni dell'istanza ai cluster Kubernetes](/docs/containers?topic=containers-cs_apps_tutorial#cs_apps_tutorial_lesson1).
 
 L'applicazione è un'applicazione Node.js Hello World:
 
@@ -353,7 +353,7 @@ Completa la seguente procedura:
 
 1. Avvia Kibana in un browser. 
 
-    Per ulteriori informazioni su come avviare Kibana, vedi [Passaggio a Kibana da un browser web](/docs/services/CloudLogAnalysis/kibana/launch.html#launch_Kibana_from_browser).
+    Per ulteriori informazioni su come avviare Kibana, vedi [Passaggio a Kibana da un browser web](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-launch#launch_Kibana_from_browser).
 
     Per analizzare i dati di log per un cluster, devi accedere a Kibana nella regione di cloud pubblico dove viene creato il cluster. 
     
@@ -366,7 +366,7 @@ Completa la seguente procedura:
 	
     Viene aperto Kibana.
     
-    **NOTA:** verifica che avvii Kibana nella regione in cui stai inoltrando i tuoi log di cluster. Per informazioni sugli URL per regione, vedi [Endpoint di registrazione](/docs/services/CloudLogAnalysis/kibana/analyzing_logs_Kibana.html#urls_kibana).
+    **NOTA:** verifica che avvii Kibana nella regione in cui stai inoltrando i tuoi log di cluster. Per informazioni sugli URL per regione, vedi [Endpoint di registrazione](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-analyzing_logs_Kibana#urls_kibana).
     	
 2. Per visualizzare i dati di log disponibili nel dominio dello spazio, completa la seguente procedura:
 
@@ -436,7 +436,7 @@ Completa la seguente procedura:
               </tr>
         </table>
      
-Per ulteriori informazioni sugli altri campi di ricerca pertinenti ai cluster Kubernetes, vedi [Ricerca dei log](/docs/services/CloudLogAnalysis/containers/containers_kubernetes.html#log_search).
+Per ulteriori informazioni sugli altri campi di ricerca pertinenti ai cluster Kubernetes, vedi [Ricerca dei log](/docs/services/CloudLogAnalysis/containers?topic=cloudloganalysis-containers_kubernetes#log_search).
 
 
 ## Passo 7: filtra i dati in base al nome cluster Kubernetes in Kibana
@@ -475,9 +475,9 @@ Viene visualizzata la seguente query:
 
 Sostituisci il nome del cluster (*cluster1*) con il nome del cluster *mycluster* per cui vuoi visualizzare i dati di log.
         
-Se non riesci a vedere alcun dato, prova a modificare il filtro temporale. Per maggiori informazioni, vedi [Configurazione di un filtro temporale](/docs/services/CloudLogAnalysis/kibana/filter_logs.html#set_time_filter).
+Se non riesci a vedere alcun dato, prova a modificare il filtro temporale. Per maggiori informazioni, vedi [Configurazione di un filtro temporale](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-filter_logs#set_time_filter).
 
-Per maggiori informazioni, vedi [Filtro dei log in Kibana](/docs/services/CloudLogAnalysis/kibana/filter_logs.html#filter_logs).
+Per maggiori informazioni, vedi [Filtro dei log in Kibana](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-filter_logs#filter_logs).
 
 
 ## Materiale di riferimento di {{site.data.keyword.containershort_notm}}
@@ -485,10 +485,10 @@ Per maggiori informazioni, vedi [Filtro dei log in Kibana](/docs/services/CloudL
 
 Comandi CLI:
 
-* [ibmcloud cs api-key-info](/docs/containers/cs_cli_reference.html#cs_api_key_info)
-* [ibmcloud cs logging-config-create](/docs/containers/cs_cli_reference.html#cs_logging_create)
-* [ibmcloud cs logging-config-get](/docs/containers/cs_cli_reference.html#cs_logging_get)
-* [ibmcloud cs logging-config-update](/docs/containers/cs_cli_reference.html#cs_logging_update)
-* [ibmcloud cs logging-config-rm](/docs/containers/cs_cli_reference.html#cs_logging_rm)
-* [ibmcloud cs logging-config-refresh](/docs/containers/cs_cli_reference.html#cs_logging_refresh)
+* [ibmcloud cs api-key-info](/docs/containers?topic=containers-cs_cli_reference#cs_api_key_info)
+* [ibmcloud cs logging-config-create](/docs/containers?topic=containers-cs_cli_reference#cs_logging_create)
+* [ibmcloud cs logging-config-get](/docs/containers?topic=containers-cs_cli_reference#cs_logging_get)
+* [ibmcloud cs logging-config-update](/docs/containers?topic=containers-cs_cli_reference#cs_logging_update)
+* [ibmcloud cs logging-config-rm](/docs/containers?topic=containers-cs_cli_reference#cs_logging_rm)
+* [ibmcloud cs logging-config-refresh](/docs/containers?topic=containers-cs_cli_reference#cs_logging_refresh)
 

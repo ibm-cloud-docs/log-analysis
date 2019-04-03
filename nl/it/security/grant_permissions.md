@@ -28,7 +28,7 @@ subcollection: cloudloganalysis
 In {{site.data.keyword.Bluemix}}, puoi assegnare a un utente uno o più ruoli IAM. Questi ruoli definiscono quali attività sono abilitate per tale utente per lavorare con il servizio {{site.data.keyword.loganalysisshort}}.  
 {:shortdesc}
 
-Ad esempio, puoi concedere a un utente il ruolo **operatore** per consentirgli di gestire i log. Se vuoi che l'utente visualizzi solo i log dell'account, puoi concedergli il ruolo di **visualizzatore**. Per ulteriori informazioni, vedi [Ruoli IAM](/docs/services/CloudLogAnalysis/security_ov.html#iam_roles).
+Ad esempio, puoi concedere a un utente il ruolo **operatore** per consentirgli di gestire i log. Se vuoi che l'utente visualizzi solo i log dell'account, puoi concedergli il ruolo di **visualizzatore**. Per ulteriori informazioni, vedi [Ruoli IAM](/docs/services/CloudLogAnalysis?topic=cloudloganalysis-security_ov#iam_roles).
 
 **Nota:** 
 
@@ -52,7 +52,7 @@ Completa la seguente procedura per concedere a un utente le autorizzazioni a lav
 	
 3. Se l'utente è un membro dell'account, seleziona il suo nome dall'elenco o fai clic su **Gestisci utente** dal menu *Azioni*.
 
-    Se l'utente non è un membro dell'account, vedi [Invito di utenti](/docs/iam/iamuserinv.html#iamuserinv).
+    Se l'utente non è un membro dell'account, vedi [Invito di utenti](/docs/iam?topic=iam-iamuserinv#iamuserinv).
 
 4. Nella sezione **Politiche di accesso**, fai clic su **Assegna accesso** e seleziona quindi **Assegna l'accesso alle risorse**.
 
@@ -80,7 +80,7 @@ Completa la seguente procedura per concedere a un utente le autorizzazioni a lav
 	  </tr>
 	  <tr>
 	    <td>Ruoli</td>
-		<td>Seleziona uno o più ruoli IAM. <br>I ruoli validi sono: *amministratore*, *operatore*, *editor* e *visualizzatore*. <br>Per ulteriori informazioni sulle azioni consentite per ogni ruolo, vedi [Ruoli IAM](/docs/services/CloudLogAnalysis/security_ov.html#iam_roles).
+		<td>Seleziona uno o più ruoli IAM. <br>I ruoli validi sono: *amministratore*, *operatore*, *editor* e *visualizzatore*. <br>Per ulteriori informazioni sulle azioni consentite per ogni ruolo, vedi [Ruoli IAM](/docs/services/CloudLogAnalysis?topic=cloudloganalysis-security_ov#iam_roles).
 		</td>
 	  </tr>
      </table>
@@ -97,7 +97,7 @@ Completa la seguente procedura per concedere a un utente l'accesso per visualizz
 
 1. Da un terminale, accedi all'account {{site.data.keyword.Bluemix_notm}}. 
 
-    Per ulteriori informazioni, vedi [Come accedo a {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/qa/cli_qa.html#login).
+    Per ulteriori informazioni, vedi [Come accedo a {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#login).
 
 2. Controlla che l'utente sia un membro dell'account. Esegui il seguente comando per ottenere l'elenco degli utenti nell'account:
 
@@ -108,7 +108,7 @@ Completa la seguente procedura per concedere a un utente l'accesso per visualizz
 
 	Viene visualizzato un elenco di utenti con i relativi GUID.
 
-3. Se l'utente non è un membro dell'account, contatta il proprietario dell'account e richiedi un invito per tale utente nell'account. Per ulteriori informazioni, vedi [Invito di utenti](/docs/iam/iamuserinv.html#iamuserinv).
+3. Se l'utente non è un membro dell'account, contatta il proprietario dell'account e richiedi un invito per tale utente nell'account. Per ulteriori informazioni, vedi [Invito di utenti](/docs/iam?topic=iam-iamuserinv#iamuserinv).
 
     **Suggerimento:** il comando per invitare un utente in un account è il seguente: `ibmcloud iam account-user-invite USER_EMAIL`
 		
@@ -152,7 +152,7 @@ Completa la seguente procedura per concedere a un utente le autorizzazioni a lav
 	
 3. Se l'utente è un membro dell'account, seleziona il suo nome dall'elenco o fai clic su **Gestisci utente** dal menu *Azioni*.
 
-    Se l'utente non è un membro dell'account, vedi [Invito di utenti](/docs/iam/iamuserinv.html#iamuserinv).
+    Se l'utente non è un membro dell'account, vedi [Invito di utenti](/docs/iam?topic=iam-iamuserinv#iamuserinv).
 
 4. Seleziona **Accesso Cloud Foundry** e seleziona quindi l'organizzazione.
 

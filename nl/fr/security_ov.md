@@ -39,11 +39,11 @@ Pour pouvoir utiliser le service {{site.data.keyword.loganalysisshort}} via l'in
 
 Le service {{site.data.keyword.loganalysisshort}} prend en charge les modèles d'authentification suivants :
 
-* [Authentification UAA](/docs/services/CloudLogAnalysis/security/auth_uaa.html#auth_uaa)
+* [Authentification UAA](/docs/services/CloudLogAnalysis/security?topic=cloudloganalysis-auth_uaa#auth_uaa)
 
     Vous pouvez utiliser l'interface de ligne de commande pour gérer les jetons UAA.
 	
-* [Authentification IAM](/docs/services/CloudLogAnalysis/security/auth_iam.html#auth_iam1)
+* [Authentification IAM](/docs/services/CloudLogAnalysis/security?topic=cloudloganalysis-auth_iam1#auth_iam1)
 
     Le modèle d'authentification IAM offre des fonctions d'interface utilisateur, d'interface de ligne de commande ou de gestion d'API. 
 
@@ -52,13 +52,13 @@ Le service {{site.data.keyword.loganalysisshort}} prend en charge les modèles d
 ## Rôles
 {: #roles3}
 
-Dans {{site.data.keyword.Bluemix_notm}}, il existe deux types de rôle qui contrôlent les actions que les utilisateurs peuvent effectuer lorsqu'ils utilisent le service {{site.data.keyword.loganalysisshort}} :
+Dans {{site.data.keyword.cloud_notm}}, il existe deux types de rôle qui contrôlent les actions que les utilisateurs peuvent effectuer lorsqu'ils utilisent le service {{site.data.keyword.loganalysisshort}} :
 
 * Rôles Cloud Foundry (CF) : vous contrôlez les actions {{site.data.keyword.loganalysisshort}} qu'un utilisateur peut effectuer en affectant un ou plusieurs rôles CF. Avec ces rôles, vous contrôlez les droits qui permettent à l'utilisateur d'afficher et de gérer les journaux dans un espace ou une organisation.
 * Rôles IAM : vous contrôlez les actions {{site.data.keyword.loganalysisshort}} qu'un utilisateur peut effectuer en affectant un ou plusieurs rôles IAM. Avec ces rôles, vous contrôlez les droits qui permettent à l'utilisateur d'afficher et de gérer les journaux de compte. 
 
 
-Le tableau suivant répertorie les types de rôle et le domaine dans {{site.data.keyword.Bluemix_notm}} qu'ils contrôlent :
+Le tableau suivant répertorie les types de rôle et le domaine dans {{site.data.keyword.cloud_notm}} qu'ils contrôlent :
 
 <table>
   <caption>Tableau 1. Type de rôles contrôlant les actions par domaine</caption>
@@ -162,7 +162,7 @@ Le tableau ci-dessous répertorie la relation entre l'API, une action de service
     <td>GET /v1/logging/logs</td>
     <td>ibmcloud-log-analysis.domain.log_read</td>
 	<td>Administrateur, Editeur, Afficheur</td>
-	<td>Afficher des informations sur les journaux dans un espace {{site.data.keyword.Bluemix_notm}} ou au niveau du compte.</td>
+	<td>Afficher des informations sur les journaux dans un espace {{site.data.keyword.cloud_notm}} ou au niveau du compte.</td>
   </tr>
   <tr>
     <td>GET /v1/logging/logs/download</td>
@@ -174,13 +174,13 @@ Le tableau ci-dessous répertorie la relation entre l'API, une action de service
     <td>GET /v1/logging/logs/retention</td>
     <td>ibmcloud-log-analysis.domain.policy_read</td>
     <td>Administrateur, Editeur, Afficheur</td>
-    <td>Affiche la durée de conservation des journaux qui sont disponibles dans un espace {{site.data.keyword.Bluemix_notm}} ou un compte.</td>
+    <td>Affiche la durée de conservation des journaux qui sont disponibles dans un espace {{site.data.keyword.cloud_notm}} ou un compte.</td>
   </tr>
   <tr>
     <td>PUT /v1/logging/logs/retention</td>
     <td>ibmcloud-log-analysis.domain.policy_write</td>
     <td>Administrateur, Editeur</td>
-    <td>Met à jour la durée de conservation des journaux qui sont disponibles dans un espace {{site.data.keyword.Bluemix_notm}} ou un compte.</td>
+    <td>Met à jour la durée de conservation des journaux qui sont disponibles dans un espace {{site.data.keyword.cloud_notm}} ou un compte.</td>
   </tr>
   <tr>
     <td>GET /v1/logging/sessions</td>
@@ -218,14 +218,14 @@ Pour gérer les journaux à l'aide de l'API {{site.data.keyword.loganalysisshort
 * Utilisez l'interface de ligne de commande {{site.data.keyword.loganalysisshort}} pour obtenir le jeton UAA. 
 * Le jeton possède un délai d'expiration. 
 
-Pour plus d'informations, voir [Obtention du jeton UAA](/docs/services/CloudLogAnalysis/security/auth_uaa.html#auth_uaa).
+Pour plus d'informations, voir [Obtention du jeton UAA](/docs/services/CloudLogAnalysis/security?topic=cloudloganalysis-auth_uaa#auth_uaa).
 
 **Utilisation des journaux qui sont disponibles dans le domaine de compte**
 
-* Utilisez l'interface de ligne de commande {{{site.data.keyword.Bluemix_notm}} pour obtenir le jeton IAM. 
+* Utilisez l'interface de ligne de commande {{site.data.keyword.cloud_notm}} pour obtenir le jeton IAM. 
 * Le jeton possède un délai d'expiration. 
 
-Pour plus d'informations, voir [Obtention du jeton IAM](/docs/services/CloudLogAnalysis/security/auth_iam.html#auth_iam1).
+Pour plus d'informations, voir [Obtention du jeton IAM](/docs/services/CloudLogAnalysis/security?topic=cloudloganalysis-auth_iam1#auth_iam1).
 
 
 ## Obtention du jeton de journalisation pour envoyer des journaux à Log Analysis
@@ -235,23 +235,23 @@ Pour pouvoir envoyer des journaux au service {{site.data.keyword.loganalysisshor
 
 Pour envoyer des journaux dans un domaine d'espace, choisissez l'une des méthodes suivantes :
 
-* [Obtention du jeton de journalisation pour envoyer des journaux dans un espace à l'aide de la commande {{site.data.keyword.Bluemix_notm}} ibmcloud service](/docs/services/CloudLogAnalysis/security/logging_token.html#logging_token_cloud_cli)
-* [Obtention du jeton de journalisation pour envoyer des journaux dans un espace via l'interface de ligne de commande Log Analysis](/docs/services/CloudLogAnalysis/security/logging_token.html#logging_token_la_cloud_cli)
-* [Obtention du jeton de journalisation pour envoyer des journaux dans un espace via l'API Log Analysis](/docs/services/CloudLogAnalysis/security/logging_token.html#logging_token_api)
+* [Obtention du jeton de journalisation pour envoyer des journaux dans un espace à l'aide de la commande {{site.data.keyword.cloud_notm}} ibmcloud service](/docs/services/CloudLogAnalysis/security?topic=cloudloganalysis-logging_token#logging_token_cloud_cli)
+* [Obtention du jeton de journalisation pour envoyer des journaux dans un espace via l'interface de ligne de commande Log Analysis](/docs/services/CloudLogAnalysis/security?topic=cloudloganalysis-logging_token#logging_token_la_cloud_cli)
+* [Obtention du jeton de journalisation pour envoyer des journaux dans un espace via l'API Log Analysis](/docs/services/CloudLogAnalysis/security?topic=cloudloganalysis-logging_token#logging_token_api)
 
 
 ## Octroi de droits à un utilisateur pour l'utilisation des journaux
 {: #grant_permissions1}
 
-Pour qu'un utilisateur puisse gérer les journaux ou les afficher, il doit disposer de droits dans {{site.data.keyword.Bluemix_notm}} permettant d'utiliser le service {{site.data.keyword.loganalysisshort}}.
+Pour qu'un utilisateur puisse gérer les journaux ou les afficher, il doit disposer de droits dans {{site.data.keyword.cloud_notm}} permettant d'utiliser le service {{site.data.keyword.loganalysisshort}}.
 
-* Pour des informations sur les droits requis pour gérer les journaux, voir [Rôles requis par un utilisateur pour gérer les journaux](/docs/services/CloudLogAnalysis/manage_logs.html#roles1).
-* Pour des informations sur les droits requis pour afficher les journaux, voir [Rôles requis par un utilisateur pour afficher les journaux](/docs/services/CloudLogAnalysis/kibana/analyzing_logs_Kibana.html#roles).
+* Pour des informations sur les droits requis pour gérer les journaux, voir [Rôles requis par un utilisateur pour gérer les journaux](/docs/services/CloudLogAnalysis?topic=cloudloganalysis-manage_logs#roles1).
+* Pour des informations sur les droits requis pour afficher les journaux, voir [Rôles requis par un utilisateur pour afficher les journaux](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-analyzing_logs_Kibana#roles).
 
 Pour plus d'informations sur l'octroi de droits, voir :
 
-* [Affectation d'une règle IAM à un utilisateur dans l'interface utilisateur {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/security/grant_permissions.html#grant_permissions).
-* [Affectation d'une règle IAM à un utilisateur via la ligne de commande](/docs/services/CloudLogAnalysis/security/grant_permissions.html#grant_permissions_commandline).
-* [Octroi à un utilisateur des droits permettant d'afficher les journaux d'espace dans l'interface utilisateur {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/security/grant_permissions.html#grant_permissions_ui_space).
+* [Affectation d'une règle IAM à un utilisateur dans l'interface utilisateur {{site.data.keyword.cloud_notm}}](/docs/services/CloudLogAnalysis/security?topic=cloudloganalysis-grant_permissions#grant_permissions).
+* [Affectation d'une règle IAM à un utilisateur via la ligne de commande](/docs/services/CloudLogAnalysis/security?topic=cloudloganalysis-grant_permissions#grant_permissions_commandline).
+* [Octroi à un utilisateur des droits permettant d'afficher les journaux d'espace dans l'interface utilisateur {{site.data.keyword.cloud_notm}}](/docs/services/CloudLogAnalysis/security?topic=cloudloganalysis-grant_permissions#grant_permissions_ui_space).
 
 

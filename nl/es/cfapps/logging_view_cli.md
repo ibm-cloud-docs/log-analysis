@@ -29,7 +29,7 @@ subcollection: cloudloganalysis
 En {{site.data.keyword.Bluemix}}, puede ver, filtrar y analizar registros mediante la interfaz de línea de mandatos. 
 {:shortdesc}
 
-Para analizar los registros de aplicación de Cloud Foundry (CF), utilice el siguiente mandato: `ibmcloud cf logs` Para obtener más información, consulte [cf logs](/docs/cli/reference/ibmcloud/cf_index.html#cf_logs).
+Para analizar los registros de aplicación de Cloud Foundry (CF), utilice el siguiente mandato: `ibmcloud cf logs` Para obtener más información, consulte [cf logs](/docs/cli/reference/ibmcloud?topic=cloud-cli-cf#cf_logs).
 
 
 ## Análisis de registros de app de CF desde la CLI
@@ -37,11 +37,11 @@ Para analizar los registros de aplicación de Cloud Foundry (CF), utilice el sig
 
 Utilice el mandato **cf logs** para visualizar registros de una app Cloud Foundry y de componentes del sistema que interactúan con la misma cuando se despliega la app en {{site.data.keyword.Bluemix_notm}}. El mandato **cf logs** muestra las secuencias de registro STDOUT y STDERR de una aplicación Cloud Foundry.
 
-Para ver los registros en los que está interesado o para excluir el contenido que no desea ver, puede utilizar el mandato **cf logs** con opciones de filtrado, como por ejemplo,**cut** y **grep** en la interfaz de línea de mandatos cf:
+Para ver los registros en los que está interesado o para excluir el contenido que no desea ver, puede utilizar el mandato **cf logs** con opciones de filtrado, como por ejemplo, **cut** y **grep** en la interfaz de línea de mandatos cf:
 
-* Para ver los registros correspondientes a una app Cloud Foundry, consulte [Visualización del registro de una app Cloud Foundry](/docs/services/CloudLogAnalysis/cfapps/logging_view_cli.html#full_log_cli).
-* Para ver los registros más recientes de una app Cloud Foundry, consulte [Visualización de las últimas entradas de registro de una app Cloud Foundry](/docs/services/CloudLogAnalysis/cfapps/logging_view_cli.html#tailing_log_cli).
-* Para ver los registros de una app Cloud Foundry correspondientes a un determinado periodo de tiempo, consulte [Visualización de una sección de los registros](/docs/services/CloudLogAnalysis/cfapps/logging_view_cli.html#partial_log_cli).
+* Para ver los registros correspondientes a una app Cloud Foundry, consulte [Visualización del registro de una app Cloud Foundry](/docs/services/CloudLogAnalysis/cfapps?topic=cloudloganalysis-analyzing_logs_cli#full_log_cli).
+* Para ver los registros más recientes de una app Cloud Foundry, consulte [Visualización de las últimas entradas de registro de una app Cloud Foundry](/docs/services/CloudLogAnalysis/cfapps?topic=cloudloganalysis-analyzing_logs_cli#tailing_log_cli).
+* Para ver los registros de una app Cloud Foundry correspondientes a un determinado periodo de tiempo, consulte [Visualización de una sección de los registros](/docs/services/CloudLogAnalysis/cfapps?topic=cloudloganalysis-analyzing_logs_cli#partial_log_cli).
 * Para ver las entradas de los registros de una app Cloud Foundry que contienen palabras clave específicas, consulte [Visualización de entradas de registro que contienen determinadas palabras clave](logging_view_cli.html#partial_by_keyword_log_cli).
 
 

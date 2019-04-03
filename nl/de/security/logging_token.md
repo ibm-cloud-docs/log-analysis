@@ -37,13 +37,13 @@ Führen Sie die folgenden Schritte aus, um das Protokollierungstoken abzurufen, 
 
 1. Installieren Sie die {{site.data.keyword.Bluemix_notm}}-Befehlszeilenschnittstelle.
 
-   Weitere Informationen finden Sie in [{{site.data.keyword.Bluemix_notm}}-Befehlszeilenschnittstelle herunterladen und installieren](/docs/cli/index.html#overview).
+   Weitere Informationen finden Sie in [{{site.data.keyword.Bluemix_notm}}-Befehlszeilenschnittstelle herunterladen und installieren](/docs/cli?topic=cloud-cli-ibmcloud-cli#overview). 
    
    Fahren Sie mit dem nächsten Schritt fort, wenn die Befehlszeilenschnittstelle bereits installiert ist.
     
 2. Melden Sie sich bei einer Region, Organisation und bei einem Bereich in {{site.data.keyword.Bluemix_notm}} an. 
 
-    Weitere Informationen finden Sie unter [Wie melde ich mich bei {{site.data.keyword.Bluemix_notm}} an?](/docs/services/CloudLogAnalysis/qa/cli_qa.html#login).
+    Weitere Informationen finden Sie in [Wie melde ich mich bei {{site.data.keyword.Bluemix_notm}} an?](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#login).
 	
 3. Führen Sie den folgenden Befehl aus:
 
@@ -62,13 +62,13 @@ Führen Sie die folgenden Schritte aus, um das Protokollierungstoken abzurufen, 
 
 1. Installieren Sie die {{site.data.keyword.Bluemix_notm}}-Befehlszeilenschnittstelle.
 
-   Weitere Informationen finden Sie in [{{site.data.keyword.Bluemix_notm}}-Befehlszeilenschnittstelle herunterladen und installieren](/docs/cli/index.html#overview).
+   Weitere Informationen finden Sie in [{{site.data.keyword.Bluemix_notm}}-Befehlszeilenschnittstelle herunterladen und installieren](/docs/cli?topic=cloud-cli-ibmcloud-cli#overview). 
    
    Fahren Sie mit dem nächsten Schritt fort, wenn die Befehlszeilenschnittstelle bereits installiert ist.
     
 2. Melden Sie sich bei einer Region, Organisation und bei einem Bereich in {{site.data.keyword.Bluemix_notm}} an. 
 
-    Weitere Informationen finden Sie unter [Wie melde ich mich bei {{site.data.keyword.Bluemix_notm}} an?](/docs/services/CloudLogAnalysis/qa/cli_qa.html#login).
+    Weitere Informationen finden Sie in [Wie melde ich mich bei {{site.data.keyword.Bluemix_notm}} an?](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#login).
 	
 3. Erstellen Sie einen Serviceschlüssel in dem Bereich, in dem der {{site.data.keyword.loganalysisshort}}-Service bereitgestellt ist. Führen Sie die folgenden Befehle aus:
 
@@ -152,15 +152,15 @@ Führen Sie die folgenden Schritte aus, um das Protokollierungstoken abzurufen, 
 
 1. Installieren Sie die {{site.data.keyword.Bluemix_notm}}-Befehlszeilenschnittstelle.
 
-   Weitere Informationen finden Sie in [{{site.data.keyword.Bluemix_notm}}-Befehlszeilenschnittstelle herunterladen und installieren](/docs/cli/index.html#overview).
+   Weitere Informationen finden Sie in [{{site.data.keyword.Bluemix_notm}}-Befehlszeilenschnittstelle herunterladen und installieren](/docs/cli?topic=cloud-cli-ibmcloud-cli#overview). 
    
    Fahren Sie mit dem nächsten Schritt fort, wenn die Befehlszeilenschnittstelle bereits installiert ist.
     
 2. Melden Sie sich bei einer Region, Organisation und bei einem Bereich in {{site.data.keyword.Bluemix_notm}} an. 
 
-    Weitere Informationen finden Sie unter [Wie melde ich mich bei {{site.data.keyword.Bluemix_notm}} an?](/docs/services/CloudLogAnalysis/qa/cli_qa.html#login).
+    Weitere Informationen finden Sie in [Wie melde ich mich bei {{site.data.keyword.Bluemix_notm}} an?](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#login).
 	
-3. Rufen Sie das [UAA-Token](/docs/services/CloudLogAnalysis/security/auth_uaa.html#uaa_cli) ab.
+3. Rufen Sie das [UAA-Token](/docs/services/CloudLogAnalysis/security?topic=cloudloganalysis-auth_uaa#uaa_cli) ab.
 
     Führen Sie zum Abrufen des UAA-Tokens beispielsweise den Befehl `ibmcloud cf oauth-token` aus.
 
@@ -173,7 +173,7 @@ Führen Sie die folgenden Schritte aus, um das Protokollierungstoken abzurufen, 
 
 4. Rufen Sie die GUID für den Bereich ab.
 
-   Weitere Informationen finden Sie unter [Wie rufe ich die GUID eines Bereichs ab?](/docs/services/CloudLogAnalysis/qa/cli_qa.html#space_guid2).  
+   Weitere Informationen finden Sie unter [Wie rufe ich die GUID eines Bereichs ab?](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#space_guid2).  
 	
 5. Exportieren Sie die folgenden Variablen: TOKEN und SPACEID.
 
@@ -199,7 +199,7 @@ Führen Sie die folgenden Schritte aus, um das Protokollierungstoken abzurufen, 
 	Dabei gilt:
 	* SPACEID ist die GUID des Bereichs, in dem der Service ausgeführt wird.
 	* TOKEN ist das UAA-Token aus dem vorherigen Schritt ohne das Präfix 'bearer.
-	* LOGGING_ENDPOINT ist der {{site.data.keyword.loganalysisshort}}-Endpunkt für die {{site.data.keyword.Bluemix_notm}}-Region, in der sich die Organisation und der Bereich befinden. LOGGING_ENDPOINT ist für jede Region anders. Weitere Informationen zu den URLs für die verschiedenen Endpunkte finden Sie unter [Endpunkte](/docs/services/CloudLogAnalysis/manage_logs.html#endpoints).
+	* LOGGING_ENDPOINT ist der {{site.data.keyword.loganalysisshort}}-Endpunkt für die {{site.data.keyword.Bluemix_notm}}-Region, in der sich die Organisation und der Bereich befinden. LOGGING_ENDPOINT ist für jede Region anders. Weitere Informationen zu den URLs für die verschiedenen Endpunkte finden Sie unter [Endpunkte](/docs/services/CloudLogAnalysis?topic=cloudloganalysis-manage_logs#endpoints).
 	
     Der Befehl gibt das Protokollierungstoken zurück, das Sie verwenden müssen, um Protokolle an diesen Bereich senden zu können.
 	

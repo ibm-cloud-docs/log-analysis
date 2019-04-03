@@ -90,7 +90,7 @@ Puede suprimir registros automáticamente definiendo una política de retención
 ## Regiones
 {: #regions}
 
-El servicio de {{site.data.keyword.loganalysisfull_notm}} está disponible en las regiones siguientes:
+El servicio {{site.data.keyword.loganalysisfull_notm}} está disponible en las regiones siguientes:
 
 * Alemania
 * Reino Unido
@@ -140,7 +140,7 @@ El servicio {{site.data.keyword.loganalysisshort}} proporciona varios planes. Ca
 
 **NOTA:** Las características incluidas en un plan de servicio solo se habilitan en el espacio en el que se suministra el servicio {{site.data.keyword.loganalysisshort}} con dicho plan.
 
-Puede cambiar un plan mediante la interfaz de usuario de {{site.data.keyword.Bluemix_notm}} o a través de la línea de mandatos. Puede actualizar o reducir el plan siempre que lo desee. Para obtener más información sobre actualizaciones del plan de servicio, consulte [Cambio del plan](/docs/services/CloudLogAnalysis/how-to/change_plan.html#change_plan). 
+Puede cambiar un plan mediante la interfaz de usuario de {{site.data.keyword.Bluemix_notm}} o a través de la línea de mandatos. Puede actualizar o reducir el plan siempre que lo desee. Para obtener más información sobre actualizaciones del plan de servicio, consulte [Cambio del plan](/docs/services/CloudLogAnalysis/how-to?topic=cloudloganalysis-change_plan#change_plan). 
 
 En la tabla siguiente se muestran los planes disponibles:
 

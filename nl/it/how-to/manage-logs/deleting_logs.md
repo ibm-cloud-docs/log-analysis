@@ -25,7 +25,7 @@ subcollection: cloudloganalysis
 # Eliminazione dei log
 {: #deleting_logs1}
 
-Utilizza il comando [ibmcloud cf logging delete](/docs/services/CloudLogAnalysis/reference/logging_cli.html#status1) per eliminare i log da Raccolta dei log. 
+Utilizza il comando [ibmcloud cf logging delete](/docs/services/CloudLogAnalysis/reference?topic=cloudloganalysis-logging_cli#status1) per eliminare i log da Raccolta dei log. 
 {:shortdesc}
 
 * Puoi eliminare i log entro uno specifico intervallo di tempo.
@@ -40,7 +40,7 @@ Completa la seguente procedura:
 
 1. Accedi a una regione, un'organizzazione e uno spazio in {{site.data.keyword.Bluemix_notm}}. 
 
-    Per ulteriori informazioni, vedi [Come accedo a {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/qa/cli_qa.html#login).
+    Per ulteriori informazioni, vedi [Come accedo a {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#login).
     
 2. Esegui il comando *status* per visualizzare i log disponibili in Raccolta dei log.
 
@@ -90,7 +90,7 @@ Completa la seguente procedura:
 
 1. Accedi a una regione, un'organizzazione e uno spazio in {{site.data.keyword.Bluemix_notm}}. 
 
-    Per ulteriori informazioni, vedi [Come accedo a {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/qa/cli_qa.html#login).
+    Per ulteriori informazioni, vedi [Come accedo a {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#login).
     
 2. Esegui il comando *status* per visualizzare i log disponibili in Raccolta dei log.
 
@@ -142,7 +142,7 @@ Completa la seguente procedura:
 
 1. Accedi a una regione, un'organizzazione e uno spazio in {{site.data.keyword.Bluemix_notm}}. 
 
-    Per ulteriori informazioni, vedi [Come accedo a {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/qa/cli_qa.html#login).
+    Per ulteriori informazioni, vedi [Come accedo a {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#login).
     
 2. Esegui il comando *status* per visualizzare i log disponibili in Raccolta dei log a livello dell'account.
 

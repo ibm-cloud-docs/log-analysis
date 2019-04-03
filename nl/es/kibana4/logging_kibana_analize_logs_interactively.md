@@ -51,12 +51,12 @@ Puede realizar cualquiera de las tareas siguientes para personalizar la tabla en
 
 | Tarea | Descripción | 
 |------|-------------|
-| [Añadir una columna de campo](/docs/services/CloudLogAnalysis/kibana4/logging_kibana_analize_logs_interactively.html#kibana_discover_add_fields_to_table) | Añadir campos para ver datos específicos que se necesitan para el análisis en lugar de todo el mensaje. |
-| [Reorganizar una columna de campo](/docs/services/CloudLogAnalysis/kibana4/logging_kibana_analize_logs_interactively.html#kibana_discover_rearrange_fields_in_table) | Mover la posición de un campo en la tabla a la posición que desee. |
-| [Ver una entrada](/docs/services/CloudLogAnalysis/kibana4/logging_kibana_analize_logs_interactively.html#kibana_discover_view_entry_in_table) | Expandir una entrada de la tabla para ver los detalles de la entrada analizados por campo o como JSON. |
-| [Eliminar una columna de campo](/docs/services/CloudLogAnalysis/kibana4/logging_kibana_analize_logs_interactively.html#kibana_discover_remove_fields_from_table) | Eliminar un campo cuando ya no se necesite en la vista para el análisis. |
-| [Ordenar entradas por valor de un campo indexado](/docs/services/CloudLogAnalysis/kibana4/logging_kibana_analize_logs_interactively.html#kibana_discover_sort_by_table) | Reordenar las entradas para facilitar su análisis. |
-| [Renovar automáticamente los datos](/docs/services/CloudLogAnalysis/kibana4/logging_kibana_analize_logs_interactively.html#kibana_discover_view_refresh_interval) | Renovar los datos que se muestran en la tabla con las últimas entradas. De forma predeterminada, la renovación está **DESACTIVADA**. |
+| [Añadir una columna de campo](/docs/services/CloudLogAnalysis/kibana4?topic=cloudloganalysis-kibana_analize_logs_interactively#kibana_discover_add_fields_to_table) | Añadir campos para ver datos específicos que se necesitan para el análisis en lugar de todo el mensaje. |
+| [Reorganizar una columna de campo](/docs/services/CloudLogAnalysis/kibana4?topic=cloudloganalysis-kibana_analize_logs_interactively#kibana_discover_rearrange_fields_in_table) | Mover la posición de un campo en la tabla a la posición que desee. |
+| [Ver una entrada](/docs/services/CloudLogAnalysis/kibana4?topic=cloudloganalysis-kibana_analize_logs_interactively#kibana_discover_view_entry_in_table) | Expandir una entrada de la tabla para ver los detalles de la entrada analizados por campo o como JSON. |
+| [Eliminar una columna de campo](/docs/services/CloudLogAnalysis/kibana4?topic=cloudloganalysis-kibana_analize_logs_interactively#kibana_discover_remove_fields_from_table) | Eliminar un campo cuando ya no se necesite en la vista para el análisis. |
+| [Ordenar entradas por valor de un campo indexado](/docs/services/CloudLogAnalysis/kibana4?topic=cloudloganalysis-kibana_analize_logs_interactively#kibana_discover_sort_by_table) | Reordenar las entradas para facilitar su análisis. |
+| [Renovar automáticamente los datos](/docs/services/CloudLogAnalysis/kibana4?topic=cloudloganalysis-kibana_analize_logs_interactively#kibana_discover_view_refresh_interval) | Renovar los datos que se muestran en la tabla con las últimas entradas. De forma predeterminada, la renovación está **DESACTIVADA**. |
 {: caption="Tabla 2. Tareas para personalizar una tabla" caption-side="top"}
 
 <br>
@@ -97,7 +97,7 @@ También puede examinar las estadísticas en la página Descubrir:
 * Puede ver estadísticas por campo. 
 * Puede ver estadísticas en el histograma por el valor `@timestamp` que ha configurado.
 
-Para obtener más información, consulte [Visualización de estadísticas de datos de campo](/docs/services/CloudLogAnalysis/kibana4/logging_kibana_analize_logs_interactively.html#kibana_discover_view_fields_stats).
+Para obtener más información, consulte [Visualización de estadísticas de datos de campo](/docs/services/CloudLogAnalysis/kibana4?topic=cloudloganalysis-kibana_analize_logs_interactively#kibana_discover_view_fields_stats).
 
 **Nota:** Los datos que se muestran en la tabla y el histograma son estáticos. Para seguir viendo las últimas entradas, debe definir un intervalo de renovación. 
 

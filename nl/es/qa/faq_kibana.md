@@ -28,15 +28,15 @@ subcollection: cloudloganalysis
 
 A continuación encontrará las respuestas a preguntas comunes sobre cómo utilizar las funciones de registro de {{site.data.keyword.Bluemix}}. {:shortdesc}
 
-* [¿Qué puedo hacer si no veo datos en la página Descubrir en Kibana](/docs/services/CloudLogAnalysis/qa/faq_kibana.html#logging_qa_no_data_discover_kibana)
-* [¿Qué puedo hacer si recibo una excepción de autenticación?](/docs/services/CloudLogAnalysis/qa/faq_kibana.html#logging_qa_no_data_dashboard_kibana)
-* [¿Por qué veo el símbolo ? en campos de la página Descubrir de Kibana?](/docs/services/CloudLogAnalysis/qa/faq_kibana.html#logging_qa_kibana_question)
-* [Recibo un error 403 cuando intento cambiar el patrón de índice predeterminado](/docs/services/CloudLogAnalysis/qa/faq_kibana.html#error_403)
-* [El URL abreviado no funciona](/docs/services/CloudLogAnalysis/qa/faq_kibana.html#short_url)
-* [¿Puedo buscar registros de mi cuenta en Bluemix?](/docs/services/CloudLogAnalysis/qa/faq_kibana.html#acc_logs_1)
+* [¿Qué puedo hacer si no veo datos en la página Descubrir en Kibana?](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-faq_kibana#logging_qa_no_data_discover_kibana)
+* [¿Qué puedo hacer si recibo una excepción de autenticación?](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-faq_kibana#logging_qa_no_data_dashboard_kibana)
+* [¿Por qué veo el símbolo ? en campos de la página Descubrir de Kibana?](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-faq_kibana#logging_qa_kibana_question)
+* [Recibo un error 403 cuando intento cambiar el patrón de índice predeterminado](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-faq_kibana#error_403)
+* [El URL abreviado no funciona](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-faq_kibana#short_url)
+* [¿Puedo buscar registros de mi cuenta en Bluemix?](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-faq_kibana#acc_logs_1)
 
 
-## ¿Qué puedo hacer si no veo datos en la página Descubrir en Kibana
+## ¿Qué puedo hacer si no veo datos en la página Descubrir en Kibana?
 {: #logging_qa_no_data_discover_kibana}
 
 Hay diferentes situaciones en las que es posible que no vea datos en Kibana:
@@ -50,7 +50,7 @@ Para solucionar este problema, siga estos pasos:
 
     **Nota**: De forma predeterminada, en {{site.data.keyword.Bluemix_notm}}, el *Selector de tiempo* está definido que muestre datos correspondientes a los 15 últimos minutos.
 
-    Para obtener más información sobre cómo definir el *Selector de tiempo*, consulte [Establecimiento de un filtro de tiempo](/docs/services/CloudLogAnalysis/kibana/filter_logs.html#set_time_filter1).
+    Para obtener más información sobre cómo definir el *Selector de tiempo*, consulte [Establecimiento de un filtro de tiempo](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-filter_logs#set_time_filter1).
        
 2. Pulse la lupa que se encuentra en la barra de búsqueda de la página *Descubrir*. Los datos de la página se renuevan en función de la consulta de búsqueda predeterminada.
 
@@ -58,7 +58,7 @@ Para solucionar este problema, siga estos pasos:
 
     **Nota**: De forma predeterminada, en {{site.data.keyword.Bluemix_notm}}, el periodo de *Renovación automática* está desactivado (**OFF**).
     
-    Para obtener más información sobre cómo habilitarlo, consulte el apartado sobre [Renovación automática de los datos](/docs/services/CloudLogAnalysis/kibana/analize_logs_interactively.html#discover_view_refresh_interval).
+    Para obtener más información sobre cómo habilitarlo, consulte el apartado sobre [Renovación automática de los datos](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-analize_logs_interactively#discover_view_refresh_interval).
 
 
 
@@ -89,7 +89,7 @@ Para solucionar este problema, siga estos pasos:
 ## ¿Por qué veo el símbolo ? en campos de la página Descubrir de Kibana?
 {: #logging_qa_kibana_question}
 
-Cuando abra la página Descubrir en Kibana, podría ver un signo de interrogación `?` en los campos que aparecen listados en la sección de campos disponibles en lugar del carácter `t`. Cuando vuelva a cargar la lista de campos, se analizará el tipo de los campos y el signo de interrogación `?` se sustituirá por el carácter `t`. Para obtener más información consulte [Cómo volver a cargar la lista de campos](/docs/services/CloudLogAnalysis/kibana/analize_logs_interactively.html#discover_view_reload_fields).
+Cuando abra la página Descubrir en Kibana, podría ver un signo de interrogación `?` en los campos que aparecen listados en la sección de campos disponibles en lugar del carácter `t`. Cuando vuelva a cargar la lista de campos, se analizará el tipo de los campos y el signo de interrogación `?` se sustituirá por el carácter `t`. Para obtener más información consulte [Cómo volver a cargar la lista de campos](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-analize_logs_interactively#discover_view_reload_fields).
 
 
 ## Recibo un error 403 cuando intento cambiar el patrón de índice predeterminado
@@ -111,7 +111,7 @@ Como propietario de una cuenta, puede buscar y analizar los registros de su cuen
 
 Siga estos pasos para obtener para ver los registros de su cuenta:
 
-1. [Inicie Kibana.](/docs/services/CloudLogAnalysis/kibana/launch.html#launch_Kibana_from_browser) Por ejemplo, para la región EE.UU. sur, utilice el URL `https://logging.ng.bluemix.net`,
+1. [Inicie Kibana.](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-launch#launch_Kibana_from_browser) Por ejemplo, para la región EE.UU. sur, utilice el URL `https://logging.ng.bluemix.net`,
 
 2. Seleccione la opción **Ver registros de la cuenta NombreCuenta** para ver los registros de la cuenta. *NombreCuenta* es el nombre de la cuenta.
 

@@ -43,7 +43,7 @@ Siga estos pasos:
     ```
     {: codeblock}
 
-    Para obtener más información, consulte [Cómo iniciar la sesión en {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/qa/cli_qa.html#login).
+    Para obtener más información, consulte [Cómo iniciar la sesión en {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#login).
 
 2. Ejecute el mandato de la cli `ibmcloud logging quota-usage-show`. 
 
@@ -98,7 +98,7 @@ Siga estos pasos:
     ```
     {: codeblock}
 
-    Para obtener más información, consulte [Cómo iniciar la sesión en {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/qa/cli_qa.html#login).
+    Para obtener más información, consulte [Cómo iniciar la sesión en {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#login).
 
 2. Ejecute el mandato de la cli `ibmcloud logging quota-usage-show` con el parámetro `-s`. 
 
@@ -141,7 +141,7 @@ Siga estos pasos:
 
 1. Inicie sesión en {{site.data.keyword.Bluemix_notm}}. 
 
-    Para obtener más información, consulte [Cómo iniciar la sesión en {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/qa/cli_qa.html#login).
+    Para obtener más información, consulte [Cómo iniciar la sesión en {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#login).
 
 2. Obtenga el ID de la cuenta. Ejecute el mandato siguiente:
 
@@ -161,7 +161,7 @@ Siga estos pasos:
 
 3. Obtenga la señal de UAA. 
 
-    Para obtener más información, consulte [Obtención de la señal de UAA](/docs/services/CloudLogAnalysis/security/auth_uaa.html#auth_uaa).
+    Para obtener más información, consulte [Obtención de la señal de UAA](/docs/services/CloudLogAnalysis/security?topic=cloudloganalysis-auth_uaa#auth_uaa).
 
     Exporte la señal de UAA a una variable de shell. No incluya `Bearer`. Por ejemplo:
 	
@@ -177,7 +177,7 @@ Siga estos pasos:
 	```
 	{: codeblock}
 	
-	donde *ENDPOINT* varía según la región. Para obtener una lista de puntos finales por región, consulte [Puntos finales de registro](/docs/services/CloudLogAnalysis/manage_logs.html#endpoints).
+	donde *ENDPOINT* varía según la región. Para obtener una lista de puntos finales por región, consulte [Puntos finales de registro](/docs/services/CloudLogAnalysis?topic=cloudloganalysis-manage_logs#endpoints).
 	
 	Por ejemplo, ejecute este mandato cURL para obtener la cuota correspondiente a la cuenta de la región EE.UU. sur:
 	
@@ -214,11 +214,11 @@ Siga estos pasos:
 
 1. Inicie sesión en {{site.data.keyword.Bluemix_notm}}. 
 
-    Para obtener más información, consulte [Cómo iniciar la sesión en {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/qa/cli_qa.html#login).
+    Para obtener más información, consulte [Cómo iniciar la sesión en {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#login).
 
 2. Obtenga el ID del espacio.
 
-    Para obtener más información, consulte [Cómo se obtiene el GUID de un espacio](/docs/services/CloudLogAnalysis/qa/cli_qa.html#space_guid)
+    Para obtener más información, consulte [Cómo se obtiene el GUID de un espacio](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#space_guid)
 	
 	Exporte el ID del espacio a una variable de shell. Por ejemplo:
 	
@@ -229,7 +229,7 @@ Siga estos pasos:
 
 3. Obtenga la señal de UAA. 
 
-    Para obtener más información, consulte [Obtención de la señal de UAA](/docs/services/CloudLogAnalysis/security/auth_uaa.html#auth_uaa).
+    Para obtener más información, consulte [Obtención de la señal de UAA](/docs/services/CloudLogAnalysis/security?topic=cloudloganalysis-auth_uaa#auth_uaa).
 
     Exporte la señal de UAA a una variable de shell. No incluya `Bearer`. Por ejemplo:
 	
@@ -245,7 +245,7 @@ Siga estos pasos:
 	```
 	{: codeblock}
 	
-	donde *ENDPOINT* varía según la región. Para obtener una lista de puntos finales por región, consulte [Puntos finales de registro](/docs/services/CloudLogAnalysis/manage_logs.html#endpoints).
+	donde *ENDPOINT* varía según la región. Para obtener una lista de puntos finales por región, consulte [Puntos finales de registro](/docs/services/CloudLogAnalysis?topic=cloudloganalysis-manage_logs#endpoints).
 
     Por ejemplo, ejecute el siguiente mandato cURL para obtener la cuota y el uso de un dominio de espacio de la región EE.UU. sur:
 	

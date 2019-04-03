@@ -49,7 +49,7 @@ Siga estos pasos para suministrar una instancia del servicio {{site.data.keyword
 
 5. Seleccione un plan de servicio. De forma predeterminada, se establece el plan **Lite**.
 
-    Para obtener más información sobre los planes de servicio, consulte [Planes de servicio](/docs/services/CloudLogAnalysis/log_analysis_ov.html#plans).
+    Para obtener más información sobre los planes de servicio, consulte [Planes de servicio](/docs/services/CloudLogAnalysis?topic=cloudloganalysis-log_analysis_ov#plans).
 	
 6. Pulse **Crear** para suministrar el servicio {{site.data.keyword.loganalysisshort}} en el espacio de {{site.data.keyword.Bluemix_notm}} en el que ha iniciado sesión.
   
@@ -62,13 +62,13 @@ Siga estos pasos para suministrar una instancia del servicio {{site.data.keyword
 
 1. [Requisito previo] Instale la CLI de {{site.data.keyword.Bluemix_notm}}.
 
-   Para obtener más información, consulte [Instalación de la CLI de {{site.data.keyword.Bluemix_notm}}](/docs/cli/index.html#overview).
+   Para obtener más información, consulte [Instalación de la CLI de {{site.data.keyword.Bluemix_notm}}](/docs/cli?topic=cloud-cli-ibmcloud-cli#overview).
    
    Si la CLI está instalada, continúe en el paso siguiente.
     
 2. Inicie la sesión en la región, organización o espacio en {{site.data.keyword.Bluemix_notm}} donde desea suministrar el servicio. 
 
-    Para obtener más información, consulte [Cómo iniciar la sesión en {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/qa/cli_qa.html#login).
+    Para obtener más información, consulte [Cómo iniciar la sesión en {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#login).
 	
 3. Ejecute el mandato `ibmcloud service create` para suministrar una instancia.
 
@@ -80,7 +80,7 @@ Siga estos pasos para suministrar una instancia del servicio {{site.data.keyword
 	Donde
 	
 	* service_name es el nombre del servicio, que es **ibmLogAnalysis**.
-	* service_plan es el nombre del plan de servicio. Para obtener una lista de planes, consulte [Planes de servicio](/docs/services/CloudLogAnalysis/log_analysis_ov.html#plans).
+	* service_plan es el nombre del plan de servicio. Para obtener una lista de planes, consulte [Planes de servicio](/docs/services/CloudLogAnalysis?topic=cloudloganalysis-log_analysis_ov#plans).
 	* service_instance_name es el nombre que desea utilizar para la nueva instancia de servicio que cree.
 
 	Por ejemplo, para crear una instancia del servicio {{site.data.keyword.loganalysisshort}} con el plan Lite, ejecute este mandato:

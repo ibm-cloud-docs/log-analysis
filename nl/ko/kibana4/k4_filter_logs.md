@@ -34,15 +34,15 @@ subcollection: cloudloganalysis
 
 새 검색을 정의한 후에 검색 페이지에서 향후 분석에 다시 사용할 수 있도록 하거나 사용자 정의 대시보드에서 사용할 수 있는 시각화를 작성하도록 저장하십시오. 
 
-새 검색을 수행하면 히스토그램, 표 및 필드 목록이 검색 결과를 표시하도록 자동으로 업데이트됩니다. 어떤 데이터가 표시되는지 알아보려면 [검색 페이지에 표시된 데이터 식별](/docs/services/CloudLogAnalysis/kibana4/logging_kibana_analize_logs_interactively.html#k4_identify_data)을 참조하십시오.
+새 검색을 수행하면 히스토그램, 표 및 필드 목록이 검색 결과를 표시하도록 자동으로 업데이트됩니다. 어떤 데이터가 표시되는지 알아보려면 [검색 페이지에 표시된 데이터 식별](/docs/services/CloudLogAnalysis/kibana4?topic=cloudloganalysis-kibana_analize_logs_interactively#k4_identify_data)을 참조하십시오.
 
 로그를 필터링하기 위한 사용자 정의 검색을 작성할 수 있습니다. 다음 목록은 로그에서 데이터를 필터링하는 방법에 대한 시나리오를 간략하게 설명합니다.
 
-* 필드의 값에서 특정 텍스트를 포함하는 항목에 대한 로그를 검색할 수 있습니다. 자세한 정보는 [필드 값에서 특정 텍스트에 대한 로그 필터링](/docs/services/CloudLogAnalysis/kibana4/k4_filter_logs.html#k4_filter_logs_spec_text)을 참조하십시오.
+* 필드의 값에서 특정 텍스트를 포함하는 항목에 대한 로그를 검색할 수 있습니다. 자세한 정보는 [필드 값에서 특정 텍스트에 대한 로그 필터링](/docs/services/CloudLogAnalysis/kibana4?topic=cloudloganalysis-k4_filter_logs#k4_filter_logs_spec_text)을 참조하십시오.
  
-* 특정 필드 값에 대한 로그를 검색하거나 특정 필드 값에 대한 로그에서 항목을 제외할 수 있습니다. 자세한 정보는 [특정 필드 값에 대한 로그 필터링](/docs/services/CloudLogAnalysis/kibana4/k4_filter_logs.html#k4_filter_logs_spec_field)을 참조하십시오.
+* 특정 필드 값에 대한 로그를 검색하거나 특정 필드 값에 대한 로그에서 항목을 제외할 수 있습니다. 자세한 정보는 [특정 필드 값에 대한 로그 필터링](/docs/services/CloudLogAnalysis/kibana4?topic=cloudloganalysis-k4_filter_logs#k4_filter_logs_spec_field)을 참조하십시오.
  
-* 어느 기간 내의 항목을 표시하도록 로그를 필터링할 수 있습니다. 자세한 정보는 [시간 필터 설정](/docs/services/CloudLogAnalysis/kibana4/k4_filter_logs.html#set_time_filter1)을 참조하십시오.
+* 어느 기간 내의 항목을 표시하도록 로그를 필터링할 수 있습니다. 자세한 정보는 [시간 필터 설정](/docs/services/CloudLogAnalysis/kibana4?topic=cloudloganalysis-k4_filter_logs#set_time_filter1)을 참조하십시오.
      
 
 ## *필드 목록*에 나열되지 않은 값에 대한 필터 추가
@@ -52,7 +52,7 @@ subcollection: cloudloganalysis
 
 *필드 목록* 섹션에 표시된 목록에서 사용할 수 없는 값에 대한 필터를 추가하려면 다음 단계를 완료하십시오.
 
-1. Kibana 검색 페이지에서 표시하는 데이터의 서브세트를 확인하십시오. 자세한 정보는 [Kibana 검색 페이지에 표시된 데이터 식별](/docs/services/CloudLogAnalysis/kibana4/logging_kibana_analize_logs_interactively.html#k4_identify_data)을 참조하십시오.
+1. Kibana 검색 페이지에서 표시하는 데이터의 서브세트를 확인하십시오. 자세한 정보는 [Kibana 검색 페이지에 표시된 데이터 식별](/docs/services/CloudLogAnalysis/kibana4?topic=cloudloganalysis-kibana_analize_logs_interactively#k4_identify_data)을 참조하십시오.
 
     예를 들어 다음 그림은 *필드 목록*의 CF 앱에 대한 인스턴스 값을 보여줍니다. 
     
@@ -91,13 +91,13 @@ subcollection: cloudloganalysis
 
 특정 필드 값이 포함된 항목을 검색하려면 다음 단계를 완료하십시오.
 
-1. Kibana 검색 페이지에서 표시하는 데이터의 서브세트를 확인하십시오. 자세한 정보는 [Kibana 검색 페이지에 표시된 데이터 식별](/docs/services/CloudLogAnalysis/kibana4/logging_kibana_analize_logs_interactively.html#k4_identify_data)을 참조하십시오.
+1. Kibana 검색 페이지에서 표시하는 데이터의 서브세트를 확인하십시오. 자세한 정보는 [Kibana 검색 페이지에 표시된 데이터 식별](/docs/services/CloudLogAnalysis/kibana4?topic=cloudloganalysis-kibana_analize_logs_interactively#k4_identify_data)을 참조하십시오.
 
 2. *필드 목록*에서 필터를 정의하려는 필드를 식별해서 그 필드를 클릭하십시오.
 
     최대 5개의 값이 필드에 표시됩니다. 각 값에는 두 개의 돋보기 단추가 있습니다. 
     
-    값을 볼 수 없는 경우, [필드 목록에 나열되지 않은 값에 대한 필터 추가](/docs/services/CloudLogAnalysis/kibana4/k4_filter_logs.html#k4_add_filter_out_value)를 참조하십시오.
+    값을 볼 수 없는 경우, [필드 목록에 나열되지 않은 값에 대한 필터 추가](/docs/services/CloudLogAnalysis/kibana4?topic=cloudloganalysis-k4_filter_logs#k4_add_filter_out_value)를 참조하십시오.
 
 3. 필드 값으로 항목을 검색하는 필터를 추가하려면 해당 값에 대한 돋보기 단추 ![포함 모드의 돋보기 단추](images/k4_include_field_icon.jpg "포함 모드의 돋보기 단추")를 선택하십시오.
 
@@ -150,7 +150,7 @@ subcollection: cloudloganalysis
 
 특정 로그 소스가 포함된 항목을 검색하려면 다음 단계를 완료하십시오.
 
-1. Kibana 검색 페이지에서 표시하는 데이터의 서브세트를 확인하십시오. 자세한 정보는 [Kibana 검색 페이지에 표시된 데이터 식별](/docs/services/CloudLogAnalysis/kibana4/logging_kibana_analize_logs_interactively.html#k4_identify_data)을 참조하십시오.
+1. Kibana 검색 페이지에서 표시하는 데이터의 서브세트를 확인하십시오. 자세한 정보는 [Kibana 검색 페이지에 표시된 데이터 식별](/docs/services/CloudLogAnalysis/kibana4?topic=cloudloganalysis-kibana_analize_logs_interactively#k4_identify_data)을 참조하십시오.
 
 2. *필드 목록*에서 **source_id** 필드를 선택하십시오.
 
@@ -158,7 +158,7 @@ subcollection: cloudloganalysis
 
 3. 특정 source_id가 포함된 항목을 검색하는 필터를 추가하려면 해당 값에 대한 돋보기 단추 ![포함 모드의 돋보기 단추](images/k4_include_field_icon.jpg "포함 모드의 돋보기 단추")를 선택하십시오.
 
-    CF 앱에 사용 가능한 로그 소스의 목록에 대해서는 [CF 앱에 대한 로그 소스](/docs/services/CloudLogAnalysis/cfapps/logging_cf_apps.html#cf_apps_log_sources_diego)를 참조하십시오.
+    CF 앱에 사용 가능한 로그 소스의 목록에 대해서는 [CF 앱에 대한 로그 소스](/docs/services/CloudLogAnalysis/cfapps?topic=cloudloganalysis-logging_cf_apps#cf_apps_log_sources_diego)를 참조하십시오.
 
     예를 들어 CF 애플리케이션의 시작, 중지 또는 충돌에 대한 로그 항목이 포함된 필터를 추가하려면 *필드 목록* 섹션의 *CELL* 값에 사용 가능한 돋보기 단추 ![포함 모드의 돋보기 단추](images/k4_include_field_icon.jpg "포함 모드의 돋보기 단추")를 선택하십시오. 다음 그림은 source_id 값 *CELL*을 사용하는 필터를 보여줍니다.
     
@@ -176,7 +176,7 @@ subcollection: cloudloganalysis
 
 특정 로그 유형이 포함된 항목을 검색하려면 다음 단계를 완료하십시오.
 
-1. Kibana 검색 페이지에서 표시하는 데이터의 서브세트를 확인하십시오. 자세한 정보는 [Kibana 검색 페이지에 표시된 데이터 식별](/docs/services/CloudLogAnalysis/kibana4/logging_kibana_analize_logs_interactively.html#k4_identify_data)을 참조하십시오.
+1. Kibana 검색 페이지에서 표시하는 데이터의 서브세트를 확인하십시오. 자세한 정보는 [Kibana 검색 페이지에 표시된 데이터 식별](/docs/services/CloudLogAnalysis/kibana4?topic=cloudloganalysis-kibana_analize_logs_interactively#k4_identify_data)을 참조하십시오.
 
 2. *필드 목록*에서 **유형** 필드를 선택하십시오.
 
@@ -202,7 +202,7 @@ subcollection: cloudloganalysis
 
 Kibana 대시보드에서 인스턴스 ID별로 로그를 보고 필터링하려면 다음 단계를 완료하십시오.
 
-1. Kibana 검색 페이지에서 표시하는 데이터의 서브세트를 확인하십시오. 자세한 정보는 [Kibana 검색 페이지에 표시된 데이터 식별](/docs/services/CloudLogAnalysis/kibana4/logging_kibana_analize_logs_interactively.html#k4_identify_data)을 참조하십시오.
+1. Kibana 검색 페이지에서 표시하는 데이터의 서브세트를 확인하십시오. 자세한 정보는 [Kibana 검색 페이지에 표시된 데이터 식별](/docs/services/CloudLogAnalysis/kibana4?topic=cloudloganalysis-kibana_analize_logs_interactively#k4_identify_data)을 참조하십시오.
 
 2. *필드 목록*에서 특정 인스턴스 ID를 검색하려면 다음 필드 중 하나를 선택하십시오.
 
@@ -231,7 +231,7 @@ Kibana 대시보드에서 인스턴스 ID별로 로그를 보고 필터링하려
 
 특정 메시지 유형이 포함된 항목을 검색하려면 다음 단계를 완료하십시오.
 
-1. Kibana 검색 페이지에서 표시하는 데이터의 서브세트를 확인하십시오. 자세한 정보는 [Kibana 검색 페이지에 표시된 데이터 식별](/docs/services/CloudLogAnalysis/kibana4/logging_kibana_analize_logs_interactively.html#k4_identify_data)을 참조하십시오.
+1. Kibana 검색 페이지에서 표시하는 데이터의 서브세트를 확인하십시오. 자세한 정보는 [Kibana 검색 페이지에 표시된 데이터 식별](/docs/services/CloudLogAnalysis/kibana4?topic=cloudloganalysis-kibana_analize_logs_interactively#k4_identify_data)을 참조하십시오.
 
 2. *필드 목록*에서 **message_type** 필드를 선택하십시오.
 
@@ -263,11 +263,11 @@ Elasticsearch가 문자열 필드의 값을 분석할 때 단어 경계에서 �
     
 필드 값에 특정 텍스트가 포함된 항목을 검색하려면 다음 단계를 완료하십시오.
 
-1. Kibana 검색 페이지에서 표시하는 데이터의 서브세트를 확인하십시오. 자세한 정보는 [Kibana 검색 페이지에 표시된 데이터 식별](/docs/services/CloudLogAnalysis/kibana4/logging_kibana_analize_logs_interactively.html#k4_identify_data)을 참조하십시오.
+1. Kibana 검색 페이지에서 표시하는 데이터의 서브세트를 확인하십시오. 자세한 정보는 [Kibana 검색 페이지에 표시된 데이터 식별](/docs/services/CloudLogAnalysis/kibana4?topic=cloudloganalysis-kibana_analize_logs_interactively#k4_identify_data)을 참조하십시오.
 
 2. 기본적으로 ElasticSearch에서 분석되는 필드를 식별하십시오.
 
-    로그 데이터 검색 및 필터링에 사용할 수 있는 분석된 필드의 전체 목록을 표시하려면 [필드의 목록을 다시 로드](/docs/services/CloudLogAnalysis/kibana4/logging_kibana_analize_logs_interactively.html#kibana_discover_view_reload_fields)하십시오. 그리고 검색 페이지에서 사용 가능한 *필드 목록*에서 다음 단계를 완료하십시오.
+    로그 데이터 검색 및 필터링에 사용할 수 있는 분석된 필드의 전체 목록을 표시하려면 [필드의 목록을 다시 로드](/docs/services/CloudLogAnalysis/kibana4?topic=cloudloganalysis-kibana_analize_logs_interactively#kibana_discover_view_reload_fields)하십시오. 그리고 검색 페이지에서 사용 가능한 *필드 목록*에서 다음 단계를 완료하십시오.
     
     1. 구성 아이콘 ![구성 아이콘](images/k4_configure_icon.jpg "구성 아이콘")을 클릭하십시오. 필드를 필터링할 수 있는 **선택한 필드** 섹션이 표시됩니다.
 

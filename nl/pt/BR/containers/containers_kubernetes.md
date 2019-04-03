@@ -26,50 +26,84 @@ subcollection: cloudloganalysis
 # {{site.data.keyword.containershort_notm}}
 {: #containers_kubernetes}
 
-No {{site.data.keyword.Bluemix_notm}}, é possível usar o serviço {{site.data.keyword.loganalysisshort}} para armazenar e analisar logs do contêiner e logs de cluster do Kubernetes que são coletados automaticamente pelo {{site.data.keyword.containershort}} no Public e no Dedicated.
+No {{site.data.keyword.cloud_notm}}, é possível usar o serviço {{site.data.keyword.loganalysisshort}} para armazenar e analisar logs do contêiner e logs de cluster do Kubernetes que são coletados automaticamente pelo {{site.data.keyword.containershort}} no Public e no Dedicated.
 {:shortdesc}
 
 É possível ter 1 ou mais clusters do Kubernetes em uma conta. Os logs são coletados automaticamente pelo {{site.data.keyword.containershort}} assim que o cluster é provisionado. 
 
+Para encaminhar logs para o {{site.data.keyword.loganalysisshort}} do {{site.data.keyword.containershort}} deve-se criar uma configuração de criação de log. É
+possível ativar a criação de log por meio da [linha
+de comandos](/docs/containers/cs_health.html#logging) ou por meio da página de visão geral do cluster em seu painel do {{site.data.keyword.containershort}}. Com uma configuração em vigor, os logs são coletados pelo {{site.data.keyword.containershort}} quando
+o cluster é provisionado ou assim que um pod é implementado. As informações que um contêiner imprime em `stdout` ou `stderr` também são coletadas automaticamente. Por padrão,
+os logs são encaminhados para regiões específicas com base no local do cluster.
+
 * Os logs do aplicativo são coletados assim que o pod é implementado. 
 * As informações de que um processo de contêiner é impresso em stdout (saída padrão) e stderr (erro padrão) são coletadas automaticamente pelo {{site.data.keyword.containershort}}.
 
-Para que esses logs fiquem disponíveis para análise no serviço {{site.data.keyword.loganalysisshort}}, deve-se configurar seu cluster para encaminhar logs para o {{site.data.keyword.loganalysisshort}}. É possível encaminhar logs para o domínio de contas do {{site.data.keyword.loganalysisshort}} ou para um domínio de espaço em sua conta. Por padrão:
+Verifique a tabela a seguir para ver para quais regiões o {{site.data.keyword.loganalysisshort}} envia logs, dependendo de onde o cluster está implementado.
+ * As informações de que um processo de contêiner é impresso em stdout (saída padrão) e stderr (erro padrão) são coletadas automaticamente pelo {{site.data.keyword.containershort}}.
+ 
+ <table>
+   <tr>
+     <th>Região do cluster</th>
+     <th>Região do serviço</th>
+   </tr>
+   <tr>
+     <td>Sul dos Estados Unidos</td>
+     <td>Sul dos Estados Unidos</td>
+   </tr>
+   <tr>
+     <td>Leste dos EUA</td>
+     <td>Sul dos Estados Unidos</td>
+   </tr>
+   <tr>
+     <td>Alemanha</td>
+     <td>Alemanha</td>
+   </tr>
+   <tr>
+     <td>Sydney</td>
+     <td>Sydney</td>
+   </tr>
+   <tr>
+     <td></td>
+     <td>Alemanha</td>
+   </tr>
+ </table>
+ 
+ Certifique-se de definir como destino a região, a organização e o espaço corretos ao tentar visualizar logs. Também é possível verificar se você está definido como destino a organização e o espaço corretos por meio da GUI do {{site.data.keyword.loganalysisshort}}.
+ {: tip}
 
-* Os clusters que estão disponíveis na região Sul dos EUA enviam logs para o serviço {{site.data.keyword.loganalysisshort}} que está disponível na região Sul dos EUA.
-* Os clusters que estão disponíveis na região Leste dos EUA enviam logs para o serviço {{site.data.keyword.loganalysisshort}} que está disponível na região Sul dos EUA.
-* Os clusters que estão disponíveis na região Alemanha enviam logs para o serviço {{site.data.keyword.loganalysisshort}} que está disponível na região Alemanha.
-* Os clusters que estão disponíveis na região Sydney enviam logs para o serviço {{site.data.keyword.loganalysisshort}} que está disponível na região Sydney.
-* /Os clusters que estão disponíveis na região Reino Unido enviam logs para o serviço {{site.data.keyword.loganalysisshort}} que está disponível na região Alemanha.
-
-Considere as informações a seguir ao decidir se deseja encaminhar logs para um domínio de espaço ou para o domínio de contas:
+Também é possível encaminhar logs para a conta ou o documento do espaço do {{site.data.keyword.loganalysisshort}} em sua conta. Considere as informações a seguir
+ao decidir para onde encaminhar logs:
 
 * Ao enviar logs para o domínio de contas, a cota de procura é 500 MB por dia e não é possível armazenar logs na Coleção de logs para armazenamento de longo prazo.
 * Ao enviar logs para um domínio de espaço, será possível escolher um plano de serviço {{site.data.keyword.loganalysisshort}} que defina a cota de procura por dia e armazenar logs na Coleção de logs para armazenamento de longo prazo.
 
-**Nota:** por padrão, o envio de logs de um cluster para o serviço {{site.data.keyword.loganalysisshort}} não é ativado automaticamente. Para ativar a criação de log, deve-se criar uma ou mais configurações de criação de log no cluster para encaminhar logs automaticamente para o serviço {{site.data.keyword.loganalysisshort}}. É possível ativar a criação de log por meio da linha de comandos usando o comando `ibmcloud cs logging-config-create` ou por meio do painel do cluster disponível na IU do {{site.data.keyword.Bluemix_notm}}. Para obter mais informações, veja [Ativando a coleta automática de logs de cluster](/docs/services/CloudLogAnalysis/containers/containers_kube_other_logs.html#containers_kube_other_logs).
+**Nota:** por padrão, o envio de logs de um cluster para o serviço {{site.data.keyword.loganalysisshort}} não é ativado automaticamente. Para ativar a criação de log, deve-se criar uma ou mais configurações de criação de log no cluster para encaminhar logs automaticamente para o serviço {{site.data.keyword.loganalysisshort}}. É possível ativar a criação de log por meio da linha de comandos usando o comando `ibmcloud cs logging-config-create` ou por meio do painel do cluster disponível na IU do {{site.data.keyword.cloud_notm}}. Para obter mais informações, veja [Ativando a coleta automática de logs de cluster](/docs/services/CloudLogAnalysis/containers?topic=cloudloganalysis-containers_kube_other_logs#containers_kube_other_logs).
 
 Ao trabalhar com um cluster do Kubernetes, os namespaces *ibm-system* e *kube-system* são reservados. Não crie, exclua, modifique ou mude permissões de recursos que estão disponíveis nesses namespaces. Os logs para esses namespaces são para uso da {{site.data.keyword.IBM_notm}}.
+{: tip}
 
 
 
-## Logs de encaminhamento para um domínio de espaço
+### Logs de encaminhamento para um domínio de espaço
 {: #space}
 
-Ao configurar seu cluster para encaminhar os logs de cluster para o {{site.data.keyword.loganalysisshort}}, considere as informações a seguir:
+Quando você configura seu cluster para encaminhar logs para o {{site.data.keyword.loganalysisshort}},
+considere as informações a seguir:
 
 * Deve-se definir uma organização e um espaço do Cloud Foundry nos quais os logs serão encaminhados. 
 * A organização e o espaço podem estar disponíveis em qualquer região de nuvem do {{site.data.keyword.IBM_notm}} Public.
 
-**Nota:** para clusters provisionados no **{{site.data.keyword.Bluemix_notm}} Dedicated**, não é possível configurar seu cluster para encaminhar logs de cluster para espaços do Cloud Foundry disponíveis em sua conta dedicada.
+**Nota:** para clusters provisionados no **{{site.data.keyword.cloud_notm}} Dedicated**, não é possível configurar seu cluster para encaminhar logs de cluster para espaços do Cloud Foundry disponíveis em sua conta dedicada.
 
 Para analisar dados do log no Kibana para um cluster que encaminha logs para um domínio de espaço, considere as informações a seguir:
 
 * Deve-se ativar o Kibana na região do Public na qual a organização e o espaço que estão coletando os logs de cluster estão disponíveis.
 * Para aumentar sua cota de procura do Kibana e armazenar logs na Coleção de logs para armazenamento de longo prazo, deve-se provisionar o serviço {{site.data.keyword.loganalysisshort}} no espaço no qual os logs estão sendo encaminhados com um plano que atenda às suas necessidades. 
-* Seu ID do usuário deve ter permissões para visualizar logs. Para ver logs no domínio de espaço, um usuário precisa de uma função do CF. **Auditor** é a menor função que pode ser concedida para visualizar logs. Para obter mais informações, veja [Funções que são requeridas por um usuário para visualizar logs](/docs/services/CloudLogAnalysis/kibana/analyzing_logs_Kibana.html#roles).
+* Seu ID do usuário deve ter permissões para visualizar logs. Para ver logs no domínio de espaço, um usuário precisa de uma função do CF. **Auditor** é a menor função que pode ser concedida para visualizar logs. Para obter mais informações, veja [Funções que são requeridas por um usuário para visualizar logs](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-analyzing_logs_Kibana#roles).
 
-Para gerenciar dados do log de cluster armazenados no armazenamento de longo prazo (Coleção de logs), seu ID de usuário deve ter uma política do IAM para funcionar com o serviço {{site.data.keyword.loganalysisshort}}. Seu ID de usuário deve ter as permissões **Administrador**, **Operador** ou **Editor**.  Para obter mais informações, veja [Funções que são requeridas por um usuário para gerenciar os logs](/docs/services/CloudLogAnalysis/manage_logs.html#roles1).
+Para gerenciar dados do log de cluster armazenados no armazenamento de longo prazo (Coleção de logs), seu ID de usuário deve ter uma política do IAM para funcionar com o serviço {{site.data.keyword.loganalysisshort}}. Seu ID de usuário deve ter as permissões **Administrador**, **Operador** ou **Editor**.  Para obter mais informações, veja [Funções que são requeridas por um usuário para gerenciar os logs](/docs/services/CloudLogAnalysis?topic=cloudloganalysis-manage_logs#roles1).
 
 
 A figura a seguir mostra uma visualização de alto nível de criação de log no Public para o {{site.data.keyword.containershort}} quando o cluster encaminha logs para um domínio de espaço:
@@ -78,32 +112,27 @@ A figura a seguir mostra uma visualização de alto nível de criação de log n
 
    
 
-## Logs de encaminhamento para o domínio de contas
+### Logs de encaminhamento para o domínio de contas
 {: #acc_public}
 
-Ao configurar seu cluster para encaminhar os logs de cluster para o domínio de contas, considere as informações a seguir:
+É possível configurar seu cluster para encaminhar logs para o domínio de contas se sua conta
+estiver no ambiente do {{site.data.keyword.cloud_notm}} público ou dedicado.
+{: shortdesc}
 
-* **Cluster provisionado no {{site.data.keyword.Bluemix_notm}} Public**: os logs são encaminhados para o domínio de contas na mesma região do {{site.data.keyword.Bluemix_notm}} Public em que o cluster está em execução.
-* **Cluster provisionado no {{site.data.keyword.Bluemix_notm}} Dedicated**: os logs são encaminhados para o domínio de contas na mesma região do {{site.data.keyword.Bluemix_notm}} Public em que o cluster Dedicated está em execução.
 
 Para analisar dados do log no Kibana para um cluster que encaminha logs para o domínio de contas, considere as informações a seguir:
 
-* Deve-se ativar o Kibana na região do Public na qual o cluster está enviando logs para o serviço {{site.data.keyword.loganalysisshort}}.
-
-    * Os clusters que estão disponíveis na região Sul dos EUA enviam logs para o serviço {{site.data.keyword.loganalysisshort}} que está disponível na região Sul dos EUA.
-    * Os clusters que estão disponíveis na região Leste dos EUA enviam logs para o serviço {{site.data.keyword.loganalysisshort}} que está disponível na região Sul dos EUA.
-    * Os clusters que estão disponíveis na região Alemanha enviam logs para o serviço {{site.data.keyword.loganalysisshort}} que está disponível na região Alemanha.
-    * Os clusters que estão disponíveis na região Sydney enviam logs para o serviço {{site.data.keyword.loganalysisshort}} que está disponível na região Sydney.
-    * /Os clusters que estão disponíveis na região Reino Unido enviam logs para o serviço {{site.data.keyword.loganalysisshort}} que está disponível na região Alemanha.
-
-* Seu ID do usuário deve ter permissões para visualizar logs. Para ver logs no domínio de contas, um usuário precisa de uma política do IAM para o serviço {{site.data.keyword.loganalysisshort}}. O usuário precisa de permissões de **Visualizador**. 
+* Deve-se ativar o Kibana na região na qual o cluster está enviando logs para o serviço {{site.data.keyword.loganalysisshort}}.
+* Para gerenciar os dados do log do cluster que estão armazenados em longo prazo na Coleção de
+logs, deve-se ter uma função do IAM que permita trabalhar com o serviço {{site.data.keyword.loganalysisshort}}. Seu ID de usuário deve ter as permissões **Administrador**, **Operador** ou **Editor**. Para ver os logs, as permissões de **Visualizador** são necessárias.
 
 
-A figura a seguir mostra uma visualização de alto nível de criação de log no Public para o {{site.data.keyword.containershort}} quando o cluster encaminha logs para o domínio de contas:
+Na imagem a seguir, você tem uma visão de alto nível de como o encaminhamento de logs para uma conta funciona em um ambiente público.
+
 
 ![Visão geral do componente de alto nível para contêineres implementados em um cluster do Kubernetes](images/containers_kube.png "Visão geral do componente de alto nível para contêineres implementados em um cluster do Kubernetes")
 
-A figura a seguir mostra uma visualização de alto nível de criação de log no Dedicated para o {{site.data.keyword.containershort}}:
+A imagem a seguir mostra a visualização de alto nível de como o encaminhamento de logs para uma conta funciona em um ambiente dedicado.
 
 ![Visão geral do componente de alto nível para contêineres implementados em um cluster do Kubernetes](images/containers_kube_dedicated.png "Visão geral do componente de alto nível para contêineres implementados em um cluster do Kubernetes")
 
@@ -114,22 +143,22 @@ A figura a seguir mostra uma visualização de alto nível de criação de log n
 
 É possível escolher quais logs de cluster encaminhar para o serviço {{site.data.keyword.loganalysisshort}}. 
 
-Para obter mais informações sobre como configurar seu cluster para encaminhar arquivos de log para o serviço {{site.data.keyword.loganalysisshort}}, veja a seção [Ativando a coleta automática de logs de cluster](/docs/services/CloudLogAnalysis/containers/containers_kube_other_logs.html#containers_kube_other_logs).
+Para obter mais informações sobre como configurar seu cluster para encaminhar arquivos de log para o serviço {{site.data.keyword.loganalysisshort}}, veja a seção [Ativando a coleta automática de logs de cluster](/docs/services/CloudLogAnalysis/containers?topic=cloudloganalysis-containers_kube_other_logs#containers_kube_other_logs).
 
-* Para ativar a coleção de logs automática e encaminhar stdout e stderr, veja [Ativando a coleção de logs automática e encaminhando logs do contêiner](/docs/services/CloudLogAnalysis/containers/containers_kube_other_logs.html#containers).
-* Para ativar a coleção automática de logs e o encaminhamento de logs do aplicativo, veja [Ativando a coleção automática de logs e o encaminhamento de logs do aplicativo](/docs/services/CloudLogAnalysis/containers/containers_kube_other_logs.html#apps). 
-* Para ativar a coleção automática de logs e o encaminhamento de logs do trabalhador, veja [Ativando a coleção automática de logs e o encaminhamento de logs do trabalhador](/docs/services/CloudLogAnalysis/containers/containers_kube_other_logs.html#workers). 
-* Para ativar a coleção automática de logs e o encaminhamento dos logs do componente do sistema do Kubernetes, veja [Ativando a coleção automática de logs e o encaminhamento dos logs do componente do sistema do Kubernetes](/docs/services/CloudLogAnalysis/containers/containers_kube_other_logs.html#system). 
-* Para ativar a coleção automática de logs e o encaminhamento dos logs de controlador de ingresso do Kubernetes, veja [Ativando a coleção automática de logs e o encaminhamento dos logs de controlador de ingresso do Kubernetes](/docs/services/CloudLogAnalysis/containers/containers_kube_other_logs.html#controller).
-
-
+* Para ativar a coleção de logs automática e encaminhar stdout e stderr, veja [Ativando a coleção de logs automática e encaminhando logs do contêiner](/docs/services/CloudLogAnalysis/containers?topic=cloudloganalysis-containers_kube_other_logs#containers).
+* Para ativar a coleção automática de logs e o encaminhamento de logs do aplicativo, veja [Ativando a coleção automática de logs e o encaminhamento de logs do aplicativo](/docs/services/CloudLogAnalysis/containers?topic=cloudloganalysis-containers_kube_other_logs#apps). 
+* Para ativar a coleção automática de logs e o encaminhamento de logs do trabalhador, veja [Ativando a coleção automática de logs e o encaminhamento de logs do trabalhador](/docs/services/CloudLogAnalysis/containers?topic=cloudloganalysis-containers_kube_other_logs#workers). 
+* Para ativar a coleção automática de logs e o encaminhamento dos logs do componente do sistema do Kubernetes, veja [Ativando a coleção automática de logs e o encaminhamento dos logs do componente do sistema do Kubernetes](/docs/services/CloudLogAnalysis/containers?topic=cloudloganalysis-containers_kube_other_logs#system). 
+* Para ativar a coleção automática de logs e o encaminhamento dos logs de controlador de ingresso do Kubernetes, veja [Ativando a coleção automática de logs e o encaminhamento dos logs de controlador de ingresso do Kubernetes](/docs/services/CloudLogAnalysis/containers?topic=cloudloganalysis-containers_kube_other_logs#controller).
 
 
 
-## Configurando o tráfego de rede para configurações de firewall customizado no {{site.data.keyword.Bluemix_notm}}
+
+
+## Configurando o tráfego de rede para configurações de firewall customizado no {{site.data.keyword.cloud_notm}}
 {: #ports}
 
-Quando você tiver um firewall adicional configurado ou tiver customizado as configurações de firewall na infraestrutura do {{site.data.keyword.Bluemix_notm}} (SoftLayer), será necessário permitir o tráfego de rede de saída do nó do trabalhador para o serviço {{site.data.keyword.loganalysisshort}}. 
+Quando um firewall adicional é configurado ou as configurações de firewall em sua infraestrutura do {{site.data.keyword.cloud_notm}} (SoftLayer) são customizadas, deve-se permitir o tráfego de rede de saída do nó do trabalhador para o serviço {{site.data.keyword.loganalysisshort}}.
 
 Deve-se abrir a porta TCP 443 e a porta TCP 9091 de cada trabalhador para o serviço {{site.data.keyword.loganalysisshort}} para os endereços IP a seguir em seu firewall customizado:
 
@@ -224,9 +253,9 @@ Ao configurar o cluster para encaminhar logs customizados, é possível especifi
 ## Procurando logs
 {: #log_search}
 
-Por padrão, é possível usar o Kibana para procurar até 500 MB de logs por dia no {{site.data.keyword.Bluemix_notm}}. 
+Por padrão, é possível usar o Kibana para procurar até 500 MB de logs por dia no {{site.data.keyword.cloud_notm}}. 
 
-Para procurar por logs maiores, é possível usar o serviço {{site.data.keyword.loganalysisshort}}. O serviço fornece múltiplos planos. Cada plano possui recursos de procura de log diferentes, por exemplo, o plano *Coleção de logs* permite procurar até 1 GB de dados por dia. Para obter mais informações sobre os planos que estão disponíveis, veja [Planos de serviço](/docs/services/CloudLogAnalysis/log_analysis_ov.html#plans).
+Para procurar por logs maiores, é possível usar o serviço {{site.data.keyword.loganalysisshort}}. O serviço fornece múltiplos planos. Cada plano possui recursos de procura de log diferentes, por exemplo, o plano *Coleção de logs* permite procurar até 1 GB de dados por dia. Para obter mais informações sobre os planos que estão disponíveis, veja [Planos de serviço](/docs/services/CloudLogAnalysis?topic=cloudloganalysis-log_analysis_ov#plans).
 
 Ao procurar seus logs, considere os campos a seguir que estão disponíveis no Kibana:
 
@@ -360,8 +389,13 @@ Campos que podem ser úteis ao analisar logs do controlador de Ingresso:
 ## Enviando logs para que seja possível usar os campos em uma mensagem como campos de procura do Kibana
 {: #send_data_in_json}
 
-Por padrão, a criação de log é ativada automaticamente para os contêineres. Cada entrada no arquivo de log de tempo de execução do contêiner é exibida no Kibana no campo **mensagem**. Se você precisar filtrar e analisar seus dados no Kibana usando um campo específico que faça parte da entrada de log do contêiner, configure seu aplicativo para enviar uma saída formatada em JSON válida. Por exemplo, registre a mensagem no formato JSON para stdout (saída padrão) e stderr (erro padrão).
-
+Por padrão, a criação de log é ativada automaticamente para os contêineres. Cada entrada no arquivo de log do Docker é exibida no Kibana no campo **message**. Se você precisar filtrar e analisar seus dados no Kibana usando um campo específico que faça parte da entrada de log do contêiner, configure seu aplicativo para enviar uma saída formatada em JSON válida. Por exemplo, registre a mensagem no formato JSON
+em `stdout` e `stderr`.
+ 
+Cada campo que está disponível na mensagem é analisado para o tipo de campo que corresponde
+a seu valor.
+ 
+Por exemplo, cada campo na mensagem JSON a seguir está disponível como um campo que pode ser usado para filtragens e procuras.
 Cada campo que está disponível na mensagem é analisado para o tipo de campo que corresponde a seu valor. Por exemplo, cada campo na mensagem JSON a seguir:
     
 ```
@@ -387,7 +421,7 @@ está disponível como um campo que pode ser usado para filtragem e procuras:
 {: #security}
 
 
-Para encaminhar logs de cluster para o {{site.data.keyword.loganalysisshort}}, deve-se conceder permissões do {{site.data.keyword.Bluemix_notm}} para o proprietário da chave do {{site.data.keyword.containershort}} e para o ID do usuário que está configurando as configurações de cluster de criação de log.
+Para encaminhar logs de cluster para o {{site.data.keyword.loganalysisshort}}, deve-se conceder permissões do {{site.data.keyword.cloud_notm}} para o proprietário da chave do {{site.data.keyword.containershort}} e para o ID do usuário que está configurando as configurações de cluster de criação de log.
 
 O ID do usuário que configura as configurações de cluster de criação de log deve ter as permissões a seguir:
 
@@ -412,30 +446,32 @@ Para que um cluster encaminhe logs para o **domínio de contas** do {{site.data.
 ## Armazenando logs em Coleção de logs
 {: #log_collection1}
 
-Considere as informações a seguir sobre o comportamento padrão no {{site.data.keyword.Bluemix_notm}} ao trabalhar com logs:
+Considere as informações a seguir sobre o comportamento padrão
+no {{site.data.keyword.cloud_notm}} ao trabalhar com logs:
 
-* O {{site.data.keyword.Bluemix_notm}} armazena dados do log por até 3 dias.
+* Os dados do log são armazenados por até 3 dias.
 * Um máximo de 500 MB de dados é armazenado por dia. Qualquer log além desse valor máximo de 500 MB é descartado. As dotações de limite são reconfiguradas diariamente às 0h30 UTC.
 * Até 1,5 GB de dados podem ser procurados por um máximo de 3 dias. Os dados do log são substituídos (Primeiro a entrar, Primeiro a sair) depois de atingir 1,5 GB de dados ou depois de 3 dias.
 * Os logs não são armazenados na Coleção de logs para armazenamento de longo prazo.
 
-O serviço {{site.data.keyword.loganalysisshort}} fornece planos adicionais que permitem armazenar logs na Coleção de logs o tempo que for necessário. Para obter mais informações sobre o preço de cada plano, veja [Planos de serviços](/docs/services/CloudLogAnalysis/log_analysis_ov.html#plans). 
+O serviço {{site.data.keyword.loganalysisshort}} fornece planos adicionais que permitem armazenar logs na Coleção de logs o tempo que for necessário. Para obter mais informações sobre o preço de cada plano, veja [Planos de serviços](/docs/services/CloudLogAnalysis?topic=cloudloganalysis-log_analysis_ov#plans). 
 
 Para gerenciar logs na Coleção de logs, considere as informações a seguir:
 
-* É possível configurar uma política de retenção de log que possa ser usada para definir o número de dias que você deseja manter os logs na Coleção de logs. Para obter mais informações, veja [Política de retenção de log](/docs/services/CloudLogAnalysis/manage_logs.html#log_retention_policy).
+* É possível configurar uma política de retenção de log que possa ser usada para definir o número de dias que você deseja manter os logs na Coleção de logs. Para obter mais informações, veja [Política de retenção de log](/docs/services/CloudLogAnalysis?topic=cloudloganalysis-manage_logs#log_retention_policy).
 * É possível excluir logs manualmente usando a CLI ou a API da Coleção de logs. 
-* Para gerenciar logs na coleção de logs, um usuário precisa de uma política do IAM com permissões para trabalhar com o serviço {{site.data.keyword.loganalysisshort}} no {{site.data.keyword.Bluemix_notm}}. Para obter mais informações, veja [Funções do IAM](/docs/services/CloudLogAnalysis/security_ov.html#iam_roles).
+* Para gerenciar logs na coleção de logs, um usuário precisa de uma política do IAM com permissões para trabalhar com o serviço {{site.data.keyword.loganalysisshort}} no {{site.data.keyword.cloud_notm}}. Para obter mais informações, veja [Funções do IAM](/docs/services/CloudLogAnalysis?topic=cloudloganalysis-security_ov#iam_roles).
 
 ## Visualizando e analisando logs
 {: #logging_containers_ov_methods}
 
-Para analisar dados do log, use o Kibana para executar tarefas analíticas avançadas. O Kibana é uma plataforma de software livre de visualização e analítica, que pode ser usada para monitorar, procurar, analisar e visualizar seus dados em uma variedade de gráficos, por exemplo, diagramas e tabelas. Para obter mais informações, veja [Analisando logs no Kibana](/docs/services/CloudLogAnalysis/kibana/analyzing_logs_Kibana.html#analyzing_logs_Kibana).
+Para analisar dados do log, use o Kibana para executar tarefas analíticas avançadas. O Kibana é uma plataforma de software livre de visualização e analítica, que pode ser usada para monitorar, procurar, analisar e visualizar seus dados em uma variedade de gráficos, por exemplo, diagramas e tabelas. Para obter mais informações, veja [Analisando logs no Kibana](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-analyzing_logs_Kibana#analyzing_logs_Kibana).
 
 * É possível ativar o Kibana diretamente de um navegador da web. Para obter mais informações, veja [Navegando para o Kibana por meio de um navegador da web](/docs/services/CloudLogAnalysis/kibana/launch.html#launch_Kibana_from_browser).
-* É possível ativar o Kibana por meio da UI do [{{site.data.keyword.Bluemix_notm}} dentro do contexto de um cluster. Para obter mais informações, veja [Navegando para o Kibana por meio do painel de um contêiner que é implementado em um cluster do Kubernetes](/docs/services/CloudLogAnalysis/kibana/launch.html#launch_Kibana_for_containers_kube).
+* É possível ativar o Kibana na IU do {{site.data.keyword.cloud_notm}} dentro do contexto de
+um cluster. Para obter mais informações, veja [Navegando para o Kibana por meio do painel de um contêiner que é implementado em um cluster do Kubernetes](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-launch#launch_Kibana_for_containers_kube).
 
-Se você encaminhar os dados do log de um app executado em um contêiner para o coletor do log de tempo de execução do contêiner no formato JSON, será possível procurar e analisar os dados do log no Kibana usando campos JSON. Para obter mais informações, veja [Enviando logs para que seja possível usar os campos em uma mensagem como campos de procura do Kibana](/docs/services/CloudLogAnalysis/containers/containers_kubernetes.html#send_data_in_json).
+Se você encaminhar os dados do log de um app executado em um contêiner para o coletor do log de tempo de execução do contêiner no formato JSON, será possível procurar e analisar os dados do log no Kibana usando campos JSON. Para obter mais informações, veja [Enviando logs para que seja possível usar os campos em uma mensagem como campos de procura do Kibana](/docs/services/CloudLogAnalysis/containers?topic=cloudloganalysis-containers_kubernetes#send_data_in_json).
 
 Para visualizar logs no Kibana, considere as informações a seguir:
 
@@ -447,4 +483,4 @@ Para visualizar logs no Kibana, considere as informações a seguir:
 ## Tutorial: analisar logs no Kibana para um app que é implementado em um cluster do Kubernetes
 {: #tutorial1}
 
-Para saber como usar o Kibana para analisar os logs de um contêiner implementado em um cluster do Kubernetes, veja [Analisar logs no Kibana para um app implementado em um cluster do Kubernetes](/docs/services/CloudLogAnalysis/tutorials/container_logs.html#container_logs).
+Para saber como usar o Kibana para analisar os logs de um contêiner implementado em um cluster do Kubernetes, veja [Analisar logs no Kibana para um app implementado em um cluster do Kubernetes](/docs/services/CloudLogAnalysis/tutorials?topic=cloudloganalysis-container_logs#container_logs).

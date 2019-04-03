@@ -61,13 +61,13 @@ Puede iniciar Kibana de cualquiera de estas formas:
 
     Puede iniciar Kibana para que los datos que ve agreguen registros de servicios de un espacio especificado.
 	
-	Para obtener más información, consulte [Navegación a Kibana desde el panel de control del servicio Análisis de registros](/docs/services/CloudLogAnalysis/kibana/launch.html#launch_Kibana_from_log_analysis).
+	Para obtener más información, consulte [Navegación a Kibana desde el panel de control del servicio Análisis de registros](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-launch#launch_Kibana_from_log_analysis).
 
 * Desde {{site.data.keyword.Bluemix_notm}}
 
-    Puede iniciar los registros específicos de la app CF en Kibana, dentro del contexto de la app específica. Para obtener más información, consulte [Navegación a Kibana desde el panel de control de una app CF](/docs/services/CloudLogAnalysis/kibana/launch.html#launch_Kibana_from_cf_app).
+    Puede iniciar los registros específicos de la app CF en Kibana, dentro del contexto de la app específica. Para obtener más información, consulte [Navegación a Kibana desde el panel de control de una app CF](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-launch#launch_Kibana_from_cf_app).
     
-    Puede iniciar registros de un contenedor Docker específico en Kibana, dentro del contexto de dicho contenedor en concreto. Esta característica únicamente se aplica a contenedores desplegados en la infraestructura gestionada por {{site.data.keyword.Bluemix_notm}}. Para obtener más información, consulte [Navegación a Kibana desde el panel de control de un contenedor](/docs/services/CloudLogAnalysis/kibana/launch.html#launch_Kibana_for_containers).
+    Puede iniciar registros de un contenedor Docker específico en Kibana, dentro del contexto de dicho contenedor en concreto. Esta característica únicamente se aplica a contenedores desplegados en la infraestructura gestionada por {{site.data.keyword.Bluemix_notm}}. Para obtener más información, consulte [Navegación a Kibana desde el panel de control de un contenedor](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-launch#launch_Kibana_for_containers).
     
     Para las apps CF, la consulta que se utiliza para filtrar los datos disponibles para análisis en Kibana recupera las entradas de registro de la aplicación Cloud Foundry. La información de registro que muestra Kibana de forma predeterminada está relacionada con una sola aplicación Cloud Foundry y todas sus instancias. 
     
@@ -81,16 +81,16 @@ Puede iniciar Kibana de cualquiera de estas formas:
     
     La consulta que se utiliza para filtrar los datos que aparecen en el panel de control recupera las entradas de registro correspondientes a un espacio de la organización {{site.data.keyword.Bluemix_notm}}. La información de registro que muestra Kibana incluye registros correspondientes a todos los recursos desplegados dentro del espacio de la organización {{site.data.keyword.Bluemix_notm}} en la que ha iniciado la sesión. 
     
-    Para obtener más información, consulte [Navegación al panel de control de Kibana desde un navegador web](/docs/services/CloudLogAnalysis/kibana/launch.html#launch_Kibana_from_browser).
+    Para obtener más información, consulte [Navegación al panel de control de Kibana desde un navegador web](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-launch#launch_Kibana_from_browser).
     
     
 
 ## Análisis de datos de forma interactiva
 {: #analyze_discover}
 
-En la página Descubrir, puede definir nuevas consultas de búsqueda y aplicar filtros por consulta. Los datos de registro se muestran en una tabla y un histograma. Puede utilizar estas visualizaciones para analizar los datos de forma interactiva. Para obtener más información, consulte [Análisis interactivo de registros en Kibana](/docs/services/CloudLogAnalysis/kibana/analize_logs_interactively.html#analize_logs_interactively).
+En la página Descubrir, puede definir nuevas consultas de búsqueda y aplicar filtros por consulta. Los datos de registro se muestran en una tabla y un histograma. Puede utilizar estas visualizaciones para analizar los datos de forma interactiva. Para obtener más información, consulte [Análisis interactivo de registros en Kibana](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-analize_logs_interactively#analize_logs_interactively).
 
-Puede configurar filtros desde campos de registro, por ejemplo message_type e instance_ID, y definir un periodo de tiempo. Puede habilitar o inhabilitar dinámicamente estos filtros. La tabla y el histograma mostrarán las entradas de registro que cumplan la consulta y los criterios de filtro que habilite. Para obtener más información, consulte [Filtrado de registros en Kibana](/docs/services/CloudLogAnalysis/kibana/filter_logs.html#filter_logs).
+Puede configurar filtros desde campos de registro, por ejemplo message_type e instance_ID, y definir un periodo de tiempo. Puede habilitar o inhabilitar dinámicamente estos filtros. La tabla y el histograma mostrarán las entradas de registro que cumplan la consulta y los criterios de filtro que habilite. Para obtener más información, consulte [Filtrado de registros en Kibana](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-filter_logs#filter_logs).
 
 ## Análisis de datos mediante su visualización
 {: #analyze_visualize}
@@ -99,16 +99,16 @@ En la página Visualizar, puede definir nuevas consultas de búsqueda y visualiz
 
 Para analizar los datos, puede crear visualizaciones basadas en una búsqueda existente o en una búsqueda nueva. Kibana incluye distintos tipos de visualizaciones, como tabla, tendencias e histograma, que puede utilizar para analizar la información. El objetivo de cada visualización varía. Algunas visualizaciones se organizan en filas que proporcionan los resultados de una o varias consultas. Otras visualizaciones muestran documentos o información personalizada. Los datos de una visualización se pueden dejar fijos o modificar si una se actualiza una consulta de búsqueda. Puede incluir la visualización en una página web o puede compartirla. 
 
-Para obtener más información, consulte [Análisis de registros mediante visualizaciones](/docs/services/CloudLogAnalysis/kibana/kibana_visualizations.html#kibana_visualizations).
+Para obtener más información, consulte [Análisis de registros mediante visualizaciones](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-kibana_visualizations#kibana_visualizations).
 
 ## Análisis de datos en un panel de control
 {: #analyze_dashboard}
 
 En la página Panel de control, puede personalizar, guardar y compartir varias visualizaciones y búsquedas simultáneamente. 
 
-Puede añadir, eliminar y cambiar la disposición de las visualizaciones del panel de control. Para obtener más información, consulte [Análisis de registros en Kibana mediante un panel de control](/docs/services/CloudLogAnalysis/kibana/analize_logs_dashboard.html#analize_logs_dashboard).
+Puede añadir, eliminar y cambiar la disposición de las visualizaciones del panel de control. Para obtener más información, consulte [Análisis de registros en Kibana mediante un panel de control](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-analize_logs_dashboard#analize_logs_dashboard).
     
-Después de personalizar un panel de control de Kibana, puede analizar los datos a través de sus visualizaciones y guardarlos para volverlos a utilizar en el futuro. Para obtener más información, consulte [Cómo guardar un panel de control de Kibana](/docs/services/CloudLogAnalysis/kibana/analize_logs_dashboard.html#save).
+Después de personalizar un panel de control de Kibana, puede analizar los datos a través de sus visualizaciones y guardarlos para volverlos a utilizar en el futuro. Para obtener más información, consulte [Cómo guardar un panel de control de Kibana](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-analize_logs_dashboard#save).
 
 ## Personalización de Kibana
 {: #analyze_management}
@@ -120,7 +120,7 @@ Puede realizar cualquiera de estas tareas:
 * Guardar, suprimir, exportar e importar búsquedas. 
 * Guardar, suprimir, exportar e importar visualizaciones.
 * Guardar, suprimir, exportar e importar paneles de control.
-* [Renovar la lista de campos.](/docs/services/CloudLogAnalysis/kibana/analize_logs_interactively.html#discover_view_reload_fields)
+* [Renovar la lista de campos.](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-analize_logs_interactively#discover_view_reload_fields)
 
 ## Limitaciones
 {: #limitations}
@@ -136,7 +136,7 @@ No se da soporte a las siguientes características de Kibana:
 ## Roles que necesita un usuario para ver registros
 {: #roles}
 
-En {{site.data.keyword.Bluemix_notm}}, puede asignar uno o varios roles a los usuarios. Estos roles definen qué tareas están habilitadas para dicho usuario para trabajar con el servicio de {{site.data.keyword.loganalysisshort}}. 
+En {{site.data.keyword.Bluemix_notm}}, puede asignar uno o varios roles a los usuarios. Estos roles definen qué tareas están habilitadas para dicho usuario para trabajar con el servicio {{site.data.keyword.loganalysisshort}}. 
 
 Las tablas siguientes muestran los roles que debe tener un usuario para ver registros:
 

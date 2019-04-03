@@ -46,13 +46,13 @@ In der folgenden Tabelle sind die verschiedenen Tasks aufgeführt, die Sie auf d
 
 | Task | Weitere Informationen |
 |------|------------------|
-| [Visualisierung hinzufügen](/docs/services/CloudLogAnalysis/kibana/analize_logs_dashboard.html#add_visualization) | Sie können eine vorhandene Visualisierung oder Suche zu einem Dashboard hinzufügen.|
-| [Neues Dashboard erstellen](/docs/services/CloudLogAnalysis/kibana/analize_logs_dashboard.html#new) | Sie können mehrere Dashboards erstellen. Jedes Dashboard kann so gestaltet werden, dass es verschiedene Suchen und Visualisierungen oder unterschiedliche Protokolldaten enthält.  |
-| [Dashboard löschen](/docs/services/CloudLogAnalysis/kibana/analize_logs_dashboard.html#delete) | Nicht benötigte Dashboards können gelöscht werden. |
-| [Dashboard exportieren](/docs/services/CloudLogAnalysis/kibana/analize_logs_dashboard.html#export) | Sie können ein Dashboard als JSON-Datei exportieren. |
-| [Dashboard importieren](/docs/services/CloudLogAnalysis/kibana/analize_logs_dashboard.html#import) | Sie können ein Dashboard als JSON-Datei importieren. |
-| [Dashboard laden](/docs/services/CloudLogAnalysis/kibana/analize_logs_dashboard.html#reload3) | Sie können ein Dashboard hochladen, um seine Daten zu aktualisieren, um Änderungen vorzunehmen oder um die Daten zu analysieren. |
-| [Dashboard speichern](/docs/services/CloudLogAnalysis/kibana/analize_logs_dashboard.html#save) | Sie können ein Dashboard zur späteren Verwendung speichern. |
+| [Visualisierung hinzufügen](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-analize_logs_dashboard#add_visualization) | Sie können eine vorhandene Visualisierung oder Suche zu einem Dashboard hinzufügen.|
+| [Neues Dashboard erstellen](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-analize_logs_dashboard#new) | Sie können mehrere Dashboards erstellen. Jedes Dashboard kann so gestaltet werden, dass es verschiedene Suchen und Visualisierungen oder unterschiedliche Protokolldaten enthält.  |
+| [Dashboard löschen](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-analize_logs_dashboard#delete) | Nicht benötigte Dashboards können gelöscht werden. |
+| [Dashboard exportieren](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-analize_logs_dashboard#export) | Sie können ein Dashboard als JSON-Datei exportieren. |
+| [Dashboard importieren](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-analize_logs_dashboard#import) | Sie können ein Dashboard als JSON-Datei importieren. |
+| [Dashboard laden](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-analize_logs_dashboard#reload3) | Sie können ein Dashboard hochladen, um seine Daten zu aktualisieren, um Änderungen vorzunehmen oder um die Daten zu analysieren. |
+| [Dashboard speichern](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-analize_logs_dashboard#save) | Sie können ein Dashboard zur späteren Verwendung speichern. |
 {: caption="Tabelle 2. Tasks für die Arbeit mit Dashboards" caption-side="top"}
 
 Weitere Informationen zu Kibana finden Sie in der Veröffentlichung [Kibana User Guide ![Symbol für externen Link](../../../icons/launch-glyph.svg "Symbol für externen Link")](https://www.elastic.co/guide/en/kibana/5.1/index.html){: new_window}.
@@ -81,13 +81,13 @@ Führen Sie die folgenden Schritte aus, um ein neues Dashboard zu erstellen:
 
 1. Klicken Sie in der Symbolleiste der Seite 'Dashboard' auf **Add**. 
 
-2. Fügen Sie eine oder mehr Suchen und Visualisierungen hinzu. Weitere Informationen finden Sie unter [Neue Suche oder Visualisierung hinzufügen](/docs/services/CloudLogAnalysis/kibana/analize_logs_dashboard.html#add_visualization).
+2. Fügen Sie eine oder mehr Suchen und Visualisierungen hinzu. Weitere Informationen finden Sie unter [Neue Suche oder Visualisierung hinzufügen](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-analize_logs_dashboard#add_visualization).
 
     Wenn Sie eine Suche oder eine Visualisierung hinzufügen, wird ein Fensterbereich im Dashboard hinzugefügt.
 
 3. Ziehen Sie einen Fensterbereich und legen Sie ihn in dem Teil des Dashboards ab, in dem Sie ihn positionieren wollen.
  
-4. Speichern Sie das Dashboard zur späteren Wiederverwendung. Weitere Informationen finden Sie unter [Kibana-Dashboard speichern](/docs/services/CloudLogAnalysis/kibana/analize_logs_dashboard.html#save).
+4. Speichern Sie das Dashboard zur späteren Wiederverwendung. Weitere Informationen finden Sie unter [Kibana-Dashboard speichern](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-analize_logs_dashboard#save).
 
 
 ## Kibana-Dashboard löschen

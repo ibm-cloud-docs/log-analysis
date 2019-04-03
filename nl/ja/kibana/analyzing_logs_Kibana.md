@@ -61,13 +61,13 @@ Kibana は以下のどの方法でも起動できます。
 
     Kibana を起動して、用意されているスペース内のサービスのログを、表示データで集約することができます。
 	
-	詳しくは、『[Log Analysis サービスのダッシュボードから Kibana へのナビゲート](/docs/services/CloudLogAnalysis/kibana/launch.html#launch_Kibana_from_log_analysis)』を参照してください。
+	詳しくは、『[Log Analysis サービスのダッシュボードから Kibana へのナビゲート](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-launch#launch_Kibana_from_log_analysis)』を参照してください。
 
 * {{site.data.keyword.Bluemix_notm}} から
 
-    特定の CF アプリのコンテキストにおいて、そのログが Kibana に表示されるようにすることで Kibana を起動できます。 詳しくは、『[CF アプリのダッシュボードから Kibana へのナビゲート](/docs/services/CloudLogAnalysis/kibana/launch.html#launch_Kibana_from_cf_app)』を参照してください。
+    特定の CF アプリのコンテキストにおいて、そのログが Kibana に表示されるようにすることで Kibana を起動できます。 詳しくは、『[CF アプリのダッシュボードから Kibana へのナビゲート](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-launch#launch_Kibana_from_cf_app)』を参照してください。
     
-    特定の Docker コンテナーのコンテキストにおいて、そのログが Kibana に表示されるようにすることで Kibana を起動できます。 この機能は、{{site.data.keyword.Bluemix_notm}} が管理するインフラストラクチャーにデプロイされたコンテナーにのみ適用されます。 詳しくは、『[コンテナーのダッシュボードから Kibana へのナビゲート](/docs/services/CloudLogAnalysis/kibana/launch.html#launch_Kibana_for_containers)』を参照してください。
+    特定の Docker コンテナーのコンテキストにおいて、そのログが Kibana に表示されるようにすることで Kibana を起動できます。 この機能は、{{site.data.keyword.Bluemix_notm}} が管理するインフラストラクチャーにデプロイされたコンテナーにのみ適用されます。 詳しくは、『[コンテナーのダッシュボードから Kibana へのナビゲート](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-launch#launch_Kibana_for_containers)』を参照してください。
     
     CF アプリでは、Kibana で分析に使用できるデータをフィルタリングするために使用される照会により、Cloud Foundry アプリケーションのログ項目を取得します。 Kibana にデフォルトで表示されるログ情報は、単一の Cloud Foundry アプリケーションとそのすべてのインスタンスに関連するすべてです。 
     
@@ -81,16 +81,16 @@ Kibana は以下のどの方法でも起動できます。
     
     ダッシュボードに表示されるデータをフィルター操作するために使用される照会によって、{{site.data.keyword.Bluemix_notm}} 組織内のスペースのログ項目が取り出されます。 Kibana に表示されるログ情報には、ログインしている {{site.data.keyword.Bluemix_notm}} 組織のスペース内にデプロイされているすべてのリソースに関するレコードが含まれます。 
     
-    詳しくは、『[Web ブラウザーから Kibana ダッシュボードへのナビゲート](/docs/services/CloudLogAnalysis/kibana/launch.html#launch_Kibana_from_browser)』を参照してください。
+    詳しくは、『[Web ブラウザーから Kibana ダッシュボードへのナビゲート](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-launch#launch_Kibana_from_browser)』を参照してください。
     
     
 
 ## データの対話式分析
 {: #analyze_discover}
 
-「Discover」ページで、新規検索照会を定義し、照会ごとにフィルターを適用します。 ログ・データは、表およびヒストグラムで表示されます。 これらの視覚化を使用して、データを対話式に分析できます。 詳しくは、『[Kibana でのログの対話式分析](/docs/services/CloudLogAnalysis/kibana/analize_logs_interactively.html#analize_logs_interactively)』を参照してください。
+「Discover」ページで、新規検索照会を定義し、照会ごとにフィルターを適用します。 ログ・データは、表およびヒストグラムで表示されます。 これらの視覚化を使用して、データを対話式に分析できます。 詳しくは、『[Kibana でのログの対話式分析](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-analize_logs_interactively#analize_logs_interactively)』を参照してください。
 
-ログ・フィールド (例: message_type や instance_ID) からフィルターを構成したり、期間を設定したりすることができます。 これらのフィルターを動的に有効または無効にすることができます。 有効にした照会およびフィルターの基準に一致するログ項目が表やヒストグラムに表示されます。 詳しくは、『[Kibana でのログのフィルタリング](/docs/services/CloudLogAnalysis/kibana/filter_logs.html#filter_logs)』を参照してください。
+ログ・フィールド (例: message_type や instance_ID) からフィルターを構成したり、期間を設定したりすることができます。 これらのフィルターを動的に有効または無効にすることができます。 有効にした照会およびフィルターの基準に一致するログ項目が表やヒストグラムに表示されます。 詳しくは、『[Kibana でのログのフィルタリング](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-filter_logs#filter_logs)』を参照してください。
 
 ## 視覚化を通じたデータの分析
 {: #analyze_visualize}
@@ -99,16 +99,16 @@ Kibana は以下のどの方法でも起動できます。
 
 データを分析するために、既存の検索または新規検索に基づいて、視覚化を作成できます。 Kibana には、さまざまなタイプの視覚化 (表、トレンド、ヒストグラムなど) が組み込まれているので、情報を分析するためにそれらを利用できます。 各視覚化の目標は異なります。 一部の視覚化は、1 つ以上の照会の結果を表す行に編成されています。 文書またはカスタム情報を表示する視覚化もあります。 視覚化のデータは、検索照会を更新して、修正または変更できます。 視覚化を Web ページに埋め込んだり、共有したりすることができます。 
 
-詳しくは、『[視覚化を使用したログの分析](/docs/services/CloudLogAnalysis/kibana/kibana_visualizations.html#kibana_visualizations)』を参照してください。
+詳しくは、『[視覚化を使用したログの分析](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-kibana_visualizations#kibana_visualizations)』を参照してください。
 
 ## ダッシュボードでのデータの分析
 {: #analyze_dashboard}
 
 「Dashboard」ページでは、複数の視覚化および検索を同時にカスタマイズ、保存、および共有できます。 
 
-ダッシュボード内の視覚化の追加、削除、並べ替えを行うことができます。 詳しくは、『[ダッシュボードを使用した Kibana でのログの分析](/docs/services/CloudLogAnalysis/kibana/analize_logs_dashboard.html#analize_logs_dashboard)』を参照してください。
+ダッシュボード内の視覚化の追加、削除、並べ替えを行うことができます。 詳しくは、『[ダッシュボードを使用した Kibana でのログの分析](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-analize_logs_dashboard#analize_logs_dashboard)』を参照してください。
     
-Kibana ダッシュボードをカスタマイズした後、その視覚化を使用してデータを分析し、将来再使用するために保存できます。 詳しくは、『[Kibana ダッシュボードの保存](/docs/services/CloudLogAnalysis/kibana/analize_logs_dashboard.html#save)』を参照してください。
+Kibana ダッシュボードをカスタマイズした後、その視覚化を使用してデータを分析し、将来再使用するために保存できます。 詳しくは、『[Kibana ダッシュボードの保存](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-analize_logs_dashboard#save)』を参照してください。
 
 ## Kibana のカスタマイズ
 {: #analyze_management}
@@ -120,7 +120,7 @@ Kibana ダッシュボードをカスタマイズした後、その視覚化を�
 * 検索の保存、削除、エクスポート、およびインポート。 
 * 視覚化の保存、削除、エクスポート、およびインポート。
 * ダッシュボードの保存、削除、エクスポート、およびインポート。
-* [フィールド・リストの最新表示](/docs/services/CloudLogAnalysis/kibana/analize_logs_interactively.html#discover_view_reload_fields)。
+* [フィールド・リストの最新表示](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-analize_logs_interactively#discover_view_reload_fields)。
 
 ## 制限
 {: #limitations}

@@ -74,6 +74,6 @@ Pour consulter les journaux de déploiement ou d'exécution d'une application Cl
 
 Par défaut, les journaux disponibles pour l'analyse incluent les données des 15 dernières minutes.
 
-**Conseil :** pour analyser des données pour une période personnalisée, voir [Analyse de journal avancée avec Kibana](/docs/services/CloudLogAnalysis/kibana/analyzing_logs_Kibana.html#analyzing_logs_Kibana). 
+**Conseil :** pour analyser des données pour une période personnalisée, voir [Analyse de journal avancée avec Kibana](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-analyzing_logs_Kibana#analyzing_logs_Kibana). 
 
 

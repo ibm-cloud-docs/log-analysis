@@ -25,7 +25,7 @@ subcollection: cloudloganalysis
 # ログの削除
 {: #deleting_logs}
 
-Log Collection からログを削除するには、[ibmcloud logging log-delete](/docs/services/CloudLogAnalysis/reference/log_analysis_cli_cloud.html#delete) コマンドを使用します。 
+Log Collection からログを削除するには、[ibmcloud logging log-delete](/docs/services/CloudLogAnalysis/reference?topic=cloudloganalysis-log_analysis_cli#delete) コマンドを使用します。 
 {:shortdesc}
 
 * 特定期間内のログを削除できます。
@@ -40,7 +40,7 @@ Log Collection からログを削除するには、[ibmcloud logging log-delete]
 
 1. {{site.data.keyword.Bluemix_notm}} で、地域、組織、およびスペースにログインします。 
 
-    詳しくは、『[{{site.data.keyword.Bluemix_notm}} にログインするにはどうすればよいですか](/docs/services/CloudLogAnalysis/qa/cli_qa.html#login)』を参照してください。
+    詳しくは、『[{{site.data.keyword.Bluemix_notm}} にログインするにはどうすればよいですか](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#login)』を参照してください。
     
 2. 次のコマンドを実行して、Log Collection 内にあるログを表示します。
 
@@ -89,7 +89,7 @@ Log Collection からログを削除するには、[ibmcloud logging log-delete]
 
 1. {{site.data.keyword.Bluemix_notm}} で、地域、組織、およびスペースにログインします。 
 
-    詳しくは、『[{{site.data.keyword.Bluemix_notm}} にログインするにはどうすればよいですか](/docs/services/CloudLogAnalysis/qa/cli_qa.html#login)』を参照してください。
+    詳しくは、『[{{site.data.keyword.Bluemix_notm}} にログインするにはどうすればよいですか](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#login)』を参照してください。
     
 2. 次のコマンドを実行して、Log Collection 内にあるログを表示します。
 
@@ -140,11 +140,11 @@ Log Collection からログを削除するには、[ibmcloud logging log-delete]
 
 1. {{site.data.keyword.Bluemix_notm}} で、地域、組織、およびスペースにログインします。 
 
-    詳しくは、『[{{site.data.keyword.Bluemix_notm}} にログインするにはどうすればよいですか](/docs/services/CloudLogAnalysis/qa/cli_qa.html#login)』を参照してください。
+    詳しくは、『[{{site.data.keyword.Bluemix_notm}} にログインするにはどうすればよいですか](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#login)』を参照してください。
 	
 2. アカウント ID を取得します。
 
-    詳しくは、『[アカウントの GUID の取得方法を教えてください](/docs/services/CloudLogAnalysis/qa/cli_qa.html#account_guid)』を参照してください。
+    詳しくは、『[アカウントの GUID の取得方法を教えてください](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#account_guid)』を参照してください。
     
 3. 次のコマンドを実行して、アカウント・レベルで Log Collection 内にあるログを表示します。
 

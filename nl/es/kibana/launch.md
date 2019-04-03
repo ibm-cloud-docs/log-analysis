@@ -50,7 +50,7 @@ En la siguiente tabla se muestran algunos recursos de nube y métodos de navegac
     <td>Sí</td>
   </tr>  
   <tr>
-    <td>Contenedor desplegado en un clúster Kubernetes</td>
+    <td>Contenedor desplegado en un clúster de Kubernetes</td>
 	<td>Sí</td>
     <td>Sí</td>
     <td>Sí</td>
@@ -83,7 +83,7 @@ Siga los pasos siguientes para iniciar Kibana desde el panel de control del serv
 
 De forma predeterminada, se carga la página **Descubrir** con el patrón de índice predeterminado seleccionado y un filtro de tiempo establecido en los últimos 15 minutos. 
 
-Si la página Descubrir no muestra ninguna entrada de registro, ajuste el selector de tiempo. Para obtener más información, consulte [Establecimiento de un filtro de tiempo](/docs/services/CloudLogAnalysis/kibana/filter_logs.html#set_time_filter).
+Si la página Descubrir no muestra ninguna entrada de registro, ajuste el selector de tiempo. Para obtener más información, consulte [Establecimiento de un filtro de tiempo](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-filter_logs#set_time_filter).
 
 	
 	
@@ -98,7 +98,7 @@ Siga los pasos siguientes para iniciar Kibana desde un navegador:
 
 1. Abra un navegador web e inicie Kibana. A continuación, inicie sesión en la interfaz de usuario de Kibana.
 
-    Para ver la lista de URL por región, consulte [URL para iniciar Kibana](/docs/services/CloudLogAnalysis/kibana/analyzing_logs_Kibana.html#urls_kibana).
+    Para ver la lista de URL por región, consulte [URL para iniciar Kibana](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-analyzing_logs_Kibana#urls_kibana).
     
     Se abre la página Descubrir en Kibana.
 	
@@ -115,7 +115,7 @@ Siga los pasos siguientes para iniciar Kibana desde un navegador:
 	
 	    donde *Space_ID* es el GUID del espacio en el que desea ver y analizar datos de registro. 
 	
-Si la página Descubrir no muestra ninguna entrada de registro, ajuste el selector de tiempo. Para obtener más información, consulte [Establecimiento de un filtro de tiempo](/docs/services/CloudLogAnalysis/kibana/filter_logs.html#set_time_filter).
+Si la página Descubrir no muestra ninguna entrada de registro, ajuste el selector de tiempo. Para obtener más información, consulte [Establecimiento de un filtro de tiempo](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-filter_logs#set_time_filter).
 
 
 	
@@ -143,11 +143,11 @@ Para ver los registros de una aplicación Cloud Foundry en Kibana, siga los paso
 
     De forma predeterminada, se carga la página **Descubrir** con el patrón de índice predeterminado seleccionado y un filtro de tiempo establecido en los últimos 15 minutos. La consulta de búsqueda está establecida para que coincida con todas las entradas de la app CF.
 
-    Si la página Descubrir no muestra ninguna entrada de registro, ajuste el selector de tiempo. Para obtener más información, consulte [Establecimiento de un filtro de tiempo](/docs/services/CloudLogAnalysis/kibana/filter_logs.html#set_time_filter).
+    Si la página Descubrir no muestra ninguna entrada de registro, ajuste el selector de tiempo. Para obtener más información, consulte [Establecimiento de un filtro de tiempo](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-filter_logs#set_time_filter).
 
 	
 	
-##  Navegación a Kibana desde el panel de control de un contenedor desplegado en un clúster Kubernetes
+##  Navegación a Kibana desde el panel de control de un contenedor desplegado en un clúster de Kubernetes
 {: #launch_Kibana_for_containers_kube}
 
 La consulta que se utiliza para filtrar los datos que aparecen en Kibana recupera las entradas de registro correspondientes al clúster desde el que ha iniciado Kibana.
@@ -192,7 +192,7 @@ Para ver los registros de un contenedor Docker en Kibana, siga los pasos siguien
 
     De forma predeterminada, se carga la página **Descubrir** con el patrón de índice predeterminado seleccionado y un filtro de tiempo establecido en los últimos 30 segundos. La consulta de búsqueda está establecida de modo que coincide con todas las entradas correspondientes al contenedor Docker.
 
-    Si la página Descubrir no muestra ninguna entrada de registro, ajuste el selector de tiempo. Para obtener más información, consulte [Establecimiento de un filtro de tiempo](/docs/services/CloudLogAnalysis/kibana/filter_logs.html#set_time_filter).
+    Si la página Descubrir no muestra ninguna entrada de registro, ajuste el selector de tiempo. Para obtener más información, consulte [Establecimiento de un filtro de tiempo](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-filter_logs#set_time_filter).
 
 	
 

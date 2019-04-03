@@ -62,13 +62,13 @@ Kibana 包含可用于分析日志的不同页面：
 
     您可以启动 Kibana，以便您看到的数据从所提供空间内的服务聚集日志。
 	
-	有关更多信息，请参阅[通过 Log Analysis 服务的仪表板浏览至 Kibana](/docs/services/CloudLogAnalysis/kibana/launch.html#launch_Kibana_from_log_analysis)。
+	有关更多信息，请参阅[通过 Log Analysis 服务的仪表板浏览至 Kibana](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-launch#launch_Kibana_from_log_analysis)。
 
 * 从 {{site.data.keyword.Bluemix_notm}}
 
-    可以在特定 CF 应用程序的上下文中，使用 Kibana 显示该 CF 应用程序的日志。有关更多信息，请参阅[通过 CF 应用程序的仪表板浏览至 Kibana](/docs/services/CloudLogAnalysis/kibana/launch.html#launch_Kibana_from_cf_app)。
+    可以在特定 CF 应用程序的上下文中，使用 Kibana 显示该 CF 应用程序的日志。有关更多信息，请参阅[通过 CF 应用程序的仪表板浏览至 Kibana](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-launch#launch_Kibana_from_cf_app)。
     
-    可以在特定 Docker 容器的上下文中，使用 Kibana 显示该 Docker 容器的日志。此功能仅适用于在 {{site.data.keyword.Bluemix_notm}} 管理的基础架构中部署的容器。有关更多信息，请参阅[通过容器的仪表板浏览至 Kibana](/docs/services/CloudLogAnalysis/kibana/launch.html#launch_Kibana_for_containers)。
+    可以在特定 Docker 容器的上下文中，使用 Kibana 显示该 Docker 容器的日志。此功能仅适用于在 {{site.data.keyword.Bluemix_notm}} 管理的基础架构中部署的容器。有关更多信息，请参阅[通过容器的仪表板浏览至 Kibana](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-launch#launch_Kibana_for_containers)。
     
     对于 CF 应用程序，用于过滤可在 Kibana 中进行分析的数据的查询会检索 Cloud Foundry 应用程序的日志条目。Kibana 缺省显示的日志信息全部与单个 Cloud Foundry 应用程序及其所有实例相关联。 
     
@@ -82,16 +82,16 @@ Kibana 包含可用于分析日志的不同页面：
     
     用于过滤仪表板中所显示数据的查询会检索 {{site.data.keyword.Bluemix_notm}} 组织中空间的日志条目。Kibana 显示的日志信息包括在您登录到的 {{site.data.keyword.Bluemix_notm}} 组织空间内部署的所有资源的记录。 
     
-    有关更多信息，请参阅[通过 Web 浏览器导航至 Kibana 仪表板](/docs/services/CloudLogAnalysis/kibana/launch.html#launch_Kibana_from_browser)。
+    有关更多信息，请参阅[通过 Web 浏览器导航至 Kibana 仪表板](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-launch#launch_Kibana_from_browser)。
     
     
 
 ## 交互式分析数据
 {: #analyze_discover}
 
-在“发现”页面中，可以定义新搜索查询并按查询应用过滤器。日志数据将通过表和直方图显示。可以使用这些可视化项以交互方式分析数据。有关更多信息，请参阅[在 Kibana 中以交互方式分析日志](/docs/services/CloudLogAnalysis/kibana/analize_logs_interactively.html#analize_logs_interactively)。
+在“发现”页面中，可以定义新搜索查询并按查询应用过滤器。日志数据将通过表和直方图显示。可以使用这些可视化项以交互方式分析数据。有关更多信息，请参阅[在 Kibana 中以交互方式分析日志](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-analize_logs_interactively#analize_logs_interactively)。
 
-可以通过日志字段（例如，message_type 和 instance_ID）来配置过滤器，并可以设置时间段。您可以动态启用或禁用这些过滤器。表和直方图将显示满足所启用的查询和过滤条件的日志条目。有关更多信息，请参阅[在 Kibana 中过滤日志](/docs/services/CloudLogAnalysis/kibana/filter_logs.html#filter_logs)。
+可以通过日志字段（例如，message_type 和 instance_ID）来配置过滤器，并可以设置时间段。您可以动态启用或禁用这些过滤器。表和直方图将显示满足所启用的查询和过滤条件的日志条目。有关更多信息，请参阅[在 Kibana 中过滤日志](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-filter_logs#filter_logs)。
 
 ## 通过可视化项分析数据
 {: #analyze_visualize}
@@ -100,16 +100,16 @@ Kibana 包含可用于分析日志的不同页面：
 
 要分析数据，可以基于现有搜索或新搜索来创建可视化项。Kibana 包含可用于分析信息的不同类型的可视化项，如表、趋势和直方图。每个可视化项的用途各不相同。一些可视化项组织成行，用于提供一个或多个查询的结果。另一些可视化项则显示文档或定制信息。可视化项中的数据可以是固定的，也可以在更新搜索查询时更改。可以在 Web 页面中嵌入可视化项，也可以共享可视化项。 
 
-有关更多信息，请参阅[使用可视化项分析日志](/docs/services/CloudLogAnalysis/kibana/kibana_visualizations.html#kibana_visualizations)。
+有关更多信息，请参阅[使用可视化项分析日志](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-kibana_visualizations#kibana_visualizations)。
 
 ## 在仪表板中分析数据
 {: #analyze_dashboard}
 
 在“仪表板”页面中，可以同时定制、保存和共享多个可视化项和搜索。 
 
-可以在仪表板中添加、除去和重新排列可视化项。有关更多信息，请参阅[在 Kibana 中通过仪表板分析日志](/docs/services/CloudLogAnalysis/kibana/analize_logs_dashboard.html#analize_logs_dashboard)。
+可以在仪表板中添加、除去和重新排列可视化项。有关更多信息，请参阅[在 Kibana 中通过仪表板分析日志](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-analize_logs_dashboard#analize_logs_dashboard)。
     
-定制 Kibana 仪表板后，可以通过其可视化项对数据进行分析，然后保存以供未来复用。有关更多信息，请参阅[保存 Kibana 仪表板](/docs/services/CloudLogAnalysis/kibana/analize_logs_dashboard.html#save)。
+定制 Kibana 仪表板后，可以通过其可视化项对数据进行分析，然后保存以供未来复用。有关更多信息，请参阅[保存 Kibana 仪表板](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-analize_logs_dashboard#save)。
 
 ## 定制 Kibana
 {: #analyze_management}
@@ -121,7 +121,7 @@ Kibana 包含可用于分析日志的不同页面：
 * 保存、删除、导出和导入搜索。 
 * 保存、删除、导出和导入可视化。
 * 保存、删除、导出和导入仪表板。
-* [刷新字段列表。](/docs/services/CloudLogAnalysis/kibana/analize_logs_interactively.html#discover_view_reload_fields)
+* [刷新字段列表。](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-analize_logs_interactively#discover_view_reload_fields)
 
 ## 限制
 {: #limitations}

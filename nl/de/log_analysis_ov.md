@@ -140,7 +140,7 @@ Der {{site.data.keyword.loganalysisshort}}-Service bietet mehrere Pläne. Die Pl
 
 **HINWEIS:** Die in einem Serviceplan enthaltenen Funktionen werden nur in dem Bereich aktiviert, in dem Sie den {{site.data.keyword.loganalysisshort}}-Service mit diesem Plan bereitgestellt haben.
 
-Sie können einen Plan über die {{site.data.keyword.Bluemix_notm}}-Benutzerschnittstelle oder über die Befehlszeile ändern. Sie können Ihren Plan jederzeit aktualisieren oder reduzieren. Weitere Informationen zu Upgrades für Servicepläne finden Sie unter [Plan ändern](/docs/services/CloudLogAnalysis/how-to/change_plan.html#change_plan). 
+Sie können einen Plan über die {{site.data.keyword.Bluemix_notm}}-Benutzerschnittstelle oder über die Befehlszeile ändern. Sie können Ihren Plan jederzeit aktualisieren oder reduzieren. Weitere Informationen zu Upgrades für Servicepläne finden Sie unter [Plan ändern](/docs/services/CloudLogAnalysis/how-to?topic=cloudloganalysis-change_plan#change_plan). 
 
 In der folgenden Tabelle werden die verfügbaren Pläne beschrieben:
 

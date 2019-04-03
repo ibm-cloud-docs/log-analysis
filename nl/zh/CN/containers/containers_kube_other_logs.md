@@ -59,7 +59,7 @@ subcollection: cloudloganalysis
 
 1. 登录到 {{site.data.keyword.Bluemix_notm}} 中的区域、组织和空间。 
 
-    有关更多信息，请参阅[如何登录到 {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/qa/cli_qa.html#login)。
+    有关更多信息，请参阅[如何登录到 {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/qa?topic=cloudloganalysis-cli_qa#login)。
     
 2. 初始化 {{site.data.keyword.loganalysisshort}} 服务插件。
 
@@ -91,11 +91,11 @@ subcollection: cloudloganalysis
 
 您可以选择转发给 {{site.data.keyword.loganalysisshort}} 服务的集群日志。 
 
-* 要启用 stdout 和 stderr 的自动日志收集和转发，请参阅[启用容器日志的自动日志收集和转发](/docs/services/CloudLogAnalysis/containers/containers_kube_other_logs.html#containers)。
-* 要启用应用程序日志的自动日志收集和转发，请参阅[启用应用程序日志的自动日志收集和转发](/docs/services/CloudLogAnalysis/containers/containers_kube_other_logs.html#apps)。
-* 要启用工作程序日志的自动日志收集和转发，请参阅[启用工作程序日志的自动日志收集和转发](/docs/services/CloudLogAnalysis/containers/containers_kube_other_logs.html#workers)。
-* 要启用 Kubernetes 系统组件日志的自动日志收集和转发，请参阅[启用 Kubernetes 系统组件日志的自动日志收集和转发](/docs/services/CloudLogAnalysis/containers/containers_kube_other_logs.html#system)。
-* 要启用 Kubernetes Ingress 控制器日志的自动日志收集和转发，请参阅[启用 Kubernetes Ingress 控制器日志的自动日志收集和转发](/docs/services/CloudLogAnalysis/containers/containers_kube_other_logs.html#controller)。
+* 要启用 stdout 和 stderr 的自动日志收集和转发，请参阅[启用容器日志的自动日志收集和转发](/docs/services/CloudLogAnalysis/containers?topic=cloudloganalysis-containers_kube_other_logs#containers)。
+* 要启用应用程序日志的自动日志收集和转发，请参阅[启用应用程序日志的自动日志收集和转发](/docs/services/CloudLogAnalysis/containers?topic=cloudloganalysis-containers_kube_other_logs#apps)。
+* 要启用工作程序日志的自动日志收集和转发，请参阅[启用工作程序日志的自动日志收集和转发](/docs/services/CloudLogAnalysis/containers?topic=cloudloganalysis-containers_kube_other_logs#workers)。
+* 要启用 Kubernetes 系统组件日志的自动日志收集和转发，请参阅[启用 Kubernetes 系统组件日志的自动日志收集和转发](/docs/services/CloudLogAnalysis/containers?topic=cloudloganalysis-containers_kube_other_logs#system)。
+* 要启用 Kubernetes Ingress 控制器日志的自动日志收集和转发，请参阅[启用 Kubernetes Ingress 控制器日志的自动日志收集和转发](/docs/services/CloudLogAnalysis/containers?topic=cloudloganalysis-containers_kube_other_logs#controller)。
 
 
 
@@ -142,7 +142,7 @@ subcollection: cloudloganalysis
  
 3. 如果用户没有正确的许可权，请完成以下步骤：
 
-    1. 向用户授予以下许可权：组织的 *orgManager* 角色，以及空间的 *SpaceManager* 和 *Developer* 角色。有关更多信息，请参阅[使用 IBM Cloud UI 向用户授予查看空间日志的许可权](/docs/services/CloudLogAnalysis/security/grant_permissions.html#grant_permissions_ui_space)。
+    1. 向用户授予以下许可权：组织的 *orgManager* 角色，以及空间的 *SpaceManager* 和 *Developer* 角色。有关更多信息，请参阅[使用 IBM Cloud UI 向用户授予查看空间日志的许可权](/docs/services/CloudLogAnalysis/security?topic=cloudloganalysis-grant_permissions#grant_permissions_ui_space)。
     
     2. 刷新日志记录配置。运行以下命令：
     
@@ -170,7 +170,7 @@ ibmcloud ks logging-config-create ClusterName --logsource container --namespace 
 其中 
 
 * *ClusterName* 是集群的名称。
-* *EndPoint* 是供应 {{site.data.keyword.loganalysisshort}} 服务的区域中的日志记录服务的 URL。有关端点的列表，请参阅[端点](/docs/services/CloudLogAnalysis/log_ingestion.html#log_ingestion_urls)。
+* *EndPoint* 是供应 {{site.data.keyword.loganalysisshort}} 服务的区域中的日志记录服务的 URL。有关端点的列表，请参阅[端点](/docs/services/CloudLogAnalysis?topic=cloudloganalysis-log_ingestion#log_ingestion_urls)。
 * *OrgName* 是其中空间可用的组织的名称。
 * *SpaceName* 是供应 {{site.data.keyword.loganalysisshort}} 服务的空间的名称。
 
@@ -204,7 +204,7 @@ ibmcloud ks logging-config-create ClusterName --logsource application --type ibm
 其中 
 
 * *ClusterName* 是集群的名称。
-* *EndPoint* 是供应 {{site.data.keyword.loganalysisshort}} 服务的区域中的日志记录服务的 URL。有关端点的列表，请参阅[端点](/docs/services/CloudLogAnalysis/log_ingestion.html#log_ingestion_urls)。
+* *EndPoint* 是供应 {{site.data.keyword.loganalysisshort}} 服务的区域中的日志记录服务的 URL。有关端点的列表，请参阅[端点](/docs/services/CloudLogAnalysis?topic=cloudloganalysis-log_ingestion#log_ingestion_urls)。
 * *OrgName* 是其中空间可用的组织的名称。
 * *SpaceName* 是供应 {{site.data.keyword.loganalysisshort}} 服务的空间的名称。
 * *app-containers* 是可选参数，您可以设置该参数来定义要监视的容器的列表。这些容器就是从中将日志转发到 {{site.data.keyword.loganalysisshort}} 的容器。您可以设置一个或多个容器（用逗号分隔）。
@@ -240,7 +240,7 @@ ibmcloud ks logging-config-create ClusterName --logsource worker --type ibm --ho
 其中 
 
 * *ClusterName* 是集群的名称。
-* *EndPoint* 是供应 {{site.data.keyword.loganalysisshort}} 服务的区域中的日志记录服务的 URL。有关端点的列表，请参阅[端点](/docs/services/CloudLogAnalysis/log_ingestion.html#log_ingestion_urls)。
+* *EndPoint* 是供应 {{site.data.keyword.loganalysisshort}} 服务的区域中的日志记录服务的 URL。有关端点的列表，请参阅[端点](/docs/services/CloudLogAnalysis?topic=cloudloganalysis-log_ingestion#log_ingestion_urls)。
 * *OrgName* 是其中空间可用的组织的名称。
 * *SpaceName* 是供应 {{site.data.keyword.loganalysisshort}} 服务的空间的名称。
 
@@ -275,7 +275,7 @@ ibmcloud ks logging-config-create ClusterName --logsource kubernetes --type ibm 
 其中 
 
 * *ClusterName* 是集群的名称。
-* *EndPoint* 是供应 {{site.data.keyword.loganalysisshort}} 服务的区域中的日志记录服务的 URL。有关端点的列表，请参阅[端点](/docs/services/CloudLogAnalysis/log_ingestion.html#log_ingestion_urls)。
+* *EndPoint* 是供应 {{site.data.keyword.loganalysisshort}} 服务的区域中的日志记录服务的 URL。有关端点的列表，请参阅[端点](/docs/services/CloudLogAnalysis?topic=cloudloganalysis-log_ingestion#log_ingestion_urls)。
 * *OrgName* 是其中空间可用的组织的名称。
 * *SpaceName* 是供应 {{site.data.keyword.loganalysisshort}} 服务的空间的名称。
 
@@ -310,7 +310,7 @@ ibmcloud ks logging-config-create ClusterName --logsource ingress --type ibm --h
 其中 
 
 * *ClusterName* 是集群的名称。
-* *EndPoint* 是供应 {{site.data.keyword.loganalysisshort}} 服务的区域中的日志记录服务的 URL。有关端点的列表，请参阅[端点](/docs/services/CloudLogAnalysis/log_ingestion.html#log_ingestion_urls)。
+* *EndPoint* 是供应 {{site.data.keyword.loganalysisshort}} 服务的区域中的日志记录服务的 URL。有关端点的列表，请参阅[端点](/docs/services/CloudLogAnalysis?topic=cloudloganalysis-log_ingestion#log_ingestion_urls)。
 * *OrgName* 是其中空间可用的组织的名称。
 * *SpaceName* 是供应 {{site.data.keyword.loganalysisshort}} 服务的空间的名称。
 

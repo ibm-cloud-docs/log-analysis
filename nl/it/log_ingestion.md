@@ -29,7 +29,7 @@ subcollection: cloudloganalysis
 Puoi inviare i log dall'esterno di {{site.data.keyword.IBM_notm}} Cloud nel servizio {{site.data.keyword.loganalysisshort}} utilizzando il Logstash Forwarder a più tenant. 
 {:shortdesc}
 
-Questa funzione è disponibile solo per i piani di servizio che consentono l'inserimento di log. Per ulteriori informazioni, vedi [Piani di servizio](/docs/services/CloudLogAnalysis/log_analysis_ov.html#plans).
+Questa funzione è disponibile solo per i piani di servizio che consentono l'inserimento di log. Per ulteriori informazioni, vedi [Piani di servizio](/docs/services/CloudLogAnalysis?topic=cloudloganalysis-log_analysis_ov#plans).
 
 Per inviare i log dall'esterno di {{site.data.keyword.IBM_notm}} Cloud nel servizio {{site.data.keyword.loganalysisshort}}, hai bisogno delle seguenti risorse Cloud:
 
@@ -38,7 +38,7 @@ Per inviare i log dall'esterno di {{site.data.keyword.IBM_notm}} Cloud nel servi
 
 Nel tuo ambiente locale, devi configurare l'mt-logstash-forwarder e specificare i file di log che vuoi inviare al servizio {{site.data.keyword.loganalysisshort}}.
 
-Per ulteriori informazioni sulla configurazione del tuo ambiente locale per inviare i log al servizio {{site.data.keyword.loganalysisshort}}, vedi [Invio di dati in loco a uno spazio in {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/how-to/send-data/send_data_mt.html#send_data_mt).
+Per ulteriori informazioni sulla configurazione del tuo ambiente locale per inviare i log al servizio {{site.data.keyword.loganalysisshort}}, vedi [Invio di dati in loco a uno spazio in {{site.data.keyword.Bluemix_notm}}](/docs/services/CloudLogAnalysis/how-to/send-data?topic=cloudloganalysis-send_data_mt#send_data_mt).
 
 
 
