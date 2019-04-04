@@ -50,19 +50,19 @@ In this tutorial, you will learn how to configure cluster-level logging.
 ## Before you begin
 {: #kube_prereqs}
 
-Work in the US-South region. The {{site.data.keyword.la_full_notm}} is currently available in the US South region. **Note:** You can send data from a Kubernetes cluster that is located in the same region or in a different region. 
+Work in a [supported region](/docs/services/Log-Analysis-with-LogDNA/tutorials?topic=LogDNA-about#overview_regions). **Note:** You can send data from a Kubernetes cluster that is located in the same region or in a different region. 
 
 Read about {{site.data.keyword.la_full_notm}}. For more information, see [About](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-about#about).
 
 Use a user ID that is a member or an owner of an {{site.data.keyword.cloud_notm}} account. To get an {{site.data.keyword.cloud_notm}} user ID, go to: [Registration ![External link icon](../../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com/login){:new_window}.
 
-Your {{site.data.keyword.IBM_notm}}ID must have assigned IAM policies for each of the following resources: 
+Your {{site.data.keyword.IBM_notm}}ID must have assigned IAM policies for each of the following resources in the region that your {{site.data.keyword.la_full_notm}} instance is in: 
 
-| Resource                             | Scope of the access policy | Role    | Region    | Information                  |
-|--------------------------------------|----------------------------|---------|-----------|------------------------------|
-| Resource group **Default**           |  Resource group            | Viewer  | us-south  | This policy is required to allow the user to see service instances in the Default resource group.    |
-| {{site.data.keyword.la_full_notm}} service |  Resource group            | Editor  | us-south  | This policy is required to allow the user to provision and administer the {{site.data.keyword.la_full_notm}} service in the Default resource group.   |
-| Kubernetes cluster instance          |  Resource                 | Editor  | us-south  | This policy is required to configure the secret and the LogDNA agent in the Kubernetes cluster. |
+| Resource                             | Scope of the access policy | Role    | Information                  |
+|--------------------------------------|----------------------------|---------|------------------------------|
+| Resource group **Default**           |  Resource group            | Viewer  | This policy is required to allow the user to see service instances in the Default resource group.    |
+| {{site.data.keyword.la_full_notm}} service |  Resource group            | Editor  | This policy is required to allow the user to provision and administer the {{site.data.keyword.la_full_notm}} service in the Default resource group.   |
+| Kubernetes cluster instance          |  Resource                 | Editor  | This policy is required to configure the secret and the LogDNA agent in the Kubernetes cluster. |
 {: caption="Table 1. List of IAM policies required to complete the tutorial" caption-side="top"} 
 
 For more information about the {{site.data.keyword.containerlong}} IAM roles, see [User access permissions](/docs/containers?topic=containers-access_reference#access_reference).
