@@ -1,120 +1,44 @@
 {:navgroup: .navgroup}
 {:topicgroup: .topicgroup}
 
-{: .toc subcollection="cloudloganalysis" audience="service" arm="3663228" href="/docs/services/CloudLogAnalysis?topic=cloudloganalysis-getting-started-with-cla#getting-started-with-cla" path="services/CloudLogAnalysis"}
-IBM Cloud Log Analysis
+{: .toc subcollection="LogDNA" audience="service" arm="4158184" href="/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-getting-started#getting-started" path="services/Log-Analysis-with-LogDNA"}
+IBM Log Analysis with LogDNA
 
     {: .navgroup id="learn"}
-    index.md
-    
-    {: .topicgroup}
-    关于 Log Analysis
-        log_analysis_ov.md
-        manage_logs.md
-        log_ingestion.md
-        kibana/analyzing_logs_Kibana.md
-        security_ov.md
-        compliance.md
+    getting-started.md
+    overview.md
+    network.md
+    iam.md
 
-    {: .topicgroup}
-    云资源的日志记录
-        cfapps/logging_cf_apps.md
-        containers/containers_kubernetes.md
-        vm/logging_vm_ov.md
-    
     {: .topicgroup}
     教程
-        tutorials/container_logs.md
-        [在 Kibana 中分析 CF 应用程序的日志](https://console.bluemix.net/docs/tutorials/application-log-analysis.html#generate-access-and-analyze-application-logs)
-
-    {: .topicgroup}
-    相关链接
-        [了解有关 Kibana 的更多信息](https://www.elastic.co/guide/en/kibana/5.1/index.html)
-        [Apache Lucene - Query Parser Syntax](https://lucene.apache.org/core/2_9_4/queryparsersyntax.html)
+        tutorials/kube.md
+        tutorials/kube_reset_ingestion.md
+        tutorials/ubuntu.md
     {: .navgroup-end}
-    
+
     {: .navgroup id="howto"}
-    how-to/provision.md
-    how-to/change_plan.md
-    how-to/quota.md
-    how-to/manage-logs/config_log_collection_cli_cloud.md
-
-    {: .topicgroup}
-    高级日志分析 (Kibana)
-        kibana/analize_logs_interactively.md
-        kibana/kibana_visualizations.md
-        kibana/analize_logs_dashboard.md
-        kibana/define_search.md
-        kibana/filter_logs.md
-        kibana/launch.md
-
-    {: .topicgroup}
-    管理日志
-        how-to/manage-logs/configuring_retention_policy_cloud.md
-        how-to/manage-logs/deleting_logs_cloud.md
-        how-to/manage-logs/downloading_logs_cloud.md
-        how-to/manage-logs/viewing_log_information_cloud.md
-
-    {: .topicgroup}
-    发送日志
-        how-to/send-data/send_data_mt.md
-
-    {: .topicgroup}
-    安全性
-        security/auth_uaa.md
-        security/auth_iam.md
-        security/logging_token.md
-        security/grant_permissions.md
-
-    {: .topicgroup}
-    CF 应用程序
-        cfapps/launch_logs_cloud_ui_cf.md
-        cfapps/logging_writing_to_log_from_cf_app.md
-        cfapps/logging_view_cli.md
-        external/logging_external_hosts.md
-
-    {: .topicgroup}
-    容器
-        containers/containers_kube_other_logs.md
-        containers/containers_key_owner.md
-        containers/containers_spaceid.md
+    provision.md
+    remove.md
+    config_agent.md
+    detach_agent.md
+    ingestion_key.md
+    log_sources.md
+    alerts.md
+    archive.md
+    export.md
+    ingest.md
+    launch.md
+    view_logs.md
+    work_iam.md
     {: .navgroup-end}
 
     {: .navgroup id="reference"}
-    qa/kibana_formats.md
-    reference/log_analysis_cli_cloud.md  
+    [LogDNA 产品页面](https://logdna.com/)
+    [LogDNA 文档](https://docs.logdna.com/docs)
+    [LogDNA 博客](https://blog.logdna.com/)
+    {: .navgroup-end}
 
-    [Log Analysis API](https://console.bluemix.net/apidocs/log-analysis-api)
-    {: .navgroup-end}     
-    
     {: .navgroup id="help"}
     gettinghelp.md
-	
-    {: .topicgroup}
-    故障诊断
-        troubleshooting/error_msgs.md
-        
-    {: .topicgroup}
-    常见问题
-        qa/faq_kibana.md
-        qa/cli_qa.md
-
-    {: .topicgroup}
-    管理日志（CF 插件）已弃用
-        reference/logging_cli.md  
-        how-to/manage-logs/config_log_collection_cli.md
-        how-to/manage-logs/configuring_retention_policy.md
-        how-to/manage-logs/deleting_logs.md
-        how-to/manage-logs/downloading_logs.md
-        how-to/manage-logs/viewing_log_information.md
-
-    {: .topicgroup}
-    日志分析 (Kibana 4) 已弃用
-        kibana4/logging_kibana_analize_logs_interactively.md
-        kibana4/logging_kibana_visualizations.md
-        kibana4/logging_kibana_analize_logs_dashboard.md
-        kibana4/k4_define_search.md
-        kibana4/k4_filter_logs.md
-        kibana4/k4_launch.md
     {: .navgroup-end}
-    

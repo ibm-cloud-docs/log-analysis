@@ -1,13 +1,12 @@
 ---
 
 copyright:
-  years: 2017, 2019
+  years:  2018, 2019
+lastupdated: "2019-03-07"
 
-lastupdated: "2019-03-22"
+keywords: LogDNA, IBM, Log Analysis, logging, getting started
 
-keywords: IBM Cloud, logging
-
-subcollection: cloudloganalysis
+subcollection: LogDNA
 
 ---
 
@@ -22,176 +21,82 @@ subcollection: cloudloganalysis
 {:important: .important}
 {:note: .note}
 
-# 概説のチュートリアル
+# 入門チュートリアル
 {: #getting-started}
 
-このチュートリアルを使用して、{{site.data.keyword.Bluemix}} で {{site.data.keyword.loganalysislong}} サービスを使用した作業を開始する方法を学習します。 
+{{site.data.keyword.cloud_notm}} アーキテクチャーにログ管理機能を追加するには、{{site.data.keyword.la_full}} を使用します。 {{site.data.keyword.la_full_notm}} は、{{site.data.keyword.IBM_notm}} とのパートナーシップにより LogDNA で運用されます。
 {:shortdesc}
 
-デフォルトでは、{{site.data.keyword.Bluemix_notm}} は、選択されたサービスに対して、統合されたロギング機能を提供します。 ログを処理するときに、収集および保存の機能を {{site.data.keyword.loganalysisshort}} サービスを使用して拡張できます。
 
-## 始める前に
-{: #gs_prereqs}
+## ステップ 1. 始める前に
+{: #getting-started_prereqs}
 
-{{site.data.keyword.Bluemix_notm}} アカウントのメンバーまたは所有者であるユーザー ID が必要です。 {{site.data.keyword.Bluemix_notm}} ユーザー ID を取得するには、[「登録」![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://console.bluemix.net/registration/){:new_window} にアクセスしてください。
+* {{site.data.keyword.la_full_notm}} についてお読みください。 詳しくは、[{{site.data.keyword.la_full_notm}} の概要](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-about#about)を参照してください。
+* サービスが使用可能な地域を確認します。 詳しくは、[地域](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-about#overview_regions)を参照してください。
+* {{site.data.keyword.cloud_notm}} アカウントのメンバーまたは所有者であるユーザー ID を取得します。 
 
-## ステップ 1: ログを表示したい対象のクラウド・リソースを選択する
-{: #gs_step1}
+    {{site.data.keyword.cloud_notm}} ユーザー ID を取得するには、[「登録」![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://cloud.ibm.com/login){:new_window} をクリックしてください。
 
-{{site.data.keyword.Bluemix_notm}} では、CF アプリケーション、{{site.data.keyword.containershort}} で実行されているコンテナー、および選択されたサービスは、自動的にログ・データを収集し、それを {{site.data.keyword.loganalysisshort}} サービスに転送します。
 
-以下の表に、各種クラウド・リソースを示します。 {{site.data.keyword.loganalysisshort}} サービスの入門として、いずれかのリソースのチュートリアルを実行してください。
+
+## ステップ 2. はじめに
+{: #getting-started_step2}
+
+ログを管理する対象のクラウド・リソースを選択します。 次に、{{site.data.keyword.la_full_notm}} サービスを使用してログをモニターできるように、このログ・ソースを構成します。 ログ・ソースの場所は、{{site.data.keyword.la_full_notm}} インスタンスをプロビジョンする地域でも、別の地域でもかまいません。
+
+以下の表に、{{site.data.keyword.la_full_notm}} サービスを使用してログの保管や管理を行うように構成できるクラウド・リソースの例をリストします。 {{site.data.keyword.loganalysisshort}} サービスへの入門として、まず 1 つのリソースに関してこのチュートリアルを実行してください。
 
 <table>
-  <caption>{{site.data.keyword.loganalysisshort}} サービス入門チュートリアル </caption>
+  <caption>{{site.data.keyword.la_full_notm}} サービス入門チュートリアル </caption>
   <tr>
     <th>リソース</th>
     <th>チュートリアル</th>
-    <th>クラウド環境</th>
+    <th>環境</th>
     <th>シナリオ</th>
   </tr>
   <tr>
     <td>{{site.data.keyword.containershort}} で実行されているコンテナー</td>
-    <td>[Kubernetes クラスターにデプロイされたアプリに関する Kibana でのログの分析](/docs/services/CloudLogAnalysis/tutorials?topic=cloudloganalysis-container_logs#container_logs)</td>
-    <td>Public </br>Dedicated</td>
-    <td>![Kubernetes クラスターにデプロイされたコンテナーのコンポーネント概要図](containers/images/containers_kube_logs.png "Kubernetes クラスターにデプロイされたコンテナーのコンポーネント概要図")</td>
+    <td>[{{site.data.keyword.la_full_notm}} による Kubernetes クラスター・ログの管理](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-kube#kube)</td>
+    <td>{{site.data.keyword.cloud_notm}} Public </td>
+    <td>![{{site.data.keyword.containershort}} と {{site.data.keyword.la_full_notm}}](images/kube.png "{{site.data.keyword.containershort}} と {{site.data.keyword.la_full_notm}}")</td>
   </tr>
   <tr>
-    <td>CF アプリ</td>
-    <td>[Cloud Foundry アプリのログの Kibana での分析](https://console.bluemix.net/docs/tutorials/application-log-analysis.html#generate-access-and-analyze-application-logs)</td>
-    <td>Public</td>
-    <td>![{{site.data.keyword.Bluemix_notm}} での CF アプリのロギングの概要図](cfapps/images/cfapps_logs.png "{{site.data.keyword.Bluemix_notm}} での CF アプリのロギングの概要図")</td>
+    <td>Linux Ubuntu、Linux Debian</td>
+    <td>[{{site.data.keyword.la_full_notm}} による Linux Ubuntu の管理](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-ubuntu#ubuntu)</td>
+    <td>オンプレミス</td>
+    <td>![Ubuntu サーバーと {{site.data.keyword.la_full_notm}}](images/ubuntu.png "Ubuntu サーバーと {{site.data.keyword.la_full_notm}}")</td>
   </tr>
 </table>
 
 
 
+## ステップ 3. 計画のアップグレード
+{: #getting-started_step3}
 
-## ステップ 2: ユーザーがログを表示するための許可を設定する
-{: #gs_step2}
+より多くのロギング機能を使用できるようにします。
 
-ユーザーが実行を許可される {{site.data.keyword.loganalysisshort}} アクションを制御するために、ユーザーに役割とポリシーを割り当てることができます。 
+{{site.data.keyword.la_full_notm}} サービス・プランを、[ログのフィルター処理](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-view_logs#view_logs_step5)、[ログの検索](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-view_logs#view_logs_step6)、[ビューの定義](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-view_logs#view_logs_step7)、[アラートの構成](https://docs.logdna.com/docs/alerts)を行える有料プランにアップグレードします。 {{site.data.keyword.la_full_notm}} サービス・プランについて詳しくは、[価格プラン](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-about#overview_pricing_plans)を参照してください。
 
-{{site.data.keyword.Bluemix_notm}} には 2 つのタイプのセキュリティー権限があり、それらの権限によって、ユーザーが {{site.data.keyword.loganalysisshort}} サービスを使用した処理を行うときに実行できるアクションが制御されます。
+## ステップ 4. 次のステップ 
+{: #getting-started_iam}
 
-* Cloud Foundry (CF) 役割: ユーザーに CF 役割を付与して、ユーザーがスペース内のログを表示するために必要な許可を定義します。
-* IAM 役割: ユーザーに IAM ポリシーを付与して、ユーザーがアカウント・ドメイン内のログを表示するために必要な許可を定義します。
+次に、IAM でのユーザー・アクセスを管理します。
 
-### ユーザーがスペース・ドメインでログを表示するための許可を設定する
-{: #gs_step2a}
+ユーザーが {{site.data.keyword.la_full_notm}} サービスを使って作業するのに必要な IAM ポリシーを識別します。
 
-以下のステップを実行して、スペース内のログを表示するための許可をユーザーに付与します。
+{{site.data.keyword.la_full_notm}} サービスとの IAM の統合について詳しくは、[IAM でのユーザー・アクセスの管理](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-iam#iam)を参照してください。
 
-1. {{site.data.keyword.Bluemix_notm}} コンソールにログインします。
+例えば、1 つのユーザー役割を選択して、{{site.data.keyword.la_full_notm}} サービスを使って作業するための許可をそのユーザーに付与する方法を学びます。 
 
-    Web ブラウザーを開き、{{site.data.keyword.Bluemix_notm}} ダッシュボード: [http://bluemix.net ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](http://bluemix.net){:new_window} を起動します。
-	
-	ユーザー ID とパスワードを使用してログインすると、{{site.data.keyword.Bluemix_notm}} UI が開きます。
-
-2. メニュー・バーから、**「管理」>「アカウント」>「ユーザー」**をクリックします。 
-
-    「*ユーザー*」ウィンドウに、現在選択されているアカウントにおけるユーザーのリストが、E メール・アドレスと共に表示されます。
-	
-3. ユーザーがアカウントのメンバーである場合、リストからユーザー名を選択するか、または、**「アクション」**メニューから*「ユーザーの管理」*をクリックします。
-
-    ユーザーがアカウントのメンバーでない場合、『[ユーザーの招待](/docs/iam?topic=iam-iamuserinv#iamuserinv)』を参照してください。
-
-4. **「Cloud Foundry アクセス権限」**を選択してから、組織を選択します。
-
-    その組織で使用可能なスペースのリストが表示されます。
-
-5. {{site.data.keyword.loganalysisshort}} サービスをプロビジョンしたスペースを選択します。 次に、メニュー・アクションから**「スペースの役割の編集」**を選択します。
-
-6. *監査員* を選択します。 
-
-    1 つ以上のスペースの役割を選択できます。 *管理者*、*開発者*、および*監査員* のすべての役割が、ユーザーにログの表示を許可します。
-	
-7. **「役割の保存」**をクリックします。
-
-
-
-### ユーザーがアカウント・ドメインでログを表示するための許可を設定する
-{: #gs_step2b}
-
-
-以下のステップを実行して、アカウント・ログを表示するための許可をユーザーに付与します。
-
-1. {{site.data.keyword.Bluemix_notm}} コンソールにログインします。
-
-    Web ブラウザーを開き、{{site.data.keyword.Bluemix_notm}} ダッシュボード: [http://bluemix.net ![外部リンク・アイコン](../../../icons/launch-glyph.svg "外部リンク・アイコン")](http://bluemix.net){:new_window} を起動します。
-	
-	ユーザー ID とパスワードを使用してログインすると、{{site.data.keyword.Bluemix_notm}} UI が開きます。
-
-2. メニュー・バーから、**「管理」>「アカウント」>「ユーザー」**をクリックします。 
-
-    「*ユーザー*」ウィンドウに、現在選択されているアカウントにおけるユーザーのリストが、E メール・アドレスと共に表示されます。
-	
-3. ユーザーがアカウントのメンバーである場合、リストからユーザー名を選択するか、または、**「アクション」**メニューから*「ユーザーの管理」*をクリックします。
-
-    ユーザーがアカウントのメンバーでない場合、『[ユーザーの招待](/docs/iam?topic=iam-iamuserinv#iamuserinv)』を参照してください。
-
-4. **「アクセス・ポリシー」**セクションで、**「アクセス権限の割り当て」**をクリックし、**「リソースへのアクセス権限の割り当て」**を選択します。
-
-    *「ユーザー * へのリソース・アクセス権限の割り当て (Assign resource access to user*)」* ウィンドウが開きます。
-
-5. ポリシーに関する情報を入力します。 以下の表は、ポリシーを定義する必須のフィールドを示します。 
-
-    <table>
-	  <caption>IAM ポリシーを構成するためのフィールドのリスト。</caption>
-	  <tr>
-	    <th>フィールド</th>
-		<th>値</th>
-	  </tr>
-	  <tr>
-	    <td>サービス</td>
-		<td>*IBM Cloud Log Analysis*</td>
-	  </tr>	  
-	  <tr>
-	    <td>地域</td>
-		<td>ユーザーがログを処理する権限を付与される地域を指定できます。 1 つ以上の地域を個々に選択するか、または、**「すべての現行地域」**を選択してすべての地域の権限を付与します。</td>
-	  </tr>
-	  <tr>
-	    <td>サービス・インスタンス</td>
-		<td>*「すべてのサービス・インスタンス」* を選択します。</td>
-	  </tr>
-	  <tr>
-	    <td>役割</td>
-		<td>1 つ以上の IAM 役割を選択してください。 <br>有効な役割は、*管理者*、*オペレーター*、*エディター*、*ビューアー*です。 <br>役割ごとの許可されるアクションについて詳しくは、『[IAM 役割](/docs/services/CloudLogAnalysis?topic=cloudloganalysis-security_ov#iam_roles)』を参照してください。
-		</td>
-	  </tr>
-     </table>
-	
-6. **「割り当て」**をクリックします。
-	
-構成したポリシーは、選択した地域で利用できます。 
-
-
-## 次のステップ 
-{: #gs_next_steps}
-
-**注:** ログ・データを表示および分析するには、ユーザーは、ログ・データがあるクラウド Public 地域で Kibana にアクセスする必要があります。 
-
-例えば、米国南部地域で Kibana を起動するには、Web ブラウザーを開き、次の URL を入力します。
-
-```
-https://logging.ng.bluemix.net/ 
-```
-{: codeblock}
-
-
-その他の地域の Kibana を起動する方法について詳しくは、[Web ブラウザーから Kibana へのナビゲート](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-launch#launch_Kibana_from_browser)を参照してください。
-
-**注:** Kibana を起動したときに、*「無効なベアラー・トークン」*を示すメッセージが表示された場合、アカウントでの許可を確認してください。 このメッセージは、そのユーザー ID にログを表示するための許可がないことを示しています。
-
-次に、ログ・データを表示および分析するために Kibana をカスタマイズします。 詳しくは、『[ログの表示と分析](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-analyzing_logs_Kibana#analyzing_logs_Kibana)』を参照してください。
-    
-
-
-
-
-
-
-
-
+| {{site.data.keyword.cloud_notm}} でのユーザー役割 | 詳細情報                     |
+|-----------------------------------------------------|------------------------------------------|
+| アカウント所有者                                       | [{{site.data.keyword.cloud_notm}} アカウント内のサービスの管理者になるための許可をユーザーに付与する](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-work_iam#admin_account) |
+| アカウント内のプラットフォーム・サービス管理者       | [{{site.data.keyword.cloud_notm}} アカウント内のサービスの管理者になるための許可をユーザーに付与する](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-work_iam#admin_account) |
+| リソース・グループ内のプラットフォーム・サービス管理者  | [リソース・グループ内のサービスの管理者になるための許可をユーザーに付与する](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-work_iam#admin_rg) |
+| アカウント内のプラットフォーム DevOps オペレーター           | [{{site.data.keyword.cloud_notm}} アカウント内のサービスを管理するための許可を DevOps ユーザーに付与する](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-work_iam#devops_account) |
+| リソース・グループ内のプラットフォーム DevOps オペレーター        | [リソース・グループ内のサービスを管理するための許可を DevOps ユーザーに付与する](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-work_iam#devops_rg) |
+| LogDNA 内のサービス管理者                     | [LogDNA でログを管理しアラートを構成するための許可を付与する](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-work_iam#admin_user_logdna)              |
+| ユーザー / 開発者                                    | [LogDNA でログを表示および管理するための許可をユーザーに付与する](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-work_iam#user_logdna)               |
+{: caption="表 2. {{site.data.keyword.cloud_notm}} での Cloud 役割" caption-side="top"}
 
 

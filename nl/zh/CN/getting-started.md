@@ -1,13 +1,12 @@
 ---
 
 copyright:
-  years: 2017, 2019
+  years:  2018, 2019
+lastupdated: "2019-03-07"
 
-lastupdated: "2019-03-22"
+keywords: LogDNA, IBM, Log Analysis, logging, getting started
 
-keywords: IBM Cloud, logging
-
-subcollection: cloudloganalysis
+subcollection: LogDNA
 
 ---
 
@@ -25,172 +24,79 @@ subcollection: cloudloganalysis
 # 入门教程
 {: #getting-started}
 
-使用本教程可了解如何开始使用 {{site.data.keyword.Bluemix}} 中的 {{site.data.keyword.loganalysislong}} 服务。
+使用 {{site.data.keyword.la_full}} 可向 {{site.data.keyword.cloud_notm}} 体系结构添加日志管理功能。{{site.data.keyword.la_full_notm}} 由 LogDNA 与 {{site.data.keyword.IBM_notm}} 合作运行。
 {:shortdesc}
 
-缺省情况下，{{site.data.keyword.Bluemix_notm}} 会为所选服务提供集成的日志记录功能。使用日志时，可以通过 {{site.data.keyword.loganalysisshort}} 服务来扩展收集和保留功能。
 
-## 开始之前
-{: #gs_prereqs}
+## 步骤 1. 开始之前
+{: #getting-started_prereqs}
 
-您必须具有作为 {{site.data.keyword.Bluemix_notm}} 帐户的成员或所有者的用户标识。要获取 {{site.data.keyword.Bluemix_notm}} 用户标识，请转至[注册 ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://console.bluemix.net/registration/){:new_window}
+* 请阅读有关 {{site.data.keyword.la_full_notm}} 的信息。有关更多信息，请参阅[关于 {{site.data.keyword.la_full_notm}}](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-about#about)。
+* 检查服务在其中可用的区域。有关更多信息，请参阅[区域](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-about#overview_regions)。
+* 获取作为 {{site.data.keyword.cloud_notm}} 帐户的成员或所有者的用户标识。 
 
-## 步骤 1：选择要查看其日志的云资源
-{: #gs_step1}
+    要获取 {{site.data.keyword.cloud_notm}} 用户标识，请单击[注册 ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://cloud.ibm.com/login){:new_window}。
 
-在 {{site.data.keyword.Bluemix_notm}} 中，CF 应用程序、{{site.data.keyword.containershort}} 上运行的容器以及所选服务会自动收集日志数据，然后将这些数据转发到 {{site.data.keyword.loganalysisshort}} 服务。
 
-下表列出了不同的云资源。要开始使用 {{site.data.keyword.loganalysisshort}} 服务，请完成相关资源的教程：
+
+## 步骤 2. 开始使用
+{: #getting-started_step2}
+
+选择要管理其日志的云资源。然后，配置此日志源，以便可以通过 {{site.data.keyword.la_full_notm}} 服务来监视其日志。日志源可以位于供应 {{site.data.keyword.la_full_notm}} 实例的同一区域中，也可以位于不同区域中。
+
+下表列出了可以配置为使用 {{site.data.keyword.la_full_notm}} 服务来存储和管理日志的云资源的示例。完成资源的教程，以开始使用 {{site.data.keyword.loganalysisshort}} 服务：
 
 <table>
-  <caption>用于开始使用 {{site.data.keyword.loganalysisshort}} 服务的教程</caption>
+  <caption>使用 {{site.data.keyword.la_full_notm}} 服务的入门教程</caption>
   <tr>
     <th>资源</th>
     <th>教程</th>
-    <th>云环境</th>
+    <th>环境</th>
     <th>场景</th>
   </tr>
   <tr>
     <td>在 {{site.data.keyword.containershort}} 上运行的容器</td>
-    <td>[在 Kibana 中分析 Kubernetes 集群中部署的应用程序的日志](/docs/services/CloudLogAnalysis/tutorials?topic=cloudloganalysis-container_logs#container_logs)</td>
-    <td>Public </br>Dedicated</td>
-    <td>![在 Kubernetes 集群中部署的容器的高级别组件概览图](containers/images/containers_kube_logs.png "在 Kubernetes 集群中部署的容器的高级别组件概览图")</td>
+    <td>[使用 {{site.data.keyword.la_full_notm}} 管理 Kubernetes 集群日志](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-kube#kube)</td>
+    <td>{{site.data.keyword.cloud_notm}} Public</td>
+    <td>![{{site.data.keyword.containershort}} 和 {{site.data.keyword.la_full_notm}}](images/kube.png "{{site.data.keyword.containershort}} 和 {{site.data.keyword.la_full_notm}}")</td>
   </tr>
   <tr>
-    <td>CF 应用程序</td>
-    <td>[在 Kibana 中分析 Cloud Foundry 应用程序的日志](https://console.bluemix.net/docs/tutorials/application-log-analysis.html#generate-access-and-analyze-application-logs)</td>
-    <td>Public</td>
-    <td>![{{site.data.keyword.Bluemix_notm}} 中 CF 应用程序日志记录的高级别视图](cfapps/images/cfapps_logs.png "{{site.data.keyword.Bluemix_notm}} 中 CF 应用程序日志记录的高级别视图")</td>
+    <td>Linux Ubuntu 和 Linux Debian</td>
+    <td>[使用 {{site.data.keyword.la_full_notm}} 管理 Linux Ubuntu 日志](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-ubuntu#ubuntu)</td>
+    <td>内部部署</td>
+    <td>![Ubuntu 服务器和 {{site.data.keyword.la_full_notm}}](images/ubuntu.png "Ubuntu 服务器和 {{site.data.keyword.la_full_notm}}")</td>
   </tr>
 </table>
 
 
 
+## 步骤 3. 升级套餐
+{: #getting-started_step3}
 
-## 步骤 2：为用户设置日志查看许可权
-{: #gs_step2}
+启用更多日志记录功能。
 
-要控制允许用户执行的 {{site.data.keyword.loganalysisshort}} 操作，您可以向用户分配角色和策略。 
+将 {{site.data.keyword.la_full_notm}} 服务套餐升级到付费套餐，以便能够[过滤日志](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-view_logs#view_logs_step5)、[搜索日志](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-view_logs#view_logs_step6)、[定义视图](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-view_logs#view_logs_step7)和[配置警报](https://docs.logdna.com/docs/alerts)。有关 {{site.data.keyword.la_full_notm}} 服务套餐的更多信息，请参阅[价格套餐](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-about#overview_pricing_plans)。
 
-在 {{site.data.keyword.Bluemix_notm}} 中有两种类型的安全许可权，用于控制用户使用 {{site.data.keyword.loganalysisshort}} 服务时可以执行的操作：
+## 步骤 4. 后续步骤 
+{: #getting-started_iam}
 
-* Cloud Foundry (CF) 角色：向用户授予 CF 角色，以定义用户具有查看空间中日志的许可权。
-* IAM 角色：向用户授予 IAM 策略，以定义用户具有查看帐户域中日志的许可权。
+接下来，使用 IAM 管理用户访问权。
 
-### 为用户设置查看空间域中日志的许可权
-{: #gs_step2a}
+确定用户使用 {{site.data.keyword.la_full_notm}} 服务需要的 IAM 策略。
 
-要授予用户查看空间中日志的许可权，请完成以下步骤：
+要了解有关与 {{site.data.keyword.la_full_notm}} 服务的 IAM 集成的更多信息，请参阅[使用 IAM 管理用户访问权](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-iam#iam)。
 
-1. 登录到 {{site.data.keyword.Bluemix_notm}} 控制台。
+例如，选择一个用户角色，以了解如何向该用户授予使用 {{site.data.keyword.la_full_notm}} 服务的许可权。 
 
-    打开 Web 浏览器并启动 {{site.data.keyword.Bluemix_notm}}“仪表板”：[http://bluemix.net ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](http://bluemix.net){:new_window}
-	
-	使用用户标识和密码登录后，{{site.data.keyword.Bluemix_notm}} UI 将打开。
-
-2. 从菜单栏，单击**管理 > 帐户 > 用户**。 
-
-    *用户*窗口显示用户列表，其中包含目前所选帐户的电子邮件地址。
-	
-3. 如果用户是帐户的成员，请从列表中选择用户名，或者从*操作*菜单中单击**管理用户**。
-
-    如果用户不是帐户的成员，请参阅[邀请用户](/docs/iam?topic=iam-iamuserinv#iamuserinv)。
-
-4. 选择 **Cloud Foundry 访问权**，然后选择组织。
-
-    这将列出该组织中可用空间的列表。
-
-5. 选择已供应 {{site.data.keyword.loganalysisshort}} 服务的空间。然后，从菜单操作中，选择**编辑空间角色**。
-
-6. 选择*审计员*。 
-
-    您可以选择 1 个或多个空间角色。以下所有角色均允许用户查看日志：*管理者*、*开发者*和*审计员*
-	
-7. 单击**保存角色**。
-
-
-
-### 为用户设置查看帐户域中日志的许可权
-{: #gs_step2b}
-
-
-要授予用户查看帐户日志的许可权，请完成以下步骤：
-
-1. 登录到 {{site.data.keyword.Bluemix_notm}} 控制台。
-
-    打开 Web 浏览器并启动 {{site.data.keyword.Bluemix_notm}}“仪表板”：[http://bluemix.net ![外部链接图标](../../../icons/launch-glyph.svg "外部链接图标")](http://bluemix.net){:new_window}
-	
-	使用用户标识和密码登录后，{{site.data.keyword.Bluemix_notm}} UI 将打开。
-
-2. 从菜单栏，单击**管理 > 帐户 > 用户**。 
-
-    *用户*窗口显示用户列表，其中包含目前所选帐户的电子邮件地址。
-	
-3. 如果用户是帐户的成员，请从列表中选择用户名，或者从*操作*菜单中单击**管理用户**。
-
-    如果用户不是帐户的成员，请参阅[邀请用户](/docs/iam?topic=iam-iamuserinv#iamuserinv)。
-
-4. 在**访问策略**部分，单击**分配访问权**，然后选择**分配对资源的访问权**。
-
-    这将打开*向用户分配资源访问权** 窗口。
-
-5. 输入策略的信息。下表列出定义策略所需的字段列表： 
-
-    <table>
-	  <caption>用于配置 IAM 策略的字段列表。</caption>
-	  <tr>
-	    <th>字段</th>
-		<th>值</th>
-	  </tr>
-	  <tr>
-	    <td>服务</td>
-		<td>*IBM Cloud Log Analysis*</td>
-	  </tr>	  
-	  <tr>
-	    <td>区域</td>
-		<td>您可以指定要授予用户使用日志的访问权的区域。分别选择一个或多个区域，或者选择**所有当前区域**以授予对所有区域的访问权。</td>
-	  </tr>
-	  <tr>
-	    <td>服务实例</td>
-		<td>选择*所有服务实例*。</td>
-	  </tr>
-	  <tr>
-	    <td>角色</td>
-		<td>选择一个或多个 IAM 角色。<br>有效角色为：*管理员*、*操作员*、*编辑者*和*查看者*。<br>有关每种角色所允许的操作的更多信息，请参阅 [IAM 角色](/docs/services/CloudLogAnalysis?topic=cloudloganalysis-security_ov#iam_roles)。</td>
-	  </tr>
-     </table>
-	
-6. 单击**分配**。
-	
-您所配置的策略适用于所选区域。 
-
-
-## 后续步骤 
-{: #gs_next_steps}
-
-**注：**用户必须在日志数据可用的云 Public 区域中访问 Kibana，才能查看和分析日志数据。 
-
-例如，要在美国南部区域启动 Kibana，请打开 Web 浏览器，然后输入以下 URL：
-
-```
-https://logging.ng.bluemix.net/
-```
-{: codeblock}
-
-
-有关如何在其他区域中启动 Kibana 的更多信息，请参阅[通过 Web 浏览器导航至 Kibana](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-launch#launch_Kibana_from_browser)。
-
-**注：**启动 Kibana 时，如果收到指示*不记名令牌无效*的消息，请检查您在帐户中的许可权。此消息指示您的用户标识无权查看日志。
-
-然后，定制 Kibana 以查看和分析日志数据。有关更多信息，请参阅[查看和分析日志](/docs/services/CloudLogAnalysis/kibana?topic=cloudloganalysis-analyzing_logs_Kibana#analyzing_logs_Kibana)。
-    
-
-
-
-
-
-
-
-
+|{{site.data.keyword.cloud_notm}} 中的用户角色|了解更多信息|
+|-----------------------------------------------------|------------------------------------------|
+|帐户所有者|[向用户授予许可权，使其成为 {{site.data.keyword.cloud_notm}} 帐户中服务的管理员](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-work_iam#admin_account)|
+|帐户中的平台服务管理员|[向用户授予许可权，使其成为 {{site.data.keyword.cloud_notm}} 帐户中服务的管理员](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-work_iam#admin_account)|
+|资源组中的平台服务管理员|[向用户授予许可权，使其成为资源组中服务的管理员](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-work_iam#admin_rg)|
+|帐户中的平台 DevOps 操作员|[向 DevOps 用户授予管理 {{site.data.keyword.cloud_notm}} 帐户中服务的许可权](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-work_iam#devops_account)|
+|资源组中的平台 DevOps 操作员|[向 DevOps 用户授予管理资源组中服务的许可权](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-work_iam#devops_rg)|
+|LogDNA 中的服务管理员|[授予在 LogDNA 中管理日志和配置警报的许可权](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-work_iam#admin_user_logdna)|
+|用户/开发者|[向用户授予在 LogDNA 中查看和管理日志的许可权](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-work_iam#user_logdna)|
+{: caption="表 2. {{site.data.keyword.cloud_notm}} 中的云角色" caption-side="top"}
 
 

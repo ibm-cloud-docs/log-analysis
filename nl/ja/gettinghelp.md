@@ -1,13 +1,12 @@
 ---
 
 copyright:
-  years: 2017, 2019
-
+  years:  2018, 2019
 lastupdated: "2019-03-06"
 
-keywords: IBM Cloud, logging
+keywords: LogDNA, IBM, Log Analysis, logging, help, support
 
-subcollection: cloudloganalysis
+subcollection: LogDNA
 
 ---
 
@@ -26,16 +25,13 @@ subcollection: cloudloganalysis
 # ヘルプとサポートの取得
 {: #gettinghelp}
 
-{{site.data.keyword.loganalysislong}} の使用について問題点や疑問点がある場合は、ヘルプ情報を検索したりフォーラムに質問を投稿したりできます。 サポート・チケットをオープンすることもできます。
+{{site.data.keyword.la_full_notm}} の使用について問題点や疑問点がある場合は、ヘルプ情報を検索したりフォーラムに質問を投稿したりできます。 サポート・チケットをオープンすることもできます。
 {:shortdesc}
 
-* [{{site.data.keyword.Bluemix_notm}} ステータス・ページ](https://developer.ibm.com/bluemix/support/#status){:new_window}にアクセスすると、{{site.data.keyword.Bluemix_notm}} が利用可能かどうかを確認することができます。
+* [{{site.data.keyword.cloud_notm}} ステータス・ページ](https://cloud.ibm.com/status?selected=status){:new_window}にアクセスすると、{{site.data.keyword.cloud_notm}} が利用可能かどうかを確認することができます。
 
-* フォーラムの情報を見て、他のユーザーも同じ問題を経験しているかどうかを調べることができます。 フォーラムを使用して質問する場合、質問にタグを付けて {{site.data.keyword.Bluemix_notm}} 開発チームの目につくようにしてください。
+* フォーラムの情報を見て、他のユーザーも同じ問題を経験しているかどうかを調べることができます。 フォーラムを使用して質問する場合、質問にタグを付けて {{site.data.keyword.cloud_notm}} 開発チームの目につくようにしてください。
 <!--Insert the appropriate Stack Overflow tag for your service for <service_keyword> in URL and text below:  -->
-  * {{site.data.keyword.loganalysisshort}} サービスを使用したアプリの開発やデプロイに関して技術上の質問がある場合は、質問を [Stack Overflow](http://stackoverflow.com/search?q=log-analysis+ibm-cloud){:new_window} に投稿し、質問には「ibm-cloud」と「log-analysis」のタグを付けてください。
-<!--Insert the appropriate dW Answers tag for your service for <service_keyword> in URL below:  -->
-  * サービスおよび開始手順についての質問の場合、[{{site.data.keyword.IBM_notm}} developerWorks dW Answers](https://developer.ibm.com/answers/topics/log-analysis/?smartspace=ibm-cloud){:new_window} フォーラムを使用してください。
+  * {{site.data.keyword.la_full_notm}} サービスに関して技術上の質問がある場合は、質問を [Stack Overflow](http://stackoverflow.com/search?q=log-analysis-with-logdna+ibm-cloud){:new_window} に投稿し、質問には「ibm-cloud」と「log-analysis-with-logdna」のタグを付けてください。
 
-* それでも問題を解決できない場合は、IBM サポート・チケットを開くことができます。 IBM サポート・チケットのオープン、またはサポート・レベルおよびチケットの重大度については、『[サポートへのお問い合わせ](/docs/get-support?topic=get-support-getting-customer-support#getting-customer-support)』を参照してください。
-
+* それでも問題を解決できない場合は、IBM サポート・チケットを開くことができます。 IBM サポート・チケットのオープンや、サポート・レベルとチケットの重大度については、[ サポートの利用](/docs/get-support?topic=get-support-getting-customer-support#getting-customer-support)を参照してください。

@@ -1,13 +1,12 @@
 ---
 
 copyright:
-  years: 2017, 2019
-
+  years:  2018, 2019
 lastupdated: "2019-03-06"
 
-keywords: IBM Cloud, logging
+keywords: LogDNA, IBM, Log Analysis, logging, help, support
 
-subcollection: cloudloganalysis
+subcollection: LogDNA
 
 ---
 
@@ -26,17 +25,15 @@ subcollection: cloudloganalysis
 # Obtendo ajuda e suporte
 {: #gettinghelp}
 
-Se você tiver problemas ou perguntas ao usar o {{site.data.keyword.loganalysislong}}, será possível obter ajuda procurando informações ou fazendo perguntas por meio de um fórum. Também é possível abrir um chamado de suporte.
+Se você tiver problemas ou perguntas ao usar o {{site.data.keyword.la_full_notm}}, será possível obter ajuda procurando informações ou fazendo perguntas por meio de um fórum. Também
+será possível abrir um chamado de suporte.
 {:shortdesc}
 
-* É possível verificar se o {{site.data.keyword.Bluemix_notm}} está disponível acessando a página de status do [{{site.data.keyword.Bluemix_notm}}](https://developer.ibm.com/bluemix/support/#status){:new_window}.
+* É possível verificar se o {{site.data.keyword.cloud_notm}} está disponível acessando a página de status do [{{site.data.keyword.cloud_notm}} ](https://cloud.ibm.com/status?selected=status){:new_window}.
 
 * Você pode revisar os fóruns para ver se outros usuários tiveram o mesmo problema. Ao usar os fóruns para fazer uma pergunta, marque a sua pergunta
-para que ela possa ser vista pelas equipes de desenvolvimento do {{site.data.keyword.Bluemix_notm}}.
+para que ela possa ser vista pelas equipes de desenvolvimento do {{site.data.keyword.cloud_notm}}.
 <!--Insert the appropriate Stack Overflow tag for your service for <service_keyword> in URL and text below:  -->
-  * Se você tiver questões técnicas sobre como desenvolver ou implementar um app com o serviço {{site.data.keyword.loganalysisshort}}, poste sua pergunta no [Stack Overflow](http://stackoverflow.com/search?q=log-analysis+ibm-cloud){:new_window} e identifique-a com "ibm-cloud" e "log-analysis".
-<!--Insert the appropriate dW Answers tag for your service for <service_keyword> in URL below:  -->
-  * Para perguntas sobre o serviço e instruções de introdução, use o fórum do [{{site.data.keyword.IBM_notm}} developerWorks dW Answers](https://developer.ibm.com/answers/topics/log-analysis/?smartspace=ibm-cloud){:new_window}.
+  * Se você tiver perguntas técnicas sobre o serviço {{site.data.keyword.la_full_notm}}, poste sua pergunta no [Stack Overflow](http://stackoverflow.com/search?q=log-analysis-with-logdna+ibm-cloud){:new_window} e marque sua pergunta com "ibm-cloud" e "log-analysis-with-logdna".
 
-* Se você ainda não puder resolver o problema, será possível abrir um chamado de suporte IBM. Para obter informações sobre como abrir um chamado de suporte IBM ou sobre níveis de suporte e severidades de chamado, consulte [Entrando em contato com o suporte](/docs/get-support?topic=get-support-getting-customer-support#getting-customer-support).
-
+* Se você ainda não puder resolver o problema, será possível abrir um chamado de suporte IBM. Para obter informações sobre como abrir um chamado de suporte IBM ou sobre níveis de suporte e severidades de chamado, consulte [Obtendo suporte](/docs/get-support?topic=get-support-getting-customer-support#getting-customer-support).
