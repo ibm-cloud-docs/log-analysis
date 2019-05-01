@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2019
-lastupdated: "2019-03-06"
+lastupdated: "2019-04-01"
 
 keywords: LogDNA, IBM, Log Analysis, logging, log sources
 
@@ -31,7 +31,7 @@ You can configure {{site.data.keyword.cloud}} log sources and on-premisses log s
 ## Platform container services
 {: #log_sources_kube}
 
-You can manage logs from the [{{site.data.keyword.containerlong_notm}}](/docs/containers?topic=containers-container_index#container_index) with {{site.data.keyword.la_full_notm}}.
+You can manage logs from the [{{site.data.keyword.containerlong_notm}}](/docs/containers?topic=containers-getting-started) with {{site.data.keyword.la_full_notm}}.
 
 | Tutorials for managing logs for the {{site.data.keyword.containerlong_notm}} |
 |---------------------------------------------------------------------------------------------------|

@@ -111,7 +111,7 @@ Use the following table to identify the service roles that you can grant a user 
 | `Export log data`                                                       | Manager </br>Writer </br>Reader                      |
 | `Configure user preferences in the LogDNA web UI`                       | Manager </br>Writer </br>Reader                      |
 | `View logs through the LogDNA web UI`                                   | Manager </br>Writer </br>Reader                      | 
-{: caption="Table 3. IAM user roles and actions" caption-side="top"}
+{: caption="Table 2. IAM user roles and actions" caption-side="top"}
 
 
 **Note:** The **manager** service role maps directly to the LogDNA admin role.
