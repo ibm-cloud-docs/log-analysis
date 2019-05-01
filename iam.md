@@ -100,7 +100,7 @@ Use the following table to identify the service roles that you can grant a user 
 | Actions                                                                 | {{site.data.keyword.cloud_notm}} Service Roles     | 
 |-------------------------------------------------------------------------|------------------------------------------------------|
 | `Add LogDNA log sources`                                                | Manager                                              |
-| `Manage ingestion keys through the logDNA web UI`                       | Manager                                              |
+| `Manage ingestion keys through the LogDNA web UI`                       | Manager                                              |
 | `Manage service keys`                                                   | Manager                                              |
 | `Archive logs`                                                          | Manager                                              |
 | `Manage parsing`                                                        | Manager                                              |
@@ -111,7 +111,6 @@ Use the following table to identify the service roles that you can grant a user 
 | `Export log data`                                                       | Manager </br>Writer </br>Reader                      |
 | `Configure user preferences in the LogDNA web UI`                       | Manager </br>Writer </br>Reader                      |
 | `View logs through the LogDNA web UI`                                   | Manager </br>Writer </br>Reader                      | 
-| `View ingestion keys through the logDNA web UI`                         | Manager </br>Writer </br>Reader                      |
 {: caption="Table 2. IAM user roles and actions" caption-side="top"}
 
 
