@@ -159,5 +159,3 @@ Complete the following steps to create a view:
 6. Optionally, attach an alert. A new section is displayed for you to configure the alert.
 
 7. Click **Save View**
-
-

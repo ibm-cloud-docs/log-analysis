@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2019
-lastupdated: "2019-03-06"
+lastupdated: "2019-04-02"
 
 keywords: LogDNA, IBM, Log Analysis, logging instance, provision
 
@@ -136,11 +136,11 @@ To provision an instance of {{site.data.keyword.la_full_notm}} through the comma
 
     NAME is the name of the instance
 
-    The value *logdna* is the name of the {{site.data.keyword.la_full_notm}} service in the {{site.data.keyword.cloud_notm}}
+    The value *logdna* is the name of the {{site.data.keyword.la_full_notm}} service in the {{site.data.keyword.cloud_notm}}.
 
-    SERVICE_PLAN_NAME is the type of plan. Valid values are *lite*, *7-days*, *14-days*, *30-days*
+    SERVICE_PLAN_NAME is the type of plan. Valid values are *lite*, *7-days*, *14-days*, *30-days*.
     
-    LOCATION is the region where the LogDNA instance is created. Valid value is *us-south*
+    LOCATION is the region where the LogDNA instance is created. Valid values are *us-south*, *eu-de*.
 
     For example, to provision an instance with the 7 days retention plan, run the following command:
 
@@ -149,28 +149,6 @@ To provision an instance of {{site.data.keyword.la_full_notm}} through the comma
     ```
     {: codeblock}
 
-5. Create a service key with **administrator** permissions to operate the instance. Run the [`ibmcloud resource service-key-create`](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_commands_resource#ibmcloud_resource_service_key_create) command:
 
-    ```
-    ibmcloud resource service-key-create NAME ROLE_NAME --instance-name SERVICE_INSTANCE_NAME
-    ```
-    {: codeblock}
-
-    Where
-
-    NAME is the name of the API key. You can name the API key like the {{site.data.keyword.la_full_notm}} instance to help you identify the API key later on.
-
-    ROLE_NAME is the role that defines the permissions that are enabled. Valid values are *editor*, *operator*, *administrator*
-
-    SERVICE_INSTANCE_NAME is the name of the instance in the {{site.data.keyword.cloud_notm}}
-
-    For example, to create an API key for the instance *logdna-instance-01* with *administrator* permissions on the service instance, run the following command:
-
-    ```
-    ibmcloud resource service-key-create logdna-instance-01 Administrator --instance-name logdna-instance-01
-    ```
-    {: pre}
-
-    The output from this command includes different values like the `crn` value of the instance and the LogDNA ingestion key.
 
 

@@ -4,9 +4,9 @@ copyright:
   years: 2019
 lastupdated: "2019-04-02"
 
-keywords: IBM Cloud, LogDNA, Activity Tracker, services
+keywords: LogDNA, IBM, Log Analysis, logging, services
 
-subcollection: logdnaat
+subcollection: LogDNA
 
 
 ---
@@ -44,7 +44,4 @@ The following table lists database services that send logs to {{site.data.keywor
 {: caption="List of database services that send events to {{site.data.keyword.at_full_notm}}" caption-side="top"} 
 
 These database services are enabled in the US-South region only.
-{: important} 
-
-
 

@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2019
-lastupdated: "2019-03-06"
+lastupdated: "2019-05-01"
 
 keywords: LogDNA, IBM, Log Analysis, logging, archive logs, COS, cloud object storage
 
@@ -135,7 +135,7 @@ To manage buckets, your user must be granted permissions to work with buckets on
 
 | Service                    | Roles                   | Action                             | 
 |----------------------------|-------------------------|------------------------------------|       
-| `Cloud Object Storage`     | Platform role: Viewer   | Allows the user to view all buckets and list the objects within them through the {site.data.keyword.Bluemix_notm}} UI. |
+| `Cloud Object Storage`     | Platform role: Viewer   | Allows the user to view all buckets and list the objects within them through the {{site.data.keyword.cloud_notm}} UI. |
 | `Cloud Object Storage`     | Service role: Manager   | Allows the user to make objects public.                                                       |
 | `Cloud Object Storage`     | Service roles: Manager </br>Writer | Allows the user to create and destroy buckets and objects.                         | 
 | `Cloud Object Storage`     | Service role: reader    | Allows the user to list and download objects.                                                 |
@@ -173,17 +173,17 @@ Complete the following steps to create a bucket:
     
     A Single Data Center will only distribute data across devices within a single site.
 
-    For more information, see [Select regions and endpoints](/docs/services/cloud-object-storage?topic=cloud-object-storage-endpoints#endpoints).
+    For more information, see [Select regions and endpoints](/docs/services/cloud-object-storage?topic=cloud-object-storage-endpoints).
 
 6. Choose the type of *Storage class*.
 
-    You can create buckets with different storage classes. Choose the storage class for your bucket based on your requirements to retrieve data. For more information, see [Use storage classes](/docs/services/cloud-object-storage?topic=cloud-object-storage-use-storage-classes#use-storage-classes).
+    You can create buckets with different storage classes. Choose the storage class for your bucket based on your requirements to retrieve data. For more information, see [Use storage classes](/docs/services/cloud-object-storage?topic=cloud-object-storage-classes).
 
     **Note:** It is not possible to change the storage class of a bucket once the bucket is created. If objects need to be reclassified, it is necessary to move the data to another bucket with the wanted storage class.
 
 7. Optionally, add a Key Protect Key to encrypt data at rest.
 
-    All objects are encrypted by default using randomly generated keys and an all-or-nothing-transform. While this default encryption model provides at-rest security, some workloads need to be in possession of the encryption keys used. For more information, see [Manage encryption](/docs/services/cloud-object-storage?topic=cloud-object-storage-manage-encryption#manage-encryption).
+    All objects are encrypted by default using randomly generated keys and an all-or-nothing-transform. While this default encryption model provides at-rest security, some workloads need to be in possession of the encryption keys used. For more information, see [Manage encryption](/docs/services/cloud-object-storage?topic=cloud-object-storage-encryption).
 
 
 
