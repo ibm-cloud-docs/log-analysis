@@ -1,0 +1,44 @@
+{:navgroup: .navgroup}
+{:topicgroup: .topicgroup}
+
+{: .toc subcollection="LogDNA" audience="service" arm="4158184" href="/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-getting-started#getting-started" path="services/Log-Analysis-with-LogDNA"}
+IBM Log Analysis with LogDNA
+
+    {: .navgroup id="learn"}
+    getting-started.md
+    overview.md
+    network.md
+    iam.md
+
+    {: .topicgroup}
+    Lernprogramme
+        tutorials/kube.md
+        tutorials/kube_reset_ingestion.md
+        tutorials/ubuntu.md
+    {: .navgroup-end}
+
+    {: .navgroup id="howto"}
+    provision.md
+    remove.md
+    config_agent.md
+    detach_agent.md
+    ingestion_key.md
+    log_sources.md
+    alerts.md
+    archive.md
+    export.md
+    ingest.md
+    launch.md
+    view_logs.md
+    work_iam.md
+    {: .navgroup-end}
+
+    {: .navgroup id="reference"}
+    [LogDNA-Produktseite](https://logdna.com/)
+    [LogDNA-Dokumentation](https://docs.logdna.com/docs)
+    [LogDNA-Blog](https://blog.logdna.com/)
+    {: .navgroup-end}
+
+    {: .navgroup id="help"}
+    gettinghelp.md
+    {: .navgroup-end}
