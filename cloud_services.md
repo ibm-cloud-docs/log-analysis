@@ -4,9 +4,9 @@ copyright:
   years: 2019
 lastupdated: "2019-04-02"
 
-keywords: IBM Cloud, LogDNA, Activity Tracker, services
+keywords: LogDNA, IBM, Log Analysis, logging, services
 
-subcollection: logdnaat
+subcollection: LogDNA
 
 
 ---
@@ -44,31 +44,4 @@ The following table lists database services that send logs to {{site.data.keywor
 {: caption="List of database services that send events to {{site.data.keyword.at_full_notm}}" caption-side="top"} 
 
 These database services are enabled in the US-South region only.
-
-
-
-## Platform network services
-{: #network}
-
-The following table lists network services that send logs:
-
-| Service     | Description | 
-|-------------|-------------|
-| [IBM Cloud Internet Services (CIS)](/docs/infrastructure/cis?topic=cis-about-ibm-cloud-internet-services-cis#about-ibm-cloud-internet-services-cis)| IBM Cloud Internet Services (CIS) provides a fast, highly performant, reliable, and secure internet service. | 
-{: caption="List of network services" caption-side="top"} 
-
-
-
-## Platform security services
-{: #security}
-
-The following table lists security Cloud services that send logs:
-
-| Service     | Description | 
-|-------------|-------------|
-| [{{site.data.keyword.cloudcerts_full_notm}}](/docs/services/certificate-manager?topic=certificate-manager-about-certificate-manager#about-certificate-manager) | You can use {{site.data.keyword.cloudcerts_short}} to manage the SSL certificates for your {{site.data.keyword.cloud_notm}}-based apps and services.  | 
-{: caption="List of security Cloud services that send events to {{site.data.keyword.cloudaccesstrailshort}}" caption-side="top"} 
-
-
-
 
