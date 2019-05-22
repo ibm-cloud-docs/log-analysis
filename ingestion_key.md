@@ -69,43 +69,6 @@ You can see the ingestion keys that have been created.
 **Note:** Only one ingestion key is active at once. 
 
 
-## Get the ingestion key through the {{site.data.keyword.cloud_notm}} CLI
-{: #ibm_cloud_cli}
-
-To get the ingestion key for an {{site.data.keyword.la_full_notm}} instance through the command line, complete the following steps:
-
-1. [Pre-requisite] Install the {{site.data.keyword.cloud_notm}} CLI.
-
-   For more information, see [Installing the {{site.data.keyword.cloud_notm}} CLI](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-about#about).
-
-   If the CLI is installed, continue with the next step.
-
-2. Log in to the region in the {{site.data.keyword.cloud_notm}} where the instance is running. Run the following command: [`ibmcloud login`](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_cli#ibmcloud_login)
-
-3. Set the resource group where the {{site.data.keyword.la_full_notm}} instance is running. Run the following command: [`ibmcloud target`](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_cli#ibmcloud_target) with the option `-g`.
-
-    By default, the `default` resource group is set.
-
-4. Get the name of the API key that is associated with the {{site.data.keyword.la_full_notm}} instance. Run the [`ibmcloud resource service-keys`](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_commands_resource#ibmcloud_resource_service_keys) command:
-
-    ```
-    ibmcloud resource service-keys
-    ```
-    {: codeblock}
-
-    Identify the service key that is associated to your instance.
-
-5. Get the ingestion key. Run the [`ibmcloud resource service-key`](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_commands_resource#ibmcloud_resource_service_key) command:
-
-    ```
-    ibmcloud resource service-key APIKEY_NAME
-    ```
-    {: codeblock}
-
-    Where APIKEY_NAME is the name of the API key
- 
-    The output from this command includes the field **ingestion_key** that contains the ingestion key for the instance.
-
 
 ## Reset the ingestion key 
 {: #reset}
