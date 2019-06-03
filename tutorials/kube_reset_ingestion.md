@@ -167,7 +167,7 @@ To configure your Kubernetes cluster to forward logs to your LogDNA instance, co
 4. Configure the LogDNA agent on every worker(node) of your Kubernetes cluster. Run the following command:
 
     ```
-    kubectl create -f https://repo.logdna.com/ibm/prod/logdna-agent-ds-us-south.yaml
+    kubectl create -f https://assets.us-south.logging.cloud.ibm.com/clients/logdna-agent-ds.yaml
     ```
     {: codeblock}
 
@@ -186,15 +186,13 @@ To configure your Kubernetes cluster to forward logs to your LogDNA instance, co
 ## Step 4: Launch the LogDNA web UI
 {: #kube_reset_step4}
 
-To launch IBM the Log Analysis with LogDNA dashboard through the {{site.data.keyword.cloud_notm}} UI, complete the following steps:
+You launch the web UI from the {{site.data.keyword.cloud_notm}} Observability dashboard. 
 
-1. Log in to your {{site.data.keyword.cloud_notm}} account.
+Complete the following steps to launch the web UI:
 
-    Click [{{site.data.keyword.cloud_notm}} dashboard ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com/login){:new_window} to launch the {{site.data.keyword.cloud_notm}} dashboard.
+1. [Log in to your {{site.data.keyword.cloud_notm}} account ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com/login){:new_window}.
 
-	After you log in with your user ID and password, the {{site.data.keyword.cloud_notm}} dashboard opens.
-
-2. In the navigation menu, select **Observability**. 
+2. Click the **Menu** icon ![Menu icon](../icons/icon_hamburger.svg) &gt; **Observability** to launch the Observability dashboard. 
 
 3. Select **Logging**. 
 
@@ -208,12 +206,13 @@ To launch IBM the Log Analysis with LogDNA dashboard through the {{site.data.key
 ## Step 5: View your logs
 {: #kube_reset_step5}
 
-From the LogDNA Web UI, you can view your logs as they pass through the system. You view logs by using log tailing. 
+From the LogDNA web UI, you can view your logs as they pass through the system. You view logs by using log tailing. 
 
-**Note:** With the **Free** service plan, you can only tail your latest logs.
+With the **Lite - Free** service plan, you can only tail your latest logs.
+{: note}
 
 
-
+https://docs.logdna.com/docs/view
 ## Next steps
 {: #kube_reset_next_steps}
 

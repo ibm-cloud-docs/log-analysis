@@ -39,7 +39,7 @@ The following table lists the endpoints per region:
 
 
 ## Ingestion endpoints
-{: #endpoints_api}
+{: #endpoints_ingestion}
 
 | Region                   |   Endpoint                                          |
 |--------------------------|-----------------------------------------------------|
