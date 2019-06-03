@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2019
-lastupdated: "2019-03-07"
+lastupdated: "2019-06-03"
 
 keywords: LogDNA, IBM, Log Analysis, logging, getting started
 
@@ -32,7 +32,7 @@ Use {{site.data.keyword.la_full}} to add log management capabilities to your {{s
 {: #getting-started_prereqs}
 
 * Read about {{site.data.keyword.la_full_notm}}. For more information, see [About {{site.data.keyword.la_full_notm}}](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-about#about).
-* Check the regions where the service is available. For more information, see [Regions](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-about#overview_regions).
+* Check the regions where the service is available. For more information, see [Regions](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-regions).
 * Get a user ID that is a member or an owner of an {{site.data.keyword.cloud_notm}} account. 
 
     To get an {{site.data.keyword.cloud_notm}} user ID, click [Registration ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com/login){:new_window}.

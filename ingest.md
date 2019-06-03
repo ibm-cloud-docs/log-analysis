@@ -62,17 +62,10 @@ curl "ENDPOINT/logs/ingest?QUERY_PARAMETERS" -u INGESTION_KEY: --header "Content
 
 Where 
 
-* ENDPOINT represents the entry point to the service. Each region has a different URL.
+* ENDPOINT represents the entry point to the service. Each region has a different URL. To get the endpoint for a location, see [Locations](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-regions).
 * QUERY_PARAMETERS are parameters that define the filtering criteria that are applied to the ingestion request.
 * LOG_LINES describe the set of log lines that you want to send. It is defined as an array of objects.
 * INGESTION_KEY is the key that you created in the previous step.
-
-The following table lists the endpoints per region:
-
-| Region         | Endpoint                                             | 
-|----------------|------------------------------------------------------|
-| `Us-south`       | `https://logs.us-south.logging.cloud.ibm.com`        |
-{: caption="Endpoints per region" caption-side="top"} 
 
 
 The following table lists the query parameters:

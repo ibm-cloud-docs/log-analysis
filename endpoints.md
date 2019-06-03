@@ -27,6 +27,8 @@ subcollection: logdnaat
 The following table lists the endpoints per region:
 {:shortdesc}
 
+## API endpoints
+{: #endpoints_api}
 
 | Region                   |   Endpoint                                         |
 |--------------------------|----------------------------------------------------|
@@ -36,5 +38,13 @@ The following table lists the endpoints per region:
 {: caption="Endpoints per region" caption-side="top"} 
 
 
+## Ingestion endpoints
+{: #endpoints_api}
 
+| Region                   |   Endpoint                                          |
+|--------------------------|-----------------------------------------------------|
+| `Dallas (us-south)`      | `https://logs.us-south.logging.cloud.ibm.com`       |
+| `Frankfurt (eu-de)`      | `https://logs.eu-de.logging.cloud.ibm.com`          |
+| `Tokyo (jp-tok)`         | `https://logs.jp-tok.logging.cloud.ibm.com`         |
+{: caption="Endpoints per region" caption-side="top"} 
 
