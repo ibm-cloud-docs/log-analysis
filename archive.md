@@ -34,16 +34,16 @@ You archive logs from an {{site.data.keyword.la_full_notm}} instance into a buck
 
 Logs are automatically archived once a day in a compressed format **(.json.gz)**. Each line preserves its metadata.
 
-Logs are archived within 24-48 hours after you save the configuration. 
+Logs are archived 24 - 48 hours after you save the configuration. 
 
-The {{site.data.keyword.cos_full_notm}} instance is provisioned within the context of a resource group. The {{site.data.keyword.la_full_notm}} instance is also provisioned within the context of a resource group. Both instances can be grouped under the same resource group or in different ones. 
+The {{site.data.keyword.cos_full_notm}} instance is provisioned in the context of a resource group. The {{site.data.keyword.la_full_notm}} instance is also provisioned in the context of a resource group. Both instances can be grouped under the same resource group or in different ones. 
 
 {{site.data.keyword.la_full_notm}} uses a service ID to communicate with the {{site.data.keyword.cos_full_notm}} service.
 
 * The service ID that you create for an {{site.data.keyword.cos_full_notm}} instance is used by the {{site.data.keyword.la_full_notm}} to authenticate and access the {{site.data.keyword.cos_full_notm}} instance. 
-* You can assign specific access policies to the service ID that restrict permissions on the {{site.data.keyword.cos_full_notm}} instance. Restrict the service ID to only have writing permissions on the bucket where you plan to archive the logs.
+* You can assign specific access policies to the service ID that restrict permissions on the {{site.data.keyword.cos_full_notm}} instance. Restrict the service ID to have only writing permissions on the bucket where you plan to archive the logs.
 
-The following figure shows a high-level view of the different components that are integrated when archiving logs:
+The following figure shows a high-level view of the different components that are integrated when you archive logs:
 
 ![High-level view archiving logs](images/archive.png "High-level view archiving logs")
 
@@ -58,7 +58,7 @@ Complete the following steps to archive an {{site.data.keyword.la_full_notm}} in
 
 As an administrator of the {{site.data.keyword.cos_full_notm}} service, you must be able to provision instances of the service, grant other users permissions to work with these instances, and create service IDs. 
 
-There are different ways in which you can grant a user permission to become an editor of the {{site.data.keyword.cos_full_notm}} service:
+You can grant a user permissions to become an editor of the {{site.data.keyword.cos_full_notm}} service:
 
 * As administrator of the service in the account, the user must have an IAM policy for the {{site.data.keyword.cos_full_notm}} service with the platform role *Administrator*. You must assign this user access to an individual resource in the account. 
 
@@ -81,11 +81,11 @@ Complete the following steps to assign a user administrator role to the {{site.d
 2. From the row for the user that you want to assign access, select the **Actions** menu, and then click **Assign access**.
 3. Select **Assign access within a resource group**.
 4. Select a resource group.
-5. If the user does not have a role already granted for the selected resource group, choose a role for the **Assign access to a resource group** field. 
+5. If the user does not have a role that is already granted for the selected resource group, choose a role for the **Assign access to a resource group** field. 
 
     Depending on the role that you select, the user can view the resource group on their dashboard, edit the resource group name, or manage user access to the group. 
     
-    You can select **No access**, if you want the user to only have access to the {{site.data.keyword.la_full_notm}} service in the resource group.
+    You can select **No access**, if you want the user to have only access to the {{site.data.keyword.la_full_notm}} service in the resource group.
 
 6. Select **Cloud Object Storage**.
 7. Select the platform role **Administrator**.
@@ -100,11 +100,9 @@ Complete the following steps to assign a user administrator role to the {{site.d
 
 Complete the following steps to provision an {{site.data.keyword.cos_full_notm}} instance:
 
-1. Log in to your {{site.data.keyword.cloud_notm}} account.
+1. [Log in to your {{site.data.keyword.cloud_notm}} account ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com/login){:new_window}.
 
-    Click [{{site.data.keyword.cloud_notm}} dashboard ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com/login){:new_window} to launch the {{site.data.keyword.cloud_notm}} dashboard.
-
-	After you log in with your user ID and password, the {{site.data.keyword.cloud_notm}} UI opens.
+	After you log in, the {{site.data.keyword.cloud_notm}} UI opens.
 
 2. Click **Catalog**. The list of the services that are available in {{site.data.keyword.cloud_notm}} opens.
 
@@ -161,15 +159,15 @@ Complete the following steps to create a bucket:
 
     You can use as part of the bucket name your {{site.data.keyword.la_full_notm}} instance name. For example, for an instance with name *logdna-1*, you can use *accountN-logdna-1* as your bucket name.
 
-    You will need this name to configure archiving through the {{site.data.keyword.la_full_notm}} web UI.
+    You need this name to configure archiving through the {{site.data.keyword.la_full_notm}} web UI.
 
 5. Choose the type of resiliency and a location where you would like your data to be physically stored.
 
     Resiliency refers to the scope and scale of the geographic area across which your data is distributed. 
     
-    Cross Region resiliency will spread your data across several metropolitan areas.
+    Cross Region resiliency spreads your data across several metropolitan areas.
     
-    Regional resiliency will spread data across a single metropolitan area. 
+    Regional resiliency spreads data across a single metropolitan area. 
     
     A Single Data Center will only distribute data across devices within a single site.
 
@@ -183,7 +181,7 @@ Complete the following steps to create a bucket:
 
 7. Optionally, add a Key Protect Key to encrypt data at rest.
 
-    All objects are encrypted by default using randomly generated keys and an all-or-nothing-transform. While this default encryption model provides at-rest security, some workloads need to be in possession of the encryption keys used. For more information, see [Manage encryption](/docs/services/cloud-object-storage?topic=cloud-object-storage-encryption).
+    All objects are encrypted by default by using randomly generated keys and an all-or-nothing-transform. While this default encryption model provides at-rest security, some workloads need to be in possession of the encryption keys used. For more information, see [Manage encryption](/docs/services/cloud-object-storage?topic=cloud-object-storage-encryption).
 
 
 
@@ -194,7 +192,7 @@ A service ID identifies a service similar to how a user ID identifies a user. Se
 
 You must create a service ID for your {{site.data.keyword.cos_full_notm}} instance. This service ID is used by the {{site.data.keyword.la_full_notm}} instance to authenticate with your {{site.data.keyword.cos_full_notm}} instance. 
 
-You must assign specific access policies to the service ID that restrict permissions for using specific services, or even combine permissions for accessing different services. For example, to restrict access to a single bucket, ensure that the service ID doesn't have any instance level policies using either the console or CLI.
+You must assign specific access policies to the service ID that restrict permissions for using specific services, or even combine permissions for accessing different services. For example, to restrict access to a single bucket, ensure that the service ID doesn't have any instance level policies by using either the console or CLI.
 
 
 Complete the following steps to create a service ID with writing permissions for the {{site.data.keyword.cos_full_notm}} instance:
@@ -224,10 +222,10 @@ For the service ID that you just created, click **View credentials**. You can se
 * Copy the resource instance ID. This is the value set for the field **resource_instance_id**.
 
 
-## Step 5. Restrict the service ID to only have writing permissions for the bucket
+## Step 5. Restrict the service ID to have only writing permissions for the bucket
 {: #archiving_step5}
 
-If you want to restrict the service ID to only have writing permissions for a bucket, complete the following steps:
+If you want to restrict the service ID to have only writing permissions for a bucket, complete the following steps:
 
 1. Read the information for the service ID and write down the value of the **iam_apikey_name** field and the **iam_apikey_name** field. 
 
@@ -255,11 +253,9 @@ An endpoint defines where to look for a bucket. There are different endpoints de
 
 Complete the following steps to obtain the endpoint for your bucket:
 
-1. Log in to your {{site.data.keyword.cloud_notm}} account.
+1. [Log in to your {{site.data.keyword.cloud_notm}} account ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com/login){:new_window}.
 
-    Click [{{site.data.keyword.cloud_notm}} dashboard ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com/login){:new_window} to launch the {{site.data.keyword.cloud_notm}} dashboard.
-
-	After you log in with your user ID and password, the {{site.data.keyword.cloud_notm}} Dashboard opens.
+	After you log, the {{site.data.keyword.cloud_notm}} Dashboard opens.
 
 2. From the Dashboard, select the {{site.data.keyword.cos_full_notm}} instance where you plan to create the bucket.
 
@@ -294,7 +290,7 @@ Complete the following steps to assign a user permission to archive logs:
 
     Depending on the role that you select, the user can view the resource group on their dashboard, edit the resource group name, or manage user access to the group. 
     
-    You can select **No access**, if you want the user to only have access to the {{site.data.keyword.la_full_notm}} service in the resource group.
+    You can select **No access**, if you want the user to have only access to the {{site.data.keyword.la_full_notm}} service in the resource group.
 
 6. Select **IBM Log Analysis with LogDNA**.
 7. Select the platform role **Viewer**.
