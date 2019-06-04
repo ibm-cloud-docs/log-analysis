@@ -60,8 +60,8 @@ Your {{site.data.keyword.IBM_notm}}ID must have assigned IAM policies for each o
 
 | Resource                             | Scope of the access policy | Role    | Information                  |
 |--------------------------------------|----------------------------|---------|------------------------------|
-| Resource group **Default**           |  Resource group            | Viewer  | This policy is required to allow the user to see service instances in the Default resource group.    |
-| {{site.data.keyword.la_full_notm}} service |  Resource group            | Editor  | This policy is required to allow the user to provision and administer the {{site.data.keyword.la_full_notm}} service in the Default resource group.   |
+| Resource group **default**           |  Resource group            | Viewer  | This policy is required to allow the user to see service instances in the Default resource group.|
+| {{site.data.keyword.la_full_notm}} service |  Resource group            | Editor  | This policy is required to allow the user to provision and administer the {{site.data.keyword.la_full_notm}} service in the default resource group.   |
 | Kubernetes cluster instance          |  Resource                 | Editor  | This policy is required to configure the secret and the LogDNA agent in the Kubernetes cluster. |
 {: caption="Table 1. List of IAM policies required to complete the tutorial" caption-side="top"} 
 

@@ -37,13 +37,11 @@ Alternatively, {{site.data.keyword.la_full_notm}} offers a `Lite` plan that you 
 
 To provision an instance from the Observability dashboard in the {{site.data.keyword.cloud_notm}}, complete the following steps:
 
-1. Log in to your {{site.data.keyword.cloud_notm}} account.
+1. [Log in to your {{site.data.keyword.cloud_notm}} account ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com/login){:new_window}.
 
-    The {{site.data.keyword.cloud_notm}} dashboard can be found at: [{{site.data.keyword.cloud_notm}} dashboard ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com/login){:new_window}.
+	After you log in, the {{site.data.keyword.cloud_notm}} UI opens.
 
-	After you log in with your user ID and password, the {{site.data.keyword.cloud_notm}} UI opens.
-
-2. Go to the menu icon ![menu icon](../../icons/icon_hamburger.svg). Then, select **Observability** to access the *Observability* dashboard.
+2. Click the **Menu** icon ![Menu icon](../../icons/icon_hamburger.svg) &gt; **Observability** to access the *Observability* dashboard.
 
 3. Select **Logging**, then click **Create instance**. 
 
@@ -76,11 +74,9 @@ Next, configure a log source by adding a LogDNA agent. This agent is responsible
 
 To provision an instance of {{site.data.keyword.la_full_notm}} through the {{site.data.keyword.cloud_notm}} catalog, complete the following steps:
 
-1. Log in to your {{site.data.keyword.cloud_notm}} account.
+1. [Log in to your {{site.data.keyword.cloud_notm}} account ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com/login){:new_window}.
 
-    Click [{{site.data.keyword.cloud_notm}} dashboard ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com/login){:new_window} to launch the {{site.data.keyword.cloud_notm}} dashboard.
-
-	After you log in with your user ID and password, the {{site.data.keyword.cloud_notm}} UI opens.
+	After you log in, the {{site.data.keyword.cloud_notm}} UI opens.
 
 2. Click **Catalog**. The list of the services that are available in {{site.data.keyword.cloud_notm}} opens.
 

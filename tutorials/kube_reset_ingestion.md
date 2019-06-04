@@ -212,11 +212,10 @@ With the **Lite - Free** service plan, you can only tail your latest logs.
 {: note}
 
 
-https://docs.logdna.com/docs/view
 ## Next steps
 {: #kube_reset_next_steps}
 
-  If you want to [filter cluster logs](https://docs.logdna.com/docs/filters), [search cluster logs](https://docs.logdna.com/docs/search), [define views](https://docs.logdna.com/docs/views), and [configure alerts](https://docs.logdna.com/docs/alerts), you must upgrade the {{site.data.keyword.la_full_notm}} plan to a paid plan.
+  If you want to [filter cluster logs](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-view_logs#view_logs_step5), [search cluster logs](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-view_logs#view_logs_step6), [define views](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-view_logs#view_logs_step7), and [configure alerts](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-alerts), you must upgrade the {{site.data.keyword.la_full_notm}} plan to a paid plan.
 
 
 

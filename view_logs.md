@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2019
-lastupdated: "2019-03-06"
+lastupdated: "2019-06-03"
 
 keywords: LogDNA, IBM, Log Analysis, logging, logs
 
@@ -36,12 +36,15 @@ Complete the following steps to view logs:
 ## Step 1. Grant IAM policies to a user to view logs
 {: #view_logs_step1}
 
-**Note:** You must be an administrator of the {{site.data.keyword.la_full_notm}} service, an administrator of the {{site.data.keyword.la_full_notm}} instance, or have account IAM permissions to grant other users policies.
+You must grant permissions to users in your account to be able to launch the web UI and view logs.
+
+You must be an administrator of the {{site.data.keyword.la_full_notm}} service, an administrator of the {{site.data.keyword.la_full_notm}} instance, or have account IAM permissions to grant other users policies.
+{: note}
 
 The following table lists the minimum policies that a user must have to be able to launch the {{site.data.keyword.la_full_notm}} Web UI, and view logs:
 
-| Service                        | Role                      | Permission granted            |
-|--------------------------------|---------------------------|-------------------------------|  
+| Service                               | Role                      | Permission granted            |
+|---------------------------------------|---------------------------|-------------------------------|  
 | `{{site.data.keyword.la_full_notm}} ` | Platform role: Viewer     | Allows the user to view the list of service instances in the Observability Logging dashboard. |
 | `{{site.data.keyword.la_full_notm}} ` | Service role: Reader      | Allows the user to launch the Web UI and view logs in the Web UI.  |
 {: caption="Table 1. IAM policies" caption-side="top"} 
@@ -54,13 +57,11 @@ For more information on how to configure these policies for a user, see [Grantin
 
 To launch the {{site.data.keyword.la_full_notm}}  UI through the {{site.data.keyword.cloud_notm}} UI, complete the following steps:
 
-1. Log in to your {{site.data.keyword.cloud_notm}} account.
+1. [Log in to your {{site.data.keyword.cloud_notm}} account ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com/login){:new_window}.
 
-    Click [{{site.data.keyword.cloud_notm}} dashboard ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com/login){:new_window} to launch the {{site.data.keyword.cloud_notm}} dashboard.
+	After you log in, the {{site.data.keyword.cloud_notm}} *Dashboard* opens.
 
-	After you log in with your user ID and password, the {{site.data.keyword.cloud_notm}} *Dashboard* opens.
-
-2. In the navigation menu, select **Observability**. 
+2. Click the **Menu** icon ![Menu icon](../icons/icon_hamburger.svg) &gt; **Observability**. 
 
 3. Select **Logging**. 
 

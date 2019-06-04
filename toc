@@ -25,7 +25,6 @@ IBM Log Analysis with LogDNA
     config_agent.md
     detach_agent.md
     ingestion_key.md
-    log_sources.md
     alerts.md
     archive.md
     export.md
