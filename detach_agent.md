@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2019
-lastupdated: "2019-03-06"
+lastupdated: "2019-06-03"
 
 keywords: LogDNA, IBM, Log Analysis, logging, detach config agent
 

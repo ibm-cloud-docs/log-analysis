@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2019
-lastupdated: "2019-03-06"
+lastupdated: "2019-06-03"
 
 keywords: LogDNA, IBM, Log Analysis, logging instance, delete
 
@@ -47,11 +47,9 @@ Then, delete the instance from the {{site.data.keyword.cloud_notm}} Dashboard.
 
 To remove an instance of {{site.data.keyword.la_full_notm}} by using the {{site.data.keyword.cloud_notm}} UI, complete the following steps:
 
-1. Log in to your {{site.data.keyword.cloud_notm}} account.
+1. [Log in to your {{site.data.keyword.cloud_notm}} account ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com/login){:new_window}.
 
-    Click [{{site.data.keyword.cloud_notm}} dashboard ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com/login){:new_window} to launch the {{site.data.keyword.cloud_notm}} dashboard.
-
-	After you log in with your user ID and password, the {{site.data.keyword.cloud_notm}} UI opens.
+	After you log in, the {{site.data.keyword.cloud_notm}} UI opens.
 
 2. Go to the menu icon ![menu icon](../../icons/icon_hamburger.svg) &gt; **Observability** to access the *Observability* Dashboard.
 

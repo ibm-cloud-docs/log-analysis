@@ -282,7 +282,7 @@ The following table lists the policies that a user must have to configure archiv
 | `{{site.data.keyword.la_full_notm}}` | Service role: Manager      | Allows the user to launch the web UI and view logs in the web UI.                             |
 {: caption="Table 2. IAM policies" caption-side="top"} 
 
-For more information on how to configure these policies for a user, see [Granting permissions to a user to view logs in LogDNA](/docs/services/Log-Analysis-with-LogDNA/work_iam.html#user_logdna).
+For more information on how to configure these policies for a user, see [Granting permissions to a user to view logs in LogDNA](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-work_iam#user_logdna).
 
 Complete the following steps to assign a user permission to archive logs: 
 
@@ -309,7 +309,7 @@ Complete the following steps to assign a user permission to archive logs:
 
 Complete the following steps to configure archiving of your {{site.data.keyword.la_full_notm}} instance into a COS bucket:
 
-1. Launch the {{site.data.keyword.la_full_notm}} web UI. [Learn more](/docs/services/Log-Analysis-with-LogDNA/view_logs.html#view_logs_step2).
+1. [Launch the {{site.data.keyword.la_full_notm}} web UI](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-view_logs#view_logs_step2).
 
 2. Select the **Configuration** icon. Then select **Archiving**. 
 

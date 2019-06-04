@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2019
-lastupdated: "2019-03-06"
+lastupdated: "2019-06-03"
 
 keywords: LogDNA, IBM, Log Analysis, logging, export logs
 
@@ -61,9 +61,9 @@ Complete the following steps to export logs programmatically:
 
     **Note:** You must have **manager** role for the {{site.data.keyword.la_full_notm}} instance or service to complete this step. For more information, see [Granting permissions to manage logs and configure alerts in LogDNA](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-work_iam#admin_user_logdna).
 
-    1. Launch the {{site.data.keyword.la_full_notm}} web UI. For more information, see [Go to to the {{site.data.keyword.la_full_notm}} web UI](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-view_logs#view_logs_step2).
+    1. [Launch the {{site.data.keyword.la_full_notm}} web UI](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-view_logs#view_logs_step2).
 
-    2. Select the **Configuration** icon ![Configuration icon](images/admin.png). Then, select **Organization**. 
+    2. Select the **Configuration** icon ![Configuration icon](images/admin.png) &gt; **Observability**. 
 
     3. Select **API keys**.
 
@@ -82,16 +82,9 @@ Complete the following steps to export logs programmatically:
 
     Where 
 
-    * ENDPOINT represents the entry point to the service. Each region has a different URL.
+    * ENDPOINT represents the entry point to the service. Each region has a different URL. To get the endpoint for a location, see [API endpoints](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-endpoints#endpoints_api).
     * QUERY_PARAMETERS are parameters that define the filtering criteria that is applied to the export request.
     * SERVICE_KEY is the service key that you created in the previous step.
-
-The following table lists the endpoints per region:
-
-| Region         | Endpoint                                             | 
-|----------------|------------------------------------------------------|
-| `Us-south`       | `https://api.us-south.logging.cloud.ibm.com `        |
-{: caption="Endpoints per region" caption-side="top"} 
 
 
 The following table lists the query parameters that you can set:

@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2019
-lastupdated: "2019-03-06"
+lastupdated: "2019-06-03"
 
 keywords: LogDNA, IBM, Log Analysis, logging, ingestion key
 
@@ -38,13 +38,9 @@ The ingestion key is a security key that you must use to configure LogDNA agents
 
 To get the ingestion key for an {{site.data.keyword.la_full_notm}} instance by using the {{site.data.keyword.cloud_notm}} UI, complete the following steps:
 
-1. Log in to your {{site.data.keyword.cloud_notm}} account.
+1. [Log in to your {{site.data.keyword.cloud_notm}} account ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com/login){:new_window}.
 
-    Click [{{site.data.keyword.cloud_notm}} dashboard ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com/login){:new_window} to launch the {{site.data.keyword.cloud_notm}} dashboard.
-
-	After you log in with your user ID and password, the {{site.data.keyword.cloud_notm}} UI opens.
-
-2. In the navigation menu, select **Observability**. 
+2. Go to the Menu icon ![Menu icon](../icons/icon_hamburger.svg) &gt; **Observability**. 
 
 3. Select **Logging**. The {{site.data.keyword.la_full_notm}} dashboard opens. You can see the list of logging instances that are available on {{site.data.keyword.cloud_notm}}.
 
@@ -58,15 +54,13 @@ To get the ingestion key for an {{site.data.keyword.la_full_notm}} instance by u
 
 To get the ingestion key for an {{site.data.keyword.la_full_notm}} instance by using the {{site.data.keyword.la_full_notm}} Web UI, complete the following steps:
 
-1. Launch the {{site.data.keyword.la_full_notm}} web UI. For more information, see [Launching the {{site.data.keyword.la_full_notm}} Web UI](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-view_logs#view_logs_step2).
+1. [Launch the {{site.data.keyword.la_full_notm}} web UI](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-view_logs#view_logs_step2).
 
-2. Select the **Configuration** icon. Then select **Organization**. 
+2. Click the **Configuration** icon ![Configuration icon](images/admin.png) &gt; **Organization**. 
 
-3. Select **API keys**.
+3. Select **API keys**. 
 
-You can see the ingestion keys that have been created. 
-
-**Note:** Only one ingestion key is active at once. 
+You can see the ingestion keys that are enabled. 
 
 
 
@@ -77,13 +71,13 @@ If the ingestion key is compromised or you have a policy to renew it after a num
 
 To renew the ingestion key for an {{site.data.keyword.la_full_notm}} instance by using the {{site.data.keyword.la_full_notm}} Web UI, complete the following steps:
 
-1. Launch the {{site.data.keyword.la_full_notm}} web UI. For more information, see [Launching the {{site.data.keyword.la_full_notm}} web UI](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-view_logs#view_logs_step2).
+1. [Launch the {{site.data.keyword.la_full_notm}} web UI](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-view_logs#view_logs_step2).
 
-2. Select the **Configuration** icon. Then select **Organization**. 
+2. Click the **Configuration** icon ![Configuration icon](images/admin.png) &gt; **Organization**. 
 
 3. Select **API keys**.
 
-    You can see the ingestion keys that have been created. 
+    You can see the ingestion keys that are enabled. 
 
 4. Select **Generate Ingestion Key**.
 
@@ -91,7 +85,10 @@ To renew the ingestion key for an {{site.data.keyword.la_full_notm}} instance by
 
 5. Delete the old ingestion key. Click **delete**.
 
-**Note:** After you reset the ingestion key, you must update the ingestion key for any log sources that you have configured to forward logs to this {{site.data.keyword.la_full_notm}} instance.
+After you reset the ingestion key, you must update the ingestion key for any log sources that you have configured to forward logs to this {{site.data.keyword.la_full_notm}} instance.
+{: important}
+
+For example, see [Resetting the ingestion key that is used by a Kubernetes cluster](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-kube_reset).
 
 
 

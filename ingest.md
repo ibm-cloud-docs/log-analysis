@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2019
-lastupdated: "2019-03-06"
+lastupdated: "2019-06-03"
 
 keywords: LogDNA, IBM, Log Analysis, logging, ingestion 
 
@@ -37,17 +37,15 @@ Complete the following steps to send logs programmatically:
 
 Complete the following steps to get the ingestion key:
     
-1. Launch the {{site.data.keyword.la_full_notm}} web UI. For more information, see [Go to to the {{site.data.keyword.la_full_notm}} web UI](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-view_logs#view_logs_step2).
+1. [Launch the {{site.data.keyword.la_full_notm}} web UI](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-view_logs#view_logs_step2).
 
-2. Select the **Configuration** icon ![Configuration icon](images/admin.png). Then, select **Organization**. 
+2. Click the **Configuration** icon ![Configuration icon](images/admin.png) &gt; **Organization**. 
 
 3. Select **API keys**.
 
     You can see the ingestion keys that have been created. 
 
-4. Use an existing ingestion key or click **Generate Ingestion Key** to create a new one.
-
-    A new key is added to the list. Copy the key.
+4. Copy a key. You can use an existing ingestion key or click **Generate Ingestion Key** to create a new one. When you generate a key, the key is added to the list. 
 
 
 ## Step 2. Send logs
@@ -62,17 +60,10 @@ curl "ENDPOINT/logs/ingest?QUERY_PARAMETERS" -u INGESTION_KEY: --header "Content
 
 Where 
 
-* ENDPOINT represents the entry point to the service. Each region has a different URL.
+* ENDPOINT represents the entry point to the service. Each region has a different URL. To get the endpoint for a location, see [Ingestion endpoints](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-endpoints#endpoints_ingestion).
 * QUERY_PARAMETERS are parameters that define the filtering criteria that are applied to the ingestion request.
 * LOG_LINES describe the set of log lines that you want to send. It is defined as an array of objects.
 * INGESTION_KEY is the key that you created in the previous step.
-
-The following table lists the endpoints per region:
-
-| Region         | Endpoint                                             | 
-|----------------|------------------------------------------------------|
-| `Us-south`       | `https://logs.us-south.logging.cloud.ibm.com`        |
-{: caption="Endpoints per region" caption-side="top"} 
 
 
 The following table lists the query parameters:

@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2019
-lastupdated: "2019-04-02"
+lastupdated: "2019-06-03"
 
 keywords: LogDNA, IBM, Log Analysis, logging instance, provision
 
@@ -27,7 +27,7 @@ subcollection: LogDNA
 Before you can monitor and manage log data with {{site.data.keyword.la_full_notm}}, you must first provision an instance of the service in {{site.data.keyword.cloud_notm}}.
 {:shortdesc}
 
-To provision an {{site.data.keyword.la_full_notm}} instance in a Public Cloud region, you must select the service plan that is associated with the instance, the region where your logs are collected, and the plan that determines the retention period for your logs. You can choose from 7, 14, or 30-day retention periods.
+To provision an {{site.data.keyword.la_full_notm}} instance in a Public Cloud region, you must select the service plan that is associated with the instance, the location where  logs are collected, and the plan that determines the retention period for your logs. You can choose from 7, 14, or 30-day retention periods.
 
 Alternatively, {{site.data.keyword.la_full_notm}} offers a `Lite` plan that you can use to view your logs as they pass through the system. You can view logs by using log tailing. You can also design filters to prepare for upgrading to a longer retention period plan. This plan has a 0-day retention period.
 
@@ -37,31 +37,31 @@ Alternatively, {{site.data.keyword.la_full_notm}} offers a `Lite` plan that you 
 
 To provision an instance from the Observability dashboard in the {{site.data.keyword.cloud_notm}}, complete the following steps:
 
-1. Log in to your {{site.data.keyword.cloud_notm}} account.
+1. [Log in to your {{site.data.keyword.cloud_notm}} account ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com/login){:new_window}.
 
-    The {{site.data.keyword.cloud_notm}} dashboard can be found at: [{{site.data.keyword.cloud_notm}} dashboard ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com/login){:new_window}.
+	After you log in, the {{site.data.keyword.cloud_notm}} UI opens.
 
-	After you log in with your user ID and password, the {{site.data.keyword.cloud_notm}} UI opens.
-
-2. Go to the menu icon ![menu icon](../../icons/icon_hamburger.svg). Then, select **Observability** to access the *Observability* dashboard.
+2. Click the **Menu** icon ![Menu icon](../../icons/icon_hamburger.svg) &gt; **Observability** to access the *Observability* dashboard.
 
 3. Select **Logging**, then click **Create instance**. 
 
 4. Enter a name for the service instance.
 
-5. Select a resource group. 
+5. Select the [location](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-regions) where you plan to provision the instance. 
 
-    By default, the **Default** resource group is set.
+6. Select a resource group. 
+
+    By default, the **default** resource group is set.
 
     **Note:** If you are not able to select a resource group, check that you have editing permissions on the resource group where you want to provision the instance.
 
-6. Select the `Lite` service plan. 
+7. Select the `Lite` service plan. 
 
     By default, the lite plan is set.
 
     For more information about other service plans, see [Pricing plans](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-about#overview_pricing_plans).
 
-7. Click **Create**.
+8. Click **Create**.
 
 After you provision an instance, the *Logging* dashboard opens. 
 
@@ -74,11 +74,9 @@ Next, configure a log source by adding a LogDNA agent. This agent is responsible
 
 To provision an instance of {{site.data.keyword.la_full_notm}} through the {{site.data.keyword.cloud_notm}} catalog, complete the following steps:
 
-1. Log in to your {{site.data.keyword.cloud_notm}} account.
+1. [Log in to your {{site.data.keyword.cloud_notm}} account ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com/login){:new_window}.
 
-    Click [{{site.data.keyword.cloud_notm}} dashboard ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com/login){:new_window} to launch the {{site.data.keyword.cloud_notm}} dashboard.
-
-	After you log in with your user ID and password, the {{site.data.keyword.cloud_notm}} UI opens.
+	After you log in, the {{site.data.keyword.cloud_notm}} UI opens.
 
 2. Click **Catalog**. The list of the services that are available in {{site.data.keyword.cloud_notm}} opens.
 
@@ -86,21 +84,23 @@ To provision an instance of {{site.data.keyword.la_full_notm}} through the {{sit
 
 4. Click the **{{site.data.keyword.la_full_notm}}** tile. 
 
-5. Enter a name for the service instance.
+5. Select the [location](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-regions) where you plan to provision the instance. 
 
-6. Select a resource group. 
+6. Enter a name for the service instance.
+
+7. Select a resource group. 
 
     By default, the **Default** resource group is set.
 
     **Note:** If you are not able to select a resource group, check that you have editing permissions on the resource group where you want to provision the instance.
 
-7. Select the `Lite` service plan. 
+8. Select the `Lite` service plan. 
 
     By default, the lite plan is set.
 
     For more information about other service plans, see [Pricing plans](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-about#overview_pricing_plans).
 
-8. Click **Create**.
+9. Click **Create**.
 
 After you provision an instance, the *Logging* dashboard opens. 
 
@@ -140,7 +140,7 @@ To provision an instance of {{site.data.keyword.la_full_notm}} through the comma
 
     SERVICE_PLAN_NAME is the type of plan. Valid values are *lite*, *7-days*, *14-days*, *30-days*.
     
-    LOCATION is the region where the LogDNA instance is created. Valid values are *us-south*, *eu-de*.
+    LOCATION is the region where the LogDNA instance is created. To get the latest list of locations that are available for the {{site.data.keyword.at_full_notm}} service, see [Locations](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-regions).
 
     For example, to provision an instance with the 7 days retention plan, run the following command:
 

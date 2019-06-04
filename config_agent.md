@@ -80,18 +80,22 @@ To configure your Kubernetes cluster to forward logs to your LogDNA instance, co
 4. Create a Kubernetes daemon set to deploy the LogDNA agent on every worker node of your Kubernetes cluster. The LogDNA agent collects logs with the extension `*.log` and extensionsless files that are stored in the `/var/log` directory of your pod. By default, logs are collected from all namespaces, including `kube-system`, and automatically forwarded to the {{site.data.keyword.la_full_notm}} service.
 
     <table>
-      <caption>Commands by region</caption>
+      <caption>Commands by location</caption>
       <tr>
         <th>Location</th>
         <th>Command</th>
       </tr>
       <tr>
-        <td>`US-South`</td>
-        <td>`kubectl create -f https://repo.logdna.com/ibm/prod/logdna-agent-ds-us-south.yaml`</td>
+        <td>`Dallas (us-south)`</td>
+        <td>`kubectl create -f https://assets.us-south.logging.cloud.ibm.com/clients/logdna-agent-ds.yaml`</td>
       </tr>
       <tr>
-        <td>`EU-DE`</td>
-        <td>`kubectl create -f https://repo.logdna.com/ibm/prod/logdna-agent-ds-eu-de.yaml`</td>
+        <td>`Frankfurt (eu-de)`</td>
+        <td>`kubectl create -f https://assets.eu-de.logging.cloud.ibm.com/clients/logdna-agent-ds.yaml`</td>
+      </tr>
+      <tr>
+        <td>`Tokyo (jp-tok)`</td>
+        <td>`kubectl create -f https://assets.jp-tok.logging.cloud.ibm.com/clients/logdna-agent-ds.yaml`</td>
       </tr>
     </table>
 
@@ -257,12 +261,16 @@ To configure your Ubuntu server to forward logs to your LogDNA instance, complet
         <th>Command</th>
       </tr>
       <tr>
-        <td>`US-South`</td>
+        <td>`Dallas (us-south)`</td>
         <td>`sudo logdna-agent -s LOGDNA_APIHOST=api.us-south.logging.cloud.ibm.com`</td>
       </tr>
       <tr>
-        <td>`EU-DE`</td>
+        <td>`Frankfurt (eu-de)`</td>
         <td>`sudo logdna-agent -s LOGDNA_APIHOST=api.eu-de.logging.cloud.ibm.com`</td>
+      </tr>
+      <tr>
+        <td>`Tokyo (jp-tok)`</td>
+        <td>`sudo logdna-agent -s LOGDNA_APIHOST=api.jp-tok.logging.cloud.ibm.com`</td>
       </tr>
     </table>
 
@@ -275,12 +283,16 @@ To configure your Ubuntu server to forward logs to your LogDNA instance, complet
         <th>Command</th>
       </tr>
       <tr>
-        <td>`US-South`</td>
+        <td>`Dallas (us-south)`</td>
         <td>`sudo logdna-agent -s LOGDNA_LOGHOST=logs.us-south.logging.cloud.ibm.com`</td>
       </tr>
       <tr>
-        <td>`EU-DE`</td>
+        <td>`Frankfurt (eu-de)`</td>
         <td>`sudo logdna-agent -s LOGDNA_LOGHOST=logs.eu-de.logging.cloud.ibm.com`</td>
+      </tr>
+      <tr>
+        <td>`Tokyo (jp-tok)`</td>
+        <td>`sudo logdna-agent -s LOGDNA_LOGHOST=logs.jp-tok.logging.cloud.ibm.com`</td>
       </tr>
     </table>
 

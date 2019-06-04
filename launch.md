@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2019
-lastupdated: "2019-03-06"
+lastupdated: "2019-06-03"
 
 keywords: LogDNA, IBM, Log Analysis, logging, web UI, browser
 
@@ -28,36 +28,35 @@ After you provision an instance of the {{site.data.keyword.la_full_notm}} servic
 {:shortdesc}
 
 
-## Granting IAM policies to a user to view data 
-{: #step1}
+## Step 1. Grant IAM policies to a user to launch the web UI
+{: #launch_step1}
 
-**Note:** You must be an administrator of the {{site.data.keyword.la_full_notm}} service, an administrator of an {{site.data.keyword.la_full_notm}} instance, or have account IAM permissions to grant other users policies.
+Users in your account need permissions to launch the LogDNA web UI.
+
+You must be an administrator of the {{site.data.keyword.la_full_notm}} service, an administrator of an {{site.data.keyword.la_full_notm}} instance, or have account IAM permissions to grant other users policies.
+{: note}
 
 The following table lists the minimum policies that a user must have to be able to launch the web UI, and view data:
 
 | Service                              | Role                      | Permission granted       |
 |--------------------------------------|---------------------------|---------------------|
 | `{{site.data.keyword.la_full_notm}}` | Platform role: Viewer     | Allows the user to view the list of service instances in the Observability Logging dashboard. |
-| `{{site.data.keyword.la_full_notm}}` | Service role: Writer      | Allows the user to launch the Web UI and view logs in the Web UI.    |
+| `{{site.data.keyword.la_full_notm}}` | Service role: Reader      | Allows the user to launch the Web UI and view logs in the Web UI.    |
 {: caption="Table 1. IAM policies" caption-side="top"} 
 
 For more information on how to configure these policies for a user, see [Granting permissions to a user to view logs](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-work_iam#user_logdna).
 
 
-## Launching the web UI through the {{site.data.keyword.cloud_notm}} UI
+## Step 2. Launch the web UI through the {{site.data.keyword.cloud_notm}} UI
 {: #launch_step2}
 
 You launch the web UI within the context of an {{site.data.keyword.la_full_notm}} instance, from the {{site.data.keyword.cloud_notm}} UI. 
 
 Complete the following steps to launch the web UI:
 
-1. Log in to your {{site.data.keyword.cloud_notm}} account.
+1. [Log in to your {{site.data.keyword.cloud_notm}} account ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com/login){:new_window}.
 
-    Click [{{site.data.keyword.cloud_notm}} dashboard ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com/login){:new_window} to launch the {{site.data.keyword.cloud_notm}} dashboard.
-
-	After you log in with your user ID and password, the {{site.data.keyword.cloud_notm}} Dashboard opens.
-
-2. In the navigation menu, select **Observability**. 
+2. Click the **Menu** icon ![Menu icon](../icons/icon_hamburger.svg) &gt; **Observability**. 
 
 3. Select **Logging**. 
 
