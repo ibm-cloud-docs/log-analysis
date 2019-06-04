@@ -28,10 +28,10 @@ After you provision an instance of the {{site.data.keyword.la_full_notm}} servic
 {:shortdesc}
 
 
-## Step 1. Granting IAM policies to a user to view data 
+## Step 1. Grant IAM policies to a user to launch the web UI
 {: #launch_step1}
 
-You must grant permissions to users in your account to be able to launch the web UI and view logs.
+Users in your account need permissions to launch the LogDNA web UI.
 
 You must be an administrator of the {{site.data.keyword.la_full_notm}} service, an administrator of an {{site.data.keyword.la_full_notm}} instance, or have account IAM permissions to grant other users policies.
 {: note}
@@ -47,7 +47,7 @@ The following table lists the minimum policies that a user must have to be able 
 For more information on how to configure these policies for a user, see [Granting permissions to a user to view logs](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-work_iam#user_logdna).
 
 
-## Step 2. Launching the web UI through the {{site.data.keyword.cloud_notm}} UI
+## Step 2. Launch the web UI through the {{site.data.keyword.cloud_notm}} UI
 {: #launch_step2}
 
 You launch the web UI within the context of an {{site.data.keyword.la_full_notm}} instance, from the {{site.data.keyword.cloud_notm}} UI. 
