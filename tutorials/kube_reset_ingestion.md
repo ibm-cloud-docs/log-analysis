@@ -192,7 +192,7 @@ Complete the following steps to launch the web UI:
 
 1. [Log in to your {{site.data.keyword.cloud_notm}} account ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com/login){:new_window}.
 
-2. Click the **Menu** icon ![Menu icon](../icons/icon_hamburger.svg) &gt; **Observability** to launch the Observability dashboard. 
+2. Click the **Menu** icon ![Menu icon](../../icons/icon_hamburger.svg) &gt; **Observability** to launch the Observability dashboard. 
 
 3. Select **Logging**. 
 
