@@ -64,7 +64,7 @@ En la figura siguiente se muestra una visión general de los componentes del ser
 {{site.data.keyword.la_full_notm}} recopila y agrega registros en un sistema de registro centralizado.
 
 * Los datos de registro se alojan en {{site.data.keyword.cloud_notm}}.
-* Los datos se coubican en la región donde se ha suministrado la instancia de {{site.data.keyword.la_full_notm}}. Por ejemplo, los datos de registro de una instancia suministrada en el sur de EE.UU. se alojarán en la región del sur de EE.UU.
+* Los datos se coubican en la región donde se ha suministrado la instancia de {{site.data.keyword.la_full_notm}}. Por ejemplo, los datos de registro de una instancia suministrada en EE. UU. sur se alojarán en la región EE. UU. sur.
 
 El plan de servicio que elija para una instancia de {{site.data.keyword.la_full_notm}} definirá el número de días que los datos se almacenan y conservan en LogDNA. Por ejemplo, si elige el plan *Gratuito*, los datos no se almacenan. No obstante, si elige el plan de 7 días, los datos se almacenan durante 7 días y tendrá acceso a ellos a través de la interfaz de usuario web de LogDNA.
 

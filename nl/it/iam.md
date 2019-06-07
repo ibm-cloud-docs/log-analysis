@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2019
-lastupdated: "2019-03-06"
+lastupdated: "2019-05-01"
 
 keywords: LogDNA, IBM, Log Analysis, logging, iam, manage user access
 
@@ -48,6 +48,17 @@ I *ruoli* definiscono le azioni che possono essere eseguite da un utente o un ID
 {: tip}
 
 
+## Gestione dell'accesso utilizzando i gruppi di accesso
+{: #groups}
+
+Per gestire l'accesso o assegnare del nuovo accesso per gli utenti utilizzando i gruppi di accesso, devi essere il proprietario dell'account, l'amministratore o l'editor su tutti i servizi abilitati per l'accesso e l'identità nell'account oppure un amministratore o un editor assegnati per il servizio Gruppi di accesso IAM. 
+
+Scegli una qualsiasi delle seguenti azioni per gestire i gruppi di accesso in {{site.data.keyword.cloud_notm}}:
+
+* [Creazione di un gruppo di accesso](/docs/iam?topic=iam-groups#create_ag).
+* [Assegnazione dell'accesso a un gruppo](/docs/iam?topic=iam-groups#access_ag).
+
+
 ## Gestione dell'accesso assegnando le politiche direttamente agli utenti
 {: #users}
 
@@ -61,16 +72,6 @@ Scegli una qualsiasi delle seguenti azioni per gestire le politiche IAM in {{sit
 * Per controllare le autorizzazioni di un utente, vedi [Controllo del tuo accesso assegnato](/docs/iam?topic=iam-iammanidaccser#review_your_access).
 
 
-## Gestione dell'accesso utilizzando i gruppi di accesso
-{: #groups}
-
-Per gestire l'accesso o assegnare del nuovo accesso per gli utenti utilizzando i gruppi di accesso, devi essere il proprietario dell'account, l'amministratore o l'editor su tutti i servizi abilitati per l'accesso e l'identità nell'account oppure un amministratore o un editor assegnati per il servizio Gruppi di accesso IAM. 
-
-Scegli una qualsiasi delle seguenti azioni per gestire i gruppi di accesso in {{site.data.keyword.cloud_notm}}:
-
-* [Creazione di un gruppo di accesso](/docs/iam?topic=iam-groups#create_ag).
-* [Assegnazione dell'accesso a un gruppo](/docs/iam?topic=iam-groups#access_ag).
-
 
 
 ## Ruoli della piattaforma {{site.data.keyword.cloud_notm}}
@@ -78,14 +79,15 @@ Scegli una qualsiasi delle seguenti azioni per gestire i gruppi di accesso in {{
 
 Utilizza la seguente tabella per identificare il ruolo della piattaforma che desideri concedere a un utente in {{site.data.keyword.cloud_notm}} per eseguire una qualsiasi delle seguenti azioni della piattaforma:
 
-| Azioni della piattaforma                                                        | Ruoli della piattaforma {{site.data.keyword.cloud_notm}}    | 
-|-------------------------------------------------------------------------|------------------------------------------------------|
-| `Concedere ad altri membri dell'account l'accesso per gestire il servizio`           | Amministratore                                        | 
-| `Eseguire il provisioning di un'istanza del servizio`                                          | Editor                            | 
-| `Eliminare un'istanza del servizio`                                             | Amministratore </br>Editor                            | 
-| `Creare un ID servizio`                                                   | Amministratore </br>Editor                            |
-| `Visualizzare i dettagli di un'istanza del servizio`                                    | Amministratore </br>Editor </br>Operatore </br>Visualizzatore  | 
-| `Visualizzare le istanze del servizio nel dashboard di registrazione Osservabilità`         | Amministratore </br>Editor </br>Operatore </br>Visualizzatore  | 
+| Azioni della piattaforma                                                         | Ruoli della piattaforma {{site.data.keyword.cloud_notm}}    | 
+|--------------------------------------------------------------------------|------------------------------------------------------|
+| `Grant other account members access to work with the service`            | Amministratore                                        | 
+| `Provision a service instance`                                           | Editor                            | 
+| `Delete a service instance`                                              | Amministratore </br>Editor                            | 
+| `Create a service ID`                                                    | Amministratore </br>Editor                            |
+| `View details of a service instance`                                     | Amministratore </br>Editor </br>Operatore </br>Visualizzatore  | 
+| `View service instances in the Observability Logging dashboard`          | Amministratore </br>Editor </br>Operatore </br>Visualizzatore  | 
+| `View the ingestion key in the {{site.data.keyword.cloud_notm}} console` | Amministratore                                        | 
 {: caption="Tabella 1. Azioni e ruoli utente IAM" caption-side="top"}
 
 
@@ -98,16 +100,18 @@ Utilizza la seguente tabella per identificare i ruoli del servizio che puoi conc
 | Azioni                                                                 | Ruoli del servizio {{site.data.keyword.cloud_notm}}     | 
 |-------------------------------------------------------------------------|------------------------------------------------------|
 | `Add LogDNA log sources`                                                | Gestore                                              |
-| `Manage ingestion keys`                                                 | Gestore                                              |
+| `Manage ingestion keys through the LogDNA web UI`                       | Gestore                                              |
 | `Manage service keys`                                                   | Gestore                                              |
 | `Archive logs`                                                          | Gestore                                              |
+| `Manage parsing`                                                        | Gestore                                              |
 | `Configure alerts`                                                      | Gestore </br>Scrittore </br>Lettore                      | 
 | `Filter and search log data`                                            | Gestore </br>Scrittore </br>Lettore                      |
 | `Create views`                                                          | Gestore </br>Scrittore </br>Lettore                      |
+| `Manage views`                                                          | Gestore </br>Scrittore </br>Lettore                      |
 | `Export log data`                                                       | Gestore </br>Scrittore </br>Lettore                      |
 | `Configure user preferences in the LogDNA web UI`                       | Gestore </br>Scrittore </br>Lettore                      |
 | `View logs through the LogDNA web UI`                                   | Gestore </br>Scrittore </br>Lettore                      | 
-{: caption="Tabella 3. Azioni e ruoli utente IAM" caption-side="top"}
+{: caption="Tabella 2. Azioni e ruoli utente IAM" caption-side="top"}
 
 
 **Nota:** il ruolo del servizio **gestore** è associato direttamente al ruolo di amministratore di LogDNA.

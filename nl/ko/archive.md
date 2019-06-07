@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2019
-lastupdated: "2019-03-06"
+lastupdated: "2019-05-01"
 
 keywords: LogDNA, IBM, Log Analysis, logging, archive logs, COS, cloud object storage
 
@@ -135,7 +135,7 @@ subcollection: LogDNA
 
 | 서비스                    | 역할                   | 조치                             | 
 |----------------------------|-------------------------|------------------------------------|       
-| `Cloud Object Storage`     | 플랫폼 역할: 뷰어   | 사용자가 버킷을 모두 보고 {site.data.keyword.Bluemix_notm}} UI를 통해 버킷 내에 오브젝트를 나열할 수 있게 합니다. |
+| `Cloud Object Storage`     | 플랫폼 역할: 뷰어   | 사용자가 모든 버킷을 보고 {{site.data.keyword.cloud_notm}} UI를 통해 버킷 내의 오브젝트를 나열할 수 있게 합니다. |
 | `Cloud Object Storage`     | 서비스 역할: 관리자   | 사용자가 오브젝트를 공용으로 설정할 수 있게 합니다.                                                       |
 | `Cloud Object Storage`     | 서비스 역할: 관리자 </br>작성자 | 사용자가 버킷 및 오브젝트를 작성하고 영구 삭제할 수 있게 합니다.                         | 
 | `Cloud Object Storage`     | 서비스 역할: 독자    | 사용자가 오브젝트를 나열하고 다운로드할 수 있게 합니다.                                                 |
@@ -173,17 +173,17 @@ subcollection: LogDNA
     
     단일 데이터 센터는 단일 사이트 내 디바이스에만 데이터를 분배합니다.
 
-    자세한 정보는 [지역 및 엔드포인트 선택](/docs/services/cloud-object-storage?topic=cloud-object-storage-endpoints#endpoints)을 참조하십시오.
+    자세한 정보는 [지역 및 엔드포인트 선택](/docs/services/cloud-object-storage?topic=cloud-object-storage-endpoints)을 참조하십시오.
 
 6. *스토리지 클래스*의 유형을 선택하십시오.
 
-    여러 스토리지 클래스로 버킷을 작성할 수 있습니다. 요구사항에 따라 버킷에 대한 스토리지 클래스를 선택하여 데이터를 검색하십시오. 자세한 정보는 [스토리지 클래스 사용](/docs/services/cloud-object-storage?topic=cloud-object-storage-use-storage-classes#use-storage-classes)을 참조하십시오.
+    여러 스토리지 클래스로 버킷을 작성할 수 있습니다. 요구사항에 따라 버킷에 대한 스토리지 클래스를 선택하여 데이터를 검색하십시오. 자세한 정보는 [스토리지 클래스 사용](/docs/services/cloud-object-storage?topic=cloud-object-storage-classes)을 참조하십시오.
 
     **참고:** 일단 버킷이 작성되면 버킷의 스토리지 클래스를 변경할 수 없습니다. 오브젝트를 다시 분류해야 하는 경우 원하는 스토리지 클래스의 다른 버킷으로 데이터를 이동해야 합니다.
 
 7. 선택적으로 Key Protect 키를 추가하여 저장 데이터를 암호화하십시오.
 
-    모든 오브젝트는 기본적으로 임의로 생성된 키와 AONT(All-or-Nothing Transform)를 사용하여 암호화됩니다. 이 기본 암호화 모델이 저장 데이터 보안을 제공하는 반면, 일부 워크로드는 사용되는 암호화 키를 소유해야 합니다. 자세한 정보는 [암호화 관리](/docs/services/cloud-object-storage?topic=cloud-object-storage-manage-encryption#manage-encryption)를 참조하십시오.
+    모든 오브젝트는 기본적으로 임의로 생성된 키와 AONT(All-or-Nothing Transform)를 사용하여 암호화됩니다. 이 기본 암호화 모델이 저장 데이터 보안을 제공하는 반면, 일부 워크로드는 사용되는 암호화 키를 소유해야 합니다. 자세한 정보는 [암호화 관리](/docs/services/cloud-object-storage?topic=cloud-object-storage-encryption)를 참조하십시오.
 
 
 

@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2019
-lastupdated: "2019-03-06"
+lastupdated: "2019-05-01"
 
 keywords: LogDNA, IBM, Log Analysis, logging, config agent
 
@@ -36,8 +36,8 @@ O agente LogDNA é responsável por coletar e encaminhar logs para a sua instân
 | Parâmetro | Descrição |
 |-----------|-------------|
 | `tags`    | Defina tags para agrupar hosts automaticamente em grupos dinâmicos. |
-| `logdir`  | Defina os caminhos customizados que você deseja que o agente monitore. </br>Separe vários caminhos usando vírgulas. É possível usar padrões de bola. É possível configurar arquivos específicos. Insira padrões glob usando aspas duplas. |
-| `exclude` | Defina os arquivos que você não deseja que o agente LogDNA monitore. **Nota:** esses arquivos podem ser localizados em qualquer um dos caminhos definidos por meio do parâmetro logdir. </br>Separe vários arquivos usando vírgulas. É possível usar padrões de bola. É possível configurar arquivos específicos. |
+| `logdir`  | Defina os caminhos customizados que você deseja que o agente monitore. </br>Separe múltiplos caminhos usando vírgulas. É possível usar padrões de bola. É possível configurar arquivos específicos. Insira padrões glob usando aspas duplas. |
+| `exclude` | Defina os arquivos que você não deseja que o agente LogDNA monitore. **Nota:** esses arquivos podem ser localizados em qualquer um dos caminhos definidos por meio do parâmetro logdir. </br>Separe múltiplos arquivos usando vírgulas. É possível usar padrões de bola. É possível configurar arquivos específicos. |
 | `exclude_regex` | Defina padrões regex para filtrar quaisquer linhas que correspondam ao padrão. Não inclua `/` à esquerda e à direita. |
 | `hostname` | Defina o nome do host. Esse valor substitui o nome do host do sistema operacional. |
 | `autoupdate` | Configure como `1` para atualizar o agente automaticamente quando a definição do agente do repositório público for atualizada. Configure como `0` para desativar esse recurso. |  
@@ -55,7 +55,7 @@ Para configurar o seu cluster Kubernetes para encaminhar logs para a sua instân
 1. Abra um terminal para efetuar login no {{site.data.keyword.cloud_notm}}.
 
    ```
-   ibmcloud login -a api.ng.bluemix.net
+   ibmcloud login -a cloud.ibm.com
    ```
    {: pre}
 
@@ -68,23 +68,32 @@ Para configurar o seu cluster Kubernetes para encaminhar logs para a sua instân
    ```
    {: pre}
 
-   Quando
-o download dos arquivos de configuração estiver concluído, será exibido um comando que poderá ser usado
-para configurar o caminho para o seu arquivo de configuração local do Kubernetes como uma variável de ambiente. Copie e cole o comando que é exibido em seu terminal para configurar a variável de ambiente `KUBECONFIG`.
+   Quando o download dos arquivos de configuração estiver concluído, será exibido um comando que poderá ser usado para configurar o caminho para o seu arquivo de configuração local do Kubernetes como uma variável de ambiente. Copie e cole o comando que é exibido em seu terminal para configurar a variável de ambiente `KUBECONFIG`.
 
 3. Crie um segredo do Kubernetes para armazenar a sua chave de ingestão do logDNA para a sua instância de serviço. A chave de ingestão do LogDNA é usada para abrir um soquete da web seguro para o servidor de ingestão do logDNA e para autenticar o agente de criação de log com o serviço do {{site.data.keyword.la_full_notm}}.
 
-   ```
-   kubectl create secret generic logdna-agent-key --from-literal=logdna-agent-key=<logDNA_ingestion_key>
-   ```
-   {: pre}
+    ```
+    kubectl create secret generic logdna-agent-key --from-literal=logdna-agent-key=<logDNA_ingestion_key>
+    ```
+    {: pre}
 
 4. Crie um conjunto de daemon do Kubernetes configurado para implementar o agente do LogDNA em cada nó do trabalhador de seu cluster Kubernetes. O agente do LogDNA coleta logs com a extensão `*.log` e arquivos sem extensão que são armazenados no diretório `/var/log` de seu pod. Por padrão, os logs são coletados de todos os namespaces, incluindo `kube-system` e encaminhados automaticamente para o serviço do {{site.data.keyword.la_full_notm}}.
 
-   ```
-   kubectl create -f https://repo.logdna.com/ibm/prod/logdna-agent-ds-us-south.yaml
-   ```
-   {: pre}
+    <table>
+      <caption>Comandos por região</caption>
+      <tr>
+        <th>Localização</th>
+        <th>Comando</th>
+      </tr>
+      <tr>
+        <td>`US-South`</td>
+        <td>`kubectl create -f https://repo.logdna.com/ibm/prod/logdna-agent-ds-us-south.yaml`</td>
+      </tr>
+      <tr>
+        <td>`EU-DE`</td>
+        <td>`kubectl create -f https://repo.logdna.com/ibm/prod/logdna-agent-ds-eu-de.yaml`</td>
+      </tr>
+    </table>
 
 5. Verifique se o agente do LogDNA foi implementado com êxito. 
 
@@ -138,14 +147,14 @@ Conclua as etapas a seguir para incluir tags:
     Atualize o arquivo de configuração modificando a cópia local. **Nota:** também é possível gerar o arquivo de configuração do agente, executando o comando a seguir:
 
     ```
-    kubectl get configmap logdna-agent -o=yaml > prod-logdna-agent-configmap.yaml
+    kubectl get daemonset logdna-agent -o=yaml > prod-logdna-agent-ds.yaml
     ```
     {: codeblock}
 
     Como alternativa, atualize o arquivo de configuração usando *kubectl edit*.
 
     ```
-    kubectl edit configmap logdna-agent
+    kubectl edit daemonset logdna-agent
     ```
     {: codeblock}
 
@@ -192,7 +201,7 @@ Conclua as etapas a seguir para incluir tags:
 5. Aplique as mudanças de configuração se você editar o arquivo localmente. 
 
     ```
-    kubectl apply -f logdna-agent-configmap.yaml
+    kubectl apply -f prod-logdna-agent-ds.yaml
     ```
     {: codeblock}
     
@@ -239,17 +248,41 @@ Para configurar o seu servidor do Ubuntu para encaminhar logs para a sua instân
 
 3. Configure o terminal de autenticação. O agente do LogDNA usa esse host para autenticar e obter o token para encaminhar logs.
 
-    ```
-    sudo logdna-agent -s LOGDNA_APIHOST=api.us-south.logging.cloud.ibm.com
-    ```
-    {: codeblock}
+    <table>
+      <caption>Comandos por região</caption>
+      <tr>
+        <th>Localização</th>
+        <th></th>
+      </tr>
+      <tr>
+        <td>`US-South`</td>
+        <td>`    sudo logdna-agent -s LOGDNA_APIHOST=api.us-south.logging.cloud.ibm.com
+    `</td>
+      </tr>
+      <tr>
+        <td>`EU-DE`</td>
+        <td>`sudo logdna-agent -s LOGDNA_APIHOST=api.eu-de.logging.cloud.ibm.com`</td>
+      </tr>
+    </table>
 
 4. Configure o terminal de ingestão.
 
-    ```
-    sudo logdna-agent -s LOGDNA_LOGHOST=logs.us-south.logging.cloud.ibm.com
-    ```
-    {: codeblock}
+    <table>
+      <caption>Comandos por região</caption>
+      <tr>
+        <th>Localização</th>
+        <th></th>
+      </tr>
+      <tr>
+        <td>`US-South`</td>
+        <td>`    sudo logdna-agent -s LOGDNA_LOGHOST=logs.us-south.logging.cloud.ibm.com
+    `</td>
+      </tr>
+      <tr>
+        <td>`EU-DE`</td>
+        <td>`sudo logdna-agent -s LOGDNA_LOGHOST=logs.eu-de.logging.cloud.ibm.com`</td>
+      </tr>
+    </table>
 
 5. Defina mais caminhos de log a serem monitorados. Execute o comando a seguir: 
 

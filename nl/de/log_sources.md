@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2019
-lastupdated: "2019-03-06"
+lastupdated: "2019-04-01"
 
 keywords: LogDNA, IBM, Log Analysis, logging, log sources
 
@@ -31,7 +31,7 @@ Sie können {{site.data.keyword.cloud}}-Protokollquellen und lokale Protokollque
 ## Plattform-Container-Services
 {: #log_sources_kube}
 
-Sie können Protokolle aus dem [{{site.data.keyword.containerlong_notm}}](/docs/containers?topic=containers-container_index#container_index) mit {{site.data.keyword.la_full_notm}} verwalten.
+Sie können Protokolle aus dem [{{site.data.keyword.containerlong_notm}}](/docs/containers?topic=containers-getting-started) mit {{site.data.keyword.la_full_notm}} verwalten.
 
 | Lernprogramme für die Verwaltung von Protokollen für den {{site.data.keyword.containerlong_notm}} |
 |---------------------------------------------------------------------------------------------------|

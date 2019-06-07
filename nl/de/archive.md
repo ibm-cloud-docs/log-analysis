@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2019
-lastupdated: "2019-03-06"
+lastupdated: "2019-05-01"
 
 keywords: LogDNA, IBM, Log Analysis, logging, archive logs, COS, cloud object storage
 
@@ -135,7 +135,7 @@ Damit ein Benutzer Buckets verwalten kann, müssen ihm Berechtigungen für die A
 
 | Service                    | Rollen                   | Aktion                             | 
 |----------------------------|-------------------------|------------------------------------|       
-| `Cloud Object Storage`     | Plattformrolle: Anzeigeberechtigter   | Der Benutzer kann über die Benutzerschnittstelle von {{site.data.keyword.Bluemix_notm}} alle Buckets anzeigen und die darin enthaltenen Objekte auflisten. |
+| `Cloud Object Storage`     | Plattformrolle: Anzeigeberechtigter   | Der Benutzer kann über die Benutzerschnittstelle von {{site.data.keyword.cloud_notm}} alle Buckets anzeigen und die darin enthaltenen Objekte auflisten. |
 | `Cloud Object Storage`     | Servicerolle: Manager   | Der Benutzer kann Objekte öffentlich zugänglich machen.                                                       |
 | `Cloud Object Storage`     | Servicerollen: Manager </br>Schreibberechtigter | Der Benutzer kann Buckets und Objekte erstellen und löschen.                         | 
 | `Cloud Object Storage`     | Servicerolle: Leseberechtigter    | Der Benutzer kann Objekte auflisten und herunterladen.                                                 |
@@ -173,17 +173,17 @@ Führen Sie die folgenden Schritte aus, um ein Bucket zu erstellen:
     
     Bei einem einzigen Rechenzentrum werden Daten nur auf Geräte an einem einzelnen Standort verteilt.
 
-    Weitere Informationen finden Sie in [Regionen und Endpunkte auswählen](/docs/services/cloud-object-storage?topic=cloud-object-storage-endpoints#endpoints).
+    Weitere Informationen finden Sie in [Regionen und Endpunkte auswählen](/docs/services/cloud-object-storage?topic=cloud-object-storage-endpoints).
 
 6. Wählen Sie den Typ der *Speicherklasse* aus.
 
-    Sie können Buckets mit unterschiedlichen Speicherklassen erstellen. Treffen Sie die Auswahl der Speicherklasse für Ihr Bucket auf der Basis Ihrer Anforderungen bezüglich des Abrufs von Daten. Weitere Informationen finden Sie in [Speicherklassen verwenden](/docs/services/cloud-object-storage?topic=cloud-object-storage-use-storage-classes#use-storage-classes).
+    Sie können Buckets mit unterschiedlichen Speicherklassen erstellen. Treffen Sie die Auswahl der Speicherklasse für Ihr Bucket auf der Basis Ihrer Anforderungen bezüglich des Abrufs von Daten. Weitere Informationen finden Sie in [Speicherklassen verwenden](/docs/services/cloud-object-storage?topic=cloud-object-storage-classes).
 
     **Anmerkung:** Die Speicherklasse eines Buckets kann nach der Erstellung des Buckets nicht mehr geändert werden. Ist eine Neuklassifizierung von Objekten erforderlich, müssen die Daten in ein Bucket mit der gewünschten Speicherklasse verschoben werden.
 
 7. Fügen Sie wahlweise einen Key Protect-Schlüssel für die Verschlüsselung ruhender Daten hinzu.
 
-    Alle Objekte werden standardmäßig mit nach dem Zufallsprinzip generierten Schlüsseln und einer Alles-oder-nichts-Transformation verschlüsselt. Dieses Standardverschlüsselungsmodell bietet zwar Sicherheit für ruhende Daten, aber einige Workloads müssen im Besitz der verwendeten Verschlüsselungsschlüssel sein. Weitere Informationen finden Sie in [Verschlüsselung verwalten](/docs/services/cloud-object-storage?topic=cloud-object-storage-manage-encryption#manage-encryption).
+    Alle Objekte werden standardmäßig mit nach dem Zufallsprinzip generierten Schlüsseln und einer Alles-oder-nichts-Transformation verschlüsselt. Dieses Standardverschlüsselungsmodell bietet zwar Sicherheit für ruhende Daten, aber einige Workloads müssen im Besitz der verwendeten Verschlüsselungsschlüssel sein. Weitere Informationen finden Sie in [Verschlüsselung verwalten](/docs/services/cloud-object-storage?topic=cloud-object-storage-encryption).
 
 
 

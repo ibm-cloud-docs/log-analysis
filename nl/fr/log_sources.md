@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2019
-lastupdated: "2019-03-06"
+lastupdated: "2019-04-01"
 
 keywords: LogDNA, IBM, Log Analysis, logging, log sources
 
@@ -31,7 +31,7 @@ Vous pouvez configurer des sources de journal {{site.data.keyword.cloud}} et des
 ## Services de conteneur de plateforme
 {: #log_sources_kube}
 
-Vous pouvez gérer les journaux depuis [{{site.data.keyword.containerlong_notm}}](/docs/containers?topic=containers-container_index#container_index) avec {{site.data.keyword.la_full_notm}}.
+Vous pouvez gérer les journaux depuis [{{site.data.keyword.containerlong_notm}}](/docs/containers?topic=containers-getting-started) avec {{site.data.keyword.la_full_notm}}.
 
 | Tutoriels sur la gestion des journaux pour {{site.data.keyword.containerlong_notm}} |
 |---------------------------------------------------------------------------------------------------|

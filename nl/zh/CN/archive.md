@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2019
-lastupdated: "2019-03-06"
+lastupdated: "2019-05-01"
 
 keywords: LogDNA, IBM, Log Analysis, logging, archive logs, COS, cloud object storage
 
@@ -70,8 +70,8 @@ subcollection: LogDNA
 |服务|平台角色|操作| 
 |----------------------------|-------------------|-----------------------------------------------------------------------------------------------|       
 |`Cloud Object Storage`|管理员|允许用户将策略分配给帐户中的用户以使用 {{site.data.keyword.cos_full_notm}} 服务。|
-|`Cloud Object Storage`|管理员</br>编辑者|允许用户供应 {{site.data.keyword.cos_full_notm}} 服务的实例。|
-|`Cloud Object Storage`|管理员</br>编辑者</br>操作员|允许用户创建服务标识。| 
+|`Cloud Object Storage`| 管理员 </br>编辑器 |允许用户供应 {{site.data.keyword.cos_full_notm}} 服务的实例。|
+|`Cloud Object Storage`| 管理员 </br>编辑器 </br>操作员 |允许用户创建服务标识。| 
 {: caption="表 1. 角色和操作" caption-side="top"} 
 
 
@@ -135,9 +135,9 @@ subcollection: LogDNA
 
 |服务|角色|操作| 
 |----------------------------|-------------------------|------------------------------------|       
-|`Cloud Object Storage`|平台角色：查看者|允许用户通过 {site.data.keyword.Bluemix_notm}} UI 查看所有存储区并列出其中的对象。|
+|`Cloud Object Storage`|平台角色：查看者|允许用户通过 {{site.data.keyword.cloud_notm}} UI 查看所有存储区并列出其中的对象。|
 |`Cloud Object Storage`|服务角色：管理者|允许用户将对象标记为公共。|
-|`Cloud Object Storage`|服务角色：管理者</br>写入者|允许用户创建和销毁存储区及对象。| 
+|`Cloud Object Storage`|服务角色：管理者 </br>写入者 |允许用户创建和销毁存储区及对象。| 
 |`Cloud Object Storage`|服务角色：读取者|允许用户列出和下载对象。|
 {: caption="表 1. 用于使用存储区的角色和操作" caption-side="top"} 
 
@@ -173,17 +173,17 @@ subcollection: LogDNA
     
     “单个数据中心”将仅在单个站点内跨多个设备分布数据。
 
-    有关更多信息，请参阅[选择区域和端点](/docs/services/cloud-object-storage?topic=cloud-object-storage-endpoints#endpoints)。
+    有关更多信息，请参阅[选择区域和端点](/docs/services/cloud-object-storage?topic=cloud-object-storage-endpoints)。
 
 6. 选择*存储类*的类型。
 
-    可以创建具有不同存储类的存储区。根据检索数据的需求，选择存储区的存储类。有关更多信息，请参阅[使用存储类](/docs/services/cloud-object-storage?topic=cloud-object-storage-use-storage-classes#use-storage-classes)。
+    可以创建具有不同存储类的存储区。根据检索数据的需求，选择存储区的存储类。有关更多信息，请参阅[使用存储类](/docs/services/cloud-object-storage?topic=cloud-object-storage-classes)。
 
     **注：**创建存储区后，即无法更改该存储区的存储类。如果对象需要重新分类，那么必须将数据移至具有所需存储类的其他存储区。
 
 7. （可选）添加 Key Protect 密钥以对数据进行静态加密。
 
-    缺省情况下，所有对象都会使用随机生成的密钥以及全有或全无变换进行加密。虽然此缺省加密模型提供了静态安全性，但某些工作负载需要拥有所使用的加密密钥。有关更多信息，请参阅[管理加密](/docs/services/cloud-object-storage?topic=cloud-object-storage-manage-encryption#manage-encryption)。
+    缺省情况下，所有对象都会使用随机生成的密钥以及全有或全无变换进行加密。虽然此缺省加密模型提供了静态安全性，但某些工作负载需要拥有所使用的加密密钥。有关更多信息，请参阅[管理加密](/docs/services/cloud-object-storage?topic=cloud-object-storage-encryption)。
 
 
 

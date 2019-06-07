@@ -159,5 +159,3 @@ Pour créer une vue, procédez comme suit :
 6. Vous pouvez éventuellement associer une alerte. Une nouvelle section permettant de configurer l'alerte s'affiche.
 
 7. Cliquez sur **Sauvegarder la vue**
-
-

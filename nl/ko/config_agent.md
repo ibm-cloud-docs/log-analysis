@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2019
-lastupdated: "2019-03-06"
+lastupdated: "2019-05-01"
 
 keywords: LogDNA, IBM, Log Analysis, logging, config agent
 
@@ -37,7 +37,7 @@ LogDNA 에이전트를 통해 다음 매개변수를 구성할 수 있습니다.
 |-----------|-------------|
 | `tags`    | 호스트를 자동으로 동적 그룹으로 그룹화하도록 태그를 정의합니다. |
 | `logdir`  | 에이전트가 모니터할 사용자 정의 경로를 정의합니다. </br>쉼표를 사용하여 여러 경로를 구분하십시오. 글로브 패턴을 사용할 수 있습니다. 특정 파일을 구성할 수 있습니다. 큰따옴표를 사용하여 글로브 패턴을 입력하십시오. |
-| `exclude` | LogDNA 에이전트가 모니터하지 않을 파일을 정의합니다. **참고:** 이러한 파일은 logdir 매개변수를 통해 정의된 경로에 있을 수 있습니다. </br>쉼표를 사용하여 여러 파일을 구분합니다. 글로브 패턴을 사용할 수 있습니다. 특정 파일을 구성할 수 있습니다. |
+| `exclude` | LogDNA 에이전트가 모니터하지 않을 파일을 정의합니다. **참고:** 이러한 파일은 logdir 매개변수를 통해 정의된 경로에 있을 수 있습니다. </br>쉼표를 사용하여 여러 파일을 구분하십시오. 글로브 패턴을 사용할 수 있습니다. 특정 파일을 구성할 수 있습니다. |
 | `exclude_regex` | 패턴과 일치하는 행을 필터링하기 위해 regex 패턴을 정의합니다. 선행 및 후행 `/`를 포함하지 않습니다. |
 | `hostname` | 호스트 이름을 정의합니다. 이 값은 운영 체제 호스트 이름을 대체합니다. |
 | `autoupdate` | 공용 저장소 에이전트 정의가 업데이트된 후 자동으로 에이전트를 업데이트하려면 `1`로 설정합니다. 이 기능을 사용하지 않으려면 `0`으로 설정합니다. |  
@@ -55,7 +55,7 @@ LogDNA 인스턴스로 로그를 전달하도록 Kubernetes 클러스터를 구�
 1. 터미널을 열어 {{site.data.keyword.cloud_notm}}에 로그인하십시오.
 
    ```
-   ibmcloud login -a api.ng.bluemix.net
+   ibmcloud login -a cloud.ibm.com
    ```
    {: pre}
 
@@ -72,17 +72,28 @@ LogDNA 인스턴스로 로그를 전달하도록 Kubernetes 클러스터를 구�
 
 3. Kubernetes 시크릿을 작성하여 서비스 인스턴스에 대한 logDNA 수집 키를 저장하십시오. LogDNA 수집 키는 logDNA 수집 서버에 대한 보안 웹 소켓을 열고 {{site.data.keyword.la_full_notm}} 서비스로 로깅 에이전트를 인증하는 데 사용됩니다.
 
-   ```
-   kubectl create secret generic logdna-agent-key --from-literal=logdna-agent-key=<logDNA_ingestion_key>
-   ```
-   {: pre}
+    ```
+    kubectl create secret generic logdna-agent-key --from-literal=logdna-agent-key=<logDNA_ingestion_key>
+    ```
+    {: pre}
 
 4. Kubernetes 디먼 세트를 작성하여 Kubernetes 클러스터의 모든 작업자 노드에 LogDNA 에이전트를 배치하십시오. LogDNA 에이전트는 확장자가 `*.log`인 로그 및 팟(Pod)의 `/var/log` 디렉토리에 저장된 확장자 없는 파일을 수집합니다. 기본적으로 로그는 `kube-system`을 포함해 모든 네임스페이스에서 수집되며 자동으로 {{site.data.keyword.la_full_notm}} 서비스에 전달됩니다.
 
-   ```
-   kubectl create -f https://repo.logdna.com/ibm/prod/logdna-agent-ds-us-south.yaml
-   ```
-   {: pre}
+    <table>
+      <caption>지역별 명령</caption>
+      <tr>
+        <th>위치</th>
+        <th>명령</th>
+      </tr>
+      <tr>
+        <td>`US-South`</td>
+        <td>`kubectl create -f https://repo.logdna.com/ibm/prod/logdna-agent-ds-us-south.yaml`</td>
+      </tr>
+      <tr>
+        <td>`EU-DE`</td>
+        <td>`kubectl create -f https://repo.logdna.com/ibm/prod/logdna-agent-ds-eu-de.yaml`</td>
+      </tr>
+    </table>
 
 5. LogDNA 에이전트가 배치되었는지 확인하십시오. 
 
@@ -136,14 +147,14 @@ LogDNA 인스턴스로 로그를 전달하도록 Kubernetes 클러스터를 구�
     로컬 사본을 수정하여 구성 파일을 업데이트하십시오. **참고:** 또한 다음 명령을 실행하여 에이전트의 구성 파일을 생성할 수 있습니다.
 
     ```
-    kubectl get configmap logdna-agent -o=yaml > prod-logdna-agent-configmap.yaml
+    kubectl get daemonset logdna-agent -o=yaml > prod-logdna-agent-ds.yaml
     ```
     {: codeblock}
 
     또는 *kubectl edit*를 사용하여 구성 파일을 업데이트하십시오.
 
     ```
-    kubectl edit configmap logdna-agent
+    kubectl edit daemonset logdna-agent
     ```
     {: codeblock}
 
@@ -192,7 +203,7 @@ LogDNA 인스턴스로 로그를 전달하도록 Kubernetes 클러스터를 구�
 5. 로컬로 파일을 편집하는 경우 구성 변경사항을 적용하십시오. 
 
     ```
-    kubectl apply -f logdna-agent-configmap.yaml
+    kubectl apply -f prod-logdna-agent-ds.yaml
     ```
     {: codeblock}
     
@@ -239,17 +250,39 @@ LogDNA 인스턴스로 로그를 전달하도록 Ubuntu 서버를 구성하려�
 
 3. 인증 엔드포인트를 설정하십시오. LogDNA 에이전트는 이 호스트를 사용하여 토큰을 인증하고 가져와 로그를 전달합니다.
 
-    ```
-    sudo logdna-agent -s LOGDNA_APIHOST=api.us-south.logging.cloud.ibm.com
-    ```
-    {: codeblock}
+    <table>
+      <caption>지역별 명령</caption>
+      <tr>
+        <th>위치</th>
+        <th>명령</th>
+      </tr>
+      <tr>
+        <td>`US-South`</td>
+        <td>`sudo logdna-agent -s LOGDNA_APIHOST=api.us-south.logging.cloud.ibm.com`</td>
+      </tr>
+      <tr>
+        <td>`EU-DE`</td>
+        <td>`sudo logdna-agent -s LOGDNA_APIHOST=api.eu-de.logging.cloud.ibm.com`</td>
+      </tr>
+    </table>
 
 4. 수집 엔드포인트를 설정하십시오.
 
-    ```
-    sudo logdna-agent -s LOGDNA_LOGHOST=logs.us-south.logging.cloud.ibm.com
-    ```
-    {: codeblock}
+    <table>
+      <caption>지역별 명령</caption>
+      <tr>
+        <th>위치</th>
+        <th>명령</th>
+      </tr>
+      <tr>
+        <td>`US-South`</td>
+        <td>`sudo logdna-agent -s LOGDNA_LOGHOST=logs.us-south.logging.cloud.ibm.com`</td>
+      </tr>
+      <tr>
+        <td>`EU-DE`</td>
+        <td>`sudo logdna-agent -s LOGDNA_LOGHOST=logs.eu-de.logging.cloud.ibm.com`</td>
+      </tr>
+    </table>
 
 5. 모니터할 추가 로그 경로를 정의하십시오. 다음 명령을 실행하십시오. 
 

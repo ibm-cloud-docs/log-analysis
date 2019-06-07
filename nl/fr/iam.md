@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2019
-lastupdated: "2019-03-06"
+lastupdated: "2019-05-01"
 
 keywords: LogDNA, IBM, Log Analysis, logging, iam, manage user access
 
@@ -48,6 +48,17 @@ Les *rôles* définissent les actions qu'un utilisateur ou un ID de service peut
 {: tip}
 
 
+## Gestion des accès à l'aide de groupes d'accès
+{: #groups}
+
+Pour gérer les droits d'accès ou en accorder de nouveaux à des utilisateurs en utilisant des groupes d'accès, vous devez être le propriétaire du compte, l'administrateur ou l'éditeur de tous les services activés avec IAM dans le compte ou l'administrateur ou éditeur désigné pour le service Groupes d'accès IAM. 
+
+Sélectionnez l'une des actions suivantes pour gérer les groupes d'accès dans {{site.data.keyword.cloud_notm}}:
+
+* [Création d'un groupe d'accès](/docs/iam?topic=iam-groups#create_ag).
+* [Affectation d'accès à un groupe](/docs/iam?topic=iam-groups#access_ag).
+
+
 ## Gestion des accès par affectation de règles directement aux utilisateurs
 {: #users}
 
@@ -61,16 +72,6 @@ Sélectionnez l'une des actions suivantes pour gérer les règles IAM dans {{sit
 * Pour réviser les droits d'un utilisateur, voir [Révision des accès affectés](/docs/iam?topic=iam-iammanidaccser#review_your_access).
 
 
-## Gestion des accès à l'aide de groupes d'accès
-{: #groups}
-
-Pour gérer les droits d'accès ou en accorder de nouveaux à des utilisateurs en utilisant des groupes d'accès, vous devez être le propriétaire du compte, l'administrateur ou l'éditeur de tous les services activés avec IAM dans le compte ou l'administrateur ou éditeur désigné pour le service Groupes d'accès IAM. 
-
-Sélectionnez l'une des actions suivantes pour gérer les groupes d'accès dans {{site.data.keyword.cloud_notm}}:
-
-* [Création d'un groupe d'accès](/docs/iam?topic=iam-groups#create_ag).
-* [Affectation d'accès à un groupe](/docs/iam?topic=iam-groups#access_ag).
-
 
 
 ## Rôles de plateforme {{site.data.keyword.cloud_notm}}
@@ -78,14 +79,15 @@ Sélectionnez l'une des actions suivantes pour gérer les groupes d'accès dans 
 
 Le tableau suivant vous permet d'identifier le rôle de plateforme que vous pouvez accorder à un utilisateur dans {{site.data.keyword.cloud_notm}} pour exécuter les actions de plateforme suivantes :
 
-| Action de plateforme                                                        | Rôles de plateforme {{site.data.keyword.cloud_notm}}    | 
-|-------------------------------------------------------------------------|------------------------------------------------------|
-| `Accorder à d'autres membres du compte un accès leur permettant d'utiliser le service`           | Administrateur                                        | 
-| `Mettre à disposition une instance de service`                                          | Editeur                            | 
-| `Supprimer une instance de service`                                             | Administrateur </br>Editeur                            | 
-| `Créer un service ID`                                                   | Administrateur </br>Editeur                            |
-| `Afficher les détails d'une instance de service`                                    | Administrateur </br>Editeur </br>Opérateur </br>Afficheur  | 
-| `Afficher des instances de service dans le tableau de bord de journalisation d'observabilité`         | Administrateur </br>Editeur </br>Opérateur </br>Afficheur  | 
+| Action de plateforme                                                         | Rôles de plateforme {{site.data.keyword.cloud_notm}}    | 
+|--------------------------------------------------------------------------|------------------------------------------------------|
+| `Accorder à d'autres membres du compte un accès leur permettant d'utiliser le service`            | Administrateur                                        | 
+| `Mettre à disposition une instance de service`                                           | Editeur                            | 
+| `Supprimer une instance de service`                                              | Administrateur </br>Editeur                            | 
+| `Créer un service ID`                                                    | Administrateur </br>Editeur                            |
+| `Afficher les détails d'une instance de service`                                     | Administrateur </br>Editeur </br>Opérateur </br>Afficheur  | 
+| `Afficher des instances de service dans le tableau de bord de journalisation d'observabilité`          | Administrateur </br>Editeur </br>Opérateur </br>Afficheur  | 
+| `Afficher la clé d'ingestion sur la console {{site.data.keyword.cloud_notm}}` | Administrateur                                        | 
 {: caption="Tableau 1. Actions et rôles utilisateur IAM" caption-side="top"}
 
 
@@ -98,16 +100,18 @@ Utilisez le tableau suivant pour identifier le rôle de service que vous pouvez 
 | Actions                                                                 | Rôles de service {{site.data.keyword.cloud_notm}}     | 
 |-------------------------------------------------------------------------|------------------------------------------------------|
 | `Ajouter des sources de journal LogDNA`                                                | Responsable                                              |
-| `Gérer des clés d'ingestion`                                                 | Responsable                                              |
+| `Gérer des clés d'ingestion via l'interface utilisateur Web LogDNA`                       | Responsable                                              |
 | `Gérer des clés de service`                                                   | Responsable                                              |
 | `Archiver des journaux`                                                          | Responsable                                              |
+| `Gérer l'analyse syntaxique`                                                        | Responsable                                              |
 | `Configurer des alertes`                                                      | Responsable </br>Auteur </br>Lecteur                      | 
 | `Filtrer et effectuer des recherche dans des données de journal`                                            | Responsable </br>Auteur </br>Lecteur                      |
 | `Créer des vues`                                                          | Responsable </br>Auteur </br>Lecteur                      |
+| `Gérer des vues`                                                          | Responsable </br>Auteur </br>Lecteur                      |
 | `Exporter des données de journal`                                                       | Responsable </br>Auteur </br>Lecteur                      |
 | `Configurer des préférences utilisateur dans l'interface utilisateur Web LogDNA`                       | Responsable </br>Auteur </br>Lecteur                      |
 | `Afficher les journaux via l'interface utilisateur Web LogDNA`                                   | Responsable </br>Auteur </br>Lecteur                      | 
-{: caption="Tableau 3. Actions et rôles utilisateur IAM" caption-side="top"}
+{: caption="Tableau 2. Actions et rôles utilisateur IAM" caption-side="top"}
 
 
 **Remarque :** le rôle de service **responsable** est automatiquement associé au rôle d'administrateur LogDNA.

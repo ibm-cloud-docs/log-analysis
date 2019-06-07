@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2019
-lastupdated: "2019-03-06"
+lastupdated: "2019-05-01"
 
 keywords: LogDNA, IBM, Log Analysis, logging, config agent
 
@@ -55,7 +55,7 @@ Para configurar el clúster de Kubernetes para reenviar registros a su instancia
 1. Abra un terminal para iniciar sesión en {{site.data.keyword.cloud_notm}}.
 
    ```
-   ibmcloud login -a api.ng.bluemix.net
+   ibmcloud login -a cloud.ibm.com
    ```
    {: pre}
 
@@ -72,17 +72,28 @@ Para configurar el clúster de Kubernetes para reenviar registros a su instancia
 
 3. Cree un secreto de Kubernetes para almacenar la clave de ingestión de logDNA para la instancia de servicio. La clave de ingestión de LogDNA se utiliza para abrir un socket web seguro al servidor de ingestión de LogDNA y para autenticar el agente de registro con el servicio {{site.data.keyword.la_full_notm}}.
 
-   ```
-   kubectl create secret generic logdna-agent-key --from-literal=logdna-agent-key=<logDNA_ingestion_key>
-   ```
-   {: pre}
+    ```
+    kubectl create secret generic logdna-agent-key --from-literal=logdna-agent-key=<logDNA_ingestion_key>
+    ```
+    {: pre}
 
 4. Cree un conjunto de daemons de Kubernetes para desplegar el agente LogDNA en cada nodo de trabajador del clúster de Kubernetes. El agente LogDNA recopila registros con la extensión `*.log` y archivos sin extensión que se almacenan en el directorio `/var/log` del pod. De forma predeterminada, se recopilan los registros de todos los espacios de nombres, incluyendo `kube-system`, y se reenvían automáticamente al servicio {{site.data.keyword.la_full_notm}}.
 
-   ```
-   kubectl create -f https://repo.logdna.com/ibm/prod/logdna-agent-ds-us-south.yaml
-   ```
-   {: pre}
+    <table>
+      <caption>Mandatos por región</caption>
+      <tr>
+        <th>Ubicación</th>
+        <th>Mandato</th>
+      </tr>
+      <tr>
+        <td>`US-South`</td>
+        <td>`kubectl create -f https://repo.logdna.com/ibm/prod/logdna-agent-ds-us-south.yaml`</td>
+      </tr>
+      <tr>
+        <td>`EU-DE`</td>
+        <td>`kubectl create -f https://repo.logdna.com/ibm/prod/logdna-agent-ds-eu-de.yaml`</td>
+      </tr>
+    </table>
 
 5. Compruebe que el agente LogDNA se ha desplegado correctamente. 
 
@@ -136,14 +147,14 @@ Realice los pasos siguientes para añadir etiquetas:
     Actualice el archivo de configuración modificando la copia local. **Nota:** también puede generar el archivo de configuración del agente ejecutando el mandato siguiente:
 
     ```
-    kubectl get configmap logdna-agent -o=yaml > prod-logdna-agent-configmap.yaml
+    kubectl get daemonset logdna-agent -o=yaml > prod-logdna-agent-ds.yaml
     ```
     {: codeblock}
 
     Como alternativa, actualice el archivo de configuración utilizando *kubectl edit*.
 
     ```
-    kubectl edit configmap logdna-agent
+    kubectl edit daemonset logdna-agent
     ```
     {: codeblock}
 
@@ -192,7 +203,7 @@ Realice los pasos siguientes para añadir etiquetas:
 5. Aplique los cambios de configuración si edita el archivo de manera local. 
 
     ```
-    kubectl apply -f logdna-agent-configmap.yaml
+    kubectl apply -f prod-logdna-agent-ds.yaml
     ```
     {: codeblock}
     
@@ -239,17 +250,39 @@ Para configurar el servidor Ubuntu para reenviar registros a la instancia de Log
 
 3. Establezca el punto final de autenticación. El agente LogDNA utiliza este host para autenticarse y obtener la señal para reenviar registros.
 
-    ```
-    sudo logdna-agent -s LOGDNA_APIHOST=api.us-south.logging.cloud.ibm.com
-    ```
-    {: codeblock}
+    <table>
+      <caption>Mandatos por región</caption>
+      <tr>
+        <th>Ubicación</th>
+        <th>Mandato</th>
+      </tr>
+      <tr>
+        <td>`US-South`</td>
+        <td>`sudo logdna-agent -s LOGDNA_APIHOST=api.us-south.logging.cloud.ibm.com`</td>
+      </tr>
+      <tr>
+        <td>`EU-DE`</td>
+        <td>`sudo logdna-agent -s LOGDNA_APIHOST=api.eu-de.logging.cloud.ibm.com`</td>
+      </tr>
+    </table>
 
 4. Establezca el punto final de ingestión.
 
-    ```
-    sudo logdna-agent -s LOGDNA_LOGHOST=logs.us-south.logging.cloud.ibm.com
-    ```
-    {: codeblock}
+    <table>
+      <caption>Mandatos por región</caption>
+      <tr>
+        <th>Ubicación</th>
+        <th>Mandato</th>
+      </tr>
+      <tr>
+        <td>`US-South`</td>
+        <td>`sudo logdna-agent -s LOGDNA_LOGHOST=logs.us-south.logging.cloud.ibm.com`</td>
+      </tr>
+      <tr>
+        <td>`EU-DE`</td>
+        <td>`sudo logdna-agent -s LOGDNA_LOGHOST=logs.eu-de.logging.cloud.ibm.com`</td>
+      </tr>
+    </table>
 
 5. Defina más vías de acceso de registro a supervisar. Ejecute el mandato siguiente: 
 

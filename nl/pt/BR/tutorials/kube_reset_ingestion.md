@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2019
-lastupdated: "2019-03-06"
+lastupdated: "2019-05-01"
 
 keywords: LogDNA, IBM, Log Analysis, logging, kubernetes, tutorial, reset ingestion key
 
@@ -42,7 +42,7 @@ Para concluir as etapas neste tutorial, seu ID do {{site.data.keyword.IBM_notm}}
 | Recurso                             | Escopo da política de acesso | Atribuições    | Região    | Informações                  |
 |--------------------------------------|----------------------------|---------|-----------|------------------------------|
 | Grupo de recursos **Padrão**           |  Grupo de recursos            | Visualizador  | us-south  | Essa política é necessária para permitir que o usuário veja instâncias de serviço no Grupo de recursos padrão.    |
-| Serviço {{site.data.keyword.la_full_notm}} |  Grupo de recursos            | Aplicativos </br>Gerenciador  | us-south  | Essa política é necessária para permitir que o usuário reconfigure a chave de ingestão.   |
+| Serviço {{site.data.keyword.la_full_notm}} |  Grupo de recursos            | Editor </br>Gerenciador  | us-south  | Essa política é necessária para permitir que o usuário reconfigure a chave de ingestão.   |
 | Instância de cluster do Kubernetes          |  Recurso                  | Aplicativos  | us-south  | Essa política é necessária para excluir e configurar o segredo e o agente LogDNA no cluster Kubernetes. |
 {: caption="Tabela 1. Lista de políticas do IAM necessárias para concluir o tutorial" caption-side="top"} 
 
@@ -79,7 +79,7 @@ Conclua as etapas a seguir:
 1. Abra um terminal. Em seguida, efetue login no  {{site.data.keyword.cloud_notm}}. Execute o comando a seguir e siga os prompts:
 
     ```
-    ibmcloud login -a api.ng.bluemix.net
+    ibmcloud login -a cloud.ibm.com
     ```
     {: codeblock}
 
@@ -132,7 +132,7 @@ Para configurar o seu cluster Kubernetes para encaminhar logs para a sua instân
 1. Abra um terminal. Em seguida, efetue login no  {{site.data.keyword.cloud_notm}}. Execute o comando a seguir e siga os prompts:
 
     ```
-    ibmcloud login -a api.ng.bluemix.net
+    ibmcloud login -a cloud.ibm.com
     ```
     {: codeblock}
 

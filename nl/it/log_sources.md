@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2019
-lastupdated: "2019-03-06"
+lastupdated: "2019-04-01"
 
 keywords: LogDNA, IBM, Log Analysis, logging, log sources
 
@@ -31,7 +31,7 @@ Puoi configurare le origini log {{site.data.keyword.cloud}} e le origini log in 
 ## Servizi di contenitore della piattaforma
 {: #log_sources_kube}
 
-Puoi gestire i log da [{{site.data.keyword.containerlong_notm}}](/docs/containers?topic=containers-container_index#container_index) con {{site.data.keyword.la_full_notm}}.
+Puoi gestire i log da [{{site.data.keyword.containerlong_notm}}](/docs/containers?topic=containers-getting-started) con {{site.data.keyword.la_full_notm}}.
 
 | Esercitazioni per gestire i log per {{site.data.keyword.containerlong_notm}} |
 |---------------------------------------------------------------------------------------------------|

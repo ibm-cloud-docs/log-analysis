@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2019
-lastupdated: "2019-03-06"
+lastupdated: "2019-05-01"
 
 keywords: LogDNA, IBM, Log Analysis, logging, iam, manage user access
 
@@ -48,6 +48,17 @@ Durch *Richtlinien* ist es möglich, den Zugriff auf verschiedenen Ebenen zu gew
 {: tip}
 
 
+## Zugriff mit Zugriffsgruppen verwalten
+{: #groups}
+
+Sie müssen der Kontoeigner, Administrator oder Bearbeiter für alle Services mit aktiviertem Identity and Access Management im Konto oder der zugeordnete Administrator oder Bearbeiter für den IAM-Zugriffsgruppenservice sein, um mithilfe von Zugriffsgruppen den Benutzerzugriff verwalten oder Benutzern neue Zugriffsberechtigungen zuweisen zu können. 
+
+Wählen Sie eine der folgenden Aktionen aus, um Zugriffsgruppen in {{site.data.keyword.cloud_notm}} zu verwalten:
+
+* [Zugriffsgruppe erstellen](/docs/iam?topic=iam-groups#create_ag).
+* [Zugriff auf eine Gruppe zuweisen](/docs/iam?topic=iam-groups#access_ag).
+
+
 ## Benutzerzugriff durch direkte Richtlinienzuordnung verwalten
 {: #users}
 
@@ -61,16 +72,6 @@ Wählen Sie eine der folgenden Aktionen aus, um IAM-Richtlinien in {{site.data.k
 * Informationen zum Überprüfen der Berechtigungen eines Benutzers finden Sie in [Zugewiesene Zugriffsberechtigungen überprüfen](/docs/iam?topic=iam-iammanidaccser#review_your_access).
 
 
-## Zugriff mit Zugriffsgruppen verwalten
-{: #groups}
-
-Sie müssen der Kontoeigner, Administrator oder Bearbeiter für alle Services mit aktiviertem Identity and Access Management im Konto oder der zugeordnete Administrator oder Bearbeiter für den IAM-Zugriffsgruppenservice sein, um mithilfe von Zugriffsgruppen den Benutzerzugriff verwalten oder Benutzern neue Zugriffsberechtigungen zuweisen zu können. 
-
-Wählen Sie eine der folgenden Aktionen aus, um Zugriffsgruppen in {{site.data.keyword.cloud_notm}} zu verwalten:
-
-* [Zugriffsgruppe erstellen](/docs/iam?topic=iam-groups#create_ag).
-* [Zugriff auf eine Gruppe zuweisen](/docs/iam?topic=iam-groups#access_ag).
-
 
 
 ## {{site.data.keyword.cloud_notm}}-Plattformrollen
@@ -78,14 +79,15 @@ Wählen Sie eine der folgenden Aktionen aus, um Zugriffsgruppen in {{site.data.k
 
 Mithilfe der folgenden Tabelle können Sie feststellen, welche Plattformrolle Sie einem Benutzer in {{site.data.keyword.cloud_notm}} zur Ausführung der folgenden Plattformaktionen zuweisen können:
 
-| Plattformaktionen                                                        | {{site.data.keyword.cloud_notm}}-Plattformrollen    | 
-|-------------------------------------------------------------------------|------------------------------------------------------|
-| `Anderen Kontomitgliedern Zugriff für die Arbeit mit dem Service gewähren`           | Administrator                                        | 
-| `Serviceinstanz bereitstellen`                                          | Bearbeiter                            | 
-| `Serviceinstanz löschen`                                             | Administrator </br>Bearbeiter                            | 
-| `Service-ID erstellen`                                                   | Administrator </br>Bearbeiter                            |
-| `Details einer Serviceinstanz anzeigen`                                    | Administrator </br>Bearbeiter </br>Operator </br>Anzeigeberechtigter  | 
-| `Serviceinstanzen im Dashboard Beobachtbarkeit - Protokollierung anzeigen`         | Administrator </br>Bearbeiter </br>Operator </br>Anzeigeberechtigter  | 
+| Plattformaktionen                                                         | {{site.data.keyword.cloud_notm}}-Plattformrollen    | 
+|--------------------------------------------------------------------------|------------------------------------------------------|
+| `Anderen Kontomitgliedern Zugriff für die Arbeit mit dem Service gewähren`            | Administrator                                        | 
+| `Serviceinstanz bereitstellen`                                           | Bearbeiter                            | 
+| `Serviceinstanz löschen`                                              | Administrator </br>Bearbeiter                            | 
+| `Service-ID erstellen`                                                    | Administrator </br>Bearbeiter                            |
+| `Details einer Serviceinstanz anzeigen`                                     | Administrator </br>Bearbeiter </br>Operator </br>Anzeigeberechtigter  | 
+| `Serviceinstanzen im Dashboard Beobachtbarkeit - Protokollierung anzeigen`          | Administrator </br>Bearbeiter </br>Operator </br>Anzeigeberechtigter  | 
+| `Aufnahmeschlüssel in {{site.data.keyword.cloud_notm}}-Konsole anzeigen` | Administrator                                        | 
 {: caption="Tabelle 1. IAM-Benutzerrollen und -Aktionen" caption-side="top"}
 
 
@@ -97,17 +99,19 @@ Mithilfe der folgenden Tabelle können Sie feststellen, welche Servicerollen Sie
 
 | Aktionen                                                                 | {{site.data.keyword.cloud_notm}}-Servicerollen     | 
 |-------------------------------------------------------------------------|------------------------------------------------------|
-| `LogDNA-Protokollquellen hinzufügen`                                    | Manager                                              |
-| `Aufnahmeschlüssel verwalten`                                           | Manager                                              |
-| `Serviceschlüssel verwalten`                                            | Manager                                              |
-| `Protokolle archivieren`                                                | Manager                                              |
-| `Alerts konfigurieren`                                                  | Manager </br>Schreibberechtigter </br>Leseberechtigter                      | 
-| `Protokolldaten filtern und durchsuchen`                                | Manager </br>Schreibberechtigter </br>Leseberechtigter                      |
-| `Ansichten erstellen`                                                   | Manager </br>Schreibberechtigter </br>Leseberechtigter                      |
-| `Protokolldaten exportieren`                                            | Manager </br>Schreibberechtigter </br>Leseberechtigter                      |
-| `Benutzervorgabe in der LogDNA-Webbenutzerschnittstelle konfigurieren`  | Manager </br>Schreibberechtigter </br>Leseberechtigter                      |
-| `Protokolle in der LogDNA-Webbenutzerschnittstelle anzeigen`            | Manager </br>Schreibberechtigter </br>Leseberechtigter                      | 
-{: caption="Tabelle 3. IAM-Benutzerrollen und -Aktionen" caption-side="top"}
+| `LogDNA-Protokollquellen hinzufügen`                                                | Manager                                              |
+| `Aufnahmeschlüssel in der LogDNA-Webbenutzerschnittstelle verwalten`                       | Manager                                              |
+| `Serviceschlüssel verwalten`                                                   | Manager                                              |
+| `Protokolle archivieren`                                                          | Manager                                              |
+| `Parsing verwalten`                                                        | Manager                                              |
+| `Alerts konfigurieren`                                                      | Manager </br>Schreibberechtigter</br>Leseberechtigter                      | 
+| `Protokolldaten filtern und durchsuchen`                                            | Manager </br>Schreibberechtigter</br>Leseberechtigter                      |
+| `Ansichten erstellen`                                                          | Manager </br>Schreibberechtigter</br>Leseberechtigter                      |
+| `Ansichten verwalten`                                                          | Manager </br>Schreibberechtigter</br>Leseberechtigter                      |
+| `Protokolldaten exportieren`                                                       | Manager </br>Schreibberechtigter</br>Leseberechtigter                      |
+| `Benutzervorgabe in der LogDNA-Webbenutzerschnittstelle konfigurieren`                       | Manager </br>Schreibberechtigter</br>Leseberechtigter                      |
+| `Protokolle in der LogDNA-Webbenutzerschnittstelle anzeigen`                                   | Manager </br>Schreibberechtigter</br>Leseberechtigter                      | 
+{: caption="Tabelle 2. IAM-Benutzerrollen und -Aktionen" caption-side="top"}
 
 
 **Anmerkung:** Die Servicerolle **Manager** entspricht der LogDNA-Rolle **Administrator**.

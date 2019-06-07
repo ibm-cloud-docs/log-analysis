@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2019
-lastupdated: "2019-03-06"
+lastupdated: "2019-04-02"
 
 keywords: LogDNA, IBM, Log Analysis, logging instance, provision
 
@@ -140,7 +140,7 @@ subcollection: LogDNA
 
     SERVICE_PLAN_NAME은 플랜 유형입니다. 올바른 값은 *lite*, *7-days*, *14-days*, *30-days*입니다.
     
-    LOCATION은 LogDNA 인스턴스가 작성된 지역입니다. 올바른 값은 *us-south*입니다.
+    LOCATION은 LogDNA 인스턴스가 작성된 지역입니다. 올바른 값은 *us-south*, *eu-de*입니다.
 
     예를 들어, 7일의 보존 플랜이 있는 인스턴스를 프로비저닝하려면 다음 명령을 실행하십시오.
 
@@ -149,28 +149,6 @@ subcollection: LogDNA
     ```
     {: codeblock}
 
-5. 인스턴스를 조작할 수 있는 **관리자** 권한으로 서비스 키를 작성하십시오. [`ibmcloud resource service-key-create`](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_commands_resource#ibmcloud_resource_service_key_create) 명령을 실행하십시오.
 
-    ```
-    ibmcloud resource service-key-create NAME ROLE_NAME --instance-name SERVICE_INSTANCE_NAME
-    ```
-    {: codeblock}
-
-    여기서,
-
-    NAME은 API 키의 이름입니다. 나중에 API 키를 식별하는 데 도움이 되도록 {{site.data.keyword.la_full_notm}} 인스턴스와 같은 API 키에 이름을 지정할 수 있습니다.
-
-    ROLE_NAME은 사용 가능한 권한을 정의하는 역할입니다. 올바른 값은 *editor*, *operator*, *administrator*입니다.
-
-    SERVICE_INSTANCE_NAME은 {{site.data.keyword.cloud_notm}}의 인스턴스 이름입니다.
-
-    예를 들어, 서비스 인스턴스에서 *관리자* 권한으로 *logdna-instance-01* 인스턴스에 대한 API 키를 작성하려면 다음 명령을 실행하십시오.
-
-    ```
-    ibmcloud resource service-key-create logdna-instance-01 Administrator --instance-name logdna-instance-01
-    ```
-    {: pre}
-
-    이 명령의 출력에는 LogDNA 수집 키 및 인스턴스의 `crn` 값과 같이 여러 값이 포함됩니다.
 
 

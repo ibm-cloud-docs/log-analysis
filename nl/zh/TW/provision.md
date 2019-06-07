@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2019
-lastupdated: "2019-03-06"
+lastupdated: "2019-04-02"
 
 keywords: LogDNA, IBM, Log Analysis, logging instance, provision
 
@@ -136,11 +136,11 @@ subcollection: LogDNA
 
     NAME 是實例的名稱
 
-    值 *logdna* 是 {{site.data.keyword.cloud_notm}} 中 {{site.data.keyword.la_full_notm}} 服務的名稱
+    值 *logdna* 是 {{site.data.keyword.cloud_notm}} 中 {{site.data.keyword.la_full_notm}} 服務的名稱。
 
-    SERVICE_PLAN_NAME 是方案的類型。有效值為 *lite*、*7-days*、*14-days*、*30-days*
+    SERVICE_PLAN_NAME 是方案的類型。有效值為 *lite*、*7-days*、*14-days*、*30-days*。
     
-    LOCATION 是建立 LogDNA 實例的地區。有效值為 *us-south*
+    LOCATION 是建立 LogDNA 實例的地區。有效值為 *us-south*、*eu-de*。
 
     例如，若要佈建 7 天保留方案的實例，請執行下列指令：
 
@@ -149,28 +149,6 @@ subcollection: LogDNA
     ```
     {: codeblock}
 
-5. 建立服務金鑰，其具有可操作實例的**管理者**許可權。執行 [`ibmcloud resource service-key-create`](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_commands_resource#ibmcloud_resource_service_key_create) 指令：
 
-    ```
-    ibmcloud resource service-key-create NAME ROLE_NAME --instance-name SERVICE_INSTANCE_NAME
-    ```
-    {: codeblock}
-
-    其中
-
-    NAME 是 API 金鑰的名稱。您可以將 API 金鑰命名為 {{site.data.keyword.la_full_notm}} 實例，以協助您稍後識別 API 金鑰。
-
-    ROLE_NAME 是定義已啟用之許可權的角色。有效值為 *editor*、*operator*、*administrator*
-
-    SERVICE_INSTANCE_NAME 是 {{site.data.keyword.cloud_notm}} 中實例的名稱
-
-    例如，若要建立實例 *logdna-instance-01* 的 API 金鑰，其具有服務實例的 *administrator* 許可權，請執行下列指令：
-
-    ```
-    ibmcloud resource service-key-create logdna-instance-01 Administrator --instance-name logdna-instance-01
-    ```
-    {: pre}
-
-    這個指令的輸出包括不同的值，例如，實例的 `crn` 值，以及 LogDNA 汲取金鑰。
 
 

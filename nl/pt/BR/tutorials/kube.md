@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2019
-lastupdated: "2019-03-06"
+lastupdated: "2019-05-01"
 
 keywords: LogDNA, IBM, Log Analysis, logging, kubernetes, tutorial
 
@@ -50,19 +50,19 @@ Neste tutorial, você aprenderá como configurar a criação de log no nível do
 ## Antes de iniciar
 {: #kube_prereqs}
 
-Trabalhe na região Sul dos EUA. O {{site.data.keyword.la_full_notm}} está disponível atualmente na região Sul dos EUA. **Nota:** é possível enviar dados de um cluster Kubernetes que está localizado na mesma região ou em uma região diferente. 
+Trabalhe em uma [região suportada](/docs/services/Log-Analysis-with-LogDNA/tutorials?topic=LogDNA-about#overview_regions). **Nota:** é possível enviar dados de um cluster Kubernetes que está localizado na mesma região ou em uma região diferente. 
 
 Leia sobre o {{site.data.keyword.la_full_notm}}. Para obter mais informações, consulte [Sobre o ](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-about#about).
 
 Use um ID do usuário que seja um membro ou um proprietário de uma conta do {{site.data.keyword.cloud_notm}}. Para obter um ID do usuário do {{site.data.keyword.cloud_notm}}, acesse: [Registro ![Ícone de link externo](../../../icons/launch-glyph.svg "Ícone de link externo")](https://cloud.ibm.com/login){:new_window}.
 
-O seu {{site.data.keyword.IBM_notm}}id deve ter políticas do IAM designadas para cada um dos recursos a seguir: 
+Seu ID do {{site.data.keyword.IBM_notm}}deve ter designadas as políticas do IAM para cada um dos recursos a seguir na região em que está a sua instância do {{site.data.keyword.la_full_notm}}:  
 
-| Recurso                             | Escopo da política de acesso | Função    | Região    | Informações                  |
-|--------------------------------------|----------------------------|---------|-----------|------------------------------|
-| Grupo de recursos **Padrão**           |  Grupo de recursos            | Visualizador  | us-south  | Essa política é necessária para permitir que o usuário veja instâncias de serviço no Grupo de recursos padrão.    |
-| Serviço {{site.data.keyword.la_full_notm}} |  Grupo de recursos            | Aplicativos  | us-south  | Essa política é necessária para permitir que o usuário provisione e administre o serviço do {{site.data.keyword.la_full_notm}} no Grupo de recursos padrão.   |
-| Instância de cluster do Kubernetes          |  Recurso                 | Aplicativos  | us-south  | Essa política é necessária para configurar o segredo e o agente LogDNA no cluster Kubernetes. |
+| Recurso                             | Escopo da política de acesso | Função    | Informações                  |
+|--------------------------------------|----------------------------|---------|------------------------------|
+| Grupo de recursos **Padrão**           |  Grupo de recursos            | Visualizador  | Essa política é necessária para permitir que o usuário veja instâncias de serviço no Grupo de recursos padrão.    |
+| Serviço {{site.data.keyword.la_full_notm}} |  Grupo de recursos            | Aplicativos  | Essa política é necessária para permitir que o usuário provisione e administre o serviço do {{site.data.keyword.la_full_notm}} no Grupo de recursos padrão.   |
+| Instância de cluster do Kubernetes          |  Recurso                 | Aplicativos  | Essa política é necessária para configurar o segredo e o agente LogDNA no cluster Kubernetes. |
 {: caption="Tabela 1. Lista de políticas do IAM necessárias para concluir o tutorial" caption-side="top"} 
 
 Para obter mais informações sobre as funções do IAM do {{site.data.keyword.containerlong}}, consulte [Permissões de acesso de usuário](/docs/containers?topic=containers-access_reference#access_reference).
@@ -136,7 +136,7 @@ Para configurar o seu cluster Kubernetes para encaminhar logs para a sua instân
 1. Abra um terminal para efetuar login no {{site.data.keyword.cloud_notm}}.
 
    ```
-   ibmcloud login -a api.ng.bluemix.net
+   ibmcloud login -a cloud.ibm.com
    ```
    {: pre}
 

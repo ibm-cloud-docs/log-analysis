@@ -159,5 +159,3 @@ Führen Sie die folgenden Schritte aus, um eine Ansicht zu erstellen:
 6. Ordnen Sie wahlweise einen Alert zu. Ein neuer Abschnitt wird angezeigt, in dem Sie den Alert konfigurieren können.
 
 7. Klicken Sie auf **Ansicht speichern**.
-
-

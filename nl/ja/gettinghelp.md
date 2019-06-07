@@ -32,6 +32,6 @@ subcollection: LogDNA
 
 * フォーラムの情報を見て、他のユーザーも同じ問題を経験しているかどうかを調べることができます。 フォーラムを使用して質問する場合、質問にタグを付けて {{site.data.keyword.cloud_notm}} 開発チームの目につくようにしてください。
 <!--Insert the appropriate Stack Overflow tag for your service for <service_keyword> in URL and text below:  -->
-  * {{site.data.keyword.la_full_notm}} サービスに関して技術上の質問がある場合は、質問を [Stack Overflow](http://stackoverflow.com/search?q=log-analysis-with-logdna+ibm-cloud){:new_window} に投稿し、質問には「ibm-cloud」と「log-analysis-with-logdna」のタグを付けてください。
+  * {{site.data.keyword.la_full_notm}} サービスに関して技術上の質問がある場合は、質問を [Stack Overflow](http://stackoverflow.com/search?q=logdna+ibm-cloud){:new_window} に投稿し、質問には `ibm-cloud` と `loganalysis-logdna` のタグを付けてください。
 
 * それでも問題を解決できない場合は、IBM サポート・チケットを開くことができます。 IBM サポート・チケットのオープンや、サポート・レベルとチケットの重大度については、[ サポートの利用](/docs/get-support?topic=get-support-getting-customer-support#getting-customer-support)を参照してください。

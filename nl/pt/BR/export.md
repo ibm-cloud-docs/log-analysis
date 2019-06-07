@@ -107,7 +107,7 @@ A tabela a seguir lista os parâmetros de consulta que podem ser configurados:
 | `query`     | `string`     | Opcional   | Procurar consulta. Para obter mais informações, consulte  [ Logs de procura ](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-view_logs#view_logs_step6). |
 | `prefer`    | `string`     | Opcional   | Define as linhas de log que você deseja exportar. Os valores válidos são `head`, as primeiras linhas do log, e `tail`, as últimas linhas do log. Se não especificado, o padrão será padronizado.  |
 | `email`     | `string`     | Opcional   | Especifica o e-mail com o link transferível por download de sua exportação. Por padrão, as linhas do log são transmitidas.|
-| `emailSubject` | `string`     | Opcional   | Use para configurar o assunto do e-mail. </br>Use  ` %20 `  para representar um espaço. Por exemplo, um valor de amostra é `Export%20logs`. |
+| `emailSubject` | `string`     | Opcional   | Use para configurar o assunto do e-mail. </br>Use `%20` para representar um espaço. Por exemplo, um valor de amostra é `Export%20logs`. |
 {: caption="Parâmetros de consulta" caption-side="top"} 
 
 Por exemplo, para transmitir linhas de log para o terminal, é possível executar o comando a seguir:

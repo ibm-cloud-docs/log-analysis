@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2019
-lastupdated: "2019-03-06"
+lastupdated: "2019-05-01"
 
 keywords: LogDNA, IBM, Log Analysis, logging, iam, manage user access
 
@@ -49,6 +49,17 @@ de designar o mesmo acesso múltiplas vezes por usuário ou ID de serviço indiv
 {: tip}
 
 
+## Gerenciando acesso usando grupos de acesso
+{: #groups}
+
+Para gerenciar o acesso ou designar um novo acesso para usuários usando grupos de acesso, deve-se ser o proprietário da conta, o administrador ou o editor em todos os serviços ativados do Identity and Access na conta ou o administrador ou o editor designado para o serviço de grupos de acesso do IAM. 
+
+Escolha qualquer uma das ações a seguir para gerenciar os grupos de acesso no {{site.data.keyword.cloud_notm}}:
+
+* [ Criando um grupo de acesso ](/docs/iam?topic=iam-groups#create_ag).
+* [ Designando acesso a um grupo ](/docs/iam?topic=iam-groups#access_ag).
+
+
 ## Gerenciando o acesso designando as políticas diretamente para os usuários
 {: #users}
 
@@ -62,16 +73,6 @@ Escolha qualquer uma das ações a seguir para gerenciar as políticas do IAM no
 * Para revisar as permissões de um usuário, consulte [Revisando seu acesso designado](/docs/iam?topic=iam-iammanidaccser#review_your_access).
 
 
-## Gerenciando acesso usando grupos de acesso
-{: #groups}
-
-Para gerenciar o acesso ou designar um novo acesso para usuários usando grupos de acesso, deve-se ser o proprietário da conta, o administrador ou o editor em todos os serviços ativados do Identity and Access na conta ou o administrador ou o editor designado para o serviço de grupos de acesso do IAM. 
-
-Escolha qualquer uma das ações a seguir para gerenciar os grupos de acesso no {{site.data.keyword.cloud_notm}}:
-
-* [ Criando um grupo de acesso ](/docs/iam?topic=iam-groups#create_ag).
-* [ Designando acesso a um grupo ](/docs/iam?topic=iam-groups#access_ag).
-
 
 
 ## {{site.data.keyword.cloud_notm}}  funções da plataforma
@@ -79,14 +80,15 @@ Escolha qualquer uma das ações a seguir para gerenciar os grupos de acesso no 
 
 Use a tabela a seguir para identificar a função de plataforma que você pode conceder a um usuário no {{site.data.keyword.cloud_notm}} para executar qualquer uma das ações de plataforma a seguir:
 
-| Ações da plataforma                                                        | Funções do {{site.data.keyword.cloud_notm}} Platform    | 
-|-------------------------------------------------------------------------|------------------------------------------------------|
-| `Conceder acesso aos outros membros da conta para que trabalhem com o serviço`           | Administrador                                        | 
-| `Fornecer uma instância de serviço`                                          | Aplicativos                            | 
-| `Excluir uma instância de serviço`                                             | Administrador </br>Aplicativos                            | 
-| `Criar um ID de serviço`                                                   | Administrador </br>Aplicativos                            |
-| `Visualizar detalhes de uma instância de serviço`                                    | Administrador </br>Aplicativos </br>Operador </br>Visualizador  | 
-| `Visualizar instâncias de serviço no painel Criação de log de observabilidade`         | Administrador </br>Aplicativos </br>Operador </br>Visualizador  | 
+| Ações da plataforma                                                         | Funções do {{site.data.keyword.cloud_notm}} Platform    | 
+|--------------------------------------------------------------------------|------------------------------------------------------|
+| `Conceder acesso aos outros membros da conta para que trabalhem com o serviço`            | Administrador                                        | 
+| `Fornecer uma instância de serviço`                                           | Aplicativos                            | 
+| `Excluir uma instância de serviço`                                              | Administrador </br>Editor                            | 
+| `Criar um ID de serviço`                                                    | Administrador </br>Editor                            |
+| `Visualizar detalhes de uma instância de serviço`                                     | Administrador </br>Editor </br>Operador </br>Visualizador  | 
+| `Visualizar instâncias de serviço no painel Criação de log de observabilidade`          | Administrador </br>Editor </br>Operador </br>Visualizador  | 
+| `Visualize a chave de ingestão no console do {{site.data.keyword.cloud_notm}}` | Administrador                                        | 
 {: caption="Tabela 1. Funções e ações do usuário do IAM" caption-side="top"}
 
 
@@ -98,17 +100,19 @@ Use a tabela a seguir para identificar as funções de serviço que você pode c
 
 | Ações                                                                 | Funções de serviço do {{site.data.keyword.cloud_notm}}     | 
 |-------------------------------------------------------------------------|------------------------------------------------------|
-| `Add LogDNA log sources`                                                | Gerenciador                                              |
-| `Manage ingestion keys`                                                 | Gerenciador                                              |
-| `Manage service keys`                                                   | Gerenciador                                              |
-| `Archive logs`                                                          | Gerenciador                                              |
-| `Configure alerts`                                                      | Gerenciador </br>Gravador </br>Reader                      | 
-| `Filter and search log data`                                            | Gerenciador </br>Gravador </br>Reader                      |
-| `Create views`                                                          | Gerenciador </br>Gravador </br>Reader                      |
-| `Export log data`                                                       | Gerenciador </br>Gravador </br>Reader                      |
-| `Configure user preferences in the LogDNA web UI`                       | Gerenciador </br>Gravador </br>Reader                      |
-| `View logs through the LogDNA web UI`                                   | Gerenciador </br>Gravador </br>Reader                      | 
-{: caption="Tabela 3. Funções e ações do usuário do IAM" caption-side="top"}
+| `Incluir origens de log do LogDNA`                                                | Gerenciador                                              |
+| `Gerenciar chaves de ingestão pela IU da web do LogDNA`                       | Gerenciador                                              |
+| `Gerenciar chaves de serviço`                                                   | Gerenciador                                              |
+| `Arquivar logs`                                                          | Gerenciador                                              |
+| `Gerenciar análise sintática`                                                        | Gerenciador                                              |
+| `Configurar alertas`                                                      | Gerenciador </br>Gravador </br>Leitor                      | 
+| `Filtrar e procurar dados do log`                                            | Gerenciador </br>Gravador </br>Leitor                      |
+| `Criar visualizações`                                                          | Gerenciador </br>Gravador </br>Leitor                      |
+| `Gerenciar visualizações`                                                          | Gerenciador </br>Gravador </br>Leitor                      |
+| `Exportar dados do log`                                                       | Gerenciador </br>Gravador </br>Leitor                      |
+| `Configurar preferências do usuário na IU da web do LogDNA`                       | Gerenciador </br>Gravador </br>Leitor                      |
+| `Visualizar logs pela IU da web do LogDNA`                                   | Gerenciador </br>Gravador </br>Leitor                      | 
+{: caption="Tabela 2. Funções e ações do usuário do IAM" caption-side="top"}
 
 
 **Nota:** a função de serviço **gerenciador** é mapeada diretamente para a função de administrador de LogDNA.

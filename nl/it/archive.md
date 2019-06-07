@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2019
-lastupdated: "2019-03-06"
+lastupdated: "2019-05-01"
 
 keywords: LogDNA, IBM, Log Analysis, logging, archive logs, COS, cloud object storage
 
@@ -51,7 +51,7 @@ La seguente figura mostra una vista di alto livello dei diversi componenti che s
 Completa la seguente procedura per archiviare un'istanza {{site.data.keyword.la_full_notm}} in un bucket in un'istanza {{site.data.keyword.cos_full_notm}}:
 
 
-## Passo 1. Concedi le politiche IAM a un utente per utilizzare {{site.data.keyword.cos_full_notm}} 
+## Passo 1. Concedi le politiche IAM a un utente per utilizzare {{site.data.keyword.cos_full_notm}}
 {: #archiving_step1}
 
 **Nota:** questo passo deve essere completato dal proprietario dell'account o da un amministratore del servizio {{site.data.keyword.cos_full_notm}} su {{site.data.keyword.cloud_notm}}.
@@ -135,7 +135,7 @@ Per gestire i bucket, al tuo utente devono essere concesse le autorizzazioni per
 
 | Servizio                    | Ruoli                   | Azione                             | 
 |----------------------------|-------------------------|------------------------------------|       
-| `Cloud Object Storage`     | Ruolo della piattaforma: Visualizzatore   | Consente all'utente di visualizzare tutti i bucket ed elencare gli oggetti al loro interno mediante l'IU {site.data.keyword.Bluemix_notm}}. |
+| `Cloud Object Storage`     | Ruolo della piattaforma: Visualizzatore   | Consente all'utente di visualizzare tutti i bucket ed elencare gli oggetti al loro interno mediante l'IU {{site.data.keyword.cloud_notm}}. |
 | `Cloud Object Storage`     | Ruolo del servizio: Gestore   | Consente all'utente di rendere pubblici gli oggetti.                                                       |
 | `Cloud Object Storage`     | Ruoli del servizio: Gestore </br>Scrittore | Consente all'utente di creare ed eliminare bucket e oggetti.                         | 
 | `Cloud Object Storage`     | Ruolo del servizio: Lettore    | Consente all'utente di elencare e scaricare oggetti.                                                 |
@@ -173,21 +173,21 @@ Per creare un bucket, completa la seguente procedura:
     
     Un singolo data center distribuirà i dati solo nei dispositivi in un singolo sito.
 
-    Per ulteriori informazioni, vedi il documento relativo alla [selezione di regioni ed endpoint](/docs/services/cloud-object-storage?topic=cloud-object-storage-endpoints#endpoints).
+    Per ulteriori informazioni, vedi il documento relativo alla [selezione di regioni ed endpoint](/docs/services/cloud-object-storage?topic=cloud-object-storage-endpoints).
 
 6. Scegli il tipo di *Classe di archiviazione*.
 
-    Puoi creare i bucket con classi di archiviazione differenti. Scegli la classe di archiviazione per il tuo bucket in base ai tuoi requisiti per richiamare i dati. Per ulteriori informazioni, vedi il documento relativo all'[utilizzo delle classi di archiviazione](/docs/services/cloud-object-storage?topic=cloud-object-storage-use-storage-classes#use-storage-classes).
+    Puoi creare i bucket con classi di archiviazione differenti. Scegli la classe di archiviazione per il tuo bucket in base ai tuoi requisiti per richiamare i dati. Per ulteriori informazioni, vedi il documento relativo all'[utilizzo delle classi di archiviazione](/docs/services/cloud-object-storage?topic=cloud-object-storage-classes).
 
     **Nota:** non è possibile modificare la classe di archiviazione di un bucket dopo che il bucket è stato creato. Se gli oggetti devono essere riclassificati, è necessario spostare i dati in un altro bucket con la classe di archiviazione desiderata.
 
 7. Facoltativamente, aggiungi una chiave Key Protect per crittografare i dati inattivi.
 
-    Tutti gli oggetti vengono crittografati per impostazione predefinita utilizzando chiavi generate casualmente e una modalità AONT (all-or-nothing-transform). Nonostante questo modello di crittografia fornisca la sicurezza sui dati inattivi, alcuni carichi di lavoro devono disporre delle chiavi di crittografia utilizzate. Per ulteriori informazioni, vedi il documento relativo alla [gestione della crittografia](/docs/services/cloud-object-storage?topic=cloud-object-storage-manage-encryption#manage-encryption).
+    Tutti gli oggetti vengono crittografati per impostazione predefinita utilizzando chiavi generate casualmente e una modalità AONT (all-or-nothing-transform). Nonostante questo modello di crittografia fornisca la sicurezza sui dati inattivi, alcuni carichi di lavoro devono disporre delle chiavi di crittografia utilizzate. Per ulteriori informazioni, vedi il documento relativo alla [gestione della crittografia](/docs/services/cloud-object-storage?topic=cloud-object-storage-encryption).
 
 
 
-## Passo 4. Crea un ID servizio per l'istanza di {{site.data.keyword.cos_full_notm}} 
+## Passo 4. Crea un ID servizio per l'istanza di {{site.data.keyword.cos_full_notm}}
 {: #archiving_step4}
 
 Un ID servizio identifica un servizio analogamente a come un ID utente identifica un utente. Gli ID servizio non sono collegati a un utente specifico. Se l'utente che crea l'ID servizio lascia la tua organizzazione e viene eliminato dall'account, l'ID servizio rimane.

@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2019
-lastupdated: "2019-03-06"
+lastupdated: "2019-04-02"
 
 keywords: LogDNA, IBM, Log Analysis, logging instance, provision
 
@@ -113,7 +113,7 @@ subcollection: LogDNA
 
 コマンド・ラインによって {{site.data.keyword.la_full_notm}} のインスタンスをプロビジョンするには、以下の手順を実行します。
 
-1. [前提条件] {{site.data.keyword.cloud_notm}} CLI をインストールします。 
+1. [前提条件] {{site.data.keyword.cloud_notm}} CLI をインストールします。
 
    詳しくは、[『{{site.data.keyword.cloud_notm}}CLI のインストール』](/docs/cli?topic=cloud-cli-ibmcloud-cli#ibmcloud-cli)を参照してください。
 
@@ -138,9 +138,9 @@ subcollection: LogDNA
 
     値 *logdna* は、{{site.data.keyword.cloud_notm}} での {{site.data.keyword.la_full_notm}} サービスの名前です。
 
-    SERVICE_PLAN_NAME はプランのタイプです。 有効値は、*lite*、*7-days*、*14-days*、*30-days* です
+    SERVICE_PLAN_NAME はプランのタイプです。 有効値は、*lite*、*7-days*、*14-days*、*30-days* です。
     
-    LOCATION は LogDNA インスタンスが作成される地域です。 有効値は *us-south* です。
+    LOCATION は LogDNA インスタンスが作成される地域です。 有効値は、*us-south*、*eu-de* です。
 
     例えば、7 日間の保存プランでインスタンスをプロビジョンするには、以下のコマンドを実行します。
 
@@ -149,28 +149,6 @@ subcollection: LogDNA
     ```
     {: codeblock}
 
-5. インスタンスを操作するために、**管理者**許可のあるサービス・キーを作成します。 次の [`ibmcloud resource service-key-create`](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_commands_resource#ibmcloud_resource_service_key_create) コマンドを実行します。
 
-    ```
-    ibmcloud resource service-key-create NAME ROLE_NAME --instance-name SERVICE_INSTANCE_NAME
-    ```
-    {: codeblock}
-
-    説明
-
-    NAME は、API キーの名前です。 後に API キーを容易に識別できるように、{{site.data.keyword.la_full_notm}} インスタンスのように API 鍵に名前を付けることができます。
-
-    ROLE_NAME は、有効な許可を定義する役割です。 有効値は、*editor*、*operator*、*administrator* です
-
-    SERVICE_INSTANCE_NAME は {{site.data.keyword.cloud_notm}} 内のインスタンスの名前です
-
-    例えば、サービス・インスタンスに対する *administrator* 許可のあるインスタンス *logdna-instance-01* の API 鍵を作成するには、以下のコマンドを実行します。
-
-    ```
-    ibmcloud resource service-key-create logdna-instance-01 Administrator --instance-name logdna-instance-01
-    ```
-    {: pre}
-
-    このコマンドの出力には、インスタンスの `crn` 値や LogDNA 取り込み鍵などの、さまざまな値が含まれます。
 
 

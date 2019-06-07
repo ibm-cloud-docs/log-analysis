@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2019
-lastupdated: "2019-03-06"
+lastupdated: "2019-05-01"
 
 keywords: LogDNA, IBM, Log Analysis, logging, config agent
 
@@ -55,7 +55,7 @@ Führen Sie die folgenden Schritte über die Befehlszeile aus, wenn Sie Ihren Ku
 1. Öffnen Sie ein Terminal für die Anmeldung bei {{site.data.keyword.cloud_notm}}.
 
    ```
-   ibmcloud login -a api.ng.bluemix.net
+   ibmcloud login -a cloud.ibm.com
    ```
    {: pre}
 
@@ -72,17 +72,28 @@ Führen Sie die folgenden Schritte über die Befehlszeile aus, wenn Sie Ihren Ku
 
 3. Erstellen Sie einen geheimen Kubernetes-Schlüssel, um den logDNA-Aufnahmeschlüssel für Ihre Serviceinstanz speichern zu können. Mit dem LogDNA-Aufnahmeschlüssel wird ein sicheres Web-Socket für den logDNA-Aufnahmeserver geöffnet und der Protokollierungsagent im {{site.data.keyword.la_full_notm}}-Service authentifiziert.
 
-   ```
-   kubectl create secret generic logdna-agent-key --from-literal=logdna-agent-key=<logDNA-Aufnahmeschlüssel>
-   ```
-   {: pre}
+    ```
+    kubectl create secret generic logdna-agent-key --from-literal=logdna-agent-key=<logDNA-Aufnahmeschlüssel>
+    ```
+    {: pre}
 
 4. Erstellen Sie einen Kubernetes-Dämon, um den LogDNA-Agenten auf jedem Workerknoten Ihres Kubernetes-Clusters zu implementieren. Der LogDNA-Agent sammelt Protokolle mit der Erweiterung `*.log` und Dateien ohne Erweiterung, die im Verzeichnis `/var/log` Ihres Pods gespeichert sind. Protokolle werden standardmäßig aus allen Namensbereichen erfasst, einschließlich `Kube-System`, und automatisch an den {{site.data.keyword.la_full_notm}}-Service weitergeleitet.
 
-   ```
-   kubectl create -f https://repo.logdna.com/ibm/prod/logdna-agent-ds-us-south.yaml
-   ```
-   {: pre}
+    <table>
+      <caption>Befehle nach Region</caption>
+      <tr>
+        <th>Standort</th>
+        <th>Befehl</th>
+      </tr>
+      <tr>
+        <td>`US-South`</td>
+        <td>`kubectl create -f https://repo.logdna.com/ibm/prod/logdna-agent-ds-us-south.yaml`</td>
+      </tr>
+      <tr>
+        <td>`EU-DE`</td>
+        <td>`kubectl create -f https://repo.logdna.com/ibm/prod/logdna-agent-ds-eu-de.yaml`</td>
+      </tr>
+    </table>
 
 5. Überprüfen Sie, ob der LogDNA-Agent erfolgreich implementiert wurde. 
 
@@ -136,14 +147,14 @@ Führen Sie die folgenden Schritte aus, um Tags hinzuzufügen:
     Aktualisieren Sie die Konfigurationsdatei durch eine Änderung der lokalen Kopie. **Anmerkung:** Sie können die Konfigurationsdatei des Agenten auch mit dem folgenden Befehl generieren:
 
     ```
-    kubectl get configmap logdna-agent -o=yaml > prod-logdna-agent-configmap.yaml
+    kubectl get daemonset logdna-agent -o=yaml > prod-logdna-agent-ds.yaml
     ```
     {: codeblock}
 
     Alternativ können Sie die Konfigurationsdatei mithilfe von *kubectl edit* aktualisieren.
 
     ```
-    kubectl edit configmap logdna-agent
+    kubectl edit daemonset logdna-agent
     ```
     {: codeblock}
 
@@ -192,7 +203,7 @@ Führen Sie die folgenden Schritte aus, um Tags hinzuzufügen:
 5. Wenden Sie die Konfigurationsänderungen an, wenn Sie die Datei lokal bearbeiten. 
 
     ```
-    kubectl apply -f logdna-agent-configmap.yaml
+    kubectl apply -f prod-logdna-agent-ds.yaml
     ```
     {: codeblock}
     
@@ -239,17 +250,39 @@ Führen Sie die folgenden Schritte über ein Ubuntu-Terminal aus, wenn Sie Ihren
 
 3. Geben Sie den Authentifizierungsendpunkt an. Der LogDNA-Agent verwendet diesen Host zur Authentifizierung und zum Abrufen des Tokens für die Weiterleitung von Protokollen.
 
-    ```
-    sudo logdna-agent -s LOGDNA_APIHOST=api.us-south.logging.cloud.ibm.com
-    ```
-    {: codeblock}
+    <table>
+      <caption>Befehle nach Region</caption>
+      <tr>
+        <th>Standort</th>
+        <th>Befehl</th>
+      </tr>
+      <tr>
+        <td>`US-South`</td>
+        <td>`sudo logdna-agent -s LOGDNA_APIHOST=api.us-south.logging.cloud.ibm.com`</td>
+      </tr>
+      <tr>
+        <td>`EU-DE`</td>
+        <td>`sudo logdna-agent -s LOGDNA_APIHOST=api.eu-de.logging.cloud.ibm.com`</td>
+      </tr>
+    </table>
 
 4. Geben Sie den Aufnahmeendpunkt an.
 
-    ```
-    sudo logdna-agent -s LOGDNA_LOGHOST=logs.us-south.logging.cloud.ibm.com
-    ```
-    {: codeblock}
+    <table>
+      <caption>Befehle nach Region</caption>
+      <tr>
+        <th>Standort</th>
+        <th>Befehl</th>
+      </tr>
+      <tr>
+        <td>`US-South`</td>
+        <td>`sudo logdna-agent -s LOGDNA_LOGHOST=logs.us-south.logging.cloud.ibm.com`</td>
+      </tr>
+      <tr>
+        <td>`EU-DE`</td>
+        <td>`sudo logdna-agent -s LOGDNA_LOGHOST=logs.eu-de.logging.cloud.ibm.com`</td>
+      </tr>
+    </table>
 
 5. Definieren Sie weitere zu überwachende Protokollpfade. Führen Sie den folgenden Befehl aus: 
 

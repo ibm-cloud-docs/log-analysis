@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2019
-lastupdated: "2019-03-06"
+lastupdated: "2019-05-01"
 
 keywords: LogDNA, IBM, Log Analysis, logging, kubernetes, tutorial
 
@@ -50,19 +50,19 @@ En esta guía de aprendizaje, aprenderá a configurar el registro a nivel de cl�
 ## Antes de empezar
 {: #kube_prereqs}
 
-Trabaje en la región EE. UU. sur. {{site.data.keyword.la_full_notm}} está disponible actualmente en la región del sur de EE.UU. **Nota:** puede enviar datos desde un clúster de Kubernetes que se encuentre en la misma región o en una región distinta. 
+Trabaje en una [región soportada](/docs/services/Log-Analysis-with-LogDNA/tutorials?topic=LogDNA-about#overview_regions). **Nota:** puede enviar datos desde un clúster de Kubernetes que se encuentre en la misma región o en una región distinta. 
 
 Obtenga más información sobre {{site.data.keyword.la_full_notm}}. Encontrará detalles en la sección [Acerca de](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-about#about).
 
 Utilice un ID de usuario que sea miembro o propietario de una cuenta de {{site.data.keyword.cloud_notm}}. Para obtener un ID de usuario de {{site.data.keyword.cloud_notm}}, vaya a: [Registro ![Icono de enlace externo](../../../icons/launch-glyph.svg "Icono de enlace externo")](https://cloud.ibm.com/login){:new_window}.
 
-El ID de {{site.data.keyword.IBM_notm}} debe tener asignadas políticas de IAM para cada uno de los siguientes recursos: 
+El ID de {{site.data.keyword.IBM_notm}} debe tener asignadas políticas de IAM para cada uno de los siguientes recursos en la región donde se encuentra la instancia de {{site.data.keyword.la_full_notm}}:  
 
-| Recurso                             | Ámbito de la política de acceso | Rol    | Región    | Información                  |
-|--------------------------------------|----------------------------|---------|-----------|------------------------------|
-| Grupo de recursos **predeterminado**           |  Grupo de recursos            | Visor  | us-south  | Esta política es necesaria para permitir que el usuario vea las instancias de servicio en el grupo de recursos predeterminado.    |
-| Servicio {{site.data.keyword.la_full_notm}} |  Grupo de recursos            | Editor  | us-south  | Esta política es necesaria para permitir que el usuario suministre y administre el servicio {{site.data.keyword.la_full_notm}} en el grupo de recursos predeterminado.   |
-| Instancia de clúster de Kubernetes          |  Recurso                 | Editor  | us-south  | Esta política es necesaria para poder configurar el secreto y el agente LogDNA en el clúster de Kubernetes. |
+| Recurso                             | Ámbito de la política de acceso | Rol    | Información                  |
+|--------------------------------------|----------------------------|---------|------------------------------|
+| Grupo de recursos **predeterminado**           |  Grupo de recursos            | Visor  | Esta política es necesaria para permitir que el usuario vea las instancias de servicio en el grupo de recursos predeterminado.    |
+| Servicio {{site.data.keyword.la_full_notm}} |  Grupo de recursos            | Editor  | Esta política es necesaria para permitir que el usuario suministre y administre el servicio {{site.data.keyword.la_full_notm}} en el grupo de recursos predeterminado.   |
+| Instancia de clúster de Kubernetes          |  Recurso                 | Editor  | Esta política es necesaria para poder configurar el secreto y el agente LogDNA en el clúster de Kubernetes. |
 {: caption="Tabla 1. Lista de políticas de IAM necesarias para completar la guía de aprendizaje" caption-side="top"} 
 
 Para obtener más información sobre los roles de IAM de {{site.data.keyword.containerlong}}, consulte [Permisos de acceso de usuario](/docs/containers?topic=containers-access_reference#access_reference).
@@ -136,7 +136,7 @@ Para configurar el clúster de Kubernetes para reenviar registros a su instancia
 1. Abra un terminal para iniciar sesión en {{site.data.keyword.cloud_notm}}.
 
    ```
-   ibmcloud login -a api.ng.bluemix.net
+   ibmcloud login -a cloud.ibm.com
    ```
    {: pre}
 

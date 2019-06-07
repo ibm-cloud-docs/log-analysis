@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2019
-lastupdated: "2019-03-06"
+lastupdated: "2019-05-01"
 
 keywords: LogDNA, IBM, Log Analysis, logging, archive logs, COS, cloud object storage
 
@@ -135,7 +135,7 @@ Pour gérer les compartiments, l'utilisateur doit disposer de droits d'utilisati
 
 | Service                    | Rôles                   | Action                             | 
 |----------------------------|-------------------------|------------------------------------|       
-| `Cloud Object Storage`     | Rôle de plateforme : Afficheur   | Autorise l'utilisateur à afficher tous les compartiments et à répertorier les objets qu'ils contiennent via l'interface utilisateur {site.data.keyword.Bluemix_notm}}. |
+| `Cloud Object Storage`     | Rôle de plateforme : Afficheur   | Autorise l'utilisateur à afficher tous les compartiments et à répertorier les objets qu'ils contiennent via l'interface utilisateur {{site.data.keyword.cloud_notm}}. |
 | `Cloud Object Storage`     | Rôle de service : Responsable   | Autorise l'utilisateur à rendre des objets publics.                                                       |
 | `Cloud Object Storage`     | Rôles de service : Responsable </br>Auteur | Autorise l'utilisateur à créer et à détruire des compartiments et des objets.                         | 
 | `Cloud Object Storage`     | Rôle de service : Lecteur    | Autorise l'utilisateur à répertorier et télécharger des objets.                                                 |
@@ -173,17 +173,17 @@ Pour créer un compartiment, procédez comme suit :
     
     Un centre de données unique distribue les données uniquement aux périphériques d'un seul site.
 
-    Pour plus d'informations, voir [Select regions and endpoints](/docs/services/cloud-object-storage?topic=cloud-object-storage-endpoints#endpoints).
+    Pour plus d'informations, voir [Select regions and endpoints](/docs/services/cloud-object-storage?topic=cloud-object-storage-endpoints).
 
 6. Sélectionnez le type de *Classe de stockage*.
 
-    Vous pouvez créer des compartiments ayant différentes classes de stockage. Sélectionnez la classe de stockage de votre compartiment en fonction de vos besoins en matière d'extraction des données. Pour plus d'informations, voir [Use storage classes](/docs/services/cloud-object-storage?topic=cloud-object-storage-use-storage-classes#use-storage-classes).
+    Vous pouvez créer des compartiments ayant différentes classes de stockage. Sélectionnez la classe de stockage de votre compartiment en fonction de vos besoins en matière d'extraction des données. Pour plus d'informations, voir [Use storage classes](/docs/services/cloud-object-storage?topic=cloud-object-storage-classes).
 
     **Remarque :** une fois le compartiment créé, vous ne pouvez plus modifier la classe de stockage. Si vous avez besoin de reclassifier des objets, vous devez déplacer les données vers un autre compartiment ayant la classe de stockage requise.
 
 7. Vous pouvez éventuellement ajouter une clé Key Protect pour chiffrer les données au repos.
 
-    Tous les objets sont chiffrés par défaut à l'aide de clés générées de manière aléatoire et d'une transformation en tout ou rien. Même si ce modèle de chiffrement par défaut fournit une sécurité au repos, certaines charges de travail doivent posséder les clés de chiffrement utilisées. Pour plus d'informations, voir [Manage encryption](/docs/services/cloud-object-storage?topic=cloud-object-storage-manage-encryption#manage-encryption).
+    Tous les objets sont chiffrés par défaut à l'aide de clés générées de manière aléatoire et d'une transformation en tout ou rien. Même si ce modèle de chiffrement par défaut fournit une sécurité au repos, certaines charges de travail doivent posséder les clés de chiffrement utilisées. Pour plus d'informations, voir [Manage encryption](/docs/services/cloud-object-storage?topic=cloud-object-storage-encryption).
 
 
 

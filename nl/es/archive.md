@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2019
-lastupdated: "2019-03-06"
+lastupdated: "2019-05-01"
 
 keywords: LogDNA, IBM, Log Analysis, logging, archive logs, COS, cloud object storage
 
@@ -136,7 +136,7 @@ Para gestionar los grupos, se deben otorgar al usuario permisos para trabajar co
 
 | Servicio                    | Roles                   | Acción                             | 
 |----------------------------|-------------------------|------------------------------------|       
-| `Cloud Object Storage`     | Rol de la plataforma: Visor   | Permite que el usuario pueda ver todos los grupos y listar los objetos dentro de ellos a través de la interfaz de usuario de {site.data.keyword.Bluemix_notm}}. |
+| `Cloud Object Storage`     | Rol de la plataforma: Visor   | Permite que el usuario pueda ver todos los grupos y listar los objetos dentro de ellos a través de la interfaz de usuario de {{site.data.keyword.cloud_notm}}. |
 | `Cloud Object Storage`     | Rol de servicio: Gestor   | Permite que el usuario pueda establecer objetos como públicos.                                                       |
 | `Cloud Object Storage`     | Roles de servicio: Gestor </br>Escritor | Permite que el usuario pueda crear y destruir grupos y objetos.                         | 
 | `Cloud Object Storage`     | Rol de servicio: Lector    | Permite que el usuario pueda listar y descargar objetos.                                                 |
@@ -174,17 +174,17 @@ Realice los pasos siguientes para crear un grupo:
     
     Un centro de datos individual solo distribuirá los datos en dispositivos dentro de un único sitio.
 
-    Para obtener más información, consulte [Seleccionar regiones y puntos finales](/docs/services/cloud-object-storage?topic=cloud-object-storage-endpoints#endpoints).
+    Para obtener más información, consulte [Seleccionar regiones y puntos finales](/docs/services/cloud-object-storage?topic=cloud-object-storage-endpoints).
 
 6. Elija el tipo de *Clase de almacenamiento*.
 
-    Puede crear grupos con distintas clases de almacenamiento. Elija la clase de almacenamiento del grupo según sus requisitos de recuperación de datos. Para obtener más información, consulte [Utilizar clases de almacenamiento](/docs/services/cloud-object-storage?topic=cloud-object-storage-use-storage-classes#use-storage-classes).
+    Puede crear grupos con distintas clases de almacenamiento. Elija la clase de almacenamiento del grupo según sus requisitos de recuperación de datos. Para obtener más información, consulte [Utilizar clases de almacenamiento](/docs/services/cloud-object-storage?topic=cloud-object-storage-classes).
 
     **Nota:** no es posible cambiar la clase de almacenamiento de un grupo una vez que se haya creado. Si fuera necesario volver a clasificar los objetos, se deben mover los datos a otro grupo con la clase de almacenamiento deseada.
 
 7. También puede añadir una clave de protección de clave para cifrar los datos en reposo.
 
-    Todos los objetos se cifran de forma predeterminada utilizando claves generadas de forma aleatoria y una transformación de todo o nada. Aunque este modelo de cifrado predeterminado proporciona seguridad en reposo, algunas cargas de trabajo necesitan estar en posesión de las claves de cifrado utilizadas. Para obtener más información, consulte [Gestionar el cifrado](/docs/services/cloud-object-storage?topic=cloud-object-storage-manage-encryption#manage-encryption).
+    Todos los objetos se cifran de forma predeterminada utilizando claves generadas de forma aleatoria y una transformación de todo o nada. Aunque este modelo de cifrado predeterminado proporciona seguridad en reposo, algunas cargas de trabajo necesitan estar en posesión de las claves de cifrado utilizadas. Para obtener más información, consulte [Gestionar el cifrado](/docs/services/cloud-object-storage?topic=cloud-object-storage-encryption).
 
 
 

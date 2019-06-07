@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2019
-lastupdated: "2019-03-06"
+lastupdated: "2019-05-01"
 
 keywords: LogDNA, IBM, Log Analysis, logging, kubernetes, tutorial
 
@@ -50,19 +50,19 @@ Kubernetes クラスターのクラスター・レベル・ロギングを構成
 ## 始める前に
 {: #kube_prereqs}
 
-米国南部地域で作業します。 {{site.data.keyword.la_full_notm}} は現在、米国南部地域で使用可能です。 **注:** 同じ地域にある Kubernetes クラスターからでも、異なる地域にある Kubernetes クラスターからでも、データを送信できます。 
+[サポート対象地域](/docs/services/Log-Analysis-with-LogDNA/tutorials?topic=LogDNA-about#overview_regions)で作業します。**注:** 同じ地域にある Kubernetes クラスターからでも、異なる地域にある Kubernetes クラスターからでも、データを送信できます。 
 
 {{site.data.keyword.la_full_notm}} についてお読みください。 詳しくは、[製品情報](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-about#about)を参照してください。
 
 {{site.data.keyword.cloud_notm}} アカウントのメンバーまたは所有者であるユーザー ID を使用します。 {{site.data.keyword.cloud_notm}} ユーザー ID を取得するには、[「登録」![外部リンク・アイコン](../../../icons/launch-glyph.svg "外部リンク・アイコン")](https://cloud.ibm.com/login){:new_window} にアクセスしてください。
 
-以下のリソースのそれぞれについて、{{site.data.keyword.IBM_notm}}ID に IAM ポリシーが割り当てられていなければなりません。 
+ご使用の {{site.data.keyword.la_full_notm}} インスタンスがある地域の以下のリソースのそれぞれについて、{{site.data.keyword.IBM_notm}} ID に IAM ポリシーが割り当てられていなければなりません。  
 
-| リソース                             | アクセス・ポリシーの有効範囲 | 役割    | 地域    | 情報                  |
-|--------------------------------------|----------------------------|---------|-----------|------------------------------|
-| リソース・グループ **Default**           |  リソース・グループ            | ビューアー  | us-south  | デフォルトのリソース・グループ内のサービス・インスタンスをユーザーが表示できるようにするためには、このポリシーが必要です。    |
-| {{site.data.keyword.la_full_notm}} サービス |  リソース・グループ            | エディター  | us-south  | デフォルトのリソース・グループ内の {{site.data.keyword.la_full_notm}} サービスをユーザーがプロビジョンおよび管理できるようにするためには、このポリシーが必要です。   |
-| Kubernetes クラスター・インスタンス          |  リソース                 | エディター  | us-south  | Kubernetes クラスター内のシークレットおよび LogDNA エージェントを構成するためには、このポリシーが必要です。 |
+| リソース                             | アクセス・ポリシーの有効範囲 | 役割    | 情報                  |
+|--------------------------------------|----------------------------|---------|------------------------------|
+| リソース・グループ **Default**           |  リソース・グループ            | ビューアー  | デフォルトのリソース・グループ内のサービス・インスタンスをユーザーが表示できるようにするためには、このポリシーが必要です。    |
+| {{site.data.keyword.la_full_notm}} サービス |  リソース・グループ            | エディター  | デフォルトのリソース・グループ内の {{site.data.keyword.la_full_notm}} サービスをユーザーがプロビジョンおよび管理できるようにするためには、このポリシーが必要です。   |
+| Kubernetes クラスター・インスタンス          |  リソース                 | エディター  | Kubernetes クラスター内のシークレットおよび LogDNA エージェントを構成するためには、このポリシーが必要です。 |
 {: caption="表 1. チュートリアルを実行するために必要な IAM ポリシーのリスト" caption-side="top"} 
 
 {{site.data.keyword.containerlong}} IAM 役割について詳しくは、[ユーザー・アクセス許可](/docs/containers?topic=containers-access_reference#access_reference)を参照してください。
@@ -136,7 +136,7 @@ LogDNA インスタンスにログを転送するように Kubernetes クラス�
 1. 端末を開いて、{{site.data.keyword.cloud_notm}} にログインします。
 
    ```
-   ibmcloud login -a api.ng.bluemix.net
+   ibmcloud login -a cloud.ibm.com
    ```
    {: pre}
 
@@ -161,7 +161,7 @@ LogDNA インスタンスにログを転送するように Kubernetes クラス�
     ```
     {: pre}
 
-4. Kubernetes クラスターのすべてのワーカー・ノードに LogDNA エージェントをデプロイするように設定された Kubernetesデーモンを作成します。 LogDNA エージェントは、ポッドの `/var/log` ディレクトリーに保管されている `*.log` 拡張子のファイルと拡張子のないファイルを使用してログを収集します。 デフォルトでは、`kube-system` を含めすべての名前空間からログが収集され、{{site.data.keyword.la_full_notm}} サービスに自動的に転送されます。
+4. Kubernetes クラスターのすべてのワーカー・ノードに LogDNA エージェントをデプロイするように設定された Kubernetes デーモンを作成します。 LogDNA エージェントは、ポッドの `/var/log` ディレクトリーに保管されている `*.log` 拡張子のファイルと拡張子のないファイルを使用してログを収集します。 デフォルトでは、`kube-system` を含めすべての名前空間からログが収集され、{{site.data.keyword.la_full_notm}} サービスに自動的に転送されます。
 
    ```
    kubectl create -f https://repo.logdna.com/ibm/prod/logdna-agent-ds-us-south.yaml

@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2019
-lastupdated: "2019-03-06"
+lastupdated: "2019-04-02"
 
 keywords: LogDNA, IBM, Log Analysis, logging instance, provision
 
@@ -136,11 +136,11 @@ Para provisionar uma instância do {{site.data.keyword.la_full_notm}} por meio d
 
     NAME é o nome da instância
 
-    O valor *logdna* é o nome do serviço {{site.data.keyword.la_full_notm}} no {{site.data.keyword.cloud_notm}}
+    O valor *logdna* é o nome do serviço do {{site.data.keyword.la_full_notm}} no {{site.data.keyword.cloud_notm}}.
 
-    SERVICE_PLAN_NAME é o tipo de plano. Os valores válidos são *lite*, *7-days*, *14-days* e *30-days*
+    SERVICE_PLAN_NAME é o tipo de plano. Os valores válidos são *lite*, *7-days*, *14-days*, *30-days*.
     
-    LOCATION é a região em que a instância de LogDNA é criada. O valor válido é  * us-south *
+    LOCATION é a região em que a instância de LogDNA é criada. Os valores válidos são *us-south*, *eu-de*.
 
     Por exemplo, para fornecer uma instância com o plano de retenção de 7 dias, execute o comando a seguir:
 
@@ -149,28 +149,6 @@ Para provisionar uma instância do {{site.data.keyword.la_full_notm}} por meio d
     ```
     {: codeblock}
 
-5. Crie uma chave de serviço com permissões de **administrador** para operar a instância. Execute o comando  [ ` ibmcloud resource service-key-create ` ](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_commands_resource#ibmcloud_resource_service_key_create) :
 
-    ```
-    ibmcloud resource service-key-create NAME ROLE_NAME --instance-name SERVICE_INSTANCE_NAME
-    ```
-    {: codeblock}
-
-    Em que
-
-    NAME é o nome da chave de API. É possível nomear a chave de API como a instância do {{site.data.keyword.la_full_notm}} para ajudá-lo a identificar a chave de API posteriormente.
-
-    ROLE_NAME é a função que define as permissões que são ativadas. Os valores válidos são  * editor *,  * operador *,  * administrador *
-
-    SERVICE_INSTANCE_NAME é o nome da instância no {{site.data.keyword.cloud_notm}}
-
-    Por exemplo, para criar uma chave de API para a instância *logdna-instance-01* com permissões de *administrador* na instância de serviço, execute o comando a seguir:
-
-    ```
-    ibmcloud resource service-key-create logdna-instance-01 Administrator --instance-name logdna-instance-01
-    ```
-    {: pre}
-
-    A saída desse comando inclui valores diferentes, como o valor `crn` da instância e a chave de ingestão de LogDNA.
 
 

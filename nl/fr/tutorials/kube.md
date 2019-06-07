@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2019
-lastupdated: "2019-03-06"
+lastupdated: "2019-05-01"
 
 keywords: LogDNA, IBM, Log Analysis, logging, kubernetes, tutorial
 
@@ -50,19 +50,19 @@ Dans ce tutoriel, vous apprendrez à configurer la journalisation au niveau clus
 ## Avant de commencer
 {: #kube_prereqs}
 
-Opérez dans la région Sud des Etats-Unis. {{site.data.keyword.la_full_notm}} est actuellement disponible dans la région Sud des Etats-Unis. **Remarque :** vous pouvez envoyer des données à partir d'un cluster Kubernetes situé dans la même région ou dans une autre région. 
+Opérez dans une [région prise en charge](/docs/services/Log-Analysis-with-LogDNA/tutorials?topic=LogDNA-about#overview_regions). **Remarque :** vous pouvez envoyer des données à partir d'un cluster Kubernetes situé dans la même région ou dans une autre région. 
 
 Documentez-vous sur {{site.data.keyword.la_full_notm}}. Pour plus d'informations, voir [A propos du service](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-about#about).
 
 Utilisez un ID utilisateur qui est membre ou propriétaire d'un compte {{site.data.keyword.cloud_notm}}. Pour obtenir un ID utilisateur {{site.data.keyword.cloud_notm}}, accédez à [Inscription![Icône de lien externe](../../../icons/launch-glyph.svg "Icône de lien externe")](https://cloud.ibm.com/login){:new_window}.
 
-Des règles IAM doivent avoir été affectées à votre {{site.data.keyword.IBM_notm}}ID pour chacune des ressources suivantes : 
+Votre {{site.data.keyword.IBM_notm}}ID doit disposer de règles IAM affectées pour chacune des ressources suivantes dans la région où se trouve votre instance {{site.data.keyword.la_full_notm}} :  
 
-| Ressource                             | Portée de la règle d'accès | Rôle    | Région    | Informations                  |
-|--------------------------------------|----------------------------|---------|-----------|------------------------------|
-| Groupe de ressources **Default**           |  Groupe de ressources            | Afficheur  | us-south  | Cette règle est requise pour autoriser l'utilisateur à visualiser des instances de service dans le groupe de ressources par défaut.    |
-| Service {{site.data.keyword.la_full_notm}} |  Groupe de ressources            | Editeur  | us-south  | Cette règle est requise pour autoriser l'utilisateur à mettre à disposition et à administrer le service {{site.data.keyword.la_full_notm}} dans le groupe de ressources par défaut.   |
-| Instance de cluster Kubernetes          |  Ressource                 | Editeur  | us-south  | Cette règle est requise pour configurer la valeur confidentielle (secret) et l'agent LogDNA dans le cluster Kubernetes. |
+| Ressource                             | Portée de la règle d'accès | Rôle    | Informations                  |
+|--------------------------------------|----------------------------|---------|------------------------------|
+| Groupe de ressources **Default**           |  Groupe de ressources            | Afficheur  | Cette règle est requise pour autoriser l'utilisateur à visualiser des instances de service dans le groupe de ressources par défaut.    |
+| Service {{site.data.keyword.la_full_notm}} |  Groupe de ressources            | Editeur  | Cette règle est requise pour autoriser l'utilisateur à mettre à disposition et à administrer le service {{site.data.keyword.la_full_notm}} dans le groupe de ressources par défaut.   |
+| Instance de cluster Kubernetes          |  Ressource                 | Editeur  | Cette règle est requise pour configurer la valeur confidentielle (secret) et l'agent LogDNA dans le cluster Kubernetes. |
 {: caption="Tableau 1. Liste des règles IAM requises pour suivre ce tutoriel" caption-side="top"} 
 
 Pour plus d'informations sur les rôles IAM d'{{site.data.keyword.containerlong}}, voir [User access permissions](/docs/containers?topic=containers-access_reference#access_reference).
@@ -136,7 +136,7 @@ Pour configure votre cluster Kubernetes de manière à envoyer les journaux à v
 1. Ouvrez un terminal pour vous connecter à {{site.data.keyword.cloud_notm}}.
 
    ```
-   ibmcloud login -a api.ng.bluemix.net
+   ibmcloud login -a cloud.ibm.com
    ```
    {: pre}
 

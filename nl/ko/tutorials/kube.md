@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2019
-lastupdated: "2019-03-06"
+lastupdated: "2019-05-01"
 
 keywords: LogDNA, IBM, Log Analysis, logging, kubernetes, tutorial
 
@@ -50,19 +50,19 @@ Kubernetes 클러스터에 대한 클러스터 레벨 로깅을 구성하려면 
 ## 시작하기 전에
 {: #kube_prereqs}
 
-미국 남부 지역에서 작업합니다. {{site.data.keyword.la_full_notm}}는 현재 미국 남부 지역에서 사용 가능합니다. **참고:** 같은 지역 또는 서로 다른 지역에 있는 Kubernetes 클러스터에서 데이터를 전송할 수 있습니다. 
+[지원되는 지역](/docs/services/Log-Analysis-with-LogDNA/tutorials?topic=LogDNA-about#overview_regions)에서 작업하십시오. **참고:** 같은 지역 또는 서로 다른 지역에 있는 Kubernetes 클러스터에서 데이터를 전송할 수 있습니다. 
 
 {{site.data.keyword.la_full_notm}}에 대해 읽으십시오. 자세한 정보는 [제품 정보](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-about#about)를 참조하십시오.
 
 {{site.data.keyword.cloud_notm}} 계정의 소유자 또는 구성원인 사용자 ID를 사용하십시오. {{site.data.keyword.cloud_notm}} 사용자 ID를 가져오려면 [등록 ![외부 링크 아이콘](../../../icons/launch-glyph.svg "외부 링크 아이콘")](https://cloud.ibm.com/login){:new_window}으로 이동하십시오.
 
-{{site.data.keyword.IBM_notm}} ID에는 다음 각 리소스에 대한 IAM 정책이 지정되어 있어야 합니다. 
+{{site.data.keyword.IBM_notm}} ID에는 {{site.data.keyword.la_full_notm}} 인스턴스가 있는 지역의 다음 각 리소스에 대한 IAM 정책이 지정되어 있어야 합니다.  
 
-| 리소스                             | 액세스 정책 범위 | 역할    | 지역    | 정보                  |
-|--------------------------------------|----------------------------|---------|-----------|------------------------------|
-| 리소스 그룹 **기본값**           |  리소스 그룹            | 뷰어  | 미국 남부  | 사용자가 기본 리소스 그룹에서 서비스 인스턴스를 보려면 이 정책이 필요합니다.    |
-| {{site.data.keyword.la_full_notm}} 서비스 |  리소스 그룹            |편집자  | 미국 남부  | 사용자가 기본 리소스 그룹에서 {{site.data.keyword.la_full_notm}} 서비스를 프로비저닝하고 관리하려면 이 정책이 필요합니다.   |
-| Kubernetes 클러스터 인스턴스          |  리소스                 | 편집자  | 미국 남부  | 이 정책은 Kubernetes 클러스터에서 시크릿 및 LogDNA 에이전트를 구성하는 데 필요합니다. |
+| 리소스                             | 액세스 정책 범위 | 역할    | 정보                  |
+|--------------------------------------|----------------------------|---------|------------------------------|
+| 리소스 그룹 **기본값**           |  리소스 그룹            | 뷰어  | 사용자가 기본 리소스 그룹에서 서비스 인스턴스를 보려면 이 정책이 필요합니다.    |
+| {{site.data.keyword.la_full_notm}} 서비스 |  리소스 그룹            |편집자  | 사용자가 기본 리소스 그룹에서 {{site.data.keyword.la_full_notm}} 서비스를 프로비저닝하고 관리하려면 이 정책이 필요합니다.   |
+| Kubernetes 클러스터 인스턴스          |  리소스                 |편집자  | 이 정책은 Kubernetes 클러스터에서 시크릿 및 LogDNA 에이전트를 구성하는 데 필요합니다. |
 {: caption="표 1. 튜토리얼을 완료하는 데 필요한 IAM 정책 목록" caption-side="top"} 
 
 {{site.data.keyword.containerlong}} IAM 역할에 대한 자세한 정보는 [사용자 액세스 권한](/docs/containers?topic=containers-access_reference#access_reference)을 참조하십시오.
@@ -136,7 +136,7 @@ LogDNA 인스턴스로 로그를 전달하도록 Kubernetes 클러스터를 구�
 1. 터미널을 열어 {{site.data.keyword.cloud_notm}}에 로그인하십시오.
 
    ```
-   ibmcloud login -a api.ng.bluemix.net
+   ibmcloud login -a cloud.ibm.com
    ```
    {: pre}
 

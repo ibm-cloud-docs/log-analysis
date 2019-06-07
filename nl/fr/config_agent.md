@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2019
-lastupdated: "2019-03-06"
+lastupdated: "2019-05-01"
 
 keywords: LogDNA, IBM, Log Analysis, logging, config agent
 
@@ -55,7 +55,7 @@ Pour configure votre cluster Kubernetes de manière à envoyer les journaux à v
 1. Ouvrez un terminal pour vous connecter à {{site.data.keyword.cloud_notm}}.
 
    ```
-   ibmcloud login -a api.ng.bluemix.net
+   ibmcloud login -a cloud.ibm.com
    ```
    {: pre}
 
@@ -72,17 +72,28 @@ Pour configure votre cluster Kubernetes de manière à envoyer les journaux à v
 
 3. Créez une valeur confidentielle (secret) Kubernetes pour stocker votre clé d'ingestion logDNA pour votre instance de service. La clé d'ingestion LogDNA permet d'ouvrir un socket Web sécurisé sur le serveur d'ingestion logDNA et d'authentifier l'agent de journalisation auprès du service {{site.data.keyword.la_full_notm}}.
 
-   ```
-   kubectl create secret generic logdna-agent-key --from-literal=logdna-agent-key=<logDNA_ingestion_key>
-   ```
-   {: pre}
+    ```
+    kubectl create secret generic logdna-agent-key --from-literal=logdna-agent-key=<logDNA_ingestion_key>
+    ```
+    {: pre}
 
 4. Créez un ensemble de démons Kubernetes pour déployer l'agent LogDNA sur chaque noeud worker de votre cluster Kubernetes. L'agent LogDNA collecte les journaux ayant l'extension `*.log` et les fichiers sans extension stockés dans le répertoire `/var/log` de votre pod. Par défaut, les journaux sont collectés à partir de tous les espaces de nom, y compris `kube-system`, et automatiquement envoyés au service {{site.data.keyword.la_full_notm}}.
 
-   ```
-   kubectl create -f https://repo.logdna.com/ibm/prod/logdna-agent-ds-us-south.yaml
-   ```
-   {: pre}
+    <table>
+      <caption>Commandes par région</caption>
+      <tr>
+        <th>Emplacement</th>
+        <th>Commande</th>
+      </tr>
+      <tr>
+        <td>`US-South`</td>
+        <td>`kubectl create -f https://repo.logdna.com/ibm/prod/logdna-agent-ds-us-south.yaml`</td>
+      </tr>
+      <tr>
+        <td>`EU-DE`</td>
+        <td>`kubectl create -f https://repo.logdna.com/ibm/prod/logdna-agent-ds-eu-de.yaml`</td>
+      </tr>
+    </table>
 
 5. Vérifiez que l'agent LogDNA est correctement déployé. 
 
@@ -136,14 +147,14 @@ Pour ajouter des étiquettes, procédez comme suit :
     Mettez à jour le fichier de configuration en modifiant la copie locale. **Remarque :** vous pouvez également générer le fichier de configuration de l'agent en exécutant la commande suivante :
 
     ```
-    kubectl get configmap logdna-agent -o=yaml > prod-logdna-agent-configmap.yaml
+    kubectl get daemonset logdna-agent -o=yaml > prod-logdna-agent-ds.yaml
     ```
     {: codeblock}
 
     Sinon, mettez à jour le fichier de configuration à l'aide de *kubectl edit*.
 
     ```
-    kubectl edit configmap logdna-agent
+    kubectl edit daemonset logdna-agent
     ```
     {: codeblock}
 
@@ -192,7 +203,7 @@ Pour ajouter des étiquettes, procédez comme suit :
 5. Appliquez les modifications de configuration si vous éditez le fichier en local. 
 
     ```
-    kubectl apply -f logdna-agent-configmap.yaml
+    kubectl apply -f prod-logdna-agent-ds.yaml
     ```
     {: codeblock}
     
@@ -239,17 +250,41 @@ Pour configurer votre serveur Ubuntu de manière à envoyer des journaux à votr
 
 3. Définissez le noeud final d'authentification. L'agent LogDNA utilise cet hôte pour s'authentifier et obtenir le jeton pour réacheminer les journaux.
 
-    ```
-    sudo logdna-agent -s LOGDNA_APIHOST=api.us-south.logging.cloud.ibm.com
-    ```
-    {: codeblock}
+    <table>
+      <caption>Commandes par région</caption>
+      <tr>
+        <th>Emplacement</th>
+        <th>Commande</th>
+      </tr>
+      <tr>
+        <td>`US-South`</td>
+        <td>`    sudo logdna-agent -s LOGDNA_APIHOST=api.us-south.logging.cloud.ibm.com
+    `</td>
+      </tr>
+      <tr>
+        <td>`EU-DE`</td>
+        <td>`sudo logdna-agent -s LOGDNA_APIHOST=api.eu-de.logging.cloud.ibm.com`</td>
+      </tr>
+    </table>
 
 4. Définissez le noeud final d'ingestion.
 
-    ```
-    sudo logdna-agent -s LOGDNA_LOGHOST=logs.us-south.logging.cloud.ibm.com
-    ```
-    {: codeblock}
+    <table>
+      <caption>Commandes par région</caption>
+      <tr>
+        <th>Emplacement</th>
+        <th>Commande</th>
+      </tr>
+      <tr>
+        <td>`US-South`</td>
+        <td>`    sudo logdna-agent -s LOGDNA_LOGHOST=logs.us-south.logging.cloud.ibm.com
+    `</td>
+      </tr>
+      <tr>
+        <td>`EU-DE`</td>
+        <td>`sudo logdna-agent -s LOGDNA_LOGHOST=logs.eu-de.logging.cloud.ibm.com`</td>
+      </tr>
+    </table>
 
 5. Définissez d'autre chemin d'accès aux journaux à surveiller. Exécutez la commande suivante : 
 

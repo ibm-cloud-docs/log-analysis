@@ -159,5 +159,3 @@ Per creare una vista, completa la seguente procedura:
 6. Facoltativamente, collega un avviso. Viene visualizzata una nuova sezione per consentirti di configurare l'avviso.
 
 7. Fai clic su **Save View**
-
-

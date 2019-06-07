@@ -34,6 +34,6 @@ será possível abrir um chamado de suporte.
 * Você pode revisar os fóruns para ver se outros usuários tiveram o mesmo problema. Ao usar os fóruns para fazer uma pergunta, marque a sua pergunta
 para que ela possa ser vista pelas equipes de desenvolvimento do {{site.data.keyword.cloud_notm}}.
 <!--Insert the appropriate Stack Overflow tag for your service for <service_keyword> in URL and text below:  -->
-  * Se você tiver perguntas técnicas sobre o serviço {{site.data.keyword.la_full_notm}}, poste sua pergunta no [Stack Overflow](http://stackoverflow.com/search?q=log-analysis-with-logdna+ibm-cloud){:new_window} e marque sua pergunta com "ibm-cloud" e "log-analysis-with-logdna".
+  * Se você tiver perguntas técnicas sobre o serviço {{site.data.keyword.la_full_notm}}, poste sua pergunta no [Stack Overflow](http://stackoverflow.com/search?q=logdna+ibm-cloud){:new_window} e identifique-a com `ibm-cloud` e `loganalysis-logdna`.
 
 * Se você ainda não puder resolver o problema, será possível abrir um chamado de suporte IBM. Para obter informações sobre como abrir um chamado de suporte IBM ou sobre níveis de suporte e severidades de chamado, consulte [Obtendo suporte](/docs/get-support?topic=get-support-getting-customer-support#getting-customer-support).
