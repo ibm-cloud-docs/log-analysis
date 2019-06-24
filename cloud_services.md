@@ -38,6 +38,7 @@ You can monitor logs from CF apps and enabled services through the {{site.data.k
 Cloud Foundry (CF) logs are automatically collected and sent to {{site.data.keyword.la_full_notm}}. 
 
 You can monitor logs from CF apps through the {{site.data.keyword.la_short}} instance that is configured to receive platform services logs in the location where the app is running. 
+{: note}
 
 
 ## Platform database services
@@ -55,7 +56,7 @@ The following table lists database services that send logs to {{site.data.keywor
 | [{{site.data.keyword.databases-for-redis_full_notm}}](/docs/services/databases-for-redis?topic=databases-for-redis-about#about-databases-for-redis) | {{site.data.keyword.databases-for-redis_full_notm}} is a managed service that is hosted in the {{site.data.keyword.cloud_notm}} and integrated with other {{site.data.keyword.cloud_notm}} services.  |
 {: caption="List of database services" caption-side="top"} 
 
-These database services are enabled in the US-South region only.
+These **database services** are enabled in the US-South region only.
 
 
 
@@ -74,7 +75,7 @@ You can monitor logs through the {{site.data.keyword.la_short}} instance that is
 {: note}
 
 
-**{{site.data.keyword.cloudcerts_long}} logs** are currently available for instances that are provisioned in any of the following locations:
+**{{site.data.keyword.cloudcerts_long}}** logs are currently available for instances that are provisioned in any of the following locations:
 * Dallas
 * Frankfurt
 * Tokyo
