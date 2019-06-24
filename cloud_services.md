@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019
-lastupdated: "2019-06-03"
+lastupdated: "2019-06-24"
 
 keywords: LogDNA, IBM, Log Analysis, logging, services
 
@@ -29,6 +29,16 @@ subcollection: LogDNA
 List of {{site.data.keyword.cloud_notm}} services that send logs to {{site.data.keyword.la_full_notm}}:
 {:shortdesc}
 
+You can monitor logs from CF apps and enabled services through the {{site.data.keyword.la_short}} instance that is configured to receive platform services logs in the location where the app or service is running. Notice that there is only 1 instance per location with the flag **Platform services logs**.
+{: important}
+
+## Platform Cloud Foundry applications
+{: #platform_cfapps}
+
+Cloud Foundry (CF) logs are automatically collected and sent to {{site.data.keyword.la_full_notm}}. 
+
+You can monitor logs from CF apps through the {{site.data.keyword.la_short}} instance that is configured to receive platform services logs in the location where the app is running. 
+
 
 ## Platform database services
 {: #database}
@@ -43,14 +53,31 @@ The following table lists database services that send logs to {{site.data.keywor
 | [{{site.data.keyword.databases-for-postgresql_full_notm}}](/docs/services/databases-for-postgresql?topic=databases-for-postgresql-about#about) | {{site.data.keyword.databases-for-postgresql_full_notm}} is a managed PostgreSQL service that is hosted in the {{site.data.keyword.cloud_notm}} and integrated with other {{site.data.keyword.cloud_notm}} services. |
 | [{{site.data.keyword.messages-for-rabbitmq_full_notm}}](/docs/services/messages-for-rabbitmq?topic=messages-for-rabbitmq-about#about-messages-for-rabbitmq)  | {{site.data.keyword.messages-for-rabbitmq_full_notm}} is a managed RabbitMQ service that is hosted in the {{site.data.keyword.cloud_notm}} and integrated with other {{site.data.keyword.cloud_notm}} services.   |
 | [{{site.data.keyword.databases-for-redis_full_notm}}](/docs/services/databases-for-redis?topic=databases-for-redis-about#about-databases-for-redis) | {{site.data.keyword.databases-for-redis_full_notm}} is a managed service that is hosted in the {{site.data.keyword.cloud_notm}} and integrated with other {{site.data.keyword.cloud_notm}} services.  |
-{: caption="List of database services that send events to {{site.data.keyword.la_full_notm}}" caption-side="top"} 
+{: caption="List of database services" caption-side="top"} 
 
 These database services are enabled in the US-South region only.
 
 
 
+## Platform security services
+{: #security}
+
+The following table lists security Cloud services that send logs to {{site.data.keyword.la_full_notm}}:
 
 
+| Service     | Description | 
+|-------------|-------------|
+| [{{site.data.keyword.cloudcerts_full_notm}}](/docs/services/certificate-manager?topic=certificate-manager-about-certificate-manager#about-certificate-manager) | You can use {{site.data.keyword.cloudcerts_short}} to manage the SSL certificates for your {{site.data.keyword.cloud_notm}}-based apps and services.  | 
+{: caption="List of security Cloud services" caption-side="top"} 
+
+You can monitor logs through the {{site.data.keyword.la_short}} instance that is configured to receive platform services logs in the location where the service is running. 
+{: note}
+
+
+**{{site.data.keyword.cloudcerts_long}} logs** are currently available for instances that are provisioned in any of the following locations:
+* Dallas
+* Frankfurt
+* Tokyo
 
 
 
