@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2019
-lastupdated: "2019-03-06"
+lastupdated: "2019-05-01"
 
 keywords: LogDNA, IBM, Log Analysis, logging, archive logs, COS, cloud object storage
 
@@ -135,9 +135,9 @@ subcollection: LogDNA
 
 | 服務                    | 角色                   | 動作                             | 
 |----------------------------|-------------------------|------------------------------------|       
-| `Cloud Object Storage`     | 平台角色：檢視者     | 容許使用者檢視所有儲存區，並透過 {site.data.keyword.Bluemix_notm}} 使用者介面來列出其中的物件。|
+| `Cloud Object Storage`     | 平台角色：檢視者     | 容許使用者檢視所有儲存區，並透過 {{site.data.keyword.cloud_notm}} 使用者介面來列出其中的物件。|
 | `Cloud Object Storage`     | 服務角色：管理員   | 容許使用者將物件設為公用。|
-| `Cloud Object Storage`     | 服務角色：管理員 </br>作者 | 容許使用者建立及破壞儲存區與物件。| 
+| `Cloud Object Storage`     | 服務角色：管理員 </br>撰寫者 | 容許使用者建立及破壞儲存區與物件。| 
 | `Cloud Object Storage`     | 服務角色：讀者    | 容許使用者列出及下載物件。|
 {: caption="表 1. 要使用儲存區的角色和動作" caption-side="top"} 
 
@@ -173,17 +173,17 @@ subcollection: LogDNA
     
     「單一資料中心」只會在單一網站內的各個裝置之間分散存放資料。
 
-    如需相關資訊，請參閱[選取地區和端點](/docs/services/cloud-object-storage?topic=cloud-object-storage-endpoints#endpoints)。
+    如需相關資訊，請參閱[選取地區和端點](/docs/services/cloud-object-storage?topic=cloud-object-storage-endpoints)。
 
 6. 選擇*儲存空間類別* 的類型。
 
-    您可以建立不同儲存空間類別的儲存區。根據您的擷取資料需求，選擇儲存區的儲存空間類別。如需相關資訊，請參閱[使用儲存空間類別](/docs/services/cloud-object-storage?topic=cloud-object-storage-use-storage-classes#use-storage-classes)。
+    您可以建立不同儲存空間類別的儲存區。根據您的擷取資料需求，選擇儲存區的儲存空間類別。如需相關資訊，請參閱[使用儲存空間類別](/docs/services/cloud-object-storage?topic=cloud-object-storage-classes)。
 
     **附註：**建立儲存區之後，無法變更儲存區的儲存空間類別。如果物件需要重新分類，則必須將資料移至具有想要之儲存空間類別的另一個儲存區。
 
 7. 選擇性地新增「Key Protect 金鑰」，以加密靜態資料。
 
-    依預設，所有物件都使用隨機產生的金鑰和 all-or-nothing-transform 來加密。雖然這個預設加密模型提供靜態安全，但是有些工作負載需要擁有已使用的加密金鑰。如需相關資訊，請參閱[管理加密](/docs/services/cloud-object-storage?topic=cloud-object-storage-manage-encryption#manage-encryption)。
+    依預設，所有物件都使用隨機產生的金鑰和 all-or-nothing-transform 來加密。雖然這個預設加密模型提供靜態安全，但是有些工作負載需要擁有已使用的加密金鑰。如需相關資訊，請參閱[管理加密](/docs/services/cloud-object-storage?topic=cloud-object-storage-encryption)。
 
 
 

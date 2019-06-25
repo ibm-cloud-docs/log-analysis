@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2019
-lastupdated: "2019-03-06"
+lastupdated: "2019-04-02"
 
 keywords: LogDNA, IBM, Log Analysis, logging instance, provision
 
@@ -140,7 +140,7 @@ Führen Sie die folgenden Schritte aus, um eine {{site.data.keyword.la_full_notm
 
     SERVICE_PLAN_NAME ist der Typ des Plans. Gültige Werte sind *lite*, *7-day*, *14-day*, *30-day*.
     
-    LOCATION ist die Region, in der die LogDNA-Instanz erstellt wird. Gültiger Wert: *us-south*.
+    LOCATION ist die Region, in der die LogDNA-Instanz erstellt wird. Gültige Werte sind *us-south*, *eu-de*.
 
     Soll beispielsweise eine Instanz mit dem Plan mit einem Aufbewahrungszeitraum von 7 Tagen bereitgestellt werden, führen Sie den folgenden Befehl aus:
 
@@ -149,28 +149,6 @@ Führen Sie die folgenden Schritte aus, um eine {{site.data.keyword.la_full_notm
     ```
     {: codeblock}
 
-5. Erstellen Sie einen Serviceschlüssel mit **Administrator**berechtigungen für die Arbeit mit der Instanz. Führen Sie den Befehl [`ibmcloud resource service-key-create`](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_commands_resource#ibmcloud_resource_service_key_create) aus:
 
-    ```
-    ibmcloud resource service-key-create NAME ROLE_NAME --instance-name SERVICE_INSTANCE_NAME
-    ```
-    {: codeblock}
-
-    Hierbei gilt Folgendes:
-
-    NAME ist der Name des API-Schlüssels. Der Name des API-Schlüssels kann mit dem Namen der {{site.data.keyword.la_full_notm}}-Instanz identisch sein, damit Sie den API-Schlüssel leichter identifizieren können.
-
-    ROLE_NAME ist die Rolle, die die aktivierten Berechtigungen definiert. Gültige Werte sind *editor*, *operator*, *administrator*.
-
-    SERVICE_INSTANCE_NAME ist der Name der Instanz in {{site.data.keyword.cloud_notm}}.
-
-    Führen Sie beispielsweise den folgenden Befehl aus, um einen API-Schlüssel für die Instanz *logdna-instance-01* mit der Berechtigung *administrator* in der Serviceinstanz zu erstellen:
-
-    ```
-    ibmcloud resource service-key-create logdna-instance-01 Administrator --instance-name logdna-instance-01
-    ```
-    {: pre}
-
-    Die Ausgabe dieses Befehls enthält verschiedene Werte wie z. B. den Wert `crn` der Instanz und den LogDNA-Aufnahmeschlüssel.
 
 

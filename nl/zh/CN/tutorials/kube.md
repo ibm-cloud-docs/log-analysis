@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2019
-lastupdated: "2019-03-06"
+lastupdated: "2019-05-01"
 
 keywords: LogDNA, IBM, Log Analysis, logging, kubernetes, tutorial
 
@@ -50,19 +50,19 @@ subcollection: LogDNA
 ## 开始之前
 {: #kube_prereqs}
 
-在美国南部区域中工作。{{site.data.keyword.la_full_notm}} 目前在美国南部区域中可用。**注：**可以从位于同一区域或不同区域的 Kubernetes 集群发送数据。 
+在[支持的区域](/docs/services/Log-Analysis-with-LogDNA/tutorials?topic=LogDNA-about#overview_regions)工作。**注：**可以从位于同一区域或不同区域的 Kubernetes 集群发送数据。 
 
 请阅读有关 {{site.data.keyword.la_full_notm}} 的信息。有关更多信息，请参阅[关于](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-about#about)。
 
 使用作为 {{site.data.keyword.cloud_notm}} 帐户的成员或所有者的用户标识。要获取 {{site.data.keyword.cloud_notm}} 用户标识，请转至：[注册 ![外部链接图标](../../../icons/launch-glyph.svg "外部链接图标")](https://cloud.ibm.com/login){:new_window}。
 
-您的 {{site.data.keyword.IBM_notm}} 标识必须分配有对以下每个资源的 IAM 策略： 
+您的 {{site.data.keyword.IBM_notm}} 标识必须为 {{site.data.keyword.la_full_notm}} 实例所在的区域中的以下每个资源分配 IAM 策略：  
 
-|资源|访问策略的作用域|角色 |区域|信息|
-|--------------------------------------|----------------------------|---------|-----------|------------------------------|
-|资源组 **Default**|资源组|查看者|us-south|要允许用户查看 Default 资源组中的服务实例，此策略是必需的。|
-|{{site.data.keyword.la_full_notm}} 服务|资源组|编辑者|us-south|要允许用户在 Default 资源组中供应和管理 {{site.data.keyword.la_full_notm}} 服务，此策略是必需的。|
-|Kubernetes 集群实例|资源|编辑者|us-south|要在 Kubernetes 集群中配置私钥和 LogDNA 代理程序，此策略是必需的。|
+|资源|访问策略的作用域|角色 |信息|
+|--------------------------------------|----------------------------|---------|------------------------------|
+|资源组 **Default**|资源组|查看者|要允许用户查看 Default 资源组中的服务实例，此策略是必需的。|
+|{{site.data.keyword.la_full_notm}} 服务|资源组|编辑者|要允许用户在 Default 资源组中供应和管理 {{site.data.keyword.la_full_notm}} 服务，此策略是必需的。|
+|Kubernetes 集群实例|资源|编辑者|要在 Kubernetes 集群中配置私钥和 LogDNA 代理程序，此策略是必需的。|
 {: caption="表 1. 完成教程所需的 IAM 策略的列表" caption-side="top"} 
 
 有关 {{site.data.keyword.containerlong}} IAM 角色的更多信息，请参阅[用户访问许可权](/docs/containers?topic=containers-access_reference#access_reference)。
@@ -136,7 +136,7 @@ subcollection: LogDNA
 1. 打开终端以登录到 {{site.data.keyword.cloud_notm}}。
 
    ```
-   ibmcloud login -a api.ng.bluemix.net
+   ibmcloud login -a cloud.ibm.com
    ```
    {: pre}
 

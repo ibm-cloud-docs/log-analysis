@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2019
-lastupdated: "2019-03-06"
+lastupdated: "2019-04-01"
 
 keywords: LogDNA, IBM, Log Analysis, logging, log sources
 
@@ -31,7 +31,7 @@ subcollection: LogDNA
 ## Serviços de contêiner de plataforma
 {: #log_sources_kube}
 
-É possível gerenciar logs por meio do [{{site.data.keyword.containerlong_notm}}](/docs/containers?topic=containers-container_index#container_index) com o {{site.data.keyword.la_full_notm}}.
+É possível gerenciar logs por meio do [{{site.data.keyword.containerlong_notm}}](/docs/containers?topic=containers-getting-started) com o {{site.data.keyword.la_full_notm}}.
 
 | Tutoriais para gerenciar logs para o {{site.data.keyword.containerlong_notm}} |
 |---------------------------------------------------------------------------------------------------|

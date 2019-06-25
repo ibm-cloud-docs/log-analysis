@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2019
-lastupdated: "2019-03-06"
+lastupdated: "2019-05-01"
 
 keywords: LogDNA, IBM, Log Analysis, logging, kubernetes, tutorial
 
@@ -50,19 +50,19 @@ subcollection: LogDNA
 ## 開始之前
 {: #kube_prereqs}
 
-在美國南部地區工作。{{site.data.keyword.la_full_notm}} 目前可用於美國南部地區。**附註：**您可以從位於相同地區或不同地區的 Kubernetes 叢集中傳送資料。 
+在[支援的地區](/docs/services/Log-Analysis-with-LogDNA/tutorials?topic=LogDNA-about#overview_regions)工作。**附註：**您可以從位於相同地區或不同地區的 Kubernetes 叢集中傳送資料。 
 
 閱讀 {{site.data.keyword.la_full_notm}} 的相關資訊。如需相關資訊，請參閱[關於](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-about#about)。
 
 使用 {{site.data.keyword.cloud_notm}} 帳戶之成員或擁有者的使用者 ID。若要取得 {{site.data.keyword.cloud_notm}} 使用者 ID，請移至：[登錄 ![外部鏈結圖示](../../../icons/launch-glyph.svg "外部鏈結圖示")](https://cloud.ibm.com/login){:new_window}。
 
-您的 {{site.data.keyword.IBM_notm}} ID 必須已為下列每一個資源指派 IAM 原則： 
+您的 {{site.data.keyword.IBM_notm}} ID 必須已為 {{site.data.keyword.la_full_notm}} 實例所在地區中的下列每一個資源指派 IAM 原則：  
 
-| 資源                             | 存取原則的範圍 | 角色    | 地區    | 資訊                  |
-|--------------------------------------|----------------------------|---------|-----------|------------------------------|
-| 資源群組 **Default**           |  資源群組            | 檢視者  | 美國南部  | 需要此原則，以容許使用者查看 Default 資源群組中的服務實例。|
-| {{site.data.keyword.la_full_notm}} 服務 |  資源群組            | 編輯者  | 美國南部  | 需要此原則，以容許使用者在 Default 資源群組中佈建及管理 {{site.data.keyword.la_full_notm}} 服務。|
-| Kubernetes 叢集實例          |  資源                 | 編輯者  | 美國南部  | 需要有此原則，才能在 Kubernetes 叢集中配置密碼和 LogDNA 代理程式。|
+| 資源                             | 存取原則的範圍 | 角色    | 資訊                  |
+|--------------------------------------|----------------------------|---------|------------------------------|
+| 資源群組 **Default**           |  資源群組            | 檢視者  | 需要此原則，以容許使用者查看 Default 資源群組中的服務實例。|
+| {{site.data.keyword.la_full_notm}} 服務 |  資源群組            | 編輯者  | 需要此原則，以容許使用者在 Default 資源群組中佈建及管理 {{site.data.keyword.la_full_notm}} 服務。|
+| Kubernetes 叢集實例          |  資源                 | 編輯者  | 需要有此原則，才能在 Kubernetes 叢集中配置密碼和 LogDNA 代理程式。|
 {: caption="表 1. 完成指導教學所需的 IAM 原則清單" caption-side="top"} 
 
 如需 {{site.data.keyword.containerlong}} IAM 角色的相關資訊，請參閱[使用者存取權](/docs/containers?topic=containers-access_reference#access_reference)。
@@ -136,7 +136,7 @@ subcollection: LogDNA
 1. 開啟終端機，以登入 {{site.data.keyword.cloud_notm}}。
 
    ```
-   ibmcloud login -a api.ng.bluemix.net
+   ibmcloud login -a cloud.ibm.com
    ```
    {: pre}
 

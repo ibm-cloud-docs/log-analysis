@@ -71,13 +71,13 @@ curl "ENDPOINT/logs/ingest?QUERY_PARAMETERS" -u INGESTION_KEY: --header "Content
 
 | 지역         | 엔드포인트                                             | 
 |----------------|------------------------------------------------------|
-| `미국 남부`       | `https://logs.us-south.logging.cloud.ibm.com`        |
+| `Us-south`       | `https://logs.us-south.logging.cloud.ibm.com`        |
 {: caption="지역별 엔드포인트" caption-side="top"} 
 
 
 다음 표에는 조회 매개변수가 나열되어 있습니다.
 
-| 조회 매개변수 |유형       |상태     |설명 |
+| 조회 매개변수 | 유형       | 상태     | 설명 |
 |-----------------|------------|------------|-------------|
 | `hostname`      | `string`     | 필수   | 소스의 호스트 이름입니다. |
 | `mac`           | `string`     | 선택사항   | 호스트 컴퓨터의 네트워크 MAC 주소입니다.    |

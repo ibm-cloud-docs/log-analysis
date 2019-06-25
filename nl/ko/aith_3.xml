@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with AI Text Handler 1.0.0 -->
+<ExtractedAITHs>
+<ExtractedAITH file="/images/archive.ai">
+<text>리소스 그룹</text>
+<text>리소스 그룹</text>
+<text>COS 서비스 ID
+(API 키는 버킷에만
+쓸 수 있도록 제한됨)</text>
+<text>IBM Cloud</text>
+<text>IBM Cloud Object Storage(COS) 인스턴스</text>
+<text>json.gz</text>
+<text>IBM Log Analysis with LogDNA 인스턴스</text>
+<text>버킷
+복원성: 단일 사이트,
+                           지역,
+                           지역 분산
+스토리지 클래스: 표준, 저장소,
+                              콜드 저장소, 유연성</text>
+</ExtractedAITH>
+<ExtractedAITH file="/images/components.ai">
+<text>리소스 그룹</text>
+<text>Web UI</text>
+<text>LogDNA 로그 소스
+(예: Kubernetes 클러스터)</text>
+<text>IBM Cloud</text>
+<text>IBM Log Analysis with LogDNA 인스턴스</text>
+<text>서비스 API 키
+(LogDNA 수집 키)</text>
+<text>LogDNA 에이전트</text>
+</ExtractedAITH>
+<ExtractedAITH file="/images/kube.ai">
+<text>
+     수집 키</text>
+<text>팟(Pod)</text>
+<text>IBM Cloud</text>
+<text>Kubernetes 클러스터</text>
+<text>작업자(노드)</text>
+<text>리소스 그룹</text>
+<text>팟(Pod)</text>
+<text>IBM Log Analysis with LogDNA 인스턴스</text>
+<text>LogDNA 에이전트</text>
+<text>Web UI</text>
+<text>외부
+스토리지</text>
+<text>STDOUT
+STDERR
+/var/log</text>
+</ExtractedAITH>
+<ExtractedAITH file="/images/ubuntu.ai">
+<text>
+     수집 키</text>
+<text>사용자 정의
+디렉토리</text>
+<text>IBM Cloud</text>
+<text>Ubuntu 서버</text>
+<text></text>
+<text>리소스 그룹</text>
+<text>/var/log</text>
+<text>IBM Log Analysis with LogDNA 인스턴스</text>
+<text>LogDNA 에이전트</text>
+<text>Web UI</text>
+</ExtractedAITH>
+</ExtractedAITHs>

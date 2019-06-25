@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2019
-lastupdated: "2019-03-06"
+lastupdated: "2019-04-02"
 
 keywords: LogDNA, IBM, Log Analysis, logging instance, provision
 
@@ -32,7 +32,7 @@ Para suministrar una instancia de {{site.data.keyword.la_full_notm}} en una regi
 Como alternativa, {{site.data.keyword.la_full_notm}} ofrece un plan `Lite` que puede utilizar para ver los registros a medida que pasan a través del sistema. Puede visualizar registros utilizando el seguimiento de registros. También puede diseñar filtros para preparar la actualización a un plan con un periodo de retención más largo. Este plan tiene un periodo de retención de 0 días.
 
 
-## Suministro de una instancia a través del panel de control Observabilidad.
+## Suministro de una instancia a través del panel de control Observabilidad
 {: #provision_ui}
 
 Para suministrar una instancia desde el panel de control Observabilidad en {{site.data.keyword.cloud_notm}}, realice los pasos siguientes:
@@ -136,11 +136,11 @@ Para suministrar una instancia de {{site.data.keyword.la_full_notm}} a través d
 
     NAME es el nombre de la instancia
 
-    El valor *logdna* es el nombre del servicio {{site.data.keyword.la_full_notm}} en {{site.data.keyword.cloud_notm}}
+    El valor *logdna* es el nombre del servicio {{site.data.keyword.la_full_notm}} en {{site.data.keyword.cloud_notm}}.
 
-    SERVICE_PLAN_NAME es el tipo de plan. Los valores válidos son *lite*, *7-days*, *14-days* y *30-days*
+    SERVICE_PLAN_NAME es el tipo de plan. Los valores válidos son *lite*, *7-days*, *14-days* y *30-days*.
     
-    LOCATION es la región donde se crea la instancia de LogDNA. El valor válido es *us-south*
+    LOCATION es la región donde se crea la instancia de LogDNA. Los valores válidos son *us-south*, *eu-de*.
 
     Por ejemplo, para suministrar una instancia con el plan de retención de 7 días, ejecute el mandato siguiente:
 
@@ -149,28 +149,6 @@ Para suministrar una instancia de {{site.data.keyword.la_full_notm}} a través d
     ```
     {: codeblock}
 
-5. Cree una clave de servicio con permisos de **administrador** para trabajar con la instancia. Ejecute el mandato [`ibmcloud resource service-key-create`](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_commands_resource#ibmcloud_resource_service_key_create):
 
-    ```
-    ibmcloud resource service-key-create NAME ROLE_NAME --instance-name SERVICE_INSTANCE_NAME
-    ```
-    {: codeblock}
-
-    Donde
-
-    NAME es el nombre de la clave de API. Puede denominar la clave de API como la instancia de {{site.data.keyword.la_full_notm}} para ayudarle a identificar la clave de API más adelante.
-
-    ROLE_NAME es el rol que define los permisos que están habilitados. Los valores válidos son *editor*, *operator*, *administrator*
-
-    SERVICE_INSTANCE_NAME es el nombre de la instancia en {{site.data.keyword.cloud_notm}}
-
-    Por ejemplo, para crear una clave de API para la instancia *logdna-instance-01* con permisos de *administrator* (administrador) sobre la instancia de servicio, ejecute el mandato siguiente:
-
-    ```
-    ibmcloud resource service-key-create logdna-instance-01 Administrator --instance-name logdna-instance-01
-    ```
-    {: pre}
-
-    La salida de este mandato incluye distintos valores como el valor `crn` de la instancia y la clave de ingestión de LogDNA.
 
 

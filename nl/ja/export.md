@@ -107,7 +107,7 @@ subcollection: LogDNA
 | `query`     | `string`     | オプション   | 検索照会。 詳しくは、[検索ログ](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-view_logs#view_logs_step6)を参照してください。 |
 | `prefer`    | `string`     | オプション   | エクスポートするログ行を定義します。 有効な値は `head` (最初のログ行) と `tail` (最後のログ行) です。 指定されていない場合、デフォルトの tail になります。  |
 | `email`     | `string`     | オプション   | エクスポート内容をダウンロードできるリンクがある E メールを指定します。 デフォルトでは、ログ行はストリーミングされます。|
-| `emailSubject` | `string`     | オプション   | E メールの件名を設定するために使用します。 </br>スペースを表すには、`%20` を使用します。 例えば、サンプル値は `Export%20logs` です。 |
+| `emailSubject` | `string`     | オプション   | E メールの件名を設定するために使用します。 </br>スペースを表すには、`%20` を使用します。例えば、サンプル値は `Export%20logs` です。 |
 {: caption="照会パラメーター" caption-side="top"} 
 
 例えば、ログ行を端末にストリーミングするには、以下のコマンドを実行できます。

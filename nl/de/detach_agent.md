@@ -34,7 +34,7 @@ Wenn das Senden von Protokollen vom Kubernetes-Cluster an die {{site.data.keywor
 
 Führen Sie die folgenden Schritte über die Befehlszeile aus, um das Weiterleiten von Protokollen vom Kubernetes-Cluster zur LogDNA-Instanz zu stoppen:
 
-1. Öffnen Sie ein Terminal. [Melden Sie sich dann bei {{site.data.keyword.cloud_notm}} ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://cloud.ibm.com/login){:new_window} an und folgen Sie den Eingabeaufforderungen. 
+1. Öffnen Sie ein Terminal. [Melden Sie sich dann bei {{site.data.keyword.cloud_notm}} ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://cloud.ibm.com/login){:new_window} an und folgen Sie den Eingabeaufforderungen.
 
     Wählen Sie das Konto aus, in dem Sie die {{site.data.keyword.la_full_notm}}-Instanz bereitgestellt haben.
 

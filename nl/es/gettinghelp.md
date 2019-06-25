@@ -32,6 +32,6 @@ Si tiene problemas o dudas al utilizar {{site.data.keyword.la_full_notm}}, puede
 
 * Puede revisar los foros para ver si otros usuarios han tenido el mismo problema. Cuando utilice los foros para formular una pregunta, etiquete la pregunta para que la vean los equipos de desarrollo de {{site.data.keyword.cloud_notm}}.
 <!--Insert the appropriate Stack Overflow tag for your service for <service_keyword> in URL and text below:  -->
-  * Si tiene preguntas técnicas acerca del servicio {{site.data.keyword.la_full_notm}}, publique su pregunta en [Stack Overflow](http://stackoverflow.com/search?q=log-analysis-with-logdna+ibm-cloud){:new_window} y etiquete la pregunta con "ibm-cloud" y "log-analysis-with-logdna".
+  * Si tiene preguntas técnicas acerca del servicio {{site.data.keyword.la_full_notm}}, publique su pregunta en [Stack Overflow](http://stackoverflow.com/search?q=logdna+ibm-cloud){:new_window} y etiquete la pregunta con `ibm-cloud` y `loganalysis-logdna`.
 
 * Si sigue sin poder resolver el problema, puede abrir una incidencia de soporte de IBM. Para obtener información sobre cómo abrir una incidencia de soporte de IBM, o sobre los niveles de soporte y la gravedad de las incidencias, consulte [Obtención de soporte](/docs/get-support?topic=get-support-getting-customer-support#getting-customer-support).

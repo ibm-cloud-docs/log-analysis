@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2019
-lastupdated: "2019-03-06"
+lastupdated: "2019-05-01"
 
 keywords: LogDNA, IBM, Log Analysis, logging, kubernetes, tutorial
 
@@ -50,19 +50,19 @@ In diesem Lernprogramm erfahren Sie, wie die Protokollierung auf Clusterebene ko
 ## Vorbereitende Schritte
 {: #kube_prereqs}
 
-Arbeiten Sie in der Region US-South. {{site.data.keyword.la_full_notm}} ist derzeit in der Region US-South verfügbar. **Anmerkung:** Sie können Daten aus einem Kubernetes-Cluster senden, der sich in derselben Region oder in einer anderen Region befindet. 
+Arbeiten Sie in einer [unterstützten Region](/docs/services/Log-Analysis-with-LogDNA/tutorials?topic=LogDNA-about#overview_regions). **Anmerkung:** Sie können Daten aus einem Kubernetes-Cluster senden, der sich in derselben Region oder in einer anderen Region befindet. 
 
 Informieren Sie sich über {{site.data.keyword.la_full_notm}}. Weitere Informationen finden Sie in [Informationen zu ](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-about#about).
 
 Verwenden Sie eine Benutzer-ID, die Mitglied oder Eigner eines {{site.data.keyword.cloud_notm}}-Kontos ist. Um eine {{site.data.keyword.cloud_notm}}-Benutzer-ID anzufordern, rufen Sie [Registrierung![Symbol für externen Link](../../../icons/launch-glyph.svg "Symbol für externen Link")](https://cloud.ibm.com/login){:new_window} auf.
 
-Ihrer {{site.data.keyword.IBM_notm}} ID müssen IAM-Richtlinien für jede der folgenden Ressourcen zugeordnet sein: 
+Ihrer {{site.data.keyword.IBM_notm}} ID müssen IAM-Richtlinien für jede der folgenden Ressourcen in der Region zugeordnet sein, in der sich Ihre {{site.data.keyword.la_full_notm}}-Instanz befindet:  
 
-| Ressource                             | Geltungsbereich der Zugriffsrichtlinie | Rolle    | Region    | Informationen                  |
-|--------------------------------------|----------------------------|---------|-----------|------------------------------|
-| Ressourcengruppe **Standard**           |  Ressourcengruppe            | Anzeigeberechtigter  | us-south  | Diese Richtlinie ist erforderlich, damit der Benutzer Serviceinstanzen in der Ressourcengruppe Standard anzeigen kann.    |
-| {{site.data.keyword.la_full_notm}}-Service |  Ressourcengruppe            | Bearbeiter  | us-south  | Diese Richtlinie ist erforderlich, damit der Benutzer den {{site.data.keyword.la_full_notm}}-Service in der Ressourcengruppe Standard bereitstellen und verwalten kann.   |
-| Kubernetes-Clusterinstanz          |  Ressource                 | Bearbeiter  | us-south  | Diese Richtlinie ist erforderlich, um den geheimen Schlüssel und den LogDNA-Agenten im Kubernetes-Cluster konfigurieren zu können. |
+| Ressource                             | Geltungsbereich der Zugriffsrichtlinie | Rolle    | Informationen                  |
+|--------------------------------------|----------------------------|---------|------------------------------|
+| Ressourcengruppe **Standard**           |  Ressourcengruppe            | Anzeigeberechtigter  | Diese Richtlinie ist erforderlich, damit der Benutzer Serviceinstanzen in der Ressourcengruppe Standard anzeigen kann.    |
+| {{site.data.keyword.la_full_notm}}-Service |  Ressourcengruppe            | Bearbeiter  | Diese Richtlinie ist erforderlich, damit der Benutzer den {{site.data.keyword.la_full_notm}}-Service in der Ressourcengruppe Standard bereitstellen und verwalten kann.   |
+| Kubernetes-Clusterinstanz          |  Ressource                 | Bearbeiter  | Diese Richtlinie ist erforderlich, um den geheimen Schlüssel und den LogDNA-Agenten im Kubernetes-Cluster konfigurieren zu können. |
 {: caption="Tabelle 1. Liste der für das Lernprogramm erforderlichen IAM-Richtlinien" caption-side="top"} 
 
 Weitere Informationen zu den IAM-Rollen von {{site.data.keyword.containerlong}} finden Sie in [Benutzerzugriffsberechtigungen](/docs/containers?topic=containers-access_reference#access_reference).
@@ -136,7 +136,7 @@ Führen Sie die folgenden Schritte über die Befehlszeile aus, wenn Sie Ihren Ku
 1. Öffnen Sie ein Terminal für die Anmeldung bei {{site.data.keyword.cloud_notm}}.
 
    ```
-   ibmcloud login -a api.ng.bluemix.net
+   ibmcloud login -a cloud.ibm.com
    ```
    {: pre}
 

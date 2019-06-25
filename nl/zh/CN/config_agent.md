@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2019
-lastupdated: "2019-03-06"
+lastupdated: "2019-05-01"
 
 keywords: LogDNA, IBM, Log Analysis, logging, config agent
 
@@ -55,7 +55,7 @@ LogDNA 代理程序负责收集日志并将其转发到 {{site.data.keyword.la_f
 1. 打开终端以登录到 {{site.data.keyword.cloud_notm}}。
 
    ```
-   ibmcloud login -a api.ng.bluemix.net
+   ibmcloud login -a cloud.ibm.com
    ```
    {: pre}
 
@@ -72,17 +72,29 @@ LogDNA 代理程序负责收集日志并将其转发到 {{site.data.keyword.la_f
 
 3. 创建 Kubernetes 私钥来存储服务实例的 logDNA 摄入密钥。LogDNA 摄入密钥用于打开安全 Web 套接字来连接 logDNA 摄入服务器，以及向 {{site.data.keyword.la_full_notm}} 服务认证日志记录代理程序。
 
-   ```
+    ```
    kubectl create secret generic logdna-agent-key --from-literal=logdna-agent-key=<logDNA_ingestion_key>
    ```
-   {: pre}
+    {: pre}
 
 4. 创建 Kubernetes 守护程序集，以用于在 Kubernetes 集群的每个工作程序节点上部署 LogDNA 代理程序。LogDNA 代理程序会收集在 pod 的 `/var/log` 目录中存储的扩展名为 `*.log` 的日志以及无扩展名的文件。缺省情况下，将从所有名称空间（包括 `kube-system`）收集日志，并自动将日志转发到 {{site.data.keyword.la_full_notm}} 服务。
 
-   ```
-   kubectl create -f https://repo.logdna.com/ibm/prod/logdna-agent-ds-us-south.yaml
-   ```
-   {: pre}
+    <table>
+      <caption>按区域划分的命令</caption>
+      <tr>
+        <th>位置</th>
+        <th>命令</th>
+      </tr>
+      <tr>
+        <td>`美国南部`</td>
+        <td>`    kubectl create -f https://repo.logdna.com/ibm/prod/logdna-agent-ds-us-south.yaml
+    `</td>
+      </tr>
+      <tr>
+        <td>`欧盟德国`</td>
+        <td>`kubectl create -f https://repo.logdna.com/ibm/prod/logdna-agent-ds-eu-de.yaml`</td>
+      </tr>
+    </table>
 
 5. 验证 LogDNA 代理程序是否已成功部署。 
 
@@ -136,14 +148,14 @@ LogDNA 代理程序负责收集日志并将其转发到 {{site.data.keyword.la_f
     通过修改本地副本来更新配置文件。**注：**还可以通过运行以下命令来生成代理程序的配置文件：
 
     ```
-    kubectl get configmap logdna-agent -o=yaml > prod-logdna-agent-configmap.yaml
+    kubectl get daemonset logdna-agent -o=yaml > prod-logdna-agent-ds.yaml
     ```
     {: codeblock}
 
     或者，使用 *kubectl edit* 来更新配置文件。
 
     ```
-    kubectl edit configmap logdna-agent
+    kubectl edit daemonset logdna-agent
     ```
     {: codeblock}
 
@@ -192,7 +204,7 @@ LogDNA 代理程序负责收集日志并将其转发到 {{site.data.keyword.la_f
 5. 如果是在本地编辑文件，请应用配置更改。 
 
     ```
-    kubectl apply -f logdna-agent-configmap.yaml
+    kubectl apply -f prod-logdna-agent-ds.yaml
     ```
     {: codeblock}
     
@@ -239,17 +251,41 @@ LogDNA 代理程序负责收集日志并将其转发到 {{site.data.keyword.la_f
 
 3. 设置认证端点。LogDNA 代理程序使用此主机来认证并获取用于转发日志的令牌。
 
-    ```
-    sudo logdna-agent -s LOGDNA_APIHOST=api.us-south.logging.cloud.ibm.com
-    ```
-    {: codeblock}
+    <table>
+      <caption>按区域划分的命令</caption>
+      <tr>
+        <th>位置</th>
+        <th>命令</th>
+      </tr>
+      <tr>
+        <td>`美国南部`</td>
+        <td>`    sudo logdna-agent -s LOGDNA_APIHOST=api.us-south.logging.cloud.ibm.com
+    `</td>
+      </tr>
+      <tr>
+        <td>`欧盟德国`</td>
+        <td>`sudo logdna-agent -s LOGDNA_APIHOST=api.eu-de.logging.cloud.ibm.com`</td>
+      </tr>
+    </table>
 
 4. 设置摄入端点。
 
-    ```
-    sudo logdna-agent -s LOGDNA_LOGHOST=logs.us-south.logging.cloud.ibm.com
-    ```
-    {: codeblock}
+    <table>
+      <caption>按区域划分的命令</caption>
+      <tr>
+        <th>位置</th>
+        <th>命令</th>
+      </tr>
+      <tr>
+        <td>`美国南部`</td>
+        <td>`    sudo logdna-agent -s LOGDNA_LOGHOST=logs.us-south.logging.cloud.ibm.com
+    `</td>
+      </tr>
+      <tr>
+        <td>`欧盟德国`</td>
+        <td>`sudo logdna-agent -s LOGDNA_LOGHOST=logs.eu-de.logging.cloud.ibm.com`</td>
+      </tr>
+    </table>
 
 5. 定义要监视的更多日志路径。运行以下命令： 
 

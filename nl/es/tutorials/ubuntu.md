@@ -47,7 +47,7 @@ En esta guía de aprendizaje, aprenderá a configurar un servidor Ubuntu para re
 
 Obtenga más información sobre {{site.data.keyword.la_full_notm}}. Para obtener más información, consulte [Acerca de LogDNA](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-about#about).
 
-Trabaje en la región EE. UU. sur. {{site.data.keyword.la_full_notm}} está disponible actualmente en la región del sur de EE.UU. **Nota:** puede enviar datos desde un servidor Ubuntu que se encuentre en la misma región o en una región distinta. 
+Trabaje en la región EE. UU. sur. {{site.data.keyword.la_full_notm}} está disponible actualmente en la región EE. UU. sur. **Nota:** puede enviar datos desde un servidor Ubuntu que se encuentre en la misma región o en una región distinta. 
 
 Utilice un ID de usuario que sea miembro o propietario de una cuenta de {{site.data.keyword.cloud_notm}}. Para obtener un ID de usuario de {{site.data.keyword.cloud_notm}}, vaya a: [Registro ![Icono de enlace externo](../../../icons/launch-glyph.svg "Icono de enlace externo")](https://cloud.ibm.com/login){:new_window}.
 

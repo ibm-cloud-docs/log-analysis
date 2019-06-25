@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2019
-lastupdated: "2019-03-06"
+lastupdated: "2019-05-01"
 
 keywords: LogDNA, IBM, Log Analysis, logging, kubernetes, tutorial, reset ingestion key
 
@@ -42,7 +42,7 @@ subcollection: LogDNA
 |资源|访问策略的作用域|角色|区域|信息|
 |--------------------------------------|----------------------------|---------|-----------|------------------------------|
 |资源组 **Default**|资源组|查看者|us-south|要允许用户查看 Default 资源组中的服务实例，此策略是必需的。|
-|{{site.data.keyword.la_full_notm}} 服务|资源组|编辑者</br>管理者|us-south|要允许用户重置摄入密钥，此策略是必需的。|
+|{{site.data.keyword.la_full_notm}} 服务|资源组|编辑者 </br>管理员 |us-south|要允许用户重置摄入密钥，此策略是必需的。|
 |Kubernetes 集群实例|资源|编辑者|us-south|要在 Kubernetes 集群中删除和配置私钥和 LogDNA 代理程序，此策略是必需的。|
 {: caption="表 1. 完成教程所需的 IAM 策略的列表" caption-side="top"} 
 
@@ -79,7 +79,7 @@ subcollection: LogDNA
 1. 打开终端。然后，登录到 {{site.data.keyword.cloud_notm}}。运行以下命令并遵循提示进行操作：
 
     ```
-    ibmcloud login -a api.ng.bluemix.net
+    ibmcloud login -a cloud.ibm.com
     ```
     {: codeblock}
 
@@ -132,7 +132,7 @@ subcollection: LogDNA
 1. 打开终端。然后，登录到 {{site.data.keyword.cloud_notm}}。运行以下命令并遵循提示进行操作：
 
     ```
-    ibmcloud login -a api.ng.bluemix.net
+    ibmcloud login -a cloud.ibm.com
     ```
     {: codeblock}
 

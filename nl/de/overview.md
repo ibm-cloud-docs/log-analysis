@@ -45,7 +45,7 @@ Bevor Sie eine {{site.data.keyword.la_full_notm}}-Instanz bereitstellen, müssen
 
 Sie stellen eine {{site.data.keyword.la_full_notm}}-Instanz im Kontext einer Ressourcengruppe bereit. Sie verwenden Ressourcengruppen zur Verwaltung Ihrer Services für Zugriffssteuerungs- und Abrechnungszwecke. Sie können die Instanz in der Ressourcengruppe *Standard* oder in einer benutzerdefinierten Ressourcengruppe bereitstellen.
 
-Nachdem Sie eine Instanz von {{site.data.keyword.la_full_notm}} bereitgestellt haben, wird ein Konto in LogDNA erstellt und Sie erhalten den Aufnahmeschlüssel für Ihr Konto. 
+Nachdem Sie eine Instanz von {{site.data.keyword.la_full_notm}} bereitgestellt haben, wird ein Konto in LogDNA erstellt und Sie erhalten den Aufnahmeschlüssel für Ihr Konto.
 
 Anschließend müssen Sie einen LogDNA-Agenten für jede Protokollquelle konfigurieren. Eine Protokollquelle ist eine Cloudressource oder eine lokale Ressource, die Protokolle generiert. Eine Protokollquelle kann z. B. ein Kubernetes-Cluster sein. Mit dem Aufnahmeschlüssel konfigurieren Sie den LogDNA-Agenten, der für die Erfassung und Weiterleitung von Protokollen an Ihre {{site.data.keyword.la_full_notm}}-Instanz zuständig ist.
 

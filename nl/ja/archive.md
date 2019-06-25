@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2019
-lastupdated: "2019-03-06"
+lastupdated: "2019-05-01"
 
 keywords: LogDNA, IBM, Log Analysis, logging, archive logs, COS, cloud object storage
 
@@ -28,7 +28,7 @@ subcollection: LogDNA
 {{site.data.keyword.la_full_notm}} インスタンスから {{site.data.keyword.cos_full_notm}} (COS) インスタンス内のバケットにログをアーカイブできます。 
 {:shortdesc}
 
-アーカイブを構成するためには、**ビューアー**のプラットフォーム役割と {{site.data.keyword.la_full_notm}} サービスに対する**管理者**のサービス役割を持つ IAM ポリシーが必要です。
+アーカイブを構成するためには、**ビューアー**のプラットフォーム役割と {{site.data.keyword.la_full_notm}} サービスに対する**マネージャー**のサービス役割を持つ IAM ポリシーが必要です。
 
 {{site.data.keyword.la_full_notm}} インスタンスから {{site.data.keyword.cos_full_notm}} (COS) インスタンス内のバケットにログをアーカイブします。 各 {{site.data.keyword.la_full_notm}} インスタンスには、独自のアーカイブ構成があります。 
 
@@ -56,7 +56,7 @@ subcollection: LogDNA
 
 **注:** このステップは、{{site.data.keyword.cloud_notm}} 上のアカウント所有者か {{site.data.keyword.cos_full_notm}} サービスの管理者が完了しなければなりません。
 
-{{site.data.keyword.cos_full_notm}} サービスの管理者は、サービスのインスタンスをプロビジョンしたり、これらのインスタンスを使って作業するための許可をその他のユーザーに付与したり、サービス ID を作成したりできなければなりません。 
+{{site.data.keyword.cos_full_notm}} サービスの管理者は、サービスのインスタンスをプロビジョンすること、これらのインスタンスを使って作業するための許可をその他のユーザーに付与すること、およびサービス ID を作成することが可能でなければなりません。 
 
 {{site.data.keyword.cos_full_notm}} サービスのエディターになるための許可をユーザーに付与できる方法は複数あります。
 
@@ -135,13 +135,13 @@ subcollection: LogDNA
 
 | サービス                    | 役割                   | アクション                             | 
 |----------------------------|-------------------------|------------------------------------|       
-| `Cloud Object Storage`     | プラットフォーム役割: ビューアー   | ユーザーが {site.data.keyword.Bluemix_notm}} UI によりバケットをすべて表示したり、バケット内のオブジェクトをすべてリストできるようにします。 |
-| `Cloud Object Storage`     | サービス役割: 管理者   | ユーザーがオブジェクトを公開できるようにします。                                                       |
-| `Cloud Object Storage`     | サービス役割: 管理者 </br>ライター | ユーザーがバケットやオブジェクトを作成したり破棄したりできるようにします。                         | 
+| `Cloud Object Storage`     | プラットフォーム役割: ビューアー   |ユーザーが {{site.data.keyword.cloud_notm}} UI によりバケットをすべて表示したり、バケット内のオブジェクトをすべてリストしたりできるようにします。 |
+| `Cloud Object Storage`     | サービス役割: マネージャー   | ユーザーがオブジェクトを公開できるようにします。                                                       |
+| `Cloud Object Storage`     | サービス役割: マネージャー </br>ライター | ユーザーがバケットやオブジェクトの作成および破棄ができるようにします。                         | 
 | `Cloud Object Storage`     | サービス役割: リーダー    | ユーザーがオブジェクトをリストしたりダウンロードしたりできるようにします。                                                 |
 {: caption="表 1. バケットで作業するための役割とアクション" caption-side="top"} 
 
-**注:** バケットを作成するには、{{site.data.keyword.cos_full_notm}} インスタンスに対する管理者またはライター許可がユーザーになければなりません。
+**注:** バケットを作成するには、{{site.data.keyword.cos_full_notm}} インスタンスに対するマネージャーまたはライターの許可がユーザーになければなりません。
 
 バケットを作成するには、以下のステップを実行します。
 
@@ -171,19 +171,19 @@ subcollection: LogDNA
     
     地域の回復力では、データが単一の都市圏全体に分散します。 
     
-    単一データ・センターでは、データは単一の設置場所のデバイス間のみに分散します。
+    単一データ・センターでは、データは単一サイトのデバイス間のみに分散します。
 
-    詳しくは、[地域とエンドポイントの選択](/docs/services/cloud-object-storage?topic=cloud-object-storage-endpoints#endpoints)を参照してください。
+    詳しくは、[地域とエンドポイントの選択](/docs/services/cloud-object-storage?topic=cloud-object-storage-endpoints)を参照してください。
 
 6. *ストレージ・クラス*のタイプを選択します。
 
-    さまざまなストレージ・クラスのバケットを作成できます。 データを取得するための要件に基づいて、バケットのストレージ・クラスを選択します。 詳しくは、[ストレージ・クラスの使用](/docs/services/cloud-object-storage?topic=cloud-object-storage-use-storage-classes#use-storage-classes)を参照してください。
+    さまざまなストレージ・クラスのバケットを作成できます。 データを取得するための要件に基づいて、バケットのストレージ・クラスを選択します。 詳しくは、[ストレージ・クラスの使用](/docs/services/cloud-object-storage?topic=cloud-object-storage-classes)を参照してください。
 
     **注:** バケットがいったん作成されると、そのバケットのストレージ・クラスは変更できません。 オブジェクトを再分類する必要がある場合は、ご希望のストレージ・クラスの別のバケットにデータを移動する必要があります。
 
 7. オプションで、Key Protect キーを追加して、保存されたデータを暗号化します。
 
-    デフォルトでは、すべてのオブジェクトは、ランダムに生成される鍵と AONT (all-or-nothing-transform) を使用して暗号化されます。 保存されたデータのセキュリティーはこのデフォルトの暗号化モデルにより備えられますが、使用する暗号鍵を保有する必要のあるワークロードもあります。 詳しくは、[暗号化の管理](/docs/services/cloud-object-storage?topic=cloud-object-storage-manage-encryption#manage-encryption)を参照してください。
+    デフォルトでは、すべてのオブジェクトは、ランダムに生成される鍵と AONT (all-or-nothing-transform) を使用して暗号化されます。 保存されたデータのセキュリティーはこのデフォルトの暗号化モデルにより備えられますが、使用する暗号鍵を保有する必要のあるワークロードもあります。 詳しくは、[暗号化の管理](/docs/services/cloud-object-storage?topic=cloud-object-storage-encryption)を参照してください。
 
 
 
@@ -220,14 +220,14 @@ subcollection: LogDNA
 
 作成したばかりのサービス ID について、**「資格情報の表示」**をクリックします。 そのサービス ID に関連した情報を表示できます。 
 
-* API 鍵をコピーします。 **「apikey」**フィールドの値セットが該当します。
-* リソース・インスタンス ID をコピーします。 **「resource_instance_id」**フィールドの値セットが該当します。
+* API 鍵をコピーします。 これは、**「apikey」**フィールドに設定した値です。
+* リソース・インスタンス ID をコピーします。 これは、**「resource_instance_id」**フィールドに設定した値です。
 
 
 ## ステップ 5. バケットに対する書き込み許可だけを持つようにサービス ID を制限する
 {: #archiving_step5}
 
-サービス ID がバケットに対する書き込み許可だけを持つように制限しようとしている場合は、以下のステップを実行します。
+サービス ID がバケットに対する書き込み許可だけを持つように制限する場合は、以下のステップを実行します。
 
 1. サービス ID に関する情報を読み、**「iam_apikey_name」**フィールドの値と**「iam_apikey_name」**フィールドを書き留めます。 
 
@@ -279,7 +279,7 @@ subcollection: LogDNA
 | サービス                        | 役割                      | 付与される許可                  | 
 |--------------------------------|---------------------------|-------------------------------------|  
 | `{{site.data.keyword.la_full_notm}}` | プラットフォーム役割: ビューアー     | ユーザーが「プログラム識別情報ロギング (Observability Logging)」ダッシュボードでサービス・インスタンスのリストを表示できるようにします。 |
-| `{{site.data.keyword.la_full_notm}}` | サービス役割: 管理者      | ユーザーが Web UI を起動して Web UI にログを表示できるようにします。                             |
+| `{{site.data.keyword.la_full_notm}}` | サービス役割: マネージャー  | ユーザーが Web UI を起動して Web UI にログを表示できるようにします。                             |
 {: caption="表 2. IAM ポリシー" caption-side="top"} 
 
 ユーザーに対してこれらのポリシーを構成する方法について詳しくは、[LogDNA でのログの表示許可をユーザーに付与する](/docs/services/Log-Analysis-with-LogDNA/work_iam.html#user_logdna)を参照してください。
@@ -298,7 +298,7 @@ subcollection: LogDNA
 
 6. **「IBM Log Analysis with LogDNA」**を選択します。
 7. **「ビューアー」**プラットフォーム役割を選択します。
-8. **「管理者」**サービス役割を選択します。
+8. **「マネージャー」**サービス役割を選択します。
 9. **「割り当て」**をクリックします。
 
 

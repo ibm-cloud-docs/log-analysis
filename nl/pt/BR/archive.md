@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2019
-lastupdated: "2019-03-06"
+lastupdated: "2019-05-01"
 
 keywords: LogDNA, IBM, Log Analysis, logging, archive logs, COS, cloud object storage
 
@@ -70,8 +70,8 @@ A tabela a seguir lista as funções que um usuário pode ter para concluir as a
 | Serviço                    | Funções da Plataforma    | Ações                                                                                        | 
 |----------------------------|-------------------|-----------------------------------------------------------------------------------------------|       
 | `Cloud Object Storage`     | Administrador     | Permite que o usuário designe políticas para usuários da conta para que eles trabalhem com o serviço {{site.data.keyword.cos_full_notm}}. |
-| `Cloud Object Storage`     | Administrador </br>Aplicativos | Permite que o usuário forneça uma instância do serviço {{site.data.keyword.cos_full_notm}}.    |
-| `Cloud Object Storage`     | Administrador </br>Aplicativos </br>Operador | Permite que o usuário crie um ID de serviço.    | 
+| `Cloud Object Storage`     | Administrador </br>Editor | Permite que o usuário forneça uma instância do serviço {{site.data.keyword.cos_full_notm}}.    |
+| `Cloud Object Storage`     | Administrador </br>Editor </br>Operador | Permite que o usuário crie um ID de serviço.    | 
 {: caption="Tabela 1. Funções e ações" caption-side="top"} 
 
 
@@ -135,13 +135,13 @@ Para gerenciar os depósitos, seu usuário deve receber permissões para trabalh
 
 | Serviço                    | Atribuições                   | Ações                             | 
 |----------------------------|-------------------------|------------------------------------|       
-| `Cloud Object Storage`     | Função de plataforma: visualizador   | Permite que o usuário visualize todos os depósitos e liste os objetos dentro deles por meio da IU do {site.data.keyword.Bluemix_notm}}. |
+| `Cloud Object Storage`     | Função de plataforma: visualizador   | Permite que o usuário visualize todos os depósitos e liste os objetos dentro deles por meio da IU do {{site.data.keyword.cloud_notm}}. |
 | `Cloud Object Storage`     | Função de serviço: gerenciador   | Permite que o usuário torne os objetos públicos.                                                       |
-| `Cloud Object Storage`     | Funções de serviço: gerenciador </br>Gravador | Permite que o usuário crie e destrua depósitos e objetos.                         | 
+| `Cloud Object Storage`     | Funções de serviço: Gerenciador </br>Gravador | Permite que o usuário crie e destrua depósitos e objetos.                         | 
 | `Cloud Object Storage`     | Função de serviço: leitor    | Permite que o usuário liste e faça download de objetos.                                                 |
 {: caption="Tabela 1. Funções e ações para trabalhar com depósitos" caption-side="top"} 
 
-**Nota:** para criar um depósito, seu usuário deve ter permissões de gerenciador ou de gravador para a instância do {{site.data.keyword.cos_full_notm}}.
+**Nota:** para criar um depósito, seu usuário deve ter permissões de gerenciador ou de Gravador para a instância do {{site.data.keyword.cos_full_notm}}.
 
 Conclua as etapas a seguir para criar um depósito:
 
@@ -173,17 +173,17 @@ Conclua as etapas a seguir para criar um depósito:
     
     Um data center único apenas distribuirá os dados pelos dispositivos dentro de um único site.
 
-    Para obter mais informações, consulte [Selecionar regiões e terminais](/docs/services/cloud-object-storage?topic=cloud-object-storage-endpoints#endpoints).
+    Para obter mais informações, consulte [Selecionar regiões e terminais](/docs/services/cloud-object-storage?topic=cloud-object-storage-endpoints).
 
 6. Escolha o tipo de  * Classe de armazenamento *.
 
-    É possível criar depósitos com diferentes classes de armazenamento. Escolha a classe de armazenamento para seu depósito com base em seus requisitos para recuperar dados. Para obter mais informações, consulte [Usar classes de armazenamento](/docs/services/cloud-object-storage?topic=cloud-object-storage-use-storage-classes#use-storage-classes).
+    É possível criar depósitos com diferentes classes de armazenamento. Escolha a classe de armazenamento para seu depósito com base em seus requisitos para recuperar dados. Para obter mais informações, consulte [Usar classes de armazenamento](/docs/services/cloud-object-storage?topic=cloud-object-storage-classes).
 
     **Nota:** não é possível mudar a classe de armazenamento de um depósito depois que ele é criado. Se os objetos precisarem ser reclassificados, será necessário mover os dados para outro depósito com a classe de armazenamento desejada.
 
 7. Opcionalmente, inclua uma chave de proteção para criptografar dados em repouso.
 
-    Todos os objetos são criptografados por padrão usando chaves geradas aleatoriamente e uma transformação do tipo "tudo ou nada". Enquanto esse modelo de criptografia padrão fornece segurança em repouso, algumas cargas de trabalho precisam ser propriedade das chaves de criptografia usadas. Para obter mais informações, consulte  [ Gerenciar criptografia ](/docs/services/cloud-object-storage?topic=cloud-object-storage-manage-encryption#manage-encryption).
+    Todos os objetos são criptografados por padrão usando chaves geradas aleatoriamente e uma transformação do tipo "tudo ou nada". Enquanto esse modelo de criptografia padrão fornece segurança em repouso, algumas cargas de trabalho precisam ser propriedade das chaves de criptografia usadas. Para obter mais informações, consulte  [ Gerenciar criptografia ](/docs/services/cloud-object-storage?topic=cloud-object-storage-encryption).
 
 
 

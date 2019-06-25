@@ -32,6 +32,6 @@ Treten bei der Verwendung von {{site.data.keyword.la_full_notm}} Probleme oder F
 
 * In den Foren können Sie überprüfen, ob Ihr Problem auch bei anderen Benutzern aufgetreten ist. Wenn Sie die Foren verwenden, um eine Frage zu stellen, kennzeichnen Sie Ihre Frage so, dass sie von den {{site.data.keyword.cloud_notm}}-Entwicklerteams erkannt wird.
 <!--Insert the appropriate Stack Overflow tag for your service for <service_keyword> in URL and text below:  -->
-  * Technische Fragen zum {{site.data.keyword.la_full_notm}}-Service stellen Sie in [Stack Overflow](http://stackoverflow.com/search?q=log-analysis-with-logdna+ibm-cloud){:new_window}, wo Sie Ihre Frage mit den Kennzeichen "ibm-cloud" und "log-analysis-with-logdna" versehen müssen.
+  * Technische Fragen zum {{site.data.keyword.la_full_notm}}-Service stellen Sie in [Stack Overflow](http://stackoverflow.com/search?q=logdna+ibm-cloud){:new_window}, wo Sie Ihre Frage mit den Tags `ibm-cloud` und `loganalysis-logdna` versehen müssen.
 
 * Wenn Sie das Problem trotzdem nicht lösen können, können Sie ein IBM Support-Ticket öffnen. Informationen zum Öffnen eines IBM Support-Tickets oder zu den Support-Levels und Ticketprioritäten finden Sie in [Unterstützung erhalten](/docs/get-support?topic=get-support-getting-customer-support#getting-customer-support).

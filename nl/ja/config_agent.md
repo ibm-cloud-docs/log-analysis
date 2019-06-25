@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2019
-lastupdated: "2019-03-06"
+lastupdated: "2019-05-01"
 
 keywords: LogDNA, IBM, Log Analysis, logging, config agent
 
@@ -37,7 +37,7 @@ LogDNA エージェントにより、以下のパラメーターを構成でき�
 |-----------|-------------|
 | `tags`    | ホストを動的グループに自動的にグループ化するタグを定義します。 |
 | `logdir`  | エージェントがモニターするカスタム・パスを定義します。 </br>複数のパスはコンマを使用して区切ります。 glob パターンを使用できます。 特定のファイルを構成できます。 glob パターンは、二重引用符を使用して入力します。 |
-| `exclude` | LogDNA エージェントがモニターしないファイルを定義します。 **注:** これらのファイルは、logdir パラメーターで定義しているいずれかのパス内に配置できます。 </br>複数のファイルはコンマを使用して区切ります。 glob パターンを使用できます。 特定のファイルを構成できます。 |
+| `exclude` | LogDNA エージェントがモニターしないファイルを定義します。 **注:** これらのファイルは、logdir パラメーターで定義しているいずれかのパス内に配置できます。 </br>複数のファイルはコンマを使用して区切ります。glob パターンを使用できます。 特定のファイルを構成できます。 |
 | `exclude_regex` | パターンと一致する行をフィルターで除外する正規表現パターンを定義します。 前後に `/` を含めないでください。 |
 | `hostname` | ホスト名を定義します。 この値は、オペレーティング・システムのホスト名をオーバーライドします。 |
 | `autoupdate` | パブリック・リポジトリー・エージェント定義の更新時にエージェントを自動的に更新するには、`1` に設定します。 このフィーチャーを無効にするには、`0` に設定します。 |  
@@ -55,7 +55,7 @@ LogDNA インスタンスにログを転送するように Kubernetes クラス�
 1. 端末を開いて、{{site.data.keyword.cloud_notm}} にログインします。
 
    ```
-   ibmcloud login -a api.ng.bluemix.net
+   ibmcloud login -a cloud.ibm.com
    ```
    {: pre}
 
@@ -72,17 +72,28 @@ LogDNA インスタンスにログを転送するように Kubernetes クラス�
 
 3. サービス・インスタンスの logDNA 取り込み鍵を保管するための Kubernetes シークレットを作成します。 logDNA 取り込みサーバーに対してセキュア Web ソケットを開く際、およびロギング・エージェントを {{site.data.keyword.la_full_notm}} サービスで認証する際に、LogDNA 取り込み鍵が使用されます。
 
-   ```
-   kubectl create secret generic logdna-agent-key --from-literal=logdna-agent-key=<logDNA_ingestion_key>
-   ```
-   {: pre}
+    ```
+    kubectl create secret generic logdna-agent-key --from-literal=logdna-agent-key=<logDNA_ingestion_key>
+    ```
+    {: pre}
 
-4. Kubernetes クラスターのすべてのワーカー・ノードに LogDNA エージェントをデプロイするように設定された Kubernetesデーモンを作成します。 LogDNA エージェントは、ポッドの `/var/log` ディレクトリーに保管されている `*.log` 拡張子のファイルと拡張子のないファイルを使用してログを収集します。 デフォルトでは、`kube-system` を含めすべての名前空間からログが収集され、{{site.data.keyword.la_full_notm}} サービスに自動的に転送されます。
+4. Kubernetes クラスターのすべてのワーカー・ノードに LogDNA エージェントをデプロイするように設定された Kubernetes デーモンを作成します。 LogDNA エージェントは、ポッドの `/var/log` ディレクトリーに保管されている `*.log` 拡張子のファイルと拡張子のないファイルを使用してログを収集します。 デフォルトでは、`kube-system` を含めすべての名前空間からログが収集され、{{site.data.keyword.la_full_notm}} サービスに自動的に転送されます。
 
-   ```
-   kubectl create -f https://repo.logdna.com/ibm/prod/logdna-agent-ds-us-south.yaml
-   ```
-   {: pre}
+    <table>
+      <caption>地域ごとのコマンド</caption>
+      <tr>
+        <th>場所</th>
+        <th>コマンド</th>
+      </tr>
+      <tr>
+        <td>`米国南部`</td>
+        <td>`kubectl create -f https://repo.logdna.com/ibm/prod/logdna-agent-ds-us-south.yaml`</td>
+      </tr>
+      <tr>
+        <td>`EU-DE`</td>
+        <td>`kubectl create -f https://repo.logdna.com/ibm/prod/logdna-agent-ds-eu-de.yaml`</td>
+      </tr>
+    </table>
 
 5. LogDNA エージェントが正常にデプロイされたことを確認します。 
 
@@ -136,14 +147,14 @@ LogDNA ポッドが 1 つ以上表示されたらデプロイメントは成功�
     ローカル・コピーを変更して、構成ファイルを更新します。 **注:** 以下のコマンドを実行して、エージェントの構成ファイルを生成することもできます。
 
     ```
-    kubectl get configmap logdna-agent -o=yaml > prod-logdna-agent-configmap.yaml
+    kubectl get daemonset logdna-agent -o=yaml > prod-logdna-agent-ds.yaml
     ```
     {: codeblock}
 
     あるいは、*kubectl edit* を使用して構成ファイルを更新します。
 
     ```
-    kubectl edit configmap logdna-agent
+    kubectl edit daemonset logdna-agent
     ```
     {: codeblock}
 
@@ -192,7 +203,7 @@ LogDNA ポッドが 1 つ以上表示されたらデプロイメントは成功�
 5. ファイルをローカルに編集している場合は、構成変更を適用します。 
 
     ```
-    kubectl apply -f logdna-agent-configmap.yaml
+    kubectl apply -f prod-logdna-agent-ds.yaml
     ```
     {: codeblock}
     
@@ -239,17 +250,39 @@ LogDNA インスタンスにログを転送するように Ubuntu サーバー�
 
 3. 認証エンドポイントを設定します。 LogDNA エージェントはこのホストを使用して認証され、ログを転送するためのトークンを取得します。
 
-    ```
-    sudo logdna-agent -s LOGDNA_APIHOST=api.us-south.logging.cloud.ibm.com
-    ```
-    {: codeblock}
+    <table>
+      <caption>地域ごとのコマンド</caption>
+      <tr>
+        <th>場所</th>
+        <th>コマンド</th>
+      </tr>
+      <tr>
+        <td>`米国南部`</td>
+        <td>`sudo logdna-agent -s LOGDNA_APIHOST=api.us-south.logging.cloud.ibm.com`</td>
+      </tr>
+      <tr>
+        <td>`EU-DE`</td>
+        <td>`sudo logdna-agent -s LOGDNA_APIHOST=api.eu-de.logging.cloud.ibm.com`</td>
+      </tr>
+    </table>
 
 4. 取り込みエンドポイントを設定します。
 
-    ```
-    sudo logdna-agent -s LOGDNA_LOGHOST=logs.us-south.logging.cloud.ibm.com
-    ```
-    {: codeblock}
+    <table>
+      <caption>地域ごとのコマンド</caption>
+      <tr>
+        <th>場所</th>
+        <th>コマンド</th>
+      </tr>
+      <tr>
+        <td>`米国南部`</td>
+        <td>`sudo logdna-agent -s LOGDNA_LOGHOST=logs.us-south.logging.cloud.ibm.com`</td>
+      </tr>
+      <tr>
+        <td>`EU-DE`</td>
+        <td>`sudo logdna-agent -s LOGDNA_LOGHOST=logs.eu-de.logging.cloud.ibm.com`</td>
+      </tr>
+    </table>
 
 5. モニターする他のログ・パスを定義します。 次のコマンドを実行します。 
 

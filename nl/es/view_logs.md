@@ -159,5 +159,3 @@ Realice los pasos siguientes para crear una vista:
 6. Opcionalmente, adjunte una alerta. Aparecerá una nueva sección para que pueda configurar la alerta.
 
 7. Pulse **Guardar vista**
-
-

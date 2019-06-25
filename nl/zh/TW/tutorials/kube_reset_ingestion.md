@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2019
-lastupdated: "2019-03-06"
+lastupdated: "2019-05-01"
 
 keywords: LogDNA, IBM, Log Analysis, logging, kubernetes, tutorial, reset ingestion key
 
@@ -42,7 +42,7 @@ subcollection: LogDNA
 | 資源                             | 存取原則的範圍 | 角色    | 地區    | 資訊                  |
 |--------------------------------------|----------------------------|---------|-----------|------------------------------|
 | 資源群組 **Default**           |  資源群組            | 檢視者  | 美國南部  | 需要此原則，以容許使用者查看 Default 資源群組中的服務實例。|
-| {{site.data.keyword.la_full_notm}} 服務 |  資源群組            | 編輯者  </br> 管理員 | 美國南部  | 需要此原則，以容許使用者重設汲取金鑰。|
+| {{site.data.keyword.la_full_notm}} 服務 |  資源群組            | 編輯者 </br>管理員  | 美國南部  | 需要此原則，以容許使用者重設汲取金鑰。|
 | Kubernetes 叢集實例          | 資源                             | 編輯者  | 美國南部  | 需要有此原則，才能在 Kubernetes 叢集中刪除及配置密碼和 LogDNA 代理程式。|
 {: caption="表 1. 完成指導教學所需的 IAM 原則清單" caption-side="top"} 
 
@@ -79,7 +79,7 @@ subcollection: LogDNA
 1. 開啟終端機。然後，登入 {{site.data.keyword.cloud_notm}}。執行下列指令，並遵循下列提示：
 
     ```
-    ibmcloud login -a api.ng.bluemix.net
+    ibmcloud login -a cloud.ibm.com
     ```
     {: codeblock}
 
@@ -132,7 +132,7 @@ subcollection: LogDNA
 1. 開啟終端機。然後，登入 {{site.data.keyword.cloud_notm}}。執行下列指令，並遵循下列提示：
 
     ```
-    ibmcloud login -a api.ng.bluemix.net
+    ibmcloud login -a cloud.ibm.com
     ```
     {: codeblock}
 

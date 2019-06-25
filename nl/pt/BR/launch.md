@@ -38,7 +38,7 @@ A tabela a seguir lista as políticas mínimas que um usuário deve ter para ser
 | Serviço                              | Função                      | Permissão concedida       |
 |--------------------------------------|---------------------------|---------------------|
 | `{{site.data.keyword.la_full_notm}}` | Função de plataforma: visualizador     | Permite que o usuário visualize a lista de instâncias de serviço no painel Criação de log de Observabilidade. |
-| `{{site.data.keyword.la_full_notm}}` | Função de serviço: gravador      | Permite que o usuário ative a IU da web e visualize logs na IU da web.    |
+| `{{site.data.keyword.la_full_notm}}` | Função de serviço: Gravador      | Permite que o usuário ative a IU da web e visualize logs na IU da web.    |
 {: caption="Tabela 1. Políticas do IAM" caption-side="top"} 
 
 Para obter mais informações sobre como configurar essas políticas para um usuário, consulte [Concedendo permissões a um usuário para visualizar logs](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-work_iam#user_logdna).

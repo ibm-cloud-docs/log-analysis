@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2019
-lastupdated: "2019-03-06"
+lastupdated: "2019-04-01"
 
 keywords: LogDNA, IBM, Log Analysis, logging, log sources
 
@@ -31,7 +31,7 @@ subcollection: LogDNA
 ## 平台容器服务
 {: #log_sources_kube}
 
-可以使用 {{site.data.keyword.la_full_notm}} 管理来自 [{{site.data.keyword.containerlong_notm}}](/docs/containers?topic=containers-container_index#container_index) 的日志。
+可以使用 {{site.data.keyword.la_full_notm}} 管理来自 [{{site.data.keyword.containerlong_notm}}](/docs/containers?topic=containers-getting-started) 的日志。
 
 |有关管理 {{site.data.keyword.containerlong_notm}} 的日志的教程|
 |---------------------------------------------------------------------------------------------------|

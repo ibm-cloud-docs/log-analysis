@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2019
-lastupdated: "2019-03-06"
+lastupdated: "2019-05-01"
 
 keywords: LogDNA, IBM, Log Analysis, logging, kubernetes, tutorial, reset ingestion key
 
@@ -79,7 +79,7 @@ Completa la seguente procedura:
 1. Apri un terminale. Accedi quindi a {{site.data.keyword.cloud_notm}}. Esegui il seguente comando e segui i prompt:
 
     ```
-    ibmcloud login -a api.ng.bluemix.net
+    ibmcloud login -a cloud.ibm.com
     ```
     {: codeblock}
 
@@ -132,7 +132,7 @@ Per configurare il tuo cluster Kubernetes per inoltrare i log alla tua istanza L
 1. Apri un terminale. Accedi quindi a {{site.data.keyword.cloud_notm}}. Esegui il seguente comando e segui i prompt:
 
     ```
-    ibmcloud login -a api.ng.bluemix.net
+    ibmcloud login -a cloud.ibm.com
     ```
     {: codeblock}
 

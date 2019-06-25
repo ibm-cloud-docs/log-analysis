@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2019
-lastupdated: "2019-03-06"
+lastupdated: "2019-05-01"
 
 keywords: LogDNA, IBM, Log Analysis, logging, kubernetes, tutorial
 
@@ -50,19 +50,19 @@ In questa esercitazione, imparerai come configurare una registrazione a livello 
 ## Prima di iniziare
 {: #kube_prereqs}
 
-Lavoro nella regione US-South. {{site.data.keyword.la_full_notm}} è attualmente disponibile nella regione Stati Uniti Sud. **Nota:** è possibile inviare i dati da un cluster Kubernetes che si trova nella stessa regione o in una regione differente. 
+Lavora in una [regione supportata](/docs/services/Log-Analysis-with-LogDNA/tutorials?topic=LogDNA-about#overview_regions). **Nota:** è possibile inviare i dati da un cluster Kubernetes che si trova nella stessa regione o in una regione differente. 
 
 Leggi a proposito di {{site.data.keyword.la_full_notm}}. Per ulteriori informazioni, vedi [Informazioni su ](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-about#about).
 
 Utilizza un ID utente che sia un membro o un proprietario di un account {{site.data.keyword.cloud_notm}}. Per ottenere un ID utente {{site.data.keyword.cloud_notm}}, vai a [Registrazione![Icona link esterno](../../../icons/launch-glyph.svg "Icona link esterno")](https://cloud.ibm.com/login){:new_window}.
 
-Al tuo ID {{site.data.keyword.IBM_notm}} devono essere assegnate le politiche IAM per ciascuna delle seguenti risorse: 
+Al tuo ID {{site.data.keyword.IBM_notm}} devono essere assegnate le politiche IAM per ciascuna delle seguenti risorse nella regione in cui si trova la tua istanza {{site.data.keyword.la_full_notm}}:  
 
-| Risorsa                             | Ambito della politica di accesso | Ruolo    | Regione    | Informazioni                  |
-|--------------------------------------|----------------------------|---------|-----------|------------------------------|
-| Gruppo di risorse **Predefinito**           |  Gruppo di risorse            | Visualizzatore  | us-south  | Questa politica è richiesta per consentire all'utente di visualizzare le istanze del servizio nel gruppo di risorse Predefinito.    |
-| Servizio {{site.data.keyword.la_full_notm}} |  Gruppo di risorse            | Editor  | us-south  | Questa politica è richiesta per consentire all'utente di eseguire il provisioning e l'amministrazione del servizio {{site.data.keyword.la_full_notm}} nel gruppo di risorse Predefinito.   |
-| Istanza cluster Kubernetes          |  Risorsa                 | Editor  | us-south  | Questa politica è richiesta per configurare il segreto e l'agent LogDNA nel cluster Kubernetes. |
+| Risorsa                             | Ambito della politica di accesso | Ruolo    | Informazioni                  |
+|--------------------------------------|----------------------------|---------|------------------------------|
+| Gruppo di risorse **Predefinito**           |  Gruppo di risorse            | Visualizzatore  | Questa politica è richiesta per consentire all'utente di visualizzare le istanze del servizio nel gruppo di risorse Predefinito.    |
+| Servizio {{site.data.keyword.la_full_notm}} |  Gruppo di risorse            | Editor  | Questa politica è richiesta per consentire all'utente di eseguire il provisioning e l'amministrazione del servizio {{site.data.keyword.la_full_notm}} nel gruppo di risorse Predefinito.   |
+| Istanza cluster Kubernetes          |  Risorsa                 | Editor  | Questa politica è richiesta per configurare il segreto e l'agent LogDNA nel cluster Kubernetes. |
 {: caption="Tabella 1. Elenco delle politiche IAM richieste per completare l'esercitazione" caption-side="top"} 
 
 Per ulteriori informazioni sui ruoli IAM {{site.data.keyword.containerlong}}, vedi [Autorizzazioni di accesso utente](/docs/containers?topic=containers-access_reference#access_reference).
@@ -136,7 +136,7 @@ Per configurare il tuo cluster Kubernetes per inoltrare i log alla tua istanza L
 1. Apri un terminale per accedere a {{site.data.keyword.cloud_notm}}.
 
    ```
-   ibmcloud login -a api.ng.bluemix.net
+   ibmcloud login -a cloud.ibm.com
    ```
    {: pre}
 

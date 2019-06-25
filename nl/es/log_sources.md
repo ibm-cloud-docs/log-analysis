@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2019
-lastupdated: "2019-03-06"
+lastupdated: "2019-04-01"
 
 keywords: LogDNA, IBM, Log Analysis, logging, log sources
 
@@ -31,7 +31,7 @@ Puede configurar orígenes de registro de {{site.data.keyword.cloud}} y orígene
 ## Servicios de contenedor de plataforma
 {: #log_sources_kube}
 
-Puede gestionar registros desde [{{site.data.keyword.containerlong_notm}}](/docs/containers?topic=containers-container_index#container_index) con {{site.data.keyword.la_full_notm}}.
+Puede gestionar registros desde [{{site.data.keyword.containerlong_notm}}](/docs/containers?topic=containers-getting-started) con {{site.data.keyword.la_full_notm}}.
 
 | Guías de aprendizaje para gestionar registros para {{site.data.keyword.containerlong_notm}} |
 |---------------------------------------------------------------------------------------------------|

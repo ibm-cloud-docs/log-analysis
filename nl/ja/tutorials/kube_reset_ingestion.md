@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2019
-lastupdated: "2019-03-06"
+lastupdated: "2019-05-01"
 
 keywords: LogDNA, IBM, Log Analysis, logging, kubernetes, tutorial, reset ingestion key
 
@@ -42,7 +42,7 @@ subcollection: LogDNA
 | リソース                             | アクセス・ポリシーの有効範囲 | 役割    | 地域    | 情報                  |
 |--------------------------------------|----------------------------|---------|-----------|------------------------------|
 | リソース・グループ **Default**           |  リソース・グループ            | ビューアー  | us-south  | デフォルトのリソース・グループ内のサービス・インスタンスをユーザーが表示できるようにするためには、このポリシーが必要です。    |
-| {{site.data.keyword.la_full_notm}} サービス |  リソース・グループ            | エディター </br>管理者  | us-south  | 取り込み鍵をユーザーが再設定できるようにするためには、このポリシーが必要です。   |
+| {{site.data.keyword.la_full_notm}} サービス |  リソース・グループ            | エディター </br>マネージャー  | us-south  | 取り込み鍵をユーザーが再設定できるようにするためには、このポリシーが必要です。   |
 | Kubernetes クラスター・インスタンス          |  リソース                  | エディター  | us-south  | Kubernetes クラスター内のシークレットと LogDNA エージェントを削除および構成するためには、このポリシーが必要です。 |
 {: caption="表 1. チュートリアルを実行するために必要な IAM ポリシーのリスト" caption-side="top"} 
 
@@ -79,7 +79,7 @@ subcollection: LogDNA
 1. 端末を開きます。 次に、{{site.data.keyword.cloud_notm}} にログインします。 次のコマンドを実行して、プロンプトに従います。
 
     ```
-    ibmcloud login -a api.ng.bluemix.net
+    ibmcloud login -a cloud.ibm.com
     ```
     {: codeblock}
 
@@ -132,7 +132,7 @@ LogDNA インスタンスにログを転送するように Kubernetes クラス�
 1. 端末を開きます。 次に、{{site.data.keyword.cloud_notm}} にログインします。 次のコマンドを実行して、プロンプトに従います。
 
     ```
-    ibmcloud login -a api.ng.bluemix.net
+    ibmcloud login -a cloud.ibm.com
     ```
     {: codeblock}
 

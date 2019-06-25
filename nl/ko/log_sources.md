@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2019
-lastupdated: "2019-03-06"
+lastupdated: "2019-04-01"
 
 keywords: LogDNA, IBM, Log Analysis, logging, log sources
 
@@ -31,7 +31,7 @@ subcollection: LogDNA
 ## 플랫폼 컨테이너 서비스
 {: #log_sources_kube}
 
-{{site.data.keyword.la_full_notm}}를 사용하여 [{{site.data.keyword.containerlong_notm}}](/docs/containers?topic=containers-container_index#container_index)에서 로그를 관리할 수 있습니다.
+{{site.data.keyword.la_full_notm}}를 사용하여 [{{site.data.keyword.containerlong_notm}}](/docs/containers?topic=containers-getting-started)에서 로그를 관리할 수 있습니다.
 
 | {{site.data.keyword.containerlong_notm}}에 대한 로그 관리를 위한 튜토리얼 |
 |---------------------------------------------------------------------------------------------------|

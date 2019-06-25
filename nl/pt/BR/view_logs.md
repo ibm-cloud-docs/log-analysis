@@ -159,5 +159,3 @@ Conclua as etapas a seguir para criar uma visualização:
 6. Opcionalmente, anexe um alerta. Uma nova seção é exibida para que você configure o alerta.
 
 7. Clique em  ** Salvar visualização **
-
-

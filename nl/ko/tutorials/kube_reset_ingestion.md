@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2019
-lastupdated: "2019-03-06"
+lastupdated: "2019-05-01"
 
 keywords: LogDNA, IBM, Log Analysis, logging, kubernetes, tutorial, reset ingestion key
 
@@ -42,7 +42,7 @@ subcollection: LogDNA
 | 리소스                             | 액세스 정책 범위 | 역할    | 지역    | 정보                  |
 |--------------------------------------|----------------------------|---------|-----------|------------------------------|
 | 리소스 그룹 **기본값**           |  리소스 그룹            | 뷰어  | 미국 남부  | 사용자가 기본 리소스 그룹에서 서비스 인스턴스를 보려면 이 정책이 필요합니다.    |
-| {{site.data.keyword.la_full_notm}} 서비스 |  리소스 그룹            | 편집자 </br>관리자  | 미국 남부  | 사용자가 수집 키를 재설정하려면 이 정책이 필요합니다.   |
+| {{site.data.keyword.la_full_notm}} 서비스 |  리소스 그룹            | 편집자 </br>관리자 | 미국 남부  | 사용자가 수집 키를 재설정하려면 이 정책이 필요합니다.   |
 | Kubernetes 클러스터 인스턴스          |  리소스                  | 편집자  | 미국 남부  | 이 정책은 Kubernetes 클러스터에서 시크릿 및 LogDNA 에이전트를 삭제하고 구성하는 데 필요합니다. |
 {: caption="표 1. 튜토리얼을 완료하는 데 필요한 IAM 정책 목록" caption-side="top"} 
 
@@ -79,7 +79,7 @@ subcollection: LogDNA
 1. 터미널을 여십시오. 그런 다음 {{site.data.keyword.cloud_notm}}에 로그인하십시오. 다음 명령을 실행하고 프롬프트를 따르십시오.
 
     ```
-    ibmcloud login -a api.ng.bluemix.net
+    ibmcloud login -a cloud.ibm.com
     ```
     {: codeblock}
 
@@ -132,7 +132,7 @@ LogDNA 인스턴스로 로그를 전달하도록 Kubernetes 클러스터를 구�
 1. 터미널을 여십시오. 그런 다음 {{site.data.keyword.cloud_notm}}에 로그인하십시오. 다음 명령을 실행하고 프롬프트를 따르십시오.
 
     ```
-    ibmcloud login -a api.ng.bluemix.net
+    ibmcloud login -a cloud.ibm.com
     ```
     {: codeblock}
 
