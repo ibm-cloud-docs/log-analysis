@@ -27,16 +27,18 @@ subcollection: logdnaat
 {:shortdesc}
 
 
-| Geography             | Region               | 
-|-----------------------|----------------------|
-| `North America`       | `Dallas (us-south)`  | 
-| `Europe`              | `Frankfurt (eu-de)`  | 
-| `Asia Pacific`        | `Tokyo (jp-tok)`     |
+| Geography             | Region               | EU-managed |
+|-----------------------|----------------------|------------|
+| `Asia Pacific`        | `Tokyo (jp-tok)`     | `N/A`      |
+| `Europe`              | `Frankfurt (eu-de)`  | `NO`       |
+| `Europe`              | `London (eu-gb)`     | `NO`       |
+| `North America`       | `Dallas (us-south)`  | `N/A`      |
 {: caption="Table 1. List of locations where the service is available" caption-side="top"} 
 
 Where
 * A *geography* is a geographic area or larger political body that contains one or more regions.
 * A *region* is a defined geographic territory. A region could be a specific postal code area, a town, a city, a state, a group of states, or even a group of countries. 
+* `N/A` means feature that is not applicable to that geography.
 
 Currently, the **Frankfurt** location is **not** EU-managed. For more information, see [Enabling the EU Supported setting](/docs/account?topic=account-eu-hipaa-supported#bill_eusupported).
 {: important}
