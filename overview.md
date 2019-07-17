@@ -91,7 +91,7 @@ Data is collected and aggregated in each location. Each supported location is a 
 ## Network connectivity
 {: #overview_agent_connectivity}
 
-You can configure the LogDNA agent to connect to the logging instance via the public network and the private network. 
+You can configure the LogDNA agent to connect to the logging instance through the public network or through the private network. 
 {: note}
 
 By default, you connect to resources in your account over the {{site.data.keyword.cloud_notm}} public network. To configure an agent to send logs by using a public endpoint, the environment where the agent is running requires internet access to use the public endpoint.
