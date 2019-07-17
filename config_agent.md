@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2019
-lastupdated: "2019-05-01"
+lastupdated: "2019-07-17"
 
 keywords: LogDNA, IBM, Log Analysis, logging, config agent
 
@@ -30,6 +30,7 @@ The LogDNA agent is responsible for collecting and forwarding logs to your {{sit
 * The LogDNA agent authenticates by using the LogDNA Ingestion Key and opens a secure web socket to the {{site.data.keyword.la_full_notm}} ingestion servers. 
 * By default, the agent monitors all files with extension *.log*,  and extensionless files under */var/log/*.
 * The agent tails for new log data, and looks for new files that are added to the logging directories that the agent monitors.
+* To connect to {{site.data.keyword.cloud}} services over a private network, you must have access to classic infrastructure and [enable virtual routing and forwarding (VRF)](/docs/account?topic=account-vrf-service-endpoint) and connectivity to service endpoints for your account. 
 
 You can configure the following parameters through the LogDNA agent: 
 
@@ -77,29 +78,40 @@ To configure your Kubernetes cluster to forward logs to your LogDNA instance, co
     ```
     {: pre}
 
-4. Create a Kubernetes daemon set to deploy the LogDNA agent on every worker node of your Kubernetes cluster. The LogDNA agent collects logs with the extension `*.log` and extensionsless files that are stored in the `/var/log` directory of your pod. By default, logs are collected from all namespaces, including `kube-system`, and automatically forwarded to the {{site.data.keyword.la_full_notm}} service.
+4. [Required if you plan to use private endpoints] [Enable virtual routing and forwarding (VRF)](/docs/account?topic=account-vrf-service-endpoint) and connectivity to service endpoints for your account.
+
+5. Create a Kubernetes daemon set to deploy the LogDNA agent on every worker node of your Kubernetes cluster. The LogDNA agent collects logs with the extension `*.log` and extensionsless files that are stored in the `/var/log` directory of your pod. By default, logs are collected from all namespaces, including `kube-system`, and automatically forwarded to the {{site.data.keyword.la_full_notm}} service.
 
     <table>
       <caption>Commands by location</caption>
       <tr>
         <th>Location</th>
-        <th>Command</th>
+        <th>Command (By using public endpoints)</th>
+        <th>Command (By using private endpoints)</th>
       </tr>
       <tr>
         <td>`Dallas (us-south)`</td>
         <td>`kubectl create -f https://assets.us-south.logging.cloud.ibm.com/clients/logdna-agent-ds.yaml`</td>
+        <td>`kubectl create -f https://assets.private.us-south.logging.cloud.ibm.com/clients/logdna-agent-ds-private.yaml`</td>
       </tr>
       <tr>
         <td>`Frankfurt (eu-de)`</td>
         <td>`kubectl create -f https://assets.eu-de.logging.cloud.ibm.com/clients/logdna-agent-ds.yaml`</td>
+        <td>`kubectl create -f https://assets.private.eu-de.logging.cloud.ibm.com/clients/logdna-agent-ds-private.yaml`</td>
+      </tr>
+      <tr>
+        <td>`London (eu-gb)`</td>
+        <td>`kubectl create -f https://assets.eu-gb.logging.cloud.ibm.com/clients/logdna-agent-ds.yaml`</td>
+        <td>Not avaialble</td>
       </tr>
       <tr>
         <td>`Tokyo (jp-tok)`</td>
         <td>`kubectl create -f https://assets.jp-tok.logging.cloud.ibm.com/clients/logdna-agent-ds.yaml`</td>
+        <td>Not available</td>
       </tr>
     </table>
 
-5. Verify that the LogDNA agent is deployed successfully. 
+6. Verify that the LogDNA agent is deployed successfully. 
 
    ```
    kubectl get pods
@@ -258,41 +270,59 @@ To configure your Ubuntu server to forward logs to your LogDNA instance, complet
       <caption>Commands by region</caption>
       <tr>
         <th>Location</th>
-        <th>Command</th>
+        <th>Command (By using public endpoints)</th>
+        <th>Command (By using private endpoints)</th>
       </tr>
       <tr>
         <td>`Dallas (us-south)`</td>
         <td>`sudo logdna-agent -s LOGDNA_APIHOST=api.us-south.logging.cloud.ibm.com`</td>
+        <td>`sudo logdna-agent -s LOGDNA_APIHOST=api.private.us-south.logging.cloud.ibm.com`</td>
       </tr>
       <tr>
         <td>`Frankfurt (eu-de)`</td>
         <td>`sudo logdna-agent -s LOGDNA_APIHOST=api.eu-de.logging.cloud.ibm.com`</td>
+        <td>`sudo logdna-agent -s LOGDNA_APIHOST=api.private.eu-de.logging.cloud.ibm.com`</td>
+      </tr>
+      <tr>
+        <td>`London (eu-gb)`</td>
+        <td>`sudo logdna-agent -s LOGDNA_APIHOST=api.eu-gb.logging.cloud.ibm.com`</td>
+        <td>Not available</td>
       </tr>
       <tr>
         <td>`Tokyo (jp-tok)`</td>
         <td>`sudo logdna-agent -s LOGDNA_APIHOST=api.jp-tok.logging.cloud.ibm.com`</td>
+        <td>Not available</td>
       </tr>
     </table>
 
 4. Set the ingestion endpoint.
 
     <table>
-      <caption>Commands by region</caption>
+      <caption>Commands by region </caption>
       <tr>
         <th>Location</th>
-        <th>Command</th>
+        <th>Command (By using public endpoints)</th>
+        <th>Command (By using private endpoints)</th>
       </tr>
       <tr>
         <td>`Dallas (us-south)`</td>
         <td>`sudo logdna-agent -s LOGDNA_LOGHOST=logs.us-south.logging.cloud.ibm.com`</td>
+        <td>`sudo logdna-agent -s LOGDNA_LOGHOST=logs.private.us-south.logging.cloud.ibm.com`</td>
       </tr>
       <tr>
         <td>`Frankfurt (eu-de)`</td>
         <td>`sudo logdna-agent -s LOGDNA_LOGHOST=logs.eu-de.logging.cloud.ibm.com`</td>
+        <td>`sudo logdna-agent -s LOGDNA_LOGHOST=logs.private.eu-de.logging.cloud.ibm.com`</td>
+      </tr>
+      <tr>
+        <td>`London (eu-gb)`</td>
+        <td>`sudo logdna-agent -s LOGDNA_LOGHOST=logs.eu-de.logging.cloud.ibm.com`</td>
+        <td>Not available</td>
       </tr>
       <tr>
         <td>`Tokyo (jp-tok)`</td>
         <td>`sudo logdna-agent -s LOGDNA_LOGHOST=logs.jp-tok.logging.cloud.ibm.com`</td>
+        <td>Not available</td>
       </tr>
     </table>
 

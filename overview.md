@@ -58,18 +58,51 @@ The following figure shows the components overview for the {{site.data.keyword.l
 ![{{site.data.keyword.la_full_notm}} component overview on the {{site.data.keyword.cloud_notm}}](images/components.png "{{site.data.keyword.la_full_notm}} component overview on the {{site.data.keyword.cloud_notm}}")
 
 
-## Log data
+## Data location
 {: #overview_data}
 
 {{site.data.keyword.la_full_notm}} collects and aggregates logs in one centralized logging system.
 
 * Log data is hosted on the {{site.data.keyword.cloud_notm}}.
-* Data is colocated in the region where the {{site.data.keyword.la_full_notm}} instance is provisioned. For example, log data for an instance that is provisioned in US South is hosted in the US South region.
+* Data is colocated in the location where the {{site.data.keyword.la_full_notm}} instance is provisioned. For example, log data for an instance that is provisioned in US South is hosted in the US South region.
 
-The service plan that you choose for an {{site.data.keyword.la_full_notm}} instance defines the number of days that data is stored and retained in LogDNA. For example, if you choose the *Free* plan, data is not stored at all. However, if you choose the 7-day plan, data is stored for 7 days and you have access to it through the LogDNA Web UI.
+
+## Data collection
+{: #overview_data_collection}
+
+When you configure a LogDNA agent to collect and forward data to an {{site.data.keyword.la_full_notm}} instance, data is automatically collected and available for analysis through the web UI. 
+
+Log data from {{site.data.keyword.cloud_notm}} services, Cloud Foundry (CF) framework, and CF applications is collected automatically and available for analysis through the web UI. These data is collected and forwarded to the **service platform logs instance*** in the location where the service is available. 
+
+## Data retention
+{: #overview_data_retention}
+
+The service plan that you choose for an {{site.data.keyword.la_full_notm}} instance defines the number of days that data is stored and retained in LogDNA. 
+
+For example, if you choose the *Free* plan, data is not stored at all. However, if you choose the 7-day plan, data is stored for 7 days and you have access to it through the LogDNA Web UI.
 
 When you delete an instance of {{site.data.keyword.la_full_notm}} from the {{site.data.keyword.cloud_notm}}, all the data is deleted.
 
+## Data availability
+{: #overview_data_availability}
+
+Data is collected and aggregated in each location. Each supported location is a multi-zone region (MZR).
+
+## Network connectivity
+{: #overview_agent_connectivity}
+
+You can configure the LogDNA agent to connect to the logging instance via the public network and the private network. 
+{: note}
+
+By default, you connect to resources in your account over the {{site.data.keyword.cloud_notm}} public network. To configure an agent to send logs by using a public endpoint, the environment where the agent is running requires internet access to use the public endpoint.
+
+You can enable virtual routing and forwarding (VRF) to move IP routing for your account and all of its resources into a separate routing table. If VRF is enabled, you can then enable {{site.data.keyword.cloud_notm}} service endpoints to connect directly to resources without using the public network. To configure an agent to send logs by using a private endpoint, you must [enable virtual routing and forwarding (VRF)](/docs/account?topic=account-vrf-service-endpoint) for your account. Once the account is VRF and service endpoint enabled, the LogDNA agent can be configured to use the private network by using the [Private Endpoint](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-endpoints) as the ingestion URL.
+* Private endpoints are not accessible from the public internet. 
+* All traffic is routed to the {{site.data.keyword.cloud_notm}} private network. 
+
+Consider the following restrictions:
+* Ingestion endpoints of type `syslog-a` and `syslog-u` are not currently supported on the Cloud Service Endpoint (CSE) network. 
+* The LogDNA web UI is not currently supported on the CSE network.
 
 
 ## Features
