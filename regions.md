@@ -40,7 +40,7 @@ Where
 * A *region* is a defined geographic territory. A region could be a specific postal code area, a town, a city, a state, a group of states, or even a group of countries. 
 * `N/A` means feature that is not applicable to that geography.
 
-`(*)` For more information, see [Enabling the EU-Supported setting](/docs/account?topic=account-eu-hipaa-supported#bill_eusupported).
+`(*)` For more information, see [Enabling the EU Supported setting](/docs/account?topic=account-eu-hipaa-supported#bill_eusupported).
 
 
 

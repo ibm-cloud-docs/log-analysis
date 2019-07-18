@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019
-lastupdated: "2019-06-03"
+lastupdated: "2019-07-17"
 
 keywords: IBM Cloud, LogDNA, Activity Tracker, endpoints
 
@@ -30,10 +30,11 @@ The following table lists the endpoints per region:
 ## API endpoints
 {: #endpoints_api}
 
-| Region                   |   Endpoint                                         |
+| Region                   |  Public Endpoint                                   | 
 |--------------------------|----------------------------------------------------|
-| `Dallas (us-south)`      | `https://api.us-south.logging.cloud.ibm.com`       |
+| `Dallas (us-south)`      | `https://api.us-south.logging.cloud.ibm.com`       | 
 | `Frankfurt (eu-de)`      | `https://api.eu-de.logging.cloud.ibm.com`          |
+| `London (eu-gb)`         | `https://api.eu-gb.logging.cloud.ibm.com`          |
 | `Tokyo (jp-tok)`         | `https://api.jp-tok.logging.cloud.ibm.com`         |
 {: caption="Endpoints per region" caption-side="top"} 
 
@@ -41,10 +42,11 @@ The following table lists the endpoints per region:
 ## Ingestion endpoints
 {: #endpoints_ingestion}
 
-| Region                   |   Endpoint                                          |
+| Region                   |   Public Endpoint                                   | 
 |--------------------------|-----------------------------------------------------|
-| `Dallas (us-south)`      | `https://logs.us-south.logging.cloud.ibm.com`       |
-| `Frankfurt (eu-de)`      | `https://logs.eu-de.logging.cloud.ibm.com`          |
-| `Tokyo (jp-tok)`         | `https://logs.jp-tok.logging.cloud.ibm.com`         |
+| `Dallas (us-south)`      | `https://logs.us-south.logging.cloud.ibm.com`       | 
+| `Frankfurt (eu-de)`      | `https://logs.eu-de.logging.cloud.ibm.com`          | 
+| `London (eu-gb)`         | `https://logs.eu-gb.logging.cloud.ibm.com`          | 
+| `Tokyo (jp-tok)`         | `https://logs.jp-tok.logging.cloud.ibm.com`         | 
 {: caption="Endpoints per region" caption-side="top"} 
 
