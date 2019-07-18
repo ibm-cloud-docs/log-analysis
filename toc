@@ -8,6 +8,7 @@ IBM Log Analysis with LogDNA
     getting-started.md
     overview.md
     cloud_services.md
+    cloud_services_locations.md
     network.md
     iam.md
 
