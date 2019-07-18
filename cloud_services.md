@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019
-lastupdated: "2019-06-24"
+lastupdated: "2019-07-18"
 
 keywords: LogDNA, IBM, Log Analysis, logging, services
 
@@ -32,7 +32,7 @@ List of {{site.data.keyword.cloud_notm}} services that send logs to {{site.data.
 You can monitor logs from CF apps and enabled services through the {{site.data.keyword.la_short}} instance that is configured to receive platform services logs in the location where the app or service is running. Notice that there is only 1 instance per location with the flag **Platform services logs**.
 {: important}
 
-## Platform Cloud Foundry applications
+## Compute: Cloud Foundry
 {: #platform_cfapps}
 
 [Cloud Foundry (CF)](/docs/cloud-foundry-public?topic=cloud-foundry-public-about-cf) logs are automatically collected and sent to {{site.data.keyword.la_full_notm}}. 
@@ -40,13 +40,9 @@ You can monitor logs from CF apps and enabled services through the {{site.data.k
 You can monitor logs from CF apps through the {{site.data.keyword.la_short}} instance that is configured to receive platform services logs in the location where the app is running. 
 {: note}
 
-CF logs are currently collected for CF applications that are deployed in any of the following locations:
-* Dallas
-* Frankfurt
 
 
-
-## Platform database services
+## Platform: Database services
 {: #database}
 
 The following table lists database services that send logs to {{site.data.keyword.la_full_notm}}:
@@ -57,18 +53,21 @@ The following table lists database services that send logs to {{site.data.keywor
 | [{{site.data.keyword.databases-for-etcd_full_notm}}](/docs/services/databases-for-etcd?topic=databases-for-etcd-about#about-databases-for-etcd) | {{site.data.keyword.databases-for-etcd_full_notm}} is a managed etcd service that is hosted in the {{site.data.keyword.cloud_notm}} and integrated with other {{site.data.keyword.cloud_notm}} services. |
 | [{{site.data.keyword.databases-for-mongodb}}](/docs/services/databases-for-mongodb?topic=databases-for-mongodb-getting-started) | {{site.data.keyword.databases-for-mongodb}} is a managed MongoDB service that is hosted in the {{site.data.keyword.cloud_notm}} and integrated with other {{site.data.keyword.cloud_notm}} services. |  
 | [{{site.data.keyword.databases-for-postgresql_full_notm}}](/docs/services/databases-for-postgresql?topic=databases-for-postgresql-about#about) | {{site.data.keyword.databases-for-postgresql_full_notm}} is a managed PostgreSQL service that is hosted in the {{site.data.keyword.cloud_notm}} and integrated with other {{site.data.keyword.cloud_notm}} services. |
-| [{{site.data.keyword.messages-for-rabbitmq_full_notm}}](/docs/services/messages-for-rabbitmq?topic=messages-for-rabbitmq-about#about-messages-for-rabbitmq)  | {{site.data.keyword.messages-for-rabbitmq_full_notm}} is a managed RabbitMQ service that is hosted in the {{site.data.keyword.cloud_notm}} and integrated with other {{site.data.keyword.cloud_notm}} services.   |
+| [{{site.data.keyword.messages-for-rabbitmq_full_notm}}](/docs/services/messages-for-rabbitmq?topic=messages-for-rabbitmq-about#about-messages-for-rabbitmq)  | {{site.data.keyword.messages-for-rabbitmq_full_notm}} is a managed RabbitMQ service that is hosted in the {{site.data.keyword.cloud_notm}} and integrated with other {{site.data.keyword.cloud_notm}} services.|
 | [{{site.data.keyword.databases-for-redis_full_notm}}](/docs/services/databases-for-redis?topic=databases-for-redis-about#about-databases-for-redis) | {{site.data.keyword.databases-for-redis_full_notm}} is a managed service that is hosted in the {{site.data.keyword.cloud_notm}} and integrated with other {{site.data.keyword.cloud_notm}} services.  |
 {: caption="List of database services" caption-side="top"} 
 
 You can monitor logs through the {{site.data.keyword.la_short}} instance that is configured to receive platform services logs in the location where the service is running. 
 {: note}
 
-These database services are enabled in the US-South region only.
+These database services are enabled in the following locations:
+* Dallas
+* Tokyo
+* London
 
 
 
-## Platform security services
+## Platform: Security services
 {: #security}
 
 The following table lists security Cloud services that send logs to {{site.data.keyword.la_full_notm}}:

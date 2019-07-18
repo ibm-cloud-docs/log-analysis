@@ -35,7 +35,7 @@ Consider the following information when you export log data:
 * The compressed log file that contains the data that you want to export is available for a maximum of 48 hours. 
 * The maximum number of lines that you can export is 20,000.
 
-**Note:** To make the EU-DE (Frankfurt) location EU compliant, the export function is **not available** in **Frankfurt**. The download website for the exported logs is currently located outside the EU.
+To make the EU-DE (Frankfurt) location EU compliant, the web UI export function is **not available** in **Frankfurt**. You cannot use the API to export data to an email address. You can use the export API to export data to a local file.
 {: important}
 
 ## Exporting logs from the Web UI
