@@ -88,22 +88,6 @@ When you delete an instance of {{site.data.keyword.la_full_notm}} from the {{sit
 
 Data is collected and aggregated in each location. Each supported location is a multi-zone region (MZR).
 
-## Network connectivity
-{: #overview_agent_connectivity}
-
-You can configure the LogDNA agent to connect to the logging instance through the public network or through the private network. 
-{: note}
-
-By default, you connect to resources in your account over the {{site.data.keyword.cloud_notm}} public network. To configure an agent to send logs by using a public endpoint, the environment where the agent is running requires internet access to use the public endpoint.
-
-You can enable virtual routing and forwarding (VRF) to move IP routing for your account and all of its resources into a separate routing table. If VRF is enabled, you can then enable {{site.data.keyword.cloud_notm}} service endpoints to connect directly to resources without using the public network. To configure an agent to send logs by using a private endpoint, you must [enable virtual routing and forwarding (VRF)](/docs/account?topic=account-vrf-service-endpoint) for your account. Once the account is VRF and service endpoint enabled, the LogDNA agent can be configured to use the private network by using the [Private Endpoint](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-endpoints) as the ingestion URL.
-* Private endpoints are not accessible from the public internet. 
-* All traffic is routed to the {{site.data.keyword.cloud_notm}} private network. 
-
-Consider the following restrictions:
-* Ingestion endpoints of type `syslog-a` and `syslog-u` are not currently supported on the Cloud Service Endpoint (CSE) network. 
-* The LogDNA web UI is not currently supported on the CSE network.
-
 
 ## Features
 {: #overview_features}

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019
-lastupdated: "2019-06-03"
+lastupdated: "2019-07-17"
 
 keywords: IBM Cloud, LogDNA, Activity Tracker, regions
 subcollection: logdnaat
@@ -27,12 +27,12 @@ subcollection: logdnaat
 {:shortdesc}
 
 
-| Geography             | Region               | EU-managed |
-|-----------------------|----------------------|------------|
-| `Asia Pacific`        | `Tokyo (jp-tok)`     | `N/A`      |
-| `Europe`              | `Frankfurt (eu-de)`  | `NO`       |
-| `Europe`              | `London (eu-gb)`     | `NO`       |
-| `North America`       | `Dallas (us-south)`  | `N/A`      |
+| Geography             | Region                   | EU-managed |
+|-----------------------|--------------------------|------------|
+| `Asia Pacific`        | `Tokyo (jp-tok)`         | `N/A`      |
+| `Europe`              | `Frankfurt (eu-de) (*)`  | `YES`       |
+| `Europe`              | `London (eu-gb)`         | `NO`       |
+| `North America`       | `Dallas (us-south)`      | `N/A`      |
 {: caption="Table 1. List of locations where the service is available" caption-side="top"} 
 
 Where
@@ -40,7 +40,7 @@ Where
 * A *region* is a defined geographic territory. A region could be a specific postal code area, a town, a city, a state, a group of states, or even a group of countries. 
 * `N/A` means feature that is not applicable to that geography.
 
-Currently, the **Frankfurt** location is **not** EU-managed. For more information, see [Enabling the EU Supported setting](/docs/account?topic=account-eu-hipaa-supported#bill_eusupported).
-{: important}
+`(*)` For more information, see [Enabling the EU Supported setting](/docs/account?topic=account-eu-hipaa-supported#bill_eusupported).
+
 
 
