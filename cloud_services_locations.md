@@ -63,5 +63,3 @@ List of locations where {{site.data.keyword.cloud_notm}} services are enabled to
 {: caption="Table 3. Security services " caption-side="top"} 
 
 
-
-Tokyo has for (au-syd,jp-tok)
