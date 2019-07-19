@@ -40,6 +40,7 @@ You can monitor logs from CF apps and enabled services through the {{site.data.k
 You can monitor logs from CF apps through the {{site.data.keyword.la_short}} instance that is configured to receive platform services logs in the location where the app is running. 
 {: note}
 
+To see the list of {{site.data.keyword.la_full_notm}} locations where this service sends logs, see [Compute: Cloud Foundry](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-cloud_services_locations#cs_locations_platform_cfapps).
 
 
 ## Platform: Database services
@@ -60,10 +61,7 @@ The following table lists database services that send logs to {{site.data.keywor
 You can monitor logs through the {{site.data.keyword.la_short}} instance that is configured to receive platform services logs in the location where the service is running. 
 {: note}
 
-These database services are enabled in the following locations:
-* Dallas
-* Tokyo
-* London
+To see the list of {{site.data.keyword.la_full_notm}} locations where these services send logs, see [Platform: Database services](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-cloud_services_locations#cs_locations_database).
 
 
 
@@ -81,11 +79,6 @@ The following table lists security Cloud services that send logs to {{site.data.
 You can monitor logs through the {{site.data.keyword.la_short}} instance that is configured to receive platform services logs in the location where the service is running. 
 {: note}
 
-
-{{site.data.keyword.cloudcerts_long}} logs are currently available for instances that are provisioned in any of the following locations:
-* Dallas
-* Frankfurt
-* Tokyo
-
+To see the list of {{site.data.keyword.la_full_notm}} locations where this service sends logs, see [Platform: Security services](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-cloud_services_locations#cs_locations_security).
 
 

@@ -17,6 +17,7 @@ IBM Log Analysis with LogDNA
         tutorials/kube.md
         tutorials/kube_reset_ingestion.md
         tutorials/ubuntu.md
+        tutorials/cf.md
     {: .navgroup-end}
 
     {: .navgroup id="howto"}
