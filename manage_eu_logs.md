@@ -93,35 +93,36 @@ Learn more about how to [detach an agent](/docs/services/Log-Analysis-with-LogDN
 
 **Every user that accesses the {{site.data.keyword.la_full_notm}} service in your account must be assigned an access policy with an IAM user role defined.** The policy determines what actions the user can perform within the context of the service or instance you select. The allowable actions are customized and defined as operations that are allowed to be performed on the service. The actions are then mapped to IAM user roles.
 
-To restrict access to Frankfurt logging instances in your account, complete the following steps:
-1. Create an access group to manage permissions for administrators of the Frankfurt instances. For example, create an access group named `logdna-eu-admins`.
-2. Add users to the group.
-3. Add policies for each logging instance that you have in Frankfurt.
+You might have users across different geographies. However, to comply with EU law, only EU personel can see and access log data from your EU-managed infrastructure, apps, and services. To restrict access to users, you can configure an access group, and define policies that restrict access to those users to the instances in Frankfurt.
 
-    Choose a platform role **Admninistrator** if you want administrators to be able to grant other users permissions to work with logging instances in Frankfurt. If you want to remove permissions to manage users, choose a platform role **editor***. 
+### Grant permissions to users to manage the logging service
+{: #manage_eu_logs_step5-1}
 
-Only grant permissions to see logs and manage the instance to users that 
+To grant administrator permissions to users, complete the following steps:
+1. Create an access group, then add users to it. For example, create an access group named `logdna-eu-admins`. [Learn more](/docs/iam?topic=iam-groups#create_ag).
+2. [Assign access to a group](/docs/iam?topic=iam-groups#access_ag) by configuring policies.
 
-You might have users across different geographies. However, to comply with EU law, only EU personel can see and access log data from your apps and services. To restrict access to users, you can configure an access group, and define policies that restrict access to those users to the instances in Frankfurt.
+    For example, you can add a policy to the access group for each instance of the {{site.data.keyword.la_full_notm}} service in Frankfurt. For each policy, select the platform role **administrator** if you want administrators of the logging service to be able to grant other users permissions to work with logging instances in Frankfurt. If you want to remove permissions to manage users to administrators of the logging service in your account, choose the platform role **editor**. Select the service role **manager**.
 
-### Create an access group to manage administrators and users of the service
 
-### Add a polciy to the group to
+### Grant permissions to users to view logs
+{: #manage_eu_logs_step5-2}
+
+To grant viewer permissions to users, complete the following steps:
+1. Create an access group, then add users to it. For example, create an access group named `logdna-eu-users`. [Learn more](/docs/iam?topic=iam-groups#create_ag).
+2. [Assign access to a group](/docs/iam?topic=iam-groups#access_ag) by configuring policies.
+
+    For example, you can add a policy to the access group for each instance of the {{site.data.keyword.la_full_notm}} service in Frankfurt. For each policy, select the platform role **viewer** to grant users permissions to view logs. Select the service role **reader**.
+
 
 ## Step 4. Exporting logs
 {: #manage_eu_logs_step4}
 
 To make the EU-DE (Frankfurt) location `EU-Supported`, the web UI export functionality is not available for instances that are provisioned in Frankfurt. In addition, you cannot use the API to export data to an email address. 
 
-You can export data to a local file or to a terminal by using the LogDNA export API.
+You can export data to a local file or to a terminal by using the LogDNA export API and a service key. Only administrators can create service keys. Users can view them. Service keys are only used to export data from your instance by using the API.
 
-Notice that users in the account that have permissions to view logs through the LogDNA web UI can export data by using the API if they have an active service key.
-A user, with a policy in IAM to view logs, can also view service keys that an administrator has created.
-
-To prevent users from 
-
-
-However, if you need to export data from this location, you can use the export API to export your data to a local file.
+Notice that users in the account that have permissions to view logs through the LogDNA web UI can export data by using the API if they have an active service key. A user, with a policy in IAM to view logs, can also view service keys that an administrator has created. If you do not want users to be able to export data locally, service keys must be deleted. 
 
 
 ## Step 5. Archiving logs
