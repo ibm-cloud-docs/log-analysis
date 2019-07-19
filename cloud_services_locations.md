@@ -59,7 +59,7 @@ List of locations where {{site.data.keyword.cloud_notm}} services are enabled to
 | Service                                                       | `Dallas (us-south)` | `Dallas (us-east)` | `Frankfurt (eu-de)` | `London (eu-gb)` | `Tokyo (jp-tok)`   | `Sydney (au-syd`)  |
 |---------------------------------------------------------------|---------------------|---------------------|---------------------|------------------|--------------------|------------------|
 | {{site.data.keyword.cloudcerts_full_notm}}                    | `YES`               | `NO`                | `YES`               | `NO`             | `YES`              | `NO`               |
-| {{site.data.keyword.keymanagementservicelong}}                | `YES`               | `Through Dallas (us-south) instance`  | `Through Frankfurt instance`   | `YES`            | `Through Tokyo instance`   |
+| {{site.data.keyword.keymanagementservicelong}}                | `YES`               | `Through Dallas (us-south) instance` | `YES` | `Through Frankfurt instance`   | `YES` | `Through Tokyo instance`   |
 {: caption="Table 3. Security services " caption-side="top"} 
 
 
