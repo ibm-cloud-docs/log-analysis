@@ -110,8 +110,8 @@ To grant viewer permissions to users, complete the following steps:
     For example, you can add a policy to the access group for each instance of the {{site.data.keyword.la_full_notm}} service in Frankfurt. For each policy, select the platform role **viewer** to grant users permissions to view logs. Select the service role **reader**.
 
 
-## Step 4. Exporting logs
-{: #manage_eu_logs_step4}
+## Step 6. Exporting logs
+{: #manage_eu_logs_step6}
 
 To make the EU-DE (Frankfurt) location `EU-Supported`, the web UI export functionality is not available for instances that are provisioned in Frankfurt. In addition, you cannot use the API to export data to an email address. 
 
@@ -120,8 +120,8 @@ You can export data to a local file or to a terminal by using the LogDNA export 
 Notice that users in the account that have permissions to view logs through the LogDNA web UI can export data by using the API if they have an active service key. A user, with a policy in IAM to view logs, can also view service keys that an administrator has created. If you do not want users to be able to export data locally, service keys must be deleted. 
 
 
-## Step 5. Archiving logs
-{: #manage_eu_logs_step5}
+## Step 7. Archiving logs
+{: #manage_eu_logs_step7}
 
 When you archive logs from a LogDNA instance to a COS bucket, consider the following information:
 * When you provision an instance of the COS service, this instance is a global one in your account. It is not region bound.
@@ -140,8 +140,8 @@ To learn how to configure archiving for your LogDNA instance, see [Archiving log
 
 
 
-## Step 6. Querying archived logs with SQL Query service
-{: #manage_eu_logs_step6}
+## Step 8. Querying archived logs with SQL Query service
+{: #manage_eu_logs_step8}
 
 
 {{site.data.keyword.sqlquery_short}} provides a serverless, no-ETL solution to easily query data stored in COS. [Learn more](/docs/services/sql-query?topic=sql-query-overview).
