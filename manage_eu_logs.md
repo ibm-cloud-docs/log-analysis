@@ -129,6 +129,7 @@ Notice that users in the account that have permissions to view logs through the 
 {: #manage_eu_logs_step5}
 
 When you archive logs from a LogDNA instance to a COS bucket, consider the following information:
+* You must provision an instance of the COS service in Frankfurt.
 * You must configure a bucket that complies with the EU-Supported and GDPR regulations. 
 
     * For a bucket with **single site** resiliency, create the bucket in Amsterdam or Milan.
@@ -137,8 +138,8 @@ When you archive logs from a LogDNA instance to a COS bucket, consider the follo
 
     * For a bucket with **cross region** resiliency, create the bucket in the `eu-geo` location. Data is kept within the EU geography across datacenters that are located in Milan, Amsterdam, and Frankfurt.
 
-* You must restrict user access to manage archived log files in these buckets that you configure to backup data from EU-Supported applications and services.
-
+* You must restrict user access to manage archived log files in these buckets.  
+* Users are responsible for downloading files to EU-managed locations.
 
 To learn how to configure archiving for your LogDNA instance, see [Archiving logs](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-archiving).
 
@@ -147,6 +148,17 @@ To learn how to configure archiving for your LogDNA instance, see [Archiving log
 ## Step 6. Querying archived logs with SQL Query service
 {: #manage_eu_logs_step6}
 
+
+{{site.data.keyword.sqlquery_short}} provides a serverless, no-ETL solution to easily query data stored in COS.
+
+Once you have SQL Query running on IBM Cloud, you can immediately start querying your data using the SQL Query user interface, programmatically by using either the REST API or the Python `ibmcloudsql` library, or write a serverless function by using {{site.data.keyword.openwhisk_short}}.
+You can use the {{site.data.keyword.sqlquery_short}} service to analyze data from archive files in COS. 
+
+When you query logs, consider the following information:
+* You must provision an instance of the {{site.data.keyword.sqlquery_short}} service in Frankfurt.
+* You must restrict user access to 
+
+When you click Open UI, the SQL Query service will automatically generate a unique Cloud Object Storage bucket that will store all of the results as CSV files from your SQL queries. You can also specify other buckets to store results in
 
 
 
