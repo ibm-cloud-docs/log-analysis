@@ -27,12 +27,12 @@ subcollection: LogDNA
 The LogDNA agent is responsible for collecting and forwarding logs to your {{site.data.keyword.la_full_notm}} instance. After you provision an instance of {{site.data.keyword.la_full}}, you must configure a LogDNA agent for each log source that you want to monitor.
 {:shortdesc}
 
-* The LogDNA agent authenticates by using the LogDNA Ingestion Key and opens a secure web socket to the {{site.data.keyword.la_full_notm}} ingestion servers. 
+* The LogDNA agent authenticates by using the LogDNA Ingestion Key and opens a secure web socket to the {{site.data.keyword.la_full_notm}} ingestion servers.
 * By default, the agent monitors all files with extension *.log*,  and extensionless files under */var/log/*.
 * The agent tails for new log data, and looks for new files that are added to the logging directories that the agent monitors.
-* To connect to {{site.data.keyword.cloud}} services over a private network, you must have access to classic infrastructure and [enable virtual routing and forwarding (VRF)](/docs/account?topic=account-vrf-service-endpoint) and connectivity to service endpoints for your account. 
+* To connect to {{site.data.keyword.cloud}} services over a private network, you must have access to classic infrastructure and [enable virtual routing and forwarding (VRF)](/docs/account?topic=account-vrf-service-endpoint) and connectivity to service endpoints for your account.
 
-You can configure the following parameters through the LogDNA agent: 
+You can configure the following parameters through the LogDNA agent:
 
 | Parameter | Description |
 |-----------|-------------|
@@ -42,7 +42,7 @@ You can configure the following parameters through the LogDNA agent:
 | `exclude_regex` | Define regex patterns to filter out any lines that match the pattern. Do not include leading and trailing `/`. |
 | `hostname` | Define the hostname. This value overrides the operating system hostname. |
 | `autoupdate` | Set to `1` to update the agent automatically when the public repo agent definition is updated. Set to `0` to disable this feature. |  
-{: caption="Table 1. Parameters to customize a LogDNA agent" caption-side="top"} 
+{: caption="Table 1. Parameters to customize a LogDNA agent" caption-side="top"}
 
 
 
@@ -92,37 +92,37 @@ To configure your Kubernetes cluster to forward logs to your LogDNA instance, co
       <tr>
         <td>`Dallas (us-south)`</td>
         <td>`kubectl create -f https://assets.us-south.logging.cloud.ibm.com/clients/logdna-agent-ds.yaml`</td>
-        <td>`kubectl create -f https://assets.private.us-south.logging.cloud.ibm.com/clients/logdna-agent-ds-private.yaml`</td>
+        <td>`kubectl create -f https://assets.us-south.logging.cloud.ibm.com/clients/logdna-agent-ds-private.yaml`</td>
       </tr>
       <tr>
         <td>`Frankfurt (eu-de)`</td>
         <td>`kubectl create -f https://assets.eu-de.logging.cloud.ibm.com/clients/logdna-agent-ds.yaml`</td>
-        <td>`kubectl create -f https://assets.private.eu-de.logging.cloud.ibm.com/clients/logdna-agent-ds-private.yaml`</td>
+        <td>`kubectl create -f https://assets.eu-de.logging.cloud.ibm.com/clients/logdna-agent-ds-private.yaml`</td>
       </tr>
       <tr>
         <td>`London (eu-gb)`</td>
         <td>`kubectl create -f https://assets.eu-gb.logging.cloud.ibm.com/clients/logdna-agent-ds.yaml`</td>
-        <td>Not avaialble</td>
+        <td>`kubectl create -f https://assets.eu-gb.logging.cloud.ibm.com/clients/logdna-agent-ds-private.yaml`</td>
       </tr>
       <tr>
         <td>`Tokyo (jp-tok)`</td>
         <td>`kubectl create -f https://assets.jp-tok.logging.cloud.ibm.com/clients/logdna-agent-ds.yaml`</td>
-        <td>Not available</td>
+        <td>`kubectl create -f https://assets.jp-tok.logging.cloud.ibm.com/clients/logdna-agent-ds-private.yaml`</td>
       </tr>
     </table>
 
-6. Verify that the LogDNA agent is deployed successfully. 
+6. Verify that the LogDNA agent is deployed successfully.
 
    ```
    kubectl get pods
    ```
    {: pre}
-   
+
 
 The deployment is successful when you see one or more LogDNA pods.
-* **The number of LogDNA pods equals the number of worker nodes in your cluster.** 
+* **The number of LogDNA pods equals the number of worker nodes in your cluster.**
 * All pods must be in a `Running` state.
-* *Stdout* and *stderr* are automatically collected and forwarded from all containers. Log data includes application logs and worker logs. 
+* *Stdout* and *stderr* are automatically collected and forwarded from all containers. Log data includes application logs and worker logs.
 * By default, the LogDNA agent pod that runs on a worker collects logs from all namespaces on that node, including kube-system logs.
 
 
@@ -158,7 +158,7 @@ Complete the following steps to add tags:
 
     If the update strategy is set to *RollingUpdate*, you can update and apply changes to the LogDNA agent by using *kubectl edit*.
 
-3. Edit the `logdna-agent-configmap.yaml` file. 
+3. Edit the `logdna-agent-configmap.yaml` file.
 
     Update the configuration file by modifying the local copy. **Note:** You can also generate the configuration file of the agent by running the following command:
 
@@ -216,13 +216,13 @@ Complete the following steps to add tags:
     ```
     {: screen}
 
-5. Apply configuration changes if you edit the file locally. 
+5. Apply configuration changes if you edit the file locally.
 
     ```
     kubectl apply -f prod-logdna-agent-ds.yaml
     ```
     {: codeblock}
-    
+
     **Note:** If you use *kubectl edit*, changes are applied automatically when you save your modifications.
 
 
@@ -236,12 +236,12 @@ To configure your Ubuntu server to forward logs to your LogDNA instance, complet
 1. Install the LogDNA agent. Run the following commands:
 
     ```
-    echo "deb https://repo.logdna.com stable main" | sudo tee /etc/apt/sources.list.d/logdna.list 
+    echo "deb https://repo.logdna.com stable main" | sudo tee /etc/apt/sources.list.d/logdna.list
     ```
     {: codeblock}
 
     ```
-    wget -O- https://repo.logdna.com/logdna.gpg | sudo apt-key add - 
+    wget -O- https://repo.logdna.com/logdna.gpg | sudo apt-key add -
     ```
     {: codeblock}
 
@@ -286,12 +286,12 @@ To configure your Ubuntu server to forward logs to your LogDNA instance, complet
       <tr>
         <td>`London (eu-gb)`</td>
         <td>`sudo logdna-agent -s LOGDNA_APIHOST=api.eu-gb.logging.cloud.ibm.com`</td>
-        <td>Not available</td>
+        <td>`sudo logdna-agent -s LOGDNA_APIHOST=api.private.eu-gb.logging.cloud.ibm.com`</td>
       </tr>
       <tr>
         <td>`Tokyo (jp-tok)`</td>
         <td>`sudo logdna-agent -s LOGDNA_APIHOST=api.jp-tok.logging.cloud.ibm.com`</td>
-        <td>Not available</td>
+        <td>`sudo logdna-agent -s LOGDNA_APIHOST=api.private.jp-tok.logging.cloud.ibm.com`</td>
       </tr>
     </table>
 
@@ -316,17 +316,18 @@ To configure your Ubuntu server to forward logs to your LogDNA instance, complet
       </tr>
       <tr>
         <td>`London (eu-gb)`</td>
-        <td>`sudo logdna-agent -s LOGDNA_LOGHOST=logs.eu-de.logging.cloud.ibm.com`</td>
-        <td>Not available</td>
+        <td>`sudo logdna-agent -s LOGDNA_LOGHOST=logs.eu-gb.logging.cloud.ibm.com`</td>
+        <td>`sudo logdna-agent -s LOGDNA_LOGHOST=logs.private.eu-gb.logging.cloud.ibm.com`</td>
       </tr>
       <tr>
         <td>`Tokyo (jp-tok)`</td>
         <td>`sudo logdna-agent -s LOGDNA_LOGHOST=logs.jp-tok.logging.cloud.ibm.com`</td>
-        <td>Not available</td>
+        <td>`sudo logdna-agent -s LOGDNA_LOGHOST=logs.private.jp-tok.logging.cloud.ibm.com`</td>
       </tr>
     </table>
 
-5. Define more log paths to be monitored. Run the following command: 
+
+5. Define more log paths to be monitored. Run the following command:
 
     ```
     sudo logdna-agent -d /path/to/log/folders
@@ -335,12 +336,12 @@ To configure your Ubuntu server to forward logs to your LogDNA instance, complet
 
     By default, **/var/log** is monitored.
 
-6. Optionally, configure the LogDNA agent to tag your hosts. 
+6. Optionally, configure the LogDNA agent to tag your hosts.
 
 
 ## Adding tags to a LogDNA agent on Linux Ubuntu or Debian
 {: #config_agent-linux_tags}
- 
+
 
 Complete the following steps to add more tags to the LogDNA agent:
 
@@ -349,7 +350,7 @@ Complete the following steps to add more tags to the LogDNA agent:
 2. Add one or more tags.
 
     ```
-    sudo logdna-agent -t TAG1,TAG2 
+    sudo logdna-agent -t TAG1,TAG2
     ```
     {: codeblock}
 
@@ -367,16 +368,7 @@ You can also edit the LogDNA configuration file and add tags. The configuration 
 
 3. Restart the LogDNA agent.
 
-    ``` 
+    ```
     sudo /etc/init.d/logdna-agent start
     ```
     {: codeblock}
-
-
-
-
-
-
-
-
-
