@@ -22,20 +22,66 @@ subcollection: LogDNA
 {:note: .note}
 
  
-# Managing network traffic
+# Managing network connectivity
 {: #network}
 
-When you have an additional firewall set up, or you have customized the firewall settings in your {{site.data.keyword.cloud_notm}} infrastructure, you need to allow outgoing network traffic to the {{site.data.keyword.la_full_notm}} service. 
+You can configure the LogDNA agent to connect to the logging instance through the public network or through the private network. In addition, when you have an additional firewall set up, or you have customized the firewall settings in your {{site.data.keyword.cloud_notm}} infrastructure, you need to allow outgoing network traffic to the {{site.data.keyword.la_full_notm}} service.
 {:shortdesc}
+
+
+
+## Choosing a network endpoint
+{: #network_endpoints}
+
+You can configure a LogDNA agent to connect to an {{site.data.keyword.la_full_notm}} instance through the public network or through the private network. By default, the agent connects through the public network.
+
+The type of network defines the level of isolation and security that is configured to move workloads between cloud-based resources in your account. 
+
+Some factors that you must consider when you must decide which network to choose are:
+* Corporate requirements on how services and applications can access cloud-based services in your account
+* Security on production workloads
+* Industry compliance regulations
+
+For example, you might have the following requirements when you are working in the {{site.data.keyword.cloud_notm}}:
+* No access to Internet to connect to {{site.data.keyword.cloud_notm}} services
+* Isolated connectivity for workloads in your account
+
+When you have these requirements, you should move from the public network to the private network. You should consider connecting the LogDNA agent over the private network. 
+
+You can enable virtual routing and forwarding (VRF) to move IP routing for your account and all of its resources into a separate routing table. If VRF is enabled, you can then enable {{site.data.keyword.cloud_notm}} service endpoints to connect directly to resources without using the public network. To configure an agent to send logs by using a private endpoint, you must [enable virtual routing and forwarding (VRF)](/docs/account?topic=account-vrf-service-endpoint) for your account. Once the account is VRF and service endpoint enabled, the LogDNA agent can be configured to use the private network by using the [Private Endpoint](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-endpoints) as the ingestion URL.
+* Private endpoints are not accessible from the public internet. 
+* All traffic is routed to the {{site.data.keyword.cloud_notm}} private network. 
+* Services like {{site.data.keyword.la_full_notm}} are no longer served on an internet routable IP address.
+
+Notice that when you configure the agent to send logs through the public network, the environment where the agent is running requires internet access to use the public endpoint.
+
+
+
+### Limitations
+{: #network_endpoints_limitations}
+
+Consider the following limitations:
+* Ingestion endpoints of type `syslog-a` and `syslog-u` are not currently supported on the Cloud Service Endpoint (CSE) network. 
+* The LogDNA web UI is not currently supported on the CSE network.
+
+
+
+
+## Allowing outgoing network traffic
+{: #network_outgoing_traffic}
+
+When you have an additional firewall set up, or you have customized the firewall settings in your {{site.data.keyword.cloud_notm}} infrastructure, you need to allow outgoing network traffic to the {{site.data.keyword.la_full_notm}} service. 
 
 You must allow outgoing traffic on TCP port 443 and TCP port 80 in your firewall. For example, you must open TCP port 443 and TCP port 80 from each worker to the {{site.data.keyword.la_full_notm}} service.
 
-The API endpoint is required for LogDNA agent authentication. The LogDNA agent gets a token that you can use to send logs to the Ingestion endpoint.
-{: note}
+The API endpoint is required for LogDNA agent authentication. The LogDNA agent gets a token that you can use to send logs to the ingestion endpoint.
+
+If you configure the LogDNA agent to connect to the logging instance through the private network, open a support ticket to request the private IP addresses that you must enable in your firewall. For information about opening an IBM support ticket, see [Getting support](/docs/get-support?topic=get-support-getting-customer-support#getting-customer-support).
+{: important}
 
 
 
-## Ingestion IP addresses
+### Ingestion IP addresses for public endpoints
 {: #ips_ingestion}
 
 
@@ -50,7 +96,7 @@ The following tables list the IP addresses per region that you must configure in
 
 
 
-## API IP addresses
+### API IP addresses for public endpoints
 {: #ips_api}
 
 

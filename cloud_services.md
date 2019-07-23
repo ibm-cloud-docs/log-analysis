@@ -42,6 +42,7 @@ You can monitor logs from CF apps through the {{site.data.keyword.la_short}} ins
 
 To see the list of {{site.data.keyword.la_full_notm}} locations where this service sends logs, see [Compute: Cloud Foundry](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-cloud_services_locations#cs_locations_platform_cfapps).
 
+
 ## Platform: Database services
 {: #database}
 
@@ -63,6 +64,7 @@ You can monitor logs through the {{site.data.keyword.la_short}} instance that is
 To see the list of {{site.data.keyword.la_full_notm}} locations where these services send logs, see [Platform: Database services](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-cloud_services_locations#cs_locations_database).
 
 
+
 ## Platform: Security services
 {: #security}
 
@@ -78,7 +80,5 @@ You can monitor logs through the {{site.data.keyword.la_short}} instance that is
 {: note}
 
 To see the list of {{site.data.keyword.la_full_notm}} locations where this service sends logs, see [Platform: Security services](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-cloud_services_locations#cs_locations_security).
-
-
 
 

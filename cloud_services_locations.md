@@ -56,10 +56,8 @@ List of locations where {{site.data.keyword.cloud_notm}} services are enabled to
 ## Platform: Security services
 {: #cs_locations_security}
 
-| Service                                                       | `Dallas (us-south)` | `Frankfurt (eu-de)` | `London (eu-gb)` | `Tokyo (jp-tok)` |
-|---------------------------------------------------------------|---------------------|---------------------|------------------|------------------|
-| {{site.data.keyword.cloudcerts_full_notm}}                    | `YES`               | `YES`               | `NO`             | `YES`            |
+| Service                                                       | `Dallas (us-south)` |`Frankfurt (eu-de)` | `London (eu-gb)` | `Tokyo (jp-tok)`   | 
+|---------------------------------------------------------------|---------------------|---------------------|------------------|--------------------|
+| {{site.data.keyword.cloudcerts_full_notm}}                    | `YES`               |  `YES`               | `NO`             | `YES`              | 
 {: caption="Table 3. Security services " caption-side="top"} 
-
-
 

@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2019
-lastupdated: "2019-06-03"
+lastupdated: "2019-07-17"
 
 keywords: LogDNA, IBM, Log Analysis, logging instance, provision
 
