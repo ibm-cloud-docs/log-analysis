@@ -303,22 +303,22 @@ To configure your Ubuntu server to forward logs to your LogDNA instance, complet
       <tr>
         <td>`Dallas (us-south)`</td>
         <td>`sudo logdna-agent -s LOGDNA_LOGHOST=logs.us-south.logging.cloud.ibm.com`</td>
-        <td>`sudo logdna-agent -s LOGDNA_LOGHOST=logs.private.us-south.logging.cloud.ibm.com` </br></br>export LDLOGHOST=logs.private.us-south.logging.cloud.ibm.com`</td>
+        <td>`sudo logdna-agent -s LOGDNA_LOGHOST=logs.private.us-south.logging.cloud.ibm.com` </br></br>`export LDLOGHOST=logs.private.us-south.logging.cloud.ibm.com`</td>
       </tr>
       <tr>
         <td>`Frankfurt (eu-de)`</td>
         <td>`sudo logdna-agent -s LOGDNA_LOGHOST=logs.eu-de.logging.cloud.ibm.com`</td>
-        <td>`sudo logdna-agent -s LOGDNA_LOGHOST=logs.private.eu-de.logging.cloud.ibm.com` </br></br>export LDLOGHOST=logs.private.eu-de.logging.cloud.ibm.com`</td>
+        <td>`sudo logdna-agent -s LOGDNA_LOGHOST=logs.private.eu-de.logging.cloud.ibm.com` </br></br>`export LDLOGHOST=logs.private.eu-de.logging.cloud.ibm.com`</td>
       </tr>
       <tr>
         <td>`London (eu-gb)`</td>
         <td>`sudo logdna-agent -s LOGDNA_LOGHOST=logs.eu-gb.logging.cloud.ibm.com`</td>
-        <td>`sudo logdna-agent -s LOGDNA_LOGHOST=logs.private.eu-gb.logging.cloud.ibm.com` </br></br>export LDLOGHOST=logs.private.eu-gb.logging.cloud.ibm.com`</td>
+        <td>`sudo logdna-agent -s LOGDNA_LOGHOST=logs.private.eu-gb.logging.cloud.ibm.com` </br></br>`export LDLOGHOST=logs.private.eu-gb.logging.cloud.ibm.com`</td>
       </tr>
       <tr>
         <td>`Tokyo (jp-tok)`</td>
         <td>`sudo logdna-agent -s LOGDNA_LOGHOST=logs.jp-tok.logging.cloud.ibm.com`</td>
-        <td>`sudo logdna-agent -s LOGDNA_LOGHOST=logs.private.jp-tok.logging.cloud.ibm.com` </br></br>export LDLOGHOST=logs.private.jp-tok.logging.cloud.ibm.com`</td>
+        <td>`sudo logdna-agent -s LOGDNA_LOGHOST=logs.private.jp-tok.logging.cloud.ibm.com` </br></br>`export LDLOGHOST=logs.private.jp-tok.logging.cloud.ibm.com`</td>
       </tr>
     </table>
 
