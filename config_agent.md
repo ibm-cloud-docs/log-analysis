@@ -326,7 +326,6 @@ To configure your Ubuntu server to forward logs to your LogDNA instance, complet
       </tr>
     </table>
 
-
 5. Define more log paths to be monitored. Run the following command:
 
     ```
