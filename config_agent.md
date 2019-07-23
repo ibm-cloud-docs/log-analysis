@@ -92,22 +92,22 @@ To configure your Kubernetes cluster to forward logs to your LogDNA instance, co
       <tr>
         <td>`Dallas (us-south)`</td>
         <td>`kubectl create -f https://assets.us-south.logging.cloud.ibm.com/clients/logdna-agent-ds.yaml`</td>
-        <td>`kubectl create -f https://assets.private.us-south.logging.cloud.ibm.com/clients/logdna-agent-ds-private.yaml`</td>
+        <td>`kubectl create -f https://assets.us-south.logging.cloud.ibm.com/clients/logdna-agent-ds-private.yaml`</td>
       </tr>
       <tr>
         <td>`Frankfurt (eu-de)`</td>
         <td>`kubectl create -f https://assets.eu-de.logging.cloud.ibm.com/clients/logdna-agent-ds.yaml`</td>
-        <td>`kubectl create -f https://assets.private.eu-de.logging.cloud.ibm.com/clients/logdna-agent-ds-private.yaml`</td>
+        <td>`kubectl create -f https://assets.eu-de.logging.cloud.ibm.com/clients/logdna-agent-ds-private.yaml`</td>
       </tr>
       <tr>
         <td>`London (eu-gb)`</td>
         <td>`kubectl create -f https://assets.eu-gb.logging.cloud.ibm.com/clients/logdna-agent-ds.yaml`</td>
-        <td>Not avaialble</td>
+        <td>`kubectl create -f https://assets.eu-gb.logging.cloud.ibm.com/clients/logdna-agent-ds-private.yaml`</td>
       </tr>
       <tr>
         <td>`Tokyo (jp-tok)`</td>
         <td>`kubectl create -f https://assets.jp-tok.logging.cloud.ibm.com/clients/logdna-agent-ds.yaml`</td>
-        <td>Not available</td>
+        <td>`kubectl create -f https://assets.jp-tok.logging.cloud.ibm.com/clients/logdna-agent-ds-private.yaml`</td>
       </tr>
     </table>
 
