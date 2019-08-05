@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019
-lastupdated: "2019-07-18"
+lastupdated: "2019-08-05"
 
 keywords: LogDNA, IBM, Log Analysis, logging, services
 
@@ -74,6 +74,7 @@ The following table lists security Cloud services that send logs to {{site.data.
 | Service     | Description | 
 |-------------|-------------|
 | [{{site.data.keyword.cloudcerts_full_notm}}](/docs/services/certificate-manager?topic=certificate-manager-about-certificate-manager#about-certificate-manager) | You can use {{site.data.keyword.cloudcerts_short}} to manage the SSL certificates for your {{site.data.keyword.cloud_notm}}-based apps and services.  | 
+| [{{site.data.keyword.keymanagementservicelong}}](/docs/services/key-protect?topic=key-protect-getting-started-tutorial#getting-started-with-key-protect) | You can use the {{site.data.keyword.keymanagementserviceshort}} service to provision encrypted keys for apps across the {{site.data.keyword.cloud_notm}}. |
 {: caption="List of security Cloud services" caption-side="top"} 
 
 You can monitor logs through the {{site.data.keyword.la_short}} instance that is configured to receive platform services logs in the location where the service is running. 
