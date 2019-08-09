@@ -47,8 +47,8 @@ The following table shows the locations where automatic collection of Cloud Foun
 | Service                                                       | `Frankfurt (eu-de)` | `London (eu-gb)` |
 |---------------------------------------------------------------|---------------------|------------------|
 | Cloud Foundry (CF)                                            | `YES`               | `YES`            |
-{: caption="Table 1. Cloud Foundry in Europe" caption-side="top"}
-{: #table-1}
+{: caption="Table 2. Cloud Foundry in Europe" caption-side="top"}
+{: #table-2}
 {: tab-title="Europe"}
 {: class="comparison-tab-table"}
 {: row-headers}
@@ -56,8 +56,8 @@ The following table shows the locations where automatic collection of Cloud Foun
 | Service                                                       | `Tokyo (jp-tok)` |
 |---------------------------------------------------------------|------------------|
 | Cloud Foundry (CF)                                            | `YES`            |
-{: caption="Table 1. Cloud Foundry in Asia Pacific" caption-side="top"}
-{: #table-1}
+{: caption="Table 3. Cloud Foundry in Asia Pacific" caption-side="top"}
+{: #table-3}
 {: tab-title="Asia Pacific"}
 {: class="comparison-tab-table"}
 {: row-headers}
@@ -78,8 +78,8 @@ The following tables list the locations where automatic collection of database s
 | {{site.data.keyword.databases-for-postgresql_full_notm}}        | `YES`               | `NO`                |
 | {{site.data.keyword.messages-for-rabbitmq_full_notm}}           | `YES`               | `NO`                |
 | {{site.data.keyword.databases-for-redis_full_notm}}             | `YES`               | `NO`                |
-{: caption="Table 2. Database services integration in America's locations" caption-side="top"}
-{: #table-2}
+{: caption="Table 4. Database services integration in America's locations" caption-side="top"}
+{: #table-1}
 {: tab-title="America"}
 {: class="comparison-tab-table"}
 {: row-headers}
@@ -93,7 +93,7 @@ The following tables list the locations where automatic collection of database s
 | {{site.data.keyword.databases-for-postgresql_full_notm}}        | `YES`            | `NO`             | `Logs are available through the Log Analysis Tokyo instance` | `Logs are available through the Log Analysis Tokyo instance` |
 | {{site.data.keyword.messages-for-rabbitmq_full_notm}}           | `YES`            | `NO`             | `Logs are available through the Log Analysis Tokyo instance` | `Logs are available through the Log Analysis Tokyo instance` |
 | {{site.data.keyword.databases-for-redis_full_notm}}             | `YES`            | `NO`             | `Logs are available through the Log Analysis Tokyo instance` | `Logs are available through the Log Analysis Tokyo instance` |
-{: caption="Table 2. Database services integration in AP locations" caption-side="top"}
+{: caption="Table 5. Database services integration in AP locations" caption-side="top"}
 {: #table-2}
 {: tab-title="Asia Pacific"}
 {: class="comparison-tab-table"}
@@ -108,8 +108,8 @@ The following tables list the locations where automatic collection of database s
 | {{site.data.keyword.databases-for-postgresql_full_notm}}      | `NO`                | `YES`            | `Logs are available through the Log Analysis London instance` |
 | {{site.data.keyword.messages-for-rabbitmq_full_notm}}         | `NO`                | `YES`            | `Logs are available through the Log Analysis London instance` |
 | {{site.data.keyword.databases-for-redis_full_notm}}           | `NO`                | `YES`            | `Logs are available through the Log Analysis London instance` |
-{: caption="Table 2. Database services integration in Europe locations" caption-side="top"}
-{: #table-2}
+{: caption="Table 6. Database services integration in Europe locations" caption-side="top"}
+{: #table-3}
 {: tab-title="Europe"}
 {: class="comparison-tab-table"}
 {: row-headers}
@@ -125,8 +125,8 @@ The following tables list the locations where automatic collection of security s
 |-----------------------------------------------------------------|---------------------|--------------------------------------|
 | {{site.data.keyword.cloudcerts_full_notm}}                      | `YES`               | `NO`                                 |            
 | {{site.data.keyword.keymanagementservicelong}}                  | `YES`               | `Logs are available through the Log Analysis Dallas (us-south) instance` |
-{: caption="Table 1. Security services integration in America's locations" caption-side="top"}
-{: #table-3}
+{: caption="Table 7. Security services integration in America's locations" caption-side="top"}
+{: #table-1}
 {: tab-title="America"}
 {: class="comparison-tab-table"}
 {: row-headers}
@@ -135,8 +135,8 @@ The following tables list the locations where automatic collection of security s
 |-----------------------------------------------------------------|------------------|----------------------------|
 | {{site.data.keyword.cloudcerts_full_notm}}                      | `YES`            | `NO`                       |
 | {{site.data.keyword.keymanagementservicelong}}                  | `YES`            | `Logs are available through the Log Analysis Tokyo instance`   |
-{: caption="Table 2. Security services integration in AP locations" caption-side="top"}
-{: #table-3}
+{: caption="Table 8. Security services integration in AP locations" caption-side="top"}
+{: #table-2}
 {: tab-title="Asia Pacific"}
 {: class="comparison-tab-table"}
 {: row-headers}
@@ -145,7 +145,7 @@ The following tables list the locations where automatic collection of security s
 |---------------------------------------------------------------|---------------------|------------------|
 | {{site.data.keyword.cloudcerts_full_notm}}                    | `YES`               | `NO`             |
 | {{site.data.keyword.keymanagementservicelong}}                | `YES`               | `NO`             |
-{: caption="Table 3. Security services  integration in Europe locations" caption-side="top"}
+{: caption="Table 9. Security services  integration in Europe locations" caption-side="top"}
 {: #table-3}
 {: tab-title="Europe"}
 {: class="comparison-tab-table"}
