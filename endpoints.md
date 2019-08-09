@@ -47,6 +47,7 @@ Review the connectivity options for interacting with {{site.data.keyword.la_full
 ## API endpoints
 {: #endpoints_api}
 
+The following table shows the API endpoints:
 
 | Region                   |  Public Endpoint                                   |
 |--------------------------|----------------------------------------------------|
@@ -55,7 +56,7 @@ Review the connectivity options for interacting with {{site.data.keyword.la_full
 | `London (eu-gb)`         | `https://api.eu-gb.logging.cloud.ibm.com`          |
 | `Tokyo (jp-tok)`         | `https://api.jp-tok.logging.cloud.ibm.com`         |
 {: caption="Table 1. Lists of public API endpoints for interacting with {{site.data.keyword.la_full_notm}} over {{site.data.keyword.cloud_notm}}'s public network" caption-side="top"}
-{: #table-1}
+{: #table1}
 {: tab-title="Public"}
 {: class="comparison-tab-table"}
 {: row-headers}
@@ -67,7 +68,7 @@ Review the connectivity options for interacting with {{site.data.keyword.la_full
 | `London (eu-gb)`         | `https://api.private.eu-gb.logging.cloud.ibm.com`      |
 | `Tokyo (jp-tok)`         | `https://api.private.jp-tok.logging.cloud.ibm.com`     |
 {: caption="Table 2. Lists of private API endpoints for interacting with {{site.data.keyword.la_full_notm}} over {{site.data.keyword.cloud_notm}}'s private network" caption-side="top"}
-{: #table-1}
+{: #table1}
 {: tab-title="Private"}
 {: class="comparison-tab-table"}
 {: row-headers}
@@ -78,6 +79,7 @@ Review the connectivity options for interacting with {{site.data.keyword.la_full
 ## Ingestion endpoints
 {: #endpoints_ingestion}
 
+The following table shows the ingestion endpoints:
 
 | Region                   |   Public Endpoint                                   |
 |--------------------------|-----------------------------------------------------|
@@ -86,7 +88,7 @@ Review the connectivity options for interacting with {{site.data.keyword.la_full
 | `London (eu-gb)`         | `https://logs.eu-gb.logging.cloud.ibm.com`          |
 | `Tokyo (jp-tok)`         | `https://logs.jp-tok.logging.cloud.ibm.com`         |
 {: caption="Table 3. Lists of public ingestion endpoints for interacting with {{site.data.keyword.la_full_notm}} over {{site.data.keyword.cloud_notm}}'s public network" caption-side="top"}
-{: #table-2}
+{: #table2}
 {: tab-title="Public"}
 {: class="comparison-tab-table"}
 {: row-headers}
@@ -98,7 +100,7 @@ Review the connectivity options for interacting with {{site.data.keyword.la_full
 | `London (eu-gb)`         | `https://logs.private.eu-gb.logging.cloud.ibm.com`     |
 | `Tokyo (jp-tok)`         | `https://logs.private.jp-tok.logging.cloud.ibm.com`    |
 {: caption="Table 4. Lists of private ingestion endpoints for interacting with {{site.data.keyword.la_full_notm}} over {{site.data.keyword.cloud_notm}}'s private network" caption-side="top"}
-{: #table-2}
+{: #table2}
 {: tab-title="Private"}
 {: class="comparison-tab-table"}
 {: row-headers}
