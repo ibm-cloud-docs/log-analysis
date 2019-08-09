@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019
-lastupdated: "2019-07-18"
+lastupdated: "2019-08-09"
 
 keywords: LogDNA, IBM, Log Analysis, logging, services
 
@@ -42,24 +42,88 @@ List of locations where {{site.data.keyword.cloud_notm}} services are enabled to
 ## Platform: Database services
 {: #cs_locations_database}
 
-| Service                                                       | `Dallas (us-south)` | `Frankfurt (eu-de)` | `London (eu-gb)` | `Tokyo (jp-tok)` |
-|---------------------------------------------------------------|---------------------|---------------------|------------------|------------------|
-| {{site.data.keyword.databases-for-elasticsearch_full_notm}}   | `YES`               | `NO`                | `YES`            | `YES`            |
-| {{site.data.keyword.databases-for-etcd_full_notm}}            | `YES`               | `NO`                | `YES`            | `YES`            |
-| {{site.data.keyword.databases-for-mongodb_full_notm}}         | `YES`               | `NO`                | `YES`            | `YES`            |
-| {{site.data.keyword.databases-for-postgresql_full_notm}}      | `YES`               | `NO`                | `YES`            | `YES`            |
-| {{site.data.keyword.messages-for-rabbitmq_full_notm}}         | `YES`               | `NO`                | `YES`            | `YES`            |
-| {{site.data.keyword.databases-for-redis_full_notm}}           | `YES`               | `NO`                | `YES`            | `YES`            |
-{: caption="Table 2. Database services " caption-side="top"} 
+
+### Americas
+{: #am1}
+
+| Service                                                         | `Dallas (us-south)` | `Dallas (us-east)`  |
+|-----------------------------------------------------------------|---------------------|---------------------|
+| {{site.data.keyword.cloudant_short_notm}}                       | `Yes (beta)`        | `NO`                |
+| {{site.data.keyword.databases-for-elasticsearch_full_notm}}     | `YES`               | `NO`                | 
+| {{site.data.keyword.databases-for-etcd_full_notm}}              | `YES`               | `NO`                |
+| {{site.data.keyword.databases-for-mongodb_full_notm}}           | `YES`               | `NO`                |
+| {{site.data.keyword.databases-for-postgresql_full_notm}}        | `YES`               | `NO`                |
+| {{site.data.keyword.messages-for-rabbitmq_full_notm}}           | `YES`               | `NO`                |
+| {{site.data.keyword.databases-for-redis_full_notm}}             | `YES`               | `NO`                |
+{: caption="Database services integration in America's locations" caption-side="top"} 
+
+
+### Asia Pacific (AP)
+{: #ap1}
+
+
+| Service                                                         | `Tokyo (jp-tok)` |`Sydney (au-syd)`   | `Seoul 01 (seo01)`       | `Chennai 01 (che01)`     |
+|-----------------------------------------------------------------|------------------|--------------------|--------------------------|--------------------------|
+| {{site.data.keyword.cloudant_short_notm}}                       | `NO`             | `NO`               | `NO`                     | `NO`                     |
+| {{site.data.keyword.databases-for-elasticsearch_full_notm}}     | `YES`            | `NO`               | `Through Tokyo instance` | `Through Tokyo instance` |
+| {{site.data.keyword.databases-for-etcd_full_notm}}              | `YES`            | `NO`               | `Through Tokyo instance` | `Through Tokyo instance` |
+| {{site.data.keyword.databases-for-mongodb_full_notm}}           | `YES`            | `NO`               | `Through Tokyo instance` | `Through Tokyo instance` |
+| {{site.data.keyword.databases-for-postgresql_full_notm}}        | `YES`            | `NO`               | `Through Tokyo instance` | `Through Tokyo instance` |
+| {{site.data.keyword.messages-for-rabbitmq_full_notm}}           | `YES`            | `NO`               | `Through Tokyo instance` | `Through Tokyo instance` |
+| {{site.data.keyword.databases-for-redis_full_notm}}             | `YES`            | `NO`               | `Through Tokyo instance` | `Through Tokyo instance` |
+{: caption="Database services integration in AP locations" caption-side="top"} 
+
+
+### Europe (EU)
+{: #eu1}
+
+| Service                                                       |`Frankfurt (eu-de)`  | `London (eu-gb)` | `Oslo 01 (osl01)`         |
+|---------------------------------------------------------------|---------------------|------------------|---------------------------|
+| {{site.data.keyword.cloudant_short_notm}}                     | `NO`                | `NO`             | `NO`                      |
+| {{site.data.keyword.databases-for-elasticsearch_full_notm}}   | `NO`                | `YES`            | `Through London instance` |
+| {{site.data.keyword.databases-for-etcd_full_notm}}            | `NO`                | `YES`            | `Through London instance` |
+| {{site.data.keyword.databases-for-mongodb_full_notm}}         | `NO`                | `YES`            | `Through London instance` | 
+| {{site.data.keyword.databases-for-postgresql_full_notm}}      | `NO`                | `YES`            | `Through London instance` |
+| {{site.data.keyword.messages-for-rabbitmq_full_notm}}         | `NO`                | `YES`            | `Through London instance` |
+| {{site.data.keyword.databases-for-redis_full_notm}}           | `NO`                | `YES`            | `Through London instance` |
+{: caption="Database services integration in Europe locations" caption-side="top"} 
+
 
 
 ## Platform: Security services
 {: #cs_locations_security}
 
-| Service                                                       | `Dallas (us-south)` | `Dallas (us-east)` | `Frankfurt (eu-de)` | `London (eu-gb)` | `Tokyo (jp-tok)`   | `Sydney (au-syd`)  |
-|---------------------------------------------------------------|---------------------|---------------------|---------------------|------------------|--------------------|------------------|
-| {{site.data.keyword.cloudcerts_full_notm}}                    | `YES`               | `NO`                | `YES`               | `NO`             | `YES`              | `NO`               |
-| {{site.data.keyword.keymanagementservicelong}}                | `YES`               | `Through Dallas (us-south) instance` | `YES` | `Through Frankfurt instance`   | `YES` | `Through Tokyo instance`   |
-{: caption="Table 3. Security services " caption-side="top"} 
+
+### Americas
+{: #am1}
+
+| Service                                                         | `Dallas (us-south)` | `Dallas (us-east)`                   |
+|-----------------------------------------------------------------|---------------------|--------------------------------------|
+| {{site.data.keyword.cloudcerts_full_notm}}                      | `YES`               | `NO`                                 |            
+| {{site.data.keyword.keymanagementservicelong}}                  | `YES`               | `Through Dallas (us-south) instance` |
+{: caption="Security services integration in America's locations" caption-side="top"} 
+
+
+
+### Asia Pacific (AP)
+{: #ap2}
+
+
+| Service                                                         | `Tokyo (jp-tok)` |`Sydney (au-syd)`           |
+|-----------------------------------------------------------------|------------------|----------------------------|
+| {{site.data.keyword.cloudcerts_full_notm}}                      | `YES`            | `NO`                       |
+| {{site.data.keyword.keymanagementservicelong}}                  | `YES`            | `Through Tokyo instance`   |
+{: caption="Security services integration in AP locations" caption-side="top"} 
+
+
+### Europe (EU)
+{: #eu2}
+
+| Service                                                       |`Frankfurt (eu-de)`  | `London (eu-gb)` | 
+|---------------------------------------------------------------|---------------------|------------------|
+| {{site.data.keyword.cloudcerts_full_notm}}                    | `YES`               | `NO`             |
+| {{site.data.keyword.keymanagementservicelong}}                | `YES`               | `NO`             |
+{: caption="Security services  integration in Europe locations" caption-side="top"} 
+
 
 
