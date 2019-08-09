@@ -100,7 +100,7 @@ The following tables list the locations where automatic collection of security s
 
 
 ### Americas
-{: #am1}
+{: #am2}
 
 | Service                                                         | `Dallas (us-south)` | `Dallas (us-east)`                   |
 |-----------------------------------------------------------------|---------------------|--------------------------------------|
