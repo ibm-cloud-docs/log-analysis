@@ -29,7 +29,9 @@ subcollection: LogDNA
 List of {{site.data.keyword.cloud_notm}} services that send logs to {{site.data.keyword.la_full_notm}}:
 {:shortdesc}
 
-You can monitor logs from CF apps and enabled services through the {{site.data.keyword.la_short}} instance that is configured to receive platform services logs in the location where the app or service is running. Notice that there is only 1 instance per location with the flag **Platform services logs**.
+You can monitor logs from CF apps and enabled services through [the {{site.data.keyword.la_short}} instance that is configured to receive platform services logs](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-config_svc_logs) in the location where the app or service is running. 
+
+Notice that there is only 1 instance per location with the flag **Platform services logs**.
 {: important}
 
 ## Compute: Cloud Foundry

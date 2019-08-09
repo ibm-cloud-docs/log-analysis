@@ -26,22 +26,25 @@ subcollection: LogDNA
 # Cloud services by location
 {: #cloud_services_locations}
 
-List of locations where {{site.data.keyword.cloud_notm}} services are enabled to send logs to {{site.data.keyword.la_full_notm}}:
+List of locations where {{site.data.keyword.cloud_notm}} services are enabled to send logs to {{site.data.keyword.la_full_notm}}. [Learn more about enabling service platform logs](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-config_svc_logs).
 {:shortdesc}
 
 
 ## Compute: Cloud Foundry
 {: #cs_locations_platform_cfapps}
 
+The following table lists the locations where automatic collection of Cloud Foundry (CF) logs is enabled. You can monitor these logs through the {{site.data.keyword.la_full_notm}} (LA) instance that is configured with the **service platform logs** in the same location where the CF resource is available.
+
 | Service                                                       | `Dallas (us-south)` | `Frankfurt (eu-de)` | `London (eu-gb)` | `Tokyo (jp-tok)` |
 |---------------------------------------------------------------|---------------------|---------------------|------------------|------------------|
 | Cloud Foundry (CF)                                            | `YES`               | `YES`               | `YES`            | `YES`            |
-{: caption="Table 1. Cloud Foundry" caption-side="top"} 
+{: caption="Cloud Foundry" caption-side="top"} 
 
 
 ## Platform: Database services
 {: #cs_locations_database}
 
+The following tables list the locations where automatic collection of database service logs is enabled. You can monitor these logs through the {{site.data.keyword.la_full_notm}} instance that is configured with the **service platform logs** in the same location where the service is available. For locations where you can provision a service instance but the {{site.data.keyword.la_full_notm}} service is not available, specific detail about the location where you can monitor those logs is specified.
 
 ### Americas
 {: #am1}
@@ -65,7 +68,7 @@ List of locations where {{site.data.keyword.cloud_notm}} services are enabled to
 | Service                                                         | `Tokyo (jp-tok)` |`Sydney (au-syd)`   | `Seoul 01 (seo01)`       | `Chennai 01 (che01)`     |
 |-----------------------------------------------------------------|------------------|--------------------|--------------------------|--------------------------|
 | {{site.data.keyword.cloudant_short_notm}}                       | `NO`             | `NO`               | `NO`                     | `NO`                     |
-| {{site.data.keyword.databases-for-elasticsearch_full_notm}}     | `YES`            | `NO`               | `Through Tokyo instance` | `Through Tokyo instance` |
+| {{site.data.keyword.databases-for-elasticsearch_full_notm}}     | `YES`            | `NO`               | `Logs are available through the LA Tokyo instance` | `Logs are available through the LA Tokyo instance` |
 | {{site.data.keyword.databases-for-etcd_full_notm}}              | `YES`            | `NO`               | `Through Tokyo instance` | `Through Tokyo instance` |
 | {{site.data.keyword.databases-for-mongodb_full_notm}}           | `YES`            | `NO`               | `Through Tokyo instance` | `Through Tokyo instance` |
 | {{site.data.keyword.databases-for-postgresql_full_notm}}        | `YES`            | `NO`               | `Through Tokyo instance` | `Through Tokyo instance` |
