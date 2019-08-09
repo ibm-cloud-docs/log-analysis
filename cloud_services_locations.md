@@ -99,6 +99,40 @@ The following tables list the locations where automatic collection of database s
 The following tables list the locations where automatic collection of security service logs is enabled. You can monitor logs through the Log Analysis instance that is available in the same location as your security resources, if you enable 1 instance in this location to host service platform logs. For locations where you can provision a service instance but the {{site.data.keyword.la_full_notm}} service is not available, specific detail about the location where you can monitor those logs is specified in each case.
 
 
+| Service                                                         | `Dallas (us-south)` | `Dallas (us-east)`                   |
+|-----------------------------------------------------------------|---------------------|--------------------------------------|
+| {{site.data.keyword.cloudcerts_full_notm}}                      | `YES`               | `NO`                                 |            
+| {{site.data.keyword.keymanagementservicelong}}                  | `YES`               | `Logs are available through the Log Analysis Dallas (us-south) instance` |
+{: caption="Table 1. Security services integration in America's locations" caption-side="top"}
+{: #table-1}
+{: tab-title="Americas"}
+{: class="comparison-tab-table"}
+{: row-headers}
+
+| Service                                                         | `Tokyo (jp-tok)` |`Sydney (au-syd)`           |
+|-----------------------------------------------------------------|------------------|----------------------------|
+| {{site.data.keyword.cloudcerts_full_notm}}                      | `YES`            | `NO`                       |
+| {{site.data.keyword.keymanagementservicelong}}                  | `YES`            | `Logs are available through the Log Analysis Tokyo instance`   |
+{: caption="Table 2. Security services integration in AP locations" caption-side="top"}
+{: #table-1}
+{: tab-title="Asia Pacific"}
+{: class="comparison-tab-table"}
+{: row-headers}
+
+| Service                                                       |`Frankfurt (eu-de)`  | `London (eu-gb)` | 
+|---------------------------------------------------------------|---------------------|------------------|
+| {{site.data.keyword.cloudcerts_full_notm}}                    | `YES`               | `NO`             |
+| {{site.data.keyword.keymanagementservicelong}}                | `YES`               | `NO`             |
+{: caption="Table 3. Security services  integration in Europe locations" caption-side="top"}
+{: #table-1}
+{: tab-title="Europe"}
+{: class="comparison-tab-table"}
+{: row-headers}
+
+
+
+
+
 ### Americas
 {: #am2}
 
