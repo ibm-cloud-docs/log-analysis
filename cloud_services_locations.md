@@ -79,7 +79,7 @@ The following tables list the locations where automatic collection of database s
 | {{site.data.keyword.messages-for-rabbitmq_full_notm}}           | `YES`               | `NO`                |
 | {{site.data.keyword.databases-for-redis_full_notm}}             | `YES`               | `NO`                |
 {: caption="Table 4. Database services integration in America's locations" caption-side="top"}
-{: #table-1}
+{: #db-table-1}
 {: tab-title="America"}
 {: class="comparison-tab-table"}
 {: row-headers}
@@ -94,7 +94,7 @@ The following tables list the locations where automatic collection of database s
 | {{site.data.keyword.messages-for-rabbitmq_full_notm}}           | `YES`            | `NO`             | `Logs are available through the Log Analysis Tokyo instance` | `Logs are available through the Log Analysis Tokyo instance` |
 | {{site.data.keyword.databases-for-redis_full_notm}}             | `YES`            | `NO`             | `Logs are available through the Log Analysis Tokyo instance` | `Logs are available through the Log Analysis Tokyo instance` |
 {: caption="Table 5. Database services integration in AP locations" caption-side="top"}
-{: #table-2}
+{: #db-table-2}
 {: tab-title="Asia Pacific"}
 {: class="comparison-tab-table"}
 {: row-headers}
@@ -109,7 +109,7 @@ The following tables list the locations where automatic collection of database s
 | {{site.data.keyword.messages-for-rabbitmq_full_notm}}         | `NO`                | `YES`            | `Logs are available through the Log Analysis London instance` |
 | {{site.data.keyword.databases-for-redis_full_notm}}           | `NO`                | `YES`            | `Logs are available through the Log Analysis London instance` |
 {: caption="Table 6. Database services integration in Europe locations" caption-side="top"}
-{: #table-3}
+{: #db-table-3}
 {: tab-title="Europe"}
 {: class="comparison-tab-table"}
 {: row-headers}
@@ -126,7 +126,7 @@ The following tables list the locations where automatic collection of security s
 | {{site.data.keyword.cloudcerts_full_notm}}                      | `YES`               | `NO`                                 |            
 | {{site.data.keyword.keymanagementservicelong}}                  | `YES`               | `Logs are available through the Log Analysis Dallas (us-south) instance` |
 {: caption="Table 7. Security services integration in America's locations" caption-side="top"}
-{: #table-1}
+{: #ss-table-1}
 {: tab-title="America"}
 {: class="comparison-tab-table"}
 {: row-headers}
@@ -136,7 +136,7 @@ The following tables list the locations where automatic collection of security s
 | {{site.data.keyword.cloudcerts_full_notm}}                      | `YES`            | `NO`                       |
 | {{site.data.keyword.keymanagementservicelong}}                  | `YES`            | `Logs are available through the Log Analysis Tokyo instance`   |
 {: caption="Table 8. Security services integration in AP locations" caption-side="top"}
-{: #table-2}
+{: #ss-table-2}
 {: tab-title="Asia Pacific"}
 {: class="comparison-tab-table"}
 {: row-headers}
@@ -146,7 +146,7 @@ The following tables list the locations where automatic collection of security s
 | {{site.data.keyword.cloudcerts_full_notm}}                    | `YES`               | `NO`             |
 | {{site.data.keyword.keymanagementservicelong}}                | `YES`               | `NO`             |
 {: caption="Table 9. Security services  integration in Europe locations" caption-side="top"}
-{: #table-3}
+{: #ss-table-3}
 {: tab-title="Europe"}
 {: class="comparison-tab-table"}
 {: row-headers}
