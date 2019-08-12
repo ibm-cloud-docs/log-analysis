@@ -41,7 +41,7 @@ The following table shows the locations where automatic collection of Cloud Foun
 {: caption="Table 1. Cloud Foundry in America" caption-side="top"}
 {: #table1}
 {: tab-title="America"}
-{: class="comparison-tab-table"}
+{: class="simple-tab-table"}
 {: row-headers}
 
 | Service                                                       | `Tokyo (jp-tok)` |
@@ -50,7 +50,7 @@ The following table shows the locations where automatic collection of Cloud Foun
 {: caption="Table 2. Cloud Foundry in Asia Pacific" caption-side="top"}
 {: #table2}
 {: tab-title="Asia Pacific"}
-{: class="comparison-tab-table"}
+{: class="simple-tab-table"}
 {: row-headers}
 
 | Service                                                       | `Frankfurt (eu-de)` | `London (eu-gb)` |
@@ -59,8 +59,10 @@ The following table shows the locations where automatic collection of Cloud Foun
 {: caption="Table 3. Cloud Foundry in Europe" caption-side="top"}
 {: #table3}
 {: tab-title="Europe"}
-{: class="comparison-tab-table"}
+{: class="simple-tab-table"}
 {: row-headers}
+
+
 
 
 ## Platform: Database services
