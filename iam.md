@@ -99,31 +99,41 @@ Use the following table to identify the service roles that you can grant a user 
 
 | Actions                                                                 | Manager  | Standard LogDNA Member | Reader |
 |-------------------------------------------------------------------------|----------|------------------------|--------|
-| `Create and delete ingestion keys through the LogDNA web UI`            | Yes      | No                     | No     |
-| `Create and delete service keys through the LogDNA web UI`              | Yes      | No                     | No     |
-| `Add LogDNA log sources`                                                | Yes      | No                     | No     |
-| `Configure archiving`                                                   | Yes      | No                     | No     |
-| `Manage parsing`                                                        | Yes      | No                     | No     |
-| `Define exclusion rules`                                                | Yes      | No                     | No     |
-| `Create and delete categories`                                          | Yes      | No                     | No     |
-| `Manage how views and dashboards are grouped in categories`             | Yes      | No                     | No     |
-| `View service keys through the LogDNA web UI`                           | Yes      | No                     | No     |
-| `Export log data`                                                       | Yes      | Yes                    | No     |
-| `View service keys`                                                     | Yes      | Yes                    | No     |
-| `Configure alerts`                                                      | Yes      | Yes                    | No     |
-| `View usage`                                                            | Yes      | Yes                    | No     |
-| `Create views`                                                          | Yes      | Yes                    | No     |
-| `Create dashboards`                                                     | Yes      | Yes                    | No     |
-| `Configure user preferences in the LogDNA web UI`                       | Yes      | Yes                    | Yes    |
-| `Filter and search data`                                                | Yes      | Yes                    | Yes    |
-| `Use views to monitor events`                                           | Yes      | Yes                    | Yes    |
-| `Use dashboards to monitor events`                                      | Yes      | Yes                    | Yes    |
+| `Create and delete ingestion keys through the LogDNA web UI`            | ![Checkmark icon](../../icons/checkmark-icon.svg) |   |      |
+| `Create and delete service keys through the LogDNA web UI`              | ![Checkmark icon](../../icons/checkmark-icon.svg)      |                      |     |
+| `Add LogDNA log sources`                                                | ![Checkmark icon](../../icons/checkmark-icon.svg)      | No                     | No     |
+| `Configure archiving`                                                   | ![Checkmark icon](../../icons/checkmark-icon.svg)      | No                     | No     |
+| `Manage parsing`                                                        | ![Checkmark icon](../../icons/checkmark-icon.svg)      | No                     | No     |
+| `Define exclusion rules`                                                | ![Checkmark icon](../../icons/checkmark-icon.svg)      | No                     | No     |
+| `Create and delete categories`                                          | ![Checkmark icon](../../icons/checkmark-icon.svg)      | No                     | No     |
+| `Manage how views and dashboards are grouped in categories`             | ![Checkmark icon](../../icons/checkmark-icon.svg)      | No                     | No     |
+| `View service keys through the LogDNA web UI`                           | ![Checkmark icon](../../icons/checkmark-icon.svg)      | No                     | No     |
+| `Export log data`                                                       | ![Checkmark icon](../../icons/checkmark-icon.svg)      | ![Checkmark icon](../../icons/checkmark-icon.svg)                   | No     |
+| `View service keys`                                                     | ![Checkmark icon](../../icons/checkmark-icon.svg)      | ![Checkmark icon](../../icons/checkmark-icon.svg)                    | No     |
+| `Configure alerts`                                                      | ![Checkmark icon](../../icons/checkmark-icon.svg)      | ![Checkmark icon](../../icons/checkmark-icon.svg)                    | No     |
+| `View usage`                                                            | ![Checkmark icon](../../icons/checkmark-icon.svg)      | ![Checkmark icon](../../icons/checkmark-icon.svg)                   | No     |
+| `Create views`                                                          | ![Checkmark icon](../../icons/checkmark-icon.svg)      | ![Checkmark icon](../../icons/checkmark-icon.svg)                    | No     |
+| `Create dashboards`                                                     | ![Checkmark icon](../../icons/checkmark-icon.svg)      | ![Checkmark icon](../../icons/checkmark-icon.svg)                    | No     |
+| `Configure user preferences in the LogDNA web UI`                       | ![Checkmark icon](../../icons/checkmark-icon.svg)      | ![Checkmark icon](../../icons/checkmark-icon.svg)                    | ![Checkmark icon](../../icons/checkmark-icon.svg)    |
+| `Filter and search data`                                                | ![Checkmark icon](../../icons/checkmark-icon.svg)      | ![Checkmark icon](../../icons/checkmark-icon.svg)                    | ![Checkmark icon](../../icons/checkmark-icon.svg)    |
+| `Use views to monitor events`                                           | ![Checkmark icon](../../icons/checkmark-icon.svg)      | ![Checkmark icon](../../icons/checkmark-icon.svg)                    | ![Checkmark icon](../../icons/checkmark-icon.svg)    |
+| `Use dashboards to monitor events`                                      | ![Checkmark icon](../../icons/checkmark-icon.svg)      | ![Checkmark icon](../../icons/checkmark-icon.svg)                    | ![Checkmark icon](../../icons/checkmark-icon.svg)    |
 {: caption="Table 2. IAM service roles and actions" caption-side="top"}
 
 
 The **manager** service role maps directly to the LogDNA admin role.
 {: note}
 
+
+| Column 1 | Column 2 | Column 3 | Column 4 |
+|-----|-----|-----|-----|
+|  | ![Checkmark icon](../../icons/checkmark-icon.svg) |  | ![Checkmark icon](../../icons/checkmark-icon.svg) |
+| Cll | ![Checkmark icon](../../icons/checkmark-icon.svg) |  | ![Checkmark icon](../../icons/checkmark-icon.svg) |
+|  | ![Checkmark icon](../../icons/checkmark-icon.svg) | ![Checkmark icon](../../icons/checkmark-icon.svg) | ![Checkmark icon](../../icons/checkmark-icon.svg) |
+{: row-headers}
+{: class="comparison-table"}
+{: caption="Table comparison. ADD DESCRIPTION OF TABLE HERE" caption-side="top"}
+{: summary="This table has row and column headers. The row headers identify the service. The column headers indentify where that service is located. To understand where a service is located in the table, navigate to the row, and find the for the location you are interested in."}
 
 
 
