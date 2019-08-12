@@ -36,8 +36,8 @@ List of locations where {{site.data.keyword.cloud_notm}} services are enabled to
 The following table shows the locations where automatic collection of Cloud Foundry (CF) logs is enabled. You can monitor these logs through the {{site.data.keyword.la_full_notm}}  instance that is configured with the **service platform logs** in the same location where the CF resource is available.
 
 | Service                                                       | `Dallas (us-south)` | 
-|---------------------------------------------------------------|---------------------|
-| Cloud Foundry (CF)                                            | `YES`               |
+|---------------------------------------------------------------|:--------------------:|
+| Cloud Foundry (CF)                                            | ![Checkmark icon](../../icons/checkmark-icon.svg)              |
 {: caption="Table 1. Cloud Foundry in America" caption-side="top"}
 {: #cs-cfapps-table-1}
 {: tab-title="America"}
@@ -46,8 +46,8 @@ The following table shows the locations where automatic collection of Cloud Foun
 {: row-headers}
 
 | Service                                                       | `Tokyo (jp-tok)` |
-|---------------------------------------------------------------|------------------|
-| Cloud Foundry (CF)                                            | `YES`            |
+|---------------------------------------------------------------|:----------------:|
+| Cloud Foundry (CF)                                            | ![Checkmark icon](../../icons/checkmark-icon.svg)            |
 {: caption="Table 2. Cloud Foundry in Asia Pacific" caption-side="top"}
 {: #cs-cfapps-table-2}
 {: tab-title="Asia Pacific"}
@@ -56,8 +56,8 @@ The following table shows the locations where automatic collection of Cloud Foun
 {: row-headers}
 
 | Service                                                       | `Frankfurt (eu-de)` | `London (eu-gb)` |
-|---------------------------------------------------------------|---------------------|------------------|
-| Cloud Foundry (CF)                                            | `YES`               | `YES`            |
+|---------------------------------------------------------------|:-------------------:|:----------------:|
+| Cloud Foundry (CF)                                            | ![Checkmark icon](../../icons/checkmark-icon.svg) | ![Checkmark icon](../../icons/checkmark-icon.svg)  |
 {: caption="Table 3. Cloud Foundry in Europe" caption-side="top"}
 {: #cs-cfapps-table-3}
 {: tab-title="Europe"}
@@ -74,8 +74,8 @@ The following table shows the locations where automatic collection of Cloud Foun
 The following tables list the locations where automatic collection of database service logs is enabled. You can monitor logs through the Log Analysis instance that is available in the same location as your database resources, if you enable 1 instance in this location to host service platform logs. For locations where you can provision a service instance but the {{site.data.keyword.la_full_notm}} service is not available, specific detail about the location where you can monitor those logs is specified in each case.
 
 | Service                                                         | `Dallas (us-south)` | `Dallas (us-east)`  |
-|-----------------------------------------------------------------|---------------------|---------------------|
-| {{site.data.keyword.cloudant_short_notm}}                       | `Yes (beta)`        | `NO`                |
+|-----------------------------------------------------------------|:-------------------:|---------------------|
+| {{site.data.keyword.cloudant_short_notm}}                       | ![Checkmark icon](../../icons/checkmark-icon.svg) `(beta)`        | ![Uncheckmark icon](../../icons/uncheckmark-icon.svg)                |
 | {{site.data.keyword.databases-for-elasticsearch_full_notm}}     | `YES`               | `NO`                | 
 | {{site.data.keyword.databases-for-etcd_full_notm}}              | `YES`               | `NO`                |
 | {{site.data.keyword.databases-for-mongodb_full_notm}}           | `YES`               | `NO`                |
@@ -90,7 +90,7 @@ The following tables list the locations where automatic collection of database s
 {: row-headers}
 
 | Service                                                         | `Tokyo (jp-tok)` |`Sydney (au-syd)` | `Seoul 01 (seo01)`       | `Chennai 01 (che01)`     |
-|-----------------------------------------------------------------|------------------|------------------|--------------------------|--------------------------|
+|-----------------------------------------------------------------|------------------|------------------|:-------------------------|:-------------------------|
 | {{site.data.keyword.cloudant_short_notm}}                       | `NO`             | `NO`             | `NO`                     | `NO`                     |
 | {{site.data.keyword.databases-for-elasticsearch_full_notm}}     | `YES`            | `NO`             | `Logs are available through the Log Analysis Tokyo instance` | `Logs are available through the Log Analysis Tokyo instance` |
 | {{site.data.keyword.databases-for-etcd_full_notm}}              | `YES`            | `NO`             | `Logs are available through the Log Analysis Tokyo instance` | `Logs are available through the Log Analysis Tokyo instance` |
