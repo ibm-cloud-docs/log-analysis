@@ -24,7 +24,7 @@ subcollection: logdnaat
 # Endpoints
 {: #endpoints}
 
-Review the connectivity options for interacting with {{site.data.keyword.la_full_notm}}.
+Review the connectivity options for interacting with {{site.data.keyword.la_full}}.
 {:shortdesc}
 
 
@@ -58,7 +58,7 @@ The following table shows the API endpoints:
 {: caption="Table 1. Lists of public API endpoints for interacting with {{site.data.keyword.la_full_notm}} over {{site.data.keyword.cloud_notm}}'s public network" caption-side="top"}
 {: #end-api-table-1}
 {: tab-title="Public"}
-{: tab-group="end-ing"}
+{: tab-group="end-api"}
 {: class="simple-tab-table"}
 {: row-headers}
 
@@ -71,7 +71,7 @@ The following table shows the API endpoints:
 {: caption="Table 2. Lists of private API endpoints for interacting with {{site.data.keyword.la_full_notm}} over {{site.data.keyword.cloud_notm}}'s private network" caption-side="top"}
 {: #end-api-table-2}
 {: tab-title="Private"}
-{: tab-group="end-ing"}
+{: tab-group="end-api"}
 {: class="simple-tab-table"}
 {: row-headers}
 
