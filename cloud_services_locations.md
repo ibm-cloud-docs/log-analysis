@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019
-lastupdated: "2019-08-09"
+lastupdated: "2019-08-12"
 
 keywords: LogDNA, IBM, Log Analysis, logging, services
 
@@ -71,7 +71,7 @@ The following table shows the locations where automatic collection of Cloud Foun
 ## Platform: Database services
 {: #cs_locations_database}
 
-The following tables list the locations where automatic collection of database service logs is enabled. You can monitor logs through the Log Analysis instance that is available in the same location as your database resources, if you enable 1 instance in this location to host service platform logs. For locations where you can provision a service instance but the {{site.data.keyword.la_full_notm}} service is not available, specific detail about the location where you can monitor those logs is specified in each case.
+The following tables list the locations where automatic collection of database service logs is enabled. You can monitor logs through the Log Analysis instance that is available in the same location as your database resources, if you enable 1 instance in this location to host service platform logs. For locations where you can provision a service instance but the {{site.data.keyword.la_full_notm}} service is not available, specific detail about the location where you can monitor those logs is provided in each case.
 
 | Service                                                         | `Dallas (us-south)` | `Dallas (us-east)`  |
 |-----------------------------------------------------------------|:-------------------:|:-------------------:|
@@ -125,7 +125,7 @@ The following tables list the locations where automatic collection of database s
 ## Platform: Security services
 {: #cs_locations_security}
 
-The following tables list the locations where automatic collection of security service logs is enabled. You can monitor logs through the Log Analysis instance that is available in the same location as your security resources, if you enable 1 instance in this location to host service platform logs. For locations where you can provision a service instance but the {{site.data.keyword.la_full_notm}} service is not available, specific detail about the location where you can monitor those logs is specified in each case.
+The following tables list the locations where automatic collection of security service logs is enabled. You can monitor logs through the Log Analysis instance that is available in the same location as your security resources, if you enable 1 instance in this location to host service platform logs. For locations where you can provision a service instance but the {{site.data.keyword.la_full_notm}} service is not available, specific detail about the location where you can monitor those logs is provided in each case.
 
 
 | Service                                                         | `Dallas (us-south)` | `Dallas (us-east)`                   |

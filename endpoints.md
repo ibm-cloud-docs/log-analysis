@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019
-lastupdated: "2019-09-09"
+lastupdated: "2019-08-12"
 
 keywords: IBM Cloud, LogDNA, Activity Tracker, endpoints
 
@@ -56,9 +56,10 @@ The following table shows the API endpoints:
 | `London (eu-gb)`         | `https://api.eu-gb.logging.cloud.ibm.com`          |
 | `Tokyo (jp-tok)`         | `https://api.jp-tok.logging.cloud.ibm.com`         |
 {: caption="Table 1. Lists of public API endpoints for interacting with {{site.data.keyword.la_full_notm}} over {{site.data.keyword.cloud_notm}}'s public network" caption-side="top"}
-{: #table1}
+{: #end-api-table-1}
 {: tab-title="Public"}
-{: class="comparison-tab-table"}
+{: tab-group="end-ing"}
+{: class="simple-tab-table"}
 {: row-headers}
 
 | Region                   | Private Endpoint                                       |
@@ -68,9 +69,10 @@ The following table shows the API endpoints:
 | `London (eu-gb)`         | `https://api.private.eu-gb.logging.cloud.ibm.com`      |
 | `Tokyo (jp-tok)`         | `https://api.private.jp-tok.logging.cloud.ibm.com`     |
 {: caption="Table 2. Lists of private API endpoints for interacting with {{site.data.keyword.la_full_notm}} over {{site.data.keyword.cloud_notm}}'s private network" caption-side="top"}
-{: #table1}
+{: #end-api-table-2}
 {: tab-title="Private"}
-{: class="comparison-tab-table"}
+{: tab-group="end-ing"}
+{: class="simple-tab-table"}
 {: row-headers}
 
 
@@ -88,9 +90,10 @@ The following table shows the ingestion endpoints:
 | `London (eu-gb)`         | `https://logs.eu-gb.logging.cloud.ibm.com`          |
 | `Tokyo (jp-tok)`         | `https://logs.jp-tok.logging.cloud.ibm.com`         |
 {: caption="Table 3. Lists of public ingestion endpoints for interacting with {{site.data.keyword.la_full_notm}} over {{site.data.keyword.cloud_notm}}'s public network" caption-side="top"}
-{: #table2}
+{: #end-ing-table-3}
 {: tab-title="Public"}
-{: class="comparison-tab-table"}
+{: tab-group="end-ing"}
+{: class="simple-tab-table"}
 {: row-headers}
 
 | Region                   | Private Endpoint                                       |
@@ -100,9 +103,10 @@ The following table shows the ingestion endpoints:
 | `London (eu-gb)`         | `https://logs.private.eu-gb.logging.cloud.ibm.com`     |
 | `Tokyo (jp-tok)`         | `https://logs.private.jp-tok.logging.cloud.ibm.com`    |
 {: caption="Table 4. Lists of private ingestion endpoints for interacting with {{site.data.keyword.la_full_notm}} over {{site.data.keyword.cloud_notm}}'s private network" caption-side="top"}
-{: #table2}
+{: #end-ing-table-4}
 {: tab-title="Private"}
-{: class="comparison-tab-table"}
+{: tab-group="end-ing"}
+{: class="simple-tab-table"}
 {: row-headers}
 
 
