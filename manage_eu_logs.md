@@ -24,10 +24,8 @@ subcollection: LogDNA
 # Managing logs for EU-supported resources
 {: #manage_eu_logs}
 
-Across every industry, organizations require tighter controls and visibility into where their data is stored and processed in the {{site.data.keyword.cloud}}. If you are an organization in the European Union (EU) that needs to comply with EU law, check out this topic. 
+Across every industry, organizations require tighter controls and visibility into where their data is stored and processed in the {{site.data.keyword.cloud}}. To manage logs that are generated in your **EU-supported account** by using the {{site.data.keyword.la_full_notm}} service, consider the following information:
 {:shortdesc}
-
-To manage logs that are generated in your **EU-supported account** by using the {{site.data.keyword.la_full_notm}} service, consider the following information:
 
 1. You must provision 1 {{site.data.keyword.la_full_notm}} instance in the `EU-DE (Frankfurt)` location. 
 

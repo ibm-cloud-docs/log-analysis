@@ -107,9 +107,8 @@ Use the following table to identify the service roles that you can grant a user 
 | `Define exclusion rules`                                                | ![Checkmark icon](../../icons/checkmark-icon.svg) |                      |     |
 | `Create and delete categories`                                          | ![Checkmark icon](../../icons/checkmark-icon.svg) |                     |     |
 | `Manage how views and dashboards are grouped in categories`             | ![Checkmark icon](../../icons/checkmark-icon.svg) |                     |    |
-| `View service keys through the LogDNA web UI`                           | ![Checkmark icon](../../icons/checkmark-icon.svg) |                     |      |
-| `Export log data`                                                       | ![Checkmark icon](../../icons/checkmark-icon.svg) | ![Checkmark icon](../../icons/checkmark-icon.svg)                   |      |
-| `View service keys`                                                     | ![Checkmark icon](../../icons/checkmark-icon.svg)      | ![Checkmark icon](../../icons/checkmark-icon.svg)                    |     |
+ `Export log data`                                                       | ![Checkmark icon](../../icons/checkmark-icon.svg) | ![Checkmark icon](../../icons/checkmark-icon.svg)                   |      |
+| `View service keys through the LogDNA web UI`                                                     | ![Checkmark icon](../../icons/checkmark-icon.svg)      | ![Checkmark icon](../../icons/checkmark-icon.svg)                    |     |
 | `Configure alerts`                                                      | ![Checkmark icon](../../icons/checkmark-icon.svg)      | ![Checkmark icon](../../icons/checkmark-icon.svg)                    |    |
 | `View usage`                                                            | ![Checkmark icon](../../icons/checkmark-icon.svg)      | ![Checkmark icon](../../icons/checkmark-icon.svg)                   |      |
 | `Create views`                                                          | ![Checkmark icon](../../icons/checkmark-icon.svg)      | ![Checkmark icon](../../icons/checkmark-icon.svg)                    |      |

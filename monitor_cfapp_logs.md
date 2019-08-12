@@ -52,12 +52,7 @@ To configure an instance from the Observability dashboard in the {{site.data.key
 ## Configuring a CF app to forward logs to a custom LogDNA instance by using Syslog drains
 {: #monitor_cfapp_logs}
 
-You can configure a Cloud Foundry (CF) application to stream application logs to an instance of the the {{site.data.keyword.la_full_notm}} service. You can configure a secure connection or a TLS connection.
-
-CF Syslog Drain Release. CF syslog drain release is a Bosh release that works in conjunction with Loggregator to bind applications to syslog readers. It can be independently scaled to support large numbers of User Provided syslog drains.
-
-
-**Note:** Currently, {{site.data.keyword.la_full_notm}} does not have automatic integration with Cloud Foundry. However, you can leverage a feature of Cloud Foundry to redirect the syslog output to capture logs and forward them to your {{site.data.keyword.la_short}} instance. 
+You can configure a Cloud Foundry (CF) application, running in the {{site.data.keyword.cloud_notm}} or outside the {{site.data.keyword.cloud_notm}}, to stream application logs to an instance of the the {{site.data.keyword.la_full_notm}} service. You can configure a secure connection or a TLS connection between the CF app and the logging instance.
 
 To send CF logs to a {{site.data.keyword.la_short}} instance, consider the following information:
 * In the {{site.data.keyword.la_short}} instance, you must provision a syslog port. 
@@ -65,42 +60,28 @@ To send CF logs to a {{site.data.keyword.la_short}} instance, consider the follo
 
 
 
-## Before you begin
-{: #cf_prereqs}
-
-The steps that are provided through this tutorial assume that you will be working in the US-South region. 
-
-Read about {{site.data.keyword.la_full_notm}}. For more information, see [About](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-about#about).
+### Before you begin
+{: #monitor_cfapp_logs_prereqs}
 
 Use a user ID that is a member or an owner of an {{site.data.keyword.cloud_notm}} account. To get an {{site.data.keyword.cloud_notm}} user ID, go to: [Registration ![External link icon](../../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com/login){:new_window}.
 
-Your {{site.data.keyword.IBM_notm}}ID must have assigned IAM policies for each of the following resources: 
+Your {{site.data.keyword.IBM_notm}}ID must have assigned IAM policies for each of the following resources. For example, to work in the US-south region and in the default resource group, you need the following permissions: 
 
 | Resource                             | Scope of the access policy | Role    | Region    | Information                  |
 |--------------------------------------|----------------------------|---------|-----------|------------------------------|
 | Resource group **Default**           |  Resource group            | Viewer  | us-south  | This policy is required to allow the user to see service instances in the Default resource group.    |
 | {{site.data.keyword.la_full_notm}} service |  Resource group      | Editor  | us-south  | This policy is required to allow the user to provision and administer the {{site.data.keyword.la_full_notm}} service in the Default resource group.   |
-{: caption="Table 1. List of IAM policies required to complete the tutorial" caption-side="top"} 
+{: caption="Table 1. List of IAM policies" caption-side="top"} 
 
-Your {{site.data.keyword.IBM_notm}}ID must have the **developer** assigned for the Cloud Foundry space where the CF application is running.
+Your {{site.data.keyword.IBM_notm}}ID must have the **developer** role assigned for the Cloud Foundry space where the CF application is running.
 
 You must install the {{site.data.keyword.cloud_notm}} CLI. For more information, see [Installing the {{site.data.keyword.cloud_notm}} CLI](/docs/cli?topic=cloud-cli-ibmcloud-cli#ibmcloud-cli). This CLI includes the CF CLI.
 
 You must have a CF app deployed and running.
 
 
-## Objectives
-{: #cf_objectives}
-
-In this tutorial, you can learn how to configure a CF application to send logs to a logging instance. In particular, you will:
-
-- Provision an {{site.data.keyword.la_full_notm}} instance. 
-- Configure the CF app to forward logs to the logging instance. 
-- Open the LogDNA dashboard to find your logs. 
-
-
-## Step1: Provision an {{site.data.keyword.la_full_notm}} instance
-{: #cf_step1}
+### Step1: Provision an {{site.data.keyword.la_full_notm}} instance
+{: #monitor_cfapp_logs_step1}
 
 To provision a service instance of {{site.data.keyword.la_full_notm}} through the {{site.data.keyword.cloud_notm}} console, complete the following steps:
 
@@ -127,11 +108,11 @@ To provision an instance through the CLI, see [Provisioning an instance through 
 
 
 
-## Step 2: Provision a syslog port in the logging instance
-{: #cf_step2}
+### Step 2: Provision a syslog port in the logging instance
+{: #monitor_cfapp_logs_step2}
 
-### 1. Launch the LogDNA web UI
-{: #cf_step2_1}
+#### 1. Launch the LogDNA web UI
+{: #monitor_cfapp_logs_step2_1}
 
 You launch the web UI within the context of an {{site.data.keyword.la_full_notm}} instance, from the {{site.data.keyword.cloud_notm}} UI. 
 
@@ -154,8 +135,8 @@ Complete the following steps to launch the web UI:
 The web UI opens.
 
 
-### 2. Provision a port
-{: #cf_step2_2}
+#### 2. Provision a port
+{: #monitor_cfapp_logs_step2_2}
 
 From the LogDNA web UI, complete the following steps:
 
@@ -166,8 +147,8 @@ From the LogDNA web UI, complete the following steps:
 A port is displayed. Copy the port. 
 
 
-## Step 3: Configure a user-provided service instance for your CF app
-{: #cf_step3}
+### Step 3: Configure a user-provided service instance for your CF app
+{: #monitor_cfapp_logs_step3}
 
 Complete the following steps:
 
@@ -240,8 +221,8 @@ Complete the following steps:
     {: screen}
 
 
-## Step 4: Verify that CF app logs are displayed through the LogDNA web UI
-{: #cf_step4}
+### Step 4: Verify that CF app logs are displayed through the LogDNA web UI
+{: #monitor_cfapp_logs_step4}
 
 Launch the LogDNA web UI. Then, search for your CF application logs. For more information, see [Filtering logs](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-view_logs#view_logs_step5).
 
