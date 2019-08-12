@@ -45,9 +45,9 @@ The following table shows the locations where automatic collection of Cloud Foun
 {: class="simple-tab-table"}
 {: row-headers}
 
-| Service                                                       | `Tokyo (jp-tok)` |
-|---------------------------------------------------------------|:----------------:|
-| Cloud Foundry (CF)                                            | ![Checkmark icon](../../icons/checkmark-icon.svg)            |
+| Service                                                       | `Tokyo (jp-tok)`                                  | `Sydney (au-syd)` |
+|---------------------------------------------------------------|:-------------------------------------------------:|:------------------|
+| Cloud Foundry (CF)                                            | ![Checkmark icon](../../icons/checkmark-icon.svg) | `Logs are available through the Log Analysis Tokyo instance` |
 {: caption="Table 2. Cloud Foundry in Asia Pacific" caption-side="top"}
 {: #cs-cfapps-table-2}
 {: tab-title="Asia Pacific"}
@@ -64,7 +64,6 @@ The following table shows the locations where automatic collection of Cloud Foun
 {: tab-group="cs_cfapps"}
 {: class="simple-tab-table"}
 {: row-headers}
-
 
 
 
