@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2019
-lastupdated: "2019-06-03"
+lastupdated: "2019-08-12"
 
 keywords: LogDNA, IBM, Log Analysis, logging instance, enable, service logs
 
@@ -28,6 +28,7 @@ To view logs from platform services in your account, you must configure {{site.d
 {:shortdesc}
 
 You can have multiple {{site.data.keyword.la_full_notm}} instances in a location. However, only 1 instance in a location (region) can be configured to receive logs from [enabled services](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-cloud_services) in that {{site.data.keyword.cloud_notm}} location.
+{: important}
 
 
 ## Configuring platform services logs through the Observability dashboard
@@ -43,17 +44,14 @@ To configure an instance from the Observability dashboard in the {{site.data.key
 
 3. Select **Logging**, then click **Configure platform services logs**. 
 
-4. Choose which LogDNA instance will recieve logs from enabled services on the cloud platform.
+4. Select a [region](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-regions). 
 
-5. Select a [location](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-regions). 
+5. Choose which LogDNA instance will recieve logs from enabled services on that location. [Learn more about the services that are enabled to send logs to {{site.data.keyword.la_full_notm}}.](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-cloud_services)
 
-6. Select an instance.
-
-7. Click **Save**. 
+6. Click **Save**. 
 
 The main *Observability* page opens.
 
 The instance that you choose to receive service logs shows the flag **Platform services logs**.
 
-For more information about the services that are enabled to send logs to {{site.data.keyword.la_full_notm}}, see [Cloud services](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-cloud_services).
 
