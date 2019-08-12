@@ -99,7 +99,7 @@ Use the following table to identify the service roles that you can grant a user 
 
 | Actions                                                                 | Manager  | Standard LogDNA Member | Reader |
 |-------------------------------------------------------------------------|----------|------------------------|--------|
-| `Create and delete ingestion keys through the LogDNA web UI`            | ![Checkmark icon](../../icons/checkmark-icon.svg) |   |      |
+| `Create and delete ingestion keys through the LogDNA web UI`            | ![Checkmark icon](../../icons/check.png) | ![Error icon](../../icons/error.png)  | ![Error icon](../../icons/error.png)     |
 | `Create and delete service keys through the LogDNA web UI`              | ![Checkmark icon](../../icons/checkmark-icon.svg)      |                      |     |
 | `Add LogDNA log sources`                                                | ![Checkmark icon](../../icons/checkmark-icon.svg)      | No                     | No     |
 | `Configure archiving`                                                   | ![Checkmark icon](../../icons/checkmark-icon.svg)      | No                     | No     |
