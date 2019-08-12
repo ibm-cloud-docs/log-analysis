@@ -43,6 +43,7 @@ Review the connectivity options for interacting with {{site.data.keyword.la_full
         </dd>
 </dl>
 
+[Learn more.](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-network)
 
 ## API endpoints
 {: #endpoints_api}
