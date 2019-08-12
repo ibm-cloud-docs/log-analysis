@@ -29,13 +29,62 @@ subcollection: LogDNA
 In {{site.data.keyword.cloud}} public, you can monitor logs from Cloud Foundry (CF) resources that run in the {{site.data.keyword.cloud_notm}} or outside the {{site.data.keyword.cloud_notm}} by using the {{site.data.keyword.la_full_notm}} service. You can view, filter, search, and analyze these logs through the web UI for a number of days that is determined by the plan of your logging instance. You can also configure archiving, and have access to those logs through the archived files.
 {:shortdesc}
 
-You have different options to collect and forward logs to an instance of the {{site.data.keyword.la_full_notm}} service:
-* You can configure 1 instance of the {{site.data.keyword.la_full_notm}} service per region with the flag **service platform logs**. This instance collects infrastructure and application logs for any CF apps that run on that same region.
-* You can configure a CF user provided service (CUPS) for each CF app to monitor your CF app logs through a {{site.data.keyword.la_full_notm}} instance.
-
 
 Add graph ( Cloud Foundry (CF) infrastructure, from CF apps that run in the {{site.data.keyword.cloud_notm}} or on-prem, and from requests made to your apps through internal components of CF and stream them to the {{site.data.keyword.la_full_notm}} service. )
 
+The following table outlines the different methods that you can use to collect and monitor CF logs when you use the {{site.data.keyword.la_full_notm}} service in {{site.data.keyword.cloud_notm}}:
+
+| CF resource              | Through the service platform logs logging instance | Through a custom logging instance via syslog       |
+|--------------------------|:--------------------------------------------------:|:--------------------------------------------------:|
+| `CF infrastructure logs` | ![Checkmark icon](../../icons/checkmark-icon.svg)  | `NO`                                               |
+| `CF app logs`            | ![Checkmark icon](../../icons/checkmark-icon.svg)  | ![Checkmark icon](../../icons/checkmark-icon.svg)  |
+{: caption="Table 1. Information about the methods that can be adopted to monitor CF resource logs in {{site.data.keyword.cloud_notm}} public" caption-side="top"}
+{: #end-api-table-1}
+{: tab-title="Public"}
+{: tab-group="cf-app"}
+{: class="simple-tab-table"}
+{: row-headers}
+
+| CF resource              | Through the service platform logs logging instance | Through a custom logging instance via syslog       |
+|--------------------------|:--------------------------------------------------:|:--------------------------------------------------:|
+| `CF infrastructure logs` | `NO`                                               | `NO`                                               |
+| `CF app logs`            | `NO`                                               | ![Checkmark icon](../../icons/checkmark-icon.svg)  |
+{: caption="Table 2. Information about the methods that can be adopted to monitor CF resource logs in {{site.data.keyword.cloud_notm}} dedicated" caption-side="top"}
+{: #end-api-table-2}
+{: tab-title="Dedicated"}
+{: tab-group="cf-app"}
+{: class="simple-tab-table"}
+{: row-headers}
+
+| CF resource              | Through the service platform logs logging instance | Through a custom logging instance via syslog       |                                     
+|--------------------------|:--------------------------------------------------:|:--------------------------------------------------:|
+| `CF infrastructure logs` | `NO`                                               | `NO`                                               |
+| `CF app logs`            | `NO`                                               | ![Checkmark icon](../../icons/checkmark-icon.svg)  |
+{: caption="Table 3. Information about the methods that can be adopted to monitor CF resource logs in {{site.data.keyword.cloud_notm}} on-premisses" caption-side="top"}
+{: #end-api-table-1}
+{: tab-title="Outside {{site.data.keyword.cloud_notm}}"}
+{: tab-group="cf-app"}
+{: class="simple-tab-table"}
+{: row-headers}
+
+
+
+
+## Choosing a method to monitor CF resource logs
+{: #monitor_cfapp_logs_public_options}
+
+You have different options to collect and forward logs to an instance of the {{site.data.keyword.la_full_notm}} service:
+* You can configure 1 instance of the {{site.data.keyword.la_full_notm}} service per region with the flag **service platform logs**. This instance collects infrastructure and application logs for any CF apps that run on that same region.
+* You can configure a CF user provided service (CUPS) for each CF app that you want to monitor through a custom {{site.data.keyword.la_full_notm}} instance.
+
+| Comparison                                    | Through the service platform logs logging instance in a region | Through a custom logging instance via syslog       |
+|:----------------------------------------------|:--------------------------------------------------------------:|:--------------------------------------------------:|
+| `Automatic collection of infrastructure logs` | ![Checkmark icon](../../icons/checkmark-icon.svg)              | `NO`                                               |
+| `Automatic collection of CF app logs`         | ![Checkmark icon](../../icons/checkmark-icon.svg)              | ![Checkmark icon](../../icons/checkmark-icon.svg)  |
+| `Load balanced ingestion requests`            | ![Checkmark icon](../../icons/checkmark-icon.svg)              | `NO`                                               |
+| `Single point of failure at ingestion`        | `NO`                                                           | ![Checkmark icon](../../icons/checkmark-icon.svg)  |
+| `Higher throughput at ingestion`              | ![Checkmark icon](../../icons/checkmark-icon.svg)              | `NO`                                               |
+{: caption="Table 4. Information about the methods that can be adopted to monitor CF resource logs in {{site.data.keyword.cloud_notm}} on-premisses" caption-side="top"}
 
 
 ## Monitor CF resources that are hosted in {{site.data.keyword.cloud_notm}} public
