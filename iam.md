@@ -125,15 +125,3 @@ The **manager** service role maps directly to the LogDNA admin role.
 {: note}
 
 
-| Column 1 | Column 2 | Column 3 | Column 4 |
-|-----|-----|-----|-----|
-|  | ![Checkmark icon](../../icons/checkmark-icon.svg) |  | ![Checkmark icon](../../icons/checkmark-icon.svg) |
-| Cll | ![Checkmark icon](../../icons/checkmark-icon.svg) |  | ![Checkmark icon](../../icons/checkmark-icon.svg) |
-|  | ![Checkmark icon](../../icons/checkmark-icon.svg) | ![Checkmark icon](../../icons/checkmark-icon.svg) | ![Checkmark icon](../../icons/checkmark-icon.svg) |
-{: row-headers}
-{: class="comparison-table"}
-{: caption="Table comparison. ADD DESCRIPTION OF TABLE HERE" caption-side="top"}
-{: summary="This table has row and column headers. The row headers identify the service. The column headers indentify where that service is located. To understand where a service is located in the table, navigate to the row, and find the for the location you are interested in."}
-
-
-

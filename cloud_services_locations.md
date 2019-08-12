@@ -74,14 +74,14 @@ The following table shows the locations where automatic collection of Cloud Foun
 The following tables list the locations where automatic collection of database service logs is enabled. You can monitor logs through the Log Analysis instance that is available in the same location as your database resources, if you enable 1 instance in this location to host service platform logs. For locations where you can provision a service instance but the {{site.data.keyword.la_full_notm}} service is not available, specific detail about the location where you can monitor those logs is specified in each case.
 
 | Service                                                         | `Dallas (us-south)` | `Dallas (us-east)`  |
-|-----------------------------------------------------------------|:-------------------:|---------------------|
-| {{site.data.keyword.cloudant_short_notm}}                       | ![Checkmark icon](../../icons/checkmark-icon.svg) `(beta)`        | ![Uncheckmark icon](../../icons/uncheckmark-icon.svg)                |
-| {{site.data.keyword.databases-for-elasticsearch_full_notm}}     | `YES`               | `NO`                | 
-| {{site.data.keyword.databases-for-etcd_full_notm}}              | `YES`               | `NO`                |
-| {{site.data.keyword.databases-for-mongodb_full_notm}}           | `YES`               | `NO`                |
-| {{site.data.keyword.databases-for-postgresql_full_notm}}        | `YES`               | `NO`                |
-| {{site.data.keyword.messages-for-rabbitmq_full_notm}}           | `YES`               | `NO`                |
-| {{site.data.keyword.databases-for-redis_full_notm}}             | `YES`               | `NO`                |
+|-----------------------------------------------------------------|:-------------------:|:-------------------:|
+| {{site.data.keyword.cloudant_short_notm}}                       | ![Checkmark icon](../../icons/checkmark-icon.svg) `(beta)`        | `NO`                |
+| {{site.data.keyword.databases-for-elasticsearch_full_notm}}     | ![Checkmark icon](../../icons/checkmark-icon.svg)               | `NO`                | 
+| {{site.data.keyword.databases-for-etcd_full_notm}}              | ![Checkmark icon](../../icons/checkmark-icon.svg)               | `NO`                |
+| {{site.data.keyword.databases-for-mongodb_full_notm}}           | ![Checkmark icon](../../icons/checkmark-icon.svg)               | `NO`                |
+| {{site.data.keyword.databases-for-postgresql_full_notm}}        | ![Checkmark icon](../../icons/checkmark-icon.svg)`               | `NO`                |
+| {{site.data.keyword.messages-for-rabbitmq_full_notm}}           | ![Checkmark icon](../../icons/checkmark-icon.svg)               | `NO`                |
+| {{site.data.keyword.databases-for-redis_full_notm}}             | ![Checkmark icon](../../icons/checkmark-icon.svg)               | `NO`                |
 {: caption="Table 4. Database services integration in America's locations" caption-side="top"}
 {: #cs-dbs-table-1}
 {: tab-title="America"}
@@ -89,15 +89,15 @@ The following tables list the locations where automatic collection of database s
 {: class="simple-tab-table"}
 {: row-headers}
 
-| Service                                                         | `Tokyo (jp-tok)` |`Sydney (au-syd)` | `Seoul 01 (seo01)`       | `Chennai 01 (che01)`     |
-|-----------------------------------------------------------------|------------------|------------------|:-------------------------|:-------------------------|
-| {{site.data.keyword.cloudant_short_notm}}                       | `NO`             | `NO`             | `NO`                     | `NO`                     |
-| {{site.data.keyword.databases-for-elasticsearch_full_notm}}     | `YES`            | `NO`             | `Logs are available through the Log Analysis Tokyo instance` | `Logs are available through the Log Analysis Tokyo instance` |
-| {{site.data.keyword.databases-for-etcd_full_notm}}              | `YES`            | `NO`             | `Logs are available through the Log Analysis Tokyo instance` | `Logs are available through the Log Analysis Tokyo instance` |
-| {{site.data.keyword.databases-for-mongodb_full_notm}}           | `YES`            | `NO`             | `Logs are available through the Log Analysis Tokyo instance` | `Logs are available through the Log Analysis Tokyo instance` |
-| {{site.data.keyword.databases-for-postgresql_full_notm}}        | `YES`            | `NO`             | `Logs are available through the Log Analysis Tokyo instance` | `Logs are available through the Log Analysis Tokyo instance` |
-| {{site.data.keyword.messages-for-rabbitmq_full_notm}}           | `YES`            | `NO`             | `Logs are available through the Log Analysis Tokyo instance` | `Logs are available through the Log Analysis Tokyo instance` |
-| {{site.data.keyword.databases-for-redis_full_notm}}             | `YES`            | `NO`             | `Logs are available through the Log Analysis Tokyo instance` | `Logs are available through the Log Analysis Tokyo instance` |
+| Service                                                         | `Tokyo (jp-tok)`   |`Sydney (au-syd)` | `Seoul 01 (seo01)`       | `Chennai 01 (che01)`     |
+|-----------------------------------------------------------------|:------------------:|:----------------:|:-------------------------|:-------------------------|
+| {{site.data.keyword.cloudant_short_notm}}                       | `NO`               | `NO`             | `NO`                     | `NO`                     |
+| {{site.data.keyword.databases-for-elasticsearch_full_notm}}     | ![Checkmark icon](../../icons/checkmark-icon.svg)   | `NO`             | `Logs are available through the Log Analysis Tokyo instance` | `Logs are available through the Log Analysis Tokyo instance` |
+| {{site.data.keyword.databases-for-etcd_full_notm}}              | ![Checkmark icon](../../icons/checkmark-icon.svg)   | `NO`             | `Logs are available through the Log Analysis Tokyo instance` | `Logs are available through the Log Analysis Tokyo instance` |
+| {{site.data.keyword.databases-for-mongodb_full_notm}}           | ![Checkmark icon](../../icons/checkmark-icon.svg)    | `NO`             | `Logs are available through the Log Analysis Tokyo instance` | `Logs are available through the Log Analysis Tokyo instance` |
+| {{site.data.keyword.databases-for-postgresql_full_notm}}        | ![Checkmark icon](../../icons/checkmark-icon.svg)    | `NO`             | `Logs are available through the Log Analysis Tokyo instance` | `Logs are available through the Log Analysis Tokyo instance` |
+| {{site.data.keyword.messages-for-rabbitmq_full_notm}}           | ![Checkmark icon](../../icons/checkmark-icon.svg)    | `NO`             | `Logs are available through the Log Analysis Tokyo instance` | `Logs are available through the Log Analysis Tokyo instance` |
+| {{site.data.keyword.databases-for-redis_full_notm}}             | ![Checkmark icon](../../icons/checkmark-icon.svg)    | `NO`             | `Logs are available through the Log Analysis Tokyo instance` | `Logs are available through the Log Analysis Tokyo instance` |
 {: caption="Table 5. Database services integration in AP locations" caption-side="top"}
 {: #cs-dbs-table-2}
 {: tab-title="Asia Pacific"}
@@ -106,14 +106,14 @@ The following tables list the locations where automatic collection of database s
 {: row-headers}
 
 | Service                                                       |`Frankfurt (eu-de)`  | `London (eu-gb)` | `Oslo 01 (osl01)`         |
-|---------------------------------------------------------------|---------------------|------------------|---------------------------|
+|---------------------------------------------------------------|:-------------------:|:----------------:|:--------------------------|
 | {{site.data.keyword.cloudant_short_notm}}                     | `NO`                | `NO`             | `NO`                      |
-| {{site.data.keyword.databases-for-elasticsearch_full_notm}}   | `NO`                | `YES`            | `Logs are available through the Log Analysis London instance` |
-| {{site.data.keyword.databases-for-etcd_full_notm}}            | `NO`                | `YES`            | `Logs are available through the Log Analysis London instance` |
-| {{site.data.keyword.databases-for-mongodb_full_notm}}         | `NO`                | `YES`            | `Logs are available through the Log Analysis London instance` | 
-| {{site.data.keyword.databases-for-postgresql_full_notm}}      | `NO`                | `YES`            | `Logs are available through the Log Analysis London instance` |
-| {{site.data.keyword.messages-for-rabbitmq_full_notm}}         | `NO`                | `YES`            | `Logs are available through the Log Analysis London instance` |
-| {{site.data.keyword.databases-for-redis_full_notm}}           | `NO`                | `YES`            | `Logs are available through the Log Analysis London instance` |
+| {{site.data.keyword.databases-for-elasticsearch_full_notm}}   | `NO`                | ![Checkmark icon](../../icons/checkmark-icon.svg)            | `Logs are available through the Log Analysis London instance` |
+| {{site.data.keyword.databases-for-etcd_full_notm}}            | `NO`                | ![Checkmark icon](../../icons/checkmark-icon.svg)            | `Logs are available through the Log Analysis London instance` |
+| {{site.data.keyword.databases-for-mongodb_full_notm}}         | `NO`                | ![Checkmark icon](../../icons/checkmark-icon.svg)            | `Logs are available through the Log Analysis London instance` | 
+| {{site.data.keyword.databases-for-postgresql_full_notm}}      | `NO`                | ![Checkmark icon](../../icons/checkmark-icon.svg)            | `Logs are available through the Log Analysis London instance` |
+| {{site.data.keyword.messages-for-rabbitmq_full_notm}}         | `NO`                | ![Checkmark icon](../../icons/checkmark-icon.svg)            | `Logs are available through the Log Analysis London instance` |
+| {{site.data.keyword.databases-for-redis_full_notm}}           | `NO`                | ![Checkmark icon](../../icons/checkmark-icon.svg)            | `Logs are available through the Log Analysis London instance` |
 {: caption="Table 6. Database services integration in Europe locations" caption-side="top"}
 {: #cs-dbs-table-3}
 {: tab-title="Europe"}
@@ -130,8 +130,8 @@ The following tables list the locations where automatic collection of security s
 
 | Service                                                         | `Dallas (us-south)` | `Dallas (us-east)`                   |
 |-----------------------------------------------------------------|---------------------|--------------------------------------|
-| {{site.data.keyword.cloudcerts_full_notm}}                      | `YES`               | `NO`                                 |            
-| {{site.data.keyword.keymanagementservicelong}}                  | `YES`               | `Logs are available through the Log Analysis Dallas (us-south) instance` |
+| {{site.data.keyword.cloudcerts_full_notm}}                      | ![Checkmark icon](../../icons/checkmark-icon.svg)               | `NO`                                 |            
+| {{site.data.keyword.keymanagementservicelong}}                  | ![Checkmark icon](../../icons/checkmark-icon.svg)               | `Logs are available through the Log Analysis Dallas (us-south) instance` |
 {: caption="Table 7. Security services integration in America's locations" caption-side="top"}
 {: #cs-sec-table-1}
 {: tab-title="America"}
@@ -140,9 +140,9 @@ The following tables list the locations where automatic collection of security s
 {: row-headers}
 
 | Service                                                         | `Tokyo (jp-tok)` |`Sydney (au-syd)`           |
-|-----------------------------------------------------------------|------------------|----------------------------|
-| {{site.data.keyword.cloudcerts_full_notm}}                      | `YES`            | `NO`                       |
-| {{site.data.keyword.keymanagementservicelong}}                  | `YES`            | `Logs are available through the Log Analysis Tokyo instance`   |
+|-----------------------------------------------------------------|:----------------:|:---------------------------|
+| {{site.data.keyword.cloudcerts_full_notm}}                      | ![Checkmark icon](../../icons/checkmark-icon.svg)            | `NO`                       |
+| {{site.data.keyword.keymanagementservicelong}}                  | ![Checkmark icon](../../icons/checkmark-icon.svg)            | `Logs are available through the Log Analysis Tokyo instance`   |
 {: caption="Table 8. Security services integration in AP locations" caption-side="top"}
 {: #cs-sec-table-2}
 {: tab-title="Asia Pacific"}
@@ -151,9 +151,9 @@ The following tables list the locations where automatic collection of security s
 {: row-headers}
 
 | Service                                                       |`Frankfurt (eu-de)`  | `London (eu-gb)` | 
-|---------------------------------------------------------------|---------------------|------------------|
-| {{site.data.keyword.cloudcerts_full_notm}}                    | `YES`               | `NO`             |
-| {{site.data.keyword.keymanagementservicelong}}                | `YES`               | `NO`             |
+|---------------------------------------------------------------|:-------------------:|:----------------:|
+| {{site.data.keyword.cloudcerts_full_notm}}                    | ![Checkmark icon](../../icons/checkmark-icon.svg)               | `NO`             |
+| {{site.data.keyword.keymanagementservicelong}}                | ![Checkmark icon](../../icons/checkmark-icon.svg)               | `NO`             |
 {: caption="Table 9. Security services  integration in Europe locations" caption-side="top"}
 {: #cs-sec-table-3}
 {: tab-title="Europe"}
