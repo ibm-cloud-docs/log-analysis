@@ -30,7 +30,7 @@ You can configure the LogDNA agent to connect to the logging instance through th
 
 
 
-## Choosing a network endpoint
+## Choosing a service endpoint
 {: #network_endpoints}
 
 You can configure a LogDNA agent to connect to an {{site.data.keyword.la_full_notm}} instance through the public network or through the private network. By default, the agent connects through the public network.
@@ -38,7 +38,7 @@ You can configure a LogDNA agent to connect to an {{site.data.keyword.la_full_no
 The type of network defines the level of isolation and security that is configured to move workloads between cloud-based resources in your account. 
 
 Some factors that you must consider when you must decide which network to choose are:
-* Corporate requirements on how services and applications can access cloud-based services in your account
+* Corporate requirements on how services and applications can access Cloud-based services in your account
 * Security on production workloads
 * Industry compliance regulations
 
@@ -48,20 +48,45 @@ For example, you might have the following requirements when you are working in t
 
 When you have these requirements, you should move from the public network to the private network. You should consider connecting the LogDNA agent over the private network. 
 
-You can enable virtual routing and forwarding (VRF) to move IP routing for your account and all of its resources into a separate routing table. If VRF is enabled, you can then enable {{site.data.keyword.cloud_notm}} service endpoints to connect directly to resources without using the public network. To configure an agent to send logs by using a private endpoint, you must [enable virtual routing and forwarding (VRF)](/docs/account?topic=account-vrf-service-endpoint) for your account. Once the account is VRF and service endpoint enabled, the LogDNA agent can be configured to use the private network by using the [Private Endpoint](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-endpoints) as the ingestion URL.
+
+### Using private endpoints
+{: #network_endpoints_private}
+
+To configure your LogDNA agent to use private endpoints, you must enable the following features in your account:
+
+1. Virtual routing and forwarding (VRF)
+
+    You can enable virtual routing and forwarding (VRF) to move IP routing for your account and all of its resources into a separate routing table. 
+    
+    [Learn more about how to enable VRF in your account](/docs/account?topic=account-vrf-service-endpoint#vrf).
+
+2. Service endpoints
+
+    After VRF is enabled, you can enable {{site.data.keyword.cloud_notm}} service endpoints to connect directly to resources without using the public network. Run the following command:
+
+    ```
+    ibmcloud account update --service-endpoint-enable true
+    ```
+    {: codeblock}
+
+    [Learn more about how to enable service endpoints in your account](/docs/account?topic=account-vrf-service-endpoint#service-endpoint).
+
+ Once the account is VRF and service endpoint enabled, you can configure the LogDNA agent to use the private network by using the [Private Endpoint](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-endpoints) as the ingestion URL. Notice that when you configure the agent to send logs through the public network, the environment where the agent is running requires internet access to use the public endpoint.
+
+Consider the following information when you work with private endpoints:
 * Private endpoints are not accessible from the public internet. 
 * All traffic is routed to the {{site.data.keyword.cloud_notm}} private network. 
 * Services like {{site.data.keyword.la_full_notm}} are no longer served on an internet routable IP address.
 
-Notice that when you configure the agent to send logs through the public network, the environment where the agent is running requires internet access to use the public endpoint.
 
 
 
-### Limitations
+
+### Limitations using private endpoints
 {: #network_endpoints_limitations}
 
 Consider the following limitations:
-* Ingestion endpoints of type `syslog-a` and `syslog-u` are not currently supported on the Cloud Service Endpoint (CSE) network. 
+* Ingestion endpoints of type `syslog-tcp (syslog-a)` and `syslog-udp (syslog-u)` are not currently supported on the Cloud Service Endpoint (CSE) network. 
 * The LogDNA web UI is not currently supported on the CSE network.
 
 

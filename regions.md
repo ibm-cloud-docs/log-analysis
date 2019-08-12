@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019
-lastupdated: "2019-07-18"
+lastupdated: "2019-08-09"
 
 keywords: IBM Cloud, LogDNA, Activity Tracker, regions
 subcollection: logdnaat
@@ -27,6 +27,14 @@ subcollection: logdnaat
 {:shortdesc}
 
 
+![The image shows the locations where the {{site.data.keyword.la_full_notm}} service is available.](images/world-map_min.svg)
+{: caption="Figure 1. Displays the regions where you can create and manage {{site.data.keyword.la_full_notm}} resources." caption-side="bottom"}
+
+You can create {{site.data.keyword.la_full_notm}} resources in one of the supported {{site.data.keyword.cloud_notm}} locations, which represent the geographic area where your {{site.data.keyword.la_full_notm}} requests are handled and processed. 
+
+
+The following table lists the locations where the service is available:
+
 | Geography             | Region                   | EU-Supported |
 |-----------------------|--------------------------|--------------|
 | `Asia Pacific`        | `Tokyo (jp-tok)`         | `N/A`        |
@@ -41,6 +49,8 @@ Where
 * `N/A` means feature that is not applicable to that geography.
 
 `(*)` For more information, see [Enabling the EU Supported setting](/docs/account?topic=account-eu-hipaa-supported#bill_eusupported).
+
+
 
 
 
