@@ -26,23 +26,26 @@ subcollection: LogDNA
 # Monitoring Cloud Foundry logs
 {: #monitor_cfapp_logs}
 
-List of {{site.data.keyword.cloud_notm}} services that send logs to {{site.data.keyword.la_full_notm}}:
+In {{site.data.keyword.cloud}} public, you can monitor logs from Cloud Foundry (CF) resources that run in the {{site.data.keyword.cloud_notm}} or outside the {{site.data.keyword.cloud_notm}} by using the {{site.data.keyword.la_full_notm}} service. You can view, filter, search, and analyze these logs through the web UI for a number of days that is determined by the plan of your logging instance. You can also configure archiving, and have access to those logs through the archived files.
 {:shortdesc}
 
-Cloud Foundry aggregates logs for all instances of your apps as well as for requests made to your apps through internal components of Cloud Foundry. For example, when the Cloud Foundry Router forwards a request to an app, the Router records that event in the log stream for that app. Run the following command to access the log stream for an app in the terminal:
-
-$ cf logs YOUR-APP-NAME
-
-If you want to persist more than the limited amount of logging information that Cloud Foundry can buffer, drain these logs to a log management service.
+You have different options to collect and forward logs to an instance of the {{site.data.keyword.la_full_notm}} service:
+* You can configure 1 instance of the {{site.data.keyword.la_full_notm}} service per region with the flag **service platform logs**. This instance collects infrastructure and application logs for any CF apps that run on that same region.
+* You can configure a CF user provided service (CUPS) for each CF app to monitor your CF app logs through a {{site.data.keyword.la_full_notm}} instance.
 
 
-## 
-{: #monitor_cfapp_logs}
-
-a “standard” case (and how you need to configure your LogDNA instance etc) and in which region it is applicable for automatic log forwarding through ELK-Adatper
+Add graph ( Cloud Foundry (CF) infrastructure, from CF apps that run in the {{site.data.keyword.cloud_notm}} or on-prem, and from requests made to your apps through internal components of CF and stream them to the {{site.data.keyword.la_full_notm}} service. )
 
 
 
+## Monitor CF resources that are hosted in {{site.data.keyword.cloud_notm}} public
+{: #monitor_cfapp_logs_public}
+
+CF resources are location bound resources in the {{site.data.keyword.cloud_notm}}. For example, you can have a CF app running in the Dallas (us-south) region. 
+
+In the {{site.data.keyword.cloud_notm}}, you can configure 1 logging instance to collect and host platform services logs in a region. After the instance is provisioned and configured in a region, logs that are generated from enabled services in that region such as CF apps or CF infrastructure are automatically collected and forwarded through the ELK-Adatper. You can monitor logs through this logging instance.
+
+To configure an instance from the Observability dashboard in the {{site.data.keyword.cloud_notm}}, see [Configuring IBM Cloud service logs](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-config_svc_logs).
 
 
 

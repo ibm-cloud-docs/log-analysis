@@ -23,8 +23,6 @@ lastupdated: "2019-07-18"
 You can configure a Cloud Foundry (CF) application to stream application logs to an instance of the the {{site.data.keyword.la_full_notm}} service. You can configure a secure connection or a TLS connection.
 {:shortdesc}
 
-**Note:** Currently, {{site.data.keyword.la_full_notm}} does not have automatic integration with Cloud Foundry. However, you can leverage a feature of Cloud Foundry to redirect the syslog output to capture logs and forward them to your {{site.data.keyword.la_short}} instance. 
-
 To send CF logs to a {{site.data.keyword.la_short}} instance, consider the following information:
 * In the {{site.data.keyword.la_short}} instance, you must provision a syslog port. 
 * In CF, you must define a user-provided service (cups) instance to deliver the logging instance credentials to the CF app, and to trigger streaming of application logs to the syslog port that you enabled in your {{site.data.keyword.la_short}} instance. 

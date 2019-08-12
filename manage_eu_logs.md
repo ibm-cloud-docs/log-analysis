@@ -21,13 +21,13 @@ subcollection: LogDNA
 {:important: .important}
 {:note: .note}
 
-# Managing logs for EU-managed resources
+# Managing logs for EU-supported resources
 {: #manage_eu_logs}
 
-Across every industry, organizations require tighter controls and visibility into where their data is stored and processed in the {{site.data.keyword.cloud}}. If you are looking for guidance on how to monitor logs from EU-managed reasources, check out this topic. 
+Across every industry, organizations require tighter controls and visibility into where their data is stored and processed in the {{site.data.keyword.cloud}}. If you are an organization in the European Union (EU) that needs to comply with EU law, check out this topic. 
 {:shortdesc}
 
-To manage logs that are generated in your **EU-managed account** by using the {{site.data.keyword.la_full_notm}} service, consider the following information:
+To manage logs that are generated in your **EU-supported account** by using the {{site.data.keyword.la_full_notm}} service, consider the following information:
 
 1. You must provision 1 {{site.data.keyword.la_full_notm}} instance in the `EU-DE (Frankfurt)` location. 
 
@@ -81,7 +81,7 @@ Check out the list of {{site.data.keyword.cloud_notm}} resources that automatica
 
 When you configure a LogDNA agent for a resource such as a Kubernetes cluster, you specify to which instance that agent connects. You can only connect 1 agent per resource to a LogDNA instance. 
 
-If you have agents that collect logs from resources, apps and services that run in the {{site.data.keyword.cloud_notm}} or outside the {{site.data.keyword.cloud_notm}}, and that must be EU-managed, you need to configure your agents to forward data to a logging instance in Frankfurt.
+If you have agents that collect logs from resources, apps and services that run in the {{site.data.keyword.cloud_notm}} or outside the {{site.data.keyword.cloud_notm}}, and that must be EU-supported, you need to configure your agents to forward data to a logging instance in Frankfurt.
 
 Learn more about how to [detach an agent](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-detach_agent) from a logging instance and how to [configure an agent](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-config_agent) to forward logs to a specific instance.
 
@@ -94,7 +94,7 @@ Learn more about how to [detach an agent](/docs/services/Log-Analysis-with-LogDN
 
 **Every user that accesses the {{site.data.keyword.la_full_notm}} service in your account must be assigned an access policy with an IAM user role defined.** The policy determines what actions the user can perform within the context of the service or instance you select. The allowable actions are customized and defined as operations that are allowed to be performed on the service. The actions are then mapped to IAM user roles. [Learn more about the IAM user roles for the {{site.data.keyword.la_full_notm}}](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-iam#service).
 
-You might have users across different geographies. However, to comply with EU law, only EU personel can see and access log data from your EU-managed infrastructure, apps, and services. To restrict access to users, you can configure an access group, and define policies that restrict access to those users to the instances that you have configured in Frankfurt.
+You might have users across different geographies. However, to comply with EU law, only EU personel can see and access log data from your EU-supported infrastructure, apps, and services. To restrict access to users, you can configure an access group, and define policies that restrict access to those users to the instances that you have configured in Frankfurt.
 
 ### Grant permissions to users to manage the logging service
 {: #manage_eu_logs_step5-1}
@@ -131,7 +131,7 @@ Notice that users in the account that have permissions to view logs through the 
 
 When you archive logs from a LogDNA instance to a COS bucket, consider the following information:
 * When you provision an instance of the COS service, this instance is a global one in your account. It is not region bound.
-* You must configure a bucket that complies with the EU-Supported and GDPR regulations. For the list of COS EU managed endpoints, see [EU managed endpoints](/docs/services/cloud-object-storage?topic=cloud-object-storage-endpoints#endpoints-eu-managed).
+* You must configure a bucket that complies with the EU-Supported and GDPR regulations. For the list of COS EU-supported endpoints, see [EU-supported endpoints](/docs/services/cloud-object-storage?topic=cloud-object-storage-endpoints#endpoints-eu-managed).
 
     For example, consider the following scenarios:
 
@@ -142,7 +142,7 @@ When you archive logs from a LogDNA instance to a COS bucket, consider the follo
     * For a bucket with **cross region** resiliency, you can create the bucket in the `eu-geo` location. Data is kept within the EU geography across datacenters that are located in Milan, Amsterdam, and Frankfurt.
 
 * You must restrict user access to manage archived log files in these buckets.  
-* Users are responsible for downloading files to EU-managed locations.
+* Users are responsible for downloading files to EU-supported locations.
 
 To learn how to configure archiving for your LogDNA instance, see [Archiving logs](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-archiving).
 
