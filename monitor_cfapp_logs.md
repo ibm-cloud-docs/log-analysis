@@ -1,8 +1,13 @@
 ---
 
 copyright:
-  years:  2018, 2019
-lastupdated: "2019-07-18"
+  years: 2019
+lastupdated: "2019-08-14"
+
+keywords: LogDNA, IBM, Log Analysis, logging, cf
+
+subcollection: LogDNA
+
 
 ---
 
@@ -17,11 +22,37 @@ lastupdated: "2019-07-18"
 {:important: .important}
 {:note: .note}
 
-# Configuring a CF app to forward logs to a custom LogDNA instance
-{: #cf}
+
+# Monitoring Cloud Foundry logs
+{: #monitor_cfapp_logs}
+
+List of {{site.data.keyword.cloud_notm}} services that send logs to {{site.data.keyword.la_full_notm}}:
+{:shortdesc}
+
+Cloud Foundry aggregates logs for all instances of your apps as well as for requests made to your apps through internal components of Cloud Foundry. For example, when the Cloud Foundry Router forwards a request to an app, the Router records that event in the log stream for that app. Run the following command to access the log stream for an app in the terminal:
+
+$ cf logs YOUR-APP-NAME
+
+If you want to persist more than the limited amount of logging information that Cloud Foundry can buffer, drain these logs to a log management service.
+
+
+## 
+{: #monitor_cfapp_logs}
+
+a “standard” case (and how you need to configure your LogDNA instance etc) and in which region it is applicable for automatic log forwarding through ELK-Adatper
+
+
+
+
+
+
+## Configuring a CF app to forward logs to a custom LogDNA instance by using Syslog drains
+{: #monitor_cfapp_logs}
 
 You can configure a Cloud Foundry (CF) application to stream application logs to an instance of the the {{site.data.keyword.la_full_notm}} service. You can configure a secure connection or a TLS connection.
-{:shortdesc}
+
+CF Syslog Drain Release. CF syslog drain release is a Bosh release that works in conjunction with Loggregator to bind applications to syslog readers. It can be independently scaled to support large numbers of User Provided syslog drains.
+
 
 **Note:** Currently, {{site.data.keyword.la_full_notm}} does not have automatic integration with Cloud Foundry. However, you can leverage a feature of Cloud Foundry to redirect the syslog output to capture logs and forward them to your {{site.data.keyword.la_short}} instance. 
 
@@ -217,4 +248,11 @@ Try also some of these tasks:
 - [Configure alerts](https://docs.logdna.com/docs/alerts). 
 
 **Note:** Some of these features require a plan upgrade.
+
+
+
+
+
+
+
 

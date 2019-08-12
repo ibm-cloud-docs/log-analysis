@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2019
-lastupdated: "2019-08-05"
+lastupdated: "2019-08-12"
 
 keywords: LogDNA, IBM, Log Analysis, logging, overview
 
