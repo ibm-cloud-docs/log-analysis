@@ -29,7 +29,7 @@ Across every industry, organizations require tighter controls and visibility int
 
 To manage logs that are generated in your **EU-managed account** by using the {{site.data.keyword.la_full_notm}} service, consider the following information:
 
-1. You must provision 1 {{site.data.keyword.la_full_notm}} instance in the `EU-DE (Frankfurt)` location. (You can only have 1 instance per region.)
+1. You must provision 1 {{site.data.keyword.la_full_notm}} instance in the `EU-DE (Frankfurt)` location. 
 
 2. [You must enable your account to be EU Supported](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-manage_eu_logs#manage_eu_logs_step1), so support is handled by team members in the European Union. 
 
