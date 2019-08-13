@@ -29,7 +29,33 @@ subcollection: LogDNA
 In {{site.data.keyword.cloud}} public, you can monitor logs from Cloud Foundry (CF) resources that run in the {{site.data.keyword.cloud_notm}} or outside the {{site.data.keyword.cloud_notm}} by using the {{site.data.keyword.la_full_notm}} service. You can view, filter, search, and analyze these logs through the web UI for a number of days that is determined by the plan of your logging instance. You can also configure archiving, and have access to those logs through the archived files.
 {:shortdesc}
 
-Add graph ( Cloud Foundry (CF) infrastructure, from CF apps that run in the {{site.data.keyword.cloud_notm}} or on-prem, and from requests made to your apps through internal components of CF and stream them to the {{site.data.keyword.la_full_notm}} service. )
+|                          |
+|--------------------------|
+| ![Monitor CF resources in IBM Cloud Public](images/components-cf-public.png "Monitor CF resources in IBM Cloud Public") |
+{: caption="Methods that can be adopted to monitor CF resource logs in {{site.data.keyword.cloud_notm}} public" caption-side="top"}
+{: #end-api-img-2}
+{: tab-title="Monitor CF resources in IBM Cloud Public"}
+{: tab-group="cf-img"}
+{: class="simple-tab-table"}
+
+|                          |
+|--------------------------|
+| ![Monitor CF resources in IBM Cloud Dedicated](images/components-cf-dedicated.png "Monitor CF resources in IBM Cloud Dedicated") |
+{: caption="Methods that can be adopted to monitor CF resource logs in {{site.data.keyword.cloud_notm}} dedicated" caption-side="top"}
+{: #end-api-img-1}
+{: tab-title="Monitor CF resources in IBM Cloud Dedicated"}
+{: tab-group="cf-img"}
+{: class="simple-tab-table"}
+
+|                          |
+|--------------------------|
+| ![Monitor CF resources outside the IBM Cloud Public](images/components-cf-outside-ibm-cloud.png "Monitor CF resources outside the IBM Cloud Public") |
+{: caption="Methods that can be adopted to monitor CF resource logs outside the {{site.data.keyword.cloud_notm}}" caption-side="top"}
+{: #end-api-img-3}
+{: tab-title="Monitor CF resources outside the IBM Cloud Public"}
+{: tab-group="cf-img"}
+{: class="simple-tab-table"}
+
 
 The following table outlines the different methods that you can use to collect and monitor CF logs when you use the {{site.data.keyword.la_full_notm}} service in {{site.data.keyword.cloud_notm}}:
 
