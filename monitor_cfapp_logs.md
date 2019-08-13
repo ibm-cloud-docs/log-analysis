@@ -33,7 +33,7 @@ Add graph ( Cloud Foundry (CF) infrastructure, from CF apps that run in the {{si
 
 The following table outlines the different methods that you can use to collect and monitor CF logs when you use the {{site.data.keyword.la_full_notm}} service in {{site.data.keyword.cloud_notm}}:
 
-| CF resource              | Through the service platform logs logging instance in a region | Through a custom logging instance via syslog       |
+| CF resource              | Through the service platform logs logging instance in a region | Through a custom logging instance by using Syslog drains       |
 |--------------------------|:--------------------------------------------------:|:--------------------------------------------------:|
 | `CF infrastructure logs` | ![Checkmark icon](../../icons/checkmark-icon.svg)  | `NO`                                               |
 | `CF app logs`            | ![Checkmark icon](../../icons/checkmark-icon.svg)  | ![Checkmark icon](../../icons/checkmark-icon.svg)  |
@@ -44,7 +44,7 @@ The following table outlines the different methods that you can use to collect a
 {: class="simple-tab-table"}
 {: row-headers}
 
-| CF resource              | Through the service platform logs logging instance in a region | Through a custom logging instance via syslog       |
+| CF resource              | Through the service platform logs logging instance in a region | Through a custom logging instance by using Syslog drains       |
 |--------------------------|:--------------------------------------------------:|:--------------------------------------------------:|
 | `CF infrastructure logs` | `NO`                                               | `NO`                                               |
 | `CF app logs`            | `NO`                                               | ![Checkmark icon](../../icons/checkmark-icon.svg)  |
@@ -55,7 +55,7 @@ The following table outlines the different methods that you can use to collect a
 {: class="simple-tab-table"}
 {: row-headers}
 
-| CF resource              | Through the service platform logs logging instance in a region | Through a custom logging instance via syslog       |                                     
+| CF resource              | Through the service platform logs logging instance in a region | Through a custom logging instance by using Syslog drains       |                                     
 |--------------------------|:--------------------------------------------------:|:--------------------------------------------------:|
 | `CF infrastructure logs` | `NO`                                               | `NO`                                               |
 | `CF app logs`            | `NO`                                               | ![Checkmark icon](../../icons/checkmark-icon.svg)  |
@@ -75,7 +75,7 @@ You have different options to collect and forward logs to an instance of the {{s
 * You can configure 1 instance of the {{site.data.keyword.la_full_notm}} service per region with the flag **service platform logs**. This instance collects infrastructure and application logs for any CF apps that run on that same region.
 * You can configure a custom user provided service (CUPS) for each CF app that you want to monitor through a custom {{site.data.keyword.la_full_notm}} instance. The CUPS service sends logs via a syslog link to a LogDNA syslog endpoint and port. This option is only available if the CF app send logs to STDOUT and STDERR. If the CF app is configured to send logs via syslog and not to STDOUT and STDERR, this option is not supported.
 
-| Comparison                                    | Through the logging instance that hosts service platform logs in a region | Through a custom logging instance       |
+| Comparison                                    | Through the logging instance that hosts service platform logs in a region | Through a custom logging instance by using Syslog drains       |
 |:----------------------------------------------|:--------------------------------------------------------------:|:--------------------------------------------------:|
 | `Automatic collection of infrastructure logs` | ![Checkmark icon](../../icons/checkmark-icon.svg)              | `NO`                                               |
 | `Automatic collection of CF app logs`         | ![Checkmark icon](../../icons/checkmark-icon.svg)              | ![Checkmark icon](../../icons/checkmark-icon.svg)  |
