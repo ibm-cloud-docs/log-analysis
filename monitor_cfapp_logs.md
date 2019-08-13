@@ -29,6 +29,10 @@ subcollection: LogDNA
 In {{site.data.keyword.cloud}} public, you can monitor logs from Cloud Foundry (CF) resources that run in the {{site.data.keyword.cloud_notm}} or outside the {{site.data.keyword.cloud_notm}} by using the {{site.data.keyword.la_full_notm}} service. You can view, filter, search, and analyze these logs through the web UI for a number of days that is determined by the plan of your logging instance. You can also configure archiving, and have access to those logs through the archived files.
 {:shortdesc}
 
+If your CF resources run on {{site.data.keyword.cloud_notm}} public, you can choose to automatically collect these logs and monitor them through the {{site.data.keyword.la_full_notm}} instance that is provisioned in the same region, and that is enabled to host service platform logs. Alternatively, you can choose to configure a custom user provided (CUPS) service for your app, so system and application logs are collected and streamed to a custom logging instance. 
+
+If your CF resources run on {{site.data.keyword.cloud_notm}} dedicated or outside the {{site.data.keyword.cloud_notm}}, you can configure a custom user provided (CUPS) service for your app, so system and application logs are collected and streamed to a custom logging instance.
+
 |                          |
 |--------------------------|
 | ![Monitor CF resources in IBM Cloud Public](images/components-cf-public.png "Monitor CF resources in IBM Cloud Public") |
@@ -57,7 +61,8 @@ In {{site.data.keyword.cloud}} public, you can monitor logs from Cloud Foundry (
 {: class="simple-tab-table"}
 
 
-The following table outlines the different methods that you can use to collect and monitor CF logs when you use the {{site.data.keyword.la_full_notm}} service in {{site.data.keyword.cloud_notm}}:
+
+The following table summarizes the different methods that you can use to collect and monitor CF logs when you use the {{site.data.keyword.la_full_notm}} service in {{site.data.keyword.cloud_notm}}:
 
 | CF resource              | Through the service platform logs logging instance in a region | Through a custom logging instance by using Syslog drains       |
 |--------------------------|:--------------------------------------------------:|:--------------------------------------------------:|
@@ -65,7 +70,7 @@ The following table outlines the different methods that you can use to collect a
 | `CF app logs`            | ![Checkmark icon](../../icons/checkmark-icon.svg)  | ![Checkmark icon](../../icons/checkmark-icon.svg)  |
 {: caption="Table 1. Information about the methods that can be adopted to monitor CF resource logs in {{site.data.keyword.cloud_notm}} public" caption-side="top"}
 {: #end-api-table-1}
-{: tab-title="Public"}
+{: tab-title="Monitor CF resources in IBM Cloud Public"}
 {: tab-group="cf-app"}
 {: class="simple-tab-table"}
 {: row-headers}
@@ -76,7 +81,7 @@ The following table outlines the different methods that you can use to collect a
 | `CF app logs`            | `NO`                                               | ![Checkmark icon](../../icons/checkmark-icon.svg)  |
 {: caption="Table 2. Information about the methods that can be adopted to monitor CF resource logs in {{site.data.keyword.cloud_notm}} dedicated" caption-side="top"}
 {: #end-api-table-2}
-{: tab-title="Dedicated"}
+{: tab-title="Monitor CF resources in IBM Cloud Dedicated"}
 {: tab-group="cf-app"}
 {: class="simple-tab-table"}
 {: row-headers}
@@ -87,7 +92,7 @@ The following table outlines the different methods that you can use to collect a
 | `CF app logs`            | `NO`                                               | ![Checkmark icon](../../icons/checkmark-icon.svg)  |
 {: caption="Table 3. Information about the methods that can be adopted to monitor CF resource logs in {{site.data.keyword.cloud_notm}} on-premisses" caption-side="top"}
 {: #end-api-table-1}
-{: tab-title="Outside {{site.data.keyword.cloud_notm}}"}
+{: tab-title="Monitor CF resources outside {{site.data.keyword.cloud_notm}}"}
 {: tab-group="cf-app"}
 {: class="simple-tab-table"}
 {: row-headers}
@@ -264,7 +269,7 @@ Launch the LogDNA web UI. Then, search for your CF application logs. For more in
 Try also some of these tasks:
 - [Search logs](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-view_logs#view_logs_step6)
 - [Define views](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-view_logs#view_logs_step7)
-- [Configure alerts](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-alerts). 
+- [Configure alerts](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-alerts)
 
 **Note:** Some of these features require a plan upgrade.
 
