@@ -75,7 +75,7 @@ You have different options to collect and forward logs to an instance of the {{s
 * You can configure 1 instance of the {{site.data.keyword.la_full_notm}} service per region with the flag **service platform logs**. This instance collects infrastructure and application logs for any CF apps that run on that same region.
 * You can configure a custom user provided service (CUPS) for each CF app that you want to monitor through a custom {{site.data.keyword.la_full_notm}} instance. The CUPS service sends logs via a syslog link to a LogDNA syslog endpoint and port. This option is only available if the CF app send logs to STDOUT and STDERR. If the CF app is configured to send logs via syslog and not to STDOUT and STDERR, this option is not supported.
 
-| Comparison                                    | Through the service platform logs logging instance in a region | Through a custom logging instance via syslog       |
+| Comparison                                    | Through the logging instance that hosts service platform logs in a region | Through a custom logging instance       |
 |:----------------------------------------------|:--------------------------------------------------------------:|:--------------------------------------------------:|
 | `Automatic collection of infrastructure logs` | ![Checkmark icon](../../icons/checkmark-icon.svg)              | `NO`                                               |
 | `Automatic collection of CF app logs`         | ![Checkmark icon](../../icons/checkmark-icon.svg)              | ![Checkmark icon](../../icons/checkmark-icon.svg)  |
@@ -84,8 +84,12 @@ You have different options to collect and forward logs to an instance of the {{s
 | `Load balanced ingestion requests`            | ![Checkmark icon](../../icons/checkmark-icon.svg)              | `NO`                                               |
 | `Single point of failure at ingestion`        | `NO`                                                           | ![Checkmark icon](../../icons/checkmark-icon.svg)  |
 | `Higher throughput at ingestion`              | ![Checkmark icon](../../icons/checkmark-icon.svg)              | `NO`                                               |
-{: caption="Table 4. Information about the methods that can be adopted to monitor CF resource logs in {{site.data.keyword.cloud_notm}} on-premisses" caption-side="top"}
+{: caption="Table 4. Information about the methods that can be adopted to monitor CF resource logs in {{site.data.keyword.cloud_notm}}" caption-side="top"}
 
+Another consideration is the restriction that you can apply to users to control access to view logs in a logging instance. You can use [IAM to manage users and their access to view logs](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-iam). 
+* When you use the method of a single logging instance to host playform service logs, all logs from CF resources that run on that region are available for view through the instance. Any user with a service role `viewer` can see any log entries. 
+* When you use the method of sending CF app logs to a custom logging instance, users with a service role `viewer` can only see logs from CF app logs that are configured to stream logs to this logging instance.
+In both cases, users can also view logs from other sources that you might have configured to forward logs to the instance.
 
 ## Monitor CF resources that are hosted in {{site.data.keyword.cloud_notm}} public
 {: #monitor_cfapp_logs_public}
