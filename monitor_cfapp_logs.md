@@ -197,14 +197,14 @@ Complete the following steps:
     To create a CUPS instance without security enabled, run the following command:
 
     ```
-    ibmcloud cf cups SVC_INSTANCE_NAME -l syslog://SYSLOG_ENDPOINT_URL:PORT_NUMBER`
+    ibmcloud cf cups SVC_INSTANCE_NAME -l syslog://SYSLOG_ENDPOINT_URL:PORT_NUMBER
     ```
     {: codeblock}
 
     To create a CUPS instance with TLS enabled, run the following command:
 
     ```
-    ibmcloud cf cups SVC_INSTANCE_NAME -l syslog-tls://SYSLOG_ENDPOINT_URL:PORT_NUMBER`
+    ibmcloud cf cups SVC_INSTANCE_NAME -l syslog-tls://SYSLOG_ENDPOINT_URL:PORT_NUMBER
     ```
     {: codeblock}
 
