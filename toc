@@ -12,6 +12,7 @@ IBM Log Analysis with LogDNA
     network.md
     iam.md
     manage_eu_logs.md
+    monitor_cfapp_logs.md
 
     {: .topicgroup}
     Tutorials
