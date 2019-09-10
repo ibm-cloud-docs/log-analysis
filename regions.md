@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019
-lastupdated: "2019-08-09"
+lastupdated: "2019-09-06"
 
 keywords: IBM Cloud, LogDNA, Activity Tracker, regions
 subcollection: logdnaat
@@ -41,6 +41,7 @@ The following table lists the locations where the service is available:
 | `Europe`              | `Frankfurt (eu-de) (*)`  | `YES`        |
 | `Europe`              | `London (eu-gb)`         | `NO`         |
 | `North America`       | `Dallas (us-south)`      | `N/A`        |
+| `Sydney`              | `Sydney (au-syd)`        | `N/A`        |
 {: caption="Table 1. List of locations where the service is available" caption-side="top"} 
 
 Where
