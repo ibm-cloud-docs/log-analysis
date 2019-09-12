@@ -307,7 +307,7 @@ Complete the following steps to configure archiving of your {{site.data.keyword.
 
 1. [Launch the {{site.data.keyword.la_full_notm}} web UI](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-view_logs#view_logs_step2).
 
-2. Select the **Configuration** icon. Then select **Archiving**. 
+2. Select the **Settings** icon. Then select **Archiving**. 
 
 3. Select **IBM Cloud Object Storage**.
 
