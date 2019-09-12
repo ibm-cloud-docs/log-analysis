@@ -141,7 +141,7 @@ You can configure a Cloud Foundry (CF) application, running in the {{site.data.k
 To send CF logs to a {{site.data.keyword.la_short}} instance, consider the following information:
 * In the {{site.data.keyword.la_short}} instance, you must provision a syslog port in the LogDNA instance where you want to forward logs. 
 * In CF, you must define a custom user-provided service (CUPS) instance to deliver the logging instance credentials to the CF app, and to trigger streaming of application logs to the syslog port that you enabled in your {{site.data.keyword.la_short}} instance. 
-* In the *Platform Logs* {{site.data.keyword.la_short}} instance, you must configure an exclusion rule. [Learn more]().
+* In the *Platform Logs* {{site.data.keyword.la_short}} instance, you must configure an exclusion rule. [Learn more](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-monitor_cfapp_logs#monitor_cfapp_logs_exclude).
 
 
 ### Before you begin
