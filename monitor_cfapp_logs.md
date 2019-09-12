@@ -276,7 +276,7 @@ Try also some of these tasks:
 **Note:** Some of these features require a plan upgrade.
 
 
-## Stop viewing CF logs through the LogDNA instance configured to collect service platform logs
+## Stop viewing CF logs through the LogDNA instance that is configured to collect service platform logs
 {: #monitor_cfapp_logs_exclude}
 
 When you configure a LogDNA instance in a region to collect the service platform logs, CF logs are collected automatically and available through that instance. 
@@ -286,10 +286,12 @@ For example, you might have configured your CF apps to forward logs to custom Lo
 To hide CF logs in the *Platform Logs* LogDNA instance, you must configure a LogDNA exclusion rule on this instance.
 {: important}
 
-Complete the following steps to configure an exclusion rule on the *Platform Logs* LogDNA instance:
+Complete the following steps to configure an exclusion rule on the *Platform Logs* LogDNA instance for each region:
 
-* You need to repeat these steps in any region where you want to stop viewing CF logs through the *Platform Logs* LogDNA instance.
-* You must have **manager** role on that instance to configure exclusion rules.
+You must repeat these steps in any region where you want to stop viewing CF logs through the *Platform Logs* LogDNA instance.
+{: note}
+
+You must have **manager** role on that instance to configure exclusion rules.
 {: note}
 
 1. [Log in to your {{site.data.keyword.cloud_notm}} account ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com/login){:new_window}.
@@ -314,7 +316,10 @@ Complete the following steps to configure an exclusion rule on the *Platform Log
 
 9. In the *Sources* section, select **cloudfoundry**.
 
-10. Check that the option `Preserve these lines for live-tail and alerting` is not selected. **This is important so that no CF logs are visible to users.**
+10. Ensure that the following option is not selected: `Preserve these lines for live-tail and alerting`
+
+    This action ensures that CF logs are not visible to users.
+    {: important}
 
 11. Click **Save**.
 
