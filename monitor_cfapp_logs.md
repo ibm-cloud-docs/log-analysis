@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019
-lastupdated: "2019-08-14"
+lastupdated: "2019-09-12"
 
 keywords: LogDNA, IBM, Log Analysis, logging, cf
 
