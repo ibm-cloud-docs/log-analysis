@@ -212,7 +212,7 @@ Complete the following steps:
 
     *SVC_INSTANCE_NAME* is the name of the CF service instance.
 
-    *SYSLOG_ENDPOINT_URL* is the endpoint URL in the region where the instance is running. For example, for us-south, the URL is: `syslog-a.us-south.logging.cloud.ibm.com`
+    *SYSLOG_ENDPOINT_URL* is the endpoint URL in the region where the instance is running. [List of syslog endpoints](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-endpoints#endpoints_syslog). For example, for us-south, the URL is: `syslog-a.us-south.logging.cloud.ibm.com`
 
     *PORT_NUMBER* is the port number that you provisioned in your logging instance.
 
