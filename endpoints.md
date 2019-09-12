@@ -115,19 +115,37 @@ The following table shows the ingestion endpoints:
 {: row-headers}
 
 
-## Syslog endpoints
+## Syslog public endpoints
 {: #endpoints_syslog}
 
 The following table shows the API endpoints:
 
 | Region                   |  Public Endpoint                                   |
 |--------------------------|----------------------------------------------------|
-| `Dallas (us-south)`      | `syslog-a.us-south.logging.cloud.ibm.com`          |
-| `Frankfurt (eu-de)`      | `syslog-a.eu-de.logging.cloud.ibm.com`             |
-| `London (eu-gb)`         | `syslog-a.eu-gb.logging.cloud.ibm.com`             |
-| `Tokyo (jp-tok)`         | `syslog-a.jp-tok.logging.cloud.ibm.com`            |
-| `Sydney (au-syd)`        | `syslog-a.au-syd.logging.cloud.ibm.com`            |
-{: caption="Table 4. Lists of Syslog endpoints" caption-side="top"}
+| `Dallas (us-south)`      | `syslog://syslog-a.us-south.logging.cloud.ibm.com`          |
+| `Frankfurt (eu-de)`      | `syslog://syslog-a.eu-de.logging.cloud.ibm.com`             |
+| `London (eu-gb)`         | `syslog://syslog-a.eu-gb.logging.cloud.ibm.com`             |
+| `Tokyo (jp-tok)`         | `syslog://syslog-a.jp-tok.logging.cloud.ibm.com`            |
+| `Sydney (au-syd)`        | `syslog://syslog-a.au-syd.logging.cloud.ibm.com`            |
+{: caption="Table 5. Lists of Syslog endpoints" caption-side="top"}
+{: #end-syslog-table-5}
+{: tab-title="Syslog"}
+{: tab-group="end-syslog"}
+{: class="simple-tab-table"}
+{: row-headers}
 
+| Region                   |  Public Endpoint                                   |
+|--------------------------|----------------------------------------------------|
+| `Dallas (us-south)`      | `syslog-tls://syslog-a.us-south.logging.cloud.ibm.com`          |
+| `Frankfurt (eu-de)`      | `syslog-tls://syslog-a.eu-de.logging.cloud.ibm.com`             |
+| `London (eu-gb)`         | `syslog-tls://syslog-a.eu-gb.logging.cloud.ibm.com`             |
+| `Tokyo (jp-tok)`         | `syslog-tls://syslog-a.jp-tok.logging.cloud.ibm.com`            |
+| `Sydney (au-syd)`        | `syslog-tls://syslog-a.au-syd.logging.cloud.ibm.com`            |
+{: caption="Table 6. Lists of Syslog-TLS endpoints" caption-side="top"}
+{: #end-ing-syslog-6}
+{: tab-title="Syslog-TLS"}
+{: tab-group="end-syslog"}
+{: class="simple-tab-table"}
+{: row-headers}
 
 
