@@ -288,5 +288,36 @@ To hide CF logs in the *Platform Logs* LogDNA instance, you must configure a Log
 
 Complete the following steps to configure an exclusion rule on the *Platform Logs* LogDNA instance:
 
+* You need to repeat these steps in any region where you want to stop viewing CF logs through the *Platform Logs* LogDNA instance.
+* You must have **manager** role on that instance to configure exclusion rules.
+{: note}
+
+1. [Log in to your {{site.data.keyword.cloud_notm}} account ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com/login){:new_window}.
+
+2. Click the **Menu** icon ![Menu icon](../icons/icon_hamburger.svg) &gt; **Observability**. 
+
+3. Select **Logging**. 
+
+    The list of instances that are available on {{site.data.keyword.cloud_notm}} is displayed.
+
+4. Select the instance that has the *Platform Logs* flag set in the region. Then, click **View LogDNA**.
+
+    The Web UI opens.
+
+5. Select the **Settings** icon ![Configuration icon](images/admin.png "Admin icon").
+
+6. Select **Usage** &gt; **Exclusion rules**.
+
+7. Click **Add a rule**.
+
+8. Enter a description of the rule. For example, you can enter `Remove all CF logs from Service Platform logs`.
+
+9. In the *Sources* section, select **cloudfoundry**.
+
+10. Check that the option `Preserve these lines for live-tail and alerting` is not selected. **This is important so that no CF logs are visible to users.**
+
+11. Click **Save**.
+
+
 
 
