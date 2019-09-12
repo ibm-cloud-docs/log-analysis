@@ -178,9 +178,9 @@ To provision a service instance of {{site.data.keyword.la_full_notm}} through th
 
 2. Provision a port. From the LogDNA web UI, complete the following steps:
 
-    1. Open the log sources panel on the LogDNA web UI. Select the *Install instructions icon*: ![Install instructions icon](../images/logdna_install.png "Install instructions icon")
+    1. Open the log sources panel on the LogDNA web UI. Select the *Install instructions icon*: ![Install instructions icon](images/logdna_install.png "Install instructions icon")
 
-    2. Select **View platform** &gt; **Cloud Foundry**.
+    2. Select **View Syslog** &gt; **Syslog**.
 
     3. Click **Provision a Syslog port**.  
 
@@ -223,6 +223,9 @@ Complete the following steps:
     ```
     {: screen}
 
+    Notice that if you do not include `syslog://` or `syslog-tls://` in the URL, you get the following error:  *ERR Invalid syslog drain URL: parse failure*.
+    {: important}
+
 2. Bind the service. Run the following command:
 
     ```
@@ -236,7 +239,6 @@ Complete the following steps:
 
     * *SVC_INSTANCE_NAME* is the name of the CF service instance.
 
-    
     A sample command looks as follows:
 
     ```
