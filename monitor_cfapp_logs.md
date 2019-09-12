@@ -139,9 +139,9 @@ To configure an instance from the Observability dashboard in the {{site.data.key
 You can configure a Cloud Foundry (CF) application, running in the {{site.data.keyword.cloud_notm}} or outside the {{site.data.keyword.cloud_notm}}, to stream application logs to an instance of the the {{site.data.keyword.la_full_notm}} service. You can configure a secure connection or a TLS connection between the CF app and the logging instance.
 
 To send CF logs to a {{site.data.keyword.la_short}} instance, consider the following information:
-* In the {{site.data.keyword.la_short}} instance, you must provision a syslog port. 
+* In the {{site.data.keyword.la_short}} instance, you must provision a syslog port in the LogDNA instance where you want to forward logs. 
 * In CF, you must define a custom user-provided service (CUPS) instance to deliver the logging instance credentials to the CF app, and to trigger streaming of application logs to the syslog port that you enabled in your {{site.data.keyword.la_short}} instance. 
-
+* In the *Platform Logs* {{site.data.keyword.la_short}} instance, you must configure an exclusion rule. [Learn more]().
 
 
 ### Before you begin
@@ -276,9 +276,17 @@ Try also some of these tasks:
 **Note:** Some of these features require a plan upgrade.
 
 
+## Stop viewing CF logs through the LogDNA instance configured to collect service platform logs
+{: #monitor_cfapp_logs_exclude}
 
+When you configure a LogDNA instance in a region to collect the service platform logs, CF logs are collected automatically and available through that instance. 
 
+For example, you might have configured your CF apps to forward logs to custom LogDNA instances by using Syslog drains because you have a requirement to isolate logs by environment or by line of business. In this use case, you must configure a LogDNA exclusion rule on the *Platform Logs* LogDNA instance.
 
+To hide CF logs in the *Platform Logs* LogDNA instance, you must configure a LogDNA exclusion rule on this instance.
+{: important}
+
+Complete the following steps to configure an exclusion rule on the *Platform Logs* LogDNA instance:
 
 
 
