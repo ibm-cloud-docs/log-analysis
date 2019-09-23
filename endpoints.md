@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019
-lastupdated: "2019-08-12"
+lastupdated: "2019-09-12"
 
 keywords: IBM Cloud, LogDNA, Activity Tracker, endpoints
 
@@ -56,6 +56,7 @@ The following table shows the API endpoints:
 | `Frankfurt (eu-de)`      | `https://api.eu-de.logging.cloud.ibm.com`          |
 | `London (eu-gb)`         | `https://api.eu-gb.logging.cloud.ibm.com`          |
 | `Tokyo (jp-tok)`         | `https://api.jp-tok.logging.cloud.ibm.com`         |
+| `Sydney (au-syd)`        | `https://api.au-syd.logging.cloud.ibm.com`         |
 {: caption="Table 1. Lists of public API endpoints for interacting with {{site.data.keyword.la_full_notm}} over {{site.data.keyword.cloud_notm}}'s public network" caption-side="top"}
 {: #end-api-table-1}
 {: tab-title="Public"}
@@ -69,6 +70,7 @@ The following table shows the API endpoints:
 | `Frankfurt (eu-de)`      | `https://api.private.eu-de.logging.cloud.ibm.com`      |
 | `London (eu-gb)`         | `https://api.private.eu-gb.logging.cloud.ibm.com`      |
 | `Tokyo (jp-tok)`         | `https://api.private.jp-tok.logging.cloud.ibm.com`     |
+| `Sydney (au-syd)`        | `https://api.private.au-syd.logging.cloud.ibm.com`     |
 {: caption="Table 2. Lists of private API endpoints for interacting with {{site.data.keyword.la_full_notm}} over {{site.data.keyword.cloud_notm}}'s private network" caption-side="top"}
 {: #end-api-table-2}
 {: tab-title="Private"}
@@ -90,6 +92,7 @@ The following table shows the ingestion endpoints:
 | `Frankfurt (eu-de)`      | `https://logs.eu-de.logging.cloud.ibm.com`          |
 | `London (eu-gb)`         | `https://logs.eu-gb.logging.cloud.ibm.com`          |
 | `Tokyo (jp-tok)`         | `https://logs.jp-tok.logging.cloud.ibm.com`         |
+| `Sydney (au-syd)`        | `https://logs.au-syd.logging.cloud.ibm.com`         |
 {: caption="Table 3. Lists of public ingestion endpoints for interacting with {{site.data.keyword.la_full_notm}} over {{site.data.keyword.cloud_notm}}'s public network" caption-side="top"}
 {: #end-ing-table-3}
 {: tab-title="Public"}
@@ -103,6 +106,7 @@ The following table shows the ingestion endpoints:
 | `Frankfurt (eu-de)`      | `https://logs.private.eu-de.logging.cloud.ibm.com`     |
 | `London (eu-gb)`         | `https://logs.private.eu-gb.logging.cloud.ibm.com`     |
 | `Tokyo (jp-tok)`         | `https://logs.private.jp-tok.logging.cloud.ibm.com`    |
+| `Sydney (au-syd)`        | `https://logs.private.au-syd.logging.cloud.ibm.com`    |
 {: caption="Table 4. Lists of private ingestion endpoints for interacting with {{site.data.keyword.la_full_notm}} over {{site.data.keyword.cloud_notm}}'s private network" caption-side="top"}
 {: #end-ing-table-4}
 {: tab-title="Private"}
@@ -111,5 +115,37 @@ The following table shows the ingestion endpoints:
 {: row-headers}
 
 
+## Syslog public endpoints
+{: #endpoints_syslog}
+
+The following table shows the API endpoints:
+
+| Region                   |  Public Endpoint                                   |
+|--------------------------|----------------------------------------------------|
+| `Dallas (us-south)`      | `syslog://syslog-a.us-south.logging.cloud.ibm.com`          |
+| `Frankfurt (eu-de)`      | `syslog://syslog-a.eu-de.logging.cloud.ibm.com`             |
+| `London (eu-gb)`         | `syslog://syslog-a.eu-gb.logging.cloud.ibm.com`             |
+| `Tokyo (jp-tok)`         | `syslog://syslog-a.jp-tok.logging.cloud.ibm.com`            |
+| `Sydney (au-syd)`        | `syslog://syslog-a.au-syd.logging.cloud.ibm.com`            |
+{: caption="Table 5. Lists of Syslog endpoints" caption-side="top"}
+{: #end-syslog-table-5}
+{: tab-title="Syslog"}
+{: tab-group="end-syslog"}
+{: class="simple-tab-table"}
+{: row-headers}
+
+| Region                   |  Public Endpoint                                   |
+|--------------------------|----------------------------------------------------|
+| `Dallas (us-south)`      | `syslog-tls://syslog-a.us-south.logging.cloud.ibm.com`          |
+| `Frankfurt (eu-de)`      | `syslog-tls://syslog-a.eu-de.logging.cloud.ibm.com`             |
+| `London (eu-gb)`         | `syslog-tls://syslog-a.eu-gb.logging.cloud.ibm.com`             |
+| `Tokyo (jp-tok)`         | `syslog-tls://syslog-a.jp-tok.logging.cloud.ibm.com`            |
+| `Sydney (au-syd)`        | `syslog-tls://syslog-a.au-syd.logging.cloud.ibm.com`            |
+{: caption="Table 6. Lists of Syslog-TLS endpoints" caption-side="top"}
+{: #end-ing-syslog-6}
+{: tab-title="Syslog-TLS"}
+{: tab-group="end-syslog"}
+{: class="simple-tab-table"}
+{: row-headers}
 
 

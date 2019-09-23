@@ -53,7 +53,7 @@ A bell icon is displayed with the view to indicate that this view has an alert a
 
 Complete the following steps to configure a preset:
 
-1. Select the **Configuration** icon ![Configuration icon](images/admin.png "Admin icon").
+1. Select the **Settings** icon ![Configuration icon](images/admin.png "Admin icon").
 2. Select **Alerts**.
 3. Select **Add a preset alert**.
 4. Choose a notification channel. 
