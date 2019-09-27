@@ -26,7 +26,11 @@ IBM Log Analysis with LogDNA
     provision.md
     config_svc_logs.md
     remove.md
-    config_agent.md
+
+    {: .topicgroup}
+    Configuring a LogDNA agent
+        config_agent_std_cluster.md
+        config_agent_linux.md
     detach_agent.md
     ingestion_key.md
     alerts.md

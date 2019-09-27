@@ -21,8 +21,8 @@ subcollection: LogDNA
 {:important: .important}
 {:note: .note}
 
-# Configuring a LogDNA agent
-{: #config_agent_linux}
+# Configuring a LogDNA agent for a standard Kubernetes cluster
+{: #config_agent_std_cluster}
 
 The LogDNA agent is responsible for collecting and forwarding logs to your {{site.data.keyword.la_full_notm}} instance. After you provision an instance of {{site.data.keyword.la_full}}, you must configure a LogDNA agent for each log source that you want to monitor.
 {:shortdesc}
@@ -65,7 +65,7 @@ To configure your Kubernetes cluster to forward logs to your LogDNA instance, co
 2. Set the cluster where you want to configure logging as the context for this session.
 
    ```
-   ibmcloud ks cluster-config <cluster_name_or_ID>
+   ibmcloud ks cluster config --cluster <cluster_name_or_ID>
    ```
    {: pre}
 
@@ -137,17 +137,21 @@ The deployment is successful when you see one or more LogDNA pods.
 
 
 
-## Adding tags to a LogDNA agent on a Kubernetes cluster
+## Adding tags at the LogDNA agent level
 {: #config_agent_kube_tags}
 
-Complete the following steps to add tags:
+You can configure tags at the agent level so that all lines that are sent by this agent can be grouped automatically into a group when you filter data in a view.
+
+You can define multiple tags. You separate tags by using commas. The maximum number of characters that you can set to define multiple tags is 80 characters.
+
+Complete the following steps to add tags to a cluster:
 
 1. Set up the cluster environment. Run the following commands:
 
     First, get the command to set the environment variable and download the Kubernetes configuration files.
 
     ```
-    ibmcloud ks cluster-config <cluster_name_or_ID>
+    ibmcloud ks cluster config --cluster <cluster_name_or_ID>
     ```
     {: codeblock}
 
@@ -236,168 +240,98 @@ Complete the following steps to add tags:
     **Note:** If you use *kubectl edit*, changes are applied automatically when you save your modifications.
 
 
-## Configuring a LogDNA agent on Linux Ubuntu or Debian
-{: #config_agent_linux}
 
-To configure your Ubuntu server to send logs to your {{site.data.keyword.la_full_notm}} instance, you must install a `logdna-agent`. The LogDNA agent reads log files from */var/log*, and forwards the log data to your LogDNA instance.
+## Excluding log files through the LogDNA agent
+{: #config_agent_kube_exclude}
 
-To configure your Ubuntu server to forward logs to your LogDNA instance, complete the following steps from an Ubuntu terminal:
+You can stop logs from being forwarded to your logging instance by modifying the LogDNA agent configuration file to exclude any files that you do not want the LogDNA agent to monitor. 
 
-1. Install the LogDNA agent. Run the following commands:
+* You can exclude files that are located in any of the paths that are defined through the **logdir** parameter. 
+* To define the files, you can separate multiple files by using commas. You can use glob patterns. You can also configure specific files.
 
-    ```
-    echo "deb https://repo.logdna.com stable main" | sudo tee /etc/apt/sources.list.d/logdna.list
-    ```
-    {: codeblock}
+Complete the following steps to configure the agent so that only application logs are forwarded and cluster logs are excluded:
 
-    ```
-    wget -O- https://repo.logdna.com/logdna.gpg | sudo apt-key add -
-    ```
-    {: codeblock}
+1. Set up the cluster environment. Run the following commands:
+
+    First, get the command to set the environment variable and download the Kubernetes configuration files.
 
     ```
-    sudo apt-get update
+    ibmcloud ks cluster config --cluster <cluster_name_or_ID>
     ```
     {: codeblock}
 
-    ```
-    sudo apt-get install logdna-agent < "/dev/null"
-    ```
-    {: codeblock}
+    When the download of the configuration files is finished, a command is displayed that you can use to set the path to the local Kubernetes configuration file as an environment variable.
 
-2. Set the ingestion key that the LogDNA agent must use to forward logs to the {{site.data.keyword.la_full_notm}} instance.  
+    Then, copy and paste the command that is displayed in your terminal to set the KUBECONFIG environment variable.
 
-    ```
-    sudo logdna-agent -k INGESTION_KEY
-    ```
-    {: codeblock}
-
-    Where INGESTION_KEY contains the ingestion key active for the {{site.data.keyword.la_full_notm}} instance where you are configuring to forward logs.
-
-3. Set the authentication endpoint. The LogDNA agent uses this host to authenticate and get the token to forward logs. 
-
-    <table>
-      <caption>Commands by region</caption>
-      <tr>
-        <th>Location</th>
-        <th>Command </th>
-
-      </tr>
-      <tr>
-        <td>`Dallas (us-south)`</td>
-        <td>`sudo logdna-agent -s export LOGDNA_APIHOST=api.us-south.logging.cloud.ibm.com`</td>
-      </tr>
-      <tr>
-        <td>`Frankfurt (eu-de)`</td>
-        <td>`sudo logdna-agent -s export LOGDNA_APIHOST=api.eu-de.logging.cloud.ibm.com`</td>
-      </tr>
-      <tr>
-        <td>`London (eu-gb)`</td>
-        <td>`sudo logdna-agent -s export LOGDNA_APIHOST=api.eu-gb.logging.cloud.ibm.com`</td>
-      </tr>
-      <tr>
-        <td>`Tokyo (jp-tok)`</td>
-        <td>`sudo logdna-agent -s export LOGDNA_APIHOST=api.jp-tok.logging.cloud.ibm.com`</td>
-      </tr>
-      <tr>
-        <td>`Seoul (kr-seo)`</td>
-        <td>`sudo logdna-agent -s export LOGDNA_APIHOST=api.kr-seo.logging.cloud.ibm.com`</td>
-      </tr>
-      <tr>
-        <td>`Sydney (au-syd)`</td>
-        <td>`sudo logdna-agent -s export LOGDNA_APIHOST=api.au-syd.logging.cloud.ibm.com`</td>
-      </tr>
-    </table>
-
-4. Set the ingestion endpoint. Choose the public or the private endpoint in a location.
-
-    <table>
-      <caption>Commands by region </caption>
-      <tr>
-        <th>Location</th>
-        <th>Command (By using public endpoints)</th>
-        <th>Command (By using private endpoints)</th>
-      </tr>
-      <tr>
-        <td>`Dallas (us-south)`</td>
-        <td>`sudo logdna-agent -s LOGDNA_LOGHOST=logs.us-south.logging.cloud.ibm.com`</td>
-        <td>`sudo logdna-agent -s LOGDNA_LOGHOST=logs.private.us-south.logging.cloud.ibm.com` </br></br>`export LDLOGHOST=logs.private.us-south.logging.cloud.ibm.com`</td>
-      </tr>
-      <tr>
-        <td>`Frankfurt (eu-de)`</td>
-        <td>`sudo logdna-agent -s LOGDNA_LOGHOST=logs.eu-de.logging.cloud.ibm.com`</td>
-        <td>`sudo logdna-agent -s LOGDNA_LOGHOST=logs.private.eu-de.logging.cloud.ibm.com` </br></br>`export LDLOGHOST=logs.private.eu-de.logging.cloud.ibm.com`</td>
-      </tr>
-      <tr>
-        <td>`London (eu-gb)`</td>
-        <td>`sudo logdna-agent -s LOGDNA_LOGHOST=logs.eu-gb.logging.cloud.ibm.com`</td>
-        <td>`sudo logdna-agent -s LOGDNA_LOGHOST=logs.private.eu-gb.logging.cloud.ibm.com` </br></br>`export LDLOGHOST=logs.private.eu-gb.logging.cloud.ibm.com`</td>
-      </tr>
-      <tr>
-        <td>`Tokyo (jp-tok)`</td>
-        <td>`sudo logdna-agent -s LOGDNA_LOGHOST=logs.jp-tok.logging.cloud.ibm.com`</td>
-        <td>`sudo logdna-agent -s LOGDNA_LOGHOST=logs.private.jp-tok.logging.cloud.ibm.com` </br></br>`export LDLOGHOST=logs.private.jp-tok.logging.cloud.ibm.com`</td>
-      </tr>
-      <tr>
-        <td>`Seoul (kr-seo)`</td>
-        <td>`sudo logdna-agent -s LOGDNA_LOGHOST=logs.kr-seo.logging.cloud.ibm.com`</td>
-        <td>`sudo logdna-agent -s LOGDNA_LOGHOST=logs.private.kr-seo.logging.cloud.ibm.com` </br></br>`export LDLOGHOST=logs.private.kr-seo.logging.cloud.ibm.com`</td>
-      </tr>
-      <tr>
-        <td>`Sydney (au-syd)`</td>
-        <td>`sudo logdna-agent -s LOGDNA_LOGHOST=logs.au-syd.logging.cloud.ibm.com`</td>
-        <td>`sudo logdna-agent -s LOGDNA_LOGHOST=logs.private.au-syd.logging.cloud.ibm.com` </br></br>`export LDLOGHOST=logs.private.au-syd.logging.cloud.ibm.com`</td>
-      </tr>
-    </table>
-
-5. Define more log paths to be monitored. Run the following command:
+2. Generate the configuration file of the agent by running the following command:
 
     ```
-    sudo logdna-agent -d /path/to/log/folders
+    kubectl get daemonset logdna-agent -o=yaml > prod-logdna-agent-ds.yaml
     ```
     {: codeblock}
 
-    By default, **/var/log** is monitored.
-
-6. Optionally, configure the LogDNA agent to tag your hosts.
-
-7. Start the LogDNA agent.
+2. Make changes. Add the section **LOGDNA_EXCLUDE**, and exclude all cluster logs. Add the following section to the yaml file:
 
     ```
-    sudo /etc/init.d/logdna-agent start
+    - name: LOGDNA_EXCLUDE
+      value: /var/log/containers/*_kube-system_*,/var/log/containers/*ibm-observe_*,/var/log/containerd.log,/var/log/kubelet.log,/var/log/syslog,/var/log/ntpstats/*,/var/log/alb/*
     ```
     {: codeblock}
 
-## Adding tags to a LogDNA agent on Linux Ubuntu or Debian
-{: #config_agent-linux_tags}
-
-
-Complete the following steps to add more tags to the LogDNA agent:
-
-1. Verify the LogDNA agent is running.
-
-2. Add one or more tags.
+    You can also exclude logs by namespace. For example, to exclude all of the *kube-system* logs, enter:
 
     ```
-    sudo logdna-agent -t TAG1,TAG2
+    - name: LOGDNA_EXCLUDE
+      value: /var/log/containers/*_kube-system_*
     ```
     {: codeblock}
 
-
-You can also edit the LogDNA configuration file and add tags. The configuration file is located in */etc/logdna.conf*.
-
-1. Edit the file.
+    To exclude all non-container logs, that is, to exclude files as shown in the *All Apps* filter view, enter:
 
     ```
-    sudo update-rc.d logdna-agent defaults
+    - name: LOGDNA_EXCLUDE
+      value: /var/log/!(containers)*
     ```
     {: codeblock}
 
-2. Add tags.
-
-3. Restart the LogDNA agent.
+    To exclude calico logs, enter:
 
     ```
-    sudo /etc/init.d/logdna-agent start
+    - name: LOGDNA_EXCLUDE
+      value: /var/log/containers/calico*
     ```
     {: codeblock}
+
+    To exclude all of the _kube-system_ logs and all non-container logs, enter:
+
+    ```
+    - name: LOGDNA_EXCLUDE
+      value: /var/log/!(containers)*,/var/log/containers/*_kube-system_*
+    ```
+    {: codeblock}
+
+3. Apply the configuration changes. Run the following command:
+
+    ```
+    kubectl apply -f prod-logdna-agent-ds.yaml
+    ```
+    {: codeblock}
+
+4. Get the logdna-agent pods. Run the following command:
+
+    ```
+    kubectl get pods
+    ```
+    {: codeblock}
+
+5. Delete all the logdna pods that are listed in the previous step.
+
+    ```
+    kubectl delete pod PodName
+    ```
+    {: codeblock}
+
+6. Verify that log entries are not showing in the LogDNA web UI.
+
+
