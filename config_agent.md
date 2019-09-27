@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2019
-lastupdated: "2019-07-17"
+lastupdated: "2019-09-27"
 
 keywords: LogDNA, IBM, Log Analysis, logging, config agent
 
@@ -108,6 +108,16 @@ To configure your Kubernetes cluster to forward logs to your LogDNA instance, co
         <td>`Tokyo (jp-tok)`</td>
         <td>`kubectl create -f https://assets.jp-tok.logging.cloud.ibm.com/clients/logdna-agent-ds.yaml`</td>
         <td>`kubectl create -f https://assets.jp-tok.logging.cloud.ibm.com/clients/logdna-agent-ds-private.yaml`</td>
+      </tr>
+      <tr>
+        <td>`Seoul (kr-seo)`</td>
+        <td>`kubectl create -f https://assets.kr-seo.logging.cloud.ibm.com/clients/logdna-agent-ds.yaml`</td>
+        <td>`kubectl create -f https://assets.kr-seo.logging.cloud.ibm.com/clients/logdna-agent-ds-private.yaml`</td>
+      </tr>
+      <tr>
+        <td>`Sydney (au-syd)`</td>
+        <td>`kubectl create -f https://assets.au-syd.logging.cloud.ibm.com/clients/logdna-agent-ds.yaml`</td>
+        <td>`kubectl create -f https://assets.au-syd.logging.cloud.ibm.com/clients/logdna-agent-ds-private.yaml`</td>
       </tr>
     </table>
 
@@ -289,6 +299,14 @@ To configure your Ubuntu server to forward logs to your LogDNA instance, complet
         <td>`Tokyo (jp-tok)`</td>
         <td>`sudo logdna-agent -s export LOGDNA_APIHOST=api.jp-tok.logging.cloud.ibm.com`</td>
       </tr>
+      <tr>
+        <td>`Seoul (kr-seo)`</td>
+        <td>`sudo logdna-agent -s export LOGDNA_APIHOST=api.kr-seo.logging.cloud.ibm.com`</td>
+      </tr>
+      <tr>
+        <td>`Sydney (au-syd)`</td>
+        <td>`sudo logdna-agent -s export LOGDNA_APIHOST=api.au-syd.logging.cloud.ibm.com`</td>
+      </tr>
     </table>
 
 4. Set the ingestion endpoint. Choose the public or the private endpoint in a location.
@@ -319,6 +337,16 @@ To configure your Ubuntu server to forward logs to your LogDNA instance, complet
         <td>`Tokyo (jp-tok)`</td>
         <td>`sudo logdna-agent -s LOGDNA_LOGHOST=logs.jp-tok.logging.cloud.ibm.com`</td>
         <td>`sudo logdna-agent -s LOGDNA_LOGHOST=logs.private.jp-tok.logging.cloud.ibm.com` </br></br>`export LDLOGHOST=logs.private.jp-tok.logging.cloud.ibm.com`</td>
+      </tr>
+      <tr>
+        <td>`Seoul (kr-seo)`</td>
+        <td>`sudo logdna-agent -s LOGDNA_LOGHOST=logs.kr-seo.logging.cloud.ibm.com`</td>
+        <td>`sudo logdna-agent -s LOGDNA_LOGHOST=logs.private.kr-seo.logging.cloud.ibm.com` </br></br>`export LDLOGHOST=logs.private.kr-seo.logging.cloud.ibm.com`</td>
+      </tr>
+      <tr>
+        <td>`Sydney (au-syd)`</td>
+        <td>`sudo logdna-agent -s LOGDNA_LOGHOST=logs.au-syd.logging.cloud.ibm.com`</td>
+        <td>`sudo logdna-agent -s LOGDNA_LOGHOST=logs.private.au-syd.logging.cloud.ibm.com` </br></br>`export LDLOGHOST=logs.private.au-syd.logging.cloud.ibm.com`</td>
       </tr>
     </table>
 
