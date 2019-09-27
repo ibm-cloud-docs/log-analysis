@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2019
-lastupdated: "2019-05-01"
+lastupdated: "2019-09-27"
 
 keywords: LogDNA, IBM, Log Analysis, logging, archive logs, COS, cloud object storage
 
@@ -307,7 +307,7 @@ Complete the following steps to configure archiving of your {{site.data.keyword.
 
 1. [Launch the {{site.data.keyword.la_full_notm}} web UI](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-view_logs#view_logs_step2).
 
-2. Select the **Settings** icon. Then select **Archiving**. 
+2. Select the **Settings** icon ![Configuration icon](images/admin.png "Admin icon"). Then select **Archiving**. 
 
 3. Select **IBM Cloud Object Storage**.
 
@@ -341,6 +341,14 @@ Complete the following steps to configure archiving of your {{site.data.keyword.
 
 
 After you save the configuration, logs are archived once a day.
+
+
+
+## Limitations
+{: #archive_limitations}
+
+* You cannot archive data to a bucket that has a retention policy configured.
+
 
 
 
