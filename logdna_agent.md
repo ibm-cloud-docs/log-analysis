@@ -56,7 +56,8 @@ You can configure tags at the agent level so that all lines that are sent by thi
 * The maximum number of characters that you can set to define multiple tags is 80 characters.
 
 For example, choose any of the following options to find out how to configure tags:
-* 
+* [Adding tags to logs from a Kubernetes cluster](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-adding_tags#adding_tags_kube)
+* [Adding tags to logs from Linux Ubuntu or Debian](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-adding_tags#adding_tags_linux)
 
 
 ## Excluding log files through the LogDNA agent
@@ -67,6 +68,6 @@ You can stop logs from being forwarded to your logging instance by modifying the
 * You can exclude files that are located in any of the paths that are defined through the **logdir** parameter. 
 * To define the files, you can separate multiple files by using commas. You can use glob patterns. You can also configure specific files.
 
-For example, see [](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-config_agent_kube_exclude).
+For example, see [Excluding log files through the LogDNA agent](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-exclude_logs_from_agent).
 
 

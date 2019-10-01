@@ -31,7 +31,7 @@ You can define multiple tags. You separate tags by using commas. The maximum num
 {: note}
 
 
-## Adding tags at the LogDNA agent level
+## Adding tags to logs from a Kubernetes cluster
 {: #adding_tags_kube}
 
 
@@ -132,8 +132,8 @@ Complete the following steps to add tags to a cluster:
 
 
 
-## Adding tags to a LogDNA agent on Linux Ubuntu or Debian
-{: #adding_tags_linuxs}
+## Adding tags to logs from Linux Ubuntu or Debian
+{: #adding_tags_linux}
 
 
 Complete the following steps to add more tags to the LogDNA agent:
