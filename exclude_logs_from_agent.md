@@ -22,7 +22,7 @@ subcollection: LogDNA
 {:note: .note}
 
 # Excluding log files through the LogDNA agent
-{: #config_agent_kube_exclude}
+{: #exclude_logs_from_agent}
 
 You can stop logs from being forwarded to your logging instance by modifying the LogDNA agent configuration file to exclude any files that you do not want the LogDNA agent to monitor. 
 {:shortdesc}
@@ -30,6 +30,12 @@ You can stop logs from being forwarded to your logging instance by modifying the
 
 * You can exclude files that are located in any of the paths that are defined through the **logdir** parameter. 
 * To define the files, you can separate multiple files by using commas. You can use glob patterns. You can also configure specific files.
+{: note}
+
+
+## Excluding log files that are available in a standard Kubernetes cluster
+{: #exclude_logs_from_agent_kube}
+
 
 Complete the following steps to configure the agent so that only application logs are forwarded and cluster logs are excluded:
 

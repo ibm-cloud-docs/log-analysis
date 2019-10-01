@@ -56,7 +56,6 @@ IBM Log Analysis with LogDNA
     Send logs
         ingestion_key.md
         ingest.md
-
     {: .navgroup-end}
 
     {: .navgroup id="reference"}

@@ -21,8 +21,8 @@ subcollection: LogDNA
 {:important: .important}
 {:note: .note}
 
-# Configuring a LogDNA agent
-{: #config_agent}
+# LogDNA agent
+{: #logdna_agent}
 
 
 The LogDNA agent is responsible for collecting and forwarding logs to your {{site.data.keyword.la_full_notm}} instance. After you provision an instance of {{site.data.keyword.la_full}}, you must configure a LogDNA agent for each log source that you want to monitor.
@@ -47,22 +47,26 @@ You can configure the following parameters through the LogDNA agent:
 
 
 ## Adding tags at the LogDNA agent level
-{: #config_agent_tags}
+{: #logdna_agent_tags}
 
 You can configure tags at the agent level so that all lines that are sent by this agent can be grouped automatically into a group when you filter data in a view.
 
-You can define multiple tags. You separate tags by using commas. The maximum number of characters that you can set to define multiple tags is 80 characters.
+* You can define multiple tags. 
+* You separate tags by using commas. 
+* The maximum number of characters that you can set to define multiple tags is 80 characters.
 
+For example, choose any of the following options to find out how to configure tags:
+* 
 
 
 ## Excluding log files through the LogDNA agent
-{: #config_agent_exclude}
+{: #logdna_agent_exclude}
 
 You can stop logs from being forwarded to your logging instance by modifying the LogDNA agent configuration file to exclude any files that you do not want the LogDNA agent to monitor. 
 
 * You can exclude files that are located in any of the paths that are defined through the **logdir** parameter. 
 * To define the files, you can separate multiple files by using commas. You can use glob patterns. You can also configure specific files.
 
-
+For example, see [](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-config_agent_kube_exclude).
 
 

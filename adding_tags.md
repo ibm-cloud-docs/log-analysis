@@ -24,18 +24,16 @@ subcollection: LogDNA
 # Adding tags at the LogDNA agent level
 {: #adding_tags}
 
-The LogDNA agent is responsible for collecting and forwarding logs to your {{site.data.keyword.la_full_notm}} instance. After you provision an instance of {{site.data.keyword.la_full}}, you must configure a LogDNA agent for each log source that you want to monitor.
+You can configure tags at the LogDNA agent level so that all lines that are sent by this agent can be grouped automatically into a group when you filter data in a view.
 {:shortdesc}
 
-
+You can define multiple tags. You separate tags by using commas. The maximum number of characters that you can set to define multiple tags is 80 characters.
+{: note}
 
 
 ## Adding tags at the LogDNA agent level
-{: #config_agent_kube_tags}
+{: #adding_tags_kube}
 
-You can configure tags at the agent level so that all lines that are sent by this agent can be grouped automatically into a group when you filter data in a view.
-
-You can define multiple tags. You separate tags by using commas. The maximum number of characters that you can set to define multiple tags is 80 characters.
 
 Complete the following steps to add tags to a cluster:
 
@@ -131,5 +129,42 @@ Complete the following steps to add tags to a cluster:
     {: codeblock}
 
     **Note:** If you use *kubectl edit*, changes are applied automatically when you save your modifications.
+
+
+
+## Adding tags to a LogDNA agent on Linux Ubuntu or Debian
+{: #adding_tags_linuxs}
+
+
+Complete the following steps to add more tags to the LogDNA agent:
+
+1. Verify the LogDNA agent is running.
+
+2. Add one or more tags.
+
+    ```
+    sudo logdna-agent -t TAG1,TAG2
+    ```
+    {: codeblock}
+
+
+You can also edit the LogDNA configuration file and add tags. The configuration file is located in */etc/logdna.conf*.
+
+1. Edit the file.
+
+    ```
+    sudo update-rc.d logdna-agent defaults
+    ```
+    {: codeblock}
+
+2. Add tags.
+
+3. Restart the LogDNA agent.
+
+    ```
+    sudo /etc/init.d/logdna-agent start
+    ```
+    {: codeblock}
+
 
 

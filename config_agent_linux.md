@@ -160,36 +160,3 @@ To configure your Ubuntu server to forward logs to your LogDNA instance, complet
     ```
     {: codeblock}
 
-## Adding tags to a LogDNA agent on Linux Ubuntu or Debian
-{: #config_agent-linux_tags}
-
-
-Complete the following steps to add more tags to the LogDNA agent:
-
-1. Verify the LogDNA agent is running.
-
-2. Add one or more tags.
-
-    ```
-    sudo logdna-agent -t TAG1,TAG2
-    ```
-    {: codeblock}
-
-
-You can also edit the LogDNA configuration file and add tags. The configuration file is located in */etc/logdna.conf*.
-
-1. Edit the file.
-
-    ```
-    sudo update-rc.d logdna-agent defaults
-    ```
-    {: codeblock}
-
-2. Add tags.
-
-3. Restart the LogDNA agent.
-
-    ```
-    sudo /etc/init.d/logdna-agent start
-    ```
-    {: codeblock}
