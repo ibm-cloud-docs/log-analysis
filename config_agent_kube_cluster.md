@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2019
-lastupdated: "2019-09-27"
+lastupdated: "2019-10-01"
 
 keywords: LogDNA, IBM, Log Analysis, logging, config agent
 
@@ -22,31 +22,13 @@ subcollection: LogDNA
 {:note: .note}
 
 # Configuring a LogDNA agent for a standard Kubernetes cluster
-{: #config_agent_std_cluster}
+{: #config_agent_kube_cluster}
 
 The LogDNA agent is responsible for collecting and forwarding logs to your {{site.data.keyword.la_full_notm}} instance. After you provision an instance of {{site.data.keyword.la_full}}, you must configure a LogDNA agent for each log source that you want to monitor.
 {:shortdesc}
 
-* The LogDNA agent authenticates by using the LogDNA Ingestion Key and opens a secure web socket to the {{site.data.keyword.la_full_notm}} ingestion servers.
-* By default, the agent monitors all files with extension *.log*,  and extensionless files under */var/log/*.
-* The agent tails for new log data, and looks for new files that are added to the logging directories that the agent monitors.
-* To connect to {{site.data.keyword.cloud}} services over a private network, you must have access to classic infrastructure and [enable virtual routing and forwarding (VRF)](/docs/account?topic=account-vrf-service-endpoint) and connectivity to service endpoints for your account.
 
-You can configure the following parameters through the LogDNA agent:
-
-| Parameter | Description |
-|-----------|-------------|
-| `tags`    | Define tags to group hosts automatically into dynamic groups. |
-| `logdir`  | Define custom paths that you want the agent to monitor. </br>Separate multiple paths by using commas. You can use glob patterns. You can configure specific files. Enter glob patterns by using double quotation marks. |
-| `exclude` | Define the files that you do not want the LogDNA agent to monitor. **Note:** These files can be located in any of the paths that are defined through the logdir parameter. </br>Separate multiple files by using commas. You can use glob patterns. You can configure specific files. |
-| `exclude_regex` | Define regex patterns to filter out any lines that match the pattern. Do not include leading and trailing `/`. |
-| `hostname` | Define the hostname. This value overrides the operating system hostname. |
-| `autoupdate` | Set to `1` to update the agent automatically when the public repo agent definition is updated. Set to `0` to disable this feature. |  
-{: caption="Table 1. Parameters to customize a LogDNA agent" caption-side="top"}
-
-
-
-## Configuring a LogDNA agent on a Kubernetes cluster by using a script
+## Configuring a LogDNA agent on a standard Kubernetes cluster by using a script
 {: #config_agent_kube_script}
 
 To configure your Kubernetes cluster to send logs to your {{site.data.keyword.la_full_notm}} instance, you must install a *logdna-agent* pod on each node of your cluster. The LogDNA agent reads log files from the pod where it is installed, and forwards the log data to your LogDNA instance.
