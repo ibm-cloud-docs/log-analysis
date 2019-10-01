@@ -25,23 +25,38 @@ IBM Log Analysis with LogDNA
 
     {: .navgroup id="howto"}
     provision.md
-    config_svc_logs.md
     remove.md
 
+   {: .topicgroup}
+    DevOps tasks
+        config_svc_logs.md
+        work_iam.md
+        reuse_resource_definitions.md
+        archive.md
+
     {: .topicgroup}
-    Configuring a LogDNA agent
+    LogDNA agent
         config_agent_kube_cluster.md
         config_agent_linux.md
-    detach_agent.md
-    ingestion_key.md
-    alerts.md
-    archive.md
-    export.md
-    ingest.md
-    launch.md
-    view_logs.md
-    work_iam.md
-    reuse_resource_definitions.md
+        exclude_logs_from_agent.md
+        adding_tags.md
+        detach_agent.md
+
+    {: .topicgroup}
+    View logs
+        launch.md
+        view_logs.md
+        alerts.md
+
+    {: .topicgroup}
+    Export logs
+        export.md
+
+    {: .topicgroup}
+    Send logs
+        ingestion_key.md
+        ingest.md
+
     {: .navgroup-end}
 
     {: .navgroup id="reference"}

@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2019
-lastupdated: "2019-07-17"
+lastupdated: "2019-10-01"
 
 keywords: LogDNA, IBM, Log Analysis, logging, export logs
 
@@ -22,10 +22,10 @@ subcollection: LogDNA
 {:note: .note}
 
  
-# Exporting logs to local file
+# Exporting logs
 {: #export}
 
-You can export log data in JSONL format from an {{site.data.keyword.la_full_notm}} instance into a local file. You can export logs programmatically or from the IBM Log Analysis Web UI. 
+You can export log data in JSONL format from an {{site.data.keyword.la_full_notm}} instance into a local file or to a terminal. You can export logs programmatically or from the IBM Log Analysis Web UI. 
 {:shortdesc}
 
 Consider the following information when you export log data:
