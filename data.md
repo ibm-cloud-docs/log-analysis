@@ -62,7 +62,7 @@ The service plan that you choose for an {{site.data.keyword.la_full_notm}} insta
 
 For example, if you choose the *Lite* plan, data is not stored at all. However, if you choose the 7-day plan, data is stored for 7 days and you have access to it through the LogDNA Web UI.
 
-When you delete an instance of {{site.data.keyword.la_full_notm}} from the {{site.data.keyword.cloud_notm}}, all the data is deleted.
+
 
 ## Data availability
 {: #data_availability}

@@ -9,7 +9,7 @@ IBM Log Analysis with LogDNA
     data.md
     cloud_services.md
     cloud_services_locations.md
-    config_logdna_agent.md
+    logdna_agent.md
     monitor_cfapp_logs.md
     manage_eu_logs.md
     network.md
