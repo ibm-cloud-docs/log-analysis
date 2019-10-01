@@ -67,7 +67,9 @@ When you delete an instance of {{site.data.keyword.la_full_notm}} from the {{sit
 ## Data availability
 {: #data_availability}
 
-Data is collected and aggregated in each location. Each supported location is a multi-zone region (MZR). [Learn more](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-regions).
+Data is collected and aggregated in each {{site.data.keyword.cloud_notm}} location where the service is available. 
+
+Each supported location is a multi-zone region (MZR), except Seoul that is a single-zone region (SZR). [Learn more](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-regions).
 
 ## Data archives
 {: #data_archives}

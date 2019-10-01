@@ -41,6 +41,7 @@ IBM Log Analysis with LogDNA
     launch.md
     view_logs.md
     work_iam.md
+    reuse_resource_definitions.md
     {: .navgroup-end}
 
     {: .navgroup id="reference"}

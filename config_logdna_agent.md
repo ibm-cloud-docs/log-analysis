@@ -45,3 +45,24 @@ You can configure the following parameters through the LogDNA agent:
 | `autoupdate` | Set to `1` to update the agent automatically when the public repo agent definition is updated. Set to `0` to disable this feature. |  
 {: caption="Table 1. Parameters to customize a LogDNA agent" caption-side="top"}
 
+
+## Adding tags at the LogDNA agent level
+{: #config_agent_tags}
+
+You can configure tags at the agent level so that all lines that are sent by this agent can be grouped automatically into a group when you filter data in a view.
+
+You can define multiple tags. You separate tags by using commas. The maximum number of characters that you can set to define multiple tags is 80 characters.
+
+
+
+## Excluding log files through the LogDNA agent
+{: #config_agent_exclude}
+
+You can stop logs from being forwarded to your logging instance by modifying the LogDNA agent configuration file to exclude any files that you do not want the LogDNA agent to monitor. 
+
+* You can exclude files that are located in any of the paths that are defined through the **logdir** parameter. 
+* To define the files, you can separate multiple files by using commas. You can use glob patterns. You can also configure specific files.
+
+
+
+
