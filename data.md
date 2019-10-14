@@ -89,12 +89,12 @@ You can export data in JSONL format locally, stream data to your terminal, or re
 
 Consider the following information when you export log data:
 * You export a set of log entries. To define the set of data that you want to export, you can apply filter and searches. You can also specify the time range. 
-* From the Web UI, when you export logs, you get an email that is sent to your email address, with a link to a compressed file that includes the data. To get the data, you must click the link and download the compressed file.
+* From the Web UI, when you export logs, you get an email that is sent to your email address, with a link to a compressed file that includes the data. To get the data, you must click the link and download the compressed file. Notice that the link expires automatically after 12 hours.
 * When you export logs programmatically, you can choose to send an email or to stream logs in to your terminal.
 * The compressed log file that contains the data that you want to export is available for a maximum of 48 hours. 
 * The maximum number of lines that you can export is 20,000.
 
-To make the `EU-DE (Frankfurt)` location `EU-Supported`, the web UI export functionality is not available. Also, you cannot use the API to export data to an email address. However, if you need to export data from this location, you can use the export API to export your data to a local file.
+To make the `EU-DE (Frankfurt)` location `EU-Supported`, the web UI export functionality is not available. If you need to export data from this location, use the export API to export your data to a local file.
 
 Exported data is hosted in {{site.data.keyword.cos_full_notm}} (COS).
 
