@@ -33,7 +33,7 @@ Learn how log data is collected, managed, and deleted within the {{site.data.key
 
 {{site.data.keyword.la_full_notm}} collects and aggregates logs in one centralized logging system.
 
-* Log data is hosted on the {{site.data.keyword.cloud_notm}}.
+* Log data is hosted on the {{site.data.keyword.cloud_notm}}. The {{site.data.keyword.la_full_notm}} service is operated by LogDNA.
 * Log data does not leave the IBM site.
 * Data is colocated in the location where the {{site.data.keyword.la_full_notm}} instance is provisioned. For example, log data for an instance that is provisioned in `US South` is hosted in the `US South` region.
 
