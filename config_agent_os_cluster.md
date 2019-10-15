@@ -35,7 +35,7 @@ To forward logs to your LogDNA instance, complete the following steps from the c
 {: #config_agent_oscluster_prereq}
 
 To deploy the LogDNA agent in a cluster, you must have a user ID that has the following IAM roles:
-* **Viewer** platform role, and **Writer** or **Manager** service role to work with that cluster instance.
+* **Viewer** platform role, and **Manager** service role to work with that cluster instance.
 * **Viewer** permissions on the resource group where the cluster is available.
 
 To configure the LogDNA agen in the cluster, you need the following CLIs:
