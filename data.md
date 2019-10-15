@@ -43,7 +43,7 @@ Learn how log data is collected, managed, and deleted within the {{site.data.key
 
 When you configure a LogDNA agent to collect and forward data to an {{site.data.keyword.la_full_notm}} instance, data is automatically collected and available for analysis through the web UI.
 
-Log data from {{site.data.keyword.cloud_notm}} services, Cloud Foundry (CF) framework, and CF applications is collected automatically and available for analysis through the web UI. These data is collected and forwarded to the **service platform logs instance** in the location where the service is available. [Learn more about the services that send logs to the service platform logs instance](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-cloud_services).
+Log data from {{site.data.keyword.cloud_notm}} services, Cloud Foundry (CF) framework, and CF applications is collected automatically and available for analysis through the web UI. These data is collected and forwarded to the **platform service logs instance** in the location where the service is available. [Learn more about the services that send logs to the platform service logs instance](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-cloud_services).
 
 ## Data encryption
 {: #data_encryption}
