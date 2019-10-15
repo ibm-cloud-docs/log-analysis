@@ -2,9 +2,9 @@
 
 copyright:
   years:  2018, 2019
-lastupdated: "2019-06-03"
+lastupdated: "2019-10-15"
 
-keywords: LogDNA, IBM, Log Analysis, logging, overview
+keywords: LogDNA, IBM, Log Analysis, logging, data
 
 subcollection: LogDNA
 
@@ -35,7 +35,7 @@ Learn how log data is collected, managed, and deleted within the {{site.data.key
 
 * Log data is hosted on the {{site.data.keyword.cloud_notm}}. The {{site.data.keyword.la_full_notm}} service is operated by LogDNA.
 * Log data does not leave the IBM site.
-* Data is colocated in the location where the {{site.data.keyword.la_full_notm}} instance is provisioned. For example, log data for an instance that is provisioned in `US South` is hosted in the `US South` region.
+* Data is collocated in the location where the {{site.data.keyword.la_full_notm}} instance is provisioned. For example, log data for an instance that is provisioned in `US South` is hosted in the `US South` region.
 
 
 ## Data collection
