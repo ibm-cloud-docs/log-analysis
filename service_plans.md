@@ -45,7 +45,7 @@ Different pricing plans are available that you can choose for an {{site.data.key
 
 The following tables outline the different features that are included in each service plan:
 
-| Feature                                              | `30 day log search` plan | `14 days log search` plan    | `7 days log search plan     | `Lite` plan | 
+| Feature                                              | `30 day log search` plan | `14 days log search` plan    | `7 days log search` plan     | `Lite` plan | 
 |------------------------------------------------------|-------------------------|-------------------------------|-----------------------------|--------------|
 | `Live streaming tail`                                | ![Checkmark icon](../../icons/checkmark-icon.svg) | ![Checkmark icon](../../icons/checkmark-icon.svg) |![Checkmark icon](../../icons/checkmark-icon.svg) |![Checkmark icon](../../icons/checkmark-icon.svg)|
 | `Customizing the LogDNA agent`                       | ![Checkmark icon](../../icons/checkmark-icon.svg) | ![Checkmark icon](../../icons/checkmark-icon.svg) |![Checkmark icon](../../icons/checkmark-icon.svg) |![Checkmark icon](../../icons/checkmark-icon.svg)|
