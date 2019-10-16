@@ -32,6 +32,8 @@ IBM Log Analysis with LogDNA
         config_svc_logs.md
         work_iam.md
         reuse_resource_definitions.md
+        control_usage.md
+        exclusion_rules.md
         archive.md
 
     {: .topicgroup}
