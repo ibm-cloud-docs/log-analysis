@@ -46,6 +46,21 @@ You can configure the following parameters through the LogDNA agent:
 {: caption="Table 1. Parameters to customize a LogDNA agent" caption-side="top"}
 
 
+## Configuring a LogDNA agent
+{: #logdna_agent_configure}
+
+To configure your Kubernetes cluster to send logs to your {{site.data.keyword.la_full_notm}} instance, you must install a *logdna-agent* pod on each node of your cluster. The LogDNA agent reads log files from the pod where it is installed, and forwards the log data to your LogDNA instance.
+
+* [Configuring a LogDNA agent for a standard Kubernetes cluster](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-config_agent_kube_cluster)
+* [Configuring a LogDNA agent for an OpenShight Kubernetes cluster](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-config_agent_os_cluster)
+
+To configure your Ubuntu server to send logs to your {{site.data.keyword.la_full_notm}} instance, you must install a `logdna-agent`. The LogDNA agent reads log files from */var/log*, and forwards the log data to your LogDNA instance. For more information, see [Configuring a LogDNA agent on Linux Ubuntu or Debian](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-config_agent_linux).
+
+## Detaching a LogDNA agent from a cluster
+{: #logdna_agent_detach}
+
+To stop your Kubernetes cluster from sending logs to your {{site.data.keyword.la_full_notm}} instance, you must remove the LogDNA agent from your cluster. [Learn more](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-detach_agent).
+
 ## Adding tags at the LogDNA agent level
 {: #logdna_agent_tags}
 
