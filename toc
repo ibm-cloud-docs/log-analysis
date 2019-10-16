@@ -29,12 +29,14 @@ IBM Log Analysis with LogDNA
 
    {: .topicgroup}
     DevOps tasks
+        archive.md
+        control_usage.md
+        exclusion_rules.md
         config_svc_logs.md
         work_iam.md
         reuse_resource_definitions.md
-        control_usage.md
-        exclusion_rules.md
-        archive.md
+
+
 
     {: .topicgroup}
     LogDNA agent

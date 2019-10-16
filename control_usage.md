@@ -52,7 +52,7 @@ Logs that are excluded do not count towards your data usage quota. Also, logs th
 
 When you exclude logs through an exclusion rule, you can choose to **Preserve these lines for live-tail and alerting**. When you check this option, log lines that match the exclusion rule are shown through the live tail and you can set up an alert for that data.
 
-[Learn more]().
+[Learn more](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-exclusion).
 
 ​
 
@@ -71,7 +71,7 @@ Complete the following steps to configure an alert that informs you when you rea
 
     In the **Dashboard** section, you can see your data usage.
 
-3. Define a **Usage Alert** to set the threshold of data usage that when it is reached you are notified. Enter a value.
+3. Define a **Usage Alert** to set the threshold for data usage in the instance. When the threshold is reached, you are notified. Enter a value to set the data usage threshold.
 
 4. In the **Add recipient** section, enter one or more emails where the notification will be sent.
 

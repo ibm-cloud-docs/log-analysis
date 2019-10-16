@@ -100,7 +100,7 @@ Prereq: You must have a cluster configured to forward logs to a LogDNA instance.
 
 3. Select **Add Rule**. The **Create Rule** section opens.
 
-4. Enter a name for the rule in the section **What is this rule for?**. For example, enter *Worker X no syslog data*.
+4. Enter a name for the rule in the section **What is this rule for?**. For example, enter *Error log records in the namespace kube-system*.
 
 5. Enter the exclusion criteria. You can select 1 or more sources, 1 or more apps, enter a query, or a combination of sources, apps and query.
 
