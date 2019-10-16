@@ -59,7 +59,27 @@ Complete the following steps:
 
    Select the account where you provisioned the {{site.data.keyword.la_full_notm}} instance.
 
-2. Set the cluster where you want to configure logging as the context for this session.
+2. List the clusters to find out in which region and resource group the cluster is available.
+
+    ```
+    ibmcloud ks clusters
+    ```
+    {: pre}
+
+3. Set the resource group and region.
+
+    ```
+    ibmcloud target -g RESOURCE_GROUP -r REGION
+    ```
+    {: pre}
+
+    Where 
+    
+    `RESOURCE_GROUP` is the name of the resource group where the cluster is available, for example, `default`.
+    
+    `REGION` is the region where the cluster is available, for example, `us-south`.
+
+4. Set the cluster where you want to configure logging as the context for this session.
 
    ```
    ibmcloud ks cluster config --cluster <cluster_name_or_ID>
@@ -68,7 +88,7 @@ Complete the following steps:
 
    When the download of the configuration files is finished, a command is displayed that you can use to set the path to the local Kubernetes configuration file as an environment variable. Copy and paste the command that is displayed in your terminal to set the `KUBECONFIG` environment variable.
 
-3. Log in to the cluster. Run the following command and enter your IBMid userid and password.
+5. Log in to the cluster. Run the following command and enter your IBMid userid and password.
 
     ```
     oc login

@@ -34,7 +34,7 @@ Learn how log data is collected, managed, and deleted within the {{site.data.key
 {{site.data.keyword.la_full_notm}} collects and aggregates logs in one centralized logging system.
 
 * Log data is hosted on the {{site.data.keyword.cloud_notm}}. The {{site.data.keyword.la_full_notm}} service is operated by LogDNA.
-* Log data does not leave the IBM site.
+* Log data does not leave {{site.data.keyword.cloud_notm}}.
 * Data is collocated in the location where the {{site.data.keyword.la_full_notm}} instance is provisioned. For example, log data for an instance that is provisioned in `US South` is hosted in the `US South` region.
 
 
@@ -52,7 +52,7 @@ All the data that is hosted in a LogDNA instance is encrypted at rest using **AE
 
 When a LogDNA agent sends data to a LogDNA instance, data is encrypted in transit over HTTPS.
 
-When a user request an export, the data is encrypted during transit, and is also encrypted at rest in {{site.data.keyword.cos_full_notm}} (COS).
+When a user requests an export, the data is encrypted during transit, and is also encrypted at rest in {{site.data.keyword.cos_full_notm}} (COS).
 
 
 ## Data retention for search
@@ -85,16 +85,14 @@ You can use the {{site.data.keyword.sqlquery_short}} service to query data in ar
 ## Data exports
 {: #data_exports}
 
-You can export data in JSONL format locally, stream data to your terminal, or request an email with a link to the data. [Learn more](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-export).
+You can export data in JSONL format locally, write data to your terminal, or request an email with a link to the data. [Learn more](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-export).
 
 Consider the following information when you export log data:
 * You export a set of log entries. To define the set of data that you want to export, you can apply filter and searches. You can also specify the time range. 
 * From the Web UI, when you export logs, you get an email that is sent to your email address, with a link to a compressed file that includes the data. To get the data, you must click the link and download the compressed file. Notice that the link expires automatically after 12 hours.
-* When you export logs programmatically, you can choose to send an email or to stream logs in to your terminal.
-* The compressed log file that contains the data that you want to export is available for a maximum of 48 hours. 
-* The maximum number of lines that you can export is 20,000.
-
-To make the `EU-DE (Frankfurt)` location `EU-Supported`, the web UI export functionality is not available. If you need to export data from this location, use the export API to export your data to a local file.
+* When you export logs programmatically, you can choose to send an email, or to write data to the terminal.
+* The compressed log file that contains the data that you want to export is available for a maximum of 12 hours. 
+* When you export logs, you have a limit of lines that you can export in a request. You can specify to export older lines or newer lines in case you reach the limit in the time range that you specify for the export.
 
 Exported data is hosted in {{site.data.keyword.cos_full_notm}} (COS).
 

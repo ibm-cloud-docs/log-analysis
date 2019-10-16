@@ -55,7 +55,27 @@ To configure the LogDNA agen in the cluster, you need the following CLIs:
 
    Select the account where you provisioned the {{site.data.keyword.la_full_notm}} instance.
 
-2. Set the cluster where you want to configure logging as the context for this session.
+2. List the clusters to find out in which region and resource group the cluster is available.
+
+    ```
+    ibmcloud ks clusters
+    ```
+    {: pre}
+
+3. Set the resource group and region.
+
+    ```
+    ibmcloud target -g RESOURCE_GROUP -r REGION
+    ```
+    {: pre}
+
+    Where 
+    
+    `RESOURCE_GROUP` is the name of the resource group where the cluster is available, for example, `default`.
+    
+    `REGION` is the region where the cluster is available, for example, `us-south`.
+
+4. Set the cluster where you want to configure logging as the context for this session.
 
    ```
    ibmcloud ks cluster config --cluster <cluster_name_or_ID>
