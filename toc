@@ -37,7 +37,6 @@ IBM Log Analysis with LogDNA
         reuse_resource_definitions.md
 
 
-
     {: .topicgroup}
     LogDNA agent
         config_agent_kube_cluster.md

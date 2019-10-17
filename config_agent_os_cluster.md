@@ -21,7 +21,7 @@ subcollection: LogDNA
 {:important: .important}
 {:note: .note}
 
-# Configuring a LogDNA agent for an OpenShight Kubernetes cluster
+# Configuring a LogDNA agent for an OpenShift Kubernetes cluster
 {: #config_agent_os_cluster}
 
 The LogDNA agent is responsible for collecting and forwarding logs to your {{site.data.keyword.la_full_notm}} instance. After you provision an instance of {{site.data.keyword.la_full}}, you must configure a LogDNA agent for each log source that you want to monitor.
@@ -173,12 +173,12 @@ Choose one of the following commands:
 
 | Location                  | Command (By using public endpoints)               | 
 |--------------------------|----------------------------------------------------|
-| `Dallas (us-south)`      | `oc create -f https://assets.us-south.logging.cloud.ibm.com/clients/LogDNA-agent-ds-os.yaml`       |
-| `Frankfurt (eu-de)`      | `oc create -f https://assets.eu-de.logging.cloud.ibm.com/clients/LogDNA-agent-ds-os.yaml`         |
-| `London (eu-gb)`         | `oc create -f https://assets.eu-gb.logging.cloud.ibm.com/clients/LogDNA-agent-ds-os.yaml`          |
-| `Tokyo (jp-tok)`         | `oc create -f https://assets.jp-tok.logging.cloud.ibm.com/clients/LogDNA-agent-ds-os.yaml`       |
-| `Seoul (kr-seo)`         | `oc create -f https://assets.kr-seo.logging.cloud.ibm.com/clients/LogDNA-agent-ds-os.yaml` |
-| `Sydney (au-syd)`        | `oc create -f https://assets.au-syd.logging.cloud.ibm.com/clients/LogDNA-agent-ds-os.yaml`        |
+| `Dallas (us-south)`      | `oc create -f https://assets.us-south.logging.cloud.ibm.com/clients/logdna-agent-ds-os.yaml`       |
+| `Frankfurt (eu-de)`      | `oc create -f https://assets.eu-de.logging.cloud.ibm.com/clients/logdna-agent-ds-os.yaml`         |
+| `London (eu-gb)`         | `oc create -f https://assets.eu-gb.logging.cloud.ibm.com/clients/logdna-agent-ds-os.yaml`          |
+| `Tokyo (jp-tok)`         | `oc create -f https://assets.jp-tok.logging.cloud.ibm.com/clients/logdna-agent-ds-os.yaml`       |
+| `Seoul (kr-seo)`         | `oc create -f https://assets.kr-seo.logging.cloud.ibm.com/clients/logdna-agent-ds-os.yaml` |
+| `Sydney (au-syd)`        | `oc create -f https://assets.au-syd.logging.cloud.ibm.com/clients/logdna-agent-ds-os.yaml`        |
 {: caption="Table 1. Commands by location when you use public endpoints" caption-side="top"}
 {: #end-api-table-1}
 {: tab-title="Command (By using public endpoints)"}
@@ -186,14 +186,16 @@ Choose one of the following commands:
 {: class="simple-tab-table"}
 {: row-headers}
 
+
+
 | Location                  | Command (By using private endpoints)               | 
 |--------------------------|----------------------------------------------------|
-| `Dallas (us-south)`      | `oc create -f https://assets.us-south.logging.cloud.ibm.com/clients/LogDNA-agent-ds-os-private.yaml`      |
-| `Frankfurt (eu-de)`      | `oc create -f https://assets.eu-de.logging.cloud.ibm.com/clients/LogDNA-agent-ds-os-private.yaml`          |
-| `London (eu-gb)`         | `oc create -f https://assets.eu-gb.logging.cloud.ibm.com/clients/LogDNA-agent-ds-os-private.yaml`       |
-| `Tokyo (jp-tok)`         | `oc create -f https://assets.jp-tok.logging.cloud.ibm.com/clients/LogDNA-agent-ds-os-private.yaml`        |
-| `Seoul (kr-seo)`         | `oc create -f https://assets.kr-seo.logging.cloud.ibm.com/clients/LogDNA-agent-ds-os-private.yaml` |
-| `Sydney (au-syd)`        | `oc create -f https://assets.au-syd.logging.cloud.ibm.com/clients/LogDNA-agent-ds-os-private.yaml`       |
+| `Dallas (us-south)`      | `oc create -f https://assets.us-south.logging.cloud.ibm.com/clients/logdna-agent-ds-os-private.yaml`      |
+| `Frankfurt (eu-de)`      | `oc create -f https://assets.eu-de.logging.cloud.ibm.com/clients/logdna-agent-ds-os-private.yaml`          |
+| `London (eu-gb)`         | `oc create -f https://assets.eu-gb.logging.cloud.ibm.com/clients/logdna-agent-ds-os-private.yaml`       |
+| `Tokyo (jp-tok)`         | `oc create -f https://assets.jp-tok.logging.cloud.ibm.com/clients/logdna-agent-ds-os-private.yaml`        |
+| `Seoul (kr-seo)`         | `oc create -f https://assets.kr-seo.logging.cloud.ibm.com/clients/logdna-agent-ds-os-private.yaml` |
+| `Sydney (au-syd)`        | `oc create -f https://assets.au-syd.logging.cloud.ibm.com/clients/logdna-agent-ds-os-private.yaml`       |
 {: caption="Table 1. Commands by location when you use private endpoints" caption-side="top"}
 {: #end-api-table-1}
 {: tab-title="Command (By using private endpoints)"}

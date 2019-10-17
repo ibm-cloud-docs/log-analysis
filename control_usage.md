@@ -42,7 +42,7 @@ You can stop logs from being forwarded to your logging instance by customizing t
 
 
 
-## Controlling data by using exclusion rules in the web UI
+## Controlling data by using exclusion rules
 {: #control_usage_rule}
 
 You can configure exclusion rules through the LogDNA web UI to stop logs from counting against your data usage quota and from being stored for search. For example, you might want to collect and forward all logs from a source to a LogDNA instance. However, you might be interested in a subset of those logs such as error logs. 
