@@ -51,7 +51,7 @@ The following table lists container services that send logs to {{site.data.keywo
 
 | Service     | Description | More info about the integration with {{site.data.keyword.la_full_notm}} |
 |-------------|-------------|-------------------------------------------------------------------------|
-| [{{site.data.keyword.registrylong_notm}}](/docs/services/Registry?topic=registry-getting-started) | You can use {{site.data.keyword.registrylong_notm}} to provide a multi-tenant private image registry that you can use to store and share your Docker images with users in your {{site.data.keyword.cloud_notm}} account. | [More info](/docs/services/Registry?topic=registry-at_events#at_events_platform_logs) |
+| [{{site.data.keyword.registrylong_notm}}](/docs/services/Registry?topic=registry-getting-started) | You can use {{site.data.keyword.registrylong_notm}} to provide a multi-tenant private image registry that you can use to store and share your Docker images with users in your {{site.data.keyword.cloud_notm}} account. | [More info](/docs/Registry?topic=registry-platform_services_logs) |
 {: caption="Table 1. List of container services" caption-side="top"} 
 
 ## Platform: Database services
