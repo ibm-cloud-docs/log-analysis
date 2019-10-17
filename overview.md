@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2019
-lastupdated: "2019-06-03"
+lastupdated: "2019-10-17"
 
 keywords: LogDNA, IBM, Log Analysis, logging, overview
 
@@ -39,7 +39,7 @@ To add logging features with LogDNA in the {{site.data.keyword.cloud_notm}}, you
 
 Before you provision an instance of {{site.data.keyword.la_full_notm}}, consider the following information:
 * Log data is hosted on the {{site.data.keyword.cloud_notm}}.
-* Log data is sent to a third party.
+* The {{site.data.keyword.la_full_notm}} service is operated by LogDNA.
 * Your users must have platform permissions to create, view, and delete an instance of a service in the {{site.data.keyword.cloud_notm}}.
 * Your users must have platform permissions to create resources within the context of the resource group where you plan to provision the LogDNA instance.
 
