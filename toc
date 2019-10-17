@@ -29,6 +29,7 @@ IBM Log Analysis with LogDNA
    {: .topicgroup}
     DevOps tasks
         config_svc_logs.md
+        control_usage.md
         work_iam.md
         reuse_resource_definitions.md
         archive.md

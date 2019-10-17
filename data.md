@@ -66,7 +66,9 @@ For example, if you choose the *Lite* plan, data is not stored at all. However, 
 ## Data availability
 {: #data_availability}
 
-Data is collected and aggregated in each {{site.data.keyword.cloud_notm}} location where the service is available. 
+Data from {{site.data.keyword.cloud_notm}} services is collected and aggregated in each {{site.data.keyword.cloud_notm}} location where the service is available. 
+
+Data forwarded by a LogDNA agent is collected and aggregated in the location where the LogDNA instance is available.
 
 Each supported location is a multi-zone region (MZR), except Seoul that is a single-zone region (SZR). [Learn more](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-regions).
 
