@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2019
-lastupdated: "2019-07-17"
+lastupdated: "2019-10-16"
 
 keywords: LogDNA, IBM, Log Analysis, logging, export logs
 
@@ -22,21 +22,19 @@ subcollection: LogDNA
 {:note: .note}
 
  
-# Exporting logs to local file
+# Exporting logs
 {: #export}
 
-You can export log data in JSONL format from an {{site.data.keyword.la_full_notm}} instance into a local file. You can export logs programmatically or from the IBM Log Analysis Web UI. 
+You can export log data in JSONL format from an {{site.data.keyword.la_full_notm}} instance into a local file or to a terminal. You can export logs programmatically or from the IBM Log Analysis Web UI. 
 {:shortdesc}
 
 Consider the following information when you export log data:
 * You export a set of log entries. To define the set of data that you want to export, you can apply filter and searches. You can also specify the time range. 
 * From the Web UI, when you export logs, you get an email that is sent to your email address, with a link to a compressed file that includes the data. To get the data, you must click the link and download the compressed file.
-* When you export logs programmatically, you can choose to send an email or to stream logs in to your terminal.
-* The compressed log file that contains the data that you want to export is available for a maximum of 48 hours. 
-* The maximum number of lines that you can export is 20,000.
+* When you export logs programmatically, you can choose to send an email or to write logs in to your terminal.
+* The compressed log file that contains the data that you want to export is available for a maximum of 12 hours. 
+* When you export logs, you have a limit of lines that you can export in a request. You can specify to export older lines or newer lines in case you reach the limit in the time range that you specify for the export.
 
-To make the `EU-DE (Frankfurt)` location `EU-Supported`, the web UI export functionality is not available. Also, you cannot use the API to export data to an email address. However, if you need to export data from this location, you can use the export API to export your data to a local file.
-{: important}
 
 ## Exporting logs from the Web UI
 {: #ui}
@@ -104,7 +102,7 @@ The following table lists the query parameters that you can set:
 | `emailSubject` | `string`     | Optional   | Use to set the subject of the email. </br>Use `%20` to represent a space. For example, a sample value is `Export%20logs`. |
 {: caption="Query parameters" caption-side="top"} 
 
-For example, to stream log lines into the terminal, you can run the following command:
+For example, to write log lines into the terminal, you can run the following command:
 
 ```
 curl "https://api.us-south.logging.cloud.ibm.com/v1/export?to=$(date +%s)000&from=$(($(date +%s)-86400))000&levels=info" -u e08c0c759663491880b0d61712346789:

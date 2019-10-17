@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2019
-lastupdated: "2019-08-12"
+lastupdated: "2019-10-01"
 
 keywords: LogDNA, IBM, Log Analysis, logging, iam, manage user access
 
@@ -82,7 +82,7 @@ Use the following table to identify the platform role that you can grant a user 
 | Platform actions                                                          | Administrator                                     | Editor | Operator | Viewer  |
 |---------------------------------------------------------------------------|:-------------------------------------------------:|:-------:|:--------:|:------:|
 | `Grant other account members access to work with the service`             | ![Checkmark icon](../../icons/checkmark-icon.svg) |         |          |        |
-| `View the ingestion key in the {{site.data.keyword.cloud_notm}} console`  | ![Checkmark icon](../../icons/checkmark-icon.svg) | ![Checkmark icon](../../icons/checkmark-icon.svg)         |          |        |
+| `View the ingestion key in the {{site.data.keyword.cloud_notm}} console`  | ![Checkmark icon](../../icons/checkmark-icon.svg) |![Checkmark icon](../../icons/checkmark-icon.svg)         |          |        |
 | `Provision a service instance`                                            | ![Checkmark icon](../../icons/checkmark-icon.svg) | ![Checkmark icon](../../icons/checkmark-icon.svg) |      |      |
 | `Delete a service instance`                                               | ![Checkmark icon](../../icons/checkmark-icon.svg)  | ![Checkmark icon](../../icons/checkmark-icon.svg)    |        |      |
 | `Update a service instance`                                               | ![Checkmark icon](../../icons/checkmark-icon.svg)  | ![Checkmark icon](../../icons/checkmark-icon.svg)    |        |      |
@@ -107,6 +107,7 @@ Use the following table to identify the service roles that you can grant a user 
 | `Define exclusion rules`                                                | ![Checkmark icon](../../icons/checkmark-icon.svg) |                                                   |   |
 | `Create and delete categories`                                          | ![Checkmark icon](../../icons/checkmark-icon.svg) |                                                   |   |
 | `Manage how views and dashboards are grouped in categories`             | ![Checkmark icon](../../icons/checkmark-icon.svg) |                                                   |   |
+| `Export the configuration of views, alerts, dashboards, and templates`  | ![Checkmark icon](../../icons/checkmark-icon.svg) |                                                   |   |
 | `Export log data`                                                        | ![Checkmark icon](../../icons/checkmark-icon.svg)  | ![Checkmark icon](../../icons/checkmark-icon.svg) | |
 | `View service keys through the LogDNA web UI`                           | ![Checkmark icon](../../icons/checkmark-icon.svg)      | ![Checkmark icon](../../icons/checkmark-icon.svg) |     |
 | `Configure alerts`                                                      | ![Checkmark icon](../../icons/checkmark-icon.svg)      | ![Checkmark icon](../../icons/checkmark-icon.svg)                    |    |

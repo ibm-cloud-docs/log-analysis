@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019
-lastupdated: "2019-08-12"
+lastupdated: "2019-09-02"
 
 keywords: LogDNA, IBM, Log Analysis, logging, services
 
@@ -66,6 +66,17 @@ You can monitor logs through the {{site.data.keyword.la_short}} instance that is
 
 To see the list of {{site.data.keyword.la_full_notm}} locations where these services send logs, see [Platform: Database services](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-cloud_services_locations#cs_locations_database).
 
+
+
+## Platform: Integration services
+{: #integration}
+
+The following table lists database services that send logs to {{site.data.keyword.la_full_notm}}:
+
+| Service     | Description | More info about the integration with {{site.data.keyword.la_full_notm}} |
+|-------------|-------------|-------------------------------------------------------------------------|
+| [{{site.data.keyword.appconservicefull_notm}}](/docs/services/AppConnect?topic=AppConnect-getting-started) | You can use {{site.data.keyword.appconservicefull_notm}} to connect your applications.   |  |
+{: caption="List of integration Cloud services" caption-side="top"} 
 
 
 ## Platform: Security services

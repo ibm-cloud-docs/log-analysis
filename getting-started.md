@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2019
-lastupdated: "2019-06-03"
+lastupdated: "2019-10-01"
 
 keywords: LogDNA, IBM, Log Analysis, logging, getting started
 
@@ -27,24 +27,73 @@ subcollection: LogDNA
 Use {{site.data.keyword.la_full}} to add log management capabilities to your {{site.data.keyword.cloud_notm}} architecture. {{site.data.keyword.la_full_notm}} is operated by LogDNA in partnership with {{site.data.keyword.IBM_notm}}.
 {:shortdesc}
 
+You can use {{site.data.keyword.la_full_notm}} to manage system and application logs in the {{site.data.keyword.cloud_notm}}.
+
+{{site.data.keyword.la_full_notm}} offers administrators, DevOps teams, and developers advanced features to filter, search, and tail log data, define alerts, and design custom views to monitor application and system logs.
+
+## Features
+{: #getting-started_features}
+
+**Troubleshoot logs in real time to diagnose issues and identify problems.**
+
+By using the *live streaming tail* feature, developers and DevOps teams can diagnose issues, analyze stack traces and exceptions, identify the source of errors, and monitor different log sources through a single view.  This feature is available through the command line and through the web interface. 
+
+**Issue alerts to be notified of important actions.**
+ 
+To act promptly on application and services events that you identify as critical or warning, DevOps teams can configure alert notification integrations to the following systems: email, Slack, webHook, and PagerDuty.
+
+**Export logs to a local file for analysis or to an archive service to meet auditing requirements.**
+
+Export specific log lines to a local copy or archive logs from {{site.data.keyword.la_full_notm}} to IBM Cloud Object Storage.
+Log lines are exported in JSON line format. Logs are archived in JSON format and preserve the metadata that is associated with each line. 
+
+**Control logging infrastructure costs by customizing what logs to manage through {{site.data.keyword.la_full_notm}}.**
+
+Control the cost of your logging infrastructure in the IBM Cloud by configuring the log sources for which you want to collect and manage logs. 
+
+
+## Overview
+{: #getting-started_ov}
+
+To add logging features with LogDNA in the {{site.data.keyword.cloud_notm}}, you must provision an instance of {{site.data.keyword.la_full_notm}}.
+
+Before you provision an instance of {{site.data.keyword.la_full_notm}}, consider the following information:
+* Log data is hosted on the {{site.data.keyword.cloud_notm}}.
+* The {{site.data.keyword.la_full_notm}} service is operated by LogDNA.
+* Your users must have platform permissions to create, view, and delete an instance of a service in the {{site.data.keyword.cloud_notm}}.
+* Your users must have platform permissions to create resources within the context of the resource group where you plan to provision the LogDNA instance.
+
+You provision an {{site.data.keyword.la_full_notm}} instance within the context of a resource group. You organize your services for access control and billing purposes by using resource groups. You can provision the instance in the *default* resource group or in a custom resource group.
+
+After you provision an instance of {{site.data.keyword.la_full_notm}}, an account is created in LogDNA, and you receive the ingestion key for your account.
+
+Then, you must configure your log sources:
+
+* You can enable per region a LogDNA instance to host logs from enabled {{site.data.keyword.cloud_notm}} services. For example, to collect logs from a Cloud Foundry app, you can enable the *service platform logs* flag. [Learn more](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-config_svc_logs). As soon as this feature is enabled, logs are collected automatically.
+* You can configure a LogDNA agent for a log source. A log source is a Cloud or on-prem resource that generates logs. For example, a log source can be a Kubernetes cluster. You use the ingestion key to configure the LogDNA agent that is responsible for collecting and forwarding logs to your {{site.data.keyword.la_full_notm}} instance. [Learn more](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-config_agent_std_cluster). After the LogDNA agent is deployed in a log source, collection and forwarding of logs to the {{site.data.keyword.la_full_notm}} instance is automatic.
+
+You can launch the {{site.data.keyword.la_full_notm}} Web UI to view, monitor, and manage your logs from the **Observability** &gt; **Logging** page.
+
+The following figure shows the components overview for the {{site.data.keyword.la_full_notm}} service that is running on {{site.data.keyword.cloud_notm}}:
+
+![{{site.data.keyword.la_full_notm}} component overview on the {{site.data.keyword.cloud_notm}}](images/components.png "{{site.data.keyword.la_full_notm}} component overview on the {{site.data.keyword.cloud_notm}}")
+
+
 
 ## Step 1. Before you begin
 {: #getting-started_prereqs}
 
-* Read about {{site.data.keyword.la_full_notm}}. For more information, see [About {{site.data.keyword.la_full_notm}}](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-about#about).
 * Check the regions where the service is available. For more information, see [Regions](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-regions).
 * Get a user ID that is a member or an owner of an {{site.data.keyword.cloud_notm}} account. 
 
     To get an {{site.data.keyword.cloud_notm}} user ID, click [Registration ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com/login){:new_window}.
-
-
 
 ## Step 2. Get started
 {: #getting-started_step2}
 
 Choose a cloud resource for which you want to manage logs. Then, configure this log source so that you can monitor its logs through the {{site.data.keyword.la_full_notm}} service. The log source can be located in the same region where you provision an {{site.data.keyword.la_full_notm}} instance or in a different region.
 
-The following table lists examples of cloud resources that you can configure to store and manage logs by using the {{site.data.keyword.la_full_notm}} service. Complete the tutorial for a resource to get started with the {{site.data.keyword.loganalysisshort}} service:
+The following table lists examples of cloud resources that you can configure to store and manage logs by using the {{site.data.keyword.la_full_notm}} service. Complete the tutorial for a resource to get started with the logging service:
 
 <table>
   <caption>Tutorials to get started working with the {{site.data.keyword.la_full_notm}} service </caption>

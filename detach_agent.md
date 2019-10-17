@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2019
-lastupdated: "2019-06-03"
+lastupdated: "2019-10-15"
 
 keywords: LogDNA, IBM, Log Analysis, logging, detach config agent
 
@@ -27,7 +27,7 @@ subcollection: LogDNA
 Detach a LogDNA agent from a logging instance to stop collecting logs.
 {:shortdesc}
 
-## Detaching a LogDNA agent from a Kubernetes cluster
+## Detaching a LogDNA agent from a standard Kubernetes cluster
 {: #detach_agent_kube}
 
 To stop your Kubernetes cluster from sending logs to your {{site.data.keyword.la_full_notm}} instance, you must remove the LogDNA agent from your cluster. 
@@ -73,7 +73,4 @@ To stop your Kubernetes cluster from forwarding logs to your LogDNA instance, co
     {: codeblock}
 
     You should not see any LogDNA pods.
-
-
-
 
