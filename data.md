@@ -34,7 +34,6 @@ Learn how log data is collected, managed, and deleted within the {{site.data.key
 {{site.data.keyword.la_full_notm}} collects and aggregates logs in one centralized logging system.
 
 * Log data is hosted on the {{site.data.keyword.cloud_notm}}. The {{site.data.keyword.la_full_notm}} service is operated by LogDNA.
-* Log data does not leave {{site.data.keyword.cloud_notm}}.
 * Data is collocated in the location where the {{site.data.keyword.la_full_notm}} instance is provisioned. For example, log data for an instance that is provisioned in `US South` is hosted in the `US South` region.
 
 
@@ -93,7 +92,6 @@ Consider the following information when you export log data:
 * When you export logs programmatically, you can choose to send an email, or to write data to the terminal.
 * When you export logs, you have a limit of lines that you can export in a request. You can specify to export older lines or newer lines in case you reach the limit in the time range that you specify for the export.
 
-At all times, the data remains in {{site.data.keyword.cloud_notm}}.
 
 ## Data deletion
 {: #data_deletion}
