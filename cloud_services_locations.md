@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019
-lastupdated: "2019-08-27"
+lastupdated: "2019-10-17"
 
 keywords: LogDNA, IBM, Log Analysis, logging, services
 
@@ -99,6 +99,8 @@ The following tables list the locations where automatic collection of database s
 | {{site.data.keyword.databases-for-postgresql_full_notm}}        | ![Checkmark icon](../../icons/checkmark-icon.svg)    | `NO`             | `Logs are available through the Log Analysis Tokyo instance` | `Logs are available through the Log Analysis Tokyo instance` |
 | {{site.data.keyword.messages-for-rabbitmq_full_notm}}           | ![Checkmark icon](../../icons/checkmark-icon.svg)    | `NO`             | `Logs are available through the Log Analysis Tokyo instance` | `Logs are available through the Log Analysis Tokyo instance` |
 | {{site.data.keyword.databases-for-redis_full_notm}}             | ![Checkmark icon](../../icons/checkmark-icon.svg)    | `NO`             | `Logs are available through the Log Analysis Tokyo instance` | `Logs are available through the Log Analysis Tokyo instance` |
+| {{site.data.keyword.cloud_notm}} {{site.data.keyword.ihsdbaas_mongodb_full}}             | `NO`    | `Logs are available through the Log Analysis Dallas instance`        | `NO` | `NO` |
+| {{site.data.keyword.cloud_notm}} {{site.data.keyword.ihsdbaas_postgresql_full}}             | `NO`    | `Logs are available through the Log Analysis Dallas instance`        | `NO` | `NO` |
 {: caption="Table 5. Database services integration in AP locations" caption-side="top"}
 {: #cs-dbs-table-2}
 {: tab-title="Asia Pacific"}
@@ -115,6 +117,8 @@ The following tables list the locations where automatic collection of database s
 | {{site.data.keyword.databases-for-postgresql_full_notm}}      | `NO`                | ![Checkmark icon](../../icons/checkmark-icon.svg)            | `Logs are available through the Log Analysis London instance` |
 | {{site.data.keyword.messages-for-rabbitmq_full_notm}}         | `NO`                | ![Checkmark icon](../../icons/checkmark-icon.svg)            | `Logs are available through the Log Analysis London instance` |
 | {{site.data.keyword.databases-for-redis_full_notm}}           | `NO`                | ![Checkmark icon](../../icons/checkmark-icon.svg)            | `Logs are available through the Log Analysis London instance` |
+| {{site.data.keyword.cloud_notm}} {{site.data.keyword.ihsdbaas_mongodb_full}}           | ![Checkmark icon](../../icons/checkmark-icon.svg)                |     `NO`       |     `NO`    |
+| {{site.data.keyword.cloud_notm}} {{site.data.keyword.ihsdbaas_postgresql_full}}           | ![Checkmark icon](../../icons/checkmark-icon.svg)                |     `NO`       |     `NO`    |
 {: caption="Table 6. Database services integration in Europe locations" caption-side="top"}
 {: #cs-dbs-table-3}
 {: tab-title="Europe"}
