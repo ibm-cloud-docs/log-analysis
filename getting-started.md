@@ -36,7 +36,7 @@ You can use {{site.data.keyword.la_full_notm}} to manage system and application 
 
 **Troubleshoot logs in real time to diagnose issues and identify problems.**
 
-By using the *live streaming tail* feature, developers and DevOps teams can diagnose issues, analyze stack traces and exceptions, identify the source of errors, and monitor different log sources through a single view.  This feature is available through the command line and through the web interface. 
+By using the *live streaming tail* feature, developers and DevOps teams can diagnose issues, analyze stack traces and exceptions, identify the source of errors, and monitor different log sources through a single view. 
 
 **Issue alerts to be notified of important actions.**
  
@@ -58,8 +58,8 @@ Control the cost of your logging infrastructure in the IBM Cloud by configuring 
 To add logging features with LogDNA in the {{site.data.keyword.cloud_notm}}, you must provision an instance of {{site.data.keyword.la_full_notm}}.
 
 Before you provision an instance of {{site.data.keyword.la_full_notm}}, consider the following information:
-* Log data is hosted on the {{site.data.keyword.cloud_notm}}.
-* Log data is sent to a third party.
+* Log data is hosted on the {{site.data.keyword.cloud_notm}}. 
+* The {{site.data.keyword.la_full_notm}} service is operated by LogDNA.
 * Your users must have platform permissions to create, view, and delete an instance of a service in the {{site.data.keyword.cloud_notm}}.
 * Your users must have platform permissions to create resources within the context of the resource group where you plan to provision the LogDNA instance.
 
