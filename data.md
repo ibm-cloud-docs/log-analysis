@@ -89,12 +89,9 @@ You can export data in JSONL format locally, write data to your terminal, or req
 
 Consider the following information when you export log data:
 * You export a set of log entries. To define the set of data that you want to export, you can apply filter and searches. You can also specify the time range. 
-* From the Web UI, when you export logs, you get an email that is sent to your email address, with a link to a compressed file that includes the data. To get the data, you must click the link and download the compressed file. Notice that the link expires automatically after 12 hours.
+* From the Web UI, when you export logs, you get an email that is sent to your email address, with a link to a compressed file that includes the data. To get the data, you must click the link and download the compressed file. Notice that the link expires automatically after 12 hours. The compressed file is hosted in {{site.data.keyword.cos_full_notm}} (COS).
 * When you export logs programmatically, you can choose to send an email, or to write data to the terminal.
-* The compressed log file that contains the data that you want to export is available for a maximum of 12 hours. 
 * When you export logs, you have a limit of lines that you can export in a request. You can specify to export older lines or newer lines in case you reach the limit in the time range that you specify for the export.
-
-Exported data is hosted in {{site.data.keyword.cos_full_notm}} (COS).
 
 At all times, the data remains in {{site.data.keyword.cloud_notm}}.
 
