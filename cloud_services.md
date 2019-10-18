@@ -86,7 +86,7 @@ The following table lists database services that send logs to {{site.data.keywor
 
 | Service     | Description | More info about the integration with {{site.data.keyword.la_full_notm}} |
 |-------------|-------------|-------------------------------------------------------------------------|
-| [{{site.data.keyword.appconservicefull_notm}}](/docs/services/AppConnect?topic=AppConnect-getting-started) | You can use {{site.data.keyword.appconservicefull_notm}} to connect your applications.   |  |
+| [{{site.data.keyword.appconservicefull}}](/docs/services/AppConnect?topic=AppConnect-getting-started) | You can use {{site.data.keyword.appconservicefull}} to connect your applications.   |  |
 {: caption="Table 3. List of integration Cloud services" caption-side="top"} 
 
 
