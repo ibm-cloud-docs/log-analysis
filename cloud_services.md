@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019
-lastupdated: "2019-10-17"
+lastupdated: "2019-10-18"
 
 keywords: LogDNA, IBM, Log Analysis, logging, services
 
@@ -26,7 +26,7 @@ subcollection: LogDNA
 # Cloud services
 {: #cloud_services}
 
-List of {{site.data.keyword.cloud_notm}} services that send logs to {{site.data.keyword.la_full_notm}}:
+List of {{site.data.keyword.cloud}} services that send logs to {{site.data.keyword.la_full_notm}}:
 {:shortdesc}
 
 You can monitor logs from CF apps and enabled services through [the {{site.data.keyword.la_short}} instance that is configured to receive platform services logs](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-config_svc_logs) in the location where the app or service is running. 
@@ -51,7 +51,7 @@ The following table lists container services that send logs to {{site.data.keywo
 
 | Service     | Description | More info about the integration with {{site.data.keyword.la_full_notm}} |
 |-------------|-------------|-------------------------------------------------------------------------|
-| [{{site.data.keyword.registrylong_notm}}](/docs/services/Registry?topic=registry-getting-started) | You can use {{site.data.keyword.registrylong_notm}} to provide a multi-tenant private image registry that you can use to store and share your Docker images with users in your {{site.data.keyword.cloud_notm}} account. | [More info](/docs/Registry?topic=registry-platform_services_logs) |
+| [{{site.data.keyword.registrylong_notm}}](/docs/services/Registry?topic=registry-getting-started) | You can use {{site.data.keyword.registrylong_notm}} to provide a multi-tenant private image registry that you can use to store and share your container images with users in your {{site.data.keyword.cloud_notm}} account. | [More info](/docs/Registry?topic=registry-platform_services_logs) |
 {: caption="Table 1. List of container services" caption-side="top"} 
 
 ## Platform: Database services
