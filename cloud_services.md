@@ -2,12 +2,11 @@
 
 copyright:
   years: 2019
-lastupdated: "2019-09-02"
+lastupdated: "2019-10-28"
 
 keywords: LogDNA, IBM, Log Analysis, logging, services
 
 subcollection: LogDNA
-
 
 ---
 
@@ -21,7 +20,6 @@ subcollection: LogDNA
 {:download: .download}
 {:important: .important}
 {:note: .note}
-
 
 # Cloud services
 {: #cloud_services}
@@ -44,6 +42,15 @@ You can monitor logs from CF apps through the {{site.data.keyword.la_short}} ins
 
 To see the list of {{site.data.keyword.la_full_notm}} locations where this service sends logs, see [Compute: Cloud Foundry](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-cloud_services_locations#cs_locations_platform_cfapps).
 
+## Platform: Container services
+{: #platform_container}
+
+The following table lists container services that send logs to {{site.data.keyword.la_full_notm}}:
+
+| Service     | Description | More info about the integration with {{site.data.keyword.la_full_notm}} |
+|-------------|-------------|-------------------------------------------------------------------------|
+| [{{site.data.keyword.registrylong_notm}}](/docs/services/Registry?topic=registry-getting-started) | You can use {{site.data.keyword.registrylong_notm}} to provide a multi-tenant private image registry that you can use to store and share your container images with users in your {{site.data.keyword.cloud_notm}} account. | [More info](/docs/services/Registry?topic=registry-registry_logs) |
+{: caption="Table 1. List of container services" caption-side="top"} 
 
 ## Platform: Database services
 {: #database}
@@ -66,8 +73,6 @@ You can monitor logs through the {{site.data.keyword.la_short}} instance that is
 
 To see the list of {{site.data.keyword.la_full_notm}} locations where these services send logs, see [Platform: Database services](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-cloud_services_locations#cs_locations_database).
 
-
-
 ## Platform: Integration services
 {: #integration}
 
@@ -78,12 +83,10 @@ The following table lists database services that send logs to {{site.data.keywor
 | [{{site.data.keyword.appconservicefull_notm}}](/docs/services/AppConnect?topic=AppConnect-getting-started) | You can use {{site.data.keyword.appconservicefull_notm}} to connect your applications.   |  |
 {: caption="List of integration Cloud services" caption-side="top"} 
 
-
 ## Platform: Security services
 {: #security}
 
 The following table lists security Cloud services that send logs to {{site.data.keyword.la_full_notm}}:
-
 
 | Service     | Description | More info about the integration with {{site.data.keyword.la_full_notm}} |
 |-------------|-------------|-------------------------------------------------------------------------|
