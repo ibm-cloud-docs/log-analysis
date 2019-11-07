@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019
-lastupdated: "2019-08-12"
+lastupdated: "2019-11-07"
 
 keywords: LogDNA, IBM, Log Analysis, logging, services
 
@@ -47,7 +47,7 @@ The following table shows the locations where automatic collection of Cloud Foun
 
 | Service                                                       | `Tokyo (jp-tok)`                                  | `Sydney (au-syd)` |
 |---------------------------------------------------------------|:-------------------------------------------------:|:------------------|
-| Cloud Foundry (CF)                                            | ![Checkmark icon](../../icons/checkmark-icon.svg) | `Logs are available through the Log Analysis Tokyo instance` |
+| Cloud Foundry (CF)                                            | ![Checkmark icon](../../icons/checkmark-icon.svg) | ![Checkmark icon](../../icons/checkmark-icon.svg) |
 {: caption="Table 2. Cloud Foundry in Asia Pacific" caption-side="top"}
 {: #cs-cfapps-table-2}
 {: tab-title="Asia Pacific"}
