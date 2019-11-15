@@ -25,7 +25,7 @@ subcollection: LogDNA
 # Adoption guidelines for regulated and highly available workloads
 {: #adoption}
 
-In {{site.data.keyword.la_full_notm}}, you can define custom data parsing templates 
+In {{site.data.keyword.la_full_notm}}, 
 {:shortdesc}
 
 
@@ -43,9 +43,7 @@ In {{site.data.keyword.la_full_notm}}, you can define custom data parsing templa
 
 ![Checkmark icon](../../icons/checkmark-icon.svg)
 
-HIPAA (Health Insurance Portability and Accountability Act of 1996) is United States legislation that provides data privacy and security provisions for safeguarding medical information.
 
-Payment Card Industry Data Security Standard (PCI DSS) is an information security standard for organizations that handle branded credit cards from the major card schemes. The PCI Standard is mandated by the card brands and administered by the Payment Card Industry Security Standards Council.  controls surrounding the storing, transmission and processing of card holder’s details, so that their data is protected.
 
 
 ## Control access 

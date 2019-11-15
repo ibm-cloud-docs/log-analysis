@@ -43,7 +43,7 @@ For a listing of available certificates and instructions on obtaining pertinent 
 ## Payment Card Industry (PCI) data security standards
 {: #compliance-pci}
 
-{{site.data.keyword.la_full_notm}} is compliant with the PCI data security standards. 
+{{site.data.keyword.la_full_notm}} is compliant with the Payment Card Industry Data Security Standard (PCI DSS). 
 
 ## HIPAA readiness
 {: #compliance-hipaa}
