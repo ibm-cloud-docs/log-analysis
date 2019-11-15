@@ -11,9 +11,13 @@ IBM Log Analysis with LogDNA
     cloud_services_locations.md
     logdna_agent.md
     monitor_cfapp_logs.md
-    manage_eu_logs.md
     network.md
     iam.md
+
+    {: .topicgroup}
+    Security and Compliance
+        compliance.md
+        manage_eu_logs.md
 
     {: .topicgroup}
     Tutorials
