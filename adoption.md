@@ -142,49 +142,34 @@ Define a minimum of 4 access groups:
 
 A policy determines the full set of actions that a user or service ID can perform. 
 
-By default, the account owner is the only user in the account that can grant permissions to other users to manage and work with the {{site.data.keyword.la_full_notm}} service. 
-
-To allow other users in the account to manage the service and be able to grant permisisons to work with the {{site.data.keyword.la_full_notm}} service, define a policy for the {{site.data.keyword.la_full_notm}} service with the platform role **administrator**. Grant this policy to the administrators access group.
+For each access group, define a policy for each resource group that defines the level of access to that resource group.  
 {: note}
 
-Access to resources within a resource group can be granted to all resources in a group, or only selected services within a group.
+By default, the account owner is the only user in the account that can grant permissions to other users to manage and work with the {{site.data.keyword.la_full_notm}} service. 
 
-| Role              | Actions for access to manage resource groups | Actions on resources in resource groups |
-|:------------------|:---------------------------------------------|:----------------------------------------|
-| `Viewer role`       | View the group and its characteristics, but can't view resources in the group without a policy on the resource itself | View resources in the group, if user has a viewer or higher role assigned on the resource group itself |
-| `Operator role` | Not applicable | Not applicable |
-| `Editor role` | View or edit name or other characteristics of the group, but not the resources in the group | Create, delete, edit, suspend, resume, view, bind, and manage access of resources in the resource group |
-| `Administrator role` |  View, edit, or manage access for the group, but not the resources in the group | Create, delete, edit, suspend, resume, view, bind, and manage access of resources in the resource group |
-{: row-headers}
-{: class="comparison-table"}
-{: caption="Table 2. Access for resource groups" caption-side="top"}
-{: summary="This table has row and column headers. The row headers identify the selected role of an access policy. The column headers identify the type of policy whether its assigning access to manage a resource group or access to resources within a resource group. The remaining cells tell you the allowable actions based on the type of policy and the specific role that is selected as defined in the header rows."}
+To allow other users or service IDs in the account to manage the service and be able to grant permisisons to work with the {{site.data.keyword.la_full_notm}} service, define a policy for the {{site.data.keyword.la_full_notm}} service with the platform role **administrator**. Grant this policy to the administrators access group.
+{: note}
 
-Define a policy for each resource group that defines the level of access to that resource group.  
+Access to resources within a resource group can be granted to all resources in a group, or only selected services within a group. 
 
-To provide access for users or groups of users that are organized in access groups, the account owner must define the access policies to work with the {{site.data.keyword.la_full_notm}} service.
-
-To manage and work with the {{site.data.keyword.la_full_notm}} service, you must define multiple policies:
-* You need a policy that determines the permissions of users 
-
-. Access policies set a target, which is typically a service instance or all instances of a service in a resource group, and a role, which defines what type of access is allowed. 
-
-is the There are two types of access policies that you need to assign  to enable the users in your account access to working with resources in resource groups:
-
-    Access to resources within a resource group. Access can be granted to all resources in a group, or only selected services within a group.
-    Access to enable the users to manage the group, meaning users can view the group, edit the name of the group, manage access for others to manage the group and most importantly to create and add new service instances to a group. This is called a policy on the resource group itself.
-
-
-When you plan the policies that you need to grant users or serviceIDs, define policies for the following resources:
-* The resource group associated with an {{site.data.keyword.la_full_notm}} instance.
-* The {{site.data.keyword.la_full_notm}} instance.
-
+Access policies set a target, which is typically a service instance or all instances of a service in a resource group, and a role, which defines what type of access is allowed.
 
 Roles define the actions that a user or serviceID can run. There are different types of roles in the {{site.data.keyword.cloud_notm}}:
 * *Platform management roles* define permissions to work with the service at the platform level, for example, some actions are assign user access for the service, create or delete service IDs, create instances, assign policies for your service to other users, and bind instances to applications. [Learn more](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-iam#platform).
 * *Service access roles* define permissions for calling the service's API. [Learn more](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-iam#service).
 
-**Every user that requires permissions to work with the {{site.data.keyword.la_full_notm}} service in your account must be assigned a policy for the {{site.data.keyword.la_full_notm}} service that includes a platform role and a service role.** 
+For each access group, define a policy for each resource group that specifies the permissions granted to work with the resource group, the permissions to manage instances of the {{site.data.keyword.la_full_notm}} service in that resource group, and the permissions to run {{site.data.keyword.la_full_notm}} tasks.
+{: note}
+
+| Access group             | Policy         |
+|--------------------------|----------------|
+| `Administrators`         | Grant a policy for the resource group with resource group access **administrator**. Select the {{site.data.keyword.la_full_notm}} service, and select the platform role **administrator**, and the service role **manager**. |
+| `Managers`               | Grant a policy for the resource group with platform role **editor**. Select the {{site.data.keyword.la_full_notm}} service, and select the platform role **editor**, and the service role **manager**. |
+| `Advanced service users` | Grant a policy for the resource group with platform role **viewer**. Select the {{site.data.keyword.la_full_notm}} service, and select the platform role **viewer**, and the service role **standard member**. |
+| `Users`                  | Grant a policy for the resource group with platform role **viewer**. Select the {{site.data.keyword.la_full_notm}} service, and select the platform role **viewer**, and the service role **reader**. |
+{: caption="Table 2. Roles per access group policy" caption-side="top"} 
+
+Every user that requires permissions to work with the {{site.data.keyword.la_full_notm}} service in your account must be assigned a resource group policy that inclides the permissions for the {{site.data.keyword.la_full_notm}} service.
 {: note}
 
 ### Grant policies to users
