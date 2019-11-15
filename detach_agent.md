@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2019
-lastupdated: "2019-10-15"
+lastupdated: "2019-11-11"
 
 keywords: LogDNA, IBM, Log Analysis, logging, detach config agent
 
@@ -94,34 +94,61 @@ To stop your Kubernetes cluster from forwarding logs to your LogDNA instance, co
 2. Set the cluster where you want to configure logging as the context for this session.
 
    ```
-   ibmcloud ks cluster config --cluster <cluster_name_or_ID>
+   ibmcloud cs cluster config --cluster <cluster_name_or_ID>
    ```
    {: pre}
 
    When the download of the configuration files is finished, a command is displayed that you can use to set the path to the local Kubernetes configuration file as an environment variable. Copy and paste the command that is displayed in your terminal to set the `KUBECONFIG` environment variable.
 
-3. Log in to the cluster. Run the following command and enter your IBMid userid and password.
+3. Log in to the cluster. Run one of the following commands and enter valid credentials.
+
+    There are different methods to login to an OpenShift cluster. [Learn more](/docs/openshift?topic=openshift-access_cluster#access_automation).
+
+    For example, you can create an {{site.data.keyword.cloud_notm}} IAM API key, and then use the API key to log in to an OpenShift cluster. 
+
+    Create an {{site.data.keyword.cloud_notm}} API key.<p class="important">Save your API key in a secure location. You cannot retrieve the API key again. If you want to export the output to a file on your local machine, include the `--file <path>/<file_name>` flag.</p>
 
     ```
-    oc login
+    ibmcloud iam api-key-create <name>
     ```
     {: pre}
 
-4. Remove the secret from your Kubernetes cluster. The Kubernetes secret contains the LogDNA ingestion key. Run the following command:
+    Then, use the API key to login:
 
+    ```
+    oc login -u apikey -p <API_key>
+    ```
+    {: pre}
+
+4. Delete the LogDNA agent serviceaccount.
+
+    ```
+    oc delete serviceaccount logdna-agent -n ibm-observe
+    ```
+    {: pre}
+
+4. Remove the LogDNA secrets from your cluster. Each secret contains the LogDNA ingestion key. Run the following commands:
+
+    List secrets.
+
+    ```
+    oc get secrets -n PROJECT
+    ```
+    {: pre}
+
+    Then, run the following command for each secret: 
+    
     ```
     oc delete secret logdna-agent-key -n PROJECT
     ```
     {: pre}
 
-    Where
+    Where *PROJECT* is the namespace where the LogDNA pods run. Set this value to **ibm-observe**.
 
-    PROJECT is the namespace where the LogDNA pods run. Set this value to **ibm-observe**.
-
-4. Remove the LogDNA agent on every worker(node) of your Kubernetes cluster. The LogDNA agent is responsible for collecting and forwarding your logs. Run the following command:
+5. Remove the LogDNA agent on every worker(node) of your Kubernetes cluster. The LogDNA agent is responsible for collecting and forwarding your logs. Run the following command:
 
     ```
-    oc delete daemonset logdna-agent -n PROJECT
+    oc delete daemonset logdna-agent
     ```
     {: codeblock}
 
@@ -129,16 +156,15 @@ To stop your Kubernetes cluster from forwarding logs to your LogDNA instance, co
 
     PROJECT is the namespace where the LogDNA pods run. Set this value to **ibm-observe**.
 
-5. Verify that the LogDNA agent is deleted successfully. Run the following command:
+5. Verify that the LogDNA agent is deleted successfully. Run the following command to verify that LogDNA agent pods are not running:
 
     ```
     oc get pods -n PROJECT
     ```
     {: codeblock}
 
-    Where
 
-    PROJECT is the namespace where the LogDNA pods run. Set this value to **ibm-observe**.
 
-    You should not see any LogDNA pods.
+
+
 
