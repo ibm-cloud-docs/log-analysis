@@ -35,7 +35,7 @@ In {{site.data.keyword.la_full_notm}},
 
 Across every industry, organizations require tighter controls and visibility into where their data is stored and processed in the {{site.data.keyword.cloud}}. 
 
-Enable your {{site.data.keyword.cloud_notm}} account to be EU supported and HIPAA supported.
+**Enable your {{site.data.keyword.cloud_notm}} account to be EU supported and HIPAA supported.**
 {: important}
 
 Notice that only the account owner can enable the account to be EU supported and HIPAA supported. 
@@ -60,7 +60,7 @@ You can provision {{site.data.keyword.la_full_notm}} instances in different {{si
 * Each location represents the geographic area where your {{site.data.keyword.la_full_notm}} requests are handled and processed for that instance, and where data is resident. 
 * Each MZR location has three different data centers for redundancy. The data for each location is kept in the three data centers near that location. If all three data centers in a location fail, the {{site.data.keyword.la_full_notm}} service for that location becomes unavailable.
 
-When you choose the locations where you plan to provision {{site.data.keyword.la_full_notm}} instances, check the regulatory and high availability (HA) specifications of each location. For more information, see [Locations](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-regions).
+**When you choose the locations where you plan to provision {{site.data.keyword.la_full_notm}} instances, check the regulatory and high availability (HA) specifications of each location. For more information, see [Locations](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-regions).**
 {: note}
 
 For example, in Europe, only the Frankfurt region is EU-supported.
@@ -75,7 +75,7 @@ Resource groups are a logical container for organizing your IAM-enabled resource
 * You assign a resource to its resource group when you create it from the catalog. 
 * You can't change the resource group assignment after you set it, which is why it's important to plan and set up your resource groups.
 
-Use resource groups to organize your {{site.data.keyword.la_full_notm}} instances for access control and billing purposes.
+**Use resource groups to organize your {{site.data.keyword.la_full_notm}} instances for access control and billing purposes.**
 {: note}
 
 Account owners can add resources to any resource group. Other users must be granted access by using an IAM access policy to add resources to resource groups. 
@@ -91,7 +91,7 @@ A tag is a label that you assign to a resource for easy filtering of resources i
 * You can use tags to organize your resources and easily find them later. 
 * You can also use tags to help you with identifying specific team usage or cost allocation when you view your [exported usage report](/docs/billing-usage?topic=billing-usage-viewingusage#export-csv).
 
-Use tags to organize your resources and track usage costs. 
+**Use tags to organize your resources and track usage costs.**
 {: note}
 
 Tags are case-sensitive, and the maximum length of a tag is 128 characters. 
@@ -99,12 +99,12 @@ Tags are case-sensitive, and the maximum length of a tag is 128 characters.
 * Colons turn the tag into a string where you can isolate two logical parts, like a `key:value` pair. You can't use a colon in a tag without creating this pairing. 
 * A comma separates tags and can't be used within the tag name itself.
 
-When you define your tags, do not store information in tags that might disclose sensitive information to others in the same account.
+**When you define your tags, do not store information in tags that might disclose sensitive information to others in the same account.**
 {: note}
 
 Tags are visible to all members of an account. 
 
-To control tag visibility, circulate tagging guidelines, and let users know that tags are visible account-wide.
+**To control tag visibility, circulate tagging guidelines, and let users know that tags are visible account-wide.**
 {: note}
 
 
@@ -112,7 +112,7 @@ To control tag visibility, circulate tagging guidelines, and let users know that
 ## 3. Define the IAM strategy
 {: #adoption_iam}
 
-Use {{site.data.keyword.iamlong}} (IAM) to securely authenticate users and service IDs, and to control access to all cloud resources and data consistently in the {{site.data.keyword.cloud_notm}}. 
+**Use {{site.data.keyword.iamlong}} (IAM) to securely authenticate users and service IDs, and to control access to all cloud resources and data consistently in the {{site.data.keyword.cloud_notm}}.**
 {: important}
 
 
@@ -122,7 +122,7 @@ Use {{site.data.keyword.iamlong}} (IAM) to securely authenticate users and servi
 
 You can assign permissions to work with the {{site.data.keyword.la_full_notm}} service within the context of the service, a resource group, or an access group. 
 
-Use access groups to organize a set of users and service IDs into a single entity that makes it easy for you to manage IAM permissions.
+**Use access groups to organize a set of users and service IDs into a single entity that makes it easy for you to manage IAM permissions.**
 {: note}
 
 You can create multiple access groups.
@@ -142,12 +142,12 @@ Define a minimum of 4 access groups:
 
 A policy determines the full set of actions that a user or service ID can perform. 
 
-For each access group, define a policy for each resource group that defines the level of access to that resource group.  
+**For each access group, define a policy for each resource group that defines the level of access to that resource group.** 
 {: note}
 
 By default, the account owner is the only user in the account that can grant permissions to other users to manage and work with the {{site.data.keyword.la_full_notm}} service. 
 
-To allow other users or service IDs in the account to manage the service and be able to grant permisisons to work with the {{site.data.keyword.la_full_notm}} service, define a policy for the {{site.data.keyword.la_full_notm}} service with the platform role **administrator**. Grant this policy to the administrators access group.
+**To allow other users or service IDs in the account to manage the service and be able to grant permisisons to work with the {{site.data.keyword.la_full_notm}} service, define a policy for the {{site.data.keyword.la_full_notm}} service with the platform role **administrator**. Grant this policy to the administrators access group.**
 {: note}
 
 Access to resources within a resource group can be granted to all resources in a group, or only selected services within a group. 
@@ -158,7 +158,7 @@ Roles define the actions that a user or serviceID can run. There are different t
 * *Platform management roles* define permissions to work with the service at the platform level, for example, some actions are assign user access for the service, create or delete service IDs, create instances, assign policies for your service to other users, and bind instances to applications. [Learn more](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-iam#platform).
 * *Service access roles* define permissions for calling the service's API. [Learn more](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-iam#service).
 
-For each access group, define a policy for each resource group that specifies the permissions granted to work with the resource group, the permissions to manage instances of the {{site.data.keyword.la_full_notm}} service in that resource group, and the permissions to run {{site.data.keyword.la_full_notm}} tasks.
+**For each access group, define a policy for each resource group that specifies the permissions granted to work with the resource group, the permissions to manage instances of the {{site.data.keyword.la_full_notm}} service in that resource group, and the permissions to run {{site.data.keyword.la_full_notm}} tasks.**
 {: note}
 
 | Access group             | Policy         |
@@ -169,7 +169,7 @@ For each access group, define a policy for each resource group that specifies th
 | `Users`                  | Grant a policy for the resource group with platform role **viewer**. Select the {{site.data.keyword.la_full_notm}} service, and select the platform role **viewer**, and the service role **reader**. |
 {: caption="Table 2. Roles per access group policy" caption-side="top"} 
 
-Every user that requires permissions to work with the {{site.data.keyword.la_full_notm}} service in your account must be assigned a resource group policy that inclides the permissions for the {{site.data.keyword.la_full_notm}} service.
+**Every user that requires permissions to work with the {{site.data.keyword.la_full_notm}} service in your account must be assigned a resource group policy that inclides the permissions for the {{site.data.keyword.la_full_notm}} service.**
 {: note}
 
 ### Grant policies to users
@@ -177,7 +177,7 @@ Every user that requires permissions to work with the {{site.data.keyword.la_ful
 
 You can assign a single policy to the access group instead of assigning the same access multiple times per individual user or service ID. 
 
-Add users and service IDs to an access group. Grant permissions to these users and service IDs through the access group. 
+**Add users and service IDs to an access group. Grant permissions to these users and service IDs through the access group.**
 {: note}
 
 [Learn more](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-work_iam).
