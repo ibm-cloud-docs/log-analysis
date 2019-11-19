@@ -7,6 +7,7 @@ IBM Log Analysis with LogDNA
     {: .navgroup id="learn"}
     getting-started.md
     data.md
+    logdna_agent.md
     cloud_services.md
     cloud_services_locations.md
     monitor_cfapp_logs.md
@@ -28,15 +29,18 @@ IBM Log Analysis with LogDNA
 
    {: .topicgroup}
     DevOps tasks
+        archive.md
         config_svc_logs.md
         control_usage.md
+        exclusion_rules.md
         work_iam.md
+        ingestion_key.md
         reuse_resource_definitions.md
-        archive.md
 
     {: .topicgroup}
     LogDNA agent
         config_agent_kube_cluster.md
+        config_agent_os_cluster.md
         config_agent_linux.md
         exclude_logs_from_agent.md
         adding_tags.md
@@ -54,7 +58,6 @@ IBM Log Analysis with LogDNA
 
     {: .topicgroup}
     Send logs
-        ingestion_key.md
         ingest.md
     {: .navgroup-end}
 
