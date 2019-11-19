@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2019
-lastupdated: "2019-06-03"
+lastupdated: "2019-11-19"
 
 keywords: LogDNA, IBM, Log Analysis, logging, ingestion key
 
@@ -61,6 +61,52 @@ To get the ingestion key for an {{site.data.keyword.la_full_notm}} instance by u
 3. Select **API keys**. 
 
 You can see the ingestion keys that are enabled. 
+
+
+
+## Get the ingestion key through the CLI
+{: #ingestion_key_cli}
+
+To get the ingestion key for a LogDNA instance through the command line, complete the following steps:
+
+1. [Pre-requisite] [Install the {{site.data.keyword.cloud_notm}} CLI](/docs/cli?topic=cloud-cli-getting-started).
+
+   If the CLI is installed, continue with the next step.
+
+2. Log in to the region in the {{site.data.keyword.cloud_notm}} where the LogDNA instance is running. Run the following command: [`ibmcloud login`](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_cli#ibmcloud_login)
+/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_cli#ibmcloud_login
+3. Set the resource group where the LogDNA instance is running. Run the following command: [`ibmcloud target`](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_cli#ibmcloud_target)
+
+    By default, the `default` resource group is set.
+
+4. Get the instance name. Run the following command: [`ibmcloud resource service-instances`](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_commands_resource#ibmcloud_resource_service_instances)
+
+    ```
+    ibmcloud resource service-instances
+    ```
+    {: pre}
+
+5. Get the name of the key that is associated with the LogDNA instance. Run the [`ibmcloud resource service-keys`](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_commands_resource#ibmcloud_resource_service_instances) command:
+
+    ```
+    ibmcloud resource service-keys --instance-name INSTANCE_NAME
+    ```
+    {: pre}
+
+    where INSTANCE_NAME is the name of the instance that you obtained in the previous step.
+
+6. Get the ingestion key. Run the [`ibmcloud resource service-key`](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_commands_resource#ibmcloud_resource_service_key) command:
+
+    ```
+    ibmcloud resource service-key APIKEY_NAME
+    ```
+    {: pre}
+
+    where APIKEY_NAME is the name of the API key.
+ 
+    The output from this command includes the field **ingestion key** that contains the ingestion key for the instance.
+
+
 
 
 
