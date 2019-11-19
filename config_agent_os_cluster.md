@@ -216,6 +216,56 @@ Choose one of the following commands:
 {: class="simple-tab-table"}
 {: row-headers}
 
+Then, complete the following steps:
+
+1.  Download a local copy of the configuration file to edit.
+    
+    ```
+    oc get ds logdna-agent -n ibm-observe -o yaml > logdna-ds.yaml
+    ```
+    {: pre}
+
+2. Add the mountPath `/var/data/kubeletlogs`.
+        
+    ```yaml
+    volumeMounts:
+    - mountPath: /var/data/kubeletlogs
+        name: vardatakubeletlogs
+    ```
+    {: screen}
+
+3. Add the volume `/var/data/kubeletlogs`.
+        
+    ```yaml
+    volumes:
+    - hostPath:
+        path: /var/data/kubeletlogs
+        name: vardatakubeletlogs
+    ```
+    {: screen}
+
+4.  Save the configuration file and apply your changes.
+        
+    ```
+    oc apply -f logdna-ds.yaml -n ibm-observe
+    ```
+    {: pre}
+
+    Delete any `logdna-agent` pods so that they pick up the configuration change.
+        
+    ```
+    oc delete pod <logdna-agent-123456>
+    ```
+    {: pre}
+
+5.  Verify that the new `logdna-agent` pods on each node are in a **Running** status.
+        
+    ```
+    oc get pods
+    ```
+    {: pre}
+
+
 ## Step 5. Verify that the LogDNA agent is deployed successfully
 {: #config_agent_os_cluster_step5}
 
@@ -228,7 +278,7 @@ To verify that the LogDNA agent is deployed successfully, run the following comm
     ```
     {: pre}
 
-2. Verify the pods are running.
+2. Verify that the `logdna-agent` pods on each node are in a **Running** status.
 
     ```
     oc get pods -n PROJECT_NAME
