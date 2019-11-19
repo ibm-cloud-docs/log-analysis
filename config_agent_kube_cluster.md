@@ -29,7 +29,10 @@ The LogDNA agent is responsible for collecting and forwarding logs to your {{sit
 
 To configure your Kubernetes cluster to send logs to your {{site.data.keyword.la_full_notm}} instance, you must install a *logdna-agent* pod on each node of your cluster. The LogDNA agent reads log files from the pod where it is installed, and forwards the log data to your LogDNA instance.
 
-To configure your Kubernetes cluster to forward logs to your LogDNA instance, complete the following steps from the command line:
+Complete the following steps from the command line to configure your Kubernetes cluster to forward logs to your LogDNA instance:
+
+Kubernetes 1.6.x is not supported currently.
+{: note}
 
 ## Prereq
 {: #config_agent_kube_cluster_prereq}

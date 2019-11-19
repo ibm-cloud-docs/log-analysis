@@ -147,8 +147,10 @@ A policy determines the full set of actions that a user or service ID can perfor
 
 By default, the account owner is the only user in the account that can grant permissions to other users to manage and work with the {{site.data.keyword.la_full_notm}} service. 
 
-**To allow other users or service IDs in the account to manage the service and be able to grant permisisons to work with the {{site.data.keyword.la_full_notm}} service, define a policy for the {{site.data.keyword.la_full_notm}} service with the platform role **administrator**. Grant this policy to the administrators access group.**
+**To allow other users or service IDs in the account to manage the service and be able to grant permisisons to work with the {{site.data.keyword.la_full_notm}} service, define a policy for the {{site.data.keyword.la_full_notm}} service with the platform role **administrator**. Grant this policy to the administrators access group.** 
 {: note}
+
+For more information, see [Granting permissions to a user to become an administrator of the service](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-work_iam#admin_account).
 
 Access to resources within a resource group can be granted to all resources in a group, or only selected services within a group. 
 
@@ -171,9 +173,6 @@ Roles define the actions that a user or serviceID can run. There are different t
 
 **Every user that requires permissions to work with the {{site.data.keyword.la_full_notm}} service in your account must be assigned a resource group policy that inclides the permissions for the {{site.data.keyword.la_full_notm}} service.**
 {: note}
-
-### Grant policies to users
-{: #adoption_iam_grant_policies}
 
 You can assign a single policy to the access group instead of assigning the same access multiple times per individual user or service ID. 
 
@@ -202,6 +201,9 @@ bsence alerting tests for the absence of data flowing into your service instance
 
 
 ## 5. Define the archive strategy
+
+
+
 
 
 Disaster Recovy
@@ -235,4 +237,6 @@ Review and identify the right COS configuration for your business needs.  Set t
 LogDNA can archive to a client configured COS bucket.  There are many COS configurations helping clients meet a variety of needs.  Data may need to be replicated across Regions to meet business and regulated requirements.  Alternatively data may need to be restricted to certain locations to meet data locality requirements.  Learn more about COS configurations here.
 
 
-###   VRF
+## Network strategy
+
+ VRF
