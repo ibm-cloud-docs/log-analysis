@@ -31,8 +31,6 @@ To configure your Kubernetes cluster to send logs to your {{site.data.keyword.la
 
 Complete the following steps from the command line to configure your Kubernetes cluster to forward logs to your LogDNA instance:
 
-Kubernetes 1.6.x is not supported currently.
-{: note}
 
 ## Prereq
 {: #config_agent_kube_cluster_prereq}
