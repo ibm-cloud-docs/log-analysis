@@ -188,7 +188,7 @@ The LogDNA agent collects logs with the extension `*.log` and extensionsless fil
 
 Use the following yaml file to create the `logdna-agent-ds-os.yaml` file:
 
-Replace `region` with the value of the location where the LogDNA instance is available. For example, for US South, region is set to `us-south`.
+Replace `region` with the value of the location where the LogDNA instance is available. For example, for US South, region is set to `us-south`. If you use private endpoints, set `LDAPIHOST` to `api.private.<region>.logging.cloud.ibm.com` and `LDLOGHOST` to `logs.private.<region>.logging.cloud.ibm.com`.
 {: note}
 
 ```yaml
