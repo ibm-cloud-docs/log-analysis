@@ -151,7 +151,7 @@ You must create a Kubernetes secret to store your LogDNA ingestion key for your 
 
     `PROJECT` is the namespace where the LogDNA pods run. Set this value to **ibm-observe**.
 
-    `S`ERVICEACCOUNT_NAME` is the name of the service account that you use to deploy the LogDNA agent. Set this value to **logdna-agent**.
+    `SERVICEACCOUNT_NAME` is the name of the service account that you use to deploy the LogDNA agent. Set this value to **logdna-agent**.
 
     ```
     oc adm policy add-scc-to-user privileged system:serviceaccount:ibm-observe:logdna-agent
