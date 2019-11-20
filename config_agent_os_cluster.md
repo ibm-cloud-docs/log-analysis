@@ -79,16 +79,7 @@ Complete the following steps:
     
     `REGION` is the region where the cluster is available, for example, `us-south`.
 
-4. Set the cluster context in your session.
-
-   ```
-   ibmcloud oc cluster config --cluster <cluster_name_or_ID>
-   ```
-   {: pre}
-
-   When the download of the configuration files is finished, a command is displayed that you can use to set the path to the local Kubernetes configuration file as an environment variable. Copy and paste the command that is displayed in your terminal to set the `KUBECONFIG` environment variable.
-
-5. Log in to the cluster. Run one of the following commands and enter valid credentials.
+4. Log in to the cluster. Run one of the following commands and enter valid credentials.
 
     There are different methods to login to an OpenShift cluster. [Learn more](/docs/openshift?topic=openshift-access_cluster#access_automation).
 
