@@ -62,7 +62,7 @@ Complete the following steps:
 2. List the clusters to find out in which region and resource group the cluster is available.
 
     ```
-    ibmcloud ks clusters
+    ibmcloud oc clusters
     ```
     {: pre}
 
