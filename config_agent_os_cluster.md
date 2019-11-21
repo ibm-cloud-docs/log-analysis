@@ -88,9 +88,7 @@ Complete the following steps:
 
     When the download of the configuration files is finished, a command is displayed that you can use to set the path to the local Kubernetes configuration file as an environment variable. Copy and paste the command that is displayed in your terminal to set the KUBECONFIG environment variable.
 
-5. Log in to the cluster. Run one of the following commands and enter valid credentials.
-
-    There are different methods to login to an OpenShift cluster. [Learn more](/docs/openshift?topic=openshift-access_cluster#access_automation).
+5. Log in to the cluster. Choose a method to login to an OpenShift cluster. [Learn more about the methods to login](/docs/openshift?topic=openshift-access_cluster#access_automation).
 
     For example, you can create an {{site.data.keyword.cloud_notm}} IAM API key, and then use the API key to log in to an OpenShift cluster. 
 
@@ -286,7 +284,7 @@ spec:
   updateStrategy:
     type: OnDelete
 ```
-{: screen}
+{: codeblock}
 
 
 Then, create the deamon set:
@@ -300,6 +298,9 @@ oc create -f logdna-agent-ds-os.yaml -n ibm-observe
 
 ## Step 5. Verify that the LogDNA agent is deployed successfully
 {: #config_agent_os_cluster_step5}
+
+### Verify the LogDNA agent is deployed successfully
+{: #config_agent_os_cluster_step51}
 
 To verify that the LogDNA agent is deployed successfully, run the following command:
 
@@ -350,6 +351,10 @@ oc logs logdna-agent-xxxkz
 {: pre}
 
 
+### Launch the LogDNA webUI to see the logs
+{: #config_agent_os_cluster_step52}
+
+Next, launch the LogDNA web UI to verify that logs from the cluster are available through the UI. See [Navigating to the web UI](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-launch) and [Viewing logs](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-view_logs).
 
 
 
