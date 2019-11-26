@@ -107,3 +107,12 @@ You can monitor logs through the {{site.data.keyword.la_short}} instance that is
 To see the list of {{site.data.keyword.la_full_notm}} locations where this service sends logs, see [Platform: Security services](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-cloud_services_locations#cs_locations_security).
 
 
+
+## Watson AI
+{: #cloud_services_locations_watson_ai}
+
+
+| Service     | Description | More info about the integration with {{site.data.keyword.la_full_notm}} |
+|-------------|-------------|-------------------------------------------------------------------------|
+| [Voice agent](/docs/services/voice-agent?topic=voice-agent-getting-started) |   | [More info](/docs/services/voice-agent?topic=voice-agent-log-analysis-integration) |
+{: caption="Table 5. List of Watson AI Cloud services" caption-side="top"} 

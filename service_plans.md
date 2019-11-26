@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2019
-lastupdated: "2019-10-01"
+lastupdated: "2019-11-25"
 
 keywords: LogDNA, IBM, Log Analysis, logging, getting started
 

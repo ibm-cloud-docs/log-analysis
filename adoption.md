@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2019
-lastupdated: "2019-11-15"
+lastupdated: "2019-11-25"
 
 keywords: LogDNA, IBM, Log Analysis, logging, config agent
 
@@ -171,7 +171,7 @@ Roles define the actions that a user or serviceID can run. There are different t
 | `Users`                  | Grant a policy for the resource group with platform role **viewer**. Select the {{site.data.keyword.la_full_notm}} service, and select the platform role **viewer**, and the service role **reader**. |
 {: caption="Table 2. Roles per access group policy" caption-side="top"} 
 
-**Every user that requires permissions to work with the {{site.data.keyword.la_full_notm}} service in your account must be assigned a resource group policy that inclides the permissions for the {{site.data.keyword.la_full_notm}} service.**
+**Every user that requires permissions to work with the {{site.data.keyword.la_full_notm}} service in your account must be assigned a resource group policy that includes the permissions for the {{site.data.keyword.la_full_notm}} service.**
 {: note}
 
 You can assign a single policy to the access group instead of assigning the same access multiple times per individual user or service ID. 
