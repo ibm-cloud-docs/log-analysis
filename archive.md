@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2019
-lastupdated: "2019-09-27"
+lastupdated: "2019-11-27"
 
 keywords: LogDNA, IBM, Log Analysis, logging, archive logs, COS, cloud object storage
 
@@ -342,12 +342,6 @@ Complete the following steps to configure archiving of your {{site.data.keyword.
 
 After you save the configuration, logs are archived once a day.
 
-
-
-## Limitations
-{: #archive_limitations}
-
-* You cannot archive data to a bucket that has a retention policy configured.
 
 
 

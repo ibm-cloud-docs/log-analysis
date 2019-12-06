@@ -25,7 +25,7 @@ subcollection: LogDNA
 # Adoption guidelines for regulated and highly available workloads
 {: #adoption}
 
-In {{site.data.keyword.la_full_notm}}, 
+For regulated and highly available workloads, consider the following adoption guidelines when using the {{site.data.keyword.la_full_notm}} service:
 {:shortdesc}
 
 
@@ -186,7 +186,6 @@ You can assign a single policy to the access group instead of assigning the same
 {: #adoption_alerts}
 
 HIPAA
-PCI
 
 Notify in the event of an exception 
 
@@ -204,7 +203,20 @@ bsence alerting tests for the absence of data flowing into your service instance
 
 
 
+[Manage encryption](/docs/services/cloud-object-storage?topic=cloud-object-storage-encryption)
+IBM® Cloud Object Storage provides several options to encrypt your data. By default, all objects that are stored in IBM Cloud Object Storage are encrypted by using randomly generated keys and an all-or-nothing-transform (AONT). While this default encryption model provides at-rest security, some workloads need full control over the data encryption keys used. You can manage your keys manually by providing your own encryption keys - referred to as Server-Side Encryption with Customer-Provided Keys (SSE-C).
 
+With Object Storage you also have a choice to use our integration capabilities with IBM Cloud™ Key Management Services like IBM® Key Protect and Hyper Protect Crypto Services. Depending on the security requirements, you can decide whether to use IBM Key Protect or IBM Hyper Protect Crypto Services for your IBM Cloud Object Storage buckets.
+
+IBM® Key Protect for IBM Cloud™ helps you provision encrypted keys for apps across IBM Cloud™ services. As you manage the lifecycle of your keys, you can benefit from knowing that your keys are secured by FIPS 140-2 Level 3 certified cloud-based hardware security modules (HSMs) that protect against the theft of information.
+
+Hyper Protect Crypto Services is a single-tenant, dedicated HSM that is controlled by you. The service is built on FIPS 140-2 Level 4-certified hardware, the highest offered by any cloud provider in the industry.
+
+
+[Use Immutable Object Storage](/docs/services/cloud-object-storage?topic=cloud-object-storage-immutable)
+Immutable Object Storage preserves electronic records and maintains data integrity. Retention policies ensure that data is stored in a WORM (Write-Once-Read-Many), non-erasable and non-rewritable manner. This policy is enforced until the end of a retention period and the removal of any legal holds.
+
+Immutable Object Storage is available in certain regions only, see Integrated Services for details. It also requires a Standard pricing plan. See pricing for details.
 
 Disaster Recovy
 
@@ -235,6 +247,15 @@ Review and identify the right COS configuration for your business needs.  Set t
 
 
 LogDNA can archive to a client configured COS bucket.  There are many COS configurations helping clients meet a variety of needs.  Data may need to be replicated across Regions to meet business and regulated requirements.  Alternatively data may need to be restricted to certain locations to meet data locality requirements.  Learn more about COS configurations here.
+
+
+
+I think as far as I understand HIPAA means HIPA ready (which we are) + per service guidelines
+and in the case of COS this means no PII in object names
+and in the case of SQL Query use KeyProtet
+for COS too
+
+
 
 
 ## Network strategy
