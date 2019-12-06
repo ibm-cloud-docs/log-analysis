@@ -111,7 +111,10 @@ Next, configure a log source by adding a LogDNA agent. This agent is responsible
 ## Provisioning an instance through the CLI
 {: #provision_cli}
 
-To provision an instance of {{site.data.keyword.la_full_notm}} through the command line, complete the following steps:
+To provision an instance of {{site.data.keyword.at_full_notm}} through the command line, you must provision an instance, and create the credentials for that instance.
+
+### Step 1. Provision an instance
+{: #provision_cli_1}
 
 1. [Pre-requisite] Installation of the {{site.data.keyword.cloud_notm}} CLI.
 
@@ -149,6 +152,29 @@ To provision an instance of {{site.data.keyword.la_full_notm}} through the comma
     ```
     {: codeblock}
 
+### Step 2. Create the credentials for your instance
+{: #provision_cli_2}
+
+Run the following command to create a service ID:
+
+```
+ibmcloud resource service-key-create NAME ROLE_NAME --instance-name SERVICE_INSTANCE_NAME
+```
+{: codeblock}
+
+Where 
+
+* `SERVICE_INSTANCE_NAME` is the name of the instance that you provisioned in the previous step.
+* `NAME` is the name of the service ID. Use the following format to name the key **<SERVICE_INSTANCE_NAME>-key-admin**
+* `ROLE_NAME` is the permission that you  grant this service ID. Set it to **Administrator**.
+
+ 
+For example, you can run the following command:
+
+```
+ibmcloud resource service-key-create logdna-via-cli-key-admin Administrator --instance-name logdna-via-cli
+```
+{: screen}
 
 
 
