@@ -37,7 +37,7 @@ You can decide whether both conditions are checked or only one. If both conditio
 
 For example, you can configure an alert that is triggered after 30 seconds, or when a 100 log lines that match the view's filtering and search criteria are collected.
 
-You can configure multiple notification channels. Valid channels are: `email`, `Slack`, `PagerDuty`, `Webhook`, `OpsGenie`, `Datadog`, `AppOptics`, `VictorOps`
+You can configure multiple notification channels. Valid channels are: `email`, `Slack`, `PagerDuty`, `Webhook`
 
 You can also define a **preset**. A preset is an alert template that you can attach to any number of views. 
 

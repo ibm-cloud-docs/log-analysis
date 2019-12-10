@@ -37,12 +37,68 @@ When you create resources in the {{site.data.keyword.cloud_notm}}, you can choos
 Define naming standards that do not include PII information across all resources that are created in the {{site.data.keyword.cloud_notm}}.
 {: important}
 
-## 2. Configure the account settings for compliance
+
+
+## 2. Define the account strategy
+{: #adoption_account}
+
+You can provision instances of the {{site.data.keyword.la_full_notm}} service in any of the supported locations in the {{site.data.keyword.cloud_notm}}. For more information, see [Locations](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-regions).
+
+Per location (region), you can provision 1 or more logging instances. 
+* Only 1 instance in a location can be configured to collect logs automatically from [{{site.data.keyword.cloud_notm}} enabled services](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-cloud_services) in that {{site.data.keyword.cloud_notm}} location. Logs are collected in the region where a service instance is provisioned.
+* You can collect logs from custom applications and services that run in the {{site.data.keyword.cloud_notm}} or outside, and forward them to any logging instance in your account.
+
+### Platform service logs
+{: #adoption_account_svc_logs}
+
+To enable automatic collection of {{site.data.keyword.cloud_notm}} enabled services, you must configure an instance in a location with the **platform service logs** flag. [Learn more](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-config_svc_logs). When 1 instance is enabled to collect logs in a location, data from any instance of an enabled service in that location is collected automatically.
+
+**If you share staging, pre-production, and production services in the same {{site.data.keyword.cloud_notm}} account, notice that users, that are granted access to view data in the logging instance with the platform service logs flag in a location, can see data from any service instance provisoned in that location. To prevent users from viewing log data from all service's instances, consider migrating your single {{site.data.keyword.cloud_notm}} account to an *Enterprise account*.**
+{: important}
+
+Within an enterprise account, you create a multitiered hierarchy of accounts, with billing and payments for all accounts managed at the enterprise level. [Learn more](/docs/account?topic=account-enterprise).  
+* Users and access management is isolated between the enterprise and its child accounts. No access is automatically inherited between the two types of accounts.
+* Resources and services within an enterprise function the same as in stand-alone accounts. Each account in an enterprise can contain resources in resource groups and services in Cloud Foundry orgs and spaces. 
+
+If you cannot move to an enterprise account, try reducing the number of users that are granted permissions to view the logs. In addition, you can also define exclusion rules to hide data from showing through the web UI. Exclusion rules stop logs from counting against your data usage quota and from being stored for search. [Learn more](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-exclusion).
+{: tip}
+
+### Other logs
+{: #adoption_account_other_logs}
+
+For non-{{site.data.keyword.cloud_notm}} enabled services, you must decide the method to collect and forward logs from a log source that you want to monitor to a logging instance. 
+
+In LogDNA, you can collect and forward data to a logging instance by using any of the following methods:
+* `LogDNA agent`: Logging agent that automatically collects and forwards logs to 1 logging instance in your account.
+* `Syslog`: Logging daemon that collects information across multiple devices and system-services, and forwards logs to 1 logging instance in your account. 
+* `REST API`: API that you can use to send log data and custom metadata to 1 logging instance in your account.
+* `Code libraries`: Libraries that you can use to code ingestion of logs from your apps and services to 1 logging instance. LogDNA offer libraries for Node.JS, Python, Rails, Ruby, Go, iOS, Java, and PHP.
+
+**For any method that you adopt, you have the flexibility to choose the logging instance where you want to send data per log source. Decide how many instances you might need to collect data from all your log sources based on who can see the data and the type of data that is collected. Avoid sending data to a logging instance that has the platform service logs flag enabled.**
+{: tip}
+
+**Whenever a LogDNA agent is available for a type of log source, configure the agent to automatically collect and forward logs from the log source to the logging instance.** The LogDNA agent authenticates by using the LogDNA Ingestion Key and opens a secure web socket to the {{site.data.keyword.la_full_notm}} ingestion servers; monitors all files with extension `.log`*,  and extensionless files under `/var/log/`; and can be customized to exclude data that you do not want to collect or to include custom paths that you want to monitor, and more.
+{: tip}
+
+For example, you can configure a Kubernetes cluster and an OpenShift cluster with a LogDNA agent. For more information, see [Configuring a LogDNA agent for a standard Kubernetes cluster](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-config_agent_kube_cluster) and [Configuring a LogDNA agent for an OpenShift Kubernetes cluster](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-config_agent_os_cluster).
+
+To configure a LogDNA agent on Linux Ubuntu or Debian, see [Configuring a LogDNA agent on Linux Ubuntu or Debian](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-config_agent_linux).
+
+**To send data and attach metadata to each log record, you can use the REST API.**
+{: tip}
+
+**Configure syslog to collect and forward logs from Cloud Foundry applications.**
+{: tip}
+
+For example, you can configure a custom user provided service (CUPS) for each Cloud Foundry (CF) app that you want to monitor through a logging instance. The CUPS service sends logs via a syslog link to a LogDNA syslog endpoint and port. This option is only available if the CF app send logs to STDOUT and STDERR. If the CF app is configured to send logs via syslog and not to STDOUT and STDERR, this option is not supported. [Learn more](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-monitor_cfapp_logs).
+
+
+## 3. Configure account settings for compliance
 {: #adoption_acc_settings}
 
 Across every industry, organizations require tighter controls and visibility into where their data is stored and processed. 
 
-**Indicate to {{site.data.keyword.IBM_notm}} your compliance requirements by enabling your {{site.data.keyword.cloud_notm}} account as HIPAA or EU supported.**
+**Indicate to {{site.data.keyword.IBM_notm}} your compliance requirements by enabling your {{site.data.keyword.cloud_notm}} account or {{site.data.keyword.cloud_notm}} Entreprise account as HIPAA or EU supported.**
 {: important}
 
 In the {{site.data.keyword.cloud}}, you can configure your account for EU support and for HIPAA support:
@@ -71,7 +127,7 @@ In addition, for logging instances that you provision in a HIPAA enabled account
 {: important}
 
 
-## 3. Define the service strategy 
+## 4. Define the logging service strategy 
 {: #adoption_resource_svc}
 
 {{site.data.keyword.la_full_notm}} collects and aggregates logs in one centralized logging system.
@@ -161,7 +217,7 @@ Tags are visible to all members of an account.
 
 
 
-## 4. Define the IAM strategy
+## 5. Define the IAM strategy
 {: #adoption_iam}
 
 **Use {{site.data.keyword.iamlong}} (IAM) to securely authenticate users and service IDs, and to control access to all cloud resources and data consistently in the {{site.data.keyword.cloud_notm}}.**
@@ -238,7 +294,7 @@ You can assign a single policy to the access group instead of assigning the same
 [Learn more](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-work_iam).
 
 
-## 5. Configure the account settings for authentication into your account
+## 6. Configure the account settings for authentication into your account
 {: #adoption_login}
 
 Multifactor authentication (MFA) adds an extra layer of security to your account by requiring all users to authenticate by using an additional authentication method beyond an ID and password. This is also commonly known as two-factor authentication (2FA). 
@@ -252,7 +308,79 @@ You can also configure MFA options such as security questions, using a time-base
 
 
 
-## 6. Define the archive strategy
+
+
+## 8. Define the network strategy
+{: #adoption_network}
+
+In LogDNA, you can use the LogDNA agent to collect and forward logs to your {{site.data.keyword.la_full_notm}} instance. After you provision an instance of {{site.data.keyword.la_full}}, you must configure a LogDNA agent for each log source that you want to monitor. 
+
+You can configure the LogDNA agent to connect to the logging instance through the public network or through the private network. 
+* By default, the agent connects through the public network.
+* To connect over a private network, you must have access to classic infrastructure and [enable virtual routing and forwarding (VRF)](/docs/account?topic=account-vrf-service-endpoint) and connectivity to service endpoints for your account.
+
+The type of network defines the level of isolation and security that is configured to move workloads between cloud-based resources in your account. 
+
+Some factors that you must consider when you must decide which network to choose are:
+* Corporate requirements on how services and applications can access cloud-based services in your account
+* Security on production workloads
+* Industry compliance regulations
+
+**If you require no access to Internet to connect to {{site.data.keyword.cloud_notm}} services and isolated connectivity for workloads in your account, connect the LogDNA agent over the private network.**
+{: tip}
+
+Consider the following information when you work with private endpoints:
+* Private endpoints are not accessible from the public internet. 
+* All traffic is routed to the {{site.data.keyword.cloud_notm}} private network. 
+* Services like {{site.data.keyword.la_full_notm}} are no longer served on an internet routable IP address.
+
+Consider the following limitations:
+* Ingestion endpoints of type `syslog-tcp (syslog-a)` and `syslog-udp (syslog-u)` are not currently supported on the Cloud Service Endpoint (CSE) network. 
+* The LogDNA web UI is not currently supported on the CSE network.
+
+
+**If you have an additional firewall set up, or you have customized the firewall settings in your {{site.data.keyword.cloud_notm}} infrastructure, you must allow outgoing network traffic to the {{site.data.keyword.la_full_notm}} service on TCP port 443 and TCP port 80 in your firewall. The API endpoint is required for LogDNA agent authentication.**
+{: tip}
+
+If you have an additional firewall set up, or you have customized the firewall settings in your {{site.data.keyword.cloud_notm}} infrastructure, and you want to configure the LogDNA agent to connect to the logging instance through the private network, open a support ticket to request the private IP addresses that you must enable in your firewall. For information about opening an IBM support ticket, see [Getting support](/docs/get-support?topic=get-support-getting-customer-support#getting-customer-support).
+{: important}
+
+
+## 9. Define the notification strategy 
+{: #adoption_alerts}
+
+In a LogDNA instance, you define views to analyze the data. Then, you can configure 1 or more alerts per view to notify of an abnormal situation. [Learn more](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-alerts).
+
+You can choose to be notified by using an absence alert that is triggered when no data is available.
+
+**Define an absence alert to be notified when inactivity in an application or service is identified. Notice that absence alerts require data in the view within the past 24 hours for the alert to be active.**
+{: tip}
+
+You can choose to be notified by using a presence alert that is triggered when more log lines than expected are present.  
+
+**Define a presence alert to be notified of exceptional situations in your applications and services that require inmediate attention.**    
+{: tip}
+
+You can configure multiple notification channels. Valid channels are: `email`, `Slack`, `PagerDuty`, `Webhook`
+
+| Channel      | Guidance             |
+|--------------|----------------------|
+| `email`      | Email is a traditional communication method that you can use to notify 1 or more users. This notification channel requires users to be monitoring proactively their emails to detect an alert. **Define an email alert to verify that the alert on a view is working, and to inform users of situations they may have requested information.**
+| `Slack`      | Slack is a collaborative tool that you can use to communicate and share information across 1 or more teams. **Define a Slack alert to inform about routine scenarios that you might want to monitor.** |
+| `PagerDuty`  | PagerDuty is an incident management tool that you can use to automate incident resolution and escalation, define on-call schedules and more. **Define a PagerDuty alert to be notified inmmediately so that you can take action promptly.**  |
+| `Webhook`    | A webhook is another method that you can configure to provide other applications information. **Define a webhook alert if you have a third party tool that you can configure with a LogDNA instance via a webhook, and where you plan to manage notifications.** |
+{: caption="Table 7. Guidance for notification channel" caption-side="top"}
+
+**Use at least 2 notification methods to monitor actions that require your attention. For example, use Slack to share alerts and information, and PagerDuty to automate and take prompt action on problems.**
+{: tip}
+
+In LogDNA, you can also define a **preset**. A preset is an alert template that you can attach to any number of views.
+
+To reuse an alert configuration with different views and enforce notification channels across users that analyze data through that instance, configure **alert presets**.
+{: tip}
+
+
+## 10. Define the archive strategy
 {: #adoption_archive}
 
 You might have different requirements that require archiving your data:
@@ -403,7 +531,7 @@ If you need to use your own key to encrypt the data at-rest in a bucket, use the
 
 [After you designate a root key in {{site.data.keyword.keymanagementserviceshort}}](/docs/services/key-protect?topic=key-protect-create-root-keys) and [grant access between your services](/docs/services/key-protect?topic=key-protect-integrate-services#grant-access), you can enable envelope encryption for a specified storage bucket by using the {{site.data.keyword.cos_full_notm}} GUI.
 
-**To enable encryption with your custom key by using the {{site.data.keyword.keymanagementserviceshort}} service, [create a root key](/docs/services/key-protect?topic=key-protect-create-root-keys)  and create an [authorization](/docs/services/key-protect?topic=key-protect-integrate-services#grant-access) between your COS instance and the {{site.data.keyword.keymanagementserviceshort}} instance. Notice that the COS bucket and the {{site.data.keyword.keymanagementserviceshort}} instance need to be in the available in the same region.**
+**To enable encryption with your custom key by using the {{site.data.keyword.keymanagementserviceshort}} service, [create a root key](/docs/services/key-protect?topic=key-protect-create-root-keys)  and create an [authorization](/docs/services/key-protect?topic=key-protect-integrate-services#grant-access) between your COS instance and the {{site.data.keyword.keymanagementserviceshort}} instance. Notice that the COS bucket and the {{site.data.keyword.keymanagementserviceshort}} instance need to be available in the same region.**
 {: tip}
 
 ### Naming
@@ -496,7 +624,7 @@ Although you define policies to manage your COS objects (LogDNA archived files) 
 
 
 
-## 7. Query archived data 
+## 11. Define the strategy to query archived data 
 {: #adoption_query}
 
 You can download data locally, and then use your own tools to query the data. When you download data for analysis, you are responsible for ensuring that your users comply with the regulations and compliance requirements that may be required for your organization. For example, if you must comply with GDPR, you need to control that users are following the download guidelines per GDPR rules.
@@ -521,85 +649,6 @@ The {{site.data.keyword.sqlquery_short}} service can process input data that is 
 {: important}
 
 
-## 8. Define the notification strategy 
-{: #adoption_alerts}
 
-In a LogDNA instance, you define views to analyze the data. Then, you can configure 1 or more alerts per view to notify of an abnormal situation. [Learn more](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-alerts).
-
-You can choose to be notified by using an absence alert that is triggered when no data is available.
-
-**Define an absence alert to be notified when inactivity in an application or service is identified. Notice that absence alerts require data in the view within the past 24 hours for the alert to be active.**
-{: tip}
-
-You can choose to be notified by using a presence alert that is triggered when more log lines than expected are present.  
-
-**Define a presence alert to be notified of exceptional situations in your applications and services that require inmediate attention.**    
-{: tip}
-
-You can configure multiple notification channels. Valid channels are: `email`, `Slack`, `PagerDuty`, `Webhook`
-
-| Channel      | Guidance             |
-|--------------|----------------------|
-| `email`      | Email is a traditional communication method that you can use to notify 1 or more users. This notification channel requires users to be monitoring proactively their emails to detect an alert. **Define an email alert to verify that the alert on a view is working, and to inform users of situations they may have requested information.**
-| `Slack`      | Slack is a collaborative tool that you can use to communicate and share information across 1 or more teams. **Define a Slack alert to inform about routine scenarios that you might want to monitor.** |
-| `PagerDuty`  | PagerDuty is an incident management tool that you can use to automate incident resolution and escalation, define on-call schedules and more. **Define a PagerDuty alert to be notified inmmediately and be able to take action promptly.**  |
-| `Webhook`    | A webhook is another method that you can configure to provide other applications information. **Define a webhook alert if you have a third party tool that you can configure with a LogDNA instance via a webhook, and where you plan to manage notifications.** |
-{: caption="Table 7. Guidance for notification channel" caption-side="top"}
-
-**Use at least 2 notification methods to monitor actions that require your attention. For example, use Slack to share alerts and information, and PagerDuty to automate and take prompt action on problems.**
-{: tip}
-
-In LogDNA, you can also define a **preset**. A preset is an alert template that you can attach to any number of views.
-
-To reuse an alert configuration with different views and enforce notification channels across users that analyze data through that instance, configure **alert presets**.
-{: tip}
-
-
-
-## 9. Network strategy
-{: #adoption_network}
-
-In LogDNA, you can use the LogDNA agent to collect and forward logs to your {{site.data.keyword.la_full_notm}} instance. After you provision an instance of {{site.data.keyword.la_full}}, you must configure a LogDNA agent for each log source that you want to monitor. 
-
-You can configure the LogDNA agent to connect to the logging instance through the public network or through the private network. 
-* By default, the agent connects through the public network.
-* To connect over a private network, you must have access to classic infrastructure and [enable virtual routing and forwarding (VRF)](/docs/account?topic=account-vrf-service-endpoint) and connectivity to service endpoints for your account.
-
-The type of network defines the level of isolation and security that is configured to move workloads between cloud-based resources in your account. 
-
-Some factors that you must consider when you must decide which network to choose are:
-* Corporate requirements on how services and applications can access cloud-based services in your account
-* Security on production workloads
-* Industry compliance regulations
-
-**If you require no access to Internet to connect to {{site.data.keyword.cloud_notm}} services and isolated connectivity for workloads in your account, connect the LogDNA agent over the private network.**
-{: tip}
-
-Consider the following information when you work with private endpoints:
-* Private endpoints are not accessible from the public internet. 
-* All traffic is routed to the {{site.data.keyword.cloud_notm}} private network. 
-* Services like {{site.data.keyword.la_full_notm}} are no longer served on an internet routable IP address.
-
-Consider the following limitations:
-* Ingestion endpoints of type `syslog-tcp (syslog-a)` and `syslog-udp (syslog-u)` are not currently supported on the Cloud Service Endpoint (CSE) network. 
-* The LogDNA web UI is not currently supported on the CSE network.
-
-
-**If you have an additional firewall set up, or you have customized the firewall settings in your {{site.data.keyword.cloud_notm}} infrastructure, you must allow outgoing network traffic to the {{site.data.keyword.la_full_notm}} service on TCP port 443 and TCP port 80 in your firewall. The API endpoint is required for LogDNA agent authentication.**
-{: tip}
-
-If you have an additional firewall set up, or you have customized the firewall settings in your {{site.data.keyword.cloud_notm}} infrastructure, and you want to configure the LogDNA agent to connect to the logging instance through the private network, open a support ticket to request the private IP addresses that you must enable in your firewall. For information about opening an IBM support ticket, see [Getting support](/docs/get-support?topic=get-support-getting-customer-support#getting-customer-support).
-{: important}
-
-## 10. Sending logs to a LogDNA instance
-{: #adoption_ingestion}
-
-
-## 11. Exporting logs from a LogDNA instance
-{: #adoption_export}
-
-
-## 12. Service platform logs
-{: #adoption_svc_logs}
 
 
