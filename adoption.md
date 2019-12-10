@@ -559,20 +559,47 @@ To reuse an alert configuration with different views and enforce notification ch
 ## 9. Network strategy
 {: #adoption_network}
 
- VRF
+In LogDNA, you can use the LogDNA agent to collect and forward logs to your {{site.data.keyword.la_full_notm}} instance. After you provision an instance of {{site.data.keyword.la_full}}, you must configure a LogDNA agent for each log source that you want to monitor. 
+
+You can configure the LogDNA agent to connect to the logging instance through the public network or through the private network. 
+* By default, the agent connects through the public network.
+* To connect over a private network, you must have access to classic infrastructure and [enable virtual routing and forwarding (VRF)](/docs/account?topic=account-vrf-service-endpoint) and connectivity to service endpoints for your account.
+
+The type of network defines the level of isolation and security that is configured to move workloads between cloud-based resources in your account. 
+
+Some factors that you must consider when you must decide which network to choose are:
+* Corporate requirements on how services and applications can access cloud-based services in your account
+* Security on production workloads
+* Industry compliance regulations
+
+**If you require no access to Internet to connect to {{site.data.keyword.cloud_notm}} services and isolated connectivity for workloads in your account, connect the LogDNA agent over the private network.**
+{: tip}
+
+Consider the following information when you work with private endpoints:
+* Private endpoints are not accessible from the public internet. 
+* All traffic is routed to the {{site.data.keyword.cloud_notm}} private network. 
+* Services like {{site.data.keyword.la_full_notm}} are no longer served on an internet routable IP address.
+
+Consider the following limitations:
+* Ingestion endpoints of type `syslog-tcp (syslog-a)` and `syslog-udp (syslog-u)` are not currently supported on the Cloud Service Endpoint (CSE) network. 
+* The LogDNA web UI is not currently supported on the CSE network.
 
 
+**If you have an additional firewall set up, or you have customized the firewall settings in your {{site.data.keyword.cloud_notm}} infrastructure, you must allow outgoing network traffic to the {{site.data.keyword.la_full_notm}} service on TCP port 443 and TCP port 80 in your firewall. The API endpoint is required for LogDNA agent authentication.**
+{: tip}
 
+If you have an additional firewall set up, or you have customized the firewall settings in your {{site.data.keyword.cloud_notm}} infrastructure, and you want to configure the LogDNA agent to connect to the logging instance through the private network, open a support ticket to request the private IP addresses that you must enable in your firewall. For information about opening an IBM support ticket, see [Getting support](/docs/get-support?topic=get-support-getting-customer-support#getting-customer-support).
+{: important}
 
 ## 10. Sending logs to a LogDNA instance
 {: #adoption_ingestion}
 
 
-## Exporting logs from a LogDNA instance
+## 11. Exporting logs from a LogDNA instance
 {: #adoption_export}
 
 
-## Service platform logs
+## 12. Service platform logs
 {: #adoption_svc_logs}
 
 
