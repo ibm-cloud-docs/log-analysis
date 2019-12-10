@@ -305,18 +305,24 @@ When you plan the bucket for a LogDNA instance, consider the following informati
 | `Encryption of data at-rest with my own key` [^5]      | Can I use my own key to encrypt data at-rest?                     | [Information about encryption of data at-rest](/docs/services/cloud-object-storage?topic=cloud-object-storage-encryption) |
 | `Data resiliency` [^6]                                 | Do you need to store the data in a specific geographical location? | [Information about resiliency](/docs/services/cloud-object-storage/basics?topic=cloud-object-storage-endpoints) |
 {: caption="Table 3. COS bucket requirements" caption-side="top"} 
-[^1]: Data might sit untouched for long periods of time. For less active workloads, you can create buckets with different storage classes. For example, use the standard storage class for active workloads, where you need to access data at any time.
-[^2]: You can choose *Immutable Object Storage* to preserve electronic records and maintain data integrity. When you define a retention policy for a bucket, you are specifying that the data is stored in a WORM (Write-Once-Read-Many), non-erasable and non-rewritable manner. This policy is enforced until the end of a retention period and the removal of any legal holds. Notice that `Immutable Object Storage` is available in certain regions only.
-[^3]: You can use an expiration rule to delete objects automatically after a defined period from the object creation date. 
-[^4]: You can define a retention policy to retain data for a long period of time and have the data available for downloads and queries. If you do not need to query the data, and you just need to keep it for compliance, look into archiving COS files from any of the storage tiers to a long-term offline archive location or use the online *Cold Vault* option.
-[^5]: COS provides several options to encrypt your data. By default, all objects that are stored in COS are encrypted by using randomly generated keys and an all-or-nothing-transform (AONT). With COS, you can also manage your keys manually by providing your own encryption keys - referred to as Server-Side Encryption with Customer-Provided Keys (SSE-C). Alternatively, you can choose to use the integration capabilities with {{site.data.keyword.cloud}} Key Management Services like {{site.data.keyword.keymanagementservicelong}} and {{site.data.keyword.hscrypto}}. 
-[^6]: Resiliency refers to the scope and scale of the geographic area across which your data is distributed. For example, you can choose cross region resiliency to spread your data across several geographical areas, or regional resiliency to spread data across a single region. Notice that a single data center distributes data across devices within a single site only.
+
+`[1]`: Data might sit untouched for long periods of time. For less active workloads, you can create buckets with different storage classes. For example, use the standard storage class for active workloads, where you need to access data at any time.
+
+`[2]`: You can choose *Immutable Object Storage* to preserve electronic records and maintain data integrity. When you define a retention policy for a bucket, you are specifying that the data is stored in a WORM (Write-Once-Read-Many), non-erasable and non-rewritable manner. This policy is enforced until the end of a retention period and the removal of any legal holds. Notice that `Immutable Object Storage` is available in certain regions only.
+
+`[3]`: You can use an expiration rule to delete objects automatically after a defined period from the object creation date. 
+
+`[4]`: You can define a retention policy to retain data for a long period of time and have the data available for downloads and queries. If you do not need to query the data, and you just need to keep it for compliance, look into archiving COS files from any of the storage tiers to a long-term offline archive location or use the online *Cold Vault* option.
+
+`[5]`: COS provides several options to encrypt your data. By default, all objects that are stored in COS are encrypted by using randomly generated keys and an all-or-nothing-transform (AONT). With COS, you can also manage your keys manually by providing your own encryption keys - referred to as Server-Side Encryption with Customer-Provided Keys (SSE-C). Alternatively, you can choose to use the integration capabilities with {{site.data.keyword.cloud}} Key Management Services like {{site.data.keyword.keymanagementservicelong}} and {{site.data.keyword.hscrypto}}. 
+
+`[6]`: Resiliency refers to the scope and scale of the geographic area across which your data is distributed. For example, you can choose cross region resiliency to spread your data across several geographical areas, or regional resiliency to spread data across a single region. Notice that a single data center distributes data across devices within a single site only.
 
 
 **Create a custom COS bucket with the storage features and the policies that you identify.** [Learn more](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-archiving).
 {: tip}
 
-**Do not configure a long-term retention policy on a COS bucket if you need access to the data.**
+**Do not configure a long-term retention policy on a COS bucket if you need access to the data and query it with the {{site.data.keyword.sqlquery_short}} service.**
 {: tip}
 
 Use the following table to help you identify the features that you should consider when you create a bucket:
@@ -334,10 +340,6 @@ Use the following table to help you identify the features that you should consid
 {: tab-group="archive"}
 {: class="simple-tab-table"}
 {: row-headers}
-[^7]: Standard is used for active workloads. No charge incurs for data that is retrieved (other than the cost of the operational request itself and public outbound bandwidth).
-[^8]: Vault is used for cool workloads where data isn't accessed frequently, but a retrieval charge applies for reading data. The service includes a threshold for object size and storage period consistent with the intended use of this service for cooler, less-active data.
-[^9]: Cold Vault is used for cold workloads where data is primarily archived (accessed every 90 days or less) - a larger retrieval charge applies for reading data. The service includes a threshold for object size and storage period consistent with the intended use of this service: storing cold, inactive data.
-[^10]:  Flex is used for dynamic workloads where access patterns are more difficult to predict. Depending on usage, if the lower cost of cooler storage that is combined with retrieval charges exceeds a cap value, then the storage charge increases and no any retrieval charges apply. If the data isn't accessed frequently, Flex storage can be more cost effective than Standard storage. If cooler usage patterns become more active, Flex storage is more cost effective than Vault or Cold Vault storage. No threshold object size or storage period applies to Flex buckets.
 
 | Requirement                                  | Storage class: `Standard`[^11]  | Storage class: `Vault`[^12] | Storage class: `Cold Vault`[^13] | Storage class: `Flex`[^14] |
 |----------------------------------------------|---------------------------------|-----------------------------|----------------------------------|-----------------------------|
@@ -352,10 +354,21 @@ Use the following table to help you identify the features that you should consid
 {: tab-group="archive"}
 {: class="simple-tab-table"}
 {: row-headers}
-[^11]: Standard is used for active workloads. No charge incurs for data that is retrieved (other than the cost of the operational request itself and public outbound bandwidth).
-[^12]: Vault is used for cool workloads where data isn't accessed frequently, but a retrieval charge applies for reading data. The service includes a threshold for object size and storage period consistent with the intended use of this service for cooler, less-active data.
-[^13]: Cold Vault is used for cold workloads where data is primarily archived (accessed every 90 days or less) - a larger retrieval charge applies for reading data. The service includes a threshold for object size and storage period consistent with the intended use of this service: storing cold, inactive data.
-[^14]:  Flex is used for dynamic workloads where access patterns are more difficult to predict. Depending on usage, if the lower cost of cooler storage that is combined with retrieval charges exceeds a cap value, then the storage charge increases and no any retrieval charges apply. If the data isn't accessed frequently, Flex storage can be more cost effective than Standard storage. If cooler usage patterns become more active, Flex storage is more cost effective than Vault or Cold Vault storage. No threshold object size or storage period applies to Flex buckets.
+
+`[7]`: Standard is used for active workloads. No charge incurs for data that is retrieved (other than the cost of the operational request itself and public outbound bandwidth).
+
+`[8]`: Vault is used for cool workloads where data isn't accessed frequently, but a retrieval charge applies for reading data. The service includes a threshold for object size and storage period consistent with the intended use of this service for cooler, less-active data.
+`[9]`: Cold Vault is used for cold workloads where data is primarily archived (accessed every 90 days or less) - a larger retrieval charge applies for reading data. The service includes a threshold for object size and storage period consistent with the intended use of this service: storing cold, inactive data.
+
+`[10]`:  Flex is used for dynamic workloads where access patterns are more difficult to predict. Depending on usage, if the lower cost of cooler storage that is combined with retrieval charges exceeds a cap value, then the storage charge increases and no any retrieval charges apply. If the data isn't accessed frequently, Flex storage can be more cost effective than Standard storage. If cooler usage patterns become more active, Flex storage is more cost effective than Vault or Cold Vault storage. No threshold object size or storage period applies to Flex buckets.
+
+`[11]`: Standard is used for active workloads. No charge incurs for data that is retrieved (other than the cost of the operational request itself and public outbound bandwidth).
+
+`[12]`: Vault is used for cool workloads where data isn't accessed frequently, but a retrieval charge applies for reading data. The service includes a threshold for object size and storage period consistent with the intended use of this service for cooler, less-active data.
+
+`[13]`: Cold Vault is used for cold workloads where data is primarily archived (accessed every 90 days or less) - a larger retrieval charge applies for reading data. The service includes a threshold for object size and storage period consistent with the intended use of this service: storing cold, inactive data.
+
+`[14]`:  Flex is used for dynamic workloads where access patterns are more difficult to predict. Depending on usage, if the lower cost of cooler storage that is combined with retrieval charges exceeds a cap value, then the storage charge increases and no any retrieval charges apply. If the data isn't accessed frequently, Flex storage can be more cost effective than Standard storage. If cooler usage patterns become more active, Flex storage is more cost effective than Vault or Cold Vault storage. No threshold object size or storage period applies to Flex buckets.
 
 Objects that are subject to a bucket's `Immutable Object Storage` retention policy will have expiration actions deferred until the retention policy is no longer enforced. 
 {: tip}
@@ -387,7 +400,8 @@ If you need to use your own key to encrypt the data at-rest in a bucket, use the
 | `Expiration policy`                          | ![Checkmark icon](../../icons/checkmark-icon.svg) | ![Checkmark icon](../../icons/checkmark-icon.svg) | ![Checkmark icon](../../icons/checkmark-icon.svg) | ![Checkmark icon](../../icons/checkmark-icon.svg) |                         
 | `Long-term retention policy`                 | `NO`                            | `NO`                        | `NO`                             | `NO`                         |
 {: caption="Table 6. Use your own encryption key" caption-side="top"}
-[^15]: Currently, you cannot use your own key with a bucket that has a retention policy configured. 
+
+`[15]`: Currently, you cannot use your own key with a bucket that has a retention policy configured. 
 
  
 **Use the customer-managed encryption model to manage and control the key that is used to encrypt data at-rest.**
