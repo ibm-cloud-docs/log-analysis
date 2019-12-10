@@ -298,12 +298,12 @@ When you plan the bucket for a LogDNA instance, consider the following informati
 
 | Requirement                                            | Question to answer                                                | Information                                                                 |
 |--------------------------------------------------------|-------------------------------------------------------------------|-----------------------------------------------------------------------------|
-| `Type of workload` [^1]                                | How often do you need to access the data?                         | [Information about storage classes](/docs/services/cloud-object-storage?topic=cloud-object-storage-classes#classes-about) |
-| `Retention policy` [^2]                                | Do you need to protect data from being deleted?                   | [Information about Immutable Object Storage](/docs/services/cloud-object-storage?topic=cloud-object-storage-immutable) |
-| `Expiration policy` [^3]                               | Do you need automatic deletion of files?                          | [Information about expiration rules](/docs/services/cloud-object-storage?topic=cloud-object-storage-expiry) |                            
-| `Long-term retention policy` [^4]                      | Do you need to keep data for a long period of time?               | [Information about archiving COS files for long term storage](/docs/services/cloud-object-storage?topic=cloud-object-storage-archive) |
-| `Encryption of data at-rest with my own key` [^5]      | Can I use my own key to encrypt data at-rest?                     | [Information about encryption of data at-rest](/docs/services/cloud-object-storage?topic=cloud-object-storage-encryption) |
-| `Data resiliency` [^6]                                 | Do you need to store the data in a specific geographical location? | [Information about resiliency](/docs/services/cloud-object-storage/basics?topic=cloud-object-storage-endpoints) |
+| `Type of workload` [1]                                | How often do you need to access the data?                         | [Information about storage classes](/docs/services/cloud-object-storage?topic=cloud-object-storage-classes#classes-about) |
+| `Retention policy` [2]                                | Do you need to protect data from being deleted?                   | [Information about Immutable Object Storage](/docs/services/cloud-object-storage?topic=cloud-object-storage-immutable) |
+| `Expiration policy` [3]                               | Do you need automatic deletion of files?                          | [Information about expiration rules](/docs/services/cloud-object-storage?topic=cloud-object-storage-expiry) |                            
+| `Long-term retention policy` [4]                      | Do you need to keep data for a long period of time?               | [Information about archiving COS files for long term storage](/docs/services/cloud-object-storage?topic=cloud-object-storage-archive) |
+| `Encryption of data at-rest with my own key` [5]      | Can I use my own key to encrypt data at-rest?                     | [Information about encryption of data at-rest](/docs/services/cloud-object-storage?topic=cloud-object-storage-encryption) |
+| `Data resiliency` [6]                                 | Do you need to store the data in a specific geographical location? | [Information about resiliency](/docs/services/cloud-object-storage/basics?topic=cloud-object-storage-endpoints) |
 {: caption="Table 3. COS bucket requirements" caption-side="top"} 
 
 `[1]`: Data might sit untouched for long periods of time. For less active workloads, you can create buckets with different storage classes. For example, use the standard storage class for active workloads, where you need to access data at any time.
@@ -327,7 +327,7 @@ When you plan the bucket for a LogDNA instance, consider the following informati
 
 Use the following table to help you identify the features that you should consider when you create a bucket:
 
-| Requirement                                  | Storage class: `Standard`[^7]   | Storage class: `Vault`[^8]  | Storage class: `Cold Vault`[^9]  | Storage class: `Flex`[^10]  |
+| Requirement                                  | Storage class: `Standard`[7]   | Storage class: `Vault`[8]  | Storage class: `Cold Vault`[9]  | Storage class: `Flex`[10]  |
 |----------------------------------------------|---------------------------------|-----------------------------|----------------------------------|-----------------------------|
 | `Type of workload`                           | `Continuous access`             | `Data isn't accessed frequently` | `Accessed every 90 days or less` | `Dynamic workloads where access patterns are difficult to predict` |
 | `Data resiliency`                            | `Cross region`                  | `Cross region`             | `Cross region`                  | `Cross region`             |
@@ -336,12 +336,12 @@ Use the following table to help you identify the features that you should consid
 | `Long-term retention policy`                 | `NO`                            | `NO`                        | `NO`                             | `NO`                         |
 {: caption="Table 4. Disaster recovery or compliance requirements" caption-side="top"}
 {: #archive-table-4}
-{: tab-title="Disaster Recovery"}
+{: tab-title="Disaster Recovery or compliance requirements"}
 {: tab-group="archive"}
 {: class="simple-tab-table"}
 {: row-headers}
 
-| Requirement                                  | Storage class: `Standard`[^7]  | Storage class: `Vault`[^8] | Storage class: `Cold Vault`[^9] | Storage class: `Flex`[^10] |
+| Requirement                                  | Storage class: `Standard`[7]  | Storage class: `Vault`[8] | Storage class: `Cold Vault`[9] | Storage class: `Flex`[10] |
 |----------------------------------------------|---------------------------------|-----------------------------|----------------------------------|-----------------------------|
 | `Type of workload`                           | `Continuous access`             | `Data isn't accessed frequently` | `Accessed every 90 days or less` | `Dynamic workloads where access patterns are difficult to predict` |
 | `Data resiliency`                            | `Cross region` or `Regional`    | `Cross region` or `Regional`    | `Cross region` or `Regional`   | `Cross region` or `Regional`   |
@@ -350,7 +350,7 @@ Use the following table to help you identify the features that you should consid
 | `Long-term retention policy`                 | `NO`                            | `NO`                        | `NO`                             | `NO`                         |
 {: caption="Table 5. Backup or access to data beyond the service plan days requirements" caption-side="top"}
 {: #archive-table-5}
-{: tab-title="Backup"}
+{: tab-title="Backup or access to data beyond the service plan days requirements"}
 {: tab-group="archive"}
 {: class="simple-tab-table"}
 {: row-headers}
@@ -389,7 +389,7 @@ If you need to use your own key to encrypt the data at-rest in a bucket, use the
 |----------------------------------------------|---------------------------------|-----------------------------|----------------------------------|-----------------------------|
 | `Type of workload`                           | `Continuous access`             | `Data isn't accessed frequently` | `Accessed every 90 days or less` | `Dynamic workloads where access patterns are difficult to predict` |
 | `Data resiliency`                            | `Regional`                      | `Regional`                   | `Regional`                      | `Regional`                   |
-| `Retention policy`  [^15]                    | `NO`                            | `NO`                        | `NO`                             | `NO`                         |
+| `Retention policy` [15]                      | `NO`                            | `NO`                        | `NO`                             | `NO`                         |
 | `Expiration policy`                          | ![Checkmark icon](../../icons/checkmark-icon.svg) | ![Checkmark icon](../../icons/checkmark-icon.svg) | ![Checkmark icon](../../icons/checkmark-icon.svg) | ![Checkmark icon](../../icons/checkmark-icon.svg) |                         
 | `Long-term retention policy`                 | `NO`                            | `NO`                        | `NO`                             | `NO`                         |
 {: caption="Table 6. Use your own encryption key" caption-side="top"}
@@ -486,7 +486,7 @@ For example, you can define a view that reports when an object is archived in a 
 ### Archived file
 {: #adoption_archive_7}
 
-Whether you define policies to manage your COS objects (LogDNA archived files) at the bucket level, there might be situatiosn where you need to hold on to specific files for longer for compliance and auditing purposes. In COS, you can set different attributes per object that allow you to meet this requirements.
+Although you define policies to manage your COS objects (LogDNA archived files) at the bucket level, there might be situations where you need to hold on to specific files for longer for compliance and auditing purposes. In COS, you can set different attributes per object that allow you to meet this requirements.
 
 * You can define a **legal hold** flag to an archive file. Legal holds can be applied to objects during initial uploads or after an object is written. [Learn more](/docs/services/cloud-object-storage?topic=cloud-object-storage-immutable#immutable-terminology-hold).
 * You can define an **indefinite retention** flag to store the object indefinitely until a new retention period is applied. [Learn more](/docs/services/cloud-object-storage?topic=cloud-object-storage-immutable#immutable-terminology-indefinite).
@@ -525,22 +525,35 @@ The {{site.data.keyword.sqlquery_short}} service can process input data that is 
 {: #adoption_alerts}
 
 In a LogDNA instance, you define views to analyze the data. Then, you can configure 1 or more alerts per view to notify of an abnormal situation. [Learn more](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-alerts).
-* You can configure multiple notification channels. Valid channels are: `email`, `Slack`, `PagerDuty`, `Webhook`
-* You can choose to be notified by using a presence alert where you are alerted if more log lines than expected are present or to be notified by using an absence alert that is triggered when no data is available. 
 
-**Define an absence alert to be notified when inactivity in an application or service is identified. Notice that absence alerts require data going through the view in the past 24 hours to be active.**
+You can choose to be notified by using an absence alert that is triggered when no data is available.
+
+**Define an absence alert to be notified when inactivity in an application or service is identified. Notice that absence alerts require data in the view within the past 24 hours for the alert to be active.**
 {: tip}
 
-**Define a presence alert to be notified of exceptional situations in your applications and services that require your inmediate attention.**    
+You can choose to be notified by using a presence alert that is triggered when more log lines than expected are present.  
+
+**Define a presence alert to be notified of exceptional situations in your applications and services that require inmediate attention.**    
 {: tip}
 
+You can configure multiple notification channels. Valid channels are: `email`, `Slack`, `PagerDuty`, `Webhook`
 
-You can also define a **preset**. A preset is an alert template that you can attach to any number of views. 
+| Channel      | Guidance             |
+|--------------|----------------------|
+| `email`      | Email is a traditional communication method that you can use to notify 1 or more users. This notification channel requires users to be monitoring proactively their emails to detect an alert. **Define an email alert to verify that the alert on a view is working, and to inform users of situations they may have requested information.**
+| `Slack`      | Slack is a collaborative tool that you can use to communicate and share information across 1 or more teams. **Define a Slack alert to inform about routine scenarios that you might want to monitor.** |
+| `PagerDuty`  | PagerDuty is an incident management tool that you can use to automate incident resolution and escalation, define on-call schedules and more. **Define a PagerDuty alert to be notified inmmediately and be able to take action promptly.**  |
+| `Webhook`    | A webhook is another method that you can configure to provide other applications information. **Define a webhook alert if you have a third party tool that you can configure with a LogDNA instance via a webhook, and where you plan to manage notifications.** |
+{: caption="Table 7. Guidance for notification channel" caption-side="top"}
 
-To reuse an alert configuration with different views, configure an **alert preset**.
+**Use at least 2 notification methods to monitor actions that require your attention. For example, use Slack to share alerts and information, and PagerDuty to automate and take prompt action on problems.**
 {: tip}
 
-For compliance, define present alerts that notify
+In LogDNA, you can also define a **preset**. A preset is an alert template that you can attach to any number of views.
+
+To reuse an alert configuration with different views and enforce notification channels across users that analyze data through that instance, configure **alert presets**.
+{: tip}
+
 
 
 ## 9. Network strategy
