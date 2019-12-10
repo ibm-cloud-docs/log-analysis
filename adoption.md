@@ -341,7 +341,7 @@ Use the following table to help you identify the features that you should consid
 {: class="simple-tab-table"}
 {: row-headers}
 
-| Requirement                                  | Storage class: `Standard`[^11]  | Storage class: `Vault`[^12] | Storage class: `Cold Vault`[^13] | Storage class: `Flex`[^14] |
+| Requirement                                  | Storage class: `Standard`[^7]  | Storage class: `Vault`[^8] | Storage class: `Cold Vault`[^9] | Storage class: `Flex`[^10] |
 |----------------------------------------------|---------------------------------|-----------------------------|----------------------------------|-----------------------------|
 | `Type of workload`                           | `Continuous access`             | `Data isn't accessed frequently` | `Accessed every 90 days or less` | `Dynamic workloads where access patterns are difficult to predict` |
 | `Data resiliency`                            | `Cross region` or `Regional`    | `Cross region` or `Regional`    | `Cross region` or `Regional`   | `Cross region` or `Regional`   |
@@ -358,17 +358,10 @@ Use the following table to help you identify the features that you should consid
 `[7]`: Standard is used for active workloads. No charge incurs for data that is retrieved (other than the cost of the operational request itself and public outbound bandwidth).
 
 `[8]`: Vault is used for cool workloads where data isn't accessed frequently, but a retrieval charge applies for reading data. The service includes a threshold for object size and storage period consistent with the intended use of this service for cooler, less-active data.
+
 `[9]`: Cold Vault is used for cold workloads where data is primarily archived (accessed every 90 days or less) - a larger retrieval charge applies for reading data. The service includes a threshold for object size and storage period consistent with the intended use of this service: storing cold, inactive data.
 
 `[10]`:  Flex is used for dynamic workloads where access patterns are more difficult to predict. Depending on usage, if the lower cost of cooler storage that is combined with retrieval charges exceeds a cap value, then the storage charge increases and no any retrieval charges apply. If the data isn't accessed frequently, Flex storage can be more cost effective than Standard storage. If cooler usage patterns become more active, Flex storage is more cost effective than Vault or Cold Vault storage. No threshold object size or storage period applies to Flex buckets.
-
-`[11]`: Standard is used for active workloads. No charge incurs for data that is retrieved (other than the cost of the operational request itself and public outbound bandwidth).
-
-`[12]`: Vault is used for cool workloads where data isn't accessed frequently, but a retrieval charge applies for reading data. The service includes a threshold for object size and storage period consistent with the intended use of this service for cooler, less-active data.
-
-`[13]`: Cold Vault is used for cold workloads where data is primarily archived (accessed every 90 days or less) - a larger retrieval charge applies for reading data. The service includes a threshold for object size and storage period consistent with the intended use of this service: storing cold, inactive data.
-
-`[14]`:  Flex is used for dynamic workloads where access patterns are more difficult to predict. Depending on usage, if the lower cost of cooler storage that is combined with retrieval charges exceeds a cap value, then the storage charge increases and no any retrieval charges apply. If the data isn't accessed frequently, Flex storage can be more cost effective than Standard storage. If cooler usage patterns become more active, Flex storage is more cost effective than Vault or Cold Vault storage. No threshold object size or storage period applies to Flex buckets.
 
 Objects that are subject to a bucket's `Immutable Object Storage` retention policy will have expiration actions deferred until the retention policy is no longer enforced. 
 {: tip}
@@ -460,8 +453,6 @@ When you archive logs from the Frankfurt LogDNA instance to {an {{site.data.keyw
 * You must configure a bucket that complies with the EU-Supported and GDPR regulations. For the list of COS EU-supported endpoints, see [EU-supported endpoints](/docs/services/cloud-object-storage?topic=cloud-object-storage-endpoints#endpoints-eu-managed).
 
     For example, consider the following scenarios:
-
-    * For a bucket with **single site** resiliency, you can create the bucket in Amsterdam or Milan.
 
     * For a bucket with **regional** resiliency, you can create the bucket in the `EU-DE` location to keep the data in Frankfurt.
 
