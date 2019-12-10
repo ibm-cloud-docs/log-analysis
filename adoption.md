@@ -67,7 +67,7 @@ When you configure your account to be HIPAA enabled, consider the following info
 Enable this setting only if you or your company is a covered entity as defined by HIPAA. If you or your company is a business associate of a covered entity, [contact {{site.data.keyword.cloud_notm}} Sales](https://www.ibm.com/account/reg/us-en/signup?formid=MAIL-wcp){: new_window} ![External link icon](../icons/launch-glyph.svg "External link icon") to accept the applicable BAA. For more information about HIPAA definitions of covered entities and business associates, see the [US Department of Health & Human Services](https://www.hhs.gov/hipaa/for-professionals/covered-entities/index.html){: new_window} ![External link icon](../icons/launch-glyph.svg "External link icon") website.
 {: important}
 
-In addition, for logging instances that you provision in a HIPAA enabled account, you must **accept a Business Associate Addendum (BAA) with LogDNA** prior to having access to this plan. Contact {{site.data.keyword.IBM_notm}} and [open a support ticket](/docs/get-support?topic=get-support-getting-customer-support#getting-customer-support).
+In addition, for logging instances that you provision in a HIPAA enabled account, LogDNA requires that you **accept a Business Associate Addendum (BAA) with LogDNA** prior to having access to this plan. Contact {{site.data.keyword.IBM_notm}} and [open a support ticket](/docs/get-support?topic=get-support-getting-customer-support#getting-customer-support).
 {: important}
 
 
@@ -85,6 +85,7 @@ In addition, for logging instances that you provision in a HIPAA enabled account
 You can provision {{site.data.keyword.la_full_notm}} instances in different {{site.data.keyword.cloud_notm}} locations. 
 * Each location represents the geographic area where your {{site.data.keyword.la_full_notm}} requests are handled and processed for that instance, and where data is resident. 
 * Each MZR location has three different data centers for redundancy. The data for each location is kept in the three data centers near that location. If all three data centers in a location fail, the {{site.data.keyword.la_full_notm}} service for that location becomes unavailable.
+* Each MZR configuration can accept a single data center failure.
 
 **When you choose the locations where you plan to provision {{site.data.keyword.la_full_notm}} instances, check the regulatory and high availability (HA) specifications of each location. For more information, see [Locations](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-regions).**
 {: tip}
@@ -280,15 +281,15 @@ There are 2 types of data that you should consider archiving:
 
 In the LogDNA web UI, you can define custom views, dashboards, parsing templates, and exclusion rules that you can use to view and analyze data.
 
-To reuse resource definitions that you define in your LogDNA instance, you can export these resources from a {{site.data.keyword.la_full_notm}} instance as a JSON file. Then, you can import the definitions into other LogDNA instances. For example, you can reuse your LogDNA resources across different environments for your stage, pre-production, and production logging instances. [Learn more](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-reuse_resource_definitions).
+To reuse resource definitions that you define in your LogDNA instance, you can export these resources from {an {{site.data.keyword.la_full_notm}} instance as a JSON file. Then, you can import the definitions into other LogDNA instances. For example, you can reuse your LogDNA resources across different environments for your stage, pre-production, and production logging instances. [Learn more](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-reuse_resource_definitions).
 
-**Archive LogDNA resource definitions for reuse in a {{site.data.keyword.cos_full_notm}} in a git repository where you can control access to the archived files and manage versions.**
+**Backup LogDNA resource definitions into a version control system such as a git repository where you can control access to the archived files and manage versions.**
 {: tip}
 
 ### Archive log data to a COS bucket
 {: #adoption_archive_data}
 
-**Enable archiving of your data from a LogDNA instance to a {{site.data.keyword.cos_full_notm}} (COS) bucket.**
+**Enable archiving of your data from a LogDNA instance to {an {{site.data.keyword.cos_full_notm}} (COS) bucket.**
 {: tip}
 
 After you provision a LogDNA instance, you can configure archiving to an {{site.data.keyword.cos_full_notm}} (COS) bucket. You can create different types of buckets based on your requirements. 
@@ -440,7 +441,7 @@ In COS, you can define policies to control the permissions that are granted to s
 ### EU supported account
 {: #adoption_archive_5}
 
-When you archive logs from the Frankfurt LogDNA instance to a {{site.data.keyword.cos_full_notm}} (COS) bucket, consider the following information:
+When you archive logs from the Frankfurt LogDNA instance to {an {{site.data.keyword.cos_full_notm}} (COS) bucket, consider the following information:
 * When you provision an instance of the COS service, this instance is a global one in your account. It is not region bound.
 * You must configure a bucket that complies with the EU-Supported and GDPR regulations. For the list of COS EU-supported endpoints, see [EU-supported endpoints](/docs/services/cloud-object-storage?topic=cloud-object-storage-endpoints#endpoints-eu-managed).
 
@@ -503,7 +504,7 @@ You can use the {{site.data.keyword.sqlquery_short}} service to query {{site.dat
 
 The {{site.data.keyword.sqlquery_short}} service provides a serverless, no-ETL solution to easily query data stored in {{site.data.keyword.cos_short}}. Underneath, SQL Query uses Apache Spark SQL as its underlying query engine. You can use the {{site.data.keyword.sqlquery_short}} to run SQL queries (that is, `SELECT` statements) to analyze, transform structured and semi-structured data, or clean up rectangular data. You cannot run actions such as `CREATE`, `DELETE`, `INSERT`, and `UPDATE`.
 
-The {{site.data.keyword.sqlquery_short}} service can process input data that is read from CSV, JSON, ORC, Parquet, or AVRO files. Archived files from an {{site.data.keyword.at_full_notm}} instance contain data in JSON format. When you use the {{site.data.keyword.sqlquery_short}} service, each query result can be written to a `CSV`, `JSON`, `ORC`, `PARQUET`, or `AVRO` file in a {{site.data.keyword.cos_short}}instance of your choice. 
+The {{site.data.keyword.sqlquery_short}} service can process input data that is read from CSV, JSON, ORC, Parquet, or AVRO files. Archived files from an {{site.data.keyword.at_full_notm}} instance contain data in JSON format. When you use the {{site.data.keyword.sqlquery_short}} service, each query result can be written to a `CSV`, `JSON`, `ORC`, `PARQUET`, or `AVRO` file in {an {{site.data.keyword.cos_short}}instance of your choice. 
 
 **When you query an {{site.data.keyword.at_full_notm}} archive file, you must convert the JSON formatted file into `PARQUET` format to be able to query the contents successfully.**
 {: tip}
@@ -518,30 +519,42 @@ The {{site.data.keyword.sqlquery_short}} service can process input data that is 
 ## 8. Define the notification strategy 
 {: #adoption_alerts}
 
-HIPAA
+In a LogDNA instance, you define views to analyze the data. Then, you can configure 1 or more alerts per view to notify of an abnormal situation. [Learn more](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-alerts).
+* You can configure multiple notification channels. Valid channels are: `email`, `Slack`, `PagerDuty`, `Webhook`
+* You can choose to be notified by using a presence alert where you are alerted if more log lines than expected are present or to be notified by using an absence alert that is triggered when no data is available. 
 
-Notify in the event of an exception 
+**Define an absence alert to be notified when inactivity in an application or service is identified. Notice that absence alerts require data going through the view in the past 24 hours to be active.**
+{: tip}
 
-Setup absence alerting
-
-Follow these steps:
-Setup alert
-Configure it for absence alerting
-
-bsence alerting tests for the absence of data flowing into your service instance.  If data is not flowing into the system it may indicate an issue in the application or environment.  Absence duration is unique to workload and can be customized within the UI.
+**Define a presence alert to be notified of exceptional situations in your applications and services that require your inmediate attention.**    
+{: tip}
 
 
+You can also define a **preset**. A preset is an alert template that you can attach to any number of views. 
 
-## Network strategy
+To reuse an alert configuration with different views, configure an **alert preset**.
+{: tip}
+
+For compliance, define present alerts that notify
+
+
+## 9. Network strategy
+{: #adoption_network}
 
  VRF
 
 
 
 
-## Sending logs to a LogDNA instance
+## 10. Sending logs to a LogDNA instance
+{: #adoption_ingestion}
+
 
 ## Exporting logs from a LogDNA instance
+{: #adoption_export}
+
 
 ## Service platform logs
+{: #adoption_svc_logs}
+
 
