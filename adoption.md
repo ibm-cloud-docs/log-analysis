@@ -339,6 +339,7 @@ Use the following table to help you identify the features that you should consid
 {: tab-group="archive"}
 {: class="simple-tab-table"}
 {: row-headers}
+[^comparison-table]
 
 [^7]: Standard is used for active workloads. No charge incurs for data that is retrieved (other than the cost of the operational request itself and public outbound bandwidth).
 
@@ -361,6 +362,7 @@ Use the following table to help you identify the features that you should consid
 {: tab-group="archive"}
 {: class="simple-tab-table"}
 {: row-headers}
+[^comparison-table]
 
 [^11]: Standard is used for active workloads. No charge incurs for data that is retrieved (other than the cost of the operational request itself and public outbound bandwidth).
 
@@ -400,6 +402,7 @@ If you need to use your own key to encrypt the data at-rest in a bucket, use the
 | `Expiration policy`                          | ![Checkmark icon](../../icons/checkmark-icon.svg) | ![Checkmark icon](../../icons/checkmark-icon.svg) | ![Checkmark icon](../../icons/checkmark-icon.svg) | ![Checkmark icon](../../icons/checkmark-icon.svg) |                         
 | `Long-term retention policy`                 | `NO`                            | `NO`                        | `NO`                             | `NO`                         |
 {: caption="Table 6. Use your own encryption key" caption-side="top"}
+[^simpletable]
 
 [^15]: Currently, you cannot use your own key with a bucket that has a retention policy configured. 
 
@@ -559,3 +562,4 @@ bsence alerting tests for the absence of data flowing into your service instance
 ## Exporting logs from a LogDNA instance
 
 ## Service platform logs
+
