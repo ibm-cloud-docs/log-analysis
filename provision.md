@@ -143,7 +143,7 @@ To provision an instance of {{site.data.keyword.at_full_notm}} through the comma
 
     SERVICE_PLAN_NAME is the type of plan. Valid values are *lite*, *7-days*, *14-days*, *30-days*.
     
-    LOCATION is the region where the LogDNA instance is created. To get the latest list of locations that are available for the {{site.data.keyword.at_full_notm}} service, see [Locations](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-regions).
+    LOCATION is the region where the LogDNA instance is created. To get the latest list of locations that are available for the {{site.data.keyword.la_full_notm}} service, see [Locations](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-regions).
 
     For example, to provision an instance with the 7 days retention plan, run the following command:
 
@@ -151,6 +151,7 @@ To provision an instance of {{site.data.keyword.at_full_notm}} through the comma
     ibmcloud resource service-instance-create logdna-instance-01 logdna 7-day us-south
     ```
     {: codeblock}
+
 
 ### Step 2. Create the credentials for your instance
 {: #provision_cli_2}
