@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2019
-lastupdated: "2019-11-25"
+lastupdated: "2019-12-06"
 
 keywords: LogDNA, IBM, Log Analysis, logging, config agent
 
@@ -29,24 +29,50 @@ For regulated and highly available workloads, consider the following adoption gu
 {:shortdesc}
 
 
-
-## 1. Define your account settings
+## 1. Define naming stardards for compliance
 {: #adoption_acc_settings}
 
-Across every industry, organizations require tighter controls and visibility into where their data is stored and processed in the {{site.data.keyword.cloud}}. 
+When you create resources in the {{site.data.keyword.cloud_notm}}, you can choose how to name them. 
 
-**Enable your {{site.data.keyword.cloud_notm}} account to be EU supported and HIPAA supported.**
+Define naming standards that do not include PII information across all resources that are created in the {{site.data.keyword.cloud_notm}}.
 {: important}
+
+## 2. Configure the account settings for compliance
+{: #adoption_acc_settings}
+
+Across every industry, organizations require tighter controls and visibility into where their data is stored and processed. 
+
+**Indicate to {{site.data.keyword.IBM_notm}} your compliance requirements by enabling your {{site.data.keyword.cloud_notm}} account as HIPAA or EU supported.**
+{: important}
+
+In the {{site.data.keyword.cloud}}, you can configure your account for EU support and for HIPAA support:
+* You might choose to enable the **EU Supported** setting, for example, if you use resources to process personal data for European citizens. For more information, see [Set on the EU-Supported flag in your account](/docs/account?topic=account-eu-hipaa-supported#bill_eusupported).
+* You might choose to enable the **HIPAA** Supported setting if you plan to include Protected Health Information (PHI) in HIPAA-enabled services. For more information, see [Set on the HIPAA flag in your account](/docs/account?topic=account-eu-hipaa-supported#enabling-hipaa).
 
 Notice that only the account owner can enable the account to be EU supported and HIPAA supported. 
 
-You might choose to enable the EU Supported setting, for example, if you use resources to process personal data for European citizens. For more information, see [Set on the EU-Supported flag in your account](/docs/account?topic=account-eu-hipaa-supported#bill_eusupported).
+### HIPAA
+{: #adoption_acc_settings_hipaa}
 
-You might choose to enable the HIPAA Supported setting if you plan to include Protected Health Information (PHI) in HIPAA-enabled services. For more information, see [Set on the HIPAA flag in your account](/docs/account?topic=account-eu-hipaa-supported#enabling-hipaa).
+If you're the account owner, you can enable your {{site.data.keyword.cloud}} account to be HIPAA supported. For example, you might choose to enable the **HIPAA Supported setting** if you plan to include Protected Health Information (PHI) in HIPAA-enabled services.
+
+The US Health Insurance Portability and Accountability Act (HIPAA) and the Health Information Technology for Economic and Clinical Health (HITECH) Act define standards for handling electronic healthcare transactions and information. If you or your company is a covered entity as defined by HIPAA, you must enable the HIPAA Supported setting if you run sensitive workloads that are regulated under HIPAA and the HITECH Act. Learn more about {{site.data.keyword.cloud_notm}} compliance in [Compliance on the {{site.data.keyword.cloud_notm}}](https://www.ibm.com/cloud/compliance){: new_window} ![External link icon](../icons/launch-glyph.svg "External link icon").
+{: note}
+
+When you configure your account to be HIPAA enabled, consider the following information:
+* You can filter on *HIPAA Enabled* services in the catalog. Accounts that enable the **HIPAA Supported setting** still have access to the full catalog of services. 
+* You indicate to {{site.data.keyword.IBM_notm}} that your account stores protected health information (PHI).
+* You digitally accept the IBM Business Associate Addendum (BAA) for covered entities.
+
+Enable this setting only if you or your company is a covered entity as defined by HIPAA. If you or your company is a business associate of a covered entity, [contact {{site.data.keyword.cloud_notm}} Sales](https://www.ibm.com/account/reg/us-en/signup?formid=MAIL-wcp){: new_window} ![External link icon](../icons/launch-glyph.svg "External link icon") to accept the applicable BAA. For more information about HIPAA definitions of covered entities and business associates, see the [US Department of Health & Human Services](https://www.hhs.gov/hipaa/for-professionals/covered-entities/index.html){: new_window} ![External link icon](../icons/launch-glyph.svg "External link icon") website.
+{: important}
+
+In addition, for logging instances that you provision in a HIPAA enabled account, you must **accept a Business Associate Addendum (BAA) with LogDNA** prior to having access to this plan. Contact {{site.data.keyword.IBM_notm}} and [open a support ticket](/docs/get-support?topic=get-support-getting-customer-support#getting-customer-support).
+{: important}
 
 
-## 2. Define the service strategy 
-{: #adoption_resource}
+## 3. Define the service strategy 
+{: #adoption_resource_svc}
 
 {{site.data.keyword.la_full_notm}} collects and aggregates logs in one centralized logging system.
 * Log data is hosted on the {{site.data.keyword.cloud_notm}}. The {{site.data.keyword.la_full_notm}} service is operated by LogDNA.
@@ -54,7 +80,7 @@ You might choose to enable the HIPAA Supported setting if you plan to include Pr
 
 
 ### Locations
-{: #adoption_resource_location}
+{: #adoption_resource_svc_location}
 
 You can provision {{site.data.keyword.la_full_notm}} instances in different {{site.data.keyword.cloud_notm}} locations. 
 * Each location represents the geographic area where your {{site.data.keyword.la_full_notm}} requests are handled and processed for that instance, and where data is resident. 
@@ -69,6 +95,7 @@ You can also check [ensure zero downtime](/docs/overview?topic=overview-zero-dow
 
 
 ### Resource groups
+{: #adoption_resource_svc_rg}
 
 Resource groups are a logical container for organizing your IAM-enabled resources.
 * IAM-enabled services belong to a resource group. The {{site.data.keyword.la_full_notm}} service is an IAM-enabled service.
@@ -82,10 +109,32 @@ Account owners can add resources to any resource group. Other users must be gran
 
 For more information, see [Best practices for organizing resources in a resource group](/docs/resources?topic=resources-bp_resourcegroups).
 
+If you add PII information in the resource group name, you might be disclosing sensitive data to others in the same account.
+
+**When you define your resource groups, do not add sensitive information in the tag name.**
+{: note}
+
+### Naming
+{: #adoption_resource_svc_name}
+
+If you add PII information in the name or the description of a service, you might be disclosing sensitive data to others in the same account.
+
+**When you define your service name, do not add sensitive information in the name or in the description.**
+{: note}
+
+### Service plan
+{: #adoption_resource_svc_plan}
+
+The service plan that you choose for a LogDNA instance determines the number of days that data is available for search. For more information, see [Service plans](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-service_plans).
+
+**Choose your plan based on the number of days that you need to be able to search data online through the web UI.**
+{: note}
+
+The HIPAA plan has a maximum of 25 users. If you need to grant permissions to more than 25 users, [open a support ticket](/docs/get-support?topic=get-support-getting-customer-support#getting-customer-support).
 
 
 ### Tags
-{: #tags}
+{: #adoption_resource_svc_tags}
 
 A tag is a label that you assign to a resource for easy filtering of resources in your resource list. 
 * You can use tags to organize your resources and easily find them later. 
@@ -99,7 +148,9 @@ Tags are case-sensitive, and the maximum length of a tag is 128 characters.
 * Colons turn the tag into a string where you can isolate two logical parts, like a `key:value` pair. You can't use a colon in a tag without creating this pairing. 
 * A comma separates tags and can't be used within the tag name itself.
 
-**When you define your tags, do not store information in tags that might disclose sensitive information to others in the same account.**
+If you add PII information in the name, you might be disclosing sensitive data to others in the same account.
+
+**When you define your tags, do not add sensitive information in the tag name.**
 {: note}
 
 Tags are visible to all members of an account. 
@@ -109,12 +160,16 @@ Tags are visible to all members of an account.
 
 
 
-## 3. Define the IAM strategy
+## 4. Define the IAM strategy
 {: #adoption_iam}
 
 **Use {{site.data.keyword.iamlong}} (IAM) to securely authenticate users and service IDs, and to control access to all cloud resources and data consistently in the {{site.data.keyword.cloud_notm}}.**
 {: important}
 
+If you add PII information in the name or description of IAM resources, you might be disclosing sensitive data to others in the same account.
+
+**When you define your IAM reosurces, do not add sensitive information in the tag name.**
+{: note}
 
 
 ### Access groups
@@ -182,6 +237,241 @@ You can assign a single policy to the access group instead of assigning the same
 [Learn more](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-work_iam).
 
 
+## 5. Configure the account settings for authentication into your account
+{: #adoption_login}
+
+Multifactor authentication (MFA) adds an extra layer of security to your account by requiring all users to authenticate by using an additional authentication method beyond an ID and password. This is also commonly known as two-factor authentication (2FA). 
+
+The {{site.data.keyword.cloud_notm}} account owner or administrator for the billing service can choose to require multifactor authentication (MFA) for every user in the account or just users with non-federated IDs who do not use SSO. All users with an IBMid use a time-based one-time passcode (TOTP) MFA method, and any users with a different type of ID must be enabled to use the time-based one-time passcode authentication (TOTP), security questions, or an external authentication method separately. [Learn more](/docs/iam?topic=iam-enablemfa).
+
+You can also configure MFA options such as security questions, using a time-based one-time passcode, and using an external authentication method. These types of MFA options are specific per account and are available only with former classic infrastructure accounts.
+
+**Enable multifactor authentication (MFA) in your {{site.data.keyword.cloud_notm}} account for all users.**
+{: important}
+
+
+
+## 6. Define the archive strategy
+{: #adoption_archive}
+
+LogDNA as a service does not backup your data. By default, archiving is not enabled for any LogDNA instance. 
+
+There are 2 types of data that you should consider archiving:
+* Log data
+* Web UI resource definitions such as parsing templates, exclusion rules, views, and dashboards.
+
+### Backup the resource configurations of your LogDNA instance
+{: #adoption_archive_ui}
+
+In the LogDNA web UI, you can define custom views, dashboards, parsing templates, and exclusion rules that you can use to view and analyze data.
+
+To reuse resource definitions that you define in your LogDNA instance, you can export these resources from a {{site.data.keyword.la_full_notm}} instance as a JSON file. Then, you can import the definitions into other LogDNA instances. For example, you can reuse your LogDNA resources across different environments for your stage, pre-production, and production logging instances. [Learn more](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-reuse_resource_definitions).
+
+**Archive LogDNA resource definitions for reuse in a {{site.data.keyword.cos_full_notm}} in a git repository where you can control access to the archived files and manage versions.**
+{: note}
+
+### Archive log data to a COS bucket
+{: #adoption_archive_data}
+
+**Archive your data from a LogDNA instance to a {{site.data.keyword.cos_full_notm}} (COS) bucket to backup your data, to access the data after it is not available for search through the web UI, to have access to your data in case of a disaster recovery event or to meet compliance requirements. When you enable archiving, notice that you are responsible for checking that your archived files are not corrupted, and for the maintenance of your archived files.**
+{: important}
+
+After you provision a LogDNA instance, you can configure archiving to an {{site.data.keyword.cos_full_notm}} (COS) bucket. You can create different types of buckets based on your requirements. 
+
+When you plan the bucket for a LogDNA instance, consider the following information:
+
+| Requirement                                            | Question to answer                                                | Information                                                                 |
+|--------------------------------------------------------|-------------------------------------------------------------------|-----------------------------------------------------------------------------|
+| `Type of workload` [^1]                                | How often do you need to access the data?                         | [Information about storage classes](/docs/services/cloud-object-storage?topic=cloud-object-storage-classes#classes-about) |
+| `Retention policy` [^2]                                | Do you need to protect data from being deleted?                   | [Information about Immutable Object Storage](/docs/services/cloud-object-storage?topic=cloud-object-storage-immutable) |
+| `Expiration policy` [^3]                               | Do you need automatic deletion of files?                          | [Information about expiration rules](/docs/services/cloud-object-storage?topic=cloud-object-storage-expiry) |                            
+| `Long-term retention policy` [^4]                      | Do you need to keep data for a long period of time?               | [Information about archiving COS files for long term storage](/docs/services/cloud-object-storage?topic=cloud-object-storage-archive) |
+| `Encryption of data at-rest with my own key` [^5]      | Can I use my own key to encrypt data at-rest?                     | [Information about encryption of data at-rest](/docs/services/cloud-object-storage?topic=cloud-object-storage-encryption) |
+| `Data resiliency` [^6]                                 | Do you need to store the data in a specific geographical location? | [Information about resiliency](/docs/services/cloud-object-storage/basics?topic=cloud-object-storage-endpoints) |
+{: caption="Table 3. COS bucket requirements" caption-side="top"} 
+
+[^1]: Data might sit untouched for long periods of time. For less active workloads, you can create buckets with different storage classes. For example, use the standard storage class for active workloads, where you need to access data at any time.
+
+[^2]: You can choose *Immutable Object Storage* to preserve electronic records and maintain data integrity. When you define a retention policy for a bucket, you are specifying that the data is stored in a WORM (Write-Once-Read-Many), non-erasable and non-rewritable manner. This policy is enforced until the end of a retention period and the removal of any legal holds. Notice that `Immutable Object Storage` is available in certain regions only.
+
+[^3]: You can use an expiration rule to delete objects automatically after a defined period from the object creation date. 
+
+[^4]: You can define a retention policy to retain data for a long period of time and have the data available for downloads and queries. If you do not need to query the data, and you just need to keep it for compliance, look into archiving COS files from any of the storage tiers to a long-term offline archive location or use the online *Cold Vault* option.
+
+[^5]: COS provides several options to encrypt your data. By default, all objects that are stored in COS are encrypted by using randomly generated keys and an all-or-nothing-transform (AONT). With COS, you can also manage your keys manually by providing your own encryption keys - referred to as Server-Side Encryption with Customer-Provided Keys (SSE-C). Alternatively, you can choose to use the integration capabilities with {{site.data.keyword.cloud}} Key Management Services like {{site.data.keyword.keymanagementservicelong}} and {{site.data.keyword.hscrypto}}. 
+
+[^6]: Resiliency refers to the scope and scale of the geographic area across which your data is distributed. For example, you can choose cross region resiliency to spread your data across several geographical areas, or regional resiliency to spread data across a single region. Notice that a single data center distributes data across devices within a single site only.
+
+
+**Create a custom COS bucket with the features such as resilience, storage class, and the policies that you have identified.** [Learn more](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-archiving).
+{: note}
+
+Use the following table to help you identify the features that you should consider when you create a bucket:
+
+| Requirement                                  | Storage class: `Standard`[^7]   | Storage class: `Vault`[^8]  | Storage class: `Cold Vault`[^9]  | Storage class: `Flex`[^10]  |
+|----------------------------------------------|---------------------------------|-----------------------------|----------------------------------|-----------------------------|
+| `Type of workload`                           | `Continuous access`             | `Data isn't accessed frequently` | `Accessed every 90 days or less` | `Dynamic workloads where access patterns are difficult to predict` |
+| `Data resiliency`                            | `Cross region`                  | `Cross region`             | `Cross region`                  | `Cross region`             |
+| `Retention policy`                           | ![Checkmark icon](../../icons/checkmark-icon.svg) | ![Checkmark icon](../../icons/checkmark-icon.svg) | ![Checkmark icon](../../icons/checkmark-icon.svg) | ![Checkmark icon](../../icons/checkmark-icon.svg) |
+| `Expiration policy`                          | ![Checkmark icon](../../icons/checkmark-icon.svg) | ![Checkmark icon](../../icons/checkmark-icon.svg) | ![Checkmark icon](../../icons/checkmark-icon.svg) | ![Checkmark icon](../../icons/checkmark-icon.svg) |                         
+| `Long-term retention policy`                 | `NO`                            | `NO`                        | `NO`                             | `NO`                         |
+{: caption="Table 4. Disaster recovery or compliance requirements" caption-side="top"}
+{: #archive-table-4}
+{: tab-title="Disaster Recovery"}
+{: tab-group="archive"}
+{: class="simple-tab-table"}
+{: row-headers}
+
+| Requirement                                  | Storage class: `Standard`[^7]  | Storage class: `Vault`[^8] | Storage class: `Cold Vault`[^9] | Storage class: `Flex`[^10] |
+|----------------------------------------------|---------------------------------|-----------------------------|----------------------------------|-----------------------------|
+| `Type of workload`                           | `Continuous access`             | `Data isn't accessed frequently` | `Accessed every 90 days or less` | `Dynamic workloads where access patterns are difficult to predict` |
+| `Data resiliency`                            | `Cross region` or `Regional`    | `Cross region` or `Regional`    | `Cross region` or `Regional`   | `Cross region` or `Regional`   |
+| `Retention policy`                           | ![Checkmark icon](../../icons/checkmark-icon.svg) | ![Checkmark icon](../../icons/checkmark-icon.svg) | ![Checkmark icon](../../icons/checkmark-icon.svg) | ![Checkmark icon](../../icons/checkmark-icon.svg) |
+| `Expiration policy`                          | ![Checkmark icon](../../icons/checkmark-icon.svg) | ![Checkmark icon](../../icons/checkmark-icon.svg) | ![Checkmark icon](../../icons/checkmark-icon.svg) | ![Checkmark icon](../../icons/checkmark-icon.svg) |                         
+| `Long-term retention policy`                 | `NO`                            | `NO`                        | `NO`                             | `NO`                         |
+{: caption="Table 5. Backup or access to data beyond the service plan days requirements" caption-side="top"}
+{: #archive-table-5}
+{: tab-title="Backup"}
+{: tab-group="archive"}
+{: class="simple-tab-table"}
+{: row-headers}
+
+[^7]: Standard is used for active workloads. No charge incurs for data that is retrieved (other than the cost of the operational request itself and public outbound bandwidth).
+
+[^8]: Vault is used for cool workloads where data isn't accessed frequently, but a retrieval charge applies for reading data. The service includes a threshold for object size and storage period consistent with the intended use of this service for cooler, less-active data.
+
+[^9]: Cold Vault is used for cold workloads where data is primarily archived (accessed every 90 days or less) - a larger retrieval charge applies for reading data. The service includes a threshold for object size and storage period consistent with the intended use of this service: storing cold, inactive data.
+
+[^10]:  Flex is used for dynamic workloads where access patterns are more difficult to predict. Depending on usage, if the lower cost of cooler storage that is combined with retrieval charges exceeds a cap value, then the storage charge increases and no any retrieval charges apply. If the data isn't accessed frequently, Flex storage can be more cost effective than Standard storage. If cooler usage patterns become more active, Flex storage is more cost effective than Vault or Cold Vault storage. No threshold object size or storage period applies to Flex buckets.
+
+Objects that are subject to a bucket's `Immutable Object Storage` retention policy will have any expiration actions deferred until the retention policy is no longer enforced. 
+{: note}
+
+
+### Encrypt data with your own key
+{: #adoption_archive_1}
+
+By default, all objects that are stored in COS are encrypted by using randomly generated keys and an all-or-nothing-transform (AONT). When you archive data into your COS instance, your objects are automatically encrypted with data encryption keys (DEKs). When you need to access a bucket, the service checks your user permissions and decrypts the objects within the bucket for you. This encryption model is called *provider-managed encryption*.
+
+While this default encryption model provides at-rest security, some workloads need full control over the data encryption keys used. 
+
+COS provides several options to encrypt your data. This encryption model is called *customer-managed encryption*:
+* You can manage your keys manually by providing your own encryption keys - referred to as Server-Side Encryption with Customer-Provided Keys (SSE-C). 
+* You can choose to use the integration capabilities with {{site.data.keyword.cloud}} Key Management Services like {{site.data.keyword.keymanagementservicelong}} and {{site.data.keyword.hscrypto}}. 
+
+    You can use {{site.data.keyword.keymanagementservicelong}} to provision encrypted keys for apps across {{site.data.keyword.cloud_notm}} services. As you manage the lifecycle of your keys, you can benefit from knowing that your keys are secured by FIPS 140-2 Level 3 certified cloud-based hardware security modules (HSMs) that protect against the theft of information. When you integrate COS with the {{site.data.keyword.keymanagementserviceshort}} service, you can add envelope encryption to your DEKs. In {{site.data.keyword.keymanagementserviceshort}}, you can provision highly secure root keys, which serve as a master keys that you control in the service. When you create a bucket, you can configure envelope encryption for the bucket at its creation. This added protection wraps (or encrypts) the DEKs associated with the bucket by using a root key that you manage in {{site.data.keyword.keymanagementserviceshort}}. The practice, called *key wrapping*, uses multiple AES algorithms to protect the privacy and the integrity of your DEKs, so only you control access to their associated data.
+
+    Hyper Protect Crypto Services is a single-tenant, dedicated HSM that is controlled by you. The service is built on FIPS 140-2 Level 4-certified hardware, the highest offered by any cloud provider in the industry.
+
+
+If you need to use your own key to encrypt the data at-rest in a bucket, use the following table to help you identify the features that you should consider when you create a bucket:
+
+| Requirement                                  | Storage class: `Standard` [^7]  | Storage class: `Vault` [^8] | Storage class: `Cold Vault` [^9] | Storage class: `Flex` [^10] |
+|----------------------------------------------|---------------------------------|-----------------------------|----------------------------------|-----------------------------|
+| `Type of workload`                           | `Continuous access`             | `Data isn't accessed frequently` | `Accessed every 90 days or less` | `Dynamic workloads where access patterns are difficult to predict` |
+| `Data resiliency`                            | `Regional`                      | `Regional`                   | `Regional`                      | `Regional`                   |
+| `Retention policy`  [^11]                    | `NO`                            | `NO`                        | `NO`                             | `NO`                         |
+| `Expiration policy`                          | ![Checkmark icon](../../icons/checkmark-icon.svg) | ![Checkmark icon](../../icons/checkmark-icon.svg) | ![Checkmark icon](../../icons/checkmark-icon.svg) | ![Checkmark icon](../../icons/checkmark-icon.svg) |                         
+| `Long-term retention policy`                 | `NO`                            | `NO`                        | `NO`                             | `NO`                         |
+{: caption="Table 6. Use your own encryption key" caption-side="top"}
+
+
+[^11]: Currently, you cannot use your own key with a bucket that has a retention policy configured. 
+
+ 
+**Use the customer-managed encryption model to manage and control the key that is used to encrypt data at-rest.**
+{: note}
+
+
+[After you designate a root key in {{site.data.keyword.keymanagementserviceshort}}](/docs/services/key-protect?topic=key-protect-create-root-keys) and [grant access between your services](/docs/services/key-protect?topic=key-protect-integrate-services#grant-access), you can enable envelope encryption for a specified storage bucket by using the {{site.data.keyword.cos_full_notm}} GUI.
+
+**To enable encryption with your custom key by using the {{site.data.keyword.keymanagementserviceshort}} service, [create a root key](/docs/services/key-protect?topic=key-protect-create-root-keys)  and create an [authorization](/docs/services/key-protect?topic=key-protect-integrate-services#grant-access) between your COS instance and the {{site.data.keyword.keymanagementserviceshort}} instance. Notice that the COS bucket and the {{site.data.keyword.keymanagementserviceshort}} instance need to be in the available in the same region.**
+{: note}
+
+### Naming
+{: #adoption_archive_2}
+
+If you add PII information in the name of a bucket, you might be disclosing sensitive data to others in the same account.
+
+**When you define your bucket name, do not add sensitive information in the name or in the description.**
+{: note}
+
+
+### IAM policies to configure archiving
+{: #adoption_archive_3}
+
+To configure archiving, you need the following IAM policies:
+* An IAM policy with minimum platform role **Viewer** and service role **Manager** for the {{site.data.keyword.la_full_notm}} service: This policy is used to access the web UI, and configure archiving of the LogDNA instance.
+* An IAM policy with minimum platform role **Administrator** and service role **Manager**  for the COS service: This policy is needed to create a bucket, and the service ID, with its associated API key, that is used by the {{site.data.keyword.la_full_notm}} instance to authenticate and access the {{site.data.keyword.cos_full_notm}} instance. 
+
+A service ID identifies a service similar to how a user ID identifies a user. Service IDs are not tied to a specific user. If the user that creates the service ID leaves your organization and is deleted from the account, the service ID remains. The {{site.data.keyword.la_full_notm}} service uses an API key that is associated to a service ID that you define on your COS instance to authenticate and write files to the COS bucket.
+
+**Create a service ID for for the COS instance with writer permissions. Restrict access to the service ID so that the API key that is associated to it can only write to the bucket that you configure in LogDNA for archiving.**
+{: note} 
+
+If you add PII information in the name or the description of the service ID, you might be disclosing sensitive data to others in the same account.
+
+**When you define your service ID name, do not add sensitive information in the name or in the description.**
+{: note}
+
+You might have a requirement to rotate API keys regularly or your API key might be compromissed. 
+
+**Rotate the API key that is associated with your service ID regularly to prevent any security breaches caused by leaked keys or to comply with security guidelines..**
+{: note}
+
+### IAM policies to control access to the archived files
+{: #adoption_archive_4}
+
+In COS, you can define policies to control the permissions that are granted to service IDs and users to read, write, update object properties, and delete objects.
+
+Restrict user access to archived log files in the bucket. 
+{: note} 
+
+### EU supported account
+{: #adoption_archive_2}
+
+When you archive logs from the Frankfurt LogDNA instance to a {{site.data.keyword.cos_full_notm}} (COS) bucket, consider the following information:
+* When you provision an instance of the COS service, this instance is a global one in your account. It is not region bound.
+* You must configure a bucket that complies with the EU-Supported and GDPR regulations. For the list of COS EU-supported endpoints, see [EU-supported endpoints](/docs/services/cloud-object-storage?topic=cloud-object-storage-endpoints#endpoints-eu-managed).
+
+    For example, consider the following scenarios:
+
+    * For a bucket with **single site** resiliency, you can create the bucket in Amsterdam or Milan.
+
+    * For a bucket with **regional** resiliency, you can create the bucket in the `EU-DE` location to keep the data in Frankfurt.
+
+    * For a bucket with **cross region** resiliency, you can create the bucket in the `eu-geo` location. Data is kept within the EU geography across datacenters that are located in Milan, Amsterdam, and Frankfurt.
+
+* You must restrict user access to manage archived log files in these buckets.  
+* Users are responsible for downloading files to EU-supported locations.
+
+### Monitor archiving through Activity Tracker
+
+
+### Archived file
+
+COS --> legal hold
+
+## 7. Query data 
+
+by using SQL query
+by using ASPERA to download files
+
+After the data is archived, you can download an archived file, or query it by using a service such as SQL Query.
+
+I think as far as I understand HIPAA means HIPA ready (which we are) + per service guidelines
+and in the case of COS this means no PII in object names
+and in the case of SQL Query use KeyProtet
+for COS too
+
+
+
+## Network strategy
+
+ VRF
+
+
+
 ## 4. Define the notification strategy 
 {: #adoption_alerts}
 
@@ -198,66 +488,8 @@ Configure it for absence alerting
 bsence alerting tests for the absence of data flowing into your service instance.  If data is not flowing into the system it may indicate an issue in the application or environment.  Absence duration is unique to workload and can be customized within the UI.
 
 
+## Sending logs to a LogDNA instance
 
-## 5. Define the archive strategy
+## Exporting logs from a LogDNA instance
 
-
-
-[Manage encryption](/docs/services/cloud-object-storage?topic=cloud-object-storage-encryption)
-IBM® Cloud Object Storage provides several options to encrypt your data. By default, all objects that are stored in IBM Cloud Object Storage are encrypted by using randomly generated keys and an all-or-nothing-transform (AONT). While this default encryption model provides at-rest security, some workloads need full control over the data encryption keys used. You can manage your keys manually by providing your own encryption keys - referred to as Server-Side Encryption with Customer-Provided Keys (SSE-C).
-
-With Object Storage you also have a choice to use our integration capabilities with IBM Cloud™ Key Management Services like IBM® Key Protect and Hyper Protect Crypto Services. Depending on the security requirements, you can decide whether to use IBM Key Protect or IBM Hyper Protect Crypto Services for your IBM Cloud Object Storage buckets.
-
-IBM® Key Protect for IBM Cloud™ helps you provision encrypted keys for apps across IBM Cloud™ services. As you manage the lifecycle of your keys, you can benefit from knowing that your keys are secured by FIPS 140-2 Level 3 certified cloud-based hardware security modules (HSMs) that protect against the theft of information.
-
-Hyper Protect Crypto Services is a single-tenant, dedicated HSM that is controlled by you. The service is built on FIPS 140-2 Level 4-certified hardware, the highest offered by any cloud provider in the industry.
-
-
-[Use Immutable Object Storage](/docs/services/cloud-object-storage?topic=cloud-object-storage-immutable)
-Immutable Object Storage preserves electronic records and maintains data integrity. Retention policies ensure that data is stored in a WORM (Write-Once-Read-Many), non-erasable and non-rewritable manner. This policy is enforced until the end of a retention period and the removal of any legal holds.
-
-Immutable Object Storage is available in certain regions only, see Integrated Services for details. It also requires a Standard pricing plan. See pricing for details.
-
-Disaster Recovy
-
-Follow these steps.
-
-Archive, when sent to the properly configured COS account may provide your application or environment the necessary backup of data.  
-
-
-LogDNA as a service does not store an independent backup copy of your data. 
-
-
-When LogDNA is setup to archive to IBM COS, setup archive to a COS bucket which does not have preconfigured retention policies.
-
-
-
-### Cloud Object Storage 
-
-HIPAA
-PCI
-Business Continuity
-Disaster Recovery
-
-
-Services that are hosted globally create resources that operate across multiple locations. For example, with IBM Cloud Object Storage, you can choose to deploy data in a single data center, or even a combination of locations by selecting the endpoint where your application sends REST API requests.
-
-
-Review and identify the right COS configuration for your business needs.  Set this up to prepare for service archive.
-
-
-LogDNA can archive to a client configured COS bucket.  There are many COS configurations helping clients meet a variety of needs.  Data may need to be replicated across Regions to meet business and regulated requirements.  Alternatively data may need to be restricted to certain locations to meet data locality requirements.  Learn more about COS configurations here.
-
-
-
-I think as far as I understand HIPAA means HIPA ready (which we are) + per service guidelines
-and in the case of COS this means no PII in object names
-and in the case of SQL Query use KeyProtet
-for COS too
-
-
-
-
-## Network strategy
-
- VRF
+## Service platform logs
