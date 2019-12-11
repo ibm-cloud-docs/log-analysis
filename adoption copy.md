@@ -29,51 +29,68 @@ For regulated and highly available workloads, consider the following adoption gu
 {:shortdesc}
 
 
-## 1. Define resources naming stardards for compliance
+## 1. Define resource naming stardards for compliance
 {: #adoption_naming}
 
 When you create resources in the {{site.data.keyword.cloud_notm}}, you can choose how to name them, what information to include in their description fields, choose tags to group them, associate metadata, and more. You have a potential risk of exposing PII data and other sensitive information through any of these actions to other users in the account. 
 
-**Define naming standards that do not include PII and other sensitive information across all resources that are created in the {{site.data.keyword.cloud_notm}}.**
+Define resource naming standards that do not include PII and sensitive information across all resources that are created in the {{site.data.keyword.cloud_notm}}.
 {: important}
 
 
 
-## 2. Define the account management strategy
+## 2. Define the account strategy
 {: #adoption_account}
 
-In {{site.data.keyword.cloud_notm}}, you can have 1 of more **stand-alone** accounts. You can manage each account individually or within an **enterprise** by configuring a multitiered hierarchy of accounts. 
+You can provision instances of the {{site.data.keyword.la_full_notm}} service in any of the supported locations in the {{site.data.keyword.cloud_notm}}. For more information, see [Locations](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-regions).
+
+Per location (region), you can provision 1 or more logging instances. 
+* Only 1 instance in a location can be configured to collect logs automatically from [{{site.data.keyword.cloud_notm}} enabled services](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-cloud_services) in that {{site.data.keyword.cloud_notm}} location. Logs are collected in the region where a service instance is provisioned.
+* You can collect logs from custom applications and services that run in the {{site.data.keyword.cloud_notm}} or outside, and forward them to any logging instance in your account.
+
+### Platform service logs
+{: #adoption_account_svc_logs}
+
+To enable automatic collection of {{site.data.keyword.cloud_notm}} enabled services, you must configure an instance in a location with the **platform service logs** flag. [Learn more](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-config_svc_logs). When 1 instance is enabled to collect logs in a location, data from any instance of an enabled service in that location is collected automatically.
+
+**If you share staging, pre-production, and production services in the same {{site.data.keyword.cloud_notm}} account, notice that users, that are granted access to view data in the logging instance with the platform service logs flag in a location, can see data from any service instance provisoned in that location. To prevent users from viewing log data from all service's instances, consider migrating your single {{site.data.keyword.cloud_notm}} account to an *Enterprise account*.**
+{: important}
 
 Within an enterprise account, you create a multitiered hierarchy of accounts, with billing and payments for all accounts managed at the enterprise level. [Learn more](/docs/account?topic=account-enterprise).  
-* The top enterprise account serves as the parent account to all other accounts in the enterprise. 
 * Users and access management is isolated between the enterprise and its child accounts. No access is automatically inherited between the two types of accounts.
 * Resources and services within an enterprise function the same as in stand-alone accounts. Each account in an enterprise can contain resources in resource groups and services in Cloud Foundry orgs and spaces. 
 
-Notice that an enterprise can contain up to 5 tiers of accounts and account groups. In its most basic form, an enterprise has two tiers: the enterprise account, and a single child account.
+If you cannot move to an enterprise account, try reducing the number of users that are granted permissions to view the logs. In addition, you can also define exclusion rules to hide data from showing through the web UI. Exclusion rules stop logs from counting against your data usage quota and from being stored for search. [Learn more](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-exclusion).
+{: tip}
 
-The following table highlights some of the key features per account management strategy:
+### Other logs
+{: #adoption_account_other_logs}
 
-| Feature                                               | Stand-alone account management                    | Enterprise account management                     |
-|-------------------------------------------------------|---------------------------------------------------|---------------------------------------------------|
-| `Multitiered hierarchy of accounts`                   | NO                                                | ![Checkmark icon](../../icons/checkmark-icon.svg) |
-| `Billing and payments managed from 1 account`         | ![Checkmark icon](../../icons/checkmark-icon.svg) | ![Checkmark icon](../../icons/checkmark-icon.svg) |
-| `Isolation of users and access management per account`| ![Checkmark icon](../../icons/checkmark-icon.svg) | ![Checkmark icon](../../icons/checkmark-icon.svg) |
-| `Isolation of resources and services per account`     | ![Checkmark icon](../../icons/checkmark-icon.svg) | ![Checkmark icon](../../icons/checkmark-icon.svg) |
-| `Isolation of account settings`                       | ![Checkmark icon](../../icons/checkmark-icon.svg) | ![Checkmark icon](../../icons/checkmark-icon.svg) |
-| `IAM enabled`                                         | ![Checkmark icon](../../icons/checkmark-icon.svg) | ![Checkmark icon](../../icons/checkmark-icon.svg) |
-{: caption="Table 1. Types of accounts" caption-side="top"} 
+For non-{{site.data.keyword.cloud_notm}} enabled services, you must decide the method to collect and forward logs from a log source that you want to monitor to a logging instance. 
 
+In LogDNA, you can collect and forward data to a logging instance by using any of the following methods:
+* `LogDNA agent`: Logging agent that automatically collects and forwards logs to 1 logging instance in your account.
+* `Syslog`: Logging daemon that collects information across multiple devices and system-services, and forwards logs to 1 logging instance in your account. 
+* `REST API`: API that you can use to send log data and custom metadata to 1 logging instance in your account.
+* `Code libraries`: Libraries that you can use to code ingestion of logs from your apps and services to 1 logging instance. LogDNA offer libraries for Node.JS, Python, Rails, Ruby, Go, iOS, Java, and PHP.
 
-In stand-alone accounts, you control access to resources by grouping them in resource groups, and configuring IAM policies that you assign to users and service IDs directly or through access groups. These policies define the level of access to work with services in the account. For example, you might have a stand-alone account where you run your development, pre-production, and production services and applications. 
+**For any method that you adopt, you have the flexibility to choose the logging instance where you want to send data per log source. Decide how many instances you might need to collect data from all your log sources based on who can see the data and the type of data that is collected. Avoid sending data to a logging instance that has the platform service logs flag enabled.**
+{: tip}
 
-By using an enterprise management account strategy, you achieve greater isolation of resources. When you configure a multitiered hierarchy of accounts, you get the flexibility to separate your development environments into separate tiers, or isolate by Line of Business (LoB) applications and services, or a combination of both. Each account retains the features of a stand-alone account, and you can still manage billing and payments from the top enterprise account.
+**Whenever a LogDNA agent is available for a type of log source, configure the agent to automatically collect and forward logs from the log source to the logging instance.** The LogDNA agent authenticates by using the LogDNA Ingestion Key and opens a secure web socket to the {{site.data.keyword.la_full_notm}} ingestion servers; monitors all files with extension `.log`*,  and extensionless files under `/var/log/`; and can be customized to exclude data that you do not want to collect or to include custom paths that you want to monitor, and more.
+{: tip}
 
-In addition to these benefits, when you look into logging and how it fits with any of these management strategies, consider the following facts that will be covered later on in the topic in more detail:
-* Service platform logs are collected and available per location (region) through 1 single logging instance. You do not have the ability to split logs from different services running in the same region to multiple instances. If you run your development, test, and production services in a stand-alone account, all those logs will be available through the same logging instance, and any user with permissions to view logs in that instance will be able to see everything.
-* You can configure other log sources in {{site.data.keyword.cloud_notm}} and on-premisses to forward logs to any logging instance in your account. 
+For example, you can configure a Kubernetes cluster and an OpenShift cluster with a LogDNA agent. For more information, see [Configuring a LogDNA agent for a standard Kubernetes cluster](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-config_agent_kube_cluster) and [Configuring a LogDNA agent for an OpenShift Kubernetes cluster](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-config_agent_os_cluster).
 
-**Define an enterprise account management strategy to add an additonal layer of isolation to resources on top of stand-alone accounts.**
-{: important}
+To configure a LogDNA agent on Linux Ubuntu or Debian, see [Configuring a LogDNA agent on Linux Ubuntu or Debian](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-config_agent_linux).
+
+**To send data and attach metadata to each log record, you can use the REST API.**
+{: tip}
+
+**Configure syslog to collect and forward logs from Cloud Foundry applications.**
+{: tip}
+
+For example, you can configure a custom user provided service (CUPS) for each Cloud Foundry (CF) app that you want to monitor through a logging instance. The CUPS service sends logs via a syslog link to a LogDNA syslog endpoint and port. This option is only available if the CF app send logs to STDOUT and STDERR. If the CF app is configured to send logs via syslog and not to STDOUT and STDERR, this option is not supported. [Learn more](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-monitor_cfapp_logs).
 
 
 ## 3. Configure account settings for compliance
@@ -110,7 +127,7 @@ In addition, for logging instances that you provision in a HIPAA enabled account
 {: important}
 
 
-## 4. Define the logging instances strategy 
+## 4. Define the logging service strategy 
 {: #adoption_resource_svc}
 
 {{site.data.keyword.la_full_notm}} collects and aggregates logs in one centralized logging system.
@@ -121,33 +138,17 @@ In addition, for logging instances that you provision in a HIPAA enabled account
 ### Locations
 {: #adoption_resource_svc_location}
 
-You can provision instances of the {{site.data.keyword.la_full_notm}} service in any of the supported locations in the {{site.data.keyword.cloud_notm}}. For more information, see [Locations](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-regions).
-
-Per location (region), you can provision 1 or more logging instances. 
-* Only 1 instance in a location can be configured to collect logs automatically from [{{site.data.keyword.cloud_notm}} enabled services](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-cloud_services) in that {{site.data.keyword.cloud_notm}} location. Logs are collected in the region where a service instance is provisioned.
-* You can collect logs from custom applications and services that run in the {{site.data.keyword.cloud_notm}} or outside, and forward them to any logging instance in your account.
+You can provision {{site.data.keyword.la_full_notm}} instances in different {{site.data.keyword.cloud_notm}} locations. 
 * Each location represents the geographic area where your {{site.data.keyword.la_full_notm}} requests are handled and processed for that instance, and where data is resident. 
 * Each MZR location has three different data centers for redundancy. The data for each location is kept in the three data centers near that location. If all three data centers in a location fail, the {{site.data.keyword.la_full_notm}} service for that location becomes unavailable.
 * Each MZR configuration can accept a single data center failure.
 
-**When you choose the locations where you plan to provision {{site.data.keyword.la_full_notm}} instances, check the regulatory and high availability (HA) specifications of each location.**
+**When you choose the locations where you plan to provision {{site.data.keyword.la_full_notm}} instances, check the regulatory and high availability (HA) specifications of each location. For more information, see [Locations](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-regions).**
 {: tip}
 
 For example, in Europe, only the Frankfurt region is EU-supported.
 
 You can also check [ensure zero downtime](/docs/overview?topic=overview-zero-downtime#zero-downtime) to learn more about the high availability and disaster recovery standards in {{site.data.keyword.cloud_notm}}. 
-
-
-### Platform service logs
-{: #adoption_account_svc_logs}
-
-To enable automatic collection of {{site.data.keyword.cloud_notm}} enabled services, you must configure 1 instance in a location with the **platform service logs** flag. [Learn more](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-config_svc_logs). When 1 instance is enabled to collect logs in a location, data from any instance of an enabled service in that location is collected automatically.
-
-**Define 1 instance per location with the platform service logs flag enabled.**
-
-If you share staging, pre-production, and production services in the same {{site.data.keyword.cloud_notm}} account, notice that users, that are granted access to view data in the logging instance with the platform service logs flag in a location, can see data from any service instance provisoned in that location. To prevent users from viewing log data from all service's instances, consider moving from a  single account model to an *Enterprise account* model.
-
-If you cannot move to an enterprise account model, try reducing the number of users that are granted permissions to view the logs. In addition, you can also define exclusion rules to hide data from showing through the web UI. Exclusion rules stop logs from counting against your data usage quota and from being stored for search. [Learn more](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-exclusion).
 
 
 ### Resource groups
@@ -171,9 +172,9 @@ If you add PII information in the resource group name, you might be disclosing s
 ### Naming
 {: #adoption_resource_svc_name}
 
-If you add PII or other sensitive information in the name or the description of a service instance, you might be disclosing sensitive data to others in the same account.
+If you add PII information in the name or the description of a service, you might be disclosing sensitive data to others in the same account.
 
-**When you define your logging instances names, do not add sensitive information in the name or in the description.**
+**When you define your service name, do not add sensitive information in the name or in the description.**
 {: tip}
 
 ### Service plan
@@ -214,38 +215,7 @@ Tags are visible to all members of an account.
 
 
 
-## 5. Define the log ingestion strategy
-{: #adoption_account_ingestion}
-
-For non-{{site.data.keyword.cloud_notm}} enabled services, you must decide the method to collect and forward logs from a log source that you want to monitor to a logging instance. 
-
-In LogDNA, you can collect and forward data to a logging instance by using any of the following methods:
-* `LogDNA agent`: Logging agent that automatically collects and forwards logs to 1 logging instance in your account.
-* `Syslog`: Logging daemon that collects information across multiple devices and system-services, and forwards logs to 1 logging instance in your account. 
-* `REST API`: API that you can use to send log data and custom metadata to 1 logging instance in your account.
-* `Code libraries`: Libraries that you can use to code ingestion of logs from your apps and services to 1 logging instance. LogDNA offer libraries for Node.JS, Python, Rails, Ruby, Go, iOS, Java, and PHP.
-
-**For any method that you adopt, you have the flexibility to choose the logging instance where you want to send data per log source. Decide how many instances you might need to collect data from all your log sources based on who can see the data and the type of data that is collected. Avoid sending data to a logging instance that has the platform service logs flag enabled.**
-{: tip}
-
-**Whenever a LogDNA agent is available for a type of log source, configure the agent to automatically collect and forward logs from the log source to the logging instance.** The LogDNA agent authenticates by using the LogDNA Ingestion Key and opens a secure web socket to the {{site.data.keyword.la_full_notm}} ingestion servers; monitors all files with extension `.log`*,  and extensionless files under `/var/log/`; and can be customized to exclude data that you do not want to collect or to include custom paths that you want to monitor, and more.
-{: tip}
-
-For example, you can configure a Kubernetes cluster and an OpenShift cluster with a LogDNA agent. For more information, see [Configuring a LogDNA agent for a standard Kubernetes cluster](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-config_agent_kube_cluster) and [Configuring a LogDNA agent for an OpenShift Kubernetes cluster](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-config_agent_os_cluster).
-
-To configure a LogDNA agent on Linux Ubuntu or Debian, see [Configuring a LogDNA agent on Linux Ubuntu or Debian](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-config_agent_linux).
-
-**To send data and attach metadata to each log record, you can use the REST API.**
-{: tip}
-
-**Configure syslog to collect and forward logs from Cloud Foundry applications.**
-{: tip}
-
-For example, you can configure a custom user provided service (CUPS) for each Cloud Foundry (CF) app that you want to monitor through a logging instance. The CUPS service sends logs via a syslog link to a LogDNA syslog endpoint and port. This option is only available if the CF app send logs to STDOUT and STDERR. If the CF app is configured to send logs via syslog and not to STDOUT and STDERR, this option is not supported. [Learn more](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-monitor_cfapp_logs).
-
-
-
-## 6. Define the IAM strategy
+## 5. Define the IAM strategy
 {: #adoption_iam}
 
 **Use {{site.data.keyword.iamlong}} (IAM) to securely authenticate users and service IDs, and to control access to all cloud resources and data consistently in the {{site.data.keyword.cloud_notm}}.**
@@ -253,7 +223,7 @@ For example, you can configure a custom user provided service (CUPS) for each Cl
 
 If you add PII information in the name or description of IAM resources, you might be disclosing sensitive data to others in the same account.
 
-**When you define your IAM reosurces, do not add sensitive information in their names and descriptions.**
+**When you define your IAM reosurces, do not add sensitive information in the tag name.**
 {: tip}
 
 
@@ -322,7 +292,7 @@ You can assign a single policy to the access group instead of assigning the same
 [Learn more](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-work_iam).
 
 
-## 7. Configure the account settings for authentication into your account
+## 6. Configure the account settings for authentication into your account
 {: #adoption_login}
 
 Multifactor authentication (MFA) adds an extra layer of security to your account by requiring all users to authenticate by using an additional authentication method beyond an ID and password. This is also commonly known as two-factor authentication (2FA). 
