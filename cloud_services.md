@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019
-lastupdated: "2019-10-28"
+lastupdated: "2019-12-12"
 
 keywords: LogDNA, IBM, Log Analysis, logging, services
 
@@ -59,17 +59,18 @@ The following table lists container services that send logs to {{site.data.keywo
 
 The following table lists database services that send logs to {{site.data.keyword.la_full_notm}}:
 
-| Service     | Description |  More info about the integration with {{site.data.keyword.la_full_notm}} |
-|-------------|-------------|--------------------------------------------------------------------------------------------|
-| [{{site.data.keyword.cloudant_short_notm}}](/docs/services/Cloudant?topic=cloudant-getting-started)    | {{site.data.keyword.cloudant_short_notm}} is a document-oriented database as a service (DBaaS). It stores data as documents in JSON format. | [More info](/docs/services/Cloudant?topic=cloudant-logging) |
-| [{{site.data.keyword.databases-for-elasticsearch_full_notm}}](/docs/services/databases-for-elasticsearch?topic=databases-for-elasticsearch-about#about-databases-for-elasticsearch) | {{site.data.keyword.databases-for-elasticsearch_full_notm}} is a managed Elasticsearch service that is hosted in the {{site.data.keyword.cloud_notm}} and integrated with other {{site.data.keyword.cloud_notm}} services. | [More info](/docs/services/databases-for-elasticsearch?topic=cloud-databases-logging) |
-| [{{site.data.keyword.databases-for-etcd_full_notm}}](/docs/services/databases-for-etcd?topic=databases-for-etcd-about#about-databases-for-etcd) | {{site.data.keyword.databases-for-etcd_full_notm}} is a managed etcd service that is hosted in the {{site.data.keyword.cloud_notm}} and integrated with other {{site.data.keyword.cloud_notm}} services. | [More info](/docs/services/databases-for-etcd?topic=cloud-databases-monitoring) |
-| [{{site.data.keyword.databases-for-mongodb}}](/docs/services/databases-for-mongodb?topic=databases-for-mongodb-getting-started) | {{site.data.keyword.databases-for-mongodb}} is a managed MongoDB service that is hosted in the {{site.data.keyword.cloud_notm}} and integrated with other {{site.data.keyword.cloud_notm}} services. | [More info](/docs/services/databases-for-mongodb?topic=cloud-databases-logging) |
-| [{{site.data.keyword.databases-for-postgresql_full_notm}}](/docs/services/databases-for-postgresql?topic=databases-for-postgresql-about#about) | {{site.data.keyword.databases-for-postgresql_full_notm}} is a managed PostgreSQL service that is hosted in the {{site.data.keyword.cloud_notm}} and integrated with other {{site.data.keyword.cloud_notm}} services. | [More info](/docs/services/databases-for-postgresql?topic=cloud-databases-logging) |
-| [{{site.data.keyword.messages-for-rabbitmq_full_notm}}](/docs/services/messages-for-rabbitmq?topic=messages-for-rabbitmq-about#about-messages-for-rabbitmq)  | {{site.data.keyword.messages-for-rabbitmq_full_notm}} is a managed RabbitMQ service that is hosted in the {{site.data.keyword.cloud_notm}} and integrated with other {{site.data.keyword.cloud_notm}} services.| [More info](/docs/services/messages-for-rabbitmq?topic=cloud-databases-logging)|
-| [{{site.data.keyword.databases-for-redis_full_notm}}](/docs/services/databases-for-redis?topic=databases-for-redis-about#about-databases-for-redis) | {{site.data.keyword.databases-for-redis_full_notm}} is a managed service that is hosted in the {{site.data.keyword.cloud_notm}} and integrated with other {{site.data.keyword.cloud_notm}} services.  | [More info](/docs/services/databases-for-redis?topic=cloud-databases-logging)|
-| [{{site.data.keyword.cloud_notm}} {{site.data.keyword.ihsdbaas_mongodb_full}}](/docs/services/hyper-protect-dbaas-for-mongodb?topic=hyper-protect-dbaas-for-mongodb-gettingstarted) | {{site.data.keyword.cloud_notm}} {{site.data.keyword.ihsdbaas_mongodb_full}} is a managed highly secure MongoDB service that is hosted in the {{site.data.keyword.cloud_notm}} and integrated with other {{site.data.keyword.cloud_notm}} services. | [More info](/docs/services/hyper-protect-dbaas-for-mongodb?topic=hyper-protect-dbaas-for-mongodb-activity-tracker-events) |
-| [{{site.data.keyword.cloud_notm}} {{site.data.keyword.ihsdbaas_postgresql_full}}](/docs/services/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-gettingstarted) | {{site.data.keyword.cloud_notm}} {{site.data.keyword.ihsdbaas_postgresql_full}}} is a managed highly secure PostgreSQL service that is hosted in the {{site.data.keyword.cloud_notm}} and integrated with other {{site.data.keyword.cloud_notm}} services. | [More info](/docs/services/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-activity-tracker-events) |
+| Service     | Description |  More info about the integration with {{site.data.keyword.la_full_notm}} |  Automatic collection (platform service logs) | Configure logging by using a LogDNA agent (Choose your logging instance) |
+|-------------|-------------|--------------------------------------------------------------------------------------------|--------------|-----------------|
+| [{{site.data.keyword.blockchainfull}}](/docs/services/blockchain?topic=blockchain-get-started-ibp) | {{site.data.keyword.blockchainfull}} Platform provides a managed and full stack blockchain-as-a-service (BaaS) offering that allows you to deploy blockchain components in environments of your choice. | [More info](/docs/services/blockchain?topic=blockchain-ibp-LogDNA) |  | ![Checkmark icon](../../icons/checkmark-icon.svg)|
+| [{{site.data.keyword.cloudant_short_notm}}](/docs/services/Cloudant?topic=cloudant-getting-started)    | {{site.data.keyword.cloudant_short_notm}} is a document-oriented database as a service (DBaaS). It stores data as documents in JSON format. | [More info](/docs/services/Cloudant?topic=cloudant-log-analysis-integration) | ![Checkmark icon](../../icons/checkmark-icon.svg) | |
+| [{{site.data.keyword.databases-for-elasticsearch_full_notm}}](/docs/services/databases-for-elasticsearch?topic=databases-for-elasticsearch-getting-started) | {{site.data.keyword.databases-for-elasticsearch_full_notm}} is a managed Elasticsearch service that is hosted in the {{site.data.keyword.cloud_notm}} and integrated with other {{site.data.keyword.cloud_notm}} services. | [More info](/docs/services/databases-for-elasticsearch?topic=cloud-databases-logging) | ![Checkmark icon](../../icons/checkmark-icon.svg) | |
+| [{{site.data.keyword.databases-for-etcd_full_notm}}](/docs/services/databases-for-etcd?topic=databases-for-etcd-getting-started) | {{site.data.keyword.databases-for-etcd_full_notm}} is a managed etcd service that is hosted in the {{site.data.keyword.cloud_notm}} and integrated with other {{site.data.keyword.cloud_notm}} services. | [More info](/docs/services/databases-for-etcd?topic=cloud-databases-monitoring) | ![Checkmark icon](../../icons/checkmark-icon.svg) | |
+| [{{site.data.keyword.databases-for-mongodb}}](/docs/services/databases-for-mongodb?topic=databases-for-mongodb-getting-started) | {{site.data.keyword.databases-for-mongodb}} is a managed MongoDB service that is hosted in the {{site.data.keyword.cloud_notm}} and integrated with other {{site.data.keyword.cloud_notm}} services. | [More info](/docs/services/databases-for-mongodb?topic=cloud-databases-logging) | ![Checkmark icon](../../icons/checkmark-icon.svg) | |
+| [{{site.data.keyword.databases-for-postgresql_full_notm}}](/docs/services/databases-for-postgresql?topic=databases-for-postgresql-getting-started) | {{site.data.keyword.databases-for-postgresql_full_notm}} is a managed PostgreSQL service that is hosted in the {{site.data.keyword.cloud_notm}} and integrated with other {{site.data.keyword.cloud_notm}} services. | [More info](/docs/services/databases-for-postgresql?topic=cloud-databases-logging) | ![Checkmark icon](../../icons/checkmark-icon.svg) | |
+| [{{site.data.keyword.messages-for-rabbitmq_full_notm}}](/docs/services/messages-for-rabbitmq?topic=messages-for-rabbitmq-getting-started)  | {{site.data.keyword.messages-for-rabbitmq_full_notm}} is a managed RabbitMQ service that is hosted in the {{site.data.keyword.cloud_notm}} and integrated with other {{site.data.keyword.cloud_notm}} services.| [More info](/docs/services/messages-for-rabbitmq?topic=cloud-databases-logging)| ![Checkmark icon](../../icons/checkmark-icon.svg) | |
+| [{{site.data.keyword.databases-for-redis_full_notm}}](/docs/services/databases-for-redis?topic=databases-for-redis-getting-started) | {{site.data.keyword.databases-for-redis_full_notm}} is a managed service that is hosted in the {{site.data.keyword.cloud_notm}} and integrated with other {{site.data.keyword.cloud_notm}} services.  | [More info](/docs/services/databases-for-redis?topic=cloud-databases-logging)| ![Checkmark icon](../../icons/checkmark-icon.svg) | |
+| [{{site.data.keyword.cloud_notm}} {{site.data.keyword.ihsdbaas_mongodb_full}}](/docs/services/hyper-protect-dbaas-for-mongodb?topic=hyper-protect-dbaas-for-mongodb-gettingstarted) | {{site.data.keyword.cloud_notm}} {{site.data.keyword.ihsdbaas_mongodb_full}} is a managed highly secure MongoDB service that is hosted in the {{site.data.keyword.cloud_notm}} and integrated with other {{site.data.keyword.cloud_notm}} services. | [More info](/docs/services/hyper-protect-dbaas-for-mongodb?topic=hyper-protect-dbaas-for-mongodb-sendlogs) | ![Checkmark icon](../../icons/checkmark-icon.svg) | |
+| [{{site.data.keyword.cloud_notm}} {{site.data.keyword.ihsdbaas_postgresql_full}}](/docs/services/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-gettingstarted) | {{site.data.keyword.cloud_notm}} {{site.data.keyword.ihsdbaas_postgresql_full}} is a managed highly secure PostgreSQL service that is hosted in the {{site.data.keyword.cloud_notm}} and integrated with other {{site.data.keyword.cloud_notm}} services. | [More info](/docs/services/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-sendlogs) | ![Checkmark icon](../../icons/checkmark-icon.svg) |  |
 {: caption="Table 2. List of database services" caption-side="top"} 
 
 You can monitor logs through the {{site.data.keyword.la_short}} instance that is configured to receive platform services logs in the location where the service is running. 
@@ -86,7 +87,7 @@ The following table lists database services that send logs to {{site.data.keywor
 
 | Service     | Description | More info about the integration with {{site.data.keyword.la_full_notm}} |
 |-------------|-------------|-------------------------------------------------------------------------|
-| [{{site.data.keyword.appconservicefull}}](/docs/services/AppConnect?topic=AppConnect-getting-started) | You can use {{site.data.keyword.appconservicefull}} to connect your applications.   |  |
+| [{{site.data.keyword.appconservicefull}}](/docs/services/AppConnect?topic=AppConnect-getting-started) | You can use {{site.data.keyword.appconservicefull}} to connect your applications.   | More info [ ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://developer.ibm.com/integration/docs/app-connect/troubleshooting/monitoring-and-managing-app-connect-logs-in-logdna/){:new_window}  |
 {: caption="Table 3. List of integration Cloud services" caption-side="top"} 
 
 
@@ -109,10 +110,10 @@ To see the list of {{site.data.keyword.la_full_notm}} locations where this servi
 
 
 ## Watson AI
-{: #cloud_services_locations_watson_ai}
+{: #watson_ai}
 
 
 | Service     | Description | More info about the integration with {{site.data.keyword.la_full_notm}} |
 |-------------|-------------|-------------------------------------------------------------------------|
-| [Voice agent](/docs/services/voice-agent?topic=voice-agent-getting-started) |   | [More info](/docs/services/voice-agent?topic=voice-agent-log-analysis-integration) |
+| [{{site.data.keyword.iva_full}} ](/docs/services/voice-agent?topic=voice-agent-getting-started) |   | [More info](/docs/services/voice-agent?topic=voice-agent-log-analysis-integration) |
 {: caption="Table 5. List of Watson AI Cloud services" caption-side="top"} 
