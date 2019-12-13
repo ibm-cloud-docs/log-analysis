@@ -126,8 +126,6 @@ The following tables list the locations where automatic collection of database s
 {: class="simple-tab-table"}
 {: row-headers}
 
-For the {{site.data.keyword.blockchainfull}} service, you can choose the location where you want to collect and forward logs by configuring a LogDNA agent.
-{: note}
 
 
 ## Platform: Integration services

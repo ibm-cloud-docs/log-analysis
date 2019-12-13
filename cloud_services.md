@@ -23,7 +23,7 @@ subcollection: LogDNA
 {:note: .note}
 
 
-# Cloud services
+# {{site.data.keyword.cloud_notm}} catalog services
 {: #cloud_services}
 
 List of {{site.data.keyword.cloud}} services that send logs to {{site.data.keyword.la_full_notm}}:
@@ -33,6 +33,8 @@ You can monitor logs from CF apps and enabled services through [the {{site.data.
 
 Notice that there is only 1 instance per location with the flag **Platform services logs**.
 {: important}
+
+
 
 ## Compute: Cloud Foundry
 {: #platform_cfapps}
@@ -52,6 +54,8 @@ The following table lists container services that send logs to {{site.data.keywo
 | Service     | Description | More info about the integration with {{site.data.keyword.la_full_notm}} |
 |-------------|-------------|-------------------------------------------------------------------------|
 | [{{site.data.keyword.registrylong_notm}}](/docs/services/Registry?topic=registry-getting-started) | You can use {{site.data.keyword.registrylong_notm}} to provide a multi-tenant private image registry that you can use to store and share your container images with users in your {{site.data.keyword.cloud_notm}} account. | [More info](/docs/services/Registry?topic=registry-registry_logs) |
+| [{{site.data.keyword.containerlong}}](/docs/containers?topic=containers-getting-started) | You can use the {{site.data.keyword.containerlong_notm}} service to deploy highly available apps in Docker containers that run in Kubernetes clusters. | [Events that are generated when you interact with {{site.data.keyword.containerlong_notm}}](/docs/containers?topic=containers-at_events) | 
+| [{{site.data.keyword.openshiftlong}}](/docs/openshift?topic=openshift-getting-started) | With {{site.data.keyword.openshiftlong}}, you can deploy apps on highly available clusters that come installed with the Red Hat OpenShift on IBM Cloud Container PlatformExternal link icon software installed on Red Hat Enterprise Linux. | [More info](/docs/openshift?topic=openshift-health) |
 {: caption="Table 1. List of container services" caption-side="top"} 
 
 ## Platform: Database services
