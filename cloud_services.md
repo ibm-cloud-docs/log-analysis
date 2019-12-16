@@ -34,6 +34,17 @@ You can monitor logs from CF apps and enabled services through [the {{site.data.
 Notice that there is only 1 instance per location with the flag **Platform services logs**.
 {: important}
 
+## Analytics services
+{: #analytics}
+
+The following table lists Cloud services that send logs to {{site.data.keyword.la_full_notm}}:
+
+| Service     | Description |  More info about the integration with {{site.data.keyword.la_full_notm}} 
+|-------------|-------------|--------------------------------------------------------------------------------------------|
+| [{{site.data.keyword.iae_full}}](/docs/services/AnalyticsEngine?topic=AnalyticsEngine-getting-started) | {{site.data.keyword.iae_full_notm}} provides a flexible framework to develop and deploy analytics applications in Apache Hadoop and Apache Spark. | [More info](/docs/services/AnalyticsEngine?topic=AnalyticsEngine-log-aggregation#reconfiguring-log-aggregation) | 
+{: caption="Table 1. List of Blockchain services" caption-side="top"} 
+
+
 ## Blockchain services
 {: #blockchain}
 
@@ -44,7 +55,6 @@ The following table lists Cloud services that send logs to {{site.data.keyword.l
 | [{{site.data.keyword.blockchainfull}}](/docs/services/blockchain?topic=blockchain-get-started-ibp) | {{site.data.keyword.blockchainfull}} Platform provides a managed and full stack blockchain-as-a-service (BaaS) offering that allows you to deploy blockchain components in environments of your choice. | [More info](/docs/services/blockchain?topic=blockchain-ibp-LogDNA) | 
 {: caption="Table 1. List of Blockchain services" caption-side="top"} 
 
-For the {{site.data.keyword.blockchainfull}} service, you can choose the location where you want to collect and forward logs by configuring a LogDNA agent.
 
 ## Cloud Foundry
 {: #platform_cfapps}
