@@ -13,6 +13,9 @@ IBM Log Analysis with LogDNA
     Cloud services
         cloud_services.md
         cloud_services_locations.md
+
+    {: .topicgroup}
+    Monitor Cloud services
         monitor_cfapp_logs.md
 
     {: .topicgroup}
