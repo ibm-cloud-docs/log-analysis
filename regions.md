@@ -1,11 +1,12 @@
 ---
 
 copyright:
-  years: 2019
-lastupdated: "2019-09-27"
+  years:  2018, 2019
+lastupdated: "2019-12-20"
 
-keywords: IBM Cloud, LogDNA, Activity Tracker, regions
-subcollection: logdnaat
+keywords: LogDNA, IBM, Log Analysis, logging instance, regions
+
+subcollection: LogDNA
 
 ---
 
@@ -42,6 +43,7 @@ The following table lists the locations where the service is available:
 | `Europe`              | `Frankfurt (eu-de) (*)`  | `YES`        | `MZR`     |
 | `Europe`              | `London (eu-gb)`         | `NO`         | `MZR`     |
 | `North America`       | `Dallas (us-south)`      | `N/A`        | `MZR`     |
+| `North America`       | `Washington (us-east)`   | `N/A`        | `MZR`     |
 | `Sydney`              | `Sydney (au-syd)`        | `N/A`        | `MZR`     |
 {: caption="Table 1. List of locations where the service is available" caption-side="top"} 
 
