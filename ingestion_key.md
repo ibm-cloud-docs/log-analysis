@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years:  2018, 2019
-lastupdated: "2019-11-19"
+  years: 2018, 2020
+lastupdated: "2020-01-08"
 
 keywords: LogDNA, IBM, Log Analysis, logging, ingestion key
 
