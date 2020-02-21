@@ -32,6 +32,7 @@ IBM Log Analysis with LogDNA
     {: .navgroup id="howto"}
     provision.md
     remove.md
+    observe.md
 
    {: .topicgroup}
     DevOps tasks
