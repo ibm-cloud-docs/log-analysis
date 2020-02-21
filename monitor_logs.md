@@ -28,11 +28,6 @@ subcollection: LogDNA
 You can monitor logs in your account through the {{site.data.keyword.la_full_notm}} web UI. You can also export sets of logs to analyze them in a different context.
 {:shortdesc}
 
-There is 1 instance of the {{site.data.keyword.la_full_notm}} service per location. Therefore, to monitor activity in your account, you might need to view and analyze logs through different {{site.data.keyword.la_full_notm}} instances. 
-
-In the {{site.data.keyword.cloud_notm}}, you can click the **Menu** icon ![Menu icon](../icons/icon_hamburger.svg) > **Observability** > **Activity Tracker** to see the dashboard where all the instances that are provisioned in the account are listed. 
-{: tip}
-
 To view logs, you must [launch the web UI](/docs/services/Activity-Tracker-with-LogDNA?topic=logdnaat-launch) in the location where logs are available. Then, you can work with views to monitor those logs. You view logs in your local time.
 
 You can select the logs that are displayed through a view by applying a timestamp, a search query, or both.

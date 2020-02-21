@@ -100,13 +100,13 @@ Prereq: You must have a cluster configured to forward logs to a LogDNA instance.
 
 3. Select **Add Rule**. The **Create Rule** section opens.
 
-4. Enter a name for the rule in the section **What is this rule for?**. For example, enter *Error log records in the namespace kube-system*.
+4. Enter a name for the rule in the section **What is this rule for?**. For example, enter *Exclude log records from the namespace kube-system except error ones*.
 
 5. Enter the exclusion criteria. You can select 1 or more sources, 1 or more apps, enter a query, or a combination of sources, apps and query.
 
     In the Query section, enter **Namespace:kube-system -level:error** to exclude all lines except the ones that report an error.
 
-6. Leave unchecked the option **Preserve these lines for live-tail and alerting **. 
+6. Leave unchecked the option **Preserve these lines for live-tail and alerting**. 
 
 7. Click **Save**.
 
