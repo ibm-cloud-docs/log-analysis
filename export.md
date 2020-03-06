@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years:  2018, 2019
-lastupdated: "2019-10-16"
+  years:  2018, 2020
+lastupdated: "2020-03-06"
 
 keywords: LogDNA, IBM, Log Analysis, logging, export logs
 
@@ -58,9 +58,9 @@ Complete the following steps to export logs programmatically:
 
 1. Generate a Service Key. 
 
-    **Note:** You must have **manager** role for the {{site.data.keyword.la_full_notm}} instance or service to complete this step. For more information, see [Granting permissions to manage logs and configure alerts in LogDNA](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-work_iam#admin_user_logdna).
+    **Note:** You must have **manager** role for the {{site.data.keyword.la_full_notm}} instance or service to complete this step. For more information, see [Granting permissions to manage logs and configure alerts in LogDNA](/docs/Log-Analysis-with-LogDNA?topic=LogDNA-work_iam#admin_user_logdna).
 
-    1. [Launch the {{site.data.keyword.la_full_notm}} web UI](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-view_logs#view_logs_step2).
+    1. [Launch the {{site.data.keyword.la_full_notm}} web UI](/docs/Log-Analysis-with-LogDNA?topic=LogDNA-view_logs#view_logs_step2).
 
     2. Select the **Configuration** icon ![Configuration icon](images/admin.png) &gt; **Observability**. 
 
@@ -81,7 +81,7 @@ Complete the following steps to export logs programmatically:
 
     Where 
 
-    * ENDPOINT represents the entry point to the service. Each region has a different URL. To get the endpoint for a location, see [API endpoints](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-endpoints#endpoints_api).
+    * ENDPOINT represents the entry point to the service. Each region has a different URL. To get the endpoint for a location, see [API endpoints](/docs/Log-Analysis-with-LogDNA?topic=LogDNA-endpoints#endpoints_api).
     * QUERY_PARAMETERS are parameters that define the filtering criteria that is applied to the export request.
     * SERVICE_KEY is the service key that you created in the previous step.
 
@@ -96,7 +96,7 @@ The following table lists the query parameters that you can set:
 | `hosts`     | `string`     | Optional   | Comma-separated list of hosts. |
 | `apps`      | `string`     | Optional   | Comma-separated list of applications. |
 | `levels`    | `string`     | Optional   | Comma-separated list of log levels. |
-| `query`     | `string`     | Optional   | Search query. For more information, see [Search Logs](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-view_logs#view_logs_step6). |
+| `query`     | `string`     | Optional   | Search query. For more information, see [Search Logs](/docs/Log-Analysis-with-LogDNA?topic=LogDNA-view_logs#view_logs_step6). |
 | `prefer`    | `string`     | Optional   | Defines the log lines that you want to export. Valid values are `head`, first log lines, and `tail`, last log lines. If not specified, defaults to tail.  |
 | `email`     | `string`     | Optional   | Specifies the email with the downloadable link of your export. By default, the log lines are streamed.|
 | `emailSubject` | `string`     | Optional   | Use to set the subject of the email. </br>Use `%20` to represent a space. For example, a sample value is `Export%20logs`. |

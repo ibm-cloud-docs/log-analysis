@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2019
-lastupdated: "2019-12-16"
+  years:  2018, 2020
+lastupdated: "2020-03-06"
 
 keywords: LogDNA, IBM, Log Analysis, logging, services
 
@@ -42,7 +42,7 @@ The following table lists services that send logs to {{site.data.keyword.la_full
 | [MQ on-prem](/docs/mqcloud?topic=mqcloud-mqoc_getting_started) | MQ on IBM Cloud enables you to quickly and easily deploy queue managers in the cloud and connect your applications to them, for reliable data transfer between different parts of your enterprise application landscape. | [More info ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://developer.ibm.com/messaging/2019/05/14/configure-ibm-mq-queue-manager-logs-with-log-dna/) |
 {: caption="Table 5. List of integration Cloud services" caption-side="top"} 
 
-To see the list of {{site.data.keyword.la_full_notm}} locations where these services send logs, see [Integration services](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-cloud_services_locations#cs_locations_integration).
+To see the list of {{site.data.keyword.la_full_notm}} locations where these services send logs, see [Integration services](/docs/Log-Analysis-with-LogDNA?topic=LogDNA-cloud_services_locations#cs_locations_integration).
 
 
 

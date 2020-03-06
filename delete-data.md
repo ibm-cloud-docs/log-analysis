@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2018, 2019
-lastupdated: "2019-12-18"
+  years:  2018, 2020
+lastupdated: "2020-03-06"
 
 keywords: personal data, data deletion, PHI, data, data security, _service-name_
 

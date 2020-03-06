@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years:  2018, 2019
-lastupdated: "2019-12-20"
+  years:  2018, 2020
+lastupdated: "2020-03-06"
 
 keywords: LogDNA, IBM, Log Analysis, logging, network, IP addresses, port
 
@@ -71,7 +71,7 @@ To configure your LogDNA agent to use private endpoints, you must enable the fol
 
     [Learn more about how to enable service endpoints in your account](/docs/account?topic=account-vrf-service-endpoint#service-endpoint).
 
- Once the account is VRF and service endpoint enabled, you can configure the LogDNA agent to use the private network by using the [Private Endpoint](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-endpoints) as the ingestion URL. Notice that when you configure the agent to send logs through the public network, the environment where the agent is running requires internet access to use the public endpoint.
+ Once the account is VRF and service endpoint enabled, you can configure the LogDNA agent to use the private network by using the [Private Endpoint](/docs/Log-Analysis-with-LogDNA?topic=LogDNA-endpoints) as the ingestion URL. Notice that when you configure the agent to send logs through the public network, the environment where the agent is running requires internet access to use the public endpoint.
 
 Consider the following information when you work with private endpoints:
 * Private endpoints are not accessible from the public internet. 
