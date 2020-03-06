@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2018, 2020
-lastupdated: "2020-01-08"
+  years:  2018, 2020
+lastupdated: "2020-03-06"
 
 keywords: LogDNA, IBM, Log Analysis, logging, config agent
 
@@ -88,7 +88,7 @@ Complete the following steps:
 
     When the download of the configuration files is finished, a command is displayed that you can use to set the path to the local Kubernetes configuration file as an environment variable. Copy and paste the command that is displayed in your terminal to set the KUBECONFIG environment variable.
 
-5. Log in to the cluster.  Choose a method to login to an OpenShift cluster. [Learn more about the methods to login](/docs/openshift?topic=openshift-access_cluster#access_automation).
+5. Log in to the cluster. Choose a method to login to an OpenShift cluster. [Learn more about the methods to login](/docs/openshift?topic=openshift-access_cluster#access_automation).
 
     For example, you can create an {{site.data.keyword.cloud_notm}} IAM API key, and then use the API key to log in to an OpenShift cluster. 
 
@@ -167,7 +167,7 @@ You must create a Kubernetes secret to store your LogDNA ingestion key for your 
     
     `PROJECT` is the namespace where the LogDNA pods run. Set this value to **ibm-observe**.
     
-    `INGESTION_KEY` is the ingestion key for the LogDNA instance where you plan to forward and collect the cluster logs. To get the ingestion key, see [Get the ingestion key through the IBM Log Analysis with LogDNA web UI](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-ingestion_key).
+    `INGESTION_KEY` is the ingestion key for the LogDNA instance where you plan to forward and collect the cluster logs. To get the ingestion key, see [Get the ingestion key through the IBM Log Analysis with LogDNA web UI](/docs/Log-Analysis-with-LogDNA?topic=LogDNA-ingestion_key).
 
 
 ## Step 3. Enable virtual routing and forwarding (VRF)
@@ -354,7 +354,7 @@ oc logs logdna-agent-xxxkz
 ### Launch the LogDNA webUI to see the logs
 {: #config_agent_os_cluster_step52}
 
-Next, launch the LogDNA web UI to verify that logs from the cluster are available through the UI. See [Navigating to the web UI](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-launch) and [Viewing logs](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-view_logs).
+Next, launch the LogDNA web UI to verify that logs from the cluster are available through the UI. See [Navigating to the web UI](/docs/Log-Analysis-with-LogDNA?topic=LogDNA-launch) and [Viewing logs](/docs/Log-Analysis-with-LogDNA?topic=LogDNA-view_logs).
 
 
 

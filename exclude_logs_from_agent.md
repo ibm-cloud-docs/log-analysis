@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2018, 2020
-lastupdated: "2020-01-08"
+  years:  2018, 2020
+lastupdated: "2020-03-06"
 
 keywords: LogDNA, IBM, Log Analysis, logging, config agent
 
@@ -39,27 +39,52 @@ You can stop logs from being forwarded to your logging instance by modifying the
 
 Complete the following steps to configure the agent so that only application logs are forwarded and cluster logs are excluded:
 
-1. Set up the cluster environment. Run the following commands:
+1. Open a terminal to log in to {{site.data.keyword.cloud_notm}}.
 
-    First, get the command to set the environment variable and download the Kubernetes configuration files.
+   ```
+   ibmcloud login -a cloud.ibm.com
+   ```
+   {: pre}
+
+   Select the account where you provisioned the {{site.data.keyword.la_full_notm}} instance.
+
+2. List the clusters to find out in which region and resource group the cluster is available.
 
     ```
-    ibmcloud ks cluster config --cluster <cluster_name_or_ID>
+    ibmcloud ks clusters
     ```
-    {: codeblock}
+    {: pre}
 
-    When the download of the configuration files is finished, a command is displayed that you can use to set the path to the local Kubernetes configuration file as an environment variable.
+3. Set the resource group and region.
 
-    Then, copy and paste the command that is displayed in your terminal to set the KUBECONFIG environment variable.
+    ```
+    ibmcloud target -g RESOURCE_GROUP -r REGION
+    ```
+    {: pre}
 
-2. Generate the configuration file of the agent by running the following command:
+    Where 
+    
+    `RESOURCE_GROUP` is the name of the resource group where the cluster is available, for example, `default`.
+    
+    `REGION` is the region where the cluster is available, for example, `us-south`.
+
+4. Set the cluster where you want to configure logging as the context for this session.
+
+   ```
+   ibmcloud ks cluster config --cluster <cluster_name_or_ID>
+   ```
+   {: pre}
+
+   When the download of the configuration files is finished, a command is displayed that you can use to set the path to the local Kubernetes configuration file as an environment variable. Copy and paste the command that is displayed in your terminal to set the `KUBECONFIG` environment variable.
+
+5. Generate the configuration file of the agent by running the following command:
 
     ```
     kubectl get daemonset logdna-agent -o=yaml > prod-logdna-agent-ds.yaml
     ```
     {: codeblock}
 
-2. Make changes. Add the section **LOGDNA_EXCLUDE**, and exclude all cluster logs. Add the following section to the yaml file:
+6. Make changes. Add the section **LOGDNA_EXCLUDE**, and exclude all cluster logs. Add the following section to the yaml file:
 
     ```
     - name: LOGDNA_EXCLUDE
@@ -99,27 +124,27 @@ Complete the following steps to configure the agent so that only application log
     ```
     {: codeblock}
 
-3. Apply the configuration changes. Run the following command:
+7. Apply the configuration changes. Run the following command:
 
     ```
     kubectl apply -f prod-logdna-agent-ds.yaml
     ```
     {: codeblock}
 
-4. Get the logdna-agent pods. Run the following command:
+8. Get the logdna-agent pods. Run the following command:
 
     ```
     kubectl get pods
     ```
     {: codeblock}
 
-5. Delete all the logdna pods that are listed in the previous step.
+9. Delete all the logdna pods that are listed in the previous step.
 
     ```
     kubectl delete pod PodName
     ```
     {: codeblock}
 
-6. Verify that log entries are not showing in the LogDNA web UI.
+10. Verify that log entries are not showing in the LogDNA web UI.
 
 

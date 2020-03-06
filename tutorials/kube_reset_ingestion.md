@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years:  2018, 2019
-lastupdated: "2019-06-03"
+  years:  2018, 2020
+lastupdated: "2020-03-06"
 
 keywords: LogDNA, IBM, Log Analysis, logging, kubernetes, tutorial, reset ingestion key
 
@@ -31,9 +31,9 @@ If the ingestion key that you use to forward logs from a cluster to an {{site.da
 ## Before you begin
 {: #kube_reset_prereqs}
 
-Work in a [supported region](/docs/services/Log-Analysis-with-LogDNA/tutorials?topic=LogDNA-about#overview_regions). **Note:** You can work with a Kubernetes cluster that is located in the same region or in a different region. 
+Work in a [supported region](/docs/Log-Analysis-with-LogDNA?topic=LogDNA-regions). **Note:** You can work with a Kubernetes cluster that is located in the same region or in a different region. 
 
-Read about {{site.data.keyword.la_full_notm}}. For more information, see [About](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-about#about).
+Read about {{site.data.keyword.la_full_notm}}. For more information, see [About](/docs/Log-Analysis-with-LogDNA?topic=LogDNA-getting-started#getting-started_ov).
 
 Use a user ID that is a member or an owner of an {{site.data.keyword.cloud_notm}} account. To get an {{site.data.keyword.cloud_notm}} user ID, go to: [Registration ![External link icon](../../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com/login){:new_window}.
 
@@ -58,7 +58,7 @@ Install the {{site.data.keyword.cloud_notm}} CLI and the Kubernetes CLI plug-in.
 
 To renew the ingestion key for an {{site.data.keyword.la_full_notm}} instance by using the {{site.data.keyword.la_full_notm}} Web UI, complete the following steps:
 
-1. [Launch the {{site.data.keyword.la_full_notm}} web UI](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-view_logs#view_logs_step2).
+1. [Launch the {{site.data.keyword.la_full_notm}} web UI](/docs/Log-Analysis-with-LogDNA?topic=LogDNA-view_logs#view_logs_step2).
 
 2. Select the **Configuration** icon. Then select **Organization**. 
 
@@ -217,7 +217,7 @@ With the **Lite - Free** service plan, you can only tail your latest logs.
 ## Next steps
 {: #kube_reset_next_steps}
 
-  If you want to [filter cluster logs](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-view_logs#view_logs_step5), [search cluster logs](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-view_logs#view_logs_step6), [define views](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-view_logs#view_logs_step7), and [configure alerts](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-alerts), you must upgrade the {{site.data.keyword.la_full_notm}} plan to a paid plan.
+  If you want to [filter cluster logs](/docs/Log-Analysis-with-LogDNA?topic=LogDNA-view_logs#view_logs_step5), [search cluster logs](/docs/Log-Analysis-with-LogDNA?topic=LogDNA-view_logs#view_logs_step6), [define views](/docs/Log-Analysis-with-LogDNA?topic=LogDNA-view_logs#view_logs_step7), and [configure alerts](/docs/Log-Analysis-with-LogDNA?topic=LogDNA-alerts), you must upgrade the {{site.data.keyword.la_full_notm}} plan to a paid plan.
 
 
 

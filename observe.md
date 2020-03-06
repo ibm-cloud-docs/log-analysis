@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2020
-lastupdated: "2020-02-21"
+lastupdated: "2020-03-06"
 
 keywords: LogDNA, IBM, Log Analysis, logging, web UI, observability
 

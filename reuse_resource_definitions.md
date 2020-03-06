@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2018, 2020
-lastupdated: "2020-01-08"
+  years:  2018, 2020
+lastupdated: "2020-03-06"
 
 keywords: LogDNA, IBM, Log Analysis, logging, config agent
 
@@ -34,7 +34,7 @@ To avoid recreating definitions of views, boards, parsing templates, and exclusi
 
 Complete the following steps to export the configuration of your resources:
 
-1. [Launch the {{site.data.keyword.la_full_notm}} web UI](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-view_logs#view_logs_step2).
+1. [Launch the {{site.data.keyword.la_full_notm}} web UI](/docs/Log-Analysis-with-LogDNA?topic=LogDNA-view_logs#view_logs_step2).
 
 2. Select the **Settings** icon ![Configuration icon](images/admin.png "Admin icon"). Then select **Organization**. 
 
@@ -55,7 +55,7 @@ Complete the following steps to export the configuration of your resources:
 
 Complete the following steps to import the configuration of your resources:
 
-1. [Launch the {{site.data.keyword.la_full_notm}} web UI](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-view_logs#view_logs_step2).
+1. [Launch the {{site.data.keyword.la_full_notm}} web UI](/docs/Log-Analysis-with-LogDNA?topic=LogDNA-view_logs#view_logs_step2).
 
 2. Select the **Settings** icon ![Configuration icon](images/admin.png "Admin icon"). Then select **Organization**. 
 

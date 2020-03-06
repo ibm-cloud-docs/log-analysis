@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2018, 2020
-lastupdated: "2020-01-08"
+  years:  2018, 2020
+lastupdated: "2020-03-06"
 
 keywords: LogDNA, IBM, Log Analysis, logging, config agent
 
@@ -29,7 +29,8 @@ The LogDNA agent is responsible for collecting and forwarding logs to your {{sit
 
 To configure your Kubernetes cluster to send logs to your {{site.data.keyword.la_full_notm}} instance, you must install a *logdna-agent* pod on each node of your cluster. The LogDNA agent reads log files from the pod where it is installed, and forwards the log data to your LogDNA instance.
 
-To configure your Kubernetes cluster to forward logs to your LogDNA instance, complete the following steps from the command line:
+Complete the following steps from the command line to configure your Kubernetes cluster to forward logs to your LogDNA instance:
+
 
 ## Prereq
 {: #config_agent_kube_cluster_prereq}
@@ -99,7 +100,7 @@ kubectl create secret generic logdna-agent-key --from-literal=logdna-agent-key=<
 ```
 {: pre}
 
-To get the ingestion key, see [Get the ingestion key through the IBM Log Analysis with LogDNA web UI](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-ingestion_key).
+To get the ingestion key, see [Get the ingestion key through the IBM Log Analysis with LogDNA web UI](/docs/Log-Analysis-with-LogDNA?topic=LogDNA-ingestion_key).
 
 ## Step 3. Enable virtual routing and forwarding (VRF)
 {: #config_agent_kube_cluster_step3}

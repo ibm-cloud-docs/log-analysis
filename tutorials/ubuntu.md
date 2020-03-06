@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years:  2018, 2019
-lastupdated: "2019-06-03"
+  years:  2018, 2020
+lastupdated: "2020-03-06"
 
 keywords: LogDNA, IBM, Log Analysis, logging, ubuntu, tutorial
 
@@ -45,9 +45,9 @@ In this tutorial, you will learn how to configure an Ubuntu server to forward lo
 ## Before you begin
 {: #ubuntu_prereqs}
 
-Work in a [supported region](/docs/services/Log-Analysis-with-LogDNA/tutorials?topic=LogDNA-about#overview_regions). **Note:** You can send data from a Kubernetes cluster that is located in the same region or in a different region. 
+Work in a [supported region](/docs/Log-Analysis-with-LogDNA?topic=LogDNA-regions). **Note:** You can send data from a Kubernetes cluster that is located in the same region or in a different region. 
 
-Read about {{site.data.keyword.la_full_notm}}. For more information, see [About](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-about#about).
+Read about {{site.data.keyword.la_full_notm}}. For more information, see [About](/docs/Log-Analysis-with-LogDNA?topic=LogDNA-getting-started#getting-started_ov).
 
 Use a user ID that is a member or an owner of an {{site.data.keyword.cloud_notm}} account. To get an {{site.data.keyword.cloud_notm}} user ID, go to: [Registration ![External link icon](../../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com/login){:new_window}.
 
@@ -92,14 +92,14 @@ To provision an instance of {{site.data.keyword.la_full_notm}} through the {{sit
 
     By default, the **Lite** plan is set.
 
-    For more information about other service plans, see [Pricing plans](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-about#overview_pricing_plans).
+    For more information about other service plans, see [Pricing plans](/docs/Log-Analysis-with-LogDNA?topic=LogDNA-service_plans).
 
 8. To provision the {{site.data.keyword.la_full_notm}} service in the {{site.data.keyword.cloud_notm}} resource group where you are logged in, click **Create**.
 
 After you provision an instance, the {{site.data.keyword.la_full_notm}} dashboard opens. 
 
 
-**Note:** To provision an instance of LogDNA through the CLI, see [Provisioning LogDNA through the {{site.data.keyword.cloud_notm}} CLI](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-provision#provision_cli).
+**Note:** To provision an instance of LogDNA through the CLI, see [Provisioning LogDNA through the {{site.data.keyword.cloud_notm}} CLI](/docs/Log-Analysis-with-LogDNA?topic=LogDNA-provision#provision_cli).
 
 
 ## Step 2. Configure your Ubuntu server to send logs to your instance
@@ -210,13 +210,13 @@ From the LogDNA Web UI, you can view your logs as they pass through the system. 
 
 **Note:** With the **Free** service plan, you can only tail your latest logs.
 
-For more information, see [Viewing logs](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-view_logs#view_logs).
+For more information, see [Viewing logs](/docs/Log-Analysis-with-LogDNA?topic=LogDNA-view_logs#view_logs).
 
 
 ## Next steps
 {: #ubuntu_next_steps}
 
-[Filter logs](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-view_logs#view_logs_step5), [search logs](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-view_logs#view_logs_step6), [define views](/docs/services/Log-Analysis-with-LogDNA?topic=LogDNA-view_logs#view_logs_step7), and [configure alerts](https://docs.logdna.com/docs/alerts). 
+[Filter logs](/docs/Log-Analysis-with-LogDNA?topic=LogDNA-view_logs#view_logs_step5), [search logs](/docs/Log-Analysis-with-LogDNA?topic=LogDNA-view_logs#view_logs_step6), [define views](/docs/Log-Analysis-with-LogDNA?topic=LogDNA-view_logs#view_logs_step7), and [configure alerts](https://docs.logdna.com/docs/alerts). 
 
 **Note:** To use any of these features, you must upgrade the {{site.data.keyword.la_full_notm}} plan to a paid plan.
 

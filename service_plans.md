@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2018, 2020
-lastupdated: "2020-01-08"
+  years:  2018, 2020
+lastupdated: "2020-03-06"
 
 keywords: LogDNA, IBM, Log Analysis, logging, getting started
 
@@ -31,11 +31,14 @@ Different pricing plans are available that you can choose for an {{site.data.key
 
 | Plan                     | Number of days that data is available for seach | Number of users per plan |
 |--------------------------|-------------------------------------------------|--------------------------|
+| `HIPAA` [1]              | 30                                              | 25                       |
 | `30 days log search`     | 30                                              | Unlimitted               |
 | `14 days log search`     | 14                                              | Unlimitted               |
 | `7-day log search`       | 7                                               | Unlimitted               |
 | `Lite`                   | Data is not available for search                | 1                        |
 {: caption="Table 1. List of service plans" caption-side="top"} 
+
+`[1]` To enable the HIPAA plan in your account, you must [open a support ticket](/docs/get-support?topic=get-support-getting-customer-support#getting-customer-support). 
 
 {{site.data.keyword.la_full_notm}} offers a `Lite` plan that you can use to view your logs as they pass through the system. You can view logs by using log tailing. You can also design filters to prepare for upgrading to a longer retention period plan. This plan has a 0-day retention period.
 
