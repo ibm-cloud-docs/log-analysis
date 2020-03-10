@@ -19,12 +19,13 @@ IBM Log Analysis with LogDNA
         monitor_cfapp_logs.md
 
     {: .topicgroup}
-    Security and Compliance
+    Security and compliance
+        adoption.md
         iam.md
         network.md
         compliance.md
         manage_eu_logs.md
-        adoption.md
+
 
     {: .topicgroup}
     Tutorials

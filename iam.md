@@ -22,7 +22,7 @@ subcollection: LogDNA
 {:note: .note}
 
  
-# Managing user access with IAM
+# Managing access with IAM
 {: #iam}
 
 {{site.data.keyword.iamlong}} (IAM) enables you to securely authenticate users and control access to all cloud resources consistently in the {{site.data.keyword.cloud_notm}}. 
