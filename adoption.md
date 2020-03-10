@@ -29,10 +29,10 @@ For regulated and highly available workloads, consider the following adoption gu
 {:shortdesc}
 
 
-## 1. Define resources naming stardards for compliance
+## 1. Define resources naming standards for compliance
 {: #adoption_naming}
 
-When you create resources in the {{site.data.keyword.cloud_notm}}, you can choose how to name them, what information to include in their description fields, choose tags to group them, associate metadata, and more. You have a potential risk of exposing PII data and other sensitive information through any of these actions to other users in the account. 
+When you create resources in the {{site.data.keyword.cloud_notm}}, you can choose how to name them, what information to include in their description fields, which tags to use to group them, associate metadata, and more. You have a potential risk of exposing PII data and other sensitive information through any of these actions to other users in the account. 
 
 **Define naming standards that do not include PII and other sensitive information across all resources that are created in the {{site.data.keyword.cloud_notm}}.**
 {: important}
@@ -72,7 +72,7 @@ In addition to these benefits, when you look into logging and how it fits with a
 * Service platform logs are collected and available per location (region) through 1 single logging instance. You do not have the ability to split logs from different services running in the same region to multiple instances. If you run your development, test, and production services in a stand-alone account, all those logs will be available through the same logging instance, and any user with permissions to view logs in that instance will be able to see everything.
 * You can configure other log sources in {{site.data.keyword.cloud_notm}} and on-premisses to forward logs to any logging instance in your account. 
 
-**Define an enterprise account management strategy to add an additonal layer of isolation to resources on top of stand-alone accounts.**
+**Define an enterprise account management strategy to add an additional layer of isolation to resources on top of stand-alone accounts.**
 {: important}
 
 
@@ -84,30 +84,30 @@ Across every industry, organizations require tighter controls and visibility int
 **Indicate to {{site.data.keyword.IBM_notm}} your compliance requirements by enabling your {{site.data.keyword.cloud_notm}} account or {{site.data.keyword.cloud_notm}} Entreprise account as HIPAA or EU supported.**
 {: important}
 
-In the {{site.data.keyword.cloud}}, you can configure your account for EU support and for HIPAA support:
+In the {{site.data.keyword.cloud_notm}}, you can configure your account for EU support and for HIPAA support:
 * You might choose to enable the **EU Supported** setting, for example, if you use resources to process personal data for European citizens. For more information, see [Set on the EU-Supported flag in your account](/docs/account?topic=account-eu-hipaa-supported#bill_eusupported).
-* You might choose to enable the **HIPAA** Supported setting if you plan to include Protected Health Information (PHI) in HIPAA-enabled services. For more information, see [Set on the HIPAA flag in your account](/docs/account?topic=account-eu-hipaa-supported#enabling-hipaa).
+* You might choose to enable the **HIPAA Supported** setting if you plan to include Protected Health Information (PHI) in HIPAA-enabled services. For more information, see [Set on the HIPAA flag in your account](/docs/account?topic=account-eu-hipaa-supported#enabling-hipaa).
 
 Notice that only the account owner can enable the account to be EU supported and HIPAA supported. 
 
 ### HIPAA
 {: #adoption_acc_settings_hipaa}
 
-If you're the account owner, you can enable your {{site.data.keyword.cloud}} account to be HIPAA supported. For example, you might choose to enable the **HIPAA Supported setting** if you plan to include Protected Health Information (PHI) in HIPAA-enabled services.
+If you're the account owner, you can enable your {{site.data.keyword.cloud}} account to be HIPAA supported. For example, you might choose to enable the **HIPAA Supported** setting if you plan to include Protected Health Information (PHI) in HIPAA-enabled services.
 
-The US Health Insurance Portability and Accountability Act (HIPAA) and the Health Information Technology for Economic and Clinical Health (HITECH) Act define standards for handling electronic healthcare transactions and information. If you or your company is a covered entity as defined by HIPAA, you must enable the HIPAA Supported setting if you run sensitive workloads that are regulated under HIPAA and the HITECH Act. Learn more about {{site.data.keyword.cloud_notm}} compliance in [Compliance on the {{site.data.keyword.cloud_notm}}](https://www.ibm.com/cloud/compliance){: new_window} ![External link icon](../icons/launch-glyph.svg "External link icon").
+The US Health Insurance Portability and Accountability Act (HIPAA) and the Health Information Technology for Economic and Clinical Health (HITECH) Act define standards for handling electronic healthcare transactions and information. If you or your company is a covered entity as defined by HIPAA, you must enable the HIPAA supported setting if you run sensitive workloads that are regulated under HIPAA and the HITECH Act. Learn more about {{site.data.keyword.cloud_notm}} compliance in [Compliance on the {{site.data.keyword.cloud_notm}}](https://www.ibm.com/cloud/compliance){: new_window} ![External link icon](../icons/launch-glyph.svg "External link icon").
 {: tip}
 
 When you configure your account to be HIPAA enabled, consider the following information:
-* You can filter on *HIPAA Enabled* services in the catalog. Accounts that enable the **HIPAA Supported setting** still have access to the full catalog of services. 
+* You can filter on *HIPAA Enabled* services in the catalog. Accounts that enable the **HIPAA Supported** setting still have access to the full catalog of services. 
 * You indicate to {{site.data.keyword.IBM_notm}} that your account stores protected health information (PHI).
 * You digitally accept the IBM Business Associate Addendum (BAA) for covered entities.
 
 Enable this setting only if you or your company is a covered entity as defined by HIPAA. If you or your company is a business associate of a covered entity, [contact {{site.data.keyword.cloud_notm}} Sales](https://www.ibm.com/account/reg/us-en/signup?formid=MAIL-wcp){: new_window} ![External link icon](../icons/launch-glyph.svg "External link icon") to accept the applicable BAA. For more information about HIPAA definitions of covered entities and business associates, see the [US Department of Health & Human Services](https://www.hhs.gov/hipaa/for-professionals/covered-entities/index.html){: new_window} ![External link icon](../icons/launch-glyph.svg "External link icon") website.
 {: important}
 
-In addition, for logging instances that you provision in a HIPAA enabled account, LogDNA requires that you **accept a Business Associate Addendum (BAA) with LogDNA** prior to having access to this plan. Contact {{site.data.keyword.IBM_notm}} and [open a support ticket](/docs/get-support?topic=get-support-getting-customer-support#getting-customer-support).
-{: important}
+The {{site.data.keyword.la_full_notm}} service offers a HIPAA service plan. By default, the HIPAA service plan is not enabled in your account. Contact {{site.data.keyword.IBM_notm}} and [open a support ticket](/docs/get-support?topic=get-support-getting-customer-support#getting-customer-support) to request access to the HIPAA service plan for your logging instances.
+{: note}
 
 
 ## 4. Define the logging instances strategy 
@@ -127,25 +127,26 @@ Per location (region), you can provision 1 or more logging instances.
 * Only 1 instance in a location can be configured to collect logs automatically from [{{site.data.keyword.cloud_notm}} enabled services](/docs/Log-Analysis-with-LogDNA?topic=LogDNA-cloud_services) in that {{site.data.keyword.cloud_notm}} location. Logs are collected in the region where a service instance is provisioned.
 * You can collect logs from custom applications and services that run in the {{site.data.keyword.cloud_notm}} or outside, and forward them to any logging instance in your account.
 * Each location represents the geographic area where your {{site.data.keyword.la_full_notm}} requests are handled and processed for that instance, and where data is resident. 
-* Each MZR location has three different data centers for redundancy. The data for each location is kept in the three data centers near that location. If all three data centers in a location fail, the {{site.data.keyword.la_full_notm}} service for that location becomes unavailable.
-* Each MZR configuration can accept a single data center failure.
+* Each MZR location has three different data centres for redundancy. The data for each location is kept in the three data centres near that location. If all three data centres in a location fail, the {{site.data.keyword.la_full_notm}} service for that location becomes unavailable.
+* Each MZR configuration can accept a single data centre failure.
 
 **When you choose the locations where you plan to provision {{site.data.keyword.la_full_notm}} instances, check the regulatory and high availability (HA) specifications of each location.**
-{: tip}
+{: important}
 
 For example, in Europe, only the Frankfurt region is EU-supported.
 
 You can also check [ensure zero downtime](/docs/overview?topic=overview-zero-downtime#zero-downtime) to learn more about the high availability and disaster recovery standards in {{site.data.keyword.cloud_notm}}. 
 
 
-### Platform service logs
+### Platform logs
 {: #adoption_account_svc_logs}
 
-To enable automatic collection of {{site.data.keyword.cloud_notm}} enabled services, you must configure 1 instance in a location with the **platform service logs** flag. [Learn more](/docs/Log-Analysis-with-LogDNA?topic=LogDNA-config_svc_logs). When 1 instance is enabled to collect logs in a location, data from any instance of an enabled service in that location is collected automatically.
+To enable automatic collection of {{site.data.keyword.cloud_notm}} enabled services, you must configure 1 instance in a location with the **platform logs** flag. [Learn more](/docs/Log-Analysis-with-LogDNA?topic=LogDNA-config_svc_logs). When 1 instance is enabled to collect logs in a location, data from any instance of an enabled service in that location is collected automatically.
 
-**Define 1 instance per location with the platform service logs flag enabled.**
+**Define 1 instance per location with the platform logs flag enabled.**
+{: important}
 
-If you share staging, pre-production, and production services in the same {{site.data.keyword.cloud_notm}} account, notice that users, that are granted access to view data in the logging instance with the platform service logs flag in a location, can see data from any service instance provisoned in that location. To prevent users from viewing log data from all service's instances, consider moving from a  single account model to an *Enterprise account* model.
+If you share staging, pre-production, and production services in the same {{site.data.keyword.cloud_notm}} account, notice that users, that are granted access to view data in the logging instance with the platform logs flag in a location, can see data from any service instance provisioned in that location. To prevent users from viewing log data from all service's instances, consider moving from a  single account model to an *Enterprise account* model.
 
 If you cannot move to an enterprise account model, try reducing the number of users that are granted permissions to view the logs. In addition, you can also define exclusion rules to hide data from showing through the web UI. Exclusion rules stop logs from counting against your data usage quota and from being stored for search. [Learn more](/docs/Log-Analysis-with-LogDNA?topic=LogDNA-exclusion).
 
@@ -157,16 +158,15 @@ Resource groups are a logical container for organizing your IAM-enabled resource
 * IAM-enabled services belong to a resource group. The {{site.data.keyword.la_full_notm}} service is an IAM-enabled service.
 * You assign a resource to its resource group when you create it from the catalog. 
 * You can't change the resource group assignment after you set it, which is why it's important to plan and set up your resource groups.
+* If you add PII information in the resource group name, you might be disclosing sensitive data to others in the same account.
 
 **Use resource groups to organize your {{site.data.keyword.la_full_notm}} instances for access control and billing purposes.**
-{: tip}
+{: important}
 
 Account owners can add resources to any resource group. Other users must be granted access by using an IAM access policy to add resources to resource groups. For more information, see [Best practices for organizing resources in a resource group](/docs/resources?topic=resources-bp_resourcegroups).
 
-If you add PII information in the resource group name, you might be disclosing sensitive data to others in the same account.
-
 **When you define your resource groups, do not add sensitive information in the name.**
-{: tip}
+{: important}
 
 ### Naming
 {: #adoption_resource_svc_name}
@@ -174,7 +174,7 @@ If you add PII information in the resource group name, you might be disclosing s
 If you add PII or other sensitive information in the name or the description of a service instance, you might be disclosing sensitive data to others in the same account.
 
 **When you define your logging instances names, do not add sensitive information in the name or in the description.**
-{: tip}
+{: important}
 
 ### Service plan
 {: #adoption_resource_svc_plan}
@@ -182,7 +182,7 @@ If you add PII or other sensitive information in the name or the description of 
 The service plan that you choose for a LogDNA instance determines the number of days that data is available for search. For more information, see [Service plans](/docs/Log-Analysis-with-LogDNA?topic=LogDNA-service_plans).
 
 **Choose your plan based on the number of days that you need to be able to search data online through the web UI.**
-{: tip}
+{: important}
 
 The HIPAA plan has a maximum of 25 users. If you need to grant permissions to more than 25 users, [open a support ticket](/docs/get-support?topic=get-support-getting-customer-support#getting-customer-support).
 
@@ -225,7 +225,7 @@ In LogDNA, you can collect and forward data to a logging instance by using any o
 * `REST API`: API that you can use to send log data and custom metadata to 1 logging instance in your account.
 * `Code libraries`: Libraries that you can use to code ingestion of logs from your apps and services to 1 logging instance. LogDNA offer libraries for Node.JS, Python, Rails, Ruby, Go, iOS, Java, and PHP.
 
-**For any method that you adopt, you have the flexibility to choose the logging instance where you want to send data per log source. Decide how many instances you might need to collect data from all your log sources based on who can see the data and the type of data that is collected. Avoid sending data to a logging instance that has the platform service logs flag enabled.**
+**For any method that you adopt, you have the flexibility to choose the logging instance where you want to send data per log source. Decide how many instances you might need to collect data from all your log sources based on who can see the data and the type of data that is collected. Avoid sending data to a logging instance that has the platform logs flag enabled.**
 {: tip}
 
 **Whenever a LogDNA agent is available for a type of log source, configure the agent to automatically collect and forward logs from the log source to the logging instance.** The LogDNA agent authenticates by using the LogDNA Ingestion Key and opens a secure web socket to the {{site.data.keyword.la_full_notm}} ingestion servers; monitors all files with extension `.log`*,  and extensionless files under `/var/log/`; and can be customized to exclude data that you do not want to collect or to include custom paths that you want to monitor, and more.
@@ -253,7 +253,7 @@ For example, you can configure a custom user provided service (CUPS) for each Cl
 
 If you add PII information in the name or description of IAM resources, you might be disclosing sensitive data to others in the same account.
 
-**When you define your IAM reosurces, do not add sensitive information in their names and descriptions.**
+**When you define your IAM resources, do not add sensitive information in their names and descriptions.**
 {: tip}
 
 
@@ -271,7 +271,7 @@ Define a minimum of 4 access groups:
 
 | Access group             | Description |
 |--------------------------|-------------|
-| `Administrators`         | Users in this group should have permissions to fully manage the service and grant other users in the account permisisons to work with the service in the {{site.data.keyword.cloud_notm}}. |
+| `Administrators`         | Users in this group should have permissions to fully manage the service and grant other users in the account permissions to work with the service in the {{site.data.keyword.cloud_notm}}. |
 | `Managers`               | Users in this group should have permissions to fully manage the service in the {{site.data.keyword.cloud_notm}}. |
 | `Advanced service users` | Users in this group should have permissions to run advanced tasks.  |
 | `Users`                  | Users in this group should have permissions to run basic tasks.  |
@@ -287,7 +287,7 @@ A policy determines the full set of actions that a user or service ID can perfor
 
 By default, the account owner is the only user in the account that can grant permissions to other users to manage and work with the {{site.data.keyword.la_full_notm}} service. 
 
-**To allow other users or service IDs in the account to manage the service and be able to grant permisisons to work with the {{site.data.keyword.la_full_notm}} service, define a policy for the {{site.data.keyword.la_full_notm}} service with the platform role **administrator**. Grant this policy to the administrators access group.** 
+**To allow other users or service IDs in the account to manage the service and be able to grant permissions to work with the {{site.data.keyword.la_full_notm}} service, define a policy for the {{site.data.keyword.la_full_notm}} service with the platform role **administrator**. Grant this policy to the administrators access group.** 
 {: tip}
 
 For more information, see [Granting permissions to a user to become an administrator of the service](/docs/Log-Analysis-with-LogDNA?topic=LogDNA-work_iam#admin_account).
@@ -325,13 +325,13 @@ You can assign a single policy to the access group instead of assigning the same
 ## 7. Configure the account settings for authentication into your account
 {: #adoption_login}
 
-Multifactor authentication (MFA) adds an extra layer of security to your account by requiring all users to authenticate by using an additional authentication method beyond an ID and password. This is also commonly known as two-factor authentication (2FA). 
+Multi-factor authentication (MFA) adds an extra layer of security to your account by requiring all users to authenticate by using an additional authentication method beyond an ID and password. This is also commonly known as two-factor authentication (2FA). 
 
-The {{site.data.keyword.cloud_notm}} account owner or administrator for the billing service can choose to require multifactor authentication (MFA) for every user in the account or just users with non-federated IDs who do not use SSO. All users with an IBMid use a time-based one-time passcode (TOTP) MFA method, and any users with a different type of ID must be enabled to use the time-based one-time passcode authentication (TOTP), security questions, or an external authentication method separately. [Learn more](/docs/iam?topic=iam-enablemfa).
+The {{site.data.keyword.cloud_notm}} account owner or administrator for the billing service can choose to require multi-factor authentication (MFA) for every user in the account or just users with non-federated IDs who do not use SSO. All users with an IBMid use a time-based one-time passcode (TOTP) MFA method, and any users with a different type of ID must be enabled to use the time-based one-time passcode authentication (TOTP), security questions, or an external authentication method separately. [Learn more](/docs/iam?topic=iam-enablemfa).
 
 You can also configure MFA options such as security questions, using a time-based one-time passcode, and using an external authentication method. These types of MFA options are specific per account and are available only with former classic infrastructure accounts.
 
-**Enable multifactor authentication (MFA) in your {{site.data.keyword.cloud_notm}} account for all users.**
+**Enable multi-factor authentication (MFA) in your {{site.data.keyword.cloud_notm}} account for all users.**
 {: important}
 
 
@@ -386,7 +386,7 @@ You can choose to be notified by using an absence alert that is triggered when n
 
 You can choose to be notified by using a presence alert that is triggered when more log lines than expected are present.  
 
-**Define a presence alert to be notified of exceptional situations in your applications and services that require inmediate attention.**    
+**Define a presence alert to be notified of exceptional situations in your applications and services that require immediate attention.**    
 {: tip}
 
 You can configure multiple notification channels. Valid channels are: `email`, `Slack`, `PagerDuty`, `Webhook`
@@ -395,7 +395,7 @@ You can configure multiple notification channels. Valid channels are: `email`, `
 |--------------|----------------------|
 | `email`      | Email is a traditional communication method that you can use to notify 1 or more users. This notification channel requires users to be monitoring proactively their emails to detect an alert. **Define an email alert to verify that the alert on a view is working, and to inform users of situations they may have requested information.**
 | `Slack`      | Slack is a collaborative tool that you can use to communicate and share information across 1 or more teams. **Define a Slack alert to inform about routine scenarios that you might want to monitor.** |
-| `PagerDuty`  | PagerDuty is an incident management tool that you can use to automate incident resolution and escalation, define on-call schedules and more. **Define a PagerDuty alert to be notified inmmediately so that you can take action promptly.**  |
+| `PagerDuty`  | PagerDuty is an incident management tool that you can use to automate incident resolution and escalation, define on-call schedules and more. **Define a PagerDuty alert to be notified immediately so that you can take action promptly.**  |
 | `Webhook`    | A webhook is another method that you can configure to provide other applications information. **Define a webhook alert if you have a third party tool that you can configure with a LogDNA instance via a webhook, and where you plan to manage notifications.** |
 {: caption="Table 7. Guidance for notification channel" caption-side="top"}
 
@@ -472,7 +472,7 @@ When you plan the bucket for a LogDNA instance, consider the following informati
 
 `[5]`: COS provides several options to encrypt your data. By default, all objects that are stored in COS are encrypted by using randomly generated keys and an all-or-nothing-transform (AONT). With COS, you can also manage your keys manually by providing your own encryption keys - referred to as Server-Side Encryption with Customer-Provided Keys (SSE-C). Alternatively, you can choose to use the integration capabilities with {{site.data.keyword.cloud}} Key Management Services like {{site.data.keyword.keymanagementservicelong}} and {{site.data.keyword.hscrypto}}. 
 
-`[6]`: Resiliency refers to the scope and scale of the geographic area across which your data is distributed. For example, you can choose cross region resiliency to spread your data across several geographical areas, or regional resiliency to spread data across a single region. Notice that a single data center distributes data across devices within a single site only.
+`[6]`: Resiliency refers to the scope and scale of the geographic area across which your data is distributed. For example, you can choose cross region resiliency to spread your data across several geographical areas, or regional resiliency to spread data across a single region. Notice that a single data centre distributes data across devices within a single site only.
 
 
 **Create a custom COS bucket with the storage features and the policies that you identify.** [Learn more](/docs/Log-Analysis-with-LogDNA?topic=LogDNA-archiving).
@@ -588,7 +588,7 @@ If you add PII information in the name or the description of the service ID, you
 **When you define your service ID name, do not add sensitive information in the name or in the description.**
 {: tip}
 
-You might have a requirement to rotate API keys regularly or your API key might be compromissed. 
+You might have a requirement to rotate API keys regularly or your API key might be compromised. 
 
 **Rotate the API key that is associated with your service ID regularly to prevent any security breaches caused by leaked keys or to comply with security guidelines.**
 {: tip}
@@ -663,7 +663,7 @@ You can use the {{site.data.keyword.sqlquery_short}} service to query {{site.dat
 {: tip}
 
 
-The {{site.data.keyword.sqlquery_short}} service provides a serverless, no-ETL solution to easily query data stored in {{site.data.keyword.cos_short}}. Underneath, SQL Query uses Apache Spark SQL as its underlying query engine. You can use the {{site.data.keyword.sqlquery_short}} to run SQL queries (that is, `SELECT` statements) to analyze, transform structured and semi-structured data, or clean up rectangular data. You cannot run actions such as `CREATE`, `DELETE`, `INSERT`, and `UPDATE`.
+The {{site.data.keyword.sqlquery_short}} service provides a server-less, no-ETL solution to easily query data stored in {{site.data.keyword.cos_short}}. Underneath, SQL Query uses Apache Spark SQL as its underlying query engine. You can use the {{site.data.keyword.sqlquery_short}} to run SQL queries (that is, `SELECT` statements) to analyze, transform structured and semi-structured data, or clean up rectangular data. You cannot run actions such as `CREATE`, `DELETE`, `INSERT`, and `UPDATE`.
 
 The {{site.data.keyword.sqlquery_short}} service can process input data that is read from CSV, JSON, ORC, Parquet, or AVRO files. Archived files from an {{site.data.keyword.at_full_notm}} instance contain data in JSON format. When you use the {{site.data.keyword.sqlquery_short}} service, each query result can be written to a `CSV`, `JSON`, `ORC`, `PARQUET`, or `AVRO` file in {an {{site.data.keyword.cos_short}}instance of your choice. 
 

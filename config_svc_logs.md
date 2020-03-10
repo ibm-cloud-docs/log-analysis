@@ -55,3 +55,49 @@ The main *Observability* page opens.
 The instance that you choose to receive service logs shows the flag **Platform services logs**.
 
 
+
+## Enabling a LogDNA instance from the command line
+{: #platform_metrics_enabling_cli}
+
+To enable platform logs in a region, the instance that you want to configure to receive platform logs must have set on the **default_receiver** property.
+{: note}
+
+Complete the following steps:
+
+1. [Pre-requisite] [Install the {{site.data.keyword.cloud_notm}} CLI](/docs/cli?topic=cloud-cli-getting-started).
+
+2. Log in to the region in the {{site.data.keyword.cloud_notm}} where the LogDNA instance is running. Run the following command: [`ibmcloud login`](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_cli#ibmcloud_login)
+
+3. Set the resource group where the LogDNA instance is running. Run the following command: [`ibmcloud target`](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_cli#ibmcloud_target)
+
+    By default, the `default` resource group is set.
+
+4. Get the instance name. Run the following command: [`ibmcloud resource service-instances`](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_commands_resource#ibmcloud_resource_service_instances)
+
+    ```
+    ibmcloud resource service-instances
+    ```
+    {: pre}
+
+5. Get the plan ID of the instance. 
+
+    Run the following command and copy the value of the field `resource_plan_id`. This value is needed to update the instance.
+
+    ```
+    ibmcloud resource service-instance InstanceName --output JSON
+    ```
+    {: pre}
+
+    Where `InstanceName` is the name of your LogDNA instance.
+
+5. Set on the **default_receiver** property. Run the following command:
+
+    ```
+    ibmcloud resource service-instance-update InstanceName --service-plan-id PlanID -p '{"default_receiver": true}'
+    ```
+    {: codeblock}
+
+    Where `PlanID` is the resource plan ID of your LogDNA instance.
+    
+
+

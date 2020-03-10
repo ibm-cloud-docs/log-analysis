@@ -53,7 +53,7 @@ Complete the following steps to define an exclusion rule:
 7. Click **Save**.
 
 
-## Exclude syslog data for a worker while keeping entries that report errors only
+## Sample 1: Exclude syslog data for a worker while keeping entries that report errors only
 {: #exclusion rules_sample}
 
 You will configure the rule so that you are able to see all log data through views and be able to define alerts on all the data.
@@ -85,7 +85,7 @@ Prereq: You must have a cluster configured to forward logs to a LogDNA instance.
 
 
 
-## Exclude kube-system data from the cluster while keeping entries that report errors only
+## Sample 2: Exclude kube-system data from the cluster while keeping entries that report errors only
 {: #exclusion rules_sample2}
 
 You will configure the rule so that you are not able to see excluded log data through views.
