@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2020
-lastupdated: "2020-03-06"
+lastupdated: "2020-03-18"
 
 keywords: LogDNA, IBM, Log Analysis, logging, export logs
 
@@ -105,14 +105,14 @@ The following table lists the query parameters that you can set:
 For example, to write log lines into the terminal, you can run the following command:
 
 ```
-curl "https://api.us-south.logging.cloud.ibm.com/v1/export?to=$(date +%s)000&from=$(($(date +%s)-86400))000&levels=info" -u e08c0c759663491880b0d61712346789:
+curl "https://api.us-south.logging.cloud.ibm.com/v1/export?to=$(date +%s)000&from=$(($(date +%s)-86400))000&level=info" -u e08c0c759663491880b0d61712346789:
 ```
 {: screen}
 
 To send an email with the link to download the log lines specified on the export, you can run the following command:
 
 ```
-curl "https://api.us-south.logging.cloud.ibm.com/v1/export?to=$(date +%s)000&from=$(($(date +%s)-86400))000&levels=info&email=joe@ibm.com" -u e08c0c759663491880b0d61712346789:
+curl "https://api.us-south.logging.cloud.ibm.com/v1/export?to=$(date +%s)000&from=$(($(date +%s)-86400))000&level=info&email=xxx@ibm.com" -u e08c0c759663491880b0d61712346789:
 ```
 {: screen}
 
@@ -120,7 +120,7 @@ curl "https://api.us-south.logging.cloud.ibm.com/v1/export?to=$(date +%s)000&fro
 To send an email with a custom subject, you can run the following command:
 
 ```
-curl "https://api.us-south.logging.cloud.ibm.com/v1/export?to=$(date +%s)000&from=$(($(date +%s)-86400))000&levels=info&email=lopezdsr@uk.ibm.com&emailSubject=Export%20test" -u e08c0c759663491880b0d61712346789:
+curl "https://api.us-south.logging.cloud.ibm.com/v1/export?to=$(date +%s)000&from=$(($(date +%s)-86400))000&level=info&email=xxx@ibm.com&emailSubject=Export%20test" -u e08c0c759663491880b0d61712346789:
 ```
 {: screen}
 

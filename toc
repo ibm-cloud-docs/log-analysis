@@ -23,7 +23,6 @@ IBM Log Analysis with LogDNA
         adoption.md
         iam.md
         network.md
-        compliance.md
         manage_eu_logs.md
 
 
