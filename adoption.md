@@ -32,7 +32,7 @@ For regulated and highly available workloads, consider the following adoption gu
 ## 1. Define resources naming standards for compliance
 {: #adoption_naming}
 
-When you create resources in the {{site.data.keyword.cloud_notm}}, you can choose how to name them, what information to include in their description fields, which tags to use to group them, associate metadata, and more. You have a potential risk of exposing PII data and other sensitive information through any of these actions to other users in the account. 
+When you create resources in the {{site.data.keyword.cloud_notm}}, you can choose how to name them, what information to include in their description fields, which tags to use to group them, associate metadata, and more. 
 
 **Define naming standards that do not include PII and other sensitive information across all resources that are created in the {{site.data.keyword.cloud_notm}}.**
 {: tip}
@@ -42,7 +42,7 @@ When you create resources in the {{site.data.keyword.cloud_notm}}, you can choos
 ## 2. Define the account management strategy
 {: #adoption_account}
 
-In {{site.data.keyword.cloud_notm}}, you can have 1 of more **stand-alone** accounts. You can manage each account individually or within an **enterprise** by configuring a multitiered hierarchy of accounts. 
+In {{site.data.keyword.cloud_notm}}, you can have 1 or more **stand-alone** accounts. You can manage each account individually or within an **enterprise** by configuring a multitiered hierarchy of accounts. 
 
 Within an enterprise account, you create a multitiered hierarchy of accounts, with billing and payments for all accounts managed at the enterprise level. [Learn more](/docs/account?topic=account-enterprise).  
 * The top enterprise account serves as the parent account to all other accounts in the enterprise. 
@@ -79,7 +79,7 @@ In addition to these benefits, when you look into logging and how it fits with a
 ## 3. Configure account settings for compliance
 {: #adoption_acc_settings}
 
-Across every industry, organizations require tighter controls and visibility into where their data is stored and processed. 
+Across every industry, organizations require tight controls and visibility into where their data is stored and processed. 
 
 **Indicate to {{site.data.keyword.IBM_notm}} your compliance requirements by enabling your {{site.data.keyword.cloud_notm}} account or {{site.data.keyword.cloud_notm}} Entreprise account as HIPAA or EU supported.**
 {: tip}
@@ -124,11 +124,11 @@ The {{site.data.keyword.la_full_notm}} service offers a HIPAA service plan. By d
 You can provision instances of the {{site.data.keyword.la_full_notm}} service in any of the supported locations in the {{site.data.keyword.cloud_notm}}. For more information, see [Locations](/docs/Log-Analysis-with-LogDNA?topic=LogDNA-regions).
 
 Per location (region), you can provision 1 or more logging instances. 
-* Only 1 instance in a location can be configured to collect logs automatically from [{{site.data.keyword.cloud_notm}} enabled services](/docs/Log-Analysis-with-LogDNA?topic=LogDNA-cloud_services) in that {{site.data.keyword.cloud_notm}} location. Logs are collected in the region where a service instance is provisioned.
 * You can collect logs from custom applications and services that run in the {{site.data.keyword.cloud_notm}} or outside, and forward them to any logging instance in your account.
+* Only 1 instance in a location can be configured to collect logs automatically from [{{site.data.keyword.cloud_notm}} enabled services](/docs/Log-Analysis-with-LogDNA?topic=LogDNA-cloud_services) in that {{site.data.keyword.cloud_notm}} location.
 * Each location represents the geographic area where your {{site.data.keyword.la_full_notm}} requests are handled and processed for that instance, and where data is resident. 
-* Each MZR location has three different data centres for redundancy. The data for each location is kept in the three data centres near that location. If all three data centres in a location fail, the {{site.data.keyword.la_full_notm}} service for that location becomes unavailable.
-* Each MZR configuration can accept a single data centre failure.
+* Each MZR location has three different data centers for redundancy. The data for each location is kept in the three data centers near that location. If all three data centers in a location fail, the {{site.data.keyword.la_full_notm}} service for that location becomes unavailable.
+* Each MZR configuration can accept a single data center failure.
 
 **When you choose the locations where you plan to provision {{site.data.keyword.la_full_notm}} instances, check the regulatory and high availability (HA) specifications of each location.**
 {: tip}
@@ -228,7 +228,7 @@ In LogDNA, you can collect and forward data to a logging instance by using any o
 **For any method that you adopt, you have the flexibility to choose the logging instance where you want to send data per log source. Decide how many instances you might need to collect data from all your log sources based on who can see the data and the type of data that is collected. Avoid sending data to a logging instance that has the platform logs flag enabled.**
 {: tip}
 
-**Whenever a LogDNA agent is available for a type of log source, configure the agent to automatically collect and forward logs from the log source to the logging instance.** 
+**Whenever a LogDNA agent is available for a type of log source, configure the agent to automatically collect and forward logs from the log source to the logging instance. The agent is the preferred log collection mechanism.** 
 {: tip}
 
 The LogDNA agent authenticates by using the LogDNA Ingestion Key and opens a secure web socket to the {{site.data.keyword.la_full_notm}} ingestion servers; monitors all files with extension `.log`*,  and extensionless files under `/var/log/`; and can be customized to exclude data that you do not want to collect or to include custom paths that you want to monitor, and more.
@@ -237,7 +237,7 @@ For example, you can configure a Kubernetes cluster and an OpenShift cluster wit
 
 To configure a LogDNA agent on Linux Ubuntu or Debian, see [Configuring a LogDNA agent on Linux Ubuntu or Debian](/docs/Log-Analysis-with-LogDNA?topic=LogDNA-config_agent_linux).
 
-**To send data and attach metadata to each log record, you can use the REST API.**
+**To send data and attach custom metadata to each log record, you can use the REST API.**
 {: tip}
 
 **Configure syslog to collect and forward logs from Cloud Foundry applications.**
@@ -398,13 +398,19 @@ You can configure multiple notification channels. Valid channels are: `email`, `
 | `Webhook`    | A webhook is another method that you can configure to provide other applications information. **Define a webhook alert if you have a third party tool that you can configure with a LogDNA instance via a webhook, and where you plan to manage notifications.** |
 {: caption="Table 4. Guidance for notification channel" caption-side="top"}
 
-**Use at least 2 notification methods to monitor actions that require your attention. For example, use Slack to share alerts and information, and PagerDuty to automate and take prompt action on problems.**
+**Configure PagerDuty alerts to be notified immediately so that you can take action promptly on problems and automate their resolution. In addition, configure Slack alerts to share alerts and information.**
 {: tip}
 
 In LogDNA, you can also define a **preset**. A preset is an alert template that you can attach to any number of views.
 
-To reuse an alert configuration with different views and enforce notification channels across users that analyze data through that instance, configure **alert presets**.
+**To reuse an alert configuration with different views and enforce notification channels across users that analyze data through that instance, configure alert presets**.
 {: tip}
+
+When you send a notification, you can include log data as part of the notification. 
+
+**Customize the data that is included in a notification for situations where the receiver of the notification does not have access to the log data.**
+{: tip}
+
 
 
 ## 10. Define the archive strategy
@@ -471,7 +477,7 @@ When you plan the bucket for a LogDNA instance, consider the following informati
 
 `[5]`: COS provides several options to encrypt your data. By default, all objects that are stored in COS are encrypted by using randomly generated keys and an all-or-nothing-transform (AONT). With COS, you can also manage your keys manually by providing your own encryption keys - referred to as Server-Side Encryption with Customer-Provided Keys (SSE-C). Alternatively, you can choose to use the integration capabilities with {{site.data.keyword.cloud}} Key Management Services like {{site.data.keyword.keymanagementservicelong}} and {{site.data.keyword.hscrypto}}. 
 
-`[6]`: Resiliency refers to the scope and scale of the geographic area across which your data is distributed. For example, you can choose cross region resiliency to spread your data across several geographical areas, or regional resiliency to spread data across a single region. Notice that a single data centre distributes data across devices within a single site only.
+`[6]`: Resiliency refers to the scope and scale of the geographic area across which your data is distributed. For example, you can choose cross region resiliency to spread your data across several geographical areas, or regional resiliency to spread data across a single region. Notice that a single data center distributes data across devices within a single site only.
 
 
 **Create a custom COS bucket with the storage features and the policies that you identify.** [Learn more](/docs/Log-Analysis-with-LogDNA?topic=LogDNA-archiving).
@@ -664,7 +670,7 @@ You can use the {{site.data.keyword.sqlquery_short}} service to query {{site.dat
 
 The {{site.data.keyword.sqlquery_short}} service provides a server-less, no-ETL solution to easily query data stored in {{site.data.keyword.cos_short}}. Underneath, SQL Query uses Apache Spark SQL as its underlying query engine. You can use the {{site.data.keyword.sqlquery_short}} to run SQL queries (that is, `SELECT` statements) to analyze, transform structured and semi-structured data, or clean up rectangular data. You cannot run actions such as `CREATE`, `DELETE`, `INSERT`, and `UPDATE`.
 
-The {{site.data.keyword.sqlquery_short}} service can process input data that is read from CSV, JSON, ORC, Parquet, or AVRO files. Archived files from an {{site.data.keyword.at_full_notm}} instance contain data in JSON format. When you use the {{site.data.keyword.sqlquery_short}} service, each query result can be written to a `CSV`, `JSON`, `ORC`, `PARQUET`, or `AVRO` file in {an {{site.data.keyword.cos_short}}instance of your choice. 
+The {{site.data.keyword.sqlquery_short}} service can process input data that is read from CSV, JSON, ORC, Parquet, or AVRO files. Archived files from an {{site.data.keyword.at_full_notm}} instance contain data in JSON format. When you use the {{site.data.keyword.sqlquery_short}} service, each query result can be written to a `CSV`, `JSON`, `ORC`, `PARQUET`, or `AVRO` file in an {{site.data.keyword.cos_short}}instance of your choice. 
 
 **When you query an {{site.data.keyword.at_full_notm}} archive file, you must convert the JSON formatted file into `PARQUET` format to be able to query the contents successfully.**
 {: tip}
