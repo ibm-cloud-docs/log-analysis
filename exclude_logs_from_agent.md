@@ -104,7 +104,7 @@ Complete the following steps to configure the agent so that only application log
 
     ```
     - name: LOGDNA_EXCLUDE
-      value: /var/log/!(containers)*
+      value: /var/log/!(containers)**
     ```
     {: codeblock}
 
@@ -120,7 +120,7 @@ Complete the following steps to configure the agent so that only application log
 
     ```
     - name: LOGDNA_EXCLUDE
-      value: /var/log/!(containers)*,/var/log/containers/*_kube-system_*
+      value: /var/log/!(containers)**,/var/log/containers/*_kube-system_*
     ```
     {: codeblock}
 

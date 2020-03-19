@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2020
-lastupdated: "2020-03-06"
+lastupdated: "2020-03-18"
 
 keywords: LogDNA, IBM, Log Analysis, logging, overview
 
@@ -76,7 +76,7 @@ Make sure that your naming convention for {{site.data.keyword.la_full_notm}} ins
 {: important}
 
 
-### Step 3. Label your service
+### Step 3. Label your service (optional)
 {: #compliance_hipaa_provision_tag}
 
 Set the tag **HIPAA** to the {{site.data.keyword.la_full_notm}} instances that you provision in your account.
