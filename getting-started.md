@@ -95,6 +95,12 @@ Choose a cloud resource for which you want to manage logs. Then, configure this 
 
 The following table lists examples of cloud resources that you can configure to store and manage logs by using the {{site.data.keyword.la_full_notm}} service. Complete the tutorial for a resource to get started with the logging service:
 
+| Resource | Tutorial | Environment | Scenario |
+|----------|----------|-------------|----------|
+| `Containers running on the {{site.data.keyword.containershort}}` | [Managing Kubernetes cluster logs with {{site.data.keyword.la_full_notm}}](/docs/Log-Analysis-with-LogDNA?topic=LogDNA-kube#kube) | {{site.data.keyword.cloud_notm}} Public | ![{{site.data.keyword.containershort}} and the {{site.data.keyword.la_full_notm}}](images/kube.png "{{site.data.keyword.containershort}} and the {{site.data.keyword.la_full_notm}}")| 
+| `Linux Ubuntu`, `Linux Debian` | [Managing Linux Ubuntu logs with {{site.data.keyword.la_full_notm}}](/docs/Log-Analysis-with-LogDNA?topic=LogDNA-ubuntu#ubuntu) | On premisses | ![Ubuntu server and the {{site.data.keyword.la_full_notm}}](images/ubuntu.png "Ubuntu server and the {{site.data.keyword.la_full_notm}}") |
+{: caption="Table 1. Tutorials to get started working with the {{site.data.keyword.la_full_notm}} service" caption-side="top"}
+
 <table>
   <caption>Tutorials to get started working with the {{site.data.keyword.la_full_notm}} service </caption>
   <tr>
