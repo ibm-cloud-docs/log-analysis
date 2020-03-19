@@ -21,7 +21,7 @@ subcollection: LogDNA
 {:important: .important}
 {:note: .note}
 
-# Provision a HIPAA compliance instance
+# Provisioning a HIPAA compliance instance
 {: #provision_hipaa}
 
 Across every industry, organizations require tighter controls and visibility into where their data is stored and processed in the {{site.data.keyword.cloud}}. To manage logs for HIPAA resources by using the {{site.data.keyword.la_full_notm}} service, consider the following information:
