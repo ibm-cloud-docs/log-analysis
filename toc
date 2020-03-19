@@ -17,6 +17,7 @@ IBM Log Analysis with LogDNA
 
     {: .topicgroup}
     Security and Compliance
+        adoption.md
         iam.md
         network.md
         manage_eu_logs.md
@@ -31,6 +32,7 @@ IBM Log Analysis with LogDNA
 
     {: .navgroup id="howto"}
     provision.md
+    provision_hipaa.md
     remove.md
     observe.md
     
