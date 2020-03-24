@@ -21,7 +21,6 @@ IBM Log Analysis with LogDNA
     {: .topicgroup}
     Security and compliance
         adoption.md
-        network.md
         manage_eu_logs.md
 
     {: .topicgroup}

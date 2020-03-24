@@ -1,10 +1,10 @@
 ---
 
 copyright:
-  years:  2018, 2020
-lastupdated: "2020-03-06"
+  years: 2018, 2020
+lastupdated: "2020-03-25"
 
-keywords: LogDNA, IBM, Log Analysis, logging, network, IP addresses, port
+keywords: LogDNA, IBM, Log Analysis, logging, security, connection
 
 subcollection: LogDNA
 
@@ -14,31 +14,27 @@ subcollection: LogDNA
 {:shortdesc: .shortdesc}
 {:screen: .screen}
 {:pre: .pre}
-{:table: .aria-labeledby="caption"}
 {:codeblock: .codeblock}
 {:tip: .tip}
-{:download: .download}
-{:important: .important}
 {:note: .note}
-
- 
-# Managing network connectivity
-{: #network}
-
-You can configure the LogDNA agent to connect to the logging instance through the public network or through the private network. In addition, when you have an additional firewall set up, or you have customized the firewall settings in your {{site.data.keyword.cloud_notm}} infrastructure, you need to allow outgoing network traffic to the {{site.data.keyword.la_full_notm}} service.
-{:shortdesc}
+{:important: .important}
+{:deprecated: .deprecated}
+{:download: .download}
+{:preview: .preview}
 
 
+# Securing your connection
+{: #service-connection}
 
-## Choosing a service endpoint
-{: #network_endpoints}
+To ensure that you have enhanced control and security over your data when you use {{site.data.keyword.la_full}}, you have the option of using private routes to {{site.data.keyword.cloud_notm}} service endpoints. Private routes are not accessible or reachable over the internet. By using the {{site.data.keyword.cloud_notm}} private service endpoints feature, you can protect your data from threats from the public network and logically extend your private network.
+{: shortdesc}
 
-You can configure a LogDNA agent to connect to an {{site.data.keyword.la_full_notm}} instance through the public network or through the private network. By default, the agent connects through the public network.
 
-The type of network defines the level of isolation and security that is configured to move workloads between cloud-based resources in your account. 
+## Before you begin
+{: #prereq-service-endpoint}
 
 Some factors that you must consider when you must decide which network to choose are:
-* Corporate requirements on how services and applications can access Cloud-based services in your account
+* Corporate requirements on how services and applications can access cloud-based services in your account
 * Security on production workloads
 * Industry compliance regulations
 
@@ -46,34 +42,64 @@ For example, you might have the following requirements when you are working in t
 * No access to Internet to connect to {{site.data.keyword.cloud_notm}} services
 * Isolated connectivity for workloads in your account
 
-When you have these requirements, you should move from the public network to the private network. You should consider connecting the LogDNA agent over the private network. 
+When you have these requirements, you should move from the public network to the private network.
+
+You can configure a LogDNA agent to connect to an {{site.data.keyword.la_full_notm}} instance through the public network or through the private network. By default, the agent connects through the public network.
+{: note}
+
+The type of network defines the level of isolation and security that is configured to move workloads between cloud-based resources in your account. Consider connecting the LogDNA agent over the private network.
+{: tip}
 
 
-### Using private endpoints
-{: #network_endpoints_private}
+## Setting up private service endpoints for {{site.data.keyword.la_full_notm}}
+{: #endpoint-setup}
 
-To configure your LogDNA agent to use private endpoints, you must enable the following features in your account:
+Private network endpoints support routing services over the {{site.data.keyword.cloud_notm}} private network instead of the public network. A private network endpoint provides a unique IP address that is accessible to you without a VPN connection.
 
-1. Virtual routing and forwarding (VRF)
 
-    You can enable virtual routing and forwarding (VRF) to move IP routing for your account and all of its resources into a separate routing table. 
-    
-    [Learn more about how to enable VRF in your account](/docs/account?topic=account-vrf-service-endpoint#vrf).
+### Step 1: Enabling your account
+{: #endpoint-setup-step1}
 
-2. Service endpoints
+To use private network endpoints, the following account features must be enabled for your account:
+* Virtual routing and forwarding (VRF)
+* Service endpoints
 
-    After VRF is enabled, you can enable {{site.data.keyword.cloud_notm}} service endpoints to connect directly to resources without using the public network. Run the following command:
+    Enabling service endpoints means that all users in the account can connect to private network endpoints.
+    {: note}
 
-    ```
-    ibmcloud account update --service-endpoint-enable true
-    ```
-    {: codeblock}
+You must first enable virtual routing and forwarding in your account, and then you can enable the use of IBM Cloud private service endpoints. 
+* To enable VRF, you create a support case. 
+* To enable service endpoints, you use the {{site.data.keyword.cloud_notm}} CLI. For more information about how to enable your account, see [Enabling VRF and service endpoints](/docs/account?topic=account-vrf-service-endpoint).
 
-    [Learn more about how to enable service endpoints in your account](/docs/account?topic=account-vrf-service-endpoint#service-endpoint).
 
- Once the account is VRF and service endpoint enabled, you can configure the LogDNA agent to use the private network by using the [Private Endpoint](/docs/Log-Analysis-with-LogDNA?topic=LogDNA-endpoints) as the ingestion URL. Notice that when you configure the agent to send logs through the public network, the environment where the agent is running requires internet access to use the public endpoint.
+### Step 2: Setting a private endpoint
+{: #endpoint-setup-step2}
 
-Consider the following information when you work with private endpoints:
+After your account is enabled for VRF and service endpoints, you can configure a LogDNA agent to connect to an {{site.data.keyword.la_full_notm}} instance through the private network. 
+
+A service instance can have a private network endpoint, a public network endpoint, or both.
+* Public network endpoint: A service endpoint on the {{site.data.keyword.cloud_notm}} public network.
+* Private network endpoint: A service endpoint that is accessible only on the {{site.data.keyword.cloud_notm}} private network with no access from the public internet.
+* Both public and private network endpoints: Service endpoints that allow access over both networks.
+
+The {{site.data.keyword.la_full_notm}} service offers the following private endpoints:
+
+
+| Region                   | Private Endpoint                                       |
+|--------------------------|--------------------------------------------------------|
+| `Dallas (us-south)`      | `https://api.private.us-south.logging.cloud.ibm.com`   |
+| `Frankfurt (eu-de)`      | `https://api.private.eu-de.logging.cloud.ibm.com`      |
+| `London (eu-gb)`         | `https://api.private.eu-gb.logging.cloud.ibm.com`      |
+| `Tokyo (jp-tok)`         | `https://api.private.jp-tok.logging.cloud.ibm.com`     |
+| `Seoul (kr-seo)`         | `https://api.private.kr-seo.logging.cloud.ibm.com`     |
+| `Sydney (au-syd)`        | `https://api.private.au-syd.logging.cloud.ibm.com`     |
+| `Washington (us-east)`   | `https://api.private.us-east.logging.cloud.ibm.com`     |
+{: caption="Table 1. Lists of private API endpoints for interacting with {{site.data.keyword.la_full_notm}} over {{site.data.keyword.cloud_notm}}'s private network" caption-side="top"}
+
+
+You can [configure the LogDNA agent](/docs/Log-Analysis-with-LogDNA?topic=LogDNA-logdna_agent) to use the private network by using a private endpoint as the ingestion URL.
+
+What happens when you configure the LogDNA agent to use a private endpoint?
 * Private endpoints are not accessible from the public internet. 
 * All traffic is routed to the {{site.data.keyword.cloud_notm}} private network. 
 * Services like {{site.data.keyword.la_full_notm}} are no longer served on an internet routable IP address.
@@ -81,8 +107,7 @@ Consider the following information when you work with private endpoints:
 
 
 
-
-### Limitations using private endpoints
+## Limitations using private endpoints
 {: #network_endpoints_limitations}
 
 Consider the following limitations:
@@ -139,6 +164,8 @@ The following tables list the IP addresses per region that you must configure in
 | `Sydney (au-syd)`     | `api.au-syd.logging.cloud.ibm.com`          | 130.198.89.43 </br>135.90.70.75 </br>168.1.38.90       | TCP 443 </br>TCP 80 |
 | `Tokyo (jp-tok)`      | `api.jp-tok.logging.cloud.ibm.com`          | 165.192.71.226 </br>128.168.70.53 </br>161.202.67.2    | TCP 443 </br>TCP 80 | 
 {: caption="Table 2. IP addresses used by the LogDNA agent" caption-side="top"}
+
+
 
 
 
