@@ -74,7 +74,7 @@ You and {{site.data.keyword.IBM_notm}} share responsibilities for keeping {{site
 | `Manage service permissions`   | Allow administrators to control access to work with the {{site.data.keyword.la_full_notm}}. | Grant, revoke, and manage access to logging features by using IAM. |
 {: caption="Table 3. Responsibilities for identity and access management" caption-side="top"}
 
-[Learn more about controlling access through IAM](/docs/Monitoring-with-LogDNA?topic=LogDNA-iam).
+[Learn more about controlling access through IAM](/docs/Log-Analysis-with-LogDNA?topic=LogDNA-iam).
 
 
 ## Security and regulation compliance

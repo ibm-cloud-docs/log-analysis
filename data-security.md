@@ -137,8 +137,8 @@ You are responsible for deleting archived metadata.
 ### Deleting data from 1 LogDNA agent
 {: #service-delete-agent}
 
-Deletion of data that is collected from one single LogDNA agent in a {{site.data.keyword.mon_short}} instance is not supported.
+Deletion of data that is collected from one single LogDNA agent in a LogDNA instance is not supported.
 
-s
+
 
 

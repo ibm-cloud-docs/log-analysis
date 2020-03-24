@@ -6,13 +6,13 @@ IBM Log Analysis with LogDNA
 
     {: .navgroup id="learn"}
     getting-started.md
-    data.md
-    logdna_agent.md
 
     {: .topicgroup}
     Cloud services
         cloud_services.md
         cloud_services_locations.md
+
+    logdna_agent.md
 
     {: .topicgroup}
     Monitor Cloud services
@@ -22,14 +22,6 @@ IBM Log Analysis with LogDNA
     Security and compliance
         adoption.md
         manage_eu_logs.md
-
-    {: .topicgroup}
-    Enhancing security for IBM Log Analysis with LogDNA
-        data-security.md
-        iam.md
-        ha-dr.md
-        service-connection.md
-        architecture-workload-isolation.md
 
     {: .topicgroup}
     Tutorials
@@ -45,7 +37,6 @@ IBM Log Analysis with LogDNA
     remove.md
     observe.md
     
-
    {: .topicgroup}
     DevOps tasks
         archive.md
@@ -55,6 +46,14 @@ IBM Log Analysis with LogDNA
         work_iam.md
         ingestion_key.md
         reuse_resource_definitions.md
+
+    {: .topicgroup}
+    Enhancing security for IBM Log Analysis with LogDNA
+        data-security.md
+        iam.md
+        ha-dr.md
+        service-connection.md
+        architecture-workload-isolation.md
 
     {: .topicgroup}
     LogDNA agent
