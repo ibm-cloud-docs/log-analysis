@@ -21,10 +21,16 @@ IBM Log Analysis with LogDNA
     {: .topicgroup}
     Security and compliance
         adoption.md
-        iam.md
         network.md
         manage_eu_logs.md
 
+    {: .topicgroup}
+    Enhancing security for IBM Log Analysis with LogDNA
+        data-security.md
+        iam.md
+        ha-dr.md
+        service-connection.md
+        architecture-workload-isolation.md
 
     {: .topicgroup}
     Tutorials
@@ -79,6 +85,7 @@ IBM Log Analysis with LogDNA
     endpoints.md
     regions.md
     service_plans.md
+    shared-responsibilities.md
     [LogDNA Product Page](https://logdna.com/)
     [LogDNA Documentation](https://docs.logdna.com/docs)
     [LogDNA Blog](https://blog.logdna.com/)

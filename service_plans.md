@@ -31,10 +31,10 @@ Different pricing plans are available that you can choose for an {{site.data.key
 
 | Plan                            | Number of days that data is available for seach | Number of users per plan |
 |---------------------------------|-------------------------------------------------|--------------------------|
-| `HIPAA 30 day Log Search` [1]   | 30                                              | 25                       |
-| `30 days log search`            | 30                                              | Unlimitted               |
-| `14 days log search`            | 14                                              | Unlimitted               |
-| `7-day log search`              | 7                                               | Unlimitted               |
+| `HIPAA 30 day log search` [1]   | 30                                              | 25                       |
+| `30 days log search`            | 30                                              | Unlimited               |
+| `14 days log search`            | 14                                              | Unlimited               |
+| `7-day log search`              | 7                                               | Unlimited               |
 | `Lite`                          | Data is not available for search                | 1                        |
 {: caption="Table 1. List of service plans" caption-side="top"} 
 
@@ -48,7 +48,7 @@ Different pricing plans are available that you can choose for an {{site.data.key
 
 The following tables outline the different features that are included in each service plan:
 
-| Feature                                              | `30 day log search` plan </br>`HIPAA 30 day Log Search` | `14 days log search` plan    | `7 days log search` plan     | `Lite` plan | 
+| Feature                                              | `30 day log search` plan </br>`HIPAA 30 day log search` plan | `14 days log search` plan    | `7 days log search` plan     | `Lite` plan | 
 |------------------------------------------------------|-------------------------|-------------------------------|-----------------------------|--------------|
 | `Live streaming tail`                                | ![Checkmark icon](../../icons/checkmark-icon.svg) | ![Checkmark icon](../../icons/checkmark-icon.svg) |![Checkmark icon](../../icons/checkmark-icon.svg) |![Checkmark icon](../../icons/checkmark-icon.svg)|
 | `Customizing the LogDNA agent`                       | ![Checkmark icon](../../icons/checkmark-icon.svg) | ![Checkmark icon](../../icons/checkmark-icon.svg) |![Checkmark icon](../../icons/checkmark-icon.svg) |![Checkmark icon](../../icons/checkmark-icon.svg)|
