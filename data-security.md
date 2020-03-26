@@ -59,6 +59,9 @@ You can enable virtual routing and forwarding (VRF) to move IP routing for your 
 
 * Log data is hosted on the {{site.data.keyword.cloud_notm}}. The {{site.data.keyword.la_full_notm}} service is operated by LogDNA.
 * Data is collocated in the location where the {{site.data.keyword.la_full_notm}} instance is provisioned. For example, log data for an instance that is provisioned in `US South` is hosted in the `US South` region.
+* Data from {{site.data.keyword.cloud_notm}} services is collected and aggregated in each {{site.data.keyword.cloud_notm}} location where the service is available. 
+* Data forwarded by a LogDNA agent is collected and aggregated in the location where the LogDNA instance configured for an agent is available.
+
 
 ### Data encryption
 {: #data-storage_encryption}
@@ -77,17 +80,6 @@ The service plan that you choose for an {{site.data.keyword.la_full_notm}} insta
 
 For example, if you choose the *Lite* plan, data is not stored at all. However, if you choose the 7-day plan, data is stored for 7 days and you have access to it through the LogDNA Web UI.
 
-
-
-
-## Data availability
-{: #data-storage-availability}
-
-Data from {{site.data.keyword.cloud_notm}} services is collected and aggregated in each {{site.data.keyword.cloud_notm}} location where the service is available. 
-
-Data forwarded by a LogDNA agent is collected and aggregated in the location where the LogDNA instance configured for an agent is available.
-
-Each supported location is a multi-zone region (MZR), except Seoul that is a single-zone region (SZR). [Learn more](/docs/Log-Analysis-with-LogDNA?topic=LogDNA-regions).
 
 
 ## Data archives
@@ -117,28 +109,34 @@ Consider the following information when you export log data:
 ## Deleting your data
 {: #data-delete}
 
-### Deleting data
+### Deleting logs when an instance is deleted
 {: #service-delete-logs}
 
 When you delete a LogDNA instance, the instance is automatically deactivated, and ingestion of logs is stopped. [Learn more](/docs/Log-Analysis-with-LogDNA?topic=LogDNA-remove).
 
 LogDNA deletes all logs that are already ingested. Deletion is completed within 24 hours after receiving your request.
 
-You are responsible for deleting archived data. 
+You are responsible for deleting archived logs. 
 
-### Deleting user metadata
+
+### Deleting metadata when an instance is deleted
 {: #service-delete-metadata}
 
-User metadata, such as views, alerts, dashboards, screens, and templates is deleted within 24 hours after receiving your request.
+When you delete a LogDNA instance, user metadata such as views, alerts, dashboards, screens, and templates, is never deleted. 
 
-You are responsible for deleting archived metadata.
+You must open a case through support to request the data to be deleted. For more information, see [Open a support ticket](/docs/get-support?topic=get-support-getting-customer-support#getting-customer-support)..
 
+You are responsible for deleting archived metadata. 
 
-### Deleting data from 1 LogDNA agent
-{: #service-delete-agent}
+### Deleting metadata from an instance
+{: #service-delete-metadata1}
 
-Deletion of data that is collected from one single LogDNA agent in a LogDNA instance is not supported.
+You can delete metadata such as views, dashboards, screens, templates, and alerts at any time.
 
+### Deleting subsets of logs from an instance
+{: #service-delete-subset}
 
+Deletion of a subset of logs is not supported.
 
+For example, you cannot delete logs from one LogDNA agent. You cannot delete data for a specific service. You cannot delete data that match a particular query.
 

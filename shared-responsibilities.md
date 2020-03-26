@@ -56,8 +56,8 @@ You and {{site.data.keyword.IBM_notm}} share responsibilities for keeping {{site
 
 | Task                                                    | {{site.data.keyword.IBM_notm}} Responsibilities | Your Responsibilities |
 |---------------------------------------------------------|-----------------------|--------|
-| `Update the {{site.data.keyword.la_full_notm}} service` | Provide regular updates to the service with new features, fixes for defects, and security fixes. | `N/A` |
-| `Update the LogDNA agent image that is hosted in {{site.data.keyword.cloud_notm}}` | Provide regular updates to the LogDNA agent image with new features, fixes to defects, and security fixes. Document changes in the [Agent release notes](https://docs.sysdig.com/en/sysdig-agent-release-notes.html)  | Update the agent to keep it up to date as new versions are made available. |
+| `Update the {{site.data.keyword.la_full_notm}} service` | Provide regular updates to the service with new features, fixes for defects, and security fixes. Document changes in the [LogDNA release notes](https://logdna.zendesk.com/hc/en-us/categories/360001626492-Release-Notes) | `N/A` |
+| `Update the LogDNA agent image that is hosted in {{site.data.keyword.cloud_notm}}` | Provide regular updates to the LogDNA agent image with new features, fixes to defects, and security fixes. Document changes in the [LogDNA release notes](https://logdna.zendesk.com/hc/en-us/categories/360001626492-Release-Notes)  | Update the agent to keep it up to date as new versions are made available. |
 | `Track versions of custom views, dashboards, screens, parsing templates, and alerts`    | `N/A` | Use your own change management process to control versions of logging resources such as views, dashboards, screens, parsing templates, and alerts`. | 
 {: caption="Table 2. Responsibilities for change management" caption-side="top"}
 
@@ -103,7 +103,7 @@ You and {{site.data.keyword.IBM_notm}} share responsibilities for keeping {{site
 | `Backup LogDNA agents`                                          | `N/A`  | Backup each LogDNA agent yaml file that is deployed in your organization. |
 | `Recovery of LogDNA agents`                                     | `N/A` | Reinstall or reconfigure the LogDNA agents in the event of any disaster event that impacts the agent runtime. |
 | `Backup data that is available for search`                     | Backup data in the region that the service operates in every 24 hrs. | Use access groups to manage permissions to work with the {{site.data.keyword.la_full_notm}}. |
-| `Restore data that is available for search`                    | Restore logging data after any disaster event.   | Add or modify policies to the access groups in your asccount that control permissions to work with the logging service in the new location where the region is recovered. |
+| `Restore data that is available for search`                    | Restore logging data after any disaster event.   | Add or modify policies to the access groups in your account that control permissions to work with the logging service in the new location where the region is recovered. |
 | `Backup the metadata of a LogDNA instance`                          | `N/A` | Backup the metadata such as views, dashboards, screens, parsing templates, and alerts for each LogDNA instance. |
 | `Restore the metadata of a LogDNA instance`                         | `N/A` | Restore the metadata such as views, dashboards, screens, parsing templates, and alerts for each LogDNA instance. |
 {: caption="Table 5. Responsibilities for disaster recovery" caption-side="top"}

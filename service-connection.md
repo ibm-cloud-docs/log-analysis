@@ -54,7 +54,11 @@ The type of network defines the level of isolation and security that is configur
 ## Setting up private service endpoints for {{site.data.keyword.la_full_notm}}
 {: #endpoint-setup}
 
-Private network endpoints support routing services over the {{site.data.keyword.cloud_notm}} private network instead of the public network. A private network endpoint provides a unique IP address that is accessible to you without a VPN connection.
+Private network endpoints support routing services over the {{site.data.keyword.cloud_notm}} private network instead of the public network. 
+
+* A private network endpoint provides a unique IP address that is accessible to you without a VPN connection.
+* Private endpoints work between regions offering a global network. You can run your applications and services in Dallas, and connect to a LogDNA instance in Sydney with a private endpoint.
+
 
 
 ### Step 1: Enabling your account
@@ -112,8 +116,7 @@ What happens when you configure the LogDNA agent to use a private endpoint?
 
 Consider the following limitations:
 * Ingestion endpoints of type `syslog-tcp (syslog-a)` and `syslog-udp (syslog-u)` are not currently supported on the Cloud Service Endpoint (CSE) network. 
-* The LogDNA web UI is not currently supported on the CSE network.
-
+* The LogDNA web UI is not currently supported on the private network.
 
 
 
