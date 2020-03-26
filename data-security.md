@@ -30,12 +30,12 @@ To ensure that you can securely manage your data when you use {{site.data.keywor
 {: #data-collection}
 
 ### Platform logs
-{: #data-collection-platform}}
+{: #data-collection-platform}
 
 Log data from {{site.data.keyword.cloud_notm}} services, Cloud Foundry (CF) framework, and CF applications is collected automatically and available for analysis through the web UI. These data is collected and forwarded to the **platform logs instance** in the location where the service is available. [Learn more about the services that send logs to the platform service logs instance](/docs/Log-Analysis-with-LogDNA?topic=LogDNA-cloud_services).
 
 ### LogDNA agent
-{: #data-collection-agent}}
+{: #data-collection-agent}
 
 When you configure a LogDNA agent to collect and forward data to an {{site.data.keyword.la_full_notm}} instance, data is automatically collected and available for analysis through the web UI. You can configure the LogDNA agent to connect to the logging instance via the public network and the private network. 
 
@@ -124,7 +124,7 @@ You are responsible for deleting archived logs.
 
 When you delete a LogDNA instance, user metadata such as views, alerts, dashboards, screens, and templates, is never deleted. 
 
-You must open a case through support to request the data to be deleted. For more information, see [Open a support ticket](/docs/get-support?topic=get-support-getting-customer-support#getting-customer-support)..
+You must open a case through support to request the data to be deleted. For more information, see [Open a support ticket](/docs/get-support?topic=get-support-getting-customer-support#getting-customer-support).
 
 You are responsible for deleting archived metadata. 
 
