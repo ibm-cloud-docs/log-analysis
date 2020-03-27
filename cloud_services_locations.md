@@ -214,6 +214,43 @@ The following tables list the locations where automatic collection of database s
 {: class="simple-tab-table"}
 {: row-headers}
 
+
+
+## Networking services
+{: #cs_locations_networking}
+
+| Service                                                         | `Dallas (us-south)` | `Washington (us-east)`                   |
+|-----------------------------------------------------------------|---------------------|--------------------------------------|
+| {{site.data.keyword.loadbalancer_full}} `[1]`                | ![Checkmark icon](../../icons/checkmark-icon.svg)               | `NO`                                 |            
+{: caption="Table 10. Security services integration in America's locations" caption-side="top"}
+{: #cs-int-table-1}
+{: tab-title="America"}
+{: tab-group="cs_int"}
+{: class="simple-tab-table"}
+{: row-headers}
+
+| Service                                                         | `Tokyo (jp-tok)` |`Sydney (au-syd)`           |
+|-----------------------------------------------------------------|----------------|---------------------------|
+| {{site.data.keyword.loadbalancer_full}} `[1]`                  | `NO`    | `NO`  |
+{: caption="Table 11. Security services integration in AP locations" caption-side="top"}
+{: #cs-int-table-2}
+{: tab-title="Asia Pacific"}
+{: tab-group="cs_int"}
+{: class="simple-tab-table"}
+{: row-headers}
+
+| Service                                                       |`Frankfurt (eu-de)`  | `London (eu-gb)` |
+|---------------------------------------------------------------|-------------------|----------------|
+| {{site.data.keyword.loadbalancer_full}} `[1]`               |  `NO`              | `NO`  |
+{: caption="Table 12. Security services  integration in Europe locations" caption-side="top"}
+{: #cs-int-table-3}
+{: tab-title="Europe"}
+{: tab-group="cs_int"}
+{: class="simple-tab-table"}
+{: row-headers}
+
+`[1]` Data logs are only sent if your Softlayer and {{site.data.keyword.cloud}} accounts are linked.
+
 ## Security services
 {: #cs_locations_security}
 
@@ -249,6 +286,44 @@ The following tables list the locations where automatic collection of security s
 {: tab-group="cs_sec"}
 {: class="simple-tab-table"}
 {: row-headers}
+
+
+
+## VPC infrastructure services
+{: #cloud_services_locations_vpc_infrastructure}
+
+The followinf locations are valid for VPC Gen 1 and VPC Gen 2:
+
+| Service                                | `Dallas (us-south)`                                | `Washington (us-east)`               |
+|----------------------------------------|----------------------------------------------------|--------------------------------------|
+| VPN                                    | ![Checkmark icon](../../icons/checkmark-icon.svg) | `Logs are available through the LogDNA US-South instance` |
+{: caption="VPC events in America's locations" caption-side="top"}
+{: #cs-vpc-table-1}
+{: tab-title="America"}
+{: tab-group="cs_vpc"}
+{: class="simple-tab-table"}
+{: row-headers}
+
+| Service                                                         | `Tokyo (jp-tok)` |`Sydney (au-syd)`           |
+|-----------------------------------------------------------------|------------------|----------------------------|
+| VPN                                              | ![Checkmark icon](../../icons/checkmark-icon.svg)               | ![Checkmark icon](../../icons/checkmark-icon.svg) |      
+{: caption="VPC events in AP locations" caption-side="top"}
+{: #cs-vpc-table-2}
+{: tab-title="Asia Pacific"}
+{: tab-group="cs_vpc"}
+{: class="simple-tab-table"}
+{: row-headers}
+
+| Service                                                       |`Frankfurt (eu-de)`  | `London (eu-gb)` |
+|---------------------------------------------------------------|---------------------|------------------|
+| VPN                                                           | ![Checkmark icon](../../icons/checkmark-icon.svg)    | ![Checkmark icon](../../icons/checkmark-icon.svg) |           
+{: caption="VPC events in Europe locations" caption-side="top"}
+{: #cs-vpc-table-3}
+{: tab-title="Europe"}
+{: tab-group="cs_vpc"}
+{: class="simple-tab-table"}
+{: row-headers}
+
 
 
 ## Watson AI

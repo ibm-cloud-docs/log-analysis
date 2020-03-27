@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2020
-lastupdated: "2020-03-06"
+lastupdated: "2020-03-27"
 
 keywords: LogDNA, IBM, Log Analysis, logging, services
 
@@ -129,12 +129,58 @@ The following table lists Cloud services that send logs to {{site.data.keyword.l
 | Service     | Description | More info about the integration with {{site.data.keyword.la_full_notm}} |
 |-------------|-------------|-------------------------------------------------------------------------|
 | [{{site.data.keyword.cloudcerts_full_notm}}](/docs/certificate-manager?topic=certificate-manager-about-certificate-manager#about-certificate-manager) | You can use {{site.data.keyword.cloudcerts_short}} to manage the SSL certificates for your {{site.data.keyword.cloud_notm}}-based apps and services.  | [More info](/docs/certificate-manager?topic=certificate-manager-log_events) |
-{: caption="Table 6. List of security Cloud services" caption-side="top"} 
+{: caption="List of security Cloud services" caption-side="top"} 
 
 You can monitor logs through the {{site.data.keyword.la_short}} instance that is configured to receive platform services logs in the location where the service is running. 
 {: note}
 
 To see the list of {{site.data.keyword.la_full_notm}} locations where these services send logs, see [Security services](/docs/Log-Analysis-with-LogDNA?topic=LogDNA-cloud_services_locations#cs_locations_security).
+
+
+## Networking services
+{: #networking}
+
+The following table lists Cloud services that send logs to {{site.data.keyword.la_full_notm}}:
+
+
+| Service     | Description | More info about the integration with {{site.data.keyword.la_full_notm}} |
+|-------------|-------------|-------------------------------------------------------------------------|
+| [{{site.data.keyword.loadbalancer_full}}](/docs/loadbalancer-service?topic=loadbalancer-service-getting-started) | Use this service to improve availability of business-critical applications by distributing traffic among multiple application server instances, and by forwarding traffic to healthy instances only. | [More info](/docs/loadbalancer-service?topic=loadbalancer-service-data-logging)
+{: caption="List of security networking services" caption-side="top"} 
+
+
+## VPC infrastructure
+{: #vpc_infrastructure}
+
+You can provision a Virtual Private Cloud (VPC) in the {{site.data.keyword.cloud_notm}} to run an isolated environment within the public cloud. VPC gives you the security of a private cloud, with the agility and ease of a public cloud. For more information, see [About Virtual Private Cloud](/docs/vpc-on-classic?topic=vpc-on-classic-about).
+
+There are 2 types of VPC infrastructure that you can provision in your account:
+* [Virtual Private Cloud classic Gen 1](/docs/vpc-on-classic?topic=vpc-on-classic-getting-started)
+* [{{site.data.keyword.vpc_full}} Gen 2](/docs/vpc?topic=vpc-getting-started)
+
+
+The following table lists VPC infrastructure services that send metrics to {{site.data.keyword.at_full_notm}}:
+
+| Service     | Description |Events             |
+|-------------|-------------|-------------------|
+| `VPN`| Use this service to connect private networks in a secure fashion. You can use VPN to set up an IPsec site-to-site tunnel between your VPC and your on-premise private network or another VPC. | [More info](/docs/vpc?topic=vpc-using-logdna-to-view-vpn-logs) |
+{: caption="List of VPC infrastructure services (generation 2)" caption-side="top"} 
+{: #vpc-table-2}
+{: tab-title="VPC Gen 2"}
+{: tab-group="VPC"}
+{: class="simple-tab-table"}
+{: row-headers}
+
+| Service     | Description |Events             |
+|-------------|-------------|-------------------|
+| [VPN](/docs/vpc-on-classic-network?topic=vpc-on-classic-network---using-vpn-with-your-vpc)| Use this service to connect private networks in a secure fashion. You can use VPN to set up an IPsec site-to-site tunnel between your VPC and your on-premise private network or another VPC. | [More info](/docs/vpc-on-classic-network?topic=vpc-on-classic-network-using-logdna-to-view-vpn-logs) |
+{: caption="List of VPC infrastructure services (generation 1)" caption-side="top"} 
+{: #vpc-table-1}
+{: tab-title="VPC Classic Gen 1"}
+{: tab-group="VPC"}
+{: class="simple-tab-table"}
+{: row-headers}
+
 
 
 
