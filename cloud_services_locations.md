@@ -92,7 +92,7 @@ The following tables list the locations where automatic collection of registry s
 | Service                                                         | `Dallas (us-south)` | `Washington (us-east)`                   |
 |-----------------------------------------------------------------|---------------------|--------------------------------------|
 | {{site.data.keyword.registrylong_notm}}                      | ![Checkmark icon](../../icons/checkmark-icon.svg)               | `NO`                                 |            
-{: caption="Table 4. Container services integration in America's locations" caption-side="top"}
+{: caption="Table 4. Container services" caption-side="top"}
 {: #cs-con-table-1}
 {: tab-title="America"}
 {: tab-group="cs_con"}
@@ -102,7 +102,7 @@ The following tables list the locations where automatic collection of registry s
 | Service                                                         | `Tokyo (jp-tok)` |`Sydney (au-syd)`           |
 |-----------------------------------------------------------------|----------------|---------------------------|
 | {{site.data.keyword.registrylong_notm}}                         | ![Checkmark icon](../../icons/checkmark-icon.svg)    | `Logs are available through the Log Analysis Tokyo instance`  |
-{: caption="Table 5. Container services integration in AP locations" caption-side="top"}
+{: caption="Table 5. Container services" caption-side="top"}
 {: #cs-con-table-2}
 {: tab-title="Asia Pacific"}
 {: tab-group="cs_con"}
@@ -112,7 +112,7 @@ The following tables list the locations where automatic collection of registry s
 | Service                                                       |`Frankfurt (eu-de)`  | `London (eu-gb)` |
 |---------------------------------------------------------------|-------------------|----------------|
 | {{site.data.keyword.registrylong_notm}}                    |  ![Checkmark icon](../../icons/checkmark-icon.svg)              | ![Checkmark icon](../../icons/checkmark-icon.svg)  |
-{: caption="Table 6. Container services integration in Europe locations" caption-side="top"}
+{: caption="Table 6. Container services" caption-side="top"}
 {: #cs-con-table-3}
 {: tab-title="Europe"}
 {: tab-group="cs_con"}
@@ -136,7 +136,7 @@ The following tables list the locations where automatic collection of database s
 | {{site.data.keyword.databases-for-redis_full_notm}}             | ![Checkmark icon](../../icons/checkmark-icon.svg)               | `NO`                |
 | {{site.data.keyword.cloud_notm}} {{site.data.keyword.ihsdbaas_mongodb_full}}             | ![Checkmark icon](../../icons/checkmark-icon.svg)               | `NO`                |
 | {{site.data.keyword.cloud_notm}} {{site.data.keyword.ihsdbaas_postgresql_full}}             | ![Checkmark icon](../../icons/checkmark-icon.svg)               | `NO`                |
-{: caption="Table 7. Database services integration in America's locations" caption-side="top"}
+{: caption="Table 7. Database services" caption-side="top"}
 {: #cs-dbs-table-1}
 {: tab-title="America"}
 {: tab-group="cs_dbs"}
@@ -154,7 +154,7 @@ The following tables list the locations where automatic collection of database s
 | {{site.data.keyword.databases-for-redis_full_notm}}             | ![Checkmark icon](../../icons/checkmark-icon.svg)    | ![Checkmark icon](../../icons/checkmark-icon.svg) | `Logs are available through the Log Analysis Tokyo instance` | `Logs are available through the Log Analysis Tokyo instance` |
 | {{site.data.keyword.cloud_notm}} {{site.data.keyword.ihsdbaas_mongodb_full}}             | `NO`    | `Logs are available through the Log Analysis Dallas instance`        | `NO` | `NO` |
 | {{site.data.keyword.cloud_notm}} {{site.data.keyword.ihsdbaas_postgresql_full}}             | `NO`    | `Logs are available through the Log Analysis Dallas instance`        | `NO` | `NO` |
-{: caption="Table 8. Database services integration in AP locations" caption-side="top"}
+{: caption="Table 8. Database services" caption-side="top"}
 {: #cs-dbs-table-2}
 {: tab-title="Asia Pacific"}
 {: tab-group="cs_dbs"}
@@ -172,7 +172,7 @@ The following tables list the locations where automatic collection of database s
 | {{site.data.keyword.databases-for-redis_full_notm}}           | ![Checkmark icon](../../icons/checkmark-icon.svg)  | ![Checkmark icon](../../icons/checkmark-icon.svg)            | `Logs are available through the Log Analysis London instance` |
 | {{site.data.keyword.cloud_notm}} {{site.data.keyword.ihsdbaas_mongodb_full}}           | ![Checkmark icon](../../icons/checkmark-icon.svg)                |     `NO`       |     `NO`    |
 | {{site.data.keyword.cloud_notm}} {{site.data.keyword.ihsdbaas_postgresql_full}}           | ![Checkmark icon](../../icons/checkmark-icon.svg)                |     `NO`       |     `NO`    |
-{: caption="Table 9. Database services integration in Europe locations" caption-side="top"}
+{: caption="Table 9. Database services" caption-side="top"}
 {: #cs-dbs-table-3}
 {: tab-title="Europe"}
 {: tab-group="cs_dbs"}
@@ -187,7 +187,7 @@ The following tables list the locations where automatic collection of database s
 | Service                                                         | `Dallas (us-south)` | `Washington (us-east)`                   |
 |-----------------------------------------------------------------|---------------------|--------------------------------------|
 | {{site.data.keyword.appconservicefull}}                      | ![Checkmark icon](../../icons/checkmark-icon.svg)               | `NO`                                 |            
-{: caption="Table 10. Security services integration in America's locations" caption-side="top"}
+{: caption="Table 10. Integration services" caption-side="top"}
 {: #cs-int-table-1}
 {: tab-title="America"}
 {: tab-group="cs_int"}
@@ -197,7 +197,7 @@ The following tables list the locations where automatic collection of database s
 | Service                                                         | `Tokyo (jp-tok)` |`Sydney (au-syd)`           |
 |-----------------------------------------------------------------|----------------|---------------------------|
 | {{site.data.keyword.appconservicefull}}                      | `NO`    | ![Checkmark icon](../../icons/checkmark-icon.svg)  |
-{: caption="Table 11. Security services integration in AP locations" caption-side="top"}
+{: caption="Table 11. Integration services" caption-side="top"}
 {: #cs-int-table-2}
 {: tab-title="Asia Pacific"}
 {: tab-group="cs_int"}
@@ -207,7 +207,7 @@ The following tables list the locations where automatic collection of database s
 | Service                                                       |`Frankfurt (eu-de)`  | `London (eu-gb)` |
 |---------------------------------------------------------------|-------------------|----------------|
 | {{site.data.keyword.appconservicefull}}                    |  `NO`              | ![Checkmark icon](../../icons/checkmark-icon.svg)  |
-{: caption="Table 12. Security services  integration in Europe locations" caption-side="top"}
+{: caption="Table 12. Integration services" caption-side="top"}
 {: #cs-int-table-3}
 {: tab-title="Europe"}
 {: tab-group="cs_int"}
@@ -222,7 +222,7 @@ The following tables list the locations where automatic collection of database s
 | Service                                                         | `Dallas (us-south)` | `Washington (us-east)`                   |
 |-----------------------------------------------------------------|---------------------|--------------------------------------|
 | {{site.data.keyword.loadbalancer_full}} `[1]`                | ![Checkmark icon](../../icons/checkmark-icon.svg)               | `NO`                                 |            
-{: caption="Table 10. Security services integration in America's locations" caption-side="top"}
+{: caption="Table 13. Networking services" caption-side="top"}
 {: #cs-int-table-1}
 {: tab-title="America"}
 {: tab-group="cs_int"}
@@ -232,7 +232,7 @@ The following tables list the locations where automatic collection of database s
 | Service                                                         | `Tokyo (jp-tok)` |`Sydney (au-syd)`           |
 |-----------------------------------------------------------------|----------------|---------------------------|
 | {{site.data.keyword.loadbalancer_full}} `[1]`                  | `NO`    | `NO`  |
-{: caption="Table 11. Security services integration in AP locations" caption-side="top"}
+{: caption="Table 14. Networking services" caption-side="top"}
 {: #cs-int-table-2}
 {: tab-title="Asia Pacific"}
 {: tab-group="cs_int"}
@@ -242,7 +242,7 @@ The following tables list the locations where automatic collection of database s
 | Service                                                       |`Frankfurt (eu-de)`  | `London (eu-gb)` |
 |---------------------------------------------------------------|-------------------|----------------|
 | {{site.data.keyword.loadbalancer_full}} `[1]`               |  `NO`              | `NO`  |
-{: caption="Table 12. Security services  integration in Europe locations" caption-side="top"}
+{: caption="Table 15. Networking services" caption-side="top"}
 {: #cs-int-table-3}
 {: tab-title="Europe"}
 {: tab-group="cs_int"}
@@ -260,7 +260,7 @@ The following tables list the locations where automatic collection of security s
 | Service                                                         | `Dallas (us-south)` | `Washington (us-east)`                   |
 |-----------------------------------------------------------------|---------------------|--------------------------------------|
 | {{site.data.keyword.cloudcerts_full_notm}}                      | ![Checkmark icon](../../icons/checkmark-icon.svg)               | `NO`                                 |            
-{: caption="Table 13. Security services integration in America's locations" caption-side="top"}
+{: caption="Table 16. Security services" caption-side="top"}
 {: #cs-sec-table-1}
 {: tab-title="America"}
 {: tab-group="cs_sec"}
@@ -270,7 +270,7 @@ The following tables list the locations where automatic collection of security s
 | Service                                                         | `Tokyo (jp-tok)` |`Sydney (au-syd)`           |
 |-----------------------------------------------------------------|----------------|---------------------------|
 | {{site.data.keyword.cloudcerts_full_notm}}                      | ![Checkmark icon](../../icons/checkmark-icon.svg)            | ![Checkmark icon](../../icons/checkmark-icon.svg) |
-{: caption="Table 14. Security services integration in AP locations" caption-side="top"}
+{: caption="Table 17. Security services" caption-side="top"}
 {: #cs-sec-table-2}
 {: tab-title="Asia Pacific"}
 {: tab-group="cs_sec"}
@@ -280,7 +280,7 @@ The following tables list the locations where automatic collection of security s
 | Service                                                       |`Frankfurt (eu-de)`  | `London (eu-gb)` |
 |---------------------------------------------------------------|-------------------|----------------|
 | {{site.data.keyword.cloudcerts_full_notm}}                    | ![Checkmark icon](../../icons/checkmark-icon.svg)               | ![Checkmark icon](../../icons/checkmark-icon.svg) |
-{: caption="Table 15. Security services  integration in Europe locations" caption-side="top"}
+{: caption="Table 18. Security services" caption-side="top"}
 {: #cs-sec-table-3}
 {: tab-title="Europe"}
 {: tab-group="cs_sec"}
@@ -333,7 +333,7 @@ The followinf locations are valid for VPC Gen 1 and VPC Gen 2:
 | Service                                                         | `Dallas (us-south)` | `Washington (us-east)`                   |
 |-----------------------------------------------------------------|---------------------|--------------------------------------|
 | {{site.data.keyword.iva_full_notm}}                                  | ![Checkmark icon](../../icons/checkmark-icon.svg)               | `Logs are available through the Log Analysis Dallas instance` |  
-{: caption="Table 16. Security services integration in America's locations" caption-side="top"}
+{: caption="Table 16. Watson AI in America's locations" caption-side="top"}
 {: #cs-sec-table-1}
 {: tab-title="America"}
 {: tab-group="cs_sec"}
@@ -343,7 +343,7 @@ The followinf locations are valid for VPC Gen 1 and VPC Gen 2:
 | Service                                                         | `Tokyo (jp-tok)` |`Sydney (au-syd)`           |
 |-----------------------------------------------------------------|----------------|---------------------------|
 | {{site.data.keyword.iva_full_notm}}                                                | `NO`            | `NO` |
-{: caption="Table 17. Security services integration in AP locations" caption-side="top"}
+{: caption="Table 17. Watson AI in AP locations" caption-side="top"}
 {: #cs-sec-table-2}
 {: tab-title="Asia Pacific"}
 {: tab-group="cs_sec"}
@@ -353,7 +353,7 @@ The followinf locations are valid for VPC Gen 1 and VPC Gen 2:
 | Service                                                       |`Frankfurt (eu-de)`  | `London (eu-gb)` |
 |---------------------------------------------------------------|-------------------|----------------|
 | {{site.data.keyword.iva_full_notm}}                           | `NO`  |  `NO` |
-{: caption="Table 18. Security services  integration in Europe locations" caption-side="top"}
+{: caption="Table 18. Watson AI in Europe locations" caption-side="top"}
 {: #cs-sec-table-3}
 {: tab-title="Europe"}
 {: tab-group="cs_sec"}

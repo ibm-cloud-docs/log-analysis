@@ -129,7 +129,7 @@ The following table lists Cloud services that send logs to {{site.data.keyword.l
 | Service     | Description | More info about the integration with {{site.data.keyword.la_full_notm}} |
 |-------------|-------------|-------------------------------------------------------------------------|
 | [{{site.data.keyword.cloudcerts_full_notm}}](/docs/certificate-manager?topic=certificate-manager-about-certificate-manager#about-certificate-manager) | You can use {{site.data.keyword.cloudcerts_short}} to manage the SSL certificates for your {{site.data.keyword.cloud_notm}}-based apps and services.  | [More info](/docs/certificate-manager?topic=certificate-manager-log_events) |
-{: caption="List of security Cloud services" caption-side="top"} 
+{: caption="Table 6. List of security Cloud services" caption-side="top"} 
 
 You can monitor logs through the {{site.data.keyword.la_short}} instance that is configured to receive platform services logs in the location where the service is running. 
 {: note}
@@ -146,7 +146,7 @@ The following table lists Cloud services that send logs to {{site.data.keyword.l
 | Service     | Description | More info about the integration with {{site.data.keyword.la_full_notm}} |
 |-------------|-------------|-------------------------------------------------------------------------|
 | [{{site.data.keyword.loadbalancer_full}}](/docs/loadbalancer-service?topic=loadbalancer-service-getting-started) | Use this service to improve availability of business-critical applications by distributing traffic among multiple application server instances, and by forwarding traffic to healthy instances only. | [More info](/docs/loadbalancer-service?topic=loadbalancer-service-data-logging)
-{: caption="List of security networking services" caption-side="top"} 
+{: caption="Table 7. List of security networking services" caption-side="top"} 
 
 
 ## VPC infrastructure
@@ -164,7 +164,7 @@ The following table lists VPC infrastructure services that send metrics to {{sit
 | Service     | Description |Events             |
 |-------------|-------------|-------------------|
 | `VPN`| Use this service to connect private networks in a secure fashion. You can use VPN to set up an IPsec site-to-site tunnel between your VPC and your on-premise private network or another VPC. | [More info](/docs/vpc?topic=vpc-using-logdna-to-view-vpn-logs) |
-{: caption="List of VPC infrastructure services (generation 2)" caption-side="top"} 
+{: caption="Table 8. List of VPC infrastructure services (generation 2)" caption-side="top"} 
 {: #vpc-table-2}
 {: tab-title="VPC Gen 2"}
 {: tab-group="VPC"}
@@ -174,7 +174,7 @@ The following table lists VPC infrastructure services that send metrics to {{sit
 | Service     | Description |Events             |
 |-------------|-------------|-------------------|
 | [VPN](/docs/vpc-on-classic-network?topic=vpc-on-classic-network---using-vpn-with-your-vpc)| Use this service to connect private networks in a secure fashion. You can use VPN to set up an IPsec site-to-site tunnel between your VPC and your on-premise private network or another VPC. | [More info](/docs/vpc-on-classic-network?topic=vpc-on-classic-network-using-logdna-to-view-vpn-logs) |
-{: caption="List of VPC infrastructure services (generation 1)" caption-side="top"} 
+{: caption="Table 9. List of VPC infrastructure services (generation 1)" caption-side="top"} 
 {: #vpc-table-1}
 {: tab-title="VPC Classic Gen 1"}
 {: tab-group="VPC"}
@@ -192,7 +192,7 @@ The following table lists Cloud services that send logs to {{site.data.keyword.l
 | Service     | Description | More info about the integration with {{site.data.keyword.la_full_notm}} |
 |-------------|-------------|-------------------------------------------------------------------------|
 | [{{site.data.keyword.iva_full_notm}} ](/docs/voice-agent?topic=voice-agent-getting-started) | You can {{site.data.keyword.iva_full_notm}} to integrate a set of orchestrated Watson services with the telephone network by using the Session Initiation Protocol (SIP).   | [More info](/docs/voice-agent?topic=voice-agent-log-analysis-integration) |
-{: caption="Table 7. List of Watson AI Cloud services" caption-side="top"} 
+{: caption="Table 10. List of Watson AI Cloud services" caption-side="top"} 
 
 To see the list of {{site.data.keyword.la_full_notm}} locations where these services send logs, see [Watson AI services](/docs/Log-Analysis-with-LogDNA?topic=LogDNA-cloud_services_locations#cloud_services_locations_watson_ai).
 
