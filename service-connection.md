@@ -100,6 +100,8 @@ The {{site.data.keyword.la_full_notm}} service offers the following private endp
 | `Washington (us-east)`   | `https://api.private.us-east.logging.cloud.ibm.com`     |
 {: caption="Table 1. Lists of private API endpoints for interacting with {{site.data.keyword.la_full_notm}} over {{site.data.keyword.cloud_notm}}'s private network" caption-side="top"}
 
+### Step 3: Configure your LogDNA agent
+{: #endpoint-setup-step3}
 
 You can [configure the LogDNA agent](/docs/Log-Analysis-with-LogDNA?topic=LogDNA-logdna_agent) to use the private network by using a private endpoint as the ingestion URL.
 
@@ -129,7 +131,7 @@ You must allow outgoing traffic on TCP port 443 and TCP port 80 in your firewall
 
 The API endpoint is required for LogDNA agent authentication. The LogDNA agent gets a token that you can use to send logs to the ingestion endpoint.
 
-If you configure the LogDNA agent to connect to the logging instance through the private network, open a support ticket to request the private IP addresses that you must enable in your firewall. For information about opening an IBM support ticket, see [Getting support](/docs/get-support?topic=get-support-getting-customer-support#getting-customer-support).
+If you configure the LogDNA agent to connect to the logging instance through the **private network**, open a support ticket to request the private IP addresses that you must enable in your firewall. For information about opening an IBM support ticket, see [Getting support](/docs/get-support?topic=get-support-getting-customer-support#getting-customer-support).
 {: important}
 
 
