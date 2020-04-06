@@ -58,8 +58,8 @@ The LogDNA web UI is the front-end component where users can monitor and manage 
 
 Each regional deployment of the {{site.data.keyword.la_full_notm}} service serves multiple tenants that are identified by the {{site.data.keyword.IBM_notm}} service instance.
 
-* There is 1 instance of the {{site.data.keyword.la_full_notm}} service per region that is responsible for running user workloads in the region.
-* The logging data that is collected and processed by the {{site.data.keyword.la_full_notm}} service is associated with the LogDNA instance and not visible to the other service instances by virtue of this association.
+* There is 1 {{site.data.keyword.la_full_notm}} service per region that is responsible for running user workloads in the region.
+* The logging data that is collected and processed by the {{site.data.keyword.la_full_notm}} service is associated with that location and not visible to the other regions by virtue of this association.
 * Within a service instance, logging data is isolated per LogDNA instance within a region. 
 * The {{site.data.keyword.la_full_notm}} service offers soft isolation for data storage. Data is mixed together in the same data stores and segmented by tags that are associated with each of the log records to enforce access control policies.
 
