@@ -225,7 +225,7 @@ The following tables list the locations where automatic collection of database s
 {: caption="Table 13. Networking services" caption-side="top"}
 {: #cs-int-table-1}
 {: tab-title="America"}
-{: tab-group="cs_int"}
+{: tab-group="cs_net"}
 {: class="simple-tab-table"}
 {: row-headers}
 
@@ -235,7 +235,7 @@ The following tables list the locations where automatic collection of database s
 {: caption="Table 14. Networking services" caption-side="top"}
 {: #cs-int-table-2}
 {: tab-title="Asia Pacific"}
-{: tab-group="cs_int"}
+{: tab-group="cs_net"}
 {: class="simple-tab-table"}
 {: row-headers}
 
@@ -245,7 +245,7 @@ The following tables list the locations where automatic collection of database s
 {: caption="Table 15. Networking services" caption-side="top"}
 {: #cs-int-table-3}
 {: tab-title="Europe"}
-{: tab-group="cs_int"}
+{: tab-group="cs_net"}
 {: class="simple-tab-table"}
 {: row-headers}
 
