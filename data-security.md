@@ -32,7 +32,7 @@ To ensure that you can securely manage your data when you use {{site.data.keywor
 ### Platform logs
 {: #data-collection-platform}
 
-Log data from {{site.data.keyword.cloud_notm}} services, Cloud Foundry (CF) framework, and CF applications is collected automatically and available for analysis through the web UI. These data is collected and forwarded to the **platform logs instance** in the location where the service is available. [Learn more about the services that send logs to the platform service logs instance](/docs/Log-Analysis-with-LogDNA?topic=LogDNA-cloud_services).
+Log data from {{site.data.keyword.cloud_notm}} services, Cloud Foundry (CF) framework, and CF applications is collected automatically and available for analysis through the web UI. This data is collected and forwarded to the **platform logs instance** in the location where the service is available. [Learn more about the services that send logs to the platform service logs instance](/docs/Log-Analysis-with-LogDNA?topic=LogDNA-cloud_services).
 
 ### LogDNA agent
 {: #data-collection-agent}
