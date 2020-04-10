@@ -70,7 +70,7 @@ You and {{site.data.keyword.IBM_notm}} share responsibilities for keeping {{site
 
 | Task                           | {{site.data.keyword.IBM_notm}} Responsibilities | Your Responsibilities |
 |--------------------------------|-------------------------------------------------|-----------------------|
-| `Applications`  | Provide the ability to restrict access to resouces. | Depending on your needs, restrict access to resources by using Cloud IAM access policies and access settings within the LogDNA UI interface. | 
+| `Applications`  | Provide the ability to restrict access to resouces. | Depending on your needs, restrict access to resources by using Cloud IAM access policies. | 
 {: caption="Table 3. Responsibilities for identity and access management" caption-side="top"}
 
 [Learn more about controlling access through IAM](/docs/Log-Analysis-with-LogDNA?topic=LogDNA-iam).
@@ -99,9 +99,10 @@ You and {{site.data.keyword.IBM_notm}} share responsibilities for keeping {{site
 
 | Task                                                            | {{site.data.keyword.IBM_notm}} Responsibilities | Your Responsibilities |
 |-----------------------------------------------------------------|-------------------------------------------------|-----------------------|
-| `Applications` |Automatically recover and restart service components after any disaster event. | Enable archiving and check archive data is valid. |
+| `Applications` |Automatically recover and restart service components after any disaster event. | Enable archiving and check archive data is valid. </br>Recovery of metadata. |
 {: caption="Table 5. Responsibilities for disaster recovery" caption-side="top"}
 
 
-
+Recovered and restarted service components will not have customer data reloaded.
+{: note}
 
