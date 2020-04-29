@@ -38,18 +38,18 @@ Logs are archived 24 - 48 hours after you save the configuration.
 
 Logs are archived hourly. 
 
-    The name of the file has the following format:
+The name of the file has the following format:
 
-    ```
-    year=YYYY/month=MM/day=DD/<accountID>.<YYYY>-<MM>-<DD>.<HH>00.json.gz 
-    ```
-    {: codeblock}
+```
+year=YYYY/month=MM/day=DD/<accountID>.<YYYY>-<MM>-<DD>.<HH>00.json.gz 
+```
+{: codeblock}
 
-    Where `HH` is hours in 24 format and `accountID` corresponds to the LogDNA instance ID. You can get the LogDNA instance ID from the URL that you get when you launch the LogDNA web UI. 
+Where `HH` is hours in 24 format and `accountID` corresponds to the LogDNA instance ID. You can get the LogDNA instance ID from the URL that you get when you launch the LogDNA web UI. 
 
-    For example, an archive file can have the following name: `2020/03/18/0f6efbewe6.2020-03-18.1800.json.gz`
+For example, an archive file can have the following name: `2020/03/18/0f6efbewe6.2020-03-18.1800.json.gz`
 
-    Logs that are included in a file correspond to the period of time that is indicated as part of the name of the file. 
+Logs that are included in a file correspond to the period of time that is indicated as part of the name of the file. 
 
 * The timestamp that is used to determine whether the log record is included in an archive is the UTC timestamp.
 
