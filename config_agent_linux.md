@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2020
-lastupdated: "2020-03-06"
+lastupdated: "2020-04-28"
 
 keywords: LogDNA, IBM, Log Analysis, logging, config agent
 
@@ -76,6 +76,10 @@ To configure your Ubuntu server to forward logs to your LogDNA instance, complet
 
       </tr>
       <tr>
+        <td>`Chennai (in-che)`</td>
+        <td>`sudo logdna-agent -s export LOGDNA_APIHOST=api.in-che.logging.cloud.ibm.com`</td>
+      </tr>
+      <tr>
         <td>`Dallas (us-south)`</td>
         <td>`sudo logdna-agent -s export LOGDNA_APIHOST=api.us-south.logging.cloud.ibm.com`</td>
       </tr>
@@ -99,6 +103,10 @@ To configure your Ubuntu server to forward logs to your LogDNA instance, complet
         <td>`Sydney (au-syd)`</td>
         <td>`sudo logdna-agent -s export LOGDNA_APIHOST=api.au-syd.logging.cloud.ibm.com`</td>
       </tr>
+      <tr>
+        <td>`Washington (us-east)`</td>
+        <td>`sudo logdna-agent -s export LOGDNA_APIHOST=api.us-east.logging.cloud.ibm.com`</td>
+      </tr>
     </table>
 
 4. Set the ingestion endpoint. Choose the public or the private endpoint in a location.
@@ -109,6 +117,11 @@ To configure your Ubuntu server to forward logs to your LogDNA instance, complet
         <th>Location</th>
         <th>Command (By using public endpoints)</th>
         <th>Command (By using private endpoints)</th>
+      </tr>
+      <tr>
+        <td>`Chennai (in-che)`</td>
+        <td>`sudo logdna-agent -s LOGDNA_LOGHOST=logs.in-che.logging.cloud.ibm.com`</td>
+        <td>`sudo logdna-agent -s LOGDNA_LOGHOST=logs.private.in-che.logging.cloud.ibm.com` </br></br>`export LDLOGHOST=logs.private.in-che.logging.cloud.ibm.com`</td>
       </tr>
       <tr>
         <td>`Dallas (us-south)`</td>
@@ -139,6 +152,11 @@ To configure your Ubuntu server to forward logs to your LogDNA instance, complet
         <td>`Sydney (au-syd)`</td>
         <td>`sudo logdna-agent -s LOGDNA_LOGHOST=logs.au-syd.logging.cloud.ibm.com`</td>
         <td>`sudo logdna-agent -s LOGDNA_LOGHOST=logs.private.au-syd.logging.cloud.ibm.com` </br></br>`export LDLOGHOST=logs.private.au-syd.logging.cloud.ibm.com`</td>
+      </tr>
+      <tr>
+        <td>`Washington (us-east)`</td>
+        <td>`sudo logdna-agent -s LOGDNA_LOGHOST=logs.us-east.logging.cloud.ibm.com`</td>
+        <td>`sudo logdna-agent -s LOGDNA_LOGHOST=logs.private.us-east.logging.cloud.ibm.com` </br></br>`export LDLOGHOST=logs.private.us-east.logging.cloud.ibm.com`</td>
       </tr>
     </table>
 
