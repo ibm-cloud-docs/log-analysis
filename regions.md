@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2020
-lastupdated: "2020-03-18"
+lastupdated: "2020-04-28"
 
 keywords: LogDNA, IBM, Log Analysis, logging instance, regions
 
@@ -38,6 +38,7 @@ The following table lists the locations where the service is available:
 
 | Geography             | Region                   | EU-Supported | HA Status |
 |-----------------------|--------------------------|--------------|-----------|
+| `Asia Pacific`        | `Chennai (in-che)`       | `N/A`        | `SZR`     |
 | `Asia Pacific`        | `Tokyo (jp-tok)`         | `N/A`        | `MZR`     |
 | `Asia Pacific`        | `Seoul (kr-seo)`         | `N/A`        | `SZR`     |
 | `Asia Pacific`        | `Sydney (au-syd)`        | `N/A`        | `MZR`     |

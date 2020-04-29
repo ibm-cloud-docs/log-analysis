@@ -68,5 +68,3 @@ You can use {{site.data.keyword.cloud_notm}} Identity and Access Management (IAM
 * To grant access to manage the LogDNA logging instance and its resources, you can assign service roles that define users levels of access for viewing data and managing features such as dashboards, screens, and alerts.
 
 
-Rotating this key will decommission the current key so that it's no longer usable for encryption purposes. Your new key will retain the same name and ID in the Key Protect service dashboard.
-
