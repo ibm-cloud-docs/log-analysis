@@ -34,11 +34,10 @@ Review the following sections for the specific responsibilities for you and for 
 ## Incident and operations management
 {: #incident-and-ops}
 
-You and {{site.data.keyword.IBM_notm}} share responsibilities for the set up and maintenance of your {{site.data.keyword.la_full_notm}} service instance and infrastructure workloads. You are responsible for incident and operations management of your data.
-{: note}
 
 | Task              | {{site.data.keyword.IBM_notm}} Responsibilities | Your Responsibilities |
 |-------------------|-------------------------------------------------|-----------------------|
+| `Incident and operations management` | Maintain {{site.data.keyword.la_full_notm}} service instances and infrastructure workloads. | Maintain incident and operations management of your data. |
 | `Monitor incidents`  | Provide notifications for planned maintenance, security bulletins, or unplanned outages. | Set preferences to [receive emails about platform notifications](/docs/overview?topic=overview-ui#email-prefsl). </br>Monitor the [IBM Cloud status page](https://{DomainName}/status?selected=announcement) for general announcements. |
 | `Maintain {{site.data.keyword.cloud_notm}} high availability SLA`  | Provide Cloud Service across availability zones in a Multi-Zone Region (MZR). </br> Provide Cloud Service across hosts in a Single-Zone Region (SZR). </br>Provides replication, fail-over features, and infrastructure maintenance and updates. | Use the [list of available regions](/docs/Log-Analysis-with-LogDNA?topic=LogDNA-regions) to plan for and create new instances of the service. |
 | `Monitor platform logs`  | [Participating Cloud services](/docs/Log-Analysis-with-LogDNA?topic=LogDNA-cloud_services) publish relevant log data to their subscribing clients. {{site.data.keyword.la_full_notm}} provides clients with the ability to receive the logs once the client configures their instance. | [Create an {{site.data.keyword.la_full_notm}} instance](/docs/Log-Analysis-with-LogDNA?topic=LogDNA-provision) in each region where Cloud service subscriptions publish logs. </br>[Configure 1 instance in each of those regions to received the published logs](/docs/Log-Analysis-with-LogDNA?topic=LogDNA-config_svc_logs). |
@@ -53,8 +52,6 @@ You and {{site.data.keyword.IBM_notm}} share responsibilities for the set up and
 ## Change management
 {: #change-management}
 
-You and {{site.data.keyword.IBM_notm}} share responsibilities for keeping {{site.data.keyword.la_full_notm}} service components at the latest version. You are responsible for change management of your LogDNA agents, dashboards, screens, views, and alert definitions.
-{: note}
 
 | Task                                                    | {{site.data.keyword.IBM_notm}} Responsibilities | Your Responsibilities |
 |---------------------------------------------------------|-----------------------|--------|
@@ -66,12 +63,10 @@ You and {{site.data.keyword.IBM_notm}} share responsibilities for keeping {{site
 ## Identity and access management
 {: #iam-responsibilities}
 
-{{site.data.keyword.IBM_notm}} is responsible for the security and compliance of {{site.data.keyword.la_full_notm}}. You are responsible for defining the {{site.data.keyword.cloud_notm}} Identity and Access Management (IAM) policies to control which users within your account have access to the logging data.
-{: note}
 
 | Task                           | {{site.data.keyword.IBM_notm}} Responsibilities | Your Responsibilities |
 |--------------------------------|-------------------------------------------------|-----------------------|
-| `Manage permissions`           | Provide the ability to restrict access to resouces. | Depending on your needs, restrict access to resources by using Cloud IAM access policies. </br>[Learn more about controlling access through IAM](/docs/Log-Analysis-with-LogDNA?topic=LogDNA-iam). | 
+| `Manage permissions`           | Provide the ability to restrict access to resouces. </br>{{site.data.keyword.IBM_notm}} is responsible for the security and compliance of {{site.data.keyword.la_full_notm}}. | Restrict access to resources by using Cloud IAM access policies by defining IAM policies to control which users within your account have access to the logging data. </br>[Learn more about controlling access through IAM](/docs/Log-Analysis-with-LogDNA?topic=LogDNA-iam). | 
 {: caption="Table 3. Responsibilities for identity and access management" caption-side="top"}
 
 
@@ -81,8 +76,6 @@ You and {{site.data.keyword.IBM_notm}} share responsibilities for keeping {{site
 ## Security and regulation compliance
 {: #security-compliance}
 
-{{site.data.keyword.IBM_notm}} is responsible for the security and compliance of {{site.data.keyword.la_full_notm}}. You are responsible for ensuring that logs, that contain regulated data, are not provided to the {{site.data.keyword.la_full_notm}} service.
-{: note}
 
 | Task                                       | {{site.data.keyword.IBM_notm}} Responsibilities | Your Responsibilities |
 |--------------------------------------------|-------------------------------------------------|-----------------------|
@@ -94,8 +87,6 @@ You and {{site.data.keyword.IBM_notm}} share responsibilities for keeping {{site
 ## Disaster recovery
 {: #disaster-recovery}
 
-{{site.data.keyword.IBM_notm}} is responsible for the recovery of {{site.data.keyword.la_full_notm}} components in case of disaster. You are responsible for the recovery of the LogDNA agents running in your environment should they be impacted by a disaster, and the resources to manage metadata like views, dashboards, screens, parsing templates, and alerts.
-{: note}
 
 | Task                                                            | {{site.data.keyword.IBM_notm}} Responsibilities | Your Responsibilities |
 |-----------------------------------------------------------------|-------------------------------------------------|-----------------------|
@@ -110,4 +101,5 @@ You and {{site.data.keyword.IBM_notm}} share responsibilities for keeping {{site
 
 `[*]` Recovered and restarted service components will not have customer data reloaded.
 {: note}
+
 
