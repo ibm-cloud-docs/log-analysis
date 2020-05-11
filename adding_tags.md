@@ -21,7 +21,7 @@ subcollection: LogDNA
 {:important: .important}
 {:note: .note}
 
-# Configuring a LogDNA agent by using tags
+# Grouping data by using tags
 {: #adding_tags}
 
 Configure a LogDNA agent to associate tags to all log records that it collects so that you can identify the agent's data quicker in the LogDNA web UI.
