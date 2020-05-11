@@ -167,7 +167,7 @@ To stop your Kubernetes cluster from sending logs to your {{site.data.keyword.la
 
 
 ## LogDNA agent image
-{: #logdna_agent_image}
+{: #logdna_agent_image_ov}
 
 When you use the {{site.data.keyword.la_full}}, LogDNA agent images are public images that are available in {{site.data.keyword.cloud_notm}} through the [{{site.data.keyword.registrylong_notm}}](/docs/Registry?topic=registry-getting-started) service.
 
