@@ -51,12 +51,11 @@ For example, an archive file can have the following name: `2020/03/18/0f6efbewe6
 
 Logs that are included in a file correspond to the period of time that is indicated as part of the name of the file. 
 
-* The timestamp that is used to determine whether the log record is included in an archive is the UTC timestamp.
+The timestamp that is used to determine whether the log record is included in an archive is the UTC timestamp. Notice that depending on your location, there might be logs that you see in local time in your views on a specific day. However, you cannot find them on the archive file. You are most likely viewing logs in local time and the archive process uses the UTC timestamp.
 
-    Notice that depending on your location, there might be logs that you see in local time in your views on a specific day. However, you cannot find them on the archive file. You are most likely viewing logs in local time and the archive process uses the UTC timestamp.
+After you configure archiving, the first archive file is created when the archiving process runs and there is data.
 
-* After you configure archiving, the first archive file is created when the archiving process runs and there is data.
-* The first time the archive process runs, consider the following information:
+The first time the archive process runs, consider the following information:
 
     * The maximum number of days that data is archived includes logs for the past 30 days when the instance has a `30 day Log search` plan.
 

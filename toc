@@ -6,8 +6,6 @@ IBM Log Analysis with LogDNA
 
     {: .navgroup id="learn"}
     getting-started.md
-    data.md
-    logdna_agent.md
 
     {: .topicgroup}
     Cloud services
@@ -16,10 +14,16 @@ IBM Log Analysis with LogDNA
         monitor_cfapp_logs.md
 
     {: .topicgroup}
+    Enhancing security for IBM Log Analysis with LogDNA
+        data-security.md
+        iam.md
+        service-connection.md
+
+    logdna_agent.md
+    
+    {: .topicgroup}
     Security and Compliance
         adoption.md
-        iam.md
-        network.md
         manage_eu_logs.md
 
     {: .topicgroup}

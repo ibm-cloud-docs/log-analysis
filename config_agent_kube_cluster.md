@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2020
-lastupdated: "2020-04-28"
+lastupdated: "2020-05-11"
 
 keywords: LogDNA, IBM, Log Analysis, logging, config agent
 
@@ -21,7 +21,7 @@ subcollection: LogDNA
 {:important: .important}
 {:note: .note}
 
-# Configuring a LogDNA agent for a standard Kubernetes cluster
+# Connecting a LogDNA agent to a standard Kubernetes cluster
 {: #config_agent_kube_cluster}
 
 The LogDNA agent is responsible for collecting and forwarding logs to your {{site.data.keyword.la_full_notm}} instance. After you provision an instance of {{site.data.keyword.la_full}}, you must configure a LogDNA agent for each log source that you want to monitor.
@@ -113,9 +113,12 @@ You must enable virtual routing and forwarding (VRF) and connectivity to service
 
 Create a Kubernetes daemonset to deploy the LogDNA agent on every worker node of your Kubernetes cluster. 
 
-The LogDNA agent collects logs with the extension `*.log` and extensionsless files that are stored in the `/var/log` directory of your pod. By default, logs are collected from all namespaces, including `kube-system`, and automatically forwarded to the {{site.data.keyword.la_full_notm}} service.
+The LogDNA agent collects STDOUT, STDERR, logs with the extension `*.log`, and extensionsless files that are stored in the `/var/log` directory of your pod. By default, logs are collected from all namespaces, including `kube-system`, and automatically forwarded to the {{site.data.keyword.la_full_notm}} service.
 
-Choose one of the following commands:
+### LogDNA agent V1
+{: #config_agent_kube_cluster_step4_V1}
+
+Choose one of the following commands to install and configure the LogDNA agent version 1:
 
 | Location                  | Command (By using public endpoints)               | 
 |--------------------------|----------------------------------------------------|
@@ -144,8 +147,8 @@ Choose one of the following commands:
 | `Seoul (kr-seo)`         | `kubectl create -f https://assets.kr-seo.logging.cloud.ibm.com/clients/logdna-agent-ds-private.yaml -n ibm-observe` |
 | `Sydney (au-syd)`        | `kubectl create -f https://assets.au-syd.logging.cloud.ibm.com/clients/logdna-agent-ds-private.yaml -n ibm-observe`       |
 | `Washington (us-east)`   | `kubectl create -f https://assets.us-east.logging.cloud.ibm.com/clients/logdna-agent-ds-private.yaml -n ibm-observe`      |
-{: caption="Table 1. Commands by location when you use private endpoints" caption-side="top"}
-{: #end-api-table-1}
+{: caption="Table 2. Commands by location when you use private endpoints" caption-side="top"}
+{: #end-api-table-2}
 {: tab-title="Command (By using private endpoints)"}
 {: tab-group="agent"}
 {: class="simple-tab-table"}
