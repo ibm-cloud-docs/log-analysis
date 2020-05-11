@@ -24,7 +24,7 @@ subcollection: LogDNA
 # Getting information about LogDNA agent images 
 {: #logdna_agent_image}
 
-When you use the {{site.data.keyword.la_full}}, LogDNA agent images are public images that are available in {{site.data.keyword.cloud_notm}} through the [{{site.data.keyword.registrylong_notm}}](/docs/Registry?topic=registry-getting-started) service.
+LogDNA agent images are public images that are available in {{site.data.keyword.cloud_notm}} through the [{{site.data.keyword.registrylong_notm}}](/docs/Registry?topic=registry-getting-started) service.
 {:shortdesc}
 
 You can access the images that are provided by {{site.data.keyword.IBM}} by using the command line.
