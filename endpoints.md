@@ -99,6 +99,7 @@ The following table shows the ingestion endpoints:
 | `Frankfurt (eu-de)`      | `https://logs.eu-de.logging.cloud.ibm.com`          |
 | `London (eu-gb)`         | `https://logs.eu-gb.logging.cloud.ibm.com`          |
 | `Tokyo (jp-tok)`         | `https://logs.jp-tok.logging.cloud.ibm.com`         |
+| `Seoul (kr-seo)`         | `https://logs.kr-seo.logging.cloud.ibm.com`    |
 | `Sydney (au-syd)`        | `https://logs.au-syd.logging.cloud.ibm.com`         |
 | `Washington (us-east)`   | `https://logs.us-east.logging.cloud.ibm.com`       |
 {: caption="Table 3. Lists of public ingestion endpoints for interacting with {{site.data.keyword.la_full_notm}} over {{site.data.keyword.cloud_notm}}'s public network" caption-side="top"}
