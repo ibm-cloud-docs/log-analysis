@@ -12,6 +12,14 @@ IBM Log Analysis with LogDNA
         cloud_services.md
         cloud_services_locations.md
 
+    {: .topicgroup}
+    Enhancing security for IBM Log Analysis with LogDNA
+        data-security.md
+        iam.md
+        ha-dr.md
+        service-connection.md
+        architecture-workload-isolation.md
+
     logdna_agent.md
 
     {: .topicgroup}
@@ -46,14 +54,6 @@ IBM Log Analysis with LogDNA
         work_iam.md
         ingestion_key.md
         reuse_resource_definitions.md
-
-    {: .topicgroup}
-    Enhancing security for IBM Log Analysis with LogDNA
-        data-security.md
-        iam.md
-        ha-dr.md
-        service-connection.md
-        architecture-workload-isolation.md
 
     {: .topicgroup}
     LogDNA agent
