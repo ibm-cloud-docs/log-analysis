@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2020
-lastupdated: "2020-03-06"
+lastupdated: "2020-05-11"
 
 keywords: LogDNA, IBM, Log Analysis, logging, config agent
 
@@ -21,7 +21,7 @@ subcollection: LogDNA
 {:important: .important}
 {:note: .note}
 
-# Configuring a LogDNA agent for an OpenShift Kubernetes cluster
+# Connecting a LogDNA agent to an OpenShift Kubernetes cluster
 {: #config_agent_os_cluster}
 
 The LogDNA agent is responsible for collecting and forwarding logs to your {{site.data.keyword.la_full_notm}} instance. After you provision an instance of {{site.data.keyword.la_full}}, you must configure a LogDNA agent for each log source that you want to monitor.
@@ -184,116 +184,44 @@ Create a Kubernetes daemon set to deploy the LogDNA agent on every worker node o
 
 The LogDNA agent collects logs with the extension `*.log` and extensionsless files that are stored in the `/var/log` directory of your pod. By default, logs are collected from all namespaces, including `kube-system`, and automatically forwarded to the {{site.data.keyword.la_full_notm}} service.
 
-Use the following yaml file to create the `logdna-agent-ds-os.yaml` file:
+### LogDNA agent V1
+{: #config_agent_kube_cluster_step4_V1}
 
-Replace `region` with the value of the location where the LogDNA instance is available. For example, for US South, region is set to `us-south`. If you use private endpoints, set `LDAPIHOST` to `api.private.<region>.logging.cloud.ibm.com` and `LDLOGHOST` to `logs.private.<region>.logging.cloud.ibm.com`.
-{: note}
+Choose one of the following commands to install and configure the LogDNA agent version 1:
 
-```yaml
-apiVersion: extensions/v1beta1
-kind: DaemonSet
-metadata:
-  creationTimestamp: null
-  generation: 4
-  labels:
-    app: logdna-agent
-  name: logdna-agent
-spec:
-  selector:
-    matchLabels:
-      app: logdna-agent
-  template:
-    metadata:
-      creationTimestamp: null
-      labels:
-        app: logdna-agent
-    spec:
-      containers:
-      - env:
-        - name: LOGDNA_AGENT_KEY
-          valueFrom:
-            secretKeyRef:
-              name: logdna-agent-key
-              key: logdna-agent-key
-        - name: LDAPIHOST
-          value: api.<region>.logging.cloud.ibm.com
-        - name: LDLOGHOST
-          value: logs.<region>.logging.cloud.ibm.com
-        - name: LOGDNA_PLATFORM
-          value: k8s
-        - name: USEJOURNALD
-          value: stream
-        - name: LOGDNA_TAGS
-          value: openshift
-        image: logdna/logdna-agent:latest
-        imagePullPolicy: Always
-        name: logdna-agent
-        resources:
-          limits:
-            memory: 500Mi
-        securityContext:
-          privileged: true
-        terminationMessagePath: /dev/termination-log
-        terminationMessagePolicy: File
-        volumeMounts:
-        - mountPath: /var/log
-          name: varlog
-        - mountPath: /var/data/kubeletlogs
-          name: kubeletlogs
-        - mountPath: /var/lib/docker/containers
-          name: varlibdockercontainers
-          readOnly: true
-        - mountPath: /mnt
-          name: mnt
-          readOnly: true
-        - mountPath: /var/run/docker.sock
-          name: docker
-        - mountPath: /etc/os-release
-          name: osrelease
-        - mountPath: /etc/logdna-hostname
-          name: logdnahostname
-      dnsPolicy: ClusterFirst
-      restartPolicy: Always
-      schedulerName: default-scheduler
-      securityContext: {}
-      serviceAccount: logdna-agent
-      serviceAccountName: logdna-agent
-      terminationGracePeriodSeconds: 30
-      volumes:
-      - hostPath:
-          path: /var/log
-        name: varlog
-      - hostPath:
-          path: /var/data/kubeletlogs
-        name: kubeletlogs
-      - hostPath:
-          path: /var/lib/docker/containers
-        name: varlibdockercontainers
-      - hostPath:
-          path: /mnt
-        name: mnt
-      - hostPath:
-          path: /var/run/docker.sock
-        name: docker
-      - hostPath:
-          path: /etc/os-release
-        name: osrelease
-      - hostPath:
-          path: /etc/hostname
-        name: logdnahostname
-  updateStrategy:
-    type: OnDelete
-```
-{: codeblock}
+| Location                  | Command (By using public endpoints)               | 
+|--------------------------|----------------------------------------------------|
+| `Chennai (in-che)`       | `kubectl create -f https://assets.in-che.logging.cloud.ibm.com/clients/logdna-agent-ds-os.yaml -n ibm-observe`       |
+| `Dallas (us-south)`      | `kubectl create -f https://assets.us-south.logging.cloud.ibm.com/clients/logdna-agent-ds-os.yaml -n ibm-observe`       |
+| `Frankfurt (eu-de)`      | `kubectl create -f https://assets.eu-de.logging.cloud.ibm.com/clients/logdna-agent-ds-os.yaml -n ibm-observe`         |
+| `London (eu-gb)`         | `kubectl create -f https://assets.eu-gb.logging.cloud.ibm.com/clients/logdna-agent-ds-os.yaml -n ibm-observe`          |
+| `Tokyo (jp-tok)`         | `kubectl create -f https://assets.jp-tok.logging.cloud.ibm.com/clients/logdna-agent-ds-os.yaml -n ibm-observe`       |
+| `Seoul (kr-seo)`         | `kubectl create -f https://assets.kr-seo.logging.cloud.ibm.com/clients/logdna-agent-ds-os.yaml -n ibm-observe` |
+| `Sydney (au-syd)`        | `kubectl create -f https://assets.au-syd.logging.cloud.ibm.com/clients/logdna-agent-ds-os.yaml -n ibm-observe`        |
+| `Washington (us-east)`   | `kubectl create -f https://assets.us-east.logging.cloud.ibm.com/clients/logdna-agent-ds-os.yaml -n ibm-observe`       |
+{: caption="Table 1. Commands by location when you use public endpoints" caption-side="top"}
+{: #end-api-table-1}
+{: tab-title="Command (By using public endpoints)"}
+{: tab-group="agent"}
+{: class="simple-tab-table"}
+{: row-headers}
 
-
-Then, create the deamon set:
-        
-```
-oc create -f logdna-agent-ds-os.yaml -n ibm-observe
-```
-{: pre}
-
+| Location                  | Command (By using private endpoints)               | 
+|--------------------------|----------------------------------------------------|
+| `Chennai (in-che)`       | `kubectl create -f https://assets.in-che.logging.cloud.ibm.com/clients/logdna-agent-ds-os-private.yaml -n ibm-observe`       |
+| `Dallas (us-south)`      | `kubectl create -f https://assets.us-south.logging.cloud.ibm.com/clients/logdna-agent-ds-os-private.yaml -n ibm-observe`      |
+| `Frankfurt (eu-de)`      | `kubectl create -f https://assets.eu-de.logging.cloud.ibm.com/clients/logdna-agent-ds-os-private.yaml -n ibm-observe`          |
+| `London (eu-gb)`         | `kubectl create -f https://assets.eu-gb.logging.cloud.ibm.com/clients/logdna-agent-ds-os-private.yaml -n ibm-observe`       |
+| `Tokyo (jp-tok)`         | `kubectl create -f https://assets.jp-tok.logging.cloud.ibm.com/clients/logdna-agent-ds-os-private.yaml -n ibm-observe`        |
+| `Seoul (kr-seo)`         | `kubectl create -f https://assets.kr-seo.logging.cloud.ibm.com/clients/logdna-agent-ds-os-private.yaml -n ibm-observe` |
+| `Sydney (au-syd)`        | `kubectl create -f https://assets.au-syd.logging.cloud.ibm.com/clients/logdna-agent-ds-os-private.yaml -n ibm-observe`       |
+| `Washington (us-east)`   | `kubectl create -f https://assets.us-east.logging.cloud.ibm.com/clients/logdna-agent-ds-os-private.yaml -n ibm-observe`      |
+{: caption="Table 2. Commands by location when you use private endpoints" caption-side="top"}
+{: #end-api-table-2}
+{: tab-title="Command (By using private endpoints)"}
+{: tab-group="agent"}
+{: class="simple-tab-table"}
+{: row-headers}
 
 
 ## Step 5. Verify that the LogDNA agent is deployed successfully

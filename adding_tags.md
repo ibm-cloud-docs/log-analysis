@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2020
-lastupdated: "2020-03-06"
+lastupdated: "2020-05-11"
 
 keywords: LogDNA, IBM, Log Analysis, logging, config agent
 
@@ -21,14 +21,17 @@ subcollection: LogDNA
 {:important: .important}
 {:note: .note}
 
-# Adding tags at the LogDNA agent level
+# Configuring a LogDNA agent by using tags
 {: #adding_tags}
 
-You can configure tags at the LogDNA agent level so that all lines that are sent by this agent can be grouped automatically into a group when you filter data in a view.
+Configure a LogDNA agent to associate tags to all log records that it collects so that you can identify the agent's data quicker in the LogDNA web UI.
 {:shortdesc}
 
-You can define multiple tags. You separate tags by using commas. The maximum number of characters that you can set to define multiple tags is 80 characters.
-{: note}
+* You can define multiple tags per LogDNA agent. 
+* You separate tags by using commas. 
+* The maximum number of characters that you can set to define multiple tags is 80 characters.
+* You can view the tags per log record.
+* You can filter data by using one or more tags through the *All Tags* menu in the LogDNA web UI.
 
 
 ## Adding tags to logs from a Kubernetes cluster

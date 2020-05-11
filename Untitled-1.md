@@ -21,15 +21,15 @@ subcollection: LogDNA
 {:important: .important}
 {:note: .note}
 
-# Connecting a LogDNA agent to a standard Kubernetes cluster
-{: #config_agent_kube_cluster}
+# Update a LogDNA agent for a standard Kubernetes cluster
+{: #update_agent_kube_cluster}
 
 The LogDNA agent is responsible for collecting and forwarding logs to your {{site.data.keyword.la_full_notm}} instance. After you provision an instance of {{site.data.keyword.la_full}}, you must configure a LogDNA agent for each log source that you want to monitor.
 {:shortdesc}
 
-To configure your Kubernetes cluster to send logs to your {{site.data.keyword.la_full_notm}} instance, you must install a *logdna-agent* pod on each node of your cluster. The LogDNA agent reads log files from the pod where it is installed, and forwards the log data to your LogDNA instance.
 
-Complete the following steps from the command line to configure your Kubernetes cluster to forward logs to your LogDNA instance:
+
+Complete the following steps from the command line to update the LogDNA agent version of your Kubernetes cluster:
 
 
 ## Prereq
@@ -147,8 +147,8 @@ Choose one of the following commands to install and configure the LogDNA agent v
 | `Seoul (kr-seo)`         | `kubectl create -f https://assets.kr-seo.logging.cloud.ibm.com/clients/logdna-agent-ds-private.yaml -n ibm-observe` |
 | `Sydney (au-syd)`        | `kubectl create -f https://assets.au-syd.logging.cloud.ibm.com/clients/logdna-agent-ds-private.yaml -n ibm-observe`       |
 | `Washington (us-east)`   | `kubectl create -f https://assets.us-east.logging.cloud.ibm.com/clients/logdna-agent-ds-private.yaml -n ibm-observe`      |
-{: caption="Table 2. Commands by location when you use private endpoints" caption-side="top"}
-{: #end-api-table-2}
+{: caption="Table 1. Commands by location when you use private endpoints" caption-side="top"}
+{: #end-api-table-1}
 {: tab-title="Command (By using private endpoints)"}
 {: tab-group="agent"}
 {: class="simple-tab-table"}

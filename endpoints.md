@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2020
-lastupdated: "2020-03-06"
+lastupdated: "2020-05-11"
 
 keywords: LogDNA, IBM, Log Analysis, logging, config agent
 
@@ -52,6 +52,7 @@ The following table shows the API endpoints:
 
 | Region                   |  Public Endpoint                                   |
 |--------------------------|----------------------------------------------------|
+| `Chennai (in-che)`       | `https://api.in-che.logging.cloud.ibm.com`         |
 | `Dallas (us-south)`      | `https://api.us-south.logging.cloud.ibm.com`       |
 | `Frankfurt (eu-de)`      | `https://api.eu-de.logging.cloud.ibm.com`          |
 | `London (eu-gb)`         | `https://api.eu-gb.logging.cloud.ibm.com`          |
@@ -68,6 +69,7 @@ The following table shows the API endpoints:
 
 | Region                   | Private Endpoint                                       |
 |--------------------------|--------------------------------------------------------|
+| `Chennai (in-che)`       | `https://api.private.in-che.logging.cloud.ibm.com`   |
 | `Dallas (us-south)`      | `https://api.private.us-south.logging.cloud.ibm.com`   |
 | `Frankfurt (eu-de)`      | `https://api.private.eu-de.logging.cloud.ibm.com`      |
 | `London (eu-gb)`         | `https://api.private.eu-gb.logging.cloud.ibm.com`      |
@@ -92,11 +94,13 @@ The following table shows the ingestion endpoints:
 
 | Region                   |   Public Endpoint                                   |
 |--------------------------|-----------------------------------------------------|
+| `Chennai (in-che)`       | `https://logs.in-che.logging.cloud.ibm.com`       |
 | `Dallas (us-south)`      | `https://logs.us-south.logging.cloud.ibm.com`       |
 | `Frankfurt (eu-de)`      | `https://logs.eu-de.logging.cloud.ibm.com`          |
 | `London (eu-gb)`         | `https://logs.eu-gb.logging.cloud.ibm.com`          |
 | `Tokyo (jp-tok)`         | `https://logs.jp-tok.logging.cloud.ibm.com`         |
 | `Sydney (au-syd)`        | `https://logs.au-syd.logging.cloud.ibm.com`         |
+| `Washington (us-east)`   | `https://logs.us-east.logging.cloud.ibm.com`       |
 {: caption="Table 3. Lists of public ingestion endpoints for interacting with {{site.data.keyword.la_full_notm}} over {{site.data.keyword.cloud_notm}}'s public network" caption-side="top"}
 {: #end-ing-table-3}
 {: tab-title="Public"}
@@ -106,12 +110,14 @@ The following table shows the ingestion endpoints:
 
 | Region                   | Private Endpoint                                       |
 |--------------------------|--------------------------------------------------------|
+| `Chennai (in-che)`       | `https://logs.private.in-che.logging.cloud.ibm.com`  |
 | `Dallas (us-south)`      | `https://logs.private.us-south.logging.cloud.ibm.com`  |
 | `Frankfurt (eu-de)`      | `https://logs.private.eu-de.logging.cloud.ibm.com`     |
 | `London (eu-gb)`         | `https://logs.private.eu-gb.logging.cloud.ibm.com`     |
 | `Tokyo (jp-tok)`         | `https://logs.private.jp-tok.logging.cloud.ibm.com`    |
 | `Seoul (kr-seo)`         | `https://logs.private.kr-seo.logging.cloud.ibm.com`    |
 | `Sydney (au-syd)`        | `https://logs.private.au-syd.logging.cloud.ibm.com`    |
+| `Washington (us-east)`   | `https://logs.private.us-east.logging.cloud.ibm.com`  |
 {: caption="Table 4. Lists of private ingestion endpoints for interacting with {{site.data.keyword.la_full_notm}} over {{site.data.keyword.cloud_notm}}'s private network" caption-side="top"}
 {: #end-ing-table-4}
 {: tab-title="Private"}
@@ -127,12 +133,14 @@ The following table shows the API endpoints:
 
 | Region                   |  Public Endpoint                                   |
 |--------------------------|----------------------------------------------------|
+| `Chennai (in-che)`       | `syslog://syslog-a.in-che.logging.cloud.ibm.com`          |
 | `Dallas (us-south)`      | `syslog://syslog-a.us-south.logging.cloud.ibm.com`          |
 | `Frankfurt (eu-de)`      | `syslog://syslog-a.eu-de.logging.cloud.ibm.com`             |
 | `London (eu-gb)`         | `syslog://syslog-a.eu-gb.logging.cloud.ibm.com`             |
 | `Tokyo (jp-tok)`         | `syslog://syslog-a.jp-tok.logging.cloud.ibm.com`            |
 | `Seoul (kr-seo)`         | `syslog://syslog-a.kr-seo.logging.cloud.ibm.com`            |
 | `Sydney (au-syd)`        | `syslog://syslog-a.au-syd.logging.cloud.ibm.com`            |
+| `Washington (us-east)`   | `syslog://syslog-a.us-east.logging.cloud.ibm.com`          |
 {: caption="Table 5. Lists of Syslog endpoints" caption-side="top"}
 {: #end-syslog-table-5}
 {: tab-title="Syslog"}
@@ -142,12 +150,14 @@ The following table shows the API endpoints:
 
 | Region                   |  Public Endpoint                                   |
 |--------------------------|----------------------------------------------------|
+| `Chennai (in-che)`       | `syslog-tls://syslog-a.in-che.logging.cloud.ibm.com`          |
 | `Dallas (us-south)`      | `syslog-tls://syslog-a.us-south.logging.cloud.ibm.com`          |
 | `Frankfurt (eu-de)`      | `syslog-tls://syslog-a.eu-de.logging.cloud.ibm.com`             |
 | `London (eu-gb)`         | `syslog-tls://syslog-a.eu-gb.logging.cloud.ibm.com`             |
 | `Tokyo (jp-tok)`         | `syslog-tls://syslog-a.jp-tok.logging.cloud.ibm.com`            |
 | `Seoul (kr-seo)`         | `syslog-tls://syslog-a.kr-seo.logging.cloud.ibm.com`            |
 | `Sydney (au-syd)`        | `syslog-tls://syslog-a.au-syd.logging.cloud.ibm.com`            |
+| `Washington (us-east)`   | `syslog-tls://syslog-a.us-east.logging.cloud.ibm.com`          |
 {: caption="Table 6. Lists of Syslog-TLS endpoints" caption-side="top"}
 {: #end-ing-syslog-6}
 {: tab-title="Syslog-TLS"}

@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2020
-lastupdated: "2020-04-23"
+lastupdated: "2020-05-11"
 
 keywords: LogDNA, IBM, Log Analysis, logging, detach config agent
 
@@ -21,7 +21,7 @@ subcollection: LogDNA
 {:important: .important}
 {:note: .note}
 
-# Detaching a LogDNA agent from an instance
+# Disconnecting a LogDNA agent
 {: #detach_agent}
 
 Detach a LogDNA agent from a logging instance to stop collecting logs.
