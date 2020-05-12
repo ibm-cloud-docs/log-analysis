@@ -76,8 +76,6 @@ Complete the following steps to configure the agent so that only application log
    ```
    {: pre}
 
-   When the download of the configuration files is finished, a command is displayed that you can use to set the path to the local Kubernetes configuration file as an environment variable. Copy and paste the command that is displayed in your terminal to set the `KUBECONFIG` environment variable.
-
 5. Generate the configuration file of the agent by running the following command:
 
     ```

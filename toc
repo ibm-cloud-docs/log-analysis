@@ -62,6 +62,7 @@ IBM Log Analysis with LogDNA
         config_agent_os_cluster.md
         config_agent_linux.md
         detach_agent.md
+        logdna_agent_status.md
         exclude_logs_from_agent.md
         adding_tags.md
         update_agent_kube_cluster.md
