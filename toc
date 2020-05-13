@@ -18,6 +18,7 @@ IBM Log Analysis with LogDNA
         data-security.md
         iam.md
         service-connection.md
+        architecture-workload-isolation.md
 
     logdna_agent.md
     

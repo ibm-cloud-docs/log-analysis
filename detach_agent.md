@@ -64,7 +64,7 @@ To stop your Kubernetes cluster from forwarding logs to your LogDNA instance, co
 5. Verify that the LogDNA agent is deleted successfully. Run the following command:
 
     ```
-    kubectl get pods
+    kubectl get pods -n ibm-observe
     ```
     {: codeblock}
 
@@ -93,8 +93,6 @@ To stop your Kubernetes cluster from forwarding logs to your LogDNA instance, co
    ibmcloud cs cluster config --cluster <cluster_name_or_ID>
    ```
    {: pre}
-
-   When the download of the configuration files is finished, a command is displayed that you can use to set the path to the local Kubernetes configuration file as an environment variable. Copy and paste the command that is displayed in your terminal to set the `KUBECONFIG` environment variable.
 
 3. Log in to the cluster. Run one of the following commands and enter valid credentials.
 
@@ -144,13 +142,11 @@ To stop your Kubernetes cluster from forwarding logs to your LogDNA instance, co
 5. Remove the LogDNA agent on every worker(node) of your Kubernetes cluster. The LogDNA agent is responsible for collecting and forwarding your logs. Run the following command:
 
     ```
-    oc delete daemonset logdna-agent
+    oc delete daemonset logdna-agent -n PROJECT
     ```
     {: codeblock}
 
-    Where
-
-    PROJECT is the namespace where the LogDNA pods run. Set this value to **ibm-observe**.
+    Where *PROJECT* is the namespace where the LogDNA pods run. Set this value to **ibm-observe**.
 
 5. Verify that the LogDNA agent is deleted successfully. Run the following command to verify that LogDNA agent pods are not running:
 
