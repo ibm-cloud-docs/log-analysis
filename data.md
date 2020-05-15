@@ -6,7 +6,7 @@ lastupdated: "2020-03-06"
 
 keywords: LogDNA, IBM, Log Analysis, logging, data
 
-subcollection: LogDNA
+subcollection: Log-Analysis-with-LogDNA
 
 ---
 
@@ -42,7 +42,7 @@ Learn how log data is collected, managed, and deleted within the {{site.data.key
 
 When you configure a LogDNA agent to collect and forward data to an {{site.data.keyword.la_full_notm}} instance, data is automatically collected and available for analysis through the web UI.
 
-Log data from {{site.data.keyword.cloud_notm}} services, Cloud Foundry (CF) framework, and CF applications is collected automatically and available for analysis through the web UI. These data is collected and forwarded to the **platform service logs instance** in the location where the service is available. [Learn more about the services that send logs to the platform service logs instance](/docs/Log-Analysis-with-LogDNA?topic=LogDNA-cloud_services).
+Log data from {{site.data.keyword.cloud_notm}} services, Cloud Foundry (CF) framework, and CF applications is collected automatically and available for analysis through the web UI. These data is collected and forwarded to the **platform service logs instance** in the location where the service is available. [Learn more about the services that send logs to the platform service logs instance](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-cloud_services).
 
 ## Data encryption
 {: #data_encryption}
@@ -70,12 +70,12 @@ Data from {{site.data.keyword.cloud_notm}} services is collected and aggregated 
 
 Data forwarded by a LogDNA agent is collected and aggregated in the location where the LogDNA instance is available.
 
-Each supported location is a multi-zone region (MZR), except Seoul that is a single-zone region (SZR). [Learn more](/docs/Log-Analysis-with-LogDNA?topic=LogDNA-regions).
+Each supported location is a multi-zone region (MZR), except Seoul that is a single-zone region (SZR). [Learn more](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-regions).
 
 ## Data archives
 {: #data_archives}
 
-You can archive logs from an {{site.data.keyword.la_full_notm}} instance into a bucket in an {{site.data.keyword.cos_full_notm}} (COS) instance. [Learn more](/docs/Log-Analysis-with-LogDNA?topic=LogDNA-archiving).
+You can archive logs from an {{site.data.keyword.la_full_notm}} instance into a bucket in an {{site.data.keyword.cos_full_notm}} (COS) instance. [Learn more](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-archiving).
 
 When data is archived, data going from LogDNA to {{site.data.keyword.cos_full_notm}} (COS) is encrypted in transit over HTTPS.
 
@@ -86,7 +86,7 @@ You can use the {{site.data.keyword.sqlquery_short}} service to query data in ar
 ## Data exports
 {: #data_exports}
 
-You can export data in JSONL format locally, write data to your terminal, or request an email with a link to the data. [Learn more](/docs/Log-Analysis-with-LogDNA?topic=LogDNA-export).
+You can export data in JSONL format locally, write data to your terminal, or request an email with a link to the data. [Learn more](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-export).
 
 Consider the following information when you export log data:
 * You export a set of log entries. To define the set of data that you want to export, you can apply filter and searches. You can also specify the time range. 
@@ -98,7 +98,7 @@ Consider the following information when you export log data:
 ## Data deletion
 {: #data_deletion}
 
-When you delete a LogDNA instance, the instance is automatically deactivated, and ingestion of logs is stopped. [Learn more](/docs/Log-Analysis-with-LogDNA?topic=LogDNA-remove).
+When you delete a LogDNA instance, the instance is automatically deactivated, and ingestion of logs is stopped. [Learn more](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-remove).
 
 LogDNA deletes all logs that are already ingested. Deletion is completed within 24 hours after receiving your request.
 

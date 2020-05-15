@@ -6,7 +6,7 @@ lastupdated: "2020-05-11"
 
 keywords: LogDNA, IBM, Log Analysis, logging, agent image, container registry, icr
 
-subcollection: LogDNA
+subcollection: Log-Analysis-with-LogDNA
 
 ---
 

@@ -6,7 +6,7 @@ lastupdated: "2020-05-11"
 
 keywords: LogDNA, IBM, Log Analysis, logging, config agent
 
-subcollection: LogDNA
+subcollection: Log-Analysis-with-LogDNA
 
 ---
 
@@ -46,7 +46,7 @@ The following tables outline the LogDNA agent versions that are available and su
 
 | Platform                       | How to install and configure |
 |--------------------------------|------------------------------|
-| `Standard Kubernetes cluster`  | [Configuring a LogDNA agent for a standard Kubernetes cluster](/docs/Log-Analysis-with-LogDNA?topic=LogDNA-config_agent_kube_cluster) |
+| `Standard Kubernetes cluster`  | [Configuring a LogDNA agent for a standard Kubernetes cluster](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-config_agent_kube_cluster) |
 | `OpenShift Kubernetes cluster` | `N/A` |
 | `Linux Ubuntu or Debian`       | `N/A` |
 {: caption="Table 2. LogDNA agent version 2" caption-side="top"}
@@ -58,9 +58,9 @@ The following tables outline the LogDNA agent versions that are available and su
 
 | Platform                       | How to install and configure |
 |--------------------------------|------------------------------|
-| `Standard Kubernetes cluster`  | [Configuring a LogDNA agent for a standard Kubernetes cluster](/docs/Log-Analysis-with-LogDNA?topic=LogDNA-config_agent_kube_cluster) |
-| `OpenShift Kubernetes cluster` | [Configuring a LogDNA agent for an OpenShift Kubernetes cluster](/docs/Log-Analysis-with-LogDNA?topic=LogDNA-config_agent_os_cluster) |
-| `Linux Ubuntu or Debian`       | [Configuring a LogDNA agent on Linux Ubuntu or Debian](/docs/Log-Analysis-with-LogDNA?topic=LogDNA-config_agent_linux) |
+| `Standard Kubernetes cluster`  | [Configuring a LogDNA agent for a standard Kubernetes cluster](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-config_agent_kube_cluster) |
+| `OpenShift Kubernetes cluster` | [Configuring a LogDNA agent for an OpenShift Kubernetes cluster](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-config_agent_os_cluster) |
+| `Linux Ubuntu or Debian`       | [Configuring a LogDNA agent on Linux Ubuntu or Debian](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-config_agent_linux) |
 {: caption="Table 3. LogDNA agent version 1" caption-side="top"}
 {: #agent-table-3}
 {: tab-title="LogDNA agent V1"}
@@ -157,9 +157,9 @@ You can configure tags at the agent level so that all lines that are sent by thi
 
 | Platform                       | How to install and configure |
 |--------------------------------|------------------------------|
-| `Standard Kubernetes cluster`  | [Adding tags to logs from a Kubernetes cluster](/docs/Log-Analysis-with-LogDNA?topic=LogDNA-adding_tags#adding_tags_kube) |
+| `Standard Kubernetes cluster`  | [Adding tags to logs from a Kubernetes cluster](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-adding_tags#adding_tags_kube) |
 | `OpenShift Kubernetes cluster` | [Configuring a LogDNA agent for an OpenShift Kubernetes cluster]() |
-| `Linux Ubuntu or Debian`       | [Adding tags to logs from Linux Ubuntu or Debian](/docs/Log-Analysis-with-LogDNA?topic=LogDNA-adding_tags#adding_tags_linux) |
+| `Linux Ubuntu or Debian`       | [Adding tags to logs from Linux Ubuntu or Debian](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-adding_tags#adding_tags_linux) |
 {: caption="Table 7. Adding tags" caption-side="top"}
 
 
@@ -178,19 +178,19 @@ You can configure a LogDNA agent to exclude logs that you do not want to monitor
 * You can use glob patterns to define what you want to exclude. 
 * You can configure specific files.
 
-For more information, see [Excluding log files through the LogDNA agent](/docs/Log-Analysis-with-LogDNA?topic=LogDNA-exclude_logs_from_agent).
+For more information, see [Excluding log files through the LogDNA agent](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-exclude_logs_from_agent).
 
 
 
 ## Detaching a LogDNA agent from a cluster
 {: #logdna_agent_detach}
 
-To stop your Kubernetes cluster from sending logs to your {{site.data.keyword.la_full_notm}} instance, you must remove the LogDNA agent from your cluster. [Learn more](/docs/Log-Analysis-with-LogDNA?topic=LogDNA-detach_agent).
+To stop your Kubernetes cluster from sending logs to your {{site.data.keyword.la_full_notm}} instance, you must remove the LogDNA agent from your cluster. [Learn more](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-detach_agent).
 
 | Platform                       | How to install and configure |
 |--------------------------------|------------------------------|
-| `Standard Kubernetes cluster`  | [Detaching a LogDNA agent from a standard Kubernetes cluster](/docs/Log-Analysis-with-LogDNA?topic=LogDNA-detach_agent#detach_agent_kube) |
-| `OpenShift Kubernetes cluster` | [Detaching a LogDNA agent from an Openshift Kubernetes cluster](/docs/Log-Analysis-with-LogDNA?topic=LogDNA-detach_agent#detach_agent_os) |
+| `Standard Kubernetes cluster`  | [Detaching a LogDNA agent from a standard Kubernetes cluster](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-detach_agent#detach_agent_kube) |
+| `OpenShift Kubernetes cluster` | [Detaching a LogDNA agent from an Openshift Kubernetes cluster](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-detach_agent#detach_agent_os) |
 | `Linux Ubuntu or Debian`       | [Detaching a LogDNA agent from Linux Ubuntu or Debian]() |
 {: caption="Table 8. Detaching a LogDNA agent from a cluster" caption-side="top"}
 
@@ -202,5 +202,5 @@ LogDNA agent images are public images that are available in {{site.data.keyword.
 
 The LogDNA agent images are hosted in the {{site.data.keyword.registrylong_notm}} global repository `icr.io/ext/logdna-agent`.
 
-To get details about the LogDNA agent images, see [Getting information about LogDNA agent images ](/docs/Log-Analysis-with-LogDNA?topic=LogDNA-logdna_agent_image).
+To get details about the LogDNA agent images, see [Getting information about LogDNA agent images ](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-logdna_agent_image).
 
