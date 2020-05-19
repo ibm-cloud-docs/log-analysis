@@ -6,7 +6,7 @@ lastupdated: "2020-03-06"
 
 keywords: LogDNA, IBM, Log Analysis, logging, ingestion 
 
-subcollection: LogDNA
+subcollection: Log-Analysis-with-LogDNA
 
 ---
 
@@ -33,11 +33,11 @@ Complete the following steps to send logs programmatically:
 ## Step 1. Get the ingestion API key 
 {: #ingest_step1}
 
-**Note:** You must have **manager** role for the {{site.data.keyword.la_full_notm}} instance or service to complete this step. For more information, see [Granting permissions to manage logs and configure alerts in LogDNA](/docs/Log-Analysis-with-LogDNA?topic=LogDNA-work_iam#admin_user_logdna).
+**Note:** You must have **manager** role for the {{site.data.keyword.la_full_notm}} instance or service to complete this step. For more information, see [Granting permissions to manage logs and configure alerts in LogDNA](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-work_iam#admin_user_logdna).
 
 Complete the following steps to get the ingestion key:
     
-1. [Launch the {{site.data.keyword.la_full_notm}} web UI](/docs/Log-Analysis-with-LogDNA?topic=LogDNA-view_logs#view_logs_step2).
+1. [Launch the {{site.data.keyword.la_full_notm}} web UI](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-view_logs#view_logs_step2).
 
 2. Click the **Configuration** icon ![Configuration icon](images/admin.png) &gt; **Organization**. 
 
@@ -60,7 +60,7 @@ curl "ENDPOINT/logs/ingest?QUERY_PARAMETERS" -u INGESTION_KEY: --header "Content
 
 Where 
 
-* ENDPOINT represents the entry point to the service. Each region has a different URL. To get the endpoint for a location, see [Ingestion endpoints](/docs/Log-Analysis-with-LogDNA?topic=LogDNA-endpoints#endpoints_ingestion).
+* ENDPOINT represents the entry point to the service. Each region has a different URL. To get the endpoint for a location, see [Ingestion endpoints](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-endpoints#endpoints_ingestion).
 * QUERY_PARAMETERS are parameters that define the filtering criteria that are applied to the ingestion request.
 * LOG_LINES describe the set of log lines that you want to send. It is defined as an array of objects.
 * INGESTION_KEY is the key that you created in the previous step.

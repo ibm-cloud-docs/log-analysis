@@ -6,7 +6,7 @@ lastupdated: "2020-03-25"
 
 keywords: LogDNA, IBM, Log Analysis, logging, overview, personal data, data deletion, PHI, data, data security, _service-name_
 
-subcollection: LogDNA
+subcollection: Log-Analysis-with-LogDNA
 
 ---
 
@@ -32,7 +32,7 @@ To ensure that you can securely manage your data when you use {{site.data.keywor
 ### Platform logs
 {: #data-collection-platform}
 
-Log data from {{site.data.keyword.cloud_notm}} services, Cloud Foundry (CF) framework, and CF applications is collected automatically and available for analysis through the web UI. This data is collected and forwarded to the **platform logs instance** in the location where the service is available. [Learn more about the services that send logs to the platform service logs instance](/docs/Log-Analysis-with-LogDNA?topic=LogDNA-cloud_services).
+Log data from {{site.data.keyword.cloud_notm}} services, Cloud Foundry (CF) framework, and CF applications is collected automatically and available for analysis through the web UI. This data is collected and forwarded to the **platform logs instance** in the location where the service is available. [Learn more about the services that send logs to the platform service logs instance](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-cloud_services).
 
 ### LogDNA agent
 {: #data-collection-agent}
@@ -41,7 +41,7 @@ When you configure a LogDNA agent to collect and forward data to an {{site.data.
 
 By default, you connect to resources in your account over the {{site.data.keyword.cloud_notm}} public network. To configure an agent to send logs by using a public endpoint, the environment where the agent is running requires internet access to use the public endpoint.
 
-You can enable virtual routing and forwarding (VRF) to move IP routing for your account and all of its resources into a separate routing table. If VRF is enabled, you can then enable {{site.data.keyword.cloud_notm}} service endpoints to connect directly to resources without using the public network. To configure an agent to send logs by using a private endpoint, you must [enable virtual routing and forwarding (VRF)](/docs/account?topic=account-vrf-service-endpoint) for your account. Once the account is VRF and service endpoint enabled, the LogDNA agent can be configured to use the private network by using the [Private Endpoint](/docs/Log-Analysis-with-LogDNA?topic=LogDNA-endpoints#endpoints_api) as the ingestion URL.
+You can enable virtual routing and forwarding (VRF) to move IP routing for your account and all of its resources into a separate routing table. If VRF is enabled, you can then enable {{site.data.keyword.cloud_notm}} service endpoints to connect directly to resources without using the public network. To configure an agent to send logs by using a private endpoint, you must [enable virtual routing and forwarding (VRF)](/docs/account?topic=account-vrf-service-endpoint) for your account. Once the account is VRF and service endpoint enabled, the LogDNA agent can be configured to use the private network by using the [Private Endpoint](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-endpoints#endpoints_api) as the ingestion URL.
 * Private endpoints are not accessible from the public internet. 
 * All traffic is routed to the {{site.data.keyword.cloud_notm}} private network. 
 
@@ -85,7 +85,7 @@ For example, if you choose the *Lite* plan, data is not stored at all. However, 
 ## Data archives
 {: #data_archives}
 
-You can archive logs from an {{site.data.keyword.la_full_notm}} instance into a bucket in an {{site.data.keyword.cos_full_notm}} (COS) instance. [Learn more](/docs/Log-Analysis-with-LogDNA?topic=LogDNA-archiving).
+You can archive logs from an {{site.data.keyword.la_full_notm}} instance into a bucket in an {{site.data.keyword.cos_full_notm}} (COS) instance. [Learn more](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-archiving).
 
 When data is archived, data going from LogDNA to {{site.data.keyword.cos_full_notm}} (COS) is encrypted in transit over HTTPS.
 
@@ -96,7 +96,7 @@ You can use the {{site.data.keyword.sqlquery_short}} service to query data in ar
 ## Data exports
 {: #data_exports}
 
-You can export data in JSONL format locally, write data to your terminal, or request an email with a link to the data. [Learn more](/docs/Log-Analysis-with-LogDNA?topic=LogDNA-export).
+You can export data in JSONL format locally, write data to your terminal, or request an email with a link to the data. [Learn more](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-export).
 
 Consider the following information when you export log data:
 * You export a set of log entries. To define the set of data that you want to export, you can apply filter and searches. You can also specify the time range. 
@@ -112,7 +112,7 @@ Consider the following information when you export log data:
 ### Deleting logs when an instance is deleted
 {: #service-delete-logs}
 
-When you delete a LogDNA instance, the instance is automatically deactivated, and ingestion of logs is stopped. [Learn more](/docs/Log-Analysis-with-LogDNA?topic=LogDNA-remove).
+When you delete a LogDNA instance, the instance is automatically deactivated, and ingestion of logs is stopped. [Learn more](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-remove).
 
 LogDNA deletes all logs that are already ingested. Deletion is completed within 24 hours after receiving your request.
 

@@ -6,7 +6,7 @@ lastupdated: "2020-03-06"
 
 keywords: LogDNA, IBM, Log Analysis, logging, config agent
 
-subcollection: LogDNA
+subcollection: Log-Analysis-with-LogDNA
 
 ---
 
@@ -51,15 +51,15 @@ You can configure the following parameters through the LogDNA agent:
 
 To configure your Kubernetes cluster to send logs to your {{site.data.keyword.la_full_notm}} instance, you must install a *logdna-agent* pod on each node of your cluster. The LogDNA agent reads log files from the pod where it is installed, and forwards the log data to your LogDNA instance.
 
-* [Configuring a LogDNA agent for a standard Kubernetes cluster](/docs/Log-Analysis-with-LogDNA?topic=LogDNA-config_agent_kube_cluster)
-* [Configuring a LogDNA agent for an OpenShift Kubernetes cluster](/docs/Log-Analysis-with-LogDNA?topic=LogDNA-config_agent_os_cluster)
+* [Configuring a LogDNA agent for a standard Kubernetes cluster](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-config_agent_kube_cluster)
+* [Configuring a LogDNA agent for an OpenShift Kubernetes cluster](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-config_agent_os_cluster)
 
-To configure your Ubuntu server to send logs to your {{site.data.keyword.la_full_notm}} instance, you must install a `logdna-agent`. The LogDNA agent reads log files from */var/log*, and forwards the log data to your LogDNA instance. For more information, see [Configuring a LogDNA agent on Linux Ubuntu or Debian](/docs/Log-Analysis-with-LogDNA?topic=LogDNA-config_agent_linux).
+To configure your Ubuntu server to send logs to your {{site.data.keyword.la_full_notm}} instance, you must install a `logdna-agent`. The LogDNA agent reads log files from */var/log*, and forwards the log data to your LogDNA instance. For more information, see [Configuring a LogDNA agent on Linux Ubuntu or Debian](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-config_agent_linux).
 
 ## Detaching a LogDNA agent from a cluster
 {: #logdna_agent_detach}
 
-To stop your Kubernetes cluster from sending logs to your {{site.data.keyword.la_full_notm}} instance, you must remove the LogDNA agent from your cluster. [Learn more](/docs/Log-Analysis-with-LogDNA?topic=LogDNA-detach_agent).
+To stop your Kubernetes cluster from sending logs to your {{site.data.keyword.la_full_notm}} instance, you must remove the LogDNA agent from your cluster. [Learn more](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-detach_agent).
 
 ## Adding tags at the LogDNA agent level
 {: #logdna_agent_tags}
@@ -71,8 +71,8 @@ You can configure tags at the agent level so that all lines that are sent by thi
 * The maximum number of characters that you can set to define multiple tags is 80 characters.
 
 For example, choose any of the following options to find out how to configure tags:
-* [Adding tags to logs from a Kubernetes cluster](/docs/Log-Analysis-with-LogDNA?topic=LogDNA-adding_tags#adding_tags_kube)
-* [Adding tags to logs from Linux Ubuntu or Debian](/docs/Log-Analysis-with-LogDNA?topic=LogDNA-adding_tags#adding_tags_linux)
+* [Adding tags to logs from a Kubernetes cluster](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-adding_tags#adding_tags_kube)
+* [Adding tags to logs from Linux Ubuntu or Debian](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-adding_tags#adding_tags_linux)
 
 
 ## Excluding log files through the LogDNA agent
@@ -83,6 +83,6 @@ You can stop logs from being forwarded to your logging instance by modifying the
 * You can exclude files that are located in any of the paths that are defined through the **logdir** parameter. 
 * To define the files, you can separate multiple files by using commas. You can use glob patterns. You can also configure specific files.
 
-For example, see [Excluding log files through the LogDNA agent](/docs/Log-Analysis-with-LogDNA?topic=LogDNA-exclude_logs_from_agent).
+For example, see [Excluding log files through the LogDNA agent](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-exclude_logs_from_agent).
 
 

@@ -6,7 +6,7 @@ lastupdated: "2020-03-06"
 
 keywords: LogDNA, IBM, Log Analysis, logging instance, delete
 
-subcollection: LogDNA
+subcollection: Log-Analysis-with-LogDNA
 
 ---
 

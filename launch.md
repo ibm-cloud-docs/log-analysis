@@ -6,7 +6,7 @@ lastupdated: "2020-03-06"
 
 keywords: LogDNA, IBM, Log Analysis, logging, web UI, browser
 
-subcollection: LogDNA
+subcollection: Log-Analysis-with-LogDNA
 
 ---
 
@@ -44,7 +44,7 @@ The following table lists the minimum policies that a user must have to be able 
 | `{{site.data.keyword.la_full_notm}}` | Service role: Reader      | Allows the user to launch the Web UI and view logs in the Web UI.    |
 {: caption="Table 1. IAM policies" caption-side="top"} 
 
-For more information on how to configure these policies for a user, see [Granting permissions to a user to view logs](/docs/Log-Analysis-with-LogDNA?topic=LogDNA-work_iam#user_logdna).
+For more information on how to configure these policies for a user, see [Granting permissions to a user to view logs](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-work_iam#user_logdna).
 
 
 ## Step 2. Launch the web UI through the {{site.data.keyword.cloud_notm}} UI

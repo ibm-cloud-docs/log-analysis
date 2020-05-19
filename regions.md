@@ -6,7 +6,7 @@ lastupdated: "2020-04-28"
 
 keywords: LogDNA, IBM, Log Analysis, logging instance, regions
 
-subcollection: LogDNA
+subcollection: Log-Analysis-with-LogDNA
 
 ---
 

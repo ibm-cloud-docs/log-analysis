@@ -6,7 +6,7 @@ lastupdated: "2020-03-18"
 
 keywords: LogDNA, IBM, Log Analysis, logging, getting started
 
-subcollection: LogDNA
+subcollection: Log-Analysis-with-LogDNA
 
 ---
 

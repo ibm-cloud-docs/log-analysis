@@ -6,7 +6,7 @@ lastupdated: "2020-03-18"
 
 keywords: LogDNA, IBM, Log Analysis, logging, config agent
 
-subcollection: LogDNA
+subcollection: Log-Analysis-with-LogDNA
 
 ---
 
