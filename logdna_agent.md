@@ -163,7 +163,7 @@ You can configure tags at the agent level so that all lines that are sent by thi
 {: caption="Table 7. Adding tags" caption-side="top"}
 
 
-### Control how LogDNA agent updates are rolled up
+### Configure how LogDNA agent updates are rolled
 {: #logdna_agent_update_method}
 
 
