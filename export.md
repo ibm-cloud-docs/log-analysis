@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2020
-lastupdated: "2020-03-18"
+lastupdated: "2020-05-11"
 
 keywords: LogDNA, IBM, Log Analysis, logging, export logs
 
@@ -33,7 +33,8 @@ Consider the following information when you export log data:
 * From the Web UI, when you export logs, you get an email that is sent to your email address, with a link to a compressed file that includes the data. To get the data, you must click the link and download the compressed file.
 * When you export logs programmatically, you can choose to send an email or to write logs in to your terminal.
 * The compressed log file that contains the data that you want to export is available for a maximum of 12 hours. 
-* When you export logs, you have a limit of lines that you can export in a request. You can specify to export older lines or newer lines in case you reach the limit in the time range that you specify for the export.
+* When you export logs, you have a limit of lines that you can export in a request. You can specify to export older lines or newer lines in case you reach the limit in the time range that you specify for the export. The maximum number of lines that you can export through the UI is `10.000` lines. The maximum number of lines that you can export per API request is `500.000` lines.
+
 
 
 ## Exporting logs from the Web UI
