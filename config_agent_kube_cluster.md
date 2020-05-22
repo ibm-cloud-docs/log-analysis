@@ -21,7 +21,7 @@ subcollection: Log-Analysis-with-LogDNA
 {:important: .important}
 {:note: .note}
 
-# Connecting a LogDNA agent V1 to a standard Kubernetes cluster
+# Connecting a LogDNA agent to a standard Kubernetes cluster
 {: #config_agent_kube_cluster}
 
 The LogDNA agent is responsible for collecting and forwarding logs to your {{site.data.keyword.la_full_notm}} instance. After you provision an instance of {{site.data.keyword.la_full}}, you must configure a LogDNA agent for each log source that you want to monitor.
@@ -192,10 +192,10 @@ Choose one of the following commands to install and configure the LogDNA agent v
 | `Seoul (kr-seo)`         | `kubectl create -f https://assets.kr-seo.logging.cloud.ibm.com/clients/logdna-agent-v2.yaml -n ibm-observe` |
 | `Sydney (au-syd)`        | `kubectl create -f https://assets.au-syd.logging.cloud.ibm.com/clients/logdna-agent-v2.yaml -n ibm-observe`        |
 | `Washington (us-east)`   | `kubectl create -f https://assets.us-east.logging.cloud.ibm.com/clients/logdna-agent-v2.yaml -n ibm-observe`       |
-{: caption="Table 1. Commands by location when you use public endpoints" caption-side="top"}
-{: #end-api-table-1}
+{: caption="Table 3. Commands by location when you use public endpoints" caption-side="top"}
+{: #agent-table-3}
 {: tab-title="Command (By using public endpoints)"}
-{: tab-group="agent"}
+{: tab-group="agent1"}
 {: class="simple-tab-table"}
 {: row-headers}
 
@@ -209,10 +209,10 @@ Choose one of the following commands to install and configure the LogDNA agent v
 | `Seoul (kr-seo)`         | `kubectl create -f https://assets.kr-seo.logging.cloud.ibm.com/clients/logdna-agent-v2-private.yaml -n ibm-observe` |
 | `Sydney (au-syd)`        | `kubectl create -f https://assets.au-syd.logging.cloud.ibm.com/clients/logdna-agent-v2-private.yaml -n ibm-observe`        |
 | `Washington (us-east)`   | `kubectl create -f https://assets.us-east.logging.cloud.ibm.com/clients/logdna-agent-v2-private.yaml -n ibm-observe`       |
-{: caption="Table 2. Commands by location when you use private endpoints" caption-side="top"}
-{: #end-api-table-2}
+{: caption="Table 4. Commands by location when you use private endpoints" caption-side="top"}
+{: #agent-table-4}
 {: tab-title="Command (By using private endpoints)"}
-{: tab-group="agent"}
+{: tab-group="agent1"}
 {: class="simple-tab-table"}
 {: row-headers}
 
