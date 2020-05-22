@@ -6,7 +6,7 @@ lastupdated: "2020-05-11"
 
 keywords: LogDNA, IBM, Log Analysis, logging, update LogDNA agent
 
-subcollection: LogDNA
+subcollection: Log-Analysis-with-LogDNA
 
 ---
 
@@ -99,7 +99,7 @@ kubectl create secret generic logdna-agent-key --from-literal=logdna-agent-key=<
 ```
 {: pre}
 
-To get the ingestion key, see [Get the ingestion key through the IBM Log Analysis with LogDNA web UI](/docs/Log-Analysis-with-LogDNA?topic=LogDNA-ingestion_key).
+To get the ingestion key, see [Get the ingestion key through the IBM Log Analysis with LogDNA web UI](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-ingestion_key).
 
 ## Step 3. Enable virtual routing and forwarding (VRF)
 {: #config_agent_kube_cluster_step3}

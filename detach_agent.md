@@ -6,7 +6,7 @@ lastupdated: "2020-05-11"
 
 keywords: LogDNA, IBM, Log Analysis, logging, detach config agent
 
-subcollection: LogDNA
+subcollection: Log-Analysis-with-LogDNA
 
 ---
 

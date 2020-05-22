@@ -6,7 +6,7 @@ lastupdated: "2020-03-06"
 
 keywords: LogDNA, IBM, Log Analysis, logging, config agent
 
-subcollection: LogDNA
+subcollection: Log-Analysis-with-LogDNA
 
 ---
 
@@ -30,7 +30,7 @@ In an {{site.data.keyword.la_full_notm}} instance, you can configure exclusion r
 
 Complete the following steps to define an exclusion rule:
 
-1. [Launch the {{site.data.keyword.la_full_notm}} web UI](/docs/Log-Analysis-with-LogDNA?topic=LogDNA-view_logs#view_logs_step2).
+1. [Launch the {{site.data.keyword.la_full_notm}} web UI](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-view_logs#view_logs_step2).
 
 2. Select the **Settings** icon ![Configuration icon](images/admin.png "Admin icon"). Then select **Usage** &gt; **Exclusion Rules**. 
 
@@ -60,9 +60,9 @@ You will configure the rule so that you are able to see all log data through vie
 
 Complete the following steps to define the exclusion rule:
 
-Prereq: You must have a cluster configured to forward logs to a LogDNA instance. [Learn more](/docs/Log-Analysis-with-LogDNA?topic=LogDNA-config_agent_kube_cluster).
+Prereq: You must have a cluster configured to forward logs to a LogDNA instance. [Learn more](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-config_agent_kube_cluster).
 
-1. [Launch the {{site.data.keyword.la_full_notm}} web UI](/docs/Log-Analysis-with-LogDNA?topic=LogDNA-view_logs#view_logs_step2).
+1. [Launch the {{site.data.keyword.la_full_notm}} web UI](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-view_logs#view_logs_step2).
 
 2. Select the **Settings** icon ![Configuration icon](images/admin.png "Admin icon"). Then select **Usage** &gt; **Exclusion Rules**. 
 
@@ -92,9 +92,9 @@ You will configure the rule so that you are not able to see excluded log data th
 
 Complete the following steps to define the exclusion rule:
 
-Prereq: You must have a cluster configured to forward logs to a LogDNA instance. [Learn more](/docs/Log-Analysis-with-LogDNA?topic=LogDNA-config_agent_kube_cluster).
+Prereq: You must have a cluster configured to forward logs to a LogDNA instance. [Learn more](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-config_agent_kube_cluster).
 
-1. [Launch the {{site.data.keyword.la_full_notm}} web UI](/docs/Log-Analysis-with-LogDNA?topic=LogDNA-view_logs#view_logs_step2).
+1. [Launch the {{site.data.keyword.la_full_notm}} web UI](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-view_logs#view_logs_step2).
 
 2. Select the **Settings** icon ![Configuration icon](images/admin.png "Admin icon"). Then select **Usage** &gt; **Exclusion Rules**. 
 

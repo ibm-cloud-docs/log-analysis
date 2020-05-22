@@ -6,7 +6,7 @@ lastupdated: "2020-03-06"
 
 keywords: LogDNA, IBM, Log Analysis, logging, config agent
 
-subcollection: LogDNA
+subcollection: Log-Analysis-with-LogDNA
 
 ---
 
@@ -38,7 +38,7 @@ You can stop logs from being forwarded to your logging instance by customizing t
 * You must configure the **EXCLUDE** parameter in the LogDNA agent configuration file to exclude files that are located in any of the paths that are defined through the **logdir** parameter. 
 * To define the files that you want to exclude, you can separate multiple files by using commas. You can use glob patterns. You can also configure specific files.
 
-[Learn more](/docs/Log-Analysis-with-LogDNA?topic=LogDNA-exclude_logs_from_agent).
+[Learn more](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-exclude_logs_from_agent).
 
 
 
@@ -52,7 +52,7 @@ Logs that are excluded do not count towards your data usage quota. Also, logs th
 
 When you exclude logs through an exclusion rule, you can choose to **Preserve these lines for live-tail and alerting**. When you check this option, log lines that match the exclusion rule are shown through the live tail and you can set up an alert for that data.
 
-[Learn more](/docs/Log-Analysis-with-LogDNA?topic=LogDNA-exclusion).
+[Learn more](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-exclusion).
 
 ​
 
@@ -65,7 +65,7 @@ In a {{site.data.keyword.la_full_notm}} instance, you can define an alert to not
 
 Complete the following steps to configure an alert that informs you when you reach a specific data volume in the instance:
 
-1. [Launch the {{site.data.keyword.la_full_notm}} web UI](/docs/Log-Analysis-with-LogDNA?topic=LogDNA-view_logs#view_logs_step2).
+1. [Launch the {{site.data.keyword.la_full_notm}} web UI](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-view_logs#view_logs_step2).
 
 2. Select the **Settings** icon ![Configuration icon](images/admin.png "Admin icon"). Then select **Usage**.
 

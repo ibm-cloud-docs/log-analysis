@@ -34,7 +34,7 @@ To send CF logs to a {{site.data.keyword.la_short}} instance, consider the follo
 
 The steps that are provided through this tutorial assume that you will be working in the US-South region. 
 
-Read about {{site.data.keyword.la_full_notm}}. For more information, see [About](/docs/Log-Analysis-with-LogDNA?topic=LogDNA-getting-started#getting-started_ov).
+Read about {{site.data.keyword.la_full_notm}}. For more information, see [About](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-getting-started#getting-started_ov).
 
 Use a user ID that is a member or an owner of an {{site.data.keyword.cloud_notm}} account. To get an {{site.data.keyword.cloud_notm}} user ID, go to: [Registration ![External link icon](../../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com/login){:new_window}.
 
@@ -82,11 +82,11 @@ To provision a service instance of {{site.data.keyword.la_full_notm}} through th
 
 7. Select the resource group that your cluster is in. By default, the **Default** resource group is set for you. 
 
-8. Choose a service plan for your service instance. By default, the **Lite** plan is selected for you. For more information about other service plans, see [Pricing plans](/docs/Log-Analysis-with-LogDNA?topic=LogDNA-service_plans).
+8. Choose a service plan for your service instance. By default, the **Lite** plan is selected for you. For more information about other service plans, see [Pricing plans](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-service_plans).
 
 9. Click **Create**. The **Observability** dashboard opens and shows the details for your service. 
 
-To provision an instance through the CLI, see [Provisioning an instance through the {{site.data.keyword.cloud_notm}} CLI](/docs/Log-Analysis-with-LogDNA?topic=LogDNA-provision#provision_cli).
+To provision an instance through the CLI, see [Provisioning an instance through the {{site.data.keyword.cloud_notm}} CLI](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-provision#provision_cli).
 {: tip}
 
 
@@ -207,11 +207,11 @@ Complete the following steps:
 ## Step 4: Verify that CF app logs are displayed through the LogDNA web UI
 {: #cf_step4}
 
-Launch the LogDNA web UI. Then, search for your CF application logs. For more information, see [Filtering logs](/docs/Log-Analysis-with-LogDNA?topic=LogDNA-view_logs#view_logs_step5).
+Launch the LogDNA web UI. Then, search for your CF application logs. For more information, see [Filtering logs](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-view_logs#view_logs_step5).
 
 Try also some of these tasks:
-- [Search logs](/docs/Log-Analysis-with-LogDNA?topic=LogDNA-view_logs#view_logs_step6)
-- [Define views](/docs/Log-Analysis-with-LogDNA?topic=LogDNA-view_logs#view_logs_step7)
+- [Search logs](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-view_logs#view_logs_step6)
+- [Define views](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-view_logs#view_logs_step7)
 - [Configure alerts](https://docs.logdna.com/docs/alerts). 
 
 **Note:** Some of these features require a plan upgrade.

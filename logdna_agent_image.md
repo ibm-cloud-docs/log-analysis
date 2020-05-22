@@ -2,11 +2,11 @@
 
 copyright:
   years:  2018, 2020
-lastupdated: "2020-05-11"
+lastupdated: "2020-05-21"
 
 keywords: LogDNA, IBM, Log Analysis, logging, agent image, container registry, icr
 
-subcollection: LogDNA
+subcollection: Log-Analysis-with-LogDNA
 
 ---
 
@@ -21,10 +21,10 @@ subcollection: LogDNA
 {:important: .important}
 {:note: .note}
 
-# Getting information about LogDNA agent images 
+# Getting information about Kubernetes LogDNA agent images 
 {: #logdna_agent_image}
 
-LogDNA agent images are public images that are available in {{site.data.keyword.cloud_notm}} through the [{{site.data.keyword.registrylong_notm}}](/docs/Registry?topic=registry-getting-started) service.
+Kubernetes LogDNA agent images are public images that are available in {{site.data.keyword.cloud_notm}} through the [{{site.data.keyword.registrylong_notm}}](/docs/Registry?topic=Registry-getting-started) service.
 {:shortdesc}
 
 You can access the images that are provided by {{site.data.keyword.IBM}} by using the command line.
@@ -69,6 +69,4 @@ ibmcloud cr images --restrict ext/logdna-agent
 {: codeblock}
 
 The output of this command is the list of LogDNA agent images. It includes information about the repository, `icr.io/ext/logdna-agent`, the image tag, the image digest, the image namespace, when the image was created, the image size, and the images security status.
-
-
 

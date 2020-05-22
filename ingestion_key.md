@@ -6,7 +6,7 @@ lastupdated: "2020-03-06"
 
 keywords: LogDNA, IBM, Log Analysis, logging, ingestion key
 
-subcollection: LogDNA
+subcollection: Log-Analysis-with-LogDNA
 
 ---
 
@@ -54,7 +54,7 @@ To get the ingestion key for an {{site.data.keyword.la_full_notm}} instance by u
 
 To get the ingestion key for an {{site.data.keyword.la_full_notm}} instance by using the {{site.data.keyword.la_full_notm}} Web UI, complete the following steps:
 
-1. [Launch the {{site.data.keyword.la_full_notm}} web UI](/docs/Log-Analysis-with-LogDNA?topic=LogDNA-view_logs#view_logs_step2).
+1. [Launch the {{site.data.keyword.la_full_notm}} web UI](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-view_logs#view_logs_step2).
 
 2. Click the **Configuration** icon ![Configuration icon](images/admin.png) &gt; **Organization**. 
 
@@ -117,7 +117,7 @@ If the ingestion key is compromised or you have a policy to renew it after a num
 
 To renew the ingestion key for an {{site.data.keyword.la_full_notm}} instance by using the {{site.data.keyword.la_full_notm}} Web UI, complete the following steps:
 
-1. [Launch the {{site.data.keyword.la_full_notm}} web UI](/docs/Log-Analysis-with-LogDNA?topic=LogDNA-view_logs#view_logs_step2).
+1. [Launch the {{site.data.keyword.la_full_notm}} web UI](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-view_logs#view_logs_step2).
 
 2. Click the **Configuration** icon ![Configuration icon](images/admin.png) &gt; **Organization**. 
 
@@ -134,7 +134,7 @@ To renew the ingestion key for an {{site.data.keyword.la_full_notm}} instance by
 After you reset the ingestion key, you must update the ingestion key for any log sources that you have configured to forward logs to this {{site.data.keyword.la_full_notm}} instance.
 {: important}
 
-For example, see [Resetting the ingestion key that is used by a Kubernetes cluster](/docs/Log-Analysis-with-LogDNA?topic=LogDNA-kube_reset).
+For example, see [Resetting the ingestion key that is used by a Kubernetes cluster](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-kube_reset).
 
 
 

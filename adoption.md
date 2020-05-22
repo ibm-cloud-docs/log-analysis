@@ -6,7 +6,7 @@ lastupdated: "2020-03-18"
 
 keywords: LogDNA, IBM, Log Analysis, logging, regulated, highly available workloads
 
-subcollection: LogDNA
+subcollection: Log-Analysis-with-LogDNA
 
 ---
 
@@ -121,11 +121,11 @@ The {{site.data.keyword.la_full_notm}} service offers a HIPAA service plan. By d
 ### Locations
 {: #adoption_resource_svc_location}
 
-You can provision instances of the {{site.data.keyword.la_full_notm}} service in any of the supported locations in the {{site.data.keyword.cloud_notm}}. For more information, see [Locations](/docs/Log-Analysis-with-LogDNA?topic=LogDNA-regions).
+You can provision instances of the {{site.data.keyword.la_full_notm}} service in any of the supported locations in the {{site.data.keyword.cloud_notm}}. For more information, see [Locations](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-regions).
 
 Per location (region), you can provision 1 or more logging instances. 
 * You can collect logs from custom applications and services that run in the {{site.data.keyword.cloud_notm}} or outside, and forward them to any logging instance in your account.
-* Only 1 instance in a location can be configured to collect logs automatically from [{{site.data.keyword.cloud_notm}} enabled services](/docs/Log-Analysis-with-LogDNA?topic=LogDNA-cloud_services) in that {{site.data.keyword.cloud_notm}} location.
+* Only 1 instance in a location can be configured to collect logs automatically from [{{site.data.keyword.cloud_notm}} enabled services](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-cloud_services) in that {{site.data.keyword.cloud_notm}} location.
 * Each location represents the geographic area where your {{site.data.keyword.la_full_notm}} requests are handled and processed for that instance, and where data is resident. 
 * Each MZR location has three different data centers for redundancy. The data for each location is kept in the three data centers near that location. If all three data centers in a location fail, the {{site.data.keyword.la_full_notm}} service for that location becomes unavailable.
 * Each MZR configuration can accept a single data center failure.
@@ -141,14 +141,14 @@ You can also check [ensure zero downtime](/docs/overview?topic=overview-zero-dow
 ### Platform logs
 {: #adoption_account_svc_logs}
 
-To enable automatic collection of {{site.data.keyword.cloud_notm}} enabled services, you must configure 1 instance in a location with the **platform logs** flag. [Learn more](/docs/Log-Analysis-with-LogDNA?topic=LogDNA-config_svc_logs). When 1 instance is enabled to collect logs in a location, data from any instance of an enabled service in that location is collected automatically.
+To enable automatic collection of {{site.data.keyword.cloud_notm}} enabled services, you must configure 1 instance in a location with the **platform logs** flag. [Learn more](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-config_svc_logs). When 1 instance is enabled to collect logs in a location, data from any instance of an enabled service in that location is collected automatically.
 
 **Define 1 instance per location with the platform logs flag enabled.**
 {: tip}
 
 If you share staging, pre-production, and production services in the same {{site.data.keyword.cloud_notm}} account, notice that users, that are granted access to view data in the logging instance with the platform logs flag in a location, can see data from any service instance provisioned in that location. To prevent users from viewing log data from all service's instances, consider moving from a  single account model to an *Enterprise account* model.
 
-If you cannot move to an enterprise account model, try reducing the number of users that are granted permissions to view the logs. In addition, you can also define exclusion rules to hide data from showing through the web UI. Exclusion rules stop logs from counting against your data usage quota and from being stored for search. [Learn more](/docs/Log-Analysis-with-LogDNA?topic=LogDNA-exclusion).
+If you cannot move to an enterprise account model, try reducing the number of users that are granted permissions to view the logs. In addition, you can also define exclusion rules to hide data from showing through the web UI. Exclusion rules stop logs from counting against your data usage quota and from being stored for search. [Learn more](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-exclusion).
 
 
 ### Resource groups
@@ -179,7 +179,7 @@ If you add PII or other sensitive information in the name or the description of 
 ### Service plan
 {: #adoption_resource_svc_plan}
 
-The service plan that you choose for a LogDNA instance determines the number of days that data is available for search. For more information, see [Service plans](/docs/Log-Analysis-with-LogDNA?topic=LogDNA-service_plans).
+The service plan that you choose for a LogDNA instance determines the number of days that data is available for search. For more information, see [Service plans](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-service_plans).
 
 **Choose your plan based on the number of days that you need to be able to search data online through the web UI.**
 {: tip}
@@ -233,9 +233,9 @@ In LogDNA, you can collect and forward data to a logging instance by using any o
 
 The LogDNA agent authenticates by using the LogDNA Ingestion Key and opens a secure web socket to the {{site.data.keyword.la_full_notm}} ingestion servers; monitors all files with extension `.log`*,  and extensionless files under `/var/log/`; and can be customized to exclude data that you do not want to collect or to include custom paths that you want to monitor, and more.
 
-For example, you can configure a Kubernetes cluster and an OpenShift cluster with a LogDNA agent. For more information, see [Configuring a LogDNA agent for a standard Kubernetes cluster](/docs/Log-Analysis-with-LogDNA?topic=LogDNA-config_agent_kube_cluster) and [Configuring a LogDNA agent for an OpenShift Kubernetes cluster](/docs/Log-Analysis-with-LogDNA?topic=LogDNA-config_agent_os_cluster).
+For example, you can configure a Kubernetes cluster and an OpenShift cluster with a LogDNA agent. For more information, see [Configuring a LogDNA agent for a standard Kubernetes cluster](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-config_agent_kube_cluster) and [Configuring a LogDNA agent for an OpenShift Kubernetes cluster](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-config_agent_os_cluster).
 
-To configure a LogDNA agent on Linux Ubuntu or Debian, see [Configuring a LogDNA agent on Linux Ubuntu or Debian](/docs/Log-Analysis-with-LogDNA?topic=LogDNA-config_agent_linux).
+To configure a LogDNA agent on Linux Ubuntu or Debian, see [Configuring a LogDNA agent on Linux Ubuntu or Debian](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-config_agent_linux).
 
 **To send data and attach custom metadata to each log record, you can use the REST API.**
 {: tip}
@@ -243,7 +243,7 @@ To configure a LogDNA agent on Linux Ubuntu or Debian, see [Configuring a LogDNA
 **Configure syslog to collect and forward logs from Cloud Foundry applications.**
 {: tip}
 
-For example, you can configure a custom user provided service (CUPS) for each Cloud Foundry (CF) app that you want to monitor through a logging instance. The CUPS service sends logs via a syslog link to a LogDNA syslog endpoint and port. This option is only available if the CF app send logs to STDOUT and STDERR. If the CF app is configured to send logs via syslog and not to STDOUT and STDERR, this option is not supported. [Learn more](/docs/Log-Analysis-with-LogDNA?topic=LogDNA-monitor_cfapp_logs).
+For example, you can configure a custom user provided service (CUPS) for each Cloud Foundry (CF) app that you want to monitor through a logging instance. The CUPS service sends logs via a syslog link to a LogDNA syslog endpoint and port. This option is only available if the CF app send logs to STDOUT and STDERR. If the CF app is configured to send logs via syslog and not to STDOUT and STDERR, this option is not supported. [Learn more](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-monitor_cfapp_logs).
 
 
 
@@ -292,15 +292,15 @@ By default, the account owner is the only user in the account that can grant per
 **To allow other users or service IDs in the account to manage the service and be able to grant permissions to work with the {{site.data.keyword.la_full_notm}} service, define a policy for the {{site.data.keyword.la_full_notm}} service with the platform role *administrator*. Grant this policy to the administrators access group.** 
 {: tip}
 
-For more information, see [Granting permissions to a user to become an administrator of the service](/docs/Log-Analysis-with-LogDNA?topic=LogDNA-work_iam#admin_account).
+For more information, see [Granting permissions to a user to become an administrator of the service](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-work_iam#admin_account).
 
 Access to resources within a resource group can be granted to all resources in a group, or only selected services within a group. 
 
 Access policies set a target, which is typically a service instance or all instances of a service in a resource group, and a role, which defines what type of access is allowed.
 
 Roles define the actions that a user or serviceID can run. There are different types of roles in the {{site.data.keyword.cloud_notm}}:
-* *Platform management roles* define permissions to work with the service at the platform level, for example, some actions are assign user access for the service, create or delete service IDs, create instances, assign policies for your service to other users, and bind instances to applications. [Learn more](/docs/Log-Analysis-with-LogDNA?topic=LogDNA-iam#platform).
-* *Service access roles* define permissions for calling the service's API. [Learn more](/docs/Log-Analysis-with-LogDNA?topic=LogDNA-iam#service).
+* *Platform management roles* define permissions to work with the service at the platform level, for example, some actions are assign user access for the service, create or delete service IDs, create instances, assign policies for your service to other users, and bind instances to applications. [Learn more](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-iam#platform).
+* *Service access roles* define permissions for calling the service's API. [Learn more](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-iam#service).
 
 **For each access group, define a policy for each resource group that specifies the permissions granted to work with the resource group, the permissions to manage instances of the {{site.data.keyword.la_full_notm}} service in that resource group, and the permissions to run {{site.data.keyword.la_full_notm}} tasks.**
 {: tip}
@@ -321,7 +321,7 @@ You can assign a single policy to the access group instead of assigning the same
 **Add users and service IDs to an access group. Grant permissions to these users and service IDs through the access group.**
 {: tip}
 
-[Learn more](/docs/Log-Analysis-with-LogDNA?topic=LogDNA-work_iam).
+[Learn more](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-work_iam).
 
 
 ## 7. Configure the account settings for authentication into your account
@@ -376,7 +376,7 @@ If you have an additional firewall set up, or you have customized the firewall s
 ## 9. Define the notification strategy 
 {: #adoption_alerts}
 
-In a LogDNA instance, you define views to analyze the data. Then, you can configure 1 or more alerts per view to notify of an abnormal situation. [Learn more](/docs/Log-Analysis-with-LogDNA?topic=LogDNA-alerts).
+In a LogDNA instance, you define views to analyze the data. Then, you can configure 1 or more alerts per view to notify of an abnormal situation. [Learn more](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-alerts).
 
 You can choose to be notified by using an absence alert that is triggered when no data is available.
 
@@ -442,7 +442,7 @@ There are 2 types of data that you should consider archiving:
 
 In the LogDNA web UI, you can define custom views, dashboards, parsing templates, screens, and exclusion rules that you can use to view and analyze data.
 
-To reuse resource definitions that you define in your LogDNA instance, you can export these resources from {an {{site.data.keyword.la_full_notm}} instance as a JSON file. Then, you can import the definitions into other LogDNA instances. For example, you can reuse your LogDNA resources across different environments for your stage, pre-production, and production logging instances. [Learn more](/docs/Log-Analysis-with-LogDNA?topic=LogDNA-reuse_resource_definitions).
+To reuse resource definitions that you define in your LogDNA instance, you can export these resources from {an {{site.data.keyword.la_full_notm}} instance as a JSON file. Then, you can import the definitions into other LogDNA instances. For example, you can reuse your LogDNA resources across different environments for your stage, pre-production, and production logging instances. [Learn more](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-reuse_resource_definitions).
 
 **Backup LogDNA resource definitions into a version control system such as a git repository where you can control access to the archived files and manage versions.**
 {: tip}
@@ -480,7 +480,7 @@ When you plan the bucket for a LogDNA instance, consider the following informati
 `[6]`: Resiliency refers to the scope and scale of the geographic area across which your data is distributed. For example, you can choose cross region resiliency to spread your data across several geographical areas, or regional resiliency to spread data across a single region. Notice that a single data center distributes data across devices within a single site only.
 
 
-**Create a custom COS bucket with the storage features and the policies that you identify.** [Learn more](/docs/Log-Analysis-with-LogDNA?topic=LogDNA-archiving).
+**Create a custom COS bucket with the storage features and the policies that you identify.** [Learn more](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-archiving).
 {: tip}
 
 **Do not configure a long-term retention policy on a COS bucket if you need access to the data and query it with the {{site.data.keyword.sqlquery_short}} service.**
@@ -637,7 +637,7 @@ For more information, see [Activity Tracker events](/docs/cloud-object-storage?t
 **Enable collection of COS management and data events on the bucket that you use to archive data from a LogDNA instance. Use these events to monitor activity in your COS bucket.**
 {: tip}
 
-In {{site.data.keyword.at_full}}, you can define views, dashboard, and screens to monitor COS management and data events. You can also configure alerts on views to notify you when a specific condition occurs. On a view, you can configure an email alert, a Slack alert, a PagerDuty alert, or any combination of the above. For more information, see [Creating custom views](/docs/Activity-Tracker-with-LogDNA?topic=logdnaat-views) and [Managing alerts](/docs/Activity-Tracker-with-LogDNA?topic=logdnaat-alerts).
+In {{site.data.keyword.at_full}}, you can define views, dashboard, and screens to monitor COS management and data events. You can also configure alerts on views to notify you when a specific condition occurs. On a view, you can configure an email alert, a Slack alert, a PagerDuty alert, or any combination of the above. For more information, see [Creating custom views](/docs/Activity-Tracker-with-LogDNA?topic=Log-Analysis-with-LogDNAat-views) and [Managing alerts](/docs/Activity-Tracker-with-LogDNA?topic=Log-Analysis-with-LogDNAat-alerts).
 
 For example, you can define a view that reports when an object is archived in a bucket. On that view, you can configure an email alert to notify you when an object has been archived. You might have compliance requirements that require you to control who accesses data that is archived. You can define a view that reports access to a bucket, and define an alert to notify you when that happens.
 

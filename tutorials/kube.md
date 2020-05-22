@@ -6,7 +6,7 @@ lastupdated: "2020-03-06"
 
 keywords: LogDNA, IBM, Log Analysis, logging, kubernetes, tutorial
 
-subcollection: LogDNA
+subcollection: Log-Analysis-with-LogDNA
 
 ---
 
@@ -50,9 +50,9 @@ In this tutorial, you will learn how to configure cluster-level logging.
 ## Before you begin
 {: #kube_prereqs}
 
-Work in a [supported region](/docs/Log-Analysis-with-LogDNA?topic=LogDNA-regions). **Note:** You can send data from a Kubernetes cluster that is located in the same region or in a different region. 
+Work in a [supported region](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-regions). **Note:** You can send data from a Kubernetes cluster that is located in the same region or in a different region. 
 
-Read about {{site.data.keyword.la_full_notm}}. For more information, see [About](/docs/Log-Analysis-with-LogDNA?topic=LogDNA-getting-started#getting-started_ov).
+Read about {{site.data.keyword.la_full_notm}}. For more information, see [About](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-getting-started#getting-started_ov).
 
 Use a user ID that is a member or an owner of an {{site.data.keyword.cloud_notm}} account. To get an {{site.data.keyword.cloud_notm}} user ID, go to: [Registration ![External link icon](../../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com/login){:new_window}.
 
@@ -99,11 +99,11 @@ To provision a service instance of {{site.data.keyword.la_full_notm}} through th
 
 7. Select the resource group that your cluster is in. By default, the **Default** resource group is set for you. 
 
-8. Choose a service plan for your service instance. By default, the **Lite** plan is selected for you. For more information about other service plans, see [Pricing plans](/docs/Log-Analysis-with-LogDNA?topic=LogDNA-service_plans).
+8. Choose a service plan for your service instance. By default, the **Lite** plan is selected for you. For more information about other service plans, see [Pricing plans](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-service_plans).
 
 9. To provision the {{site.data.keyword.la_full_notm}} service in the {{site.data.keyword.cloud_notm}} resource group where you are logged in, click **Create**. The **Observability** dashboard opens and shows the details for your service. 
 
-To provision an instance through the CLI, see [Provisioning an instance through the {{site.data.keyword.cloud_notm}} CLI](/docs/Log-Analysis-with-LogDNA?topic=LogDNA-provision#provision_cli).
+To provision an instance through the CLI, see [Provisioning an instance through the {{site.data.keyword.cloud_notm}} CLI](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-provision#provision_cli).
 {: tip}
 
 ## Step 2. Get the ingestion key
@@ -187,14 +187,14 @@ To launch the LogDNA dashboard through the {{site.data.keyword.cloud_notm}} cons
 
 3. Select **Logging**. The list of {{site.data.keyword.la_full_notm}} service instances that are available on {{site.data.keyword.cloud_notm}} is displayed.
 
-4. Select one instance and click **View LogDNA**. The LogDNA dashboard opens. **Note:** With the **Free** service plan, you can tail your latest logs only. For more information, see [Viewing logs](/docs/Log-Analysis-with-LogDNA?topic=LogDNA-view_logs#view_logs).
+4. Select one instance and click **View LogDNA**. The LogDNA dashboard opens. **Note:** With the **Free** service plan, you can tail your latest logs only. For more information, see [Viewing logs](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-view_logs#view_logs).
 
 ## Next steps
 {: #kube_next_steps}
 
-- [Filter logs](/docs/Log-Analysis-with-LogDNA?topic=LogDNA-view_logs#view_logs_step5)
-- [Search logs](/docs/Log-Analysis-with-LogDNA?topic=LogDNA-view_logs#view_logs_step6)
-- [Define views](/docs/Log-Analysis-with-LogDNA?topic=LogDNA-view_logs#view_logs_step7)
+- [Filter logs](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-view_logs#view_logs_step5)
+- [Search logs](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-view_logs#view_logs_step6)
+- [Define views](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-view_logs#view_logs_step7)
 - [Configure alerts](https://docs.logdna.com/docs/alerts). 
 
 **Note:** Some of these features require a plan upgrade.

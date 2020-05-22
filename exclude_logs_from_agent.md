@@ -2,11 +2,11 @@
 
 copyright:
   years:  2018, 2020
-lastupdated: "2020-05-11"
+lastupdated: "2020-05-21"
 
 keywords: LogDNA, IBM, Log Analysis, logging, config agent
 
-subcollection: LogDNA
+subcollection: Log-Analysis-with-LogDNA
 
 ---
 
@@ -43,7 +43,7 @@ Complete the following steps to configure the agent so that only application log
 1. Open a terminal to log in to {{site.data.keyword.cloud_notm}}.
 
    ```
-   ibmcloud login -a cloud.ibm.com
+   ibmcloud login -a cloud.ibm.com --sso
    ```
    {: pre}
 
@@ -76,14 +76,18 @@ Complete the following steps to configure the agent so that only application log
    ```
    {: pre}
 
+   Where `<cluster_name_or_ID>` is the name or the ID of the cluster.
+
 5. Generate the configuration file of the agent by running the following command:
 
     ```
-    kubectl get daemonset logdna-agent -o=yaml > prod-logdna-agent-ds.yaml
+    kubectl get daemonset logdna-agent -o=yaml > prod-logdna-agent-ds.yaml -n ibm-observe
     ```
     {: codeblock}
 
-6. Make changes. Add the section **LOGDNA_EXCLUDE**, and exclude all cluster logs. Add the following section to the yaml file:
+6. Make changes. Add the section **LOGDNA_EXCLUDE** to the yaml file:
+
+    To exclude all cluster logs, enter:
 
     ```
     - name: LOGDNA_EXCLUDE
@@ -91,7 +95,7 @@ Complete the following steps to configure the agent so that only application log
     ```
     {: codeblock}
 
-    You can also exclude logs by namespace. For example, to exclude all of the *kube-system* logs, enter:
+    To exclude logs by namespace, for example, to exclude all of the *kube-system* logs, enter:
 
     ```
     - name: LOGDNA_EXCLUDE

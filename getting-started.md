@@ -2,11 +2,11 @@
 
 copyright:
   years:  2018, 2020
-lastupdated: "2020-05-19"
+lastupdated: "2020-05-21"
 
 keywords: LogDNA, IBM, Log Analysis, logging, getting started
 
-subcollection: LogDNA
+subcollection: Log-Analysis-with-LogDNA
 
 ---
 
@@ -69,8 +69,8 @@ After you provision an instance of {{site.data.keyword.la_full_notm}}, an accoun
 
 Then, you must configure your log sources:
 
-* You can enable per region a LogDNA instance to host logs from enabled {{site.data.keyword.cloud_notm}} services. For example, to collect logs from a Cloud Foundry app, you can enable the *service platform logs* flag. [Learn more](/docs/Log-Analysis-with-LogDNA?topic=LogDNA-config_svc_logs). As soon as this feature is enabled, logs are collected automatically.
-* You can configure a LogDNA agent for a log source. A log source is a Cloud or on-prem resource that generates logs. For example, a log source can be a Kubernetes cluster. You use the ingestion key to configure the LogDNA agent that is responsible for collecting and forwarding logs to your {{site.data.keyword.la_full_notm}} instance. After the LogDNA agent is deployed in a log source, collection and forwarding of logs to the {{site.data.keyword.la_full_notm}} instance is automatic. [Learn more](/docs/Log-Analysis-with-LogDNA?topic=LogDNA-logdna_agent).
+* You can enable per region a LogDNA instance to host logs from enabled {{site.data.keyword.cloud_notm}} services. For example, to collect logs from a Cloud Foundry app, you can enable the *service platform logs* flag. [Learn more](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-config_svc_logs). As soon as this feature is enabled, logs are collected automatically.
+* You can configure a LogDNA agent for a log source. A log source is a Cloud or on-prem resource that generates logs. For example, a log source can be a Kubernetes cluster. You use the ingestion key to configure the LogDNA agent that is responsible for collecting and forwarding logs to your {{site.data.keyword.la_full_notm}} instance. After the LogDNA agent is deployed in a log source, collection and forwarding of logs to the {{site.data.keyword.la_full_notm}} instance is automatic. [Learn more](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-logdna_agent).
 
 You can launch the {{site.data.keyword.la_full_notm}} Web UI to view, monitor, and manage your logs from the **Observability** &gt; **Logging** page.
 
@@ -83,7 +83,7 @@ The following figure shows the components overview for the {{site.data.keyword.l
 ## Step 1. Before you begin
 {: #getting-started_prereqs}
 
-* Check the regions where the service is available. For more information, see [Regions](/docs/Log-Analysis-with-LogDNA?topic=LogDNA-regions).
+* Check the regions where the service is available. For more information, see [Regions](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-regions).
 * Get a user ID that is a member or an owner of an {{site.data.keyword.cloud_notm}} account. 
 
     To get an {{site.data.keyword.cloud_notm}} user ID, click [Registration ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com/login){:new_window}.
@@ -97,8 +97,8 @@ The following table lists examples of cloud resources that you can configure to 
 
 | Resource | Tutorial | Environment | Scenario |
 |----------|----------|-------------|----------|
-| `Containers running on the {{site.data.keyword.containershort}}` | [Managing Kubernetes cluster logs with {{site.data.keyword.la_full_notm}}](/docs/Log-Analysis-with-LogDNA?topic=LogDNA-kube#kube) | {{site.data.keyword.cloud_notm}} Public | ![{{site.data.keyword.containershort}} and the {{site.data.keyword.la_full_notm}}](images/kube.png "{{site.data.keyword.containershort}} and the {{site.data.keyword.la_full_notm}}")| 
-| `Linux Ubuntu`, `Linux Debian` | [Managing Linux Ubuntu logs with {{site.data.keyword.la_full_notm}}](/docs/Log-Analysis-with-LogDNA?topic=LogDNA-ubuntu#ubuntu) | On premisses | ![Ubuntu server and the {{site.data.keyword.la_full_notm}}](images/ubuntu.png "Ubuntu server and the {{site.data.keyword.la_full_notm}}") |
+| `Containers running on the {{site.data.keyword.containershort}}` | [Managing Kubernetes cluster logs with {{site.data.keyword.la_full_notm}}](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-kube#kube) | {{site.data.keyword.cloud_notm}} Public | ![{{site.data.keyword.containershort}} and the {{site.data.keyword.la_full_notm}}](images/kube.png "{{site.data.keyword.containershort}} and the {{site.data.keyword.la_full_notm}}")| 
+| `Linux Ubuntu`, `Linux Debian` | [Managing Linux Ubuntu logs with {{site.data.keyword.la_full_notm}}](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-ubuntu#ubuntu) | On premisses | ![Ubuntu server and the {{site.data.keyword.la_full_notm}}](images/ubuntu.png "Ubuntu server and the {{site.data.keyword.la_full_notm}}") |
 {: caption="Table 1. Tutorials to get started working with the {{site.data.keyword.la_full_notm}} service" caption-side="top"}
 
 
@@ -108,7 +108,10 @@ The following table lists examples of cloud resources that you can configure to 
 
 Enable more logging features.
 
-Upgrade the {{site.data.keyword.la_full_notm}} service plan to a paid plan to be able to [filter logs](/docs/Log-Analysis-with-LogDNA?topic=LogDNA-view_logs#view_logs_step5), [search logs](/docs/Log-Analysis-with-LogDNA?topic=LogDNA-view_logs#view_logs_step6), [define views](/docs/Log-Analysis-with-LogDNA?topic=LogDNA-view_logs#view_logs_step7), and [configure alerts](https://docs.logdna.com/docs/alerts). For more information about {{site.data.keyword.la_full_notm}} service plans, see [Pricing plans](/docs/Log-Analysis-with-LogDNA?topic=LogDNA-service_plans).
+Upgrade the {{site.data.keyword.la_full_notm}} service plan to a paid plan to be able to [filter logs](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-view_logs#view_logs_step5), [search logs](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-view_logs#view_logs_step6), [define views](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-view_logs#view_logs_step7), and [configure alerts](https://docs.logdna.com/docs/alerts). For more information about {{site.data.keyword.la_full_notm}} service plans, see [Pricing plans](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-service_plans).
+
+
+
 
 ## Step 4. Next steps 
 {: #getting-started_iam}
@@ -117,19 +120,19 @@ Next, manage user access with IAM.
 
 Identify the IAM policies that a user needs to work with the {{site.data.keyword.la_full_notm}} service.
 
-To learn more about IAM integration with the {{site.data.keyword.la_full_notm}} service, see [Managing user access with IAM](/docs/Log-Analysis-with-LogDNA?topic=LogDNA-iam#iam).
+To learn more about IAM integration with the {{site.data.keyword.la_full_notm}} service, see [Managing user access with IAM](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-iam#iam).
 
 For example, choose one user role to learn how to grant permissions to that user to work with the {{site.data.keyword.la_full_notm}} service. 
 
 | User role in the {{site.data.keyword.cloud_notm}} | For more information                     |
 |-----------------------------------------------------|------------------------------------------|
-| Account owner                                       | [Granting permissions to a user to become an administrator of the service in the {{site.data.keyword.cloud_notm}} account](/docs/Log-Analysis-with-LogDNA?topic=LogDNA-work_iam#admin_account) |
-| Platform service administrator in the account       | [Granting permissions to a user to become an administrator of the service in the {{site.data.keyword.cloud_notm}} account](/docs/Log-Analysis-with-LogDNA?topic=LogDNA-work_iam#admin_account) |
-| Platform service administrator in a resource group  | [Granting permissions to a user to become an administrator of the service within a resource group](/docs/Log-Analysis-with-LogDNA?topic=LogDNA-work_iam#admin_rg) |
-| Platform DevOps operator in the account           | [Granting permissions to a DevOps user to manage the service in the {{site.data.keyword.cloud_notm}} account](/docs/Log-Analysis-with-LogDNA?topic=LogDNA-work_iam#devops_account) |
-| Platform DevOps operator in a resource group        | [Granting permissions to a DevOps user to manage the service within a resource group](/docs/Log-Analysis-with-LogDNA?topic=LogDNA-work_iam#devops_rg) |
-| Service administrator in LogDNA                     | [Granting permissions to manage logs and configure alerts in LogDNA](/docs/Log-Analysis-with-LogDNA?topic=LogDNA-work_iam#admin_user_logdna)              |
-| User / Developer                                    | [Granting permissions to a user to view and manage logs in LogDNA](/docs/Log-Analysis-with-LogDNA?topic=LogDNA-work_iam#user_logdna)               |
+| Account owner                                       | [Granting permissions to a user to become an administrator of the service in the {{site.data.keyword.cloud_notm}} account](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-work_iam#admin_account) |
+| Platform service administrator in the account       | [Granting permissions to a user to become an administrator of the service in the {{site.data.keyword.cloud_notm}} account](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-work_iam#admin_account) |
+| Platform service administrator in a resource group  | [Granting permissions to a user to become an administrator of the service within a resource group](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-work_iam#admin_rg) |
+| Platform DevOps operator in the account           | [Granting permissions to a DevOps user to manage the service in the {{site.data.keyword.cloud_notm}} account](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-work_iam#devops_account) |
+| Platform DevOps operator in a resource group        | [Granting permissions to a DevOps user to manage the service within a resource group](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-work_iam#devops_rg) |
+| Service administrator in LogDNA                     | [Granting permissions to manage logs and configure alerts in LogDNA](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-work_iam#admin_user_logdna)              |
+| User / Developer                                    | [Granting permissions to a user to view and manage logs in LogDNA](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-work_iam#user_logdna)               |
 {: caption="Table 2. Cloud roles in the {{site.data.keyword.cloud_notm}}" caption-side="top"}
 
 

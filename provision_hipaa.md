@@ -6,7 +6,7 @@ lastupdated: "2020-03-18"
 
 keywords: LogDNA, IBM, Log Analysis, logging, overview
 
-subcollection: LogDNA
+subcollection: Log-Analysis-with-LogDNA
 
 ---
 
@@ -68,9 +68,9 @@ If you need to grant permissions to more than 25 users, [open a support ticket](
 {: #compliance_hipaa_provision_provision}
 
 Choose any of the following methods to provision an instance of the {{site.data.keyword.la_full_notm}} service:
-[Provisioning an instance through the Observability dashboard](/docs/Log-Analysis-with-LogDNA?topic=LogDNA-provision#provision_ui)
-[Provisioning an instance through the catalog](/docs/Log-Analysis-with-LogDNA?topic=LogDNA-provision#provision_catalog)
-[Provisioning an instance through the CLI](/docs/Log-Analysis-with-LogDNA?topic=LogDNA-provision#provision_cli)
+[Provisioning an instance through the Observability dashboard](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-provision#provision_ui)
+[Provisioning an instance through the catalog](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-provision#provision_catalog)
+[Provisioning an instance through the CLI](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-provision#provision_cli)
 
 Make sure that your naming convention for {{site.data.keyword.la_full_notm}} instances does not include PII information. Choose the **HIPAA service plan** for your logging instances.
 {: important}
@@ -94,7 +94,7 @@ Complete the following steps:
 ## Next steps
 {: #compliance_hipaa_iam}
 
-Restrict access to manage and view the data. [Learn more](/docs/Log-Analysis-with-LogDNA?topic=LogDNA-iam).
+Restrict access to manage and view the data. [Learn more](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-iam).
 
 
 

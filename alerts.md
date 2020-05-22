@@ -6,7 +6,7 @@ lastupdated: "2020-03-06"
 
 keywords: LogDNA, IBM, Log Analysis, logging, alerts
 
-subcollection: LogDNA
+subcollection: Log-Analysis-with-LogDNA
 
 ---
 
@@ -83,7 +83,7 @@ Complete the following steps to attach a preset to a view:
 
     Apply a time frame, filters and search criteria to filter the log lines that are displayed through the view. 
 
-    For more information, see [Creating views](/docs/Log-Analysis-with-LogDNA?topic=LogDNA-view_logs#view_logs_step7).
+    For more information, see [Creating views](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-view_logs#view_logs_step7).
 
 3. Click the view name. Then, select **Attach an alert**.
 
@@ -104,7 +104,7 @@ Complete the following steps to attach an alert to a view:
 
     Apply a time frame, filters and search criteria to filter the log lines that are displayed through the view. 
 
-    For more information, see [Creating views](/docs/Log-Analysis-with-LogDNA?topic=LogDNA-view_logs#view_logs_step7).
+    For more information, see [Creating views](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-view_logs#view_logs_step7).
 
 3. Click the view name. Then, select **Attach an alert**.
 
