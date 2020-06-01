@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2020
-lastupdated: "2020-03-06"
+lastupdated: "2020-06-01"
 
 keywords: LogDNA, IBM, Log Analysis, logging, kubernetes, tutorial, reset ingestion key
 
@@ -22,7 +22,7 @@ subcollection: Log-Analysis-with-LogDNA
 {:note: .note}
 
 
-# Resetting the ingestion key used by a Kubernetes cluster to forward logs to an {{site.data.keyword.la_full_notm}} instance
+# Resetting the ingestion key that is used by a Kubernetes cluster to forward logs to an {{site.data.keyword.la_full_notm}} instance
 {: #kube_reset}
 
 If the ingestion key that you use to forward logs from a cluster to an {{site.data.keyword.la_full_notm}} instance in the {{site.data.keyword.cloud_notm}} is compromised, you must reset the key and update the Kubernetes cluster configuration to use the new ingestion key. 

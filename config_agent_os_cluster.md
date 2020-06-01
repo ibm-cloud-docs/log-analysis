@@ -21,7 +21,7 @@ subcollection: Log-Analysis-with-LogDNA
 {:important: .important}
 {:note: .note}
 
-# Connecting a LogDNA agent to an OpenShift Kubernetes cluster
+# Connect an OpenShift Kubernetes cluster by using a LogDNA agent with an {{site.data.keyword.la_full_notm}} instance
 {: #config_agent_os_cluster}
 
 The LogDNA agent is responsible for collecting and forwarding logs to your {{site.data.keyword.la_full_notm}} instance. After you provision an instance of {{site.data.keyword.la_full}}, you must configure a LogDNA agent for each log source that you want to monitor.

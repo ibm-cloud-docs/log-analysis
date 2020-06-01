@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2020
-lastupdated: "2020-03-06"
+lastupdated: "2020-06-01"
 
 keywords: LogDNA, IBM, Log Analysis, logging instance, provision
 
@@ -59,7 +59,7 @@ To provision an instance from the Observability dashboard in the {{site.data.key
 
     By default, the lite plan is set.
 
-    For more information about other service plans, see [Pricing plans](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-about#overview_pricing_plans).
+    For more information about other service plans, see [Pricing plans](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-service_plans).
 
 8. Click **Create**.
 

@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2020
-lastupdated: "2020-03-06"
+lastupdated: "2020-06-01"
 
 keywords: LogDNA, IBM, Log Analysis, logging instance, enable, service logs
 
@@ -21,10 +21,10 @@ subcollection: Log-Analysis-with-LogDNA
 {:important: .important}
 {:note: .note}
 
-# Configuring {{site.data.keyword.cloud_notm}} service logs
+# Configuring {{site.data.keyword.cloud_notm}} platform logs
 {: #config_svc_logs}
 
-To view logs from platform services in your account, you must configure {{site.data.keyword.la_full_notm}}.
+To monitor logs from {{site.data.keyword.cloud_notm}} platform services in your account, you must configure {{site.data.keyword.la_full_notm}}.
 {:shortdesc}
 
 You can have multiple {{site.data.keyword.la_full_notm}} instances in a location. However, only 1 instance in a location (region) can be configured to receive logs from [enabled services](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-cloud_services) in that {{site.data.keyword.cloud_notm}} location.

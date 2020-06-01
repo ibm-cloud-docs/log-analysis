@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2020
-lastupdated: "2020-03-06"
+lastupdated: "2020-06-01"
 
 keywords: LogDNA, IBM, Log Analysis, logging, ingestion key
 
@@ -33,7 +33,7 @@ The ingestion key is a security key that you must use to configure LogDNA agents
 * To work with ingestion keys through the {{site.data.keyword.cloud_notm}} UI, you must have an IAM policy with platform role **Editor** and service role **Manager** for the {{site.data.keyword.la_full_notm}} service. 
 
 
-## Get the ingestion key through the {{site.data.keyword.cloud_notm}} UI
+## Getting the ingestion key through the {{site.data.keyword.cloud_notm}} UI
 {: #ibm_cloud_ui}
 
 To get the ingestion key for an {{site.data.keyword.la_full_notm}} instance by using the {{site.data.keyword.cloud_notm}} UI, complete the following steps:
@@ -44,27 +44,31 @@ To get the ingestion key for an {{site.data.keyword.la_full_notm}} instance by u
 
 3. Select **Logging**. The {{site.data.keyword.la_full_notm}} dashboard opens. You can see the list of logging instances that are available on {{site.data.keyword.cloud_notm}}.
 
-3. Identify the instance for which you want to get the ingestion key, and click **View ingestion key**.
+3. Identify the instance that you want to use to collect your cluster logs. 
 
-4. A window opens where you can click **Show** to view the ingestion key.
+4. Select the actions icon. Then, click **View key**.
+
+    A window opens where you can click **Show** to view the ingestion key.
 
 
-## Get the ingestion key through the {{site.data.keyword.la_full_notm}} web UI
+## Getting the ingestion key through the {{site.data.keyword.la_full_notm}} web UI
 {: #logdna_ui}
 
 To get the ingestion key for an {{site.data.keyword.la_full_notm}} instance by using the {{site.data.keyword.la_full_notm}} Web UI, complete the following steps:
 
 1. [Launch the {{site.data.keyword.la_full_notm}} web UI](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-view_logs#view_logs_step2).
 
-2. Click the **Configuration** icon ![Configuration icon](images/admin.png) &gt; **Organization**. 
+2. Click the **Configuration** icon ![Configuration icon](images/admin.png) &gt; **Organization** &gt; **API keys**. 
 
-3. Select **API keys**. 
+    You can see the ingestion keys that are enabled. 
 
-You can see the ingestion keys that are enabled. 
+3. Copy the ingestion key that shows in the **API keys** section. 
 
 
 
-## Get the ingestion key through the CLI
+
+
+## Getting the ingestion key through the CLI
 {: #ingestion_key_cli}
 
 To get the ingestion key for a LogDNA instance through the command line, complete the following steps:
@@ -110,7 +114,7 @@ To get the ingestion key for a LogDNA instance through the command line, complet
 
 
 
-## Reset the ingestion key 
+## Resetting the ingestion key 
 {: #reset}
 
 If the ingestion key is compromised or you have a policy to renew it after a number of days, you can generate a new key and delete the old one.

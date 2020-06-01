@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2020
-lastupdated: "2020-03-06"
+lastupdated: "2020-06-01"
 
 keywords: LogDNA, IBM, Log Analysis, logging, cf
 
@@ -23,7 +23,7 @@ subcollection: Log-Analysis-with-LogDNA
 {:note: .note}
 
 
-# Managing logs from CF resources
+# Collecting and analyzing logs from CF resources
 {: #monitor_cfapp_logs}
 
 In {{site.data.keyword.cloud}} public, you can monitor logs from Cloud Foundry (CF) resources that run in the {{site.data.keyword.cloud_notm}} or outside the {{site.data.keyword.cloud_notm}} by using the {{site.data.keyword.la_full_notm}} service. You can view, filter, search, and analyze these logs through the web UI for a number of days that is determined by the plan of your logging instance. You can also configure archiving, and have access to those logs through the archived files.

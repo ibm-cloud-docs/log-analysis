@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2020
-lastupdated: "2020-03-06"
+lastupdated: "2020-06-01"
 
 keywords: LogDNA, IBM, Log Analysis, logging, ubuntu, tutorial
 
@@ -22,7 +22,7 @@ subcollection: Log-Analysis-with-LogDNA
 {:note: .note}
 
 
-# Managing Ubuntu logs with {{site.data.keyword.la_full_notm}}
+# Collecting and analyzing logs from Linux sources
 {: #ubuntu}
 
 Use the {{site.data.keyword.la_full}} service to monitor and manage Ubuntu logs in a centralized logging system on the {{site.data.keyword.cloud_notm}}. 
