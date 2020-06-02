@@ -21,7 +21,7 @@ subcollection: Log-Analysis-with-LogDNA
 {:important: .important}
 {:note: .note}
 
-# Connect a standard Kubernetes cluster by using a LogDNA agent with an {{site.data.keyword.la_full_notm}} instance
+# Connect a standard Kubernetes cluster to an {{site.data.keyword.la_full_notm}} instance by using a LogDNA agent
 {: #config_agent_kube_cluster}
 
 The LogDNA agent is responsible for collecting and forwarding logs to your {{site.data.keyword.la_full_notm}} instance. After you provision an instance of {{site.data.keyword.la_full}}, you must configure a LogDNA agent for each log source that you want to monitor.
@@ -255,7 +255,7 @@ To get a copy of the LogDNA agent configuration that is deployed, you can run th
 
 
 
-## Deploy and connect the LogDNA agent V2 within the context of the cluster
+## Deploy the LogDNA agent V2 within the context of the cluster
 {: #config_agent_kube_ob}
 
 When you deploy and connect a LogDNA agent within the context of the cluster, consider the following information:
@@ -280,7 +280,7 @@ The minimum persmissions that a user must have to launch the LogDNA web UI from 
 * **Viewer** platform role and **Reader** service role for the {{site.data.keyword.containerlong_notm}} service to see the cluster and open the cluster's UI.
 * **Viewer** platform role, and **Reader** service role for the {{site.data.keyword.la_full_notm}} instance to launch the LogDNA web UI, and analyze logs through the LogDNA web UI.
 
-### Deploy the LogDNA agent V2 within the context of the cluster from the {{site.data.keyword.cloud_notm}} console
+### Deploy the LogDNA agent V2 from the {{site.data.keyword.containerlong_notm}} console
 {: #config_agent_kube_ob_ui}
 
 
@@ -311,7 +311,7 @@ Complete the following steps from the [{{site.data.keyword.containerlong_notm}} 
 6. Click **Connect**.
 
 
-### Deploy the LogDNA agent V2 within the context of the cluster by using ob commands
+### Deploy the LogDNA agent V2 by using ob commands
 {: #config_agent_kube_ob_cli}
 
 To configure the LogDNA agent in the cluster, you must log in to the {{site.data.keyword.cloud_notm}} by using `ibmcloud` commands. You must set the cluster context by using `ibmcloud ks` commands. [Learn more](/docs/containers?topic=containers-cs_cli_install#cs_cli_install_steps). You must install the {{site.data.keyword.containerlong_notm}} observability CLI plug-in (ibmcloud ob).

@@ -83,26 +83,25 @@ The following figure shows the components overview for the {{site.data.keyword.l
 ## Step 1. Before you begin
 {: #getting-started_prereqs}
 
-* Check the regions where the {{site.data.keyword.la_full_notm}} service is available. For more information, see [Regions](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-regions).
+* [Check the regions where the {{site.data.keyword.la_full_notm}} service is available](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-regions).
 
-* Get a user ID that is a member or an owner of an {{site.data.keyword.cloud_notm}} account. 
-
-    To get an {{site.data.keyword.cloud_notm}} user ID, click [Registration ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com/login){:new_window}.
+* [Register in {{site.data.keyword.cloud_notm}} ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com/login){:new_window}. You need an IBMid to work in {{site.data.keyword.cloud_notm}}.
 
 ## Step 2. Get started
 {: #getting-started_step2}
 
 Choose a log resource. Then, complete the get started section:
 
-| Log source | Get started | Scenario |
-|------------|-------------|----------|
-| `{{site.data.keyword.cloud_notm}} service` | [Collecting and analyzing logs from {{site.data.keyword.cloud_notm}} service logs in your account](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-config_svc_logs) | ![Platform logs](images/Logging-platform-services.png "Platform logs") |
-| `Standard Kubernetes cluster` | [Collecting and analyzing logs from a Kubernetes cluster](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-kube#kube) | ![{{site.data.keyword.containershort}} and the {{site.data.keyword.la_full_notm}}](images/kube.png "{{site.data.keyword.containershort}} and the {{site.data.keyword.la_full_notm}}")| 
-| `Linux Ubuntu`, `Linux Debian` | [Collecting and analyzing logs from a Linux environment](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-ubuntu#ubuntu) | ![Ubuntu server and the {{site.data.keyword.la_full_notm}}](images/ubuntu.png "Ubuntu server and the {{site.data.keyword.la_full_notm}}") |
-| `Cloud Foundry [1]` | [Collecting and analyzing logs from CF resources](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-monitor_cfapp_logs) | ![Monitor CF resources in IBM Cloud Public](images/components-cf-public.png "Monitor CF resources in IBM Cloud Public") |
+| Log source | Get started | 
+|------------|-------------|
+| `{{site.data.keyword.cloud_notm}} service` | [Collecting and analyzing logs from {{site.data.keyword.cloud_notm}} service logs in your account](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-config_svc_logs) |
+| `Standard Kubernetes cluster` | [Collecting and analyzing logs from a Kubernetes cluster](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-kube#kube) |
+| `Linux Ubuntu`, `Linux Debian` | [Collecting and analyzing logs from a Linux environment](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-ubuntu#ubuntu) |
+| `Cloud Foundry [1]` | [Collecting and analyzing logs from CF resources](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-monitor_cfapp_logs) |
 {: caption="Table 1. Tutorials to get started working with the {{site.data.keyword.la_full_notm}} service" caption-side="top"}
 
 `[1]` If your CF resources run on {{site.data.keyword.cloud_notm}} public, you can choose to automatically collect these logs and monitor them through the {{site.data.keyword.la_full_notm}} instance that is provisioned in the same region, and that is enabled to host platform logs. Alternatively, you can choose to configure a custom user provided (CUPS) service for your app, so system and application logs are collected and streamed to a custom logging instance.
+
 
 ## Step 3. Upgrade the plan
 {: #getting-started_step3}
