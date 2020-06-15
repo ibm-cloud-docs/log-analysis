@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2020
-lastupdated: "2020-05-21"
+lastupdated: "2020-06-15"
 
 keywords: LogDNA, IBM, Log Analysis, logging, config agent
 
@@ -107,7 +107,7 @@ Complete the following steps to configure the agent so that only application log
 
     ```
     - name: LOGDNA_EXCLUDE
-      value: /var/log/!(containers)**
+      value: /var/log/!(containers)/**
     ```
     {: codeblock}
 

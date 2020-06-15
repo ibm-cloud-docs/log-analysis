@@ -24,17 +24,29 @@ subcollection: Log-Analysis-with-LogDNA
 # Configuring {{site.data.keyword.cloud_notm}} platform logs
 {: #config_svc_logs}
 
-To monitor logs from {{site.data.keyword.cloud_notm}} platform services in your account, you must configure {{site.data.keyword.la_full_notm}}.
+`Platform logs` are logs that are exposed by enabled-LogDNA services and the platform in {{site.data.keyword.cloud_notm}}. You must configure a LogDNA instance in a region to monitor these logs.
 {:shortdesc}
 
-You can have multiple {{site.data.keyword.la_full_notm}} instances in a location. However, only 1 instance in a location (region) can be configured to receive logs from [enabled services](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-cloud_services) in that {{site.data.keyword.cloud_notm}} location.
-{: important}
+* Platform logs are regional. 
+
+    You can monitor logs from enabled-LogDNA services on the {{site.data.keyword.cloud_notm}} in the region where the service is available. 
+
+* You can configure 1 instance only of the {{site.data.keyword.la_full_notm}} service per region to collect *platform logs* in that location. 
+
+    You can have multiple {{site.data.keyword.la_full_notm}} instances in a location. However, only 1 instance in a location (region) can be configured to receive logs from [enabled services](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-cloud_services) in that {{site.data.keyword.cloud_notm}} location.
+    {: important}
+
+* To configure a LogDNA instance, you must set on the *platform logs* configuration setting. Also, you must have the platform role `editor` or higher for the {{site.data.keyword.la_full_notm}} service in your account.
+
+* If a LogDNA instance in a region is already enabled to collect platform logs, logs from enabled-LogDNA services are collected automatically and available for analysis through this instance. For more information about enabled-LogDNA services, see [Cloud services](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-cloud_services).
+
+* To monitor platform logs for a service instance, check that the {{site.data.keyword.la_full_notm}} instance is provisioned in the same region where the service instance that you want to monitor is provisioned.
 
 
-## Configuring platform services logs through the Observability dashboard
+## Configuring platform logs through the Observability dashboard
 {: #config_svc_logs_ui}
 
-To configure an instance from the Observability dashboard in the {{site.data.keyword.cloud_notm}}, complete the following steps:
+To configure a logging instance from the Observability dashboard in the {{site.data.keyword.cloud_notm}}, complete the following steps:
 
 1. [Log in to your {{site.data.keyword.cloud_notm}} account ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com/login){:new_window}.
 
@@ -42,7 +54,7 @@ To configure an instance from the Observability dashboard in the {{site.data.key
 
 2. Go to the menu icon ![menu icon](../../icons/icon_hamburger.svg) &gt; **Observability** to access the *Observability* dashboard.
 
-3. Select **Logging**, then click **Configure platform services logs**. 
+3. Select **Logging**, then click **Configure platform logs**. 
 
 4. Select a [region](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-regions). 
 
@@ -52,12 +64,12 @@ To configure an instance from the Observability dashboard in the {{site.data.key
 
 The main *Observability* page opens.
 
-The instance that you choose to receive service logs shows the flag **Platform services logs**.
+The instance that you choose to receive service logs shows the flag **Platform logs**.
 
 
 
-## Enabling a LogDNA instance from the command line
-{: #platform_metrics_enabling_cli}
+## Configuring platform logs from the command line
+{: #platform_logs_enabling_cli}
 
 To enable platform logs in a region, the instance that you want to configure to receive platform logs must have set on the **default_receiver** property.
 {: note}
@@ -81,14 +93,12 @@ Complete the following steps:
 
 5. Get the plan ID of the instance. 
 
-    Run the following command and copy the value of the field `resource_plan_id`. This value is needed to update the instance.
+    Run the following command. Look for the entry of the logging instance. Then, copy the value of the field `resource_plan_id`. This value is needed to update the instance.
 
     ```
-    ibmcloud resource service-instance InstanceName --output JSON
+    ibmcloud resource service-instances --long --output JSON
     ```
     {: pre}
-
-    Where `InstanceName` is the name of your LogDNA instance.
 
 5. Set on the **default_receiver** property. Run the following command:
 

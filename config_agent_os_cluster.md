@@ -90,21 +90,6 @@ Complete the following steps:
 
 5. Log in to the cluster. Choose a method to login to an OpenShift cluster. [Learn more about the methods to login](/docs/openshift?topic=openshift-access_cluster#access_automation).
 
-    For example, you can create an {{site.data.keyword.cloud_notm}} IAM API key, and then use the API key to log in to an OpenShift cluster. 
-
-    Create an {{site.data.keyword.cloud_notm}} API key.<p class="important">Save your API key in a secure location. You cannot retrieve the API key again. If you want to export the output to a file on your local machine, include the `--file <path>/<file_name>` flag.</p>
-
-    ```
-    ibmcloud iam api-key-create <name>
-    ```
-    {: pre}
-
-    Then, use the API key to login:
-
-    ```
-    oc login -u apikey -p <API_key>
-    ```
-    {: pre}
 
 ## Step 2. Store your LogDNA ingestion key as a Kubernetes secret
 {: #config_agent_os_cluster_step2}
@@ -131,7 +116,7 @@ You must create a Kubernetes secret to store your LogDNA ingestion key for your 
 
     `PROJECT` is the namespace where the LogDNA pods run. Set this value to **ibm-observe**.
 
-    `SERVICEACCOUNT_NAME` is the name of the service account that you use to deploy the LogDNA agent. Set this value to **logdna-agent**. Notice that if you leave the service account name blank, the default service account is used instaead of the service account that you created. 
+    `SERVICEACCOUNT_NAME` is the name of the service account that you use to deploy the LogDNA agent. Set this value to **logdna-agent**. Notice that if you leave the service account name blank, the default service account is used instead of the service account that you created. 
 
     ```
     oc create serviceaccount logdna-agent -n ibm-observe

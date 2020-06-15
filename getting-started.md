@@ -94,10 +94,10 @@ Choose a log resource. Then, complete the get started section:
 
 | Log source | Get started | 
 |------------|-------------|
-| `{{site.data.keyword.cloud_notm}} service` | [Collecting and analyzing logs from {{site.data.keyword.cloud_notm}} service logs in your account](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-config_svc_logs) |
-| `Standard Kubernetes cluster` | [Collecting and analyzing logs from a Kubernetes cluster](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-kube#kube) |
-| `Linux Ubuntu`, `Linux Debian` | [Collecting and analyzing logs from a Linux environment](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-ubuntu#ubuntu) |
-| `Cloud Foundry [1]` | [Collecting and analyzing logs from CF resources](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-monitor_cfapp_logs) |
+| {{site.data.keyword.cloud_notm}} service | [Collecting and analyzing logs from {{site.data.keyword.cloud_notm}} service logs in your account](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-config_svc_logs) |
+| Standard Kubernetes cluster | [Collecting and analyzing logs from a Kubernetes cluster](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-kube#kube) |
+| Linux Ubuntu </br>Linux Debian | [Collecting and analyzing logs from a Linux environment](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-ubuntu#ubuntu) |
+| Cloud Foundry `[1]` | [Collecting and analyzing logs from CF resources](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-monitor_cfapp_logs) |
 {: caption="Table 1. Tutorials to get started working with the {{site.data.keyword.la_full_notm}} service" caption-side="top"}
 
 `[1]` If your CF resources run on {{site.data.keyword.cloud_notm}} public, you can choose to automatically collect these logs and monitor them through the {{site.data.keyword.la_full_notm}} instance that is provisioned in the same region, and that is enabled to host platform logs. Alternatively, you can choose to configure a custom user provided (CUPS) service for your app, so system and application logs are collected and streamed to a custom logging instance.
