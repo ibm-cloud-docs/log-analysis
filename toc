@@ -88,4 +88,5 @@ IBM Log Analysis with LogDNA
 
     {: .navgroup id="help"}
     gettinghelp.md
+    faq.md
     {: .navgroup-end}
