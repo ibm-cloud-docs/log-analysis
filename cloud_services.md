@@ -145,7 +145,7 @@ The following table lists Cloud services that send logs to {{site.data.keyword.l
 
 | Service     | Description | More info about the integration with {{site.data.keyword.la_full_notm}} |
 |-------------|-------------|-------------------------------------------------------------------------|
-| [{{site.data.keyword.loadbalancer_full}}](/docs/loadbalancer-service?topic=loadbalancer-service-getting-started) | Use this service to improve availability of business-critical applications by distributing traffic among multiple application server instances, and by forwarding traffic to healthy instances only. | [More info](/docs/loadbalancer-service?topic=loadbalancer-service-data-logging)
+| [{{site.data.keyword.loadbalancer_full}}](/docs/loadbalancer-service?topic=loadbalancer-service-getting-started) | Use this service to improve availability of business-critical applications by distributing traffic among multiple application server instances, and by forwarding traffic to healthy instances only. | [More info](/docs/loadbalancer-service?topic=loadbalancer-service-data-logging) |
 {: caption="Table 7. List of security networking services" caption-side="top"} 
 
 
@@ -158,28 +158,24 @@ There are 2 types of VPC infrastructure that you can provision in your account:
 * [Virtual Private Cloud classic Gen 1](/docs/vpc-on-classic?topic=vpc-on-classic-getting-started)
 * [{{site.data.keyword.vpc_full}} Gen 2](/docs/vpc?topic=vpc-getting-started)
 
+The following tables lists VPC infrastructure services that send metrics to {{site.data.keyword.at_full_notm}}:
 
-The following table lists VPC infrastructure services that send metrics to {{site.data.keyword.at_full_notm}}:
+## VPC infrastructure Gen 1 (classic)
+{: #vpc_infrastructure_gen1}
+
 
 | Service     | Description |Events             |
 |-------------|-------------|-------------------|
 | `VPN`| Use this service to connect private networks in a secure fashion. You can use VPN to set up an IPsec site-to-site tunnel between your VPC and your on-premise private network or another VPC. | [More info](/docs/vpc?topic=vpc-using-logdna-to-view-vpn-logs) |
 {: caption="Table 8. List of VPC infrastructure services (generation 2)" caption-side="top"} 
-{: #vpc-table-2}
-{: tab-title="VPC Gen 2"}
-{: tab-group="VPC"}
-{: class="simple-tab-table"}
-{: row-headers}
+
+## VPC infrastructure Gen 2
+{: #vpc_infrastructure_gen2}
 
 | Service     | Description |Events             |
 |-------------|-------------|-------------------|
 | [VPN](/docs/vpc-on-classic-network?topic=vpc-on-classic-network---using-vpn-with-your-vpc)| Use this service to connect private networks in a secure fashion. You can use VPN to set up an IPsec site-to-site tunnel between your VPC and your on-premise private network or another VPC. | [More info](/docs/vpc-on-classic-network?topic=vpc-on-classic-network-using-logdna-to-view-vpn-logs) |
 {: caption="Table 9. List of VPC infrastructure services (generation 1)" caption-side="top"} 
-{: #vpc-table-1}
-{: tab-title="VPC Classic Gen 1"}
-{: tab-group="VPC"}
-{: class="simple-tab-table"}
-{: row-headers}
 
 
 
