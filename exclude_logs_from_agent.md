@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2020
-lastupdated: "2020-03-18"
+lastupdated: "2020-06-15"
 
 keywords: LogDNA, IBM, Log Analysis, logging, config agent
 
@@ -21,19 +21,20 @@ subcollection: Log-Analysis-with-LogDNA
 {:important: .important}
 {:note: .note}
 
-# Excluding log files through the LogDNA agent
+# Excluding log files
 {: #exclude_logs_from_agent}
 
-You can stop logs from being forwarded to your logging instance by modifying the LogDNA agent configuration file to exclude any files that you do not want the LogDNA agent to monitor. 
+Configure a LogDNA agent to exclude logs that you do not want to monitor through the LogDNA web UI. 
 {:shortdesc}
 
+* You can exclude files that are located in any of the paths that are defined through the **logdir** parameter in a Linux system or the **LOGDNA_EXCLUDE** variable in a Kubernetes cluster. 
+* You can configure multiple files. You separate multiple files by using commas. 
+* You can use glob patterns to define what you want to exclude. 
+* You can configure specific files.
 
-* You can exclude files that are located in any of the paths that are defined through the **logdir** parameter. 
-* To define the files, you can separate multiple files by using commas. You can use glob patterns. You can also configure specific files.
-{: note}
 
 
-## Excluding log files that are available in a standard Kubernetes cluster
+## Excluding log files for a standard Kubernetes cluster
 {: #exclude_logs_from_agent_kube}
 
 
@@ -42,7 +43,7 @@ Complete the following steps to configure the agent so that only application log
 1. Open a terminal to log in to {{site.data.keyword.cloud_notm}}.
 
    ```
-   ibmcloud login -a cloud.ibm.com
+   ibmcloud login -a cloud.ibm.com --sso
    ```
    {: pre}
 
@@ -75,16 +76,18 @@ Complete the following steps to configure the agent so that only application log
    ```
    {: pre}
 
-   When the download of the configuration files is finished, a command is displayed that you can use to set the path to the local Kubernetes configuration file as an environment variable. Copy and paste the command that is displayed in your terminal to set the `KUBECONFIG` environment variable.
+   Where `<cluster_name_or_ID>` is the name or the ID of the cluster.
 
 5. Generate the configuration file of the agent by running the following command:
 
     ```
-    kubectl get daemonset logdna-agent -o=yaml > prod-logdna-agent-ds.yaml
+    kubectl get daemonset logdna-agent -o=yaml > prod-logdna-agent-ds.yaml -n ibm-observe
     ```
     {: codeblock}
 
-6. Make changes. Add the section **LOGDNA_EXCLUDE**, and exclude all cluster logs. Add the following section to the yaml file:
+6. Make changes. Add the section **LOGDNA_EXCLUDE** to the yaml file:
+
+    To exclude all cluster logs, enter:
 
     ```
     - name: LOGDNA_EXCLUDE
@@ -92,7 +95,7 @@ Complete the following steps to configure the agent so that only application log
     ```
     {: codeblock}
 
-    You can also exclude logs by namespace. For example, to exclude all of the *kube-system* logs, enter:
+    To exclude logs by namespace, for example, to exclude all of the *kube-system* logs, enter:
 
     ```
     - name: LOGDNA_EXCLUDE
@@ -104,7 +107,7 @@ Complete the following steps to configure the agent so that only application log
 
     ```
     - name: LOGDNA_EXCLUDE
-      value: /var/log/!(containers)**
+      value: /var/log/!(containers)/**
     ```
     {: codeblock}
 
