@@ -225,7 +225,7 @@ INCLUDES PRESETS -> BUT NEED TO VERIFY ONCE EVENTS ARE AVAILABLE
 
 | Action                              | Description                |
 |-------------------------------------|----------------------------|
-| `logdna.data.export`                | This event is generated when an administrator imports user-metadata through the LogDNA web UI. |
+| `logdna.data.export`                | This event is generated when a user exports data, either through through the LogDNA web UI or by using the LogDNA API. |
 {: caption="Table 1. Events for exporting data" caption-side="top"} 
 
 
