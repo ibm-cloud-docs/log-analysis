@@ -33,17 +33,12 @@ As a security officer, auditor, or manager, you can use the Activity Tracker ser
 
 {{site.data.keyword.la_full_notm}} automatically generates events so that you can track activity on your service instance.
 
+MISSING READ ACTIONS
+{: important}
+
+
 ## Management events
 {: #at_events_mgt}
-
-### Login actions
-{: #at_events_admin}
-
-| Action               | Description                |
-|----------------------|----------------------------|
-| `logdna.user.login`  | This event is generated when a user logs in to the LogDNA web UI. |
-| `logdna.user.logout` | This event is generated when a user logs out to the LogDNA web UI. |
-{: caption="Table 1. Events for log in actions" caption-side="top"} 
 
 
 ### Archiving
@@ -58,6 +53,46 @@ As a security officer, auditor, or manager, you can use the Activity Tracker ser
 {: caption="Table 1. Events for archiving actions" caption-side="top"} 
 
 
+
+### Exclusion rules
+{: #at_events_exclusion_rules}
+
+| Action                              | Description                |
+|-------------------------------------|----------------------------|
+| `logdna.exclusion-rule.create`      | This event is generated when an administrator creates an exclusion rule through the LogDNA web UI. |
+| `logdna.exclusion-rule.update`      | This event is generated when an administrator updates an exclusion rule through the LogDNA web UI. |
+| `logdna.exclusion-rule.delete`      | This event is generated when an administrator deletes an exclusion rule through the LogDNA web UI. |
+{: caption="Table 1. Events for exclusion rules actions" caption-side="top"} 
+
+
+
+### Export
+{: #at_events_mgt_export}
+
+MISSING
+{: important}
+
+| Action                        | Description                |
+|-------------------------------|----------------------------|
+| `logdna.export.turn-on`       | This event is generated when an administrator enables exporting data for a LogDNA instance. |
+| `logdna.export.turn-off`      | This event is generated when an administrator disables exporting data for a LogDNA instance. |
+| `logdna.export.download`  `(MISSING)`    | This events is generated when a user downloads an export. |
+{: caption="Table 1. Events for export actions" caption-side="top"} 
+
+
+### Extract fields
+{: #at_events_mgt_extract}
+
+MISSING
+{: important}
+
+| Action                              | Description                |
+|-------------------------------------|----------------------------|
+| `logdna.extract-data.turn-on`       | This event is generated when an administrator enables extracting of data by using the extract fields feature for a LogDNA instance. |
+| `logdna.extract-data.turn-off`      | This event is generated when an administrator disables extracting of data by using the extract fields feature for a LogDNA instance. |
+{: caption="Table 1. Events for extracting of data actions" caption-side="top"} 
+
+
 ### Ingestion keys
 {: #at_events_ingestion_keys}
 
@@ -66,6 +101,31 @@ As a security officer, auditor, or manager, you can use the Activity Tracker ser
 | `logdna.ingestion-key.create`        | This event is generated when an administrator creates an ingestion key through the LogDNA web UI. |
 | `logdna.ingestion-key.delete`        | This event is generated when an administrator deletes an ingestion key through the LogDNA web UI. |
 {: caption="Table 1. Events for ingestion keys actions" caption-side="top"} 
+
+
+### Login actions
+{: #at_events_admin}
+
+| Action               | Description                |
+|----------------------|----------------------------|
+| `logdna.user.login`  | This event is generated when a user logs in to the LogDNA web UI. |
+| `logdna.user.logout` | This event is generated when a user logs out to the LogDNA web UI. |
+{: caption="Table 1. Events for log in actions" caption-side="top"} 
+
+
+### LogDNA instance settings
+{: #at_events_instance}
+
+MISSING
+{: important}
+
+| Action                              | Description                |
+|-------------------------------------|----------------------------|
+| `logdna.raw-line.turn-on`       | This event is generated when an administrator enables raw lines. |
+| `logdna.raw-line.turn-off`      | This event is generated when an administrator disables raw lines. |
+| `logdna.install-instructions.read` | This event is generated when a user access the install instructions in the LogDNA web UI. |
+| `logdna.instance.deactivate`     | This event is generated when a user deactivates an instance. |
+{: caption="Table 1. Events for managing instance settings" caption-side="top"} 
 
 
 ### Service keys
@@ -77,16 +137,6 @@ As a security officer, auditor, or manager, you can use the Activity Tracker ser
 | `logdna.service-key.delete`          | This event is generated when an administrator deletes a service key through the LogDNA web UI. |
 {: caption="Table 1. Events for service keys actions" caption-side="top"} 
 
-
-### Exclusion rules
-{: #at_events_exclusion_rules}
-
-| Action                              | Description                |
-|-------------------------------------|----------------------------|
-| `logdna.exclusion-rule.create`      | This event is generated when an administrator creates an exclusion rule through the LogDNA web UI. |
-| `logdna.exclusion-rule.update`      | This event is generated when an administrator updates an exclusion rule through the LogDNA web UI. |
-| `logdna.exclusion-rule.delete`      | This event is generated when an administrator deletes an exclusion rule through the LogDNA web UI. |
-{: caption="Table 1. Events for exclusion rules actions" caption-side="top"} 
 
 
 ### Parsing templates
@@ -111,31 +161,6 @@ As a security officer, auditor, or manager, you can use the Activity Tracker ser
 | `logdna.user-metadata.export`      | This event is generated when an administrator exports user-metadata through the LogDNA web UI. |
 {: caption="Table 1. Events for user-metadata related actions" caption-side="top"} 
 
-
-### Export
-{: #at_events_mgt_export}
-
-MISSING
-{: important}
-
-| Action                        | Description                |
-|-------------------------------|----------------------------|
-| `logdna.export.turn-on`       | This event is generated when an administrator enables exporting data for a LogDNA instance. |
-| `logdna.export.turn-off`      | This event is generated when an administrator disables exporting data for a LogDNA instance. |
-{: caption="Table 1. Events for export actions" caption-side="top"} 
-
-
-### Extract fields
-{: #at_events_mgt_extract}
-
-MISSING
-{: important}
-
-| Action                              | Description                |
-|-------------------------------------|----------------------------|
-| `logdna.extract-data.turn-on`       | This event is generated when an administrator enables extracting of data by using the extract fields feature for a LogDNA instance. |
-| `logdna.extract-data.turn-off`      | This event is generated when an administrator disables extracting of data by using the extract fields feature for a LogDNA instance. |
-{: caption="Table 1. Events for extracting of data actions" caption-side="top"} 
 
 
 ### Data usage and control
