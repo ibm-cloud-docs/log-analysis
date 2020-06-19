@@ -21,17 +21,16 @@ IBM Log Analysis with LogDNA
         ubuntu.md
 
     {: .topicgroup}
-    Enhancing security for IBM Log Analysis with LogDNA
+    Security and compliance
+        adoption.md
+        manage_eu_logs.md
         data-security.md
         iam.md
         ha-dr.md
         service-connection.md
         architecture-workload-isolation.md
-
-    {: .topicgroup}
-    Security and compliance
-        adoption.md
-        manage_eu_logs.md
+        at_events.md
+        
     {: .navgroup-end}
 
     {: .navgroup id="howto"}
