@@ -1,0 +1,53 @@
+{
+  "faq_1":[
+	  "available Cloud services used with LogDNA",
+	  "Cloud services available for logging with LogAnalysis",
+	  "issues viewing platform service logs with LogDNA",
+	  "monitoring service logs using LogAnalysis with LogDNA",
+	  "configuring Cloud service events using LogDNA"
+  ],
+  "faq_2":[
+	  "generate service logs with LogAnalysis",
+	  "find Cloud service logging details for LogDNA",
+	  "Cloud service logging details for LogAnalysis",
+	  "generating service logs in LogDNA",
+	  "details for generating Cloud service logs with LogAnalysis"
+  ],
+  "faq_3":[
+      "cannot display logs in LogAnalysis",
+	  "issue generating logs for LogAnalysis",
+	  "issue viewing service logs in LogDNA",
+	  "configure logging with LogAnalysis with LogDNA",
+	  "finding logs in LogAnalsis with LogDNA"
+  ],
+  "faq_5":[  
+	  "import archived data to LogDNA",
+	  "importing archived data to LogDNA",
+	  "data archive imports with LogAnalysis",
+	  "archived data imported back to LogDNA UI",
+	  "import into LogDNA archived data"
+  ],
+  "faq_6":[  
+	  "configuring event archiving with LogDNA",
+	  "configure log archiving using LogAnalysis",
+	  "configure event archiving in LogDNA",
+	  "archive logs are missing in LogDNA",
+	  "issues with archiving events for LogDNA",
+	  "archive configuration issues with LogAnalysis"
+ ],
+  "faq_7":[
+	  "issue accessing LogDNA",
+	  "cannot view LogDNA logs",
+	  "cannot open LogDNA web UI",
+	  "LogDNA instances not showing on Obervability page",
+	  "can't access LogDNA",
+	  "issues accessing LogAnalysis service"
+],
+  "faq_8":[
+	  "hitting LogDNA ingestion key limit",
+	  "reset ingestion key in LogDNA",
+	  "issues resetting ingestion key with LogDNA",
+	  "maximum number of ingestion keys reached in LogDNA",
+	  "ingestion key limitation in LogDNA"
+  ]
+}
