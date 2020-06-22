@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2020
-lastupdated: "2020-05-11"
+lastupdated: "2020-06-22"
 
 keywords: LogDNA, IBM, Log Analysis, logging, config agent
 
@@ -43,7 +43,7 @@ Review the connectivity options for interacting with {{site.data.keyword.la_full
         </dd>
 </dl>
 
-[Learn more.](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-network)
+[Learn more](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-service-connection).
 
 ## API endpoints
 {: #endpoints_api}
