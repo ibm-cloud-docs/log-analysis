@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018, 2020
-lastupdated: "2020-04-11"
+lastupdated: "2020-06-22"
 
 keywords: LogDNA, IBM Cloud, Log Analysis, logging, customer responsibilities, IBM responsibilities, terms and conditions
 
@@ -21,6 +21,7 @@ subcollection: Log-Analysis-with-LogDNA
 {:deprecated: .deprecated}
 {:download: .download}
 {:preview: .preview}
+{:external: target="_blank" .external}
 
 # Understanding your responsibilities when using {{site.data.keyword.la_full_notm}}
 {: #shared-responsibilities}
@@ -41,7 +42,7 @@ Review the following sections for the specific responsibilities for you and for 
 | `Monitor incidents`  | Provide notifications for planned maintenance, security bulletins, or unplanned outages. | Set preferences to [receive emails about platform notifications](/docs/overview?topic=overview-ui#email-prefsl). </br>Monitor the [IBM Cloud status page](https://{DomainName}/status?selected=announcement) for general announcements. |
 | `Maintain {{site.data.keyword.cloud_notm}} high availability SLA`  | Provide Cloud Service across availability zones in a Multi-Zone Region (MZR). </br> Provide Cloud Service across hosts in a Single-Zone Region (SZR). </br>Provides replication, fail-over features, and infrastructure maintenance and updates. | Use the [list of available regions](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-regions) to plan for and create new instances of the service. |
 | `Monitor platform logs`  | [Participating Cloud services](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-cloud_services) publish relevant log data to their subscribing clients. {{site.data.keyword.la_full_notm}} provides clients with the ability to receive the logs once the client configures their instance. | [Create an {{site.data.keyword.la_full_notm}} instance](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-provision) in each region where Cloud service subscriptions publish logs. </br>[Configure 1 instance in each of those regions to received the published logs](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-config_svc_logs). |
-| `Monitor logs collected by LogDNA agents`   | Provide images and instructions for how to install LogDNA agents in environments that you want to monitor, such as Kubernetes, Linux, Openshift. | [Install and configure LogDNA agents.](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-logdna_agent#logdna_agent_connect) </br>Monitor that the agents are running in your environment. |
+| `Monitor logs collected by LogDNA agents`   | Provide images and instructions for how to install LogDNA agents in environments that you want to monitor, such as Kubernetes, Linux, Openshift. | [Install and configure LogDNA agents](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-config_agent_kube_cluster). </br>Monitor that the agents are running in your environment. |
 | `Archive logs`  | Provide the ablity to archive to a client configured Cloud Object Storage (COS) location and archive data hourly or daily. | [Configure Cloud Object Storage per your requirements.](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-archiving#archiving_step3) </br>[Enable archiving of the logging instance.](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-archiving) |
 {: caption="Table 1. Responsibilities for incident and operations" caption-side="top"}
 

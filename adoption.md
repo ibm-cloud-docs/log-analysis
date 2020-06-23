@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2020
-lastupdated: "2020-03-18"
+lastupdated: "2020-06-22"
 
 keywords: LogDNA, IBM, Log Analysis, logging, regulated, highly available workloads
 
@@ -20,6 +20,7 @@ subcollection: Log-Analysis-with-LogDNA
 {:download: .download}
 {:important: .important}
 {:note: .note}
+{:external: target="_blank" .external}
 
 
 # Adoption guidelines for regulated and highly available workloads
@@ -29,7 +30,7 @@ For regulated and highly available workloads, consider the following adoption gu
 {:shortdesc}
 
 
-## 1. Define resources naming standards for compliance
+## Define resources naming standards for compliance
 {: #adoption_naming}
 
 When you create resources in the {{site.data.keyword.cloud_notm}}, you can choose how to name them, what information to include in their description fields, which tags to use to group them, associate metadata, and more. 
@@ -39,7 +40,7 @@ When you create resources in the {{site.data.keyword.cloud_notm}}, you can choos
 
 
 
-## 2. Define the account management strategy
+## Define the account management strategy
 {: #adoption_account}
 
 In {{site.data.keyword.cloud_notm}}, you can have 1 or more **stand-alone** accounts. You can manage each account individually or within an **enterprise** by configuring a multitiered hierarchy of accounts. 
@@ -76,7 +77,7 @@ In addition to these benefits, when you look into logging and how it fits with a
 {: tip}
 
 
-## 3. Configure account settings for compliance
+## Configure account settings for compliance
 {: #adoption_acc_settings}
 
 Across every industry, organizations require tight controls and visibility into where their data is stored and processed. 
@@ -95,7 +96,7 @@ Notice that only the account owner can enable the account to be EU supported and
 
 If you're the account owner, you can enable your {{site.data.keyword.cloud}} account to be HIPAA supported. For example, you might choose to enable the **HIPAA Supported** setting if you plan to include Protected Health Information (PHI) in HIPAA-enabled services.
 
-The US Health Insurance Portability and Accountability Act (HIPAA) and the Health Information Technology for Economic and Clinical Health (HITECH) Act define standards for handling electronic healthcare transactions and information. If you or your company is a covered entity as defined by HIPAA, you must enable the HIPAA supported setting if you run sensitive workloads that are regulated under HIPAA and the HITECH Act. Learn more about {{site.data.keyword.cloud_notm}} compliance in [Compliance on the {{site.data.keyword.cloud_notm}}](https://www.ibm.com/cloud/compliance){: new_window} ![External link icon](../icons/launch-glyph.svg "External link icon").
+The US Health Insurance Portability and Accountability Act (HIPAA) and the Health Information Technology for Economic and Clinical Health (HITECH) Act define standards for handling electronic healthcare transactions and information. If you or your company is a covered entity as defined by HIPAA, you must enable the HIPAA supported setting if you run sensitive workloads that are regulated under HIPAA and the HITECH Act. Learn more about {{site.data.keyword.cloud_notm}} compliance in [Compliance on the {{site.data.keyword.cloud_notm}}](https://www.ibm.com/cloud/compliance){: external}.
 {: tip}
 
 When you configure your account to be HIPAA enabled, consider the following information:
@@ -103,14 +104,14 @@ When you configure your account to be HIPAA enabled, consider the following info
 * You indicate to {{site.data.keyword.IBM_notm}} that your account stores protected health information (PHI).
 * You digitally accept the IBM Business Associate Addendum (BAA) for covered entities.
 
-Enable this setting only if you or your company is a covered entity as defined by HIPAA. If you or your company is a business associate of a covered entity, [contact {{site.data.keyword.cloud_notm}} Sales](https://www.ibm.com/account/reg/us-en/signup?formid=MAIL-wcp){: new_window} ![External link icon](../icons/launch-glyph.svg "External link icon") to accept the applicable BAA. For more information about HIPAA definitions of covered entities and business associates, see the [US Department of Health & Human Services](https://www.hhs.gov/hipaa/for-professionals/covered-entities/index.html){: new_window} ![External link icon](../icons/launch-glyph.svg "External link icon") website.
+Enable this setting only if you or your company is a covered entity as defined by HIPAA. If you or your company is a business associate of a covered entity, [contact {{site.data.keyword.cloud_notm}} Sales](https://www.ibm.com/account/reg/us-en/signup?formid=MAIL-wcp){: external} to accept the applicable BAA. For more information about HIPAA definitions of covered entities and business associates, see the [US Department of Health & Human Services](https://www.hhs.gov/hipaa/for-professionals/covered-entities/index.html){: external} website.
 {: tip}
 
 The {{site.data.keyword.la_full_notm}} service offers a HIPAA service plan. By default, the HIPAA service plan is not enabled in your account. Contact {{site.data.keyword.IBM_notm}} and [open a support ticket](/docs/get-support?topic=get-support-getting-customer-support#getting-customer-support) to request access to the HIPAA service plan for your logging instances.
 {: note}
 
 
-## 4. Define the logging instances strategy 
+## Define the logging instances strategy 
 {: #adoption_resource_svc}
 
 {{site.data.keyword.la_full_notm}} collects and aggregates logs in one centralized logging system.
@@ -214,7 +215,7 @@ Tags are visible to all members of an account.
 
 
 
-## 5. Define the log ingestion strategy
+## Define the log ingestion strategy
 {: #adoption_account_ingestion}
 
 For non-{{site.data.keyword.cloud_notm}} enabled services, you must decide the method to collect and forward logs from a log source that you want to monitor to a logging instance. 
@@ -247,7 +248,7 @@ For example, you can configure a custom user provided service (CUPS) for each Cl
 
 
 
-## 6. Define the IAM strategy
+## Define the IAM strategy
 {: #adoption_iam}
 
 **Use {{site.data.keyword.iamlong}} (IAM) to securely authenticate users and service IDs, and to control access to all cloud resources and data consistently in the {{site.data.keyword.cloud_notm}}.**
@@ -324,7 +325,7 @@ You can assign a single policy to the access group instead of assigning the same
 [Learn more](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-work_iam).
 
 
-## 7. Configure the account settings for authentication into your account
+## Configure the account settings for authentication into your account
 {: #adoption_login}
 
 Multi-factor authentication (MFA) adds an extra layer of security to your account by requiring all users to authenticate by using an additional authentication method beyond an ID and password. This is also commonly known as two-factor authentication (2FA). 
@@ -337,7 +338,7 @@ You can also configure MFA options such as security questions, using a time-base
 {: tip}
 
 
-## 8. Define the network strategy
+## Define the network strategy
 {: #adoption_network}
 
 In LogDNA, you can use the LogDNA agent to collect and forward logs to your {{site.data.keyword.la_full_notm}} instance. After you provision an instance of {{site.data.keyword.la_full}}, you must configure a LogDNA agent for each log source that you want to monitor. 
@@ -373,7 +374,7 @@ If you have an additional firewall set up, or you have customized the firewall s
 {: tip}
 
 
-## 9. Define the notification strategy 
+## Define the notification strategy 
 {: #adoption_alerts}
 
 In a LogDNA instance, you define views to analyze the data. Then, you can configure 1 or more alerts per view to notify of an abnormal situation. [Learn more](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-alerts).
@@ -413,7 +414,7 @@ When you send a notification, you can include log data as part of the notificati
 
 
 
-## 10. Define the archive strategy
+## Define the archive strategy
 {: #adoption_archive}
 
 You might have different requirements that require archiving your data:
@@ -637,7 +638,7 @@ For more information, see [Activity Tracker events](/docs/cloud-object-storage?t
 **Enable collection of COS management and data events on the bucket that you use to archive data from a LogDNA instance. Use these events to monitor activity in your COS bucket.**
 {: tip}
 
-In {{site.data.keyword.at_full}}, you can define views, dashboard, and screens to monitor COS management and data events. You can also configure alerts on views to notify you when a specific condition occurs. On a view, you can configure an email alert, a Slack alert, a PagerDuty alert, or any combination of the above. For more information, see [Creating custom views](/docs/Activity-Tracker-with-LogDNA?topic=Log-Analysis-with-LogDNAat-views) and [Managing alerts](/docs/Activity-Tracker-with-LogDNA?topic=Log-Analysis-with-LogDNAat-alerts).
+In {{site.data.keyword.at_full}}, you can define views, dashboard, and screens to monitor COS management and data events. You can also configure alerts on views to notify you when a specific condition occurs. On a view, you can configure an email alert, a Slack alert, a PagerDuty alert, or any combination of the above. For more information, see [Creating custom views](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-view_logs#view_logs_step7) and [Managing alerts](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-alerts).
 
 For example, you can define a view that reports when an object is archived in a bucket. On that view, you can configure an email alert to notify you when an object has been archived. You might have compliance requirements that require you to control who accesses data that is archived. You can define a view that reports access to a bucket, and define an alert to notify you when that happens.
 
@@ -657,7 +658,7 @@ Although you define policies to manage your COS objects (LogDNA archived files) 
 
 
 
-## 11. Define the strategy to query archived data 
+## Define the strategy to query archived data 
 {: #adoption_query}
 
 You can download data locally, and then use your own tools to query the data. When you download data for analysis, you are responsible for ensuring that your users comply with the regulations and compliance requirements that may be required for your organization. For example, if you must comply with GDPR, you need to control that users are following the download guidelines per GDPR rules.

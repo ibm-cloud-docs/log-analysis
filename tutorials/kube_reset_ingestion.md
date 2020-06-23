@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2020
-lastupdated: "2020-03-06"
+lastupdated: "2020-06-22"
 
 keywords: LogDNA, IBM, Log Analysis, logging, kubernetes, tutorial, reset ingestion key
 
@@ -20,9 +20,9 @@ subcollection: Log-Analysis-with-LogDNA
 {:download: .download}
 {:important: .important}
 {:note: .note}
+{:external: target="_blank" .external}
 
-
-# Resetting the ingestion key used by a Kubernetes cluster to forward logs to an {{site.data.keyword.la_full_notm}} instance
+# Resetting the ingestion key that is used by a Kubernetes cluster to forward logs to an {{site.data.keyword.la_full_notm}} instance
 {: #kube_reset}
 
 If the ingestion key that you use to forward logs from a cluster to an {{site.data.keyword.la_full_notm}} instance in the {{site.data.keyword.cloud_notm}} is compromised, you must reset the key and update the Kubernetes cluster configuration to use the new ingestion key. 
@@ -35,7 +35,7 @@ Work in a [supported region](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-w
 
 Read about {{site.data.keyword.la_full_notm}}. For more information, see [About](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-getting-started#getting-started_ov).
 
-Use a user ID that is a member or an owner of an {{site.data.keyword.cloud_notm}} account. To get an {{site.data.keyword.cloud_notm}} user ID, go to: [Registration ![External link icon](../../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com/login){:new_window}.
+Use a user ID that is a member or an owner of an {{site.data.keyword.cloud_notm}} account. To get an {{site.data.keyword.cloud_notm}} user ID, go to: [Registration](https://cloud.ibm.com/login){: external}.
 
 The {{site.data.keyword.la_full_notm}} instance is provisioned in the **default** resource group.
 
@@ -50,7 +50,7 @@ To complete the steps in this tutorial, your {{site.data.keyword.IBM_notm}}ID mu
 
 For more information about the {{site.data.keyword.containerlong}} IAM roles, see [User access permissions](/docs/containers?topic=containers-access_reference#access_reference).
 
-Install the {{site.data.keyword.cloud_notm}} CLI and the Kubernetes CLI plug-in. For more information, see [Installing the {{site.data.keyword.cloud_notm}} CLI](/docs/cli?topic=cloud-cli-ibmcloud-cli#ibmcloud-cli).
+Install the {{site.data.keyword.cloud_notm}} CLI and the Kubernetes CLI plug-in. For more information, see [Installing the {{site.data.keyword.cloud_notm}} CLI](/docs/cli?topic=cli-install-ibmcloud-cli).
 
 
 ## Step 1: Reset the ingestion key
@@ -192,7 +192,7 @@ You launch the web UI from the {{site.data.keyword.cloud_notm}} Observability da
 
 Complete the following steps to launch the web UI:
 
-1. [Log in to your {{site.data.keyword.cloud_notm}} account ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com/login){:new_window}.
+1. [Log in to your {{site.data.keyword.cloud_notm}} account](https://cloud.ibm.com/login){: external}.
 
 2. Click the **Menu** icon ![Menu icon](../../../icons/icon_hamburger.svg) &gt; **Observability** to launch the Observability dashboard. 
 

@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2020
-lastupdated: "2020-03-06"
+lastupdated: "2020-06-22"
 
 keywords: LogDNA, IBM, Log Analysis, logging instance, provision
 
@@ -20,6 +20,7 @@ subcollection: Log-Analysis-with-LogDNA
 {:download: .download}
 {:important: .important}
 {:note: .note}
+{:external: target="_blank" .external}
 
 # Provisioning an instance
 {: #provision}
@@ -37,7 +38,7 @@ Alternatively, {{site.data.keyword.la_full_notm}} offers a `Lite` plan that you 
 
 To provision an instance from the Observability dashboard in the {{site.data.keyword.cloud_notm}}, complete the following steps:
 
-1. [Log in to your {{site.data.keyword.cloud_notm}} account ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com/login){:new_window}.
+1. [Log in to your {{site.data.keyword.cloud_notm}} account](https://cloud.ibm.com/login){: external}.
 
 	After you log in, the {{site.data.keyword.cloud_notm}} UI opens.
 
@@ -59,7 +60,7 @@ To provision an instance from the Observability dashboard in the {{site.data.key
 
     By default, the lite plan is set.
 
-    For more information about other service plans, see [Pricing plans](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-about#overview_pricing_plans).
+    For more information about other service plans, see [Pricing plans](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-service_plans).
 
 8. Click **Create**.
 
@@ -74,7 +75,7 @@ Next, configure a log source by adding a LogDNA agent. This agent is responsible
 
 To provision an instance of {{site.data.keyword.la_full_notm}} through the {{site.data.keyword.cloud_notm}} catalog, complete the following steps:
 
-1. [Log in to your {{site.data.keyword.cloud_notm}} account ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com/login){:new_window}.
+1. [Log in to your {{site.data.keyword.cloud_notm}} account](https://cloud.ibm.com/login){: external}.
 
 	After you log in, the {{site.data.keyword.cloud_notm}} UI opens.
 
@@ -118,17 +119,17 @@ To provision an instance of {{site.data.keyword.at_full_notm}} through the comma
 
 1. [Pre-requisite] Installation of the {{site.data.keyword.cloud_notm}} CLI.
 
-   For more information, see [Installing the {{site.data.keyword.cloud_notm}} CLI](/docs/cli?topic=cloud-cli-ibmcloud-cli#ibmcloud-cli).
+   For more information, see [Installing the {{site.data.keyword.cloud_notm}} CLI](/docs/cli?topic=cli-install-ibmcloud-cli).
 
    If the CLI is installed, continue with the next step.
 
-2. Log in to the region in the {{site.data.keyword.cloud_notm}} where you want to provision the instance. Run the following command: [`ibmcloud login`](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_cli#ibmcloud_login)
+2. Log in to the region in the {{site.data.keyword.cloud_notm}} where you want to provision the instance. Run the following command: [ibmcloud login](/docs/cli?topic=cli-ibmcloud_cli#ibmcloud_login)
 
-3. Set the resource group where you want to provision the instance. Run the following command: [`ibmcloud target`](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_cli#ibmcloud_target)
+3. Set the resource group where you want to provision the instance. Run the following command: [ibmcloud target](/docs/cli?topic=cli-ibmcloud_cli#ibmcloud_target)
 
     By default, the `default` resource group is set.
 
-4. Create the instance. Run the [`ibmcloud resource service-instance-create`](/docs/cli/reference/ibmcloud?topic=cloud-cli-ibmcloud_commands_resource#ibmcloud_resource_service_instance_create) command:
+4. Create the instance. Run the [ibmcloud resource service-instance-create](/docs/cli?topic=cli-ibmcloud_commands_resource#ibmcloud_resource_service_instance_create) command:
 
     ```
     ibmcloud resource service-instance-create NAME logdna SERVICE_PLAN_NAME LOCATION

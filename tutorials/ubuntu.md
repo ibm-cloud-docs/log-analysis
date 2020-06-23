@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2020
-lastupdated: "2020-03-06"
+lastupdated: "2020-06-22"
 
 keywords: LogDNA, IBM, Log Analysis, logging, ubuntu, tutorial
 
@@ -20,9 +20,10 @@ subcollection: Log-Analysis-with-LogDNA
 {:download: .download}
 {:important: .important}
 {:note: .note}
+{:external: target="_blank" .external}
 
 
-# Managing Ubuntu logs with {{site.data.keyword.la_full_notm}}
+# Collecting and analyzing logs from Linux sources
 {: #ubuntu}
 
 Use the {{site.data.keyword.la_full}} service to monitor and manage Ubuntu logs in a centralized logging system on the {{site.data.keyword.cloud_notm}}. 
@@ -61,7 +62,7 @@ Your {{site.data.keyword.IBM_notm}}ID must have assigned IAM policies for each o
 | {{site.data.keyword.la_full_notm}} service |  Resource group            | Editor  | us-south  | This policy is required to allow the user to provision and administer the {{site.data.keyword.la_full_notm}} service in the default resource group.   |
 {: caption="Table 1. List of IAM policies required to complete the tutorial" caption-side="top"} 
 
-Install the {{site.data.keyword.cloud_notm}} CLI. For more information, see [Installing the {{site.data.keyword.cloud_notm}} CLI](/docs/cli?topic=cloud-cli-ibmcloud-cli#ibmcloud-cli).
+Install the {{site.data.keyword.cloud_notm}} CLI. For more information, see [Installing the {{site.data.keyword.cloud_notm}} CLI](/docs/cli?topic=cli-install-ibmcloud-cli).
 
 
 
@@ -72,7 +73,7 @@ To provision an instance of {{site.data.keyword.la_full_notm}} through the {{sit
 
 1. Log in to your {{site.data.keyword.cloud_notm}} account.
 
-    Click [{{site.data.keyword.cloud_notm}} dashboard ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com/login){:new_window} to launch the {{site.data.keyword.cloud_notm}} dashboard.
+    Click [{{site.data.keyword.cloud_notm}} dashboard](https://cloud.ibm.com/login){: external} to launch the {{site.data.keyword.cloud_notm}} dashboard.
 
 	After you log in with your user ID and password, the {{site.data.keyword.cloud_notm}} UI opens.
 
@@ -188,7 +189,7 @@ To launch IBM the Log Analysis with LogDNA dashboard through the {{site.data.key
 
 1. Log in to your {{site.data.keyword.cloud_notm}} account.
 
-    Click [{{site.data.keyword.cloud_notm}} dashboard ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com/login){:new_window} to launch the {{site.data.keyword.cloud_notm}} dashboard.
+    Click [{{site.data.keyword.cloud_notm}} dashboard](https://cloud.ibm.com/login){: external} to launch the {{site.data.keyword.cloud_notm}} dashboard.
 
 	After you log in with your user ID and password, the {{site.data.keyword.cloud_notm}} Dashboard opens.
 
@@ -208,7 +209,8 @@ To launch IBM the Log Analysis with LogDNA dashboard through the {{site.data.key
 
 From the LogDNA Web UI, you can view your logs as they pass through the system. You view logs by using log tailing. 
 
-**Note:** With the **Free** service plan, you can only tail your latest logs.
+With the **Free** service plan, you can only tail your latest logs.
+{: note}
 
 For more information, see [Viewing logs](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-view_logs#view_logs).
 
@@ -218,5 +220,6 @@ For more information, see [Viewing logs](/docs/Log-Analysis-with-LogDNA?topic=Lo
 
 [Filter logs](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-view_logs#view_logs_step5), [search logs](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-view_logs#view_logs_step6), [define views](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-view_logs#view_logs_step7), and [configure alerts](https://docs.logdna.com/docs/alerts). 
 
-**Note:** To use any of these features, you must upgrade the {{site.data.keyword.la_full_notm}} plan to a paid plan.
+To use any of these features, you must upgrade the {{site.data.keyword.la_full_notm}} plan to a paid plan.
+{: note}
 

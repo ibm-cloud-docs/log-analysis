@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2020
-lastupdated: "2020-03-06"
+lastupdated: "2020-06-22"
 
 keywords: LogDNA, IBM, Log Analysis, logging, cf
 
@@ -21,9 +21,10 @@ subcollection: Log-Analysis-with-LogDNA
 {:download: .download}
 {:important: .important}
 {:note: .note}
+{:external: target="_blank" .external}
 
 
-# Managing logs from CF resources
+# Collecting and analyzing logs from CF resources
 {: #monitor_cfapp_logs}
 
 In {{site.data.keyword.cloud}} public, you can monitor logs from Cloud Foundry (CF) resources that run in the {{site.data.keyword.cloud_notm}} or outside the {{site.data.keyword.cloud_notm}} by using the {{site.data.keyword.la_full_notm}} service. You can view, filter, search, and analyze these logs through the web UI for a number of days that is determined by the plan of your logging instance. You can also configure archiving, and have access to those logs through the archived files.
@@ -147,7 +148,7 @@ To send CF logs to a {{site.data.keyword.la_short}} instance, consider the follo
 ### Before you begin
 {: #monitor_cfapp_logs_prereqs}
 
-Use a user ID that is a member or an owner of an {{site.data.keyword.cloud_notm}} account. To get an {{site.data.keyword.cloud_notm}} user ID, go to: [Registration ![External link icon](../../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com/login){:new_window}.
+Use a user ID that is a member or an owner of an {{site.data.keyword.cloud_notm}} account. To get an {{site.data.keyword.cloud_notm}} user ID, go to: [Registration](https://cloud.ibm.com/login){: external}.
 
 Your {{site.data.keyword.IBM_notm}}ID must have assigned IAM policies for each of the following resources. For example, to work in the US-south region and in the default resource group, you need the following permissions: 
 
@@ -159,7 +160,7 @@ Your {{site.data.keyword.IBM_notm}}ID must have assigned IAM policies for each o
 
 In {{site.data.keyword.IBM_notm}}, your {{site.data.keyword.IBM_notm}}ID must have the **developer** role assigned for the Cloud Foundry space where the CF application is running. Outside the {{site.data.keyword.IBM_notm}}, you must have permissions to configure a CUPS service for the CF app that you want to collect and monitor logs.
 
-You must install the {{site.data.keyword.cloud_notm}} CLI. For more information, see [Installing the {{site.data.keyword.cloud_notm}} CLI](/docs/cli?topic=cloud-cli-ibmcloud-cli#ibmcloud-cli). This CLI includes the CF CLI.
+You must install the {{site.data.keyword.cloud_notm}} CLI. For more information, see [Installing the {{site.data.keyword.cloud_notm}} CLI](/docs/cli?topic=cli-install-ibmcloud-cli). This CLI includes the CF CLI.
 
 You must have a CF app deployed and running.
 
@@ -294,7 +295,7 @@ You must repeat these steps in any region where you want to stop viewing CF logs
 You must have **manager** role on that instance to configure exclusion rules.
 {: note}
 
-1. [Log in to your {{site.data.keyword.cloud_notm}} account ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com/login){:new_window}.
+1. [Log in to your {{site.data.keyword.cloud_notm}} account](https://cloud.ibm.com/login){: external}.
 
 2. Click the **Menu** icon ![Menu icon](../icons/icon_hamburger.svg) &gt; **Observability**. 
 
