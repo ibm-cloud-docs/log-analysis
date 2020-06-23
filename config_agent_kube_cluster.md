@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2020
-lastupdated: "2020-06-01"
+lastupdated: "2020-06-24"
 
 keywords: LogDNA, IBM, Log Analysis, logging, config agent
 
@@ -111,17 +111,17 @@ kubectl create namespace ibm-observe
 {: pre}
 
 
-### Step 3. Store your logDNA ingestion key as a Kubernetes secret
+### Step 3. Store your LogDNA ingestion key as a Kubernetes secret
 {: #config_agent_kube_cluster_step3}
 
-Create a Kubernetes secret to store your logDNA ingestion key for your service instance. 
+Create a Kubernetes secret to store your LogDNA ingestion key for your service instance. 
 
-The LogDNA ingestion key is used to open a secure web socket to the logDNA ingestion server and to authenticate the logging agent with the {{site.data.keyword.la_full_notm}} service.
+The LogDNA ingestion key is used to open a secure web socket to the LogDNA ingestion server and to authenticate the logging agent with the {{site.data.keyword.la_full_notm}} service.
 
 Run the following command:
 
 ```
-kubectl create secret generic logdna-agent-key --from-literal=logdna-agent-key=<logDNA_ingestion_key> -n ibm-observe
+kubectl create secret generic logdna-agent-key --from-literal=logdna-agent-key=<LogDNA_ingestion_key> -n ibm-observe
 ```
 {: pre}
 
@@ -326,7 +326,7 @@ ic plugin install observe-service
 To deploy the LogDNA agent by using the `ob` CLI, run the following command:
 
 ```
-ibmcloud ob logging config create --cluster <cluster_name_or_ID> --instance <LogDNA_instance_name_or_ID> [--logdna-ingestion-key <Ingestion_Key>] [--private-endpoint]
+ibmcloud ob logging config create --cluster <cluster_name_or_ID> --instance <LogDNA_instance_name_or_ID> [--LogDNA-ingestion-key <Ingestion_Key>] [--private-endpoint]
 ```
 {: pre}
 
@@ -337,7 +337,7 @@ Where
 * `<Ingestion_Key>` is the ingestion key that you want to use to connect the LogDNA agent with the LogDNA instance.
 * `[--private-endpoint]` is optional. Add this option to connect to your LogDNA instance by using private service endpoints.
 
-For more information, see [Creating a logging configuration to forward cluster and app logs to IBM Log Analysis with LogDNA](/docs/containers?topic=containers-health#app_logdna).
+For more information, see [Creating a logging configuration to forward cluster and app logs to IBM Log Analysis with LogDNA](/docs/containers?topic=containers-health#app_LogDNA).
 
 
 
