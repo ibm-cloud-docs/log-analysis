@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2020
-lastupdated: "2020-06-01"
+lastupdated: "2020-06-22"
 
 keywords: LogDNA, IBM, Log Analysis, logging, kubernetes, tutorial
 
@@ -20,6 +20,7 @@ subcollection: Log-Analysis-with-LogDNA
 {:download: .download}
 {:important: .important}
 {:note: .note}
+{:external: target="_blank" .external}
 
 
 # Collecting, configuring, and analyzing logs from Kubernetes clusters (cluster-level logging)
@@ -60,11 +61,11 @@ Complete the following tasks:
 
 2. [Check the {{site.data.keyword.la_full_notm}} regions that are supported](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-regions). 
 
-3. [Install the {{site.data.keyword.cloud_notm}} CLI](/docs/cli?topic=cloud-cli-ibmcloud-cli#ibmcloud-cli).
+3. [Install the {{site.data.keyword.cloud_notm}} CLI](/docs/cli?topic=cli-install-ibmcloud-cli).
 
 4. Use an {{site.data.keyword.IBM_notm}} ID that is a member or an owner of an {{site.data.keyword.cloud_notm}} account. 
 
-    To get an {{site.data.keyword.cloud_notm}} user ID, go to: [Registration ![External link icon](../../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com/login){:new_window}.
+    To get an {{site.data.keyword.cloud_notm}} user ID, go to: [Registration](https://cloud.ibm.com/login){: external}.
 
 5. Provision an {{site.data.keyword.la_full_notm}} instance. Choose any of the following methods:  
 
@@ -114,7 +115,7 @@ Choose one of the following options to deploy and configure the LogDNA agent in 
 ## [Optional] Step 2. Configure a cluster to forward API audit logs to LogDNA
 {: #kube_step2}
 
-If you want to analyze the cluster's API audit logs through the IBM Log Analysis with LogDNA instance, you must configure your cluster:
+If you want to analyze the cluster's API audit logs through the IBM Log Analysis with LogDNA instance, you must configure your cluster
 
 
 
@@ -141,17 +142,5 @@ Complete the following steps:
     - [Define views](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-view_logs#view_logs_step7)
 
     - [Configure alerts](https://docs.logdna.com/docs/alerts). 
-
-
-## [Optional] Step 4. Remove duplicate logs by defining exclusion rules
-{: #kube_step4}
-
-
-
-
-
-## Next steps
-{: #kube_next_steps}
-
 
 

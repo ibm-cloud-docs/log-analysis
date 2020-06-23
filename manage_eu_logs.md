@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2020
-lastupdated: "2020-03-06"
+lastupdated: "2020-06-22"
 
 keywords: LogDNA, IBM, Log Analysis, logging, overview
 
@@ -20,6 +20,7 @@ subcollection: Log-Analysis-with-LogDNA
 {:download: .download}
 {:important: .important}
 {:note: .note}
+{:external: target="_blank" .external}
 
 # Managing logs for EU-supported resources
 {: #manage_eu_logs}
@@ -79,9 +80,12 @@ Check out the list of {{site.data.keyword.cloud_notm}} resources that automatica
 
 When you configure a LogDNA agent for a resource such as a Kubernetes cluster, you specify to which instance that agent connects. You can only connect 1 agent per resource to a LogDNA instance. 
 
-If you have agents that collect logs from resources, apps and services that run in the {{site.data.keyword.cloud_notm}} or outside the {{site.data.keyword.cloud_notm}}, and that must be EU-supported, you need to configure your agents to forward data to a logging instance in Frankfurt.
+If you have agents that collect logs from resources, apps and services that run in the {{site.data.keyword.cloud_notm}} or outside the {{site.data.keyword.cloud_notm}}, and that must be EU-supported, you need to configure your agents to forward data to a logging instance in Frankfurt. Learn more:
+* [Connect a standard Kubernetes cluster to an IBM Log Analysis with LogDNA instance by using a LogDNA agent](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-config_agent_kube_cluster)
+* [Connect an OpenShift Kubernetes cluster to an IBM Log Analysis with LogDNA instance by using a LogDNA agent](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-config_agent_os_cluster)
+* [Connecting a LogDNA agent to a Linux Ubuntu or Debian](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-config_agent_linux)
 
-Learn more about how to [detach an agent](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-detach_agent) from a logging instance and how to [configure an agent](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-config_agent) to forward logs to a specific instance.
+Learn more about how to detach an agent, see [Disconnecting a LogDNA agent](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-detach_agent).
 
 
 

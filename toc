@@ -30,7 +30,6 @@ IBM Log Analysis with LogDNA
         service-connection.md
         architecture-workload-isolation.md
         at_events.md
-        
     {: .navgroup-end}
 
     {: .navgroup id="howto"}

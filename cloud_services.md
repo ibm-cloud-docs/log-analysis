@@ -21,6 +21,7 @@ subcollection: Log-Analysis-with-LogDNA
 {:download: .download}
 {:important: .important}
 {:note: .note}
+{:external: target="_blank" .external}
 
 
 # Cloud services
@@ -39,19 +40,19 @@ Notice that there is only 1 instance per location with the flag **Platform servi
 
 The following table lists Cloud services that send logs to {{site.data.keyword.la_full_notm}}:
 
-| Service     | Description |  More info about the integration with {{site.data.keyword.la_full_notm}} 
+| Service     | Description |  More info 
 |-------------|-------------|--------------------------------------------------------------------------------------------|
 | [{{site.data.keyword.iae_full_notm}}](/docs/AnalyticsEngine?topic=AnalyticsEngine-getting-started) | {{site.data.keyword.iae_full_notm}} provides a flexible framework to develop and deploy analytics applications in Apache Hadoop and Apache Spark. | [More info](/docs/AnalyticsEngine?topic=AnalyticsEngine-log-aggregation#reconfiguring-log-aggregation) | 
 {: caption="Table 1. List of Blockchain services" caption-side="top"} 
 
-To see the list of {{site.data.keyword.la_full_notm}} locations where these services send logs, see [Container services](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-cloud_services_locations#cs_locations_analystics).
+To see the list of {{site.data.keyword.la_full_notm}} locations where these services send logs, see [Analytics services](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-cloud_services_locations#cs_locations_analytics).
 
 ## Blockchain services
 {: #blockchain}
 
 The following table lists Cloud services that send logs to {{site.data.keyword.la_full_notm}}:
 
-| Service     | Description |  More info about the integration with {{site.data.keyword.la_full_notm}} 
+| Service     | Description |  More info 
 |-------------|-------------|--------------------------------------------------------------------------------------------|
 | [{{site.data.keyword.blockchainfull_notm}}](/docs/blockchain?topic=blockchain-get-started-ibp) | {{site.data.keyword.blockchainfull}} Platform provides a managed and full stack blockchain-as-a-service (BaaS) offering that allows you to deploy blockchain components in environments of your choice. | [More info](/docs/blockchain?topic=blockchain-ibp-LogDNA) | 
 {: caption="Table 2. List of Blockchain services" caption-side="top"} 
@@ -61,23 +62,36 @@ To see the list of {{site.data.keyword.la_full_notm}} locations where these serv
 ## Cloud Foundry
 {: #platform_cfapps}
 
-[Cloud Foundry (CF)](/docs/cloud-foundry-public?topic=cloud-foundry-public-about-cf) logs are automatically collected and sent to {{site.data.keyword.la_full_notm}}. 
+[Cloud Foundry (CF)](/docs/cloud-foundry-public?topic=cloud-foundry-public-getting-started) logs are automatically collected and sent to {{site.data.keyword.la_full_notm}}. 
 
 You can monitor logs from CF apps through the {{site.data.keyword.la_short}} instance that is configured to receive platform services logs in the location where the app is running. 
 {: note}
 
 To see the list of {{site.data.keyword.la_full_notm}} locations where this service sends logs, see [Cloud Foundry](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-cloud_services_locations#cs_locations_platform_cfapps).
 
+
+
+## Compute serverless services
+{: #serverless}
+
+The following table lists services that send logs to {{site.data.keyword.la_full_notm}}:
+
+| Service     | Description | More info |
+|-------------|-------------|-------------------|
+| [{{site.data.keyword.openwhisk}}](/docs/openwhisk?topic=openwhisk-getting-started) | {{site.data.keyword.openwhisk_short}} is a polyglot Functions-as-a-Service (FaaS) programming platform based on Apache OpenWhisk that you can use to write lightweight `code called actions`. | [More info](/docs/openwhisk?topic=openwhisk-logs) |
+{: caption="List of serverless compute services" caption-side="top"} 
+
+
 ## Container services
 {: #platform_container}
 
 The following table lists services that send logs to {{site.data.keyword.la_full_notm}}:
 
-| Service     | Description | More info about the integration with {{site.data.keyword.la_full_notm}} |
+| Service     | Description | More info |
 |-------------|-------------|-------------------------------------------------------------------------|
 | [{{site.data.keyword.registrylong_notm}}](/docs/Registry?topic=Registry-getting-started) | You can use {{site.data.keyword.registrylong_notm}} to provide a multi-tenant private image registry that you can use to store and share your container images with users in your {{site.data.keyword.cloud_notm}} account. | [More info](/docs/Registry?topic=Registry-registry_logs) |
 | [{{site.data.keyword.containerlong}}](/docs/containers?topic=containers-getting-started) | You can use the {{site.data.keyword.containerlong_notm}} service to deploy highly available apps in Docker containers that run in Kubernetes clusters. | [More info](/docs/containers?topic=containers-health#logdna) | 
-| [{{site.data.keyword.openshiftlong}}](/docs/openshift?topic=openshift-getting-started) | With {{site.data.keyword.openshiftlong}}, you can deploy apps on highly available clusters that come installed with the Red Hat OpenShift on IBM Cloud Container PlatformExternal link icon software installed on Red Hat Enterprise Linux. | [More info](/docs/openshift?topic=openshift-health) |
+| [{{site.data.keyword.openshiftlong}}](/docs/openshift?topic=openshift-getting-started) | With {{site.data.keyword.openshiftlong}}, you can deploy apps on highly available clusters that come installed with the [Red Hat OpenShift on IBM Cloud Container Platform](https://docs.openshift.com/container-platform/4.2/welcome/index.html){: external} software installed on Red Hat Enterprise Linux. | [More info](/docs/openshift?topic=openshift-health) |
 {: caption="Table 3. List of container services" caption-side="top"} 
 
 To see the list of {{site.data.keyword.la_full_notm}} locations where these services send logs, see [Container services](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-cloud_services_locations#cs_locations_container).
@@ -87,9 +101,9 @@ To see the list of {{site.data.keyword.la_full_notm}} locations where these serv
 
 The following table lists services that send logs to {{site.data.keyword.la_full_notm}}:
 
-| Service     | Description |  More info about the integration with {{site.data.keyword.la_full_notm}} | 
+| Service     | Description |  More info | 
 |-------------|-------------|--------------------------------------------------------------------------------------------|--------------|-----------------|
-| [{{site.data.keyword.cloudant_short_notm}}](/docs/Cloudant?topic=cloudant-getting-started)    | {{site.data.keyword.cloudant_short_notm}} is a document-oriented database as a service (DBaaS). It stores data as documents in JSON format. | [More info](/docs/Cloudant?topic=cloudant-log-analysis-integration) | 
+| [{{site.data.keyword.cloudant_short_notm}}](/docs/Cloudant?topic=Cloudant-getting-started-with-cloudant)    | {{site.data.keyword.cloudant_short_notm}} is a document-oriented database as a service (DBaaS). It stores data as documents in JSON format. | [More info](/docs/Cloudant?topic=Cloudant-log-analysis-integration) | 
 | [{{site.data.keyword.databases-for-elasticsearch_full_notm}}](/docs/databases-for-elasticsearch?topic=databases-for-elasticsearch-getting-started) | {{site.data.keyword.databases-for-elasticsearch_full_notm}} is a managed Elasticsearch service that is hosted in the {{site.data.keyword.cloud_notm}} and integrated with other {{site.data.keyword.cloud_notm}} services. | [More info](/docs/databases-for-elasticsearch?topic=cloud-databases-logging) |
 | [{{site.data.keyword.databases-for-etcd_full_notm}}](/docs/databases-for-etcd?topic=databases-for-etcd-getting-started) | {{site.data.keyword.databases-for-etcd_full_notm}} is a managed etcd service that is hosted in the {{site.data.keyword.cloud_notm}} and integrated with other {{site.data.keyword.cloud_notm}} services. | [More info](/docs/databases-for-etcd?topic=cloud-databases-monitoring) |
 | [{{site.data.keyword.databases-for-mongodb}}](/docs/databases-for-mongodb?topic=databases-for-mongodb-getting-started) | {{site.data.keyword.databases-for-mongodb}} is a managed MongoDB service that is hosted in the {{site.data.keyword.cloud_notm}} and integrated with other {{site.data.keyword.cloud_notm}} services. | [More info](/docs/databases-for-mongodb?topic=cloud-databases-logging) |
@@ -112,7 +126,7 @@ To see the list of {{site.data.keyword.la_full_notm}} locations where these serv
 
 The following table lists services that send logs to {{site.data.keyword.la_full_notm}}:
 
-| Service     | Description | More info about the integration with {{site.data.keyword.la_full_notm}} |
+| Service     | Description | More info |
 |-------------|-------------|-------------------------------------------------------------------------|
 | [{{site.data.keyword.appconservicefull}}](/docs/AppConnect?topic=AppConnect-getting-started) | You can use {{site.data.keyword.appconservicefull}} to connect your applications.   | [More info ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://developer.ibm.com/integration/docs/app-connect/troubleshooting/monitoring-and-managing-app-connect-logs-in-logdna/){:new_window}  |
 {: caption="Table 5. List of integration Cloud services" caption-side="top"} 
@@ -126,7 +140,7 @@ To see the list of {{site.data.keyword.la_full_notm}} locations where these serv
 The following table lists Cloud services that send logs to {{site.data.keyword.la_full_notm}}:
 
 
-| Service     | Description | More info about the integration with {{site.data.keyword.la_full_notm}} |
+| Service     | Description | More info |
 |-------------|-------------|-------------------------------------------------------------------------|
 | [{{site.data.keyword.cloudcerts_full_notm}}](/docs/certificate-manager?topic=certificate-manager-about-certificate-manager#about-certificate-manager) | You can use {{site.data.keyword.cloudcerts_short}} to manage the SSL certificates for your {{site.data.keyword.cloud_notm}}-based apps and services.  | [More info](/docs/certificate-manager?topic=certificate-manager-log_events) |
 {: caption="Table 6. List of security Cloud services" caption-side="top"} 
@@ -143,7 +157,7 @@ To see the list of {{site.data.keyword.la_full_notm}} locations where these serv
 The following table lists Cloud services that send logs to {{site.data.keyword.la_full_notm}}:
 
 
-| Service     | Description | More info about the integration with {{site.data.keyword.la_full_notm}} |
+| Service     | Description | More info |
 |-------------|-------------|-------------------------------------------------------------------------|
 | [{{site.data.keyword.loadbalancer_full}}](/docs/loadbalancer-service?topic=loadbalancer-service-getting-started) | Use this service to improve availability of business-critical applications by distributing traffic among multiple application server instances, and by forwarding traffic to healthy instances only. | [More info](/docs/loadbalancer-service?topic=loadbalancer-service-data-logging) |
 {: caption="Table 7. List of security networking services" caption-side="top"} 
@@ -185,7 +199,7 @@ The following tables lists VPC infrastructure services that send metrics to {{si
 
 The following table lists Cloud services that send logs to {{site.data.keyword.la_full_notm}}:
 
-| Service     | Description | More info about the integration with {{site.data.keyword.la_full_notm}} |
+| Service     | Description | More info |
 |-------------|-------------|-------------------------------------------------------------------------|
 | [{{site.data.keyword.iva_full_notm}} ](/docs/voice-agent?topic=voice-agent-getting-started) | You can {{site.data.keyword.iva_full_notm}} to integrate a set of orchestrated Watson services with the telephone network by using the Session Initiation Protocol (SIP).   | [More info](/docs/voice-agent?topic=voice-agent-log-analysis-integration) |
 {: caption="Table 10. List of Watson AI Cloud services" caption-side="top"} 
