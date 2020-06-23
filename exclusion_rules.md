@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2020
-lastupdated: "2020-03-06"
+lastupdated: "2020-06-22"
 
 keywords: LogDNA, IBM, Log Analysis, logging, config agent
 
@@ -22,7 +22,7 @@ subcollection: Log-Analysis-with-LogDNA
 {:note: .note}
 
 # Excluding log data by using exclusion rules in the web UI
-{: #exclusion rules}
+{: #exclusion_rules}
 
 In an {{site.data.keyword.la_full_notm}} instance, you can configure exclusion rules through the LogDNA web UI to stop logs from counting against your data usage quota and from being stored for search.
 {:shortdesc}
@@ -54,7 +54,7 @@ Complete the following steps to define an exclusion rule:
 
 
 ## Sample 1: Exclude syslog data for a worker while keeping entries that report errors only
-{: #exclusion rules_sample}
+{: #exclusion_rules_sample}
 
 You will configure the rule so that you are able to see all log data through views and be able to define alerts on all the data.
 
@@ -86,7 +86,7 @@ Prereq: You must have a cluster configured to forward logs to a LogDNA instance.
 
 
 ## Sample 2: Exclude kube-system data from the cluster while keeping entries that report errors only
-{: #exclusion rules_sample2}
+{: #exclusion_rules_sample2}
 
 You will configure the rule so that you are not able to see excluded log data through views.
 
