@@ -134,8 +134,8 @@ The following tables list the locations where automatic collection of database s
 | {{site.data.keyword.databases-for-postgresql_full_notm}}        | ![Checkmark icon](../../icons/checkmark-icon.svg)`               | `NO`                |
 | {{site.data.keyword.messages-for-rabbitmq_full_notm}}           | ![Checkmark icon](../../icons/checkmark-icon.svg)               | `NO`                |
 | {{site.data.keyword.databases-for-redis_full_notm}}             | ![Checkmark icon](../../icons/checkmark-icon.svg)               | `NO`                |
-| {{site.data.keyword.cloud_notm}} {{site.data.keyword.ihsdbaas_mongodb_full}}             | ![Checkmark icon](../../icons/checkmark-icon.svg)               | `NO`                |
-| {{site.data.keyword.cloud_notm}} {{site.data.keyword.ihsdbaas_postgresql_full}}             | ![Checkmark icon](../../icons/checkmark-icon.svg)               | `NO`                |
+| {{site.data.keyword.cloud_notm}} {{site.data.keyword.ihsdbaas_mongodb_full}}     | ![Checkmark icon](../../icons/checkmark-icon.svg)               | `NO`                |
+| {{site.data.keyword.cloud_notm}} {{site.data.keyword.ihsdbaas_postgresql_full}}      | ![Checkmark icon](../../icons/checkmark-icon.svg)          | `NO`                |
 {: caption="Table 7. Database services" caption-side="top"}
 {: #cs-dbs-table-1}
 {: tab-title="America"}
@@ -145,7 +145,7 @@ The following tables list the locations where automatic collection of database s
 
 | Service                                                         | `Tokyo (jp-tok)`   |`Sydney (au-syd)` | `Seoul 01 (seo01)`       | `Chennai 01 (che01)`     |
 |-----------------------------------------------------------------|------------------|----------------|-------------------------|-------------------------|
-| {{site.data.keyword.cloudant_short_notm}}                       | ![Checkmark icon](../../icons/checkmark-icon.svg) | ![Checkmark icon](../../icons/checkmark-icon.svg) | `NO`                  |
+| {{site.data.keyword.cloudant_short_notm}}                       | ![Checkmark icon](../../icons/checkmark-icon.svg) | ![Checkmark icon](../../icons/checkmark-icon.svg) | `NO`     | `NO` |
 | {{site.data.keyword.databases-for-elasticsearch_full_notm}}     | ![Checkmark icon](../../icons/checkmark-icon.svg)   | ![Checkmark icon](../../icons/checkmark-icon.svg) | `Logs are available through the Log Analysis Tokyo instance` | `Logs are available through the Log Analysis Tokyo instance` |
 | {{site.data.keyword.databases-for-etcd_full_notm}}              | ![Checkmark icon](../../icons/checkmark-icon.svg)   | ![Checkmark icon](../../icons/checkmark-icon.svg)| `Logs are available through the Log Analysis Tokyo instance` | `Logs are available through the Log Analysis Tokyo instance` |
 | {{site.data.keyword.databases-for-mongodb_full_notm}}           | ![Checkmark icon](../../icons/checkmark-icon.svg)    | ![Checkmark icon](../../icons/checkmark-icon.svg) | `Logs are available through the Log Analysis Tokyo instance` | `Logs are available through the Log Analysis Tokyo instance` |
@@ -188,7 +188,7 @@ The following tables list the locations where automatic collection of database s
 |-----------------------------------------------------------------|---------------------|--------------------------------------|
 | {{site.data.keyword.appconservicefull}}                      | ![Checkmark icon](../../icons/checkmark-icon.svg)               | `NO`                                 |            
 {: caption="Table 10. Integration services" caption-side="top"}
-{: #cs-int-table-1}
+{: #cs-int-table-10}
 {: tab-title="America"}
 {: tab-group="cs_int"}
 {: class="simple-tab-table"}
@@ -198,7 +198,7 @@ The following tables list the locations where automatic collection of database s
 |-----------------------------------------------------------------|----------------|---------------------------|
 | {{site.data.keyword.appconservicefull}}                      | `NO`    | ![Checkmark icon](../../icons/checkmark-icon.svg)  |
 {: caption="Table 11. Integration services" caption-side="top"}
-{: #cs-int-table-2}
+{: #cs-int-table-11}
 {: tab-title="Asia Pacific"}
 {: tab-group="cs_int"}
 {: class="simple-tab-table"}
@@ -208,7 +208,7 @@ The following tables list the locations where automatic collection of database s
 |---------------------------------------------------------------|-------------------|----------------|
 | {{site.data.keyword.appconservicefull}}                    |  `NO`              | ![Checkmark icon](../../icons/checkmark-icon.svg)  |
 {: caption="Table 12. Integration services" caption-side="top"}
-{: #cs-int-table-3}
+{: #cs-int-table-12}
 {: tab-title="Europe"}
 {: tab-group="cs_int"}
 {: class="simple-tab-table"}
@@ -223,7 +223,7 @@ The following tables list the locations where automatic collection of database s
 |-----------------------------------------------------------------|---------------------|--------------------------------------|
 | {{site.data.keyword.loadbalancer_full}} `[1]`                | ![Checkmark icon](../../icons/checkmark-icon.svg)               | `NO`                                 |            
 {: caption="Table 13. Networking services" caption-side="top"}
-{: #cs-int-table-1}
+{: #cs-net-table-13}
 {: tab-title="America"}
 {: tab-group="cs_net"}
 {: class="simple-tab-table"}
@@ -233,7 +233,7 @@ The following tables list the locations where automatic collection of database s
 |-----------------------------------------------------------------|----------------|---------------------------|
 | {{site.data.keyword.loadbalancer_full}} `[1]`                  | `NO`    | `NO`  |
 {: caption="Table 14. Networking services" caption-side="top"}
-{: #cs-int-table-2}
+{: #cs-net-table-14}
 {: tab-title="Asia Pacific"}
 {: tab-group="cs_net"}
 {: class="simple-tab-table"}
@@ -243,7 +243,7 @@ The following tables list the locations where automatic collection of database s
 |---------------------------------------------------------------|-------------------|----------------|
 | {{site.data.keyword.loadbalancer_full}} `[1]`               |  `NO`              | `NO`  |
 {: caption="Table 15. Networking services" caption-side="top"}
-{: #cs-int-table-3}
+{: #cs-net-table-15}
 {: tab-title="Europe"}
 {: tab-group="cs_net"}
 {: class="simple-tab-table"}
@@ -261,7 +261,7 @@ The following tables list the locations where automatic collection of security s
 |-----------------------------------------------------------------|---------------------|--------------------------------------|
 | {{site.data.keyword.cloudcerts_full_notm}}                      | ![Checkmark icon](../../icons/checkmark-icon.svg)               | `NO`                                 |            
 {: caption="Table 16. Security services" caption-side="top"}
-{: #cs-sec-table-1}
+{: #cs-sec-table-16}
 {: tab-title="America"}
 {: tab-group="cs_sec"}
 {: class="simple-tab-table"}
@@ -271,7 +271,7 @@ The following tables list the locations where automatic collection of security s
 |-----------------------------------------------------------------|----------------|---------------------------|
 | {{site.data.keyword.cloudcerts_full_notm}}                      | ![Checkmark icon](../../icons/checkmark-icon.svg)            | ![Checkmark icon](../../icons/checkmark-icon.svg) |
 {: caption="Table 17. Security services" caption-side="top"}
-{: #cs-sec-table-2}
+{: #cs-sec-table-17}
 {: tab-title="Asia Pacific"}
 {: tab-group="cs_sec"}
 {: class="simple-tab-table"}
@@ -281,7 +281,7 @@ The following tables list the locations where automatic collection of security s
 |---------------------------------------------------------------|-------------------|----------------|
 | {{site.data.keyword.cloudcerts_full_notm}}                    | ![Checkmark icon](../../icons/checkmark-icon.svg)               | ![Checkmark icon](../../icons/checkmark-icon.svg) |
 {: caption="Table 18. Security services" caption-side="top"}
-{: #cs-sec-table-3}
+{: #cs-sec-table-18}
 {: tab-title="Europe"}
 {: tab-group="cs_sec"}
 {: class="simple-tab-table"}
@@ -297,8 +297,8 @@ The followinf locations are valid for VPC Gen 1 and VPC Gen 2:
 | Service                                | `Dallas (us-south)`                                | `Washington (us-east)`               |
 |----------------------------------------|----------------------------------------------------|--------------------------------------|
 | VPN                                    | ![Checkmark icon](../../icons/checkmark-icon.svg) | `Logs are available through the LogDNA US-South instance` |
-{: caption="VPC events in America's locations" caption-side="top"}
-{: #cs-vpc-table-1}
+{: caption="Table 19. VPC events in America's locations" caption-side="top"}
+{: #cs-vpc-table-19}
 {: tab-title="America"}
 {: tab-group="cs_vpc"}
 {: class="simple-tab-table"}
@@ -307,8 +307,8 @@ The followinf locations are valid for VPC Gen 1 and VPC Gen 2:
 | Service                                                         | `Tokyo (jp-tok)` |`Sydney (au-syd)`           |
 |-----------------------------------------------------------------|------------------|----------------------------|
 | VPN                                              | ![Checkmark icon](../../icons/checkmark-icon.svg)               | ![Checkmark icon](../../icons/checkmark-icon.svg) |      
-{: caption="VPC events in AP locations" caption-side="top"}
-{: #cs-vpc-table-2}
+{: caption="Table 20. VPC events in AP locations" caption-side="top"}
+{: #cs-vpc-table-20}
 {: tab-title="Asia Pacific"}
 {: tab-group="cs_vpc"}
 {: class="simple-tab-table"}
@@ -317,8 +317,8 @@ The followinf locations are valid for VPC Gen 1 and VPC Gen 2:
 | Service                                                       |`Frankfurt (eu-de)`  | `London (eu-gb)` |
 |---------------------------------------------------------------|---------------------|------------------|
 | VPN                                                           | ![Checkmark icon](../../icons/checkmark-icon.svg)    | ![Checkmark icon](../../icons/checkmark-icon.svg) |           
-{: caption="VPC events in Europe locations" caption-side="top"}
-{: #cs-vpc-table-3}
+{: caption="Table 21. VPC events in Europe locations" caption-side="top"}
+{: #cs-vpc-table-21}
 {: tab-title="Europe"}
 {: tab-group="cs_vpc"}
 {: class="simple-tab-table"}
@@ -333,8 +333,8 @@ The followinf locations are valid for VPC Gen 1 and VPC Gen 2:
 | Service                                                         | `Dallas (us-south)` | `Washington (us-east)`                   |
 |-----------------------------------------------------------------|---------------------|--------------------------------------|
 | {{site.data.keyword.iva_full_notm}}                                  | ![Checkmark icon](../../icons/checkmark-icon.svg)               | `Logs are available through the Log Analysis Dallas instance` |  
-{: caption="Table 16. Watson AI in America's locations" caption-side="top"}
-{: #cs-sec-table-1}
+{: caption="Table 22. Watson AI in America's locations" caption-side="top"}
+{: #cs-wat-table-22}
 {: tab-title="America"}
 {: tab-group="cs_sec"}
 {: class="simple-tab-table"}
@@ -343,8 +343,8 @@ The followinf locations are valid for VPC Gen 1 and VPC Gen 2:
 | Service                                                         | `Tokyo (jp-tok)` |`Sydney (au-syd)`           |
 |-----------------------------------------------------------------|----------------|---------------------------|
 | {{site.data.keyword.iva_full_notm}}                                                | `NO`            | `NO` |
-{: caption="Table 17. Watson AI in AP locations" caption-side="top"}
-{: #cs-sec-table-2}
+{: caption="Table 23. Watson AI in AP locations" caption-side="top"}
+{: #cs-wat-table-23}
 {: tab-title="Asia Pacific"}
 {: tab-group="cs_sec"}
 {: class="simple-tab-table"}
@@ -353,8 +353,8 @@ The followinf locations are valid for VPC Gen 1 and VPC Gen 2:
 | Service                                                       |`Frankfurt (eu-de)`  | `London (eu-gb)` |
 |---------------------------------------------------------------|-------------------|----------------|
 | {{site.data.keyword.iva_full_notm}}                           | `NO`  |  `NO` |
-{: caption="Table 18. Watson AI in Europe locations" caption-side="top"}
-{: #cs-sec-table-3}
+{: caption="Table 24. Watson AI in Europe locations" caption-side="top"}
+{: #cs-wat-table-24}
 {: tab-title="Europe"}
 {: tab-group="cs_sec"}
 {: class="simple-tab-table"}

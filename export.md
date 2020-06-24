@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2020
-lastupdated: "2020-05-11"
+lastupdated: "2020-06-24"
 
 keywords: LogDNA, IBM, Log Analysis, logging, export logs
 
@@ -20,6 +20,7 @@ subcollection: Log-Analysis-with-LogDNA
 {:download: .download}
 {:important: .important}
 {:note: .note}
+{:external: target="_blank" .external}
 
  
 # Exporting logs
@@ -63,7 +64,7 @@ Complete the following steps to export logs programmatically:
 
     1. [Launch the {{site.data.keyword.la_full_notm}} web UI](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-view_logs#view_logs_step2).
 
-    2. Select the **Configuration** icon ![Configuration icon](images/admin.png) &gt; **Observability**. 
+    2. Select the **Configuration** icon ![Configuration icon](images/admin.png) &gt; **Organization**. 
 
     3. Select **API keys**.
 

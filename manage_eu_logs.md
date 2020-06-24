@@ -60,7 +60,7 @@ Consider the following information when you turn on the `EU-supported` flag in y
 ## Step 2. Provision {{site.data.keyword.la_full_notm}} instances in Frankfurt 
 {: #manage_eu_logs_step2}
 
-You can provision {{site.data.keyword.la_full_notm}} instances in multiple [locations](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-regions). However, only instances that are provisioned in the `EU-DE (Frankfurt` location are EU-Supported.
+You can provision {{site.data.keyword.la_full_notm}} instances in multiple [locations](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-regions). However, only instances that are provisioned in the `EU-DE (Frankfurt`) location are EU-Supported.
 {: important}
 
 For more information on how to provision an instance, see [Provisioning an instance](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-provision).
@@ -69,7 +69,7 @@ For more information on how to provision an instance, see [Provisioning an insta
 ## Step 3. Configure 1 instance to manage service platform logs
 {: #manage_eu_logs_step3}
 
-You can provision 1 or more instances in the Franfurt location. However, only 1 of those instances can be configured to collect platform service logs for resources that run in the Frankfurt location. For more information on how to configure an instance to collect platform service logs, see [Configuring service logs](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-config_svc_logs).
+You can provision 1 or more instances in the Frankfurt location. However, only 1 of those instances can be configured to collect platform service logs for resources that run in the Frankfurt location. For more information on how to configure an instance to collect platform service logs, see [Configuring service logs](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-config_svc_logs).
 
 Check out the list of {{site.data.keyword.cloud_notm}} resources that automatically collect logs and forward them to your logging instance. See [platform service logs](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-cloud_services).
 

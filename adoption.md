@@ -443,7 +443,7 @@ There are 2 types of data that you should consider archiving:
 
 In the LogDNA web UI, you can define custom views, dashboards, parsing templates, screens, and exclusion rules that you can use to view and analyze data.
 
-To reuse resource definitions that you define in your LogDNA instance, you can export these resources from {an {{site.data.keyword.la_full_notm}} instance as a JSON file. Then, you can import the definitions into other LogDNA instances. For example, you can reuse your LogDNA resources across different environments for your stage, pre-production, and production logging instances. [Learn more](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-reuse_resource_definitions).
+To reuse resource definitions that you define in your LogDNA instance, you can export these resources from an {{site.data.keyword.la_full_notm}} instance as a JSON file. Then, you can import the definitions into other LogDNA instances. For example, you can reuse your LogDNA resources across different environments for your stage, pre-production, and production logging instances. [Learn more](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-reuse_resource_definitions).
 
 **Backup LogDNA resource definitions into a version control system such as a git repository where you can control access to the archived files and manage versions.**
 {: tip}

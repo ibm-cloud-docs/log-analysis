@@ -135,7 +135,7 @@ To configure an instance from the Observability dashboard in the {{site.data.key
 
 
 ## Configuring a CF app to forward logs to a custom LogDNA instance by using Syslog drains
-{: #monitor_cfapp_logs}
+{: #monitor_cfapp_logs_drains}
 
 You can configure a Cloud Foundry (CF) application, running in the {{site.data.keyword.cloud_notm}} or outside the {{site.data.keyword.cloud_notm}}, to stream application logs to an instance of the the {{site.data.keyword.la_full_notm}} service. You can configure a secure connection or a TLS connection between the CF app and the logging instance.
 
@@ -146,7 +146,7 @@ To send CF logs to a {{site.data.keyword.la_short}} instance, consider the follo
 
 
 ### Before you begin
-{: #monitor_cfapp_logs_prereqs}
+{: #monitor_cfapp_logs_drains_prereqs}
 
 Use a user ID that is a member or an owner of an {{site.data.keyword.cloud_notm}} account. To get an {{site.data.keyword.cloud_notm}} user ID, go to: [Registration](https://cloud.ibm.com/login){: external}.
 
@@ -166,12 +166,12 @@ You must have a CF app deployed and running.
 
 
 ### Step1: Provision an {{site.data.keyword.la_full_notm}} instance
-{: #monitor_cfapp_logs_step1}
+{: #monitor_cfapp_logs_drains_step1}
 
 To provision a service instance of {{site.data.keyword.la_full_notm}} through the {{site.data.keyword.cloud_notm}} console, see [Provisioning an instance](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-provision).
 
 ### Step 2: Provision a syslog port in the logging instance
-{: #monitor_cfapp_logs_step2}
+{: #monitor_cfapp_logs_drains_step2}
 
 1. [Launch the LogDNA web UI.](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-launch)
 
@@ -189,7 +189,7 @@ To provision a service instance of {{site.data.keyword.la_full_notm}} through th
 
 
 ### Step 3: Configure a user-provided service instance for your CF app
-{: #monitor_cfapp_logs_step3}
+{: #monitor_cfapp_logs_drains_step3}
 
 Complete the following steps:
 
@@ -265,7 +265,7 @@ Complete the following steps:
 
 
 ### Step 4: Verify that CF app logs are displayed through the LogDNA web UI
-{: #monitor_cfapp_logs_step4}
+{: #monitor_cfapp_logs_drains_step4}
 
 Launch the LogDNA web UI. Then, search for your CF application logs. For more information, see [Filtering logs](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-view_logs#view_logs_step5).
 

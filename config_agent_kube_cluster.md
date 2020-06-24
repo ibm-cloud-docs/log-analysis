@@ -85,17 +85,17 @@ To configure the LogDNA agen in the cluster, you need the following CLIs:
 
 
 
-## Step 2. Store your logDNA ingestion key as a Kubernetes secret
+## Step 2. Store your LogDNA ingestion key as a Kubernetes secret
 {: #config_agent_kube_cluster_step2}
 
-Create a Kubernetes secret to store your logDNA ingestion key for your service instance. 
+Create a Kubernetes secret to store your LogDNA ingestion key for your service instance. 
 
-The LogDNA ingestion key is used to open a secure web socket to the logDNA ingestion server and to authenticate the logging agent with the {{site.data.keyword.la_full_notm}} service.
+The LogDNA ingestion key is used to open a secure web socket to the LogDNA ingestion server and to authenticate the logging agent with the {{site.data.keyword.la_full_notm}} service.
 
 Run the following command:
 
 ```
-kubectl create secret generic logdna-agent-key --from-literal=logdna-agent-key=<logDNA_ingestion_key> -n ibm-observe
+kubectl create secret generic logdna-agent-key --from-literal=logdna-agent-key=<LogDNA_ingestion_key> -n ibm-observe
 ```
 {: pre}
 

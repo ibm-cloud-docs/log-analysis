@@ -185,7 +185,7 @@ Create a Kubernetes daemon set to deploy the LogDNA agent on every worker node o
 The LogDNA agent collects logs with the extension `*.log` and extensionsless files that are stored in the `/var/log` directory of your pod. By default, logs are collected from all namespaces, including `kube-system`, and automatically forwarded to the {{site.data.keyword.la_full_notm}} service.
 
 ### LogDNA agent V1
-{: #config_agent_kube_cluster_step4_V1}
+{: #config_agent_os_cluster_step4_V1}
 
 Choose one of the following commands to install and configure the LogDNA agent version 1:
 
