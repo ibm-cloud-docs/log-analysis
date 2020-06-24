@@ -2,9 +2,9 @@
 
 copyright:
   years:  2018, 2020
-lastupdated: "2020-03-18"
+lastupdated: "2020-06-24"
 
-keywords: LogDNA, IBM, Log Analysis, logging, getting started
+keywords: LogDNA, IBM, Log Analysis, logging, service plan
 
 subcollection: Log-Analysis-with-LogDNA
 
@@ -29,13 +29,13 @@ Different pricing plans are available that you can choose for an {{site.data.key
 
 
 
-| Plan                            | Number of days that data is available for seach | Number of users per plan |
-|---------------------------------|-------------------------------------------------|--------------------------|
-| `HIPAA 30 day log search` [1]   | 30                                              | 25                       |
-| `30 days log search`            | 30                                              | Unlimited               |
-| `14 days log search`            | 14                                              | Unlimited               |
-| `7-day log search`              | 7                                               | Unlimited               |
-| `Lite`                          | Data is not available for search                | 1                        |
+| Plan                            | Number of days that data is available for seach | Number of users per plan | Plan ID |
+|---------------------------------|-------------------------------------------------|--------------------------|---------|
+| `HIPAA 30 day log search` [1]   | 30                                              | 25                       | a9b3eb07-5096-448b-ba34-53711d74742b |
+| `30 days log search`            | 30                                              | Unlimited                | deda35aa-662b-4b06-9f6e-05e0b55cc577 |
+| `14 days log search`            | 14                                              | Unlimited                | 0b3a45e0-def0-4935-8c74-26976f281751 |
+| `7-day log search`              | 7                                               | Unlimited                | 209cbd52-f3e2-47cb-94ce-6b84fafcf22b|
+| `Lite`                          | Data is not available for search                | 1                        | abcf7f02-de22-4c7f-98a1-e8a592093d83 |
 {: caption="Table 1. List of service plans" caption-side="top"} 
 
 `[1]` To enable the HIPAA plan in your account, you must [open a support ticket](/docs/get-support?topic=get-support-getting-customer-support#getting-customer-support). 
