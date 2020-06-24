@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2020
-lastupdated: "2020-03-27"
+lastupdated: "2020-06-24"
 
 keywords: LogDNA, IBM, Log Analysis, logging, services
 
@@ -32,7 +32,7 @@ List of {{site.data.keyword.cloud}} services that send logs to {{site.data.keywo
 
 You can monitor logs from CF apps and enabled services through [the {{site.data.keyword.la_short}} instance that is configured to receive platform services logs](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-config_svc_logs) in the location where the app or service is running. 
 
-Notice that there is only 1 instance per location with the flag **Platform services logs**.
+Notice that there is only 1 instance per location with the flag **Platform logs**.
 {: important}
 
 ## Analytics services
