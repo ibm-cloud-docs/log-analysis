@@ -6,33 +6,28 @@ IBM Log Analysis with LogDNA
 
     {: .navgroup id="learn"}
     getting-started.md
+    logdna_agent.md
 
     {: .topicgroup}
-    Cloud services
+    Monitoring IBM Cloud services logs
+        config_svc_logs.md
         cloud_services.md
         cloud_services_locations.md
-        monitor_cfapp_logs.md
 
     {: .topicgroup}
-    Enhancing security for IBM Log Analysis with LogDNA
+    Monitoring Infrastructure logs
+        monitor_cfapp_logs.md
+        tutorials/kube.md
+        tutorials/ubuntu.md
+
+    {: .topicgroup}
+    Security and compliance
+        adoption.md
+        manage_eu_logs.md
         data-security.md
         iam.md
         service-connection.md
         architecture-workload-isolation.md
-
-    logdna_agent.md
-    
-    {: .topicgroup}
-    Security and Compliance
-        adoption.md
-        manage_eu_logs.md
-
-    {: .topicgroup}
-    Tutorials
-        tutorials/kube.md
-        tutorials/kube_reset_ingestion.md
-        tutorials/ubuntu.md
-        tutorials/cf.md
     {: .navgroup-end}
 
     {: .navgroup id="howto"}
@@ -61,6 +56,7 @@ IBM Log Analysis with LogDNA
         exclude_logs_from_agent.md
         adding_tags.md
         detach_agent.md
+        tutorials/kube_reset_ingestion.md
 
     {: .topicgroup}
     View logs
