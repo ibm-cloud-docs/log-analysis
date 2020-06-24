@@ -2,34 +2,49 @@
   "faq_1":[
 	  "available Cloud services used with LogDNA",
 	  "Cloud services available for logging with LogAnalysis",
-	  "issues viewing platform service logs with LogDNA",
-	  "monitoring service logs using LogAnalysis with LogDNA",
-	  "configuring Cloud service events using LogDNA"
+	  "Cloud services to be used with LogDNA",
+	  "list of Cloud services that send logs for LogDNA",
+	  "Cloud services that send logs to IBM Log Analysis",
+	  "What services can send logs to LogDNA",
+          "Cloud services that send logs to LogAnalysis",
+	  "which CLoud Services can be used with LogDNA"
   ],
   "faq_2":[
 	  "generate service logs with LogAnalysis",
 	  "find Cloud service logging details for LogDNA",
+	  "details about the logs that a service generates for LogAnalysis",
 	  "Cloud service logging details for LogAnalysis",
-	  "generating service logs in LogDNA",
+	  "services generating service logs in LogDNA",
+	  "find service logging details for LogDNA",
 	  "details for generating Cloud service logs with LogAnalysis"
   ],
   "faq_3":[
       "cannot display logs in LogAnalysis",
 	  "issue generating logs for LogAnalysis",
 	  "issue viewing service logs in LogDNA",
+	  "find the logs that a service generates for LogDNA",
+	  "can't find the LogDNA logs",
+	  "find the logs that a service generates in LogDNA",
+	  "issue finding logs in LogAnalsis with LogDNA",
+	  "configuring the logging within LogDNA",
 	  "configure logging with LogAnalysis with LogDNA",
 	  "finding logs in LogAnalsis with LogDNA"
   ],
   "faq_5":[  
 	  "import archived data to LogDNA",
+	  "import archived data back into the LogDNA web",
+	  "importing the archived data into LogAnalysis",
 	  "importing archived data to LogDNA",
 	  "data archive imports with LogAnalysis",
 	  "archived data imported back to LogDNA UI",
+	  "archived data importing into the LogDNA web",
 	  "import into LogDNA archived data"
   ],
   "faq_6":[  
 	  "configuring event archiving with LogDNA",
 	  "configure log archiving using LogAnalysis",
+	  "configure archiving for my LogDNA instance",
+	  "LogDNA archiving configuration",
 	  "configure event archiving in LogDNA",
 	  "archive logs are missing in LogDNA",
 	  "issues with archiving events for LogDNA",
@@ -38,7 +53,10 @@
   "faq_7":[
 	  "issue accessing LogDNA",
 	  "cannot view LogDNA logs",
+	  "unable to access LogDNA logs",
+	  "cannot access LogDNA",
 	  "cannot open LogDNA web UI",
+	  "can't access the LogDNA web",
 	  "LogDNA instances not showing on Obervability page",
 	  "can't access LogDNA",
 	  "issues accessing LogAnalysis service"
@@ -46,7 +64,10 @@
   "faq_8":[
 	  "hitting LogDNA ingestion key limit",
 	  "reset ingestion key in LogDNA",
+	  "ingestion key reset for LogDNA",
+	  "reset an ingestion key within Log Analysis",
 	  "issues resetting ingestion key with LogDNA",
+	  "error resetting my ingestion key in LogDNA",
 	  "maximum number of ingestion keys reached in LogDNA",
 	  "ingestion key limitation in LogDNA"
   ]
