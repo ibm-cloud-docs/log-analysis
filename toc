@@ -9,13 +9,13 @@ IBM Log Analysis with LogDNA
     logdna_agent.md
 
     {: .topicgroup}
-    Monitoring IBM Cloud services logs
+    Logging IBM Cloud services
         config_svc_logs.md
         cloud_services.md
         cloud_services_locations.md
 
     {: .topicgroup}
-    Monitoring Infrastructure logs
+    Logging Infrastructure services
         monitor_cfapp_logs.md
         kube.md
         ubuntu.md
