@@ -36,6 +36,7 @@ IBM Log Analysis with LogDNA
     provision.md
     provision_hipaa.md
     remove.md
+    upgrade.md
     observe.md
     
    {: .topicgroup}
