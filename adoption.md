@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2020
-lastupdated: "2020-06-22"
+lastupdated: "2020-07-01"
 
 keywords: LogDNA, IBM, Log Analysis, logging, regulated, highly available workloads
 
@@ -107,8 +107,6 @@ When you configure your account to be HIPAA enabled, consider the following info
 Enable this setting only if you or your company is a covered entity as defined by HIPAA. If you or your company is a business associate of a covered entity, [contact {{site.data.keyword.cloud_notm}} Sales](https://www.ibm.com/account/reg/us-en/signup?formid=MAIL-wcp){: external} to accept the applicable BAA. For more information about HIPAA definitions of covered entities and business associates, see the [US Department of Health & Human Services](https://www.hhs.gov/hipaa/for-professionals/covered-entities/index.html){: external} website.
 {: tip}
 
-The {{site.data.keyword.la_full_notm}} service offers a HIPAA service plan. By default, the HIPAA service plan is not enabled in your account. Contact {{site.data.keyword.IBM_notm}} and [open a support ticket](/docs/get-support?topic=get-support-getting-customer-support#getting-customer-support) to request access to the HIPAA service plan for your logging instances.
-{: note}
 
 
 ## Define the logging instances strategy 

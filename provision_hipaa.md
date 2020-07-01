@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2020
-lastupdated: "2020-03-06"
+lastupdated: "2020-07-01"
 
 keywords: LogDNA, IBM, Log Analysis, logging, overview
 
@@ -52,20 +52,9 @@ Accounts that enable the **HIPAA Supported setting** still have access to the fu
 ## Step 2. Provision your {{site.data.keyword.la_full_notm}} instances with the HIPAA service plan
 {: #compliance_hipaa_provision}
 
+The HIPAA plan allows a maximum of 25 team members per instance. If you need to grant permissions to more than 25 users, [open a support ticket](/docs/get-support?topic=get-support-getting-customer-support#getting-customer-support).
+{: note}
 
-### Step 2.1. Enable the HIPAA service plan in your account
-{: #compliance_hipaa_provision_plan}
-
-To have access to the HIPAA plan in your account, you must contact {{site.data.keyword.IBM_notm}}. [Open a support ticket](/docs/get-support?topic=get-support-getting-customer-support#getting-customer-support). You need to accept a BAA with LogDNA prior to having access to this plan.
-
-The HIPAA plan allows a maximum of 25 team members per instance.
-{: important}
-
-If you need to grant permissions to more than 25 users, [open a support ticket](/docs/get-support?topic=get-support-getting-customer-support#getting-customer-support).
-
-
-### Step 2.2. Provision instances of the service in your account
-{: #compliance_hipaa_provision_provision}
 
 Choose any of the following methods to provision an instance of the {{site.data.keyword.la_full_notm}} service:
 [Provisioning an instance through the Observability dashboard](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-provision#provision_ui)
@@ -76,7 +65,7 @@ Make sure that your naming convention for {{site.data.keyword.la_full_notm}} ins
 {: important}
 
 
-### Step 3. Label your service
+### Step 3. Label your service (optional)
 {: #compliance_hipaa_provision_tag}
 
 Set the tag **HIPAA** to the {{site.data.keyword.la_full_notm}} instances that you provision in your account.
