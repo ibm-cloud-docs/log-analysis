@@ -77,7 +77,7 @@ To stop your Kubernetes cluster from forwarding logs to your LogDNA instance, co
 
 
 
-### Detaching a LogDNA agent from a standard Kubernetes cluster from the OpenShift console
+### Detaching a LogDNA agent from a standard Kubernetes cluster from the cluster console
 {: #detach_agent_os_console}
 
 Complete the following steps from the [{{site.data.keyword.containerlong_notm}} console](https://cloud.ibm.com/kubernetes/clusters){: external}:
@@ -297,7 +297,6 @@ Complete the following steps:
     * `<LogDNA_instance_name_or_ID>` is the name or the ID of the LogDNA instance where you want to forward the cluster logs for analysis.
 
     * ` [--force]`  is used to force the command to run with no user prompts.
-
 
 
 
