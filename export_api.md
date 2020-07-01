@@ -23,32 +23,38 @@ subcollection: Log-Analysis-with-LogDNA
 {:external: target="_blank" .external}
 
  
-# Exporting events programmatically
+# Exporting logs programmatically
 {: #export_api}
 
-From an {{site.data.keyword.la_full_notm}} instance, you can export events programmatically by using the LogDNA REST API. 
+From an {{site.data.keyword.la_full_notm}} instance, you can export logs programmatically by using the LogDNA REST API. 
 {:shortdesc}
+
+Consider the following information when you export log data:
+* You export a set of log entries. To define the set of data that you want to export, you can apply filter and searches. You can also specify the time range. 
+* When you export logs programmatically, you can choose to send an email or to write logs in to your terminal.
+* The compressed log file that contains the data that you want to export is available for a maximum of 12 hours. 
+* When you export logs, you have a limit of lines that you can export in a request. You can specify to export older lines or newer lines in case you reach the limit in the time range that you specify for the export. The maximum number of lines that you can export per API request is `500.000` lines.
 
 
 ## Prerequisites
 {: #export_api_prereqs}
 
-To export events, consider the following information:
+To export logs, consider the following information:
 
 * **You must have a paid service plan** for the {{site.data.keyword.la_full_notm}} service. [Learn more](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-service_plans). 
 
-* Check that your user ID has permissions to launch the web UI, view or manage service keys, and view events. [Learn more](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-view_logs).
+* Check that your user ID has permissions to launch the web UI, view or manage service keys, and view logs. [Learn more](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-view_logs).
 
-* Check that the LogDNA instance has the export feature enabled. 
+* Check that the LogDNA instance has the export feature enabled. [Learn more](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-export_config).
 
 
 ## Export API
 {: #export_api_info}
 
-Use `ENDPOINT/v1/export?QUERY_PARAMETERS" -u SERVICE_KEY:` to export events.
+Use `ENDPOINT/v1/export?QUERY_PARAMETERS" -u SERVICE_KEY:` to export logs.
 {: note}
 
-*ENDPOINT* represents the entry point to the service. Each region has a different URL. To export events from an auditing instance, see [Endpoints](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-endpoints).
+*ENDPOINT* represents the entry point to the service. Each region has a different URL. To export logs from an auditing instance, see [Endpoints](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-endpoints).
 
 *QUERY_PARAMETERS* are parameters that define the filtering criteria that is applied to the export request.
 
@@ -61,10 +67,7 @@ Add `:` after *SERVICE_KEY*.
 ## Query parameters
 {: #export_api_info_parameters}
 
-You can define query parameters to refine the events that you want to export.
-
-
-
+You can define query parameters to refine the logs that you want to export.
 
 The following table lists the query parameters that you can set:
 
@@ -83,85 +86,44 @@ The following table lists the query parameters that you can set:
 {: caption="Query parameters" caption-side="top"} 
 
 
-
 When you include a query or a subject to an email, use `%20` to represent a space.
 {: important}
 
+For example, you can define a set of parameters to include information:
+
+```
+ENDPOINT/v1/export?to=START_TIME&from=END_TIME&hosts=LIST_OF_HOSTS&levels=LIST_OF_LEVELS&size=N&query=(SEARCH_QUERY)" -u $TOKEN:
+```
+{: codeblock}
 
 
+## Exporting logs
+{: #export_api_logs}
 
-## Exporting events
-{: #export_api_events}
-
-Complete the following steps to export events programmatically:
+Complete the following steps to export logs programmatically:
 
 
 ### Step 1. Get a service key
 {: #export_api_step_1}
 
-[Get a service key](/docs/Activity-Tracker-with-LogDNA?topic=Activity-Tracker-with-LogDNA-service_keys). 
+[Get a service key](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-service_keys). 
 
 
 ### Step 2. Identify the data to pass through the export parameters
 {: #export_api_step_2}
 
-When you use the export API, you might define 1 or more parameters to refine the set of events that you export. For example, consider the following parameters:
-* `levels`: This parameter is used to filter events based on the criticality of a request.
-* `query`: This parameter is used to define the search query that is used to filter events.
-* `hosts`: This parameter is used to list the services from which you want to export data. 
+To verify that the query that you use in the export returns the set of logs that you are looking for, define the search query through the LogDNA web UI. Refine the query until you can only see the logs that you want to export. Then, map the data to the query parameters.
 
-To verify that the query that you enter returns the set of events that you are looking for, define the search query through the LogDNA web UI.
-{: tip}
-
-Consider the following information when you define the search query through the LogDNA web UI 
-1. Select the sources. 
-
-    Sources represent {{site.data.keyword.cloud_notm}} services. 
-    
-    The values that you identify will be required to set the *hosts* parameter. 
-
-    If you set the host field in the query, this parameter is not required.
-    {: note}
-
-2. Select the levels.
-
-    In Activity Tracker, level maps to the [severity event field](/docs/Activity-Tracker-with-LogDNA?topic=Activity-Tracker-with-LogDNA-event#severity). Severity defines the level of threat an action may have on the {{site.data.keyword.cloud_notm}}.
-
-    Valid severity values are *critical*, *warning*, and *normal*.
-
-    If you set the field severity in the query, this parameter is not required.
-    {: note}
-
-3. Define the search query. 
-
-    To get more informatiomn on how to search, see [Searching Your Logs](https://docs.logdna.com/docs/search){: external}.
-
-    Refine the query until you can only see the events that you want to export.
-    {: tip}
-
-
-
-### Step 3. Map the data to the query parameters
-{: #export_api_step_3}
-
-To define the parameters that you need for the export request, complete the following steps:
-
-1. Map your sources to the hosts parameter. The `hosts` parameter is a comma-separated list of services.
-
-2. Map the severity to the `levels` parameter. The `levels` parameter is a comma-separated list of severity values.
-
-3. Map the query to the query parameter. 
-
-    Notice that when you copy the query from the LogDNA web UI, you must replace every space with %20.
-    {: important}
+Notice that when you copy the query from the LogDNA web UI, you must replace every space with `%20`.
+{: important}
 
 
 
 
-### Step 4. Export the events
+### Step 4. Export the logs
 {: #export_api_step_4}
 
-Run the following cURL command to export events:
+Run the following cURL command to export logs:
 
 ```
 curl "ENDPOINT/v1/export?QUERY_PARAMETERS" -u SERVICE_KEY:
@@ -181,14 +143,14 @@ Where
 For example, to write log lines into the terminal, you can run the following command:
 
 ```
-curl "https://api.us-south.logging.cloud.ibm.com/v1/export?to=$(date +%s)000&from=$(($(date +%s)-86400))000&level=info" -u e08c0c759663491880b0d61712346789:
+curl "https://api.us-south.logging.cloud.ibm.com/v1/export?to=$(date +%s)000&from=$(($(date +%s)-86400))000&levels=info" -u e08c0c759663491880b0d61712346789:
 ```
 {: screen}
 
 To send an email with the link to download the log lines specified on the export, you can run the following command:
 
 ```
-curl "https://api.us-south.logging.cloud.ibm.com/v1/export?to=$(date +%s)000&from=$(($(date +%s)-86400))000&level=info&email=xxx@ibm.com" -u e08c0c759663491880b0d61712346789:
+curl "https://api.us-south.logging.cloud.ibm.com/v1/export?to=$(date +%s)000&from=$(($(date +%s)-86400))000&levels=info&email=xxx@ibm.com" -u e08c0c759663491880b0d61712346789:
 ```
 {: screen}
 
@@ -196,7 +158,7 @@ curl "https://api.us-south.logging.cloud.ibm.com/v1/export?to=$(date +%s)000&fro
 To send an email with a custom subject, you can run the following command:
 
 ```
-curl "https://api.us-south.logging.cloud.ibm.com/v1/export?to=$(date +%s)000&from=$(($(date +%s)-86400))000&level=info&email=xxx@ibm.com&emailSubject=Export%20test" -u e08c0c759663491880b0d61712346789:
+curl "https://api.us-south.logging.cloud.ibm.com/v1/export?to=$(date +%s)000&from=$(($(date +%s)-86400))000&levels=info&email=xxx@ibm.com&emailSubject=Export%20test" -u e08c0c759663491880b0d61712346789:
 ```
 {: screen}
 

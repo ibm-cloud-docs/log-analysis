@@ -147,7 +147,7 @@ To enable automatic collection of {{site.data.keyword.cloud_notm}} enabled servi
 
 If you share staging, pre-production, and production services in the same {{site.data.keyword.cloud_notm}} account, notice that users, that are granted access to view data in the logging instance with the platform logs flag in a location, can see data from any service instance provisioned in that location. To prevent users from viewing log data from all service's instances, consider moving from a  single account model to an *Enterprise account* model.
 
-If you cannot move to an enterprise account model, try reducing the number of users that are granted permissions to view the logs. In addition, you can also define exclusion rules to hide data from showing through the web UI. Exclusion rules stop logs from counting against your data usage quota and from being stored for search. [Learn more](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-exclusion).
+If you cannot move to an enterprise account model, try reducing the number of users that are granted permissions to view the logs. In addition, you can also define exclusion rules to hide data from showing through the web UI. Exclusion rules stop logs from counting against your data usage quota and from being stored for search. [Learn more](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-exclusion_rules).
 
 
 ### Resource groups

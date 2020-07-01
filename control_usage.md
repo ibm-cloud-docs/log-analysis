@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2020
-lastupdated: "2020-03-06"
+lastupdated: "2020-07-01"
 
 keywords: LogDNA, IBM, Log Analysis, logging, config agent
 
@@ -52,7 +52,7 @@ Logs that are excluded do not count towards your data usage quota. Also, logs th
 
 When you exclude logs through an exclusion rule, you can choose to **Preserve these lines for live-tail and alerting**. When you check this option, log lines that match the exclusion rule are shown through the live tail and you can set up an alert for that data.
 
-[Learn more](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-exclusion).
+[Learn more](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-exclusion_rules).
 
 ​
 
