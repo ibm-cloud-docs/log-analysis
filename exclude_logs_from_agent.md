@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2020
-lastupdated: "2020-06-15"
+lastupdated: "2020-07-01"
 
 keywords: LogDNA, IBM, Log Analysis, logging, config agent
 
@@ -42,12 +42,12 @@ Complete the following steps to configure the agent so that only application log
 
 1. Open a terminal to log in to {{site.data.keyword.cloud_notm}}.
 
-   ```
-   ibmcloud login -a cloud.ibm.com --sso
-   ```
-   {: pre}
+    ```
+    ibmcloud login -a cloud.ibm.com --sso
+    ```
+    {: pre}
 
-   Select the account where you provisioned the {{site.data.keyword.la_full_notm}} instance.
+    Select the account where you provisioned the {{site.data.keyword.la_full_notm}} instance.
 
 2. List the clusters to find out in which region and resource group the cluster is available.
 
@@ -71,12 +71,12 @@ Complete the following steps to configure the agent so that only application log
 
 4. Set the cluster where you want to configure logging as the context for this session.
 
-   ```
-   ibmcloud ks cluster config --cluster <cluster_name_or_ID>
-   ```
-   {: pre}
+    ```
+    ibmcloud ks cluster config --cluster <cluster_name_or_ID>
+    ```
+    {: pre}
 
-   Where `<cluster_name_or_ID>` is the name or the ID of the cluster.
+    Where `<cluster_name_or_ID>` is the name or the ID of the cluster.
 
 5. Generate the configuration file of the agent by running the following command:
 
