@@ -120,8 +120,8 @@ Notice that when you copy the query from the LogDNA web UI, you must replace eve
 
 
 
-### Step 4. Export the logs
-{: #export_api_step_4}
+### Step 3. Export the logs
+{: #export_api_step_3}
 
 Run the following cURL command to export logs:
 
