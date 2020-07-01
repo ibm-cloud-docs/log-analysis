@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2020
-lastupdated: "2020-06-24"
+lastupdated: "2020-07-01"
 
 keywords: LogDNA, IBM, Log Analysis, logging, config agent
 
@@ -255,7 +255,7 @@ To get a copy of the LogDNA agent configuration that is deployed, you can run th
 
 
 
-## Deploy the LogDNA agent V2 within the context of the cluster
+## Deploy the LogDNA agent within the context of the cluster
 {: #config_agent_kube_ob}
 
 When you deploy and connect a LogDNA agent within the context of the cluster, consider the following information:
@@ -280,7 +280,7 @@ The minimum persmissions that a user must have to launch the LogDNA web UI from 
 * **Viewer** platform role and **Reader** service role for the {{site.data.keyword.containerlong_notm}} service to see the cluster and open the cluster's UI.
 * **Viewer** platform role, and **Reader** service role for the {{site.data.keyword.la_full_notm}} instance to launch the LogDNA web UI, and analyze logs through the LogDNA web UI.
 
-### Deploy the LogDNA agent V2 from the {{site.data.keyword.containerlong_notm}} console
+### Deploy the LogDNA agent from the {{site.data.keyword.containerlong_notm}} console
 {: #config_agent_kube_ob_ui}
 
 
@@ -311,33 +311,76 @@ Complete the following steps from the [{{site.data.keyword.containerlong_notm}} 
 6. Click **Connect**.
 
 
-### Deploy the LogDNA agent V2 by using ob commands
+### Deploy the LogDNA agent by using ob commands
 {: #config_agent_kube_ob_cli}
 
-To configure the LogDNA agent in the cluster, you must log in to the {{site.data.keyword.cloud_notm}} by using `ibmcloud` commands. You must set the cluster context by using `ibmcloud ks` commands. [Learn more](/docs/containers?topic=containers-cs_cli_install#cs_cli_install_steps). You must install the {{site.data.keyword.containerlong_notm}} observability CLI plug-in (ibmcloud ob).
 
-Run the following command to install the ob CLI:
+To configure the LogDNA agent in a cluster, complete the following steps:
 
-```
-ic plugin install observe-service
-```
-{: pre}
 
-To deploy the LogDNA agent by using the `ob` CLI, run the following command:
+1. [Pre-req] Install the {{site.data.keyword.containerlong_notm}} observability CLI plug-in (ibmcloud ob).
 
-```
-ibmcloud ob logging config create --cluster <cluster_name_or_ID> --instance <LogDNA_instance_name_or_ID> [--LogDNA-ingestion-key <Ingestion_Key>] [--private-endpoint]
-```
-{: pre}
+    ```
+    ibmcloud plugin install observe-service
+    ```
+   {: pre}
 
-Where
+2. Set the cluster context.
 
-* `<cluster_name_or_ID>` is the name or the ID of the cluster.
-* `<LogDNA_instance_name_or_ID>` is the name or the ID of the LogDNA instance where you want to forward the cluster logs for analysis.
-* `<Ingestion_Key>` is the ingestion key that you want to use to connect the LogDNA agent with the LogDNA instance.
-* `[--private-endpoint]` is optional. Add this option to connect to your LogDNA instance by using private service endpoints.
+    Open a terminal to log in to {{site.data.keyword.cloud_notm}}.
 
-For more information, see [Creating a logging configuration to forward cluster and app logs to IBM Log Analysis with LogDNA](/docs/containers?topic=containers-health#app_LogDNA).
+    ```
+    ibmcloud login -a cloud.ibm.com
+    ```
+    {: pre}
+
+    Select the account where you provisioned the {{site.data.keyword.la_full_notm}} instance.
+
+    List the clusters to find out in which region and resource group the cluster is available.
+
+    ```
+    ibmcloud ks clusters
+    ```
+    {: pre}
+
+    Set the resource group and region.
+
+    ```
+    ibmcloud target -g RESOURCE_GROUP -r REGION
+    ```
+    {: pre}
+
+    Where 
+    
+    `RESOURCE_GROUP` is the name of the resource group where the cluster is available, for example, `default`.
+    
+    `REGION` is the region where the cluster is available, for example, `us-south`.
+
+    Set the cluster where you want to configure logging as the context for this session.
+
+    ```
+    ibmcloud ks cluster config --cluster <cluster_name_or_ID>
+    ```
+    {: pre}
+
+3. Deploy the LogDNA agent by using the `ob` CLI. Run the following command:
+
+    ```
+    ibmcloud ob logging config create --cluster <cluster_name_or_ID> --instance <LogDNA_instance_name_or_ID> [--LogDNA-ingestion-key <Ingestion_Key>] [--private-endpoint]
+    ```
+    {: pre}
+
+    Where
+
+    * `<cluster_name_or_ID>` is the name or the ID of the cluster.
+
+    * `<LogDNA_instance_name_or_ID>` is the name or the ID of the LogDNA instance where you want to forward the cluster logs for analysis.
+
+    * `<Ingestion_Key>` is the ingestion key that you want to use to connect the LogDNA agent with the LogDNA instance.
+
+    * `[--private-endpoint]` is optional. Add this option to connect to your LogDNA instance by using private service endpoints.
+
+
 
 
 
