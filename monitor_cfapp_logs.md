@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2020
-lastupdated: "2020-06-24"
+lastupdated: "2020-07-01"
 
 keywords: LogDNA, IBM, Log Analysis, logging, cf
 
@@ -67,8 +67,8 @@ The following table summarizes the different methods that you can use to collect
 
 | CF resource              | Through the service platform logs logging instance in a region | Through a custom logging instance by using Syslog drains       |
 |--------------------------|:--------------------------------------------------:|:--------------------------------------------------:|
-| `CF infrastructure logs` | ![Checkmark icon](../../icons/checkmark-icon.svg)  | `NO`                                               |
-| `CF app logs`            | ![Checkmark icon](../../icons/checkmark-icon.svg)  | ![Checkmark icon](../../icons/checkmark-icon.svg)  |
+| `CF infrastructure logs` | ![Checkmark icon](images/checkmark.svg)  | `NO`                                               |
+| `CF app logs`            | ![Checkmark icon](images/checkmark.svg)  | ![Checkmark icon](images/checkmark.svg)  |
 {: caption="Table 1. Information about the methods that can be adopted to monitor CF resource logs in {{site.data.keyword.cloud_notm}} public" caption-side="top"}
 {: #end-api-table-1}
 {: tab-title="Monitor CF resources in IBM Cloud Public"}
@@ -79,7 +79,7 @@ The following table summarizes the different methods that you can use to collect
 | CF resource              | Through the service platform logs logging instance in a region | Through a custom logging instance by using Syslog drains       |
 |--------------------------|:--------------------------------------------------:|:--------------------------------------------------:|
 | `CF infrastructure logs` | `NO`                                               | `NO`                                               |
-| `CF app logs`            | `NO`                                               | ![Checkmark icon](../../icons/checkmark-icon.svg)  |
+| `CF app logs`            | `NO`                                               | ![Checkmark icon](images/checkmark.svg)  |
 {: caption="Table 2. Information about the methods that can be adopted to monitor CF resource logs in {{site.data.keyword.cloud_notm}} dedicated" caption-side="top"}
 {: #end-api-table-2}
 {: tab-title="Monitor CF resources in IBM Cloud Dedicated"}
@@ -90,7 +90,7 @@ The following table summarizes the different methods that you can use to collect
 | CF resource              | Through the service platform logs logging instance in a region | Through a custom logging instance by using Syslog drains       |                                     
 |--------------------------|:--------------------------------------------------:|:--------------------------------------------------:|
 | `CF infrastructure logs` | `NO`                                               | `NO`                                               |
-| `CF app logs`            | `NO`                                               | ![Checkmark icon](../../icons/checkmark-icon.svg)  |
+| `CF app logs`            | `NO`                                               | ![Checkmark icon](images/checkmark.svg)  |
 {: caption="Table 3. Information about the methods that can be adopted to monitor CF resource logs in {{site.data.keyword.cloud_notm}} on-premisses" caption-side="top"}
 {: #end-api-table-1}
 {: tab-title="Monitor CF resources outside {{site.data.keyword.cloud_notm}}"}
@@ -109,17 +109,17 @@ You have different options to collect and forward logs to an instance of the {{s
 
 | Comparison                                    | Through the logging instance that hosts service platform logs in a region | Through a custom logging instance by using Syslog drains       |
 |:----------------------------------------------|:--------------------------------------------------------------:|:--------------------------------------------------:|
-| `Automatic collection of infrastructure logs` | ![Checkmark icon](../../icons/checkmark-icon.svg)              | `NO`                                               |
-| `Automatic collection of CF app logs`         | ![Checkmark icon](../../icons/checkmark-icon.svg)              | ![Checkmark icon](../../icons/checkmark-icon.svg)  |
-| `CF app sends logs to STDOUT and STDERR`      | ![Checkmark icon](../../icons/checkmark-icon.svg)              | ![Checkmark icon](../../icons/checkmark-icon.svg)  |
+| `Automatic collection of infrastructure logs` | ![Checkmark icon](images/checkmark.svg)              | `NO`                                               |
+| `Automatic collection of CF app logs`         | ![Checkmark icon](images/checkmark.svg)              | ![Checkmark icon](images/checkmark.svg)  |
+| `CF app sends logs to STDOUT and STDERR`      | ![Checkmark icon](images/checkmark.svg)              | ![Checkmark icon](images/checkmark.svg)  |
 | `CF app sends logs via syslog`                | `NO`                                                           | `NO`                                               |
-| `Load balanced ingestion requests`            | ![Checkmark icon](../../icons/checkmark-icon.svg)              | `NO`                                               |
-| `Single point of failure at ingestion`        | `NO`                                                           | ![Checkmark icon](../../icons/checkmark-icon.svg)  |
-| `Higher throughput at ingestion`              | ![Checkmark icon](../../icons/checkmark-icon.svg)              | `NO`                                               |
+| `Load balanced ingestion requests`            | ![Checkmark icon](images/checkmark.svg)              | `NO`                                               |
+| `Single point of failure at ingestion`        | `NO`                                                           | ![Checkmark icon](images/checkmark.svg)  |
+| `Higher throughput at ingestion`              | ![Checkmark icon](images/checkmark.svg)              | `NO`                                               |
 {: caption="Table 4. Information about the methods that can be adopted to monitor CF resource logs in {{site.data.keyword.cloud_notm}}" caption-side="top"}
 
 Another consideration is the restriction that you can apply to users to control access to view logs in a logging instance. You can use [IAM to manage users and their access to view logs](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-iam). 
-* When you use the method of a single logging instance to host platform service logs, all logs from CF resources that run on that region are available for view through the instance. Any user with a service role `viewer` can see any log entries. 
+* When you use the method of a single logging instance to host platform logs, all logs from CF resources that run on that region are available for view through the instance. Any user with a service role `viewer` can see any log entries. 
 * When you use the method of sending CF app logs to a custom logging instance, users with a service role `viewer` can only see logs from CF app logs that are configured to stream logs to this logging instance.
 In both cases, users can also view logs from other sources that you might have configured to forward logs to the instance.
 
@@ -130,7 +130,7 @@ CF resources are location bound resources in the {{site.data.keyword.cloud_notm}
 
 In the {{site.data.keyword.cloud_notm}}, you can configure 1 logging instance to collect and host platform services logs in a region. After the instance is provisioned and configured in a region, logs that are generated from enabled services in that region such as CF apps or CF infrastructure are automatically collected and forwarded through the ELK-Adatper. You can monitor logs through this logging instance.
 
-To configure an instance from the Observability dashboard in the {{site.data.keyword.cloud_notm}}, see [Configuring IBM Cloud service logs](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-config_svc_logs).
+To configure an instance from the Observability dashboard in the {{site.data.keyword.cloud_notm}}, see [Configuring IBM Cloud platform logs](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-config_svc_logs).
 
 
 
@@ -150,7 +150,7 @@ To send CF logs to a {{site.data.keyword.la_short}} instance, consider the follo
 
 Use a user ID that is a member or an owner of an {{site.data.keyword.cloud_notm}} account. To get an {{site.data.keyword.cloud_notm}} user ID, go to: [Registration](https://cloud.ibm.com/login){: external}.
 
-Your {{site.data.keyword.IBM_notm}}ID must have assigned IAM policies for each of the following resources. For example, to work in the US-south region and in the default resource group, you need the following permissions: 
+[Your {{site.data.keyword.IBM_notm}}ID must have assigned IAM policies for each of the following resources](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-work_iam). For example, to work in the US-south region and in the default resource group, you need the following permissions: 
 
 | Resource                             | Scope of the access policy | Role    | Region    | Information                  |
 |--------------------------------------|----------------------------|---------|-----------|------------------------------|
@@ -160,7 +160,7 @@ Your {{site.data.keyword.IBM_notm}}ID must have assigned IAM policies for each o
 
 In {{site.data.keyword.IBM_notm}}, your {{site.data.keyword.IBM_notm}}ID must have the **developer** role assigned for the Cloud Foundry space where the CF application is running. Outside the {{site.data.keyword.IBM_notm}}, you must have permissions to configure a CUPS service for the CF app that you want to collect and monitor logs.
 
-You must install the {{site.data.keyword.cloud_notm}} CLI. For more information, see [Installing the {{site.data.keyword.cloud_notm}} CLI](/docs/cli?topic=cli-install-ibmcloud-cli). This CLI includes the CF CLI.
+You must install the {{site.data.keyword.cloud_notm}} CLI. For more information, see [Installing the {{site.data.keyword.cloud_notm}} CLI](/docs/cli?topic=cli-getting-started). This CLI includes the CF CLI.
 
 You must have a CF app deployed and running.
 
