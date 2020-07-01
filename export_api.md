@@ -170,7 +170,7 @@ curl "ENDPOINT/v1/export?QUERY_PARAMETERS" -u SERVICE_KEY:
 
 Where 
 
-* ENDPOINT represents the entry point to the service. Each region has a different URL. [Learn more](/docs/services/Activity-Tracker-with-LogDNA?topic=Activity-Tracker-with-LogDNA-endpoints#endpoints).
+* ENDPOINT represents the entry point to the service. Each region has a different URL. [Learn more](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-endpoints).
 * QUERY_PARAMETERS are parameters that define the filtering criteria that is applied to the export request.
 * SERVICE_KEY is the service key that you created in the previous step.
 
@@ -178,33 +178,25 @@ Where
 ## Samples
 {: #export_api_samples}
 
-To query events for a service in us-south, you can run the following command:
+For example, to write log lines into the terminal, you can run the following command:
 
 ```
-curl 'https://api.us-south.logging.cloud.ibm.com/v1/export?to=1592337600&from=1592179200&hosts=kms&size=10&query=(target.id:crn:v1:bluemix:public:kms:us-south:a/xxxxxxx:xxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx%20(action:kms.secrets.create%20%20OR%20action:kms.secrets.delete%20))' -u $TOKEN:
+curl "https://api.us-south.logging.cloud.ibm.com/v1/export?to=$(date +%s)000&from=$(($(date +%s)-86400))000&level=info" -u e08c0c759663491880b0d61712346789:
 ```
-{: codeblock}
+{: screen}
 
-To write events into the terminal, you can run the following command:
-
-```
-curl "https://api.us-south.logging.cloud.ibm.com/v1/export?to=$(date +%s)000&from=$(($(date +%s)-86400))000" -u $TOKEN:
-```
-{: codeblock}
-
-To send an email with the link to download the events that are specified on the export, you can run the following command:
+To send an email with the link to download the log lines specified on the export, you can run the following command:
 
 ```
-curl "https://api.us-south.logging.cloud.ibm.com/v1/export?to=$(date +%s)000&from=$(($(date +%s)-86400))000&email=joe@ibm.com" -u $TOKEN:
+curl "https://api.us-south.logging.cloud.ibm.com/v1/export?to=$(date +%s)000&from=$(($(date +%s)-86400))000&level=info&email=xxx@ibm.com" -u e08c0c759663491880b0d61712346789:
 ```
-{: codeblock}
+{: screen}
 
 
 To send an email with a custom subject, you can run the following command:
 
 ```
-curl "https://api.us-south.logging.cloud.ibm.com/v1/export?to=$(date +%s)000&from=$(($(date +%s)-86400))000&email=joe@ibm.com&emailSubject=Export%20test" -u $TOKEN:
+curl "https://api.us-south.logging.cloud.ibm.com/v1/export?to=$(date +%s)000&from=$(($(date +%s)-86400))000&level=info&email=xxx@ibm.com&emailSubject=Export%20test" -u e08c0c759663491880b0d61712346789:
 ```
-{: codeblock}
-
+{: screen}
 

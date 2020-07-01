@@ -53,16 +53,16 @@ Review the connectivity options for interacting with {{site.data.keyword.la_full
 
 The following table shows the public API endpoints:
 
-| Region                   |  Public Endpoint                                   |
-|--------------------------|----------------------------------------------------|
-| `Chennai (in-che)`       | `https://api.in-che.logging.cloud.ibm.com`         |
-| `Dallas (us-south)`      | `https://api.us-south.logging.cloud.ibm.com`       |
-| `Frankfurt (eu-de)`      | `https://api.eu-de.logging.cloud.ibm.com`          |
-| `London (eu-gb)`         | `https://api.eu-gb.logging.cloud.ibm.com`          |
-| `Tokyo (jp-tok)`         | `https://api.jp-tok.logging.cloud.ibm.com`         |
-| `Seoul (kr-seo)`         | `https://api.kr-seo.logging.cloud.ibm.com`         |
-| `Sydney (au-syd)`        | `https://api.au-syd.logging.cloud.ibm.com`         |
-| `Washington (us-east)`   | `https://api.us-east.logging.cloud.ibm.com`         |
+| Region                   |  Public Endpoint                                   | IP addresses |
+|--------------------------|----------------------------------------------------|--------------|
+| `Chennai (in-che)`       | `https://api.in-che.logging.cloud.ibm.com`         | `169.38.82.170` |
+| `Dallas (us-south)`      | `https://api.us-south.logging.cloud.ibm.com`       | `169.60.166.44` </br>`169.48.237.109` </br>`169.47.224.74` |
+| `Frankfurt (eu-de)`      | `https://api.eu-de.logging.cloud.ibm.com`          | `149.81.86.66` </br>`158.177.129.34` </br>`161.156.89.12` |
+| `London (eu-gb)`         | `https://api.eu-gb.logging.cloud.ibm.com`          | `141.125.78.213` </br>`158.175.82.238` </br>`158.176.135.132` |
+| `Tokyo (jp-tok)`         | `https://api.jp-tok.logging.cloud.ibm.com`         | `161.202.67.2` </br>`165.192.71.226` </br>`128.168.70.53` |
+| `Seoul (kr-seo)`         | `https://api.kr-seo.logging.cloud.ibm.com`         | `169.56.70.102` |
+| `Sydney (au-syd)`        | `https://api.au-syd.logging.cloud.ibm.com`         | `135.90.70.75` </br>`168.1.38.90` </br>`130.198.89.43` |
+| `Washington (us-east)`   | `https://api.us-east.logging.cloud.ibm.com`         | `169.62.55.212` </br>`169.47.43.67` </br>`169.60.95.75` |
 {: caption="Table 1. Lists of public API endpoints for interacting with {{site.data.keyword.la_full_notm}} over {{site.data.keyword.cloud_notm}}'s public network" caption-side="top"}
 
 
