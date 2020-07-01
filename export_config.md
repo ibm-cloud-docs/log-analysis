@@ -23,7 +23,7 @@ subcollection: Log-Analysis-with-LogDNA
 {:external: target="_blank" .external}
 
  
-# Controlling who can export events
+# Controlling who can export logs
 {: #export_config}
 
 For each {{site.data.keyword.la_full_notm}} instance, you can configure whether users can export data.
@@ -32,10 +32,10 @@ For each {{site.data.keyword.la_full_notm}} instance, you can configure whether 
 When the export configuration setting is enabled, you can export data in JSONL format from an {{site.data.keyword.la_full_notm}} instance.
 
 
-## Allowing users to export events
+## Allowing users to export logs
 {: #export_config_allow}
 
-Complete the following steps to allow users to export events from an {{site.data.keyword.la_full_notm}} instance:
+Complete the following steps to allow users to export logs from an {{site.data.keyword.la_full_notm}} instance:
 
 1. [Launch the {{site.data.keyword.la_full_notm}} web UI](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-launch).
 
@@ -43,7 +43,7 @@ Complete the following steps to allow users to export events from an {{site.data
 
 3. Select **Organization** &gt; **General**.
 
-4. Set-on the **Export Log Lines** setting to allow users to export events. 
+4. Set-on the **Export Log Lines** setting to allow users to export logs. 
 
 
 
@@ -58,5 +58,5 @@ Complete the following steps to disable the export feature in an {{site.data.key
 
 3. Select **Organization** &gt; **General**.
 
-4. Set-off the **Export Log Lines** setting to prevent users from exporting events. 
+4. Set-off the **Export Log Lines** setting to prevent users from exporting logs. 
 
