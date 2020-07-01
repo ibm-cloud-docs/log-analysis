@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2020
-lastupdated: "2020-05-21"
+lastupdated: "2020-07-01"
 
 keywords: LogDNA, IBM, Log Analysis, logging, config agent
 
@@ -53,8 +53,8 @@ The following table outlines the agent versions that are available:
 
 | Kubernetes cluster                    | LogDNA agent V1                                    | LogDNA agent V2                                   |
 |---------------------------------------|----------------------------------------------------|---------------------------------------------------|
-| `Standard Kubernetes cluster`         | ![Checkmark icon](../../icons/checkmark-icon.svg)  | ![Checkmark icon](../../icons/checkmark-icon.svg) |
-| `OpenShift Kubernetes cluster`        | ![Checkmark icon](../../icons/checkmark-icon.svg)  | `Not available`                                   |
+| `Standard Kubernetes cluster`         | ![Checkmark icon](images/checkmark.svg)  | ![Checkmark icon](images/checkmark.svg) |
+| `OpenShift Kubernetes cluster`        | ![Checkmark icon](images/checkmark.svg)  | `Not available`                                   |
 {: caption="Table 1. LogDNA agent versions for Kubernetes clusters" caption-side="top"}
 
 The LogDNA Agent v2 is available only for Kubernetes 1.9+.
@@ -111,7 +111,7 @@ The following table outlines the agent versions that are available:
 
 | Kubernetes cluster                    | LogDNA agent V1                                    | LogDNA agent V2                                   |
 |---------------------------------------|----------------------------------------------------|---------------------------------------------------|
-| `Linux                      `         | ![Checkmark icon](../../icons/checkmark-icon.svg)  | `Not available`                                   |
+| `Linux                      `         | ![Checkmark icon](images/checkmark.svg)  | `Not available`                                   |
 {: caption="Table 2. LogDNA agent versions for Linux" caption-side="top"}
 
 

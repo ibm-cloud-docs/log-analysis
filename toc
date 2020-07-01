@@ -68,7 +68,10 @@ IBM Log Analysis with LogDNA
 
     {: .topicgroup}
     Export logs
+        export_config.md
+        service_keys.md
         export.md
+        export_api.md
 
     {: .topicgroup}
     Send logs

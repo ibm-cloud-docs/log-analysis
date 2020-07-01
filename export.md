@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2020
-lastupdated: "2020-06-24"
+lastupdated: "2020-07-01"
 
 keywords: LogDNA, IBM, Log Analysis, logging, export logs
 
@@ -23,10 +23,10 @@ subcollection: Log-Analysis-with-LogDNA
 {:external: target="_blank" .external}
 
  
-# Exporting logs
+# Exporting logs through the LogDNA web UI
 {: #export}
 
-You can export log data in JSONL format from an {{site.data.keyword.la_full_notm}} instance into a local file or to a terminal. You can export logs programmatically or from the IBM Log Analysis Web UI. 
+You can export log data in JSONL format from an {{site.data.keyword.la_full_notm}} instance graphically through the web UI.
 {:shortdesc}
 
 Consider the following information when you export log data:
@@ -37,20 +37,64 @@ Consider the following information when you export log data:
 * When you export logs, you have a limit of lines that you can export in a request. You can specify to export older lines or newer lines in case you reach the limit in the time range that you specify for the export. The maximum number of lines that you can export through the UI is `10.000` lines. The maximum number of lines that you can export per API request is `500.000` lines.
 
 
+## Prerequisites
+{: #export_prereqs}
+
+* **You must have a paid service plan** for the {{site.data.keyword.la_full_notm}} service. [Learn more](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-service_plans). 
+
+* Check that your user ID has permissions to launch the web UI, view or manage service keys, and view events. [Learn more](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-view_logs).
+
+* Check that the LogDNA instance has the export feature enabled. 
 
 ## Exporting logs from the Web UI
-{: #ui}
+{: #export_ui_view}
 
-Complete the following steps to export log data:
+You can create a custom view and then export data for a period of time.
 
-1. Click the **Views** icon ![Configuration icon](images/views.png).
-2. Select **Everything** or a view.
-3. Apply a time frame, filters and search criteria until you see the log entries that you want to export.
-4. Click **Unsaved View** if you are starting from the **Everything** view. Click your view name if you selected a view in the previous step.
-5. Select `Export lines`. A new window opens.
-6. Check the time range. If you need to change it, click the predefined time range in the Change the *Time Range for export* field.
+Complete the following steps to export log data through the LogDNA web UI:
+
+1. [Launch the LogDNA web UI](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-launch).
+2. Click the **Views** icon ![Configuration icon](images/views.png).
+3. Select a view.
+4. Select the view name. 
+5. Select **Export lines**. A new window opens.
+6. Check the time range. If you need to change it, click the predefined time range in the *Change the Time Range for export* field.
+7. Select **Prefer newer lines** or **Prefer older lines** in case the export request exceeds the line limit.
+8. Check your email. You should receive an email from **LogDNA** with a link to download your exported lines.
+
+
+## Exporting events from a search
+{: #export_ui_search}
+
+You can export data from a custom search.
+
+Complete the following steps to export data through the LogDNA web UI:
+
+1. [Launch the LogDNA web UI](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-launch).
+2. Click the **Views** icon ![Configuration icon](images/views.png).
+3. Select **Everything**.
+4. Apply filters and search criteria until you see the entries that you want to export.
+4. Click **Unsaved View**.
+5. Select **Export lines**. A new window opens.
+6. Check the time range. If you need to change it, click the predefined time range in the *Change the Time Range for export* field.
 7. Select **Prefer newer lines** or **Prefer older lines** in case the export request exceeds the line limit.
 8. Check your email. You receive an email from **LogDNA** with a link to download your exported lines.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 ## Exporting logs programmatically by using the API
