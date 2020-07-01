@@ -31,7 +31,7 @@ From an {{site.data.keyword.la_full_notm}} instance, you can export logs program
 
 Consider the following information when you export log data:
 * You export a set of log entries. To define the set of data that you want to export, you can apply filter and searches. You can also specify the time range. 
-* When you export logs programmatically, you can choose to send an email or to write logs in to your terminal.
+* When you export logs programmatically, you can choose to send an email or to write logs into your terminal.
 * The compressed log file that contains the data that you want to export is available for a maximum of 12 hours. 
 * When you export logs, you have a limit of lines that you can export in a request. You can specify to export older lines or newer lines in case you reach the limit in the time range that you specify for the export. The maximum number of lines that you can export per API request is `500.000` lines.
 
