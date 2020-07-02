@@ -39,7 +39,7 @@ To change the service plan of an instance from the Observability dashboard in th
 
 	After you log in with your user ID and password, the {{site.data.keyword.cloud_notm}} UI opens.
 
-2. Go to the menu icon ![Menu icon](images/icon_hamburger.svg). Then, select **Observability** to access the *Observability* dashboard.
+2. Go to the menu icon ![menu icon](images/icon_hamburger.svg). Then, select **Observability** to access the *Observability* dashboard.
 
 3. Select **Logging**.
 
@@ -78,7 +78,7 @@ Complete the following steps to change the service plan:
     ```
     {: codeblock}
 
-4. Change the service plan. Run the [ibmcloud resource service-instance-update](/docs/cli?topic=cli-ibmcloud_commands_resource#ibmcloud_resource_service_instance_create) command:
+5. Change the service plan. Run the [ibmcloud resource service-instance-update](/docs/cli?topic=cli-ibmcloud_commands_resource#ibmcloud_resource_service_instance_create) command:
 
     ```
     ibmcloud resource service-instance-update NAME --service-plan-id RESOURCE_PLAN_ID

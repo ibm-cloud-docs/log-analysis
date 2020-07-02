@@ -92,7 +92,7 @@ The following table summarizes the different methods that you can use to collect
 | `CF infrastructure logs` | `NO`                                               | `NO`                                               |
 | `CF app logs`            | `NO`                                               | ![Checkmark icon](images/checkmark.svg)  |
 {: caption="Table 3. Information about the methods that can be adopted to monitor CF resource logs in {{site.data.keyword.cloud_notm}} on-premisses" caption-side="top"}
-{: #end-api-table-1}
+{: #end-api-table-3}
 {: tab-title="Monitor CF resources outside {{site.data.keyword.cloud_notm}}"}
 {: tab-group="cf-app"}
 {: class="simple-tab-table"}
@@ -297,7 +297,7 @@ You must have **manager** role on that instance to configure exclusion rules.
 
 1. [Log in to your {{site.data.keyword.cloud_notm}} account](https://cloud.ibm.com/login){: external}.
 
-2. Click the **Menu** icon ![Menu icon](images/icon_hamburger.svg) &gt; **Observability**. 
+2. Click the **Menu** icon ![Menu icon](../icons/icon_hamburger.svg) &gt; **Observability**. 
 
 3. Select **Logging**. 
 

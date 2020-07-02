@@ -113,7 +113,7 @@ Upgrade the {{site.data.keyword.la_full_notm}} service plan to a paid plan to be
 
 
 
-## Step 3. Manage logs
+## Step 4. Manage logs
 {: #getting-started_step4}
 
 Complete the following steps:
@@ -123,8 +123,8 @@ Complete the following steps:
 2. [Manage logs](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-view_logs).
 
 
-## Step 4. Next steps 
-{: #getting-started_iam}
+## Step 5. Next steps 
+{: #getting-started_step5}
 
 Next, you can manage user access with IAM.
 

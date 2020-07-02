@@ -53,7 +53,7 @@ For more information about the {{site.data.keyword.containerlong}} IAM roles, se
 Install the {{site.data.keyword.cloud_notm}} CLI and the Kubernetes CLI plug-in. For more information, see [Installing the {{site.data.keyword.cloud_notm}} CLI](/docs/cli?topic=cli-install-ibmcloud-cli).
 
 
-## Step 1: Reset the ingestion key
+## Step 1. Reset the ingestion key
 {: #kube_reset_step1}
 
 To renew the ingestion key for an {{site.data.keyword.la_full_notm}} instance by using the {{site.data.keyword.la_full_notm}} Web UI, complete the following steps:
@@ -73,7 +73,7 @@ To renew the ingestion key for an {{site.data.keyword.la_full_notm}} instance by
 5. Delete the old ingestion key. Click **delete**.
 
 
-## Step 2: Remove any configuration in the cluster that uses the old ingestion key
+## Step 2. Remove any configuration in the cluster that uses the old ingestion key
 {: #kube_reset_step2}
 
 Complete the following steps:
@@ -126,7 +126,7 @@ Complete the following steps:
     You should not see any LogDNA pods.
 
 
-## Step 3: Configure your Kubernetes cluster with the new ingestion key
+## Step 3. Configure your Kubernetes cluster with the new ingestion key
 {: #kube_reset_step3}
 
 To configure your Kubernetes cluster in the `us-south` region to forward logs to your LogDNA instance, complete the following steps from the command line:
@@ -185,7 +185,7 @@ To configure your Kubernetes cluster in the `us-south` region to forward logs to
     {: codeblock}
 
 
-## Step 4: Launch the LogDNA web UI
+## Step 4. Launch the LogDNA web UI
 {: #kube_reset_step4}
 
 You launch the web UI from the {{site.data.keyword.cloud_notm}} Observability dashboard. 
@@ -205,7 +205,7 @@ Complete the following steps to launch the web UI:
     The LogDNA web UI opens and displays your cluster logs.
 
 
-## Step 5: View your logs
+## Step 5. View your logs
 {: #kube_reset_step5}
 
 From the LogDNA web UI, you can view your logs as they pass through the system. You view logs by using log tailing. 
