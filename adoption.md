@@ -56,12 +56,12 @@ The following table highlights some of the key features per account management s
 
 | Feature                                               | Stand-alone account management                    | Enterprise account management                     |
 |-------------------------------------------------------|---------------------------------------------------|---------------------------------------------------|
-| `Multitiered hierarchy of accounts`                   | NO                                                | ![Checkmark icon](../../icons/checkmark-icon.svg) |
-| `Billing and payments managed from 1 account`         | ![Checkmark icon](../../icons/checkmark-icon.svg) | ![Checkmark icon](../../icons/checkmark-icon.svg) |
-| `Isolation of users and access management per account`| ![Checkmark icon](../../icons/checkmark-icon.svg) | ![Checkmark icon](../../icons/checkmark-icon.svg) |
-| `Isolation of resources and services per account`     | ![Checkmark icon](../../icons/checkmark-icon.svg) | ![Checkmark icon](../../icons/checkmark-icon.svg) |
-| `Isolation of account settings`                       | ![Checkmark icon](../../icons/checkmark-icon.svg) | ![Checkmark icon](../../icons/checkmark-icon.svg) |
-| `IAM enabled`                                         | ![Checkmark icon](../../icons/checkmark-icon.svg) | ![Checkmark icon](../../icons/checkmark-icon.svg) |
+| `Multitiered hierarchy of accounts`                   | NO                                                | ![Checkmark icon](images/checkmark-icon.svg) |
+| `Billing and payments managed from 1 account`         | ![Checkmark icon](images/checkmark-icon.svg) | ![Checkmark icon](images/checkmark-icon.svg) |
+| `Isolation of users and access management per account`| ![Checkmark icon](images/checkmark-icon.svg) | ![Checkmark icon](images/checkmark-icon.svg) |
+| `Isolation of resources and services per account`     | ![Checkmark icon](images/checkmark-icon.svg) | ![Checkmark icon](images/checkmark-icon.svg) |
+| `Isolation of account settings`                       | ![Checkmark icon](images/checkmark-icon.svg) | ![Checkmark icon](images/checkmark-icon.svg) |
+| `IAM enabled`                                         | ![Checkmark icon](images/checkmark-icon.svg) | ![Checkmark icon](images/checkmark-icon.svg) |
 {: caption="Table 1. Types of accounts" caption-side="top"} 
 
 
@@ -491,8 +491,8 @@ Use the following table to help you identify the features that you should consid
 |----------------------------------------------|---------------------------------|-----------------------------|----------------------------------|-----------------------------|
 | `Type of workload`                           | `Continuous access`             | `Data isn't accessed frequently` | `Accessed every 90 days or less` | `Dynamic workloads where access patterns are difficult to predict` |
 | `Data resiliency`                            | `Cross region`                  | `Cross region`             | `Cross region`                  | `Cross region`             |
-| `Retention policy`                           | ![Checkmark icon](../../icons/checkmark-icon.svg) | ![Checkmark icon](../../icons/checkmark-icon.svg) | ![Checkmark icon](../../icons/checkmark-icon.svg) | ![Checkmark icon](../../icons/checkmark-icon.svg) |
-| `Expiration policy`                          | ![Checkmark icon](../../icons/checkmark-icon.svg) | ![Checkmark icon](../../icons/checkmark-icon.svg) | ![Checkmark icon](../../icons/checkmark-icon.svg) | ![Checkmark icon](../../icons/checkmark-icon.svg) |                         
+| `Retention policy`                           | ![Checkmark icon](images/checkmark-icon.svg) | ![Checkmark icon](images/checkmark-icon.svg) | ![Checkmark icon](images/checkmark-icon.svg) | ![Checkmark icon](images/checkmark-icon.svg) |
+| `Expiration policy`                          | ![Checkmark icon](images/checkmark-icon.svg) | ![Checkmark icon](images/checkmark-icon.svg) | ![Checkmark icon](images/checkmark-icon.svg) | ![Checkmark icon](images/checkmark-icon.svg) |                         
 | `Long-term retention policy`                 | `NO`                            | `NO`                        | `NO`                             | `NO`                         |
 {: caption="Table 6. Disaster recovery or compliance requirements" caption-side="top"}
 {: #archive-table-4}
@@ -505,8 +505,8 @@ Use the following table to help you identify the features that you should consid
 |----------------------------------------------|---------------------------------|-----------------------------|----------------------------------|-----------------------------|
 | `Type of workload`                           | `Continuous access`             | `Data isn't accessed frequently` | `Accessed every 90 days or less` | `Dynamic workloads where access patterns are difficult to predict` |
 | `Data resiliency`                            | `Cross region` or `Regional`    | `Cross region` or `Regional`    | `Cross region` or `Regional`   | `Cross region` or `Regional`   |
-| `Retention policy`                           | ![Checkmark icon](../../icons/checkmark-icon.svg) | ![Checkmark icon](../../icons/checkmark-icon.svg) | ![Checkmark icon](../../icons/checkmark-icon.svg) | ![Checkmark icon](../../icons/checkmark-icon.svg) |
-| `Expiration policy`                          | ![Checkmark icon](../../icons/checkmark-icon.svg) | ![Checkmark icon](../../icons/checkmark-icon.svg) | ![Checkmark icon](../../icons/checkmark-icon.svg) | ![Checkmark icon](../../icons/checkmark-icon.svg) |                         
+| `Retention policy`                           | ![Checkmark icon](images/checkmark-icon.svg) | ![Checkmark icon](images/checkmark-icon.svg) | ![Checkmark icon](images/checkmark-icon.svg) | ![Checkmark icon](images/checkmark-icon.svg) |
+| `Expiration policy`                          | ![Checkmark icon](images/checkmark-icon.svg) | ![Checkmark icon](images/checkmark-icon.svg) | ![Checkmark icon](images/checkmark-icon.svg) | ![Checkmark icon](images/checkmark-icon.svg) |                         
 | `Long-term retention policy`                 | `NO`                            | `NO`                        | `NO`                             | `NO`                         |
 {: caption="Table 7. Backup or access to data beyond the service plan days requirements" caption-side="top"}
 {: #archive-table-5}
@@ -550,7 +550,7 @@ If you need to use your own key to encrypt the data at-rest in a bucket, use the
 | `Type of workload`                           | `Continuous access`             | `Data isn't accessed frequently` | `Accessed every 90 days or less` | `Dynamic workloads where access patterns are difficult to predict` |
 | `Data resiliency`                            | `Regional`                      | `Regional`                   | `Regional`                      | `Regional`                   |
 | `Retention policy` [15]                      | `NO`                            | `NO`                        | `NO`                             | `NO`                         |
-| `Expiration policy`                          | ![Checkmark icon](../../icons/checkmark-icon.svg) | ![Checkmark icon](../../icons/checkmark-icon.svg) | ![Checkmark icon](../../icons/checkmark-icon.svg) | ![Checkmark icon](../../icons/checkmark-icon.svg) |                         
+| `Expiration policy`                          | ![Checkmark icon](images/checkmark-icon.svg) | ![Checkmark icon](images/checkmark-icon.svg) | ![Checkmark icon](images/checkmark-icon.svg) | ![Checkmark icon](images/checkmark-icon.svg) |                         
 | `Long-term retention policy`                 | `NO`                            | `NO`                        | `NO`                             | `NO`                         |
 {: caption="Table 8. Use your own encryption key" caption-side="top"}
 
