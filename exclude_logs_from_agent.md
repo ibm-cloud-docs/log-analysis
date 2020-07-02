@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2020
-lastupdated: "2020-07-01"
+lastupdated: "2020-07-02"
 
 keywords: LogDNA, IBM, Log Analysis, logging, config agent
 
@@ -20,6 +20,7 @@ subcollection: Log-Analysis-with-LogDNA
 {:download: .download}
 {:important: .important}
 {:note: .note}
+{:external: target="_blank" .external}
 
 # Excluding log files
 {: #exclude_logs_from_agent}
@@ -39,6 +40,11 @@ Configure a LogDNA agent to exclude logs that you do not want to monitor through
 
 
 Complete the following steps to configure the agent so that only application logs are forwarded and cluster logs are excluded:
+
+### Step 1. Set the context of the cluster
+{: #exclude_logs_from_agent_kube_1}
+
+Complete the following steps:
 
 1. Open a terminal to log in to {{site.data.keyword.cloud_notm}}.
 
@@ -78,76 +84,92 @@ Complete the following steps to configure the agent so that only application log
 
     Where `<cluster_name_or_ID>` is the name or the ID of the cluster.
 
-5. Generate the configuration file of the agent by running the following command:
+
+### Step 2. Modify the LogDNA agent yaml file
+{: #exclude_logs_from_agent_kube_2}
+
+Complete the following steps:
+
+1. Generate the configuration file of the agent by running the following command:
 
     ```
     kubectl get daemonset logdna-agent -o=yaml > prod-logdna-agent-ds.yaml -n ibm-observe
     ```
     {: codeblock}
 
-6. Make changes. Add the section **LOGDNA_EXCLUDE** to the yaml file:
+2. Make changes. Add the section **LOGDNA_EXCLUDE** to the yaml file. 
 
-    To exclude all cluster logs, enter:
+
+To exclude all cluster logs, you can enter:
+
+```
+- name: LOGDNA_EXCLUDE
+  value: /var/log/containers/*_kube-system_*,/var/log/containers/*ibm-observe_*,/var/log/containerd.log,/var/log/kubelet.log,/var/log/syslog,/var/log/ntpstats/*,/var/log/alb/*
+```
+{: codeblock}
+
+To exclude logs by namespace, for example, to exclude all of the *kube-system* logs, enter:
+
+```
+- name: LOGDNA_EXCLUDE
+  value: /var/log/containers/*_kube-system_*
+```
+{: codeblock}
+
+To exclude all non-container logs, that is, to exclude files as shown in the *All Apps* filter view, enter:
+
+```
+- name: LOGDNA_EXCLUDE
+  value: /var/log/!(containers)/**
+```
+{: codeblock}
+
+To exclude calico logs, enter:
+
+```
+- name: LOGDNA_EXCLUDE
+  value: /var/log/containers/calico*
+```
+{: codeblock}
+
+To exclude all of the _kube-system_ logs and all non-container logs, enter:
+
+```
+- name: LOGDNA_EXCLUDE
+  value: /var/log/!(containers)**,/var/log/containers/*_kube-system_*
+```
+{: codeblock}
+
+
+### Step 3. Apply the changes to the LogDNA agent
+{: #exclude_logs_from_agent_kube_3}
+
+To apply the configuration changes, run the following command:
+
+```
+kubectl apply -f prod-logdna-agent-ds.yaml -n ibm-observe
+```
+{: codeblock}
+
+### Step 4. Verify the changes
+{: #exclude_logs_from_agent_kube_4}
+
+Complete the following steps:
+
+1. Get the logdna-agent pods and check that pods have restarted. Run the following command:
 
     ```
-    - name: LOGDNA_EXCLUDE
-      value: /var/log/containers/*_kube-system_*,/var/log/containers/*ibm-observe_*,/var/log/containerd.log,/var/log/kubelet.log,/var/log/syslog,/var/log/ntpstats/*,/var/log/alb/*
+    kubectl get pods -n ibm-observe
     ```
     {: codeblock}
 
-    To exclude logs by namespace, for example, to exclude all of the *kube-system* logs, enter:
+2. If pods are not restarted, delete all the logdna pods.
 
     ```
-    - name: LOGDNA_EXCLUDE
-      value: /var/log/containers/*_kube-system_*
-    ```
-    {: codeblock}
-
-    To exclude all non-container logs, that is, to exclude files as shown in the *All Apps* filter view, enter:
-
-    ```
-    - name: LOGDNA_EXCLUDE
-      value: /var/log/!(containers)/**
+    kubectl delete pod PodName -n ibm-observe
     ```
     {: codeblock}
 
-    To exclude calico logs, enter:
-
-    ```
-    - name: LOGDNA_EXCLUDE
-      value: /var/log/containers/calico*
-    ```
-    {: codeblock}
-
-    To exclude all of the _kube-system_ logs and all non-container logs, enter:
-
-    ```
-    - name: LOGDNA_EXCLUDE
-      value: /var/log/!(containers)**,/var/log/containers/*_kube-system_*
-    ```
-    {: codeblock}
-
-7. Apply the configuration changes. Run the following command:
-
-    ```
-    kubectl apply -f prod-logdna-agent-ds.yaml
-    ```
-    {: codeblock}
-
-8. Get the logdna-agent pods. Run the following command:
-
-    ```
-    kubectl get pods
-    ```
-    {: codeblock}
-
-9. Delete all the logdna pods that are listed in the previous step.
-
-    ```
-    kubectl delete pod PodName
-    ```
-    {: codeblock}
-
-10. Verify that log entries are not showing in the LogDNA web UI.
+3. [Launch the LogDNA web UI](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-launch), and verify that log entries are not showing in the LogDNA web UI.
 
 

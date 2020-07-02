@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2020
-lastupdated: "2020-07-01"
+lastupdated: "2020-07-02"
 
 keywords: LogDNA, IBM, Log Analysis, logging, service plan
 
@@ -63,6 +63,17 @@ The following tables outline the different features that are included in each se
 | `Creating screens`                      | ![Checkmark icon](images/checkmark.svg) | ![Checkmark icon](images/checkmark.svg) | ![Checkmark icon](images/checkmark.svg) |![Checkmark icon](images/checkmark.svg) | |
 | `Analyzing logs in different contexts`              | ![Checkmark icon](images/checkmark.svg)  | ![Checkmark icon](images/checkmark.svg) | ![Checkmark icon](images/checkmark.svg) |![Checkmark icon](images/checkmark.svg) | |
 {: caption="Table 2. List of features available for each service plan" caption-side="top"} 
+
+
+
+## LogDNA features that are not available with {{site.data.keyword.la_full_notm}} service plans
+{: #svcplan_exc_features}
+
+The following LogDNA features are not available:
+* Embedding views and registering domains
+* Sharing a line 
+* Role Based Access Control (RBAC)
+* LogDNA Command Line Interface (CLI)
 
 
 

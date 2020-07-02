@@ -28,7 +28,7 @@ subcollection: Log-Analysis-with-LogDNA
 Across every industry, organizations require tighter controls and visibility into where their data is stored and processed in the {{site.data.keyword.cloud}}. To manage logs that are generated in your **EU-supported account** by using the {{site.data.keyword.la_full_notm}} service, consider the following information:
 {:shortdesc}
 
-1. You must provision 1 {{site.data.keyword.la_full_notm}} instance in the `EU-DE (Frankfurt)` location. 
+1. You must provision {{site.data.keyword.la_full_notm}} instances in the `EU-DE (Frankfurt)` location. 
 
 2. [You must enable your account to be EU-supported](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-manage_eu_logs#manage_eu_logs_step1), so support is handled by team members in the European Union. 
 
