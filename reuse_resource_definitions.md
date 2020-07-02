@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2020
-lastupdated: "2020-03-06"
+lastupdated: "2020-07-02"
 
 keywords: LogDNA, IBM, Log Analysis, logging, config agent
 
@@ -20,6 +20,7 @@ subcollection: Log-Analysis-with-LogDNA
 {:download: .download}
 {:important: .important}
 {:note: .note}
+{:external: target="_blank" .external}
 
 # Reusing definitions of LogDNA resources
 {: #reuse_resource_definitions}
@@ -30,7 +31,7 @@ To avoid recreating definitions of views, boards, parsing templates, and exclusi
 
 
 ## Export the configuration of resources in a LogDNA instance
-{: #export_config}
+{: #export_config_res}
 
 Complete the following steps to export the configuration of your resources:
 

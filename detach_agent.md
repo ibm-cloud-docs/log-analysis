@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2020
-lastupdated: "2020-07-01"
+lastupdated: "2020-07-02"
 
 keywords: LogDNA, IBM, Log Analysis, logging, detach config agent
 
@@ -78,7 +78,7 @@ To stop your Kubernetes cluster from forwarding logs to your LogDNA instance, co
 
 
 ### Detaching a LogDNA agent from a standard Kubernetes cluster from the cluster console
-{: #detach_agent_os_console}
+{: #detach_agent_kube_console}
 
 Complete the following steps from the [{{site.data.keyword.containerlong_notm}} console](https://cloud.ibm.com/kubernetes/clusters){: external}:
 
@@ -91,7 +91,7 @@ Complete the following steps from the [{{site.data.keyword.containerlong_notm}} 
 
 
 ### Detaching a LogDNA agent from a standard Kubernetes cluster by using ob commands
-{: #detach_agent_os_console_ob}
+{: #detach_agent_kube_console_ob}
 
 Complete the following steps:
 
@@ -194,14 +194,14 @@ Complete the following steps from the command line:
     List secrets.
 
     ```
-    oc get secrets -n PROJECT
+    oc get secrets -n ibm-observe
     ```
     {: pre}
 
     Then, run the following command for each secret: 
     
     ```
-    oc delete secret logdna-agent-key -n PROJECT
+    oc delete secret logdna-agent-key -n ibm-observe
     ```
     {: pre}
 
@@ -210,7 +210,7 @@ Complete the following steps from the command line:
 5. Remove the LogDNA agent on every worker(node) of your Kubernetes cluster. The LogDNA agent is responsible for collecting and forwarding your logs. Run the following command:
 
     ```
-    oc delete daemonset logdna-agent -n PROJECT
+    oc delete daemonset logdna-agent -n ibm-observe
     ```
     {: codeblock}
 
@@ -219,7 +219,7 @@ Complete the following steps from the command line:
 5. Verify that the LogDNA agent is deleted successfully. Run the following command to verify that LogDNA agent pods are not running:
 
     ```
-    oc get pods -n PROJECT
+    oc get pods -n ibm-observe
     ```
     {: codeblock}
 
