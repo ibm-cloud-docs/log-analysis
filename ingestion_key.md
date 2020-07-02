@@ -39,7 +39,7 @@ To get the ingestion key for an {{site.data.keyword.la_full_notm}} instance by u
 
 1. [Log in to your {{site.data.keyword.cloud_notm}} account](https://cloud.ibm.com/login){: external}.
 
-2. Go to the Menu icon ![Menu icon](../icons/icon_hamburger.svg) &gt; **Observability**. 
+2. Go to the Menu icon ![Menu icon](images/icon_hamburger.svg) &gt; **Observability**. 
 
 3. Select **Logging**. The {{site.data.keyword.la_full_notm}} dashboard opens. You can see the list of logging instances that are available on {{site.data.keyword.cloud_notm}}.
 

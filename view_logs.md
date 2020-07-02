@@ -62,7 +62,7 @@ To launch the {{site.data.keyword.la_full_notm}}  UI through the {{site.data.key
 
 	After you log in, the {{site.data.keyword.cloud_notm}} *Dashboard* opens.
 
-2. Click the **Menu** icon ![Menu icon](../icons/icon_hamburger.svg) &gt; **Observability**. 
+2. Click the **Menu** icon ![Menu icon](images/icon_hamburger.svg) &gt; **Observability**. 
 
 3. Select **Logging**. 
 
