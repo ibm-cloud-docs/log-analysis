@@ -88,7 +88,8 @@ Complete the following steps to archive an {{site.data.keyword.la_full_notm}} in
 ## Step 1. Grant IAM policies to a user to work with {{site.data.keyword.cos_full_notm}}
 {: #archiving_step1}
 
-**Note:** This step must be completed by the account owner or an administrator of the {{site.data.keyword.cos_full_notm}} service on the {{site.data.keyword.cloud_notm}}.
+This step must be completed by the account owner or an administrator of the {{site.data.keyword.cos_full_notm}} service on the {{site.data.keyword.cloud_notm}}.
+{: note}
 
 As an administrator of the {{site.data.keyword.cos_full_notm}} service, you must be able to provision instances of the service, grant other users permissions to work with these instances, and create service IDs. 
 
@@ -130,7 +131,8 @@ Complete the following steps to assign a user administrator role to the {{site.d
 ## Step 2. Provision an instance of {{site.data.keyword.cos_full_notm}}
 {: #archiving_step2}
 
-**Note:** This step must be completed by an editor, or administrator of the {{site.data.keyword.cos_full_notm}} service on the {{site.data.keyword.cloud_notm}}. 
+This step must be completed by an editor, or administrator of the {{site.data.keyword.cos_full_notm}} service on the {{site.data.keyword.cloud_notm}}. 
+{: note}
 
 Complete the following steps to provision an {{site.data.keyword.cos_full_notm}} instance:
 
@@ -154,7 +156,7 @@ Complete the following steps to provision an {{site.data.keyword.cos_full_notm}}
 
     By default, the **Lite** plan is set.
 
-9. Click **Create**.
+8. Click **Create**.
 
 
 
@@ -267,7 +269,7 @@ If you want to restrict the service ID to have only writing permissions for a bu
 
 3. Select **Service IDs**.
 
-4. Look for a service ID that has the following name: **auto-generated-serviceId-<ID that is part of the iam_apikey_name value>.
+4. Look for a service ID that has the following name: `auto-generated-serviceId-<ID that is part of the iam_apikey_name value>`.
 
 5. Select the service ID. Then, in **Access policies**, click **Writer**.
 
@@ -277,7 +279,8 @@ If you want to restrict the service ID to have only writing permissions for a bu
 
 8. Click **Save**.
 
-**Note:** If you leave the Resource Type or Resource fields blank, the policy that is created is an instance-level policy.
+If you leave the Resource Type or Resource fields blank, the policy that is created is an instance-level policy.
+{: note}
 
 
 ## Step 6. Select the endpoint

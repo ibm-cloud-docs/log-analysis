@@ -92,7 +92,7 @@ The following table summarizes the different methods that you can use to collect
 | `CF infrastructure logs` | `NO`                                               | `NO`                                               |
 | `CF app logs`            | `NO`                                               | ![Checkmark icon](images/checkmark.svg)  |
 {: caption="Table 3. Information about the methods that can be adopted to monitor CF resource logs in {{site.data.keyword.cloud_notm}} on-premisses" caption-side="top"}
-{: #end-api-table-1}
+{: #end-api-table-3}
 {: tab-title="Monitor CF resources outside {{site.data.keyword.cloud_notm}}"}
 {: tab-group="cf-app"}
 {: class="simple-tab-table"}
