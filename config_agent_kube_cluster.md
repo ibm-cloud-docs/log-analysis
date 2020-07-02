@@ -21,7 +21,7 @@ subcollection: Log-Analysis-with-LogDNA
 {:important: .important}
 {:note: .note}
 
-# Connect a standard Kubernetes cluster to an {{site.data.keyword.la_full_notm}} instance by using a LogDNA agent
+# Connecting a LogDNA agent to a standard Kubernetes cluster
 {: #config_agent_kube_cluster}
 
 The LogDNA agent is responsible for collecting and forwarding logs to your {{site.data.keyword.la_full_notm}} instance. After you provision an instance of {{site.data.keyword.la_full}}, you must configure a LogDNA agent for each log source that you want to monitor.
