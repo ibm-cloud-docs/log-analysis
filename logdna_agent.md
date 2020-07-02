@@ -20,6 +20,7 @@ subcollection: Log-Analysis-with-LogDNA
 {:download: .download}
 {:important: .important}
 {:note: .note}
+{:external: target="_blank" .external}
 
 # LogDNA agent
 {: #logdna_agent}
@@ -198,9 +199,9 @@ You can customize a LogDNA agent by configuring parameters for Linux agents, or 
 | `LOGDNA_ENDPOINT`        | Ingestion log path.                                   | `/logs/agent/`                         |                       |
 | `LOGDNA_HOSTNAME`        | Log Source name.                                      |                                        | `MyCluster`                            | 
 | `LOGDNA_LOG_DIRS`        | Defines custom paths that you want the agent to monitor. </br>Separate multiple paths by using commas. </br>You can use glob patterns. Use double quotation marks to add a globe pattern.   | `/var/log/`   | `/output/,/mylogs/myapplogs/` |
-| `LOGDNA_INCLUSION_RULES` | Custom rules that you can define to configure what log files to monitor. </br>These files can be located in any of the paths that are defined through the logdir parameter. </br>You can use glob patterns. For more information, see [Glober rules ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://github.com/CJP10/globber){:new_window}   |  | `*.json,*.test` |
-| `LOGDNA_INCLUSION_REGEX_RULES` | Regex custom rules that you can define to configure what log files to monitor. For more information, see [regex syntax ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://docs.rs/regex/1.2.1/regex/#syntax){:new_window} </br>These files can be located in any of the paths that are defined through the logdir parameter.  |  |  |
-| `LOGDNA_EXCLUSION_RULES` | Custom rules that you can define to configure what log files to exclude from being monitored. </br>You can use glob patterns. For more information, see [Glober rules ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://github.com/CJP10/globber){:new_window}  | | |
+| `LOGDNA_INCLUSION_RULES` | Custom rules that you can define to configure what log files to monitor. </br>These files can be located in any of the paths that are defined through the logdir parameter. </br>You can use glob patterns. For more information, see [Glober rules](https://github.com/CJP10/globber){: external}   |  | `*.json,*.test` |
+| `LOGDNA_INCLUSION_REGEX_RULES` | Regex custom rules that you can define to configure what log files to monitor. For more information, see [regex syntax](https://docs.rs/regex/1.2.1/regex/#syntax){: external} </br>These files can be located in any of the paths that are defined through the logdir parameter.  |  |  |
+| `LOGDNA_EXCLUSION_RULES` | Custom rules that you can define to configure what log files to exclude from being monitored. </br>You can use glob patterns. For more information, see [Glober rules](https://github.com/CJP10/globber){: external}  | | |
 | `LOGDNA_EXCLUSION_REGEX_RULES` | Regex custom rules that you can define to configure what log files to exclude from being monitored. |  | `/var/log/containers/**,/var/log/pods/**`  |
 | `LOGDNA_USE_SSL`          | Boolean that defines whether TLS 1.2 should be used when the agent sends logs to the LogDNA instance. </br>The default value is set to `true`.  | `true` | `true` |
 | `LOGDNA_USE_COMPRESSION`  | Boolean that defines whether compression is enabled when the agent sends logs to the LogDNA instance. </br> The default value is set to `true`. | `true` | `true` |
@@ -221,8 +222,8 @@ You can customize a LogDNA agent by configuring parameters for Linux agents, or 
 | `LDLOGPATH`              | Ingestion log path.                                   | `/logs/agent/`                         |                       |
 | `LOGDNA_HOSTNAME`        | Log Source name.                                      |                                        | `MyCluster`                            | 
 | `LOG_DIRS`            | Defines custom paths that you want the agent to monitor. </br>Separate multiple paths by using commas. </br>You can use glob patterns. Use double quotation marks to add a globe pattern.  | `var/log` | `/output/,/mylogs/myapplogs/` |
-| `LOGDNA_INCLUDE`     | Custom rules that you can define to configure what log files to monitor. </br>These files can be located in any of the paths that are defined through the logdir parameter. </br>You can use glob patterns. For more information, see [Glober rules ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://github.com/CJP10/globber){:new_window}  |  | `*.json,*.test` |
-| `LOGDNA_INCLUDE_REGEX` | Regex custom rules that you can define to configure what log files to monitor. For more information, see [regex syntax ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://docs.rs/regex/1.2.1/regex/#syntax){:new_window} </br>These files can be located in any of the paths that are defined through the logdir parameter.  | | |
+| `LOGDNA_INCLUDE`     | Custom rules that you can define to configure what log files to monitor. </br>These files can be located in any of the paths that are defined through the logdir parameter. </br>You can use glob patterns. For more information, see [Glober rules](https://github.com/CJP10/globber){: external}  |  | `*.json,*.test` |
+| `LOGDNA_INCLUDE_REGEX` | Regex custom rules that you can define to configure what log files to monitor. For more information, see [regex syntax](https://docs.rs/regex/1.2.1/regex/#syntax){: external} </br>These files can be located in any of the paths that are defined through the logdir parameter.  | | |
 | `LOGDNA_EXCLUDE`     | Custom rules that you can define to configure what log files to exclude from being monitored. </br>These files can be located in any of the paths that are defined through the logdir parameter. </br>Separate multiple files by using commas. You can use glob patterns. You can configure specific files. | | |
 | `LOGDNA_EXCLUDE_REGEX` | Regex custom rules that you can define to configure what log files to exclude from being monitored. | | `/var/log/containers/*,/var/log/pods/*`  |
 | `LDLOGSSL` | Boolean that defines whether TLS 1.2 should be used when the agent sends logs to the LogDNA instance. </br>The default value is set to `true`. | `true` | `true` |

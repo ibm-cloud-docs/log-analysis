@@ -20,6 +20,7 @@ subcollection: Log-Analysis-with-LogDNA
 {:download: .download}
 {:important: .important}
 {:note: .note}
+{:external: target="_blank" .external}
 
 # Getting started tutorial
 {: #getting-started}
@@ -85,7 +86,7 @@ The following figure shows the components overview for the {{site.data.keyword.l
 
 * [Check the regions where the {{site.data.keyword.la_full_notm}} service is available](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-regions).
 
-* [Register in {{site.data.keyword.cloud_notm}} ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com/login){:new_window}. You need an IBMid to work in {{site.data.keyword.cloud_notm}}.
+* [Register in {{site.data.keyword.cloud_notm}}](https://cloud.ibm.com/login){: external}. You need an IBMid to work in {{site.data.keyword.cloud_notm}}.
 
 ## Step 2. Get started
 {: #getting-started_step2}

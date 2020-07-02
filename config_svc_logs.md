@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2020
-lastupdated: "2020-06-22"
+lastupdated: "2020-07-02"
 
 keywords: LogDNA, IBM, Log Analysis, logging instance, enable, service logs
 
@@ -53,7 +53,7 @@ To configure a logging instance from the Observability dashboard in the {{site.d
 
 	After you log in, the {{site.data.keyword.cloud_notm}} UI opens.
 
-2. Go to the menu icon ![menu icon](../../icons/icon_hamburger.svg) &gt; **Observability** to access the *Observability* dashboard.
+2. Go to the menu icon ![menu icon](../icons/icon_hamburger.svg) &gt; **Observability** to access the *Observability* dashboard.
 
 3. Select **Logging**, then click **Configure platform logs**. 
 
