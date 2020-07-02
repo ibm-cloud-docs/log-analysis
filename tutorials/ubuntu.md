@@ -79,7 +79,7 @@ To provision an instance of {{site.data.keyword.la_full_notm}} through the {{sit
 
 2. Click **Catalog**. The list of the services that are available in {{site.data.keyword.cloud_notm}} opens.
 
-3. To filter the list of services that is displayed, select the **Developer Tools** category.
+3. To filter the list of services that is displayed, select the **Logging and Monitoring** category.
 
 4. Click the **{{site.data.keyword.la_full_notm}}** tile.
 

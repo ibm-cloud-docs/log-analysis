@@ -20,6 +20,7 @@ subcollection: Log-Analysis-with-LogDNA
 {:download: .download}
 {:important: .important}
 {:note: .note}
+{:external: target="_blank" .external}
 
 
 # Managing Kubernetes cluster logs with {{site.data.keyword.la_full_notm}}
@@ -54,7 +55,7 @@ Work in a [supported region](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-w
 
 Read about {{site.data.keyword.la_full_notm}}. For more information, see [About](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-getting-started#getting-started_ov).
 
-Use a user ID that is a member or an owner of an {{site.data.keyword.cloud_notm}} account. To get an {{site.data.keyword.cloud_notm}} user ID, go to: [Registration ![External link icon](../../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com/login){:new_window}.
+Use a user ID that is a member or an owner of an {{site.data.keyword.cloud_notm}} account. To get an {{site.data.keyword.cloud_notm}} user ID, go to: [Registration](https://cloud.ibm.com/login){: external}.
 
 Your {{site.data.keyword.IBM_notm}}ID must have assigned IAM policies for each of the following resources in the region that your {{site.data.keyword.la_full_notm}} instance is in:  
 
@@ -85,11 +86,11 @@ In this tutorial, you configure logging with LogDNA for your {{site.data.keyword
 
 To provision a service instance of {{site.data.keyword.la_full_notm}} through the {{site.data.keyword.cloud_notm}} console, complete the following steps:
 
-1. Log in to the [{{site.data.keyword.cloud_notm}} account ![External link icon](../../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com/login) where you created your Kubernetes cluster.
+1. Log in to the [{{site.data.keyword.cloud_notm}} account](https://cloud.ibm.com/login){: external} where you created your Kubernetes cluster.
 
 2. Click **Catalog**. A list of {{site.data.keyword.cloud_notm}} services opens.
 
-3. To filter the list of services that is displayed, select the **Developer Tools** category.
+3. To filter the list of services that is displayed, select the **Logging and Monitoring** category.
 
 4. Click **{{site.data.keyword.la_full_notm}}**. The **Observability** dashboard opens.
 
@@ -111,11 +112,11 @@ To provision an instance through the CLI, see [Provisioning an instance through 
 
 Complete the following steps to get the ingestion key:
 
-1. [Log in to your {{site.data.keyword.cloud_notm}} account ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com/login){:new_window}.
+1. [Log in to your {{site.data.keyword.cloud_notm}} account](https://cloud.ibm.com/login){: external}.
 
 	After you log in, the {{site.data.keyword.cloud_notm}} UI opens.
 
-2. Click the **Menu** icon ![Menu icon](../../../icons/icon_hamburger.svg) &gt; **Observability** to access the *Observability* dashboard.
+2. Click the **Menu** icon ![Menu icon](../icons/icon_hamburger.svg) &gt; **Observability** to access the *Observability* dashboard.
 
 3. Select **Logging**. The {{site.data.keyword.la_full_notm}} dashboard opens. You can see the list of logging instances that are available on {{site.data.keyword.cloud_notm}}.
 
@@ -181,9 +182,9 @@ To configure your Kubernetes cluster in the `us-south` region to forward logs to
 
 To launch the LogDNA dashboard through the {{site.data.keyword.cloud_notm}} console, complete the following steps:
 
-1. Log in to your [{{site.data.keyword.cloud_notm}} account ![External link icon](../../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com/login).
+1. Log in to your [{{site.data.keyword.cloud_notm}} account](https://cloud.ibm.com/login){: external}.
 
-2. From the menu ![Menu icon](../../../icons/icon_hamburger.svg "Menu icon"), select **Observability**.
+2. From the menu ![Menu icon](../icons/icon_hamburger.svg "Menu icon"), select **Observability**.
 
 3. Select **Logging**. The list of {{site.data.keyword.la_full_notm}} service instances that are available on {{site.data.keyword.cloud_notm}} is displayed.
 

@@ -128,7 +128,7 @@ The following table lists services that send logs to {{site.data.keyword.la_full
 
 | Service     | Description | More info |
 |-------------|-------------|-------------------------------------------------------------------------|
-| [{{site.data.keyword.appconservicefull}}](/docs/AppConnect?topic=AppConnect-getting-started) | You can use {{site.data.keyword.appconservicefull}} to connect your applications.   | [More info ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://developer.ibm.com/integration/docs/app-connect/troubleshooting/monitoring-and-managing-app-connect-logs-in-logdna/){:new_window}  |
+| [{{site.data.keyword.appconservicefull}}](/docs/AppConnect?topic=AppConnect-getting-started) | You can use {{site.data.keyword.appconservicefull}} to connect your applications.   | [More info](https://developer.ibm.com/integration/docs/app-connect/troubleshooting/monitoring-and-managing-app-connect-logs-in-logdna/){: external}  |
 {: caption="Table 5. List of integration Cloud services" caption-side="top"} 
 
 To see the list of {{site.data.keyword.la_full_notm}} locations where these services send logs, see [Integration services](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-cloud_services_locations#cs_locations_integration).

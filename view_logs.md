@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2020
-lastupdated: "2020-03-06"
+lastupdated: "2020-07-02"
 
 keywords: LogDNA, IBM, Log Analysis, logging, logs
 
@@ -20,6 +20,7 @@ subcollection: Log-Analysis-with-LogDNA
 {:download: .download}
 {:important: .important}
 {:note: .note}
+{:external: target="_blank" .external}
 
 # Viewing logs
 {: #view_logs}
@@ -57,7 +58,7 @@ For more information on how to configure these policies for a user, see [Grantin
 
 To launch the {{site.data.keyword.la_full_notm}}  UI through the {{site.data.keyword.cloud_notm}} UI, complete the following steps:
 
-1. [Log in to your {{site.data.keyword.cloud_notm}} account ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com/login){:new_window}.
+1. [Log in to your {{site.data.keyword.cloud_notm}} account](https://cloud.ibm.com/login){: external}.
 
 	After you log in, the {{site.data.keyword.cloud_notm}} *Dashboard* opens.
 
@@ -135,7 +136,7 @@ To create a group, select multiple values. Then, click **Save as group**. Enter 
 
 When you search log data, the search applies any log filters and time queries configured in that view.
 
-You can do simple searches (single term string search), compound search (multiple search terms and operators), field searches if the log line can be parsed, and others. For more information, see [How to Search Logs in LogDNA docs ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://docs.logdna.com/docs/search){:new_window}.
+You can do simple searches (single term string search), compound search (multiple search terms and operators), field searches if the log line can be parsed, and others. For more information, see [How to Search Logs in LogDNA docs](https://docs.logdna.com/docs/search){: external}.
 
 **Note:** AND and OR operators are case-sensitive and must be capitalized.
 

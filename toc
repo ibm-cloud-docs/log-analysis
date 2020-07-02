@@ -28,6 +28,10 @@ IBM Log Analysis with LogDNA
         iam.md
         service-connection.md
         architecture-workload-isolation.md
+
+    {: .topicgroup}
+    Tutorials
+        tutorials/kube_reset_ingestion.md
     {: .navgroup-end}
 
     {: .navgroup id="howto"}
@@ -55,7 +59,6 @@ IBM Log Analysis with LogDNA
         exclude_logs_from_agent.md
         adding_tags.md
         detach_agent.md
-        tutorials/kube_reset_ingestion.md
 
     {: .topicgroup}
     View logs

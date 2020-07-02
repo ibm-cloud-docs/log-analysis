@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2020
-lastupdated: "2020-04-27"
+lastupdated: "2020-07-02"
 
 keywords: LogDNA, IBM, Log Analysis, logging, archive logs, COS, cloud object storage
 
@@ -20,6 +20,7 @@ subcollection: Log-Analysis-with-LogDNA
 {:download: .download}
 {:important: .important}
 {:note: .note}
+{:external: target="_blank" .external}
 
  
 # Archiving logs to IBM Cloud Object Storage
@@ -41,8 +42,8 @@ Logs are archived hourly.
 The name of the file has the following format:
 
 ```
-year=YYYY/month=MM/day=DD/<accountID>.<YYYY>-<MM>-<DD>.<HH>00.json.gz 
-```
+ year=YYYY/month=MM/day=DD/<accountID>.<YYYY>-<MM>-<DD>.<HH>00.json.gz 
+ ```
 {: codeblock}
 
 Where `HH` is hours in 24 format and `accountID` corresponds to the LogDNA instance ID. You can get the LogDNA instance ID from the URL that you get when you launch the LogDNA web UI. 
@@ -51,11 +52,12 @@ For example, an archive file can have the following name: `2020/03/18/0f6efbewe6
 
 Logs that are included in a file correspond to the period of time that is indicated as part of the name of the file. 
 
-The timestamp that is used to determine whether the log record is included in an archive is the UTC timestamp. Notice that depending on your location, there might be logs that you see in local time in your views on a specific day. However, you cannot find them on the archive file. You are most likely viewing logs in local time and the archive process uses the UTC timestamp.
+* The timestamp that is used to determine whether the log record is included in an archive is the UTC timestamp.
 
-After you configure archiving, the first archive file is created when the archiving process runs and there is data.
+    Notice that depending on your location, there might be logs that you see in local time in your views on a specific day. However, you cannot find them on the archive file. You are most likely viewing logs in local time and the archive process uses the UTC timestamp.
 
-The first time the archive process runs, consider the following information:
+* After you configure archiving, the first archive file is created when the archiving process runs and there is data.
+* The first time the archive process runs, consider the following information:
 
     * The maximum number of days that data is archived includes logs for the past 30 days when the instance has a `30 day Log search` plan.
 
@@ -132,7 +134,7 @@ Complete the following steps to assign a user administrator role to the {{site.d
 
 Complete the following steps to provision an {{site.data.keyword.cos_full_notm}} instance:
 
-1. [Log in to your {{site.data.keyword.cloud_notm}} account ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com/login){:new_window}.
+1. [Log in to your {{site.data.keyword.cloud_notm}} account](https://cloud.ibm.com/login){: external}.
 
 	After you log in, the {{site.data.keyword.cloud_notm}} UI opens.
 
@@ -177,7 +179,7 @@ Complete the following steps to create a bucket:
 
 1. Log in to your {{site.data.keyword.cloud_notm}} account.
 
-    Click [{{site.data.keyword.cloud_notm}} dashboard ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com/login){:new_window} to launch the {{site.data.keyword.cloud_notm}} dashboard.
+    Click [{{site.data.keyword.cloud_notm}} dashboard ](https://cloud.ibm.com/login){: external} to launch the {{site.data.keyword.cloud_notm}} dashboard.
 
 	After you log in with your user ID and password, the {{site.data.keyword.cloud_notm}} Dashboard opens.
 
@@ -231,7 +233,7 @@ Complete the following steps to create a service ID with writing permissions for
 
 1. Log in to your {{site.data.keyword.cloud_notm}} account.
 
-    Click [{{site.data.keyword.cloud_notm}} dashboard ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com/login){:new_window} to launch the {{site.data.keyword.cloud_notm}} dashboard.
+    Click [{{site.data.keyword.cloud_notm}} dashboard](https://cloud.ibm.com/login){: external} to launch the {{site.data.keyword.cloud_notm}} dashboard.
 
 	After you log in with your user ID and password, the {{site.data.keyword.cloud_notm}} Dashboard opens.
 
@@ -285,7 +287,7 @@ An endpoint defines where to look for a bucket. There are different endpoints de
 
 Complete the following steps to obtain the endpoint for your bucket:
 
-1. [Log in to your {{site.data.keyword.cloud_notm}} account ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com/login){:new_window}.
+1. [Log in to your {{site.data.keyword.cloud_notm}} account](https://cloud.ibm.com/login){: external}.
 
 	After you log, the {{site.data.keyword.cloud_notm}} Dashboard opens.
 
