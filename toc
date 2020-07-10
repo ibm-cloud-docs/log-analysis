@@ -76,6 +76,7 @@ IBM Log Analysis with LogDNA
     {: .topicgroup}
     Send logs
         ingest.md
+        [LogDNA ingestion limitations](https://docs.logdna.com/docs/ingestion#service-limits)
     {: .navgroup-end}
 
     {: .navgroup id="reference"}
