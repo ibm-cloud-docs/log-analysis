@@ -95,7 +95,7 @@ Review the following sections for the specific responsibilities for you and for 
 | `Backup the {{site.data.keyword.la_full_notm}} service`        | Daily backup of the {{site.data.keyword.la_full_notm}} infrastructure and components. | `N/A` |
 | `Backup LogDNA agents`                                          | `N/A`  | Backup each LogDNA agent yaml file that is deployed in your organization. |
 | `Recovery of LogDNA agents`                                     | `N/A` | [Reinstall](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-logdna_agent#logdna_agent_configure) the LogDNA agent in the event of any disaster event that impacts the agent runtime. |
-| `Backup the metadata of a LogDNA instance`                          | `N/A` | [Backup the metadata such as views, dashboards, screens, parsing templates, and alerts for each LogDNA instance.](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-reuse_resource_definitions#export_config) |
+| `Backup the metadata of a LogDNA instance`                          | `N/A` | [Backup the metadata such as views, dashboards, screens, parsing templates, and alerts for each LogDNA instance.](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-reuse_resource_definitions#export_config_res) |
 | `Restore the metadata of a LogDNA instance`                         | `N/A` | [Restore the metadata such as views, dashboards, screens, parsing templates, and alerts for each LogDNA instance.](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-reuse_resource_definitions#import_config) |
 {: caption="Table 5. Responsibilities for disaster recovery" caption-side="top"}
 
