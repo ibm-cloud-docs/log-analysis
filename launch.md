@@ -29,8 +29,8 @@ After you provision an instance of the {{site.data.keyword.la_full_notm}} servic
 {:shortdesc}
 
 
-## Step 1. Grant IAM policies to a user to launch the web UI
-{: #launch_step1}
+## Granting IAM policies to a user to launch the web UI
+{: #launch_iam}
 
 Users in your account need permissions to launch the LogDNA web UI.
 
@@ -48,10 +48,10 @@ The following table lists the minimum policies that a user must have to be able 
 For more information on how to configure these policies for a user, see [Granting permissions to a user to view logs](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-work_iam#user_logdna).
 
 
-## Step 2. Launch the web UI through the {{site.data.keyword.cloud_notm}} UI
-{: #launch_step2}
+## Launching the LogDNA web UI through the {{site.data.keyword.cloud_notm}} UI
+{: #launch_cloud_ui}
 
-You launch the web UI within the context of an {{site.data.keyword.la_full_notm}} instance, from the {{site.data.keyword.cloud_notm}} UI. 
+You launch the LogDNA web UI within the context of an {{site.data.keyword.la_full_notm}} instance, from the {{site.data.keyword.cloud_notm}} UI. 
 
 Complete the following steps to launch the web UI:
 
@@ -68,61 +68,58 @@ Complete the following steps to launch the web UI:
 The Web UI opens.
 
 
-## Getting the web UI URL by using the {{site.data.keyword.cloud_notm}} CLI
-{: #launch_get}
+## Launching the LogDNA web UI from a browser
+{: #launch_browser}
 
-To get the web UI URL, complete the following steps from a terminal:
+You can launch the LogDNA web UI directly from a browser. 
 
-1. Set the resource group where the {{site.data.keyword.la_full_notm}} instance is provisioned.
+Complete the following steps:
 
-    ```
-    export logdna_rg_name=<Resource_Group_Name_Where_LogDNA_Instance_Is_Created>
-    ```
-    {: codeblock}
+1. [Get the LogDNA web UI URL](/docs/Activity-Tracker-with-LogDNA?topic=Activity-Tracker-with-LogDNA-get_logdna_web_url).
 
-2. Set the {{site.data.keyword.la_full_notm}} instance name.
+    For example, a LogDNA web UI looks like `https://app.eu-gb.logging.cloud.ibm.com/ext/ibm-sso/xxxxxxxxxx`.
 
-    ```
-    export logdna_instance_name=<Your_LogDNA_Instance_Name>
-    ```
-    {: codeblock}
+2. Enter the dashboard URL in a browser and log in to {{site.data.keyword.cloud_notm}.
 
-3. Set the endpoint.
+3. [Optional] You can also pass query parameters to refine the view that is displayed.
 
     ```
-    export rc_endpoint=resource-controller.cloud.ibm.com
+    https://<ENDPOINT>/ext/ibm-sso/LOGDNA_ID?q=<QUERY>&hosts=<HOSTS>&apps=<APPS>&levels=<LEVELS>&tags=<TAGS>&t=<TIMEFRAME>
     ```
     {: codeblock}
 
-4. Set the IAM token.
+    Where
 
-    ```
-    export iam_token=$(ibmcloud iam oauth-tokens | grep IAM | grep -oP  "eyJ.*")
-    ```
-    {: codeblock}
+    * `<ENDPOINT>` represents the dashboard URL in the region where the instance is available. See [LogDNA web UI endpoints](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-endpoints#endpoints_logdna_ui).
 
-    **Note:** If you are working on a MacOS terminal, the command is as follows: `export iam_token=$(ic iam oauth-tokens | grep IAM | grep -o  "eyJ.*")`
+    * `<QUERY>` represents the search query that is applied for the view, for example, `q=table%3Amangle%20reason%3A%27refresh%20timer%27`. 
 
-5. Set the resource group ID.
+        Use `%3A` to represent a colon (`:`).
 
-    ```
-    export resource_group_id=$(ibmcloud resource groups | grep "^$logdna_rg_name" | awk '{print $2}')
-    ```
-    {: codeblock}
+        Use `%20` to represent a space.
 
-6. Set the web UI URL in a variable.
+        Use `%27` to represent a quote (`'`).
 
-    ```
-    export dashboard_url=$(curl -H "Accept: application/json" -H "Authorization: Bearer $iam_token" "https://$rc_endpoint/v1/resource_instances?resource_group_id=$resource_group_id&type=service_instance" | jq ".resources[] | select(.name==\"$logdna_instance_name\") | .dashboard_url")
-    ```
-    {: codeblock}
+    * `<HOSTS>` represents the list of hosts for which data is included in the view. Multiple hosts are separated by commas, for example,  `hosts=logdna-agent-trkq9,logdna-agent-trkq7`.
 
-7. Get the web UI URL.
+    * `<APPS>` represents the list of apps for which data is included in the view. Multiple apps are separated by commas, for example, `apps=autoscaler,catalog-operator`.
 
-    ```
-    echo $dashboard_url
-    ```
-    {: codeblock}
+    * `<LEVELS>` represents the list of levels for which data is included in the view. Multiple levels are separated by commas, for example, `levels=warn,debug`.
+
+    * `<TAGS>` represents the list of tags for which data is included in the view. Multiple tags are separated by commas, for example, `tags=agent-v2,k8s`.
+
+    * `<TIMEFRAME>` represents the timeframe that you apply to the data that is displayed through the view. For example, look at the following samples:
+    
+        When you specify a timeframe of `July 12`, the value is `t=July%2012`. 
+        
+        When you specify a timeframe of `July 12, 2020`, the value is `t=July%2012%2C%202020`. 
+
+        When you specify a timeframe of `July 12, 2020 to July 15,2020`, the value is `t=July%2012%2C%202020%20to%20July%2015%2C2020`.
+
+
+
+
+
 
     
 
