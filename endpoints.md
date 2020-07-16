@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2020
-lastupdated: "2020-06-22"
+lastupdated: "2020-07-16"
 
 keywords: LogDNA, IBM, Log Analysis, logging, config agent
 
@@ -129,6 +129,24 @@ The following table shows the private ingestion endpoints:
 
 
 
+## LogDNA web UI endpoints
+{: #endpoints_logdna_ui}
+
+The following table shows the LogDNA web UI endpoints:
+
+| Region                   |  Public Endpoint                                   |
+|--------------------------|----------------------------------------------------|
+| `Chennai (in-che)`       | `https://app.in-che.logging.cloud.ibm.com`       |
+| `Dallas (us-south)`      | `https://app.us-south.logging.cloud.ibm.com`       |
+| `Frankfurt (eu-de)`      | `https://app.eu-de.logging.cloud.ibm.com`          |
+| `London (eu-gb)`         | `https://app.eu-gb.logging.cloud.ibm.com`          |
+| `Tokyo (jp-tok)`         | `https://app.jp-tok.logging.cloud.ibm.com`         |
+| `Seoul (kr-seo)`         | `https://app.kr-seo.logging.cloud.ibm.com`         |
+| `Sydney (au-syd)`        | `https://app.au-syd.logging.cloud.ibm.com`         |
+| `Washington (us-east)`   | `https://app.us-east.logging.cloud.ibm.com`         |
+{: caption="Table 5. Lists of LogDNA web UI endpoints" caption-side="top"}
+
+
 ## Syslog public endpoints
 {: #endpoints_syslog}
 
@@ -144,8 +162,8 @@ The following table shows the API endpoints:
 | `Seoul (kr-seo)`         | `syslog://syslog-a.kr-seo.logging.cloud.ibm.com`            |
 | `Sydney (au-syd)`        | `syslog://syslog-a.au-syd.logging.cloud.ibm.com`            |
 | `Washington (us-east)`   | `syslog://syslog-a.us-east.logging.cloud.ibm.com`          |
-{: caption="Table 5. Lists of Syslog endpoints" caption-side="top"}
-{: #end-syslog-table-5}
+{: caption="Table 6. Lists of Syslog endpoints" caption-side="top"}
+{: #end-syslog-table-6}
 {: tab-title="Syslog"}
 {: tab-group="end-syslog"}
 {: class="simple-tab-table"}
@@ -161,8 +179,8 @@ The following table shows the API endpoints:
 | `Seoul (kr-seo)`         | `syslog-tls://syslog-a.kr-seo.logging.cloud.ibm.com`            |
 | `Sydney (au-syd)`        | `syslog-tls://syslog-a.au-syd.logging.cloud.ibm.com`            |
 | `Washington (us-east)`   | `syslog-tls://syslog-a.us-east.logging.cloud.ibm.com`          |
-{: caption="Table 6. Lists of Syslog-TLS endpoints" caption-side="top"}
-{: #end-ing-syslog-6}
+{: caption="Table 7. Lists of Syslog-TLS endpoints" caption-side="top"}
+{: #end-ing-syslog-7}
 {: tab-title="Syslog-TLS"}
 {: tab-group="end-syslog"}
 {: class="simple-tab-table"}

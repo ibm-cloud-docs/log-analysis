@@ -41,7 +41,12 @@ IBM Log Analysis with LogDNA
     upgrade.md
     observe.md
     
-
+    {: .topicgroup}
+    LogDNA web UI
+        launch.md
+        config.md
+        get_logdna_web_url.md
+        
    {: .topicgroup}
     DevOps tasks
         archive.md
