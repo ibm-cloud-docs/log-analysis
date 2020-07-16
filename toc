@@ -67,7 +67,6 @@ IBM Log Analysis with LogDNA
 
     {: .topicgroup}
     View logs
-        launch.md
         view_logs.md
         alerts.md
 
