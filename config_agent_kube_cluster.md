@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2020
-lastupdated: "2020-07-01"
+lastupdated: "2020-07-28"
 
 keywords: LogDNA, IBM, Log Analysis, logging, config agent
 
@@ -93,6 +93,7 @@ To configure the LogDNA agen in the cluster, you need the following CLIs:
 {: #config_agent_kube_cluster_step2}
 
 Observability services are deployed in the `ibm-observe` namespace. 
+{: note}
 
 First, check if the namespace exists. Run the following command:
 
@@ -190,14 +191,14 @@ Choose one of the following commands to install and configure the LogDNA agent v
 
 | Location                  | Command (By using public endpoints)               | 
 |--------------------------|----------------------------------------------------|
-| `Chennai (in-che)`       | `kubectl create -f https://assets.in-che.logging.cloud.ibm.com/clients/logdna-agent-v2.yaml -n ibm-observe`       |
-| `Dallas (us-south)`      | `kubectl create -f https://assets.us-south.logging.cloud.ibm.com/clients/logdna-agent-v2.yaml -n ibm-observe`       |
-| `Frankfurt (eu-de)`      | `kubectl create -f https://assets.eu-de.logging.cloud.ibm.com/clients/logdna-agent-v2.yaml -n ibm-observe`         |
-| `London (eu-gb)`         | `kubectl create -f https://assets.eu-gb.logging.cloud.ibm.com/clients/logdna-agent-v2.yaml -n ibm-observe`          |
-| `Tokyo (jp-tok)`         | `kubectl create -f https://assets.jp-tok.logging.cloud.ibm.com/clients/logdna-agent-v2.yaml -n ibm-observe`       |
-| `Seoul (kr-seo)`         | `kubectl create -f https://assets.kr-seo.logging.cloud.ibm.com/clients/logdna-agent-v2.yaml -n ibm-observe` |
-| `Sydney (au-syd)`        | `kubectl create -f https://assets.au-syd.logging.cloud.ibm.com/clients/logdna-agent-v2.yaml -n ibm-observe`        |
-| `Washington (us-east)`   | `kubectl create -f https://assets.us-east.logging.cloud.ibm.com/clients/logdna-agent-v2.yaml -n ibm-observe`       |
+| `Chennai (in-che)`       | `kubectl apply -f https://assets.in-che.logging.cloud.ibm.com/clients/agent-resources.yaml`       |
+| `Dallas (us-south)`      | `kubectl apply -f https://assets.us-south.logging.cloud.ibm.com/clients/agent-resources.yaml`       |
+| `Frankfurt (eu-de)`      | `kubectl apply -f https://assets.eu-de.logging.cloud.ibm.com/clients/agent-resources.yaml`         |
+| `London (eu-gb)`         | `kubectl apply -f https://assets.eu-gb.logging.cloud.ibm.com/clients/agent-resources.yaml`          |
+| `Tokyo (jp-tok)`         | `kubectl apply -f https://assets.jp-tok.logging.cloud.ibm.com/clients/agent-resources.yaml`       |
+| `Seoul (kr-seo)`         | `kubectl apply -f https://assets.kr-seo.logging.cloud.ibm.com/clients/agent-resources.yaml` |
+| `Sydney (au-syd)`        | `kubectl apply -f https://assets.au-syd.logging.cloud.ibm.com/clients/agent-resources.yaml`        |
+| `Washington (us-east)`   | `kubectl apply -f https://assets.us-east.logging.cloud.ibm.com/clients/agent-resources.yaml`       |
 {: caption="Table 3. Commands by location when you use public endpoints" caption-side="top"}
 {: #agent-table-3}
 {: tab-title="Command (By using public endpoints)"}
@@ -207,14 +208,14 @@ Choose one of the following commands to install and configure the LogDNA agent v
 
 | Location                  | Command (By using private endpoints)               | 
 |--------------------------|----------------------------------------------------|
-| `Chennai (in-che)`       | `kubectl create -f https://assets.in-che.logging.cloud.ibm.com/clients/logdna-agent-v2-private.yaml -n ibm-observe`       |
-| `Dallas (us-south)`      | `kubectl create -f https://assets.us-south.logging.cloud.ibm.com/clients/logdna-agent-v2-private.yaml -n ibm-observe`       |
-| `Frankfurt (eu-de)`      | `kubectl create -f https://assets.eu-de.logging.cloud.ibm.com/clients/logdna-agent-v2-private.yaml -n ibm-observe`         |
-| `London (eu-gb)`         | `kubectl create -f https://assets.eu-gb.logging.cloud.ibm.com/clients/logdna-agent-v2-private.yaml -n ibm-observe`          |
-| `Tokyo (jp-tok)`         | `kubectl create -f https://assets.jp-tok.logging.cloud.ibm.com/clients/logdna-agent-v2-private.yaml -n ibm-observe`       |
-| `Seoul (kr-seo)`         | `kubectl create -f https://assets.kr-seo.logging.cloud.ibm.com/clients/logdna-agent-v2-private.yaml -n ibm-observe` |
-| `Sydney (au-syd)`        | `kubectl create -f https://assets.au-syd.logging.cloud.ibm.com/clients/logdna-agent-v2-private.yaml -n ibm-observe`        |
-| `Washington (us-east)`   | `kubectl create -f https://assets.us-east.logging.cloud.ibm.com/clients/logdna-agent-v2-private.yaml -n ibm-observe`       |
+| `Chennai (in-che)`       | `kubectl apply -f https://assets.in-che.logging.cloud.ibm.com/clients/agent-resources-private.yaml`   |
+| `Dallas (us-south)`      | `kubectl apply -f https://assets.us-south.logging.cloud.ibm.com/clients/agent-resources-private.yaml` |
+| `Frankfurt (eu-de)`      | `kubectl apply -f https://assets.eu-de.logging.cloud.ibm.com/clients/agent-resources-private.yaml`    |
+| `London (eu-gb)`         | `kubectl apply -f https://assets.eu-gb.logging.cloud.ibm.com/clients/agent-resources-private.yaml`    |
+| `Tokyo (jp-tok)`         | `kubectl apply -f https://assets.jp-tok.logging.cloud.ibm.com/clients/agent-resources-private.yaml`   |
+| `Seoul (kr-seo)`         | `kubectl apply -f https://assets.kr-seo.logging.cloud.ibm.com/clients/agent-resources-private.yaml`   |
+| `Sydney (au-syd)`        | `kubectl apply -f https://assets.au-syd.logging.cloud.ibm.com/clients/agent-resources-private.yaml`   |
+| `Washington (us-east)`   | `kubectl apply -f https://assets.us-east.logging.cloud.ibm.com/clients/agent-resources-private.yaml`  |
 {: caption="Table 4. Commands by location when you use private endpoints" caption-side="top"}
 {: #agent-table-4}
 {: tab-title="Command (By using private endpoints)"}
@@ -223,10 +224,11 @@ Choose one of the following commands to install and configure the LogDNA agent v
 {: row-headers}
 
 
+
 ### Step 6. Verify that the LogDNA agent is deployed successfully
 {: #config_agent_kube_cluster_step6}
 
-To verify that the LogDNA agent is deployed successfully, run the following commands:
+To verify that the LogDNA agent is deployed successfully, run any of the following commands:
 
 ```
 kubectl get all -n ibm-observe
