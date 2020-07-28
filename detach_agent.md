@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2020
-lastupdated: "2020-07-02"
+lastupdated: "2020-07-28"
 
 keywords: LogDNA, IBM, Log Analysis, logging, detach config agent
 
@@ -80,6 +80,9 @@ To stop your Kubernetes cluster from forwarding logs to your LogDNA instance, co
 ### Detaching a LogDNA agent from a standard Kubernetes cluster from the cluster console
 {: #detach_agent_kube_console}
 
+This option is only valid when you deploy the LogDNA agent from the {{site.data.keyword.containerlong_notm}} console.
+{: note}
+
 Complete the following steps from the [{{site.data.keyword.containerlong_notm}} console](https://cloud.ibm.com/kubernetes/clusters){: external}:
 
 1. Select the cluster for which you want to create a LogDNA logging configuration.
@@ -93,8 +96,10 @@ Complete the following steps from the [{{site.data.keyword.containerlong_notm}} 
 ### Detaching a LogDNA agent from a standard Kubernetes cluster by using ob commands
 {: #detach_agent_kube_console_ob}
 
-Complete the following steps:
+This option is only valid when you deploy the LogDNA agent by using ob commands.
+{: note}
 
+Complete the following steps:
 
 1. Set the cluster context.
 
@@ -229,6 +234,9 @@ Complete the following steps from the command line:
 ### Detaching a LogDNA agent from an Openshift Kubernetes cluster from the OpenShift console
 {: #detach_agent_os_console}
 
+This option is only valid when you deploy the LogDNA agent from the OpenShift console.
+{: note}
+
 Complete the following steps from the [OpenShift console](https://cloud.ibm.com/kubernetes/clusters?platformType=openshift){: external}:
 
 1. Select the cluster for which you want to create a LogDNA logging configuration.
@@ -242,8 +250,10 @@ Complete the following steps from the [OpenShift console](https://cloud.ibm.com/
 ### Detaching a LogDNA agent from an Openshift Kubernetes cluster by using ob commands
 {: #detach_agent_os_console_ob}
 
-Complete the following steps:
+This option is only valid when you deploy the LogDNA agent by using ob commands.
+{: note}
 
+Complete the following steps:
 
 1. Set the cluster context.
 

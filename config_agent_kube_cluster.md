@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2020
-lastupdated: "2020-05-11"
+lastupdated: "2020-07-28"
 
 keywords: LogDNA, IBM, Log Analysis, logging, config agent
 
@@ -27,9 +27,10 @@ subcollection: Log-Analysis-with-LogDNA
 The LogDNA agent is responsible for collecting and forwarding logs to your {{site.data.keyword.la_full_notm}} instance. After you provision an instance of {{site.data.keyword.la_full}}, you must configure a LogDNA agent for each log source that you want to monitor.
 {:shortdesc}
 
-To configure your Kubernetes cluster to send logs to your {{site.data.keyword.la_full_notm}} instance, you must install a *logdna-agent* pod on each node of your cluster. The LogDNA agent reads log files from the pod where it is installed, and forwards the log data to your LogDNA instance.
+To configure your Kubernetes cluster to send logs to your {{site.data.keyword.la_full_notm}} instance, you must install the LogDNA agent in your cluster. 
+* The agent deploys a a logdna-agent pod on each node of your cluster. 
+* The LogDNA agent reads log files from the pod where it is installed, and forwards the log data to your LogDNA instance.
 
-Complete the following steps from the command line to configure your Kubernetes cluster to forward logs to your LogDNA instance:
 
 ## Deploy the LogDNA agent by using kubectl commands
 {: #config_agent_kube_kubectl}
@@ -88,10 +89,31 @@ To configure the LogDNA agen in the cluster, you need the following CLIs:
    ```
    {: pre}
 
-
-
-### Step 2. Store your LogDNA ingestion key as a Kubernetes secret
+### Step 2. Create the ibm-observe namespace
 {: #config_agent_kube_cluster_step2}
+
+Observability services are deployed in the `ibm-observe` namespace. 
+{: note}
+
+First, check if the namespace exists. Run the following command:
+
+```
+kubectl get namespaces
+```
+{: pre}
+
+Verify the `ibm-observe` namespace is active.
+
+If you need to create the namespace, run the following command:
+
+```
+kubectl create namespace ibm-observe
+```
+{: pre}
+
+
+### Step 3. Store your LogDNA ingestion key as a Kubernetes secret
+{: #config_agent_kube_cluster_step3}
 
 Create a Kubernetes secret to store your LogDNA ingestion key for your service instance. 
 
@@ -106,22 +128,26 @@ kubectl create secret generic logdna-agent-key --from-literal=logdna-agent-key=<
 
 To get the ingestion key, see [Get the ingestion key through the IBM Log Analysis with LogDNA web UI](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-ingestion_key).
 
-### Step 3. Enable virtual routing and forwarding (VRF)
-{: #config_agent_kube_cluster_step3}
+### Step 4. Enable virtual routing and forwarding (VRF)
+{: #config_agent_kube_cluster_step4}
 
 This step is required if you plan to use private endpoints.  
 
 You must enable virtual routing and forwarding (VRF) and connectivity to service endpoints for your account. [Learn more](/docs/account?topic=account-vrf-service-endpoint)
 
-### Step 4. Deploy the LogDNA agent in the cluster
-{: #config_agent_kube_cluster_step4}
+### Step 5. Deploy the LogDNA agent in the cluster
+{: #config_agent_kube_cluster_step5}
 
 Create a Kubernetes daemonset to deploy the LogDNA agent on every worker node of your Kubernetes cluster. 
 
 The LogDNA agent collects STDOUT, STDERR, logs with the extension `*.log`, and extensionsless files that are stored in the `/var/log` directory of your pod. By default, logs are collected from all namespaces, including `kube-system`, and automatically forwarded to the {{site.data.keyword.la_full_notm}} service.
 
+Choose any of the following options to deploy the LogDNA agent:
 
-Choose one of the following commands to install and configure the LogDNA agent:
+#### Option 1. Deploy the LogDNA agent V1
+{: #config_agent_kube_cluster_step5_opt1_V1}
+
+Choose one of the following commands to install and configure the LogDNA agent version 1 by using `kubectl` commands:
 
 | Location                  | Command (By using public endpoints)               | 
 |--------------------------|----------------------------------------------------|
@@ -157,10 +183,57 @@ Choose one of the following commands to install and configure the LogDNA agent:
 {: class="simple-tab-table"}
 {: row-headers}
 
-### Step 5. Verify that the LogDNA agent is deployed successfully
-{: #config_agent_kube_cluster_step5}
 
-To verify that the LogDNA agent is deployed successfully, run the following command:
+#### Option 2. Deploy the LogDNA agent V2
+{: #config_agent_kube_cluster_step5_opt2_V2}
+
+Choose one of the following commands to install and configure the LogDNA agent version 2 by using `kubectl` commands:
+
+| Location                  | Command (By using public endpoints)               | 
+|--------------------------|----------------------------------------------------|
+| `Chennai (in-che)`       | `kubectl apply -f https://assets.in-che.logging.cloud.ibm.com/clients/agent-resources.yaml`       |
+| `Dallas (us-south)`      | `kubectl apply -f https://assets.us-south.logging.cloud.ibm.com/clients/agent-resources.yaml`       |
+| `Frankfurt (eu-de)`      | `kubectl apply -f https://assets.eu-de.logging.cloud.ibm.com/clients/agent-resources.yaml`         |
+| `London (eu-gb)`         | `kubectl apply -f https://assets.eu-gb.logging.cloud.ibm.com/clients/agent-resources.yaml`          |
+| `Tokyo (jp-tok)`         | `kubectl apply -f https://assets.jp-tok.logging.cloud.ibm.com/clients/agent-resources.yaml`       |
+| `Seoul (kr-seo)`         | `kubectl apply -f https://assets.kr-seo.logging.cloud.ibm.com/clients/agent-resources.yaml` |
+| `Sydney (au-syd)`        | `kubectl apply -f https://assets.au-syd.logging.cloud.ibm.com/clients/agent-resources.yaml`        |
+| `Washington (us-east)`   | `kubectl apply -f https://assets.us-east.logging.cloud.ibm.com/clients/agent-resources.yaml`       |
+{: caption="Table 3. Commands by location when you use public endpoints" caption-side="top"}
+{: #agent-table-3}
+{: tab-title="Command (By using public endpoints)"}
+{: tab-group="agent1"}
+{: class="simple-tab-table"}
+{: row-headers}
+
+| Location                  | Command (By using private endpoints)               | 
+|--------------------------|----------------------------------------------------|
+| `Chennai (in-che)`       | `kubectl apply -f https://assets.in-che.logging.cloud.ibm.com/clients/agent-resources-private.yaml`   |
+| `Dallas (us-south)`      | `kubectl apply -f https://assets.us-south.logging.cloud.ibm.com/clients/agent-resources-private.yaml` |
+| `Frankfurt (eu-de)`      | `kubectl apply -f https://assets.eu-de.logging.cloud.ibm.com/clients/agent-resources-private.yaml`    |
+| `London (eu-gb)`         | `kubectl apply -f https://assets.eu-gb.logging.cloud.ibm.com/clients/agent-resources-private.yaml`    |
+| `Tokyo (jp-tok)`         | `kubectl apply -f https://assets.jp-tok.logging.cloud.ibm.com/clients/agent-resources-private.yaml`   |
+| `Seoul (kr-seo)`         | `kubectl apply -f https://assets.kr-seo.logging.cloud.ibm.com/clients/agent-resources-private.yaml`   |
+| `Sydney (au-syd)`        | `kubectl apply -f https://assets.au-syd.logging.cloud.ibm.com/clients/agent-resources-private.yaml`   |
+| `Washington (us-east)`   | `kubectl apply -f https://assets.us-east.logging.cloud.ibm.com/clients/agent-resources-private.yaml`  |
+{: caption="Table 4. Commands by location when you use private endpoints" caption-side="top"}
+{: #agent-table-4}
+{: tab-title="Command (By using private endpoints)"}
+{: tab-group="agent1"}
+{: class="simple-tab-table"}
+{: row-headers}
+
+
+
+### Step 6. Verify that the LogDNA agent is deployed successfully
+{: #config_agent_kube_cluster_step6}
+
+To verify that the LogDNA agent is deployed successfully, run any of the following commands:
+
+```
+kubectl get all -n ibm-observe
+```
+{: pre}
 
 ```
 kubectl get pods
@@ -173,6 +246,13 @@ The deployment is successful when you see one or more LogDNA pods.
 * All pods must be in a `Running` state.
 * *Stdout* and *stderr* are automatically collected and forwarded from all containers. Log data includes application logs and worker logs.
 * By default, the LogDNA agent pod that runs on a worker collects logs from all namespaces on that node, including kube-system logs.
+
+To get a copy of the LogDNA agent configuration that is deployed, you can run the following command: 
+
+```
+ kubectl get daemonset logdna-agent -o=yaml > prod-logdna-agent-ds.yaml -n ibm-observe
+```
+{: pre}
 
 
 

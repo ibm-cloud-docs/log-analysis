@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2020
-lastupdated: "2020-07-01"
+lastupdated: "2020-07-28"
 
 keywords: LogDNA, IBM, Log Analysis, logging, services
 
@@ -184,9 +184,10 @@ The following tables list the locations where automatic collection of database s
 ## Integration services
 {: #cs_locations_integration}
 
-| Service                                                         | `Dallas (us-south)` | `Washington (us-east)`                   |
-|-----------------------------------------------------------------|---------------------|--------------------------------------|
-| {{site.data.keyword.appconservicefull}}                      | ![Checkmark icon](images/checkmark-icon.svg)             | `NO`                                 |            
+| Service                                         | `Dallas (us-south)`                          | `Washington (us-east)`            |
+|-------------------------------------------------|----------------------------------------------|-----------------------------------|
+| {{site.data.keyword.appconservicefull}}         | ![Checkmark icon](images/checkmark-icon.svg) | `NO`                              |
+| {{site.data.keyword.mq_short}}                  | ![Checkmark icon](images/checkmark-icon.svg) | ![Checkmark icon](images/checkmark-icon.svg) |            
 {: caption="Table 10. Integration services" caption-side="top"}
 {: #cs-int-table-10}
 {: tab-title="America"}
@@ -197,6 +198,7 @@ The following tables list the locations where automatic collection of database s
 | Service                                                         | `Tokyo (jp-tok)` |`Sydney (au-syd)`           |
 |-----------------------------------------------------------------|----------------|---------------------------|
 | {{site.data.keyword.appconservicefull}}                      | `NO`    | ![Checkmark icon](images/checkmark-icon.svg)|
+| {{site.data.keyword.mq_short}}                               |  `NO`    | ![Checkmark icon](images/checkmark-icon.svg)|
 {: caption="Table 11. Integration services" caption-side="top"}
 {: #cs-int-table-11}
 {: tab-title="Asia Pacific"}
@@ -207,6 +209,7 @@ The following tables list the locations where automatic collection of database s
 | Service                                                       |`Frankfurt (eu-de)`  | `London (eu-gb)` |
 |---------------------------------------------------------------|-------------------|----------------|
 | {{site.data.keyword.appconservicefull}}                    |  `NO`              | ![Checkmark icon](images/checkmark-icon.svg)|
+| {{site.data.keyword.mq_short}}                  | ![Checkmark icon](images/checkmark-icon.svg) | ![Checkmark icon](images/checkmark-icon.svg) |
 {: caption="Table 12. Integration services" caption-side="top"}
 {: #cs-int-table-12}
 {: tab-title="Europe"}
