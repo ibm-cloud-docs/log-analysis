@@ -35,7 +35,7 @@ To stop your Kubernetes cluster from sending logs to your {{site.data.keyword.la
 
 
 ### Detaching a LogDNA agent version 2 from a standard Kubernetes cluster by using kubectl commands
-{: #detach_agent_kube_kubectl_v1}
+{: #detach_agent_kube_kubectl_v2}
 
 To stop your Kubernetes cluster from forwarding logs to your LogDNA instance, complete the following steps from the command line:
 
