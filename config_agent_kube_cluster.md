@@ -144,6 +144,9 @@ The LogDNA agent collects STDOUT, STDERR, logs with the extension `*.log`, and e
 
 Choose one of the following commands to install and configure the **LogDNA agent version 2** by using `kubectl` commands:
 
+The LogDNA agent version 2 is supported for Kubernetes 1.9+ only.
+{: important}
+
 The default yaml file uses the image that is tagged as stable. To find out the LogDNA agent version that you deploy by running the script, see [Getting information about Kubernetes LogDNA agent images](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-logdna_agent_image).
 {: tip}
 
@@ -184,16 +187,19 @@ The default yaml file uses the image that is tagged as stable. To find out the L
 
 If you need to configure the LogDNA agent version 1, choose one of the following commands to install and configure the agent by using `kubectl` commands:
 
+The LogDNA agent version 1 is supported for Kubernetes 1.2 to 1.8 only.
+{: important}
+
 | Location                 | Command (By using public endpoints)               | 
 |--------------------------|----------------------------------------------------|
-| `Chennai (in-che)`       | `kubectl create -f https://assets.in-che.logging.cloud.ibm.com/clients/logdna-agent-ds.yaml -n ibm-observe`       |
-| `Dallas (us-south)`      | `kubectl create -f https://assets.us-south.logging.cloud.ibm.com/clients/logdna-agent-ds.yaml -n ibm-observe`       |
-| `Frankfurt (eu-de)`      | `kubectl create -f https://assets.eu-de.logging.cloud.ibm.com/clients/logdna-agent-ds.yaml -n ibm-observe`         |
-| `London (eu-gb)`         | `kubectl create -f https://assets.eu-gb.logging.cloud.ibm.com/clients/logdna-agent-ds.yaml -n ibm-observe`          |
-| `Tokyo (jp-tok)`         | `kubectl create -f https://assets.jp-tok.logging.cloud.ibm.com/clients/logdna-agent-ds.yaml -n ibm-observe`       |
-| `Seoul (kr-seo)`         | `kubectl create -f https://assets.kr-seo.logging.cloud.ibm.com/clients/logdna-agent-ds.yaml -n ibm-observe` |
-| `Sydney (au-syd)`        | `kubectl create -f https://assets.au-syd.logging.cloud.ibm.com/clients/logdna-agent-ds.yaml -n ibm-observe`        |
-| `Washington (us-east)`   | `kubectl create -f https://assets.us-east.logging.cloud.ibm.com/clients/logdna-agent-ds.yaml -n ibm-observe`       |
+| `Chennai (in-che)`       | `kubectl create -f https://assets.in-che.logging.cloud.ibm.com/clients/logdna-agent-ds-k8s-v1.8.yaml -n ibm-observe`       |
+| `Dallas (us-south)`      | `kubectl create -f https://assets.us-south.logging.cloud.ibm.com/clients/logdna-agent-ds-k8s-v1.8.yaml -n ibm-observe`       |
+| `Frankfurt (eu-de)`      | `kubectl create -f https://assets.eu-de.logging.cloud.ibm.com/clients/logdna-agent-ds-k8s-v1.8.yaml -n ibm-observe`         |
+| `London (eu-gb)`         | `kubectl create -f https://assets.eu-gb.logging.cloud.ibm.com/clients/logdna-agent-ds-k8s-v1.8.yaml -n ibm-observe`          |
+| `Tokyo (jp-tok)`         | `kubectl create -f https://assets.jp-tok.logging.cloud.ibm.com/clients/logdna-agent-ds-k8s-v1.8.yaml -n ibm-observe`       |
+| `Seoul (kr-seo)`         | `kubectl create -f https://assets.kr-seo.logging.cloud.ibm.com/clients/logdna-agent-ds-k8s-v1.8.yaml -n ibm-observe` |
+| `Sydney (au-syd)`        | `kubectl create -f https://assets.au-syd.logging.cloud.ibm.com/clients/logdna-agent-ds-k8s-v1.8.yaml -n ibm-observe`        |
+| `Washington (us-east)`   | `kubectl create -f https://assets.us-east.logging.cloud.ibm.com/clients/logdna-agent-ds-k8s-v1.8.yaml -n ibm-observe`       |
 {: caption="Table 1. Commands by location when you use public endpoints" caption-side="top"}
 {: #end-api-table-1}
 {: tab-title="Command (By using public endpoints)"}

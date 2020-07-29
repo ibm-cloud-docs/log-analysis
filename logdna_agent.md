@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2020
-lastupdated: "2020-07-01"
+lastupdated: "2020-07-29"
 
 keywords: LogDNA, IBM, Log Analysis, logging, config agent
 
@@ -63,41 +63,6 @@ The LogDNA Agent v2 is available only for Kubernetes 1.9+.
 
 
 When you configure the LogDNA agent, you can use the default yaml that is provided. Choose by region and by type of account. The default configuration pulls the image `icr.io/ext/logdna-agent:stable`.
-
-| Location                 | Default yaml file                                  | 
-|--------------------------|----------------------------------------------------|
-| `Chennai (in-che)`       | `https://assets.in-che.logging.cloud.ibm.com/clients/logdna-agent-v2.yaml`       |
-| `Dallas (us-south)`      | `https://assets.us-south.logging.cloud.ibm.com/clients/logdna-agent-v2.yaml`       |
-| `Frankfurt (eu-de)`      | `https://assets.eu-de.logging.cloud.ibm.com/clients/logdna-agent-v2.yaml`         |
-| `London (eu-gb)`         | `https://assets.eu-gb.logging.cloud.ibm.com/clients/logdna-agent-v2.yaml`          |
-| `Tokyo (jp-tok)`         | `https://assets.jp-tok.logging.cloud.ibm.com/clients/logdna-agent-v2.yaml`       |
-| `Seoul (kr-seo)`         | `https://assets.kr-seo.logging.cloud.ibm.com/clients/logdna-agent-v2.yaml` |
-| `Sydney (au-syd)`        | `https://assets.au-syd.logging.cloud.ibm.com/clients/logdna-agent-v2.yaml`        |
-| `Washington (us-east)`   | `https://assets.us-east.logging.cloud.ibm.com/clients/logdna-agent-v2.yaml`       |
-{: caption="Table 2. Yamls when your account uses public endpoints" caption-side="top"}
-{: #yaml-table-2}
-{: tab-title="Account that uses public endpoints"}
-{: tab-group="agent"}
-{: class="simple-tab-table"}
-{: row-headers}
-
-| Location                 | Default yaml file                                 | 
-|--------------------------|----------------------------------------------------|
-| `Chennai (in-che)`       | `https://assets.in-che.logging.cloud.ibm.com/clients/logdna-agent-v2-private.yaml`       |
-| `Dallas (us-south)`      | `https://assets.us-south.logging.cloud.ibm.com/clients/logdna-agent-v2-private.yaml`       |
-| `Frankfurt (eu-de)`      | `https://assets.eu-de.logging.cloud.ibm.com/clients/logdna-agent-v2-private.yaml`         |
-| `London (eu-gb)`         | `https://assets.eu-gb.logging.cloud.ibm.com/clients/logdna-agent-v2-private.yaml`          |
-| `Tokyo (jp-tok)`         | `https://assets.jp-tok.logging.cloud.ibm.com/clients/logdna-agent-v2-private.yaml`       |
-| `Seoul (kr-seo)`         | `https://assets.kr-seo.logging.cloud.ibm.com/clients/logdna-agent-v2-private.yaml` |
-| `Sydney (au-syd)`        | `https://assets.au-syd.logging.cloud.ibm.com/clients/logdna-agent-v2-private.yaml`        |
-| `Washington (us-east)`   | `https://assets.us-east.logging.cloud.ibm.com/clients/logdna-agent-v2-private.yaml`       |
-{: caption="Table 3. Yamls when your account uses private endpoints" caption-side="top"}
-{: #yaml-table-3}
-{: tab-title="Account that uses private endpoints"}
-{: tab-group="agent"}
-{: class="simple-tab-table"}
-{: row-headers}
-
 
 If you have a highly regulated environment, you can customize the yaml file. You can modify the yaml file so that it pulls from the {{site.data.keyword.registrylong_notm}} global repository `icr.io/ext/` the image that you specify, for example, `image: icr.io/ext/logdna-agent:2.1.8`. Consider keeping a copy of the customized yaml file in a version control system.
 {: important}

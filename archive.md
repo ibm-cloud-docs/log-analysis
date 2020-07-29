@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2020
-lastupdated: "2020-07-02"
+lastupdated: "2020-07-29"
 
 keywords: LogDNA, IBM, Log Analysis, logging, archive logs, COS, cloud object storage
 
@@ -33,24 +33,13 @@ To configure archiving, you must have an IAM policy with platform role **Viewer*
 
 You archive logs from an {{site.data.keyword.la_full_notm}} instance into a bucket in an {{site.data.keyword.cos_full_notm}} (COS) instance. Each {{site.data.keyword.la_full_notm}} instance has its own archiving configuration. 
 
-Logs are automatically archived in a compressed format **(.json.gz)**. Each line preserves its metadata.
+* Logs are automatically archived in a compressed format **(.json.gz)**. Each line preserves its metadata.
 
-Logs are archived 24 - 48 hours after you save the configuration. 
+* Logs are archived 24 - 48 hours after you save the configuration. 
 
-Logs are archived hourly. 
+* Logs are archived daily. 
 
-The name of the file has the following format:
-
-```
- year=YYYY/month=MM/day=DD/<accountID>.<YYYY>-<MM>-<DD>.<HH>00.json.gz 
- ```
-{: codeblock}
-
-Where `HH` is hours in 24 format and `accountID` corresponds to the LogDNA instance ID. You can get the LogDNA instance ID from the URL that you get when you launch the LogDNA web UI. 
-
-For example, an archive file can have the following name: `2020/03/18/0f6efbewe6.2020-03-18.1800.json.gz`
-
-Logs that are included in a file correspond to the period of time that is indicated as part of the name of the file. 
+* Logs that are included in a file correspond to the period of time that is indicated as part of the name of the file. 
 
 * The timestamp that is used to determine whether the log record is included in an archive is the UTC timestamp.
 

@@ -67,7 +67,7 @@ IBM Log Analysis with LogDNA
         detach_agent.md
         exclude_logs_from_agent.md
         adding_tags.md
-        update_agent_kube_cluster.md
+        upgrade_logdna_agent_2.md
         tutorials/kube_reset_ingestion.md
 
     {: .topicgroup}
