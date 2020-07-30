@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2020
-lastupdated: "2020-05-11"
+lastupdated: "2020-07-30"
 
 keywords: LogDNA, IBM, Log Analysis, logging, update LogDNA agent
 
@@ -27,7 +27,7 @@ subcollection: Log-Analysis-with-LogDNA
 If your Kubernetes cluster version is 1.9+, you can upgrade the LogDNA agent to version 2.
 {:shortdesc}
 
-When you upgrade the version of the agent, some logs may not be collected or duplicated depending on the period of time that you take to delete the LogDNA agent version 1 and deploy the LogDNA agent version 2 in the cluster.
+When you upgrade the version of the agent, some logs may not be collected or duplicated depending on the period of time that you take to delete the current LogDNA Agent and deploy a new version of the LogDNA Agent in the cluster.
 {: important}
 
 Complete the following steps from the command line to upgrade the LogDNA agent version that is deployed in your Kubernetes cluster:
