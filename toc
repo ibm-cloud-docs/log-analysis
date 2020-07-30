@@ -58,12 +58,14 @@ IBM Log Analysis with LogDNA
 
     {: .topicgroup}
     LogDNA agent
+        logdna_agent_image.md
         config_agent_kube_cluster.md
         config_agent_os_cluster.md
         config_agent_linux.md
+        detach_agent.md
         exclude_logs_from_agent.md
         adding_tags.md
-        detach_agent.md
+        upgrade_logdna_agent_2.md
 
     {: .topicgroup}
     View logs
