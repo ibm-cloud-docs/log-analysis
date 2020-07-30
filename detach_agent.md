@@ -33,9 +33,81 @@ Detach a LogDNA agent from a logging instance to stop collecting logs.
 
 To stop your Kubernetes cluster from sending logs to your {{site.data.keyword.la_full_notm}} instance, you must remove the LogDNA agent from your cluster. 
 
-### Detaching a LogDNA agent from a standard Kubernetes cluster by using kubectl commands
-{: #detach_agent_kube_kubectl}
 
+### Detaching a LogDNA agent version 2 from a standard Kubernetes cluster by using kubectl commands
+{: #detach_agent_kube_kubectl_v2}
+
+To stop your Kubernetes cluster from forwarding logs to your LogDNA instance, complete the following steps from the command line:
+
+1. Open a terminal. Then, [log in to the {{site.data.keyword.cloud_notm}}](https://cloud.ibm.com/login){: external}, and follow the prompts.
+
+    Select the account where you provisioned the {{site.data.keyword.la_full_notm}} instance.
+
+2. Set up the cluster environment. Run the following commands:
+
+    First, get the command to set the environment variable and download the Kubernetes configuration files.
+
+    ```
+    ibmcloud ks cluster config --cluster <cluster_name_or_ID>
+    ```
+    {: codeblock}
+
+3. Remove the secret from your Kubernetes cluster. The Kubernetes secret contains the LogDNA ingestion key. Run the following command:
+
+    ```
+    kubectl delete secret logdna-agent-key -n ibm-observe
+    ```
+    {: codeblock}
+
+4. Remove the LogDNA agent on every worker(node) of your Kubernetes cluster. Run one of the following commands:
+
+
+| Location                  | Command (By using public endpoints)               | 
+|--------------------------|----------------------------------------------------|
+| `Chennai (in-che)`       | `kubectl delete -f https://assets.in-che.logging.cloud.ibm.com/clients/agent-resources.yaml`       |
+| `Dallas (us-south)`      | `kubectl delete -f https://assets.us-south.logging.cloud.ibm.com/clients/agent-resources.yaml`       |
+| `Frankfurt (eu-de)`      | `kubectl delete -f https://assets.eu-de.logging.cloud.ibm.com/clients/agent-resources.yaml`         |
+| `London (eu-gb)`         | `kubectl delete -f https://assets.eu-gb.logging.cloud.ibm.com/clients/agent-resources.yaml`          |
+| `Tokyo (jp-tok)`         | `kubectl delete -f https://assets.jp-tok.logging.cloud.ibm.com/clients/agent-resources.yaml`       |
+| `Seoul (kr-seo)`         | `kubectl delete -f https://assets.kr-seo.logging.cloud.ibm.com/clients/agent-resources.yaml` |
+| `Sydney (au-syd)`        | `kubectl delete -f https://assets.au-syd.logging.cloud.ibm.com/clients/agent-resources.yaml`        |
+| `Washington (us-east)`   | `kubectl delete -f https://assets.us-east.logging.cloud.ibm.com/clients/agent-resources.yaml`       |
+{: caption="Table 1. Commands by location when you use public endpoints" caption-side="top"}
+{: #agent-table-1}
+{: tab-title="Command (By using public endpoints)"}
+{: tab-group="agent1"}
+{: class="simple-tab-table"}
+{: row-headers}
+
+| Location                  | Command (By using private endpoints)               | 
+|--------------------------|----------------------------------------------------|
+| `Chennai (in-che)`       | `kubectl delete -f https://assets.in-che.logging.cloud.ibm.com/clients/agent-resources-private.yaml`   |
+| `Dallas (us-south)`      | `kubectl delete -f https://assets.us-south.logging.cloud.ibm.com/clients/agent-resources-private.yaml` |
+| `Frankfurt (eu-de)`      | `kubectl delete -f https://assets.eu-de.logging.cloud.ibm.com/clients/agent-resources-private.yaml`    |
+| `London (eu-gb)`         | `kubectl delete -f https://assets.eu-gb.logging.cloud.ibm.com/clients/agent-resources-private.yaml`    |
+| `Tokyo (jp-tok)`         | `kubectl delete -f https://assets.jp-tok.logging.cloud.ibm.com/clients/agent-resources-private.yaml`   |
+| `Seoul (kr-seo)`         | `kubectl delete -f https://assets.kr-seo.logging.cloud.ibm.com/clients/agent-resources-private.yaml`   |
+| `Sydney (au-syd)`        | `kubectl delete -f https://assets.au-syd.logging.cloud.ibm.com/clients/agent-resources-private.yaml`   |
+| `Washington (us-east)`   | `kubectl delete -f https://assets.us-east.logging.cloud.ibm.com/clients/agent-resources-private.yaml`  |
+{: caption="Table 2. Commands by location when you use private endpoints" caption-side="top"}
+{: #agent-table-2}
+{: tab-title="Command (By using private endpoints)"}
+{: tab-group="agent1"}
+{: class="simple-tab-table"}
+{: row-headers}
+
+
+To verify that the LogDNA agent is deleted successfully, run the following command:
+
+```
+kubectl get pods -n ibm-observe
+```
+{: codeblock}
+
+You should not see any LogDNA pods.
+
+### Detaching a LogDNA agent version 1 from a standard Kubernetes cluster by using kubectl commands
+{: #detach_agent_kube_kubectl_v1}
 
 To stop your Kubernetes cluster from forwarding logs to your LogDNA instance, complete the following steps from the command line:
 
@@ -66,14 +138,16 @@ To stop your Kubernetes cluster from forwarding logs to your LogDNA instance, co
     ```
     {: codeblock}
 
-5. Verify that the LogDNA agent is deleted successfully. Run the following command:
 
-    ```
-    kubectl get pods -n ibm-observe
-    ```
-    {: codeblock}
 
-    You should not see any LogDNA pods.
+To verify that the LogDNA agent is deleted successfully, run the following command:
+
+```
+kubectl get pods -n ibm-observe
+```
+{: codeblock}
+
+You should not see any LogDNA pods.
 
 
 
