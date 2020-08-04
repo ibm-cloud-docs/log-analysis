@@ -263,19 +263,6 @@ The following table lists custom fields that are included in these events:
 
 
 
-### Screens
-{: #at_events_data_screens}
-
-| Action                     | Description                |
-|----------------------------|----------------------------|
-| `logdna.screen.create`      | This event is generated when a screen is created. |
-| `logdna.screen.update`      | This event is generated when a screen is updated. |
-| `logdna.screen.delete`      | This event is generated when a screen is deleted. |
-{: caption="Table 19. Events for alerts" caption-side="top"} 
-
-
-
-
 
 ## Viewing events
 {: #at_events_ui}
