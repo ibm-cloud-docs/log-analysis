@@ -13,6 +13,7 @@ IBM Log Analysis with LogDNA
         config_svc_logs.md
         cloud_services.md
         cloud_services_locations.md
+        cloud_services_msg_prefix.md
 
     {: .topicgroup}
     Logging Infrastructure services
