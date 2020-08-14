@@ -1,13 +1,11 @@
 ---
-
 copyright:
   years: 2018, 2020
-lastupdated: "2020-03-25"
+lastupdated: "2020-08-14"
 
 keywords: LogDNA, IBM, Log Analysis, logging, disaster recovery, ha, high availability, redundancy
 
-subcollection: subcollection: Log-Analysis-with-LogDNA
-
+subcollection: Log-Analysis-with-LogDNA
 
 ---
 
@@ -45,6 +43,7 @@ The following table lists the high-availability (HA) status for the regions (loc
 
 | Geography             | Region                   | EU-Supported | HA Status |
 |-----------------------|--------------------------|--------------|-----------|
+| `Asia Pacific`        |	`Chennai (in-che)`       | `N/A`        | `SZR`     |
 | `Asia Pacific`        | `Tokyo (jp-tok)`         | `N/A`        | `MZR`     |
 | `Asia Pacific`        | `Seoul (kr-seo)`         | `N/A`        | `SZR`     |
 | `Asia Pacific`        | `Sydney (au-syd)`        | `N/A`        | `MZR`     |
@@ -71,7 +70,7 @@ Where
 ## Availability of a logging instance
 {: #ha-dr-region}
 
-When you provision a logging instance, you select the MZR (location) where the instance is created. The region determines where the logging data is processed and the data is hosted. 
+When you provision a logging instance, you select the location where the instance is created. The region determines where the logging data is processed and the data is hosted. 
 
 A multizone region (MZR) consist of 3 or more availability zones that are independent from each other to ensure that single failure events affect only a single zone.
 
@@ -119,7 +118,7 @@ If you have deployed LogDNA agents on your systems, and those systems are not im
     Using access groups to manage permissions to work with a LogDNA logging instance, reduces the amount of work that you might have to do to set the correct policies and users to work with a new instance. Information about access groups is global and not region based.
     {: tip}
 
-4. Launch the LogDNA instance and import the views, alerts, dashboards, screens, and templates.
+4. Launch the LogDNA instance and import the views, alerts, dashboards, screens, templates, and exclusion rules.
 
 
 
