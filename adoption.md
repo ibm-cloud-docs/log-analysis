@@ -608,7 +608,7 @@ In COS, you can define policies to control the permissions that are granted to s
 ### EU supported account
 {: #adoption_archive_5}
 
-When you archive logs from the Frankfurt LogDNA instance to {an {{site.data.keyword.cos_full_notm}} (COS) bucket, consider the following information:
+When you archive logs from the Frankfurt LogDNA instance to an {{site.data.keyword.cos_full_notm}} (COS) bucket, consider the following information:
 * When you provision an instance of the COS service, this instance is a global one in your account. It is not region bound.
 * You must configure a bucket that complies with the EU-Supported and GDPR regulations. For the list of COS EU-supported endpoints, see [EU-supported endpoints](/docs/cloud-object-storage?topic=cloud-object-storage-endpoints#endpoints-eu-managed).
 

@@ -64,8 +64,10 @@ Where
 
 * `N/A` means feature that is not applicable to that geography.
 * `MZR` means multi-zone region. [Learn more](/docs/overview?topic=overview-locations#mzr-table).
+* `SZR` means single-zone region. [Learn more](/docs/overview?topic=overview-locations#szr-table).
 
- 
+
+
 
 ## Availability of a logging instance
 {: #ha-dr-region}
@@ -82,7 +84,7 @@ By default, each logging instance consist of 3 zones, one primary zone and two s
 
 The MZR architecture offers automatic failover between 2 zones, and high availability for a logging instance withing a region.
 
-
+The SZR architecture offers failover across 3 distinct systems within the single datacenter so that you get high availability from a system failure, but not from a datacenter failure.
 
 ## Disaster recovery (DR) of the logging service in a region
 {: #dr}
@@ -94,7 +96,7 @@ Disaster recovery is about surviving a catastrophic failure or loss of availabil
 If a regional disaster occurs, consider the following information:
 * Log data and the logging metadata such as dashboards, alerts, views, screens, templates are backed up every 24 hours. In the event of an un-recoverable disaster, up to 24 hours of data and metadata changes to the logging instance in the failure region can be lost.
 * The estimated recovery time for rebuilding the regional site and restoring the service at another location is 24 hours.
-* Due to the large volume of data, older data might not be available at the time the service is restored, as this process requires additional time to recover data from the backups.  
+* Older data will not be available when the service is restored. If you need access to older data, you can access your archive data directly in {{site.data.keyword.cos_full_notm}} or use the {{site.data.keyword.sqlquery_short}} service to access it.  
 * You might have 1 or more logging instances in the region. When these service instances are available in the new location, you will be able to use them while the data is restored into the newly constructed region.
 * You will have to update the endpoints of applications and LogDNA agents to point to the ingestion endpoint in the new location. 
 
