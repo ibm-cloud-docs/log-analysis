@@ -212,7 +212,6 @@ The following table lists custom fields that are included in these events:
 | `requestData.apps`    | Defines the list of apps that are selected and whose data is included in the view. |
 | `requestData.levels`  | Defines the list of levels that are selected and whose data is included in the view. |
 | `requestData.category` | Defines the category where the view is included. |
-| `requestData.normalized` |  |
 | `requestData.viewId`   | Defines the view ID. |
 | `requestData.description` | Describes the view. | 
 | `requestData.customLine` | Describes how the information is displayed in the view. |

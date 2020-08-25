@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2020
-lastupdated: "2020-07-28"
+lastupdated: "2020-08-25"
 
 keywords: LogDNA, IBM, Log Analysis, logging, services
 
@@ -28,20 +28,6 @@ subcollection: Log-Analysis-with-LogDNA
 
 List of locations where {{site.data.keyword.cloud_notm}} services are enabled to send logs to {{site.data.keyword.la_full_notm}}. You monitor these logs that you monitor through the {{site.data.keyword.la_short}} instance that is configured to receive platform services logs. [Learn more about enabling service platform logs](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-config_svc_logs).
 {:shortdesc}
-
-
-## Analytics services
-{: #cs_locations_analytics}
-
-You can choose the LogDNA instance where you want to collect {{site.data.keyword.iae_full_notm}} service logs.
-
-
-
-## Blockchain services
-{: #cs_locations_blockchain}
-
-You can choose the LogDNA instance where you want to collect {{site.data.keyword.blockchainfull_notm}} service logs.
-
 
 
 ## Cloud Foundry

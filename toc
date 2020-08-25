@@ -9,14 +9,20 @@ IBM Log Analysis with LogDNA
     logdna_agent.md
 
     {: .topicgroup}
-    Logging IBM Cloud services
-        config_svc_logs.md
-        cloud_services.md
-        cloud_services_locations.md
-        cloud_services_msg_prefix.md
+    Cloud services
+
+        {: .topicgroup}
+        Platform logs
+            config_svc_logs.md
+            cloud_services.md
+            cloud_services_locations.md
+
+        {: .topicgroup}
+        Logs 
+            cloud_services_agent.md
 
     {: .topicgroup}
-    Logging Infrastructure services
+    Infrastructure services
         monitor_cfapp_logs.md
         kube.md
         ubuntu.md
@@ -94,6 +100,7 @@ IBM Log Analysis with LogDNA
     regions.md
     service_plans.md
     shared-responsibilities.md
+    cloud_services_msg_prefix.md
     [LogDNA Product Page](https://logdna.com/)
     [LogDNA Documentation](https://docs.logdna.com/docs)
     [LogDNA Blog](https://blog.logdna.com/)
