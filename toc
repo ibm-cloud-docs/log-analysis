@@ -12,20 +12,20 @@ IBM Log Analysis with LogDNA
     Cloud services
 
         {: .topicgroup}
-        Platform logs
+        Infrastructure services
+            monitor_cfapp_logs.md
+            kube.md
+            ubuntu.md
+
+        {: .topicgroup}
+        Services that send logs to a Platform logs instance
             config_svc_logs.md
             cloud_services.md
             cloud_services_locations.md
 
         {: .topicgroup}
-        Logs 
+        Services that send logs to a configurable logging instance 
             cloud_services_agent.md
-
-    {: .topicgroup}
-    Infrastructure services
-        monitor_cfapp_logs.md
-        kube.md
-        ubuntu.md
 
     {: .topicgroup}
     Security and compliance
