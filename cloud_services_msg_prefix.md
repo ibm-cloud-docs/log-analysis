@@ -40,9 +40,9 @@ Notice that there is only 1 instance per location with the flag **Platform logs*
 
 The following table lists Cloud services that send logs to {{site.data.keyword.la_full_notm}}:
 
-| Service     | Description |  More info 
+| Service     | Description | Prefix    |
 |-------------|-------------|--------------------------------------------------------------------------------------------|
-| [{{site.data.keyword.iae_full_notm}}](/docs/AnalyticsEngine?topic=AnalyticsEngine-getting-started) | {{site.data.keyword.iae_full_notm}} provides a flexible framework to develop and deploy analytics applications in Apache Hadoop and Apache Spark. | [More info](/docs/AnalyticsEngine?topic=AnalyticsEngine-log-aggregation#reconfiguring-log-aggregation) | 
+| [{{site.data.keyword.iae_full_notm}}](/docs/AnalyticsEngine?topic=AnalyticsEngine-getting-started) | {{site.data.keyword.iae_full_notm}} provides a flexible framework to develop and deploy analytics applications in Apache Hadoop and Apache Spark. |  | 
 {: caption="Table 1. List of Blockchain services" caption-side="top"} 
 
 To see the list of {{site.data.keyword.la_full_notm}} locations where these services send logs, see [Analytics services](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-cloud_services_locations#cs_locations_analytics).

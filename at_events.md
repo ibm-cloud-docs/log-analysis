@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2020
-lastupdated: "2020-08-14"
+lastupdated: "2020-08-25"
 
 keywords: LogDNA, IBM, Log Analysis, logging, audit, activity tracker, events, auditlogs, security
 
@@ -38,23 +38,26 @@ As a security officer, auditor, or manager, you can use the Activity Tracker ser
 ## Management events
 {: #at_events_mgt}
 
+
 ### Account settings
 {: #at_events_acc_settings}
 
 | Action                                            | Description                |
 |---------------------------------------------------|----------------------------|
-| `logdna.account-archive-setting.configure`        | This event is generated when an administrator turns on or off the archiving feature in a LogDNA instance. |
-| `logdnaat.account-export-setting.configure`       | This event is generated when an administrator turns on or off the export feature for a LogDNA instance. |
+| `logdna.account.update  `       | This event is generated when an administrator turns on or off a feature for a LogDNA instance. |
 {: caption="Table 1. Events for account settings actions" caption-side="top"} 
 
 The following table lists custom fields that are included in these events:
 
 | Custom fields                      | Valid values         | Description                |
 |------------------------------------|----------------------|----------------------------|
-| `requestData.feature`              | `archive` </br>`export`  | Defines a LogDNA administrative feature. |
-| `requestData.isEnabled`            | `false` </br>`true`  | Defines if archiving of the LogDNA instance to a COS bucket is configured. </br>When is set to `true`, archiving is enabled.  |
+| `requestData.owneremail`        | `xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx@logdna.ibm.com`  | Defines a LogDNA account. |
+| `requestData.type`              | `meta.addrawline` | Defines a LogDNA administrative feature. |
+| `requestData.value `            | `false` </br>`true`  | When is set to `true`, the feature specified in the field `requestData.type` is enabled.  |
 | `responseData.logdnaId`            | Sample `3a941d8ert`  | Defines the LogDNA ID that is associated with the {{site.data.keyword.la_full_notm}} instance. | 
 {: caption="Table 2. Custom fields for account settings actions" caption-side="top"} 
+
+
 
 ### Archiving
 {: #at_events_archive}
@@ -62,20 +65,16 @@ The following table lists custom fields that are included in these events:
 
 | Action                                            | Description                |
 |---------------------------------------------------|----------------------------|
-| `logdna.instance-archiving-configuration.create`  | This event is generated when an administrator configures archiving for a LogDNA instance. |
-| `logdna.instance-archiving-configuration.update`  | This event is generated when an administrator updates the archiving configuration for a LogDNA instance. |
+| `logdna.archive-configuration.update`  | This event is generated when an administrator enables, diables, or updates the archiving configuration for a LogDNA instance. |
 {: caption="Table 3. Events for archiving actions" caption-side="top"} 
 
 The following table lists custom fields that are included in these events:
 
 | Custom fields                      | Valid values         | Description                |
 |------------------------------------|----------------------|----------------------------|
-| `requestData.feature`              | `archive` </br>`export` </br>            | Defines a LogDNA administrative feature. |
+| `requestData.feature`              | `archive`            | Defines a LogDNA administrative feature. |
 | `requestData.isEnabled`            | `false` </br>`true`  | Defines if archiving of the LogDNA instance to a COS bucket is configured. </br>When is set to `true`, archiving is enabled.  |
 | `requestData.provider`             | `ibm`                | Defines the Cloud provider where data is archived. |
-| `requestData.bucketName`           |
-| `requestData.archiveInstanceId`    |
-| `requestData.archiveEndpoint`      |
 | `responseData.logdnaId`            | Sample `3a941d8ert`  | Defines the LogDNA ID that is associated with the {{site.data.keyword.la_full_notm}} instance. | 
 {: caption="Table 4. Custom fields for archiving actions" caption-side="top"} 
 
@@ -85,7 +84,6 @@ The following table lists custom fields that are included in these events:
 
 | Action                              | Description                |
 |-------------------------------------|----------------------------|
-| `logdnaat.exclusion-rule.configure` | This event is generated when an administrator enables or disables an exclusion rule. |
 | `logdna.exclusion-rule.create`      | This event is generated when an administrator creates an exclusion rule through the LogDNA web UI. |
 | `logdna.exclusion-rule.update`      | This event is generated when an administrator updates an exclusion rule through the LogDNA web UI. |
 | `logdna.exclusion-rule.delete`      | This event is generated when an administrator deletes an exclusion rule through the LogDNA web UI. |
@@ -151,7 +149,6 @@ The following table lists custom fields that are included in these events:
 
 | Action                                | Description                |
 |---------------------------------------|----------------------------|
-| `logdnaat.parsing-template.configure` | This event is generated when a parsing template is enabled or disabled. |
 | `logdna.parsing-template.create`      | This event is generated when an administrator creates a parsing template through the LogDNA web UI. |
 | `logdna.parsing-template.update`      | This event is generated when an administrator updates a parsing template through the LogDNA web UI. |
 | `logdna.parsing-template.delete`      | This event is generated when an administrator deletes a parsing template through the LogDNA web UI. |
@@ -161,10 +158,11 @@ The following table lists custom fields that are included in these events:
 
 | Custom fields                | Description          | 
 |------------------------------|----------------------|
-| `feature`                    | Defines a LogDNA administrative feature. </br>Valid value is `custom-parsing`. |
-| `templateId`                 | Defines the ID of the template. |
-| `isEnabled`                  | Defines when the template is enabled. </br>Set to `true` when the template is enabled. |
-| `requestData.name`           | Defines the name of the template. |
+| `requestData.feature`        | Defines a LogDNA administrative feature. </br>Valid value is `custom-parsing`. |
+| `requestData.isEnabled`      | Defines when the template is enabled. </br>Set to `true` when the template is enabled. |
+| `requestData.name`           | Defines the name of the template. </br>This field is available for create actions.|
+| `requestData.query`          | Defines the query that is configured to identify log lines where the custome parsing is applied. |
+| `requestData.templateId`     | Defines the ID of the template. </br>This field is available for update actions. |
 | `responseData.logdnaId`      | Defines the LogDNA ID that is associated with the {{site.data.keyword.la_full_notm}} instance. | 
 {: caption="Table 11. Custom fields for parsing templates actions" caption-side="top"} 
 
@@ -216,16 +214,14 @@ The following table lists custom fields that are included in these events:
 | `requestData.category` | Defines the category where the view is included. |
 | `requestData.normalized` |  |
 | `requestData.viewId`   | Defines the view ID. |
-| `__v`                  |  |
 | `requestData.description` | Describes the view. | 
-| `requestData.customLine` |  |
-| `requestData.muteable`  |   |
+| `requestData.customLine` | Describes how the information is displayed in the view. |
 | `responseData.logdnaId`      | Defines the LogDNA ID that is associated with the {{site.data.keyword.la_full_notm}} instance. | 
 {: caption="Table 15. Custom fields for view actions" caption-side="top"} 
 
 
 
-### Alerts
+### Presets (alerts)
 {: #at_events_data_alerts}
 
 | Action                     | Description                |
@@ -235,6 +231,16 @@ The following table lists custom fields that are included in these events:
 | `logdna.alert.delete`      | This event is generated when an alert is deleted. |
 {: caption="Table 16. Events for alerts" caption-side="top"} 
 
+The following table lists custom fields that are included in these events:
+
+| Custom fields                | Description          | 
+|------------------------------|----------------------|
+| `requestData.alertId`   | Defines the preset ID. |
+| `requestData.name`    | Defines the name of the preset. |
+| `requestData.preset`  | Defines whether the alert is defined as a preset. |
+| `requestData.channels` | List of channels that are configured in a preset. Each channel includes information about the notification method and the trigger conditions per method. |
+| `responseData.logdnaId`      | Defines the LogDNA ID that is associated with the {{site.data.keyword.la_full_notm}} instance. | 
+{: caption="Table 17. Custom fields for view actions" caption-side="top"} 
 
 
 ### Dashboards
@@ -245,7 +251,7 @@ The following table lists custom fields that are included in these events:
 | `logdna.board.create`         | This event is generated when a dashboard is created. |
 | `logdna.board.delete`         | This event is generated when a dashboard is deleted. |
 | `logdna.board-graph.update`   | This event is generated when a graph is added to a dashboard. |
-{: caption="Table 17. Events for dashboards" caption-side="top"} 
+{: caption="Table 18. Events for dashboards" caption-side="top"} 
 
 
 The following table lists custom fields that are included in these events:
@@ -257,7 +263,7 @@ The following table lists custom fields that are included in these events:
 | `requestData.title`          | Defines the name of the dashboard. |
 | `requestData.graphId`        | Defines the ID of a graph that is added to a board. | 
 | `responseData.logdnaId`      | Defines the LogDNA ID that is associated with the {{site.data.keyword.la_full_notm}} instance. | 
-{: caption="Table 18. Custom fields for boards" caption-side="top"} 
+{: caption="Table 19. Custom fields for boards" caption-side="top"} 
 
 
 
@@ -272,9 +278,9 @@ Events that are generated by an instance of the {{site.data.keyword.la_full_notm
 
 
 
-
 ## Analyzing events
 {: #at_events_analyze}
 
+Activity Tracker events only report success outcomes.
 
-
+Activity Tracker events that report update actions do not include information about the delta of the change. 
