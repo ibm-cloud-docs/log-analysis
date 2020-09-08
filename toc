@@ -2,7 +2,7 @@
 {:topicgroup: .topicgroup}
 
 {: .toc subcollection="Log-Analysis-with-LogDNA" audience="service" category="logging_monitoring" href="/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-getting-started#getting-started" path="Log-Analysis-with-LogDNA"}
-IBM Log Analysis with LogDNA
+Log Analysis with LogDNA
 
     {: .navgroup id="learn"}
     getting-started.md
