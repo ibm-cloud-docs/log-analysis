@@ -1,7 +1,7 @@
 {:navgroup: .navgroup}
 {:topicgroup: .topicgroup}
 
-{: .toc subcollection="Log-Analysis-with-LogDNA" audience="service" category="logging_monitoring" href="/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-getting-started#getting-started" path="Log-Analysis-with-LogDNA"}
+{: .toc subcollection="Log-Analysis-with-LogDNA" audience="service" category="logging_monitoring" href="/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-getting-started#getting-started" console-page="/catalog/services/ibm-log-analysis-with-logdna" product-page="https://www.ibm.com/cloud/log-analysis" path="Log-Analysis-with-LogDNA"}
 IBM Log Analysis with LogDNA
 
     {: .navgroup id="learn"}
