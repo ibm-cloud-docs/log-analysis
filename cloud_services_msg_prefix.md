@@ -59,9 +59,10 @@ The following tables lists message ID prefixes for the different VPC infrastruct
 ## VPC infrastructure Gen 2
 {: #vpc_infrastructure_gen2}
 
-| Service     | CRN service name </br>`crn-service-name`  | Message ID format      |
-|-------------|-------------------------------------------|-------------------------------------|
-| `instance`  | `is.instance`                             | `<crn-service-name>.####<severity>` | 
+| Service     | CRN service name </br>`crn-service-name`  | Message ID format      | Sample |
+|-------------|-------------------------------------------|---------------------------|------------------|
+| [Dedicated host]()  | `is.dedicated-host`            | `<crn-service-name>.####<severity>` | `flow-log-collector.0001` |
+| [Flow Logs for VPC](/docs/vpc?topic=vpc-flow-logs)  | `is.flow-log-collector`       | `<crn-service-name>.####<severity>` | `is.dedicated-host.0001` |
 {: caption="Table 9. List of VPC infrastructure services (generation 1)" caption-side="top"} 
 
 
