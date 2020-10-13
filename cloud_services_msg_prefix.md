@@ -56,7 +56,7 @@ There are 2 types of VPC infrastructure that you can provision in your account:
 
 The following tables lists message ID prefixes for the different VPC infrastructure services that send logs to {{site.data.keyword.la_full_notm}}:
 
-## VPC infrastructure Gen 2
+### VPC infrastructure Gen 2
 {: #vpc_infrastructure_gen2}
 
 | Service     | CRN service name </br>`crn-service-name`  | Message ID format      | Sample |
