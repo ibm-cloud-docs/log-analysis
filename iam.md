@@ -55,8 +55,8 @@ To manage access or assign new access for users by using access groups, you must
 
 Choose any of the following actions to manage access groups in the {{site.data.keyword.cloud_notm}}:
 
-* [Creating an access group](/docs/iam?topic=iam-groups#create_ag).
-* [Assigning access to a group](/docs/iam?topic=iam-groups#access_ag).
+* [Creating an access group](/docs/account?topic=account-groups#create_ag).
+* [Assigning access to a group](/docs/account?topic=account-groups#access_ag).
 
 
 ## Managing access by assigning policies directly to users
@@ -66,10 +66,9 @@ To manage access or assign new access for users by using IAM policies, you must 
 
 Choose any of the following actions to manage IAM policies in the {{site.data.keyword.cloud_notm}}:
 
-* To modify the permissions of a user, see [Editing existing access](/docs/iam?topic=iam-iammanidaccser#edit_existing).
-* To grant permissions to a user, see [Assign new access](/docs/iam?topic=iam-iammanidaccser#assign_new_access).
-* To revoke permissions, see [Removing access](/docs/iam?topic=iam-iammanidaccser#removing_access).
-* To review a user's permissions, see [Reviewing your assigned access](/docs/iam?topic=iam-iammanidaccser#review_your_access).
+* To grant permissions to a user, see [Assign access](/docs/account?topic=account-assign-access-resources#assign_new_access).
+* To revoke permissions, see [Removing access](/docs/account?topic=account-assign-access-resources#removing_access).
+* To review a user's permissions, see [Reviewing your assigned access](/docs/account?topic=account-assign-access-resources#review_your_access).
 
 
 

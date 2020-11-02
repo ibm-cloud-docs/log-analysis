@@ -132,7 +132,7 @@ You must allow outgoing traffic on TCP port 443 and TCP port 80 in your firewall
 
 The API endpoint is required for LogDNA agent authentication. The LogDNA agent gets a token that you can use to send logs to the ingestion endpoint.
 
-If you configure the LogDNA agent to connect to the logging instance through the **private network**, open a support ticket to request the private IP addresses that you must enable in your firewall. For more information about opening an IBM support ticket, see [Getting support](/docs/get-support?topic=get-support-getting-customer-support#getting-customer-support).
+If you configure the LogDNA agent to connect to the logging instance through the **private network**, open a support ticket to request the private IP addresses that you must enable in your firewall. For more information about opening an IBM support ticket, see [Getting support](/docs/get-support).
 {: important}
 
 
