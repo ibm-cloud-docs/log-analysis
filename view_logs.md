@@ -93,7 +93,7 @@ At any time, you can view each log line in context.
 
 Complete the following steps: 
 
-1. Click the **Views** icon ![Configuration icon](images/views.png "Configuration icon").
+1. Click the **Views** icon ![Views icon](images/views.png "Views icon").
 2. Select **Everything** or a view.
 3. Identify a line in the log that you want to explore.
 4. Expand the log line. 
@@ -118,7 +118,7 @@ You can filter logs by log source, application, and log level.
 
 Complete the following steps to filter logs:
 
-1. Click the **Views** icon ![Configuration icon](images/views.png "Configuration icon").
+1. Click the **Views** icon ![Views icon](images/views.png "Views icon").
 2. Select **Everything** or a view.
 3. Expand **All Tags** to see the list of tags that are identified in the logs. Then, choose the ones that you want.
 4. Expand **All Sources** to see the list of log sources that are identified in the logs. Then, choose the ones that you want.
@@ -148,7 +148,7 @@ You can do simple searches (single term string search), compound search (multipl
 
 Complete the following steps to create a view:
 
-1. Click the **Views** icon ![Configuration icon](images/views.png "Configuration icon").
+1. Click the **Views** icon ![Views icon](images/views.png "Views icon").
 2. Select **Everything** or a view.
 3. Filter log data then click **Save as new view / alert**.
 
