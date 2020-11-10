@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2020
-lastupdated: "2020-10-27"
+lastupdated: "2020-11-04"
 
 keywords: LogDNA, IBM, Log Analysis, logging, getting started
 
@@ -90,10 +90,6 @@ The following figure shows the components comprising the {{site.data.keyword.la_
 1. [Check the regions where the {{site.data.keyword.la_full_notm}} service is available](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-regions).
 
 2. If you don't have an {{site.data.keyword.cloud_notm}} account, [register an {{site.data.keyword.cloud_notm}} account](https://cloud.ibm.com/login){: external}. You need an IBMid to work in {{site.data.keyword.cloud_notm}}.
-
-3. If you don't have a virtual private cloud, [use the {{site.data.keyword.cloud_notm}} console to create VPC resources](/docs/vpc?topic=vpc-creating-a-vpc-using-the-ibm-cloud-console).
-
-4. If you don't have an Ubuntu Linux virtual server instance, [create an Umbuntu Linux virtual server instance by using the UI and selecting **Ubuntu Linux** as the **Operating System**](https://cloud.ibm.com/docs/vpc?topic=vpc-creating-virtual-servers).
 
 ## Step 2. Get started
 {: #getting-started_step2}
