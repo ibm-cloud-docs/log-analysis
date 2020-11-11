@@ -41,7 +41,7 @@ The LogDNA agent is responsible for collecting and forwarding logs to your {{sit
 ### Image for Kubernetes clusters
 {: #logdna_agent_image_kube}
 
-LogDNA agent images for Kubernetes clusters are public images that are available in {{site.data.keyword.cloud_notm}} through the [{{site.data.keyword.registrylong_notm}}](/docs/Registry?topic=registry-getting-started) service. 
+LogDNA agent images for Kubernetes clusters are public images that are available in {{site.data.keyword.cloud_notm}} through the [{{site.data.keyword.registrylong_notm}}](/docs/Registry?topic=Registry-getting-started) service. 
 
 * The LogDNA agent images are hosted in the {{site.data.keyword.registrylong_notm}} global repository `icr.io/ext/logdna-agent`.
 

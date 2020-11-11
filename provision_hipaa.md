@@ -53,7 +53,7 @@ Accounts that enable the **HIPAA Supported setting** still have access to the fu
 ## Step 2. Provision your {{site.data.keyword.la_full_notm}} instances with the HIPAA service plan
 {: #compliance_hipaa_provision}
 
-The HIPAA plan allows a maximum of 25 team members per instance. If you need to grant permissions to more than 25 users, [open a support ticket](/docs/get-support?topic=get-support-getting-customer-support#getting-customer-support).
+The HIPAA plan allows a maximum of 25 team members per instance. If you need to grant permissions to more than 25 users, [open a support ticket](/docs/get-support).
 {: note}
 
 

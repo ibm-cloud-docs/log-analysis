@@ -102,8 +102,8 @@ You might have users across different geographies. However, to comply with EU la
 {: #manage_eu_logs_step5-1}
 
 To grant administrator permissions to users, complete the following steps:
-1. Create an access group, then add users to it. For example, create an access group named `logdna-eu-admins`. [Learn more](/docs/iam?topic=iam-groups#create_ag).
-2. [Assign access to a group](/docs/iam?topic=iam-groups#access_ag) by configuring policies.
+1. Create an access group, then add users to it. For example, create an access group named `logdna-eu-admins`. [Learn more](/docs/account?topic=account-groups#create_ag).
+2. [Assign access to a group](/docs/account?topic=account-groups#access_ag) by configuring policies.
 
     For example, you can add a policy to the access group for each instance of the {{site.data.keyword.la_full_notm}} service in Frankfurt. For each policy, select the platform role **administrator** if you want administrators of the logging service to be able to grant other users permissions to work with logging instances in Frankfurt. If you want to remove permissions to manage users to administrators of the logging service in your account, choose the platform role **editor**. Select the service role **manager**.
 
@@ -112,8 +112,8 @@ To grant administrator permissions to users, complete the following steps:
 {: #manage_eu_logs_step5-2}
 
 To grant viewer permissions to users, complete the following steps:
-1. Create an access group, then add users to it. For example, create an access group named `logdna-eu-users`. [Learn more](/docs/iam?topic=iam-groups#create_ag).
-2. [Assign access to a group](/docs/iam?topic=iam-groups#access_ag) by configuring policies.
+1. Create an access group, then add users to it. For example, create an access group named `logdna-eu-users`. [Learn more](/docs/account?topic=account-groups#create_ag).
+2. [Assign access to a group](/docs/account?topic=account-groups#access_ag) by configuring policies.
 
     For example, you can add a policy to the access group for each instance of the {{site.data.keyword.la_full_notm}} service in Frankfurt. For each policy, select the platform role **viewer** to grant users permissions to view logs. Select the service role **reader**.
 

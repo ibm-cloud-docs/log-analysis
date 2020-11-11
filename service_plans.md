@@ -38,7 +38,7 @@ Different pricing plans are available that you can choose for an {{site.data.key
 | `Lite`                          | Data is not available for search                | 1                        | abcf7f02-de22-4c7f-98a1-e8a592093d83 |
 {: caption="Table 1. List of service plans" caption-side="top"} 
 
-`[1]` To enable the HIPAA plan in your account, you must [open a support ticket](/docs/get-support?topic=get-support-getting-customer-support#getting-customer-support). 
+`[1]` To enable the HIPAA plan in your account, you must [open a support ticket](/docs/get-support). 
 
 {{site.data.keyword.la_full_notm}} offers a `Lite` plan that you can use to view your logs as they pass through the system. You can view logs by using log tailing. You can also design filters to prepare for upgrading to a longer retention period plan. This plan has a 0-day retention period.
 
