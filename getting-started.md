@@ -71,7 +71,7 @@ An {{site.data.keyword.la_full_notm}} instance is provisioned within the context
 
 After provisioning an instance of {{site.data.keyword.la_full_notm}}, an account is created in LogDNA, and you receive the ingestion key for your account.
 
-Af you have your ingestion key, you can configure your log sources:
+After you have your ingestion key, you can configure your log sources:
 
 * You can enable a LogDNA instance per region to host logs from enabled {{site.data.keyword.cloud_notm}} services. For example, to collect logs from an {{site.data.keyword.ibmcf_notm}} app, you can enable the *service platform logs* flag. [Learn more](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-config_svc_logs). When this feature is enabled, logs are collected automatically.
 * You can configure a LogDNA agent for a log source. A log source is a Cloud or on-prem resource that generates logs. For example, a log source can be a Kubernetes cluster. You use the ingestion key to configure the LogDNA agent that is responsible for collecting and forwarding logs to your {{site.data.keyword.la_full_notm}} instance. After the LogDNA agent is deployed in a log source, logs are collected and forwarded automatically to the {{site.data.keyword.la_full_notm}} instance. [Learn more](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-logdna_agent).

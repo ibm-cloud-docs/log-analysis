@@ -49,7 +49,7 @@ In this tutorial, you will learn how to configure an Ubuntu server to forward lo
 
 Read about {{site.data.keyword.la_full_notm}}. For more information, see [About](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-getting-started#getting-started_ov).
 
-Work in a [supported region](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-regions). You can send data from an Ubuntu instance that is located in the same region or in a different region. 
+Work in a [supported region](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-regions). You can send data from an Ubuntu instance that is located in the same region, in a different region, or not in the {{site.data.keyword.cloud_notm}}. 
 
 Use a user ID that is a member, or an owner of, an {{site.data.keyword.cloud_notm}} account. To get an {{site.data.keyword.cloud_notm}} {{site.data.keyword.IBM_notm}}ID, go to: [Create an account](https://cloud.ibm.com/login){: external}.
 
