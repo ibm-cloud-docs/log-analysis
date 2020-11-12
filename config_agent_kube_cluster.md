@@ -238,7 +238,7 @@ kubectl get all -n ibm-observe
 {: pre}
 
 ```
-kubectl get pods
+kubectl get pods -n ibm-observe
 ```
 {: pre}
 
