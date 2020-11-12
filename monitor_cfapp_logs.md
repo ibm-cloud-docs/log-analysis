@@ -67,8 +67,8 @@ The following table summarizes the different methods that you can use to collect
 
 | CF resource              | Through the service platform logs logging instance in a region | Through a custom logging instance by using Syslog drains       |
 |--------------------------|:--------------------------------------------------:|:--------------------------------------------------:|
-| `CF infrastructure logs` | ![Checkmark icon](images/checkmark.svg)  | `NO`                                               |
-| `CF app logs`            | ![Checkmark icon](images/checkmark.svg)  | ![Checkmark icon](images/checkmark.svg)  |
+| `CF infrastructure logs` | ![Checkmark icon](images/checkmark-icon.svg)  | `NO`                                               |
+| `CF app logs`            | ![Checkmark icon](images/checkmark-icon.svg)  | ![Checkmark icon](images/checkmark-icon.svg)  |
 {: caption="Table 1. Information about the methods that can be adopted to monitor CF resource logs in {{site.data.keyword.cloud_notm}} public" caption-side="top"}
 {: #end-api-table-1}
 {: tab-title="Monitor CF resources in IBM Cloud Public"}
@@ -79,7 +79,7 @@ The following table summarizes the different methods that you can use to collect
 | CF resource              | Through the service platform logs logging instance in a region | Through a custom logging instance by using Syslog drains       |
 |--------------------------|:--------------------------------------------------:|:--------------------------------------------------:|
 | `CF infrastructure logs` | `NO`                                               | `NO`                                               |
-| `CF app logs`            | `NO`                                               | ![Checkmark icon](images/checkmark.svg)  |
+| `CF app logs`            | `NO`                                               | ![Checkmark icon](images/checkmark-icon.svg)  |
 {: caption="Table 2. Information about the methods that can be adopted to monitor CF resource logs in {{site.data.keyword.cloud_notm}} dedicated" caption-side="top"}
 {: #end-api-table-2}
 {: tab-title="Monitor CF resources in IBM Cloud Dedicated"}
@@ -90,7 +90,7 @@ The following table summarizes the different methods that you can use to collect
 | CF resource              | Through the service platform logs logging instance in a region | Through a custom logging instance by using Syslog drains       |                                     
 |--------------------------|:--------------------------------------------------:|:--------------------------------------------------:|
 | `CF infrastructure logs` | `NO`                                               | `NO`                                               |
-| `CF app logs`            | `NO`                                               | ![Checkmark icon](images/checkmark.svg)  |
+| `CF app logs`            | `NO`                                               | ![Checkmark icon](images/checkmark-icon.svg)  |
 {: caption="Table 3. Information about the methods that can be adopted to monitor CF resource logs in {{site.data.keyword.cloud_notm}} on-premisses" caption-side="top"}
 {: #end-api-table-3}
 {: tab-title="Monitor CF resources outside {{site.data.keyword.cloud_notm}}"}
@@ -109,13 +109,13 @@ You have different options to collect and forward logs to an instance of the {{s
 
 | Comparison                                    | Through the logging instance that hosts service platform logs in a region | Through a custom logging instance by using Syslog drains       |
 |:----------------------------------------------|:--------------------------------------------------------------:|:--------------------------------------------------:|
-| `Automatic collection of infrastructure logs` | ![Checkmark icon](images/checkmark.svg)              | `NO`                                               |
-| `Automatic collection of CF app logs`         | ![Checkmark icon](images/checkmark.svg)              | ![Checkmark icon](images/checkmark.svg)  |
-| `CF app sends logs to STDOUT and STDERR`      | ![Checkmark icon](images/checkmark.svg)              | ![Checkmark icon](images/checkmark.svg)  |
+| `Automatic collection of infrastructure logs` | ![Checkmark icon](images/checkmark-icon.svg)              | `NO`                                               |
+| `Automatic collection of CF app logs`         | ![Checkmark icon](images/checkmark-icon.svg)              | ![Checkmark icon](images/checkmark-icon.svg)  |
+| `CF app sends logs to STDOUT and STDERR`      | ![Checkmark icon](images/checkmark-icon.svg)              | ![Checkmark icon](images/checkmark-icon.svg)  |
 | `CF app sends logs via syslog`                | `NO`                                                           | `NO`                                               |
-| `Load balanced ingestion requests`            | ![Checkmark icon](images/checkmark.svg)              | `NO`                                               |
-| `Single point of failure at ingestion`        | `NO`                                                           | ![Checkmark icon](images/checkmark.svg)  |
-| `Higher throughput at ingestion`              | ![Checkmark icon](images/checkmark.svg)              | `NO`                                               |
+| `Load balanced ingestion requests`            | ![Checkmark icon](images/checkmark-icon.svg)              | `NO`                                               |
+| `Single point of failure at ingestion`        | `NO`                                                           | ![Checkmark icon](images/checkmark-icon.svg)  |
+| `Higher throughput at ingestion`              | ![Checkmark icon](images/checkmark-icon.svg)              | `NO`                                               |
 {: caption="Table 4. Information about the methods that can be adopted to monitor CF resource logs in {{site.data.keyword.cloud_notm}}" caption-side="top"}
 
 Another consideration is the restriction that you can apply to users to control access to view logs in a logging instance. You can use [IAM to manage users and their access to view logs](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-iam). 
