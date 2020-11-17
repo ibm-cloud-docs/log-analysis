@@ -97,7 +97,7 @@ Review the following sections for the specific responsibilities for you and for 
 | `Recovery of LogDNA agents`                                     | `N/A` | [Reinstall](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-logdna_agent#logdna_agent_configure) the LogDNA agent in the event of any disaster event that impacts the agent runtime. |
 | `Backup the metadata of a LogDNA instance`                          | `N/A` | [Backup the metadata such as views, dashboards, screens, parsing templates, and alerts for each LogDNA instance.](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-reuse_resource_definitions#export_config_res) |
 | `Restore the metadata of a LogDNA instance`                         | `N/A` | [Restore the metadata such as views, dashboards, screens, parsing templates, and alerts for each LogDNA instance.](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-reuse_resource_definitions#import_config) |
-| `Backup of the data` | `N/A` | Configure archiving to retain a backup copy of the data. |
+| `Backup of the data` | `N/A` | [Configure archiving to retain a backup copy of the data.](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-archiving) |
 {: caption="Table 5. Responsibilities for disaster recovery" caption-side="top"}
 
 
