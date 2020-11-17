@@ -275,7 +275,11 @@ You might want to view a log line in context.
 
 3. Select a log view.  You might want to use the [custom view you created](#LA-create-custom-view).
 
-4. Identify a log line you want to explore and ![open the log entry](/images/loglinedropdown.png "Open log entry").  Information about line identifiers, tags, and labels is displayed.
+4. Identify a log line you want to explore and open the log entry by clicking the down arrow. 
+
+   ![open the log entry](/images/loglinedropdown.png "Open log entry").  
+   
+   Information about line identifiers, tags, and labels is displayed.
 
 5. Click ![View in context](/images/viewincontext.png "View in context").  The log line will be displayed in context of other log lines from that host, app, or both.  This information is helpful when troubleshooting a problem.
 
@@ -436,7 +440,7 @@ You can configure an alert to be sent by email, Slack, PagerDuty or as a Webhook
 
 9. When you are ready to disable the alert, click the view name at the top of the page and in the menu click **Detach alerts**.
 
-   [!Detach alerts](/images/detachalerts.png "Dialog showing the option to detach associated alerts")
+   ![Detach alerts](/images/detachalerts.png "Dialog showing the option to detach associated alerts")
 
 ## Next steps
 {: #LA-use-step-next}
