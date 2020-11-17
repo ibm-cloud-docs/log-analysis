@@ -2,7 +2,7 @@
 
 copyright:
    years: 2020
-lastupdated: "2020-07-23"
+lastupdated: "2020-11-16"
 
 keywords: IBM Cloud, LogDNA, Activity Tracker, Kubernetes logs
 
@@ -28,15 +28,24 @@ completion-time: 10m <!-- Estimated time to complete the steps in this tutorial.
 <!-- Make sure each H1/H2/H3/etc. heading is _unique_ to your tutorial by adding a short but human-readable identifier. For example, instead of just "#overview", use "#cd-kube-overview" -->
 
 # Set up Kubernetes log forwarding
-{: #tutorial-cd-kube}
+{: #tutorial-config-kube-logs}
 {: toc-content-type="tutorial"} <!-- Always use this value -->
 {: toc-services="containers, Registry"} <!-- Only if multi-service - use same values from services metadata above-->
 {: toc-completion-time="10m"} <!-- Use same value from completion-time metadata above-->
 
 <!-- The short description should be a single, concise paragraph that contains one or two sentences and no more than 50 words. Briefly mention what the user's learning goal is and include the following SEO keywords in the title short description: IBM Cloud, ServiceName, tutorial.--> 
 
-In this tutorial, you learn how to set up your Kubernestes system to forward logs so they can be accessed through {{site.data.keyword.at_full_notm}}.  
+In this tutorial, you learn how to set up your Kubernestes system to forward logs so they can be accessed through {{site.data.keyword.la_full}}.  
 {: shortdesc}
+
+
+
+
+
+
+
+
+
 
 <!-- It's recommended to include an architectural diagram that shows how the services that are used in this tutorial interact. SVG is the recommended format. If you include a diagram, include a brief text-based description of the workflow shown in the diagram, using active voice to describe the workflow. This makes the content more searchable and improves accessibility. -->
 

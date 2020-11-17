@@ -89,20 +89,182 @@ application and system logs.
 {: #LA-create-custom-view}
 {: step}
 
+In {{site.data.keyword.la_full_notm}}, you can configure custom views to monitor a subset of data. For example, you configure your cluster to forward API audit logs to the logging instance, you can filter out
+those logs for analysis.
 
-## View logs
-{: #LA-view-logs}
+This tutorial will show you how to create a view that shows only a specific log.
+
+1. [Make sure you are logged in to the {{site.data.keyword.cloud_notm}} and have accessed the {{site.data.keyword.la_full_notm}} web UI](#LA-launch-ui).
+
+2. Select the **EVERYTHING** view.
+
+   ![EVERYTHING view](/images/everything.png "EVERYTHING view")
+
+3. Click **Apps** and select the log you want to view.
+
+4. Click **Apply**.
+
+   The view changes to only show your selected logs and the tab changes to **Unsaved View**.
+
+   ![Unsaved view](/images/unsaved.png "Heading showing the dropdown changed to Unsaved View")
+
+5. Click **Unsaved View** > **Save as new view / alert**.
+
+6. Enter a **Name** for your view.  Optionally, you can select a **Category** and **Alert** value.  Click **Save View**.
+
+   Your view is listed under your selected category.  If you didn't select a category, it will be listed under **UNCATEGORIZED**.
+
+## Customize the log format
+{: #LA-customize-log-format}
 {: step}
 
+When you launch the {{site.data.keyword.la_full_notm}} web UI, log entries are displayed in a predefined format. You can modify how the log entries are displayed.
 
-## Customize data display
+Configuration changes will affect all defined views.
+{: note}
+
+1. [Make sure you are logged in to the {{site.data.keyword.cloud_notm}} and have accessed the {{site.data.keyword.la_full_notm}} web UI](#LA-launch-ui).
+
+2. Click the **Settings** icon ![Settings icon](/images/config.png "Settings icon").
+
+3. Click **USER PREFERENCES**.
+
+4. Click **Log Format**.
+
+5. Modify the log format as desired.  
+
+   Change the log viewer text size by using the slider.
+
+   To add items to log view, drag the available items from the bottom line to the top line.  To rearrange the order of the items, drag and drop the items in the top line until you have your desired view.
+
+6. Click **Done** to save your changes.  To cancel without making changes, press **Esc**.
+
+
+## Customize the data displayed for a view
 {: #LA-customize-data-display}
 {: step}
+
+You can customize the fields that are displayed in a custom view.
+
+1. [Make sure you are logged in to the {{site.data.keyword.cloud_notm}} and have accessed the {{site.data.keyword.la_full_notm}} web UI](#LA-launch-ui).
+
+2. [Make sure you have a custom view defined.](#LA-create-custom-view).
+
+3. Select the view to change in the navigation.  Your view will be listed under the category where it was created, or under **UNCATEGORIZED** if you didn't specify a category when the view was created. For example, the following shows a view named "My View" that was created without an assigned category.
+
+   ![Navigation example](/images/uncategorized_myview.png "An uncategorized view named My View in the navigation") 
+
+4. Click the selected view name at the top of the page.  The following example shows the view named "My View".
+
+   ![My View view](/images/myview.png "Heading showing the dropdown showing the My View view") 
+
+5. Click the view name at the top of the page.  The dropdown is displayed.  Click **Edit view properties**.
+
+   ![Edit view properties](/images/editviewproperties.png "Edit view properties") 
+
+6. In the **Custom Template** you can change how you want the log line formatted for the view by including static text and fields from the log.
+
+   1. To determine the possible fields, click the down arrow on a log line in the view.
+
+      ![Open log entry](/images/loglinedropdown.png "Open log entry twistie")
+
+   2. Click **Extract Fields** ![Extract Fields](/images/extractfields.png "Extract Fields")
+
+      The log fields that can be used are displayed in the **Reference line** along with the specific values from the selected log entry.  For example:
+
+      ```
+      {"logSourceCRN":"crn:v1:bluemix:public:containers-kubernetes:us-south:a/xxxxx:yyyyy::","saveServiceCopy":true,"message":"Cluster yyyyy health status set to All Workers Normal"}
+      ```
+      {: codeblock}
+
+      In this case the following fields can be used in the **Custom Template**: `logSourceCRN` and `message`.
+
+      The `saveServiceCopy` field value cannot be used because it is a boolean value.  Boolean field values will not display in a **Custom Template**.
+      {: important}
+
+   3. In **Custom Template** specify the fields and static text in the way you want them displayed.  Fields need to be enclosed in double braces `{{field}}` or in BASH format `${field}`.  All other specified characters will be rendered as plain text.
+
+      For example, if you have log entries similar to the following:
+
+      ```
+      Nov 16 13:59:02 containers-kubernetes crn:v1:bluemix:public:containers-kubernetes:us-south:a/xxxxx:yyyyy:: Cluster yyyyy health status set to All Workers Normal
+      ```
+      {: codeblock}
+
+      And you want them formatted like this:
+
+      ```
+      SOURCE: Nov 16 13:59:02 containers-kubernetes crn:v1:bluemix:public:containers-kubernetes:us-south:a/xxxxx:yyyyy:: 
+      MESSAGE: Cluster yyyyy health status set to All Workers Normal
+      ```
+      {: codeblock}
+
+      And the extracted reference line is:
+
+      ```
+      {"logSourceCRN":"crn:v1:bluemix:public:containers-kubernetes:us-south:a/xxxxx:yyyyy::","saveServiceCopy":true,"message":"Cluster yyyy health status set to All Workers Normal"}
+      ```
+      {: codeblock}
+
+      Then your **Custom Template** would be:
+
+      ```
+      SOURCE: {{logSourceCRN}} 
+      MESSAGE: {{message}}
+      ```
+      {: codeblock}
+
+      The original log line will be displayed followed by the custom formatting.
 
 
 ## Create a parsing rule
 {: #LA-create-parsing rule}
 {: step}
+
+There are occasions when you might want to search for information that is available in log records. Parsing rules maps information from a log line to a searchable field.
+
+1. [Make sure you are logged in to the {{site.data.keyword.cloud_notm}} and have accessed the {{site.data.keyword.la_full_notm}} web UI](#LA-launch-ui).
+
+2. Click the **Settings** icon ![Settings icon](/images/config.png "Settings icon").
+
+3. Click **PARSING**.
+
+4. Click **Create Template**.  The template wizard opens.
+
+5. Click the ![Pencil icon](/images/pencil.png "Pencil icon") and enter a name for your parsing rule.
+
+6. For this tutorial, for **Choose a sample log line to begin building your template** select *Find an existing log line*.   Enter a search term that will match a field in your log.  See [Customize the data displayed for a view](#LA-customize-log-format) for information on extracting log fields.
+
+7. Scroll to the bottom of the page and click **Build Parsing Template**.  A **Reference Line** for your log records is displayed.
+
+8. Choose the **Extract values by delimiter** extractor.
+
+9. For **Delimiter** specify a `,` (comma). A preview of the output delimited by a comma is presented for your review.
+
+10. Choose one of the entries.  For example, if your log contains a field called `message` you might select that line.
+
+11.  For **Choose an Operator** select **Extract Values by Delimiter**.
+
+12. For **Delimiter** specify a delimiter that makes sense for your selected entry.  For example, a reasonable delimiter might be a `:` (colon).  A preview of the delimited output is presented for your review.
+
+13. Select an entry containing a date value.
+
+14. For **Choose an Operator** select **Trim Value**.  Using the index range specify a starting and ending character position so only the date is retained in the displayed output.
+
+15. For **Choose an Operator** select **Capture in Field** to set the name of the field that will capture this information.
+
+16. For **Field Name** specify a name that you will use to search for this type of information.
+
+17. At the bottom of the page click **Proceed to Validation**.
+
+18. For **Set a query and verify parsed output with different sample lines** enter a search that will return multiple records.  For example, `message`.
+
+19. If all log lines returned match the rule you specified, click **Mark as Valid** for each and then click **Activate** at the bottom of the page.
+
+    Until you validate all results, the **Activate** option will be disabled.
+    {: note}
+
+The rule will take affect in approximately 15 minutes.
 
 
 ## Analyze the log line
