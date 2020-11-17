@@ -41,6 +41,7 @@ Log Analysis with LogDNA
     {: .topicgroup}
     Tutorials
         kube_reset_ingestion.md
+        tutorial_use_LogDNA.md
     {: .navgroup-end}
 
     {: .navgroup id="howto"}
