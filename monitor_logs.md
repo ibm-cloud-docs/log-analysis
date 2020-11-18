@@ -94,7 +94,7 @@ There are scenarios where you might want to be notified if specific logs are gen
 Through the {{site.data.keyword.la_full_notm}} web UI, you can apply search queries to define the logs that are displayed through a custom view. Then, you can attach an alert to that view to be notified when a condition occurs. A bell icon is displayed with the view to indicate that this view has an alert attached to it.
 
 Consider the following information when you configure alerts:
-* You can [attach one alert](/docs/Activity-Tracker-with-LogDNA?topic=Activity-Tracker-with-LogDNA-alerts#alerts_step4) per custom view. There are 2 types of alerts: presence alert and absence alert.
+* You can [attach one alert](/docs/Activity-Tracker-with-LogDNA?topic=Activity-Tracker-with-LogDNA-alerts) per custom view. There are 2 types of alerts: presence alert and absence alert.
 
 * You can configure conditions that are based on the number of event lines that meet the search query in the view, on a time frequency, or both. 
 
@@ -182,7 +182,7 @@ To make the EU-DE (Frankfurt) location EU compliant, the export function is **no
 ### By using the REST API
 {: #mon_export_api}
 
-You can export logs programmatically by using the LogDNA REST API. [Learn more](/docs/Activity-Tracker-with-LogDNA?topic=Activity-Tracker-with-LogDNA-export#export_api).
+You can export logs programmatically by using the LogDNA REST API. [Learn more](/docs/Activity-Tracker-with-LogDNA?topic=Activity-Tracker-with-LogDNA-export_api).
 
 When you export logs programmatically, consider the following information:
 
@@ -203,7 +203,7 @@ After you submit a request, you get an email that is sent to your email address,
 * To get the data, you must click the link and download the compressed file. 
 * The compressed file that contains the data that you want to export is available for a maximum of 48 hours. 
 
-[Learn more about exporting logs through the web UI](/docs/Activity-Tracker-with-LogDNA?topic=Activity-Tracker-with-LogDNA-export#export_ui).
+[Learn more about exporting logs through the web UI](/docs/Activity-Tracker-with-LogDNA?topic=Activity-Tracker-with-LogDNA-export).
 
 
 
