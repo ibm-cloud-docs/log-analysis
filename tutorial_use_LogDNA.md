@@ -9,6 +9,7 @@ keywords: IBM Cloud, LogDNA, Activity Tracker, Kubernetes logs
 subcollection: Activity-Tracker-with-LogDNA
 
 content-type: tutorial
+services: vpc
 account-plan: lite 
 completion-time: 1h 
 
@@ -23,14 +24,13 @@ completion-time: 1h
 {:tip: .tip}
 {:note: .note}
 {:external: target="_blank" .external}
-{:step: data-tutorial-type='step'} <!-- Apply to steps for automatic numbering -->
+{:step: data-tutorial-type='step'} 
 
-<!-- The title of your tutorial should be in active voice and and start with a verb. If you include product names, makes sure to use the non-trademarked short version conref. -->
-<!-- Make sure each H1/H2/H3/etc. heading is _unique_ to your tutorial by adding a short but human-readable identifier. For example, instead of just "#overview", use "#cd-kube-overview" -->
 
 # Use the {{site.data.keyword.la_short}} web UI
 {: #tutorial-use-logdna}
-{: toc-content-type="tutorial"} <!-- Always use this value -->
+{: toc-content-type="tutorial"}
+{: toc-services-"vpc"} <!-- Always use this value -->
 {: toc-completion-time="1h"} <!-- Use same value from completion-time metadata above-->
 
 <!-- The short description should be a single, concise paragraph that contains one or two sentences and no more than 50 words. Briefly mention what the user's learning goal is and include the following SEO keywords in the title short description: IBM Cloud, ServiceName, tutorial.--> 
@@ -275,7 +275,11 @@ You might want to view a log line in context.
 
 3. Select a log view.  You might want to use the [custom view you created](#LA-create-custom-view).
 
-4. Identify a log line you want to explore and ![open the log entry](/images/loglinedropdown.png "Open log entry").  Information about line identifiers, tags, and labels is displayed.
+4. Identify a log line you want to explore and open the log entry by clicking the down arrow. 
+
+   ![open the log entry](/images/loglinedropdown.png "Open log entry").  
+   
+   Information about line identifiers, tags, and labels is displayed.
 
 5. Click ![View in context](/images/viewincontext.png "View in context").  The log line will be displayed in context of other log lines from that host, app, or both.  This information is helpful when troubleshooting a problem.
 
@@ -436,7 +440,7 @@ You can configure an alert to be sent by email, Slack, PagerDuty or as a Webhook
 
 9. When you are ready to disable the alert, click the view name at the top of the page and in the menu click **Detach alerts**.
 
-   [!Detach alerts](/images/detachalerts.png "Dialog showing the option to detach associated alerts")
+   ![Detach alerts](/images/detachalerts.png "Dialog showing the option to detach associated alerts")
 
 ## Next steps
 {: #LA-use-step-next}
