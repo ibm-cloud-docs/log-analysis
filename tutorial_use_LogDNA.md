@@ -30,12 +30,12 @@ completion-time: 1h
 # Use the {{site.data.keyword.la_short}} web UI
 {: #tutorial-use-logdna}
 {: toc-content-type="tutorial"}
-{: toc-services-"vpc"} <!-- Always use this value -->
-{: toc-completion-time="1h"} <!-- Use same value from completion-time metadata above-->
+{: toc-services-"vpc"} 
+{: toc-completion-time="1h"} 
 
 <!-- The short description should be a single, concise paragraph that contains one or two sentences and no more than 50 words. Briefly mention what the user's learning goal is and include the following SEO keywords in the title short description: IBM Cloud, ServiceName, tutorial.--> 
 
-In this tutorial, you learn how to use the {{site.data.keyword.la_full}} web UI to create rules and views for Kubernetes log data.  
+In this tutorial, you learn how to use the {{site.data.keyword.la_full}} web UI to create parsing rules that you can use to enhance your searches, views for monitoring Kubernetes log data, alerts to be notified of anomalous situations, and dashboards and screens to monitor your data. 
 {: shortdesc}
 
 You can use {{site.data.keyword.la_full_notm}} to add log management capabilities to your {{site.data.keyword.cloud_notm}} architecture. {{site.data.keyword.la_full_notm}} offers administrators, DevOps teams, and developers advanced features to filter, search, and tail log data, define alerts, and design custom views to monitor
@@ -55,7 +55,7 @@ application and system logs.
 <!-- Note: Currently no format for checkboxes. Let's check with design if required for first pass -->
 
 * Make sure you have a Kubernetes instance with data you want to analyze.  For example, you can [create a VPC instance](https://cloud.ibm.com/docs/vpc?topic=vpc-getting-started).
-* [Configure {{site.data.keyword.la_full_notm}} for your instance.](https://cloud.ibm.com/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-kube#kube)
+* [Configure {{site.data.keyword.la_full_notm}} for your Kubernetes instance.](https://cloud.ibm.com/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-kube#kube)
 
 
 <!-- For each step in your tutorial, add an H2 section. The title should be task-oriented and descriptive. If you find your tutorial going over 9 steps, consider whether your substeps can be grouped differently or whether your tutorial should be a multi-part series. -->
@@ -357,7 +357,7 @@ The following will help you create a dashboard.
    If you don't specify a **Category** your dashboard will be listed under **UNCATEGORIZED**.  If you are editing an existing dashboard, changes will be saved when exiting the dashboard without having to click **Save**.
    {: note}
 
-## Create a widget
+## Create a widget in a screen
 {: #LA-create_widget}
 {: step}
 
