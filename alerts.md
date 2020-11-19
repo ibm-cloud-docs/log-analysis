@@ -78,7 +78,7 @@ Complete the following steps to configure a preset:
 
 Complete the following steps to attach a preset to a view:
 
-1. Click the **Views** icon ![Configuration icon](images/views.png).
+1. Click the **Views** icon ![Views icon](images/views.png "Views icon").
 2. Create a view. 
 
     Apply a time frame, filters and search criteria to filter the log lines that are displayed through the view. 
@@ -99,7 +99,7 @@ Complete the following steps to attach a preset to a view:
 
 Complete the following steps to attach an alert to a view:
 
-1. Click the **Views** icon ![Configuration icon](images/views.png).
+1. Click the **Views** icon ![Views icon](images/views.png "Views icon").
 2. Create a view. 
 
     Apply a time frame, filters and search criteria to filter the log lines that are displayed through the view. 

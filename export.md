@@ -53,7 +53,7 @@ You can create a custom view and then export data for a period of time.
 Complete the following steps to export log data through the LogDNA web UI:
 
 1. [Launch the LogDNA web UI](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-launch).
-2. Click the **Views** icon ![Configuration icon](images/views.png).
+2. Click the **Views** icon ![Views icon](images/views.png "Views icon").
 3. Select a view.
 4. Select the view name. 
 5. Select **Export lines**. A new window opens.
@@ -70,7 +70,7 @@ You can export data from a custom search.
 Complete the following steps to export data through the LogDNA web UI:
 
 1. [Launch the LogDNA web UI](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-launch).
-2. Click the **Views** icon ![Configuration icon](images/views.png).
+2. Click the **Views** icon ![Views icon](images/views.png "Views icon").
 3. Select **Everything**.
 4. Apply filters and search criteria until you see the entries that you want to export.
 4. Click **Unsaved View**.

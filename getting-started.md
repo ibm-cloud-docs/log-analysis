@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2020
-lastupdated: "2020-06-01"
+lastupdated: "2020-11-04"
 
 keywords: LogDNA, IBM, Log Analysis, logging, getting started
 
@@ -35,47 +35,50 @@ You can use {{site.data.keyword.la_full_notm}} to manage system and application 
 ## Features
 {: #getting-started_features}
 
-**Troubleshoot logs in real time to diagnose issues and identify problems.**
+{{site.data.keyword.la_full_notm}} provides the following features.
+
+### Troubleshooting logs in real time to diagnose issues and identify problems
 
 By using the *live streaming tail* feature, developers and DevOps teams can diagnose issues, analyze stack traces and exceptions, identify the source of errors, and monitor different log sources through a single view. 
 
-**Issue alerts to be notified of important actions.**
+### Issuing alerts to be notified of important actions
  
-To act promptly on application and services events that you identify as critical or warning, DevOps teams can configure alert notification integrations to the following systems: email, Slack, webHook, and PagerDuty.
+DevOps teams can configure the system so critical or warning alert notifications are sent to email, Slack, webHook, or PagerDuty.  This helps DevOps teams to act promptly on important application and services events.
 
-**Export logs to a local file for analysis or to an archive service to meet auditing requirements.**
+### Exporting logs to a local file for analysis or to an archive service to meet auditing requirements
 
-Export specific log lines to a local copy or archive logs from {{site.data.keyword.la_full_notm}} to IBM Cloud Object Storage.
-Log lines are exported in JSON line format. Logs are archived in JSON format and preserve the metadata that is associated with each line. 
+You can export specific log lines to a local copy or archive logs from {{site.data.keyword.la_full_notm}} to {{site.data.keyword.cloud}} Object Storage.
+Log lines are exported in JSON line format. Logs are archived in JSON format with the metadata that is associated with each line. 
 
-**Control logging infrastructure costs by customizing what logs to manage through {{site.data.keyword.la_full_notm}}.**
+### Controlling logging infrastructure costs by customizing {{site.data.keyword.la_full_notm}} managed logs
 
-Control the cost of your logging infrastructure in the IBM Cloud by configuring the log sources for which you want to collect and manage logs. 
+You can control the cost of your {{site.data.keyword.cloud_notm}} logging infrastructure by configuring the log sources that are collecting and managing logs. 
 
 
 ## Overview
 {: #getting-started_ov}
 
+{{site.data.keyword.la_full_notm}} is a service hosted on the {{site.data.keyword.cloud_notm}} and operated by LogDNA.  The log data is stored on the {{site.data.keyword.cloud_notm}}.
+
+Because {{site.data.keyword.la_full_notm}} is part of the {{site.data.keyword.cloud_notm}} users must have the following permissions:
+
+* Your users must have platform permissions to create, view, and delete an instance of a service in the {{site.data.keyword.cloud_notm}}.
+* Your users must have platform permissions to create resources within the context of the resource group where the LogDNA instance is provisioned.
+
 To add logging features with LogDNA in the {{site.data.keyword.cloud_notm}}, you must provision an instance of {{site.data.keyword.la_full_notm}}.
 
-Before you provision an instance of {{site.data.keyword.la_full_notm}}, consider the following information:
-* Log data is hosted on the {{site.data.keyword.cloud_notm}}. 
-* The {{site.data.keyword.la_full_notm}} service is operated by LogDNA.
-* Your users must have platform permissions to create, view, and delete an instance of a service in the {{site.data.keyword.cloud_notm}}.
-* Your users must have platform permissions to create resources within the context of the resource group where you plan to provision the LogDNA instance.
+An {{site.data.keyword.la_full_notm}} instance is provisioned within the context of a resource group. Your services are organized for access control and billing purposes by using resource groups. You can provision the instance in the *default* resource group or in a custom resource group.
 
-You provision an {{site.data.keyword.la_full_notm}} instance within the context of a resource group. You organize your services for access control and billing purposes by using resource groups. You can provision the instance in the *default* resource group or in a custom resource group.
+After provisioning an instance of {{site.data.keyword.la_full_notm}}, an account is created in LogDNA, and you receive the ingestion key for your account.
 
-After you provision an instance of {{site.data.keyword.la_full_notm}}, an account is created in LogDNA, and you receive the ingestion key for your account.
+After you have your ingestion key, you can configure your log sources:
 
-Then, you must configure your log sources:
+* You can enable a LogDNA instance per region to host logs from enabled {{site.data.keyword.cloud_notm}} services. For example, to collect logs from an {{site.data.keyword.ibmcf_notm}} app, you can enable the *service platform logs* flag. [Learn more](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-config_svc_logs). When this feature is enabled, logs are collected automatically.
+* You can configure a LogDNA agent for a log source. A log source is a Cloud or on-prem resource that generates logs. For example, a log source can be a Kubernetes cluster. You use the ingestion key to configure the LogDNA agent that is responsible for collecting and forwarding logs to your {{site.data.keyword.la_full_notm}} instance. After the LogDNA agent is deployed in a log source, logs are collected and forwarded automatically to the {{site.data.keyword.la_full_notm}} instance. [Learn more](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-logdna_agent).
 
-* You can enable per region a LogDNA instance to host logs from enabled {{site.data.keyword.cloud_notm}} services. For example, to collect logs from a Cloud Foundry app, you can enable the *service platform logs* flag. [Learn more](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-config_svc_logs). As soon as this feature is enabled, logs are collected automatically.
-* You can configure a LogDNA agent for a log source. A log source is a Cloud or on-prem resource that generates logs. For example, a log source can be a Kubernetes cluster. You use the ingestion key to configure the LogDNA agent that is responsible for collecting and forwarding logs to your {{site.data.keyword.la_full_notm}} instance. After the LogDNA agent is deployed in a log source, collection and forwarding of logs to the {{site.data.keyword.la_full_notm}} instance is automatic. [Learn more](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-logdna_agent).
+You can launch the {{site.data.keyword.la_full_notm}} Web UI to view, monitor, and manage your logs from the {{site.data.keyword.cloud_notm}} Menu ![Navigation Menu](images/icon_hamburger.svg) &gt; **Observability** &gt; **Logging** page.
 
-You can launch the {{site.data.keyword.la_full_notm}} Web UI to view, monitor, and manage your logs from the **Observability** &gt; **Logging** page.
-
-The following figure shows the components overview for the {{site.data.keyword.la_full_notm}} service that is running on {{site.data.keyword.cloud_notm}}:
+The following figure shows the components comprising the {{site.data.keyword.la_full_notm}} service that is running on {{site.data.keyword.cloud_notm}}:
 
 ![{{site.data.keyword.la_full_notm}}](images/Logging-arch.png "{{site.data.keyword.la_full_notm}} high level architecture")
 
@@ -84,9 +87,9 @@ The following figure shows the components overview for the {{site.data.keyword.l
 ## Step 1. Before you begin
 {: #getting-started_prereqs}
 
-* [Check the regions where the {{site.data.keyword.la_full_notm}} service is available](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-regions).
+1. [Check the regions where the {{site.data.keyword.la_full_notm}} service is available](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-regions).
 
-* [Register in {{site.data.keyword.cloud_notm}}](https://cloud.ibm.com/login){: external}. You need an IBMid to work in {{site.data.keyword.cloud_notm}}.
+2. If you don't have an {{site.data.keyword.cloud_notm}} account, [register an {{site.data.keyword.cloud_notm}} account](https://cloud.ibm.com/login){: external}. You need an IBMid to work in {{site.data.keyword.cloud_notm}}.
 
 ## Step 2. Get started
 {: #getting-started_step2}
