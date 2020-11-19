@@ -28,6 +28,7 @@ IBM Log Analysis with LogDNA
         iam.md
         service-connection.md
         architecture-workload-isolation.md
+        ha-dr.md
         at_events.md
 
     {: .topicgroup}
