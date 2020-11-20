@@ -91,7 +91,7 @@ This tutorial will show you how to create a view that shows only a specific log.
 
 2. Click the **EVERYTHING** view.
 
-   ![EVERYTHING view](/images/everything.png "EVERYTHING view")
+   ![EVERYTHING view](../images/everything.png "EVERYTHING view")
 
 3. Click **Apps** and select the log you want to view.
 
@@ -99,7 +99,7 @@ This tutorial will show you how to create a view that shows only a specific log.
 
    The view changes to only show your selected logs and the tab changes to **Unsaved View**.
 
-   ![Unsaved view](/images/unsaved.png "Heading showing changed to Unsaved View")
+   ![Unsaved view](../images/unsaved.png "Heading showing changed to Unsaved View")
 
 5. Click **Unsaved View** > **Save as new view / alert**.
 
@@ -118,7 +118,7 @@ These configuration changes will affect all defined views.
 
 1. [Make sure you are logged in to the {{site.data.keyword.cloud_notm}} and have accessed the {{site.data.keyword.la_full_notm}} web UI](#LA-launch-ui).
 
-2. Click the **Settings** icon ![Settings icon](/images/config.png "Settings icon").
+2. Click the **Settings** icon ![Settings icon](../images/config.png "Settings icon").
 
 3. Click **USER PREFERENCES**.
 
@@ -145,23 +145,23 @@ You can customize the fields that are displayed in a custom view.
 
 3. Select the view to change in the navigation.  Your view will be listed under the category where it was created, or under **UNCATEGORIZED** if you didn't specify a category when the view was created. For example, the following shows a view named "My View" that was created without an assigned category.
 
-   ![Navigation example](/images/uncategorized_myview.png "An uncategorized view named My View in the navigation") 
+   ![Navigation example](../images/uncategorized_myview.png "An uncategorized view named My View in the navigation") 
 
 4. Click the selected view name at the top of the page.  The following example shows the view named "My View".
 
-   ![My View view](/images/myview.png "Heading showing the My View view") 
+   ![My View view](../images/myview.png "Heading showing the My View view") 
 
 5. Click the view name at the top of the page.  The menu is displayed.  Click **Edit view properties**.
 
-   ![Edit view properties](/images/editviewproperties.png "Edit view properties") 
+   ![Edit view properties](../images/editviewproperties.png "Edit view properties") 
 
 6. In the **Custom Template** you can change how you want the log line formatted for the view by including static text and fields from the log.
 
    1. To determine the possible fields, click the down arrow on a log line in the view.
 
-      ![Open log entry](/images/loglinedropdown.png "Open log entry twistie")
+      ![Open log entry](../images/loglinedropdown.png "Open log entry twistie")
 
-   2. Click **Extract Fields** ![Extract Fields](/images/extractfields.png "Extract Fields")
+   2. Click **Extract Fields** ![Extract Fields](../images/extractfields.png "Extract Fields")
 
       The log fields that can be used are displayed in the **Reference line** along with the specific values from the selected log entry.  For example:
 
@@ -218,7 +218,7 @@ There are occasions when you might want to reference information that is availab
 
 1. [Make sure you are logged in to the {{site.data.keyword.cloud_notm}} and have accessed the {{site.data.keyword.la_full_notm}} web UI](#LA-launch-ui).
 
-2. Click the **Settings** icon ![Settings icon](/images/config.png "Settings icon").
+2. Click the **Settings** icon ![Settings icon](../images/config.png "Settings icon").
 
 3. Click **PARSING**.
 
@@ -226,7 +226,7 @@ There are occasions when you might want to reference information that is availab
 
 5. For this tutorial, for **Choose a sample log line to begin building your template** select *Find an existing log line*.   Enter a search term that will match a field in your log.  See [Customize the data displayed for a view](#LA-customize-log-format) for information on extracting log fields.
 
-6. Click the the **Pencil** icon ![Pencil icon](/images/pencil.png "Pencil icon") and enter a name for your parsing rule.
+6. Click the the **Pencil** icon ![Pencil icon](../images/pencil.png "Pencil icon") and enter a name for your parsing rule.
 
 7. Scroll to the bottom of the page and click **Build Parsing Template**.  A **Reference Line** for your log records is displayed.
 
@@ -271,17 +271,17 @@ You might want to view a log line in context.
 
 1. [Make sure you are logged in to the {{site.data.keyword.cloud_notm}} and have accessed the {{site.data.keyword.la_full_notm}} web UI](#LA-launch-ui).
 
-2. Click the **Views** icon ![Views icon](/images/views.png "Views icon").
+2. Click the **Views** icon ![Views icon](../images/views.png "Views icon").
 
 3. Select a log view.  You might want to use the [custom view you created](#LA-create-custom-view).
 
 4. Identify a log line you want to explore and open the log entry by clicking the down arrow. 
 
-   ![open the log entry](/images/loglinedropdown.png "Open log entry").  
+   ![open the log entry](../images/loglinedropdown.png "Open log entry").  
    
    Information about line identifiers, tags, and labels is displayed.
 
-5. Click ![View in context](/images/viewincontext.png "View in context").  The log line will be displayed in context of other log lines from that host, app, or both.  This information is helpful when troubleshooting a problem.
+5. Click ![View in context](../images/viewincontext.png "View in context").  The log line will be displayed in context of other log lines from that host, app, or both.  This information is helpful when troubleshooting a problem.
 
 6. Explore the selected log line by using the following options at the top of the displayed context.
 
@@ -305,11 +305,11 @@ The timeframe can be an absolute time, relative time, or a time range.
 
 1. [Make sure you are logged in to the {{site.data.keyword.cloud_notm}} and have accessed the {{site.data.keyword.la_full_notm}} web UI](#LA-launch-ui).
 
-2. Click the **Views icon** ![Views icon](/images/views.png "Views icon").
+2. Click the **Views icon** ![Views icon](../images/views.png "Views icon").
 
 3. Select a log view.  You might want to use the [custom view you created](#LA-create-custom-view).
 
-4. In the **Jump to timeframe** field ![Jump to timeframe field](/images/jumptotimeframe.png "Jump to timeframe field") enter a timeframe to filter the log.
+4. In the **Jump to timeframe** field ![Jump to timeframe field](../images/jumptotimeframe.png "Jump to timeframe field") enter a timeframe to filter the log.
 
    1. Specify a specific date or date time.  For example, `Nov 16` will jump to log entries starting with that date.  You can also specify a date and time.  For example, `Nov 16 22:29`.
 
@@ -330,7 +330,7 @@ The following will help you create a dashboard.
 
 1. [Make sure you are logged in to the {{site.data.keyword.cloud_notm}} and have accessed the {{site.data.keyword.la_full_notm}} web UI](#LA-launch-ui).
 
-2. Click the **Boards** icon ![Boards icon](/images/boards.png "Boards icon").
+2. Click the **Boards** icon ![Boards icon](../images/boards.png "Boards icon").
 
 3. Click **NEW BOARD**.
 
@@ -342,7 +342,7 @@ The following will help you create a dashboard.
 
 7. Click the graph line and click **Show logs** to see the log at point in time. 
 
-8. Open the subplot view ![Open the subplot view](/images/opensubplot.png). Select *Histogram* for **Choose breakdown type** and *host* for **SYSTEM FIELD**. and click **Add Breakdown**.  A histogram of the data by *host* is added to the dashboard.
+8. Open the subplot view ![Open the subplot view](../images/opensubplot.png). Select *Histogram* for **Choose breakdown type** and *host* for **SYSTEM FIELD**. and click **Add Breakdown**.  A histogram of the data by *host* is added to the dashboard.
 
 9. Click **Add** and add an additional histogram and specify *verb* for **SYSTEM FIELD**.
 
@@ -350,9 +350,9 @@ The following will help you create a dashboard.
 
 11. Multiple plot lines can be hidden or displayed on the graph.  Select your plot and click **Show** to show the line or **Hide** to hide it.
 
-12. Click the **Filter** icon ![Filter icon](/images/filter.png "Filter icon") to filter the graph by a specific field's data.  For example, `host:myhost`.
+12. Click the **Filter** icon ![Filter icon](../images/filter.png "Filter icon") to filter the graph by a specific field's data.  For example, `host:myhost`.
 
-13. Click the **Pencil** icon ![Pencil icon](/images/pencil.png "Pencil icon") and enter a name for your dashboard.  Specify a **Category** if desired and click **Save**.  
+13. Click the **Pencil** icon ![Pencil icon](../images/pencil.png "Pencil icon") and enter a name for your dashboard.  Specify a **Category** if desired and click **Save**.  
 
    If you don't specify a **Category** your dashboard will be listed under **UNCATEGORIZED**.  If you are editing an existing dashboard, changes will be saved when exiting the dashboard without having to click **Save**.
    {: note}
@@ -365,7 +365,7 @@ Using the screen option you can create a screen of widgets that you can use to m
 
 1. [Make sure you are logged in to the {{site.data.keyword.cloud_notm}} and have accessed the {{site.data.keyword.la_full_notm}} web UI](#LA-launch-ui).
 
-2. Click the **Screens** icon ![Screens icon](/images/screens.png "Screens icon").
+2. Click the **Screens** icon ![Screens icon](../images/screens.png "Screens icon").
 
 3. Click **NEW SCREEN**.
 
@@ -412,15 +412,15 @@ You can configure an alert to be sent by email, Slack, PagerDuty or as a Webhook
 
 3. Select the view to change in the navigation.  Your view will be listed under the category where it was created, or under **UNCATEGORIZED** if you didn't specify a category when the view was created. For example, the following shows a view named "My View" that was created without an assigned category.
 
-   ![Navigation example](/images/uncategorized_myview.png "An uncategorized view named My View in the navigation") 
+   ![Navigation example](../images/uncategorized_myview.png "An uncategorized view named My View in the navigation") 
 
 4. Click the selected view name at the top of the page.  The following example shows the view named "My View".
 
-   ![My View view](/images/myview.png "Heading showing the My View view") 
+   ![My View view](../images/myview.png "Heading showing the My View view") 
 
 5. Click the view name at the top of the page.  The menu is displayed.  Click **Attach an alert**
 
-   ![Edit view properties](/images/editviewproperties.png "Edit view properties") 
+   ![Edit view properties](../images/editviewproperties.png "Edit view properties") 
 
 6. Click **View-specific alert**.
 
@@ -428,7 +428,7 @@ You can configure an alert to be sent by email, Slack, PagerDuty or as a Webhook
 
 8. Configure the alert.
 
-   ![Configure alert](/images/configalert.png "Dialog showing alert configuration")
+   ![Configure alert](../images/configalert.png "Dialog showing alert configuration")
 
    1. Specify when the alert will be triggered, and an email sent.  For this example specify *When 5 or more matches appear within 30 seconds*.
    
@@ -440,7 +440,7 @@ You can configure an alert to be sent by email, Slack, PagerDuty or as a Webhook
 
 9. When you are ready to disable the alert, click the view name at the top of the page and in the menu click **Detach alerts**.
 
-   ![Detach alerts](/images/detachalerts.png "Dialog showing the option to detach associated alerts")
+   ![Detach alerts](../images/detachalerts.png "Dialog showing the option to detach associated alerts")
 
 ## Next steps
 {: #LA-use-step-next}
