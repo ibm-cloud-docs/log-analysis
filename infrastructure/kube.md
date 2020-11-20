@@ -23,7 +23,7 @@ subcollection: Log-Analysis-with-LogDNA
 {:external: target="_blank" .external}
 
 
-# Collecting, configuring, and analyzing logs from Kubernetes clusters (cluster-level logging)
+# Logging in Kubernetes clusters (cluster-level logging)
 {: #kube}
 
 You can configure a LogDNA agent to collect logs from a Kubernetes cluster and forward them to an instance of the {{site.data.keyword.la_full_notm}} service.

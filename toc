@@ -9,21 +9,19 @@ Log Analysis with LogDNA
     agent/logdna_agent.md
 
     {: .topicgroup}
-    Platform logs
+    Logging IBM Cloud services
         platform-logs/config_svc_logs.md
         platform-logs/cloud_services.md
         platform-logs/cloud_services_locations.md
         platform-logs/cloud_services_msg_prefix.md
-
-    {: .topicgroup}
-    Services logs
         platform-logs/cloud_services_agent.md
 
     {: .topicgroup}
-    Infrastructure logs
+    Logging infrastructure
         infrastructure/monitor_cfapp_logs.md
         infrastructure/kube.md
-        infrastructure/ubuntu.md
+        infrastructure/ubuntu-baremetal.md
+        infrastructure/ubuntu-vpc.md
 
     {: .topicgroup}
     Security and compliance
