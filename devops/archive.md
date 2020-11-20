@@ -68,7 +68,7 @@ The {{site.data.keyword.cos_full_notm}} instance is provisioned in the context o
 
 The following figure shows a high-level view of the different components that are integrated when you archive logs:
 
-![High-level view archiving logs](images/archive.png "High-level view archiving logs")
+![High-level view archiving logs](../images/archive.png "High-level view archiving logs")
 
 
 Complete the following steps to archive an {{site.data.keyword.la_full_notm}} instance into a bucket in an {{site.data.keyword.cos_full_notm}} instance:
@@ -333,7 +333,7 @@ Complete the following steps to configure archiving of your {{site.data.keyword.
 
 1. [Launch the {{site.data.keyword.la_full_notm}} web UI](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-view_logs#view_logs_step2).
 
-2. Select the **Settings** icon ![Configuration icon](images/admin.png "Admin icon"). Then select **Archiving**. 
+2. Select the **Settings** icon ![Configuration icon](../images/admin.png "Admin icon"). Then select **Archiving**. 
 
 3. Select **IBM Cloud Object Storage**.
 
