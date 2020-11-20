@@ -6,27 +6,24 @@ Log Analysis with LogDNA
 
     {: .navgroup id="learn"}
     getting-started.md
-    logdna_agent.md
+    agent/logdna_agent.md
 
     {: .topicgroup}
-    Cloud services
+     Platform logs
+        platform-logs/config_svc_logs.md
+        platform-logs/cloud_services.md
+        platform-logs/cloud_services_locations.md
+        platform-logs/cloud_services_msg_prefix.md
 
-        {: .topicgroup}
-        Infrastructure services
-            infrastructure/monitor_cfapp_logs.md
-            infrastructure/kube.md
-            infrastructure/ubuntu.md
+    {: .topicgroup}
+    Services logs
+        platform-logs/cloud_services_agent.md
 
-        {: .topicgroup}
-        Services that send logs to a Platform logs instance
-            platform-logs/config_svc_logs.md
-            platform-logs/cloud_services.md
-            platform-logs/cloud_services_locations.md
-            platform-logs/cloud_services_msg_prefix.md
-
-        {: .topicgroup}
-        Services that send logs to a configurable logging instance 
-            cloud_services_agent.md
+    {: .topicgroup}
+    Infrastructure logs
+        infrastructure/monitor_cfapp_logs.md
+        infrastructure/kube.md
+        infrastructure/ubuntu.md
 
     {: .topicgroup}
     Security and compliance
