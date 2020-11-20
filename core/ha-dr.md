@@ -87,7 +87,7 @@ The SZR architecture offers failover across 3 distinct systems within the single
 ## Disaster recovery (DR) of the logging service in a region
 {: #dr}
 
-Disaster recovery is about surviving a catastrophic failure or loss of availability in a single location. 
+Disaster recovery is about surviving a catastrophic failure or loss of availability in a region. 
 
 {{site.data.keyword.la_full_notm}} follows {{site.data.keyword.cloud_notm}} requirements for [planning and recovering from disaster events](/docs/overview?topic=overview-zero-downtime#disaster-recovery).
 
