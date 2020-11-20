@@ -9,7 +9,7 @@ Log Analysis with LogDNA
     agent/logdna_agent.md
 
     {: .topicgroup}
-     Platform logs
+    Platform logs
         platform-logs/config_svc_logs.md
         platform-logs/cloud_services.md
         platform-logs/cloud_services_locations.md
