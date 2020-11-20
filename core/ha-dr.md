@@ -78,7 +78,6 @@ A multizone region (MZR) consist of 3 or more availability zones that are indepe
 By default, each logging instance consist of 3 zones, one primary zone and two secondary zones: 
 * Each zone is located in a different data center in the region.
 * The data in your primary zone is automatically replicated to the secondary zones with low latency. You don't need to do anything to enable the replication. 
-* When the primary zone fails, a secondary zone is elected as the primary to prevent your service instance from being affected. 
 * If 2 zones fail at the same time, the service is down.
 
 The MZR architecture offers automatic failover between 2 zones, and high availability for a logging instance withing a region.
@@ -94,9 +93,6 @@ Disaster recovery is about surviving a catastrophic failure or loss of availabil
 
 If a regional disaster occurs, consider the following information:
 * The estimated recovery time for rebuilding the regional site and restoring the service at another location is 24 hours.
-* Older data will not be available when the service is restored. If you need access to older data, you can access your archive data directly in {{site.data.keyword.cos_full_notm}} or use the {{site.data.keyword.sqlquery_short}} service to access it.  
-* You might have 1 or more logging instances in the region. When these service instances are available in the new location, you will be able to use them while the data is restored into the newly constructed region. 
-* You will have to update the endpoints of applications and LogDNA agents to point to the ingestion endpoint in the new location. 
-
-
+* Older data will not be available when the service is restored. Services that are restored will be available to receive data buffered at end points during course of the outage and future ingested data.  Data previously retained is available through your archives and is not reloaded into your service instance. You can access your archive data directly in {{site.data.keyword.cos_full_notm}} or use the {{site.data.keyword.sqlquery_short}} service to access it.  
+* You might have 1 or more logging instances in the region. When these service instances are available in the new location, you will be able to use them. However, you will have to update the endpoints of applications and LogDNA agents to point to the ingestion endpoint in the new location. 
 
