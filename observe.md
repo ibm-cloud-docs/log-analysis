@@ -37,7 +37,7 @@ Complete the following steps to launch the logging web UI:
 
 1. [Log in to your {{site.data.keyword.cloud_notm}} account](https://cloud.ibm.com/login){: external}.
 
-2. Click the **Menu** icon ![Menu icon](images/icon_hamburger.svg) &gt; **Observability**. 
+2. Click the **Menu** icon ![Menu icon](../icons/icon_hamburger.svg) &gt; **Observability**. 
 
 3. Select **Logging** to go to the *Logging UI*. 
 

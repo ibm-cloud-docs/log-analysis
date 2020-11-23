@@ -2,38 +2,30 @@
 {:topicgroup: .topicgroup}
 
 {: .toc subcollection="Log-Analysis-with-LogDNA" audience="service" category="logging_monitoring" href="/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-getting-started#getting-started" console-page="/catalog/services/ibm-log-analysis-with-logdna" product-page="https://www.ibm.com/cloud/log-analysis" path="Log-Analysis-with-LogDNA"}
-IBM Log Analysis with LogDNA
+Log Analysis with LogDNA
 
     {: .navgroup id="learn"}
     getting-started.md
-    logdna_agent.md
+    agent/logdna_agent.md
 
     {: .topicgroup}
     Logging IBM Cloud services
-        config_svc_logs.md
-        cloud_services.md
-        cloud_services_locations.md
+        platform-logs/config_svc_logs.md
+        platform-logs/cloud_services.md
+        platform-logs/cloud_services_locations.md
+        platform-logs/cloud_services_agent.md
 
     {: .topicgroup}
-    Logging Infrastructure services
-        monitor_cfapp_logs.md
+    Logging infrastructure
+        infrastructure/monitor_cfapp_logs.md
         tutorials/kube.md
-        tutorials/ubuntu.md
+        infrastructure/ubuntu-baremetal.md
+        infrastructure/ubuntu-vpc.md
 
     {: .topicgroup}
     Security and compliance
-        adoption.md
-        manage_eu_logs.md
-        data-security.md
-        iam.md
-        service-connection.md
-        architecture-workload-isolation.md
-        ha-dr.md
-        at_events.md
-
-    {: .topicgroup}
-    Tutorials
-        tutorials/kube_reset_ingestion.md
+        compliance/adoption.md
+        compliance/manage_eu_logs.md
     {: .navgroup-end}
 
     {: .navgroup id="howto"}
@@ -42,6 +34,7 @@ IBM Log Analysis with LogDNA
     remove.md
     upgrade.md
     observe.md
+    iam.md
     
     {: .topicgroup}
     LogDNA web UI
@@ -51,47 +44,58 @@ IBM Log Analysis with LogDNA
         
    {: .topicgroup}
     DevOps tasks
-        archive.md
-        control_usage.md
-        exclusion_rules.md
-        work_iam.md
-        ingestion_key.md
-        reuse_resource_definitions.md
+        devops/archive.md
+        devops/control_usage.md
+        devops/exclusion_rules.md
+        devops/work_iam.md
+        devops/ingestion_key.md
+        devops/reuse_resource_definitions.md
 
     {: .topicgroup}
     LogDNA agent
-        logdna_agent_image.md
-        config_agent_kube_cluster.md
-        config_agent_os_cluster.md
-        config_agent_linux.md
-        detach_agent.md
-        exclude_logs_from_agent.md
-        adding_tags.md
-        upgrade_logdna_agent_2.md
+        agent/logdna_agent_image.md
+        agent/config_agent_kube_cluster.md
+        agent/config_agent_os_cluster.md
+        agent/config_agent_linux.md
+        agent/detach_agent.md
+        agent/exclude_logs_from_agent.md
+        agent/adding_tags.md
+        agent/upgrade_logdna_agent_2.md
+        tutorials/kube_reset_ingestion.md
 
     {: .topicgroup}
     View logs
-        view_logs.md
-        alerts.md
+        devops/view_logs.md
+        devops/alerts.md
 
     {: .topicgroup}
     Export logs
-        export_config.md
-        service_keys.md
-        export.md
-        export_api.md
+        devops/export_config.md
+        devops/service_keys.md
+        devops/export.md
+        devops/export_api.md
 
     {: .topicgroup}
     Send logs
         ingest.md
         [LogDNA ingestion limitations](https://docs.logdna.com/docs/ingestion#service-limits)
+    
+    {: .topicgroup}
+    Logging and monitoring
+        core/at_events.md
+
+    {: .topicgroup}
+    Enhancing security
+        core/architecture-workload-isolation.md
+        core/service-connection.md
+        core/data-security.md
     {: .navgroup-end}
 
     {: .navgroup id="reference"}
     endpoints.md
     regions.md
     service_plans.md
-    shared-responsibilities.md
+    core/shared-responsibilities.md
     [LogDNA Product Page](https://logdna.com/)
     [LogDNA Documentation](https://docs.logdna.com/docs)
     [LogDNA Blog](https://blog.logdna.com/)

@@ -53,7 +53,7 @@ To configure a logging instance from the Observability dashboard in the {{site.d
 
 	After you log in, the {{site.data.keyword.cloud_notm}} UI opens.
 
-2. Go to the menu icon ![Menu icon](images/icon_hamburger.svg) &gt; **Observability** to access the *Observability* dashboard.
+2. Go to the menu icon ![menu icon](../icons/icon_hamburger.svg) &gt; **Observability** to access the *Observability* dashboard.
 
 3. Select **Logging**, then click **Configure platform logs**. 
 

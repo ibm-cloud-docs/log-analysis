@@ -162,7 +162,7 @@ Resource groups are a logical container for organizing your IAM-enabled resource
 **Use resource groups to organize your {{site.data.keyword.la_full_notm}} instances for access control and billing purposes.**
 {: tip}
 
-Account owners can add resources to any resource group. Other users must be granted access by using an IAM access policy to add resources to resource groups. For more information, see [Best practices for organizing resources in a resource group](/docs/resources?topic=resources-bp_resourcegroups).
+Account owners can add resources to any resource group. Other users must be granted access by using an IAM access policy to add resources to resource groups. For more information, see [Best practices for organizing resources and assigning access](/docs/account?topic=account-account_setup).
 
 **When you define your resource groups, do not add sensitive information in the name.**
 {: tip}
@@ -183,7 +183,7 @@ The service plan that you choose for a LogDNA instance determines the number of 
 **Choose your plan based on the number of days that you need to be able to search data online through the web UI.**
 {: tip}
 
-The HIPAA plan has a maximum of 25 users. If you need to grant permissions to more than 25 users, [open a support ticket](/docs/get-support?topic=get-support-getting-customer-support#getting-customer-support).
+The HIPAA plan has a maximum of 25 users. If you need to grant permissions to more than 25 users, [open a support ticket](/docs/get-support).
 
 
 ### Tags
@@ -328,7 +328,7 @@ You can assign a single policy to the access group instead of assigning the same
 
 Multi-factor authentication (MFA) adds an extra layer of security to your account by requiring all users to authenticate by using an additional authentication method beyond an ID and password. This is also commonly known as two-factor authentication (2FA). 
 
-The {{site.data.keyword.cloud_notm}} account owner or administrator for the billing service can choose to require multi-factor authentication (MFA) for every user in the account or just users with non-federated IDs who do not use SSO. All users with an IBMid use a time-based one-time passcode (TOTP) MFA method, and any users with a different type of ID must be enabled to use the time-based one-time passcode authentication (TOTP), security questions, or an external authentication method separately. [Learn more](/docs/iam?topic=iam-enablemfa).
+The {{site.data.keyword.cloud_notm}} account owner or administrator for the billing service can choose to require multi-factor authentication (MFA) for every user in the account or just users with non-federated IDs who do not use SSO. All users with an IBMid use a time-based one-time passcode (TOTP) MFA method, and any users with a different type of ID must be enabled to use the time-based one-time passcode authentication (TOTP), security questions, or an external authentication method separately. [Learn more](/docs/account?topic=account-enablemfa).
 
 You can also configure MFA options such as security questions, using a time-based one-time passcode, and using an external authentication method. These types of MFA options are specific per account and are available only with former classic infrastructure accounts.
 
@@ -368,7 +368,7 @@ Consider the following limitations:
 **If you have an additional firewall set up, or you have customized the firewall settings in your {{site.data.keyword.cloud_notm}} infrastructure, you must allow outgoing network traffic to the {{site.data.keyword.la_full_notm}} service on TCP port 443 and TCP port 80 in your firewall. The API endpoint is required for LogDNA agent authentication.**
 {: tip}
 
-If you have an additional firewall set up, or you have customized the firewall settings in your {{site.data.keyword.cloud_notm}} infrastructure, and you want to configure the LogDNA agent to connect to the logging instance through the private network, open a support ticket to request the private IP addresses that you must enable in your firewall. For information about opening an IBM support ticket, see [Getting support](/docs/get-support?topic=get-support-getting-customer-support#getting-customer-support).
+If you have an additional firewall set up, or you have customized the firewall settings in your {{site.data.keyword.cloud_notm}} infrastructure, and you want to configure the LogDNA agent to connect to the logging instance through the private network, open a support ticket to request the private IP addresses that you must enable in your firewall. For information about opening an IBM support ticket, see [Getting support](/docs/get-support).
 {: tip}
 
 
@@ -608,7 +608,7 @@ In COS, you can define policies to control the permissions that are granted to s
 ### EU supported account
 {: #adoption_archive_5}
 
-When you archive logs from the Frankfurt LogDNA instance to {an {{site.data.keyword.cos_full_notm}} (COS) bucket, consider the following information:
+When you archive logs from the Frankfurt LogDNA instance to an {{site.data.keyword.cos_full_notm}} (COS) bucket, consider the following information:
 * When you provision an instance of the COS service, this instance is a global one in your account. It is not region bound.
 * You must configure a bucket that complies with the EU-Supported and GDPR regulations. For the list of COS EU-supported endpoints, see [EU-supported endpoints](/docs/cloud-object-storage?topic=cloud-object-storage-endpoints#endpoints-eu-managed).
 

@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2020
-lastupdated: "2020-07-28"
+lastupdated: "2020-08-25"
 
 keywords: LogDNA, IBM, Log Analysis, logging, services
 
@@ -35,29 +35,6 @@ You can monitor logs from CF apps and enabled services through [the {{site.data.
 Notice that there is only 1 instance per location with the flag **Platform logs**.
 {: important}
 
-## Analytics services
-{: #analytics}
-
-The following table lists Cloud services that send logs to {{site.data.keyword.la_full_notm}}:
-
-| Service     | Description |  More info 
-|-------------|-------------|--------------------------------------------------------------------------------------------|
-| [{{site.data.keyword.iae_full_notm}}](/docs/AnalyticsEngine?topic=AnalyticsEngine-getting-started) | {{site.data.keyword.iae_full_notm}} provides a flexible framework to develop and deploy analytics applications in Apache Hadoop and Apache Spark. | [More info](/docs/AnalyticsEngine?topic=AnalyticsEngine-log-aggregation#reconfiguring-log-aggregation) | 
-{: caption="Table 1. List of Blockchain services" caption-side="top"} 
-
-To see the list of {{site.data.keyword.la_full_notm}} locations where these services send logs, see [Analytics services](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-cloud_services_locations#cs_locations_analytics).
-
-## Blockchain services
-{: #blockchain}
-
-The following table lists Cloud services that send logs to {{site.data.keyword.la_full_notm}}:
-
-| Service     | Description |  More info 
-|-------------|-------------|--------------------------------------------------------------------------------------------|
-| [{{site.data.keyword.blockchainfull_notm}}](/docs/blockchain?topic=blockchain-get-started-ibp) | {{site.data.keyword.blockchainfull}} Platform provides a managed and full stack blockchain-as-a-service (BaaS) offering that allows you to deploy blockchain components in environments of your choice. | [More info](/docs/blockchain?topic=blockchain-ibp-LogDNA) | 
-{: caption="Table 2. List of Blockchain services" caption-side="top"} 
-
-To see the list of {{site.data.keyword.la_full_notm}} locations where these services send logs, see [Container services](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-cloud_services_locations#cs_locations_blockchain).
 
 ## Cloud Foundry
 {: #platform_cfapps}
@@ -105,6 +82,8 @@ The following table lists services that send logs to {{site.data.keyword.la_full
 |-------------|-------------|--------------------------------------------------------------------------------------------|--------------|-----------------|
 | [{{site.data.keyword.cloudant_short_notm}}](/docs/Cloudant?topic=Cloudant-getting-started-with-cloudant)    | {{site.data.keyword.cloudant_short_notm}} is a document-oriented database as a service (DBaaS). It stores data as documents in JSON format. | [More info](/docs/Cloudant?topic=Cloudant-log-analysis-integration) | 
 | [{{site.data.keyword.databases-for-elasticsearch_full_notm}}](/docs/databases-for-elasticsearch?topic=databases-for-elasticsearch-getting-started) | {{site.data.keyword.databases-for-elasticsearch_full_notm}} is a managed Elasticsearch service that is hosted in the {{site.data.keyword.cloud_notm}} and integrated with other {{site.data.keyword.cloud_notm}} services. | [More info](/docs/databases-for-elasticsearch?topic=cloud-databases-logging) |
+| [{{site.data.keyword.databases-for-enterprisedb_full}}](/docs/databases-for-enterprisedb?topic=databases-for-enterprisedb-getting-started) | {{site.data.keyword.databases-for-enterprisedb}} is a database engine that optimizes the built-in features of PostgreSQL. | [More info](/docs/databases-for-enterprisedb?topic=cloud-databases-logging) | 
+| [{{site.data.keyword.databases-for-cassandra_full}}](/docs/databases-for-cassandra?topic=databases-for-cassandra-getting-started) | {{site.data.keyword.databases-for-cassandra_full}} is a scale-out NoSQL database that is built on Apache Cassandra. It’s designed to power real-time applications with high availability and massive scalability. | [More info](/docs/databases-for-cassandra?topic=cloud-databases-logging) | 
 | [{{site.data.keyword.databases-for-etcd_full_notm}}](/docs/databases-for-etcd?topic=databases-for-etcd-getting-started) | {{site.data.keyword.databases-for-etcd_full_notm}} is a managed etcd service that is hosted in the {{site.data.keyword.cloud_notm}} and integrated with other {{site.data.keyword.cloud_notm}} services. | [More info](/docs/databases-for-etcd?topic=cloud-databases-logging) |
 | [{{site.data.keyword.databases-for-mongodb}}](/docs/databases-for-mongodb?topic=databases-for-mongodb-getting-started) | {{site.data.keyword.databases-for-mongodb}} is a managed MongoDB service that is hosted in the {{site.data.keyword.cloud_notm}} and integrated with other {{site.data.keyword.cloud_notm}} services. | [More info](/docs/databases-for-mongodb?topic=cloud-databases-logging) |
 | [{{site.data.keyword.databases-for-postgresql_full_notm}}](/docs/databases-for-postgresql?topic=databases-for-postgresql-getting-started) | {{site.data.keyword.databases-for-postgresql_full_notm}} is a managed PostgreSQL service that is hosted in the {{site.data.keyword.cloud_notm}} and integrated with other {{site.data.keyword.cloud_notm}} services. | [More info](/docs/databases-for-postgresql?topic=cloud-databases-logging) |
@@ -133,7 +112,6 @@ The following table lists services that send logs to {{site.data.keyword.la_full
 {: caption="Table 5. List of integration Cloud services" caption-side="top"} 
 
 To see the list of {{site.data.keyword.la_full_notm}} locations where these services send logs, see [Integration services](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-cloud_services_locations#cs_locations_integration).
-
 
 
 ## Security services
