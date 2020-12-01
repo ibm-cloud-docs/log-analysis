@@ -133,7 +133,7 @@ Next, you can manage user access with IAM.
 
 Identify the IAM policies that a user needs to work with the {{site.data.keyword.la_full_notm}} service.
 
-To learn more about IAM integration with the {{site.data.keyword.la_full_notm}} service, see [Managing user access with IAM](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-iam#iam).
+To learn more about IAM integration with the {{site.data.keyword.la_full_notm}} service, see [Managing IAM policies and access groups](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-work_iam).
 
 For example, choose one user role to learn how to grant permissions to that user to work with the {{site.data.keyword.la_full_notm}} service. 
 

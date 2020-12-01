@@ -80,7 +80,7 @@ Complete the following steps to delete a service key:
 Only users that have the **manager** service role or the **standard-member** service role can view service keys.
 {: important} 
 
-For more information, see [service roles](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-iam#service).
+For more information, see [service roles](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-work_iam).
 
 Complete the following steps to view a service key:
 
