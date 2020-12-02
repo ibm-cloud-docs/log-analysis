@@ -30,7 +30,6 @@ Log Analysis with LogDNA
 
     {: .topicgroup}
     Tutorials
-        infrastructure/kube_reset_ingestion.md
         tutorial/tutorial_use_LogDNA.md
     {: .navgroup-end}
 
