@@ -69,7 +69,8 @@ To configure archiving see [Archiving events to IBM Cloud Object Storage](/docs/
 {: faq}
 
 To lauch the LogDNA web UI, complete the following steps:
-1. Check that you have IAM permissions to view the logging instances through the *Logging* dashboard. You must have **viewer** platform role permissions for the {{site.data.keyword.la_full_notm}} service. [Learn more about managing access with IAM](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-iam).
+1. Check that you have IAM permissions to view the logging instances through the *Logging* dashboard. You must have **viewer** platform role permissions for the {{site.data.keyword.la_full_notm}} service. [Learn more about managing IAM policies and access groups](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-work_iam)
+.
 2. [Launch the LogDNA web UI](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-launch).
 
 ## How do I reset an ingestion key?

@@ -94,7 +94,8 @@ Learn more about how to detach an agent, see [Disconnecting a LogDNA agent](/doc
 
 {{site.data.keyword.iamlong}} (IAM) enables you to securely authenticate users and control access to all cloud resources consistently in the {{site.data.keyword.cloud_notm}}.
 
-**Every user that accesses the {{site.data.keyword.la_full_notm}} service in your account must be assigned an access policy with an IAM user role defined.** The policy determines what actions the user can perform within the context of the service or instance you select. The allowable actions are customized and defined as operations that are allowed to be performed on the service. The actions are then mapped to IAM user roles. [Learn more about the IAM user roles for the {{site.data.keyword.la_full_notm}}](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-iam#service).
+**Every user that accesses the {{site.data.keyword.la_full_notm}} service in your account must be assigned an access policy with an IAM user role defined.** The policy determines what actions the user can perform within the context of the service or instance you select. The allowable actions are customized and defined as operations that are allowed to be performed on the service. The actions are then mapped to IAM user roles. [Learn more about the IAM user roles for the {{site.data.keyword.la_full_notm}}](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-work_iam)
+.
 
 You might have users across different geographies. However, to comply with EU law, only EU personel can see and access log data from your EU-supported infrastructure, apps, and services. To restrict access to users, you can configure an access group, and define policies that restrict access to those users to the instances that you have configured in Frankfurt.
 

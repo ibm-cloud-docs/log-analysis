@@ -51,14 +51,14 @@ As soon as you open the web UI in a location, this is the view that you see.
 
 All logs in your instance are displayed through this view.
 
-To learn how to view logs through this view, see [Viewing logs](/docs/Activity-Tracker-with-LogDNA?topic=Activity-Tracker-with-LogDNA-view_logs#view_logs_step1).
+To learn how to view logs through this view, see [Monitoring events through the default view](/docs/Activity-Tracker-with-LogDNA?topic=Activity-Tracker-with-LogDNA-view_events#view_events_step1).
 
 ## Monitoring logs through custom views
 {: #mon_cus_view}
 
 You might want to monitor a set of logs in your account. To anayze a subset of logs, you can create custom views. 
 
-You create a custom view by applying a search query that defines what logs to display through the view. [Learn more](/docs/Activity-Tracker-with-LogDNA?topic=Activity-Tracker-with-LogDNA-view_logs#view_logs_step2).
+You create a custom view by applying a search query that defines what logs to display through the view. [Learn more](/docs/Activity-Tracker-with-LogDNA?topic=Activity-Tracker-with-LogDNA-view_events#view_events_step2).
 
 You can also run any of the following tasks:
 
@@ -74,7 +74,7 @@ You can also run any of the following tasks:
 
 You might want to see logs within a specific timeframe.
 
-You can select the logs that are displayed through a view by [applying a timeframe](/docs/Activity-Tracker-with-LogDNA?topic=Activity-Tracker-with-LogDNA-view_logs#view_logs_step3).
+You can select the logs that are displayed through a view by [applying a timeframe](/docs/Activity-Tracker-with-LogDNA?topic=Activity-Tracker-with-LogDNA-view_events#view_events_step3).
 
 You can apply a timestamp by specifying an absolute time, a relative time, or a time range.
 

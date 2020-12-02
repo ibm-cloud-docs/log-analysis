@@ -298,8 +298,10 @@ Access to resources within a resource group can be granted to all resources in a
 Access policies set a target, which is typically a service instance or all instances of a service in a resource group, and a role, which defines what type of access is allowed.
 
 Roles define the actions that a user or serviceID can run. There are different types of roles in the {{site.data.keyword.cloud_notm}}:
-* *Platform management roles* define permissions to work with the service at the platform level, for example, some actions are assign user access for the service, create or delete service IDs, create instances, assign policies for your service to other users, and bind instances to applications. [Learn more](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-iam#platform).
-* *Service access roles* define permissions for calling the service's API. [Learn more](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-iam#service).
+* *Platform management roles* define permissions to work with the service at the platform level, for example, some actions are assign user access for the service, create or delete service IDs, create instances, assign policies for your service to other users, and bind instances to applications. [Learn more](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-work_iam)
+.
+* *Service access roles* define permissions for calling the service's API. [Learn more](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-work_iam)
+.
 
 **For each access group, define a policy for each resource group that specifies the permissions granted to work with the resource group, the permissions to manage instances of the {{site.data.keyword.la_full_notm}} service in that resource group, and the permissions to run {{site.data.keyword.la_full_notm}} tasks.**
 {: tip}
