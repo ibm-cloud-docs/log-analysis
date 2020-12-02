@@ -83,7 +83,8 @@ Complete the following steps:
 ## Next steps
 {: #compliance_hipaa_iam}
 
-Restrict access to manage and view the data. [Learn more](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-iam).
+Restrict access to manage and view the data. [Learn more](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-work_iam)
+.
 
 
 
