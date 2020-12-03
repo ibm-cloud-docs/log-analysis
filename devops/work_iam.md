@@ -28,7 +28,7 @@ subcollection: Log-Analysis-with-LogDNA
 You can use {{site.data.keyword.iamlong}} (IAM) to securely authenticate users and control access to all cloud resources consistently in the {{site.data.keyword.cloud_notm}}. 
 {:shortdesc}
 
-For more information, see [Managing user access with IAM](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-iam#iam).
+For more information, see [Managing IAM policies and access groups](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-work_iam).
 
 
 ## Granting permissions to a user to become an administrator of the service in the {{site.data.keyword.cloud_notm}} account

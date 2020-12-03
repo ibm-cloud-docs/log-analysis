@@ -67,7 +67,8 @@ Review the following sections for the specific responsibilities for you and for 
 
 | Task                           | {{site.data.keyword.IBM_notm}} Responsibilities | Your Responsibilities |
 |--------------------------------|-------------------------------------------------|-----------------------|
-| `Manage permissions`           | Provide the ability to restrict access to resouces. </br>{{site.data.keyword.IBM_notm}} is responsible for the security and compliance of {{site.data.keyword.la_full_notm}}. | Restrict access to resources by using Cloud IAM access policies by defining IAM policies to control which users within your account have access to the logging data. </br>[Learn more about controlling access through IAM](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-iam). | 
+| `Manage permissions`           | Provide the ability to restrict access to resouces. </br>{{site.data.keyword.IBM_notm}} is responsible for the security and compliance of {{site.data.keyword.la_full_notm}}. | Restrict access to resources by using Cloud IAM access policies by defining IAM policies to control which users within your account have access to the logging data. </br>[Learn more about controlling access through IAM](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-work_iam)
+. | 
 {: caption="Table 3. Responsibilities for identity and access management" caption-side="top"}
 
 

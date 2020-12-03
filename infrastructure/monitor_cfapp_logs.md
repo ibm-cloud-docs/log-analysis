@@ -24,7 +24,7 @@ subcollection: Log-Analysis-with-LogDNA
 {:external: target="_blank" .external}
 
 
-# Collecting and analyzing logs from CF resources
+# Logging in Cloud Foundry
 {: #monitor_cfapp_logs}
 
 In {{site.data.keyword.cloud}} public, you can monitor logs from Cloud Foundry (CF) resources that run in the {{site.data.keyword.cloud_notm}} or outside the {{site.data.keyword.cloud_notm}} by using the {{site.data.keyword.la_full_notm}} service. You can view, filter, search, and analyze these logs through the web UI for a number of days that is determined by the plan of your logging instance. You can also configure archiving, and have access to those logs through the archived files.
@@ -118,7 +118,8 @@ You have different options to collect and forward logs to an instance of the {{s
 | `Higher throughput at ingestion`              | ![Checkmark icon](../images/checkmark-icon.svg)              | `NO`                                               |
 {: caption="Table 4. Information about the methods that can be adopted to monitor CF resource logs in {{site.data.keyword.cloud_notm}}" caption-side="top"}
 
-Another consideration is the restriction that you can apply to users to control access to view logs in a logging instance. You can use [IAM to manage users and their access to view logs](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-iam). 
+Another consideration is the restriction that you can apply to users to control access to view logs in a logging instance. You can use [IAM to manage users and their access to view logs](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-work_iam)
+. 
 * When you use the method of a single logging instance to host platform logs, all logs from CF resources that run on that region are available for view through the instance. Any user with a service role `viewer` can see any log entries. 
 * When you use the method of sending CF app logs to a custom logging instance, users with a service role `viewer` can only see logs from CF app logs that are configured to stream logs to this logging instance.
 In both cases, users can also view logs from other sources that you might have configured to forward logs to the instance.
