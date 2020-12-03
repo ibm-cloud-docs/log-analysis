@@ -77,7 +77,7 @@ The following tables list the locations where automatic collection of registry s
 
 | Service                                                         | `Dallas (us-south)` | `Washington (us-east)`                   |
 |-----------------------------------------------------------------|---------------------|--------------------------------------|
-| {{site.data.keyword.registrylong_notm}}                      | ![Checkmark icon](../images/checkmark-icon.svg)             | `NO`                                 |            
+| {{site.data.keyword.registrylong_notm}}                      | ![Checkmark icon](../images/checkmark-icon.svg)             |                                 |            
 {: caption="Table 4. Container services" caption-side="top"}
 {: #cs-con-table-1}
 {: tab-title="America"}
@@ -113,17 +113,17 @@ The following tables list the locations where automatic collection of database s
 
 | Service                                                         | `Dallas (us-south)` | `Washington (us-east)`  |
 |-----------------------------------------------------------------|-------------------|-------------------|
-| {{site.data.keyword.cloudant_short_notm}}                       | ![Checkmark icon](../images/checkmark-icon.svg)             | `NO`                |
-| {{site.data.keyword.databases-for-enterprisedb_full_notm}}      | ![Checkmark icon](../images/checkmark-icon.svg)               | ![Checkmark icon](../images/checkmark-icon.svg) |
-| {{site.data.keyword.databases-for-cassandra_full_notm}}         | ![Checkmark icon](../images/checkmark-icon.svg)               | ![Checkmark icon](../images/checkmark-icon.svg) |
-| {{site.data.keyword.databases-for-elasticsearch_full_notm}}     | ![Checkmark icon](../images/checkmark-icon.svg)             | `NO`                |
-| {{site.data.keyword.databases-for-etcd_full_notm}}              | ![Checkmark icon](../images/checkmark-icon.svg)             | `NO`                |
-| {{site.data.keyword.databases-for-mongodb_full_notm}}           | ![Checkmark icon](../images/checkmark-icon.svg)             | `NO`                |
-| {{site.data.keyword.databases-for-postgresql_full_notm}}        | ![Checkmark icon](../images/checkmark-icon.svg)`               | `NO`                |
-| {{site.data.keyword.messages-for-rabbitmq_full_notm}}           | ![Checkmark icon](../images/checkmark-icon.svg)             | `NO`                |
-| {{site.data.keyword.databases-for-redis_full_notm}}             | ![Checkmark icon](../images/checkmark-icon.svg)             | `NO`                |
-| {{site.data.keyword.cloud_notm}} {{site.data.keyword.ihsdbaas_mongodb_full}}     | ![Checkmark icon](../images/checkmark-icon.svg)             | `NO`                |
-| {{site.data.keyword.cloud_notm}} {{site.data.keyword.ihsdbaas_postgresql_full}}      | ![Checkmark icon](../images/checkmark-icon.svg)        | `NO`                |
+| {{site.data.keyword.cloudant_short_notm}}                       | ![Checkmark icon](../images/checkmark-icon.svg)             |                |
+| {{site.data.keyword.databases-for-enterprisedb_full_notm}}      | ![Checkmark icon](../images/checkmark-icon.svg) | ![Checkmark icon](../images/checkmark-icon.svg) |
+| {{site.data.keyword.databases-for-cassandra_full_notm}}         | ![Checkmark icon](../images/checkmark-icon.svg) | ![Checkmark icon](../images/checkmark-icon.svg) |
+| {{site.data.keyword.databases-for-elasticsearch_full_notm}}     | ![Checkmark icon](../images/checkmark-icon.svg) | ![Checkmark icon](../images/checkmark-icon.svg) |
+| {{site.data.keyword.databases-for-etcd_full_notm}}              | ![Checkmark icon](../images/checkmark-icon.svg) | ![Checkmark icon](../images/checkmark-icon.svg) |
+| {{site.data.keyword.databases-for-mongodb_full_notm}}           | ![Checkmark icon](../images/checkmark-icon.svg) | ![Checkmark icon](../images/checkmark-icon.svg) |
+| {{site.data.keyword.databases-for-postgresql_full_notm}}        | ![Checkmark icon](../images/checkmark-icon.svg) | ![Checkmark icon](../images/checkmark-icon.svg) |
+| {{site.data.keyword.messages-for-rabbitmq_full_notm}}           | ![Checkmark icon](../images/checkmark-icon.svg) | ![Checkmark icon](../images/checkmark-icon.svg) |
+| {{site.data.keyword.databases-for-redis_full_notm}}             | ![Checkmark icon](../images/checkmark-icon.svg) | ![Checkmark icon](../images/checkmark-icon.svg) |
+| {{site.data.keyword.cloud_notm}} {{site.data.keyword.ihsdbaas_mongodb_full}}     | ![Checkmark icon](../images/checkmark-icon.svg)             |                |
+| {{site.data.keyword.cloud_notm}} {{site.data.keyword.ihsdbaas_postgresql_full}}      | ![Checkmark icon](../images/checkmark-icon.svg)        |                |
 {: caption="Table 7. Database services" caption-side="top"}
 {: #cs-dbs-table-1}
 {: tab-title="America"}
@@ -133,17 +133,17 @@ The following tables list the locations where automatic collection of database s
 
 | Service                                                         | `Tokyo (jp-tok)`   |`Sydney (au-syd)` | `Seoul 01 (seo01)`       | `Chennai 01 (che01)`     |`Seoul (kr-seo)` | 
 |-----------------------------------------------------------------|--------------------|------------------|--------------------------|--------------------------|------------------|
-| {{site.data.keyword.cloudant_short_notm}}                       | ![Checkmark icon](../images/checkmark-icon.svg) | ![Checkmark icon](../images/checkmark-icon.svg) | `NO`     | ![Checkmark icon](../images/checkmark-icon.svg) | |
-| {{site.data.keyword.databases-for-enterprisedb_full_notm}}      | ![Checkmark icon](../images/checkmark-icon.svg) |![Checkmark icon](../images/checkmark-icon.svg) | `Logs are available through the Tokyo instance` | ![Checkmark icon](../images/checkmark-icon.svg) | `NO`             | 
-| {{site.data.keyword.databases-for-cassandra_full_notm}}         | ![Checkmark icon](../images/checkmark-icon.svg) |![Checkmark icon](../images/checkmark-icon.svg) | `Logs are available through the Tokyo instance` | ![Checkmark icon](../images/checkmark-icon.svg) | `NO`             |
-| {{site.data.keyword.databases-for-elasticsearch_full_notm}}     | ![Checkmark icon](../images/checkmark-icon.svg) | ![Checkmark icon](../images/checkmark-icon.svg) | `Logs are available through the Log Analysis Tokyo instance` | ![Checkmark icon](../images/checkmark-icon.svg) |  `NO`                     |
-| {{site.data.keyword.databases-for-etcd_full_notm}}              | ![Checkmark icon](../images/checkmark-icon.svg) | ![Checkmark icon](../images/checkmark-icon.svg)| `Logs are available through the Log Analysis Tokyo instance` | ![Checkmark icon](../images/checkmark-icon.svg) |  `NO`                     |
-| {{site.data.keyword.databases-for-mongodb_full_notm}}           | ![Checkmark icon](../images/checkmark-icon.svg)  | ![Checkmark icon](../images/checkmark-icon.svg) | `Logs are available through the Log Analysis Tokyo instance` | ![Checkmark icon](../images/checkmark-icon.svg) |  `NO`                     |
-| {{site.data.keyword.databases-for-postgresql_full_notm}}        | ![Checkmark icon](../images/checkmark-icon.svg)  | ![Checkmark icon](../images/checkmark-icon.svg) | `Logs are available through the Log Analysis Tokyo instance` | ![Checkmark icon](../images/checkmark-icon.svg) |  `NO`                     |
-| {{site.data.keyword.messages-for-rabbitmq_full_notm}}           | ![Checkmark icon](../images/checkmark-icon.svg)  | ![Checkmark icon](../images/checkmark-icon.svg) | `Logs are available through the Log Analysis Tokyo instance` | ![Checkmark icon](../images/checkmark-icon.svg) |  `NO`                     |
-| {{site.data.keyword.databases-for-redis_full_notm}}             | ![Checkmark icon](../images/checkmark-icon.svg)  | ![Checkmark icon](../images/checkmark-icon.svg) | `Logs are available through the Log Analysis Tokyo instance` | ![Checkmark icon](../images/checkmark-icon.svg) |  `NO`                     |
-| {{site.data.keyword.cloud_notm}} {{site.data.keyword.ihsdbaas_mongodb_full}}             | `NO`    | `Logs are available through the Log Analysis Dallas instance`        | `NO` | `NO` |  `NO` |
-| {{site.data.keyword.cloud_notm}} {{site.data.keyword.ihsdbaas_postgresql_full}}     | `NO`    | `Logs are available through the Log Analysis Dallas instance`        | `NO` | `NO` |  `NO`  |
+| {{site.data.keyword.cloudant_short_notm}}                       | ![Checkmark icon](../images/checkmark-icon.svg) | ![Checkmark icon](../images/checkmark-icon.svg) |     | ![Checkmark icon](../images/checkmark-icon.svg) | |
+| {{site.data.keyword.databases-for-enterprisedb_full_notm}}      | ![Checkmark icon](../images/checkmark-icon.svg) |![Checkmark icon](../images/checkmark-icon.svg) | `Logs are available through the Tokyo instance` | ![Checkmark icon](../images/checkmark-icon.svg) |             | 
+| {{site.data.keyword.databases-for-cassandra_full_notm}}         | ![Checkmark icon](../images/checkmark-icon.svg) |![Checkmark icon](../images/checkmark-icon.svg) | `Logs are available through the Tokyo instance` | ![Checkmark icon](../images/checkmark-icon.svg) |             |
+| {{site.data.keyword.databases-for-elasticsearch_full_notm}}     | ![Checkmark icon](../images/checkmark-icon.svg) | ![Checkmark icon](../images/checkmark-icon.svg) | `Logs are available through the Log Analysis Tokyo instance` | ![Checkmark icon](../images/checkmark-icon.svg) |                      |
+| {{site.data.keyword.databases-for-etcd_full_notm}}              | ![Checkmark icon](../images/checkmark-icon.svg) | ![Checkmark icon](../images/checkmark-icon.svg)| `Logs are available through the Log Analysis Tokyo instance` | ![Checkmark icon](../images/checkmark-icon.svg) |                      |
+| {{site.data.keyword.databases-for-mongodb_full_notm}}           | ![Checkmark icon](../images/checkmark-icon.svg)  | ![Checkmark icon](../images/checkmark-icon.svg) | `Logs are available through the Log Analysis Tokyo instance` | ![Checkmark icon](../images/checkmark-icon.svg) |                      |
+| {{site.data.keyword.databases-for-postgresql_full_notm}}        | ![Checkmark icon](../images/checkmark-icon.svg)  | ![Checkmark icon](../images/checkmark-icon.svg) | `Logs are available through the Log Analysis Tokyo instance` | ![Checkmark icon](../images/checkmark-icon.svg) |                      |
+| {{site.data.keyword.messages-for-rabbitmq_full_notm}}           | ![Checkmark icon](../images/checkmark-icon.svg)  | ![Checkmark icon](../images/checkmark-icon.svg) | `Logs are available through the Log Analysis Tokyo instance` | ![Checkmark icon](../images/checkmark-icon.svg) |                      |
+| {{site.data.keyword.databases-for-redis_full_notm}}             | ![Checkmark icon](../images/checkmark-icon.svg)  | ![Checkmark icon](../images/checkmark-icon.svg) | `Logs are available through the Log Analysis Tokyo instance` | ![Checkmark icon](../images/checkmark-icon.svg) |                      |
+| {{site.data.keyword.cloud_notm}} {{site.data.keyword.ihsdbaas_mongodb_full}}             |    | `Logs are available through the Log Analysis Dallas instance`        |   |   |    |
+| {{site.data.keyword.cloud_notm}} {{site.data.keyword.ihsdbaas_postgresql_full}}     |    | `Logs are available through the Log Analysis Dallas instance`        |   |   |   |
 {: caption="Table 8. Database services" caption-side="top"}
 {: #cs-dbs-table-2}
 {: tab-title="Asia Pacific"}
@@ -153,15 +153,15 @@ The following tables list the locations where automatic collection of database s
 
 | Service                                                       |`Frankfurt (eu-de)`  | `London (eu-gb)` | `Oslo 01 (osl01)`         |
 |---------------------------------------------------------------|-------------------|----------------|--------------------------|
-| {{site.data.keyword.cloudant_short_notm}}                     | ![Checkmark icon](../images/checkmark-icon.svg) | ![Checkmark icon](../images/checkmark-icon.svg) | `NO`                      |
+| {{site.data.keyword.cloudant_short_notm}}                     | ![Checkmark icon](../images/checkmark-icon.svg) | ![Checkmark icon](../images/checkmark-icon.svg) |                      |
 | {{site.data.keyword.databases-for-elasticsearch_full_notm}}   | ![Checkmark icon](../images/checkmark-icon.svg)| ![Checkmark icon](../images/checkmark-icon.svg)          | `Logs are available through the Log Analysis London instance` |
 | {{site.data.keyword.databases-for-etcd_full_notm}}            | ![Checkmark icon](../images/checkmark-icon.svg)| ![Checkmark icon](../images/checkmark-icon.svg)          | `Logs are available through the Log Analysis London instance` |
 | {{site.data.keyword.databases-for-mongodb_full_notm}}         | ![Checkmark icon](../images/checkmark-icon.svg)| ![Checkmark icon](../images/checkmark-icon.svg)          | `Logs are available through the Log Analysis London instance` |
 | {{site.data.keyword.databases-for-postgresql_full_notm}}      | ![Checkmark icon](../images/checkmark-icon.svg) | ![Checkmark icon](../images/checkmark-icon.svg)          | `Logs are available through the Log Analysis London instance` |
 | {{site.data.keyword.messages-for-rabbitmq_full_notm}}         | ![Checkmark icon](../images/checkmark-icon.svg)| ![Checkmark icon](../images/checkmark-icon.svg)          | `Logs are available through the Log Analysis London instance` |
 | {{site.data.keyword.databases-for-redis_full_notm}}           | ![Checkmark icon](../images/checkmark-icon.svg)| ![Checkmark icon](../images/checkmark-icon.svg)          | `Logs are available through the Log Analysis London instance` |
-| {{site.data.keyword.cloud_notm}} {{site.data.keyword.ihsdbaas_mongodb_full}}           | ![Checkmark icon](../images/checkmark-icon.svg)              |     `NO`       |     `NO`    |
-| {{site.data.keyword.cloud_notm}} {{site.data.keyword.ihsdbaas_postgresql_full}}           | ![Checkmark icon](../images/checkmark-icon.svg)              |     `NO`       |     `NO`    |
+| {{site.data.keyword.cloud_notm}} {{site.data.keyword.ihsdbaas_mongodb_full}}           | ![Checkmark icon](../images/checkmark-icon.svg)              |           |        |
+| {{site.data.keyword.cloud_notm}} {{site.data.keyword.ihsdbaas_postgresql_full}}           | ![Checkmark icon](../images/checkmark-icon.svg)              |           |        |
 {: caption="Table 9. Database services" caption-side="top"}
 {: #cs-dbs-table-3}
 {: tab-title="Europe"}
@@ -176,7 +176,7 @@ The following tables list the locations where automatic collection of database s
 
 | Service                                         | `Dallas (us-south)`                          | `Washington (us-east)`            |
 |-------------------------------------------------|----------------------------------------------|-----------------------------------|
-| {{site.data.keyword.appconservicefull}}         | ![Checkmark icon](../images/checkmark-icon.svg) | `NO`                              |
+| {{site.data.keyword.appconservicefull}}         | ![Checkmark icon](../images/checkmark-icon.svg) |                              |
 | {{site.data.keyword.mq_short}}                  | ![Checkmark icon](../images/checkmark-icon.svg) | ![Checkmark icon](../images/checkmark-icon.svg) |            
 {: caption="Table 10. Integration services" caption-side="top"}
 {: #cs-int-table-10}
@@ -187,8 +187,8 @@ The following tables list the locations where automatic collection of database s
 
 | Service                                                         | `Tokyo (jp-tok)` |`Sydney (au-syd)`           |
 |-----------------------------------------------------------------|----------------|---------------------------|
-| {{site.data.keyword.appconservicefull}}                      | `NO`    | ![Checkmark icon](../images/checkmark-icon.svg)|
-| {{site.data.keyword.mq_short}}                               |  `NO`    | ![Checkmark icon](../images/checkmark-icon.svg)|
+| {{site.data.keyword.appconservicefull}}                      |    | ![Checkmark icon](../images/checkmark-icon.svg)|
+| {{site.data.keyword.mq_short}}                               |     | ![Checkmark icon](../images/checkmark-icon.svg)|
 {: caption="Table 11. Integration services" caption-side="top"}
 {: #cs-int-table-11}
 {: tab-title="Asia Pacific"}
@@ -198,7 +198,7 @@ The following tables list the locations where automatic collection of database s
 
 | Service                                                       |`Frankfurt (eu-de)`  | `London (eu-gb)` |
 |---------------------------------------------------------------|-------------------|----------------|
-| {{site.data.keyword.appconservicefull}}                    |  `NO`              | ![Checkmark icon](../images/checkmark-icon.svg)|
+| {{site.data.keyword.appconservicefull}}                    |               | ![Checkmark icon](../images/checkmark-icon.svg)|
 | {{site.data.keyword.mq_short}}                  | ![Checkmark icon](../images/checkmark-icon.svg) | ![Checkmark icon](../images/checkmark-icon.svg) |
 {: caption="Table 12. Integration services" caption-side="top"}
 {: #cs-int-table-12}
@@ -214,7 +214,7 @@ The following tables list the locations where automatic collection of database s
 
 | Service                                                         | `Dallas (us-south)` | `Washington (us-east)`                   |
 |-----------------------------------------------------------------|---------------------|--------------------------------------|
-| {{site.data.keyword.loadbalancer_full}} `[1]`                | ![Checkmark icon](../images/checkmark-icon.svg)             | `NO`                                 |            
+| {{site.data.keyword.loadbalancer_full}} `[1]`                | ![Checkmark icon](../images/checkmark-icon.svg)             |                                 |            
 {: caption="Table 13. Networking services" caption-side="top"}
 {: #cs-net-table-13}
 {: tab-title="America"}
@@ -224,7 +224,7 @@ The following tables list the locations where automatic collection of database s
 
 | Service                                                         | `Tokyo (jp-tok)` |`Sydney (au-syd)`           |
 |-----------------------------------------------------------------|----------------|---------------------------|
-| {{site.data.keyword.loadbalancer_full}} `[1]`                  | `NO`    | `NO`  |
+| {{site.data.keyword.loadbalancer_full}} `[1]`                  |    |  |
 {: caption="Table 14. Networking services" caption-side="top"}
 {: #cs-net-table-14}
 {: tab-title="Asia Pacific"}
@@ -234,7 +234,7 @@ The following tables list the locations where automatic collection of database s
 
 | Service                                                       |`Frankfurt (eu-de)`  | `London (eu-gb)` |
 |---------------------------------------------------------------|-------------------|----------------|
-| {{site.data.keyword.loadbalancer_full}} `[1]`               |  `NO`              | `NO`  |
+| {{site.data.keyword.loadbalancer_full}} `[1]`               |               |  |
 {: caption="Table 15. Networking services" caption-side="top"}
 {: #cs-net-table-15}
 {: tab-title="Europe"}
@@ -252,7 +252,7 @@ The following tables list the locations where automatic collection of security s
 
 | Service                                                         | `Dallas (us-south)` | `Washington (us-east)`                   |
 |-----------------------------------------------------------------|---------------------|--------------------------------------|
-| {{site.data.keyword.cloudcerts_full_notm}}                      | ![Checkmark icon](../images/checkmark-icon.svg)             | `NO`                                 |            
+| {{site.data.keyword.cloudcerts_full_notm}}                      | ![Checkmark icon](../images/checkmark-icon.svg)             |                                 |            
 {: caption="Table 16. Security services" caption-side="top"}
 {: #cs-sec-table-16}
 {: tab-title="America"}
@@ -335,7 +335,7 @@ The followinf locations are valid for VPC Gen 1 and VPC Gen 2:
 
 | Service                                                         | `Tokyo (jp-tok)` |`Sydney (au-syd)`           |
 |-----------------------------------------------------------------|----------------|---------------------------|
-| {{site.data.keyword.iva_full_notm}}                                                | `NO`            | `NO` |
+| {{site.data.keyword.iva_full_notm}}                                                |            |   |
 {: caption="Table 23. Watson AI in AP locations" caption-side="top"}
 {: #cs-wat-table-23}
 {: tab-title="Asia Pacific"}
@@ -345,7 +345,7 @@ The followinf locations are valid for VPC Gen 1 and VPC Gen 2:
 
 | Service                                                       |`Frankfurt (eu-de)`  | `London (eu-gb)` |
 |---------------------------------------------------------------|-------------------|----------------|
-| {{site.data.keyword.iva_full_notm}}                           | `NO`  |  `NO` |
+| {{site.data.keyword.iva_full_notm}}                           |  |    |
 {: caption="Table 24. Watson AI in Europe locations" caption-side="top"}
 {: #cs-wat-table-24}
 {: tab-title="Europe"}
