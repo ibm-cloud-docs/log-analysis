@@ -6,7 +6,7 @@ lastupdated: "2020-12-07"
 
 keywords: IBM Cloud, LogDNA, {{site.data.keyword.la_short}}, EU-supported
 
-subcollection: Activity-Tracker-with-LogDNA
+subcollection: Log-Analysis-with-LogDNA
 
 ---
 
@@ -390,7 +390,7 @@ INTO cos://eu-de/results-marisa STORED AS CSV
 
 The following table lists the event fields and the column name that you must use when you build your SQL queries:
 
-| Activity Tracker event field   | SLQ query column name |
+| Log Analysis event field   | SLQ query column name |
 |--------------------------------|-----------------------|
 | `id`                           | `_source.id`          |
 | `eventTime`                    | `_source.eventTime`   |
