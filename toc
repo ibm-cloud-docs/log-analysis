@@ -102,6 +102,7 @@ Log Analysis with LogDNA
     regions.md
     service_plans.md
     core/shared-responsibilities.md
+    releasenotes.md
 
     {: .topicgroup}
     High availability and disaster recovery
