@@ -48,13 +48,14 @@ Log Analysis with LogDNA
         get_logdna_web_url.md
 
    {: .topicgroup}
-    DevOps tasks
+    DevOps admin tasks
         devops/archive.md
         devops/control_usage.md
         devops/exclusion_rules.md
         devops/work_iam.md
         devops/ingestion_key.md
         devops/reuse_resource_definitions.md
+        sqlquery.md
 
     {: .topicgroup}
     LogDNA agent
