@@ -168,13 +168,13 @@ Where
 
 * `SERVICE_INSTANCE_NAME` is the name of the instance that you provisioned in the previous step.
 * `NAME` is the name of the service ID. Use the following format to name the key **<SERVICE_INSTANCE_NAME>-key-admin**
-* `ROLE_NAME` is the permission that you  grant this service ID. Set it to **Administrator**.
+* `ROLE_NAME` is the permission that you  grant this service ID. Set it to **Manager**.
 
  
 For example, you can run the following command:
 
 ```
-ibmcloud resource service-key-create logdna-via-cli-key-admin Administrator --instance-name logdna-via-cli
+ibmcloud resource service-key-create logdna-via-cli-key-admin Manager --instance-name logdna-via-cli
 ```
 {: screen}
 
