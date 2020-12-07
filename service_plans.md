@@ -29,7 +29,7 @@ Different pricing plans are available that you can choose for an {{site.data.key
 
 
 
-| Plan                            | Number of days that data is available for seach | Number of users per plan | Plan ID |
+| Plan                            | Number of days that data is available for search | Number of users per plan | Plan ID |
 |---------------------------------|-------------------------------------------------|--------------------------|---------|
 | `HIPAA 30 day log search` [1]   | 30                                              | 25                       | a9b3eb07-5096-448b-ba34-53711d74742b |
 | `30 days log search`            | 30                                              | Unlimited                | deda35aa-662b-4b06-9f6e-05e0b55cc577 |

@@ -92,7 +92,7 @@ Complete the following steps:
     First, get the command to set the environment variable and download the Kubernetes configuration files.
 
     ```
-    ibmcloud ks cluster-config <cluster_name_or_ID>
+    ibmcloud ks cluster config --cluster <cluster_name_or_ID>
     ```
     {: codeblock}
 
