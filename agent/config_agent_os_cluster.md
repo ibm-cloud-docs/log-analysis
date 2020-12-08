@@ -212,9 +212,13 @@ Choose one of the following commands to install and configure the LogDNA agent v
 {: class="simple-tab-table"}
 {: row-headers}
 
-
-### Step 5. Verify that the LogDNA agent is deployed successfully
+### Step 5. Forward your API audit logs
 {: #config_agent_os_cluster_step5}
+
+Follow the [forwarding Kubernetes API audit logs steps](/docs/openshift?topic=openshift-health#openshift_logdna_audit) to configure the system to collect and forward events from your Kubernetes API server to {{site.data.keyword.la_full}}.
+
+### Step 6. Verify that the LogDNA agent is deployed successfully
+{: #config_agent_os_cluster_step6}
 
 To verify that the LogDNA agent is deployed successfully, run the following command:
 
