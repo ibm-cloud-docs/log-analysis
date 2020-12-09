@@ -24,12 +24,12 @@ subcollection: Log-Analysis-with-LogDNA
 # Configuring how LogDNA agent updates are rolled
 {: #logdna_agent_updates}
 
-When you configure a LogDNA agent, auto update of the LogDNA agent is enabled. You might find this behaviour acceptable for a proof of concept or for a development environment. However, for production environments, and for regulated, and highly available workloads, you might need to control when to update the LogDNA agent.
+When you configure a LogDNA agent, auto update of the LogDNA agent is enabled. You might find this behavior acceptable for a proof of concept or for a development environment. However, for production environments, and for regulated, and highly available workloads, you might need to control when to update the LogDNA agent.
 {:shortdesc}
 
 For Linux log sources, you can configure the **autoupdate** parameter to configure how you want updates to the agent to be rolled.
 
-For Kubernetes clusters, you can configure the yaml file to configure how you want updates to the agent to be rolled. 
+For Kubernetes clusters, you can configure the YAML file to configure how you want updates to the agent to be rolled. 
 
 
 ## Customize a Linux agent
@@ -40,9 +40,9 @@ For Kubernetes clusters, you can configure the yaml file to configure how you wa
 ## Customize a standard Kubernetes cluster agent
 {: #logdna_agent_updates_std_kube}
 
-When you configure a LogDNA agent by using the default standard Kubernetes cluster configuration yaml file, auto updates of the LogDNA agent are enabled.
+When you configure a LogDNA agent by using the default standard Kubernetes cluster configuration YAML file, auto updates of the LogDNA agent are enabled.
 
-The default yaml configuration is set as follows:
+The default YAML configuration is set as follows:
 
 ```
 updateStrategy:
@@ -65,9 +65,9 @@ To do this, Kubernetes provide a config option in deployment called Readiness Pr
 {: #logdna_agent_updates_os_kube}
 
 
-When you configure a LogDNA agent by using the default OpenShift Kubernetes cluster configuration yaml file, auto updates of the LogDNA agent are enabled.
+When you configure a LogDNA agent by using the default OpenShift Kubernetes cluster configuration YAML file, auto updates of the LogDNA agent are enabled.
 
-The default yaml configuration is set as follows:
+The default YAML configuration is set as follows:
 
 ```
 updateStrategy:
