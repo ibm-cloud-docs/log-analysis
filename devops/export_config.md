@@ -39,7 +39,7 @@ Complete the following steps to allow users to export logs from an {{site.data.k
 
 1. [Launch the {{site.data.keyword.la_full_notm}} web UI](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-launch).
 
-2. Select the **Configuration** icon ![Configuration icon](images/admin.png). 
+2. Select the **Configuration** icon ![Configuration icon](../images/admin.png). 
 
 3. Select **Organization** &gt; **General**.
 
@@ -54,7 +54,7 @@ Complete the following steps to disable the export feature in an {{site.data.key
 
 1. [Launch the {{site.data.keyword.la_full_notm}} web UI](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-launch).
 
-2. Select the **Configuration** icon ![Configuration icon](images/admin.png). 
+2. Select the **Configuration** icon ![Configuration icon](../images/admin.png). 
 
 3. Select **Organization** &gt; **General**.
 

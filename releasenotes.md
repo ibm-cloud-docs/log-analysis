@@ -30,5 +30,5 @@ For information about changes to the _service-name_ API, see [Change log for _se
 This release includes the following functional enhancements:
 
 * Configuration support using an API, in addition to configuration using the web UI.
-* Support for Terraform to programmatically manage {{site.data.keyword.la_full} views and alerts and automate their deployment. 
+* Support for Terraform to programmatically manage {{site.data.keyword.la_full}} views and alerts and automate their deployment. 
 
