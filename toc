@@ -73,6 +73,7 @@ Log Analysis with LogDNA
     View logs
         devops/view_logs.md
         devops/alerts.md
+        api_configuration.md
 
     {: .topicgroup}
     Export logs
