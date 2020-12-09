@@ -8,7 +8,13 @@ keywords: LogDNA, IBM, Log Analysis, logging, kubernetes, tutorial, reset ingest
 
 subcollection: Log-Analysis-with-LogDNA
 
+content-type: tutorial
+services: vpc
+account-plan: lite 
+completion-time: 1h 
+
 ---
+
 
 {:new_window: target="_blank"}
 {:shortdesc: .shortdesc}
@@ -21,9 +27,14 @@ subcollection: Log-Analysis-with-LogDNA
 {:important: .important}
 {:note: .note}
 {:external: target="_blank" .external}
+{:step: data-tutorial-type='step'} 
+
 
 # Resetting the ingestion key that is used by a Kubernetes cluster to forward logs to an {{site.data.keyword.la_full_notm}} instance
 {: #kube_reset}
+{: toc-content-type="tutorial"}
+{: toc-services-"kube"} 
+{: toc-completion-time="1h"} 
 
 If the ingestion key that you use to forward logs from a cluster to an {{site.data.keyword.la_full_notm}} instance in the {{site.data.keyword.cloud_notm}} is compromised, you must reset the key and update the Kubernetes cluster configuration to use the new ingestion key. 
 {:shortdesc}
@@ -55,6 +66,7 @@ Install the {{site.data.keyword.cloud_notm}} CLI and the Kubernetes CLI plug-in.
 
 ## Step 1: Reset the ingestion key
 {: #kube_reset_step1}
+{: step}
 
 To renew the ingestion key for an {{site.data.keyword.la_full_notm}} instance by using the {{site.data.keyword.la_full_notm}} Web UI, complete the following steps:
 
@@ -75,6 +87,7 @@ To renew the ingestion key for an {{site.data.keyword.la_full_notm}} instance by
 
 ## Step 2: Remove any configuration in the cluster that uses the old ingestion key
 {: #kube_reset_step2}
+{: step}
 
 Complete the following steps:
 
@@ -124,6 +137,7 @@ Complete the following steps:
 
 ## Step 3: Configure your Kubernetes cluster with the new ingestion key
 {: #kube_reset_step3}
+{: step}
 
 To configure your Kubernetes cluster in the `us-south` region to forward logs to your LogDNA instance, complete the following steps from the command line:
 
@@ -177,6 +191,7 @@ To configure your Kubernetes cluster in the `us-south` region to forward logs to
 
 ## Step 4: Launch the LogDNA web UI
 {: #kube_reset_step4}
+{: step}
 
 You launch the web UI from the {{site.data.keyword.cloud_notm}} Observability dashboard. 
 
@@ -197,6 +212,7 @@ Complete the following steps to launch the web UI:
 
 ## Step 5: View your logs
 {: #kube_reset_step5}
+{: step}
 
 From the LogDNA web UI, you can view your logs as they pass through the system. You view logs by using log tailing. 
 
