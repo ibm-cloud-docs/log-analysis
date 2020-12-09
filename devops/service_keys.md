@@ -42,7 +42,7 @@ Complete the following steps to create a service key:
 
 1. [Launch the {{site.data.keyword.la_full_notm}} web UI](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-launch).
 
-2. Select the **Configuration** icon ![Configuration icon](images/admin.png). Then, select **Organization**. 
+2. Select the **Configuration** icon ![Configuration icon](../images/admin.png). Then, select **Organization**. 
 
 3. Select **API keys**.
 
@@ -65,7 +65,7 @@ Complete the following steps to delete a service key:
 
 1. [Launch the {{site.data.keyword.la_full_notm}} web UI](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-launch).
 
-2. Select the **Configuration** icon ![Configuration icon](images/admin.png). Then, select **Organization**. 
+2. Select the **Configuration** icon ![Configuration icon](../images/admin.png). Then, select **Organization**. 
 
 3. Select **API keys**.
 
@@ -86,7 +86,7 @@ Complete the following steps to view a service key:
 
 1. [Launch the {{site.data.keyword.la_full_notm}} web UI](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-launch).
 
-2. Select the **Configuration** icon ![Configuration icon](images/admin.png). Then, select **Organization**. 
+2. Select the **Configuration** icon ![Configuration icon](../images/admin.png). Then, select **Organization**. 
 
 3. Select **API keys**.
 

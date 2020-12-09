@@ -65,7 +65,7 @@ application and system logs.
 
 2. Select your account.
 
-3. Click the **Menu** icon ![Menu icon](../icons/icon_hamburger.svg) &gt; **Observability**. 
+3. Click the **Menu** icon ![Menu icon](../../icons/icon_hamburger.svg) &gt; **Observability**. 
 
 4. Select **Logging**.
 
