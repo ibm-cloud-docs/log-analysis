@@ -96,30 +96,26 @@ Complete the following steps:
     ```
     {: codeblock}
 
-    When the download of the configuration files is finished, a command is displayed that you can use to set the path to the local Kubernetes configuration file as an environment variable.
-
-    Then, copy and paste the command that is displayed in your terminal to set the KUBECONFIG environment variable.
-
     **Note:** Every time you log in to the {{site.data.keyword.containerlong}} CLI to work with clusters, you must run these commands to set the path to the cluster's configuration file as a session variable. The Kubernetes CLI uses this variable to find a local configuration file and certificates that are necessary to connect with the cluster in {{site.data.keyword.cloud_notm}}.
 
 3. Remove the secret from your Kubernetes cluster. The Kubernetes secret contains the LogDNA ingestion key. Run the following command:
 
     ```
-    kubectl delete secret logdna-agent-key
+    kubectl delete secret logdna-agent-key -n ibm-observe
     ```
     {: codeblock}
 
 4. Remove the LogDNA agent on every worker(node) of your Kubernetes cluster. The LogDNA agent is responsible for collecting and forwarding your logs. Run the following command:
 
     ```
-    kubectl delete daemonset logdna-agent
+    kubectl delete daemonset logdna-agent -n ibm-observe
     ```
     {: codeblock}
 
 5. Verify that the LogDNA agent is deleted successfully. Run the following command:
 
     ```
-    kubectl get pods
+    kubectl get pods -n ibm-observe
     ```
     {: codeblock}
 
@@ -149,16 +145,10 @@ To configure your Kubernetes cluster in the `us-south` region to forward logs to
     ```
     {: codeblock}
 
-    When the download of the configuration files is finished, a command is displayed that you can use to set the path to the local Kubernetes configuration file as an environment variable.
-
-    Then, copy and paste the command that is displayed in your terminal to set the KUBECONFIG environment variable.
-
-    **Note:** Every time you log in to the {{site.data.keyword.containerlong}} CLI to work with clusters, you must run these commands to set the path to the cluster's configuration file as a session variable. The Kubernetes CLI uses this variable to find a local configuration file and certificates that are necessary to connect with the cluster in {{site.data.keyword.cloud_notm}}.
-
 3. Add a secret to your Kubernetes cluster. Run the following command:
 
     ```
-    kubectl create secret generic logdna-agent-key --from-literal=logdna-agent-key=LOGDNA_INGESTION_KEY_FOR_YOUR_INSTANCE
+    kubectl create secret generic logdna-agent-key --from-literal=logdna-agent-key=LOGDNA_INGESTION_KEY_FOR_YOUR_INSTANCE -n ibm-observe
     ```
     {: codeblock}
 
@@ -169,7 +159,7 @@ To configure your Kubernetes cluster in the `us-south` region to forward logs to
 4. Configure the LogDNA agent on every worker(node) of your Kubernetes cluster. Run the following command:
 
     ```
-    kubectl create -f https://assets.us-south.logging.cloud.ibm.com/clients/logdna-agent-ds.yaml
+    kubectl create -f https://assets.us-south.logging.cloud.ibm.com/clients/logdna-agent-ds.yaml -n ibm-observe
     ```
     {: codeblock}
 
@@ -180,7 +170,7 @@ To configure your Kubernetes cluster in the `us-south` region to forward logs to
 5. Verify that the LogDNA agent is created successfully and its status. Run the following command:
 
     ```
-    kubectl get pods
+    kubectl get pods -n ibm-observe
     ```
     {: codeblock}
 
@@ -210,14 +200,14 @@ Complete the following steps to launch the web UI:
 
 From the LogDNA web UI, you can view your logs as they pass through the system. You view logs by using log tailing. 
 
-With the **Lite - Free** service plan, you can only tail your latest logs.
+With the **Lite** service plan, you can only tail your latest logs.
 {: note}
 
 
 ## Next steps
 {: #kube_reset_next_steps}
 
-  If you want to [filter cluster logs](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-view_logs#view_logs_step5), [search cluster logs](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-view_logs#view_logs_step6), [define views](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-view_logs#view_logs_step7), and [configure alerts](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-alerts), you must upgrade the {{site.data.keyword.la_full_notm}} plan to a paid plan.
+If you want to [filter cluster logs](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-view_logs#view_logs_step5), [search cluster logs](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-view_logs#view_logs_step6), [define views](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-view_logs#view_logs_step7), and [configure alerts](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-alerts), you must upgrade the {{site.data.keyword.la_full_notm}} plan to a paid plan.
 
 
 

@@ -46,6 +46,8 @@ Terraform scripts are written in [HCL (Hashicorp Configuration Language)](https:
 
 If you manage your LogDNA environment using both Terraform and the LogDNA web UI, you need to consider the following:
 
-* If you create a new view using Terraform and then delete the view using the LogDNA web UI, Terriform will not know that the view is deleted and an `Error: Resource Not Found` message will be returned when Terraform tries to manage the view.
+* If you create a new view using Terraform and then delete the view using the LogDNA web UI, Terraform will not know that the view is deleted and an `Error: Resource Not Found` message will be returned when Terraform tries to manage the view.
 
 * Running the `terraform plan` and `terraform apply` commands will not display all possible changes if Terraform is not aware of all existing LogDNA resources.
+
+

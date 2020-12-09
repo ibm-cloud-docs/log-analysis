@@ -138,13 +138,13 @@ To provision an instance of {{site.data.keyword.at_full_notm}} through the comma
 
     Where
 
-    NAME is the name of the instance
+    `NAME` is the name of the instance
 
     The value *logdna* is the name of the {{site.data.keyword.la_full_notm}} service in the {{site.data.keyword.cloud_notm}}.
 
-    SERVICE_PLAN_NAME is the type of plan. Valid values are *lite*, *7-days*, *14-days*, *30-days*.
+    `SERVICE_PLAN_NAME` is the type of plan. Valid values are *lite*, *7-days*, *14-days*, *30-days*.
     
-    LOCATION is the region where the LogDNA instance is created. To get the latest list of locations that are available for the {{site.data.keyword.la_full_notm}} service, see [Locations](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-regions).
+    `LOCATION` is the region where the LogDNA instance is created. To get the latest list of locations that are available for the {{site.data.keyword.la_full_notm}} service, see [Locations](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-regions).
 
     For example, to provision an instance with the 7 days retention plan, run the following command:
 

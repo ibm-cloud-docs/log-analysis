@@ -28,7 +28,7 @@ subcollection: Log-Analysis-with-LogDNA
 You can use the {{site.data.keyword.sqlquery_short}} service to query {{site.data.keyword.la_full_notm}} archive files that are stored in an {{site.data.keyword.cos_short}} (COS) bucket in your account. You can run queries from the {{site.data.keyword.cloud_notm}} UI, or programmatically.
 {:shortdesc}
 
-![{{site.data.keyword.cloud_notm}} services integration scenario](images/sqlquery.png "{{site.data.keyword.cloud_notm}} services integration scenario")
+![{{site.data.keyword.cloud_notm}} services integration scenario](../images/sqlquery.png "{{site.data.keyword.cloud_notm}} services integration scenario")
 
 Each {{site.data.keyword.la_full_notm}} instance has a service plan associated that indicates the number of days that you can query data through the web UI. To have access to the events after this period, you must enable archiving in the {{site.data.keyword.la_full_notm}} instance. When you enable archiving, you get an archive file daily. This file contains information for the previous day. Notice that UTC timestamps are used to determine which records are included in each file. The file name includes the ID of your {{site.data.keyword.la_full_notm}} instance and the date of the records that are included in the file.
 
@@ -63,7 +63,7 @@ To be able to use the {{site.data.keyword.sqlquery_short}} service to query arch
 
 * You must have an {{site.data.keyword.la_full_notm}} instance provisioned in your account that has [archiving configured to a bucket in the COS instance in your account](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-archiving). 
 
-    Events are archived daily to a file in a COS bucket. 
+    Events are archived to a file in a COS bucket. 
 
     If archiving is not configured, you must wait at least 24 hours before an archive file is available after archiving is configured.
 
@@ -95,8 +95,8 @@ Once you have {{site.data.keyword.sqlquery_short}} running on {{site.data.keywor
 To run queries with the SQL query service, a user needs a platform role and a service role. The following tables show the roles and actions that you can assign a user to run SQL queries:
 
 
-| Platform actions                        | Administrator                                     | Editor | Operator | Viewer  |
-|---------------------------------------------------------------------------|:-------------------------------------------------:|:-------:|:--------:|:------:|
+| Platform actions                   | Administrator                                     | Editor | Operator | Viewer  |
+|------------------------------------|:-------------------------------------------------:|:-------:|:--------:|:------:|
 | `View details of the {{site.data.keyword.sqlquery_short}} service instance`    | ![Checkmark icon](images/checkmark-icon.svg)  | ![Checkmark icon](images/checkmark-icon.svg)    | ![Checkmark icon](images/checkmark-icon.svg)      | ![Checkmark icon](images/checkmark-icon.svg)    |
 {: caption="Table 1. Platform roles" caption-side="top"}
 
