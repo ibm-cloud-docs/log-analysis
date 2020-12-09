@@ -26,6 +26,11 @@ Log Analysis with LogDNA
     Security and compliance
         compliance/adoption.md
         compliance/manage_eu_logs.md
+
+    {: .topicgroup}
+    Tutorials
+        tutorial/tutorial_use_LogDNA.md
+        tutorial/kube_reset_ingestion.md
     {: .navgroup-end}
 
     {: .navgroup id="howto"}
@@ -61,7 +66,6 @@ Log Analysis with LogDNA
         agent/exclude_logs_from_agent.md
         agent/adding_tags.md
         agent/upgrade_logdna_agent_2.md
-        tutorials/kube_reset_ingestion.md
 
     {: .topicgroup}
     View logs

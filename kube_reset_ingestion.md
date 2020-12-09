@@ -53,7 +53,7 @@ For more information about the {{site.data.keyword.containerlong}} IAM roles, se
 Install the {{site.data.keyword.cloud_notm}} CLI and the Kubernetes CLI plug-in. For more information, see [Installing the {{site.data.keyword.cloud_notm}} CLI](/docs/cli?topic=cli-install-ibmcloud-cli).
 
 
-## Step 1. Reset the ingestion key
+## Step 1: Reset the ingestion key
 {: #kube_reset_step1}
 
 To renew the ingestion key for an {{site.data.keyword.la_full_notm}} instance by using the {{site.data.keyword.la_full_notm}} Web UI, complete the following steps:
@@ -73,7 +73,7 @@ To renew the ingestion key for an {{site.data.keyword.la_full_notm}} instance by
 5. Delete the old ingestion key. Click **delete**.
 
 
-## Step 2. Remove any configuration in the cluster that uses the old ingestion key
+## Step 2: Remove any configuration in the cluster that uses the old ingestion key
 {: #kube_reset_step2}
 
 Complete the following steps:
@@ -92,41 +92,37 @@ Complete the following steps:
     First, get the command to set the environment variable and download the Kubernetes configuration files.
 
     ```
-    ibmcloud ks cluster-config <cluster_name_or_ID>
+    ibmcloud ks cluster config --cluster <cluster_name_or_ID>
     ```
     {: codeblock}
-
-    When the download of the configuration files is finished, a command is displayed that you can use to set the path to the local Kubernetes configuration file as an environment variable.
-
-    Then, copy and paste the command that is displayed in your terminal to set the KUBECONFIG environment variable.
 
     **Note:** Every time you log in to the {{site.data.keyword.containerlong}} CLI to work with clusters, you must run these commands to set the path to the cluster's configuration file as a session variable. The Kubernetes CLI uses this variable to find a local configuration file and certificates that are necessary to connect with the cluster in {{site.data.keyword.cloud_notm}}.
 
 3. Remove the secret from your Kubernetes cluster. The Kubernetes secret contains the LogDNA ingestion key. Run the following command:
 
     ```
-    kubectl delete secret logdna-agent-key
+    kubectl delete secret logdna-agent-key -n ibm-observe
     ```
     {: codeblock}
 
 4. Remove the LogDNA agent on every worker(node) of your Kubernetes cluster. The LogDNA agent is responsible for collecting and forwarding your logs. Run the following command:
 
     ```
-    kubectl delete daemonset logdna-agent
+    kubectl delete daemonset logdna-agent -n ibm-observe
     ```
     {: codeblock}
 
 5. Verify that the LogDNA agent is deleted successfully. Run the following command:
 
     ```
-    kubectl get pods
+    kubectl get pods -n ibm-observe
     ```
     {: codeblock}
 
     You should not see any LogDNA pods.
 
 
-## Step 3. Configure your Kubernetes cluster with the new ingestion key
+## Step 3: Configure your Kubernetes cluster with the new ingestion key
 {: #kube_reset_step3}
 
 To configure your Kubernetes cluster in the `us-south` region to forward logs to your LogDNA instance, complete the following steps from the command line:
@@ -149,16 +145,10 @@ To configure your Kubernetes cluster in the `us-south` region to forward logs to
     ```
     {: codeblock}
 
-    When the download of the configuration files is finished, a command is displayed that you can use to set the path to the local Kubernetes configuration file as an environment variable.
-
-    Then, copy and paste the command that is displayed in your terminal to set the KUBECONFIG environment variable.
-
-    **Note:** Every time you log in to the {{site.data.keyword.containerlong}} CLI to work with clusters, you must run these commands to set the path to the cluster's configuration file as a session variable. The Kubernetes CLI uses this variable to find a local configuration file and certificates that are necessary to connect with the cluster in {{site.data.keyword.cloud_notm}}.
-
 3. Add a secret to your Kubernetes cluster. Run the following command:
 
     ```
-    kubectl create secret generic logdna-agent-key --from-literal=logdna-agent-key=LOGDNA_INGESTION_KEY_FOR_YOUR_INSTANCE
+    kubectl create secret generic logdna-agent-key --from-literal=logdna-agent-key=LOGDNA_INGESTION_KEY_FOR_YOUR_INSTANCE -n ibm-observe
     ```
     {: codeblock}
 
@@ -169,7 +159,7 @@ To configure your Kubernetes cluster in the `us-south` region to forward logs to
 4. Configure the LogDNA agent on every worker(node) of your Kubernetes cluster. Run the following command:
 
     ```
-    kubectl create -f https://assets.us-south.logging.cloud.ibm.com/clients/logdna-agent-ds.yaml
+    kubectl create -f https://assets.us-south.logging.cloud.ibm.com/clients/logdna-agent-ds.yaml -n ibm-observe
     ```
     {: codeblock}
 
@@ -180,12 +170,12 @@ To configure your Kubernetes cluster in the `us-south` region to forward logs to
 5. Verify that the LogDNA agent is created successfully and its status. Run the following command:
 
     ```
-    kubectl get pods
+    kubectl get pods -n ibm-observe
     ```
     {: codeblock}
 
 
-## Step 4. Launch the LogDNA web UI
+## Step 4: Launch the LogDNA web UI
 {: #kube_reset_step4}
 
 You launch the web UI from the {{site.data.keyword.cloud_notm}} Observability dashboard. 
@@ -194,7 +184,7 @@ Complete the following steps to launch the web UI:
 
 1. [Log in to your {{site.data.keyword.cloud_notm}} account](https://cloud.ibm.com/login){: external}.
 
-2. Click the **Menu** icon ![Menu icon](images/icon_hamburger.svg) &gt; **Observability** to launch the Observability dashboard. 
+2. Click the **Menu** icon ![Menu icon](../icons/icon_hamburger.svg) &gt; **Observability** to launch the Observability dashboard. 
 
 3. Select **Logging**. 
 
@@ -205,19 +195,19 @@ Complete the following steps to launch the web UI:
     The LogDNA web UI opens and displays your cluster logs.
 
 
-## Step 5. View your logs
+## Step 5: View your logs
 {: #kube_reset_step5}
 
 From the LogDNA web UI, you can view your logs as they pass through the system. You view logs by using log tailing. 
 
-With the **Lite - Free** service plan, you can only tail your latest logs.
+With the **Lite** service plan, you can only tail your latest logs.
 {: note}
 
 
 ## Next steps
 {: #kube_reset_next_steps}
 
-  If you want to [filter cluster logs](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-view_logs#view_logs_step5), [search cluster logs](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-view_logs#view_logs_step6), [define views](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-view_logs#view_logs_step7), and [configure alerts](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-alerts), you must upgrade the {{site.data.keyword.la_full_notm}} plan to a paid plan.
+If you want to [filter cluster logs](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-view_logs#view_logs_step5), [search cluster logs](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-view_logs#view_logs_step6), [define views](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-view_logs#view_logs_step7), and [configure alerts](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-alerts), you must upgrade the {{site.data.keyword.la_full_notm}} plan to a paid plan.
 
 
 

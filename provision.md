@@ -42,7 +42,7 @@ To provision an instance from the Observability dashboard in the {{site.data.key
 
 	After you log in, the {{site.data.keyword.cloud_notm}} UI opens.
 
-2. Go to the **Menu** icon ![Menu icon](images/icon_hamburger.svg) &gt; **Observability** to access the *Observability* dashboard.
+2. Go to the **Menu** icon ![Menu icon](../icons/icon_hamburger.svg) &gt; **Observability** to access the *Observability* dashboard.
 
 3. Select **Logging**, then click **Create instance**. 
 
@@ -138,13 +138,13 @@ To provision an instance of {{site.data.keyword.at_full_notm}} through the comma
 
     Where
 
-    NAME is the name of the instance
+    `NAME` is the name of the instance
 
     The value *logdna* is the name of the {{site.data.keyword.la_full_notm}} service in the {{site.data.keyword.cloud_notm}}.
 
-    SERVICE_PLAN_NAME is the type of plan. Valid values are *lite*, *7-days*, *14-days*, *30-days*.
+    `SERVICE_PLAN_NAME` is the type of plan. Valid values are *lite*, *7-days*, *14-days*, *30-days*.
     
-    LOCATION is the region where the LogDNA instance is created. To get the latest list of locations that are available for the {{site.data.keyword.la_full_notm}} service, see [Locations](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-regions).
+    `LOCATION` is the region where the LogDNA instance is created. To get the latest list of locations that are available for the {{site.data.keyword.la_full_notm}} service, see [Locations](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-regions).
 
     For example, to provision an instance with the 7 days retention plan, run the following command:
 
@@ -168,13 +168,13 @@ Where
 
 * `SERVICE_INSTANCE_NAME` is the name of the instance that you provisioned in the previous step.
 * `NAME` is the name of the service ID. Use the following format to name the key **<SERVICE_INSTANCE_NAME>-key-admin**
-* `ROLE_NAME` is the permission that you  grant this service ID. Set it to **Administrator**.
+* `ROLE_NAME` is the permission that you  grant this service ID. Set it to **Manager**.
 
  
 For example, you can run the following command:
 
 ```
-ibmcloud resource service-key-create logdna-via-cli-key-admin Administrator --instance-name logdna-via-cli
+ibmcloud resource service-key-create logdna-via-cli-key-admin Manager --instance-name logdna-via-cli
 ```
 {: screen}
 

@@ -44,7 +44,7 @@ The following table lists Cloud services that send logs to {{site.data.keyword.l
 | [{{site.data.keyword.iae_full_notm}}](/docs/AnalyticsEngine?topic=AnalyticsEngine-getting-started) | {{site.data.keyword.iae_full_notm}} provides a flexible framework to develop and deploy analytics applications in Apache Hadoop and Apache Spark. | [More info](/docs/AnalyticsEngine?topic=AnalyticsEngine-log-aggregation#reconfiguring-log-aggregation) | 
 {: caption="Table 1. List of Blockchain services" caption-side="top"} 
 
-To see the list of {{site.data.keyword.la_full_notm}} locations where these services send logs, see [Analytics services](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-cloud_services_locations#cs_locations_analytics).
+To see the list of {{site.data.keyword.la_full_notm}} locations where you can send logs, see [Analytics services](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-regions).
 
 
 ## Blockchain services
@@ -57,7 +57,7 @@ The following table lists Cloud services that send logs to {{site.data.keyword.l
 | [{{site.data.keyword.blockchainfull_notm}}](/docs/blockchain?topic=blockchain-get-started-ibp) | {{site.data.keyword.blockchainfull}} Platform provides a managed and full stack blockchain-as-a-service (BaaS) offering that allows you to deploy blockchain components in environments of your choice. | [More info](/docs/blockchain?topic=blockchain-ibp-LogDNA) | 
 {: caption="Table 2. List of Blockchain services" caption-side="top"} 
 
-To see the list of {{site.data.keyword.la_full_notm}} locations where these services send logs, see [Container services](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-cloud_services_locations#cs_locations_blockchain).
+To see the list of {{site.data.keyword.la_full_notm}} locations where you can send logs, see [Container services](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-regions).
 
 
 
