@@ -30,7 +30,7 @@ completion-time: 1h
 {:step: data-tutorial-type='step'} 
 
 
-# Resetting the ingestion key that is used by a Kubernetes cluster to forward logs to an {{site.data.keyword.la_full_notm}} instance
+# Resetting the ingestion key that is used by a Kubernetes cluster
 {: #kube_reset}
 {: toc-content-type="tutorial"}
 {: toc-services-"kube"} 
