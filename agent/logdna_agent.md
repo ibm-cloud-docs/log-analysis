@@ -79,7 +79,7 @@ The following table outlines the agent versions that are available:
 
 | Kubernetes cluster                    | LogDNA agent V1                                    | LogDNA agent V2                                   |
 |---------------------------------------|----------------------------------------------------|---------------------------------------------------|
-| `Linux                      `         | ![Checkmark icon](images/checkmark-icon.svg)  | `Not available`                                   |
+| `Linux                      `         | ![Checkmark icon](../images/checkmark-icon.svg)  | `Not available`                                   |
 {: caption="Table 2. LogDNA agent versions for Linux" caption-side="top"}
 
 
@@ -158,7 +158,7 @@ You can customize a LogDNA agent by configuring parameters for Linux agents, or 
 
 | Environment variable     | Description                                           |  Default value                         | Sample value          |
 |--------------------------|-------------------------------------------------------|----------------------------------------|-----------------------|
-| `DEFAULT_CONF_FILE`      | Default configuration file.                           | `/etc/logdna/config.YAML`              |                       |
+| `DEFAULT_CONF_FILE`      | Default configuration file.                           | `/etc/logdna/config.yaml`              |                       |
 | `LOGDNA_PLATFORM`        | Log source type.                                      | `k8s`                                  |                       |
 | `LOGDNA_INGESTION_KEY`   | Reference to the LogDNA ingestion key.                | secretKeyRef                           |                       |
 | `LOGDNA_HOST`            | LogDNA ingestion endpoint.                            |                                        | `logs.us-south.logging.cloud.ibm.com` |
@@ -181,7 +181,7 @@ You can customize a LogDNA agent by configuring parameters for Linux agents, or 
 
 | Environment variable     | Description                                           | Default value                          | Sample value          |
 |--------------------------|-------------------------------------------------------|----------------------------------------|-----------------------|
-| `DEFAULT_CONF_FILE`      | Default configuration file.                           | `/etc/logdna/config.YAML`              |                       |
+| `DEFAULT_CONF_FILE`      | Default configuration file.                           | `/etc/logdna/config.yaml`              |                       |
 | `LOGDNA_PLATFORM`        | Log source type.                                      | `k8s`                                  |                       |
 | `LOGDNA_INGESTION_KEY`   | Reference to the LogDNA ingestion key.                | secretKeyRef                           |                       |
 | `LDLOGHOST`              | LogDNA ingestion endpoint.                            |                                        | `logs.us-south.logging.cloud.ibm.com` |
