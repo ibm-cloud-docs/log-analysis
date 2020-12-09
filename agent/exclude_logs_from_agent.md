@@ -85,7 +85,7 @@ Complete the following steps:
     Where `<cluster_name_or_ID>` is the name or the ID of the cluster.
 
 
-### Step 2. Modify the LogDNA agent yaml file
+### Step 2. Modify the LogDNA agent YAML file
 {: #exclude_logs_from_agent_kube_2}
 
 Complete the following steps:
@@ -97,7 +97,7 @@ Complete the following steps:
     ```
     {: codeblock}
 
-2. Make changes. Add the section **LOGDNA_EXCLUDE** to the yaml file. 
+2. Make changes. Add the section **LOGDNA_EXCLUDE** to the YAML file. 
 
 
 To exclude all cluster logs, you can enter:

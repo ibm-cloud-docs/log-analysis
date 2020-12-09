@@ -74,7 +74,7 @@ Complete the following steps from the command line to upgrade the LogDNA agent v
 ## Step 2. Backup the yaml file of the LogDNA agent that is deployed in the cluster
 {: #upgrade_agent_kube_cluster_step2}
 
-Run the following command to backup the yaml file of the LogDNA agent that is currently deployed in your cluster:
+Run the following command to backup the YAML file of the LogDNA agent that is currently deployed in your cluster:
 
 ```
 kubectl get ds logdna-agent -o yaml > logdna-agent-<clusterName>-<date>.yaml

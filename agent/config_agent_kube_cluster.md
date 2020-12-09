@@ -35,7 +35,7 @@ To configure your Kubernetes cluster to send logs to your {{site.data.keyword.la
 ## Deploy the LogDNA agent by using kubectl commands
 {: #config_agent_kube_kubectl}
 
-Complete the following steps from the command line to configure your Kubernetes cluster to forward logs to your LogDNA instance by using the default yaml file:
+Complete the following steps from the command line to configure your Kubernetes cluster to forward logs to your LogDNA instance by using the default YAML file:
 
 
 ### Prereq
@@ -147,7 +147,8 @@ Choose one of the following commands to install and configure the **LogDNA agent
 The LogDNA agent version 2 is supported for Kubernetes 1.9+ only.
 {: important}
 
-The default yaml file uses the image that is tagged as stable. To find out the LogDNA agent version that you deploy by running the script, see [Getting information about Kubernetes LogDNA agent images](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-logdna_agent_image).
+The default YAML file uses the image that is tagged as stable. To find out the LogDNA agent version that you deploy by running the script, see [Getting information about Kubernetes LogDNA agent images](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-logdna_agent_image).
+
 {: tip}
 
 | Location                  | Command (By using public endpoints)               | 
