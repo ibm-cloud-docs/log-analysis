@@ -102,7 +102,7 @@ If you do not have an instance with the flag **Platform Logs** in the region, co
 5. Set on the **default_receiver** property. Run the following command:
 
     Check that the change will not affect other account members. There is only 1 instance per region that can collect platform logs. After you make this change, platform logs are collected through this instance in the region, and permissions to view platform logs are impacted.  
-    {: important}}
+    {: important}
 
     ```
     ibmcloud resource service-instance-update InstanceName --service-plan-id PlanID -p '{"default_receiver": true}'
