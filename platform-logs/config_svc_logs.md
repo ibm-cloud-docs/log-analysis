@@ -73,12 +73,14 @@ The instance that you choose to receive service logs shows the flag **Platform l
 {: #platform_logs_enabling_cli}
 
 To enable platform logs in a region, the instance that you want to configure to receive platform logs must have set on the **default_receiver** property.
-{: note}
 
-Check if you have an instance with the flag **Platform Logs** set in the region that you want to configure. You must use a user that has permissions to see all instances in the account. If you have an instance, stop and contact the account administrator to confirm that you will not impact the account operations. There is only 1 instance per region that can collect platform logs. After you make this change, platform logs are collected through this instance in the region, and permissions to view platform logs are impacted.  
+Check if you have an instance with the flag **Platform Logs** set in the region that you want to configure platform logs. Your user must have permissions to see all instances in the account. 
 {: important}
 
-If you do not have one instance with the flag **Platform Logs**, complete the following steps:
+If you have an instance with the flag **Platform Logs**, stop and contact the account administrator to confirm that you will not impact the account operations. There is only 1 instance per region that can collect platform logs. After you make this change, platform logs are collected through this instance in the region, and permissions to view platform logs are impacted. See [Changing the instance that collects platform logs from the command line](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-config_svc_logs#platform_logs_change_cli).  
+{: important}
+
+If you do not have an instance with the flag **Platform Logs** in the region, complete the following steps:
 
 1. [Pre-requisite] [Install the {{site.data.keyword.cloud_notm}} CLI](/docs/cli?topic=cli-install-ibmcloud-cli).
 
@@ -118,7 +120,7 @@ You must use a user that has permissions to see all instances in the account.
 {: note}
 
 Before you change the instance that collects platform logs, check that the change will not affect other account members. There is only 1 instance per region that can collect platform logs. After you make this change, platform logs are collected through this instance in the region, and permissions to view platform logs are impacted.  
-{: important}}
+{: important}
 
 Complete the following steps:
 
@@ -141,14 +143,18 @@ Complete the following steps:
 
     Copy the value of the field `resource_plan_id`. This value is needed to update the instance.
 
-6. Set off the **default_receiver** property. Run the following command:
+6. Set on the **default_receiver** property. Run the following command:
 
     ```
-    ibmcloud resource service-instance-update InstanceName --service-plan-id PlanID -p '{"default_receiver": false}'
+    ibmcloud resource service-instance-update InstanceName --service-plan-id PlanID -p '{"default_receiver": true}'
     ```
     {: codeblock}
 
-    Where `PlanID` is the resource plan ID of your LogDNA instance.
+    Where 
+    
+    * `PlanID` is the resource plan ID of your LogDNA instance.
+
+    * `InstanceName` is the name of the instance that you want to turn on and start collecting platform logs.
 
 7. Set the resource group where the LogDNA instance that you want to collect platform logs is running. Run the following command: [ibmcloud target](/docs/cli?topic=cli-ibmcloud_cli#ibmcloud_target)
 
@@ -163,14 +169,18 @@ Complete the following steps:
 
     Copy the value of the field `resource_plan_id`. This value is needed to update the instance.
 
-9. Set on the **default_receiver** property. Run the following command:
+9. Set off the **default_receiver** property. Run the following command:
 
     ```
-    ibmcloud resource service-instance-update InstanceName --service-plan-id PlanID -p '{"default_receiver": true}'
+    ibmcloud resource service-instance-update InstanceName --service-plan-id PlanID -p '{"default_receiver": false}'
     ```
     {: codeblock}
 
-    Where `PlanID` is the resource plan ID of your LogDNA instance.
+    Where 
+    
+    * `PlanID` is the resource plan ID of your LogDNA instance.
+
+    * `InstanceName` is the name of the instance that you want to turn off from collecting platform logs.
     
 
 
