@@ -53,7 +53,7 @@ To configure a logging instance from the Observability dashboard in the {{site.d
 
 	After you log in, the {{site.data.keyword.cloud_notm}} UI opens.
 
-2. Go to the menu icon ![menu icon](../icons/icon_hamburger.svg) &gt; **Observability** to access the *Observability* dashboard.
+2. Go to the menu icon ![menu icon](../../icons/icon_hamburger.svg) &gt; **Observability** to access the *Observability* dashboard.
 
 3. Select **Logging**, then click **Configure platform logs**. 
 
@@ -73,9 +73,14 @@ The instance that you choose to receive service logs shows the flag **Platform l
 {: #platform_logs_enabling_cli}
 
 To enable platform logs in a region, the instance that you want to configure to receive platform logs must have set on the **default_receiver** property.
-{: note}
 
-Complete the following steps:
+Check if you have an instance with the flag **Platform Logs** set in the region that you want to configure platform logs. Your user must have permissions to see all instances in the account. 
+{: important}
+
+If you have an instance with the flag **Platform Logs**, stop and contact the account administrator to confirm that you will not impact the account operations. There is only 1 instance per region that can collect platform logs. After you make this change, platform logs are collected through this instance in the region, and permissions to view platform logs are impacted. See [Changing the instance that collects platform logs from the command line](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-config_svc_logs#platform_logs_change_cli).  
+{: important}
+
+If you do not have an instance with the flag **Platform Logs** in the region, complete the following steps:
 
 1. [Pre-requisite] [Install the {{site.data.keyword.cloud_notm}} CLI](/docs/cli?topic=cli-install-ibmcloud-cli).
 
@@ -85,23 +90,19 @@ Complete the following steps:
 
     By default, the `default` resource group is set.
 
-4. Get the instance name. Run the following command: [ibmcloud resource service-instances](/docs/cli?topic=cli-ibmcloud_commands_resource#ibmcloud_resource_service_instances)
+4. Get the instance name and plan ID. Run the following command: [ibmcloud resource service-instances](/docs/cli?topic=cli-ibmcloud_commands_resource#ibmcloud_resource_service_instances)
 
     ```
-    ibmcloud resource service-instances
-    ```
-    {: pre}
-
-5. Get the plan ID of the instance. 
-
-    Run the following command. Look for the entry of the logging instance. Then, copy the value of the field `resource_plan_id`. This value is needed to update the instance.
-
-    ```
-    ibmcloud resource service-instances --long --output JSON
+    ibmcloud resource service-instance InstanceName --output JSON
     ```
     {: pre}
+
+    Copy the value of the field `resource_plan_id`. This value is needed to update the instance.
 
 5. Set on the **default_receiver** property. Run the following command:
+
+    Check that the change will not affect other account members. There is only 1 instance per region that can collect platform logs. After you make this change, platform logs are collected through this instance in the region, and permissions to view platform logs are impacted.  
+    {: important}
 
     ```
     ibmcloud resource service-instance-update InstanceName --service-plan-id PlanID -p '{"default_receiver": true}'
@@ -110,5 +111,78 @@ Complete the following steps:
 
     Where `PlanID` is the resource plan ID of your LogDNA instance.
     
+
+
+## Changing the instance that collects platform logs from the command line
+{: #platform_logs_change_cli}
+
+You must use a user that has permissions to see all instances in the account.
+{: note}
+
+Before you change the instance that collects platform logs, check that the change will not affect other account members. There is only 1 instance per region that can collect platform logs. After you make this change, platform logs are collected through this instance in the region, and permissions to view platform logs are impacted.  
+{: important}
+
+Complete the following steps:
+
+1. [Pre-requisite] [Install the {{site.data.keyword.cloud_notm}} CLI](/docs/cli?topic=cli-install-ibmcloud-cli).
+
+2. [Pre-requisite]Get the details of the instance with the flag **Platform Logs** set in the region that you want to reconfigure. 
+
+3. Log in to the region in the {{site.data.keyword.cloud_notm}} where the LogDNA instance is running. Run the following command: [ibmcloud login](/docs/cli?topic=cli-ibmcloud_cli#ibmcloud_login)
+
+4. Set the resource group where the LogDNA instance that has the **platform logs** flag is running. Run the following command: [ibmcloud target](/docs/cli?topic=cli-ibmcloud_cli#ibmcloud_target)
+
+    By default, the `default` resource group is set.
+
+5. Get the instance name and plan ID. Run the following command: [ibmcloud resource service-instances](/docs/cli?topic=cli-ibmcloud_commands_resource#ibmcloud_resource_service_instances)
+
+    ```
+    ibmcloud resource service-instance InstanceName --output JSON
+    ```
+    {: pre}
+
+    Copy the value of the field `resource_plan_id`. This value is needed to update the instance.
+
+6. Set on the **default_receiver** property. Run the following command:
+
+    ```
+    ibmcloud resource service-instance-update InstanceName --service-plan-id PlanID -p '{"default_receiver": true}'
+    ```
+    {: codeblock}
+
+    Where 
+    
+    * `PlanID` is the resource plan ID of your LogDNA instance.
+
+    * `InstanceName` is the name of the instance that you want to turn on and start collecting platform logs.
+
+7. Set the resource group where the LogDNA instance that you want to stop collecting platform logs is running. Run the following command: [ibmcloud target](/docs/cli?topic=cli-ibmcloud_cli#ibmcloud_target)
+
+    By default, the `default` resource group is set.
+
+8. Get the instance name and plan ID. Run the following command: [ibmcloud resource service-instances](/docs/cli?topic=cli-ibmcloud_commands_resource#ibmcloud_resource_service_instances)
+
+    ```
+    ibmcloud resource service-instances --output JSON
+    ```
+    {: pre}
+
+    Copy the value of the field `resource_plan_id`. This value is needed to update the instance.
+
+9. Set off the **default_receiver** property. Run the following command:
+
+    ```
+    ibmcloud resource service-instance-update InstanceName --service-plan-id PlanID -p '{"default_receiver": false}'
+    ```
+    {: codeblock}
+
+    Where 
+    
+    * `PlanID` is the resource plan ID of your LogDNA instance.
+
+    * `InstanceName` is the name of the instance that you want to turn off from collecting platform logs.
+    
+
+
 
 
