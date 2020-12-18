@@ -156,7 +156,7 @@ Complete the following steps:
 
     * `InstanceName` is the name of the instance that you want to turn on and start collecting platform logs.
 
-7. Set the resource group where the LogDNA instance that you want to collect platform logs is running. Run the following command: [ibmcloud target](/docs/cli?topic=cli-ibmcloud_cli#ibmcloud_target)
+7. Set the resource group where the LogDNA instance that you want to stop collecting platform logs is running. Run the following command: [ibmcloud target](/docs/cli?topic=cli-ibmcloud_cli#ibmcloud_target)
 
     By default, the `default` resource group is set.
 
