@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2020
-lastupdated: "2020-07-01"
+lastupdated: "2020-12-09"
 
 keywords: LogDNA, IBM, Log Analysis, logging, config agent
 
@@ -35,8 +35,10 @@ To configure your Kubernetes cluster to send logs to your {{site.data.keyword.la
 ## Deploy the LogDNA agent by using kubectl commands
 {: #config_agent_os_kubectl}
 
-Complete the following steps from the command line to configure your OpenShift cluster to forward logs to your LogDNA instance by using the default yaml file:
+Complete the following steps from the command line to configure your OpenShift cluster to forward logs to your LogDNA instance by using the default YAML file:
 
+You can use an existing YAML file if you are configuring a newer LogDNA agent version. Change the `image` value in your existing YAML file to match the version you are configuring.
+{: note}
 
 ### Prereq
 {: #config_agent_oscluster_prereq}

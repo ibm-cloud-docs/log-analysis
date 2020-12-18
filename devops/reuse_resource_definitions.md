@@ -37,7 +37,7 @@ Complete the following steps to export the configuration of your resources:
 
 1. [Launch the {{site.data.keyword.la_full_notm}} web UI](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-view_logs#view_logs_step2).
 
-2. Select the **Settings** icon ![Configuration icon](images/admin.png "Admin icon"). Then select **Organization**. 
+2. Select the **Settings** icon ![Configuration icon](../images/admin.png "Configuration icon"). Then select **Organization**. 
 
 3. Select **Account config**.
 
@@ -58,7 +58,7 @@ Complete the following steps to import the configuration of your resources:
 
 1. [Launch the {{site.data.keyword.la_full_notm}} web UI](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-view_logs#view_logs_step2).
 
-2. Select the **Settings** icon ![Configuration icon](images/admin.png "Admin icon"). Then select **Organization**. 
+2. Select the **Settings** icon ![Configuration icon](../images/admin.png "Configuration icon"). Then select **Organization**. 
 
 3. Select **Account config**.
 

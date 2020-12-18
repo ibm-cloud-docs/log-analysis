@@ -39,7 +39,7 @@ To get the ingestion key for an {{site.data.keyword.la_full_notm}} instance by u
 
 1. [Log in to your {{site.data.keyword.cloud_notm}} account](https://cloud.ibm.com/login){: external}.
 
-2. Go to the Menu icon ![Menu icon](../icons/icon_hamburger.svg) &gt; **Observability**. 
+2. Go to the Menu icon ![Menu icon](../../icons/icon_hamburger.svg) &gt; **Observability**. 
 
 3. Select **Logging**. The {{site.data.keyword.la_full_notm}} dashboard opens. You can see the list of logging instances that are available on {{site.data.keyword.cloud_notm}}.
 
@@ -57,7 +57,7 @@ To get the ingestion key for an {{site.data.keyword.la_full_notm}} instance by u
 
 1. [Launch the {{site.data.keyword.la_full_notm}} web UI](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-view_logs#view_logs_step2).
 
-2. Click the **Configuration** icon ![Configuration icon](images/admin.png) &gt; **Organization** &gt; **API keys**. 
+2. Click the **Configuration** icon ![Configuration icon](../images/admin.png) &gt; **Organization** &gt; **API keys**. 
 
     You can see the ingestion keys that are enabled. 
 
@@ -120,7 +120,7 @@ To renew the ingestion key for an {{site.data.keyword.la_full_notm}} instance by
 
 1. [Launch the {{site.data.keyword.la_full_notm}} web UI](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-view_logs#view_logs_step2).
 
-2. Click the **Configuration** icon ![Configuration icon](images/admin.png) &gt; **Organization**. 
+2. Click the **Configuration** icon ![Configuration icon](../images/admin.png) &gt; **Organization**. 
 
 3. Select **API keys**.
 

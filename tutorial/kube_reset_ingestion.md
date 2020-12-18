@@ -9,7 +9,7 @@ keywords: LogDNA, IBM, Log Analysis, logging, kubernetes, tutorial, reset ingest
 subcollection: Log-Analysis-with-LogDNA
 
 content-type: tutorial
-services: vpc
+services: containers, Log-Analysis-with-LogDNA
 account-plan: lite 
 completion-time: 1h 
 
@@ -33,7 +33,7 @@ completion-time: 1h
 # Resetting the ingestion key that is used by a Kubernetes cluster
 {: #kube_reset}
 {: toc-content-type="tutorial"}
-{: toc-services-"kube"} 
+{: toc-services-"containers, Log-Analysis-with-LogDNA"} 
 {: toc-completion-time="1h"} 
 
 If the ingestion key that you use to forward logs from a cluster to an {{site.data.keyword.la_full_notm}} instance in the {{site.data.keyword.cloud_notm}} is compromised, you must reset the key and update the Kubernetes cluster configuration to use the new ingestion key. 
@@ -199,7 +199,7 @@ Complete the following steps to launch the web UI:
 
 1. [Log in to your {{site.data.keyword.cloud_notm}} account](https://cloud.ibm.com/login){: external}.
 
-2. Click the **Menu** icon ![Menu icon](../icons/icon_hamburger.svg) &gt; **Observability** to launch the Observability dashboard. 
+2. Click the **Menu** icon ![Menu icon](../../icons/icon_hamburger.svg) &gt; **Observability** to launch the Observability dashboard. 
 
 3. Select **Logging**. 
 

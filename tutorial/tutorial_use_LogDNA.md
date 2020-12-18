@@ -4,12 +4,12 @@ copyright:
    years: 2020
 lastupdated: "2020-11-17"
 
-keywords: IBM Cloud, LogDNA, Activity Tracker, Kubernetes logs
+keywords: IBM Cloud, LogDNA, Log Analysis, Kubernetes logs
 
-subcollection: Activity-Tracker-with-LogDNA
+subcollection: Log-Analysis-with-LogDNA
 
 content-type: tutorial
-services: vpc
+services: Log-Analysis-with-LogDNA
 account-plan: lite 
 completion-time: 1h 
 
@@ -30,7 +30,7 @@ completion-time: 1h
 # Use the {{site.data.keyword.la_short}} web UI
 {: #tutorial-use-logdna}
 {: toc-content-type="tutorial"}
-{: toc-services-"vpc"} 
+{: toc-services-"Log-Analysis-with-LogDNA"} 
 {: toc-completion-time="1h"} 
 
 
@@ -65,7 +65,7 @@ application and system logs.
 
 2. Select your account.
 
-3. Click the **Menu** icon ![Menu icon](../icons/icon_hamburger.svg) &gt; **Observability**. 
+3. Click the **Menu** icon ![Menu icon](../../icons/icon_hamburger.svg) &gt; **Observability**. 
 
 4. Select **Logging**.
 

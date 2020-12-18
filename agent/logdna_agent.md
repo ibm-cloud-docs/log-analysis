@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2020
-lastupdated: "2020-07-29"
+lastupdated: "2020-12-09"
 
 keywords: LogDNA, IBM, Log Analysis, logging, config agent
 
@@ -52,20 +52,22 @@ LogDNA agent images for Kubernetes clusters are public images that are available
 
 The following table outlines the agent versions that are available:
 
-| Kubernetes cluster                    | LogDNA agent V1                                    | LogDNA agent V2                                   |
-|---------------------------------------|----------------------------------------------------|---------------------------------------------------|
-| `Standard Kubernetes cluster`         | ![Checkmark icon](images/checkmark-icon.svg)  | ![Checkmark icon](images/checkmark-icon.svg) |
-| `OpenShift Kubernetes cluster`        | ![Checkmark icon](images/checkmark-icon.svg)  | `Not available`                                   |
+| Kubernetes cluster             | LogDNA agent V3                              | LogDNA agent V2                              | LogDNA agent V1                              |
+|--------------------------------|----------------------------------------------|----------------------------------------------|----------------------------------------------|
+| `Standard Kubernetes cluster`  | ![Checkmark icon](../images/checkmark-icon.svg) | ![Checkmark icon](../images/checkmark-icon.svg) | ![Checkmark icon](../images/checkmark-icon.svg) |
+| `OpenShift Kubernetes cluster` | ![Checkmark icon](../images/checkmark-icon.svg) | ![Checkmark icon](../images/checkmark-icon.svg) | `Not available`                              |
 {: caption="Table 1. LogDNA agent versions for Kubernetes clusters" caption-side="top"}
 
 The LogDNA Agent v2 is available only for Kubernetes 1.9+.
 {: important}
 
 
-When you configure the LogDNA agent, you can use the default yaml that is provided. Choose by region and by type of account. The default configuration pulls the image `icr.io/ext/logdna-agent:stable`.
+When you configure the LogDNA agent, you can use the default YAML that is provided. Choose by region and by type of account. The default configuration pulls the image `icr.io/ext/logdna-agent:stable`.
 
-If you have a highly regulated environment, you can customize the yaml file. You can modify the yaml file so that it pulls from the {{site.data.keyword.registrylong_notm}} global repository `icr.io/ext/` the image that you specify, for example, `image: icr.io/ext/logdna-agent:2.1.8`. Consider keeping a copy of the customized yaml file in a version control system.
+If you have a highly regulated environment, you can customize the YAML file. You can modify the YAML file so that it pulls from the {{site.data.keyword.registrylong_notm}} global repository `icr.io/ext/` the image that you specify, for example, `image: icr.io/ext/logdna-agent:2.1.8`. Consider keeping a copy of the customized YAML file in a version control system.
 {: important}
+
+You can use an existing YAML file if you are configuring a newer LogDNA agent version. Change the `image` value in your existing YAML file to match the version you are configuring.
 
 
 ### Image for Linux
@@ -77,7 +79,7 @@ The following table outlines the agent versions that are available:
 
 | Kubernetes cluster                    | LogDNA agent V1                                    | LogDNA agent V2                                   |
 |---------------------------------------|----------------------------------------------------|---------------------------------------------------|
-| `Linux                      `         | ![Checkmark icon](images/checkmark-icon.svg)  | `Not available`                                   |
+| `Linux                      `         | ![Checkmark icon](../images/checkmark-icon.svg)  | `Not available`                                   |
 {: caption="Table 2. LogDNA agent versions for Linux" caption-side="top"}
 
 
