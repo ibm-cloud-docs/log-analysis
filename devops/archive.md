@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years:  2018, 2020
-lastupdated: "2020-07-29"
+  years:  2018, 2021
+lastupdated: "2021-01-18"
 
 keywords: LogDNA, IBM, Log Analysis, logging, archive logs, COS, cloud object storage
 
@@ -37,7 +37,35 @@ You archive logs from an {{site.data.keyword.la_full_notm}} instance into a buck
 
 * Logs are archived 24 - 48 hours after you save the configuration. 
 
-* Logs are archived daily. 
+* Logs are archived hourly. 
+
+    Previously, logs have been archived daily. Through this transition, you might observe a small overlap between the older daily format archives and the new archives.
+    {: note}
+
+* The hourly archive directory format for all providers looks like this:
+
+    ```
+    year=YYYY/month=MM/day=DD/<accountID>.<YYYY>-<MM>-<DD>.<HH>00.json.gz
+    ```
+    {: codeblock}
+    
+    Where `HH` is hours in 24 format. 
+    
+    The daily archive directory format looks like this:
+    
+    ```
+    /<accountID>.<YYYY>-<MM>-<DD>.<clusterId>.json.gz
+    ```
+    {: codeblock}
+    
+    The current archive directory format for COS looks like this:
+    
+    ```
+    YYYY/MM/<accountID>.<YYYY>-<MM>-<DD>.<clusterId>.json.gz
+    ```
+    {: codeblock}
+    
+    The content of the archive files will remain the same as before.
 
 * Logs that are included in a file correspond to the period of time that is indicated as part of the name of the file. 
 

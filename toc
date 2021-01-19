@@ -6,6 +6,7 @@ Log Analysis with LogDNA
 
     {: .navgroup id="learn"}
     getting-started.md
+    releasenotes.md
     agent/logdna_agent.md
 
     {: .topicgroup}
