@@ -24,7 +24,7 @@ Use these release notes to learn about the latest updates to {{site.data.keyword
 
 This release includes the following functional enhancements:
 
-* Hourly archiving in Chennai, Tokyo, Sydney, Seoul, London, Washington instead of daily archiving.
+* Hourly archiving in Chennai, Tokyo, Sydney, Seoul, London, Washington instead of daily archiving. [Learn more](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-archiving).
 
 
 
