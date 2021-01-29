@@ -42,6 +42,7 @@ Log Analysis with LogDNA
     upgrade.md
     observe.md
     iam.md
+    teams_data_access.md
 
     {: .topicgroup}
     LogDNA web UI
