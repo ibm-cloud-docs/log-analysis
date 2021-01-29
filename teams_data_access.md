@@ -120,22 +120,21 @@ You can edit a group to add users or change the access scope as needed.
 
    The access scope is defined as a search query.  The query uses the following format.
 
-   Example Query              | Behavior                          | Example Matches
+Example Query              | Behavior                          | Example Matches
 ---------------------------|-----------------------------------|-------------------------------------------------
-   `level:error`              | Case-insensitive prefix match     | Error, error, errors
-   `level:=error`             | Case-sensitive prefix match       | error, errors
-   `level:==error`            | Case-insensitive exact term match | error, Error
-   `level:===error`           | Case-sensitive exact term match   | error
-   `level:[warning,error]`    | Case-insensitive list of prefixes | warning, Warning, Warnings, error, ERROR, errors
-   `level:===[warning,error]` | Case-sensitive list of prefixes   | warning, error
-   `level:*`                  | Matches if the field exists       | All lines containing the field `level`
-   {: caption="Table 2. Example access scope search queries" caption-side="top"} 
+`level:error`              | Case-insensitive prefix match     | Error, error, errors
+`level:=error`             | Case-sensitive prefix match       | error, errors
+`level:==error`            | Case-insensitive exact term match | error, Error
+`level:===error`           | Case-sensitive exact term match   | error
+`level:[warning,error]`    | Case-insensitive list of prefixes | warning, Warning, Warnings, error, ERROR, errors
+`level:===[warning,error]` | Case-sensitive list of prefixes   | warning, error
+`level:*`                  | Matches if the field exists       | All lines containing the field `level`
+{: caption="Table 2. Example access scope search queries" caption-side="top"} 
 
-   For example, if you have two apps (`myapp` and `myapp1`), then a LogDNA group with an access scope of  `app:myapp` will allow access to data from both apps. If the access scope is `app:===myapp`, then users in the group will only be able to access data from the `myapp` app. 
+For example, if you have two apps (`myapp` and `myapp1`), then a LogDNA group with an access scope of  `app:myapp` will allow access to data from both apps. If the access scope is `app:===myapp`, then users in the group will only be able to access data from the `myapp` app. 
 
-   If you want to create a group of administrators with access to all data, specify `host:*` for the 
-   **Access Scope**.
-   {: note}
+If you want to create a group of administrators with access to all data, specify `host:*` for the    **Access Scope**.
+{: note}
 
 ## Editing or deleting LogDNA groups
 {: #groups_data_access_editing}
