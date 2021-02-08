@@ -73,6 +73,8 @@ You can choose the LogDNA instance where you want to collect {{site.data.keyword
 
 You can choose the LogDNA instance where you want to collect {{site.data.keyword.openshiftlong}} service logs.
 
+You can choose the LogDNA instance where you want to collect {{site.data.keyword.satellitelong}} service logs.
+
 The following tables list the locations where automatic collection of registry service logs is enabled. You can monitor logs through the Log Analysis instance that is available in the same location as your database resources, if you enable 1 instance in this location to host service platform logs. For locations where you can provision a service instance but the {{site.data.keyword.la_full_notm}} service is not available, specific detail about the location where you can monitor those logs is provided in each case.
 
 | Service                                                         | `Dallas (us-south)` | `Washington (us-east)`                   |
