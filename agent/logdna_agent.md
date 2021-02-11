@@ -35,8 +35,57 @@ The LogDNA agent is responsible for collecting and forwarding logs to your {{sit
 * The LogDNA agent tails for new log data, and looks for new files that are added to the logging directories that the agent monitors.
 
 
+## LogDNA agent image tags
+{: #logdna_agent_image_tags}
+
+The tag that is associated to a LogDNA image indicates whether the LogDNA agent is automatically updated. 
+{: important}
+
+A format of a tag is the following:
+
+```
+X.Y.Z-<date>.[hash]
+```
+{: codeblock}
+
+Where
+
+- `X` represents the major version of an image.
+- `Y` represents the minor version of an image.
+- `Z` represents an incremental ID that determines the latest patched minor version.
+- `<date>` represents the date that the image is built and available. The format is `YYYYMMDD`.
+- `[hash]` represents the digest (manifest) of the container image. It is a unique `SHA-256` hash.
+
+
+The following table outlines the tagging convention adopted and the agent update behaviour:
+
+| Tag | LogDNA agent auto-update enabled | More info |
+|-----|----------------------------------|-----------|
+| `X` |  YES  | The LogDNA agent auto-updates when a new major version is released. |
+| `X.Y` | YES | The LogDNA agent auto-updates when a new minor version is released. |
+| `X.Y.Z-<date>.[hash]` | NO | You must update the LogDNA agent. |
+{: caption="Table 1. LogDNA agent tags explained" caption-side="top"}
+
+For highly regulated environments, use the tag `X.Y.Z-<date>.[hash]`.
+{: important}
+
+
+### Stable and latest tags
+{: #logdna_agent_image_tags_1}
+
+For the `V1` and `V2` agent versions, you can also find the tags `stable` and `latest`. These tags continue to receive updates.
+
+- The tag `latest` refers to the most recent LogDNA agent 1.Y image.
+- The tag `stable` refers to the most recent LogDNA agent 2.Y image.
+
+The tags `stable` and `latest` will be deprecated in June 2021.
+{: important}
+
+
+
 ## LogDNA agent image
 {: #logdna_agent_image_ov}
+
 
 ### Image for Kubernetes clusters
 {: #logdna_agent_image_kube}
@@ -52,22 +101,23 @@ LogDNA agent images for Kubernetes clusters are public images that are available
 
 The following table outlines the agent versions that are available:
 
-| Kubernetes cluster             | LogDNA agent V3                              | LogDNA agent V2                              | LogDNA agent V1                              |
-|--------------------------------|----------------------------------------------|----------------------------------------------|----------------------------------------------|
+| Kubernetes cluster             | LogDNA agent V3             | LogDNA agent V2       | LogDNA agent V1                              |
+|--------------------------------|-----------------------------|-----------------------|----------------------------------------------|
 | `Standard Kubernetes cluster`  | ![Checkmark icon](../images/checkmark-icon.svg) | ![Checkmark icon](../images/checkmark-icon.svg) | ![Checkmark icon](../images/checkmark-icon.svg) |
 | `OpenShift Kubernetes cluster` | ![Checkmark icon](../images/checkmark-icon.svg) | ![Checkmark icon](../images/checkmark-icon.svg) | `Not available`                              |
-{: caption="Table 1. LogDNA agent versions for Kubernetes clusters" caption-side="top"}
+{: caption="Table 2. LogDNA agent versions for Kubernetes clusters" caption-side="top"}
 
 The LogDNA Agent v2 is available only for Kubernetes 1.9+.
 {: important}
 
 
-When you configure the LogDNA agent, you can use the default YAML that is provided. Choose by region and by type of account. The default configuration pulls the image `icr.io/ext/logdna-agent:stable`.
+When you configure the LogDNA agent, you can choose any of the following options:
+- You can use the default YAML that is provided. Choose by region and by type of account. The default configuration pulls the image `icr.io/ext/logdna-agent:stable`.
+- You can use an existing YAML file and change the `image:tag` value in your existing YAML file to pull a specific image from the registry.
 
-If you have a highly regulated environment, you can customize the YAML file. You can modify the YAML file so that it pulls from the {{site.data.keyword.registrylong_notm}} global repository `icr.io/ext/` the image that you specify, for example, `image: icr.io/ext/logdna-agent:2.1.8`. Consider keeping a copy of the customized YAML file in a version control system.
+If you have a highly regulated environment, you can customize the YAML file. You can modify the YAML file so that it pulls from the {{site.data.keyword.registrylong_notm}} global repository `icr.io/ext/` the image that you specify, for example, `image: icr.io/ext/logdna-agent:X.Y.Z-<date>.[hash]`. Consider keeping a copy of the customized YAML file in a version control system. 
 {: important}
 
-You can use an existing YAML file if you are configuring a newer LogDNA agent version. Change the `image` value in your existing YAML file to match the version you are configuring.
 
 
 ### Image for Linux
@@ -80,8 +130,7 @@ The following table outlines the agent versions that are available:
 | Kubernetes cluster                    | LogDNA agent V1                                    | LogDNA agent V2                                   |
 |---------------------------------------|----------------------------------------------------|---------------------------------------------------|
 | `Linux                      `         | ![Checkmark icon](../images/checkmark-icon.svg)  | `Not available`                                   |
-{: caption="Table 2. LogDNA agent versions for Linux" caption-side="top"}
-
+{: caption="Table 3. LogDNA agent versions for Linux" caption-side="top"}
 
 
 
@@ -113,7 +162,7 @@ The following tables outline the LogDNA agent versions that are available and su
 | `Standard Kubernetes cluster`  | [Configuring a LogDNA agent for a standard Kubernetes cluster](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-config_agent_kube_cluster) |
 | `OpenShift Kubernetes cluster` | `N/A` |
 | `Linux Ubuntu or Debian`       | `N/A` |
-{: caption="Table 2. LogDNA agent version 2" caption-side="top"}
+{: caption="Table 4. LogDNA agent version 2" caption-side="top"}
 {: #agent-table-3}
 {: tab-title="LogDNA agent V2"}
 {: tab-group="version"}
@@ -125,7 +174,7 @@ The following tables outline the LogDNA agent versions that are available and su
 | `Standard Kubernetes cluster`  | [Configuring a LogDNA agent for a standard Kubernetes cluster](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-config_agent_kube_cluster) |
 | `OpenShift Kubernetes cluster` | [Configuring a LogDNA agent for an OpenShift Kubernetes cluster](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-config_agent_os_cluster) |
 | `Linux Ubuntu or Debian`       | [Configuring a LogDNA agent on Linux Ubuntu or Debian](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-config_agent_linux) |
-{: caption="Table 3. LogDNA agent version 1" caption-side="top"}
+{: caption="Table 5. LogDNA agent version 1" caption-side="top"}
 {: #agent-table-3}
 {: tab-title="LogDNA agent V1"}
 {: tab-group="version"}
@@ -150,7 +199,7 @@ You can customize a LogDNA agent by configuring parameters for Linux agents, or 
 | `exclude_regex` | Define regex patterns to filter out any lines that match the pattern. Do not include leading and trailing `/`. | 
 | `hostname` | Define the hostname. This value overrides the operating system hostname. |
 | `autoupdate` | Set to `1` to update the agent automatically when the public repo agent definition is updated. Set to `0` to disable this feature. |
-{: caption="Table 4. Configuration options for the LogDNA agent V1" caption-side="top"}
+{: caption="Table 6. Configuration options for the LogDNA agent V1" caption-side="top"}
 
 
 ### Standard Kubernetes clusters: environment variables for LogDNA agent V2
@@ -174,7 +223,7 @@ You can customize a LogDNA agent by configuring parameters for Linux agents, or 
 | `LOGDNA_USE_COMPRESSION`  | Boolean that defines whether compression is enabled when the agent sends logs to the LogDNA instance. </br> The default value is set to `true`. | `true` | `true` |
 | `LOGDNA_GZIP_LEVEL`       | Compression level for gzip. </br>Valid values are: `1`, `2`, `3`, `4`, `5`, `6`, `7`, `8`, `9` </br>When you set this variable to `1`, you are configuring the agent to use the fastest compression speed but at a lower ratio. When you set this variable to `9`, you are configuring the agent to use the highest compression ratio but at a lower speed.  | `2` | `6` |
 | `LOGDNA_TAGS` | Define tags to group hosts automatically into dynamic groups. |  | `production,serviceA` |
-{: caption="Table 5. Tags that are available for the LogDNA agent V2" caption-side="top"}
+{: caption="Table 7. Tags that are available for the LogDNA agent V2" caption-side="top"}
 
 ### Standard Kubernetes clusters: environment variables for LogDNA agent V1
 {: #logdna_agent_configure_std_kube_v1}
@@ -197,7 +246,7 @@ You can customize a LogDNA agent by configuring parameters for Linux agents, or 
 | `COMPRESS` | Boolean that defines whether compression is enabled when the agent sends logs to the LogDNA instance. </br> The default value is set to `true`. | `true` | `true` |
 | `GZIP_COMPRESS_LEVEL` | Compression level for gzip. </br>Valid values are: `1`, `2`, `3`, `4`, `5`, `6`, `7`, `8`, `9` </br>When you set this variable to `1`, you are configuring the agent to use the fastest compression speed but at a lower ratio. When you set this variable to `9`, you are configuring the agent to use the highest compression ratio but at a lower speed.  | `2` | `6` |
 | `LOGDNA_TAGS` | Define tags to group hosts automatically into dynamic groups. |  | `production,serviceA`  |
-{: caption="Table 6. Tags that are available for the LogDNA agent V2" caption-side="top"}
+{: caption="Table 8. Tags that are available for the LogDNA agent V2" caption-side="top"}
 
 
 
@@ -214,7 +263,7 @@ You can configure tags at the agent level so that all lines that are sent by thi
 |--------------------------------|------------------------------|
 | `Kubernetes cluster`           | [Adding tags to logs from a Kubernetes cluster](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-adding_tags#adding_tags_kube) |
 | `Linux Ubuntu or Debian`       | [Adding tags to logs from Linux Ubuntu or Debian](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-adding_tags#adding_tags_linux) |
-{: caption="Table 7. Adding tags" caption-side="top"}
+{: caption="Table 9. Adding tags" caption-side="top"}
 
 
 ### Exclude log files that are monitored by the agent
@@ -240,5 +289,5 @@ To stop your Kubernetes cluster from sending logs to your {{site.data.keyword.la
 |--------------------------------|------------------------------|
 | `Standard Kubernetes cluster`  | [Detaching a LogDNA agent from a standard Kubernetes cluster](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-detach_agent#detach_agent_kube) |
 | `OpenShift Kubernetes cluster` | [Detaching a LogDNA agent from an Openshift Kubernetes cluster](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-detach_agent#detach_agent_os) |
-{: caption="Table 8. Detaching a LogDNA agent from a cluster" caption-side="top"}
+{: caption="Table 10. Detaching a LogDNA agent from a cluster" caption-side="top"}
 
