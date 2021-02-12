@@ -75,10 +75,12 @@ The following table outlines the tagging convention adopted and the agent update
 
 | Tag | LogDNA agent auto-update enabled | More info |
 |-----|----------------------------------|-----------|
-| `X` |  YES  | The LogDNA agent auto-updates when a new major version is released. |
-| `X.Y` </br>`X.Y.Z` | YES | The LogDNA agent auto-updates when a new minor version is released. |
-| `X.Y.Z-<date>.[hash]` | NO | You must update the LogDNA agent. |
+| `X` |  YES  | The LogDNA agent auto-updates when a new minor version releases. </br>The LogDNA agent does not update to a new major version, as these updates may require configuration changes. |
+| `X.Y`  | YES | The LogDNA agent auto-updates when a new patch version is released. |
+| `X.Y.Z` | YES | The LogDNA agent auto-updates when a new vulnerability fix is released. The agent code does not change, but the included libraries have vulnerability fixes. |
+| `X.Y.Z-<date>.[hash]` | NO | The LogDNA agent never updates. If you use this tag, make sure you are watching for new agent releases that have vulnerability fixes. |
 {: caption="Table 1. LogDNA agent tags explained" caption-side="top"}
+
 
 For highly regulated environments, use the tag `X.Y.Z-<date>.[hash]`.
 {: important}
