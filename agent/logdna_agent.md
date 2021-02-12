@@ -35,13 +35,27 @@ The LogDNA agent is responsible for collecting and forwarding logs to your {{sit
 * The LogDNA agent tails for new log data, and looks for new files that are added to the logging directories that the agent monitors.
 
 
-## LogDNA agent image tags
-{: #logdna_agent_image_tags}
+## LogDNA agent for Kubernetes clusters
+{: #logdna_agent_image_kube}
+
+LogDNA agent images for Kubernetes clusters are public images that are available in {{site.data.keyword.cloud_notm}} through the [{{site.data.keyword.registrylong_notm}}](/docs/Registry?topic=Registry-getting-started) service. 
+
+* The LogDNA agent images are hosted in the {{site.data.keyword.registrylong_notm}} global repository `icr.io/ext/logdna-agent`.
+
+* {{site.data.keyword.registrylong_notm}} provides a multi-tenant, highly available, scalable, and encrypted private image registry that is hosted and managed by {{site.data.keyword.IBM_notm}}. 
+
+* The {{site.data.keyword.registrylong_notm}} includes *Vulnerability Advisor* features that scan for potential security issues and vulnerabilities. Vulnerability Advisor checks for vulnerable packages in specific Docker base images, and known vulnerabilities in app configuration settings. When vulnerabilities are found, information about the vulnerability is provided. You can use this information to resolve security issues so that containers are not deployed from vulnerable images. 
+
+To get details about the LogDNA agent images, see [Getting information about LogDNA agent images ](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-logdna_agent_image).
+
+
+### Understanding image tags
+{: #logdna_agent_image_kube_tags}
 
 The tag that is associated to a LogDNA image indicates whether the LogDNA agent is automatically updated. 
 {: important}
 
-A format of a tag is the following:
+A tag consists of multiple parts:
 
 ```
 X.Y.Z-<date>.[hash]
@@ -62,7 +76,7 @@ The following table outlines the tagging convention adopted and the agent update
 | Tag | LogDNA agent auto-update enabled | More info |
 |-----|----------------------------------|-----------|
 | `X` |  YES  | The LogDNA agent auto-updates when a new major version is released. |
-| `X.Y` | YES | The LogDNA agent auto-updates when a new minor version is released. |
+| `X.Y` </br>`X.Y.Z` | YES | The LogDNA agent auto-updates when a new minor version is released. |
 | `X.Y.Z-<date>.[hash]` | NO | You must update the LogDNA agent. |
 {: caption="Table 1. LogDNA agent tags explained" caption-side="top"}
 
@@ -70,10 +84,10 @@ For highly regulated environments, use the tag `X.Y.Z-<date>.[hash]`.
 {: important}
 
 
-### Stable and latest tags
+### Stable and latest tags (deprecated)
 {: #logdna_agent_image_tags_1}
 
-For the `V1` and `V2` agent versions, you can also find the tags `stable` and `latest`. These tags continue to receive updates.
+For the `V1` and `V2` agent versions, you can also find the tags `stable` and `latest`. When you use any of these tags to configure the LogDNA agent, notice that the LogDNA agent will automatically update to the latest version of the agent.
 
 - The tag `latest` refers to the most recent LogDNA agent 1.Y image.
 - The tag `stable` refers to the most recent LogDNA agent 2.Y image.
@@ -83,23 +97,11 @@ The tags `stable` and `latest` will be deprecated in June 2021.
 
 
 
-## LogDNA agent image
-{: #logdna_agent_image_ov}
+### Image versions
+{: #logdna_agent_image_kube_versions}
 
 
-### Image for Kubernetes clusters
-{: #logdna_agent_image_kube}
-
-LogDNA agent images for Kubernetes clusters are public images that are available in {{site.data.keyword.cloud_notm}} through the [{{site.data.keyword.registrylong_notm}}](/docs/Registry?topic=Registry-getting-started) service. 
-
-* The LogDNA agent images are hosted in the {{site.data.keyword.registrylong_notm}} global repository `icr.io/ext/logdna-agent`.
-
-* {{site.data.keyword.registrylong_notm}} provides a multi-tenant, highly available, scalable, and encrypted private image registry that is hosted and managed by {{site.data.keyword.IBM_notm}}. 
-
-* The {{site.data.keyword.registrylong_notm}} includes *Vulnerability Advisor* features that scan for potential security issues and vulnerabilities. Vulnerability Advisor checks for vulnerable packages in specific Docker base images, and known vulnerabilities in app configuration settings. When vulnerabilities are found, information about the vulnerability is provided. You can use this information to resolve security issues so that containers are not deployed from vulnerable images. To get details about the LogDNA agent images, see [Getting information about LogDNA agent images ](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-logdna_agent_image).
-
-
-The following table outlines the agent versions that are available:
+The following table outlines the LogDNA agent versions that are available to configure for a Kubernetes cluster:
 
 | Kubernetes cluster             | LogDNA agent V3             | LogDNA agent V2       | LogDNA agent V1                              |
 |--------------------------------|-----------------------------|-----------------------|----------------------------------------------|
@@ -107,9 +109,13 @@ The following table outlines the agent versions that are available:
 | `OpenShift Kubernetes cluster` | ![Checkmark icon](../images/checkmark-icon.svg) | ![Checkmark icon](../images/checkmark-icon.svg) | `Not available`                              |
 {: caption="Table 2. LogDNA agent versions for Kubernetes clusters" caption-side="top"}
 
+
 The LogDNA Agent v2 is available only for Kubernetes 1.9+.
 {: important}
 
+
+### Choosing a version
+{: #logdna_agent_image_kube_choose_version}
 
 When you configure the LogDNA agent, you can choose any of the following options:
 - You can use the default YAML that is provided. Choose by region and by type of account. The default configuration pulls the image `icr.io/ext/logdna-agent:stable`.
@@ -119,9 +125,42 @@ If you have a highly regulated environment, you can customize the YAML file. You
 {: important}
 
 
+### Connecting a LogDNA agent with a LogDNA instance 
+{: #logdna_agent_image_kube_connect}
 
-### Image for Linux
+The LogDNA agent is responsible for collecting and forwarding system-level, and file-based logs to your {{site.data.keyword.la_full_notm}} instance. 
+
+To connect your Kubernetes cluster to send logs to your {{site.data.keyword.la_full_notm}} instance, you must install a *logdna-agent* pod on each node of your cluster. 
+
+- The LogDNA agent reads log files from the pod where it is installed, and forwards the log data to your LogDNA instance.
+
+- The LogDNA agent collects STDOUT, STDERR, logs with the extension `*.log`, and extensionsless files that are stored in the `/var/log` directory of your pod. By default, logs are collected from all namespaces, including `kube-system`, and automatically forwarded to the {{site.data.keyword.la_full_notm}} service.
+
+- To connect an agent to a standard Kubernetes cluster, see [Connecting a LogDNA agent for a standard Kubernetes cluster](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-config_agent_kube_cluster).
+
+- To connect an agent to an OpenShift Kubernetes cluster, see [Connecting a LogDNA agent for an OpenShift Kubernetes cluster](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-config_agent_os_cluster).
+
+
+
+### Detaching a LogDNA agent from a cluster
+{: #logdna_agent_detach}
+
+To stop your Kubernetes cluster from sending logs to your {{site.data.keyword.la_full_notm}} instance, you must remove the LogDNA agent from your cluster. [Learn more](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-detach_agent).
+
+| Platform                       | How to install and configure |
+|--------------------------------|------------------------------|
+| `Standard Kubernetes cluster`  | [Detaching a LogDNA agent from a standard Kubernetes cluster](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-detach_agent#detach_agent_kube) |
+| `OpenShift Kubernetes cluster` | [Detaching a LogDNA agent from an Openshift Kubernetes cluster](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-detach_agent#detach_agent_os) |
+{: caption="Table 10. Detaching a LogDNA agent from a cluster" caption-side="top"}
+
+
+## LogDNA agent for Linux
 {: #logdna_agent_image_linux}
+
+
+
+### Image versions
+{: #logdna_agent_image_linux_versions}
 
 LogDNA agent images for Linux are public images that are available in the LogDNA repo `https://repo.logdna.com`.
 
@@ -134,52 +173,17 @@ The following table outlines the agent versions that are available:
 
 
 
-## Connecting a LogDNA agent with a LogDNA instance 
-{: #logdna_agent_connect}
+### Connecting a LogDNA agent with a LogDNA instance 
+{: #logdna_agent_image_linux_connect}
 
 The LogDNA agent is responsible for collecting and forwarding system-level, and file-based logs to your {{site.data.keyword.la_full_notm}} instance. 
 
-* To connect your Kubernetes cluster to send logs to your {{site.data.keyword.la_full_notm}} instance, you must install a *logdna-agent* pod on each node of your cluster. 
+To connect your Linux server to send logs to your {{site.data.keyword.la_full_notm}} instance, you must install a *logdna-agent*. 
 
-    The LogDNA agent reads log files from the pod where it is installed, and forwards the log data to your LogDNA instance.
+- The LogDNA agent reads log files from */var/log*, and forwards the log data to your LogDNA instance. 
 
-    The LogDNA agent collects STDOUT, STDERR, logs with the extension `*.log`, and extensionsless files that are stored in the `/var/log` directory of your pod. By default, logs are collected from all namespaces, including `kube-system`, and automatically forwarded to the {{site.data.keyword.la_full_notm}} service.
+- To connect an agent to a Linux platform, see [Connecting a LogDNA agent for Linux Ubuntu or Debian](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-config_agent_linux).
 
-    To connect an agent to a standard Kubernetes cluster, see [Connecting a LogDNA agent for a standard Kubernetes cluster](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-config_agent_kube_cluster).
-
-    To connect an agent to an OpenShift Kubernetes cluster, see [Connecting a LogDNA agent for an OpenShift Kubernetes cluster](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-config_agent_os_cluster).
-
-* To connect your Linux server to send logs to your {{site.data.keyword.la_full_notm}} instance, you must install a *logdna-agent*. 
-
-    The LogDNA agent reads log files from */var/log*, and forwards the log data to your LogDNA instance. 
-
-    To connect an agent to a Linux platform, see [Connecting a LogDNA agent for Linux Ubuntu or Debian](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-config_agent_linux).
-
-The following tables outline the LogDNA agent versions that are available and supported per platform:
-
-| Platform                       | How to install and configure |
-|--------------------------------|------------------------------|
-| `Standard Kubernetes cluster`  | [Configuring a LogDNA agent for a standard Kubernetes cluster](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-config_agent_kube_cluster) |
-| `OpenShift Kubernetes cluster` | `N/A` |
-| `Linux Ubuntu or Debian`       | `N/A` |
-{: caption="Table 4. LogDNA agent version 2" caption-side="top"}
-{: #agent-table-3}
-{: tab-title="LogDNA agent V2"}
-{: tab-group="version"}
-{: class="simple-tab-table"}
-{: row-headers}
-
-| Platform                       | How to install and configure |
-|--------------------------------|------------------------------|
-| `Standard Kubernetes cluster`  | [Configuring a LogDNA agent for a standard Kubernetes cluster](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-config_agent_kube_cluster) |
-| `OpenShift Kubernetes cluster` | [Configuring a LogDNA agent for an OpenShift Kubernetes cluster](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-config_agent_os_cluster) |
-| `Linux Ubuntu or Debian`       | [Configuring a LogDNA agent on Linux Ubuntu or Debian](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-config_agent_linux) |
-{: caption="Table 5. LogDNA agent version 1" caption-side="top"}
-{: #agent-table-3}
-{: tab-title="LogDNA agent V1"}
-{: tab-group="version"}
-{: class="simple-tab-table"}
-{: row-headers}
 
 
 
@@ -280,14 +284,5 @@ For more information, see [Excluding log files through the LogDNA agent](/docs/L
 
 
 
-## Detaching a LogDNA agent from a cluster
-{: #logdna_agent_detach}
 
-To stop your Kubernetes cluster from sending logs to your {{site.data.keyword.la_full_notm}} instance, you must remove the LogDNA agent from your cluster. [Learn more](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-detach_agent).
-
-| Platform                       | How to install and configure |
-|--------------------------------|------------------------------|
-| `Standard Kubernetes cluster`  | [Detaching a LogDNA agent from a standard Kubernetes cluster](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-detach_agent#detach_agent_kube) |
-| `OpenShift Kubernetes cluster` | [Detaching a LogDNA agent from an Openshift Kubernetes cluster](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-detach_agent#detach_agent_os) |
-{: caption="Table 10. Detaching a LogDNA agent from a cluster" caption-side="top"}
 
