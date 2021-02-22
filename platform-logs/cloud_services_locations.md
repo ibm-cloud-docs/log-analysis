@@ -287,11 +287,12 @@ The following tables list the locations where automatic collection of security s
 ## VPC infrastructure services
 {: #cloud_services_locations_vpc_infrastructure}
 
-The followinf locations are valid for VPC Gen 1 and VPC Gen 2:
+The following locations are valid for VPC Gen 1 and VPC Gen 2:
 
 | Service                                | `Dallas (us-south)`                                | `Washington (us-east)`               |
 |----------------------------------------|----------------------------------------------------|--------------------------------------|
 | VPN                                    | ![Checkmark icon](../images/checkmark-icon.svg) | `Logs are available through the LogDNA US-South instance` |
+| Flow Log Collector                     | ![Checkmark icon](../images/checkmark-icon.svg) | ![Checkmark icon](../images/checkmark-icon.svg) |
 {: caption="Table 19. VPC events in America's locations" caption-side="top"}
 {: #cs-vpc-table-19}
 {: tab-title="America"}
@@ -301,7 +302,8 @@ The followinf locations are valid for VPC Gen 1 and VPC Gen 2:
 
 | Service                                                         | `Tokyo (jp-tok)` |`Sydney (au-syd)`           |
 |-----------------------------------------------------------------|------------------|----------------------------|
-| VPN                                              | ![Checkmark icon](../images/checkmark-icon.svg)             | ![Checkmark icon](../images/checkmark-icon.svg) |      
+| VPN                                              | ![Checkmark icon](../images/checkmark-icon.svg)             | ![Checkmark icon](../images/checkmark-icon.svg) |
+| Flow Log Collector                     | ![Checkmark icon](../images/checkmark-icon.svg) | ![Checkmark icon](../images/checkmark-icon.svg) |
 {: caption="Table 20. VPC events in AP locations" caption-side="top"}
 {: #cs-vpc-table-20}
 {: tab-title="Asia Pacific"}
@@ -311,7 +313,8 @@ The followinf locations are valid for VPC Gen 1 and VPC Gen 2:
 
 | Service                                                       |`Frankfurt (eu-de)`  | `London (eu-gb)` |
 |---------------------------------------------------------------|---------------------|------------------|
-| VPN                                                           | ![Checkmark icon](../images/checkmark-icon.svg)  | ![Checkmark icon](../images/checkmark-icon.svg) |           
+| VPN                                                           | ![Checkmark icon](../images/checkmark-icon.svg)  | ![Checkmark icon](../images/checkmark-icon.svg) |
+| Flow Log Collector                     | ![Checkmark icon](../images/checkmark-icon.svg) | ![Checkmark icon](../images/checkmark-icon.svg) |      
 {: caption="Table 21. VPC events in Europe locations" caption-side="top"}
 {: #cs-vpc-table-21}
 {: tab-title="Europe"}
