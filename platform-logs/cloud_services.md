@@ -173,7 +173,7 @@ To learn more about logging, see [Logging for VPC](/docs/vpc?topic=vpc-logging).
 | Service     | Description | More info         |
 |-------------|-------------|-------------------|
 | [VPN](/docs/vpc-on-classic-network?topic=vpc-on-classic-network---using-vpn-with-your-vpc)| Use this service to connect private networks in a secure fashion. You can use VPN to set up an IPsec site-to-site tunnel between your VPC and your on-premise private network or another VPC. | [More info](/docs/vpc-on-classic-network?topic=vpc-on-classic-network-using-logdna-to-view-vpn-logs) |
-| [Flow Log Collector](/docs/vpc?topic=vpc-flow-logs)| This service is used to collect and store information regarding the Internet Protocol (IP) traffic going to and from network interfaces within your Virtual Private Cloud (VPC) | [More info](/docs/vpc?topic=vpc-logging#logging-flow-log-collector_msgs) |
+| [Flow Log Collector](/docs/vpc?topic=vpc-flow-logs)| This service is used to collect and store information regarding the Internet Protocol (IP) traffic going to and from network interfaces within your Virtual Private Cloud (VPC) | [More info](/docs/vpc?topic=vpc-fl-analyze) |
 {: caption="Table 9. List of VPC infrastructure services (generation 1)" caption-side="top"} 
 
 
