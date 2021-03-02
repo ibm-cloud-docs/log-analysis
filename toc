@@ -44,12 +44,6 @@ Log Analysis with LogDNA
     iam.md
     teams_data_access.md
 
-    {: .topicgroup}
-    LogDNA web UI
-        launch.md
-        config.md
-        get_logdna_web_url.md
-
    {: .topicgroup}
     DevOps admin tasks
         devops/archive.md
@@ -72,32 +66,37 @@ Log Analysis with LogDNA
         agent/upgrade_logdna_agent_2.md
 
     {: .topicgroup}
-    View logs
-        devops/view_logs.md
-        devops/alerts.md
-        api_configuration.md
+    Enhancing security
+        core/architecture-workload-isolation.md
+        core/service-connection.md
+        core/data-security.md
 
     {: .topicgroup}
-    Export logs
+    Exporting logs
         devops/export_config.md
         devops/service_keys.md
         devops/export.md
         devops/export_api.md
 
     {: .topicgroup}
-    Send logs
-        ingest.md
-        [LogDNA ingestion limitations](https://docs.logdna.com/docs/ingestion#service-limits)
+    LogDNA web UI
+        launch.md
+        config.md
+        get_logdna_web_url.md
 
     {: .topicgroup}
     Logging and monitoring
         core/at_events.md
 
     {: .topicgroup}
-    Enhancing security
-        core/architecture-workload-isolation.md
-        core/service-connection.md
-        core/data-security.md
+    Send logs
+        ingest.md
+
+    {: .topicgroup}
+    Working with views and alerts
+        devops/view_logs.md
+        devops/alerts.md
+        devops/config_api.md
     {: .navgroup-end}
 
     {: .navgroup id="reference"}

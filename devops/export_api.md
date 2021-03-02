@@ -1,10 +1,10 @@
 ---
 
 copyright:
-  years:  2018, 2020
-lastupdated: "2020-07-01"
+  years:  2018, 2021
+lastupdated: "2021-03-01"
 
-keywords: LogDNA, IBM, Log Analysis, logging, export logs
+keywords: LogDNA, IBM, Log Analysis, logging, export logs, api
 
 subcollection: Log-Analysis-with-LogDNA
 
