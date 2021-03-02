@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years:  2018, 2020
-lastupdated: "2020-10-12"
+  years:  2018, 2021
+lastupdated: "2021-03-01"
 
 keywords: LogDNA, IBM, Log Analysis, logging, services
 
@@ -50,19 +50,15 @@ A message ID is made up of the following parts:
 ## VPC infrastructure
 {: #vpc_infrastructure_msg_prefix}
 
-There are 2 types of VPC infrastructure that you can provision in your account:
-* [Virtual Private Cloud classic Gen 1](/docs/vpc-on-classic?topic=vpc-on-classic-getting-started)
-* [{{site.data.keyword.vpc_full}} Gen 2](/docs/vpc?topic=vpc-getting-started)
+The following tables lists message ID prefixes for the different [{{site.data.keyword.vpc_full}} Gen 2](/docs/vpc?topic=vpc-getting-started) infrastructure services that send logs to {{site.data.keyword.la_full_notm}}:
 
-The following tables lists message ID prefixes for the different VPC infrastructure services that send logs to {{site.data.keyword.la_full_notm}}:
-
-### VPC infrastructure Gen 2
+### VPC infrastructure (Gen 2)
 {: #vpc_infrastructure_gen2}
 
 | Service     | CRN service name </br>`crn-service-name`  | Message ID format      | Sample |
 |-------------|-------------------------------------------|---------------------------|------------------|
 | [Flow Logs for VPC](/docs/vpc?topic=vpc-flow-logs)  | `is.flow-log-collector`       | `<crn-service-name>.#####<severity>` | `is.flow-log-collector.00001E` |
-{: caption="Table 9. List of VPC infrastructure services (generation 1)" caption-side="top"} 
+{: caption="Table 1. List of VPC infrastructure services (generation 1)" caption-side="top"} 
 
 
 
