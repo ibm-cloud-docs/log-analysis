@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years:  2018, 2020
-lastupdated: "2020-12-02"
+  years:  2018, 2021
+lastupdated: "2021-03-01"
 
 keywords: LogDNA, IBM, Log Analysis, logging, services
 
@@ -65,6 +65,43 @@ The following table shows the locations where automatic collection of Cloud Foun
 {: class="simple-tab-table"}
 {: row-headers}
 
+## Compute serverless services
+{: #cloud_services_locations_serverless}
+
+| Service                                        | `Dallas (us-south)` | `Washington (us-east)`               |
+|------------------------------------------------|---------------------|--------------------------------------|
+| {{site.data.keyword.openwhisk_short}}          | ![Checkmark icon](images/checkmark-icon.svg) | ![Checkmark icon](images/checkmark-icon.svg) |   
+| {{site.data.keyword.codeengineshort}}          | ![Checkmark icon](images/checkmark-icon.svg) | |       
+{: caption="Table 4. Compute serverless services integration in America locations" caption-side="top"}
+{: #cs_comp-table-1}
+{: tab-title="America"}
+{: tab-group="cs_comp"}
+{: class="simple-tab-table"}
+{: row-headers}
+
+| Service                                        | `Tokyo (jp-tok)` |`Sydney (au-syd)`           |
+|------------------------------------------------|------------------|----------------------------|
+| {{site.data.keyword.openwhisk_short}}          | ![Checkmark icon](images/checkmark-icon.svg) |   |
+| {{site.data.keyword.codeengineshort}}          | ![Checkmark icon](images/checkmark-icon.svg) |   |
+{: caption="Table 5. Compute serverless services integration in AP locations" caption-side="top"}
+{: #cs_comp-table-2}
+{: tab-title="Asia Pacific"}
+{: tab-group="cs_comp"}
+{: class="simple-tab-table"}
+{: row-headers}
+
+| Service                                                       |`Frankfurt (eu-de)`  | `London (eu-gb)` |
+|---------------------------------------------------------------|---------------------|------------------|
+| {{site.data.keyword.openwhisk_short}}          | ![Checkmark icon](images/checkmark-icon.svg) | ![Checkmark icon](images/checkmark-icon.svg) |
+| {{site.data.keyword.codeengineshort}}          | ![Checkmark icon](images/checkmark-icon.svg) | |
+{: caption="Table 6. Compute serverless services integration in Europe locations" caption-side="top"}
+{: #cs_comp-table-3}
+{: tab-title="Europe"}
+{: tab-group="cs_comp"}
+{: class="simple-tab-table"}
+{: row-headers}
+
+
 
 ## Container services
 {: #cs_locations_container}
@@ -73,12 +110,14 @@ You can choose the LogDNA instance where you want to collect {{site.data.keyword
 
 You can choose the LogDNA instance where you want to collect {{site.data.keyword.openshiftlong}} service logs.
 
+You can monitor {{site.data.keyword.satellitelong}} service logs through the LogDNA instance that is configured with **service platform logs** in the same region that your {{site.data.keyword.satelliteshort}} location is managed from.
+
 The following tables list the locations where automatic collection of registry service logs is enabled. You can monitor logs through the Log Analysis instance that is available in the same location as your database resources, if you enable 1 instance in this location to host service platform logs. For locations where you can provision a service instance but the {{site.data.keyword.la_full_notm}} service is not available, specific detail about the location where you can monitor those logs is provided in each case.
 
 | Service                                                         | `Dallas (us-south)` | `Washington (us-east)`                   |
 |-----------------------------------------------------------------|---------------------|--------------------------------------|
 | {{site.data.keyword.registrylong_notm}}                      | ![Checkmark icon](../images/checkmark-icon.svg)             |                                 |            
-{: caption="Table 4. Container services" caption-side="top"}
+{: caption="Table 7. Container services" caption-side="top"}
 {: #cs-con-table-1}
 {: tab-title="America"}
 {: tab-group="cs_con"}
@@ -88,7 +127,7 @@ The following tables list the locations where automatic collection of registry s
 | Service                                                         | `Tokyo (jp-tok)` |`Sydney (au-syd)`           |
 |-----------------------------------------------------------------|----------------|---------------------------|
 | {{site.data.keyword.registrylong_notm}}                         | ![Checkmark icon](../images/checkmark-icon.svg)  | `Logs are available through the Log Analysis Tokyo instance`  |
-{: caption="Table 5. Container services" caption-side="top"}
+{: caption="Table 8. Container services" caption-side="top"}
 {: #cs-con-table-2}
 {: tab-title="Asia Pacific"}
 {: tab-group="cs_con"}
@@ -98,7 +137,7 @@ The following tables list the locations where automatic collection of registry s
 | Service                                                       |`Frankfurt (eu-de)`  | `London (eu-gb)` |
 |---------------------------------------------------------------|-------------------|----------------|
 | {{site.data.keyword.registrylong_notm}}                    |  ![Checkmark icon](../images/checkmark-icon.svg)            | ![Checkmark icon](../images/checkmark-icon.svg)|
-{: caption="Table 6. Container services" caption-side="top"}
+{: caption="Table 9. Container services" caption-side="top"}
 {: #cs-con-table-3}
 {: tab-title="Europe"}
 {: tab-group="cs_con"}
@@ -122,9 +161,9 @@ The following tables list the locations where automatic collection of database s
 | {{site.data.keyword.databases-for-postgresql_full_notm}}        | ![Checkmark icon](../images/checkmark-icon.svg) | ![Checkmark icon](../images/checkmark-icon.svg) |
 | {{site.data.keyword.messages-for-rabbitmq_full_notm}}           | ![Checkmark icon](../images/checkmark-icon.svg) | ![Checkmark icon](../images/checkmark-icon.svg) |
 | {{site.data.keyword.databases-for-redis_full_notm}}             | ![Checkmark icon](../images/checkmark-icon.svg) | ![Checkmark icon](../images/checkmark-icon.svg) |
-| {{site.data.keyword.cloud_notm}} {{site.data.keyword.ihsdbaas_mongodb_full}}     | ![Checkmark icon](../images/checkmark-icon.svg)             |                |
-| {{site.data.keyword.cloud_notm}} {{site.data.keyword.ihsdbaas_postgresql_full}}      | ![Checkmark icon](../images/checkmark-icon.svg)        |                |
-{: caption="Table 7. Database services" caption-side="top"}
+| {{site.data.keyword.cloud_notm}} {{site.data.keyword.ihsdbaas_mongodb_full}}     | ![Checkmark icon](../images/checkmark-icon.svg)             | ![Checkmark icon](../images/checkmark-icon.svg) |
+| {{site.data.keyword.cloud_notm}} {{site.data.keyword.ihsdbaas_postgresql_full}}      | ![Checkmark icon](../images/checkmark-icon.svg)        | ![Checkmark icon](../images/checkmark-icon.svg) |
+{: caption="Table 10. Database services" caption-side="top"}
 {: #cs-dbs-table-1}
 {: tab-title="America"}
 {: tab-group="cs_dbs"}
@@ -144,7 +183,7 @@ The following tables list the locations where automatic collection of database s
 | {{site.data.keyword.databases-for-redis_full_notm}}             | ![Checkmark icon](../images/checkmark-icon.svg)  | ![Checkmark icon](../images/checkmark-icon.svg) | `Logs are available through the Log Analysis Tokyo instance` | ![Checkmark icon](../images/checkmark-icon.svg) |                      |
 | {{site.data.keyword.cloud_notm}} {{site.data.keyword.ihsdbaas_mongodb_full}}             |    | `Logs are available through the Log Analysis Dallas instance`        |   |   |    |
 | {{site.data.keyword.cloud_notm}} {{site.data.keyword.ihsdbaas_postgresql_full}}     |    | `Logs are available through the Log Analysis Dallas instance`        |   |   |   |
-{: caption="Table 8. Database services" caption-side="top"}
+{: caption="Table 11. Database services" caption-side="top"}
 {: #cs-dbs-table-2}
 {: tab-title="Asia Pacific"}
 {: tab-group="cs_dbs"}
@@ -162,7 +201,7 @@ The following tables list the locations where automatic collection of database s
 | {{site.data.keyword.databases-for-redis_full_notm}}           | ![Checkmark icon](../images/checkmark-icon.svg)| ![Checkmark icon](../images/checkmark-icon.svg)          | `Logs are available through the Log Analysis London instance` |
 | {{site.data.keyword.cloud_notm}} {{site.data.keyword.ihsdbaas_mongodb_full}}           | ![Checkmark icon](../images/checkmark-icon.svg)              |           |        |
 | {{site.data.keyword.cloud_notm}} {{site.data.keyword.ihsdbaas_postgresql_full}}           | ![Checkmark icon](../images/checkmark-icon.svg)              |           |        |
-{: caption="Table 9. Database services" caption-side="top"}
+{: caption="Table 12. Database services" caption-side="top"}
 {: #cs-dbs-table-3}
 {: tab-title="Europe"}
 {: tab-group="cs_dbs"}
@@ -178,7 +217,7 @@ The following tables list the locations where automatic collection of database s
 |-------------------------------------------------|----------------------------------------------|-----------------------------------|
 | {{site.data.keyword.appconservicefull}}         | ![Checkmark icon](../images/checkmark-icon.svg) |                              |
 | {{site.data.keyword.mq_short}}                  | ![Checkmark icon](../images/checkmark-icon.svg) | ![Checkmark icon](../images/checkmark-icon.svg) |            
-{: caption="Table 10. Integration services" caption-side="top"}
+{: caption="Table 13. Integration services" caption-side="top"}
 {: #cs-int-table-10}
 {: tab-title="America"}
 {: tab-group="cs_int"}
@@ -189,7 +228,7 @@ The following tables list the locations where automatic collection of database s
 |-----------------------------------------------------------------|----------------|---------------------------|
 | {{site.data.keyword.appconservicefull}}                      |    | ![Checkmark icon](../images/checkmark-icon.svg)|
 | {{site.data.keyword.mq_short}}                               |     | ![Checkmark icon](../images/checkmark-icon.svg)|
-{: caption="Table 11. Integration services" caption-side="top"}
+{: caption="Table 14. Integration services" caption-side="top"}
 {: #cs-int-table-11}
 {: tab-title="Asia Pacific"}
 {: tab-group="cs_int"}
@@ -200,7 +239,7 @@ The following tables list the locations where automatic collection of database s
 |---------------------------------------------------------------|-------------------|----------------|
 | {{site.data.keyword.appconservicefull}}                    |               | ![Checkmark icon](../images/checkmark-icon.svg)|
 | {{site.data.keyword.mq_short}}                  | ![Checkmark icon](../images/checkmark-icon.svg) | ![Checkmark icon](../images/checkmark-icon.svg) |
-{: caption="Table 12. Integration services" caption-side="top"}
+{: caption="Table 15. Integration services" caption-side="top"}
 {: #cs-int-table-12}
 {: tab-title="Europe"}
 {: tab-group="cs_int"}
@@ -215,7 +254,7 @@ The following tables list the locations where automatic collection of database s
 | Service                                                         | `Dallas (us-south)` | `Washington (us-east)`                   |
 |-----------------------------------------------------------------|---------------------|--------------------------------------|
 | {{site.data.keyword.loadbalancer_full}} `[1]`                | ![Checkmark icon](../images/checkmark-icon.svg)             |                                 |            
-{: caption="Table 13. Networking services" caption-side="top"}
+{: caption="Table 16. Networking services" caption-side="top"}
 {: #cs-net-table-13}
 {: tab-title="America"}
 {: tab-group="cs_net"}
@@ -225,7 +264,7 @@ The following tables list the locations where automatic collection of database s
 | Service                                                         | `Tokyo (jp-tok)` |`Sydney (au-syd)`           |
 |-----------------------------------------------------------------|----------------|---------------------------|
 | {{site.data.keyword.loadbalancer_full}} `[1]`                  |    |  |
-{: caption="Table 14. Networking services" caption-side="top"}
+{: caption="Table 17. Networking services" caption-side="top"}
 {: #cs-net-table-14}
 {: tab-title="Asia Pacific"}
 {: tab-group="cs_net"}
@@ -235,7 +274,7 @@ The following tables list the locations where automatic collection of database s
 | Service                                                       |`Frankfurt (eu-de)`  | `London (eu-gb)` |
 |---------------------------------------------------------------|-------------------|----------------|
 | {{site.data.keyword.loadbalancer_full}} `[1]`               |               |  |
-{: caption="Table 15. Networking services" caption-side="top"}
+{: caption="Table 18. Networking services" caption-side="top"}
 {: #cs-net-table-15}
 {: tab-title="Europe"}
 {: tab-group="cs_net"}
@@ -253,7 +292,7 @@ The following tables list the locations where automatic collection of security s
 | Service                                                         | `Dallas (us-south)` | `Washington (us-east)`                   |
 |-----------------------------------------------------------------|---------------------|--------------------------------------|
 | {{site.data.keyword.cloudcerts_full_notm}}                      | ![Checkmark icon](../images/checkmark-icon.svg)             |                                 |            
-{: caption="Table 16. Security services" caption-side="top"}
+{: caption="Table 19. Security services" caption-side="top"}
 {: #cs-sec-table-16}
 {: tab-title="America"}
 {: tab-group="cs_sec"}
@@ -263,7 +302,7 @@ The following tables list the locations where automatic collection of security s
 | Service                                                         | `Tokyo (jp-tok)` |`Sydney (au-syd)`           |
 |-----------------------------------------------------------------|----------------|---------------------------|
 | {{site.data.keyword.cloudcerts_full_notm}}                      | ![Checkmark icon](../images/checkmark-icon.svg)          | ![Checkmark icon](../images/checkmark-icon.svg) |
-{: caption="Table 17. Security services" caption-side="top"}
+{: caption="Table 20. Security services" caption-side="top"}
 {: #cs-sec-table-17}
 {: tab-title="Asia Pacific"}
 {: tab-group="cs_sec"}
@@ -273,7 +312,7 @@ The following tables list the locations where automatic collection of security s
 | Service                                                       |`Frankfurt (eu-de)`  | `London (eu-gb)` |
 |---------------------------------------------------------------|-------------------|----------------|
 | {{site.data.keyword.cloudcerts_full_notm}}                    | ![Checkmark icon](../images/checkmark-icon.svg)             | ![Checkmark icon](../images/checkmark-icon.svg) |
-{: caption="Table 18. Security services" caption-side="top"}
+{: caption="Table 21. Security services" caption-side="top"}
 {: #cs-sec-table-18}
 {: tab-title="Europe"}
 {: tab-group="cs_sec"}
@@ -285,12 +324,13 @@ The following tables list the locations where automatic collection of security s
 ## VPC infrastructure services
 {: #cloud_services_locations_vpc_infrastructure}
 
-The followinf locations are valid for VPC Gen 1 and VPC Gen 2:
+The following locations are valid for VPC Gen 1 and VPC Gen 2:
 
 | Service                                | `Dallas (us-south)`                                | `Washington (us-east)`               |
 |----------------------------------------|----------------------------------------------------|--------------------------------------|
 | VPN                                    | ![Checkmark icon](../images/checkmark-icon.svg) | `Logs are available through the LogDNA US-South instance` |
-{: caption="Table 19. VPC events in America's locations" caption-side="top"}
+| Flow Log Collector                     | ![Checkmark icon](../images/checkmark-icon.svg) | ![Checkmark icon](../images/checkmark-icon.svg) |
+{: caption="Table 22. VPC logs in America's locations" caption-side="top"}
 {: #cs-vpc-table-19}
 {: tab-title="America"}
 {: tab-group="cs_vpc"}
@@ -299,8 +339,9 @@ The followinf locations are valid for VPC Gen 1 and VPC Gen 2:
 
 | Service                                                         | `Tokyo (jp-tok)` |`Sydney (au-syd)`           |
 |-----------------------------------------------------------------|------------------|----------------------------|
-| VPN                                              | ![Checkmark icon](../images/checkmark-icon.svg)             | ![Checkmark icon](../images/checkmark-icon.svg) |      
-{: caption="Table 20. VPC events in AP locations" caption-side="top"}
+| VPN                                              | ![Checkmark icon](../images/checkmark-icon.svg)             | ![Checkmark icon](../images/checkmark-icon.svg) |
+| Flow Log Collector                     | ![Checkmark icon](../images/checkmark-icon.svg) | ![Checkmark icon](../images/checkmark-icon.svg) |
+{: caption="Table 23. VPC logs in AP locations" caption-side="top"}
 {: #cs-vpc-table-20}
 {: tab-title="Asia Pacific"}
 {: tab-group="cs_vpc"}
@@ -309,8 +350,9 @@ The followinf locations are valid for VPC Gen 1 and VPC Gen 2:
 
 | Service                                                       |`Frankfurt (eu-de)`  | `London (eu-gb)` |
 |---------------------------------------------------------------|---------------------|------------------|
-| VPN                                                           | ![Checkmark icon](../images/checkmark-icon.svg)  | ![Checkmark icon](../images/checkmark-icon.svg) |           
-{: caption="Table 21. VPC events in Europe locations" caption-side="top"}
+| VPN                                                           | ![Checkmark icon](../images/checkmark-icon.svg)  | ![Checkmark icon](../images/checkmark-icon.svg) |
+| Flow Log Collector                     | ![Checkmark icon](../images/checkmark-icon.svg) | ![Checkmark icon](../images/checkmark-icon.svg) |      
+{: caption="Table 24. VPC logs in Europe locations" caption-side="top"}
 {: #cs-vpc-table-21}
 {: tab-title="Europe"}
 {: tab-group="cs_vpc"}
@@ -326,7 +368,7 @@ The followinf locations are valid for VPC Gen 1 and VPC Gen 2:
 | Service                                                         | `Dallas (us-south)` | `Washington (us-east)`                   |
 |-----------------------------------------------------------------|---------------------|--------------------------------------|
 | {{site.data.keyword.iva_full_notm}}                                  | ![Checkmark icon](../images/checkmark-icon.svg)             | `Logs are available through the Log Analysis Dallas instance` |  
-{: caption="Table 22. Watson AI in America's locations" caption-side="top"}
+{: caption="Table 25. Watson AI in America's locations" caption-side="top"}
 {: #cs-wat-table-22}
 {: tab-title="America"}
 {: tab-group="cs_sec"}
@@ -336,7 +378,7 @@ The followinf locations are valid for VPC Gen 1 and VPC Gen 2:
 | Service                                                         | `Tokyo (jp-tok)` |`Sydney (au-syd)`           |
 |-----------------------------------------------------------------|----------------|---------------------------|
 | {{site.data.keyword.iva_full_notm}}                                                |            |   |
-{: caption="Table 23. Watson AI in AP locations" caption-side="top"}
+{: caption="Table 26. Watson AI in AP locations" caption-side="top"}
 {: #cs-wat-table-23}
 {: tab-title="Asia Pacific"}
 {: tab-group="cs_sec"}
@@ -346,12 +388,13 @@ The followinf locations are valid for VPC Gen 1 and VPC Gen 2:
 | Service                                                       |`Frankfurt (eu-de)`  | `London (eu-gb)` |
 |---------------------------------------------------------------|-------------------|----------------|
 | {{site.data.keyword.iva_full_notm}}                           |  |    |
-{: caption="Table 24. Watson AI in Europe locations" caption-side="top"}
+{: caption="Table 27. Watson AI in Europe locations" caption-side="top"}
 {: #cs-wat-table-24}
 {: tab-title="Europe"}
 {: tab-group="cs_sec"}
 {: class="simple-tab-table"}
 {: row-headers}
+
 
 
 

@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years:  2018, 2020
-lastupdated: "2020-03-06"
+  years:  2018, 2021
+lastupdated: "2021-03-01"
 
 keywords: LogDNA, IBM, Log Analysis, logging, ingestion 
 
@@ -119,4 +119,20 @@ The following sample shows the cURL command to send 1 log line to an instance of
 curl "https://logs.us-south.logging.cloud.ibm.com/logs/ingest?hostname=MYHOST&now=$(date +%s)000" -u xxxxxxxxxxxxxxxxxxxxxxx: --header "Content-Type: application/json; charset=UTF-8" -d "{\"lines\":[{\"line\":\"This is a sample test log statement\",\"timestamp\":\"2018-11-02T10:53:06+00:00\",\"level\":\"INFO\",\"app\":\"myapp\"}]}"
 ```
 {: screen}
+
+
+## Limits when you send logs
+{: #ingest_limits}
+
+Consider the following limits when you send logs to an {{site.data.keyword.la_full_notm}} instance:
+
+- `Body size`: Maximum size of 10 MB at ingestion.
+- `Message size`: Maximum size of 16 KB at ingestion. After 16K, the data is truncated at ingestion.
+- `Metadata size`: Maximum size of 32 KB.
+- `Hostname length`: Maximum size of 256 characters.
+- `App name length`: Maximum size of 512 characters.
+- `Log Level`: Maximum size of 80 characters.
+- `Tags`: Maximum size of 80 characters.
+- `Depth of nested fields`: 3 is the maximum number of nested fields that are parsed at ingestion.
+- `Number of unique fields`: A maximum of 500 fields are indexed per day. 
 

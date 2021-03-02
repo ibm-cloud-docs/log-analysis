@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years:  2018, 2020
-lastupdated: "2020-08-25"
+  years:  2018, 2021
+lastupdated: "2021-03-01"
 
 keywords: LogDNA, IBM, Log Analysis, logging, services
 
@@ -56,6 +56,7 @@ The following table lists services that send logs to {{site.data.keyword.la_full
 | Service     | Description | More info |
 |-------------|-------------|-------------------|
 | [{{site.data.keyword.openwhisk}}](/docs/openwhisk?topic=openwhisk-getting-started) | {{site.data.keyword.openwhisk_short}} is a polyglot Functions-as-a-Service (FaaS) programming platform based on Apache OpenWhisk that you can use to write lightweight `code called actions`. | [More info](/docs/openwhisk?topic=openwhisk-logs) |
+| [{{site.data.keyword.codeenginefull}}](/docs/codeengine?topic=codeengine-getting-started)| Code Engine is a fully managed, serverless platform that runs your containerized workloads, including web apps, micro-services, event-driven functions, or batch jobs  | [More info](/docs/codeengine?topic=codeengine-view-logs). |
 {: caption="List of serverless compute services" caption-side="top"} 
 
 
@@ -68,7 +69,8 @@ The following table lists services that send logs to {{site.data.keyword.la_full
 |-------------|-------------|-------------------------------------------------------------------------|
 | [{{site.data.keyword.registrylong_notm}}](/docs/Registry?topic=Registry-getting-started) | You can use {{site.data.keyword.registrylong_notm}} to provide a multi-tenant private image registry that you can use to store and share your container images with users in your {{site.data.keyword.cloud_notm}} account. | [More info](/docs/Registry?topic=Registry-registry_logs) |
 | [{{site.data.keyword.containerlong}}](/docs/containers?topic=containers-getting-started) | You can use the {{site.data.keyword.containerlong_notm}} service to deploy highly available apps in Docker containers that run in Kubernetes clusters. | [More info](/docs/containers?topic=containers-health#logdna) | 
-| [{{site.data.keyword.openshiftlong}}](/docs/openshift?topic=openshift-getting-started) | With {{site.data.keyword.openshiftlong}}, you can deploy apps on highly available clusters that come installed with the [Red Hat OpenShift on IBM Cloud Container Platform](https://docs.openshift.com/container-platform/4.2/welcome/index.html){: external} software installed on Red Hat Enterprise Linux. | [More info](/docs/openshift?topic=openshift-health) |
+| [{{site.data.keyword.openshiftlong}}](/docs/openshift?topic=openshift-getting-started) | With {{site.data.keyword.openshiftlong_notm}}, you can deploy apps on highly available clusters that come installed with the Red Hat OpenShift on IBM Cloud Container Platform software installed on Red Hat Enterprise Linux. | [More info](/docs/openshift?topic=openshift-health) |
+| [{{site.data.keyword.satellitelong}}](/docs/satellite?topic=satellite-getting-started) | With {{site.data.keyword.satellitelong_notm}}, you can bring your own compute infrastructure to run {{site.data.keyword.cloud_notm}} services and consistently deploy, manage, and control your app workloads. | [More info](/docs/satellite?topic=satellite-health) |
 {: caption="Table 3. List of container services" caption-side="top"} 
 
 To see the list of {{site.data.keyword.la_full_notm}} locations where these services send logs, see [Container services](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-cloud_services_locations#cs_locations_container).
@@ -146,7 +148,7 @@ The following table lists Cloud services that send logs to {{site.data.keyword.l
 ## VPC infrastructure
 {: #vpc_infrastructure}
 
-You can provision a Virtual Private Cloud (VPC) in the {{site.data.keyword.cloud_notm}} to run an isolated environment within the public cloud. VPC gives you the security of a private cloud, with the agility and ease of a public cloud. For more information, see [About Virtual Private Cloud](/docs/vpc-on-classic?topic=vpc-on-classic-about).
+You can provision a Virtual Private Cloud (VPC) in the {{site.data.keyword.cloud_notm}} to run an isolated environment within the public cloud. VPC gives you the security of a private cloud, with the agility and ease of a public cloud.
 
 There are 2 types of VPC infrastructure that you can provision in your account:
 * [Virtual Private Cloud classic Gen 1](/docs/vpc-on-classic?topic=vpc-on-classic-getting-started)
@@ -158,7 +160,7 @@ The following tables lists VPC infrastructure services that send logs to {{site.
 {: #vpc_infrastructure_gen1}
 
 
-| Service     | Description |Events             |
+| Service     | Description | More info             |
 |-------------|-------------|-------------------|
 | `VPN`| Use this service to connect private networks in a secure fashion. You can use VPN to set up an IPsec site-to-site tunnel between your VPC and your on-premise private network or another VPC. | [More info](/docs/vpc?topic=vpc-using-logdna-to-view-vpn-logs) |
 {: caption="Table 8. List of VPC infrastructure services (generation 2)" caption-side="top"} 
@@ -166,9 +168,12 @@ The following tables lists VPC infrastructure services that send logs to {{site.
 ## VPC infrastructure Gen 2
 {: #vpc_infrastructure_gen2}
 
-| Service     | Description |Events             |
+To learn more about logging, see [Logging for VPC](/docs/vpc?topic=vpc-logging).
+
+| Service     | Description | More info         |
 |-------------|-------------|-------------------|
 | [VPN](/docs/vpc-on-classic-network?topic=vpc-on-classic-network---using-vpn-with-your-vpc)| Use this service to connect private networks in a secure fashion. You can use VPN to set up an IPsec site-to-site tunnel between your VPC and your on-premise private network or another VPC. | [More info](/docs/vpc-on-classic-network?topic=vpc-on-classic-network-using-logdna-to-view-vpn-logs) |
+| [Flow Log Collector](/docs/vpc?topic=vpc-flow-logs)| This service is used to collect and store information regarding the Internet Protocol (IP) traffic going to and from network interfaces within your Virtual Private Cloud (VPC) | [More info](/docs/vpc?topic=vpc-logging#logging-flow-log-collector_msgs) |
 {: caption="Table 9. List of VPC infrastructure services (generation 1)" caption-side="top"} 
 
 

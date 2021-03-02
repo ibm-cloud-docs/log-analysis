@@ -14,6 +14,7 @@ Log Analysis with LogDNA
         platform-logs/config_svc_logs.md
         platform-logs/cloud_services.md
         platform-logs/cloud_services_locations.md
+        platform-logs/cloud_services_msg_prefix.md
         platform-logs/cloud_services_agent.md
 
     {: .topicgroup}
@@ -41,12 +42,6 @@ Log Analysis with LogDNA
     upgrade.md
     observe.md
     iam.md
-    
-    {: .topicgroup}
-    LogDNA web UI
-        launch.md
-        config.md
-        get_logdna_web_url.md
         
    {: .topicgroup}
     DevOps tasks
@@ -69,9 +64,10 @@ Log Analysis with LogDNA
         agent/upgrade_logdna_agent_2.md
 
     {: .topicgroup}
-    View logs
-        devops/view_logs.md
-        devops/alerts.md
+    Enhancing security
+        core/architecture-workload-isolation.md
+        core/service-connection.md
+        core/data-security.md
 
     {: .topicgroup}
     Export logs
@@ -81,19 +77,24 @@ Log Analysis with LogDNA
         devops/export_api.md
 
     {: .topicgroup}
-    Send logs
-        ingest.md
-        [LogDNA ingestion limitations](https://docs.logdna.com/docs/ingestion#service-limits)
-    
+    LogDNA web UI
+        launch.md
+        config.md
+        get_logdna_web_url.md
+
     {: .topicgroup}
     Logging and monitoring
         core/at_events.md
 
     {: .topicgroup}
-    Enhancing security
-        core/architecture-workload-isolation.md
-        core/service-connection.md
-        core/data-security.md
+    Send logs
+        ingest.md
+
+    {: .topicgroup}
+    Working with views and alerts
+        devops/view_logs.md
+        devops/alerts.md
+        devops/config_api.md
     {: .navgroup-end}
 
     {: .navgroup id="reference"}
@@ -101,9 +102,6 @@ Log Analysis with LogDNA
     regions.md
     service_plans.md
     core/shared-responsibilities.md
-    [LogDNA Product Page](https://logdna.com/)
-    [LogDNA Documentation](https://docs.logdna.com/docs)
-    [LogDNA Blog](https://blog.logdna.com/)
     {: .navgroup-end}
 
     {: .navgroup id="help"}
