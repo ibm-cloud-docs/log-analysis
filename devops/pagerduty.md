@@ -32,7 +32,7 @@ You can send alerts from LogDNA to PagerDuty.  For more information on LogDNA in
 
 When you [configure an alert](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-alerts) in LogDNA you can have that alert sent to PagerDuty.
 
-1. When configuring your alert, click ![PagerDuty icon](/images/pagerduty.png "PagerDuty icon").
+1. When configuring your alert, click ![PagerDuty icon](../images/pagerduty.png "PagerDuty icon").
 
 2. Select if you want the alert to be sent when the condition exists (**Presence**) or does not exist (**Absence**).
 
@@ -51,7 +51,7 @@ When you [configure an alert](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-
 
 7. Optional: You can click **Test** to test that your alert configuration is correct.
 
-   ![PagerDuty **Test** button](/images/pagerduty-test.png "PagerDuty Test button")
+   ![PagerDuty Test button](../images/pagerduty-test.png "PagerDuty Test button")
 
 8. Click **Save Alert**.
 
