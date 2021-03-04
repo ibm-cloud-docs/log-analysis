@@ -97,6 +97,7 @@ Log Analysis with LogDNA
         devops/view_logs.md
         devops/alerts.md
         devops/config_api.md
+        devops/pagerduty.md
     {: .navgroup-end}
 
     {: .navgroup id="reference"}
