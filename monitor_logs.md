@@ -118,7 +118,7 @@ Consider the following information when you configure alerts:
 
 Configure a presence alert to notify when the number of logs that show in a view is more than what you expect. 
 
-For example, you might have a view that shows logs that report the deletion of service instances in your account. You are not expecting the deletion of service instances. You can configure a *presence alert** that triggers an alert when 1 or more logs show in the view.
+For example, you might have a view that shows logs that report the deletion of service instances in your account. You are not expecting the deletion of service instances. You can configure a **presence alert** that triggers an alert when 1 or more logs show in the view.
 
 
 ### Absence alert
@@ -126,7 +126,7 @@ For example, you might have a view that shows logs that report the deletion of s
 
 Configure an absence alert to notify when the number of logs that show in a view is less than what you expect, or none. 
 
-An absence alert is triggered when the view that has an absence alert attached to it is active. A view is active when the view receives logs within the last 24 hours.
+An **absence alert** is triggered when the view that has an absence alert attached to it is active. A view is active when the view receives logs within the last 24 hours.
 {: important}
 
 For example, you might have a view that does not get any logs for 2 days. Therefore, this view is not active. You have an absence alert attached to this view that is configured to send a notification after 30 minutes. Because the view is not active, the absence alert is muted and you do not get notifications. To make the view active and get notifications for the absence condition, logs need to start flowing into the view. 

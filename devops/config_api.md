@@ -51,8 +51,8 @@ When you create a view, consider the following information:
 - A category must exist before you create a view. The request fails if a category is not valid or is not specified.
 - You can define body parameters to refine the data that is displayed through the view. You must specify 1 or more of the following body parameters: query, apps, levels, hosts, or tags.
 
-When you create a PagerDuty notification channel, consider the following information:
-- You must manually configure the integration of LogDNA with PagerDuty. See [Integrating with PagerDuty](https://docs.logdna.com/docs/pagerduty-alert-integration){: external}.
+When you create a PagerDuty notification channel, you need to do the following:
+- You must manually configure the integration of LogDNA with PagerDuty. See [Integrating with PagerDuty](/docs/Activity-Tracker-with-LogDNA?topic=Activity-Tracker-with-LogDNA-pagerduty).
 - You must provide LogDNA with the PagerDuty API key. 
 
 After you create a view, check the view in the LogDNA web UI. 
