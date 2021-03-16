@@ -108,6 +108,10 @@ Log Analysis with LogDNA
     releasenotes.md
 
     {: .topicgroup}
+    Logging CLI
+        /logdna-cli-plugin/logdna-cli
+
+    {: .topicgroup}
     High availability and disaster recovery
         core/ha-dr.md
     {: .navgroup-end}
