@@ -89,16 +89,16 @@ A service instance can have a private network endpoint, a public network endpoin
 The {{site.data.keyword.la_full_notm}} service offers the following private endpoints:
 
 
-| Region                   | Private Endpoint                                       | Private IP addresses                                   | Ports               |
-|--------------------------|--------------------------------------------------------|--------------------------------------------------------|---------------------|
-| `Chennai (in-che)`      | `https://api.private.in-che.logging.cloud.ibm.com`   | 166.9.40.2, 166.9.40.3, 166.9.42.3, 166.9.42.4, 166.9.46.5, 166.9.46.6, 166.9.60.6, 166.9.60.7 </br> 166.9.40.23, 166.9.42.26, 166.9.46.8, 166.9.60.9 </br> 166.9.40.24, 166.9.42.27, 166.9.46.9, 166.9.60.10 | TCP 443, TCP 80 </br> TCP 514, TCP 6514 </br> UDP 514 |
-| `Dallas (us-south)`      | `https://api.private.us-south.logging.cloud.ibm.com`   | 166.9.12.12, 166.9.12.13, 166.9.14.2, 166.9.14.3, 166.9.16.11, 166.9.16.12 </br> 166.9.12.15, 166.9.14.5, 166.9.16.14 </br> 166.9.12.16, 166.9.14.6, 166.9.16.15 | TCP 443, TCP 80 </br> TCP 514, TCP 6514 </br> UDP 514 |
-| `Frankfurt (eu-de)`      | `https://api.private.eu-de.logging.cloud.ibm.com`      | 166.9.28.2, 166.9.28.3, 166.9.32.21, 166.9.32.7 </br> 166.9.28.5, 166.9.32.23 </br> 166.9.28.7, 166.9.32.24 | TCP 443, TCP 80 </br> TCP 514, TCP 6514 </br> UDP 514 |
-| `London (eu-gb)`         | `https://api.private.eu-gb.logging.cloud.ibm.com`      | 166.9.34.2, 166.9.34.4, 166.9.36.2, 166.9.36.3, 166.9.38.4, 166.9.38.5 </br> 166.9.34.18, 166.9.36.5, 166.9.38.20 </br> 166.9.34.19, 166.9.36.6, 166.9.38.21 | TCP 443, TCP 80 </br> TCP 514, TCP 6514 </br> UDP 514 |
-| `Tokyo (jp-tok)`         | `https://api.private.jp-tok.logging.cloud.ibm.com`     | 166.9.40.2, 166.9.40.3, 166.9.42.3, 166.9.42.4, 166.9.46.5, 166.9.46.6, 166.9.60.6, 166.9.60.7 </br> 166.9.40.23, 166.9.42.26, 166.9.46.8, 166.9.60.9 </br> 166.9.40.24, 166.9.42.27, 166.9.46.9, 166.9.60.10 | TCP 443, TCP 80 </br> TCP 514, TCP 6514 </br> UDP 514 |
-| `Seoul (kr-seo)`         | `https://api.private.kr-seo.logging.cloud.ibm.com`     | 166.9.40.2, 166.9.40.3, 166.9.42.3, 166.9.42.4, 166.9.46.5, 166.9.46.6, 166.9.60.6, 166.9.60.7 </br> 166.9.40.23, 166.9.42.26, 166.9.46.8, 166.9.60.9 </br> 166.9.40.24, 166.9.42.27, 166.9.46.9, 166.9.60.10 | TCP 443, TCP 80 </br> TCP 514, TCP 6514 </br> UDP 514 |
-| `Sydney (au-syd)`        | `https://api.private.au-syd.logging.cloud.ibm.com`     | 166.9.52.5, 166.9.52.2, 166.9.56.3, 166.9.56.20 </br> 166.9.56.22, 166.9.52.8 </br> 166.9.56.23, 166.9.52.9 | TCP 443, TCP 80 </br> TCP 514, TCP 6514 </br> UDP 514 |
-| `Washington (us-east)`   | `https://api.private.us-east.logging.cloud.ibm.com`     | 166.9.20.72, 166.9.20.73, 166.9.22.35, 166.9.22.36 </br> 166.9.20.76, 166.9.22.38 </br> 166.9.20.77, 166.9.22.39 | TCP 443, TCP 80 </br> TCP 514, TCP 6514 </br> UDP 514 |
+| Region                   | Private Endpoint                                       | Ports and private IP addresses                         |
+|--------------------------|--------------------------------------------------------|--------------------------------------------------------|
+| `Chennai (in-che)`      | `https://api.private.in-che.logging.cloud.ibm.com`   | <ul><li>TCP 443, TCP 80 for 166.9.40.2, 166.9.40.3, 166.9.42.3, 166.9.42.4, 166.9.46.5, 166.9.46.6, 166.9.60.6, 166.9.60.7</li><li>TCP 514, TCP 6514 for 166.9.40.23, 166.9.42.26, 166.9.46.8, 166.9.60.9</li><li>UDP 514 for 166.9.40.24, 166.9.42.27, 166.9.46.9, 166.9.60.10</li></ul> |
+| `Dallas (us-south)`      | `https://api.private.us-south.logging.cloud.ibm.com`   | <ul><li>TCP 443, TCP 80 for 166.9.12.12, 166.9.12.13, 166.9.14.2, 166.9.14.3, 166.9.16.11, 166.9.16.12</li><li>TCP 514, TCP 6514 for 166.9.12.15, 166.9.14.5, 166.9.16.14</li><li>UDP 514 for 166.9.12.16, 166.9.14.6, 166.9.16.15 </li></ul> |
+| `Frankfurt (eu-de)`      | `https://api.private.eu-de.logging.cloud.ibm.com`      | <ul><li>TCP 443, TCP 80 for 166.9.28.2, 166.9.28.3, 166.9.32.21, 166.9.32.7</li><li>TCP 514, TCP 6514 for 166.9.28.5, 166.9.32.23</li><li>UDP 514 for 166.9.28.7, 166.9.32.24</li></ul> |
+| `London (eu-gb)`         | `https://api.private.eu-gb.logging.cloud.ibm.com`      | <ul><li>TCP 443, TCP 80 for 166.9.34.2, 166.9.34.4, 166.9.36.2, 166.9.36.3, 166.9.38.4, 166.9.38.5</li><li>TCP 514, TCP 6514 for 166.9.34.18, 166.9.36.5, 166.9.38.20</li><li>UDP 514 for 166.9.34.19, 166.9.36.6, 166.9.38.21</li></ul> |
+| `Tokyo (jp-tok)`         | `https://api.private.jp-tok.logging.cloud.ibm.com`     | <ul><li>TCP 443, TCP 80 for 166.9.40.2, 166.9.40.3, 166.9.42.3, 166.9.42.4, 166.9.46.5, 166.9.46.6, 166.9.60.6, 166.9.60.7</li><li>TCP 514, TCP 6514 for 166.9.40.23, 166.9.42.26, 166.9.46.8, 166.9.60.9</li><li>UDP 514 for 166.9.40.24, 166.9.42.27, 166.9.46.9, 166.9.60.10</li></ul> |
+| `Seoul (kr-seo)`         | `https://api.private.kr-seo.logging.cloud.ibm.com`     | <ul><li>TCP 443, TCP 80 for 166.9.40.2, 166.9.40.3, 166.9.42.3, 166.9.42.4, 166.9.46.5, 166.9.46.6, 166.9.60.6, 166.9.60.7</li><li>TCP 514, TCP 6514 for 166.9.40.23, 166.9.42.26, 166.9.46.8, 166.9.60.9</li><li>UDP 514 for 166.9.40.24, 166.9.42.27, 166.9.46.9, 166.9.60.10</li></ul> |
+| `Sydney (au-syd)`        | `https://api.private.au-syd.logging.cloud.ibm.com`     | <ul><li>TCP 443, TCP 80 for 166.9.52.5, 166.9.52.2, 166.9.56.3, 166.9.56.20</li><li>TCP 514, TCP 6514 for 166.9.56.22, 166.9.52.8</li><li>UDP 514 for 166.9.56.23, 166.9.52.9</li></ul> |
+| `Washington (us-east)`   | `https://api.private.us-east.logging.cloud.ibm.com`     | <ul><li>TCP 443, TCP 80 for 166.9.20.72, 166.9.20.73, 166.9.22.35, 166.9.22.36</li><li>TCP 514, TCP 6514 for 166.9.20.76, 166.9.22.38</li><li>UDP 514 for 166.9.20.77, 166.9.22.39</li></ul> |
 {: caption="Table 1. Lists of private API endpoints for interacting with {{site.data.keyword.la_full_notm}}." caption-side="top"}
 
 ### Step 3. Configure your LogDNA agent
@@ -172,10 +172,3 @@ The following tables list the IP addresses per region that you must configure in
 | `Tokyo (jp-tok)`      | `api.jp-tok.logging.cloud.ibm.com`          | 165.192.71.226 </br>128.168.70.53 </br>161.202.67.2    | TCP 443 </br>TCP 80 | 
 | `Washington (us-east)`| `api.us-east.logging.cloud.ibm.com`         | 169.47.43.67 </br>169.62.55.212 </br>169.60.95.75      | TCP 443 </br>TCP 80 |
 {: caption="Table 3. IP addresses used by the LogDNA agent." caption-side="top"}
-
-
-
-
-
-
-
