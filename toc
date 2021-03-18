@@ -109,7 +109,7 @@ Log Analysis with LogDNA
 
     {: .topicgroup}
     Logging CLI
-        /logdna-cli-plugin/logdna-cli
+        /logdna-cli-plugin/logdna-cli-plugin-logdna-cli
 
     {: .topicgroup}
     High availability and disaster recovery
