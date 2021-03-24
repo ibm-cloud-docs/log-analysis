@@ -8,7 +8,6 @@ Log Analysis
     getting-started.md
     releasenotes.md
     agent/logdna_agent.md
-    monitor_logs.md
 
     {: .topicgroup}
     Logging IBM Cloud services
@@ -42,6 +41,7 @@ Log Analysis
     remove.md
     upgrade.md
     observe.md
+    monitor_logs.md
     iam.md
     teams_data_access.md
 
