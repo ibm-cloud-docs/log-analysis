@@ -97,6 +97,7 @@ Log Analysis
         devops/view_logs.md
         devops/alerts.md
         devops/config_api.md
+        devops/pagerduty.md
     {: .navgroup-end}
 
     {: .navgroup id="reference"}
@@ -105,6 +106,10 @@ Log Analysis
     service_plans.md
     core/shared-responsibilities.md
     releasenotes.md
+
+    {: .topicgroup}
+    Logging CLI
+        /logdna-cli-plugin/logdna-cli-plugin-logdna-cli
 
     {: .topicgroup}
     High availability and disaster recovery
