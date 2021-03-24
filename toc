@@ -113,6 +113,10 @@ Log Analysis
         /logdna-cli-plugin/logdna-cli-plugin-logdna-cli
 
     {: .topicgroup}
+    Logging API
+        /apidocs/logdna#endpoint-url
+
+    {: .topicgroup}
     High availability and disaster recovery
         core/ha-dr.md
     {: .navgroup-end}
