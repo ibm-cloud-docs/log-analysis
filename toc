@@ -99,6 +99,7 @@ Log Analysis
         devops/alerts.md
         devops/config_api.md
         devops/pagerduty.md
+        devops/sysdig.md
     {: .navgroup-end}
 
     {: .navgroup id="reference"}
