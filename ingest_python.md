@@ -164,7 +164,7 @@ python3 send-logs.py
 
 
 ## Limits when you send logs
-{: #ingest_limits-python}
+{: #ingest_limits_python}
 
 Consider the following limits when you send logs to an {{site.data.keyword.la_full_notm}} instance:
 
