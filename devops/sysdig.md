@@ -4,7 +4,7 @@ copyright:
   years:  2021
 lastupdated: "2021-03-24"
 
-keywords: LogDNA, IBM, Log Analysis, PagerDuty
+keywords: LogDNA, IBM, Log Analysis, Sysdig
 
 subcollection: Log-Analysis-with-LogDNA
 
@@ -21,16 +21,16 @@ subcollection: Log-Analysis-with-LogDNA
 {:note: .note}
 {:external: target="_blank" .external}
 
-# Integrating with PagerDuty
-{: #pagerduty}
+# Integrating with Sysdig
+{: #sysdig}
 
-You can send alerts to PagerDuty. For more information, see the [LogDNA Integration Guide.](https://www.pagerduty.com/docs/guides/logdna-integration-guide/){: external}  
+You can send alerts to Sysdig. For more information on LogDNA integration with PagerDuty, see the [LogDNA Integration Guide.](https://www.pagerduty.com/docs/guides/logdna-integration-guide/){: external}  
 {:shortdesc}
 
 ## Configuring PagerDuty
 {: #pagerduty-config}
 
-When you [configure an alert](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-alerts) you can have that alert sent to PagerDuty.
+When you [configure an alert](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-alerts) in LogDNA you can have that alert sent to PagerDuty.
 
 1. When configuring your alert, click ![PagerDuty icon](../images/pagerduty.png "PagerDuty icon").
 
