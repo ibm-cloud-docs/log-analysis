@@ -21,7 +21,7 @@ Use these release notes to learn about the latest updates to {{site.data.keyword
 
 
 ## March 2021
-{: #AT-jan2021-for-update}
+{: #AT-march2021-for-update}
 
 The service name has changed from **IBM Log Analysis with LogDNA** to **IBM Log Analysis**.
 
