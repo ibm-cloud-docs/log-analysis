@@ -22,7 +22,7 @@ subcollection: Log-Analysis-with-LogDNA
 {:note: .note}
 
  
-# Sending logs by using cURL
+# Sending logs by using the REST API
 {: #ingest}
 
 You can send log data to an {{site.data.keyword.la_full_notm}} instance. 

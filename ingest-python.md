@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2021
-lastupdated: "2021-03-01"
+lastupdated: "2021-03-24"
 
 keywords: LogDNA, IBM, Log Analysis, logging, ingestion, python
 
@@ -30,6 +30,17 @@ You can send log data to an {{site.data.keyword.la_full_notm}} instance by using
 
 Complete the following steps to send logs:
 
+## Prereqs
+{: #ingest-python_prereqs}
+
+Run the following command to install the LogDNA handler:
+
+```
+python3 -m pip install logdna
+```
+{: pre}
+
+
 ## Step 1. Get the ingestion API key 
 {: #ingest-python_step1}
 
@@ -46,6 +57,8 @@ Complete the following steps to get the ingestion key:
     You can see the ingestion keys that have been created. 
 
 4. Copy a key. You can use an existing ingestion key or click **Generate Ingestion Key** to create a new one. When you generate a key, the key is added to the list. 
+
+
 
 
 ## Step 2. Send logs
@@ -104,7 +117,7 @@ Where
 
 
 ## Example
-{: #ingest_example}
+{: #ingest-python_example}
 
 The following sample sends 2 log lines with different priorities (level) to an instance of the {{site.data.keyword.la_full_notm}} service: 
 
@@ -123,7 +136,7 @@ log = logging.getLogger('logdna')
 log.setLevel(logging.INFO)
 
 options = {
-  'hostname': 'sample-app',
+  'hostname': 'MyHostName',
   'ip': '10.0.1.1',
   'mac': 'C0:FF:EE:C0:FF:EE',
   'env': 'Dallas',
