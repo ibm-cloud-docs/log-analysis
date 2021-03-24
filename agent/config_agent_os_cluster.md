@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years:  2018, 2020
-lastupdated: "2020-12-09"
+  years:  2018, 2021
+lastupdated: "2021-03-22"
 
 keywords: LogDNA, IBM, Log Analysis, logging, config agent
 
@@ -176,7 +176,10 @@ You must enable virtual routing and forwarding (VRF) and connectivity to service
 
 Create a Kubernetes daemon set to deploy the LogDNA agent on every worker node of your Kubernetes cluster. 
 
-The LogDNA agent collects logs with the extension `*.log` and extensionsless files that are stored in the `/var/log` directory of your pod. By default, logs are collected from all namespaces, including `kube-system`, and automatically forwarded to the {{site.data.keyword.la_full_notm}} service.
+The LogDNA agent collects the following logs:
+- STDOUT and STDERR
+- Logs with the extension `*.log`, and extensionsless files that are stored in the `/var/log` directory of your pod. 
+By default, logs are collected from all namespaces, including `kube-system`, and automatically forwarded to the {{site.data.keyword.la_full_notm}} service.
 
 Choose one of the following commands to install and configure the LogDNA agent version 1:
 
