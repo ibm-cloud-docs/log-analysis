@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2018, 2020
-lastupdated: "2020-12-07"
+  years: 2018, 2021
+lastupdated: "2021-03-24"
 
 keywords: Log Analysis with LogDNA release notes, Log-Analysis-with-LogDNA updates
 
@@ -18,6 +18,13 @@ subcollection: Log-Analysis-with-LogDNA
 
 Use these release notes to learn about the latest updates to {{site.data.keyword.la_full}} that are grouped by date.
 {:shortdesc}
+
+
+## March 2021
+{: #AT-jan2021-for-update}
+
+The service name has changed from **IBM Log Analysis with LogDNA** to **IBM Log Analysis**.
+
 
 ## January 2021
 {: #AT-jan2021-for-update}
