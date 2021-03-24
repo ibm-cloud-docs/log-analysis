@@ -107,7 +107,6 @@ Log Analysis
     regions.md
     service_plans.md
     core/shared-responsibilities.md
-    releasenotes.md
 
     {: .topicgroup}
     Logging CLI
