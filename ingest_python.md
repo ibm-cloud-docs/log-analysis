@@ -23,7 +23,7 @@ subcollection: Log-Analysis-with-LogDNA
 
  
 # Sending logs by using Python
-{: #ingest-python}
+{: #ingest_python}
 
 You can send log data to an {{site.data.keyword.la_full_notm}} instance by using Python. 
 {:shortdesc}
@@ -31,7 +31,7 @@ You can send log data to an {{site.data.keyword.la_full_notm}} instance by using
 Complete the following steps to send logs:
 
 ## Prereqs
-{: #ingest-python_prereqs}
+{: #ingest_python_prereqs}
 
 Run the following command to install the LogDNA handler:
 
@@ -42,7 +42,7 @@ python3 -m pip install logdna
 
 
 ## Step 1. Get the ingestion API key 
-{: #ingest-python_step1}
+{: #ingest_python_step1}
 
 **Note:** You must have **manager** role for the {{site.data.keyword.la_full_notm}} instance or service to complete this step. For more information, see [Granting permissions to manage logs and configure alerts in LogDNA](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-work_iam#admin_user_logdna).
 
@@ -62,7 +62,7 @@ Complete the following steps to get the ingestion key:
 
 
 ## Step 2. Send logs
-{: #ingest-python_step2}
+{: #ingest_python_step2}
 
 To send logs, creaate a file with the following content:
 
@@ -117,7 +117,7 @@ Where
 
 
 ## Example
-{: #ingest-python_example}
+{: #ingest_python_example}
 
 The following sample sends 2 log lines with different priorities (level) to an instance of the {{site.data.keyword.la_full_notm}} service: 
 
