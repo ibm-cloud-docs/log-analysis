@@ -13,7 +13,7 @@ subcollection: Log-Analysis-with-LogDNA
 {:new_window: target="_blank"}
 {:shortdesc: .shortdesc}
 
-# Release notes for {{site.data.keyword.la_full_notm}}
+# Release notes
 {: #LA-release-notes}
 
 Use these release notes to learn about the latest updates to {{site.data.keyword.la_full}} that are grouped by date.

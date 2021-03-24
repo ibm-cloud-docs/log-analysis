@@ -43,7 +43,6 @@ Review the connectivity options for interacting with {{site.data.keyword.la_full
         </dd>
 </dl>
 
-
 ## API endpoints
 {: #endpoints_api}
 
@@ -192,5 +191,3 @@ The following table shows the syslog TLS endpoints:
 | `Sydney (au-syd)`        | `syslog-tls://syslog-a.au-syd.logging.cloud.ibm.com`     | 135.90.92.254 </br>168.1.202.76 </br>130.198.1.210 |
 | `Washington (us-east)`   | `syslog-tls://syslog-a.us-east.logging.cloud.ibm.com`    | 169.60.121.243 </br>169.61.98.203 </br>169.47.34.203 |
 {: caption="Table 7. Lists of Syslog-TLS endpoints" caption-side="top"}
-
-
