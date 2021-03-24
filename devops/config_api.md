@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2021
-lastupdated: "2021-03-01"
+lastupdated: "2021-03-24"
 
 keywords: LogDNA, IBM, Log Analysis, logging, api
 
@@ -23,7 +23,7 @@ subcollection: Log-Analysis-with-LogDNA
 {:external: target="_blank" .external}
 
  
-# Managing views and alerts programmatically
+# Managing views and alerts by using the REST API
 {: #config_api}
 
 You can use the *Configuration REST API* to manage programmatically views and alerts.
@@ -52,7 +52,7 @@ When you create a view, consider the following information:
 - You can define body parameters to refine the data that is displayed through the view. You must specify 1 or more of the following body parameters: query, apps, levels, hosts, or tags.
 
 When you create a PagerDuty notification channel, consider the following information:
-- You must manually configure the integration of LogDNA with PagerDuty. See [Integrating with PagerDuty](https://docs.logdna.com/docs/pagerduty-alert-integration){: external}.
+- You must manually configure the integration of LogDNA with PagerDuty. See [Integrating with PagerDuty](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-pagerduty).
 - You must provide LogDNA with the PagerDuty API key. 
 
 After you create a view, check the view in the LogDNA web UI. 

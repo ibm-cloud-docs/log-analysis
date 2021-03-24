@@ -1,10 +1,10 @@
 ---
 
 copyright:
-  years:  2018, 2020
-lastupdated: "2020-07-01"
+  years:  2018, 2021
+lastupdated: "2021-03-24"
 
-keywords: LogDNA, IBM, Log Analysis, logging, export logs
+keywords: LogDNA, IBM, Log Analysis, logging, export logs, api
 
 subcollection: Log-Analysis-with-LogDNA
 
@@ -23,7 +23,7 @@ subcollection: Log-Analysis-with-LogDNA
 {:external: target="_blank" .external}
 
  
-# Exporting logs programmatically
+# Exporting logs by using the REST API
 {: #export_api}
 
 From an {{site.data.keyword.la_full_notm}} instance, you can export logs programmatically by using the LogDNA REST API. 
