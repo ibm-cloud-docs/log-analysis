@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years:  2018, 2020
-lastupdated: "2020-07-02"
+  years:  2018, 2021
+lastupdated: "2020-03-24"
 
 keywords: LogDNA, IBM, Log Analysis, logging instance, enable, service logs
 
@@ -25,21 +25,21 @@ subcollection: Log-Analysis-with-LogDNA
 # Configuring {{site.data.keyword.cloud_notm}} platform logs
 {: #config_svc_logs}
 
-`Platform logs` are logs that are exposed by enabled-LogDNA services and the platform in {{site.data.keyword.cloud_notm}}. You must configure a LogDNA instance in a region to monitor these logs.
+`Platform logs` are logs that are exposed by enabled services and the platform in {{site.data.keyword.cloud_notm}}. You must configure a logging instance in a region to monitor these logs.
 {:shortdesc}
 
 * Platform logs are regional. 
 
-    You can monitor logs from enabled-LogDNA services on the {{site.data.keyword.cloud_notm}} in the region where the service is available. 
+    You can monitor logs from enabled services on the {{site.data.keyword.cloud_notm}} in the region where the service is available. 
 
 * You can configure 1 instance only of the {{site.data.keyword.la_full_notm}} service per region to collect *platform logs* in that location. 
 
     You can have multiple {{site.data.keyword.la_full_notm}} instances in a location. However, only 1 instance in a location (region) can be configured to receive logs from [enabled services](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-cloud_services) in that {{site.data.keyword.cloud_notm}} location.
     {: important}
 
-* To configure a LogDNA instance, you must set on the *platform logs* configuration setting. Also, you must have the platform role `editor` or higher for the {{site.data.keyword.la_full_notm}} service in your account.
+* To configure a logging instance, you must set on the *platform logs* configuration setting. Also, you must have the platform role `editor` or higher for the {{site.data.keyword.la_full_notm}} service in your account.
 
-* If a LogDNA instance in a region is already enabled to collect platform logs, logs from enabled-LogDNA services are collected automatically and available for analysis through this instance. For more information about enabled-LogDNA services, see [Cloud services](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-cloud_services).
+* If a logging instance in a region is already enabled to collect platform logs, logs from enabled services are collected automatically and available for analysis through this instance. For more information about enabled services, see [Cloud services](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-cloud_services).
 
 * To monitor platform logs for a service instance, check that the {{site.data.keyword.la_full_notm}} instance is provisioned in the same region where the service instance that you want to monitor is provisioned.
 
@@ -59,7 +59,7 @@ To configure a logging instance from the Observability dashboard in the {{site.d
 
 4. Select a [region](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-regions). 
 
-5. Choose which LogDNA instance will receive logs from enabled services on that location. [Learn more about the services that are enabled to send logs to {{site.data.keyword.la_full_notm}}.](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-cloud_services)
+5. Choose which logging instance will receive logs from enabled services on that location. [Learn more about the services that are enabled to send logs to {{site.data.keyword.la_full_notm}}.](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-cloud_services)
 
 6. Click **Save**. 
 
@@ -84,9 +84,9 @@ If you do not have an instance with the flag **Platform Logs** in the region, co
 
 1. [Pre-requisite] [Install the {{site.data.keyword.cloud_notm}} CLI](/docs/cli?topic=cli-install-ibmcloud-cli).
 
-2. Log in to the region in the {{site.data.keyword.cloud_notm}} where the LogDNA instance is running. Run the following command: [ibmcloud login](/docs/cli?topic=cli-ibmcloud_cli#ibmcloud_login)
+2. Log in to the region in the {{site.data.keyword.cloud_notm}} where the logging instance is running. Run the following command: [ibmcloud login](/docs/cli?topic=cli-ibmcloud_cli#ibmcloud_login)
 
-3. Set the resource group where the LogDNA instance is running. Run the following command: [ibmcloud target](/docs/cli?topic=cli-ibmcloud_cli#ibmcloud_target)
+3. Set the resource group where the logging instance is running. Run the following command: [ibmcloud target](/docs/cli?topic=cli-ibmcloud_cli#ibmcloud_target)
 
     By default, the `default` resource group is set.
 
@@ -109,7 +109,7 @@ If you do not have an instance with the flag **Platform Logs** in the region, co
     ```
     {: codeblock}
 
-    Where `PlanID` is the resource plan ID of your LogDNA instance.
+    Where `PlanID` is the resource plan ID of your logging instance.
     
 
 
@@ -128,9 +128,9 @@ Complete the following steps:
 
 2. [Pre-requisite]Get the details of the instance with the flag **Platform Logs** set in the region that you want to reconfigure. 
 
-3. Log in to the region in the {{site.data.keyword.cloud_notm}} where the LogDNA instance is running. Run the following command: [ibmcloud login](/docs/cli?topic=cli-ibmcloud_cli#ibmcloud_login)
+3. Log in to the region in the {{site.data.keyword.cloud_notm}} where the logging instance is running. Run the following command: [ibmcloud login](/docs/cli?topic=cli-ibmcloud_cli#ibmcloud_login)
 
-4. Set the resource group where the LogDNA instance that has the **platform logs** flag is running. Run the following command: [ibmcloud target](/docs/cli?topic=cli-ibmcloud_cli#ibmcloud_target)
+4. Set the resource group where the logging instance that has the **platform logs** flag is running. Run the following command: [ibmcloud target](/docs/cli?topic=cli-ibmcloud_cli#ibmcloud_target)
 
     By default, the `default` resource group is set.
 
@@ -152,11 +152,11 @@ Complete the following steps:
 
     Where 
     
-    * `PlanID` is the resource plan ID of your LogDNA instance.
+    * `PlanID` is the resource plan ID of your logging instance.
 
     * `InstanceName` is the name of the instance that you want to turn on and start collecting platform logs.
 
-7. Set the resource group where the LogDNA instance that you want to stop collecting platform logs is running. Run the following command: [ibmcloud target](/docs/cli?topic=cli-ibmcloud_cli#ibmcloud_target)
+7. Set the resource group where the logging instance that you want to stop collecting platform logs is running. Run the following command: [ibmcloud target](/docs/cli?topic=cli-ibmcloud_cli#ibmcloud_target)
 
     By default, the `default` resource group is set.
 
@@ -178,7 +178,7 @@ Complete the following steps:
 
     Where 
     
-    * `PlanID` is the resource plan ID of your LogDNA instance.
+    * `PlanID` is the resource plan ID of your logging instance.
 
     * `InstanceName` is the name of the instance that you want to turn off from collecting platform logs.
     

@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years:  2018, 2020
-lastupdated: "2020-05-11"
+  years:  2018, 2021
+lastupdated: "2021-03-24"
 
 keywords: LogDNA, IBM, Log Analysis, logging, update LogDNA agent
 
@@ -74,7 +74,7 @@ Complete the following steps from the command line to upgrade the LogDNA agent v
 ## Step 2. Backup the yaml file of the LogDNA agent that is deployed in the cluster
 {: #upgrade_agent_kube_cluster_step2}
 
-Run the following command to backup the yaml file of the LogDNA agent that is currently deployed in your cluster:
+Run the following command to backup the YAML file of the LogDNA agent that is currently deployed in your cluster:
 
 ```
 kubectl get ds logdna-agent -o yaml > logdna-agent-<clusterName>-<date>.yaml
@@ -124,8 +124,8 @@ Where `NAMESPACE` is the namespace in your cluster where the LogDNA agent versio
 
 
 
-## Step 4. Deploy the LogDNA agent version 2 in the cluster
-{: #upgrade_agent_kube_cluster_step4}
+## Step 5. Deploy the LogDNA agent version 2 in the cluster
+{: #upgrade_agent_kube_cluster_step5}
 
 Choose one of the following commands to install and configure the LogDNA agent:
 
@@ -163,8 +163,8 @@ Choose one of the following commands to install and configure the LogDNA agent:
 {: class="simple-tab-table"}
 {: row-headers}
 
-## Step 5. Verify that the LogDNA agent is deployed successfully
-{: #config_agent_kube_cluster_step5}
+## Step 6. Verify that the LogDNA agent is deployed successfully
+{: #config_agent_kube_cluster_step6}
 
 To verify that the LogDNA agent is deployed successfully, run the following command:
 

@@ -41,6 +41,7 @@ Log Analysis
     remove.md
     upgrade.md
     observe.md
+    monitor_logs.md
     iam.md
         
    {: .topicgroup}
@@ -95,6 +96,8 @@ Log Analysis
         devops/view_logs.md
         devops/alerts.md
         devops/config_api.md
+        devops/pagerduty.md
+        devops/sysdig.md
     {: .navgroup-end}
 
     {: .navgroup id="reference"}

@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years:  2018, 2020
-lastupdated: "2020-03-06"
+  years:  2018, 2021
+lastupdated: "2021-03-24"
 
 keywords: LogDNA, IBM, Log Analysis, logging, services
 
@@ -94,7 +94,9 @@ There are scenarios where you might want to be notified if specific logs are gen
 Through the {{site.data.keyword.la_full_notm}} web UI, you can apply search queries to define the logs that are displayed through a custom view. Then, you can attach an alert to that view to be notified when a condition occurs. A bell icon is displayed with the view to indicate that this view has an alert attached to it.
 
 Consider the following information when you configure alerts:
-* You can [attach one alert](/docs/Activity-Tracker-with-LogDNA?topic=Activity-Tracker-with-LogDNA-alerts) per custom view. There are 2 types of alerts: presence alert and absence alert.
+* You can [attach one alert](/docs/Activity-Tracker-with-LogDNA?topic=Activity-Tracker-with-LogDNA-alerts) per custom view. 
+
+* There are 2 types of alerts: presence alert and absence alert.
 
 * You can configure conditions that are based on the number of event lines that meet the search query in the view, on a time frequency, or both. 
 
@@ -118,7 +120,7 @@ Consider the following information when you configure alerts:
 
 Configure a presence alert to notify when the number of logs that show in a view is more than what you expect. 
 
-For example, you might have a view that shows logs that report the deletion of service instances in your account. You are not expecting the deletion of service instances. You can configure a *presence alert** that triggers an alert when 1 or more logs show in the view.
+For example, you might have a view that shows logs that report the deletion of service instances in your account. You are not expecting the deletion of service instances. You can configure a **presence alert** that triggers an alert when 1 or more logs show in the view.
 
 
 ### Absence alert
@@ -126,8 +128,9 @@ For example, you might have a view that shows logs that report the deletion of s
 
 Configure an absence alert to notify when the number of logs that show in a view is less than what you expect, or none. 
 
-An absence alert is triggered when the view that has an absence alert attached to it is active. A view is active when the view receives logs within the last 24 hours.
-{: important}
+Consider the following information when you configure an absence alert:
+- An absence alert is enabled when the view receives at least 1 log line.
+- An absence alert is triggered when the view that has an absence alert attached to it is active. A view is active when the view receives logs within the last 24 hours.
 
 For example, you might have a view that does not get any logs for 2 days. Therefore, this view is not active. You have an absence alert attached to this view that is configured to send a notification after 30 minutes. Because the view is not active, the absence alert is muted and you do not get notifications. To make the view active and get notifications for the absence condition, logs need to start flowing into the view. 
 
@@ -174,9 +177,6 @@ Consider the following information when you export logs:
 * To define the set of data that you want to export, you can apply filter and searches. You can also specify the time range. 
 * The maximum number of lines that you can export is 20,000.
 
-
-To make the EU-DE (Frankfurt) location EU compliant, the export function is **not available** in **Frankfurt**. The download website for the exported logs is currently located outside the EU.
-{: important}
 
 
 ### By using the REST API
