@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2021
-lastupdated: "2021-03-01"
+lastupdated: "2021-03-24"
 
 keywords: LogDNA, IBM, Log Analysis, logging, ingestion 
 
@@ -22,7 +22,7 @@ subcollection: Log-Analysis-with-LogDNA
 {:note: .note}
 
  
-# Sending logs
+# Sending logs by using cURL
 {: #ingest}
 
 You can send log data to an {{site.data.keyword.la_full_notm}} instance. 

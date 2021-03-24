@@ -92,6 +92,7 @@ Log Analysis
     {: .topicgroup}
     Send logs
         ingest.md
+        ingest-python.md
 
     {: .topicgroup}
     Working with views and alerts
