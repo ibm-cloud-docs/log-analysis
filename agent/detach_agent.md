@@ -22,19 +22,19 @@ subcollection: Log-Analysis-with-LogDNA
 {:note: .note}
 {:external: target="_blank" .external}
 
-# Disconnecting a LogDNA agent
+# Disconnecting a logging agent
 {: #detach_agent}
 
-Detach a LogDNA agent from a logging instance to stop collecting logs.
+Detach a logging agent from a logging instance to stop collecting logs.
 {:shortdesc}
 
-## Detaching a LogDNA agent from a standard Kubernetes cluster
+## Detaching a logging agent from a standard Kubernetes cluster
 {: #detach_agent_kube}
 
-To stop your Kubernetes cluster from sending logs to your {{site.data.keyword.la_full_notm}} instance, you must remove the LogDNA agent from your cluster. 
+To stop your Kubernetes cluster from sending logs to your {{site.data.keyword.la_full_notm}} instance, you must remove the logging agent from your cluster. 
 
 
-### Detaching a LogDNA agent version 2 from a standard Kubernetes cluster by using kubectl commands
+### Detaching a logging agent version 2 from a standard Kubernetes cluster by using kubectl commands
 {: #detach_agent_kube_kubectl_v2}
 
 To stop your Kubernetes cluster from forwarding logs to your LogDNA instance, complete the following steps from the command line:
@@ -59,7 +59,7 @@ To stop your Kubernetes cluster from forwarding logs to your LogDNA instance, co
     ```
     {: codeblock}
 
-4. Remove the LogDNA agent on every worker(node) of your Kubernetes cluster. Run one of the following commands:
+4. Remove the logging agent on every worker(node) of your Kubernetes cluster. Run one of the following commands:
 
 
 | Location                  | Command (By using public endpoints)               | 
@@ -97,7 +97,7 @@ To stop your Kubernetes cluster from forwarding logs to your LogDNA instance, co
 {: row-headers}
 
 
-To verify that the LogDNA agent is deleted successfully, run the following command:
+To verify that the logging agent is deleted successfully, run the following command:
 
 ```
 kubectl get pods -n ibm-observe
@@ -106,7 +106,7 @@ kubectl get pods -n ibm-observe
 
 You should not see any LogDNA pods.
 
-### Detaching a LogDNA agent version 1 from a standard Kubernetes cluster by using kubectl commands
+### Detaching a logging agent version 1 from a standard Kubernetes cluster by using kubectl commands
 {: #detach_agent_kube_kubectl_v1}
 
 To stop your Kubernetes cluster from forwarding logs to your LogDNA instance, complete the following steps from the command line:
@@ -131,7 +131,7 @@ To stop your Kubernetes cluster from forwarding logs to your LogDNA instance, co
     ```
     {: codeblock}
 
-4. Remove the LogDNA agent on every worker(node) of your Kubernetes cluster. The LogDNA agent is responsible for collecting and forwarding your logs. Run the following command:
+4. Remove the logging agent on every worker(node) of your Kubernetes cluster. The logging agent is responsible for collecting and forwarding your logs. Run the following command:
 
     ```
     kubectl delete daemonset logdna-agent -n ibm-observe
@@ -140,7 +140,7 @@ To stop your Kubernetes cluster from forwarding logs to your LogDNA instance, co
 
 
 
-To verify that the LogDNA agent is deleted successfully, run the following command:
+To verify that the logging agent is deleted successfully, run the following command:
 
 ```
 kubectl get pods -n ibm-observe
@@ -151,10 +151,10 @@ You should not see any LogDNA pods.
 
 
 
-### Detaching a LogDNA agent from a standard Kubernetes cluster from the cluster console
+### Detaching a logging agent from a standard Kubernetes cluster from the cluster console
 {: #detach_agent_kube_console}
 
-This option is only valid when you deploy the LogDNA agent from the {{site.data.keyword.containerlong_notm}} console.
+This option is only valid when you deploy the logging agent from the {{site.data.keyword.containerlong_notm}} console.
 {: note}
 
 Complete the following steps from the [{{site.data.keyword.containerlong_notm}} console](https://cloud.ibm.com/kubernetes/clusters){: external}:
@@ -167,10 +167,10 @@ Complete the following steps from the [{{site.data.keyword.containerlong_notm}} 
 
 
 
-### Detaching a LogDNA agent from a standard Kubernetes cluster by using ob commands
+### Detaching a logging agent from a standard Kubernetes cluster by using ob commands
 {: #detach_agent_kube_console_ob}
 
-This option is only valid when you deploy the LogDNA agent by using ob commands.
+This option is only valid when you deploy the logging agent by using ob commands.
 {: note}
 
 Complete the following steps:
@@ -213,7 +213,7 @@ Complete the following steps:
     ```
     {: pre}
 
-2. Detach the LogDNA agent by using the `ob` CLI. Run the following command:
+2. Detach the logging agent by using the `ob` CLI. Run the following command:
 
     ```
     ibmcloud ob logging config delete --cluster <cluster_name_or_ID> --instance <LogDNA_instance_name_or_ID>  [--force]
@@ -233,12 +233,12 @@ Complete the following steps:
 
 
 
-## Detaching a LogDNA agent from an Openshift Kubernetes cluster
+## Detaching a logging agent from an Openshift Kubernetes cluster
 {: #detach_agent_os}
 
-To stop your OpenShift cluster from sending logs to your {{site.data.keyword.la_full_notm}} instance, you must remove the LogDNA agent from your cluster. 
+To stop your OpenShift cluster from sending logs to your {{site.data.keyword.la_full_notm}} instance, you must remove the logging agent from your cluster. 
 
-### Detaching a LogDNA agent from an Openshift Kubernetes cluster by using kubectl commands
+### Detaching a logging agent from an Openshift Kubernetes cluster by using kubectl commands
 {: #detach_agent_os_kube_kubectl}
 
 Complete the following steps from the command line:
@@ -261,7 +261,7 @@ Complete the following steps from the command line:
 
 3. Log in to the cluster. Choose a method to login to an OpenShift cluster. [Learn more about the methods to login](/docs/openshift?topic=openshift-access_cluster#access_automation).
 
-4. Delete the LogDNA agent serviceaccount.
+4. Delete the logging agent serviceaccount.
 
     ```
     oc delete serviceaccount logdna-agent -n ibm-observe
@@ -286,7 +286,7 @@ Complete the following steps from the command line:
 
     Where *PROJECT* is the namespace where the LogDNA pods run. Set this value to **ibm-observe**.
 
-5. Remove the LogDNA agent on every worker(node) of your Kubernetes cluster. The LogDNA agent is responsible for collecting and forwarding your logs. Run the following command:
+5. Remove the logging agent on every worker(node) of your Kubernetes cluster. The logging agent is responsible for collecting and forwarding your logs. Run the following command:
 
     ```
     oc delete daemonset logdna-agent -n ibm-observe
@@ -295,7 +295,7 @@ Complete the following steps from the command line:
 
     Where *PROJECT* is the namespace where the LogDNA pods run. Set this value to **ibm-observe**.
 
-5. Verify that the LogDNA agent is deleted successfully. Run the following command to verify that LogDNA agent pods are not running:
+5. Verify that the logging agent is deleted successfully. Run the following command to verify that logging agent pods are not running:
 
     ```
     oc get pods -n ibm-observe
@@ -305,10 +305,10 @@ Complete the following steps from the command line:
 
 
 
-### Detaching a LogDNA agent from an Openshift Kubernetes cluster from the OpenShift console
+### Detaching a logging agent from an Openshift Kubernetes cluster from the OpenShift console
 {: #detach_agent_os_console}
 
-This option is only valid when you deploy the LogDNA agent from the OpenShift console.
+This option is only valid when you deploy the logging agent from the OpenShift console.
 {: note}
 
 Complete the following steps from the [OpenShift console](https://cloud.ibm.com/kubernetes/clusters?platformType=openshift){: external}:
@@ -321,10 +321,10 @@ Complete the following steps from the [OpenShift console](https://cloud.ibm.com/
 
 
 
-### Detaching a LogDNA agent from an Openshift Kubernetes cluster by using ob commands
+### Detaching a logging agent from an Openshift Kubernetes cluster by using ob commands
 {: #detach_agent_os_console_ob}
 
-This option is only valid when you deploy the LogDNA agent by using ob commands.
+This option is only valid when you deploy the logging agent by using ob commands.
 {: note}
 
 Complete the following steps:
@@ -367,7 +367,7 @@ Complete the following steps:
     ```
     {: pre}
 
-2. Detach the LogDNA agent by using the `ob` CLI. Run the following command:
+2. Detach the logging agent by using the `ob` CLI. Run the following command:
 
     ```
     ibmcloud ob logging config delete --cluster <cluster_name_or_ID> --instance <LogDNA_instance_name_or_ID>  [--force]

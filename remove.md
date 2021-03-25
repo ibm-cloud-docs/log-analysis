@@ -30,7 +30,7 @@ You can remove an instance of the {{site.data.keyword.la_full_notm}} service fro
 
 When you remove an instance from the {{site.data.keyword.cloud_notm}}, clean up by completing the following tasks:
 
-1. Write down the list of sources that forward metrics to the {{site.data.keyword.la_full_notm}} instance that you want to remove. You must remove the LogDNA agent from each source.
+1. Write down the list of sources that forward metrics to the {{site.data.keyword.la_full_notm}} instance that you want to remove. You must remove the logging agent from each source.
 2. Remove permissions that are granted to users to work with the instance. 
 
     If you manage access by using dedicated access groups to work with a specific instance, you must remove these access groups.

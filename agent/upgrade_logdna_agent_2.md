@@ -4,7 +4,7 @@ copyright:
   years:  2018, 2020
 lastupdated: "2020-07-30"
 
-keywords: LogDNA, IBM, Log Analysis, logging, update LogDNA agent
+keywords: LogDNA, IBM, Log Analysis, logging, update logging agent
 
 subcollection: Log-Analysis-with-LogDNA
 
@@ -21,16 +21,16 @@ subcollection: Log-Analysis-with-LogDNA
 {:important: .important}
 {:note: .note}
 
-# Upgrading from LogDNA agent version 1 to LogDNA agent version 2
+# Upgrading from logging agent version 1 to logging agent version 2
 {: #upgrade_logdna_agent_2}
 
-If your Kubernetes cluster version is 1.9+, you can upgrade the LogDNA agent to version 2.
+If your Kubernetes cluster version is 1.9+, you can upgrade the logging agent to version 2.
 {:shortdesc}
 
-When you upgrade the version of the agent, some logs may not be collected or duplicated depending on the period of time that you take to delete the current LogDNA Agent and deploy a new version of the LogDNA Agent in the cluster.
+When you upgrade the version of the agent, some logs may not be collected or duplicated depending on the period of time that you take to delete the current logging agent and deploy a new version of the logging agent in the cluster.
 {: important}
 
-Complete the following steps from the command line to upgrade the LogDNA agent version that is deployed in your Kubernetes cluster:
+Complete the following steps from the command line to upgrade the logging agent version that is deployed in your Kubernetes cluster:
 
 
 ## Step 1. Set the cluster context
@@ -74,10 +74,10 @@ Complete the following steps from the command line to upgrade the LogDNA agent v
    {: pre}
 
 
-## Step 2. Backup the YAML file of the LogDNA agent that is deployed in the cluster
+## Step 2. Backup the YAML file of the logging agent that is deployed in the cluster
 {: #upgrade_logdna_agent_2_step2}
 
-Run the following command to backup the YAML file of the LogDNA agent that is currently deployed in your cluster:
+Run the following command to backup the YAML file of the logging agent that is currently deployed in your cluster:
 
 ```
 kubectl get ds logdna-agent -o yaml > logdna-agent-<clusterName>-<date>.yaml
@@ -93,7 +93,7 @@ Where
 ## Step 3. Create the namespace ibm-observe
 {: #upgrade_logdna_agent_2_step3}
 
-This step is only required if you installed the LogDNA agent version 1 in a namespace that is different to `ibm-observe`.
+This step is only required if you installed the logging agent version 1 in a namespace that is different to `ibm-observe`.
 {: note}
 
 To check if the namespace exists, run the following command:
@@ -113,24 +113,24 @@ kubectl create namespace ibm-observe
 {: pre}
 
 
-## Step 4. Delete the LogDNA agent version 1
+## Step 4. Delete the logging agent version 1
 {: #upgrade_logdna_agent_2_step4}
 
-Run the following command to delete the LogDNA agent version 1:
+Run the following command to delete the logging agent version 1:
 
 ```
 kubectl delete daemonset logdna-agent -n NAMESPACE
 ```
 {: pre}
 
-Where `NAMESPACE` is the namespace in your cluster where the LogDNA agent version 1 is deployed.
+Where `NAMESPACE` is the namespace in your cluster where the logging agent version 1 is deployed.
 
 
 
-## Step 5. Deploy the LogDNA agent version 2 in the cluster
+## Step 5. Deploy the logging agent version 2 in the cluster
 {: #upgrade_logdna_agent_2_step5}
 
-Choose one of the following commands to install and configure the LogDNA agent:
+Choose one of the following commands to install and configure the logging agent:
 
 | Location                  | Command (By using public endpoints)               | 
 |--------------------------|----------------------------------------------------|
@@ -166,10 +166,10 @@ Choose one of the following commands to install and configure the LogDNA agent:
 {: class="simple-tab-table"}
 {: row-headers}
 
-## Step 6. Verify that the LogDNA agent is deployed successfully
+## Step 6. Verify that the logging agent is deployed successfully
 {: #upgrade_logdna_agent_2_step6}
 
-To verify that the LogDNA agent is deployed successfully, run the following command:
+To verify that the logging agent is deployed successfully, run the following command:
 
 ```
 kubectl get pods

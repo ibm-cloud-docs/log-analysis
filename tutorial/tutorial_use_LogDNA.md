@@ -46,9 +46,9 @@ application and system logs.
 
 - Make sure you have a LogDNA instance that is collecting logs. 
 
-    - You can have a LogDNA agent configured to collect logs from a VPC instance. See [Logging in Linux VPC server instances](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-ubuntu).
+    - You can have a logging agent configured to collect logs from a VPC instance. See [Logging in Linux VPC server instances](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-ubuntu).
 
-    - You can have a LogDNA agent configured to collect logs from a Kubernetes cluster. See [Logging in Kubernetes clusters (cluster-level logging)](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-kube).
+    - You can have a logging agent configured to collect logs from a Kubernetes cluster. See [Logging in Kubernetes clusters (cluster-level logging)](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-kube).
 
 - Check you have permissions to launch the LogDNA web UI. See [Granting IAM policies to a user to launch the web UI](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-launch#launch_iam).
 

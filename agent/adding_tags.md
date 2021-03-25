@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years:  2018, 2020
-lastupdated: "2020-05-11"
+  years:  2018, 2021
+lastupdated: "2021-03-24"
 
 keywords: LogDNA, IBM, Log Analysis, logging, config agent
 
@@ -24,14 +24,14 @@ subcollection: Log-Analysis-with-LogDNA
 # Grouping data by using tags
 {: #adding_tags}
 
-Configure a LogDNA agent to associate tags to all log records that it collects so that you can identify the agent's data quicker in the LogDNA web UI.
+Configure a logging agent to associate tags to all log records that it collects so that you can identify the agent's data quicker in the logging UI.
 {:shortdesc}
 
-* You can define multiple tags per LogDNA agent. 
+* You can define multiple tags per logging agent. 
 * You separate tags by using commas. 
 * The maximum number of characters that you can set to define multiple tags is 80 characters.
 * You can view the tags per log record.
-* You can filter data by using one or more tags through the *All Tags* menu in the LogDNA web UI.
+* You can filter data by using one or more tags through the *All Tags* menu in the logging UI.
 
 
 ## Adding tags to logs from a Kubernetes cluster
@@ -62,9 +62,9 @@ Complete the following steps to add tags to a cluster:
     ```
     {: pre}
 
-    If the update strategy is set to *OnDelete* or if you have the configuration file that is managed through a version control system, update your local configuration file and apply changes to the LogDNA agent by using *kubectl apply*.
+    If the update strategy is set to *OnDelete* or if you have the configuration file that is managed through a version control system, update your local configuration file and apply changes to the logging agent by using *kubectl apply*.
 
-    If the update strategy is set to *RollingUpdate*, you can update and apply changes to the LogDNA agent by using *kubectl edit*.
+    If the update strategy is set to *RollingUpdate*, you can update and apply changes to the logging agent by using *kubectl edit*.
 
 3. Edit the `logdna-agent-configmap.yaml` file.
 
@@ -139,9 +139,9 @@ Complete the following steps to add tags to a cluster:
 {: #adding_tags_linux}
 
 
-Complete the following steps to add more tags to the LogDNA agent:
+Complete the following steps to add more tags to the logging agent:
 
-1. Verify the LogDNA agent is running.
+1. Verify the logging agent is running.
 
 2. Add one or more tags.
 
@@ -151,7 +151,7 @@ Complete the following steps to add more tags to the LogDNA agent:
     {: codeblock}
 
 
-You can also edit the LogDNA configuration file and add tags. The configuration file is located in */etc/logdna.conf*.
+You can also edit the agent configuration file and add tags. The configuration file is located in */etc/logdna.conf*.
 
 1. Edit the file.
 
@@ -162,7 +162,7 @@ You can also edit the LogDNA configuration file and add tags. The configuration 
 
 2. Add tags.
 
-3. Restart the LogDNA agent.
+3. Restart the logging agent.
 
     ```
     sudo /etc/init.d/logdna-agent start

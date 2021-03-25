@@ -26,7 +26,7 @@ subcollection: Log-Analysis-with-LogDNA
 # Logging in Kubernetes clusters (cluster-level logging)
 {: #kube}
 
-You can configure a LogDNA agent to collect logs from a Kubernetes cluster and forward them to an instance of the {{site.data.keyword.la_full_notm}} service.
+You can configure a logging agent to collect logs from a Kubernetes cluster and forward them to an instance of the {{site.data.keyword.la_full_notm}} service.
 {:shortdesc}
 
 You can collect and monitor logs from a Kubernetes cluster that is located in the same {{site.data.keyword.cloud_notm}} region as your {{site.data.keyword.la_full_notm}} instance or in a different one. You can also collect and monitor logs from clusters that are located outside the {{site.data.keyword.cloud_notm}}.
@@ -46,7 +46,7 @@ To configure cluster-level logging for a Kubernetes cluster, you must complete t
 
 1. Provision an instance of the {{site.data.keyword.la_full_notm}} service. With this step, you configure a centralized log management system where log data is hosted on {{site.data.keyword.cloud_notm}}.
 2. Provision a cluster, for example, a standard cluster on the {{site.data.keyword.containerlong_notm}}.
-3. Deploy and configure the LogDNA agent in the cluster.
+3. Deploy and configure the logging agent in the cluster.
 
 ![LogDNA component overview on the {{site.data.keyword.cloud_notm}}](../images/kube.png "LogDNA component overview on the {{site.data.keyword.cloud_notm}}")
 
@@ -92,23 +92,23 @@ Your IBMid must have assigned IAM policies for each of the following resources i
 |--------------------------------------|----------------------------|---------|------------------------------|
 | Resource group **default**           |  Resource group            | Viewer  | This policy is required to allow the user to see service instances in the Default resource group.|
 | {{site.data.keyword.la_full_notm}} service |  Resource group            | Editor  | This policy is required to allow the user to provision and administer the {{site.data.keyword.la_full_notm}} service in the default resource group.   |
-| Kubernetes cluster instance          |  Resource                 | Editor  | This policy is required to configure the secret and the LogDNA agent in the Kubernetes cluster. |
+| Kubernetes cluster instance          |  Resource                 | Editor  | This policy is required to configure the secret and the logging agent in the Kubernetes cluster. |
 {: caption="Table 1. List of IAM policies required to complete the tutorial" caption-side="top"} 
 
 
 ## Step 1. Configure your Kubernetes cluster to send logs to your LogDNA instance
 {: #kube_step1}
 
-To configure your Kubernetes cluster to send logs to your {{site.data.keyword.la_full_notm}} instance, you must install the LogDNA agent in the cluster. 
+To configure your Kubernetes cluster to send logs to your {{site.data.keyword.la_full_notm}} instance, you must install the logging agent in the cluster. 
 
-* The LogDNA agent automatically collects STDOUT and STDERR logs.
-* By default, the LogDNA agent monitors all files with extension *.log*, and extensionless files under */var/log/*.
+* The logging agent automatically collects STDOUT and STDERR logs.
+* By default, the logging agent monitors all files with extension *.log*, and extensionless files under */var/log/*.
 
-Choose one of the following options to deploy and configure the LogDNA agent in your cluster, and connect the agent with your {{site.data.keyword.la_full_notm}} instance:
+Choose one of the following options to deploy and configure the logging agent in your cluster, and connect the agent with your {{site.data.keyword.la_full_notm}} instance:
 
-* [Connect a standard Kubernetes cluster to an {{site.data.keyword.la_full_notm}} instance by using a LogDNA agent](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-config_agent_kube_cluster).
+* [Connect a standard Kubernetes cluster to an {{site.data.keyword.la_full_notm}} instance by using a logging agent](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-config_agent_kube_cluster).
 
-* [Connect an OpenShift Kubernetes cluster to an {{site.data.keyword.la_full_notm}} instance by using a LogDNA agent](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-config_agent_os_cluster).
+* [Connect an OpenShift Kubernetes cluster to an {{site.data.keyword.la_full_notm}} instance by using a logging agent](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-config_agent_os_cluster).
 
 
 

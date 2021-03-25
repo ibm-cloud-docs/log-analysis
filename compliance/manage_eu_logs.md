@@ -38,7 +38,7 @@ Across every industry, organizations require tighter controls and visibility int
 
     * To manage logs from Cloud Foundry (CF), you must provision CF applications in the Frankfurt location. 
 
-4. To **manage logs from Kubernetes clusters and VSIs** that run in {{site.data.keyword.cloud_notm}} or outside the {{site.data.keyword.cloud_notm}}, you must configure the LogDNA agent to forward logs to  instances in Frankfurt.
+4. To **manage logs from Kubernetes clusters and VSIs** that run in {{site.data.keyword.cloud_notm}} or outside the {{site.data.keyword.cloud_notm}}, you must configure the logging agent to forward logs to  instances in Frankfurt.
  
 5. You must **restrict access to users** to see and manage logs from logging instances in Frankfurt.  
 
@@ -75,17 +75,17 @@ Check out the list of {{site.data.keyword.cloud_notm}} resources that automatica
 
 
 
-## Step 4. Configure your LogDNA agents
+## Step 4. Configure your logging agents
 {: #manage_eu_logs_step4}
 
-When you configure a LogDNA agent for a resource such as a Kubernetes cluster, you specify to which instance that agent connects. You can only connect 1 agent per resource to a LogDNA instance. 
+When you configure a logging agent for a resource such as a Kubernetes cluster, you specify to which instance that agent connects. You can only connect 1 agent per resource to a LogDNA instance. 
 
 If you have agents that collect logs from resources, apps and services that run in the {{site.data.keyword.cloud_notm}} or outside the {{site.data.keyword.cloud_notm}}, and that must be EU-supported, you need to configure your agents to forward data to a logging instance in Frankfurt. Learn more:
-* [Connect a standard Kubernetes cluster to an IBM Log Analysis with LogDNA instance by using a LogDNA agent](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-config_agent_kube_cluster)
-* [Connect an OpenShift Kubernetes cluster to an IBM Log Analysis with LogDNA instance by using a LogDNA agent](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-config_agent_os_cluster)
-* [Connecting a LogDNA agent to a Linux Ubuntu or Debian](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-config_agent_linux)
+* [Connect a standard Kubernetes cluster to an IBM Log Analysis with LogDNA instance by using a logging agent](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-config_agent_kube_cluster)
+* [Connect an OpenShift Kubernetes cluster to an IBM Log Analysis with LogDNA instance by using a logging agent](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-config_agent_os_cluster)
+* [Connecting a logging agent to a Linux Ubuntu or Debian](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-config_agent_linux)
 
-Learn more about how to detach an agent, see [Disconnecting a LogDNA agent](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-detach_agent).
+Learn more about how to detach an agent, see [Disconnecting a logging agent](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-detach_agent).
 
 
 

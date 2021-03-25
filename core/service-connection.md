@@ -44,10 +44,10 @@ For example, you might have the following requirements when you are working in t
 
 When you have these requirements, consider moving from the public network to the private network.
 
-You can configure a LogDNA agent to connect to an {{site.data.keyword.la_full_notm}} instance through the public network or through the private network. By default, the agent connects through the public network.
+You can configure a logging agent to connect to an {{site.data.keyword.la_full_notm}} instance through the public network or through the private network. By default, the agent connects through the public network.
 {: note}
 
-The type of network defines the level of isolation and security that is configured to move workloads between cloud-based resources in your account. Consider connecting the LogDNA agent over the private network.
+The type of network defines the level of isolation and security that is configured to move workloads between cloud-based resources in your account. Consider connecting the logging agent over the private network.
 {: tip}
 
 
@@ -79,7 +79,7 @@ You must first enable virtual routing and forwarding in your account, and then y
 ### Step 2. Setting a private endpoint
 {: #endpoint-setup-step2}
 
-After your account is enabled for VRF and service endpoints, you can configure a LogDNA agent to connect to an {{site.data.keyword.la_full_notm}} instance through the private network. 
+After your account is enabled for VRF and service endpoints, you can configure a logging agent to connect to an {{site.data.keyword.la_full_notm}} instance through the private network. 
 
 A service instance can have a private network endpoint, a public network endpoint, or both.
 * A public network endpoint is a service endpoint on the {{site.data.keyword.cloud_notm}} public network.
@@ -101,12 +101,12 @@ The {{site.data.keyword.la_full_notm}} service offers the following private endp
 | `Washington (us-east)`   | `https://api.private.us-east.logging.cloud.ibm.com`     | TCP 443, TCP 80 for 166.9.20.72, 166.9.20.73, 166.9.22.35, 166.9.22.36 | TCP 514, TCP 6514 for 166.9.20.76, 166.9.22.38 | UDP 514 for 166.9.20.77, 166.9.22.39 |
 {: caption="Table 1. Lists of private API endpoints for interacting with {{site.data.keyword.la_full_notm}}." caption-side="top"}
 
-### Step 3. Configure your LogDNA agent
+### Step 3. Configure your logging agent
 {: #endpoint-setup-step3}
 
-You can [configure the LogDNA agent](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-logdna_agent) to use the private network by using a private endpoint as the ingestion URL.
+You can [configure the logging agent](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-logdna_agent) to use the private network by using a private endpoint as the ingestion URL.
 
-What happens when you configure the LogDNA agent to use a private endpoint?
+What happens when you configure the logging agent to use a private endpoint?
 * Private endpoints are not accessible from the public internet. 
 * All traffic is routed to the {{site.data.keyword.cloud_notm}} Private network. 
 * Services like {{site.data.keyword.la_full_notm}} are no longer served on an internet routable IP address.
@@ -130,9 +130,9 @@ When you have an extra firewall set up, or you customize the firewall settings i
 
 You must allow outgoing traffic on TCP port 443 and TCP port 80 in your firewall. For example, you must open TCP port 443 and TCP port 80 from each worker to the {{site.data.keyword.la_full_notm}} service.
 
-The API endpoint is required for LogDNA agent authentication. The LogDNA agent gets a token that you can use to send logs to the ingestion endpoint.
+The API endpoint is required for logging agent authentication. The logging agent gets a token that you can use to send logs to the ingestion endpoint.
 
-If you configure the LogDNA agent to connect to the logging instance through the **private network**, open a support ticket to request the private IP addresses that you must enable in your firewall. For more information about opening an IBM support ticket, see [Getting support](/docs/get-support).
+If you configure the logging agent to connect to the logging instance through the **private network**, open a support ticket to request the private IP addresses that you must enable in your firewall. For more information about opening an IBM support ticket, see [Getting support](/docs/get-support).
 {: important}
 
 
@@ -171,4 +171,4 @@ The following tables list the IP addresses per region that you must configure in
 | `Sydney (au-syd)`     | `api.au-syd.logging.cloud.ibm.com`          | 130.198.89.43 </br>135.90.70.75 </br>168.1.38.90       | TCP 443 </br>TCP 80 |
 | `Tokyo (jp-tok)`      | `api.jp-tok.logging.cloud.ibm.com`          | 165.192.71.226 </br>128.168.70.53 </br>161.202.67.2    | TCP 443 </br>TCP 80 | 
 | `Washington (us-east)`| `api.us-east.logging.cloud.ibm.com`         | 169.47.43.67 </br>169.62.55.212 </br>169.60.95.75      | TCP 443 </br>TCP 80 |
-{: caption="Table 3. IP addresses used by the LogDNA agent." caption-side="top"}
+{: caption="Table 3. IP addresses used by the logging agent." caption-side="top"}

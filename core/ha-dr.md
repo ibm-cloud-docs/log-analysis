@@ -94,5 +94,5 @@ Disaster recovery is about surviving a catastrophic failure or loss of availabil
 If a regional disaster occurs, consider the following information:
 * The estimated recovery time for rebuilding the regional site and restoring the service at another location is 24 hours.
 * Older data will not be available when the service is restored. Services that are restored will be available to receive data buffered at end points during course of the outage and future ingested data.  Data previously retained is available through your archives and is not reloaded into your service instance. You can access your archive data directly in {{site.data.keyword.cos_full_notm}} or use the {{site.data.keyword.sqlquery_short}} service to access it.  
-* You might have 1 or more logging instances in the region. When these service instances are available in the new location, you will be able to use them. However, you will have to update the endpoints of applications and LogDNA agents to point to the ingestion endpoint in the new location. 
+* You might have 1 or more logging instances in the region. When these service instances are available in the new location, you will be able to use them. However, you will have to update the endpoints of applications and logging agents to point to the ingestion endpoint in the new location. 
 

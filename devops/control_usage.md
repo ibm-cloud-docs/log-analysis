@@ -25,17 +25,17 @@ subcollection: Log-Analysis-with-LogDNA
 # Controlling data usage
 {: #control_usage}
 
-In {{site.data.keyword.la_full_notm}}, you can control the data that is collected and available for analysis through a LogDNA instance. You can define exclusion rules in the UI that apply to data collected in that instance. You can also configure LogDNA agents and customize them to collect and forward specific log data. In addition, you can define an alert that is triggered when the data usage threshold that you define for that LogDNA instance is reached.
+In {{site.data.keyword.la_full_notm}}, you can control the data that is collected and available for analysis through a LogDNA instance. You can define exclusion rules in the UI that apply to data collected in that instance. You can also configure logging agents and customize them to collect and forward specific log data. In addition, you can define an alert that is triggered when the data usage threshold that you define for that LogDNA instance is reached.
 {:shortdesc}
 
 
-## Controlling data by excluding log files through the LogDNA agent
+## Controlling data by excluding log files through the logging agent
 {: #control_usage_agent}
 
-You can stop logs from being forwarded to your logging instance by customizing the LogDNA agent to exclude any files that you do not want the LogDNA agent to monitor. 
+You can stop logs from being forwarded to your logging instance by customizing the logging agent to exclude any files that you do not want the logging agent to monitor. 
 
 * By default, the agent monitors all files with extension *.log*,  and extensionless files under */var/log/*.
-* You must configure the **EXCLUDE** parameter in the LogDNA agent configuration file to exclude files that are located in any of the paths that are defined through the **logdir** parameter. 
+* You must configure the **EXCLUDE** parameter in the logging agent configuration file to exclude files that are located in any of the paths that are defined through the **logdir** parameter. 
 * To define the files that you want to exclude, you can separate multiple files by using commas. You can use glob patterns. You can also configure specific files.
 
 [Learn more](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-exclude_logs_from_agent).

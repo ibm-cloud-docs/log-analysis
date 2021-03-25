@@ -34,14 +34,14 @@ To ensure that you can securely manage your data when you use {{site.data.keywor
 
 Log data from {{site.data.keyword.cloud_notm}} services, Cloud Foundry (CF) framework, and CF applications is collected automatically and available for analysis through the web UI. This data is collected and forwarded to the **platform logs instance** in the location where the service is available. [Learn more about the services that send logs to the platform service logs instance](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-cloud_services).
 
-### LogDNA agent
+### Logging agent
 {: #data-collection-agent}
 
-When you configure a LogDNA agent to collect and forward data to an {{site.data.keyword.la_full_notm}} instance, data is automatically collected and available for analysis through the web UI. You can configure the LogDNA agent to connect to the logging instance via the public network and the private network. 
+When you configure a logging agent to collect and forward data to an {{site.data.keyword.la_full_notm}} instance, data is automatically collected and available for analysis through the web UI. You can configure the logging agent to connect to the logging instance via the public network and the private network. 
 
 By default, you connect to resources in your account over the {{site.data.keyword.cloud_notm}} public network. To configure an agent to send logs by using a public endpoint, the environment where the agent is running requires internet access to use the public endpoint.
 
-You can enable virtual routing and forwarding (VRF) to move IP routing for your account and all of its resources into a separate routing table. If VRF is enabled, you can then enable {{site.data.keyword.cloud_notm}} service endpoints to connect directly to resources without using the public network. To configure an agent to send logs by using a private endpoint, you must [enable virtual routing and forwarding (VRF)](/docs/account?topic=account-vrf-service-endpoint) for your account. Once the account is VRF and service endpoint enabled, the LogDNA agent can be configured to use the private network by using the [Private Endpoint](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-endpoints#endpoints_api) as the ingestion URL.
+You can enable virtual routing and forwarding (VRF) to move IP routing for your account and all of its resources into a separate routing table. If VRF is enabled, you can then enable {{site.data.keyword.cloud_notm}} service endpoints to connect directly to resources without using the public network. To configure an agent to send logs by using a private endpoint, you must [enable virtual routing and forwarding (VRF)](/docs/account?topic=account-vrf-service-endpoint) for your account. Once the account is VRF and service endpoint enabled, the logging agent can be configured to use the private network by using the [Private Endpoint](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-endpoints#endpoints_api) as the ingestion URL.
 * Private endpoints are not accessible from the public internet. 
 * All traffic is routed to the {{site.data.keyword.cloud_notm}} private network. 
 
@@ -60,7 +60,7 @@ You can enable virtual routing and forwarding (VRF) to move IP routing for your 
 * Log data is hosted on the {{site.data.keyword.cloud_notm}}. The {{site.data.keyword.la_full_notm}} service is operated by LogDNA.
 * Data is collocated in the location where the {{site.data.keyword.la_full_notm}} instance is provisioned. For example, log data for an instance that is provisioned in `US South` is hosted in the `US South` region.
 * Data from {{site.data.keyword.cloud_notm}} services is collected and aggregated in each {{site.data.keyword.cloud_notm}} location where the service is available. 
-* Data forwarded by a LogDNA agent is collected and aggregated in the location where the LogDNA instance configured for an agent is available.
+* Data forwarded by a logging agent is collected and aggregated in the location where the LogDNA instance configured for an agent is available.
 
 
 ### Data encryption
@@ -68,7 +68,7 @@ You can enable virtual routing and forwarding (VRF) to move IP routing for your 
 
 All the data that is hosted in a LogDNA instance is encrypted at rest using **AES 256**.
 
-When a LogDNA agent sends data to a LogDNA instance, data is encrypted in transit over HTTPS.
+When a logging agent sends data to a LogDNA instance, data is encrypted in transit over HTTPS.
 
 When a user requests an export, the data is encrypted during transit, and is also encrypted at rest in {{site.data.keyword.cos_full_notm}} (COS).
 
@@ -138,5 +138,5 @@ You can delete metadata such as views, dashboards, screens, templates, and alert
 
 Deletion of a subset of logs is not supported.
 
-For example, you cannot delete logs from one LogDNA agent. You cannot delete data for a specific service. You cannot delete data that match a particular query.
+For example, you cannot delete logs from one logging agent. You cannot delete data for a specific service. You cannot delete data that match a particular query.
 

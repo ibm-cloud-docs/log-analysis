@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years:  2018, 2020
-lastupdated: "2020-05-11"
+  years:  2018, 2021
+lastupdated: "2021-03-24"
 
 keywords: LogDNA, IBM, Log Analysis, logging, config agent
 
@@ -21,21 +21,21 @@ subcollection: Log-Analysis-with-LogDNA
 {:important: .important}
 {:note: .note}
 
-# Connecting a LogDNA agent to a Linux Ubuntu or Debian
+# Connecting a logging agent to a Linux Ubuntu or Debian
 {: #config_agent_linux}
 
-The LogDNA agent is responsible for collecting and forwarding logs to your {{site.data.keyword.la_full_notm}} instance. After you provision an instance of {{site.data.keyword.la_full}}, you must configure a LogDNA agent for each log source that you want to monitor.
+The logging agent is responsible for collecting and forwarding logs to your {{site.data.keyword.la_full_notm}} instance. After you provision an instance of {{site.data.keyword.la_full}}, you must configure a logging agent for each log source that you want to monitor.
 {:shortdesc}
 
 
-## Configuring a LogDNA agent on Linux Ubuntu or Debian
+## Configuring a logging agent on Linux Ubuntu or Debian
 {: #config_agent_linux_steps}
 
-To configure your Ubuntu server to send logs to your {{site.data.keyword.la_full_notm}} instance, you must install a `logdna-agent`. The LogDNA agent reads log files from */var/log*, and forwards the log data to your LogDNA instance.
+To configure your Ubuntu server to send logs to your {{site.data.keyword.la_full_notm}} instance, you must install a `logdna-agent`. The logging agent reads log files from */var/log*, and forwards the log data to your LogDNA instance.
 
 To configure your Ubuntu server to forward logs to your LogDNA instance, complete the following steps from an Ubuntu terminal:
 
-1. Install the LogDNA agent. Run the following commands:
+1. Install the logging agent. Run the following commands:
 
     ```
     echo "deb https://repo.logdna.com stable main" | sudo tee /etc/apt/sources.list.d/logdna.list
@@ -57,7 +57,7 @@ To configure your Ubuntu server to forward logs to your LogDNA instance, complet
     ```
     {: codeblock}
 
-2. Set the ingestion key that the LogDNA agent must use to forward logs to the {{site.data.keyword.la_full_notm}} instance.  
+2. Set the ingestion key that the logging agent must use to forward logs to the {{site.data.keyword.la_full_notm}} instance.  
 
     ```
     sudo logdna-agent -k INGESTION_KEY
@@ -66,7 +66,7 @@ To configure your Ubuntu server to forward logs to your LogDNA instance, complet
 
     Where INGESTION_KEY contains the ingestion key active for the {{site.data.keyword.la_full_notm}} instance where you are configuring to forward logs.
 
-3. Set the authentication endpoint. The LogDNA agent uses this host to authenticate and get the token to forward logs. 
+3. Set the authentication endpoint. The logging agent uses this host to authenticate and get the token to forward logs. 
 
     <table>
       <caption>Commands by region</caption>
@@ -169,9 +169,9 @@ To configure your Ubuntu server to forward logs to your LogDNA instance, complet
 
     By default, **/var/log** is monitored.
 
-6. Optionally, configure the LogDNA agent to tag your hosts.
+6. Optionally, configure the logging agent to tag your hosts.
 
-7. Start the LogDNA agent.
+7. Start the logging agent.
 
     ```
     sudo /etc/init.d/logdna-agent start

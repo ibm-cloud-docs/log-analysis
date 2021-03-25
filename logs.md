@@ -7,7 +7,7 @@ When a container running on Kubernetes writes its logs to stdout or stderr strea
 
 STDOUT and STDERR logs are available through the `containerd.log` file.
 
-The LogDNA agent collects the following log files from a worker (node):
+The logging agent collects the following log files from a worker (node):
 * `syslog`: This file contain operating system (OS) events. 
 * `auth.log`: This file includes information about the authentication requests that are made to the OS.
 
@@ -18,7 +18,7 @@ The LogDNA agent collects the following log files from a worker (node):
 IBM Cloud Kubernetes Service uses containerd as the container runtime to deploy containers from Docker container images into your cluster. 
  container logs for containerd are available under /var/log/pods.
 
-The LogDNA agent collects the following log files from a container:
+The logging agent collects the following log files from a container:
     container: Information that is logged by a running container.
     
     Paths: Anything that is written to STDOUT or STDERR.
