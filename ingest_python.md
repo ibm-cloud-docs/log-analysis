@@ -121,7 +121,7 @@ Where
 
 The following sample sends 2 log lines with different priorities (level) to an instance of the {{site.data.keyword.la_full_notm}} service: 
 
-1. Save the following content to a file named `python3 send-logs.py`.
+1. Save the following content to a file named `send-logs.py`.
 
     ```
     #!/usr/bin/env python3 
@@ -152,14 +152,14 @@ The following sample sends 2 log lines with different priorities (level) to an i
     log.warning("Sample message 1", {'app': 'sample-app'})
     log.info("Sample message 2", {'app': 'sample-app'})
     ```
-    {: screen}
+    {: codeblock}
 
 2. From the command line, run the following command:
 
     ```
     python3 send-logs.py 
     ```
-    {: codeblock}
+    {: pre}
 
 
 ## Limits when you send logs
