@@ -110,12 +110,12 @@ Log Analysis
     core/shared-responsibilities.md
 
     {: .topicgroup}
-    Logging CLI
+    Log Analysis CLI
         /logdna-cli-plugin/logdna-cli-plugin-logdna-cli
 
     {: .topicgroup}
-    Logging API
-        /apidocs/logdna#endpoint-url
+    Log Analysis API
+        [Log Analysis API](https://test.cloud.ibm.com/apidocs/logdna)
 
     {: .topicgroup}
     High availability and disaster recovery
