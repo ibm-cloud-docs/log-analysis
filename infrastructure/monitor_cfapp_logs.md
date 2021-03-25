@@ -174,13 +174,13 @@ To provision a service instance of {{site.data.keyword.la_full_notm}} through th
 ### Step 2: Provision a syslog port in the logging instance
 {: #monitor_cfapp_logs_drains_step2}
 
-1. [Launch the LogDNA web UI.](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-launch)
+1. [Launch the logging UI.](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-launch)
 
     You launch the web UI within the context of an {{site.data.keyword.la_full_notm}} instance, from the {{site.data.keyword.cloud_notm}} UI. 
 
-2. Provision a port. From the LogDNA web UI, complete the following steps:
+2. Provision a port. From the logging UI, complete the following steps:
 
-    1. Open the log sources panel on the LogDNA web UI. Select the *Install instructions icon*: ![Install instructions icon](../images/logdna_install.png "Install instructions icon")
+    1. Open the log sources panel on the logging UI. Select the *Install instructions icon*: ![Install instructions icon](../images/logdna_install.png "Install instructions icon")
 
     2. Select **View Syslog** &gt; **Syslog**.
 
@@ -265,10 +265,10 @@ Complete the following steps:
     {: screen}
 
 
-### Step 4: Verify that CF app logs are displayed through the LogDNA web UI
+### Step 4: Verify that CF app logs are displayed through the logging UI
 {: #monitor_cfapp_logs_drains_step4}
 
-Launch the LogDNA web UI. Then, search for your CF application logs. For more information, see [Filtering logs](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-view_logs#view_logs_step5).
+Launch the logging UI. Then, search for your CF application logs. For more information, see [Filtering logs](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-view_logs#view_logs_step5).
 
 Try also some of these tasks:
 - [Search logs](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-view_logs#view_logs_step6)

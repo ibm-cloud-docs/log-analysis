@@ -55,7 +55,7 @@ When you create a PagerDuty notification channel, consider the following informa
 - You must manually configure the integration of LogDNA with PagerDuty. See [Integrating with PagerDuty](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-pagerduty).
 - You must provide LogDNA with the PagerDuty API key. 
 
-After you create a view, check the view in the LogDNA web UI. 
+After you create a view, check the view in the logging UI. 
 1. Refresh the browser to see the view listed in the *Views* section. 
 2. Select the view to display it.
 3. Check the data that is available through the view is the one that you expect.
@@ -90,7 +90,7 @@ If you try to define a view and you do not define any of the following body para
 
 When you modify a view, consider the following information:
 - You must specify the name and the view ID of the view. 
-- If you are viewing a view in the LogDNA web UI, the view is not refreshed automatically after you run an API request to modify the view. To refresh the view in the UI, you must navigate to the `Everything` view and back to the view.
+- If you are viewing a view in the logging UI, the view is not refreshed automatically after you run an API request to modify the view. To refresh the view in the UI, you must navigate to the `Everything` view and back to the view.
 
 An API request to modify a view replaces the existing view definition and associated alerts with your request body data. Any properties that are not specified in your PUT request will be removed.
 {: important}
@@ -195,7 +195,7 @@ The following table indicates when the `name` parameter is required:
 
 Specifies the search query that is applied to the view.
 
-Check the query in the LogDNA web UI to validate that the data that is displayed through the view matches the data entry that you plan to monitor through that view.
+Check the query in the logging UI to validate that the data that is displayed through the view matches the data entry that you plan to monitor through that view.
 {: tip}
 
 ### hosts (array of strings)
@@ -203,7 +203,7 @@ Check the query in the LogDNA web UI to validate that the data that is displayed
 
 Specifies the list of services from which you want to view data.
 
-In the LogDNA web UI, the value that is set for **Source** in the **Line identifiers** section corresponds to the hosts value of the service that generates that log.
+In the logging UI, the value that is set for **Source** in the **Line identifiers** section corresponds to the hosts value of the service that generates that log.
 
 For example, to enter multiple hosts, you must separate the hosts with a comma:
 

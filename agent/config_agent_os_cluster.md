@@ -22,32 +22,32 @@ subcollection: Log-Analysis-with-LogDNA
 {:note: .note}
 {:external: target="_blank" .external}
 
-# Connecting a LogDNA agent to an OpenShift cluster
+# Connecting a logging agent to an OpenShift cluster
 {: #config_agent_os_cluster}
 
-The LogDNA agent is responsible for collecting and forwarding logs to your {{site.data.keyword.la_full_notm}} instance. After you provision an instance of {{site.data.keyword.la_full}}, you must configure a LogDNA agent for each log source that you want to monitor.
+The logging agent is responsible for collecting and forwarding logs to your {{site.data.keyword.la_full_notm}} instance. After you provision an instance of {{site.data.keyword.la_full}}, you must configure a logging agent for each log source that you want to monitor.
 {:shortdesc}
 
-To configure your Kubernetes cluster to send logs to your {{site.data.keyword.la_full_notm}} instance, you must install a *LogDNA-agent* pod on each node of your cluster. The LogDNA agent reads log files from the pod where it is installed, and forwards the log data to your LogDNA instance.
+To configure your Kubernetes cluster to send logs to your {{site.data.keyword.la_full_notm}} instance, you must install a *LogDNA-agent* pod on each node of your cluster. The logging agent reads log files from the pod where it is installed, and forwards the log data to your LogDNA instance.
 
 
 
-## Deploy the LogDNA agent by using kubectl commands
+## Deploy the logging agent by using kubectl commands
 {: #config_agent_os_kubectl}
 
 Complete the following steps from the command line to configure your OpenShift cluster to forward logs to your LogDNA instance by using the default YAML file:
 
-You can use an existing YAML file if you are configuring a newer LogDNA agent version. Change the `image` value in your existing YAML file to match the version you are configuring.
+You can use an existing YAML file if you are configuring a newer logging agent version. Change the `image` value in your existing YAML file to match the version you are configuring.
 {: note}
 
 ### Prereq
 {: #config_agent_oscluster_prereq}
 
-To deploy the LogDNA agent in a cluster, you must have a user ID that has the following IAM roles:
+To deploy the logging agent in a cluster, you must have a user ID that has the following IAM roles:
 * **Viewer** platform role, and **Manager** service role to work with that cluster instance.
 * **Viewer** permissions on the resource group where the cluster is available.
 
-To configure the LogDNA agent in the cluster, you need the following CLIs:
+To configure the logging agent in the cluster, you need the following CLIs:
 * The {{site.data.keyword.cloud_notm}} CLI to log in to the {{site.data.keyword.cloud_notm}} by using `ibmcloud` commands, and to manage the cluster by using `ibmcloud ks` commands. [Learn more](/docs/containers?topic=containers-cs_cli_install#cs_cli_install_steps).
 * The Kubernetes CLI to manage the cluster by using `kubectl` commands. [Learn more](/docs/containers?topic=containers-cs_cli_install#kubectl).
 * The Openshift CLI to login to the cluster from the command line and deploy the agent. [Learn more](/docs/openshift?topic=openshift-openshift-cli).
@@ -125,7 +125,7 @@ You must create a Kubernetes secret to store your LogDNA ingestion key for your 
 
     `PROJECT` is the namespace where the LogDNA pods run. Set this value to **ibm-observe**.
 
-    `SERVICEACCOUNT_NAME` is the name of the service account that you use to deploy the LogDNA agent. Set this value to **logdna-agent**. Notice that if you leave the service account name blank, the default service account is used instead of the service account that you created. 
+    `SERVICEACCOUNT_NAME` is the name of the service account that you use to deploy the logging agent. Set this value to **logdna-agent**. Notice that if you leave the service account name blank, the default service account is used instead of the service account that you created. 
 
     ```
     oc create serviceaccount logdna-agent -n ibm-observe
@@ -143,14 +143,14 @@ You must create a Kubernetes secret to store your LogDNA ingestion key for your 
 
     `PROJECT` is the namespace where the LogDNA pods run. Set this value to **ibm-observe**.
 
-    `SERVICEACCOUNT_NAME` is the name of the service account that you use to deploy the LogDNA agent. Set this value to **logdna-agent**.
+    `SERVICEACCOUNT_NAME` is the name of the service account that you use to deploy the logging agent. Set this value to **logdna-agent**.
 
     ```
     oc adm policy add-scc-to-user privileged system:serviceaccount:ibm-observe:logdna-agent
     ```
     {: pre}
 
-5. Add a secret. The secret sets the ingestion key that the LogDNA agent uses to send logs.
+5. Add a secret. The secret sets the ingestion key that the logging agent uses to send logs.
 
     ```
     oc create secret generic logdna-agent-key --from-literal=logdna-agent-key=INGESTION_KEY -n PROJECT 
@@ -161,7 +161,7 @@ You must create a Kubernetes secret to store your LogDNA ingestion key for your 
     
     `PROJECT` is the namespace where the LogDNA pods run. Set this value to **ibm-observe**.
     
-    `INGESTION_KEY` is the ingestion key for the LogDNA instance where you plan to forward and collect the cluster logs. To get the ingestion key, see [Get the ingestion key through the IBM Log Analysis with LogDNA web UI](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-ingestion_key).
+    `INGESTION_KEY` is the ingestion key for the LogDNA instance where you plan to forward and collect the cluster logs. To get the ingestion key, see [Get the ingestion key through the IBM Log Analysis with logging UI](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-ingestion_key).
 
 
 ### Step 3. Enable virtual routing and forwarding (VRF)
@@ -171,17 +171,17 @@ This step is required if you plan to use private endpoints.
 
 You must enable virtual routing and forwarding (VRF) and connectivity to service endpoints for your account. [Learn more](/docs/account?topic=account-vrf-service-endpoint)
 
-### Step 4. Deploy the LogDNA agent in the cluster
+### Step 4. Deploy the logging agent in the cluster
 {: #config_agent_os_cluster_step4}
 
-Create a Kubernetes daemon set to deploy the LogDNA agent on every worker node of your Kubernetes cluster. 
+Create a Kubernetes daemon set to deploy the logging agent on every worker node of your Kubernetes cluster. 
 
-The LogDNA agent collects the following logs:
+The logging agent collects the following logs:
 - STDOUT and STDERR
 - Logs with the extension `*.log`, and extensionsless files that are stored in the `/var/log` directory of your pod. 
 By default, logs are collected from all namespaces, including `kube-system`, and automatically forwarded to the {{site.data.keyword.la_full_notm}} service.
 
-Choose one of the following commands to install and configure the LogDNA agent version 1:
+Choose one of the following commands to install and configure the logging agent version 1:
 
 | Location                  | Command (By using public endpoints)               | 
 |--------------------------|----------------------------------------------------|
@@ -222,12 +222,12 @@ Choose one of the following commands to install and configure the LogDNA agent v
 
 Follow the [forwarding Kubernetes API audit logs steps](/docs/openshift?topic=openshift-health#openshift_logdna_audit) to configure the system to collect and forward events from your Kubernetes API server to {{site.data.keyword.la_full}}.
 
-### Step 6. Verify that the LogDNA agent is deployed successfully
+### Step 6. Verify that the logging agent is deployed successfully
 {: #config_agent_os_cluster_step6}
 
-To verify that the LogDNA agent is deployed successfully, run the following command:
+To verify that the logging agent is deployed successfully, run the following command:
 
-1. Target the project where the LogDNA agent is deployed.
+1. Target the project where the logging agent is deployed.
 
     ```
     oc project ibm-observe
@@ -253,18 +253,18 @@ The deployment is successful when you see one or more LogDNA pods.
 * **The number of LogDNA pods equals the number of worker nodes in your cluster.**
 * All pods must be in a `Running` state.
 * *Stdout* and *stderr* are automatically collected and forwarded from all containers. Log data includes application logs and worker logs.
-* By default, the LogDNA agent pod that runs on a worker collects logs from all namespaces on that node.
+* By default, the logging agent pod that runs on a worker collects logs from all namespaces on that node.
 
-After the agent is configured, you should start seeing logs from this cluster in the LogDNA web UI. If after a period of time you cannot see logs, check the agent logs.
+After the agent is configured, you should start seeing logs from this cluster in the logging UI. If after a period of time you cannot see logs, check the agent logs.
 
-To check the logs that are generated by a LogDNA agent, run the following command:
+To check the logs that are generated by a logging agent, run the following command:
 
 ```
 oc logs logdna-agent-<ID>
 ```
 {: pre}
 
-Where *ID* is the ID for a LogDNA agent pod. 
+Where *ID* is the ID for a logging agent pod. 
 
 For example, 
 
@@ -274,17 +274,17 @@ oc logs logdna-agent-xxxkz
 {: pre}
 
 
-Next, launch the LogDNA web UI to verify that logs from the cluster are available through the UI. See [Navigating to the web UI](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-launch) and [Viewing logs](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-view_logs).
+Next, launch the logging UI to verify that logs from the cluster are available through the UI. See [Navigating to the web UI](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-launch) and [Viewing logs](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-view_logs).
 
 
 
 
 
-## Deploy the LogDNA agent within the context of the cluster
+## Deploy the logging agent within the context of the cluster
 {: #config_agent_os_ob}
 
-When you deploy and connect a LogDNA agent within the context of the cluster, consider the following information:
-* You can launch the LogDNA web UI from the OpenShift cluster UI in {{site.data.keyword.cloud_notm}}. 
+When you deploy and connect a logging agent within the context of the cluster, consider the following information:
+* You can launch the logging UI from the OpenShift cluster UI in {{site.data.keyword.cloud_notm}}. 
 * The view that opens displays logs for your cluster. 
 * The agent is deployed in the `ibm-observe` namespace.
 * A tag that informs about the cluster name is associated to each log line as metadata.
@@ -293,19 +293,19 @@ When you deploy and connect a LogDNA agent within the context of the cluster, co
 * The LogDNA instance can be in a different resource group and {{site.data.keyword.cloud_notm}} region than your cluster.
 
 
-Before you can deploy the LogDNA agent in a cluster, verify that you are assigned the following IAM roles: 
+Before you can deploy the logging agent in a cluster, verify that you are assigned the following IAM roles: 
 * **Viewer** permissions on the resource group where the cluster is available.
 * **Viewer** permissions on the resource group where the LogDNA instance is available.
-* **Viewer** platform role and **Writer** or **Manager** service role for the OpenShift service to configure the LogDNA agent.
-* **Viewer** platform role, and **Reader** service role for the {{site.data.keyword.la_full_notm}} instance to launch the LogDNA UI, and analyze logs through the LogDNA web UI.
+* **Viewer** platform role and **Writer** or **Manager** service role for the OpenShift service to configure the logging agent.
+* **Viewer** platform role, and **Reader** service role for the {{site.data.keyword.la_full_notm}} instance to launch the LogDNA UI, and analyze logs through the logging UI.
 
-The minimum persmissions that a user must have to launch the LogDNA web UI from the cluster UI, and analyze cluster logs are the following:
+The minimum persmissions that a user must have to launch the logging UI from the cluster UI, and analyze cluster logs are the following:
 * **Viewer** permissions on the resource group where the cluster is available.
 * **Viewer** permissions on the resource group where the LogDNA instance is available.
 * **Viewer** platform role and **Reader** service role for the OpenShift service to see the cluster and open the cluster's UI.
-* **Viewer** platform role, and **Reader** service role for the {{site.data.keyword.la_full_notm}} instance to launch the LogDNA web UI, and analyze logs through the LogDNA web UI.
+* **Viewer** platform role, and **Reader** service role for the {{site.data.keyword.la_full_notm}} instance to launch the logging UI, and analyze logs through the logging UI.
 
-### Deploy the LogDNA agent from the OpenShift console
+### Deploy the logging agent from the OpenShift console
 {: #config_agent_os_ob_ui}
 
 
@@ -336,11 +336,11 @@ Complete the following steps from the [OpenShift console](https://cloud.ibm.com/
 6. Click **Connect**.
 
 
-### Deploy the LogDNA agent by using ob commands
+### Deploy the logging agent by using ob commands
 {: #config_agent_os_ob_cli}
 
 
-To configure the LogDNA agent in a cluster, complete the following steps:
+To configure the logging agent in a cluster, complete the following steps:
 
 
 1. [Pre-req] Install the OpenShift observability CLI plug-in (ibmcloud ob).
@@ -388,7 +388,7 @@ To configure the LogDNA agent in a cluster, complete the following steps:
     ```
     {: pre}
 
-3. Deploy the LogDNA agent by using the `ob` CLI. Run the following command:
+3. Deploy the logging agent by using the `ob` CLI. Run the following command:
 
     ```
     ibmcloud ob logging config create --cluster <cluster_name_or_ID> --instance <LogDNA_instance_name_or_ID> [--LogDNA-ingestion-key <Ingestion_Key>] [--private-endpoint]
@@ -401,7 +401,7 @@ To configure the LogDNA agent in a cluster, complete the following steps:
 
     * `<LogDNA_instance_name_or_ID>` is the name or the ID of the LogDNA instance where you want to forward the cluster logs for analysis.
 
-    * `<Ingestion_Key>` is the ingestion key that you want to use to connect the LogDNA agent with the LogDNA instance.
+    * `<Ingestion_Key>` is the ingestion key that you want to use to connect the logging agent with the LogDNA instance.
 
     * `[--private-endpoint]` is optional. Add this option to connect to your LogDNA instance by using private service endpoints.
 

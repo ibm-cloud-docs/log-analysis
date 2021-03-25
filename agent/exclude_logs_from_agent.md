@@ -25,7 +25,7 @@ subcollection: Log-Analysis-with-LogDNA
 # Excluding log files
 {: #exclude_logs_from_agent}
 
-Configure a LogDNA agent to exclude logs that you do not want to monitor through the LogDNA web UI. 
+Configure a logging agent to exclude logs that you do not want to monitor through the logging UI. 
 {:shortdesc}
 
 * You can exclude files that are located in any of the paths that are defined through the **logdir** parameter in a Linux system or the **LOGDNA_EXCLUDE** variable in a Kubernetes cluster. 
@@ -85,7 +85,7 @@ Complete the following steps:
     Where `<cluster_name_or_ID>` is the name or the ID of the cluster.
 
 
-### Step 2. Modify the LogDNA agent yaml file
+### Step 2. Modify the logging agent yaml file
 {: #exclude_logs_from_agent_kube_2}
 
 Complete the following steps:
@@ -141,7 +141,7 @@ To exclude all of the _kube-system_ logs and all non-container logs, enter:
 {: codeblock}
 
 
-### Step 3. Apply the changes to the LogDNA agent
+### Step 3. Apply the changes to the logging agent
 {: #exclude_logs_from_agent_kube_3}
 
 To apply the configuration changes, run the following command:
@@ -170,6 +170,6 @@ Complete the following steps:
     ```
     {: codeblock}
 
-3. [Launch the LogDNA web UI](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-launch), and verify that log entries are not showing in the LogDNA web UI.
+3. [Launch the logging UI](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-launch), and verify that log entries are not showing in the logging UI.
 
 

@@ -24,7 +24,7 @@ subcollection: Log-Analysis-with-LogDNA
 # Excluding log data by using exclusion rules in the web UI
 {: #exclusion_rules}
 
-In an {{site.data.keyword.la_full_notm}} instance, you can configure exclusion rules through the LogDNA web UI to stop logs from counting against your data usage quota and from being stored for search.
+In an {{site.data.keyword.la_full_notm}} instance, you can configure exclusion rules through the logging UI to stop logs from counting against your data usage quota and from being stored for search.
 {:shortdesc}
 
 

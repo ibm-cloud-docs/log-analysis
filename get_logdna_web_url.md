@@ -22,13 +22,13 @@ subcollection: Log-Analysis-with-LogDNA
 {:note: .note}
 {:external: target="_blank" .external}
 
-# Getting the LogDNA web UI URL
+# Getting the logging UI URL
 {: #get_logdna_web_url}
 
-After you provision an instance of the {{site.data.keyword.la_full_notm}} service in the {{site.data.keyword.cloud_notm}}, you can view, monitor, and manage events through the {{site.data.keyword.la_full_notm}} web UI. You can launch the LogDNA web UI from the {{site.data.keyword.cloud_notm}} UI or directly from a browser.
+After you provision an instance of the {{site.data.keyword.la_full_notm}} service in the {{site.data.keyword.cloud_notm}}, you can view, monitor, and manage events through the {{site.data.keyword.la_full_notm}} web UI. You can launch the logging UI from the {{site.data.keyword.cloud_notm}} UI or directly from a browser.
 {:shortdesc}
 
-To get the LogDNA web UI URL, complete the following steps from a terminal:
+To get the logging UI URL, complete the following steps from a terminal:
 
 1. [Pre-requisite] Installation of the {{site.data.keyword.cloud_notm}} CLI. [Learn more](/docs/cli?topic=cli-getting-started).
 

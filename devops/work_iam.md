@@ -165,7 +165,7 @@ As an **admin user** in LogDNA, you must have permissions to run the following a
 Therefore, you need the following policies:
 
 * An IAM policy for the {{site.data.keyword.la_full_notm}} service with the platform role **Editor**. This policy grants permissions to view the service instance details through the command line and in the {{site.data.keyword.cloud_notm}} dashboard.
-* An IAM policy for the {{site.data.keyword.la_full_notm}} service with the service role **Manager**. This policy grants permissions to monitor, filter and search log, and define alerts through the LogDNA web UI.
+* An IAM policy for the {{site.data.keyword.la_full_notm}} service with the service role **Manager**. This policy grants permissions to monitor, filter and search log, and define alerts through the logging UI.
 
 **Note:** As an administrator of the service, when you grant a user these policies, consider doing it within the context of a resource group. An {{site.data.keyword.la_full_notm}} instance is provisioned within the context of a resource group. Therefore, grant access permissions within the context of the resource group.
 
@@ -199,7 +199,7 @@ As a **user**, **auditor**, or **developer**, you might need permissions to run 
 Therefore, you need the following policies:
 
 * An IAM policy for the {{site.data.keyword.la_full_notm}} service with the platform role **Viewer**. This policy grants permissions to view the service instance details through the command line and in the {{site.data.keyword.cloud_notm}} dashboard.
-* An IAM policy for the {{site.data.keyword.la_full_notm}} service with the service role **Reader**. This policy grants permissions to view, filter and search logs through the LogDNA web UI.
+* An IAM policy for the {{site.data.keyword.la_full_notm}} service with the service role **Reader**. This policy grants permissions to view, filter and search logs through the logging UI.
 
 **Note:** As an administrator of the service, when you grant a user these policies, consider doing it within the context of a resource group. An {{site.data.keyword.la_full_notm}} instance is provisioned within the context of a resource group. Therefore, grant access permissions to users within the context of the resource group.
 

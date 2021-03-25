@@ -27,7 +27,7 @@ subcollection: Log-Analysis-with-LogDNA
 # Cloud services that send logs to a custom logging instance
 {: #cloud_services_agent}
 
-List of {{site.data.keyword.cloud}} services that send logs to a custom {{site.data.keyword.la_full_notm}} instance. These services require additional configuration, for example, they may require to configure a LogDNA agent.
+List of {{site.data.keyword.cloud}} services that send logs to a custom {{site.data.keyword.la_full_notm}} instance. These services require additional configuration, for example, they may require to configure a logging agent.
 {:shortdesc}
 
 You can choose the LogDNA instance where you want to collect service logs. You can choose to send logs to the logging instance that has the **platform logs** flag, or to a custom instance in your account.

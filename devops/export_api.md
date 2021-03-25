@@ -112,9 +112,9 @@ Complete the following steps to export logs programmatically:
 ### Step 2. Identify the data to pass through the export parameters
 {: #export_api_step_2}
 
-To verify that the query that you use in the export returns the set of logs that you are looking for, define the search query through the LogDNA web UI. Refine the query until you can only see the logs that you want to export. Then, map the data to the query parameters.
+To verify that the query that you use in the export returns the set of logs that you are looking for, define the search query through the logging UI. Refine the query until you can only see the logs that you want to export. Then, map the data to the query parameters.
 
-Notice that when you copy the query from the LogDNA web UI, you must replace every space with `%20`.
+Notice that when you copy the query from the logging UI, you must replace every space with `%20`.
 {: important}
 
 

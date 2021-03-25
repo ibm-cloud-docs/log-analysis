@@ -42,7 +42,7 @@ On the {{site.data.keyword.cloud_notm}}, to configure cluster-level logging for 
 
 1. Provision an instance of the {{site.data.keyword.la_full_notm}} service. With this step, you configure a centralized log management system where log data is hosted on {{site.data.keyword.cloud_notm}}.
 2. Provision a cluster on the {{site.data.keyword.containerlong_notm}}. Kubernetes v1.9+ clusters are supported.
-3. Configure the LogDNA agent on every worker (node) in a cluster.
+3. Configure the logging agent on every worker (node) in a cluster.
 
 ![LogDNA component overview on the {{site.data.keyword.cloud_notm}}](../images/kube.png "LogDNA component overview on the {{site.data.keyword.cloud_notm}}")
 
@@ -63,7 +63,7 @@ Your {{site.data.keyword.IBM_notm}}ID must have assigned IAM policies for each o
 |--------------------------------------|----------------------------|---------|------------------------------|
 | Resource group **default**           |  Resource group            | Viewer  | This policy is required to allow the user to see service instances in the Default resource group.|
 | {{site.data.keyword.la_full_notm}} service |  Resource group            | Editor  | This policy is required to allow the user to provision and administer the {{site.data.keyword.la_full_notm}} service in the default resource group.   |
-| Kubernetes cluster instance          |  Resource                 | Editor  | This policy is required to configure the secret and the LogDNA agent in the Kubernetes cluster. |
+| Kubernetes cluster instance          |  Resource                 | Editor  | This policy is required to configure the secret and the logging agent in the Kubernetes cluster. |
 {: caption="Table 1. List of IAM policies required to complete the tutorial" caption-side="top"} 
 
 For more information about the {{site.data.keyword.containerlong}} IAM roles, see [User access permissions](/docs/containers?topic=containers-access_reference#access_reference).
@@ -77,7 +77,7 @@ Install the {{site.data.keyword.cloud_notm}} CLI and the Kubernetes CLI plug-in.
 In this tutorial, you configure logging with LogDNA for your {{site.data.keyword.containerlong_notm}} cluster. In particular, you will:
 
 - Provision an {{site.data.keyword.la_full_notm}}. 
-- Configure the LogDNA agent in your cluster to start sending logs to LogDNA. 
+- Configure the logging agent in your cluster to start sending logs to LogDNA. 
 - Open the LogDNA dashboard to find your logs. 
 
 
@@ -128,7 +128,7 @@ Complete the following steps to get the ingestion key:
 ## Step3: Configure your Kubernetes cluster to send logs to your LogDNA instance
 {: #kube_step3}
 
-To configure your Kubernetes cluster to send logs to your {{site.data.keyword.la_full_notm}} instance, you must install a `logdna-agent` pod on each node of your cluster. The LogDNA agent reads log files from the pod where it is installed, and forwards the log data to your LogDNA instance.
+To configure your Kubernetes cluster to send logs to your {{site.data.keyword.la_full_notm}} instance, you must install a `logdna-agent` pod on each node of your cluster. The logging agent reads log files from the pod where it is installed, and forwards the log data to your LogDNA instance.
 
 To configure your Kubernetes cluster in the `us-south` region to forward logs to your LogDNA instance, complete the following steps from the command line:
 
@@ -160,14 +160,14 @@ To configure your Kubernetes cluster in the `us-south` region to forward logs to
     ```
     {: pre}
 
-4. Create a Kubernetes daemon set to deploy the LogDNA agent on every worker node of your Kubernetes cluster. The LogDNA agent collects logs with the extension `*.log` and extensionsless files that are stored in the `/var/log` directory of your pod. By default, logs are collected from all namespaces, including `kube-system`, and automatically forwarded to the {{site.data.keyword.la_full_notm}} service.
+4. Create a Kubernetes daemon set to deploy the logging agent on every worker node of your Kubernetes cluster. The logging agent collects logs with the extension `*.log` and extensionsless files that are stored in the `/var/log` directory of your pod. By default, logs are collected from all namespaces, including `kube-system`, and automatically forwarded to the {{site.data.keyword.la_full_notm}} service.
 
    ```
    kubectl create -f https://assets.us-south.logging.cloud.ibm.com/clients/logdna-agent-ds.yaml
    ```
    {: pre}
 
-5. Verify that the LogDNA agent is deployed successfully. 
+5. Verify that the logging agent is deployed successfully. 
 
    ```
    kubectl get pods

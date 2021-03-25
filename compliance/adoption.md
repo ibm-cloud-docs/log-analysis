@@ -219,7 +219,7 @@ Tags are visible to all members of an account.
 For non-{{site.data.keyword.cloud_notm}} enabled services, you must decide the method to collect and forward logs from a log source that you want to monitor to a logging instance. 
 
 In LogDNA, you can collect and forward data to a logging instance by using any of the following methods:
-* `LogDNA agent`: Logging agent that automatically collects and forwards logs to 1 logging instance in your account.
+* `logging agent`: Logging agent that automatically collects and forwards logs to 1 logging instance in your account.
 * `Syslog`: Logging daemon that collects information across multiple devices and system-services, and forwards logs to 1 logging instance in your account. 
 * `REST API`: API that you can use to send log data and custom metadata to 1 logging instance in your account.
 * `Code libraries`: Libraries that you can use to code ingestion of logs from your apps and services to 1 logging instance. LogDNA offer libraries for Node.JS, Python, Rails, Ruby, Go, iOS, Java, and PHP.
@@ -227,14 +227,14 @@ In LogDNA, you can collect and forward data to a logging instance by using any o
 **For any method that you adopt, you have the flexibility to choose the logging instance where you want to send data per log source. Decide how many instances you might need to collect data from all your log sources based on who can see the data and the type of data that is collected. Avoid sending data to a logging instance that has the platform logs flag enabled.**
 {: tip}
 
-**Whenever a LogDNA agent is available for a type of log source, configure the agent to automatically collect and forward logs from the log source to the logging instance. The agent is the preferred log collection mechanism.** 
+**Whenever a logging agent is available for a type of log source, configure the agent to automatically collect and forward logs from the log source to the logging instance. The agent is the preferred log collection mechanism.** 
 {: tip}
 
-The LogDNA agent authenticates by using the LogDNA Ingestion Key and opens a secure web socket to the {{site.data.keyword.la_full_notm}} ingestion servers; monitors all files with extension `.log`*,  and extensionless files under `/var/log/`; and can be customized to exclude data that you do not want to collect or to include custom paths that you want to monitor, and more.
+The logging agent authenticates by using the LogDNA Ingestion Key and opens a secure web socket to the {{site.data.keyword.la_full_notm}} ingestion servers; monitors all files with extension `.log`*,  and extensionless files under `/var/log/`; and can be customized to exclude data that you do not want to collect or to include custom paths that you want to monitor, and more.
 
-For example, you can configure a Kubernetes cluster and an OpenShift cluster with a LogDNA agent. For more information, see [Configuring a LogDNA agent for a standard Kubernetes cluster](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-config_agent_kube_cluster) and [Configuring a LogDNA agent for an OpenShift Kubernetes cluster](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-config_agent_os_cluster).
+For example, you can configure a Kubernetes cluster and an OpenShift cluster with a logging agent. For more information, see [Configuring a logging agent for a standard Kubernetes cluster](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-config_agent_kube_cluster) and [Configuring a logging agent for an OpenShift Kubernetes cluster](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-config_agent_os_cluster).
 
-To configure a LogDNA agent on Linux Ubuntu or Debian, see [Configuring a LogDNA agent on Linux Ubuntu or Debian](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-config_agent_linux).
+To configure a logging agent on Linux Ubuntu or Debian, see [Configuring a logging agent on Linux Ubuntu or Debian](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-config_agent_linux).
 
 **To send data and attach custom metadata to each log record, you can use the REST API.**
 {: tip}
@@ -341,9 +341,9 @@ You can also configure MFA options such as security questions, using a time-base
 ## Define the network strategy
 {: #adoption_network}
 
-In LogDNA, you can use the LogDNA agent to collect and forward logs to your {{site.data.keyword.la_full_notm}} instance. After you provision an instance of {{site.data.keyword.la_full}}, you must configure a LogDNA agent for each log source that you want to monitor. 
+In LogDNA, you can use the logging agent to collect and forward logs to your {{site.data.keyword.la_full_notm}} instance. After you provision an instance of {{site.data.keyword.la_full}}, you must configure a logging agent for each log source that you want to monitor. 
 
-You can configure the LogDNA agent to connect to the logging instance through the public network or through the private network. 
+You can configure the logging agent to connect to the logging instance through the public network or through the private network. 
 * By default, the agent connects through the public network.
 * To connect over a private network, you must have access to classic infrastructure and [enable virtual routing and forwarding (VRF)](/docs/account?topic=account-vrf-service-endpoint) and connectivity to service endpoints for your account.
 
@@ -354,7 +354,7 @@ Some factors that you must consider when you must decide which network to choose
 * Security on production workloads
 * Industry compliance regulations
 
-**If you require no access to Internet to connect to {{site.data.keyword.cloud_notm}} services and isolated connectivity for workloads in your account, connect the LogDNA agent over the private network.**
+**If you require no access to Internet to connect to {{site.data.keyword.cloud_notm}} services and isolated connectivity for workloads in your account, connect the logging agent over the private network.**
 {: tip}
 
 Consider the following information when you work with private endpoints:
@@ -364,13 +364,13 @@ Consider the following information when you work with private endpoints:
 
 Consider the following limitations:
 * Ingestion endpoints of type `syslog-tcp (syslog-a)` and `syslog-udp (syslog-u)` are not currently supported on the Cloud Service Endpoint (CSE) network. 
-* The LogDNA web UI is not currently supported on the CSE network.
+* The logging UI is not currently supported on the CSE network.
 
 
-**If you have an additional firewall set up, or you have customized the firewall settings in your {{site.data.keyword.cloud_notm}} infrastructure, you must allow outgoing network traffic to the {{site.data.keyword.la_full_notm}} service on TCP port 443 and TCP port 80 in your firewall. The API endpoint is required for LogDNA agent authentication.**
+**If you have an additional firewall set up, or you have customized the firewall settings in your {{site.data.keyword.cloud_notm}} infrastructure, you must allow outgoing network traffic to the {{site.data.keyword.la_full_notm}} service on TCP port 443 and TCP port 80 in your firewall. The API endpoint is required for logging agent authentication.**
 {: tip}
 
-If you have an additional firewall set up, or you have customized the firewall settings in your {{site.data.keyword.cloud_notm}} infrastructure, and you want to configure the LogDNA agent to connect to the logging instance through the private network, open a support ticket to request the private IP addresses that you must enable in your firewall. For information about opening an IBM support ticket, see [Getting support](/docs/get-support).
+If you have an additional firewall set up, or you have customized the firewall settings in your {{site.data.keyword.cloud_notm}} infrastructure, and you want to configure the logging agent to connect to the logging instance through the private network, open a support ticket to request the private IP addresses that you must enable in your firewall. For information about opening an IBM support ticket, see [Getting support](/docs/get-support).
 {: tip}
 
 
@@ -441,7 +441,7 @@ There are 2 types of data that you should consider archiving:
 ### Backup the resource configurations of your LogDNA instance
 {: #adoption_archive_ui}
 
-In the LogDNA web UI, you can define custom views, dashboards, parsing templates, screens, and exclusion rules that you can use to view and analyze data.
+In the logging UI, you can define custom views, dashboards, parsing templates, screens, and exclusion rules that you can use to view and analyze data.
 
 To reuse resource definitions that you define in your LogDNA instance, you can export these resources from an {{site.data.keyword.la_full_notm}} instance as a JSON file. Then, you can import the definitions into other LogDNA instances. For example, you can reuse your LogDNA resources across different environments for your stage, pre-production, and production logging instances. [Learn more](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-reuse_resource_definitions).
 
@@ -581,7 +581,7 @@ If you add PII information in the name of a bucket, you might be disclosing sens
 {: #adoption_archive_3}
 
 To configure archiving, you need the following IAM policies:
-* An IAM policy with minimum platform role **Viewer** and service role **Manager** for the {{site.data.keyword.la_full_notm}} service: This policy is required to access the LogDNA web UI, and configure archiving of the LogDNA instance.
+* An IAM policy with minimum platform role **Viewer** and service role **Manager** for the {{site.data.keyword.la_full_notm}} service: This policy is required to access the logging UI, and configure archiving of the LogDNA instance.
 * An IAM policy with minimum platform role **Administrator** and service role **Manager**  for the COS service: The administrator role is required to define the service ID, with its associated API key, that is used by the {{site.data.keyword.la_full_notm}} instance to authenticate and access the {{site.data.keyword.cos_full_notm}} instance. The manager role is required to create and configure a bucket.
 
 You also need a service ID. A service ID identifies a service similar to how a user ID identifies a user. Service IDs are not tied to a specific user. If the user that creates the service ID leaves your organization and is deleted from the account, the service ID remains. The {{site.data.keyword.la_full_notm}} service uses an API key that is associated to a service ID that you define on your COS instance to authenticate and write files to the COS bucket.

@@ -23,7 +23,7 @@ subcollection: Log-Analysis-with-LogDNA
 {:external: target="_blank" .external}
 
  
-# Exporting logs through the LogDNA web UI
+# Exporting logs through the logging UI
 {: #export}
 
 You can export log data in JSONL format from an {{site.data.keyword.la_full_notm}} instance graphically through the web UI.
@@ -50,9 +50,9 @@ Consider the following information when you export log data:
 
 You can create a custom view and then export data for a period of time.
 
-Complete the following steps to export log data through the LogDNA web UI:
+Complete the following steps to export log data through the logging UI:
 
-1. [Launch the LogDNA web UI](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-launch).
+1. [Launch the logging UI](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-launch).
 2. Click the **Views** icon ![Views icon](images/views.png "Views icon").
 3. Select a view.
 4. Select the view name. 
@@ -67,9 +67,9 @@ Complete the following steps to export log data through the LogDNA web UI:
 
 You can export data from a custom search.
 
-Complete the following steps to export data through the LogDNA web UI:
+Complete the following steps to export data through the logging UI:
 
-1. [Launch the LogDNA web UI](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-launch).
+1. [Launch the logging UI](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-launch).
 2. Click the **Views** icon ![Views icon](images/views.png "Views icon").
 3. Select **Everything**.
 4. Apply filters and search criteria until you see the entries that you want to export.

@@ -132,10 +132,10 @@ The following table shows the private ingestion endpoints:
 
 
 
-## LogDNA web UI endpoints
+## logging UI endpoints
 {: #endpoints_logdna_ui}
 
-The following table shows the LogDNA web UI endpoints:
+The following table shows the logging UI endpoints:
 
 | Region                   |  Public Endpoint                                   |
 |--------------------------|----------------------------------------------------|
@@ -148,7 +148,7 @@ The following table shows the LogDNA web UI endpoints:
 | `Seoul (kr-seo)`         | `https://app.kr-seo.logging.cloud.ibm.com`         |
 | `Sydney (au-syd)`        | `https://app.au-syd.logging.cloud.ibm.com`         |
 | `Washington (us-east)`   | `https://app.us-east.logging.cloud.ibm.com`         |
-{: caption="Table 5. Lists of LogDNA web UI endpoints" caption-side="top"}
+{: caption="Table 5. Lists of logging UI endpoints" caption-side="top"}
 
 
 

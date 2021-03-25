@@ -66,7 +66,7 @@ To provision an instance from the Observability dashboard in the {{site.data.key
 
 After you provision an instance, the *Logging* dashboard opens. 
 
-Next, configure a log source by adding a LogDNA agent. This agent is responsible for collecting and forwarding logs to your instance. 
+Next, configure a log source by adding a logging agent. This agent is responsible for collecting and forwarding logs to your instance. 
 
 
 
@@ -105,7 +105,7 @@ To provision an instance of {{site.data.keyword.la_full_notm}} through the {{sit
 
 After you provision an instance, the *Logging* dashboard opens. 
 
-Next, configure a log source by adding a LogDNA agent. This agent is responsible for collecting and forwarding logs to your instance. 
+Next, configure a log source by adding a logging agent. This agent is responsible for collecting and forwarding logs to your instance. 
 
 
 

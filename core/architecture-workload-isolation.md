@@ -41,15 +41,15 @@ Review the following sample architecture for {{site.data.keyword.la_full_notm}},
 
 The API server component provides a web and an API interface to the LogDNA service.
 
-The collector component ingest data that LogDNA agents forward to the LogDNA service.
+The collector component ingest data that logging agents forward to the LogDNA service.
 
 The datastore component stores data, alerts, and user metadata.
 
-You can use LogDNA agents to monitor and collect logs from hosts such as a Kubernetes cluster or a Linux system. A LogDNA agent connects to 1 LogDNA instance. The agent forwards data to the instance that is connected. 
+You can use logging agents to monitor and collect logs from hosts such as a Kubernetes cluster or a Linux system. A logging agent connects to 1 LogDNA instance. The agent forwards data to the instance that is connected. 
 
 Platform logs are collected automatically for enabled-LogDNA services in each region. The data is forwarded to the {{site.data.keyword.la_full_notm}} service instance that is enabled to collect and monitor platform metrics in a region.
 
-The LogDNA web UI is the front-end component where users can monitor and manage logs from hosts through dashboards, views, screens, and alerts.
+The logging UI is the front-end component where users can monitor and manage logs from hosts through dashboards, views, screens, and alerts.
 
 
 

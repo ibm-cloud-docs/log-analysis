@@ -45,7 +45,7 @@ To complete the steps in this tutorial, your {{site.data.keyword.IBM_notm}}ID mu
 |--------------------------------------|----------------------------|---------|-----------|------------------------------|
 | Resource group **Default**           |  Resource group            | Viewer  | us-south  | This policy is required to allow the user to see service instances in the Default resource group.    |
 | {{site.data.keyword.la_full_notm}} service |  Resource group            | Editor </br>Manager  | us-south  | This policy is required to allow the user to reset the ingestion key.   |
-| Kubernetes cluster instance          |  Resource                  | Editor  | us-south  | This policy is required to delete and configure the secret and the LogDNA agent in the Kubernetes cluster. |
+| Kubernetes cluster instance          |  Resource                  | Editor  | us-south  | This policy is required to delete and configure the secret and the logging agent in the Kubernetes cluster. |
 {: caption="Table 1. List of IAM policies required to complete the tutorial" caption-side="top"} 
 
 For more information about the {{site.data.keyword.containerlong}} IAM roles, see [User access permissions](/docs/containers?topic=containers-access_reference#access_reference).
@@ -105,14 +105,14 @@ Complete the following steps:
     ```
     {: codeblock}
 
-4. Remove the LogDNA agent on every worker(node) of your Kubernetes cluster. The LogDNA agent is responsible for collecting and forwarding your logs. Run the following command:
+4. Remove the logging agent on every worker(node) of your Kubernetes cluster. The logging agent is responsible for collecting and forwarding your logs. Run the following command:
 
     ```
     kubectl delete daemonset logdna-agent -n ibm-observe
     ```
     {: codeblock}
 
-5. Verify that the LogDNA agent is deleted successfully. Run the following command:
+5. Verify that the logging agent is deleted successfully. Run the following command:
 
     ```
     kubectl get pods -n ibm-observe
@@ -156,18 +156,18 @@ To configure your Kubernetes cluster in the `us-south` region to forward logs to
 
     The Kubernetes secret contains the LogDNA ingestion key. The LogDNA ingestion key is used to authenticate the logging agent with the {{site.data.keyword.la_full_notm}} service. It is used to open a secure web socket to the ingestion server on the logging back-end system.
 
-4. Configure the LogDNA agent on every worker(node) of your Kubernetes cluster. Run the following command:
+4. Configure the logging agent on every worker(node) of your Kubernetes cluster. Run the following command:
 
     ```
     kubectl create -f https://assets.us-south.logging.cloud.ibm.com/clients/logdna-agent-ds.yaml -n ibm-observe
     ```
     {: codeblock}
 
-    The LogDNA agent is responsible for collecting and forwarding your logs.
+    The logging agent is responsible for collecting and forwarding your logs.
 
     The agent collects automatically logs with extension *.log and extensionless files that are located under /var/log. By default, logs are collected from all namespaces, including the kube-system.
 
-5. Verify that the LogDNA agent is created successfully and its status. Run the following command:
+5. Verify that the logging agent is created successfully and its status. Run the following command:
 
     ```
     kubectl get pods -n ibm-observe
@@ -175,7 +175,7 @@ To configure your Kubernetes cluster in the `us-south` region to forward logs to
     {: codeblock}
 
 
-## Step 4: Launch the LogDNA web UI
+## Step 4: Launch the logging UI
 {: #kube_reset_step4}
 
 You launch the web UI from the {{site.data.keyword.cloud_notm}} Observability dashboard. 
@@ -192,13 +192,13 @@ Complete the following steps to launch the web UI:
 
 3. Select one instance. Then, click **View logs**.
 
-    The LogDNA web UI opens and displays your cluster logs.
+    The logging UI opens and displays your cluster logs.
 
 
 ## Step 5: View your logs
 {: #kube_reset_step5}
 
-From the LogDNA web UI, you can view your logs as they pass through the system. You view logs by using log tailing. 
+From the logging UI, you can view your logs as they pass through the system. You view logs by using log tailing. 
 
 With the **Lite** service plan, you can only tail your latest logs.
 {: note}

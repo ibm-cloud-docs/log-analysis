@@ -25,7 +25,7 @@ subcollection: Log-Analysis-with-LogDNA
 # Managing service keys
 {: #service_keys}
 
-In an {{site.data.keyword.la_full_notm}} instance, you can create, delete, and view service keys through the LogDNA web UI. A service key is an API key that you must use to validate your credentials with the auditing instance when you export data programmatically.
+In an {{site.data.keyword.la_full_notm}} instance, you can create, delete, and view service keys through the logging UI. A service key is an API key that you must use to validate your credentials with the auditing instance when you export data programmatically.
 {:shortdesc}
 
 
@@ -35,7 +35,7 @@ In an {{site.data.keyword.la_full_notm}} instance, you can create, delete, and v
 You must have **manager** role for the {{site.data.keyword.la_full_notm}} service to complete this step.
 {: important} 
 
-You can only generate a service Key through the LogDNA web UI.
+You can only generate a service Key through the logging UI.
 {: important}
     
 Complete the following steps to create a service key:
@@ -58,7 +58,7 @@ Complete the following steps to create a service key:
 You must have **manager** role for the {{site.data.keyword.la_full_notm}} service to complete this step.
 {: important} 
 
-You can only delete a service Key through the LogDNA web UI.
+You can only delete a service Key through the logging UI.
 {: important}
 
 Complete the following steps to delete a service key:

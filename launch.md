@@ -25,14 +25,14 @@ subcollection: Log-Analysis-with-LogDNA
 # Navigating to the web UI
 {: #launch}
 
-After you provision an instance of the {{site.data.keyword.la_full_notm}} service in the {{site.data.keyword.cloud_notm}}, and configure a LogDNA agent for a log data source, you can view, monitor, and manage logs through the {{site.data.keyword.la_full_notm}} web UI.
+After you provision an instance of the {{site.data.keyword.la_full_notm}} service in the {{site.data.keyword.cloud_notm}}, and configure a logging agent for a log data source, you can view, monitor, and manage logs through the {{site.data.keyword.la_full_notm}} web UI.
 {:shortdesc}
 
 
 ## Granting IAM policies to a user to launch the web UI
 {: #launch_iam}
 
-Users in your account need permissions to launch the LogDNA web UI.
+Users in your account need permissions to launch the logging UI.
 
 You must be an administrator of the {{site.data.keyword.la_full_notm}} service, an administrator of an {{site.data.keyword.la_full_notm}} instance, or have account IAM permissions to grant other users policies.
 {: note}
@@ -48,10 +48,10 @@ The following table lists the minimum policies that a user must have to be able 
 For more information on how to configure these policies for a user, see [Granting permissions to a user to view logs](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-work_iam#user_logdna).
 
 
-## Launching the LogDNA web UI through the {{site.data.keyword.cloud_notm}} UI
+## Launching the logging UI through the {{site.data.keyword.cloud_notm}} UI
 {: #launch_cloud_ui}
 
-You launch the LogDNA web UI within the context of an {{site.data.keyword.la_full_notm}} instance, from the {{site.data.keyword.cloud_notm}} UI. 
+You launch the logging UI within the context of an {{site.data.keyword.la_full_notm}} instance, from the {{site.data.keyword.cloud_notm}} UI. 
 
 Complete the following steps to launch the web UI:
 
@@ -68,16 +68,16 @@ Complete the following steps to launch the web UI:
 The Web UI opens.
 
 
-## Launching the LogDNA web UI from a browser
+## Launching the logging UI from a browser
 {: #launch_browser}
 
-You can launch the LogDNA web UI directly from a browser. 
+You can launch the logging UI directly from a browser. 
 
 Complete the following steps:
 
-1. [Get the LogDNA web UI URL](/docs/Activity-Tracker-with-LogDNA?topic=Activity-Tracker-with-LogDNA-get_logdna_web_url).
+1. [Get the logging UI URL](/docs/Activity-Tracker-with-LogDNA?topic=Activity-Tracker-with-LogDNA-get_logdna_web_url).
 
-    For example, a LogDNA web UI looks like `https://app.eu-gb.logging.cloud.ibm.com/ext/ibm-sso/xxxxxxxxxx`.
+    For example, a logging UI looks like `https://app.eu-gb.logging.cloud.ibm.com/ext/ibm-sso/xxxxxxxxxx`.
 
 2. Enter the dashboard URL in a browser and log in to {{site.data.keyword.cloud_notm}.
 
@@ -90,7 +90,7 @@ Complete the following steps:
 
     Where
 
-    * `<ENDPOINT>` represents the dashboard URL in the region where the instance is available. See [LogDNA web UI endpoints](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-endpoints#endpoints_logdna_ui).
+    * `<ENDPOINT>` represents the dashboard URL in the region where the instance is available. See [logging UI endpoints](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-endpoints#endpoints_logdna_ui).
 
     * `<QUERY>` represents the search query that is applied for the view, for example, `q=table%3Amangle%20reason%3A%27refresh%20timer%27`. 
 

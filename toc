@@ -54,7 +54,7 @@ Log Analysis
         devops/reuse_resource_definitions.md
 
     {: .topicgroup}
-    LogDNA agent
+    Logging agent
         agent/logdna_agent_image.md
         agent/config_agent_kube_cluster.md
         agent/config_agent_os_cluster.md
@@ -71,14 +71,14 @@ Log Analysis
         core/data-security.md
 
     {: .topicgroup}
-    Export logs
+    Exporting logs
         devops/export_config.md
         devops/service_keys.md
         devops/export.md
         devops/export_api.md
 
     {: .topicgroup}
-    LogDNA web UI
+    Logging UI
         launch.md
         config.md
         get_logdna_web_url.md
@@ -88,7 +88,7 @@ Log Analysis
         core/at_events.md
 
     {: .topicgroup}
-    Send logs
+    Sending logs
         ingest.md
         ingest_python.md
 
@@ -108,11 +108,11 @@ Log Analysis
     core/shared-responsibilities.md
     
     {: .topicgroup}
-    Log Analysis CLI
+    Logging CLI
         /logdna-cli-plugin/logdna-cli-plugin-logdna-cli
 
     {: .topicgroup}
-    Log Analysis API
+    Logging API
         [Ingestion API](https://cloud.ibm.com/apidocs/logdna?code=python#ingest)
         [Export API](https://cloud.ibm.com/apidocs/logdna?code=python#export)
         [Configuration API](https://cloud.ibm.com/apidocs/logdna?code=python#create-view)

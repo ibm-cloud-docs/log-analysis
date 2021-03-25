@@ -53,7 +53,7 @@ You archive logs from an {{site.data.keyword.la_full_notm}} instance into a buck
 
     `YYYY` represents the year; `MM` represents the month; and `DD` represents the day.
 
-    `<accountID>` represents the LogDNA account ID, that is, the ID that showd in the [LogDNA web UI URL](/docs/Activity-Tracker-with-LogDNA?topic=Activity-Tracker-with-LogDNA-get_logdna_web_url).
+    `<accountID>` represents the LogDNA account ID, that is, the ID that showd in the [logging UI URL](/docs/Activity-Tracker-with-LogDNA?topic=Activity-Tracker-with-LogDNA-get_logdna_web_url).
     
     `HH` represents hours in 24 format. 
 

@@ -21,15 +21,15 @@ subcollection: Log-Analysis-with-LogDNA
 {:important: .important}
 {:note: .note}
 
-# Ensuring LogDNA agents are kept current
+# Ensuring logging agents are kept current
 {: #logdna_agent_status}
 
-Ensure that any LogDNA agents that you have deployed are kept current 
-Configure a LogDNA agent to associate tags to all log records that it collects so that you can identify the agent's data quicker in the LogDNA web UI.
+Ensure that any logging agents that you have deployed are kept current 
+Configure a logging agent to associate tags to all log records that it collects so that you can identify the agent's data quicker in the logging UI.
 {:shortdesc}
 
 
-## Updating a LogDNA agent
+## Updating a logging agent
 
 ## Image vulnerabilities
 

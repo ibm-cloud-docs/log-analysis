@@ -52,11 +52,11 @@ First, you must [check whether you have enabled **Platform logs** in the locatio
 Then, check the [Cloud services by location](/docs/Activity-Tracker-with-LogDNA?topic=Activity-Tracker-with-LogDNA-event_types#event_types_location) documentation to find out the location where the logs are available for analysis.  
 
 
-## Can I import archived data back into the LogDNA web UI?
+## Can I import archived data back into the logging UI?
 {: #faq_5}
 {: faq}
 
-You cannot import archived data into the LogDNA web UI. 
+You cannot import archived data into the logging UI. 
 
 ## How do I configure archiving for my instance?
 {: #faq_6}
@@ -64,20 +64,20 @@ You cannot import archived data into the LogDNA web UI.
 
 To configure archiving see [Archiving events to IBM Cloud Object Storage](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-archiving).
 
-## How do I access the LogDNA web UI? I cannot see the logging instance in the Observability page.
+## How do I access the logging UI? I cannot see the logging instance in the Observability page.
 {: #faq_7}
 {: faq}
 
-To lauch the LogDNA web UI, complete the following steps:
+To lauch the logging UI, complete the following steps:
 1. Check that you have IAM permissions to view the logging instances through the *Logging* dashboard. You must have **viewer** platform role permissions for the {{site.data.keyword.la_full_notm}} service. [Learn more about managing IAM policies and access groups](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-work_iam)
 .
-2. [Launch the LogDNA web UI](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-launch).
+2. [Launch the logging UI](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-launch).
 
 ## How do I reset an ingestion key?
 {: #faq_8}
 {: faq}
 
-An ingestion key can only be reset or new ones created in the LogDNA web UI. You can have a maximum of 10 ingestion keys active at the same time in a LogDNA instance.
+An ingestion key can only be reset or new ones created in the logging UI. You can have a maximum of 10 ingestion keys active at the same time in a LogDNA instance.
 
 [Learn more](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-ingestion_key#reset).
 
