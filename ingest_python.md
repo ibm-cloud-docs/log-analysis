@@ -123,43 +123,43 @@ The following sample sends 2 log lines with different priorities (level) to an i
 
 1. Save the following content to a file named `python3 send-logs.py`.
 
-```
-#!/usr/bin/env python3 
-import os 
-import logging
+    ```
+    #!/usr/bin/env python3 
+    import os 
+    import logging
   
-from logdna import LogDNAHandler 
+    from logdna import LogDNAHandler 
   
-apiKey = '<INGESTION-KEY>' 
+    apiKey = '<INGESTION-KEY>' 
 
-log = logging.getLogger('logdna')
-log.setLevel(logging.INFO)
+    log = logging.getLogger('logdna')
+    log.setLevel(logging.INFO)
 
-options = {
-  'hostname': 'MyHostName',
-  'ip': '10.0.1.1',
-  'mac': 'C0:FF:EE:C0:FF:EE',
-  'env': 'Dallas',
-  'level': 'Info',
-  'index_meta': True,
-  'url': 'https://logs.us-south.logging.cloud.ibm.com/logs/ingest'
-}
+    options = {
+      'hostname': 'MyHostName',
+      'ip': '10.0.1.1',
+      'mac': 'C0:FF:EE:C0:FF:EE',
+      'env': 'Dallas',
+      'level': 'Info',
+      'index_meta': True,
+      'url': 'https://logs.us-south.logging.cloud.ibm.com/logs/ingest'
+    }
 
-test = LogDNAHandler(apiKey, options)
+    test = LogDNAHandler(apiKey, options)
 
-log.addHandler(test)
+    log.addHandler(test)
 
-log.warning("Sample message 1", {'app': 'sample-app'})
-log.info("Sample message 2", {'app': 'sample-app'})
-```
-{: screen}
+    log.warning("Sample message 1", {'app': 'sample-app'})
+    log.info("Sample message 2", {'app': 'sample-app'})
+    ```
+    {: screen}
 
 2. From the command line, run the following command:
 
-```
-python3 send-logs.py 
-```
-{: codeblock}
+    ```
+    python3 send-logs.py 
+    ```
+    {: codeblock}
 
 
 ## Limits when you send logs
