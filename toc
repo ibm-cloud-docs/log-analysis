@@ -106,6 +106,10 @@ Log Analysis
     regions.md
     service_plans.md
     core/shared-responsibilities.md
+    
+    {: .topicgroup}
+    Log Analysis CLI
+        /logdna-cli-plugin/logdna-cli-plugin-logdna-cli
 
     {: .topicgroup}
     Log Analysis API
