@@ -106,6 +106,12 @@ Log Analysis
     regions.md
     service_plans.md
     core/shared-responsibilities.md
+
+    {: .topicgroup}
+    Log Analysis API
+        [Ingestion API](https://cloud.ibm.com/apidocs/logdna?code=python#ingest)
+        [Export API](https://cloud.ibm.com/apidocs/logdna?code=python#export)
+        [Configuration API](https://cloud.ibm.com/apidocs/logdna?code=python#create-view)
     {: .navgroup-end}
 
     {: .navgroup id="help"}
