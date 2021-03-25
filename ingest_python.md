@@ -154,7 +154,6 @@ log.info("Sample message 2", {'app': 'sample-app'})
 ```
 {: screen}
 
-
 2. From the command line, run the following command:
 
 ```
