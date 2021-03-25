@@ -115,7 +115,9 @@ Log Analysis
 
     {: .topicgroup}
     Log Analysis API
-        [Log Analysis API](https://test.cloud.ibm.com/apidocs/logdna)
+        [Ingestion API](https://test.cloud.ibm.com/apidocs/logdna?code=python#ingest)
+        [Export API](https://test.cloud.ibm.com/apidocs/logdna?code=python#export)
+        [Configuration API](https://test.cloud.ibm.com/apidocs/logdna?code=python#create-view)
 
     {: .topicgroup}
     High availability and disaster recovery
