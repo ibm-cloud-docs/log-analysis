@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years:  2018, 2020
-lastupdated: "2020-06-22"
+  years:  2018, 2021
+lastupdated: "2021-03-28"
 
 keywords: LogDNA, IBM, Log Analysis, logging, config agent
 
@@ -24,7 +24,7 @@ subcollection: Log-Analysis-with-LogDNA
 # Excluding log data by using exclusion rules in the web UI
 {: #exclusion_rules}
 
-In an {{site.data.keyword.la_full_notm}} instance, you can configure exclusion rules through the logging UI to stop logs from counting against your data usage quota and from being stored for search.
+In an {{site.data.keyword.la_full_notm}} instance, you can configure exclusion rules through the logging web UI to stop logs from counting against your data usage quota and from being stored for search.
 {:shortdesc}
 
 
@@ -32,7 +32,7 @@ Complete the following steps to define an exclusion rule:
 
 1. [Launch the {{site.data.keyword.la_full_notm}} web UI](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-view_logs#view_logs_step2).
 
-2. Select the **Settings** icon ![Configuration icon](images/admin.png "Admin icon"). Then select **Usage** &gt; **Exclusion Rules**. 
+2. Select the **Settings** icon ![Configuration icon](../images/admin.png "Configuration icon"). Then select **Usage** &gt; **Exclusion Rules**. 
 
 3. Select **Add Rule**. The **Create Rule** section opens.
 
@@ -60,11 +60,11 @@ You will configure the rule so that you are able to see all log data through vie
 
 Complete the following steps to define the exclusion rule:
 
-Prereq: You must have a cluster configured to forward logs to a LogDNA instance. [Learn more](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-config_agent_kube_cluster).
+Prereq: You must have a cluster configured to forward logs to a logging instance. [Learn more](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-config_agent_kube_cluster).
 
 1. [Launch the {{site.data.keyword.la_full_notm}} web UI](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-view_logs#view_logs_step2).
 
-2. Select the **Settings** icon ![Configuration icon](images/admin.png "Admin icon"). Then select **Usage** &gt; **Exclusion Rules**. 
+2. Select the **Settings** icon ![Configuration icon](../images/admin.png "Configuration icon"). Then select **Usage** &gt; **Exclusion Rules**. 
 
 3. Select **Add Rule**. The **Create Rule** section opens.
 
@@ -92,11 +92,11 @@ You will configure the rule so that you are not able to see excluded log data th
 
 Complete the following steps to define the exclusion rule:
 
-Prereq: You must have a cluster configured to forward logs to a LogDNA instance. [Learn more](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-config_agent_kube_cluster).
+Prereq: You must have a cluster configured to forward logs to a logging instance. [Learn more](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-config_agent_kube_cluster).
 
 1. [Launch the {{site.data.keyword.la_full_notm}} web UI](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-view_logs#view_logs_step2).
 
-2. Select the **Settings** icon ![Configuration icon](images/admin.png "Admin icon"). Then select **Usage** &gt; **Exclusion Rules**. 
+2. Select the **Settings** icon ![Configuration icon](../images/admin.png "Configuration icon"). Then select **Usage** &gt; **Exclusion Rules**. 
 
 3. Select **Add Rule**. The **Create Rule** section opens.
 

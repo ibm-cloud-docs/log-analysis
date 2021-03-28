@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2021
-lastupdated: "2021-03-24"
+lastupdated: "2021-03-28"
 
 keywords: LogDNA, IBM, Log Analysis, logging, export logs
 
@@ -43,17 +43,17 @@ Consider the following information when you export log data:
 
 * Check that your user ID has permissions to launch the web UI, view or manage service keys, and view logs. [Learn more](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-view_logs).
 
-* Check that the LogDNA instance has the export feature enabled. [Learn more](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-export_config).
+* Check that the logging instance has the export feature enabled. [Learn more](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-export_config).
 
 ## Exporting logs from the Web UI
 {: #export_ui_view}
 
 You can create a custom view and then export data for a period of time.
 
-Complete the following steps to export log data through the logging UI:
+Complete the following steps to export log data through the logging web UI:
 
-1. [Launch the logging UI](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-launch).
-2. Click the **Views** icon ![Views icon](images/views.png "Views icon").
+1. [Launch the logging web UI](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-launch).
+2. Click the **Views** icon ![Views icon](../images/views.png "Views icon").
 3. Select a view.
 4. Select the view name. 
 5. Select **Export lines**. A new window opens.
@@ -67,10 +67,10 @@ Complete the following steps to export log data through the logging UI:
 
 You can export data from a custom search.
 
-Complete the following steps to export data through the logging UI:
+Complete the following steps to export data through the logging web UI:
 
-1. [Launch the logging UI](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-launch).
-2. Click the **Views** icon ![Views icon](images/views.png "Views icon").
+1. [Launch the logging web UI](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-launch).
+2. Click the **Views** icon ![Views icon](../images/views.png "Views icon").
 3. Select **Everything**.
 4. Apply filters and search criteria until you see the entries that you want to export.
 4. Click **Unsaved View**.

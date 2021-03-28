@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years:  2018, 2020
-lastupdated: "2020-07-01"
+  years:  2018, 2021
+lastupdated: "2021-03-28"
 
 keywords: LogDNA, IBM, Log Analysis, logging, service keys
 
@@ -25,7 +25,7 @@ subcollection: Log-Analysis-with-LogDNA
 # Managing service keys
 {: #service_keys}
 
-In an {{site.data.keyword.la_full_notm}} instance, you can create, delete, and view service keys through the logging UI. A service key is an API key that you must use to validate your credentials with the auditing instance when you export data programmatically.
+In an {{site.data.keyword.la_full_notm}} instance, you can create, delete, and view service keys through the logging web UI. A service key is an API key that you must use to validate your credentials with the auditing instance when you export data programmatically.
 {:shortdesc}
 
 
@@ -35,14 +35,14 @@ In an {{site.data.keyword.la_full_notm}} instance, you can create, delete, and v
 You must have **manager** role for the {{site.data.keyword.la_full_notm}} service to complete this step.
 {: important} 
 
-You can only generate a service Key through the logging UI.
+You can only generate a service Key through the logging web UI.
 {: important}
     
 Complete the following steps to create a service key:
 
 1. [Launch the {{site.data.keyword.la_full_notm}} web UI](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-launch).
 
-2. Select the **Configuration** icon ![Configuration icon](images/admin.png). Then, select **Organization**. 
+2. Select the **Configuration** icon ![Configuration icon](../images/admin.png). Then, select **Organization**. 
 
 3. Select **API keys**.
 
@@ -58,14 +58,14 @@ Complete the following steps to create a service key:
 You must have **manager** role for the {{site.data.keyword.la_full_notm}} service to complete this step.
 {: important} 
 
-You can only delete a service Key through the logging UI.
+You can only delete a service Key through the logging web UI.
 {: important}
 
 Complete the following steps to delete a service key:
 
 1. [Launch the {{site.data.keyword.la_full_notm}} web UI](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-launch).
 
-2. Select the **Configuration** icon ![Configuration icon](images/admin.png). Then, select **Organization**. 
+2. Select the **Configuration** icon ![Configuration icon](../images/admin.png). Then, select **Organization**. 
 
 3. Select **API keys**.
 
@@ -86,7 +86,7 @@ Complete the following steps to view a service key:
 
 1. [Launch the {{site.data.keyword.la_full_notm}} web UI](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-launch).
 
-2. Select the **Configuration** icon ![Configuration icon](images/admin.png). Then, select **Organization**. 
+2. Select the **Configuration** icon ![Configuration icon](../images/admin.png). Then, select **Organization**. 
 
 3. Select **API keys**.
 

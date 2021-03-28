@@ -29,13 +29,13 @@ The logging agent is responsible for collecting and forwarding logs to your {{si
 
 To configure your Kubernetes cluster to send logs to your {{site.data.keyword.la_full_notm}} instance, you must install the logging agent in your cluster. 
 * The agent deploys a a logdna-agent pod on each node of your cluster. 
-* The logging agent reads log files from the pod where it is installed, and forwards the log data to your LogDNA instance.
+* The logging agent reads log files from the pod where it is installed, and forwards the log data to your logging instance.
 
 
 ## Deploy the logging agent by using kubectl commands
 {: #config_agent_kube_kubectl}
 
-Complete the following steps from the command line to configure your Kubernetes cluster to forward logs to your LogDNA instance by using the default YAML file:
+Complete the following steps from the command line to configure your Kubernetes cluster to forward logs to your logging instance by using the default YAML file:
 
 
 ### Prereq
@@ -45,7 +45,7 @@ To deploy the logging agent in a cluster, you must have a user ID that has the f
 * **Viewer** platform role, and **Writer** or **Manager** service role to work with that cluster instance.
 * **Viewer** permissions on the resource group where the cluster is available.
 
-To configure the LogDNA agen in the cluster, you need the following CLIs:
+To configure the logging agent in the cluster, you need the following CLIs:
 * The {{site.data.keyword.cloud_notm}} CLI to log in to the {{site.data.keyword.cloud_notm}} by using `ibmcloud` commands, and to manage the cluster by using `ibmcloud ks` commands. [Learn more](/docs/containers?topic=containers-cs_cli_install#cs_cli_install_steps).
 * The Kubernetes CLI to manage the cluster by using `kubectl` commands. [Learn more](/docs/containers?topic=containers-cs_cli_install#kubectl).
 
@@ -112,12 +112,12 @@ kubectl create namespace ibm-observe
 {: pre}
 
 
-### Step 3. Store your LogDNA ingestion key as a Kubernetes secret
+### Step 3. Store your logging ingestion key as a Kubernetes secret
 {: #config_agent_kube_cluster_step3}
 
-Create a Kubernetes secret to store your LogDNA ingestion key for your service instance. 
+Create a Kubernetes secret to store your logging ingestion key for your service instance. 
 
-The LogDNA ingestion key is used to open a secure web socket to the LogDNA ingestion server and to authenticate the logging agent with the {{site.data.keyword.la_full_notm}} service.
+The logging ingestion key is used to open a secure web socket to the logging ingestion server and to authenticate the logging agent with the {{site.data.keyword.la_full_notm}} service.
 
 Run the following command:
 
@@ -247,8 +247,8 @@ kubectl get pods -n ibm-observe
 {: pre}
 
 
-The deployment is successful when you see one or more LogDNA pods.
-* **The number of LogDNA pods equals the number of worker nodes in your cluster.**
+The deployment is successful when you see one or more logging pods.
+* **The number of logging pods equals the number of worker nodes in your cluster.**
 * All pods must be in a `Running` state.
 * *Stdout* and *stderr* are automatically collected and forwarded from all containers. Log data includes application logs and worker logs.
 * By default, the logging agent pod that runs on a worker collects logs from all namespaces on that node, including kube-system logs.
@@ -272,19 +272,19 @@ When you deploy and connect a logging agent within the context of the cluster, c
 * The agent is deployed in the `ibm-observe` namespace.
 * A tag that informs about the cluster name is associated to each log line as metadata.
 * A tag that informs about the version of the agent is associated to each log line as metadata.
-* The LogDNA instance must be available in the same {{site.data.keyword.cloud_notm}} account where the cluster is provisioned. 
-* The LogDNA instance can be in a different resource group and {{site.data.keyword.cloud_notm}} region than your cluster.
+* The logging instance must be available in the same {{site.data.keyword.cloud_notm}} account where the cluster is provisioned. 
+* The logging instance can be in a different resource group and {{site.data.keyword.cloud_notm}} region than your cluster.
 
 
 Before you can deploy the logging agent in a cluster, verify that you are assigned the following IAM roles: 
 * **Viewer** permissions on the resource group where the cluster is available.
-* **Viewer** permissions on the resource group where the LogDNA instance is available.
+* **Viewer** permissions on the resource group where the logging instance is available.
 * **Viewer** platform role and **Writer** or **Manager** service role for the {{site.data.keyword.containerlong_notm}} service to configure the logging agent.
-* **Viewer** platform role, and **Reader** service role for the {{site.data.keyword.la_full_notm}} instance to launch the LogDNA UI, and analyze logs through the logging UI.
+* **Viewer** platform role, and **Reader** service role for the {{site.data.keyword.la_full_notm}} instance to launch the logging UI, and analyze logs through the logging UI.
 
 The minimum persmissions that a user must have to launch the logging UI from the cluster UI, and analyze cluster logs are the following:
 * **Viewer** permissions on the resource group where the cluster is available.
-* **Viewer** permissions on the resource group where the LogDNA instance is available.
+* **Viewer** permissions on the resource group where the logging instance is available.
 * **Viewer** platform role and **Reader** service role for the {{site.data.keyword.containerlong_notm}} service to see the cluster and open the cluster's UI.
 * **Viewer** platform role, and **Reader** service role for the {{site.data.keyword.la_full_notm}} instance to launch the logging UI, and analyze logs through the logging UI.
 
@@ -294,13 +294,13 @@ The minimum persmissions that a user must have to launch the logging UI from the
 
 Complete the following steps from the [{{site.data.keyword.containerlong_notm}} console](https://cloud.ibm.com/kubernetes/clusters){: external}:
 
-1. Select the cluster for which you want to create a LogDNA logging configuration.
+1. Select the cluster for which you want to create a logging logging configuration.
 
 2. On the cluster **Overview** page, in the *Logging* section, click **Connect**.
 
-    The page `Connect an existing IBM Log Analysis with LogDNA instance` opens.
+    The page `Connect an existing IBM Log Analysis with logging instance` opens.
 
-3. Select the region where the LogDNA instance is provisioned.
+3. Select the region where the logging instance is provisioned.
 
 4. Select the {{site.data.keyword.la_full_notm}} instance that you want to use to analyze your logs.
 
@@ -382,11 +382,11 @@ To configure the logging agent in a cluster, complete the following steps:
 
     * `<cluster_name_or_ID>` is the name or the ID of the cluster.
 
-    * `<LogDNA_instance_name_or_ID>` is the name or the ID of the LogDNA instance where you want to forward the cluster logs for analysis.
+    * `<LogDNA_instance_name_or_ID>` is the name or the ID of the logging instance where you want to forward the cluster logs for analysis.
 
-    * `<Ingestion_Key>` is the ingestion key that you want to use to connect the logging agent with the LogDNA instance.
+    * `<Ingestion_Key>` is the ingestion key that you want to use to connect the logging agent with the logging instance.
 
-    * `[--private-endpoint]` is optional. Add this option to connect to your LogDNA instance by using private service endpoints.
+    * `[--private-endpoint]` is optional. Add this option to connect to your logging instance by using private service endpoints.
 
 
 

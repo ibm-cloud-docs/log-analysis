@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years:  2018, 2020
-lastupdated: "2020-03-06"
+  years:  2018, 2021
+lastupdated: "2021-03-28"
 
 keywords: LogDNA, IBM, Log Analysis, logging, kubernetes, tutorial
 
@@ -44,7 +44,7 @@ On the {{site.data.keyword.cloud_notm}}, to configure cluster-level logging for 
 2. Provision a cluster on the {{site.data.keyword.containerlong_notm}}. Kubernetes v1.9+ clusters are supported.
 3. Configure the logging agent on every worker (node) in a cluster.
 
-![LogDNA component overview on the {{site.data.keyword.cloud_notm}}](../images/kube.png "LogDNA component overview on the {{site.data.keyword.cloud_notm}}")
+![logging component overview on the {{site.data.keyword.cloud_notm}}](../images/kube.png "logging component overview on the {{site.data.keyword.cloud_notm}}")
 
 In this tutorial, you will learn how to configure cluster-level logging.
 
@@ -74,11 +74,11 @@ Install the {{site.data.keyword.cloud_notm}} CLI and the Kubernetes CLI plug-in.
 ## Objectives
 {: #kube_objectives}
 
-In this tutorial, you configure logging with LogDNA for your {{site.data.keyword.containerlong_notm}} cluster. In particular, you will:
+In this tutorial, you configure logging with logging for your {{site.data.keyword.containerlong_notm}} cluster. In particular, you will:
 
 - Provision an {{site.data.keyword.la_full_notm}}. 
 - Configure the logging agent in your cluster to start sending logs to LogDNA. 
-- Open the LogDNA dashboard to find your logs. 
+- Open the logging dashboard to find your logs. 
 
 
 ## Step 1. Provision an {{site.data.keyword.la_full_notm}} service instance
@@ -125,12 +125,12 @@ Complete the following steps to get the ingestion key:
 4. A window opens where you can click **Show** to view the ingestion key.
 
 
-## Step3: Configure your Kubernetes cluster to send logs to your LogDNA instance
+## Step3: Configure your Kubernetes cluster to send logs to your logging instance
 {: #kube_step3}
 
-To configure your Kubernetes cluster to send logs to your {{site.data.keyword.la_full_notm}} instance, you must install a `logdna-agent` pod on each node of your cluster. The logging agent reads log files from the pod where it is installed, and forwards the log data to your LogDNA instance.
+To configure your Kubernetes cluster to send logs to your {{site.data.keyword.la_full_notm}} instance, you must install a `logdna-agent` pod on each node of your cluster. The logging agent reads log files from the pod where it is installed, and forwards the log data to your logging instance.
 
-To configure your Kubernetes cluster in the `us-south` region to forward logs to your LogDNA instance, complete the following steps from the command line:
+To configure your Kubernetes cluster in the `us-south` region to forward logs to your logging instance, complete the following steps from the command line:
 
 1. Open a terminal to log in to {{site.data.keyword.cloud_notm}}.
 
@@ -153,7 +153,7 @@ To configure your Kubernetes cluster in the `us-south` region to forward logs to
    Every time you log in to the {{site.data.keyword.containerlong_notm}} CLI to work with your cluster, you must run this setup to set the path to the cluster's configuration file as a session variable. {{site.data.keyword.containerlong_notm}} uses this variable to find a local configuration file and certificates that are necessary to connect with your cluster.
    {: tip}
 
-3. Create a Kubernetes secret to store your logDNA ingestion key for your service instance. The LogDNA ingestion key is used to open a secure web socket to the logDNA ingestion server and to authenticate the logging agent with the {{site.data.keyword.la_full_notm}} service.
+3. Create a Kubernetes secret to store your logging ingestion key for your service instance. The logging ingestion key is used to open a secure web socket to the logging ingestion server and to authenticate the logging agent with the {{site.data.keyword.la_full_notm}} service.
 
     ```
     kubectl create secret generic logdna-agent-key --from-literal=logdna-agent-key=<logDNA_ingestion_key>
@@ -174,13 +174,13 @@ To configure your Kubernetes cluster in the `us-south` region to forward logs to
    ```
    {: pre}
    
-   The deployment is successful when you see one or more LogDNA pods. The number of LogDNA pods equals the number of worker nodes in your cluster. All pods must be in a `Running` state.
+   The deployment is successful when you see one or more logging pods. The number of logging pods equals the number of worker nodes in your cluster. All pods must be in a `Running` state.
 
 
-## Step 4: Launch the LogDNA dashboard and view logs
+## Step 4: Launch the logging dashboard and view logs
 {: #kube_step4}
 
-To launch the LogDNA dashboard through the {{site.data.keyword.cloud_notm}} console, complete the following steps:
+To launch the logging dashboard through the {{site.data.keyword.cloud_notm}} console, complete the following steps:
 
 1. Log in to your [{{site.data.keyword.cloud_notm}} account](https://cloud.ibm.com/login){: external}.
 
@@ -188,7 +188,7 @@ To launch the LogDNA dashboard through the {{site.data.keyword.cloud_notm}} cons
 
 3. Select **Logging**. The list of {{site.data.keyword.la_full_notm}} service instances that are available on {{site.data.keyword.cloud_notm}} is displayed.
 
-4. Select one instance and click **View LogDNA**. The LogDNA dashboard opens. **Note:** With the **Free** service plan, you can tail your latest logs only. For more information, see [Viewing logs](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-view_logs#view_logs).
+4. Select one instance and click **View LogDNA**. The logging dashboard opens. **Note:** With the **Free** service plan, you can tail your latest logs only. For more information, see [Viewing logs](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-view_logs#view_logs).
 
 ## Next steps
 {: #kube_next_steps}

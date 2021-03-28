@@ -1,15 +1,15 @@
 ---
 
 copyright:
-   years: 2018, 2020
-lastupdated: "2020-11-17"
+  years:  2018, 2021
+lastupdated: "2021-03-28"
 
-keywords: IBM Cloud, LogDNA, Activity Tracker, Kubernetes logs
+keywords: IBM Cloud, LogDNA, Log Analysis, Kubernetes logs
 
-subcollection: Activity-Tracker-with-LogDNA
+subcollection: Log-Analysis-with-LogDNA
 
 content-type: tutorial
-services: vpc
+services: Log-Analysis-with-LogDNA
 account-plan: lite 
 completion-time: 1h 
 
@@ -30,7 +30,7 @@ completion-time: 1h
 # Use the {{site.data.keyword.la_short}} web UI
 {: #tutorial-use-logdna}
 {: toc-content-type="tutorial"}
-{: toc-services-"vpc"} 
+{: toc-services-"Log-Analysis-with-LogDNA"} 
 {: toc-completion-time="1h"} 
 
 
@@ -44,13 +44,13 @@ application and system logs.
 ## Before you begin
 {: #LA-use-logdna-prereqs}
 
-- Make sure you have a LogDNA instance that is collecting logs. 
+- Make sure you have a logging instance that is collecting logs. 
 
     - You can have a logging agent configured to collect logs from a VPC instance. See [Logging in Linux VPC server instances](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-ubuntu).
 
     - You can have a logging agent configured to collect logs from a Kubernetes cluster. See [Logging in Kubernetes clusters (cluster-level logging)](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-kube).
 
-- Check you have permissions to launch the logging UI. See [Granting IAM policies to a user to launch the web UI](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-launch#launch_iam).
+- Check you have permissions to launch the logging web UI. See [Granting IAM policies to a user to launch the web UI](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-launch#launch_iam).
 
 
 ## Launch the {{site.data.keyword.la_full_notm}} web UI
@@ -65,11 +65,11 @@ application and system logs.
 
 2. Select your account.
 
-3. Click the **Menu** icon ![Menu icon](../icons/icon_hamburger.svg) &gt; **Observability**. 
+3. Click the **Menu** icon ![Menu icon](../../icons/icon_hamburger.svg) &gt; **Observability**. 
 
 4. Select **Logging**.
 
-5. For your instance, click **View LogDNA**. The logging UI will be displayed.
+5. For your instance, click **View LogDNA**. The logging web UI will be displayed.
 
 
 ## Create a custom view

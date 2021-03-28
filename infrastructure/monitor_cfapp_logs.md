@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years:  2018, 2020
-lastupdated: "2020-07-01"
+  years:  2018, 2021
+lastupdated: "2021-03-28"
 
 keywords: LogDNA, IBM, Log Analysis, logging, cf
 
@@ -105,7 +105,7 @@ The following table summarizes the different methods that you can use to collect
 
 You have different options to collect and forward logs to an instance of the {{site.data.keyword.la_full_notm}} service:
 * You can configure 1 instance of the {{site.data.keyword.la_full_notm}} service per region with the flag **service platform logs**. This instance collects infrastructure and application logs for any CF apps that run on that same region.
-* You can configure a custom user provided service (CUPS) for each CF app that you want to monitor through a custom {{site.data.keyword.la_full_notm}} instance. The CUPS service sends logs via a syslog link to a LogDNA syslog endpoint and port. This option is only available if the CF app send logs to STDOUT and STDERR. If the CF app is configured to send logs via syslog and not to STDOUT and STDERR, this option is not supported.
+* You can configure a custom user provided service (CUPS) for each CF app that you want to monitor through a custom {{site.data.keyword.la_full_notm}} instance. The CUPS service sends logs via a syslog link to a logging syslog endpoint and port. This option is only available if the CF app send logs to STDOUT and STDERR. If the CF app is configured to send logs via syslog and not to STDOUT and STDERR, this option is not supported.
 
 | Comparison                                    | Through the logging instance that hosts service platform logs in a region | Through a custom logging instance by using Syslog drains       |
 |:----------------------------------------------|:--------------------------------------------------------------:|:--------------------------------------------------:|
@@ -135,13 +135,13 @@ To configure an instance from the Observability dashboard in the {{site.data.key
 
 
 
-## Configuring a CF app to forward logs to a custom LogDNA instance by using Syslog drains
+## Configuring a CF app to forward logs to a custom logging instance by using Syslog drains
 {: #monitor_cfapp_logs_drains}
 
 You can configure a Cloud Foundry (CF) application, running in the {{site.data.keyword.cloud_notm}} or outside the {{site.data.keyword.cloud_notm}}, to stream application logs to an instance of the the {{site.data.keyword.la_full_notm}} service. You can configure a secure connection or a TLS connection between the CF app and the logging instance.
 
 To send CF logs to a {{site.data.keyword.la_short}} instance, consider the following information:
-* In the {{site.data.keyword.la_short}} instance, you must provision a syslog port in the LogDNA instance where you want to forward logs. 
+* In the {{site.data.keyword.la_short}} instance, you must provision a syslog port in the logging instance where you want to forward logs. 
 * In CF, you must define a custom user-provided service (CUPS) instance to deliver the logging instance credentials to the CF app, and to trigger streaming of application logs to the syslog port that you enabled in your {{site.data.keyword.la_short}} instance. 
 * In the *Platform Logs* {{site.data.keyword.la_short}} instance, you must configure an exclusion rule.
 
@@ -174,13 +174,13 @@ To provision a service instance of {{site.data.keyword.la_full_notm}} through th
 ### Step 2: Provision a syslog port in the logging instance
 {: #monitor_cfapp_logs_drains_step2}
 
-1. [Launch the logging UI.](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-launch)
+1. [Launch the logging web UI.](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-launch)
 
     You launch the web UI within the context of an {{site.data.keyword.la_full_notm}} instance, from the {{site.data.keyword.cloud_notm}} UI. 
 
-2. Provision a port. From the logging UI, complete the following steps:
+2. Provision a port. From the logging web UI, complete the following steps:
 
-    1. Open the log sources panel on the logging UI. Select the *Install instructions icon*: ![Install instructions icon](../images/logdna_install.png "Install instructions icon")
+    1. Open the log sources panel on the logging web UI. Select the *Install instructions icon*: ![Install instructions icon](../images/logdna_install.png "Install instructions icon")
 
     2. Select **View Syslog** &gt; **Syslog**.
 
@@ -265,10 +265,10 @@ Complete the following steps:
     {: screen}
 
 
-### Step 4: Verify that CF app logs are displayed through the logging UI
+### Step 4: Verify that CF app logs are displayed through the logging web UI
 {: #monitor_cfapp_logs_drains_step4}
 
-Launch the logging UI. Then, search for your CF application logs. For more information, see [Filtering logs](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-view_logs#view_logs_step5).
+Launch the logging web UI. Then, search for your CF application logs. For more information, see [Filtering logs](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-view_logs#view_logs_step5).
 
 Try also some of these tasks:
 - [Search logs](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-view_logs#view_logs_step6)
@@ -278,19 +278,19 @@ Try also some of these tasks:
 **Note:** Some of these features require a plan upgrade.
 
 
-## Stop viewing CF logs through the LogDNA instance that is configured to collect service platform logs
+## Stop viewing CF logs through the logging instance that is configured to collect service platform logs
 {: #monitor_cfapp_logs_exclude}
 
-When you configure a LogDNA instance in a region to collect the service platform logs, CF logs are collected automatically and available through that instance. 
+When you configure a logging instance in a region to collect the service platform logs, CF logs are collected automatically and available through that instance. 
 
-For example, you might have configured your CF apps to forward logs to custom LogDNA instances by using Syslog drains because you have a requirement to isolate logs by environment or by line of business. In this use case, you must configure a LogDNA exclusion rule on the *Platform Logs* LogDNA instance.
+For example, you might have configured your CF apps to forward logs to custom logging instances by using Syslog drains because you have a requirement to isolate logs by environment or by line of business. In this use case, you must configure a logging exclusion rule on the *Platform Logs* logging instance.
 
-To hide CF logs in the *Platform Logs* LogDNA instance, you must configure a LogDNA exclusion rule on this instance.
+To hide CF logs in the *Platform Logs* logging instance, you must configure a logging exclusion rule on this instance.
 {: important}
 
-Complete the following steps to configure an exclusion rule on the *Platform Logs* LogDNA instance for each region:
+Complete the following steps to configure an exclusion rule on the *Platform Logs* logging instance for each region:
 
-You must repeat these steps in any region where you want to stop viewing CF logs through the *Platform Logs* LogDNA instance.
+You must repeat these steps in any region where you want to stop viewing CF logs through the *Platform Logs* logging instance.
 {: note}
 
 You must have **manager** role on that instance to configure exclusion rules.
@@ -298,7 +298,7 @@ You must have **manager** role on that instance to configure exclusion rules.
 
 1. [Log in to your {{site.data.keyword.cloud_notm}} account](https://cloud.ibm.com/login){: external}.
 
-2. Click the **Menu** icon ![Menu icon](../icons/icon_hamburger.svg) &gt; **Observability**. 
+2. Click the **Menu** icon ![Menu icon](../../icons/icon_hamburger.svg) &gt; **Observability**. 
 
 3. Select **Logging**. 
 

@@ -20,7 +20,7 @@ Log Analysis
     {: .topicgroup}
     Logging infrastructure
         infrastructure/monitor_cfapp_logs.md
-        tutorials/kube.md
+        tutorial/kube.md
         infrastructure/ubuntu-baremetal.md
         infrastructure/ubuntu-vpc.md
 

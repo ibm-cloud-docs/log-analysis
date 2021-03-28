@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2018, 2020
-lastupdated: "2020-11-12"
+  years: 2018, 2021
+lastupdated: "2021-03-28"
 
 keywords: LogDNA, IBM Cloud, Log Analysis, logging, customer responsibilities, IBM responsibilities, terms and conditions
 
@@ -56,8 +56,8 @@ Review the following sections for the specific responsibilities for you and for 
 
 | Task                                                    | {{site.data.keyword.IBM_notm}} Responsibilities | Your Responsibilities |
 |---------------------------------------------------------|-----------------------|--------|
-| `Update the {{site.data.keyword.la_full_notm}} service` | Provide major, minor, and patch version updates for {{site.data.keyword.la_full_notm}} interfaces. </br>Document changes in the [LogDNA release notes](https://logdna.zendesk.com/hc/en-us/categories/360001626492-Release-Notes) | Ensure that any logging agents that you have deployed are kept current. |
-| `Track versions of custom views, dashboards, screens, parsing templates, and alerts`    | `N/A` | Use your own change management process to control versions of logging resources such as views, dashboards, screens, parsing templates, and alerts`. </br>To learn how to export metadata, see [Export the configuration of resources in a LogDNA instance](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-reuse_resource_definitions#export_config_res).| 
+| `Update the {{site.data.keyword.la_full_notm}} service` | Provide major, minor, and patch version updates for {{site.data.keyword.la_full_notm}} interfaces. </br>Document changes in the [logging release notes](https://logdna.zendesk.com/hc/en-us/categories/360001626492-Release-Notes) | Ensure that any logging agents that you have deployed are kept current. |
+| `Track versions of custom views, dashboards, screens, parsing templates, and alerts`    | `N/A` | Use your own change management process to control versions of logging resources such as views, dashboards, screens, parsing templates, and alerts`. </br>To learn how to export metadata, see [Export the configuration of resources in a logging instance](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-reuse_resource_definitions#export_config_res).| 
 {: caption="Table 2. Responsibilities for change management" caption-side="top"}
 
 
@@ -94,10 +94,10 @@ Review the following sections for the specific responsibilities for you and for 
 |-----------------------------------------------------------------|-------------------------------------------------|-----------------------|
 | `Restore the service` `[*]`      |Automatically recover and restart service components after any disaster event.  | `N/A` |
 | `Backup the {{site.data.keyword.la_full_notm}} key resources that are provided by the service`        | Daily backup of the {{site.data.keyword.la_full_notm}} infrastructure and components. | `N/A` |
-| `Backup logging agents`                                          | `N/A`  | Backup each logging agent yaml file that is deployed in your organization. |
+| `Backup logging agents`                                          | `N/A`  | Backup each logging agent YAML file that is deployed in your organization. |
 | `Recovery of logging agents`                                     | `N/A` | [Reinstall](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-logdna_agent#logdna_agent_configure) the logging agent in the event of any disaster event that impacts the agent runtime. |
-| `Backup the metadata of a LogDNA instance`                          | `N/A` | [Backup the metadata such as views, dashboards, screens, parsing templates, and alerts for each LogDNA instance.](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-reuse_resource_definitions#export_config_res) |
-| `Restore the metadata of a LogDNA instance`                         | `N/A` | [Restore the metadata such as views, dashboards, screens, parsing templates, and alerts for each LogDNA instance.](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-reuse_resource_definitions#import_config) |
+| `Backup the metadata of a logging instance`                          | `N/A` | [Backup the metadata such as views, dashboards, screens, parsing templates, and alerts for each logging instance.](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-reuse_resource_definitions#export_config_res) |
+| `Restore the metadata of a logging instance`                         | `N/A` | [Restore the metadata such as views, dashboards, screens, parsing templates, and alerts for each logging instance.](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-reuse_resource_definitions#import_config) |
 | `Backup of the data` | `N/A` | [Configure archiving to retain a backup copy of the data.](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-archiving) |
 {: caption="Table 5. Responsibilities for disaster recovery" caption-side="top"}
 

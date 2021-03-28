@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years:  2018, 2020
-lastupdated: "2020-05-11"
+  years:  2018, 2021
+lastupdated: "2021-03-28"
 
 keywords: LogDNA, IBM, Log Analysis, logging, iam, manage user access
 
@@ -99,9 +99,9 @@ Use the following table to identify the service roles that you can grant a user 
 | Actions                                                                 | Manager                                           | Standard-Member                              | Reader |
 |-------------------------------------------------------------------------|:-------------------------------------------------:|:--------------------------------------------:|:------:|
 | `Configure global settings`                                             | ![Check mark icon](check.png "Check mark icon indicating correct usage") |                                                   |   |
-| `Create and delete ingestion keys through the logging UI`            | ![Check mark icon](check.png "Check mark icon indicating correct usage") |                                                   |   |
-| `Create and delete service keys through the logging UI`              | ![Check mark icon](check.png "Check mark icon indicating correct usage") |                                                   |   |
-| `Add LogDNA log sources`                                                | ![Check mark icon](check.png "Check mark icon indicating correct usage") |                                                   |   |
+| `Create and delete ingestion keys through the logging web UI`            | ![Check mark icon](check.png "Check mark icon indicating correct usage") |                                                   |   |
+| `Create and delete service keys through the logging web UI`              | ![Check mark icon](check.png "Check mark icon indicating correct usage") |                                                   |   |
+| `Add logging log sources`                                                | ![Check mark icon](check.png "Check mark icon indicating correct usage") |                                                   |   |
 | `Configure archiving`                                                   | ![Check mark icon](check.png "Check mark icon indicating correct usage") |                                                   |   |
 | `Manage parsing`                                                        | ![Check mark icon](check.png "Check mark icon indicating correct usage") |                                                   |   |
 | `Define exclusion rules`                                                | ![Check mark icon](check.png "Check mark icon indicating correct usage") |                                                   |   |
@@ -109,13 +109,13 @@ Use the following table to identify the service roles that you can grant a user 
 | `Manage how views and dashboards are grouped in categories`             | ![Check mark icon](check.png "Check mark icon indicating correct usage") |                                                   |   |
 | `Export the configuration of views, alerts, dashboards, and templates`  | ![Check mark icon](check.png "Check mark icon indicating correct usage") |                                                   |   |
 | `Export log data`                                                        | ![Check mark icon](check.png "Check mark icon indicating correct usage")  | ![Check mark icon](check.png "Check mark icon indicating correct usage") | |
-| `View service keys through the logging UI`                           | ![Check mark icon](check.png "Check mark icon indicating correct usage")      | ![Check mark icon](check.png "Check mark icon indicating correct usage") |     |
+| `View service keys through the logging web UI`                           | ![Check mark icon](check.png "Check mark icon indicating correct usage")      | ![Check mark icon](check.png "Check mark icon indicating correct usage") |     |
 | `Configure alerts`                                                      | ![Check mark icon](check.png "Check mark icon indicating correct usage")      | ![Check mark icon](check.png "Check mark icon indicating correct usage")                    |    |
 | `View usage`                                                            | ![Check mark icon](check.png "Check mark icon indicating correct usage")      | ![Check mark icon](check.png "Check mark icon indicating correct usage")                   |      |
 | `Create views`                                                          | ![Check mark icon](check.png "Check mark icon indicating correct usage")      | ![Check mark icon](check.png "Check mark icon indicating correct usage")                    |      |
 | `Create dashboards`                                                     | ![Check mark icon](check.png "Check mark icon indicating correct usage")      | ![Check mark icon](check.png "Check mark icon indicating correct usage")                    |     |
 | `Create screens`                                                        | ![Check mark icon](check.png "Check mark icon indicating correct usage")      | ![Check mark icon](check.png "Check mark icon indicating correct usage")                    |     |
-| `Configure user preferences in the logging UI`                       | ![Check mark icon](check.png "Check mark icon indicating correct usage")      | ![Check mark icon](check.png "Check mark icon indicating correct usage")                    | ![Check mark icon](check.png "Check mark icon indicating correct usage")    |
+| `Configure user preferences in the logging web UI`                       | ![Check mark icon](check.png "Check mark icon indicating correct usage")      | ![Check mark icon](check.png "Check mark icon indicating correct usage")                    | ![Check mark icon](check.png "Check mark icon indicating correct usage")    |
 | `Filter and search data`                                                | ![Check mark icon](check.png "Check mark icon indicating correct usage")      | ![Check mark icon](check.png "Check mark icon indicating correct usage")                    | ![Check mark icon](check.png "Check mark icon indicating correct usage")    |
 | `Use views to monitor logs`                                           | ![Check mark icon](check.png "Check mark icon indicating correct usage")      | ![Check mark icon](check.png "Check mark icon indicating correct usage")                    | ![Check mark icon](check.png "Check mark icon indicating correct usage")    |
 | `Use dashboards to monitor logs`                                      | ![Check mark icon](check.png "Check mark icon indicating correct usage")      | ![Check mark icon](check.png "Check mark icon indicating correct usage")                    | ![Check mark icon](check.png "Check mark icon indicating correct usage")    |
@@ -123,7 +123,7 @@ Use the following table to identify the service roles that you can grant a user 
 {: caption="Table 2. IAM service roles and actions" caption-side="top"}
 
 
-The **manager** service role maps directly to the LogDNA admin role.
+The **manager** service role maps directly to the logging admin role.
 {: note}
 
 

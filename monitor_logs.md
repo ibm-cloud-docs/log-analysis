@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2021
-lastupdated: "2021-03-24"
+lastupdated: "2021-03-28"
 
 keywords: LogDNA, IBM, Log Analysis, logging, services
 
@@ -182,7 +182,7 @@ Consider the following information when you export logs:
 ### By using the REST API
 {: #mon_export_api}
 
-You can export logs programmatically by using the LogDNA REST API. [Learn more](/docs/Activity-Tracker-with-LogDNA?topic=Activity-Tracker-with-LogDNA-export_api).
+You can export logs programmatically by using the logging REST API. [Learn more](/docs/Activity-Tracker-with-LogDNA?topic=Activity-Tracker-with-LogDNA-export_api).
 
 When you export logs programmatically, consider the following information:
 

@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years:  2018, 2020
-lastupdated: "2020-03-22"
+  years:  2018, 2021
+lastupdated: "2021-03-28"
 
 keywords: LogDNA, IBM, Log Analysis, logging instance, delete
 
@@ -52,7 +52,7 @@ To remove an instance of {{site.data.keyword.la_full_notm}} by using the {{site.
 
 	After you log in, the {{site.data.keyword.cloud_notm}} UI opens.
 
-2. Go to the menu icon ![Menu icon](images/icon_hamburger.svg) &gt; **Observability** to access the *Observability* Dashboard.
+2. Go to the menu icon ![menu icon](../icons/icon_hamburger.svg) &gt; **Observability** to access the *Observability* Dashboard.
 
 3. Select **Logging**. The list of logging instances is displayed.
 

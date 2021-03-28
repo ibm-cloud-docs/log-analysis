@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2021
-lastupdated: "2021-03-24"
+lastupdated: "2021-03-28"
 
 keywords: LogDNA, IBM, Log Analysis, logging, export logs, api
 
@@ -23,10 +23,10 @@ subcollection: Log-Analysis-with-LogDNA
 {:external: target="_blank" .external}
 
  
-# Exporting logs by using the REST API
+# Exporting logs programmatically
 {: #export_api}
 
-From an {{site.data.keyword.la_full_notm}} instance, you can export logs programmatically by using the LogDNA REST API. 
+From an {{site.data.keyword.la_full_notm}} instance, you can export logs programmatically by using the logging REST API. 
 {:shortdesc}
 
 Consider the following information when you export log data:
@@ -45,7 +45,7 @@ To export logs, consider the following information:
 
 * Check that your user ID has permissions to launch the web UI, view or manage service keys, and view logs. [Learn more](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-view_logs).
 
-* Check that the LogDNA instance has the export feature enabled. [Learn more](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-export_config).
+* Check that the logging instance has the export feature enabled. [Learn more](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-export_config).
 
 
 ## Export API
@@ -112,9 +112,9 @@ Complete the following steps to export logs programmatically:
 ### Step 2. Identify the data to pass through the export parameters
 {: #export_api_step_2}
 
-To verify that the query that you use in the export returns the set of logs that you are looking for, define the search query through the logging UI. Refine the query until you can only see the logs that you want to export. Then, map the data to the query parameters.
+To verify that the query that you use in the export returns the set of logs that you are looking for, define the search query through the logging web UI. Refine the query until you can only see the logs that you want to export. Then, map the data to the query parameters.
 
-Notice that when you copy the query from the logging UI, you must replace every space with `%20`.
+Notice that when you copy the query from the logging web UI, you must replace every space with `%20`.
 {: important}
 
 

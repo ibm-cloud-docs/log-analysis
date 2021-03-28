@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years:  2018, 2020
-lastupdated: "2020-07-01"
+  years:  2018, 2021
+lastupdated: "2021-03-28"
 
 keywords: LogDNA, IBM, Log Analysis, logging, config agent
 
@@ -25,7 +25,7 @@ subcollection: Log-Analysis-with-LogDNA
 # Controlling data usage
 {: #control_usage}
 
-In {{site.data.keyword.la_full_notm}}, you can control the data that is collected and available for analysis through a LogDNA instance. You can define exclusion rules in the UI that apply to data collected in that instance. You can also configure logging agents and customize them to collect and forward specific log data. In addition, you can define an alert that is triggered when the data usage threshold that you define for that LogDNA instance is reached.
+In {{site.data.keyword.la_full_notm}}, you can control the data that is collected and available for analysis through a logging instance. You can define exclusion rules in the UI that apply to data collected in that instance. You can also configure logging agents and customize them to collect and forward specific log data. In addition, you can define an alert that is triggered when the data usage threshold that you define for that logging instance is reached.
 {:shortdesc}
 
 
@@ -45,7 +45,7 @@ You can stop logs from being forwarded to your logging instance by customizing t
 ## Controlling data by using exclusion rules
 {: #control_usage_rule}
 
-You can configure exclusion rules through the logging UI to stop logs from counting against your data usage quota and from being stored for search. For example, you might want to collect and forward all logs from a source to a LogDNA instance. However, you might be interested in a subset of those logs such as error logs. 
+You can configure exclusion rules through the logging web UI to stop logs from counting against your data usage quota and from being stored for search. For example, you might want to collect and forward all logs from a source to a logging instance. However, you might be interested in a subset of those logs such as error logs. 
 
 Logs that are excluded do not count towards your data usage quota. Also, logs that match the exclusion rule are not archived.
 {: note}
@@ -67,7 +67,7 @@ Complete the following steps to configure an alert that informs you when you rea
 
 1. [Launch the {{site.data.keyword.la_full_notm}} web UI](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-view_logs#view_logs_step2).
 
-2. Select the **Settings** icon ![Configuration icon](images/admin.png "Admin icon"). Then select **Usage**.
+2. Select the **Settings** icon ![Configuration icon](../images/admin.png "Admin icon"). Then select **Usage**.
 
     In the **Dashboard** section, you can see your data usage.
 

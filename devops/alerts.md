@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years:  2018, 2020
-lastupdated: "2020-03-06"
+  years:  2018, 2021
+lastupdated: "2021-03-28"
 
 keywords: LogDNA, IBM, Log Analysis, logging, alerts
 
@@ -53,7 +53,7 @@ A bell icon is displayed with the view to indicate that this view has an alert a
 
 Complete the following steps to configure a preset:
 
-1. Select the **Settings** icon ![Configuration icon](images/admin.png "Admin icon").
+1. Select the **Settings** icon ![Configuration icon](../images/admin.png "Configuration icon").
 2. Select **Alerts**.
 3. Select **Add a preset alert**.
 4. Choose a notification channel. 
@@ -78,7 +78,7 @@ Complete the following steps to configure a preset:
 
 Complete the following steps to attach a preset to a view:
 
-1. Click the **Views** icon ![Views icon](images/views.png "Views icon").
+1. Click the **Views** icon ![Views icon](../images/views.png "Views icon").
 2. Create a view. 
 
     Apply a time frame, filters and search criteria to filter the log lines that are displayed through the view. 
@@ -99,7 +99,7 @@ Complete the following steps to attach a preset to a view:
 
 Complete the following steps to attach an alert to a view:
 
-1. Click the **Views** icon ![Views icon](images/views.png "Views icon").
+1. Click the **Views** icon ![Views icon](../images/views.png "Views icon").
 2. Create a view. 
 
     Apply a time frame, filters and search criteria to filter the log lines that are displayed through the view. 
@@ -133,7 +133,7 @@ Complete the following steps to attach an alert to a view:
 
 Complete the following steps to delete a preset:
 
-1. Select the **Configuration** icon ![Configuration icon](images/admin.png "Admin icon").
+1. Select the **Configuration** icon ![Configuration icon](../images/admin.png "Configuration icon").
 2. Select **Alerts**.
 3. Hover the mouse over the *edit* button of the preset that you want to delete. The *delete* option shows.
 4. Select **Delete**.
@@ -144,7 +144,7 @@ Complete the following steps to delete a preset:
 
 Complete the following steps to detach a preset:
 
-1. Select the **Configuration** icon ![Configuration icon](images/admin.png "Admin icon").
+1. Select the **Configuration** icon ![Configuration icon](../images/admin.png "Configuration icon").
 2. Select **Alerts**.
 3. Hover the mouse over the *edit* button of the alert that you want to delete. The *delete* option shows.
 4. Select **Detach**.

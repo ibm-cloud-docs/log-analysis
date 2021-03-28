@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years:  2018, 2020
-lastupdated: "2020-03-06"
+  years:  2018, 2021
+lastupdated: "2021-03-28"
 
 keywords: LogDNA, IBM, Log Analysis, logging, web UI, observability
 
@@ -62,7 +62,7 @@ For each instance, you can view the following information:
 
 You can also view sources. If you select **Edit log sources** for an instance, a new page opens where you can find instructions on how to configure logging agents tp forward logs to this instance. 
 
-You might see the **Edit log sources** disabled. When this happens, the information icon displays a message that suggests that you need a new ingestion key. Notice that the ingestion key in LogDNA has not been lost. If you created the instance through the CLI, but did not create a service key for that instance, then the ingestion key is not available through the *Logging UI* for the instance. To fix the problem and enable the **Edit log sources**, complete 1 of the following steps: 
+You might see the **Edit log sources** disabled. When this happens, the information icon displays a message that suggests that you need a new ingestion key. Notice that the ingestion key has not been lost. If you created the instance through the CLI, but did not create a service key for that instance, then the ingestion key is not available through the *Logging UI* for the instance. To fix the problem and enable the **Edit log sources**, complete 1 of the following steps: 
 * [Create a service key](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-provision#provision_cli_2).
 * Follow the instructions given through the information icon. Click **i** &gt; **Got it** &gt; **Generate your key**.
 

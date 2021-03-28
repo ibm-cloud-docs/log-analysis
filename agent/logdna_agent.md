@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years:  2018, 2020
-lastupdated: "2020-12-09"
+  years:  2018, 2021
+lastupdated: "2021-03-28"
 
 keywords: LogDNA, IBM, Log Analysis, logging, config agent
 
@@ -22,20 +22,20 @@ subcollection: Log-Analysis-with-LogDNA
 {:note: .note}
 {:external: target="_blank" .external}
 
-# logging agent
+# Logging agent
 {: #logdna_agent}
 
 The logging agent is responsible for collecting and forwarding logs to your {{site.data.keyword.la_full_notm}} instance. After you provision an instance of {{site.data.keyword.la_full}}, you must configure a logging agent for each log source that you want to monitor.
 {:shortdesc}
 
 * You can configure a logging agent to connect to an {{site.data.keyword.la_full_notm}} instance through the public network or through the private network. By default, the agent connects through the public network. To connect to {{site.data.keyword.cloud}} services over a private network, you must have access to the classic infrastructure and [enable virtual routing and forwarding (VRF)](/docs/account?topic=account-vrf-service-endpoint) and connectivity to service endpoints for your account.
-* The logging agent authenticates by using the LogDNA ingestion key and opens a secure web socket to the {{site.data.keyword.la_full_notm}} ingestion servers.
+* The logging agent authenticates by using the logging ingestion key and opens a secure web socket to the {{site.data.keyword.la_full_notm}} ingestion servers.
 * The logging agent for Kubernetes automatically collects STDOUT and STDERR logs.
 * By default, the logging agent monitors all files with extension *.log*, and extensionless files under */var/log/*.
 * The logging agent tails for new log data, and looks for new files that are added to the logging directories that the agent monitors.
 
 
-## logging agent for Kubernetes clusters
+## Logging agent for Kubernetes clusters
 {: #logdna_agent_image_kube}
 
 logging agent images for Kubernetes clusters are public images that are available in {{site.data.keyword.cloud_notm}} through the [{{site.data.keyword.registrylong_notm}}](/docs/Registry?topic=Registry-getting-started) service. 
@@ -52,7 +52,7 @@ To get details about the logging agent images, see [Getting information about lo
 ### Understanding image tags
 {: #logdna_agent_image_kube_tags}
 
-The tag that is associated to a LogDNA image indicates whether the logging agent is automatically updated. 
+The tag that is associated to a logging image indicates whether the logging agent is automatically updated. 
 {: important}
 
 A tag consists of multiple parts:
@@ -127,14 +127,14 @@ If you have a highly regulated environment, you can customize the YAML file. You
 {: important}
 
 
-### Connecting a logging agent with a LogDNA instance 
+### Connecting a logging agent with a logging instance 
 {: #logdna_agent_image_kube_connect}
 
 The logging agent is responsible for collecting and forwarding system-level, and file-based logs to your {{site.data.keyword.la_full_notm}} instance. 
 
-To connect your Kubernetes cluster to send logs to your {{site.data.keyword.la_full_notm}} instance, you must install a *logdna-agent* pod on each node of your cluster. 
+To connect your Kubernetes cluster to send logs to your {{site.data.keyword.la_full_notm}} instance, you must install a *logging-agent* pod on each node of your cluster. 
 
-- The logging agent reads log files from the pod where it is installed, and forwards the log data to your LogDNA instance.
+- The logging agent reads log files from the pod where it is installed, and forwards the log data to your logging instance.
 
 - The logging agent collects STDOUT, STDERR, logs with the extension `*.log`, and extensionsless files that are stored in the `/var/log` directory of your pod. By default, logs are collected from all namespaces, including `kube-system`, and automatically forwarded to the {{site.data.keyword.la_full_notm}} service.
 
@@ -156,7 +156,7 @@ To stop your Kubernetes cluster from sending logs to your {{site.data.keyword.la
 {: caption="Table 10. Detaching a logging agent from a cluster" caption-side="top"}
 
 
-## logging agent for Linux
+## Logging agent for Linux
 {: #logdna_agent_image_linux}
 
 
@@ -164,7 +164,7 @@ To stop your Kubernetes cluster from sending logs to your {{site.data.keyword.la
 ### Image versions
 {: #logdna_agent_image_linux_versions}
 
-logging agent images for Linux are public images that are available in the LogDNA repo `https://repo.logdna.com`.
+logging agent images for Linux are public images that are available in the logging repo `https://repo.logdna.com`.
 
 The following table outlines the agent versions that are available:
 
@@ -175,14 +175,14 @@ The following table outlines the agent versions that are available:
 
 
 
-### Connecting a logging agent with a LogDNA instance 
+### Connecting a logging agent with a logging instance 
 {: #logdna_agent_image_linux_connect}
 
 The logging agent is responsible for collecting and forwarding system-level, and file-based logs to your {{site.data.keyword.la_full_notm}} instance. 
 
-To connect your Linux server to send logs to your {{site.data.keyword.la_full_notm}} instance, you must install a *logdna-agent*. 
+To connect your Linux server to send logs to your {{site.data.keyword.la_full_notm}} instance, you must install a *logging-agent*. 
 
-- The logging agent reads log files from */var/log*, and forwards the log data to your LogDNA instance. 
+- The logging agent reads log files from */var/log*, and forwards the log data to your logging instance. 
 
 - To connect an agent to a Linux platform, see [Connecting a logging agent for Linux Ubuntu or Debian](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-config_agent_linux).
 
@@ -215,7 +215,7 @@ You can customize a logging agent by configuring parameters for Linux agents, or
 |--------------------------|-------------------------------------------------------|----------------------------------------|-----------------------|
 | `DEFAULT_CONF_FILE`      | Default configuration file.                           | `/etc/logdna/config.yaml`              |                       |
 | `LOGDNA_PLATFORM`        | Log source type.                                      | `k8s`                                  |                       |
-| `LOGDNA_INGESTION_KEY`   | Reference to the LogDNA ingestion key.                | secretKeyRef                           |                       |
+| `LOGDNA_INGESTION_KEY`   | Reference to the logging ingestion key.                | secretKeyRef                           |                       |
 | `LOGDNA_HOST`            | LogDNA ingestion endpoint.                            |                                        | `logs.us-south.logging.cloud.ibm.com` |
 | `LOGDNA_API_HOST`        | API LogDNA ingestion endpoint.                        |                                        | `api.us-south.logging.cloud.ibm.com`   |
 | `LOGDNA_ENDPOINT`        | Ingestion log path.                                   | `/logs/agent/`                         |                       |
@@ -225,8 +225,8 @@ You can customize a logging agent by configuring parameters for Linux agents, or
 | `LOGDNA_INCLUSION_REGEX_RULES` | Regex custom rules that you can define to configure what log files to monitor. For more information, see [regex syntax](https://docs.rs/regex/1.2.1/regex/#syntax){: external} </br>These files can be located in any of the paths that are defined through the logdir parameter.  |  |  |
 | `LOGDNA_EXCLUSION_RULES` | Custom rules that you can define to configure what log files to exclude from being monitored. </br>You can use glob patterns. For more information, see [Glober rules](https://github.com/CJP10/globber){: external}  | | |
 | `LOGDNA_EXCLUSION_REGEX_RULES` | Regex custom rules that you can define to configure what log files to exclude from being monitored. |  | `/var/log/containers/**,/var/log/pods/**`  |
-| `LOGDNA_USE_SSL`          | Boolean that defines whether TLS 1.2 should be used when the agent sends logs to the LogDNA instance. </br>The default value is set to `true`.  | `true` | `true` |
-| `LOGDNA_USE_COMPRESSION`  | Boolean that defines whether compression is enabled when the agent sends logs to the LogDNA instance. </br> The default value is set to `true`. | `true` | `true` |
+| `LOGDNA_USE_SSL`          | Boolean that defines whether TLS 1.2 should be used when the agent sends logs to the logging instance. </br>The default value is set to `true`.  | `true` | `true` |
+| `LOGDNA_USE_COMPRESSION`  | Boolean that defines whether compression is enabled when the agent sends logs to the logging instance. </br> The default value is set to `true`. | `true` | `true` |
 | `LOGDNA_GZIP_LEVEL`       | Compression level for gzip. </br>Valid values are: `1`, `2`, `3`, `4`, `5`, `6`, `7`, `8`, `9` </br>When you set this variable to `1`, you are configuring the agent to use the fastest compression speed but at a lower ratio. When you set this variable to `9`, you are configuring the agent to use the highest compression ratio but at a lower speed.  | `2` | `6` |
 | `LOGDNA_TAGS` | Define tags to group hosts automatically into dynamic groups. |  | `production,serviceA` |
 {: caption="Table 7. Tags that are available for the logging agent V2" caption-side="top"}
@@ -238,7 +238,7 @@ You can customize a logging agent by configuring parameters for Linux agents, or
 |--------------------------|-------------------------------------------------------|----------------------------------------|-----------------------|
 | `DEFAULT_CONF_FILE`      | Default configuration file.                           | `/etc/logdna/config.yaml`              |                       |
 | `LOGDNA_PLATFORM`        | Log source type.                                      | `k8s`                                  |                       |
-| `LOGDNA_INGESTION_KEY`   | Reference to the LogDNA ingestion key.                | secretKeyRef                           |                       |
+| `LOGDNA_INGESTION_KEY`   | Reference to the logging ingestion key.                | secretKeyRef                           |                       |
 | `LDLOGHOST`              | LogDNA ingestion endpoint.                            |                                        | `logs.us-south.logging.cloud.ibm.com` |
 | `LDAPIHOST`              | API LogDNA ingestion endpoint.                        |                                        | `api.us-south.logging.cloud.ibm.com`   |
 | `LDLOGPATH`              | Ingestion log path.                                   | `/logs/agent/`                         |                       |
@@ -248,8 +248,8 @@ You can customize a logging agent by configuring parameters for Linux agents, or
 | `LOGDNA_INCLUDE_REGEX` | Regex custom rules that you can define to configure what log files to monitor. For more information, see [regex syntax](https://docs.rs/regex/1.2.1/regex/#syntax){: external} </br>These files can be located in any of the paths that are defined through the logdir parameter.  | | |
 | `LOGDNA_EXCLUDE`     | Custom rules that you can define to configure what log files to exclude from being monitored. </br>These files can be located in any of the paths that are defined through the logdir parameter. </br>Separate multiple files by using commas. You can use glob patterns. You can configure specific files. | | |
 | `LOGDNA_EXCLUDE_REGEX` | Regex custom rules that you can define to configure what log files to exclude from being monitored. | | `/var/log/containers/*,/var/log/pods/*`  |
-| `LDLOGSSL` | Boolean that defines whether TLS 1.2 should be used when the agent sends logs to the LogDNA instance. </br>The default value is set to `true`. | `true` | `true` |
-| `COMPRESS` | Boolean that defines whether compression is enabled when the agent sends logs to the LogDNA instance. </br> The default value is set to `true`. | `true` | `true` |
+| `LDLOGSSL` | Boolean that defines whether TLS 1.2 should be used when the agent sends logs to the logging instance. </br>The default value is set to `true`. | `true` | `true` |
+| `COMPRESS` | Boolean that defines whether compression is enabled when the agent sends logs to the logging instance. </br> The default value is set to `true`. | `true` | `true` |
 | `GZIP_COMPRESS_LEVEL` | Compression level for gzip. </br>Valid values are: `1`, `2`, `3`, `4`, `5`, `6`, `7`, `8`, `9` </br>When you set this variable to `1`, you are configuring the agent to use the fastest compression speed but at a lower ratio. When you set this variable to `9`, you are configuring the agent to use the highest compression ratio but at a lower speed.  | `2` | `6` |
 | `LOGDNA_TAGS` | Define tags to group hosts automatically into dynamic groups. |  | `production,serviceA`  |
 {: caption="Table 8. Tags that are available for the logging agent V2" caption-side="top"}

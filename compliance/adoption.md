@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years:  2018, 2020
-lastupdated: "2020-07-12"
+  years:  2018, 2021
+lastupdated: "2021-03-28"
 
 keywords: LogDNA, IBM, Log Analysis, logging, regulated, highly available workloads
 
@@ -56,12 +56,12 @@ The following table highlights some of the key features per account management s
 
 | Feature                                               | Stand-alone account management                    | Enterprise account management                     |
 |-------------------------------------------------------|---------------------------------------------------|---------------------------------------------------|
-| `Multitiered hierarchy of accounts`                   | NO                                                | ![Checkmark icon](images/checkmark-icon.svg) |
-| `Billing and payments managed from 1 account`         | ![Checkmark icon](images/checkmark-icon.svg) | ![Checkmark icon](images/checkmark-icon.svg) |
-| `Isolation of users and access management per account`| ![Checkmark icon](images/checkmark-icon.svg) | ![Checkmark icon](images/checkmark-icon.svg) |
-| `Isolation of resources and services per account`     | ![Checkmark icon](images/checkmark-icon.svg) | ![Checkmark icon](images/checkmark-icon.svg) |
-| `Isolation of account settings`                       | ![Checkmark icon](images/checkmark-icon.svg) | ![Checkmark icon](images/checkmark-icon.svg) |
-| `IAM enabled`                                         | ![Checkmark icon](images/checkmark-icon.svg) | ![Checkmark icon](images/checkmark-icon.svg) |
+| `Multitiered hierarchy of accounts`                   | NO                                                | ![Checkmark icon](../images/checkmark-icon.svg) |
+| `Billing and payments managed from 1 account`         | ![Checkmark icon](../images/checkmark-icon.svg) | ![Checkmark icon](../images/checkmark-icon.svg) |
+| `Isolation of users and access management per account`| ![Checkmark icon](../images/checkmark-icon.svg) | ![Checkmark icon](../images/checkmark-icon.svg) |
+| `Isolation of resources and services per account`     | ![Checkmark icon](../images/checkmark-icon.svg) | ![Checkmark icon](../images/checkmark-icon.svg) |
+| `Isolation of account settings`                       | ![Checkmark icon](../images/checkmark-icon.svg) | ![Checkmark icon](../images/checkmark-icon.svg) |
+| `IAM enabled`                                         | ![Checkmark icon](../images/checkmark-icon.svg) | ![Checkmark icon](../images/checkmark-icon.svg) |
 {: caption="Table 1. Types of accounts" caption-side="top"} 
 
 
@@ -178,7 +178,7 @@ If you add PII or other sensitive information in the name or the description of 
 ### Service plan
 {: #adoption_resource_svc_plan}
 
-The service plan that you choose for a LogDNA instance determines the number of days that data is available for search. For more information, see [Service plans](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-service_plans).
+The service plan that you choose for a logging instance determines the number of days that data is available for search. For more information, see [Service plans](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-service_plans).
 
 **Choose your plan based on the number of days that you need to be able to search data online through the web UI.**
 {: tip}
@@ -222,7 +222,7 @@ In LogDNA, you can collect and forward data to a logging instance by using any o
 * `logging agent`: Logging agent that automatically collects and forwards logs to 1 logging instance in your account.
 * `Syslog`: Logging daemon that collects information across multiple devices and system-services, and forwards logs to 1 logging instance in your account. 
 * `REST API`: API that you can use to send log data and custom metadata to 1 logging instance in your account.
-* `Code libraries`: Libraries that you can use to code ingestion of logs from your apps and services to 1 logging instance. LogDNA offer libraries for Node.JS, Python, Rails, Ruby, Go, iOS, Java, and PHP.
+* `Code libraries`: Libraries that you can use to code ingestion of logs from your apps and services to 1 logging instance. logging offer libraries for Node.JS, Python, Rails, Ruby, Go, iOS, Java, and PHP.
 
 **For any method that you adopt, you have the flexibility to choose the logging instance where you want to send data per log source. Decide how many instances you might need to collect data from all your log sources based on who can see the data and the type of data that is collected. Avoid sending data to a logging instance that has the platform logs flag enabled.**
 {: tip}
@@ -230,7 +230,7 @@ In LogDNA, you can collect and forward data to a logging instance by using any o
 **Whenever a logging agent is available for a type of log source, configure the agent to automatically collect and forward logs from the log source to the logging instance. The agent is the preferred log collection mechanism.** 
 {: tip}
 
-The logging agent authenticates by using the LogDNA Ingestion Key and opens a secure web socket to the {{site.data.keyword.la_full_notm}} ingestion servers; monitors all files with extension `.log`*,  and extensionless files under `/var/log/`; and can be customized to exclude data that you do not want to collect or to include custom paths that you want to monitor, and more.
+The logging agent authenticates by using the logging Ingestion Key and opens a secure web socket to the {{site.data.keyword.la_full_notm}} ingestion servers; monitors all files with extension `.log`*,  and extensionless files under `/var/log/`; and can be customized to exclude data that you do not want to collect or to include custom paths that you want to monitor, and more.
 
 For example, you can configure a Kubernetes cluster and an OpenShift cluster with a logging agent. For more information, see [Configuring a logging agent for a standard Kubernetes cluster](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-config_agent_kube_cluster) and [Configuring a logging agent for an OpenShift Kubernetes cluster](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-config_agent_os_cluster).
 
@@ -242,7 +242,7 @@ To configure a logging agent on Linux Ubuntu or Debian, see [Configuring a loggi
 **Configure syslog to collect and forward logs from Cloud Foundry applications.**
 {: tip}
 
-For example, you can configure a custom user provided service (CUPS) for each Cloud Foundry (CF) app that you want to monitor through a logging instance. The CUPS service sends logs via a syslog link to a LogDNA syslog endpoint and port. This option is only available if the CF app send logs to STDOUT and STDERR. If the CF app is configured to send logs via syslog and not to STDOUT and STDERR, this option is not supported. [Learn more](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-monitor_cfapp_logs).
+For example, you can configure a custom user provided service (CUPS) for each Cloud Foundry (CF) app that you want to monitor through a logging instance. The CUPS service sends logs via a syslog link to a logging syslog endpoint and port. This option is only available if the CF app send logs to STDOUT and STDERR. If the CF app is configured to send logs via syslog and not to STDOUT and STDERR, this option is not supported. [Learn more](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-monitor_cfapp_logs).
 
 
 
@@ -364,7 +364,7 @@ Consider the following information when you work with private endpoints:
 
 Consider the following limitations:
 * Ingestion endpoints of type `syslog-tcp (syslog-a)` and `syslog-udp (syslog-u)` are not currently supported on the Cloud Service Endpoint (CSE) network. 
-* The logging UI is not currently supported on the CSE network.
+* The logging web UI is not currently supported on the CSE network.
 
 
 **If you have an additional firewall set up, or you have customized the firewall settings in your {{site.data.keyword.cloud_notm}} infrastructure, you must allow outgoing network traffic to the {{site.data.keyword.la_full_notm}} service on TCP port 443 and TCP port 80 in your firewall. The API endpoint is required for logging agent authentication.**
@@ -377,7 +377,7 @@ If you have an additional firewall set up, or you have customized the firewall s
 ## Define the notification strategy 
 {: #adoption_alerts}
 
-In a LogDNA instance, you define views to analyze the data. Then, you can configure 1 or more alerts per view to notify of an abnormal situation. [Learn more](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-alerts).
+In a logging instance, you define views to analyze the data. Then, you can configure 1 or more alerts per view to notify of an abnormal situation. [Learn more](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-alerts).
 
 You can choose to be notified by using an absence alert that is triggered when no data is available.
 
@@ -396,7 +396,7 @@ You can configure multiple notification channels. Valid channels are: `email`, `
 | `email`      | Email is a traditional communication method that you can use to notify 1 or more users. This notification channel requires users to be monitoring proactively their emails to detect an alert. **Define an email alert to verify that the alert on a view is working, and to inform users of situations they may have requested information.** |
 | `Slack`      | Slack is a collaborative tool that you can use to communicate and share information across 1 or more teams. **Define a Slack alert to inform about routine scenarios that you might want to monitor.** |
 | `PagerDuty`  | PagerDuty is an incident management tool that you can use to automate incident resolution and escalation, define on-call schedules and more. **Define a PagerDuty alert to be notified immediately so that you can take action promptly.**  |
-| `Webhook`    | A webhook is another method that you can configure to provide other applications information. **Define a webhook alert if you have a third party tool that you can configure with a LogDNA instance via a webhook, and where you plan to manage notifications.** |
+| `Webhook`    | A webhook is another method that you can configure to provide other applications information. **Define a webhook alert if you have a third party tool that you can configure with a logging instance via a webhook, and where you plan to manage notifications.** |
 {: caption="Table 4. Guidance for notification channel" caption-side="top"}
 
 **Configure PagerDuty alerts to be notified immediately so that you can take action promptly on problems and automate their resolution. In addition, configure Slack alerts to share alerts and information.**
@@ -423,40 +423,40 @@ You might have different requirements that require archiving your data:
 * Disaster recovery requirements 
 * Compliance requirements
 
-LogDNA as a service does not backup your data. 
+logging as a service does not backup your data. 
 
 There are 2 types of data that you should consider archiving:
 * Log data
 
-    By default, archiving of log data is not enabled for any LogDNA instance. 
+    By default, archiving of log data is not enabled for any logging instance. 
 
     When you enable archiving of your log data, notice that you are responsible for checking that your archived files are not corrupted, and for the maintenance of your archived files.
     {: note}
 
 * Web UI resource definitions such as parsing templates, exclusion rules, views, screens, and dashboards.
 
-**Archive your LogDNA resource definitions and your log data.**
+**Archive your logging resource definitions and your log data.**
 {: tip}
 
-### Backup the resource configurations of your LogDNA instance
+### Backup the resource configurations of your logging instance
 {: #adoption_archive_ui}
 
-In the logging UI, you can define custom views, dashboards, parsing templates, screens, and exclusion rules that you can use to view and analyze data.
+In the logging web UI, you can define custom views, dashboards, parsing templates, screens, and exclusion rules that you can use to view and analyze data.
 
-To reuse resource definitions that you define in your LogDNA instance, you can export these resources from an {{site.data.keyword.la_full_notm}} instance as a JSON file. Then, you can import the definitions into other LogDNA instances. For example, you can reuse your LogDNA resources across different environments for your stage, pre-production, and production logging instances. [Learn more](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-reuse_resource_definitions).
+To reuse resource definitions that you define in your logging instance, you can export these resources from an {{site.data.keyword.la_full_notm}} instance as a JSON file. Then, you can import the definitions into other logging instances. For example, you can reuse your logging resources across different environments for your stage, pre-production, and production logging instances. [Learn more](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-reuse_resource_definitions).
 
-**Backup LogDNA resource definitions into a version control system such as a git repository where you can control access to the archived files and manage versions.**
+**Backup logging resource definitions into a version control system such as a git repository where you can control access to the archived files and manage versions.**
 {: tip}
 
 ### Archive log data to a COS bucket
 {: #adoption_archive_data}
 
-**Enable archiving of your data from a LogDNA instance to an {{site.data.keyword.cos_full_notm}} (COS) bucket.**
+**Enable archiving of your data from a logging instance to an {{site.data.keyword.cos_full_notm}} (COS) bucket.**
 {: tip}
 
-After you provision a LogDNA instance, you can configure archiving to an {{site.data.keyword.cos_full_notm}} (COS) bucket. You can create different types of buckets based on your requirements. 
+After you provision a logging instance, you can configure archiving to an {{site.data.keyword.cos_full_notm}} (COS) bucket. You can create different types of buckets based on your requirements. 
 
-When you plan the bucket for a LogDNA instance, consider the following information:
+When you plan the bucket for a logging instance, consider the following information:
 
 | Requirement                                            | Question to answer                                                | Information                                                                 |
 |--------------------------------------------------------|-------------------------------------------------------------------|-----------------------------------------------------------------------------|
@@ -493,8 +493,8 @@ Use the following table to help you identify the features that you should consid
 |----------------------------------------------|---------------------------------|-----------------------------|----------------------------------|-----------------------------|
 | `Type of workload`                           | `Continuous access`             | `Data isn't accessed frequently` | `Accessed every 90 days or less` | `Dynamic workloads where access patterns are difficult to predict` |
 | `Data resiliency`                            | `Cross region`                  | `Cross region`             | `Cross region`                  | `Cross region`             |
-| `Retention policy`                           | ![Checkmark icon](images/checkmark-icon.svg) | ![Checkmark icon](images/checkmark-icon.svg) | ![Checkmark icon](images/checkmark-icon.svg) | ![Checkmark icon](images/checkmark-icon.svg) |
-| `Expiration policy`                          | ![Checkmark icon](images/checkmark-icon.svg) | ![Checkmark icon](images/checkmark-icon.svg) | ![Checkmark icon](images/checkmark-icon.svg) | ![Checkmark icon](images/checkmark-icon.svg) |                         
+| `Retention policy`                           | ![Checkmark icon](../images/checkmark-icon.svg) | ![Checkmark icon](../images/checkmark-icon.svg) | ![Checkmark icon](../images/checkmark-icon.svg) | ![Checkmark icon](../images/checkmark-icon.svg) |
+| `Expiration policy`                          | ![Checkmark icon](../images/checkmark-icon.svg) | ![Checkmark icon](../images/checkmark-icon.svg) | ![Checkmark icon](../images/checkmark-icon.svg) | ![Checkmark icon](../images/checkmark-icon.svg) |                         
 | `Long-term retention policy`                 | `NO`                            | `NO`                        | `NO`                             | `NO`                         |
 {: caption="Table 6. Disaster recovery or compliance requirements" caption-side="top"}
 {: #archive-table-4}
@@ -507,8 +507,8 @@ Use the following table to help you identify the features that you should consid
 |----------------------------------------------|---------------------------------|-----------------------------|----------------------------------|-----------------------------|
 | `Type of workload`                           | `Continuous access`             | `Data isn't accessed frequently` | `Accessed every 90 days or less` | `Dynamic workloads where access patterns are difficult to predict` |
 | `Data resiliency`                            | `Cross region` or `Regional`    | `Cross region` or `Regional`    | `Cross region` or `Regional`   | `Cross region` or `Regional`   |
-| `Retention policy`                           | ![Checkmark icon](images/checkmark-icon.svg) | ![Checkmark icon](images/checkmark-icon.svg) | ![Checkmark icon](images/checkmark-icon.svg) | ![Checkmark icon](images/checkmark-icon.svg) |
-| `Expiration policy`                          | ![Checkmark icon](images/checkmark-icon.svg) | ![Checkmark icon](images/checkmark-icon.svg) | ![Checkmark icon](images/checkmark-icon.svg) | ![Checkmark icon](images/checkmark-icon.svg) |                         
+| `Retention policy`                           | ![Checkmark icon](../images/checkmark-icon.svg) | ![Checkmark icon](../images/checkmark-icon.svg) | ![Checkmark icon](../images/checkmark-icon.svg) | ![Checkmark icon](../images/checkmark-icon.svg) |
+| `Expiration policy`                          | ![Checkmark icon](../images/checkmark-icon.svg) | ![Checkmark icon](../images/checkmark-icon.svg) | ![Checkmark icon](../images/checkmark-icon.svg) | ![Checkmark icon](../images/checkmark-icon.svg) |                         
 | `Long-term retention policy`                 | `NO`                            | `NO`                        | `NO`                             | `NO`                         |
 {: caption="Table 7. Backup or access to data beyond the service plan days requirements" caption-side="top"}
 {: #archive-table-5}
@@ -552,7 +552,7 @@ If you need to use your own key to encrypt the data at-rest in a bucket, use the
 | `Type of workload`                           | `Continuous access`             | `Data isn't accessed frequently` | `Accessed every 90 days or less` | `Dynamic workloads where access patterns are difficult to predict` |
 | `Data resiliency`                            | `Regional`                      | `Regional`                   | `Regional`                      | `Regional`                   |
 | `Retention policy` [15]                      | `NO`                            | `NO`                        | `NO`                             | `NO`                         |
-| `Expiration policy`                          | ![Checkmark icon](images/checkmark-icon.svg) | ![Checkmark icon](images/checkmark-icon.svg) | ![Checkmark icon](images/checkmark-icon.svg) | ![Checkmark icon](images/checkmark-icon.svg) |                         
+| `Expiration policy`                          | ![Checkmark icon](../images/checkmark-icon.svg) | ![Checkmark icon](../images/checkmark-icon.svg) | ![Checkmark icon](../images/checkmark-icon.svg) | ![Checkmark icon](../images/checkmark-icon.svg) |                         
 | `Long-term retention policy`                 | `NO`                            | `NO`                        | `NO`                             | `NO`                         |
 {: caption="Table 8. Use your own encryption key" caption-side="top"}
 
@@ -581,12 +581,12 @@ If you add PII information in the name of a bucket, you might be disclosing sens
 {: #adoption_archive_3}
 
 To configure archiving, you need the following IAM policies:
-* An IAM policy with minimum platform role **Viewer** and service role **Manager** for the {{site.data.keyword.la_full_notm}} service: This policy is required to access the logging UI, and configure archiving of the LogDNA instance.
+* An IAM policy with minimum platform role **Viewer** and service role **Manager** for the {{site.data.keyword.la_full_notm}} service: This policy is required to access the logging web UI, and configure archiving of the logging instance.
 * An IAM policy with minimum platform role **Administrator** and service role **Manager**  for the COS service: The administrator role is required to define the service ID, with its associated API key, that is used by the {{site.data.keyword.la_full_notm}} instance to authenticate and access the {{site.data.keyword.cos_full_notm}} instance. The manager role is required to create and configure a bucket.
 
 You also need a service ID. A service ID identifies a service similar to how a user ID identifies a user. Service IDs are not tied to a specific user. If the user that creates the service ID leaves your organization and is deleted from the account, the service ID remains. The {{site.data.keyword.la_full_notm}} service uses an API key that is associated to a service ID that you define on your COS instance to authenticate and write files to the COS bucket.
 
-**Create a service ID for for the COS instance with writer permissions. Restrict access to the service ID so that the API key that is associated to it can only write to the bucket that you configure in LogDNA for archiving.**
+**Create a service ID for for the COS instance with writer permissions. Restrict access to the service ID so that the API key that is associated to it can only write to the bucket that you configure in logging for archiving.**
 {: tip} 
 
 If you add PII information in the name or the description of the service ID, you might be disclosing sensitive data to others in the same account.
@@ -610,7 +610,7 @@ In COS, you can define policies to control the permissions that are granted to s
 ### EU supported account
 {: #adoption_archive_5}
 
-When you archive logs from the Frankfurt LogDNA instance to an {{site.data.keyword.cos_full_notm}} (COS) bucket, consider the following information:
+When you archive logs from the Frankfurt logging instance to an {{site.data.keyword.cos_full_notm}} (COS) bucket, consider the following information:
 * When you provision an instance of the COS service, this instance is a global one in your account. It is not region bound.
 * You must configure a bucket that complies with the EU-Supported and GDPR regulations. For the list of COS EU-supported endpoints, see [EU-supported endpoints](/docs/cloud-object-storage?topic=cloud-object-storage-endpoints#endpoints-eu-managed).
 
@@ -635,7 +635,7 @@ In COS, you can track management and data events.
 * You must configure each bucket to enable management events, or management and data events. Notice that you cannot enable data events only for a bucket. 
 For more information, see [Activity Tracker events](/docs/cloud-object-storage?topic=cloud-object-storage-at-events).
 
-**Enable collection of COS management and data events on the bucket that you use to archive data from a LogDNA instance. Use these events to monitor activity in your COS bucket.**
+**Enable collection of COS management and data events on the bucket that you use to archive data from a logging instance. Use these events to monitor activity in your COS bucket.**
 {: tip}
 
 In {{site.data.keyword.at_full}}, you can define views, dashboard, and screens to monitor COS management and data events. You can also configure alerts on views to notify you when a specific condition occurs. On a view, you can configure an email alert, a Slack alert, a PagerDuty alert, or any combination of the above. For more information, see [Creating custom views](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-view_logs#view_logs_step7) and [Managing alerts](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-alerts).
@@ -648,7 +648,7 @@ For example, you can define a view that reports when an object is archived in a 
 ### Archived file
 {: #adoption_archive_7}
 
-Although you define policies to manage your COS objects (LogDNA archived files) at the bucket level, there might be situations where you need to hold on to specific files for longer for compliance and auditing purposes. In COS, you can set different attributes per object that allow you to meet this requirements.
+Although you define policies to manage your COS objects (logging archived files) at the bucket level, there might be situations where you need to hold on to specific files for longer for compliance and auditing purposes. In COS, you can set different attributes per object that allow you to meet this requirements.
 
 * You can define a **legal hold** flag to an archive file. Legal holds can be applied to objects during initial uploads or after an object is written. [Learn more](/docs/cloud-object-storage?topic=cloud-object-storage-immutable#immutable-terminology-hold).
 * You can define an **indefinite retention** flag to store the object indefinitely until a new retention period is applied. [Learn more](/docs/cloud-object-storage?topic=cloud-object-storage-immutable#immutable-terminology-indefinite).

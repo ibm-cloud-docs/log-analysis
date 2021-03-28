@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years:  2018, 2020
-lastupdated: "2020-06-22"
+  years:  2018, 2021
+lastupdated: "2021-03-28"
 
 keywords: LogDNA, IBM, Log Analysis, logging, ingestion key
 
@@ -39,7 +39,7 @@ To get the ingestion key for an {{site.data.keyword.la_full_notm}} instance by u
 
 1. [Log in to your {{site.data.keyword.cloud_notm}} account](https://cloud.ibm.com/login){: external}.
 
-2. Go to the Menu icon ![Menu icon](../icons/icon_hamburger.svg) &gt; **Observability**. 
+2. Go to the Menu icon ![Menu icon](../../icons/icon_hamburger.svg) &gt; **Observability**. 
 
 3. Select **Logging**. The {{site.data.keyword.la_full_notm}} dashboard opens. You can see the list of logging instances that are available on {{site.data.keyword.cloud_notm}}.
 
@@ -57,7 +57,7 @@ To get the ingestion key for an {{site.data.keyword.la_full_notm}} instance by u
 
 1. [Launch the {{site.data.keyword.la_full_notm}} web UI](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-view_logs#view_logs_step2).
 
-2. Click the **Configuration** icon ![Configuration icon](images/admin.png) &gt; **Organization** &gt; **API keys**. 
+2. Click the **Configuration** icon ![Configuration icon](../images/admin.png) &gt; **Organization** &gt; **API keys**. 
 
     You can see the ingestion keys that are enabled. 
 
@@ -70,13 +70,13 @@ To get the ingestion key for an {{site.data.keyword.la_full_notm}} instance by u
 ## Getting the ingestion key through the CLI
 {: #ingestion_key_cli}
 
-To get the ingestion key for a LogDNA instance through the command line, complete the following steps:
+To get the ingestion key for a logging instance through the command line, complete the following steps:
 
 1. [Pre-requisite] [Install the {{site.data.keyword.cloud_notm}} CLI](/docs/cli?topic=cli-install-ibmcloud-cli).
 
-2. Log in to the region in the {{site.data.keyword.cloud_notm}} where the LogDNA instance is running. Run the following command: [ibmcloud login](/docs/cli?topic=cli-ibmcloud_cli#ibmcloud_login)
+2. Log in to the region in the {{site.data.keyword.cloud_notm}} where the logging instance is running. Run the following command: [ibmcloud login](/docs/cli?topic=cli-ibmcloud_cli#ibmcloud_login)
 
-3. Set the resource group where the LogDNA instance is running. Run the following command: [ibmcloud target](/docs/cli?topic=cli-ibmcloud_cli#ibmcloud_target)
+3. Set the resource group where the logging instance is running. Run the following command: [ibmcloud target](/docs/cli?topic=cli-ibmcloud_cli#ibmcloud_target)
 
     By default, the `default` resource group is set.
 
@@ -87,7 +87,7 @@ To get the ingestion key for a LogDNA instance through the command line, complet
     ```
     {: pre}
 
-5. Get the name of the key that is associated with the LogDNA instance. Run the [ibmcloud resource service-keys](/docs/cli?topic=cli-ibmcloud_commands_resource#ibmcloud_resource_service_keys) command:
+5. Get the name of the key that is associated with the logging instance. Run the [ibmcloud resource service-keys](/docs/cli?topic=cli-ibmcloud_commands_resource#ibmcloud_resource_service_keys) command:
 
     ```
     ibmcloud resource service-keys --instance-name INSTANCE_NAME
@@ -120,7 +120,7 @@ To renew the ingestion key for an {{site.data.keyword.la_full_notm}} instance by
 
 1. [Launch the {{site.data.keyword.la_full_notm}} web UI](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-view_logs#view_logs_step2).
 
-2. Click the **Configuration** icon ![Configuration icon](images/admin.png) &gt; **Organization**. 
+2. Click the **Configuration** icon ![Configuration icon](../images/admin.png) &gt; **Organization**. 
 
 3. Select **API keys**.
 

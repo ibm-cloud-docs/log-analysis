@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years:  2018, 2020
-lastupdated: "2020-07-30"
+  years:  2018, 2021
+lastupdated: "2021-03-28"
 
 keywords: LogDNA, IBM, Log Analysis, logging, update logging agent
 
@@ -74,10 +74,10 @@ Complete the following steps from the command line to upgrade the logging agent 
    {: pre}
 
 
-## Step 2. Backup the yaml file of the logging agent that is deployed in the cluster
+## Step 2. Backup the YAML file of the logging agent that is deployed in the cluster
 {: #upgrade_logdna_agent_2_step2}
 
-Run the following command to backup the yaml file of the logging agent that is currently deployed in your cluster:
+Run the following command to backup the YAML file of the logging agent that is currently deployed in your cluster:
 
 ```
 kubectl get ds logdna-agent -o yaml > logdna-agent-<clusterName>-<date>.yaml
@@ -177,8 +177,8 @@ kubectl get pods
 {: pre}
 
 
-The deployment is successful when you see one or more LogDNA pods.
-* **The number of LogDNA pods equals the number of worker nodes in your cluster.**
+The deployment is successful when you see one or more logging pods.
+* **The number of logging pods equals the number of worker nodes in your cluster.**
 * All pods must be in a `Running` state.
 
 

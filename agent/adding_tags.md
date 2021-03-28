@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years:  2018, 2020
-lastupdated: "2020-05-11"
+  years:  2018, 2021
+lastupdated: "2021-03-28"
 
 keywords: LogDNA, IBM, Log Analysis, logging, config agent
 
@@ -151,7 +151,7 @@ Complete the following steps to add more tags to the logging agent:
     {: codeblock}
 
 
-You can also edit the LogDNA configuration file and add tags. The configuration file is located in */etc/logdna.conf*.
+You can also edit the agent configuration file and add tags. The configuration file is located in */etc/logdna.conf*.
 
 1. Edit the file.
 

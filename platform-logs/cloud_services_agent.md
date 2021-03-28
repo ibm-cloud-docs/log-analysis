@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years:  2018, 2020
-lastupdated: "2020-07-27"
+  years:  2018, 2021
+lastupdated: "2021-03-28"
 
 keywords: LogDNA, IBM, Log Analysis, logging, services
 
@@ -30,7 +30,7 @@ subcollection: Log-Analysis-with-LogDNA
 List of {{site.data.keyword.cloud}} services that send logs to a custom {{site.data.keyword.la_full_notm}} instance. These services require additional configuration, for example, they may require to configure a logging agent.
 {:shortdesc}
 
-You can choose the LogDNA instance where you want to collect service logs. You can choose to send logs to the logging instance that has the **platform logs** flag, or to a custom instance in your account.
+You can choose the logging instance where you want to collect service logs. You can choose to send logs to the logging instance that has the **platform logs** flag, or to a custom instance in your account.
 
 
 
@@ -64,7 +64,7 @@ To see the list of {{site.data.keyword.la_full_notm}} locations where you can se
 ## Cloud Foundry
 {: #cloud_services_agent_cfapps}
 
-You can configure a CF app to forward logs to a custom LogDNA instance by using Syslog drains. [Learn more](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-monitor_cfapp_logs#monitor_cfapp_logs_drains).
+You can configure a CF app to forward logs to a custom logging instance by using Syslog drains. [Learn more](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-monitor_cfapp_logs#monitor_cfapp_logs_drains).
 
 
 
