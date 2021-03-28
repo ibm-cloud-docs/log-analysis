@@ -25,7 +25,7 @@ subcollection: Log-Analysis-with-LogDNA
 # Getting started tutorial
 {: #getting-started}
 
-Use {{site.data.keyword.la_full}} to add log management capabilities to your {{site.data.keyword.cloud_notm}} architecture. {{site.data.keyword.la_full_notm}} is operated by logging in partnership with {{site.data.keyword.IBM_notm}}.
+Use {{site.data.keyword.la_full}} to add log management capabilities to your {{site.data.keyword.cloud_notm}} architecture.
 {:shortdesc}
 
 You can use {{site.data.keyword.la_full_notm}} to manage system and application logs in the {{site.data.keyword.cloud_notm}}.
