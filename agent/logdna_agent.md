@@ -35,7 +35,7 @@ The logging agent is responsible for collecting and forwarding logs to your {{si
 * The logging agent tails for new log data, and looks for new files that are added to the logging directories that the agent monitors.
 
 
-## logging agent for Kubernetes clusters
+## Logging agent for Kubernetes clusters
 {: #logdna_agent_image_kube}
 
 logging agent images for Kubernetes clusters are public images that are available in {{site.data.keyword.cloud_notm}} through the [{{site.data.keyword.registrylong_notm}}](/docs/Registry?topic=Registry-getting-started) service. 
@@ -156,7 +156,7 @@ To stop your Kubernetes cluster from sending logs to your {{site.data.keyword.la
 {: caption="Table 10. Detaching a logging agent from a cluster" caption-side="top"}
 
 
-## logging agent for Linux
+## Logging agent for Linux
 {: #logdna_agent_image_linux}
 
 
