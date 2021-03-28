@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years:  2018, 2020
-lastupdated: "2020-07-30"
+  years:  2018, 2021
+lastupdated: "2021-03-28"
 
 keywords: LogDNA, IBM, Log Analysis, logging, update logging agent
 
@@ -177,8 +177,8 @@ kubectl get pods
 {: pre}
 
 
-The deployment is successful when you see one or more LogDNA pods.
-* **The number of LogDNA pods equals the number of worker nodes in your cluster.**
+The deployment is successful when you see one or more logging pods.
+* **The number of logging pods equals the number of worker nodes in your cluster.**
 * All pods must be in a `Running` state.
 
 

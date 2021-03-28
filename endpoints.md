@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2021
-lastupdated: "2021-03-24"
+lastupdated: "2021-03-28"
 
 keywords: LogDNA, IBM, Log Analysis, logging, endpoints
 
@@ -132,10 +132,10 @@ The following table shows the private ingestion endpoints:
 
 
 
-## LogDNA web UI endpoints
+## logging web UI endpoints
 {: #endpoints_logdna_ui}
 
-The following table shows the LogDNA web UI endpoints:
+The following table shows the logging web UI endpoints:
 
 | Region                   |  Public Endpoint                                   |
 |--------------------------|----------------------------------------------------|
@@ -148,7 +148,7 @@ The following table shows the LogDNA web UI endpoints:
 | `Seoul (kr-seo)`         | `https://app.kr-seo.logging.cloud.ibm.com`         |
 | `Sydney (au-syd)`        | `https://app.au-syd.logging.cloud.ibm.com`         |
 | `Washington (us-east)`   | `https://app.us-east.logging.cloud.ibm.com`         |
-{: caption="Table 5. Lists of LogDNA web UI endpoints" caption-side="top"}
+{: caption="Table 5. Lists of logging web UI endpoints" caption-side="top"}
 
 
 

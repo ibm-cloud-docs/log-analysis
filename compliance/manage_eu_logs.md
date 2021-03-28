@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years:  2018, 2020
-lastupdated: "2020-07-01"
+  years:  2018, 2021
+lastupdated: "2021-03-28"
 
 keywords: LogDNA, IBM, Log Analysis, logging, overview
 
@@ -78,11 +78,11 @@ Check out the list of {{site.data.keyword.cloud_notm}} resources that automatica
 ## Step 4. Configure your logging agents
 {: #manage_eu_logs_step4}
 
-When you configure a logging agent for a resource such as a Kubernetes cluster, you specify to which instance that agent connects. You can only connect 1 agent per resource to a LogDNA instance. 
+When you configure a logging agent for a resource such as a Kubernetes cluster, you specify to which instance that agent connects. You can only connect 1 agent per resource to a logging instance. 
 
 If you have agents that collect logs from resources, apps and services that run in the {{site.data.keyword.cloud_notm}} or outside the {{site.data.keyword.cloud_notm}}, and that must be EU-supported, you need to configure your agents to forward data to a logging instance in Frankfurt. Learn more:
-* [Connect a standard Kubernetes cluster to an IBM Log Analysis with LogDNA instance by using a logging agent](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-config_agent_kube_cluster)
-* [Connect an OpenShift Kubernetes cluster to an IBM Log Analysis with LogDNA instance by using a logging agent](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-config_agent_os_cluster)
+* [Connect a standard Kubernetes cluster to an IBM Log Analysis with logging instance by using a logging agent](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-config_agent_kube_cluster)
+* [Connect an OpenShift Kubernetes cluster to an IBM Log Analysis with logging instance by using a logging agent](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-config_agent_os_cluster)
 * [Connecting a logging agent to a Linux Ubuntu or Debian](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-config_agent_linux)
 
 Learn more about how to detach an agent, see [Disconnecting a logging agent](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-detach_agent).
@@ -124,15 +124,15 @@ To grant viewer permissions to users, complete the following steps:
 
 To make the EU-DE (Frankfurt) location `EU-Supported`, the web UI export functionality is not available for instances that are provisioned in Frankfurt. In addition, you cannot use the API to export data to an email address. 
 
-You can export data to a local file or to a terminal by using the LogDNA export API and a service key. Only administrators can create service keys. Users can view them. Service keys are only used to export data from your instance by using the API.
+You can export data to a local file or to a terminal by using the logging export API and a service key. Only administrators can create service keys. Users can view them. Service keys are only used to export data from your instance by using the API.
 
-Notice that users in the account that have permissions to view logs through the LogDNA web UI can export data by using the API if they have an active service key. A user, with a policy in IAM to view logs, can also view service keys that an administrator has created. If you do not want users to be able to export data locally, service keys must be deleted. 
+Notice that users in the account that have permissions to view logs through the logging web UI can export data by using the API if they have an active service key. A user, with a policy in IAM to view logs, can also view service keys that an administrator has created. If you do not want users to be able to export data locally, service keys must be deleted. 
 
 
 ## Step 7. Archiving logs
 {: #manage_eu_logs_step7}
 
-When you archive logs from a LogDNA instance to a COS bucket, consider the following information:
+When you archive logs from a logging instance to a COS bucket, consider the following information:
 * When you provision an instance of the COS service, this instance is a global one in your account. It is not region bound.
 * You must configure a bucket that complies with the EU-Supported and GDPR regulations. For the list of COS EU-supported endpoints, see [EU-supported endpoints](/docs/cloud-object-storage?topic=cloud-object-storage-endpoints#endpoints-eu-managed).
 
@@ -147,7 +147,7 @@ When you archive logs from a LogDNA instance to a COS bucket, consider the follo
 * You must restrict user access to manage archived log files in these buckets.  
 * Users are responsible for downloading files to EU-supported locations.
 
-To learn how to configure archiving for your LogDNA instance, see [Archiving logs](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-archiving).
+To learn how to configure archiving for your logging instance, see [Archiving logs](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-archiving).
 
 
 

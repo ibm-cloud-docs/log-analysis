@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2021
-lastupdated: "2021-03-24"
+lastupdated: "2021-03-28"
 
 keywords: LogDNA, IBM, Log Analysis, logging, api
 
@@ -33,7 +33,7 @@ You can use the *Configuration REST API* to manage programmatically views and al
 - You can use the **PUT** method to modify an existing view, and alerts that are attached to views.
 - You can use the **DELETE** method to delete a view and associated alerts.
 
-Before you run any automated tasks, consider doing a back up of your account configuration resources. You can use the back up to restore the resources, to the state before any change is applied, if you encounter problems. See [Export the configuration of resources in a LogDNA instance](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-reuse_resource_definitions#export_config_res).
+Before you run any automated tasks, consider doing a back up of your account configuration resources. You can use the back up to restore the resources, to the state before any change is applied, if you encounter problems. See [Export the configuration of resources in a logging instance](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-reuse_resource_definitions#export_config_res).
 {: tip}
 
 
@@ -52,10 +52,10 @@ When you create a view, consider the following information:
 - You can define body parameters to refine the data that is displayed through the view. You must specify 1 or more of the following body parameters: query, apps, levels, hosts, or tags.
 
 When you create a PagerDuty notification channel, you need to do the following:
-- You must manually configure the integration of LogDNA with PagerDuty. See [Integrating with PagerDuty](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-pagerduty).
-- You must provide LogDNA with the PagerDuty API key. 
+- You must manually configure the integration of logging with PagerDuty. See [Integrating with PagerDuty](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-pagerduty).
+- You must provide logging with the PagerDuty API key. 
 
-After you create a view, check the view in the LogDNA web UI. 
+After you create a view, check the view in the logging web UI. 
 1. Refresh the browser to see the view listed in the *Views* section. 
 2. Select the view to display it.
 3. Check the data that is available through the view is the one that you expect.
@@ -90,7 +90,7 @@ If you try to define a view and you do not define any of the following body para
 
 When you modify a view, consider the following information:
 - You must specify the name and the view ID of the view. 
-- If you are viewing a view in the LogDNA web UI, the view is not refreshed automatically after you run an API request to modify the view. To refresh the view in the UI, you must navigate to the `Everything` view and back to the view.
+- If you are viewing a view in the logging web UI, the view is not refreshed automatically after you run an API request to modify the view. To refresh the view in the UI, you must navigate to the `Everything` view and back to the view.
 
 An API request to modify a view replaces the existing view definition and associated alerts with your request body data. Any properties that are not specified in your PUT request will be removed.
 {: important}
@@ -120,7 +120,7 @@ The following table outlines the actions that you can run to manage views and al
 | Create a view and attach an alert to a view.                            | `POST`   | `<ENDPOINT>/v1/config/view`          |
 | Modify an existing view and the alerts that are attached to the view.   | `PUT`    | `<ENDPOINT>/v1/config/view/<VIEWID>` |
 | Delete a view and its associated alerts.                                | `DELETE` | `<ENDPOINT>/v1/config/view/<VIEWID>` |
-{: caption="Table 1. LogDNA Configuration API endpoints" caption-side="top"}
+{: caption="Table 1. logging Configuration API endpoints" caption-side="top"}
 
 Where `<VIEWID>` represents the ID of a view.
 
@@ -133,12 +133,12 @@ Depending on [your account settings](/docs/account?topic=account-service-endpoin
 ## Authentication
 {: #config_api_authentication}
 
-When you manage views and alerts programmatically, you must use a service key. Authorization to the LogDNA Configuration API is enforced by using a service key.
+When you manage views and alerts programmatically, you must use a service key. Authorization to the logging Configuration API is enforced by using a service key.
 {: note} 
 
 A service key is a unique code that is passed in an API request to identify the calling application or user. The service key is specific to an auditing instance. For more information on how to generate a service key, see [Managing service keys](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-service_keys).
 
-Use of the LogDNA Configuration REST API is done by adding a valid service key to the HTTP Authorization request header. You must pass the service key as a header parameter (`-H`) of your requests.
+Use of the logging Configuration REST API is done by adding a valid service key to the HTTP Authorization request header. You must pass the service key as a header parameter (`-H`) of your requests.
 
 For example, in a cURL request, you must set the `content-type` header as follows:
 
@@ -195,7 +195,7 @@ The following table indicates when the `name` parameter is required:
 
 Specifies the search query that is applied to the view.
 
-Check the query in the LogDNA web UI to validate that the data that is displayed through the view matches the data entry that you plan to monitor through that view.
+Check the query in the logging web UI to validate that the data that is displayed through the view matches the data entry that you plan to monitor through that view.
 {: tip}
 
 ### hosts (array of strings)
@@ -203,7 +203,7 @@ Check the query in the LogDNA web UI to validate that the data that is displayed
 
 Specifies the list of services from which you want to view data.
 
-In the LogDNA web UI, the value that is set for **Source** in the **Line identifiers** section corresponds to the hosts value of the service that generates that log.
+In the logging web UI, the value that is set for **Source** in the **Line identifiers** section corresponds to the hosts value of the service that generates that log.
 
 For example, to enter multiple hosts, you must separate the hosts with a comma:
 
@@ -291,10 +291,10 @@ For example, to associate a view to a category named `My category`, you can set 
 
 
 
-## Examples of using the LogDNA Configuration API
+## Examples of using the logging Configuration API
 {: #config_api-samples}
 
-The following are examples of how to use the LogDNA Configuration API.
+The following are examples of how to use the logging Configuration API.
 
 A category must exist before you create a view. In these examples, replace `<MY_CATEGORY>` with your category. 
 {: note}

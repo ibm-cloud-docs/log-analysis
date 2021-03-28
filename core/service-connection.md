@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018, 2021
-lastupdated: "2021-03-24"
+lastupdated: "2021-03-28"
 
 keywords: LogDNA, IBM, Log Analysis, logging, security, connection
 
@@ -57,7 +57,7 @@ The type of network defines the level of isolation and security that is configur
 Private network endpoints support routing services over the {{site.data.keyword.cloud_notm}} Private network instead of the public network. 
 
 * A private network endpoint provides a unique IP address that is accessible to you without a VPN connection.
-* Private endpoints work between regions offering a global network. You can run your applications and services in Dallas, and connect to a LogDNA instance in Sydney with a private endpoint.
+* Private endpoints work between regions offering a global network. You can run your applications and services in Dallas, and connect to a logging instance in Sydney with a private endpoint.
 
 
 
@@ -119,7 +119,7 @@ What happens when you configure the logging agent to use a private endpoint?
 
 Consider the following limitations:
 * Ingestion endpoints of type `syslog-tcp (syslog-a)` and `syslog-udp (syslog-u)` are not currently supported on the Cloud Service Endpoint (CSE) network. 
-* The LogDNA web UI is not currently supported on the private network.
+* The logging web UI is not currently supported on the private network.
 
 
 

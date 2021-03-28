@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years:  2018, 2020
-lastupdated: "2020-11-20"
+  years:  2018, 2021
+lastupdated: "2021-03-28"
 
 keywords: LogDNA, IBM, Log Analysis, logging, ubuntu, tutorial
 
@@ -168,16 +168,16 @@ To provision an instance of {{site.data.keyword.la_full_notm}} through the {{sit
 
 After you provision an instance, the {{site.data.keyword.la_full_notm}} dashboard opens. 
 
-To provision an instance of LogDNA through the CLI, see [Provisioning LogDNA through the {{site.data.keyword.cloud_notm}} CLI](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-provision#provision_cli).
+To provision an instance of logging through the CLI, see [Provisioning logging through the {{site.data.keyword.cloud_notm}} CLI](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-provision#provision_cli).
 {: note}
 
 
 ## Step 3. Configure a bare metal to send logs to your logging instance
 {: #ubuntu-baremetal_step3}
 
-To configure your bare metal to send logs to your {{site.data.keyword.la_full_notm}} instance, you must install a `logdna-agent`. The logging agent reads log files from `/var/log` or other directories you specify, and forwards the log data to your LogDNA instance.
+To configure your bare metal to send logs to your {{site.data.keyword.la_full_notm}} instance, you must install a `logdna-agent`. The logging agent reads log files from `/var/log` or other directories you specify, and forwards the log data to your logging instance.
 
-To configure your bare metal to forward logs to your LogDNA instance, complete the following steps from an Ubuntu terminal:
+To configure your bare metal to forward logs to your logging instance, complete the following steps from an Ubuntu terminal:
 
 1. Install the logging agent. Run the following commands:
 
@@ -260,7 +260,7 @@ To configure your bare metal to forward logs to your LogDNA instance, complete t
    {: pre}
 
 
-## Step 4. Launch the LogDNA Web UI
+## Step 4. Launch the logging Web UI
 {: #ubuntu-baremetal_step4}
 
 To launch the {{site.data.keyword.la_full_notm}} dashboard from the {{site.data.keyword.cloud_notm}} UI, complete the following steps:
@@ -279,13 +279,13 @@ To launch the {{site.data.keyword.la_full_notm}} dashboard from the {{site.data.
 
 4. Select one instance. Then, click **View LogDNA**.
 
-   The LogDNA Web UI opens and displays your cluster logs.
+   The logging Web UI opens and displays your cluster logs.
 
 
 ## Step 5. View your logs
 {: #ubuntu-baremetal_step5}
 
-From the LogDNA Web UI, you can view your logs as they pass through the system. You view logs by using log tailing. 
+From the logging Web UI, you can view your logs as they pass through the system. You view logs by using log tailing. 
 
 With the **Free** service plan, you can only tail your latest logs.
 {: note}

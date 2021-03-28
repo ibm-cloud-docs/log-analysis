@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years:  2018, 2020
-lastupdated: "2020-03-25"
+  years:  2018, 2021
+lastupdated: "2021-03-28"
 
 keywords: LogDNA, IBM, Log Analysis, logging, overview, personal data, data deletion, PHI, data, data security, _service-name_
 
@@ -60,15 +60,15 @@ You can enable virtual routing and forwarding (VRF) to move IP routing for your 
 * Log data is hosted on the {{site.data.keyword.cloud_notm}}. The {{site.data.keyword.la_full_notm}} service is operated by LogDNA.
 * Data is collocated in the location where the {{site.data.keyword.la_full_notm}} instance is provisioned. For example, log data for an instance that is provisioned in `US South` is hosted in the `US South` region.
 * Data from {{site.data.keyword.cloud_notm}} services is collected and aggregated in each {{site.data.keyword.cloud_notm}} location where the service is available. 
-* Data forwarded by a logging agent is collected and aggregated in the location where the LogDNA instance configured for an agent is available.
+* Data forwarded by a logging agent is collected and aggregated in the location where the logging instance configured for an agent is available.
 
 
 ### Data encryption
 {: #data-storage_encryption}
 
-All the data that is hosted in a LogDNA instance is encrypted at rest using **AES 256**.
+All the data that is hosted in a logging instance is encrypted at rest using **AES 256**.
 
-When a logging agent sends data to a LogDNA instance, data is encrypted in transit over HTTPS.
+When a logging agent sends data to a logging instance, data is encrypted in transit over HTTPS.
 
 When a user requests an export, the data is encrypted during transit, and is also encrypted at rest in {{site.data.keyword.cos_full_notm}} (COS).
 
@@ -78,7 +78,7 @@ When a user requests an export, the data is encrypted during transit, and is als
 
 The service plan that you choose for an {{site.data.keyword.la_full_notm}} instance defines the number of days that data is stored and retained in LogDNA. 
 
-For example, if you choose the *Lite* plan, data is not stored at all. However, if you choose the 7-day plan, data is stored for 7 days and you have access to it through the LogDNA Web UI.
+For example, if you choose the *Lite* plan, data is not stored at all. However, if you choose the 7-day plan, data is stored for 7 days and you have access to it through the logging Web UI.
 
 
 
@@ -87,7 +87,7 @@ For example, if you choose the *Lite* plan, data is not stored at all. However, 
 
 You can archive logs from an {{site.data.keyword.la_full_notm}} instance into a bucket in an {{site.data.keyword.cos_full_notm}} (COS) instance. [Learn more](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-archiving).
 
-When data is archived, data going from LogDNA to {{site.data.keyword.cos_full_notm}} (COS) is encrypted in transit over HTTPS.
+When data is archived, data going from logging to {{site.data.keyword.cos_full_notm}} (COS) is encrypted in transit over HTTPS.
 
 You must configure archiving to a COS instance if you want to backup your logs for long term storage.
 
@@ -112,9 +112,9 @@ Consider the following information when you export log data:
 ### Deleting logs when an instance is deleted
 {: #service-delete-logs}
 
-When you delete a LogDNA instance, the instance is automatically deactivated, and ingestion of logs is stopped. [Learn more](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-remove).
+When you delete a logging instance, the instance is automatically deactivated, and ingestion of logs is stopped. [Learn more](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-remove).
 
-LogDNA deletes all logs that are already ingested. Deletion is completed within 24 hours after receiving your request.
+logging deletes all logs that are already ingested. Deletion is completed within 24 hours after receiving your request.
 
 You are responsible for deleting archived logs. 
 
@@ -122,7 +122,7 @@ You are responsible for deleting archived logs.
 ### Deleting metadata when an instance is deleted
 {: #service-delete-metadata}
 
-When you delete a LogDNA instance, user metadata such as views, alerts, dashboards, screens, and templates, is never deleted. 
+When you delete a logging instance, user metadata such as views, alerts, dashboards, screens, and templates, is never deleted. 
 
 You must open a case through support to request the data to be deleted. For more information, see [Open a support ticket](/docs/get-support).
 

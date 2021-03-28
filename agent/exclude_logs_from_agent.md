@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2021
-lastupdated: "2021-03-24"
+lastupdated: "2021-03-28"
 
 keywords: LogDNA, IBM, Log Analysis, logging, config agent
 
@@ -163,7 +163,7 @@ Complete the following steps:
     ```
     {: codeblock}
 
-2. If pods are not restarted, delete all the logdna pods.
+2. If pods are not restarted, delete all the logging pods.
 
     ```
     kubectl delete pod PodName -n ibm-observe

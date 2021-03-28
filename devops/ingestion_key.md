@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years:  2018, 2020
-lastupdated: "2020-06-22"
+  years:  2018, 2021
+lastupdated: "2021-03-28"
 
 keywords: LogDNA, IBM, Log Analysis, logging, ingestion key
 
@@ -70,13 +70,13 @@ To get the ingestion key for an {{site.data.keyword.la_full_notm}} instance by u
 ## Getting the ingestion key through the CLI
 {: #ingestion_key_cli}
 
-To get the ingestion key for a LogDNA instance through the command line, complete the following steps:
+To get the ingestion key for a logging instance through the command line, complete the following steps:
 
 1. [Pre-requisite] [Install the {{site.data.keyword.cloud_notm}} CLI](/docs/cli?topic=cli-install-ibmcloud-cli).
 
-2. Log in to the region in the {{site.data.keyword.cloud_notm}} where the LogDNA instance is running. Run the following command: [ibmcloud login](/docs/cli?topic=cli-ibmcloud_cli#ibmcloud_login)
+2. Log in to the region in the {{site.data.keyword.cloud_notm}} where the logging instance is running. Run the following command: [ibmcloud login](/docs/cli?topic=cli-ibmcloud_cli#ibmcloud_login)
 
-3. Set the resource group where the LogDNA instance is running. Run the following command: [ibmcloud target](/docs/cli?topic=cli-ibmcloud_cli#ibmcloud_target)
+3. Set the resource group where the logging instance is running. Run the following command: [ibmcloud target](/docs/cli?topic=cli-ibmcloud_cli#ibmcloud_target)
 
     By default, the `default` resource group is set.
 
@@ -87,7 +87,7 @@ To get the ingestion key for a LogDNA instance through the command line, complet
     ```
     {: pre}
 
-5. Get the name of the key that is associated with the LogDNA instance. Run the [ibmcloud resource service-keys](/docs/cli?topic=cli-ibmcloud_commands_resource#ibmcloud_resource_service_keys) command:
+5. Get the name of the key that is associated with the logging instance. Run the [ibmcloud resource service-keys](/docs/cli?topic=cli-ibmcloud_commands_resource#ibmcloud_resource_service_keys) command:
 
     ```
     ibmcloud resource service-keys --instance-name INSTANCE_NAME

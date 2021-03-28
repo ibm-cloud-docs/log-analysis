@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years:  2018, 2020
-lastupdated: "2020-07-02"
+  years:  2018, 2021
+lastupdated: "2021-03-28"
 
 keywords: LogDNA, IBM, Log Analysis, logging, config agent
 
@@ -22,15 +22,15 @@ subcollection: Log-Analysis-with-LogDNA
 {:note: .note}
 {:external: target="_blank" .external}
 
-# Reusing definitions of LogDNA resources
+# Reusing definitions of logging resources
 {: #reuse_resource_definitions}
 
-To avoid recreating definitions of views, boards, parsing templates, and exclusion rules, you can export these resources from a {{site.data.keyword.la_full_notm}} instance as a JSON file. Then, you can import the definitions into other LogDNA instances.
+To avoid recreating definitions of views, boards, parsing templates, and exclusion rules, you can export these resources from a {{site.data.keyword.la_full_notm}} instance as a JSON file. Then, you can import the definitions into other logging instances.
 {:shortdesc}
 
 
 
-## Export the configuration of resources in a LogDNA instance
+## Export the configuration of resources in a logging instance
 {: #export_config_res}
 
 Complete the following steps to export the configuration of your resources:
@@ -43,14 +43,14 @@ Complete the following steps to export the configuration of your resources:
 
 4. In the *Export configuration* section, select the types of resources that you want to export.
 
-    Notice that options are disabled if you do not have definitions of this type of resource in your LogDNA instance. 
+    Notice that options are disabled if you do not have definitions of this type of resource in your logging instance. 
 
     You can export views and alerts, boards, parsing templates, and exclusion rules. 
 
 5. Select **Export configuration** and save the file.
 
 
-## Import the configuration of resources into a LogDNA instance
+## Import the configuration of resources into a logging instance
 {: #import_config}
 
 

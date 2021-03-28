@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years:  2018, 2020
-lastupdated: "2020-06-22"
+  years:  2018, 2021
+lastupdated: "2021-03-28"
 
 keywords: LogDNA, IBM, Log Analysis, logging, kubernetes, tutorial, reset ingestion key
 
@@ -111,7 +111,7 @@ Complete the following steps:
 
     **Note:** Every time you log in to the {{site.data.keyword.containerlong}} CLI to work with clusters, you must run these commands to set the path to the cluster's configuration file as a session variable. The Kubernetes CLI uses this variable to find a local configuration file and certificates that are necessary to connect with the cluster in {{site.data.keyword.cloud_notm}}.
 
-3. Remove the secret from your Kubernetes cluster. The Kubernetes secret contains the LogDNA ingestion key. Run the following command:
+3. Remove the secret from your Kubernetes cluster. The Kubernetes secret contains the logging ingestion key. Run the following command:
 
     ```
     kubectl delete secret logdna-agent-key -n ibm-observe
@@ -132,14 +132,14 @@ Complete the following steps:
     ```
     {: codeblock}
 
-    You should not see any LogDNA pods.
+    You should not see any logging pods.
 
 
 ## Step 3: Configure your Kubernetes cluster with the new ingestion key
 {: #kube_reset_step3}
 {: step}
 
-To configure your Kubernetes cluster in the `us-south` region to forward logs to your LogDNA instance, complete the following steps from the command line:
+To configure your Kubernetes cluster in the `us-south` region to forward logs to your logging instance, complete the following steps from the command line:
 
 1. Open a terminal. Then, log in to the {{site.data.keyword.cloud_notm}}. Run the following command and follow the prompts:
 
@@ -166,9 +166,9 @@ To configure your Kubernetes cluster in the `us-south` region to forward logs to
     ```
     {: codeblock}
 
-    The LOGDNA_INGESTION_KEY_FOR_YOUR_INSTANCE shows the LogDNA ingestion key for your instance.
+    The LOGDNA_INGESTION_KEY_FOR_YOUR_INSTANCE shows the logging ingestion key for your instance.
 
-    The Kubernetes secret contains the LogDNA ingestion key. The LogDNA ingestion key is used to authenticate the logging agent with the {{site.data.keyword.la_full_notm}} service. It is used to open a secure web socket to the ingestion server on the logging back-end system.
+    The Kubernetes secret contains the logging ingestion key. The logging ingestion key is used to authenticate the logging agent with the {{site.data.keyword.la_full_notm}} service. It is used to open a secure web socket to the ingestion server on the logging back-end system.
 
 4. Configure the logging agent on every worker(node) of your Kubernetes cluster. Run the following command:
 
@@ -189,7 +189,7 @@ To configure your Kubernetes cluster in the `us-south` region to forward logs to
     {: codeblock}
 
 
-## Step 4: Launch the LogDNA web UI
+## Step 4: Launch the logging web UI
 {: #kube_reset_step4}
 {: step}
 
@@ -207,14 +207,14 @@ Complete the following steps to launch the web UI:
 
 3. Select one instance. Then, click **View logs**.
 
-    The LogDNA web UI opens and displays your cluster logs.
+    The logging web UI opens and displays your cluster logs.
 
 
 ## Step 5: View your logs
 {: #kube_reset_step5}
 {: step}
 
-From the LogDNA web UI, you can view your logs as they pass through the system. You view logs by using log tailing. 
+From the logging web UI, you can view your logs as they pass through the system. You view logs by using log tailing. 
 
 With the **Lite** service plan, you can only tail your latest logs.
 {: note}

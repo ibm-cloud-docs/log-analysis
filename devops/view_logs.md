@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years:  2018, 2020
-lastupdated: "2020-07-02"
+  years:  2018, 2021
+lastupdated: "2021-03-28"
 
 keywords: LogDNA, IBM, Log Analysis, logging, logs
 
@@ -136,7 +136,7 @@ To create a group, select multiple values. Then, click **Save as group**. Enter 
 
 When you search log data, the search applies any log filters and time queries configured in that view.
 
-You can do simple searches (single term string search), compound search (multiple search terms and operators), field searches if the log line can be parsed, and others. For more information, see [How to Search Logs in LogDNA docs](https://docs.logdna.com/docs/search){: external}.
+You can do simple searches (single term string search), compound search (multiple search terms and operators), field searches if the log line can be parsed, and others. For more information, see [How to Search Logs](https://docs.logdna.com/docs/search){: external}.
 
 **Note:** AND and OR operators are case-sensitive and must be capitalized.
 

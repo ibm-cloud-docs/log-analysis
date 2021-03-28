@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2021
-lastupdated: "2021-03-24"
+lastupdated: "2021-03-28"
 
 keywords: LogDNA, IBM, Log Analysis, logging, services
 
@@ -106,11 +106,11 @@ The following table shows the locations where automatic collection of Cloud Foun
 ## Container services
 {: #cs_locations_container}
 
-You can choose the LogDNA instance where you want to collect {{site.data.keyword.containerlong}} service logs.
+You can choose the logging instance where you want to collect {{site.data.keyword.containerlong}} service logs.
 
-You can choose the LogDNA instance where you want to collect {{site.data.keyword.openshiftlong}} service logs.
+You can choose the logging instance where you want to collect {{site.data.keyword.openshiftlong}} service logs.
 
-You can monitor {{site.data.keyword.satellitelong}} service logs through the LogDNA instance that is configured with **service platform logs** in the same region that your {{site.data.keyword.satelliteshort}} location is managed from.
+You can monitor {{site.data.keyword.satellitelong}} service logs through the logging instance that is configured with **service platform logs** in the same region that your {{site.data.keyword.satelliteshort}} location is managed from.
 
 The following tables list the locations where automatic collection of registry service logs is enabled. You can monitor logs through the Log Analysis instance that is available in the same location as your database resources, if you enable one instance in this location to host service platform logs. For locations where you can provision a service instance but the {{site.data.keyword.la_full_notm}} service is not available, specific details about the location where you can monitor those logs is provided in each case. For more information, see [Analyzing logs for {{site.data.keyword.registrylong_notm}}](/docs/Registry?topic=Registry-registry_logs).
 
@@ -331,7 +331,7 @@ The following locations are valid for VPC Gen 1 and VPC Gen 2:
 
 | Service                                | `Dallas (us-south)`                                | `Washington (us-east)`               |
 |----------------------------------------|----------------------------------------------------|--------------------------------------|
-| VPN                                    | ![Checkmark icon](../images/checkmark-icon.svg) | `Logs are available through the LogDNA US-South instance` |
+| VPN                                    | ![Checkmark icon](../images/checkmark-icon.svg) | `Logs are available through the logging US-South instance` |
 | Flow Log Collector                     | ![Checkmark icon](../images/checkmark-icon.svg) | ![Checkmark icon](../images/checkmark-icon.svg) |
 {: caption="Table 22. VPC logs in America's locations" caption-side="top"}
 {: #cs-vpc-table-19}
