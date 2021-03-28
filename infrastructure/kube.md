@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years:  2018, 2020
-lastupdated: "2020-06-22"
+  years:  2018, 2021
+lastupdated: "2021-03-28"
 
 keywords: LogDNA, IBM, Log Analysis, logging, kubernetes, tutorial
 
@@ -48,7 +48,7 @@ To configure cluster-level logging for a Kubernetes cluster, you must complete t
 2. Provision a cluster, for example, a standard cluster on the {{site.data.keyword.containerlong_notm}}.
 3. Deploy and configure the logging agent in the cluster.
 
-![LogDNA component overview on the {{site.data.keyword.cloud_notm}}](../images/kube.png "LogDNA component overview on the {{site.data.keyword.cloud_notm}}")
+![Log Analysis component overview on the {{site.data.keyword.cloud_notm}}](../images/kube.png "Log Analysis component overview on the {{site.data.keyword.cloud_notm}}")
 
 
 
@@ -96,7 +96,7 @@ Your IBMid must have assigned IAM policies for each of the following resources i
 {: caption="Table 1. List of IAM policies required to complete the tutorial" caption-side="top"} 
 
 
-## Step 1. Configure your Kubernetes cluster to send logs to your LogDNA instance
+## Step 1. Configure your Kubernetes cluster to send logs to your Log Analysis instance
 {: #kube_step1}
 
 To configure your Kubernetes cluster to send logs to your {{site.data.keyword.la_full_notm}} instance, you must install the logging agent in the cluster. 
@@ -115,14 +115,14 @@ Choose one of the following options to deploy and configure the logging agent in
 ## [Optional] Step 2. Configure a cluster to forward API audit logs to LogDNA
 {: #kube_step2}
 
-If you want to analyze the cluster's API audit logs through the IBM Log Analysis with LogDNA instance, you must configure your cluster
+If you want to analyze the cluster's API audit logs through the IBM Log Analysis with Log Analysis instance, you must configure your cluster
 
 
 
 
 
 
-## Step 3. Launch the LogDNA dashboard to view and analyze logs
+## Step 3. Launch the Log Analysis dashboard to view and analyze logs
 {: #kube_step3}
 
 To analyze logs and generate alerts, you might need to upgrade your service plan. [Learn more about service plans](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-service_plans).
