@@ -16,12 +16,14 @@ subcollection: Log-Analysis-with-LogDNA
 # Release notes
 {: #LA-release-notes}
 
-Use these release notes to learn about the latest updates to {{site.data.keyword.la_full}} that are grouped by date.
+Use these release notes to learn about the latest updates to {{site.data.keyword.la_full}}.  Updates are grouped by date.
 {:shortdesc}
 
 
 ## March 2021
 {: #AT-march2021-for-update}
+
+This release includes the following functional enhancements:
 
 - The service name has changed from **IBM Log Analysis with LogDNA** to **IBM Log Analysis**.
 - New CLI added that can be used to list instances and export data from an instance. [Learn more about the CLI](/docs/Log-Analysis-with-LogDNA?topic=logdna-cli-plugin-logdna-cli).
