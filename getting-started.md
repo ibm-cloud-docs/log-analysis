@@ -28,9 +28,7 @@ subcollection: Log-Analysis-with-LogDNA
 Use {{site.data.keyword.la_full}} to add log management capabilities to your {{site.data.keyword.cloud_notm}} architecture.
 {:shortdesc}
 
-You can use {{site.data.keyword.la_full_notm}} to manage system and application logs in the {{site.data.keyword.cloud_notm}}.
-
-{{site.data.keyword.la_full_notm}} offers administrators, DevOps teams, and developers advanced features to filter, search, and tail log data, define alerts, and design custom views to monitor application and system logs.
+You can use {{site.data.keyword.la_full_notm}} to manage system and application logs in the {{site.data.keyword.cloud_notm}}. {{site.data.keyword.la_full_notm}} offers administrators, DevOps teams, and developers advanced features to filter, search, and tail log data, define alerts, and design custom views to monitor application and system logs. 
 
 ## Features
 {: #getting-started_features}
@@ -58,7 +56,7 @@ You can control the cost of your {{site.data.keyword.cloud_notm}} logging infras
 ## Overview
 {: #getting-started_ov}
 
-{{site.data.keyword.la_full_notm}} is a service hosted on the {{site.data.keyword.cloud_notm}} and operated by LogDNA.  The log data is stored on the {{site.data.keyword.cloud_notm}}.
+{{site.data.keyword.la_full_notm}} is a service hosted on the {{site.data.keyword.cloud_notm}} that is based on technology from LogDNA.  The log data is stored on the {{site.data.keyword.cloud_notm}}.
 
 Because {{site.data.keyword.la_full_notm}} is part of the {{site.data.keyword.cloud_notm}} users must have the following permissions:
 
@@ -69,7 +67,7 @@ To add logging features with logging in the {{site.data.keyword.cloud_notm}}, yo
 
 An {{site.data.keyword.la_full_notm}} instance is provisioned within the context of a resource group. Your services are organized for access control and billing purposes by using resource groups. You can provision the instance in the *default* resource group or in a custom resource group.
 
-After provisioning an instance of {{site.data.keyword.la_full_notm}}, an account is created in LogDNA, and you receive the ingestion key for your account.
+After provisioning an instance of {{site.data.keyword.la_full_notm}}, you receive the ingestion key for your account.
 
 After you have your ingestion key, you can configure your log sources:
 
