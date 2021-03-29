@@ -96,19 +96,20 @@ Use the following table to identify the platform role that you can grant a user 
 
 Use the following table to identify the service roles that you can grant a user to run any of the following service actions:
 
-| Actions                                                                 | Manager                                           | Standard-Member                              | Reader |
-|-------------------------------------------------------------------------|:-------------------------------------------------:|:--------------------------------------------:|:------:|
-| `Configure global settings`                                             | ![Check mark icon](check.png "Check mark icon indicating correct usage") |                                                   |   |
-| `Create and delete ingestion keys through the logging web UI`            | ![Check mark icon](check.png "Check mark icon indicating correct usage") |                                                   |   |
-| `Create and delete service keys through the logging web UI`              | ![Check mark icon](check.png "Check mark icon indicating correct usage") |                                                   |   |
-| `Add logging log sources`                                                | ![Check mark icon](check.png "Check mark icon indicating correct usage") |                                                   |   |
-| `Configure archiving`                                                   | ![Check mark icon](check.png "Check mark icon indicating correct usage") |                                                   |   |
-| `Manage parsing`                                                        | ![Check mark icon](check.png "Check mark icon indicating correct usage") |                                                   |   |
-| `Define exclusion rules`                                                | ![Check mark icon](check.png "Check mark icon indicating correct usage") |                                                   |   |
-| `Create and delete categories`                                          | ![Check mark icon](check.png "Check mark icon indicating correct usage") |                                                   |   |
-| `Manage how views and dashboards are grouped in categories`             | ![Check mark icon](check.png "Check mark icon indicating correct usage") |                                                   |   |
-| `Export the configuration of views, alerts, dashboards, and templates`  | ![Check mark icon](check.png "Check mark icon indicating correct usage") |                                                   |   |
-| `Export log data`                                                        | ![Check mark icon](check.png "Check mark icon indicating correct usage")  | ![Check mark icon](check.png "Check mark icon indicating correct usage") | |
+| Actions            | Manager           | Standard-Member        | Reader |
+|-------------|----------------------|----------------------------|----------|
+| `Configure global settings` | ![Check mark icon](check.png "Check mark icon indicating correct usage") |    |   |
+| `Manage groups`   | ![Check mark icon](images/checkmark-icon.svg "Check mark icon indicating correct usage") |  |  |
+| `Create and delete ingestion keys through the logging web UI`   | ![Check mark icon](check.png "Check mark icon indicating correct usage") |     |   |
+| `Create and delete service keys through the logging web UI`     | ![Check mark icon](check.png "Check mark icon indicating correct usage") |  |   |
+| `Add logging log sources`  | ![Check mark icon](check.png "Check mark icon indicating correct usage") |              |   |
+| `Configure archiving`  | ![Check mark icon](check.png "Check mark icon indicating correct usage") |    |   |
+| `Manage parsing`     | ![Check mark icon](check.png "Check mark icon indicating correct usage") |       |   |
+| `Define exclusion rules`   | ![Check mark icon](check.png "Check mark icon indicating correct usage") |       |   |
+| `Create and delete categories`    | ![Check mark icon](check.png "Check mark icon indicating correct usage") |       |   |
+| `Manage how views and dashboards are grouped in categories` | ![Check mark icon](check.png "Check mark icon indicating correct usage") |      |   |
+| `Export the configuration of views, alerts, dashboards, and templates`  | ![Check mark icon](check.png "Check mark icon indicating correct usage") |     |   |
+| `Export log data`     | ![Check mark icon](check.png "Check mark icon indicating correct usage")  | ![Check mark icon](check.png "Check mark icon indicating correct usage") | |
 | `View service keys through the logging web UI`                           | ![Check mark icon](check.png "Check mark icon indicating correct usage")      | ![Check mark icon](check.png "Check mark icon indicating correct usage") |     |
 | `Configure alerts`                                                      | ![Check mark icon](check.png "Check mark icon indicating correct usage")      | ![Check mark icon](check.png "Check mark icon indicating correct usage")                    |    |
 | `View usage`                                                            | ![Check mark icon](check.png "Check mark icon indicating correct usage")      | ![Check mark icon](check.png "Check mark icon indicating correct usage")                   |      |
@@ -125,5 +126,33 @@ Use the following table to identify the service roles that you can grant a user 
 
 The **manager** service role maps directly to the logging admin role.
 {: note}
+
+
+
+## IAM actions
+{: #iam_actions}
+
+The following table identifies the IAM actions that are assigned to the platform and service roles for the {{site.data.keyword.la_full_notm}} service:
+
+| Role type         | Role              | IAM actions |
+|-------------------|-------------------|--------------|
+| Platform          | `administrator`   | `logdna.dashboard.view` </br>`logdna.dashboard.manage` | 
+| Service           | `manager`         | `logdna.dashboard.view` </br>`logdna.dashboard.manage` |
+| Service           | `writer`          | `logdna.dashboard.view` </br>`logdna.dashboard.member` |
+| Service           | `reader`          | `logdna.dashboard.view` </br>`logdna.dashboard.read` |
+{: caption="Table 3. IAM actions assigned to platform and service roles" caption-side="top"}
+
+
+
+## How do I know which access policies are set for me?
+{: #iam_accesspolicy}
+
+You can see which access policies are set for you in the [{{site.data.keyword.cloud_notm}} UI](https://cloud.ibm.com/){: external} console.
+
+1. Go to [Access IAM users](https://cloud.ibm.com/iam/users){: external}.
+2. Click your name in the user table.
+3. Click the **Access policies** tab to see your access policies.
+4. Click the **Access groups** tab to see the access groups where you are a member. Check the policies for each group.
+
 
 
