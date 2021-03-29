@@ -66,9 +66,9 @@ To manage access or assign new access for users by using IAM policies, you must 
 
 Choose any of the following actions to manage IAM policies in the {{site.data.keyword.cloud_notm}}:
 
-* To grant permissions to a user, see [Assign access](/docs/account?topic=account-assign-access-resources#assign_new_access).
-* To revoke permissions, see [Removing access](/docs/account?topic=account-assign-access-resources#removing_access).
-* To review a user's permissions, see [Reviewing your assigned access](/docs/account?topic=account-assign-access-resources#review_your_access).
+* To grant permissions to a user, see [Assigning access](/docs/account?topic=account-assign-access-resources#assign-new-access).
+* To revoke permissions, see [Removing access](/docs/account?topic=account-assign-access-resources#removing-access-console).
+* To review a user's permissions, see [Reviewing your assigned access](/docs/account?topic=account-assign-access-resources#review-your-access-console).
 
 
 
