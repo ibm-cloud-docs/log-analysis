@@ -21,16 +21,16 @@ subcollection: Log-Analysis-with-LogDNA
 {:note: .note}
 {:external: target="_blank" .external}
 
-# Integrating with Sysdig
+# Integrating with {{site.data.keyword.mon_full_notm}}
 {: #sysdig}
 
-You can send alerts to Sysdig and manage them through the Sysdig *Events* view section.
+You can send alerts to {{site.data.keyword.mon_full_notm}} and manage them through the *Events* view section.
 {:shortdesc}
 
-## Configuring a Sysdig alert
+## Configuring an alert
 {: #sysdig-config}
 
-When you [configure an alert](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-alerts) you can have that alert sent to Sysdig.
+When you [configure an alert](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-alerts) you can have that alert sent to {{site.data.keyword.mon_full_notm}}.
 
 1. When configuring your alert, click ![PagerDuty icon](../images/sysdig.png "PagerDuty icon").
 
@@ -49,9 +49,9 @@ When you [configure an alert](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-
 
 6. Configure the Monitoring instance details.
 
-    Specify the **API key**. Set this field to the Sysdig API token. For more information on how to get the Sysdig token, see [Working with Sysdig tokens](/docs/Monitoring-with-Sysdig?topic=Monitoring-with-Sysdig-api_sysdig_token).
+    Specify the **API key**. Set this field to the API token. For more information on how to get the token, see [Working with tokens](/docs/Monitoring-with-Sysdig?topic=Monitoring-with-Sysdig-api_sysdig_token).
 
-    Specify the **Sysdig instance URL**. Set this field to the endpoint where the instance is available. For more information, see [Sysdig endpoints](/docs/Monitoring-with-Sysdig?topic=Monitoring-with-Sysdig-endpoints#endpoints_sysdig).
+    Specify the **{{site.data.keyword.mon_full_notm}} instance URL**. Set this field to the endpoint where the instance is available. For more information, see [{{site.data.keyword.mon_full_notm}} endpoints](/docs/Monitoring-with-Sysdig?topic=Monitoring-with-Sysdig-endpoints#endpoints_sysdig).
 
     Specify the **Severity**. Valid values are `Info`, `Low`, `Medium`, or `High`. 
 
@@ -59,19 +59,19 @@ When you [configure an alert](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-
 
 8. Click **Save Alert**.
 
-   The alert definition must be saved for alerts to be sent to Sysdig.
+   The alert definition must be saved for alerts to be sent to {{site.data.keyword.mon_full_notm}}.
    {: important}
 
 
 
-## Managing Sysdig alerts
+## Managing alerts
 {: #sysdig-manage}
 
-In Sysdig, you get a **custom** event when an alert is triggered. 
+You get a **custom** event when an alert is triggered. 
 
-You can view the events by filtering by name or level in the *Events* section of the Monitoring instance.
+You can view the events by filtering by name or level in the *Events* section of the {{site.data.keyword.mon_full_notm}} instance.
 
-![Sysdig sample](../images/sysdig-sample.png "Sysdig sample")
+![sample](../images/sysdig-sample.png "sample")
 
 To view alerts, a user must have permissions to navigate to the web UI. [Learn more](/docs/Monitoring-with-Sysdig?topic=Monitoring-with-Sysdig-launch).
 
