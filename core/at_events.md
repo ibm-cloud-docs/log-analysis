@@ -4,7 +4,7 @@ copyright:
   years:  2018, 2021
 lastupdated: "2021-03-28"
 
-keywords: LogDNA, IBM, Log Analysis, logging, audit, activity tracker, events, auditlogs, security
+keywords: IBM, Log Analysis, logging, audit, activity tracker, events, auditlogs, security
 
 subcollection: Log-Analysis-with-LogDNA
 
