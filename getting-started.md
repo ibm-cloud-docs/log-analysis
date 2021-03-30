@@ -121,7 +121,7 @@ To start managing logs, complete the following steps:
 
 1. [Launch the logging web UI](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-launch).
 
-2. [View and manager your logs](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-view_logs).
+2. [View and manage your logs](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-view_logs).
 
 
 ## Step 5. Next steps 
