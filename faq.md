@@ -4,7 +4,7 @@ copyright:
   years: 2019, 2021
 lastupdated: "2021-03-28"
 
-keywords: LogDNA, IBM, Log Analysis, logging, faq
+keywords: IBM, Log Analysis, logging, faq
 
 subcollection: Log-Analysis-with-LogDNA
 

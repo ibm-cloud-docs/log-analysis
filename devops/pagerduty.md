@@ -4,7 +4,7 @@ copyright:
   years:  2021
 lastupdated: "2021-03-24"
 
-keywords: LogDNA, IBM, Log Analysis, PagerDuty
+keywords: IBM, Log Analysis, PagerDuty
 
 subcollection: Log-Analysis-with-LogDNA
 

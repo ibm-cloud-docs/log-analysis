@@ -4,7 +4,7 @@ copyright:
   years:  2018, 2021
 lastupdated: "2021-03-28"
 
-keywords: LogDNA, IBM, Log Analysis, logging, config agent
+keywords: IBM, Log Analysis, logging, config agent
 
 subcollection: Log-Analysis-with-LogDNA
 
@@ -220,7 +220,7 @@ Choose one of the following commands to install and configure the logging agent 
 ### Step 5. Forward your API audit logs
 {: #config_agent_os_cluster_step5}
 
-Follow the [forwarding Kubernetes API audit logs steps](/docs/openshift?topic=openshift-health#openshift_logdna_audit) to configure the system to collect and forward events from your Kubernetes API server to {{site.data.keyword.la_full}}.
+Follow the [forwarding Kubernetes API audit logs steps](/docs/openshift?topic=openshift-health#openshift_logdna) to configure the system to collect and forward events from your Kubernetes API server to {{site.data.keyword.la_full}}.
 
 ### Step 6. Verify that the logging agent is deployed successfully
 {: #config_agent_os_cluster_step6}
