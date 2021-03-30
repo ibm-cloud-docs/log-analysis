@@ -304,7 +304,7 @@ You must have **manager** role on that instance to configure exclusion rules.
 
     The list of instances that are available on {{site.data.keyword.cloud_notm}} is displayed.
 
-4. Select the instance that has the *Platform Logs* flag set in the region. Then, click **View LogDNA**.
+4. Select the instance that has the *Platform Logs* flag set in the region. Then, click **Open Dashboard**.
 
     The Web UI opens.
 
