@@ -188,7 +188,7 @@ To launch the logging dashboard through the {{site.data.keyword.cloud_notm}} con
 
 3. Select **Logging**. The list of {{site.data.keyword.la_full_notm}} service instances that are available on {{site.data.keyword.cloud_notm}} is displayed.
 
-4. Select one instance and click **View LogDNA**. The logging dashboard opens. **Note:** With the **Free** service plan, you can tail your latest logs only. For more information, see [Viewing logs](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-view_logs#view_logs).
+4. Select one instance and click **Open Dashboard**. The logging dashboard opens. **Note:** With the **Free** service plan, you can tail your latest logs only. For more information, see [Viewing logs](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-view_logs#view_logs).
 
 ## Next steps
 {: #kube_next_steps}
