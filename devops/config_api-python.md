@@ -4,7 +4,7 @@ copyright:
   years:  2018, 2021
 lastupdated: "2021-03-2"8
 
-keywords: LogDNA, IBM, Log Analysis, logging, api
+keywords: IBM, Log Analysis, logging, api
 
 subcollection: Log-Analysis-with-LogDNA
 

@@ -4,7 +4,7 @@ copyright:
   years:  2018, 2021
 lastupdated: "2021-03-28"
 
-keywords: IBM Cloud, LogDNA, Log Analysis, Kubernetes logs
+keywords: IBM Cloud, Log Analysis, Kubernetes logs
 
 subcollection: Log-Analysis-with-LogDNA
 

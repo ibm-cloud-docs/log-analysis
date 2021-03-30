@@ -4,7 +4,7 @@ copyright:
   years:  2018, 2021
 lastupdated: "2021-03-24"
 
-keywords: LogDNA, IBM, Log Analysis, logging, config agent
+keywords: IBM, Log Analysis, logging, config agent
 
 subcollection: Log-Analysis-with-LogDNA
 
