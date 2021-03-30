@@ -4,7 +4,7 @@ copyright:
   years:  2018, 2020
 lastupdated: "2020-12-04"
 
-keywords: LogDNA, IBM, Log Analysis, logging, terraform
+keywords: IBM, Log Analysis, logging, terraform
 
 subcollection: Log-Analysis-with-LogDNA
 

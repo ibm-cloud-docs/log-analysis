@@ -4,7 +4,7 @@ copyright:
   years:  2018, 2021
 lastupdated: "2021-04-28"
 
-keywords: LogDNA, IBM, Log Analysis, logging, agent update
+keywords: IBM, Log Analysis, logging, agent update
 
 subcollection: Log-Analysis-with-LogDNA
 
