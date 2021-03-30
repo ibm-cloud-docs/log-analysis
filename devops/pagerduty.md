@@ -47,7 +47,9 @@ When you [configure an alert](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-
   3. Select the days of the week when alerts should be generated.
   4. Optionally specify a time range for the selected days. A graph will help you determine the number of log entries for the timezone and time range.
 
-6. Specify the **Service**.  If required, you will be prompted to connect to PagerDuty.  If no services are listed, click **Add PagerDuty** to connect and add a service.  You will be directed to PagerDuty to authorize the integration.  After authorization, your alerts will display in the PagerDuty incidents dashboard.
+6. Specify the **Service**. If required, you will be prompted to connect to PagerDuty.  
+
+    If no services are listed, click **Add PagerDuty** to connect and add a service. Create a PagerDuty service and associate it with an escalation policy. You will be directed to PagerDuty to authorize the integration. After authorization, your alerts will display in the PagerDuty incidents dashboard.
 
 7. Optional: You can click **Test** to test that your alert configuration is correct.
 
