@@ -70,7 +70,7 @@ Users defined in the logging group can see all resources defined in the logging 
 
 4. Select **Logging**.
 
-5. For your instance, click **View LogDNA**. The logging web UI will be displayed.
+5. For your instance, click **Open Dashboard**. The logging web UI will be displayed.
 
 6. Click ![**Settings**](/images/config.png "Settings icon") &gt; **Organization** &gt; **TEAM** &gt; **Settings**.
 
@@ -101,7 +101,7 @@ You can edit a group to add users or change the access scope as needed.
 
 4. Select **Logging**.
 
-5. For your instance, click **View LogDNA**. The logging web UI will be displayed.
+5. For your instance, click **Open Dashboard**. The logging web UI will be displayed.
 
 6. Click ![**Settings**](/images/config.png "Settings icon") &gt; **Organization** &gt; **TEAM** &gt; **Groups**.
 
@@ -151,7 +151,7 @@ If you want to create a group of administrators with access to all data, specify
 
 4. Select **Logging**.
 
-5. For your instance, click **View LogDNA**. The logging web UI will be displayed.
+5. For your instance, click **Open Dashboard**. The logging web UI will be displayed.
 
 6. Click ![**Settings**](/images/config.png "Settings icon") &gt; **Organization** &gt; **TEAM** &gt; **Groups**.
 
