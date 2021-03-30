@@ -4,7 +4,7 @@ copyright:
   years:  2018, 2021
 lastupdated: "2021-03-28"
 
-keywords: LogDNA, groups, access
+keywords: groups, access
 
 subcollection: Log-Analysis-with-LogDNA
 

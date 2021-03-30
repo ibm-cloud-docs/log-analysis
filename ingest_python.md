@@ -4,7 +4,7 @@ copyright:
   years:  2018, 2021
 lastupdated: "2021-03-28"
 
-keywords: LogDNA, IBM, Log Analysis, logging, ingestion, python
+keywords: IBM, Log Analysis, logging, ingestion, python
 
 subcollection: Log-Analysis-with-LogDNA
 

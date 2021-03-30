@@ -4,7 +4,7 @@ copyright:
   years:  2018, 2021
 lastupdated: "2021-03-28"
 
-keywords: LogDNA, IBM, Log Analysis, logging, regulated, highly available workloads
+keywords: IBM, Log Analysis, logging, regulated, highly available workloads
 
 subcollection: Log-Analysis-with-LogDNA
 

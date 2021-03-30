@@ -3,7 +3,7 @@ copyright:
   years: 2018, 2021
 lastupdated: "2021-03-28"
 
-keywords: LogDNA, IBM, Log Analysis, logging, disaster recovery, ha, high availability, redundancy
+keywords: IBM, Log Analysis, logging, disaster recovery, ha, high availability, redundancy
 
 subcollection: Log-Analysis-with-LogDNA
 

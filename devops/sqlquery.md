@@ -4,7 +4,7 @@ copyright:
   years:  2018, 2021
 lastupdated: "2021-03-28"
 
-keywords: IBM Cloud, LogDNA, {{site.data.keyword.la_short}}, EU-supported
+keywords: IBM Cloud, {{site.data.keyword.la_short}}, EU-supported
 
 subcollection: Log-Analysis-with-LogDNA
 

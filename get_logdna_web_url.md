@@ -4,7 +4,7 @@ copyright:
   years: 2019, 2021
 lastupdated: "2021-03-28"
 
-keywords: LogDNA, IBM, Log Analysis, logging, web ui, browser
+keywords: IBM, Log Analysis, logging, web ui, browser
 
 subcollection: Log-Analysis-with-LogDNA
 
