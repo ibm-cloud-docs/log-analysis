@@ -116,9 +116,9 @@ Log Analysis
 
     {: .topicgroup}
     Logging API
-        [Ingestion API](/apidocs/log-analysis?code=python#ingest)
-        [Export API](/apidocs/log-analysis?code=python#export)
-        [Configuration API](/apidocs/log-analysis?code=python#create-view)
+        [Ingestion API](https://cloud.ibm.com/apidocs/log-analysis#ingest)
+        [Export API](https://cloud.ibm.com/apidocs/log-analysis#export)
+        [Configuration API](https://cloud.ibm.com/apidocs/log-analysis#create-view)
     {: .navgroup-end}
 
     {: .navgroup id="help"}
