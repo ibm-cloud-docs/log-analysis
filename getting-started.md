@@ -56,7 +56,7 @@ You can control the cost of your {{site.data.keyword.cloud_notm}} logging infras
 ## Overview
 {: #getting-started_ov}
 
-{{site.data.keyword.la_full_notm}} is a service hosted on the {{site.data.keyword.cloud_notm}} that is based on technology from LogDNA.  The log data is stored on the {{site.data.keyword.cloud_notm}}.
+Log data is stored on the {{site.data.keyword.cloud_notm}}.
 
 Because {{site.data.keyword.la_full_notm}} is part of the {{site.data.keyword.cloud_notm}} users must have the following permissions:
 
