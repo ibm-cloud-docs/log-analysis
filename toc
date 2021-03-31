@@ -42,14 +42,17 @@ Log Analysis
     upgrade.md
     observe.md
     monitor_logs.md
-    iam.md
+
+    {: .topicgroup}
+    Controlling access
+        iam.md
+        devops/work_iam.md
         
    {: .topicgroup}
     DevOps tasks
         devops/archive.md
         devops/control_usage.md
         devops/exclusion_rules.md
-        devops/work_iam.md
         devops/ingestion_key.md
         devops/reuse_resource_definitions.md
 
