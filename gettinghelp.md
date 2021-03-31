@@ -25,7 +25,7 @@ subcollection: Log-Analysis-with-LogDNA
 # Getting help and support
 {: #gettinghelp}
 
-If you have problems or questions when using the {{site.data.keyword.la_full_notm}}, you can get help by searching for information or by asking questions through a forum. You can also open a support ticket. The {{site.data.keyword.la_full_notm}} service is operated by LogDNA.
+If you have problems or questions when using the {{site.data.keyword.la_full_notm}}, you can get help by searching for information or by asking questions through a forum. You can also open a support ticket.
 {:shortdesc}
 
 * You can check whether the {{site.data.keyword.cloud_notm}} is available by going to the [{{site.data.keyword.cloud_notm}} status page](https://cloud.ibm.com/status?selected=status){:new_window}.
