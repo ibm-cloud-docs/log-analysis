@@ -22,7 +22,7 @@ subcollection: Log-Analysis-with-LogDNA
 {:note: .note}
 
 # Getting information about Kubernetes logging agent images 
-{: #logdna_agent_image}
+{: #log-analysis_agent_image}
 
 Kubernetes logging agent images are public images that are available in {{site.data.keyword.cloud_notm}} through the [{{site.data.keyword.registrylong_notm}}](/docs/Registry?topic=Registry-getting-started) service.
 {:shortdesc}
@@ -32,7 +32,7 @@ You can access the images that are provided by {{site.data.keyword.IBM}} by usin
 Complete the following steps to get information about the logging agent images:
 
 ## Before you begin
-{: #logdna_agent_image_prereqs}
+{: #log_analysis_agent_image_prereqs}
 
 Before you begin, complete the following tasks:
 
@@ -47,7 +47,7 @@ Before you begin, complete the following tasks:
 
 
 ## Step 1. Target the global registry
-{: #logdna_agent_image_step1}
+{: #log_analysis_agent_image_step1}
 
 Run the following command:
 
@@ -59,7 +59,7 @@ ic cr region-set global
 
 
 ## Step 2. List the logging agent images that are hosted in the global registry
-{: #logdna_agent_image_step2}
+{: #log_analysis_dna_agent_image_step2}
 
 Run the following command:
 

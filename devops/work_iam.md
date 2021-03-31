@@ -49,7 +49,7 @@ Complete the following steps to assign a user administrator role to the {{site.d
 1. From the menu bar, click **Manage** &gt; **Access (IAM)**, and then select **Users**.
 2. From the row for the user that you want to assign access, select the **Actions** menu, and then click **Assign access**.
 3. Select **Assign access to resources**.
-4. Select **IBM Log Analysis with LogDNA**.
+4. Select **IBM Log Analysis**.
 5. Select **All current regions**.
 6. Select **All current service instances**.
 7. Select the platform role **Administrator**.
@@ -81,7 +81,7 @@ Complete the following steps to assign a user administrator role to the {{site.d
     
     You can select **No access**, if you want the user to have access only to the {{site.data.keyword.la_full_notm}} service in the resource group.
 
-6. Select **IBM Log Analysis with LogDNA**.
+6. Select **IBM Log Analysis**.
 7. Select the platform role **Administrator**.
 8. Click **Assign**.
 
@@ -103,7 +103,7 @@ Complete the following steps to assign a user editor role to the {{site.data.key
 1. From the menu bar, click **Manage** &gt; **Access (IAM)**, and then select **Users**.
 2. From the row for the user that you want to assign access, select the **Actions** menu, and then click **Assign access**.
 3. Select **Assign access to resources**.
-4. Select **IBM Log Analysis with LogDNA**.
+4. Select **IBM Log Analysis**.
 5. Select **All service instances**.
 6. Select the platform role **Editor**.
 7. Click Assign.
@@ -116,7 +116,7 @@ Complete the following steps to assign a user editor role on one instance of the
 1. From the menu bar, click **Manage** &gt; **Access (IAM)**, and then select **Users**.
 2. From the row for the user that you want to assign access, select the **Actions** menu, and then click **Assign access**.
 3. Select **Assign access to resources**.
-4. Select **IBM Log Analysis with LogDNA**.
+4. Select **IBM Log Analysis**.
 5. Select the instance.
 6. Select the platform role **Editor**.
 7. Click Assign.
@@ -147,14 +147,14 @@ Complete the following steps to assign a user editor role to the {{site.data.key
     
     You can select **No access**, if you want the user to have access only to the {{site.data.keyword.la_full_notm}} service in the resource group.
 
-6. Select **IBM Log Analysis with LogDNA**.
+6. Select **IBM Log Analysis**.
 7. Select the platform role **Editor**.
 8. Click **Assign**.
 
-## Granting permissions to manage logs and configure alerts in LogDNA
+## Granting permissions to manage logs and configure alerts
 {: #admin_user_logdna}
 
-As an **admin user** in LogDNA, you must have permissions to run the following actions: 
+As an {{site.data.keyword.la_full_notm}} **admin user**, you must have permissions to run the following actions: 
 
 * Add logging log sources
 * View logs
@@ -182,13 +182,13 @@ Complete the following steps to assign a user both policies for the {{site.data.
     
     You can select **No access**, if you want the user to have access only to the {{site.data.keyword.la_full_notm}} service in the resource group.
 
-6. Select **IBM Log Analysis with LogDNA**.
+6. Select **IBM Log Analysis**.
 7. Select the platform role **Editor**.
 8. Select the service role **Manager**.
 8. Click **Assign**.
 
-## Granting permissions to a user to view logs in LogDNA
-{: #user_logdna}
+## Granting permissions to a user to view logs
+{: #user_log_analysis}
 
 As a **user**, **auditor**, or **developer**, you might need permissions to run the following actions: 
 
@@ -215,7 +215,7 @@ Complete the following steps to assign a user both policies for the {{site.data.
     
     You can select **No access**, if you want the user to only have access to the {{site.data.keyword.la_full_notm}} service in the resource group.
 
-6. Select **IBM Log Analysis with LogDNA**.
+6. Select **IBM Log Analysis**.
 7. Select the platform role **Viewer**.
 8. Select the service role **Reader**.
 8. Click **Assign**.

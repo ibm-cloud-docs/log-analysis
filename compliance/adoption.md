@@ -218,7 +218,7 @@ Tags are visible to all members of an account.
 
 For non-{{site.data.keyword.cloud_notm}} enabled services, you must decide the method to collect and forward logs from a log source that you want to monitor to a logging instance. 
 
-In LogDNA, you can collect and forward data to a logging instance by using any of the following methods:
+In {{site.data.keyword.la_full_notm}}, you can collect and forward data to a logging instance by using any of the following methods:
 * `logging agent`: Logging agent that automatically collects and forwards logs to 1 logging instance in your account.
 * `Syslog`: Logging daemon that collects information across multiple devices and system-services, and forwards logs to 1 logging instance in your account. 
 * `REST API`: API that you can use to send log data and custom metadata to 1 logging instance in your account.
@@ -341,7 +341,7 @@ You can also configure MFA options such as security questions, using a time-base
 ## Define the network strategy
 {: #adoption_network}
 
-In LogDNA, you can use the logging agent to collect and forward logs to your {{site.data.keyword.la_full_notm}} instance. After you provision an instance of {{site.data.keyword.la_full}}, you must configure a logging agent for each log source that you want to monitor. 
+In {{site.data.keyword.la_full_notm}}, you can use the logging agent to collect and forward logs to your {{site.data.keyword.la_full_notm}} instance. After you provision an instance of {{site.data.keyword.la_full}}, you must configure a logging agent for each log source that you want to monitor. 
 
 You can configure the logging agent to connect to the logging instance through the public network or through the private network. 
 * By default, the agent connects through the public network.
@@ -402,7 +402,7 @@ You can configure multiple notification channels. Valid channels are: `email`, `
 **Configure PagerDuty alerts to be notified immediately so that you can take action promptly on problems and automate their resolution. In addition, configure Slack alerts to share alerts and information.**
 {: tip}
 
-In LogDNA, you can also define a **preset**. A preset is an alert template that you can attach to any number of views.
+In {{site.data.keyword.la_full_notm}}, you can also define a **preset**. A preset is an alert template that you can attach to any number of views.
 
 **To reuse an alert configuration with different views and enforce notification channels across users that analyze data through that instance, configure alert presets**.
 {: tip}

@@ -88,7 +88,7 @@ To remove an instance of {{site.data.keyword.la_full_notm}} through the command 
     For example, to remove an instance, run the following command:
 
     ```
-    ibmcloud resource service-instance-delete logdna-instance-01
+    ibmcloud resource service-instance-delete logging-instance-01
     ```
     {: codeblock}
 

@@ -128,7 +128,7 @@ You must create a Kubernetes secret to store your logging ingestion key for your
     `SERVICEACCOUNT_NAME` is the name of the service account that you use to deploy the logging agent. Set this value to **logging-agent**. Notice that if you leave the service account name blank, the default service account is used instead of the service account that you created. 
 
     ```
-    oc create serviceaccount logdna-agent -n ibm-observe
+    oc create serviceaccount loggin-agent -n ibm-observe
     ```
     {: pre}
 
@@ -146,7 +146,7 @@ You must create a Kubernetes secret to store your logging ingestion key for your
     `SERVICEACCOUNT_NAME` is the name of the service account that you use to deploy the logging agent. Set this value to **logging-agent**.
 
     ```
-    oc adm policy add-scc-to-user privileged system:serviceaccount:ibm-observe:logdna-agent
+    oc adm policy add-scc-to-user privileged system:serviceaccount:ibm-observe:logging-agent
     ```
     {: pre}
 
@@ -234,7 +234,7 @@ To verify that the logging agent is deployed successfully, run the following com
     ```
     {: pre}
 
-2. Verify that the `logdna-agent` pods on each node are in a **Running** status.
+2. Verify that the pods on each node are in a **Running** status.
 
     ```
     oc get pods -n PROJECT_NAME

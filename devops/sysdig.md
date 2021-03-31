@@ -4,7 +4,7 @@ copyright:
   years:  2018, 2021
 lastupdated: "2021-03-28"
 
-keywords: IBM, Log Analysis, Sysdig
+keywords: IBM, Log Analysis
 
 subcollection: Log-Analysis-with-LogDNA
 
@@ -22,13 +22,13 @@ subcollection: Log-Analysis-with-LogDNA
 {:external: target="_blank" .external}
 
 # Integrating with {{site.data.keyword.mon_full_notm}}
-{: #sysdig}
+{: #monitoring}
 
 You can send alerts to {{site.data.keyword.mon_full_notm}} and manage them through the *Events* view section.
 {:shortdesc}
 
 ## Configuring an alert
-{: #sysdig-config}
+{: #monitoring-config}
 
 When you [configure an alert](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-alerts) you can have that alert sent to {{site.data.keyword.mon_full_notm}}.
 
@@ -65,7 +65,7 @@ When you [configure an alert](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-
 
 
 ## Managing alerts
-{: #sysdig-manage}
+{: #monitoring-manage}
 
 You get a **custom** event when an alert is triggered. 
 

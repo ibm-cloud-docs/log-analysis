@@ -112,13 +112,10 @@ Choose one of the following options to deploy and configure the logging agent in
 
 
 
-## [Optional] Step 2. Configure a cluster to forward API audit logs to LogDNA
+## [Optional] Step 2. Configure a cluster to forward API audit logs
 {: #kube_step2}
 
-If you want to analyze the cluster's API audit logs through the IBM Log Analysis with Log Analysis instance, you must configure your cluster
-
-
-
+If you want to analyze the cluster's API audit logs through the {{site.data.keyword.la_full_notm}} instance, you must configure your cluster.
 
 
 
