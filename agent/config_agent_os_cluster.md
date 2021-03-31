@@ -128,7 +128,7 @@ You must create a Kubernetes secret to store your logging ingestion key for your
     `SERVICEACCOUNT_NAME` is the name of the service account that you use to deploy the logging agent. Set this value to **logging-agent**. Notice that if you leave the service account name blank, the default service account is used instead of the service account that you created. 
 
     ```
-    oc create serviceaccount loggin-agent -n ibm-observe
+    oc create serviceaccount logging-agent -n ibm-observe
     ```
     {: pre}
 
