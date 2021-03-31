@@ -31,7 +31,7 @@ The logging agent is responsible for collecting and forwarding logs to your {{si
 ## Configuring a logging agent on Linux Ubuntu or Debian
 {: #config_agent_linux_steps}
 
-To configure your Ubuntu server to send logs to your {{site.data.keyword.la_full_notm}} instance, you must install a `logdna-agent`. The logging agent reads log files from */var/log*, and forwards the log data to your logging instance.
+To configure your Ubuntu server to send logs to your {{site.data.keyword.la_full_notm}} instance, you must install a `logging-agent`. The logging agent reads log files from */var/log*, and forwards the log data to your logging instance.
 
 To configure your Ubuntu server to forward logs to your logging instance, complete the following steps from an Ubuntu terminal:
 

@@ -391,7 +391,7 @@ To configure the logging agent in a cluster, complete the following steps:
 3. Deploy the logging agent by using the `ob` CLI. Run the following command:
 
     ```
-    ibmcloud ob logging config create --cluster <cluster_name_or_ID> --instance <LogDNA_instance_name_or_ID> [--LogDNA-ingestion-key <Ingestion_Key>] [--private-endpoint]
+    ibmcloud ob logging config create --cluster <cluster_name_or_ID> --instance <instance_name_or_ID> [--LogDNA-ingestion-key <Ingestion_Key>] [--private-endpoint]
     ```
     {: pre}
 
@@ -399,7 +399,7 @@ To configure the logging agent in a cluster, complete the following steps:
 
     * `<cluster_name_or_ID>` is the name or the ID of the cluster.
 
-    * `<LogDNA_instance_name_or_ID>` is the name or the ID of the logging instance where you want to forward the cluster logs for analysis.
+    * `<instance_name_or_ID>` is the name or the ID of the logging instance where you want to forward the cluster logs for analysis.
 
     * `<Ingestion_Key>` is the ingestion key that you want to use to connect the logging agent with the logging instance.
 
