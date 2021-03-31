@@ -119,7 +119,7 @@ To provision an instance of logging through the CLI, see [Provisioning logging t
 ## Step 3. Configure your Ubuntu server to send logs to your instance
 {: #ubuntu_step3}
 
-To configure your Ubuntu server to send logs to your {{site.data.keyword.la_full_notm}} instance, you must install a `logdna-agent`. The logging agent reads log files from `/var/log` or other directories you specify, and forwards the log data to your logging instance.
+To configure your Ubuntu server to send logs to your {{site.data.keyword.la_full_notm}} instance, you must install a `logging-agent`. The logging agent reads log files from `/var/log` or other directories you specify, and forwards the log data to your logging instance.
 
 To configure your Ubuntu server to forward logs to your logging instance, complete the following steps from an Ubuntu terminal:
 
@@ -141,14 +141,14 @@ To configure your Ubuntu server to forward logs to your logging instance, comple
    {: pre}
 
    ```
-   sudo apt-get install logdna-agent < "/dev/null"
+   sudo apt-get install logging-agent < "/dev/null"
    ```
    {: pre}
 
 2. Set the ingestion key that the logging agent will use to forward logs to the {{site.data.keyword.la_full_notm}} instance.  
 
    ```
-   sudo logdna-agent -k <INGESTION_KEY>
+   sudo logging-agent -k <INGESTION_KEY>
    ```
    {: pre}
 
@@ -159,21 +159,21 @@ To configure your Ubuntu server to forward logs to your logging instance, comple
 3. Set the authentication endpoint. The logging agent uses this host to authenticate and get the token to forward logs.
 
    ```
-   sudo logdna-agent -s LOGDNA_APIHOST=api.us-south.logging.cloud.ibm.com
+   sudo logging-agent -s LOGDNA_APIHOST=api.us-south.logging.cloud.ibm.com
    ```
    {: pre}
 
 4. Set the ingestion endpoint.
 
    ```
-   sudo logdna-agent -s LOGDNA_LOGHOST=logs.us-south.logging.cloud.ibm.com
+   sudo logging-agent -s LOGDNA_LOGHOST=logs.us-south.logging.cloud.ibm.com
    ```
    {: pre}
 
 5. (Optional) Define any additional log paths to be monitored. Run the following command: 
 
    ```
-   sudo logdna-agent -d <PATH_TO_LOG_FOLDERS>
+   sudo logging-agent -d <PATH_TO_LOG_FOLDERS>
    ```
    {: pre}
 
@@ -182,7 +182,7 @@ To configure your Ubuntu server to forward logs to your logging instance, comple
 6. (Optional) Configure the logging agent to tag your hosts. Run the following command:
 
    ```
-   sudo logdna-agent -t TAG1,TAG2 
+   sudo logging-agent -t TAG1,TAG2 
    ```
    {: pre}
 
@@ -192,14 +192,14 @@ To configure your Ubuntu server to forward logs to your logging instance, comple
 7. Update the logging agent with your changes.  Run the following command:
 
    ```
-   sudo update-rc.d logdna-agent defaults
+   sudo update-rc.d logging-agent defaults
    ```
    {: pre}
 
 8. Start the logging agent.  Run the following command:
 
    ``` 
-   sudo /etc/init.d/logdna-agent start
+   sudo /etc/init.d/logging-agent start
    ```
    {: pre}
 
@@ -245,7 +245,7 @@ The following additional features are available:
 * [Filtering logs](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-view_logs#view_logs_step5)
 * [Searching logs](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-view_logs#view_logs_step6)
 * [Defining views](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-view_logs#view_logs_step7)
-* [Configuring alerts](https://docs.logdna.com/docs/alerts). 
+* [Configuring alerts](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-alerts). 
 
 To use any of these features, you must upgrade the {{site.data.keyword.la_full_notm}} plan to a paid plan.
 {: note}
