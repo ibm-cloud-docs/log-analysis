@@ -175,7 +175,7 @@ To provision an instance of logging through the CLI, see [Provisioning logging t
 ## Step 3. Configure a bare metal to send logs to your logging instance
 {: #ubuntu-baremetal_step3}
 
-To configure your bare metal to send logs to your {{site.data.keyword.la_full_notm}} instance, you must install a `logdna-agent`. The logging agent reads log files from `/var/log` or other directories you specify, and forwards the log data to your logging instance.
+To configure your bare metal to send logs to your {{site.data.keyword.la_full_notm}} instance, you must install a `logging-agent`. The logging agent reads log files from `/var/log` or other directories you specify, and forwards the log data to your logging instance.
 
 To configure your bare metal to forward logs to your logging instance, complete the following steps from an Ubuntu terminal:
 
@@ -301,7 +301,7 @@ The following additional features are available:
 * [Filtering logs](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-view_logs#view_logs_step5)
 * [Searching logs](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-view_logs#view_logs_step6)
 * [Defining views](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-view_logs#view_logs_step7)
-* [Configuring alerts](https://docs.logdna.com/docs/alerts). 
+* [Configuring alerts](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-alerts). 
 
 To use any of these features, you must upgrade the {{site.data.keyword.la_full_notm}} plan to a paid plan.
 {: note}
