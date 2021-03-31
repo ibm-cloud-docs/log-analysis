@@ -101,7 +101,7 @@ Log Analysis
         devops/alerts.md
         devops/config_api.md
         devops/pagerduty.md
-        devops/sysdig.md
+        devops/monitoring.md
     {: .navgroup-end}
 
     {: .navgroup id="reference"}
@@ -112,13 +112,13 @@ Log Analysis
     
     {: .topicgroup}
     Logging CLI
-        /logdna-cli-plugin/logdna-cli-plugin-logdna-cli
+        /log-analysis-cli-plugin/log-analysis-cli-plugin-log-analysis-cli
 
     {: .topicgroup}
     Logging API
-        [Ingestion API](https://cloud.ibm.com/apidocs/logdna?code=python#ingest)
-        [Export API](https://cloud.ibm.com/apidocs/logdna?code=python#export)
-        [Configuration API](https://cloud.ibm.com/apidocs/logdna?code=python#create-view)
+        [Ingestion API](/apidocs/log-analysis?code=python#ingest)
+        [Export API](/apidocs/log-analysis?code=python#export)
+        [Configuration API](/apidocs/log-analysis?code=python#create-view)
     {: .navgroup-end}
 
     {: .navgroup id="help"}

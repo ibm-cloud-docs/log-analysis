@@ -128,7 +128,7 @@ You must create a Kubernetes secret to store your logging ingestion key for your
     `SERVICEACCOUNT_NAME` is the name of the service account that you use to deploy the logging agent. Set this value to **logging-agent**. Notice that if you leave the service account name blank, the default service account is used instead of the service account that you created. 
 
     ```
-    oc create serviceaccount logdna-agent -n ibm-observe
+    oc create serviceaccount logging-agent -n ibm-observe
     ```
     {: pre}
 
@@ -146,7 +146,7 @@ You must create a Kubernetes secret to store your logging ingestion key for your
     `SERVICEACCOUNT_NAME` is the name of the service account that you use to deploy the logging agent. Set this value to **logging-agent**.
 
     ```
-    oc adm policy add-scc-to-user privileged system:serviceaccount:ibm-observe:logdna-agent
+    oc adm policy add-scc-to-user privileged system:serviceaccount:ibm-observe:logging-agent
     ```
     {: pre}
 
@@ -220,7 +220,7 @@ Choose one of the following commands to install and configure the logging agent 
 ### Step 5. Forward your API audit logs
 {: #config_agent_os_cluster_step5}
 
-Follow the [forwarding Kubernetes API audit logs steps](/docs/openshift?topic=openshift-health#openshift_logdna) to configure the system to collect and forward events from your Kubernetes API server to {{site.data.keyword.la_full}}.
+Follow the [forwarding Kubernetes API audit logs steps](/docs/openshift?topic=openshift-health#openshift_logdna_audit) to configure the system to collect and forward events from your Kubernetes API server to {{site.data.keyword.la_full}}.
 
 ### Step 6. Verify that the logging agent is deployed successfully
 {: #config_agent_os_cluster_step6}
@@ -234,7 +234,7 @@ To verify that the logging agent is deployed successfully, run the following com
     ```
     {: pre}
 
-2. Verify that the `logdna-agent` pods on each node are in a **Running** status.
+2. Verify that the pods on each node are in a **Running** status.
 
     ```
     oc get pods -n PROJECT_NAME
@@ -391,7 +391,7 @@ To configure the logging agent in a cluster, complete the following steps:
 3. Deploy the logging agent by using the `ob` CLI. Run the following command:
 
     ```
-    ibmcloud ob logging config create --cluster <cluster_name_or_ID> --instance <LogDNA_instance_name_or_ID> [--LogDNA-ingestion-key <Ingestion_Key>] [--private-endpoint]
+    ibmcloud ob logging config create --cluster <cluster_name_or_ID> --instance <instance_name_or_ID> [--LogDNA-ingestion-key <Ingestion_Key>] [--private-endpoint]
     ```
     {: pre}
 
@@ -399,7 +399,7 @@ To configure the logging agent in a cluster, complete the following steps:
 
     * `<cluster_name_or_ID>` is the name or the ID of the cluster.
 
-    * `<LogDNA_instance_name_or_ID>` is the name or the ID of the logging instance where you want to forward the cluster logs for analysis.
+    * `<instance_name_or_ID>` is the name or the ID of the logging instance where you want to forward the cluster logs for analysis.
 
     * `<Ingestion_Key>` is the ingestion key that you want to use to connect the logging agent with the logging instance.
 

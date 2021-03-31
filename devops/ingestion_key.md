@@ -51,7 +51,7 @@ To get the ingestion key for an {{site.data.keyword.la_full_notm}} instance by u
 
 
 ## Getting the ingestion key through the {{site.data.keyword.la_full_notm}} web UI
-{: #logdna_ui}
+{: #log_analysis_ui}
 
 To get the ingestion key for an {{site.data.keyword.la_full_notm}} instance by using the {{site.data.keyword.la_full_notm}} Web UI, complete the following steps:
 

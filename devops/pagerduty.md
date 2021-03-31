@@ -24,7 +24,7 @@ subcollection: Log-Analysis-with-LogDNA
 # Integrating with PagerDuty
 {: #pagerduty}
 
-You can send alerts to PagerDuty. 
+You can send alerts to PagerDuty.
 {:shortdesc}
 
 ## Configuring PagerDuty

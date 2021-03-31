@@ -196,7 +196,6 @@ To launch the logging dashboard through the {{site.data.keyword.cloud_notm}} con
 - [Filter logs](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-view_logs#view_logs_step5)
 - [Search logs](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-view_logs#view_logs_step6)
 - [Define views](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-view_logs#view_logs_step7)
-- [Configure alerts](https://docs.logdna.com/docs/alerts). 
 
 **Note:** Some of these features require a plan upgrade.
 

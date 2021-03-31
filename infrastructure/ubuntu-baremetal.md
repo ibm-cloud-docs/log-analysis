@@ -77,7 +77,7 @@ If you don't have a bare metal, complete the following steps
 
 1. [Provision a bare metal server](/docs/bare-metal?topic=bare-metal-getting-started). 
 
-    To complete the steps in this topic, ensure you have internet access from the bare metal. This is needed for configuring the Sysdig agent.
+    To complete the steps in this topic, ensure you have internet access from the bare metal. This is needed for configuring the monitoring agent.
 
 2. Configure a VPN connection between your terminal and the bare metal server  
 
@@ -103,7 +103,7 @@ If you don't have a bare metal, complete the following steps
 
     You must `ssh` to the host by using your credentials, or the root credentials that are available from the {{site.data.keyword.cloud_notm}} Console.  
     
-    You will require root permissions in order to install the Sysdig agent.
+    You will require root permissions in order to install the monitoring agent.
 
     For example, you can complete the following steps to get the bare metal information that you need to `ssh` into the server:
 

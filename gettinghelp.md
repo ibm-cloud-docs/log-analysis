@@ -32,6 +32,6 @@ If you have problems or questions when using the {{site.data.keyword.la_full_not
 
 * You can review the forums to see whether other users ran into the same problem. When using the forums to ask a question, tag your question so that it is seen by the {{site.data.keyword.cloud_notm}} development teams.
 
-  * If you have technical questions about the {{site.data.keyword.la_full_notm}} service, post your question on [Stack Overflow](https://stackoverflow.com/search?q=logdna+ibm-cloud){:new_window} and tag your question with `ibm-cloud` and `loganalysis`.  
+* If you have technical questions about the {{site.data.keyword.la_full_notm}} service, post your question on [Stack Overflow](https://stackoverflow.com/search?q=log-analysis+ibm-cloud){:new_window} and tag your question with `ibm-cloud` and `loganalysis`.  
 
 * If you still can't resolve the problem, you can open an IBM support ticket. For information about opening an IBM support ticket, or about support levels and ticket severities, see [Getting support](/docs/get-support).

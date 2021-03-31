@@ -97,7 +97,7 @@ Complete the following steps to change the service plan:
 For example, to change the service plan of an instance to the 30 days retention plan, run the following command:
 
 ```
-ibmcloud resource service-instance-update logdna-instance-01 deda35aa-662b-4b06-9f6e-05e0b55cc577
+ibmcloud resource service-instance-update logging-instance-01 deda35aa-662b-4b06-9f6e-05e0b55cc577
 ```
 {: codeblock}
 

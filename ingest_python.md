@@ -33,7 +33,7 @@ Complete the following steps to send logs:
 ## Prereqs
 {: #ingest_python_prereqs}
 
-Run the following command to install the LogDNA handler:
+Run the following command to install the handler:
 
 ```
 python3 -m pip install logdna
@@ -44,7 +44,7 @@ python3 -m pip install logdna
 ## Step 1. Get the ingestion API key 
 {: #ingest_python_step1}
 
-**Note:** You must have **manager** role for the {{site.data.keyword.la_full_notm}} instance or service to complete this step. For more information, see [Granting permissions to manage logs and configure alerts in LogDNA](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-work_iam#admin_user_logdna).
+**Note:** You must have **manager** role for the {{site.data.keyword.la_full_notm}} instance or service to complete this step. For more information, see [Granting permissions to manage logs and configure alerts](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-work_iam#admin_user_logdna).
 
 Complete the following steps to get the ingestion key:
     

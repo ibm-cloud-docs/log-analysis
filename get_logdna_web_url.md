@@ -23,7 +23,7 @@ subcollection: Log-Analysis-with-LogDNA
 {:external: target="_blank" .external}
 
 # Getting the logging web UI URL
-{: #get_logdna_web_url}
+{: #get_loganalysis_web_url}
 
 After you provision an instance of the {{site.data.keyword.la_full_notm}} service in the {{site.data.keyword.cloud_notm}}, you can view, monitor, and manage events through the {{site.data.keyword.la_full_notm}} web UI. You can launch the logging web UI from the {{site.data.keyword.cloud_notm}} UI or directly from a browser.
 {:shortdesc}
