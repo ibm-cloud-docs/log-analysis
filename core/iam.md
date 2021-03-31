@@ -99,7 +99,6 @@ Use the following table to identify the service roles that you can grant a user 
 | Actions            | Manager           | Standard-Member        | Reader |
 |-------------|----------------------|----------------------------|----------|
 | `Configure global settings` | ![Check mark icon](check.png "Check mark icon indicating correct usage") |    |   |
-| `Manage groups`   | ![Check mark icon](images/checkmark-icon.svg "Check mark icon indicating correct usage") |  |  |
 | `Create and delete ingestion keys through the logging web UI`   | ![Check mark icon](check.png "Check mark icon indicating correct usage") |     |   |
 | `Create and delete service keys through the logging web UI`     | ![Check mark icon](check.png "Check mark icon indicating correct usage") |  |   |
 | `Add logging log sources`  | ![Check mark icon](check.png "Check mark icon indicating correct usage") |              |   |
