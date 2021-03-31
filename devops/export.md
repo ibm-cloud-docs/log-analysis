@@ -59,7 +59,7 @@ Complete the following steps to export log data through the logging web UI:
 5. Select **Export lines**. A new window opens.
 6. Check the time range. If you need to change it, click the predefined time range in the *Change the Time Range for export* field.
 7. Select **Prefer newer lines** or **Prefer older lines** in case the export request exceeds the line limit.
-8. Check your email. You should receive an email from **LogDNA** with a link to download your exported lines.
+8. Check your email. You should receive an email with a link to download your exported lines.
 
 
 ## Exporting logs from a search
@@ -77,7 +77,7 @@ Complete the following steps to export data through the logging web UI:
 5. Select **Export lines**. A new window opens.
 6. Check the time range. If you need to change it, click the predefined time range in the *Change the Time Range for export* field.
 7. Select **Prefer newer lines** or **Prefer older lines** in case the export request exceeds the line limit.
-8. Check your email. You receive an email from **LogDNA** with a link to download your exported lines.
+8. Check your email. You receive an email with a link to download your exported lines.
 
 
 

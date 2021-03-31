@@ -114,13 +114,13 @@ Log Analysis
 
     {: .topicgroup}
     Logging CLI
-        /logdna-cli-plugin/logdna-cli-plugin-logdna-cli
+        /log-analysis-cli-plugin/log-analysis-cli-plugin-log-analysis-cli
 
     {: .topicgroup}
     Logging API
-        [Ingestion API](https://test.cloud.ibm.com/apidocs/logdna?code=python#ingest)
-        [Export API](https://test.cloud.ibm.com/apidocs/logdna?code=python#export)
-        [Configuration API](https://test.cloud.ibm.com/apidocs/logdna?code=python#create-view)
+        [Ingestion API](/apidocs/log-analysis?code=python#ingest)
+        [Export API](/apidocs/log-analysis?code=python#export)
+        [Configuration API](/apidocs/log-analysis?code=python#create-view)
 
     {: .topicgroup}
     High availability and disaster recovery

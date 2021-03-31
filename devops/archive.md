@@ -207,7 +207,7 @@ Complete the following steps to create a bucket:
 
     **Note:** All buckets in all regions across the globe share a single namespace. 
 
-    You can use as part of the bucket name your {{site.data.keyword.la_full_notm}} instance name. For example, for an instance with name *logdna-1*, you can use *accountN-logdna-1* as your bucket name.
+    You can use as part of the bucket name your {{site.data.keyword.la_full_notm}} instance name. For example, for an instance with name *logging-1*, you can use *accountN-logging-1* as your bucket name.
 
     You need this name to configure archiving through the {{site.data.keyword.la_full_notm}} web UI.
 
@@ -329,7 +329,7 @@ The following table lists the policies that a user must have to configure archiv
 | `{{site.data.keyword.la_full_notm}}` | Service role: Manager      | Allows the user to launch the web UI and view logs in the web UI.                             |
 {: caption="Table 2. IAM policies" caption-side="top"} 
 
-For more information on how to configure these policies for a user, see [Granting permissions to a user to view logs in LogDNA](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-work_iam#user_logdna).
+For more information on how to configure these policies for a user, see [Granting permissions to a user to view logs](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-work_iam#user_logdna).
 
 Complete the following steps to assign a user permission to archive logs: 
 

@@ -22,7 +22,7 @@ subcollection: Log-Analysis-with-LogDNA
 {:note: .note}
 
 # Upgrading from logging agent version 1 to logging agent version 2
-{: #upgrade_logdna_agent_2}
+{: #upgrade_log_analysis_agent_2}
 
 If your Kubernetes cluster version is 1.9+, you can upgrade the logging agent to version 2.
 {:shortdesc}
@@ -34,7 +34,7 @@ Complete the following steps from the command line to upgrade the logging agent 
 
 
 ## Step 1. Set the cluster context
-{: #upgrade_logdna_agent_2_step1}
+{: #upgrade_log_analysis_agent_2_step1}
 
 
 1. Open a terminal to log in to {{site.data.keyword.cloud_notm}}.
@@ -75,7 +75,7 @@ Complete the following steps from the command line to upgrade the logging agent 
 
 
 ## Step 2. Backup the YAML file of the logging agent that is deployed in the cluster
-{: #upgrade_logdna_agent_2_step2}
+{: #upgrade_log_analysis_agent_2_step2}
 
 Run the following command to backup the YAML file of the logging agent that is currently deployed in your cluster:
 
@@ -91,7 +91,7 @@ Where
 
 
 ## Step 3. Create the namespace ibm-observe
-{: #upgrade_logdna_agent_2_step3}
+{: #upgrade_log_analysis_agent_2_step3}
 
 This step is only required if you installed the logging agent version 1 in a namespace that is different to `ibm-observe`.
 {: note}
@@ -114,7 +114,7 @@ kubectl create namespace ibm-observe
 
 
 ## Step 4. Delete the logging agent version 1
-{: #upgrade_logdna_agent_2_step4}
+{: #upgrade_log_analysis_agent_2_step4}
 
 Run the following command to delete the logging agent version 1:
 
@@ -128,7 +128,7 @@ Where `NAMESPACE` is the namespace in your cluster where the logging agent versi
 
 
 ## Step 5. Deploy the logging agent version 2 in the cluster
-{: #upgrade_logdna_agent_2_step5}
+{: #upgrade_log_analysis_agent_2_step5}
 
 Choose one of the following commands to install and configure the logging agent:
 
@@ -167,7 +167,7 @@ Choose one of the following commands to install and configure the logging agent:
 {: row-headers}
 
 ## Step 6. Verify that the logging agent is deployed successfully
-{: #upgrade_logdna_agent_2_step6}
+{: #upgrade_log_analysis_agent_2_step6}
 
 To verify that the logging agent is deployed successfully, run the following command:
 

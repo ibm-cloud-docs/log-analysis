@@ -133,7 +133,7 @@ The following table shows the private ingestion endpoints:
 
 
 ## logging web UI endpoints
-{: #endpoints_logdna_ui}
+{: #endpoints_loganalysis_ui}
 
 The following table shows the logging web UI endpoints:
 

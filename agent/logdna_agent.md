@@ -23,7 +23,7 @@ subcollection: Log-Analysis-with-LogDNA
 {:external: target="_blank" .external}
 
 # Logging agent
-{: #logdna_agent}
+{: #log_analysis_agent}
 
 The logging agent collects and forwards logs to your {{site.data.keyword.la_full_notm}} instance. After you provision an {{site.data.keyword.la_full}} instance, you must configure a logging agent for each log source that you want to monitor.
 {:shortdesc}
@@ -36,7 +36,7 @@ The logging agent collects and forwards logs to your {{site.data.keyword.la_full
 
 
 ## Logging agent for Kubernetes clusters
-{: #logdna_agent_image_kube}
+{: #log_analysis_agent_image_kube}
 
 logging agent images for Kubernetes clusters are public images that are available in {{site.data.keyword.cloud_notm}} through the [{{site.data.keyword.registrylong_notm}}](/docs/Registry?topic=Registry-getting-started) service. 
 
@@ -50,7 +50,7 @@ To get details about the logging agent images, see [Getting information about lo
 
 
 ### Understanding image tags
-{: #logdna_agent_image_kube_tags}
+{: #log_analysis_agent_image_kube_tags}
 
 The tag that is associated to a logging image indicates whether the logging agent is automatically updated. 
 {: important}
@@ -87,7 +87,7 @@ For highly regulated environments, use the tag `X.Y.Z-<date>.[hash]`.
 
 
 ### Stable and latest tags (deprecated)
-{: #logdna_agent_image_tags_1}
+{: #log_analysis_agent_image_tags_1}
 
 For the `V1` and `V2` agent versions, you can also find the tags `stable` and `latest`. When you use any of these tags to configure the logging agent, notice that the logging agent will automatically update to the latest version of the agent.
 
@@ -100,7 +100,7 @@ The tags `stable` and `latest` will be deprecated in June 2021.
 
 
 ### Image versions
-{: #logdna_agent_image_kube_versions}
+{: #log_analysis_agent_image_kube_versions}
 
 
 The following table outlines the logging agent versions that are available to configure for a Kubernetes cluster:
@@ -117,7 +117,7 @@ The logging agent v2 is available only for Kubernetes 1.9+.
 
 
 ### Choosing a version
-{: #logdna_agent_image_kube_choose_version}
+{: #log_analysis_dna_agent_image_kube_choose_version}
 
 When you configure the logging agent, you can choose any of the following options:
 - You can use the default YAML that is provided. Choose by region and by type of account. The default configuration pulls the image `icr.io/ext/logdna-agent:stable`.
@@ -128,7 +128,7 @@ If you have a highly regulated environment, you can customize the YAML file. You
 
 
 ### Connecting a logging agent with a logging instance 
-{: #logdna_agent_image_kube_connect}
+{: #log_analysis_dna_agent_image_kube_connect}
 
 The logging agent is responsible for collecting and forwarding system-level, and file-based logs to your {{site.data.keyword.la_full_notm}} instance. 
 
@@ -145,7 +145,7 @@ To connect your Kubernetes cluster to send logs to your {{site.data.keyword.la_f
 
 
 ### Detaching a logging agent from a cluster
-{: #logdna_agent_detach}
+{: #log_analysis_agent_detach}
 
 To stop your Kubernetes cluster from sending logs to your {{site.data.keyword.la_full_notm}} instance, you must remove the logging agent from your cluster. [Learn more](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-detach_agent).
 
@@ -157,26 +157,26 @@ To stop your Kubernetes cluster from sending logs to your {{site.data.keyword.la
 
 
 ## Logging agent for Linux
-{: #logdna_agent_image_linux}
+{: #log_analysis_agent_image_linux}
 
 
 
 ### Image versions
-{: #logdna_agent_image_linux_versions}
+{: #log_analysis_dna_agent_image_linux_versions}
 
-logging agent images for Linux are public images that are available in the logging repo `https://repo.logdna.com`.
+Logging agent images for Linux are public images that are available in the logging repo `https://repo.logdna.com`.
 
 The following table outlines the agent versions that are available:
 
 | Kubernetes cluster                    | logging agent V1                                    | logging agent V2                                   |
 |---------------------------------------|----------------------------------------------------|---------------------------------------------------|
 | `Linux                      `         | ![Checkmark icon](../images/checkmark-icon.svg)  | `Not available`                                   |
-{: caption="Table 3. logging agent versions for Linux" caption-side="top"}
+{: caption="Table 3. Logging agent versions for Linux" caption-side="top"}
 
 
 
 ### Connecting a logging agent with a logging instance 
-{: #logdna_agent_image_linux_connect}
+{: #log_analysis_agent_image_linux_connect}
 
 The logging agent is responsible for collecting and forwarding system-level, and file-based logs to your {{site.data.keyword.la_full_notm}} instance. 
 
@@ -190,12 +190,12 @@ To connect your Linux server to send logs to your {{site.data.keyword.la_full_no
 
 
 ## Configuring a logging agent
-{: #logdna_agent_configure}
+{: #log_analysis_agent_configure}
 
 You can customize a logging agent by configuring parameters for Linux agents, or environment variables for Kubernetes agents.
 
 ### Linux: configuration parameters for logging agent V1
-{: #logdna_agent_configure_linux_v1}
+{: #log_analysis_agent_configure_linux_v1}
 
 | Parameter | Description                                          |
 |-----------|------------------------------------------------------|
@@ -209,15 +209,15 @@ You can customize a logging agent by configuring parameters for Linux agents, or
 
 
 ### Standard Kubernetes clusters: environment variables for logging agent V2
-{: #logdna_agent_configure_std_kube_v2}
+{: #log_analysis_dna_agent_configure_std_kube_v2}
 
 | Environment variable     | Description                                           |  Default value                         | Sample value          |
 |--------------------------|-------------------------------------------------------|----------------------------------------|-----------------------|
 | `DEFAULT_CONF_FILE`      | Default configuration file.                           | `/etc/logdna/config.yaml`              |                       |
 | `LOGDNA_PLATFORM`        | Log source type.                                      | `k8s`                                  |                       |
 | `LOGDNA_INGESTION_KEY`   | Reference to the logging ingestion key.                | secretKeyRef                           |                       |
-| `LOGDNA_HOST`            | LogDNA ingestion endpoint.                            |                                        | `logs.us-south.logging.cloud.ibm.com` |
-| `LOGDNA_API_HOST`        | API LogDNA ingestion endpoint.                        |                                        | `api.us-south.logging.cloud.ibm.com`   |
+| `LOGDNA_HOST`            | {{site.data.keyword.la_full_notm}} ingestion endpoint.                            |                                        | `logs.us-south.logging.cloud.ibm.com` |
+| `LOGDNA_API_HOST`        | {{site.data.keyword.la_full_notm}} API ingestion endpoint.                        |                                        | `api.us-south.logging.cloud.ibm.com`   |
 | `LOGDNA_ENDPOINT`        | Ingestion log path.                                   | `/logs/agent/`                         |                       |
 | `LOGDNA_HOSTNAME`        | Log Source name.                                      |                                        | `MyCluster`                            | 
 | `LOGDNA_LOG_DIRS`        | Defines custom paths that you want the agent to monitor. </br>Separate multiple paths by using commas. </br>You can use glob patterns. Use double quotation marks to add a globe pattern.   | `/var/log/`   | `/output/,/mylogs/myapplogs/` |
@@ -232,15 +232,15 @@ You can customize a logging agent by configuring parameters for Linux agents, or
 {: caption="Table 7. Tags that are available for the logging agent V2" caption-side="top"}
 
 ### Standard Kubernetes clusters: environment variables for logging agent V1
-{: #logdna_agent_configure_std_kube_v1}
+{: #log_analysis_dna_agent_configure_std_kube_v1}
 
 | Environment variable     | Description                                           | Default value                          | Sample value          |
 |--------------------------|-------------------------------------------------------|----------------------------------------|-----------------------|
 | `DEFAULT_CONF_FILE`      | Default configuration file.                           | `/etc/logdna/config.yaml`              |                       |
 | `LOGDNA_PLATFORM`        | Log source type.                                      | `k8s`                                  |                       |
 | `LOGDNA_INGESTION_KEY`   | Reference to the logging ingestion key.                | secretKeyRef                           |                       |
-| `LDLOGHOST`              | LogDNA ingestion endpoint.                            |                                        | `logs.us-south.logging.cloud.ibm.com` |
-| `LDAPIHOST`              | API LogDNA ingestion endpoint.                        |                                        | `api.us-south.logging.cloud.ibm.com`   |
+| `LDLOGHOST`              | {{site.data.keyword.la_full_notm}} ingestion endpoint.                            |                                        | `logs.us-south.logging.cloud.ibm.com` |
+| `LDAPIHOST`              | {{site.data.keyword.la_full_notm}} API ingestion endpoint.                        |                                        | `api.us-south.logging.cloud.ibm.com`   |
 | `LDLOGPATH`              | Ingestion log path.                                   | `/logs/agent/`                         |                       |
 | `LOGDNA_HOSTNAME`        | Log Source name.                                      |                                        | `MyCluster`                            | 
 | `LOG_DIRS`            | Defines custom paths that you want the agent to monitor. </br>Separate multiple paths by using commas. </br>You can use glob patterns. Use double quotation marks to add a globe pattern.  | `var/log` | `/output/,/mylogs/myapplogs/` |
@@ -257,7 +257,7 @@ You can customize a logging agent by configuring parameters for Linux agents, or
 
 
 ### Configure tags to group data
-{: #logdna_agent_tags}
+{: #log_analysis_dna_agent_tags}
 
 You can configure tags at the agent level so that all lines that are sent by this agent can be grouped automatically into a group when you filter data in a view.
 
@@ -273,7 +273,7 @@ You can configure tags at the agent level so that all lines that are sent by thi
 
 
 ### Exclude log files that are monitored by the agent
-{: #logdna_agent_exclude}
+{: #log_analysis_agent_exclude}
 
 You can configure a logging agent to exclude logs that you do not want to monitor through the logging UI. 
 

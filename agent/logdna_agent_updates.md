@@ -22,7 +22,7 @@ subcollection: Log-Analysis-with-LogDNA
 {:note: .note}
 
 # Configuring how logging agent updates are rolled
-{: #logdna_agent_updates}
+{: #log_analysis_agent_updates}
 
 When you configure a logging agent, auto update of the logging agent is enabled. You might find this behavior acceptable for a proof of concept or for a development environment. However, for production environments, and for regulated, and highly available workloads, you might need to control when to update the logging agent.
 {:shortdesc}
@@ -33,12 +33,12 @@ For Kubernetes clusters, you can configure the YAML file to configure how you wa
 
 
 ## Customize a Linux agent
-{: #logdna_agent_updates_linux}
+{: #log_analysis_agent_updates_linux}
 
 
 
 ## Customize a standard Kubernetes cluster agent
-{: #logdna_agent_updates_std_kube}
+{: #log_analysis_agent_updates_std_kube}
 
 When you configure a logging agent by using the default standard Kubernetes cluster configuration YAML file, auto updates of the logging agent are enabled.
 
@@ -62,7 +62,7 @@ Okay, now for the fix. The fix is pretty easy actually. This happens because kub
 To do this, Kubernetes provide a config option in deployment called Readiness Probe. Readiness Probe makes sure that the new pods created are ready to take on requests before terminating the old pods. To enable this, first you need to have a route in whatever the application you want to run which would return a 200 on an HTTP GET request. (Note: you can have other HTTP request methods as well, but for this post, I’m sticking with GET method)
 
 ## Customize an OpenShift Kubernetes cluster agent
-{: #logdna_agent_updates_os_kube}
+{: #log_analysis_agent_updates_os_kube}
 
 
 When you configure a logging agent by using the default OpenShift Kubernetes cluster configuration YAML file, auto updates of the logging agent are enabled.

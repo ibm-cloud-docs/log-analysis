@@ -132,7 +132,7 @@ To provision an instance of {{site.data.keyword.at_full_notm}} through the comma
 4. Create the instance. Run the [ibmcloud resource service-instance-create](/docs/cli?topic=cli-ibmcloud_commands_resource#ibmcloud_resource_service_instance_create) command:
 
     ```
-    ibmcloud resource service-instance-create NAME logdna SERVICE_PLAN_NAME LOCATION
+    ibmcloud resource service-instance-create NAME la_service SERVICE_PLAN_NAME LOCATION
     ```
     {: codeblock}
 
@@ -140,7 +140,7 @@ To provision an instance of {{site.data.keyword.at_full_notm}} through the comma
 
     `NAME` is the name of the instance
 
-    The value *logdna* is the name of the {{site.data.keyword.la_full_notm}} service in the {{site.data.keyword.cloud_notm}}.
+    The value *la_service* is the name of the {{site.data.keyword.la_full_notm}} service in the {{site.data.keyword.cloud_notm}}.
 
     `SERVICE_PLAN_NAME` is the type of plan. Valid values are *lite*, *7-days*, *14-days*, *30-days*.
     
@@ -149,9 +149,9 @@ To provision an instance of {{site.data.keyword.at_full_notm}} through the comma
     For example, to provision an instance with the 7 days retention plan, run the following command:
 
     ```
-    ibmcloud resource service-instance-create logdna-instance-01 logdna 7-day us-south
+    ibmcloud resource service-instance-create logging-instance-01 la_service 7-day us-south
     ```
-    {: codeblock}
+    {: pre}
 
 
 ### Step 2. Create the credentials for your instance
@@ -162,21 +162,21 @@ Run the following command to create a service ID:
 ```
 ibmcloud resource service-key-create NAME ROLE_NAME --instance-name SERVICE_INSTANCE_NAME
 ```
-{: codeblock}
+{: pre}
 
 Where 
 
 * `SERVICE_INSTANCE_NAME` is the name of the instance that you provisioned in the previous step.
 * `NAME` is the name of the service ID. Use the following format to name the key **<SERVICE_INSTANCE_NAME>-key-admin**
-* `ROLE_NAME` is the permission that you  grant this service ID. Set it to **Manager**.
+* `ROLE_NAME` is the permission that you grant this service ID. Set it to **Manager**.
 
  
 For example, you can run the following command:
 
 ```
-ibmcloud resource service-key-create logdna-via-cli-key-admin Manager --instance-name logdna-via-cli
+ibmcloud resource service-key-create logging-via-cli-key-admin Manager --instance-name logging-via-cli
 ```
-{: screen}
+{: pre}
 
 
 

@@ -75,7 +75,7 @@ You can launch the logging web UI directly from a browser.
 
 Complete the following steps:
 
-1. [Get the logging web UI URL](/docs/Activity-Tracker-with-LogDNA?topic=Activity-Tracker-with-LogDNA-get_logdna_web_url).
+1. [Get the logging web UI URL](/docs/Activity-Tracker-with-LogDNA?topic=Activity-Tracker-with-LogDNA-get_log_analysis_web_url).
 
     For example, a logging web UI looks like `https://app.eu-gb.logging.cloud.ibm.com/ext/ibm-sso/xxxxxxxxxx`.
 
@@ -84,13 +84,13 @@ Complete the following steps:
 3. [Optional] You can also pass query parameters to refine the view that is displayed.
 
     ```
-    https://<ENDPOINT>/ext/ibm-sso/LOGDNA_ID?q=<QUERY>&hosts=<HOSTS>&apps=<APPS>&levels=<LEVELS>&tags=<TAGS>&t=<TIMEFRAME>
+    https://<ENDPOINT>/ext/ibm-sso/WEB_UI_ID?q=<QUERY>&hosts=<HOSTS>&apps=<APPS>&levels=<LEVELS>&tags=<TAGS>&t=<TIMEFRAME>
     ```
     {: codeblock}
 
     Where
 
-    * `<ENDPOINT>` represents the dashboard URL in the region where the instance is available. See [logging web UI endpoints](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-endpoints#endpoints_logdna_ui).
+    * `<ENDPOINT>` represents the dashboard URL in the region where the instance is available. See [logging web UI endpoints](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-endpoints#endpoints_log_analysis_ui).
 
     * `<QUERY>` represents the search query that is applied for the view, for example, `q=table%3Amangle%20reason%3A%27refresh%20timer%27`. 
 
@@ -100,7 +100,7 @@ Complete the following steps:
 
         Use `%27` to represent a quote (`'`).
 
-    * `<HOSTS>` represents the list of hosts for which data is included in the view. Multiple hosts are separated by commas, for example,  `hosts=logdna-agent-trkq9,logdna-agent-trkq7`.
+    * `<HOSTS>` represents the list of hosts for which data is included in the view. Multiple hosts are separated by commas, for example,  `hosts=logging-agent-trkq9,logging-agent-trkq7`.
 
     * `<APPS>` represents the list of apps for which data is included in the view. Multiple apps are separated by commas, for example, `apps=autoscaler,catalog-operator`.
 

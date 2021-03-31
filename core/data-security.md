@@ -57,7 +57,7 @@ You can enable virtual routing and forwarding (VRF) to move IP routing for your 
 
 {{site.data.keyword.la_full_notm}} collects and aggregates logs in one centralized logging system.
 
-* Log data is hosted on the {{site.data.keyword.cloud_notm}}. The {{site.data.keyword.la_full_notm}} service is operated by LogDNA.
+* Log data is hosted on the {{site.data.keyword.cloud_notm}}. 
 * Data is collocated in the location where the {{site.data.keyword.la_full_notm}} instance is provisioned. For example, log data for an instance that is provisioned in `US South` is hosted in the `US South` region.
 * Data from {{site.data.keyword.cloud_notm}} services is collected and aggregated in each {{site.data.keyword.cloud_notm}} location where the service is available. 
 * Data forwarded by a logging agent is collected and aggregated in the location where the logging instance configured for an agent is available.
@@ -76,7 +76,7 @@ When a user requests an export, the data is encrypted during transit, and is als
 ### Data retention
 {: #data-storage_retention}
 
-The service plan that you choose for an {{site.data.keyword.la_full_notm}} instance defines the number of days that data is stored and retained in LogDNA. 
+The service plan that you choose for an {{site.data.keyword.la_full_notm}} instance defines the number of days that data is stored and retained. 
 
 For example, if you choose the *Lite* plan, data is not stored at all. However, if you choose the 7-day plan, data is stored for 7 days and you have access to it through the logging Web UI.
 
