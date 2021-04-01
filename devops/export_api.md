@@ -6,7 +6,7 @@ lastupdated: "2021-03-28"
 
 keywords: IBM, Log Analysis, logging, export logs, api
 
-subcollection: Log-Analysis-with-LogDNA
+subcollection: log-analysis
 
 ---
 
@@ -41,11 +41,11 @@ Consider the following information when you export log data:
 
 To export logs, consider the following information:
 
-* **You must have a paid service plan** for the {{site.data.keyword.la_full_notm}} service. [Learn more](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-service_plans). 
+* **You must have a paid service plan** for the {{site.data.keyword.la_full_notm}} service. [Learn more](/docs/log-analysis?topic=log-analysis-service_plans). 
 
-* Check that your user ID has permissions to launch the web UI, view or manage service keys, and view logs. [Learn more](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-view_logs).
+* Check that your user ID has permissions to launch the web UI, view or manage service keys, and view logs. [Learn more](/docs/log-analysis?topic=log-analysis-view_logs).
 
-* Check that the logging instance has the export feature enabled. [Learn more](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-export_config).
+* Check that the logging instance has the export feature enabled. [Learn more](/docs/log-analysis?topic=log-analysis-export_config).
 
 
 ## Export API
@@ -54,7 +54,7 @@ To export logs, consider the following information:
 Use `ENDPOINT/v1/export?QUERY_PARAMETERS" -u SERVICE_KEY:` to export logs.
 {: note}
 
-*ENDPOINT* represents the entry point to the service. Each region has a different URL. To export logs from an auditing instance, see [Endpoints](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-endpoints).
+*ENDPOINT* represents the entry point to the service. Each region has a different URL. To export logs from an auditing instance, see [Endpoints](/docs/log-analysis?topic=log-analysis-endpoints).
 
 *QUERY_PARAMETERS* are parameters that define the filtering criteria that is applied to the export request.
 
@@ -79,7 +79,7 @@ The following table lists the query parameters that you can set:
 | `hosts`     | `string`     | Optional   | Comma-separated list of hosts. |
 | `apps`      | `string`     | Optional   | Comma-separated list of applications. |
 | `levels`    | `string`     | Optional   | Comma-separated list of log levels. |
-| `query`     | `string`     | Optional   | Search query. For more information, see [Search Logs](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-view_logs#view_logs_step6). |
+| `query`     | `string`     | Optional   | Search query. For more information, see [Search Logs](/docs/log-analysis?topic=log-analysis-view_logs#view_logs_step6). |
 | `prefer`    | `string`     | Optional   | Defines the log lines that you want to export. Valid values are `head`, first log lines, and `tail`, last log lines. If not specified, defaults to tail.  |
 | `email`     | `string`     | Optional   | Specifies the email with the downloadable link of your export. By default, the log lines are streamed.|
 | `emailSubject` | `string`     | Optional   | Use to set the subject of the email. </br>Use `%20` to represent a space. For example, a sample value is `Export%20logs`. |
@@ -106,7 +106,7 @@ Complete the following steps to export logs programmatically:
 ### Step 1. Get a service key
 {: #export_api_step_1}
 
-[Get a service key](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-service_keys). 
+[Get a service key](/docs/log-analysis?topic=log-analysis-service_keys). 
 
 
 ### Step 2. Identify the data to pass through the export parameters
@@ -132,7 +132,7 @@ curl "ENDPOINT/v1/export?QUERY_PARAMETERS" -u SERVICE_KEY:
 
 Where 
 
-* ENDPOINT represents the entry point to the service. Each region has a different URL. [Learn more](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-endpoints).
+* ENDPOINT represents the entry point to the service. Each region has a different URL. [Learn more](/docs/log-analysis?topic=log-analysis-endpoints).
 * QUERY_PARAMETERS are parameters that define the filtering criteria that is applied to the export request.
 * SERVICE_KEY is the service key that you created in the previous step.
 

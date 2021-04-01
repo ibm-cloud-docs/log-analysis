@@ -6,7 +6,7 @@ lastupdated: "2021-03-28"
 
 keywords: IBM, Log Analysis, logging, web UI, browser
 
-subcollection: Log-Analysis-with-LogDNA
+subcollection: log-analysis
 
 ---
 
@@ -45,7 +45,7 @@ The following table lists the minimum policies that a user must have to be able 
 | `{{site.data.keyword.la_full_notm}}` | Service role: Reader      | Allows the user to launch the Web UI and view logs in the Web UI.    |
 {: caption="Table 1. IAM policies" caption-side="top"} 
 
-For more information on how to configure these policies for a user, see [Granting permissions to a user to view logs](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-work_iam#user_logdna).
+For more information on how to configure these policies for a user, see [Granting permissions to a user to view logs](/docs/log-analysis?topic=log-analysis-work_iam#user_logdna).
 
 
 ## Launching the logging web UI through the {{site.data.keyword.cloud_notm}} UI
@@ -90,7 +90,7 @@ Complete the following steps:
 
     Where
 
-    * `<ENDPOINT>` represents the dashboard URL in the region where the instance is available. See [logging web UI endpoints](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-endpoints#endpoints_log_analysis_ui).
+    * `<ENDPOINT>` represents the dashboard URL in the region where the instance is available. See [logging web UI endpoints](/docs/log-analysis?topic=log-analysis-endpoints#endpoints_log_analysis_ui).
 
     * `<QUERY>` represents the search query that is applied for the view, for example, `q=table%3Amangle%20reason%3A%27refresh%20timer%27`. 
 

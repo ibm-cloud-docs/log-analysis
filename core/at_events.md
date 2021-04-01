@@ -6,7 +6,7 @@ lastupdated: "2021-03-28"
 
 keywords: IBM, Log Analysis, logging, audit, activity tracker, events, auditlogs, security
 
-subcollection: Log-Analysis-with-LogDNA
+subcollection: log-analysis
 
 ---
 

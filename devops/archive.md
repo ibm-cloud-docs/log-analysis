@@ -6,7 +6,7 @@ lastupdated: "2021-03-28"
 
 keywords: IBM, Log Analysis, logging, archive logs, COS, cloud object storage
 
-subcollection: Log-Analysis-with-LogDNA
+subcollection: log-analysis
 
 ---
 
@@ -329,7 +329,7 @@ The following table lists the policies that a user must have to configure archiv
 | `{{site.data.keyword.la_full_notm}}` | Service role: Manager      | Allows the user to launch the web UI and view logs in the web UI.                             |
 {: caption="Table 2. IAM policies" caption-side="top"} 
 
-For more information on how to configure these policies for a user, see [Granting permissions to a user to view logs](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-work_iam#user_logdna).
+For more information on how to configure these policies for a user, see [Granting permissions to a user to view logs](/docs/log-analysis?topic=log-analysis-work_iam#user_logdna).
 
 Complete the following steps to assign a user permission to archive logs: 
 
@@ -356,7 +356,7 @@ Complete the following steps to assign a user permission to archive logs:
 
 Complete the following steps to configure archiving of your {{site.data.keyword.la_full_notm}} instance into a COS bucket:
 
-1. [Launch the {{site.data.keyword.la_full_notm}} web UI](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-view_logs#view_logs_step2).
+1. [Launch the {{site.data.keyword.la_full_notm}} web UI](/docs/log-analysis?topic=log-analysis-view_logs#view_logs_step2).
 
 2. Select the **Settings** icon ![Configuration icon](../images/admin.png "Admin icon"). Then select **Archiving**. 
 

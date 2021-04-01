@@ -6,7 +6,7 @@ lastupdated: "2021-03-28"
 
 keywords: IBM Cloud, {{site.data.keyword.la_short}}, EU-supported
 
-subcollection: Log-Analysis-with-LogDNA
+subcollection: log-analysis
 
 ---
 
@@ -61,7 +61,7 @@ To be able to use the {{site.data.keyword.sqlquery_short}} service to query arch
 
     You must have access to a bucket that contains the {{site.data.keyword.la_full_notm}} archive files and a bucket to use to store results from your queries. 
 
-* You must have an {{site.data.keyword.la_full_notm}} instance provisioned in your account that has [archiving configured to a bucket in the COS instance in your account](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-archiving). 
+* You must have an {{site.data.keyword.la_full_notm}} instance provisioned in your account that has [archiving configured to a bucket in the COS instance in your account](/docs/log-analysis?topic=log-analysis-archiving). 
 
     Events are archived to a file in a COS bucket. 
 

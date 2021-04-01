@@ -6,7 +6,7 @@ lastupdated: "2021-03-28"
 
 keywords: IBM, Log Analysis, logging, services
 
-subcollection: Log-Analysis-with-LogDNA
+subcollection: log-analysis
 
 
 ---
@@ -27,7 +27,7 @@ subcollection: Log-Analysis-with-LogDNA
 # Cloud services message ID prefixes
 {: #cloud_services_msg_prefix}
 
-List of prefixes that [{{site.data.keyword.cloud}} services](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-cloud_services) use when they send logs to {{site.data.keyword.la_full_notm}}:
+List of prefixes that [{{site.data.keyword.cloud}} services](/docs/log-analysis?topic=log-analysis-cloud_services) use when they send logs to {{site.data.keyword.la_full_notm}}:
 {:shortdesc}
 
 

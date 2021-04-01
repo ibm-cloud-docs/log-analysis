@@ -6,7 +6,7 @@ lastupdated: "2021-03-28"
 
 keywords: IBM, Log Analysis, logging, service keys
 
-subcollection: Log-Analysis-with-LogDNA
+subcollection: log-analysis
 
 ---
 
@@ -40,7 +40,7 @@ You can only generate a service Key through the logging web UI.
     
 Complete the following steps to create a service key:
 
-1. [Launch the {{site.data.keyword.la_full_notm}} web UI](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-launch).
+1. [Launch the {{site.data.keyword.la_full_notm}} web UI](/docs/log-analysis?topic=log-analysis-launch).
 
 2. Select the **Configuration** icon ![Configuration icon](../images/admin.png). Then, select **Organization**. 
 
@@ -63,7 +63,7 @@ You can only delete a service Key through the logging web UI.
 
 Complete the following steps to delete a service key:
 
-1. [Launch the {{site.data.keyword.la_full_notm}} web UI](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-launch).
+1. [Launch the {{site.data.keyword.la_full_notm}} web UI](/docs/log-analysis?topic=log-analysis-launch).
 
 2. Select the **Configuration** icon ![Configuration icon](../images/admin.png). Then, select **Organization**. 
 
@@ -80,11 +80,11 @@ Complete the following steps to delete a service key:
 Only users that have the **manager** service role or the **standard-member** service role can view service keys.
 {: important} 
 
-For more information, see [service roles](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-work_iam).
+For more information, see [service roles](/docs/log-analysis?topic=log-analysis-work_iam).
 
 Complete the following steps to view a service key:
 
-1. [Launch the {{site.data.keyword.la_full_notm}} web UI](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-launch).
+1. [Launch the {{site.data.keyword.la_full_notm}} web UI](/docs/log-analysis?topic=log-analysis-launch).
 
 2. Select the **Configuration** icon ![Configuration icon](../images/admin.png). Then, select **Organization**. 
 

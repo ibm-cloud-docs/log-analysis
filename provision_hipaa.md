@@ -6,7 +6,7 @@ lastupdated: "2021-03-28"
 
 keywords: IBM, Log Analysis, logging, overview
 
-subcollection: Log-Analysis-with-LogDNA
+subcollection: log-analysis
 
 ---
 
@@ -58,9 +58,9 @@ The HIPAA plan allows a maximum of 25 team members per instance. If you need to 
 
 
 Choose any of the following methods to provision an instance of the {{site.data.keyword.la_full_notm}} service:
-[Provisioning an instance through the Observability dashboard](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-provision#provision_ui)
-[Provisioning an instance through the catalog](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-provision#provision_catalog)
-[Provisioning an instance through the CLI](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-provision#provision_cli)
+[Provisioning an instance through the Observability dashboard](/docs/log-analysis?topic=log-analysis-provision#provision_ui)
+[Provisioning an instance through the catalog](/docs/log-analysis?topic=log-analysis-provision#provision_catalog)
+[Provisioning an instance through the CLI](/docs/log-analysis?topic=log-analysis-provision#provision_cli)
 
 Make sure that your naming convention for {{site.data.keyword.la_full_notm}} instances does not include PII information. Choose the **HIPAA service plan** for your logging instances.
 {: important}
@@ -83,7 +83,7 @@ Complete the following steps:
 ## Next steps
 {: #compliance_hipaa_iam}
 
-Restrict access to manage and view the data. [Learn more](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-work_iam)
+Restrict access to manage and view the data. [Learn more](/docs/log-analysis?topic=log-analysis-work_iam)
 .
 
 

@@ -6,7 +6,7 @@ lastupdated: "2021-03-28"
 
 keywords: IBM, Log Analysis, logging, services
 
-subcollection: Log-Analysis-with-LogDNA
+subcollection: log-analysis
 
 
 ---
@@ -26,7 +26,7 @@ subcollection: Log-Analysis-with-LogDNA
 # Cloud services by location
 {: #cloud_services_locations}
 
-List of locations where {{site.data.keyword.cloud_notm}} services are enabled to send logs to {{site.data.keyword.la_full_notm}}. You monitor these logs that you monitor through the {{site.data.keyword.la_short}} instance that is configured to receive platform services logs. [Learn more about enabling service platform logs](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-config_svc_logs).
+List of locations where {{site.data.keyword.cloud_notm}} services are enabled to send logs to {{site.data.keyword.la_full_notm}}. You monitor these logs that you monitor through the {{site.data.keyword.la_short}} instance that is configured to receive platform services logs. [Learn more about enabling service platform logs](/docs/log-analysis?topic=log-analysis-config_svc_logs).
 {:shortdesc}
 
 

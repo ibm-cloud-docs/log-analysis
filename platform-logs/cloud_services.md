@@ -6,7 +6,7 @@ lastupdated: "2021-03-28"
 
 keywords: IBM, Log Analysis, logging, services
 
-subcollection: Log-Analysis-with-LogDNA
+subcollection: log-analysis
 
 
 ---
@@ -30,7 +30,7 @@ subcollection: Log-Analysis-with-LogDNA
 List of {{site.data.keyword.cloud}} services that send logs to {{site.data.keyword.la_full_notm}}:
 {:shortdesc}
 
-You can monitor logs from CF apps and enabled services through [the {{site.data.keyword.la_short}} instance that is configured to receive platform services logs](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-config_svc_logs) in the location where the app or service is running. 
+You can monitor logs from CF apps and enabled services through [the {{site.data.keyword.la_short}} instance that is configured to receive platform services logs](/docs/log-analysis?topic=log-analysis-config_svc_logs) in the location where the app or service is running. 
 
 Notice that there is only 1 instance per location with the flag **Platform logs**.
 {: important}
@@ -44,7 +44,7 @@ Notice that there is only 1 instance per location with the flag **Platform logs*
 You can monitor logs from CF apps through the {{site.data.keyword.la_short}} instance that is configured to receive platform services logs in the location where the app is running. 
 {: note}
 
-To see the list of {{site.data.keyword.la_full_notm}} locations where this service sends logs, see [Cloud Foundry](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-cloud_services_locations#cs_locations_platform_cfapps).
+To see the list of {{site.data.keyword.la_full_notm}} locations where this service sends logs, see [Cloud Foundry](/docs/log-analysis?topic=log-analysis-cloud_services_locations#cs_locations_platform_cfapps).
 
 
 
@@ -73,7 +73,7 @@ The following table lists services that send logs to {{site.data.keyword.la_full
 | [{{site.data.keyword.satellitelong}}](/docs/satellite?topic=satellite-getting-started) | With {{site.data.keyword.satellitelong_notm}}, you can bring your own compute infrastructure to run {{site.data.keyword.cloud_notm}} services and consistently deploy, manage, and control your app workloads. | [More info](/docs/satellite?topic=satellite-health) |
 {: caption="Table 3. List of container services" caption-side="top"} 
 
-To see the list of {{site.data.keyword.la_full_notm}} locations where these services send logs, see [Container services](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-cloud_services_locations#cs_locations_container).
+To see the list of {{site.data.keyword.la_full_notm}} locations where these services send logs, see [Container services](/docs/log-analysis?topic=log-analysis-cloud_services_locations#cs_locations_container).
 
 ## Database services
 {: #database}
@@ -98,7 +98,7 @@ The following table lists services that send logs to {{site.data.keyword.la_full
 You can monitor logs through the {{site.data.keyword.la_short}} instance that is configured to receive platform services logs in the location where the service is running. 
 {: note}
 
-To see the list of {{site.data.keyword.la_full_notm}} locations where these services send logs, see [Database services](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-cloud_services_locations#cs_locations_database).
+To see the list of {{site.data.keyword.la_full_notm}} locations where these services send logs, see [Database services](/docs/log-analysis?topic=log-analysis-cloud_services_locations#cs_locations_database).
 
 
 
@@ -113,7 +113,7 @@ The following table lists services that send logs to {{site.data.keyword.la_full
 | [{{site.data.keyword.mq_short}}](/docs/mqcloud?topic=mqcloud-mqoc_getting_started) | MQ on IBM Cloud enables you to quickly and easily deploy queue managers in the cloud and connect your applications to them, for reliable data transfer between different parts of your enterprise application landscape. | [More info ](/docs/mqcloud?topic=mqcloud-logdna_logs) |
 {: caption="Table 5. List of integration Cloud services" caption-side="top"} 
 
-To see the list of {{site.data.keyword.la_full_notm}} locations where these services send logs, see [Integration services](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-cloud_services_locations#cs_locations_integration).
+To see the list of {{site.data.keyword.la_full_notm}} locations where these services send logs, see [Integration services](/docs/log-analysis?topic=log-analysis-cloud_services_locations#cs_locations_integration).
 
 
 ## Security services
@@ -131,7 +131,7 @@ The following table lists Cloud services that send logs to {{site.data.keyword.l
 You can monitor logs through the {{site.data.keyword.la_short}} instance that is configured to receive platform services logs in the location where the service is running. 
 {: note}
 
-To see the list of {{site.data.keyword.la_full_notm}} locations where these services send logs, see [Security services](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-cloud_services_locations#cs_locations_security).
+To see the list of {{site.data.keyword.la_full_notm}} locations where these services send logs, see [Security services](/docs/log-analysis?topic=log-analysis-cloud_services_locations#cs_locations_security).
 
 
 ## Networking services
@@ -190,5 +190,5 @@ The following table lists Cloud services that send logs to {{site.data.keyword.l
 | [{{site.data.keyword.iva_full_notm}}](/docs/voice-agent?topic=voice-agent-getting-started) | You can {{site.data.keyword.iva_full_notm}} to integrate a set of orchestrated Watson services with the telephone network by using the Session Initiation Protocol (SIP).   | [More info](/docs/voice-agent?topic=voice-agent-log-analysis-integration) |
 {: caption="Table 10. List of Watson AI Cloud services" caption-side="top"} 
 
-To see the list of {{site.data.keyword.la_full_notm}} locations where these services send logs, see [Watson AI services](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-cloud_services_locations#cloud_services_locations_watson_ai).
+To see the list of {{site.data.keyword.la_full_notm}} locations where these services send logs, see [Watson AI services](/docs/log-analysis?topic=log-analysis-cloud_services_locations#cloud_services_locations_watson_ai).
 

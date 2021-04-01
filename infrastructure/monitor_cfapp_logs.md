@@ -6,7 +6,7 @@ lastupdated: "2021-03-28"
 
 keywords: IBM, Log Analysis, logging, cf
 
-subcollection: Log-Analysis-with-LogDNA
+subcollection: log-analysis
 
 
 ---
@@ -118,7 +118,7 @@ You have different options to collect and forward logs to an instance of the {{s
 | `Higher throughput at ingestion`              | ![Checkmark icon](../images/checkmark-icon.svg)              | `NO`                                               |
 {: caption="Table 4. Information about the methods that can be adopted to monitor CF resource logs in {{site.data.keyword.cloud_notm}}" caption-side="top"}
 
-Another consideration is the restriction that you can apply to users to control access to view logs in a logging instance. You can use [IAM to manage users and their access to view logs](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-work_iam)
+Another consideration is the restriction that you can apply to users to control access to view logs in a logging instance. You can use [IAM to manage users and their access to view logs](/docs/log-analysis?topic=log-analysis-work_iam)
 . 
 * When you use the method of a single logging instance to host platform logs, all logs from CF resources that run on that region are available for view through the instance. Any user with a service role `viewer` can see any log entries. 
 * When you use the method of sending CF app logs to a custom logging instance, users with a service role `viewer` can only see logs from CF app logs that are configured to stream logs to this logging instance.
@@ -131,7 +131,7 @@ CF resources are location bound resources in the {{site.data.keyword.cloud_notm}
 
 In the {{site.data.keyword.cloud_notm}}, you can configure 1 logging instance to collect and host platform services logs in a region. After the instance is provisioned and configured in a region, logs that are generated from enabled services in that region such as CF apps or CF infrastructure are automatically collected and forwarded through the ELK-Adatper. You can monitor logs through this logging instance.
 
-To configure an instance from the Observability dashboard in the {{site.data.keyword.cloud_notm}}, see [Configuring IBM Cloud platform logs](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-config_svc_logs).
+To configure an instance from the Observability dashboard in the {{site.data.keyword.cloud_notm}}, see [Configuring IBM Cloud platform logs](/docs/log-analysis?topic=log-analysis-config_svc_logs).
 
 
 
@@ -151,7 +151,7 @@ To send CF logs to a {{site.data.keyword.la_short}} instance, consider the follo
 
 Use a user ID that is a member or an owner of an {{site.data.keyword.cloud_notm}} account. To get an {{site.data.keyword.cloud_notm}} user ID, go to: [Registration](https://cloud.ibm.com/login){: external}.
 
-[Your {{site.data.keyword.IBM_notm}}ID must have assigned IAM policies for each of the following resources](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-work_iam). For example, to work in the US-south region and in the default resource group, you need the following permissions: 
+[Your {{site.data.keyword.IBM_notm}}ID must have assigned IAM policies for each of the following resources](/docs/log-analysis?topic=log-analysis-work_iam). For example, to work in the US-south region and in the default resource group, you need the following permissions: 
 
 | Resource                             | Scope of the access policy | Role    | Region    | Information                  |
 |--------------------------------------|----------------------------|---------|-----------|------------------------------|
@@ -169,12 +169,12 @@ You must have a CF app deployed and running.
 ### Step1: Provision an {{site.data.keyword.la_full_notm}} instance
 {: #monitor_cfapp_logs_drains_step1}
 
-To provision a service instance of {{site.data.keyword.la_full_notm}} through the {{site.data.keyword.cloud_notm}} console, see [Provisioning an instance](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-provision).
+To provision a service instance of {{site.data.keyword.la_full_notm}} through the {{site.data.keyword.cloud_notm}} console, see [Provisioning an instance](/docs/log-analysis?topic=log-analysis-provision).
 
 ### Step 2: Provision a syslog port in the logging instance
 {: #monitor_cfapp_logs_drains_step2}
 
-1. [Launch the logging web UI.](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-launch)
+1. [Launch the logging web UI.](/docs/log-analysis?topic=log-analysis-launch)
 
     You launch the web UI within the context of an {{site.data.keyword.la_full_notm}} instance, from the {{site.data.keyword.cloud_notm}} UI. 
 
@@ -214,7 +214,7 @@ Complete the following steps:
 
     *SVC_INSTANCE_NAME* is the name of the CF service instance.
 
-    *SYSLOG_ENDPOINT_URL* is the endpoint URL in the region where the instance is running. [List of syslog endpoints](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-endpoints#endpoints_syslog). For example, for us-south, the URL is: `syslog-a.us-south.logging.cloud.ibm.com`
+    *SYSLOG_ENDPOINT_URL* is the endpoint URL in the region where the instance is running. [List of syslog endpoints](/docs/log-analysis?topic=log-analysis-endpoints#endpoints_syslog). For example, for us-south, the URL is: `syslog-a.us-south.logging.cloud.ibm.com`
 
     *PORT_NUMBER* is the port number that you provisioned in your logging instance.
 
@@ -268,12 +268,12 @@ Complete the following steps:
 ### Step 4: Verify that CF app logs are displayed through the logging web UI
 {: #monitor_cfapp_logs_drains_step4}
 
-Launch the logging web UI. Then, search for your CF application logs. For more information, see [Filtering logs](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-view_logs#view_logs_step5).
+Launch the logging web UI. Then, search for your CF application logs. For more information, see [Filtering logs](/docs/log-analysis?topic=log-analysis-view_logs#view_logs_step5).
 
 Try also some of these tasks:
-- [Search logs](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-view_logs#view_logs_step6)
-- [Define views](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-view_logs#view_logs_step7)
-- [Configure alerts](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-alerts)
+- [Search logs](/docs/log-analysis?topic=log-analysis-view_logs#view_logs_step6)
+- [Define views](/docs/log-analysis?topic=log-analysis-view_logs#view_logs_step7)
+- [Configure alerts](/docs/log-analysis?topic=log-analysis-alerts)
 
 **Note:** Some of these features require a plan upgrade.
 

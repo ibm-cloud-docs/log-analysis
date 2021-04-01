@@ -6,10 +6,10 @@ lastupdated: "2021-03-28"
 
 keywords: IBM Cloud, Log Analysis, Kubernetes logs
 
-subcollection: Log-Analysis-with-LogDNA
+subcollection: log-analysis
 
 content-type: tutorial
-services: Log-Analysis-with-LogDNA
+services: log-analysis
 account-plan: lite 
 completion-time: 1h 
 
@@ -30,7 +30,7 @@ completion-time: 1h
 # Use the {{site.data.keyword.la_short}} web UI
 {: #tutorial-use-logdna}
 {: toc-content-type="tutorial"}
-{: toc-services-"Log-Analysis-with-LogDNA"} 
+{: toc-services-"log-analysis"} 
 {: toc-completion-time="1h"} 
 
 
@@ -46,11 +46,11 @@ application and system logs.
 
 - Make sure you have a logging instance that is collecting logs. 
 
-    - You can have a logging agent configured to collect logs from a VPC instance. See [Logging in Linux VPC server instances](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-ubuntu).
+    - You can have a logging agent configured to collect logs from a VPC instance. See [Logging in Linux VPC server instances](/docs/log-analysis?topic=log-analysis-ubuntu).
 
-    - You can have a logging agent configured to collect logs from a Kubernetes cluster. See [Logging in Kubernetes clusters (cluster-level logging)](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-kube).
+    - You can have a logging agent configured to collect logs from a Kubernetes cluster. See [Logging in Kubernetes clusters (cluster-level logging)](/docs/log-analysis?topic=log-analysis-kube).
 
-- Check you have permissions to launch the logging web UI. See [Granting IAM policies to a user to launch the web UI](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-launch#launch_iam).
+- Check you have permissions to launch the logging web UI. See [Granting IAM policies to a user to launch the web UI](/docs/log-analysis?topic=log-analysis-launch#launch_iam).
 
 
 ## Launch the {{site.data.keyword.la_full_notm}} web UI

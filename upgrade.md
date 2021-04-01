@@ -5,7 +5,7 @@ copyright:
 lastupdated: "2021-03-28"
 
 keywords: IBM, Log Analysis, logging, upgrade, plan
-subcollection: Log-Analysis-with-LogDNA
+subcollection: log-analysis
 
 ---
 
@@ -28,7 +28,7 @@ subcollection: Log-Analysis-with-LogDNA
 When you provision an instance of the {{site.data.keyword.la_full_notm}} service, you must choose a service plan. Different plans offer different features. You can change the service plan at any time.
 {:shortdesc}
 
-[Learn more about service plans](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-service_plans).
+[Learn more about service plans](/docs/log-analysis?topic=log-analysis-service_plans).
 
 ## Changing the service plan through the Observability dashboard
 {: #upgrade_ui}
@@ -63,7 +63,7 @@ Complete the following steps to change the service plan:
 
 2. Log in to the location in the {{site.data.keyword.cloud_notm}} where the instance is provisioned. Run the following command: [ibmcloud login](/docs/cli?topic=cli-ibmcloud_cli#ibmcloud_login)
 
-    To get the latest list of locations that are available for the {{site.data.keyword.la_full_notm}} service, see [Locations](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-regions).
+    To get the latest list of locations that are available for the {{site.data.keyword.la_full_notm}} service, see [Locations](/docs/log-analysis?topic=log-analysis-regions).
 
 3. Set the resource group where the instance is available. Run the following command: [ibmcloud target](/docs/cli?topic=cli-ibmcloud_cli#ibmcloud_target)
 
@@ -91,7 +91,7 @@ Complete the following steps to change the service plan:
 
     * `service-plan-id` indicates the type of plan.
 
-    * `RESOURCE_PLAN_ID` is the ID of the plan that you want to set. To get the service plan IDs, see [Service plans](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-service_plans).
+    * `RESOURCE_PLAN_ID` is the ID of the plan that you want to set. To get the service plan IDs, see [Service plans](/docs/log-analysis?topic=log-analysis-service_plans).
     
 
 For example, to change the service plan of an instance to the 30 days retention plan, run the following command:

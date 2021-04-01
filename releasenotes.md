@@ -6,7 +6,7 @@ lastupdated: "2021-03-28"
 
 keywords: Log Analysis release notes
 
-subcollection: Log-Analysis-with-LogDNA
+subcollection: log-analysis
 
 ---
 
@@ -25,7 +25,7 @@ Use these release notes to learn about the latest updates to {{site.data.keyword
 
 This release includes the following functional enhancements:
 
-- New CLI added that can be used to list instances and export data from an instance. [Learn more about the CLI](/docs/Log-Analysis-with-LogDNA?topic=logdna-cli-plugin-logdna-cli).
+- New CLI added that can be used to list instances and export data from an instance. [Learn more about the CLI](/docs/log-analysis?topic=logdna-cli-plugin-logdna-cli).
 - New API added that can be used to export data from an instance, and manage views and alerts. [Learn more about the API](https://cloud.ibm.com/apidocs/logdna?code=python#introduction){: external}.
 
 
@@ -34,7 +34,7 @@ This release includes the following functional enhancements:
 
 This release includes the following functional enhancements:
 
-* Hourly archiving in Chennai, Tokyo, Sydney, Seoul, London, Washington instead of daily archiving. [Learn more](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-archiving).
+* Hourly archiving in Chennai, Tokyo, Sydney, Seoul, London, Washington instead of daily archiving. [Learn more](/docs/log-analysis?topic=log-analysis-archiving).
 
 
 

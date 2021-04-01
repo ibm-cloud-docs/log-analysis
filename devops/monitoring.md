@@ -6,7 +6,7 @@ lastupdated: "2021-03-28"
 
 keywords: IBM, Log Analysis
 
-subcollection: Log-Analysis-with-LogDNA
+subcollection: log-analysis
 
 ---
 
@@ -30,7 +30,7 @@ You can send alerts to {{site.data.keyword.mon_full_notm}} and manage them throu
 ## Configuring an alert
 {: #monitoring-config}
 
-When you [configure an alert](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-alerts) you can have that alert sent to {{site.data.keyword.mon_full_notm}}.
+When you [configure an alert](/docs/log-analysis?topic=log-analysis-alerts) you can have that alert sent to {{site.data.keyword.mon_full_notm}}.
 
 1. When configuring your alert, click ![PagerDuty icon](../images/sysdig.png "PagerDuty icon").
 

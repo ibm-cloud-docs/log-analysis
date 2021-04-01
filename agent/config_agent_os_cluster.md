@@ -6,7 +6,7 @@ lastupdated: "2021-03-28"
 
 keywords: IBM, Log Analysis, logging, config agent
 
-subcollection: Log-Analysis-with-LogDNA
+subcollection: log-analysis
 
 ---
 
@@ -161,7 +161,7 @@ You must create a Kubernetes secret to store your logging ingestion key for your
     
     `PROJECT` is the namespace where the logging pods run. Set this value to **ibm-observe**.
     
-    `INGESTION_KEY` is the ingestion key for the logging instance where you plan to forward and collect the cluster logs. To get the ingestion key, see [Get the ingestion key through the IBM Log Analysis with logging UI](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-ingestion_key).
+    `INGESTION_KEY` is the ingestion key for the logging instance where you plan to forward and collect the cluster logs. To get the ingestion key, see [Get the ingestion key through the IBM Log Analysis with logging UI](/docs/log-analysis?topic=log-analysis-ingestion_key).
 
 
 ### Step 3. Enable virtual routing and forwarding (VRF)
@@ -274,7 +274,7 @@ oc logs logdna-agent-xxxkz
 {: pre}
 
 
-Next, launch the logging UI to verify that logs from the cluster are available through the UI. See [Navigating to the web UI](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-launch) and [Viewing logs](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-view_logs).
+Next, launch the logging UI to verify that logs from the cluster are available through the UI. See [Navigating to the web UI](/docs/log-analysis?topic=log-analysis-launch) and [Viewing logs](/docs/log-analysis?topic=log-analysis-view_logs).
 
 
 

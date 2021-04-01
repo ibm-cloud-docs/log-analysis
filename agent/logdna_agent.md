@@ -6,7 +6,7 @@ lastupdated: "2021-03-28"
 
 keywords: IBM, Log Analysis, logging, config agent
 
-subcollection: Log-Analysis-with-LogDNA
+subcollection: log-analysis
 
 ---
 
@@ -46,7 +46,7 @@ logging agent images for Kubernetes clusters are public images that are availabl
 
 * The {{site.data.keyword.registrylong_notm}} includes *Vulnerability Advisor* features that scan for potential security issues and vulnerabilities. Vulnerability Advisor checks for vulnerable packages in specific Docker base images, and known vulnerabilities in app configuration settings. When vulnerabilities are found, information about the vulnerability is provided. You can use this information to resolve security issues so that containers are not deployed from vulnerable images. 
 
-To get details about the logging agent images, see [Getting information about logging agent images ](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-logdna_agent_image).
+To get details about the logging agent images, see [Getting information about logging agent images ](/docs/log-analysis?topic=log-analysis-logdna_agent_image).
 
 
 ### Understanding image tags
@@ -138,21 +138,21 @@ To connect your Kubernetes cluster to send logs to your {{site.data.keyword.la_f
 
 - The logging agent collects STDOUT, STDERR, logs with the extension `*.log`, and extensionsless files that are stored in the `/var/log` directory of your pod. By default, logs are collected from all namespaces, including `kube-system`, and automatically forwarded to the {{site.data.keyword.la_full_notm}} service.
 
-- To connect an agent to a standard Kubernetes cluster, see [Connecting a logging agent for a standard Kubernetes cluster](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-config_agent_kube_cluster).
+- To connect an agent to a standard Kubernetes cluster, see [Connecting a logging agent for a standard Kubernetes cluster](/docs/log-analysis?topic=log-analysis-config_agent_kube_cluster).
 
-- To connect an agent to an OpenShift Kubernetes cluster, see [Connecting a logging agent for an OpenShift Kubernetes cluster](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-config_agent_os_cluster).
+- To connect an agent to an OpenShift Kubernetes cluster, see [Connecting a logging agent for an OpenShift Kubernetes cluster](/docs/log-analysis?topic=log-analysis-config_agent_os_cluster).
 
 
 
 ### Detaching a logging agent from a cluster
 {: #log_analysis_agent_detach}
 
-To stop your Kubernetes cluster from sending logs to your {{site.data.keyword.la_full_notm}} instance, you must remove the logging agent from your cluster. [Learn more](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-detach_agent).
+To stop your Kubernetes cluster from sending logs to your {{site.data.keyword.la_full_notm}} instance, you must remove the logging agent from your cluster. [Learn more](/docs/log-analysis?topic=log-analysis-detach_agent).
 
 | Platform                       | How to install and configure |
 |--------------------------------|------------------------------|
-| `Standard Kubernetes cluster`  | [Detaching a logging agent from a standard Kubernetes cluster](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-detach_agent#detach_agent_kube) |
-| `OpenShift Kubernetes cluster` | [Detaching a logging agent from an Openshift Kubernetes cluster](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-detach_agent#detach_agent_os) |
+| `Standard Kubernetes cluster`  | [Detaching a logging agent from a standard Kubernetes cluster](/docs/log-analysis?topic=log-analysis-detach_agent#detach_agent_kube) |
+| `OpenShift Kubernetes cluster` | [Detaching a logging agent from an Openshift Kubernetes cluster](/docs/log-analysis?topic=log-analysis-detach_agent#detach_agent_os) |
 {: caption="Table 10. Detaching a logging agent from a cluster" caption-side="top"}
 
 
@@ -184,7 +184,7 @@ To connect your Linux server to send logs to your {{site.data.keyword.la_full_no
 
 - The logging agent reads log files from */var/log*, and forwards the log data to your logging instance. 
 
-- To connect an agent to a Linux platform, see [Connecting a logging agent for Linux Ubuntu or Debian](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-config_agent_linux).
+- To connect an agent to a Linux platform, see [Connecting a logging agent for Linux Ubuntu or Debian](/docs/log-analysis?topic=log-analysis-config_agent_linux).
 
 
 
@@ -267,8 +267,8 @@ You can configure tags at the agent level so that all lines that are sent by thi
 
 | Platform                       | How to install and configure |
 |--------------------------------|------------------------------|
-| `Kubernetes cluster`           | [Adding tags to logs from a Kubernetes cluster](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-adding_tags#adding_tags_kube) |
-| `Linux Ubuntu or Debian`       | [Adding tags to logs from Linux Ubuntu or Debian](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-adding_tags#adding_tags_linux) |
+| `Kubernetes cluster`           | [Adding tags to logs from a Kubernetes cluster](/docs/log-analysis?topic=log-analysis-adding_tags#adding_tags_kube) |
+| `Linux Ubuntu or Debian`       | [Adding tags to logs from Linux Ubuntu or Debian](/docs/log-analysis?topic=log-analysis-adding_tags#adding_tags_linux) |
 {: caption="Table 9. Adding tags" caption-side="top"}
 
 
@@ -282,7 +282,7 @@ You can configure a logging agent to exclude logs that you do not want to monito
 * You can use glob patterns to define what you want to exclude. 
 * You can configure specific files.
 
-For more information, see [Excluding log files through the logging agent](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-exclude_logs_from_agent).
+For more information, see [Excluding log files through the logging agent](/docs/log-analysis?topic=log-analysis-exclude_logs_from_agent).
 
 
 

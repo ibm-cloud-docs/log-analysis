@@ -6,10 +6,10 @@ lastupdated: "2021-03-28"
 
 keywords: IBM, Log Analysis, logging, kubernetes, tutorial, reset ingestion key
 
-subcollection: Log-Analysis-with-LogDNA
+subcollection: log-analysis
 
 content-type: tutorial
-services: containers, Log-Analysis-with-LogDNA
+services: containers, log-analysis
 account-plan: lite 
 completion-time: 1h 
 
@@ -33,7 +33,7 @@ completion-time: 1h
 # Resetting the ingestion key that is used by a Kubernetes cluster
 {: #kube_reset}
 {: toc-content-type="tutorial"}
-{: toc-services-"containers, Log-Analysis-with-LogDNA"} 
+{: toc-services-"containers, log-analysis"} 
 {: toc-completion-time="1h"} 
 
 If the ingestion key that you use to forward logs from a cluster to an {{site.data.keyword.la_full_notm}} instance in the {{site.data.keyword.cloud_notm}} is compromised, you must reset the key and update the Kubernetes cluster configuration to use the new ingestion key. 
@@ -42,9 +42,9 @@ If the ingestion key that you use to forward logs from a cluster to an {{site.da
 ## Before you begin
 {: #kube_reset_prereqs}
 
-Work in a [supported region](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-regions). **Note:** You can work with a Kubernetes cluster that is located in the same region or in a different region. 
+Work in a [supported region](/docs/log-analysis?topic=log-analysis-regions). **Note:** You can work with a Kubernetes cluster that is located in the same region or in a different region. 
 
-Read about {{site.data.keyword.la_full_notm}}. For more information, see [About](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-getting-started#getting-started_ov).
+Read about {{site.data.keyword.la_full_notm}}. For more information, see [About](/docs/log-analysis?topic=log-analysis-getting-started#getting-started_ov).
 
 Use a user ID that is a member or an owner of an {{site.data.keyword.cloud_notm}} account. To get an {{site.data.keyword.cloud_notm}} user ID, go to: [Registration](https://cloud.ibm.com/login){: external}.
 
@@ -70,7 +70,7 @@ Install the {{site.data.keyword.cloud_notm}} CLI and the Kubernetes CLI plug-in.
 
 To renew the ingestion key for an {{site.data.keyword.la_full_notm}} instance by using the {{site.data.keyword.la_full_notm}} Web UI, complete the following steps:
 
-1. [Launch the {{site.data.keyword.la_full_notm}} web UI](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-view_logs#view_logs_step2).
+1. [Launch the {{site.data.keyword.la_full_notm}} web UI](/docs/log-analysis?topic=log-analysis-view_logs#view_logs_step2).
 
 2. Select the **Configuration** icon. Then select **Organization**. 
 
@@ -223,7 +223,7 @@ With the **Lite** service plan, you can only tail your latest logs.
 ## Next steps
 {: #kube_reset_next_steps}
 
-If you want to [filter cluster logs](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-view_logs#view_logs_step5), [search cluster logs](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-view_logs#view_logs_step6), [define views](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-view_logs#view_logs_step7), and [configure alerts](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-alerts), you must upgrade the {{site.data.keyword.la_full_notm}} plan to a paid plan.
+If you want to [filter cluster logs](/docs/log-analysis?topic=log-analysis-view_logs#view_logs_step5), [search cluster logs](/docs/log-analysis?topic=log-analysis-view_logs#view_logs_step6), [define views](/docs/log-analysis?topic=log-analysis-view_logs#view_logs_step7), and [configure alerts](/docs/log-analysis?topic=log-analysis-alerts), you must upgrade the {{site.data.keyword.la_full_notm}} plan to a paid plan.
 
 
 

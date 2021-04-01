@@ -6,7 +6,7 @@ lastupdated: "2021-03-24"
 
 keywords: IBM, Log Analysis, logging, config agent
 
-subcollection: Log-Analysis-with-LogDNA
+subcollection: log-analysis
 
 ---
 
@@ -126,7 +126,7 @@ kubectl create secret generic logdna-agent-key --from-literal=logdna-agent-key=<
 ```
 {: pre}
 
-To get the ingestion key, see [Get the ingestion key through the logging UI](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-ingestion_key).
+To get the ingestion key, see [Get the ingestion key through the logging UI](/docs/log-analysis?topic=log-analysis-ingestion_key).
 
 ### Step 4. Enable virtual routing and forwarding (VRF)
 {: #config_agent_kube_cluster_step4}
@@ -150,7 +150,7 @@ Choose one of the following commands to install and configure the **logging agen
 The logging agent version 2 is supported for Kubernetes 1.9+ only.
 {: important}
 
-The default YAML file uses the image that is tagged as stable. To find out the logging agent version that you deploy by running the script, see [Getting information about Kubernetes logging agent images](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-logdna_agent_image).
+The default YAML file uses the image that is tagged as stable. To find out the logging agent version that you deploy by running the script, see [Getting information about Kubernetes logging agent images](/docs/log-analysis?topic=log-analysis-logdna_agent_image).
 
 {: tip}
 

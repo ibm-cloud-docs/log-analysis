@@ -6,7 +6,7 @@ lastupdated: "2021-03-28"
 
 keywords: IBM, Log Analysis, logging instance, enable, service logs
 
-subcollection: Log-Analysis-with-LogDNA
+subcollection: log-analysis
 
 ---
 
@@ -34,12 +34,12 @@ subcollection: Log-Analysis-with-LogDNA
 
 * You can configure 1 instance only of the {{site.data.keyword.la_full_notm}} service per region to collect *platform logs* in that location. 
 
-    You can have multiple {{site.data.keyword.la_full_notm}} instances in a location. However, only 1 instance in a location (region) can be configured to receive logs from [enabled services](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-cloud_services) in that {{site.data.keyword.cloud_notm}} location.
+    You can have multiple {{site.data.keyword.la_full_notm}} instances in a location. However, only 1 instance in a location (region) can be configured to receive logs from [enabled services](/docs/log-analysis?topic=log-analysis-cloud_services) in that {{site.data.keyword.cloud_notm}} location.
     {: important}
 
 * To configure a logging instance, you must set on the *platform logs* configuration setting. Also, you must have the platform role `editor` or higher for the {{site.data.keyword.la_full_notm}} service in your account.
 
-* If a logging instance in a region is already enabled to collect platform logs, logs from enabled services are collected automatically and available for analysis through this instance. For more information about enabled services, see [Cloud services](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-cloud_services).
+* If a logging instance in a region is already enabled to collect platform logs, logs from enabled services are collected automatically and available for analysis through this instance. For more information about enabled services, see [Cloud services](/docs/log-analysis?topic=log-analysis-cloud_services).
 
 * To monitor platform logs for a service instance, check that the {{site.data.keyword.la_full_notm}} instance is provisioned in the same region where the service instance that you want to monitor is provisioned.
 
@@ -57,9 +57,9 @@ To configure a logging instance from the Observability dashboard in the {{site.d
 
 3. Select **Logging**, then click **Configure platform logs**. 
 
-4. Select a [region](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-regions). 
+4. Select a [region](/docs/log-analysis?topic=log-analysis-regions). 
 
-5. Choose which logging instance will receive logs from enabled services on that location. [Learn more about the services that are enabled to send logs to {{site.data.keyword.la_full_notm}}.](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-cloud_services)
+5. Choose which logging instance will receive logs from enabled services on that location. [Learn more about the services that are enabled to send logs to {{site.data.keyword.la_full_notm}}.](/docs/log-analysis?topic=log-analysis-cloud_services)
 
 6. Click **Save**. 
 
@@ -77,7 +77,7 @@ To enable platform logs in a region, the instance that you want to configure to 
 Check if you have an instance with the flag **Platform Logs** set in the region that you want to configure platform logs. Your user must have permissions to see all instances in the account. 
 {: important}
 
-If you have an instance with the flag **Platform Logs**, stop and contact the account administrator to confirm that you will not impact the account operations. There is only 1 instance per region that can collect platform logs. After you make this change, platform logs are collected through this instance in the region, and permissions to view platform logs are impacted. See [Changing the instance that collects platform logs from the command line](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-config_svc_logs#platform_logs_change_cli).  
+If you have an instance with the flag **Platform Logs**, stop and contact the account administrator to confirm that you will not impact the account operations. There is only 1 instance per region that can collect platform logs. After you make this change, platform logs are collected through this instance in the region, and permissions to view platform logs are impacted. See [Changing the instance that collects platform logs from the command line](/docs/log-analysis?topic=log-analysis-config_svc_logs#platform_logs_change_cli).  
 {: important}
 
 If you do not have an instance with the flag **Platform Logs** in the region, complete the following steps:

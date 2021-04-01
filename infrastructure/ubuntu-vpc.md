@@ -6,7 +6,7 @@ lastupdated: "2021-03-28"
 
 keywords: IBM, Log Analysis, logging, ubuntu, tutorial
 
-subcollection: Log-Analysis-with-LogDNA
+subcollection: log-analysis
 
 ---
 
@@ -47,9 +47,9 @@ In this tutorial, you will learn how to configure an Ubuntu server to forward lo
 ## Before you begin
 {: #ubuntu_prereqs}
 
-Read about {{site.data.keyword.la_full_notm}}. For more information, see [About](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-getting-started#getting-started_ov).
+Read about {{site.data.keyword.la_full_notm}}. For more information, see [About](/docs/log-analysis?topic=log-analysis-getting-started#getting-started_ov).
 
-Work in a [supported region](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-regions). 
+Work in a [supported region](/docs/log-analysis?topic=log-analysis-regions). 
 
 You can send data from an Ubuntu instance that is located in the same region as your logging instance, in a different region, or not in the {{site.data.keyword.cloud_notm}}.
 {: note}
@@ -100,7 +100,7 @@ To provision an instance of {{site.data.keyword.la_full_notm}} through the {{sit
 
    By default, the **Lite** plan is set.
 
-   For more information about other service plans, see [Pricing plans](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-service_plans).
+   For more information about other service plans, see [Pricing plans](/docs/log-analysis?topic=log-analysis-service_plans).
 
 7. Specify a **Service name** for your {{site.data.keyword.la_full_notm}} service instance.
 
@@ -112,7 +112,7 @@ To provision an instance of {{site.data.keyword.la_full_notm}} through the {{sit
 
 After you provision an instance, the {{site.data.keyword.la_full_notm}} dashboard opens. 
 
-To provision an instance of logging through the CLI, see [Provisioning logging through the {{site.data.keyword.cloud_notm}} CLI](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-provision#provision_cli).
+To provision an instance of logging through the CLI, see [Provisioning logging through the {{site.data.keyword.cloud_notm}} CLI](/docs/log-analysis?topic=log-analysis-provision#provision_cli).
 {: note}
 
 
@@ -154,7 +154,7 @@ To configure your Ubuntu server to forward logs to your logging instance, comple
 
    where <INGESTION_KEY> contains the ingestion key for the {{site.data.keyword.la_full_notm}} instance where the logs will be forwarded.
 
-   You can retrieve the ingestion key using the [{{site.data.keyword.cloud_notm}} console](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-ingestion_key#ibm_cloud_ui), or by the [{{site.data.keyword.cloud_notm}} CLI](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-ingestion_key#ingestion_key_cli).
+   You can retrieve the ingestion key using the [{{site.data.keyword.cloud_notm}} console](/docs/log-analysis?topic=log-analysis-ingestion_key#ibm_cloud_ui), or by the [{{site.data.keyword.cloud_notm}} CLI](/docs/log-analysis?topic=log-analysis-ingestion_key#ingestion_key_cli).
 
 3. Set the authentication endpoint. The logging agent uses this host to authenticate and get the token to forward logs.
 
@@ -234,7 +234,7 @@ From the logging Web UI, you can view your logs as they pass through the system.
 With the **Free** service plan, you can only tail your latest logs.
 {: note}
 
-For more information, see [Viewing logs](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-view_logs#view_logs).
+For more information, see [Viewing logs](/docs/log-analysis?topic=log-analysis-view_logs#view_logs).
 
 
 ## Next steps
@@ -242,10 +242,10 @@ For more information, see [Viewing logs](/docs/Log-Analysis-with-LogDNA?topic=Lo
 
 The following additional features are available:
 
-* [Filtering logs](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-view_logs#view_logs_step5)
-* [Searching logs](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-view_logs#view_logs_step6)
-* [Defining views](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-view_logs#view_logs_step7)
-* [Configuring alerts](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-alerts). 
+* [Filtering logs](/docs/log-analysis?topic=log-analysis-view_logs#view_logs_step5)
+* [Searching logs](/docs/log-analysis?topic=log-analysis-view_logs#view_logs_step6)
+* [Defining views](/docs/log-analysis?topic=log-analysis-view_logs#view_logs_step7)
+* [Configuring alerts](/docs/log-analysis?topic=log-analysis-alerts). 
 
 To use any of these features, you must upgrade the {{site.data.keyword.la_full_notm}} plan to a paid plan.
 {: note}

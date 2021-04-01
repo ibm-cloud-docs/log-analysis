@@ -6,7 +6,7 @@ lastupdated: "2021-03-28"
 
 keywords: IBM, Log Analysis, logging, export logs
 
-subcollection: Log-Analysis-with-LogDNA
+subcollection: log-analysis
 
 ---
 
@@ -39,11 +39,11 @@ Consider the following information when you export log data:
 ## Prerequisites
 {: #export_prereqs}
 
-* **You must have a paid service plan** for the {{site.data.keyword.la_full_notm}} service. [Learn more](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-service_plans). 
+* **You must have a paid service plan** for the {{site.data.keyword.la_full_notm}} service. [Learn more](/docs/log-analysis?topic=log-analysis-service_plans). 
 
-* Check that your user ID has permissions to launch the web UI, view or manage service keys, and view logs. [Learn more](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-view_logs).
+* Check that your user ID has permissions to launch the web UI, view or manage service keys, and view logs. [Learn more](/docs/log-analysis?topic=log-analysis-view_logs).
 
-* Check that the logging instance has the export feature enabled. [Learn more](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-export_config).
+* Check that the logging instance has the export feature enabled. [Learn more](/docs/log-analysis?topic=log-analysis-export_config).
 
 ## Exporting logs from the Web UI
 {: #export_ui_view}
@@ -52,7 +52,7 @@ You can create a custom view and then export data for a period of time.
 
 Complete the following steps to export log data through the logging web UI:
 
-1. [Launch the logging web UI](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-launch).
+1. [Launch the logging web UI](/docs/log-analysis?topic=log-analysis-launch).
 2. Click the **Views** icon ![Views icon](../images/views.png "Views icon").
 3. Select a view.
 4. Select the view name. 
@@ -69,7 +69,7 @@ You can export data from a custom search.
 
 Complete the following steps to export data through the logging web UI:
 
-1. [Launch the logging web UI](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-launch).
+1. [Launch the logging web UI](/docs/log-analysis?topic=log-analysis-launch).
 2. Click the **Views** icon ![Views icon](../images/views.png "Views icon").
 3. Select **Everything**.
 4. Apply filters and search criteria until you see the entries that you want to export.

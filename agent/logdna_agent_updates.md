@@ -6,7 +6,7 @@ lastupdated: "2021-04-28"
 
 keywords: IBM, Log Analysis, logging, agent update
 
-subcollection: Log-Analysis-with-LogDNA
+subcollection: log-analysis
 
 ---
 

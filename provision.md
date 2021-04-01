@@ -6,7 +6,7 @@ lastupdated: "2021-03-28"
 
 keywords: IBM, Log Analysis, logging instance, provision
 
-subcollection: Log-Analysis-with-LogDNA
+subcollection: log-analysis
 
 ---
 
@@ -48,7 +48,7 @@ To provision an instance from the Observability dashboard in the {{site.data.key
 
 4. Enter a name for the service instance.
 
-5. Select the [location](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-regions) where you plan to provision the instance. 
+5. Select the [location](/docs/log-analysis?topic=log-analysis-regions) where you plan to provision the instance. 
 
 6. Select a resource group. 
 
@@ -60,7 +60,7 @@ To provision an instance from the Observability dashboard in the {{site.data.key
 
     By default, the lite plan is set.
 
-    For more information about other service plans, see [Pricing plans](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-service_plans).
+    For more information about other service plans, see [Pricing plans](/docs/log-analysis?topic=log-analysis-service_plans).
 
 8. Click **Create**.
 
@@ -85,7 +85,7 @@ To provision an instance of {{site.data.keyword.la_full_notm}} through the {{sit
 
 4. Click the **{{site.data.keyword.la_full_notm}}** tile. 
 
-5. Select the [location](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-regions) where you plan to provision the instance. 
+5. Select the [location](/docs/log-analysis?topic=log-analysis-regions) where you plan to provision the instance. 
 
 6. Enter a name for the service instance.
 
@@ -99,7 +99,7 @@ To provision an instance of {{site.data.keyword.la_full_notm}} through the {{sit
 
     By default, the lite plan is set.
 
-    For more information about other service plans, see [Pricing plans](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-service_plans).
+    For more information about other service plans, see [Pricing plans](/docs/log-analysis?topic=log-analysis-service_plans).
 
 9. Click **Create**.
 
@@ -144,7 +144,7 @@ To provision an instance of {{site.data.keyword.at_full_notm}} through the comma
 
     `SERVICE_PLAN_NAME` is the type of plan. Valid values are *lite*, *7-days*, *14-days*, *30-days*.
     
-    `LOCATION` is the region where the logging instance is created. To get the latest list of locations that are available for the {{site.data.keyword.la_full_notm}} service, see [Locations](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-regions).
+    `LOCATION` is the region where the logging instance is created. To get the latest list of locations that are available for the {{site.data.keyword.la_full_notm}} service, see [Locations](/docs/log-analysis?topic=log-analysis-regions).
 
     For example, to provision an instance with the 7 days retention plan, run the following command:
 

@@ -1,7 +1,7 @@
 {:navgroup: .navgroup}
 {:topicgroup: .topicgroup}
 
-{: .toc subcollection="Log-Analysis-with-LogDNA" audience="service" category="logging_monitoring" href="/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-getting-started#getting-started" path="Log-Analysis-with-LogDNA"}
+{: .toc subcollection="log-analysis" audience="service" category="logging_monitoring" href="/docs/log-analysis?topic=log-analysis-getting-started#getting-started" console-page="/catalog/services/ibm-log-analysis" product-page="https://www.ibm.com/cloud/log-analysis" path="log-analysis"}
 Log Analysis
 
     {: .navgroup id="learn"}
@@ -20,7 +20,7 @@ Log Analysis
     {: .topicgroup}
     Logging infrastructure
         infrastructure/monitor_cfapp_logs.md
-        infrastructure/kube.md
+        tutorial/kube.md
         infrastructure/ubuntu-baremetal.md
         infrastructure/ubuntu-vpc.md
 
@@ -46,17 +46,15 @@ Log Analysis
     {: .topicgroup}
     Controlling access
         iam.md
-        teams_data_access.md
         devops/work_iam.md
-
+        
    {: .topicgroup}
-    DevOps admin tasks
+    DevOps tasks
         devops/archive.md
         devops/control_usage.md
         devops/exclusion_rules.md
         devops/ingestion_key.md
         devops/reuse_resource_definitions.md
-        sqlquery.md
 
     {: .topicgroup}
     Logging agent
@@ -111,7 +109,7 @@ Log Analysis
     regions.md
     service_plans.md
     core/shared-responsibilities.md
-
+    
     {: .topicgroup}
     Logging CLI
         /log-analysis-cli-plugin/log-analysis-cli-plugin-log-analysis-cli
@@ -121,10 +119,6 @@ Log Analysis
         [Ingestion API](https://cloud.ibm.com/apidocs/log-analysis#ingest)
         [Export API](https://cloud.ibm.com/apidocs/log-analysis#export)
         [Configuration API](https://cloud.ibm.com/apidocs/log-analysis#create-view)
-
-    {: .topicgroup}
-    High availability and disaster recovery
-        core/ha-dr.md
     {: .navgroup-end}
 
     {: .navgroup id="help"}

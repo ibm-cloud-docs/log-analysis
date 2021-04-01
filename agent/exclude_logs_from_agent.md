@@ -6,7 +6,7 @@ lastupdated: "2021-03-28"
 
 keywords: IBM, Log Analysis, logging, config agent
 
-subcollection: Log-Analysis-with-LogDNA
+subcollection: log-analysis
 
 ---
 
@@ -170,6 +170,6 @@ Complete the following steps:
     ```
     {: codeblock}
 
-3. [Launch the logging UI](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-launch), and verify that log entries are not showing in the logging UI.
+3. [Launch the logging UI](/docs/log-analysis?topic=log-analysis-launch), and verify that log entries are not showing in the logging UI.
 
 
