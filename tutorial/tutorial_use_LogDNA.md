@@ -69,7 +69,7 @@ application and system logs.
 
 4. Select **Logging**.
 
-5. For your instance, click **Open Dashboard**. The logging web UI will be displayed.
+5. For your instance, click **View {{site.data.keyword.la_full_notm}}**. The logging web UI will be displayed.
 
 
 ## Create a custom view

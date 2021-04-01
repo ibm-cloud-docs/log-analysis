@@ -221,7 +221,7 @@ To launch the {{site.data.keyword.la_full_notm}} dashboard from the {{site.data.
 
    The list of {{site.data.keyword.la_full_notm}} instances that are available on {{site.data.keyword.cloud_notm}} is displayed.
 
-4. Select one instance. Then, click **Open Dashboard**.
+4. Select one instance. Then, click **View {{site.data.keyword.la_full_notm}}**.
 
    The logging Web UI opens and displays your cluster logs.
 
