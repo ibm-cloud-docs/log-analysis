@@ -215,7 +215,7 @@ For example, to enter multiple hosts, you must separate the hosts with a comma:
 
 
 ### apps (array of strings)
-{: #config_api_parm-hosts}
+{: #config_api_parm-apps}
 
 Specifies the service instance ID that generates the log.
 

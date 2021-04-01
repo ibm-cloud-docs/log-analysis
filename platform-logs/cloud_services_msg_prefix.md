@@ -48,12 +48,12 @@ A message ID is made up of the following parts:
 
 
 ## VPC infrastructure
-{: #vpc_infrastructure_msg_prefix}
+{: #cloud_services_msg_format_vpc_infrastructure_msg_prefix}
 
 The following tables lists message ID prefixes for the different [{{site.data.keyword.vpc_full}} Gen 2](/docs/vpc?topic=vpc-getting-started) infrastructure services that send logs to {{site.data.keyword.la_full_notm}}:
 
 ### VPC infrastructure (Gen 2)
-{: #vpc_infrastructure_gen2}
+{: #cloud_services_msg_format_vpc_infrastructure_gen2}
 
 | Service     | CRN service name </br>`crn-service-name`  | Message ID format      | Sample |
 |-------------|-------------------------------------------|---------------------------|------------------|
