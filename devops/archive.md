@@ -53,7 +53,7 @@ You archive logs from an {{site.data.keyword.la_full_notm}} instance into a buck
 
     `YYYY` represents the year; `MM` represents the month; and `DD` represents the day.
 
-    `<accountID>` represents the logging account ID, that is, the ID that showd in the [logging web UI URL](/docs/Activity-Tracker-with-LogDNA?topic=Activity-Tracker-with-LogDNA-get_logdna_web_url).
+    `<accountID>` represents the logging account ID, that is, the ID that shows in the [logging web UI URL](/docs/Activity-Tracker-with-LogDNA?topic=Activity-Tracker-with-LogDNA-get_web_url).
     
     `HH` represents hours in 24 format. 
 
@@ -329,7 +329,7 @@ The following table lists the policies that a user must have to configure archiv
 | `{{site.data.keyword.la_full_notm}}` | Service role: Manager      | Allows the user to launch the web UI and view logs in the web UI.                             |
 {: caption="Table 2. IAM policies" caption-side="top"} 
 
-For more information on how to configure these policies for a user, see [Granting permissions to a user to view logs](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-work_iam#user_logdna).
+For more information on how to configure these policies for a user, see [Granting permissions to a user to view logs](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-work_iam#user_log_analysis).
 
 Complete the following steps to assign a user permission to archive logs: 
 

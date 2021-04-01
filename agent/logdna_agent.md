@@ -46,7 +46,7 @@ logging agent images for Kubernetes clusters are public images that are availabl
 
 * The {{site.data.keyword.registrylong_notm}} includes *Vulnerability Advisor* features that scan for potential security issues and vulnerabilities. Vulnerability Advisor checks for vulnerable packages in specific Docker base images, and known vulnerabilities in app configuration settings. When vulnerabilities are found, information about the vulnerability is provided. You can use this information to resolve security issues so that containers are not deployed from vulnerable images. 
 
-To get details about the logging agent images, see [Getting information about logging agent images ](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-logdna_agent_image).
+To get details about the logging agent images, see [Getting information about logging agent images ](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-log-analysis_agent_image).
 
 
 ### Understanding image tags

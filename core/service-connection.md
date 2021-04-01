@@ -104,7 +104,7 @@ The {{site.data.keyword.la_full_notm}} service offers the following private endp
 ### Step 3. Configure your logging agent
 {: #endpoint-setup-step3}
 
-You can [configure the logging agent](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-logdna_agent) to use the private network by using a private endpoint as the ingestion URL.
+You can [configure the logging agent](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-log_analysis_agent) to use the private network by using a private endpoint as the ingestion URL.
 
 What happens when you configure the logging agent to use a private endpoint?
 * Private endpoints are not accessible from the public internet. 
