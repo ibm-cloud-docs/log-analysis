@@ -49,7 +49,7 @@ When you [configure an alert](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-
 
 6. Configure the Monitoring instance details.
 
-    Specify the **API key**. Set this field to the API token. For more information on how to get the token, see [Working with tokens](/docs/Monitoring-with-Sysdig?topic=Monitoring-with-Sysdig-api_sysdig_token).
+    Specify the **API key**. Set this field to the API token. For more information on how to get the token, see [Working with tokens](/docs/Monitoring-with-Sysdig?topic=Monitoring-with-Sysdig-api_token).
 
     Specify the **{{site.data.keyword.mon_full_notm}} instance URL**. Set this field to the endpoint where the instance is available. For more information, see [{{site.data.keyword.mon_full_notm}} endpoints](/docs/Monitoring-with-Sysdig?topic=Monitoring-with-Sysdig-endpoints#endpoints_sysdig).
 

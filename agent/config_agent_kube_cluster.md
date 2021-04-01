@@ -150,7 +150,7 @@ Choose one of the following commands to install and configure the **logging agen
 The logging agent version 2 is supported for Kubernetes 1.9+ only.
 {: important}
 
-The default YAML file uses the image that is tagged as stable. To find out the logging agent version that you deploy by running the script, see [Getting information about Kubernetes logging agent images](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-logdna_agent_image).
+The default YAML file uses the image that is tagged as stable. To find out the logging agent version that you deploy by running the script, see [Getting information about Kubernetes logging agent images](/docs/Log-Analysis-with-LogDNA?topic=Log-Analysis-with-LogDNA-log-analysis_agent_image).
 
 {: tip}
 
