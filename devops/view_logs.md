@@ -68,7 +68,7 @@ To launch the {{site.data.keyword.la_full_notm}}  UI through the {{site.data.key
 
     The list of {{site.data.keyword.la_full_notm}} instances that are available on {{site.data.keyword.cloud_notm}} is displayed.
 
-4. Select one instance. Then, click **Open Dashboard**.
+4. Select one instance. Then, click **View {{site.data.keyword.la_full_notm}}**.
 
 The {{site.data.keyword.la_full_notm}} web UI opens and displays logs forwarded to that instance.
 
