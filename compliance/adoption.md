@@ -113,7 +113,7 @@ Enable this setting only if you or your company is a covered entity as defined b
 {: #adoption_resource_svc}
 
 {{site.data.keyword.la_full_notm}} collects and aggregates logs in one centralized logging system.
-* Log data is hosted on the {{site.data.keyword.cloud_notm}}. The {{site.data.keyword.la_full_notm}} service is operated by LogDNA.
+* Log data is hosted on the {{site.data.keyword.cloud_notm}}.
 * Data is collocated in the location where an {{site.data.keyword.la_full_notm}} instance is provisioned. 
 
 
