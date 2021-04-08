@@ -46,6 +46,9 @@ Log Analysis
     {: .topicgroup}
     Controlling access
         iam.md
+        teams_data_access.md
+        iam_grant_team.md
+        iam_manage_events.md
         devops/work_iam.md
         
    {: .topicgroup}
