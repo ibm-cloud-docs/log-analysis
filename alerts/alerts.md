@@ -28,7 +28,7 @@ subcollection: log-analysis
 You can configure alerts to notify about the state of your infrastructure, applications, and {{site.data.keyword.cloud_notm}} services. 
 {:shortdesc}
 
-A rule specifies the scope of the data that you want to monitor an d be notified if certain conditions occur. Per alert rule, consider the following information:
+A rule specifies the scope of the data that you want to monitor and be notified if certain conditions occur. Per alert rule, consider the following information:
 - You can define 1 or more notification channels. 
 - You can configure different alert types for each notification channel that you configure for an alert.
 - You can configure different triggering conditions for each notification channel that you configure for an alert.
