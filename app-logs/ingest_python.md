@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2021
-lastupdated: "2021-03-28"
+lastupdated: "2021-04-12"
 
 keywords: IBM, Log Analysis, logging, ingestion, python
 
@@ -25,7 +25,7 @@ subcollection: log-analysis
 # Sending logs by using Python
 {: #ingest_python}
 
-You can send log data to an {{site.data.keyword.la_full_notm}} instance by using Python. 
+You can send logs to an {{site.data.keyword.la_full_notm}} instance by using Python. 
 {:shortdesc}
 
 Complete the following steps to send logs:

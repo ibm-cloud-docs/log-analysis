@@ -23,7 +23,7 @@ subcollection: log-analysis
 {:external: target="_blank" .external}
 
 
-# Logging in Linux VPC server instances
+# Logging with Linux VPC server instances
 {: #ubuntu}
 
 Use the {{site.data.keyword.la_full}} service to monitor and manage logs from a Linux VPC server instance in a centralized logging system on the {{site.data.keyword.cloud_notm}}. 

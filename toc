@@ -18,11 +18,19 @@ Log Analysis
         platform-logs/cloud_services_agent.md
 
     {: .topicgroup}
-    Logging infrastructure
+    Logging with infrastructure
+        infrastructure/infra_logging.md
         infrastructure/monitor_cfapp_logs.md
-        tutorial/kube.md
+        infrastructure/kube.md
         infrastructure/ubuntu-baremetal.md
         infrastructure/ubuntu-vpc.md
+        infrastructure/syslog.md
+
+    {: .topicgroup}
+    Logging with applications
+        app-logs/app_logging.md
+        app-logs/ingest.md
+        app-logs/ingest_python.md
 
     {: .topicgroup}
     Security and compliance
@@ -93,19 +101,19 @@ Log Analysis
     {: .topicgroup}
     Logging and monitoring
         core/at_events.md
+    
+    devops/view_logs.md
 
     {: .topicgroup}
-    Sending logs
-        ingest.md
-        ingest_python.md
-
-    {: .topicgroup}
-    Working with views and alerts
-        devops/view_logs.md
-        devops/alerts.md
+    Working with alerts
+        alerts/alerts.md
+        alerts/create_alert_ui.md
+        alerts/remove_alert_ui.md
+        alerts/preset_ui.md
         devops/config_api.md
-        devops/pagerduty.md
-        devops/monitoring.md
+        alerts/email.md
+        alerts/pagerduty.md
+        alerts/monitoring.md
     {: .navgroup-end}
 
     {: .navgroup id="reference"}

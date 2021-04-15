@@ -23,7 +23,7 @@ subcollection: log-analysis
 {:external: target="_blank" .external}
 
 
-# Managing Kubernetes cluster logs with {{site.data.keyword.la_full_notm}}
+# Logging with Kubernetes clusters
 {: #kube}
 
 Use the {{site.data.keyword.la_full_notm}} service to configure cluster-level logging in {{site.data.keyword.containerlong}}. 

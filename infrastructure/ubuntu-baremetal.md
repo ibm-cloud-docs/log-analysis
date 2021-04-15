@@ -23,7 +23,7 @@ subcollection: log-analysis
 {:external: target="_blank" .external}
 
 
-# Logging in Bare metals
+# Logging with Bare metals
 {: #ubuntu-baremetal}
 
 Use the {{site.data.keyword.la_full}} service to monitor and manage logs from a bare metal in a centralized logging system on the {{site.data.keyword.cloud_notm}}. 

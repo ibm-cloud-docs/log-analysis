@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2021
-lastupdated: "2021-03-28"
+lastupdated: "2021-04-12"
 
 keywords: IBM, Log Analysis, logging, ingestion 
 
@@ -25,10 +25,10 @@ subcollection: log-analysis
 # Sending logs by using the REST API
 {: #ingest}
 
-You can send log data to an {{site.data.keyword.la_full_notm}} instance. 
+You can send logs to an {{site.data.keyword.la_full_notm}} instance by using the Ingestion REST API. 
 {:shortdesc}
 
-Complete the following steps to send logs programmatically:
+Complete the following steps to send logs programmatically by using the REST API:
 
 ## Step 1. Get the ingestion API key 
 {: #ingest_step1}
