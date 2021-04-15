@@ -33,6 +33,7 @@ A rule specifies the scope of the data that you want to monitor and be notified 
 - You can configure different alert types for each notification channel that you configure for an alert.
 - You can configure different triggering conditions for each notification channel that you configure for an alert.
  
+A rule is also the basis of a `view`. You can see the data that is included by any rule by using it as a view. The two are interchangeable. 
 
 ## Types of alerts
 {: #alerts_types}
@@ -119,7 +120,7 @@ To reuse an alert configuration, a service administrator can configure an **aler
 ## Muting alert notifications
 {: #mon_alerts_mute}
 
-By default, the feature that controls the ability of a user to mute notifications is enabled when you configure an alert on a custom view. The **Muteable** feature applies to email notifications only.
+By default, the feature that controls the ability of a user to mute notifications is enabled when you configure an alert on a custom view. The **Mutable** feature applies to email notifications only.
 
 When the **mutable** feature is enabled on an alert, a user can pause notifications for a period of time. A user can choose to mute an alert for a period of 1 hour, 6 hours, 12 hours, or 1 day. 
 
