@@ -124,9 +124,9 @@ By default, the feature that controls the ability of a user to mute notification
 
 When the **mutable** feature is enabled on an alert, a user can pause notifications for a period of time. A user can choose to mute an alert for a period of 1 hour, 6 hours, 12 hours, or 1 day. 
 
-For more information on how to mute an email alert, see [Muting an alert](docs/log-analysis?topic=log-analysis-email#email_mute).
+For more information on how to mute an email alert, see [Muting an alert](/docs/log-analysis?topic=log-analysis-email#email_mute).
 
-For more information on how to ummute an email alert, see [Unmuting a muted alert](docs/log-analysis?topic=log-analysis-email#email_unmute).
+For more information on how to ummute an email alert, see [Unmuting a muted alert](/docs/log-analysis?topic=log-analysis-email#email_unmute).
 
 
 
