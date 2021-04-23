@@ -21,7 +21,7 @@ Log Analysis
     Logging with infrastructure
         infrastructure/infra_logging.md
         infrastructure/monitor_cfapp_logs.md
-        infrastructure/kube.md
+        tutorial/kube.md
         infrastructure/ubuntu-baremetal.md
         infrastructure/ubuntu-vpc.md
         infrastructure/syslog.md
