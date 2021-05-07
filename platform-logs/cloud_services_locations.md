@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2021
-lastupdated: "2021-03-28"
+lastupdated: "2021-04-30"
 
 keywords: IBM, Log Analysis, logging, services
 
@@ -126,7 +126,7 @@ The following tables list the locations where automatic collection of registry s
 
 | Service                                                         | `Tokyo (jp-tok)` | `Osaka (jp-osa)` | `Sydney (au-syd)`           |
 |-----------------------------------------------------------------|----------------|---------------------------|--------------------------|
-| {{site.data.keyword.registrylong_notm}}                         | ![Checkmark icon](../images/checkmark-icon.svg)  | `Logs are available through the Log Analysis Tokyo (jp-tok) instance`  | `Logs are available through the Log Analysis Tokyo (jp-tok) instance` |
+| {{site.data.keyword.registrylong_notm}}                         | ![Checkmark icon](../images/checkmark-icon.svg) | ![Checkmark icon](../images/checkmark-icon.svg) | `Logs are available through the Log Analysis Tokyo (jp-tok) instance` |
 {: caption="Table 8. Container services" caption-side="top"}
 {: #cs-con-table-2}
 {: tab-title="Asia Pacific"}
