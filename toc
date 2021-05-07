@@ -121,6 +121,7 @@ Log Analysis
     regions.md
     service_plans.md
     core/shared-responsibilities.md
+    core/ha-dr.md
     
     {: .topicgroup}
     Logging CLI
