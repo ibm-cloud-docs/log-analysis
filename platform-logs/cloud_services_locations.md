@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2021
-lastupdated: "2021-04-30"
+lastupdated: "2021-05-10"
 
 keywords: IBM, Log Analysis, logging, services
 
@@ -114,9 +114,9 @@ You can monitor {{site.data.keyword.satellitelong}} service logs through the log
 
 The following tables list the locations where automatic collection of registry service logs is enabled. You can monitor logs through the Log Analysis instance that is available in the same location as your database resources, if you enable one instance in this location to host service platform logs. For locations where you can provision a service instance but the {{site.data.keyword.la_full_notm}} service is not available, specific details about the location where you can monitor those logs is provided in each case. For more information, see [Analyzing logs for {{site.data.keyword.registrylong_notm}}](/docs/Registry?topic=Registry-registry_logs).
 
-| Service                                                         | `Dallas (us-south)` | `Washington (us-east)`                   |
-|-----------------------------------------------------------------|---------------------|--------------------------------------|
-| {{site.data.keyword.registrylong_notm}}                      | ![Checkmark icon](../images/checkmark-icon.svg)             |                                 |            
+| Service                  | `Dallas (us-south)` | `Washington (us-east)`   | `Toronto (ca-tor)` |
+|--------------------------|---------------------|--------------------------|--------------------|
+| {{site.data.keyword.registrylong_notm}}    | ![Checkmark icon](../images/checkmark-icon.svg)  |    | `Logs are available through the Log Analysis Washington (us-east) instance`   |     
 {: caption="Table 7. Container services" caption-side="top"}
 {: #cs-con-table-1}
 {: tab-title="America"}
