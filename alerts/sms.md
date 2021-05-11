@@ -48,9 +48,11 @@ Complete the following steps to get an SMS notification when an alert in the {{s
 
     You manage alerts through the Events view section in the {{site.data.keyword.mon_short}} UI.
 
-2. In the the {{site.data.keyword.mon_short}} UI, configure [sending SMS alerts using PagerDuty](/docs/monitoring?topic=monitoring-pd_sms).
+2. In the the {{site.data.keyword.mon_short}} UI, choose any of the following methods:
 
+    Configure [sending SMS alerts using PagerDuty](/docs/monitoring?topic=monitoring-pd_sms).
 
+    Configure [Sending SMS alerts using Cloud Functions](/docs/monitoring?topic=monitoring-cf_sms).
 
 ## Send an SMS notification by using the PagerDuty On Call Service
 {: #sms-pd}
