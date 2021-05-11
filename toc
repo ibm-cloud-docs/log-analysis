@@ -114,6 +114,7 @@ Log Analysis
         alerts/email.md
         alerts/pagerduty.md
         alerts/monitoring.md
+        alerts/sms.md
     {: .navgroup-end}
 
     {: .navgroup id="reference"}
