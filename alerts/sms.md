@@ -40,7 +40,7 @@ To send an SMS alert, you can choose 1 of the following options:
 ## Send an SMS notification by using the {{site.data.keyword.mon_full_notm}} service
 {: #sms-mon}
 
-When the {{site.data.keyword.la_short}} service sends a notification to the {{site.data.keyword.mon_full_notm}} service, an event is created in the the {{site.data.keyword.mon_short}} instance. You can then configure the {{site.data.keyword.mon_full_notm}} service to send an SMS. 
+When the {{site.data.keyword.la_short}} service sends a notification to the {{site.data.keyword.mon_full_notm}} service, an event is created in the {{site.data.keyword.mon_full_notm}} instance. You can then configure the {{site.data.keyword.mon_full_notm}} service to send an SMS. 
 
 Complete the following steps to get an SMS notification when an alert in the {{site.data.keyword.la_short}} service is triggered:
 
@@ -48,7 +48,7 @@ Complete the following steps to get an SMS notification when an alert in the {{s
 
     You manage alerts through the Events view section in the {{site.data.keyword.mon_short}} UI.
 
-2. In the the {{site.data.keyword.mon_short}} UI, choose any of the following methods:
+2. In the {{site.data.keyword.mon_short}} UI, choose any of the following methods:
 
     Configure [sending SMS alerts using PagerDuty](/docs/monitoring?topic=monitoring-pd_sms).
 
