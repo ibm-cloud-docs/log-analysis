@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2021
-lastupdated: "2021-03-28"
+lastupdated: "2021-04-11"
 
 keywords: IBM, Log Analysis, logging, alerts
 
@@ -79,13 +79,14 @@ You can define 1 or more notification channels for an alert.
 
 The following table lists the notification channels that you can configure when an alert is triggered:
 
-| Channel           | Configuration details | 
+| Channel           | Configuration details |
 |-------------------|-----------------------|
-| `email`             | You can configure one or more email addresses.  | 
+| `email`             | You can configure one or more email addresses. For more information, see [Integrating with email](/docs/log-analysis?topic=log-analysis-email). |
+| `SMS`               | You can send an SMS to notify of an alert either through the PagerDuty channel or through the {{site.data.keyword.mon_full_notm}} channel. For more information, see [Integrating with SMS](/docs/log-analysis?topic=log-analysis-sms). |
 | `Slack`             | You can configure a slack channel. |
 | `Webhook`           | You can configure a web hook URL. |
-| `PagerDuty`         | You can configure connection details to your PagerDuty system, and select a service.|
-| `{{site.data.keyword.mon_full_notm}}`         | You can configure the API key to connect to an {{site.data.keyword.mon_full_notm}} instance. |
+| `PagerDuty`         | You can configure connection details to your PagerDuty system, and select a service. Use this channel when you require call times and escalation management processes. For more information, see [Integrating with PagerDuty](/docs/log-analysis?topic=log-analysis-pagerduty). |
+| `{{site.data.keyword.mon_full_notm}}`   | You can configure a {{site.data.keyword.mon_short}} instance. When you need alerts on log data alongside your system health metrics, configure a {{site.data.keyword.mon_short}} notification channel. For more information, see [Integrating with {{site.data.keyword.mon_full_notm}}](/docs/log-analysis?topic=log-analysis-monitoring). |
 {: caption="Notification channels" caption-side="top"} 
 
 
