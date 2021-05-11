@@ -30,7 +30,7 @@ You can send alerts to PagerDuty.
 ## Configuring PagerDuty
 {: #pagerduty-config}
 
-When you [configure an alert](/docs/log-analysis?topic=log-analysis-alerts) you can have that alert sent to PagerDuty.
+When you [configure an alert](/docs/log-analysis?topic=log-analysis-alerts), you can have that alert sent to PagerDuty.
 
 1. When configuring your alert, click ![PagerDuty icon](../images/pagerduty.png "PagerDuty icon").
 

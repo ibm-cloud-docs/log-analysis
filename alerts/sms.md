@@ -89,5 +89,3 @@ Complete the following steps to get an SMS notification when an alert in the {{s
 
 
 
-
-
