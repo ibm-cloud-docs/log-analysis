@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2021
-lastupdated: "2021-05-10"
+lastupdated: "2021-05-14"
 
 keywords: IBM, Log Analysis, logging, services
 
@@ -116,7 +116,7 @@ The following tables list the locations where automatic collection of registry s
 
 | Service                  | `Dallas (us-south)` | `Washington (us-east)`   | `Toronto (ca-tor)` |
 |--------------------------|---------------------|--------------------------|--------------------|
-| {{site.data.keyword.registrylong_notm}}    | ![Checkmark icon](../images/checkmark-icon.svg)  |    | `Logs are available through the Log Analysis Washington (us-east) instance`   |     
+| {{site.data.keyword.registrylong_notm}}    | ![Checkmark icon](../images/checkmark-icon.svg)  |  | ![Checkmark icon](../images/checkmark-icon.svg)  |     
 {: caption="Table 7. Container services" caption-side="top"}
 {: #cs-con-table-1}
 {: tab-title="America"}
