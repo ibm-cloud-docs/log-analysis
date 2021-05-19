@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2021
-lastupdated: "2021-03-28"
+lastupdated: "2021-05-18"
 
 keywords: IBM, Log Analysis, logging, services
 
@@ -50,15 +50,13 @@ A message ID is made up of the following parts:
 ## VPC infrastructure
 {: #cloud_services_msg_format_vpc_infrastructure_msg_prefix}
 
-The following tables lists message ID prefixes for the different [{{site.data.keyword.vpc_full}} Gen 2](/docs/vpc?topic=vpc-getting-started) infrastructure services that send logs to {{site.data.keyword.la_full_notm}}:
+The following table lists message ID prefixes for the [{{site.data.keyword.vpc_full}}](/docs/vpc?topic=vpc-getting-started) infrastructure service that send logs to {{site.data.keyword.la_full_notm}}:
 
-### VPC infrastructure (Gen 2)
-{: #cloud_services_msg_format_vpc_infrastructure_gen2}
-
-| Service     | CRN service name </br>`crn-service-name`  | Message ID format      | Sample |
-|-------------|-------------------------------------------|---------------------------|------------------|
-| [Flow Logs for VPC](/docs/vpc?topic=vpc-flow-logs)  | `is.flow-log-collector`       | `<crn-service-name>.#####<severity>` | `is.flow-log-collector.00001E` |
-{: caption="Table 1. List of VPC infrastructure services (generation 1)" caption-side="top"} 
+| Service                                             | CRN service name </br>`crn-service-name`  | Message ID format      | Sample |
+|-----------------------------------------------------|-------------------------------------------|---------------------------|------------------|
+| [Dedicated host](/docs/vpc?topic=vpc-creating-dedicated-hosts-instances)  | `dedicated-host`    | `<crn-service-name>.#####<severity>` | `dedicated-host.00001` |
+| [Flow Logs for VPC](/docs/vpc?topic=vpc-flow-logs)  | `is.flow-log-collector`                   | `<crn-service-name>.#####<severity>` | `is.flow-log-collector.00001E` |
+{: caption="Table 1. VPC infrastructure service" caption-side="top"} 
 
 
 
