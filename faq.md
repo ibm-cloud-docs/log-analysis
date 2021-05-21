@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2021
-lastupdated: "2021-03-28"
+lastupdated: "2021-05-21"
 
 keywords: IBM, Log Analysis, logging, faq
 
@@ -26,7 +26,7 @@ subcollection: log-analysis
 {:external: target="_blank" .external}
 
 # Frequently asked questions (FAQs)
-{: #at_faq}
+{: #faq}
 
 Frequently asked questions about {{site.data.keyword.la_full_notm}}.
 {: shortdesc}
@@ -81,4 +81,17 @@ An ingestion key can only be reset or new ones created in the logging web UI. Yo
 
 [Learn more](/docs/log-analysis?topic=log-analysis-ingestion_key#reset).
 
+
+## How can I get the ID of an instance?
+{: #faq_9}
+{: faq}
+
+To get the ID of a logging instance, run the following command:
+
+```
+ic resource service-instance <INSTANCE_NAME>
+```
+{: pre}
+
+To get the name of the instance, run the following command `ibmcloud resource service-instances --all-resource-groups`. 
 

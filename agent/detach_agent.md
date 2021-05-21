@@ -28,13 +28,13 @@ subcollection: log-analysis
 Detach a logging agent from a logging instance to stop collecting logs.
 {:shortdesc}
 
-## Detaching a logging agent from a standard Kubernetes cluster
+## Detaching a logging agent  from a standard Kubernetes cluster
 {: #detach_agent_kube}
 
 To stop your Kubernetes cluster from sending logs to your {{site.data.keyword.la_full_notm}} instance, you must remove the logging agent from your cluster. 
 
 
-### Detaching a logging agent version 2 from a standard Kubernetes cluster by using kubectl commands
+### Detaching a logging agent by using the agent yaml file
 {: #detach_agent_kube_kubectl_v2}
 
 To stop your Kubernetes cluster from forwarding logs to your logging instance, complete the following steps from the command line:
@@ -59,43 +59,17 @@ To stop your Kubernetes cluster from forwarding logs to your logging instance, c
     ```
     {: codeblock}
 
-4. Remove the logging agent on every worker(node) of your Kubernetes cluster. Run one of the following commands:
+4. Remove the logging agent on every worker(node) of your Kubernetes cluster. Run the following command:
 
+| Type of endpoint | Command |
+|------------------|---------|
+| Public endpoint  | `kubectl delete -f https://assets.<REGION>.logging.cloud.ibm.com/clients/logdna-agent/<VERSION>/agent-resources.yaml` |
+| Private endpoint | `kubectl delete -f https://assets.<REGION>.logging.cloud.ibm.com/clients/logdna-agent/<VERSION>/agent-resources-private.yaml` |
 
-| Location                  | Command (By using public endpoints)               | 
-|--------------------------|----------------------------------------------------|
-| `Chennai (in-che)`       | `kubectl delete -f https://assets.in-che.logging.cloud.ibm.com/clients/agent-resources.yaml`       |
-| `Dallas (us-south)`      | `kubectl delete -f https://assets.us-south.logging.cloud.ibm.com/clients/agent-resources.yaml`       |
-| `Frankfurt (eu-de)`      | `kubectl delete -f https://assets.eu-de.logging.cloud.ibm.com/clients/agent-resources.yaml`         |
-| `London (eu-gb)`         | `kubectl delete -f https://assets.eu-gb.logging.cloud.ibm.com/clients/agent-resources.yaml`          |
-| `Tokyo (jp-tok)`         | `kubectl delete -f https://assets.jp-tok.logging.cloud.ibm.com/clients/agent-resources.yaml`       |
-| `Seoul (kr-seo)`         | `kubectl delete -f https://assets.kr-seo.logging.cloud.ibm.com/clients/agent-resources.yaml` |
-| `Sydney (au-syd)`        | `kubectl delete -f https://assets.au-syd.logging.cloud.ibm.com/clients/agent-resources.yaml`        |
-| `Washington (us-east)`   | `kubectl delete -f https://assets.us-east.logging.cloud.ibm.com/clients/agent-resources.yaml`       |
-{: caption="Table 1. Commands by location when you use public endpoints" caption-side="top"}
-{: #agent-table-1}
-{: tab-title="Command (By using public endpoints)"}
-{: tab-group="agent1"}
-{: class="simple-tab-table"}
-{: row-headers}
+Where
 
-| Location                  | Command (By using private endpoints)               | 
-|--------------------------|----------------------------------------------------|
-| `Chennai (in-che)`       | `kubectl delete -f https://assets.in-che.logging.cloud.ibm.com/clients/agent-resources-private.yaml`   |
-| `Dallas (us-south)`      | `kubectl delete -f https://assets.us-south.logging.cloud.ibm.com/clients/agent-resources-private.yaml` |
-| `Frankfurt (eu-de)`      | `kubectl delete -f https://assets.eu-de.logging.cloud.ibm.com/clients/agent-resources-private.yaml`    |
-| `London (eu-gb)`         | `kubectl delete -f https://assets.eu-gb.logging.cloud.ibm.com/clients/agent-resources-private.yaml`    |
-| `Tokyo (jp-tok)`         | `kubectl delete -f https://assets.jp-tok.logging.cloud.ibm.com/clients/agent-resources-private.yaml`   |
-| `Seoul (kr-seo)`         | `kubectl delete -f https://assets.kr-seo.logging.cloud.ibm.com/clients/agent-resources-private.yaml`   |
-| `Sydney (au-syd)`        | `kubectl delete -f https://assets.au-syd.logging.cloud.ibm.com/clients/agent-resources-private.yaml`   |
-| `Washington (us-east)`   | `kubectl delete -f https://assets.us-east.logging.cloud.ibm.com/clients/agent-resources-private.yaml`  |
-{: caption="Table 2. Commands by location when you use private endpoints" caption-side="top"}
-{: #agent-table-2}
-{: tab-title="Command (By using private endpoints)"}
-{: tab-group="agent1"}
-{: class="simple-tab-table"}
-{: row-headers}
-
+- `<REGION>` indicates the region where the logging instance is available. For more information about regions, see [Locations](/docs/log-analysis?topic=log-analysis-regions).
+- `<VERSION>` indicates the version of the agent that you have deployed. You must use a version that has a tag with the following format: `X.Y.Z` or use your custom yaml file. 
 
 To verify that the logging agent is deleted successfully, run the following command:
 
@@ -106,7 +80,7 @@ kubectl get pods -n ibm-observe
 
 You should not see any logging pods.
 
-### Detaching a logging agent version 1 from a standard Kubernetes cluster by using kubectl commands
+### Detaching a logging agent by using kubectl commands
 {: #detach_agent_kube_kubectl_v1}
 
 To stop your Kubernetes cluster from forwarding logs to your logging instance, complete the following steps from the command line:
@@ -151,7 +125,7 @@ You should not see any logging pods.
 
 
 
-### Detaching a logging agent from a standard Kubernetes cluster from the cluster console
+### Detaching a logging agent from the cluster console
 {: #detach_agent_kube_console}
 
 This option is only valid when you deploy the logging agent from the {{site.data.keyword.containerlong_notm}} console.
@@ -167,7 +141,7 @@ Complete the following steps from the [{{site.data.keyword.containerlong_notm}} 
 
 
 
-### Detaching a logging agent from a standard Kubernetes cluster by using ob commands
+### Detaching a logging agent by using ob commands
 {: #detach_agent_kube_console_ob}
 
 This option is only valid when you deploy the logging agent by using ob commands.
@@ -238,7 +212,7 @@ Complete the following steps:
 
 To stop your OpenShift cluster from sending logs to your {{site.data.keyword.la_full_notm}} instance, you must remove the logging agent from your cluster. 
 
-### Detaching a logging agent from an Openshift Kubernetes cluster by using kubectl commands
+### Detaching a logging agent by using kubectl commands
 {: #detach_agent_os_kube_kubectl}
 
 Complete the following steps from the command line:
@@ -305,7 +279,7 @@ Complete the following steps from the command line:
 
 
 
-### Detaching a logging agent from an Openshift Kubernetes cluster from the OpenShift console
+### Detaching a logging agent from the OpenShift console
 {: #detach_agent_os_console}
 
 This option is only valid when you deploy the logging agent from the OpenShift console.
@@ -321,7 +295,7 @@ Complete the following steps from the [OpenShift console](https://cloud.ibm.com/
 
 
 
-### Detaching a logging agent from an Openshift Kubernetes cluster by using ob commands
+### Detaching a logging agent by using ob commands
 {: #detach_agent_os_console_ob}
 
 This option is only valid when you deploy the logging agent by using ob commands.

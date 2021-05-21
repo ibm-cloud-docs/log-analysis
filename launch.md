@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2021
-lastupdated: "2021-03-28"
+lastupdated: "2021-05-21"
 
 keywords: IBM, Log Analysis, logging, web UI, browser
 
@@ -75,22 +75,18 @@ You can launch the logging web UI directly from a browser.
 
 Complete the following steps:
 
-1. [Get the logging web UI URL](/docs/Activity-Tracker-with-LogDNA?topic=Activity-Tracker-with-LogDNA-get_log_analysis_web_url).
+1. [Get the instance ID](/docs/log-analysis?topic=log-analysis-faq#faq_9).
 
-    For example, a logging web UI looks like `https://app.eu-gb.logging.cloud.ibm.com/ext/ibm-sso/xxxxxxxxxx`.
-
-2. Enter the dashboard URL in a browser and log in to {{site.data.keyword.cloud_notm}.
-
-3. [Optional] You can also pass query parameters to refine the view that is displayed.
+2. Enter the following URL in a browser. 
 
     ```
-    https://<ENDPOINT>/ext/ibm-sso/WEB_UI_ID?q=<QUERY>&hosts=<HOSTS>&apps=<APPS>&levels=<LEVELS>&tags=<TAGS>&t=<TIMEFRAME>
+    https://cloud.ibm.com/observe/embedded-view/logging/<INSTANCE_ID>?q=<QUERY>&hosts=<HOSTS>&apps=<APPS>&levels=<LEVELS>&tags=<TAGS>&t=<TIMEFRAME>
     ```
     {: codeblock}
 
     Where
 
-    * `<ENDPOINT>` represents the dashboard URL in the region where the instance is available. See [logging web UI endpoints](/docs/log-analysis?topic=log-analysis-endpoints#endpoints_log_analysis_ui).
+    * `<INSTANCE_ID>` indicates the instance ID.
 
     * `<QUERY>` represents the search query that is applied for the view, for example, `q=table%3Amangle%20reason%3A%27refresh%20timer%27`. 
 
@@ -117,7 +113,7 @@ Complete the following steps:
         When you specify a timeframe of `July 12, 2020 to July 15,2020`, the value is `t=July%2012%2C%202020%20to%20July%2015%2C2020`.
 
 
-
+You might need to log in to {{site.data.keyword.cloud_notm}} to view the data if your token has expired or you are not logged in.
 
 
 

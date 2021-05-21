@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2021
-lastupdated: "2021-03-24"
+lastupdated: "2021-05-21"
 
 keywords: IBM, Log Analysis, logging, config agent
 
@@ -145,64 +145,61 @@ The logging agent collects the following logs:
 - Logs with the extension `*.log`, and extensionsless files that are stored in the `/var/log` directory of your pod. 
 By default, logs are collected from all namespaces, including `kube-system`, and automatically forwarded to the {{site.data.keyword.la_full_notm}} service.
 
-Choose one of the following commands to install and configure the **logging agent version 2** by using `kubectl` commands:
 
-The logging agent version 2 is supported for Kubernetes 1.9+ only.
+#### Logging agent V2 and V3
+{: #config_agent_kube_cluster_step5-vx}
+
+The logging agent version 2 and version 3 are supported for Kubernetes 1.9+ and later.
+{: note}
+
+To configure the logging agent by using `kubectl` commands, run the following command:
+
+| Type of endpoint | Command |
+|------------------|---------|
+| Public endpoint  | `kubectl apply -f https://assets.<REGION>.logging.cloud.ibm.com/clients/logdna-agent/<VERSION>/agent-resources.yaml` |
+| Private endpoint | `kubectl apply -f https://assets.<REGION>.logging.cloud.ibm.com/clients/logdna-agent/<VERSION>/agent-resources-private.yaml` |
+
+Where
+
+- `<REGION>` indicates the region where the logging instance is available. For more information about regions, see [Locations](/docs/log-analysis?topic=log-analysis-regions).
+- `<VERSION>` indicates the version of the agent that you want to deploy. You must use a version that has a tag with the following format: `X.Y.Z`. 
+
+If you need to use a version that has a tag with any of the following formats: `X.Y.Z-<date>.[hash]`, `X`, or `X.Y`, you must download the agent yaml file and modify it. Replace the version for all entries `app.kubernetes.io/version` in the file with the one that you want to use. You must download the yaml file that has the format `X.Y.Z`. Then, after you make the version changes, you can run `kubectl apply -f <CUSTOM_YAML_FILE>` to deploy the agent.
 {: important}
 
-The default YAML file uses the image that is tagged as stable. To find out the logging agent version that you deploy by running the script, see [Getting information about Kubernetes logging agent images](/docs/log-analysis?topic=log-analysis-logdna_agent_image).
+For more information about the agent tags, see [Understanding image tags](/docs/log-analysis?topic=log-analysis-log_analysis_agent#log_analysis_agent_image_kube_tags).
 
-{: tip}
+For more information about the versions that are available, see [Getting information about Kubernetes logging agent images](/docs/log-analysis?topic=log-analysis-log-analysis_agent_image).
 
-| Location                  | Command (By using public endpoints)               | 
-|--------------------------|----------------------------------------------------|
-| `Chennai (in-che)`       | `kubectl apply -f https://assets.in-che.logging.cloud.ibm.com/clients/agent-resources.yaml`       |
-| `Dallas (us-south)`      | `kubectl apply -f https://assets.us-south.logging.cloud.ibm.com/clients/agent-resources.yaml`       |
-| `Frankfurt (eu-de)`      | `kubectl apply -f https://assets.eu-de.logging.cloud.ibm.com/clients/agent-resources.yaml`         |
-| `London (eu-gb)`         | `kubectl apply -f https://assets.eu-gb.logging.cloud.ibm.com/clients/agent-resources.yaml`          |
-| `Tokyo (jp-tok)`         | `kubectl apply -f https://assets.jp-tok.logging.cloud.ibm.com/clients/agent-resources.yaml`       |
-| `Seoul (kr-seo)`         | `kubectl apply -f https://assets.kr-seo.logging.cloud.ibm.com/clients/agent-resources.yaml` |
-| `Sydney (au-syd)`        | `kubectl apply -f https://assets.au-syd.logging.cloud.ibm.com/clients/agent-resources.yaml`        |
-| `Washington (us-east)`   | `kubectl apply -f https://assets.us-east.logging.cloud.ibm.com/clients/agent-resources.yaml`       |
-{: caption="Table 3. Commands by location when you use public endpoints" caption-side="top"}
-{: #agent-table-3}
-{: tab-title="Command (By using public endpoints)"}
-{: tab-group="agent1"}
-{: class="simple-tab-table"}
-{: row-headers}
+For example, to configure an agent that sends data to a logging instance in Dallas, you must run the following command:
 
-| Location                  | Command (By using private endpoints)               | 
-|--------------------------|----------------------------------------------------|
-| `Chennai (in-che)`       | `kubectl apply -f https://assets.in-che.logging.cloud.ibm.com/clients/agent-resources-private.yaml`   |
-| `Dallas (us-south)`      | `kubectl apply -f https://assets.us-south.logging.cloud.ibm.com/clients/agent-resources-private.yaml` |
-| `Frankfurt (eu-de)`      | `kubectl apply -f https://assets.eu-de.logging.cloud.ibm.com/clients/agent-resources-private.yaml`    |
-| `London (eu-gb)`         | `kubectl apply -f https://assets.eu-gb.logging.cloud.ibm.com/clients/agent-resources-private.yaml`    |
-| `Tokyo (jp-tok)`         | `kubectl apply -f https://assets.jp-tok.logging.cloud.ibm.com/clients/agent-resources-private.yaml`   |
-| `Seoul (kr-seo)`         | `kubectl apply -f https://assets.kr-seo.logging.cloud.ibm.com/clients/agent-resources-private.yaml`   |
-| `Sydney (au-syd)`        | `kubectl apply -f https://assets.au-syd.logging.cloud.ibm.com/clients/agent-resources-private.yaml`   |
-| `Washington (us-east)`   | `kubectl apply -f https://assets.us-east.logging.cloud.ibm.com/clients/agent-resources-private.yaml`  |
-{: caption="Table 4. Commands by location when you use private endpoints" caption-side="top"}
-{: #agent-table-4}
-{: tab-title="Command (By using private endpoints)"}
-{: tab-group="agent1"}
-{: class="simple-tab-table"}
-{: row-headers}
+```
+kubectl apply -f https://assets.us-south.logging.cloud.ibm.com/clients/logdna-agent/3.1.0/agent-resources.yaml
+```
+{: screen}
 
 
-If you need to configure the logging agent version 1, choose one of the following commands to install and configure the agent by using `kubectl` commands:
+#### Logging agent V1
+{: #config_agent_kube_cluster_step5-v1}
+
 
 The logging agent version 1 is supported for Kubernetes 1.2 to 1.8 only.
 {: important}
 
+Choose one of the following commands to install and configure the logging agent version 2 by using `kubectl` commands:
+
+
 | Location                 | Command (By using public endpoints)               | 
 |--------------------------|----------------------------------------------------|
 | `Chennai (in-che)`       | `kubectl create -f https://assets.in-che.logging.cloud.ibm.com/clients/logdna-agent-ds-k8s-v1.8.yaml -n ibm-observe`       |
-| `Dallas (us-south)`      | `kubectl create -f https://assets.us-south.logging.cloud.ibm.com/clients/logdna-agent-ds-k8s-v1.8.yaml -n ibm-observe`       |
-| `Frankfurt (eu-de)`      | `kubectl create -f https://assets.eu-de.logging.cloud.ibm.com/clients/logdna-agent-ds-k8s-v1.8.yaml -n ibm-observe`         |
-| `London (eu-gb)`         | `kubectl create -f https://assets.eu-gb.logging.cloud.ibm.com/clients/logdna-agent-ds-k8s-v1.8.yaml -n ibm-observe`          |
 | `Tokyo (jp-tok)`         | `kubectl create -f https://assets.jp-tok.logging.cloud.ibm.com/clients/logdna-agent-ds-k8s-v1.8.yaml -n ibm-observe`       |
 | `Seoul (kr-seo)`         | `kubectl create -f https://assets.kr-seo.logging.cloud.ibm.com/clients/logdna-agent-ds-k8s-v1.8.yaml -n ibm-observe` |
 | `Sydney (au-syd)`        | `kubectl create -f https://assets.au-syd.logging.cloud.ibm.com/clients/logdna-agent-ds-k8s-v1.8.yaml -n ibm-observe`        |
+| `Osaka (jp-osa)`         | `kubectl create -f https://assets.jp-osa.logging.cloud.ibm.com/clients/logdna-agent-ds-k8s-v1.8.yaml -n ibm-observe`        |
+| `Frankfurt (eu-de)`      | `kubectl create -f https://assets.eu-de.logging.cloud.ibm.com/clients/logdna-agent-ds-k8s-v1.8.yaml -n ibm-observe`         |
+| `London (eu-gb)`         | `kubectl create -f https://assets.eu-gb.logging.cloud.ibm.com/clients/logdna-agent-ds-k8s-v1.8.yaml -n ibm-observe`          |
+| `Toronto (ca-tor)`       | `kubectl create -f https://assets.ca-tor.logging.cloud.ibm.com/clients/logdna-agent-ds-k8s-v1.8.yaml -n ibm-observe`       |
+| `Dallas (us-south)`      | `kubectl create -f https://assets.us-south.logging.cloud.ibm.com/clients/logdna-agent-ds-k8s-v1.8.yaml -n ibm-observe`       |
 | `Washington (us-east)`   | `kubectl create -f https://assets.us-east.logging.cloud.ibm.com/clients/logdna-agent-ds-k8s-v1.8.yaml -n ibm-observe`       |
 {: caption="Table 1. Commands by location when you use public endpoints" caption-side="top"}
 {: #end-api-table-1}
@@ -214,12 +211,14 @@ The logging agent version 1 is supported for Kubernetes 1.2 to 1.8 only.
 | Location                  | Command (By using private endpoints)               | 
 |--------------------------|----------------------------------------------------|
 | `Chennai (in-che)`       | `kubectl create -f https://assets.in-che.logging.cloud.ibm.com/clients/logdna-agent-ds-private.yaml -n ibm-observe`       |
-| `Dallas (us-south)`      | `kubectl create -f https://assets.us-south.logging.cloud.ibm.com/clients/logdna-agent-ds-private.yaml -n ibm-observe`      |
-| `Frankfurt (eu-de)`      | `kubectl create -f https://assets.eu-de.logging.cloud.ibm.com/clients/logdna-agent-ds-private.yaml -n ibm-observe`          |
-| `London (eu-gb)`         | `kubectl create -f https://assets.eu-gb.logging.cloud.ibm.com/clients/logdna-agent-ds-private.yaml -n ibm-observe`       |
 | `Tokyo (jp-tok)`         | `kubectl create -f https://assets.jp-tok.logging.cloud.ibm.com/clients/logdna-agent-ds-private.yaml -n ibm-observe`        |
 | `Seoul (kr-seo)`         | `kubectl create -f https://assets.kr-seo.logging.cloud.ibm.com/clients/logdna-agent-ds-private.yaml -n ibm-observe` |
 | `Sydney (au-syd)`        | `kubectl create -f https://assets.au-syd.logging.cloud.ibm.com/clients/logdna-agent-ds-private.yaml -n ibm-observe`       |
+| `Osaka (jp-osa)`         | `kubectl create -f https://assets.jp-osa.logging.cloud.ibm.com/clients/logdna-agent-ds-private.yaml -n ibm-observe`       |
+| `Frankfurt (eu-de)`      | `kubectl create -f https://assets.eu-de.logging.cloud.ibm.com/clients/logdna-agent-ds-private.yaml -n ibm-observe`          |
+| `London (eu-gb)`         | `kubectl create -f https://assets.eu-gb.logging.cloud.ibm.com/clients/logdna-agent-ds-private.yaml -n ibm-observe`       |
+| `Toronto (ca-tor)`       | `kubectl create -f https://assets.ca-tor.logging.cloud.ibm.com/clients/logdna-agent-ds-private.yaml -n ibm-observe`      |
+| `Dallas (us-south)`      | `kubectl create -f https://assets.us-south.logging.cloud.ibm.com/clients/logdna-agent-ds-private.yaml -n ibm-observe`      |
 | `Washington (us-east)`   | `kubectl create -f https://assets.us-east.logging.cloud.ibm.com/clients/logdna-agent-ds-private.yaml -n ibm-observe`      |
 {: caption="Table 2. Commands by location when you use private endpoints" caption-side="top"}
 {: #end-api-table-2}
