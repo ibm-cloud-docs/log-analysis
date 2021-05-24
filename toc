@@ -123,6 +123,7 @@ Log Analysis
     service_plans.md
     core/shared-responsibilities.md
     core/ha-dr.md
+    service-ip-changes.md
     
     {: .topicgroup}
     Logging CLI
