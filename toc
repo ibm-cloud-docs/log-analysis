@@ -113,7 +113,7 @@ Log Analysis
         devops/config_api.md
         alerts/email.md
         alerts/pagerduty.md
-        alerts/monitoring.md
+        devops/monitoring.md
         alerts/sms.md
     {: .navgroup-end}
 
