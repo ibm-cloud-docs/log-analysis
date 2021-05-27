@@ -52,7 +52,7 @@ Before you begin, complete the following tasks:
 Run the following command:
 
 ```
-ic cr region-set global
+ibmcloud cr region-set global
 ```
 {: pre}
 

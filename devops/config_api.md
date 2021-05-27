@@ -184,8 +184,8 @@ The following table indicates when the `name` parameter is required:
 
 | Action                                                                | Request  | Field required                       |
 | ----------------------------------------------------------------------|----------|--------------------------------------|
-| Create a view and attach an alert to a view.                          | `POST`   | ![Check mark icon](images/checkmark-icon.svg "Check mark icon indicating required")|
-| Modify an existing view and the alerts that are attached to the view. | `PUT`    | ![Check mark icon](images/checkmark-icon.svg "Check mark icon indicating required")|
+| Create a view and attach an alert to a view.                          | `POST`   | ![Check mark icon](../images/checkmark-icon.svg "Check mark icon indicating required")|
+| Modify an existing view and the alerts that are attached to the view. | `PUT`    | ![Check mark icon](../images/checkmark-icon.svg "Check mark icon indicating required")|
 | Delete a view and its associated alerts.                              | `DELETE` |  |
 {: caption="Table 2. Required status per method" caption-side="top"}
 

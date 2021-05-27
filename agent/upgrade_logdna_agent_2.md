@@ -20,6 +20,7 @@ subcollection: log-analysis
 {:download: .download}
 {:important: .important}
 {:note: .note}
+{:external: target="_blank" .external}
 
 # Upgrading from logging agent version 1 to logging agent version 2
 {: #upgrade_log_analysis_agent_2}

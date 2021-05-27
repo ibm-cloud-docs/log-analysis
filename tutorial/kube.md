@@ -116,7 +116,7 @@ Complete the following steps to get the ingestion key:
 
 	After you log in, the {{site.data.keyword.cloud_notm}} UI opens.
 
-2. Click the **Menu** icon ![Menu icon](images/icon_hamburger.svg) &gt; **Observability** to access the *Observability* dashboard.
+2. Click the **Menu** icon ![Menu icon](../images/icon_hamburger.svg) &gt; **Observability** to access the *Observability* dashboard.
 
 3. Select **Logging**. The {{site.data.keyword.la_full_notm}} dashboard opens. You can see the list of logging instances that are available on {{site.data.keyword.cloud_notm}}.
 
