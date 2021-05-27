@@ -101,7 +101,7 @@ You can edit a group to change the access scope as needed.
 
 3. Click the **Menu** icon ![Menu icon](/image/icon_hamburger.svg) &gt; **Observability**. 
 
-4. Select **Activity Tracker**.
+4. Select **Log Analysis**.
 
 5. For your instance, click **Open Dashboard**. The UI will be displayed.
 
@@ -158,6 +158,5 @@ Complete the following steps to edit or delete a service group:
 6. Click ![**Settings**](/images/config.png "Settings icon") &gt; **TEAM** &gt; **Groups**.
 
 7. Click **Edit** or **Delete** to change or remove the group.
-
 
 
