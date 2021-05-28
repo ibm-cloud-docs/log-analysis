@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2021
-lastupdated: "2021-05-24"
+lastupdated: "2021-05-28"
 
 keywords: IBM, Log Analysis, logging, endpoints
 
@@ -65,6 +65,19 @@ The following tables show changes per region:
 {: caption="Table 2. Lists of IPs in US South" caption-side="top"}
 
 
+
+
+### Frankfurt (eu-de)
+{: #service-ip-changes-frankfurt}
+
+| Frankfurt endpoint                                 | Current IP addresses                                      | New IP addresses  |
+|----------------------------------------------------|-----------------------------------------------------------|-------------------------------------------|
+| `logs.eu-de.logging.cloud.ibm.com`                 | 161.156.89.11 </br>149.81.86.68 </br>158.177.129.36       | 158.177.157.66 </br>161.156.78.142 </br>149.81.108.173 |
+| `logs.private.eu-de.logging.cloud.ibm.com`         | 166.9.28.3 </br>166.9.32.21                               | No change |
+| `syslog-a.eu-de.logging.cloud.ibm.com`             | 158.177.136.58 </br>149.81.96.229 </br>161.156.75.98      | 158.177.157.70 </br>161.156.78.138 </br>149.81.108.28 |
+| `api.eu-de.logging.cloud.ibm.com`                  | 149.81.86.66 </br>161.156.89.12 </br>158.177.129.34       | 158.177.157.69 </br>161.156.6.180 </br>149.81.108.27 |
+| `api.private.eu-de.logging.cloud.ibm.com`          | 166.9.32.7 </br>166.9.28.2                                | No change |
+{: caption="Table 3. Lists of IPs in EU-DE" caption-side="top"}
 
 
 
