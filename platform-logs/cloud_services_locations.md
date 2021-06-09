@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2021
-lastupdated: "2021-05-18"
+lastupdated: "2021-06-09"
 
 keywords: IBM, Log Analysis, logging, services
 
@@ -101,8 +101,6 @@ The following table shows the locations where automatic collection of Cloud Foun
 {: class="simple-tab-table"}
 {: row-headers}
 
-
-
 ## Container services
 {: #cs_locations_container}
 
@@ -112,11 +110,11 @@ You can choose the logging instance where you want to collect {{site.data.keywor
 
 You can monitor {{site.data.keyword.satellitelong}} service logs through the logging instance that is configured with **service platform logs** in the same region that your {{site.data.keyword.satelliteshort}} location is managed from.
 
-The following tables list the locations where automatic collection of registry service logs is enabled. You can monitor logs through the Log Analysis instance that is available in the same location as your database resources, if you enable one instance in this location to host service platform logs. For locations where you can provision a service instance but the {{site.data.keyword.la_full_notm}} service is not available, specific details about the location where you can monitor those logs is provided in each case. For more information, see [Analyzing logs for {{site.data.keyword.registrylong_notm}}](/docs/Registry?topic=Registry-registry_logs).
+{{site.data.keyword.registrylong_notm}} generates platform services logs that are displayed in your logging instances. The following table lists the locations where the automatic collection of {{site.data.keyword.registryshort_notm}} service logs is enabled. For more information, see [Analyzing logs for {{site.data.keyword.registrylong_notm}}](/docs/Registry?topic=Registry-registry_logs).
 
-| Service                  | `Dallas (us-south)` | `Washington (us-east)`   | `Toronto (ca-tor)` |
-|--------------------------|---------------------|--------------------------|--------------------|
-| {{site.data.keyword.registrylong_notm}}    | ![Checkmark icon](../images/checkmark-icon.svg)  |  | ![Checkmark icon](../images/checkmark-icon.svg)  |     
+| Service                  |  `Dallas (us-south)` |  `Toronto (ca-tor)` | `Washington (us-east)` |
+|--------------------------|----------------------|---------------------|------------------------|
+| {{site.data.keyword.registrylong_notm}} `[*]` | ![Checkmark icon](../images/checkmark-icon.svg)  | ![Checkmark icon](../images/checkmark-icon.svg)  |    |
 {: caption="Table 3. Container services" caption-side="top"}
 {: #cs-con-table-1}
 {: tab-title="America"}
@@ -124,9 +122,9 @@ The following tables list the locations where automatic collection of registry s
 {: class="simple-tab-table"}
 {: row-headers}
 
-| Service                                                         | `Tokyo (jp-tok)` | `Osaka (jp-osa)` | `Sydney (au-syd)`           |
-|-----------------------------------------------------------------|----------------|---------------------------|--------------------------|
-| {{site.data.keyword.registrylong_notm}}                         | ![Checkmark icon](../images/checkmark-icon.svg)  | ![Checkmark icon](../images/checkmark-icon.svg)  | `Logs are available through the Log Analysis Tokyo (jp-tok) instance` |
+| Service                                     | `Osaka (jp-osa)` | `Sydney (au-syd)`  |  `Tokyo (jp-tok)` |
+|---------------------------------------------|----------------|---------------------------|--------------------------|
+| {{site.data.keyword.registrylong_notm}} `[*]`   |  ![Checkmark icon](../images/checkmark-icon.svg)  | `Logs are available through the Log Analysis Tokyo (jp-tok) instance.` | ![Checkmark icon](../images/checkmark-icon.svg)  |
 {: caption="Table 3. Container services" caption-side="top"}
 {: #cs-con-table-2}
 {: tab-title="Asia Pacific"}
@@ -134,9 +132,9 @@ The following tables list the locations where automatic collection of registry s
 {: class="simple-tab-table"}
 {: row-headers}
 
-| Service                                                       |`Frankfurt (eu-de)`  | `London (eu-gb)` |
-|---------------------------------------------------------------|-------------------|----------------|
-| {{site.data.keyword.registrylong_notm}}                    |  ![Checkmark icon](../images/checkmark-icon.svg)            | ![Checkmark icon](../images/checkmark-icon.svg)|
+| Service                                        |`Frankfurt (eu-de)`  | `London (eu-gb)` |
+|------------------------------------------------|-------------------|----------------|
+| {{site.data.keyword.registrylong_notm}} `[*]`  |  ![Checkmark icon](../images/checkmark-icon.svg)  | ![Checkmark icon](../images/checkmark-icon.svg) |
 {: caption="Table 3. Container services" caption-side="top"}
 {: #cs-con-table-3}
 {: tab-title="Europe"}
@@ -144,6 +142,7 @@ The following tables list the locations where automatic collection of registry s
 {: class="simple-tab-table"}
 {: row-headers}
 
+`[*]` {{site.data.keyword.registrylong_notm}} global registry logs are available through the Log Analysis `Dallas (us-south)` instance. 
 
 ## Database services
 {: #cs_locations_database}
