@@ -89,7 +89,7 @@ You can apply a timestamp by specifying an absolute time, a relative time, or a 
 ## Configuring alerts
 {: #mon_alerts}
 
-There are scenarios where you might want to be notified if specific logs are generated in your account. For example, you might want to be notified if the number of actions that fail goes above a threshold that you specify. 
+There are scenarios where you might want to be notified if specific logs are generated in your account. For example, you might want to be notified if the number of actions that fail are greater than a threshold that you specify. 
 
 Through the {{site.data.keyword.la_full_notm}} web UI, you can apply search queries to define the logs that are displayed through a custom view. Then, you can attach an alert to that view to be notified when a condition occurs. A bell icon is displayed with the view to indicate that this view has an alert attached to it.
 

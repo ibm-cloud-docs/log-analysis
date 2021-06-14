@@ -121,7 +121,8 @@ These configuration changes will affect all defined views.
 
    Change the log viewer text size by using the slider.
 
-   To add items to log view, drag the available items from the bottom line to the top line.  To rearrange the order of the items, drag and drop the items in the top line until you have your desired view.
+   To add items to the log view, drag the available items and add them in your desired order to the view.
+
 
 6. Click **Done** to save your changes.  To cancel without making changes, press **Esc**.
 
@@ -140,11 +141,11 @@ You can customize the fields that are displayed in a custom view.
 
    ![Navigation example](../images/uncategorized_myview.png "An uncategorized view named My View in the navigation") 
 
-4. Click the selected view name at the top of the page.  The following example shows the view named "My View".
+4. Click the selected view name.  The following example shows the view named "My View".
 
    ![My View view](../images/myview.png "Heading showing the My View view") 
 
-5. Click the view name at the top of the page.  The menu is displayed.  Click **Edit view properties**.
+5. Click the view name.  The menu is displayed.  Click **Edit view properties**.
 
    ![Edit view properties](../images/editviewproperties.png "Edit view properties") 
 
@@ -219,7 +220,7 @@ There are occasions when you might want to reference information that is availab
 
 5. For this tutorial, for **Choose a sample log line to begin building your template** select *Find an existing log line*. Enter a search term that will match a field in your log. See [Customize the data displayed for a view](#LA-customize-log-format) for information on extracting log fields.
 
-6. Scroll to the bottom of the page and click **Build Parsing Template**. A **Reference Line** for your log records is displayed.
+6. Scroll to the end of the page and click **Build Parsing Template**. A **Reference Line** for your log records is displayed.
 
 7. Click the the **Pencil** icon ![Pencil icon](../images/pencil.png "Pencil icon") and enter a name for your parsing rule.
 
@@ -244,11 +245,11 @@ There are occasions when you might want to reference information that is availab
 
 16. For **Field Name** specify a name that you will use to reference this type of information.
 
-17. At the bottom of the page click **Proceed to Validation**.
+17. At the end of the page click **Proceed to Validation**.
 
 18. For **Set a query and verify parsed output with different sample lines** enter a search that will return multiple records.  For example, `message`.
 
-19. If all log lines returned match the rule you specified, click **Mark as Valid** for each and then click **Activate** at the bottom of the page.
+19. If all log lines returned match the rule you specified, click **Mark as Valid** for each and then click **Activate** at the end of the page.
 
     Until you validate all results, the **Activate** option will be disabled.
     {: note}
@@ -276,7 +277,7 @@ You might want to view a log line in context.
 
 5. Click ![View in context](../images/viewincontext.png "View in context"). The log line will be displayed in context of other log lines from that host, app, or both. This information is helpful when troubleshooting a problem.
 
-6. Explore the selected log line by using the following options at the top of the displayed context.
+6. Explore the selected log line by using the following options.
 
    **By Everything** displays the log line in context of all log records that are available in the {{site.data.keyword.la_full_notm}} instance.
 
@@ -407,11 +408,11 @@ You can configure an alert to be sent by email, Slack, PagerDuty or as a Webhook
 
    ![Navigation example](../images/uncategorized_myview.png "An uncategorized view named My View in the navigation") 
 
-4. Click the selected view name at the top of the page.  The following example shows the view named "My View".
+4. Click the selected view name.  The following example shows the view named "My View".
 
    ![My View view](../images/myview.png "Heading showing the My View view") 
 
-5. Click the view name at the top of the page.  The menu is displayed.  Click **Attach an alert**
+5. Click the view name.  The menu is displayed.  Click **Attach an alert**
 
    ![Edit view properties](../images/editviewproperties.png "Edit view properties") 
 
@@ -431,7 +432,7 @@ You can configure an alert to be sent by email, Slack, PagerDuty or as a Webhook
 
 8. Check the configured email for an alert.  
 
-9. When you are ready to disable the alert, click the view name at the top of the page and in the menu click **Detach alerts**.
+9. When you are ready to disable the alert, click the view name and in the menu click **Detach alerts**.
 
    ![Detach alerts](../images/detachalerts.png "Dialog showing the option to detach associated alerts")
 

@@ -42,16 +42,16 @@ Complete the following steps to add tags to a cluster:
 
 1. Set up the cluster environment. Run the following commands:
 
-    First, get the command to set the environment variable and download the Kubernetes configuration files.
+   1. Get the command to set the environment variable and download the Kubernetes configuration files.
 
-    ```
-    ibmcloud ks cluster config --cluster <cluster_name_or_ID>
-    ```
-    {: codeblock}
+       ```
+       ibmcloud ks cluster config --cluster <cluster_name_or_ID>
+       ```
+       {: codeblock}
 
-    When the download of the configuration files is finished, a command is displayed that you can use to set the path to the local Kubernetes configuration file as an environment variable.
+       When the download of the configuration files is finished, a command is displayed that you can use to set the path to the local Kubernetes configuration file as an environment variable.
 
-    Then, copy and paste the command that is displayed in your terminal to set the KUBECONFIG environment variable.
+    2. Copy and paste the command that is displayed in your terminal to set the KUBECONFIG environment variable.
 
 2. Check the update strategy of the DaemonSet. Then, choose whether to use *kubectl apply* or *kubectl edit* to modify the configuration file for the agent.
 
@@ -82,7 +82,7 @@ Complete the following steps to add tags to a cluster:
     ```
     {: codeblock}
 
-4. Make changes. Add the section **LOGDNA_TAGS**.
+4. Add a **LOGDNA_TAGS** section.
 
     ```
     - name: LOGDNA_TAGS
@@ -90,7 +90,7 @@ Complete the following steps to add tags to a cluster:
     ```
     {: codeblock}
 
-    For example, the following section shows where to add tags in the configuration file:
+    For example, the following shows the tags in a sample configuration file:
 
     ```
     apiVersion: extensions/v1beta1
@@ -122,7 +122,7 @@ Complete the following steps to add tags to a cluster:
             - name: LOGDNA_TAGS
               value: tag1,tag2,tag3
     ```
-    {: screen}
+    {: codeblock}
 
 5. Apply configuration changes if you edit the file locally.
 

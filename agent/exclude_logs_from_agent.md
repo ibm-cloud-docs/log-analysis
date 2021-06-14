@@ -100,45 +100,45 @@ Complete the following steps:
 2. Make changes. Add the section **LOGDNA_EXCLUDE** to the YAML file. 
 
 
-To exclude all cluster logs, you can enter:
+   * To exclude all cluster logs, you can add:
 
-```
-- name: LOGDNA_EXCLUDE
-  value: /var/log/containers/*_kube-system_*,/var/log/containers/*ibm-observe_*,/var/log/containerd.log,/var/log/kubelet.log,/var/log/syslog,/var/log/ntpstats/*,/var/log/alb/*
-```
-{: codeblock}
+      ```
+      - name: LOGDNA_EXCLUDE
+        value: /var/log/containers/*_kube-system_*,/var/log/containers/*ibm-observe_*,/var/log/containerd.log,/var/log/kubelet.log,/var/log/syslog,/var/log/ntpstats/*,/var/log/alb/*
+      ```
+      {: codeblock}
 
-To exclude logs by namespace, for example, to exclude all of the *kube-system* logs, enter:
+   * To exclude logs by namespace, for example, all of the *kube-system* logs, add:
 
-```
-- name: LOGDNA_EXCLUDE
-  value: /var/log/containers/*_kube-system_*
-```
-{: codeblock}
+      ```
+      - name: LOGDNA_EXCLUDE
+        value: /var/log/containers /*_kube-system_*
+      ```
+      {: codeblock}
 
-To exclude all non-container logs, that is, to exclude files as shown in the *All Apps* filter view, enter:
+   * To exclude all non-container logs, that is, files as shown in the *All Apps* filter view, add:
 
-```
-- name: LOGDNA_EXCLUDE
-  value: /var/log/!(containers)/**
-```
-{: codeblock}
+      ```
+      - name: LOGDNA_EXCLUDE
+        value: /var/log/!(containers)/**
+      ```
+      {: codeblock}
 
-To exclude calico logs, enter:
+   * To exclude calico logs, add:
 
-```
-- name: LOGDNA_EXCLUDE
-  value: /var/log/containers/calico*
-```
-{: codeblock}
+      ```
+      - name: LOGDNA_EXCLUDE
+        value: /var/log/containers/calico*
+      ```
+      {: codeblock}
 
-To exclude all of the _kube-system_ logs and all non-container logs, enter:
+  * To exclude all of the _kube-system_ logs and all non-container logs, add:
 
-```
-- name: LOGDNA_EXCLUDE
-  value: /var/log/!(containers)**,/var/log/containers/*_kube-system_*
-```
-{: codeblock}
+      ```
+      - name: LOGDNA_EXCLUDE
+        value: /var/log/!(containers)**,/var/log/containers/*_kube-system_*
+      ```
+      {: codeblock}
 
 
 ### Step 3. Apply the changes to the logging agent

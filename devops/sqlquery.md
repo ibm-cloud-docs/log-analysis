@@ -323,7 +323,8 @@ INTO RESULTS_BUCKET STORED AS CSV
 {: screen}
 
 
-### Step 3.7. Run a query to get a custom view of a subset of the event fields ordered by the event time
+### Step 3.7. Get a subset of the event fields ordered by the event time
+
 {: #sqlquery_step3-7}
 
 To see information about each event, run the following query:
