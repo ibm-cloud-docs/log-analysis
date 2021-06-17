@@ -300,7 +300,7 @@ The following tables list the locations where automatic collection of security s
 | Service                                                         | `Dallas (us-south)` | `Washington (us-east)`                   |
 |-----------------------------------------------------------------|---------------------|--------------------------------------|
 | {{site.data.keyword.cloudcerts_full_notm}}                      | ![Checkmark icon](../images/checkmark-icon.svg)   |                                 |   
-| {{site.data.keyword.secrets-manager_full}}  | ![Checkmark icon](images/checkmark-icon.svg)  | ![Checkmark icon](images/checkmark-icon.svg) |         
+| {{site.data.keyword.secrets-manager_full}}  | ![Checkmark icon](../images/checkmark-icon.svg)  | ![Checkmark icon](../images/checkmark-icon.svg) |         
 {: caption="Table 7. Security services" caption-side="top"}
 {: #cs-sec-table-16}
 {: tab-title="America"}
@@ -311,7 +311,7 @@ The following tables list the locations where automatic collection of security s
 | Service                                                         | `Tokyo (jp-tok)` |`Sydney (au-syd)`           |
 |-----------------------------------------------------------------|----------------|---------------------------|
 | {{site.data.keyword.cloudcerts_full_notm}}                      | ![Checkmark icon](../images/checkmark-icon.svg)          | ![Checkmark icon](../images/checkmark-icon.svg) |
-| {{site.data.keyword.secrets-manager_full}}  | ![Checkmark icon](images/checkmark-icon.svg)  | ![Checkmark icon](images/checkmark-icon.svg) |
+| {{site.data.keyword.secrets-manager_full}}  | ![Checkmark icon](../images/checkmark-icon.svg)  | ![Checkmark icon](../images/checkmark-icon.svg) |
 {: caption="Table 7. Security services" caption-side="top"}
 {: #cs-sec-table-17}
 {: tab-title="Asia Pacific"}
@@ -322,7 +322,7 @@ The following tables list the locations where automatic collection of security s
 | Service                                                       |`Frankfurt (eu-de)`  | `London (eu-gb)` |
 |---------------------------------------------------------------|-------------------|----------------|
 | {{site.data.keyword.cloudcerts_full_notm}}                    | ![Checkmark icon](../images/checkmark-icon.svg)             | ![Checkmark icon](../images/checkmark-icon.svg) |
-| {{site.data.keyword.secrets-manager_full}}  | ![Checkmark icon](images/checkmark-icon.svg)  | ![Checkmark icon](images/checkmark-icon.svg) |
+| {{site.data.keyword.secrets-manager_full}}  | ![Checkmark icon](../images/checkmark-icon.svg)  | ![Checkmark icon](../images/checkmark-icon.svg) |
 {: caption="Table 7. Security services" caption-side="top"}
 {: #cs-sec-table-18}
 {: tab-title="Europe"}
