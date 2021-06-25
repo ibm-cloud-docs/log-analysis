@@ -119,6 +119,7 @@ Log Analysis
 
     {: .navgroup id="reference"}
     endpoints.md
+    cidr.md
     regions.md
     service_plans.md
     core/shared-responsibilities.md
