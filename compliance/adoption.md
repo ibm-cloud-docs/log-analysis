@@ -46,7 +46,7 @@ When you create resources in the {{site.data.keyword.cloud_notm}}, you can choos
 In {{site.data.keyword.cloud_notm}}, you can have 1 or more **stand-alone** accounts. You can manage each account individually or within an **enterprise** by configuring a multitiered hierarchy of accounts. 
 
 Within an enterprise account, you create a multitiered hierarchy of accounts, with billing and payments for all accounts managed at the enterprise level. [Learn more](/docs/account?topic=account-what-is-enterprise).  
-* The top enterprise account serves as the parent account to all other accounts in the enterprise. 
+* The root enterprise account serves as the parent account to all other accounts in the enterprise. 
 * Users and access management is isolated between the enterprise and its child accounts. No access is automatically inherited between the two types of accounts.
 * Resources and services within an enterprise function the same as in stand-alone accounts. Each account in an enterprise can contain resources in resource groups and services in Cloud Foundry orgs and spaces. 
 
@@ -73,7 +73,7 @@ In addition to these benefits, when you look into logging and how it fits with a
 * Service platform logs are collected and available per location (region) through 1 single logging instance. You do not have the ability to split logs from different services running in the same region to multiple instances. If you run your development, test, and production services in a stand-alone account, all those logs will be available through the same logging instance, and any user with permissions to view logs in that instance will be able to see everything.
 * You can configure other log sources in {{site.data.keyword.cloud_notm}} and on-premisses to forward logs to any logging instance in your account. 
 
-**Define an enterprise account management strategy to add an additional layer of isolation to resources on top of stand-alone accounts.**
+**Define an enterprise account management strategy to add an additional layer of isolation in addition to resources of stand-alone accounts.**
 {: tip}
 
 
@@ -192,9 +192,6 @@ The HIPAA plan has a maximum of 25 users. If you need to grant permissions to mo
 A tag is a label that you assign to a resource for easy filtering of resources in your resource list. 
 * You can use tags to organize your resources and easily find them later. 
 * You can also use tags to help you with identifying specific team usage or cost allocation when you view your [exported usage report](/docs/billing-usage?topic=billing-usage-viewingusage#export-csv).
-
-**Use tags to organize your resources and track usage costs.**
-{: tip}
 
 Tags are case-sensitive, and the maximum length of a tag is 128 characters. 
 * The characters that are permitted to name tags are A-Z, 0-9, spaces, underscore, hyphen, period, and colon. 
@@ -435,7 +432,7 @@ There are 2 types of data that you should consider archiving:
 
 * Web UI resource definitions such as parsing templates, exclusion rules, views, screens, and dashboards.
 
-**Archive your logging resource definitions and your log data.**
+**You will want to archive your logging resource definitions and your log data.**
 {: tip}
 
 ### Backup the resource configurations of your logging instance
@@ -604,7 +601,7 @@ You might have a requirement to rotate API keys regularly or your API key might 
 
 In COS, you can define policies to control the permissions that are granted to service IDs and users to read, write, update object properties, and delete objects. [Learn more](/docs/cloud-object-storage?topic=cloud-object-storage-iam).
 
-**Restrict user access to archived files in the bucket.**
+**You will want to restrict user access to archived files in the bucket.**
 {: tip} 
 
 ### EU supported account
