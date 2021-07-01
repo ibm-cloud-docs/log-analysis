@@ -63,7 +63,7 @@ Complete the following steps to monitor the {{site.data.keyword.messagehub}} ins
 ## Monitoring streaming by using {{site.data.keyword.at_full_notm}}
 {: #streaming-monitor-2}
 
-Streaming generates {{site.data.keyword.la_short}} events with the action **logdna.streaming-logs.send** to notify about failures by sending data to {{site.data.keyword.messagehub}}. 
+Streaming generates {{site.data.keyword.at_short}} events with the action **logdna.streaming-logs.send** to notify about failures by sending data to {{site.data.keyword.messagehub}}. 
 
 There are different reasons for failure, for example:
 
