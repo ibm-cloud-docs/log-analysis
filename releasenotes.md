@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018, 2021
-lastupdated: "2021-03-28"
+lastupdated: "2021-07-01"
 
 keywords: Log Analysis release notes
 
@@ -18,6 +18,11 @@ subcollection: log-analysis
 
 Use these release notes to learn about the latest updates to {{site.data.keyword.la_full}}.  Updates are grouped by date.
 {:shortdesc}
+
+## July 2021
+{: #AT-july2021-for-update}
+
+- New beta feature released in US-South and Frankfurt to stream data from an {{site.data.keyword.la_full_notm}} instance to other corporate tools such as Security Information and Event Management (SIEM) tools. [Learn more about streaming](/docs/log-analysis?topic=log-analysis-streaming).
 
 
 ## March 2021

@@ -32,6 +32,8 @@ Log Analysis
         app-logs/ingest.md
         app-logs/ingest_python.md
 
+    streaming.md
+
     {: .topicgroup}
     Security and compliance
         compliance/adoption.md
@@ -101,6 +103,12 @@ Log Analysis
     {: .topicgroup}
     Logging and monitoring
         core/at_events.md
+
+    {: .topicgroup}
+    Streaming data
+        streaming-configure.md
+        streaming-monitor.md
+        streaming-conditional.md
     
     devops/view_logs.md
 
