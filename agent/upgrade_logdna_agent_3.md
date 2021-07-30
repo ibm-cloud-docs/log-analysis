@@ -242,9 +242,17 @@ Where `YOUR_FILE_NAME` is the name of the `yaml` file you used to deploy the old
 Install the agent by running the following command:
 
 ```
+kubectl create -f <logging-agent-resources yaml file>
+```
+{: pre}
+
+For example:
+
+```
 kubectl create -f logging-agent-resources-private.yaml
 ```
 {: pre}
+
 
 
 ## Step 8. Verify that the logging agent is deployed successfully
