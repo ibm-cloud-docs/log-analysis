@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2021
-lastupdated: "2021-03-28"
+lastupdated: "2021-07-30"
 
 keywords: IBM, Log Analysis, logging, config agent
 
@@ -73,7 +73,7 @@ Where
 
 The following table outlines the tagging convention adopted and the agent update behaviour:
 
-| Tag | logging agent auto-update enabled | More info |
+| Tag | Logging agent auto-update enabled | More info |
 |-----|----------------------------------|-----------|
 | `X` |  YES  | The logging agent auto-updates when a new minor version releases. </br>The logging agent does not update to a new major version, as these updates may require configuration changes. |
 | `X.Y`  | YES | The logging agent auto-updates when a new patch version is released. |
@@ -81,9 +81,12 @@ The following table outlines the tagging convention adopted and the agent update
 | `X.Y.Z-<date>.[hash]` | NO | The logging agent never updates. If you use this tag, make sure you are watching for new agent releases that have vulnerability fixes. |
 {: caption="Table 1. logging agent tags explained" caption-side="top"}
 
+Depending on the tag that you use, you must factor in your DevOps maintenance plan upgrades to the logging agent image to resolve vulnerabilities, agent enhancements and agent bug fixes. For example:
+- In a development environment, you can use a tag `X` and let auto-updates happen as new minor versions are released. 
+- In a staging environment, you migth consider using a tag `X.Y` so auto-updates happen when a new patch is released. 
+- In a production environment, you can use the tag `X.Y.Z` so that auto-updates happen when a new vulnerability fix is released. 
+- For highly regulated environments, you should use the tag `X.Y.Z-<date>.[hash]`. Notice that you will have to check periodically for vulnerability fixes, patches, and minor version releases to keep the agent free of issues.
 
-For highly regulated environments, use the tag `X.Y.Z-<date>.[hash]`.
-{: important}
 
 
 ### Stable and latest tags (deprecated)
@@ -154,6 +157,13 @@ To stop your Kubernetes cluster from sending logs to your {{site.data.keyword.la
 | `Standard Kubernetes cluster`  | [Detaching a logging agent from a standard Kubernetes cluster](/docs/log-analysis?topic=log-analysis-detach_agent#detach_agent_kube) |
 | `OpenShift Kubernetes cluster` | [Detaching a logging agent from an Openshift Kubernetes cluster](/docs/log-analysis?topic=log-analysis-detach_agent#detach_agent_os) |
 {: caption="Table 10. Detaching a logging agent from a cluster" caption-side="top"}
+
+### Running the agent as non-root
+{: #log_analysis_agent_image_kube_non-root}
+
+The default yaml files to configure a logging agent do not include running the agent as non-root. 
+
+To run the agent as non-root, see [Preparing the version 3 yaml file to run the agent as non-root](/docs/log-analysis?topic=log-analysis-upgrade_log_analysis_agent_3#upgrade_log_analysis_agent_3_step6).
 
 
 ## Logging agent for Linux

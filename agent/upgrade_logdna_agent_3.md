@@ -2,7 +2,7 @@
 
 copyright:
   years:  2021
-lastupdated: "2021-07-01"
+lastupdated: "2021-07-30"
 
 keywords: IBM, Log Analysis, logging, update logging agent
 
@@ -25,7 +25,7 @@ subcollection: log-analysis
 # Upgrading from logging agent version 2 to logging agent version 3
 {: #upgrade_log_analysis_agent_3}
 
-If your Kubernetes cluster version is 1.9+ or Red Hat OpenShift 4.5+, you can upgrade the logging agent to version 3.
+If your Kubernetes cluster version is 1.9+ or Red Hat OpenShift 4.5+, you can upgrade the logging agent to version 3 and run the agent as non-root.
 {:shortdesc}
 
 Version 3 of the logging agent includes a number of features and enhancements, depending on the release level, including:
@@ -173,7 +173,7 @@ kubectl delete -f <YOUR_FILE_NAME>
 Where `YOUR_FILE_NAME` is the name of the `yaml` file you used to deploy the old agent.  This is the file you obtained in [Step 3](# upgrade_log_analysis_agent_3_step3).
 
 
-## Step 6. Preparing the version 3 yaml file
+## Step 6. Preparing the version 3 yaml file to run the agent as non-root
 {: #upgrade_log_analysis_agent_3_step6}
 
 1. Download the new version 3 `yaml` file.  Starting with version 3, `yaml` files are stored in a version-specific directory.  
@@ -252,7 +252,6 @@ For example:
 kubectl create -f logging-agent-resources-private.yaml
 ```
 {: pre}
-
 
 
 ## Step 8. Verify that the logging agent is deployed successfully
