@@ -100,8 +100,8 @@ Use the following table to identify the service roles that you can grant a user 
 |-------------|----------------------|----------------------------|----------|
 | `Configure global settings` | ![Check mark icon](images/checkmark-icon.svg "Check mark icon indicating correct usage") |    |   |
 | `Manage groups`   | ![Check mark icon](images/checkmark-icon.svg "Check mark icon indicating correct usage") |  |  |
-| `Create and delete ingestion keys through the logging web UI`   | ![Check mark icon](images/checkmark-icon.svg "Check mark icon indicating correct usage") |     |   |
-| `Create and delete service keys through the logging web UI`     | ![Check mark icon](images/checkmark-icon.svg "Check mark icon indicating correct usage") |  |   |
+| `Create and delete ingestion keys`   | ![Check mark icon](images/checkmark-icon.svg "Check mark icon indicating correct usage") |     |   |
+| `Create and delete service keys`     | ![Check mark icon](images/checkmark-icon.svg "Check mark icon indicating correct usage") |  |   |
 | `Add logging log sources`  | ![Check mark icon](images/checkmark-icon.svg "Check mark icon indicating correct usage") |              |   |
 | `Configure archiving`  | ![Check mark icon](images/checkmark-icon.svg "Check mark icon indicating correct usage") |    |   |
 | `Manage parsing`     | ![Check mark icon](images/checkmark-icon.svg "Check mark icon indicating correct usage") |       |   |
@@ -110,7 +110,8 @@ Use the following table to identify the service roles that you can grant a user 
 | `Manage how views and dashboards are grouped in categories` | ![Check mark icon](images/checkmark-icon.svg "Check mark icon indicating correct usage") |      |   |
 | `Export the configuration of views, alerts, dashboards, and templates`  | ![Check mark icon](images/checkmark-icon.svg "Check mark icon indicating correct usage") |     |   |
 | `Export log data`     | ![Check mark icon](images/checkmark-icon.svg "Check mark icon indicating correct usage")  | ![Check mark icon](images/checkmark-icon.svg "Check mark icon indicating correct usage") | |
-| `View service keys through the logging web UI`                           | ![Check mark icon](images/checkmark-icon.svg "Check mark icon indicating correct usage")      | ![Check mark icon](images/checkmark-icon.svg "Check mark icon indicating correct usage") |     |
+| `View ingestion keys`                           | ![Check mark icon](images/checkmark-icon.svg "Check mark icon indicating correct usage")      | |
+| `View service keys`                           | ![Check mark icon](images/checkmark-icon.svg "Check mark icon indicating correct usage")      | |
 | `Configure alerts`                                                      | ![Check mark icon](images/checkmark-icon.svg "Check mark icon indicating correct usage")      | ![Check mark icon](images/checkmark-icon.svg "Check mark icon indicating correct usage")                    |    |
 | `View usage`                                                            | ![Check mark icon](images/checkmark-icon.svg "Check mark icon indicating correct usage")      | ![Check mark icon](images/checkmark-icon.svg "Check mark icon indicating correct usage")                   |      |
 | `Create views`                                                          | ![Check mark icon](images/checkmark-icon.svg "Check mark icon indicating correct usage")      | ![Check mark icon](images/checkmark-icon.svg "Check mark icon indicating correct usage")                    |      |
