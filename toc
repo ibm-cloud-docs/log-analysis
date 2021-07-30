@@ -68,6 +68,7 @@ Log Analysis
         devops/control_usage.md
         devops/exclusion_rules.md
         devops/ingestion_key.md
+        devops/service_keys.md
         devops/reuse_resource_definitions.md
 
     {: .topicgroup}
