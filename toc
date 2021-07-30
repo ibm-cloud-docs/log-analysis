@@ -80,6 +80,7 @@ Log Analysis
         agent/exclude_logs_from_agent.md
         agent/adding_tags.md
         agent/upgrade_logdna_agent_2.md
+        agent/upgrade_logdna_agent_3.md
 
     {: .topicgroup}
     Enhancing security
