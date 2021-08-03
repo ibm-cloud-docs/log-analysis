@@ -87,6 +87,8 @@ Depending on the tag that you use, you must factor in your DevOps maintenance pl
 - In a production environment, you can use the tag `X.Y.Z` so that auto-updates happen when a new vulnerability fix is released. 
 - For highly regulated environments, you should use the tag `X.Y.Z-<date>.[hash]`. Notice that you will have to check periodically for vulnerability fixes, patches, and minor version releases to keep the agent free of issues.
 
+The logging Aaent auto-updates happen when you restart the logging pod. It is your responsibility to restart the pods periodically in order for agent updates to occur within the scope specified by the tag.
+{: important}
 
 
 ### Stable and latest tags (deprecated)

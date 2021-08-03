@@ -176,6 +176,13 @@ Where `YOUR_FILE_NAME` is the name of the `yaml` file you used to deploy the old
 ## Step 6. Preparing the version 3 yaml file to run the agent as non-root
 {: #upgrade_log_analysis_agent_3_step6}
 
+When you deploy a logging agent version 3 by using the yaml that is provided, you configure the agent with the feature `stateful lookback` enabled. This feature helps avoid log loss or duplication of data when the agent restarts. Stateful lookback requires the logging agent to run as root.
+
+If you run in a secured environment or a highly regulated environment, the logging agent should run as non-root. To do this, you must edit the yaml you must edit the yaml file that is provided. Running as non-root requires additional configuration on the init container.
+
+Complete the following steps to modify the yaml so that the logging agent runs as non-root:
+
+
 1. Download the new version 3 `yaml` file.  Starting with version 3, `yaml` files are stored in a version-specific directory.  
 
     For Kubernetes clusters, get the `yaml` file from the following location: 
@@ -192,9 +199,9 @@ Where `YOUR_FILE_NAME` is the name of the `yaml` file you used to deploy the old
 
     Where
 
-    - `<REGION>` indicates the region where the logging instance is available. For more information about regions, see [Locations](/docs/log-analysis?topic=log-analysis-regions).
+    `<REGION>` indicates the region where the logging instance is available. For more information about regions, see [Locations](/docs/log-analysis?topic=log-analysis-regions).
 
-    - `<VERSION>` indicates the version of the agent that you want to deploy. For more information on versions, see [Getting information about Kubernetes logging agent images](/docs/log-analysis?topic=log-analysis-log-analysis_agent_image).
+    `<VERSION>` indicates the version of the agent that you want to deploy. For more information on versions, see [Getting information about Kubernetes logging agent images](/docs/log-analysis?topic=log-analysis-log-analysis_agent_image).
 
     For example:
 
