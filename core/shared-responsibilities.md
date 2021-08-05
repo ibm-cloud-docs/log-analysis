@@ -97,7 +97,7 @@ Review the following sections for the specific responsibilities for you and for 
 | `Backup logging agents`                                          | `N/A`  | Backup each logging agent YAML file that is deployed in your organization. |
 | `Recovery of logging agents`                                     | `N/A` | [Reinstall](/docs/log-analysis?topic=log-analysis-logdna_agent#logdna_agent_configure) the logging agent in the event of any disaster event that impacts the agent runtime. |
 | `Backup the metadata of a logging instance`                          | `N/A` | [Backup the metadata such as views, dashboards, screens, parsing templates, and alerts for each logging instance.](/docs/log-analysis?topic=log-analysis-reuse_resource_definitions#export_config_res) |
-| `Restore the metadata of a logging instance`                         | `N/A` | [Restore the metadata such as views, dashboards, screens, parsing templates, and alerts for each logging instance.](/docs/log-analysis?topic=log-analysis-reuse_resource_definitions#import_config) |
+| `Restore the metadata of a logging instance`                         | Backup metadata that is used by the service.  | [Restore the metadata such as views, dashboards, screens, parsing templates, and alerts for each logging instance.](/docs/log-analysis?topic=log-analysis-reuse_resource_definitions#import_config) |
 | `Backup of the data` | `N/A` | [Configure archiving to retain a backup copy of the data.](/docs/log-analysis?topic=log-analysis-archiving) |
 {: caption="Table 5. Responsibilities for disaster recovery" caption-side="top"}
 
