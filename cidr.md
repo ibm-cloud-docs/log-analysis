@@ -28,7 +28,6 @@ subcollection: log-analysis
 The following Classless Inter-Domain Routing (CIDR) blocks are available:
 {:shortdesc}
 
-
 ## Public CIDR blocks
 {: #cidr_public_gen2}
 
@@ -158,11 +157,22 @@ The following Classless Inter-Domain Routing (CIDR) blocks are available:
 {: caption="Table 10. Toronto public CIDR blocks" caption-side="top"}
 
 
+### Sao Paulo
+{: #cidr_public_gen2-11}
+
+| Region   | CIDR block |
+|----------|------------|
+| Brazil	   | 169.57.222.224/28  |
+| Brazil	   | 163.107.65.208/28  |
+| Brazil	   | 163.109.67.224/28  |
+{: caption="Table 11. Sao Paulo public CIDR blocks" caption-side="top"}
+
+
 ## Private CIDR blocks
 {: #cidr_private_gen2}
 
 ### US South
-{: #cidr_public_gen2-11}
+{: #cidr_private_gen2-12}
 
 | Region | CIDR block |
 |--------|------------|
@@ -175,10 +185,10 @@ The following Classless Inter-Domain Routing (CIDR) blocks are available:
 | US-South | 10.241.199.0/25 |
 | US-South | 10.37.88.0/24 |
 | US-South | 10.241.202.0/24 |
-{: caption="Table 11. US-South private CIDR blocks" caption-side="top"}
+{: caption="Table 12. US-South private CIDR blocks" caption-side="top"}
 
 ### US East
-{: #cidr_public_gen2-12}
+{: #cidr_private_gen2-13}
 
 | Region | CIDR block |
 |--------|------------|
@@ -188,10 +198,10 @@ The following Classless Inter-Domain Routing (CIDR) blocks are available:
 | US-East  | 10.188.240.192/26 |
 | US-East  | 10.183.242.128/25 |
 | US-East  | 10.189.123.128/25 |
-{: caption="Table 12. US-East private CIDR blocks" caption-side="top"}
+{: caption="Table 13. US-East private CIDR blocks" caption-side="top"}
 
 ### Frankfurt
-{: #cidr_public_gen2-13}
+{: #cidr_private_gen2-14}
 
 | Region | CIDR block |
 |--------|------------|
@@ -204,70 +214,82 @@ The following Classless Inter-Domain Routing (CIDR) blocks are available:
 | Frankfurt | 10.13.86.128/25 |
 | Frankfurt | 10.20.6.0/24 |
 | Frankfurt | 10.13.100.0/24 |
-{: caption="Table 13. Frankfurt private CIDR blocks" caption-side="top"}
+{: caption="Table 14. Frankfurt private CIDR blocks" caption-side="top"}
 
 ### Tokyo
-{: #cidr_public_gen2-14}
+{: #cidr_private_gen2-15}
 
 | Region | CIDR block |
 |--------|------------|
 | Tokyo	    | 10.129.65.128/26 |
 | Tokyo	    | 10.192.21.128/26 |
 | Tokyo	    | 10.193.77.192/26 |
-{: caption="Table 14. Tokyo private CIDR blocks" caption-side="top"}
+{: caption="Table 15. Tokyo private CIDR blocks" caption-side="top"}
 
 ### London
-{: #cidr_public_gen2-15}
+{: #cidr_private_gen2-16}
 
 | Region | CIDR block |
 |--------|------------|
 | London    | 10.72.11.64/26 |
 | London    | 10.196.134.64/26 |
 | London    | 10.222.46.128/26 |
-{: caption="Table 15. London private CIDR blocks" caption-side="top"}
+{: caption="Table 16. London private CIDR blocks" caption-side="top"}
 
 ### Sydney
-{: #cidr_public_gen2-16}
+{: #cidr_private_gen2-17}
 
 | Region | CIDR block |
 |--------|------------|
 | Sydney	  | 10.139.31.0/26 |
 | Sydney	  | 10.63.207.128/26 |
 | Sydney	  | 10.195.95.64/26 |
-{: caption="Table 16. Sydney private CIDR blocks" caption-side="top"}
+{: caption="Table 17. Sydney private CIDR blocks" caption-side="top"}
 
 ### Seoul
-{: #cidr_public_gen2-17}
+{: #cidr_private_gen2-18}
 
 | Region | CIDR block |
 |--------|------------|
 | Seoul	    | 10.178.139.64/26 |
-{: caption="Table 17. Seoul private CIDR blocks" caption-side="top"}
+{: caption="Table 18. Seoul private CIDR blocks" caption-side="top"}
 
 ### Chennai
-{: #cidr_public_gen2-18}
+{: #cidr_private_gen2-19}
 
 | Region | CIDR block |
 |--------|------------|
 | Chennai	  | 10.162.140.0/26 |
-{: caption="Table 18. Chennai private CIDR blocks" caption-side="top"}
+{: caption="Table 19. Chennai private CIDR blocks" caption-side="top"}
 
 ### Osaka
-{: #cidr_public_gen2-19}
+{: #cidr_private_gen2-20}
 
 | Region | CIDR block |
 |--------|------------|
 | Osaka	  | 10.10.8.64/26 |
 | Osaka	  | 10.9.15.128/26 |
 | Osaka	  | 10.8.30.64/26 |
-{: caption="Table 19. Osaka private CIDR blocks" caption-side="top"}
+{: caption="Table 20. Osaka private CIDR blocks" caption-side="top"}
 
 ### Toronto
-{: #cidr_public_gen2-20}
+{: #cidr_private_gen2-21}
 
 | Region | CIDR block |
 |--------|------------|
 | Toronto	  | 10.114.152.128/26 |
 | Toronto	  | 10.11.16.64/26 |
 | Toronto	  | 10.243.35.128/26 |
-{: caption="Table 20. Toronto private CIDR blocks" caption-side="top"}
+{: caption="Table 21. Toronto private CIDR blocks" caption-side="top"}
+
+### Sao Paulo
+{: #cidr_private_gen2-22}
+
+| Region   | CIDR block |
+|----------|------------|
+| Brazil	   | 10.150.186.192/26  |
+| Brazil	   | 10.14.9.64/26  |
+| Brazil	   | 10.15.20.192/26  |
+{: caption="Table 22. Sao Paulo private CIDR blocks" caption-side="top"}
+
+
