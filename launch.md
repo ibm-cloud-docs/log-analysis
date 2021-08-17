@@ -59,11 +59,11 @@ Complete the following steps to launch the web UI:
 
 2. Click the **Menu** icon ![Menu icon](../icons/icon_hamburger.svg) &gt; **Observability**. 
 
-3. Select **Logging**. 
+3. Click **Logging**. 
 
     The list of instances that are available on {{site.data.keyword.cloud_notm}} is displayed.
 
-4. Select one instance. Then, click **Open Dashboard**.
+4. Select one instance. Then, click **Open dashboard**.
 
 The Web UI opens.
 

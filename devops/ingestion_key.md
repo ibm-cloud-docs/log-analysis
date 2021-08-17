@@ -41,11 +41,11 @@ To get the ingestion key for an {{site.data.keyword.la_full_notm}} instance by u
 
 2. Go to the Menu icon ![Menu icon](../../icons/icon_hamburger.svg) &gt; **Observability**. 
 
-3. Select **Logging**. The {{site.data.keyword.la_full_notm}} dashboard opens. You can see the list of logging instances that are available on {{site.data.keyword.cloud_notm}}.
+3. Click **Logging**. The {{site.data.keyword.la_full_notm}} dashboard opens. You can see the list of logging instances that are available on {{site.data.keyword.cloud_notm}}.
 
 3. Identify the instance that you want to use to collect your cluster logs. 
 
-4. Select the actions icon. Then, click **View key**.
+4. Click the **Actions** icon ![Actions icon](../icons/action-menu-icon.svg) >  **View key**.
 
     A window opens where you can click **Show** to view the ingestion key.
 
@@ -57,7 +57,7 @@ To get the ingestion key for an {{site.data.keyword.la_full_notm}} instance by u
 
 1. [Launch the {{site.data.keyword.la_full_notm}} web UI](/docs/log-analysis?topic=log-analysis-view_logs#view_logs_step2).
 
-2. Click the **Configuration** icon ![Configuration icon](../images/admin.png) &gt; **Organization** &gt; **API keys**. 
+2. Click the **Settings** icon ![Settings icon](../images/admin.png) &gt; **Organization** &gt; **API keys**. 
 
     You can see the ingestion keys that are enabled. 
 
@@ -120,7 +120,7 @@ To renew the ingestion key for an {{site.data.keyword.la_full_notm}} instance by
 
 1. [Launch the {{site.data.keyword.la_full_notm}} web UI](/docs/log-analysis?topic=log-analysis-view_logs#view_logs_step2).
 
-2. Click the **Configuration** icon ![Configuration icon](../images/admin.png) &gt; **Organization**. 
+2. Click the **Settings** icon ![Settings icon](../images/admin.png) &gt; **Organization**. 
 
 3. Select **API keys**.
 
@@ -130,7 +130,7 @@ To renew the ingestion key for an {{site.data.keyword.la_full_notm}} instance by
 
     A new key is added to the list.
 
-5. Delete the old ingestion key. Click **delete**.
+5. Delete the old ingestion key. Click **X** next to the ingestion key to be deleted.
 
 After you reset the ingestion key, you must update the ingestion key for any log sources that you have configured to forward logs to this {{site.data.keyword.la_full_notm}} instance.
 {: important}

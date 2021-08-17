@@ -102,21 +102,14 @@ After you configure an alert on a view and receive a notification email, complet
 
 You can manage alerts through the **ALERTS** dashboard.
 
-1. Launch the **ALERTS** dashboard.
+1. In the web UI, select the **Settings** icon ![Settings icon](images/admin.png "Admin icon").
 
-    In the web UI, select the **Settings** icon ![Settings icon](images/admin.png "Admin icon").
-
-    Select **ALERTS**.
+2. Select **ALERTS**.
 
     You can see the list of alerts that are muted. Each entry informs about the view where notifications are muted, the user who requested the action, and the UTC time when notifications will be enabled. 
 
 2. Select an alert that you want to unmute.
 
 3. Click **Unmute**.
-
-
-
-
-
 
 

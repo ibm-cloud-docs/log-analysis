@@ -64,11 +64,11 @@ To launch the {{site.data.keyword.la_full_notm}}  UI through the {{site.data.key
 
 2. Click the **Menu** icon ![Menu icon](../../icons/icon_hamburger.svg) &gt; **Observability**. 
 
-3. Select **Logging**. 
+3. Click **Logging**. 
 
     The list of {{site.data.keyword.la_full_notm}} instances that are available on {{site.data.keyword.cloud_notm}} is displayed.
 
-4. Select one instance. Then, click **Open Dashboard**.
+4. Select one instance. Then, click **Open dashboard**.
 
 The {{site.data.keyword.la_full_notm}} web UI opens and displays logs forwarded to that instance.
 
@@ -80,7 +80,7 @@ In the **USER PREFERENCES** section, you can modify the order of the data fields
 
 Complete the following steps to modify the format of a log line:
 
-1. Select the **Configuration** icon ![Configuration icon](../images/admin.png "Configuration icon").
+1. Click the **Settings** icon ![Settings icon](../images/admin.png "Configuration icon").
 2. Select **USER PREFERENCES**. A new window opens.
 3. Select **Log Format**.
 4. Modify the *Line Format* section to match your requirements. Drag boxes.
@@ -94,7 +94,7 @@ At any time, you can view each log line in context.
 Complete the following steps: 
 
 1. Click the **Views** icon ![Views icon](../images/views.png "Views icon").
-2. Select **Everything** or a view.
+2. Select **EVERYTHING** or a view.
 3. Identify a line in the log that you want to explore.
 4. Expand the log line. 
 
@@ -114,19 +114,19 @@ You can filter logs by log source, application, and log level.
 
 * A source can be a host, a computer, a virtual machine, or a Heroku app.
 * An application represents a log file, a program, or a container.
-* Examples of log levels are: INFO, DEBUG, ERROR
+* Examples of log levels are: INFO, DEBUG, ERROR.
 
 Complete the following steps to filter logs:
 
 1. Click the **Views** icon ![Views icon](../images/views.png "Views icon").
-2. Select **Everything** or a view.
-3. Expand **All Tags** to see the list of tags that are identified in the logs. Then, choose the ones that you want.
-4. Expand **All Sources** to see the list of log sources that are identified in the logs. Then, choose the ones that you want.
-5. Expand **All Apps** to see the list of apps that are identified in the logs. Then, choose the ones that you want.
-6. Expand **All Levels** to see the list of log levels that are identified in the logs. Then, choose the ones that you want.
+2. Select **EVERYTHING** or a view.
+3. Expand **Tags** to see the list of tags that are identified in the logs. Then, choose the ones that you want.
+4. Expand **Sources** to see the list of log sources that are identified in the logs. Then, choose the ones that you want.
+5. Expand **Apps** to see the list of apps that are identified in the logs. Then, choose the ones that you want.
+6. Expand **Levels** to see the list of log levels that are identified in the logs. Then, choose the ones that you want.
 
-
-**Note:** In each section, you can group multiple options into a group. Group tags, log sources, apps, and log levels to reuse these groupings when you filter log data in other custom views.
+In each section, you can group multiple options into a group. Group tags, log sources, apps, and log levels to reuse these groupings when you filter log data in other custom views.
+{: note}
 
 To create a group, select multiple values. Then, click **Save as group**. Enter a name for the group, and save it.
 
@@ -149,8 +149,8 @@ You can do simple searches (single term string search), compound search (multipl
 Complete the following steps to create a view:
 
 1. Click the **Views** icon ![Views icon](../images/views.png "Views icon").
-2. Select **Everything** or a view.
-3. Filter log data then click **Save as new view / alert**.
+2. Select **EVERYTHING** or a view.
+3. Filter log data then click **Save as new view**.
 
     The *Create new view* page opens.
 

@@ -70,7 +70,7 @@ Complete the following steps to create a service key:
 
 1. [Launch the {{site.data.keyword.la_full_notm}} web UI](/docs/log-analysis?topic=log-analysis-launch).
 
-2. Select the **Configuration** icon ![Configuration icon](../images/admin.png). 
+2. Click the **Settings** icon ![Settings icon](../images/admin.png). 
 
 3. Select **Organization**. 
 
@@ -97,7 +97,7 @@ Complete the following steps to delete a service key:
 
 1. [Launch the {{site.data.keyword.la_full_notm}} web UI](/docs/log-analysis?topic=log-analysis-launch).
 
-2. Select the **Configuration** icon ![Configuration icon](../images/admin.png). 
+2. Click the **Settings** icon ![Settings icon](../images/admin.png). 
 
 3. Select **Organization**. 
 
@@ -120,7 +120,7 @@ Complete the following steps to view a service key:
 
 1. [Launch the {{site.data.keyword.la_full_notm}} web UI](/docs/log-analysis?topic=log-analysis-launch).
 
-2. Select the **Configuration** icon ![Configuration icon](../images/admin.png). 
+2. Click the **Settings** icon ![Settings icon](../images/admin.png). 
 
 3. Select **Organization**. 
 

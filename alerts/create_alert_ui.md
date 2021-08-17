@@ -71,17 +71,17 @@ Complete the following steps to create a rule:
 
     Complete the following steps to filter logs:
 
-    Click the **Views** icon ![Views icon](../images/views.png "Views icon").
+    1. Click the **Views** icon ![Views icon](../images/views.png "Views icon").
 
-    Select **Everything** or a view.
+    2. Select **EVERYTHING** or a view.
 
-    Expand **All Tags** to see the list of tags that are identified in the logs. Then, choose the ones that you want.
+    3. Expand **Tags** to see the list of tags that are identified in the logs. Then, choose the ones that you want.
 
-    Expand **All Sources** to see the list of log sources that are identified in the logs. Then, choose the ones that you want.
+    4. Expand **Sources** to see the list of log sources that are identified in the logs. Then, choose the ones that you want.
 
-    Expand **All Apps** to see the list of apps that are identified in the logs. Then, choose the ones that you want.
+    5. Expand **Apps** to see the list of apps that are identified in the logs. Then, choose the ones that you want.
 
-    Expand **All Levels** to see the list of log levels that are identified in the logs. Then, choose the ones that you want.
+    6. Expand **Levels** to see the list of log levels that are identified in the logs. Then, choose the ones that you want.
 
     In each section, you can group multiple options into a group. Group tags, log sources, apps, and log levels to reuse these groupings when you filter log data in other custom views. To create a group, select multiple values. Then, click **Save as group**. Enter a name for the group, and save it.
 
@@ -95,17 +95,17 @@ Complete the following steps to create a rule:
 
 4. Create a view.
 
-    Click the **Views** icon ![Views icon](../images/views.png "Views icon").
+    1. Click the **Views** icon ![Views icon](../images/views.png "Views icon").
 
-    Select **Everything** or a view.
+    2. Select **EVERYTHING** or a view.
 
-    Filter log data then click **Save as new view / alert**. The *Create new view* page opens.
+    3. Filter log data then click **Save as new view**. The *Create new view* page opens.
 
-    Enter a name for the view in the *Name* field.
+    4. Enter a name for the view in the *Name* field.
 
-    Optionally, add a category. Enter a name and then click **Add this as new view category**.
+    5. Optionally, add a category. Enter a name and then click **Add this as new view category**.
 
-    Click **Save View**
+    6. Click **Save View**
 
 
 ## Step 2. Create the alert
@@ -154,13 +154,13 @@ Complete the following steps to attach an alert to a view:
    
    Optionally you can specify a **Custom schedule** with alerting limited to a specified timezone, days of the week, or timeframe. To configure a **Custom schedule**:
       
-       Select **on** for **Custom schedule**.
+    1. Select **on** for **Custom schedule**.
 
-       Select the Timezone for the log entries. 
+    2. Select the Timezone for the log entries. 
 
-       Select the days of the week when alerts should be generated.
+    3. Select the days of the week when alerts should be generated.
 
-       Optionally specify a time range for the selected days. A graph will help you determine the number of log entries for the timezone and time range.
+    4. Optionally specify a time range for the selected days. A graph will help you determine the number of log entries for the timezone and time range.
        
 6. Depending on the type of alert you will also need to configure additional settings:
 

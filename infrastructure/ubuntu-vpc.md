@@ -90,7 +90,7 @@ To provision an instance of {{site.data.keyword.la_full_notm}} through the {{sit
 
 2. Click **Catalog**. The list of the services that are available in {{site.data.keyword.cloud_notm}} opens.
 
-3. To filter the list of services that is displayed, click **Services** and select the **Logging and Monitoring** category.
+3. Select the **Logging and Monitoring** category.
 
 4. Click the **{{site.data.keyword.la_full_notm}}** tile.
 
@@ -217,11 +217,11 @@ To launch the {{site.data.keyword.la_full_notm}} dashboard from the {{site.data.
 
 2. In the navigation menu, select **Observability**. 
 
-3. Select **Logging**. 
+3. Click **Logging**. 
 
    The list of {{site.data.keyword.la_full_notm}} instances that are available on {{site.data.keyword.cloud_notm}} is displayed.
 
-4. Select one instance. Then, click **Open Dashboard**.
+4. Select one instance. Then, click **Open dashboard**.
 
    The logging Web UI opens and displays your cluster logs.
 

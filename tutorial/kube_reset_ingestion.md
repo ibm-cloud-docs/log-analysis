@@ -15,11 +15,9 @@ completion-time: 1h
 
 ---
 
-
 {:shortdesc: .shortdesc}
 {:screen: .screen}
 {:pre: .pre}
-{:table: .aria-labeledby="caption"}
 {:codeblock: .codeblock}
 {:tip: .tip}
 {:important: .important}
@@ -29,7 +27,7 @@ completion-time: 1h
 
 
 # Resetting the ingestion key that is used by a Kubernetes cluster
-{: #kube_reset}
+{: #kube-reset}
 {: toc-content-type="tutorial"}
 {: toc-services-"containers,log-analysis"} 
 {: toc-completion-time="1h"} 
@@ -70,17 +68,19 @@ To renew the ingestion key for an {{site.data.keyword.la_full_notm}} instance by
 
 1. [Launch the {{site.data.keyword.la_full_notm}} web UI](/docs/log-analysis?topic=log-analysis-view_logs#view_logs_step2).
 
-2. Select the **Configuration** icon. Then select **Organization**. 
+2. Click the **Settings** icon ![Settings icon](../images/admin.png).  
 
-3. Select **API keys**.
+3. Select **Organization**. 
+
+4. Select **API keys**.
 
     You can see the ingestion keys that have been created. 
 
-4. Select **Generate Ingestion Key**.
+5. Select **Generate Ingestion Key**.
 
     A new key is added to the list.
 
-5. Delete the old ingestion key. Click **delete**.
+6. Delete the old ingestion key. Click the **X** next to the ingestion key to be deleted.
 
 
 ## Step 2: Remove any configuration in the cluster that uses the old ingestion key
@@ -199,11 +199,11 @@ Complete the following steps to launch the web UI:
 
 2. Click the **Menu** icon ![Menu icon](../../icons/icon_hamburger.svg) &gt; **Observability** to launch the Observability dashboard. 
 
-3. Select **Logging**. 
+3. Click **Logging**. 
 
     The list of {{site.data.keyword.la_full_notm}} instances that are available on {{site.data.keyword.cloud_notm}} is displayed.
 
-3. Select one instance. Then, click **View logs**.
+3. Select one instance. Then, click **Open dashboard**.
 
     The logging web UI opens and displays your cluster logs.
 

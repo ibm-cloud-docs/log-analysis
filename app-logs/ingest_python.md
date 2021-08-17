@@ -50,7 +50,7 @@ Complete the following steps to get the ingestion key:
     
 1. [Launch the {{site.data.keyword.la_full_notm}} web UI](/docs/log-analysis?topic=log-analysis-view_logs#view_logs_step2).
 
-2. Click the **Configuration** icon ![Configuration icon](images/admin.png) &gt; **Organization**. 
+2. Click the **Settings** icon ![Settings icon](../images/admin.png) &gt; **Organization**. 
 
 3. Select **API keys**.
 

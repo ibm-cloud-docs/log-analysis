@@ -67,9 +67,9 @@ application and system logs.
 
 3. Click the **Menu** icon ![Menu icon](../../icons/icon_hamburger.svg) &gt; **Observability**. 
 
-4. Select **Logging**.
+4. Click **Logging**.
 
-5. For your instance, click **Open Dashboard**. The logging web UI will be displayed.
+5. For your instance, click **Open dashboard**. The logging web UI will be displayed.
 
 
 ## Create a custom view
@@ -94,7 +94,7 @@ This tutorial will show you how to create a view that shows only a specific log.
 
    ![Unsaved view](../images/unsaved.png "Heading showing changed to Unsaved View")
 
-5. Click **Unsaved View** > **Save as new view / alert**.
+5. Click **Unsaved View** > **Save as new view**.
 
 6. Enter a **Name** for your view.  Optionally, you can select a **Category** and **Alert** value.  Click **Save View**.
 
@@ -122,7 +122,6 @@ These configuration changes will affect all defined views.
    Change the log viewer text size by using the slider.
 
    To add items to the log view, drag the available items and add them in your desired order to the view.
-
 
 6. Click **Done** to save your changes.  To cancel without making changes, press **Esc**.
 
@@ -269,15 +268,15 @@ You might want to view a log line in context.
 
 3. Select a log view. You might want to use the [custom view you created](#LA-create-custom-view).
 
-4. Identify a log line you want to explore and open the log entry by clicking the down arrow. 
+4. Identify a log line you want to explore.
 
-   ![open the log entry](../images/loglinedropdown.png "Open log entry").  
+5. Open the log entry by clicking the down arrow. Information about line identifiers, tags, and labels is displayed.
+
+   ![Log entry dropdown](../images/loglinedropdown.png "Log entry dropdown").    
    
-   Information about line identifiers, tags, and labels is displayed.
+6. Click ![**View in context**](../images/viewincontext.png "View in context"). The log line is displayed in context of other log lines from that host, app, or both. This information is helpful when troubleshooting a problem.
 
-5. Click ![View in context](../images/viewincontext.png "View in context"). The log line will be displayed in context of other log lines from that host, app, or both. This information is helpful when troubleshooting a problem.
-
-6. Explore the selected log line by using the following options.
+7. Explore the selected log line by using the following options.
 
    **By Everything** displays the log line in context of all log records that are available in the {{site.data.keyword.la_full_notm}} instance.
 
@@ -287,7 +286,7 @@ You might want to view a log line in context.
 
    **By Source & App** displays the log line in the combined context of the app and source.
    
-7. Click **Continue in New Viewer** to open the view as a new **Unsaved View**. Keeping multiple views can help troubleshoot problems. 
+8. Click **Continue in New Viewer** to open the view as a new **Unsaved View**. Keeping multiple views can help troubleshoot problems. 
 
 ## Filtering to a specific timeframe
 {: #LA-timeframe}
@@ -332,21 +331,25 @@ The following will help you create a dashboard.
 
 5. Select *app* For **Field**.
 
-6. Select *ALL* for **Field Value**. A trend line showing the count of app log events is listed.  
+6. Select *ANY* for **Field Value**. 
 
-7. Click the graph line and click **Show logs** to see the log at point in time. 
+7. Click **Add Graph**.  A trend line showing the count of app log events is listed.  
 
-8. Open the subplot view ![Open the subplot view](../images/opensubplot.png). Select *Histogram* for **Choose breakdown type** and *host* for **SYSTEM FIELD**. and click **Add Breakdown**.  A histogram of the data by *host* is added to the dashboard.
+8. Click the graph line and click **Show logs** to see the log at point in time. 
 
-9. Click **Add** and add an additional histogram and specify *verb* for **SYSTEM FIELD**.
+9. Open the subplot view ![Open the subplot view](../images/opensubplot.png) and select *Histogram* for **Choose breakdown type** and *host* for **SYSTEM FIELD**. 
 
-10. Try adding additional plots by clicking **Add Plot**.
+10. Click **Add Breakdown**.  A histogram of the data by *host* is added to the dashboard.
 
-11. Multiple plot lines can be hidden or displayed on the graph. Select your plot and click **Show** to show the line or **Hide** to hide it.
+11. Click **Add** and add an additional histogram and specify *verb* for **SYSTEM FIELD**.
 
-12. Click the **Filter** icon ![Filter icon](../images/filter.png "Filter icon") to filter the graph by a specific field's data. For example, `host:myhost`.
+12. Try adding additional plots by clicking **Add Plot**.
 
-13. Click the **Pencil** icon ![Pencil icon](../images/pencil.png "Pencil icon") and enter a name for your dashboard. Specify a **Category** if desired and click **Save**.  
+13. Multiple plot lines can be hidden or displayed on the graph. Select your plot and click **Show** to show the line or **Hide** to hide it.
+
+14. Click the **Filter** icon ![Filter icon](../images/filter.png "Filter icon") to filter the graph by a specific field's data. For example, `host:myhost`.
+
+15. Click the **Pencil** icon ![Pencil icon](../images/pencil.png "Pencil icon") and enter a name for your dashboard. Specify a **Category** if desired and click **Save**.  
 
    If you don't specify a **Category** your dashboard will be listed under **UNCATEGORIZED**. If you are editing an existing dashboard, changes will be saved when exiting the dashboard without having to click **Save**.
    {: note}
