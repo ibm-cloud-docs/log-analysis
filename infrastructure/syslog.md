@@ -65,7 +65,7 @@ To provision a service instance of {{site.data.keyword.la_full_notm}} through th
 
     2. Select **Via Syslog** &gt; **Syslog**.
 
-    3. Click **Provision a Port**.  
+    3. Follow the provided instructions.
 
     A syslog URL for TCP streams and a URL for UDP streams is provisioned for the instance.
 

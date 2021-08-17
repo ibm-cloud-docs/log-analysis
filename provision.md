@@ -42,9 +42,9 @@ To provision an instance from the Observability dashboard in the {{site.data.key
 
 	After you log in, the {{site.data.keyword.cloud_notm}} UI opens.
 
-2. Go to the **Menu** icon ![Menu icon](../icons/icon_hamburger.svg) &gt; **Observability** to access the *Observability* dashboard.
+2. Click the **Menu** icon ![Menu icon](../icons/icon_hamburger.svg) &gt; **Observability** to access the *Observability* dashboard.
 
-3. Select **Logging**, then click **Create instance**. 
+3. Click **Logging**, then click **Options** > **Create**. 
 
 4. Enter a name for the service instance.
 

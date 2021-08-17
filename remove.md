@@ -54,11 +54,11 @@ To remove an instance of {{site.data.keyword.la_full_notm}} by using the {{site.
 
 2. Go to the menu icon ![menu icon](../icons/icon_hamburger.svg) &gt; **Observability** to access the *Observability* Dashboard.
 
-3. Select **Logging**. The list of logging instances is displayed.
+3. Click **Logging**. The list of logging instances is displayed.
 
-4. Select the instance that you want to delete.
+4. Click the **Actions** icon ![Actions icon](../icons/action-menu-icon.svg) next to the instance that you want to delete.  
 
-5. From the *Action* menu, select **Remove**.
+5. Click **Delete**.
 
 
 ## Removing an instance through the CLI

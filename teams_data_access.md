@@ -68,13 +68,13 @@ Complete the following steps to define the default settings for viewing data:
 
 2. Select your account.
 
-3. Click the **Menu** icon ![Menu icon](/image/icon_hamburger.svg) &gt; **Observability**. 
+3. Click the **Menu** icon ![Menu icon](/images/icon_hamburger.svg) &gt; **Observability**. 
 
-4. Select **Logging**.
+4. Click **Logging**.
 
 5. For your instance, click **Open dashboard**. The UI will be displayed.
 
-6. Click ![**Settings**](/images/config.png "Settings icon") **TEAM** &gt; **Settings**.
+6. Click the Settings icon ![**Settings icon**](/images/config.png "Settings icon") &gt;  **TEAM** &gt; **Settings**.
 
 7. Set **Access Control** to your desired default setting:
 
@@ -99,11 +99,11 @@ You can edit a group to change the access scope as needed.
 
 2. Select your account.
 
-3. Click the **Menu** icon ![Menu icon](/image/icon_hamburger.svg) &gt; **Observability**. 
+3. Click the **Menu** icon ![Menu icon](/images/icon_hamburger.svg) &gt; **Observability**. 
 
-4. Select **Log Analysis**.
+4. Select **Logging**.
 
-5. For your instance, click **Open Dashboard**. The UI will be displayed.
+5. For your instance, click **Open dashboard**. The UI will be displayed.
 
 6. Click ![**Settings**](/images/config.png "Settings icon") &gt; **TEAM** &gt; **Groups**.
 
@@ -149,11 +149,11 @@ Complete the following steps to edit or delete a service group:
 
 2. Select your account.
 
-3. Click the **Menu** icon ![Menu icon](/image/icon_hamburger.svg) &gt; **Observability**. 
+3. Click the **Menu** icon ![Menu icon](/images/icon_hamburger.svg) &gt; **Observability**. 
 
-4. Select **Logging**.
+4. Click **Logging**.
 
-5. For your instance, click **Open Dashboard**. The UI will be displayed.
+5. For your instance, click **Open dashboard**. The UI will be displayed.
 
 6. Click ![**Settings**](/images/config.png "Settings icon") &gt; **TEAM** &gt; **Groups**.
 

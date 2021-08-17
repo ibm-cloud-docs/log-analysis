@@ -32,7 +32,7 @@ Complete the following steps to define an exclusion rule:
 
 1. [Launch the {{site.data.keyword.la_full_notm}} web UI](/docs/log-analysis?topic=log-analysis-view_logs#view_logs_step2).
 
-2. Select the **Settings** icon ![Configuration icon](../images/admin.png "Configuration icon"). Then select **Usage** &gt; **Exclusion Rules**. 
+2. Click the **Settings** icon ![Configuration icon](../images/admin.png "Configuration icon"). Then select **Usage** &gt; **Exclusion Rules**. 
 
 3. Select **Add Rule**. The **Create Rule** section opens.
 
@@ -64,7 +64,7 @@ Prereq: You must have a cluster configured to forward logs to a logging instance
 
 1. [Launch the {{site.data.keyword.la_full_notm}} web UI](/docs/log-analysis?topic=log-analysis-view_logs#view_logs_step2).
 
-2. Select the **Settings** icon ![Configuration icon](../images/admin.png "Configuration icon"). Then select **Usage** &gt; **Exclusion Rules**. 
+2. Click the **Settings** icon ![Configuration icon](../images/admin.png "Configuration icon"). Then select **Usage** &gt; **Exclusion Rules**. 
 
 3. Select **Add Rule**. The **Create Rule** section opens.
 
@@ -96,7 +96,7 @@ Prereq: You must have a cluster configured to forward logs to a logging instance
 
 1. [Launch the {{site.data.keyword.la_full_notm}} web UI](/docs/log-analysis?topic=log-analysis-view_logs#view_logs_step2).
 
-2. Select the **Settings** icon ![Configuration icon](../images/admin.png "Configuration icon"). Then select **Usage** &gt; **Exclusion Rules**. 
+2. Click the **Settings** icon ![Configuration icon](../images/admin.png "Configuration icon"). Then select **Usage** &gt; **Exclusion Rules**. 
 
 3. Select **Add Rule**. The **Create Rule** section opens.
 

@@ -55,17 +55,17 @@ To configure a logging instance from the Observability dashboard in the {{site.d
 
 2. Go to the menu icon ![menu icon](../../icons/icon_hamburger.svg) &gt; **Observability** to access the *Observability* dashboard.
 
-3. Select **Logging**, then click **Configure platform logs**. 
+3. Click **Logging**, then click **Options** > **Edit Platform**. 
 
 4. Select a [region](/docs/log-analysis?topic=log-analysis-regions). 
 
 5. Choose which logging instance will receive logs from enabled services on that location. [Learn more about the services that are enabled to send logs to {{site.data.keyword.la_full_notm}}.](/docs/log-analysis?topic=log-analysis-cloud_services)
 
-6. Click **Save**. 
+6. Click **Select**. 
 
 The main *Observability* page opens.
 
-The instance that you choose to receive service logs shows the flag **Platform logs**.
+<!-- The instance that you choose to receive service logs shows the flag **Platform logs**. -->
 
 
 

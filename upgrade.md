@@ -41,13 +41,15 @@ To change the service plan of an instance from the Observability dashboard in th
 
 2. Go to the menu icon ![menu icon](images/icon_hamburger.svg) and select **Observability** to access the *Observability* dashboard.
 
-3. Select **Logging**.
+3. Click **Logging**.
 
-4. Select the instance. Then, select **Edit plan**. 
+4. Click the **Actions** icon ![Actions icon](../icons/action-menu-icon.svg) next to the instance you want to change. 
 
-5. Select a service plan. 
+5. Click **Edit plan**. 
 
-6. Click **Save**.
+6. Select a service plan. 
+
+7. Click **Save**.
 
 
 

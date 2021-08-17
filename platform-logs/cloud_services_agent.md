@@ -64,7 +64,7 @@ To see the list of {{site.data.keyword.la_full_notm}} locations where you can se
 ## Cloud Foundry
 {: #cloud_services_agent_cfapps}
 
-You can configure a CF app to forward logs to a custom logging instance by using Syslog drains. [Learn more](/docs/log-analysis?topic=log-analysis-monitor_cfapp_logs#monitor_cfapp_logs_drains).
+You can configure a Cloud Foundry app to forward logs to a custom logging instance by using Syslog drains. [Learn more](/docs/log-analysis?topic=log-analysis-monitor_cfapp_logs#monitor_cfapp_logs_drains).
 
 
 

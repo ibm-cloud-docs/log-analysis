@@ -36,7 +36,7 @@ You can use {{site.data.keyword.la_full_notm}} to manage system and application 
 {{site.data.keyword.la_full_notm}} provides the following features.
 
 ### Troubleshooting logs in real time to diagnose issues and identify problems
-{: #getting-started_feature-1}
+{: #getting-started_features-1}
 
 By using the *live streaming tail* feature, developers and DevOps teams can diagnose issues, analyze stack traces and exceptions, identify the source of errors, and monitor different log sources through a single view. 
 
@@ -103,7 +103,7 @@ Choose a log resource. Then, complete the get started section:
 | {{site.data.keyword.cloud_notm}} service | [Configuring {{site.data.keyword.cloud_notm}} platform logs](/docs/log-analysis?topic=log-analysis-config_svc_logs) |
 | Standard Kubernetes cluster | [Collecting and analyzing logs from a Kubernetes cluster](/docs/log-analysis?topic=log-analysis-kube#kube) |
 | Linux Ubuntu | [Collecting and analyzing logs from a Linux environment](/docs/log-analysis?topic=log-analysis-ubuntu#ubuntu) |
-| Cloud Foundry `[1]` | [Collecting and analyzing logs from CF resources](/docs/log-analysis?topic=log-analysis-monitor_cfapp_logs) |
+| Cloud Foundry `[1]` | [Collecting and analyzing logs from Cloud Foundry  resources](/docs/log-analysis?topic=log-analysis-monitor_cfapp_logs) |
 {: caption="Table 1. Tutorials to get started working with the {{site.data.keyword.la_full_notm}} service" caption-side="top"}
 
 `[1]` If your Cloud Foundry resources run on {{site.data.keyword.cloud_notm}} public, you can choose to automatically collect these logs and monitor them through the {{site.data.keyword.la_full_notm}} instance that is provisioned in the same region, and that is enabled to host platform logs. Alternatively, you can choose to configure a custom user provided (CUPS) service for your app, so system and application logs are collected and streamed to a custom logging instance.

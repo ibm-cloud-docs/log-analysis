@@ -79,7 +79,7 @@ Complete the following steps to delete a preset from the **ALERTS** dashboard:
 
 1. In the web UI, select the **Settings** icon ![Settings icon](images/admin.png "Settings icon").
 2. Select **ALERTS**.
-3. Hover the mouse over the **Edit**** button of the preset that you want to delete. The **Delete** option displays.
+3. Hover the mouse over the **Edit** button of the preset that you want to delete. The **Delete** option displays.
 4. Click **Delete**.
 5. Confirm that you want to delete the preset by clicking **Yes, delete**.
 

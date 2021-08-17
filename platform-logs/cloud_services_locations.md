@@ -29,7 +29,6 @@ subcollection: log-analysis
 List of locations where {{site.data.keyword.cloud_notm}} services are enabled to send logs to {{site.data.keyword.la_full_notm}}. You monitor these logs that you monitor through the {{site.data.keyword.la_short}} instance that is configured to receive platform services logs. [Learn more about enabling service platform logs](/docs/log-analysis?topic=log-analysis-config_svc_logs).
 {:shortdesc}
 
-
 ## Cloud Foundry
 {: #cs_locations_platform_cfapps}
 
@@ -100,6 +99,8 @@ The following table shows the locations where automatic collection of Cloud Foun
 {: tab-group="cs_comp"}
 {: class="simple-tab-table"}
 {: row-headers}
+
+
 
 ## Container services
 {: #cs_locations_container}
@@ -300,7 +301,7 @@ The following tables list the locations where automatic collection of security s
 | Service                                                         | `Dallas (us-south)` | `Washington (us-east)`                   |
 |-----------------------------------------------------------------|---------------------|--------------------------------------|
 | {{site.data.keyword.cloudcerts_full_notm}}                      | ![Checkmark icon](../images/checkmark-icon.svg)   |                                 |   
-| {{site.data.keyword.secrets-manager_full}}  | ![Checkmark icon](../images/checkmark-icon.svg)  | ![Checkmark icon](../images/checkmark-icon.svg) |         
+| {{site.data.keyword.secrets-manager_full}}  | ![Checkmark icon](../images/checkmark-icon.svg) |         
 {: caption="Table 7. Security services" caption-side="top"}
 {: #cs-sec-table-16}
 {: tab-title="America"}
@@ -339,8 +340,8 @@ The following tables list the locations where automatic collection of security s
 
 | Service                                                         | `Dallas (us-south)` | `Washington (us-east)`                   |
 |-----------------------------------------------------------------|---------------------|--------------------------------------|
-| {{site.data.keyword.iva_full_notm}}                                  | ![Checkmark icon](../images/checkmark-icon.svg)             | `Logs are available through the Log Analysis Dallas instance` |  
-{: caption="Table 9. Watson AI in America's locations" caption-side="top"}
+| {{site.data.keyword.iva_full_notm}}                                  | ![Checkmark icon](../images/checkmark-icon.svg)             | `Logs are available through the Log Analysis Dallas instance` |
+{: caption="Table 8. Watson AI in America's locations" caption-side="top"}
 {: #cs-wat-table-22}
 {: tab-title="America"}
 {: tab-group="cs_sec"}
@@ -350,7 +351,7 @@ The following tables list the locations where automatic collection of security s
 | Service                                                         | `Tokyo (jp-tok)` |`Sydney (au-syd)`           |
 |-----------------------------------------------------------------|----------------|---------------------------|
 | {{site.data.keyword.iva_full_notm}}                                                |            |   |
-{: caption="Table 9. Watson AI in AP locations" caption-side="top"}
+{: caption="Table 8. Watson AI in AP locations" caption-side="top"}
 {: #cs-wat-table-23}
 {: tab-title="Asia Pacific"}
 {: tab-group="cs_sec"}
@@ -360,7 +361,7 @@ The following tables list the locations where automatic collection of security s
 | Service                                                       |`Frankfurt (eu-de)`  | `London (eu-gb)` |
 |---------------------------------------------------------------|-------------------|----------------|
 | {{site.data.keyword.iva_full_notm}}                           |  |    |
-{: caption="Table 9. Watson AI in Europe locations" caption-side="top"}
+{: caption="Table 8. Watson AI in Europe locations" caption-side="top"}
 {: #cs-wat-table-24}
 {: tab-title="Europe"}
 {: tab-group="cs_sec"}

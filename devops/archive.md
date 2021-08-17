@@ -358,11 +358,13 @@ Complete the following steps to configure archiving of your {{site.data.keyword.
 
 1. [Launch the {{site.data.keyword.la_full_notm}} web UI](/docs/log-analysis?topic=log-analysis-view_logs#view_logs_step2).
 
-2. Select the **Settings** icon ![Configuration icon](../images/admin.png "Admin icon"). Then select **Archiving**. 
+2. Click the **Settings** icon ![Configuration icon](../images/admin.png "Admin icon"). Then select **Archiving**. 
 
-3. Select **IBM Cloud Object Storage**.
+3. Make sure **Enable Archiving** is on.
 
-4. Set the bucket, endpoint, API key, and instance ID where you want logs to be archived.
+4. Select **IBM Cloud Object Storage** as the **Provider**.
+
+5. Set the bucket, endpoint, API key, and instance ID where you want logs to be archived.
 
     <table>
       <caption>Table 3. COS fields</caption>
@@ -388,7 +390,7 @@ Complete the following steps to configure archiving of your {{site.data.keyword.
       </tr>
     </table>
 
-5. Click **Save**.
+6. Click **Save**.
 
 
 After you save the configuration, logs are archived once a day.

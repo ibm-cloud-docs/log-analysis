@@ -67,7 +67,7 @@ Complete the following steps to configure an alert that informs you when you rea
 
 1. [Launch the {{site.data.keyword.la_full_notm}} web UI](/docs/log-analysis?topic=log-analysis-view_logs#view_logs_step2).
 
-2. Select the **Settings** icon ![Configuration icon](../images/admin.png "Admin icon"). Then select **Usage**.
+2. Click the **Settings** icon ![Configuration icon](../images/admin.png "Admin icon"). Then select **Usage**.
 
     In the **Dashboard** section, you can see your data usage.
 
