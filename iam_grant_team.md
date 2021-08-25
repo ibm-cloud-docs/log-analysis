@@ -168,7 +168,9 @@ Complete the following steps to assign a policy to an access group through the U
 
 7. Select the **viewer** platform role.
 
-8. Click **Assign**.
+8. Click **Add**.
+
+9. Click **Assign**.
 
 
 
@@ -285,7 +287,9 @@ Complete the following steps to assign a policy to an access group through the U
 
     [Learn more about the roles that you need](/docs/log-analysis?topic=log-analysis-iam).
 
-8. Click **Assign**.
+8. Click **Add**.
+
+9. Click **Assign**.
 
 
 
