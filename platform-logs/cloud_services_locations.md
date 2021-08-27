@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2021
-lastupdated: "2021-06-09"
+lastupdated: "2021-08-27"
 
 keywords: IBM, Log Analysis, logging, services
 
@@ -113,9 +113,9 @@ You can monitor {{site.data.keyword.satellitelong}} service logs through the log
 
 {{site.data.keyword.registrylong_notm}} generates platform services logs that are displayed in your logging instances. The following table lists the locations where the automatic collection of {{site.data.keyword.registryshort_notm}} service logs is enabled. For more information, see [Analyzing logs for {{site.data.keyword.registrylong_notm}}](/docs/Registry?topic=Registry-registry_logs).
 
-| Service                  |  `Dallas (us-south)` |  `Toronto (ca-tor)` | `Washington (us-east)` |
-|--------------------------|----------------------|---------------------|------------------------|
-| {{site.data.keyword.registrylong_notm}} `[*]` | ![Checkmark icon](../images/checkmark-icon.svg)  | ![Checkmark icon](../images/checkmark-icon.svg)  |    |
+| Service                  |  `Dallas (us-south)` | `Sao Paulo (br-sao)` | `Toronto (ca-tor)` | `Washington (us-east)` |
+|--------------------------|----------------------|----------------------|--------------------|------------------------|
+| {{site.data.keyword.registrylong_notm}} `[*]` | ![Checkmark icon](../images/checkmark-icon.svg) | ![Checkmark icon](../images/checkmark-icon.svg) | ![Checkmark icon](../images/checkmark-icon.svg) |  |
 {: caption="Table 3. Container services" caption-side="top"}
 {: #cs-con-table-1}
 {: tab-title="America"}
@@ -124,8 +124,8 @@ You can monitor {{site.data.keyword.satellitelong}} service logs through the log
 {: row-headers}
 
 | Service                                     | `Osaka (jp-osa)` | `Sydney (au-syd)`  |  `Tokyo (jp-tok)` |
-|---------------------------------------------|----------------|---------------------------|--------------------------|
-| {{site.data.keyword.registrylong_notm}} `[*]`   |  ![Checkmark icon](../images/checkmark-icon.svg)  | `Logs are available through the Log Analysis Tokyo (jp-tok) instance.` | ![Checkmark icon](../images/checkmark-icon.svg)  |
+|---------------------------------------------|------------------|--------------------|-------------------|
+| {{site.data.keyword.registrylong_notm}} `[*]` | ![Checkmark icon](../images/checkmark-icon.svg) | `Logs are available through the Log Analysis Tokyo (jp-tok) instance.` | ![Checkmark icon](../images/checkmark-icon.svg) |
 {: caption="Table 3. Container services" caption-side="top"}
 {: #cs-con-table-2}
 {: tab-title="Asia Pacific"}
@@ -134,8 +134,8 @@ You can monitor {{site.data.keyword.satellitelong}} service logs through the log
 {: row-headers}
 
 | Service                                        |`Frankfurt (eu-de)`  | `London (eu-gb)` |
-|------------------------------------------------|-------------------|----------------|
-| {{site.data.keyword.registrylong_notm}} `[*]`  |  ![Checkmark icon](../images/checkmark-icon.svg)  | ![Checkmark icon](../images/checkmark-icon.svg) |
+|------------------------------------------------|---------------------|------------------|
+| {{site.data.keyword.registrylong_notm}} `[*]` | ![Checkmark icon](../images/checkmark-icon.svg) | ![Checkmark icon](../images/checkmark-icon.svg) |
 {: caption="Table 3. Container services" caption-side="top"}
 {: #cs-con-table-3}
 {: tab-title="Europe"}
