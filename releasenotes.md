@@ -20,6 +20,11 @@ Use these release notes to learn about the latest updates to {{site.data.keyword
 {:shortdesc}
 
 ## July 2021
+{: #AT-august2021-for-update}
+
+- Streaming data from an {{site.data.keyword.la_full_notm}} instance to other corporate tools such as Security Information and Event Management (SIEM) tools is generally available. [Learn more about streaming](/docs/log-analysis?topic=log-analysis-streaming).
+
+## July 2021
 {: #AT-july2021-for-update}
 
 - New beta feature released in US-South and Frankfurt to stream data from an {{site.data.keyword.la_full_notm}} instance to other corporate tools such as Security Information and Event Management (SIEM) tools. [Learn more about streaming](/docs/log-analysis?topic=log-analysis-streaming).
