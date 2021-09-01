@@ -81,7 +81,7 @@ The following table outlines the tagging convention adopted and the agent update
 | `X.Y.Z-<date>.[hash]` | NO | The logging agent never updates. If you use this tag, make sure you are watching for new agent releases that have vulnerability fixes. |
 {: caption="Table 1. logging agent tags explained" caption-side="top"}
 
-Depending on the tag that you use, you must factor in your DevOps maintenance plan upgrades to the logging agent image to resolve vulnerabilities, agent enhancements and agent bug fixes. For example:
+Depending on the tag that you use, you must consider upgrading the logging agent image in your DevOps maintenance plan, to resolve vulnerabilities and apply agent enhancements and agent bug fixes. For example:
 - In a development environment, you can use a tag `X` and let auto-updates happen as new minor versions are released. 
 - In a staging environment, you migth consider using a tag `X.Y` so auto-updates happen when a new patch is released. 
 - In a production environment, you can use the tag `X.Y.Z` so that auto-updates happen when a new vulnerability fix is released. 
