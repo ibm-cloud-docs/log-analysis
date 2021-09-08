@@ -19,6 +19,11 @@ subcollection: log-analysis
 Use these release notes to learn about the latest updates to {{site.data.keyword.la_full}}.  Updates are grouped by date.
 {:shortdesc}
 
+## September 2021
+{: #AT-september2021-for-update}
+
+- Documentation of API changes supporting data streaming is generally available.  [Learn more about the streaming API](/apidocs/log-analysis#post-v1-config-stream).
+
 ## August 2021
 {: #AT-august2021-for-update}
 
