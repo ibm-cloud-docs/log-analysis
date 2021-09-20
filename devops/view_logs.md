@@ -10,23 +10,13 @@ subcollection: log-analysis
 
 ---
 
-{:new_window: target="_blank"}
-{:shortdesc: .shortdesc}
-{:screen: .screen}
-{:pre: .pre}
-{:table: .aria-labeledby="caption"}
-{:codeblock: .codeblock}
-{:tip: .tip}
-{:download: .download}
-{:important: .important}
-{:note: .note}
-{:external: target="_blank" .external}
+{{site.data.keyword.attribute-definition-list}}
 
 # Viewing logs
 {: #view_logs}
 
 After you provision an instance of the {{site.data.keyword.la_full_notm}} service in the {{site.data.keyword.cloud_notm}}, and configure a logging agent for a log source, you can view, monitor, and manage log data through the {{site.data.keyword.la_full_notm}} Web UI.
-{:shortdesc}
+{: shortdesc}
 
 When you launch the {{site.data.keyword.la_full_notm}} web UI, log entries are displayed with a predefined format. You can modify in the **User Preferences** section how the information in each log line is displayed. You can also filter logs and modify search settings, then bookmark the result as a *view*. You can attach and detach one or more alerts to a view. You can define a custom format for how your lines are shown in the view. You can expand a log line and see the data parsed.
 
@@ -161,3 +151,4 @@ Complete the following steps to create a view:
 6. Optionally, attach an alert. A new section is displayed for you to configure the alert.
 
 7. Click **Save View**
+

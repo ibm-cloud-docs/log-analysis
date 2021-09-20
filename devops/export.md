@@ -10,24 +10,14 @@ subcollection: log-analysis
 
 ---
 
-{:new_window: target="_blank"}
-{:shortdesc: .shortdesc}
-{:screen: .screen}
-{:pre: .pre}
-{:table: .aria-labeledby="caption"}
-{:codeblock: .codeblock}
-{:tip: .tip}
-{:download: .download}
-{:important: .important}
-{:note: .note}
-{:external: target="_blank" .external}
+{{site.data.keyword.attribute-definition-list}}
 
  
 # Exporting logs through the logging UI
 {: #export}
 
 You can export log data in JSONL format from an {{site.data.keyword.la_full_notm}} instance graphically through the web UI.
-{:shortdesc}
+{: shortdesc}
 
 Consider the following information when you export log data:
 * You can export a set of log entries. To define the set of data that you want to export, you can apply filter and searches. You can also specify the time range. 

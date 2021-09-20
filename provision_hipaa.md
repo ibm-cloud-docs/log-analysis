@@ -10,22 +10,14 @@ subcollection: log-analysis
 
 ---
 
-{:shortdesc: .shortdesc}
-{:screen: .screen}
-{:pre: .pre}
-{:table: .aria-labeledby="caption"}
-{:codeblock: .codeblock}
-{:tip: .tip}
-{:download: .download}
-{:important: .important}
-{:note: .note}
-{:external: target="_blank" .external}
+{{site.data.keyword.attribute-definition-list}}
+
 
 # Provisioning a HIPAA compliance instance
 {: #provision_hipaa}
 
 Across every industry, organizations require tighter controls and visibility into where their data is stored and processed in the {{site.data.keyword.cloud}}. To manage logs for HIPAA resources by using the {{site.data.keyword.la_full_notm}} service, consider the following information:
-{:shortdesc}
+{: shortdesc}
 
 HIPAA compliance is a shared responsibility. {{site.data.keyword.IBM_notm}} only provides the security and the tools to ensure its cloud platform can be used without violating HIPAA rules. It is the responsibility of HIPAA-covered entities to ensure that cloud-based infrastructure and applications are not misconfigured, and that stored files are appropriately secured.
 {: important}

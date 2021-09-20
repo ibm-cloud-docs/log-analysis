@@ -10,22 +10,13 @@ subcollection: log-analysis
 
 ---
 
-{:shortdesc: .shortdesc}
-{:screen: .screen}
-{:pre: .pre}
-{:table: .aria-labeledby="caption"}
-{:codeblock: .codeblock}
-{:tip: .tip}
-{:download: .download}
-{:important: .important}
-{:note: .note}
-{:external: target="_blank" .external}
+{{site.data.keyword.attribute-definition-list}}
 
 # Sending an SMS notification
 {: #sms}
 
 You can send SMS alerts to notify on log data hosted in a {{site.data.keyword.la_short}} instance.
-{:shortdesc}
+{: shortdesc}
 
 To send an SMS alert, you can choose 1 of the following options:
 - Integrate with the {{site.data.keyword.mon_full_notm}} service to send SMS alerts.
@@ -53,6 +44,8 @@ Complete the following steps to get an SMS notification when an alert in the {{s
     Configure [sending SMS alerts using PagerDuty](/docs/monitoring?topic=monitoring-pd_sms).
 
     Configure [Sending SMS alerts using Cloud Functions](/docs/monitoring?topic=monitoring-cf_sms).
+
+
 
 ## Send an SMS notification by using the PagerDuty On Call Service
 {: #sms-pd}
@@ -86,6 +79,8 @@ Complete the following steps to get an SMS notification when an alert in the {{s
 3. [Configure a PagerDuty Escalation Policy](https://support.pagerduty.com/docs/escalation-policies#section-create-an-escalation-policy){: external} and for **Notify** specify the support user.
 
 4. In the {{site.data.keyword.la_short}} UI, [configure a PagerDuty alert](/docs/log-analysis?topic=log-analysis-pagerduty).
+
+
 
 
 

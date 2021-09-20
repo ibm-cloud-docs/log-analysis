@@ -10,24 +10,13 @@ subcollection: log-analysis
 
 ---
 
-{:new_window: target="_blank"}
-{:shortdesc: .shortdesc}
-{:screen: .screen}
-{:pre: .pre}
-{:table: .aria-labeledby="caption"}
-{:codeblock: .codeblock}
-{:tip: .tip}
-{:download: .download}
-{:important: .important}
-{:note: .note}
-{:external: target="_blank" .external}
-{:deprecated: .deprecated}
+{{site.data.keyword.attribute-definition-list}}
 
 # Monitoring streaming
 {: #streaming-monitor}
 
 You can use {{site.data.keyword.mon_full_notm}} and {{site.data.keyword.at_full_notm}} to monitor streaming of data from your {{site.data.keyword.la_short}} instance.
-{:shortdesc}
+{: shortdesc}
 
 
 ## Monitoring streaming by using {{site.data.keyword.mon_full_notm}}

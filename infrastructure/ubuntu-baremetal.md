@@ -10,21 +10,11 @@ subcollection: log-analysis
 
 ---
 
-{:new_window: target="_blank"}
-{:shortdesc: .shortdesc}
-{:screen: .screen}
-{:pre: .pre}
-{:table: .aria-labeledby="caption"}
-{:codeblock: .codeblock}
-{:tip: .tip}
-{:download: .download}
-{:important: .important}
-{:note: .note}
-{:external: target="_blank" .external}
+{{site.data.keyword.attribute-definition-list}}
 
 
 # Logging with Bare metals
-{: #ubuntu-baremetal}
+{: #ubuntu_baremetal}
 
 Use the {{site.data.keyword.la_full}} service to monitor and manage logs from a bare metal in a centralized logging system on the {{site.data.keyword.cloud_notm}}. 
 {: shortdesc}
@@ -45,9 +35,9 @@ On the {{site.data.keyword.cloud_notm}}, configure an bare metal to forward logs
 In this tutorial, you will learn how to configure an bare metal to forward logs to an {{site.data.keyword.la_full_notm}} instance.
 
 ## Before you begin
-{: #ubuntu-baremetal_prereqs}
+{: #ubuntu_baremetal_prereqs}
 
-Read about {{site.data.keyword.la_full_notm}}. For more information, see [About](/docs/log-analysis?topic=log-analysis-getting-started#getting-started_ov).
+Read about {{site.data.keyword.la_full_notm}}. For more information, see [About](/docs/log-analysis?topic=log-analysis-getting-started#getting-started-ov).
 
 Work in a [supported region](/docs/log-analysis?topic=log-analysis-regions). 
 
@@ -69,7 +59,7 @@ Your {{site.data.keyword.IBM_notm}}ID must have assigned IAM policies for each o
 The {{site.data.keyword.cloud_notm}} CLI must be installed. For more information, see [Installing the {{site.data.keyword.cloud_notm}} CLI](/docs/cli?topic=cli-install-ibmcloud-cli).
 
 ## Step 1. Provision a bare metal
-{: #ubuntu-baremetal_step1}
+{: #ubuntu_baremetal_step1}
 
 If you have a bare metal that you want to monitor, you can skip this step.
 
@@ -134,7 +124,7 @@ If you don't have a bare metal, complete the following steps
 
 
 ## Step 2. Provision an {{site.data.keyword.la_full_notm}} instance
-{: #ubuntu-baremetal_step2}
+{: #ubuntu_baremetal_step2}
 
 To provision an instance of {{site.data.keyword.la_full_notm}} through the {{site.data.keyword.cloud_notm}} UI, complete the following steps:
 
@@ -173,7 +163,7 @@ To provision an instance of logging through the CLI, see [Provisioning logging t
 
 
 ## Step 3. Configure a bare metal to send logs to your logging instance
-{: #ubuntu-baremetal_step3}
+{: #ubuntu_baremetal_step3}
 
 To configure your bare metal to send logs to your {{site.data.keyword.la_full_notm}} instance, you must install a `logging-agent`. The logging agent reads log files from `/var/log` or other directories you specify, and forwards the log data to your logging instance.
 
@@ -261,7 +251,7 @@ To configure your bare metal to forward logs to your logging instance, complete 
 
 
 ## Step 4. Launch the logging Web UI
-{: #ubuntu-baremetal_step4}
+{: #ubuntu_baremetal_step4}
 
 To launch the {{site.data.keyword.la_full_notm}} dashboard from the {{site.data.keyword.cloud_notm}} UI, complete the following steps:
 
@@ -283,7 +273,7 @@ To launch the {{site.data.keyword.la_full_notm}} dashboard from the {{site.data.
 
 
 ## Step 5. View your logs
-{: #ubuntu-baremetal_step5}
+{: #ubuntu_baremetal_step5}
 
 From the logging Web UI, you can view your logs as they pass through the system. You view logs by using log tailing. 
 
@@ -294,7 +284,7 @@ For more information, see [Viewing logs](/docs/log-analysis?topic=log-analysis-v
 
 
 ## Next steps
-{: #ubuntu-baremetal_next_steps}
+{: #ubuntu_baremetal_next_steps}
 
 The following additional features are available:
 

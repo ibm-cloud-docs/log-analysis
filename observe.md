@@ -10,23 +10,13 @@ subcollection: log-analysis
 
 ---
 
-{:new_window: target="_blank"}
-{:shortdesc: .shortdesc}
-{:screen: .screen}
-{:pre: .pre}
-{:table: .aria-labeledby="caption"}
-{:codeblock: .codeblock}
-{:tip: .tip}
-{:download: .download}
-{:important: .important}
-{:note: .note}
-{:external: target="_blank" .external}
+{{site.data.keyword.attribute-definition-list}}
 
 # Managing logging instances in the Observability UI
 {: #observe}
 
 You can manage your logging instances through the `Observability` dashboard in {{site.data.keyword.cloud_notm}}.
-{:shortdesc}
+{: shortdesc}
 
 
 

@@ -10,23 +10,14 @@ subcollection: log-analysis
 
 ---
 
-{:new_window: target="_blank"}
-{:shortdesc: .shortdesc}
-{:screen: .screen}
-{:pre: .pre}
-{:table: .aria-labeledby="caption"}
-{:codeblock: .codeblock}
-{:tip: .tip}
-{:download: .download}
-{:important: .important}
-{:note: .note}
+{{site.data.keyword.attribute-definition-list}}
 
  
 # Sending logs by using Python
 {: #ingest_python}
 
 You can send logs to an {{site.data.keyword.la_full_notm}} instance by using Python. 
-{:shortdesc}
+{: shortdesc}
 
 Complete the following steps to send logs:
 

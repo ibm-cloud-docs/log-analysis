@@ -10,23 +10,13 @@ subcollection: log-analysis
 
 ---
 
-{:new_window: target="_blank"}
-{:shortdesc: .shortdesc}
-{:screen: .screen}
-{:pre: .pre}
-{:table: .aria-labeledby="caption"}
-{:codeblock: .codeblock}
-{:tip: .tip}
-{:download: .download}
-{:important: .important}
-{:external: target="_blank" .external}
-{:note: .note}
+{{site.data.keyword.attribute-definition-list}}
 
 # Upgrading from logging agent version 2 to logging agent version 3
 {: #upgrade_log_analysis_agent_3}
 
 If your Kubernetes cluster version is 1.9+ or Red Hat OpenShift 4.5+, you can upgrade the logging agent to version 3 and run the agent as non-root.
-{:shortdesc}
+{: shortdesc}
 
 Version 3 of the logging agent includes a number of features and enhancements, depending on the release level, including:
 
@@ -201,7 +191,7 @@ Complete the following steps to modify the yaml so that the logging agent runs a
 
     `<REGION>` indicates the region where the logging instance is available. For more information about regions, see [Locations](/docs/log-analysis?topic=log-analysis-regions).
 
-    `<VERSION>` indicates the version of the agent that you want to deploy. For more information on versions, see [Getting information about Kubernetes logging agent images](/docs/log-analysis?topic=log-analysis-log-analysis_agent_image).
+    `<VERSION>` indicates the version of the agent that you want to deploy. For more information on versions, see [Getting information about Kubernetes logging agent images](/docs/log-analysis?topic=log-analysis-log_analysis_agent_image).
 
     For example:
 

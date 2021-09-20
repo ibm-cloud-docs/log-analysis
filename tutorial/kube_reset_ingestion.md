@@ -15,15 +15,7 @@ completion-time: 1h
 
 ---
 
-{:shortdesc: .shortdesc}
-{:screen: .screen}
-{:pre: .pre}
-{:codeblock: .codeblock}
-{:tip: .tip}
-{:important: .important}
-{:note: .note}
-{:external: target="_blank" .external}
-{:step: data-tutorial-type='step'} 
+{{site.data.keyword.attribute-definition-list}}
 
 
 # Resetting the ingestion key that is used by a Kubernetes cluster
@@ -33,14 +25,14 @@ completion-time: 1h
 {: toc-completion-time="1h"} 
 
 If the ingestion key that you use to forward logs from a cluster to an {{site.data.keyword.la_full_notm}} instance in the {{site.data.keyword.cloud_notm}} is compromised, you must reset the key and update the Kubernetes cluster configuration to use the new ingestion key. 
-{:shortdesc}
+{: shortdesc}
 
 ## Before you begin
 {: #kube_reset_prereqs}
 
 Work in a [supported region](/docs/log-analysis?topic=log-analysis-regions). **Note:** You can work with a Kubernetes cluster that is located in the same region or in a different region. 
 
-Read about {{site.data.keyword.la_full_notm}}. For more information, see [About](/docs/log-analysis?topic=log-analysis-getting-started#getting-started_ov).
+Read about {{site.data.keyword.la_full_notm}}. For more information, see [About](/docs/log-analysis?topic=log-analysis-getting-started#getting-started-ov).
 
 Use a user ID that is a member or an owner of an {{site.data.keyword.cloud_notm}} account. To get an {{site.data.keyword.cloud_notm}} user ID, go to: [Registration](https://cloud.ibm.com/login){: external}.
 
@@ -51,7 +43,7 @@ To complete the steps in this tutorial, your {{site.data.keyword.IBM_notm}}ID mu
 | Resource                             | Scope of the access policy | Roles    | Region    | Information                  |
 |--------------------------------------|----------------------------|---------|-----------|------------------------------|
 | Resource group **Default**           |  Resource group            | Viewer  | us-south  | This policy is required to allow the user to see service instances in the Default resource group.    |
-| {{site.data.keyword.la_full_notm}} service |  Resource group            | Editor </br>Manager  | us-south  | This policy is required to allow the user to reset the ingestion key.   |
+| {{site.data.keyword.la_full_notm}} service |  Resource group            | Editor  \n Manager  | us-south  | This policy is required to allow the user to reset the ingestion key.   |
 | Kubernetes cluster instance          |  Resource                  | Editor  | us-south  | This policy is required to delete and configure the secret and the logging agent in the Kubernetes cluster. |
 {: caption="Table 1. List of IAM policies required to complete the tutorial" caption-side="top"} 
 

@@ -10,55 +10,45 @@ subcollection: log-analysis
 
 ---
 
-{:new_window: target="_blank"}
-{:shortdesc: .shortdesc}
-{:screen: .screen}
-{:pre: .pre}
-{:table: .aria-labeledby="caption"}
-{:codeblock: .codeblock}
-{:tip: .tip}
-{:download: .download}
-{:important: .important}
-{:note: .note}
-{:external: target="_blank" .external}
+{{site.data.keyword.attribute-definition-list}}
 
 # Getting started tutorial
 {: #getting-started}
 
 Use {{site.data.keyword.la_full}} to add log management capabilities to your {{site.data.keyword.cloud_notm}} architecture.
-{:shortdesc}
+{: shortdesc}
 
 You can use {{site.data.keyword.la_full_notm}} to manage system and application logs in the {{site.data.keyword.cloud_notm}}. {{site.data.keyword.la_full_notm}} offers administrators, DevOps teams, and developers advanced features to filter, search, and tail log data, define alerts, and design custom views to monitor application and system logs. 
 
 ## Features
-{: #getting-started_features}
+{: #getting-started-features}
 
 {{site.data.keyword.la_full_notm}} provides the following features.
 
 ### Troubleshooting logs in real time to diagnose issues and identify problems
-{: #getting-started_features-1}
+{: #getting-started-features-1}
 
 By using the *live streaming tail* feature, developers and DevOps teams can diagnose issues, analyze stack traces and exceptions, identify the source of errors, and monitor different log sources through a single view. 
 
 ### Issuing alerts to be notified of important actions
-{: #getting-started_features-2}
+{: #getting-started-features-2}
  
 DevOps teams can configure the system so critical or warning alert notifications are sent to email, Slack, webHook, or PagerDuty.  This helps DevOps teams to act promptly on important application and services events.
 
 ### Exporting logs to a local file for analysis or to an archive service to meet auditing requirements
-{: #getting-started_features-3}
+{: #getting-started-features-3}
 
 You can export specific log lines to a local copy or archive logs from {{site.data.keyword.la_full_notm}} to {{site.data.keyword.cloud}} Object Storage.
 Log lines are exported in JSON line format. Logs are archived in JSON format with the metadata that is associated with each line. 
 
 ### Controlling logging infrastructure costs by customizing {{site.data.keyword.la_full_notm}} managed logs
-{: #getting-started_features-4}
+{: #getting-started-features-4}
 
 You can control the cost of your {{site.data.keyword.cloud_notm}} logging infrastructure by configuring the log sources that are collecting and managing logs. 
 
 
 ## Overview
-{: #getting-started_ov}
+{: #getting-started-ov}
 
 Log data is stored on the {{site.data.keyword.cloud_notm}}.
 
@@ -87,14 +77,14 @@ The following figure shows the components comprising the {{site.data.keyword.la_
 
 
 ## Step 1. Before you begin
-{: #getting-started_prereqs}
+{: #getting-started-prereqs}
 
 1. [Check the regions where the {{site.data.keyword.la_full_notm}} service is available](/docs/log-analysis?topic=log-analysis-regions).
 
 2. If you don't have an {{site.data.keyword.cloud_notm}} account, [register an {{site.data.keyword.cloud_notm}} account](https://cloud.ibm.com/login){: external}. You need an IBMid to work in {{site.data.keyword.cloud_notm}}.
 
 ## Step 2. Get started
-{: #getting-started_step2}
+{: #getting-started-step2}
 
 Choose a log resource. Then, complete the get started section:
 
@@ -110,7 +100,7 @@ Choose a log resource. Then, complete the get started section:
 
 
 ## Step 3. Upgrade the plan
-{: #getting-started_step3}
+{: #getting-started-step3}
 
 By upgrading your plan you can enable additional logging features.
 
@@ -119,7 +109,7 @@ Upgrade the {{site.data.keyword.la_full_notm}} service plan to a paid plan to be
 
 
 ## Step 4. Manage logs
-{: #getting-started_step4}
+{: #getting-started-step4}
 
 To start managing logs, complete the following steps:
 
@@ -129,7 +119,7 @@ To start managing logs, complete the following steps:
 
 
 ## Step 5. Next steps 
-{: #getting-started_step5}
+{: #getting-started-step5}
 
 Next, you can manage user access with IAM.
 

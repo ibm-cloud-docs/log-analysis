@@ -10,22 +10,13 @@ subcollection: log-analysis
 
 ---
 
-{:new_window: target="_blank"}
-{:shortdesc: .shortdesc}
-{:screen: .screen}
-{:pre: .pre}
-{:table: .aria-labeledby="caption"}
-{:codeblock: .codeblock}
-{:tip: .tip}
-{:download: .download}
-{:important: .important}
-{:note: .note}
+{{site.data.keyword.attribute-definition-list}}
 
 # Grouping data by using tags
 {: #adding_tags}
 
 Configure a logging agent to associate tags to all log records that it collects so that you can identify the agent's data quicker in the logging UI.
-{:shortdesc}
+{: shortdesc}
 
 * You can define multiple tags per logging agent. 
 * You separate tags by using commas. 
@@ -42,7 +33,7 @@ Complete the following steps to add tags to a cluster:
 
 1. Set up the cluster environment. Run the following commands:
 
-   1. Get the command to set the environment variable and download the Kubernetes configuration files.
+    1. Get the command to set the environment variable and download the Kubernetes configuration files.
 
        ```
        ibmcloud ks cluster config --cluster <cluster_name_or_ID>
@@ -53,7 +44,7 @@ Complete the following steps to add tags to a cluster:
 
     2. Copy and paste the command that is displayed in your terminal to set the KUBECONFIG environment variable.
 
-2. Check the update strategy of the DaemonSet. Then, choose whether to use *kubectl apply* or *kubectl edit* to modify the configuration file for the agent.
+2. Check the update strategy of the DaemonSet and choose whether to use *kubectl apply* or *kubectl edit* to modify the configuration file for the agent.
 
     To check the update strategy, run the following command:
 

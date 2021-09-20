@@ -10,23 +10,13 @@ subcollection: log-analysis
 
 ---
 
-{:new_window: target="_blank"}
-{:shortdesc: .shortdesc}
-{:screen: .screen}
-{:pre: .pre}
-{:table: .aria-labeledby="caption"}
-{:codeblock: .codeblock}
-{:tip: .tip}
-{:download: .download}
-{:important: .important}
-{:note: .note}
-{:external: target="_blank" .external}
+{{site.data.keyword.attribute-definition-list}}
 
 # Excluding log files
 {: #exclude_logs_from_agent}
 
 Configure a logging agent to exclude logs that you do not want to monitor through the logging UI. 
-{:shortdesc}
+{: shortdesc}
 
 * You can exclude files that are located in any of the paths that are defined through the **logdir** parameter in a Linux system or the **LOGDNA_EXCLUDE** variable in a Kubernetes cluster. 
 * You can configure multiple files. You separate multiple files by using commas. 
@@ -99,24 +89,23 @@ Complete the following steps:
 
 2. Make changes. Add the section **LOGDNA_EXCLUDE** to the YAML file. 
 
-
-   * To exclude all cluster logs, you can add:
-
-      ```
-      - name: LOGDNA_EXCLUDE
-        value: /var/log/containers/*_kube-system_*,/var/log/containers/*ibm-observe_*,/var/log/containerd.log,/var/log/kubelet.log,/var/log/syslog,/var/log/ntpstats/*,/var/log/alb/*
-      ```
-      {: codeblock}
-
-   * To exclude logs by namespace, for example, all of the *kube-system* logs, add:
+    * To exclude all cluster logs, you can add:
 
       ```
       - name: LOGDNA_EXCLUDE
-        value: /var/log/containers /*_kube-system_*
+      value: /var/log/containers/*_kube-system_*,/var/log/containers/*ibm-observe_*,/var/log/containerd.log,/var/log/kubelet.log,/var/log/syslog,/var/log/ntpstats/*,/var/log/alb/*
       ```
       {: codeblock}
 
-   * To exclude all non-container logs, that is, files as shown in the *All Apps* filter view, add:
+    * To exclude logs by namespace, for example, all of the *kube-system* logs, add:
+
+      ```
+      - name: LOGDNA_EXCLUDE
+        value: /var/log/containers/*_kube-system_*
+      ```
+      {: codeblock}
+
+    * To exclude all non-container logs, that is, logs shown in the *All Apps* filter view, add:
 
       ```
       - name: LOGDNA_EXCLUDE
@@ -124,7 +113,7 @@ Complete the following steps:
       ```
       {: codeblock}
 
-   * To exclude calico logs, add:
+    * To exclude calico logs, add:
 
       ```
       - name: LOGDNA_EXCLUDE
@@ -132,7 +121,7 @@ Complete the following steps:
       ```
       {: codeblock}
 
-  * To exclude all of the _kube-system_ logs and all non-container logs, add:
+    * To exclude all of the _kube-system_ logs and all non-container logs, add:
 
       ```
       - name: LOGDNA_EXCLUDE

@@ -10,23 +10,13 @@ subcollection: log-analysis
 
 ---
 
-{:new_window: target="_blank"}
-{:shortdesc: .shortdesc}
-{:screen: .screen}
-{:pre: .pre}
-{:table: .aria-labeledby="caption"}
-{:codeblock: .codeblock}
-{:tip: .tip}
-{:download: .download}
-{:important: .important}
-{:note: .note}
-
+{{site.data.keyword.attribute-definition-list}}
  
 # Removing alerts through the UI
 {: #remove_alert_ui}
 
 You can detach alerts graphically by detaching an alert from a view or by deleting a preset.
-{:shortdesc}
+{: shortdesc}
 
 
 ## Detaching all alerts from a view

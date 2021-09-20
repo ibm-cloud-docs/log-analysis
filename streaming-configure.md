@@ -11,24 +11,13 @@ subcollection: log-analysis
 
 ---
 
-{:new_window: target="_blank"}
-{:shortdesc: .shortdesc}
-{:screen: .screen}
-{:pre: .pre}
-{:table: .aria-labeledby="caption"}
-{:codeblock: .codeblock}
-{:tip: .tip}
-{:download: .download}
-{:important: .important}
-{:note: .note}
-{:external: target="_blank" .external}
-{:deprecated: .deprecated}
+{{site.data.keyword.attribute-definition-list}}
 
 # Configuring streaming
 {: #streaming-configure}
 
 Complete the following steps to configure streaming for an {{site.data.keyword.la_full}} instance:
-{:shortdesc}
+{: shortdesc}
 
 ## Prereqs
 {: #streaming-configure-prereqs}

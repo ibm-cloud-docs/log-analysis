@@ -10,23 +10,13 @@ subcollection: log-analysis
 
 ---
 
-{:new_window: target="_blank"}
-{:shortdesc: .shortdesc}
-{:screen: .screen}
-{:pre: .pre}
-{:table: .aria-labeledby="caption"}
-{:codeblock: .codeblock}
-{:tip: .tip}
-{:download: .download}
-{:important: .important}
-{:note: .note}
-
+{{site.data.keyword.attribute-definition-list}}
 
 # Upgrading from logging agent version 1 to logging agent version 2
 {: #upgrade_log_analysis_agent_2}
 
 If your Kubernetes cluster version is 1.9+, you can upgrade the logging agent to version 2.
-{:shortdesc}
+{: shortdesc}
 
 When you upgrade the version of the agent, some logs may not be collected or duplicated depending on the period of time that you take to delete the current logging agent and deploy a new version of the logging agent in the cluster.
 {: important}

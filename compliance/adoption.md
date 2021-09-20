@@ -10,24 +10,13 @@ subcollection: log-analysis
 
 ---
 
-{:new_window: target="_blank"}
-{:shortdesc: .shortdesc}
-{:screen: .screen}
-{:pre: .pre}
-{:table: .aria-labeledby="caption"}
-{:codeblock: .codeblock}
-{:tip: .tip}
-{:download: .download}
-{:important: .important}
-{:note: .note}
-{:external: target="_blank" .external}
-
+{{site.data.keyword.attribute-definition-list}}
 
 # Adoption guidelines for regulated and highly available workloads
 {: #adoption}
 
 For regulated and highly available workloads, consider the following adoption guidelines when using the {{site.data.keyword.la_full_notm}} service:
-{:shortdesc}
+{: shortdesc}
 
 
 ## Define resources naming standards for compliance
@@ -67,13 +56,13 @@ The following table highlights some of the key features per account management s
 
 In stand-alone accounts, you control access to resources by grouping them in resource groups, and configuring IAM policies that you assign to users and service IDs directly or through access groups. These policies define the level of access to work with services in the account. For example, you might have a stand-alone account where you run your development, pre-production, and production services and applications. 
 
-By using an enterprise management account strategy, you achieve greater isolation of resources. When you configure a multitiered hierarchy of accounts, you get the flexibility to separate your development environments into separate tiers, or isolate by Line of Business (LoB) applications and services, or a combination of both. Each account retains the features of a stand-alone account, and you can still manage billing and payments from the top enterprise account.
+By using an enterprise management account strategy, you achieve greater isolation of resources. When you configure a multitiered hierarchy of accounts, you get the flexibility to separate your development environments into separate tiers, or isolate by Line of Business (LoB) applications and services, or a combination of both. Each account retains the features of a stand-alone account, and you can still manage billing and payments from the root enterprise account.
 
 In addition to these benefits, when you look into logging and how it fits with any of these management strategies, consider the following facts that will be covered later on in the topic in more detail:
 * Service platform logs are collected and available per location (region) through 1 single logging instance. You do not have the ability to split logs from different services running in the same region to multiple instances. If you run your development, test, and production services in a stand-alone account, all those logs will be available through the same logging instance, and any user with permissions to view logs in that instance will be able to see everything.
 * You can configure other log sources in {{site.data.keyword.cloud_notm}} and on-premisses to forward logs to any logging instance in your account. 
 
-**Define an enterprise account management strategy to add an additional layer of isolation in addition to resources of stand-alone accounts.**
+**Define an enterprise account management strategy to add an additional layer of isolation to resources in addition to stand-alone accounts.**
 {: tip}
 
 
@@ -113,7 +102,7 @@ Enable this setting only if you or your company is a covered entity as defined b
 {: #adoption_resource_svc}
 
 {{site.data.keyword.la_full_notm}} collects and aggregates logs in one centralized logging system.
-* Log data is hosted on the {{site.data.keyword.cloud_notm}}.
+* Log data is hosted on the {{site.data.keyword.cloud_notm}}. 
 * Data is collocated in the location where an {{site.data.keyword.la_full_notm}} instance is provisioned. 
 
 
@@ -383,7 +372,7 @@ You can choose to be notified by using an absence alert that is triggered when n
 
 You can choose to be notified by using a presence alert that is triggered when more log lines than expected are present.  
 
-**Define a presence alert to be notified of exceptional situations in your applications and services that require immediate attention.**    
+**You will want to define a presence alert to be notified of exceptional situations in your applications and services that require immediate attention.**    
 {: tip}
 
 You can configure multiple notification channels. Valid channels are: `email`, `Slack`, `PagerDuty`, `Webhook`
@@ -520,7 +509,7 @@ Use the following table to help you identify the features that you should consid
 
 `[9]`: Cold Vault is used for cold workloads where data is primarily archived (accessed every 90 days or less) - a larger retrieval charge applies for reading data. The service includes a threshold for object size and storage period consistent with the intended use of this service: storing cold, inactive data.
 
-`[10]`:  Flex is used for dynamic workloads where access patterns are more difficult to predict. Depending on usage, if the lower cost of cooler storage that is combined with retrieval charges exceeds a cap value, then the storage charge increases and no any retrieval charges apply. If the data isn't accessed frequently, Flex storage can be more cost effective than Standard storage. If cooler usage patterns become more active, Flex storage is more cost effective than Vault or Cold Vault storage. No threshold object size or storage period applies to Flex buckets.
+`[10]`:  Flex is used for dynamic workloads where access patterns are more difficult to predict. Depending on usage, if the cost of cooler storage that is combined with retrieval charges exceeds a cap value, then the storage charge increases and no any retrieval charges apply. If the data isn't accessed frequently, Flex storage can be more cost effective than Standard storage. If cooler usage patterns become more active, Flex storage is more cost effective than Vault or Cold Vault storage. No threshold object size or storage period applies to Flex buckets.
 
 Objects that are subject to a bucket's `Immutable Object Storage` retention policy will have expiration actions deferred until the retention policy is no longer enforced. 
 {: note}
@@ -635,7 +624,7 @@ For more information, see [Activity Tracker events](/docs/cloud-object-storage?t
 **Enable collection of COS management and data events on the bucket that you use to archive data from a logging instance. Use these events to monitor activity in your COS bucket.**
 {: tip}
 
-In {{site.data.keyword.at_full}}, you can define views, dashboard, and screens to monitor COS management and data events. You can also configure alerts on views to notify you when a specific condition occurs. On a view, you can configure an email alert, a Slack alert, a PagerDuty alert, or any combination of the above. For more information, see [Creating custom views](/docs/log-analysis?topic=log-analysis-view_logs#view_logs_step7) and [Managing alerts](/docs/log-analysis?topic=log-analysis-alerts).
+In {{site.data.keyword.at_full}}, you can define views, dashboard, and screens to monitor COS management and data events. You can also configure alerts on views to notify you when a specific condition occurs. On a view, you can configure an email alert, a Slack alert, a PagerDuty alert, or any combination of alerts. For more information, see [Creating custom views](/docs/log-analysis?topic=log-analysis-view_logs#view_logs_step7) and [Managing alerts](/docs/log-analysis?topic=log-analysis-alerts).
 
 For example, you can define a view that reports when an object is archived in a bucket. On that view, you can configure an email alert to notify you when an object has been archived. You might have compliance requirements that require you to control who accesses data that is archived. You can define a view that reports access to a bucket, and define an alert to notify you when that happens.
 

@@ -10,23 +10,14 @@ subcollection: log-analysis
 
 ---
 
-{:new_window: target="_blank"}
-{:shortdesc: .shortdesc}
-{:screen: .screen}
-{:pre: .pre}
-{:table: .aria-labeledby="caption"}
-{:codeblock: .codeblock}
-{:tip: .tip}
-{:download: .download}
-{:important: .important}
-{:note: .note}
+{{site.data.keyword.attribute-definition-list}}
 
 
 # Controlling data usage
 {: #control_usage}
 
 In {{site.data.keyword.la_full_notm}}, you can control the data that is collected and available for analysis through a logging instance. You can define exclusion rules in the UI that apply to data collected in that instance. You can also configure logging agents and customize them to collect and forward specific log data. In addition, you can define an alert that is triggered when the data usage threshold that you define for that logging instance is reached.
-{:shortdesc}
+{: shortdesc}
 
 
 ## Controlling data by excluding log files through the logging agent
@@ -61,7 +52,7 @@ When you exclude logs through an exclusion rule, you can choose to **Preserve th
 {: #control_usage_alert}
 
 In a {{site.data.keyword.la_full_notm}} instance, you can define an alert to notify when the data usage in the instance reaches the data usage threshold that you set for the instance.
-{:shortdesc}
+{: shortdesc}
 
 Complete the following steps to configure an alert that informs you when you reach a specific data volume in the instance:
 

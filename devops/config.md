@@ -10,24 +10,14 @@ subcollection: log-analysis
 
 ---
 
-{:new_window: target="_blank"}
-{:shortdesc: .shortdesc}
-{:screen: .screen}
-{:pre: .pre}
-{:table: .aria-labeledby="caption"}
-{:codeblock: .codeblock}
-{:tip: .tip}
-{:download: .download}
-{:important: .important}
-{:note: .note}
-{:external: target="_blank" .external}
+{{site.data.keyword.attribute-definition-list}}
 
 
 # Customizing the web UI
 {: #config}
 
 You can configure your web UI to work with UTC timestamps, change the log line format, change the background color and more.
-{:shortdesc}
+{: shortdesc}
 
 
 ## Configure UTC timestamps 

@@ -1,7 +1,7 @@
 {:navgroup: .navgroup}
 {:topicgroup: .topicgroup}
 
-{: .toc subcollection="log-analysis" audience="service" category="logging_monitoring" href="/docs/log-analysis?topic=log-analysis-getting-started#getting-started" console-page="/catalog/services/ibm-log-analysis" product-page="https://www.ibm.com/cloud/log-analysis" path="log-analysis"}
+{: .toc subcollection="log-analysis" version="2" audience="service" category="logging_monitoring" href="/docs/log-analysis?topic=log-analysis-getting-started#getting-started" console-page="/catalog/services/ibm-log-analysis" product-page="https://www.ibm.com/cloud/log-analysis" path="log-analysis"}
 Log Analysis
 
     {: .navgroup id="learn"}

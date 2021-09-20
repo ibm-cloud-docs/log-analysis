@@ -10,23 +10,13 @@ subcollection: log-analysis
 
 ---
 
-{:new_window: target="_blank"}
-{:shortdesc: .shortdesc}
-{:screen: .screen}
-{:pre: .pre}
-{:table: .aria-labeledby="caption"}
-{:codeblock: .codeblock}
-{:tip: .tip}
-{:download: .download}
-{:important: .important}
-{:note: .note}
-{:external: target="_blank" .external}
+{{site.data.keyword.attribute-definition-list}}
 
 # Logging with infrastructure overview
 {: #infra_logging}
 
 In {{site.data.keyword.la_short}}, you can send infrastructure logs to an {{site.data.keyword.la_full_notm}} instance from a broad range of sources:
-{:shortdesc}
+{: shortdesc}
 
 
 ## Logging with Cloud Foundry
@@ -103,7 +93,7 @@ On the {{site.data.keyword.cloud_notm}}, you can configure an bare metal to forw
 
 ![Component overview on the {{site.data.keyword.cloud_notm}}](../images/ubuntu.png "Component overview on the {{site.data.keyword.cloud_notm}}")
 
-For more information, see [Logging with Bare metals](/docs/log-analysis?topic=log-analysis-ubuntu-baremetal).
+For more information, see [Logging with Bare metals](/docs/log-analysis?topic=log-analysis-ubuntu_baremetal).
 
 
 ## Logging with VPC instances 

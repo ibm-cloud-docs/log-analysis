@@ -10,22 +10,14 @@ subcollection: log-analysis
 
 ---
 
-{:new_window: target="_blank"}
-{:shortdesc: .shortdesc}
-{:screen: .screen}
-{:pre: .pre}
-{:table: .aria-labeledby="caption"}
-{:codeblock: .codeblock}
-{:tip: .tip}
-{:download: .download}
-{:important: .important}
-{:note: .note}
+{{site.data.keyword.attribute-definition-list}}
+
 
 # Service plans
 {: #service_plans}
 
 Different pricing plans are available that you can choose for an {{site.data.keyword.la_full_notm}} instance. Each plan defines the number of days that data is retained for search, the number of users allowed to manage the data, and the logging features that are enabled.
-{:shortdesc}
+{: shortdesc}
 
 
 
@@ -47,7 +39,7 @@ Different pricing plans are available that you can choose for an {{site.data.key
 The following tables outline the different features that are included in each service plan:
 
 | Feature                                              | `HIPAA 30 day log search` plan | `30 day log search` plan | `14 days log search` plan    | `7 days log search` plan     | `Lite` plan | 
-|------------------------------------------------------|-------------------------|-------------------------------|-----------------------------|--------------|
+|------------------------------------------------------|-------------------------|-------------------------------|-----------------------------|--------------|--------|
 | `Live streaming tail`                                | ![Checkmark icon](images/checkmark-icon.svg) | ![Checkmark icon](images/checkmark-icon.svg) | ![Checkmark icon](images/checkmark-icon.svg) |![Checkmark icon](images/checkmark-icon.svg) |![Checkmark icon](images/checkmark-icon.svg)|
 | `Customizing the logging agent`                      | ![Checkmark icon](images/checkmark-icon.svg)| ![Checkmark icon](images/checkmark-icon.svg) | ![Checkmark icon](images/checkmark-icon.svg) |![Checkmark icon](images/checkmark-icon.svg) |![Checkmark icon](images/checkmark-icon.svg)|
 | `Logs are stored and searchable`                    | ![Checkmark icon](images/checkmark-icon.svg)| ![Checkmark icon](images/checkmark-icon.svg) | ![Checkmark icon](images/checkmark-icon.svg) |![Checkmark icon](images/checkmark-icon.svg) | |

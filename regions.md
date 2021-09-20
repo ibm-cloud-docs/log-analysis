@@ -10,22 +10,13 @@ subcollection: log-analysis
 
 ---
 
-{:new_window: target="_blank"}
-{:shortdesc: .shortdesc}
-{:screen: .screen}
-{:pre: .pre}
-{:table: .aria-labeledby="caption"}
-{:codeblock: .codeblock}
-{:tip: .tip}
-{:download: .download}
-{:important: .important}
-{:note: .note}
+{{site.data.keyword.attribute-definition-list}}
 
 # Locations
 {: #regions}
 
 {{site.data.keyword.la_full_notm}} is available in the following locations:
-{:shortdesc}
+{: shortdesc}
 
 
 ![The image shows the locations where the {{site.data.keyword.la_full_notm}} service is available.](images/world-map_min.png)

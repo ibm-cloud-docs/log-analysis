@@ -10,23 +10,14 @@ subcollection: log-analysis
 
 ---
 
-{:new_window: target="_blank"}
-{:shortdesc: .shortdesc}
-{:screen: .screen}
-{:pre: .pre}
-{:table: .aria-labeledby="caption"}
-{:codeblock: .codeblock}
-{:tip: .tip}
-{:download: .download}
-{:important: .important}
-{:note: .note}
+{{site.data.keyword.attribute-definition-list}}
 
  
 # Working with alerts
 {: #alerts}
 
 You can configure alerts to notify about the state of your infrastructure, applications, and {{site.data.keyword.cloud_notm}} services. 
-{:shortdesc}
+{: shortdesc}
 
 A rule specifies the scope of the data that you want to monitor and be notified if certain conditions occur. Per alert rule, consider the following information:
 - You can define 1 or more notification channels. 
@@ -107,7 +98,7 @@ You can configure alerts graphically through the {{site.data.keyword.la_short}} 
 
 You can delete alerts graphically through the {{site.data.keyword.la_short}} UI, or programmatically.
 - For more information on how to delete an alert, see [Removing alerts through the UI](/docs/log-analysis?topic=log-analysis-remove_alert_ui).
-- For more information on how to delete alerts programmatically, see [Managing views and alerts programmatically](/docs/log-analysis?topic=log-analysis-config_api#config_api-create-view-alert).
+- For more information on how to delete alerts programmatically, see [Managing views and alerts programmatically](/docs/log-analysis?topic=log-analysis-config_api#config-api-create-view-alert).
 
 
 ## Managing presets (alert templates)

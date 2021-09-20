@@ -1,0 +1,191 @@
+toc:
+  properties:
+    subcollection: log-analysis
+    version: 2
+    category: logging_monitoring
+    audience: service
+    href: /docs/log-analysis?topic=log-analysis-getting-started#getting-started
+    console-page: /observe/logging
+    product-page: https://www.ibm.com/cloud/log-analysis
+    path: log-analysis
+    label: Log Analysis
+
+  entries: 
+  - navgroup: 
+      id: learn
+      topics:
+
+      - getting-started.md
+      - releasenotes.md
+      - agent/logdna_agent.md
+      
+      - topicgroup: 
+          label: Logging with IBM Cloud services
+          topics:
+          - platform-logs/config_svc_logs.md
+          - platform-logs/cloud_services.md
+          - platform-logs/cloud_services_locations.md
+          - platform-logs/cloud_services_msg_prefix.md
+          - platform-logs/cloud_services_agent.md
+   
+      - topicgroup: 
+          label: Logging with infrastructure
+          topics:
+          - infrastructure/infra_logging.md
+          - infrastructure/monitor_cfapp_logs.md
+          - infrastructure/kube.md
+          - infrastructure/ubuntu-baremetal.md
+          - infrastructure/ubuntu-vpc.md
+          - infrastructure/syslog.md
+      
+      - topicgroup: 
+          label: Logging with applications
+          topics:
+          - app-logs/app_logging.md
+          - app-logs/ingest.md
+          - app-logs/ingest_python.md
+
+      - streaming.md
+      
+      - topicgroup: 
+          label: Security and compliance
+          topics:
+          - compliance/adoption.md
+          - compliance/manage_eu_logs.md
+
+      - topicgroup: 
+          label: Tutorials
+          topics:
+          - tutorial/tutorial_use_LogDNA.md
+          - tutorial/kube_reset_ingestion.md
+
+  - navgroup: 
+      id: howto
+      topics:
+      - provision.md
+      - provision_hipaa.md
+      - remove.md
+      - upgrade.md
+      - observe.md
+      - monitor_logs.md
+      
+      - topicgroup: 
+          label: Controlling access
+          topics:
+          - iam.md
+          - teams_data_access.md
+          - iam_grant_team.md
+          - iam_manage_events.md
+          - iam_view_events.md
+          - devops/work_iam.md
+      
+      - topicgroup: 
+          label: DevOps admin tasks
+          topics:
+          - devops/archive.md
+          - devops/control_usage.md
+          - devops/exclusion_rules.md
+          - devops/ingestion_key.md
+          - devops/service_keys.md
+          - devops/reuse_resource_definitions.md
+      
+      - topicgroup: 
+          label: Logging agent
+          topics:
+          - agent/logdna_agent_image.md
+          - agent/config_agent_kube_cluster.md
+          - agent/config_agent_os_cluster.md
+          - agent/config_agent_linux.md
+          - agent/detach_agent.md
+          - agent/exclude_logs_from_agent.md
+          - agent/adding_tags.md
+          - agent/upgrade_logdna_agent_2.md
+          - agent/upgrade_logdna_agent_3.md
+      
+      - topicgroup: 
+          label: Enhancing security
+          topics:
+          - core/architecture-workload-isolation.md
+          - core/service-connection.md
+          - core/data-security.md
+      
+      - topicgroup: 
+          label: Exporting logs
+          topics:
+          - devops/export_config.md
+          - devops/export.md
+          - devops/export_api.md
+      
+      - topicgroup: 
+          label: Logging UI
+          topics:
+          - launch.md
+          - config.md
+          - get_logdna_web_url.md
+      
+      - topicgroup: 
+          label: Logging and monitoring
+          topics:
+          - core/at_events.md
+      
+      - topicgroup: 
+          label: Streaming data
+          topics:
+          - streaming-configure.md
+          - streaming-monitor.md
+          - streaming-conditional.md
+
+      - devops/view_logs.md
+      
+      - topicgroup: 
+          label: Working with alerts
+          topics:
+          - alerts/alerts.md
+          - alerts/create_alert_ui.md
+          - alerts/remove_alert_ui.md
+          - alerts/preset_ui.md
+          - devops/config_api.md
+          - alerts/email.md
+          - alerts/pagerduty.md
+          - devops/monitoring.md
+          - alerts/sms.md
+  
+  - navgroup: 
+      id: reference
+      topics: 
+      - endpoints.md
+      - cidr.md
+      - regions.md
+      - service_plans.md
+      - core/shared-responsibilities.md
+      
+      - topicgroup: 
+          label: Logging CLI
+          topics:
+          - /log-analysis-cli-plugin/log-analysis-cli-plugin-log-analysis-cli
+
+      - topicgroup: 
+          label: Logging API
+          links: 
+            - link: 
+                label: Ingestion API
+                href: {DomainName}/apidocs/log-analysis#ingest
+            - link:
+                label: Export API
+                href: {DomainName}/apidocs/log-analysis#export
+            - link:
+                label: Configuration API
+                href: {DomainName}/apidocs/log-analysis#create-view
+  
+      - topicgroup: 
+          label: High availability and disaster recovery
+          topics:     
+          - core/ha-dr.md
+
+      - service-ip-changes.md
+  
+  - navgroup: 
+        id: help
+        topics: 
+        - gettinghelp.md
+        - faq.md

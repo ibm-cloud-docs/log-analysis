@@ -10,14 +10,13 @@ subcollection: log-analysis
 
 ---
 
-{:new_window: target="_blank"}
-{:shortdesc: .shortdesc}
+{{site.data.keyword.attribute-definition-list}}
 
 # Release notes
 {: #LA-release-notes}
 
 Use these release notes to learn about the latest updates to {{site.data.keyword.la_full}}.  Updates are grouped by date.
-{:shortdesc}
+{: shortdesc}
 
 ## September 2021
 {: #AT-september2021-for-update}
@@ -60,4 +59,5 @@ This release includes the following functional enhancements:
 
 * Configuration support using an API, in addition to configuration using the web UI.
 * Support for Terraform to programmatically manage {{site.data.keyword.la_full}} views and alerts and automate their deployment. 
+
 

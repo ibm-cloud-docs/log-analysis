@@ -10,22 +10,13 @@ subcollection: log-analysis
 
 ---
 
-{:new_window: target="_blank"}
-{:shortdesc: .shortdesc}
-{:screen: .screen}
-{:pre: .pre}
-{:table: .aria-labeledby="caption"}
-{:codeblock: .codeblock}
-{:tip: .tip}
-{:download: .download}
-{:important: .important}
-{:note: .note}
+{{site.data.keyword.attribute-definition-list}}
 
 # Configuring how logging agent updates are rolled
 {: #log_analysis_agent_updates}
 
 When you configure a logging agent, auto update of the logging agent is enabled. You might find this behavior acceptable for a proof of concept or for a development environment. However, for production environments, and for regulated, and highly available workloads, you might need to control when to update the logging agent.
-{:shortdesc}
+{: shortdesc}
 
 For Linux log sources, you can configure the **autoupdate** parameter to configure how you want updates to the agent to be rolled.
 

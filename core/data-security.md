@@ -10,13 +10,7 @@ subcollection: log-analysis
 
 ---
 
-{:external: target="_blank" .external}
-{:shortdesc: .shortdesc}
-{:screen: .screen}
-{:pre: .pre}
-{:table: .aria-labeledby="caption"}
-{:codeblock: .codeblock}
-{:tip: .tip}
+{{site.data.keyword.attribute-definition-list}}
 
 
 # Securing your data
@@ -53,7 +47,7 @@ You can enable virtual routing and forwarding (VRF) to move IP routing for your 
 {{site.data.keyword.la_full_notm}} collects and aggregates logs. 
 
 ### Data location
-{: #data-storage_location}
+{: #data_storage_location}
 
 {{site.data.keyword.la_full_notm}} collects and aggregates logs in one centralized logging system.
 
@@ -64,7 +58,7 @@ You can enable virtual routing and forwarding (VRF) to move IP routing for your 
 
 
 ### Data encryption
-{: #data-storage_encryption}
+{: #data_storage_encryption}
 
 All the data that is hosted in a logging instance is encrypted at rest using **AES 256**.
 
@@ -74,7 +68,7 @@ When a user requests an export, the data is encrypted during transit, and is als
 
 
 ### Data retention
-{: #data-storage_retention}
+{: #data_storage_retention}
 
 The service plan that you choose for an {{site.data.keyword.la_full_notm}} instance defines the number of days that data is stored and retained. 
 

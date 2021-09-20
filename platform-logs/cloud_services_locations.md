@@ -11,23 +11,14 @@ subcollection: log-analysis
 
 ---
 
-{:new_window: target="_blank"}
-{:shortdesc: .shortdesc}
-{:screen: .screen}
-{:pre: .pre}
-{:table: .aria-labeledby="caption"}
-{:codeblock: .codeblock}
-{:tip: .tip}
-{:download: .download}
-{:important: .important}
-{:note: .note}
+{{site.data.keyword.attribute-definition-list}}
 
 
 # Cloud services by location
 {: #cloud_services_locations}
 
 List of locations where {{site.data.keyword.cloud_notm}} services are enabled to send logs to {{site.data.keyword.la_full_notm}}. You monitor these logs that you monitor through the {{site.data.keyword.la_short}} instance that is configured to receive platform services logs. [Learn more about enabling service platform logs](/docs/log-analysis?topic=log-analysis-config_svc_logs).
-{:shortdesc}
+{: shortdesc}
 
 ## Cloud Foundry
 {: #cs_locations_platform_cfapps}
@@ -344,7 +335,7 @@ The following tables list the locations where automatic collection of security s
 {: caption="Table 8. Watson AI in America's locations" caption-side="top"}
 {: #cs-wat-table-22}
 {: tab-title="America"}
-{: tab-group="cs_sec"}
+{: tab-group="cs_watsonai"}
 {: class="simple-tab-table"}
 {: row-headers}
 
@@ -354,7 +345,7 @@ The following tables list the locations where automatic collection of security s
 {: caption="Table 8. Watson AI in AP locations" caption-side="top"}
 {: #cs-wat-table-23}
 {: tab-title="Asia Pacific"}
-{: tab-group="cs_sec"}
+{: tab-group="cs_watsonai"}
 {: class="simple-tab-table"}
 {: row-headers}
 
@@ -364,7 +355,7 @@ The following tables list the locations where automatic collection of security s
 {: caption="Table 8. Watson AI in Europe locations" caption-side="top"}
 {: #cs-wat-table-24}
 {: tab-title="Europe"}
-{: tab-group="cs_sec"}
+{: tab-group="cs_watsonai"}
 {: class="simple-tab-table"}
 {: row-headers}
 

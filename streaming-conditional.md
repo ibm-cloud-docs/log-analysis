@@ -10,24 +10,13 @@ subcollection: log-analysis
 
 ---
 
-{:new_window: target="_blank"}
-{:shortdesc: .shortdesc}
-{:screen: .screen}
-{:pre: .pre}
-{:table: .aria-labeledby="caption"}
-{:codeblock: .codeblock}
-{:tip: .tip}
-{:download: .download}
-{:important: .important}
-{:note: .note}
-{:external: target="_blank" .external}
-{:deprecated: .deprecated}
+{{site.data.keyword.attribute-definition-list}}
 
 # Configuring conditional streaming
 {: #streaming-conditional}
 
 In an {{site.data.keyword.la_full_notm}} instance, you can configure streaming exclusion rules through the UI to filter what data is streamed.
-{:shortdesc}
+{: shortdesc}
 
 You must have manager access to define exclusion rules.
 {: note}

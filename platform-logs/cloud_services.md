@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2021
-lastupdated: "2021-05-18"
+lastupdated: "2021-09-02"
 
 keywords: IBM, Log Analysis, logging, services
 
@@ -11,24 +11,14 @@ subcollection: log-analysis
 
 ---
 
-{:new_window: target="_blank"}
-{:shortdesc: .shortdesc}
-{:screen: .screen}
-{:pre: .pre}
-{:table: .aria-labeledby="caption"}
-{:codeblock: .codeblock}
-{:tip: .tip}
-{:download: .download}
-{:important: .important}
-{:note: .note}
-{:external: target="_blank" .external}
+{{site.data.keyword.attribute-definition-list}}
 
 
 # Cloud services
 {: #cloud_services}
 
 List of {{site.data.keyword.cloud}} services that send logs to {{site.data.keyword.la_full_notm}}:
-{:shortdesc}
+{: shortdesc}
 
 You can monitor logs from CF apps and enabled services through [the {{site.data.keyword.la_short}} instance that is configured to receive platform services logs](/docs/log-analysis?topic=log-analysis-config_svc_logs) in the location where the app or service is running. 
 
@@ -81,7 +71,7 @@ To see the list of {{site.data.keyword.la_full_notm}} locations where these serv
 The following table lists services that send logs to {{site.data.keyword.la_full_notm}}:
 
 | Service     | Description |  More info | 
-|-------------|-------------|--------------------------------------------------------------------------------------------|--------------|-----------------|
+|-------------|-------------|--------------------------------------------------------------------------------------------|
 | [{{site.data.keyword.cloudant_short_notm}}](/docs/Cloudant?topic=Cloudant-getting-started-with-cloudant)    | {{site.data.keyword.cloudant_short_notm}} is a document-oriented database as a service (DBaaS). It stores data as documents in JSON format. | [More info](/docs/Cloudant?topic=Cloudant-log-analysis-integration) | 
 | [{{site.data.keyword.databases-for-elasticsearch_full_notm}}](/docs/databases-for-elasticsearch?topic=databases-for-elasticsearch-getting-started) | {{site.data.keyword.databases-for-elasticsearch_full_notm}} is a managed Elasticsearch service that is hosted in the {{site.data.keyword.cloud_notm}} and integrated with other {{site.data.keyword.cloud_notm}} services. | [More info](/docs/databases-for-elasticsearch?topic=cloud-databases-logging) |
 | [{{site.data.keyword.databases-for-enterprisedb_full}}](/docs/databases-for-enterprisedb?topic=databases-for-enterprisedb-getting-started) | {{site.data.keyword.databases-for-enterprisedb}} is a database engine that optimizes the built-in features of PostgreSQL. | [More info](/docs/databases-for-enterprisedb?topic=cloud-databases-logging) | 
@@ -116,8 +106,8 @@ The following table lists services that send logs to {{site.data.keyword.la_full
 To see the list of {{site.data.keyword.la_full_notm}} locations where these services send logs, see [Integration services](/docs/log-analysis?topic=log-analysis-cloud_services_locations#cs_locations_integration).
 
 
-## Networking services
-{: #networking}
+## VPC services
+{: #vpc}
 
 The following table lists Cloud services that send logs to {{site.data.keyword.la_full_notm}}:
 
@@ -127,10 +117,18 @@ The following table lists Cloud services that send logs to {{site.data.keyword.l
 | [Dedicated host](/docs/vpc?topic=vpc-creating-dedicated-hosts-instances) | You can create a dedicated host to carve out a single-tenant compute node, free from users outside of your organization.  | [More info](/docs/vpc?topic=vpc-logging) | [Message IDs](/docs/vpc?topic=vpc-logging#dedicated-host) |
 | [Flow Log Collector](/docs/vpc?topic=vpc-flow-logs)| This service is used to collect and store information regarding the Internet Protocol (IP) traffic going to and from network interfaces within your Virtual Private Cloud (VPC) | [Viewing flow log objects](/docs/vpc?topic=vpc-fl-analyze) | [Message IDs](/docs/vpc?topic=vpc-logging#logging-flow-log-collector_msgs) |
 | [VPN](/docs/vpc?topic=vpc-using-vpn) | Use this service to connect private networks in a secure fashion. You can use VPN to set up an IPsec site-to-site tunnel between your VPC and your on-premise private network or another VPC. | [More info](/docs/vpc?topic=vpc-using-log-analysis-to-view-vpn-logs) | |
+{: caption="Table 6. List of IBM Cloud VPC services" caption-side="top"} 
+
+## Classic Infrastructure services
+{: #classic-infrastructure}
+
+The following table lists Cloud services that send logs to {{site.data.keyword.la_full_notm}}:
+
+
+| Service          | Description | More info         | Message IDs |
+|------------------|-------------|-------------------|-------------|
 | [{{site.data.keyword.loadbalancer_full}}](/docs/loadbalancer-service?topic=loadbalancer-service-getting-started) | Use this service to improve availability of business-critical applications by distributing traffic among multiple application server instances, and by forwarding traffic to healthy instances only. | [More info](/docs/loadbalancer-service?topic=loadbalancer-service-data-logging) | |
-{: caption="Table 6. List of security networking services" caption-side="top"} 
-
-
+{: caption="Table 7. List of Classic Infrastructure services" caption-side="top"} 
 
 
 ## Security services
@@ -143,7 +141,7 @@ The following table lists Cloud services that send logs to {{site.data.keyword.l
 |-------------|-------------|-------------------------------------------------------------------------|
 | [{{site.data.keyword.cloudcerts_full_notm}}](/docs/certificate-manager?topic=certificate-manager-about-certificate-manager#about-certificate-manager) | You can use {{site.data.keyword.cloudcerts_short}} to manage the SSL certificates for your {{site.data.keyword.cloud_notm}}-based apps and services.  | [More info](/docs/certificate-manager?topic=certificate-manager-log_events) |
 | [{{site.data.keyword.secrets-manager_full}}](/docs/secrets-manager?topic=secrets-manager-getting-started) | With {{site.data.keyword.secrets-manager_full_notm}}, you can create, lease, and centrally manage secrets that are used in {{site.data.keyword.cloud_notm}} services or your custom-built applications. | [More info](/docs/secrets-manager?topic=secrets-manager-service-logs) |
-{: caption="Table 5. List of security Cloud services" caption-side="top"} 
+{: caption="Table 8. List of security Cloud services" caption-side="top"} 
 
 You can monitor logs through the {{site.data.keyword.la_short}} instance that is configured to receive platform services logs in the location where the service is running. 
 {: note}
@@ -160,7 +158,7 @@ The following table lists Cloud services that send logs to {{site.data.keyword.l
 | Service     | Description | More info |
 |-------------|-------------|-------------------------------------------------------------------------|
 | [{{site.data.keyword.iva_full_notm}}](/docs/voice-agent?topic=voice-agent-getting-started) | You can {{site.data.keyword.iva_full_notm}} to integrate a set of orchestrated Watson services with the telephone network by using the Session Initiation Protocol (SIP).   | [More info](/docs/voice-agent?topic=voice-agent-log-analysis-integration) |
-{: caption="Table 8. List of Watson AI Cloud services" caption-side="top"} 
+{: caption="Table 9. List of Watson AI Cloud services" caption-side="top"} 
 
 To see the list of {{site.data.keyword.la_full_notm}} locations where these services send logs, see [Watson AI services](/docs/log-analysis?topic=log-analysis-cloud_services_locations#cloud_services_locations_watson_ai).
 

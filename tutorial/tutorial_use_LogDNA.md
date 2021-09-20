@@ -17,14 +17,7 @@ completion-time: 1h
 
 ---
 
-{:shortdesc: .shortdesc}
-{:screen: .screen}  
-{:codeblock: .codeblock}  
-{:pre: .pre}
-{:tip: .tip}
-{:note: .note}
-{:external: target="_blank" .external}
-{:step: data-tutorial-type='step'} 
+{{site.data.keyword.attribute-definition-list}}
 
 
 # Use the {{site.data.keyword.la_short}} web UI
@@ -355,7 +348,7 @@ The following will help you create a dashboard.
    {: note}
 
 ## Create a widget in a screen
-{: #LA-create_widget}
+{: #LA_create_widget}
 {: step}
 
 Using the screen option you can create a screen of widgets that you can use to monitor your app using metrics (counters), operational KPIs (gauges), tables, and graphs that can be used to analyze patterns and trends.

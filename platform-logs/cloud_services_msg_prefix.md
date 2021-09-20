@@ -11,24 +11,14 @@ subcollection: log-analysis
 
 ---
 
-{:new_window: target="_blank"}
-{:shortdesc: .shortdesc}
-{:screen: .screen}
-{:pre: .pre}
-{:table: .aria-labeledby="caption"}
-{:codeblock: .codeblock}
-{:tip: .tip}
-{:download: .download}
-{:important: .important}
-{:note: .note}
-{:external: target="_blank" .external}
+{{site.data.keyword.attribute-definition-list}}
 
 
 # Cloud services message ID prefixes
 {: #cloud_services_msg_prefix}
 
 List of prefixes that [{{site.data.keyword.cloud}} services](/docs/log-analysis?topic=log-analysis-cloud_services) use when they send logs to {{site.data.keyword.la_full_notm}}:
-{:shortdesc}
+{: shortdesc}
 
 
 ## Message format
@@ -52,7 +42,7 @@ A message ID is made up of the following parts:
 
 The following table lists message ID prefixes for the [{{site.data.keyword.vpc_full}}](/docs/vpc?topic=vpc-getting-started) infrastructure service that send logs to {{site.data.keyword.la_full_notm}}:
 
-| Service                                             | CRN service name </br>`crn-service-name`  | Message ID format      | Sample |
+| Service                                             | CRN service name  \n `crn-service-name`  | Message ID format      | Sample |
 |-----------------------------------------------------|-------------------------------------------|---------------------------|------------------|
 | [Dedicated host](/docs/vpc?topic=vpc-creating-dedicated-hosts-instances)  | `dedicated-host`    | `<crn-service-name>.#####<severity>` | `dedicated-host.00001` |
 | [Flow Logs for VPC](/docs/vpc?topic=vpc-flow-logs)  | `is.flow-log-collector`                   | `<crn-service-name>.#####<severity>` | `is.flow-log-collector.00001E` |

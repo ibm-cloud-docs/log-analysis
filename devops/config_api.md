@@ -10,24 +10,14 @@ subcollection: log-analysis
 
 ---
 
-{:new_window: target="_blank"}
-{:shortdesc: .shortdesc}
-{:screen: .screen}
-{:pre: .pre}
-{:table: .aria-labeledby="caption"}
-{:codeblock: .codeblock}
-{:tip: .tip}
-{:download: .download}
-{:important: .important}
-{:note: .note}
-{:external: target="_blank" .external}
+{{site.data.keyword.attribute-definition-list}}
 
  
 # Managing views and alerts programmatically
 {: #config_api}
 
 You can use the *Configuration REST API* to manage programmatically views and alerts.
-{:shortdesc}
+{: shortdesc}
 
 - You can use the **POST** method to create a view, or create a view and attach an alert to it.
 - You can use the **PUT** method to modify an existing view, and alerts that are attached to views.
@@ -154,7 +144,7 @@ For example, in a cURL request, you must set the `content-type` header as follow
 Some additional headers might be required to make successful requests to the API. Those additional headers are:
 
 ### content-type
-{: #config_api_headers-content-type}
+{: #config-api-headers-content-type}
 
 Define the `Content-Type` header to make successful requests to the API. The `content-type` header specifies that the request body is in JSON format.
 {: note}
@@ -176,7 +166,7 @@ For example, in a cURL request, you must set the `content-type` header as follow
 The following fields are body parameters that you can set in API request:
 
 ### name (string)
-{: #config_api_parm-name}
+{: #config-api-parm-name}
 
 Specifies the name of the view.
 
@@ -191,7 +181,7 @@ The following table indicates when the `name` parameter is required:
 
 
 ### query (string)
-{: #config_api_parm-query}
+{: #config-api-parm-query}
 
 Specifies the search query that is applied to the view.
 
@@ -199,7 +189,7 @@ Check the query in the logging web UI to validate that the data that is displaye
 {: tip}
 
 ### hosts (array of strings)
-{: #config_api_parm-hosts}
+{: #config-api-parm-hosts}
 
 Specifies the list of services from which you want to view data.
 
@@ -215,7 +205,7 @@ For example, to enter multiple hosts, you must separate the hosts with a comma:
 
 
 ### apps (array of strings)
-{: #config_api_parm-apps}
+{: #config-api-parm-apps}
 
 Specifies the service instance ID that generates the log.
 
@@ -229,7 +219,7 @@ For example, to enter multiple apps, you must separate the apps with a comma:
 
 
 ### channels (array of objects)
-{: #config_api_parm-channels}
+{: #config-api-parm-channels}
 
 Specifies the notification channels and trigger conditions that are associated with a view.
 - You can configure 1 or more channels per view.
@@ -273,11 +263,11 @@ Specifies the notification channels and trigger conditions that are associated w
       "terminal": true
     }
   ]
-  ```
-  {: codeblock}
+```
+{: codeblock}
 
 ### category (array of strings)
-{: #config_api_parm-category}
+{: #config-api-parm-category}
 
 Specifies the classification of views. 
 - You can include a view in 1 or more categories.
@@ -292,7 +282,7 @@ For example, to associate a view to a category named `My category`, you can set 
 
 
 ## Examples of using the logging Configuration API
-{: #config_api-samples}
+{: #config-api-samples}
 
 The following are examples of how to use the logging Configuration API.
 
@@ -302,7 +292,7 @@ A category must exist before you create a view. In these examples, replace `<MY_
 In these examples, `<SERVICE_KEY>` is the [service key](/docs/log-analysis?topic=log-analysis-service_keys) for your {{site.data.keyword.la_full_notm}} instance. 
 
 ### Creating a view
-{: #config_api-create-view}
+{: #config-api-create-view}
 
 The following sample creates a view.
 
@@ -324,7 +314,7 @@ curl https://api.us-south.logging.cloud.ibm.com/v1/config/view \
 
 
 ### Creating a view and attaching an alert
-{: #config_api-create-view-alert}
+{: #config-api-create-view-alert}
 
 The following sample creates a view and associates an email alert with the view.
 
@@ -356,7 +346,7 @@ curl https://api.eu-de.logging.cloud.ibm.com/v1/config/view \
 
 
 ### Modifying a view by adding an alert
-{: #api_configuration-mod-view-alert}
+{: #api-configuration-mod-view-alert}
 
 The following modifies a view by adding an alert.
 
@@ -390,7 +380,7 @@ curl --request PUT \
 
 
 ### Deleting a view
-{: #api_configuration-del-view}
+{: #api-configuration-del-view}
 
 The following sample deletes a view.
 

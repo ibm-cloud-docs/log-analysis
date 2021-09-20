@@ -10,23 +10,13 @@ subcollection: log-analysis
 
 ---
 
-{:new_window: target="_blank"}
-{:shortdesc: .shortdesc}
-{:screen: .screen}
-{:pre: .pre}
-{:table: .aria-labeledby="caption"}
-{:codeblock: .codeblock}
-{:tip: .tip}
-{:download: .download}
-{:important: .important}
-{:note: .note}
-{:external: target="_blank" .external}
+{{site.data.keyword.attribute-definition-list}}
 
 # Removing an instance
 {: #remove}
 
 You can remove an instance of the {{site.data.keyword.la_full_notm}} service from the {{site.data.keyword.cloud_notm}} UI or through the command line.
-{:shortdesc}
+{: shortdesc}
 
 When you remove an instance from the {{site.data.keyword.cloud_notm}}, clean up by completing the following tasks:
 

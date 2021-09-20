@@ -10,23 +10,13 @@ subcollection: log-analysis
 
 ---
 
-{:new_window: target="_blank"}
-{:shortdesc: .shortdesc}
-{:screen: .screen}
-{:pre: .pre}
-{:table: .aria-labeledby="caption"}
-{:codeblock: .codeblock}
-{:tip: .tip}
-{:download: .download}
-{:important: .important}
-{:note: .note}
-{:external: target="_blank" .external}
+{{site.data.keyword.attribute-definition-list}}
 
 # Disconnecting a logging agent
 {: #detach_agent}
 
 Detach a logging agent from a logging instance to stop collecting logs.
-{:shortdesc}
+{: shortdesc}
 
 ## Detaching a logging agent  from a standard Kubernetes cluster
 {: #detach_agent_kube}

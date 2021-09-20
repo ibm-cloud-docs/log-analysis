@@ -10,17 +10,7 @@ subcollection: log-analysis
 
 ---
 
-{:new_window: target="_blank"}
-{:shortdesc: .shortdesc}
-{:screen: .screen}
-{:pre: .pre}
-{:table: .aria-labeledby="caption"}
-{:codeblock: .codeblock}
-{:tip: .tip}
-{:download: .download}
-{:important: .important}
-{:note: .note}
-{:external: target="_blank" .external}
+{{site.data.keyword.attribute-definition-list}}
  
 # Managing service keys
 {: #service_keys}
@@ -42,7 +32,7 @@ If a service key does not exist, the first API command sent to {{site.data.keywo
 
  
 ## Prereqs. Check your IAM permissions to manage service keys
-{: #service_keys_pre-req}
+{: #service_keys_prereq}
 
 To generate a new service key or get an existing service key, you need the following roles on the {{site.data.keyword.la_full_notm}}:
 - Platform role `operator`, `editor` or `administrator`

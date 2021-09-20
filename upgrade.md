@@ -9,16 +9,7 @@ subcollection: log-analysis
 
 ---
 
-{:new_window: target="_blank"}
-{:shortdesc: .shortdesc}
-{:screen: .screen}
-{:pre: .pre}
-{:table: .aria-labeledby="caption"}
-{:codeblock: .codeblock}
-{:tip: .tip}
-{:download: .download}
-{:important: .important}
-{:note: .note}
+{{site.data.keyword.attribute-definition-list}}
 
 
 
@@ -26,7 +17,7 @@ subcollection: log-analysis
 {: #upgrade}
 
 When you provision an instance of the {{site.data.keyword.la_full_notm}} service, you must choose a service plan. Different plans offer different features. You can change the service plan at any time.
-{:shortdesc}
+{: shortdesc}
 
 [Learn more about service plans](/docs/log-analysis?topic=log-analysis-service_plans).
 

@@ -10,23 +10,14 @@ subcollection: log-analysis
 
 ---
 
-{:new_window: target="_blank"}
-{:shortdesc: .shortdesc}
-{:screen: .screen}
-{:pre: .pre}
-{:table: .aria-labeledby="caption"}
-{:codeblock: .codeblock}
-{:tip: .tip}
-{:download: .download}
-{:important: .important}
-{:note: .note}
+{{site.data.keyword.attribute-definition-list}}
 
  
 # Managing presets through the UI
 {: #preset_ui}
 
 To reuse an alert configuration, a service administrator can configure an **alert preset** (alert template).
-{:shortdesc}
+{: shortdesc}
 
 ## Creating a preset
 {: #preset_ui_create}

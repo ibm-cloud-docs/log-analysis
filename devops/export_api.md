@@ -10,24 +10,14 @@ subcollection: log-analysis
 
 ---
 
-{:new_window: target="_blank"}
-{:shortdesc: .shortdesc}
-{:screen: .screen}
-{:pre: .pre}
-{:table: .aria-labeledby="caption"}
-{:codeblock: .codeblock}
-{:tip: .tip}
-{:download: .download}
-{:important: .important}
-{:note: .note}
-{:external: target="_blank" .external}
+{{site.data.keyword.attribute-definition-list}}
 
  
 # Exporting logs programmatically
 {: #export_api}
 
 From an {{site.data.keyword.la_full_notm}} instance, you can export logs programmatically by using the logging REST API. 
-{:shortdesc}
+{: shortdesc}
 
 Consider the following information when you export log data:
 * You export a set of log entries. To define the set of data that you want to export, you can apply filter and searches. You can also specify the time range. 
@@ -82,7 +72,7 @@ The following table lists the query parameters that you can set:
 | `query`     | `string`     | Optional   | Search query. For more information, see [Search Logs](/docs/log-analysis?topic=log-analysis-view_logs#view_logs_step6). |
 | `prefer`    | `string`     | Optional   | Defines the log lines that you want to export. Valid values are `head`, first log lines, and `tail`, last log lines. If not specified, defaults to tail.  |
 | `email`     | `string`     | Optional   | Specifies the email with the downloadable link of your export. By default, the log lines are streamed.|
-| `emailSubject` | `string`     | Optional   | Use to set the subject of the email. </br>Use `%20` to represent a space. For example, a sample value is `Export%20logs`. |
+| `emailSubject` | `string`     | Optional   | Use to set the subject of the email.  \n Use `%20` to represent a space. For example, a sample value is `Export%20logs`. |
 {: caption="Query parameters" caption-side="top"} 
 
 

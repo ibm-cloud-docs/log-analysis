@@ -10,23 +10,14 @@ subcollection: log-analysis
 
 ---
 
-{:new_window: target="_blank"}
-{:shortdesc: .shortdesc}
-{:screen: .screen}
-{:pre: .pre}
-{:table: .aria-labeledby="caption"}
-{:codeblock: .codeblock}
-{:tip: .tip}
-{:download: .download}
-{:important: .important}
-{:note: .note}
+{{site.data.keyword.attribute-definition-list}}
 
  
 # Creating alerts through the UI
 {: #create_alert_ui}
 
 You can create alerts graphically through the UI.
-{:shortdesc}
+{: shortdesc}
 
 
 Complete the following steps to create an alert:
@@ -125,7 +116,6 @@ You can attach multiple notification channels to a view. You can define differen
 Complete the following steps to attach a preset to a view:
 
 1. [Configure a preset (alert template)](/docs/log-analysis?topic=log-analysis-preset_ui#preset_ui_create). 
-
 
 2. Click the **Views** icon ![Views icon](../images/views.png "Views icon"). Select the view name. Then, select **Attach an alert**.
 

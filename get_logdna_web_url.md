@@ -10,23 +10,13 @@ subcollection: log-analysis
 
 ---
 
-{:new_window: target="_blank"}
-{:shortdesc: .shortdesc}
-{:screen: .screen}
-{:pre: .pre}
-{:table: .aria-labeledby="caption"}
-{:codeblock: .codeblock}
-{:tip: .tip}
-{:download: .download}
-{:important: .important}
-{:note: .note}
-{:external: target="_blank" .external}
+{{site.data.keyword.attribute-definition-list}}
 
 # Getting the logging web UI URL
 {: #get_loganalysis_web_url}
 
 After you provision an instance of the {{site.data.keyword.la_full_notm}} service in the {{site.data.keyword.cloud_notm}}, you can view, monitor, and manage events through the {{site.data.keyword.la_full_notm}} web UI. You can launch the logging web UI from the {{site.data.keyword.cloud_notm}} UI or directly from a browser.
-{:shortdesc}
+{: shortdesc}
 
 To get the logging web UI URL, complete the following steps from a terminal:
 

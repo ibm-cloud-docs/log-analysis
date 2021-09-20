@@ -10,22 +10,13 @@ subcollection: log-analysis
 
 ---
 
-{:shortdesc: .shortdesc}
-{:screen: .screen}
-{:pre: .pre}
-{:table: .aria-labeledby="caption"}
-{:codeblock: .codeblock}
-{:tip: .tip}
-{:download: .download}
-{:important: .important}
-{:note: .note}
-{:external: target="_blank" .external}
+{{site.data.keyword.attribute-definition-list}}
 
 # Integrating with {{site.data.keyword.mon_full_notm}}
 {: #monitoring}
 
 You can send alerts to {{site.data.keyword.mon_full_notm}} and manage them through the *Events* view section.
-{:shortdesc}
+{: shortdesc}
 
 ## Configuring an alert
 {: #monitoring-config}
@@ -42,10 +33,10 @@ When you [configure an alert](/docs/log-analysis?topic=log-analysis-alerts) you 
 
 5. Optionally you can specify a **Custom schedule** with alerting limited to a specified timezone, days of the week, or timeframe. To configure a **Custom schedule**:
 
-  1. Select **on** for **Custom schedule**.
-  2. Select the Timezone for the log entries. 
-  3. Select the days of the week when alerts should be generated.
-  4. Optionally specify a time range for the selected days. A graph will help you determine the number of log entries for the timezone and time range.
+    1. Select **on** for **Custom schedule**.
+    2. Select the Timezone for the log entries. 
+    3. Select the days of the week when alerts should be generated.
+    4. Optionally specify a time range for the selected days. A graph will help you determine the number of log entries for the timezone and time range.
 
 6. Configure the Monitoring instance details.
 

@@ -10,23 +10,13 @@ subcollection: log-analysis
 
 ---
 
-{:new_window: target="_blank"}
-{:shortdesc: .shortdesc}
-{:screen: .screen}
-{:pre: .pre}
-{:table: .aria-labeledby="caption"}
-{:codeblock: .codeblock}
-{:tip: .tip}
-{:download: .download}
-{:important: .important}
-{:note: .note}
-{:external: target="_blank" .external}
+{{site.data.keyword.attribute-definition-list}}
 
 # Managing logs for EU-supported resources
 {: #manage_eu_logs}
 
 Across every industry, organizations require tighter controls and visibility into where their data is stored and processed in the {{site.data.keyword.cloud}}. To manage logs that are generated in your **EU-supported account** by using the {{site.data.keyword.la_full_notm}} service, consider the following information:
-{:shortdesc}
+{: shortdesc}
 
 1. You must provision {{site.data.keyword.la_full_notm}} instances in the `EU-DE (Frankfurt)` location. 
 
@@ -100,7 +90,7 @@ Learn more about how to detach an agent, see [Disconnecting a logging agent](/do
 You might have users across different geographies. However, to comply with EU law, only EU personel can see and access log data from your EU-supported infrastructure, apps, and services. To restrict access to users, you can configure an access group, and define policies that restrict access to those users to the instances that you have configured in Frankfurt.
 
 ### Grant permissions to users to manage the logging service
-{: #manage_eu_logs_step5-1}
+{: #manage_eu_logs_step5_1}
 
 To grant administrator permissions to users, complete the following steps:
 1. Create an access group, then add users to it. For example, create an access group named `logging-eu-admins`. [Learn more](/docs/account?topic=account-groups#create_ag).
@@ -110,7 +100,7 @@ To grant administrator permissions to users, complete the following steps:
 
 
 ### Grant permissions to users to view logs
-{: #manage_eu_logs_step5-2}
+{: #manage_eu_logs_step5_2}
 
 To grant viewer permissions to users, complete the following steps:
 1. Create an access group, then add users to it. For example, create an access group named `logging-eu-users`. [Learn more](/docs/account?topic=account-groups#create_ag).

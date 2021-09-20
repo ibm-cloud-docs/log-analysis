@@ -10,22 +10,13 @@ subcollection: log-analysis
 
 ---
 
-{:new_window: target="_blank"}
-{:shortdesc: .shortdesc}
-{:screen: .screen}
-{:pre: .pre}
-{:table: .aria-labeledby="caption"}
-{:codeblock: .codeblock}
-{:tip: .tip}
-{:download: .download}
-{:important: .important}
-{:note: .note}
+{{site.data.keyword.attribute-definition-list}}
 
 # Connecting a logging agent to a standard Kubernetes cluster
 {: #config_agent_kube_cluster}
 
 The logging agent is responsible for collecting and forwarding logs to your {{site.data.keyword.la_full_notm}} instance. After you provision an instance of {{site.data.keyword.la_full}}, you must configure a logging agent for each log source that you want to monitor.
-{:shortdesc}
+{: shortdesc}
 
 To configure your Kubernetes cluster to send logs to your {{site.data.keyword.la_full_notm}} instance, you must install the logging agent in your cluster. 
 * The agent deploys a a logdna-agent pod on each node of your cluster. 
@@ -147,7 +138,7 @@ By default, logs are collected from all namespaces, including `kube-system`, and
 
 
 #### Logging agent V2 and V3
-{: #config_agent_kube_cluster_step5-vx}
+{: #config_agent_kube_cluster_step5_vx}
 
 The logging agent version 2 and version 3 are supported for Kubernetes 1.9+ and later.
 {: note}
@@ -169,7 +160,7 @@ If you need to use a version that has a tag with any of the following formats: `
 
 For more information about the agent tags, see [Understanding image tags](/docs/log-analysis?topic=log-analysis-log_analysis_agent#log_analysis_agent_image_kube_tags).
 
-For more information about the versions that are available, see [Getting information about Kubernetes logging agent images](/docs/log-analysis?topic=log-analysis-log-analysis_agent_image).
+For more information about the versions that are available, see [Getting information about Kubernetes logging agent images](/docs/log-analysis?topic=log-analysis-log_analysis_agent_image).
 
 For example, to configure an agent that sends data to a logging instance in Dallas, you must run the following command:
 
@@ -180,7 +171,7 @@ kubectl apply -f https://assets.us-south.logging.cloud.ibm.com/clients/logdna-ag
 
 
 #### Logging agent V1
-{: #config_agent_kube_cluster_step5-v1}
+{: #config_agent_kube_cluster_step5_v1}
 
 
 The logging agent version 1 is supported for Kubernetes 1.2 to 1.8 only.

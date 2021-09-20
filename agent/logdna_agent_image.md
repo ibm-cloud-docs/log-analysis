@@ -10,22 +10,13 @@ subcollection: log-analysis
 
 ---
 
-{:new_window: target="_blank"}
-{:shortdesc: .shortdesc}
-{:screen: .screen}
-{:pre: .pre}
-{:table: .aria-labeledby="caption"}
-{:codeblock: .codeblock}
-{:tip: .tip}
-{:download: .download}
-{:important: .important}
-{:note: .note}
+{{site.data.keyword.attribute-definition-list}}
 
 # Getting information about Kubernetes logging agent images 
-{: #log-analysis_agent_image}
+{: #log_analysis_agent_image}
 
 Kubernetes logging agent images are public images that are available in {{site.data.keyword.cloud_notm}} through the [{{site.data.keyword.registrylong_notm}}](/docs/Registry?topic=Registry-getting-started) service.
-{:shortdesc}
+{: shortdesc}
 
 You can access the images that are provided by {{site.data.keyword.IBM}} by using the command line.
 

@@ -10,24 +10,14 @@ subcollection: log-analysis
 
 ---
 
-{:new_window: target="_blank"}
-{:shortdesc: .shortdesc}
-{:screen: .screen}
-{:pre: .pre}
-{:table: .aria-labeledby="caption"}
-{:codeblock: .codeblock}
-{:tip: .tip}
-{:download: .download}
-{:important: .important}
-{:note: .note}
-{:external: target="_blank" .external}
+{{site.data.keyword.attribute-definition-list}}
 
  
 # Controlling who can export logs
 {: #export_config}
 
 For each {{site.data.keyword.la_full_notm}} instance, you can configure whether users can export data.
-{:shortdesc}
+{: shortdesc}
 
 When the export configuration setting is enabled, you can export data in JSONL format from an {{site.data.keyword.la_full_notm}} instance.
 

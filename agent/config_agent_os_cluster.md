@@ -10,23 +10,13 @@ subcollection: log-analysis
 
 ---
 
-{:new_window: target="_blank"}
-{:shortdesc: .shortdesc}
-{:screen: .screen}
-{:pre: .pre}
-{:table: .aria-labeledby="caption"}
-{:codeblock: .codeblock}
-{:tip: .tip}
-{:download: .download}
-{:important: .important}
-{:note: .note}
-{:external: target="_blank" .external}
+{{site.data.keyword.attribute-definition-list}}
 
 # Connecting a logging agent to an OpenShift cluster
 {: #config_agent_os_cluster}
 
 The logging agent is responsible for collecting and forwarding logs to your {{site.data.keyword.la_full_notm}} instance. After you provision an instance of {{site.data.keyword.la_full}}, you must configure a logging agent for each log source that you want to monitor.
-{:shortdesc}
+{: shortdesc}
 
 To configure your Kubernetes cluster to send logs to your {{site.data.keyword.la_full_notm}} instance, you must install a *logging-agent* pod on each node of your cluster. The logging agent reads log files from the pod where it is installed, and forwards the log data to your logging instance.
 
@@ -183,7 +173,7 @@ By default, logs are collected from all namespaces, including `kube-system`, and
 
 
 #### Logging agent V2 and V3
-{: #config_agent_os_cluster_step4-vx}
+{: #config_agent_os_cluster_step4_vx}
 
 The logging agent version 2 and version 3 are supported for Red Hat OpenShift (version 4.5 or later).
 {: important} 
@@ -205,7 +195,7 @@ If you need to use a version that has a tag with any of the following formats: `
 
 For more information about the agent tags, see [Understanding image tags](/docs/log-analysis?topic=log-analysis-log_analysis_agent#log_analysis_agent_image_kube_tags).
 
-For more information about the versions that are available, see [Getting information about Kubernetes logging agent images](/docs/log-analysis?topic=log-analysis-log-analysis_agent_image).
+For more information about the versions that are available, see [Getting information about Kubernetes logging agent images](/docs/log-analysis?topic=log-analysis-log_analysis_agent_image).
 
 For example, to configure an agent that sends data to a logging instance in Dallas, you must run the following command:
 
@@ -216,7 +206,7 @@ kubectl apply -f https://assets.us-south.logging.cloud.ibm.com/clients/logdna-ag
 
 
 #### Logging agent V1
-{: #config_agent_os_cluster_step4-v1}
+{: #config_agent_os_cluster_step4_v1}
 
 Choose one of the following commands to install and configure the logging agent version 1 by using `kubectl` commands::
 

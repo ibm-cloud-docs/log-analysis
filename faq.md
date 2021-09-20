@@ -10,20 +10,7 @@ subcollection: log-analysis
 
 ---
 
-{:new_window: target="_blank"}
-{:shortdesc: .shortdesc}
-{:screen: .screen}
-{:pre: .pre}
-{:table: .aria-labeledby="caption"}
-{:codeblock: .codeblock}
-{:tip: .tip}
-{:note: .note}
-{:important: .important}
-{:deprecated: .deprecated}
-{:download: .download}
-{:faq: data-hd-content-type='faq'}
-{:term: .term}
-{:external: target="_blank" .external}
+{{site.data.keyword.attribute-definition-list}}
 
 # Frequently asked questions (FAQs)
 {: #faq}

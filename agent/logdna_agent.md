@@ -10,23 +10,13 @@ subcollection: log-analysis
 
 ---
 
-{:new_window: target="_blank"}
-{:shortdesc: .shortdesc}
-{:screen: .screen}
-{:pre: .pre}
-{:table: .aria-labeledby="caption"}
-{:codeblock: .codeblock}
-{:tip: .tip}
-{:download: .download}
-{:important: .important}
-{:note: .note}
-{:external: target="_blank" .external}
+{{site.data.keyword.attribute-definition-list}}
 
 # Logging agent
 {: #log_analysis_agent}
 
 The logging agent collects and forwards logs to your {{site.data.keyword.la_full_notm}} instance. After you provision an {{site.data.keyword.la_full}} instance, you must configure a logging agent for each log source that you want to monitor.
-{:shortdesc}
+{: shortdesc}
 
 * You can configure a logging agent to connect to an {{site.data.keyword.la_full_notm}} instance through the public network or through the private network. By default, the agent connects through the public network. To connect to {{site.data.keyword.cloud}} services over a private network, you must have access to the classic infrastructure and [enable virtual routing and forwarding (VRF)](/docs/account?topic=account-vrf-service-endpoint) and connectivity to service endpoints for your account.
 * The logging agent authenticates by using the logging ingestion key and opens a secure web socket to the {{site.data.keyword.la_full_notm}} ingestion servers.
@@ -46,7 +36,7 @@ logging agent images for Kubernetes clusters are public images that are availabl
 
 * The {{site.data.keyword.registrylong_notm}} includes *Vulnerability Advisor* features that scan for potential security issues and vulnerabilities. Vulnerability Advisor checks for vulnerable packages in specific Docker base images, and known vulnerabilities in app configuration settings. When vulnerabilities are found, information about the vulnerability is provided. You can use this information to resolve security issues so that containers are not deployed from vulnerable images. 
 
-To get details about the logging agent images, see [Getting information about logging agent images](/docs/log-analysis?topic=log-analysis-log-analysis_agent_image).
+To get details about the logging agent images, see [Getting information about logging agent images](/docs/log-analysis?topic=log-analysis-log_analysis_agent_image).
 
 
 ### Understanding image tags
@@ -75,7 +65,7 @@ The following table outlines the tagging convention adopted and the agent update
 
 | Tag | Logging agent auto-update enabled | More info |
 |-----|----------------------------------|-----------|
-| `X` |  YES  | The logging agent auto-updates when a new minor version releases. </br>The logging agent does not update to a new major version, as these updates may require configuration changes. |
+| `X` |  YES  | The logging agent auto-updates when a new minor version releases.  \n The logging agent does not update to a new major version, as these updates may require configuration changes. |
 | `X.Y`  | YES | The logging agent auto-updates when a new patch version is released. |
 | `X.Y.Z` | YES | The logging agent auto-updates when a new vulnerability fix is released. The agent code does not change, but the included libraries have vulnerability fixes. |
 | `X.Y.Z-<date>.[hash]` | NO | The logging agent never updates. If you use this tag, make sure you are watching for new agent releases that have vulnerability fixes. |
@@ -212,8 +202,8 @@ You can customize a logging agent by configuring parameters for Linux agents, or
 | Parameter | Description                                          |
 |-----------|------------------------------------------------------|
 | `tags`    | Define tags to group hosts automatically into dynamic groups. |
-| `logdir`  | Define custom paths that you want the agent to monitor. </br>Separate multiple paths by using commas. You can use glob patterns. You can configure specific files. Enter glob patterns by using double quotation marks. | 
-| `exclude` | Define the files that you do not want the logging agent to monitor. **Note:** These files can be located in any of the paths that are defined through the logdir parameter. </br>Separate multiple files by using commas. You can use glob patterns. You can configure specific files. |
+| `logdir`  | Define custom paths that you want the agent to monitor.  \n Separate multiple paths by using commas. You can use glob patterns. You can configure specific files. Enter glob patterns by using double quotation marks. | 
+| `exclude` | Define the files that you do not want the logging agent to monitor. **Note:** These files can be located in any of the paths that are defined through the logdir parameter.  \n Separate multiple files by using commas. You can use glob patterns. You can configure specific files. |
 | `exclude_regex` | Define regex patterns to filter out any lines that match the pattern. Do not include leading and trailing `/`. | 
 | `hostname` | Define the hostname. This value overrides the operating system hostname. |
 | `autoupdate` | Set to `1` to update the agent automatically when the public repo agent definition is updated. Set to `0` to disable this feature. |
@@ -232,14 +222,14 @@ You can customize a logging agent by configuring parameters for Linux agents, or
 | `LOGDNA_API_HOST`        | {{site.data.keyword.la_full_notm}} API ingestion endpoint.                        |                                        | `api.us-south.logging.cloud.ibm.com`   |
 | `LOGDNA_ENDPOINT`        | Ingestion log path.                                   | `/logs/agent/`                         |                       |
 | `LOGDNA_HOSTNAME`        | Log Source name.                                      |                                        | `MyCluster`                            | 
-| `LOGDNA_LOG_DIRS`        | Defines custom paths that you want the agent to monitor. </br>Separate multiple paths by using commas. </br>You can use glob patterns. Use double quotation marks to add a globe pattern.   | `/var/log/`   | `/output/,/mylogs/myapplogs/` |
-| `LOGDNA_INCLUSION_RULES` | Custom rules that you can define to configure what log files to monitor. </br>These files can be located in any of the paths that are defined through the logdir parameter. </br>You can use glob patterns. For more information, see [Glober rules](https://github.com/CJP10/globber){: external}   |  | `*.json,*.test` |
-| `LOGDNA_INCLUSION_REGEX_RULES` | Regex custom rules that you can define to configure what log files to monitor. For more information, see [regex syntax](https://docs.rs/regex/1.2.1/regex/#syntax){: external} </br>These files can be located in any of the paths that are defined through the logdir parameter.  |  |  |
-| `LOGDNA_EXCLUSION_RULES` | Custom rules that you can define to configure what log files to exclude from being monitored. </br>You can use glob patterns. For more information, see [Glober rules](https://github.com/CJP10/globber){: external}  | | |
+| `LOGDNA_LOG_DIRS`        | Defines custom paths that you want the agent to monitor.  \n Separate multiple paths by using commas.  \n You can use glob patterns. Use double quotation marks to add a globe pattern.   | `/var/log/`   | `/output/,/mylogs/myapplogs/` |
+| `LOGDNA_INCLUSION_RULES` | Custom rules that you can define to configure what log files to monitor.  \n These files can be located in any of the paths that are defined through the logdir parameter.  \n You can use glob patterns. For more information, see [Glober rules](https://github.com/CJP10/globber){: external}   |  | `*.json,*.test` |
+| `LOGDNA_INCLUSION_REGEX_RULES` | Regex custom rules that you can define to configure what log files to monitor. For more information, see [regex syntax](https://docs.rs/regex/1.2.1/regex/#syntax){: external}  \n These files can be located in any of the paths that are defined through the logdir parameter.  |  |  |
+| `LOGDNA_EXCLUSION_RULES` | Custom rules that you can define to configure what log files to exclude from being monitored.  \n You can use glob patterns. For more information, see [Glober rules](https://github.com/CJP10/globber){: external}  | | |
 | `LOGDNA_EXCLUSION_REGEX_RULES` | Regex custom rules that you can define to configure what log files to exclude from being monitored. |  | `/var/log/containers/**,/var/log/pods/**`  |
-| `LOGDNA_USE_SSL`          | Boolean that defines whether TLS 1.2 should be used when the agent sends logs to the logging instance. </br>The default value is set to `true`.  | `true` | `true` |
-| `LOGDNA_USE_COMPRESSION`  | Boolean that defines whether compression is enabled when the agent sends logs to the logging instance. </br> The default value is set to `true`. | `true` | `true` |
-| `LOGDNA_GZIP_LEVEL`       | Compression level for gzip. </br>Valid values are: `1`, `2`, `3`, `4`, `5`, `6`, `7`, `8`, `9` </br>When you set this variable to `1`, you are configuring the agent to use the fastest compression speed but at a lower ratio. When you set this variable to `9`, you are configuring the agent to use the highest compression ratio but at a lower speed.  | `2` | `6` |
+| `LOGDNA_USE_SSL`          | Boolean that defines whether TLS 1.2 should be used when the agent sends logs to the logging instance.  \n The default value is set to `true`.  | `true` | `true` |
+| `LOGDNA_USE_COMPRESSION`  | Boolean that defines whether compression is enabled when the agent sends logs to the logging instance.  \n  The default value is set to `true`. | `true` | `true` |
+| `LOGDNA_GZIP_LEVEL`       | Compression level for gzip.  \n Valid values are: `1`, `2`, `3`, `4`, `5`, `6`, `7`, `8`, `9`  \n When you set this variable to `1`, you are configuring the agent to use the fastest compression speed but at a lower ratio. When you set this variable to `9`, you are configuring the agent to use the highest compression ratio but at a lower speed.  | `2` | `6` |
 | `LOGDNA_TAGS` | Define tags to group hosts automatically into dynamic groups. |  | `production,serviceA` |
 {: caption="Table 7. Tags that are available for the logging agent V2" caption-side="top"}
 
@@ -255,14 +245,14 @@ You can customize a logging agent by configuring parameters for Linux agents, or
 | `LDAPIHOST`              | {{site.data.keyword.la_full_notm}} API ingestion endpoint.                        |                                        | `api.us-south.logging.cloud.ibm.com`   |
 | `LDLOGPATH`              | Ingestion log path.                                   | `/logs/agent/`                         |                       |
 | `LOGDNA_HOSTNAME`        | Log Source name.                                      |                                        | `MyCluster`                            | 
-| `LOG_DIRS`            | Defines custom paths that you want the agent to monitor. </br>Separate multiple paths by using commas. </br>You can use glob patterns. Use double quotation marks to add a globe pattern.  | `var/log` | `/output/,/mylogs/myapplogs/` |
-| `LOGDNA_INCLUDE`     | Custom rules that you can define to configure what log files to monitor. </br>These files can be located in any of the paths that are defined through the logdir parameter. </br>You can use glob patterns. For more information, see [Glober rules](https://github.com/CJP10/globber){: external}  |  | `*.json,*.test` |
-| `LOGDNA_INCLUDE_REGEX` | Regex custom rules that you can define to configure what log files to monitor. For more information, see [regex syntax](https://docs.rs/regex/1.2.1/regex/#syntax){: external} </br>These files can be located in any of the paths that are defined through the logdir parameter.  | | |
-| `LOGDNA_EXCLUDE`     | Custom rules that you can define to configure what log files to exclude from being monitored. </br>These files can be located in any of the paths that are defined through the logdir parameter. </br>Separate multiple files by using commas. You can use glob patterns. You can configure specific files. | | |
+| `LOG_DIRS`            | Defines custom paths that you want the agent to monitor.  \n Separate multiple paths by using commas.  \n You can use glob patterns. Use double quotation marks to add a globe pattern.  | `var/log` | `/output/,/mylogs/myapplogs/` |
+| `LOGDNA_INCLUDE`     | Custom rules that you can define to configure what log files to monitor.  \n These files can be located in any of the paths that are defined through the logdir parameter.  \n You can use glob patterns. For more information, see [Glober rules](https://github.com/CJP10/globber){: external}  |  | `*.json,*.test` |
+| `LOGDNA_INCLUDE_REGEX` | Regex custom rules that you can define to configure what log files to monitor. For more information, see [regex syntax](https://docs.rs/regex/1.2.1/regex/#syntax){: external}  \n These files can be located in any of the paths that are defined through the logdir parameter.  | | |
+| `LOGDNA_EXCLUDE`     | Custom rules that you can define to configure what log files to exclude from being monitored.  \n These files can be located in any of the paths that are defined through the logdir parameter.  \n Separate multiple files by using commas. You can use glob patterns. You can configure specific files. | | |
 | `LOGDNA_EXCLUDE_REGEX` | Regex custom rules that you can define to configure what log files to exclude from being monitored. | | `/var/log/containers/*,/var/log/pods/*`  |
-| `LDLOGSSL` | Boolean that defines whether TLS 1.2 should be used when the agent sends logs to the logging instance. </br>The default value is set to `true`. | `true` | `true` |
-| `COMPRESS` | Boolean that defines whether compression is enabled when the agent sends logs to the logging instance. </br> The default value is set to `true`. | `true` | `true` |
-| `GZIP_COMPRESS_LEVEL` | Compression level for gzip. </br>Valid values are: `1`, `2`, `3`, `4`, `5`, `6`, `7`, `8`, `9` </br>When you set this variable to `1`, you are configuring the agent to use the fastest compression speed but at a lower ratio. When you set this variable to `9`, you are configuring the agent to use the highest compression ratio but at a lower speed.  | `2` | `6` |
+| `LDLOGSSL` | Boolean that defines whether TLS 1.2 should be used when the agent sends logs to the logging instance.  \n The default value is set to `true`. | `true` | `true` |
+| `COMPRESS` | Boolean that defines whether compression is enabled when the agent sends logs to the logging instance.  \n  The default value is set to `true`. | `true` | `true` |
+| `GZIP_COMPRESS_LEVEL` | Compression level for gzip.  \n Valid values are: `1`, `2`, `3`, `4`, `5`, `6`, `7`, `8`, `9`  \n When you set this variable to `1`, you are configuring the agent to use the fastest compression speed but at a lower ratio. When you set this variable to `9`, you are configuring the agent to use the highest compression ratio but at a lower speed.  | `2` | `6` |
 | `LOGDNA_TAGS` | Define tags to group hosts automatically into dynamic groups. |  | `production,serviceA`  |
 {: caption="Table 8. Tags that are available for the logging agent V2" caption-side="top"}
 

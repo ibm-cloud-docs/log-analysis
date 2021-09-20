@@ -10,23 +10,14 @@ subcollection: log-analysis
 
 ---
 
-{:new_window: target="_blank"}
-{:shortdesc: .shortdesc}
-{:screen: .screen}
-{:pre: .pre}
-{:table: .aria-labeledby="caption"}
-{:codeblock: .codeblock}
-{:tip: .tip}
-{:download: .download}
-{:important: .important}
-{:note: .note}
+{{site.data.keyword.attribute-definition-list}}
 
  
 # Managing access with IAM
 {: #iam}
 
 {{site.data.keyword.iamlong}} (IAM) enables you to securely authenticate users and control access to all cloud resources consistently in the {{site.data.keyword.cloud_notm}}. 
-{:shortdesc}
+{: shortdesc}
 
 **Every user that accesses the {{site.data.keyword.la_full_notm}} service in your account must be assigned an access policy with an IAM user role defined.** The policy determines what actions the user can perform within the context of the service or instance you select. The allowable actions are customized and defined as operations that are allowed to be performed on the service. The actions are then mapped to IAM user roles.
 
@@ -110,8 +101,8 @@ Use the following table to identify the service roles that you can grant a user 
 | `Manage how views and dashboards are grouped in categories` | ![Check mark icon](images/checkmark-icon.svg "Check mark icon indicating correct usage") |      |   |
 | `Export the configuration of views, alerts, dashboards, and templates`  | ![Check mark icon](images/checkmark-icon.svg "Check mark icon indicating correct usage") |     |   |
 | `Export log data`     | ![Check mark icon](images/checkmark-icon.svg "Check mark icon indicating correct usage")  | ![Check mark icon](images/checkmark-icon.svg "Check mark icon indicating correct usage") | |
-| `View ingestion keys`                           | ![Check mark icon](images/checkmark-icon.svg "Check mark icon indicating correct usage")      | | |
-| `View service keys`                           | ![Check mark icon](images/checkmark-icon.svg "Check mark icon indicating correct usage")      | ![Check mark icon](images/checkmark-icon.svg "Check mark icon indicating correct usage") | |
+| `View ingestion keys`                           | ![Check mark icon](images/checkmark-icon.svg "Check mark icon indicating correct usage")   |  |     |
+| `View service keys`                           | ![Check mark icon](images/checkmark-icon.svg "Check mark icon indicating correct usage")      | ![Check mark icon](images/checkmark-icon.svg "Check mark icon indicating correct usage") |     |
 | `Configure alerts`                                                      | ![Check mark icon](images/checkmark-icon.svg "Check mark icon indicating correct usage")      | ![Check mark icon](images/checkmark-icon.svg "Check mark icon indicating correct usage")                    |    |
 | `View usage`                                                            | ![Check mark icon](images/checkmark-icon.svg "Check mark icon indicating correct usage")      | ![Check mark icon](images/checkmark-icon.svg "Check mark icon indicating correct usage")                   |      |
 | `Create views`                                                          | ![Check mark icon](images/checkmark-icon.svg "Check mark icon indicating correct usage")      | ![Check mark icon](images/checkmark-icon.svg "Check mark icon indicating correct usage")                    |      |
@@ -137,10 +128,10 @@ The following table identifies the IAM actions that are assigned to the platform
 
 | Role type         | Role              | IAM actions |
 |-------------------|-------------------|--------------|
-| Platform          | `administrator`   | `logdna.dashboard.view` </br>`logdna.dashboard.manage` | 
-| Service           | `manager`         | `logdna.dashboard.view` </br>`logdna.dashboard.manage` |
-| Service           | `writer`          | `logdna.dashboard.view` </br>`logdna.dashboard.member` |
-| Service           | `reader`          | `logdna.dashboard.view` </br>`logdna.dashboard.read` |
+| Platform          | `administrator`   | `logdna.dashboard.view`  \n `logdna.dashboard.manage` | 
+| Service           | `manager`         | `logdna.dashboard.view`  \n `logdna.dashboard.manage` |
+| Service           | `writer`          | `logdna.dashboard.view`  \n `logdna.dashboard.member` |
+| Service           | `reader`          | `logdna.dashboard.view`  \n `logdna.dashboard.read` |
 {: caption="Table 3. IAM actions assigned to platform and service roles" caption-side="top"}
 
 
