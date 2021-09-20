@@ -12,6 +12,7 @@ subcollection: log-analysis
 
 {{site.data.keyword.attribute-definition-list}}
 
+
 # Grouping data by using tags
 {: #adding_tags}
 
