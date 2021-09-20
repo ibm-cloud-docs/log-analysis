@@ -169,13 +169,13 @@ toc:
           links: 
             - link: 
                 label: Ingestion API
-                href: {DomainName}/apidocs/log-analysis#ingest
+                href: https://{DomainName}/apidocs/log-analysis#ingest
             - link:
                 label: Export API
-                href: {DomainName}/apidocs/log-analysis#export
+                href: https://{DomainName}/apidocs/log-analysis#export
             - link:
                 label: Configuration API
-                href: {DomainName}/apidocs/log-analysis#create-view
+                href: https://{DomainName}/apidocs/log-analysis#create-view
   
       - topicgroup: 
           label: High availability and disaster recovery
