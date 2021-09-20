@@ -25,26 +25,23 @@ You can use {{site.data.keyword.la_full_notm}} to manage system and application 
 
 {{site.data.keyword.la_full_notm}} provides the following features.
 
-### Troubleshooting logs in real time to diagnose issues and identify problems
-{: #getting-started-features-1}
+- Troubleshooting logs in real time to diagnose issues and identify problems
 
-By using the *live streaming tail* feature, developers and DevOps teams can diagnose issues, analyze stack traces and exceptions, identify the source of errors, and monitor different log sources through a single view. 
+    By using the *live streaming tail* feature, developers and DevOps teams can diagnose issues, analyze stack traces and exceptions, identify the source of errors, and monitor different log sources through a single view. 
 
-### Issuing alerts to be notified of important actions
-{: #getting-started-features-2}
+- Issuing alerts to be notified of important actions
  
-DevOps teams can configure the system so critical or warning alert notifications are sent to email, Slack, webHook, or PagerDuty.  This helps DevOps teams to act promptly on important application and services events.
+    DevOps teams can configure the system so critical or warning alert notifications are sent to email, Slack, webHook, or PagerDuty.  This helps DevOps teams to act promptly on important application and services events.
 
-### Exporting logs to a local file for analysis or to an archive service to meet auditing requirements
-{: #getting-started-features-3}
+- Exporting logs to a local file for analysis or to an archive service to meet auditing requirements
 
-You can export specific log lines to a local copy or archive logs from {{site.data.keyword.la_full_notm}} to {{site.data.keyword.cloud}} Object Storage.
-Log lines are exported in JSON line format. Logs are archived in JSON format with the metadata that is associated with each line. 
+    You can export specific log lines to a local copy or archive logs from {{site.data.keyword.la_full_notm}} to {{site.data.keyword.cloud}} Object Storage.
 
-### Controlling logging infrastructure costs by customizing {{site.data.keyword.la_full_notm}} managed logs
-{: #getting-started-features-4}
+    Log lines are exported in JSON line format. Logs are archived in JSON format with the metadata that is associated with each line. 
 
-You can control the cost of your {{site.data.keyword.cloud_notm}} logging infrastructure by configuring the log sources that are collecting and managing logs. 
+- Controlling logging infrastructure costs by customizing {{site.data.keyword.la_full_notm}} managed logs
+
+    You can control the cost of your {{site.data.keyword.cloud_notm}} logging infrastructure by configuring the log sources that are collecting and managing logs. 
 
 
 ## Overview
