@@ -23,7 +23,7 @@ You can send alerts to {{site.data.keyword.mon_full_notm}} and manage them throu
 
 When you [configure an alert](/docs/log-analysis?topic=log-analysis-alerts) you can have that alert sent to {{site.data.keyword.mon_full_notm}}.
 
-1. When configuring your alert, click ![PagerDuty icon](../images/sysdig.png "PagerDuty icon").
+1. When configuring your alert, click ![Sysdig icon](../images/sysdig.png "Sysdig icon").
 
 2. Select if you want the alert to be sent when the condition exists (**Presence**) or does not exist (**Absence**).
 

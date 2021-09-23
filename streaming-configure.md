@@ -91,15 +91,15 @@ To restrict access to 1 topic, complete the following steps:
 
 1. From the menu bar, click **Manage** &gt; **Access (IAM)**, and select **Service IDS**.
 
-    ![Create a topic.](images/streaming-credentials2.png "Create a topic") 
+    ![Service IDs](images/streaming-credentials2.png "Service IDs") 
 
 2. Select the service ID.
 3. Select **Access policies**.
 4. Select the policy and modify it to specify the topic.
 
-    ![Create a topic.](images/streaming-credentials-2.png "Create a topic") 
+    ![Edit policy](images/streaming-credentials-2.png "Edit policy") 
 
-    ![Create a topic.](images/streaming-credentials-3.png "Create a topic") 
+    ![Modify policy](images/streaming-credentials-3.png "Modify policy") 
 
 5. [Get credentials using the IBM Cloud CLI](/docs/EventStreams?topic=EventStreams-connecting#connect_enterprise_external_cli) and make note of the api key and broker URL values.
 
