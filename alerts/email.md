@@ -63,8 +63,8 @@ After you configure an alert on a view and receive a notification email, complet
 
     In the email, there is a section that includes the following text: 
 
-    ```
-     Mute these alerts for   [1 Hour] [6 Hours] [12 Hours] [1 Day]
+    ```text
+    Mute these alerts for   [1 Hour] [6 Hours] [12 Hours] [1 Day]
     ```
     {: screen}
 
@@ -74,7 +74,7 @@ After you configure an alert on a view and receive a notification email, complet
 
     For example, you can get a message that indicates the following:
 
-    ```
+    ```text
     Email alerting for MyView has been muted for an hour.
 
     Unmute
@@ -99,8 +99,8 @@ You can manage alerts through the **ALERTS** dashboard.
 
     You can see the list of alerts that are muted. Each entry informs about the view where notifications are muted, the user who requested the action, and the UTC time when notifications will be enabled. 
 
-2. Select an alert that you want to unmute.
+3. Select an alert that you want to unmute.
 
-3. Click **Unmute**.
+4. Click **Unmute**.
 
 

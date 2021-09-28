@@ -40,7 +40,7 @@ Complete the following steps to detach 1 alert that is configured for a view:
 2. Identify the view with the alert.
 3. Select **Edit alert**.
 4. Select the alerdefinition that you want to delete.
-4. Click **Delete Alert Channel**.
+5. Click **Delete Alert Channel**.
 
 
 

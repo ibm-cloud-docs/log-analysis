@@ -132,7 +132,7 @@ Use of the logging Configuration REST API is done by adding a valid service key 
 
 For example, in a cURL request, you must set the `content-type` header as follows:
 
-```
+```text
 -H 'servicekey: <SERVICE_KEY>'
 ```
 {: codeblock}
@@ -153,7 +153,7 @@ You must pass the `content-type` in the header parameter (`-H`) of your requests
 
 For example, in a cURL request, you must set the `content-type` header as follows:
 
-```
+```text
 -H 'content-type: application/json'
 ```
 {: codeblock}
@@ -197,7 +197,7 @@ In the logging web UI, the value that is set for **Source** in the **Line identi
 
 For example, to enter multiple hosts, you must separate the hosts with a comma:
 
-```
+```text
 "hosts": ["is", "event-streams"]
 ```
 {: codeblock}
@@ -211,7 +211,7 @@ Specifies the service instance ID that generates the log.
 
 For example, to enter multiple apps, you must separate the apps with a comma:
 
-```
+```text
 "apps": ["apps1", "apps2"]
 ```
 {: codeblock}
@@ -274,7 +274,7 @@ Specifies the classification of views.
 
 For example, to associate a view to a category named `My category`, you can set it as follows:
 
-```
+```text
 "category": ["My category"],
 ```
 {: codeblock}
@@ -296,7 +296,7 @@ In these examples, `<SERVICE_KEY>` is the [service key](/docs/log-analysis?topic
 
 The following sample creates a view.
 
-```
+```text
 curl https://api.us-south.logging.cloud.ibm.com/v1/config/view \
   -H 'content-type: application/json' \
   -H 'servicekey: <SERVICE_KEY>' \
@@ -318,7 +318,7 @@ curl https://api.us-south.logging.cloud.ibm.com/v1/config/view \
 
 The following sample creates a view and associates an email alert with the view.
 
-```
+```text
 curl https://api.eu-de.logging.cloud.ibm.com/v1/config/view \
         -H 'content-type: application/json' \
         -H 'servicekey: <SERVICE_KEY>' \
@@ -350,7 +350,7 @@ curl https://api.eu-de.logging.cloud.ibm.com/v1/config/view \
 
 The following modifies a view by adding an alert.
 
-```
+```text
 curl --request PUT \
   --url https://api.us-south.logging.cloud.ibm.com/v1/config/view/<VIEWID> \
   --header 'Content-Type: application/json' \
@@ -384,7 +384,7 @@ curl --request PUT \
 
 The following sample deletes a view.
 
-```
+```text
 curl --request DELETE \
   --url https://api.us-south.logging.cloud.ibm.com/v1/config/view/<VIEWID> \
   -H 'content-type: application/json' \

@@ -1,7 +1,7 @@
 {:navgroup: .navgroup}
 {:topicgroup: .topicgroup}
 
-{: .toc subcollection="log-analysis" version="2" audience="service" category="logging_monitoring" href="/docs/log-analysis?topic=log-analysis-getting-started#getting-started" console-page="/catalog/services/ibm-log-analysis" product-page="https://www.ibm.com/cloud/log-analysis" path="log-analysis"}
+{: .toc subcollection="log-analysis" version="2" audience="service" category="logging_monitoring" href="/docs/log-analysis?topic=log-analysis-getting-started#getting-started" path="log-analysis"}
 Log Analysis
 
     {: .navgroup id="learn"}
@@ -10,7 +10,7 @@ Log Analysis
     agent/logdna_agent.md
 
     {: .topicgroup}
-    Logging IBM Cloud services
+    Logging with IBM Cloud services
         platform-logs/config_svc_logs.md
         platform-logs/cloud_services.md
         platform-logs/cloud_services_locations.md
@@ -21,10 +21,12 @@ Log Analysis
     Logging with infrastructure
         infrastructure/infra_logging.md
         infrastructure/monitor_cfapp_logs.md
-        tutorial/kube.md
+        infrastructure/kube.md
         infrastructure/ubuntu-baremetal.md
         infrastructure/ubuntu-vpc.md
         infrastructure/syslog.md
+        infrastructure/aix.md
+        infrastructure/windows.md
 
     {: .topicgroup}
     Logging with applications
@@ -61,15 +63,16 @@ Log Analysis
         iam_manage_events.md
         iam_view_events.md
         devops/work_iam.md
-        
-   {: .topicgroup}
-    DevOps tasks
+
+    {: .topicgroup}
+    DevOps admin tasks
         devops/archive.md
         devops/control_usage.md
         devops/exclusion_rules.md
         devops/ingestion_key.md
         devops/service_keys.md
         devops/reuse_resource_definitions.md
+        sqlquery.md
 
     {: .topicgroup}
     Logging agent
@@ -92,7 +95,6 @@ Log Analysis
     {: .topicgroup}
     Exporting logs
         devops/export_config.md
-        devops/service_keys.md
         devops/export.md
         devops/export_api.md
 
@@ -111,7 +113,7 @@ Log Analysis
         streaming-configure.md
         streaming-monitor.md
         streaming-conditional.md
-    
+
     devops/view_logs.md
 
     {: .topicgroup}
@@ -133,9 +135,7 @@ Log Analysis
     regions.md
     service_plans.md
     core/shared-responsibilities.md
-    core/ha-dr.md
-    service-ip-changes.md
-    
+
     {: .topicgroup}
     Logging CLI
         /log-analysis-cli-plugin/log-analysis-cli-plugin-log-analysis-cli
@@ -145,10 +145,15 @@ Log Analysis
         [Ingestion API](https://cloud.ibm.com/apidocs/log-analysis#ingest)
         [Export API](https://cloud.ibm.com/apidocs/log-analysis#export)
         [Configuration API](https://cloud.ibm.com/apidocs/log-analysis#create-view)
+
+    {: .topicgroup}
+    High availability and disaster recovery
+        core/ha-dr.md
+
+    service-ip-changes.md
     {: .navgroup-end}
 
     {: .navgroup id="help"}
     gettinghelp.md
     faq.md
     {: .navgroup-end}
-

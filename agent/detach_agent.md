@@ -37,38 +37,38 @@ To stop your Kubernetes cluster from forwarding logs to your logging instance, c
 
     First, get the command to set the environment variable and download the Kubernetes configuration files.
 
-    ```
+    ```text
     ibmcloud ks cluster config --cluster <cluster_name_or_ID>
     ```
     {: codeblock}
 
 3. Remove the secret from your Kubernetes cluster. The Kubernetes secret contains the logging ingestion key. Run the following command:
 
-    ```
+    ```text
     kubectl delete secret logdna-agent-key -n ibm-observe
     ```
     {: codeblock}
 
 4. Remove the logging agent on every worker(node) of your Kubernetes cluster. Run the following command:
 
-| Type of endpoint | Command |
-|------------------|---------|
-| Public endpoint  | `kubectl delete -f https://assets.<REGION>.logging.cloud.ibm.com/clients/logdna-agent/<VERSION>/agent-resources.yaml` |
-| Private endpoint | `kubectl delete -f https://assets.<REGION>.logging.cloud.ibm.com/clients/logdna-agent/<VERSION>/agent-resources-private.yaml` |
+    | Type of endpoint | Command |
+    |------------------|---------|
+    | Public endpoint  | `kubectl delete -f https://assets.<REGION>.logging.cloud.ibm.com/clients/logdna-agent/<VERSION>/agent-resources.yaml` |
+    | Private endpoint | `kubectl delete -f https://assets.<REGION>.logging.cloud.ibm.com/clients/logdna-agent/<VERSION>/agent-resources-private.yaml` |
 
-Where
+    Where
 
-- `<REGION>` indicates the region where the logging instance is available. For more information about regions, see [Locations](/docs/log-analysis?topic=log-analysis-regions).
-- `<VERSION>` indicates the version of the agent that you have deployed. You must use a version that has a tag with the following format: `X.Y.Z` or use your custom yaml file. 
+    - `<REGION>` indicates the region where the logging instance is available. For more information about regions, see [Locations](/docs/log-analysis?topic=log-analysis-regions).
+    - `<VERSION>` indicates the version of the agent that you have deployed. You must use a version that has a tag with the following format: `X.Y.Z` or use your custom yaml file. 
 
-To verify that the logging agent is deleted successfully, run the following command:
+5. To verify that the logging agent is deleted successfully, run the following command:
 
-```
-kubectl get pods -n ibm-observe
-```
-{: codeblock}
+    ```text
+    kubectl get pods -n ibm-observe
+    ```
+    {: codeblock}
 
-You should not see any logging pods.
+    You should not see any logging pods.
 
 ### Detaching a logging agent by using kubectl commands
 {: #detach_agent_kube_kubectl_v1}
@@ -83,35 +83,33 @@ To stop your Kubernetes cluster from forwarding logs to your logging instance, c
 
     First, get the command to set the environment variable and download the Kubernetes configuration files.
 
-    ```
+    ```text
     ibmcloud ks cluster config --cluster <cluster_name_or_ID>
     ```
     {: codeblock}
 
 3. Remove the secret from your Kubernetes cluster. The Kubernetes secret contains the logging ingestion key. Run the following command:
 
-    ```
+    ```text
     kubectl delete secret logdna-agent-key -n ibm-observe
     ```
     {: codeblock}
 
 4. Remove the logging agent on every worker(node) of your Kubernetes cluster. The logging agent is responsible for collecting and forwarding your logs. Run the following command:
 
-    ```
+    ```text
     kubectl delete daemonset logdna-agent -n ibm-observe
     ```
     {: codeblock}
 
+5. To verify that the logging agent is deleted successfully, run the following command:
 
+    ```text
+    kubectl get pods -n ibm-observe
+    ```
+    {: codeblock}
 
-To verify that the logging agent is deleted successfully, run the following command:
-
-```
-kubectl get pods -n ibm-observe
-```
-{: codeblock}
-
-You should not see any logging pods.
+    You should not see any logging pods.
 
 
 
@@ -143,7 +141,7 @@ Complete the following steps:
 
     Open a terminal to log in to {{site.data.keyword.cloud_notm}}.
 
-    ```
+    ```text
     ibmcloud login -a cloud.ibm.com
     ```
     {: pre}
@@ -152,14 +150,14 @@ Complete the following steps:
 
     List the clusters to find out in which region and resource group the cluster is available.
 
-    ```
+    ```text
     ibmcloud ks clusters
     ```
     {: pre}
 
     Set the resource group and region.
 
-    ```
+    ```text
     ibmcloud target -g RESOURCE_GROUP -r REGION
     ```
     {: pre}
@@ -172,14 +170,14 @@ Complete the following steps:
 
     Set the cluster where you want to configure logging as the context for this session.
 
-    ```
+    ```text
     ibmcloud ks cluster config --cluster <cluster_name_or_ID>
     ```
     {: pre}
 
 2. Detach the logging agent by using the `ob` CLI. Run the following command:
 
-    ```
+    ```text
     ibmcloud ob logging config delete --cluster <cluster_name_or_ID> --instance <LogDNA_instance_name_or_ID>  [--force]
     ```
     {: pre}
@@ -190,7 +188,7 @@ Complete the following steps:
 
     * `<LogDNA_instance_name_or_ID>` is the name or the ID of the logging instance where you want to forward the cluster logs for analysis.
 
-    * ` [--force]`  is used to force the command to run with no user prompts.
+    * `[--force]`  is used to force the command to run with no user prompts.
 
 
 
@@ -209,7 +207,7 @@ Complete the following steps from the command line:
 
 1. Open a terminal to log in to {{site.data.keyword.cloud_notm}}.
 
-   ```
+   ```text
    ibmcloud login -a cloud.ibm.com
    ```
    {: pre}
@@ -218,7 +216,7 @@ Complete the following steps from the command line:
 
 2. Set the cluster where you want to configure logging as the context for this session.
 
-   ```
+   ```text
    ibmcloud cs cluster config --cluster <cluster_name_or_ID>
    ```
    {: pre}
@@ -227,41 +225,41 @@ Complete the following steps from the command line:
 
 4. Delete the logging agent serviceaccount.
 
-    ```
+    ```text
     oc delete serviceaccount logdna-agent -n ibm-observe
     ```
     {: pre}
 
-4. Remove the logging secrets from your cluster. Each secret contains the logging ingestion key. Run the following commands:
+5. Remove the logging secrets from your cluster. Each secret contains the logging ingestion key. Run the following commands:
 
     List secrets.
 
-    ```
+    ```text
     oc get secrets -n ibm-observe
     ```
     {: pre}
 
     Then, run the following command for each secret: 
     
-    ```
+    ```text
     oc delete secret logdna-agent-key -n ibm-observe
     ```
     {: pre}
 
     Where *PROJECT* is the namespace where the logging pods run. Set this value to **ibm-observe**.
 
-5. Remove the logging agent on every worker(node) of your Kubernetes cluster. The logging agent is responsible for collecting and forwarding your logs. Run the following command:
+6. Remove the logging agent on every worker(node) of your Kubernetes cluster. The logging agent is responsible for collecting and forwarding your logs. Run the following command:
 
-    ```
+    ```text
     oc delete daemonset logdna-agent -n ibm-observe
     ```
     {: codeblock}
 
     Where *PROJECT* is the namespace where the logging pods run. Set this value to **ibm-observe**.
 
-5. Verify that the logging agent is deleted successfully. Run the following command to verify that logging agent pods are not running:
+7. Verify that the logging agent is deleted successfully. Run the following command to verify that logging agent pods are not running:
 
-    ```
+    ```text
     oc get pods -n ibm-observe
     ```
     {: codeblock}
@@ -297,7 +295,7 @@ Complete the following steps:
 
     Open a terminal to log in to {{site.data.keyword.cloud_notm}}.
 
-    ```
+    ```text
     ibmcloud login -a cloud.ibm.com
     ```
     {: pre}
@@ -306,14 +304,14 @@ Complete the following steps:
 
     List the clusters to find out in which region and resource group the cluster is available.
 
-    ```
+    ```text
     ibmcloud ks clusters
     ```
     {: pre}
 
     Set the resource group and region.
 
-    ```
+    ```text
     ibmcloud target -g RESOURCE_GROUP -r REGION
     ```
     {: pre}
@@ -326,14 +324,14 @@ Complete the following steps:
 
     Set the cluster where you want to configure logging as the context for this session.
 
-    ```
+    ```text
     ibmcloud oc cluster config --cluster <cluster_name_or_ID>
     ```
     {: pre}
 
 2. Detach the logging agent by using the `ob` CLI. Run the following command:
 
-    ```
+    ```text
     ibmcloud ob logging config delete --cluster <cluster_name_or_ID> --instance <LogDNA_instance_name_or_ID>  [--force]
     ```
     {: pre}
@@ -344,7 +342,7 @@ Complete the following steps:
 
     * `<LogDNA_instance_name_or_ID>` is the name or the ID of the logging instance where you want to forward the cluster logs for analysis.
 
-    * ` [--force]`  is used to force the command to run with no user prompts.
+    * `[--force]`  is used to force the command to run with no user prompts.
 
 
 

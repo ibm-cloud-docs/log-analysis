@@ -82,7 +82,7 @@ If you do not have an instance with the flag **Platform Logs** in the region, co
 
 4. Get the instance name and plan ID. Run the following command: [ibmcloud resource service-instances](/docs/cli?topic=cli-ibmcloud_commands_resource#ibmcloud_resource_service_instances)
 
-    ```
+    ```text
     ibmcloud resource service-instance InstanceName --output JSON
     ```
     {: pre}
@@ -94,7 +94,7 @@ If you do not have an instance with the flag **Platform Logs** in the region, co
     Check that the change will not affect other account members. There is only 1 instance per region that can collect platform logs. After you make this change, platform logs are collected through this instance in the region, and permissions to view platform logs are impacted.  
     {: important}
 
-    ```
+    ```text
     ibmcloud resource service-instance-update InstanceName --service-plan-id PlanID -p '{"default_receiver": true}'
     ```
     {: codeblock}
@@ -126,7 +126,7 @@ Complete the following steps:
 
 5. Get the instance name and plan ID. Run the following command: [ibmcloud resource service-instances](/docs/cli?topic=cli-ibmcloud_commands_resource#ibmcloud_resource_service_instances)
 
-    ```
+    ```text
     ibmcloud resource service-instance InstanceName --output JSON
     ```
     {: pre}
@@ -135,7 +135,7 @@ Complete the following steps:
 
 6. Set on the **default_receiver** property. Run the following command:
 
-    ```
+    ```text
     ibmcloud resource service-instance-update InstanceName --service-plan-id PlanID -p '{"default_receiver": true}'
     ```
     {: codeblock}
@@ -152,7 +152,7 @@ Complete the following steps:
 
 8. Get the instance name and plan ID. Run the following command: [ibmcloud resource service-instances](/docs/cli?topic=cli-ibmcloud_commands_resource#ibmcloud_resource_service_instances)
 
-    ```
+    ```text
     ibmcloud resource service-instances --output JSON
     ```
     {: pre}
@@ -161,7 +161,7 @@ Complete the following steps:
 
 9. Set off the **default_receiver** property. Run the following command:
 
-    ```
+    ```text
     ibmcloud resource service-instance-update InstanceName --service-plan-id PlanID -p '{"default_receiver": false}'
     ```
     {: codeblock}

@@ -26,7 +26,7 @@ List of prefixes that [{{site.data.keyword.cloud}} services](/docs/log-analysis?
 
 A message ID is made up of the following parts:
 
-```
+```text
 <crn-service-name>.####<severity> 
 ```
 {: codeblock}

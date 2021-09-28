@@ -33,7 +33,7 @@ Complete the following steps to define an exclusion rule:
 
 5. Enter the exclusion criteria by adding a query. For more information on how to build a query, see [Select the set of events to display through a view by applying a search query](/docs/log-analysis?topic=log-analysis-views#views_step2).
 
-7. Click **Save**.
+6. Click **Save**.
 
 
 

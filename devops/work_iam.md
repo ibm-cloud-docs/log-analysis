@@ -176,7 +176,7 @@ Complete the following steps to assign a user both policies for the {{site.data.
 6. Select **IBM Log Analysis**.
 7. Select the platform role **Editor**.
 8. Select the service role **Manager**.
-8. Click **Assign**.
+9. Click **Assign**.
 
 ## Granting permissions to a user to view logs
 {: #user_log_analysis}
@@ -209,5 +209,5 @@ Complete the following steps to assign a user both policies for the {{site.data.
 6. Select **IBM Log Analysis**.
 7. Select the platform role **Viewer**.
 8. Select the service role **Reader**.
-8. Click **Assign**.
+9. Click **Assign**.
 

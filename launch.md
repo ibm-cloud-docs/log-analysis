@@ -69,7 +69,7 @@ Complete the following steps:
 
 2. Enter the following URL in a browser. 
 
-    ```
+    ```text
     https://cloud.ibm.com/observe/embedded-view/logging/<INSTANCE_ID>?q=<QUERY>&hosts=<HOSTS>&apps=<APPS>&levels=<LEVELS>&tags=<TAGS>&t=<TIMEFRAME>
     ```
     {: codeblock}

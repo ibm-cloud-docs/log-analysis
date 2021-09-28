@@ -67,10 +67,10 @@ Complete the following steps to export data through the logging web UI:
 2. Click the **Views** icon ![Views icon](../images/views.png "Views icon").
 3. Select **Everything**.
 4. Apply filters and search criteria until you see the entries that you want to export.
-4. Click **Unsaved View**.
-5. Select **Export lines**. A new window opens.
-6. Check the time range. If you need to change it, click the predefined time range in the *Time Range for Export* field.
-7. Select **Prefer newer lines** or **Prefer older lines** in case the export request exceeds the line limit.
-8. Check your email. You receive an email with a link to download your exported lines.
+5. Click **Unsaved View**.
+6. Select **Export lines**. A new window opens.
+7. Check the time range. If you need to change it, click the predefined time range in the *Time Range for Export* field.
+8. Select **Prefer newer lines** or **Prefer older lines** in case the export request exceeds the line limit.
+9. Check your email. You receive an email with a link to download your exported lines.
 
 

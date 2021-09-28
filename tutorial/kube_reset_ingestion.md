@@ -52,7 +52,7 @@ For more information about the {{site.data.keyword.containerlong}} IAM roles, se
 Install the {{site.data.keyword.cloud_notm}} CLI and the Kubernetes CLI plug-in. For more information, see [Installing the {{site.data.keyword.cloud_notm}} CLI](/docs/cli?topic=cli-install-ibmcloud-cli).
 
 
-## Step 1: Reset the ingestion key
+## Reset the ingestion key
 {: #kube_reset_step1}
 {: step}
 
@@ -75,7 +75,7 @@ To renew the ingestion key for an {{site.data.keyword.la_full_notm}} instance by
 6. Delete the old ingestion key. Click the **X** next to the ingestion key to be deleted.
 
 
-## Step 2: Remove any configuration in the cluster that uses the old ingestion key
+## Remove any configuration in the cluster that uses the old ingestion key
 {: #kube_reset_step2}
 {: step}
 
@@ -83,7 +83,7 @@ Complete the following steps:
 
 1. Open a terminal. Then, log in to the {{site.data.keyword.cloud_notm}}. Run the following command and follow the prompts:
 
-    ```
+    ```text
     ibmcloud login -a cloud.ibm.com
     ```
     {: codeblock}
@@ -94,7 +94,7 @@ Complete the following steps:
 
     First, get the command to set the environment variable and download the Kubernetes configuration files.
 
-    ```
+    ```text
     ibmcloud ks cluster config --cluster <cluster_name_or_ID>
     ```
     {: codeblock}
@@ -103,21 +103,21 @@ Complete the following steps:
 
 3. Remove the secret from your Kubernetes cluster. The Kubernetes secret contains the logging ingestion key. Run the following command:
 
-    ```
+    ```text
     kubectl delete secret logdna-agent-key -n ibm-observe
     ```
     {: codeblock}
 
 4. Remove the logging agent on every worker(node) of your Kubernetes cluster. The logging agent is responsible for collecting and forwarding your logs. Run the following command:
 
-    ```
+    ```text
     kubectl delete daemonset logdna-agent -n ibm-observe
     ```
     {: codeblock}
 
 5. Verify that the logging agent is deleted successfully. Run the following command:
 
-    ```
+    ```text
     kubectl get pods -n ibm-observe
     ```
     {: codeblock}
@@ -125,7 +125,7 @@ Complete the following steps:
     You should not see any logging pods.
 
 
-## Step 3: Configure your Kubernetes cluster with the new ingestion key
+## Configure your Kubernetes cluster with the new ingestion key
 {: #kube_reset_step3}
 {: step}
 
@@ -133,7 +133,7 @@ To configure your Kubernetes cluster in the `us-south` region to forward logs to
 
 1. Open a terminal. Then, log in to the {{site.data.keyword.cloud_notm}}. Run the following command and follow the prompts:
 
-    ```
+    ```text
     ibmcloud login -a cloud.ibm.com
     ```
     {: codeblock}
@@ -144,14 +144,14 @@ To configure your Kubernetes cluster in the `us-south` region to forward logs to
 
     First, get the command to set the environment variable and download the Kubernetes configuration files.
 
-    ```
+    ```text
     ibmcloud ks cluster-config <cluster_name_or_ID>
     ```
     {: codeblock}
 
 3. Add a secret to your Kubernetes cluster. Run the following command:
 
-    ```
+    ```text
     kubectl create secret generic logdna-agent-key --from-literal=logdna-agent-key=LOGDNA_INGESTION_KEY_FOR_YOUR_INSTANCE -n ibm-observe
     ```
     {: codeblock}
@@ -162,7 +162,7 @@ To configure your Kubernetes cluster in the `us-south` region to forward logs to
 
 4. Configure the logging agent on every worker(node) of your Kubernetes cluster. Run the following command:
 
-    ```
+    ```text
     kubectl create -f https://assets.us-south.logging.cloud.ibm.com/clients/logdna-agent-ds.yaml -n ibm-observe
     ```
     {: codeblock}
@@ -173,13 +173,13 @@ To configure your Kubernetes cluster in the `us-south` region to forward logs to
 
 5. Verify that the logging agent is created successfully and its status. Run the following command:
 
-    ```
+    ```text
     kubectl get pods -n ibm-observe
     ```
     {: codeblock}
 
 
-## Step 4: Launch the logging web UI
+## Launch the logging web UI
 {: #kube_reset_step4}
 {: step}
 
@@ -195,12 +195,12 @@ Complete the following steps to launch the web UI:
 
     The list of {{site.data.keyword.la_full_notm}} instances that are available on {{site.data.keyword.cloud_notm}} is displayed.
 
-3. Select one instance. Then, click **Open dashboard**.
+4. Select one instance. Then, click **Open dashboard**.
 
     The logging web UI opens and displays your cluster logs.
 
 
-## Step 5: View your logs
+## View your logs
 {: #kube_reset_step5}
 {: step}
 

@@ -68,7 +68,7 @@ Complete the following steps to create a service key:
 
    If you have the correct permissions, the available service keys are displayed in the **Service Keys** section.   
 
-4. Click **Generate Service Key**. A new key is added to the list. 
+5. Click **Generate Service Key**. A new key is added to the list. 
 
 
 
@@ -114,7 +114,7 @@ Complete the following steps to view a service key:
 
 3. Select **Organization**. 
 
-3. Select **API keys**.
+4. Select **API keys**.
 
    If you have the correct permissions, the available service keys are displayed in the **Service Keys** section.   
 
@@ -142,16 +142,15 @@ To create a service key for a logging instance through the command line, complet
 
 4. Get the instance name. Run the following command: [ibmcloud resource service-instances](/docs/cli?topic=cli-ibmcloud_commands_resource#ibmcloud_resource_service_instances)
 
-    ```
+    ```text
     ibmcloud resource service-instances
     ```
     {: pre}
 
 5. Create the service key. Run the [ibmcloud resource service-key-create](/docs/cli?topic=cli-ibmcloud_commands_resource#ibmcloud_resource_service_key_create) command:
 
-    ```
+    ```text
     ibmcloud resource service-key-create <NAME> --instance-name <SERVICE_INSTANCE>
-
     ```
     {: pre}
 
@@ -163,7 +162,7 @@ To create a service key for a logging instance through the command line, complet
     
     Identify the service ID associated with the service that you created in the previous step. Run the following command to list all the service IDs that are available in the resource group:
 
-    ```
+    ```text
     ibmcloud iam service-ids
     ```
     {: pre}
@@ -172,14 +171,14 @@ To create a service key for a logging instance through the command line, complet
 
     Identify the logging instance ID. Run the following command:
 
-    ```
+    ```text
     ibmcloud resource service-instance <LOGGING_INSTANCE_NAME>
     ```
     {: pre}
 
     Then, create a policy to restrict access to the service key:
 
-    ```
+    ```text
     ibmcloud iam service-policy-create <SERVICE_ID> --roles Administrator,Manager --service-name logdna --service-instance <LOGGING_INSTANCE_ID]
     ```
     {: pre}
@@ -190,7 +189,7 @@ Consider deleting the service key. There is a limit on the number of service IDs
 
 To delete a service key, run the following command:
 
-```
+```text
 ibmcloud resource service-key-delete <NAME>
 ```
 {: pre}
@@ -213,14 +212,14 @@ To get the service key through the command line, complete the following steps:
 
 4. Get the instance name. Run the following command: [ibmcloud resource service-instances](/docs/cli?topic=cli-ibmcloud_commands_resource#ibmcloud_resource_service_instances)
 
-    ```
+    ```text
     ibmcloud resource service-instances
     ```
     {: pre}
 
 5. Get the name of the key that is associated with the auditing instance. Run the [ibmcloud resource service-keys](/docs/cli?topic=cli-ibmcloud_commands_resource#ibmcloud_resource_service_keys) command:
 
-    ```
+    ```text
     ibmcloud resource service-keys --instance-name <INSTANCE_NAME>
     ```
     {: pre}
@@ -229,7 +228,7 @@ To get the service key through the command line, complete the following steps:
 
 6. Get the service key. Run the [ibmcloud resource service-key](/docs/cli?topic=cli-ibmcloud_commands_resource#ibmcloud_resource_service_key) command:
 
-    ```
+    ```text
     ibmcloud resource service-key <KEY_NAME>
     ```
     {: pre}
@@ -256,7 +255,7 @@ To create the service key through the API, complete the following steps:
 
 1. Generate an [{{site.data.keyword.cloud_notm}} API key](/docs/account?topic=account-userapikey&interface=api#create_user_key). Run the following command:
 
-    ```
+    ```text
     curl -X POST 'https://iam.cloud.ibm.com/v1/apikeys' -H 'Authorization: Bearer TOKEN' -H 'Content-Type: application/json' -d '{
       "name": "MY_APIKEY", "description": "my personal key", "iam_id": "IBMid-xxxxxx", "account_id": "ACCOUNT_ID", "store_value": false}'
     ```
@@ -268,7 +267,7 @@ To create the service key through the API, complete the following steps:
 
     To generate an IAM access token, run the following command:
 
-    ```
+    ```text
     curl -X POST 'https://iam.cloud.ibm.com/identity/token' -H 'Content-Type: application/x-www-form-urlencoded' -d 'grant_type=urn:ibm:params:oauth:grant-type:apikey&apikey=MY_APIKEY'
     ```
     {: pre}
@@ -279,7 +278,7 @@ To create the service key through the API, complete the following steps:
 
     Get the list of resource instances:
 
-    ```
+    ```text
     curl -X GET   https://resource-controller.cloud.ibm.com/v2/resource_instances   -H "Authorization: Bearer <IAM token>"
     ```
     {: pre}
@@ -288,7 +287,7 @@ To create the service key through the API, complete the following steps:
 
 4. [Create the IAM service key](https://cloud.ibm.com/apidocs/resource-controller/resource-controller#post-resource-key). Run the following cURL command:
 
-    ```shell
+    ```text
     curl -X POST https://resource-controller.cloud.ibm.com/v2/resource_keys -H "Authorization: $ACCESS_TOKEN" -H "content-type: application/json" -d '{"name":"<NAME>", "source":"<LOGGING_INSTANCE_GUID>"}'
     ```
     {: codeblock}
@@ -302,7 +301,7 @@ Consider deleting the service key. There is a limit on the number of service IDs
 
 To delete a service key, run the following command:
 
-```
+```text
 curl -X DELETE https://resource-controller.cloud.ibm.com/v2/resource_keys/<IAM_SERVICE_KEY_GUID> -H "Authorization: $ACCESS_TOKEN" -H "content-type: application/json"
 ```
 {: pre}
@@ -317,7 +316,7 @@ To get the service key through the API, complete the following steps:
 
 1. Generate an [{{site.data.keyword.cloud_notm}} API key](/docs/account?topic=account-userapikey&interface=api#create_user_key). Run the following command:
 
-    ```
+    ```text
     curl -X POST 'https://iam.cloud.ibm.com/v1/apikeys' -H 'Authorization: Bearer TOKEN' -H 'Content-Type: application/json' -d '{
       "name": "MY_APIKEY", "description": "my personal key", "iam_id": "IBMid-xxxxxx", "account_id": "ACCOUNT_ID", "store_value": false}'
     ```
@@ -329,7 +328,7 @@ To get the service key through the API, complete the following steps:
 
     To generate an IAM access token, run the following command:
 
-    ```
+    ```text
     curl -X POST 'https://iam.cloud.ibm.com/identity/token' -H 'Content-Type: application/x-www-form-urlencoded' -d 'grant_type=urn:ibm:params:oauth:grant-type:apikey&apikey=MY_APIKEY'
     ```
     {: pre}
@@ -340,7 +339,7 @@ To get the service key through the API, complete the following steps:
 
     Get the list of resource keys:
 
-    ```
+    ```text
     curl -X GET   https://resource-controller.cloud.ibm.com/v2/resource_keys   -H "Authorization: Bearer <IAM token>"
     ```
     {: pre}

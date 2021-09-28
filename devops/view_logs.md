@@ -36,8 +36,8 @@ The following table lists the minimum policies that a user must have to be able 
 
 | Service                               | Role                      | Permission granted            |
 |---------------------------------------|---------------------------|-------------------------------|  
-| `{{site.data.keyword.la_full_notm}} ` | Platform role: Viewer     | Allows the user to view the list of service instances in the Observability Logging dashboard. |
-| `{{site.data.keyword.la_full_notm}} ` | Service role: Reader      | Allows the user to launch the Web UI and view logs in the Web UI.  |
+| `{{site.data.keyword.la_full_notm}}` | Platform role: Viewer     | Allows the user to view the list of service instances in the Observability Logging dashboard. |
+| `{{site.data.keyword.la_full_notm}}` | Service role: Reader      | Allows the user to launch the Web UI and view logs in the Web UI.  |
 {: caption="Table 1. IAM policies" caption-side="top"} 
 
 For more information on how to configure these policies for a user, see [Granting permissions to a user to view logs](/docs/log-analysis?topic=log-analysis-work_iam#user_logdna).

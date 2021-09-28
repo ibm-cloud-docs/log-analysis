@@ -75,7 +75,7 @@ An ingestion key can only be reset or new ones created in the logging web UI. Yo
 
 To get the ID of a logging instance, run the following command:
 
-```
+```text
 ic resource service-instance <INSTANCE_NAME>
 ```
 {: pre}

@@ -35,7 +35,7 @@ When you configure a logging agent by using the default standard Kubernetes clus
 
 The default YAML configuration is set as follows:
 
-```
+```yaml
 updateStrategy:
     type: RollingUpdate
     rollingUpdate:
@@ -60,7 +60,7 @@ When you configure a logging agent by using the default OpenShift Kubernetes clu
 
 The default YAML configuration is set as follows:
 
-```
+```yaml
 updateStrategy:
     type: RollingUpdate
     rollingUpdate:

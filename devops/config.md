@@ -59,7 +59,7 @@ Complete the following steps to display a log line that includes the timestamp a
 
     By default, the log format is configured in the following way:
     
-    ```
+    ```text
     %time('MMM D HH:mm:ss') %source %app %level %line
     ```
     {: screen}
@@ -68,7 +68,7 @@ Complete the following steps to display a log line that includes the timestamp a
 
     The log line changes to the following format:
 
-    ```
+    ```text
     %time('MMM D HH:mm:ss') %line
     ```
     {: screen}

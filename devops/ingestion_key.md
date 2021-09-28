@@ -33,9 +33,9 @@ To get the ingestion key for an {{site.data.keyword.la_full_notm}} instance by u
 
 3. Click **Logging**. The {{site.data.keyword.la_full_notm}} dashboard opens. You can see the list of logging instances that are available on {{site.data.keyword.cloud_notm}}.
 
-3. Identify the instance that you want to use to collect your cluster logs. 
+4. Identify the instance that you want to use to collect your cluster logs. 
 
-4. Click the **Actions** icon ![Actions icon](../icons/action-menu-icon.svg) >  **View key**.
+5. Click the **Actions** icon ![Actions icon](../../icons/action-menu-icon.svg) >  **View key**.
 
     A window opens where you can click **Show** to view the ingestion key.
 
@@ -72,14 +72,14 @@ To get the ingestion key for a logging instance through the command line, comple
 
 4. Get the instance name. Run the following command: [ibmcloud resource service-instances](/docs/cli?topic=cli-ibmcloud_commands_resource#ibmcloud_resource_service_instances)
 
-    ```
+    ```text
     ibmcloud resource service-instances
     ```
     {: pre}
 
 5. Get the name of the key that is associated with the logging instance. Run the [ibmcloud resource service-keys](/docs/cli?topic=cli-ibmcloud_commands_resource#ibmcloud_resource_service_keys) command:
 
-    ```
+    ```text
     ibmcloud resource service-keys --instance-name INSTANCE_NAME
     ```
     {: pre}
@@ -88,7 +88,7 @@ To get the ingestion key for a logging instance through the command line, comple
 
 6. Get the ingestion key. Run the [ibmcloud resource service-key](/docs/cli?topic=cli-ibmcloud_commands_resource#ibmcloud_resource_service_key) command:
 
-    ```
+    ```text
     ibmcloud resource service-key APIKEY_NAME
     ```
     {: pre}

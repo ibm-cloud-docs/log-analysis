@@ -14,6 +14,7 @@ subcollection: log-analysis
 
 # CIDR blocks
 {: #cidr}
+
 The following Classless Inter-Domain Routing (CIDR) blocks are available:
 {: shortdesc}
 

@@ -88,8 +88,8 @@ On the {{site.data.keyword.cloud_notm}}, you can configure an bare metal to forw
 
 1. Provision a bare metal running Ubuntu Linux.
 2. Provision an instance of the {{site.data.keyword.la_full_notm}} service. 
-2. Configure the logging agent in the bare metal.
-3. Optionally, add additional directories to be monitored by the agent.
+3. Configure the logging agent in the bare metal.
+4. Optionally, add additional directories to be monitored by the agent.
 
 ![Component overview on the {{site.data.keyword.cloud_notm}}](../images/ubuntu.png "Component overview on the {{site.data.keyword.cloud_notm}}")
 
@@ -107,8 +107,8 @@ On the {{site.data.keyword.cloud_notm}}, you can configure a Linux VPC server to
 
 1. Provision a VPC running Ubuntu Linux for example.
 2. Provision an instance of the {{site.data.keyword.la_full_notm}} service. 
-2. Configure the logging agent in the Ubuntu server.
-3. Optionally, add additional directories to be monitored by the agent.
+3. Configure the logging agent in the Ubuntu server.
+4. Optionally, add additional directories to be monitored by the agent.
 
 ![Component overview on the {{site.data.keyword.cloud_notm}}](../images/ubuntu.png "Component overview on the {{site.data.keyword.cloud_notm}}")
 
