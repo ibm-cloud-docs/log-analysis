@@ -17,7 +17,7 @@ subcollection: log-analysis
 {: #kube}
 
 Use the {{site.data.keyword.la_full_notm}} service to configure cluster-level logging in {{site.data.keyword.containerlong}}. 
-{:shortdesc}
+{: shortdesc}
 
 From the moment you provision a cluster with {{site.data.keyword.containerlong_notm}}, you want to know what is happening inside the cluster. You need to access logs to troubleshoot problems and pre-empt issues. At any time, you want to have access to different types of logs such as worker logs, pod logs, app logs, or network logs. In addition, you want to monitor different sources of log data in your Kubernetes cluster. Therefore, your ability to manage and access log records from any of these sources is critical. Your success managing and monitoring logs depends on how you configure the logging capabilities for your Kubernetes platform.
 
@@ -110,9 +110,9 @@ Complete the following steps to get the ingestion key:
 
 3. Select **Logging**. The {{site.data.keyword.la_full_notm}} dashboard opens. You can see the list of logging instances that are available on {{site.data.keyword.cloud_notm}}.
 
-3. Identify the instance for which you want to get the ingestion key, and click **View ingestion key**.
+4. Identify the instance for which you want to get the ingestion key, and click **View ingestion key**.
 
-4. A window opens where you can click **Show** to view the ingestion key.
+5. A window opens where you can click **Show** to view the ingestion key.
 
 
 ## Step3: Configure your Kubernetes cluster to send logs to your logging instance
@@ -124,7 +124,7 @@ To configure your Kubernetes cluster in the `us-south` region to forward logs to
 
 1. Open a terminal to log in to {{site.data.keyword.cloud_notm}}.
 
-   ```
+   ```text
    ibmcloud login -a cloud.ibm.com
    ```
    {: pre}
@@ -133,7 +133,7 @@ To configure your Kubernetes cluster in the `us-south` region to forward logs to
 
 2. Set the cluster where you want to configure logging as the context for this session.
 
-   ```
+   ```text
    ibmcloud ks cluster-config <cluster_name_or_ID>
    ```
    {: pre}
@@ -145,21 +145,21 @@ To configure your Kubernetes cluster in the `us-south` region to forward logs to
 
 3. Create a Kubernetes secret to store your logging ingestion key for your service instance. The logging ingestion key is used to open a secure web socket to the logging ingestion server and to authenticate the logging agent with the {{site.data.keyword.la_full_notm}} service.
 
-    ```
+    ```text
     kubectl create secret generic logdna-agent-key --from-literal=logdna-agent-key=<logDNA_ingestion_key>
     ```
     {: pre}
 
 4. Create a Kubernetes daemon set to deploy the logging agent on every worker node of your Kubernetes cluster. The logging agent collects logs with the extension `*.log` and extensionsless files that are stored in the `/var/log` directory of your pod. By default, logs are collected from all namespaces, including `kube-system`, and automatically forwarded to the {{site.data.keyword.la_full_notm}} service.
 
-   ```
+   ```text
    kubectl create -f https://assets.us-south.logging.cloud.ibm.com/clients/logdna-agent-ds.yaml
    ```
    {: pre}
 
 5. Verify that the logging agent is deployed successfully. 
 
-   ```
+   ```text
    kubectl get pods
    ```
    {: pre}

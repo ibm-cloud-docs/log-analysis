@@ -62,7 +62,7 @@ Log Analysis
         iam_view_events.md
         devops/work_iam.md
         
-   {: .topicgroup}
+    {: .topicgroup}
     DevOps tasks
         devops/archive.md
         devops/control_usage.md
