@@ -26,7 +26,7 @@ Complete the following steps to send logs:
 
 Run the following command to install the handler:
 
-```
+```text
 python3 -m pip install logdna
 ```
 {: pre}
@@ -57,7 +57,7 @@ Complete the following steps to get the ingestion key:
 
 To send logs, creaate a file with the following content:
 
-```
+```python
 #!/usr/bin/env python3 
 import os 
 import logging
@@ -114,7 +114,7 @@ The following sample sends 2 log lines with different priorities (level) to an i
 
 1. Save the following content to a file named `send-logs.py`.
 
-    ```
+    ```python
     #!/usr/bin/env python3 
     import os 
     import logging
@@ -147,7 +147,7 @@ The following sample sends 2 log lines with different priorities (level) to an i
 
 2. From the command line, run the following command:
 
-    ```
+    ```text
     python3 send-logs.py 
     ```
     {: pre}

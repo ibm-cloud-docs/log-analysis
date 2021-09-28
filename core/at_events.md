@@ -34,7 +34,7 @@ As a security officer, auditor, or manager, you can use the Activity Tracker ser
 
 | Action                                            | Description                |
 |---------------------------------------------------|----------------------------|
-| `logdna.account.update  `       | This event is generated when an administrator turns on or off a feature for a logging instance. |
+| `logdna.account.update`       | This event is generated when an administrator turns on or off a feature for a logging instance. |
 {: caption="Table 1. Events for account settings actions" caption-side="top"} 
 
 The following table lists custom fields that are included in these events:
@@ -43,7 +43,7 @@ The following table lists custom fields that are included in these events:
 |------------------------------------|----------------------|----------------------------|
 | `requestData.owneremail`        | `xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx@logdna.ibm.com`  | Defines a logging account. |
 | `requestData.type`              | `meta.addrawline` | Defines a logging administrative feature. |
-| `requestData.value `            | `false`  \n `true`  | When is set to `true`, the feature specified in the field `requestData.type` is enabled.  |
+| `requestData.value`            | `false`  \n `true`  | When is set to `true`, the feature specified in the field `requestData.type` is enabled.  |
 | `responseData.logdnaId`            | Sample `3a941d8ert`  | Defines the logging ID that is associated with the {{site.data.keyword.la_full_notm}} instance. | 
 {: caption="Table 2. Custom fields for account settings actions" caption-side="top"} 
 

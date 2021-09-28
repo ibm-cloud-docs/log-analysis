@@ -68,14 +68,14 @@ Add the following entry to your /etc/syslog.conf:
 
 - For TCP ingestion, add the following line:
 
-    ```
+    ```text
     *.* @syslog-a.us-south.logging.cloud.ibm.com:<PORT>
     ```
     {: codeblock}
 
 - For UDP ingestion, add the following line:
 
-    ```
+    ```text
     *.* @syslog-u.us-south.logging.cloud.ibm.com:<PORT>
     ```
     {: codeblock}

@@ -100,7 +100,7 @@ The following table lists services that send logs to {{site.data.keyword.la_full
 | Service     | Description | More info |
 |-------------|-------------|-------------------------------------------------------------------------|
 | [{{site.data.keyword.appconservicefull}}](/docs/AppConnect?topic=AppConnect-getting-started) | You can use {{site.data.keyword.appconservicefull}} to connect your applications.   | [More info](https://developer.ibm.com/integration/docs/app-connect/troubleshooting/monitoring-and-managing-app-connect-logs-in-logdna/){: external}  |
-| [{{site.data.keyword.mq_short}}](/docs/mqcloud?topic=mqcloud-mqoc_getting_started) | MQ on IBM Cloud enables you to quickly and easily deploy queue managers in the cloud and connect your applications to them, for reliable data transfer between different parts of your enterprise application landscape. | [More info ](/docs/mqcloud?topic=mqcloud-logdna_logs) |
+| [{{site.data.keyword.mq_short}}](/docs/mqcloud?topic=mqcloud-mqoc_getting_started) | MQ on IBM Cloud enables you to quickly and easily deploy queue managers in the cloud and connect your applications to them, for reliable data transfer between different parts of your enterprise application landscape. | [More info](/docs/mqcloud?topic=mqcloud-logdna_logs) |
 {: caption="Table 4. List of integration Cloud services" caption-side="top"} 
 
 To see the list of {{site.data.keyword.la_full_notm}} locations where these services send logs, see [Integration services](/docs/log-analysis?topic=log-analysis-cloud_services_locations#cs_locations_integration).

@@ -47,7 +47,7 @@ The tag that is associated to a logging image indicates whether the logging agen
 
 A tag consists of multiple parts:
 
-```
+```text
 X.Y.Z-<date>.[hash]
 ```
 {: codeblock}
@@ -172,7 +172,7 @@ The following table outlines the agent versions that are available:
 
 | Kubernetes cluster                    | logging agent V1                                    | logging agent V2                                   |
 |---------------------------------------|----------------------------------------------------|---------------------------------------------------|
-| `Linux                      `         | ![Checkmark icon](../images/checkmark-icon.svg)  | `Not available`                                   |
+| `Linux`         | ![Checkmark icon](../images/checkmark-icon.svg)  | `Not available`                                   |
 {: caption="Table 3. Logging agent versions for Linux" caption-side="top"}
 
 

@@ -39,14 +39,14 @@ Complete the following steps from the command line to upgrade the logging agent 
 
 To see all the currently installed agent versions, run the following commands:
 
-```
+```text
 ibmcloud cr login
 ibmcloud cr region-set global
 ibmcloud cr images --restrict ext/logdna-agent
 ```
 {: codeblock}
 
-Make note of the image you want to update.  The image will be named similar to `3.2.0-20210629.b52135aba711`.  You will need this information for (Step 6)[#upgrade_log_analysis_agent_3_step6].
+Make note of the image you want to update.  The image will be named similar to `3.2.0-20210629.b52135aba711`.  You will need this information for [Step 6](#upgrade_log_analysis_agent_3_step6).
 
 Do not use the `latest` or `stable` versions.
 {: note}
@@ -58,21 +58,21 @@ The [LogDNA release notes](https://logdna.zendesk.com/hc/en-us/categories/360001
 
 1. Open a terminal to log in to {{site.data.keyword.cloud_notm}}.
 
-   ```
+   ```text
    ibmcloud login -a cloud.ibm.com
    ```
    {: pre}
 
 2. List the clusters to find out in which region and resource group the cluster is available.
 
-    ```
+    ```text
     ibmcloud ks clusters
     ```
     {: pre}
 
 3. Set the resource group and region.
 
-    ```
+    ```text
     ibmcloud target -g RESOURCE_GROUP -r REGION
     ```
     {: pre}
@@ -85,7 +85,7 @@ The [LogDNA release notes](https://logdna.zendesk.com/hc/en-us/categories/360001
 
 4. Set the cluster where you want to configure logging as the context for this session.
 
-   ```
+   ```text
    ibmcloud ks cluster config --cluster <cluster_name_or_ID>
    ```
    {: pre}
@@ -96,7 +96,7 @@ The [LogDNA release notes](https://logdna.zendesk.com/hc/en-us/categories/360001
 
 Run the following command to backup the YAML file of the logging agent that is currently deployed in your cluster:
 
-```
+```text
 kubectl get ds logdna-agent -o yaml --namespace=<namespace> > logdna-agent-<clusterName>-<date>.yaml
 ```
 {: pre}
@@ -116,7 +116,7 @@ This step is only required if you installed the prior logging agent in a namespa
 
 To check if the namespace exists, run the following command:
 
-```
+```text
 kubectl get namespaces
 ```
 {: pre}
@@ -125,7 +125,7 @@ Verify the `ibm-observe` namespace is active.
 
 If you need to create the namespace, run the following command:
 
-```
+```text
 kubectl create namespace ibm-observe
 ```
 {: pre}
@@ -138,14 +138,14 @@ If you are running the logging agent 2.0 or earlier, do the following:
 
 1. Delete the old agent by running the following command:
 
-   ```
+   ```text
    kubectl delete daemonset.apps/logdna-agent
    ```
    {: pre}
 
 2. Delete the secret in the default namespace by running the following command:
 
-   ```
+   ```text
    kubectl delete secret logdna-agent-key
    ```
    {: pre}
@@ -155,7 +155,7 @@ If you are running the logging agent 2.0 or earlier, do the following:
 
 If you are running the logging agent 2.1 or later, delete the old agent by running the following command:
 
-```
+```text
 kubectl delete -f <YOUR_FILE_NAME>
 ```
 {: pre}
@@ -195,7 +195,7 @@ Complete the following steps to modify the yaml so that the logging agent runs a
 
     For example:
 
-    ```
+    ```text
     wget https://assets.us-south.logging.cloud.ibm.com/clients/logdna-agent/3.2.0/agent-resources-private.yaml -o agent-resources-private.yaml
     ```
     {: pre}
@@ -207,7 +207,7 @@ Complete the following steps to modify the yaml so that the logging agent runs a
 
    - Change the `image` tag to specify the image you obtained in [Step 1](#upgrade_log_analysis_agent_3_step1). For example:
 
-      ```
+      ```yaml
       image: icr.io/ext/logdna-agent:3.2.0-20210629.b52135aba711
       ```
       {: codeblock}
@@ -217,7 +217,7 @@ Complete the following steps to modify the yaml so that the logging agent runs a
 
    - In the `securityContext` section, add the following lines to run the agent as non-root:
 
-      ```
+      ```yaml
       securityContext:
             # Add these 2 lines to run as non-root
             runAsUser: 5000
@@ -238,14 +238,14 @@ Complete the following steps to modify the yaml so that the logging agent runs a
 
 Install the agent by running the following command:
 
-```
+```text
 kubectl create -f <logging-agent-resources yaml file>
 ```
 {: pre}
 
 For example:
 
-```
+```text
 kubectl create -f logging-agent-resources-private.yaml
 ```
 {: pre}
@@ -256,7 +256,7 @@ kubectl create -f logging-agent-resources-private.yaml
 
 To verify that the logging agent is deployed successfully, run the following command:
 
-```
+```text
 kubectl get pod -n ibm-observe
 ```
 {: pre}

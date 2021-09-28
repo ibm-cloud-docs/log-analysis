@@ -30,7 +30,7 @@ Complete the following steps from the command line to upgrade the logging agent 
 
 1. Open a terminal to log in to {{site.data.keyword.cloud_notm}}.
 
-   ```
+   ```text
    ibmcloud login -a cloud.ibm.com
    ```
    {: pre}
@@ -39,14 +39,14 @@ Complete the following steps from the command line to upgrade the logging agent 
 
 2. List the clusters to find out in which region and resource group the cluster is available.
 
-    ```
+    ```text
     ibmcloud ks clusters
     ```
     {: pre}
 
 3. Set the resource group and region.
 
-    ```
+    ```text
     ibmcloud target -g RESOURCE_GROUP -r REGION
     ```
     {: pre}
@@ -59,7 +59,7 @@ Complete the following steps from the command line to upgrade the logging agent 
 
 4. Set the cluster where you want to configure logging as the context for this session.
 
-   ```
+   ```text
    ibmcloud ks cluster config --cluster <cluster_name_or_ID>
    ```
    {: pre}
@@ -70,7 +70,7 @@ Complete the following steps from the command line to upgrade the logging agent 
 
 Run the following command to backup the YAML file of the logging agent that is currently deployed in your cluster:
 
-```
+```text
 kubectl get ds logdna-agent -o yaml > logdna-agent-<clusterName>-<date>.yaml
 ```
 {: pre}
@@ -89,7 +89,7 @@ This step is only required if you installed the logging agent version 1 in a nam
 
 To check if the namespace exists, run the following command:
 
-```
+```text
 kubectl get namespaces
 ```
 {: pre}
@@ -98,7 +98,7 @@ Verify the `ibm-observe` namespace is active.
 
 If you need to create the namespace, run the following command:
 
-```
+```text
 kubectl create namespace ibm-observe
 ```
 {: pre}
@@ -109,7 +109,7 @@ kubectl create namespace ibm-observe
 
 Run the following command to delete the logging agent version 1:
 
-```
+```text
 kubectl delete daemonset logdna-agent -n NAMESPACE
 ```
 {: pre}
@@ -162,7 +162,7 @@ Choose one of the following commands to install and configure the logging agent:
 
 To verify that the logging agent is deployed successfully, run the following command:
 
-```
+```text
 kubectl get pods
 ```
 {: pre}

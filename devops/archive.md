@@ -34,7 +34,7 @@ You archive logs from an {{site.data.keyword.la_full_notm}} instance into a buck
 
 * The hourly archive directory format looks like this:
 
-    ```
+    ```text
     YYYY/MM/DD/<accountID>.<YYYY>-<MM>-<DD>.<HH>00.json.gz
     ```
     {: codeblock}
@@ -49,7 +49,7 @@ You archive logs from an {{site.data.keyword.la_full_notm}} instance into a buck
 
     The daily archive directory format looks like this:
     
-    ```
+    ```text
     <accountID>.<YYYY>-<MM>-<DD>.<clusterId>.json.gz
     ```
     {: codeblock}
@@ -185,7 +185,7 @@ Complete the following steps to create a bucket:
 
 1. Log in to your {{site.data.keyword.cloud_notm}} account.
 
-    Click [{{site.data.keyword.cloud_notm}} dashboard ](https://cloud.ibm.com/login){: external} to launch the {{site.data.keyword.cloud_notm}} dashboard.
+    Click [{{site.data.keyword.cloud_notm}} dashboard](https://cloud.ibm.com/login){: external} to launch the {{site.data.keyword.cloud_notm}} dashboard.
 
 	After you log in with your user ID and password, the {{site.data.keyword.cloud_notm}} Dashboard opens.
 
@@ -205,11 +205,11 @@ Complete the following steps to create a bucket:
 
     Resiliency refers to the scope and scale of the geographic area across which your data is distributed. 
     
-    Cross Region resiliency spreads your data across several metropolitan areas.
+    * Cross Region resiliency spreads your data across several metropolitan areas.
     
-    Regional resiliency spreads data across a single metropolitan area. 
+    * Regional resiliency spreads data across a single metropolitan area. 
     
-    A Single Data Center will only distribute data across devices within a single site.
+    * A Single Data Center will only distribute data across devices within a single site.
 
     For more information, see [Select regions and endpoints](/docs/cloud-object-storage?topic=cloud-object-storage-endpoints).
 

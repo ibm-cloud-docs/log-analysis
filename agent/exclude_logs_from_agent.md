@@ -38,7 +38,7 @@ Complete the following steps:
 
 1. Open a terminal to log in to {{site.data.keyword.cloud_notm}}.
 
-    ```
+    ```text
     ibmcloud login -a cloud.ibm.com --sso
     ```
     {: pre}
@@ -47,14 +47,14 @@ Complete the following steps:
 
 2. List the clusters to find out in which region and resource group the cluster is available.
 
-    ```
+    ```text
     ibmcloud ks clusters
     ```
     {: pre}
 
 3. Set the resource group and region.
 
-    ```
+    ```text
     ibmcloud target -g RESOURCE_GROUP -r REGION
     ```
     {: pre}
@@ -67,7 +67,7 @@ Complete the following steps:
 
 4. Set the cluster where you want to configure logging as the context for this session.
 
-    ```
+    ```text
     ibmcloud ks cluster config --cluster <cluster_name_or_ID>
     ```
     {: pre}
@@ -82,7 +82,7 @@ Complete the following steps:
 
 1. Generate the configuration file of the agent by running the following command:
 
-    ```
+    ```text
     kubectl get daemonset logdna-agent -o=yaml > prod-logdna-agent-ds.yaml -n ibm-observe
     ```
     {: codeblock}
@@ -91,7 +91,7 @@ Complete the following steps:
 
     * To exclude all cluster logs, you can add:
 
-      ```
+      ```yaml
       - name: LOGDNA_EXCLUDE
       value: /var/log/containers/*_kube-system_*,/var/log/containers/*ibm-observe_*,/var/log/containerd.log,/var/log/kubelet.log,/var/log/syslog,/var/log/ntpstats/*,/var/log/alb/*
       ```
@@ -99,7 +99,7 @@ Complete the following steps:
 
     * To exclude logs by namespace, for example, all of the *kube-system* logs, add:
 
-      ```
+      ```yaml
       - name: LOGDNA_EXCLUDE
         value: /var/log/containers/*_kube-system_*
       ```
@@ -107,7 +107,7 @@ Complete the following steps:
 
     * To exclude all non-container logs, that is, logs shown in the *All Apps* filter view, add:
 
-      ```
+      ```yaml
       - name: LOGDNA_EXCLUDE
         value: /var/log/!(containers)/**
       ```
@@ -115,7 +115,7 @@ Complete the following steps:
 
     * To exclude calico logs, add:
 
-      ```
+      ```yaml
       - name: LOGDNA_EXCLUDE
         value: /var/log/containers/calico*
       ```
@@ -123,7 +123,7 @@ Complete the following steps:
 
     * To exclude all of the _kube-system_ logs and all non-container logs, add:
 
-      ```
+      ```yaml
       - name: LOGDNA_EXCLUDE
         value: /var/log/!(containers)**,/var/log/containers/*_kube-system_*
       ```
@@ -135,7 +135,7 @@ Complete the following steps:
 
 To apply the configuration changes, run the following command:
 
-```
+```text
 kubectl apply -f prod-logdna-agent-ds.yaml -n ibm-observe
 ```
 {: codeblock}
@@ -147,14 +147,14 @@ Complete the following steps:
 
 1. Get the logdna-agent pods and check that pods have restarted. Run the following command:
 
-    ```
+    ```text
     kubectl get pods -n ibm-observe
     ```
     {: codeblock}
 
 2. If pods are not restarted, delete all the logging pods.
 
-    ```
+    ```text
     kubectl delete pod PodName -n ibm-observe
     ```
     {: codeblock}

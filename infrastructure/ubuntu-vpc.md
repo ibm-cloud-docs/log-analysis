@@ -27,8 +27,8 @@ On the {{site.data.keyword.cloud_notm}}, configure an Ubuntu server to forward l
 
 1. Provision a VPC running Ubuntu Linux.
 2. Provision an instance of the {{site.data.keyword.la_full_notm}} service. 
-2. Configure the logging agent in the Ubuntu server.
-3. Optionally, add additional directories to be monitored by the agent.
+3. Configure the logging agent in the Ubuntu server.
+4. Optionally, add additional directories to be monitored by the agent.
 
 ![Component overview on the {{site.data.keyword.cloud_notm}}](../images/ubuntu.png "Component overview on the {{site.data.keyword.cloud_notm}}")
 
@@ -98,7 +98,7 @@ To provision an instance of {{site.data.keyword.la_full_notm}} through the {{sit
 
    By default, the **Default** resource group is set.
 
-8. To provision the {{site.data.keyword.la_full_notm}} service in the {{site.data.keyword.cloud_notm}} selected resource group, click **Create**.
+9. To provision the {{site.data.keyword.la_full_notm}} service in the {{site.data.keyword.cloud_notm}} selected resource group, click **Create**.
 
 After you provision an instance, the {{site.data.keyword.la_full_notm}} dashboard opens. 
 
@@ -115,29 +115,29 @@ To configure your Ubuntu server to forward logs to your logging instance, comple
 
 1. Install the logging agent. Run the following commands:
 
-   ```
+   ```text
    echo "deb https://repo.logdna.com stable main" | sudo tee /etc/apt/sources.list.d/logdna.list 
    ```
    {: pre}
 
-   ```
+   ```text
    wget -O- https://repo.logdna.com/logdna.gpg | sudo apt-key add - 
    ```
    {: pre}
 
-   ```
+   ```text
    sudo apt-get update
    ```
    {: pre}
 
-   ```
+   ```text
    sudo apt-get install logging-agent < "/dev/null"
    ```
    {: pre}
 
 2. Set the ingestion key that the logging agent will use to forward logs to the {{site.data.keyword.la_full_notm}} instance.  
 
-   ```
+   ```text
    sudo logging-agent -k <INGESTION_KEY>
    ```
    {: pre}
@@ -148,21 +148,21 @@ To configure your Ubuntu server to forward logs to your logging instance, comple
 
 3. Set the authentication endpoint. The logging agent uses this host to authenticate and get the token to forward logs.
 
-   ```
+   ```text
    sudo logging-agent -s LOGDNA_APIHOST=api.us-south.logging.cloud.ibm.com
    ```
    {: pre}
 
 4. Set the ingestion endpoint.
 
-   ```
+   ```text
    sudo logging-agent -s LOGDNA_LOGHOST=logs.us-south.logging.cloud.ibm.com
    ```
    {: pre}
 
 5. (Optional) Define any additional log paths to be monitored. Run the following command: 
 
-   ```
+   ```text
    sudo logging-agent -d <PATH_TO_LOG_FOLDERS>
    ```
    {: pre}
@@ -171,7 +171,7 @@ To configure your Ubuntu server to forward logs to your logging instance, comple
 
 6. (Optional) Configure the logging agent to tag your hosts. Run the following command:
 
-   ```
+   ```text
    sudo logging-agent -t TAG1,TAG2 
    ```
    {: pre}
@@ -181,14 +181,14 @@ To configure your Ubuntu server to forward logs to your logging instance, comple
 
 7. Update the logging agent with your changes.  Run the following command:
 
-   ```
+   ```text
    sudo update-rc.d logging-agent defaults
    ```
    {: pre}
 
 8. Start the logging agent.  Run the following command:
 
-   ``` 
+   ```text
    sudo /etc/init.d/logging-agent start
    ```
    {: pre}

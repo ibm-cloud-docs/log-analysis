@@ -46,7 +46,7 @@ To configure the logging agent in the cluster, you need the following CLIs:
 
 1. Open a terminal to log in to {{site.data.keyword.cloud_notm}}.
 
-   ```
+   ```text
    ibmcloud login -a cloud.ibm.com
    ```
    {: pre}
@@ -55,14 +55,14 @@ To configure the logging agent in the cluster, you need the following CLIs:
 
 2. List the clusters to find out in which region and resource group the cluster is available.
 
-    ```
+    ```text
     ibmcloud ks clusters
     ```
     {: pre}
 
 3. Set the resource group and region.
 
-    ```
+    ```text
     ibmcloud target -g RESOURCE_GROUP -r REGION
     ```
     {: pre}
@@ -75,7 +75,7 @@ To configure the logging agent in the cluster, you need the following CLIs:
 
 4. Set the cluster where you want to configure logging as the context for this session.
 
-   ```
+   ```text
    ibmcloud ks cluster config --cluster <cluster_name_or_ID>
    ```
    {: pre}
@@ -88,7 +88,7 @@ Observability services are deployed in the `ibm-observe` namespace.
 
 First, check if the namespace exists. Run the following command:
 
-```
+```text
 kubectl get namespaces
 ```
 {: pre}
@@ -97,7 +97,7 @@ Verify the `ibm-observe` namespace is active.
 
 If you need to create the namespace, run the following command:
 
-```
+```text
 kubectl create namespace ibm-observe
 ```
 {: pre}
@@ -112,7 +112,7 @@ The logging ingestion key is used to open a secure web socket to the logging ing
 
 Run the following command:
 
-```
+```text
 kubectl create secret generic logdna-agent-key --from-literal=logdna-agent-key=<LogDNA_ingestion_key> -n ibm-observe
 ```
 {: pre}
@@ -164,7 +164,7 @@ For more information about the versions that are available, see [Getting informa
 
 For example, to configure an agent that sends data to a logging instance in Dallas, you must run the following command:
 
-```
+```text
 kubectl apply -f https://assets.us-south.logging.cloud.ibm.com/clients/logdna-agent/3.1.0/agent-resources.yaml
 ```
 {: screen}
@@ -226,12 +226,12 @@ Choose one of the following commands to install and configure the logging agent 
 
 To verify that the logging agent is deployed successfully, run any of the following commands:
 
-```
+```text
 kubectl get all -n ibm-observe
 ```
 {: pre}
 
-```
+```text
 kubectl get pods -n ibm-observe
 ```
 {: pre}
@@ -245,7 +245,7 @@ The deployment is successful when you see one or more logging pods.
 
 To get a copy of the logging agent configuration that is deployed, you can run the following command: 
 
-```
+```text
  kubectl get daemonset logdna-agent -o=yaml > prod-logdna-agent-ds.yaml -n ibm-observe
 ```
 {: pre}
@@ -301,7 +301,7 @@ Complete the following steps from the [{{site.data.keyword.containerlong_notm}} 
 
     To check if your account is VRF-enabled, run the following command:
 
-    ```
+    ```text
     ibmcloud account show
     ```
     {: pre}
@@ -318,7 +318,7 @@ To configure the logging agent in a cluster, complete the following steps:
 
 1. [Pre-req] Install the {{site.data.keyword.containerlong_notm}} observability CLI plug-in (ibmcloud ob).
 
-    ```
+    ```text
     ibmcloud plugin install observe-service
     ```
    {: pre}
@@ -327,7 +327,7 @@ To configure the logging agent in a cluster, complete the following steps:
 
     Open a terminal to log in to {{site.data.keyword.cloud_notm}}.
 
-    ```
+    ```text
     ibmcloud login -a cloud.ibm.com
     ```
     {: pre}
@@ -336,14 +336,14 @@ To configure the logging agent in a cluster, complete the following steps:
 
     List the clusters to find out in which region and resource group the cluster is available.
 
-    ```
+    ```text
     ibmcloud ks clusters
     ```
     {: pre}
 
     Set the resource group and region.
 
-    ```
+    ```text
     ibmcloud target -g RESOURCE_GROUP -r REGION
     ```
     {: pre}
@@ -356,14 +356,14 @@ To configure the logging agent in a cluster, complete the following steps:
 
     Set the cluster where you want to configure logging as the context for this session.
 
-    ```
+    ```text
     ibmcloud ks cluster config --cluster <cluster_name_or_ID>
     ```
     {: pre}
 
 3. Deploy the logging agent by using the `ob` CLI. Run the following command:
 
-    ```
+    ```text
     ibmcloud ob logging config create --cluster <cluster_name_or_ID> --instance <instance_name_or_ID> [--LogDNA-ingestion-key <Ingestion_Key>] [--private-endpoint]
     ```
     {: pre}

@@ -44,7 +44,7 @@ Complete the following steps to get the ingestion key:
 
 To send logs, run the following cURL command:
 
-```
+```text
 curl "ENDPOINT/logs/ingest?QUERY_PARAMETERS" -u INGESTION_KEY: --header "Content-Type: application/json; charset=UTF-8" -d "LOG_LINES"
 ```
 {: codeblock}
@@ -83,7 +83,7 @@ The following table lists the data that is required per log line:
 
 For example, the following sample shows the JSON for a log line that you want to ingest:
 
-```
+```json
 { 
   "lines": [ 
     { 
@@ -106,7 +106,7 @@ For example, the following sample shows the JSON for a log line that you want to
 
 The following sample shows the cURL command to send 1 log line to an instance of the {{site.data.keyword.la_full_notm}} service: 
 
-```
+```text
 curl "https://logs.us-south.logging.cloud.ibm.com/logs/ingest?hostname=MYHOST&now=$(date +%s)000" -u xxxxxxxxxxxxxxxxxxxxxxx: --header "Content-Type: application/json; charset=UTF-8" -d "{\"lines\":[{\"line\":\"This is a sample test log statement\",\"timestamp\":\"2018-11-02T10:53:06+00:00\",\"level\":\"INFO\",\"app\":\"myapp\"}]}"
 ```
 {: screen}

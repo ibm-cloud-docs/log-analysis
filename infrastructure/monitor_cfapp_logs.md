@@ -81,9 +81,9 @@ The following table summarizes the different methods that you can use to collect
 |--------------------------|:--------------------------------------------------:|:--------------------------------------------------:|
 | `CF infrastructure logs` | `NO`                                               | `NO`                                               |
 | `CF app logs`            | `NO`                                               | ![Checkmark icon](../images/checkmark-icon.svg)  |
-{: caption="Table 3. Information about the methods that can be adopted to monitor Cloud Foundry resource logs in {{site.data.keyword.cloud_notm}} on-premisses" caption-side="top"}
+{: caption="Table 3. Information about the methods that can be adopted to monitor Cloud Foundry resource logs in {{site.data.keyword.cloud_notm}} on-premises" caption-side="top"}
 {: #end-api-table-3}
-{: tab-title="Monitor Cloud Foundry resources outside {{site.data.keyword.cloud_notm}}"}
+{: tab-title="Monitor Cloud Foundry resources outside IBM Cloud"}
 {: tab-group="cf-app"}
 {: class="simple-tab-table"}
 {: row-headers}
@@ -188,14 +188,14 @@ Complete the following steps:
 
     To create a CUPS instance without security enabled, run the following command:
 
-    ```
+    ```text
     ibmcloud cf cups SVC_INSTANCE_NAME -l syslog://SYSLOG_ENDPOINT_URL:PORT_NUMBER
     ```
     {: codeblock}
 
     To create a CUPS instance with TLS enabled, run the following command:
 
-    ```
+    ```text
     ibmcloud cf cups SVC_INSTANCE_NAME -l syslog-tls://SYSLOG_ENDPOINT_URL:PORT_NUMBER
     ```
     {: codeblock}
@@ -210,7 +210,7 @@ Complete the following steps:
 
     A sample command looks as follows:
 
-    ```
+    ```text
     ibmcloud cf CUPS MyCFsvcInstance -l syslog://syslog-a.us-south.logging.cloud.ibm.com:49235
     ```
     {: screen}
@@ -220,7 +220,7 @@ Complete the following steps:
 
 2. Bind the service. Run the following command:
 
-    ```
+    ```text
     ibmcloud cf bind-service CF_APP_NAME SVC_INSTANCE_NAME
     ```
     {: codeblock}
@@ -233,14 +233,14 @@ Complete the following steps:
 
     A sample command looks as follows:
 
-    ```
+    ```text
     ibmcloud cf bind-service MyCFapp MyCFsvcInstance
     ```
     {: screen}
 
 3. Restage the Cloud Foundry application. Run the following command:
 
-    ```
+    ```text
     ibmcloud cf restage CF_APP_NAME
     ```
     {: codeblock}
@@ -249,7 +249,7 @@ Complete the following steps:
 
      A sample command looks as follows:
 
-    ```
+    ```text
     ibmcloud cf restage MyCFapp
     ```
     {: screen}

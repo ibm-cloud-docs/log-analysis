@@ -68,7 +68,7 @@ To remove an instance of {{site.data.keyword.la_full_notm}} through the command 
 
 4. Remove the instance. Run the [ibmcloud resource service-instance-delete](/docs/cli?topic=cli-ibmcloud_commands_resource#ibmcloud_resource_service_instance_delete) command:
 
-    ```
+    ```text
     ibmcloud resource service-instance-delete NAME 
     ```
     {: codeblock}
@@ -77,7 +77,7 @@ To remove an instance of {{site.data.keyword.la_full_notm}} through the command 
 
     For example, to remove an instance, run the following command:
 
-    ```
+    ```text
     ibmcloud resource service-instance-delete logging-instance-01
     ```
     {: codeblock}

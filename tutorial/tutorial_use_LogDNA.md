@@ -151,7 +151,7 @@ You can customize the fields that are displayed in a custom view.
 
       The log fields that can be used are displayed in the **Reference line** along with the specific values from the selected log entry.  For example:
 
-      ```
+      ```text
       {"logSourceCRN":"crn:v1:bluemix:public:containers-kubernetes:us-south:a/xxxxx:yyyyy::","saveServiceCopy":true,"message":"Cluster yyyyy health status set to All Workers Normal"}
       ```
       {: codeblock}
@@ -165,14 +165,14 @@ You can customize the fields that are displayed in a custom view.
 
       For example, if you have log entries similar to the following:
 
-      ```
+      ```text
       Nov 16 13:59:02 containers-kubernetes crn:v1:bluemix:public:containers-kubernetes:us-south:a/xxxxx:yyyyy:: Cluster yyyyy health status set to All Workers Normal
       ```
       {: codeblock}
 
       And you want them formatted like this:
 
-      ```
+      ```text
       SOURCE: Nov 16 13:59:02 containers-kubernetes crn:v1:bluemix:public:containers-kubernetes:us-south:a/xxxxx:yyyyy:: 
       MESSAGE: Cluster yyyyy health status set to All Workers Normal
       ```
@@ -180,14 +180,14 @@ You can customize the fields that are displayed in a custom view.
 
       And the extracted reference line is:
 
-      ```
+      ```text
       {"logSourceCRN":"crn:v1:bluemix:public:containers-kubernetes:us-south:a/xxxxx:yyyyy::","saveServiceCopy":true,"message":"Cluster yyyy health status set to All Workers Normal"}
       ```
       {: codeblock}
 
       Then your **Custom Template** would be:
 
-      ```
+      ```text
       SOURCE: {{logSourceCRN}} 
       MESSAGE: {{message}}
       ```
@@ -381,7 +381,7 @@ Using the screen option you can create a screen of widgets that you can use to m
 
 12. Change the **Field** and **Field Value** to change what is displayed in the table. In **Group By**, specify the field used to group the data . For example, you might change **Field** to *host* and **Field Value** to a host in your account. You then might want to group that data by *app*. The widget will display a table of the counts for the host grouped by app during the past day. You can also change the **Duration** of time counted and specify a **Label** for your widget.
 
-   If you need a table with more rows, change the **Data Format** **Number of Rows** to your preferred value.
+    If you need a table with more rows, change the **Data Format** **Number of Rows** to your preferred value.
 
 13. You can resize any of the widgets by clicking the widget and clicking and dragging one of the anchors. Widgets can be moved by clicking the widget and dragging it to your desired location on the screen.   
 
@@ -426,9 +426,9 @@ You can configure an alert to be sent by email, Slack, PagerDuty or as a Webhook
 
    3. Click **Save Alert**.
 
-8. Check the configured email for an alert.  
+9. Check the configured email for an alert.  
 
-9. When you are ready to disable the alert, click the view name and in the menu click **Detach alerts**.
+10. When you are ready to disable the alert, click the view name and in the menu click **Detach alerts**.
 
    ![Detach alerts](../images/detachalerts.png "Dialog showing the option to detach associated alerts")
 

@@ -28,29 +28,29 @@ To configure your Ubuntu server to forward logs to your logging instance, comple
 
 1. Install the logging agent. Run the following commands:
 
-    ```
+    ```text
     echo "deb https://repo.logdna.com stable main" | sudo tee /etc/apt/sources.list.d/logdna.list
     ```
     {: codeblock}
 
-    ```
+    ```text
     wget -O- https://repo.logdna.com/logdna.gpg | sudo apt-key add -
     ```
     {: codeblock}
 
-    ```
+    ```text
     sudo apt-get update
     ```
     {: codeblock}
 
-    ```
+    ```text
     sudo apt-get install logdna-agent < "/dev/null"
     ```
     {: codeblock}
 
 2. Set the ingestion key that the logging agent must use to forward logs to the {{site.data.keyword.la_full_notm}} instance.  
 
-    ```
+    ```text
     sudo logdna-agent -k INGESTION_KEY
     ```
     {: codeblock}
@@ -59,36 +59,36 @@ To configure your Ubuntu server to forward logs to your logging instance, comple
 
 3. Set the authentication endpoint. The logging agent uses this host to authenticate and get the token to forward logs. 
 
-| Location               | Command                                                                         |
-|------------------------|---------------------------------------------------------------------------------|
-| `Chennai (in-che)`     | `sudo logdna-agent -s export LOGDNA_APIHOST=api.in-che.logging.cloud.ibm.com`   |
-| `Dallas (us-south)`    | `sudo logdna-agent -s export LOGDNA_APIHOST=api.us-south.logging.cloud.ibm.com` |
-| `Frankfurt (eu-de)`    | `sudo logdna-agent -s export LOGDNA_APIHOST=api.eu-de.logging.cloud.ibm.com`    |
-| `London (eu-gb)`       | `sudo logdna-agent -s export LOGDNA_APIHOST=api.eu-gb.logging.cloud.ibm.com`    |
-| `Tokyo (jp-tok)`       | `sudo logdna-agent -s export LOGDNA_APIHOST=api.jp-tok.logging.cloud.ibm.com`   |
-| `Seoul (kr-seo)`       | `sudo logdna-agent -s export LOGDNA_APIHOST=api.kr-seo.logging.cloud.ibm.com`   |
-| `Sydney (au-syd)`      | `sudo logdna-agent -s export LOGDNA_APIHOST=api.au-syd.logging.cloud.ibm.com`   |
-| `Washington (us-east)` | `sudo logdna-agent -s export LOGDNA_APIHOST=api.us-east.logging.cloud.ibm.com`  |
-{: caption="Commands by region" caption-side="top"}
+    | Location               | Command                                                                         |
+    |------------------------|---------------------------------------------------------------------------------|
+    | `Chennai (in-che)`     | `sudo logdna-agent -s export LOGDNA_APIHOST=api.in-che.logging.cloud.ibm.com`   |
+    | `Dallas (us-south)`    | `sudo logdna-agent -s export LOGDNA_APIHOST=api.us-south.logging.cloud.ibm.com` |
+    | `Frankfurt (eu-de)`    | `sudo logdna-agent -s export LOGDNA_APIHOST=api.eu-de.logging.cloud.ibm.com`    |
+    | `London (eu-gb)`       | `sudo logdna-agent -s export LOGDNA_APIHOST=api.eu-gb.logging.cloud.ibm.com`    |
+    | `Tokyo (jp-tok)`       | `sudo logdna-agent -s export LOGDNA_APIHOST=api.jp-tok.logging.cloud.ibm.com`   |
+    | `Seoul (kr-seo)`       | `sudo logdna-agent -s export LOGDNA_APIHOST=api.kr-seo.logging.cloud.ibm.com`   |
+    | `Sydney (au-syd)`      | `sudo logdna-agent -s export LOGDNA_APIHOST=api.au-syd.logging.cloud.ibm.com`   |
+    | `Washington (us-east)` | `sudo logdna-agent -s export LOGDNA_APIHOST=api.us-east.logging.cloud.ibm.com`  |
+    {: caption="Commands by region" caption-side="top"}
 
 
 4. Set the ingestion endpoint. Choose the public or the private endpoint in a location.
 
-| Location               | Command (By using public endpoints)                                       | Command (By using private endpoints)                                                                                                                     |
-|------------------------|---------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `Chennai (in-che)`     | `sudo logdna-agent -s LOGDNA_LOGHOST=logs.in-che.logging.cloud.ibm.com`   | `sudo logdna-agent -s LOGDNA_LOGHOST=logs.private.in-che.logging.cloud.ibm.com`  \n  \n `export LDLOGHOST=logs.private.in-che.logging.cloud.ibm.com`     |
-| `Dallas (us-south)`    | `sudo logdna-agent -s LOGDNA_LOGHOST=logs.us-south.logging.cloud.ibm.com` | `sudo logdna-agent -s LOGDNA_LOGHOST=logs.private.us-south.logging.cloud.ibm.com`  \n  \n `export LDLOGHOST=logs.private.us-south.logging.cloud.ibm.com` |
-| `Frankfurt (eu-de)`    | `sudo logdna-agent -s LOGDNA_LOGHOST=logs.eu-de.logging.cloud.ibm.com`    | `sudo logdna-agent -s LOGDNA_LOGHOST=logs.private.eu-de.logging.cloud.ibm.com`  \n  \n `export LDLOGHOST=logs.private.eu-de.logging.cloud.ibm.com`       |
-| `London (eu-gb)`       | `sudo logdna-agent -s LOGDNA_LOGHOST=logs.eu-gb.logging.cloud.ibm.com`    | `sudo logdna-agent -s LOGDNA_LOGHOST=logs.private.eu-gb.logging.cloud.ibm.com`  \n  \n `export LDLOGHOST=logs.private.eu-gb.logging.cloud.ibm.com`       |
-| `Tokyo (jp-tok)`       | `sudo logdna-agent -s LOGDNA_LOGHOST=logs.jp-tok.logging.cloud.ibm.com`   | `sudo logdna-agent -s LOGDNA_LOGHOST=logs.private.jp-tok.logging.cloud.ibm.com`  \n  \n `export LDLOGHOST=logs.private.jp-tok.logging.cloud.ibm.com`     |
-| `Seoul (kr-seo)`       | `sudo logdna-agent -s LOGDNA_LOGHOST=logs.kr-seo.logging.cloud.ibm.com`   | `sudo logdna-agent -s LOGDNA_LOGHOST=logs.private.kr-seo.logging.cloud.ibm.com`  \n  \n `export LDLOGHOST=logs.private.kr-seo.logging.cloud.ibm.com`     |
-| `Sydney (au-syd)`      | `sudo logdna-agent -s LOGDNA_LOGHOST=logs.au-syd.logging.cloud.ibm.com`   | `sudo logdna-agent -s LOGDNA_LOGHOST=logs.private.au-syd.logging.cloud.ibm.com`  \n  \n `export LDLOGHOST=logs.private.au-syd.logging.cloud.ibm.com`     |
-| `Washington (us-east)` | `sudo logdna-agent -s LOGDNA_LOGHOST=logs.us-east.logging.cloud.ibm.com`  | `sudo logdna-agent -s LOGDNA_LOGHOST=logs.private.us-east.logging.cloud.ibm.com`  \n  \n `export LDLOGHOST=logs.private.us-east.logging.cloud.ibm.com`   |
-{: caption="Commands by region" caption-side="top"}
+    | Location               | Command (By using public endpoints)                                       | Command (By using private endpoints)                                                                                                                     |
+    |------------------------|---------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------|
+    | `Chennai (in-che)`     | `sudo logdna-agent -s LOGDNA_LOGHOST=logs.in-che.logging.cloud.ibm.com`   | `sudo logdna-agent -s LOGDNA_LOGHOST=logs.private.in-che.logging.cloud.ibm.com`  \n  \n `export LDLOGHOST=logs.private.in-che.logging.cloud.ibm.com`     |
+    | `Dallas (us-south)`    | `sudo logdna-agent -s LOGDNA_LOGHOST=logs.us-south.logging.cloud.ibm.com` | `sudo logdna-agent -s LOGDNA_LOGHOST=logs.private.us-south.logging.cloud.ibm.com`  \n  \n `export LDLOGHOST=logs.private.us-south.logging.cloud.ibm.com` |
+    | `Frankfurt (eu-de)`    | `sudo logdna-agent -s LOGDNA_LOGHOST=logs.eu-de.logging.cloud.ibm.com`    | `sudo logdna-agent -s LOGDNA_LOGHOST=logs.private.eu-de.logging.cloud.ibm.com`  \n  \n `export LDLOGHOST=logs.private.eu-de.logging.cloud.ibm.com`       |
+    | `London (eu-gb)`       | `sudo logdna-agent -s LOGDNA_LOGHOST=logs.eu-gb.logging.cloud.ibm.com`    | `sudo logdna-agent -s LOGDNA_LOGHOST=logs.private.eu-gb.logging.cloud.ibm.com`  \n  \n `export LDLOGHOST=logs.private.eu-gb.logging.cloud.ibm.com`       |
+    | `Tokyo (jp-tok)`       | `sudo logdna-agent -s LOGDNA_LOGHOST=logs.jp-tok.logging.cloud.ibm.com`   | `sudo logdna-agent -s LOGDNA_LOGHOST=logs.private.jp-tok.logging.cloud.ibm.com`  \n  \n `export LDLOGHOST=logs.private.jp-tok.logging.cloud.ibm.com`     |
+    | `Seoul (kr-seo)`       | `sudo logdna-agent -s LOGDNA_LOGHOST=logs.kr-seo.logging.cloud.ibm.com`   | `sudo logdna-agent -s LOGDNA_LOGHOST=logs.private.kr-seo.logging.cloud.ibm.com`  \n  \n `export LDLOGHOST=logs.private.kr-seo.logging.cloud.ibm.com`     |
+    | `Sydney (au-syd)`      | `sudo logdna-agent -s LOGDNA_LOGHOST=logs.au-syd.logging.cloud.ibm.com`   | `sudo logdna-agent -s LOGDNA_LOGHOST=logs.private.au-syd.logging.cloud.ibm.com`  \n  \n `export LDLOGHOST=logs.private.au-syd.logging.cloud.ibm.com`     |
+    | `Washington (us-east)` | `sudo logdna-agent -s LOGDNA_LOGHOST=logs.us-east.logging.cloud.ibm.com`  | `sudo logdna-agent -s LOGDNA_LOGHOST=logs.private.us-east.logging.cloud.ibm.com`  \n  \n `export LDLOGHOST=logs.private.us-east.logging.cloud.ibm.com`   |
+    {: caption="Commands by region" caption-side="top"}
 
 5. Define more log paths to be monitored. Run the following command:
 
-    ```
+    ```text
     sudo logdna-agent -d /path/to/log/folders
     ```
     {: codeblock}
@@ -99,7 +99,7 @@ To configure your Ubuntu server to forward logs to your logging instance, comple
 
 7. Start the logging agent.
 
-    ```
+    ```text
     sudo /etc/init.d/logdna-agent start
     ```
     {: codeblock}

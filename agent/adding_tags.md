@@ -12,7 +12,6 @@ subcollection: log-analysis
 
 {{site.data.keyword.attribute-definition-list}}
 
-
 # Grouping data by using tags
 {: #adding_tags}
 
@@ -36,7 +35,7 @@ Complete the following steps to add tags to a cluster:
 
     1. Get the command to set the environment variable and download the Kubernetes configuration files.
 
-       ```
+       ```text
        ibmcloud ks cluster config --cluster <cluster_name_or_ID>
        ```
        {: codeblock}
@@ -49,7 +48,7 @@ Complete the following steps to add tags to a cluster:
 
     To check the update strategy, run the following command:
 
-    ```
+    ```text
     kubectl get ds/logdna-agent -o go-template='{{.spec.updateStrategy.type}}{{"\n"}}'
     ```
     {: pre}
@@ -62,21 +61,21 @@ Complete the following steps to add tags to a cluster:
 
     Update the configuration file by modifying the local copy. **Note:** You can also generate the configuration file of the agent by running the following command:
 
-    ```
+    ```text
     kubectl get daemonset logdna-agent -o=yaml > prod-logdna-agent-ds.yaml
     ```
     {: codeblock}
 
     Alternatively, update the configuration file by using *kubectl edit*.
 
-    ```
+    ```text
     kubectl edit daemonset logdna-agent
     ```
     {: codeblock}
 
 4. Add a **LOGDNA_TAGS** section.
 
-    ```
+    ```yaml
     - name: LOGDNA_TAGS
         value: tag1,tag2,tag3
     ```
@@ -84,7 +83,7 @@ Complete the following steps to add tags to a cluster:
 
     For example, the following shows the tags in a sample configuration file:
 
-    ```
+    ```yaml
     apiVersion: extensions/v1beta1
     kind: DaemonSet
     metadata:
@@ -118,7 +117,7 @@ Complete the following steps to add tags to a cluster:
 
 5. Apply configuration changes if you edit the file locally.
 
-    ```
+    ```text
     kubectl apply -f prod-logdna-agent-ds.yaml
     ```
     {: codeblock}
@@ -137,7 +136,7 @@ Complete the following steps to add more tags to the logging agent:
 
 2. Add one or more tags.
 
-    ```
+    ```text
     sudo logdna-agent -t TAG1,TAG2
     ```
     {: codeblock}
@@ -147,7 +146,7 @@ You can also edit the agent configuration file and add tags. The configuration f
 
 1. Edit the file.
 
-    ```
+    ```text
     sudo update-rc.d logdna-agent defaults
     ```
     {: codeblock}
@@ -156,7 +155,7 @@ You can also edit the agent configuration file and add tags. The configuration f
 
 3. Restart the logging agent.
 
-    ```
+    ```text
     sudo /etc/init.d/logdna-agent start
     ```
     {: codeblock}

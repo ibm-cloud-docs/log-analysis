@@ -113,7 +113,7 @@ The following sections include samples of some fields in the notification event 
 
 In {{site.data.keyword.la_short}}, you can create a view with the following query to filter for event stream failure notifications:
 
-```
+```text
 action:logdnaat.streaming-logs.send reason.reasonCode:500 severity:critical target.typeURI:"logdna/account/streaming-notification"
 ```
 {: codeblock}
@@ -122,7 +122,7 @@ You can define a presence alert on this view to notify you as soon as 1 event re
 
 In addition, you can create views for each type of notification. For example, to monitor for a failure to authenticate with {{site.data.keyword.messagehub}}, you can use the following query:
 
-```
+```text
 action:logdnaat.streaming-logs.send reason.reasonCode:500 severity:critical target.typeURI:"logdna/account/streaming-notification" requestData.notificationType:"authentication_failure"
 ```
 {: codeblock}

@@ -81,7 +81,7 @@ When you include a query or a subject to an email, use `%20` to represent a spac
 
 For example, you can define a set of parameters to include information:
 
-```
+```text
 ENDPOINT/v1/export?to=START_TIME&from=END_TIME&hosts=LIST_OF_HOSTS&levels=LIST_OF_LEVELS&size=N&query=(SEARCH_QUERY)" -u $TOKEN:
 ```
 {: pre}
@@ -115,7 +115,7 @@ Notice that when you copy the query from the logging web UI, you must replace ev
 
 Run the following cURL command to export logs:
 
-```
+```text
 curl "ENDPOINT/v1/export?QUERY_PARAMETERS" -u SERVICE_KEY:
 ```
 {: pre}
@@ -132,14 +132,14 @@ Where
 
 For example, to write log lines into the terminal, you can run the following command:
 
-```
+```text
 curl "https://api.us-south.logging.cloud.ibm.com/v1/export?to=$(date +%s)000&from=$(($(date +%s)-86400))000&levels=info" -u e08c0c759663491880b0d61712346789:
 ```
 {: pre}
 
 To send an email with the link to download the log lines specified on the export, you can run the following command:
 
-```
+```text
 curl "https://api.us-south.logging.cloud.ibm.com/v1/export?to=$(date +%s)000&from=$(($(date +%s)-86400))000&levels=info&email=xxx@ibm.com" -u e08c0c759663491880b0d61712346789:
 ```
 {: pre}
@@ -147,14 +147,14 @@ curl "https://api.us-south.logging.cloud.ibm.com/v1/export?to=$(date +%s)000&fro
 
 To send an email with a custom subject, you can run the following command:
 
-```
+```text
 curl "https://api.us-south.logging.cloud.ibm.com/v1/export?to=$(date +%s)000&from=$(($(date +%s)-86400))000&levels=info&email=xxx@ibm.com&emailSubject=Export%20test" -u e08c0c759663491880b0d61712346789:
 ```
 {: pre}
 
 To use the query parameter to find all log lines with a level of `info`, you can run the following command:
 
-```
+```text
 curl -s "https://api.us-south.logging.cloud.ibm.com/v1/export?query=test_query&levels=info" -u :
 ```
 {: pre}
