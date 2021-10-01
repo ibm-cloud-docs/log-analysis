@@ -168,15 +168,21 @@ toc:
       - topicgroup: 
           label: Logging API
           links: 
+            - link:
+                label: Alerts and views API
+                href: https://{DomainName}/apidocs/log-analysis#create-view
+            - link:
+                label: Export API
+                href: https://{DomainName}/apidocs/log-analysis#export
             - link: 
                 label: Ingestion API
                 href: https://{DomainName}/apidocs/log-analysis#ingest
             - link:
-                label: Export API
-                href: https://{DomainName}/apidocs/log-analysis#export
+                label: Streaming API
+                href: https://{DomainName}/apidocs/log-analysis#get-v1-config-stream
             - link:
-                label: Configuration API
-                href: https://{DomainName}/apidocs/log-analysis#create-view
+                label: Groups API
+                href: https://{DomainName}/apidocs/log-analysis#create-group
   
       - topicgroup: 
           label: High availability and disaster recovery
