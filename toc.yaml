@@ -135,6 +135,7 @@ toc:
           - streaming-configure.md
           - streaming-monitor.md
           - streaming-conditional.md
+          - streaming-manage-api.md
 
       - devops/view_logs.md
       
@@ -196,5 +197,10 @@ toc:
         topics: 
         - gettinghelp.md
         - faq.md
+
+        - topicgroup: 
+            label: Troubleshooting
+            topics:  
+            - troubleshoot-04.md
 
         

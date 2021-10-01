@@ -4,7 +4,7 @@ copyright:
   years: 2019, 2021
 lastupdated: "2021-07-01"
 
-keywords: IBM Cloud, Activity Tracker, streaming
+keywords: IBM Cloud, Log Analysis, streaming
 
 subcollection: log-analysis
 
