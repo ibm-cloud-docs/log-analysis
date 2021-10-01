@@ -64,6 +64,7 @@ toc:
       topics:
       - provision.md
       - provision_hipaa.md
+      - terraform/terraform-setup.md
       - remove.md
       - upgrade.md
       - observe.md
