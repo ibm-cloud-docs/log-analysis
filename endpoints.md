@@ -174,7 +174,7 @@ The following table shows the syslog endpoints:
 | Region                   |  Public Endpoint                                   | IP addresses    |
 |--------------------------|----------------------------------------------------|-----------------|
 | `Chennai (in-che)`       | `syslog://syslog-a.in-che.logging.cloud.ibm.com`   | 169.38.75.43    |
-| `Dallas (us-south)`      | `syslog://syslog-a.us-south.logging.cloud.ibm.com` | 169.47.102.26  \n 169.62.255.114  \n 169.47.227.242 |
+| `Dallas (us-south)`      | `syslog://syslog-a.us-south.logging.cloud.ibm.com` | 67.228.102.118  \n 52.117.134.203  \n 50.22.153.157 |
 | `Frankfurt (eu-de)`      | `syslog://syslog-a.eu-de.logging.cloud.ibm.com`    | 158.177.136.58  \n 149.81.96.229  \n 161.156.75.98 |
 | `London (eu-gb)`         | `syslog://syslog-a.eu-gb.logging.cloud.ibm.com`    | 158.175.113.22  \n 158.176.163.115  \n 141.125.102.148 |
 | `Osaka (jp-osa)`         | `syslog://syslog-a.jp-osa.logging.cloud.ibm.com`   | 163.73.68.45  \n 163.69.67.210  \n 163.68.72.220 |
@@ -184,8 +184,23 @@ The following table shows the syslog endpoints:
 | `Sydney (au-syd)`        | `syslog://syslog-a.au-syd.logging.cloud.ibm.com`   | 168.1.202.76  \n 135.90.92.254  \n 130.198.1.210 |
 | `Washington (us-east)`   | `syslog://syslog-a.us-east.logging.cloud.ibm.com`  | 169.61.98.203  \n 169.47.34.203  \n 169.60.121.243 |
 | `Sao Paulo (br-sao)`     | `syslog://syslog-a.br-sao.logging.cloud.ibm.com`   | 169.57.254.118  \n 163.107.68.195  \n 163.109.68.109 |
-{: caption="Table 6. Lists of Syslog endpoints" caption-side="top"}
+{: caption="Table 6. Lists of Syslog-a endpoints" caption-side="top"}
 
+
+| Region                   |  Public Endpoint                                   | IP addresses    |
+|--------------------------|----------------------------------------------------|-----------------|
+| `Chennai (in-che)`       | `syslog://syslog-u.in-che.logging.cloud.ibm.com`   | 169.38.75.43    |
+| `Dallas (us-south)`      | `syslog://syslog-u.us-south.logging.cloud.ibm.com` | 52.116.247.173  \n 169.60.203.92  \n 67.228.102.116 |
+| `Frankfurt (eu-de)`      | `syslog://syslog-u.eu-de.logging.cloud.ibm.com`    | 158.177.136.58  \n 149.81.96.229  \n 161.156.75.98 |
+| `London (eu-gb)`         | `syslog://syslog-u.eu-gb.logging.cloud.ibm.com`    | 158.175.113.22  \n 158.176.163.115  \n 141.125.102.148 |
+| `Osaka (jp-osa)`         | `syslog://syslog-u.jp-osa.logging.cloud.ibm.com`   | 163.73.68.45  \n 163.69.67.210  \n 163.68.72.220 |
+| `Tokyo (jp-tok)`         | `syslog://syslog-u.jp-tok.logging.cloud.ibm.com`   | 169.56.11.251  \n 165.192.100.77  \n 128.168.107.245 |
+| `Toronto (ca-tor)`       | `syslog://syslog-u.ca-tor.logging.cloud.ibm.com`   | 163.75.66.13  \n 169.53.186.154  \n 163.74.69.234 |
+| `Seoul (kr-seo)`         | `syslog://syslog-u.kr-seo.logging.cloud.ibm.com`   | 169.56.98.139 |
+| `Sydney (au-syd)`        | `syslog://syslog-u.au-syd.logging.cloud.ibm.com`   | 168.1.202.76  \n 135.90.92.254  \n 130.198.1.210 |
+| `Washington (us-east)`   | `syslog://syslog-u.us-east.logging.cloud.ibm.com`  | 169.61.98.203  \n 169.47.34.203  \n 169.60.121.243 |
+| `Sao Paulo (br-sao)`     | `syslog://syslog-u.br-sao.logging.cloud.ibm.com`   | 169.57.254.118  \n 163.107.68.195  \n 163.109.68.109 |
+{: caption="Table 7. Lists of Syslog-u endpoints" caption-side="top"}
 
 
 ### Syslog TLS endpoints
@@ -206,7 +221,7 @@ The following table shows the syslog TLS endpoints:
 | `Sydney (au-syd)`        | `syslog-tls://syslog-a.au-syd.logging.cloud.ibm.com`     | 135.90.92.254  \n 168.1.202.76  \n 130.198.1.210 |
 | `Washington (us-east)`   | `syslog-tls://syslog-a.us-east.logging.cloud.ibm.com`    | 169.60.121.243  \n 169.61.98.203  \n 169.47.34.203 |
 | `Sao Paulo (br-sao)`     | `syslog-tls://syslog-a.br-sao.logging.cloud.ibm.com`     | 169.57.254.118  \n 163.107.68.195  \n 163.109.68.109 |
-{: caption="Table 7. Lists of Syslog-TLS endpoints" caption-side="top"}
+{: caption="Table 8. Lists of Syslog-TLS endpoints" caption-side="top"}
 
 
 
