@@ -149,24 +149,6 @@ sudo service logdna-agent status
 ```
 {: codeblock}
 
-### Agent V3
-{: #config_agent_linux_rpm_step3_v3}
-
-Start the logdna-agent service by running the following command:
-
-```text
-sudo systemctl start logdna-agent
-```
-{: codeblock}
-
-Next, verify that the agent is running.
-
-```text
-systemctl status logdna-agent
-```
-{: codeblock}
-
-
 
 
 ## Appendix. Commands to manage the agent
