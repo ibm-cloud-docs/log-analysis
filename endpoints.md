@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2021
-lastupdated: "2021-05-12"
+lastupdated: "2021-10-07"
 
 keywords: IBM, Log Analysis, logging, endpoints
 
@@ -55,7 +55,7 @@ The following table shows the public API endpoints:
 
 | Region                | Public endpoint                             | Public IP addresses                                    | Ports               |
 |-----------------------|---------------------------------------------|--------------------------------------------------------|---------------------|
-| `Chennai (in-che)`    | `api.in-che.logging.cloud.ibm.com`          | 169.38.75.42                                           | TCP 443  \n TCP 80 |
+| `Chennai (in-che)`    | `api.in-che.logging.cloud.ibm.com`          | 169.38.75.42     | TCP 443  \n TCP 80 |
 | `Dallas (us-south)`   | `api.us-south.logging.cloud.ibm.com`        | 169.47.224.74   \n 169.60.166.44  \n 169.48.237.109  | TCP 443  \n TCP 80 |
 | `Frankfurt (eu-de)`   | `api.eu-de.logging.cloud.ibm.com`           | 149.81.86.66   \n 161.156.89.12  \n 158.177.129.34   | TCP 443  \n TCP 80 |
 | `London (eu-gb)`      | `api.eu-gb.logging.cloud.ibm.com`           | 158.175.113.20  \n 158.176.163.154  \n 141.125.140.100 | TCP 443  \n TCP 80 |

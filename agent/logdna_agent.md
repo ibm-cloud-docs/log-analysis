@@ -2,9 +2,9 @@
 
 copyright:
   years:  2018, 2021
-lastupdated: "2021-07-30"
+lastupdated: "2021-10-06"
 
-keywords: IBM, Log Analysis, logging, config agent
+keywords: IBM, Log Analysis, logging, config agent, linux
 
 subcollection: log-analysis
 
@@ -112,7 +112,7 @@ The logging agent v2 is available only for Kubernetes 1.9+.
 
 
 ### Choosing a version
-{: #log_analysis_dna_agent_image_kube_choose_version}
+{: #log_analysis_agent_image_kube_choose_version}
 
 When you configure the logging agent, you can choose any of the following options:
 - You can use the default YAML that is provided. Choose by region and by type of account. The default configuration pulls the image `icr.io/ext/logdna-agent:stable`.
@@ -123,7 +123,7 @@ If you have a highly regulated environment, you can customize the YAML file. You
 
 
 ### Connecting a logging agent with a logging instance 
-{: #log_analysis_dna_agent_image_kube_connect}
+{: #log_analysis_agent_image_kube_connect}
 
 The logging agent is responsible for collecting and forwarding system-level, and file-based logs to your {{site.data.keyword.la_full_notm}} instance. 
 
@@ -170,9 +170,9 @@ Logging agent images for Linux are public images that are available in the loggi
 
 The following table outlines the agent versions that are available:
 
-| Kubernetes cluster                    | logging agent V1                                    | logging agent V2                                   |
-|---------------------------------------|----------------------------------------------------|---------------------------------------------------|
-| `Linux`         | ![Checkmark icon](../images/checkmark-icon.svg)  | `Not available`                                   |
+| Linux                                 | Logging agent V1 | Logging agent V2  | Logging agent V3 |
+|---------------------------------------|------------------|-------------------|------------------|
+| `Linux`   | ![Checkmark icon](../images/checkmark-icon.svg)  | ![Checkmark icon](../images/checkmark-icon.svg) | `Not available` | 
 {: caption="Table 3. Logging agent versions for Linux" caption-side="top"}
 
 
@@ -186,8 +186,9 @@ To connect your Linux server to send logs to your {{site.data.keyword.la_full_no
 
 - The logging agent reads log files from */var/log*, and forwards the log data to your logging instance. 
 
-- To connect an agent to a Linux platform, see [Connecting a logging agent for Linux Ubuntu or Debian](/docs/log-analysis?topic=log-analysis-config_agent_linux).
-
+To connect an agent to a Linux platform, choose 1 of the following option:
+- [Configuring a Logging agent for Linux Ubuntu or Debian](/docs/log-analysis?topic=log-analysis-config_agent_linux).
+- [Configuring a Logging agent for a Linux RPM](/docs/log-analysis?topic=log-analysis-config_agent_linux_rpm)
 
 
 
@@ -196,25 +197,47 @@ To connect your Linux server to send logs to your {{site.data.keyword.la_full_no
 
 You can customize a logging agent by configuring parameters for Linux agents, or environment variables for Kubernetes agents.
 
-### Linux: configuration parameters for logging agent V1
-{: #log_analysis_agent_configure_linux_v1}
 
-| Parameter | Description                                          |
-|-----------|------------------------------------------------------|
-| `tags`    | Define tags to group hosts automatically into dynamic groups. |
-| `logdir`  | Define custom paths that you want the agent to monitor.  \n Separate multiple paths by using commas. You can use glob patterns. You can configure specific files. Enter glob patterns by using double quotation marks. | 
-| `exclude` | Define the files that you do not want the logging agent to monitor. **Note:** These files can be located in any of the paths that are defined through the logdir parameter.  \n Separate multiple files by using commas. You can use glob patterns. You can configure specific files. |
-| `exclude_regex` | Define regex patterns to filter out any lines that match the pattern. Do not include leading and trailing `/`. | 
-| `hostname` | Define the hostname. This value overrides the operating system hostname. |
-| `autoupdate` | Set to `1` to update the agent automatically when the public repo agent definition is updated. Set to `0` to disable this feature. |
-{: caption="Table 6. Configuration options for the logging agent V1" caption-side="top"}
+### Environment variables for the logging agent V3
+{: #log_analysis_agent_configure_v3}
 
 
-### Standard Kubernetes clusters: environment variables for logging agent V2
-{: #log_analysis_dna_agent_configure_std_kube_v2}
+| Environment variable     | Description   |  Default value                         | Sample value          |
+|--------------------------|---------------|----------------------------------------|-----------------------|
+| `LOGDNA_CONFIG_FILE`      | Default configuration file.   | `/etc/logdna/config.yaml`              |                       |
+| `LOGDNA_DB_PATH` | The directory where the agent stores status information. \n  The directory must be on a persistent volume. \n The agent must have write access to the directory. | `/var/lib/logdna-agent/` | |
+| `LOGDNA_PLATFORM`        | Log source type.           | `k8s`          |                       |
+| `LOGDNA_INGESTION_KEY`   | Reference to the logging ingestion key.                | secretKeyRef                           |                       |
+| `LOGDNA_HOST`            | {{site.data.keyword.la_full_notm}} ingestion endpoint.                            |                                        | `logs.us-south.logging.cloud.ibm.com` |
+| `LOGDNA_ENDPOINT`        | Ingestion log path.                                   | `/logs/agent/`                         |                       |
+| `LOGDNA_HOSTNAME`        | Log Source name.  | Machine's default OS hostname.     | `MyCluster`  | 
+| `LOGDNA_IP` | IP address that is included as metadata to log lines that are forwarded from the agent. |  | |
+| `LOGDNA_JOURNALD_PATHS` | List of journald paths that you want to monitor. |   | `/var/log/journal`, `/run/systemd/journal` |
+| `LOGDNA_LOG_DIRS`        | Defines custom paths that you want the agent to monitor.  \n Separate multiple paths by using commas.  \n You can use glob patterns. Use double quotation marks to add a globe pattern.   | `/var/log/`   | `/output/,/mylogs/myapplogs/` |
+| `LOGDNA_REDACT_REGEX` | Regex custom rules that you can define to mask sensitive information before the agent sends the log line. | | |
+| `LOGDNA_LINE_INCLUSION_REGEX` | Regex custom rules that you can define to configure what log lines to monitor. \n When you set this field, the agent sends only log lines that match any of the patterns. | | |
+| `LOGDNA_INCLUSION_RULES` | Custom rules that you can define to configure what log files to monitor.  \n These files can be located in any of the paths that are defined through the logdir parameter.  \n You can use glob patterns. For more information, see [Glober rules](https://github.com/CJP10/globber){: external}   |  | `*.json,*.test` |
+| `LOGDNA_LINE_EXCLUSION_REGEX` | Regex custom rules that you can define to configure what log files to exclude from monitoring. For more information, see [regex syntax](https://docs.rs/regex/1.2.1/regex/#syntax){: external}  \n These files can be located in any of the paths that are defined through the logdir parameter.  |  |  |
+| `LOGDNA_EXCLUSION_RULES` | Custom rules that you can define to configure what log files to exclude from being monitored.  \n You can use glob patterns. For more information, see [Glober rules](https://github.com/CJP10/globber){: external}  | | |
+| `LOGDNA_EXCLUSION_REGEX_RULES` | Regex custom rules that you can define to configure what log files to exclude from being monitored. |  | `/var/log/containers/**,/var/log/pods/**`  |
+| `LOGDNA_USE_SSL`          | Boolean that defines whether TLS 1.2 should be used when the agent sends logs to the logging instance.  \n The default value is set to `true`.  | `true` | Valid values are `true` and `false`. |
+| `LOGDNA_USE_COMPRESSION`  | Boolean that defines whether compression is enabled when the agent sends logs to the logging instance.  \n  The default value is set to `true`. | `true` | `true` |
+| `LOGDNA_GZIP_LEVEL`       | Compression level for gzip.  \n Valid values are: `1`, `2`, `3`, `4`, `5`, `6`, `7`, `8`, `9`  \n When you set this variable to `1`, you are configuring the agent to use the fastest compression speed but at a lower ratio. When you set this variable to `9`, you are configuring the agent to use the highest compression ratio but at a lower speed.  | `2` | `6` |
+| `LOGDNA_TAGS` | Define tags to group hosts automatically into dynamic groups. |  | `prod,appA` |
+| `LOGDNA_MAC` | MAC address that is attached as metadata to log lines. |  |  |
+| `LOGDNA_LOOKBACK` | Defines the lookback strategy on startup of the agent. | `smallfiles` | Valid values are: `smallfiles`, `start` or `none` |
+| `LOGDNA_METRICS_PORT` | Port number to expose Prometheus metrics for the agent. |  |  |
+| `LOGDNA_LOG_K8S_EVENTS` | Boolean that defines if Kubernetes resource events are logged. | | |
+| `LOGDNA_USE_K8S_LOG_ENRICHMENT` | Set to enrich log lines from other pods by allowing the agent to query the K8s API. | `always` | Valid values are: `always`, `never` |
+{: caption="Table 4. Tags that are available for the logging agent V2" caption-side="top"}
 
-| Environment variable     | Description                                           |  Default value                         | Sample value          |
-|--------------------------|-------------------------------------------------------|----------------------------------------|-----------------------|
+
+### Environment variables for the logging agent V2
+{: #log_analysis_agent_configure_v2}
+
+
+| Environment variable     | Description   |  Default value                         | Sample value          |
+|--------------------------|---------------|----------------------------------------|-----------------------|
 | `DEFAULT_CONF_FILE`      | Default configuration file.                           | `/etc/logdna/config.yaml`              |                       |
 | `LOGDNA_PLATFORM`        | Log source type.                                      | `k8s`                                  |                       |
 | `LOGDNA_INGESTION_KEY`   | Reference to the logging ingestion key.                | secretKeyRef                           |                       |
@@ -231,7 +254,7 @@ You can customize a logging agent by configuring parameters for Linux agents, or
 | `LOGDNA_USE_COMPRESSION`  | Boolean that defines whether compression is enabled when the agent sends logs to the logging instance.  \n  The default value is set to `true`. | `true` | `true` |
 | `LOGDNA_GZIP_LEVEL`       | Compression level for gzip.  \n Valid values are: `1`, `2`, `3`, `4`, `5`, `6`, `7`, `8`, `9`  \n When you set this variable to `1`, you are configuring the agent to use the fastest compression speed but at a lower ratio. When you set this variable to `9`, you are configuring the agent to use the highest compression ratio but at a lower speed.  | `2` | `6` |
 | `LOGDNA_TAGS` | Define tags to group hosts automatically into dynamic groups. |  | `production,serviceA` |
-{: caption="Table 7. Tags that are available for the logging agent V2" caption-side="top"}
+{: caption="Table 5. Tags that are available for the logging agent V2" caption-side="top"}
 
 ### Standard Kubernetes clusters: environment variables for logging agent V1
 {: #log_analysis_dna_agent_configure_std_kube_v1}
@@ -254,8 +277,20 @@ You can customize a logging agent by configuring parameters for Linux agents, or
 | `COMPRESS` | Boolean that defines whether compression is enabled when the agent sends logs to the logging instance.  \n  The default value is set to `true`. | `true` | `true` |
 | `GZIP_COMPRESS_LEVEL` | Compression level for gzip.  \n Valid values are: `1`, `2`, `3`, `4`, `5`, `6`, `7`, `8`, `9`  \n When you set this variable to `1`, you are configuring the agent to use the fastest compression speed but at a lower ratio. When you set this variable to `9`, you are configuring the agent to use the highest compression ratio but at a lower speed.  | `2` | `6` |
 | `LOGDNA_TAGS` | Define tags to group hosts automatically into dynamic groups. |  | `production,serviceA`  |
-{: caption="Table 8. Tags that are available for the logging agent V2" caption-side="top"}
+{: caption="Table 6. Tags that are available for the logging agent V2" caption-side="top"}
 
+### Linux: configuration parameters for logging agent V1
+{: #log_analysis_agent_configure_linux_v1}
+
+| Parameter | Description                                          |
+|-----------|------------------------------------------------------|
+| `tags`    | Define tags to group hosts automatically into dynamic groups. |
+| `logdir`  | Define custom paths that you want the agent to monitor.  \n Separate multiple paths by using commas. You can use glob patterns. You can configure specific files. Enter glob patterns by using double quotation marks. | 
+| `exclude` | Define the files that you do not want the logging agent to monitor. **Note:** These files can be located in any of the paths that are defined through the logdir parameter.  \n Separate multiple files by using commas. You can use glob patterns. You can configure specific files. |
+| `exclude_regex` | Define regex patterns to filter out any lines that match the pattern. Do not include leading and trailing `/`. | 
+| `hostname` | Define the hostname. This value overrides the operating system hostname. |
+| `autoupdate` | Set to `1` to update the agent automatically when the public repo agent definition is updated. Set to `0` to disable this feature. |
+{: caption="Table 7. Configuration options for the logging agent V1" caption-side="top"}
 
 
 ### Configure tags to group data
@@ -271,7 +306,7 @@ You can configure tags at the agent level so that all lines that are sent by thi
 |--------------------------------|------------------------------|
 | `Kubernetes cluster`           | [Adding tags to logs from a Kubernetes cluster](/docs/log-analysis?topic=log-analysis-adding_tags#adding_tags_kube) |
 | `Linux Ubuntu or Debian`       | [Adding tags to logs from Linux Ubuntu or Debian](/docs/log-analysis?topic=log-analysis-adding_tags#adding_tags_linux) |
-{: caption="Table 9. Adding tags" caption-side="top"}
+{: caption="Table 8. Adding tags" caption-side="top"}
 
 
 ### Exclude log files that are monitored by the agent

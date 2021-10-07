@@ -2,9 +2,9 @@
 
 copyright:
   years:  2018, 2021
-lastupdated: "2021-03-28"
+lastupdated: "2021-10-06"
 
-keywords: IBM, Log Analysis, logging, config agent
+keywords: IBM, Log Analysis, logging, config agent, linux, ubuntu
 
 subcollection: log-analysis
 
@@ -12,17 +12,18 @@ subcollection: log-analysis
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Connecting a logging agent to a Linux Ubuntu or Debian
+# Configuring a Logging agent for Linux Ubuntu or Debian
 {: #config_agent_linux}
 
 The logging agent is responsible for collecting and forwarding logs to your {{site.data.keyword.la_full_notm}} instance. After you provision an instance of {{site.data.keyword.la_full}}, you must configure a logging agent for each log source that you want to monitor.
 {: shortdesc}
 
 
-## Configuring a logging agent on Linux Ubuntu or Debian
-{: #config_agent_linux_steps}
-
 To configure your Ubuntu server to send logs to your {{site.data.keyword.la_full_notm}} instance, you must install a `logging-agent`. The logging agent reads log files from */var/log*, and forwards the log data to your logging instance.
+
+
+## Configuring the Logging agent V1
+{: #config_agent_linux}
 
 To configure your Ubuntu server to forward logs to your logging instance, complete the following steps from an Ubuntu terminal:
 
@@ -47,7 +48,6 @@ To configure your Ubuntu server to forward logs to your logging instance, comple
     sudo apt-get install logdna-agent < "/dev/null"
     ```
     {: codeblock}
-
 2. Set the ingestion key that the logging agent must use to forward logs to the {{site.data.keyword.la_full_notm}} instance.  
 
     ```text
@@ -70,7 +70,6 @@ To configure your Ubuntu server to forward logs to your logging instance, comple
     | `Sydney (au-syd)`      | `sudo logdna-agent -s export LOGDNA_APIHOST=api.au-syd.logging.cloud.ibm.com`   |
     | `Washington (us-east)` | `sudo logdna-agent -s export LOGDNA_APIHOST=api.us-east.logging.cloud.ibm.com`  |
     {: caption="Commands by region" caption-side="top"}
-
 
 4. Set the ingestion endpoint. Choose the public or the private endpoint in a location.
 
