@@ -171,6 +171,9 @@ toc:
           label: Logging API
           links: 
             - link:
+                label: Archiving
+                href: https://{DomainName}/apidocs/log-analysis#get-v1-config-archiving
+            - link:
                 label: Alerts and views API
                 href: https://{DomainName}/apidocs/log-analysis#create-view
             - link:
