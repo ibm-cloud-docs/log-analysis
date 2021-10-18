@@ -29,13 +29,10 @@ You archive logs from an {{site.data.keyword.la_full_notm}} instance into a buck
 
 * Logs are archived hourly. 
 
-    Previously, logs have been archived daily. Through this transition, you might observe a small overlap between the older daily format archives and the new archives.
-    {: note}
-
-* The hourly archive directory format looks like this:
+* The archive directory format looks like this:
 
     ```text
-    YYYY/MM/DD/<accountID>.<YYYY>-<MM>-<DD>.<HH>00.json.gz
+    year=<YYYY>/month=<MM>/day=<DD>/<accountID>.<YYYY>-<MM>-<DD>.<HHHH>.json.gz 
     ```
     {: codeblock}
     
@@ -45,14 +42,7 @@ You archive logs from an {{site.data.keyword.la_full_notm}} instance into a buck
 
     `<accountID>` represents the logging account ID, that is, the ID that showd in the [logging web UI URL](/docs/Activity-Tracker-with-LogDNA?topic=Activity-Tracker-with-LogDNA-get_logdna_web_url).
     
-    `HH` represents hours in 24 format. 
-
-    The daily archive directory format looks like this:
-    
-    ```text
-    <accountID>.<YYYY>-<MM>-<DD>.<clusterId>.json.gz
-    ```
-    {: codeblock}
+    `HHHH` represents hours in 24 format. 
 
 * Logs that are included in a file correspond to the period of time that is indicated as part of the name of the file. 
 
