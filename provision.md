@@ -122,15 +122,13 @@ To provision an instance of {{site.data.keyword.at_full_notm}} through the comma
 4. Create the instance. Run the [ibmcloud resource service-instance-create](/docs/cli?topic=cli-ibmcloud_commands_resource#ibmcloud_resource_service_instance_create) command:
 
     ```text
-    ibmcloud resource service-instance-create NAME la_service SERVICE_PLAN_NAME LOCATION
+    ibmcloud resource service-instance-create NAME logdna SERVICE_PLAN_NAME LOCATION
     ```
     {: codeblock}
 
     Where
 
     `NAME` is the name of the instance
-
-    The value *la_service* is the name of the {{site.data.keyword.la_full_notm}} service in the {{site.data.keyword.cloud_notm}}.
 
     `SERVICE_PLAN_NAME` is the type of plan. Valid values are *lite*, *7-days*, *14-days*, *30-days*.
     
@@ -139,7 +137,7 @@ To provision an instance of {{site.data.keyword.at_full_notm}} through the comma
     For example, to provision an instance with the 7 days retention plan, run the following command:
 
     ```text
-    ibmcloud resource service-instance-create logging-instance-01 la_service 7-day us-south
+    ibmcloud resource service-instance-create my-instance logdna 7-day us-south
     ```
     {: pre}
 
@@ -164,7 +162,7 @@ Where
 For example, you can run the following command:
 
 ```text
-ibmcloud resource service-key-create logging-via-cli-key-admin Manager --instance-name logging-via-cli
+ibmcloud resource service-key-create my-instance-key-admin Manager --instance-name my-instance
 ```
 {: pre}
 
