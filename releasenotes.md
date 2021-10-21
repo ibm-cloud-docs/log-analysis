@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018, 2021
-lastupdated: "2021-07-01"
+lastupdated: "2021-10-21"
 
 keywords: Log Analysis release notes
 
@@ -17,6 +17,11 @@ subcollection: log-analysis
 
 Use these release notes to learn about the latest updates to {{site.data.keyword.la_full}}.  
 {: shortdesc}
+
+## 4 October 2021
+{: #log-analysis-oct0421}
+
+:   Documentation of API changes supporting archiving is generally available.  [Learn more about the archiving API](/apidocs/log-analysis#get-v1-config-archiving).
 
 ## 30 September 2021
 {: #log-analysis-sep3021}
