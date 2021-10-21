@@ -16,7 +16,6 @@ toc:
       topics:
 
       - getting-started.md
-      - releasenotes.md
       - agent/logdna_agent.md
       
       - topicgroup: 
@@ -58,6 +57,9 @@ toc:
           topics:
           - tutorial/tutorial_use_LogDNA.md
           - tutorial/kube_reset_ingestion.md
+
+      - topic: releasenotes.md
+        navtitle: Release notes
 
   - navgroup: 
       id: howto
