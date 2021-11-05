@@ -154,6 +154,7 @@ toc:
           - alerts/pagerduty.md
           - devops/monitoring.md
           - alerts/sms.md
+          - alerts/slack.md
   
   - navgroup: 
       id: reference
