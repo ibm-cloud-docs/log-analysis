@@ -4,7 +4,7 @@ copyright:
   years:  2018, 2021
 lastupdated: "2021-03-28"
 
-keywords: IBM, Log Analysis, logging, config agent
+keywords: IBM, Log Analysis, logging, control usage
 
 subcollection: log-analysis
 
@@ -48,7 +48,7 @@ When you exclude logs through an exclusion rule, you can choose to **Preserve th
 ​
 
 
-## Configuring an alert to notify when a data threshold is reached
+## Configuring the usage alert
 {: #control_usage_alert}
 
 In a {{site.data.keyword.la_full_notm}} instance, you can define an alert to notify when the data usage in the instance reaches the data usage threshold that you set for the instance.
@@ -65,6 +65,7 @@ Complete the following steps to configure an alert that informs you when you rea
 3. Define a **Usage Alert** to set the threshold for data usage in the instance. When the threshold is reached, you are notified. Enter a value to set the data usage threshold.
 
 4. In the **Add recipient** section, enter one or more emails where the notification will be sent.
+
 
 
 

@@ -13,20 +13,33 @@ subcollection: log-analysis
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Configuring streaming
+# Configuring streaming through the UI
 {: #streaming-configure}
 
 Complete the following steps to configure streaming for an {{site.data.keyword.la_full}} instance:
 {: shortdesc}
 
+See [Configure streaming](/docs/log-analysis?topic=log-analysis-streaming#streaming-1) for more information on roles required for streaming.
+{: note}
+
 ## Prereqs
 {: #streaming-configure-prereqs}
 
-* [Create an {{site.data.keyword.messagehub}} instance.](/docs/EventStreams?topic=EventStreams-connecting#provision_instance).
+* Create an {{site.data.keyword.messagehub}} instance.
+
+    a. Log in to the {{site.data.keyword.cloud_notm}} console.
+  
+    b. Click the [{{site.data.keyword.messagehub}} service](../icons/launch-glyph.svg  icon")](https://cloud.ibm.com/catalog/event-streams){: external} in the **Catalog**.
+  
+    c. Select the plan on the service instance page.
+  
+    d. Enter a name for your service. You can use the default value.
+  
+    e. Click **Create**. The {{site.data.keyword.messagehub}} **Getting started** page opens. 
+
 * Check the limitations of the service plans. For more information, see [Limits and quotas](https://cloud.ibm.com/docs/EventStreams?topic=EventStreams-kafka_quotas).
 
-The instructions on this topic are based on using an Enterprise plan.
-{: note}
+
 
 ## Step 1. Create a topic in {{site.data.keyword.messagehub}}
 {: #streaming-step1-1}
@@ -161,6 +174,9 @@ If you do not see data, do 1 of the following:
 
 
 If you see data, click **YES**.
+
+After you provision an instance of {{site.data.keyword.messagehub}}, the {{site.data.keyword.mon_short}} dashboard may take up to 15 mins to show.
+{: note}
 
 ## Step 5. Start streaming
 {: #streaming-step1-5}

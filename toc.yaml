@@ -16,7 +16,6 @@ toc:
       topics:
 
       - getting-started.md
-      - releasenotes.md
       - agent/logdna_agent.md
       
       - topicgroup: 
@@ -45,8 +44,6 @@ toc:
           - app-logs/ingest.md
           - app-logs/ingest_python.md
 
-      - streaming.md
-      
       - topicgroup: 
           label: Security and compliance
           topics:
@@ -58,16 +55,24 @@ toc:
           topics:
           - tutorial/tutorial_use_LogDNA.md
           - tutorial/kube_reset_ingestion.md
+    
+      - topic: releasenotes.md
+        navtitle: Release notes
 
   - navgroup: 
       id: howto
       topics:
-      - provision.md
-      - provision_hipaa.md
-      - terraform/terraform-setup.md
-      - remove.md
-      - upgrade.md
       - observe.md
+
+      - topicgroup: 
+          label: Provisioning
+          topics:
+          - provision.md
+          - provision_hipaa.md
+          - terraform/terraform-setup.md
+          - upgrade.md
+          - remove.md
+
       - monitor_logs.md
       
       - topicgroup: 
@@ -81,13 +86,30 @@ toc:
           - devops/work_iam.md
       
       - topicgroup: 
-          label: DevOps admin tasks
+          label: Archiving
           topics:
+          - devops/archiving-ov.md
           - devops/archive.md
+          - devops/archiving-manage-api.md
+          - devops/archiving-la-monitor.md
+          - devops/archiving-monitor.md
+
+      - topicgroup: 
+          label: Managing costs and data
+          topics:
           - devops/control_usage.md
           - devops/exclusion_rules.md
+          - devops/control_usage_alert.md
+
+      - topicgroup: 
+          label: Managing keys
+          topics:
           - devops/ingestion_key.md
           - devops/service_keys.md
+
+      - topicgroup: 
+          label: Managing resources
+          topics:
           - devops/reuse_resource_definitions.md
       
       - topicgroup: 
@@ -133,6 +155,7 @@ toc:
       - topicgroup: 
           label: Streaming data
           topics:
+          - streaming.md
           - streaming-configure.md
           - streaming-monitor.md
           - streaming-conditional.md
@@ -170,6 +193,9 @@ toc:
       - topicgroup: 
           label: Logging API
           links: 
+            - link:
+                label: Archiving
+                href: https://{DomainName}/apidocs/log-analysis#get-v1-config-archiving
             - link:
                 label: Alerts and views API
                 href: https://{DomainName}/apidocs/log-analysis#create-view
