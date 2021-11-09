@@ -41,13 +41,15 @@ If you have any regulatory requirement for data residency and compliance needs, 
 For information on how to configure streaming, see [Configuring streaming](/docs/log-analysis?topic=log-analysis-streaming-configure).
 
 In addition, consider the following information:
-- You must have the **manager** role to configure streaming.
+- You must have **manager** role to configure streaming in the {{site.data.keyword.la_short}} instance. This role includes the **logdna.dashboard.manage** IAM action role that allows a user to perform admin tasks such as configure streaming.
 - When you configure streaming, the {{site.data.keyword.la_full_notm}} instance and the {{site.data.keyword.messagehub}} instance must be provisioned in the same account.
 - To connect the {{site.data.keyword.la_full_notm}} instance to the {{site.data.keyword.messagehub}} instance, you need the following information:
     
     - Endpoint URLs to call the APIs
     
     - Credentials for authentication
+- To create a topic in {{site.data.keyword.messagehub}}, you must have **manager** role. This role includes the **messagehub.topic.manage** IAM action role that allows an app or user to create or delete topic.
+- The credential that {{site.data.keyword.la_short}} uses to publish data in {{site.data.keyword.messagehub}} must have **writer** role. This role includes the **messagehub.topic.write** IAM action role that allows an app or service to write data to 1 or more topics.
 
 
 ## Monitor streaming

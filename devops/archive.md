@@ -20,7 +20,63 @@ You can archive logs from an {{site.data.keyword.la_full_notm}} instance into a 
 {: shortdesc}
 
 
+<<<<<<< HEAD
 For more information about archiving, see [Archiving events to {{site.data.keyword.cos_full_notm}}](/docs/log-analysis?topic=log-analysis-archiving-ov).
+=======
+You archive logs from an {{site.data.keyword.la_full_notm}} instance into a bucket in an {{site.data.keyword.cos_full_notm}} (COS) instance. Each {{site.data.keyword.la_full_notm}} instance has its own archiving configuration. 
+
+* Logs are automatically archived in a compressed format **(.json.gz)**. Each line preserves its metadata.
+
+* Logs are archived 24 - 48 hours after you save the configuration. 
+
+* Logs are archived hourly. 
+
+* The archive directory format looks like this:
+
+    ```text
+    year=<YYYY>/month=<MM>/day=<DD>/<accountID>.<YYYY>-<MM>-<DD>.<HHHH>.json.gz 
+    ```
+    {: codeblock}
+    
+    Where 
+
+    `YYYY` represents the year; `MM` represents the month; and `DD` represents the day.
+
+    `<accountID>` represents the logging account ID, that is, the ID that showd in the [logging web UI URL](/docs/Activity-Tracker-with-LogDNA?topic=Activity-Tracker-with-LogDNA-get_logdna_web_url).
+    
+    `HHHH` represents hours in 24 format. 
+
+* Logs that are included in a file correspond to the period of time that is indicated as part of the name of the file. 
+
+* The timestamp that is used to determine whether the log record is included in an archive is the UTC timestamp.
+
+    Notice that depending on your location, there might be logs that you see in local time in your views on a specific day. However, you cannot find them on the archive file. You are most likely viewing logs in local time and the archive process uses the UTC timestamp.
+
+* After you configure archiving, the first archive file is created when the archiving process runs and there is data.
+* The first time the archive process runs, consider the following information:
+
+    * The maximum number of days that data is archived includes logs for the past 30 days when the instance has a `30 day Log search` plan.
+
+    * The maximum number of days that data is archived includes logs for the past 14 days when the instance has a `14 day Log search` plan.
+
+    * The maximum number of days that data is archived includes logs for the past 7 days when the instance has a `7 day Log search` plan.
+
+For example, you have a service plan of 30 days. You configured the instance 10 days ago. You enable archiving on the 10th day. The archiving process generates multiple files. Each file includes logs for the period of time indicated as part of its name. If there is no data, the archive file for that period is empty.
+
+Each {{site.data.keyword.at_full_notm}} instance has its own archiving configuration.
+{: important}
+
+The {{site.data.keyword.cos_full_notm}} instance is provisioned in the context of a resource group. The {{site.data.keyword.la_full_notm}} instance is also provisioned in the context of a resource group. Both instances can be grouped under the same resource group or in different ones. 
+
+{{site.data.keyword.la_full_notm}} uses a service ID to communicate with the {{site.data.keyword.cos_full_notm}} service.
+
+* The service ID that you create for an {{site.data.keyword.cos_full_notm}} instance is used by the {{site.data.keyword.la_full_notm}} to authenticate and access the {{site.data.keyword.cos_full_notm}} instance. 
+* You can assign specific access policies to the service ID that restrict permissions on the {{site.data.keyword.cos_full_notm}} instance. Restrict the service ID to have only writing permissions on the bucket where you plan to archive the logs.
+
+The following figure shows a high-level view of the different components that are integrated when you archive logs:
+
+![High-level view archiving logs](../images/archive.png "High-level view archiving logs")
+>>>>>>> 79f4f9818b2758efc9d954e62543debf48c18448
 
 
 Complete the following steps to archive an {{site.data.keyword.la_full_notm}} instance into a bucket in an {{site.data.keyword.cos_full_notm}} instance:
