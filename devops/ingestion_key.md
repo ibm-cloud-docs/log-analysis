@@ -54,9 +54,6 @@ To get the ingestion key for an {{site.data.keyword.la_full_notm}} instance by u
 3. Copy the ingestion key that shows in the **API keys** section. 
 
 
-
-
-
 ## Getting the ingestion key through the CLI
 {: #ingestion_key_cli}
 
@@ -98,10 +95,77 @@ To get the ingestion key for a logging instance through the command line, comple
     The output from this command includes the field **ingestion key** that contains the ingestion key for the instance.
 
 
+## Getting the ingestion key through the API
+{: #ingestion_key_api}
+
+To get the ingestion key for a logging instance through the API, complete the following steps:
+
+1. Generate an [{{site.data.keyword.cloud_notm}} API key](/docs/account?topic=account-userapikey&interface=api#create_user_key).
+
+2. Get an access token. For more information, see [Generating an {{site.data.keyword.cloud_notm}} access token by using an API key](/docs/account?topic=account-iamtoken_from_apikey&interface=api).
+
+    You need an IAM access token to authenticate in {{site.data.keyword.cloud_notm}}.
+
+    To generate an IAM access token, run the following command:
+
+    ```text
+    curl -X POST 'https://iam.cloud.ibm.com/identity/token' -H 'Content-Type: application/x-www-form-urlencoded' -d 'grant_type=urn:ibm:params:oauth:grant-type:apikey&apikey=MY_APIKEY'
+    ```
+    {: pre}
+
+    Replace `MY_APIKEY` with your API key from the previous step.
+
+    The access token is only valid for 1 hour. `access_token` includes the string "Bearer" followed by the IAM token.
+
+3. Get the name and GUID of the service instance if you do not already have it.
+
+    Get the list of resource instances:
+
+    ```text
+    curl -X GET   https://resource-controller.cloud.ibm.com/v2/resource_instances   -H "Authorization: Bearer <ACCESS_TOKEN>"
+    ```
+    {: pre}
+
+    Where `<ACCESS_TOKEN>` is the IAM access token obtained in the prior step.
+
+    Look for the `guid` field of the instance to get the instance GUID.
+
+4. Get the ingestion key. Run the following cURL command:
+
+    ```shell
+    curl -X POST  https://resource-controller.cloud.ibm.com/v2/resource_keys   -H "Authorization: Bearer <ACCESS_TOKEN>"   -H 'Content-Type: application/json'  -d '{"name": "<RESOURCE_KEY_NAME>", "source": "<INSTANCE_GUID>"}'
+    ```
+    {: pre}
+
+    Where 
+    
+    - `<ACCESS_TOKEN>` is the IAM access token obtained in the prior step.
+
+    - `<INSTANCE_GUID>` is the instance GUID.
+
+    - `<RESOURCE_KEY_NAME>` is the name that you give the resource key associated to the instance.
+
+    The result will include a section with the following information:
+
+    ```text
+    "credentials": {
+        "apikey": "xxxxxxxxxxxx",
+        "iam_apikey_description": "Auto-generated for key xxxxxxxx",
+        "iam_apikey_name": "<RESOURCE_KEY_NAME>",
+        "iam_serviceid_crn": ".....",
+        "ingestion_key": "xxxxxxx",
+        "service_key": "xxxxxxxxxx"
+    }
+    ```
+    {: codeblock}
+
+    The `ingestion_key` value is the ingestion key.
 
 
 
-## Resetting the ingestion key 
+
+
+## Resetting the ingestion key through the UI
 {: #reset}
 
 If the ingestion key is compromised or you have a policy to renew it after a number of days, you can generate a new key and delete the old one.
