@@ -82,3 +82,22 @@ ic resource service-instance <INSTANCE_NAME>
 
 To get the name of the instance, run the following command `ibmcloud resource service-instances --all-resource-groups`. 
 
+## Can I import archived data into the UI?
+{: #faq_10}
+{: faq}
+
+Archived data cannot be imported to be searched or used in the {{site.data.keyword.la_full_notm}} UI.  
+
+Use the [{{site.data.keyword.sqlquery_notm}} service](/docs/sql-query?topic=sql-query-getting-started) to query archive data.
+
+
+## Why can't I create an API key?
+{: #faq_11}
+{: faq}
+
+If you are unable to [create an API key](/docs/account?topic=account-userapikey&interface=ui) it could be because you are not authorized to do so.
+
+Make sure your ID has the [`User API key creator` permission enabled for the `IAM Identity Service`.](/docs/account?topic=account-allow-api-create)
+
+
+

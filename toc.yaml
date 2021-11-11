@@ -36,6 +36,9 @@ toc:
           - infrastructure/ubuntu-baremetal.md
           - infrastructure/ubuntu-vpc.md
           - infrastructure/syslog.md
+          - infrastructure/windows.md
+          - infrastructure/windows_server.md
+          - infrastructure/windows-vpc.md
       
       - topicgroup: 
           label: Logging with applications

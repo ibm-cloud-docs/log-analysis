@@ -13,10 +13,10 @@ subcollection: log-analysis
 {{site.data.keyword.attribute-definition-list}}
 
 
-# Logging from a Windows client 
-{: #windows}
+# Logging from Windows Server systems
+{: #windows_serv}
 
-Use the {{site.data.keyword.la_full}} service to monitor and manage logs from Windows client systems. 
+Use the {{site.data.keyword.la_full}} service to monitor and manage logs from Windows server systems. 
 {: shortdesc}
 
 You will use NXLog to add your Windows logs into {{site.data.keyword.la_full_notm}}.
@@ -28,6 +28,4 @@ You will use NXLog to add your Windows logs into {{site.data.keyword.la_full_not
 {{site.data.content.nxlog_config}}
 
 {{site.data.content.nxlog_run}}
-
-
 
