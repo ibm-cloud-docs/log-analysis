@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2021
-lastupdated: "2021-04-12"
+lastupdated: "2021-11-11"
 
 keywords: IBM, Log Analysis, logging, infrastructure
 
@@ -72,12 +72,12 @@ To configure cluster-level logging for a Kubernetes cluster, you must complete t
 2. Provision a cluster, for example, a standard cluster on the {{site.data.keyword.containerlong_notm}}.
 3. Deploy and configure the logging agent in the cluster.
 
-![Log Analysis component overview on the {{site.data.keyword.cloud_notm}}](../images/kube.png "Log Analysis component overview on the {{site.data.keyword.cloud_notm}}")
+![Log Analysis component overview on the {{site.data.keyword.cloud_notm}}](../images/kube.png "Log Analysis component overview on the {{site.data.keyword.cloud_notm}}"){: caption="Log Analysis component overview on the {{site.data.keyword.cloud_notm}} for Kubernetes" caption-side="bottom"}
 
 For more information, see [Logging with Kubernetes clusters](/docs/log-analysis?topic=log-analysis-kube).
 
 
-## Logging with Bare metals
+## Logging with Bare metal
 {: #infra_logging_bm}
 
 You can use the {{site.data.keyword.la_full}} service to monitor and manage logs from a bare metal in a centralized logging system on the {{site.data.keyword.cloud_notm}}. You can collect and monitor system and application logs. 
@@ -91,12 +91,12 @@ On the {{site.data.keyword.cloud_notm}}, you can configure an bare metal to forw
 3. Configure the logging agent in the bare metal.
 4. Optionally, add additional directories to be monitored by the agent.
 
-![Component overview on the {{site.data.keyword.cloud_notm}}](../images/ubuntu.png "Component overview on the {{site.data.keyword.cloud_notm}}")
+![Component overview on the {{site.data.keyword.cloud_notm}}](../images/ubuntu.png "Component overview on the {{site.data.keyword.cloud_notm}}"){: caption="Log Analysis component overview on the {{site.data.keyword.cloud_notm}} for bare metal" caption-side="bottom"}
 
 For more information, see [Logging with Bare metals](/docs/log-analysis?topic=log-analysis-ubuntu_baremetal).
 
 
-## Logging with VPC instances 
+## Logging with Linux VPC instances 
 {: #infra_logging_vpc}
 
 You can use the {{site.data.keyword.la_full}} service to monitor and manage logs from a Linux VPC server instance in a centralized logging system on the {{site.data.keyword.cloud_notm}}. You can collect and monitor system and application logs. 
@@ -110,7 +110,7 @@ On the {{site.data.keyword.cloud_notm}}, you can configure a Linux VPC server to
 3. Configure the logging agent in the Ubuntu server.
 4. Optionally, add additional directories to be monitored by the agent.
 
-![Component overview on the {{site.data.keyword.cloud_notm}}](../images/ubuntu.png "Component overview on the {{site.data.keyword.cloud_notm}}")
+![Component overview on the {{site.data.keyword.cloud_notm}}](../images/ubuntu.png "Component overview on the {{site.data.keyword.cloud_notm}}"){: caption="Log Analysis component overview on the {{site.data.keyword.cloud_notm}} for Ubuntu Linux" caption-side="bottom"}
 
 For more information, see [Logging with Linux VPC server instances](/docs/log-analysis?topic=log-analysis-ubuntu).
 
@@ -121,6 +121,30 @@ You can send logs to an {{site.data.keyword.la_full_notm}} instance via Syslog. 
 
 To use a custom port to send logs via UDP, you can open an IBM support ticket. For information about opening an IBM support ticket, or about support levels and ticket severities, see [Getting support](/docs/get-support).
 
+For more information on using Syslog, see [Logging with Syslog](/docs/log-analysis?topic=log-analysis-syslog).
+
+## Logging with Windows systems
+{: #infra_logging_windows}
+
+You can use the {{site.data.keyword.la_full}} service to monitor and manage logs from Windows systems.
+
+NXLog is used to provide log files to {{site.data.keyword.la_full}}.  
+
+By default, NXLog monitors log files in the `C:\\ProgramData\\logs` directory. 
+
+On the {{site.data.keyword.cloud_notm}}, configure an Windows server to forward logs to an {{site.data.keyword.la_full_notm}} instance by completing the following steps:
+
+1. Provision an instance of the {{site.data.keyword.la_full_notm}} service. 
+2. Configure NXLog on the Windows server.
+3. Optionally, add additional directories to be monitored by the agent.
+
+![Component overview on the {{site.data.keyword.cloud_notm}}](../images/windows.svg "Component overview on the {{site.data.keyword.cloud_notm}}"){: caption="Log Analysis component overview on the {{site.data.keyword.cloud_notm}} for Windows" caption-side="bottom"}
+
+For more information on logging from Windows systems, see the following:
+
+* [Logging from a Windows client](/docs/log-analysis?topic=log-analysis-windows)
+* [Logging from Windows Server systems](/docs/log-analysis?topic=log-analysis-windows_serv)
+* [Logging with Windows VPC server instances](/docs/log-analysis?topic=log-analysis-windows_vpc_tutorial)
 
 
 
