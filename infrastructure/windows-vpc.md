@@ -116,7 +116,52 @@ To provision an instance of logging through the CLI, see [Provisioning logging t
 ## Access your Windows instance
 {: #windowsvpc_access_vpc}
 
-Use a remote desktop client to [access your Windows instance.](/docs/vpc?topic=vpc-vsi_is_connecting_windows) 
+Use a remote desktop client to [access your Windows instance.](/docs/vpc?topic=vpc-vsi_is_connecting_windows)  To do so you will need to do the following:
+
+1. Make sure the security group that is associated with the instance allows inbound and outbound Remote Desktop Protocol traffic (TCP port 3389).  This is required for the remote desktop client to connect to your Windows instance.
+
+    1. Log in to your {{site.data.keyword.cloud_notm}} account.
+
+       Click [Log in to {{site.data.keyword.cloud_notm}}](https://cloud.ibm.com/login){: external} to sign in to the {{site.data.keyword.cloud_notm}}.
+
+       After you log in with your user ID and password, the {{site.data.keyword.cloud_notm}} console opens.
+
+    2. Click the **Menu** icon ![Menu icon](../icons/icon_hamburger.svg) &gt; **VPC Infrastructure**.
+
+    3. Click **Security groups**.
+
+    4. Click the security group you used to create your Windows VPC.  The Security group details opens.
+
+    5. Click **Rules**.
+
+    6. Create an Inbound rule with the following values:
+
+        * **Protocol** = TCP
+        * **Port** = Any
+        * **Port min** = 3389
+        * **Port max** = 3389
+        * **Source type** = Any
+
+    7. Create an Outbound rule with the following values:
+
+        * **Protocol** = TCP
+        * **Port** = Any
+        * **Port min** = 3389
+        * **Port max** = 3389
+        * **Source type** = Any
+
+2. Obtain the connection information you need to connect to the Windows VPC.
+
+    1. Click **Virtual server instances**.
+
+    2. Click the name of your Windows VPC instance.  The instance details are displayed.
+
+    3. Under **Encrypted password** click **Download RDP file**.  A file that can be used with Windows Remote Desktop will be downloaded.  
+
+       If you are using another client to connect to your Windows VPC, you can still use the information contained in the `RDP` file to get the connection information for the VPC.
+       {: note}
+
+3. Connect to your Windows VPC using a remote desktop client and the `RDP` file information. Sign in with the **User name** of `.\Administrator` and the decripted `ssh` key as the password.
 
 {{site.data.content.nxlog_install}}
 
