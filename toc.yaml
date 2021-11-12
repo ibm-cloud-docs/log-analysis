@@ -32,7 +32,7 @@ toc:
           topics:
           - infrastructure/infra_logging.md
           - infrastructure/monitor_cfapp_logs.md
-          - infrastructure/kube.md
+          - tutorial/kube.md
           - infrastructure/ubuntu-baremetal.md
           - infrastructure/ubuntu-vpc.md
           - infrastructure/syslog.md
@@ -58,7 +58,7 @@ toc:
           topics:
           - tutorial/tutorial_use_LogDNA.md
           - tutorial/kube_reset_ingestion.md
-    
+              
       - topic: releasenotes.md
         navtitle: Release notes
 
