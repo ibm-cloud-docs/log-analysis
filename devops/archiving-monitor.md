@@ -41,11 +41,11 @@ Complete the following steps to monitor the {{site.data.keyword.messagehub}} ins
 
 5. (Optional) Edit each panel to view data by bucket name and storage class. 
 
-    ![Edit panel.](images/archive-monitor-1.png "Edit panel") 
+    ![Edit panel.](../images/archive-monitor-1.png "Edit panel") 
 
     Then, customize the metric to see data per storage class.
 
-    ![Customize metric.](images/archive-monitor-2.png "Customize metric") 
+    ![Customize metric.](../images/archive-monitor-2.png "Customize metric") 
 
     Check that the resolution is set to **10M**.
 
