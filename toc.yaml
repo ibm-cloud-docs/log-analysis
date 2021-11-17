@@ -106,6 +106,7 @@ toc:
           - devops/control_usage.md
           - devops/exclusion_rules.md
           - devops/control_usage_alert.md
+          - devops/control_usage_api.md
 
       - topicgroup: 
           label: Managing keys
