@@ -105,9 +105,9 @@ To monitor archiving, you can use the following services:
 
     For more information, see [Monitoring archiving by using {{site.data.keyword.mon_full_notm}}](/docs/log-analysis?topic=log-analysis-archiving-monitor).
 
-- {{site.data.keyword.la_full_notm}}:
+- {{site.data.keyword.at_full_notm}}:
 
-    Archiving generates {{site.data.keyword.at_short}} events with the action **logdna.archiving.send** to notify of failures sending data to {{site.data.keyword.messagehub}}. There are different reasons for failure such as invalid credentials and topic deleted.
+    You can monitor archiving of an Activity Tracker instance by monitoring the service ID that is used to write data into IBM Cloud Object Storage (COS).
 
     For more information, see [Configuring an alert to monitor archiving](/docs/log-analysis?topic=log-analysis-archiving-at-monitor).
 

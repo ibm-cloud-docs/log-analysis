@@ -14,7 +14,7 @@ subcollection: log-analysis
 
  
 # Monitor archiving with {{site.data.keyword.la_short}}
-{: #archiving-at-monitor}
+{: #archiving-la-monitor}
 
 You can monitor archiving of an {{site.data.keyword.la_short}} instance by monitoring the service ID that is used to write data into {{site.data.keyword.cos_full_notm}} (COS). 
 {: shortdesc}
@@ -160,7 +160,7 @@ Complete the following steps to define a dashboard:
 2. Select the **Boards** icon ![Boards icon](../images/boards.png "Boards icon").
 3. Select **New board**.
 
-    ![Create board page](images/boards-1.png "Create board page")
+    ![Create board page](../images/boards-1.png "Create board page")
 
 4. Select **Add Graph**.
 
@@ -177,11 +177,11 @@ Complete the following steps to define a dashboard:
 
     Replace `<BUCKET-CRN>` with the CRN value of the bucket that you can get from the bucket configuration page.
 
-    ![Create board page](images/boards-2.png "Create board page")
+    ![Create board page](../images/boards-2.png "Create board page")
 
 7. Select **Add graph**. The following dashboard is created where you can monitor the archiving activity in your account for the bucket that you specified in the configuration.
 
-    ![Create board page](images/boards-3.png "Create board page")
+    ![Create board page](../images/boards-3.png "Create board page")
 
 
 
