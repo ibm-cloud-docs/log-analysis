@@ -12,7 +12,7 @@ subcollection: log-analysis
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Analyzing event data trends by using the API (WIP)
+# Analyzing event data trends by using the API 
 {: #control_usage_api}
 
 In {{site.data.keyword.la_full}}, you can query your logging instance and identify usage trends over a period of time by using the *Usage API*. 
