@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2021
-lastupdated: "2021-10-25"
+lastupdated: "2021-18-25"
 
 keywords: IBM Cloud, Log Analysis, archive logs, COS, cloud object storage
 
@@ -13,21 +13,21 @@ subcollection: log-analysis
 {{site.data.keyword.attribute-definition-list}}
 
  
-# Monitor archiving with {{site.data.keyword.la_short}}
-{: #archiving-at-monitor}
+# Monitor archiving with {{site.data.keyword.at_short}}
+{: #archiving-la-monitor}
 
-You can monitor archiving of an {{site.data.keyword.la_short}} instance by monitoring the service ID that is used to write data into {{site.data.keyword.cos_full_notm}} (COS). 
+You can monitor archiving of an {{site.data.keyword.la_short}} instance by monitoring the service ID that is used to write data into {{site.data.keyword.cos_full_notm}} (COS) by using the {{site.data.keyword.at_short}} service. 
 {: shortdesc}
 
 ## Prereqs
 {: #archiving-la-monitor-prereqs}
 
-### {{site.data.keyword.la_short}} service
+### {{site.data.keyword.at_short}} service
 {: #archiving-la-monitor-prereqs-la}
 
-- **You must have a paid service plan** for the {{site.data.keyword.la_full_notm}} service. [Learn more](/docs/log-analysis?topic=log-analysis-service_plans).
+- **You must have a paid service plan** for the {{site.data.keyword.at_full_notm}} service. [Learn more](/docs/activity-tracker?topic=activity-tracker-service_plans).
 
-- Check that your user ID has permissions to launch the web UI and create views and alerts in the Frankfurt {{site.data.keyword.la_short}} instance. The following table lists the minimum roles that a user must have to be able to launch the {{site.data.keyword.la_full_notm}} web UI, and manage resources:
+- Check that your user ID has permissions to launch the web UI and create views and alerts in the Frankfurt {{site.data.keyword.at_short}} instance. The following table lists the minimum roles that a user must have to be able to launch the {{site.data.keyword.at_full_notm}} web UI, and manage resources:
 
 | Role                      | Permission granted            |
 |---------------------------|-------------------------------|  
@@ -35,7 +35,7 @@ You can monitor archiving of an {{site.data.keyword.la_short}} instance by monit
 | Service role: `standard-user` \n  or \n Service role: `manager`     | Allows the user to launch the web UI and configure resources.  |
 {: caption="Table 1. IAM roles" caption-side="top"} 
 
-For more information on how to configure policies for a user, see [Granting user permissions to a user or service ID](/docs/log-analysis?topic=log-analysis-iam_view_events).
+For more information on how to configure policies for a user, see [Granting user permissions to a user or service ID](/docs/activity-tracker?topic=activity-tracker-iam_view_events).
 
 ### {{site.data.keyword.cos_full_notm}} service
 {: #archiving-at-monitor-prereqs-cos}
@@ -85,7 +85,8 @@ Complete the following steps to get the service ID that is used to configure arc
 {: #archiving-la-monitor-alert-2}
 
 Complete the following steps to define a view:
-1. [Launch the {{site.data.keyword.la_short}} UI](/docs/log-analysis?topic=log-analysis-launch). The *Views* section opens.
+1. [Launch the {{site.data.keyword.at_short}} UI](/docs/log-analysis?topic=log-analysis-launch). The *Views* section opens.
+
 2. Select the **Everything** view.
 
     ![Views main page](../images/archive-view-1.png "Views main page")
@@ -149,18 +150,20 @@ target.id:<BUCKET-CRN> reason.reasonCode:403
 Replace `<BUCKET-CRN>` with the CRN value of the bucket that you can get from the bucket configuration page.
 
 
-Then, you must create a presence alert so you are notified as soon as you start receiving this type of event. For more details on how to configure an alert, see [Creating alerts](/docs/log-analysis?topic=log-analysis-create_alert_ui).
+Then, you must create a presence alert so you are notified as soon as you start receiving this type of event. For more details on how to configure an alert, see [Creating alerts](/docs/activity-tracker?topic=activity-tracker-create_alert_ui).
 
 
 ## Configure a dashboard to monitor archiving
 {: #archiving-la-monitor-board}
 
 Complete the following steps to define a dashboard:
-1. [Launch the {{site.data.keyword.la_short}} UI](/docs/log-analysis?topic=log-analysis-launch). The *Views* section opens.
+1. [Launch the {{site.data.keyword.at_short}} UI](/docs/activity-tracker?topic=activity-tracker-launch). The *Views* section opens.
+
 2. Select the **Boards** icon ![Boards icon](../images/boards.png "Boards icon").
+
 3. Select **New board**.
 
-    ![Create board page](images/boards-1.png "Create board page")
+    ![Create board page](../images/boards-1.png "Create board page")
 
 4. Select **Add Graph**.
 
@@ -177,11 +180,11 @@ Complete the following steps to define a dashboard:
 
     Replace `<BUCKET-CRN>` with the CRN value of the bucket that you can get from the bucket configuration page.
 
-    ![Create board page](images/boards-2.png "Create board page")
+    ![Create board page](../images/boards-2.png "Create board page")
 
 7. Select **Add graph**. The following dashboard is created where you can monitor the archiving activity in your account for the bucket that you specified in the configuration.
 
-    ![Create board page](images/boards-3.png "Create board page")
+    ![Create board page](../images/boards-3.png "Create board page")
 
 
 
