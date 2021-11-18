@@ -74,7 +74,7 @@ To query usage data, you can use the following methods:
 
     For platform logs, the `<HOST_NAME>` is the [CRN service name](/docs/log-analysis?topic=log-analysis-cloud_services) for the service.
 
-- Replace the `<SERVICE_KEY>` with a valid service key for the {{site.data.keyword.at_full_notm}} instance. For more information, see [Service keys by using the API](/log-analysis?topic=log-analysis-service_keys#service_keys_api).
+- Replace the `<SERVICE_KEY>` with a valid service key for the {{site.data.keyword.la_full_notm}} instance. For more information, see [Service keys by using the API](/log-analysis?topic=log-analysis-service_keys#service_keys_api).
 - Replace `<LIMIT_NUMBER>` with the number of services to be returned from the highest usage to the lowest.  If not specified, only the highest-usage service will be returned.  `<LIMIT_NUMBER>` is an integer number.
 - Replace `<FROM_DATE>` with your desired starting date in Unix epoch format.  For example, `$(($(date +%s)-864000))` would be 10 days ago and `$(($(date +%s)-86400))` is 1 day ago. `$(date +%s)` is today.  Dates can be specified as relative values as shown, or a specific integer such as `1633046400`.
 - Replace `<TO_DATE>` with your desired ending date in Unix epoch format.
@@ -91,12 +91,12 @@ The method returns the requested data in JSON format.
 ```json
 [
     {
-        "name": "service name 1",
+        "name": "host or app or tag name 1",
         "current_total": 1418178,
         "percentage_of_total": 59.35177415676025
     },
     {
-        "name": "service name 1",
+        "name": "host or app or tag name 1",
         "current_total": 287299,
         "percentage_of_total": 12.023670768735
     }

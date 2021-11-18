@@ -13,11 +13,7 @@ subcollection: log-analysis
 {{site.data.keyword.attribute-definition-list}}
 
  
-<<<<<<< HEAD
 # Monitor archiving with {{site.data.keyword.at_short}}
-=======
-# Monitor archiving with {{site.data.keyword.la_short}}
->>>>>>> 5f979cdb5cfcf50d6d99c5e3ee2b9f8f6383c811
 {: #archiving-la-monitor}
 
 You can monitor archiving of an {{site.data.keyword.la_short}} instance by monitoring the service ID that is used to write data into {{site.data.keyword.cos_full_notm}} (COS) by using the {{site.data.keyword.at_short}} service. 
@@ -30,6 +26,8 @@ You can monitor archiving of an {{site.data.keyword.la_short}} instance by monit
 {: #archiving-la-monitor-prereqs-la}
 
 - **You must have a paid service plan** for the {{site.data.keyword.at_full_notm}} service. [Learn more](/docs/activity-tracker?topic=activity-tracker-service_plans).
+
+- You must have an {{site.data.keyword.at_short}} instance provisioned in Frankfurt.
 
 - Check that your user ID has permissions to launch the web UI and create views and alerts in the Frankfurt {{site.data.keyword.at_short}} instance. The following table lists the minimum roles that a user must have to be able to launch the {{site.data.keyword.at_full_notm}} web UI, and manage resources:
 
@@ -89,7 +87,7 @@ Complete the following steps to get the service ID that is used to configure arc
 {: #archiving-la-monitor-alert-2}
 
 Complete the following steps to define a view:
-1. [Launch the {{site.data.keyword.at_short}} UI](/docs/log-analysis?topic=log-analysis-launch). The *Views* section opens.
+1. [Launch the {{site.data.keyword.at_short}} UI](/docs/activity-tracker?topic=activity-tracker-launch). The *Views* section opens.
 
 2. Select the **Everything** view.
 
