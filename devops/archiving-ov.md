@@ -107,7 +107,11 @@ To monitor archiving, you can use the following services:
 
 - {{site.data.keyword.at_full_notm}}:
 
+<<<<<<< HEAD
     You can monitor archiving of a {{site.data.keyword.la_short}} instance by monitoring the service ID that is used to write data into {{site.data.keyword.cos_full_notm}} (COS).
+=======
+    You can monitor archiving of an Activity Tracker instance by monitoring the service ID that is used to write data into IBM Cloud Object Storage (COS).
+>>>>>>> 5f979cdb5cfcf50d6d99c5e3ee2b9f8f6383c811
 
     For more information, see [Configuring an alert to monitor archiving](/docs/log-analysis?topic=log-analysis-archiving-at-monitor).
 

@@ -13,7 +13,11 @@ subcollection: log-analysis
 {{site.data.keyword.attribute-definition-list}}
 
  
+<<<<<<< HEAD
 # Monitor archiving with {{site.data.keyword.at_short}}
+=======
+# Monitor archiving with {{site.data.keyword.la_short}}
+>>>>>>> 5f979cdb5cfcf50d6d99c5e3ee2b9f8f6383c811
 {: #archiving-la-monitor}
 
 You can monitor archiving of an {{site.data.keyword.la_short}} instance by monitoring the service ID that is used to write data into {{site.data.keyword.cos_full_notm}} (COS) by using the {{site.data.keyword.at_short}} service. 

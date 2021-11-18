@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2021
-lastupdated: "2021-07-30"
+lastupdated: "2021-11-18"
 
 keywords: IBM, Log Analysis, logging, service keys
 
@@ -147,7 +147,7 @@ To create a logging service key for a logging instance through the command line,
     ```
     {: pre}
 
-5. Create the {{site.data.keyword.ibm_notm}} resource service key. Run the [ibmcloud resource service-key-create](/docs/cli?topic=cli-ibmcloud_commands_resource#ibmcloud_resource_service_key_create) command:
+5. Create the {{site.data.keyword.cloud_notm}} resource service key. Run the [ibmcloud resource service-key-create](/docs/cli?topic=cli-ibmcloud_commands_resource#ibmcloud_resource_service_key_create) command:
 
     ```text
     ibmcloud resource service-key-create <NAME> --instance-name <SERVICE_INSTANCE>
@@ -158,7 +158,7 @@ To create a logging service key for a logging instance through the command line,
  
     The output from this command includes the field **service_key** that contains the logging service key for the instance.
 
-6. Restrict access to the {{site.data.keyword.ibm_notm}} resource service key so that only users that have the `administrator` and `manager` roles can see information associated with the service key.
+6. Restrict access to the {{site.data.keyword.cloud_notm}} resource service key so that only users that have the `administrator` and `manager` roles can see information associated with the service key.
     
     Identify the service ID associated with the service that you created in the previous step. Run the following command to list all the service IDs that are available in the resource group:
 
@@ -226,7 +226,7 @@ To get the service key through the command line, complete the following steps:
 
     where INSTANCE_NAME is the name of the instance that you obtained in the previous step.
 
-6. Get the {{site.data.keyword.ibm_notm}} resource service key. Run the [ibmcloud resource service-key](/docs/cli?topic=cli-ibmcloud_commands_resource#ibmcloud_resource_service_key) command:
+6. Get the {{site.data.keyword.cloud_notm}} resource service key. Run the [ibmcloud resource service-key](/docs/cli?topic=cli-ibmcloud_commands_resource#ibmcloud_resource_service_key) command:
 
     ```text
     ibmcloud resource service-key <KEY_NAME>
@@ -281,21 +281,21 @@ To create the logging service key through the API, complete the following steps:
 
     Look for the `guid` field of the instance to get the instance GUID.
 
-4. [Create the {{site.data.keyword.ibm_notm}} resource service key](https://cloud.ibm.com/apidocs/resource-controller/resource-controller#post-resource-key). Run the following cURL command:
+4. [Create the {{site.data.keyword.cloud_notm}} resource service key](https://cloud.ibm.com/apidocs/resource-controller/resource-controller#post-resource-key). Run the following cURL command:
 
     ```text
     curl -X POST https://resource-controller.cloud.ibm.com/v2/resource_keys -H "Authorization: <ACCESS_TOKEN> -H "content-type: application/json" -d '{"name":"<NAME>", "source":"<LOGGING_INSTANCE_GUID>"}'
     ```
     {: codeblock}
 
-    Where NAME is the name to be given to the IAM service key and GUID is the logging instance GUID obtained in the previous step.  
+    Where `NAME` is the name to be given to the IAM service key and GUID is the logging instance GUID obtained in the previous step.  
 
 5. Add a policy on the service ID that is associated with the service key. For more information, see [Create a policy](/apidocs/iam-policy-management#create-policy).
 
 Consider deleting the service key. There is a limit on the number of service IDs per account. For more information, see [IBM Cloud IAM limits](/docs/account?topic=account-known-issues&interface=cli#iam_limits).
 {: tip}
 
-To delete an {{site.data.keyword.ibm_notm}} resource service key, run the following command:
+To delete an {{site.data.keyword.cloud_notm}} resource service key, run the following command:
 
 ```text
 curl -X DELETE https://resource-controller.cloud.ibm.com/v2/resource_keys/<IAM_SERVICE_KEY_GUID> -H "Authorization: $ACCESS_TOKEN" -H "content-type: application/json"
@@ -327,14 +327,14 @@ To get the service key through the API, complete the following steps:
 
     Replace `MY_APIKEY` with your API key from the previous step.
 
-    The access token is only valid for 1 hour. ACCESS_TOKEN includes the string "Bearer" followed by the IAM token.
+    The access token is only valid for 1 hour. `access_token` includes the string "Bearer" followed by the IAM token.
 
 3. Get the GUID of an IAM service key.
 
     Get the list of resource keys:
 
     ```text
-    curl -X GET   https://resource-controller.cloud.ibm.com/v2/resource_keys   -H "Authorization: Bearer <IAM token>"
+    curl -X GET   https://resource-controller.cloud.ibm.com/v2/resource_keys   -H "Authorization: Bearer <ACCESS_TOKEN>"
     ```
     {: pre}
 
@@ -343,9 +343,9 @@ To get the service key through the API, complete the following steps:
 4. [Get the logging resource service key](https://cloud.ibm.com/apidocs/resource-controller/resource-controller#get-resource-key). Run the following cURL command:
 
     ```shell
-    curl -X GET https://resource-controller.cloud.ibm.com/v2/resource_keys/<GUID> -H "Authorization: $ACCESS_TOKEN" -H "content-type: application/json"
+    curl -X GET https://resource-controller.cloud.ibm.com/v2/resource_keys/<GUID> -H "Authorization: <ACCESS_TOKEN>" -H "content-type: application/json"
     ```
     {: codeblock}
 
-    Where GUID is the GUID obtained in the previous step.
+    Where `GUID` is the GUID obtained in the previous step.
 
