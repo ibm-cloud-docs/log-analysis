@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2021
-lastupdated: "2021-10-06"
+lastupdated: "2021-11-22"
 
 keywords: IBM, Log Analysis, logging, config agent, linux
 
@@ -17,6 +17,9 @@ subcollection: log-analysis
 
 The logging agent collects and forwards logs to your {{site.data.keyword.la_full_notm}} instance. After you provision an {{site.data.keyword.la_full}} instance, you must configure a logging agent for each log source that you want to monitor.
 {: shortdesc}
+
+V1 and V2 of the logging agent are deprecated for Kubernetes and OpenShift. Information in this section applies to the current logging agent version unless specifically referencing V1 and V2.  [See "Upgrading from logging agent version 2 to logging agent version 3" for information on upgrading to the latest agent version.](/docs/log-analysis?topic=log-analysis-upgrade_log_analysis_agent_3)
+{: deprecated}
 
 * You can configure a logging agent to connect to an {{site.data.keyword.la_full_notm}} instance through the public network or through the private network. By default, the agent connects through the public network. To connect to {{site.data.keyword.cloud}} services over a private network, you must have access to the classic infrastructure and [enable virtual routing and forwarding (VRF)](/docs/account?topic=account-vrf-service-endpoint) and connectivity to service endpoints for your account.
 * The logging agent authenticates by using the logging ingestion key and opens a secure web socket to the {{site.data.keyword.la_full_notm}} ingestion servers.
@@ -100,7 +103,7 @@ The tags `stable` and `latest` will be deprecated in June 2021.
 
 The following table outlines the logging agent versions that are available to configure for a Kubernetes cluster:
 
-| Kubernetes cluster             | logging agent V3             | logging agent V2       | logging agent V1                              |
+| Kubernetes cluster             | logging agent V3             | logging agent V2 (deprecated)      | logging agent V1  (deprecated)          |
 |--------------------------------|-----------------------------|-----------------------|----------------------------------------------|
 | `Standard Kubernetes cluster`  | ![Checkmark icon](../images/checkmark-icon.svg) | ![Checkmark icon](../images/checkmark-icon.svg) | ![Checkmark icon](../images/checkmark-icon.svg) |
 | `OpenShift Kubernetes cluster` | ![Checkmark icon](../images/checkmark-icon.svg) | ![Checkmark icon](../images/checkmark-icon.svg) | `Not available`                              |
