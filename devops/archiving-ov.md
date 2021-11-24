@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2021
-lastupdated: "2021-11-01"
+lastupdated: "2021-18-01"
 
 keywords: IBM, Log Analysis, logging, archive logs, COS, cloud object storage
 
@@ -22,7 +22,7 @@ You can archive logs from an {{site.data.keyword.la_full}} instance into a bucke
 
 In {{site.data.keyword.la_short}}, by default archiving is not enabled. Data is available for search and analysis for the number of days that your service instance plan indicates. However, you might need to access the data longer for troubleshooting. You might also have to keep the data for longer for compliance, and for corporate or industry regulations. When you need access to data for longer than the number of search days, you must configure archiving. 
 
-You can only have 1 or more {{site.data.keyword.la_short}} instances per region. Each {{site.data.keyword.la_full_notm}} instance has its own archiving configuration.
+You can have 1 or more {{site.data.keyword.la_short}} instances per region. Each {{site.data.keyword.la_full_notm}} instance has its own archiving configuration.
 {: important}
 
 The following figure shows a high-level view of the different components that are involved when archiving logs:
@@ -41,7 +41,7 @@ You are responsible for configuring and managing the bucket and the data stored 
 
 
 After you configure archiving,consider the following information:
-- Logs are automatically archived in a compressed format **(.json.gz)**. Each event preserves its metadata.
+- Logs are automatically archived in a compressed format **(.json.gz)**. Each log preserves its metadata.
 - Logs are archived within 24-48 hours after you save the configuration. 
 - Logs are archived hourly.
 - The first archive file is created when the archiving process runs and there is data.
@@ -69,11 +69,11 @@ Where
 
 `YYYY` represents the year; `MM` represents the month; and `DD` represents the day.
 
-`<accountID>` represents the auditing account ID, that is, the ID that is shown in the [web UI URL](/docs/log-analysis?topic=log-analysis-get_web_url).
+`<accountID>` represents the logging account ID, that is, the ID that is shown in the [web UI URL](/docs/log-analysis?topic=log-analysis-get_web_url).
     
 `HHHH` represents hours in 24 format. 
    
-* The timestamp that is used to determine whether the event is included in an archive is the UTC timestamp.
+* The timestamp that is used to determine whether the log is included in an archive is the UTC timestamp.
 
 Depending on your location, there might be logs that you see in local time in your views on a specific day. However, you cannot find them in the archive file. You are most likely viewing logs in local time and the archive process uses the UTC timestamp.
 {: note}
@@ -107,7 +107,11 @@ To monitor archiving, you can use the following services:
 
 - {{site.data.keyword.at_full_notm}}:
 
+<<<<<<< HEAD
+    You can monitor archiving of a {{site.data.keyword.la_short}} instance by monitoring the service ID that is used to write data into {{site.data.keyword.cos_full_notm}} (COS).
+=======
     You can monitor archiving of an Activity Tracker instance by monitoring the service ID that is used to write data into IBM Cloud Object Storage (COS).
+>>>>>>> 5f979cdb5cfcf50d6d99c5e3ee2b9f8f6383c811
 
     For more information, see [Configuring an alert to monitor archiving](/docs/log-analysis?topic=log-analysis-archiving-at-monitor).
 
@@ -129,7 +133,7 @@ The following table lists the minimum roles that a user must have to be able to 
 | Service role: `Manager`      | Allows the user to launch the web UI and configure archiving through the web UI or by using the API.  |
 {: caption="Table 1. IAM roles" caption-side="top"} 
 
-For more information on how to configure policies for a user, see [Granting user permissions to a user or service ID](/docs/services/log-analysis?topic=log-analysis-iam_view_events#iam_view_events).
+For more information on how to configure policies for a user, see [Granting user permissions to a user or service ID](/docs/services/log-analysis?topic=log-analysis-iam_view_logs#iam_view_logs).
 
 
 ### {{site.data.keyword.cos_full_notm}} service
@@ -152,16 +156,16 @@ For more information on how to configure policies for a user, see [Grant IAM pol
 
 The service ID that you must create for an {{site.data.keyword.cos_full_notm}} instance is used by {{site.data.keyword.la_full_notm}} to authenticate and access the {{site.data.keyword.cos_full_notm}} instance. This service ID must have the **writer** role. This role grants permissions to upload archive files in the bucket.
 
-## {{site.data.keyword.at_short}} events
-{: #archiving-ov-at-events}
+## {{site.data.keyword.at_short}} logs
+{: #archiving-ov-at-logs}
 
 
-The following {{site.data.keyword.at_short}} events are generated when you configure archiving:
+The following {{site.data.keyword.at_short}} logs are generated when you configure archiving:
 
 | Action                                            | Description                |
 |---------------------------------------------------|----------------------------|
-| `logdna.account-archive-setting.configure` | This event is generated when an administrator configures archiving for an auditing instance. |
-{: caption="Table 3. Archiving {{site.data.keyword.at_short}} events" caption-side="top"} 
+| `logdna.account-archive-setting.configure` | This log is generated when an administrator configures archiving for an logging instance. |
+{: caption="Table 3. Archiving {{site.data.keyword.at_short}} logs" caption-side="top"} 
 
 
 
