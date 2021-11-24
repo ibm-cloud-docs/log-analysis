@@ -178,6 +178,7 @@ toc:
           - alerts/remove_alert_ui.md
           - alerts/preset_ui.md
           - devops/config_api.md
+          - alerts/preset_api.md
           - alerts/email.md
           - alerts/pagerduty.md
           - devops/monitoring.md
