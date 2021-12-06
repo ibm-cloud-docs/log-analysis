@@ -181,6 +181,7 @@ toc:
           - alerts/preset_api.md
           - alerts/email.md
           - alerts/pagerduty.md
+          - alerts/webhook.md
           - devops/monitoring.md
           - alerts/sms.md
           - alerts/slack.md
