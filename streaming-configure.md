@@ -29,7 +29,7 @@ See [Configure streaming](/docs/log-analysis?topic=log-analysis-streaming#stream
 
     a. Log in to the {{site.data.keyword.cloud_notm}} console.
   
-    b. Click the [{{site.data.keyword.messagehub}} service](../icons/launch-glyph.svg  icon")](https://cloud.ibm.com/catalog/event-streams){: external} in the **Catalog**.
+    b. Access the [{{site.data.keyword.messagehub}} service](https://cloud.ibm.com/catalog/event-streams){: external} in the **Catalog**.
   
     c. Select the plan on the service instance page.
   
