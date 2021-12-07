@@ -23,7 +23,7 @@ You can send alerts using webhooks.
 
 When you [configure an alert](/docs/log-analysis?topic=log-analysis-alerts) you can have that alert sent to a webhook for use in another application.
 
-1. When configuring your alert, click ![Webhook icon](../images/webhook.png "Webhook icon").
+1. When configuring your alert, click ![Webhook icon](/images/webhook.png "Webhook icon").
 
 2. Select if you want the alert to be sent when the condition exists (**Presence**) or does not exist (**Absence**).
 
