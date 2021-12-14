@@ -57,7 +57,7 @@ Depending on [your account settings](/docs/account?topic=account-service-endpoin
 When you manage presets programmatically, you must use a service key. Authorization to the Configuration API is enforced by using a service key.
 {: note} 
 
-A service key is a unique code that is passed in an API request to identify the calling application or user. The service key is specific to an auditing instance. For more information on how to generate a service key, see [Managing service keys](/docs/log-analysis?topic=log-analysis-service_keys).
+A service key is a unique code that is passed in an API request to identify the calling application or user. The service key is specific to a logging instance. For more information on how to generate a service key, see [Managing service keys](/docs/log-analysis?topic=log-analysis-service_keys).
 
 Use of the Configuration REST API is done by adding a valid service key to the HTTP Authorization request header. You must pass the service key as a header parameter (`-H`) on your requests.
 

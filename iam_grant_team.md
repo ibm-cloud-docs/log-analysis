@@ -62,10 +62,10 @@ The following table shows the group roles that you can grant users to work withi
 
 You can define in the {{site.data.keyword.la_short}} UI more groups to define different levels of access to data per group and set of users.
 
-To grant a user access to 1 or more groups, an administrator must grant the user a policy for each group that the user needs access to. By using individual policies for each group, administrators can define different service access and permissions levels to work with data in the auditing instance.
+To grant a user access to 1 or more groups, an administrator must grant the user a policy for each group that the user needs access to. By using individual policies for each group, administrators can define different service access and permissions levels to work with data in the logging instance.
 
 For example, a user that needs to work in a group requires the following policies:
-* A policy with a platform role **viewer** to allow the user to see auditing instances in the {{site.data.keyword.cloud_notm}}. 
+* A policy with a platform role **viewer** to allow the user to see logging instances in the {{site.data.keyword.cloud_notm}}. 
 * A policy to grant the user access to 1 group. The service role determines the permissions of the user to work with data that is in scope for the group.
 
 
