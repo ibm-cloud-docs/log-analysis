@@ -44,11 +44,11 @@ To export logs, consider the following information:
 Use `ENDPOINT/v1/export?QUERY_PARAMETERS" -u SERVICE_KEY:` to export logs.
 {: note}
 
-*ENDPOINT* represents the entry point to the service. Each region has a different URL. To export logs from an auditing instance, see [Endpoints](/docs/log-analysis?topic=log-analysis-endpoints).
+*ENDPOINT* represents the entry point to the service. Each region has a different URL. To export logs from a logging instance, see [Endpoints](/docs/log-analysis?topic=log-analysis-endpoints).
 
 *QUERY_PARAMETERS* are parameters that define the filtering criteria that is applied to the export request.
 
-*SERVICE_KEY* is an API key that you must use to validate your credentials with the auditing instance.
+*SERVICE_KEY* is an API key that you must use to validate your credentials with the logging instance.
 
 Add `:` after *SERVICE_KEY*.
 {: important}
