@@ -42,7 +42,7 @@ When you [configure an alert](/docs/log-analysis?topic=log-analysis-alerts) you 
 
     Specify the **API key**. Set this field to the API token. For more information on how to get the token, see [Working with tokens](/docs/Monitoring-with-Sysdig?topic=Monitoring-with-Sysdig-api_sysdig_token).
 
-    Specify the **{{site.data.keyword.mon_full_notm}} instance URL**. Set this field to the endpoint where the instance is available. For more information, see [{{site.data.keyword.mon_full_notm}} endpoints](/docs/Monitoring-with-Sysdig?topic=Monitoring-with-Sysdig-endpoints#endpoints_sysdig).
+    Specify the **{{site.data.keyword.mon_full_notm}} instance URL**. Set this field to the endpoint where the instance is available. For more information, see [{{site.data.keyword.mon_full_notm}} endpoints](/docs/monitoring?topic=monitoring-endpoints#endpoints_monitoring).
 
     Specify the **Severity**. Valid values are `Info`, `Low`, `Medium`, or `High`. 
 
