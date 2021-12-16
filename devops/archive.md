@@ -197,7 +197,7 @@ For the service ID that you just created, click **View credentials**. You can se
 
 * Copy the API key. This is the value set for the field **apikey**.
 
-   When the service credential is rotated, make sure the [API Key is updated with with the new API Key.](#archiving_step8)  Archiving will stop if the API Key is not updated.
+   When the service credential is rotated, make sure the [API Key is updated with the new API Key.](#archiving_step8)  Archiving will stop if the API Key is not updated.
    {: important}
    
 * Copy the resource instance ID. This is the value set for the field **resource_instance_id**.
@@ -310,7 +310,7 @@ Complete the following steps to configure archiving of your {{site.data.keyword.
 
 After you save the configuration, logs are archived once a day.
 
-When the service credential is rotated, make sure the API Key is updated with with the new API Key.  Archiving will stop if the API Key is not updated.
+When the service credential is rotated, make sure the API Key is updated with the new API Key.  Archiving will stop if the API Key is not updated.
 {: important}
 
 ## Next steps
