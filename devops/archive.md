@@ -196,6 +196,10 @@ Complete the following steps to create a service ID with writing permissions for
 For the service ID that you just created, click **View credentials**. You can see information that is related to the service ID. 
 
 * Copy the API key. This is the value set for the field **apikey**.
+
+   When the service credential is rotated, make sure the [API Key is updated with with the new API Key.](#archiving_step8)  Archiving will stop if the API Key is not updated.
+   {: important}
+   
 * Copy the resource instance ID. This is the value set for the field **resource_instance_id**.
 
 
@@ -306,4 +310,12 @@ Complete the following steps to configure archiving of your {{site.data.keyword.
 
 After you save the configuration, logs are archived once a day.
 
+When the service credential is rotated, make sure the API Key is updated with with the new API Key.  Archiving will stop if the API Key is not updated.
+{: important}
+
+## Next steps
+{: #archiving_next}
+
+- [Monitor archiving with {{site.data.keyword.at_short}}](/docs/log-analysis?topic=log-analysis-archiving-la-monitor).
+- [Monitoring archiving by using {{site.data.keyword.mon_full_notm}}](/docs/log-analysis?topic=log-analysis-archiving-monitor).
 

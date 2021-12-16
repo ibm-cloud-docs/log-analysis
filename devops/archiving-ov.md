@@ -107,7 +107,7 @@ To monitor archiving, you can use the following services:
 
 - {{site.data.keyword.at_full_notm}}:
 
-    You can monitor archiving of an Activity Tracker instance by monitoring the service ID that is used to write data into IBM Cloud Object Storage (COS).
+    You can monitor archiving of a {{site.data.keyword.la_short}} instance by monitoring the service ID that is used to write data into {{site.data.keyword.cos_full_notm}} (COS).
 
     For more information, see [Configuring an alert to monitor archiving](/docs/log-analysis?topic=log-analysis-archiving-at-monitor).
 
@@ -151,6 +151,9 @@ For more information on how to configure policies for a user, see [Grant IAM pol
 {: #archiving-ov-iam-cos-cred}
 
 The service ID that you must create for an {{site.data.keyword.cos_full_notm}} instance is used by {{site.data.keyword.la_full_notm}} to authenticate and access the {{site.data.keyword.cos_full_notm}} instance. This service ID must have the **writer** role. This role grants permissions to upload archive files in the bucket.
+
+When the service credential is rotated, make sure the [API Key is updated with with the new API Key.](/docs/log-analysis?topic=log-analysis-archiving#archiving_step8)  Archiving will stop if the API Key is not updated.
+{: important}
 
 ## {{site.data.keyword.at_short}} logs
 {: #archiving-ov-at-logs}
