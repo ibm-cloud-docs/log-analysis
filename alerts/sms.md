@@ -2,7 +2,7 @@
 
 copyright:
   years:  2021
-lastupdated: "2021-05-11"
+lastupdated: "2021-17-12"
 
 keywords: IBM, Log Analysis, PagerDuty
 
@@ -28,22 +28,56 @@ To send an SMS alert, you can choose 1 of the following options:
     Use this option when you require call times and escalation management processes.
 
 
-## Send an SMS notification by using the {{site.data.keyword.mon_full_notm}} service
+## Send an SMS notification by using the {{site.data.keyword.en_full_notm}} service
 {: #sms-mon}
 
-When the {{site.data.keyword.la_short}} service sends a notification to the {{site.data.keyword.mon_full_notm}} service, an event is created in the {{site.data.keyword.mon_full_notm}} instance. You can then configure the {{site.data.keyword.mon_full_notm}} service to send an SMS. 
+When the {{site.data.keyword.la_short}} service sends a notification to the {{site.data.keyword.mon_full_notm}} service, an alert is triggered in the {{site.data.keyword.mon_full_notm}} instance. In the *Events* view section, you can then configure an event for that type of alert to send an SMS through the {{site.data.keyword.en_full_notm}} service.
 
 Complete the following steps to get an SMS notification when an alert in the {{site.data.keyword.la_short}} service is triggered:
 
-1. In the {{site.data.keyword.la_short}} web UI, [configure a {{site.data.keyword.mon_short}} alert](/docs/log-analysis?topic=log-analysis-monitoring). 
+### Step 1. Configure an alert in {{site.data.keyword.la_full_notm}}
+{: #sms-mon-step1}
 
-    You manage alerts through the Events view section in the {{site.data.keyword.mon_short}} UI.
+In the {{site.data.keyword.la_short}} web UI, [configure a {{site.data.keyword.mon_short}} alert](/docs/log-analysis?topic=log-analysis-monitoring). 
 
-2. In the {{site.data.keyword.mon_short}} UI, choose any of the following methods:
+When an alert is triggered, a notification is sent to the {{site.data.keyword.mon_short}} instance that you have configured. Then, you manage alerts through the *Events* view section in the {{site.data.keyword.mon_short}} UI.
 
-    Configure [sending SMS alerts using PagerDuty](/docs/monitoring?topic=monitoring-pd_sms).
+### Step 2. Configure the {{site.data.keyword.mon_short}} instance
+{: #sms-mon-step2}
 
-    Configure [Sending SMS alerts using Cloud Functions](/docs/monitoring?topic=monitoring-cf_sms).
+Complete the following steps:
+1. [Define an {{site.data.keyword.en_full_notm}} notification channel in your {{site.data.keyword.mon_short}} instance](/docs/log-analysis?topic=log-analysis-monitoring#monitoring-config).
+2. Define an alert from the event that triggers the {{site.data.keyword.la_full_notm}} alert.
+
+      In the *Events* section of the {{site.data.keyword.mon_short}} UI, configure an event that send an SMS notification based on the alert that youd defined previously:
+
+      1. Select an alert. Then select **Create Alert from Event**.
+      
+      2. Enter a name, a description, a group, and the severity level. The group **default** is set unless you specify a custom one. 
+
+      3. Define the condition that triggers the SMS notification.
+
+          Specify events that match the alerts being sent to {{site.data.keyword.mon_short}} from {{site.data.keyword.la_short}}. For example, you can indicate **LogDNA** or the name of the alert.
+
+          Set the **Scope** to `everywhere`.
+
+          If you want {{site.data.keyword.mon_short}} to send alerts to {{site.data.keyword.en_full_notm}} to be sent on as SMS message as soon as possible, specify **Trigger** values in the {{site.data.keyword.mon_short}} alert definition to be as low as possible.
+
+      4. Select 1 or more notification channels. Make sure you select the {{site.data.keyword.en_full_notm}} channel that you configured to notify thorugh the {{site.data.keyword.en_full_notm}} service.
+
+
+
+### Step 3. Configure the {{site.data.keyword.en_full_notm}} service
+{: #sms-mon-step3}
+
+Complete the following steps:
+
+1. [Provision an {{site.data.keyword.en_full_notm}} instance](/docs/monitoring?topic=monitoring-eventnotif_sms#eventnotif_sms_step1).
+2. [Configure an authorization that grants {{site.data.keyword.mon_full_notm}} access to {{site.data.keyword.en_full_notm}}](/docs/monitoring?topic=monitoring-eventnotif_sms#eventnotif_sms_step2).
+3. [Configure the {{site.data.keyword.en_full_notm}} instance](/docs/monitoring?topic=monitoring-eventnotif_sms#eventnotif_sms_step3).
+
+
+
 
 
 

@@ -23,7 +23,7 @@ To configure your Ubuntu server to send logs to your {{site.data.keyword.la_full
 
 
 ## Configuring the Logging agent V1
-{: #config_agent_linux}
+{: #config_logging_agent_linux}
 
 To configure your Ubuntu server to forward logs to your logging instance, complete the following steps from an Ubuntu terminal:
 

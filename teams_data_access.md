@@ -33,7 +33,7 @@ Role                                                               | Permissions
 Account management role                                            | Required to invite users, access groups, and define policies
 Administrator platform role                                        | Required to manage the service
 Manager service role                                               | Required to manage groups
-Platform role viewer, service role reader, or standard member      | Required to launch the auditing instance
+Platform role viewer, service role reader, or standard member      | Required to launch the logging instance
 {: caption="Table 1. Roles required for groups" caption-side="top"} 
 
 User roles defining permissions and access to manage auditing events are defined in {{site.data.keyword.iamlong}}.  
@@ -69,7 +69,7 @@ Complete the following steps to define the default settings for viewing data:
 7. Set **Access Control** to your desired default setting:
 
    * **ON** allows all users to see the auditing data even if they are not part of a group.
-   * **OFF** requires users to be a member of a service group that is associated with the auditing instance to see events.
+   * **OFF** requires users to be a member of a service group that is associated with the logging instance to see events.
 
    Setting **Access Control** to **OFF** prevents users who are not defined to a service group from seeing auditing events.
    {: tip}

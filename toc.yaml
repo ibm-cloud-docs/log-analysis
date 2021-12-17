@@ -146,6 +146,7 @@ toc:
           - devops/export_config.md
           - devops/export.md
           - devops/export_api.md
+          - devops/export_api_v2.md
       
       - topicgroup: 
           label: Logging UI
@@ -178,8 +179,10 @@ toc:
           - alerts/remove_alert_ui.md
           - alerts/preset_ui.md
           - devops/config_api.md
+          - alerts/preset_api.md
           - alerts/email.md
           - alerts/pagerduty.md
+          - alerts/webhook.md
           - devops/monitoring.md
           - alerts/sms.md
           - alerts/slack.md

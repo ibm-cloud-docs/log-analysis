@@ -111,7 +111,9 @@ You have different options to collect and forward logs to an instance of the {{s
 Another consideration is the restriction that you can apply to users to control access to view logs in a logging instance. You can use [IAM to manage users and their access to view logs](/docs/log-analysis?topic=log-analysis-work_iam)
 . 
 * When you use the method of a single logging instance to host platform logs, all logs from Cloud Foundry resources that run on that region are available for view through the instance. Any user with a service role `viewer` can see any log entries. 
+
 * When you use the method of sending Cloud Foundry app logs to a custom logging instance, users with a service role `viewer` can only see logs from Cloud Foundry app logs that are configured to stream logs to this logging instance.
+
 In both cases, users can also view logs from other sources that you might have configured to forward logs to the instance.
 
 ## Monitor Cloud Foundry resources that are hosted in {{site.data.keyword.cloud_notm}} public

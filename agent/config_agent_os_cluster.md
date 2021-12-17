@@ -164,7 +164,7 @@ You must enable virtual routing and forwarding (VRF) and connectivity to service
 ### Step 4. Deploy the logging agent in the cluster
 {: #config_agent_os_cluster_step4}
 
-Create a Kubernetes daemon set to deploy the logging agent on every worker node of your Kubernetes cluster. 
+Create a Kubernetes daemonset to deploy the logging agent on every worker node of your Kubernetes cluster. 
 
 The logging agent collects the following logs:
 - STDOUT and STDERR
