@@ -14,7 +14,7 @@ subcollection: log-analysis
 
 
 
-# Setting up Terraform for {{site.data.keyword.la_full_notm}}
+# Provisioning a {{site.data.keyword.la_short}} instance by using Terraform
 {: #terraform-setup}
 
 Terraform on {{site.data.keyword.cloud}} enables predictable and consistent provisioning of {{site.data.keyword.cloud_notm}} services so that you can rapidly build complex, multitier cloud environments that follow Infrastructure as Code (IaC) principles. Similar to using the {{site.data.keyword.cloud_notm}} CLI or API and SDKs, you can automate the provisioning, update, and deletion of your {{site.data.keyword.la_full_notm}} instances by using HashiCorp Configuration Language (HCL).
@@ -23,7 +23,12 @@ Terraform on {{site.data.keyword.cloud}} enables predictable and consistent prov
 Looking for a managed Terraform on {{site.data.keyword.cloud_notm}} solution? Try out [{{site.data.keyword.bplong}}](/docs/schematics?topic=schematics-getting-started). With {{site.data.keyword.bpshort}}, you can use the Terraform scripting language that you are familiar with, but you don't need to worry about setting up and maintaining the Terraform command line and the {{site.data.keyword.cloud_notm}} Provider plug-in. {{site.data.keyword.bpshort}} also provides pre-defined Terraform templates that you can install from the {{site.data.keyword.cloud_notm}} catalog.
 {: tip}
 
-Before you begin, ensure that you have the [required access](/docs/log-analysis?topic=log-analysis-iam) to create and work with {{site.data.keyword.la_short}} resources.
+## Prereqs
+{: #terraform-setup-prereqs}
+
+- You must have a paid service plan for the {{site.data.keyword.la_full_notm}} service. [Learn more](/docs/log-analysis?topic=log-analysis-service_plans). 
+- Ensure that you have the [required access](/docs/log-analysis?topic=log-analysis-iam) to create and work with {{site.data.keyword.la_short}} resources.
+
 
 ## Step 1. Install the Terraform CLI
 {: #terraform-install-cli}
@@ -32,27 +37,41 @@ Complete the following steps to install the Terraform CLI:
 
 1. Create a terraform folder on your local machine, and navigate to your terraform folder.
    
-    ```terraform
+    ```text
     mkdir terraform && cd terraform
     ```
     {: pre}
 
-2. Download the Terraform version that you want. For example, you can download `terraform_0.15.5_darwin_amd64.zip` for a MacOS.
-    
-    The IBM Cloud Provider plug-in for Terraform currently supports Terraform version 0.12.x, 0.13.x, and 0.14.x only. Make sure to select a supported Terraform version.
+2. Download the Terraform version that you want. 
+
+    For more information about the {{site.data.keyword.cloud_notm}} Provider plug-in for Terraform supported versions, see [Installing the Terraform CLI](/docs/ibm-cloud-provider-for-terraform?topic=ibm-cloud-provider-for-terraform-setup_cli). 
+
+    For example, you can download `terraform_0.15.5_darwin_amd64.zip` for a MacOS.
 
 3. Extract the Terraform zip file and copy the files to your terraform directory.
 
+    ```text
+    unzip ./terraform_1.1.0_darwin_amd64.zip -d <terraform-directory>
+    ```
+    {: codeblock}
+
+    For example, 
+    
+    ```text
+    unzip ./terraform_1.1.0_darwin_amd64.zip -d /usr/local/bin
+    ```
+    {: screen}
+
 4. Set the environment PATH variable to your Terraform files.
 
-    ```terraform
-    export PATH=$PATH:<terraform-directory>/terraform
+    ```text
+    export PATH=$PATH:/usr/local/bin/terraform
     ```
     {: codeblock}
 
 5. Verify that the installation is successful by using a terraform command.
 
-    ```terraform
+    ```text
     ./terraform
     ```
     {: pre}
@@ -344,7 +363,16 @@ Verify that the resources are created.
 - [Review the user assigned access in the console](/docs/account?topic=account-assign-access-resources#review-your-access-console).
 
 
+## Errors
 
+
+rror: Failed to query available provider packages
+│ 
+│ Could not retrieve the list of available versions for provider logdna/logdna: locked provider registry.terraform.io/logdna/logdna 1.5.0 does not match configured
+│ version constraint 1.7.0; must use terraform init -upgrade to allow selection of new versions
+╵
+
+users-MBP:logging-instance-archive luisalopezdesicanes$ terraform init -upgrade
 
 
 

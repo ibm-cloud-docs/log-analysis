@@ -127,6 +127,9 @@ The response will be similar to the following if the configuration is successful
 ```
 {: codeblock}
 
+Monitor archiving with [{{site.data.keyword.at_short}}](/docs/log-analysis?topic=log-analysis-archiving-la-monitor) and [{{site.data.keyword.mon_full_notm}}](/docs/log-analysis?topic=log-analysis-archiving-monitor).
+{: tip}
+
 ## Update the archiving configuration
 {: #archivingapi-update-conf}
 

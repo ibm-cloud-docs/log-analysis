@@ -2,9 +2,9 @@
 
 copyright:
   years:  2018, 2021
-lastupdated: "2021-11-30"
+lastupdated: "2021-12-02"
 
-keywords: IBM, Log Analysis, logging, export logs, api, v1
+keywords: IBM, Log Analysis, logging, export logs, api, v2
 
 subcollection: log-analysis
 
@@ -13,23 +13,22 @@ subcollection: log-analysis
 {{site.data.keyword.attribute-definition-list}}
 
  
-# Exporting logs programmatically using the V1 API
-{: #export_api}
+# Exporting logs programmatically using the V2 API
+{: #export_api_v2}
 
-From an {{site.data.keyword.la_full_notm}} instance, you can export logs programmatically by using the V1 logging REST API. 
+From an {{site.data.keyword.la_full_notm}} instance, you can export logs programmatically by using the V2 logging REST API. 
 {: shortdesc}
 
-The V1 logging REST API does not support pagination.  If you need pagination support, you will need to use the [V2 logging REST API](/docs/log-analysis?topic=log-analysis-export_api_v2).
+The V2 logging REST API does not support sending the logs by email.  If you need email support, you will need to use the [V1 logging REST API](/docs/log-analysis?topic=log-analysis-export_api).
 {: note}
 
 Consider the following information when you export log data:
 * You export a set of log entries. To define the set of data that you want to export, you can apply filter and searches. You can also specify the time range. 
-* When you export logs programmatically, you can choose to send an email or to write logs into your terminal.
 * The compressed log file that contains the data that you want to export is available for a maximum of 12 hours. 
-* When you export logs, you have a limit of lines that you can export in a request. You can specify to export older lines or newer lines in case you reach the limit in the time range that you specify for the export. The maximum number of lines that you can export per API request limited by the plan type.  The maximum number of lines you can export for a 7-day plan is `10,000` lines.  The maximum number of lines you can export for all other plans is `20,000` lines.
+* When you export logs, you have a limit of lines that you can export in a request. You can specify to export older lines or newer lines in case you reach the limit in the time range that you specify for the export. The maximum number of lines that you can export per page is `10,000` lines with no limit on the number of pages.
 
 ## Prerequisites
-{: #export_api_prereqs}
+{: #export_api_prereqs_v2}
 
 To export logs, consider the following information:
 
@@ -41,9 +40,9 @@ To export logs, consider the following information:
 
 
 ## Export API
-{: #export_api_info}
+{: #export_api_info_v2}
 
-Use `ENDPOINT/v1/export?QUERY_PARAMETERS" -u SERVICE_KEY:` to export logs.
+Use `ENDPOINT/v2/export?QUERY_PARAMETERS" -u SERVICE_KEY:` to export logs.
 {: note}
 
 *ENDPOINT* represents the entry point to the service. Each region has a different URL. To export logs from an auditing instance, see [Endpoints](/docs/log-analysis?topic=log-analysis-endpoints).
@@ -57,7 +56,7 @@ Add `:` after *SERVICE_KEY*.
 
 
 ## Query parameters
-{: #export_api_info_parameters}
+{: #export_api_info_parameters_v2}
 
 You can define query parameters to refine the logs that you want to export.
 
@@ -65,45 +64,41 @@ The following table lists the query parameters that you can set:
 
 | Query parameter | Type       | Status     | Description |
 |-----------|------------|------------|-------------|
-| `from`      | `int32`      | Required   | Start time. Set as UNIX timestamp in seconds or milliseconds. |
-| `to`        | `int32`      | Required   | End time. Set as UNIX timestamp in seconds or milliseconds.    |
-| `size`      | `int32`     | Optional   | Number of log lines to include in the export.  | 
+| `from`      | `int32`      | Required   | Start time. Set as UNIX timestamp in seconds or Javascript (milliseconds). |
+| `to`        | `int32`      | Required   | End time. Set as UNIX timestamp in seconds or Javascript (milliseconds).    |
+| `size`      | `int32`     | Optional   | Number of log lines to include in each page of the export. The maximum and default is `10000`. | 
 | `hosts`     | `string`     | Optional   | Comma-separated list of hosts. |
 | `apps`      | `string`     | Optional   | Comma-separated list of applications. |
 | `levels`    | `string`     | Optional   | Comma-separated list of log levels. |
 | `tags`    | `string`     | Optional   | Comma-separated list of tags. |
 | `query`     | `string`     | Optional   | Search query. For more information, see [Search Logs](/docs/log-analysis?topic=log-analysis-view_logs#view_logs_step6). |
 | `prefer`    | `string`     | Optional   | Defines the log lines that you want to export. Valid values are `head`, first log lines, and `tail`, last log lines. If not specified, defaults to tail.  |
-| `email`     | `string`     | Optional   | Specifies the email with the downloadable link of your export. By default, the log lines are streamed.|
-| `emailSubject` | `string`     | Optional   | Use to set the subject of the email.  \n Use `%20` to represent a space. For example, a sample value is `Export%20logs`. |
+| `pagination_id`     | `string`     | Optional   | Indicates which page of results is retrieved from an export. For the initial export request, this parameter should be omitted. Subsequent requests for pagination should provide the token sent in the response to this parameter.|
 {: caption="Query parameters" caption-side="top"} 
 
-
-When you include a query or a subject to an email, use `%20` to represent a space.
-{: important}
 
 For example, you can define a set of parameters to include information:
 
 ```text
-ENDPOINT/v1/export?to=START_TIME&from=END_TIME&hosts=LIST_OF_HOSTS&levels=LIST_OF_LEVELS&size=N&query=(SEARCH_QUERY)" -u $TOKEN:
+ENDPOINT/v2/export?to=START_TIME&from=END_TIME&hosts=LIST_OF_HOSTS&levels=LIST_OF_LEVELS&size=N&query=(SEARCH_QUERY)" -u $TOKEN:
 ```
 {: pre}
 
 
 ## Exporting logs
-{: #export_api_logs}
+{: #export_api_logs_v2}
 
 Complete the following steps to export logs programmatically:
 
 
 ### Step 1. Get a service key
-{: #export_api_step_1}
+{: #export_api_v2_step_1}
 
 [Get a service key](/docs/log-analysis?topic=log-analysis-service_keys). 
 
 
 ### Step 2. Identify the data to pass through the export parameters
-{: #export_api_step_2}
+{: #export_api_v2_step_2}
 
 To verify that the query that you use in the export returns the set of logs that you are looking for, define the search query through the logging web UI. Refine the query until you can only see the logs that you want to export. Then, map the data to the query parameters.
 
@@ -114,12 +109,12 @@ Notice that when you copy the query from the logging web UI, you must replace ev
 
 
 ### Step 3. Export the logs
-{: #export_api_step_3}
+{: #export_api_v2_step_3}
 
 Run the following cURL command to export logs:
 
 ```text
-curl "ENDPOINT/v1/export?QUERY_PARAMETERS" -u SERVICE_KEY:
+curl "ENDPOINT/v2/export?QUERY_PARAMETERS" -u SERVICE_KEY:
 ```
 {: pre}
 
@@ -131,34 +126,20 @@ Where
 
 
 ## Samples
-{: #export_api_samples}
+{: #export_api_v2_samples}
 
 For example, to write log lines into the terminal, you can run the following command:
 
 ```text
-curl "https://api.us-south.logging.cloud.ibm.com/v1/export?to=$(date +%s)000&from=$(($(date +%s)-86400))000&levels=info" -u e08c0c759663491880b0d61712346789:
+curl "https://api.us-south.logging.cloud.ibm.com/v2/export?to=$(date +%s)000&from=$(($(date +%s)-86400))000&levels=info" -u e08c0c759663491880b0d61712346789:
 ```
 {: pre}
 
-To send an email with the link to download the log lines specified on the export, you can run the following command:
-
-```text
-curl "https://api.us-south.logging.cloud.ibm.com/v1/export?to=$(date +%s)000&from=$(($(date +%s)-86400))000&levels=info&email=xxx@ibm.com" -u e08c0c759663491880b0d61712346789:
-```
-{: pre}
-
-
-To send an email with a custom subject, you can run the following command:
-
-```text
-curl "https://api.us-south.logging.cloud.ibm.com/v1/export?to=$(date +%s)000&from=$(($(date +%s)-86400))000&levels=info&email=xxx@ibm.com&emailSubject=Export%20test" -u e08c0c759663491880b0d61712346789:
-```
-{: pre}
 
 To use the query parameter to find all log lines with a level of `info`, you can run the following command:
 
 ```text
-curl -s "https://api.us-south.logging.cloud.ibm.com/v1/export?query=test_query&levels=info" -u :
+curl -s "https://api.us-south.logging.cloud.ibm.com/v2/export?query=test_query&levels=info" -u :
 ```
 {: pre}
 

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2021
-lastupdated: "2021-18-25"
+lastupdated: "2021-08-25"
 
 keywords: IBM Cloud, Log Analysis, archive logs, COS, cloud object storage
 
