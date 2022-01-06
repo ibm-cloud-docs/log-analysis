@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years: 2019, 2021
+  years: 2019, 2022
 lastupdated: "2021-11-04"
 
 keywords: IBM Cloud, Log Analysis, archiving, API
