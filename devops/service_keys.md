@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2021
-lastupdated: "2021-11-18"
+lastupdated: "2021-07-30"
 
 keywords: IBM, Log Analysis, logging, service keys
 

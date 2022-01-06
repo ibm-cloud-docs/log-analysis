@@ -33,7 +33,7 @@ Role                                                               | Permissions
 Account management role                                            | Required to invite users, access groups, and define policies
 Administrator platform role                                        | Required to manage the service
 Manager service role                                               | Required to manage groups
-Platform role viewer, service role reader, or standard member      | Required to launch the logging  instance
+Platform role viewer, service role reader, or standard member      | Required to launch the logging instance
 {: caption="Table 1. Roles required for groups" caption-side="top"} 
 
 User roles defining permissions and access to manage auditing events are defined in {{site.data.keyword.iamlong}}.  

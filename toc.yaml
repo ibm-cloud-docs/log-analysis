@@ -146,6 +146,7 @@ toc:
           - devops/export_config.md
           - devops/export.md
           - devops/export_api.md
+          - devops/export_api_v2.md
       
       - topicgroup: 
           label: Logging UI
