@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years:  2018, 2021
-lastupdated: "2021-03-2"8
+  years:  2018, 2022
+lastupdated: "2021-03-28"
 
 keywords: IBM, Log Analysis, logging, api
 
