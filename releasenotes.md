@@ -21,7 +21,8 @@ Use these release notes to learn about the latest updates to {{site.data.keyword
 ## 4 October 2021
 {: #log-analysis-oct0421}
 
-:   Documentation of API changes supporting archiving is generally available.  [Learn more about the archiving API](/apidocs/log-analysis#get-v1-config-archiving).
+API for archiving
+:   Documentation of API changes supporting archiving is generally available.  [Learn more about the archiving API](https://{DomainName}/apidocs/log-analysis#get-v1-config-archiving){: external}.
 
 ## 30 September 2021
 {: #log-analysis-sep3021}
