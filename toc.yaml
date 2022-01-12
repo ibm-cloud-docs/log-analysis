@@ -62,9 +62,6 @@ toc:
       - topic: releasenotes.md
         navtitle: Release notes
 
-      - topic: releasenotes.md
-        navtitle: Release notes
-
   - navgroup: 
       id: howto
       topics:
