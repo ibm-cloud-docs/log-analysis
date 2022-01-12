@@ -149,6 +149,7 @@ toc:
           label: Logging UI
           topics:
           - launch.md
+          - views.md
           - config.md
           - get_logdna_web_url.md
       
