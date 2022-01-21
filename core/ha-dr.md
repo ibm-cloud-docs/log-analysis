@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2018, 2022
-lastupdated: "2021-05-19"
+lastupdated: "2022-01-20"
 
 keywords: IBM, Log Analysis, logging, disaster recovery, ha, high availability, redundancy
 
@@ -43,6 +43,7 @@ The following table lists the high-availability (HA) status for the regions (loc
 | `North America`       | `Dallas (us-south)`      | `N/A`        | `MZR`     |
 | `North America`       | `Washington (us-east)`   | `N/A`        | `MZR`     |
 | `North America`       | `Toronto (ca-tor)`       | `N/A`        | `MZR`     |
+| `South America`     | `Sao Paulo (br-sao)`       | `N/A` | `MZR` | 
 {: caption="Table 1. List of locations where the service is available" caption-side="top"}
 
 
@@ -89,3 +90,14 @@ If a regional disaster occurs, consider the following information:
 * Older data will not be available when the service is restored. Services that are restored will be available to receive data buffered at end points during course of the outage and future ingested data.  Data previously retained is available through your archives and is not reloaded into your service instance. You can access your archive data directly in {{site.data.keyword.cos_full_notm}} or use the {{site.data.keyword.sqlquery_short}} service to access it.  
 * You might have 1 or more logging instances in the region. When these service instances are available in the new location, you will be able to use them. However, you will have to update the endpoints of applications and logging agents to point to the ingestion endpoint in the new location. 
 
+
+#### DR recovery time
+{: #dr_recovery_time}
+
+The following table indicates the estimated recovery times in the event of a DR situation:
+
+| Recovery objective for DR | Estimated time |
+|---------------------------|----------------|
+| Maximum Tolerable Downtime (MTD) / Recovery Time Objective (RTO)  | Less than 24 hours |
+| Recovery Point Objective (RPO) | Less than 4 hours |
+{: caption="Table 4. Recovery objectives for DR" caption-side="top"}
