@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2022
-lastupdated: "2022-01-31"
+lastupdated: "2022-02-01"
 
 keywords: IBM Cloud, Log Analysis, auditing, index alerts, spike protection
 
@@ -109,7 +109,7 @@ Complete the following steps to view the index rate dashboard and enable the fea
 When the feature is enabled, the *index rate alert page* is displayed. 
 - You can use the index rate alerts page to monitor the daily average index rates or the standard deviation from the past 30 days.
 - You can toggle between viewing index rates or standard deviations for the past 30 days, the past 7 days, or the past 1 day.
-
+- If no log lines are ingested in a 60 minute period, **Check Later** will be displayed instead of the index rate value.  Since measurements are taken every five minutes, the first measurement of ingested log lines for that five minutes will be averaged for the first hour.  Wait at least an hour before using the index rate value for analysis any time there has been an ingestion interruption.
 
 
 
@@ -119,7 +119,7 @@ When the feature is enabled, the *index rate alert page* is displayed.
 You must set at least 1 threshold to activate the index rate alert feature.
 {: important}
 
-
+By default the index rate alert feature is disabled.
 
 ## Configure index rate alerts
 {: #control_usage_index_rate_configure}
