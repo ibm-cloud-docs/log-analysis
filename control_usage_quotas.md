@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2022
-lastupdated: "2022-01-31"
+lastupdated: "2022-02-01"
 
 keywords: IBM Cloud, Log Analysis, usage, usage quotas
 
@@ -95,7 +95,7 @@ The Usage Quotas option is in the left-pane of the LogDNA application, under **S
 ### Enabling and disabling Usage Quotas
 {: #enable_disable_usage_quotas}
 
-To enable *Usage Quotas* make sure the selection at the top of the dialog is set to **on**.  To disable the *Usage Quota* configuration, make sure the selection is set to **off**.
+To enable *Usage Quotas* make sure the selection at the top of the dialog is set to **on**.  To disable the *Usage Quota* configuration, make sure the selection is set to **off**.  *Usage Quotes* are disabled by default.
 
 ### Setting up your usage quotas
 {: #setup_usage_quota}
@@ -191,10 +191,12 @@ To edit an exclusion rule click **Edit** next to the exclusion rule that you wan
 ### Configuring usage quota alerts
 {: #alerts_usage_quota}
 
-To configure the notifications when a quota threshold is exceeded, do the following:
+By default the account owner is configured to receive alert emails.  You can configure your systems to send email alerts, Slack notifications, or both.
 
-1. Under **Alert recipients** select the desired recipient email addresses. There must be at least one email address configured.
+To configure notifications when a quota threshold is exceeded, do the following:
 
-2. If desired, select one or more **Slack recipients** to receive notifications.
+1. Under **Alert recipients** select the desired recipient email addresses. There must be at least one email address configured if Slack notifcations are not configured.
+
+2. If desired, select one or more **Slack recipients** to receive notifications.  If you configure a Slack recipient, you can delete all email recipients if desired.
 
 
