@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2022
-lastupdated: "2021-03-28"
+lastupdated: "2022-02-02"
 
 keywords: IBM, Log Analysis, logging, ubuntu, tutorial
 
@@ -249,6 +249,10 @@ To configure your bare metal to forward logs to your logging instance, complete 
    ```
    {: pre}
 
+### Troubleshooting
+{: #ubuntu_troubleshooting}
+
+You can use the `/var/log/logdna-agent.log` log to determine if there are any issues with your `logdna-agent` installation.
 
 ## Step 4. Launch the logging Web UI
 {: #ubuntu_baremetal_step4}
