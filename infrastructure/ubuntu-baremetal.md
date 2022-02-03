@@ -4,35 +4,44 @@ copyright:
   years:  2018, 2022
 lastupdated: "2022-02-02"
 
-keywords: IBM, Log Analysis, logging, ubuntu, tutorial
+keywords: IBM, Log Analysis, logging, ubuntu, tutorial, bare metal
 
 subcollection: log-analysis
+
+content-type: tutorial
+account-plan: lite
+completion-time: 1h
 
 ---
 
 {{site.data.keyword.attribute-definition-list}}
 
 
-# Logging with Bare metals
+# Logging with bare metal servers
 {: #ubuntu_baremetal}
+{: toc-content-type="tutorial"} 
+{: toc-completion-time="1h"}
 
-Use the {{site.data.keyword.la_full}} service to monitor and manage logs from a bare metal in a centralized logging system on the {{site.data.keyword.cloud_notm}}. 
+Use the {{site.data.keyword.la_full}} service to monitor and manage logs from a bare metal server in a centralized logging system on the {{site.data.keyword.cloud_notm}}. 
 {: shortdesc}
+
+These instructions are for Ubuntu Linux systems but can be used for other Linux systems.
+{: note}
 
 You can collect and monitor system and application logs. 
 
 By default, the logging agent for Ubuntu monitors log files in the `/var/log` directory. For example, the Ubuntu system log (`/var/log/syslog`) is monitored by default.
 
-On the {{site.data.keyword.cloud_notm}}, configure an bare metal to forward logs to an {{site.data.keyword.la_full_notm}} instance by completing the following steps:
+On the {{site.data.keyword.cloud_notm}}, configure a bare metal server to forward logs to an {{site.data.keyword.la_full_notm}} instance by completing the following steps:
 
-1. Provision a bare metal running Ubuntu Linux.
+1. Provision a bare metal server running Ubuntu Linux.
 2. Provision an instance of the {{site.data.keyword.la_full_notm}} service. 
-3. Configure the logging agent in the bare metal.
+3. Configure the logging agent in the bare metal server.
 4. Optionally, add additional directories to be monitored by the agent.
 
 ![Component overview on the {{site.data.keyword.cloud_notm}}](../images/ubuntu.png "Component overview on the {{site.data.keyword.cloud_notm}}")
 
-In this tutorial, you will learn how to configure an bare metal to forward logs to an {{site.data.keyword.la_full_notm}} instance.
+In this tutorial, you will learn how to configure a bare metal server to forward logs to an {{site.data.keyword.la_full_notm}} instance.
 
 ## Before you begin
 {: #ubuntu_baremetal_prereqs}
@@ -58,20 +67,21 @@ Your {{site.data.keyword.IBM_notm}}ID must have assigned IAM policies for each o
 
 The {{site.data.keyword.cloud_notm}} CLI must be installed. For more information, see [Installing the {{site.data.keyword.cloud_notm}} CLI](/docs/cli?topic=cli-install-ibmcloud-cli).
 
-## Step 1. Provision a bare metal
+## Provision a bare metal server
 {: #ubuntu_baremetal_step1}
+{: step}
 
-If you have a bare metal that you want to monitor, you can skip this step.
+If you have a bare metal server that you want to monitor, you can skip this step.
 
-If you don't have a bare metal, complete the following steps
+If you don't have a bare metal server, complete the following steps
 
 1. [Provision a bare metal server](/docs/bare-metal?topic=bare-metal-getting-started). 
 
-    To complete the steps in this topic, ensure you have internet access from the bare metal. This is needed for configuring the monitoring agent.
+    To complete the steps in this topic, ensure you have internet access from the bare metal server. This is needed for configuring the monitoring agent.
 
 2. Configure a VPN connection between your terminal and the bare metal server  
 
-    Virtual Private Networking (VPN) access enables users to manage all servers remotely and securely over the {{site.data.keyword.cloud}} private network. A VPN connection from your location to the private network allows out-of-band management and server rescue through an encrypted VPN tunnel. VPN tunnels can be initiated to any IBM Cloud data center or PoP allowing you geographic redundancy. 
+    Virtual Private Networking (VPN) access enables users to manage all servers remotely and securely over the {{site.data.keyword.cloud}} private network. A VPN connection from your location to the private network allows out-of-band management and server rescue through an encrypted VPN tunnel. VPN tunnels can be initiated to any {{site.data.keyword.cloud_notm}} data center or PoP allowing you geographic redundancy. 
 
     Complete the following steps to configure a VPN connection between your terminal and the bare metal server:
 
@@ -95,7 +105,7 @@ If you don't have a bare metal, complete the following steps
     
     You will require root permissions in order to install the monitoring agent.
 
-    For example, you can complete the following steps to get the bare metal information that you need to `ssh` into the server:
+    For example, you can complete the following steps to get the bare metal server information that you need to `ssh` into the server:
 
     1. [Log in to your {{site.data.keyword.cloud_notm}} account](https://cloud.ibm.com/login){: external}.
 
@@ -123,8 +133,9 @@ If you don't have a bare metal, complete the following steps
        For example: `ssh root@45.123.122.12`
 
 
-## Step 2. Provision an {{site.data.keyword.la_full_notm}} instance
+## Provision an {{site.data.keyword.la_full_notm}} instance
 {: #ubuntu_baremetal_step2}
+{: step}
 
 To provision an instance of {{site.data.keyword.la_full_notm}} through the {{site.data.keyword.cloud_notm}} UI, complete the following steps:
 
@@ -162,12 +173,13 @@ To provision an instance of logging through the CLI, see [Provisioning logging t
 {: note}
 
 
-## Step 3. Configure a bare metal to send logs to your logging instance
+## Configure a bare metal server to send logs to your logging instance
 {: #ubuntu_baremetal_step3}
+{: step}
 
-To configure your bare metal to send logs to your {{site.data.keyword.la_full_notm}} instance, you must install a `logging-agent`. The logging agent reads log files from `/var/log` or other directories you specify, and forwards the log data to your logging instance.
+To configure your bare metal server to send logs to your {{site.data.keyword.la_full_notm}} instance, you must install a `logging-agent`. The logging agent reads log files from `/var/log` or other directories you specify, and forwards the log data to your logging instance.
 
-To configure your bare metal to forward logs to your logging instance, complete the following steps from an Ubuntu terminal:
+To configure your bare metal server to forward logs to your logging instance, complete the following steps from an Ubuntu terminal:
 
 1. Install the logging agent. Run the following commands:
 
@@ -249,13 +261,15 @@ To configure your bare metal to forward logs to your logging instance, complete 
    ```
    {: pre}
 
+
 ### Troubleshooting
-{: #ubuntu_troubleshooting}
+{: #ubuntu_baremetal_troubleshooting}
 
 You can use the `/var/log/logdna-agent.log` log to determine if there are any issues with your `logdna-agent` installation.
 
-## Step 4. Launch the logging Web UI
+## Launch the logging Web UI
 {: #ubuntu_baremetal_step4}
+{: step}
 
 To launch the {{site.data.keyword.la_full_notm}} dashboard from the {{site.data.keyword.cloud_notm}} UI, complete the following steps:
 
@@ -276,8 +290,9 @@ To launch the {{site.data.keyword.la_full_notm}} dashboard from the {{site.data.
    The logging Web UI opens and displays your cluster logs.
 
 
-## Step 5. View your logs
+## View your logs
 {: #ubuntu_baremetal_step5}
+{: step}
 
 From the logging Web UI, you can view your logs as they pass through the system. You view logs by using log tailing. 
 

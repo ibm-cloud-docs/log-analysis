@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2022
-lastupdated: "2021-03-28"
+lastupdated: "2022-02-02"
 
 keywords: IBM, Log Analysis, logging, getting started
 
@@ -18,7 +18,7 @@ subcollection: log-analysis
 Use {{site.data.keyword.la_full}} to add log management capabilities to your {{site.data.keyword.cloud_notm}} architecture.
 {: shortdesc}
 
-You can use {{site.data.keyword.la_full_notm}} to manage system and application logs in the {{site.data.keyword.cloud_notm}}. {{site.data.keyword.la_full_notm}} offers administrators, DevOps teams, and developers advanced features to filter, search, and tail log data, define alerts, and design custom views to monitor application and system logs. 
+You can use {{site.data.keyword.la_full_notm}} to manage operating system logs, application logs, and platform logs in the {{site.data.keyword.cloud_notm}}. {{site.data.keyword.la_full_notm}} offers administrators, DevOps teams, and developers advanced features to filter, search, and tail log data, define alerts, and design custom views to monitor application and system logs. 
 
 ## Features
 {: #getting-started-features}
@@ -62,8 +62,11 @@ After provisioning an instance of {{site.data.keyword.la_full_notm}}, you receiv
 
 After you have your ingestion key, you can configure your log sources:
 
+A log source is a Cloud or on-prem resource that generates logs. For example, a log source can be a Kubernetes cluster. 
+{: note}
+
 * You can enable a logging instance for a region that hosts logs from enabled {{site.data.keyword.cloud_notm}} services. For example, to collect logs from an {{site.data.keyword.ibmcf_notm}} app, you can enable the *service platform logs* flag. [Learn more](/docs/log-analysis?topic=log-analysis-config_svc_logs). When this feature is enabled, logs are automatically collected.
-* You can configure a logging agent for a log source. A log source is a Cloud or on-prem resource that generates logs. For example, a log source can be a Kubernetes cluster. You use the ingestion key to configure the logging agent that is responsible for collecting and forwarding logs to your {{site.data.keyword.la_full_notm}} instance. After the logging agent is deployed in a log source, logs are collected and forwarded automatically to the {{site.data.keyword.la_full_notm}} instance. [Learn more](/docs/log-analysis?topic=log-analysis-logdna_agent).
+* You can configure a logging agent for a log source. You use the ingestion key to configure the logging agent that is responsible for collecting and forwarding logs to your {{site.data.keyword.la_full_notm}} instance. After the logging agent is deployed in a log source, logs are collected and forwarded automatically to the {{site.data.keyword.la_full_notm}} instance. [Learn more](/docs/log-analysis?topic=log-analysis-log_analysis_agent).
 
 Once your log sources are configured, you can launch the {{site.data.keyword.la_full_notm}} Web UI to view, monitor, and manage your logs from the {{site.data.keyword.cloud_notm}} Menu ![Navigation Menu](images/icon_hamburger.svg) &gt; **Observability** &gt; **Logging** page.
 
@@ -80,16 +83,53 @@ The following figure shows the components comprising the {{site.data.keyword.la_
 
 2. If you don't have an {{site.data.keyword.cloud_notm}} account, [register an {{site.data.keyword.cloud_notm}} account](https://cloud.ibm.com/login){: external}. You need an IBMid to work in {{site.data.keyword.cloud_notm}}.
 
-## Step 2. Get started
+## Step 2. Provision an instance
+{: #getting-started-provision}
+
+1. Log in to your {{site.data.keyword.cloud_notm}} account.
+
+   Click [Log in to {{site.data.keyword.cloud_notm}}](https://cloud.ibm.com/login){: external} to sign in to the {{site.data.keyword.cloud_notm}}.
+
+   After you log in with your user ID and password, the {{site.data.keyword.cloud_notm}} console opens.
+
+2. Click **Catalog**. The list of the services that are available in {{site.data.keyword.cloud_notm}} opens.
+
+3. To filter the list of services that is displayed, click **Services** and select the **Logging and Monitoring** category.
+
+4. Click the **{{site.data.keyword.la_full_notm}}** tile.
+
+5. Select a region for the service instance.
+
+6. Select the **Lite** service plan. 
+
+   By default, the **Lite** plan is set.
+
+   For more information about other service plans, see [Pricing plans](/docs/log-analysis?topic=log-analysis-service_plans).
+
+7. Specify a **Service name** for your {{site.data.keyword.la_full_notm}} service instance.
+
+8. Select the **Default** resource group. 
+
+   By default, the **Default** resource group is set.
+
+9. To provision the {{site.data.keyword.la_full_notm}} service in the {{site.data.keyword.cloud_notm}} selected resource group, click **Create**.
+
+After you provision an instance, the {{site.data.keyword.la_full_notm}} dashboard opens. 
+
+To provision an instance of logging through the CLI, see [Provisioning logging through the {{site.data.keyword.cloud_notm}} CLI](/docs/log-analysis?topic=log-analysis-provision#provision_cli).
+{: note}
+
+## Step 3. Choose your logging source
 {: #getting-started-step2}
 
-Choose a log resource. Then, complete the get started section:
+Choose a source for your log data. Then, complete the steps:
 
-| Log source | Get started | 
+| Log source | Steps | 
 |------------|-------------|
 | {{site.data.keyword.cloud_notm}} service | [Configuring {{site.data.keyword.cloud_notm}} platform logs](/docs/log-analysis?topic=log-analysis-config_svc_logs) |
 | Standard Kubernetes cluster | [Collecting and analyzing logs from a Kubernetes cluster](/docs/log-analysis?topic=log-analysis-kube#kube) |
-| Linux Ubuntu | [Collecting and analyzing logs from a Linux environment](/docs/log-analysis?topic=log-analysis-ubuntu#ubuntu) |
+| Linux | [Collecting and analyzing logs from a Linux environment](/docs/log-analysis?topic=log-analysis-ubuntu#ubuntu) |
+| Windows Server | [Collecting and analyzing logs from Windows Server systems](/docs/log-analysis?topic=log-analysis-windows_serv) |
 | Cloud Foundry `[1]` | [Collecting and analyzing logs from Cloud Foundry  resources](/docs/log-analysis?topic=log-analysis-monitor_cfapp_logs) |
 {: caption="Table 1. Tutorials to get started working with the {{site.data.keyword.la_full_notm}} service" caption-side="top"}
 
