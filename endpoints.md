@@ -148,17 +148,17 @@ The following table shows the logging web UI endpoints:
 
 | Location                 | Region                   |  Public Endpoint                                   |
 |--------------------------|--------------------------|----------------------------------------------------|
-| `Asia Pacific`           | `Chennai (in-che)`       | `https://app.in-che.logging.cloud.ibm.com`       |
+| `Asia Pacific`           | `Chennai (in-che)`       | `https://app.in-che.logging.cloud.ibm.com`         |
 | `Asia Pacific`           | `Osaka (jp-osa)`         | `https://app.jp-osa.logging.cloud.ibm.com`         |
 | `Asia Pacific`           | `Seoul (kr-seo)`         | `https://app.kr-seo.logging.cloud.ibm.com`         |
 | `Asia Pacific`           | `Sydney (au-syd)`        | `https://app.au-syd.logging.cloud.ibm.com`         |
 | `Asia Pacific`           | `Tokyo (jp-tok)`         | `https://app.jp-tok.logging.cloud.ibm.com`         |
 | `North America`          | `Dallas (us-south)`      | `https://app.us-south.logging.cloud.ibm.com`       |
-| `North America`          | `Washington DC (us-east)`   | `https://app.us-east.logging.cloud.ibm.com`        |
-| `North America`          | `Toronto (ca-tor)`       | `https://app.ca-tor.logging.cloud.ibm.com`        |
-| `South America`          | `Sao Paulo (br-sao)`     | `https://app.br-sao.logging.cloud.ibm.com`       |
-| `Europe`                 | `Frankfurt (eu-de)`      | `https://app.eu-de.logging.cloud.ibm.com`         |
-| `Europe`                 | `London (eu-gb)`         | `https://app.eu-gb.logging.cloud.ibm.com`         |
+| `North America`          | `Washington DC (us-east)`| `https://app.us-east.logging.cloud.ibm.com`        |
+| `North America`          | `Toronto (ca-tor)`       | `https://app.ca-tor.logging.cloud.ibm.com`         |
+| `South America`          | `Sao Paulo (br-sao)`     | `https://app.br-sao.logging.cloud.ibm.com`         |
+| `Europe`                 | `Frankfurt (eu-de)`      | `https://app.eu-de.logging.cloud.ibm.com`          |
+| `Europe`                 | `London (eu-gb)`         | `https://app.eu-gb.logging.cloud.ibm.com`          |
 {: caption="Table 5. Lists of UI endpoints" caption-side="top"}
 
 
