@@ -16,13 +16,13 @@ subcollection: log-analysis
 # Managing usage quotas
 {: #control_usage_quotas}
 
-In {{site.data.keyword_la_full}}, you can use the *Usage Quota* settings to control how much data is stored so you can manage your data cost while still being able to view and retain the data you need.  
+In {{site.data.keyword.la_full}}, you can use the *Usage Quota* settings to control how much data is stored so you can manage your data cost while still being able to view and retain the data you need.  
 {: shortdesc}
 
 ## What are usage quotas?
 {: #about_usage_quotas}
 
-You can use the *Usage Quotas* feature to set daily or monthly thresholds for the volume of log files that are to be stored.  When the threshold is exceeded, {{site.data.keyword_la_full}} will take the actions you configure.
+You can use the *Usage Quotas* feature to set daily or monthly thresholds for the volume of log files that are to be stored.  When the threshold is exceeded, {{site.data.keyword.la_full_notm}} will take the actions you configure.
 
 You can configure the system to:
 
@@ -81,12 +81,11 @@ The Usage Quotas option is in the left-pane of the LogDNA application, under **S
 
 2. Click the **Menu** icon ![Menu icon](../icons/icon_hamburger.svg) &gt; **Observability**. 
 
-3. Select **Activity Tracker**. 
+3. Select **Logging**. 
 
-    The list of {{site.data.keyword_la_full_notm}} instances is displayed.
+    The list of {{site.data.keyword.la_full_notm}} instances is displayed.
 
-    There is 1 instance per region.
-    {: important}
+
 
 4. Select the instance in the region where you want to view events. Then, click **Open Dashboard**.
 
@@ -118,6 +117,9 @@ To change the daily and monthly quotas, do the following:
 
    If logs are not being saved they will still be available for live tail and alerting.
 
+   Verify all conditions and exclusion rules when selecting these options.  Selecting these options will result in logs being discarded and not saved for searching, archiving, or streaming.
+   {: important}
+
 4. Click **Apply** to save your changes.
 
 ### Configuring usage quota exclusion rules
@@ -127,7 +129,7 @@ If you want to take action prior to daily or monthly quota being reached, you ca
 
 These exclusion rules will allow you to discard specific non-critial logs before reaching the hard quota threshold.  
 
-For example, if the daily usage quote is 2 GB and your set an exclusion rule for 50%, {{site.data.keyword_la_full_notm}} will apply the configured exclusion rule and no longer retain logs from the sources, apps, hosts, or queries specified in the rule. 
+For example, if the daily usage quote is 2 GB and your set an exclusion rule for 50%, {{site.data.keyword.la_full_notm}} will apply the configured exclusion rule and no longer retain logs from the sources, apps, hosts, or queries specified in the rule. 
 
 You can specify up to 5 daily exclusion rules and 5 monthly exclusion rules.
 {: note}
@@ -136,6 +138,9 @@ You can specify up to 5 daily exclusion rules and 5 monthly exclusion rules.
 {: #daily_usage_quota}
 
 To specify a daily exclusion rule, do the following from the *Usage Quotas* dialog:
+
+Verify that each exclusion rule that you add behaves as expected. Inproperly configured exclusion rules can result in data and cost spikes.
+{: important}
 
 1. In the **Triggered Exclusion Rules** section click **Add daily rule**.
 
@@ -158,6 +163,9 @@ To specify a daily exclusion rule, do the following from the *Usage Quotas* dial
 {: #monthly_usage_quota}
 
 To specify a monthly exclusion rule, do the following from the *Usage Quotas* dialog:
+
+Verify that each exclusion rule that you add behaves as expected. Inproperly configured exclusion rules can result in data and cost spikes.
+{: important}
 
 1. In the **Triggered Exclusion Rules** section click **Add monthly rule**.
 

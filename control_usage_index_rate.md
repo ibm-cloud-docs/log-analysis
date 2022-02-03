@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2022
-lastupdated: "2022-02-01"
+lastupdated: "2022-02-03"
 
 keywords: IBM Cloud, Log Analysis, auditing, index alerts, spike protection
 
@@ -16,7 +16,7 @@ subcollection: log-analysis
 # Managing volume spike protection and costs
 {: #control_usage_index_rate}
 
-Configure index rates alerts in your {{site.data.keyword_la_full}} instance to monitor and be alerted of unexpected spikes in your data volumes. Use the index rate to analyze and predict costs associated with storage of searchable data.
+Configure index rates alerts in your {{site.data.keyword.la_full}} instance to monitor and be alerted of unexpected spikes in your data volumes. Use the index rate to analyze and predict costs associated with storage of searchable data.
 {: shortdesc}
 
 Index rates are calculated based on data that is ingested over the last 30 days and collected in 5 minute intervals. 
@@ -56,6 +56,7 @@ The `max lines threshold` indicates the maximum number of lines per second that 
 
 If no log lines are ingested for over a 60-minute period, you get a **Check Later** message instead of the index rate value. When the ingestion of log lines is resumed, you get the index rate value. Measurements are taken every five minutes, therefore, the first measurement of ingested log lines for that five minutes will be averaged out for the full hour. Wait at least 1 hour before using the index rate value for analysis.
 
+Only one alert for each alert channel will be sent until the hour or day has elapsed.  This alert will show all thresholds that have been exceeded during the period. If index rate alerts are configured on each separate threshold, an alert will be sent indicating the first threshold crossed (either `Max lines/s`, `Max z-score`, or both). 
 
 ## Types of index rate alerts
 {: #control_usage_index_rate_type}
@@ -75,7 +76,7 @@ There are two types of index rate alerts:
 
     - The baseline value is calculated using data from the last 30 days.
 
-    - After you provision an instance, you must wait a minimum of 30 days of data that has been indexed to use this feature.
+    After you provision an instance, you must wait a minimum of 30 days of data that has been indexed to use this feature.
     {: note}
 
     - Each z-score represents 1 standard deviation that is based on the distribution of index rates as seen over the past 30 days. 
@@ -86,7 +87,8 @@ There are two types of index rate alerts:
 
         5 indicates a spike of data that requires quick action such as defining exclusion rules while you find out what source and app are causing a spike of data.
 
-
+    Setting a maximum of 3 standard deviations is a good starting point for alert triggering.  You can then refine your alerting based on your needs.
+    {: note}
 
 ## Launch the index rate alert page
 {: #control_usage_index_rate_launch}
