@@ -18,6 +18,8 @@ subcollection: log-analysis
 The logging agent is responsible for collecting and forwarding logs to your {{site.data.keyword.la_full_notm}} instance. After you provision an instance of {{site.data.keyword.la_full}}, you must configure a logging agent for each log source that you want to monitor.
 {: shortdesc}
 
+These instructions are for Ubuntu or Debian Linux systems but can be used for other Linux systems.
+{: note}
 
 To configure your Ubuntu server to send logs to your {{site.data.keyword.la_full_notm}} instance, you must install a `logging-agent`. The logging agent reads log files from */var/log*, and forwards the log data to your logging instance.
 

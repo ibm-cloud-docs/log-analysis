@@ -129,6 +129,8 @@ Complete the following steps to add tags to a cluster:
 ## Adding tags to logs from Linux Ubuntu or Debian
 {: #adding_tags_linux}
 
+These instructions are for Ubuntu or Debian Linux systems but can be used for other Linux systems.
+{: note}
 
 Complete the following steps to add more tags to the logging agent:
 

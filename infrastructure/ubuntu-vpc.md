@@ -8,6 +8,10 @@ keywords: IBM, Log Analysis, logging, ubuntu, tutorial
 
 subcollection: log-analysis
 
+content-type: tutorial
+account-plan: lite
+completion-time: 1h
+
 ---
 
 {{site.data.keyword.attribute-definition-list}}
@@ -15,9 +19,14 @@ subcollection: log-analysis
 
 # Logging with Linux VPC server instances
 {: #ubuntu}
+{: toc-content-type="tutorial"} 
+{: toc-completion-time="1h"}
 
 Use the {{site.data.keyword.la_full}} service to monitor and manage logs from a Linux VPC server instance in a centralized logging system on the {{site.data.keyword.cloud_notm}}. 
 {: shortdesc}
+
+These instructions are for Ubuntu Linux systems but can be used for other Linux systems.
+{: note}
 
 You can collect and monitor system and application logs. 
 
@@ -52,14 +61,15 @@ Your {{site.data.keyword.IBM_notm}}ID must have assigned IAM policies for each o
 
 | Resource                             | Scope of the access policy | Role    | Region    | Information                  |
 |--------------------------------------|----------------------------|---------|-----------|------------------------------|
-| Resource group **default**           |  Resource group            | Viewer  | `us-south`  | This policy is required to allow the user to see service instances in the Default resource group.    |
+| Resource group **default**           |  Resource group            | Viewer  | us-south  | This policy is required to allow the user to see service instances in the Default resource group.    |
 | {{site.data.keyword.la_full_notm}} service |  Resource group            | Editor  | us-south  | This policy is required to allow the user to provision and administer the {{site.data.keyword.la_full_notm}} service in the default resource group.   |
 {: caption="Table 1. List of IAM policies required to complete the tutorial" caption-side="top"} 
 
 The {{site.data.keyword.cloud_notm}} CLI must be installed. For more information, see [Installing the {{site.data.keyword.cloud_notm}} CLI](/docs/cli?topic=cli-install-ibmcloud-cli).
 
-## Step 1. Provision an Ubuntu Linux VPC server instance
+## Provision an Ubuntu Linux VPC server instance
 {: #ubuntu_step1}
+{: step}
 
 If you have an existing Ubuntu Linux virtual server instance you want to monitor, you can skip this step.
 
@@ -67,8 +77,9 @@ If you have an existing Ubuntu Linux virtual server instance you want to monitor
 
 2. If you don't have an Ubuntu Linux virtual server instance, [create an Ubuntu Linux virtual server instance by using the UI and selecting **Ubuntu Linux** as the **Operating System**](https://cloud.ibm.com/docs/vpc?topic=vpc-creating-virtual-servers).
 
-## Step 2. Provision an {{site.data.keyword.la_full_notm}} instance
+## Provision an {{site.data.keyword.la_full_notm}} instance
 {: #ubuntu_step2}
+{: step}
 
 To provision an instance of {{site.data.keyword.la_full_notm}} through the {{site.data.keyword.cloud_notm}} UI, complete the following steps:
 
@@ -106,8 +117,9 @@ To provision an instance of logging through the CLI, see [Provisioning logging t
 {: note}
 
 
-## Step 3. Configure your Ubuntu server to send logs to your instance
+## Configure your Ubuntu server to send logs to your instance
 {: #ubuntu_step3}
+{: step}
 
 To configure your Ubuntu server to send logs to your {{site.data.keyword.la_full_notm}} instance, you must install a `logging-agent`. The logging agent reads log files from `/var/log` or other directories you specify, and forwards the log data to your logging instance.
 
@@ -198,8 +210,10 @@ To configure your Ubuntu server to forward logs to your logging instance, comple
 
 You can use the `/var/log/logdna-agent.log` log to determine if there are any issues with your `logdna-agent` installation.
 
-## Step 4. Launch the logging Web UI
+
+## Launch the logging Web UI
 {: #ubuntu_step4}
+{: step}
 
 To launch the {{site.data.keyword.la_full_notm}} dashboard from the {{site.data.keyword.cloud_notm}} UI, complete the following steps:
 
@@ -220,8 +234,9 @@ To launch the {{site.data.keyword.la_full_notm}} dashboard from the {{site.data.
    The logging Web UI opens and displays your cluster logs.
 
 
-## Step 5. View your logs
+## View your logs
 {: #ubuntu_step5}
+{: step}
 
 From the logging Web UI, you can view your logs as they pass through the system. You view logs by using log tailing. 
 
