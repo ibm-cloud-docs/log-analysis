@@ -18,6 +18,21 @@ subcollection: log-analysis
 Use these release notes to learn about the latest updates to {{site.data.keyword.la_full}}.  
 {: shortdesc}
 
+## 7 February 2022
+{: #log-analysis-feb0722}
+
+Changes to Tokyo syslog IP addresses
+:   The [IP addresses used for the `syslog-a.jp-tok.logging.cloud.ibm.com` endpoint](/docs/log-analysis?topic=log-analysis-endpoints#endpoints_syslog) have changed. If your service is configured to use specific IP addresses or firewall to a specific IP address, then modification to the new IP addresses will be required. 
+
+## 31 January 2022
+{: #log-analysis-jan3122}
+
+Index rate analysis to alert on unexpected data volume spikes
+:   You can configure index rates alerts in your {{site.data.keyword.la_full_notm}} instance to monitor and be alerted of unexpected spikes in your data volumes. Use the index rate to analyze and predict costs associated with storage of searchable data.  [Learn more about index rate analysis](/docs/log-analysis?topic=log-analysis-control_usage_index_rate).
+
+Managing and limiting data usage
+:   In your {{site.data.keyword.la_full_notm}} instance, you can use the usage quota settings to control how much data is stored so you can manage your data cost while still being able to view and retain the data you need.  [Learn more about usage quotas](/docs/log-analysis?topic=log-analysis-control_usage_quotas).
+
 ## 4 October 2021
 {: #log-analysis-oct0421}
 
