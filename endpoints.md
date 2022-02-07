@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2022
-lastupdated: "2021-11-23"
+lastupdated: "2021-02-07"
 
 keywords: IBM, Log Analysis, logging, endpoints
 
@@ -179,7 +179,7 @@ The following table shows the syslog endpoints:
 | `Frankfurt (eu-de)`      | `syslog://syslog-a.eu-de.logging.cloud.ibm.com`    | 149.81.108.28  \n 161.156.78.138  \n 158.177.157.70 |
 | `London (eu-gb)`         | `syslog://syslog-a.eu-gb.logging.cloud.ibm.com`    | 141.125.102.148  \n 158.175.113.22  \n 158.176.163.115 |
 | `Osaka (jp-osa)`         | `syslog://syslog-a.jp-osa.logging.cloud.ibm.com`   | 163.73.68.45  \n 163.69.67.210  \n 163.68.72.220 |
-| `Tokyo (jp-tok)`         | `syslog://syslog-a.jp-tok.logging.cloud.ibm.com`   | 169.56.11.251  \n 165.192.100.77  \n 128.168.107.245 |
+| `Tokyo (jp-tok)`         | `syslog://syslog-a.jp-tok.logging.cloud.ibm.com`   | 128.168.95.2  \n 161.202.248.162  \n 165.192.100.77 |
 | `Toronto (ca-tor)`       | `syslog://syslog-a.ca-tor.logging.cloud.ibm.com`   | 163.75.66.13  \n 169.53.186.154  \n 163.74.69.234 |
 | `Seoul (kr-seo)`         | `syslog://syslog-a.kr-seo.logging.cloud.ibm.com`   | 169.56.98.139 |
 | `Sydney (au-syd)`        | `syslog://syslog-a.au-syd.logging.cloud.ibm.com`   | 168.1.202.76  \n 135.90.92.254  \n 130.198.1.210 |
