@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2022
-lastupdated: "2022-02-01"
+lastupdated: "2022-02-07"
 
 keywords: IBM Cloud, Log Analysis, usage, usage quotas
 
@@ -79,7 +79,7 @@ The Usage Quotas option is in the left-pane of the LogDNA application, under **S
 
 	After you log in with your user ID and password, the {{site.data.keyword.cloud_notm}} dashboard opens.
 
-2. Click the **Menu** icon ![Menu icon](../icons/icon_hamburger.svg) &gt; **Observability**. 
+2. Click the **Menu** icon ![Menu icon](../../icons/icon_hamburger.svg) &gt; **Observability**. 
 
 3. Select **Logging**. 
 
@@ -89,7 +89,7 @@ The Usage Quotas option is in the left-pane of the LogDNA application, under **S
 
 4. Select the instance in the region where you want to view events. Then, click **Open Dashboard**.
 
-5. In the web UI, click the **Settings** icon ![Settings icon](images/admin.png "Admin icon") &gt; **Usage** &gt; **Usage Quotas**.
+5. In the web UI, click the **Settings** icon ![Settings icon](../images/admin.png "Admin icon") &gt; **Usage** &gt; **Usage Quotas**.
 
 ### Enabling and disabling Usage Quotas
 {: #enable_disable_usage_quotas}
@@ -139,7 +139,7 @@ You can specify up to 5 daily exclusion rules and 5 monthly exclusion rules.
 
 To specify a daily exclusion rule, do the following from the *Usage Quotas* dialog:
 
-Verify that each exclusion rule that you add behaves as expected. Inproperly configured exclusion rules can result in data and cost spikes.
+Verify that each exclusion rule that you add behaves as expected. Improper configured exclusion rules can result in storing data not intended for storage.
 {: important}
 
 1. In the **Triggered Exclusion Rules** section click **Add daily rule**.
@@ -159,12 +159,15 @@ Verify that each exclusion rule that you add behaves as expected. Inproperly con
 
 7. Click **Apply** to save the exclusion rule.
 
+    Check the query in a custom view by entering the search criteria in the search bar of the *Everything* view, and validating that the data that is displayed is the data that you want excluded.
+    {: tip} 
+
 #### Monthly exclusion rules
 {: #monthly_usage_quota}
 
 To specify a monthly exclusion rule, do the following from the *Usage Quotas* dialog:
 
-Verify that each exclusion rule that you add behaves as expected. Inproperly configured exclusion rules can result in data and cost spikes.
+Verify that each exclusion rule that you add behaves as expected. Improper configured exclusion rules can result in storing data not intended for storage.
 {: important}
 
 1. In the **Triggered Exclusion Rules** section click **Add monthly rule**.
@@ -184,12 +187,15 @@ Verify that each exclusion rule that you add behaves as expected. Inproperly con
 
 7. Click **Apply** to save the exclusion rule.
 
+    Check the query in a custom view by entering the search criteria in the search bar of the *Everything* view, and validating that the data that is displayed is the data that you want excluded.
+    {: tip} 
+
 #### Enable and disabling exclusion rules
 {: #enable_usage_rules}
 
 Toggle the selection next to the exclusion rules to enable or disable the rule.
 
-![Example switch to enable or disable exclusion rule](images/usage_quota_rule_switch.png "Example switch to enable or disable exclusion rule"){: caption="Figure 1. Example switch showing exclusion rule is enabled" caption-side="bottom"}
+![Example switch to enable or disable exclusion rule](../images/usage_quota_rule_switch.png "Example switch to enable or disable exclusion rule"){: caption="Figure 1. Example switch showing exclusion rule is enabled" caption-side="bottom"}
 
 #### Editing exclusion rules
 {: #editing_usage_rules}

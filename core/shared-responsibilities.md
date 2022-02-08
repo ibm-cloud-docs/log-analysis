@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018, 2022
-lastupdated: "2021-03-28"
+lastupdated: "2022-02-07"
 
 keywords: IBM Cloud, Log Analysis, logging, customer responsibilities, IBM responsibilities, terms and conditions
 
@@ -33,6 +33,7 @@ Review the following sections for the specific responsibilities for you and for 
 | `Monitor platform logs`  | [Participating Cloud services](/docs/log-analysis?topic=log-analysis-cloud_services) publish relevant log data to their subscribing clients. {{site.data.keyword.la_full_notm}} provides clients with the ability to receive the logs once the client configures their instance. | [Create an {{site.data.keyword.la_full_notm}} instance](/docs/log-analysis?topic=log-analysis-provision) in each region where Cloud service subscriptions publish logs.  \n [Configure 1 instance in each of those regions to received the published logs](/docs/log-analysis?topic=log-analysis-config_svc_logs). |
 | `Monitor logs collected by logging agents`   | Provide images and instructions for how to install logging agents in environments that you want to monitor, such as Kubernetes, Linux, Openshift. | [Install and configure logging agents](/docs/log-analysis?topic=log-analysis-config_agent_kube_cluster).  \n Monitor that the agents are running in your environment. |
 | `Archive logs`  | Provide the ablity to archive to a client configured Cloud Object Storage (COS) location and archive data hourly. | [Configure Cloud Object Storage per your requirements.](/docs/log-analysis?topic=log-analysis-archiving#archiving_step3)  \n [Enable archiving of the logging instance.](/docs/log-analysis?topic=log-analysis-archiving) |
+| `Configuring exclusion rules for {{site.data.keyword.atracker_short}} hosted event search offerings` |  | Verify that each exclusion rule that you add behaves as expected. Inproper configured exclusion rules can result in data and cost spikes. For more information on how to use exclusion rules, see [Excluding data by using exclusion rules](/docs/log-analysis?topic=log-analysis-exclusion_rules), [Configuring conditional streaming](/docs/log-analysis?topic=log-analysis-streaming-conditional) and [Configuring usage quota exclusion rules](/docs/log-analysis?topic=log-analysis-control_usage_quotas#rules_usage_quota). |
 {: caption="Table 1. Responsibilities for incident and operations" caption-side="top"}
 
 
