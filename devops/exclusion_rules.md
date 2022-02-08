@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2022
-lastupdated: "2021-03-28"
+lastupdated: "2022-02-07"
 
 keywords: IBM, Log Analysis, logging, config agent
 
@@ -20,6 +20,9 @@ In an {{site.data.keyword.la_full_notm}} instance, you can configure exclusion r
 
 
 Complete the following steps to define an exclusion rule:
+
+Verify that each exclusion rule that you add behaves as expected. Improper configured exclusion rules can result in storing data not intended for storage.
+{: important}
 
 1. [Launch the {{site.data.keyword.la_full_notm}} web UI](/docs/log-analysis?topic=log-analysis-view_logs#view_logs_step2).
 
@@ -42,6 +45,11 @@ Complete the following steps to define an exclusion rule:
 6. Select **Preserve these lines for live-tail and alerting ** to show through the live tail the log lines that are excluded. Notice that you can still use these log lines to set up an alert.
 
 7. Click **Save**.
+
+8. After you configure an exclusion rule, verify that the exclusion rule behaves as you expect.
+
+    Check the query in a custom view by entering the search criteria in the search bar of the *Everything* view, and validating that the data that is displayed is the data that you want excluded.
+    {: tip} 
 
 
 ## Sample 1: Exclude syslog data for a worker while keeping entries that report errors only
@@ -73,7 +81,8 @@ Prereq: You must have a cluster configured to forward logs to a logging instance
 
 7. Click **Save**.
 
-
+    Check the query in a custom view by entering the search criteria in the search bar of the *Everything* view, and validating that the data that is displayed is the data that you want excluded.
+    {: tip} 
 
 
 ## Sample 2: Exclude kube-system data from the cluster while keeping entries that report errors only
@@ -101,4 +110,5 @@ Prereq: You must have a cluster configured to forward logs to a logging instance
 
 7. Click **Save**.
 
-
+    Check the query in a custom view by entering the search criteria in the search bar of the *Everything* view, and validating that the data that is displayed is the data that you want excluded.
+    {: tip} 
