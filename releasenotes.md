@@ -18,8 +18,8 @@ subcollection: log-analysis
 Use these release notes to learn about the latest updates to {{site.data.keyword.la_full}}.  
 {: shortdesc}
 
-## 7 February 2022
-{: #log-analysis-feb0722}
+## 3 February 2022
+{: #log-analysis-feb0322}
 
 Changes to Tokyo syslog IP addresses
 :   The [IP addresses used for the `syslog-a.jp-tok.logging.cloud.ibm.com` endpoint](/docs/log-analysis?topic=log-analysis-endpoints#endpoints_syslog) have changed. If your service is configured to use specific IP addresses or firewall to a specific IP address, then modification to the new IP addresses will be required. 
