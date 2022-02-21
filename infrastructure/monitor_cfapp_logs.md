@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2022
-lastupdated: "2021-03-28"
+lastupdated: "2022-02-21"
 
 keywords: IBM, Log Analysis, logging, Cloud Foundry
 
@@ -97,6 +97,9 @@ You have different options to collect and forward logs to an instance of the {{s
 * You can configure 1 instance of the {{site.data.keyword.la_full_notm}} service per region with the flag **service platform logs**. This instance collects infrastructure and application logs for any Cloud Foundry apps that run on that same region.
 * You can configure a custom user provided service (CUPS) for each Cloud Foundry app that you want to monitor through a custom {{site.data.keyword.la_full_notm}} instance. The CUPS service sends logs via a syslog link to a logging syslog endpoint and port. This option is only available if the Cloud Foundry app send logs to STDOUT and STDERR. If the Cloud Foundry app is configured to send logs via syslog and not to STDOUT and STDERR, this option is not supported.
 
+If you choose to send your Cloud Foundry logs by configuring a custom user provided (CUPS) service for your app, you must enable a port to send logs via syslog to your logging instance. If you are using (a) the classic syslog protocol, (b) a custom port in `syslog-ng`, or (c) a custom port in `rsyslog`, there is no authentication available and anyone with knowledge of the endpoint can submit logs to your instance.  Depending on your environment, this may present a significant security risk. Use these configurations at your organization’s own risk.  Validate with your compliance and security teams whether this security risk is acceptable to your organization. 
+{: important}
+
 | Comparison                                    | Through the logging instance that hosts service platform logs in a region | Through a custom logging instance by using Syslog drains       |
 |:----------------------------------------------|:--------------------------------------------------------------:|:--------------------------------------------------:|
 | `Automatic collection of infrastructure logs` | ![Checkmark icon](../images/checkmark-icon.svg)              | `NO`                                               |
@@ -131,6 +134,9 @@ To configure an instance from the Observability dashboard in the {{site.data.key
 {: #monitor_cfapp_logs_drains}
 
 You can configure a Cloud Foundry (CF) application, running in the {{site.data.keyword.cloud_notm}} or outside the {{site.data.keyword.cloud_notm}}, to stream application logs to an instance of the the {{site.data.keyword.la_full_notm}} service. You can configure a secure connection or a TLS connection between the Cloud Foundry app and the logging instance.
+
+If you choose to send your Cloud Foundry logs by configuring a custom user provided (CUPS) service for your app, you must enable a port to send logs via syslog to your logging instance. If you are using (a) the classic syslog protocol, (b) a custom port in `syslog-ng`, or (c) a custom port in `rsyslog`, there is no authentication available and anyone with knowledge of the endpoint can submit logs to your instance. As a result, depending on your environment, your use of the classic syslog protocol or custom port configurations with `syslog-ng` or `rsyslog` may present a significant security risk.  Use these configurations at your organization's own risk.  Validate with your compliance and security teams whether this security risk is acceptable to your organization.
+{: important}
 
 To send Cloud Foundry logs to a {{site.data.keyword.la_short}} instance, consider the following information:
 * In the {{site.data.keyword.la_short}} instance, you must provision a syslog port in the logging instance where you want to forward logs. 
