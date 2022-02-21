@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2022
-lastupdated: "2021-11-10"
+lastupdated: "2022-02-21"
 
 keywords: IBM, Log Analysis, logging, windows, tutorial
 
@@ -28,6 +28,9 @@ Use the {{site.data.keyword.la_full}} service to monitor and manage logs from a 
 You can collect and monitor system and application logs. 
 
 NXLog is used to provide log files to {{site.data.keyword.la_full}}.  
+
+To configure NXLog, you must enable a port to send logs via syslog to your logging instance. If you are using (a) the classic syslog protocol, (b) a custom port in `syslog-ng`, or (c) a custom port in `rsyslog`, there is no authentication available and anyone with knowledge of the endpoint can submit logs to your instance. As a result, depending on your environment, your use of the classic syslog protocol or custom port configurations with `syslog-ng` or `rsyslog` may present a significant security risk.  Use these configurations at your organization's own risk.  Validate with your compliance and security teams whether this security risk is acceptable to your organization.
+{: important}
 
 By default, NXLog monitors log files in the `C:\\ProgramData\\logs` directory. 
 

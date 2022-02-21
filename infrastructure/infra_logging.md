@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2022
-lastupdated: "2021-11-11"
+lastupdated: "2022-02-21"
 
 keywords: IBM, Log Analysis, logging, infrastructure
 
@@ -74,6 +74,9 @@ To configure cluster-level logging for a Kubernetes cluster, you must complete t
 
 ![Log Analysis component overview on the {{site.data.keyword.cloud_notm}}](../images/kube.png "Log Analysis component overview on the {{site.data.keyword.cloud_notm}}"){: caption="Log Analysis component overview on the {{site.data.keyword.cloud_notm}} for Kubernetes" caption-side="bottom"}
 
+If you choose to send your Cloud Foundry logs by configuring a custom user provided (CUPS) service for your app, you must enable a port to send logs via syslog to your logging instance. If you are using (a) the classic syslog protocol, (b) a custom port in syslog-ng, or (c) a custom port in rsyslog, there is no authentication available and anyone with knowledge of the endpoint can submit logs to your instance. As a result, depending on your environment, your use of the classic syslog protocol or custom port configurations with `syslog-ng` or `rsyslog` may present a significant security risk.  Use these configurations at your organization's own risk.  Validate with your compliance and security teams whether this security risk is acceptable to your organization.
+{: important}
+
 For more information, see [Logging with Kubernetes clusters](/docs/log-analysis?topic=log-analysis-kube).
 
 
@@ -119,6 +122,9 @@ For more information, see [Logging with Linux VPC server instances](/docs/log-an
 
 You can send logs to an {{site.data.keyword.la_full_notm}} instance via Syslog. TCP and TCP+TLS are both supported.
 
+To configure syslog, you must enable a port to send logs via syslog to your logging instance. If you are using (a) the classic syslog protocol, (b) a custom port in syslog-ng, or (c) a custom port in rsyslog, there is no authentication available and anyone with knowledge of the endpoint can submit logs to your instance.  Depending on your environment, this may present a significant security risk. Use these configurations at your organization’s own risk.  Validate with your compliance and security teams whether this security risk is acceptable to your organization. 
+{: important}
+
 To use a custom port to send logs via UDP, you can open an IBM support ticket. For information about opening an IBM support ticket, or about support levels and ticket severities, see [Getting support](/docs/get-support).
 
 For more information on using Syslog, see [Logging with Syslog](/docs/log-analysis?topic=log-analysis-syslog).
@@ -129,6 +135,9 @@ For more information on using Syslog, see [Logging with Syslog](/docs/log-analys
 You can use the {{site.data.keyword.la_full}} service to monitor and manage logs from Windows systems.
 
 NXLog is used to provide log files to {{site.data.keyword.la_full}}.  
+
+To configure NXLog, you must enable a port to send logs via syslog to your logging instance. If you are using (a) the classic syslog protocol, (b) a custom port in `syslog-ng`, or (c) a custom port in `rsyslog`, there is no authentication available and anyone with knowledge of the endpoint can submit logs to your instance. As a result, depending on your environment, your use of the classic syslog protocol or custom port configurations with `syslog-ng` or `rsyslog` may present a significant security risk.  Use these configurations at your organization's own risk.  Validate with your compliance and security teams whether this security risk is acceptable to your organization.
+{: important}
 
 By default, NXLog monitors log files in the `C:\\ProgramData\\logs` directory. 
 
