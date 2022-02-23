@@ -45,7 +45,7 @@ The following changes were made:
 ### London (eu-gb)
 {: #service-ip-changes-london}
 
-| London IP address                                     | Original IP addresses                                      | New IP addresses |
+| London IP addresses                                     | Original IP addresses                                      | New IP addresses |
 |----------------------------------------------------|-----------------------------------------------------------|-------------------------------------------|
 | `logs.eu-gb.logging.cloud.ibm.com`                 | 158.175.125.165  \n 158.176.135.133  \n 141.125.78.186  | 158.176.163.117  \n 158.175.113.18  \n 141.125.102.149 |
 | `logs.private.eu-gb.logging.cloud.ibm.com`         | 166.9.36.3  \n 166.9.34.4  \n 166.9.38.5                | No change |
