@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018, 2022
-lastupdated: "2022-02-03"
+lastupdated: "2022-03-24"
 
 keywords: Log Analysis release notes
 
@@ -17,6 +17,18 @@ subcollection: log-analysis
 
 Use these release notes to learn about the latest updates to {{site.data.keyword.la_full}}.  
 {: shortdesc}
+
+## 24 March 2022
+{: #log-analysis-mar2422}
+
+Ability to limit access to private endpoints only
+:   You can limit access to an {{site.data.keyword.la_full}} instance to private endpoints only.    [Learn more](/docs/log-analysis?topic=log-analysis-private_endpoints_only).
+
+## 11 February 2022
+{: #log-analysis-feb1122}
+
+Support for syslog private endpoints
+:   {{site.data.keyword.la_full_notm}} now supports syslog private endoints.  [Learn more about syslog private endpoints](/docs/log-analysis?topic=log-analysis-endpoints#endpoints_syslog_private_endpoints).
 
 ## 3 February 2022
 {: #log-analysis-feb0322}
