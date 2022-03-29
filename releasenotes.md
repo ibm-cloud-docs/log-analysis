@@ -22,24 +22,28 @@ Use these release notes to learn about the latest updates to {{site.data.keyword
 
 ## 24 March 2022
 {: #log-analysis-mar2422}
+{: release-note}
 
 Ability to limit access to private endpoints only
 :   You can limit access to an {{site.data.keyword.la_full}} instance to private endpoints only.    [Learn more](/docs/log-analysis?topic=log-analysis-private_endpoints_only).
 
 ## 11 February 2022
 {: #log-analysis-feb1122}
+{: release-note}
 
 Support for syslog private endpoints
 :   {{site.data.keyword.la_full_notm}} now supports syslog private endoints.  [Learn more about syslog private endpoints](/docs/log-analysis?topic=log-analysis-endpoints#endpoints_syslog_private_endpoints).
 
 ## 3 February 2022
 {: #log-analysis-feb0322}
+{: release-note}
 
 Changes to Tokyo syslog IP addresses
 :   The [IP addresses used for the `syslog-a.jp-tok.logging.cloud.ibm.com` endpoint](/docs/log-analysis?topic=log-analysis-endpoints#endpoints_syslog) have changed. If your service is configured to use specific IP addresses or firewall to a specific IP address, then modification to the new IP addresses will be required. 
 
 ## 31 January 2022
 {: #log-analysis-jan3122}
+{: release-note}
 
 Index rate analysis to alert on unexpected data volume spikes
 :   You can configure index rates alerts in your {{site.data.keyword.la_full_notm}} instance to monitor and be alerted of unexpected spikes in your data volumes. Use the index rate to analyze and predict costs associated with storage of searchable data.  [Learn more about index rate analysis](/docs/log-analysis?topic=log-analysis-control_usage_index_rate).
@@ -49,30 +53,35 @@ Managing and limiting data usage
 
 ## 4 October 2021
 {: #log-analysis-oct0421}
+{: release-note}
 
 API for archiving
 :   Documentation of API changes supporting archiving is generally available.  [Learn more about the archiving API](https://{DomainName}/apidocs/log-analysis#get-v1-config-archiving){: external}.
 
 ## 30 September 2021
 {: #log-analysis-sep3021}
+{: release-note}
 
 API for data streaming
 :   Documentation of API changes supporting data streaming is generally available.  [Learn more about the streaming API](/apidocs/log-analysis#post-v1-config-stream).
 
 ## 31 August 2021
 {: #log-analysis-aug3121}
+{: release-note}
 
 Support to stream data is generally available
 :   Streaming data from an {{site.data.keyword.la_full_notm}} instance to other corporate tools such as Security Information and Event Management (SIEM) tools is generally available. [Learn more about streaming](/docs/log-analysis?topic=log-analysis-streaming).
 
 ## 2 July 2021
 {: #log-analysis-jul0221}
+{: release-note}
 
 Support to stream data is available in beta
 :   New beta feature released in US-South and Frankfurt to stream data from an {{site.data.keyword.la_full_notm}} instance to other corporate tools such as Security Information and Event Management (SIEM) tools. [Learn more about streaming](/docs/log-analysis?topic=log-analysis-streaming).
 
 ## 31 March 2021
 {: #log-analysis-mar3121}
+{: release-note}
 
 New CLI support
 :   New CLI added that can be used to list instances and export data from an instance. [Learn 
@@ -83,12 +92,14 @@ New API support
 
 ## 31 January 2021
 {: #log-analysis-jan3121}
+{: release-note}
 
 Changes to archiving frequency
 :   Hourly archiving in Chennai, Tokyo, Sydney, Seoul, London, Washington instead of daily archiving. [Learn more](/docs/log-analysis?topic=log-analysis-archiving).
 
 ## 31 December 2020
 {: #log-analysis-dec3120}
+{: release-note}
 
 Addition of configuration support using an API
 :   Configuration support using an API, in addition to configuration using the web UI.
@@ -98,12 +109,14 @@ Terraform support
 
 ## 9 July 2020
 {: #log-analysis-jul0920}
+{: release-note}
 
 HIPPA service plans available
 :   Added support for 30-day search plans for HIPAA workloads.
 
 ## 19 July 2019
 {: #log-analysis-jul1920}
+{: release-note}
 
 Enhanced data residency, compliance, and security
 :   The following support is now available:
