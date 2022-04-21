@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018, 2022
-lastupdated: "2022-03-24"
+lastupdated: "2022-04-21"
 
 keywords: Log Analysis release notes
 
@@ -19,6 +19,13 @@ content-type: release-note
 
 Use these release notes to learn about the latest updates to {{site.data.keyword.la_full}}.  
 {: shortdesc}
+
+## 21 April 2022
+{: #log-analysis-apr2122}
+{: release-note}
+
+Changes to endpoint IP addresses
+:   Several [endpoint IP addresses](/docs/log-analysis?topic=log-analysis-endpoints) have changed. If your service is configured to use specific IP addresses or firewall to a specific IP address, then modification to the new IP addresses will be required.
 
 ## 24 March 2022
 {: #log-analysis-mar2422}
