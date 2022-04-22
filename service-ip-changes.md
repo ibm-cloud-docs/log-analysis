@@ -22,8 +22,8 @@ Endpoints and regions that are not listed are unchanged.
 {: note}
 
 
-## 21 April 2022 changes
-{: #endpoint-changes-21apr2022}
+## 9 May 2022 changes
+{: #endpoint-changes-09May2022}
 
 The following changes were made:
 
