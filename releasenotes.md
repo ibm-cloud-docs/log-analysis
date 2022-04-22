@@ -20,12 +20,12 @@ content-type: release-note
 Use these release notes to learn about the latest updates to {{site.data.keyword.la_full}}.  
 {: shortdesc}
 
-## 21 April 2022
-{: #log-analysis-apr2122}
+## 9 May 2022
+{: #log-analysis-may0922}
 {: release-note}
 
 Changes to endpoint IP addresses
-:   Several [endpoint IP addresses](/docs/log-analysis?topic=log-analysis-endpoints) have changed. If your service is configured to use specific IP addresses or firewall to a specific IP address, then modification to the new IP addresses will be required.
+:   Several [endpoint IP addresses](/docs/log-analysis?topic=log-analysis-endpoints) have changed. If your service is configured to use specific IP addresses or firewall to a specific IP address, then modification to the new IP addresses will be required.  Until 9 May 2022 the [original endpoints are in effect.](/docs/log-analysis?topic=log-analysis-service-ip-changes)
 
 ## 24 March 2022
 {: #log-analysis-mar2422}

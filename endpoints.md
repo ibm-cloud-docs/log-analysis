@@ -18,7 +18,7 @@ subcollection: log-analysis
 Review the connectivity options for interacting with {{site.data.keyword.la_full}}.
 {: shortdesc}
 
-Due to maintenance, {{site.data.keyword.la_full}} makes changes periodically to IPs in some regions. You might need to take action to continue using the service. This topic lists the currently supported endpoints. For a history of endpoint changes, see [Service IP changes](/docs/log-analysis?topic=log-analysis-service-ip-changes).
+Due to maintenance, {{site.data.keyword.la_full}} makes changes periodically to IPs in some regions. You might need to take action to continue using the service. This topic lists the currently supported, or planned to be supported, endpoints. For a history and current status of endpoint changes, see [Service IP changes](/docs/log-analysis?topic=log-analysis-service-ip-changes).
 {: important}
 
 ## Connectivity options
