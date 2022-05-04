@@ -313,6 +313,9 @@ After you save the configuration, logs are archived once a day.
 When the service credential is rotated, make sure the API Key is updated with the new API Key.  Archiving will stop if the API Key is not updated.
 {: important}
 
+If **IP address access** is enabled, the [CIDR blocks {{site.data.keyword.at_short}}](/docs/log-analysis?topic=log-analysis-cidr) needs to be added to the **Allowed IP Address** list in order to save archiving credentials.
+{: important}
+
 ## Next steps
 {: #archiving_next}
 
