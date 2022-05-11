@@ -158,7 +158,7 @@ To provision an instance of {{site.data.keyword.la_full_notm}} through the comma
 
     `NAME` is the name of the instance
 
-    `SERVICE_PLAN_NAME` is the type of plan. Valid values are *lite*, *7-days*, *14-days*, *30-days*.
+    `SERVICE_PLAN_NAME` is the type of plan. Valid values are *lite*, *7-day*, *14-day*, *30-day*.
     
     `LOCATION` is the region where the logging instance is created. To get the latest list of locations that are available for the {{site.data.keyword.la_full_notm}} service, see [Locations](/docs/log-analysis?topic=log-analysis-regions).
 
