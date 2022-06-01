@@ -150,7 +150,6 @@ sudo service logdna-agent status
 {: codeblock}
 
 
-
 ## Appendix. Commands to manage the agent
 {: #config_agent_linux_rpm_cmd} 
 
@@ -207,6 +206,7 @@ journalctl _SYSTEMD_INVOCATION_ID=`systemctl show -p InvocationID --value logdna
 {: codeblock}
 
 ### Delete the agent
+{: #config_agent_linux_rpm_cmd5}
 
 ```text
 yum remove logdna-agent

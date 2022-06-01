@@ -71,6 +71,7 @@ When you define the policy, you need to select a platform role and a service rol
 To manage the {{site.data.keyword.la_full_notm}} service, a user needs the following roles:
 * Platform role: **Viewer**. 
 * Service role: **Reader**. 
+
 [Learn more](/docs/services/log-analysis?topic=log-analysis-iam#iam).
 
 

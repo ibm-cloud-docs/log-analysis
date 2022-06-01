@@ -21,7 +21,7 @@ completion-time: 1h
 # Resetting the ingestion key that is used by a Kubernetes cluster
 {: #kube-reset}
 {: toc-content-type="tutorial"}
-{: toc-services-"containers,log-analysis"} 
+{: toc-services="containers, log-analysis"} 
 {: toc-completion-time="1h"} 
 
 If the ingestion key that you use to forward logs from a cluster to an {{site.data.keyword.la_full_notm}} instance in the {{site.data.keyword.cloud_notm}} is compromised, you must reset the key and update the Kubernetes cluster configuration to use the new ingestion key. 

@@ -107,7 +107,7 @@ The method returns the requested data in JSON format.
 In this case, usage for 2 services has been returned.  The `current_total` value reports the number of ingested lines during the queried time period.  The `percentage_of_total` is the percentage of total lines ingested during the time period by all services.
 
 ## Additional examples
-{: control_usage_examples}
+{: #control_usage_examples}
 
 The following provide additional, specific usage examples.
 

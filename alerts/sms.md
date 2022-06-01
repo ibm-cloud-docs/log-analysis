@@ -2,7 +2,7 @@
 
 copyright:
   years:  2021, 2022
-lastupdated: "2021-17-12"
+lastupdated: "2021-07-12"
 
 keywords: IBM, Log Analysis, PagerDuty
 

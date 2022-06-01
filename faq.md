@@ -56,8 +56,7 @@ To configure archiving see [Archiving events to IBM Cloud Object Storage](/docs/
 {: faq}
 
 To lauch the logging web UI, complete the following steps:
-1. Check that you have IAM permissions to view the logging instances through the *Logging* dashboard. You must have **viewer** platform role permissions for the {{site.data.keyword.la_full_notm}} service. [Learn more about managing IAM policies and access groups](/docs/log-analysis?topic=log-analysis-work_iam)
-.
+1. Check that you have IAM permissions to view the logging instances through the *Logging* dashboard. You must have **viewer** platform role permissions for the {{site.data.keyword.la_full_notm}} service. [Learn more about managing IAM policies and access groups](/docs/log-analysis?topic=log-analysis-work_iam).
 2. [Launch the logging web UI](/docs/log-analysis?topic=log-analysis-launch).
 
 ## How do I reset an ingestion key?
