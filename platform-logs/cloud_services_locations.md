@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2022
-lastupdated: "2021-08-27"
+lastupdated: "2022-06-01"
 
 keywords: IBM, Log Analysis, logging, services
 
@@ -17,7 +17,7 @@ subcollection: log-analysis
 # Cloud services by location
 {: #cloud_services_locations}
 
-List of locations where {{site.data.keyword.cloud_notm}} services are enabled to send logs to {{site.data.keyword.la_full_notm}}. You monitor these logs that you monitor through the {{site.data.keyword.la_short}} instance that is configured to receive platform services logs. [Learn more about enabling service platform logs](/docs/log-analysis?topic=log-analysis-config_svc_logs).
+List of locations where {{site.data.keyword.cloud_notm}} services are enabled to send logs to {{site.data.keyword.la_full}}. You monitor these logs that you monitor through the {{site.data.keyword.la_short}} instance that is configured to receive platform services logs. [Learn more about enabling service platform logs](/docs/log-analysis?topic=log-analysis-config_svc_logs).
 {: shortdesc}
 
 ## Cloud Foundry
@@ -91,50 +91,20 @@ The following table shows the locations where automatic collection of Cloud Foun
 {: class="simple-tab-table"}
 {: row-headers}
 
-
-
 ## Container services
 {: #cs_locations_container}
 
-You can choose the logging instance where you want to collect {{site.data.keyword.containerlong}} service logs.
+{{site.data.keyword.registrylong_notm}}
+:   {{site.data.keyword.registrylong_notm}} generates platform services logs that are displayed in your logging instances. For informataion about the locations where the automatic collection of {{site.data.keyword.registryshort_notm}} service logs is enabled, see [Analyzing logs for {{site.data.keyword.registryshort_notm}}](/docs/Registry?topic=Registry-registry_logs#registry_logs_locations).
 
-You can choose the logging instance where you want to collect {{site.data.keyword.openshiftlong}} service logs.
+{{site.data.keyword.containerlong_notm}}
+:   You can choose the logging instance where you want to collect {{site.data.keyword.containerlong_notm}} service logs.
 
-You can monitor {{site.data.keyword.satellitelong}} service logs through the logging instance that is configured with **service platform logs** in the same region that your {{site.data.keyword.satelliteshort}} location is managed from.
+{{site.data.keyword.satellitelong_notm}}
+:   You can monitor {{site.data.keyword.satellitelong}} service logs through the logging instance that is configured with **service platform logs** in the same region that your {{site.data.keyword.satelliteshort}} location is managed from.
 
-{{site.data.keyword.registrylong_notm}} generates platform services logs that are displayed in your logging instances. The following table lists the locations where the automatic collection of {{site.data.keyword.registryshort_notm}} service logs is enabled. For more information, see [Analyzing logs for {{site.data.keyword.registrylong_notm}}](/docs/Registry?topic=Registry-registry_logs).
-
-| Service                  |  `Dallas (us-south)` | `Sao Paulo (br-sao)` | `Toronto (ca-tor)` | `Washington (us-east)` |
-|--------------------------|----------------------|----------------------|--------------------|------------------------|
-| {{site.data.keyword.registrylong_notm}} `[*]` | ![Checkmark icon](../images/checkmark-icon.svg) | ![Checkmark icon](../images/checkmark-icon.svg) | ![Checkmark icon](../images/checkmark-icon.svg) |  |
-{: caption="Table 3. Container services" caption-side="top"}
-{: #cs-con-table-1}
-{: tab-title="America"}
-{: tab-group="cs_con"}
-{: class="simple-tab-table"}
-{: row-headers}
-
-| Service                                     | `Osaka (jp-osa)` | `Sydney (au-syd)`  |  `Tokyo (jp-tok)` |
-|---------------------------------------------|------------------|--------------------|-------------------|
-| {{site.data.keyword.registrylong_notm}} `[*]` | ![Checkmark icon](../images/checkmark-icon.svg) | `Logs are available through the Log Analysis Tokyo (jp-tok) instance.` | ![Checkmark icon](../images/checkmark-icon.svg) |
-{: caption="Table 3. Container services" caption-side="top"}
-{: #cs-con-table-2}
-{: tab-title="Asia Pacific"}
-{: tab-group="cs_con"}
-{: class="simple-tab-table"}
-{: row-headers}
-
-| Service                                        |`Frankfurt (eu-de)`  | `London (eu-gb)` |
-|------------------------------------------------|---------------------|------------------|
-| {{site.data.keyword.registrylong_notm}} `[*]` | ![Checkmark icon](../images/checkmark-icon.svg) | ![Checkmark icon](../images/checkmark-icon.svg) |
-{: caption="Table 3. Container services" caption-side="top"}
-{: #cs-con-table-3}
-{: tab-title="Europe"}
-{: tab-group="cs_con"}
-{: class="simple-tab-table"}
-{: row-headers}
-
-`[*]` {{site.data.keyword.registrylong_notm}} global registry logs are available through the Log Analysis `Dallas (us-south)` instance. 
+{{site.data.keyword.openshiftlong_notm}}
+:   You can choose the logging instance where you want to collect {{site.data.keyword.openshiftlong}} service logs.
 
 ## Database services
 {: #cs_locations_database}
