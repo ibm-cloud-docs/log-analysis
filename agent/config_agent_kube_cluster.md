@@ -134,6 +134,7 @@ Create a Kubernetes daemonset to deploy the logging agent on every worker node o
 The logging agent collects the following logs:
 - STDOUT and STDERR
 - Logs with the extension `*.log`, and extensionsless files that are stored in the `/var/log` directory of your pod. 
+
 By default, logs are collected from all namespaces, including `kube-system`, and automatically forwarded to the {{site.data.keyword.la_full_notm}} service.
 
 
@@ -149,6 +150,7 @@ To configure the logging agent by using `kubectl` commands, run the following co
 |------------------|---------|
 | Public endpoint  | `kubectl apply -f https://assets.<REGION>.logging.cloud.ibm.com/clients/logdna-agent/<VERSION>/agent-resources.yaml` |
 | Private endpoint | `kubectl apply -f https://assets.<REGION>.logging.cloud.ibm.com/clients/logdna-agent/<VERSION>/agent-resources-private.yaml` |
+{: caption="Table 1. Configuration commands" caption-side="bottom"}
 
 Where
 

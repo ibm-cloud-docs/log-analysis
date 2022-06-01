@@ -284,10 +284,8 @@ Access to resources within a resource group can be granted to all resources in a
 Access policies set a target, which is typically a service instance or all instances of a service in a resource group, and a role, which defines what type of access is allowed.
 
 Roles define the actions that a user or serviceID can run. There are different types of roles in the {{site.data.keyword.cloud_notm}}:
-* *Platform management roles* define permissions to work with the service at the platform level, for example, some actions are assign user access for the service, create or delete service IDs, create instances, assign policies for your service to other users, and bind instances to applications. [Learn more](/docs/log-analysis?topic=log-analysis-work_iam)
-.
-* *Service access roles* define permissions for calling the service's API. [Learn more](/docs/log-analysis?topic=log-analysis-work_iam)
-.
+* *Platform management roles* define permissions to work with the service at the platform level, for example, some actions are assign user access for the service, create or delete service IDs, create instances, assign policies for your service to other users, and bind instances to applications. [Learn more](/docs/log-analysis?topic=log-analysis-work_iam).
+* *Service access roles* define permissions for calling the service's API. [Learn more](/docs/log-analysis?topic=log-analysis-work_iam).
 
 **For each access group, define a policy for each resource group that specifies the permissions granted to work with the resource group, the permissions to manage instances of the {{site.data.keyword.la_full_notm}} service in that resource group, and the permissions to run {{site.data.keyword.la_full_notm}} tasks.**
 {: tip}
@@ -619,6 +617,7 @@ In COS, you can track management and data events.
 * Management events report actions that change the state of resource configurations, bucket properties, and object properties.
 * Data events report actions on buckets, objects, and multi-part objects such as creation, deletion, and access.
 * You must configure each bucket to enable management events, or management and data events. Notice that you cannot enable data events only for a bucket. 
+
 For more information, see [Activity Tracker events](/docs/cloud-object-storage?topic=cloud-object-storage-at-events).
 
 **Enable collection of COS management and data events on the bucket that you use to archive data from a logging instance. Use these events to monitor activity in your COS bucket.**

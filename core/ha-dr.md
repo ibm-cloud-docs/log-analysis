@@ -91,7 +91,7 @@ If a regional disaster occurs, consider the following information:
 * You might have 1 or more logging instances in the region. When these service instances are available in the new location, you will be able to use them. However, you will have to update the endpoints of applications and logging agents to point to the ingestion endpoint in the new location. 
 
 
-#### DR recovery time
+### DR recovery time
 {: #dr_recovery_time}
 
 The following table indicates the estimated recovery times in the event of a DR situation:
@@ -101,3 +101,4 @@ The following table indicates the estimated recovery times in the event of a DR 
 | Maximum Tolerable Downtime (MTD) / Recovery Time Objective (RTO)  | Less than 24 hours |
 | Recovery Point Objective (RPO) | Less than 4 hours |
 {: caption="Table 4. Recovery objectives for DR" caption-side="top"}
+

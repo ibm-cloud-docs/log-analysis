@@ -72,6 +72,7 @@ When you define the policy, you need to select a platform role and a service rol
 To manage the {{site.data.keyword.la_full_notm}} service, a user needs the following roles:
 * Platform role: **Administrator**. 
 * Service role: **Manager**. 
+
 [Learn more](/docs/services/activity-tracker?topic=activity-tracker-iam#iam).
 
 Complete the following steps to assign a policy to an access group through the UI:

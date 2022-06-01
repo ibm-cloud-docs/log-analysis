@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2022
-lastupdated: "2021-03-28s"
+lastupdated: "2021-03-28"
 
 keywords: IBM, Log Analysis, logging, export logs
 

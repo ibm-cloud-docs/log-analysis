@@ -50,6 +50,7 @@ To configure your Ubuntu server to forward logs to your logging instance, comple
     sudo apt-get install logdna-agent < "/dev/null"
     ```
     {: codeblock}
+    
 2. Set the ingestion key that the logging agent must use to forward logs to the {{site.data.keyword.la_full_notm}} instance.  
 
     ```text
