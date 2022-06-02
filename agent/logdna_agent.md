@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2022
-lastupdated: "2021-11-22"
+lastupdated: "2022-06-02"
 
 keywords: IBM, Log Analysis, logging, config agent, linux
 
@@ -173,7 +173,7 @@ The following table outlines the agent versions that are available:
 
 | Linux                                 | Logging agent V1 | Logging agent V2  | Logging agent V3 |
 |---------------------------------------|------------------|-------------------|------------------|
-| `Linux`   | ![Checkmark icon](../images/checkmark-icon.svg)  | ![Checkmark icon](../images/checkmark-icon.svg) | `Not available` | 
+| `Linux`   | ![Checkmark icon](../images/checkmark-icon.svg)  | ![Checkmark icon](../images/checkmark-icon.svg) | ![Checkmark icon](../images/checkmark-icon.svg) | 
 {: caption="Table 3. Logging agent versions for Linux" caption-side="top"}
 
 
