@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2022
-lastupdated: "2021-03-28"
+lastupdated: "2022-06-06"
 
 keywords: groups, access
 
@@ -64,7 +64,7 @@ Complete the following steps to define the default settings for viewing data:
 
 5. For your instance, click **Open dashboard**. The UI will be displayed.
 
-6. Click the Settings icon ![**Settings icon**](/images/config.png "Settings icon") &gt;  **TEAM** &gt; **Settings**.
+6. Click the Settings icon ![**Settings icon**](/images/config.png "Settings icon") &gt;  **Organization** &gt; **Security**.
 
 7. Set **Access Control** to your desired default setting:
 
@@ -95,7 +95,7 @@ You can edit a group to change the access scope as needed.
 
 5. For your instance, click **Open dashboard**. The UI will be displayed.
 
-6. Click ![**Settings**](/images/config.png "Settings icon") &gt; **TEAM** &gt; **Groups**.
+6. Click ![**Settings**](/images/config.png "Settings icon") &gt; **Organization** &gt; **Groups**.
 
 7. Click **Add Group**.
 
@@ -145,7 +145,7 @@ Complete the following steps to edit or delete a service group:
 
 5. For your instance, click **Open dashboard**. The UI will be displayed.
 
-6. Click ![**Settings**](/images/config.png "Settings icon") &gt; **TEAM** &gt; **Groups**.
+6. Click ![**Settings**](/images/config.png "Settings icon") &gt; **Organization** &gt; **Groups**.
 
 7. Click **Edit** or **Delete** to change or remove the group.
 
