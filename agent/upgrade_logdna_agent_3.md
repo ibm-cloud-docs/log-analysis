@@ -236,6 +236,13 @@ Complete the following steps to modify the yaml so that the logging agent runs a
 ## Step 7. Deploy the logging agent version 3 in the cluster
 {: #upgrade_log_analysis_agent_3_step7}
 
+Create the secret in the ibm-observe namespace by running the following command with your ingestion key:
+
+```text
+kubectl create secret generic logdna-agent-key -n ibm-observe --from-literal=logdna-agent-key=<ingestion_key>
+```
+{: pre}
+   
 Install the agent by running the following command:
 
 ```text
