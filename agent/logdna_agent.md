@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2022
-lastupdated: "2022-06-02"
+lastupdated: "2022-06-28"
 
 keywords: IBM, Log Analysis, logging, config agent, linux
 
@@ -18,7 +18,6 @@ subcollection: log-analysis
 The logging agent collects and forwards logs to your {{site.data.keyword.la_full_notm}} instance. After you provision an {{site.data.keyword.la_full}} instance, you must configure a logging agent for each log source that you want to monitor.
 {: shortdesc}
 
-
 * You can configure a logging agent to connect to an {{site.data.keyword.la_full_notm}} instance through the public network or through the private network. By default, the agent connects through the public network. To connect to {{site.data.keyword.cloud}} services over a private network, you must have access to the classic infrastructure and [enable virtual routing and forwarding (VRF)](/docs/account?topic=account-vrf-service-endpoint) and connectivity to service endpoints for your account.
 * The logging agent authenticates by using the logging ingestion key and opens a secure web socket to the {{site.data.keyword.la_full_notm}} ingestion servers.
 * The logging agent for Kubernetes automatically collects STDOUT and STDERR logs.
@@ -29,7 +28,7 @@ The logging agent collects and forwards logs to your {{site.data.keyword.la_full
 ## Logging agent for Kubernetes clusters
 {: #log_analysis_agent_image_kube}
 
-logging agent images for Kubernetes clusters are public images that are available in {{site.data.keyword.cloud_notm}} through the [{{site.data.keyword.registrylong_notm}}](/docs/Registry?topic=Registry-getting-started) service. 
+Logging agent images for Kubernetes clusters are public images that are available in {{site.data.keyword.cloud_notm}} through the [{{site.data.keyword.registrylong_notm}}](/docs/Registry?topic=Registry-getting-started) service. 
 
 * The logging agent images are hosted in the {{site.data.keyword.registrylong_notm}} global repository `icr.io/ext/logdna-agent`.
 
@@ -39,6 +38,16 @@ logging agent images for Kubernetes clusters are public images that are availabl
 
 To get details about the logging agent images, see [Getting information about logging agent images](/docs/log-analysis?topic=log-analysis-log_analysis_agent_image).
 
+### Resource Limits for agents deployed on Kubernetes
+{: #kube_resource_limits}
+
+The agent is deployed as a Kubernetes DaemonSet, creating one pod for each node selected. The agent collects logs of all the pods in the node. The resource requirements of the agent are in direct relation to the amount of pods for each node, and the amount of logs produce for each pod.
+
+The agent requires at least 128 MB and no more than 512 MB of memory. It requires at least twenty millicpu (20m).
+
+Different features can also increase resource utilization. When line exclusion, inclusion or redaction rules are specified, you can expect additional CPU consumption for each line and regex rule defined. When Kubernetes event logging is enabled (disabled by default), additional CPU usage will occur on the oldest agent pod.
+
+Placing traffic shaping or CPU limits on the agent is not recommended to ensure data can be sent to our log ingestion service. 
 
 ### Understanding image tags
 {: #log_analysis_agent_image_kube_tags}
@@ -101,7 +110,7 @@ The tags `stable` and `latest` will be deprecated in June 2021.
 
 The following table outlines the logging agent versions that are available to configure for a Kubernetes cluster:
 
-| Kubernetes cluster             | logging agent V3             | logging agent V2       | logging agent V1          |
+| Kubernetes cluster             | logging agent V3             | logging agent V2      | logging agent V1     |
 |--------------------------------|-----------------------------|-----------------------|----------------------------------------------|
 | `Standard Kubernetes cluster`  | ![Checkmark icon](../images/checkmark-icon.svg) | ![Checkmark icon](../images/checkmark-icon.svg) | ![Checkmark icon](../images/checkmark-icon.svg) |
 | `OpenShift Kubernetes cluster` | ![Checkmark icon](../images/checkmark-icon.svg) | ![Checkmark icon](../images/checkmark-icon.svg) | `Not available`                              |
