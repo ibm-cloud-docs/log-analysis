@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2022
-lastupdated: "2021-07-01"
+lastupdated: "2022-07-21"
 
 keywords: IBM Cloud, Log Analysis, streaming
 
@@ -13,10 +13,10 @@ subcollection: log-analysis
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Configuring streaming through the UI
+# Configuring streaming to {{site.data.keyword.messagehub}} through the UI
 {: #streaming-configure}
 
-Complete the following steps to configure streaming for an {{site.data.keyword.la_full}} instance:
+Complete the following steps to configure streaming from a {{site.data.keyword.la_short}} instance to an {{site.data.keyword.messagehub}} instance:
 {: shortdesc}
 
 See [Configure streaming](/docs/log-analysis?topic=log-analysis-streaming#streaming-1) for more information on roles required for streaming.
@@ -122,11 +122,11 @@ To restrict access to 1 topic, complete the following steps:
 
 Complete the following steps to configure the connection in {{site.data.keyword.la_short}} to {{site.data.keyword.messagehub}}:
 
-1. [Launch the {{site.data.keyword.la_full_notm}} web UI](/docs/services/log-analysis?topic=log-analysis-launch).
+1. [Launch the {{site.data.keyword.la_short}} web UI](/docs/services/log-analysis?topic=log-analysis-launch).
 
 2. Click the **Settings** icon ![Configuration icon](images/admin.png "Admin icon"). Then select **Streaming** &gt; **Configuration**. 
 
-3. Enter the following information:
+3. Select **kafka** as the streaming type. Then, enter the following information:
 
     1. In the **Username** field, enter the value **token**.
 

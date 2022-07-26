@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2022
-lastupdated: "2022-04-21"
+lastupdated: "2022-07-22"
 
 keywords: IBM, Log Analysis, logging, endpoints
 
@@ -244,5 +244,29 @@ The following table shows the syslog TLS endpoints:
 | `Toronto (ca-tor)`       | `syslog-tls://syslog-a.ca-tor.logging.cloud.ibm.com`     | 163.75.66.13    \n 163.74.69.234   \n 169.53.186.154   | 
 | `Washington (us-east)`   | `syslog-tls://syslog-a.us-east.logging.cloud.ibm.com`    | 169.60.121.243  \n 169.61.98.203   \n 169.47.34.203    | 
 {: caption="Table 9. Lists of Syslog-TLS endpoints" caption-side="top"}
+
+
+### Private syslog TLS endpoints
+{: #endpoints_syslog_tls_private}
+
+The following table shows the syslog TLS endpoints:
+
+
+| Region                   |  Public Endpoint                                         | IP addresses                                           |
+|--------------------------|----------------------------------------------------------|--------------------------------------------------------|
+| `Chennai (in-che)`       | `syslog-tls://syslog-a.private.in-che.logging.cloud.ibm.com`     | 166.9.60.9 | 
+| `Dallas (us-south)`      | `syslog-tls://syslog-a.private.us-south.logging.cloud.ibm.com`   | 166.9.16.14 \n 166.9.12.15 \n 166.9.14.5  | 
+| `Frankfurt (eu-de)`      | `syslog-tls://syslog-a.private.eu-de.logging.cloud.ibm.com`      | 166.9.28.5 \n 166.9.32.23 | 
+| `London (eu-gb)`         | `syslog-tls://syslog-a.private.eu-gb.logging.cloud.ibm.com`      | 166.9.34.18 \n 166.9.36.5 \n 166.9.38.20 | 
+| `Sao Paulo (br-sao)`     | `syslog-tls://syslog-a.private.br-sao.logging.cloud.ibm.com`     | 166.9.82.26 \n 166.9.83.22 \n 166.9.84.23 | 
+| `Osaka (jp-osa)`         | `syslog-tls://syslog-a.private.jp-osa.logging.cloud.ibm.com`     | 166.9.72.22 \n 166.9.71.22 \n 166.9.70.22 | 
+| `Seoul (kr-seo)`         | `syslog-tls://syslog-a.private.kr-seo.logging.cloud.ibm.com`     | 166.9.40.113 \n 166.9.42.122 \n 166.9.44.112 | 
+| `Sydney (au-syd)`        | `syslog-tls://syslog-a.private.au-syd.logging.cloud.ibm.com`     | 166.9.38.20 \n 166.9.34.18 \n 166.9.36.5 | 
+| `Tokyo (jp-tok)`         | `syslog-tls://syslog-a.private.jp-tok.logging.cloud.ibm.com`     | 166.9.40.23 \n 166.9.42.26  | 
+| `Toronto (ca-tor)`       | `syslog-tls://syslog-a.private.ca-tor.logging.cloud.ibm.com`     | 166.9.76.31 \n 166.9.78.29 \n 166.9.77.28 | 
+| `Washington (us-east)`   | `syslog-tls://syslog-a.private.us-east.logging.cloud.ibm.com`    | 166.9.22.38 \n 166.9.20.76 | 
+{: caption="Table 9. Lists of Syslog-TLS endpoints" caption-side="top"}
+
+
 
 

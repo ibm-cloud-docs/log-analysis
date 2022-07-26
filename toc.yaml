@@ -167,6 +167,7 @@ toc:
           topics:
           - streaming.md
           - streaming-configure.md
+          - streaming-configure-l2l.md
           - streaming-monitor.md
           - streaming-conditional.md
           - streaming-manage-api.md

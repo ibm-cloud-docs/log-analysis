@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2022
-lastupdated: "2021-07-01"
+lastupdated: "2022-07-21"
 
 keywords: IBM Cloud, Log Analysis, streaming
 
@@ -12,7 +12,7 @@ subcollection: log-analysis
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Monitoring streaming
+# Monitoring streaming to {{site.data.keyword.messagehub}}
 {: #streaming-monitor}
 
 You can use {{site.data.keyword.mon_full_notm}} and {{site.data.keyword.at_full_notm}} to monitor streaming of data from your {{site.data.keyword.la_short}} instance.

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2022
-lastupdated: "2021-09-30"
+lastupdated: "2022-07-21"
 
 keywords: IBM Cloud, Log Analysis, streaming, API
 
@@ -12,7 +12,7 @@ subcollection: log-analysis
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Managing streaming by using the API
+# Managing streaming to {{site.data.keyword.messagehub}} by using the API
 {: #streaming-manage-api}
 
 
@@ -59,7 +59,7 @@ The response will be similar to the following if the configuration is successful
 ```
 {: codeblock}
 
-If an incorrect service key was specified, a response similar to the following will be returned:
+If an incorrect service key was specified, a response similar to the following will be returned: 
 
 ```text
 {"error":"Service Key Validation Error: Invalid or deactivated servicekey","status":"error","code":"NotAuthorized"}
@@ -95,7 +95,7 @@ Use [this method](https://{DomainName}/apidocs/log-analysis#put-v1-config-stream
 curl --request PUT https://api.eu-gb.logging.cloud.ibm.com/v1/config/stream  
  -H "content-type: application/json"  
  -H "servicekey: <SERVICE_KEY>"  
- -d '{"brokers":["<BROKERS>"],"topic":"topic","user":"token","password":"<COS_SERVICE_CREDENTIAL_API_KEY>"}'
+ -d '{"brokers":["<BROKERS>"],"topic":"topic","user":"token","password":"<COS_SERVICE_CREDENTIAL_API_KEY>"}' 
 ```
 {: pre}
 
@@ -118,14 +118,14 @@ If streaming is not configured, the following will be returned when trying to do
 
 To check if streaming is enabled or disabled, you can use either the GET or PUT methods.
 
-When streaming is not enabled, the following is returned when running the [GET method](#streaming-api-get-conf):
+When streaming is not enabled, the following is returned when running the [GET method](#streaming-api-get-conf): 
 
 ```text
 {"error":"Not found","code":"NotFound","status":"error"}
 ```
 {: codeblock}
 
-When streaming is not enabled, the following is returned when running the [PUT method](#streaming-api-update-conf):
+When streaming is not enabled, the following is returned when running the [PUT method](#streaming-api-update-conf): 
 
 ```text
 {"error":"Streaming configuration does not exist","code":"NotFound","status":"error"}
@@ -151,7 +151,7 @@ The response will be similar to the following:
  ```
  {: codeblock}
 
-## Get details about a streaming exclusion rule
+## Get details about a streaming exclusion rule 
 {: #streaming-api-get-rules}
 
 Use [this method](https://{DomainName}/apidocs/log-analysis#get-v1-config-stream-exclusions-rule-id){: external} to get details of an existing streaming exclusion rule.
@@ -180,7 +180,7 @@ Use [this method](https://{DomainName}/apidocs/log-analysis#post-v1-config-strea
 curl --request POST https://api.eu-gb.logging.cloud.ibm.com/v1/config/stream/exclusions  
  -H "content-type: application/json"  
  -H "servicekey: <SERVICE_KEY>"  
- -d '{"title": "Exclude Example", "query": "example", "active": true}'
+ -d '{"title": "Exclude Example", "query": "example", "active": true}' 
 
 ```
 {: pre}
@@ -220,7 +220,7 @@ Use [this method](https://{DomainName}/apidocs/log-analysis#patch-v1-config-stre
 curl --request PATCH https://api.eu-gb.logging.cloud.ibm.com/v1/config/stream/exclusions/{ruleId}  
  -H "content-type: application/json"  
  -H "servicekey: <SERVICE_KEY>"  
- -d '{"title": "Exclude Example Update", "query": "example", "active": false}'
+ -d '{"title": "Exclude Example Update", "query": "example", "active": false}' 
 ```
 {: pre}
 
@@ -230,3 +230,4 @@ The response will be similar to the following:
 {"hosts":[],"apps":[],"title":"Exclude Example Update","query":"example","active":false,"id":"xxxxxxxxxx"}
 ```
 {: codeblock}
+
