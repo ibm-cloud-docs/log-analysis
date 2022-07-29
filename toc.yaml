@@ -119,6 +119,7 @@ toc:
           label: Managing resources
           topics:
           - devops/reuse_resource_definitions.md
+          - devops/config_categories.md
       
       - topicgroup: 
           label: Logging agent
