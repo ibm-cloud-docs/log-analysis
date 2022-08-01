@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2022
-lastupdated: "2021-03-28"
+lastupdated: "2022-07-28"
 
 keywords: IBM, Log Analysis, logging, ingestion key
 
@@ -15,15 +15,18 @@ subcollection: log-analysis
 # Working with ingestion keys
 {: #ingestion_key}
 
-The ingestion key is a security key that you must use to configure logging agents and successfully forward logs to your {{site.data.keyword.la_full_notm}} instance in {{site.data.keyword.cloud_notm}}. You automatically get the ingestion key when you provision an instance. Alternatively, you can also obtain the ingestion key by creating a service ID for the instance. 
+The ingestion key is a security key that you must use to configure logging agents and successfully forward logs to your {{site.data.keyword.la_full_notm}} instance in {{site.data.keyword.cloud_notm}}. You automatically get the ingestion key when you provision an instance. 
 {: shortdesc}
 
-* To work with ingestion keys through the {{site.data.keyword.la_full_notm}} Web UI, you must have an IAM policy with platform role **Viewer** and service role **Manager** for the {{site.data.keyword.la_full_notm}} service. 
-* To work with ingestion keys through the {{site.data.keyword.cloud_notm}} UI, you must have an IAM policy with platform role **Editor** and service role **Manager** for the {{site.data.keyword.la_full_notm}} service. 
+To work with ingestion keys through the {{site.data.keyword.la_full_notm}} Web UI, you must have an IAM policy with platform role **Viewer** and service role **Manager** for the {{site.data.keyword.la_full_notm}} service. 
 
 
-## Getting the ingestion key through the {{site.data.keyword.cloud_notm}} UI
-{: #ibm_cloud_ui}
+## Getting ingestion keys
+{: #get_ingestion_key}
+{: ui}
+
+### Getting the ingestion key through the {{site.data.keyword.cloud_notm}} UI
+{: #ingestion_key_ui}
 
 To get the ingestion key for an {{site.data.keyword.la_full_notm}} instance by using the {{site.data.keyword.cloud_notm}} UI, complete the following steps:
 
@@ -40,8 +43,8 @@ To get the ingestion key for an {{site.data.keyword.la_full_notm}} instance by u
     A window opens where you can click **Show** to view the ingestion key.
 
 
-## Getting the ingestion key through the {{site.data.keyword.la_full_notm}} web UI
-{: #log_analysis_ui}
+### Getting the key through the {{site.data.keyword.la_short}} web UI
+{: #ingestion_key_la_ui}
 
 To get the ingestion key for an {{site.data.keyword.la_full_notm}} instance by using the {{site.data.keyword.la_full_notm}} Web UI, complete the following steps:
 
@@ -53,9 +56,80 @@ To get the ingestion key for an {{site.data.keyword.la_full_notm}} instance by u
 
 3. Copy the ingestion key that shows in the **API keys** section. 
 
+### Creating a service key by using the logging UI
+{: #ingestion_key_create_ui}
+
+You must have the **manager** role for the {{site.data.keyword.la_full_notm}} service to complete this step.
+{: important} 
+
+For more information, see [service roles](/docs/log-analysis?topic=log-analysis-iam#service).
+  
+Complete the following steps to create a service key:
+
+1. [Launch the {{site.data.keyword.la_full_notm}} web UI](/docs/log-analysis?topic=log-analysis-launch).
+
+2. Click the **Settings** icon ![Settings icon](../images/admin.png). 
+
+3. Select **Organization**. 
+
+4. Select **API keys**.
+
+   If you have the correct permissions, the available service keys are displayed in the **Ingestion keys** section.   
+
+5. Click **Generate Ingestion Key**. A new key is added to the list. 
+
+### Deleting a service key by using the UI
+{: #ingestion_key_delete_ui}
+
+You must have the **manager** role for the {{site.data.keyword.la_full_notm}} service to complete this step.
+{: important} 
+
+For more information, see [service roles](/docs/log-analysis?topic=log-analysis-iam#service).
+
+Complete the following steps to delete an ingestion key:
+
+1. [Launch the {{site.data.keyword.la_short}} web UI](/docs/log-analysis?topic=log-analysis-launch).
+
+2. Click the **Settings** icon ![Settings icon](../images/admin.png). 
+
+3. Select **Organization**. 
+
+4. Select **API keys**.
+
+   If you have the correct permissions, the available service keys are displayed in the **Ingestion Keys** section.   
+
+5. Delete the key by clicking the **X** next to the key to be deleted.
+
+
+### Rotating an ingestion key through the UI
+{: #ingestion_key_rotate_ui}
+
+If the ingestion key is compromised or you have a policy to renew it after a number of days, you can generate a new key and delete the old one.
+
+To renew the ingestion key for an {{site.data.keyword.la_full_notm}} instance by using the {{site.data.keyword.la_full_notm}} Web UI, complete the following steps:
+
+1. [Launch the {{site.data.keyword.la_full_notm}} web UI](/docs/log-analysis?topic=log-analysis-view_logs#view_logs_step2).
+
+2. Click the **Settings** icon ![Settings icon](../images/admin.png) &gt; **Organization**. 
+
+3. Select **API keys**.
+
+    You can see the ingestion keys that are enabled. 
+
+4. Select **Generate Ingestion Key**.
+
+    A new key is added to the list.
+
+5. Delete the old ingestion key. Click **X** next to the ingestion key to be deleted.
+
+After you reset the ingestion key, you must update the ingestion key for any log sources that you have configured to forward logs to this {{site.data.keyword.la_full_notm}} instance.
+{: important}
+
+For example, see [Resetting the ingestion key that is used by a Kubernetes cluster](/docs/log-analysis?topic=log-analysis-kube_reset_ingestion).
 
 ## Getting the ingestion key through the CLI
 {: #ingestion_key_cli}
+{: cli}
 
 To get the ingestion key for a logging instance through the command line, complete the following steps:
 
@@ -94,102 +168,159 @@ To get the ingestion key for a logging instance through the command line, comple
  
     The output from this command includes the field **ingestion key** that contains the ingestion key for the instance.
 
-
-## Getting the ingestion key through the API
+## Managing ingestion keys through the API
 {: #ingestion_key_api}
+{: api}
 
-To get the ingestion key for a logging instance through the API, complete the following steps:
+You can use the configuration API to manage keys.
 
-1. Generate an [{{site.data.keyword.cloud_notm}} API key](/docs/account?topic=account-userapikey&interface=api#create_user_key).
+### List all keys
+{: #ingestion_key_api_list}
 
-2. Get an access token. For more information, see [Generating an {{site.data.keyword.cloud_notm}} access token by using an API key](/docs/account?topic=account-iamtoken_from_apikey&interface=api).
+To list all ingestion keys that ae available in an instance, you can run the following request:
 
-    You need an IAM access token to authenticate in {{site.data.keyword.cloud_notm}}.
+```sh
+curl  https://API_ENDPOINT/v1/config/keys?type="ingestion"
+  -H 'content-type: application/json' \
+  -H 'servicekey: SERVICE_KEY'
+```
+{: pre}
 
-    To generate an IAM access token, run the following command:
+Where:
 
-    ```text
-    curl -X POST 'https://iam.cloud.ibm.com/identity/token' -H 'Content-Type: application/x-www-form-urlencoded' -d 'grant_type=urn:ibm:params:oauth:grant-type:apikey&apikey=MY_APIKEY'
-    ```
-    {: pre}
+`API_ENDPOINT`
+:   Depending on [your account settings](/docs/account?topic=account-service-endpoints-overview), you can use public or private endpoints to manage categories programmatically. For information about endpoints per region, see [API endpoints](/docs/log-analysis?topic=log-analysis-endpoints#endpoints_api).
 
-    Replace `MY_APIKEY` with your API key from the previous step.
+`SERVICE_KEY`
+:   Service key value. A service key is a unique code that is passed in an API request to identify the calling application or user. The service key is specific to a logging instance. For more information on how to generate a service key, see [Managing service keys](/docs/log-analysis?topic=log-analysis-service_keys).
 
-    The access token is only valid for 1 hour. `access_token` includes the string "Bearer" followed by the IAM token.
+For example, to list all the ingestion keys that are available in an instance in US South, you can run the following request:
 
-3. Get the name and GUID of the service instance if you do not already have it.
+```sh
+curl  https://api.us-south.logging.cloud.ibm.com/v1/config/keys?type="ingestion"  -H "content-type: application/json"  -H "servicekey: xxxxxxxxx"
+```
+{: pre}
 
-    Get the list of resource instances:
+### Get details on a key
+{: #ingestion_key_api_get}
 
-    ```text
-    curl -X GET   https://resource-controller.cloud.ibm.com/v2/resource_instances   -H "Authorization: Bearer <ACCESS_TOKEN>"
-    ```
-    {: pre}
+To get information on an ingestion key, you can run:
 
-    Where `<ACCESS_TOKEN>` is the IAM access token obtained in the prior step.
+```sh
+curl -X GET  https://API_ENDPOINT/v1/config/keys/KEY_ID
+  -H 'content-type: application/json' \
+  -H 'servicekey: SERVICE_KEY'
+```
+{: pre}
 
-    Look for the `guid` field of the instance to get the instance GUID.
+Where:
 
-4. Get the ingestion key. Run the following cURL command:
+`API_ENDPOINT`
+:   Depending on [your account settings](/docs/account?topic=account-service-endpoints-overview), you can use public or private endpoints to manage categories programmatically. For information about endpoints per region, see [API endpoints](/docs/log-analysis?topic=log-analysis-endpoints#endpoints_api).
 
-    ```shell
-    curl -X POST  https://resource-controller.cloud.ibm.com/v2/resource_keys   -H "Authorization: Bearer <ACCESS_TOKEN>"   -H 'Content-Type: application/json'  -d '{"name": "<RESOURCE_KEY_NAME>", "source": "<INSTANCE_GUID>"}'
-    ```
-    {: pre}
+`KEY_ID`
+:   ID value of the ingestion key for which you want to get details.
 
-    Where 
-    
-    - `<ACCESS_TOKEN>` is the IAM access token obtained in the prior step.
+`SERVICE_KEY`
+:   Service key value. A service key is a unique code that is passed in an API request to identify the calling application or user. The service key is specific to a logging instance. For more information on how to generate a service key, see [Managing service keys](/docs/log-analysis?topic=log-analysis-service_keys).
 
-    - `<INSTANCE_GUID>` is the instance GUID.
+For example, to get information on an ingestion key that is available in an instance in US South, you can run the following request:
 
-    - `<RESOURCE_KEY_NAME>` is the name that you give the resource key associated to the instance.
+```sh
+curl  https://api.us-south.logging.cloud.ibm.com/v1/config/keys/123456789"  -H "content-type: application/json"  -H "servicekey: xxxxxxxxx"
+```
+{: pre}
 
-    The result will include a section with the following information:
+### Create a key
+{: #ingestion_key_api_create}
 
-    ```text
-    "credentials": {
-        "apikey": "xxxxxxxxxxxx",
-        "iam_apikey_description": "Auto-generated for key xxxxxxxx",
-        "iam_apikey_name": "<RESOURCE_KEY_NAME>",
-        "iam_serviceid_crn": ".....",
-        "ingestion_key": "xxxxxxx",
-        "service_key": "xxxxxxxxxx"
-    }
-    ```
-    {: codeblock}
+```sh
+curl -X POST  https://API_ENDPOINT/v1/config/keys/KEY_ID
+  -H 'content-type: application/json' \
+  -H 'servicekey: SERVICE_KEY' \
+  -d '{"name": "KEY_NAME"}'
+```
+{: pre}
 
-    The `ingestion_key` value is the ingestion key.
+Where:
+
+`API_ENDPOINT`
+:   Depending on [your account settings](/docs/account?topic=account-service-endpoints-overview), you can use public or private endpoints to manage categories programmatically. For information about endpoints per region, see [API endpoints](/docs/log-analysis?topic=log-analysis-endpoints#endpoints_api).
+
+`SERVICE_KEY`
+:   Service key value. A service key is a unique code that is passed in an API request to identify the calling application or user. The service key is specific to a logging instance. For more information on how to generate a service key, see [Managing service keys](/docs/log-analysis?topic=log-analysis-service_keys).
+
+`KEY_NAME`
+:   Name that you want to give the key. The maximum size of a name is 30 characters.
+
+### Change the name of a key
+{: #ingestion_key_api_update}
+
+```sh
+curl -X POST  https://API_ENDPOINT/v1/config/keys/KEY_ID
+  -H 'content-type: application/json' \
+  -H 'servicekey: SERVICE_KEY' \
+  -d '{"name": "KEY_NAME"}'
+```
+{: pre}
+
+Where:
+
+`API_ENDPOINT`
+:   Depending on [your account settings](/docs/account?topic=account-service-endpoints-overview), you can use public or private endpoints to manage categories programmatically. For information about endpoints per region, see [API endpoints](/docs/log-analysis?topic=log-analysis-endpoints#endpoints_api).
+
+`SERVICE_KEY`
+:   Service key value. A service key is a unique code that is passed in an API request to identify the calling application or user. The service key is specific to a logging instance. For more information on how to generate a service key, see [Managing service keys](/docs/log-analysis?topic=log-analysis-service_keys).
+
+`KEY_ID`
+:   ID value of the ingestion key for which you want to get details.
+
+`KEY_NAME`
+:   Name that you want to give the key. The maximum size of a name is 30 characters.
+
+### Delete a key
+{: #ingestion_key_api_delete}
+
+To delete an ingestion key, run the following command.
+
+```sh
+curl -X DELETE "API_ENDPOINT/v1/config/keys/KEY_ID"  
+  -H 'content-type: application/json' \
+  -H 'servicekey: SERVICE_KEY'
+```
+{: pre}
+
+Where:
+
+`API_ENDPOINT`
+:   Depending on [your account settings](/docs/account?topic=account-service-endpoints-overview), you can use public or private endpoints to manage categories programmatically. For information about endpoints per region, see [API endpoints](/docs/log-analysis?topic=log-analysis-endpoints#endpoints_api).
+
+`KEY_ID`
+:   ID value of the ingestion key to be deleted.
+
+`SERVICE_KEY`
+:   Service key value. A service key is a unique code that is passed in an API request to identify the calling application or user. The service key is specific to a logging instance. For more information on how to generate a service key, see [Managing service keys](/docs/log-analysis?topic=log-analysis-service_keys).
 
 
+## Rotating the ingestion key by using the API
+{: #ingestion_key_replace_api}
+{: api}
+
+If the ingestion key is compromised or you have a policy that requies renewal of a key after a number of days, you can generate a new key and delete the old one.
 
 
+To rotate a key, complete the following steps:
 
-## Resetting the ingestion key through the UI
-{: #reset}
+1. Get the details of the key that you want to rotate.
 
-If the ingestion key is compromised or you have a policy to renew it after a number of days, you can generate a new key and delete the old one.
+    You can list all ingestion keys to obtain the ID of the key that you want to rotate. For more information, see [Listing all ingestion keys](#ingestion_key_api_list).
 
-To renew the ingestion key for an {{site.data.keyword.la_full_notm}} instance by using the {{site.data.keyword.la_full_notm}} Web UI, complete the following steps:
+    If you know the Key ID, skip to the next step.
 
-1. [Launch the {{site.data.keyword.la_full_notm}} web UI](/docs/log-analysis?topic=log-analysis-view_logs#view_logs_step2).
+2. Create a new key. For more information, see [Creating an ingestion key](#ingestion_key_api_create).
 
-2. Click the **Settings** icon ![Settings icon](../images/admin.png) &gt; **Organization**. 
+3. Delete the old key. Make sure you use the ID of the key that you identified previously. For more information, see [Deleting a key](#ingestion_key_api_delete).
 
-3. Select **API keys**.
-
-    You can see the ingestion keys that are enabled. 
-
-4. Select **Generate Ingestion Key**.
-
-    A new key is added to the list.
-
-5. Delete the old ingestion key. Click **X** next to the ingestion key to be deleted.
-
-After you reset the ingestion key, you must update the ingestion key for any log sources that you have configured to forward logs to this {{site.data.keyword.la_full_notm}} instance.
+4. After you rotate the ingestion key, you must update the ingestion key for any log sources that you have configured to forward logs to this {{site.data.keyword.la_short}} instance. For example, see [Resetting the ingestion key that is used by a Kubernetes cluster](/docs/log-analysis?topic=log-analysis-kube_reset_ingestion).
 {: important}
-
-For example, see [Resetting the ingestion key that is used by a Kubernetes cluster](/docs/log-analysis?topic=log-analysis-kube_reset).
-
-
 

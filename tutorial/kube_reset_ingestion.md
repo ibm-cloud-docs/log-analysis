@@ -19,7 +19,7 @@ completion-time: 1h
 
 
 # Resetting the ingestion key that is used by a Kubernetes cluster
-{: #kube-reset}
+{: #kube_reset_ingestion}
 {: toc-content-type="tutorial"}
 {: toc-services="containers, log-analysis"} 
 {: toc-completion-time="1h"} 
