@@ -209,20 +209,39 @@ The following tables show the syslog public endpoints:
 
 The following table shows the syslog private endpoints:
 
-| Region                   |  Private Endpoint                                   | IP addresses    |
+| Region                   |  Private Endpoint                                  | IP addresses    |
 |--------------------------|----------------------------------------------------|-----------------|
-| `Dallas (us-south)` | `syslog-a.private.us-south.logging.cloud.ibm.com`   | 166.9.14.5  \n 166.9.12.15  \n 166.9.16.14 |
-| `Frankfurt (eu-de)` | `syslog-a.private.eu-de.logging.cloud.ibm.com`   | 166.9.32.23  \n 166.9.28.5 |
-| `Tokyo (jp-tok)` | `syslog-a.private.jp-tok.logging.cloud.ibm.com`   | 166.9.42.26  \n 166.9.40.23 |
-| `Osaka (jp-osa)`     | `syslog-a.private.jp-osa.logging.cloud.ibm.com`   | 166.9.70.22  \n 166.9.71.22  \n 166.9.72.22 |
-| `Sao Paulo (br-sao)`     | `syslog-a.private.br-sao.logging.cloud.ibm.com`   | 166.9.82.26  \n 166.9.83.22  \n 166.9.84.23 |
-| `Toronto (ca-tor)`     | `syslog-a.private.ca-tor.logging.cloud.ibm.com`   | 166.9.76.31  \n 166.9.77.28  \n 166.9.78.29 |
-| `Sydney (au-syd)`     | `syslog-a.private.au-syd.logging.cloud.ibm.com`   | 166.9.52.8  \n 166.9.56.22 |
-| `Washington (us-east)`     | `syslog-a.private.us-east.logging.cloud.ibm.com`   | 166.9.22.38  \n 166.9.20.76  |
-| `London (eu-gb)`     | `syslog-a.private.eu-gb.logging.cloud.ibm.com`   | 166.9.38.20  \n 166.9.34.18  \n 166.9.36.5 |
-| `Chennai (in-che)`     | `syslog-a.private.in-che.logging.cloud.ibm.com`   | 166.9.60.9 |
-| `Seoul (kr-seo)`     | `syslog-a.private.kr-seo.logging.cloud.ibm.com`   | 166.9.46.8 |
+| `Dallas (us-south)`      | `syslog-a.private.us-south.logging.cloud.ibm.com`  | 166.9.14.5  \n 166.9.12.15  \n 166.9.16.14 |
+| `Frankfurt (eu-de)`      | `syslog-a.private.eu-de.logging.cloud.ibm.com`     | 166.9.32.23  \n 166.9.28.5 |
+| `Tokyo (jp-tok)`         | `syslog-a.private.jp-tok.logging.cloud.ibm.com`    | 166.9.42.26  \n 166.9.40.23 |
+| `Osaka (jp-osa)`         | `syslog-a.private.jp-osa.logging.cloud.ibm.com`    | 166.9.70.22  \n 166.9.71.22  \n 166.9.72.22 |
+| `Sao Paulo (br-sao)`     | `syslog-a.private.br-sao.logging.cloud.ibm.com`    | 166.9.82.26  \n 166.9.83.22  \n 166.9.84.23 |
+| `Toronto (ca-tor)`       | `syslog-a.private.ca-tor.logging.cloud.ibm.com`    | 166.9.76.31  \n 166.9.77.28  \n 166.9.78.29 |
+| `Sydney (au-syd)`        | `syslog-a.private.au-syd.logging.cloud.ibm.com`    | 166.9.52.8  \n 166.9.56.22 |
+| `Washington (us-east)`   | `syslog-a.private.us-east.logging.cloud.ibm.com`   | 166.9.22.38  \n 166.9.20.76  |
+| `London (eu-gb)`         | `syslog-a.private.eu-gb.logging.cloud.ibm.com`     | 166.9.38.20  \n 166.9.34.18  \n 166.9.36.5 |
+| `Chennai (in-che)`       | `syslog-a.private.in-che.logging.cloud.ibm.com`    | 166.9.60.9 |
+| `Seoul (kr-seo)`         | `syslog-a.private.kr-seo.logging.cloud.ibm.com`    | 166.9.46.8 |
 {: caption="Table 8. Lists of syslog private endpoints" caption-side="top"}
+
+
+| Region                   |  Public Endpoint                                   | IP addresses                                          | 
+|--------------------------|----------------------------------------------------|-------------------------------------------------------|
+| `Chennai (in-che)`       | `syslog://syslog-u.private.in-che.logging.cloud.ibm.com`   | 166.9.60.10                                          | 
+| `Dallas (us-south)`      | `syslog://syslog-u.private.us-south.logging.cloud.ibm.com` | 166.9.14.6 \n 166.9.16.15 \n 166.9.12.16 | 
+| `Frankfurt (eu-de)`      | `syslog://syslog-u.private.eu-de.logging.cloud.ibm.com`    | 166.9.28.7 \n 166.9.32.24  | 
+| `London (eu-gb)`         | `syslog://syslog-u.private.eu-gb.logging.cloud.ibm.com`    | 166.9.36.6 \n 166.9.38.21 \n 166.9.34.19 | 
+| `Osaka (jp-osa)`         | `syslog://syslog-u.private.jp-osa.logging.cloud.ibm.com`   | 166.9.70.23 \n 166.9.72.23 \n 166.9.71.23 | 
+| `Sao Paulo (br-sao)`     | `syslog://syslog-u.private.br-sao.logging.cloud.ibm.com`   | 166.9.83.26 \n 166.9.84.26 \n 166.9.82.27   | 
+| `Seoul (kr-seo)`         | `syslog://syslog-u.private.kr-seo.logging.cloud.ibm.com`   | 166.9.44.103 \n 166.9.42.123 \n 166.9.40.114  |
+| `Sydney (au-syd)`        | `syslog://syslog-u.private.au-syd.logging.cloud.ibm.com`   | 166.9.56.23 \n 166.9.52.9   | 
+| `Tokyo (jp-tok)`         | `syslog://syslog-u.private.jp-tok.logging.cloud.ibm.com`   | 166.9.42.27 \n 166.9.40.24  | 
+| `Toronto (ca-tor)`       | `syslog://syslog-u.private.ca-tor.logging.cloud.ibm.com`   | 166.9.76.32 \n 166.9.78.30 \n 166.9.77.29 | 
+| `Washington (us-east)`   | `syslog://syslog-u.private.us-east.logging.cloud.ibm.com`  | 166.9.22.39 \n 166.9.20.77 | 
+{: caption="Table 7. List of syslog-u public endpoints" caption-side="top"}
+
+
+
 
 ### Syslog TLS endpoints
 {: #endpoints_syslog_tls}

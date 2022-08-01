@@ -152,7 +152,7 @@ You can create and view logging service keys by using the {{site.data.keyword.cl
 ### Creating a service key by using the CLI
 {: #service_keys_cli_create}
 
-Only a single service key can be created using the CLI.  Using these commands to create a service key where one already exists will not create a new key.  If you need to create more than one service key, use the [UI](#service_keys_ui).
+Only a single service key can be created using the CLI.  Using these commands to create a service key where one already exists will not create a new key.  If you need to create more than one service key, use the [UI](#service_keys_ui) or use the [API]](#service_keys_api_create).
 {: important}
 
 To create a logging service key for a logging instance through the command line, complete the following steps:
@@ -274,7 +274,7 @@ You can manage service keys by using the Configuration API.
 ### List all keys
 {: #service_keys_api_list}
 
-To list all service keys that ae available in an instance, you can run the following request:
+To list all service keys that are available in an instance, you can run the following request:
 
 ```sh
 curl  https://API_ENDPOINT/v1/config/keys?type="service"
@@ -335,7 +335,7 @@ curl  https://api.us-south.logging.cloud.ibm.com/v1/config/keys/123456789"  -H "
 {: #service_keys_api_create}
 
 ```sh
-curl -X POST  https://API_ENDPOINT/v1/config/keys/KEY_ID
+curl -X POST  https://API_ENDPOINT/v1/config/keys?type="service"
   -H 'content-type: application/json' \
   -H 'servicekey: SERVICE_KEY' \
   -d '{"name": "KEY_NAME"}'
@@ -386,7 +386,7 @@ Where:
 To delete an service key, run the following command.
 
 ```sh
-curl -X DELETE "API_ENDPOINT/v1/config/keys/KEY_ID"  
+curl -X DELETE "https://API_ENDPOINT/v1/config/keys/KEY_ID"  
   -H 'content-type: application/json' \
   -H 'servicekey: SERVICE_KEY'
 ```

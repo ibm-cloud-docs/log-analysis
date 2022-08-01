@@ -235,7 +235,7 @@ curl  https://api.us-south.logging.cloud.ibm.com/v1/config/keys/123456789"  -H "
 {: #ingestion_key_api_create}
 
 ```sh
-curl -X POST  https://API_ENDPOINT/v1/config/keys/KEY_ID
+curl -X POST  https://API_ENDPOINT/v1/config/keys?type="ingestion"
   -H 'content-type: application/json' \
   -H 'servicekey: SERVICE_KEY' \
   -d '{"name": "KEY_NAME"}'
@@ -284,7 +284,7 @@ Where:
 To delete an ingestion key, run the following command.
 
 ```sh
-curl -X DELETE "API_ENDPOINT/v1/config/keys/KEY_ID"  
+curl -X DELETE "https://API_ENDPOINT/v1/config/keys/KEY_ID"  
   -H 'content-type: application/json' \
   -H 'servicekey: SERVICE_KEY'
 ```
