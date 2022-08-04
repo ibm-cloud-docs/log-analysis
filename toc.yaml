@@ -96,6 +96,7 @@ toc:
           - devops/archiving-ov.md
           - devops/archive.md
           - devops/archiving-manage-api.md
+          - terraform/terraform-archive.md
           - devops/archiving-la-monitor.md
           - devops/archiving-monitor.md
 
@@ -167,11 +168,15 @@ toc:
           label: Streaming data
           topics:
           - streaming.md
-          - streaming-configure.md
-          - streaming-configure-l2l.md
+          - topic: streaming-configure.md
+            navtitle: Streaming to Event Streams
+          - topic: streaming-configure-l2l.md
+            navtitle: Streaming to a logging instance
           - streaming-monitor.md
           - streaming-conditional.md
           - streaming-manage-api.md
+          - topic: terraform/terraform-streaming.md
+            navtitle: Streaming to Event Streams by using Terraform
 
       - devops/view_logs.md
       

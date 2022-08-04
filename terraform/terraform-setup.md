@@ -14,7 +14,7 @@ subcollection: log-analysis
 
 
 
-# Provisioning a {{site.data.keyword.la_short}} instance by using Terraform
+# Provisioning an instance by using Terraform
 {: #terraform-setup}
 
 Terraform on {{site.data.keyword.cloud}} enables predictable and consistent provisioning of {{site.data.keyword.cloud_notm}} services so that you can rapidly build complex, multitier cloud environments that follow Infrastructure as Code (IaC) principles. Similar to using the {{site.data.keyword.cloud_notm}} CLI or API and SDKs, you can automate the provisioning, update, and deletion of your {{site.data.keyword.la_full_notm}} instances by using HashiCorp Configuration Language (HCL).
@@ -361,20 +361,6 @@ Verify that the resources are created.
 - [Launch the *Observability* UI](/docs/log-analysis?topic=log-analysis-launch) and check the instance has been created.
 - [Launch *Access (IAM)*](https://cloud.ibm.com/iam/overview){: external}. Select **Service IDs** and look for the resource key.    
 - [Review the user assigned access in the console](/docs/account?topic=account-assign-access-resources#review-your-access-console).
-
-
-## Errors
-
-
-rror: Failed to query available provider packages
-│ 
-│ Could not retrieve the list of available versions for provider logdna/logdna: locked provider registry.terraform.io/logdna/logdna 1.5.0 does not match configured
-│ version constraint 1.7.0; must use terraform init -upgrade to allow selection of new versions
-╵
-
-users-MBP:logging-instance-archive luisalopezdesicanes$ terraform init -upgrade
-
-
 
 
 
