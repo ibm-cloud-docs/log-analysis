@@ -114,13 +114,16 @@ toc:
           label: Managing keys
           topics:
           - devops/ingestion_key.md
+          - terraform/terraform-ingestion-keys.md
           - devops/service_keys.md
+          - terraform/terraform-service-keys.md
 
       - topicgroup: 
           label: Managing resources
           topics:
           - devops/reuse_resource_definitions.md
           - devops/config_categories.md
+          - terraform/terraform-categories.md
       
       - topicgroup: 
           label: Logging agent
