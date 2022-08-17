@@ -198,6 +198,8 @@ toc:
           - devops/monitoring.md
           - alerts/sms.md
           - alerts/slack.md
+
+      - core/ha_dr_steps.md
   
   - navgroup: 
       id: reference
