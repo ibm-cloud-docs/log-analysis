@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2022
-lastupdated: "2022-07-21"
+lastupdated: "2022-08-18"
 
 keywords: IBM Cloud, Log Analysis, streaming
 
@@ -42,9 +42,9 @@ Complete the following steps to configure the connection between {{site.data.key
 
     2. In the **Region URL** field, enter the ingestion URL for the region where the {{site.data.keyword.la_short}} instance where you want to stream data is available, such as `https://logs.us-east.logging.cloud.ibm.com/logs/selfstream`. For more information, see [Ingestion URLs](/docs/log-analysis?topic=log-analysis-endpoints#endpoints_ingestion).
 
-    - If you configure your log sources to send data through private endpoints, make sure you configure a private ingestion endpoint for streaming.
+       - If you configure your log sources to send data through private endpoints, make sure you configure a private ingestion endpoint for streaming.
 
-    - If you configure your log sources to send data through private and public endpoints, make sure you configure a private ingestion endpoint for streaming.
+       - If you configure your log sources to send data through private and public endpoints, make sure you configure a private ingestion endpoint for streaming.
     
     3. Click **Save**.
 
@@ -60,14 +60,21 @@ To verify that sample data is streaming, complete the following steps:
 1. [Launch the {{site.data.keyword.la_short}} web UI](/docs/services/log-analysis?topic=log-analysis-launch).
 2. In the search bar, run the following query:
 
-    ```
+    ```text
     _line:"LogDNA test message" _app:"logdna-selfstream-config-validation"
     ```
     {: codeblock}
 
-3. Check the field **_meta._source._account** is set to the logging instance ID.
+3. Check the field **_meta._source._account** is set to the logging instance ID.  The following additional data is also displayed:
 
-    ![meta object](images/streaming-l2l-source.png "meta object") 
+   `_account`
+   :   Is the account ID of the account streaming the data.
+
+   `_instanceId`
+   :   Is the logging instance ID for the account.
+
+   `_region`
+   :   Is the region where the logging data originated. This is the specific region name for the environment where the data originated. 
 
 If you do not see data, do 1 of the following:
 - **Resend sample logs** to verify that sample data is streaming.
