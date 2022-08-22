@@ -51,7 +51,7 @@ Make note of the image you want to update.  The image will be named similar to `
 Do not use the `latest` or `stable` versions.
 {: note}
 
-The [LogDNA release notes](https://logdna.zendesk.com/hc/en-us/categories/360001626492-Release-Notes.htm){: external} lists all LogDNA enhancements and fixes, including enhancements and fixes to the LogDNA Agent.
+The [LogDNA release notes](https://docs.mezmo.com/changelog){: external} lists all LogDNA enhancements and fixes, including enhancements and fixes to the LogDNA Agent.
 
 ## Step 2. Set the cluster context
 {: #upgrade_log_analysis_agent_3_step2}
