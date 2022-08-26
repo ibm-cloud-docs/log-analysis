@@ -26,28 +26,10 @@ Use the {{site.data.keyword.la_full}} service to monitor and manage logs from a 
 {: shortdesc}
 
 
-You can collect and monitor system and application logs. 
-
 You can send logs to an {{site.data.keyword.la_full_notm}} instance via Rsyslog. 
-- TCP, UDP, and TCP+TLS are supported. 
 
-    - Use port 6514 when using TCP+TLS.
-
-    - Use port 514 when using TCP or UDP.
-
-    - Use a custom port if you cannot modify the message template for rsyslog with the logging instance information.
-
-        To use a custom port, you must enable a port to send logs via syslog to your logging instance. If you are using (a) the classic syslog protocol, (b) a custom port in syslog-ng, or (c) a custom port in rsyslog, there is no authentication available and anyone with knowledge of the endpoint can submit logs to your instance.  Depending on your environment, this may present a significant security risk. Use these configurations at your organization’s own risk.  Validate with your compliance and security teams whether this security risk is acceptable to your organization. 
-        {: important}
-
-        To disable a custom port, you can open an IBM support ticket. For information about opening an IBM support ticket, or about support levels and ticket severities, see [Getting support](/docs/get-support).
-
-- The rsyslog default format, RFC 5424 and RFC 3164 are automatically parsed.
-
-
-The rsyslog service must be installed on the PowerVS instance that you want to monitor. Rsyslog defaults to using TCP on port 514. 
-{: note}
-
+To configure syslog, you may need to enable a port to send logs via syslog to your logging instance. If you are using (a) the classic syslog protocol, (b) a custom port in `syslog-ng`, or (c) a custom port in `rsyslog`, there is no authentication available and anyone with knowledge of the endpoint can submit logs to your instance. As a result, depending on your environment, your use of the classic syslog protocol or custom port configurations with `syslog-ng` or `rsyslog` may present a significant security risk.  Use these configurations at your organization's own risk.  Validate with your compliance and security teams whether this security risk is acceptable to your organization.
+{: important}
 
 
 On the {{site.data.keyword.cloud_notm}}, configure a PowerVS instance to forward logs to an {{site.data.keyword.la_short}} instance by completing the following steps:
