@@ -51,3 +51,14 @@ The following table lists message ID prefixes for the [{{site.data.keyword.vpc_f
 
 
 
+
+## Developer tools
+{: #cloud_services_msg_format_developer_tools_msg_prefix}
+
+The following table lists message ID prefixes for the developer tools services that send logs to {{site.data.keyword.la_full_notm}}:
+
+| Service                                             | CRN service name  \n `crn-service-name`  | Message ID format      | Sample |
+|-----------------------------------------------------|-------------------------------------------|---------------------------|------------------|
+| {{site.data.keyword.en_full}}  | `event-notifications`    | `<crn-service-name>.#####<severity>` | `event-notifications.00001E` |
+{: caption="Table 3. Developer tools services" caption-side="top"} 
+

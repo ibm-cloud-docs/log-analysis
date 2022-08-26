@@ -40,6 +40,7 @@ toc:
           - infrastructure/windows.md
           - infrastructure/windows_server.md
           - infrastructure/windows-vpc.md
+          - infrastructure/powervs-rhel.md
       
       - topicgroup: 
           label: Logging with applications

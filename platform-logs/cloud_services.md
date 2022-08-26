@@ -91,6 +91,18 @@ You can monitor logs through the {{site.data.keyword.la_short}} instance that is
 To see the list of {{site.data.keyword.la_full_notm}} locations where these services send logs, see [Database services](/docs/log-analysis?topic=log-analysis-cloud_services_locations#cs_locations_database).
 
 
+## Developer tools
+{: #developer_tools}
+
+The following table lists services that send logs to {{site.data.keyword.la_full_notm}}:
+
+| Service     | Description | More info |
+|-------------|-------------|-----------|
+| [{{site.data.keyword.en_full}}](/docs/event-notifications?topic=event-notifications-getting-started) | {{site.data.keyword.en_short}} is a routing service that tells you about critical events that occur in your {{site.data.keyword.cloud}} account. You can filter and route event notifications from {{site.data.keyword.cloud_notm}} services like Monitoring, Security and Compliance Center, and Secrets Manager to communication channels like email, SMS, push notifications, webhook, slack, Microsoft&trade; Teams, and {{site.data.keyword.IBM_notm}} {{site.data.keyword.openwhisk_short}}.  | [More info](/docs/event-notifications?topic=event-notifications-logging)  |
+{: caption="Table 4. List of Developer tools services" caption-side="top"} 
+
+To see the list of {{site.data.keyword.la_full_notm}} locations where these services send logs, see [Developer tools](/docs/log-analysis?topic=log-analysis-cloud_services_locations#cs_locations_developer_tools).
+
 
 ## Integration services
 {: #integration}
@@ -101,7 +113,7 @@ The following table lists services that send logs to {{site.data.keyword.la_full
 |-------------|-------------|-------------------------------------------------------------------------|
 | [{{site.data.keyword.appconservicefull}}](/docs/AppConnect?topic=AppConnect-getting-started) | You can use {{site.data.keyword.appconservicefull}} to connect your applications.   | [More info](https://developer.ibm.com/integration/docs/app-connect/troubleshooting/monitoring-and-managing-app-connect-logs-in-logdna/){: external}  |
 | [{{site.data.keyword.mq_short}}](/docs/mqcloud?topic=mqcloud-mqoc_getting_started) | MQ on IBM Cloud enables you to quickly and easily deploy queue managers in the cloud and connect your applications to them, for reliable data transfer between different parts of your enterprise application landscape. | [More info](/docs/mqcloud?topic=mqcloud-logdna_logs) |
-{: caption="Table 4. List of integration Cloud services" caption-side="top"} 
+{: caption="Table 5. List of integration Cloud services" caption-side="top"} 
 
 To see the list of {{site.data.keyword.la_full_notm}} locations where these services send logs, see [Integration services](/docs/log-analysis?topic=log-analysis-cloud_services_locations#cs_locations_integration).
 

@@ -170,6 +170,40 @@ The following tables list the locations where automatic collection of database s
 {: row-headers}
 
 
+## Developer tools
+{: #cs_locations_developer_tools}
+
+The following table shows the locations where automatic collection of developer tools logs are enabled. You can monitor these logs through the {{site.data.keyword.la_full_notm}} instance that is configured with the **developer tools logs** in the same location where the developer tools resource is available.
+
+| Service                              | `Dallas (us-south)`                             |
+|--------------------------------------|-------------------------------------------------|
+| {{site.data.keyword.en_full}}        | ![Checkmark icon](../images/checkmark-icon.svg) |
+{: caption="Table 4. Developer tools in America" caption-side="top"}
+{: #cs-devtools-table-4}
+{: tab-title="America"}
+{: tab-group="cs_devtools"}
+{: class="simple-tab-table"}
+{: row-headers}
+
+| Service                              | `Sydney (au-syd)`                               |
+|--------------------------------------|-------------------------------------------------|
+| {{site.data.keyword.en_full}}        | ![Checkmark icon](../images/checkmark-icon.svg) |
+{: caption="Table 4. Developer tools in Asia Pacific" caption-side="top"}
+{: #cs-devtools-table-5}
+{: tab-title="Asia Pacific"}
+{: tab-group="cs_devtools"}
+{: class="simple-tab-table"}
+{: row-headers}
+
+| Service                               | `Frankfurt (eu-de)`                             | `London (eu-gb)`                                |
+|---------------------------------------|-------------------------------------------------|-------------------------------------------------|
+| {{site.data.keyword.en_full}}         | ![Checkmark icon](../images/checkmark-icon.svg) | ![Checkmark icon](../images/checkmark-icon.svg) |
+{: caption="Table 4. Developer tools in Europe" caption-side="top"}
+{: #cs-devtools-table-6}
+{: tab-title="Europe"}
+{: tab-group="cs_devtools"}
+{: class="simple-tab-table"}
+{: row-headers}ssss
 
 ## Integration services
 {: #cs_locations_integration}
