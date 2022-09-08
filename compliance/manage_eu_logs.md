@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2022
-lastupdated: "2021-03-28"
+lastupdated: "2022-09-07"
 
 keywords: IBM, Log Analysis, logging, overview
 
@@ -122,7 +122,7 @@ Notice that users in the account that have permissions to view logs through the 
 ## Step 7. Archiving logs
 {: #manage_eu_logs_step7}
 
-When you archive logs from a logging instance to a COS bucket, consider the following information:
+When you archive logs from a logging instance to a {{site.data.keyword.cos_short}} (COS) bucket, consider the following information:
 * When you provision an instance of the COS service, this instance is a global one in your account. It is not region bound.
 * You must configure a bucket that complies with the EU-Supported and GDPR regulations. For the list of COS EU-supported endpoints, see [EU-supported endpoints](/docs/cloud-object-storage?topic=cloud-object-storage-endpoints#endpoints-eu-managed).
 
@@ -149,7 +149,7 @@ To learn how to configure archiving for your logging instance, see [Archiving lo
 
 You can use this service to analyze data from logging archived files in COS. 
 
-Once you have SQL Query running on IBM Cloud, you can immediately start querying your data using the SQL Query user interface, programmatically by using either the REST API or the Python `ibmcloudsql` library, or write a serverless function by using {{site.data.keyword.openwhisk_short}}.
+Once you have the {{site.data.keyword.sqlquery_short}} service running on IBM Cloud, you can immediately start querying your data using the SQL Query user interface, programmatically by using either the REST API or the Python `ibmcloudsql` library, or write a serverless function by using {{site.data.keyword.openwhisk_short}}.
 
 When you query logs, consider the following information:
 * You must provision an instance of the {{site.data.keyword.sqlquery_short}} service in Frankfurt.
