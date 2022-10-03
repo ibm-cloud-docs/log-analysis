@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018, 2022
-lastupdated: "2022-04-21"
+lastupdated: "2022-10-03"
 
 keywords: Log Analysis release notes
 
@@ -19,6 +19,19 @@ content-type: release-note
 
 Use these release notes to learn about the latest updates to {{site.data.keyword.la_full}}.  
 {: shortdesc}
+
+## 03 October 2022
+{: #log-analysis-oct0322}
+{: release-note}
+
+Availability of the {{site.data.keyword.la_full_notm}} agent 3.6
+
+:   Windows logging agent 3.6 is now available. This agent is a rust agent that includes Windows File Logging support.
+
+    `MZ_` environment variables are available.  
+
+    [For more information about the agent.](https://docs.mezmo.com/changelog/mezmo-agent-3-6--ga-){: external} [Learn about configuring the agent.](/docs/log-analysis?topic=log-analysis-config_agent_windows_v3)
+
 
 ## 06 May 2022
 {: #log-analysis-may0622}
@@ -139,3 +152,4 @@ Enhanced data residency, compliance, and security
 
 Introducing {{site.data.keyword.la_full_notm}}
 :   You can use {{site.data.keyword.la_full_notm}} to manage system and application logs in the {{site.data.keyword.cloud_notm}}. {{site.data.keyword.la_full_notm}} offers administrators, DevOps teams, and developers advanced features to filter, search, and tail log data, define alerts, and design custom views to monitor application and system logs.   [Learn more](/docs/log-analysis?topic=log-analysis-getting-started#getting-started) 
+
