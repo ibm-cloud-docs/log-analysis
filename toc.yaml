@@ -135,11 +135,14 @@ toc:
           - agent/config_agent_os_cluster.md
           - agent/config_agent_linux.md
           - agent/config_agent_linux_rpm.md
+          - agent/config_agent_windows.md
+          - agent/config_agent_windows_v3.md
           - agent/detach_agent.md
           - agent/exclude_logs_from_agent.md
           - agent/adding_tags.md
           - agent/upgrade_logdna_agent_2.md
           - agent/upgrade_logdna_agent_3.md
+          - agent/config_agent_windows_upgrade.md
       
       - topicgroup: 
           label: Enhancing security
