@@ -4,7 +4,7 @@ copyright:
   years:  2018, 2022
 lastupdated: "2021-10-06"
 
-keywords: IBM, Log Analysis, logging, config agent
+keywords: 
 
 subcollection: log-analysis
 
@@ -12,7 +12,7 @@ subcollection: log-analysis
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Configuring a Logging agent for a Linux RPM-based
+# Configuring a Logging agent V2 for a Linux RPM-based
 {: #config_agent_linux_rpm}
 
 The logging agent is responsible for collecting and forwarding logs to your {{site.data.keyword.la_full}} instance. After you provision an instance of {{site.data.keyword.la_full_notm}}, you must configure a logging agent for each log source that you want to monitor.
@@ -148,6 +148,25 @@ Next, verify that the agent is running.
 sudo service logdna-agent status
 ```
 {: codeblock}
+
+### Agent V3
+{: #config_agent_linux_rpm_step3_v3}
+
+Start the logdna-agent service by running the following command:
+
+```text
+sudo systemctl start logdna-agent
+```
+{: codeblock}
+
+Next, verify that the agent is running.
+
+```text
+systemctl status logdna-agent
+```
+{: codeblock}
+
+
 
 
 ## Appendix. Commands to manage the agent
