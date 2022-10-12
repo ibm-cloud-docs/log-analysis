@@ -22,6 +22,9 @@ subcollection: log-analysis
 ![The image shows the locations where the {{site.data.keyword.la_full_notm}} service is available.](images/world-map_min.png)
 {: caption="Figure 1. Displays the regions where you can create and manage {{site.data.keyword.la_full_notm}} resources." caption-side="bottom"}
 
+This image is an artistic representation and does not reflect actual political or geographic boundaries.
+{: note}
+
 You can create {{site.data.keyword.la_full_notm}} resources in one of the supported {{site.data.keyword.cloud_notm}} locations, which represent the geographic area where your {{site.data.keyword.la_full_notm}} requests are handled and processed. 
 
 

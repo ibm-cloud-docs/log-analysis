@@ -63,6 +63,7 @@ toc:
               
       - topic: releasenotes.md
         navtitle: Release notes
+      - releasenotes_notifications.md
 
   - navgroup: 
       id: howto
@@ -151,6 +152,7 @@ toc:
           - agent/adding_tags.md
           - agent/upgrade_logdna_agent_2.md
           - agent/upgrade_logdna_agent_3.md
+          - agent/config_agent_windows_upgrade.md
       
       - topicgroup: 
           label: Enhancing security
