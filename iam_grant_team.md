@@ -38,7 +38,7 @@ For a user to monitor data within the context of a group, you must grant the use
 You can grant any of the following IAM service roles:
 - Standard-member: A standard-member role allows a user to monitor data through views, dashboards, screens, and alerts, and to manage resources such as dashboards, and alerts that are in scope for the group.
 - Reader: A reader role allows a user to monitor data through views, dashboards, screens, and alerts that are in scope for the group.
-- Manager: The manager role is an instance level role that grants administrative permissions. If you grant this role in a policy for a group, you are granting admin permissions over the instance to the users that belong to that group.
+- Manager: The manager role is an instance level role that grants administrative permissions. If you grant this role in a policy for a group, you are granting admin permissions over the instance to the users that belong to that group. Managers can see all log data.
 
 
 The following table shows the user roles that you can grant a user to work with the {{site.data.keyword.la_short}} service:
@@ -66,7 +66,7 @@ To grant a user access to 1 or more groups, an administrator must grant the user
 
 For example, a user that needs to work in a group requires the following policies:
 * A policy with a platform role **viewer** to allow the user to see logging instances in the {{site.data.keyword.cloud_notm}}. 
-* A policy to grant the user access to 1 group. The service role determines the permissions of the user to work with data that is in scope for the group.
+* A policy to grant the user access to 1 group. The service role determines the permissions of the user to work with data that is in scope for the group. 
 
 
 Complete the following steps to grant a user or service ID permissions to work with the {{site.data.keyword.la_full_notm}} service within the context of a group.
@@ -169,7 +169,8 @@ Complete the following steps to assign a policy to an access group through the U
 
 Next, you must add a policy that grants the user permissions to work with data in the {{site.data.keyword.la_short}} service within the context of a group.
 
-When you define the policy, you need to select a service role. Service access roles define a user's or service’s ability to perform actions on a service instance. The service access roles are manager, standard-member, and reader.
+When you define the policy, you need to select a service role. Service access roles define a user's or service’s ability to perform actions on a service instance. The service access roles are manager, standard-member, and reader. 
+
 
 
 ### Add permissions through the CLI
@@ -182,7 +183,7 @@ ibmcloud iam access-group-policy-create GROUP_NAME {-f, --file @JSON_FILE | --ro
 ```
 {: codeblock}
 
-Where valid roles are `Reader`, `Standard-member`, and `Manager`.
+Where valid roles are `Reader`, `Standard-member` and `manager`.
 
 You must use a JSON file to create the group policy.
 {: important}

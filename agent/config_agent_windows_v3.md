@@ -225,7 +225,7 @@ Whenever you change the `logdna.conf` file you must restart the agent to pick up
    :   Stop the agent when it is running.
 
    Restart
-   :   Stop and restart a renning agent.
+   :   Stop and restart a running agent.
 
 If the agent does not start, or restart, check the `c:\ProgramData\logs\logdna-agent-svc_rCURRENT.log` for messages to help you resolve any configuration errors.
 {: tip}

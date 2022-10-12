@@ -63,6 +63,7 @@ toc:
               
       - topic: releasenotes.md
         navtitle: Release notes
+      - releasenotes_notifications.md
 
   - navgroup: 
       id: howto
@@ -130,13 +131,22 @@ toc:
       - topicgroup: 
           label: Logging agent
           topics:
-          - agent/logdna_agent_image.md
-          - agent/config_agent_kube_cluster.md
-          - agent/config_agent_os_cluster.md
-          - agent/config_agent_linux.md
-          - agent/config_agent_linux_rpm.md
-          - agent/config_agent_windows.md
-          - agent/config_agent_windows_v3.md
+          - topic: agent/logdna_agent_image.md
+            navtitle: Getting info on agent versions
+          - topic: agent/config_agent_kube_cluster.md
+            navtitle: Configuring an agent on Kubernetes
+          - topic: agent/config_agent_os_cluster.md
+            navtitle: Configuring an agent on Openshift
+          - topic: agent/config_agent_linux.md
+            navtitle: Configuring agent V2 on RPM-Linux
+          - topic: agent/config_agent_rhel.md
+            navtitle: Configuring agent V3 on RPM-Linux
+          - topic: agent/config_agent_linux_rpm.md
+            navtitle: Configuring agent V2 on RPM-Linux
+          - topic: agent/config_agent_windows_v3.md
+            navtitle: Configuring agent V3 on Windows
+          - topic: agent/config_agent_windows.md
+            navtitle: Configuring agent V2 on Windows
           - agent/detach_agent.md
           - agent/exclude_logs_from_agent.md
           - agent/adding_tags.md
