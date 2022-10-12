@@ -125,7 +125,7 @@ Complete the following steps:
 
       ```yaml
       - name: LOGDNA_EXCLUDE
-        value: /var/log/!(containers)**,/var/log/containers/*_kube-system_*
+        value: /var/log/!(containers)/**,/var/log/containers/*_kube-system_*
       ```
       {: codeblock}
 
