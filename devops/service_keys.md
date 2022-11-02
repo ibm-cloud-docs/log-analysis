@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2022
-lastupdated: "2022-07-28"
+lastupdated: "2022-11-03"
 
 keywords: IBM, Log Analysis, logging, service keys
 
@@ -11,23 +11,23 @@ subcollection: log-analysis
 ---
 
 {{site.data.keyword.attribute-definition-list}}
- 
+
 # Managing service keys
 {: #service_keys}
 
 In an {{site.data.keyword.la_full}} instance you can create, delete, and view service keys by using the UI.  You can also create and view service keys by using the CLI and API.
 
-A service key is a unique code that is passed in an API request to identify the calling application or user. 
+A service key is a unique code that is passed in an API request to identify the calling application or user.
 
 You must use a logging service key to complete any of the following tasks:
-- Export data programmatically 
+- Export data programmatically
 - Manage views and alerts programmatically by using the Configuration API or Terraform.
 - Configure resources such as groups, archiving, keys by using the Configuration API or Terraform.
 
 You can enable a maximum of 20 service keys for each instance.
 {: important}
 
- 
+
 ## Prereqs. Check your IAM permissions to manage service keys
 {: #service_keys_prereq}
 
@@ -50,23 +50,23 @@ You can create, delete, and view service keys through the UI.
 {: #service_keys_create}
 
 You must have the **manager** role for the {{site.data.keyword.la_short}} service to complete this step.
-{: important} 
+{: important}
 
 For more information, see [service roles](/docs/log-analysis?topic=log-analysis-iam#service).
-  
+
 Complete the following steps to create a service key:
 
 1. [Launch the {{site.data.keyword.la_short}} web UI](/docs/log-analysis?topic=log-analysis-launch).
 
-2. Click the **Settings** icon ![Settings icon](../images/admin.png). 
+2. Click the **Settings** icon ![Settings icon](../images/admin.png).
 
-3. Select **Organization**. 
+3. Select **Organization**.
 
 4. Select **API keys**.
 
-   If you have the correct permissions, the available service keys are displayed in the **Service Keys** section.   
+   If you have the correct permissions, the available service keys are displayed in the **Service Keys** section.
 
-5. Click **Generate Service Key**. A new key is added to the list. 
+5. Click **Generate Service Key**. A new key is added to the list.
 
 
 
@@ -74,7 +74,7 @@ Complete the following steps to create a service key:
 {: #service_keys_delete}
 
 You must have the **manager** role for the {{site.data.keyword.la_full_notm}} service to complete this step.
-{: important} 
+{: important}
 
 For more information, see [service roles](/docs/log-analysis?topic=log-analysis-iam#service).
 
@@ -83,13 +83,13 @@ Complete the following steps to delete a service key:
 
 1. [Launch the {{site.data.keyword.la_full_notm}} web UI](/docs/log-analysis?topic=log-analysis-launch).
 
-2. Click the **Settings** icon ![Settings icon](../images/admin.png). 
+2. Click the **Settings** icon ![Settings icon](../images/admin.png).
 
-3. Select **Organization**. 
+3. Select **Organization**.
 
 4. Select **API keys**.
 
-   If you have the correct permissions, the available service keys are displayed in the **Service Keys** section.   
+   If you have the correct permissions, the available service keys are displayed in the **Service Keys** section.
 
 5. Delete the key by clicking the **X** next to the key to be deleted.
 
@@ -98,7 +98,7 @@ Complete the following steps to delete a service key:
 {: #service_keys_view}
 
 You must have the **manager** role for the {{site.data.keyword.la_full_notm}} service to complete this step.
-{: important} 
+{: important}
 
 For more information, see [service roles](/docs/log-analysis?topic=log-analysis-iam#service).
 
@@ -106,13 +106,13 @@ Complete the following steps to view a service key:
 
 1. [Launch the {{site.data.keyword.la_full_notm}} web UI](/docs/log-analysis?topic=log-analysis-launch).
 
-2. Click the **Settings** icon ![Settings icon](../images/admin.png). 
+2. Click the **Settings** icon ![Settings icon](../images/admin.png).
 
-3. Select **Organization**. 
+3. Select **Organization**.
 
 4. Select **API keys**.
 
-   If you have the correct permissions, the available service keys are displayed in the **Service Keys** section.   
+   If you have the correct permissions, the available service keys are displayed in the **Service Keys** section.
 
 
 
@@ -125,11 +125,11 @@ To renew the service key for an {{site.data.keyword.la_full_notm}} instance by u
 
 1. [Launch the {{site.data.keyword.la_full_notm}} web UI](/docs/log-analysis?topic=log-analysis-view_logs#view_logs_step2).
 
-2. Click the **Settings** icon ![Settings icon](../images/admin.png) &gt; **Organization**. 
+2. Click the **Settings** icon ![Settings icon](../images/admin.png) &gt; **Organization**.
 
 3. Select **API keys**.
 
-    You can see the service keys that are enabled. 
+    You can see the service keys that are enabled.
 
 4. Select **Generate Service Key**.
 
@@ -180,11 +180,11 @@ To create a logging service key for a logging instance through the command line,
     {: pre}
 
     Where NAME is the desired name of the service key and SERVICE_INSTANCE is the name of the service instance from the previous step.
- 
+
     The output from this command includes the field **service_key** that contains the logging service key for the instance.
 
 6. Restrict access to the {{site.data.keyword.cloud_notm}} resource service key so that only users that have the `administrator` and `manager` roles can see information associated with the service key.
-    
+
     Identify the service ID associated with the service that you created in the previous step. Run the following command to list all the service IDs that are available in the resource group:
 
     ```text
@@ -259,7 +259,7 @@ To get the service key through the command line, complete the following steps:
     {: pre}
 
     where KEY_NAME is the name of the key obtained in the previous step.
- 
+
     The output from this command includes the field **service_key** that contains a service key for the instance.  If no service key has been created for the instance, or, if you do not have **manager** access, no service key will be returned.
 
 
@@ -358,7 +358,7 @@ Where:
 {: #service_keys_api_update}
 
 ```sh
-curl -X POST  https://API_ENDPOINT/v1/config/keys/KEY_ID
+curl -X PUT  https://API_ENDPOINT/v1/config/keys/KEY_ID
   -H 'content-type: application/json' \
   -H 'servicekey: SERVICE_KEY' \
   -d '{"name": "KEY_NAME"}'
@@ -386,7 +386,7 @@ Where:
 To delete an service key, run the following command.
 
 ```sh
-curl -X DELETE "https://API_ENDPOINT/v1/config/keys/KEY_ID"  
+curl -X DELETE "https://API_ENDPOINT/v1/config/keys/KEY_ID"
   -H 'content-type: application/json' \
   -H 'servicekey: SERVICE_KEY'
 ```
@@ -427,6 +427,3 @@ To rotate a key, complete the following steps:
 
 4. After you rotate the service key, you must update any operation processes where the service key is used with the new value.
 {: important}
-
-
-
