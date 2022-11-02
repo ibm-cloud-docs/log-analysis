@@ -2,7 +2,7 @@
 
 copyright:
   years:  2022
-lastupdated: "2022-09-19"
+lastupdated: "2022-11-03"
 
 keywords: IBM, Log Analysis, logging, config agent, Windows
 
