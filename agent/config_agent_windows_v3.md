@@ -103,7 +103,7 @@ log:
   dirs:
     - "C:\\ProgramData\\logs"
   include:
-    glob: 
+    glob:
       - "*.log"
     regex: []
   exclude:
@@ -125,22 +125,25 @@ Configure the following information:
 :   Set to an ingestion key that is enabled in the logging instance.
 
 `params.tags`
-:   You can define a comma separated list of metadata that the agent includes with each log line. 
+:   You can define a comma separated list of metadata that the agent includes with each log line.
 
 `params.hostname`
-:   You can include the name of the host. This information is included with each log line. 
+:   You can include the name of the host. This information is included with each log line.
 
 `log.dirs`
-:   You can configure other directories that you want the agent to monitor for logs.
+:   You can configure directories that you want the agent to monitor for logs.
+
+    You must specify two backslashes (`\\`) when specifying the directory. For example, `C:\\ProgramData\\logs`.
+    {: important}
 
 `log.include.glob`
 :   You can configure glob patterns to define the types of log files that the agent processes.
 
-    For example: 
-    
-    Specify `*.log` to process any log with extension `.log`. 
+    For example:
 
-    Specify `*.txt` to process any log with extension `.txt`. 
+    Specify `*.log` to process any log with extension `.log`.
+
+    Specify `*.txt` to process any log with extension `.txt`.
 
 `log.include.regex`
 :   You can configure regex patterns to define the types of log files that the agent processes.
@@ -165,7 +168,7 @@ Configure the following information:
     Set to `smallfiles` so that the agent checks the agent state file and uses the last recorded state to continue processing. If the file is not present, the agent processes data in the file from the beginning when the file is less than 8 KB, and processes data from the end when the file is larger than 8 KB.
 
 You can use `hostname` and `tags` values to search logs.
-{: tip} 
+{: tip}
 
 The following is an example `logdna.conf` file:
 
@@ -187,7 +190,7 @@ log:
     - "C:\\ProgramData\\logs"
     - "C:\\ProgramData\\otherlogs"
   include:
-    glob: 
+    glob:
       - "*.log"
       - "*.txt"
     regex:
@@ -229,7 +232,3 @@ Whenever you change the `logdna.conf` file you must restart the agent to pick up
 
 If the agent does not start, or restart, check the `c:\ProgramData\logs\logdna-agent-svc_rCURRENT.log` for messages to help you resolve any configuration errors.
 {: tip}
-
-
-
-
