@@ -25,11 +25,11 @@ Through the {{site.data.keyword.la_full_notm}} web UI, you can apply search and 
 Before you start, check that your user ID has permissions to launch the web UI and view events. The following table lists the minimum roles that a user must have to be able to launch the {{site.data.keyword.la_full_notm}} web UI, and view, search, and filter events:
 
 | Role                      | Permission granted            |
-|---------------------------|-------------------------------|  
+|---------------------------|-------------------------------|
 | Platform role: `viewer`     | Allows the user to view the list of service instances in the Observability dashboard. |
 | Service role: `reader`      | Allows the user to launch the web UI and view events in the web UI.  |
 | Service role: `standard-member`      | Allows the user save a view based on a search.  |
-{: caption="Table 1. IAM roles" caption-side="top"} 
+{: caption="Table 1. IAM roles" caption-side="top"}
 
 For more information on how to configure policies for a user, see [Granting user permissions to a user or service ID](/docs/services/log-analysis?topic=log-analysis-iam_view_events#iam_view_events).
 
@@ -41,26 +41,29 @@ Complete the following steps:
 
 1. [Go to the web UI](/docs/services/log-analysis?topic=log-analysis-launch#launch).
 2. Click the **Views** icon ![Views icon](images/views.png "Views icon").
-3. Select **Everything** or a view. 
+3. Select **Everything** or a view.
 
 
 ## Step 2. Select the set of logs to display through a view by applying a search query
 {: #views_step2}
 
-To search for specific logs, you can apply a search query. 
+To search for specific logs, you can apply a search query.
 
 * You can do simple searches (single term string search), compound search (multiple search terms and operators), field searches if the log line can be parsed, and others.
 * AND and OR operators are case-sensitive and must be capitalized.
 * Use `FieldName:==FieldValue` to search for a specific field value.
-* Use `FieldName:Value` to search for field values that start with that value. 
+* Use `FieldName:Value` to search for field values that start with that value.
 
 You can only search logs for the number of days that is specified through the instance's service plan.
 {: important}
 
+If you are searching for Windows logs, you must use double slashes (`//`) in the search query even though the console will show directories with single slashes.
+
+![Example search for Windows logs](images/windows-search.png "Example search for Windows logs"){: caption="Figure 1. Example search for Windows logs" caption-side="bottom"}
 
 Complete the following steps:
-1. Enter a search query. 
-2. Press **Enter**. 
+1. Enter a search query.
+2. Press **Enter**.
 
 When you run a query, notice that the name of the view changes to **Unsaved View**.
 
@@ -85,12 +88,12 @@ host:ibm-cloud-databases-prod
 ### Query by log criticallity
 {: #views_step2_2}
 
-Each log has a **level** field that defines the level of threat the log issue might have. 
+Each log has a **level** field that defines the level of threat the log issue might have.
 
 Valid values in ascending order of severity are shown in the following table.
 
 | Value                      | Description            |
-|---------------------------|-------------------------------|  
+|---------------------------|-------------------------------|
 | `N/A` | Log entries with no level specified. |
 | `INFO` | An informational log entry providing information about the routine operations of the service. |
 | `REQUEST` | A log entry indicating a request to the service. |
@@ -99,7 +102,7 @@ Valid values in ascending order of severity are shown in the following table.
 | `WARN` | A log entry providing information about an issue that might potentially indicate a problem. |
 | `ERROR`| A log entry indicating a problem with the operation of the service. |
 | `CRIT` | A log entry indicating a critial issue with the operation of the service. |
-{: caption="Table 2. Levels" caption-side="top"} 
+{: caption="Table 2. Levels" caption-side="top"}
 
 This is a list of possible values.  The actual available values will vary depending on the service or host generating the logs.
 {: important}
@@ -122,7 +125,7 @@ level:ERROR
 ### Query by label
 {: #views_step2_3}
 
-You can also query by labels specified in the log entries.  
+You can also query by labels specified in the log entries.
 
 To see the available labels, open a log entry in the {{site.data.keyword.la_full_notm}} UI. Available labels will be listed in the `LABELS` section.
 
@@ -151,7 +154,7 @@ After you apply the search query to the **Everything** view or to an existing cu
 {: #views_step4}
 
 There are different options to customize how you see data in a view:
-* You can modify the properties of a view. 
+* You can modify the properties of a view.
 * You can rename a view, add or modify its description, and apply a specific line format.
 * You can change the `log format` in the *USER PREFERENCES* section.
 * You can apply a line template from the *Tools* section. Notice that this overrides any other line configuration. If you select **Persist these settings**, all views in the UI will show data per the line format that is specified in this section.
@@ -215,9 +218,9 @@ Complete the following steps to highlight terms in a view:
 {: #views_line}
 
 The following are guidelines when defining a line templates:
-* Use mustache style `{{field.name}}` or bash style `${field.name}` variables to construct your template. 
-* Use `{{line}}` or `$@` to reference the original line. 
-* All other characters or strings are interpreted as a text literal. 
+* Use mustache style `{{field.name}}` or bash style `${field.name}` variables to construct your template.
+* Use `{{line}}` or `$@` to reference the original line.
+* All other characters or strings are interpreted as a text literal.
 
 
 For example, you can define a line template as `{{_host}} -- {{_label.database}} -- {{message}}` to see these fields for each log entry in a view.
@@ -240,5 +243,3 @@ Complete the following steps:
 3. Enter or modify the description in the **Description** section.
 
 4. Click **Save properties**.
-
-
