@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2022
-lastupdated: "2021-03-28"
+lastupdated: "2022-11-10"
 
 keywords: IBM, Log Analysis, logging, iam, manage user access
 
@@ -12,16 +12,16 @@ subcollection: log-analysis
 
 {{site.data.keyword.attribute-definition-list}}
 
- 
+
 # Managing access with IAM
 {: #iam}
 
-{{site.data.keyword.iamlong}} (IAM) enables you to securely authenticate users and control access to all cloud resources consistently in the {{site.data.keyword.cloud_notm}}. 
+{{site.data.keyword.iamlong}} (IAM) enables you to securely authenticate users and control access to all cloud resources consistently in the {{site.data.keyword.cloud_notm}}.
 {: shortdesc}
 
 **Every user that accesses the {{site.data.keyword.la_full_notm}} service in your account must be assigned an access policy with an IAM user role defined.** The policy determines what actions the user can perform within the context of the service or instance you select. The allowable actions are customized and defined as operations that are allowed to be performed on the service. The actions are then mapped to IAM user roles.
 
-*Policies* enable access to be granted at different levels. Some of the options include the following: 
+*Policies* enable access to be granted at different levels. Some of the options include the following:
 
 * Access to all IAM-enabled services in your account
 * Access across all instances of the service in a single region in your account
@@ -42,7 +42,7 @@ subcollection: log-analysis
 ## Managing access by using access groups
 {: #groups}
 
-To manage access or assign new access for users by using access groups, you must be the account owner, administrator or editor on all Identity and Access enabled services in the account, or the assigned administrator or editor for the IAM Access Groups Service. 
+To manage access or assign new access for users by using access groups, you must be the account owner, administrator or editor on all Identity and Access enabled services in the account, or the assigned administrator or editor for the IAM Access Groups Service.
 
 Choose any of the following actions to manage access groups in the {{site.data.keyword.cloud_notm}}:
 
@@ -53,7 +53,7 @@ Choose any of the following actions to manage access groups in the {{site.data.k
 ## Managing access by assigning policies directly to users
 {: #users}
 
-To manage access or assign new access for users by using IAM policies, you must be the account owner, administrator on all services in the account, or an administrator for the particular service or service instance. 
+To manage access or assign new access for users by using IAM policies, you must be the account owner, administrator on all services in the account, or an administrator for the particular service or service instance.
 
 Choose any of the following actions to manage IAM policies in the {{site.data.keyword.cloud_notm}}:
 
@@ -61,8 +61,10 @@ Choose any of the following actions to manage IAM policies in the {{site.data.ke
 * To revoke permissions, see [Removing access](/docs/account?topic=account-assign-access-resources#removing_access).
 * To review a user's permissions, see [Reviewing your assigned access](/docs/account?topic=account-assign-access-resources#review_your_access).
 
+## Managing access through trusted profiles
+{: #iam-profiles}
 
-
+[Trusted profiles](/docs/account?topic=account-identity-overview#trustedprofiles-bestpract) are supported.
 
 ## {{site.data.keyword.cloud_notm}} platform roles
 {: #platform}
@@ -128,7 +130,7 @@ The following table identifies the IAM actions that are assigned to the platform
 
 | Role type         | Role              | IAM actions |
 |-------------------|-------------------|--------------|
-| Platform          | `administrator`   | `logdna.dashboard.view`  \n `logdna.dashboard.manage` | 
+| Platform          | `administrator`   | `logdna.dashboard.view`  \n `logdna.dashboard.manage` |
 | Service           | `manager`         | `logdna.dashboard.view`  \n `logdna.dashboard.manage` |
 | Service           | `writer`          | `logdna.dashboard.view`  \n `logdna.dashboard.member` |
 | Service           | `reader`          | `logdna.dashboard.view`  \n `logdna.dashboard.read` |
@@ -145,6 +147,3 @@ You can see which access policies are set for you in the [{{site.data.keyword.cl
 2. Click your name in the user table.
 3. Click the **Access policies** tab to see your access policies.
 4. Click the **Access groups** tab to see the access groups where you are a member. Check the policies for each group.
-
-
-
