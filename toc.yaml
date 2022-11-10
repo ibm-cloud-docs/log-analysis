@@ -11,15 +11,15 @@ toc:
     path: log-analysis
     label: Log Analysis
 
-  entries: 
-  - navgroup: 
+  entries:
+  - navgroup:
       id: learn
       topics:
 
       - getting-started.md
       - agent/logdna_agent.md
-      
-      - topicgroup: 
+
+      - topicgroup:
           label: Logging with IBM Cloud services
           topics:
           - platform-logs/config_svc_logs.md
@@ -27,8 +27,8 @@ toc:
           - platform-logs/cloud_services_locations.md
           - platform-logs/cloud_services_msg_prefix.md
           - platform-logs/cloud_services_agent.md
-   
-      - topicgroup: 
+
+      - topicgroup:
           label: Logging with infrastructure
           topics:
           - infrastructure/infra_logging.md
@@ -41,36 +41,36 @@ toc:
           - infrastructure/windows_server.md
           - infrastructure/windows-vpc.md
           - infrastructure/powervs-rhel.md
-      
-      - topicgroup: 
+
+      - topicgroup:
           label: Logging with applications
           topics:
           - app-logs/app_logging.md
           - app-logs/ingest.md
           - app-logs/ingest_python.md
 
-      - topicgroup: 
+      - topicgroup:
           label: Security and compliance
           topics:
           - compliance/adoption.md
           - compliance/manage_eu_logs.md
 
-      - topicgroup: 
+      - topicgroup:
           label: Tutorials
           topics:
           - tutorial/tutorial_use_LogDNA.md
           - tutorial/kube_reset_ingestion.md
-              
+
       - topic: releasenotes.md
         navtitle: Release notes
       - releasenotes_notifications.md
 
-  - navgroup: 
+  - navgroup:
       id: howto
       topics:
       - observe.md
 
-      - topicgroup: 
+      - topicgroup:
           label: Provisioning
           topics:
           - provision.md
@@ -80,8 +80,8 @@ toc:
           - remove.md
 
       - monitor_logs.md
-      
-      - topicgroup: 
+
+      - topicgroup:
           label: Controlling access
           topics:
           - iam.md
@@ -91,8 +91,8 @@ toc:
           - iam_view_events.md
           - devops/work_iam.md
           - private_endpoints_only.md
-      
-      - topicgroup: 
+
+      - topicgroup:
           label: Archiving
           topics:
           - devops/archiving-ov.md
@@ -103,7 +103,7 @@ toc:
           - devops/archiving-monitor.md
           - sqlquery.md
 
-      - topicgroup: 
+      - topicgroup:
           label: Managing costs and data
           topics:
           - devops/control_usage.md
@@ -113,7 +113,7 @@ toc:
           - control_usage_quotas.md
           - devops/control_usage_api.md
 
-      - topicgroup: 
+      - topicgroup:
           label: Managing keys
           topics:
           - devops/ingestion_key.md
@@ -121,14 +121,14 @@ toc:
           - devops/service_keys.md
           - terraform/terraform-service-keys.md
 
-      - topicgroup: 
+      - topicgroup:
           label: Managing resources
           topics:
           - devops/reuse_resource_definitions.md
           - devops/config_categories.md
           - terraform/terraform-categories.md
-      
-      - topicgroup: 
+
+      - topicgroup:
           label: Logging agent
           topics:
           - topic: agent/logdna_agent_image.md
@@ -138,7 +138,7 @@ toc:
           - topic: agent/config_agent_os_cluster.md
             navtitle: Configuring an agent on Openshift
           - topic: agent/config_agent_linux.md
-            navtitle: Configuring agent V2 on RPM-Linux
+            navtitle: Configuring agent on Linux Ubuntu or Debian
           - topic: agent/config_agent_rhel.md
             navtitle: Configuring agent V3 on RPM-Linux
           - topic: agent/config_agent_linux_rpm.md
@@ -153,36 +153,36 @@ toc:
           - agent/upgrade_logdna_agent_2.md
           - agent/upgrade_logdna_agent_3.md
           - agent/config_agent_windows_upgrade.md
-      
-      - topicgroup: 
+
+      - topicgroup:
           label: Enhancing security
           topics:
           - core/architecture-workload-isolation.md
           - core/service-connection.md
           - core/data-security.md
-      
-      - topicgroup: 
+
+      - topicgroup:
           label: Exporting logs
           topics:
           - devops/export_config.md
           - devops/export.md
           - devops/export_api.md
           - devops/export_api_v2.md
-      
-      - topicgroup: 
+
+      - topicgroup:
           label: Logging UI
           topics:
           - launch.md
           - views.md
           - config.md
           - get_logdna_web_url.md
-      
-      - topicgroup: 
+
+      - topicgroup:
           label: Logging and monitoring
           topics:
           - core/at_events.md
-      
-      - topicgroup: 
+
+      - topicgroup:
           label: Streaming data
           topics:
           - streaming.md
@@ -197,8 +197,8 @@ toc:
             navtitle: Streaming to Event Streams by using Terraform
 
       - devops/view_logs.md
-      
-      - topicgroup: 
+
+      - topicgroup:
           label: Working with alerts
           topics:
           - alerts/alerts.md
@@ -215,24 +215,24 @@ toc:
           - alerts/slack.md
 
       - core/ha_dr_steps.md
-  
-  - navgroup: 
+
+  - navgroup:
       id: reference
-      topics: 
+      topics:
       - endpoints.md
       - cidr.md
       - regions.md
       - service_plans.md
       - core/shared-responsibilities.md
-      
-      - topicgroup: 
+
+      - topicgroup:
           label: Logging CLI
           topics:
           - /log-analysis-cli-plugin/log-analysis-cli-plugin-log-analysis-cli
 
-      - topicgroup: 
+      - topicgroup:
           label: Logging API
-          links: 
+          links:
             - link:
                 label: Archiving
                 href: https://{DomainName}/apidocs/log-analysis#get-v1-config-archiving
@@ -242,7 +242,7 @@ toc:
             - link:
                 label: Export API
                 href: https://{DomainName}/apidocs/log-analysis#export
-            - link: 
+            - link:
                 label: Ingestion API
                 href: https://{DomainName}/apidocs/log-analysis#ingest
             - link:
@@ -251,24 +251,22 @@ toc:
             - link:
                 label: Groups API
                 href: https://{DomainName}/apidocs/log-analysis#create-group
-  
-      - topicgroup: 
+
+      - topicgroup:
           label: High availability and disaster recovery
-          topics:     
+          topics:
           - core/ha-dr.md
 
       - service-ip-changes.md
-  
-  - navgroup: 
+
+  - navgroup:
         id: help
-        topics: 
+        topics:
         - gettinghelp.md
         - faq.md
 
-        - topicgroup: 
+        - topicgroup:
             label: Troubleshooting
-            topics:  
+            topics:
             - troubleshoot-04.md
             - troubleshoot-06.md
-        
-
