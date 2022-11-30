@@ -2,7 +2,7 @@
 
 copyright:
   years:  2022
-lastupdated: "2022-11-03"
+lastupdated: "2022-11-30"
 
 keywords: IBM, Log Analysis, logging, config agent, Windows
 
@@ -135,6 +135,9 @@ Configure the following information:
 
     You must specify two backslashes (`\\`) when specifying the directory. For example, `C:\\ProgramData\\logs`.
     {: important}
+
+    If you specify a directory that does not exist, the agent will successfully start, but data will not be processed.
+    {: note}
 
 `log.include.glob`
 :   You can configure glob patterns to define the types of log files that the agent processes.
