@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018, 2022
-lastupdated: "2022-10-03"
+lastupdated: "2022-12-08"
 
 keywords: Log Analysis release notes
 
@@ -17,8 +17,15 @@ content-type: release-note
 # Release notes for {{site.data.keyword.la_full_notm}}
 {: #log-analysis-release-notes}
 
-Use these release notes to learn about the latest updates to {{site.data.keyword.la_full}}.  
+Use these release notes to learn about the latest updates to {{site.data.keyword.la_full}}.
 {: shortdesc}
+
+## 08 December 2022
+{: #log-analysis-dec080622}
+{: release-note}
+
+Changes to endpoint IP addresses
+:   Several [endpoint IP addresses](/docs/log-analysis?topic=log-analysis-endpoints) have changed. If your service is configured to use specific IP addresses or firewall to a specific IP address, then modification to the new IP addresses might be required.  For more information on the endpoint changes, see [Service IP changes.](/docs/log-analysis?topic=log-analysis-service-ip-changes)
 
 ## 03 October 2022
 {: #log-analysis-oct0322}
@@ -28,7 +35,7 @@ Availability of the {{site.data.keyword.la_full_notm}} agent 3.6
 
 :   Windows logging agent 3.6 is now available. This agent is a rust agent that includes Windows File Logging support.
 
-    `MZ_` environment variables are available.  
+    `MZ_` environment variables are available.
 
     [For more information about the agent.](https://docs.mezmo.com/changelog/mezmo-agent-3-6--ga-){: external} [Learn about configuring the agent.](/docs/log-analysis?topic=log-analysis-config_agent_windows_v3)
 
@@ -59,7 +66,7 @@ Support for syslog private endpoints
 {: release-note}
 
 Changes to Tokyo syslog IP addresses
-:   The [IP addresses used for the `syslog-a.jp-tok.logging.cloud.ibm.com` endpoint](/docs/log-analysis?topic=log-analysis-endpoints#endpoints_syslog) have changed. If your service is configured to use specific IP addresses or firewall to a specific IP address, then modification to the new IP addresses will be required. 
+:   The [IP addresses used for the `syslog-a.jp-tok.logging.cloud.ibm.com` endpoint](/docs/log-analysis?topic=log-analysis-endpoints#endpoints_syslog) have changed. If your service is configured to use specific IP addresses or firewall to a specific IP address, then modification to the new IP addresses will be required.
 
 ## 31 January 2022
 {: #log-analysis-jan3122}
@@ -104,7 +111,7 @@ Support to stream data is available in beta
 {: release-note}
 
 New CLI support
-:   New CLI added that can be used to list instances and export data from an instance. [Learn 
+:   New CLI added that can be used to list instances and export data from an instance. [Learn
 more about the CLI](/docs/log-analysis?topic=logdna-cli-plugin-logdna-cli).
 
 New API support
@@ -125,7 +132,7 @@ Addition of configuration support using an API
 :   Configuration support using an API, in addition to configuration using the web UI.
 
 Terraform support
-:   Support for Terraform to programmatically manage {{site.data.keyword.la_full}} instances and agents and automate their deployment. 
+:   Support for Terraform to programmatically manage {{site.data.keyword.la_full}} instances and agents and automate their deployment.
 
 ## 9 July 2020
 {: #log-analysis-jul0920}
@@ -151,5 +158,4 @@ Enhanced data residency, compliance, and security
 {: release-note}
 
 Introducing {{site.data.keyword.la_full_notm}}
-:   You can use {{site.data.keyword.la_full_notm}} to manage system and application logs in the {{site.data.keyword.cloud_notm}}. {{site.data.keyword.la_full_notm}} offers administrators, DevOps teams, and developers advanced features to filter, search, and tail log data, define alerts, and design custom views to monitor application and system logs.   [Learn more](/docs/log-analysis?topic=log-analysis-getting-started#getting-started) 
-
+:   You can use {{site.data.keyword.la_full_notm}} to manage system and application logs in the {{site.data.keyword.cloud_notm}}. {{site.data.keyword.la_full_notm}} offers administrators, DevOps teams, and developers advanced features to filter, search, and tail log data, define alerts, and design custom views to monitor application and system logs.   [Learn more](/docs/log-analysis?topic=log-analysis-getting-started#getting-started)
