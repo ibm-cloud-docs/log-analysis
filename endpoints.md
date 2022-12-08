@@ -43,7 +43,7 @@ The ingestion endpoints are required to export data from a logging instance. To 
 The `API` endpoint is required for:
 - The authentication of the logging agent.
 - Exporting logs.
-- Configuring resources by using the Config API. 
+- Configuring resources by using the Config API.
 
 To see the list of endpoints, see [API endpoints](/docs/log-analysis?topic=log-analysis-endpoints#endpoints_api).
 
@@ -177,7 +177,7 @@ The following tables show the syslog public endpoints:
 | `Osaka (jp-osa)`         | `syslog://syslog-a.jp-osa.logging.cloud.ibm.com`   | 163.73.68.45     \n 163.69.67.210   \n 163.68.72.220   |
 | `Sao Paulo (br-sao)`     | `syslog://syslog-a.br-sao.logging.cloud.ibm.com`   | 169.57.254.118   \n 163.107.68.195  \n 163.109.68.109  |
 | `Sydney (au-syd)`        | `syslog://syslog-a.au-syd.logging.cloud.ibm.com`   | 168.1.202.76     \n 135.90.92.254   \n 130.198.1.210   |
-| `Tokyo (jp-tok)`         | `syslog://syslog-a.jp-tok.logging.cloud.ibm.com`   | 169.56.11.251    \n 165.192.100.77  \n 128.168.107.245 |
+| `Tokyo (jp-tok)`         | `syslog://syslog-a.jp-tok.logging.cloud.ibm.com`   | 128.168.95.2     \n 161.202.248.162 \n 165.192.100.77  |
 | `Toronto (ca-tor)`       | `syslog://syslog-a.ca-tor.logging.cloud.ibm.com`   | 163.75.66.13     \n 169.53.186.154  \n 163.74.69.234   |
 | `Washington (us-east)`   | `syslog://syslog-a.us-east.logging.cloud.ibm.com`  | 169.61.98.203    \n 169.47.34.203   \n 169.60.121.243  |
 {: caption="Table 6. List of syslog-a public endpoints" caption-side="top"}
@@ -197,7 +197,7 @@ The following tables show the syslog public endpoints:
 | `Washington (us-east)` | `syslog://syslog-u.us-east.logging.cloud.ibm.com`  | 169.47.34.204   \n 169.61.98.202    \n 169.60.98.91    |
 {: caption="Table 7. List of syslog-u public endpoints" caption-side="top"}
 
-### Syslog private endpoints 
+### Syslog private endpoints
 {: #endpoints_syslog_private_endpoints}
 
 The following table shows the syslog private endpoints:
@@ -221,7 +221,7 @@ The following table shows the syslog private endpoints:
 |------------------------|------------------------------------------------------------|--------------------------------------------|
 | `Chennai (in-che)`     | `syslog://syslog-u.private.in-che.logging.cloud.ibm.com`   | 166.9.60.10                                |
 | `Dallas (us-south)`    | `syslog://syslog-u.private.us-south.logging.cloud.ibm.com` | 166.9.14.6  \n 166.9.16.15 \n 166.9.12.16  |
-| `Frankfurt (eu-de)`    | `syslog://syslog-u.private.eu-de.logging.cloud.ibm.com`    | 166.9.28.7  \n 166.9.32.24 \n 166.9.30.236 |
+| `Frankfurt (eu-de)`    | `syslog://syslog-u.private.eu-de.logging.cloud.ibm.com`    | 166.9.28.7  \n 166.9.32.24 \n 166.9.30.239 |
 | `London (eu-gb)`       | `syslog://syslog-u.private.eu-gb.logging.cloud.ibm.com`    | 166.9.36.6  \n 166.9.38.21 \n 166.9.34.19  |
 | `Osaka (jp-osa)`       | `syslog://syslog-u.private.jp-osa.logging.cloud.ibm.com`   | 166.9.70.23 \n 166.9.72.23 \n 166.9.71.23  |
 | `Sao Paulo (br-sao)`   | `syslog://syslog-u.private.br-sao.logging.cloud.ibm.com`   | 166.9.83.26 \n 166.9.84.26 \n 166.9.82.27  |
@@ -249,7 +249,7 @@ The following table shows the syslog TLS endpoints:
 | `Osaka (jp-osa)`         | `syslog-tls://syslog-a.jp-osa.logging.cloud.ibm.com`     | 163.69.67.210   \n 163.68.72.220   \n 163.73.68.45   |
 | `Sao Paulo (br-sao)`     | `syslog-tls://syslog-a.br-sao.logging.cloud.ibm.com`     | 169.57.254.118  \n 163.107.68.195  \n 163.109.68.109 |
 | `Sydney (au-syd)`        | `syslog-tls://syslog-a.au-syd.logging.cloud.ibm.com`     | 135.90.92.254   \n 168.1.202.76    \n 130.198.1.210  |
-| `Tokyo (jp-tok)`         | `syslog-tls://syslog-a.jp-tok.logging.cloud.ibm.com`     | 128.168.107.245 \n 165.192.100.77  \n 169.56.11.251  |
+| `Tokyo (jp-tok)`         | `syslog-tls://syslog-a.jp-tok.logging.cloud.ibm.com`     | 128.168.95.2    \n 161.202.248.162 \n 165.192.100.77 |
 | `Toronto (ca-tor)`       | `syslog-tls://syslog-a.ca-tor.logging.cloud.ibm.com`     | 163.75.66.13    \n 163.74.69.234   \n 169.53.186.154 |
 | `Washington (us-east)`   | `syslog-tls://syslog-a.us-east.logging.cloud.ibm.com`    | 169.60.121.243  \n 169.61.98.203   \n 169.47.34.203  |
 {: caption="Table 9. Lists of Syslog-TLS endpoints" caption-side="top"}
