@@ -77,16 +77,16 @@ The following table shows the private API endpoints:
 
 | Region                 | Private API endpoint                         | Private IP addresses                            | Ports              |
 |------------------------|----------------------------------------------|-------------------------------------------------|--------------------|
-| `Chennai (in-che)`     | `api.private.in-che.logging.cloud.ibm.com`   | 166.9.60.6                                      | TCP 443  \n TCP 80 |
-| `Dallas (us-south)`    | `api.private.us-south.logging.cloud.ibm.com` | 166.9.16.11   \n 166.9.12.12    \n 166.9.14.2   | TCP 443  \n TCP 80 |
-| `Frankfurt (eu-de)`    | `api.private.eu-de.logging.cloud.ibm.com`    | 166.9.32.7    \n 166.9.28.2     \n 166.9.30.231 | TCP 443  \n TCP 80 |
-| `London (eu-gb)`       | `api.private.eu-gb.logging.cloud.ibm.com`    | 166.9.36.2    \n 166.9.38.4     \n 166.9.34.2   | TCP 443  \n TCP 80 |
-| `Osaka (jp-osa)`       | `api.private.jp-osa.logging.cloud.ibm.com`   | 166.9.71.21   \n 166.9.72.19    \n 166.9.70.19  | TCP 443  \n TCP 80 |
-| `Sao Paulo (br-sao)`   | `api.private.br-sao.logging.cloud.ibm.com`   | 166.9.83.24   \n 166.9.82.23    \n 166.9.84.25  | TCP 443  \n TCP 80 |
-| `Sydney (au-syd)`      | `api.private.au-syd.logging.cloud.ibm.com`   | 166.9.56.3    \n 166.9.52.2     \n 166.9.54.128 | TCP 443  \n TCP 80 |
-| `Tokyo (jp-tok)`       | `api.private.jp-tok.logging.cloud.ibm.com`   | 166.9.40.2    \n 166.9.42.3     \n 166.9.44.13  | TCP 443  \n TCP 80 |
-| `Toronto (ca-tor)`     | `api.private.ca-tor.logging.cloud.ibm.com`   | 166.9.77.23   \n 166.9.76.26    \n 166.9.78.24  | TCP 443  \n TCP 80 |
-| `Washington (us-east)` | `api.private.us-east.logging.cloud.ibm.com`  | 166.9.22.35   \n 166.9.20.72    \n 166.9.24.247 | TCP 443  \n TCP 80 |
+| `Chennai (in-che)`     | `api.private.in-che.logging.cloud.ibm.com`   | 166.9.60.11                                     | TCP 443  \n TCP 80 |
+| `Dallas (us-south)`    | `api.private.us-south.logging.cloud.ibm.com` | 166.9.90.41   \n 166.9.85.89    \n 166.9.61.79  | TCP 443  \n TCP 80 |
+| `Frankfurt (eu-de)`    | `api.private.eu-de.logging.cloud.ibm.com`    | 166.9.30.45   \n 166.9.28.159   \n 166.9.32.117 | TCP 443  \n TCP 80 |
+| `London (eu-gb)`       | `api.private.eu-gb.logging.cloud.ibm.com`    | 166.9.36.105  \n 166.9.34.79    \n 166.9.38.84  | TCP 443  \n TCP 80 |
+| `Osaka (jp-osa)`       | `api.private.jp-osa.logging.cloud.ibm.com`   | 166.9.71.14   \n 166.9.72.13    \n 166.9.70.13  | TCP 443  \n TCP 80 |
+| `Sao Paulo (br-sao)`   | `api.private.br-sao.logging.cloud.ibm.com`   | 166.9.83.12   \n 166.9.82.12    \n 166.9.84.12  | TCP 443  \n TCP 80 |
+| `Sydney (au-syd)`      | `api.private.au-syd.logging.cloud.ibm.com`   | 166.9.56.79   \n 166.9.52.82    \n 166.9.54.129 | TCP 443  \n TCP 80 |
+| `Tokyo (jp-tok)`       | `api.private.jp-tok.logging.cloud.ibm.com`   | 166.9.40.13   \n 166.9.42.72    \n 166.9.44.76  | TCP 443  \n TCP 80 |
+| `Toronto (ca-tor)`     | `api.private.ca-tor.logging.cloud.ibm.com`   | 166.9.78.10   \n 166.9.76.10    \n 166.9.77.10  | TCP 443  \n TCP 80 |
+| `Washington (us-east)` | `api.private.us-east.logging.cloud.ibm.com`  | 166.9.24.171  \n 166.9.22.194   \n 166.9.68.157 | TCP 443  \n TCP 80 |
 {: caption="Table 2. Lists of private API endpoints for interacting with {{site.data.keyword.la_full_notm}}" caption-side="top"}
 
 
