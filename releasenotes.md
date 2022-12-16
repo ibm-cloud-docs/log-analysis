@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018, 2022
-lastupdated: "2022-12-08"
+lastupdated: "2022-12-13"
 
 keywords: Log Analysis release notes
 
@@ -20,12 +20,19 @@ content-type: release-note
 Use these release notes to learn about the latest updates to {{site.data.keyword.la_full}}.
 {: shortdesc}
 
+## 14 December 2022
+{: #log-analysis-dec1422}
+{: release-note}
+
+Upcoming changes to endpoint IP addresses
+:   Several [endpoint IP addresses](/docs/log-analysis?topic=log-analysis-endpoints) will be changing in after 15 January 2023. If your service is configured to use specific IP addresses or firewall to a specific IP address, then modification to the new IP addresses might be required. Allowlisted IP addresses can be configured in advance of the change to avoid service interruptions. For more information on the endpoint changes, see [Service IP changes.](/docs/log-analysis?topic=log-analysis-service-ip-changes#endpoint-changes-01Jan2022)
+
 ## 08 December 2022
-{: #log-analysis-dec080622}
+{: #log-analysis-dec0822}
 {: release-note}
 
 Changes to endpoint IP addresses
-:   Several [endpoint IP addresses](/docs/log-analysis?topic=log-analysis-endpoints) have changed. If your service is configured to use specific IP addresses or firewall to a specific IP address, then modification to the new IP addresses might be required.  For more information on the endpoint changes, see [Service IP changes.](/docs/log-analysis?topic=log-analysis-service-ip-changes)
+:   Several [endpoint IP addresses](/docs/log-analysis?topic=log-analysis-endpoints) have changed. If your service is configured to use specific IP addresses or firewall to a specific IP address, then modification to the new IP addresses might be required. For more information on the endpoint changes, see [Service IP changes.](/docs/log-analysis?topic=log-analysis-service-ip-changes#endpoint-changes-08Dec2022)
 
 ## 03 October 2022
 {: #log-analysis-oct0322}
@@ -45,7 +52,7 @@ Availability of the {{site.data.keyword.la_full_notm}} agent 3.6
 {: release-note}
 
 Changes to endpoint IP addresses
-:   Several [endpoint IP addresses](/docs/log-analysis?topic=log-analysis-endpoints) have changed. If your service is configured to use specific IP addresses or firewall to a specific IP address, then modification to the new IP addresses will be required.  Until 23 May 2022 the [original endpoints are in effect.](/docs/log-analysis?topic=log-analysis-service-ip-changes)
+:   Several [endpoint IP addresses](/docs/log-analysis?topic=log-analysis-endpoints) have changed. If your service is configured to use specific IP addresses or firewall to a specific IP address, then modification to the new IP addresses will be required.  Until 23 May 2022 the [original endpoints are in effect.](/docs/log-analysis?topic=log-analysis-service-ip-changes#endpoint-changes-09May2022)
 
 ## 24 March 2022
 {: #log-analysis-mar2422}
