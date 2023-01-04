@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years: 2019, 2022
+  years: 2019, 2023
 lastupdated: "2021-09-30"
 
 keywords: IBM Cloud, Log Analysis, API, troubleshooting
@@ -17,7 +17,7 @@ content-type: troubleshoot
 # Are you getting an Invalid JSON error when running a cURL command on Windows?
 {: #troubleshoot-04}
 {: troubleshoot}
-{: support} 
+{: support}
 
 If the API method requires data passed using `-d`, and you are running a cURL command from a Windows command prompt, the data passed must be passed in a file, not on the command.
 {: shortdesc}
@@ -45,11 +45,9 @@ In the previous example, create a file named `data.json` in the directory where 
 ```
 {: codeblock}
 
-Then pass the file on the cURL command as follows: 
+Then pass the file on the cURL command as follows:
 
 ```text
 curl --request POST https://api.eu-gb.logging.cloud.ibm.com/v1/config/stream -H "content-type: application/json" -H "servicekey: 0000000aaaa000000bbb00000ccc" -d @data.json
 ```
-{: pre} 
-
-
+{: pre}

@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years: 2019, 2022
+  years: 2019, 2023
 lastupdated: "2022-02-03"
 
 keywords: IBM Cloud, Log Analysis, auditing, index alerts, spike protection
@@ -11,7 +11,7 @@ subcollection: log-analysis
 ---
 
 {{site.data.keyword.attribute-definition-list}}
- 
+
 
 # Managing volume spike protection and costs
 {: #control_usage_index_rate}
@@ -19,7 +19,7 @@ subcollection: log-analysis
 Configure index rates alerts in your {{site.data.keyword.la_full}} instance to monitor and be alerted of unexpected spikes in your data volumes. Use the index rate to analyze and predict costs associated with storage of searchable data.
 {: shortdesc}
 
-Index rates are calculated based on data that is ingested over the last 30 days and collected in 5 minute intervals. 
+Index rates are calculated based on data that is ingested over the last 30 days and collected in 5 minute intervals.
 
 Data collection commences on January 31, 2022 for existing instances. For new instances, data collection starts from the day that the instance is provisioned.
 {: important}
@@ -32,19 +32,19 @@ The `z-score` represents the count of standard deviations. You can use it to pre
 ## How are index rates calculated
 {: #control_usage_index_rate_how}
 
-The number of log lines that are indexed, that is, the number of log lines that are available for search, are collected every 5 minutes. 
+The number of log lines that are indexed, that is, the number of log lines that are available for search, are collected every 5 minutes.
 
 A day is based on a 24 hour period that is based on UTC time zone.
 
 To calculate the `daily average index rate`, the following formula is applied:
-1. The total number of indexed lines for the past hour, that is, the number of log lines over 1 hour rolling period, is collected. 
-2. The total number of indexed lines per hour is then divided by 60 to get the average of log lines per minute. 
+1. The total number of indexed lines for the past hour, that is, the number of log lines over 1 hour rolling period, is collected.
+2. The total number of indexed lines per hour is then divided by 60 to get the average of log lines per minute.
 3. The average log lines per minute is then divided by 60 to get the average of log lines per second.
 4. The index rate is calculated as the average value of all index rates that are calculated over 24 hours.
 
 To calculate the `hourly average index rate`, also known as the `standard hourly index rate`, the following formula is applied:
-1. The total number of indexed lines for the past hour, that is, the number of log lines over 1 hour rolling period, is collected. 
-2. The total number of indexed lines per hour is then divided by 60 to get the average of log lines per minute. 
+1. The total number of indexed lines for the past hour, that is, the number of log lines over 1 hour rolling period, is collected.
+2. The total number of indexed lines per hour is then divided by 60 to get the average of log lines per minute.
 3. The average log lines per minute is then divided by 60 to get the average of log lines per second.
 4. The index rate is calculated as the average value of all index rates that are calculated over the last hour by using  5 minutes increments.
 
@@ -56,14 +56,14 @@ The `max lines threshold` indicates the maximum number of lines per second that 
 
 If no log lines are ingested for over a 60-minute period, you get a **Check Later** message instead of the index rate value. When the ingestion of log lines is resumed, you get the index rate value. Measurements are taken every five minutes, therefore, the first measurement of ingested log lines for that five minutes will be averaged out for the full hour. Wait at least 1 hour before using the index rate value for analysis.
 
-Only one alert for each alert channel will be sent until the hour or day has elapsed.  This alert will show all thresholds that have been exceeded during the period. If index rate alerts are configured on each separate threshold, an alert will be sent indicating the first threshold crossed (either `Max lines/s`, `Max z-score`, or both). 
+Only one alert for each alert channel will be sent until the hour or day has elapsed.  This alert will show all thresholds that have been exceeded during the period. If index rate alerts are configured on each separate threshold, an alert will be sent indicating the first threshold crossed (either `Max lines/s`, `Max z-score`, or both).
 
 ## Types of index rate alerts
 {: #control_usage_index_rate_type}
 
 There are two types of index rate alerts:
 
-- **Max lines/s alerts**: Use this alert to monitor and control the number of log lines per second that are indexed and stored for search. 
+- **Max lines/s alerts**: Use this alert to monitor and control the number of log lines per second that are indexed and stored for search.
 
     - To monitor high flow rates, set an index rate threshold by configuring the `max lines alert` field so that you can get an alert when the value of lines per second is exceeded.
 
@@ -79,7 +79,7 @@ There are two types of index rate alerts:
     After you provision an instance, you must wait a minimum of 30 days of data that has been indexed to use this feature.
     {: note}
 
-    - Each z-score represents 1 standard deviation that is based on the distribution of index rates as seen over the past 30 days. 
+    - Each z-score represents 1 standard deviation that is based on the distribution of index rates as seen over the past 30 days.
 
         0, 1 indicates a small spike of data.
 
@@ -101,14 +101,14 @@ Complete the following steps to view the index rate dashboard and enable the fea
 
 1. [Navigating to the web UI](/docs/activity-tracker?topic=activity-tracker-launch).
 
-2. Select the **settings** icon. 
+2. Select the **settings** icon.
 
 3. In the section **Usage**, select **Index Rate Alerts**.
 
 4. Enable the feature.
 
 
-When the feature is enabled, the *index rate alert page* is displayed. 
+When the feature is enabled, the *index rate alert page* is displayed.
 - You can use the index rate alerts page to monitor the daily average index rates or the standard deviation from the past 30 days.
 - You can toggle between viewing index rates or standard deviations for the past 30 days, the past 7 days, or the past 1 day.
 - If no log lines are ingested in a 60 minute period, **Check Later** will be displayed instead of the index rate value.  Since measurements are taken every five minutes, the first measurement of ingested log lines for that five minutes will be averaged for the first hour.  Wait at least an hour before using the index rate value for analysis any time there has been an ingestion interruption.
@@ -129,7 +129,7 @@ By default the index rate alert feature is disabled.
 When you configure index rate alerts, you can gain insight into which applications, sources, or tags produce data spikes, as well as any recently added sources.
 The alert message that is sent includes the following information:
 - The top 20 sources and apps that have had the largest index rate growth in the past 2 hours.
-- The list of the 20 newest sources added. 
+- The list of the 20 newest sources added.
 - A link to download generated lists of all applications and sources. You can view the “Manage Usage” Dashboard to download these lists at any time.
 
 Complete the following steps:
@@ -157,13 +157,11 @@ Choose 1 or more notification channels to receive an alert when the threshold of
 {: #control_usage_index_rate_configure_3}
 
 Choose the notification frequency. Valid options are:
-- Hourly notifications 
-- Daily notifications at midnight UTC 
+- Hourly notifications
+- Daily notifications at midnight UTC
 
 Notifications are sent until the index rate repo-rts a value that is below the thresholds that you have configured.
 
 Individual recipients may mute alert emails.
 
 You can also configure a custom schedule to set the days and hours that you want alerts to be send if the thresholds are exceeded.
-
-

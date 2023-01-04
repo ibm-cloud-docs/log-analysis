@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years:  2018, 2022
+  years:  2018, 2023
 lastupdated: "2021-11-22"
 
 keywords: IBM, Log Analysis, logging, cidr
@@ -284,5 +284,3 @@ The following Classless Inter-Domain Routing (CIDR) blocks are available:
 | Brazil	   | 10.14.9.64/26  |
 | Brazil	   | 10.15.20.192/26  |
 {: caption="Table 22. Sao Paulo private CIDR blocks" caption-side="top"}
-
-

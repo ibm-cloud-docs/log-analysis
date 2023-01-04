@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years:  2018, 2022
+  years:  2018, 2023
 lastupdated: "2021-05-18"
 
 keywords: IBM, Log Analysis, logging, services
@@ -27,7 +27,7 @@ List of prefixes that [{{site.data.keyword.cloud}} services](/docs/log-analysis?
 A message ID is made up of the following parts:
 
 ```text
-<crn-service-name>.####<severity> 
+<crn-service-name>.####<severity>
 ```
 {: codeblock}
 
@@ -46,7 +46,7 @@ The following table lists message ID prefixes for the [{{site.data.keyword.vpc_f
 |-----------------------------------------------------|-------------------------------------------|---------------------------|------------------|
 | [Dedicated host](/docs/vpc?topic=vpc-creating-dedicated-hosts-instances)  | `dedicated-host`    | `<crn-service-name>.#####<severity>` | `dedicated-host.00001` |
 | [Flow Logs for VPC](/docs/vpc?topic=vpc-flow-logs)  | `is.flow-log-collector`                   | `<crn-service-name>.#####<severity>` | `is.flow-log-collector.00001E` |
-{: caption="Table 1. VPC infrastructure service" caption-side="top"} 
+{: caption="Table 1. VPC infrastructure service" caption-side="top"}
 
 
 
@@ -60,5 +60,4 @@ The following table lists message ID prefixes for the developer tools services t
 | Service                                             | CRN service name  \n `crn-service-name`  | Message ID format      | Sample |
 |-----------------------------------------------------|-------------------------------------------|---------------------------|------------------|
 | {{site.data.keyword.en_full}}  | `event-notifications`    | `<crn-service-name>.#####<severity>` | `event-notifications.00001E` |
-{: caption="Table 3. Developer tools services" caption-side="top"} 
-
+{: caption="Table 3. Developer tools services" caption-side="top"}

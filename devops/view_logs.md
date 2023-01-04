@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years:  2018, 2022
+  years:  2018, 2023
 lastupdated: "2021-03-28"
 
 keywords: IBM, Log Analysis, logging, logs
@@ -35,10 +35,10 @@ You must be an administrator of the {{site.data.keyword.la_full_notm}} service, 
 The following table lists the minimum policies that a user must have to be able to launch the {{site.data.keyword.la_full_notm}} Web UI, and view logs:
 
 | Service                               | Role                      | Permission granted            |
-|---------------------------------------|---------------------------|-------------------------------|  
+|---------------------------------------|---------------------------|-------------------------------|
 | `{{site.data.keyword.la_full_notm}}` | Platform role: Viewer     | Allows the user to view the list of service instances in the Observability Logging dashboard. |
 | `{{site.data.keyword.la_full_notm}}` | Service role: Reader      | Allows the user to launch the Web UI and view logs in the Web UI.  |
-{: caption="Table 1. IAM policies" caption-side="top"} 
+{: caption="Table 1. IAM policies" caption-side="top"}
 
 For more information on how to configure these policies for a user, see [Granting permissions to a user to view logs](/docs/log-analysis?topic=log-analysis-work_iam#user_logdna).
 
@@ -52,9 +52,9 @@ To launch the {{site.data.keyword.la_full_notm}}  UI through the {{site.data.key
 
 	After you log in, the {{site.data.keyword.cloud_notm}} *Dashboard* opens.
 
-2. Click the **Menu** icon ![Menu icon](../../icons/icon_hamburger.svg) &gt; **Observability**. 
+2. Click the **Menu** icon ![Menu icon](../../icons/icon_hamburger.svg) &gt; **Observability**.
 
-3. Click **Logging**. 
+3. Click **Logging**.
 
     The list of {{site.data.keyword.la_full_notm}} instances that are available on {{site.data.keyword.cloud_notm}} is displayed.
 
@@ -81,12 +81,12 @@ Complete the following steps to modify the format of a log line:
 
 At any time, you can view each log line in context.
 
-Complete the following steps: 
+Complete the following steps:
 
 1. Click the **Views** icon ![Views icon](../images/views.png "Views icon").
 2. Select **EVERYTHING** or a view.
 3. Identify a line in the log that you want to explore.
-4. Expand the log line. 
+4. Expand the log line.
 
     Information about line identifiers, tags, and labels is displayed.
 
@@ -100,7 +100,7 @@ When you are finished, close the line.
 ## Step 5. Filter logs
 {: #view_logs_step5}
 
-You can filter logs by log source, application, and log level. 
+You can filter logs by log source, application, and log level.
 
 * A source can be a host, a computer, a virtual machine, or a Heroku app.
 * An application represents a log file, a program, or a container.
@@ -151,4 +151,3 @@ Complete the following steps to create a view:
 6. Optionally, attach an alert. A new section is displayed for you to configure the alert.
 
 7. Click **Save View**
-

@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years:  2018, 2022
+  years:  2018, 2023
 lastupdated: "2021-09-30"
 
 keywords: IBM, Log Analysis, logging, terraform
@@ -26,7 +26,7 @@ Looking for a managed Terraform on {{site.data.keyword.cloud_notm}} solution? Tr
 ## Prereqs
 {: #terraform-setup-prereqs}
 
-- You must have a paid service plan for the {{site.data.keyword.la_full_notm}} service. [Learn more](/docs/log-analysis?topic=log-analysis-service_plans). 
+- You must have a paid service plan for the {{site.data.keyword.la_full_notm}} service. [Learn more](/docs/log-analysis?topic=log-analysis-service_plans).
 - Ensure that you have the [required access](/docs/log-analysis?topic=log-analysis-iam) to create and work with {{site.data.keyword.la_short}} resources.
 
 
@@ -36,15 +36,15 @@ Looking for a managed Terraform on {{site.data.keyword.cloud_notm}} solution? Tr
 Complete the following steps to install the Terraform CLI:
 
 1. Create a terraform folder on your local machine, and navigate to your terraform folder.
-   
+
     ```text
     mkdir terraform && cd terraform
     ```
     {: pre}
 
-2. Download the Terraform version that you want. 
+2. Download the Terraform version that you want.
 
-    For more information about the {{site.data.keyword.cloud_notm}} Provider plug-in for Terraform supported versions, see [Installing the Terraform CLI](/docs/ibm-cloud-provider-for-terraform?topic=ibm-cloud-provider-for-terraform-setup_cli). 
+    For more information about the {{site.data.keyword.cloud_notm}} Provider plug-in for Terraform supported versions, see [Installing the Terraform CLI](/docs/ibm-cloud-provider-for-terraform?topic=ibm-cloud-provider-for-terraform-setup_cli).
 
     For example, you can download `terraform_0.15.5_darwin_amd64.zip` for a MacOS.
 
@@ -55,8 +55,8 @@ Complete the following steps to install the Terraform CLI:
     ```
     {: codeblock}
 
-    For example, 
-    
+    For example,
+
     ```text
     unzip ./terraform_1.1.0_darwin_amd64.zip -d /usr/local/bin
     ```
@@ -85,14 +85,14 @@ After the Terraform CLI installation is complete, you must set up the {{site.dat
 The setup of the {{site.data.keyword.cloud_notm}} Provider plug-in varies depending on the Terraform CLI version that you want to use. To run your Terraform configuration files with Terraform version 0.13.x or higher, installation of the {{site.data.keyword.cloud_notm}} Provider plug-in for Terraform is not required. For more information, see [Terraform v0.13.x and higher](/docs/ibm-cloud-provider-for-terraform?topic=ibm-cloud-provider-for-terraform-setup_cli#install-provider-v13).
 
 For example, to run your Terraform configuration files with Terraform version 0.13.x or higher, complete the following steps:
-1. Create a `versions.tf` file and specify the {{site.data.keyword.cloud_notm}} Provider plug-in version that you want to use with the `version` parameter. 
+1. Create a `versions.tf` file and specify the {{site.data.keyword.cloud_notm}} Provider plug-in version that you want to use with the `version` parameter.
 
     ```terraform
     terraform {
         required_providers {
             ibm = {
                 source = "IBM-Cloud/ibm"
-                version = "<provider version>"       
+                version = "<provider version>"
                 }
         }
     }
@@ -114,7 +114,7 @@ For example, to run your Terraform configuration files with Terraform version 0.
     ```
     {: codeblock}
 
-2. Store the `versions.tf` file in your Git repository or the folder where Terraform is set up. 
+2. Store the `versions.tf` file in your Git repository or the folder where Terraform is set up.
 
 
 If you are using Terraform on {{site.data.keyword.cloud_notm}} modules, you must add a `versions.tf` file to all the module folders. You can refer the Terraform provider block from the [provider registry](https://registry.terraform.io/providers/IBM-Cloud/ibm/latest){: external}. You can use the [IBM Cloud Observability - Terraform Module](https://registry.terraform.io/modules/terraform-ibm-modules/observability/ibm/latest){: external} module to configure an instance.
@@ -125,11 +125,11 @@ If you are using Terraform on {{site.data.keyword.cloud_notm}} modules, you must
 ## Step 3. Configure the {{site.data.keyword.cloud_notm}} Provider plug-in
 {: #terraform-config-ibm-plugin}
 
-After you complete the set up, you must [configure the {{site.data.keyword.cloud_notm}} Provider plug-in](/docs/ibm-cloud-provider-for-terraform?topic=ibm-cloud-provider-for-terraform-provider-reference). 
+After you complete the set up, you must [configure the {{site.data.keyword.cloud_notm}} Provider plug-in](/docs/ibm-cloud-provider-for-terraform?topic=ibm-cloud-provider-for-terraform-provider-reference).
 
-Before you can start working with Terraform on {{site.data.keyword.cloud_notm}}, you must retrieve the credentials and parameters that are required for a Terraform resource or data source, and specify them in the `provider` configuration. This configuration is used by the {{site.data.keyword.cloud_notm}} Provider plug-in to authenticate with the {{site.data.keyword.cloud_notm}} platform and to view, create, update, or delete {{site.data.keyword.cloud_notm}} resources and services. 
+Before you can start working with Terraform on {{site.data.keyword.cloud_notm}}, you must retrieve the credentials and parameters that are required for a Terraform resource or data source, and specify them in the `provider` configuration. This configuration is used by the {{site.data.keyword.cloud_notm}} Provider plug-in to authenticate with the {{site.data.keyword.cloud_notm}} platform and to view, create, update, or delete {{site.data.keyword.cloud_notm}} resources and services.
 
-The following table lists input parameters that you can set in the `provider` block of your Terraform on {{site.data.keyword.cloud_notm}} configuration file: 
+The following table lists input parameters that you can set in the `provider` block of your Terraform on {{site.data.keyword.cloud_notm}} configuration file:
 
 |Input parameter | Required / optional  | Description           |
 |----------------|----------------------|-----------------------|
@@ -141,21 +141,21 @@ The following table lists input parameters that you can set in the `provider` bl
 
 For more information on how to use environment variables, see [Using environment variables](/docs/ibm-cloud-provider-for-terraform?topic=ibm-cloud-provider-for-terraform-provider-reference#env-vars).
 
-You can [add multiple provider configurations within the same Terraform on the {{site.data.keyword.cloud_notm}} configuration file](/docs/ibm-cloud-provider-for-terraform?topic=ibm-cloud-provider-for-terraform-provider-reference#multiple-providers) to create your {{site.data.keyword.cloud_notm}} resources with different provider parameters. For example, you can multiple providers so that you can use different input parameters, such as different regions, zones, infrastructure generations, or accounts to create the {{site.data.keyword.cloud_notm}} resources in your Terraform on {{site.data.keyword.cloud_notm}} configuration file. For more information, see [Multiple Provider Instances](https://www.terraform.io/docs/language/providers/configuration.html){: external}. 
+You can [add multiple provider configurations within the same Terraform on the {{site.data.keyword.cloud_notm}} configuration file](/docs/ibm-cloud-provider-for-terraform?topic=ibm-cloud-provider-for-terraform-provider-reference#multiple-providers) to create your {{site.data.keyword.cloud_notm}} resources with different provider parameters. For example, you can multiple providers so that you can use different input parameters, such as different regions, zones, infrastructure generations, or accounts to create the {{site.data.keyword.cloud_notm}} resources in your Terraform on {{site.data.keyword.cloud_notm}} configuration file. For more information, see [Multiple Provider Instances](https://www.terraform.io/docs/language/providers/configuration.html){: external}.
 
 
 ### Option 1. Creating a static `provider.tf` file
 {: #terraform-config-ibm-plugin-static}
 
-You can declare the input parameters in the `provider` block directly. 
+You can declare the input parameters in the `provider` block directly.
 
-Because the `provider` block includes sensitive information, do not commit this file into a public source repository. To add version control to your provider configuration, use a local [`terraform.tfvars` file](#tf-variables). 
+Because the `provider` block includes sensitive information, do not commit this file into a public source repository. To add version control to your provider configuration, use a local [`terraform.tfvars` file](#tf-variables).
 {: important}
 
 Complete the following steps:
 
 1. Create a `provider.tf` file and specify the input parameters that are required for your resource or data source.
-    
+
     ```terraform
     provider "ibm" {
         ibmcloud_api_key = "<api_key>"
@@ -170,19 +170,19 @@ Complete the following steps:
 
 You can store sensitive information, such as credentials, in a local `terraform.tfvars` file and reference these credentials in your `provider` block.
 
-Do not commit the `terraform.tfvars` into a public source repository. This file is meant to be stored in your local machine only. 
+Do not commit the `terraform.tfvars` into a public source repository. This file is meant to be stored in your local machine only.
 {: important}
 
-1. Create a `terraform.tfvars` file on your local machine and add the input parameters that are required for your resource or data source. 
-    
+1. Create a `terraform.tfvars` file on your local machine and add the input parameters that are required for your resource or data source.
+
     ```terraform
     ibmcloud_api_key = "<ibmcloud_api_key>"
     region = "region"
     ```
     {: codeblock}
 
-2. Create a `provider.tf` file and use Terraform interpolation syntax to reference the variables from the `terraform.tfvars`. 
-    
+2. Create a `provider.tf` file and use Terraform interpolation syntax to reference the variables from the `terraform.tfvars`.
+
     ```terraform
     variable "ibmcloud_api_key" {}
     variable "region" {}
@@ -195,11 +195,11 @@ Do not commit the `terraform.tfvars` into a public source repository. This file 
     {: codeblock}
 
 
-## Step 4. Initialize the Terraform CLI. 
+## Step 4. Initialize the Terraform CLI.
 {: #terraform-init-tf-cli}
 
 Next, initialize the Terraform CLI. Run the following command:
-    
+
 ```terraform
 ./terraform init
 ```
@@ -276,11 +276,11 @@ The following code shows a sample configuration file to provision an instance. T
 data "ibm_resource_group" "group" {
     name = var.resource_group_name
   }
-  
+
   locals {
     instance_name = "${var.name}-${var.location}"
   }
-  
+
   // Create a logging instance
 
   resource "ibm_resource_instance" "resource_instance" {
@@ -357,11 +357,7 @@ Complete the following steps:
 {: #terraform_setup_next}
 
 
-Verify that the resources are created. 
+Verify that the resources are created.
 - [Launch the *Observability* UI](/docs/log-analysis?topic=log-analysis-launch) and check the instance has been created.
-- [Launch *Access (IAM)*](https://cloud.ibm.com/iam/overview){: external}. Select **Service IDs** and look for the resource key.    
+- [Launch *Access (IAM)*](https://cloud.ibm.com/iam/overview){: external}. Select **Service IDs** and look for the resource key.
 - [Review the user assigned access in the console](/docs/account?topic=account-assign-access-resources#review-your-access-console).
-
-
-
-

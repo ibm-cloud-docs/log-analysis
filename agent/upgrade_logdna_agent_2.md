@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years:  2018, 2022
+  years:  2018, 2023
 lastupdated: "2021-03-28"
 
 keywords: IBM, Log Analysis, logging, update logging agent
@@ -51,10 +51,10 @@ Complete the following steps from the command line to upgrade the logging agent 
     ```
     {: pre}
 
-    Where 
-    
+    Where
+
     `RESOURCE_GROUP` is the name of the resource group where the cluster is available, for example, `default`.
-    
+
     `REGION` is the region where the cluster is available, for example, `us-south`.
 
 4. Set the cluster where you want to configure logging as the context for this session.
@@ -123,7 +123,7 @@ Where `NAMESPACE` is the namespace in your cluster where the logging agent versi
 
 Choose one of the following commands to install and configure the logging agent:
 
-| Location                  | Command (By using public endpoints)               | 
+| Location                  | Command (By using public endpoints)               |
 |--------------------------|----------------------------------------------------|
 | `Chennai (in-che)`       | `kubectl apply -f https://assets.in-che.logging.cloud.ibm.com/clients/agent-resources.yaml`       |
 | `Dallas (us-south)`      | `kubectl apply -f https://assets.us-south.logging.cloud.ibm.com/clients/agent-resources.yaml`       |
@@ -140,7 +140,7 @@ Choose one of the following commands to install and configure the logging agent:
 {: class="simple-tab-table"}
 {: row-headers}
 
-| Location                  | Command (By using private endpoints)               | 
+| Location                  | Command (By using private endpoints)               |
 |--------------------------|----------------------------------------------------|
 | `Chennai (in-che)`       | `kubectl apply -f https://assets.in-che.logging.cloud.ibm.com/clients/agent-resources-private.yaml`   |
 | `Dallas (us-south)`      | `kubectl apply -f https://assets.us-south.logging.cloud.ibm.com/clients/agent-resources-private.yaml` |
@@ -171,5 +171,3 @@ kubectl get pods
 The deployment is successful when you see one or more logging pods.
 * **The number of logging pods equals the number of worker nodes in your cluster.**
 * All pods must be in a `Running` state.
-
-

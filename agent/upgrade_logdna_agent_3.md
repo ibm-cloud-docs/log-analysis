@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years:  2021, 2022
+  years:  2021, 2023
 lastupdated: "2021-07-30"
 
 keywords: IBM, Log Analysis, logging, update logging agent
@@ -77,10 +77,10 @@ The [LogDNA release notes](https://docs.mezmo.com/changelog){: external} lists a
     ```
     {: pre}
 
-    Where 
-    
+    Where
+
     `RESOURCE_GROUP` is the name of the resource group where the cluster is available, for example, `default`.
-    
+
     `REGION` is the region where the cluster is available, for example, `us-south`.
 
 4. Set the cluster where you want to configure logging as the context for this session.
@@ -173,17 +173,17 @@ If you run in a secured environment or a highly regulated environment, the loggi
 Complete the following steps to modify the yaml so that the logging agent runs as non-root:
 
 
-1. Download the new version 3 `yaml` file.  Starting with version 3, `yaml` files are stored in a version-specific directory.  
+1. Download the new version 3 `yaml` file.  Starting with version 3, `yaml` files are stored in a version-specific directory.
 
-    For Kubernetes clusters, get the `yaml` file from the following location: 
+    For Kubernetes clusters, get the `yaml` file from the following location:
 
-    Public endpoint: `https://assets.<REGION>.logging.cloud.ibm.com/clients/logdna-agent/<VERSION>/agent-resources.yaml` 
+    Public endpoint: `https://assets.<REGION>.logging.cloud.ibm.com/clients/logdna-agent/<VERSION>/agent-resources.yaml`
 
     Private endpoint: `https://assets.<REGION>.logging.cloud.ibm.com/clients/logdna-agent/<VERSION>/agent-resources-private.yaml`
 
     For OpenShift clusters, get the `yaml` file from the following location:
 
-    Public endpoint: `https://assets.<REGION>.logging.cloud.ibm.com/clients/logdna-agent/<VERSION>/agent-resources-openshift.yaml` 
+    Public endpoint: `https://assets.<REGION>.logging.cloud.ibm.com/clients/logdna-agent/<VERSION>/agent-resources-openshift.yaml`
 
     Private endpoint: `https://assets.<REGION>.logging.cloud.ibm.com/clients/logdna-agent/<VERSION>/agent-resources-openshift-private.yaml`
 
@@ -264,5 +264,3 @@ kubectl get pod -n ibm-observe
 The deployment is successful when you see one or more logging pods.
 * **The number of logging pods equals the number of worker nodes in your cluster.**
 * All pods must be in a `Running` state.
-
-

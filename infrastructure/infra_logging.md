@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years:  2018, 2022
+  years:  2018, 2023
 lastupdated: "2022-02-21"
 
 keywords: IBM, Log Analysis, logging, infrastructure
@@ -62,7 +62,7 @@ For more information, see [Logging with Cloud Foundry](/docs/log-analysis?topic=
 ## Logging with Kubernetes clusters
 {: #infra_logging_cluster}
 
-You can configure a logging agent to collect logs from a Kubernetes cluster and forward them to an instance of the {{site.data.keyword.la_full_notm}} service. 
+You can configure a logging agent to collect logs from a Kubernetes cluster and forward them to an instance of the {{site.data.keyword.la_full_notm}} service.
 
 You can collect and monitor logs from a Kubernetes cluster that is located in the same {{site.data.keyword.cloud_notm}} region as your {{site.data.keyword.la_full_notm}} instance or in a different one. You can also collect and monitor logs from clusters that are located outside the {{site.data.keyword.cloud_notm}}.
 
@@ -83,14 +83,14 @@ For more information, see [Logging with Kubernetes clusters](/docs/log-analysis?
 ## Logging with Bare metal
 {: #infra_logging_bm}
 
-You can use the {{site.data.keyword.la_full}} service to monitor and manage logs from a bare metal in a centralized logging system on the {{site.data.keyword.cloud_notm}}. You can collect and monitor system and application logs. 
+You can use the {{site.data.keyword.la_full}} service to monitor and manage logs from a bare metal in a centralized logging system on the {{site.data.keyword.cloud_notm}}. You can collect and monitor system and application logs.
 
 By default, the logging agent on Linux servers monitors log files in the `/var/log` directory. For example, the Ubuntu system log (`/var/log/syslog`) is monitored by default.
 
 On the {{site.data.keyword.cloud_notm}}, you can configure an bare metal to forward logs to an {{site.data.keyword.la_full_notm}} instance by completing the following steps:
 
 1. Provision a bare metal running Ubuntu Linux.
-2. Provision an instance of the {{site.data.keyword.la_full_notm}} service. 
+2. Provision an instance of the {{site.data.keyword.la_full_notm}} service.
 3. Configure the logging agent in the bare metal.
 4. Optionally, add additional directories to be monitored by the agent.
 
@@ -99,17 +99,17 @@ On the {{site.data.keyword.cloud_notm}}, you can configure an bare metal to forw
 For more information, see [Logging with Bare metals](/docs/log-analysis?topic=log-analysis-ubuntu_baremetal).
 
 
-## Logging with Linux VPC instances 
+## Logging with Linux VPC instances
 {: #infra_logging_vpc}
 
-You can use the {{site.data.keyword.la_full}} service to monitor and manage logs from a Linux VPC server instance in a centralized logging system on the {{site.data.keyword.cloud_notm}}. You can collect and monitor system and application logs. 
+You can use the {{site.data.keyword.la_full}} service to monitor and manage logs from a Linux VPC server instance in a centralized logging system on the {{site.data.keyword.cloud_notm}}. You can collect and monitor system and application logs.
 
 By default, the logging agent for Linux VPC instances monitors log files in the `/var/log` directory. For example, the Ubuntu system log (`/var/log/syslog`) is monitored by default.
 
 On the {{site.data.keyword.cloud_notm}}, you can configure a Linux VPC server to forward logs to an {{site.data.keyword.la_full_notm}} instance by completing the following steps:
 
 1. Provision a VPC running Ubuntu Linux for example.
-2. Provision an instance of the {{site.data.keyword.la_full_notm}} service. 
+2. Provision an instance of the {{site.data.keyword.la_full_notm}} service.
 3. Configure the logging agent in the Ubuntu server.
 4. Optionally, add additional directories to be monitored by the agent.
 
@@ -122,7 +122,7 @@ For more information, see [Logging with Linux VPC server instances](/docs/log-an
 
 You can send logs to an {{site.data.keyword.la_full_notm}} instance via Syslog. TCP and TCP+TLS are both supported.
 
-To configure syslog, you must enable a port to send logs via syslog to your logging instance. If you are using (a) the classic syslog protocol, (b) a custom port in syslog-ng, or (c) a custom port in rsyslog, there is no authentication available and anyone with knowledge of the endpoint can submit logs to your instance.  Depending on your environment, this may present a significant security risk. Use these configurations at your organization’s own risk.  Validate with your compliance and security teams whether this security risk is acceptable to your organization. 
+To configure syslog, you must enable a port to send logs via syslog to your logging instance. If you are using (a) the classic syslog protocol, (b) a custom port in syslog-ng, or (c) a custom port in rsyslog, there is no authentication available and anyone with knowledge of the endpoint can submit logs to your instance.  Depending on your environment, this may present a significant security risk. Use these configurations at your organization’s own risk.  Validate with your compliance and security teams whether this security risk is acceptable to your organization.
 {: important}
 
 To use a custom port to send logs via UDP, you can open an IBM support ticket. For information about opening an IBM support ticket, or about support levels and ticket severities, see [Getting support](/docs/get-support).
@@ -134,16 +134,16 @@ For more information on using Syslog, see [Logging with Syslog](/docs/log-analys
 
 You can use the {{site.data.keyword.la_full}} service to monitor and manage logs from Windows systems.
 
-NXLog is used to provide log files to {{site.data.keyword.la_full}}.  
+NXLog is used to provide log files to {{site.data.keyword.la_full}}.
 
 To configure NXLog, you must enable a port to send logs via syslog to your logging instance. If you are using (a) the classic syslog protocol, (b) a custom port in `syslog-ng`, or (c) a custom port in `rsyslog`, there is no authentication available and anyone with knowledge of the endpoint can submit logs to your instance. As a result, depending on your environment, your use of the classic syslog protocol or custom port configurations with `syslog-ng` or `rsyslog` may present a significant security risk.  Use these configurations at your organization's own risk.  Validate with your compliance and security teams whether this security risk is acceptable to your organization.
 {: important}
 
-By default, NXLog monitors log files in the `C:\\ProgramData\\logs` directory. 
+By default, NXLog monitors log files in the `C:\\ProgramData\\logs` directory.
 
 On the {{site.data.keyword.cloud_notm}}, configure an Windows server to forward logs to an {{site.data.keyword.la_full_notm}} instance by completing the following steps:
 
-1. Provision an instance of the {{site.data.keyword.la_full_notm}} service. 
+1. Provision an instance of the {{site.data.keyword.la_full_notm}} service.
 2. Configure NXLog on the Windows server.
 3. Optionally, add additional directories to be monitored by the agent.
 
@@ -154,6 +154,3 @@ For more information on logging from Windows systems, see the following:
 * [Logging from a Windows client](/docs/log-analysis?topic=log-analysis-windows)
 * [Logging from Windows Server systems](/docs/log-analysis?topic=log-analysis-windows_serv)
 * [Logging with Windows VPC server instances](/docs/log-analysis?topic=log-analysis-windows_vpc_tutorial)
-
-
-

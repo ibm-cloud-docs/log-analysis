@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years:  2018, 2022
+  years:  2018, 2023
 lastupdated: "2021-03-28"
 
 keywords: IBM, Log Analysis, logging, alerts
@@ -11,7 +11,7 @@ subcollection: log-analysis
 ---
 
 {{site.data.keyword.attribute-definition-list}}
- 
+
 # Removing alerts through the UI
 {: #remove_alert_ui}
 
@@ -51,4 +51,3 @@ When you delete a preset, any alerts that are defined by using this preset are a
 {: note}
 
 For more inform ation on how to delete a preset, see [Delete a preset](/docs/log-analysis?topic=log-analysis-preset_ui#preset_ui_delete).
-

@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years:  2022
+  years:  2022, 2023
 lastupdated: "2022-09-19"
 
 keywords: IBM, Log Analysis, logging, config agent, Windows
@@ -70,7 +70,7 @@ Where
 :   Is how you want your Windows logging data to be tagged in {{site.data.keyword.la_full_notm}}.
 
 ## Starting the V2 Logging agent
-{: #start_logging_agent_windows}    
+{: #start_logging_agent_windows}
 
 To start the Logging agent, run the following from a Windows command prompt as an admin user:
 
@@ -78,5 +78,3 @@ To start the Logging agent, run the following from a Windows command prompt as a
 nssm start logdna-agent
 ```
 {: codeblock}
-
-

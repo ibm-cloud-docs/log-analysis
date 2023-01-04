@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years: 2019, 2022
+  years: 2019, 2023
 lastupdated: "2022-08-18"
 
 keywords: IBM Cloud, Log Analysis, streaming
@@ -34,7 +34,7 @@ Complete the following steps to configure the connection between {{site.data.key
 
 1. [Launch the {{site.data.keyword.la_short}} web UI](/docs/services/log-analysis?topic=log-analysis-launch).
 
-2. Click the **Settings** icon ![Configuration icon](images/admin.png "Admin icon"). Then select **Streaming** &gt; **Configuration**. 
+2. Click the **Settings** icon ![Configuration icon](images/admin.png "Admin icon"). Then select **Streaming** &gt; **Configuration**.
 
 3. Select **Log Analysis / Activity Tracker** as the streaming type. Then, enter the following information:
 
@@ -45,7 +45,7 @@ Complete the following steps to configure the connection between {{site.data.key
        - If you configure your log sources to send data through private endpoints, make sure you configure a private ingestion endpoint for streaming.
 
        - If you configure your log sources to send data through private and public endpoints, make sure you configure a private ingestion endpoint for streaming.
-    
+
     3. Click **Save**.
 
 
@@ -74,7 +74,7 @@ To verify that sample data is streaming, complete the following steps:
    :   Is the logging instance ID for the account.
 
    `_region`
-   :   Is the region where the logging data originated. This is the specific region name for the environment where the data originated. 
+   :   Is the region where the logging data originated. This is the specific region name for the environment where the data originated.
 
 If you do not see data, do 1 of the following:
 - **Resend sample logs** to verify that sample data is streaming.
@@ -89,13 +89,7 @@ If you see data, click **YES**.
 {: #streaming-configure-l2l-step3}
 
 
-After you verify that sample data is reaching the {{site.data.keyword.la_short}} instance, click **Start stream**. 
+After you verify that sample data is reaching the {{site.data.keyword.la_short}} instance, click **Start stream**.
 
 Streaming may take up to 15 minutes to begin.
 {: note}
-
-
-
-
-
-

@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years:  2018, 2022
+  years:  2018, 2023
 lastupdated: "2021-03-28"
 
 keywords: IBM, Log Analysis, logging, alerts
@@ -12,7 +12,7 @@ subcollection: log-analysis
 
 {{site.data.keyword.attribute-definition-list}}
 
- 
+
 # Integrating with email
 {: #email}
 
@@ -36,7 +36,7 @@ When you [configure an alert](/docs/log-analysis?topic=log-analysis-alerts) you 
 5. Optionally you can specify a **Custom schedule** with alerting limited to a specified timezone, days of the week, or timeframe. To configure a **Custom schedule**:
 
     1. Select **on** for **Custom schedule**.
-    2. Select the Timezone for the log entries. 
+    2. Select the Timezone for the log entries.
     3. Select the days of the week when alerts should be generated.
     4. Optionally specify a time range for the selected days. A graph will help you determine the number of log entries for the timezone and time range.
 
@@ -57,11 +57,11 @@ After you configure an alert on a view and receive a notification email, complet
 
 1. Go to the email account where you receive email notifications.
 
-2. Open a notification email for a view that you want to mute. 
+2. Open a notification email for a view that you want to mute.
 
     Look for emails that are sent by {{site.data.keyword.at_full_notm}}. The subject includes the name of the view.
 
-    In the email, there is a section that includes the following text: 
+    In the email, there is a section that includes the following text:
 
     ```text
     Mute these alerts for   [1 Hour] [6 Hours] [12 Hours] [1 Day]
@@ -97,10 +97,8 @@ You can manage alerts through the **ALERTS** dashboard.
 
 2. Select **ALERTS**.
 
-    You can see the list of alerts that are muted. Each entry informs about the view where notifications are muted, the user who requested the action, and the UTC time when notifications will be enabled. 
+    You can see the list of alerts that are muted. Each entry informs about the view where notifications are muted, the user who requested the action, and the UTC time when notifications will be enabled.
 
 3. Select an alert that you want to unmute.
 
 4. Click **Unmute**.
-
-

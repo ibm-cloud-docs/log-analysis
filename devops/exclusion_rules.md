@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years:  2018, 2022
+  years:  2018, 2023
 lastupdated: "2022-02-07"
 
 keywords: IBM, Log Analysis, logging, config agent
@@ -26,7 +26,7 @@ Verify that each exclusion rule that you add behaves as expected. Improper confi
 
 1. [Launch the {{site.data.keyword.la_full_notm}} web UI](/docs/log-analysis?topic=log-analysis-view_logs#view_logs_step2).
 
-2. Click the **Settings** icon ![Configuration icon](../images/admin.png "Configuration icon"). Then select **Usage** &gt; **Exclusion Rules**. 
+2. Click the **Settings** icon ![Configuration icon](../images/admin.png "Configuration icon"). Then select **Usage** &gt; **Exclusion Rules**.
 
 3. Select **Add Rule**. The **Create Rule** section opens.
 
@@ -36,7 +36,7 @@ Verify that each exclusion rule that you add behaves as expected. Improper confi
 
     For example, to exclude all the lines from a specific source, select that source and leave the apps and query fields blank.
 
-    You might want to exclude logs from an app, then leave the sources and query fields blank, and enter an app. 
+    You might want to exclude logs from an app, then leave the sources and query fields blank, and enter an app.
 
     You might want to exclude all the logs that are coming from a specific source and app. You must choose the source and app, and leave blank the query field.
 
@@ -49,7 +49,7 @@ Verify that each exclusion rule that you add behaves as expected. Improper confi
 8. After you configure an exclusion rule, verify that the exclusion rule behaves as you expect.
 
     Check the query in a custom view by entering the search criteria in the search bar of the *Everything* view, and validating that the data that is displayed is the data that you want excluded.
-    {: tip} 
+    {: tip}
 
 
 ## Sample 1: Exclude syslog data for a worker while keeping entries that report errors only
@@ -63,7 +63,7 @@ Prereq: You must have a cluster configured to forward logs to a logging instance
 
 1. [Launch the {{site.data.keyword.la_full_notm}} web UI](/docs/log-analysis?topic=log-analysis-view_logs#view_logs_step2).
 
-2. Click the **Settings** icon ![Configuration icon](../images/admin.png "Configuration icon"). Then select **Usage** &gt; **Exclusion Rules**. 
+2. Click the **Settings** icon ![Configuration icon](../images/admin.png "Configuration icon"). Then select **Usage** &gt; **Exclusion Rules**.
 
 3. Select **Add Rule**. The **Create Rule** section opens.
 
@@ -73,7 +73,7 @@ Prereq: You must have a cluster configured to forward logs to a logging instance
 
     Click the *Sources* field. The list of options is displayed. Choose a worker. You can choose more than 1 source by clicking the field again and choosing a different source.
 
-    Click the *Apps* field. The list of options is displayed. Choose **syslog**. 
+    Click the *Apps* field. The list of options is displayed. Choose **syslog**.
 
     In the Query section, enter **-level:error** to exclude all lines except the ones that report an error.
 
@@ -82,7 +82,7 @@ Prereq: You must have a cluster configured to forward logs to a logging instance
 7. Click **Save**.
 
     Check the query in a custom view by entering the search criteria in the search bar of the *Everything* view, and validating that the data that is displayed is the data that you want excluded.
-    {: tip} 
+    {: tip}
 
 
 ## Sample 2: Exclude kube-system data from the cluster while keeping entries that report errors only
@@ -96,7 +96,7 @@ Prereq: You must have a cluster configured to forward logs to a logging instance
 
 1. [Launch the {{site.data.keyword.la_full_notm}} web UI](/docs/log-analysis?topic=log-analysis-view_logs#view_logs_step2).
 
-2. Click the **Settings** icon ![Configuration icon](../images/admin.png "Configuration icon"). Then select **Usage** &gt; **Exclusion Rules**. 
+2. Click the **Settings** icon ![Configuration icon](../images/admin.png "Configuration icon"). Then select **Usage** &gt; **Exclusion Rules**.
 
 3. Select **Add Rule**. The **Create Rule** section opens.
 
@@ -106,9 +106,9 @@ Prereq: You must have a cluster configured to forward logs to a logging instance
 
     In the Query section, enter **Namespace:kube-system -level:error** to exclude all lines except the ones that report an error.
 
-6. Leave unchecked the option **Preserve these lines for live-tail and alerting**. 
+6. Leave unchecked the option **Preserve these lines for live-tail and alerting**.
 
 7. Click **Save**.
 
     Check the query in a custom view by entering the search criteria in the search bar of the *Everything* view, and validating that the data that is displayed is the data that you want excluded.
-    {: tip} 
+    {: tip}

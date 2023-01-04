@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years:  2018, 2022
+  years:  2018, 2023
 lastupdated: "2021-03-28"
 
 keywords: IBM, Log Analysis, logging, upgrade, plan
@@ -34,11 +34,11 @@ To change the service plan of an instance from the Observability dashboard in th
 
 3. Click **Logging**.
 
-4. Click the **Actions** icon ![Actions icon](../icons/action-menu-icon.svg) next to the instance you want to change. 
+4. Click the **Actions** icon ![Actions icon](../icons/action-menu-icon.svg) next to the instance you want to change.
 
-5. Click **Edit plan**. 
+5. Click **Edit plan**.
 
-6. Select a service plan. 
+6. Select a service plan.
 
 7. Click **Save**.
 
@@ -85,7 +85,7 @@ Complete the following steps to change the service plan:
     * `service-plan-id` indicates the type of plan.
 
     * `RESOURCE_PLAN_ID` is the ID of the plan that you want to set. To get the service plan IDs, see [Service plans](/docs/log-analysis?topic=log-analysis-service_plans).
-    
+
 
 For example, to change the service plan of an instance to the 30 days retention plan, run the following command:
 
@@ -93,5 +93,3 @@ For example, to change the service plan of an instance to the 30 days retention 
 ibmcloud resource service-instance-update logging-instance-01 deda35aa-662b-4b06-9f6e-05e0b55cc577
 ```
 {: codeblock}
-
-

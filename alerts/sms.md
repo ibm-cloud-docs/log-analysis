@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years:  2021, 2022
+  years:  2021, 2023
 lastupdated: "2021-07-12"
 
 keywords: IBM, Log Analysis, PagerDuty
@@ -38,7 +38,7 @@ Complete the following steps to get an SMS notification when an alert in the {{s
 ### Step 1. Configure an alert in {{site.data.keyword.la_full_notm}}
 {: #sms-mon-step1}
 
-In the {{site.data.keyword.la_short}} web UI, [configure a {{site.data.keyword.mon_short}} alert](/docs/log-analysis?topic=log-analysis-monitoring). 
+In the {{site.data.keyword.la_short}} web UI, [configure a {{site.data.keyword.mon_short}} alert](/docs/log-analysis?topic=log-analysis-monitoring).
 
 When an alert is triggered, a notification is sent to the {{site.data.keyword.mon_short}} instance that you have configured. Then, you manage alerts through the *Events* view section in the {{site.data.keyword.mon_short}} UI.
 
@@ -52,8 +52,8 @@ Complete the following steps:
       In the *Events* section of the {{site.data.keyword.mon_short}} UI, configure an event that send an SMS notification based on the alert that youd defined previously:
 
       1. Select an alert. Then select **Create Alert from Event**.
-      
-      2. Enter a name, a description, a group, and the severity level. The group **default** is set unless you specify a custom one. 
+
+      2. Enter a name, a description, a group, and the severity level. The group **default** is set unless you specify a custom one.
 
       3. Define the condition that triggers the SMS notification.
 
@@ -84,9 +84,9 @@ Complete the following steps:
 ## Send an SMS notification by using the PagerDuty On Call Service
 {: #sms-pd}
 
-When the {{site.data.keyword.la_short}} service sends a notification (event) to PagerDuty, an alert incident is created in PagerDuty and an SMS is sent if the escalation policy and on-call responder details include the rule to send to an SMS number. 
+When the {{site.data.keyword.la_short}} service sends a notification (event) to PagerDuty, an alert incident is created in PagerDuty and an SMS is sent if the escalation policy and on-call responder details include the rule to send to an SMS number.
 - An incident is the issue that needs to be resolved. It can have 3 states: `triggered`, `acknowledged`, and `resolved`
-- An incident triggers a PagerDuty service that generates 1 or more notifications to go out to on-call responders according to the service's escalation policy. SMS is a type of notification. You must configure a service so that it includes the escalation policy that indicates how to connect a service to individual users and schedules. 
+- An incident triggers a PagerDuty service that generates 1 or more notifications to go out to on-call responders according to the service's escalation policy. SMS is a type of notification. You must configure a service so that it includes the escalation policy that indicates how to connect a service to individual users and schedules.
 
     A service includes information about the {{site.data.keyword.la_short}} service as an inbound integration that sends notifications to PagerDuty.
 
@@ -113,10 +113,3 @@ Complete the following steps to get an SMS notification when an alert in the {{s
 3. [Configure a PagerDuty Escalation Policy](https://support.pagerduty.com/docs/escalation-policies#section-create-an-escalation-policy){: external} and for **Notify** specify the support user.
 
 4. In the {{site.data.keyword.la_short}} UI, [configure a PagerDuty alert](/docs/log-analysis?topic=log-analysis-pagerduty).
-
-
-
-
-
-
-

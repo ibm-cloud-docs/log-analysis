@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years: 2018, 2022
+  years: 2018, 2023
 lastupdated: "2021-03-28"
 
 keywords: IBM, Log Analysis, logging, security, connection
@@ -34,7 +34,7 @@ The collector component ingest data that logging agents forward to the logging s
 
 The datastore component stores data, alerts, and user metadata.
 
-You can use logging agents to monitor and collect logs from hosts such as a Kubernetes cluster or a Linux system. A logging agent connects to 1 logging instance. The agent forwards data to the instance that is connected. 
+You can use logging agents to monitor and collect logs from hosts such as a Kubernetes cluster or a Linux system. A logging agent connects to 1 logging instance. The agent forwards data to the instance that is connected.
 
 Platform logs are collected automatically for enabled-logging services in each region. The data is forwarded to the {{site.data.keyword.la_full_notm}} service instance that is enabled to collect and monitor platform metrics in a region.
 
@@ -49,12 +49,10 @@ Each regional deployment of the {{site.data.keyword.la_full_notm}} service serve
 
 * There is 1 {{site.data.keyword.la_full_notm}} service per region that is responsible for running user workloads in the region.
 * The logging data that is collected and processed by the {{site.data.keyword.la_full_notm}} service is associated with that location and not visible to the other regions by virtue of this association.
-* Within a service instance, logging data is isolated per logging instance within a region. 
+* Within a service instance, logging data is isolated per logging instance within a region.
 * The {{site.data.keyword.la_full_notm}} service offers soft isolation for data storage. Data is mixed together in the same data stores and segmented by tags that are associated with each of the log records to enforce access control policies.
 
 You can use {{site.data.keyword.cloud_notm}} Identity and Access Management (IAM) to control which users see, create, use, and manage resources in your service instance. [Learn more](/docs/log-analysis?topic=log-analysis-work_iam)
 .
-* To grant access to manage the {{site.data.keyword.la_full_notm}} in {{site.data.keyword.cloud_notm}}, you can assign platform roles that define users levels of access for completing platform management tasks and accessing account resources. 
+* To grant access to manage the {{site.data.keyword.la_full_notm}} in {{site.data.keyword.cloud_notm}}, you can assign platform roles that define users levels of access for completing platform management tasks and accessing account resources.
 * To grant access to manage the logging logging instance and its resources, you can assign service roles that define users levels of access for viewing data and managing features such as dashboards, screens, and alerts.
-
-

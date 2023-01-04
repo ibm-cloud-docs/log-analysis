@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years:  2018, 2022
+  years:  2018, 2023
 lastupdated: "2021-03-28"
 
 keywords: IBM, Log Analysis, logging, config agent
@@ -18,8 +18,8 @@ subcollection: log-analysis
 Configure a logging agent to associate tags to all log records that it collects so that you can identify the agent's data quicker in the logging UI.
 {: shortdesc}
 
-* You can define multiple tags per logging agent. 
-* You separate tags by using commas. 
+* You can define multiple tags per logging agent.
+* You separate tags by using commas.
 * The maximum number of characters that you can set to define multiple tags is 80 characters.
 * You can view the tags per log record.
 * You can filter data by using one or more tags through the *All Tags* menu in the logging UI.
@@ -161,6 +161,3 @@ You can also edit the agent configuration file and add tags. The configuration f
     sudo /etc/init.d/logdna-agent start
     ```
     {: codeblock}
-
-
-

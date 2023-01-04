@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years:  2018, 2022
+  years:  2018, 2023
 lastupdated: "2021-03-28"
 
 keywords: IBM, Log Analysis, logging, control usage
@@ -23,10 +23,10 @@ In {{site.data.keyword.la_full_notm}}, you can control the data that is collecte
 ## Controlling data by excluding log files through the logging agent
 {: #control_usage_agent}
 
-You can stop logs from being forwarded to your logging instance by customizing the logging agent to exclude any files that you do not want the logging agent to monitor. 
+You can stop logs from being forwarded to your logging instance by customizing the logging agent to exclude any files that you do not want the logging agent to monitor.
 
 * By default, the agent monitors all files with extension *.log*,  and extensionless files under */var/log/*.
-* You must configure the **EXCLUDE** parameter in the logging agent configuration file to exclude files that are located in any of the paths that are defined through the **logdir** parameter. 
+* You must configure the **EXCLUDE** parameter in the logging agent configuration file to exclude files that are located in any of the paths that are defined through the **logdir** parameter.
 * To define the files that you want to exclude, you can separate multiple files by using commas. You can use glob patterns. You can also configure specific files.
 
 [Learn more](/docs/log-analysis?topic=log-analysis-exclude_logs_from_agent).
@@ -36,7 +36,7 @@ You can stop logs from being forwarded to your logging instance by customizing t
 ## Controlling data by using exclusion rules
 {: #control_usage_rule}
 
-You can configure exclusion rules through the logging web UI to stop logs from counting against your data usage quota and from being stored for search. For example, you might want to collect and forward all logs from a source to a logging instance. However, you might be interested in a subset of those logs such as error logs. 
+You can configure exclusion rules through the logging web UI to stop logs from counting against your data usage quota and from being stored for search. For example, you might want to collect and forward all logs from a source to a logging instance. However, you might be interested in a subset of those logs such as error logs.
 
 Logs that are excluded do not count towards your data usage quota. Also, logs that match the exclusion rule are not archived.
 {: note}
@@ -65,7 +65,3 @@ Complete the following steps to configure an alert that informs you when you rea
 3. Define a **Usage Alert** to set the threshold for data usage in the instance. When the threshold is reached, you are notified. Enter a value to set the data usage threshold.
 
 4. In the **Add recipient** section, enter one or more emails where the notification will be sent.
-
-
-
-

@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years:  2018, 2022
+  years:  2018, 2023
 lastupdated: "2021-11-18"
 
 keywords: IBM, Log Analysis, logging, control usage
@@ -12,7 +12,7 @@ subcollection: log-analysis
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Analyzing event data trends by using the API 
+# Analyzing event data trends by using the API
 {: #control_usage_api}
 
 In {{site.data.keyword.la_full}}, you can query your logging instance and identify usage trends over a period of time by using the *Usage API*. You can get aggregated usage data information for applications, hosts and tags during a specific period of time and within the last 6 months.
@@ -27,48 +27,48 @@ To query usage data, you can use the following methods:
 - For all apps during a time period, you can list the aggregated usage.
 
     ```text
-    curl "<ENDPOINT>/v1/usage/apps/<SERVICE_NAME>?from=<FROM_DATE>&to=<TO_DATE>&limit=<LIMIT_NUMBER>" -u <SERVICE_KEY>: 
+    curl "<ENDPOINT>/v1/usage/apps/<SERVICE_NAME>?from=<FROM_DATE>&to=<TO_DATE>&limit=<LIMIT_NUMBER>" -u <SERVICE_KEY>:
     ```
     {: codeblock}
 
 - For all tags during a time period, you can list the aggregated usage.
 
     ```text
-    curl "<ENDPOINT>/v1/usage/tags/<SERVICE_NAME>?from=<FROM_DATE>&to=<TO_DATE>&limit=<LIMIT_NUMBER>" -u <SERVICE_KEY>: 
+    curl "<ENDPOINT>/v1/usage/tags/<SERVICE_NAME>?from=<FROM_DATE>&to=<TO_DATE>&limit=<LIMIT_NUMBER>" -u <SERVICE_KEY>:
     ```
     {: codeblock}
 
 - For all hosts during a time period, you can list the aggregated usage.
 
     ```text
-    curl "<ENDPOINT>/v1/usage/hosts/<SERVICE_NAME>?from=<FROM_DATE>&to=<TO_DATE>&limit=<LIMIT_NUMBER>" -u <SERVICE_KEY>: 
+    curl "<ENDPOINT>/v1/usage/hosts/<SERVICE_NAME>?from=<FROM_DATE>&to=<TO_DATE>&limit=<LIMIT_NUMBER>" -u <SERVICE_KEY>:
     ```
     {: codeblock}
 
 - For 1 app during a time period, you can get the aggregated usage.
 
     ```text
-    curl "<ENDPOINT>/v1/usage/apps/<SERVICE_NAME>/<APP_NAME>?from=<FROM_DATE>&to=<TO_DATE>&limit=<LIMIT_NUMBER>" -u <SERVICE_KEY>: 
+    curl "<ENDPOINT>/v1/usage/apps/<SERVICE_NAME>/<APP_NAME>?from=<FROM_DATE>&to=<TO_DATE>&limit=<LIMIT_NUMBER>" -u <SERVICE_KEY>:
     ```
     {: codeblock}
 
 - For 1 tag during a time period, you can get the aggregated usage.
 
     ```text
-    curl "<ENDPOINT>/v1/usage/tags/<SERVICE_NAME>/<TAG_NAME>?from=<FROM_DATE>&to=<TO_DATE>&limit=<LIMIT_NUMBER>" -u <SERVICE_KEY>: 
+    curl "<ENDPOINT>/v1/usage/tags/<SERVICE_NAME>/<TAG_NAME>?from=<FROM_DATE>&to=<TO_DATE>&limit=<LIMIT_NUMBER>" -u <SERVICE_KEY>:
     ```
     {: codeblock}
 
 - For 1 host during a time period, you can get the aggregated usage.
 
     ```text
-    curl "<ENDPOINT>/v1/usage/hosts/<SERVICE_NAME>/<HOST_NAME>?from=<FROM_DATE>&to=<TO_DATE>&limit=<LIMIT_NUMBER>" -u <SERVICE_KEY>: 
+    curl "<ENDPOINT>/v1/usage/hosts/<SERVICE_NAME>/<HOST_NAME>?from=<FROM_DATE>&to=<TO_DATE>&limit=<LIMIT_NUMBER>" -u <SERVICE_KEY>:
     ```
     {: codeblock}
 
 - Replace `<ENDPOINT>` with the {{site.data.keyword.at_full_notm}} API endpoint. To see the list of endpoints, see either [Public API endpoints](/docs/log-analysis?topic=log-analysis-endpoints#endpoints_api_public) or [Private API endpoints](/docs/log-analysis?topic=log-analysis-endpoints#endpoints_api_private) as appropriate for your environment.
 - Replace `<SERVICE_NAME>` with the [CRN service name](/docs/log-analysis?topic=log-analysis-cloud_services) for the service you are interested in.  If not specified, data for all services meeting the other criteria will be returned.
-- Replace `<APP_NAME>` with the name of the app. 
+- Replace `<APP_NAME>` with the name of the app.
 - Replace `<TAG_NAME>` with the name of the tag.
 - Replace `<HOST_NAME>` with the name of the host.
 
@@ -125,7 +125,7 @@ curl "https://api.us-south.logging.cloud.ibm.com/v1/usage/hosts" -u <SERVICE_KEY
 ### List usage data for the top N hosts for the past 6 months
 {: #control_usage_examples2}
 
-This command lists the aggregated usage information for the highest-usage `N` hosts for the past 6 months where `N` is an integer number. 
+This command lists the aggregated usage information for the highest-usage `N` hosts for the past 6 months where `N` is an integer number.
 
 ```text
 curl "https://api.us-south.logging.cloud.ibm.com/v1/usage/hosts?limit=N" -u <SERVICE_KEY>:
@@ -224,8 +224,3 @@ For example, to return the host with the highest data usage in October 2021, tha
 curl "https://api.us-south.logging.cloud.ibm.com/v1/usage/hosts?from=1633046400&to=1635724800&limit=1" -u <SERVICE_KEY>:
 ```
 {: codeblock}
-
-
-
-
-

@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years: 2019, 2022
+  years: 2019, 2023
 lastupdated: "2021-05-21"
 
 keywords: IBM, Log Analysis, logging, faq
@@ -36,14 +36,14 @@ You can access more information about the logs that each service generates from 
 
 First, you must [check whether you have enabled **Platform logs** in the location where your service is available](/docs/log-analysis?topic=log-analysis-config_svc_logs).
 
-Then, check the [Cloud services by location](/docs/Activity-Tracker-with-LogDNA?topic=Activity-Tracker-with-LogDNA-event_types#event_types_location) documentation to find out the location where the logs are available for analysis.  
+Then, check the [Cloud services by location](/docs/Activity-Tracker-with-LogDNA?topic=Activity-Tracker-with-LogDNA-event_types#event_types_location) documentation to find out the location where the logs are available for analysis.
 
 
 ## Can I import archived data back into the logging web UI?
 {: #faq_5}
 {: faq}
 
-You cannot import archived data into the logging web UI. 
+You cannot import archived data into the logging web UI.
 
 ## How do I configure archiving for my instance?
 {: #faq_6}
@@ -79,13 +79,13 @@ ic resource service-instance <INSTANCE_NAME>
 ```
 {: pre}
 
-To get the name of the instance, run the following command `ibmcloud resource service-instances --all-resource-groups`. 
+To get the name of the instance, run the following command `ibmcloud resource service-instances --all-resource-groups`.
 
 ## Can I import archived data into the UI?
 {: #faq_10}
 {: faq}
 
-Archived data cannot be imported to be searched or used in the {{site.data.keyword.la_full_notm}} UI.  
+Archived data cannot be imported to be searched or used in the {{site.data.keyword.la_full_notm}} UI.
 
 Use the [{{site.data.keyword.sqlquery_notm}} service](/docs/sql-query?topic=sql-query-getting-started) to query archive data.
 
@@ -97,6 +97,3 @@ Use the [{{site.data.keyword.sqlquery_notm}} service](/docs/sql-query?topic=sql-
 If you are unable to [create an API key](/docs/account?topic=account-userapikey&interface=ui) it could be because you are not authorized to do so.
 
 Make sure your ID has the [`User API key creator` permission enabled for the `IAM Identity Service`.](/docs/account?topic=account-allow-api-create)
-
-
-

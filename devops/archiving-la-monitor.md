@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years: 2019, 2022
+  years: 2019, 2023
 lastupdated: "2022-05-04"
 
 keywords: IBM Cloud, Log Analysis, archive logs, COS, cloud object storage
@@ -12,11 +12,11 @@ subcollection: log-analysis
 
 {{site.data.keyword.attribute-definition-list}}
 
- 
+
 # Monitor archiving with {{site.data.keyword.at_short}}
 {: #archiving-la-monitor}
 
-You can monitor archiving of an {{site.data.keyword.la_short}} instance by monitoring the service ID that is used to write data into {{site.data.keyword.cos_full_notm}} (COS) by using the {{site.data.keyword.at_short}} service. 
+You can monitor archiving of an {{site.data.keyword.la_short}} instance by monitoring the service ID that is used to write data into {{site.data.keyword.cos_full_notm}} (COS) by using the {{site.data.keyword.at_short}} service.
 {: shortdesc}
 
 ## Prereqs
@@ -32,10 +32,10 @@ You can monitor archiving of an {{site.data.keyword.la_short}} instance by monit
 - Check that your user ID has permissions to launch the web UI and create views and alerts in the {{site.data.keyword.at_short}} instance. The following table lists the minimum roles that a user must have to be able to launch the {{site.data.keyword.at_full_notm}} web UI, and manage resources:
 
 | Role                      | Permission granted            |
-|---------------------------|-------------------------------|  
+|---------------------------|-------------------------------|
 | Platform role: `Viewer`     | Allows the user to view the list of service instances in the Observability dashboard. |
 | Service role: `standard-user` \n  or \n Service role: `manager`     | Allows the user to launch the web UI and configure resources.  |
-{: caption="Table 1. IAM roles" caption-side="top"} 
+{: caption="Table 1. IAM roles" caption-side="top"}
 
 For more information on how to configure policies for a user, see [Granting user permissions to a user or service ID](/docs/activity-tracker?topic=activity-tracker-iam_view_events).
 
@@ -66,11 +66,11 @@ Complete the following steps to get the service ID that is used to configure arc
 
 2. Select the {{site.data.keyword.cos_full_notm}} instance where the bucket is available.
 
-3. Select **Service credentials**. 
+3. Select **Service credentials**.
 
-4. For the service ID that you used to configure archiving, open the details for the **Key name**. You will see information that is related to the key. 
+4. For the service ID that you used to configure archiving, open the details for the **Key name**. You will see information that is related to the key.
 
-5. Copy the service ID value. This is the last section of the CRN value that is set for the field **iam_serviceid_crn**. 
+5. Copy the service ID value. This is the last section of the CRN value that is set for the field **iam_serviceid_crn**.
 
     For example, an `iam_serviceid_crn` is similar to the following:
 
@@ -89,7 +89,7 @@ Complete the following steps to get the service ID that is used to configure arc
 
 9. Copy the *Bucket Instance CRN*.
 
-10. In the **Activity Tracker** section make sure the selected service instance is the one you are using.  Also make sure **Data events** is set to *read & write*. 
+10. In the **Activity Tracker** section make sure the selected service instance is the one you are using.  Also make sure **Data events** is set to *read & write*.
 
 ### Step 2. Define a view to filter the events that report the usage of that service ID
 {: #archiving-la-monitor-alert-2}
@@ -178,7 +178,7 @@ Complete the following steps to define a dashboard:
 
 4. Select **Add Graph**.
 
-5. Select **All lines** in the *Graph a field* section. 
+5. Select **All lines** in the *Graph a field* section.
 
 6. Select *Advance filtering* and add the following query:
 
@@ -196,6 +196,3 @@ Complete the following steps to define a dashboard:
 7. Select **Add graph**. The following dashboard is created where you can monitor the archiving activity in your account for the bucket that you specified in the configuration.
 
     ![Create board page](../images/boards-3.png "Create board page")
-
-
-

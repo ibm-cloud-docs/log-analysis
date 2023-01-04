@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years:  2018, 2022
+  years:  2018, 2023
 lastupdated: "2021-03-28"
 
 keywords: IBM, Log Analysis, logging, config agent
@@ -26,33 +26,32 @@ For a listing of available certificates and instructions on obtaining pertinent 
 ## System and Organization Controls (SOC)
 {: #compliance-soc}
 
-{{site.data.keyword.la_full_notm}} is certified for SOC 2 Type 1. 
+{{site.data.keyword.la_full_notm}} is certified for SOC 2 Type 1.
 
 ## Payment Card Industry (PCI) data security standards
 {: #compliance-pci}
 
-{{site.data.keyword.la_full_notm}} is compliant with the Payment Card Industry Data Security Standard (PCI DSS). 
+{{site.data.keyword.la_full_notm}} is compliant with the Payment Card Industry Data Security Standard (PCI DSS).
 
 ## HIPAA readiness
 {: #compliance-hipaa}
 
 {{site.data.keyword.la_full_notm}} meets the required IBM controls that are commensurate with the Health Insurance Portability and Accountability Act of 1996 (HIPAA) Security and Privacy Rule requirements. These requirements include the appropriate administrative, physical, and technical safeguards required of Business Associates in 45 CFR Part 160 and Subparts A and C of Part 164. HIPAA readiness for {{site.data.keyword.la_full_notm}} applies to the {{site.data.keyword.la_full_notm}} HIPAA pricing plan.
 
-If you or your company is a covered entity as defined by HIPAA, you must enable the `HIPAA Supported setting` on your IBM Cloud account if you run sensitive workloads that are regulated under HIPAA and the HITECH Act. HIPAA support from IBM requires that you agree to the terms of the [Business Associate Addendum (BAA) agreement](http://www-03.ibm.com/software/sla/sladb.nsf/sla/baa?OpenDocument) with IBM for your IBM Cloud account. In addition, you require an additional Business Associate Addendum (BAA) agreement with LogDNA. 
+If you or your company is a covered entity as defined by HIPAA, you must enable the `HIPAA Supported setting` on your IBM Cloud account if you run sensitive workloads that are regulated under HIPAA and the HITECH Act. HIPAA support from IBM requires that you agree to the terms of the [Business Associate Addendum (BAA) agreement](http://www-03.ibm.com/software/sla/sladb.nsf/sla/baa?OpenDocument) with IBM for your IBM Cloud account. In addition, you require an additional Business Associate Addendum (BAA) agreement with LogDNA.
 
-You must set on the **HIPAA Supported setting** in your IBM Cloud account. After you set on this setting, you cannot set it off. See [IBM Cloud Docs: Enabling the HIPAA Supported setting](/docs/account?topic=account-eu-hipaa-supported#enabling-hipaa) for additional information. 
+You must set on the **HIPAA Supported setting** in your IBM Cloud account. After you set on this setting, you cannot set it off. See [IBM Cloud Docs: Enabling the HIPAA Supported setting](/docs/account?topic=account-eu-hipaa-supported#enabling-hipaa) for additional information.
 
 
 ## General Data Protection Regulation (GDPR) readiness
 {: #compliance-gdpr}
 
-Please visit [IBM's commitment to GDPR readiness](https://www.ibm.com/data-responsibility/gdpr/) page to learn about IBM’s GDPR readiness journey and our GDPR capabilities and offerings to support your compliance journey. 
+Please visit [IBM's commitment to GDPR readiness](https://www.ibm.com/data-responsibility/gdpr/) page to learn about IBM’s GDPR readiness journey and our GDPR capabilities and offerings to support your compliance journey.
 
-- [IBM Data Processing Addendum (DPA)](https://www.ibm.com/support/customer/csol/terms/?cat=dpa) 
+- [IBM Data Processing Addendum (DPA)](https://www.ibm.com/support/customer/csol/terms/?cat=dpa)
 
 
 ## Privacy shield
 {: #compliance-privacy}
 
 {{site.data.keyword.la_full_notm}} is privacy shield certified. For more information please visit [IBM Privacy Shield Privacy Policy for Certified IBM Cloud Services](https://www.ibm.com/privacy/details/us/en/privacy_shield.html).
-

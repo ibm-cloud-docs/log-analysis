@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years:  2018, 2022
+  years:  2018, 2023
 lastupdated: "2022-02-21"
 
 keywords: IBM, Log Analysis, logging, ingestion, python
@@ -12,7 +12,7 @@ subcollection: log-analysis
 
 {{site.data.keyword.attribute-definition-list}}
 
- 
+
 # Logging with Syslog
 {: #syslog}
 
@@ -33,13 +33,13 @@ Complete the following steps to send logs:
 
 Use a user ID that is a member or an owner of an {{site.data.keyword.cloud_notm}} account. To get an {{site.data.keyword.cloud_notm}} user ID, go to: [Registration](https://cloud.ibm.com/login){: external}.
 
-[Your {{site.data.keyword.IBM_notm}}ID must have assigned IAM policies for each of the following resources](/docs/log-analysis?topic=log-analysis-work_iam). For example, to work in the US-south region and in the default resource group, you need the following permissions: 
+[Your {{site.data.keyword.IBM_notm}}ID must have assigned IAM policies for each of the following resources](/docs/log-analysis?topic=log-analysis-work_iam). For example, to work in the US-south region and in the default resource group, you need the following permissions:
 
 | Resource                             | Scope of the access policy | Role    | Region    | Information                  |
 |--------------------------------------|----------------------------|---------|-----------|------------------------------|
 | Resource group **Default**           |  Resource group            | Viewer  | us-south  | This policy is required to allow the user to see service instances in the Default resource group.    |
 | {{site.data.keyword.la_full_notm}} service |  Resource group      | Editor  | us-south  | This policy is required to allow the user to provision and administer the {{site.data.keyword.la_full_notm}} service in the Default resource group.   |
-{: caption="Table 1. List of IAM policies" caption-side="top"} 
+{: caption="Table 1. List of IAM policies" caption-side="top"}
 
 ## Step 1. Provision an {{site.data.keyword.la_full_notm}} instance
 {: #syslog_step1}
@@ -51,7 +51,7 @@ To provision a service instance of {{site.data.keyword.la_full_notm}} through th
 
 1. [Launch the logging web UI.](/docs/log-analysis?topic=log-analysis-launch)
 
-    You launch the web UI within the context of an {{site.data.keyword.la_full_notm}} instance, from the {{site.data.keyword.cloud_notm}} UI. 
+    You launch the web UI within the context of an {{site.data.keyword.la_full_notm}} instance, from the {{site.data.keyword.cloud_notm}} UI.
 
 2. Provision a port. From the logging web UI, complete the following steps:
 
@@ -82,12 +82,3 @@ Add the following entry to your /etc/syslog.conf:
     *.* @syslog-u.us-south.logging.cloud.ibm.com:<PORT>
     ```
     {: codeblock}
-
-
-
-
-
-
-
-
-

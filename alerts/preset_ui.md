@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years:  2018, 2022
+  years:  2018, 2023
 lastupdated: "2021-03-28"
 
 keywords: IBM, Log Analysis, logging, alerts, preset, template
@@ -12,7 +12,7 @@ subcollection: log-analysis
 
 {{site.data.keyword.attribute-definition-list}}
 
- 
+
 # Managing presets through the UI
 {: #preset_ui}
 
@@ -35,14 +35,14 @@ Complete the following steps to configure a preset:
    3. Select if the alert should be sent at the end of the selected period or immediately when the number of lines are logged.
    4. Optionally you can specify a **Custom schedule** with alerting limited to a specified timezone, days of the week, or timeframe. To configure a **Custom schedule**:
       1. Select **on** for **Custom schedule**.
-      2. Select the Timezone for the log entries. 
+      2. Select the Timezone for the log entries.
       3. Select the days of the week when alerts should be generated.
       4. Optionally specify a time range for the selected days. A graph will help you determine the number of log entries for the timezone and time range.
    5. Depending on the type of alert you will also need to configure additional settings:
 
       **Slack**:  Specify your **Webhook** URL and the desired **Message color**.
 
-      **Email**: Specify the **Recipients** of the email and a **Timezone**. The timezone defines the timestamp value of each event that is included in the email. To see UTC timestamps, you can select **(GMT +00:00) UTC**. 
+      **Email**: Specify the **Recipients** of the email and a **Timezone**. The timezone defines the timestamp value of each event that is included in the email. To see UTC timestamps, you can select **(GMT +00:00) UTC**.
 
       **PagerDuty**: Specify the **Service**.  If required, you will be prompted to connect to PagerDuty.
 
@@ -76,6 +76,3 @@ Complete the following steps to delete a preset from the **ALERTS** dashboard:
 
 When you delete a preset, any alerts that are defined by using this preset are automatically deleted.
 {: note}
-
-
-

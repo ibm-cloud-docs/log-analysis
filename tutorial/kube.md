@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years:  2018, 2022
+  years:  2018, 2023
 lastupdated: "2021-03-28"
 
 keywords: IBM, Log Analysis, logging, kubernetes, tutorial
@@ -16,7 +16,7 @@ subcollection: log-analysis
 # Logging with Kubernetes clusters
 {: #kube}
 
-Use the {{site.data.keyword.la_full_notm}} service to configure cluster-level logging in {{site.data.keyword.containerlong}}. 
+Use the {{site.data.keyword.la_full_notm}} service to configure cluster-level logging in {{site.data.keyword.containerlong}}.
 {: shortdesc}
 
 From the moment you provision a cluster with {{site.data.keyword.containerlong_notm}}, you want to know what is happening inside the cluster. You need to access logs to troubleshoot problems and pre-empt issues. At any time, you want to have access to different types of logs such as worker logs, pod logs, app logs, or network logs. In addition, you want to monitor different sources of log data in your Kubernetes cluster. Therefore, your ability to manage and access log records from any of these sources is critical. Your success managing and monitoring logs depends on how you configure the logging capabilities for your Kubernetes platform.
@@ -41,20 +41,20 @@ In this tutorial, you will learn how to configure cluster-level logging.
 ## Before you begin
 {: #kube_prereqs}
 
-Work in a [supported region](/docs/log-analysis?topic=log-analysis-regions). **Note:** You can send data from a Kubernetes cluster that is located in the same region or in a different region. 
+Work in a [supported region](/docs/log-analysis?topic=log-analysis-regions). **Note:** You can send data from a Kubernetes cluster that is located in the same region or in a different region.
 
 Read about {{site.data.keyword.la_full_notm}}. For more information, see [About](/docs/log-analysis?topic=log-analysis-getting-started#getting-started_ov).
 
 Use a user ID that is a member or an owner of an {{site.data.keyword.cloud_notm}} account. To get an {{site.data.keyword.cloud_notm}} user ID, go to: [Registration](https://cloud.ibm.com/login){: external}.
 
-Your {{site.data.keyword.IBM_notm}}ID must have assigned IAM policies for each of the following resources in the region that your {{site.data.keyword.la_full_notm}} instance is in:  
+Your {{site.data.keyword.IBM_notm}}ID must have assigned IAM policies for each of the following resources in the region that your {{site.data.keyword.la_full_notm}} instance is in:
 
 | Resource                             | Scope of the access policy | Role    | Information                  |
 |--------------------------------------|----------------------------|---------|------------------------------|
 | Resource group **default**           |  Resource group            | Viewer  | This policy is required to allow the user to see service instances in the Default resource group.|
 | {{site.data.keyword.la_full_notm}} service |  Resource group            | Editor  | This policy is required to allow the user to provision and administer the {{site.data.keyword.la_full_notm}} service in the default resource group.   |
 | Kubernetes cluster instance          |  Resource                 | Editor  | This policy is required to configure the secret and the logging agent in the Kubernetes cluster. |
-{: caption="Table 1. List of IAM policies required to complete the tutorial" caption-side="top"} 
+{: caption="Table 1. List of IAM policies required to complete the tutorial" caption-side="top"}
 
 For more information about the {{site.data.keyword.containerlong}} IAM roles, see [User access permissions](/docs/containers?topic=containers-access_reference#access_reference).
 
@@ -66,9 +66,9 @@ Install the {{site.data.keyword.cloud_notm}} CLI and the Kubernetes CLI plug-in.
 
 In this tutorial, you configure logging with logging for your {{site.data.keyword.containerlong_notm}} cluster. In particular, you will:
 
-- Provision an {{site.data.keyword.la_full_notm}}. 
-- Configure the logging agent in your cluster to start sending logs to LogDNA. 
-- Open the logging dashboard to find your logs. 
+- Provision an {{site.data.keyword.la_full_notm}}.
+- Configure the logging agent in your cluster to start sending logs to LogDNA.
+- Open the logging dashboard to find your logs.
 
 
 ## Step 1. Provision an {{site.data.keyword.la_full_notm}} service instance
@@ -84,15 +84,15 @@ To provision a service instance of {{site.data.keyword.la_full_notm}} through th
 
 4. Click **{{site.data.keyword.la_full_notm}}**. The **Observability** dashboard opens.
 
-5. Select **Create instance**. 
+5. Select **Create instance**.
 
 6. Enter a name for the service instance and a location.
 
-7. Select the resource group that your cluster is in. By default, the **Default** resource group is set for you. 
+7. Select the resource group that your cluster is in. By default, the **Default** resource group is set for you.
 
 8. Choose a service plan for your service instance. By default, the **Lite** plan is selected for you. For more information about other service plans, see [Pricing plans](/docs/log-analysis?topic=log-analysis-service_plans).
 
-9. To provision the {{site.data.keyword.la_full_notm}} service in the {{site.data.keyword.cloud_notm}} resource group where you are logged in, click **Create**. The **Observability** dashboard opens and shows the details for your service. 
+9. To provision the {{site.data.keyword.la_full_notm}} service in the {{site.data.keyword.cloud_notm}} resource group where you are logged in, click **Create**. The **Observability** dashboard opens and shows the details for your service.
 
 To provision an instance through the CLI, see [Provisioning an instance through the {{site.data.keyword.cloud_notm}} CLI](/docs/log-analysis?topic=log-analysis-provision#provision_cli).
 {: tip}
@@ -157,13 +157,13 @@ To configure your Kubernetes cluster in the `us-south` region to forward logs to
    ```
    {: pre}
 
-5. Verify that the logging agent is deployed successfully. 
+5. Verify that the logging agent is deployed successfully.
 
    ```text
    kubectl get pods
    ```
    {: pre}
-   
+
    The deployment is successful when you see one or more logging pods. The number of logging pods equals the number of worker nodes in your cluster. All pods must be in a `Running` state.
 
 
@@ -188,7 +188,3 @@ To launch the logging dashboard through the {{site.data.keyword.cloud_notm}} con
 - [Define views](/docs/log-analysis?topic=log-analysis-view_logs#view_logs_step7)
 
 **Note:** Some of these features require a plan upgrade.
-
-
-
-

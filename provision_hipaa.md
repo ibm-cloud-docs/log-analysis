@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years:  2018, 2022
+  years:  2018, 2023
 lastupdated: "2021-03-28"
 
 keywords: IBM, Log Analysis, logging, overview
@@ -38,7 +38,7 @@ Enabling this setting has the following effects:
 Enable this setting only if you or your company is a covered entity as defined by HIPAA. If you or your company is a business associate of a covered entity, [contact {{site.data.keyword.cloud_notm}} Sales](https://www.ibm.com/account/reg/us-en/signup?formid=MAIL-wcp){: external} to accept the applicable BAA. For more information about HIPAA definitions of covered entities and business associates, see the [US Department of Health & Human Services](https://www.hhs.gov/hipaa/for-professionals/covered-entities/index.html){: external} website.
 {: important}
 
-Accounts that enable the **HIPAA Supported setting** still have access to the full catalog of services. 
+Accounts that enable the **HIPAA Supported setting** still have access to the full catalog of services.
 
 
 ## Step 2. Provision your {{site.data.keyword.la_full_notm}} instances with the HIPAA service plan
@@ -65,19 +65,14 @@ Set the tag **HIPAA** to the {{site.data.keyword.la_full_notm}} instances that y
 Complete the following steps:
 
 1. [Log in to your {{site.data.keyword.cloud_notm}} account](https://cloud.ibm.com/login){: external}.
-2. Click the **Menu** icon ![Menu icon](../icons/icon_hamburger.svg) &gt; **Resource List** to view your list of resources. 
+2. Click the **Menu** icon ![Menu icon](../icons/icon_hamburger.svg) &gt; **Resource List** to view your list of resources.
 3. In the *Services* section, identify the instance that you want to tag.
 4. Click the **Actions** icon ![Actions icon](../icons/action-menu-icon.svg). Select **Add tags** or **Edit tags**.
 5. Enter the tag **HIPAA**.
 6. Click **Save**.
- 
+
 ## Next steps
 {: #compliance_hipaa_iam}
 
 Restrict access to manage and view the data. [Learn more](/docs/log-analysis?topic=log-analysis-work_iam)
 .
-
-
-
-
-

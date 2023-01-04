@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years:  2018, 2022
+  years:  2018, 2023
 lastupdated: "2022-06-06"
 
 keywords: groups, access
@@ -15,7 +15,7 @@ subcollection: log-analysis
 # Using groups to control data access
 {: #group_data_access}
 
-You can configure, control, and manage data that is available to users in your {{site.data.keyword.cloud}} account by configuring **groups** in the logging instance. 
+You can configure, control, and manage data that is available to users in your {{site.data.keyword.cloud}} account by configuring **groups** in the logging instance.
 {: shortdesc}
 
 A **group** is comprised of **users** with authorization to specific data.
@@ -34,13 +34,13 @@ Account management role                                            | Required to
 Administrator platform role                                        | Required to manage the service
 Manager service role                                               | Required to manage groups
 Platform role viewer, service role reader, or standard member      | Required to launch the logging instance
-{: caption="Table 1. Roles required for groups" caption-side="top"} 
+{: caption="Table 1. Roles required for groups" caption-side="top"}
 
-User roles defining permissions and access to manage auditing events are defined in {{site.data.keyword.iamlong}}.  
+User roles defining permissions and access to manage auditing events are defined in {{site.data.keyword.iamlong}}.
 
 You can map {{site.data.keyword.iamshort}} access groups to service groups. Consider the following information:
 - You must name your service groups with the same name as your access groups. Users that belong to an access group are granted access to manage data in the service group.
-- You must define a policy per service group, where the group that you specify matches the access group name. 
+- You must define a policy per service group, where the group that you specify matches the access group name.
 - You must define the scope of the data that each service group can manage when you define the service group through the web UI.
 
 
@@ -58,7 +58,7 @@ Complete the following steps to define the default settings for viewing data:
 
 2. Select your account.
 
-3. Click the **Menu** icon ![Menu icon](/images/icon_hamburger.svg) &gt; **Observability**. 
+3. Click the **Menu** icon ![Menu icon](/images/icon_hamburger.svg) &gt; **Observability**.
 
 4. Click **Logging**.
 
@@ -89,7 +89,7 @@ You can edit a group to change the access scope as needed.
 
 2. Select your account.
 
-3. Click the **Menu** icon ![Menu icon](/images/icon_hamburger.svg) &gt; **Observability**. 
+3. Click the **Menu** icon ![Menu icon](/images/icon_hamburger.svg) &gt; **Observability**.
 
 4. Select **Logging**.
 
@@ -119,9 +119,9 @@ Example Query              | Behavior                          | Example Matches
 `level:[warning,error]`    | Case-insensitive list of prefixes | warning, Warning, Warnings, error, ERROR, errors
 `level:===[warning,error]` | Case-sensitive list of prefixes   | warning, error
 `level:*`                  | Matches if the field exists       | All lines containing the field `level`
-{: caption="Table 2. Example access scope search queries" caption-side="top"} 
+{: caption="Table 2. Example access scope search queries" caption-side="top"}
 
-For example, if you have two apps (`myapp` and `myapp1`), then a service group with an access scope of  `app:myapp` will allow access to data from both apps. If the access scope is `app:===myapp`, then users in the group will only be able to access data from the `myapp` app. 
+For example, if you have two apps (`myapp` and `myapp1`), then a service group with an access scope of  `app:myapp` will allow access to data from both apps. If the access scope is `app:===myapp`, then users in the group will only be able to access data from the `myapp` app.
 
 If you want to create a group of administrators with access to all data, specify `host:*` for the  **Access Scope**.
 {: note}
@@ -139,7 +139,7 @@ Complete the following steps to edit or delete a service group:
 
 2. Select your account.
 
-3. Click the **Menu** icon ![Menu icon](/images/icon_hamburger.svg) &gt; **Observability**. 
+3. Click the **Menu** icon ![Menu icon](/images/icon_hamburger.svg) &gt; **Observability**.
 
 4. Click **Logging**.
 
@@ -148,5 +148,3 @@ Complete the following steps to edit or delete a service group:
 6. Click ![**Settings**](/images/config.png "Settings icon") &gt; **Organization** &gt; **Groups**.
 
 7. Click **Edit** or **Delete** to change or remove the group.
-
-

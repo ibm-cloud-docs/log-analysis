@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years:  2018, 2022
+  years:  2018, 2023
 lastupdated: "2021-04-28"
 
 keywords: IBM, Log Analysis, logging, agent update
@@ -20,7 +20,7 @@ When you configure a logging agent, auto update of the logging agent is enabled.
 
 For Linux log sources, you can configure the **autoupdate** parameter to configure how you want updates to the agent to be rolled.
 
-For Kubernetes clusters, you can configure the YAML file to configure how you want updates to the agent to be rolled. 
+For Kubernetes clusters, you can configure the YAML file to configure how you want updates to the agent to be rolled.
 
 
 ## Customize a Linux agent
@@ -67,4 +67,3 @@ updateStrategy:
       maxUnavailable: 100%
 ```
 {: screen}
-

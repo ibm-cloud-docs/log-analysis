@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years:  2018, 2022
+  years:  2018, 2023
 lastupdated: "2022-02-02"
 
 keywords: IBM, Log Analysis, logging, getting started
@@ -18,7 +18,7 @@ subcollection: log-analysis
 Use {{site.data.keyword.la_full}} to add log management capabilities to your {{site.data.keyword.cloud_notm}} architecture.
 {: shortdesc}
 
-You can use {{site.data.keyword.la_full_notm}} to manage operating system logs, application logs, and platform logs in the {{site.data.keyword.cloud_notm}}. {{site.data.keyword.la_full_notm}} offers administrators, DevOps teams, and developers advanced features to filter, search, and tail log data, define alerts, and design custom views to monitor application and system logs. 
+You can use {{site.data.keyword.la_full_notm}} to manage operating system logs, application logs, and platform logs in the {{site.data.keyword.cloud_notm}}. {{site.data.keyword.la_full_notm}} offers administrators, DevOps teams, and developers advanced features to filter, search, and tail log data, define alerts, and design custom views to monitor application and system logs.
 
 ## Features
 {: #getting-started-features}
@@ -62,7 +62,7 @@ After provisioning an instance of {{site.data.keyword.la_full_notm}}, you receiv
 
 After you have your ingestion key, you can configure your log sources:
 
-A log source is a Cloud or on-prem resource that generates logs. For example, a log source can be a Kubernetes cluster. 
+A log source is a Cloud or on-prem resource that generates logs. For example, a log source can be a Kubernetes cluster.
 {: note}
 
 * You can enable a logging instance for a region that hosts logs from enabled {{site.data.keyword.cloud_notm}} services. For example, to collect logs from an {{site.data.keyword.ibmcf_notm}} app, you can enable the *service platform logs* flag. [Learn more](/docs/log-analysis?topic=log-analysis-config_svc_logs). When this feature is enabled, logs are automatically collected.
@@ -100,7 +100,7 @@ The following figure shows the components comprising the {{site.data.keyword.la_
 
 5. Select a region for the service instance.
 
-6. Select the **Lite** service plan. 
+6. Select the **Lite** service plan.
 
    By default, the **Lite** plan is set.
 
@@ -108,13 +108,13 @@ The following figure shows the components comprising the {{site.data.keyword.la_
 
 7. Specify a **Service name** for your {{site.data.keyword.la_full_notm}} service instance.
 
-8. Select the **Default** resource group. 
+8. Select the **Default** resource group.
 
    By default, the **Default** resource group is set.
 
 9. To provision the {{site.data.keyword.la_full_notm}} service in the {{site.data.keyword.cloud_notm}} selected resource group, click **Create**.
 
-After you provision an instance, the {{site.data.keyword.la_full_notm}} dashboard opens. 
+After you provision an instance, the {{site.data.keyword.la_full_notm}} dashboard opens.
 
 To provision an instance of logging through the CLI, see [Provisioning logging through the {{site.data.keyword.cloud_notm}} CLI](/docs/log-analysis?topic=log-analysis-provision#provision_cli).
 {: note}
@@ -124,7 +124,7 @@ To provision an instance of logging through the CLI, see [Provisioning logging t
 
 Choose a source for your log data. Then, complete the steps:
 
-| Log source | Steps | 
+| Log source | Steps |
 |------------|-------------|
 | {{site.data.keyword.cloud_notm}} service | [Configuring {{site.data.keyword.cloud_notm}} platform logs](/docs/log-analysis?topic=log-analysis-config_svc_logs) |
 | Standard Kubernetes cluster | [Collecting and analyzing logs from a Kubernetes cluster](/docs/log-analysis?topic=log-analysis-kube#kube) |
@@ -155,7 +155,7 @@ To start managing logs, complete the following steps:
 2. [View and manage your logs](/docs/log-analysis?topic=log-analysis-view_logs).
 
 
-## Step 5. Next steps 
+## Step 5. Next steps
 {: #getting-started-step5}
 
 Next, you can manage user access with IAM.
@@ -164,7 +164,7 @@ Identify the IAM policies that a user needs to work with the {{site.data.keyword
 
 To learn more about IAM integration with the {{site.data.keyword.la_full_notm}} service, see [Managing IAM policies and access groups](/docs/log-analysis?topic=log-analysis-work_iam).
 
-Learn how each user role grants permissions users in the role when working with the {{site.data.keyword.la_full_notm}} service. 
+Learn how each user role grants permissions users in the role when working with the {{site.data.keyword.la_full_notm}} service.
 
 | User role in the {{site.data.keyword.cloud_notm}} | For more information                     |
 |-----------------------------------------------------|------------------------------------------|
@@ -176,5 +176,3 @@ Learn how each user role grants permissions users in the role when working with 
 | Service administrator in logging                     | [Granting permissions to manage logs and configure alerts](/docs/log-analysis?topic=log-analysis-work_iam#admin_user_logdna)              |
 | User or Developer                                    | [Granting permissions to a user to view and manage logs](/docs/log-analysis?topic=log-analysis-work_iam#user_logdna)               |
 {: caption="Table 2. {{site.data.keyword.cloud_notm}} roles in relationship to {{site.data.keyword.la_full_notm}}" caption-side="top"}
-
-

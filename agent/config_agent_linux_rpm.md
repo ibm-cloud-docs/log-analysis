@@ -1,10 +1,10 @@
 ---
 
 copyright:
-  years:  2018, 2022
+  years:  2018, 2023
 lastupdated: "2021-10-06"
 
-keywords: 
+keywords:
 
 subcollection: log-analysis
 
@@ -59,8 +59,8 @@ Add the logdna repository to your package manager, open a host terminal and run 
 
     Where `VERSION` is set to the agent version that you want to configure.
 
-    For example, to install the logging agent version `2.1.2-1`, you can use the following command: 
-    
+    For example, to install the logging agent version `2.1.2-1`, you can use the following command:
+
     ```text
     sudo yum -y install logdna-agent-2.1.2-1.x86_64
     ```
@@ -114,7 +114,7 @@ Complete the following steps:
 
     - `NAME_OF_SOURCE` contains a human-readable name for the source where you are collecting logs, such as the name of a vsi, for example.
 
-    - `OTHER_LOG_PATHS` define more log paths to be monitored, for example, `/path/to/log/folders`. By default, **/var/log** is monitored. 
+    - `OTHER_LOG_PATHS` define more log paths to be monitored, for example, `/path/to/log/folders`. By default, **/var/log** is monitored.
 
     - `TAGS` define a comma-separated list of tags that you want to attach as metadata to each log record.
 
@@ -170,7 +170,7 @@ systemctl status logdna-agent
 
 
 ## Appendix. Commands to manage the agent
-{: #config_agent_linux_rpm_cmd} 
+{: #config_agent_linux_rpm_cmd}
 
 
 ### Get the agent version
@@ -182,7 +182,7 @@ logdna-agent --version
 {: codeblock}
 
 ### Enable the agent on boot
-{: #config_agent_linux_rpm_cmd1} 
+{: #config_agent_linux_rpm_cmd1}
 
 ```text
 sudo systemctl enable logdna-agent
@@ -231,4 +231,3 @@ journalctl _SYSTEMD_INVOCATION_ID=`systemctl show -p InvocationID --value logdna
 yum remove logdna-agent
 ```
 {: codeblock}
-

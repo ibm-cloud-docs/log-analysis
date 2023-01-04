@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years:  2018, 2022
+  years:  2018, 2023
 lastupdated: "2021-04-12"
 
 keywords: IBM, Log Analysis, logging, applications
@@ -20,7 +20,7 @@ You can use the Ingestion REST API and libraries to send application logs to an 
 
 In an application log, you can find information that you can use to troubleshoot and monitor your application.
 
-In {{site.data.keyword.la_short}}, you can choose any of the following options to send application logs to an {{site.data.keyword.la_full_notm}} instance: 
+In {{site.data.keyword.la_short}}, you can choose any of the following options to send application logs to an {{site.data.keyword.la_full_notm}} instance:
 
 
 ## REST API
@@ -33,7 +33,7 @@ You can send log data to an {{site.data.keyword.la_full_notm}} instance by using
 {: #app_logging_code}
 
 
-You can add code to an application to manage application logs through an {{site.data.keyword.la_full}} instance. 
+You can add code to an application to manage application logs through an {{site.data.keyword.la_full}} instance.
 
 
 The following table lists libraries that you can use to send application logs to an {{site.data.keyword.la_full_notm}} instance:
@@ -43,11 +43,6 @@ The following table lists libraries that you can use to send application logs to
 | Library | Git Repo | More info |
 |---------|----------|-----------|
 | `Python` | [Python](https://github.com/logdna/python){: external} | [Sending logs by using Python](/docs/log-analysis?topic=log-analysis-ingest_python). |
-| `Node`   | [Node](https://github.com/logdna/nodejs){: external} | You can send logs from your Node.js and JavaScript applications to an {{site.data.keyword.la_full_notm}} instance by using the Node.js library and adding a transport.  \n  \n Valid transports are Winston and Bunyan. 
+| `Node`   | [Node](https://github.com/logdna/nodejs){: external} | You can send logs from your Node.js and JavaScript applications to an {{site.data.keyword.la_full_notm}} instance by using the Node.js library and adding a transport.  \n  \n Valid transports are Winston and Bunyan.
 | `Ruby and Ruby on Rails` | [Ruby](https://github.com/logdna/ruby){: external} |  |
 {: caption="Table 1. Code libraries" caption-side="top"}
-
-
-
-
-

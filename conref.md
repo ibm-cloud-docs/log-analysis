@@ -1,11 +1,10 @@
 ---
 
 copyright:
-  years: 2015, 2022
-
+  years: 2015, 2023
 lastupdated: "2021-11-10"
 
-keywords: 
+keywords:
 
 subcollection: log-analysis
 
@@ -20,7 +19,7 @@ content-type: conref
 
 <!----------------------------------------------------->
 
-## Install NXLog 
+## Install NXLog
 {: #nxlog_install}
 
 Follow these steps to install NXLog.
@@ -56,7 +55,7 @@ You will need to run as a Windows Administrator for all command prompt or PowerS
 ## Configure NXLog
 {: #nxlog_config}
 
-1. Provision a syslog port for NXLog. 
+1. Provision a syslog port for NXLog.
 
     To get the required port value, do the following:
 
@@ -71,7 +70,7 @@ You will need to run as a Windows Administrator for all command prompt or PowerS
     2. Click **Advanced settings**.
     3. Click **Inbound Rules**.
     4. Click **New Rule**.
-    5. Select **Port**. 
+    5. Select **Port**.
     6. Click **Next**.
     7. For **Specific local ports:** enter `63980`.
     8. Click **Next**.
@@ -99,7 +98,7 @@ You will need to run as a Windows Administrator for all command prompt or PowerS
 
        * Input, processor, and output channels are connected in the `<Route>` block.  Comment out this block to remove the route and disable logging from this channel.  Add new input modules with unique names to enable logging from new sources.
 
-    3. Copy the `nxlog.conf` file as `<NXLOGDIR>\conf\nxlog.conf` where `<NXLOGDIR>` is the directory where you installed NXLog.  For example, `C:\Program Files (x86)\nxlog\` 
+    3. Copy the `nxlog.conf` file as `<NXLOGDIR>\conf\nxlog.conf` where `<NXLOGDIR>` is the directory where you installed NXLog.  For example, `C:\Program Files (x86)\nxlog\`
 
 3. Download the LogDNA SSL Certificate Authority file.  This can be done in one of the following ways.
 
@@ -108,7 +107,7 @@ You will need to run as a Windows Administrator for all command prompt or PowerS
       ```text
       $url = "https://assets.us-south.logging.cloud.ibm.com/rootca/ld-root-ca.crt"
       $output = "<NXLOGDIR>\cert\ca.pem"
-      (New-Object System.Net.WebClient).DownloadFile($url, $output) 
+      (New-Object System.Net.WebClient).DownloadFile($url, $output)
       ```
       {: pre}
 
@@ -117,7 +116,7 @@ You will need to run as a Windows Administrator for all command prompt or PowerS
         1. Access the [{{site.data.keyword.la_full_notm}} UI.](/docs/log-analysis?topic=log-analysis-launch#launch_cloud_ui)
         2. Click the ![question mark icon](../images/question_mark.png "question mark icon") to access install instructions.
         3. Click **NXLog**.
-        4. Click **Download Root CA Certificate** to download a copy of the certificate.  
+        4. Click **Download Root CA Certificate** to download a copy of the certificate.
         5. Copy the certificate to `<NXLOGDIR>\cert\ca.pem`, where `<NXLOGDIR>` is directory nxlog is installed.
 
 <!----------------------------------------------------->
@@ -151,18 +150,15 @@ Before you begin, make sure you have an {{site.data.keyword.la_full_notm}} insta
 
 Use a user ID that is a member or an owner of an {{site.data.keyword.cloud_notm}} account. To get an {{site.data.keyword.cloud_notm}} user ID, go to: [Registration](https://cloud.ibm.com/login){: external}.
 
-[Your {{site.data.keyword.IBM_notm}}ID must have assigned IAM policies for each of the following resources](/docs/log-analysis?topic=log-analysis-work_iam). For example, to work in the US-south region and in the default resource group, you need the following permissions: 
+[Your {{site.data.keyword.IBM_notm}}ID must have assigned IAM policies for each of the following resources](/docs/log-analysis?topic=log-analysis-work_iam). For example, to work in the US-south region and in the default resource group, you need the following permissions:
 
 | Resource                             | Scope of the access policy | Role    | Region    | Information                  |
 |--------------------------------------|----------------------------|---------|-----------|------------------------------|
 | Resource group **Default**           |  Resource group            | Viewer  | us-south  | This policy is required to allow the user to see service instances in the Default resource group.    |
 | {{site.data.keyword.la_full_notm}} service |  Resource group      | Editor  | us-south  | This policy is required to allow the user to provision and administer the {{site.data.keyword.la_full_notm}} service in the Default resource group.   |
-{: caption="Table 1. List of IAM policies" caption-side="top"} 
+{: caption="Table 1. List of IAM policies" caption-side="top"}
 
 ### Provision an {{site.data.keyword.la_full_notm}} instance
 {: #windows_provision_la}
 
 To provision a service instance of {{site.data.keyword.la_full_notm}} through the {{site.data.keyword.cloud_notm}} console, see [Provisioning an instance](/docs/log-analysis?topic=log-analysis-provision).
-
-
-

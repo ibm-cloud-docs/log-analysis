@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years:  2018, 2022
+  years:  2018, 2023
 lastupdated: "2021-05-21"
 
 keywords: IBM, Log Analysis, logging, config agent
@@ -18,8 +18,8 @@ subcollection: log-analysis
 The logging agent is responsible for collecting and forwarding logs to your {{site.data.keyword.la_full_notm}} instance. After you provision an instance of {{site.data.keyword.la_full}}, you must configure a logging agent for each log source that you want to monitor.
 {: shortdesc}
 
-To configure your Kubernetes cluster to send logs to your {{site.data.keyword.la_full_notm}} instance, you must install the logging agent in your cluster. 
-* The agent deploys a a logdna-agent pod on each node of your cluster. 
+To configure your Kubernetes cluster to send logs to your {{site.data.keyword.la_full_notm}} instance, you must install the logging agent in your cluster.
+* The agent deploys a a logdna-agent pod on each node of your cluster.
 * The logging agent reads log files from the pod where it is installed, and forwards the log data to your logging instance.
 
 
@@ -67,10 +67,10 @@ To configure the logging agent in the cluster, you need the following CLIs:
     ```
     {: pre}
 
-    Where 
-    
+    Where
+
     `RESOURCE_GROUP` is the name of the resource group where the cluster is available, for example, `default`.
-    
+
     `REGION` is the region where the cluster is available, for example, `us-south`.
 
 4. Set the cluster where you want to configure logging as the context for this session.
@@ -83,7 +83,7 @@ To configure the logging agent in the cluster, you need the following CLIs:
 ### Step 2. Create the ibm-observe namespace
 {: #config_agent_kube_cluster_step2}
 
-Observability services are deployed in the `ibm-observe` namespace. 
+Observability services are deployed in the `ibm-observe` namespace.
 {: note}
 
 First, check if the namespace exists. Run the following command:
@@ -106,7 +106,7 @@ kubectl create namespace ibm-observe
 ### Step 3. Store your logging ingestion key as a Kubernetes secret
 {: #config_agent_kube_cluster_step3}
 
-Create a Kubernetes secret to store your logging ingestion key for your service instance. 
+Create a Kubernetes secret to store your logging ingestion key for your service instance.
 
 The logging ingestion key is used to open a secure web socket to the logging ingestion server and to authenticate the logging agent with the {{site.data.keyword.la_full_notm}} service.
 
@@ -122,18 +122,18 @@ To get the ingestion key, see [Get the ingestion key through the logging UI](/do
 ### Step 4. Enable virtual routing and forwarding (VRF)
 {: #config_agent_kube_cluster_step4}
 
-This step is required if you plan to use private endpoints.  
+This step is required if you plan to use private endpoints.
 
 You must enable virtual routing and forwarding (VRF) and connectivity to service endpoints for your account. [Learn more](/docs/account?topic=account-vrf-service-endpoint)
 
 ### Step 5. Deploy the logging agent in the cluster
 {: #config_agent_kube_cluster_step5}
 
-Create a Kubernetes daemonset to deploy the logging agent on every worker node of your Kubernetes cluster. 
+Create a Kubernetes daemonset to deploy the logging agent on every worker node of your Kubernetes cluster.
 
 The logging agent collects the following logs:
 - STDOUT and STDERR
-- Logs with the extension `*.log`, and extensionsless files that are stored in the `/var/log` directory of your pod. 
+- Logs with the extension `*.log`, and extensionsless files that are stored in the `/var/log` directory of your pod.
 
 By default, logs are collected from all namespaces, including `kube-system`, and automatically forwarded to the {{site.data.keyword.la_full_notm}} service.
 
@@ -155,7 +155,7 @@ To configure the logging agent by using `kubectl` commands, run the following co
 Where
 
 - `<REGION>` indicates the region where the logging instance is available. For more information about regions, see [Locations](/docs/log-analysis?topic=log-analysis-regions).
-- `<VERSION>` indicates the version of the agent that you want to deploy. You must use a version that has a tag with the following format: `X.Y.Z`. 
+- `<VERSION>` indicates the version of the agent that you want to deploy. You must use a version that has a tag with the following format: `X.Y.Z`.
 
 If you need to use a version that has a tag with any of the following formats: `X.Y.Z-<date>.[hash]`, `X`, or `X.Y`, you must download the agent yaml file and modify it. Replace the version for all entries `app.kubernetes.io/version` in the file with the one that you want to use. You must download the yaml file that has the format `X.Y.Z`. Then, after you make the version changes, you can run `kubectl apply -f <CUSTOM_YAML_FILE>` to deploy the agent.
 {: important}
@@ -182,7 +182,7 @@ The logging agent version 1 is supported for Kubernetes 1.2 to 1.8 only.
 Choose one of the following commands to install and configure the logging agent version 2 by using `kubectl` commands:
 
 
-| Location                 | Command (By using public endpoints)               | 
+| Location                 | Command (By using public endpoints)               |
 |--------------------------|----------------------------------------------------|
 | `Chennai (in-che)`       | `kubectl create -f https://assets.in-che.logging.cloud.ibm.com/clients/logdna-agent-ds-k8s-v1.8.yaml -n ibm-observe`       |
 | `Tokyo (jp-tok)`         | `kubectl create -f https://assets.jp-tok.logging.cloud.ibm.com/clients/logdna-agent-ds-k8s-v1.8.yaml -n ibm-observe`       |
@@ -201,7 +201,7 @@ Choose one of the following commands to install and configure the logging agent 
 {: class="simple-tab-table"}
 {: row-headers}
 
-| Location                  | Command (By using private endpoints)               | 
+| Location                  | Command (By using private endpoints)               |
 |--------------------------|----------------------------------------------------|
 | `Chennai (in-che)`       | `kubectl create -f https://assets.in-che.logging.cloud.ibm.com/clients/logdna-agent-ds-private.yaml -n ibm-observe`       |
 | `Tokyo (jp-tok)`         | `kubectl create -f https://assets.jp-tok.logging.cloud.ibm.com/clients/logdna-agent-ds-private.yaml -n ibm-observe`        |
@@ -245,7 +245,7 @@ The deployment is successful when you see one or more logging pods.
 * *Stdout* and *stderr* are automatically collected and forwarded from all containers. Log data includes application logs and worker logs.
 * By default, the logging agent pod that runs on a worker collects logs from all namespaces on that node, including kube-system logs.
 
-To get a copy of the logging agent configuration that is deployed, you can run the following command: 
+To get a copy of the logging agent configuration that is deployed, you can run the following command:
 
 ```text
  kubectl get daemonset logdna-agent -o=yaml > prod-logdna-agent-ds.yaml -n ibm-observe
@@ -259,16 +259,16 @@ To get a copy of the logging agent configuration that is deployed, you can run t
 {: #config_agent_kube_ob}
 
 When you deploy and connect a logging agent within the context of the cluster, consider the following information:
-* You can launch the logging UI from the Kubernetes cluster UI in {{site.data.keyword.cloud_notm}}. 
-* The view that opens displays logs for your cluster. 
+* You can launch the logging UI from the Kubernetes cluster UI in {{site.data.keyword.cloud_notm}}.
+* The view that opens displays logs for your cluster.
 * The agent is deployed in the `ibm-observe` namespace.
 * A tag that informs about the cluster name is associated to each log line as metadata.
 * A tag that informs about the version of the agent is associated to each log line as metadata.
-* The logging instance must be available in the same {{site.data.keyword.cloud_notm}} account where the cluster is provisioned. 
+* The logging instance must be available in the same {{site.data.keyword.cloud_notm}} account where the cluster is provisioned.
 * The logging instance can be in a different resource group and {{site.data.keyword.cloud_notm}} region than your cluster.
 
 
-Before you can deploy the logging agent in a cluster, verify that you are assigned the following IAM roles: 
+Before you can deploy the logging agent in a cluster, verify that you are assigned the following IAM roles:
 * **Viewer** permissions on the resource group where the cluster is available.
 * **Viewer** permissions on the resource group where the logging instance is available.
 * **Viewer** platform role and **Writer** or **Manager** service role for the {{site.data.keyword.containerlong_notm}} service to configure the logging agent.
@@ -350,10 +350,10 @@ To configure the logging agent in a cluster, complete the following steps:
     ```
     {: pre}
 
-    Where 
-    
+    Where
+
     `RESOURCE_GROUP` is the name of the resource group where the cluster is available, for example, `default`.
-    
+
     `REGION` is the region where the cluster is available, for example, `us-south`.
 
     Set the cluster where you want to configure logging as the context for this session.
@@ -379,8 +379,3 @@ To configure the logging agent in a cluster, complete the following steps:
     * `<Ingestion_Key>` is the ingestion key that you want to use to connect the logging agent with the logging instance.
 
     * `[--private-endpoint]` is optional. Add this option to connect to your logging instance by using private service endpoints.
-
-
-
-
-
