@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years:  2021, 2022
+  years:  2021, 2023
 lastupdated: "2021-11-04"
 
 keywords: IBM, Log Analysis, Slack
@@ -39,11 +39,11 @@ When you [configure an alert](/docs/log-analysis?topic=log-analysis-alerts) you 
 5. Optionally you can specify a **Custom schedule** with alerting limited to a specified timezone, days of the week, or timeframe. To configure a **Custom schedule**:
 
     1. Select **on** for **Custom schedule**.
-    2. Select the Timezone for the log entries. 
+    2. Select the Timezone for the log entries.
     3. Select the days of the week when alerts should be generated.
     4. Optionally specify a time range for the selected days. A graph will help you determine the number of log entries for the timezone and time range.
 
-6. Specify the **Webhook URL** to receive the alert. 
+6. Specify the **Webhook URL** to receive the alert.
 
 7. Specify the color of the mesage to be displayed in Slack.
 
@@ -51,4 +51,3 @@ When you [configure an alert](/docs/log-analysis?topic=log-analysis-alerts) you 
 
    The alert definition must be saved for alerts to be sent to your slack.
    {: important}
-

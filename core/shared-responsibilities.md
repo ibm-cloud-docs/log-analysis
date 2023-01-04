@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years: 2018, 2022
+  years: 2018, 2023
 lastupdated: "2022-02-07"
 
 keywords: IBM Cloud, Log Analysis, logging, customer responsibilities, IBM responsibilities, terms and conditions
@@ -20,7 +20,7 @@ Learn about the management responsibilities and terms and conditions that you ha
 
 Review the following sections for the specific responsibilities for you and for {{site.data.keyword.IBM_notm}} when you use {{site.data.keyword.la_full_notm}}. For the overall terms of use, see [{{site.data.keyword.cloud_notm}} Terms and Notices](/docs/overview/terms-of-use?topic=overview-terms).
 
-  
+
 ## Incident and operations management
 {: #incident-and-ops}
 
@@ -37,7 +37,7 @@ Review the following sections for the specific responsibilities for you and for 
 {: caption="Table 1. Responsibilities for incident and operations" caption-side="top"}
 
 
-		
+
 
 
 ## Change management
@@ -47,7 +47,7 @@ Review the following sections for the specific responsibilities for you and for 
 | Task                                                    | {{site.data.keyword.IBM_notm}} Responsibilities | Your Responsibilities |
 |---------------------------------------------------------|-----------------------|--------|
 | `Update the {{site.data.keyword.la_full_notm}} service` | Provide major, minor, and patch version updates for {{site.data.keyword.la_full_notm}} interfaces.  \n Document changes in the [logging release notes](https://docs.mezmo.com/changelog){: external} | Ensure that any logging agents that you have deployed are kept current. |
-| `Track versions of custom views, dashboards, screens, parsing templates, and alerts`    | `N/A` | Use your own change management process to control versions of logging resources such as views, dashboards, screens, parsing templates, and alerts`.  \n To learn how to export metadata, see [Export the configuration of resources in a logging instance](/docs/log-analysis?topic=log-analysis-reuse_resource_definitions#export_config_res).| 
+| `Track versions of custom views, dashboards, screens, parsing templates, and alerts`    | `N/A` | Use your own change management process to control versions of logging resources such as views, dashboards, screens, parsing templates, and alerts`.  \n To learn how to export metadata, see [Export the configuration of resources in a logging instance](/docs/log-analysis?topic=log-analysis-reuse_resource_definitions#export_config_res).|
 {: caption="Table 2. Responsibilities for change management" caption-side="top"}
 
 
@@ -58,7 +58,7 @@ Review the following sections for the specific responsibilities for you and for 
 | Task                           | {{site.data.keyword.IBM_notm}} Responsibilities | Your Responsibilities |
 |--------------------------------|-------------------------------------------------|-----------------------|
 | `Manage permissions`           | Provide the ability to restrict access to resouces.  \n {{site.data.keyword.IBM_notm}} is responsible for the security and compliance of {{site.data.keyword.la_full_notm}}. | Restrict access to resources by using Cloud IAM access policies by defining IAM policies to control which users within your account have access to the logging data.  \n [Learn more about controlling access through IAM](/docs/log-analysis?topic=log-analysis-work_iam)
-. | 
+. |
 {: caption="Table 3. Responsibilities for identity and access management" caption-side="top"}
 
 
@@ -94,5 +94,3 @@ Review the following sections for the specific responsibilities for you and for 
 
 `[*]` Recovered and restarted service components will not have customer data reloaded.
 {: note}
-
-

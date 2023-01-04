@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years: 2019, 2022
+  years: 2019, 2023
 lastupdated: "2021-11-24"
 
 keywords: IBM Cloud, Log Analysis, api
@@ -12,10 +12,10 @@ subcollection: log-analysis
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Managing presets programmatically 
+# Managing presets programmatically
 {: #preset-api}
 
-You can use the *Configuration REST API* to manage presets programmatically.  
+You can use the *Configuration REST API* to manage presets programmatically.
 {: shortdesc}
 
 Presets are templates that can be used to quickly configure alerts.  Presets can also be configured through the [UI](/docs/log-analysis?topic=log-analysis-preset_ui).
@@ -55,7 +55,7 @@ Depending on [your account settings](/docs/account?topic=account-service-endpoin
 {: #preset-api-authentication}
 
 When you manage presets programmatically, you must use a service key. Authorization to the Configuration API is enforced by using a service key.
-{: note} 
+{: note}
 
 A service key is a unique code that is passed in an API request to identify the calling application or user. The service key is specific to a logging instance. For more information on how to generate a service key, see [Managing service keys](/docs/log-analysis?topic=log-analysis-service_keys).
 
@@ -69,7 +69,7 @@ For example, in a cURL request, you must set the `servicekey` header as follows:
 {: codeblock}
 
 
-## Additional headers 
+## Additional headers
 {: #preset-api-headers}
 
 Some additional headers might be required to make successful requests to the API. Those additional headers are:
@@ -115,11 +115,11 @@ The following table indicates when the `name` parameter is required:
 ### channels (array of objects)
 {: #presetalert-api-parm-channels}
 
-Specifies the notification channels configuration associated with the preset.  
+Specifies the notification channels configuration associated with the preset.
 
 The following values can be specifed for all `channels`.
 
-| Value | Description | 
+| Value | Description |
 |--------------------------|------|
 | `integration` | The integration type.  Valid values are: `slack`, `email`, `webhook`, `pagerduty`, `pagerduty-auto-resolve`, and `sysdig`. |
 | `immediate` | Specified if the alert is sent immediately after the line criteria is met (`"immediate": true`) or after the line and time criteria is met (`"immediate": false`). |
@@ -133,7 +133,7 @@ The following is an example `blackout` definition specifying that the alert is a
 
 ```json
 blackout": {
-   "enabled": true,    A 
+   "enabled": true,    A
    "times": {
        "enabled": true,
        "periods": [
@@ -154,7 +154,7 @@ blackout": {
 
 The following values are only valid for the specified preset type:
 
-| Value | Description | 
+| Value | Description |
 |--------------------------|------|
 | `emails` | The email addresses where the alert will be sent. |
 | `timezone` | (Optional) The preferred timezone. |
@@ -164,7 +164,7 @@ The following values are only valid for the specified preset type:
 {: tab-group="preset_channels1"}
 {: class="simple-tab-table"}
 
-| Value | Description | 
+| Value | Description |
 |--------------------------|------|
 | `key` | The PagerDuty key associated with the integration.  This is obtained by [configuring PagerDuty through the UI](/docs/activity-tracker?topic=activity-tracker-preset_ui) and then using the [`GET` all configured presets](#preset-api-get-all) method to return the `key` value for the preset. |
 {: caption="Channel configuration values for PagerDuty) presets" caption-side="top"}
@@ -173,7 +173,7 @@ The following values are only valid for the specified preset type:
 {: tab-group="preset_channels1"}
 {: class="simple-tab-table"}
 
-| Value | Description | 
+| Value | Description |
 |--------------------------|------|
 | `url` | The URL of your Slack webhook |
 | `color` | The color your alert is displayed in Slack. For example, `#d4b135`. |
@@ -183,7 +183,7 @@ The following values are only valid for the specified preset type:
 {: tab-group="preset_channels1"}
 {: class="simple-tab-table"}
 
-| Value | Description | 
+| Value | Description |
 |--------------------------|------|
 | `key` | Your API key. |
 | `severity` | The severity level associated with the alert.  For example, `high`. |
@@ -194,7 +194,7 @@ The following values are only valid for the specified preset type:
 {: tab-group="preset_channels2"}
 {: class="simple-tab-table"}
 
-| Value | Description | 
+| Value | Description |
 |--------------------------|------|
 | `bodyTemplate`| The JSON body to be passed to the Webhook. |
 | `url` | The Webhook URL to receive the alert. |
@@ -211,7 +211,7 @@ Examples of `channels` values can be obtained by [creating presets in the UI](/d
 
 The following are examples of how to use the preset configuration API.
 
-In these examples, `<SERVICE_KEY>` is the [service key](/docs/log-analysis?topic=log-analysis-service_keys) for your {{site.data.keyword.at_full_notm}} instance. 
+In these examples, `<SERVICE_KEY>` is the [service key](/docs/log-analysis?topic=log-analysis-service_keys) for your {{site.data.keyword.at_full_notm}} instance.
 
 ### Creating a preset
 {: #preset-api-create-view}
@@ -242,7 +242,7 @@ The following sample gets all configured presets for the instance.
 ```text
 curl --request GET https://api.us-south.logging.cloud.ibm.com/v1/config/presetalert \
      -H "Accept: application/json" \
-     -H "servicekey: <SERVICE_KEY>"  
+     -H "servicekey: <SERVICE_KEY>"
 ```
 {: pre}
 
@@ -262,7 +262,7 @@ The following sample gets information about a specific preset.
 ```text
 curl --request GET https://api.us-south.logging.cloud.ibm.com/v1/config/presetalert/<PRESET_ID> \
      -H "Accept: application/json"
-     -H "servicekey: <SERVICE_KEY>"  
+     -H "servicekey: <SERVICE_KEY>"
 ```
 {: pre}
 
@@ -316,7 +316,7 @@ The following sample deletes a preset.
 curl --request DELETE https://api.us-south.logging.cloud.ibm.com/v1/config/presetalert/<PRESET_ID> \
      -H "Accept: application/json" \
      -H "servicekey: <SERVICE_KEY>"  \
-```  
+```
 {: pre}
 
 Where `<PRESET_ID>` is the `presetid` value returned when [running the `GET` method to return all presets.](#preset-api-get-all)
@@ -334,5 +334,3 @@ If the `<PRESET_ID>` does not exist, the following is returned:
 {"error":"Resource Not Found","code":"NotFound","status":"error"}
 ```
 {: screen}
-
-

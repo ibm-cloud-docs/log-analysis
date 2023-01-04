@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years:  2018, 2022
+  years:  2018, 2023
 lastupdated: "2022-02-21"
 
 keywords: IBM, Log Analysis, logging, Cloud Foundry
@@ -77,7 +77,7 @@ The following table summarizes the different methods that you can use to collect
 {: class="simple-tab-table"}
 {: row-headers}
 
-| Cloud Foundry resource              | Through the service platform logs logging instance in a region | Through a custom logging instance by using Syslog drains       |                                     
+| Cloud Foundry resource              | Through the service platform logs logging instance in a region | Through a custom logging instance by using Syslog drains       |
 |--------------------------|:--------------------------------------------------:|:--------------------------------------------------:|
 | `CF infrastructure logs` | `NO`                                               | `NO`                                               |
 | `CF app logs`            | `NO`                                               | ![Checkmark icon](../images/checkmark-icon.svg)  |
@@ -97,7 +97,7 @@ You have different options to collect and forward logs to an instance of the {{s
 * You can configure 1 instance of the {{site.data.keyword.la_full_notm}} service per region with the flag **service platform logs**. This instance collects infrastructure and application logs for any Cloud Foundry apps that run on that same region.
 * You can configure a custom user provided service (CUPS) for each Cloud Foundry app that you want to monitor through a custom {{site.data.keyword.la_full_notm}} instance. The CUPS service sends logs via a syslog link to a logging syslog endpoint and port. This option is only available if the Cloud Foundry app send logs to STDOUT and STDERR. If the Cloud Foundry app is configured to send logs via syslog and not to STDOUT and STDERR, this option is not supported.
 
-If you choose to send your Cloud Foundry logs by configuring a custom user provided (CUPS) service for your app, you must enable a port to send logs via syslog to your logging instance. If you are using (a) the classic syslog protocol, (b) a custom port in `syslog-ng`, or (c) a custom port in `rsyslog`, there is no authentication available and anyone with knowledge of the endpoint can submit logs to your instance.  Depending on your environment, this may present a significant security risk. Use these configurations at your organization’s own risk.  Validate with your compliance and security teams whether this security risk is acceptable to your organization. 
+If you choose to send your Cloud Foundry logs by configuring a custom user provided (CUPS) service for your app, you must enable a port to send logs via syslog to your logging instance. If you are using (a) the classic syslog protocol, (b) a custom port in `syslog-ng`, or (c) a custom port in `rsyslog`, there is no authentication available and anyone with knowledge of the endpoint can submit logs to your instance.  Depending on your environment, this may present a significant security risk. Use these configurations at your organization’s own risk.  Validate with your compliance and security teams whether this security risk is acceptable to your organization.
 {: important}
 
 | Comparison                                    | Through the logging instance that hosts service platform logs in a region | Through a custom logging instance by using Syslog drains       |
@@ -112,8 +112,8 @@ If you choose to send your Cloud Foundry logs by configuring a custom user provi
 {: caption="Table 4. Information about the methods that can be adopted to monitor Cloud Foundry resource logs in {{site.data.keyword.cloud_notm}}" caption-side="top"}
 
 Another consideration is the restriction that you can apply to users to control access to view logs in a logging instance. You can use [IAM to manage users and their access to view logs](/docs/log-analysis?topic=log-analysis-work_iam)
-. 
-* When you use the method of a single logging instance to host platform logs, all logs from Cloud Foundry resources that run on that region are available for view through the instance. Any user with a service role `viewer` can see any log entries. 
+.
+* When you use the method of a single logging instance to host platform logs, all logs from Cloud Foundry resources that run on that region are available for view through the instance. Any user with a service role `viewer` can see any log entries.
 
 * When you use the method of sending Cloud Foundry app logs to a custom logging instance, users with a service role `viewer` can only see logs from Cloud Foundry app logs that are configured to stream logs to this logging instance.
 
@@ -122,7 +122,7 @@ In both cases, users can also view logs from other sources that you might have c
 ## Monitor Cloud Foundry resources that are hosted in {{site.data.keyword.cloud_notm}} public
 {: #monitor_cfapp_logs_public}
 
-CF resources are location bound resources in the {{site.data.keyword.cloud_notm}}. For example, you can have a Cloud Foundry app running in the Dallas (us-south) region. 
+CF resources are location bound resources in the {{site.data.keyword.cloud_notm}}. For example, you can have a Cloud Foundry app running in the Dallas (us-south) region.
 
 In the {{site.data.keyword.cloud_notm}}, you can configure 1 logging instance to collect and host platform services logs in a region. After the instance is provisioned and configured in a region, logs that are generated from enabled services in that region such as Cloud Foundry apps or Cloud Foundry infrastructure are automatically collected and forwarded through the ELK-Adatper. You can monitor logs through this logging instance.
 
@@ -139,8 +139,8 @@ If you choose to send your Cloud Foundry logs by configuring a custom user provi
 {: important}
 
 To send Cloud Foundry logs to a {{site.data.keyword.la_short}} instance, consider the following information:
-* In the {{site.data.keyword.la_short}} instance, you must provision a syslog port in the logging instance where you want to forward logs. 
-* In CF, you must define a custom user-provided service (CUPS) instance to deliver the logging instance credentials to the Cloud Foundry app, and to trigger streaming of application logs to the syslog port that you enabled in your {{site.data.keyword.la_short}} instance. 
+* In the {{site.data.keyword.la_short}} instance, you must provision a syslog port in the logging instance where you want to forward logs.
+* In CF, you must define a custom user-provided service (CUPS) instance to deliver the logging instance credentials to the Cloud Foundry app, and to trigger streaming of application logs to the syslog port that you enabled in your {{site.data.keyword.la_short}} instance.
 * In the *Platform Logs* {{site.data.keyword.la_short}} instance, you must configure an exclusion rule.
 
 
@@ -149,13 +149,13 @@ To send Cloud Foundry logs to a {{site.data.keyword.la_short}} instance, conside
 
 Use a user ID that is a member or an owner of an {{site.data.keyword.cloud_notm}} account. To get an {{site.data.keyword.cloud_notm}} user ID, go to: [Registration](https://cloud.ibm.com/login){: external}.
 
-[Your {{site.data.keyword.IBM_notm}}ID must have assigned IAM policies for each of the following resources](/docs/log-analysis?topic=log-analysis-work_iam). For example, to work in the US-south region and in the default resource group, you need the following permissions: 
+[Your {{site.data.keyword.IBM_notm}}ID must have assigned IAM policies for each of the following resources](/docs/log-analysis?topic=log-analysis-work_iam). For example, to work in the US-south region and in the default resource group, you need the following permissions:
 
 | Resource                             | Scope of the access policy | Role    | Region    | Information                  |
 |--------------------------------------|----------------------------|---------|-----------|------------------------------|
 | Resource group **Default**           |  Resource group            | Viewer  | us-south  | This policy is required to allow the user to see service instances in the Default resource group.    |
 | {{site.data.keyword.la_full_notm}} service |  Resource group      | Editor  | us-south  | This policy is required to allow the user to provision and administer the {{site.data.keyword.la_full_notm}} service in the Default resource group.   |
-{: caption="Table 1. List of IAM policies" caption-side="top"} 
+{: caption="Table 1. List of IAM policies" caption-side="top"}
 
 In {{site.data.keyword.IBM_notm}}, your {{site.data.keyword.IBM_notm}}ID must have the **developer** role assigned for the Cloud Foundry space where the Cloud Foundry application is running. Outside the {{site.data.keyword.IBM_notm}}, you must have permissions to configure a CUPS service for the Cloud Foundry app that you want to collect and monitor logs.
 
@@ -174,7 +174,7 @@ To provision a service instance of {{site.data.keyword.la_full_notm}} through th
 
 1. [Launch the logging web UI.](/docs/log-analysis?topic=log-analysis-launch)
 
-    You launch the web UI within the context of an {{site.data.keyword.la_full_notm}} instance, from the {{site.data.keyword.cloud_notm}} UI. 
+    You launch the web UI within the context of an {{site.data.keyword.la_full_notm}} instance, from the {{site.data.keyword.cloud_notm}} UI.
 
 2. Provision a port. From the logging web UI, complete the following steps:
 
@@ -182,9 +182,9 @@ To provision a service instance of {{site.data.keyword.la_full_notm}} through th
 
     2. Select **View Syslog** &gt; **Syslog**.
 
-    3. Click **Provision a Syslog port**.  
+    3. Click **Provision a Syslog port**.
 
-    A port is displayed. Copy the port. 
+    A port is displayed. Copy the port.
 
 
 ### Step 3: Configure a user-provided service instance for your Cloud Foundry app
@@ -279,7 +279,7 @@ Try also some of these tasks:
 ## Stop viewing Cloud Foundry logs through the logging instance that is configured to collect service platform logs
 {: #monitor_cfapp_logs_exclude}
 
-When you configure a logging instance in a region to collect the service platform logs, Cloud Foundry logs are collected automatically and available through that instance. 
+When you configure a logging instance in a region to collect the service platform logs, Cloud Foundry logs are collected automatically and available through that instance.
 
 For example, you might have configured your Cloud Foundry apps to forward logs to custom logging instances by using Syslog drains because you have a requirement to isolate logs by environment or by line of business. In this use case, you must configure a logging exclusion rule on the *Platform Logs* logging instance.
 
@@ -296,9 +296,9 @@ You must have **manager** role on that instance to configure exclusion rules.
 
 1. [Log in to your {{site.data.keyword.cloud_notm}} account](https://cloud.ibm.com/login){: external}.
 
-2. Click the **Menu** icon ![Menu icon](../../icons/icon_hamburger.svg) &gt; **Observability**. 
+2. Click the **Menu** icon ![Menu icon](../../icons/icon_hamburger.svg) &gt; **Observability**.
 
-3. Click **Logging**. 
+3. Click **Logging**.
 
     The list of instances that are available on {{site.data.keyword.cloud_notm}} is displayed.
 
@@ -322,7 +322,3 @@ You must have **manager** role on that instance to configure exclusion rules.
     {: important}
 
 11. Click **Save**.
-
-
-
-

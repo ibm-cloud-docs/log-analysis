@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years: 2022
+  years: 2022, 2023
 lastupdated: "2022-01-11"
 
 keywords: IBM Cloud, Log Analysis, search, filter

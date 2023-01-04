@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years: 2018, 2022
+  years: 2018, 2023
 lastupdated: "2021-05-14"
 
 keywords: IBM, Log Analysis, logging, security, connection
@@ -44,7 +44,7 @@ The type of network defines the level of isolation and security that is configur
 ## Setting up private service endpoints for {{site.data.keyword.la_full_notm}}
 {: #endpoint-setup}
 
-Private network endpoints support routing services over the {{site.data.keyword.cloud_notm}} Private network instead of the public network. 
+Private network endpoints support routing services over the {{site.data.keyword.cloud_notm}} Private network instead of the public network.
 
 * A private network endpoint provides a unique IP address that is accessible to you without a VPN connection.
 * Private endpoints work between regions offering a global network. You can run your applications and services in Dallas, and connect to a logging instance in Sydney with a private endpoint.
@@ -61,21 +61,21 @@ To use private network endpoints, the following account features must be enabled
     Enabling service endpoints means that all users in the account can connect to private network endpoints.
     {: note}
 
-You must first enable virtual routing and forwarding in your account, and then you can enable the use of IBM Cloud private service endpoints. 
-* To enable VRF, you create a support case. 
+You must first enable virtual routing and forwarding in your account, and then you can enable the use of IBM Cloud private service endpoints.
+* To enable VRF, you create a support case.
 * To enable service endpoints, you use the {{site.data.keyword.cloud_notm}} CLI. For more information about how to enable your account, see [Enabling VRF and service endpoints](/docs/account?topic=account-vrf-service-endpoint).
 
 
 ### Step 2. Setting a private endpoint
 {: #endpoint-setup-step2}
 
-After your account is enabled for VRF and service endpoints, you can configure a logging agent to connect to an {{site.data.keyword.la_full_notm}} instance through the private network. 
+After your account is enabled for VRF and service endpoints, you can configure a logging agent to connect to an {{site.data.keyword.la_full_notm}} instance through the private network.
 
 A service instance can have a private network endpoint, a public network endpoint, or both.
 * A public network endpoint is a service endpoint on the {{site.data.keyword.cloud_notm}} public network.
 * A private network endpoint is a service endpoint that is accessible only on the {{site.data.keyword.cloud_notm}} Private network.
 
-The {{site.data.keyword.la_full_notm}} service offers [private API endpoints](/docs/log-analysis?topic=log-analysis-endpoints#endpoints_api_private). 
+The {{site.data.keyword.la_full_notm}} service offers [private API endpoints](/docs/log-analysis?topic=log-analysis-endpoints#endpoints_api_private).
 
 
 ### Step 3. Configure your logging agent
@@ -84,21 +84,15 @@ The {{site.data.keyword.la_full_notm}} service offers [private API endpoints](/d
 You can [configure the logging agent](/docs/log-analysis?topic=log-analysis-logdna_agent) to use the private network by using a private endpoint as the ingestion URL.
 
 What happens when you configure the logging agent to use a private endpoint?
-* Private endpoints are not accessible from the public internet. 
-* All traffic is routed to the {{site.data.keyword.cloud_notm}} Private network. 
+* Private endpoints are not accessible from the public internet.
+* All traffic is routed to the {{site.data.keyword.cloud_notm}} Private network.
 * Services like {{site.data.keyword.la_full_notm}} are no longer served on an internet routable IP address.
 
 
- 
+
 ## Limitations that use private endpoints
 {: #network_endpoints_limitations}
 
 Consider the following limitations:
 * Ingestion endpoints of type `syslog-tcp (syslog-a)` and `syslog-udp (syslog-u)` are not currently supported on the Cloud Service Endpoint (CSE) network. 
 * The logging web UI is not currently supported on the private network.
-
-
-
-
-
-

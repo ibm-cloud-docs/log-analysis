@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years:  2018, 2022
+  years:  2018, 2023
 lastupdated: "2021-03-28"
 
 keywords: IBM, Log Analysis, logging, agent image, container registry, icr
@@ -12,7 +12,7 @@ subcollection: log-analysis
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Getting information about Kubernetes logging agent images 
+# Getting information about Kubernetes logging agent images
 {: #log_analysis_agent_image}
 
 Kubernetes logging agent images are public images that are available in {{site.data.keyword.cloud_notm}} through the [{{site.data.keyword.registrylong_notm}}](/docs/Registry?topic=Registry-getting-started) service.
@@ -60,4 +60,3 @@ ibmcloud cr images --restrict ext/logdna-agent
 {: codeblock}
 
 The output of this command is the list of logging agent images. It includes information about the repository, `icr.io/ext/logdna-agent`, the image tag, the image digest, the image namespace, when the image was created, the image size, and the images security status.
-

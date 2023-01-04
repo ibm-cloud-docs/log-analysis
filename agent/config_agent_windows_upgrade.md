@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years:  2022
+  years:  2022, 2023
 lastupdated: "2022-09-27"
 
 keywords: IBM, Log Analysis, logging, config agent, Windows
@@ -26,4 +26,3 @@ choco uninstall logdna-agent
 {: pre}
 
 Then install the V3 Windows agent using [these instructions.](/docs/log-analysis?topic=log-analysis-config_agent_windows_v3)
-

@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years:  2018, 2022
+  years:  2018, 2023
 lastupdated: "2021-03-28"
 
 keywords: IBM, Log Analysis, logging, export logs
@@ -12,7 +12,7 @@ subcollection: log-analysis
 
 {{site.data.keyword.attribute-definition-list}}
 
- 
+
 # Controlling who can export logs
 {: #export_config}
 
@@ -29,24 +29,23 @@ Complete the following steps to allow users to export logs from an {{site.data.k
 
 1. [Launch the {{site.data.keyword.la_full_notm}} web UI](/docs/log-analysis?topic=log-analysis-launch).
 
-2. Click the **Settings** icon ![Settings icon](../images/admin.png). 
+2. Click the **Settings** icon ![Settings icon](../images/admin.png).
 
 3. Select **Organization** &gt; **General**.
 
-4. Set-on the **Export Log Lines** setting to allow users to export logs. 
+4. Set-on the **Export Log Lines** setting to allow users to export logs.
 
 
 
-## Disable the export feature 
+## Disable the export feature
 {: #export_config_disable}
 
 Complete the following steps to disable the export feature in an {{site.data.keyword.la_full_notm}} instance:
 
 1. [Launch the {{site.data.keyword.la_full_notm}} web UI](/docs/log-analysis?topic=log-analysis-launch).
 
-2. Click the **Settings** icon ![Settings icon](../images/admin.png). 
+2. Click the **Settings** icon ![Settings icon](../images/admin.png).
 
 3. Select **Organization** &gt; **General**.
 
-4. Set-off the **Export Log Lines** setting to prevent users from exporting logs. 
-
+4. Set-off the **Export Log Lines** setting to prevent users from exporting logs.

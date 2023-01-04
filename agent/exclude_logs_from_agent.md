@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years:  2018, 2022
+  years:  2018, 2023
 lastupdated: "2021-03-28"
 
 keywords: IBM, Log Analysis, logging, config agent
@@ -15,12 +15,12 @@ subcollection: log-analysis
 # Excluding log files
 {: #exclude_logs_from_agent}
 
-Configure a logging agent to exclude logs that you do not want to monitor through the logging UI. 
+Configure a logging agent to exclude logs that you do not want to monitor through the logging UI.
 {: shortdesc}
 
-* You can exclude files that are located in any of the paths that are defined through the **logdir** parameter in a Linux system or the **LOGDNA_EXCLUDE** variable in a Kubernetes cluster. 
-* You can configure multiple files. You separate multiple files by using commas. 
-* You can use glob patterns to define what you want to exclude. 
+* You can exclude files that are located in any of the paths that are defined through the **logdir** parameter in a Linux system or the **LOGDNA_EXCLUDE** variable in a Kubernetes cluster.
+* You can configure multiple files. You separate multiple files by using commas.
+* You can use glob patterns to define what you want to exclude.
 * You can configure specific files.
 
 
@@ -59,10 +59,10 @@ Complete the following steps:
     ```
     {: pre}
 
-    Where 
-    
+    Where
+
     `RESOURCE_GROUP` is the name of the resource group where the cluster is available, for example, `default`.
-    
+
     `REGION` is the region where the cluster is available, for example, `us-south`.
 
 4. Set the cluster where you want to configure logging as the context for this session.
@@ -87,7 +87,7 @@ Complete the following steps:
     ```
     {: codeblock}
 
-2. Make changes. Add the section **LOGDNA_EXCLUDE** to the YAML file. 
+2. Make changes. Add the section **LOGDNA_EXCLUDE** to the YAML file.
 
     * To exclude all cluster logs, you can add:
 
@@ -160,5 +160,3 @@ Complete the following steps:
     {: codeblock}
 
 3. [Launch the logging UI](/docs/log-analysis?topic=log-analysis-launch), and verify that log entries are not showing in the logging UI.
-
-

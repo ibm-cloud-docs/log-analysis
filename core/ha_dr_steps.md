@@ -1,6 +1,6 @@
 ---
 copyright:
-  years: 2018, 2022
+  years: 2018, 2023
 lastupdated: "2022-08-17"
 
 keywords: IBM, Log Analysis, logging, disaster recovery, ha, high availability, redundancy
@@ -74,16 +74,16 @@ Consider using access groups to manage permissions to work with logging instance
 
 Complete the following steps to recover {{site.data.keyword.la_full_notm}} from a regional disaster:
 
-1. Decide the region where you plan to recover activity. 
+1. Decide the region where you plan to recover activity.
 
-    It is best to choose the same recovery region that you choose for the rest of your services that are also impacted in the region that is down. 
+    It is best to choose the same recovery region that you choose for the rest of your services that are also impacted in the region that is down.
 
-    Why? Some of those services might generate platform logs. 
+    Why? Some of those services might generate platform logs.
 
     Make sure that the region that you choose is a supported region for the {{site.data.keyword.la_full_notm}} service. For more information on supported egions, see [Locations](/docs/log-analysis?topic=log-analysis-regions).
     {: note}
-    
-2. Identify the list of instances that are affected in the regional disaster. Then, provision new instances in the new region. 
+
+2. Identify the list of instances that are affected in the regional disaster. Then, provision new instances in the new region.
 
     Use the latest report to know how many instances to create. You can also use your terraform script. Notice that you must edit the script and change the `region` where the instance is to be provisioned.
 
@@ -100,7 +100,7 @@ Complete the following steps to recover {{site.data.keyword.la_full_notm}} from 
 
     If you define permissions by users and service IDs, you must update permissions for each use and for each service ID.
 
-4. Per instance, you must import the logging configuration so any views, parsing templates, boards and screens are uploaded into the new instance. For more information, see [Import the configuration of resources into a logging instance](/docs/log-analysis?topic=log-analysis-reuse_resource_definitions#import_config). 
+4. Per instance, you must import the logging configuration so any views, parsing templates, boards and screens are uploaded into the new instance. For more information, see [Import the configuration of resources into a logging instance](/docs/log-analysis?topic=log-analysis-reuse_resource_definitions#import_config).
 
 5. For each log source that was affected by the disaster, you must reconfigure the log source to send logs to a logging instance in the new region.
 
@@ -111,11 +111,11 @@ Complete the following steps to recover {{site.data.keyword.la_full_notm}} from 
     Other instructions on how to configure log sources:
 
     - [Connecting a logging agent to a standard Kubernetes cluster](/docs/log-analysis?topic=log-analysis-config_agent_kube_cluster)
-    
+
     - [Managing a logging agent deployed in an OpenShift cluster](/docs/log-analysis?topic=log-analysis-config_agent_os_cluster)
-    
+
     - [Configuring a Logging agent for Linux Ubuntu or Debian](/docs/log-analysis?topic=log-analysis-config_agent_linux)
-    
+
     - [Configuring a Logging agent for a Linux RPM-based](/docs/log-analysis?topic=log-analysis-config_agent_linux_rpm)
 
 
@@ -129,9 +129,9 @@ If you recover IBM Cloud services and logging instances across different regions
 ## Overview
 {: #ha_dr_steps_ov}
 
-Disaster recovery is about surviving a catastrophic failure or loss of availability in a single location. 
+Disaster recovery is about surviving a catastrophic failure or loss of availability in a single location.
 
-{{site.data.keyword.la_short}} is a regional service, there is no automatic cross-regional failover or cross-regional disaster recovery. If all of the availability zones in a region fail, {{site.data.keyword.la_short}} becomes unavailable in that location. 
+{{site.data.keyword.la_short}} is a regional service, there is no automatic cross-regional failover or cross-regional disaster recovery. If all of the availability zones in a region fail, {{site.data.keyword.la_short}} becomes unavailable in that location.
 
 ### Availability zones
 {: #ha_dr_steps_locations}
@@ -150,15 +150,15 @@ The following table lists the high-availability (HA) status for the regions (loc
 | `North America`       | `Dallas (us-south)`      | `N/A`        | `MZR`     |
 | `North America`       | `Washington (us-east)`   | `N/A`        | `MZR`     |
 | `North America`       | `Toronto (ca-tor)`       | `N/A`        | `MZR`     |
-| `South America`     | `Sao Paulo (br-sao)`       | `N/A`        | `MZR` | 
+| `South America`     | `Sao Paulo (br-sao)`       | `N/A`        | `MZR` |
 {: caption="Table 1. List of locations where the service is available" caption-side="top"}
 
 
 Where
 * A *geography* is a geographic area or larger political body that contains one or more regions.
-* A *region* is a defined geographic territory. 
+* A *region* is a defined geographic territory.
 
-    A region could be a specific postal code area, a town, a city, a state, a group of states, or even a group of countries. 
+    A region could be a specific postal code area, a town, a city, a state, a group of states, or even a group of countries.
 
     A region contains [multiple availability zones](https://www.ibm.com/cloud/data-centers/) to meet local access, low latency, and security requirements for the region.
 
@@ -183,9 +183,9 @@ The following table indicates the estimated recovery times in the event of a DR 
 ### MZR
 {: #ha_dr_steps_mzr}
 
-A multizone region (MZR) consist of 3 or more availability zones that are independent from each other to ensure that single failure events affect only a single zone. By default, {{site.data.keyword.la_short}} hosted event search is deployed across 3 zones, one primary zone and two secondary zones: 
+A multizone region (MZR) consist of 3 or more availability zones that are independent from each other to ensure that single failure events affect only a single zone. By default, {{site.data.keyword.la_short}} hosted event search is deployed across 3 zones, one primary zone and two secondary zones:
 * Each zone is located in a different data center in the region.
-* The data in your primary zone is automatically replicated to the secondary zones with low latency. You don't need to do anything to enable the replication. 
+* The data in your primary zone is automatically replicated to the secondary zones with low latency. You don't need to do anything to enable the replication.
 * The service is designed to withstand a single zone failure with no interruption.
 
 The MZR architecture offers automatic failover between zones within the region, and high availability for a auditing instance withing a region.
@@ -199,7 +199,7 @@ The SZR architecture offers failover across 3 distinct systems within the single
 ### Data availability for {{site.data.keyword.at_short}} hosted event search offerings
 {: #ha_dr_steps_data_availability}
 
-When you provision an auditing instance, you select the location where the instance is created. The region determines where the auditing data is processed and the data is hosted. 
+When you provision an auditing instance, you select the location where the instance is created. The region determines where the auditing data is processed and the data is hosted.
 
 ### Considerations
 {: #ha_dr_steps_res}
@@ -210,8 +210,5 @@ When you provision an auditing instance, you select the location where the insta
 When a regional disaster occurs, consider the following information:
 * Data and the auditing metadata such as dashboards, alerts, views, screens, templates are backed up every 24 hours. In the event of an un-recoverable disaster, up to 24 hours of data and metadata changes to the auditing instance in the failure region can be lost.
 * The estimated recovery time for rebuilding the regional site and restoring the service at another location is 24 hours.
-* Due to the large volume of data, older data might not be available at the time the service is restored, as this process requires additional time to recover data from the backups.  
+* Due to the large volume of data, older data might not be available at the time the service is restored, as this process requires additional time to recover data from the backups.
 * When the auditing instance in the DR region is available in the new location, you will be able to use it while the data is restored into the newly constructed region.
-
-
-

@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years:  2018, 2022
+  years:  2018, 2023
 lastupdated: "2021-03-28"
 
 keywords: IBM, Log Analysis, logging instance, enable, service logs
@@ -18,11 +18,11 @@ subcollection: log-analysis
 `Platform logs` are logs that are exposed by enabled services and the platform in {{site.data.keyword.cloud_notm}}. You must configure a logging instance in a region to monitor these logs.
 {: shortdesc}
 
-* Platform logs are regional. 
+* Platform logs are regional.
 
-    You can monitor logs from enabled services on the {{site.data.keyword.cloud_notm}} in the region where the service is available. 
+    You can monitor logs from enabled services on the {{site.data.keyword.cloud_notm}} in the region where the service is available.
 
-* You can configure 1 instance only of the {{site.data.keyword.la_full_notm}} service per region to collect *platform logs* in that location. 
+* You can configure 1 instance only of the {{site.data.keyword.la_full_notm}} service per region to collect *platform logs* in that location.
 
     You can have multiple {{site.data.keyword.la_full_notm}} instances in a location. However, only 1 instance in a location (region) can be configured to receive logs from [enabled services](/docs/log-analysis?topic=log-analysis-cloud_services) in that {{site.data.keyword.cloud_notm}} location.
     {: important}
@@ -45,13 +45,13 @@ To configure a logging instance from the Observability dashboard in the {{site.d
 
 2. Go to the menu icon ![menu icon](../../icons/icon_hamburger.svg) &gt; **Observability** to access the *Observability* dashboard.
 
-3. Click **Logging**, then click **Options** > **Edit Platform**. 
+3. Click **Logging**, then click **Options** > **Edit Platform**.
 
-4. Select a [region](/docs/log-analysis?topic=log-analysis-regions). 
+4. Select a [region](/docs/log-analysis?topic=log-analysis-regions).
 
 5. Choose which logging instance will receive logs from enabled services on that location. [Learn more about the services that are enabled to send logs to {{site.data.keyword.la_full_notm}}.](/docs/log-analysis?topic=log-analysis-cloud_services)
 
-6. Click **Select**. 
+6. Click **Select**.
 
 The main *Observability* page opens.
 
@@ -64,10 +64,10 @@ The main *Observability* page opens.
 
 To enable platform logs in a region, the instance that you want to configure to receive platform logs must have set on the **default_receiver** property.
 
-Check if you have an instance with the flag **Platform Logs** set in the region that you want to configure platform logs. Your user must have permissions to see all instances in the account. 
+Check if you have an instance with the flag **Platform Logs** set in the region that you want to configure platform logs. Your user must have permissions to see all instances in the account.
 {: important}
 
-If you have an instance with the flag **Platform Logs**, stop and contact the account administrator to confirm that you will not impact the account operations. There is only 1 instance per region that can collect platform logs. After you make this change, platform logs are collected through this instance in the region, and permissions to view platform logs are impacted. See [Changing the instance that collects platform logs from the command line](/docs/log-analysis?topic=log-analysis-config_svc_logs#platform_logs_change_cli).  
+If you have an instance with the flag **Platform Logs**, stop and contact the account administrator to confirm that you will not impact the account operations. There is only 1 instance per region that can collect platform logs. After you make this change, platform logs are collected through this instance in the region, and permissions to view platform logs are impacted. See [Changing the instance that collects platform logs from the command line](/docs/log-analysis?topic=log-analysis-config_svc_logs#platform_logs_change_cli).
 {: important}
 
 If you do not have an instance with the flag **Platform Logs** in the region, complete the following steps:
@@ -91,7 +91,7 @@ If you do not have an instance with the flag **Platform Logs** in the region, co
 
 5. Set on the **default_receiver** property. Run the following command:
 
-    Check that the change will not affect other account members. There is only 1 instance per region that can collect platform logs. After you make this change, platform logs are collected through this instance in the region, and permissions to view platform logs are impacted.  
+    Check that the change will not affect other account members. There is only 1 instance per region that can collect platform logs. After you make this change, platform logs are collected through this instance in the region, and permissions to view platform logs are impacted.
     {: important}
 
     ```text
@@ -100,7 +100,7 @@ If you do not have an instance with the flag **Platform Logs** in the region, co
     {: codeblock}
 
     Where `PlanID` is the resource plan ID of your logging instance.
-    
+
 
 
 ## Changing the instance that collects platform logs from the command line
@@ -109,14 +109,14 @@ If you do not have an instance with the flag **Platform Logs** in the region, co
 You must use a user that has permissions to see all instances in the account.
 {: note}
 
-Before you change the instance that collects platform logs, check that the change will not affect other account members. There is only 1 instance per region that can collect platform logs. After you make this change, platform logs are collected through this instance in the region, and permissions to view platform logs are impacted.  
+Before you change the instance that collects platform logs, check that the change will not affect other account members. There is only 1 instance per region that can collect platform logs. After you make this change, platform logs are collected through this instance in the region, and permissions to view platform logs are impacted.
 {: important}
 
 Complete the following steps:
 
 1. [Pre-requisite] [Install the {{site.data.keyword.cloud_notm}} CLI](/docs/cli?topic=cli-install-ibmcloud-cli).
 
-2. [Pre-requisite]Get the details of the instance with the flag **Platform Logs** set in the region that you want to reconfigure. 
+2. [Pre-requisite]Get the details of the instance with the flag **Platform Logs** set in the region that you want to reconfigure.
 
 3. Log in to the region in the {{site.data.keyword.cloud_notm}} where the logging instance is running. Run the following command: [ibmcloud login](/docs/cli?topic=cli-ibmcloud_cli#ibmcloud_login)
 
@@ -140,8 +140,8 @@ Complete the following steps:
     ```
     {: codeblock}
 
-    Where 
-    
+    Where
+
     * `PlanID` is the resource plan ID of your logging instance.
 
     * `InstanceName` is the name of the instance that you want to turn on and start collecting platform logs.
@@ -166,13 +166,8 @@ Complete the following steps:
     ```
     {: codeblock}
 
-    Where 
-    
+    Where
+
     * `PlanID` is the resource plan ID of your logging instance.
 
     * `InstanceName` is the name of the instance that you want to turn off from collecting platform logs.
-    
-
-
-
-

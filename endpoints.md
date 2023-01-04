@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years:  2018, 2022
+  years:  2018, 2023
 lastupdated: "2022-12-13"
 
 keywords: IBM, Log Analysis, logging, endpoints

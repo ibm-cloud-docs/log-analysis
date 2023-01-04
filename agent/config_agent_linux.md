@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years:  2018, 2022
+  years:  2018, 2023
 lastupdated: "2021-10-06"
 
 keywords: IBM, Log Analysis, logging, config agent, linux, ubuntu
@@ -50,8 +50,8 @@ To configure your Ubuntu server to forward logs to your logging instance, comple
     sudo apt-get install logdna-agent < "/dev/null"
     ```
     {: codeblock}
-    
-2. Set the ingestion key that the logging agent must use to forward logs to the {{site.data.keyword.la_full_notm}} instance.  
+
+2. Set the ingestion key that the logging agent must use to forward logs to the {{site.data.keyword.la_full_notm}} instance.
 
     ```text
     sudo logdna-agent -k INGESTION_KEY
@@ -60,7 +60,7 @@ To configure your Ubuntu server to forward logs to your logging instance, comple
 
     Where INGESTION_KEY contains the ingestion key active for the {{site.data.keyword.la_full_notm}} instance where you are configuring to forward logs.
 
-3. Set the authentication endpoint. The logging agent uses this host to authenticate and get the token to forward logs. 
+3. Set the authentication endpoint. The logging agent uses this host to authenticate and get the token to forward logs.
 
     | Location               | Command                                                                         |
     |------------------------|---------------------------------------------------------------------------------|
@@ -105,4 +105,3 @@ To configure your Ubuntu server to forward logs to your logging instance, comple
     sudo /etc/init.d/logdna-agent start
     ```
     {: codeblock}
-

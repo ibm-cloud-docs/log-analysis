@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years:  2018, 2022
+  years:  2018, 2023
 lastupdated: "2021-03-28"
 
 keywords: IBM, Log Analysis, logging, alerts
@@ -12,7 +12,7 @@ subcollection: log-analysis
 
 {{site.data.keyword.attribute-definition-list}}
 
- 
+
 # Creating alerts through the UI
 {: #create_alert_ui}
 
@@ -34,10 +34,10 @@ You must be an administrator of the {{site.data.keyword.la_full_notm}} service, 
 The following table lists the minimum policies that a user must have to be able to launch the {{site.data.keyword.la_full_notm}} Web UI, and view logs:
 
 | Service                               | Role                      | Permission granted            |
-|---------------------------------------|---------------------------|-------------------------------|  
+|---------------------------------------|---------------------------|-------------------------------|
 | `{{site.data.keyword.la_full_notm}}` | Platform role: Viewer     | Allows the user to view the list of service instances in the Observability Logging dashboard. |
 | `{{site.data.keyword.la_full_notm}}` | Service role: Manager or Standard-member      | Allows the user to launch the Web UI and create alerts.  |
-{: caption="Table 1. IAM policies" caption-side="top"} 
+{: caption="Table 1. IAM policies" caption-side="top"}
 
 For more information on how to configure these policies for a user, see [Granting permissions to a user to view logs](/docs/log-analysis?topic=log-analysis-work_iam#user_logdna).
 
@@ -45,14 +45,14 @@ For more information on how to configure these policies for a user, see [Grantin
 ## Step 1. Define the rule
 {: #create_alert_ui_step1}
 
-You must define the rule that specifies the scope of the data and save the rule as a view. 
+You must define the rule that specifies the scope of the data and save the rule as a view.
 
 Complete the following steps to create a rule:
 
 1. [Launch the {{site.data.keyword.la_full_notm}} UI](/docs/log-analysis?topic=log-analysis-launch).
 2. Filter log data by using pre-defined filters.
 
-    You can filter logs by log source, application, and log level. 
+    You can filter logs by log source, application, and log level.
 
     * A source can be a host, a computer, a virtual machine, or a Heroku app.
 
@@ -102,7 +102,7 @@ Complete the following steps to create a rule:
 ## Step 2. Create the alert
 {: #create_alert_ui_step2}
 
-Next, you must attach an alert to the view. 
+Next, you must attach an alert to the view.
 
 You can choose any of the following options:
 - Create a preset and attach the preset to the view
@@ -115,13 +115,13 @@ You can attach multiple notification channels to a view. You can define differen
 
 Complete the following steps to attach a preset to a view:
 
-1. [Configure a preset (alert template)](/docs/log-analysis?topic=log-analysis-preset_ui#preset_ui_create). 
+1. [Configure a preset (alert template)](/docs/log-analysis?topic=log-analysis-preset_ui#preset_ui_create).
 
 2. Click the **Views** icon ![Views icon](../images/views.png "Views icon"). Select the view name. Then, select **Attach an alert**.
 
-3. In the section **Choose preset**, select a preset. 
+3. In the section **Choose preset**, select a preset.
 
-4. Click **Save alert**. 
+4. Click **Save alert**.
 
 
 
@@ -138,26 +138,26 @@ Complete the following steps to attach an alert to a view:
 5. Configure when you want the alert to be sent.
 
    Select if you want the alert to be sent when the condition exists (**Presence**) or does not exist (**Absence**).
-   
+
    Indicate the logging criteria when an alert should be sent.  For example, when 100 lines matching in the view are logged in an hour.  A graph will help you determine the number of log lines matching your specified criteria.
-   
+
    Select if the alert should be sent at the end of the selected period or immediately when the number of lines are logged.
-   
+
    Optionally you can specify a **Custom schedule** with alerting limited to a specified timezone, days of the week, or timeframe. To configure a **Custom schedule**:
-      
+
     1. Select **on** for **Custom schedule**.
 
-    2. Select the Timezone for the log entries. 
+    2. Select the Timezone for the log entries.
 
     3. Select the days of the week when alerts should be generated.
 
     4. Optionally specify a time range for the selected days. A graph will help you determine the number of log entries for the timezone and time range.
-       
+
 6. Depending on the type of alert you will also need to configure additional settings:
 
     **Slack**:  Specify your **Webhook** URL and the desired **Message color**.
 
-    **Email**: Specify the **Recipients** of the email and a **Timezone**. The timezone defines the timestamp value of each event that is included in the email. To see UTC timestamps, you can select **(GMT +00:00) UTC**. 
+    **Email**: Specify the **Recipients** of the email and a **Timezone**. The timezone defines the timestamp value of each event that is included in the email. To see UTC timestamps, you can select **(GMT +00:00) UTC**.
 
     **PagerDuty**: Specify the **Service**.  If required, you will be prompted to connect to PagerDuty.
 
@@ -172,5 +172,3 @@ Complete the following steps to attach an alert to a view:
 9. If you want to create an additional alert channel, click **+** and follow the prior steps to create additional channels.  You can create different channel types, for example, an email and a Slack channel.  Or, you can create multiple channels of the same type with different alert criteria.
 
 Alerts will be generated based on your configuration.
-
-

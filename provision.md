@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years:  2018, 2022
+  years:  2018, 2023
 lastupdated: "2022-03-24"
 
 keywords: IBM, Log Analysis, logging instance, provision
@@ -35,19 +35,19 @@ To provision an instance from the Observability dashboard in the {{site.data.key
 
 2. Click the **Menu** icon ![Menu icon](../icons/icon_hamburger.svg) &gt; **Observability** to access the *Observability* dashboard.
 
-3. Click **Logging**, then click **Options** > **Create**. 
+3. Click **Logging**, then click **Options** > **Create**.
 
 4. Enter a name for the service instance.
 
-5. Select the [location](/docs/log-analysis?topic=log-analysis-regions) where you plan to provision the instance. 
+5. Select the [location](/docs/log-analysis?topic=log-analysis-regions) where you plan to provision the instance.
 
-6. Select a resource group. 
+6. Select a resource group.
 
     By default, the **default** resource group is set.
 
     **Note:** If you are not able to select a resource group, check that you have editing permissions on the resource group where you want to provision the instance.
 
-7. Select the `Lite` service plan. 
+7. Select the `Lite` service plan.
 
     By default, the lite plan is set.
 
@@ -55,9 +55,9 @@ To provision an instance from the Observability dashboard in the {{site.data.key
 
 8. Click **Create**.
 
-After you provision an instance, the *Logging* dashboard opens. 
+After you provision an instance, the *Logging* dashboard opens.
 
-Next, configure a log source by adding a logging agent. This agent is responsible for collecting and forwarding logs to your instance. 
+Next, configure a log source by adding a logging agent. This agent is responsible for collecting and forwarding logs to your instance.
 
 
 
@@ -74,19 +74,19 @@ To provision an instance of {{site.data.keyword.la_full_notm}} through the {{sit
 
 3. To filter the list of services that is displayed, select the **Logging and Monitoring** category.
 
-4. Click the **{{site.data.keyword.la_full_notm}}** tile. 
+4. Click the **{{site.data.keyword.la_full_notm}}** tile.
 
-5. Select the [location](/docs/log-analysis?topic=log-analysis-regions) where you plan to provision the instance. 
+5. Select the [location](/docs/log-analysis?topic=log-analysis-regions) where you plan to provision the instance.
 
 6. Enter a name for the service instance.
 
-7. Select a resource group. 
+7. Select a resource group.
 
     By default, the **Default** resource group is set.
 
     **Note:** If you are not able to select a resource group, check that you have editing permissions on the resource group where you want to provision the instance.
 
-8. Select the `Lite` service plan. 
+8. Select the `Lite` service plan.
 
     By default, the lite plan is set.
 
@@ -94,9 +94,9 @@ To provision an instance of {{site.data.keyword.la_full_notm}} through the {{sit
 
 9. Click **Create**.
 
-After you provision an instance, the *Logging* dashboard opens. 
+After you provision an instance, the *Logging* dashboard opens.
 
-Next, configure a log source by adding a logging agent. This agent is responsible for collecting and forwarding logs to your instance. 
+Next, configure a log source by adding a logging agent. This agent is responsible for collecting and forwarding logs to your instance.
 
 ## Configuring your instance to be accessible to private endpoints only
 {: #config_private_endpoints}
@@ -113,15 +113,15 @@ Unless otherwise specified when provisioning an instance, the default is for the
 
 	After you log in with your user ID and password, the {{site.data.keyword.cloud_notm}} dashboard opens.
 
-2. Click the **Menu** icon ![Menu icon](../icons/icon_hamburger.svg) &gt; **Observability**. 
+2. Click the **Menu** icon ![Menu icon](../icons/icon_hamburger.svg) &gt; **Observability**.
 
-3. Select **Logging**. 
+3. Select **Logging**.
 
     The list of {{site.data.keyword.la_full_notm}} instances is displayed.
 
 4. Select the instance in the region where you want to view events. Then, click **Open Dashboard**.
 
-5. Select the **settings** icon. 
+5. Select the **settings** icon.
 
 6. Click **Organization** &gt; **General**.
 
@@ -159,7 +159,7 @@ To provision an instance of {{site.data.keyword.la_full_notm}} through the comma
     `NAME` is the name of the instance
 
     `SERVICE_PLAN_NAME` is the type of plan. Valid values are *lite*, *7-day*, *14-day*, *30-day*.
-    
+
     `LOCATION` is the region where the logging instance is created. To get the latest list of locations that are available for the {{site.data.keyword.la_full_notm}} service, see [Locations](/docs/log-analysis?topic=log-analysis-regions).
 
     * `PRIVATE_ENDPOINT` is either `true` or `false`.  If `true` only [private endpoints](/docs/log-analysis?topic=log-analysis-endpoints) can be used to access the instance.
@@ -184,7 +184,7 @@ To provision an instance of {{site.data.keyword.la_full_notm}} through the comma
     or
 
     ```text
-    ibmcloud resource service-instance-create my-instance logdna 14-day us-south    
+    ibmcloud resource service-instance-create my-instance logdna 14-day us-south
     ```
     {: codeblock}
 
@@ -199,19 +199,16 @@ ibmcloud resource service-key-create NAME ROLE_NAME --instance-name SERVICE_INST
 ```
 {: pre}
 
-Where 
+Where
 
 * `SERVICE_INSTANCE_NAME` is the name of the instance that you provisioned in the previous step.
 * `NAME` is the name of the service ID. Use the following format to name the key **<SERVICE_INSTANCE_NAME>-key-admin**
 * `ROLE_NAME` is the permission that you grant this service ID. Set it to **Manager**.
 
- 
+
 For example, you can run the following command:
 
 ```text
 ibmcloud resource service-key-create my-instance-key-admin Manager --instance-name my-instance
 ```
 {: pre}
-
-
-

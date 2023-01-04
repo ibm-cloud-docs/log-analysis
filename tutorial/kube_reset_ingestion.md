@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years:  2018, 2022
+  years:  2018, 2023
 lastupdated: "2021-03-28"
 
 keywords: IBM, Log Analysis, logging, kubernetes, tutorial, reset ingestion key
@@ -10,8 +10,8 @@ subcollection: log-analysis
 
 content-type: tutorial
 services: containers, log-analysis
-account-plan: lite 
-completion-time: 1h 
+account-plan: lite
+completion-time: 1h
 
 ---
 
@@ -21,16 +21,16 @@ completion-time: 1h
 # Resetting the ingestion key that is used by a Kubernetes cluster
 {: #kube_reset_ingestion}
 {: toc-content-type="tutorial"}
-{: toc-services="containers, log-analysis"} 
-{: toc-completion-time="1h"} 
+{: toc-services="containers, log-analysis"}
+{: toc-completion-time="1h"}
 
-If the ingestion key that you use to forward logs from a cluster to an {{site.data.keyword.la_full_notm}} instance in the {{site.data.keyword.cloud_notm}} is compromised, you must reset the key and update the Kubernetes cluster configuration to use the new ingestion key. 
+If the ingestion key that you use to forward logs from a cluster to an {{site.data.keyword.la_full_notm}} instance in the {{site.data.keyword.cloud_notm}} is compromised, you must reset the key and update the Kubernetes cluster configuration to use the new ingestion key.
 {: shortdesc}
 
 ## Before you begin
 {: #kube_reset_prereqs}
 
-Work in a [supported region](/docs/log-analysis?topic=log-analysis-regions). **Note:** You can work with a Kubernetes cluster that is located in the same region or in a different region. 
+Work in a [supported region](/docs/log-analysis?topic=log-analysis-regions). **Note:** You can work with a Kubernetes cluster that is located in the same region or in a different region.
 
 Read about {{site.data.keyword.la_full_notm}}. For more information, see [About](/docs/log-analysis?topic=log-analysis-getting-started#getting-started-ov).
 
@@ -38,14 +38,14 @@ Use a user ID that is a member or an owner of an {{site.data.keyword.cloud_notm}
 
 The {{site.data.keyword.la_full_notm}} instance is provisioned in the **default** resource group.
 
-To complete the steps in this tutorial, your {{site.data.keyword.IBM_notm}}ID must have assigned IAM policies for each of the following resources: 
+To complete the steps in this tutorial, your {{site.data.keyword.IBM_notm}}ID must have assigned IAM policies for each of the following resources:
 
 | Resource                             | Scope of the access policy | Roles    | Region    | Information                  |
 |--------------------------------------|----------------------------|---------|-----------|------------------------------|
 | Resource group **Default**           |  Resource group            | Viewer  | us-south  | This policy is required to allow the user to see service instances in the Default resource group.    |
 | {{site.data.keyword.la_full_notm}} service |  Resource group            | Editor  \n Manager  | us-south  | This policy is required to allow the user to reset the ingestion key.   |
 | Kubernetes cluster instance          |  Resource                  | Editor  | us-south  | This policy is required to delete and configure the secret and the logging agent in the Kubernetes cluster. |
-{: caption="Table 1. List of IAM policies required to complete the tutorial" caption-side="top"} 
+{: caption="Table 1. List of IAM policies required to complete the tutorial" caption-side="top"}
 
 For more information about the {{site.data.keyword.containerlong}} IAM roles, see [User access permissions](/docs/containers?topic=containers-access_reference#access_reference).
 
@@ -60,13 +60,13 @@ To renew the ingestion key for an {{site.data.keyword.la_full_notm}} instance by
 
 1. [Launch the {{site.data.keyword.la_full_notm}} web UI](/docs/log-analysis?topic=log-analysis-view_logs#view_logs_step2).
 
-2. Click the **Settings** icon ![Settings icon](../images/admin.png).  
+2. Click the **Settings** icon ![Settings icon](../images/admin.png).
 
-3. Select **Organization**. 
+3. Select **Organization**.
 
 4. Select **API keys**.
 
-    You can see the ingestion keys that have been created. 
+    You can see the ingestion keys that have been created.
 
 5. Select **Generate Ingestion Key**.
 
@@ -183,15 +183,15 @@ To configure your Kubernetes cluster in the `us-south` region to forward logs to
 {: #kube_reset_step4}
 {: step}
 
-You launch the web UI from the {{site.data.keyword.cloud_notm}} Observability dashboard. 
+You launch the web UI from the {{site.data.keyword.cloud_notm}} Observability dashboard.
 
 Complete the following steps to launch the web UI:
 
 1. [Log in to your {{site.data.keyword.cloud_notm}} account](https://cloud.ibm.com/login){: external}.
 
-2. Click the **Menu** icon ![Menu icon](../../icons/icon_hamburger.svg) &gt; **Observability** to launch the Observability dashboard. 
+2. Click the **Menu** icon ![Menu icon](../../icons/icon_hamburger.svg) &gt; **Observability** to launch the Observability dashboard.
 
-3. Click **Logging**. 
+3. Click **Logging**.
 
     The list of {{site.data.keyword.la_full_notm}} instances that are available on {{site.data.keyword.cloud_notm}} is displayed.
 
@@ -204,7 +204,7 @@ Complete the following steps to launch the web UI:
 {: #kube_reset_step5}
 {: step}
 
-From the logging web UI, you can view your logs as they pass through the system. You view logs by using log tailing. 
+From the logging web UI, you can view your logs as they pass through the system. You view logs by using log tailing.
 
 With the **Lite** service plan, you can only tail your latest logs.
 {: note}
@@ -214,6 +214,3 @@ With the **Lite** service plan, you can only tail your latest logs.
 {: #kube_reset_next_steps}
 
 If you want to [filter cluster logs](/docs/log-analysis?topic=log-analysis-view_logs#view_logs_step5), [search cluster logs](/docs/log-analysis?topic=log-analysis-view_logs#view_logs_step6), [define views](/docs/log-analysis?topic=log-analysis-view_logs#view_logs_step7), and [configure alerts](/docs/log-analysis?topic=log-analysis-alerts), you must upgrade the {{site.data.keyword.la_full_notm}} plan to a paid plan.
-
-
-

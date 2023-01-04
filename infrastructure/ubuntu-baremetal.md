@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years:  2018, 2022
+  years:  2018, 2023
 lastupdated: "2022-02-02"
 
 keywords: IBM, Log Analysis, logging, ubuntu, tutorial, bare metal
@@ -19,23 +19,23 @@ completion-time: 1h
 
 # Logging with bare metal servers
 {: #ubuntu_baremetal}
-{: toc-content-type="tutorial"} 
+{: toc-content-type="tutorial"}
 {: toc-completion-time="1h"}
 
-Use the {{site.data.keyword.la_full}} service to monitor and manage logs from a bare metal server in a centralized logging system on the {{site.data.keyword.cloud_notm}}. 
+Use the {{site.data.keyword.la_full}} service to monitor and manage logs from a bare metal server in a centralized logging system on the {{site.data.keyword.cloud_notm}}.
 {: shortdesc}
 
 These instructions are for Ubuntu Linux systems but can be used for other Linux systems.
 {: note}
 
-You can collect and monitor system and application logs. 
+You can collect and monitor system and application logs.
 
 By default, the logging agent for Ubuntu monitors log files in the `/var/log` directory. For example, the Ubuntu system log (`/var/log/syslog`) is monitored by default.
 
 On the {{site.data.keyword.cloud_notm}}, configure a bare metal server to forward logs to an {{site.data.keyword.la_full_notm}} instance by completing the following steps:
 
 1. Provision a bare metal server running Ubuntu Linux.
-2. Provision an instance of the {{site.data.keyword.la_full_notm}} service. 
+2. Provision an instance of the {{site.data.keyword.la_full_notm}} service.
 3. Configure the logging agent in the bare metal server.
 4. Optionally, add additional directories to be monitored by the agent.
 
@@ -48,22 +48,22 @@ In this tutorial, you will learn how to configure a bare metal server to forward
 
 Read about {{site.data.keyword.la_full_notm}}. For more information, see [About](/docs/log-analysis?topic=log-analysis-getting-started#getting-started-ov).
 
-Work in a [supported region](/docs/log-analysis?topic=log-analysis-regions). 
+Work in a [supported region](/docs/log-analysis?topic=log-analysis-regions).
 
 You can send data from an Ubuntu instance that is located in the same region as your logging instance, in a different region, or not in the {{site.data.keyword.cloud_notm}}.
 {: note}
 
 Use a user ID that is a member, or an owner of, an {{site.data.keyword.cloud_notm}} account. To get an {{site.data.keyword.cloud_notm}} {{site.data.keyword.IBM_notm}}ID, go to: [Create an account](https://cloud.ibm.com/login){: external}.
 
-Your {{site.data.keyword.IBM_notm}}ID must have assigned IAM policies for each of the following resources in the region that your {{site.data.keyword.la_full_notm}} instance is in:  
+Your {{site.data.keyword.IBM_notm}}ID must have assigned IAM policies for each of the following resources in the region that your {{site.data.keyword.la_full_notm}} instance is in:
 
-Your {{site.data.keyword.IBM_notm}}ID must have assigned IAM policies for each of the following resources: 
+Your {{site.data.keyword.IBM_notm}}ID must have assigned IAM policies for each of the following resources:
 
 | Resource                             | Scope of the access policy | Role    | Region    | Information                  |
 |--------------------------------------|----------------------------|---------|-----------|------------------------------|
 | Resource group **default**           |  Resource group            | Viewer  | us-south  | This policy is required to allow the user to see service instances in the Default resource group.    |
 | {{site.data.keyword.la_full_notm}} service |  Resource group            | Editor  | us-south  | This policy is required to allow the user to provision and administer the {{site.data.keyword.la_full_notm}} service in the default resource group.   |
-{: caption="Table 1. List of IAM policies required to complete the tutorial" caption-side="top"} 
+{: caption="Table 1. List of IAM policies required to complete the tutorial" caption-side="top"}
 
 The {{site.data.keyword.cloud_notm}} CLI must be installed. For more information, see [Installing the {{site.data.keyword.cloud_notm}} CLI](/docs/cli?topic=cli-install-ibmcloud-cli).
 
@@ -75,24 +75,24 @@ If you have a bare metal server that you want to monitor, you can skip this step
 
 If you don't have a bare metal server, complete the following steps
 
-1. [Provision a bare metal server](/docs/bare-metal?topic=bare-metal-getting-started). 
+1. [Provision a bare metal server](/docs/bare-metal?topic=bare-metal-getting-started).
 
     To complete the steps in this topic, ensure you have internet access from the bare metal server. This is needed for configuring the monitoring agent.
 
-2. Configure a VPN connection between your terminal and the bare metal server  
+2. Configure a VPN connection between your terminal and the bare metal server
 
-    Virtual Private Networking (VPN) access enables users to manage all servers remotely and securely over the {{site.data.keyword.cloud}} private network. A VPN connection from your location to the private network allows out-of-band management and server rescue through an encrypted VPN tunnel. VPN tunnels can be initiated to any {{site.data.keyword.cloud_notm}} data center or PoP allowing you geographic redundancy. 
+    Virtual Private Networking (VPN) access enables users to manage all servers remotely and securely over the {{site.data.keyword.cloud}} private network. A VPN connection from your location to the private network allows out-of-band management and server rescue through an encrypted VPN tunnel. VPN tunnels can be initiated to any {{site.data.keyword.cloud_notm}} data center or PoP allowing you geographic redundancy.
 
     Complete the following steps to configure a VPN connection between your terminal and the bare metal server:
 
     1. [Enable VPN access on each account that needs VPN access](/docs/iaas-vpn?topic=iaas-vpn-getting-started#enable-user-vpn-access).
-    
+
     2. Depending on your operating system, download the latest `MotionPro` 32-bit or 64-bit files from the Array Networks [Clients and Tools](https://support.arraynetworks.net/prx/001/http/supportportal.arraynetworks.net/downloads/downloads.html){: external} download site. [Learn more](/docs/iaas-vpn?topic=iaas-vpn-standalone-vpn-clients){: external}.
-    
+
     3. Configure a standalone SSL VPN client and open a connection:
 
-    For example, if you use the MotionPro Plus client for MacOS, to add a profile, click **Add**. 
-    
+    For example, if you use the MotionPro Plus client for MacOS, to add a profile, click **Add**.
+
     In the `Basic` section, enter a `Title`. Enter a `Gateway`, for example, for a bare metal in Dallas 10, enter `vpn.dal10.softlayer.com`. Enter your VPN user name. Check that the `Port` is set to `443`. Then, click **OK**.
 
     To open a secure connection, click **Login**.
@@ -101,8 +101,8 @@ If you don't have a bare metal server, complete the following steps
 
     You might require a VPN to access your system depending on your security setup and `ssh` configuration on the bare metal host.
 
-    You must `ssh` to the host by using your credentials, or the root credentials that are available from the {{site.data.keyword.cloud_notm}} Console.  
-    
+    You must `ssh` to the host by using your credentials, or the root credentials that are available from the {{site.data.keyword.cloud_notm}} Console.
+
     You will require root permissions in order to install the monitoring agent.
 
     For example, you can complete the following steps to get the bare metal server information that you need to `ssh` into the server:
@@ -113,12 +113,12 @@ If you don't have a bare metal server, complete the following steps
 
     3. Identify the bare metal server that you want to monitor. Copy the **Public IP**.
 
-    4. Click the bare metal server device name. 
+    4. Click the bare metal server device name.
 
     5. Select **Passwords**. Copy the password for the **root** user.
 
        Then, from a terminal, run the following command:
-  
+
        ```text
        ssh <USER_ID>@<IP_ADDRESS>
        ```
@@ -153,7 +153,7 @@ To provision an instance of {{site.data.keyword.la_full_notm}} through the {{sit
 
 5. Select a region for the service instance.
 
-6. Select the **Lite** service plan. 
+6. Select the **Lite** service plan.
 
    By default, the **Lite** plan is set.
 
@@ -161,13 +161,13 @@ To provision an instance of {{site.data.keyword.la_full_notm}} through the {{sit
 
 7. Specify a **Service name** for your {{site.data.keyword.la_full_notm}} service instance.
 
-8. Select the **Default** resource group. 
+8. Select the **Default** resource group.
 
    By default, the **Default** resource group is set.
 
 9. To provision the {{site.data.keyword.la_full_notm}} service in the {{site.data.keyword.cloud_notm}} selected resource group, click **Create**.
 
-After you provision an instance, the {{site.data.keyword.la_full_notm}} dashboard opens. 
+After you provision an instance, the {{site.data.keyword.la_full_notm}} dashboard opens.
 
 To provision an instance of logging through the CLI, see [Provisioning logging through the {{site.data.keyword.cloud_notm}} CLI](/docs/log-analysis?topic=log-analysis-provision#provision_cli).
 {: note}
@@ -184,12 +184,12 @@ To configure your bare metal server to forward logs to your logging instance, co
 1. Install the logging agent. Run the following commands:
 
    ```text
-   echo "deb https://repo.logdna.com stable main" | sudo tee /etc/apt/sources.list.d/logdna.list 
+   echo "deb https://repo.logdna.com stable main" | sudo tee /etc/apt/sources.list.d/logdna.list
    ```
    {: pre}
 
    ```text
-   wget -O- https://repo.logdna.com/logdna.gpg | sudo apt-key add - 
+   wget -O- https://repo.logdna.com/logdna.gpg | sudo apt-key add -
    ```
    {: pre}
 
@@ -203,7 +203,7 @@ To configure your bare metal server to forward logs to your logging instance, co
    ```
    {: pre}
 
-2. Set the ingestion key that the logging agent will use to forward logs to the {{site.data.keyword.la_full_notm}} instance.  
+2. Set the ingestion key that the logging agent will use to forward logs to the {{site.data.keyword.la_full_notm}} instance.
 
    ```text
    sudo logdna-agent -k <INGESTION_KEY>
@@ -228,7 +228,7 @@ To configure your bare metal server to forward logs to your logging instance, co
    ```
    {: pre}
 
-5. (Optional) Define any additional log paths to be monitored. Run the following command: 
+5. (Optional) Define any additional log paths to be monitored. Run the following command:
 
    ```text
    sudo logdna-agent -d <PATH_TO_LOG_FOLDERS>
@@ -240,7 +240,7 @@ To configure your bare metal server to forward logs to your logging instance, co
 6. (Optional) Configure the logging agent to tag your hosts. Run the following command:
 
    ```text
-   sudo logdna-agent -t TAG1,TAG2 
+   sudo logdna-agent -t TAG1,TAG2
    ```
    {: pre}
 
@@ -279,9 +279,9 @@ To launch the {{site.data.keyword.la_full_notm}} dashboard from the {{site.data.
 
    After you log in with your user ID and password, the {{site.data.keyword.cloud_notm}} Dashboard opens.
 
-2. In the navigation menu, select **Observability**. 
+2. In the navigation menu, select **Observability**.
 
-3. Click **Logging**. 
+3. Click **Logging**.
 
    The list of {{site.data.keyword.la_full_notm}} instances that are available on {{site.data.keyword.cloud_notm}} is displayed.
 
@@ -294,7 +294,7 @@ To launch the {{site.data.keyword.la_full_notm}} dashboard from the {{site.data.
 {: #ubuntu_baremetal_step5}
 {: step}
 
-From the logging Web UI, you can view your logs as they pass through the system. You view logs by using log tailing. 
+From the logging Web UI, you can view your logs as they pass through the system. You view logs by using log tailing.
 
 With the **Free** service plan, you can only tail your latest logs.
 {: note}
@@ -310,8 +310,7 @@ The following additional features are available:
 * [Filtering logs](/docs/log-analysis?topic=log-analysis-view_logs#view_logs_step5)
 * [Searching logs](/docs/log-analysis?topic=log-analysis-view_logs#view_logs_step6)
 * [Defining views](/docs/log-analysis?topic=log-analysis-view_logs#view_logs_step7)
-* [Configuring alerts](/docs/log-analysis?topic=log-analysis-alerts). 
+* [Configuring alerts](/docs/log-analysis?topic=log-analysis-alerts).
 
 To use any of these features, you must upgrade the {{site.data.keyword.la_full_notm}} plan to a paid plan.
 {: note}
-

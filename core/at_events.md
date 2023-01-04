@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years:  2018, 2022
+  years:  2018, 2023
 lastupdated: "2021-03-28"
 
 keywords: IBM, Log Analysis, logging, audit, activity tracker, events, auditlogs, security
@@ -35,7 +35,7 @@ As a security officer, auditor, or manager, you can use the Activity Tracker ser
 | Action                                            | Description                |
 |---------------------------------------------------|----------------------------|
 | `logdna.account.update`       | This event is generated when an administrator turns on or off a feature for a logging instance. |
-{: caption="Table 1. Events for account settings actions" caption-side="top"} 
+{: caption="Table 1. Events for account settings actions" caption-side="top"}
 
 The following table lists custom fields that are included in these events:
 
@@ -44,8 +44,8 @@ The following table lists custom fields that are included in these events:
 | `requestData.owneremail`        | `xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx@logdna.ibm.com`  | Defines a logging account. |
 | `requestData.type`              | `meta.addrawline` | Defines a logging administrative feature. |
 | `requestData.value`            | `false`  \n `true`  | When is set to `true`, the feature specified in the field `requestData.type` is enabled.  |
-| `responseData.logdnaId`            | Sample `3a941d8ert`  | Defines the logging ID that is associated with the {{site.data.keyword.la_full_notm}} instance. | 
-{: caption="Table 2. Custom fields for account settings actions" caption-side="top"} 
+| `responseData.logdnaId`            | Sample `3a941d8ert`  | Defines the logging ID that is associated with the {{site.data.keyword.la_full_notm}} instance. |
+{: caption="Table 2. Custom fields for account settings actions" caption-side="top"}
 
 
 
@@ -56,7 +56,7 @@ The following table lists custom fields that are included in these events:
 | Action                                            | Description                |
 |---------------------------------------------------|----------------------------|
 | `logdna.account.update`       | This event is generated when an administrator turns on or off a feature for a logging instance. |
-{: caption="Table 3. Events for archiving actions" caption-side="top"} 
+{: caption="Table 3. Events for archiving actions" caption-side="top"}
 
 The following table lists custom fields that are included in these events:
 
@@ -65,8 +65,8 @@ The following table lists custom fields that are included in these events:
 | `requestData.feature`              | `archive`            | Defines a logging administrative feature. |
 | `requestData.isEnabled`            | `false`  \n `true`  | Defines if archiving of the logging instance to a COS bucket is configured.  \n When is set to `true`, archiving is enabled.  |
 | `requestData.provider`             | `ibm`                | Defines the Cloud provider where data is archived. |
-| `responseData.logdnaId`            | Sample `3a941d8ert`  | Defines the logging ID that is associated with the {{site.data.keyword.la_full_notm}} instance. | 
-{: caption="Table 4. Custom fields for archiving actions" caption-side="top"} 
+| `responseData.logdnaId`            | Sample `3a941d8ert`  | Defines the logging ID that is associated with the {{site.data.keyword.la_full_notm}} instance. |
+{: caption="Table 4. Custom fields for archiving actions" caption-side="top"}
 
 
 ### Exclusion rules
@@ -77,7 +77,7 @@ The following table lists custom fields that are included in these events:
 | `logdna.exclusion-rule.create`      | This event is generated when an administrator creates an exclusion rule through the logging web UI. |
 | `logdna.exclusion-rule.update`      | This event is generated when an administrator updates an exclusion rule through the logging web UI. |
 | `logdna.exclusion-rule.delete`      | This event is generated when an administrator deletes an exclusion rule through the logging web UI. |
-{: caption="Table 5. Events for exclusion rules actions" caption-side="top"} 
+{: caption="Table 5. Events for exclusion rules actions" caption-side="top"}
 
 The following table lists custom fields that are included in exclusion rule events:
 
@@ -91,8 +91,8 @@ The following table lists custom fields that are included in exclusion rule even
 | `requestData.query`          | Defines an advanced query to refine the data that is excluded from search. |
 | `requestData.description`    | Description of the exclusion rule. |
 | `requestData.indexonly`      | Defines whether the data is available to see through the UI.  \n Set to `true` when data is visible but not available for search. |
-| `responseData.logdnaId`      | Defines the logging ID that is associated with the {{site.data.keyword.la_full_notm}} instance. | 
-{: caption="Table 6. Custom fields for exclusion rules actions" caption-side="top"} 
+| `responseData.logdnaId`      | Defines the logging ID that is associated with the {{site.data.keyword.la_full_notm}} instance. |
+{: caption="Table 6. Custom fields for exclusion rules actions" caption-side="top"}
 
 
 ### Ingestion keys
@@ -102,7 +102,7 @@ The following table lists custom fields that are included in exclusion rule even
 |--------------------------------------|----------------------------|
 | `logdna.ingestion-key.create`        | This event is generated when an administrator creates an ingestion key through the logging web UI. |
 | `logdna.ingestion-key.delete`        | This event is generated when an administrator deletes an ingestion key through the logging web UI. |
-{: caption="Table 7. Events for ingestion keys actions" caption-side="top"} 
+{: caption="Table 7. Events for ingestion keys actions" caption-side="top"}
 
 The following table lists custom fields that are included in these events:
 
@@ -110,8 +110,8 @@ The following table lists custom fields that are included in these events:
 |------------------------------------|----------------------|----------------------------|
 | `requestData.key`                  | Masked field         | Use this field to identify the ingestion key that is created. |
 | `requestData.keyType`              | `ingestion`          | Defines the type of key that is configured. |
-| `responseData.logdnaId`            | Sample `3a941d8ert`  | Defines the logging ID that is associated with the {{site.data.keyword.la_full_notm}} instance. | 
-{: caption="Table 8. Custom fields for ingestion keys actions" caption-side="top"} 
+| `responseData.logdnaId`            | Sample `3a941d8ert`  | Defines the logging ID that is associated with the {{site.data.keyword.la_full_notm}} instance. |
+{: caption="Table 8. Custom fields for ingestion keys actions" caption-side="top"}
 
 
 
@@ -123,7 +123,7 @@ The following table lists custom fields that are included in these events:
 |--------------------------------------|----------------------------|
 | `logdna.service-key.create`          | This event is generated when an administrator creates a service key through the logging web UI. |
 | `logdna.service-key.delete`          | This event is generated when an administrator deletes a service key through the logging web UI. |
-{: caption="Table 9. Events for service keys actions" caption-side="top"} 
+{: caption="Table 9. Events for service keys actions" caption-side="top"}
 
 The following table lists custom fields that are included in these events:
 
@@ -131,8 +131,8 @@ The following table lists custom fields that are included in these events:
 |------------------------------------|----------------------|----------------------------|
 | `requestData.key`                  | Masked field         | Use this field to identify the service key that is created to export data by using the logging export API. |
 | `requestData.keyType`              | `service`            | Defines the type of key that is configured. |
-| `responseData.logdnaId`            | Sample `3a941d8ert`  | Defines the logging ID that is associated with the {{site.data.keyword.la_full_notm}} instance. | 
-{: caption="Table 10. Custom fields for service keys actions" caption-side="top"} 
+| `responseData.logdnaId`            | Sample `3a941d8ert`  | Defines the logging ID that is associated with the {{site.data.keyword.la_full_notm}} instance. |
+{: caption="Table 10. Custom fields for service keys actions" caption-side="top"}
 
 
 ### Streaming events
@@ -148,7 +148,7 @@ The following table lists custom fields that are included in these events:
 | `logdna.streaming-logs.send`              | This event is generated when there is a failure streaming data. |
 | `logdna.exclusion-rule.create`            | This event is generated when an streaming exclusion rule is configured. |
 | `logdna.exclusion-rule.delete`            | This event is generated when an streaming exclusion rule is deleted. |
-{: caption="Table 11. Events for streaming actions" caption-side="top"} 
+{: caption="Table 11. Events for streaming actions" caption-side="top"}
 
 
 
@@ -161,38 +161,38 @@ The following table lists custom fields that are included in these events:
 | `logdna.parsing-template.create`      | This event is generated when an administrator creates a parsing template through the logging web UI. |
 | `logdna.parsing-template.update`      | This event is generated when an administrator updates a parsing template through the logging web UI. |
 | `logdna.parsing-template.delete`      | This event is generated when an administrator deletes a parsing template through the logging web UI. |
-{: caption="Table 12. Events for parsing templates actions" caption-side="top"} 
+{: caption="Table 12. Events for parsing templates actions" caption-side="top"}
 
 The following table lists custom fields that are included in these events:
 
-| Custom fields                | Description          | 
+| Custom fields                | Description          |
 |------------------------------|----------------------|
 | `requestData.feature`        | Defines a logging administrative feature.  \n Valid value is `custom-parsing`. |
 | `requestData.isEnabled`      | Defines when the template is enabled.  \n Set to `true` when the template is enabled. |
 | `requestData.name`           | Defines the name of the template.  \n This field is available for create actions.|
 | `requestData.query`          | Defines the query that is configured to identify log lines where the custome parsing is applied. |
 | `requestData.templateId`     | Defines the ID of the template.  \n This field is available for update actions. |
-| `responseData.logdnaId`      | Defines the logging ID that is associated with the {{site.data.keyword.la_full_notm}} instance. | 
-{: caption="Table 13. Custom fields for parsing templates actions" caption-side="top"} 
+| `responseData.logdnaId`      | Defines the logging ID that is associated with the {{site.data.keyword.la_full_notm}} instance. |
+{: caption="Table 13. Custom fields for parsing templates actions" caption-side="top"}
 
 
-### Configuration 
+### Configuration
 {: #at_events_configuration}
 
 | Action                              | Description                |
 |-------------------------------------|----------------------------|
 | `logdna.configuration.import`      | This event is generated when an administrator imports user-metadata such as views, and alerts through the logging web UI. |
 | `logdna.configuration.export`      | This event is generated when an administrator exports user-metadata such as views, and alerts through the logging web UI. |
-{: caption="Table 14. Events for user-metadata related actions" caption-side="top"} 
+{: caption="Table 14. Events for user-metadata related actions" caption-side="top"}
 
 The following table lists custom fields that are included in these events:
 
-| Custom fields                | Description          | 
+| Custom fields                | Description          |
 |------------------------------|----------------------|
 | `feature`                    | Defines a logging administrative feature.  \n Valid value is `export-configuration`. |
 | `requestData.configResources` | Defines the list of resources that a user chooses to export or import. |
-| `responseData.logdnaId`      | Defines the logging ID that is associated with the {{site.data.keyword.la_full_notm}} instance. | 
-{: caption="Table 15. Custom fields for user-metadata related actions" caption-side="top"} 
+| `responseData.logdnaId`      | Defines the logging ID that is associated with the {{site.data.keyword.la_full_notm}} instance. |
+{: caption="Table 15. Custom fields for user-metadata related actions" caption-side="top"}
 
 
 
@@ -208,12 +208,12 @@ The following table lists custom fields that are included in these events:
 | `logdna.view.create`      | This event is generated when a view is created. |
 | `logdna.view.update`      | This event is generated when a view is updated. This event is also generated when an alert is attached or dettached from a view. |
 | `logdna.view.delete`      | This event is generated when a view is deleted. |
-{: caption="Table 16. Events for views" caption-side="top"} 
+{: caption="Table 16. Events for views" caption-side="top"}
 
 
 The following table lists custom fields that are included in these events:
 
-| Custom fields                | Description          | 
+| Custom fields                | Description          |
 |------------------------------|----------------------|
 | `requestData.name`    | Defines the name of the view. |
 | `requestData.query`   | Defines the search query that is applied to filter data in the view. |
@@ -222,10 +222,10 @@ The following table lists custom fields that are included in these events:
 | `requestData.levels`  | Defines the list of levels that are selected and whose data is included in the view. |
 | `requestData.category` | Defines the category where the view is included. |
 | `requestData.viewId`   | Defines the view ID. |
-| `requestData.description` | Describes the view. | 
+| `requestData.description` | Describes the view. |
 | `requestData.customLine` | Describes how the information is displayed in the view. |
-| `responseData.logdnaId`      | Defines the logging ID that is associated with the {{site.data.keyword.la_full_notm}} instance. | 
-{: caption="Table 17. Custom fields for view actions" caption-side="top"} 
+| `responseData.logdnaId`      | Defines the logging ID that is associated with the {{site.data.keyword.la_full_notm}} instance. |
+{: caption="Table 17. Custom fields for view actions" caption-side="top"}
 
 
 
@@ -237,18 +237,18 @@ The following table lists custom fields that are included in these events:
 | `logdna.alert.create`      | This event is generated when an alert is created as a preset. |
 | `logdna.alert.update`      | This event is generated when an alert is updated. |
 | `logdna.alert.delete`      | This event is generated when an alert is deleted. |
-{: caption="Table 18. Events for alerts" caption-side="top"} 
+{: caption="Table 18. Events for alerts" caption-side="top"}
 
 The following table lists custom fields that are included in these events:
 
-| Custom fields                | Description          | 
+| Custom fields                | Description          |
 |------------------------------|----------------------|
 | `requestData.alertId`   | Defines the preset ID. |
 | `requestData.name`    | Defines the name of the preset. |
 | `requestData.preset`  | Defines whether the alert is defined as a preset. |
 | `requestData.channels` | List of channels that are configured in a preset. Each channel includes information about the notification method and the trigger conditions per method. |
-| `responseData.logdnaId`      | Defines the logging ID that is associated with the {{site.data.keyword.la_full_notm}} instance. | 
-{: caption="Table 19. Custom fields for view actions" caption-side="top"} 
+| `responseData.logdnaId`      | Defines the logging ID that is associated with the {{site.data.keyword.la_full_notm}} instance. |
+{: caption="Table 19. Custom fields for view actions" caption-side="top"}
 
 
 ### Dashboards
@@ -259,19 +259,19 @@ The following table lists custom fields that are included in these events:
 | `logdna.board.create`         | This event is generated when a dashboard is created. |
 | `logdna.board.delete`         | This event is generated when a dashboard is deleted. |
 | `logdna.board-graph.update`   | This event is generated when a graph is added to a dashboard. |
-{: caption="Table 20. Events for dashboards" caption-side="top"} 
+{: caption="Table 20. Events for dashboards" caption-side="top"}
 
 
 The following table lists custom fields that are included in these events:
 
-| Custom fields                | Description          | 
+| Custom fields                | Description          |
 |------------------------------|----------------------|
 | `requestData.boardId`         | Defines the ID of the dashboard. |
 | `requestData.category`       | Defines the category where the board is included. |
 | `requestData.title`          | Defines the name of the dashboard. |
-| `requestData.graphId`        | Defines the ID of a graph that is added to a board. | 
-| `responseData.logdnaId`      | Defines the logging ID that is associated with the {{site.data.keyword.la_full_notm}} instance. | 
-{: caption="Table 21. Custom fields for boards" caption-side="top"} 
+| `requestData.graphId`        | Defines the ID of a graph that is added to a board. |
+| `responseData.logdnaId`      | Defines the logging ID that is associated with the {{site.data.keyword.la_full_notm}} instance. |
+{: caption="Table 21. Custom fields for boards" caption-side="top"}
 
 
 
@@ -291,4 +291,4 @@ Events that are generated by an instance of the {{site.data.keyword.la_full_notm
 
 Activity Tracker events only report success outcomes.
 
-Activity Tracker events that report update actions do not include information about the delta of the change. 
+Activity Tracker events that report update actions do not include information about the delta of the change.

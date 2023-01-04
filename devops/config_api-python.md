@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years:  2018, 2022
+  years:  2018, 2023
 lastupdated: "2021-03-28"
 
 keywords: IBM, Log Analysis, logging, api
@@ -12,7 +12,7 @@ subcollection: log-analysis
 
 {{site.data.keyword.attribute-definition-list}}
 
- 
+
 # Managing views and alerts by using Python
 {: #config-api-python-python}
 
@@ -34,7 +34,7 @@ Before you run any automated tasks, consider doing a back up of your account con
 {: #config-api-python-work-create-views}
 
 When you create a view, consider the following information:
-- You can create a view with no alerts. 
+- You can create a view with no alerts.
 - You can create a view with 1 or more notification channels. Valid alert notification channels that are supported by the *Configuration* API are: email, webhook, or PagerDuty.
 - The response to an API request to create a view includes the ID of the view.
 - The `name` body parameter, that defines the name of the view, is always required.
@@ -43,29 +43,29 @@ When you create a view, consider the following information:
 
 When you create a PagerDuty notification channel, consider the following information:
 - You must manually configure the integration of logging with PagerDuty. See [Integrating with PagerDuty](/docs/log-analysis?topic=log-analysis-pagerduty).
-- You must provide logging with the PagerDuty API key. 
+- You must provide logging with the PagerDuty API key.
 
-After you create a view, check the view in the logging web UI. 
-1. Refresh the browser to see the view listed in the *Views* section. 
+After you create a view, check the view in the logging web UI.
+1. Refresh the browser to see the view listed in the *Views* section.
 2. Select the view to display it.
 3. Check the data that is available through the view is the one that you expect.
 
-    - If you do not see any data, check that data is being generated for the logs that you are planning to monitor through this view. For example, you can check the **Everything** view and look for events. 
+    - If you do not see any data, check that data is being generated for the logs that you are planning to monitor through this view. For example, you can check the **Everything** view and look for events.
 
-    - If data is being generated, and you still cannot see any data, check the body parameter values that you have defined for the view. One of them might be set to the wrong value and the search criteria does not find any matching events. 
+    - If data is being generated, and you still cannot see any data, check the body parameter values that you have defined for the view. One of them might be set to the wrong value and the search criteria does not find any matching events.
 
 
 ### Modifying views
 {: #config-api-python-work-modify-views}
 
 When you modify a view, consider the following information:
-- You must specify the name and the view ID of the view. 
+- You must specify the name and the view ID of the view.
 - If you are viewing a view in the logging web UI, the view is not refreshed automatically after you run an API request to modify the view. To refresh the view in the UI, you must navigate to the `Everything` view and back to the view.
 
 An API request to modify a view replaces the existing view definition and associated alerts with your request body data. Any properties that are not specified in your PUT request will be removed.
 {: important}
 
-If the `viewid` that you are trying to modify does not exist, a response similar to the following will be returned: 
+If the `viewid` that you are trying to modify does not exist, a response similar to the following will be returned:
 
 ```json
 {"error":"Nothing to configure","code":"BadRequest","status":"error"}
@@ -104,7 +104,7 @@ Depending on [your account settings](/docs/account?topic=account-service-endpoin
 {: #config-api-python-authentication}
 
 When you manage views and alerts programmatically, you must use a service key. Authorization to the logging Configuration API is enforced by using a service key.
-{: note} 
+{: note}
 
 A service key is a unique code that is passed in an API request to identify the calling application or user. The service key is specific to a logging instance. For more information on how to generate a service key, see [Managing service keys](/docs/log-analysis?topic=log-analysis-service_keys).
 
@@ -118,7 +118,7 @@ For example, in a cURL request, you must set the `content-type` header as follow
 {: codeblock}
 
 
-## Additional headers 
+## Additional headers
 {: #config-api-python-headers}
 
 Some additional headers might be required to make successful requests to the API. Those additional headers are:
@@ -249,7 +249,7 @@ Specifies the notification channels and trigger conditions that are associated w
 ### category (array of strings)
 {: #config-api-python-parm-category}
 
-Specifies the classification of views. 
+Specifies the classification of views.
 - You can include a view in 1 or more categories.
 
 For example, to associate a view to a category named `My category`, you can set it as follows:
@@ -266,10 +266,10 @@ For example, to associate a view to a category named `My category`, you can set 
 
 The following are examples of how to use the logging Configuration API.
 
-A category must exist before you create a view. In these examples, replace `<MY_CATEGORY>` with your category. 
+A category must exist before you create a view. In these examples, replace `<MY_CATEGORY>` with your category.
 {: note}
 
-In these examples, `<SERVICE_KEY>` is the [service key](/docs/log-analysis?topic=log-analysis-service_keys) for your {{site.data.keyword.la_full_notm}} instance. 
+In these examples, `<SERVICE_KEY>` is the [service key](/docs/log-analysis?topic=log-analysis-service_keys) for your {{site.data.keyword.la_full_notm}} instance.
 
 ### Creating a view
 {: #config-api-python-create-view}
@@ -310,7 +310,7 @@ curl https://api.eu-de.logging.cloud.ibm.com/v1/config/view \
       "channels": [
         {
           "integration": "email",
-          "emails": ["myemail@ibm.com"],   
+          "emails": ["myemail@ibm.com"],
           "triggerlimit": 15,
           "triggerinterval": "5m",
           "immediate": true,
@@ -369,7 +369,5 @@ curl --request DELETE \
   --url https://api.us-south.logging.cloud.ibm.com/v1/config/view/<VIEWID> \
   -H 'content-type: application/json' \
   -H 'servicekey: <SERVICE_KEY>'  \
-```  
+```
 {: pre}
-
-

@@ -1,10 +1,10 @@
 ---
 
 copyright:
-  years:  2018, 2022
+  years:  2018, 2023
 lastupdated: "2021-10-10"
 
-keywords: 
+keywords:
 
 subcollection: log-analysis
 
@@ -31,8 +31,8 @@ These instructions are for Red Hat Linux systems but can be used for other Linux
 
 If you are upgrading from an earlier Linux agent, you might have an existing `/etc/logdna.conf` file that might need updates.
 
-- If you have a custom `logdir` value with files or globs in an `/etc/logdna.conf` file, you will need to change those in the `/etc/logdna.conf` file. Only directories can be specifed in `logdir`. 
-- File patterns need to be specified as an inclusion rule.  
+- If you have a custom `logdir` value with files or globs in an `/etc/logdna.conf` file, you will need to change those in the `/etc/logdna.conf` file. Only directories can be specifed in `logdir`.
+- File patterns need to be specified as an inclusion rule.
 
 If you are using older Linux distributions (Centos 7, Amazon Linux 2, RHEL 7), you need to make sure that the `/var/lib/logdna` directory exists since older versions of `systemd` packaged with these distributions will not automatically create the directory.
 
@@ -74,7 +74,7 @@ To configure the agent, do the following:
    ```
    {: pre}
 
-   If the file does not exist, the `logdna.conf` file is created as an empty file.  
+   If the file does not exist, the `logdna.conf` file is created as an empty file.
 
 2. Customize the agent.
 
@@ -94,7 +94,7 @@ log:
   dirs:
     - "/var/log/"
   include:
-    glob: 
+    glob:
       - "*.log"
     regex: []
   exclude:
@@ -118,10 +118,10 @@ Configure the following information:
 Additionally, you can configure the following information:
 
 `params.tags`
-:   You can define a comma separated list of metadata that the agent includes with each log line. 
+:   You can define a comma separated list of metadata that the agent includes with each log line.
 
 `params.hostname`
-:   You can include the name of the host. This information is included with each log line. 
+:   You can include the name of the host. This information is included with each log line.
 
 `log.dirs`
 :   You can configure other directories that you want the agent to monitor for logs.
@@ -129,11 +129,11 @@ Additionally, you can configure the following information:
 `log.include.glob`
 :   You can configure glob patterns to define the types of log files that the agent processes.
 
-    For example: 
-    
-    Specify `*.log` to process any log with extension `.log`. 
+    For example:
 
-    Specify `*.txt` to process any log with extension `.txt`. 
+    Specify `*.log` to process any log with extension `.log`.
+
+    Specify `*.txt` to process any log with extension `.txt`.
 
 `log.include.regex`
 :   You can configure regex patterns to define the types of log files that the agent processes.
@@ -158,7 +158,7 @@ Additionally, you can configure the following information:
     Set to `smallfiles` so that the agent checks the agent state file and uses the last recorded state to continue processing. If the file is not present, the agent processes data in the file from the beginning when the file is less than 8 KB, and processes data from the end when the file is larger than 8 KB.
 
 You can use `hostname` and `tags` values to search logs.
-{: tip} 
+{: tip}
 
 The following is an example `logdna.conf` file:
 
@@ -179,7 +179,7 @@ log:
   dirs:
     - "/var/log/"
   include:
-    glob: 
+    glob:
       - "*.log"
     regex:
       - "^[^.]*$"
@@ -229,4 +229,3 @@ To enable the agent on boot run the following command:
 sudo systemctl enable logdna-agent
 ```
 {: pre}
-

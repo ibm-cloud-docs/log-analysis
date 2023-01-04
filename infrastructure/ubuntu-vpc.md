@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years:  2018, 2022
+  years:  2018, 2023
 lastupdated: "2022-02-02"
 
 keywords: IBM, Log Analysis, logging, ubuntu, tutorial
@@ -19,23 +19,23 @@ completion-time: 1h
 
 # Logging with Linux VPC server instances
 {: #ubuntu}
-{: toc-content-type="tutorial"} 
+{: toc-content-type="tutorial"}
 {: toc-completion-time="1h"}
 
-Use the {{site.data.keyword.la_full}} service to monitor and manage logs from a Linux VPC server instance in a centralized logging system on the {{site.data.keyword.cloud_notm}}. 
+Use the {{site.data.keyword.la_full}} service to monitor and manage logs from a Linux VPC server instance in a centralized logging system on the {{site.data.keyword.cloud_notm}}.
 {: shortdesc}
 
 These instructions are for Ubuntu Linux systems but can be used for other Linux systems.
 {: note}
 
-You can collect and monitor system and application logs. 
+You can collect and monitor system and application logs.
 
 By default, the logging agent for Ubuntu monitors log files in the `/var/log` directory. For example, the Ubuntu system log (`/var/log/syslog`) is monitored by default.
 
 On the {{site.data.keyword.cloud_notm}}, configure an Ubuntu server to forward logs to an {{site.data.keyword.la_full_notm}} instance by completing the following steps:
 
 1. Provision a VPC running Ubuntu Linux.
-2. Provision an instance of the {{site.data.keyword.la_full_notm}} service. 
+2. Provision an instance of the {{site.data.keyword.la_full_notm}} service.
 3. Configure the logging agent in the Ubuntu server.
 4. Optionally, add additional directories to be monitored by the agent.
 
@@ -48,22 +48,22 @@ In this tutorial, you will learn how to configure an Ubuntu server to forward lo
 
 Read about {{site.data.keyword.la_full_notm}}. For more information, see [About](/docs/log-analysis?topic=log-analysis-getting-started#getting-started-ov).
 
-Work in a [supported region](/docs/log-analysis?topic=log-analysis-regions). 
+Work in a [supported region](/docs/log-analysis?topic=log-analysis-regions).
 
 You can send data from an Ubuntu instance that is located in the same region as your logging instance, in a different region, or not in the {{site.data.keyword.cloud_notm}}.
 {: note}
 
 Use a user ID that is a member, or an owner of, an {{site.data.keyword.cloud_notm}} account. To get an {{site.data.keyword.cloud_notm}} {{site.data.keyword.IBM_notm}}ID, go to: [Create an account](https://cloud.ibm.com/login){: external}.
 
-Your {{site.data.keyword.IBM_notm}}ID must have assigned IAM policies for each of the following resources in the region that your {{site.data.keyword.la_full_notm}} instance is in:  
+Your {{site.data.keyword.IBM_notm}}ID must have assigned IAM policies for each of the following resources in the region that your {{site.data.keyword.la_full_notm}} instance is in:
 
-Your {{site.data.keyword.IBM_notm}}ID must have assigned IAM policies for each of the following resources: 
+Your {{site.data.keyword.IBM_notm}}ID must have assigned IAM policies for each of the following resources:
 
 | Resource                             | Scope of the access policy | Role    | Region    | Information                  |
 |--------------------------------------|----------------------------|---------|-----------|------------------------------|
 | Resource group **default**           |  Resource group            | Viewer  | us-south  | This policy is required to allow the user to see service instances in the Default resource group.    |
 | {{site.data.keyword.la_full_notm}} service |  Resource group            | Editor  | us-south  | This policy is required to allow the user to provision and administer the {{site.data.keyword.la_full_notm}} service in the default resource group.   |
-{: caption="Table 1. List of IAM policies required to complete the tutorial" caption-side="top"} 
+{: caption="Table 1. List of IAM policies required to complete the tutorial" caption-side="top"}
 
 The {{site.data.keyword.cloud_notm}} CLI must be installed. For more information, see [Installing the {{site.data.keyword.cloud_notm}} CLI](/docs/cli?topic=cli-install-ibmcloud-cli).
 
@@ -97,7 +97,7 @@ To provision an instance of {{site.data.keyword.la_full_notm}} through the {{sit
 
 5. Select a region for the service instance.
 
-6. Select the **Lite** service plan. 
+6. Select the **Lite** service plan.
 
    By default, the **Lite** plan is set.
 
@@ -105,13 +105,13 @@ To provision an instance of {{site.data.keyword.la_full_notm}} through the {{sit
 
 7. Specify a **Service name** for your {{site.data.keyword.la_full_notm}} service instance.
 
-8. Select the **Default** resource group. 
+8. Select the **Default** resource group.
 
    By default, the **Default** resource group is set.
 
 9. To provision the {{site.data.keyword.la_full_notm}} service in the {{site.data.keyword.cloud_notm}} selected resource group, click **Create**.
 
-After you provision an instance, the {{site.data.keyword.la_full_notm}} dashboard opens. 
+After you provision an instance, the {{site.data.keyword.la_full_notm}} dashboard opens.
 
 To provision an instance of logging through the CLI, see [Provisioning logging through the {{site.data.keyword.cloud_notm}} CLI](/docs/log-analysis?topic=log-analysis-provision#provision_cli).
 {: note}
@@ -128,12 +128,12 @@ To configure your Ubuntu server to forward logs to your logging instance, comple
 1. Install the logging agent. Run the following commands:
 
    ```text
-   echo "deb https://repo.logdna.com stable main" | sudo tee /etc/apt/sources.list.d/logdna.list 
+   echo "deb https://repo.logdna.com stable main" | sudo tee /etc/apt/sources.list.d/logdna.list
    ```
    {: pre}
 
    ```text
-   wget -O- https://repo.logdna.com/logdna.gpg | sudo apt-key add - 
+   wget -O- https://repo.logdna.com/logdna.gpg | sudo apt-key add -
    ```
    {: pre}
 
@@ -147,7 +147,7 @@ To configure your Ubuntu server to forward logs to your logging instance, comple
    ```
    {: pre}
 
-2. Set the ingestion key that the logging agent will use to forward logs to the {{site.data.keyword.la_full_notm}} instance.  
+2. Set the ingestion key that the logging agent will use to forward logs to the {{site.data.keyword.la_full_notm}} instance.
 
    ```text
    sudo logging-agent -k <INGESTION_KEY>
@@ -172,7 +172,7 @@ To configure your Ubuntu server to forward logs to your logging instance, comple
    ```
    {: pre}
 
-5. (Optional) Define any additional log paths to be monitored. Run the following command: 
+5. (Optional) Define any additional log paths to be monitored. Run the following command:
 
    ```text
    sudo logging-agent -d <PATH_TO_LOG_FOLDERS>
@@ -184,7 +184,7 @@ To configure your Ubuntu server to forward logs to your logging instance, comple
 6. (Optional) Configure the logging agent to tag your hosts. Run the following command:
 
    ```text
-   sudo logging-agent -t TAG1,TAG2 
+   sudo logging-agent -t TAG1,TAG2
    ```
    {: pre}
 
@@ -223,9 +223,9 @@ To launch the {{site.data.keyword.la_full_notm}} dashboard from the {{site.data.
 
    After you log in with your user ID and password, the {{site.data.keyword.cloud_notm}} Dashboard opens.
 
-2. In the navigation menu, select **Observability**. 
+2. In the navigation menu, select **Observability**.
 
-3. Click **Logging**. 
+3. Click **Logging**.
 
    The list of {{site.data.keyword.la_full_notm}} instances that are available on {{site.data.keyword.cloud_notm}} is displayed.
 
@@ -238,7 +238,7 @@ To launch the {{site.data.keyword.la_full_notm}} dashboard from the {{site.data.
 {: #ubuntu_step5}
 {: step}
 
-From the logging Web UI, you can view your logs as they pass through the system. You view logs by using log tailing. 
+From the logging Web UI, you can view your logs as they pass through the system. You view logs by using log tailing.
 
 With the **Free** service plan, you can only tail your latest logs.
 {: note}
@@ -254,8 +254,7 @@ The following additional features are available:
 * [Filtering logs](/docs/log-analysis?topic=log-analysis-view_logs#view_logs_step5)
 * [Searching logs](/docs/log-analysis?topic=log-analysis-view_logs#view_logs_step6)
 * [Defining views](/docs/log-analysis?topic=log-analysis-view_logs#view_logs_step7)
-* [Configuring alerts](/docs/log-analysis?topic=log-analysis-alerts). 
+* [Configuring alerts](/docs/log-analysis?topic=log-analysis-alerts).
 
 To use any of these features, you must upgrade the {{site.data.keyword.la_full_notm}} plan to a paid plan.
 {: note}
-

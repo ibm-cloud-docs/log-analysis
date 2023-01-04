@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years:  2018, 2022
+  years:  2018, 2023
 lastupdated: "2021-11-30"
 
 keywords: IBM, Log Analysis, logging, export logs, api, v1
@@ -12,20 +12,20 @@ subcollection: log-analysis
 
 {{site.data.keyword.attribute-definition-list}}
 
- 
+
 # Exporting logs programmatically using the V1 API
 {: #export_api}
 
-From an {{site.data.keyword.la_full_notm}} instance, you can export logs programmatically by using the V1 logging REST API. 
+From an {{site.data.keyword.la_full_notm}} instance, you can export logs programmatically by using the V1 logging REST API.
 {: shortdesc}
 
 The V1 logging REST API does not support pagination.  If you need pagination support, you will need to use the [V2 logging REST API](/docs/log-analysis?topic=log-analysis-export_api_v2).
 {: note}
 
 Consider the following information when you export log data:
-* You export a set of log entries. To define the set of data that you want to export, you can apply filter and searches. You can also specify the time range. 
+* You export a set of log entries. To define the set of data that you want to export, you can apply filter and searches. You can also specify the time range.
 * When you export logs programmatically, you can choose to send an email or to write logs into your terminal.
-* The compressed log file that contains the data that you want to export is available for a maximum of 12 hours. 
+* The compressed log file that contains the data that you want to export is available for a maximum of 12 hours.
 * When you export logs, you have a limit of lines that you can export in a request. You can specify to export older lines or newer lines in case you reach the limit in the time range that you specify for the export. The maximum number of lines that you can export per API request limited by the plan type.  The maximum number of lines you can export for a 7-day plan is `10,000` lines.  The maximum number of lines you can export for all other plans is `20,000` lines.
 
 ## Prerequisites
@@ -33,7 +33,7 @@ Consider the following information when you export log data:
 
 To export logs, consider the following information:
 
-* **You must have a paid service plan** for the {{site.data.keyword.la_full_notm}} service. [Learn more](/docs/log-analysis?topic=log-analysis-service_plans). 
+* **You must have a paid service plan** for the {{site.data.keyword.la_full_notm}} service. [Learn more](/docs/log-analysis?topic=log-analysis-service_plans).
 
 * Check that your user ID has permissions to launch the web UI, view or manage service keys, and view logs. [Learn more](/docs/log-analysis?topic=log-analysis-view_logs).
 
@@ -67,7 +67,7 @@ The following table lists the query parameters that you can set:
 |-----------|------------|------------|-------------|
 | `from`      | `int32`      | Required   | Start time. Set as UNIX timestamp in seconds or milliseconds. |
 | `to`        | `int32`      | Required   | End time. Set as UNIX timestamp in seconds or milliseconds.    |
-| `size`      | `int32`     | Optional   | Number of log lines to include in the export.  | 
+| `size`      | `int32`     | Optional   | Number of log lines to include in the export.  |
 | `hosts`     | `string`     | Optional   | Comma-separated list of hosts. |
 | `apps`      | `string`     | Optional   | Comma-separated list of applications. |
 | `levels`    | `string`     | Optional   | Comma-separated list of log levels. |
@@ -76,7 +76,7 @@ The following table lists the query parameters that you can set:
 | `prefer`    | `string`     | Optional   | Defines the log lines that you want to export. Valid values are `head`, first log lines, and `tail`, last log lines. If not specified, defaults to tail.  |
 | `email`     | `string`     | Optional   | Specifies the email with the downloadable link of your export. By default, the log lines are streamed.|
 | `emailSubject` | `string`     | Optional   | Use to set the subject of the email.  \n Use `%20` to represent a space. For example, a sample value is `Export%20logs`. |
-{: caption="Query parameters" caption-side="top"} 
+{: caption="Query parameters" caption-side="top"}
 
 
 When you include a query or a subject to an email, use `%20` to represent a space.
@@ -99,7 +99,7 @@ Complete the following steps to export logs programmatically:
 ### Step 1. Get a service key
 {: #export_api_step_1}
 
-[Get a service key](/docs/log-analysis?topic=log-analysis-service_keys). 
+[Get a service key](/docs/log-analysis?topic=log-analysis-service_keys).
 
 
 ### Step 2. Identify the data to pass through the export parameters
@@ -123,7 +123,7 @@ curl "ENDPOINT/v1/export?QUERY_PARAMETERS" -u SERVICE_KEY:
 ```
 {: pre}
 
-Where 
+Where
 
 * ENDPOINT represents the entry point to the service. Each region has a different URL. [Learn more](/docs/log-analysis?topic=log-analysis-endpoints).
 * QUERY_PARAMETERS are parameters that define the filtering criteria that is applied to the export request.
@@ -161,4 +161,3 @@ To use the query parameter to find all log lines with a level of `info`, you can
 curl -s "https://api.us-south.logging.cloud.ibm.com/v1/export?query=test_query&levels=info" -u :
 ```
 {: pre}
-

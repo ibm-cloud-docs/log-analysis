@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years:  2018, 2022
+  years:  2018, 2023
 lastupdated: "2021-03-28"
 
 keywords: IBM, Log Analysis, logging, control usage
@@ -38,11 +38,10 @@ Complete the following steps to configure an alert that informs you when you rea
 
     In the **Dashboard** section, you can see your data usage.
 
-3. Define a **Usage Alert** to set the **Usage Limit** threshold for data usage in the instance. When the usage reaches the percentage of the threshold you selected, the email recipient will be notified. 
+3. Define a **Usage Alert** to set the **Usage Limit** threshold for data usage in the instance. When the usage reaches the percentage of the threshold you selected, the email recipient will be notified.
 
-    ![Panel to define usage alert](images/control-usage-instance-1.png "Panel to define usage alert") 
+    ![Panel to define usage alert](images/control-usage-instance-1.png "Panel to define usage alert")
 
 4. In the **Add recipient** section, enter one or more emails where the notification will be sent.
 
-    ![Panel to define usage alert recipients](images/control-usage-instance-2.png "Panel to define usage alert recipients") 
-
+    ![Panel to define usage alert recipients](images/control-usage-instance-2.png "Panel to define usage alert recipients")

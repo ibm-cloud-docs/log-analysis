@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years:  2018, 2022
+  years:  2018, 2023
 lastupdated: "2021-03-28"
 
 keywords: IBM, Log Analysis, logging, detach config agent
@@ -21,7 +21,7 @@ Detach a logging agent from a logging instance to stop collecting logs.
 ## Detaching a logging agent  from a standard Kubernetes cluster
 {: #detach_agent_kube}
 
-To stop your Kubernetes cluster from sending logs to your {{site.data.keyword.la_full_notm}} instance, you must remove the logging agent from your cluster. 
+To stop your Kubernetes cluster from sending logs to your {{site.data.keyword.la_full_notm}} instance, you must remove the logging agent from your cluster.
 
 
 ### Detaching a logging agent by using the agent yaml file
@@ -59,7 +59,7 @@ To stop your Kubernetes cluster from forwarding logs to your logging instance, c
     Where
 
     - `<REGION>` indicates the region where the logging instance is available. For more information about regions, see [Locations](/docs/log-analysis?topic=log-analysis-regions).
-    - `<VERSION>` indicates the version of the agent that you have deployed. You must use a version that has a tag with the following format: `X.Y.Z` or use your custom yaml file. 
+    - `<VERSION>` indicates the version of the agent that you have deployed. You must use a version that has a tag with the following format: `X.Y.Z` or use your custom yaml file.
 
 5. To verify that the logging agent is deleted successfully, run the following command:
 
@@ -162,10 +162,10 @@ Complete the following steps:
     ```
     {: pre}
 
-    Where 
-    
+    Where
+
     `RESOURCE_GROUP` is the name of the resource group where the cluster is available, for example, `default`.
-    
+
     `REGION` is the region where the cluster is available, for example, `us-south`.
 
     Set the cluster where you want to configure logging as the context for this session.
@@ -198,7 +198,7 @@ Complete the following steps:
 ## Detaching a logging agent from an Openshift Kubernetes cluster
 {: #detach_agent_os}
 
-To stop your OpenShift cluster from sending logs to your {{site.data.keyword.la_full_notm}} instance, you must remove the logging agent from your cluster. 
+To stop your OpenShift cluster from sending logs to your {{site.data.keyword.la_full_notm}} instance, you must remove the logging agent from your cluster.
 
 ### Detaching a logging agent by using kubectl commands
 {: #detach_agent_os_kube_kubectl}
@@ -239,8 +239,8 @@ Complete the following steps from the command line:
     ```
     {: pre}
 
-    Then, run the following command for each secret: 
-    
+    Then, run the following command for each secret:
+
     ```text
     oc delete secret logdna-agent-key -n ibm-observe
     ```
@@ -316,10 +316,10 @@ Complete the following steps:
     ```
     {: pre}
 
-    Where 
-    
+    Where
+
     `RESOURCE_GROUP` is the name of the resource group where the cluster is available, for example, `default`.
-    
+
     `REGION` is the region where the cluster is available, for example, `us-south`.
 
     Set the cluster where you want to configure logging as the context for this session.
@@ -343,8 +343,3 @@ Complete the following steps:
     * `<LogDNA_instance_name_or_ID>` is the name or the ID of the logging instance where you want to forward the cluster logs for analysis.
 
     * `[--force]`  is used to force the command to run with no user prompts.
-
-
-
-
-

@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years:  2018, 2022
+  years:  2018, 2023
 lastupdated: "2022-02-02"
 
 keywords: IBM, Log Analysis, logging, powerVS, tutorial, ppc64le
@@ -19,14 +19,14 @@ completion-time: 1h
 
 # Logging with PowerVS
 {: #powervs-rhel}
-{: toc-content-type="tutorial"} 
+{: toc-content-type="tutorial"}
 {: toc-completion-time="1h"}
 
-Use the {{site.data.keyword.la_full}} service to monitor and manage logs from a PowerVS instance running RHEL in a centralized logging system on the {{site.data.keyword.cloud_notm}}. 
+Use the {{site.data.keyword.la_full}} service to monitor and manage logs from a PowerVS instance running RHEL in a centralized logging system on the {{site.data.keyword.cloud_notm}}.
 {: shortdesc}
 
 
-You can send logs to an {{site.data.keyword.la_full_notm}} instance via Rsyslog. 
+You can send logs to an {{site.data.keyword.la_full_notm}} instance via Rsyslog.
 
 To configure syslog, you may need to enable a port to send logs via syslog to your logging instance. If you are using (a) the classic syslog protocol, (b) a custom port in `syslog-ng`, or (c) a custom port in `rsyslog`, there is no authentication available and anyone with knowledge of the endpoint can submit logs to your instance. As a result, depending on your environment, your use of the classic syslog protocol or custom port configurations with `syslog-ng` or `rsyslog` may present a significant security risk.  Use these configurations at your organization's own risk.  Validate with your compliance and security teams whether this security risk is acceptable to your organization.
 {: important}
@@ -43,13 +43,13 @@ On the {{site.data.keyword.cloud_notm}}, configure a PowerVS instance to forward
 ### {{site.data.keyword.la_short}}
 {: #powervs-rhel-prereqs-la}
 
-- [Your {{site.data.keyword.IBM_notm}}ID must have assigned IAM policies for each of the following resources](/docs/log-analysis?topic=log-analysis-work_iam). For example, to work in the US-south region and in the default resource group, you need the following permissions: 
+- [Your {{site.data.keyword.IBM_notm}}ID must have assigned IAM policies for each of the following resources](/docs/log-analysis?topic=log-analysis-work_iam). For example, to work in the US-south region and in the default resource group, you need the following permissions:
 
 | Resource                             | Scope of the access policy | Role    | Region    | Information                  |
 |--------------------------------------|----------------------------|---------|-----------|------------------------------|
 | Resource group **Default**           |  Resource group            | Viewer  | us-south  | This policy is required to allow the user to see service instances in the Default resource group.    |
 | {{site.data.keyword.la_full_notm}} service |  Resource group      | Editor  | us-south  | This policy is required to allow the user to provision and administer the {{site.data.keyword.la_full_notm}} service in the Default resource group.   |
-{: caption="Table 1. List of IAM policies" caption-side="top"} 
+{: caption="Table 1. List of IAM policies" caption-side="top"}
 
 Provision a service instance of {{site.data.keyword.la_short}} through the {{site.data.keyword.cloud_notm}} console. For more information, see [Provisioning an instance](/docs/log-analysis?topic=log-analysis-provision).
 
@@ -58,7 +58,7 @@ Provision a service instance of {{site.data.keyword.la_short}} through the {{sit
 {: #powervs-rhel-prereqs-power}
 
 
-- Learn more about [Using RHEL within the Power Systems Virtual Server service](/docs/power-iaas?topic=power-iaas-linux-with-powervs). 
+- Learn more about [Using RHEL within the Power Systems Virtual Server service](/docs/power-iaas?topic=power-iaas-linux-with-powervs).
 
 - Provision a PowerVS instance that is connected to the public network and is registered with subscription manager. [Learn more](/docs/power-iaas?topic=power-iaas-getting-started).
 
@@ -80,7 +80,7 @@ To configure rsyslog, you need the following data:
 
 - The **ingestion key** of the {{site.data.keyword.la_short}} instance. See [Working with ingestion keys](/docs/log-analysis?topic=log-analysis-ingestion_key).
 
-- The region where the {{site.data.keyword.la_short}} instance is provisioned. 
+- The region where the {{site.data.keyword.la_short}} instance is provisioned.
 
 
 
@@ -137,7 +137,7 @@ Complete the following steps to configure rsyslog on Red Hat Enterprise Linux:
     ```
     {: codeblock}
 
-5. Verify which ports rsyslog is listening to: 
+5. Verify which ports rsyslog is listening to:
 
     ```
     netstat -tnlp | grep rsyslog
@@ -186,7 +186,7 @@ Complete the following steps to configure Rsyslog to send logs to {{site.data.ke
 ## Next steps
 {: #powervs-rhel-next}
 
-From the logging Web UI, you can view your logs as they pass through the system. You view logs by using log tailing.For more information, see [Viewing logs](/docs/log-analysis?topic=log-analysis-view_logs#view_logs). 
+From the logging Web UI, you can view your logs as they pass through the system. You view logs by using log tailing.For more information, see [Viewing logs](/docs/log-analysis?topic=log-analysis-view_logs#view_logs).
 
 With the **Free** service plan, you can only tail your latest logs.
 {: note}
@@ -196,10 +196,7 @@ Try out the following additional features:
 * [Filtering logs](/docs/log-analysis?topic=log-analysis-view_logs#view_logs_step5)
 * [Searching logs](/docs/log-analysis?topic=log-analysis-view_logs#view_logs_step6)
 * [Defining views](/docs/log-analysis?topic=log-analysis-view_logs#view_logs_step7)
-* [Configuring alerts](/docs/log-analysis?topic=log-analysis-alerts). 
+* [Configuring alerts](/docs/log-analysis?topic=log-analysis-alerts).
 
 To use any of these features, you must upgrade the {{site.data.keyword.la_full_notm}} plan to a paid plan.
 {: note}
-
-
-

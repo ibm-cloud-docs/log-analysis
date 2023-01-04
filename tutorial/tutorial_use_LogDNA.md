@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years:  2018, 2022
+  years:  2018, 2023
 lastupdated: "2021-03-28"
 
 keywords: IBM Cloud, Log Analysis, Kubernetes logs
@@ -10,8 +10,8 @@ subcollection: log-analysis
 
 content-type: tutorial
 services: log-analysis
-account-plan: lite 
-completion-time: 1h 
+account-plan: lite
+completion-time: 1h
 
 
 
@@ -23,11 +23,11 @@ completion-time: 1h
 # Use the {{site.data.keyword.la_short}} web UI
 {: #tutorial-use-logdna}
 {: toc-content-type="tutorial"}
-{: toc-services-"log-analysis"} 
-{: toc-completion-time="1h"} 
+{: toc-services-"log-analysis"}
+{: toc-completion-time="1h"}
 
 
-In this tutorial, you learn how to use the {{site.data.keyword.la_full}} web UI to create parsing rules that you can use to enhance your searches, views for monitoring Kubernetes log data, alerts to be notified of anomalous situations, and dashboards and screens to monitor your data. 
+In this tutorial, you learn how to use the {{site.data.keyword.la_full}} web UI to create parsing rules that you can use to enhance your searches, views for monitoring Kubernetes log data, alerts to be notified of anomalous situations, and dashboards and screens to monitor your data.
 {: shortdesc}
 
 You can use {{site.data.keyword.la_full_notm}} to add log management capabilities to your {{site.data.keyword.cloud_notm}} architecture. {{site.data.keyword.la_full_notm}} offers administrators, DevOps teams, and developers advanced features to filter, search, and tail log data, define alerts, and design custom views to monitor
@@ -37,7 +37,7 @@ application and system logs.
 ## Before you begin
 {: #LA-use-logdna-prereqs}
 
-- Make sure you have a logging instance that is collecting logs. 
+- Make sure you have a logging instance that is collecting logs.
 
     - You can have a logging agent configured to collect logs from a VPC instance. See [Logging in Linux VPC server instances](/docs/log-analysis?topic=log-analysis-ubuntu).
 
@@ -58,7 +58,7 @@ application and system logs.
 
 2. Select your account.
 
-3. Click the **Menu** icon ![Menu icon](../../icons/icon_hamburger.svg) &gt; **Observability**. 
+3. Click the **Menu** icon ![Menu icon](../../icons/icon_hamburger.svg) &gt; **Observability**.
 
 4. Click **Logging**.
 
@@ -110,7 +110,7 @@ These configuration changes will affect all defined views.
 
 4. Click **Log Format**.
 
-5. Modify the log format as desired.  
+5. Modify the log format as desired.
 
    Change the log viewer text size by using the slider.
 
@@ -131,15 +131,15 @@ You can customize the fields that are displayed in a custom view.
 
 3. Select the view to change in the navigation.  Your view will be listed under the category where it was created, or under **UNCATEGORIZED** if you didn't specify a category when the view was created. For example, the following shows a view named "My View" that was created without an assigned category.
 
-   ![Navigation example](../images/uncategorized_myview.png "An uncategorized view named My View in the navigation") 
+   ![Navigation example](../images/uncategorized_myview.png "An uncategorized view named My View in the navigation")
 
 4. Click the selected view name.  The following example shows the view named "My View".
 
-   ![My View view](../images/myview.png "Heading showing the My View view") 
+   ![My View view](../images/myview.png "Heading showing the My View view")
 
 5. Click the view name.  The menu is displayed.  Click **Edit view properties**.
 
-   ![Edit view properties](../images/editviewproperties.png "Edit view properties") 
+   ![Edit view properties](../images/editviewproperties.png "Edit view properties")
 
 6. In the **Custom Template** you can change how you want the log line formatted for the view by including static text and fields from the log.
 
@@ -173,7 +173,7 @@ You can customize the fields that are displayed in a custom view.
       And you want them formatted like this:
 
       ```text
-      SOURCE: Nov 16 13:59:02 containers-kubernetes crn:v1:bluemix:public:containers-kubernetes:us-south:a/xxxxx:yyyyy:: 
+      SOURCE: Nov 16 13:59:02 containers-kubernetes crn:v1:bluemix:public:containers-kubernetes:us-south:a/xxxxx:yyyyy::
       MESSAGE: Cluster yyyyy health status set to All Workers Normal
       ```
       {: codeblock}
@@ -188,7 +188,7 @@ You can customize the fields that are displayed in a custom view.
       Then your **Custom Template** would be:
 
       ```text
-      SOURCE: {{logSourceCRN}} 
+      SOURCE: {{logSourceCRN}}
       MESSAGE: {{message}}
       ```
       {: codeblock}
@@ -265,8 +265,8 @@ You might want to view a log line in context.
 
 5. Open the log entry by clicking the down arrow. Information about line identifiers, tags, and labels is displayed.
 
-   ![Log entry dropdown](../images/loglinedropdown.png "Log entry dropdown").    
-   
+   ![Log entry dropdown](../images/loglinedropdown.png "Log entry dropdown").
+
 6. Click ![**View in context**](../images/viewincontext.png "View in context"). The log line is displayed in context of other log lines from that host, app, or both. This information is helpful when troubleshooting a problem.
 
 7. Explore the selected log line by using the following options.
@@ -278,8 +278,8 @@ You might want to view a log line in context.
    **By App** displays the log line in context of the log lines of the app.
 
    **By Source & App** displays the log line in the combined context of the app and source.
-   
-8. Click **Continue in New Viewer** to open the view as a new **Unsaved View**. Keeping multiple views can help troubleshoot problems. 
+
+8. Click **Continue in New Viewer** to open the view as a new **Unsaved View**. Keeping multiple views can help troubleshoot problems.
 
 ## Filtering to a specific timeframe
 {: #LA-timeframe}
@@ -324,13 +324,13 @@ The following will help you create a dashboard.
 
 5. Select *app* For **Field**.
 
-6. Select *ANY* for **Field Value**. 
+6. Select *ANY* for **Field Value**.
 
-7. Click **Add Graph**.  A trend line showing the count of app log events is listed.  
+7. Click **Add Graph**.  A trend line showing the count of app log events is listed.
 
-8. Click the graph line and click **Show logs** to see the log at point in time. 
+8. Click the graph line and click **Show logs** to see the log at point in time.
 
-9. Open the subplot view ![Open the subplot view](../images/opensubplot.png) and select *Histogram* for **Choose breakdown type** and *host* for **SYSTEM FIELD**. 
+9. Open the subplot view ![Open the subplot view](../images/opensubplot.png) and select *Histogram* for **Choose breakdown type** and *host* for **SYSTEM FIELD**.
 
 10. Click **Add Breakdown**.  A histogram of the data by *host* is added to the dashboard.
 
@@ -342,7 +342,7 @@ The following will help you create a dashboard.
 
 14. Click the **Filter** icon ![Filter icon](../images/filter.png "Filter icon") to filter the graph by a specific field's data. For example, `host:myhost`.
 
-15. Click the **Pencil** icon ![Pencil icon](../images/pencil.png "Pencil icon") and enter a name for your dashboard. Specify a **Category** if desired and click **Save**.  
+15. Click the **Pencil** icon ![Pencil icon](../images/pencil.png "Pencil icon") and enter a name for your dashboard. Specify a **Category** if desired and click **Save**.
 
    If you don't specify a **Category** your dashboard will be listed under **UNCATEGORIZED**. If you are editing an existing dashboard, changes will be saved when exiting the dashboard without having to click **Save**.
    {: note}
@@ -367,7 +367,7 @@ Using the screen option you can create a screen of widgets that you can use to m
 
 5. Click **Add Widget** and select **Count**. A widget is added to your screen.
 
-6. Click the widget. The configuration for the widget is displayed. 
+6. Click the widget. The configuration for the widget is displayed.
 
 7. Change the **Field** and **Field Value** to change what is counted. For example, you might change **Field** to *host* and **Field Value** to a host in your account.  The widget will now count the log messages in the past day. You can also change the **Duration** of time counted.
 
@@ -383,7 +383,7 @@ Using the screen option you can create a screen of widgets that you can use to m
 
     If you need a table with more rows, change the **Data Format** **Number of Rows** to your preferred value.
 
-13. You can resize any of the widgets by clicking the widget and clicking and dragging one of the anchors. Widgets can be moved by clicking the widget and dragging it to your desired location on the screen.   
+13. You can resize any of the widgets by clicking the widget and clicking and dragging one of the anchors. Widgets can be moved by clicking the widget and dragging it to your desired location on the screen.
 
 14. Click **Save Screen** > **Save** to save your changes.
 
@@ -402,15 +402,15 @@ You can configure an alert to be sent by email, Slack, PagerDuty or as a Webhook
 
 3. Select the view to change in the navigation. Your view will be listed under the category where it was created, or under **UNCATEGORIZED** if you didn't specify a category when the view was created. For example, the following shows a view named "My View" that was created without an assigned category.
 
-   ![Navigation example](../images/uncategorized_myview.png "An uncategorized view named My View in the navigation") 
+   ![Navigation example](../images/uncategorized_myview.png "An uncategorized view named My View in the navigation")
 
 4. Click the selected view name.  The following example shows the view named "My View".
 
-   ![My View view](../images/myview.png "Heading showing the My View view") 
+   ![My View view](../images/myview.png "Heading showing the My View view")
 
 5. Click the view name.  The menu is displayed.  Click **Attach an alert**
 
-   ![Edit view properties](../images/editviewproperties.png "Edit view properties") 
+   ![Edit view properties](../images/editviewproperties.png "Edit view properties")
 
 6. Click **View-specific alert**.
 
@@ -421,12 +421,12 @@ You can configure an alert to be sent by email, Slack, PagerDuty or as a Webhook
    ![Configure alert](../images/configalert.png "Dialog showing alert configuration")
 
    1. Specify when the alert will be triggered, and an email sent. For this example specify *When 5 or more matches appear within 30 seconds*.
-   
+
    2. Select the email addresses of the **Recipients** who should receive the alert.
 
    3. Click **Save Alert**.
 
-9. Check the configured email for an alert.  
+9. Check the configured email for an alert.
 
 10. When you are ready to disable the alert, click the view name and in the menu click **Detach alerts**.
 

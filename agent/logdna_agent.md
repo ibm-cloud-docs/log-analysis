@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years:  2018, 2022
+  years:  2018, 2023
 lastupdated: "2022-06-28"
 
 keywords: IBM, Log Analysis, logging, config agent, linux
@@ -28,13 +28,13 @@ The logging agent collects and forwards logs to your {{site.data.keyword.la_full
 ## Logging agent for Kubernetes clusters
 {: #log_analysis_agent_image_kube}
 
-Logging agent images for Kubernetes clusters are public images that are available in {{site.data.keyword.cloud_notm}} through the [{{site.data.keyword.registrylong_notm}}](/docs/Registry?topic=Registry-getting-started) service. 
+Logging agent images for Kubernetes clusters are public images that are available in {{site.data.keyword.cloud_notm}} through the [{{site.data.keyword.registrylong_notm}}](/docs/Registry?topic=Registry-getting-started) service.
 
 * The logging agent images are hosted in the {{site.data.keyword.registrylong_notm}} global repository `icr.io/ext/logdna-agent`.
 
-* {{site.data.keyword.registrylong_notm}} provides a multi-tenant, highly available, scalable, and encrypted private image registry that is hosted and managed by {{site.data.keyword.IBM_notm}}. 
+* {{site.data.keyword.registrylong_notm}} provides a multi-tenant, highly available, scalable, and encrypted private image registry that is hosted and managed by {{site.data.keyword.IBM_notm}}.
 
-* The {{site.data.keyword.registrylong_notm}} includes *Vulnerability Advisor* features that scan for potential security issues and vulnerabilities. Vulnerability Advisor checks for vulnerable packages in specific Docker base images, and known vulnerabilities in app configuration settings. When vulnerabilities are found, information about the vulnerability is provided. You can use this information to resolve security issues so that containers are not deployed from vulnerable images. 
+* The {{site.data.keyword.registrylong_notm}} includes *Vulnerability Advisor* features that scan for potential security issues and vulnerabilities. Vulnerability Advisor checks for vulnerable packages in specific Docker base images, and known vulnerabilities in app configuration settings. When vulnerabilities are found, information about the vulnerability is provided. You can use this information to resolve security issues so that containers are not deployed from vulnerable images.
 
 To get details about the logging agent images, see [Getting information about logging agent images](/docs/log-analysis?topic=log-analysis-log_analysis_agent_image).
 
@@ -47,12 +47,12 @@ The agent requires at least 128 MB and no more than 512 MB of memory. It require
 
 Different features can also increase resource utilization. When line exclusion, inclusion or redaction rules are specified, you can expect additional CPU consumption for each line and regex rule defined. When Kubernetes event logging is enabled (disabled by default), additional CPU usage will occur on the oldest agent pod.
 
-Placing traffic shaping or CPU limits on the agent is not recommended to ensure data can be sent to our log ingestion service. 
+Placing traffic shaping or CPU limits on the agent is not recommended to ensure data can be sent to our log ingestion service.
 
 ### Understanding image tags
 {: #log_analysis_agent_image_kube_tags}
 
-The tag that is associated to a logging image indicates whether the logging agent is automatically updated. 
+The tag that is associated to a logging image indicates whether the logging agent is automatically updated.
 {: important}
 
 A tag consists of multiple parts:
@@ -82,9 +82,9 @@ The following table outlines the tagging convention adopted and the agent update
 {: caption="Table 1. logging agent tags explained" caption-side="top"}
 
 Depending on the tag that you use, you must consider upgrading the logging agent image in your DevOps maintenance plan, to resolve vulnerabilities and apply agent enhancements and agent bug fixes. For example:
-- In a development environment, you can use a tag `X` and let auto-updates happen as new minor versions are released. 
-- In a staging environment, you migth consider using a tag `X.Y` so auto-updates happen when a new patch is released. 
-- In a production environment, you can use the tag `X.Y.Z` so that auto-updates happen when a new vulnerability fix is released. 
+- In a development environment, you can use a tag `X` and let auto-updates happen as new minor versions are released.
+- In a staging environment, you migth consider using a tag `X.Y` so auto-updates happen when a new patch is released.
+- In a production environment, you can use the tag `X.Y.Z` so that auto-updates happen when a new vulnerability fix is released.
 - For highly regulated environments, you should use the tag `X.Y.Z-<date>.[hash]`. Notice that you will have to check periodically for vulnerability fixes, patches, and minor version releases to keep the agent free of issues.
 
 The logging Aaent auto-updates happen when you restart the logging pod. It is your responsibility to restart the pods periodically in order for agent updates to occur within the scope specified by the tag.
@@ -128,16 +128,16 @@ When you configure the logging agent, you can choose any of the following option
 - You can use the default YAML that is provided. Choose by region and by type of account. The default configuration pulls the image `icr.io/ext/logdna-agent:stable`.
 - You can use an existing YAML file and change the `image:tag` value in your existing YAML file to pull a specific image from the registry.
 
-If you have a highly regulated environment, you can customize the YAML file. You can modify the YAML file so that it pulls from the {{site.data.keyword.registrylong_notm}} global repository `icr.io/ext/` the image that you specify, for example, `image: icr.io/ext/logdna-agent:X.Y.Z-<date>.[hash]`. Consider keeping a copy of the customized YAML file in a version control system. 
+If you have a highly regulated environment, you can customize the YAML file. You can modify the YAML file so that it pulls from the {{site.data.keyword.registrylong_notm}} global repository `icr.io/ext/` the image that you specify, for example, `image: icr.io/ext/logdna-agent:X.Y.Z-<date>.[hash]`. Consider keeping a copy of the customized YAML file in a version control system.
 {: important}
 
 
-### Connecting a logging agent with a logging instance 
+### Connecting a logging agent with a logging instance
 {: #log_analysis_agent_image_kube_connect}
 
-The logging agent is responsible for collecting and forwarding system-level, and file-based logs to your {{site.data.keyword.la_full_notm}} instance. 
+The logging agent is responsible for collecting and forwarding system-level, and file-based logs to your {{site.data.keyword.la_full_notm}} instance.
 
-To connect your Kubernetes cluster to send logs to your {{site.data.keyword.la_full_notm}} instance, you must install a *logging-agent* pod on each node of your cluster. 
+To connect your Kubernetes cluster to send logs to your {{site.data.keyword.la_full_notm}} instance, you must install a *logging-agent* pod on each node of your cluster.
 
 - The logging agent reads log files from the pod where it is installed, and forwards the log data to your logging instance.
 
@@ -163,7 +163,7 @@ To stop your Kubernetes cluster from sending logs to your {{site.data.keyword.la
 ### Running the agent as non-root
 {: #log_analysis_agent_image_kube_non-root}
 
-The default yaml files to configure a logging agent do not include running the agent as non-root. 
+The default yaml files to configure a logging agent do not include running the agent as non-root.
 
 To run the agent as non-root, see [Preparing the version 3 yaml file to run the agent as non-root](/docs/log-analysis?topic=log-analysis-upgrade_log_analysis_agent_3#upgrade_log_analysis_agent_3_step6).
 
@@ -182,19 +182,19 @@ The following table outlines the agent versions that are available:
 
 | Linux                                 | Logging agent V1 | Logging agent V2  | Logging agent V3 |
 |---------------------------------------|------------------|-------------------|------------------|
-| `Linux`   | ![Checkmark icon](../images/checkmark-icon.svg)  | ![Checkmark icon](../images/checkmark-icon.svg) | ![Checkmark icon](../images/checkmark-icon.svg) | 
+| `Linux`   | ![Checkmark icon](../images/checkmark-icon.svg)  | ![Checkmark icon](../images/checkmark-icon.svg) | ![Checkmark icon](../images/checkmark-icon.svg) |
 {: caption="Table 3. Logging agent versions for Linux" caption-side="top"}
 
 
 
-### Connecting a logging agent with a logging instance 
+### Connecting a logging agent with a logging instance
 {: #log_analysis_agent_image_linux_connect}
 
-The logging agent is responsible for collecting and forwarding system-level, and file-based logs to your {{site.data.keyword.la_full_notm}} instance. 
+The logging agent is responsible for collecting and forwarding system-level, and file-based logs to your {{site.data.keyword.la_full_notm}} instance.
 
-To connect your Linux server to send logs to your {{site.data.keyword.la_full_notm}} instance, you must install a *logging-agent*. 
+To connect your Linux server to send logs to your {{site.data.keyword.la_full_notm}} instance, you must install a *logging-agent*.
 
-- The logging agent reads log files from */var/log*, and forwards the log data to your logging instance. 
+- The logging agent reads log files from */var/log*, and forwards the log data to your logging instance.
 
 To connect an agent to a Linux platform, choose 1 of the following option:
 - [Configuring a Logging agent for Linux Ubuntu or Debian](/docs/log-analysis?topic=log-analysis-config_agent_linux).
@@ -220,7 +220,7 @@ You can customize a logging agent by configuring parameters for Linux agents, or
 | `LOGDNA_INGESTION_KEY`   | Reference to the logging ingestion key.                | secretKeyRef                           |                       |
 | `LOGDNA_HOST`            | {{site.data.keyword.la_full_notm}} ingestion endpoint.                            |                                        | `logs.us-south.logging.cloud.ibm.com` |
 | `LOGDNA_ENDPOINT`        | Ingestion log path.                                   | `/logs/agent/`                         |                       |
-| `LOGDNA_HOSTNAME`        | Log Source name.  | Machine's default OS hostname.     | `MyCluster`  | 
+| `LOGDNA_HOSTNAME`        | Log Source name.  | Machine's default OS hostname.     | `MyCluster`  |
 | `LOGDNA_IP` | IP address that is included as metadata to log lines that are forwarded from the agent. |  | |
 | `LOGDNA_JOURNALD_PATHS` | List of journald paths that you want to monitor. |   | `/var/log/journal`, `/run/systemd/journal` |
 | `LOGDNA_LOG_DIRS`        | Defines custom paths that you want the agent to monitor.  \n Separate multiple paths by using commas.  \n You can use glob patterns. Use double quotation marks to add a globe pattern.   | `/var/log/`   | `/output/,/mylogs/myapplogs/` |
@@ -254,7 +254,7 @@ You can customize a logging agent by configuring parameters for Linux agents, or
 | `LOGDNA_HOST`            | {{site.data.keyword.la_full_notm}} ingestion endpoint.                            |                                        | `logs.us-south.logging.cloud.ibm.com` |
 | `LOGDNA_API_HOST`        | {{site.data.keyword.la_full_notm}} API ingestion endpoint.                        |                                        | `api.us-south.logging.cloud.ibm.com`   |
 | `LOGDNA_ENDPOINT`        | Ingestion log path.                                   | `/logs/agent/`                         |                       |
-| `LOGDNA_HOSTNAME`        | Log Source name.                                      |                                        | `MyCluster`                            | 
+| `LOGDNA_HOSTNAME`        | Log Source name.                                      |                                        | `MyCluster`                            |
 | `LOGDNA_LOG_DIRS`        | Defines custom paths that you want the agent to monitor.  \n Separate multiple paths by using commas.  \n You can use glob patterns. Use double quotation marks to add a globe pattern.   | `/var/log/`   | `/output/,/mylogs/myapplogs/` |
 | `LOGDNA_INCLUSION_RULES` | Custom rules that you can define to configure what log files to monitor.  \n These files can be located in any of the paths that are defined through the logdir parameter.  \n You can use glob patterns. For more information, see [Glober rules](https://github.com/CJP10/globber){: external}   |  | `*.json,*.test` |
 | `LOGDNA_INCLUSION_REGEX_RULES` | Regex custom rules that you can define to configure what log files to monitor. For more information, see [regex syntax](https://docs.rs/regex/1.2.1/regex/#syntax){: external}  \n These files can be located in any of the paths that are defined through the logdir parameter.  |  |  |
@@ -277,7 +277,7 @@ You can customize a logging agent by configuring parameters for Linux agents, or
 | `LDLOGHOST`              | {{site.data.keyword.la_full_notm}} ingestion endpoint.                            |                                        | `logs.us-south.logging.cloud.ibm.com` |
 | `LDAPIHOST`              | {{site.data.keyword.la_full_notm}} API ingestion endpoint.                        |                                        | `api.us-south.logging.cloud.ibm.com`   |
 | `LDLOGPATH`              | Ingestion log path.                                   | `/logs/agent/`                         |                       |
-| `LOGDNA_HOSTNAME`        | Log Source name.                                      |                                        | `MyCluster`                            | 
+| `LOGDNA_HOSTNAME`        | Log Source name.                                      |                                        | `MyCluster`                            |
 | `LOG_DIRS`            | Defines custom paths that you want the agent to monitor.  \n Separate multiple paths by using commas.  \n You can use glob patterns. Use double quotation marks to add a globe pattern.  | `var/log` | `/output/,/mylogs/myapplogs/` |
 | `LOGDNA_INCLUDE`     | Custom rules that you can define to configure what log files to monitor.  \n These files can be located in any of the paths that are defined through the logdir parameter.  \n You can use glob patterns. For more information, see [Glober rules](https://github.com/CJP10/globber){: external}  |  | `*.json,*.test` |
 | `LOGDNA_INCLUDE_REGEX` | Regex custom rules that you can define to configure what log files to monitor. For more information, see [regex syntax](https://docs.rs/regex/1.2.1/regex/#syntax){: external}  \n These files can be located in any of the paths that are defined through the logdir parameter.  | | |
@@ -295,9 +295,9 @@ You can customize a logging agent by configuring parameters for Linux agents, or
 | Parameter | Description                                          |
 |-----------|------------------------------------------------------|
 | `tags`    | Define tags to group hosts automatically into dynamic groups. |
-| `logdir`  | Define custom paths that you want the agent to monitor.  \n Separate multiple paths by using commas. You can use glob patterns. You can configure specific files. Enter glob patterns by using double quotation marks. | 
+| `logdir`  | Define custom paths that you want the agent to monitor.  \n Separate multiple paths by using commas. You can use glob patterns. You can configure specific files. Enter glob patterns by using double quotation marks. |
 | `exclude` | Define the files that you do not want the logging agent to monitor. **Note:** These files can be located in any of the paths that are defined through the logdir parameter.  \n Separate multiple files by using commas. You can use glob patterns. You can configure specific files. |
-| `exclude_regex` | Define regex patterns to filter out any lines that match the pattern. Do not include leading and trailing `/`. | 
+| `exclude_regex` | Define regex patterns to filter out any lines that match the pattern. Do not include leading and trailing `/`. |
 | `hostname` | Define the hostname. This value overrides the operating system hostname. |
 | `autoupdate` | Set to `1` to update the agent automatically when the public repo agent definition is updated. Set to `0` to disable this feature. |
 {: caption="Table 7. Configuration options for the logging agent V1" caption-side="top"}
@@ -308,8 +308,8 @@ You can customize a logging agent by configuring parameters for Linux agents, or
 
 You can configure tags at the agent level so that all lines that are sent by this agent can be grouped automatically into a group when you filter data in a view.
 
-* You can define multiple tags. 
-* You separate tags by using commas. 
+* You can define multiple tags.
+* You separate tags by using commas.
 * The maximum number of characters that you can set to define multiple tags is 80 characters.
 
 | Platform                       | How to install and configure |
@@ -322,16 +322,11 @@ You can configure tags at the agent level so that all lines that are sent by thi
 ### Exclude log files that are monitored by the agent
 {: #log_analysis_agent_exclude}
 
-You can configure a logging agent to exclude logs that you do not want to monitor through the logging UI. 
+You can configure a logging agent to exclude logs that you do not want to monitor through the logging UI.
 
-* You can exclude files that are located in any of the paths that are defined through the **logdir** parameter in a Linux system or the **LOGDNA_EXCLUDE** variable in a Kubernetes cluster. 
-* You can configure multiple files. You separate multiple files by using commas. 
-* You can use glob patterns to define what you want to exclude. 
+* You can exclude files that are located in any of the paths that are defined through the **logdir** parameter in a Linux system or the **LOGDNA_EXCLUDE** variable in a Kubernetes cluster.
+* You can configure multiple files. You separate multiple files by using commas.
+* You can use glob patterns to define what you want to exclude.
 * You can configure specific files.
 
 For more information, see [Excluding log files through the logging agent](/docs/log-analysis?topic=log-analysis-exclude_logs_from_agent).
-
-
-
-
-

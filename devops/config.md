@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years: 2019, 2022
+  years: 2019, 2023
 lastupdated: "2021-03-28"
 
 keywords: IBM, Log Analysis, logging, config, ui
@@ -20,7 +20,7 @@ You can configure your web UI to work with UTC timestamps, change the log line f
 {: shortdesc}
 
 
-## Configure UTC timestamps 
+## Configure UTC timestamps
 {: #config_utc}
 
 By default, the web UI is configured to use local timestamps in views and searches.
@@ -40,10 +40,10 @@ Complete the following steps:
 
 1. In the web UI, click the **Settings** icon ![Settings icon](images/admin.png "Admin icon") &gt; **User preferences**.
 2. Select **Viewer style**.
-3. Choose the default contrast. 
+3. Choose the default contrast.
 
-    Choose *Light mode* to have a light background. 
-    
+    Choose *Light mode* to have a light background.
+
     Choose *Dark mode** to have a black background.
 
 
@@ -58,7 +58,7 @@ Complete the following steps to display a log line that includes the timestamp a
 2. Select **Log format**.
 
     By default, the log format is configured in the following way:
-    
+
     ```text
     %time('MMM D HH:mm:ss') %source %app %level %line
     ```
@@ -72,5 +72,3 @@ Complete the following steps to display a log line that includes the timestamp a
     %time('MMM D HH:mm:ss') %line
     ```
     {: screen}
-
-

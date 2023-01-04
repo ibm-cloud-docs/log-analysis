@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years:  2021, 2022
+  years:  2021, 2023
 lastupdated: "2021-10-21"
 
 keywords: IBM, Log Analysis, Webhook
@@ -34,11 +34,11 @@ When you [configure an alert](/docs/log-analysis?topic=log-analysis-alerts) you 
 5. Optionally you can specify a **Custom schedule** with alerting limited to a specified timezone, days of the week, or timeframe. To configure a **Custom schedule**:
 
     1. Select **on** for **Custom schedule**.
-    2. Select the Timezone for the log entries. 
+    2. Select the Timezone for the log entries.
     3. Select the days of the week when alerts should be generated.
     4. Optionally specify a time range for the selected days. A graph will help you determine the number of log entries for the timezone and time range.
 
-6. Specify the **Method & URL** for the webhook. 
+6. Specify the **Method & URL** for the webhook.
 
 7. If your webhook requires specific header information, specify that in **Headers**.  Multiple headers can be added by clicking **Add**.
 
@@ -49,18 +49,18 @@ When you [configure an alert](/docs/log-analysis?topic=log-analysis-alerts) you 
 
     | Token | Description |
     | -------------- | -------------- |
-    | `{{ name }}` | View name | 
-    | `{{ matches }}` | Number of matched lines | 
-    | `{{ lines }}` | Raw output of matched lines | 
-    | `{{ level }}` | Severity level | 
-    | `{{ url }}` | View URL, with first matched line when possible | 
-    | `{{ query }}` | View query | 
-    | `{{ app }}` | Apps from the first matched line | 
-    | `{{ host }}` | Hosts from the first matched line | 
-    | `{{ tag }}` | Tags from the first matched line | 
-    | `{{ line }}` | Text from the first matched line | 
-    | `{{ line_objects }}` | Array of line objects | 
-    | `{{ first_line_object }}` | First matched line object | 
+    | `{{ name }}` | View name |
+    | `{{ matches }}` | Number of matched lines |
+    | `{{ lines }}` | Raw output of matched lines |
+    | `{{ level }}` | Severity level |
+    | `{{ url }}` | View URL, with first matched line when possible |
+    | `{{ query }}` | View query |
+    | `{{ app }}` | Apps from the first matched line |
+    | `{{ host }}` | Hosts from the first matched line |
+    | `{{ tag }}` | Tags from the first matched line |
+    | `{{ line }}` | Text from the first matched line |
+    | `{{ line_objects }}` | Array of line objects |
+    | `{{ first_line_object }}` | First matched line object |
     {: caption="Table 1. JSON tokens" caption-side="bottom"}
 
      You can use dot or bracket notation to access array indexes and object properties.  For example, `{{ line_objects[0] }}` or `{{ first_line_object._line }}`.
@@ -77,5 +77,3 @@ When you [configure an alert](/docs/log-analysis?topic=log-analysis-alerts) you 
 If you need additional fields to be included in your webhook body and the JSON tokens that are provided are not enough, try the following:
 1. Set the line template of the view where you configure a webhook notification so that it includes the additional data that you need in your webhook body. For more information, see [Guidelines defining line templates](/docs/log-analysis?topic=log-analysis-view_logs#views_line).
 2. Add to your webhook body the JSON token `{{ line }}` so that the information is included.
-
-

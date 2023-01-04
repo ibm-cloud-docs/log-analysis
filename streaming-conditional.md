@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years: 2019, 2022
+  years: 2019, 2023
 lastupdated: "2022-07-21"
 
 keywords: IBM Cloud, Log Analysis, streaming
@@ -18,7 +18,7 @@ subcollection: log-analysis
 In an {{site.data.keyword.la_full_notm}} instance, you can configure streaming exclusion rules through the UI to filter what data is streamed.
 {: shortdesc}
 
-- Log lines that match a streaming exclusion rule are not streamed. 
+- Log lines that match a streaming exclusion rule are not streamed.
 
 - When log lines are ingested, streaming exclusion rules are applied to log lines that are retained after the ingestion exclusion rules are applied.
 
@@ -33,7 +33,7 @@ Verify that each exclusion rule that you add behaves as expected. Improper confi
 
 1. [Launch the {{site.data.keyword.la_full_notm}} web UI](/docs/services/log-analysis?topic=log-analysis-launch).
 
-2. Click the **Settings** icon ![Configuration icon](images/admin.png "Admin icon"). Then select **Streaming** &gt; **Exclusion Rules**. 
+2. Click the **Settings** icon ![Configuration icon](images/admin.png "Admin icon"). Then select **Streaming** &gt; **Exclusion Rules**.
 
 3. Select **Add Rule**. The **Create a Rule** section opens.
 
@@ -46,7 +46,4 @@ Verify that each exclusion rule that you add behaves as expected. Improper confi
 7. After you configure an exclusion rule, verify that the exclusion rule behaves as you expect.
 
     Check the query in a custom view by entering the search criteria in the search bar of the *Everything* view, and validating that the data that is displayed is the data that you want excluded.
-    {: tip} 
-
-
-
+    {: tip}
