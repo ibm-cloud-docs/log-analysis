@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years:  2018, 2022
-lastupdated: "2022-11-03"
+  years:  2018, 2023
+lastupdated: "2023-01-04"
 
 keywords: IBM, Log Analysis, logging, service keys
 
@@ -327,7 +327,7 @@ Where:
 For example, to get information on an service key that is available in an instance in US South, you can run the following request:
 
 ```sh
-curl  https://api.us-south.logging.cloud.ibm.com/v1/config/keys/123456789"  -H "content-type: application/json"  -H "servicekey: xxxxxxxxx"
+curl  https://api.us-south.logging.cloud.ibm.com/v1/config/keys/123456789  -H "content-type: application/json"  -H "servicekey: xxxxxxxxx"
 ```
 {: pre}
 
