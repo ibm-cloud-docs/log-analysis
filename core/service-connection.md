@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018, 2023
-lastupdated: "2023-01-04"
+lastupdated: "2023-01-05"
 
 keywords: IBM, Log Analysis, logging, security, connection
 
