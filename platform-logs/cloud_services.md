@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2023
-lastupdated: "2021-09-02"
+lastupdated: "2023-01-05"
 
 keywords: IBM, Log Analysis, logging, services
 
@@ -151,7 +151,6 @@ The following table lists Cloud services that send logs to {{site.data.keyword.l
 
 | Service     | Description | More info |
 |-------------|-------------|-------------------------------------------------------------------------|
-| [{{site.data.keyword.cloudcerts_full_notm}}](/docs/certificate-manager?topic=certificate-manager-about-certificate-manager#about-certificate-manager) | You can use {{site.data.keyword.cloudcerts_short}} to manage the SSL certificates for your {{site.data.keyword.cloud_notm}}-based apps and services.  | [More info](/docs/certificate-manager?topic=certificate-manager-log_events) |
 | [{{site.data.keyword.secrets-manager_full}}](/docs/secrets-manager?topic=secrets-manager-getting-started) | With {{site.data.keyword.secrets-manager_full_notm}}, you can create, lease, and centrally manage secrets that are used in {{site.data.keyword.cloud_notm}} services or your custom-built applications. | [More info](/docs/secrets-manager?topic=secrets-manager-service-logs) |
 {: caption="Table 8. List of security Cloud services" caption-side="top"}
 
