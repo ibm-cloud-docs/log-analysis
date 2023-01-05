@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018, 2023
-lastupdated: "2021-05-14"
+lastupdated: "2023-01-04"
 
 keywords: IBM, Log Analysis, logging, security, connection
 
@@ -93,6 +93,4 @@ What happens when you configure the logging agent to use a private endpoint?
 ## Limitations that use private endpoints
 {: #network_endpoints_limitations}
 
-Consider the following limitations:
-* Ingestion endpoints of type `syslog-tcp (syslog-a)` and `syslog-udp (syslog-u)` are not currently supported on the Cloud Service Endpoint (CSE) network. 
-* The logging web UI is not currently supported on the private network.
+The logging web UI is not supported on the private network.
