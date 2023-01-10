@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018, 2023
-lastupdated: "2022-12-13"
+lastupdated: "2023-01-10"
 
 keywords: Log Analysis release notes
 
@@ -20,12 +20,19 @@ content-type: release-note
 Use these release notes to learn about the latest updates to {{site.data.keyword.la_full}}.
 {: shortdesc}
 
+## 10 January 2022
+{: #log-analysis-jan1023}
+{: release-note}
+
+Upcoming changes to endpoint IP addresses
+:   Several [endpoint IP addresses](/docs/log-analysis?topic=log-analysis-endpoints) will be changing after 24 January 2023. If your service is configured to use specific IP addresses or firewall to a specific IP address, then modification to the new IP addresses might be required. Allowlisted IP addresses can be configured in advance of the change to avoid service interruptions. For more information on the endpoint changes, see [Service IP changes.](/docs/log-analysis?topic=log-analysis-service-ip-changes#endpoint-changes-24Jan2022)
+
 ## 14 December 2022
 {: #log-analysis-dec1422}
 {: release-note}
 
 Upcoming changes to endpoint IP addresses
-:   Several [endpoint IP addresses](/docs/log-analysis?topic=log-analysis-endpoints) will be changing in after 15 January 2023. If your service is configured to use specific IP addresses or firewall to a specific IP address, then modification to the new IP addresses might be required. Allowlisted IP addresses can be configured in advance of the change to avoid service interruptions. For more information on the endpoint changes, see [Service IP changes.](/docs/log-analysis?topic=log-analysis-service-ip-changes#endpoint-changes-01Jan2022)
+:   Several [endpoint IP addresses](/docs/log-analysis?topic=log-analysis-endpoints) will be changing after 15 January 2023. If your service is configured to use specific IP addresses or firewall to a specific IP address, then modification to the new IP addresses might be required. Allowlisted IP addresses can be configured in advance of the change to avoid service interruptions. For more information on the endpoint changes, see [Service IP changes.](/docs/log-analysis?topic=log-analysis-service-ip-changes#endpoint-changes-24Jan2022)
 
 ## 08 December 2022
 {: #log-analysis-dec0822}
