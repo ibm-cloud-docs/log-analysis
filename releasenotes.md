@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018, 2023
-lastupdated: "2022-12-13"
+lastupdated: "2023-01-10"
 
 keywords: Log Analysis release notes
 
