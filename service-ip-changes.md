@@ -26,7 +26,7 @@ Endpoints and regions that are not listed are unchanged.
 ## After 15 January 2023
 {: #endpoint-changes-15Jan2022}
 
-The following endpoints will be changing in after 15 January 2023. The new IPs are listed in [endpoints](/docs/log-analysis?topic=log-analysis-endpoints). The new IPs can be allowlisted in advance to avoid impacts when the change is made.
+The following endpoints will be changing after 15 January 2023. The new IPs are listed in [endpoints](/docs/log-analysis?topic=log-analysis-endpoints). The new IPs can be allowlisted in advance to avoid impacts when the change is made.
 
 ### Chennai (in-che)
 {: #010123_inche}
