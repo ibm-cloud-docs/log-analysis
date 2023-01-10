@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2023
-lastupdated: "2022-12-13"
+lastupdated: "2023-01-10"
 
 keywords: IBM, Log Analysis, logging, endpoints
 
@@ -23,10 +23,10 @@ For the current list of endpoints that should be allowlisted in your environment
 Endpoints and regions that are not listed are unchanged.
 {: note}
 
-## After 15 January 2023
-{: #endpoint-changes-15Jan2022}
+## After 24 January 2023
+{: #endpoint-changes-24Jan2022}
 
-The following endpoints will be changing after 15 January 2023. The new IPs are listed in [endpoints](/docs/log-analysis?topic=log-analysis-endpoints). The new IPs can be allowlisted in advance to avoid impacts when the change is made.
+The following endpoints will be changing after 24 January 2023. The new IPs are listed in [endpoints](/docs/log-analysis?topic=log-analysis-endpoints). The new IPs can be allowlisted in advance to avoid impacts when the change is made.
 
 ### Chennai (in-che)
 {: #010123_inche}
