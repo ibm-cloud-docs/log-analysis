@@ -109,8 +109,8 @@ toc:
           - devops/control_usage.md
           - devops/exclusion_rules.md
           - devops/control_usage_alert.md
-          - control_usage_index_rate.md
-          - control_usage_quotas.md
+          - devops/control_usage_index_rate.md
+          - devops/control_usage_quotas.md
           - devops/control_usage_api.md
 
       - topicgroup:

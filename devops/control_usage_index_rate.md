@@ -151,6 +151,7 @@ Choose 1 or more notification channels to receive an alert when the threshold of
 - Configure the email notification channel by selecting **Add email** and entering 1 or more emails.
 - Configure the Slack notification channel by selecting **Add slack** and configuring the channel details.
 - Configure the PagerDuty notification channel by selecting **Add PagerDuty** and entering the credentials.
+- Configure the Webhook notification channel by selecting **Add Webhook** and entering the credentials.
 
 
 ### Step 3. Configure the notification frequency
