@@ -1,0 +1,5 @@
+.idea/
+generate_endpoints_markdown_document.egg-info/
+generate_endpoints_markdown_document/__pycache__/
+venv/
+build/

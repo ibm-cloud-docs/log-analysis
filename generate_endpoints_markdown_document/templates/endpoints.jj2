@@ -1,0 +1,162 @@
+---
+
+copyright:
+  years:  2018, 2023
+lastupdated: "2022-12-13"
+
+keywords: IBM, Log Analysis, logging, endpoints
+
+subcollection: log-analysis
+
+---
+
+{{ '{{' }}site.data.keyword.attribute-definition-list}}
+
+# Endpoints
+{: #endpoints}
+
+Review the connectivity options for interacting with {{ '{{' }}site.data.keyword.la_full}}.
+{: shortdesc}
+
+Due to maintenance, {{ '{{' }}site.data.keyword.la_full}} makes changes periodically to IPs in some regions. You might need to take action to continue using the service. This topic lists the currently supported, or planned to be supported, endpoints. For a history and current status of endpoint changes, see [Service IP changes](/docs/log-analysis?topic=log-analysis-service-ip-changes).
+{: important}
+
+## Connectivity options
+{: #connectivity-options}
+
+{{ '{{' }}site.data.keyword.la_full_notm}} offers two connectivity options:
+
+Public endpoints
+:   By default, you can connect to resources in your account over the {{ '{{' }}site.data.keyword.cloud_notm}} public network.
+
+Private endpoints
+:   For added benefits, you can also enable [virtual routing and forwarding (VRF)](/docs/account?topic=account-vrf-service-endpoint#vrf") and [service endpoints](/docs/account?topic=account-vrf-service-endpoint) for your infrastructure account. When you enable VRF for your account, you can connect to {{ '{{' }}site.data.keyword.la_full_notm}} by using a private IP that is accessible only through the {{ '{{' }}site.data.keyword.cloud_notm}} private network. To learn more about VRF, see [Virtual routing and forwarding on {{ '{{' }}site.data.keyword.cloud_notm}}](/docs/dl?topic=dl-overview-of-virtual-routing-and-forwarding-vrf-on-ibm-cloud). To learn how to connect to {{ '{{' }}site.data.keyword.la_full_notm}} by using a private endpoint, [Securing your connection](/docs/log-analysis?topic=log-analysis-service-connection).
+
+
+## Opening required ports and IP addresses in your firewall
+{: #firewall}
+
+If you have firewalls set up on the public or private network in your {{ '{{' }}site.data.keyword.cloud_notm}} infrastructure account, you need to allow traffic to and from the {{ '{{' }}site.data.keyword.la_full_notm}} service. You must allow traffic on TCP port 443 and TCP port 80 in your firewall for the API endpoints and the ingestion endpoints.
+
+The ingestion endpoints are required to send logs into a logging instance. To see the list of endpoints, see [Ingestion endpoints](/docs/log-analysis?topic=log-analysis-endpoints#endpoints_ingestion).
+
+The `API` endpoint is required for:
+- The authentication of the logging agent.
+- Exporting logs.
+- Configuring resources by using the Config API.
+
+
+## API endpoints
+{: #endpoints_api}
+
+### Public API endpoints
+{: #endpoints_api_public}
+
+The following table shows the public API endpoints:
+
+{{ public_api_endpoints_table }}
+
+{: caption="Table 1. Lists of public API endpoints for interacting with {{ '{{' }}site.data.keyword.la_full_notm}}" caption-side="top"}
+
+
+### Private API endpoints
+{: #endpoints_api_private}
+
+The following table shows the private API endpoints:
+
+{{ private_api_endpoints_table }}
+
+{: caption="Table 2. Lists of private API endpoints for interacting with {{ '{{' }}site.data.keyword.la_full_notm}}" caption-side="top"}
+
+`(*)` Indicates endpoints that are in plan to be supported.  See [Service IP changes](/docs/log-analysis?topic=log-analysis-service-ip-changes) for planned changes. These endpoints should be added to an allowlist in advance to avoid service interruptions.
+{: note}
+
+## Ingestion endpoints
+{: #endpoints_ingestion}
+
+### Public ingestion endpoints
+{: #endpoints_ingestion_public}
+
+The following table shows the ingestion endpoints:
+
+{{ public_ingestion_endpoints_table }}
+
+{: caption="Table 3. Lists of public ingestion endpoints for interacting with {{ '{{' }}site.data.keyword.la_full_notm}}" caption-side="top"}
+
+`(*)` Indicates endpoints that are in plan to be supported.  See [Service IP changes](/docs/log-analysis?topic=log-analysis-service-ip-changes) for planned changes. These endpoints should be added to an allowlist in advance to avoid service interruptions.
+{: note}
+
+### Private ingestion endpoints
+{: #endpoints_ingestion_private}
+
+The following table shows the private ingestion endpoints:
+
+{{ private_ingestion_endpoints_table }}
+
+{: caption="Table 4. Lists of private ingestion endpoints for interacting with {{ '{{' }}site.data.keyword.la_full_notm}}" caption-side="top"}
+
+`(*)` Indicates endpoints that are in plan to be supported.  See [Service IP changes](/docs/log-analysis?topic=log-analysis-service-ip-changes) for planned changes. These endpoints should be added to an allowlist in advance to avoid service interruptions.
+{: note}
+
+
+## Web UI endpoints
+{: #endpoints_loganalysis_ui}
+
+The following table shows the logging web UI endpoints:
+
+{{ public_app_endpoints_table }}
+
+{: caption="Table 5. Lists of UI endpoints" caption-side="top"}
+
+
+## Syslog endpoints
+{: #endpoints_syslog}
+
+### Syslog public endpoints
+{: #endpoints_syslog_endpoints}
+
+The following tables show the syslog public endpoints:
+
+{{ public_syslog_tcp_endpoints_table }}
+
+{: caption="Table 6. List of syslog-a public endpoints" caption-side="top"}
+
+{{ public_syslog_udp_endpoints_table }}
+
+
+{: caption="Table 7. List of syslog-u public endpoints" caption-side="top"}
+
+### Syslog private endpoints
+{: #endpoints_syslog_private_endpoints}
+
+The following table shows the syslog private endpoints:
+
+{{ private_syslog_tcp_endpoints_table }}
+
+{: caption="Table 8. Lists of syslog-a private endpoints" caption-side="top"}
+
+{{ private_syslog_udp_endpoints_table }}
+
+{: caption="Table 9. List of syslog-u private endpoints" caption-side="top"}
+
+
+### Syslog TLS endpoints
+{: #endpoints_syslog_tls}
+
+The following table shows the syslog TLS endpoints:
+
+{{ public_syslog_tls_endpoints_table }}
+
+
+{: caption="Table 10. Lists of Syslog-TLS public endpoints" caption-side="top"}
+
+
+### Private syslog TLS endpoints
+{: #endpoints_syslog_tls_private}
+
+The following table shows the syslog TLS endpoints:
+
+{{ private_syslog_tls_endpoints_table }}
+
+
+{: caption="Table 11. Lists of Syslog-TLS private endpoints" caption-side="top"}
