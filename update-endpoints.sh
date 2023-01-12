@@ -24,8 +24,8 @@ if [[ $number_of_changes -gt 0 ]]; then
   git add endpoints.md > /dev/null 2>&1
   git commit -m "Log Analysis: Update endpoints
 
-  Update the endpoints from current state of DNS.
-  "
+Update the endpoints from current state of DNS.
+  " > /dev/null 2>&1
   git push origin > /dev/null 2>&1
   # Make sure gh creates the pull request towards the upstream IBM
   # repository
