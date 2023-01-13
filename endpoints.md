@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2023
-lastupdated: "2023-01-13"
+lastupdated: "2022-12-13"
 
 keywords: IBM, Log Analysis, logging, endpoints
 
@@ -76,16 +76,16 @@ The following table shows the private API endpoints:
 
 | Region                 | Private API endpoint                         | Private IP addresses                            | Ports              |
 |------------------------|----------------------------------------------|-------------------------------------------------|--------------------|
-| `Chennai (in-che)`     | `api.private.in-che.logging.cloud.ibm.com`   | 166.9.60.6  \n  \n 166.9.60.6 `(*)`                                      | TCP 443  \n TCP 80 |
-| `Dallas (us-south)`    | `api.private.us-south.logging.cloud.ibm.com` | 166.9.16.11   \n 166.9.12.12    \n 166.9.14.2  \n  \n 166.9.12.12 `(*)`  \n 166.9.14.2 `(*)`  \n 166.9.16.11 `(*) | TCP 443  \n TCP 80 |
-| `Frankfurt (eu-de)`    | `api.private.eu-de.logging.cloud.ibm.com`    | 166.9.32.7    \n 166.9.28.2     \n 166.9.30.231  \n  \n 166.9.28.2 `(*)`  \n 166.9.30.231 `(*)`  \n 166.9.32.7 `(*)` | TCP 443  \n TCP 80 |
-| `London (eu-gb)`       | `api.private.eu-gb.logging.cloud.ibm.com`    | 166.9.36.2    \n 166.9.38.4     \n 166.9.34.2  \n  \n 166.9.34.2 `(*)`  \n 166.9.36.2 `(*)`  \n 166.9.38.4 `(*)`| TCP 443  \n TCP 80 |
-| `Osaka (jp-osa)`       | `api.private.jp-osa.logging.cloud.ibm.com`   | 166.9.71.21   \n 166.9.72.19    \n 166.9.70.19  \n  \n 166.9.70.19 `(*)`  \n 166.9.71.21 `(*)`  \n 166.9.72.19 `(*)` | TCP 443  \n TCP 80 |
-| `Sao Paulo (br-sao)`   | `api.private.br-sao.logging.cloud.ibm.com`   | 166.9.83.24   \n 166.9.82.23    \n 166.9.84.25  \n  \n 166.9.82.23 `(*)`  \n 166.9.83.24 `(*)`  \n 166.9.84.25 `(*)` | TCP 443  \n TCP 80 |
-| `Sydney (au-syd)`      | `api.private.au-syd.logging.cloud.ibm.com`   | 166.9.56.3    \n 166.9.52.2     \n 166.9.54.128  \n  \n 166.9.52.2 `(*)`  \n 166.9.54.128 `(*)`  \n 166.9.56.3 `(*)` | TCP 443  \n TCP 80 |
-| `Tokyo (jp-tok)`       | `api.private.jp-tok.logging.cloud.ibm.com`   | 166.9.40.2    \n 166.9.42.3     \n 166.9.44.13  \n  \n 166.9.40.2 `(*)`  \n 166.9.42.3 `(*)`  \n 166.9.44.13 `(*)` | TCP 443  \n TCP 80 |
-| `Toronto (ca-tor)`     | `api.private.ca-tor.logging.cloud.ibm.com`   | 166.9.77.23   \n 166.9.76.26    \n 166.9.78.24  \n  \n 166.9.76.26 `(*)`  \n 166.9.77.23 `(*)`  \n 166.9.78.24  `(*)` | TCP 443  \n TCP 80 |
-| `Washington (us-east)` | `api.private.us-east.logging.cloud.ibm.com`  | 166.9.22.35   \n 166.9.20.72    \n 166.9.24.247  \n  \n 166.9.20.72 `(*)`  \n 166.9.22.35 `(*)`  \n 166.9.24.247 `(*)` | TCP 443  \n TCP 80 |
+| `Chennai (in-che)`     | `api.private.in-che.logging.cloud.ibm.com`   | 166.9.60.6  \n  \n 166.9.60.11 `(*)`                                      | TCP 443  \n TCP 80 |
+| `Dallas (us-south)`    | `api.private.us-south.logging.cloud.ibm.com` | 166.9.16.11   \n 166.9.12.12    \n 166.9.14.2  \n  \n 166.9.90.41 `(*)`  \n 166.9.85.89 `(*)`  \n 166.9.61.79 `(*)` | TCP 443  \n TCP 80 |
+| `Frankfurt (eu-de)`    | `api.private.eu-de.logging.cloud.ibm.com`    | 166.9.32.7    \n 166.9.28.2     \n 166.9.30.231  \n  \n 166.9.30.45 `(*)`  \n 166.9.28.159 `(*)`  \n 166.9.32.117 `(*)` | TCP 443  \n TCP 80 |
+| `London (eu-gb)`       | `api.private.eu-gb.logging.cloud.ibm.com`    | 166.9.36.2    \n 166.9.38.4     \n 166.9.34.2  \n  \n 166.9.36.105 `(*)`  \n 166.9.34.79 `(*)`  \n 166.9.38.84 `(*)`   | TCP 443  \n TCP 80 |
+| `Osaka (jp-osa)`       | `api.private.jp-osa.logging.cloud.ibm.com`   | 166.9.71.21   \n 166.9.72.19    \n 166.9.70.19  \n  \n 166.9.71.14 `(*)`  \n 166.9.72.13 `(*)`  \n 166.9.70.13 `(*)` | TCP 443  \n TCP 80 |
+| `Sao Paulo (br-sao)`   | `api.private.br-sao.logging.cloud.ibm.com`   | 166.9.83.24   \n 166.9.82.23    \n 166.9.84.25  \n  \n 166.9.83.12 `(*)`  \n 166.9.82.12 `(*)`  \n 166.9.84.12 `(*)` | TCP 443  \n TCP 80 |
+| `Sydney (au-syd)`      | `api.private.au-syd.logging.cloud.ibm.com`   | 166.9.56.3    \n 166.9.52.2     \n 166.9.54.128  \n  \n 166.9.56.79 `(*)`  \n 166.9.52.82 `(*)`  \n 166.9.54.129 `(*)` | TCP 443  \n TCP 80 |
+| `Tokyo (jp-tok)`       | `api.private.jp-tok.logging.cloud.ibm.com`   | 166.9.40.2    \n 166.9.42.3     \n 166.9.44.13  \n  \n 166.9.40.13 `(*)`  \n 166.9.42.72 `(*)`  \n 166.9.44.76 `(*)` | TCP 443  \n TCP 80 |
+| `Toronto (ca-tor)`     | `api.private.ca-tor.logging.cloud.ibm.com`   | 166.9.77.23   \n 166.9.76.26    \n 166.9.78.24  \n  \n 166.9.78.10 `(*)`  \n 166.9.76.10 `(*)`  \n 166.9.77.10 `(*)` | TCP 443  \n TCP 80 |
+| `Washington (us-east)` | `api.private.us-east.logging.cloud.ibm.com`  | 166.9.22.35   \n 166.9.20.72    \n 166.9.24.247  \n  \n 166.9.24.171 `(*)`  \n 166.9.22.194 `(*)`  \n 166.9.68.157 `(*)` | TCP 443  \n TCP 80 |
 {: caption="Table 2. Lists of private API endpoints for interacting with {{site.data.keyword.la_full_notm}}" caption-side="top"}
 
 `(*)` Indicates endpoints that are in plan to be supported.  See [Service IP changes](/docs/log-analysis?topic=log-analysis-service-ip-changes) for planned changes. These endpoints should be added to an allowlist in advance to avoid service interruptions.
@@ -101,16 +101,16 @@ The following table shows the ingestion endpoints:
 
 | Region                 | Public Ingestion endpoint             | Public IP addresses                                   | Ports              |
 |------------------------|---------------------------------------|-------------------------------------------------------|--------------------|
-| `Chennai (in-che)`     | `logs.in-che.logging.cloud.ibm.com`   | 169.38.75.46 | TCP 443  \n TCP 80 |
-| `Dallas (us-south)`    | `logs.us-south.logging.cloud.ibm.com` | 169.61.197.84   \n 50.22.153.155  \n 67.228.211.6| TCP 443  \n TCP 80 |
-| `Frankfurt (eu-de)`    | `logs.eu-de.logging.cloud.ibm.com`    | 149.81.108.173  \n 158.177.157.66 \n 161.156.78.142 | TCP 443  \n TCP 80 |
-| `London (eu-gb)`       | `logs.eu-gb.logging.cloud.ibm.com`    | 158.176.163.117 \n 158.175.113.18 \n 141.125.102.149  | TCP 443  \n TCP 80 |
-| `Osaka (jp-osa)`       | `logs.jp-osa.logging.cloud.ibm.com`   | 163.73.68.44    \n 163.69.67.212  \n 163.68.73.62| TCP 443  \n TCP 80 |
-| `Sao Paulo (br-sao)`   | `logs.br-sao.logging.cloud.ibm.com`   | 163.109.68.108  \n 163.107.69.13  \n 169.57.152.195 | TCP 443  \n TCP 80 |
-| `Sydney (au-syd)`      | `logs.au-syd.logging.cloud.ibm.com`   | 168.1.27.60     \n 130.198.1.213  \n 135.90.67.172 | TCP 443  \n TCP 80 |
-| `Tokyo (jp-tok)`       | `logs.jp-tok.logging.cloud.ibm.com`   | 128.168.107.243 \n 165.192.100.74 \n 169.56.11.253 | TCP 443  \n TCP 80 |
-| `Toronto (ca-tor)`     | `logs.ca-tor.logging.cloud.ibm.com`   | 163.74.65.131   \n 169.55.135.27  \n 163.75.66.243 | TCP 443  \n TCP 80 |
-| `Washington (us-east)` | `logs.us-east.logging.cloud.ibm.com`  | 169.47.134.84   \n 169.60.98.94   \n 169.61.98.204 | TCP 443  \n TCP 80 |
+| `Chennai (in-che)`     | `logs.in-che.logging.cloud.ibm.com`   | 169.38.75.46  \n  \n 169.38.94.141 `(*)` | TCP 443  \n TCP 80 |
+| `Dallas (us-south)`    | `logs.us-south.logging.cloud.ibm.com` | 169.61.197.84   \n 50.22.153.155  \n 67.228.211.6  \n  \n 52.117.134.204 `(*)`  \n 50.22.151.6 `(*)`  \n 67.228.208.253 `(*)` | TCP 443  \n TCP 80 |
+| `Frankfurt (eu-de)`    | `logs.eu-de.logging.cloud.ibm.com`    | 149.81.108.173  \n 158.177.157.66 \n 161.156.78.142  \n  \n 158.177.133.235 `(*)`  \n 161.156.28.220 `(*)`  \n 149.81.169.206 `(*)`   | TCP 443  \n TCP 80 |
+| `London (eu-gb)`       | `logs.eu-gb.logging.cloud.ibm.com`    | 158.176.163.117 \n 158.175.113.18 \n 141.125.102.149  \n  \n 158.175.91.91 `(*)`  \n 141.125.86.131 `(*)`  \n 158.176.142.2 `(*)`  | TCP 443  \n TCP 80 |
+| `Osaka (jp-osa)`       | `logs.jp-osa.logging.cloud.ibm.com`   | 163.73.68.44    \n 163.69.67.212  \n 163.68.73.62  \n  \n 163.68.75.68 `(*)`    \n 163.69.70.155 `(*)`  \n 163.73.70.118 `(*)` | TCP 443  \n TCP 80 |
+| `Sao Paulo (br-sao)`   | `logs.br-sao.logging.cloud.ibm.com`   | 163.109.68.108  \n 163.107.69.13  \n 169.57.152.195  \n  \n 163.107.67.3 `(*)`  \n 163.107.68.196 `(*)`  \n 163.109.68.98 `(*)` | TCP 443  \n TCP 80 |
+| `Sydney (au-syd)`      | `logs.au-syd.logging.cloud.ibm.com`   | 168.1.27.60     \n 130.198.1.213  \n 135.90.67.172  \n  \n 135.90.92.246 `(*)`  \n 130.198.1.212 `(*)`  \n 135.90.89.221 `(*)` | TCP 443  \n TCP 80 |
+| `Tokyo (jp-tok)`       | `logs.jp-tok.logging.cloud.ibm.com`   | 128.168.107.243 \n 165.192.100.74 \n 169.56.11.253  \n  \n 161.202.231.186 `(*)`  \n 128.168.96.179 `(*)`  \n 165.192.111.36 `(*)` | TCP 443  \n TCP 80 |
+| `Toronto (ca-tor)`     | `logs.ca-tor.logging.cloud.ibm.com`   | 163.74.65.131   \n 169.55.135.27  \n 163.75.66.243  \n  \n 169.53.161.75 `(*)`  \n 163.74.65.133 `(*)`  \n 163.75.73.42 `(*)` | TCP 443  \n TCP 80 |
+| `Washington (us-east)` | `logs.us-east.logging.cloud.ibm.com`  | 169.47.134.84   \n 169.60.98.94   \n 169.61.98.204  \n  \n 169.47.134.86 `(*)`  \n 169.60.72.62 `(*)`  \n 169.61.107.10 `(*)` | TCP 443  \n TCP 80 |
 {: caption="Table 3. Lists of public ingestion endpoints for interacting with {{site.data.keyword.la_full_notm}}" caption-side="top"}
 
 `(*)` Indicates endpoints that are in plan to be supported.  See [Service IP changes](/docs/log-analysis?topic=log-analysis-service-ip-changes) for planned changes. These endpoints should be added to an allowlist in advance to avoid service interruptions.
@@ -124,16 +124,16 @@ The following table shows the private ingestion endpoints:
 
 | Region                   | Private Ingestion endpoint                    | Private IP addresses                        | Ports              |
 |--------------------------|-----------------------------------------------|---------------------------------------------|--------------------|
-| `Chennai (in-che)`       | `logs.private.in-che.logging.cloud.ibm.com`   | 166.9.60.7| TCP 443  \n TCP 80 |
-| `Dallas (us-south)`      | `logs.private.us-south.logging.cloud.ibm.com` | 166.9.61.86 \n 166.9.90.101 \n 166.9.86.91  | TCP 443  \n TCP 80 |
-| `Frankfurt (eu-de)`      | `logs.private.eu-de.logging.cloud.ibm.com`    | 166.9.28.3  \n 166.9.32.21  \n 166.9.30.238  | TCP 443  \n TCP 80 |
-| `London (eu-gb)`         | `logs.private.eu-gb.logging.cloud.ibm.com`    | 166.9.36.3  \n 166.9.34.4   \n 166.9.38.5  | TCP 443  \n TCP 80 |
-| `Osaka (jp-osa)`         | `logs.private.jp-osa.logging.cloud.ibm.com`   | 166.9.71.20 \n 166.9.70.21  \n 166.9.72.21 | TCP 443  \n TCP 80 |
-| `Sao Paulo (br-sao)`     | `logs.private.br-sao.logging.cloud.ibm.com`   | 166.9.83.25 \n 166.9.84.27  | TCP 443  \n TCP 80 |
-| `Sydney (au-syd)`        | `logs.private.au-syd.logging.cloud.ibm.com`   | 166.9.52.5  \n 166.9.56.20  \n 166.9.54.127 | TCP 443  \n TCP 80 |
-| `Tokyo (jp-tok)`         | `logs.private.jp-tok.logging.cloud.ibm.com`   | 166.9.40.3  \n 166.9.42.4   \n 166.9.44.71 | TCP 443  \n TCP 80 |
-| `Toronto (ca-tor)`       | `logs.private.ca-tor.logging.cloud.ibm.com`   | 166.9.77.26 \n 166.9.76.29  \n 166.9.78.27 | TCP 443  \n TCP 80 |
-| `Washington (us-east)`   | `logs.private.us-east.logging.cloud.ibm.com`  | 166.9.22.36 \n 166.9.20.73  \n 166.9.24.245 | TCP 443  \n TCP 80 |
+| `Chennai (in-che)`       | `logs.private.in-che.logging.cloud.ibm.com`   | 166.9.60.7  \n  \n 166.9.60.11 `(*)` | TCP 443  \n TCP 80 |
+| `Dallas (us-south)`      | `logs.private.us-south.logging.cloud.ibm.com` | 166.9.61.86 \n 166.9.90.101 \n 166.9.86.91  \n  \n 166.9.90.41 `(*)`  \n 166.9.85.89 `(*)`  \n 166.9.61.79 `(*)`  | TCP 443  \n TCP 80 |
+| `Frankfurt (eu-de)`      | `logs.private.eu-de.logging.cloud.ibm.com`    | 166.9.28.3  \n 166.9.32.21  \n 166.9.30.238  \n  \n 166.9.30.45 `(*)`  \n 166.9.28.159 `(*)`  \n 166.9.32.117 `(*)` | TCP 443  \n TCP 80 |
+| `London (eu-gb)`         | `logs.private.eu-gb.logging.cloud.ibm.com`    | 166.9.36.3  \n 166.9.34.4   \n 166.9.38.5  \n  \n 166.9.36.105 `(*)`  \n 166.9.34.79 `(*)`  \n 166.9.38.84 `(*)` | TCP 443  \n TCP 80 |
+| `Osaka (jp-osa)`         | `logs.private.jp-osa.logging.cloud.ibm.com`   | 166.9.71.20 \n 166.9.70.21  \n 166.9.72.21  \n  \n 166.9.71.14 `(*)`  \n 166.9.72.13 `(*)`  \n 166.9.70.13 `(*)` | TCP 443  \n TCP 80 |
+| `Sao Paulo (br-sao)`     | `logs.private.br-sao.logging.cloud.ibm.com`   | 166.9.83.25 \n 166.9.84.27  \n 166.9.82.25  \n  \n 166.9.83.12 `(*)`  \n 166.9.82.12 `(*)`  \n 166.9.84.12 `(*)`  | TCP 443  \n TCP 80 |
+| `Sydney (au-syd)`        | `logs.private.au-syd.logging.cloud.ibm.com`   | 166.9.52.5  \n 166.9.56.20  \n 166.9.54.127  \n  \n 166.9.56.79 `(*)`  \n 166.9.52.82 `(*)`  \n 166.9.54.129 `(*)` | TCP 443  \n TCP 80 |
+| `Tokyo (jp-tok)`         | `logs.private.jp-tok.logging.cloud.ibm.com`   | 166.9.40.3  \n 166.9.42.4   \n 166.9.44.71  \n  \n 166.9.40.13 `(*)`  \n 166.9.42.72 `(*)`  \n 166.9.44.76 `(*)` | TCP 443  \n TCP 80 |
+| `Toronto (ca-tor)`       | `logs.private.ca-tor.logging.cloud.ibm.com`   | 166.9.77.26 \n 166.9.76.29  \n 166.9.78.27  \n  \n 166.9.78.10 `(*)`  \n 166.9.76.10 `(*)`  \n 166.9.77.10 `(*)` | TCP 443  \n TCP 80 |
+| `Washington (us-east)`   | `logs.private.us-east.logging.cloud.ibm.com`  | 166.9.22.36 \n 166.9.20.73  \n 166.9.24.245  \n  \n 166.9.24.171 `(*)`  \n 166.9.22.194 `(*)`  \n 166.9.68.157 `(*)` | TCP 443  \n TCP 80 |
 {: caption="Table 4. Lists of private ingestion endpoints for interacting with {{site.data.keyword.la_full_notm}}" caption-side="top"}
 
 `(*)` Indicates endpoints that are in plan to be supported.  See [Service IP changes](/docs/log-analysis?topic=log-analysis-service-ip-changes) for planned changes. These endpoints should be added to an allowlist in advance to avoid service interruptions.
@@ -263,7 +263,7 @@ The following table shows the syslog TLS endpoints:
 The following table shows the syslog TLS endpoints:
 
 
-| Region                 | Private Endpoint                                                | IP addresses                               |
+| Region                 | Public Endpoint                                                | IP addresses                               |
 |------------------------|----------------------------------------------------------------|--------------------------------------------|
 | `Chennai (in-che)`     | `syslog-tls://syslog-a.private.in-che.logging.cloud.ibm.com`   | 166.9.60.9                                 |
 | `Dallas (us-south)`    | `syslog-tls://syslog-a.private.us-south.logging.cloud.ibm.com` | 166.9.16.14 \n 166.9.12.15 \n 166.9.14.5   |
