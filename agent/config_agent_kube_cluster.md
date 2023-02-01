@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2023
-lastupdated: "2021-05-21"
+lastupdated: "2023-02-01"
 
 keywords: IBM, Log Analysis, logging, config agent
 
@@ -186,7 +186,6 @@ Choose one of the following commands to install and configure the logging agent 
 |--------------------------|----------------------------------------------------|
 | `Chennai (in-che)`       | `kubectl create -f https://assets.in-che.logging.cloud.ibm.com/clients/logdna-agent-ds-k8s-v1.8.yaml -n ibm-observe`       |
 | `Tokyo (jp-tok)`         | `kubectl create -f https://assets.jp-tok.logging.cloud.ibm.com/clients/logdna-agent-ds-k8s-v1.8.yaml -n ibm-observe`       |
-| `Seoul (kr-seo)`         | `kubectl create -f https://assets.kr-seo.logging.cloud.ibm.com/clients/logdna-agent-ds-k8s-v1.8.yaml -n ibm-observe` |
 | `Sydney (au-syd)`        | `kubectl create -f https://assets.au-syd.logging.cloud.ibm.com/clients/logdna-agent-ds-k8s-v1.8.yaml -n ibm-observe`        |
 | `Osaka (jp-osa)`         | `kubectl create -f https://assets.jp-osa.logging.cloud.ibm.com/clients/logdna-agent-ds-k8s-v1.8.yaml -n ibm-observe`        |
 | `Frankfurt (eu-de)`      | `kubectl create -f https://assets.eu-de.logging.cloud.ibm.com/clients/logdna-agent-ds-k8s-v1.8.yaml -n ibm-observe`         |
@@ -205,7 +204,6 @@ Choose one of the following commands to install and configure the logging agent 
 |--------------------------|----------------------------------------------------|
 | `Chennai (in-che)`       | `kubectl create -f https://assets.in-che.logging.cloud.ibm.com/clients/logdna-agent-ds-private.yaml -n ibm-observe`       |
 | `Tokyo (jp-tok)`         | `kubectl create -f https://assets.jp-tok.logging.cloud.ibm.com/clients/logdna-agent-ds-private.yaml -n ibm-observe`        |
-| `Seoul (kr-seo)`         | `kubectl create -f https://assets.kr-seo.logging.cloud.ibm.com/clients/logdna-agent-ds-private.yaml -n ibm-observe` |
 | `Sydney (au-syd)`        | `kubectl create -f https://assets.au-syd.logging.cloud.ibm.com/clients/logdna-agent-ds-private.yaml -n ibm-observe`       |
 | `Osaka (jp-osa)`         | `kubectl create -f https://assets.jp-osa.logging.cloud.ibm.com/clients/logdna-agent-ds-private.yaml -n ibm-observe`       |
 | `Frankfurt (eu-de)`      | `kubectl create -f https://assets.eu-de.logging.cloud.ibm.com/clients/logdna-agent-ds-private.yaml -n ibm-observe`          |

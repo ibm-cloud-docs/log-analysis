@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2018, 2023
-lastupdated: "2022-01-20"
+lastupdated: "2023-02-01"
 
 keywords: IBM, Log Analysis, logging, disaster recovery, ha, high availability, redundancy
 
@@ -36,7 +36,6 @@ The following table lists the high-availability (HA) status for the regions (loc
 | `Asia Pacific`        |	`Chennai (in-che)`       | `N/A`        | `SZR`     |
 | `Asia Pacific`        | `Tokyo (jp-tok)`         | `N/A`        | `MZR`     |
 | `Asia Pacific`        | `Osaka (jp-osa)`         | `N/A`        | `MZR`     |
-| `Asia Pacific`        | `Seoul (kr-seo)`         | `N/A`        | `SZR`     |
 | `Asia Pacific`        | `Sydney (au-syd)`        | `N/A`        | `MZR`     |
 | `Europe`              | `Frankfurt (eu-de)`      | `YES`        | `MZR`     |
 | `Europe`              | `London (eu-gb)`         | `NO`         | `MZR`     |

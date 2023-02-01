@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2023
-lastupdated: "2021-03-28"
+lastupdated: "2023-02-01"
 
 keywords: IBM, Log Analysis, logging, update logging agent
 
@@ -130,7 +130,6 @@ Choose one of the following commands to install and configure the logging agent:
 | `Frankfurt (eu-de)`      | `kubectl apply -f https://assets.eu-de.logging.cloud.ibm.com/clients/agent-resources.yaml`         |
 | `London (eu-gb)`         | `kubectl apply -f https://assets.eu-gb.logging.cloud.ibm.com/clients/agent-resources.yaml`          |
 | `Tokyo (jp-tok)`         | `kubectl apply -f https://assets.jp-tok.logging.cloud.ibm.com/clients/agent-resources.yaml`       |
-| `Seoul (kr-seo)`         | `kubectl apply -f https://assets.kr-seo.logging.cloud.ibm.com/clients/agent-resources.yaml` |
 | `Sydney (au-syd)`        | `kubectl apply -f https://assets.au-syd.logging.cloud.ibm.com/clients/agent-resources.yaml`        |
 | `Washington (us-east)`   | `kubectl apply -f https://assets.us-east.logging.cloud.ibm.com/clients/agent-resources.yaml`       |
 {: caption="Table 3. Commands by location when you use public endpoints" caption-side="top"}
@@ -147,7 +146,6 @@ Choose one of the following commands to install and configure the logging agent:
 | `Frankfurt (eu-de)`      | `kubectl apply -f https://assets.eu-de.logging.cloud.ibm.com/clients/agent-resources-private.yaml`    |
 | `London (eu-gb)`         | `kubectl apply -f https://assets.eu-gb.logging.cloud.ibm.com/clients/agent-resources-private.yaml`    |
 | `Tokyo (jp-tok)`         | `kubectl apply -f https://assets.jp-tok.logging.cloud.ibm.com/clients/agent-resources-private.yaml`   |
-| `Seoul (kr-seo)`         | `kubectl apply -f https://assets.kr-seo.logging.cloud.ibm.com/clients/agent-resources-private.yaml`   |
 | `Sydney (au-syd)`        | `kubectl apply -f https://assets.au-syd.logging.cloud.ibm.com/clients/agent-resources-private.yaml`   |
 | `Washington (us-east)`   | `kubectl apply -f https://assets.us-east.logging.cloud.ibm.com/clients/agent-resources-private.yaml`  |
 {: caption="Table 4. Commands by location when you use private endpoints" caption-side="top"}
