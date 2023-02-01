@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2023
-lastupdated: "2021-03-28"
+lastupdated: "2023-02-01"
 
 keywords: IBM, Log Analysis, logging instance, regions
 
@@ -19,8 +19,7 @@ subcollection: log-analysis
 {: shortdesc}
 
 
-![The image shows the locations where the {{site.data.keyword.la_full_notm}} service is available.](images/world-map_min.png)
-{: caption="Figure 1. Displays the regions where you can create and manage {{site.data.keyword.la_full_notm}} resources." caption-side="bottom"}
+![The image shows the locations where the {{site.data.keyword.la_full_notm}} service is available.](images/world-map_min.png){: caption="Figure 1. Displays the regions where you can create and manage {{site.data.keyword.la_full_notm}} resources." caption-side="bottom"}
 
 This image is an artistic representation and does not reflect actual political or geographic boundaries.
 {: note}
@@ -34,7 +33,6 @@ The following table lists the locations where the service is available:
 |-----------------------|--------------------------|--------------|-----------|
 | `Asia Pacific`        | `Chennai (in-che)`       | `N/A`        | `SZR`     |
 | `Asia Pacific`        | `Tokyo (jp-tok)`         | `N/A`        | `MZR`     |
-| `Asia Pacific`        | `Seoul (kr-seo)`         | `N/A`        | `SZR`     |
 | `Asia Pacific`        | `Sydney (au-syd)`        | `N/A`        | `MZR`     |
 | `Asia Pacific`        | `Osaka (jp-osa)`         | `N/A`        | `MZR`     |
 | `Europe`              | `Frankfurt (eu-de) (*)`  | `YES`        | `MZR`     |
