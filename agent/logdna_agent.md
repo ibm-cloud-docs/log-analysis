@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2023
-lastupdated: "2022-06-28"
+lastupdated: "2023-02-08"
 
 keywords: IBM, Log Analysis, logging, config agent, linux
 
@@ -41,13 +41,15 @@ To get details about the logging agent images, see [Getting information about lo
 ### Resource Limits for agents deployed on Kubernetes
 {: #kube_resource_limits}
 
-The agent is deployed as a Kubernetes DaemonSet, creating one pod for each node selected. The agent collects logs of all the pods in the node. The resource requirements of the agent are in direct relation to the amount of pods for each node, and the amount of logs produce for each pod.
+The agent is deployed as a Kubernetes DaemonSet, creating one pod for each node selected. The agent collects logs of all the pods in the node. The resource requirements of the agent are in direct relation to the number of pods for each node and the amount of logs produced for each pod.
 
 The agent requires at least 128 MB and no more than 512 MB of memory. It requires at least twenty millicpu (20m).
 
 Different features can also increase resource utilization. When line exclusion, inclusion or redaction rules are specified, you can expect additional CPU consumption for each line and regex rule defined. When Kubernetes event logging is enabled (disabled by default), additional CPU usage will occur on the oldest agent pod.
 
-Placing traffic shaping or CPU limits on the agent is not recommended to ensure data can be sent to our log ingestion service.
+Placing traffic shaping or CPU limits on the agent is not recommended to ensure data can be sent to the log ingestion service.
+
+
 
 ### Understanding image tags
 {: #log_analysis_agent_image_kube_tags}
@@ -71,7 +73,7 @@ Where
 - `[hash]` represents the digest (manifest) of the container image. It is a unique `SHA-256` hash.
 
 
-The following table outlines the tagging convention adopted and the agent update behaviour:
+The following table outlines the tagging convention adopted and the agent update behavior:
 
 | Tag | Logging agent auto-update enabled | More info |
 |-----|----------------------------------|-----------|
@@ -83,11 +85,11 @@ The following table outlines the tagging convention adopted and the agent update
 
 Depending on the tag that you use, you must consider upgrading the logging agent image in your DevOps maintenance plan, to resolve vulnerabilities and apply agent enhancements and agent bug fixes. For example:
 - In a development environment, you can use a tag `X` and let auto-updates happen as new minor versions are released.
-- In a staging environment, you migth consider using a tag `X.Y` so auto-updates happen when a new patch is released.
+- In a staging environment, you might consider using a tag `X.Y` so auto-updates happen when a new patch is released.
 - In a production environment, you can use the tag `X.Y.Z` so that auto-updates happen when a new vulnerability fix is released.
 - For highly regulated environments, you should use the tag `X.Y.Z-<date>.[hash]`. Notice that you will have to check periodically for vulnerability fixes, patches, and minor version releases to keep the agent free of issues.
 
-The logging Aaent auto-updates happen when you restart the logging pod. It is your responsibility to restart the pods periodically in order for agent updates to occur within the scope specified by the tag.
+The logging agent auto-updates happen when you restart the logging pod. It is your responsibility to restart the pods periodically in order for agent updates to occur within the scope specified by the tag.
 {: important}
 
 
@@ -201,6 +203,16 @@ To connect an agent to a Linux platform, choose 1 of the following option:
 - [Configuring a Logging agent for a Linux RPM](/docs/log-analysis?topic=log-analysis-config_agent_linux_rpm)
 
 
+## Agent storage requirements
+{: #agent_storage}
+
+If the agent is unable to send logs to the {{site.data.keyword.la_full_notm}} service, the logs are buffered.  For example, buffered in local storage on the Kubernetes node. When the agent is able to send logs again, the buffered logs are sent. The most recent logs are sent first.
+
+To avoid losing logs when logs are buffered, make sure you have enough local storage to buffer logs for the desired length of time. 24 hours is recommended for critical logs.
+
+To determine how much local storage you might need, use the {{site.data.keyword.la_full_notm}} dashboard to determine your usage or use the [Usage API](/apidocs/log-analysis#get-usage-host). To see your usage per day using the {{site.data.keyword.la_full_notm}} dashboard, access  your {{site.data.keyword.la_full_notm}} instance and click **Usage** > **Dashboard**.
+
+Local storage should be the amount of storage required for logging per day plus an additional 20% contingency.
 
 ## Configuring a logging agent
 {: #log_analysis_agent_configure}
