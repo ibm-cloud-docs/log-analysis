@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018, 2023
-lastupdated: "2023-01-10"
+lastupdated: "2023-02-13"
 
 keywords: Log Analysis release notes
 
@@ -20,22 +20,30 @@ content-type: release-note
 Use these release notes to learn about the latest updates to {{site.data.keyword.la_full}}.
 {: shortdesc}
 
+## 13 February 2023
+{: #log-analysis-feb1323}
+{: release-note}
+
+New API method to retrieve account usage totals
+:   A [new method](/apidocs/log-analysis#list-usage-v2) is available to get aggregate data usage information for an account during a specified time period.
+
 ## 10 January 2023
 {: #log-analysis-jan1023}
 {: release-note}
 
 Upcoming changes to endpoint IP addresses
-:   Several [endpoint IP addresses](/docs/log-analysis?topic=log-analysis-endpoints) will be changing after 24 January 2023. If your service is configured to use specific IP addresses or firewall to a specific IP address, then modification to the new IP addresses might be required. Allowlisted IP addresses can be configured in advance of the change to avoid service interruptions. For more information on the endpoint changes, see [Service IP changes.](/docs/log-analysis?topic=log-analysis-service-ip-changes#endpoint-changes-24Jan2022)
+:   Several [endpoint IP addresses](/docs/log-analysis?topic=log-analysis-endpoints) will be changing after 24 January 2023. If your service is configured to use specific IP addresses or firewall to a specific IP address, then modification to the new IP addresses might be required. Allowlisted IP addresses can be configured in advance of the change to avoid service interruptions. For more information on the endpoint changes, see [Service IP changes.](/docs/log-analysis?topic=log-analysis-service-ip-changes#endpoint-changes-01Jan2022)
 
 Webhook alerts are enabled for Index Rate alerting.
 :   For more information, see [Activate the index rate alert feature](/docs/log-analysis?topic=log-analysis-control_usage_index_rate#control_usage_index_rate_activate).
+
 
 ## 14 December 2022
 {: #log-analysis-dec1422}
 {: release-note}
 
 Upcoming changes to endpoint IP addresses
-:   Several [endpoint IP addresses](/docs/log-analysis?topic=log-analysis-endpoints) will be changing after 15 January 2023. If your service is configured to use specific IP addresses or firewall to a specific IP address, then modification to the new IP addresses might be required. Allowlisted IP addresses can be configured in advance of the change to avoid service interruptions. For more information on the endpoint changes, see [Service IP changes.](/docs/log-analysis?topic=log-analysis-service-ip-changes#endpoint-changes-24Jan2022)
+:   Several [endpoint IP addresses](/docs/log-analysis?topic=log-analysis-endpoints) will be changing after 15 January 2023. If your service is configured to use specific IP addresses or firewall to a specific IP address, then modification to the new IP addresses might be required. Allowlisted IP addresses can be configured in advance of the change to avoid service interruptions. For more information on the endpoint changes, see [Service IP changes.](/docs/log-analysis?topic=log-analysis-service-ip-changes#endpoint-changes-01Jan2022)
 
 ## 08 December 2022
 {: #log-analysis-dec0822}
