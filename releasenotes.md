@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018, 2023
-lastupdated: "2023-02-13"
+lastupdated: "2023-02-21"
 
 keywords: Log Analysis release notes
 
@@ -17,8 +17,23 @@ content-type: release-note
 # Release notes for {{site.data.keyword.la_full_notm}}
 {: #log-analysis-release-notes}
 
-Use these release notes to learn about the latest updates to {{site.data.keyword.la_full}}.
+Use these release notes to learn about updates to {{site.data.keyword.la_full}}.
 {: shortdesc}
+
+## 22 February 2023
+{: #log-analysis-feb2223}
+{: release-note}
+
+Logging agent 3.8 is now available.
+:   Version 3.8 of the logging agent is now available. Changes include:
+
+    * The ability to include or exclude logs based on annotations and labels.
+
+    * The ability to collect the image name and tags for containers as metadata for each log line.
+
+    * Fix for when frequent DNS requests were made and were rejected.
+
+    * Fix for advanced Glob and Regex patterns not being recognized causing files to be ignored.
 
 ## 13 February 2023
 {: #log-analysis-feb1323}
@@ -70,7 +85,7 @@ Availability of the {{site.data.keyword.la_full_notm}} agent 3.6
 {: release-note}
 
 Changes to endpoint IP addresses
-:   Several [endpoint IP addresses](/docs/log-analysis?topic=log-analysis-endpoints) have changed. If your service is configured to use specific IP addresses or firewall to a specific IP address, then modification to the new IP addresses will be required.  Until 23 May 2022 the [original endpoints are in effect.](/docs/log-analysis?topic=log-analysis-service-ip-changes#endpoint-changes-09May2022)
+:   Several [endpoint IP addresses](/docs/log-analysis?topic=log-analysis-endpoints) have changed. If your service is configured to use specific IP addresses or firewall to a specific IP address, then modification to the new IP addresses will be required. Until 23 May 2022, the [original endpoints are in effect.](/docs/log-analysis?topic=log-analysis-service-ip-changes#endpoint-changes-09May2022)
 
 ## 24 March 2022
 {: #log-analysis-mar2422}
@@ -84,7 +99,7 @@ Ability to limit access to private endpoints only
 {: release-note}
 
 Support for syslog private endpoints
-:   {{site.data.keyword.la_full_notm}} now supports syslog private endoints.  [Learn more about syslog private endpoints](/docs/log-analysis?topic=log-analysis-endpoints#endpoints_syslog_private_endpoints).
+:   {{site.data.keyword.la_full_notm}} now supports syslog private endpoints. [Learn more about syslog private endpoints](/docs/log-analysis?topic=log-analysis-endpoints#endpoints_syslog_private_endpoints).
 
 ## 3 February 2022
 {: #log-analysis-feb0322}
@@ -98,24 +113,24 @@ Changes to Tokyo syslog IP addresses
 {: release-note}
 
 Index rate analysis to alert on unexpected data volume spikes
-:   You can configure index rates alerts in your {{site.data.keyword.la_full_notm}} instance to monitor and be alerted of unexpected spikes in your data volumes. Use the index rate to analyze and predict costs associated with storage of searchable data.  [Learn more about index rate analysis](/docs/log-analysis?topic=log-analysis-control_usage_index_rate).
+:   You can configure index rates alerts in your {{site.data.keyword.la_full_notm}} instance to monitor and be alerted of unexpected spikes in your data volumes. Use the index rate to analyze and predict costs that are associated with storage of searchable data.  [Learn more about index rate analysis](/docs/log-analysis?topic=log-analysis-control_usage_index_rate).
 
 Managing and limiting data usage
-:   In your {{site.data.keyword.la_full_notm}} instance, you can use the usage quota settings to control how much data is stored so you can manage your data cost while still being able to view and retain the data you need.  [Learn more about usage quotas](/docs/log-analysis?topic=log-analysis-control_usage_quotas).
+:   In your {{site.data.keyword.la_full_notm}} instance, you can use the usage quota settings to control how much data is stored so you can manage your data cost while still being able to view and retain the data that you need. [Learn more about usage quotas](/docs/log-analysis?topic=log-analysis-control_usage_quotas).
 
 ## 4 October 2021
 {: #log-analysis-oct0421}
 {: release-note}
 
 API for archiving
-:   Documentation of API changes supporting archiving is generally available.  [Learn more about the archiving API](https://{DomainName}/apidocs/log-analysis#get-v1-config-archiving){: external}.
+:   Documentation of API changes supporting archiving is generally available. [Learn more about the archiving API](https://{DomainName}/apidocs/log-analysis#get-v1-config-archiving){: external}.
 
 ## 30 September 2021
 {: #log-analysis-sep3021}
 {: release-note}
 
 API for data streaming
-:   Documentation of API changes supporting data streaming is generally available.  [Learn more about the streaming API](/apidocs/log-analysis#post-v1-config-stream).
+:   Documentation of API changes supporting data streaming is generally available. [Learn more about the streaming API](/apidocs/log-analysis#post-v1-config-stream).
 
 ## 31 August 2021
 {: #log-analysis-aug3121}
@@ -129,7 +144,7 @@ Support to stream data is generally available
 {: release-note}
 
 Support to stream data is available in beta
-:   New beta feature released in US-South and Frankfurt to stream data from an {{site.data.keyword.la_full_notm}} instance to other corporate tools such as Security Information and Event Management (SIEM) tools. [Learn more about streaming](/docs/log-analysis?topic=log-analysis-streaming).
+:   New beta feature that is released in US-South and Frankfurt to stream data from an {{site.data.keyword.la_full_notm}} instance to other corporate tools such as Security Information and Event Management (SIEM) tools. [Learn more about streaming](/docs/log-analysis?topic=log-analysis-streaming).
 
 ## 31 March 2021
 {: #log-analysis-mar3121}
@@ -183,4 +198,4 @@ Enhanced data residency, compliance, and security
 {: release-note}
 
 Introducing {{site.data.keyword.la_full_notm}}
-:   You can use {{site.data.keyword.la_full_notm}} to manage system and application logs in the {{site.data.keyword.cloud_notm}}. {{site.data.keyword.la_full_notm}} offers administrators, DevOps teams, and developers advanced features to filter, search, and tail log data, define alerts, and design custom views to monitor application and system logs.   [Learn more](/docs/log-analysis?topic=log-analysis-getting-started#getting-started)
+:   You can use {{site.data.keyword.la_full_notm}} to manage system and application logs in the {{site.data.keyword.cloud_notm}}. {{site.data.keyword.la_full_notm}} offers administrators, DevOps teams, and developers advanced features to filter, search, and tail log data, define alerts, and design custom views to monitor application and system logs.  [Learn more](/docs/log-analysis?topic=log-analysis-getting-started#getting-started)
