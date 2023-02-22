@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018, 2023
-lastupdated: "2023-02-21"
+lastupdated: "2023-02-22"
 
 keywords: Log Analysis release notes
 
@@ -22,6 +22,13 @@ Use these release notes to learn about updates to {{site.data.keyword.la_full}}.
 
 ## 22 February 2023
 {: #log-analysis-feb2223}
+{: release-note}
+
+New CIDR blocks available
+:   New CIDR blocks will be available on 9 March 2023. See [CIDR blocks](docs/log-analysis?topic=log-analysis-cidr) for more information.
+
+## 21 February 2023
+{: #log-analysis-feb2123}
 {: release-note}
 
 Logging agent 3.8 is now available.
