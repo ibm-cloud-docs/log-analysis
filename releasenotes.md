@@ -25,7 +25,7 @@ Use these release notes to learn about updates to {{site.data.keyword.la_full}}.
 {: release-note}
 
 New CIDR blocks available
-:   New CIDR blocks will be available on 9 March 2023. See [CIDR blocks](docs/log-analysis?topic=log-analysis-cidr) for more information.
+:   New CIDR blocks will be available on 9 March 2023. See [CIDR blocks](/docs/log-analysis?topic=log-analysis-cidr) for more information.
 
 ## 21 February 2023
 {: #log-analysis-feb2123}
