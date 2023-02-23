@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2023
-lastupdated: "2021-05-21"
+lastupdated: "2023-02-20"
 
 keywords: IBM, Log Analysis, logging, faq
 
@@ -97,3 +97,9 @@ Use the [{{site.data.keyword.sqlquery_notm}} service](/docs/sql-query?topic=sql-
 If you are unable to [create an API key](/docs/account?topic=account-userapikey&interface=ui) it could be because you are not authorized to do so.
 
 Make sure your ID has the [`User API key creator` permission enabled for the `IAM Identity Service`.](/docs/account?topic=account-allow-api-create)
+
+## How can I determine the version of the logging agent that is installed?
+{: #faq_12}
+{: faq}
+
+The logging agent version that is installed is returned by running `logdna-agent -V`. You might need to run this command from the directory where the agent is installed.
