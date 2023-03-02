@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2023
-lastupdated: "2023-02-22"
+lastupdated: "2023-03-02"
 
 keywords:
 
@@ -15,7 +15,7 @@ subcollection: log-analysis
 # CIDR blocks
 {: #cidr}
 
-The following Classless Inter-Domain Routing (CIDR) blocks are available:
+Classless Inter-Domain Routing (CIDR) blocks are ranges of addresses. {{site.data.keyword.la_full}} traffic will be sent from these addresses. This traffic includes webhooks, archiving to {{site.data.keyword.cos_full_notm}}, streaming to {{site.data.keyword.messagehub}} and so on. You can use these CIDR blocks in firewalls and other configurations to ensure that the data received by your code, or another {{site.data.keyword.IBM_notm}} service, originates only from {{site.data.keyword.la_full_notm}}.
 {: shortdesc}
 
 The CIDR blocks indicated with `(*)` will be available 9 March 2023.
