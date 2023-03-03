@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2023
-lastupdated: "2022-08-18"
+lastupdated: "2023-03-03"
 
 keywords: IBM Cloud, Log Analysis, streaming
 
@@ -26,6 +26,7 @@ See [Configure streaming](/docs/log-analysis?topic=log-analysis-streaming#stream
 {: #streaming-configure-l2l-prereqs}
 
 - You must have the ingestion URL and the ingestion key for the {{site.data.keyword.la_short}} instance where you want to stream data.
+- The {{site.data.keyword.la_short}} instance data that will receive data must be configured with a paid service plan. {{site.data.keyword.la_short}} instances on the [`Lite` plan](/docs/log-analysis?topic=log-analysis-service_plans) cannot receive streamed data.
 
 ## Step 1. Configure streaming in the source {{site.data.keyword.la_short}} instance
 {: #streaming-configure-l2l-step1}
