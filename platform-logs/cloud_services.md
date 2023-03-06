@@ -2,9 +2,9 @@
 
 copyright:
   years:  2018, 2023
-lastupdated: "2023-01-30"
+lastupdated: "2023-03-06"
 
-keywords: IBM, Log Analysis, logging, services
+keywords:
 
 subcollection: log-analysis
 
@@ -14,17 +14,14 @@ subcollection: log-analysis
 {{site.data.keyword.attribute-definition-list}}
 
 
-# IBM Cloud services that generate {{site.data.keyword.la_full_notm}} logs
+# {{site.data.keyword.cloud_notm}} services that generate platform logs
 {: #cloud_services}
 
 List of {{site.data.keyword.cloud}} services that send logs to {{site.data.keyword.la_full_notm}}:
 {: shortdesc}
 
-You can monitor logs from CF apps and enabled services through [the {{site.data.keyword.la_short}} instance that is configured to receive platform services logs](/docs/log-analysis?topic=log-analysis-config_svc_logs) in the location where the app or service is running.
-
-Notice that there is only 1 instance per location with the flag **Platform logs**.
+You can define only 1 instance per region where {{site.data.keyword.la_full_notm}} is supported with the flag **Platform logs**.
 {: important}
-
 
 ## Cloud Foundry
 {: #platform_cfapps}
@@ -43,7 +40,7 @@ The following table lists services that send logs to {{site.data.keyword.la_full
 
 | Service     | Description | More info |
 |-------------|-------------|-------------------|
-| [{{site.data.keyword.PA_SaaS_notm}}](/docs/planning-analytics?topic=planning-analytics-about) | {{site.data.keyword.PA_SaaS_notm}} is a fully-managed and collaborative service that provides enterprise-level budgeting, planning, modeling, and reporting solutions. | [More info](/docs/planning-analytics?topic=planning-analytics-about) |
+| [{{site.data.keyword.PA_SaaS_notm}}](/docs/planning-analytics?topic=planning-analytics-about) | {{site.data.keyword.PA_SaaS_notm}} is a fully-managed and collaborative service that provides enterprise-level budgeting, planning, modeling, and reporting solutions. | [More info](/docs/planning-analytics?topic=planning-analytics-logging) |
 {: caption="Table 1. List of analytics services" caption-side="top"}
 
 You can monitor logs through the {{site.data.keyword.la_short}} instance that is configured to receive platform services logs in the location where the service is running.
@@ -96,6 +93,7 @@ The following table lists services that send logs to {{site.data.keyword.la_full
 | [{{site.data.keyword.databases-for-redis_full_notm}}](/docs/databases-for-redis?topic=databases-for-redis-getting-started) | {{site.data.keyword.databases-for-redis_full_notm}} is a managed service that is hosted in the {{site.data.keyword.cloud_notm}} and integrated with other {{site.data.keyword.cloud_notm}} services.  | [More info](/docs/databases-for-redis?topic=cloud-databases-logging)|
 | [{{site.data.keyword.cloud_notm}} {{site.data.keyword.ihsdbaas_mongodb_full}}](/docs/hyper-protect-dbaas-for-mongodb?topic=hyper-protect-dbaas-for-mongodb-gettingstarted) | {{site.data.keyword.cloud_notm}} {{site.data.keyword.ihsdbaas_mongodb_full}} is a managed highly secure MongoDB service that is hosted in the {{site.data.keyword.cloud_notm}} and integrated with other {{site.data.keyword.cloud_notm}} services. | [More info](/docs/hyper-protect-dbaas-for-mongodb?topic=hyper-protect-dbaas-for-mongodb-sendlogs) |
 | [{{site.data.keyword.cloud_notm}} {{site.data.keyword.ihsdbaas_postgresql_full}}](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-gettingstarted) | {{site.data.keyword.cloud_notm}} {{site.data.keyword.ihsdbaas_postgresql_full}} is a managed highly secure PostgreSQL service that is hosted in the {{site.data.keyword.cloud_notm}} and integrated with other {{site.data.keyword.cloud_notm}} services. | [More info](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-sendlogs) |
+| [{{site.data.keyword.dv_short}}](/docs/data-virtualization?topic=data-virtualization-getting-started) | {{site.data.keyword.dv_short}} is a data management service that is hosted in the {{site.data.keyword.cloud_notm}} and integrated with other {{site.data.keyword.cloud_notm}} services. | [More info](/docs/data-virtualization?topic=data-virtualization-activity-tracker) |
 {: caption="Table 4. List of database services" caption-side="top"}
 
 You can monitor logs through the {{site.data.keyword.la_short}} instance that is configured to receive platform services logs in the location where the service is running.
@@ -171,17 +169,3 @@ You can monitor logs through the {{site.data.keyword.la_short}} instance that is
 {: note}
 
 To see the list of {{site.data.keyword.la_full_notm}} locations where these services send logs, see [Security services](/docs/log-analysis?topic=log-analysis-cloud_services_locations#cs_locations_security).
-
-
-
-## Watson AI services
-{: #watson_ai}
-
-The following table lists Cloud services that send logs to {{site.data.keyword.la_full_notm}}:
-
-| Service     | Description | More info |
-|-------------|-------------|-------------------------------------------------------------------------|
-| [{{site.data.keyword.iva_full_notm}}](/docs/voice-agent?topic=voice-agent-getting-started) | You can {{site.data.keyword.iva_full_notm}} to integrate a set of orchestrated Watson services with the telephone network by using the Session Initiation Protocol (SIP).   | [More info](/docs/voice-agent?topic=voice-agent-log-analysis-integration) |
-{: caption="Table 10. List of Watson AI Cloud services" caption-side="top"}
-
-To see the list of {{site.data.keyword.la_full_notm}} locations where these services send logs, see [Watson AI services](/docs/log-analysis?topic=log-analysis-cloud_services_locations#cloud_services_locations_watson_ai).

@@ -4,7 +4,7 @@ copyright:
   years:  2018, 2023
 lastupdated: "2023-02-01"
 
-keywords: IBM, Log Analysis, logging, services
+keywords:
 
 subcollection: log-analysis
 
@@ -159,6 +159,9 @@ The following tables list the locations where automatic collection of database s
 | {{site.data.keyword.databases-for-redis_full_notm}}             | ![Checkmark icon](../images/checkmark-icon.svg) | ![Checkmark icon](../images/checkmark-icon.svg) |
 | {{site.data.keyword.cloud_notm}} {{site.data.keyword.ihsdbaas_mongodb_full}}     | ![Checkmark icon](../images/checkmark-icon.svg)             | ![Checkmark icon](../images/checkmark-icon.svg) |
 | {{site.data.keyword.cloud_notm}} {{site.data.keyword.ihsdbaas_postgresql_full}}      | ![Checkmark icon](../images/checkmark-icon.svg)        | ![Checkmark icon](../images/checkmark-icon.svg) |
+| {{site.data.keyword.Db2_on_Cloud_long}}           | ![Checkmark icon](../images/checkmark-icon.svg) | ![Checkmark icon](../images/checkmark-icon.svg) |
+| {{site.data.keyword.dashdblong_notm}}     | ![Checkmark icon](../images/checkmark-icon.svg)        | ![Checkmark icon](../images/checkmark-icon.svg) |
+| {{site.data.keyword.dv_short}}      | ![Checkmark icon](../images/checkmark-icon.svg)        | ![Checkmark icon](../images/checkmark-icon.svg) |
 {: caption="Table 4. Database services" caption-side="top"}
 {: #cs-dbs-table-1}
 {: tab-title="America"}
@@ -177,6 +180,9 @@ The following tables list the locations where automatic collection of database s
 | {{site.data.keyword.databases-for-postgresql_full_notm}}        | ![Checkmark icon](../images/checkmark-icon.svg)  | ![Checkmark icon](../images/checkmark-icon.svg) |  ![Checkmark icon](../images/checkmark-icon.svg) |                      |
 | {{site.data.keyword.messages-for-rabbitmq_full_notm}}           | ![Checkmark icon](../images/checkmark-icon.svg)  | ![Checkmark icon](../images/checkmark-icon.svg) |  ![Checkmark icon](../images/checkmark-icon.svg) |                      |
 | {{site.data.keyword.databases-for-redis_full_notm}}             | ![Checkmark icon](../images/checkmark-icon.svg)  | ![Checkmark icon](../images/checkmark-icon.svg) |  ![Checkmark icon](../images/checkmark-icon.svg) |                      |
+| {{site.data.keyword.Db2_on_Cloud_long}}           | ![Checkmark icon](../images/checkmark-icon.svg) | ![Checkmark icon](../images/checkmark-icon.svg) |                     |
+| {{site.data.keyword.dashdblong_notm}}     | ![Checkmark icon](../images/checkmark-icon.svg)        | ![Checkmark icon](../images/checkmark-icon.svg) | |
+| {{site.data.keyword.dv_short}}      | ![Checkmark icon](../images/checkmark-icon.svg)        | ![Checkmark icon](../images/checkmark-icon.svg) |                      |
 | {{site.data.keyword.cloud_notm}} {{site.data.keyword.ihsdbaas_mongodb_full}} |    | `Logs are available through the Log Analysis Dallas instance`        |   |
 | {{site.data.keyword.cloud_notm}} {{site.data.keyword.ihsdbaas_postgresql_full}}     |    | `Logs are available through the Log Analysis Dallas instance`        |   |
 {: caption="Table 4. Database services" caption-side="top"}
@@ -195,8 +201,11 @@ The following tables list the locations where automatic collection of database s
 | {{site.data.keyword.databases-for-postgresql_full_notm}}      | ![Checkmark icon](../images/checkmark-icon.svg) | ![Checkmark icon](../images/checkmark-icon.svg)          | `Logs are available through the Log Analysis London instance` |
 | {{site.data.keyword.messages-for-rabbitmq_full_notm}}         | ![Checkmark icon](../images/checkmark-icon.svg)| ![Checkmark icon](../images/checkmark-icon.svg)          | `Logs are available through the Log Analysis London instance` |
 | {{site.data.keyword.databases-for-redis_full_notm}}           | ![Checkmark icon](../images/checkmark-icon.svg)| ![Checkmark icon](../images/checkmark-icon.svg)          | `Logs are available through the Log Analysis London instance` |
+| {{site.data.keyword.Db2_on_Cloud_long}}           | ![Checkmark icon](../images/checkmark-icon.svg) | ![Checkmark icon](../images/checkmark-icon.svg) |                     |
+| {{site.data.keyword.dashdblong_notm}}     | ![Checkmark icon](../images/checkmark-icon.svg)        | ![Checkmark icon](../images/checkmark-icon.svg) | |
 | {{site.data.keyword.cloud_notm}} {{site.data.keyword.ihsdbaas_mongodb_full}}           | ![Checkmark icon](../images/checkmark-icon.svg)              |           |        |
 | {{site.data.keyword.cloud_notm}} {{site.data.keyword.ihsdbaas_postgresql_full}}           | ![Checkmark icon](../images/checkmark-icon.svg)              |           |        |
+| {{site.data.keyword.dv_short}}      | ![Checkmark icon](../images/checkmark-icon.svg)        | ![Checkmark icon](../images/checkmark-icon.svg) |                      |
 {: caption="Table 4. Database services" caption-side="top"}
 {: #cs-dbs-table-3}
 {: tab-title="Europe"}
@@ -356,42 +365,5 @@ The following tables list the locations where automatic collection of security s
 {: #cs-sec-table-18}
 {: tab-title="Europe"}
 {: tab-group="cs_sec"}
-{: class="simple-tab-table"}
-{: row-headers}
-
-
-
-
-## Watson AI
-{: #cloud_services_locations_watson_ai}
-
-
-| Service                                                         | `Dallas (us-south)` | `Washington (us-east)`                   |
-|-----------------------------------------------------------------|---------------------|--------------------------------------|
-| {{site.data.keyword.iva_full_notm}}                                  | ![Checkmark icon](../images/checkmark-icon.svg)             | `Logs are available through the Log Analysis Dallas instance` |
-{: caption="Table 9. Watson AI in America's locations" caption-side="top"}
-{: #cs-wat-table-22}
-{: tab-title="America"}
-{: tab-group="cs_watsonai"}
-{: class="simple-tab-table"}
-{: row-headers}
-
-| Service                                                         | `Tokyo (jp-tok)` |`Sydney (au-syd)`           |
-|-----------------------------------------------------------------|----------------|---------------------------|
-| {{site.data.keyword.iva_full_notm}}                                                |            |   |
-{: caption="Table 9. Watson AI in AP locations" caption-side="top"}
-{: #cs-wat-table-23}
-{: tab-title="Asia Pacific"}
-{: tab-group="cs_watsonai"}
-{: class="simple-tab-table"}
-{: row-headers}
-
-| Service                                                       |`Frankfurt (eu-de)`  | `London (eu-gb)` |
-|---------------------------------------------------------------|-------------------|----------------|
-| {{site.data.keyword.iva_full_notm}}                           |  |    |
-{: caption="Table 9. Watson AI in Europe locations" caption-side="top"}
-{: #cs-wat-table-24}
-{: tab-title="Europe"}
-{: tab-group="cs_watsonai"}
 {: class="simple-tab-table"}
 {: row-headers}
