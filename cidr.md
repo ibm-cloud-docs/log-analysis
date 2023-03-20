@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2023
-lastupdated: "2023-03-02"
+lastupdated: "2023-03-14"
 
 keywords:
 
@@ -18,7 +18,7 @@ subcollection: log-analysis
 Classless Inter-Domain Routing (CIDR) blocks are ranges of addresses. {{site.data.keyword.la_full}} traffic will be sent from these addresses. This traffic includes webhooks, archiving to {{site.data.keyword.cos_full_notm}}, streaming to {{site.data.keyword.messagehub}} and so on. You can use these CIDR blocks in firewalls and other configurations to ensure that the data received by your code, or another {{site.data.keyword.IBM_notm}} service, originates only from {{site.data.keyword.la_full_notm}}.
 {: shortdesc}
 
-The CIDR blocks indicated with `(*)` will be available 9 March 2023.
+The CIDR blocks with a date next to them indicates the date they will be available.
 {: important}
 
 ## Public CIDR blocks
@@ -113,6 +113,9 @@ The CIDR blocks indicated with `(*)` will be available 9 March 2023.
 | Sydney    | 168.1.40.48/28 |
 | Sydney    | 130.198.92.144/28 |
 | Sydney    | 135.90.90.240/28  |
+| Sydney    | 168.1.31.192/27 [3 April 2023]{: tag-cool-gray} |
+| Sydney    | 130.198.83.0/27 [3 April 2023]{: tag-cool-gray} |
+| Sydney    | 135.90.82.32/27 [3 April 2023]{: tag-cool-gray} |
 {: caption="Table 6. Sydney public CIDR blocks" caption-side="top"}
 
 ### Chennai
@@ -121,7 +124,7 @@ The CIDR blocks indicated with `(*)` will be available 9 March 2023.
 | Region   | CIDR block |
 |----------|------------|
 | Chennai  | 169.38.96.224/28  |
-| Chennai  | 169.38.126.192/27 `(*)` |
+| Chennai  | 169.38.126.192/27 [9 March 2023]{: tag-cool-gray} |
 {: caption="Table 7. Chennai public CIDR blocks" caption-side="top"}
 
 ### Osaka
@@ -132,6 +135,9 @@ The CIDR blocks indicated with `(*)` will be available 9 March 2023.
 | Osaka	   | 163.73.65.176/28  |
 | Osaka	   | 163.68.73.240/28  |
 | Osaka	   | 163.69.68.48/28  |
+| Osaka    | 163.69.72.96/27 [3 April 2023]{: tag-cool-gray} |
+| Osaka    | 163.73.72.0/27 [3 April 2023]{: tag-cool-gray} |
+| Osaka    | 163.68.68.160/27 [3 April 2023]{: tag-cool-gray} |
 {: caption="Table 8. Osaka public CIDR blocks" caption-side="top"}
 
 ### Toronto
@@ -140,11 +146,11 @@ The CIDR blocks indicated with `(*)` will be available 9 March 2023.
 | Region   | CIDR block |
 |----------|------------|
 | Toronto	   | 169.53.180.32/28  |
-| Toronto | 169.55.136.192/27 `(*)` |
+| Toronto | 169.55.136.192/27 [9 March 2023]{: tag-cool-gray} |
 | Toronto	   | 163.74.69.208/28  |
 | Toronto	   | 163.75.69.160/28  |
-| Toronto	   | 163.74.71.224/27 `(*)` |
-| Toronto	   | 163.75.75.128/27 `(*)` |
+| Toronto	   | 163.74.71.224/27 [9 March 2023]{: tag-cool-gray} |
+| Toronto	   | 163.75.75.128/27 [9 March 2023]{: tag-cool-gray} |
 {: caption="Table 9. Toronto public CIDR blocks" caption-side="top"}
 
 
@@ -156,9 +162,9 @@ The CIDR blocks indicated with `(*)` will be available 9 March 2023.
 | Brazil	   | 169.57.222.224/28  |
 | Brazil	   | 163.107.65.208/28  |
 | Brazil	   | 163.109.67.224/28  |
-| Brazil     | 169.57.178.32/27 `(*)` |
-| Brazil     | 163.109.74.0/27 `(*)` |
-| Brazil     | 163.107.74.32/27 `(*)` |
+| Brazil     | 169.57.178.32/27 [9 March 2023]{: tag-cool-gray} |
+| Brazil     | 163.109.74.0/27 [9 March 2023]{: tag-cool-gray} |
+| Brazil     | 163.107.74.32/27 [9 March 2023]{: tag-cool-gray} |
 {: caption="Table 10. Sao Paulo public CIDR blocks" caption-side="top"}
 
 
@@ -226,11 +232,11 @@ The CIDR blocks indicated with `(*)` will be available 9 March 2023.
 | Region | CIDR block |
 |--------|------------|
 | London    | 10.72.11.64/26  |
-| London    | 10.196.113.0/25 `(*)` |
+| London    | 10.196.113.0/25 [9 March 2023]{: tag-cool-gray} |
 | London    | 10.196.134.64/26  |
-| London    | 10.242.25.128/25 `(*)` |
+| London    | 10.242.25.128/25 [9 March 2023]{: tag-cool-gray} |
 | London    | 10.222.46.128/26  |
-| London    | 10.222.86.128/25 `(*)` |
+| London    | 10.222.86.128/25 [9 March 2023]{: tag-cool-gray} |
 {: caption="Table 15. London private CIDR blocks" caption-side="top"}
 
 ### Sydney
