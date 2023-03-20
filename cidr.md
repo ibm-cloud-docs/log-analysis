@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2023
-lastupdated: "2023-03-14"
+lastupdated: "2023-03-20"
 
 keywords:
 
@@ -103,6 +103,9 @@ The CIDR blocks with a date next to them indicates the date they will be availab
 | London    | 141.125.139.144/28  |
 | London    | 158.175.167.48/28  |
 | London    | 158.175.168.32/27  |
+| London    | 158.176.67.64/26 [5 April 2023]{: tag-cool-gray} |
+| London    | 161.156.205.0/26 [5 April 2023]{: tag-cool-gray} |
+| London    | 141.125.144.192/26 [5 April 2023]{: tag-cool-gray} |
 {: caption="Table 5. London public CIDR blocks" caption-side="top"}
 
 ### Sydney
