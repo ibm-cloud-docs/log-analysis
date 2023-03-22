@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2023
-lastupdated: "2023-03-20"
+lastupdated: "2023-03-22"
 
 keywords:
 
@@ -227,6 +227,9 @@ The CIDR blocks with a date next to them indicates the date they will be availab
 | Tokyo	    | 10.129.65.128/26  |
 | Tokyo	    | 10.192.21.128/26  |
 | Tokyo	    | 10.193.77.192/26  |
+| Tokyo     | 10.193.30.0/25 [6 April 2023]{: tag-cool-gray} |
+| Tokyo     | 10.133.200.128/25 [6 April 2023]{: tag-cool-gray} |
+| Tokyo     | 10.192.170.128/25 [6 April 2023]{: tag-cool-gray} |
 {: caption="Table 14. Tokyo private CIDR blocks" caption-side="top"}
 
 ### London
