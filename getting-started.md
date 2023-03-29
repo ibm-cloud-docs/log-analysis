@@ -12,7 +12,7 @@ subcollection: log-analysis
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Getting started tutorial
+# Getting started with {{site.data.keyword.la_full_notm}}
 {: #getting-started}
 
 Use {{site.data.keyword.la_full}} to add log management capabilities to your {{site.data.keyword.cloud_notm}} architecture.
