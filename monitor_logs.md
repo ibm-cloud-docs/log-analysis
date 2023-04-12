@@ -4,7 +4,7 @@ copyright:
   years:  2018, 2023
 lastupdated: "2021-03-28"
 
-keywords: IBM, Log Analysis, logging, services
+keywords:
 
 subcollection: log-analysis
 
@@ -19,7 +19,7 @@ subcollection: log-analysis
 You can monitor logs in your account through the {{site.data.keyword.la_full_notm}} web UI. You can also export sets of logs to analyze them in a different context.
 {: shortdesc}
 
-To view logs, you must [launch the web UI](/docs/Activity-Tracker-with-LogDNA?topic=Activity-Tracker-with-LogDNA-launch) in the location where logs are available. Then, you can work with views to monitor those logs. You view logs in your local time.
+To view logs, you must [launch the web UI](/docs/log-analysis?topic=log-analysis-launch&interface=ui) in the location where logs are available. Then, you can work with views to monitor those logs. You view logs in your local time.
 
 You can select the logs that are displayed through a view by applying a timestamp, a search query, or both.
 
@@ -28,7 +28,7 @@ You can select the logs that are displayed through a view by applying a timestam
 
 When you apply a search query, you can save that view for reuse later. However, timestamps are not saved.
 
-Notice that instances might have different service plans, and consequently different data retention periods that determine the number of days that you have data available for search though the web UI. You can only monitor logs within your retention period. Different [service plans](/docs/Activity-Tracker-with-LogDNA?topic=Activity-Tracker-with-LogDNA-service_plan) have different retention periods.
+Notice that instances might have different service plans, and consequently different data retention periods that determine the number of days that you have data available for search though the web UI. You can only monitor logs within your retention period. Different [service plans](/docs/log-analysis?topic=log-analysis-service_plans) have different retention periods.
 
 
 
@@ -42,21 +42,20 @@ As soon as you open the web UI in a location, this is the view that you see.
 
 All logs in your instance are displayed through this view.
 
-To learn how to view logs through this view, see [Monitoring events through the default view](/docs/Activity-Tracker-with-LogDNA?topic=Activity-Tracker-with-LogDNA-view_events#view_events_step1).
 
 ## Monitoring logs through custom views
 {: #mon_cus_view}
 
 You might want to monitor a set of logs in your account. To anayze a subset of logs, you can create custom views.
 
-You create a custom view by applying a search query that defines what logs to display through the view. [Learn more](/docs/Activity-Tracker-with-LogDNA?topic=Activity-Tracker-with-LogDNA-view_events#view_events_step2).
+You create a custom view by applying a search query that defines what logs to display through the view. [Learn more](/docs/log-analysis?topic=log-analysis-views).
 
 You can also run any of the following tasks:
 
-* [Attach an alert](/docs/Activity-Tracker-with-LogDNA?topic=Activity-Tracker-with-LogDNA-alerts) to a custom view
-* [Export data](/docs/Activity-Tracker-with-LogDNA?topic=Activity-Tracker-with-LogDNA-export) from a custom view
-* [Rename, and add or modify the description of a view](/docs/Activity-Tracker-with-LogDNA?topic=Activity-Tracker-with-LogDNA-views#views_step5)
-* [Apply a line template](/docs/Activity-Tracker-with-LogDNA?topic=Activity-Tracker-with-LogDNA-views#views_step4) to a view to customize how the data is displayed
+* [Attach an alert](/docs/log-analysis?topic=log-analysis-alerts) to a custom view
+* [Export data](/docs/log-analysis?topic=log-analysis-export) from a custom view
+* [Rename, and add or modify the description of a view](/docs/log-analysis?topic=log-analysis-views#views_step5)
+* [Apply a line template](/docs/log-analysis?topic=log-analysis-views#views_step4) to a view to customize how the data is displayed
 * Organize views by grouping them into **categories**
 
 
@@ -64,8 +63,6 @@ You can also run any of the following tasks:
 {: #mon_time_view}
 
 You might want to see logs within a specific timeframe.
-
-You can select the logs that are displayed through a view by [applying a timeframe](/docs/Activity-Tracker-with-LogDNA?topic=Activity-Tracker-with-LogDNA-view_events#view_events_step3).
 
 You can apply a timestamp by specifying an absolute time, a relative time, or a time range.
 
@@ -85,7 +82,7 @@ There are scenarios where you might want to be notified if specific logs are gen
 Through the {{site.data.keyword.la_full_notm}} web UI, you can apply search queries to define the logs that are displayed through a custom view. Then, you can attach an alert to that view to be notified when a condition occurs. A bell icon is displayed with the view to indicate that this view has an alert attached to it.
 
 Consider the following information when you configure alerts:
-* You can [attach one alert](/docs/Activity-Tracker-with-LogDNA?topic=Activity-Tracker-with-LogDNA-alerts) per custom view.
+* You can [attach one alert](/docs/log-analysis?topic=log-analysis-alerts) per custom view.
 
 * There are 2 types of alerts: presence alert and absence alert.
 
@@ -93,13 +90,13 @@ Consider the following information when you configure alerts:
 
 * The time frequency that is specified as part of the condition defines the reset time of an alert after it is triggered.
 
-* You can define multiple notification channels for an alert. For information about the supported channels, see [Alert notification channels](/docs/Activity-Tracker-with-LogDNA?topic=Activity-Tracker-with-LogDNA-channels).
+* You can define multiple notification channels for an alert. For information about the supported channels, see [Alert notification channels](/docs/log-analysis?topic=log-analysis-alerts).
 
-* You can [define **presets**](/docs/Activity-Tracker-with-LogDNA?topic=Activity-Tracker-with-LogDNA-alerts#alerts_step3). A preset is an alert template that users can attach to any number of views. Service administrators define presets. Notice that when you delete a preset, any alerts that are defined by using this preset are automatically deleted.
+* You can [define **presets**](/docs/log-analysis?topic=log-analysis-preset_ui). A preset is an alert template that users can attach to any number of views. Service administrators define presets. Notice that when you delete a preset, any alerts that are defined by using this preset are automatically deleted.
 
 * You can enable or disable the feature on alerts that allow a user to mute an alert for a period of time. This feature only applies to email notification channels.
 
-* You can [detach an alert](/docs/Activity-Tracker-with-LogDNA?topic=Activity-Tracker-with-LogDNA-alerts#alerts_delete_view) from a view.
+* You can [detach an alert](/docs/log-analysis?topic=log-analysis-remove_alert_ui) from a view.
 
 * The timestamp that you see in a notification is set to UTC. For email notifications, you can set the **Timezone** to define a different timestamp value such as local time, for example.
 
@@ -173,7 +170,7 @@ Consider the following information when you export logs:
 ### By using the REST API
 {: #mon_export_api}
 
-You can export logs programmatically by using the logging REST API. [Learn more](/docs/Activity-Tracker-with-LogDNA?topic=Activity-Tracker-with-LogDNA-export_api).
+You can export logs programmatically by using the logging REST API. [Learn more](/apidocs/log-analysis#export).
 
 When you export logs programmatically, consider the following information:
 
@@ -194,4 +191,4 @@ After you submit a request, you get an email that is sent to your email address,
 * To get the data, you must click the link and download the compressed file.
 * The compressed file that contains the data that you want to export is available for a maximum of 48 hours.
 
-[Learn more about exporting logs through the web UI](/docs/Activity-Tracker-with-LogDNA?topic=Activity-Tracker-with-LogDNA-export).
+[Learn more about exporting logs through the web UI](/docs/log-analysis?topic=log-analysis-export).

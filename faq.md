@@ -36,7 +36,7 @@ You can access more information about the logs that each service generates from 
 
 First, you must [check whether you have enabled **Platform logs** in the location where your service is available](/docs/log-analysis?topic=log-analysis-config_svc_logs).
 
-Then, check the [Cloud services by location](/docs/Activity-Tracker-with-LogDNA?topic=Activity-Tracker-with-LogDNA-event_types#event_types_location) documentation to find out the location where the logs are available for analysis.
+Then, check the [Cloud services by location](/docs/log-analysis?topic=log-analysis-cloud_services_locations) documentation to find out the location where the logs are available for analysis.
 
 
 ## Can I import archived data back into the logging web UI?
