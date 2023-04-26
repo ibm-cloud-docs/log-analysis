@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2023
-lastupdated: "2023-03-22"
+lastupdated: "2023-04-25"
 
 keywords:
 
@@ -281,6 +281,9 @@ The CIDR blocks with a date next to them indicates the date they will be availab
 | Toronto	  | 10.114.152.128/26  |
 | Toronto	  | 10.11.16.64/26  |
 | Toronto	  | 10.243.35.128/26  |
+| Toronto | 10.115.99.128/25 [10 May 2023]{: tag-cool-gray} |
+| Toronto | 10.11.18.128/25 [10 May 2023]{: tag-cool-gray} |
+| Toronto | 10.243.52.128/25 [10 May 2023]{: tag-cool-gray} |
 {: caption="Table 19. Toronto private CIDR blocks" caption-side="top"}
 
 ### Sao Paulo
