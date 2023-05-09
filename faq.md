@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2023
-lastupdated: "2023-02-20"
+lastupdated: "2023-05-09"
 
 keywords: IBM, Log Analysis, logging, faq
 
@@ -22,28 +22,22 @@ Frequently asked questions about {{site.data.keyword.la_full_notm}}.
 {: #faq_1}
 {: faq}
 
-You can find the list of services that generate logs in the following documentation topic: [Cloud services](/docs/log-analysis?topic=log-analysis-cloud_services).
+You can find the list of Cloud services that generate logs in the following documentation topic: [Cloud services](/docs/log-analysis?topic=log-analysis-cloud_services).
 
-## Where can I find details about the logs that a service generates?
+## Where can I find details about the logs that a Cloud service generates?
 {: #faq_2}
 {: faq}
 
-You can access more information about the logs that each service generates from the following documentation topic: [Cloud services](/docs/log-analysis?topic=log-analysis-cloud_services). For each service, you can link to the logging topic specific to a service where you can get more information.
+You can access more information about the logs that each Cloud service generates from the following documentation topic: [Cloud services](/docs/log-analysis?topic=log-analysis-cloud_services). For each Cloud service, you can link to the logging topic specific to a Cloud service where you can get more information.
 
-## Where can I find the logs that a service generates?
+## Where can I find the logs that a Cloud service generates?
 {: #faq_3}
 {: faq}
 
-First, you must [check whether you have enabled **Platform logs** in the location where your service is available](/docs/log-analysis?topic=log-analysis-config_svc_logs).
+First, you must [check whether you have enabled **Platform logs** in the location where your Cloud service is available](/docs/log-analysis?topic=log-analysis-config_svc_logs).
 
 Then, check the [Cloud services by location](/docs/log-analysis?topic=log-analysis-cloud_services_locations) documentation to find out the location where the logs are available for analysis.
 
-
-## Can I import archived data back into the logging web UI?
-{: #faq_5}
-{: faq}
-
-You cannot import archived data into the logging web UI.
 
 ## How do I configure archiving for my instance?
 {: #faq_6}
@@ -63,12 +57,12 @@ To lauch the logging web UI, complete the following steps:
 {: #faq_8}
 {: faq}
 
-An ingestion key can only be reset or new ones created in the logging web UI. You can have a maximum of 10 ingestion keys active at the same time in a logging instance.
+An ingestion key can be reset or new ones created in the logging web UI or using the API. You can have a maximum of 10 ingestion keys active at the same time in a logging instance.
 
-[Learn more](/docs/log-analysis?topic=log-analysis-ingestion_key#reset).
+Learn more about [resetting using the UI](/docs/log-analysis?topic=log-analysis-ingestion_key#reset) or [resetting using the API](/apidocs/log-analysis#list-key ).
 
 
-## How can I get the ID of an instance?
+## How can I get the ID of a logging instance?
 {: #faq_9}
 {: faq}
 
@@ -79,7 +73,7 @@ ic resource service-instance <INSTANCE_NAME>
 ```
 {: pre}
 
-To get the name of the instance, run the following command `ibmcloud resource service-instances --all-resource-groups`.
+To get the name of the logging instance, run the following command `ibmcloud resource service-instances --all-resource-groups`.
 
 ## Can I import archived data into the UI?
 {: #faq_10}
@@ -96,10 +90,28 @@ Use the [{{site.data.keyword.sqlquery_notm}} service](/docs/sql-query?topic=sql-
 
 If you are unable to [create an API key](/docs/account?topic=account-userapikey&interface=ui) it could be because you are not authorized to do so.
 
-Make sure your ID has the [`User API key creator` permission enabled for the `IAM Identity Service`.](/docs/account?topic=account-allow-api-create)
+Make sure your ID has the `User API key creator` permission enabled for the IAM service` as described [here.](/docs/account?topic=account-allow-api-create)
 
 ## How can I determine the version of the logging agent that is installed?
 {: #faq_12}
 {: faq}
 
 The logging agent version that is installed is returned by running `logdna-agent -V`. You might need to run this command from the directory where the agent is installed.
+
+
+## Can I control the ingested log lines so I can control my service cost?
+{: #faq_13}
+{: faq}
+
+You can control the volume of log lines that you ingest. Controlling the log lines helps you control your {{site.data.keyword.la_short}} service cost. Logs that are filtered out (excluded) are not archived and are not available for search. You do not pay for log lines that are filtered out.
+
+There are different ways in which you can filter out logs sent to {{site.data.keyword.la_short}}:
+
+* You can [configure the agent to drop logs](/docs/log-analysis?topic=log-analysis-exclude_logs_from_agent) before sending them to the {{site.data.keyword.la_short}} service.
+
+* If you send logs to the {{site.data.keyword.la_short}} service, you can define [exclusion rules](/docs/log-analysis?topic=log-analysis-exclusion_rules) to drop logs before they are stored for search.
+   * You can drop the log lines entirely and not see them at all through the UI.
+
+   * You can view the log lines in the UI, but you cannot search on them. However, you can define views and alerts based on the data from these logs.
+
+* You can also configure [usage quotas](/docs/log-analysis?topic=log-analysis-control_usage_quotas) and define conditional usage quota exclusion rules.
