@@ -2,9 +2,9 @@
 
 copyright:
   years: 2019, 2023
-lastupdated: "2023-03-03"
+lastupdated: "2023-05-17"
 
-keywords: IBM Cloud, Log Analysis, streaming
+keywords:
 
 subcollection: log-analysis
 
@@ -54,6 +54,9 @@ Consider the following information when streaming data to an {{site.data.keyword
     - Endpoint URLs to call the APIs
 
     - Credentials for authentication
+
+- If you configure the account to restrict access to configured IP addresses via IAM settings, or if the account limits the network locations that connections are accepted from via context based restrictions rules (CBR) for the {{site.data.keyword.messagehub}} service, you must allowlist the {{site.data.keyword.la_short}} CIDR blocks in the account. For more information, see [{{site.data.keyword.la_short}} CIDR blocks](/docs/log-analysis?topic=log-analysis-cidr) and [{{site.data.keyword.messagehub}} - Restricting network access](/docs/EventStreams?topic=EventStreams-restrict_access).
+
 - To create a topic in {{site.data.keyword.messagehub}}, you must have **manager** role. This role includes the **messagehub.topic.manage** IAM action role that allows an app or user to create or delete topic.
 - The credential that {{site.data.keyword.la_short}} uses to publish data in {{site.data.keyword.messagehub}} must have **writer** role. This role includes the **messagehub.topic.write** IAM action role that allows an app or service to write data to 1 or more topics.
 
