@@ -1,12 +1,13 @@
 ---
 
 copyright:
-  years:  2018, 2023
-lastupdated: "2021-03-28"
+  years: 2019, 2023
+lastupdated: "2023-05-17"
 
-keywords: IBM, Log Analysis, logging, archive logs, COS, cloud object storage
+keywords:
 
 subcollection: log-analysis
+
 
 ---
 

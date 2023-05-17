@@ -2,9 +2,9 @@
 
 copyright:
   years:  2018, 2023
-lastupdated: "2021-08-01"
+lastupdated: "2023-05-17"
 
-keywords: IBM, Log Analysis, logging, archive logs, COS, cloud object storage
+keywords:
 
 subcollection: log-analysis
 
@@ -20,7 +20,9 @@ subcollection: log-analysis
 You can archive logs from an {{site.data.keyword.la_full}} instance into a bucket in an {{site.data.keyword.cos_full_notm}} (COS) instance.
 {: shortdesc}
 
-In {{site.data.keyword.la_short}}, by default archiving is not enabled. Data is available for search and analysis for the number of days that your service instance plan indicates. However, you might need to access the data longer for troubleshooting. You might also have to keep the data for longer for compliance, and for corporate or industry regulations. When you need access to data for longer than the number of search days, you must configure archiving.
+Data is available for search and analysis for the number of days that your service instance plan indicates. However, you might need to access the data longer for troubleshooting. You might also have to keep the data for longer for compliance, and for corporate or industry regulations. When you need access to data for longer than the number of search days, you must configure archiving.
+
+Archiving is not enabled by default.
 
 You can have 1 or more {{site.data.keyword.la_short}} instances per region. Each {{site.data.keyword.la_full_notm}} instance has its own archiving configuration.
 {: important}
@@ -40,11 +42,26 @@ You are responsible for configuring and managing the bucket and the data stored 
 - If you configure archiving in an EU-managed location, you must configure a bucket that complies with the EU-managed and GDPR regulations.
 
 
-After you configure archiving,consider the following information:
-- Logs are automatically archived in a compressed format **(.json.gz)**. Each log preserves its metadata.
-- Logs are archived within 24-48 hours after you save the configuration.
-- Logs are archived hourly.
-- The first archive file is created when the archiving process runs and there is data.
+When you configure archiving, consider the following information:
+
+* Logs are automatically archived in a compressed format **(.json.gz)**. Each log preserves its metadata.
+
+* After you enable and configure archiving, it can take between 24-48 hours before the first archive file is created. Data included in the first archive contains data for only the first hour.
+
+   To create an archive of older data to have available for search, you can [export the data](/docs/log-analysis?topic=log-analysis-export) and uploaded the data to the archiving bucket.
+   {: tip}
+
+* Archives can take 24 hours to be available, but can take as long as 72 hours for larger archive files.
+
+* There is a minimum 6 hour delay from when data is archived.
+
+* Logs are archived hourly. If a log line is received for an archive that was created 6 hours or more in the past, an archive file is created with the file name of the associated archive file appended with a sequence number (for example, `1`).
+
+* If there are no log entries for an hour, an archive file will not be written for that hour.
+
+* In rare cases log lines can be duplicated in archive files. Duplicates can be determined by the log line ID.
+
+* Automatic archiving is disabled for an instance when an the credentials that are used to archive data are invalid for over 24 hours.
 
 The first time the archive process runs the number of days archived is dependent on the plan:
 - The maximum number of days that data is archived includes logs for the past 30 days when the instance has a `30 day search` plan.

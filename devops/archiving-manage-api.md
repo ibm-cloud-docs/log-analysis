@@ -2,11 +2,12 @@
 
 copyright:
   years: 2019, 2023
-lastupdated: "2021-11-04"
+lastupdated: "2023-05-17"
 
-keywords: IBM Cloud, Log Analysis, archiving, API
+keywords:
 
 subcollection: log-analysis
+
 
 ---
 
