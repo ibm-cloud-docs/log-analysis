@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2023
-lastupdated: "2022-08-18"
+lastupdated: "2023-03-07"
 
 keywords: IBM Cloud, Log Analysis, streaming
 
@@ -26,6 +26,7 @@ See [Configure streaming](/docs/log-analysis?topic=log-analysis-streaming#stream
 {: #streaming-configure-l2l-prereqs}
 
 - You must have the ingestion URL and the ingestion key for the {{site.data.keyword.la_short}} instance where you want to stream data.
+- The {{site.data.keyword.la_short}} instance data that will receive data must be configured with a paid service plan. {{site.data.keyword.la_short}} instances on the [`Lite` plan](/docs/log-analysis?topic=log-analysis-service_plans) cannot receive streamed data.
 
 ## Step 1. Configure streaming in the source {{site.data.keyword.la_short}} instance
 {: #streaming-configure-l2l-step1}
@@ -68,13 +69,18 @@ To verify that sample data is streaming, complete the following steps:
 3. Check the field **_meta._source._account** is set to the logging instance ID.  The following additional data is also displayed:
 
    `_account`
-   :   Is the account ID of the account streaming the data.
+   :   A field for internal support use only.
+
+   `_id`
+   :   The line ID from the original line in the source account.
 
    `_instanceId`
-   :   Is the logging instance ID for the account.
+   :   The logging instance ID for the account.
 
    `_region`
-   :   Is the region where the logging data originated. This is the specific region name for the environment where the data originated.
+   :   Contains the region where the logging data originated. Additional information is included for internal support use only. The region within this field is region name where the data originated.
+
+       For example, `a2.ca-tor.prod.ibm` indicates the region originating the log is `ca-tor`.
 
 If you do not see data, do 1 of the following:
 - **Resend sample logs** to verify that sample data is streaming.

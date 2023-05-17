@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2023
-lastupdated: "2022-02-07"
+lastupdated: "2022-05-08"
 
 keywords: IBM Cloud, Log Analysis, usage, usage quotas
 
@@ -89,7 +89,7 @@ The Usage Quotas option is in the left-pane of the LogDNA application, under **S
 
 4. Select the instance in the region where you want to view events. Then, click **Open Dashboard**.
 
-5. In the web UI, click the **Settings** icon ![Settings icon](../images/admin.png "Admin icon") &gt; **Usage** &gt; **Usage Quotas**.
+5. In the web UI, click the **Usage** icon ![Usage icon](../images/usage.png "Usage") &gt; **Usage Quotas**.
 
 ### Enabling and disabling Usage Quotas
 {: #enable_disable_usage_quotas}

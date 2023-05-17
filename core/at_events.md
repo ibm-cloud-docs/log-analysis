@@ -2,9 +2,9 @@
 
 copyright:
   years:  2018, 2023
-lastupdated: "2021-03-28"
+lastupdated: "2023-04-12"
 
-keywords: IBM, Log Analysis, logging, audit, activity tracker, events, auditlogs, security
+keywords:
 
 subcollection: log-analysis
 
@@ -55,7 +55,8 @@ The following table lists custom fields that are included in these events:
 
 | Action                                            | Description                |
 |---------------------------------------------------|----------------------------|
-| `logdna.account.update`       | This event is generated when an administrator turns on or off a feature for a logging instance. |
+| `logdna.account-archive-setting.configure`       | This event is generated when an administrator turns off archiving for a logging instance. |
+| `logdna.archive-configuration.update`       | This event is generated when an administrator turns on archiving for a logging instance. |
 {: caption="Table 3. Events for archiving actions" caption-side="top"}
 
 The following table lists custom fields that are included in these events:
