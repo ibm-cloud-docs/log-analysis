@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2023
-lastupdated: "2021-03-28"
+lastupdated: "2023-06-01"
 
 keywords: IBM, Log Analysis, logging, regulated, highly available workloads
 
@@ -37,7 +37,7 @@ In {{site.data.keyword.cloud_notm}}, you can have 1 or more **stand-alone** acco
 Within an enterprise account, you create a multitiered hierarchy of accounts, with billing and payments for all accounts managed at the enterprise level. [Learn more](/docs/account?topic=account-what-is-enterprise).
 * The root enterprise account serves as the parent account to all other accounts in the enterprise.
 * Users and access management is isolated between the enterprise and its child accounts. No access is automatically inherited between the two types of accounts.
-* Resources and services within an enterprise function the same as in stand-alone accounts. Each account in an enterprise can contain resources in resource groups and services in Cloud Foundry orgs and spaces.
+* Resources and services within an enterprise function the same as in stand-alone accounts. Each account in an enterprise can contain resources in resource groups.
 
 Notice that an enterprise can contain up to 5 tiers of accounts and account groups. In its most basic form, an enterprise has two tiers: the enterprise account, and a single child account.
 
@@ -224,12 +224,6 @@ To configure a logging agent on Linux Ubuntu or Debian, see [Configuring a loggi
 
 **To send data and attach custom metadata to each log record, you can use the REST API.**
 {: tip}
-
-**Configure syslog to collect and forward logs from Cloud Foundry applications.**
-{: tip}
-
-For example, you can configure a custom user provided service (CUPS) for each Cloud Foundry (CF) app that you want to monitor through a logging instance. The CUPS service sends logs via a syslog link to a logging syslog endpoint and port. This option is only available if the CF app send logs to STDOUT and STDERR. If the CF app is configured to send logs via syslog and not to STDOUT and STDERR, this option is not supported. [Learn more](/docs/log-analysis?topic=log-analysis-monitor_cfapp_logs).
-
 
 
 ## Define the IAM strategy

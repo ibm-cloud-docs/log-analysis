@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2023
-lastupdated: "2023-03-06"
+lastupdated: "2023-06-01"
 
 keywords:
 
@@ -22,16 +22,6 @@ List of {{site.data.keyword.cloud}} services that send logs to {{site.data.keywo
 
 You can define only 1 instance per region where {{site.data.keyword.la_full_notm}} is supported with the flag **Platform logs**.
 {: important}
-
-## Cloud Foundry
-{: #platform_cfapps}
-
-[Cloud Foundry (CF)](/docs/cloud-foundry-public?topic=cloud-foundry-public-getting-started) logs are automatically collected and sent to {{site.data.keyword.la_full_notm}}.
-
-You can monitor logs from CF apps through the {{site.data.keyword.la_short}} instance that is configured to receive platform services logs in the location where the app is running.
-{: note}
-
-To see the list of {{site.data.keyword.la_full_notm}} locations where this service sends logs, see [Cloud Foundry](/docs/log-analysis?topic=log-analysis-cloud_services_locations#cs_locations_platform_cfapps).
 
 ## Analytics services
 {: #analytics}
@@ -74,6 +64,7 @@ The following table lists services that send logs to {{site.data.keyword.la_full
 {: caption="Table 3. List of container services" caption-side="top"}
 
 To see the list of {{site.data.keyword.la_full_notm}} locations where these services send logs, see [Container services](/docs/log-analysis?topic=log-analysis-cloud_services_locations#cs_locations_container).
+
 
 ## Database services
 {: #database}

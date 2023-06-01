@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2023
-lastupdated: "2023-04-18"
+lastupdated: "2023-06-01"
 
 keywords:
 
@@ -20,40 +20,6 @@ subcollection: log-analysis
 List of locations where {{site.data.keyword.cloud_notm}} services are enabled to send logs to {{site.data.keyword.la_full}}. You monitor these logs that you monitor through the {{site.data.keyword.la_short}} instance that is configured to receive platform services logs. [Learn more about enabling service platform logs](/docs/log-analysis?topic=log-analysis-config_svc_logs).
 {: shortdesc}
 
-## Cloud Foundry
-{: #cs_locations_platform_cfapps}
-
-The following table shows the locations where automatic collection of Cloud Foundry (CF) logs is enabled. You can monitor these logs through the {{site.data.keyword.la_full_notm}}  instance that is configured with the **service platform logs** in the same location where the CF resource is available.
-
-| Service                                                       | `Dallas (us-south)` |
-|---------------------------------------------------------------|--------------------|
-| Cloud Foundry (CF)                                            | ![Checkmark icon](../images/checkmark-icon.svg)            |
-{: caption="Table 1. Cloud Foundry in America" caption-side="top"}
-{: #cs-cfapps-table-1}
-{: tab-title="America"}
-{: tab-group="cs_cfapps"}
-{: class="simple-tab-table"}
-{: row-headers}
-
-| Service                                                       | `Tokyo (jp-tok)`                                  | `Sydney (au-syd)` |
-|---------------------------------------------------------------|-------------------------------------------------|------------------|
-| Cloud Foundry (CF)                                            | ![Checkmark icon](../images/checkmark-icon.svg) | ![Checkmark icon](../images/checkmark-icon.svg) |
-{: caption="Table 1. Cloud Foundry in Asia Pacific" caption-side="top"}
-{: #cs-cfapps-table-2}
-{: tab-title="Asia Pacific"}
-{: tab-group="cs_cfapps"}
-{: class="simple-tab-table"}
-{: row-headers}
-
-| Service                                                       | `Frankfurt (eu-de)` | `London (eu-gb)` |
-|---------------------------------------------------------------|-------------------|----------------|
-| Cloud Foundry (CF)                                            | ![Checkmark icon](../images/checkmark-icon.svg) | ![Checkmark icon](../images/checkmark-icon.svg)|
-{: caption="Table 1. Cloud Foundry in Europe" caption-side="top"}
-{: #cs-cfapps-table-3}
-{: tab-title="Europe"}
-{: tab-group="cs_cfapps"}
-{: class="simple-tab-table"}
-{: row-headers}
 
 ## Analytics services
 {: #cs_locations_analytics}
@@ -63,7 +29,7 @@ The following table list the locations where automatic collection of analytics s
 | Service                                        | `Dallas (us-south)` | `Washington (us-east)`               |
 |------------------------------------------------|---------------------|--------------------------------------|
 | {{site.data.keyword.PA_SaaS_short}}          |  | ![Checkmark icon](../images/checkmark-icon.svg) |
-{: caption="Table 2. Analytics services" caption-side="top"}
+{: caption="Table 1. Analytics services" caption-side="top"}
 {: #cs_analytics-table-1}
 {: tab-title="America"}
 {: tab-group="cs_analytics"}
@@ -73,7 +39,7 @@ The following table list the locations where automatic collection of analytics s
 | Service                                        | `Tokyo (jp-tok)` |`Sydney (au-syd)`           |
 |------------------------------------------------|------------------|----------------------------|
 | {{site.data.keyword.PA_SaaS_short}}          |   |   |
-{: caption="Table 2. Analytics services" caption-side="top"}
+{: caption="Table 1. Analytics services" caption-side="top"}
 {: #cs_analytics-table-2}
 {: tab-title="Asia Pacific"}
 {: tab-group="cs_analytics"}
@@ -83,7 +49,7 @@ The following table list the locations where automatic collection of analytics s
 | Service                                                       |`Frankfurt (eu-de)`  | `London (eu-gb)` |
 |---------------------------------------------------------------|---------------------|------------------|
 | {{site.data.keyword.PA_SaaS_short}}          |   |   |
-{: caption="Table 2. Analytics services" caption-side="top"}
+{: caption="Table 1. Analytics services" caption-side="top"}
 {: #cs_analytics-table-3}
 {: tab-title="Europe"}
 {: tab-group="cs_analytics"}
@@ -97,7 +63,7 @@ The following table list the locations where automatic collection of analytics s
 |------------------------------------------------|---------------------|--------------------------------------|
 | {{site.data.keyword.openwhisk_short}}          | ![Checkmark icon](../images/checkmark-icon.svg) | ![Checkmark icon](../images/checkmark-icon.svg) |
 | {{site.data.keyword.codeengineshort}}          | ![Checkmark icon](../images/checkmark-icon.svg) | |
-{: caption="Table 3. Compute serverless services integration in America locations" caption-side="top"}
+{: caption="Table 2. Compute serverless services integration in America locations" caption-side="top"}
 {: #cs_comp-table-1}
 {: tab-title="America"}
 {: tab-group="cs_comp"}
@@ -108,7 +74,7 @@ The following table list the locations where automatic collection of analytics s
 |------------------------------------------------|------------------|----------------------------|
 | {{site.data.keyword.openwhisk_short}}          | ![Checkmark icon](../images/checkmark-icon.svg) |   |
 | {{site.data.keyword.codeengineshort}}          | ![Checkmark icon](../images/checkmark-icon.svg) |   |
-{: caption="Table 3. Compute serverless services integration in AP locations" caption-side="top"}
+{: caption="Table 2. Compute serverless services integration in AP locations" caption-side="top"}
 {: #cs_comp-table-2}
 {: tab-title="Asia Pacific"}
 {: tab-group="cs_comp"}
@@ -119,7 +85,7 @@ The following table list the locations where automatic collection of analytics s
 |---------------------------------------------------------------|---------------------|------------------|
 | {{site.data.keyword.openwhisk_short}}          | ![Checkmark icon](../images/checkmark-icon.svg) | ![Checkmark icon](../images/checkmark-icon.svg) |
 | {{site.data.keyword.codeengineshort}}          | ![Checkmark icon](../images/checkmark-icon.svg) | |
-{: caption="Table 3. Compute serverless services integration in Europe locations" caption-side="top"}
+{: caption="Table 2. Compute serverless services integration in Europe locations" caption-side="top"}
 {: #cs_comp-table-3}
 {: tab-title="Europe"}
 {: tab-group="cs_comp"}
@@ -162,7 +128,7 @@ The following tables list the locations where automatic collection of database s
 | {{site.data.keyword.Db2_on_Cloud_long}}           | ![Checkmark icon](../images/checkmark-icon.svg) | ![Checkmark icon](../images/checkmark-icon.svg) |
 | {{site.data.keyword.dashdblong_notm}}     | ![Checkmark icon](../images/checkmark-icon.svg)        | ![Checkmark icon](../images/checkmark-icon.svg) |
 | {{site.data.keyword.dv_short}}      | ![Checkmark icon](../images/checkmark-icon.svg)        | ![Checkmark icon](../images/checkmark-icon.svg) |
-{: caption="Table 4. Database services" caption-side="top"}
+{: caption="Table 3. Database services" caption-side="top"}
 {: #cs-dbs-table-1}
 {: tab-title="America"}
 {: tab-group="cs_dbs"}
@@ -185,7 +151,7 @@ The following tables list the locations where automatic collection of database s
 | {{site.data.keyword.dv_short}}      | ![Checkmark icon](../images/checkmark-icon.svg)        | ![Checkmark icon](../images/checkmark-icon.svg) |                      |
 | {{site.data.keyword.cloud_notm}} {{site.data.keyword.ihsdbaas_mongodb_full}} |    | `Logs are available through the Log Analysis Dallas instance`        |   |
 | {{site.data.keyword.cloud_notm}} {{site.data.keyword.ihsdbaas_postgresql_full}}     |    | `Logs are available through the Log Analysis Dallas instance`        |   |
-{: caption="Table 4. Database services" caption-side="top"}
+{: caption="Table 3. Database services" caption-side="top"}
 {: #cs-dbs-table-2}
 {: tab-title="Asia Pacific"}
 {: tab-group="cs_dbs"}
@@ -206,7 +172,7 @@ The following tables list the locations where automatic collection of database s
 | {{site.data.keyword.cloud_notm}} {{site.data.keyword.ihsdbaas_mongodb_full}}           | ![Checkmark icon](../images/checkmark-icon.svg)              |           |
 | {{site.data.keyword.cloud_notm}} {{site.data.keyword.ihsdbaas_postgresql_full}}           | ![Checkmark icon](../images/checkmark-icon.svg)              |           |
 | {{site.data.keyword.dv_short}}      | ![Checkmark icon](../images/checkmark-icon.svg)        | ![Checkmark icon](../images/checkmark-icon.svg) |
-{: caption="Table 4. Database services" caption-side="top"}
+{: caption="Table 3. Database services" caption-side="top"}
 {: #cs-dbs-table-3}
 {: tab-title="Europe"}
 {: tab-group="cs_dbs"}
@@ -222,7 +188,7 @@ The following table shows the locations where automatic collection of developer 
 | Service                              | `Dallas (us-south)`                             |
 |--------------------------------------|-------------------------------------------------|
 | {{site.data.keyword.en_full}}        | ![Checkmark icon](../images/checkmark-icon.svg) |
-{: caption="Table 5. Developer tools in America" caption-side="top"}
+{: caption="Table 4. Developer tools in America" caption-side="top"}
 {: #cs-devtools-table-4}
 {: tab-title="America"}
 {: tab-group="cs_devtools"}
@@ -232,7 +198,7 @@ The following table shows the locations where automatic collection of developer 
 | Service                              | `Sydney (au-syd)`                               |
 |--------------------------------------|-------------------------------------------------|
 | {{site.data.keyword.en_full}}        | ![Checkmark icon](../images/checkmark-icon.svg) |
-{: caption="Table 5. Developer tools in Asia Pacific" caption-side="top"}
+{: caption="Table 4. Developer tools in Asia Pacific" caption-side="top"}
 {: #cs-devtools-table-5}
 {: tab-title="Asia Pacific"}
 {: tab-group="cs_devtools"}
@@ -242,7 +208,7 @@ The following table shows the locations where automatic collection of developer 
 | Service                               | `Frankfurt (eu-de)`                             | `London (eu-gb)`                                |
 |---------------------------------------|-------------------------------------------------|-------------------------------------------------|
 | {{site.data.keyword.en_full}}         | ![Checkmark icon](../images/checkmark-icon.svg) | ![Checkmark icon](../images/checkmark-icon.svg) |
-{: caption="Table 5. Developer tools in Europe" caption-side="top"}
+{: caption="Table 4. Developer tools in Europe" caption-side="top"}
 {: #cs-devtools-table-6}
 {: tab-title="Europe"}
 {: tab-group="cs_devtools"}
@@ -257,7 +223,7 @@ The following table shows the locations where automatic collection of developer 
 |-------------------------------------------------|----------------------------------------------|-----------------------------------|
 | {{site.data.keyword.appconservicefull}}         | ![Checkmark icon](../images/checkmark-icon.svg) |                              |
 | {{site.data.keyword.mq_short}}                  | ![Checkmark icon](../images/checkmark-icon.svg) | ![Checkmark icon](../images/checkmark-icon.svg) |
-{: caption="Table 6. Integration services" caption-side="top"}
+{: caption="Table 5. Integration services" caption-side="top"}
 {: #cs-int-table-10}
 {: tab-title="America"}
 {: tab-group="cs_int"}
@@ -268,7 +234,7 @@ The following table shows the locations where automatic collection of developer 
 |-----------------------------------------------------------------|----------------|---------------------------|
 | {{site.data.keyword.appconservicefull}}                      |    | ![Checkmark icon](../images/checkmark-icon.svg)|
 | {{site.data.keyword.mq_short}}                               |     | ![Checkmark icon](../images/checkmark-icon.svg)|
-{: caption="Table 6. Integration services" caption-side="top"}
+{: caption="Table 5. Integration services" caption-side="top"}
 {: #cs-int-table-11}
 {: tab-title="Asia Pacific"}
 {: tab-group="cs_int"}
@@ -279,7 +245,7 @@ The following table shows the locations where automatic collection of developer 
 |---------------------------------------------------------------|-------------------|----------------|
 | {{site.data.keyword.appconservicefull}}                    |               | ![Checkmark icon](../images/checkmark-icon.svg)|
 | {{site.data.keyword.mq_short}}                  | ![Checkmark icon](../images/checkmark-icon.svg) | ![Checkmark icon](../images/checkmark-icon.svg) |
-{: caption="Table 6. Integration services" caption-side="top"}
+{: caption="Table 5. Integration services" caption-side="top"}
 {: #cs-int-table-12}
 {: tab-title="Europe"}
 {: tab-group="cs_int"}
@@ -297,7 +263,7 @@ The following table shows the locations where automatic collection of developer 
 | Dedicated host                                         | ![Checkmark icon](../images/checkmark-icon.svg) | ![Checkmark icon](../images/checkmark-icon.svg) |
 | Flow Log Collector                                     | ![Checkmark icon](../images/checkmark-icon.svg) | ![Checkmark icon](../images/checkmark-icon.svg) |
 | VPN                                                    | ![Checkmark icon](../images/checkmark-icon.svg) | `Logs are available through the logging US-South instance` |
-{: caption="Table 7. Networking services" caption-side="top"}
+{: caption="Table 6. Networking services" caption-side="top"}
 {: #cs-net-table-13}
 {: tab-title="America"}
 {: tab-group="cs_net"}
@@ -310,7 +276,7 @@ The following table shows the locations where automatic collection of developer 
 | Dedicated host                         | ![Checkmark icon](../images/checkmark-icon.svg) | ![Checkmark icon](../images/checkmark-icon.svg) |
 | Flow Log Collector                     | ![Checkmark icon](../images/checkmark-icon.svg) | ![Checkmark icon](../images/checkmark-icon.svg) |
 | VPN                                              | ![Checkmark icon](../images/checkmark-icon.svg)             | ![Checkmark icon](../images/checkmark-icon.svg) |
-{: caption="Table 7. Networking services" caption-side="top"}
+{: caption="Table 6. Networking services" caption-side="top"}
 {: #cs-net-table-14}
 {: tab-title="Asia Pacific"}
 {: tab-group="cs_net"}
@@ -323,7 +289,7 @@ The following table shows the locations where automatic collection of developer 
 | Dedicated host                        | ![Checkmark icon](../images/checkmark-icon.svg) | ![Checkmark icon](../images/checkmark-icon.svg) |
 | Flow Log Collector                     | ![Checkmark icon](../images/checkmark-icon.svg) | ![Checkmark icon](../images/checkmark-icon.svg) |
 | VPN                                                           | ![Checkmark icon](../images/checkmark-icon.svg)  | ![Checkmark icon](../images/checkmark-icon.svg) |
-{: caption="Table 7. Networking services" caption-side="top"}
+{: caption="Table 6. Networking services" caption-side="top"}
 {: #cs-net-table-15}
 {: tab-title="Europe"}
 {: tab-group="cs_net"}
@@ -341,7 +307,7 @@ The following tables list the locations where automatic collection of security s
 | Service                                                         | `Dallas (us-south)` | `Washington (us-east)`                   |
 |-----------------------------------------------------------------|---------------------|--------------------------------------|
 | {{site.data.keyword.secrets-manager_full}}  | ![Checkmark icon](../images/checkmark-icon.svg) |
-{: caption="Table 8. Security services" caption-side="top"}
+{: caption="Table 7. Security services" caption-side="top"}
 {: #cs-sec-table-16}
 {: tab-title="America"}
 {: tab-group="cs_sec"}
@@ -351,7 +317,7 @@ The following tables list the locations where automatic collection of security s
 | Service                                                         | `Tokyo (jp-tok)` |`Sydney (au-syd)`           |
 |-----------------------------------------------------------------|----------------|---------------------------|
 | {{site.data.keyword.secrets-manager_full}}  | ![Checkmark icon](../images/checkmark-icon.svg)  | ![Checkmark icon](../images/checkmark-icon.svg) |
-{: caption="Table 8. Security services" caption-side="top"}
+{: caption="Table 7. Security services" caption-side="top"}
 {: #cs-sec-table-17}
 {: tab-title="Asia Pacific"}
 {: tab-group="cs_sec"}
@@ -361,7 +327,7 @@ The following tables list the locations where automatic collection of security s
 | Service                                                       |`Frankfurt (eu-de)`  | `London (eu-gb)` |
 |---------------------------------------------------------------|-------------------|----------------|
 | {{site.data.keyword.secrets-manager_full}}  | ![Checkmark icon](../images/checkmark-icon.svg)  | ![Checkmark icon](../images/checkmark-icon.svg) |
-{: caption="Table 8. Security services" caption-side="top"}
+{: caption="Table 7. Security services" caption-side="top"}
 {: #cs-sec-table-18}
 {: tab-title="Europe"}
 {: tab-group="cs_sec"}
