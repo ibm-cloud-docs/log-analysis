@@ -2,9 +2,9 @@
 
 copyright:
   years:  2018, 2023
-lastupdated: "2021-03-28"
+lastupdated: "2023-06-01"
 
-keywords: IBM, Log Analysis, logging, overview, personal data, data deletion, PHI, data, data security, _service-name_
+keywords: IBM, Log Analysis, logging, overview, personal data, data deletion, PHI, data, data security, log-analysis
 
 subcollection: log-analysis
 
@@ -26,7 +26,7 @@ To ensure that you can securely manage your data when you use {{site.data.keywor
 ### Platform logs
 {: #data-collection-platform}
 
-Log data from {{site.data.keyword.cloud_notm}} services, Cloud Foundry (CF) framework, and CF applications is collected automatically and available for analysis through the web UI. This data is collected and forwarded to the **platform logs instance** in the location where the service is available. [Learn more about the services that send logs to the platform service logs instance](/docs/log-analysis?topic=log-analysis-cloud_services).
+Log data from {{site.data.keyword.cloud_notm}} services is collected automatically and available for analysis through the web UI. This data is collected and forwarded to the **platform logs instance** in the location where the service is available. [Learn more about the services that send logs to the platform service logs instance](/docs/log-analysis?topic=log-analysis-cloud_services).
 
 ### Logging agent
 {: #data-collection-agent}

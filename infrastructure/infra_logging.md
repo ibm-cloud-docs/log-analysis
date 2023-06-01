@@ -2,9 +2,9 @@
 
 copyright:
   years:  2018, 2023
-lastupdated: "2022-02-21"
+lastupdated: "2023-06-01"
 
-keywords: IBM, Log Analysis, logging, infrastructure
+keywords:
 
 subcollection: log-analysis
 
@@ -17,47 +17,6 @@ subcollection: log-analysis
 
 In {{site.data.keyword.la_short}}, you can send infrastructure logs to an {{site.data.keyword.la_full_notm}} instance from a broad range of sources:
 {: shortdesc}
-
-
-## Logging with Cloud Foundry
-{: #infra_logging_cf}
-
-
-In {{site.data.keyword.cloud}} public, you can monitor logs from Cloud Foundry (CF) resources that run in the {{site.data.keyword.cloud_notm}} or outside the {{site.data.keyword.cloud_notm}} by using the {{site.data.keyword.la_full_notm}} service.
-
-If your CF resources run on {{site.data.keyword.cloud_notm}} public, you can choose to automatically collect these logs and monitor them through the {{site.data.keyword.la_full_notm}} instance that is provisioned in the same region, and that is enabled to host service platform logs. Alternatively, you can choose to configure a custom user provided (CUPS) service for your app, so system and application logs are collected and streamed to a custom logging instance.
-
-If your CF resources run on {{site.data.keyword.cloud_notm}} dedicated or outside the {{site.data.keyword.cloud_notm}}, you can configure a custom user provided (CUPS) service for your app, so system and application logs are collected and streamed to a custom logging instance.
-
-|                          |
-|--------------------------|
-| ![Monitor CF resources in IBM Cloud Public](../images/components-cf-public.png "Monitor CF resources in IBM Cloud Public") |
-{: caption="Methods that can be adopted to monitor CF resource logs in {{site.data.keyword.cloud_notm}} public" caption-side="top"}
-{: #end-api-img-2}
-{: tab-title="Monitor CF resources in IBM Cloud Public"}
-{: tab-group="cf-img"}
-{: class="simple-tab-table"}
-
-|                          |
-|--------------------------|
-| ![Monitor CF resources in IBM Cloud Dedicated](../images/components-cf-dedicated.png "Monitor CF resources in IBM Cloud Dedicated") |
-{: caption="Methods that can be adopted to monitor CF resource logs in {{site.data.keyword.cloud_notm}} dedicated" caption-side="top"}
-{: #end-api-img-1}
-{: tab-title="Monitor CF resources in IBM Cloud Dedicated"}
-{: tab-group="cf-img"}
-{: class="simple-tab-table"}
-
-|                          |
-|--------------------------|
-| ![Monitor CF resources outside the IBM Cloud Public](../images/components-cf-outside-ibm-cloud.png "Monitor CF resources outside the IBM Cloud Public") |
-{: caption="Methods that can be adopted to monitor CF resource logs outside the {{site.data.keyword.cloud_notm}}" caption-side="top"}
-{: #end-api-img-3}
-{: tab-title="Monitor CF resources outside the IBM Cloud Public"}
-{: tab-group="cf-img"}
-{: class="simple-tab-table"}
-
-For more information, see [Logging with Cloud Foundry](/docs/log-analysis?topic=log-analysis-monitor_cfapp_logs).
-
 
 ## Logging with Kubernetes clusters
 {: #infra_logging_cluster}
@@ -73,9 +32,6 @@ To configure cluster-level logging for a Kubernetes cluster, you must complete t
 3. Deploy and configure the logging agent in the cluster.
 
 ![Log Analysis component overview on the {{site.data.keyword.cloud_notm}}](../images/kube.png "Log Analysis component overview on the {{site.data.keyword.cloud_notm}}"){: caption="Log Analysis component overview on the {{site.data.keyword.cloud_notm}} for Kubernetes" caption-side="bottom"}
-
-If you choose to send your Cloud Foundry logs by configuring a custom user provided (CUPS) service for your app, you must enable a port to send logs via syslog to your logging instance. If you are using (a) the classic syslog protocol, (b) a custom port in syslog-ng, or (c) a custom port in rsyslog, there is no authentication available and anyone with knowledge of the endpoint can submit logs to your instance. As a result, depending on your environment, your use of the classic syslog protocol or custom port configurations with `syslog-ng` or `rsyslog` may present a significant security risk.  Use these configurations at your organization's own risk.  Validate with your compliance and security teams whether this security risk is acceptable to your organization.
-{: important}
 
 For more information, see [Logging with Kubernetes clusters](/docs/log-analysis?topic=log-analysis-kube).
 
@@ -125,9 +81,10 @@ You can send logs to an {{site.data.keyword.la_full_notm}} instance via Syslog. 
 To configure syslog, you must enable a port to send logs via syslog to your logging instance. If you are using (a) the classic syslog protocol, (b) a custom port in syslog-ng, or (c) a custom port in rsyslog, there is no authentication available and anyone with knowledge of the endpoint can submit logs to your instance.  Depending on your environment, this may present a significant security risk. Use these configurations at your organization’s own risk.  Validate with your compliance and security teams whether this security risk is acceptable to your organization.
 {: important}
 
-To use a custom port to send logs via UDP, you can open an IBM support ticket. For information about opening an IBM support ticket, or about support levels and ticket severities, see [Getting support](/docs/get-support).
+To use a custom port to send logs via UDP and to disable a custom port, you can open an IBM support ticket. For information about opening an IBM support ticket, or about support levels and ticket severities, see [Getting support](/docs/get-support).
 
 For more information on using Syslog, see [Logging with Syslog](/docs/log-analysis?topic=log-analysis-syslog).
+
 
 ## Logging with Windows systems
 {: #infra_logging_windows}
