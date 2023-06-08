@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2023
-lastupdated: "2023-04-25"
+lastupdated: "2023-06-08"
 
 keywords:
 
@@ -18,7 +18,7 @@ subcollection: log-analysis
 Classless Inter-Domain Routing (CIDR) blocks are ranges of addresses. {{site.data.keyword.la_full}} traffic will be sent from these addresses. This traffic includes webhooks, archiving to {{site.data.keyword.cos_full_notm}}, streaming to {{site.data.keyword.messagehub}} and so on. You can use these CIDR blocks in firewalls and other configurations to ensure that the data received by your code, or another {{site.data.keyword.IBM_notm}} service, originates only from {{site.data.keyword.la_full_notm}}.
 {: shortdesc}
 
-The CIDR blocks with a date next to them indicates the date they will be available.
+The CIDR blocks with a date next to them indicates the date they will be available. The CIDR blocks indicated as [Deprecated]{: tag-deprecated} are no longer supported and should be removed from any configured allowlists.
 {: important}
 
 ## Public CIDR blocks
@@ -98,7 +98,7 @@ The CIDR blocks with a date next to them indicates the date they will be availab
 | Region   | CIDR block |
 |----------|------------|
 | London    | 158.176.89.32/27  |
-| London    | 158.176.143.48/28  |
+| London    | 158.176.143.48/28 [Deprecated]{: tag-deprecated}  |
 | London    | 141.125.139.160/27  |
 | London    | 141.125.139.144/28  |
 | London    | 158.175.167.48/28  |
@@ -150,7 +150,7 @@ The CIDR blocks with a date next to them indicates the date they will be availab
 |----------|------------|
 | Toronto	   | 169.53.180.32/28  |
 | Toronto | 169.55.136.192/27 [9 March 2023]{: tag-cool-gray} |
-| Toronto	   | 163.74.69.208/28  |
+| Toronto	   | 163.74.69.208/28 [Deprecated]{: tag-deprecated} |
 | Toronto	   | 163.75.69.160/28  |
 | Toronto	   | 163.74.71.224/27 [9 March 2023]{: tag-cool-gray} |
 | Toronto	   | 163.75.75.128/27 [9 March 2023]{: tag-cool-gray} |

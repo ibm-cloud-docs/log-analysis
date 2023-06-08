@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018, 2023
-lastupdated: "2023-04-25"
+lastupdated: "2023-06-08"
 
 keywords: Log Analysis release notes
 
@@ -19,6 +19,13 @@ content-type: release-note
 
 Use these release notes to learn about updates to {{site.data.keyword.la_full}}.
 {: shortdesc}
+
+## 8 June 2023
+{: #log-analysis-jun0823}
+{: release-note}
+
+CIDR blocks deprecated in London and Toronto
+:   Some CIDR blocks have been deprecated in London and Toronto. You should remove deprecated CIDR blocks from any configured allowlists. See [CIDR blocks](/docs/log-analysis?topic=log-analysis-cidr) for more information.
 
 ## 25 April 2023
 {: #log-analysis-apr2523}
