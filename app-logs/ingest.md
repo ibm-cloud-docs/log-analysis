@@ -2,9 +2,9 @@
 
 copyright:
   years:  2018, 2023
-lastupdated: "2021-04-12"
+lastupdated: "2023-06-16"
 
-keywords: IBM, Log Analysis, logging, ingestion
+keywords:
 
 subcollection: log-analysis
 
@@ -113,16 +113,6 @@ curl "https://logs.us-south.logging.cloud.ibm.com/logs/ingest?hostname=MYHOST&no
 
 
 ## Limits when you send logs
-{: #ingest_limits}
+{: #api_ingest_limits}
 
-Consider the following limits when you send logs to an {{site.data.keyword.la_full_notm}} instance:
-
-- `Body size`: Maximum size of 10 MB at ingestion.
-- `Message size`: Maximum size of 16 KB at ingestion. After 16K, the data is truncated at ingestion.
-- `Metadata size`: Maximum size of 32 KB.
-- `Hostname length`: Maximum size of 256 characters.
-- `App name length`: Maximum size of 512 characters.
-- `Log Level`: Maximum size of 80 characters.
-- `Tags`: Maximum size of 80 characters.
-- `Depth of nested fields`: 3 is the maximum number of nested fields that are parsed at ingestion.
-- `Number of unique fields`: A maximum of 500 fields are indexed per day.
+There are limits when sending logs.  For more information see [Limits when sending logs.](/docs/log-analysis?topic=log-analysis-ingest_limits)

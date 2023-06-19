@@ -221,6 +221,7 @@ toc:
   - navgroup:
       id: reference
       topics:
+      - limits.md
       - endpoints.md
       - cidr.md
       - regions.md
