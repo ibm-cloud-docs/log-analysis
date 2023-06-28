@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2023
-lastupdated: "2023-06-08"
+lastupdated: "2023-06-27"
 
 keywords:
 
@@ -66,7 +66,7 @@ The CIDR blocks with a date next to them indicates the date they will be availab
 |----------|------------|
 | Frankfurt | 161.156.114.96/28  |
 | Frankfurt | 158.177.213.0/25  |
-| Frankfurt | 158.177.168.32/28  |
+| Frankfurt | 158.177.168.32/28 [Deprecated]{: tag-deprecated} |
 | Frankfurt | 149.81.103.80/28  |
 | Frankfurt | 158.177.37.192/26  |
 | Frankfurt | 158.177.76.160/27  |

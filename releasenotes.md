@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018, 2023
-lastupdated: "2023-06-08"
+lastupdated: "2023-06-27"
 
 keywords: Log Analysis release notes
 
@@ -19,6 +19,13 @@ content-type: release-note
 
 Use these release notes to learn about updates to {{site.data.keyword.la_full}}.
 {: shortdesc}
+
+## 27 June 2023
+{: #log-analysis-jun2723}
+{: release-note}
+
+CIDR block deprecated in Frankfurt
+:   A CIDR block has been deprecated in Frankfurt. You should remove deprecated CIDR blocks from any configured allowlists. See [CIDR blocks](/docs/log-analysis?topic=log-analysis-cidr) for more information.
 
 ## 8 June 2023
 {: #log-analysis-jun0823}
