@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2023
-lastupdated: "2023-02-01"
+lastupdated: "2023-06-23"
 
 keywords: IBM, Log Analysis, logging instance, regions
 
@@ -19,7 +19,7 @@ subcollection: log-analysis
 {: shortdesc}
 
 
-![The image shows the locations where the {{site.data.keyword.la_full_notm}} service is available.](images/world-map_min.png){: caption="Figure 1. Displays the regions where you can create and manage {{site.data.keyword.la_full_notm}} resources." caption-side="bottom"}
+![The image shows the locations where the {{site.data.keyword.la_full_notm}} service is available.](images/Log-Analysis-09-Locations.svg){: caption="Figure 1. Displays the regions where you can create and manage {{site.data.keyword.la_full_notm}} resources." caption-side="bottom"}
 
 This image is an artistic representation and does not reflect actual political or geographic boundaries.
 {: note}

@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2023
-lastupdated: "2022-02-21"
+lastupdated: "2023-06-23"
 
 keywords: IBM, Log Analysis, logging, windows, tutorial
 
@@ -41,9 +41,12 @@ On the {{site.data.keyword.cloud_notm}}, configure an Windows server to forward 
 3. Configure NXLog on the Windows server.
 4. Optionally, add additional directories to be monitored by the agent.
 
-![Component overview on the {{site.data.keyword.cloud_notm}}](../images/windows.svg "Component overview on the {{site.data.keyword.cloud_notm}}")
+![Component overview on the {{site.data.keyword.cloud_notm}}](../images/Log-Analysis-04-Windows.svg "Component overview on the {{site.data.keyword.cloud_notm}}"){: caption="Figure 1. Component overview" caption-side="bottom"}
 
 In this tutorial, you will learn how to configure a Windows server to forward logs to an {{site.data.keyword.la_full_notm}} instance.
+
+In this tutorial you will configure a Windows VPC server.  See [Logging with Windows Server systems](/docs/log-analysis?topic=log-analysis-windows_serv) for a tutorial on configuring an existing Windows Server system.
+{: note}
 
 ## Before you begin
 {: #windowsvpc_prereqs}
@@ -71,6 +74,7 @@ The {{site.data.keyword.cloud_notm}} CLI must be installed. For more information
 
 ## Provision an Windows VPC server instance
 {: #windowsvpc_prov}
+{: step}
 
 If you have an existing Windows virtual server instance you want to monitor, you can skip this step.
 
@@ -80,6 +84,7 @@ If you have an existing Windows virtual server instance you want to monitor, you
 
 ## Provision an {{site.data.keyword.la_full_notm}} instance
 {: #windowsvpc_provla}
+{: step}
 
 To provision an instance of {{site.data.keyword.la_full_notm}} through the {{site.data.keyword.cloud_notm}} UI, complete the following steps:
 
@@ -118,6 +123,7 @@ To provision an instance of logging through the CLI, see [Provisioning logging t
 
 ## Access your Windows instance
 {: #windowsvpc_access_vpc}
+{: step}
 
 Use a remote desktop client to [access your Windows instance.](/docs/vpc?topic=vpc-vsi_is_connecting_windows)  To do so you will need to do the following:
 
@@ -174,6 +180,7 @@ Use a remote desktop client to [access your Windows instance.](/docs/vpc?topic=v
 
 ## Launch the logging Web UI
 {: #windowsvpc_launch_ui}
+{: step}
 
 To launch the {{site.data.keyword.la_full_notm}} dashboard from the {{site.data.keyword.cloud_notm}} UI, complete the following steps:
 
@@ -196,6 +203,7 @@ To launch the {{site.data.keyword.la_full_notm}} dashboard from the {{site.data.
 
 ## View your logs
 {: #windowsvpc_view_logs}
+{: step}
 
 From the logging Web UI, you can view your logs as they pass through the system. You view logs by using log tailing.
 

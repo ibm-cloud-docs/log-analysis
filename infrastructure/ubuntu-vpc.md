@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2023
-lastupdated: "2022-02-02"
+lastupdated: "2023-06-23"
 
 keywords: IBM, Log Analysis, logging, ubuntu, tutorial
 
@@ -39,7 +39,7 @@ On the {{site.data.keyword.cloud_notm}}, configure an Ubuntu server to forward l
 3. Configure the logging agent in the Ubuntu server.
 4. Optionally, add additional directories to be monitored by the agent.
 
-![Component overview on the {{site.data.keyword.cloud_notm}}](../images/ubuntu.png "Component overview on the {{site.data.keyword.cloud_notm}}")
+![Component overview on the {{site.data.keyword.cloud_notm}}](../images/Log-Analysis-03-Ubuntu.svg "Component overview on the {{site.data.keyword.cloud_notm}}"){: caption="Figure 1. Component overview on the {{site.data.keyword.cloud_notm}}" caption-side="bottom"}
 
 In this tutorial, you will learn how to configure an Ubuntu server to forward logs to an {{site.data.keyword.la_full_notm}} instance.
 

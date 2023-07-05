@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018, 2023
-lastupdated: "2021-03-28"
+lastupdated: "2023-06-23"
 
 keywords: IBM, Log Analysis, logging, security, connection
 
@@ -26,7 +26,7 @@ Review the following sample architecture for {{site.data.keyword.la_full_notm}},
 {{site.data.keyword.la_full_notm}} is a multi-tenant, regional service that is available in {{site.data.keyword.cloud_notm}}. You can use it to monitor your applications, platform resources, and infrastructure.
 
 
-![{{site.data.keyword.la_full_notm}}](../images/Logging-arch.png "{{site.data.keyword.la_full_notm}} high level architecture")
+![{{site.data.keyword.la_full_notm}}](../images/Log-Analysis-01-Architecture.svg "{{site.data.keyword.la_full_notm}} high level architecture"){: caption="Figure 1. Example services integration scenario." caption-side="bottom"}"
 
 The API server component provides a web and an API interface to the logging service.
 

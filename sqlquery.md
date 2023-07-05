@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2023
-lastupdated: "2022-09-07"
+lastupdated: "2023-06-23"
 
 keywords: IBM, Log Analysis, logging, overview
 
@@ -18,7 +18,7 @@ subcollection: log-analysis
 You can use the {{site.data.keyword.sqlquery_short}} service to query {{site.data.keyword.la_short}} archive files that are stored in an {{site.data.keyword.cos_short}} (COS) bucket in {{site.data.keyword.cloud_notm}}.
 {: shortdesc}
 
-![{{site.data.keyword.cloud_notm}} services integration scenario](images/sqlquery.png "{{site.data.keyword.cloud_notm}} services integration scenario")
+![{{site.data.keyword.cloud_notm}} services integration scenario](images/Log-Analysis-08-Search-Events.svg "{{site.data.keyword.cloud_notm}} services integration scenario"){: caption="Figure 1. Example services integration scenario." caption-side="bottom"}
 
 Each {{site.data.keyword.la_short}} instance has a service plan associated that indicates the number of days that you can query data through the web UI. To have access to the data after this period, you must enable archiving in the {{site.data.keyword.la_short}} instance.
 - When you enable archiving, you get an archive file hourly. This file contains information for that hour. Notice that UTC timestamps are used to determine which records are included in each file.
