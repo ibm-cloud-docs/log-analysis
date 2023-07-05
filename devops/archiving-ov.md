@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2023
-lastupdated: "2023-05-17"
+lastupdated: "2023-06-23"
 
 keywords:
 
@@ -29,7 +29,8 @@ You can have 1 or more {{site.data.keyword.la_short}} instances per region. Each
 
 The following figure shows a high-level view of the different components that are involved when archiving logs:
 
-![High-level view archiving logs](../images/archive.png "High-level view archiving logs")
+![High-level view of archiving logs](../images/Log-Analysis-07-Archiving-Events.svg "High-level view of archiving logs"){: caption="Figure 1. High-level view of archiving logs" caption-side="bottom"}
+
 
 The {{site.data.keyword.cos_full_notm}} instance is provisioned within the context of a resource group. The {{site.data.keyword.la_full_notm}} instance is also provisioned within the context of a resource group. Both instances can be grouped under the same resource group or in different ones.
 

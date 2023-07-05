@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2023
-lastupdated: "2023-02-17"
+lastupdated: "2023-06-23"
 
 keywords:
 
@@ -23,7 +23,7 @@ VMware vCenter Server® is a hosted private cloud that delivers the VMware vSphe
 
 The following graphic depicts the high-level architecture and components of a three node vCenter Server with NSX-T deployment.
 
-![Architecture of a vCenter Server NSX-T deployment](../images/vCenter1.svg "Architecture of a vCenter Server NSX-T deployment"){: caption="Figure 1. Architecture of a vCenter Server NSX-T deployment" caption-side="bottom"}
+![Architecture of a vCenter Server NSX-T deployment](../images/Log-Analysis-05-VMware-vCenter-Architecture.svg "Architecture of a vCenter Server NSX-T deployment"){: caption="Figure 1. Architecture of a vCenter Server NSX-T deployment" caption-side="bottom"}
 
 
 ## Sending logs to {{site.data.keyword.la_short}}
@@ -33,7 +33,7 @@ For VMware vCenter Server deployments, you can configure the events and alarms s
 
 You can also configure your VMware deployment to send vSphere and NSX logs to a remote centralized syslog server by configuring syslog for each component and host. From this centralized server, you can send the data to {{site.data.keyword.la_full_notm}} where you can analyze it, troubleshoot issues, and be alerted of suspicious activity and anomalous behaviour.
 
-![Sending logs overview](../images/vCenter2.svg "Sending logs overview"){: caption="Figure 2. Sending logs" caption-side="bottom"}
+![Sending logs overview](../images/Log-Analysis-06-VMware-vCenter-Architecture.svg "Sending logs overview"){: caption="Figure 2. Sending logs" caption-side="bottom"}
 
 
 - Compute data plane logs are available through vSphere Server.
@@ -216,7 +216,6 @@ You must configure rsyslog to receive logs from the vCenter hosts and components
 
 - Check that rsyslog traffic on port 514, or a custom port configured for rsyslog, is allowed.
 
-
 ### Configure the centralized syslog server to receive logs from the vCenter hosts and components
 {: #vmware-syslog-receive}
 
@@ -233,6 +232,8 @@ input(type="imtcp" port="514")
 
 You can also choose a custom port. Make sure the port is enabled to allow traffic through the firewall.
 {: note}
+
+Then, restart syslog. Run `systemctl restart rsyslog`.
 
 ### Configure a syslog server to send logs to an external system
 {: #vmware-syslog-send}
@@ -257,6 +258,7 @@ Where
 - `<TAGS>` is a comma separated list of tags that you want to attach to each log entry to enhance searchability. For example, you can add the following set of tags `vmware,rsyslog`.
 - `<REGION>` is the region where the {{site.data.keyword.la_short}} instance is provisioned.
 
+Then, restart syslog. Run `systemctl restart rsyslog`.
 
 
 ## Step 2. Configure vCenter Server to send logs to a remote rsyslog server
