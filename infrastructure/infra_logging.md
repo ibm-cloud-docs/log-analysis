@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2023
-lastupdated: "2023-06-01"
+lastupdated: "2023-07-05"
 
 keywords:
 
@@ -31,7 +31,7 @@ To configure cluster-level logging for a Kubernetes cluster, you must complete t
 2. Provision a cluster, for example, a standard cluster on the {{site.data.keyword.containerlong_notm}}.
 3. Deploy and configure the logging agent in the cluster.
 
-![Log Analysis component overview on the {{site.data.keyword.cloud_notm}}](../images/kube.png "Log Analysis component overview on the {{site.data.keyword.cloud_notm}}"){: caption="Log Analysis component overview on the {{site.data.keyword.cloud_notm}} for Kubernetes" caption-side="bottom"}
+![Log Analysis component overview on the {{site.data.keyword.cloud_notm}}](../images/Log-Analysis-02-Kubernetes.svg "Log Analysis component overview on the {{site.data.keyword.cloud_notm}}"){: caption="Log Analysis component overview on the {{site.data.keyword.cloud_notm}} for Kubernetes" caption-side="bottom"}
 
 For more information, see [Logging with Kubernetes clusters](/docs/log-analysis?topic=log-analysis-kube).
 
@@ -50,7 +50,7 @@ On the {{site.data.keyword.cloud_notm}}, you can configure an bare metal to forw
 3. Configure the logging agent in the bare metal.
 4. Optionally, add additional directories to be monitored by the agent.
 
-![Component overview on the {{site.data.keyword.cloud_notm}}](../images/ubuntu.png "Component overview on the {{site.data.keyword.cloud_notm}}"){: caption="Log Analysis component overview on the {{site.data.keyword.cloud_notm}} for bare metal" caption-side="bottom"}
+![Component overview on the {{site.data.keyword.cloud_notm}}](../images/Log-Analysis-03-Ubuntu.svg "Component overview on the {{site.data.keyword.cloud_notm}}"){: caption="Log Analysis component overview on the {{site.data.keyword.cloud_notm}} for bare metal" caption-side="bottom"}
 
 For more information, see [Logging with Bare metals](/docs/log-analysis?topic=log-analysis-ubuntu_baremetal).
 
@@ -69,7 +69,7 @@ On the {{site.data.keyword.cloud_notm}}, you can configure a Linux VPC server to
 3. Configure the logging agent in the Ubuntu server.
 4. Optionally, add additional directories to be monitored by the agent.
 
-![Component overview on the {{site.data.keyword.cloud_notm}}](../images/ubuntu.png "Component overview on the {{site.data.keyword.cloud_notm}}"){: caption="Log Analysis component overview on the {{site.data.keyword.cloud_notm}} for Ubuntu Linux" caption-side="bottom"}
+![Component overview on the {{site.data.keyword.cloud_notm}}](../images/Log-Analysis-03-Ubuntu.svg "Component overview on the {{site.data.keyword.cloud_notm}}"){: caption="Log Analysis component overview on the {{site.data.keyword.cloud_notm}} for Ubuntu Linux" caption-side="bottom"}
 
 For more information, see [Logging with Linux VPC server instances](/docs/log-analysis?topic=log-analysis-ubuntu).
 
@@ -104,7 +104,7 @@ On the {{site.data.keyword.cloud_notm}}, configure an Windows server to forward 
 2. Configure NXLog on the Windows server.
 3. Optionally, add additional directories to be monitored by the agent.
 
-![Component overview on the {{site.data.keyword.cloud_notm}}](../images/windows.svg "Component overview on the {{site.data.keyword.cloud_notm}}"){: caption="Log Analysis component overview on the {{site.data.keyword.cloud_notm}} for Windows" caption-side="bottom"}
+![Component overview on the {{site.data.keyword.cloud_notm}}](../images/Log-Analysis-04-Windows.svg "Component overview on the {{site.data.keyword.cloud_notm}}"){: caption="Log Analysis component overview on the {{site.data.keyword.cloud_notm}} for Windows" caption-side="bottom"}
 
 For more information on logging from Windows systems, see the following:
 

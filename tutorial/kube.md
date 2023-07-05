@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2023
-lastupdated: "2021-03-28"
+lastupdated: "2023-07-05"
 
 keywords: IBM, Log Analysis, logging, kubernetes, tutorial
 
@@ -34,7 +34,7 @@ On the {{site.data.keyword.cloud_notm}}, to configure cluster-level logging for 
 2. Provision a cluster on the {{site.data.keyword.containerlong_notm}}. Kubernetes v1.9+ clusters are supported.
 3. Configure the logging agent on every worker (node) in a cluster.
 
-![logging component overview on the {{site.data.keyword.cloud_notm}}](../images/kube.png "logging component overview on the {{site.data.keyword.cloud_notm}}")
+![logging component overview on the {{site.data.keyword.cloud_notm}}](../images/Log-Analysis-02-Kubernetes.svg "logging component overview on the {{site.data.keyword.cloud_notm}}")
 
 In this tutorial, you will learn how to configure cluster-level logging.
 
