@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2023
-lastupdated: "2023-06-23"
+lastupdated: "2023-07-06"
 
 keywords: IBM, Log Analysis, logging, ubuntu, tutorial, bare metal
 
@@ -184,12 +184,12 @@ To configure your bare metal server to forward logs to your logging instance, co
 1. Install the logging agent. Run the following commands:
 
    ```text
-   echo "deb https://repo.logdna.com stable main" | sudo tee /etc/apt/sources.list.d/logdna.list
+   echo "deb https://assets.logdna.com stable main" | sudo tee /etc/apt/sources.list.d/logdna.list
    ```
    {: pre}
 
    ```text
-   wget -O- https://repo.logdna.com/logdna.gpg | sudo apt-key add -
+   wget -O- https://assets.logdna.com/logdna.gpg | sudo apt-key add -
    ```
    {: pre}
 

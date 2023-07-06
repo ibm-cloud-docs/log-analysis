@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2023
-lastupdated: "2023-02-08"
+lastupdated: "2023-07-06"
 
 keywords: IBM, Log Analysis, logging, config agent, linux
 
@@ -178,7 +178,7 @@ To run the agent as non-root, see [Preparing the version 3 yaml file to run the 
 ### Image versions
 {: #log_analysis_dna_agent_image_linux_versions}
 
-Logging agent images for Linux are public images that are available in the logging repo `https://repo.logdna.com`.
+Logging agent images for Linux are public images that are available in the logging repo `https://assets.logdna.com`.
 
 The following table outlines the agent versions that are available:
 

@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2023
-lastupdated: "2021-10-06"
+lastupdated: "2023-07-06"
 
 keywords: IBM, Log Analysis, logging, config agent, linux, ubuntu
 
@@ -32,12 +32,12 @@ To configure your Ubuntu server to forward logs to your logging instance, comple
 1. Install the logging agent. Run the following commands:
 
     ```text
-    echo "deb https://repo.logdna.com stable main" | sudo tee /etc/apt/sources.list.d/logdna.list
+    echo "deb https://assets.logdna.com stable main" | sudo tee /etc/apt/sources.list.d/logdna.list
     ```
     {: codeblock}
 
     ```text
-    wget -O- https://repo.logdna.com/logdna.gpg | sudo apt-key add -
+    wget -O- https://assets.logdna.com/logdna.gpg | sudo apt-key add -
     ```
     {: codeblock}
 
