@@ -72,7 +72,7 @@ For example, in a cURL request, you must set the `content-type` header as follow
 Some additional headers might be required to make successful requests to the API. Those additional headers are:
 
 ### content-type
-{: #config-api-headers-content-type}
+{: #config-categories-headers-content-type}
 
 Define the `Content-Type` header to make successful requests to the API. The `content-type` header specifies that the request body is in JSON format.
 {: note}
@@ -140,7 +140,7 @@ curl GET https://api.us-south.logging.cloud.ibm.com/v1/config/categories/views \
 {: pre}
 
 ### Deleting a category
-{: #config-categories-create-category-boards}
+{: #config-categories-delete-category-boards}
 
 The following sample deletes a category.
 

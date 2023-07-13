@@ -190,7 +190,7 @@ A multizone region (MZR) consist of 3 or more availability zones that are indepe
 The MZR architecture offers automatic failover between zones within the region, and high availability for a auditing instance withing a region.
 
 ### SZR
-{: #ha_dr_steps_mzr}
+{: #ha_dr_steps_szr}
 
 The SZR architecture offers failover across 3 distinct systems within the single datacenter so that you get high availability from a system failure, but not from a datacenter failure.
 

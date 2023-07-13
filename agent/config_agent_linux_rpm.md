@@ -225,7 +225,7 @@ journalctl _SYSTEMD_INVOCATION_ID=`systemctl show -p InvocationID --value logdna
 {: codeblock}
 
 ### Delete the agent
-{: #config_agent_linux_rpm_cmd5}
+{: #config_agent_linux_rpm_cmd6}
 
 ```text
 yum remove logdna-agent

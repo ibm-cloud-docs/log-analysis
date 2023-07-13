@@ -261,7 +261,7 @@ When you want to specify a result as input in your SQL query, specify the first 
 
 
 ### Step 3.5. Run a query to find errors of the last 30 days
-{: #sqlquery_step3_5}
+{: #sqlquery_step3_5_1}
 
 For example, to find all ERROR log rows for the last 30 days, run the following command:
 
@@ -305,7 +305,7 @@ Where
 
 
 ## EU-managed accounts
-{: #sqlquery_step3_5}
+{: #sqlquery_step3_5_2}
 
 
 To manage logs that are generated in your **EU-supported account** by using the {{site.data.keyword.la_full_notm}} service, consider the following information:

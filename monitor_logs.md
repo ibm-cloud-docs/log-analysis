@@ -140,7 +140,7 @@ For example, you can configure an alert that is triggered after 30 seconds, or w
 
 
 ### Mute alert notifications
-{: #mon_alerts_mute}
+{: #alerts_mute}
 
 By default, the feature that controls the ability of a user to mute notifications is enabled when you configure an alert on a custom view. The **Muteable** feature applies to email notifications only.
 

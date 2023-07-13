@@ -236,7 +236,7 @@ toc:
       - topicgroup:
           label: Logging CLI
           topics:
-          - /log-analysis-cli-plugin/log-analysis-cli-plugin-log-analysis-cli
+          - include: ../log-analysis-cli-plugin/log-analysis-cli.md
 
       - topicgroup:
           label: Logging API

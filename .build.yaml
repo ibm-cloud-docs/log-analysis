@@ -1,0 +1,5 @@
+includes:
+  - https://github.ibm.com/cloud-docs/log-analysis-cli-plugin
+translation:
+  exclude:
+    byFilePath:
