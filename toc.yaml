@@ -216,6 +216,11 @@ toc:
           - alerts/sms.md
           - alerts/slack.md
 
+      - topicgroup:
+          label: Working with templates
+          topics:
+          - template-vmware.md
+
       - core/ha_dr_steps.md
 
   - navgroup:
