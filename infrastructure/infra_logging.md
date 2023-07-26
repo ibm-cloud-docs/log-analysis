@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2023
-lastupdated: "2023-07-05"
+lastupdated: "2023-07-26"
 
 keywords:
 
@@ -111,3 +111,21 @@ For more information on logging from Windows systems, see the following:
 * [Logging from a Windows client](/docs/log-analysis?topic=log-analysis-windows)
 * [Logging from Windows Server systems](/docs/log-analysis?topic=log-analysis-windows_serv)
 * [Logging with Windows VPC server instances](/docs/log-analysis?topic=log-analysis-windows_vpc_tutorial)
+
+## Logging for VMware vCenter Server deployments
+{: #infra_logging_vmware}
+
+You can add logging capabilities to VMware vCenter Server deployments by configuring a centralized syslog server that collects logs from your vSphere environment and sends them to {{site.data.keyword.la_full_notm}} by using rsyslog for analysis, troubleshooting, and alerting.
+
+[VMware templates](/docs/log-analysis?topic=log-analysis-templates-vmware) are available to gain insight on your VMware environments.
+{: tip}
+
+VMware vCenter Server® is a hosted private cloud that delivers the VMware vSphere® stack as a service. The VMware® environment is built in addition to a minimum of three {{site.data.keyword.cloud}} bare metal servers and it offers shared network-attached storage and dedicated software-defined storage options. It also includes the automatic deployment and configuration of an easy-to-manage logical edge firewall, which VMware NSX® powers. For more information, see [vCenter Server overview](/docs/vmwaresolutions?topic=vmwaresolutions-vc_vcenterserveroverview).
+
+The following graphic depicts the high-level architecture and components of a three node vCenter Server with NSX-T deployment.
+
+![Architecture of a vCenter Server NSX-T deployment](../images/Log-Analysis-05-VMware-vCenter-Architecture.svg "Architecture of a vCenter Server NSX-T deployment"){: caption="Figure 1. Architecture of a vCenter Server NSX-T deployment" caption-side="bottom"}
+
+For more information on logging from VMware vCenter Server deployments, see [Logging for VMware vCenter Server deployments](/docs/log-analysis?topic=log-analysis-vmware-vcenter).
+
+
