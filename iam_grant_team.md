@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2023
-lastupdated: "2021-03-28"
+lastupdated: "2022-08-15"
 
 keywords: groups, access
 
@@ -164,7 +164,7 @@ Complete the following steps to assign a policy to an access group through the U
 
 
 
-## Step 3. Add permissions to work in an IAM access group
+## Step 3. Add permissions to work within the context of a logGroup
 {: #iam_grant_group_step3}
 
 Next, you must add a policy that grants the user permissions to work with data in the {{site.data.keyword.la_short}} service within the context of a group.
