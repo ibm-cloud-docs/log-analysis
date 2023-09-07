@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2023
-lastupdated: "2021-03-28"
+lastupdated: "2023-09-07"
 
 keywords: IBM, Log Analysis, logging, config agent
 
@@ -83,7 +83,7 @@ Complete the following steps:
 1. Generate the configuration file of the agent by running the following command:
 
     ```text
-    kubectl get daemonset logdna-agent -o=yaml > prod-logdna-agent-ds.yaml -n ibm-observe
+    kubectl get daemonset logdna-agent -o=yaml > prod-agent-resources.yaml -n ibm-observe
     ```
     {: codeblock}
 
@@ -121,7 +121,7 @@ Complete the following steps:
       ```
       {: codeblock}
 
-    * To exclude all of the _kube-system_ logs and all non-container logs, add:
+    * To exclude all of the *kube-system* logs and all non-container logs, add:
 
       ```yaml
       - name: LOGDNA_EXCLUDE
@@ -136,7 +136,7 @@ Complete the following steps:
 To apply the configuration changes, run the following command:
 
 ```text
-kubectl apply -f prod-logdna-agent-ds.yaml -n ibm-observe
+kubectl apply -f prod-agent-resources.yaml -n ibm-observe
 ```
 {: codeblock}
 

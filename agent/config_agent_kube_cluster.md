@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2023
-lastupdated: "2023-02-01"
+lastupdated: "2023-09-07"
 
 keywords: IBM, Log Analysis, logging, config agent
 
@@ -246,7 +246,7 @@ The deployment is successful when you see one or more logging pods.
 To get a copy of the logging agent configuration that is deployed, you can run the following command:
 
 ```text
- kubectl get daemonset logdna-agent -o=yaml > prod-logdna-agent-ds.yaml -n ibm-observe
+ kubectl get daemonset logdna-agent -o=yaml > prod-agent-resources.yaml -n ibm-observe
 ```
 {: pre}
 

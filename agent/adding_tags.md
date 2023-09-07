@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2023
-lastupdated: "2021-03-28"
+lastupdated: "2023-09-07"
 
 keywords: IBM, Log Analysis, logging, config agent
 
@@ -62,7 +62,7 @@ Complete the following steps to add tags to a cluster:
     Update the configuration file by modifying the local copy. **Note:** You can also generate the configuration file of the agent by running the following command:
 
     ```text
-    kubectl get daemonset logdna-agent -o=yaml > prod-logdna-agent-ds.yaml
+    kubectl get daemonset logdna-agent -o=yaml > prod-agent-resources.yaml
     ```
     {: codeblock}
 
@@ -118,7 +118,7 @@ Complete the following steps to add tags to a cluster:
 5. Apply configuration changes if you edit the file locally.
 
     ```text
-    kubectl apply -f prod-logdna-agent-ds.yaml
+    kubectl apply -f prod-agent-resources.yaml
     ```
     {: codeblock}
 

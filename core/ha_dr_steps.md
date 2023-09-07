@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2018, 2023
-lastupdated: "2023-02-01"
+lastupdated: "2023-09-07"
 
 keywords: IBM, Log Analysis, logging, disaster recovery, ha, high availability, redundancy
 
@@ -47,7 +47,7 @@ Consider using access groups to manage permissions to work with logging instance
 
 - To get the list of instances including all the details, you can run the following command:
 
-    ```
+    ```text
     ibmcloud resource service-instances --all-resource-groups --output JSON > instances.json
     ```
     {: pre}
@@ -63,8 +63,8 @@ Consider using access groups to manage permissions to work with logging instance
 
     For example, you can run the command to get the yaml file:
 
-    ```
-    kubectl get daemonset logdna-agent -o=yaml > prod-logdna-agent-ds.yaml -n ibm-observe
+    ```sh
+    kubectl get daemonset logdna-agent -o=yaml > prod-agent-resources.yaml -n ibm-observe
     ```
     {: pre}
 

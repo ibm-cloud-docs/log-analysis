@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2023
-lastupdated: "2023-07-05"
+lastupdated: "2023-09-07"
 
 keywords: IBM, Log Analysis, logging, kubernetes, tutorial
 
@@ -153,7 +153,7 @@ To configure your Kubernetes cluster in the `us-south` region to forward logs to
 4. Create a Kubernetes daemon set to deploy the logging agent on every worker node of your Kubernetes cluster. The logging agent collects logs with the extension `*.log` and extensionsless files that are stored in the `/var/log` directory of your pod. By default, logs are collected from all namespaces, including `kube-system`, and automatically forwarded to the {{site.data.keyword.la_full_notm}} service.
 
    ```text
-   kubectl create -f https://assets.us-south.logging.cloud.ibm.com/clients/logdna-agent-ds.yaml
+   kubectl create -f https://assets.us-south.logging.cloud.ibm.com/clients/agent-resources.yaml
    ```
    {: pre}
 

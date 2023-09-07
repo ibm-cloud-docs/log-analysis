@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2023
-lastupdated: "2021-03-28"
+lastupdated: "2023-09-07"
 
 keywords: IBM, Log Analysis, logging, kubernetes, tutorial, reset ingestion key
 
@@ -163,7 +163,7 @@ To configure your Kubernetes cluster in the `us-south` region to forward logs to
 4. Configure the logging agent on every worker(node) of your Kubernetes cluster. Run the following command:
 
     ```text
-    kubectl create -f https://assets.us-south.logging.cloud.ibm.com/clients/logdna-agent-ds.yaml -n ibm-observe
+    kubectl create -f https://assets.us-south.logging.cloud.ibm.com/clients/agent-resources.yaml -n ibm-observe
     ```
     {: codeblock}
 
