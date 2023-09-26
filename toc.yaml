@@ -162,6 +162,8 @@ toc:
           - core/architecture-workload-isolation.md
           - core/service-connection.md
           - core/data-security.md
+          - topic: core/cbr.md
+            navtitle: Protecting resources with context-based restrictions
 
       - topicgroup:
           label: Exporting logs
