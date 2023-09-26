@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2023
-lastupdated: "2023-01-10"
+lastupdated: "2023-09-26"
 
 keywords: IBM, Log Analysis, logging, endpoints
 
@@ -22,6 +22,27 @@ For the current list of endpoints that should be allowlisted in your environment
 
 Endpoints and regions that are not listed are unchanged.
 {: note}
+
+## After 26 September 2023
+{: #endpoint-changes-26Sep2023}
+
+The following endpoints will be changing after 26 September 2023. The new IPs are listed in [endpoints](/docs/log-analysis?topic=log-analysis-endpoints). The new IPs can be allowlisted in advance to avoid impacts when the change is made.
+
+### Madrid (eu-es)
+{: #092623_eues}
+
+This is a newly opened region.
+{: note}
+
+* `api.eu-es.logging.cloud.ibm.com`
+* `api.private.eu-es.logging.cloud.ibm.com`
+* `logs.eu-es.logging.cloud.ibm.com`
+* `logs.private.eu-es.logging.cloud.ibm.com`
+* `app.eu-es.logging.cloud.ibm.com`
+* `syslog-a.eu-es.logging.cloud.ibm.com`
+* `syslog-a.private.eu-es.logging.cloud.ibm.com`
+* `syslog-u.eu-es.logging.cloud.ibm.com`
+* `syslog-u.private.eu-es.logging.cloud.ibm.com`
 
 ## After 24 January 2023
 {: #endpoint-changes-24Jan2022}

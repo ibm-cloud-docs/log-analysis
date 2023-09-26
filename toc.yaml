@@ -223,6 +223,14 @@ toc:
           topics:
           - template-vmware.md
 
+      - topicgroup:
+          label: Working with logs in non-supported locations
+          topics:
+          - topic: manage-logs-for-new-region.md
+            navtitle: Working with logs before a region is available
+          - topic: manage-logs-to-new-region.md
+            navtitle: Working with logs after a region is open for business
+
       - core/ha_dr_steps.md
 
   - navgroup:

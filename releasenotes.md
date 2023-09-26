@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018, 2023
-lastupdated: "2023-07-24"
+lastupdated: "2023-09-26"
 
 keywords: Log Analysis release notes
 
@@ -19,6 +19,13 @@ content-type: release-note
 
 Use these release notes to learn about updates to {{site.data.keyword.la_full}}.
 {: shortdesc}
+
+## 26 September 2023
+{: #log-analysis-sep2623}
+{: release-note}
+
+Madrid region support
+:   Madrid is now an online region for {{site.data.keyword.la_full_notm}}. Services can now be provisioned in Madrid and Madrid endpoints can be used. Platform metrics will continue flowing to the Frankfurt region.
 
 ## 24 July 2023
 {: #log-analysis-jul2423}

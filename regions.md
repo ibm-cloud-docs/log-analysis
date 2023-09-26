@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2023
-lastupdated: "2023-06-23"
+lastupdated: "2023-09-11"
 
 keywords: IBM, Log Analysis, logging instance, regions
 
@@ -37,6 +37,7 @@ The following table lists the locations where the service is available:
 | `Asia Pacific`        | `Osaka (jp-osa)`         | `N/A`        | `MZR`     |
 | `Europe`              | `Frankfurt (eu-de) (*)`  | `YES`        | `MZR`     |
 | `Europe`              | `London (eu-gb)`         | `NO`         | `MZR`     |
+| `Europe`              | `Madrid (eu-es) (*)`     | `YES`        | `MZR`     |
 | `North America`       | `Dallas (us-south)`      | `N/A`        | `MZR`     |
 | `North America`       | `Washington (us-east)`   | `N/A`        | `MZR`     |
 | `North America`       | `Toronto (ca-tor)`       | `N/A`        | `MZR`     |
@@ -48,4 +49,4 @@ Where
 * A *region* is a defined geographic territory. A region could be a specific postal code area, a town, a city, a state, a group of states, or even a group of countries.
 * `N/A` means feature that is not applicable to that geography.
 
-`(*)` For more information, see [Enabling the EU Supported setting](/docs/account?topic=account-eu-hipaa-supported#bill_eusupported).
+`(*)` For more information, see [Enabling EU support for your account](/docs/account?topic=account-eu-supported).

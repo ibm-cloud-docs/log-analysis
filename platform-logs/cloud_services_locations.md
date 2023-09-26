@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2023
-lastupdated: "2023-06-01"
+lastupdated: "2023-08-30"
 
 keywords:
 
@@ -46,9 +46,9 @@ The following table list the locations where automatic collection of analytics s
 {: class="simple-tab-table"}
 {: row-headers}
 
-| Service                                                       |`Frankfurt (eu-de)`  | `London (eu-gb)` |
-|---------------------------------------------------------------|---------------------|------------------|
-| {{site.data.keyword.PA_SaaS_short}}          |   |   |
+| Service                                                       |`Frankfurt (eu-de)`  | `London (eu-gb)` |  `Madrid (eu-es)` |
+|---------------------------------------------------------------|---------------------|------------------|--------|
+| {{site.data.keyword.PA_SaaS_short}}          |   |   |   |
 {: caption="Table 1. Analytics services" caption-side="top"}
 {: #cs_analytics-table-3}
 {: tab-title="Europe"}
@@ -81,10 +81,10 @@ The following table list the locations where automatic collection of analytics s
 {: class="simple-tab-table"}
 {: row-headers}
 
-| Service                                                       |`Frankfurt (eu-de)`  | `London (eu-gb)` |
-|---------------------------------------------------------------|---------------------|------------------|
-| {{site.data.keyword.openwhisk_short}}          | ![Checkmark icon](../images/checkmark-icon.svg) | ![Checkmark icon](../images/checkmark-icon.svg) |
-| {{site.data.keyword.codeengineshort}}          | ![Checkmark icon](../images/checkmark-icon.svg) | |
+| Service                                                       |`Frankfurt (eu-de)`  | `London (eu-gb)` |  `Madrid (eu-es)` |
+|---------------------------------------------------------------|---------------------|------------------|----------|
+| {{site.data.keyword.openwhisk_short}}          | ![Checkmark icon](../images/checkmark-icon.svg) | ![Checkmark icon](../images/checkmark-icon.svg) |  |
+| {{site.data.keyword.codeengineshort}}          | ![Checkmark icon](../images/checkmark-icon.svg) | |  |
 {: caption="Table 2. Compute serverless services integration in Europe locations" caption-side="top"}
 {: #cs_comp-table-3}
 {: tab-title="Europe"}
@@ -158,20 +158,20 @@ The following tables list the locations where automatic collection of database s
 {: class="simple-tab-table"}
 {: row-headers}
 
-| Service                                                       |`Frankfurt (eu-de)`  | `London (eu-gb)` |
-|---------------------------------------------------------------|-------------------|----------------|
-| {{site.data.keyword.cloudant_short_notm}}                     | ![Checkmark icon](../images/checkmark-icon.svg) | ![Checkmark icon](../images/checkmark-icon.svg) |
-| {{site.data.keyword.databases-for-elasticsearch_full_notm}}   | ![Checkmark icon](../images/checkmark-icon.svg)| ![Checkmark icon](../images/checkmark-icon.svg)          |
-| {{site.data.keyword.databases-for-etcd_full_notm}}            | ![Checkmark icon](../images/checkmark-icon.svg)| ![Checkmark icon](../images/checkmark-icon.svg)          |
-| {{site.data.keyword.databases-for-mongodb_full_notm}}         | ![Checkmark icon](../images/checkmark-icon.svg)| ![Checkmark icon](../images/checkmark-icon.svg)          |
-| {{site.data.keyword.databases-for-postgresql_full_notm}}      | ![Checkmark icon](../images/checkmark-icon.svg) | ![Checkmark icon](../images/checkmark-icon.svg)          |
-| {{site.data.keyword.messages-for-rabbitmq_full_notm}}         | ![Checkmark icon](../images/checkmark-icon.svg)| ![Checkmark icon](../images/checkmark-icon.svg)          |
-| {{site.data.keyword.databases-for-redis_full_notm}}           | ![Checkmark icon](../images/checkmark-icon.svg)| ![Checkmark icon](../images/checkmark-icon.svg)          |
-| {{site.data.keyword.Db2_on_Cloud_long}}           | ![Checkmark icon](../images/checkmark-icon.svg) | ![Checkmark icon](../images/checkmark-icon.svg) |
-| {{site.data.keyword.dashdblong_notm}}     | ![Checkmark icon](../images/checkmark-icon.svg)        | ![Checkmark icon](../images/checkmark-icon.svg) |
-| {{site.data.keyword.cloud_notm}} {{site.data.keyword.ihsdbaas_mongodb_full}}           | ![Checkmark icon](../images/checkmark-icon.svg)              |           |
-| {{site.data.keyword.cloud_notm}} {{site.data.keyword.ihsdbaas_postgresql_full}}           | ![Checkmark icon](../images/checkmark-icon.svg)              |           |
-| {{site.data.keyword.dv_short}}      | ![Checkmark icon](../images/checkmark-icon.svg)        | ![Checkmark icon](../images/checkmark-icon.svg) |
+| Service                                                       |`Frankfurt (eu-de)`  | `London (eu-gb)` |  `Madrid (eu-es)` |
+|---------------------------------------------------------------|-------------------|----------------|-----------|
+| {{site.data.keyword.cloudant_short_notm}}                     | ![Checkmark icon](../images/checkmark-icon.svg) | ![Checkmark icon](../images/checkmark-icon.svg) |  |
+| {{site.data.keyword.databases-for-elasticsearch_full_notm}}   | ![Checkmark icon](../images/checkmark-icon.svg)| ![Checkmark icon](../images/checkmark-icon.svg)          |  |
+| {{site.data.keyword.databases-for-etcd_full_notm}}            | ![Checkmark icon](../images/checkmark-icon.svg)| ![Checkmark icon](../images/checkmark-icon.svg)          |  |
+| {{site.data.keyword.databases-for-mongodb_full_notm}}         | ![Checkmark icon](../images/checkmark-icon.svg)| ![Checkmark icon](../images/checkmark-icon.svg)          |  |
+| {{site.data.keyword.databases-for-postgresql_full_notm}}      | ![Checkmark icon](../images/checkmark-icon.svg) | ![Checkmark icon](../images/checkmark-icon.svg)          |  |
+| {{site.data.keyword.messages-for-rabbitmq_full_notm}}         | ![Checkmark icon](../images/checkmark-icon.svg)| ![Checkmark icon](../images/checkmark-icon.svg)          |  |
+| {{site.data.keyword.databases-for-redis_full_notm}}           | ![Checkmark icon](../images/checkmark-icon.svg)| ![Checkmark icon](../images/checkmark-icon.svg)          |  |
+| {{site.data.keyword.Db2_on_Cloud_long}}           | ![Checkmark icon](../images/checkmark-icon.svg) | ![Checkmark icon](../images/checkmark-icon.svg) |  |
+| {{site.data.keyword.dashdblong_notm}}     | ![Checkmark icon](../images/checkmark-icon.svg)        | ![Checkmark icon](../images/checkmark-icon.svg) |  |
+| {{site.data.keyword.cloud_notm}} {{site.data.keyword.ihsdbaas_mongodb_full}}           | ![Checkmark icon](../images/checkmark-icon.svg)              |           |  |
+| {{site.data.keyword.cloud_notm}} {{site.data.keyword.ihsdbaas_postgresql_full}}           | ![Checkmark icon](../images/checkmark-icon.svg)              |           |  |
+| {{site.data.keyword.dv_short}}      | ![Checkmark icon](../images/checkmark-icon.svg)        | ![Checkmark icon](../images/checkmark-icon.svg) |  |
 {: caption="Table 3. Database services" caption-side="top"}
 {: #cs-dbs-table-3}
 {: tab-title="Europe"}
@@ -205,9 +205,9 @@ The following table shows the locations where automatic collection of developer 
 {: class="simple-tab-table"}
 {: row-headers}
 
-| Service                               | `Frankfurt (eu-de)`                             | `London (eu-gb)`                                |
-|---------------------------------------|-------------------------------------------------|-------------------------------------------------|
-| {{site.data.keyword.en_full}}         | ![Checkmark icon](../images/checkmark-icon.svg) | ![Checkmark icon](../images/checkmark-icon.svg) |
+| Service                               | `Frankfurt (eu-de)`                             | `London (eu-gb)`                                |  `Madrid (eu-es)` |
+|---------------------------------------|-------------------------------------------------|-------------------------------------------------|-------------|
+| {{site.data.keyword.en_full}}         | ![Checkmark icon](../images/checkmark-icon.svg) | ![Checkmark icon](../images/checkmark-icon.svg) |  |
 {: caption="Table 4. Developer tools in Europe" caption-side="top"}
 {: #cs-devtools-table-6}
 {: tab-title="Europe"}
@@ -241,10 +241,10 @@ The following table shows the locations where automatic collection of developer 
 {: class="simple-tab-table"}
 {: row-headers}
 
-| Service                                                       |`Frankfurt (eu-de)`  | `London (eu-gb)` |
-|---------------------------------------------------------------|-------------------|----------------|
-| {{site.data.keyword.appconservicefull}}                    |               | ![Checkmark icon](../images/checkmark-icon.svg)|
-| {{site.data.keyword.mq_short}}                  | ![Checkmark icon](../images/checkmark-icon.svg) | ![Checkmark icon](../images/checkmark-icon.svg) |
+| Service                                                       |`Frankfurt (eu-de)`  | `London (eu-gb)` |  `Madrid (eu-es)` |
+|---------------------------------------------------------------|-------------------|----------------|------------|
+| {{site.data.keyword.appconservicefull}}                    |               | ![Checkmark icon](../images/checkmark-icon.svg)|  |
+| {{site.data.keyword.mq_short}}                  | ![Checkmark icon](../images/checkmark-icon.svg) | ![Checkmark icon](../images/checkmark-icon.svg) |  |
 {: caption="Table 5. Integration services" caption-side="top"}
 {: #cs-int-table-12}
 {: tab-title="Europe"}
@@ -283,12 +283,12 @@ The following table shows the locations where automatic collection of developer 
 {: class="simple-tab-table"}
 {: row-headers}
 
-| Service                                                       |`Frankfurt (eu-de)`  | `London (eu-gb)` |
-|---------------------------------------------------------------|-------------------|----------------|
-| {{site.data.keyword.loadbalancer_full}} `[1]`               |               |  |
-| Dedicated host                        | ![Checkmark icon](../images/checkmark-icon.svg) | ![Checkmark icon](../images/checkmark-icon.svg) |
-| Flow Log Collector                     | ![Checkmark icon](../images/checkmark-icon.svg) | ![Checkmark icon](../images/checkmark-icon.svg) |
-| VPN                                                           | ![Checkmark icon](../images/checkmark-icon.svg)  | ![Checkmark icon](../images/checkmark-icon.svg) |
+| Service                                                       |`Frankfurt (eu-de)`  | `London (eu-gb)` |  `Madrid (eu-es)` |
+|---------------------------------------------------------------|-------------------|----------------|------------|
+| {{site.data.keyword.loadbalancer_full}} `[1]`               |               |  |  |
+| Dedicated host                        | ![Checkmark icon](../images/checkmark-icon.svg) | ![Checkmark icon](../images/checkmark-icon.svg) |  |
+| Flow Log Collector                     | ![Checkmark icon](../images/checkmark-icon.svg) | ![Checkmark icon](../images/checkmark-icon.svg) |  |
+| VPN                                                           | ![Checkmark icon](../images/checkmark-icon.svg)  | ![Checkmark icon](../images/checkmark-icon.svg) |  |
 {: caption="Table 6. Networking services" caption-side="top"}
 {: #cs-net-table-15}
 {: tab-title="Europe"}
@@ -324,9 +324,9 @@ The following tables list the locations where automatic collection of security s
 {: class="simple-tab-table"}
 {: row-headers}
 
-| Service                                                       |`Frankfurt (eu-de)`  | `London (eu-gb)` |
-|---------------------------------------------------------------|-------------------|----------------|
-| {{site.data.keyword.secrets-manager_full}}  | ![Checkmark icon](../images/checkmark-icon.svg)  | ![Checkmark icon](../images/checkmark-icon.svg) |
+| Service                                                       |`Frankfurt (eu-de)`  | `London (eu-gb)` |  `Madrid (eu-es)` |
+|---------------------------------------------------------------|-------------------|----------------|-----------|
+| {{site.data.keyword.secrets-manager_full}}  | ![Checkmark icon](../images/checkmark-icon.svg)  | ![Checkmark icon](../images/checkmark-icon.svg) |  |
 {: caption="Table 7. Security services" caption-side="top"}
 {: #cs-sec-table-18}
 {: tab-title="Europe"}
