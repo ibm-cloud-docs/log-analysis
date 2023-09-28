@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018, 2023
-lastupdated: "2023-09-26"
+lastupdated: "2023-09-29"
 
 keywords: Log Analysis release notes
 
@@ -19,6 +19,13 @@ content-type: release-note
 
 Use these release notes to learn about updates to {{site.data.keyword.la_full}}.
 {: shortdesc}
+
+## 28 September 2023
+{: #log-analysis-sep2823}
+{: release-note}
+
+Changes to endpoint IP addresses
+:   Several [endpoint IP addresses](/docs/log-analysis?topic=log-analysis-endpoints) are changing after 30 October 2023. If your service is configured to use specific IP addresses or firewall to a specific IP address, then modification to the new IP addresses might be required. For more information on the endpoint changes, see [Service IP changes.](/docs/log-analysis?topic=log-analysis-service-ip-changes#endpoint-changes-30Oct2023)
 
 ## 26 September 2023
 {: #log-analysis-sep2623}
