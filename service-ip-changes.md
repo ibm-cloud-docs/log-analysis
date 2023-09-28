@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2023
-lastupdated: "2023-09-26"
+lastupdated: "2023-09-28"
 
 keywords: IBM, Log Analysis, logging, endpoints
 
@@ -22,6 +22,73 @@ For the current list of endpoints that should be allowlisted in your environment
 
 Endpoints and regions that are not listed are unchanged.
 {: note}
+
+## After 30 October 2023
+{: #endpoint-changes-30Oct2023}
+
+The IP addresses of the following endpoints will be changing after 30 October 2023. The new IPs are listed in [endpoints](/docs/log-analysis?topic=log-analysis-endpoints). The new IPs can be allowlisted in advance to avoid impacts when the change is made.
+
+
+
+### Dallas (us-south)
+{: #231023-ussouth}
+
+* `api.private.us-south.logging.cloud.ibm.com`
+* `logs.private.us-south.logging.cloud.ibm.com`
+
+### Frankfurt (eu-de)
+{: #231023-eude}
+
+* `api.private.eu-de.logging.cloud.ibm.com`
+* `logs.private.eu-de.logging.cloud.ibm.com`
+
+### London (eu-gb)
+{: #231023-eugb}
+
+* `api.private.eu-gb.logging.cloud.ibm.com`
+* `logs.private.eu-gb.logging.cloud.ibm.com`
+
+### Madrid (eu-es)
+{: #231023-eues}
+
+* `api.private.eu-es.logging.cloud.ibm.com`
+* `logs.private.eu-es.logging.cloud.ibm.com`
+
+### Osaka (jp-osa)
+{: #231023-jposa}
+
+* `api.private.jp-osa.logging.cloud.ibm.com`
+* `logs.private.jp-osa.logging.cloud.ibm.com`
+
+### Sao Paulo (br-sao)
+{: #231023-ussouth}
+
+* `api.private.br-sao.logging.cloud.ibm.com`
+* `logs.private.br-sao.logging.cloud.ibm.com`
+
+### Sydney (au-syd)
+{: #231023-ausyd}
+
+* `api.private.au-syd.logging.cloud.ibm.com`
+* `logs.private.au-syd.logging.cloud.ibm.com`
+
+### Tokyo (jp-tok)
+{: #231023-jptok}
+
+* `api.private.jp-tok.logging.cloud.ibm.com`
+* `logs.private.jp-tok.logging.cloud.ibm.com`
+
+### Toronto (ca-tor)
+{: #231023-cator}
+
+* `api.private.ca-tor.logging.cloud.ibm.com`
+* `logs.private.ca-tor.logging.cloud.ibm.com`
+
+### Washington (us-east)
+{: #231023-us-east}
+
+* `api.private.us-east.logging.cloud.ibm.com`
+* `logs.private.us-east.logging.cloud.ibm.com`
 
 ## After 26 September 2023
 {: #endpoint-changes-26Sep2023}
