@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2023
-lastupdated: "2023-09-28"
+lastupdated: "2023-10-18"
 
 keywords: IBM, Log Analysis, logging, endpoints
 
@@ -22,6 +22,17 @@ For the current list of endpoints that should be allowlisted in your environment
 
 Endpoints and regions that are not listed are unchanged.
 {: note}
+
+## After 17 November 2023
+{: #endpoint-changes-17Nov2023}
+
+The IP addresses of the following endpoints will be changing after 17 November 2023. The new IPs are listed in [endpoints](/docs/log-analysis?topic=log-analysis-endpoints). The new IPs can be allowlisted in advance to avoid impacts when the change is made.
+
+### Chennai (in-che)
+{: #231117-inche}
+
+* `api.private.in-che.logging.cloud.ibm.com`
+* `logs.private.in-che.logging.cloud.ibm.com`
 
 ## After 30 October 2023
 {: #endpoint-changes-30Oct2023}

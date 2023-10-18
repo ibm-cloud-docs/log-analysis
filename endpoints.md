@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2023
-lastupdated: "2023-09-28"
+lastupdated: "2023-10-18"
 
 keywords: IBM, Log Analysis, logging, endpoints
 
@@ -79,7 +79,7 @@ The following table shows the private API endpoints:
 
 | Region                 | Private API endpoint                         | Private IP addresses                            | Ports              |
 |------------------------|----------------------------------------------|-------------------------------------------------|--------------------|
-| `Chennai (in-che)`     | `api.private.in-che.logging.cloud.ibm.com`   | 166.9.60.6  \n  \n 166.9.60.11 `(*)`                                      | TCP 443  \n TCP 80 |
+| `Chennai (in-che)`     | `api.private.in-che.logging.cloud.ibm.com`   | 166.9.60.6  \n  \n 166.9.60.11 `(*)`  \n  \n  166.9.249.113 `(*)`  \n 166.9.249.142 `(*)`  \n 166.9.249.178 `(*)`   | TCP 443  \n TCP 80 |
 | `Dallas (us-south)`    | `api.private.us-south.logging.cloud.ibm.com` | 166.9.16.11   \n 166.9.12.12    \n 166.9.14.2  \n  \n 166.9.90.41 `(*)`  \n 166.9.85.89 `(*)`  \n 166.9.61.79 `(*)`   \n  \n  166.9.228.39 `(*)`  \n 166.9.229.39 `(*)`  \n 166.9.230.39 `(*)` | TCP 443  \n TCP 80 |
 | `Frankfurt (eu-de)`    | `api.private.eu-de.logging.cloud.ibm.com`    | 166.9.32.7    \n 166.9.28.2     \n 166.9.30.231  \n  \n 166.9.30.45 `(*)`  \n 166.9.28.159 `(*)`  \n 166.9.32.117 `(*)`  \n  \n 166.9.248.116 `(*)`  \n 166.9.248.149 `(*)` \n 166.9.248.85 `(*)` | TCP 443  \n TCP 80 |
 | `London (eu-gb)`       | `api.private.eu-gb.logging.cloud.ibm.com`    | 166.9.36.2    \n 166.9.38.4     \n 166.9.34.2  \n  \n 166.9.36.105 `(*)`  \n 166.9.34.79 `(*)`  \n 166.9.38.84 `(*)`  \n  \n 166.9.244.22 `(*)`  \n 166.9.244.53 `(*)`  \n 166.9.244.85 `(*)`   | TCP 443  \n TCP 80 |
@@ -129,7 +129,7 @@ The following table shows the private ingestion endpoints:
 
 | Region                   | Private Ingestion endpoint                    | Private IP addresses                        | Ports              |
 |--------------------------|-----------------------------------------------|---------------------------------------------|--------------------|
-| `Chennai (in-che)`       | `logs.private.in-che.logging.cloud.ibm.com`   | 166.9.60.7  \n  \n 166.9.60.11 `(*)` | TCP 443  \n TCP 80 |
+| `Chennai (in-che)`       | `logs.private.in-che.logging.cloud.ibm.com`   | 166.9.60.7  \n  \n 166.9.60.11 `(*)` \n  \n  166.9.249.113 `(*)`  \n 166.9.249.142 `(*)`  \n 166.9.249.178 `(*)` | TCP 443  \n TCP 80 |
 | `Dallas (us-south)`      | `logs.private.us-south.logging.cloud.ibm.com` | 166.9.61.86 \n 166.9.90.101 \n 166.9.86.91  \n  \n 166.9.90.41 `(*)`  \n 166.9.85.89 `(*)`  \n 166.9.61.79 `(*)`  \n  \n  166.9.228.39 `(*)`  \n 166.9.229.39 `(*)`  \n 166.9.230.39 `(*)` | TCP 443  \n TCP 80 |
 | `Frankfurt (eu-de)`      | `logs.private.eu-de.logging.cloud.ibm.com`    | 166.9.28.3  \n 166.9.32.21  \n 166.9.30.238  \n  \n 166.9.30.45 `(*)`  \n 166.9.28.159 `(*)`  \n 166.9.32.117 `(*)`  \n  \n 166.9.248.116 `(*)`  \n 166.9.248.149 `(*)` \n 166.9.248.85 `(*)` | TCP 443  \n TCP 80 |
 | `London (eu-gb)`         | `logs.private.eu-gb.logging.cloud.ibm.com`    | 166.9.36.3  \n 166.9.34.4   \n 166.9.38.5  \n  \n 166.9.36.105 `(*)`  \n 166.9.34.79 `(*)`  \n 166.9.38.84 `(*)`  \n  \n 166.9.244.22 `(*)`  \n 166.9.244.53 `(*)`  \n 166.9.244.85 `(*)` | TCP 443  \n TCP 80 |

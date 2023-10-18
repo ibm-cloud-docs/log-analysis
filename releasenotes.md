@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018, 2023
-lastupdated: "2023-09-29"
+lastupdated: "2023-10-18"
 
 keywords: Log Analysis release notes
 
@@ -19,6 +19,13 @@ content-type: release-note
 
 Use these release notes to learn about updates to {{site.data.keyword.la_full}}.
 {: shortdesc}
+
+## 18 October 2023
+{: #log-analysis-oc1823}
+{: release-note}
+
+Changes to Chennai (in-che) IP addresses
+:   New [endpoint IP addresses](/docs/log-analysis?topic=log-analysis-endpoints) are being added to the Chennai region (in-che) after 17 November 2023. If your service is configured to use specific IP addresses or firewall to a specific IP address, then modification to the new IP addresses might be required. For more information on the endpoint changes, see [Service IP changes.](/docs/log-analysis?topic=log-analysis-service-ip-changes#endpoint-changes-17Nov2023)
 
 ## 28 September 2023
 {: #log-analysis-sep2823}
