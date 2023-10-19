@@ -16,7 +16,7 @@ subcollection: log-analysis
 # Managing logs in a new location after {{site.data.keyword.la_short}} is available
 {: #manage-logs-to-new-region}
 
-To manage events from {{site.data.keyword.cloud_notm}} services that generate logs in a new region where the {{site.data.keyword.la_full_notm}} service is not available until a later date, complete these instructions.
+To manage logs from {{site.data.keyword.cloud_notm}} services that generate logs in a new region where the {{site.data.keyword.la_full_notm}} service is not available until a later date, complete these instructions.
 {: shortdesc}
 
 For example, the Madrid region opened for business in June 2023. {{site.data.keyword.cloud_notm}} services that are available and generate logs send currently those logs to the Frankfurt region. You can manage logs from these services in Frankfurt. Platform logs include the field `logSourceCRN` that specifies the region, location, or data center where the resource is available. For example, for Madrid, you can see the location of logs set to `eu-es`.
@@ -36,9 +36,10 @@ Complete the following steps to enable the service in the new region:
 
 As soon as the {{site.data.keyword.la_full_notm}} service is available in the new region, for example, Madrid, complete the following steps:
 
-1. [Create a new {{site.data.keyword.la_full_notm}} hosted event search instance](docs/activity-tracker?topic=activity-tracker-provision).
+1. [Create a new {{site.data.keyword.la_full_notm}} hosted event search instance](/docs/log-analysis?topic=log-analysis-provision).
 
-2. [Configure IAM access](/docs/activity-tracker?topic=activity-tracker-iam) for the new instance.
+2. [Configure IAM access](/docs/log-analysis?topic=log-analysis-iam) for the new instance.
+
 
 
 ## Step 2. Configure the new instance
@@ -46,19 +47,21 @@ As soon as the {{site.data.keyword.la_full_notm}} service is available in the ne
 
 Complete the following steps:
 
-1. Configure any desired streaming.
+1. Enable platform logs. For more information, see [Configuring IBM Cloud platform logs](/docs/log-analysis?topic=log-analysis-config_svc_logs).
+
+2. Configure any desired streaming.
 
    * To another [{{site.data.keyword.la_full_notm}} instance.]/docs/log-analysis?topic=log-analysis-streaming-configure-l2l)
 
    * To an [{{site.data.keyword.messagehub_full}} instance.](/docs/log-analysis?topic=log-analysis-streaming-configure)
 
-2. On the new instance, configure any desired [archiving.](/docs/log-analysis?topic=log-analysis-archiving-ov)
+3. On the new instance, configure any desired [archiving.](/docs/log-analysis?topic=log-analysis-archiving-ov)
 
-3. Customize the UI for the new instance as needed.
+4. Customize the UI for the new instance as needed.
 
     If you have queries based on location, you must update them. For example, you might need to update the location to `eu-es` for a configuration in the Madrid location.
 
-4. Create any [alerts](/docs/activity-tracker?topic=activity-tracker-alerts) required for your organization on the new instance.
+5. Create any [alerts](/docs/log-analysis?topic=log-analysis-alerts) required for your organization on the new instance.
 
 
 ## Step 3. [Optional] Configure logging agents
