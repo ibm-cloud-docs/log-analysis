@@ -17,7 +17,15 @@ toc:
       topics:
 
       - getting-started.md
-      - agent/logdna_agent.md
+
+      - topicgroup:
+          label: Logging agents
+          topics:
+          - agent/logdna_agent.md
+          - agent/logdna_agent_storage.md
+          - agent/logdna_agent_kube.md
+          - agent/logdna_agent_linux.md
+          - agent/logdna_agent_config.md
 
       - topicgroup:
           label: Logging with IBM Cloud services
