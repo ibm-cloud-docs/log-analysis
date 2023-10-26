@@ -71,7 +71,7 @@ This token must also be sent with the `cloud-resource-name` header to identify w
 For example, a sample cURL looks like:
 
 ```text
-curl https://api.<region>.logging.com/v1/config/view --header 'Authorization: Bearer [IAM_ACCESS_TOKEN]' --header 'cloud-resource-name: [IBM_INSTANCE_CRN]'
+curl https://api.<region>.logging.cloud.ibm.com/v1/config/view --header 'Authorization: Bearer [IAM_ACCESS_TOKEN]' --header 'cloud-resource-name: [IBM_INSTANCE_CRN]'
 ```
 {: codeblock}
 
@@ -92,7 +92,7 @@ You can use either an `apiKey` or a `servicekey` as basic authentication. Simply
 For example, see the following sample when using a service key:
 
 ```
-curl https://api.<region>.logging.com/v1/config/view -u SERVICE_KEY:
+curl https://api.<region>.logging.cloud.ibm.com/v1/config/view -u SERVICE_KEY:
 ```
 {: codeblock}
 
