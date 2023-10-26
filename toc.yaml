@@ -256,6 +256,9 @@ toc:
           topics:
           - include: ../log-analysis-cli-plugin/log-analysis-cli.md
 
+      - topic: security-schemes.md
+        navtitle: API security schemes
+
       - topicgroup:
           label: Logging API
           links:
