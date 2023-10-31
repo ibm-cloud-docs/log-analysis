@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018, 2023
-lastupdated: "2023-10-18"
+lastupdated: "2023-10-31"
 
 keywords: Log Analysis release notes
 
@@ -19,6 +19,13 @@ content-type: release-note
 
 Use these release notes to learn about updates to {{site.data.keyword.la_full}}.
 {: shortdesc}
+
+## 31 October 2023
+{: #log-analysis-oct3123}
+{: release-note}
+ 
+Services now sending logs to Madrid
+:   Some services are now sending logs to Madrid. See [services generating logs by location](/docs/log-analysis?topic=log-analysis-cloud_services_locations) for the services sending logs to Madrid.
 
 ## 18 October 2023
 {: #log-analysis-oc1823}
