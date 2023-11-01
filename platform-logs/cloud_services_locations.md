@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2023
-lastupdated: "2023-10-31"
+lastupdated: "2023-11-01"
 
 keywords:
 
@@ -161,12 +161,12 @@ The following tables list the locations where automatic collection of database s
 | Service                                                       |`Frankfurt (eu-de)`  | `London (eu-gb)` |  `Madrid (eu-es)` |
 |---------------------------------------------------------------|-------------------|----------------|-----------|
 | {{site.data.keyword.cloudant_short_notm}}                     | ![Checkmark icon](../images/checkmark-icon.svg) | ![Checkmark icon](../images/checkmark-icon.svg) | ![Checkmark icon](../images/checkmark-icon.svg) |
-| {{site.data.keyword.databases-for-elasticsearch_full_notm}}   | ![Checkmark icon](../images/checkmark-icon.svg)| ![Checkmark icon](../images/checkmark-icon.svg)          |  |
-| {{site.data.keyword.databases-for-etcd_full_notm}}            | ![Checkmark icon](../images/checkmark-icon.svg)| ![Checkmark icon](../images/checkmark-icon.svg)          |  |
-| {{site.data.keyword.databases-for-mongodb_full_notm}}         | ![Checkmark icon](../images/checkmark-icon.svg)| ![Checkmark icon](../images/checkmark-icon.svg)          |  |
-| {{site.data.keyword.databases-for-postgresql_full_notm}}      | ![Checkmark icon](../images/checkmark-icon.svg) | ![Checkmark icon](../images/checkmark-icon.svg)          |  |
-| {{site.data.keyword.messages-for-rabbitmq_full_notm}}         | ![Checkmark icon](../images/checkmark-icon.svg)| ![Checkmark icon](../images/checkmark-icon.svg)          |  |
-| {{site.data.keyword.databases-for-redis_full_notm}}           | ![Checkmark icon](../images/checkmark-icon.svg)| ![Checkmark icon](../images/checkmark-icon.svg)          |  |
+| {{site.data.keyword.databases-for-elasticsearch_full_notm}}   | ![Checkmark icon](../images/checkmark-icon.svg)| ![Checkmark icon](../images/checkmark-icon.svg)          | ![Checkmark icon](../images/checkmark-icon.svg) |
+| {{site.data.keyword.databases-for-etcd_full_notm}}            | ![Checkmark icon](../images/checkmark-icon.svg)| ![Checkmark icon](../images/checkmark-icon.svg)          | ![Checkmark icon](../images/checkmark-icon.svg) |
+| {{site.data.keyword.databases-for-mongodb_full_notm}}         | ![Checkmark icon](../images/checkmark-icon.svg)| ![Checkmark icon](../images/checkmark-icon.svg)          | ![Checkmark icon](../images/checkmark-icon.svg) |
+| {{site.data.keyword.databases-for-postgresql_full_notm}}      | ![Checkmark icon](../images/checkmark-icon.svg) | ![Checkmark icon](../images/checkmark-icon.svg)          | ![Checkmark icon](../images/checkmark-icon.svg) |
+| {{site.data.keyword.messages-for-rabbitmq_full_notm}}         | ![Checkmark icon](../images/checkmark-icon.svg)| ![Checkmark icon](../images/checkmark-icon.svg)          | ![Checkmark icon](../images/checkmark-icon.svg) |
+| {{site.data.keyword.databases-for-redis_full_notm}}           | ![Checkmark icon](../images/checkmark-icon.svg)| ![Checkmark icon](../images/checkmark-icon.svg)          | ![Checkmark icon](../images/checkmark-icon.svg) |
 | {{site.data.keyword.Db2_on_Cloud_long}}           | ![Checkmark icon](../images/checkmark-icon.svg) | ![Checkmark icon](../images/checkmark-icon.svg) |  |
 | {{site.data.keyword.dashdblong_notm}}     | ![Checkmark icon](../images/checkmark-icon.svg)        | ![Checkmark icon](../images/checkmark-icon.svg) |  |
 | {{site.data.keyword.cloud_notm}} {{site.data.keyword.ihsdbaas_mongodb_full}}           | ![Checkmark icon](../images/checkmark-icon.svg)              |           |  |
@@ -207,7 +207,7 @@ The following table shows the locations where automatic collection of developer 
 
 | Service                               | `Frankfurt (eu-de)`                             | `London (eu-gb)`                                |  `Madrid (eu-es)` |
 |---------------------------------------|-------------------------------------------------|-------------------------------------------------|-------------|
-| {{site.data.keyword.en_full}}         | ![Checkmark icon](../images/checkmark-icon.svg) | ![Checkmark icon](../images/checkmark-icon.svg) |  |
+| {{site.data.keyword.en_full}}         | ![Checkmark icon](../images/checkmark-icon.svg) | ![Checkmark icon](../images/checkmark-icon.svg) | ![Checkmark icon](../images/checkmark-icon.svg) |
 {: caption="Table 4. Developer tools in Europe" caption-side="top"}
 {: #cs-devtools-table-6}
 {: tab-title="Europe"}
