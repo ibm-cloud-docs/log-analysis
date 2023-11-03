@@ -32,4 +32,4 @@ To configure a logging agent you will need to:
 
 2. Install the appropriate agent for your environment: [Kubernetes](/docs/log-analysis?topic=log-analysis-agent_kube) or [Linux](/docs/log-analysis?topic=log-analysis-agent_linux).
 
-3. [Configure your agent.](docs/log-analysis?topic=log-analysis-log_analysis_agent_configure)
+3. [Configure your agent.](/docs/log-analysis?topic=log-analysis-log_analysis_agent_configure)
