@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2023
-lastupdated: "2023-11-01"
+lastupdated: "2023-11-03"
 
 keywords:
 
@@ -61,7 +61,6 @@ The following table list the locations where automatic collection of analytics s
 
 | Service                                        | `Dallas (us-south)` | `Washington (us-east)`               |
 |------------------------------------------------|---------------------|--------------------------------------|
-| {{site.data.keyword.openwhisk_short}}          | ![Checkmark icon](../images/checkmark-icon.svg) | ![Checkmark icon](../images/checkmark-icon.svg) |
 | {{site.data.keyword.codeengineshort}}          | ![Checkmark icon](../images/checkmark-icon.svg) | |
 {: caption="Table 2. Compute serverless services integration in America locations" caption-side="top"}
 {: #cs_comp-table-1}
@@ -72,7 +71,6 @@ The following table list the locations where automatic collection of analytics s
 
 | Service                                        | `Tokyo (jp-tok)` |`Sydney (au-syd)`           |
 |------------------------------------------------|------------------|----------------------------|
-| {{site.data.keyword.openwhisk_short}}          | ![Checkmark icon](../images/checkmark-icon.svg) |   |
 | {{site.data.keyword.codeengineshort}}          | ![Checkmark icon](../images/checkmark-icon.svg) |   |
 {: caption="Table 2. Compute serverless services integration in AP locations" caption-side="top"}
 {: #cs_comp-table-2}
@@ -83,7 +81,6 @@ The following table list the locations where automatic collection of analytics s
 
 | Service                                                       |`Frankfurt (eu-de)`  | `London (eu-gb)` |  `Madrid (eu-es)` |
 |---------------------------------------------------------------|---------------------|------------------|----------|
-| {{site.data.keyword.openwhisk_short}}          | ![Checkmark icon](../images/checkmark-icon.svg) | ![Checkmark icon](../images/checkmark-icon.svg) |  |
 | {{site.data.keyword.codeengineshort}}          | ![Checkmark icon](../images/checkmark-icon.svg) | |  |
 {: caption="Table 2. Compute serverless services integration in Europe locations" caption-side="top"}
 {: #cs_comp-table-3}

@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2023
-lastupdated: "2023-06-01"
+lastupdated: "2023-11-03"
 
 keywords:
 
@@ -45,7 +45,6 @@ The following table lists services that send logs to {{site.data.keyword.la_full
 
 | Service     | Description | More info |
 |-------------|-------------|-------------------|
-| [{{site.data.keyword.openwhisk}}](/docs/openwhisk?topic=openwhisk-getting-started) | {{site.data.keyword.openwhisk_short}} is a polyglot Functions-as-a-Service (FaaS) programming platform based on Apache OpenWhisk that you can use to write lightweight `code called actions`. | [More info](/docs/openwhisk?topic=openwhisk-logs) |
 | [{{site.data.keyword.codeenginefull}}](/docs/codeengine?topic=codeengine-getting-started)| Code Engine is a fully managed, serverless platform that runs your containerized workloads, including web apps, micro-services, event-driven functions, or batch jobs  | [More info](/docs/codeengine?topic=codeengine-view-logs). |
 {: caption="Table 2. List of serverless compute services" caption-side="top"}
 
@@ -76,7 +75,6 @@ The following table lists services that send logs to {{site.data.keyword.la_full
 | [{{site.data.keyword.cloudant_short_notm}}](/docs/Cloudant?topic=Cloudant-getting-started-with-cloudant)    | {{site.data.keyword.cloudant_short_notm}} is a document-oriented database as a service (DBaaS). It stores data as documents in JSON format. | [More info](/docs/Cloudant?topic=Cloudant-log-analysis-integration) |
 | [{{site.data.keyword.databases-for-elasticsearch_full_notm}}](/docs/databases-for-elasticsearch?topic=databases-for-elasticsearch-getting-started) | {{site.data.keyword.databases-for-elasticsearch_full_notm}} is a managed Elasticsearch service that is hosted in the {{site.data.keyword.cloud_notm}} and integrated with other {{site.data.keyword.cloud_notm}} services. | [More info](/docs/databases-for-elasticsearch?topic=cloud-databases-logging) |
 | [{{site.data.keyword.databases-for-enterprisedb_full}}](/docs/databases-for-enterprisedb?topic=databases-for-enterprisedb-getting-started) | {{site.data.keyword.databases-for-enterprisedb}} is a database engine that optimizes the built-in features of PostgreSQL. | [More info](/docs/databases-for-enterprisedb?topic=cloud-databases-logging) |
-| [{{site.data.keyword.databases-for-cassandra_full}}](/docs/databases-for-cassandra?topic=databases-for-cassandra-getting-started) | {{site.data.keyword.databases-for-cassandra_full}} is a scale-out NoSQL database that is built on Apache Cassandra. It’s designed to power real-time applications with high availability and massive scalability. | [More info](/docs/databases-for-cassandra?topic=cloud-databases-logging) |
 | [{{site.data.keyword.databases-for-etcd_full_notm}}](/docs/databases-for-etcd?topic=databases-for-etcd-getting-started) | {{site.data.keyword.databases-for-etcd_full_notm}} is a managed etcd service that is hosted in the {{site.data.keyword.cloud_notm}} and integrated with other {{site.data.keyword.cloud_notm}} services. | [More info](/docs/databases-for-etcd?topic=cloud-databases-logging) |
 | [{{site.data.keyword.databases-for-mongodb}}](/docs/databases-for-mongodb?topic=databases-for-mongodb-getting-started) | {{site.data.keyword.databases-for-mongodb}} is a managed MongoDB service that is hosted in the {{site.data.keyword.cloud_notm}} and integrated with other {{site.data.keyword.cloud_notm}} services. | [More info](/docs/databases-for-mongodb?topic=cloud-databases-logging) |
 | [{{site.data.keyword.databases-for-postgresql_full_notm}}](/docs/databases-for-postgresql?topic=databases-for-postgresql-getting-started) | {{site.data.keyword.databases-for-postgresql_full_notm}} is a managed PostgreSQL service that is hosted in the {{site.data.keyword.cloud_notm}} and integrated with other {{site.data.keyword.cloud_notm}} services. | [More info](/docs/databases-for-postgresql?topic=cloud-databases-logging) |
