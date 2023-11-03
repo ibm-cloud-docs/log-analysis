@@ -28,8 +28,8 @@ The logging agent tails for new log data, and looks for new files that are added
 
 To configure a logging agent you will need to:
 
-1. Understand your [storage requirements](/docs/log-analysis?topic=log-analysis-log_analysis_agent_storage).
+1. Understand your [storage requirements](/docs/log-analysis?topic=log-analysis-agent_storage).
 
-2. Install the appropriate agent for your environment: [Kubernetes](/docs/log-analysis?topic=log-analysis-log_analysis_agent_kube) or [Linux](/docs/log-analysis?topic=log-analysis-log_analysis_agent_linux).
+2. Install the appropriate agent for your environment: [Kubernetes](/docs/log-analysis?topic=log-analysis-agent_kube) or [Linux](/docs/log-analysis?topic=log-analysis-agent_linux).
 
-3. [Configure your agent.](/docs/log-analysis?topic=log-analysis-log_analysis_agent_config)
+3. [Configure your agent.](/docs/log-analysis?topic=log-analysis-agent_config)
