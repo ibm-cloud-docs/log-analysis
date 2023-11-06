@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2023
-lastupdated: "2023-11-03"
+lastupdated: "2023-11-06"
 
 keywords:
 
@@ -117,6 +117,7 @@ The following tables list the locations where automatic collection of database s
 | {{site.data.keyword.databases-for-elasticsearch_full_notm}}     | ![Checkmark icon](../images/checkmark-icon.svg) | ![Checkmark icon](../images/checkmark-icon.svg) |
 | {{site.data.keyword.databases-for-etcd_full_notm}}              | ![Checkmark icon](../images/checkmark-icon.svg) | ![Checkmark icon](../images/checkmark-icon.svg) |
 | {{site.data.keyword.databases-for-mongodb_full_notm}}           | ![Checkmark icon](../images/checkmark-icon.svg) | ![Checkmark icon](../images/checkmark-icon.svg) |
+| {{site.data.keyword.databases-for-mysql_full}}           | ![Checkmark icon](../images/checkmark-icon.svg) | ![Checkmark icon](../images/checkmark-icon.svg) |
 | {{site.data.keyword.databases-for-postgresql_full_notm}}        | ![Checkmark icon](../images/checkmark-icon.svg) | ![Checkmark icon](../images/checkmark-icon.svg) |
 | {{site.data.keyword.messages-for-rabbitmq_full_notm}}           | ![Checkmark icon](../images/checkmark-icon.svg) | ![Checkmark icon](../images/checkmark-icon.svg) |
 | {{site.data.keyword.databases-for-redis_full_notm}}             | ![Checkmark icon](../images/checkmark-icon.svg) | ![Checkmark icon](../images/checkmark-icon.svg) |
@@ -140,6 +141,7 @@ The following tables list the locations where automatic collection of database s
 | {{site.data.keyword.databases-for-elasticsearch_full_notm}}     | ![Checkmark icon](../images/checkmark-icon.svg) | ![Checkmark icon](../images/checkmark-icon.svg) |  ![Checkmark icon](../images/checkmark-icon.svg) |                      |
 | {{site.data.keyword.databases-for-etcd_full_notm}}              | ![Checkmark icon](../images/checkmark-icon.svg) | ![Checkmark icon](../images/checkmark-icon.svg)|  ![Checkmark icon](../images/checkmark-icon.svg) |                      |
 | {{site.data.keyword.databases-for-mongodb_full_notm}}           | ![Checkmark icon](../images/checkmark-icon.svg)  | ![Checkmark icon](../images/checkmark-icon.svg) |  ![Checkmark icon](../images/checkmark-icon.svg) |                      |
+| {{site.data.keyword.databases-for-mysql_full}}           | ![Checkmark icon](../images/checkmark-icon.svg)  | ![Checkmark icon](../images/checkmark-icon.svg) |  ![Checkmark icon](../images/checkmark-icon.svg) |                        |
 | {{site.data.keyword.databases-for-postgresql_full_notm}}        | ![Checkmark icon](../images/checkmark-icon.svg)  | ![Checkmark icon](../images/checkmark-icon.svg) |  ![Checkmark icon](../images/checkmark-icon.svg) |                      |
 | {{site.data.keyword.messages-for-rabbitmq_full_notm}}           | ![Checkmark icon](../images/checkmark-icon.svg)  | ![Checkmark icon](../images/checkmark-icon.svg) |  ![Checkmark icon](../images/checkmark-icon.svg) |                      |
 | {{site.data.keyword.databases-for-redis_full_notm}}             | ![Checkmark icon](../images/checkmark-icon.svg)  | ![Checkmark icon](../images/checkmark-icon.svg) |  ![Checkmark icon](../images/checkmark-icon.svg) |                      |
@@ -161,6 +163,7 @@ The following tables list the locations where automatic collection of database s
 | {{site.data.keyword.databases-for-elasticsearch_full_notm}}   | ![Checkmark icon](../images/checkmark-icon.svg)| ![Checkmark icon](../images/checkmark-icon.svg)          | ![Checkmark icon](../images/checkmark-icon.svg) |
 | {{site.data.keyword.databases-for-etcd_full_notm}}            | ![Checkmark icon](../images/checkmark-icon.svg)| ![Checkmark icon](../images/checkmark-icon.svg)          | ![Checkmark icon](../images/checkmark-icon.svg) |
 | {{site.data.keyword.databases-for-mongodb_full_notm}}         | ![Checkmark icon](../images/checkmark-icon.svg)| ![Checkmark icon](../images/checkmark-icon.svg)          | ![Checkmark icon](../images/checkmark-icon.svg) |
+| {{site.data.keyword.databases-for-mysql_full}}          | ![Checkmark icon](../images/checkmark-icon.svg)| ![Checkmark icon](../images/checkmark-icon.svg)          | ![Checkmark icon](../images/checkmark-icon.svg) |
 | {{site.data.keyword.databases-for-postgresql_full_notm}}      | ![Checkmark icon](../images/checkmark-icon.svg) | ![Checkmark icon](../images/checkmark-icon.svg)          | ![Checkmark icon](../images/checkmark-icon.svg) |
 | {{site.data.keyword.messages-for-rabbitmq_full_notm}}         | ![Checkmark icon](../images/checkmark-icon.svg)| ![Checkmark icon](../images/checkmark-icon.svg)          | ![Checkmark icon](../images/checkmark-icon.svg) |
 | {{site.data.keyword.databases-for-redis_full_notm}}           | ![Checkmark icon](../images/checkmark-icon.svg)| ![Checkmark icon](../images/checkmark-icon.svg)          | ![Checkmark icon](../images/checkmark-icon.svg) |
