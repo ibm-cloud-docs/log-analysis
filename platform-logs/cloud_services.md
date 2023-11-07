@@ -110,7 +110,7 @@ The following table lists services that send logs to {{site.data.keyword.la_full
 
 | Service     | Description | More info |
 |-------------|-------------|-----------|
-| [{{site.data.keyword.en_full}}](/docs/event-notifications?topic=event-notifications-getting-started) | {{site.data.keyword.en_short}} is a routing service that tells you about critical events that occur in your {{site.data.keyword.cloud}} account. You can filter and route event notifications from {{site.data.keyword.cloud_notm}} services like Monitoring, Security and Compliance Center, and Secrets Manager to communication channels like email, SMS, push notifications, webhook, slack, Microsoft&trade; Teams, and {{site.data.keyword.IBM_notm}} {{site.data.keyword.openwhisk_short}}.  | [More info](/docs/event-notifications?topic=event-notifications-logging)  |
+| [{{site.data.keyword.en_full}}](/docs/event-notifications?topic=event-notifications-getting-started) | {{site.data.keyword.en_short}} is a routing service that tells you about critical events that occur in your {{site.data.keyword.cloud}} account. You can filter and route event notifications from {{site.data.keyword.cloud_notm}} services like Monitoring, Security and Compliance Center, and Secrets Manager to communication channels like email, SMS, push notifications, webhook, slack, and Microsoft&trade; Teams.  | [More info](/docs/event-notifications?topic=event-notifications-logging)  |
 {: caption="Table 6. List of Developer tools services" caption-side="top"}
 
 To see the list of {{site.data.keyword.la_full_notm}} locations where these services send logs, see [Developer tools](/docs/log-analysis?topic=log-analysis-cloud_services_locations#cs_locations_developer_tools).
