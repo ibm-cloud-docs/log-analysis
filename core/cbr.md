@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2023
-lastupdated: "2023-09-26"
+lastupdated: "2023-11-17"
 
 keywords:
 
@@ -27,17 +27,18 @@ Any {{site.data.keyword.cloudaccesstraillong_notm}} or audit log events generate
 
 To get started protecting your {{site.data.keyword.la_full_notm}} resources with context-based restrictions, see the tutorial for [Leveraging context-based restrictions to secure your resources](/docs/account?topic=account-context-restrictions-tutorial).
 
-<!-- Most services can include only the content above this comment. If your service has limitations, stipulations as to how rules and network zones are enforced, or other use cases specific to your service, then review the following section to include additional information. -->
 
 ## How {{site.data.keyword.la_full_notm}} integrates with context-based restrictions
 {: #cbr-overview}
 
 You can use context-based restrictions when [configuring archving to {{site.data.keyword.cos_full_notm}}](/docs/log-analysis?topic=log-analysis-archiving) and [streaming to {{site.data.keyword.messagehub}}.](/docs/log-analysis?topic=log-analysis-streaming-configure)
 
-By using context-based restrictions you restrict {{site.data.keyword.cos_full_notm}} or {{site.data.keyword.messagehub}} to receive data only from {{site.data.keyword.la_full_notm}} without specifically configuring a service ID to access the service.
+By using context-based restrictions you restrict {{site.data.keyword.cos_full_notm}} or {{site.data.keyword.messagehub}} to receive data only from {{site.data.keyword.la_full_notm}}.
 
 Additional services and IP addresses can be configured in rules to send data to {{site.data.keyword.cos_full_notm}} or {{site.data.keyword.messagehub}} in addition to {{site.data.keyword.la_full_notm}}.
 {: note}
+
+You can also use context-based restricions to control access from services or specific IP addresses to {{site.data.keyword.la_full_notm}}.
 
 ## Restrictions
 {: #cbr-restrictions}
@@ -47,6 +48,10 @@ Consider the following when configuring context-based restrictions:
 * Any zones and rules configured for {{site.data.keyword.at_full_notm}} will also apply to {{site.data.keyword.la_full_notm}}. Any zones and rules configured for {{site.data.keyword.la_full_notm}} will also apply to {{site.data.keyword.at_full_notm}}.
 
 * {{site.data.keyword.messagehub}} credentials created for {{site.data.keyword.la_full_notm}} and {{site.data.keyword.at_full_notm}} can be shared by {{site.data.keyword.la_full_notm}} and {{site.data.keyword.at_full_notm}} instances, but can not be shared with any other services.
+
+* Context-based rules only apply to the [IAM token authorization](/docs/log-analysis?topic=log-analysis-security-schemes#security-scheme-3) when using the {{site.data.keyword.la_full_notm}} API. Context-based rules do not apply to other [API security schemes](/docs/log-analysis?topic=log-analysis-security-schemes).
+
+* Context-based rules apply to all {{site.data.keyword.la_full_notm}} APIs except ingestion.
 
 ## Creating network zones
 {: #network-zone}
@@ -147,6 +152,8 @@ Define restrictions to {{site.data.keyword.la_full_notm}} resources by creating 
 
    `Event Streams` if you are configuring a context-based restriction for streaming to {{site.data.keyword.messagehub}}.
 
+   `IBM Log Analysis` if you are configuring a context-based restriction to access {{site.data.keyword.la_full_notm}}.
+
 5. Click **Next**.
 
 6. Select **All resources** or **Specific resources** as appropriate. If you are limiting resources, add the conditions defining the limit.
@@ -198,7 +205,10 @@ The following service names can be used when configuring rules to connect with {
 :   {{site.data.keyword.cos_full_notm}}
 
 `messagehub`
-:    {{site.data.keyword.messagehub}}
+:   {{site.data.keyword.messagehub}}
+
+`logdna`
+:   {{site.data.keyword.la_full_notm}}
 
 Use `enforcement_mode` to determine how the rule is processed. For example, this rule between {{site.data.keyword.messagehub}} and {{site.data.keyword.la_full_notm}} is defined, but is disabled and will not be enforced.
 
@@ -248,7 +258,10 @@ The following service names can be used when configuring rules to connect with {
 :   {{site.data.keyword.cos_full_notm}}
 
 `messagehub`
-:    {{site.data.keyword.messagehub}}
+:   {{site.data.keyword.messagehub}}
+
+`logdna`
+:   {{site.data.keyword.la_full_notm}}
 
 You can also limit access between services. For example, limiting access to private endpoints only:
 
