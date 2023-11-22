@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018, 2023
-lastupdated: "2023-10-31"
+lastupdated: "2023-11-22"
 
 keywords: Log Analysis release notes
 
@@ -19,6 +19,13 @@ content-type: release-note
 
 Use these release notes to learn about updates to {{site.data.keyword.la_full}}.
 {: shortdesc}
+
+## 22 November 2023
+{: #log-analysis-nov2223}
+{: release-note}
+ 
+Context-based restrictions support
+:   {{site.data.keyword.la_full_notm}} now supports access support to {{site.data.keyword.la_full_notm}} using [context-based restrictions.](/docs/log-analysis?topic=log-analysis-cbr)
 
 ## 31 October 2023
 {: #log-analysis-oct3123}
