@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2023
-lastupdated: "2023-04-12"
+lastupdated: "2023-11-29"
 
 keywords:
 
@@ -23,6 +23,14 @@ As a security officer, auditor, or manager, you can use the Activity Tracker ser
 {{site.data.keyword.at_full_notm}} records user-initiated activities that change the state of a service in {{site.data.keyword.cloud_notm}}. You can use this service to investigate abnormal activity and critical actions and to comply with regulatory audit requirements. In addition, you can be alerted about actions as they happen. The events that are collected comply with the Cloud Auditing Data Federation (CADF) standard. For more information, see the [getting started tutorial for {{site.data.keyword.at_full_notm}}](/docs/activity-tracker?topic=activity-tracker-getting-started).
 
 {{site.data.keyword.la_full_notm}} automatically generates events so that you can track activity on your service instance.
+
+
+## Determining an event initiator
+{: #at_all_events}
+
+The `initiator.name` field can contain the name of the resource or user that generated the event. If the `initiator.name` is `IBM Log Analysis`, the event is the result of an action taken by an {{site.data.keyword.la_full_notm}} service operator.
+
+For more information about {{site.data.keyword.at_full_notm}} event fields, see [Event fields.](/docs/activity-tracker?topic=activity-tracker-event)
 
 
 ## Management events
@@ -95,6 +103,9 @@ The following table lists custom fields that are included in exclusion rule even
 | `responseData.logdnaId`      | Defines the logging ID that is associated with the {{site.data.keyword.la_full_notm}} instance. |
 {: caption="Table 6. Custom fields for exclusion rules actions" caption-side="top"}
 
+
+If the [`initiator.name`](#at_all_events) field indicates a change was made by `IBM Log Analysis`, the change might have been made to stop a runaway logging scenario and temporarily limit logging. Exclusion rules should be reviewed to determine the required logging. Logging that is not required results in excess charges.
+{: tip}
 
 ### Ingestion keys
 {: #at_events_ingestion_keys}
