@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2023
-lastupdated: "2023-11-06"
+lastupdated: "2023-11-30"
 
 keywords:
 
@@ -221,7 +221,6 @@ The following table shows the locations where automatic collection of developer 
 
 | Service                                         | `Dallas (us-south)`                          | `Washington (us-east)`            |
 |-------------------------------------------------|----------------------------------------------|-----------------------------------|
-| {{site.data.keyword.appconservicefull}}         | ![Checkmark icon](../images/checkmark-icon.svg) |                              |
 | {{site.data.keyword.mq_short}}                  | ![Checkmark icon](../images/checkmark-icon.svg) | ![Checkmark icon](../images/checkmark-icon.svg) |
 {: caption="Table 5. Integration services" caption-side="top"}
 {: #cs-int-table-10}
@@ -232,7 +231,6 @@ The following table shows the locations where automatic collection of developer 
 
 | Service                                                         | `Tokyo (jp-tok)` |`Sydney (au-syd)`           |
 |-----------------------------------------------------------------|----------------|---------------------------|
-| {{site.data.keyword.appconservicefull}}                      |    | ![Checkmark icon](../images/checkmark-icon.svg)|
 | {{site.data.keyword.mq_short}}                               |     | ![Checkmark icon](../images/checkmark-icon.svg)|
 {: caption="Table 5. Integration services" caption-side="top"}
 {: #cs-int-table-11}
@@ -243,7 +241,6 @@ The following table shows the locations where automatic collection of developer 
 
 | Service                                                       |`Frankfurt (eu-de)`  | `London (eu-gb)` |  `Madrid (eu-es)` |
 |---------------------------------------------------------------|-------------------|----------------|------------|
-| {{site.data.keyword.appconservicefull}}                    |               | ![Checkmark icon](../images/checkmark-icon.svg)|  |
 | {{site.data.keyword.mq_short}}                  | ![Checkmark icon](../images/checkmark-icon.svg) | ![Checkmark icon](../images/checkmark-icon.svg) |  |
 {: caption="Table 5. Integration services" caption-side="top"}
 {: #cs-int-table-12}
