@@ -71,8 +71,7 @@ Review the following sections for the specific responsibilities for you and for 
 
 | Task                                       | {{site.data.keyword.IBM_notm}} Responsibilities | Your Responsibilities |
 |--------------------------------------------|-------------------------------------------------|-----------------------|
-| `Encrypt data`  | Operate the Cloud Service encrypting data in motion and at rest per compliance specifications. | Ensure encryption of archived data by configuring a COS bucket that has full control over the data encryption keys that are used. [{{site.data.keyword.cos_full}} provides several options to encrypt your data.](/docs/cloud-object-storage?topic=cloud-object-storage-encryption) |
-| `Meet security and compliance objectives`  | Maintain controls that are commensurate to various industry compliance standards such as SOC2, PCI, HIPAA and Privacy Shield. | Set up and maintain security and regulation compliance for your apps and data.  This includes:  \n [Defining the account management strategy](/docs/log-analysis?topic=log-analysis-adoption#adoption_account)  \n [Configuring the accounts settings for compliance](/docs/log-analysis?topic=log-analysis-adoption#adoption_acc_settings)  \n Define IAM Strategy  \n [Define the notification strategy](/docs/log-analysis?topic=log-analysis-adoption#adoption_alerts) |
+| `Meet security and compliance objectives`  | Maintain controls that are commensurate to various industry compliance standards such as SOC2, PCI, HIPAA and Privacy Shield. For more information, see [Securing your data](/docs/log-analysis?topic=log-analysis-mng-data) | Set up and maintain security and regulation compliance for your apps and data.  This includes:  \n [Defining the account management strategy](/docs/log-analysis?topic=log-analysis-adoption#adoption_account)  \n [Configuring the accounts settings for compliance](/docs/log-analysis?topic=log-analysis-adoption#adoption_acc_settings)  \n Define IAM Strategy  \n [Define the notification strategy](/docs/log-analysis?topic=log-analysis-adoption#adoption_alerts) \n Ensure encryption of archived data by configuring a COS bucket that has full control over the data encryption keys that are used. [{{site.data.keyword.cos_full}} provides several options to encrypt your data.](/docs/cloud-object-storage?topic=cloud-object-storage-encryption) |
 {: caption="Table 4. Responsibilities for security and regulation compliance" caption-side="top"}
 
 
@@ -94,3 +93,6 @@ Review the following sections for the specific responsibilities for you and for 
 
 `[*]` Recovered and restarted service components will not have customer data reloaded.
 {: note}
+
+To plan and prepare in the event of a DR scenario, see [Recovering from a disaster region](/docs/log-analysis?topic=log-analysis-ha_dr_steps).
+{: important}
