@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018, 2023
-lastupdated: "2023-11-22"
+lastupdated: "2023-12-05"
 
 keywords: Log Analysis release notes
 
@@ -20,17 +20,43 @@ content-type: release-note
 Use these release notes to learn about updates to {{site.data.keyword.la_full}}.
 {: shortdesc}
 
+## 5 December 2023
+{: #log-analysis-dec0523}
+{: release-note}
+
+Logging agent 3.9 is now available.
+:   Version 3.9 of the logging agent is now available. Changes include:
+
+    * A new configuration parameter MZ_METADATA_RETRY_DELAY to delay Kubernetes logs until pod metadata is available.
+
+    * Enhancements to reduce the number of file events and the order in which events are processed to reduce memory, deduplication and improve throughput.
+
+    * Enhancements to handle truncation during file create.
+
+    * Enhancements for Windows environments: an icon has been added for the windows executable; you can now monitor windows event logs; and a fix is included to address the issue where an agent crashed if the windows log directory was not present.
+
+    * Support for Mac (Experimental release).
+
+    * Memory enhancements: Optimization of memory allocations in file system monitoring; reduced memory overhead of kubernetes watchers.
+
+    * Enhancement on the journald dockerfile so that it does not enumerate linux devices.
+
+    * Enhancements on the agent logs: The environment configuration is printed on startup; log information is generated to notify when the agent exits gracefully.
+
+    and more.
+
+
 ## 22 November 2023
 {: #log-analysis-nov2223}
 {: release-note}
- 
+
 Context-based restrictions support
 :   {{site.data.keyword.la_full_notm}} now supports access support to {{site.data.keyword.la_full_notm}} using [context-based restrictions.](/docs/log-analysis?topic=log-analysis-cbr)
 
 ## 31 October 2023
 {: #log-analysis-oct3123}
 {: release-note}
- 
+
 Services now sending logs to Madrid
 :   Some services are now sending logs to Madrid. See [services generating logs by location](/docs/log-analysis?topic=log-analysis-cloud_services_locations) for the services sending logs to Madrid.
 
