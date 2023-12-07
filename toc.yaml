@@ -168,7 +168,12 @@ toc:
           label: Enhancing security
           topics:
           - core/architecture-workload-isolation.md
-          - core/service-connection.md
+          - topicgroup:
+              label: Privately connecting to Log Analysis
+              topics:
+              - topic: core/vpe.md
+                navtitle: Using virtual private endpoints for VPC
+              - core/service-connection.md
           - core/data-security.md
           - topic: core/cbr.md
             navtitle: Protecting resources with context-based restrictions

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018, 2023
-lastupdated: "2023-12-05"
+lastupdated: "2023-12-07"
 
 keywords: Log Analysis release notes
 
@@ -19,6 +19,13 @@ content-type: release-note
 
 Use these release notes to learn about updates to {{site.data.keyword.la_full}}.
 {: shortdesc}
+
+## 8 December 2023
+{: #log-analysis-dec0823}
+{: release-note}
+
+Virtual private endpoint support
+:   {{site.data.keyword.la_full_notm}} now supports virtual private endpoints for VPC.  For more information, see [Using virtual private endpoints for VPC to privately connect to {{site.data.keyword.la_full_notm}}](/docs/log-analysis?topic=log-analysis-vpe-connection).
 
 ## 5 December 2023
 {: #log-analysis-dec0523}
