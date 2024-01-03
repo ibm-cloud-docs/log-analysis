@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years:  2018, 2023
-lastupdated: "2023-11-30"
+  years:  2018, 2024
+lastupdated: "2024-01-03"
 
 keywords:
 
@@ -121,8 +121,6 @@ The following tables list the locations where automatic collection of database s
 | {{site.data.keyword.databases-for-postgresql_full_notm}}        | ![Checkmark icon](../images/checkmark-icon.svg) | ![Checkmark icon](../images/checkmark-icon.svg) |
 | {{site.data.keyword.messages-for-rabbitmq_full_notm}}           | ![Checkmark icon](../images/checkmark-icon.svg) | ![Checkmark icon](../images/checkmark-icon.svg) |
 | {{site.data.keyword.databases-for-redis_full_notm}}             | ![Checkmark icon](../images/checkmark-icon.svg) | ![Checkmark icon](../images/checkmark-icon.svg) |
-| {{site.data.keyword.cloud_notm}} {{site.data.keyword.ihsdbaas_mongodb_full}}     | ![Checkmark icon](../images/checkmark-icon.svg)             | ![Checkmark icon](../images/checkmark-icon.svg) |
-| {{site.data.keyword.cloud_notm}} {{site.data.keyword.ihsdbaas_postgresql_full}}      | ![Checkmark icon](../images/checkmark-icon.svg)        | ![Checkmark icon](../images/checkmark-icon.svg) |
 | {{site.data.keyword.Db2_on_Cloud_long}}           | ![Checkmark icon](../images/checkmark-icon.svg) | ![Checkmark icon](../images/checkmark-icon.svg) |
 | {{site.data.keyword.dashdblong_notm}}     | ![Checkmark icon](../images/checkmark-icon.svg)        | ![Checkmark icon](../images/checkmark-icon.svg) |
 | {{site.data.keyword.dv_short}}      | ![Checkmark icon](../images/checkmark-icon.svg)        | ![Checkmark icon](../images/checkmark-icon.svg) |
@@ -148,8 +146,6 @@ The following tables list the locations where automatic collection of database s
 | {{site.data.keyword.Db2_on_Cloud_long}}           | ![Checkmark icon](../images/checkmark-icon.svg) | ![Checkmark icon](../images/checkmark-icon.svg) |                     |
 | {{site.data.keyword.dashdblong_notm}}     | ![Checkmark icon](../images/checkmark-icon.svg)        | ![Checkmark icon](../images/checkmark-icon.svg) | |
 | {{site.data.keyword.dv_short}}      | ![Checkmark icon](../images/checkmark-icon.svg)        | ![Checkmark icon](../images/checkmark-icon.svg) |                      |
-| {{site.data.keyword.cloud_notm}} {{site.data.keyword.ihsdbaas_mongodb_full}} |    | `Logs are available through the Log Analysis Dallas instance`        |   |
-| {{site.data.keyword.cloud_notm}} {{site.data.keyword.ihsdbaas_postgresql_full}}     |    | `Logs are available through the Log Analysis Dallas instance`        |   |
 {: caption="Table 3. Database services" caption-side="top"}
 {: #cs-dbs-table-2}
 {: tab-title="Asia Pacific"}
@@ -169,8 +165,6 @@ The following tables list the locations where automatic collection of database s
 | {{site.data.keyword.databases-for-redis_full_notm}}           | ![Checkmark icon](../images/checkmark-icon.svg)| ![Checkmark icon](../images/checkmark-icon.svg)          | ![Checkmark icon](../images/checkmark-icon.svg) |
 | {{site.data.keyword.Db2_on_Cloud_long}}           | ![Checkmark icon](../images/checkmark-icon.svg) | ![Checkmark icon](../images/checkmark-icon.svg) |  |
 | {{site.data.keyword.dashdblong_notm}}     | ![Checkmark icon](../images/checkmark-icon.svg)        | ![Checkmark icon](../images/checkmark-icon.svg) |  |
-| {{site.data.keyword.cloud_notm}} {{site.data.keyword.ihsdbaas_mongodb_full}}           | ![Checkmark icon](../images/checkmark-icon.svg)              |           |  |
-| {{site.data.keyword.cloud_notm}} {{site.data.keyword.ihsdbaas_postgresql_full}}           | ![Checkmark icon](../images/checkmark-icon.svg)              |           |  |
 | {{site.data.keyword.dv_short}}      | ![Checkmark icon](../images/checkmark-icon.svg)        | ![Checkmark icon](../images/checkmark-icon.svg) |  |
 {: caption="Table 3. Database services" caption-side="top"}
 {: #cs-dbs-table-3}
