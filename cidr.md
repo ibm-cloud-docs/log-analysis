@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years:  2018, 2023
-lastupdated: "2023-09-06"
+  years:  2018, 2024
+lastupdated: "2024-01-04"
 
 keywords:
 
@@ -130,6 +130,19 @@ The CIDR blocks with a date next to them indicates the date they will be availab
 | Tokyo	    | 165.192.107.32/27  |
 {: caption="Table 8. Tokyo public CIDR blocks" caption-side="top"}
 
+### Toronto
+{: #cidr_public_gen2_10}
+
+| Region   | CIDR block |
+|----------|------------|
+| Toronto	   | 169.53.180.32/28  |
+| Toronto | 169.55.136.192/27 [9 March 2023]{: tag-cool-gray} |
+| Toronto	   | 163.74.69.208/28 [Deprecated]{: tag-deprecated} |
+| Toronto	   | 163.75.69.160/28  |
+| Toronto	   | 163.74.71.224/27 [9 March 2023]{: tag-cool-gray} |
+| Toronto	   | 163.75.75.128/27 [9 March 2023]{: tag-cool-gray} |
+{: caption="Table 9. Toronto public CIDR blocks" caption-side="top"}
+
 ### US East
 {: #cidr_public_gen2_2}
 
@@ -144,7 +157,7 @@ The CIDR blocks with a date next to them indicates the date they will be availab
 | US-East  | 169.47.188.0/27  |
 | US-East  | 169.59.154.128/26  |
 | US-East  | 150.239.98.0/26  |
-{: caption="Table 9. US-East public CIDR blocks" caption-side="top"}
+{: caption="Table 10. US-East public CIDR blocks" caption-side="top"}
 
 ### US South
 {: #cidr_public_gen2_1}
@@ -163,7 +176,7 @@ The CIDR blocks with a date next to them indicates the date they will be availab
 | US-South | 52.116.251.64/27  |
 | US-South | 169.59.254.192/26  |
 | US-South | 169.59.255.128/25  |
-{: caption="Table 10. US-South public CIDR blocks" caption-side="top"}
+{: caption="Table 11. US-South public CIDR blocks" caption-side="top"}
 
 ## Private CIDR blocks
 {: #cidr_private_gen2}
@@ -174,7 +187,7 @@ The CIDR blocks with a date next to them indicates the date they will be availab
 | Region | CIDR block |
 |--------|------------|
 | Chennai	  | 10.162.140.0/26  |
-{: caption="Table 11. Chennai private CIDR blocks" caption-side="top"}
+{: caption="Table 12. Chennai private CIDR blocks" caption-side="top"}
 
 ### Frankfurt
 {: #cidr_private_gen2_14}
@@ -190,7 +203,7 @@ The CIDR blocks with a date next to them indicates the date they will be availab
 | Frankfurt | 10.13.86.128/25  |
 | Frankfurt | 10.20.6.0/24  |
 | Frankfurt | 10.13.100.0/24  |
-{: caption="Table 12. Frankfurt private CIDR blocks" caption-side="top"}
+{: caption="Table 13. Frankfurt private CIDR blocks" caption-side="top"}
 
 ### London
 {: #cidr_private_gen2_16}
@@ -203,7 +216,7 @@ The CIDR blocks with a date next to them indicates the date they will be availab
 | London    | 10.242.25.128/25 [9 March 2023]{: tag-cool-gray} |
 | London    | 10.222.46.128/26  |
 | London    | 10.222.86.128/25 [9 March 2023]{: tag-cool-gray} |
-{: caption="Table 13. London private CIDR blocks" caption-side="top"}
+{: caption="Table 14. London private CIDR blocks" caption-side="top"}
 
 ### Madrid
 {: #cidr_private_madrid}
@@ -213,7 +226,7 @@ The CIDR blocks with a date next to them indicates the date they will be availab
 | Madrid    | 10.118.14.192/26 [26 September 2023]{: tag-cool-gray} |
 | Madrid    | 10.118.76.192/26 [26 September 2023]{: tag-cool-gray} |
 | Madrid    | 10.118.142.128/26 [26 September 2023]{: tag-cool-gray} |
-{: caption="Table 14. Madrid public CIDR blocks" caption-side="top"}
+{: caption="Table 15. Madrid public CIDR blocks" caption-side="top"}
 
 ### Osaka
 {: #cidr_private_gen2_20}
@@ -223,7 +236,7 @@ The CIDR blocks with a date next to them indicates the date they will be availab
 | Osaka	  | 10.10.8.64/26  |
 | Osaka	  | 10.9.15.128/26  |
 | Osaka	  | 10.8.30.64/26  |
-{: caption="Table 15. Osaka private CIDR blocks" caption-side="top"}
+{: caption="Table 16. Osaka private CIDR blocks" caption-side="top"}
 
 ### Sao Paulo
 {: #cidr_private_gen2_22}
@@ -233,7 +246,7 @@ The CIDR blocks with a date next to them indicates the date they will be availab
 | Brazil	   | 10.150.186.192/26  |
 | Brazil	   | 10.14.9.64/26  |
 | Brazil	   | 10.15.20.192/26  |
-{: caption="Table 16. Sao Paulo private CIDR blocks" caption-side="top"}
+{: caption="Table 17. Sao Paulo private CIDR blocks" caption-side="top"}
 
 ### Sydney
 {: #cidr_private_gen2_17}
@@ -243,7 +256,7 @@ The CIDR blocks with a date next to them indicates the date they will be availab
 | Sydney	  | 10.139.31.0/26  |
 | Sydney	  | 10.63.207.128/26  |
 | Sydney	  | 10.195.95.64/26 |
-{: caption="Table 17. Sydney private CIDR blocks" caption-side="top"}
+{: caption="Table 18. Sydney private CIDR blocks" caption-side="top"}
 
 ### Tokyo
 {: #cidr_private_gen2_15}
@@ -256,7 +269,7 @@ The CIDR blocks with a date next to them indicates the date they will be availab
 | Tokyo     | 10.193.30.0/25 [6 April 2023]{: tag-cool-gray} |
 | Tokyo     | 10.133.200.128/25 [6 April 2023]{: tag-cool-gray} |
 | Tokyo     | 10.192.170.128/25 [6 April 2023]{: tag-cool-gray} |
-{: caption="Table 18. Tokyo private CIDR blocks" caption-side="top"}
+{: caption="Table 19. Tokyo private CIDR blocks" caption-side="top"}
 
 ### Toronto
 {: #cidr_private_gen2_21}
@@ -269,7 +282,7 @@ The CIDR blocks with a date next to them indicates the date they will be availab
 | Toronto | 10.115.99.128/25 [10 May 2023]{: tag-cool-gray} |
 | Toronto | 10.11.18.128/25 [10 May 2023]{: tag-cool-gray} |
 | Toronto | 10.243.52.128/25 [10 May 2023]{: tag-cool-gray} |
-{: caption="Table 19. Toronto private CIDR blocks" caption-side="top"}
+{: caption="Table 20. Toronto private CIDR blocks" caption-side="top"}
 
 ### US South
 {: #cidr_private_gen2_12}
@@ -285,7 +298,7 @@ The CIDR blocks with a date next to them indicates the date they will be availab
 | US-South | 10.241.199.0/25  |
 | US-South | 10.37.88.0/24   |
 | US-South | 10.241.202.0/24  |
-{: caption="Table 20. US-South private CIDR blocks" caption-side="top"}
+{: caption="Table 21. US-South private CIDR blocks" caption-side="top"}
 
 ### US East
 {: #cidr_private_gen2_13}
@@ -298,6 +311,6 @@ The CIDR blocks with a date next to them indicates the date they will be availab
 | US-East  | 10.188.240.192/26  |
 | US-East  | 10.183.242.128/25  |
 | US-East  | 10.189.123.128/25  |
-{: caption="Table 21. US-East private CIDR blocks" caption-side="top"}
+{: caption="Table 22. US-East private CIDR blocks" caption-side="top"}
 
 
