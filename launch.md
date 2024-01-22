@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years:  2018, 2023
-lastupdated: "2021-05-21"
+  years:  2018, 2024
+lastupdated: "2024-01-22"
 
 keywords: IBM, Log Analysis, logging, web UI, browser
 
@@ -56,6 +56,18 @@ Complete the following steps to launch the web UI:
 4. Select one instance. Then, click **Open dashboard**.
 
 The Web UI opens.
+
+
+## Undocking the UI from the {{site.data.keyword.cloud_notm}} UI
+{: #undock}
+
+You might want to work with the dashboard outside of the {{site.data.keyword.cloud_notm}} UI.
+
+Complete the following steps to undock the dashboard:
+
+1. [Launch the UI through the {{site.data.keyword.cloud_notm}} UI.](#launch_cloud_ui)
+
+2. Click **Undocked dashboard**.
 
 
 ## Launching the logging web UI from a browser
