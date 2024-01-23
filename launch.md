@@ -58,18 +58,6 @@ Complete the following steps to launch the web UI:
 The Web UI opens.
 
 
-## Undocking the UI from the {{site.data.keyword.cloud_notm}} UI
-{: #undock}
-
-You might want to work with the dashboard outside of the {{site.data.keyword.cloud_notm}} UI.
-
-Complete the following steps to undock the dashboard:
-
-1. [Launch the UI through the {{site.data.keyword.cloud_notm}} UI.](#launch_cloud_ui)
-
-2. Click **Undocked dashboard**.
-
-
 ## Launching the logging web UI from a browser
 {: #launch_browser}
 
