@@ -192,6 +192,7 @@ toc:
           - launch.md
           - views.md
           - config.md
+          - undock.md
           - get_logdna_web_url.md
 
       - topicgroup:

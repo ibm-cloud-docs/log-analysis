@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2024
-lastupdated: "2024-01-22"
+lastupdated: "2024-01-23"
 
 keywords: IBM, Log Analysis, logging, web UI, browser
 
@@ -56,7 +56,6 @@ Complete the following steps to launch the web UI:
 4. Select one instance. Then, click **Open dashboard**.
 
 The Web UI opens.
-
 
 ## Launching the logging web UI from a browser
 {: #launch_browser}
