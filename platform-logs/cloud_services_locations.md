@@ -295,9 +295,9 @@ The following table shows the locations where automatic collection of developer 
 The following tables list the locations where automatic collection of security service logs is enabled. You can monitor logs through the Log Analysis instance that is available in the same location as your security resources, if you enable 1 instance in this location to host service platform logs. For locations where you can provision a service instance but the {{site.data.keyword.la_full_notm}} service is not available, specific detail about the location where you can monitor those logs is provided in each case.
 
 
-| Service                                                         | `Dallas (us-south)` | `Washington (us-east)`                   |
-|-----------------------------------------------------------------|---------------------|--------------------------------------|
-| {{site.data.keyword.secrets-manager_full}}  | ![Checkmark icon](../images/checkmark-icon.svg) |
+| Service                            | `Dallas (us-south)` | `Washington (us-east)`   |`Toronto (ca-tor)` | `Sao Paulo (br-sao)` |
+|------------------------------------|---------------------|-------------------------|-------------------|----------------------|
+| {{site.data.keyword.secrets-manager_full}}  | ![Checkmark icon](../images/checkmark-icon.svg) | ![Checkmark icon](../images/checkmark-icon.svg)| ![Checkmark icon](../images/checkmark-icon.svg)| ![Checkmark icon](../images/checkmark-icon.svg)
 {: caption="Table 7. Security services" caption-side="top"}
 {: #cs-sec-table-16}
 {: tab-title="America"}
@@ -305,9 +305,9 @@ The following tables list the locations where automatic collection of security s
 {: class="simple-tab-table"}
 {: row-headers}
 
-| Service                                                         | `Tokyo (jp-tok)` |`Sydney (au-syd)`           |
-|-----------------------------------------------------------------|----------------|---------------------------|
-| {{site.data.keyword.secrets-manager_full}}  | ![Checkmark icon](../images/checkmark-icon.svg)  | ![Checkmark icon](../images/checkmark-icon.svg) |
+| Service     | `Tokyo (jp-tok)`   | `Sydney (au-syd)`   | `Osaka (jp-osa)` |
+|-------------|--------------------|---------------------|-------------------|
+| {{site.data.keyword.secrets-manager_full}}  | ![Checkmark icon](../images/checkmark-icon.svg)  | ![Checkmark icon](../images/checkmark-icon.svg) | ![Checkmark icon](../images/checkmark-icon.svg)
 {: caption="Table 7. Security services" caption-side="top"}
 {: #cs-sec-table-17}
 {: tab-title="Asia Pacific"}
@@ -317,7 +317,7 @@ The following tables list the locations where automatic collection of security s
 
 | Service                                                       |`Frankfurt (eu-de)`  | `London (eu-gb)` |  `Madrid (eu-es)` |
 |---------------------------------------------------------------|-------------------|----------------|-----------|
-| {{site.data.keyword.secrets-manager_full}}  | ![Checkmark icon](../images/checkmark-icon.svg)  | ![Checkmark icon](../images/checkmark-icon.svg) |  |
+| {{site.data.keyword.secrets-manager_full}}  | ![Checkmark icon](../images/checkmark-icon.svg)  | ![Checkmark icon](../images/checkmark-icon.svg) |  ![Checkmark icon](../images/checkmark-icon.svg) |
 {: caption="Table 7. Security services" caption-side="top"}
 {: #cs-sec-table-18}
 {: tab-title="Europe"}
