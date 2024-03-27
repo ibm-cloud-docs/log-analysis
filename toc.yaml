@@ -163,7 +163,6 @@ toc:
           - topic: agent/config_agent_linux.md
             navtitle: Configuring agent on Linux Ubuntu or Debian
           - topic: agent/config_agent_rhel.md
-            navtitle: Configuring agent V3 on RPM-Linux
           - topic: agent/config_agent_linux_rpm.md
             navtitle: Configuring agent V2 on RPM-Linux
           - topic: agent/config_agent_windows_v3.md
