@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2019, 2023
-lastupdated: "2022-07-21"
+  years: 2019, 2024
+lastupdated: "2024-03-27"
 
 keywords: IBM Cloud, Log Analysis, streaming, API
 
@@ -19,6 +19,8 @@ subcollection: log-analysis
 {{site.data.keyword.la_full}} provides an API that you can use to configure streaming for an {{site.data.keyword.la_full_notm}} instance.
 {: shortdesc}
 
+<!-- common deprecation notice -->
+{{_include-segments/deprecation_notice.md}}
 
 ## Get details of the streaming configuration
 {: #streaming-api-get-conf}

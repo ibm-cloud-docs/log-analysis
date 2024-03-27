@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years:  2018, 2023
-lastupdated: "2021-05-18"
+  years:  2018, 2024
+lastupdated: "2024-03-27"
 
 keywords: IBM, Log Analysis, logging, services
 
@@ -20,6 +20,8 @@ subcollection: log-analysis
 List of prefixes that [{{site.data.keyword.cloud}} services](/docs/log-analysis?topic=log-analysis-cloud_services) use when they send logs to {{site.data.keyword.la_full_notm}}:
 {: shortdesc}
 
+<!-- common deprecation notice -->
+{{../_include-segments/deprecation_notice.md}}
 
 ## Message format
 {: #cloud_services_msg_format}

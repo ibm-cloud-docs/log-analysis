@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years:  2018, 2023
-lastupdated: "2023-09-11"
+  years:  2018, 2024
+lastupdated: "2024-03-27"
 
 keywords: IBM, Log Analysis, logging instance, regions
 
@@ -18,6 +18,8 @@ subcollection: log-analysis
 {{site.data.keyword.la_full_notm}} is available in the following locations:
 {: shortdesc}
 
+<!-- common deprecation notice -->
+{{_include-segments/deprecation_notice.md}}
 
 ![The image shows the locations where the {{site.data.keyword.la_full_notm}} service is available.](images/Log-Analysis-09-Locations.svg){: caption="Figure 1. Displays the regions where you can create and manage {{site.data.keyword.la_full_notm}} resources." caption-side="bottom"}
 

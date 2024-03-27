@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2024
-lastupdated: "2024-01-23"
+lastupdated: "2024-03-27"
 
 keywords: IBM, Log Analysis, logging, web ui, browser
 
@@ -17,6 +17,9 @@ subcollection: log-analysis
 
 After you provision an instance of the {{site.data.keyword.la_full_notm}} service in the {{site.data.keyword.cloud_notm}}, you can view, monitor, and manage events through the {{site.data.keyword.la_full_notm}} web UI. You can launch the logging web UI from the {{site.data.keyword.cloud_notm}} UI or directly from a browser.
 {: shortdesc}
+
+<!-- common deprecation notice -->
+{{_include-segments/deprecation_notice.md}}
 
 You can also get the logging web UI URL by [undocking the dashboard.](/docs/log-analysis?topic=log-analysis-undock)
 {: tip}

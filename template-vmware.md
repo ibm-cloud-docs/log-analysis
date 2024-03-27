@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2018, 2023
-lastupdated: "2023-07-13"
+  years: 2018, 2024
+lastupdated: "2024-03-27"
 
 keywords:
 
@@ -18,6 +18,9 @@ subcollection: log-analysis
 
 Use the {{site.data.keyword.la_full}} VMware templates to gain insight on your VMware environments.
 {: shortdesc}
+
+<!-- common deprecation notice -->
+{{_include-segments/deprecation_notice.md}}
 
 ## Prereqs
 {: #templates-vmware-prereqs}

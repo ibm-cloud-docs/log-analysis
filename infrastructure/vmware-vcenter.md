@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years:  2018, 2023
-lastupdated: "2023-07-26"
+  years:  2018, 2024
+lastupdated: "2024-03-27"
 
 keywords:
 
@@ -17,6 +17,9 @@ subcollection: log-analysis
 
 You can add logging capabilities to VMware vCenter Server deployments by configuring a centralized syslog server that collects logs from your vSphere environment and sends them to {{site.data.keyword.la_full_notm}} by using rsyslog for analysis, troubleshooting, and alerting.
 {: shortdesc}
+
+<!-- common deprecation notice -->
+{{../_include-segments/deprecation_notice.md}}
 
 [VMware templates](/docs/log-analysis?topic=log-analysis-templates-vmware) are available to gain insight on your VMware environments.
 {: tip}

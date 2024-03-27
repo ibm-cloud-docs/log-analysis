@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years:  2018, 2023
-lastupdated: "2023-09-07"
+  years:  2018, 2024
+lastupdated: "2024-03-27"
 
 keywords: IBM, Log Analysis, logging, config agent
 
@@ -17,6 +17,9 @@ subcollection: log-analysis
 
 Configure a logging agent to associate tags to all log records that it collects so that you can identify the agent's data quicker in the logging UI.
 {: shortdesc}
+
+<!-- common deprecation notice -->
+{{../_include-segments/deprecation_notice.md}}
 
 * You can define multiple tags per logging agent.
 * You separate tags by using commas.

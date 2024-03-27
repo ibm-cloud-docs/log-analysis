@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years:  2018, 2023
-lastupdated: "2021-03-28"
+  years:  2018, 2024
+lastupdated: "2024-03-27"
 
 keywords: IBM, Log Analysis, logging instance, enable, service logs
 
@@ -17,6 +17,9 @@ subcollection: log-analysis
 
 `Platform logs` are logs that are exposed by enabled services and the platform in {{site.data.keyword.cloud_notm}}. You must configure a logging instance in a region to monitor these logs.
 {: shortdesc}
+
+<!-- common deprecation notice -->
+{{../_include-segments/deprecation_notice.md}}
 
 * Platform logs are regional.
 

@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years:  2022, 2023
-lastupdated: "2022-11-30"
+  years:  2022, 2024
+lastupdated: "2024-03-27"
 
 keywords: IBM, Log Analysis, logging, config agent, Windows
 
@@ -17,6 +17,9 @@ subcollection: log-analysis
 
 The logging agent is responsible for collecting and forwarding logs to your {{site.data.keyword.la_full_notm}} instance. After you provision an instance of {{site.data.keyword.la_full}}, you must configure a logging agent for each log source that you want to monitor.
 {: shortdesc}
+
+<!-- common deprecation notice -->
+{{../_include-segments/deprecation_notice.md}}
 
 To configure your Windows server to send logs to your {{site.data.keyword.la_full_notm}} instance, you must install the `logdna-agent`. The logging agent reads log files from a directory defined in your Windows system and forwards the log data to your logging instance.
 

@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years:  2018, 2023
-lastupdated: "2021-03-28"
+  years:  2018, 2024
+lastupdated: "2024-03-27"
 
 keywords: IBM, Log Analysis, IAM, security, logging, access groups
 
@@ -18,6 +18,9 @@ subcollection: log-analysis
 
 You can use {{site.data.keyword.iamlong}} (IAM) to securely authenticate users and control access to all cloud resources consistently in the {{site.data.keyword.cloud_notm}}.
 {: shortdesc}
+
+<!-- common deprecation notice -->
+{{../_include-segments/deprecation_notice.md}}
 
 For more information, see [Managing IAM policies and access groups](/docs/log-analysis?topic=log-analysis-work_iam).
 

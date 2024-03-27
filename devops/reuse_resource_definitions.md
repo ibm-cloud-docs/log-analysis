@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years:  2018, 2023
-lastupdated: "2022-11-23"
+  years:  2018, 2024
+lastupdated: "2024-03-27"
 
 keywords: IBM, Log Analysis, logging, config agent
 
@@ -18,7 +18,8 @@ subcollection: log-analysis
 To avoid recreating definitions of views, boards, parsing templates, and exclusion rules, you can export these resources from a {{site.data.keyword.la_full_notm}} instance as a JSON file. Then, you can import the definitions into other logging instances.
 {: shortdesc}
 
-
+<!-- common deprecation notice -->
+{{../_include-segments/deprecation_notice.md}}
 
 ## Export the configuration of resources in a logging instance
 {: #export_config_res}

@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years:  2018, 2023
-lastupdated: "2021-03-28"
+  years:  2018, 2024
+lastupdated: "2024-03-27"
 
 keywords: IBM, Log Analysis, logging, alerts
 
@@ -17,6 +17,9 @@ subcollection: log-analysis
 
 You can detach alerts graphically by detaching an alert from a view or by deleting a preset.
 {: shortdesc}
+
+<!-- common deprecation notice -->
+{{../_include-segments/deprecation_notice.md}}
 
 
 ## Detaching all alerts from a view

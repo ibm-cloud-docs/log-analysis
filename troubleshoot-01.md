@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2019, 2023
-lastupdated: "2023-05-17"
+  years: 2019, 2024
+lastupdated: "2024-03-27"
 
 keywords:
 
@@ -19,6 +19,9 @@ subcollection: log-analysis
 
 Streaming is failing because your {{site.data.keyword.la_short}} instance cannot connect to the {{site.data.keyword.messagehub}} Kafka broker.
 {: shortdesc}
+
+<!-- common deprecation notice -->
+{{_include-segments/deprecation_notice.md}}
 
 You get the following error message: `Failed to connect to Kafka broker: KafkaJSSASLAuthenticationError: SASL PLAIN authentication failed: Authentication failed, invalid credentials`.
 {: tsSymptoms}

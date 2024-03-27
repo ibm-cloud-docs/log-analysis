@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2022, 2023
-lastupdated: "2022-01-11"
+  years: 2022, 2024
+lastupdated: "2024-03-27"
 
 keywords: IBM Cloud, Log Analysis, search, filter
 
@@ -18,6 +18,9 @@ subcollection: log-analysis
 
 Through the {{site.data.keyword.la_full_notm}} web UI, you can apply search and filtering criteria to define the set of logs that are displayed through a custom view.
 {: shortdesc}
+
+<!-- common deprecation notice -->
+{{_include-segments/deprecation_notice.md}}
 
 ## Prerequisites
 {: #views_prereqs}

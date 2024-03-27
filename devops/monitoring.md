@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years:  2018, 2023
-lastupdated: "2023-02-28"
+  years:  2018, 2024
+lastupdated: "2024-03-27"
 
 keywords: IBM, Log Analysis
 
@@ -17,6 +17,9 @@ subcollection: log-analysis
 
 You can send alerts to {{site.data.keyword.mon_full_notm}} and manage them through the *Events* view section.
 {: shortdesc}
+
+<!-- common deprecation notice -->
+{{../_include-segments/deprecation_notice.md}}
 
 ## Configuring an alert
 {: #monitoring-config}

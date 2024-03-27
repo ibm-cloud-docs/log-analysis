@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2023
-lastupdated: "2023-03-07"
+  years: 2023, 2024
+lastupdated: "2024-03-27"
 
 keywords:
 
@@ -21,6 +21,9 @@ content-type: troubleshoot
 
 Installation of the {{site.data.keyword.la_full}} agent fails on Red Hat Linux.
 {: shortdesc}
+
+<!-- common deprecation notice -->
+{{_include-segments/deprecation_notice.md}}
 
 When you install the {{site.data.keyword.la_full_notm}} agent with the [agent installation instructions](/docs/log-analysis?topic=log-analysis-config_agent_rhel3), the installation fails when the `sudo yum install logdna-agent` command is run.
 {: tsSymptoms}

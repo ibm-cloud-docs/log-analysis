@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years:  2018, 2023
-lastupdated: "2021-03-28"
+  years:  2018, 2024
+lastupdated: "2024-03-27"
 
 keywords: IBM Cloud, Log Analysis, Kubernetes logs
 
@@ -29,6 +29,9 @@ completion-time: 1h
 
 In this tutorial, you learn how to use the {{site.data.keyword.la_full}} web UI to create parsing rules that you can use to enhance your searches, views for monitoring Kubernetes log data, alerts to be notified of anomalous situations, and dashboards and screens to monitor your data.
 {: shortdesc}
+
+<!-- common deprecation notice -->
+{{../_include-segments/deprecation_notice.md}}
 
 You can use {{site.data.keyword.la_full_notm}} to add log management capabilities to your {{site.data.keyword.cloud_notm}} architecture. {{site.data.keyword.la_full_notm}} offers administrators, DevOps teams, and developers advanced features to filter, search, and tail log data, define alerts, and design custom views to monitor
 application and system logs.

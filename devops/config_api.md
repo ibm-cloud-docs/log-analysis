@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years:  2018, 2023
-lastupdated: "2021-03-28"
+  years:  2018, 2024
+lastupdated: "2024-03-27"
 
 keywords: IBM, Log Analysis, logging, api
 
@@ -18,6 +18,9 @@ subcollection: log-analysis
 
 You can use the *Configuration REST API* to manage programmatically views and alerts.
 {: shortdesc}
+
+<!-- common deprecation notice -->
+{{../_include-segments/deprecation_notice.md}}
 
 - You can use the **POST** method to create a view, or create a view and attach an alert to it.
 - You can use the **PUT** method to modify an existing view, and alerts that are attached to views.

@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years:  2018, 2023
-lastupdated: "2023-06-23"
+  years:  2018, 2024
+lastupdated: "2024-03-27"
 
 keywords: IBM, Log Analysis, logging, windows, tutorial
 
@@ -24,6 +24,9 @@ completion-time: 1h
 
 Use the {{site.data.keyword.la_full}} service to monitor and manage logs from a Windows VPC server instance in a centralized logging system on the {{site.data.keyword.cloud_notm}}.
 {: shortdesc}
+
+<!-- common deprecation notice -->
+{{../_include-segments/deprecation_notice.md}}
 
 You can collect and monitor system and application logs.
 

@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years:  2018, 2023
-lastupdated: "2023-06-16"
+  years:  2018, 2024
+lastupdated: "2024-03-27"
 
 keywords:
 
@@ -18,6 +18,9 @@ subcollection: log-analysis
 
 You can send logs to an {{site.data.keyword.la_full_notm}} instance by using the Ingestion REST API.
 {: shortdesc}
+
+<!-- common deprecation notice -->
+{{../_include-segments/deprecation_notice.md}}
 
 Complete the following steps to send logs programmatically by using the REST API:
 

@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2019, 2023
-lastupdated: "2022-07-21"
+  years: 2019, 2024
+lastupdated: "2024-03-27"
 
 keywords: IBM Cloud, Log Analysis, streaming
 
@@ -17,6 +17,9 @@ subcollection: log-analysis
 
 In an {{site.data.keyword.la_full_notm}} instance, you can configure streaming exclusion rules through the UI to filter what data is streamed.
 {: shortdesc}
+
+<!-- common deprecation notice -->
+{{_include-segments/deprecation_notice.md}}
 
 - Log lines that match a streaming exclusion rule are not streamed.
 

@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years:  2021, 2023
-lastupdated: "2021-07-12"
+  years:  2021, 2024
+lastupdated: "2024-03-27"
 
 keywords: IBM, Log Analysis, PagerDuty
 
@@ -17,6 +17,9 @@ subcollection: log-analysis
 
 You can send SMS alerts to notify on log data hosted in a {{site.data.keyword.la_short}} instance.
 {: shortdesc}
+
+<!-- common deprecation notice -->
+{{../_include-segments/deprecation_notice.md}}
 
 To send an SMS alert, you can choose 1 of the following options:
 - Integrate with the {{site.data.keyword.mon_full_notm}} service to send SMS alerts.

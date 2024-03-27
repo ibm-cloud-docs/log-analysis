@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2024
-lastupdated: "2024-03-06"
+lastupdated: "2024-03-27"
 
 keywords:
 
@@ -19,6 +19,9 @@ subcollection: log-analysis
 
 List of {{site.data.keyword.cloud}} services that send logs to {{site.data.keyword.la_full_notm}}:
 {: shortdesc}
+
+<!-- common deprecation notice -->
+{{../_include-segments/deprecation_notice.md}}
 
 You can define only 1 instance per region where {{site.data.keyword.la_full_notm}} is supported with the flag **Platform logs**.
 {: important}

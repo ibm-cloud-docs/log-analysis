@@ -10,6 +10,7 @@ toc:
     product-page: https://www.ibm.com/cloud/log-analysis
     path: log-analysis
     label: Log Analysis
+    release-level: deprecated
 
   entries:
   - navgroup:
@@ -17,6 +18,18 @@ toc:
       topics:
 
       - getting-started.md
+
+      - topicgroup:
+          label: Deprecation
+          topics:
+          - topic: deprecation.md
+            navtitle: Overview
+          - topic: deprecation_details.md
+            navtitle: Details
+          - topic: deprecation_migration.md
+            navtitle: Migration
+          - deprecation_faq.md
+          - deprecation_help.md
 
       - topicgroup:
           label: Logging agents

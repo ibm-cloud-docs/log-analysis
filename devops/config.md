@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2019, 2023
-lastupdated: "2021-03-28"
+  years: 2019, 2024
+lastupdated: "2024-03-27"
 
 keywords: IBM, Log Analysis, logging, config, ui
 
@@ -19,6 +19,8 @@ subcollection: log-analysis
 You can configure your web UI to work with UTC timestamps, change the log line format, change the background color and more.
 {: shortdesc}
 
+<!-- common deprecation notice -->
+{{../_include-segments/deprecation_notice.md}}
 
 ## Configure UTC timestamps
 {: #config_utc}

@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years:  2018, 2023
-lastupdated: "2023-07-06"
+  years:  2018, 2024
+lastupdated: "2024-03-27"
 
 keywords: IBM, Log Analysis, logging, ubuntu, tutorial, bare metal
 
@@ -24,6 +24,9 @@ completion-time: 1h
 
 Use the {{site.data.keyword.la_full}} service to monitor and manage logs from a bare metal server in a centralized logging system on the {{site.data.keyword.cloud_notm}}.
 {: shortdesc}
+
+<!-- common deprecation notice -->
+{{../_include-segments/deprecation_notice.md}}
 
 These instructions are for Ubuntu Linux systems but can be used for other Linux systems.
 {: note}

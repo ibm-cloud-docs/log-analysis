@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2018, 2023
-lastupdated: "2023-01-05"
+  years: 2018, 2024
+lastupdated: "2024-03-27"
 
 keywords: IBM, Log Analysis, logging, security, connection
 
@@ -19,6 +19,8 @@ subcollection: log-analysis
 To ensure that you have enhanced control and security over your data when you use {{site.data.keyword.la_full}}, you have the option that use private routes to {{site.data.keyword.cloud_notm}} service endpoints. Private routes are not accessible or reachable over the internet. By using the {{site.data.keyword.cloud_notm}} Private service endpoints feature, you can protect your data from threats from the public network and logically extend your private network.
 {: shortdesc}
 
+<!-- common deprecation notice -->
+{{../_include-segments/deprecation_notice.md}}
 
 ## Before you begin
 {: #prereq-service-endpoint}

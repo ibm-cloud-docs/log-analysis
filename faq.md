@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2019, 2023
-lastupdated: "2023-05-09"
+  years: 2019, 2024
+lastupdated: "2024-03-27"
 
 keywords: IBM, Log Analysis, logging, faq
 
@@ -17,6 +17,9 @@ subcollection: log-analysis
 
 Frequently asked questions about {{site.data.keyword.la_full_notm}}.
 {: shortdesc}
+
+<!-- common deprecation notice -->
+{{_include-segments/deprecation_notice.md}}
 
 ## Where can I find the list of Cloud services that send logs?
 {: #faq_1}

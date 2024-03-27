@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years:  2018, 2023
-lastupdated: "2021-03-28"
+  years:  2018, 2024
+lastupdated: "2024-03-27"
 
 keywords: IBM, Log Analysis, logging, control usage
 
@@ -19,7 +19,8 @@ subcollection: log-analysis
 In {{site.data.keyword.la_full}}, you can define an alert to notify when the data usage in the instance reaches the data usage threshold that you set for the instance.
 {: shortdesc}
 
-
+<!-- common deprecation notice -->
+{{../_include-segments/deprecation_notice.md}}
 
 ## Prereqs
 {: #control_usage_alert_prereqs}
