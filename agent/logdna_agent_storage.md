@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years:  2018, 2023
-lastupdated: "2023-04-26"
+  years:  2018, 2024
+lastupdated: "2024-03-27"
 
 keywords:
 
@@ -17,6 +17,9 @@ subcollection: log-analysis
 
 If the agent is unable to send logs to the {{site.data.keyword.la_full_notm}} service, the logs are buffered.  For example, buffered in local storage on the Kubernetes node. When the agent is able to send logs again, the buffered logs are sent. The most recent logs are sent first.
 {: shortdesc}
+
+<!-- common deprecation notice -->
+{{../_include-segments/deprecation_notice.md}}
 
 To avoid losing logs when logs are buffered, make sure you have enough local storage to buffer logs for the desired length of time. 24 hours is recommended for critical logs.
 

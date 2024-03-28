@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2024
-lastupdated: "2024-01-03"
+lastupdated: "2024-03-27"
 
 keywords:
 
@@ -19,6 +19,9 @@ subcollection: log-analysis
 
 List of locations where {{site.data.keyword.cloud_notm}} services are enabled to send logs to {{site.data.keyword.la_full}}. You monitor these logs that you monitor through the {{site.data.keyword.la_short}} instance that is configured to receive platform services logs. [Learn more about enabling service platform logs](/docs/log-analysis?topic=log-analysis-config_svc_logs).
 {: shortdesc}
+
+<!-- common deprecation notice -->
+{{../_include-segments/deprecation_notice.md}}
 
 
 ## Analytics services

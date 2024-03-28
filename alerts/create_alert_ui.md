@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years:  2018, 2023
-lastupdated: "2021-03-28"
+  years:  2018, 2024
+lastupdated: "2024-03-27"
 
 keywords: IBM, Log Analysis, logging, alerts
 
@@ -19,6 +19,8 @@ subcollection: log-analysis
 You can create alerts graphically through the UI.
 {: shortdesc}
 
+<!-- common deprecation notice -->
+{{../_include-segments/deprecation_notice.md}}
 
 Complete the following steps to create an alert:
 

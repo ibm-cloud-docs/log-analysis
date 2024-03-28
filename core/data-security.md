@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years:  2018, 2023
-lastupdated: "2023-06-01"
+  years:  2018, 2024
+lastupdated: "2024-03-27"
 
 keywords: IBM, Log Analysis, logging, overview, personal data, data deletion, PHI, data, data security, log-analysis
 
@@ -19,6 +19,8 @@ subcollection: log-analysis
 To ensure that you can securely manage your data when you use {{site.data.keyword.la_full_notm}}, it is important to know exactly what data is stored and encrypted, and how you can delete any stored personal data.
 {: shortdesc}
 
+<!-- common deprecation notice -->
+{{../_include-segments/deprecation_notice.md}}
 
 ## How your data is collected in {{site.data.keyword.la_full_notm}}
 {: #data-collection}

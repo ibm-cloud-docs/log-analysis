@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2019, 2023
-lastupdated: "2022-07-21"
+  years: 2019, 2024
+lastupdated: "2024-03-27"
 
 keywords: IBM Cloud, Log Analysis, streaming
 
@@ -18,6 +18,9 @@ subcollection: log-analysis
 
 Complete the following steps to configure streaming from a {{site.data.keyword.la_short}} instance to an {{site.data.keyword.messagehub}} instance:
 {: shortdesc}
+
+<!-- common deprecation notice -->
+{{_include-segments/deprecation_notice.md}}
 
 See [Configure streaming](/docs/log-analysis?topic=log-analysis-streaming#streaming-1) for more information on roles required for streaming.
 {: note}

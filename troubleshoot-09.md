@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2022, 2023
-lastupdated: "2023-03-07"
+  years: 2022, 2024
+lastupdated: "2024-03-27"
 
 keywords:
 
@@ -21,6 +21,9 @@ content-type: troubleshoot
 
 You are are trying to start the {{site.data.keyword.la_full}} 3.6 agent for Windows and it fails to start with a 1067 error.
 {: shortdesc}
+
+<!-- common deprecation notice -->
+{{_include-segments/deprecation_notice.md}}
 
 You receive a message: `Windows could not start the Mezmo Agent service on Local Computer.  Error 1067: The process terminated unexpectedly.`
 

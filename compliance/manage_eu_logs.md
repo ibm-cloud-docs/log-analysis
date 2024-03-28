@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years:  2018, 2023
-lastupdated: "2023-06-01"
+  years:  2018, 2024
+lastupdated: "2024-03-27"
 
 keywords: IBM, Log Analysis, logging, overview
 
@@ -17,6 +17,9 @@ subcollection: log-analysis
 
 Across every industry, organizations require tighter controls and visibility into where their data is stored and processed in the {{site.data.keyword.cloud}}. To manage logs that are generated in your **EU-supported account** by using the {{site.data.keyword.la_full_notm}} service, consider the following information:
 {: shortdesc}
+
+<!-- common deprecation notice -->
+{{../_include-segments/deprecation_notice.md}}
 
 1. You must provision {{site.data.keyword.la_full_notm}} instances in the `EU-DE (Frankfurt)` location.
 

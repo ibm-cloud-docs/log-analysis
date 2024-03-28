@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years:  2018, 2023
-lastupdated: "2023-06-01"
+  years:  2018, 2024
+lastupdated: "2024-03-27"
 
 keywords: IBM, Log Analysis, logging, regulated, highly available workloads
 
@@ -17,6 +17,9 @@ subcollection: log-analysis
 
 For regulated and highly available workloads, consider the following adoption guidelines when using the {{site.data.keyword.la_full_notm}} service:
 {: shortdesc}
+
+<!-- common deprecation notice -->
+{{../_include-segments/deprecation_notice.md}}
 
 
 ## Define resources naming standards for compliance

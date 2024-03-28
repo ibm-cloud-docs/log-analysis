@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years:  2018, 2023
-lastupdated: "2021-03-28"
+  years:  2018, 2024
+lastupdated: "2024-03-27"
 
 keywords:
 
@@ -18,6 +18,9 @@ subcollection: log-analysis
 
 You can monitor logs in your account through the {{site.data.keyword.la_full_notm}} web UI. You can also export sets of logs to analyze them in a different context.
 {: shortdesc}
+
+<!-- common deprecation notice -->
+{{_include-segments/deprecation_notice.md}}
 
 To view logs, you must [launch the web UI](/docs/log-analysis?topic=log-analysis-launch&interface=ui) in the location where logs are available. Then, you can work with views to monitor those logs. You view logs in your local time.
 

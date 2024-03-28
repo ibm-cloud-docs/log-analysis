@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years:  2018, 2023
-lastupdated: "2021-03-28"
+  years:  2018, 2024
+lastupdated: "2024-03-27"
 
 keywords: IBM, Log Analysis, logging, config agent
 
@@ -16,6 +16,10 @@ subcollection: log-analysis
 {: #compliance}
 
 {{site.data.keyword.la_full_notm}} actively participates in several industry compliance programs. An updated list of our compliance certifications can always be obtained by referencing the [Data Processing and Protection Datasheet](https://www.ibm.com/software/reports/compatibility/clarity-reports/report/html/softwareReqsForProduct?deliverableId=89904B80AE1911E7A9EB066095601ABB) available from [IBM Software Product Compatibility Reports](https://www.ibm.com/software/reports/compatibility/clarity/softwareReqsForProduct.html).
+{: shortdesc}
+
+<!-- common deprecation notice -->
+{{../_include-segments/deprecation_notice.md}}
 
 Clients are responsible for ensuring their own compliance with any applicable laws and regulations and are solely responsible for obtaining advice of competent legal counsel as to the identification and interpretation of any relevant laws and regulations that may affect the clients’ business as well as any actions the clients may need to take to comply with such laws and regulations. IBM does not provide legal, accounting, or auditing advice or represent or warrant that its services or products will ensure that clients are in compliance with any law or regulation.
 {: important}

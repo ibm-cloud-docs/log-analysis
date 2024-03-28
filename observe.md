@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years:  2018, 2023
-lastupdated: "2021-03-28"
+  years:  2018, 2024
+lastupdated: "2024-03-27"
 
 keywords: IBM, Log Analysis, logging, web UI, observability
 
@@ -18,7 +18,8 @@ subcollection: log-analysis
 You can manage your logging instances through the `Observability` dashboard in {{site.data.keyword.cloud_notm}}.
 {: shortdesc}
 
-
+<!-- common deprecation notice -->
+{{_include-segments/deprecation_notice.md}}
 
 ## Launch the logging UI
 {: #observe_ui}

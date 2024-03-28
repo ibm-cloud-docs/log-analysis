@@ -10,6 +10,7 @@ toc:
     product-page: https://www.ibm.com/cloud/log-analysis
     path: log-analysis
     label: Log Analysis
+    release-level: deprecated
 
   entries:
   - navgroup:
@@ -17,6 +18,18 @@ toc:
       topics:
 
       - getting-started.md
+
+      - topicgroup:
+          label: Deprecation
+          topics:
+          - topic: deprecation.md
+            navtitle: Overview
+          - topic: deprecation_details.md
+            navtitle: Details
+          - topic: deprecation_migration.md
+            navtitle: Migration
+          - deprecation_faq.md
+          - deprecation_help.md
 
       - topicgroup:
           label: Logging agents
@@ -150,7 +163,6 @@ toc:
           - topic: agent/config_agent_linux.md
             navtitle: Configuring agent on Linux Ubuntu or Debian
           - topic: agent/config_agent_rhel.md
-            navtitle: Configuring agent V3 on RPM-Linux
           - topic: agent/config_agent_linux_rpm.md
             navtitle: Configuring agent V2 on RPM-Linux
           - topic: agent/config_agent_windows_v3.md

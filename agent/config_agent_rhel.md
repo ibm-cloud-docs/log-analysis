@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years:  2018, 2023
-lastupdated: "2021-10-10"
+  years:  2018, 2024
+lastupdated: "2024-03-27"
 
 keywords:
 
@@ -17,6 +17,9 @@ subcollection: log-analysis
 
 To configure a Red Hat Linux server to send logs to a {{site.data.keyword.la_full_notm}} instance, you must install a logging agent.
 {: shortdesc}
+
+<!-- common deprecation notice -->
+{{../_include-segments/deprecation_notice.md}}
 
 - By default, the logging agent reads log files from */var/log*, and forwards the log data to your logging instance.
 - The agent runs as a Linux daemon by using `systemd`. You can manage the agent by using `systemctl`.

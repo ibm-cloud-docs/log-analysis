@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years:  2018, 2023
-lastupdated: "2021-03-28"
+  years:  2018, 2024
+lastupdated: "2024-03-27"
 
 keywords: IBM, Log Analysis, logging, export logs
 
@@ -18,6 +18,9 @@ subcollection: log-analysis
 
 You can export log data in JSONL format from an {{site.data.keyword.la_full_notm}} instance graphically through the web UI.
 {: shortdesc}
+
+<!-- common deprecation notice -->
+{{../_include-segments/deprecation_notice.md}}
 
 Consider the following information when you export log data:
 * You can export a set of log entries. To define the set of data that you want to export, you can apply filter and searches. You can also specify the time range.

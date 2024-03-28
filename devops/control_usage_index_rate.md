@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2019, 2023
-lastupdated: "2022-02-03"
+  years: 2019, 2024
+lastupdated: "2024-03-27"
 
 keywords: IBM Cloud, Log Analysis, auditing, index alerts, spike protection
 
@@ -18,6 +18,9 @@ subcollection: log-analysis
 
 Configure index rates alerts in your {{site.data.keyword.la_full}} instance to monitor and be alerted of unexpected spikes in your data volumes. Use the index rate to analyze and predict costs associated with storage of searchable data.
 {: shortdesc}
+
+<!-- common deprecation notice -->
+{{../_include-segments/deprecation_notice.md}}
 
 Index rates are calculated based on data that is ingested over the last 30 days and collected in 5 minute intervals.
 

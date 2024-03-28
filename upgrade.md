@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years:  2018, 2023
-lastupdated: "2021-03-28"
+  years:  2018, 2024
+lastupdated: "2024-03-27"
 
 keywords: IBM, Log Analysis, logging, upgrade, plan
 subcollection: log-analysis
@@ -18,6 +18,9 @@ subcollection: log-analysis
 
 When you provision an instance of the {{site.data.keyword.la_full_notm}} service, you must choose a service plan. Different plans offer different features. You can change the service plan at any time.
 {: shortdesc}
+
+<!-- common deprecation notice -->
+{{_include-segments/deprecation_notice.md}}
 
 [Learn more about service plans](/docs/log-analysis?topic=log-analysis-service_plans).
 

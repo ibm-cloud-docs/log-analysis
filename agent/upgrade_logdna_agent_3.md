@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years:  2021, 2023
-lastupdated: "2021-07-30"
+  years:  2021, 2024
+lastupdated: "2024-03-27"
 
 keywords: IBM, Log Analysis, logging, update logging agent
 
@@ -17,6 +17,9 @@ subcollection: log-analysis
 
 If your Kubernetes cluster version is 1.9+ or Red Hat OpenShift 4.5+, you can upgrade the logging agent to version 3 and run the agent as non-root.
 {: shortdesc}
+
+<!-- common deprecation notice -->
+{{../_include-segments/deprecation_notice.md}}
 
 Version 3 of the logging agent includes a number of features and enhancements, depending on the release level, including:
 

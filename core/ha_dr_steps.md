@@ -1,7 +1,7 @@
 ---
 copyright:
-  years: 2018, 2023
-lastupdated: "2023-09-07"
+  years: 2018, 2024
+lastupdated: "2024-03-27"
 
 keywords: IBM, Log Analysis, logging, disaster recovery, ha, high availability, redundancy
 
@@ -18,6 +18,8 @@ subcollection: log-analysis
 {{site.data.keyword.la_full_notm}} is a highly available, multi-tenant, regional service. In this topic, you can learn more about {{site.data.keyword.la_short}}'s availability and disaster recovery strategies, what you need to plan for, and what you need to do if you need to recover from a regional disaster.
 {: shortdesc}
 
+<!-- common deprecation notice -->
+{{../_include-segments/deprecation_notice.md}}
 
 ## Prereqs
 {: #ha_dr_steps_prereqs}

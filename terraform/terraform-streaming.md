@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years:  2018, 2023
-lastupdated: "2022-08-03"
+  years:  2018, 2024
+lastupdated: "2024-03-27"
 
 keywords: IBM, Log Analysis, logging, terraform
 
@@ -20,6 +20,8 @@ subcollection: log-analysis
 You can use the **LogDNA Terraform provider** to manage archiving for a {{site.data.keyword.la_short}} instance by using HashiCorp Configuration Language (HCL).
 {: shortdesc}
 
+<!-- common deprecation notice -->
+{{../_include-segments/deprecation_notice.md}}
 
 ## Prereqs
 {: #terraform-streaming-prereqs}

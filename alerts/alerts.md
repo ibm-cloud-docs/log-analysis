@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years:  2018, 2023
-lastupdated: "2021-04-11"
+  years:  2018, 2024
+lastupdated: "2024-03-27"
 
 keywords: IBM, Log Analysis, logging, alerts
 
@@ -18,6 +18,9 @@ subcollection: log-analysis
 
 You can configure alerts to notify about the state of your infrastructure, applications, and {{site.data.keyword.cloud_notm}} services.
 {: shortdesc}
+
+<!-- common deprecation notice -->
+{{../_include-segments/deprecation_notice.md}}
 
 A rule specifies the scope of the data that you want to monitor and be notified if certain conditions occur. Per alert rule, consider the following information:
 - You can define 1 or more notification channels.

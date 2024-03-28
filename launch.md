@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2024
-lastupdated: "2024-01-23"
+lastupdated: "2024-03-27"
 
 keywords: IBM, Log Analysis, logging, web UI, browser
 
@@ -17,6 +17,9 @@ subcollection: log-analysis
 
 After you provision an instance of the {{site.data.keyword.la_full_notm}} service in the {{site.data.keyword.cloud_notm}}, and configure a logging agent for a log data source, you can view, monitor, and manage logs through the {{site.data.keyword.la_full_notm}} web UI.
 {: shortdesc}
+
+<!-- common deprecation notice -->
+{{_include-segments/deprecation_notice.md}}
 
 
 ## Granting IAM policies to a user to launch the web UI

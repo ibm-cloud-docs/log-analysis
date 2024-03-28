@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years:  2018, 2023
-lastupdated: "2022-06-06"
+  years:  2018, 2024
+lastupdated: "2024-03-27"
 
 keywords: groups, access
 
@@ -17,6 +17,9 @@ subcollection: log-analysis
 
 You can configure, control, and manage data that is available to users in your {{site.data.keyword.cloud}} account by configuring **groups** in the logging instance.
 {: shortdesc}
+
+<!-- common deprecation notice -->
+{{_include-segments/deprecation_notice.md}}
 
 A **group** is comprised of **users** with authorization to specific data.
 

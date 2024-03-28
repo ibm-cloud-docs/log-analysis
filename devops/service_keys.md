@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years:  2018, 2023
-lastupdated: "2023-01-04"
+  years:  2018, 2024
+lastupdated: "2024-03-27"
 
 keywords: IBM, Log Analysis, logging, service keys
 
@@ -16,6 +16,10 @@ subcollection: log-analysis
 {: #service_keys}
 
 In an {{site.data.keyword.la_full}} instance you can create, delete, and view service keys by using the UI.  You can also create and view service keys by using the CLI and API.
+{: shortdesc}
+
+<!-- common deprecation notice -->
+{{../_include-segments/deprecation_notice.md}}
 
 A service key is a unique code that is passed in an API request to identify the calling application or user.
 

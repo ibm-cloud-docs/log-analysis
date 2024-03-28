@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years:  2022, 2023
-lastupdated: "2022-07-27"
+  years:  2022, 2024
+lastupdated: "2024-03-27"
 
 keywords: IBM, Log Analysis, logging, api, category, categories
 
@@ -18,6 +18,9 @@ subcollection: log-analysis
 
 You can use the *Configuration REST API* to programmatically manage categories. Categories are used to group views, boards, or screens.
 {: shortdesc}
+
+<!-- common deprecation notice -->
+{{../_include-segments/deprecation_notice.md}}
 
 - You can use the **POST** method to create new categories.
 - You can use the **GET** method to list defined categories.

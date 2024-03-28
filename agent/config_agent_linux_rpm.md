@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years:  2018, 2023
-lastupdated: "2021-10-06"
+  years:  2018, 2024
+lastupdated: "2024-03-27"
 
 keywords:
 
@@ -17,6 +17,9 @@ subcollection: log-analysis
 
 The logging agent is responsible for collecting and forwarding logs to your {{site.data.keyword.la_full}} instance. After you provision an instance of {{site.data.keyword.la_full_notm}}, you must configure a logging agent for each log source that you want to monitor.
 {: shortdesc}
+
+<!-- common deprecation notice -->
+{{../_include-segments/deprecation_notice.md}}
 
 The logging agent reads log files from */var/log*, and forwards the log data to your logging instance.
 

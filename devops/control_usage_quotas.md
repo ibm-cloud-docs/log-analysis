@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2019, 2023
-lastupdated: "2022-05-08"
+  years: 2019, 2024
+lastupdated: "2024-03-27"
 
 keywords: IBM Cloud, Log Analysis, usage, usage quotas
 
@@ -18,6 +18,9 @@ subcollection: log-analysis
 
 In {{site.data.keyword.la_full}}, you can use the *Usage Quota* settings to control how much data is stored so you can manage your data cost while still being able to view and retain the data you need.
 {: shortdesc}
+
+<!-- common deprecation notice -->
+{{../_include-segments/deprecation_notice.md}}
 
 ## What are usage quotas?
 {: #about_usage_quotas}

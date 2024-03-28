@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years:  2021, 2023
-lastupdated: "2021-11-04"
+  years:  2021, 2024
+lastupdated: "2024-03-27"
 
 keywords: IBM, Log Analysis, Slack
 
@@ -17,6 +17,9 @@ subcollection: log-analysis
 
 You can send {{site.data.keyword.la_full}} alerts to Slack.
 {: shortdesc}
+
+<!-- common deprecation notice -->
+{{../_include-segments/deprecation_notice.md}}
 
 ## Prerequsite
 {: #slack-prereq}

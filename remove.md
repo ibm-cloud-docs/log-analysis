@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years:  2018, 2023
-lastupdated: "2022-08-19"
+  years:  2018, 2024
+lastupdated: "2024-03-27"
 
 keywords: IBM, Log Analysis, logging instance, delete
 
@@ -17,6 +17,9 @@ subcollection: log-analysis
 
 You can remove an instance of the {{site.data.keyword.la_full_notm}} service from the {{site.data.keyword.cloud_notm}} UI or through the command line.
 {: shortdesc}
+
+<!-- common deprecation notice -->
+{{_include-segments/deprecation_notice.md}}
 
 When you remove an instance from the {{site.data.keyword.cloud_notm}}, clean up by completing the following tasks:
 
