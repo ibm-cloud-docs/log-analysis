@@ -42,7 +42,7 @@ For information on archiving, see:
 ## Why {{site.data.keyword.logs_full_notm}}?
 {: #cloud-logs-intro}
 
-The volume of application data generated and processed is increasing exponentially.  As businesses increasing rely on cloud services for data insights, the cost of downtime, slow performance, and customer satisfaction becomes an increasing challenge. The tools and techniques available for this increased workload observability must be balanced against the volume of data processed to have the right cost control balance. {{site.data.keyword.logs_full_notm}} gives you increased insights into the every increasing generated data and provides tools to manage data growth against your budget.
+The volume of application data generated and processed is increasing exponentially.  As businesses increasing rely on cloud services for data insights, the cost of downtime, slow performance, and customer satisfaction becomes an increasing challenge. The tools and techniques available for this increased workload observability must be balanced against the volume of data processed to have the right cost control balance. {{site.data.keyword.logs_full_notm}} gives you increased insights into the ever increasing generated data and provides tools to manage data growth against your budget.
 
 {{site.data.keyword.logs_full_notm}} gives you flexibility in how your data is processed for insights and trends, and where data is stored for high-speed search and long term trend analysis. It provides the tools for you to maximize the value obtained while maintaining control on the total cost at all times:
 
@@ -65,7 +65,7 @@ As IBM Cloud transitions from {{site.data.keyword.la_full}} and {{site.data.keyw
 
 * Increase data insights with client-defined parsing rules to enrich and restructure data in real-time.
 
-* Build not a single alert, but a flow of multiple alerts, enabling you to more quickly define the root case of the issue.
+* Build not a single alert, but a flow of multiple alerts, enabling you to more quickly define the root cause of the issue.
 
    * {{site.data.keyword.logs_full_notm}} alerts can integrate with the {{site.data.keyword.en_full_notm}} service where clients might centralize alert routing with other {{site.data.keyword.cloud_notm}} alerts.
 
