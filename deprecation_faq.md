@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2024
-lastupdated: "2024-03-25"
+lastupdated: "2024-04-16"
 
 keywords:
 
@@ -184,6 +184,13 @@ Using the migration tool is not a requirement. You can provision new {{site.data
 {: #dfaq_19}
 {: faq}
 
-If you plan to migrate using the migration tool, you must do so before {{site.data.keyword.la_full}} and {{site.data.keyword.at_full_notm}} are de-provisioned and deleted on 30 March 2025.
+If you plan to migrate using the migration tool, you must do so before {{site.data.keyword.la_full_notm}} and {{site.data.keyword.at_full_notm}} are de-provisioned and deleted on 30 March 2025.
+
+### Can {{site.data.keyword.logs_full_notm}} access my data that is stored in my {{site.data.keyword.cos_full_notm}} buckets? When using {{site.data.keyword.la_full_notm}} and {{site.data.keyword.at_full_notm}} I had to use other tools to access data archived to {{site.data.keyword.cos_full_notm}} buckets.
+{: #dfaq_cos_access}
+{: faq}
+
+Yes, with {{site.data.keyword.logs_full_notm}} all of the historical data stored in your {{site.data.keyword.cos_full_notm}} buckets is accessible and searchable using {{site.data.keyword.logs_full_notm}}. No other tools are required. However, any tools that can read data from {{site.data.keyword.cos_full_notm}} buckets can also be used, as you might have done with the previous solutions.
+
 
 
