@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2024
-lastupdated: "2024-04-16"
+lastupdated: "2024-05-01"
 
 keywords:
 
@@ -95,6 +95,16 @@ No. {{site.data.keyword.logs_full_notm}} is planned to be generally available la
 
 {{site.data.keyword.logs_full_notm}} does not have a free plan. There is a 7-day trial plan. This plan will ingest 7-days of data with fast data access for up to 5 GB of data. This data will be available for 30 days if you configure {{site.data.keyword.cos_full_notm}} buckets for the instance. After 7 days you will no longer be able to access the trial plan {{site.data.keyword.logs_full_notm}} instance, but your data will remain in the {{site.data.keyword.cos_full_notm}} bucket.
 
+### What are the pricing differences between the gigabyte charges that the {{site.data.keyword.la_full_notm}} and {{site.data.keyword.at_full_notm}} services used and those used by {{site.data.keyword.logs_full_notm}}
+{: #dfaq_price}
+{: faq}
+
+The new {{site.data.keyword.logs_full_notm}}, and legacy {{site.data.keyword.la_full_notm}} and {{site.data.keyword.at_full_notm}} services all charge by gigabytes processed into the service. The significant difference between {{site.data.keyword.logs_full_notm}} and the legacy {{site.data.keyword.la_full_notm}} and {{site.data.keyword.at_full_notm}} services is the ability to define the level of data processing performed on the ingested data.
+
+* {{site.data.keyword.logs_full_notm}} allows clients flexibility to use a mixture of 3 data processing tiers to right-size the value and optimize cost.
+
+* {{site.data.keyword.la_full_notm}} and {{site.data.keyword.at_full_notm}} support only 1 type of processing which often led to higher costs because a higher service tier was needed for only a subset of the data.
+
 ### Will {{site.data.keyword.logs_full_notm}} support the same regions as {{site.data.keyword.la_full_notm}} and {{site.data.keyword.at_full_notm}}?
 {: #dfaq_8}
 {: faq}
@@ -113,6 +123,27 @@ While the foundational features of the three services remain the same, {{site.da
 _include-segments/at_la_cl_comparison.md
  -->
 
+### What log retention is available for the {{site.data.keyword.logs_full_notm}} service?
+{: #dfaq_clret}
+{: faq}
+
+{{site.data.keyword.logs_full_notm}} handles retention differently than the legacy {{site.data.keyword.la_full_notm}} and {{site.data.keyword.at_full_notm}} services. The new solution provides greater retention flexibility.
+
+{{site.data.keyword.logs_full_notm}} users connect their provisioned {{site.data.keyword.cos_full_notm}} buckets to their service instance. Data flowing through the service instance is saved to {{site.data.keyword.cos_full_notm}} buckets and this data can be searched using {{site.data.keyword.logs_full_notm}}. Data can also be retained in the service and temporarily held in hot storage to be searched through {{site.data.keyword.logs_full_notm}}. The hot storage feature, called *Priority Insights*, is similar to how {{site.data.keyword.la_full_notm}} and {{site.data.keyword.at_full_notm}} retain data today.
+
+All data kept in {{site.data.keyword.cos_full_notm}} is also available for search in {{site.data.keyword.logs_full_notm}}. If a client has 81 days saved to search, they will have 81 days of retention. Data retained in hot storage is retained in hot storage for the configured amount of time. {{site.data.keyword.logs_full_notm}} will offer retention periods for 7, 14, 30, 60, and 90 days in hot storage (*Priority Insights*). If data is sent to hot storage and the client has connected their {{site.data.keyword.cos_full_notm}} buckets, the data will initially be searchable using the hot storage copy of data then by searching the same data direct from {{site.data.keyword.cos_full_notm}} once the hot storage period has expired.
+
+Regarding the {{site.data.keyword.la_full_notm}} and {{site.data.keyword.at_full_notm}} HIPAA plans, these special service plans will go away with {{site.data.keyword.logs_full_notm}}. All {{site.data.keyword.logs_full_notm}} premium options will be HIPAA enabled. Clients are still expected to have a Business Associate Contract (BAA) with IBM. Clients are also reminded to use {{site.data.keyword.logs_full_notm}} for operations observability data. {{site.data.keyword.logs_full_notm}} service is enabled in the event HIPAA controlled data leaks through log data sent to the tool. {{site.data.keyword.logs_full_notm}} is not intended to be an active repository for HIPAA data. Applications should be designed to mask sensitive data before sending data to {{site.data.keyword.logs_full_notm}}.
+
+### Do I need an {{site.data.keyword.cos_full_notm}} instance configured to use {{site.data.keyword.logs_full_notm}}?
+{: #dfaq_needcos}
+{: faq}
+
+{{site.data.keyword.logs_full_notm}} uses {{site.data.keyword.cos_full_notm}} buckets that you own to store processed data as an archive. You can then use {{site.data.keyword.logs_full_notm}} to search all historical data and metadata, as well as any high-speed data that you might be receiving in the tool. You can also access data in the {{site.data.keyword.cos_full_notm}} buckets directly for whatever business purposes may be required.
+
+Using {{site.data.keyword.logs_full_notm}} without {{site.data.keyword.cos_full_notm}} buckets is possible, but not recommended. When {{site.data.keyword.logs_full_notm}} is used without attached {{site.data.keyword.cos_full_notm}} buckets you will lose ability to search data outside of the data being sent to the *Priority insights* pipeline.
+
+
 ## Migration FAQs
 {: #mig_faq}
 
@@ -121,6 +152,18 @@ _include-segments/at_la_cl_comparison.md
 {: faq}
 
 The tool to let you migrate configurations from {{site.data.keyword.la_full_notm}} and {{site.data.keyword.at_full_notm}} to {{site.data.keyword.logs_full_notm}} will be available when {{site.data.keyword.logs_full_notm}} is generally available.
+
+### How can we use the log data we have in {{site.data.keyword.la_full_notm}} and {{site.data.keyword.at_full_notm}} in the new {{site.data.keyword.logs_full_notm}} that was gathered by the LogDNA agent? Will a log data migration tool be provided? Is log data compatible between {{site.data.keyword.la_full_notm}} and {{site.data.keyword.at_full_notm}} and {{site.data.keyword.logs_full_notm}} and we don't need to migrate log data?
+{: #dfaq_migdata}
+{: faq}
+
+Data aggregated with the {{site.data.keyword.la_full_notm}} and {{site.data.keyword.at_full_notm}} services can not be migrated to {{site.data.keyword.logs_full_notm}}. Clients are encouraged to archive logs from {{site.data.keyword.la_full_notm}} and {{site.data.keyword.at_full_notm}} then use their existing search solutions for data archived by those services.
+
+### How can we migrate the dashboard settings, authorization settings, and alert triggers to {{site.data.keyword.logs_full_notm}}? Can those be migrated or do we need to create new settings?
+{: #dfaq_migset}
+{: faq}
+
+Many configuration settings from {{site.data.keyword.la_full_notm}} and {{site.data.keyword.at_full_notm}} can be migrated with the migration tool once the tool is available. Dashboards and alerts are both migrated by the migration tool. Examples of other frequently used settings which can be migrated include parsing rules, exclusion rules, views, screens and groups.
 
 ### What configurations will the migration tool migrate?
 {: #dfaq_11}
@@ -191,6 +234,4 @@ If you plan to migrate using the migration tool, you must do so before {{site.da
 {: faq}
 
 Yes, with {{site.data.keyword.logs_full_notm}} all of the historical data stored in your {{site.data.keyword.cos_full_notm}} buckets is accessible and searchable using {{site.data.keyword.logs_full_notm}}. No other tools are required. However, any tools that can read data from {{site.data.keyword.cos_full_notm}} buckets can also be used, as you might have done with the previous solutions.
-
-
 
