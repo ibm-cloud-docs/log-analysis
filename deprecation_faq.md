@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2024
-lastupdated: "2024-05-01"
+lastupdated: "2024-05-06"
 
 keywords:
 
@@ -234,4 +234,10 @@ If you plan to migrate using the migration tool, you must do so before {{site.da
 {: faq}
 
 Yes, with {{site.data.keyword.logs_full_notm}} all of the historical data stored in your {{site.data.keyword.cos_full_notm}} buckets is accessible and searchable using {{site.data.keyword.logs_full_notm}}. No other tools are required. However, any tools that can read data from {{site.data.keyword.cos_full_notm}} buckets can also be used, as you might have done with the previous solutions.
+
+### Can I use the same agents I used for {{site.data.keyword.la_full_notm}} and {{site.data.keyword.at_full_notm}} to send data to {{site.data.keyword.logs_full_notm}}?
+{: #dfaq_agent}
+{: faq}
+
+No. {{site.data.keyword.logs_full_notm}} uses {{site.data.keyword.iamshort}} tokens for authentication. Users will need to deploy new agents.
 
