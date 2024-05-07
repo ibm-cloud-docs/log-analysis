@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2024
-lastupdated: "2024-03-27"
+lastupdated: "2024-05-06"
 
 keywords:
 
@@ -257,6 +257,7 @@ The following table shows the locations where automatic collection of developer 
 | Dedicated host                                         | ![Checkmark icon](../images/checkmark-icon.svg) | ![Checkmark icon](../images/checkmark-icon.svg) |
 | Flow Log Collector                                     | ![Checkmark icon](../images/checkmark-icon.svg) | ![Checkmark icon](../images/checkmark-icon.svg) |
 | VPN                                                    | ![Checkmark icon](../images/checkmark-icon.svg) | `Logs are available through the logging US-South instance` |
+| DNS Services                                           | | |
 {: caption="Table 6. Networking services" caption-side="top"}
 {: #cs-net-table-13}
 {: tab-title="America"}
@@ -269,7 +270,8 @@ The following table shows the locations where automatic collection of developer 
 | {{site.data.keyword.loadbalancer_full}} `[1]`                  |    |  |
 | Dedicated host                         | ![Checkmark icon](../images/checkmark-icon.svg) | ![Checkmark icon](../images/checkmark-icon.svg) |
 | Flow Log Collector                     | ![Checkmark icon](../images/checkmark-icon.svg) | ![Checkmark icon](../images/checkmark-icon.svg) |
-| VPN                                              | ![Checkmark icon](../images/checkmark-icon.svg)             | ![Checkmark icon](../images/checkmark-icon.svg) |
+| VPN                                    | ![Checkmark icon](../images/checkmark-icon.svg) | ![Checkmark icon](../images/checkmark-icon.svg) |
+| DNS Services                           | | |
 {: caption="Table 6. Networking services" caption-side="top"}
 {: #cs-net-table-14}
 {: tab-title="Asia Pacific"}
@@ -279,10 +281,11 @@ The following table shows the locations where automatic collection of developer 
 
 | Service                                                       |`Frankfurt (eu-de)`  | `London (eu-gb)` |  `Madrid (eu-es)` |
 |---------------------------------------------------------------|-------------------|----------------|------------|
-| {{site.data.keyword.loadbalancer_full}} `[1]`               |               |  |  |
-| Dedicated host                        | ![Checkmark icon](../images/checkmark-icon.svg) | ![Checkmark icon](../images/checkmark-icon.svg) |  |
-| Flow Log Collector                     | ![Checkmark icon](../images/checkmark-icon.svg) | ![Checkmark icon](../images/checkmark-icon.svg) |  |
-| VPN                                                           | ![Checkmark icon](../images/checkmark-icon.svg)  | ![Checkmark icon](../images/checkmark-icon.svg) |  |
+| {{site.data.keyword.loadbalancer_full}} `[1]`                 |                   |                |            |
+| Dedicated host                                                | ![Checkmark icon](../images/checkmark-icon.svg) | ![Checkmark icon](../images/checkmark-icon.svg) |  |
+| Flow Log Collector                                            | ![Checkmark icon](../images/checkmark-icon.svg) | ![Checkmark icon](../images/checkmark-icon.svg) |  |
+| VPN                                                           | ![Checkmark icon](../images/checkmark-icon.svg) | ![Checkmark icon](../images/checkmark-icon.svg) |  |
+| DNS Services                                                  | ![Checkmark icon](../images/checkmark-icon.svg) | | |
 {: caption="Table 6. Networking services" caption-side="top"}
 {: #cs-net-table-15}
 {: tab-title="Europe"}
