@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2024
-lastupdated: "2024-03-27"
+lastupdated: "2024-05-17"
 
 keywords: IBM Cloud, Log Analysis, usage, usage quotas
 

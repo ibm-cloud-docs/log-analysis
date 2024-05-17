@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2024
-lastupdated: "2024-03-27"
+lastupdated: "2024-05-17"
 
 keywords: IBM, Log Analysis, logging, overview, personal data, data deletion, PHI, data, data security, log-analysis
 
