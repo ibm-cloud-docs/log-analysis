@@ -136,7 +136,7 @@ Create a Kubernetes daemonset to deploy the logging agent on every worker node o
 
 The logging agent collects the following logs:
 - STDOUT and STDERR
-- Logs with the extension `*.log`, and extensionsless files that are stored in the `/var/log` directory of your pod.
+- Logs with the extension `*.log`, and extensionsless files that are stored in the `/var/log` directory of your logging agent pod.
 
 By default, logs are collected from all namespaces, including `kube-system`, and automatically forwarded to the {{site.data.keyword.la_full_notm}} service.
 
