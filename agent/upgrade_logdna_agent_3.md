@@ -2,7 +2,7 @@
 
 copyright:
   years:  2021, 2024
-lastupdated: "2024-05-17"
+lastupdated: "2024-05-24"
 
 keywords: IBM, Log Analysis, logging, update logging agent
 
