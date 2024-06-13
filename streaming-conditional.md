@@ -18,7 +18,7 @@ subcollection: log-analysis
 In an {{site.data.keyword.la_full_notm}} instance, you can configure streaming exclusion rules through the UI to filter what data is streamed.
 {: shortdesc}
 
-<!-- common deprecation notice -->
+
 {{_include-segments/deprecation_notice.md}}
 
 - Log lines that match a streaming exclusion rule are not streamed.

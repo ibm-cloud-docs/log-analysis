@@ -18,7 +18,7 @@ subcollection: log-analysis
 Detach a logging agent from a logging instance to stop collecting logs.
 {: shortdesc}
 
-<!-- common deprecation notice -->
+
 {{../_include-segments/deprecation_notice.md}}
 
 ## Detaching a logging agent  from a standard Kubernetes cluster
@@ -249,16 +249,14 @@ Complete the following steps from the command line:
     ```
     {: pre}
 
-    Where *PROJECT* is the namespace where the logging pods run. Set this value to **ibm-observe**.
-
 6. Remove the logging agent on every worker(node) of your Kubernetes cluster. The logging agent is responsible for collecting and forwarding your logs. Run the following command:
 
     ```text
-    oc delete daemonset logdna-agent -n ibm-observe
+    kubectl delete -f https://<ENDPOINT>/clients/logdna-agent-ds-os.yaml -n ibm-observe
     ```
     {: codeblock}
 
-    Where *PROJECT* is the namespace where the logging pods run. Set this value to **ibm-observe**.
+    Where `<ENDPOINT>` is the [endpoint where the agent was installed.](/docs/log-analysis?topic=log-analysis-config_agent_os_cluster#config_agent_os_cluster_step4_v1)
 
 7. Verify that the logging agent is deleted successfully. Run the following command to verify that logging agent pods are not running:
 

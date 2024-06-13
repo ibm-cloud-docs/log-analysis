@@ -18,7 +18,7 @@ subcollection: log-analysis
 Frequently asked questions about {{site.data.keyword.la_full_notm}}.
 {: shortdesc}
 
-<!-- common deprecation notice -->
+
 {{_include-segments/deprecation_notice.md}}
 
 ## Where can I find the list of Cloud services that send logs?

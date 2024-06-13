@@ -19,7 +19,7 @@ subcollection: log-analysis
 When you provision an instance of the {{site.data.keyword.la_full_notm}} service, you must choose a service plan. Different plans offer different features. You can change the service plan at any time.
 {: shortdesc}
 
-<!-- common deprecation notice -->
+
 {{_include-segments/deprecation_notice.md}}
 
 [Learn more about service plans](/docs/log-analysis?topic=log-analysis-service_plans).

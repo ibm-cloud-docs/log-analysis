@@ -18,7 +18,7 @@ subcollection: log-analysis
 You can use the Ingestion REST API and libraries to send application logs to an {{site.data.keyword.la_full}} instance.
 {: shortdesc}
 
-<!-- common deprecation notice -->
+
 {{../_include-segments/deprecation_notice.md}}
 
 In an application log, you can find information that you can use to troubleshoot and monitor your application.

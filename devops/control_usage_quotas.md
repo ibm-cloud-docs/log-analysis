@@ -19,7 +19,7 @@ subcollection: log-analysis
 In {{site.data.keyword.la_full}}, you can use the *Usage Quota* settings to control how much data is stored so you can manage your data cost while still being able to view and retain the data you need.
 {: shortdesc}
 
-<!-- common deprecation notice -->
+
 {{../_include-segments/deprecation_notice.md}}
 
 ## What are usage quotas?

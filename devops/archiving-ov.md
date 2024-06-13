@@ -20,7 +20,7 @@ subcollection: log-analysis
 You can archive logs from an {{site.data.keyword.la_full}} instance into a bucket in an {{site.data.keyword.cos_full_notm}} (COS) instance.
 {: shortdesc}
 
-<!-- common deprecation notice -->
+
 {{../_include-segments/deprecation_notice.md}}
 
 Data is available for search and analysis for the number of days that your service instance plan indicates. However, you might need to access the data longer for troubleshooting. You might also have to keep the data for longer for compliance, and for corporate or industry regulations. When you need access to data for longer than the number of search days, you must configure archiving.

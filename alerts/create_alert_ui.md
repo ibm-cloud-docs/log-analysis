@@ -19,7 +19,7 @@ subcollection: log-analysis
 You can create alerts graphically through the UI.
 {: shortdesc}
 
-<!-- common deprecation notice -->
+
 {{../_include-segments/deprecation_notice.md}}
 
 Complete the following steps to create an alert:

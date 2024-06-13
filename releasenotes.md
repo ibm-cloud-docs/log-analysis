@@ -20,15 +20,8 @@ content-type: release-note
 Use these release notes to learn about updates to {{site.data.keyword.la_full}}.
 {: shortdesc}
 
-<!-- common deprecation notice -->
+
 {{_include-segments/deprecation_notice.md}}
-
-## 28 March 2023
-{: #log-analysis-mar2824}
-{: release-note}
-
-{{site.data.keyword.la_full_notm}} is deprecated
-:   For more information about the deprecation, see [Deprecation of {{site.data.keyword.la_full_notm}} and {{site.data.keyword.at_full_notm}}](/docs/log-analysis?topic=log-analysis-deprecation).
 
 ## 8 December 2023
 {: #log-analysis-dec0823}

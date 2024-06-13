@@ -19,7 +19,7 @@ subcollection: log-analysis
 You can use the *Configuration REST API* to manage programmatically views and alerts.
 {: shortdesc}
 
-<!-- common deprecation notice -->
+
 {{../_include-segments/deprecation_notice.md}}
 
 - You can use the **POST** method to create a view, or create a view and attach an alert to it.

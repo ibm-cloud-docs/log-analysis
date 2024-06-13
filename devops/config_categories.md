@@ -19,7 +19,7 @@ subcollection: log-analysis
 You can use the *Configuration REST API* to programmatically manage categories. Categories are used to group views, boards, or screens.
 {: shortdesc}
 
-<!-- common deprecation notice -->
+
 {{../_include-segments/deprecation_notice.md}}
 
 - You can use the **POST** method to create new categories.

@@ -12,13 +12,13 @@ subcollection: log-analysis
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Configuring Logging agent V3 for Red Hat Linux
+# Configuring Logging agent V3 for Red Hat Linux (WIP)
 {: #config_agent_rhel3}
 
 To configure a Red Hat Linux server to send logs to a {{site.data.keyword.la_full_notm}} instance, you must install a logging agent.
 {: shortdesc}
 
-<!-- common deprecation notice -->
+
 {{../_include-segments/deprecation_notice.md}}
 
 - By default, the logging agent reads log files from */var/log*, and forwards the log data to your logging instance.
@@ -39,11 +39,14 @@ If you are upgrading from an earlier Linux agent, you might have an existing `/e
 
 If you are using older Linux distributions (Centos 7, Amazon Linux 2, RHEL 7), you need to make sure that the `/var/lib/logdna` directory exists since older versions of `systemd` packaged with these distributions will not automatically create the directory.
 
+## Deploy the logging agent
 
-## Step 1. Install the logging agent
+Complete the following steps:
+
+### Step 1. Install the logging agent
 {: #config_agent_rhel3_step1}
 
-Install the logging agent. Run the following commands from a terminal:
+Install the latest version of the logging agent. Run the following commands from a terminal:
 
 ```sh
 sudo rpm --import https://assets.logdna.com/logdna.gpg
@@ -65,7 +68,7 @@ sudo yum install logdna-agent
 ```
 {: codeblock}
 
-## Step 2. Configure the logging agent
+### Step 2. Configure the logging agent
 {: #config_agent_rhel3_step2}
 
 To configure the agent, do the following:
@@ -199,7 +202,7 @@ startup: {}
 
 
 
-## Step 3. Run the logging agent
+### Step 3. Run the logging agent
 {: #config_agent_rhel3_step3}
 
 Start the `logdna-agent` service using the `systemctl` command:
@@ -223,12 +226,229 @@ systemctl status logdna-agent
 ```
 {: pre}
 
+Run `/usr/bin/logdna-agent` to see the agent logs.
+{: tip}
+
+
 ## Step 4. Enable the agent on boot
 {: #config_agent_rhel3_step4}
 
-To enable the agent on boot run the following command:
+To enable the agent on boot, run the following command:
 
 ```sh
 sudo systemctl enable logdna-agent
 ```
 {: pre}
+
+
+## Install a version of the logging agent
+
+To install a specific version of the logging agent, run the following commands:
+
+1. Clean the yum cache directory.
+
+    ```sh
+    yum clean all
+    ```
+    {: pre}
+
+2. List the agent versions that are available.
+
+    ```sh
+    yum --showduplicate list logdna-agent
+    ```
+    {: pre}
+
+3. Install the agent.
+
+    ```sh
+    yum install logdna-agent-<VERSION>.x86_64
+    ```
+    {: pre}
+
+    Where `<VERSION>` is the agent version that you want to deploy.
+
+
+## Remove the logging agent
+
+Run the following command:
+
+```sh
+yum remove logdna-agent
+```
+{: pre}
+
+
+## Update the logging agent
+
+Run the following command to update the agent to the latest version:
+
+```sh
+yum update logdna-agent
+```
+{: pre}
+
+To update to a specific version, run the following command:
+
+```sh
+yum update logdna-agent-<VERSION>.x86_64
+```
+{: pre}
+
+Where `<VERSION>` is the agent version that you want to deploy.
+
+## Find the rpm agent version uploaded
+
+Run the following command to find the rpm agent version uploaded in Package Manager:
+
+```sh
+rpm -qa | grep logdna-agent
+```
+{: pre}
+
+## Find the rpm version installed
+
+```sh
+yum list installed | grep logdna-agent
+```
+{: pre}
+
+
+## Generate rpm file for local install
+
+rpm2cpio logdna-agent-3.8.0-1.x86_64.rpm | cpio -idmv
+
+
+## Create a service that can be started and stopped by a non-root user.
+
+
+```
+# systemctl list-units --type service | grep logdna-agent
+logdna-agent.service                                  loaded active running Logdna Agent
+
+```
+
+
+To configure a service unit that corresponds to a system service to be automatically started at boot time, type the following at a shell prompt as root:
+
+```
+systemctl enable name.service
+```
+
+
+```
+chown -R root:mezmo /var/lib/logdna/*
+find /var/lib/logdna/ -type f -exec chmod 770 {} \;
+find /var/lib/logdna/ -type d -exec chmod 770 {} \;
+```
+
+This restriction only allows root to modify configuration files, while still allowing the services to read them
+
+
+```
+chown -R root:mezmo /var/lib/logdna/*
+chown -R root:mezmo /var/lib/logdna
+find /var/lib/logdna/ -type d -exec chmod 770 {} \;
+find /var/lib/logdna/ -type f -exec chmod 770 {} \;
+
+
+
+$ systemctl status logdna-agent
+● logdna-agent.service - Logdna Agent
+   Loaded: loaded (/usr/lib/systemd/system/logdna-agent.service; enabled; vendor preset: disabled)
+   Active: active (running) since Tue 2022-11-29 11:53:41 EST; 38min ago
+     Docs: https://docs.logdna.com
+ Main PID: 429165 (logdna-agent)
+    Tasks: 15 (limit: 49269)
+   Memory: 60.4M
+   CGroup: /system.slice/logdna-agent.service
+           ├─429165 /usr/bin/logdna-agent
+           └─429203 journalctl -b -f -o export
+
+[mezmo@red-hat-vsi ~]$ systemctl stop logdna-agent
+==== AUTHENTICATING FOR org.freedesktop.systemd1.manage-units ====
+Authentication is required to stop 'logdna-agent.service'.
+Authenticating as: root
+
+
+# pwd
+/usr/lib/systemd/system
+[root@red-hat-vsi system]# cat logdna-agent.service
+[Unit]
+Description=Logdna Agent
+Documentation=https://docs.logdna.com
+
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/logdna-agent
+Restart=on-failure
+EnvironmentFile=-/etc/logdna.env
+StateDirectory=logdna
+
+[Install]
+WantedBy=multi-user.target
+
+
+755 means read and execute access for everyone and also write access for the owner of the file
+
+directory:  /usr/lib/systemd/system
+chmod 774 logdna-agent.service
+[root@red-hat-vsi system]# ls -lisa logdna*
+8394562 4 -rwxrwxr--. 1 root root 259 Oct 20 12:11 logdna-agent.service
+
+
+# ls -lisa logdna
+total 28
+310379377  0 drwxrwx---.  3 root mezmo    28 Oct 10 01:53 .
+ 25165957  4 drwxr-xr-x. 37 root root   4096 Oct 10 01:53 ..
+318768007 24 drwxrwx---.  3 root mezmo 20480 Nov 29 11:53 agent_state.db
+```
+
+## use yum to download a package without installing
+
+
+Download RPM Installation File
+
+sudo yum install wget
+
+wget  https://assets.logdna.com/logdna.gpg
+
+logdna-agent-3.7.0-1
+logdna-agent-3.8.0-1
+
+yum info logdna-agent
+yum list logdna-agent
+
+yum install [package-name]-[version].[architecture]
+yum install logdna-agent-3.7.aarch64
+
+```
+sudo rpm --import logdna-agent-3.7.0-1.aarch64.rpm
+echo "[logdna]
+name=LogDNA packages
+baseurl=https://assets.logdna.com/el6/
+enabled=1
+gpgcheck=1
+gpgkey=https://assets.logdna.com/logdna.gpg" | sudo tee /etc/yum.repos.d/logdna.repo
+```
+
+
+rpm {-U|--upgrade} [install-options] PACKAGE_FILE ...
+
+    This install the package or upgrades the package currently installed  to  a  newer
+    version.   This  is the same as install, except all other version(s) of
+    the package are removed after the new package is installed.
+
+
+
+    To install a specific package, such as vsftpd, use the following command:
+Raw
+
+# dnf install logdna-agent
+
+To update a specific package, such as bind, use the following command:
+Raw
+
+# dnf update bind

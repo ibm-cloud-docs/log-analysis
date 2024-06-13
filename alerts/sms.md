@@ -18,7 +18,7 @@ subcollection: log-analysis
 You can send SMS alerts to notify on log data hosted in a {{site.data.keyword.la_short}} instance.
 {: shortdesc}
 
-<!-- common deprecation notice -->
+
 {{../_include-segments/deprecation_notice.md}}
 
 To send an SMS alert, you can choose 1 of the following options:

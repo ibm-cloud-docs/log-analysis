@@ -18,7 +18,7 @@ subcollection: log-analysis
 When you configure a logging agent, auto update of the logging agent is enabled. You might find this behavior acceptable for a proof of concept or for a development environment. However, for production environments, and for regulated, and highly available workloads, you might need to control when to update the logging agent.
 {: shortdesc}
 
-<!-- common deprecation notice -->
+
 {{../_include-segments/deprecation_notice.md}}
 
 For Linux log sources, you can configure the **autoupdate** parameter to configure how you want updates to the agent to be rolled.

@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2024
-lastupdated: "2024-03-19"
+lastupdated: "2024-05-24"
 
 keywords:
 
@@ -18,7 +18,7 @@ subcollection: log-analysis
 The {{site.data.keyword.logs_full}} migration tool is a planned command line tool that you can use to migrate your {{site.data.keyword.la_full_notm}} or {{site.data.keyword.at_full_notm}} instance configuration to {{site.data.keyword.logs_full_notm}}.
 {: shortdesc}
 
-<!-- common deprecation notice -->
+
 {{_include-segments/deprecation_notice.md}}
 
 If you plan to migrate using the migration tool, you must do so before {{site.data.keyword.la_full}} and {{site.data.keyword.at_full_notm}} are de-provisioned and deleted on 30 March 2025.

@@ -2,6 +2,7 @@
 
 copyright:
   years: 2015, 2023
+
 lastupdated: "2021-11-10"
 
 keywords:
@@ -17,10 +18,11 @@ content-type: conref
 # Content references for log-analysis subcollection
 {: #conref-log-analysis}
 
-<!----------------------------------------------------->
+
 
 ## Install NXLog
 {: #nxlog_install}
+{: step}
 
 Follow these steps to install NXLog.
 
@@ -54,6 +56,7 @@ You will need to run as a Windows Administrator for all command prompt or PowerS
 
 ## Configure NXLog
 {: #nxlog_config}
+{: step}
 
 1. Provision a syslog port for NXLog.
 
@@ -119,10 +122,11 @@ You will need to run as a Windows Administrator for all command prompt or PowerS
         4. Click **Download Root CA Certificate** to download a copy of the certificate.
         5. Copy the certificate to `<NXLOGDIR>\cert\ca.pem`, where `<NXLOGDIR>` is directory nxlog is installed.
 
-<!----------------------------------------------------->
+
 
 ## Run NXLog
 {: #nxlog_run}
+{: step}
 
 Run the following in PowerShell from the directory where you installed NXLog.
 
@@ -138,7 +142,7 @@ Run the following in PowerShell from the directory where you installed NXLog to 
 ```
 {: pre}
 
-<!----------------------------------------------------->
+
 
 ## Before you begin
 {: #windows_prereqs}

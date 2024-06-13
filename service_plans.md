@@ -19,8 +19,10 @@ subcollection: log-analysis
 Different pricing plans are available that you can choose for an {{site.data.keyword.la_full_notm}} instance. Each plan defines the number of days that data is retained for search, the number of users allowed to manage the data, and the logging features that are enabled.
 {: shortdesc}
 
-<!-- common deprecation notice -->
+
 {{_include-segments/deprecation_notice.md}}
+
+
 
 | Plan                            | Number of days that data is available for search | Number of users per plan | Plan Name | Plan ID |
 |---------------------------------|-------------------------------------------------|--------------------------|---------|--------|

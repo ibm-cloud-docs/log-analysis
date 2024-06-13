@@ -18,7 +18,7 @@ subcollection: log-analysis
 For regulated and highly available workloads, consider the following adoption guidelines when using the {{site.data.keyword.la_full_notm}} service:
 {: shortdesc}
 
-<!-- common deprecation notice -->
+
 {{../_include-segments/deprecation_notice.md}}
 
 

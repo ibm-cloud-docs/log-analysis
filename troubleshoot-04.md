@@ -22,7 +22,7 @@ content-type: troubleshoot
 If the API method requires data passed using `-d`, and you are running a cURL command from a Windows command prompt, the data passed must be passed in a file, not on the command.
 {: shortdesc}
 
-<!-- common deprecation notice -->
+
 {{_include-segments/deprecation_notice.md}}
 
 The API request fails and the response returns a JSON error.

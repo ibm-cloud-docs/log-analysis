@@ -19,7 +19,7 @@ subcollection: log-analysis
 You can monitor logs in your account through the {{site.data.keyword.la_full_notm}} web UI. You can also export sets of logs to analyze them in a different context.
 {: shortdesc}
 
-<!-- common deprecation notice -->
+
 {{_include-segments/deprecation_notice.md}}
 
 To view logs, you must [launch the web UI](/docs/log-analysis?topic=log-analysis-launch&interface=ui) in the location where logs are available. Then, you can work with views to monitor those logs. You view logs in your local time.
@@ -143,7 +143,7 @@ For example, you can configure an alert that is triggered after 30 seconds, or w
 
 
 ### Mute alert notifications
-{: #alerts_mute}
+{: #mon_alerts_mute}
 
 By default, the feature that controls the ability of a user to mute notifications is enabled when you configure an alert on a custom view. The **Muteable** feature applies to email notifications only.
 

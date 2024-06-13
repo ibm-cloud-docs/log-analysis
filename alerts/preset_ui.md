@@ -19,7 +19,7 @@ subcollection: log-analysis
 To reuse an alert configuration, a service administrator can configure an **alert preset** (alert template).
 {: shortdesc}
 
-<!-- common deprecation notice -->
+
 {{../_include-segments/deprecation_notice.md}}
 
 ## Creating a preset

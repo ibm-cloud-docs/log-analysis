@@ -19,8 +19,9 @@ subcollection: log-analysis
 In {{site.data.keyword.la_full}}, you can define an alert to notify when the data usage in the instance reaches the data usage threshold that you set for the instance.
 {: shortdesc}
 
-<!-- common deprecation notice -->
+
 {{../_include-segments/deprecation_notice.md}}
+
 
 ## Prereqs
 {: #control_usage_alert_prereqs}

@@ -27,7 +27,7 @@ completion-time: 1h
 If the ingestion key that you use to forward logs from a cluster to an {{site.data.keyword.la_full_notm}} instance in the {{site.data.keyword.cloud_notm}} is compromised, you must reset the key and update the Kubernetes cluster configuration to use the new ingestion key.
 {: shortdesc}
 
-<!-- common deprecation notice -->
+
 {{../_include-segments/deprecation_notice.md}}
 
 ## Before you begin

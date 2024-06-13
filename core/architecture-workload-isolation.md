@@ -18,8 +18,10 @@ subcollection: log-analysis
 Review the following sample architecture for {{site.data.keyword.la_full_notm}}, and learn more about different isolation levels so that you can choose the solution that best meets the requirements of the workloads that you want to run in the cloud.
 {: shortdesc}
 
-<!-- common deprecation notice -->
+
 {{../_include-segments/deprecation_notice.md}}
+
+
 
 ## {{site.data.keyword.la_full_notm}} architecture
 {: #architecture}

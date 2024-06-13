@@ -18,7 +18,7 @@ subcollection: log-analysis
 You can send {{site.data.keyword.la_full}} alerts to Slack.
 {: shortdesc}
 
-<!-- common deprecation notice -->
+
 {{../_include-segments/deprecation_notice.md}}
 
 ## Prerequsite

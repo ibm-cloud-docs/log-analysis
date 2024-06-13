@@ -18,7 +18,7 @@ subcollection: log-analysis
 If you have problems or questions when using the {{site.data.keyword.la_full_notm}}, you can get help by searching for information or by asking questions through a forum. You can also open a support ticket.
 {: shortdesc}
 
-<!-- common deprecation notice -->
+
 {{_include-segments/deprecation_notice.md}}
 
 * You can check whether the {{site.data.keyword.cloud_notm}} is available by going to the [{{site.data.keyword.cloud_notm}} status page](https://cloud.ibm.com/status?selected=status){: external}.

@@ -19,8 +19,9 @@ subcollection: log-analysis
 In {{site.data.keyword.la_full_notm}}, you can control the data that is collected and available for analysis through a logging instance. You can define exclusion rules in the UI that apply to data collected in that instance. You can also configure logging agents and customize them to collect and forward specific log data. In addition, you can define an alert that is triggered when the data usage threshold that you define for that logging instance is reached.
 {: shortdesc}
 
-<!-- common deprecation notice -->
+
 {{../_include-segments/deprecation_notice.md}}
+
 
 ## Controlling data by excluding log files through the logging agent
 {: #control_usage_agent}
@@ -67,3 +68,29 @@ Complete the following steps to configure an alert that informs you when you rea
 3. Define a **Usage Alert** to set the threshold for data usage in the instance. When the threshold is reached, you are notified. Enter a value to set the data usage threshold.
 
 4. In the **Add recipient** section, enter one or more emails where the notification will be sent.
+
+
+## Configuring an ingestion alert
+{: #control_usage_3}
+
+In {{site.data.keyword.la_full_notm}}, you can define an alert to notify when the data collected reaches a threshold within a period of time that you can customize.
+
+[Learn more](/docs/log-analysis?topic=log-analysis-control_usage_instance).
+
+## Analyzing event data trends
+{: #control_usage_4}
+
+In {{site.data.keyword.la_full_notm}}, you can query your logging instance by using the *Usage API* and identify trends over a period of time.
+
+You can analyze event data trends to assess the growth or decline of logging data over time for services running in your account. You can monitor data trends to identify patterns and make predictions of how services are used in the account.
+
+When you use the *Usage* API, consider the following information:
+- Analyze 3 or more months worth of logging data to identify patterns and trends.
+- You can use the API to monitor the number of lines that are collected per host, app or tag over a period of time.
+- You can use the API to find out the top sources, apps, or tags that are driving the main load of data in a region.
+- If you have exclusion rules defined, these lines are not included in the usage data response. The API reports number of lines that are ingested and not excluded via exclusion rules.
+
+You can query data usage for up to 6 months.
+{: note}
+
+[Learn more](/docs/log-analysis?topic=log-analysis-control_usage_api).

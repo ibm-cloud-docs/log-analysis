@@ -18,7 +18,7 @@ subcollection: log-analysis
 If your Kubernetes cluster version is 1.9+ or Red Hat OpenShift 4.5+, you can upgrade the logging agent to version 3 and run the agent as non-root.
 {: shortdesc}
 
-<!-- common deprecation notice -->
+
 {{../_include-segments/deprecation_notice.md}}
 
 Version 3 of the logging agent includes a number of features and enhancements, depending on the release level, including:

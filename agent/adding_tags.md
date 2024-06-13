@@ -18,7 +18,7 @@ subcollection: log-analysis
 Configure a logging agent to associate tags to all log records that it collects so that you can identify the agent's data quicker in the logging UI.
 {: shortdesc}
 
-<!-- common deprecation notice -->
+
 {{../_include-segments/deprecation_notice.md}}
 
 * You can define multiple tags per logging agent.

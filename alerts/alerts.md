@@ -19,7 +19,7 @@ subcollection: log-analysis
 You can configure alerts to notify about the state of your infrastructure, applications, and {{site.data.keyword.cloud_notm}} services.
 {: shortdesc}
 
-<!-- common deprecation notice -->
+
 {{../_include-segments/deprecation_notice.md}}
 
 A rule specifies the scope of the data that you want to monitor and be notified if certain conditions occur. Per alert rule, consider the following information:
@@ -113,7 +113,7 @@ To reuse an alert configuration, a service administrator can configure an **aler
 
 
 ## Muting alert notifications
-{: #mon_alerts_mute}
+{: #alerts_mute}
 
 By default, the feature that controls the ability of a user to mute notifications is enabled when you configure an alert on a custom view. The **Mutable** feature applies to email notifications only.
 

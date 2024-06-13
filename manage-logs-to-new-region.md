@@ -19,7 +19,7 @@ subcollection: log-analysis
 To manage logs from {{site.data.keyword.cloud_notm}} services that generate logs in a new region where the {{site.data.keyword.la_full_notm}} service is not available until a later date, complete these instructions.
 {: shortdesc}
 
-<!-- common deprecation notice -->
+
 {{_include-segments/deprecation_notice.md}}
 
 For example, the Madrid region opened for business in June 2023. {{site.data.keyword.cloud_notm}} services that are available and generate logs send currently those logs to the Frankfurt region. You can manage logs from these services in Frankfurt. Platform logs include the field `logSourceCRN` that specifies the region, location, or data center where the resource is available. For example, for Madrid, you can see the location of logs set to `eu-es`.

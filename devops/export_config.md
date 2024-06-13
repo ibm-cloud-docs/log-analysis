@@ -19,7 +19,7 @@ subcollection: log-analysis
 For each {{site.data.keyword.la_full_notm}} instance, you can configure whether users can export data.
 {: shortdesc}
 
-<!-- common deprecation notice -->
+
 {{../_include-segments/deprecation_notice.md}}
 
 When the export configuration setting is enabled, you can export data in JSONL format from an {{site.data.keyword.la_full_notm}} instance.

@@ -18,7 +18,7 @@ subcollection: log-analysis
 You can configure, control, and manage data that is available to users in your {{site.data.keyword.cloud}} account by configuring **groups** in the logging instance.
 {: shortdesc}
 
-<!-- common deprecation notice -->
+
 {{_include-segments/deprecation_notice.md}}
 
 A **group** is comprised of **users** with authorization to specific data.
@@ -67,7 +67,7 @@ Complete the following steps to define the default settings for viewing data:
 
 5. For your instance, click **Open dashboard**. The UI will be displayed.
 
-6. Click the Settings icon ![**Settings icon**](/images/config.png "Settings icon") &gt;  **Organization** &gt; **Security**.
+6. Click the Settings icon ![**Settings icon**](/images/config.png "Settings icon") &gt;  **TEAM** &gt; **Settings**.
 
 7. Set **Access Control** to your desired default setting:
 
@@ -98,7 +98,7 @@ You can edit a group to change the access scope as needed.
 
 5. For your instance, click **Open dashboard**. The UI will be displayed.
 
-6. Click ![**Settings**](/images/config.png "Settings icon") &gt; **Organization** &gt; **Groups**.
+6. Click ![**Settings**](/images/config.png "Settings icon") &gt; **TEAM** &gt; **Groups**.
 
 7. Click **Add Group**.
 
@@ -148,6 +148,6 @@ Complete the following steps to edit or delete a service group:
 
 5. For your instance, click **Open dashboard**. The UI will be displayed.
 
-6. Click ![**Settings**](/images/config.png "Settings icon") &gt; **Organization** &gt; **Groups**.
+6. Click ![**Settings**](/images/config.png "Settings icon") &gt; **TEAM** &gt; **Groups**.
 
 7. Click **Edit** or **Delete** to change or remove the group.

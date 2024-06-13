@@ -18,7 +18,7 @@ subcollection: log-analysis
 These are the details about the deprecation of {{site.data.keyword.la_full}} and {{site.data.keyword.at_full_notm}}.
 {: shortdesc}
 
-<!-- common deprecation notice -->
+
 {{_include-segments/deprecation_notice.md}}
 
 * {{site.data.keyword.at_full_notm}} is being deprecated, but activity tracker events will be supported in both the new {{site.data.keyword.logs_full_notm}} service and with the existing [{{site.data.keyword.atracker_full_notm}}](/docs/atracker) service.

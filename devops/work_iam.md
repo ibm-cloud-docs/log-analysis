@@ -19,7 +19,7 @@ subcollection: log-analysis
 You can use {{site.data.keyword.iamlong}} (IAM) to securely authenticate users and control access to all cloud resources consistently in the {{site.data.keyword.cloud_notm}}.
 {: shortdesc}
 
-<!-- common deprecation notice -->
+
 {{../_include-segments/deprecation_notice.md}}
 
 For more information, see [Managing IAM policies and access groups](/docs/log-analysis?topic=log-analysis-work_iam).

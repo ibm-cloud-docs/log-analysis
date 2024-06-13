@@ -18,7 +18,7 @@ subcollection: log-analysis
 After you provision an instance of the {{site.data.keyword.la_full_notm}} service in the {{site.data.keyword.cloud_notm}}, and configure a logging agent for a log source, you can view, monitor, and manage log data through the {{site.data.keyword.la_full_notm}} Web UI.
 {: shortdesc}
 
-<!-- common deprecation notice -->
+
 {{../_include-segments/deprecation_notice.md}}
 
 When you launch the {{site.data.keyword.la_full_notm}} web UI, log entries are displayed with a predefined format. You can modify in the **User Preferences** section how the information in each log line is displayed. You can also filter logs and modify search settings, then bookmark the result as a *view*. You can attach and detach one or more alerts to a view. You can define a custom format for how your lines are shown in the view. You can expand a log line and see the data parsed.
@@ -69,12 +69,12 @@ The {{site.data.keyword.la_full_notm}} web UI opens and displays logs forwarded 
 ## Step 3. Customize your default view
 {: #view_logs_step3}
 
-In the **USER PREFERENCES** section, you can modify the order of the data fields that are displayed per line.
+In the **User preferrences** section, you can modify the order of the data fields that are displayed per line.
 
 Complete the following steps to modify the format of a log line:
 
-1. Click the **Settings** icon ![Settings icon](../images/admin.png "Configuration icon").
-2. Select **USER PREFERENCES**. A new window opens.
+1. Click the **User preferences** icon.
+2. Select **User preferences**. A new window opens.
 3. Select **Log Format**.
 4. Modify the *Line Format* section to match your requirements. Drag boxes.
 
@@ -154,3 +154,98 @@ Complete the following steps to create a view:
 6. Optionally, attach an alert. A new section is displayed for you to configure the alert.
 
 7. Click **Save View**
+
+
+## Step 8. Customize how event lines are displayed through a view
+{: #views_step8}
+
+There are different options to customize how you see data in a view:
+* You can modify the properties of a view.
+* You can rename a view, add or modify its description, and apply a specific line format.
+* You can change the `log format` in the *User preferences* section.
+* You can apply a line template from the *Tools* section. Notice that this overrides any other line configuration. If you select **Persist these settings**, all views in the UI will show data per the line format that is specified in this section.
+* You can apply color to terms or strings by setting **Highlight Terms** in the **Tools** section.
+
+
+
+### Change the line format through the view properties page
+{: #views_step8_1}
+
+Complete the following steps to modify the format of an event line in a single view:
+
+1. In your view, select **Edit View Properties**. The *Edit View Properties* page opens.
+
+2. Enter a custom line format in the **Custom %LINE Template** section. The default is set to `{{line}}`.
+
+    For more information about the line template guidelines, see [Guidelines](#views_line).
+
+3. Click **Save properties**.
+
+
+
+### Change the line format through the user preferences section
+{: #views_step8_2}
+
+In the **User preferences** section, you can modify the order of the data fields that are displayed per line.
+
+Complete the following steps to modify the format of an event line:
+
+1. In the web UI, click the **Configuration** icon ![Configuration icon](../images/admin.png "Admin icon").
+2. Select **User preferences**. A new window opens.
+3. Select **Log Format**.
+4. Modify the *Line Format* section to match your requirements by dragging the boxes to the desired location.
+
+
+### Change the line format through the line template in the tools section
+{: #views_step8_3}
+
+Complete the following steps to modify the format of an event line:
+
+1. In the view, click the **Tools** icon ![Tools icon](../images/tool.png "Tools icon").
+2. In the **Line Template** field, enter your custom line format. For more information about the line template guidelines, see [Guidelines](#views_line).
+3. Optionally, click **Persist these settings** to apply the line format to all views.
+
+
+
+### Highlight terms
+{: #view_events_step8_4}
+
+Complete the following steps to highlight terms in a view:
+
+1. In the view, click the **Tools** icon ![Tools icon](../images/tool.png "Tools icon").
+2. In the **Line Template** field, enter a word or string in the **Highlight Terms** section.
+3. Optionally, click **Persist these settings** to apply these setting to all views.
+
+
+
+
+
+## Guidelines defining line templates
+{: #views_line}
+
+Consider the following guidelines that you must apply when you define a line template:
+* Use mustache style `{{field.name}}` or bash style `${field.name}` variables to construct your template.
+* Use `{{line}}` or `$@` to reference the original line.
+* All other characters or strings are interpreted as a text literal.
+
+
+For example, you can define a line template as `{{initiator.id}} -- {{action}} -- {{message}}` to see these fields for each event in a view.
+
+
+## Change the name and description of a custom view
+{: #views_step5}
+
+You can rename a view. You can add or modify the description of a view.
+
+
+Complete the following steps:
+
+1. In your view, select **Edit View Properties**. The *Edit View Properties* page opens.
+
+    You can rename the view, add or modify the description of the view, and apply a custom line format.
+
+2. Enter a new name in the **Rename View** section to rename the view.
+
+3. Enter or modify the description in the **Description** section.
+
+4. Click **Save properties**.

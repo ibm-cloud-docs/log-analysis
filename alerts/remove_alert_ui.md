@@ -18,9 +18,8 @@ subcollection: log-analysis
 You can detach alerts graphically by detaching an alert from a view or by deleting a preset.
 {: shortdesc}
 
-<!-- common deprecation notice -->
-{{../_include-segments/deprecation_notice.md}}
 
+{{../_include-segments/deprecation_notice.md}}
 
 ## Detaching all alerts from a view
 {: #remove_alerts_delete_alert}

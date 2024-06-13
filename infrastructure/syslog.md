@@ -8,6 +8,10 @@ keywords: IBM, Log Analysis, logging, ingestion, python
 
 subcollection: log-analysis
 
+content-type: tutorial
+account-plan: lite
+completion-time: 1h
+
 ---
 
 {{site.data.keyword.attribute-definition-list}}
@@ -15,11 +19,13 @@ subcollection: log-analysis
 
 # Logging with Syslog
 {: #syslog}
+{: toc-content-type="tutorial"}
+{: toc-completion-time="1h"}
 
 You can send logs to an {{site.data.keyword.la_full_notm}} instance via Syslog. TCP and TCP+TLS are both supported.
 {: shortdesc}
 
-<!-- common deprecation notice -->
+
 {{../_include-segments/deprecation_notice.md}}
 
 To use a custom port to send logs via UDP, you can open an IBM support ticket. For information about opening an IBM support ticket, or about support levels and ticket severities, see [Getting support](/docs/get-support).
@@ -27,9 +33,6 @@ To use a custom port to send logs via UDP, you can open an IBM support ticket. F
 
 To configure syslog, you may need to enable a port to send logs via syslog to your logging instance. If you are using (a) the classic syslog protocol, (b) a custom port in `syslog-ng`, or (c) a custom port in `rsyslog`, there is no authentication available and anyone with knowledge of the endpoint can submit logs to your instance. As a result, depending on your environment, your use of the classic syslog protocol or custom port configurations with `syslog-ng` or `rsyslog` may present a significant security risk.  Use these configurations at your organization's own risk.  Validate with your compliance and security teams whether this security risk is acceptable to your organization.
 {: important}
-
-Complete the following steps to send logs:
-
 
 ## Before you begin
 {: #syslog_prereqs}
@@ -44,13 +47,15 @@ Use a user ID that is a member or an owner of an {{site.data.keyword.cloud_notm}
 | {{site.data.keyword.la_full_notm}} service |  Resource group      | Editor  | us-south  | This policy is required to allow the user to provision and administer the {{site.data.keyword.la_full_notm}} service in the Default resource group.   |
 {: caption="Table 1. List of IAM policies" caption-side="top"}
 
-## Step 1. Provision an {{site.data.keyword.la_full_notm}} instance
+## Provision an {{site.data.keyword.la_full_notm}} instance
 {: #syslog_step1}
+{: step}
 
 To provision a service instance of {{site.data.keyword.la_full_notm}} through the {{site.data.keyword.cloud_notm}} console, see [Provisioning an instance](/docs/log-analysis?topic=log-analysis-provision).
 
-## Step 2. Provision a syslog port in the logging instance
+## Provision a syslog port in the logging instance
 {: #syslog_step2}
+{: step}
 
 1. [Launch the logging web UI.](/docs/log-analysis?topic=log-analysis-launch)
 
@@ -67,10 +72,11 @@ To provision a service instance of {{site.data.keyword.la_full_notm}} through th
     A syslog URL for TCP streams and a URL for UDP streams is provisioned for the instance.
 
 
-## Step 3. Configure syslog.conf
+## Configure syslog.conf
 {: #syslog_step3}
+{: step}
 
-Add the following entry to your /etc/syslog.conf:
+Add the following entry to your `/etc/syslog.conf` file:
 
 - For TCP ingestion, add the following line:
 
