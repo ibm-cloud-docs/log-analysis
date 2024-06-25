@@ -34,7 +34,6 @@ The following table lists services that send logs to {{site.data.keyword.la_full
 | Service     | Description | More info |
 |-------------|-------------|-------------------|
 | [{{site.data.keyword.PA_SaaS_notm}}](/docs/planning-analytics?topic=planning-analytics-about) | {{site.data.keyword.PA_SaaS_notm}} is a fully-managed and collaborative service that provides enterprise-level budgeting, planning, modeling, and reporting solutions. | [More info](/docs/planning-analytics?topic=planning-analytics-logging) |
-| [{{site.data.keyword.openpages_full_notm}}](/docs/openpages?topic=openpages-gettingstartedtutorial&interface=ui) | {{site.data.keyword.openpages_full_notm}} is a fully-managed and collaborative service that provides an enterprise-level Governance, Risk, and Compliance solution. | [More info](/docs/openpages?topic=openpages-service-logs) |
 {: caption="Table 1. List of analytics services" caption-side="top"}
 
 You can monitor logs through the {{site.data.keyword.la_short}} instance that is configured to receive platform services logs in the location where the service is running.
@@ -134,16 +133,7 @@ The following table lists Cloud services that send logs to {{site.data.keyword.l
 | [VPN](/docs/vpc?topic=vpc-using-vpn) | Use this service to connect private networks in a secure fashion. You can use VPN to set up an IPsec site-to-site tunnel between your VPC and your on-premise private network or another VPC. | [More info](/docs/vpc?topic=vpc-using-log-analysis-to-view-vpn-logs) | |
 {: caption="Table 7. List of IBM Cloud VPC services" caption-side="top"}
 
-## Networking services
-{: #networking}
 
-The following table lists Cloud Networking services that send logs to {{site.data.keyword.logs_routing_full_notm}}:
-
-
-| Service          | Description | More info         |
-|------------------|-------------|-------------------|
-| [{{site.data.keyword.dns_short}}](/docs/dns-svcs?topic=dns-svcs-getting-started) | DNS Services allow you to create private DNS zones that are collections for holding domain names, create DNS resource records under these DNS zones, and specify access controls used for the DNS resolution of resource records on a zone-wide level.| [More info](/docs/dns-svcs?topic=dns-svcs-monitor-ibm-cloud-pm) |
-{: caption="Table 8. List of IBM Cloud Networking services" caption-side="top"}
 
 ## Classic Infrastructure services
 {: #classic-infrastructure}
@@ -154,7 +144,7 @@ The following table lists Cloud services that send logs to {{site.data.keyword.l
 | Service          | Description | More info         | Message IDs |
 |------------------|-------------|-------------------|-------------|
 | [{{site.data.keyword.loadbalancer_full}}](/docs/loadbalancer-service?topic=loadbalancer-service-getting-started) | Use this service to improve availability of business-critical applications by distributing traffic among multiple application server instances, and by forwarding traffic to healthy instances only. | [More info](/docs/loadbalancer-service?topic=loadbalancer-service-data-logging) | |
-{: caption="Table 9. List of Classic Infrastructure services" caption-side="top"}
+{: caption="Table 8. List of Classic Infrastructure services" caption-side="top"}
 
 
 ## Security services
@@ -166,7 +156,7 @@ The following table lists Cloud services that send logs to {{site.data.keyword.l
 | Service     | Description | More info |
 |-------------|-------------|-------------------------------------------------------------------------|
 | [{{site.data.keyword.secrets-manager_full}}](/docs/secrets-manager?topic=secrets-manager-getting-started) | With {{site.data.keyword.secrets-manager_full_notm}}, you can create, lease, and centrally manage secrets that are used in {{site.data.keyword.cloud_notm}} services or your custom-built applications. | [More info](/docs/secrets-manager?topic=secrets-manager-service-logs) |
-{: caption="Table 10. List of security Cloud services" caption-side="top"}
+{: caption="Table 9. List of security Cloud services" caption-side="top"}
 
 You can monitor logs through the {{site.data.keyword.la_short}} instance that is configured to receive platform services logs in the location where the service is running.
 {: note}

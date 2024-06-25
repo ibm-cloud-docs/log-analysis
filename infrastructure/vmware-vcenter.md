@@ -221,23 +221,7 @@ You must configure rsyslog to receive logs from the vCenter hosts and components
 
 - Check that rsyslog traffic on port 514, or a custom port configured for rsyslog, is allowed.
 
-### Configure vCenter Server log files to be sent to a remote syslog server
-{: #vmware-syslog-vc-config}
 
-In vCenter Server Management, configure syslog to send vCenter Server log files to a remote syslog server.
-
-To configure a remote syslog server, you must configure a network connection between the vCenter server and syslog server to enable log streaming.
-{: note}
-
-1. Launch vCenter Server Management.
-2. Select **Syslog**.
-3. Add a forwarding configuration. Select **Configure**.
-
-    Enter the remote server IP address.
-
-    Enter the protocol `TCP`.
-
-    Enter the port `514`.
 
 ### Configure the centralized syslog server to receive logs from the vCenter hosts and components
 {: #vmware-syslog-receive}
@@ -488,8 +472,3 @@ Complete the following steps to change the log level that is configured for NSX 
 4. In the *Advanced* section, check the option in *Settings* for **Enable logging** is selected. Then, select for **Debugging and statistics** the level of logging. Valid values are `Run normally`, `Record debugging information`, and `Record Statistics`.
 5. Click **OK**.
 
-
-## Using the VMware logging template
-{: #vmware-template-info}
-
-To ease your use of VMware logging using {{site.data.keyword.la_full_notm}}, your can use the predefined template. For more information, see [Using the VMware template](/docs/log-analysis?topic=log-analysis-templates-vmware).
