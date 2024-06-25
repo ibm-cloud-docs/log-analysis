@@ -63,7 +63,7 @@ You will need to run as a Windows Administrator for all command prompt or PowerS
     To get the required port value, do the following:
 
     1. Access the [{{site.data.keyword.la_full_notm}} UI.](/docs/log-analysis?topic=log-analysis-launch#launch_cloud_ui)
-    2. Click the ![question mark icon](../images/question_mark.png "question mark icon") to access install instructions.
+    2. Click the question mark icon to access the installation instructions.
     3. Click **NXLog**.
     4. The syslog port you need to provision in Windows will be displayed.  For example, `syslog-a.us-south.logging.cloud.ibm.com:63980`.
 
@@ -89,7 +89,7 @@ You will need to run as a Windows Administrator for all command prompt or PowerS
     1. Get the provided `nxlog.conf` file:
 
         1. Access the [{{site.data.keyword.la_full_notm}} UI.](/docs/log-analysis?topic=log-analysis-launch#launch_cloud_ui)
-        2. Click the ![question mark icon](../images/question_mark.png "question mark icon") to access install instructions.
+        2. Click the question mark icon to access the installation instructions.
         3. Click **NXLog**.
         4. Click **Download the file** to download a copy of the provided `nxlog.conf` file.
 
@@ -117,7 +117,7 @@ You will need to run as a Windows Administrator for all command prompt or PowerS
    * Use the link in the installation information to download and install the Root CA Certificate.
 
         1. Access the [{{site.data.keyword.la_full_notm}} UI.](/docs/log-analysis?topic=log-analysis-launch#launch_cloud_ui)
-        2. Click the ![question mark icon](../images/question_mark.png "question mark icon") to access install instructions.
+        2. Click the question mark icon to access the installation instructions.
         3. Click **NXLog**.
         4. Click **Download Root CA Certificate** to download a copy of the certificate.
         5. Copy the certificate to `<NXLOGDIR>\cert\ca.pem`, where `<NXLOGDIR>` is directory nxlog is installed.

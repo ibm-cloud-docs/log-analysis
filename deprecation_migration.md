@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2024
-lastupdated: "2024-05-24"
+lastupdated: "2024-06-25"
 
 keywords:
 
@@ -39,7 +39,7 @@ You can use the tool to:
 
 * Migrate {{site.data.keyword.cloud_notm}} associated resources such as {{site.data.keyword.iamshort}} permissions.
 
-* Migrate the archiving configuration that is enabled in a {{site.data.keyword.la_full_notm}} or {{site.data.keyword.at_full_notm}} instance.
+* Migrate the archiving configuration that is enabled in an {{site.data.keyword.la_full_notm}} or {{site.data.keyword.at_full_notm}} instance.
 
 The tool generates exception reports that indicate items that cannot be migrated automatically and require more migration steps. Exceptions can include:
 
@@ -50,3 +50,6 @@ The tool generates exception reports that indicate items that cannot be migrated
 * Resources that are not part of the migration tool, such as configuring a cross-account {{site.data.keyword.cos_full_notm}} bucket or bucket outside of {{site.data.keyword.cloud_notm}}.
 
 Terraform artifacts can be created that can be used to create new {{site.data.keyword.logs_full_notm}} instances. Terraform on {{site.data.keyword.cloud_notm}} enables predictable and consistent creation of {{site.data.keyword.cloud_notm}} services so that you can rapidly build complex, multitier cloud environments by following Infrastructure as Code (IaC) principles. Similar to using the {{site.data.keyword.cloud_notm}} CLI or API and SDKs, you can automate the creation, update, and deletion of your {{site.data.keyword.logs_full_notm}} instances by using the HashiCorp Configuration Language (HCL).
+
+For details about migration and the migration tool, see [Migrating to {{site.data.keyword.logs_full_notm}}](/docs/cloud-logs?topic=cloud-logs-migration-overview).
+{: tip}
