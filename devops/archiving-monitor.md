@@ -4,7 +4,7 @@ copyright:
   years: 2019, 2024
 lastupdated: "2024-05-24"
 
-keywords:
+keywords: IBM Cloud, Log Analysis, archive logs, COS, cloud object storage
 
 subcollection: log-analysis
 
@@ -19,7 +19,7 @@ subcollection: log-analysis
 {{site.data.keyword.cos_full_notm}} is integrated with the {{site.data.keyword.mon_short}} service. {{site.data.keyword.mon_short}} provides a default template that you can customize to monitor the bucket that you configure to store data for long term from an {{site.data.keyword.at_short}} instance.
 {: shortdesc}
 
-<!-- common deprecation notice -->
+
 {{../_include-segments/deprecation_notice.md}}
 
 This information applies only if you use an {{site.data.keyword.at_full}} [hosted event search offering](/docs/activity-tracker?topic=activity-tracker-service_plan).

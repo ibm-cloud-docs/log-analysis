@@ -25,7 +25,7 @@ completion-time: 1h
 Use the {{site.data.keyword.la_full}} service to monitor and manage logs from a Windows VPC server instance in a centralized logging system on the {{site.data.keyword.cloud_notm}}.
 {: shortdesc}
 
-<!-- common deprecation notice -->
+
 {{../_include-segments/deprecation_notice.md}}
 
 You can collect and monitor system and application logs.

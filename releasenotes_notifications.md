@@ -18,7 +18,7 @@ subcollection: log-analysis
 In addition to the release notes published for each service, {{site.data.keyword.cloud}} publishes release notes for most services in a single location.  You can set up an RSS feed to be notified when new release notes are published to this page.
 {: shortdesc}
 
-<!-- common deprecation notice -->
+
 {{_include-segments/deprecation_notice.md}}
 
 ## Accessing the {{site.data.keyword.cloud_notm}} release notes

@@ -20,7 +20,7 @@ subcollection: log-analysis
 You can use the **LogDNA Terraform provider** to manage and rotate service keys for a {{site.data.keyword.la_short}} instance by using HashiCorp Configuration Language (HCL).
 {: shortdesc}
 
-<!-- common deprecation notice -->
+
 {{../_include-segments/deprecation_notice.md}}
 
 ## Prereqs

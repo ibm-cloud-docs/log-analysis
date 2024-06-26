@@ -18,7 +18,7 @@ subcollection: log-analysis
 There might be times when you want to run the {{site.data.keyword.la_full_notm}} service in a standalone browser tab and not part of the {{site.data.keyword.cloud_notm}} UI. You can do this by  using the undocking feature.
 {: shortdesc}
 
-<!-- common deprecation notice -->
+
 {{_include-segments/deprecation_notice.md}}
 
 This feature is also useful if you want to determine the URL of the {{site.data.keyword.la_full_notm}} service to bookmark it in your browser for quick access.

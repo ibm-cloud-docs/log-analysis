@@ -19,7 +19,7 @@ subcollection: log-analysis
 From an {{site.data.keyword.la_full_notm}} instance, you can export logs programmatically by using the V2 logging REST API.
 {: shortdesc}
 
-<!-- common deprecation notice -->
+
 {{../_include-segments/deprecation_notice.md}}
 
 The V2 logging REST API does not support sending the logs by email.  If you need email support, you will need to use the [V1 logging REST API](/docs/log-analysis?topic=log-analysis-export_api).

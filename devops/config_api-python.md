@@ -19,7 +19,7 @@ subcollection: log-analysis
 You can use Python to manage views and alerts.
 {: shortdesc}
 
-<!-- common deprecation notice -->
+
 {{../_include-segments/deprecation_notice.md}}
 
 - You can use the **POST** method to create a view, or create a view and attach an alert to it.

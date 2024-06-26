@@ -20,10 +20,10 @@ content-type: release-note
 Use these release notes to learn about updates to {{site.data.keyword.la_full}}.
 {: shortdesc}
 
-<!-- common deprecation notice -->
+
 {{_include-segments/deprecation_notice.md}}
 
-## 28 March 2023
+## 28 March 2024
 {: #log-analysis-mar2824}
 {: release-note}
 

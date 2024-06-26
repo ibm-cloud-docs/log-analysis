@@ -18,7 +18,7 @@ subcollection: log-analysis
 There are limits when you send send logs to an {{site.data.keyword.la_full}} instance.
 {: shortdesc}
 
-<!-- common deprecation notice -->
+
 {{_include-segments/deprecation_notice.md}}
 
 Body size

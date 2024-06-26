@@ -18,7 +18,7 @@ subcollection: log-analysis
 Due to maintenance, {{site.data.keyword.la_full}} makes changes periodically to service IPs in some regions. You might need to take action to continue using the service.
 {: shortdesc}
 
-<!-- common deprecation notice -->
+
 {{_include-segments/deprecation_notice.md}}
 
 For the current list of endpoints that should be allowlisted in your environment, see [endpoints](/docs/log-analysis?topic=log-analysis-endpoints).

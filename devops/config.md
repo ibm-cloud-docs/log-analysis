@@ -19,7 +19,7 @@ subcollection: log-analysis
 You can configure your web UI to work with UTC timestamps, change the log line format, change the background color and more.
 {: shortdesc}
 
-<!-- common deprecation notice -->
+
 {{../_include-segments/deprecation_notice.md}}
 
 ## Configure UTC timestamps
@@ -29,7 +29,7 @@ By default, the web UI is configured to use local timestamps in views and search
 
 To display timestamps in UTC and do timeframe searches relative to UTC instead of local time, complete the following steps:
 
-1. In the web UI, click the **Settings** icon ![Settings icon](images/admin.png "Admin icon") &gt; **User preferences**.
+1. In the web UI, click the **User preferences** icon &gt; **User preferences**.
 2. Select **Viewer options**.
 3. Click **Show time as UTC** to enable UTC timestamps.
 
@@ -40,7 +40,7 @@ To display timestamps in UTC and do timeframe searches relative to UTC instead o
 
 Complete the following steps:
 
-1. In the web UI, click the **Settings** icon ![Settings icon](images/admin.png "Admin icon") &gt; **User preferences**.
+1. In the web UI, click the **User preferences** icon &gt; **User preferences**.
 2. Select **Viewer style**.
 3. Choose the default contrast.
 
@@ -56,7 +56,7 @@ Complete the following steps:
 
 Complete the following steps to display a log line that includes the timestamp and message of an event:
 
-1. In the web UI, click the **Settings** icon ![Settings icon](images/admin.png "Admin icon") &gt; **User preferences**.
+1. In the web UI, click the **User preferences** icon &gt; **User preferences**.
 2. Select **Log format**.
 
     By default, the log format is configured in the following way:

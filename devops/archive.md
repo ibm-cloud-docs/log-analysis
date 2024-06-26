@@ -20,8 +20,9 @@ subcollection: log-analysis
 You can archive logs from an {{site.data.keyword.la_full_notm}} instance into a bucket in an {{site.data.keyword.cos_full_notm}} (COS) instance.
 {: shortdesc}
 
-<!-- common deprecation notice -->
+
 {{../_include-segments/deprecation_notice.md}}
+
 
 For more information about archiving, see [Archiving events to {{site.data.keyword.cos_full_notm}}](/docs/log-analysis?topic=log-analysis-archiving-ov).
 

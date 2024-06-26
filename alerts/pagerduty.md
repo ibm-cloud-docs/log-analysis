@@ -18,7 +18,7 @@ subcollection: log-analysis
 You can send alerts to PagerDuty.
 {: shortdesc}
 
-<!-- common deprecation notice -->
+
 {{../_include-segments/deprecation_notice.md}}
 
 ## Configuring PagerDuty

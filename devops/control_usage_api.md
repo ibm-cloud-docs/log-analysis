@@ -18,8 +18,9 @@ subcollection: log-analysis
 In {{site.data.keyword.la_full}}, you can query your logging instance and identify usage trends over a period of time by using the *Usage API*. You can get aggregated usage data information for applications, hosts and tags during a specific period of time and within the last 6 months.
 {: shortdesc}
 
-<!-- common deprecation notice -->
+
 {{../_include-segments/deprecation_notice.md}}
+
 
 ## API method
 {: #control_usage_method}

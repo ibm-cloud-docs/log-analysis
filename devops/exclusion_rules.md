@@ -18,7 +18,7 @@ subcollection: log-analysis
 In an {{site.data.keyword.la_full_notm}} instance, you can configure exclusion rules through the logging web UI to stop logs from counting against your data usage quota and from being stored for search.
 {: shortdesc}
 
-<!-- common deprecation notice -->
+
 {{../_include-segments/deprecation_notice.md}}
 
 Complete the following steps to define an exclusion rule:

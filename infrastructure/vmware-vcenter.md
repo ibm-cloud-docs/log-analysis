@@ -18,7 +18,7 @@ subcollection: log-analysis
 You can add logging capabilities to VMware vCenter Server deployments by configuring a centralized syslog server that collects logs from your vSphere environment and sends them to {{site.data.keyword.la_full_notm}} by using rsyslog for analysis, troubleshooting, and alerting.
 {: shortdesc}
 
-<!-- common deprecation notice -->
+
 {{../_include-segments/deprecation_notice.md}}
 
 [VMware templates](/docs/log-analysis?topic=log-analysis-templates-vmware) are available to gain insight on your VMware environments.
@@ -220,6 +220,8 @@ You must configure rsyslog to receive logs from the vCenter hosts and components
 - You must have access to a server that has rsyslog installed. For example, you can use a Linux server such as a Red Hat VSI.
 
 - Check that rsyslog traffic on port 514, or a custom port configured for rsyslog, is allowed.
+
+
 
 ### Configure the centralized syslog server to receive logs from the vCenter hosts and components
 {: #vmware-syslog-receive}
@@ -469,3 +471,4 @@ Complete the following steps to change the log level that is configured for NSX 
 3. Click **VM Options**.
 4. In the *Advanced* section, check the option in *Settings* for **Enable logging** is selected. Then, select for **Debugging and statistics** the level of logging. Valid values are `Run normally`, `Record debugging information`, and `Record Statistics`.
 5. Click **OK**.
+

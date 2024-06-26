@@ -18,8 +18,9 @@ subcollection: log-analysis
 You can use {{site.data.keyword.mon_full_notm}} and {{site.data.keyword.at_full_notm}} to monitor streaming of data from your {{site.data.keyword.la_short}} instance.
 {: shortdesc}
 
-<!-- common deprecation notice -->
+
 {{_include-segments/deprecation_notice.md}}
+
 
 ## Monitoring streaming by using {{site.data.keyword.mon_full_notm}}
 {: #streaming-monitor-1}

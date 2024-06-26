@@ -19,8 +19,9 @@ subcollection: log-analysis
 To ensure that you can securely manage your data when you use {{site.data.keyword.la_full_notm}}, it is important to know exactly what data is stored and encrypted, and how you can delete any stored personal data.
 {: shortdesc}
 
-<!-- common deprecation notice -->
+
 {{../_include-segments/deprecation_notice.md}}
+
 
 ## How your data is collected in {{site.data.keyword.la_full_notm}}
 {: #data-collection}

@@ -25,7 +25,7 @@ completion-time: 1h
 Use the {{site.data.keyword.la_full}} service to monitor and manage logs from Windows client systems.
 {: shortdesc}
 
-<!-- common deprecation notice -->
+
 {{../_include-segments/deprecation_notice.md}}
 
 You will use NXLog to add your Windows logs into {{site.data.keyword.la_full_notm}}.

@@ -18,7 +18,7 @@ subcollection: log-analysis
 The Kubernetes logging agent collects and forwards logs to your {{site.data.keyword.la_full_notm}} instance. After you provision an {{site.data.keyword.la_full}} instance, you must configure a logging agent for each log source that you want to monitor.
 {: shortdesc}
 
-<!-- common deprecation notice -->
+
 {{../_include-segments/deprecation_notice.md}}
 
 The logging agent for Kubernetes automatically collects STDOUT and STDERR logs.

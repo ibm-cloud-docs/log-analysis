@@ -18,7 +18,7 @@ subcollection: log-analysis
 During your migration from {{site.data.keyword.la_full}} and {{site.data.keyword.at_full_notm}} to {{site.data.keyword.logs_full_notm}} you might require assistance.
 {: shortdesc}
 
-<!-- common deprecation notice -->
+
 {{_include-segments/deprecation_notice.md}}
 
 ## Migration assistance

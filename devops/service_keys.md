@@ -18,7 +18,7 @@ subcollection: log-analysis
 In an {{site.data.keyword.la_full}} instance you can create, delete, and view service keys by using the UI.  You can also create and view service keys by using the CLI and API.
 {: shortdesc}
 
-<!-- common deprecation notice -->
+
 {{../_include-segments/deprecation_notice.md}}
 
 A service key is a unique code that is passed in an API request to identify the calling application or user.

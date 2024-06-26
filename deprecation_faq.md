@@ -18,7 +18,7 @@ subcollection: log-analysis
 Frequently asked questions about the deprecation of {{site.data.keyword.la_full}} and {{site.data.keyword.at_full_notm}}. 
 {: shortdesc}
 
-<!-- common deprecation notice -->
+
 {{_include-segments/deprecation_notice.md}}
 
 ## Deprecation FAQs
@@ -113,15 +113,7 @@ The new {{site.data.keyword.logs_full_notm}}, and legacy {{site.data.keyword.la_
 
 If you are using {{site.data.keyword.la_full_notm}} or {{site.data.keyword.at_full_notm}} in Chenai (IN-CHE) you will need to migrate to an {{site.data.keyword.logs_full_notm}} instance in a supported region.
 
-<!--
-### How does {{site.data.keyword.logs_full_notm}} compare to {{site.data.keyword.la_full_notm}} and {{site.data.keyword.at_full_notm}}?
-{: #dfaq_9}
-{: faq}
 
-While the foundational features of the three services remain the same, {{site.data.keyword.logs_full_notm}} provides expanded features that offer greater insight, flexibility, and control.
-
-_include-segments/at_la_cl_comparison.md
- -->
 
 ### What log retention is available for the {{site.data.keyword.logs_full_notm}} service?
 {: #dfaq_clret}

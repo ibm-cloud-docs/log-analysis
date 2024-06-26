@@ -4,7 +4,7 @@ copyright:
   years:  2018, 2024
 lastupdated: "2024-05-24"
 
-keywords: IBM, Log Analysis, logging instance, enable, service logs
+keywords:
 
 subcollection: log-analysis
 
@@ -18,7 +18,7 @@ subcollection: log-analysis
 `Platform logs` are logs that are exposed by enabled services and the platform in {{site.data.keyword.cloud_notm}}. You must configure a logging instance in a region to monitor these logs.
 {: shortdesc}
 
-<!-- common deprecation notice -->
+
 {{../_include-segments/deprecation_notice.md}}
 
 * Platform logs are regional.
@@ -39,6 +39,7 @@ subcollection: log-analysis
 
 ## Configuring platform logs through the Observability dashboard
 {: #config_svc_logs_ui}
+{: ui}
 
 To configure a logging instance from the Observability dashboard in the {{site.data.keyword.cloud_notm}}, complete the following steps:
 
@@ -48,22 +49,79 @@ To configure a logging instance from the Observability dashboard in the {{site.d
 
 2. Go to the menu icon ![menu icon](../../icons/icon_hamburger.svg) &gt; **Observability** to access the *Observability* dashboard.
 
-3. Click **Logging**, then click **Options** > **Edit Platform**.
+3. Configure the platform logging instance by doing one of the following.
 
-4. Select a [region](/docs/log-analysis?topic=log-analysis-regions).
+    * Update platform logging from the *Observability* dashboard.
 
-5. Choose which logging instance will receive logs from enabled services on that location. [Learn more about the services that are enabled to send logs to {{site.data.keyword.la_full_notm}}.](/docs/log-analysis?topic=log-analysis-cloud_services)
+        1. From the *Observability* dashboard, click **Options** > **Edit platform**.
 
-6. Click **Select**.
+        2. Select the [region](/docs/log-analysis?topic=log-analysis-regions) to be configured.
 
-The main *Observability* page opens.
+        3. If an existing instance is configure for platform logging, it will be listed.
 
-<!-- The instance that you choose to receive service logs shows the flag **Platform logs**. -->
+        4. If you need to change the instance, do the following.
 
+            1. Change the instance to `None`.
 
+            2. Select that you confirm you want to make the change.
+
+            3. Click **Select**.
+
+            4. Repeat the steps to select the desired instance in the region for platform logging.
+
+    * Configure platform logging by selecting a logging instance.
+
+        1. From the *Observability* dashboard, use `Region` to filter the instances to the [region](/docs/log-analysis?topic=log-analysis-regions) to be configured.  The list will show all the logging instances in that region.  If platform logging is configured, the configured instance will show **Platform logs**.
+
+        2. To change the platform logging instance do one of the following.
+
+            * Change the instance already receiving platform logs.
+
+                1. Click the instance name of the instance flagged **Platform logs**.  Information about the instance is displayed.
+
+                2. Click the **Edit platform** icon ![Edit icon](../../icons/edit-tagging.svg)next to **Platform logs**.
+
+                3. Select the [region](/docs/log-analysis?topic=log-analysis-regions) to be configured.
+
+                4. If an existing instance is configure for platform logging, it will be listed.
+
+                5. If you need to change the instance, do the following.
+
+                    1. Change the instance to `None`.
+
+                    2. Select that you confirm you want to make the change.
+
+                    3. Click **Select**.
+
+                    4. Repeat the steps to select the desired instance in the region for platform logging.
+
+            * Change an instance not currently receiving platform logs.
+
+                1. Click the instance name of the instance that is **NOT** flagged **Platform logs**.  Information about the instance is displayed.
+
+                2. Click **Configure platform logs**.
+
+                3. Select the [region](/docs/log-analysis?topic=log-analysis-regions) to be configured.
+
+                4. If an existing instance is configure for platform logging, it will be listed.
+
+                5. If you need to change the instance, do the following.
+
+                    1. Change the instance to `None`.
+
+                    2. Select that you confirm you want to make the change.
+
+                    3. Click **Select**.
+
+                    4. Repeat the steps to select the desired instance in the region for platform logging.
+
+The instance that you choose to receive platform logs shows the flag **Platform logs** on the *Observability* page.
+
+[Learn more about the services that are enabled to send logs to {{site.data.keyword.la_full_notm}}.](/docs/log-analysis?topic=log-analysis-cloud_services)
 
 ## Configuring platform logs from the command line
 {: #platform_logs_enabling_cli}
+{: cli}
 
 To enable platform logs in a region, the instance that you want to configure to receive platform logs must have set on the **default_receiver** property.
 
@@ -108,6 +166,7 @@ If you do not have an instance with the flag **Platform Logs** in the region, co
 
 ## Changing the instance that collects platform logs from the command line
 {: #platform_logs_change_cli}
+{: cli}
 
 You must use a user that has permissions to see all instances in the account.
 {: note}

@@ -19,7 +19,7 @@ subcollection: log-analysis
 Complete the following steps to configure streaming from a {{site.data.keyword.la_short}} instance to an {{site.data.keyword.messagehub}} instance:
 {: shortdesc}
 
-<!-- common deprecation notice -->
+
 {{_include-segments/deprecation_notice.md}}
 
 See [Configure streaming](/docs/log-analysis?topic=log-analysis-streaming#streaming-1) for more information on roles required for streaming.

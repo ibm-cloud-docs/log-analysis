@@ -18,7 +18,7 @@ subcollection: log-analysis
 You can use the {{site.data.keyword.sqlquery_short}} service to query {{site.data.keyword.la_short}} archive files that are stored in an {{site.data.keyword.cos_short}} (COS) bucket in {{site.data.keyword.cloud_notm}}.
 {: shortdesc}
 
-<!-- common deprecation notice -->
+
 {{_include-segments/deprecation_notice.md}}
 
 ![{{site.data.keyword.cloud_notm}} services integration scenario](images/Log-Analysis-08-Search-Events.svg "{{site.data.keyword.cloud_notm}} services integration scenario"){: caption="Figure 1. Example services integration scenario." caption-side="bottom"}

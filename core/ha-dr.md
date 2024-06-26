@@ -17,8 +17,9 @@ subcollection: log-analysis
 {{site.data.keyword.la_full}} is a highly available, multi-tenant, regional service for analyzing logs from your applications, platform resources and infrastructure. In this topic, you can learn more about {{site.data.keyword.la_full_notm}}'s availability and disaster recovery strategies.
 {: shortdesc}
 
-<!-- common deprecation notice -->
+
 {{../_include-segments/deprecation_notice.md}}
+
 
 ## Availability zones
 {: #ha-dr-locations}

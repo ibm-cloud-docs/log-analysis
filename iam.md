@@ -4,7 +4,7 @@ copyright:
   years:  2018, 2024
 lastupdated: "2024-05-24"
 
-keywords: IBM, Log Analysis, logging, iam, manage user access
+keywords:
 
 subcollection: log-analysis
 
@@ -19,7 +19,7 @@ subcollection: log-analysis
 {{site.data.keyword.iamlong}} (IAM) enables you to securely authenticate users and control access to all cloud resources consistently in the {{site.data.keyword.cloud_notm}}.
 {: shortdesc}
 
-<!-- common deprecation notice -->
+
 {{_include-segments/deprecation_notice.md}}
 
 **Every user that accesses the {{site.data.keyword.la_full_notm}} service in your account must be assigned an access policy with an IAM user role defined.** The policy determines what actions the user can perform within the context of the service or instance you select. The allowable actions are customized and defined as operations that are allowed to be performed on the service. The actions are then mapped to IAM user roles.

@@ -18,7 +18,7 @@ subcollection: log-analysis
 {{site.data.keyword.logs_full_notm}} replaces {{site.data.keyword.la_full}} and {{site.data.keyword.at_full_notm}} providing the functions of those services, and more.
 {: shortdesc}
 
-<!-- common deprecation notice -->
+
 {{_include-segments/deprecation_notice.md}}
 
 {{site.data.keyword.at_full_notm}} is being deprecated, but activity tracking events will be supported in both the new {{site.data.keyword.logs_full_notm}} service and with the existing [{{site.data.keyword.atracker_full_notm}}](/docs/atracker) service.
@@ -84,7 +84,7 @@ A migration tool is provided to move many key configuration attributes from {{si
 If you plan to migrate using the migration tool, you must do so before {{site.data.keyword.la_full}} and {{site.data.keyword.at_full_notm}} are de-provisioned and deleted on 30 March 2025.
 {: important}
 
-<!--Training and enablement material is being prepared <this needs an edit, it’s not really the right way to say it> to more quickly board your SRE, DevOps, and ITOps and unleash the power of new capability helping you gain the increased Observability needed to keep up with, then get ahead of the speed of technology on workloads.-->
+
 
 Full information about the new service will be available in the  [{{site.data.keyword.logs_full_notm}} documentation.](/docs/cloud-logs?topic=cloud-logs-coming-soon)
 

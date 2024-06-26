@@ -19,8 +19,11 @@ subcollection: log-analysis
 You can export log data in JSONL format from an {{site.data.keyword.la_full_notm}} instance graphically through the web UI.
 {: shortdesc}
 
-<!-- common deprecation notice -->
+
 {{../_include-segments/deprecation_notice.md}}
+
+Exporting using the UI uses the [V1 export API](/docs/log-analysis?topic=log-analysis-export_api) and is limited to the functionality provided by that version of the API.
+{: note}
 
 Consider the following information when you export log data:
 * You can export a set of log entries. To define the set of data that you want to export, you can apply filter and searches. You can also specify the time range.

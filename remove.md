@@ -18,8 +18,16 @@ subcollection: log-analysis
 You can remove an instance of the {{site.data.keyword.la_full_notm}} service from the {{site.data.keyword.cloud_notm}} UI or through the command line.
 {: shortdesc}
 
-<!-- common deprecation notice -->
+
 {{_include-segments/deprecation_notice.md}}
+
+## Considerations if you are using archiving
+{: #remove_archiving}
+
+If you are using [archiving](/docs/log-analysis?topic=log-analysis-archiving-ov), make sure all archiving has completed and that you have stopped archiving before you remove your instance. Removing an instance while archiving is still active can result in archive records being lost.
+
+## Removing an instance
+{: #remove_instance}
 
 When you remove an instance from the {{site.data.keyword.cloud_notm}}, clean up by completing the following tasks:
 

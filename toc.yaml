@@ -11,14 +11,11 @@ toc:
     path: log-analysis
     label: Log Analysis
     release-level: deprecated
-
   entries:
   - navgroup:
       id: learn
       topics:
-
       - getting-started.md
-
       - topicgroup:
           label: Deprecation
           topics:
@@ -30,7 +27,6 @@ toc:
             navtitle: Migration
           - deprecation_faq.md
           - deprecation_help.md
-
       - topicgroup:
           label: Logging agents
           topics:
@@ -39,60 +35,65 @@ toc:
           - agent/logdna_agent_kube.md
           - agent/logdna_agent_linux.md
           - agent/logdna_agent_config.md
-
       - topicgroup:
-          label: Logging with IBM Cloud services
+          label: Logging for IBM Cloud services
           topics:
-          - platform-logs/config_svc_logs.md
-          - platform-logs/cloud_services.md
-          - platform-logs/cloud_services_locations.md
-          - platform-logs/cloud_services_msg_prefix.md
-          - platform-logs/cloud_services_agent.md
-
+          - topic: platform-logs/config_svc_logs.md
+            navtitle: Configuring platform logs
+          - topic: platform-logs/cloud_services.md
+            navtitle: Services generating platform logs
+          - topic: platform-logs/cloud_services_agent.md
+            navtitle: Services sending logs to a custom instance
+          - topic: platform-logs/cloud_services_locations.md
+            navtitle: Services generating platform logs by location - TO BE REMOVED
       - topicgroup:
-          label: Logging with infrastructure
+          label: Logging for infrastructure
           topics:
-          - infrastructure/infra_logging.md
-          - infrastructure/monitor_cfapp_logs.md
-          - tutorial/kube.md
-          - infrastructure/ubuntu-baremetal.md
-          - infrastructure/ubuntu-vpc.md
-          - infrastructure/syslog.md
-          - infrastructure/windows.md
-          - infrastructure/windows_server.md
-          - infrastructure/windows-vpc.md
-          - infrastructure/powervs-rhel.md
+          - topic: infrastructure/infra_logging.md
+            navtitle: Overview
+          - topic: infrastructure/powervs-rhel.md
+            navtitle: RHEL on PowerVS
+          - topic: infrastructure/openshift.md
+            navtitle: Openshift clusters
+          - topic: infrastructure/ubuntu-baremetal.md
+            navtitle: Baremetals
+          - topic: infrastructure/ubuntu-vpc.md
+            navtitle: Ubuntu on VPC
+          - topic: infrastructure/syslog.md
+            navtitle: Syslog
+          - topic: infrastructure/aix.md
+            navtitle: AIX on PowerVS
+          - topic: infrastructure/windows.md
+            navtitle: Windows Client
+          - topic: infrastructure/windows_server.md
+            navtitle: Windows server
+          - topic: infrastructure/windows-vpc.md
+            navtitle: Windows on VPC
           - topic: infrastructure/vmware-vcenter.md
             navtitle: VMware vCenter Server deployment
-
       - topicgroup:
           label: Logging with applications
           topics:
           - app-logs/app_logging.md
           - app-logs/ingest.md
           - app-logs/ingest_python.md
-
       - topicgroup:
           label: Security and compliance
           topics:
           - compliance/adoption.md
           - compliance/manage_eu_logs.md
-
       - topicgroup:
           label: Tutorials
           topics:
           - tutorial/tutorial_use_LogDNA.md
           - tutorial/kube_reset_ingestion.md
-
       - topic: releasenotes.md
         navtitle: Release notes
       - releasenotes_notifications.md
-
   - navgroup:
       id: howto
       topics:
       - observe.md
-
       - topicgroup:
           label: Provisioning
           topics:
@@ -101,9 +102,17 @@ toc:
           - terraform/terraform-setup.md
           - upgrade.md
           - remove.md
-
-      - monitor_logs.md
-
+      - topicgroup:
+          label: Monitoring logs
+          topics:
+          - monitor_logs.md
+          links:
+            - link:
+                label: Searching log contents
+                href: https://docs.mezmo.com/docs/searching-log-contents
+            - link:
+                label: Searching field contents
+                href: https://docs.mezmo.com/docs/search-json-fields
       - topicgroup:
           label: Controlling access
           topics:
@@ -114,7 +123,6 @@ toc:
           - iam_view_events.md
           - devops/work_iam.md
           - private_endpoints_only.md
-
       - topicgroup:
           label: Archiving
           topics:
@@ -125,7 +133,6 @@ toc:
           - devops/archiving-la-monitor.md
           - devops/archiving-monitor.md
           - sqlquery.md
-
       - topicgroup:
           label: Managing costs and data
           topics:
@@ -135,7 +142,6 @@ toc:
           - devops/control_usage_index_rate.md
           - devops/control_usage_quotas.md
           - devops/control_usage_api.md
-
       - topicgroup:
           label: Managing keys
           topics:
@@ -143,39 +149,37 @@ toc:
           - terraform/terraform-ingestion-keys.md
           - devops/service_keys.md
           - terraform/terraform-service-keys.md
-
       - topicgroup:
           label: Managing resources
           topics:
           - devops/reuse_resource_definitions.md
           - devops/config_categories.md
           - terraform/terraform-categories.md
-
+          - devops/export_config.md
+          - devops/config_categories.md
       - topicgroup:
           label: Logging agent
           topics:
           - topic: agent/logdna_agent_image.md
             navtitle: Getting info on agent versions
           - topic: agent/config_agent_kube_cluster.md
-            navtitle: Configuring an agent on Kubernetes
+            navtitle: Configuring agent V3 on Kubernetes
           - topic: agent/config_agent_os_cluster.md
-            navtitle: Configuring an agent on Openshift
+            navtitle: Configuring agent V3 on Openshift
           - topic: agent/config_agent_linux.md
-            navtitle: Configuring agent on Linux Ubuntu or Debian
-          - topic: agent/config_agent_rhel.md
-          - topic: agent/config_agent_linux_rpm.md
-            navtitle: Configuring agent V2 on RPM-Linux
+            navtitle: Configuring agent V3 on Linux Ubuntu or Debian
           - topic: agent/config_agent_windows_v3.md
             navtitle: Configuring agent V3 on Windows
-          - topic: agent/config_agent_windows.md
-            navtitle: Configuring agent V2 on Windows
           - agent/detach_agent.md
           - agent/exclude_logs_from_agent.md
           - agent/adding_tags.md
-          - agent/upgrade_logdna_agent_2.md
           - agent/upgrade_logdna_agent_3.md
           - agent/config_agent_windows_upgrade.md
-
+          - agent/upgrade_logdna_agent_2.md
+          - topic: agent/config_agent_windows.md
+            navtitle: Configuring agent V2 on Windows
+          - topic: agent/config_agent_linux_rpm.md
+            navtitle: Configuring agent V2 on RPM-Linux
       - topicgroup:
           label: Enhancing security
           topics:
@@ -189,29 +193,25 @@ toc:
           - core/data-security.md
           - topic: core/cbr.md
             navtitle: Protecting resources with context-based restrictions
-
       - topicgroup:
           label: Exporting logs
           topics:
-          - devops/export_config.md
           - devops/export.md
+          - devops/export_config.md
           - devops/export_api.md
           - devops/export_api_v2.md
-
       - topicgroup:
           label: Logging UI
           topics:
           - launch.md
           - views.md
-          - config.md
           - undock.md
           - get_logdna_web_url.md
-
+          - devops/config.md
       - topicgroup:
-          label: Logging and monitoring
+          label: Observability
           topics:
           - core/at_events.md
-
       - topicgroup:
           label: Streaming data
           topics:
@@ -225,9 +225,7 @@ toc:
           - streaming-manage-api.md
           - topic: terraform/terraform-streaming.md
             navtitle: Streaming to Event Streams by using Terraform
-
       - devops/view_logs.md
-
       - topicgroup:
           label: Working with alerts
           topics:
@@ -243,12 +241,10 @@ toc:
           - devops/monitoring.md
           - alerts/sms.md
           - alerts/slack.md
-
       - topicgroup:
           label: Working with templates
           topics:
           - template-vmware.md
-
       - topicgroup:
           label: Working with logs in non-supported locations
           topics:
@@ -256,9 +252,7 @@ toc:
             navtitle: Working with logs before a region is available
           - topic: manage-logs-to-new-region.md
             navtitle: Working with logs after a region is open for business
-
       - core/ha_dr_steps.md
-
   - navgroup:
       id: reference
       topics:
@@ -266,17 +260,18 @@ toc:
       - endpoints.md
       - cidr.md
       - regions.md
-      - service_plans.md
-      - core/shared-responsibilities.md
-
+      - topic: service_plans.md
+        navtitle: Service plans
+      - topic: core/shared-responsibilities.md
+        navtitle: Understanding your responsibilities
+      - topic: platform-logs/cloud_services_msg_prefix.md
+        navtitle: Message ID prefixes
       - topicgroup:
           label: Logging CLI
           topics:
           - include: ../log-analysis-cli-plugin/log-analysis-cli.md
-
       - topic: security-schemes.md
         navtitle: API security schemes
-
       - topicgroup:
           label: Logging API
           links:
@@ -298,25 +293,30 @@ toc:
             - link:
                 label: Groups API
                 href: https://{DomainName}/apidocs/log-analysis#create-group
-
       - topicgroup:
           label: High availability and disaster recovery
           topics:
           - core/ha-dr.md
-
       - service-ip-changes.md
-
   - navgroup:
         id: help
         topics:
         - gettinghelp.md
-        - faq.md
-
+        - topicgroup:
+            label: FAQ
+            topics:
+            - topic: iam-retrieve-token.md
+              navtitle: How to get an IAM access token
+            - faq.md
         - topicgroup:
             label: Troubleshooting
             topics:
             - troubleshoot-01.md
             - troubleshoot-04.md
+            - troubleshoot-05.md
             - troubleshoot-06.md
+            - troubleshoot-07.md
+            - troubleshoot-08.md
             - troubleshoot-09.md
             - troubleshoot-11.md
+            - troubleshoot-12.md

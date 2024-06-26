@@ -18,7 +18,7 @@ subcollection: log-analysis
 The logging agent is responsible for collecting and forwarding logs to your {{site.data.keyword.la_full_notm}} instance. If you have installed V2 of the Windows agent you will want to upgrade to V3.
 {: shortdesc}
 
-<!-- common deprecation notice -->
+
 {{../_include-segments/deprecation_notice.md}}
 
 To uninstall the you existing V2 Windows agent, run the following command.

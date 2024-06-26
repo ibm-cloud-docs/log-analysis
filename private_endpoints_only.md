@@ -19,7 +19,7 @@ subcollection: log-analysis
 You can limit access to an {{site.data.keyword.la_full}} instance to private endpoints only.
 {: shortdesc}
 
-<!-- common deprecation notice -->
+
 {{_include-segments/deprecation_notice.md}}
 
 You can configure your {{site.data.keyword.la_full_notm}} instance so it is accessible through [private endpoints](/docs/log-analysis?topic=log-analysis-endpoints) only.

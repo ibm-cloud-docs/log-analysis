@@ -18,7 +18,7 @@ subcollection: log-analysis
 Configure a logging agent to exclude logs that you do not want to monitor through the logging UI.
 {: shortdesc}
 
-<!-- common deprecation notice -->
+
 {{../_include-segments/deprecation_notice.md}}
 
 * You can exclude files that are located in any of the paths that are defined through the **logdir** parameter in a Linux system or the **LOGDNA_EXCLUDE** variable in a Kubernetes cluster.

@@ -20,7 +20,7 @@ subcollection: log-analysis
 List of {{site.data.keyword.cloud}} services that send logs to a custom {{site.data.keyword.la_full_notm}} instance. These services require additional configuration, for example, they may require to configure a logging agent.
 {: shortdesc}
 
-<!-- common deprecation notice -->
+
 {{../_include-segments/deprecation_notice.md}}
 
 You can choose the logging instance where you want to collect service logs. You can choose to send logs to the logging instance that has the **platform logs** flag, or to a custom instance in your account.

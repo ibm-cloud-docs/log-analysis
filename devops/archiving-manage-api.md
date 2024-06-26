@@ -19,7 +19,7 @@ subcollection: log-analysis
 You can archive logs from an {{site.data.keyword.la_full_notm}} instance into a bucket in an {{site.data.keyword.cos_full_notm}} (COS) instance by using an API.
 {: shortdesc}
 
-<!-- common deprecation notice -->
+
 {{../_include-segments/deprecation_notice.md}}
 
 ## Prerequisites on the {{site.data.keyword.la_full_notm}} service

@@ -18,7 +18,7 @@ subcollection: log-analysis
 You can use the *Configuration REST API* to manage presets programmatically.
 {: shortdesc}
 
-<!-- common deprecation notice -->
+
 {{../_include-segments/deprecation_notice.md}}
 
 Presets are templates that can be used to quickly configure alerts.  Presets can also be configured through the [UI](/docs/log-analysis?topic=log-analysis-preset_ui).

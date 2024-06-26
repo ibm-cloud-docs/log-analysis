@@ -18,7 +18,7 @@ subcollection: log-analysis
 If your Kubernetes cluster version is 1.9+, you can upgrade the logging agent to version 2.
 {: shortdesc}
 
-<!-- common deprecation notice -->
+
 {{../_include-segments/deprecation_notice.md}}
 
 When you upgrade the version of the agent, some logs may not be collected or duplicated depending on the period of time that you take to delete the current logging agent and deploy a new version of the logging agent in the cluster.

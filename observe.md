@@ -18,7 +18,7 @@ subcollection: log-analysis
 You can manage your logging instances through the `Observability` dashboard in {{site.data.keyword.cloud_notm}}.
 {: shortdesc}
 
-<!-- common deprecation notice -->
+
 {{_include-segments/deprecation_notice.md}}
 
 ## Launch the logging UI

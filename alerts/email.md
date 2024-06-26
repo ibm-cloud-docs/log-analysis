@@ -19,7 +19,7 @@ subcollection: log-analysis
 You can send alerts to 1 or more email addresses.
 {: shortdesc}
 
-<!-- common deprecation notice -->
+
 {{../_include-segments/deprecation_notice.md}}
 
 ## Configuring email

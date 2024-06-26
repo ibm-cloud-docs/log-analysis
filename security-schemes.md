@@ -18,7 +18,7 @@ subcollection: log-analysis
 The {{site.data.keyword.la_full_notm}} API supports the following security schemes:
 {: shortdesc}
 
-<!-- common deprecation notice -->
+
 {{_include-segments/deprecation_notice.md}}
 
 ## Service API key authorization

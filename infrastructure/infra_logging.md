@@ -18,7 +18,7 @@ subcollection: log-analysis
 In {{site.data.keyword.la_short}}, you can send infrastructure logs to an {{site.data.keyword.la_full_notm}} instance from a broad range of sources:
 {: shortdesc}
 
-<!-- common deprecation notice -->
+
 {{../_include-segments/deprecation_notice.md}}
 
 ## Logging with Kubernetes clusters
@@ -89,6 +89,7 @@ To use a custom port to send logs via UDP and to disable a custom port, you can 
 For more information on using Syslog, see [Logging with Syslog](/docs/log-analysis?topic=log-analysis-syslog).
 
 
+
 ## Logging with Windows systems
 {: #infra_logging_windows}
 
@@ -115,6 +116,9 @@ For more information on logging from Windows systems, see the following:
 * [Logging from Windows Server systems](/docs/log-analysis?topic=log-analysis-windows_serv)
 * [Logging with Windows VPC server instances](/docs/log-analysis?topic=log-analysis-windows_vpc_tutorial)
 
+
+
+
 ## Logging for VMware vCenter Server deployments
 {: #infra_logging_vmware}
 
@@ -130,5 +134,4 @@ The following graphic depicts the high-level architecture and components of a th
 ![Architecture of a vCenter Server NSX-T deployment](../images/Log-Analysis-05-VMware-vCenter-Architecture.svg "Architecture of a vCenter Server NSX-T deployment"){: caption="Figure 1. Architecture of a vCenter Server NSX-T deployment" caption-side="bottom"}
 
 For more information on logging from VMware vCenter Server deployments, see [Logging for VMware vCenter Server deployments](/docs/log-analysis?topic=log-analysis-vmware-vcenter).
-
 

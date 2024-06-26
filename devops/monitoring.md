@@ -18,7 +18,7 @@ subcollection: log-analysis
 You can send alerts to {{site.data.keyword.mon_full_notm}} and manage them through the *Events* view section.
 {: shortdesc}
 
-<!-- common deprecation notice -->
+
 {{../_include-segments/deprecation_notice.md}}
 
 ## Configuring an alert

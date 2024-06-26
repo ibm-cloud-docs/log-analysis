@@ -20,7 +20,7 @@ subcollection: log-analysis
 You can use the **LogDNA Terraform provider** to manage the archiving configuration of a {{site.data.keyword.la_full_notm}} instance by using HashiCorp Configuration Language (HCL).
 {: shortdesc}
 
-<!-- common deprecation notice -->
+
 {{../_include-segments/deprecation_notice.md}}
 
 ## Prereqs

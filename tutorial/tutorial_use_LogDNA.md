@@ -30,7 +30,7 @@ completion-time: 1h
 In this tutorial, you learn how to use the {{site.data.keyword.la_full}} web UI to create parsing rules that you can use to enhance your searches, views for monitoring Kubernetes log data, alerts to be notified of anomalous situations, and dashboards and screens to monitor your data.
 {: shortdesc}
 
-<!-- common deprecation notice -->
+
 {{../_include-segments/deprecation_notice.md}}
 
 You can use {{site.data.keyword.la_full_notm}} to add log management capabilities to your {{site.data.keyword.cloud_notm}} architecture. {{site.data.keyword.la_full_notm}} offers administrators, DevOps teams, and developers advanced features to filter, search, and tail log data, define alerts, and design custom views to monitor
@@ -107,9 +107,9 @@ These configuration changes will affect all defined views.
 
 1. [Make sure you are logged in to the {{site.data.keyword.cloud_notm}} and have accessed the {{site.data.keyword.la_full_notm}} web UI](#LA-launch-ui).
 
-2. Click the **Settings** icon ![Settings icon](../images/config.png "Settings icon").
+2. Click the **User preferences** icon
 
-3. Click **USER PREFERENCES**.
+3. Click **User preferences**.
 
 4. Click **Log Format**.
 

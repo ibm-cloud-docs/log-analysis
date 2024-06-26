@@ -19,7 +19,7 @@ subcollection: log-analysis
 You can send logs to an {{site.data.keyword.la_full_notm}} instance by using Python.
 {: shortdesc}
 
-<!-- common deprecation notice -->
+
 {{../_include-segments/deprecation_notice.md}}
 
 Complete the following steps to send logs:
