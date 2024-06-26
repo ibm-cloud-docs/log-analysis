@@ -23,8 +23,6 @@ toc:
             navtitle: Overview
           - topic: deprecation_details.md
             navtitle: Details
-          - topic: deprecation_compare_HIDE.md
-          - deprecation_plan_HIDE.md
           - topic: deprecation_migration.md
             navtitle: Migration
           - deprecation_faq.md
@@ -195,7 +193,6 @@ toc:
           - core/data-security.md
           - topic: core/cbr.md
             navtitle: Protecting resources with context-based restrictions
-          - devops/scc.md
       - topicgroup:
           label: Exporting logs
           topics:
@@ -261,7 +258,6 @@ toc:
       topics:
       - limits.md
       - endpoints.md
-      - endpoints_new.md
       - cidr.md
       - regions.md
       - topic: service_plans.md
@@ -322,6 +318,5 @@ toc:
             - troubleshoot-07.md
             - troubleshoot-08.md
             - troubleshoot-09.md
-            - troubleshoot-10.md
             - troubleshoot-11.md
             - troubleshoot-12.md
