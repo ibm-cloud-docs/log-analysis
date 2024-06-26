@@ -143,7 +143,6 @@ toc:
           - devops/control_usage_alert.md
           - devops/control_usage_index_rate.md
           - devops/control_usage_quotas.md
-          - devops/control_usage_instance.md
           - devops/control_usage_api.md
       - topicgroup:
           label: Managing keys
@@ -171,7 +170,6 @@ toc:
             navtitle: Configuring agent V3 on Openshift
           - topic: agent/config_agent_linux.md
             navtitle: Configuring agent V3 on Linux Ubuntu or Debian
-          - topic: agent/config_agent_rhel.md
           - topic: agent/config_agent_windows_v3.md
             navtitle: Configuring agent V3 on Windows
           - agent/detach_agent.md

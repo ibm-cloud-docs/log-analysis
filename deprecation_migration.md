@@ -51,5 +51,5 @@ The tool generates exception reports that indicate items that cannot be migrated
 
 Terraform artifacts can be created that can be used to create new {{site.data.keyword.logs_full_notm}} instances. Terraform on {{site.data.keyword.cloud_notm}} enables predictable and consistent creation of {{site.data.keyword.cloud_notm}} services so that you can rapidly build complex, multitier cloud environments by following Infrastructure as Code (IaC) principles. Similar to using the {{site.data.keyword.cloud_notm}} CLI or API and SDKs, you can automate the creation, update, and deletion of your {{site.data.keyword.logs_full_notm}} instances by using the HashiCorp Configuration Language (HCL).
 
-For details about migration and the migration tool, see [Migrating to {{site.data.keyword.logs_full_notm}}](/docs/cloud-logs?topic=cloud-logs-migration-overview).
+For details about migration and the migration tool, see [Migrating to {{site.data.keyword.logs_full_notm}}](/docs/cloud-logs?topic=cloud-logs-migration-intro).
 {: tip}
