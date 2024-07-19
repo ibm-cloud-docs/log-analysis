@@ -45,7 +45,7 @@ toc:
           - topic: platform-logs/cloud_services_agent.md
             navtitle: Services sending logs to a custom instance
           - topic: platform-logs/cloud_services_locations.md
-            navtitle: Services generating platform logs by location - TO BE REMOVED
+            navtitle: Services generating platform logs by location
       - topicgroup:
           label: Logging for infrastructure
           topics:
