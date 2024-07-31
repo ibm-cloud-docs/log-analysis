@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2024
-lastupdated: "2024-03-26"
+lastupdated: "2024-07-31"
 
 keywords:
 
@@ -88,14 +88,14 @@ If you plan to migrate using the migration tool, you must do so before {{site.da
 
 Full information about the new service will be available in the  [{{site.data.keyword.logs_full_notm}} documentation.](/docs/cloud-logs?topic=cloud-logs-coming-soon)
 
-## Deprecation Timeline
+## Deprecation timeline
 {: #deprecation-timeline}
 
 | Date | Event |
 |------|-------|
 | 28 March 2024 | Announcement of the deprecation of {{site.data.keyword.la_full_notm}} and {{site.data.keyword.at_full_notm}} |
 | 24 June 2024 | General availability of {{site.data.keyword.logs_full_notm}}.  \n  \n Deployment to {{site.data.keyword.cloud_notm}} regions will occur over time. Migration to {{site.data.keyword.logs_full_notm}} can begin in an MZR when {{site.data.keyword.logs_full_notm}} is available in the region. |
-| Ongoing | End of marketing for new users.  \n  \n Once {{site.data.keyword.logs_full_notm}} is available in a region, users who do not have an existing {{site.data.keyword.la_full_notm}} or {{site.data.keyword.at_full_notm}} instance in that region will be unable to provision a new {{site.data.keyword.la_full_notm}} or {{site.data.keyword.at_full_notm}} instance 30 days after {{site.data.keyword.logs_full_notm}} is available in that region.  \n  \n Users that have existing {{site.data.keyword.la_full_notm}} or {{site.data.keyword.at_full_notm}} instances can continue to deploy instances in all regions as required. |
+| Ongoing | End of marketing for new users.  \n  \n Once {{site.data.keyword.logs_full_notm}} is available in a region, users who do not have an existing {{site.data.keyword.la_full_notm}} or {{site.data.keyword.at_full_notm}} instance in that region will be unable to provision a new {{site.data.keyword.la_full_notm}} or {{site.data.keyword.at_full_notm}} instance 30 days after {{site.data.keyword.logs_full_notm}} is available in that region. See [Locations](/docs/cloud-logs?topic=cloud-logs-regions) for the regions where {{site.data.keyword.logs_full_notm}} is available.  \n  \n Users that have existing {{site.data.keyword.la_full_notm}} or {{site.data.keyword.at_full_notm}} instances can continue to deploy instances in all regions as required. |
 | 30 November 2024 | End of marketing for existing {{site.data.keyword.la_full_notm}} and {{site.data.keyword.at_full_notm}} user.  \n  \n Users with existing {{site.data.keyword.la_full_notm}} or {{site.data.keyword.at_full_notm}} instances will not be able to provision new instances.
 | 30 March 2025| End of support and end of life of {{site.data.keyword.la_full_notm}} and {{site.data.keyword.at_full_notm}}.  \n  \n Any {{site.data.keyword.la_full_notm}} or {{site.data.keyword.at_full_notm}} instances still existing will be stopped and deleted.  \n  \n [Archived data](#laat-archive) is retained in the {{site.data.keyword.cos_full_notm}} bucket under the customer's control. |
 {: caption="Table 2. Deprecation timeline" caption-side="bottom"}
