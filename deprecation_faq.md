@@ -93,7 +93,8 @@ No. {{site.data.keyword.logs_full_notm}} is planned to be generally available la
 {: #dfaq_7}
 {: faq}
 
-{{site.data.keyword.logs_full_notm}} does not have a free plan. There is a 7-day trial plan. This plan will ingest 7-days of data with fast data access for up to 5 GB of data. This data will be available for 30 days if you configure {{site.data.keyword.cos_full_notm}} buckets for the instance. After 7 days you will no longer be able to access the trial plan {{site.data.keyword.logs_full_notm}} instance, but your data will remain in the {{site.data.keyword.cos_full_notm}} bucket.
+{{site.data.keyword.logs_full_notm}} does not have a free plan. 
+
 
 ### What are the pricing differences between the gigabyte charges that the {{site.data.keyword.la_full_notm}} and {{site.data.keyword.at_full_notm}} services used and those used by {{site.data.keyword.logs_full_notm}}
 {: #dfaq_price}
