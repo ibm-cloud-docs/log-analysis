@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2024
-lastupdated: "2024-07-31"
+lastupdated: "2024-08-16"
 
 keywords:
 
@@ -22,9 +22,6 @@ subcollection: log-analysis
 {{_include-segments/deprecation_notice.md}}
 
 {{site.data.keyword.at_full_notm}} is being deprecated, but activity tracking events will be supported in both the new {{site.data.keyword.logs_full_notm}} service and with the existing [{{site.data.keyword.atracker_full_notm}}](/docs/atracker) service.
-{: important}
-
-{{site.data.keyword.logs_full_notm}} is planned to be generally available in late second quarter 2024.
 {: important}
 
 {{site.data.keyword.cloud_notm}} has deprecated and will end support of {{site.data.keyword.la_full}} and {{site.data.keyword.at_full_notm}} on 30 March 2025. These two services are being replaced with the new {{site.data.keyword.logs_full_notm}} service.
@@ -86,7 +83,7 @@ If you plan to migrate using the migration tool, you must do so before {{site.da
 
 
 
-Full information about the new service will be available in the  [{{site.data.keyword.logs_full_notm}} documentation.](/docs/cloud-logs?topic=cloud-logs-coming-soon)
+Full information about the new service is available in the [{{site.data.keyword.logs_full_notm}} documentation.](/docs/cloud-logs)
 
 ## Deprecation timeline
 {: #deprecation-timeline}
