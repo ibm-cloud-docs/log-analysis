@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2024
-lastupdated: "2024-05-24"
+lastupdated: "2024-09-25"
 
 keywords: groups, access
 
@@ -36,6 +36,9 @@ By default, when you grant a user access to work with the {{site.data.keyword.la
 
 
 For a user to monitor data within the context of a group, you must grant the user a policy for the {{site.data.keyword.la_full_notm}} service. The policy specifies the group and the service permissions for the user so the user can work with the data in scope for that group.
+
+If you have the IAM permission to create policies and authorizations, you can grant only the level of access that you have as a user of the target service. For example, if you have viewer access for the target service, you can assign only the viewer role for the authorization. If you attempt to assign a higher permission such as administrator, it might appear that permission is granted, however, only the highest level permission you have for the target service, that is viewer, will be assigned. 
+{: important}
 
 
 You can grant any of the following IAM service roles:

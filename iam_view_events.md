@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2024
-lastupdated: "2024-05-24"
+lastupdated: "2024-09-25"
 
 keywords: groups, access
 
@@ -21,6 +21,9 @@ subcollection: log-analysis
 
 
 {{_include-segments/deprecation_notice.md}}
+
+If you have the IAM permission to create policies and authorizations, you can grant only the level of access that you have as a user of the target service. For example, if you have viewer access for the target service, you can assign only the viewer role for the authorization. If you attempt to assign a higher permission such as administrator, it might appear that permission is granted, however, only the highest level permission you have for the target service, that is viewer, will be assigned. 
+{: important}
 
 ## Prerequisites
 {: #iam_view_events_prereq}
