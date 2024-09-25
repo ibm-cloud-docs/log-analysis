@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2024
-lastupdated: "2024-05-24"
+lastupdated: "2024-09-25"
 
 keywords: IBM, Log Analysis, IAM, security, logging, access groups
 
@@ -37,6 +37,9 @@ As the **account owner** or as an **{{site.data.keyword.la_full_notm}} service a
 * Create a service ID
 
 Therefore, to grant a user administrator role to manage the service in the account, the user must have an IAM policy for the {{site.data.keyword.la_full_notm}} service with the platform role **Administrator**. You must assign this user access to an individual resource in the account.
+
+If you have the IAM permission to create policies and authorizations, you can grant only the level of access that you have as a user of the target service. For example, if you have viewer access for the target service, you can assign only the viewer role for the authorization. If you attempt to assign a higher permission such as administrator, it might appear that permission is granted, however, only the highest level permission you have for the target service, that is viewer, will be assigned. 
+{: important}
 
 Complete the following steps to assign a user administrator role to the {{site.data.keyword.la_full_notm}} service in the account:
 
