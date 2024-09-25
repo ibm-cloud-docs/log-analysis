@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2024
-lastupdated: "2024-05-06"
+lastupdated: "2024-09-25"
 
 keywords:
 
@@ -87,7 +87,7 @@ You can keep your archived data as long as you want. Data archived to {{site.dat
 {: #dfaq_17}
 {: faq}
 
-No. {{site.data.keyword.logs_full_notm}} is planned to be generally available late second quarter 2024.
+Yes. For more information about {{site.data.keyword.logs_full_notm}} see the [{{site.data.keyword.logs_full_notm}} documentation](/docs/cloud-logs)
 
 ### Does {{site.data.keyword.logs_full_notm}} have a free plan?
 {: #dfaq_7}
@@ -233,4 +233,3 @@ Yes, with {{site.data.keyword.logs_full_notm}} all of the historical data stored
 {: faq}
 
 No. {{site.data.keyword.logs_full_notm}} uses {{site.data.keyword.iamshort}} tokens for authentication. Users will need to deploy new agents.
-

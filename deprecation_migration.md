@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2024
-lastupdated: "2024-06-25"
+lastupdated: "2024-09-25"
 
 keywords:
 
@@ -15,8 +15,14 @@ subcollection: log-analysis
 # Migrating from {{site.data.keyword.la_full_notm}} or {{site.data.keyword.at_full_notm}} to {{site.data.keyword.logs_full_notm}}
 {: #deprecation_migration}
 
-The {{site.data.keyword.logs_full}} migration tool is a planned command line tool that you can use to migrate your {{site.data.keyword.la_full_notm}} or {{site.data.keyword.at_full_notm}} instance configuration to {{site.data.keyword.logs_full_notm}}.
+The {{site.data.keyword.logs_full}} migration tool is a command line tool that you can use to migrate your {{site.data.keyword.la_full_notm}} or {{site.data.keyword.at_full_notm}} instance configuration to {{site.data.keyword.logs_full_notm}}.
 {: shortdesc}
+
+For full details about the migration process and tooling, see the [{{site.data.keyword.logs_full_notm}} documentation](/docs/cloud-logs), especially the topics in these sections:
+
+* [Migrating to {{site.data.keyword.logs_full_notm}}](/docs/cloud-logs?topic=cloud-logs-migration-intro) and the planning templates.
+* [Migration tool](/docs/cloud-logs?topic=cloud-logs-migration-tool).
+* The migrating topics required for your environment. For example, [Migrating instances](/docs/cloud-logs?topic=cloud-logs-migration-instance).
 
 
 {{_include-segments/deprecation_notice.md}}
