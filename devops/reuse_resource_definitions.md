@@ -80,7 +80,7 @@ The following configuration settings can be obtained using the API:
 | View | [`GET /v1/config/view/{viewId}`](https://cloud.ibm.com/apidocs/log-analysis#get-view){: external} |
 | Preset alert | [`GET /v1/presetalert/{presetId}`](https://cloud.ibm.com/apidocs/log-analysis#get-alert){: external} |
 | Category | [`GET /v1/config/categories/{type}/{id}`](https://cloud.ibm.com/apidocs/log-analysis#get-category){: external} |
-{: caption="Table 1. GET API configuration methods" caption-side="bottom"}
+{: caption="GET API configuration methods" caption-side="bottom"}
 
 The JSON returned by these methods can be used or modified to create new configurations or update existing configurations.
 
@@ -96,11 +96,11 @@ You can use values obtained by [API calls](#export_config_api) to create new con
 | View | [`POST /v1/config/view`](https://cloud.ibm.com/apidocs/log-analysis#create-view){: external} |
 | Preset alert | [`POST /v1/presetalert`](https://cloud.ibm.com/apidocs/log-analysis#create-alert){: external} |
 | Category | [`POST /v1/config/categories/{type}`](https://cloud.ibm.com/apidocs/log-analysis#create-category{: external} |
-{: caption="Table 2. POST (create) API configuration methods" caption-side="bottom"}
+{: caption="POST (create) API configuration methods" caption-side="bottom"}
 
 | Configuration | Method |
 | -------------- | -------------- |
 | View | [`PUT /v1/config/view/{viewId}`](https://cloud.ibm.com/apidocs/log-analysis#update-view){: external} |
 | Preset alert | [`PUT /v1/presetalert/{presetId}`](https://cloud.ibm.com/apidocs/log-analysis#update-preset){: external} |
 | Category | [`PUT /v1/config/categories/{type}/{id}`](https://cloud.ibm.com/apidocs/log-analysis#update-category{: external} |
-{: caption="Table 3. PUT (update) API configuration methods" caption-side="bottom"}
+{: caption="PUT (update) API configuration methods" caption-side="bottom"}

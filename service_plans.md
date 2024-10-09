@@ -31,7 +31,7 @@ Different pricing plans are available that you can choose for an {{site.data.key
 | `14 days log search`            | 14                                              | Unlimited   | `14-day`  | 0b3a45e0-def0-4935-8c74-26976f281751 |
 | `7-day log search`              | 7                                               | Unlimited   | `7-day`   | 209cbd52-f3e2-47cb-94ce-6b84fafcf22b|
 | `Lite`                          | Data is not available for search                | 1           | `lite`  | abcf7f02-de22-4c7f-98a1-e8a592093d83 |
-{: caption="Table 1. List of service plans" caption-side="top"}
+{: caption="List of service plans" caption-side="top"}
 
 {{site.data.keyword.la_full_notm}} offers a `Lite` plan that you can use to view your logs as they pass through the system. You can view logs by using log tailing. You can also design filters to prepare for upgrading to a longer retention period plan. You cannot use an instance on the `Lite` plan to receive streamed data. This plan has a 0-day retention period.
 
@@ -55,7 +55,7 @@ The following tables outline the different features that are included in each se
 | `Creating dashboards`                      | ![Checkmark icon](images/checkmark-icon.svg) | ![Checkmark icon](images/checkmark-icon.svg) | ![Checkmark icon](images/checkmark-icon.svg) |![Checkmark icon](images/checkmark-icon.svg) | |
 | `Creating screens`                      | ![Checkmark icon](images/checkmark-icon.svg) | ![Checkmark icon](images/checkmark-icon.svg) | ![Checkmark icon](images/checkmark-icon.svg) |![Checkmark icon](images/checkmark-icon.svg) | |
 | `Analyzing logs in different contexts`              | ![Checkmark icon](images/checkmark-icon.svg)| ![Checkmark icon](images/checkmark-icon.svg) | ![Checkmark icon](images/checkmark-icon.svg) |![Checkmark icon](images/checkmark-icon.svg) | |
-{: caption="Table 2. List of features available for each service plan" caption-side="top"}
+{: caption="List of features available for each service plan" caption-side="top"}
 
 
 

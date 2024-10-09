@@ -39,7 +39,7 @@ You can monitor archiving of an {{site.data.keyword.la_short}} instance by monit
 |---------------------------|-------------------------------|
 | Platform role: `Viewer`     | Allows the user to view the list of service instances in the Observability dashboard. |
 | Service role: `standard-user` \n  or \n Service role: `manager`     | Allows the user to launch the web UI and configure resources.  |
-{: caption="Table 1. IAM roles" caption-side="top"}
+{: caption="IAM roles" caption-side="top"}
 
 For more information on how to configure policies for a user, see [Granting user permissions to a user or service ID](/docs/activity-tracker?topic=activity-tracker-iam_view_events).
 

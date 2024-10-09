@@ -48,4 +48,4 @@ The following table lists libraries that you can use to send application logs to
 | `Python` | [Python](https://github.com/logdna/python){: external} | [Sending logs by using Python](/docs/log-analysis?topic=log-analysis-ingest_python). |
 | `Node`   | [Node](https://github.com/logdna/nodejs){: external} | You can send logs from your Node.js and JavaScript applications to an {{site.data.keyword.la_full_notm}} instance by using the Node.js library and adding a transport.  \n  \n Valid transports are Winston and Bunyan.
 | `Ruby and Ruby on Rails` | [Ruby](https://github.com/logdna/ruby){: external} |  |
-{: caption="Table 1. Code libraries" caption-side="top"}
+{: caption="Code libraries" caption-side="top"}

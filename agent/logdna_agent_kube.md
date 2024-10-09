@@ -84,7 +84,7 @@ The following table outlines the tagging convention adopted and the agent update
 | `X.Y`  | YES | The logging agent auto-updates when a new patch version is released. |
 | `X.Y.Z` | YES | The logging agent auto-updates when a new vulnerability fix is released. The agent code does not change, but the included libraries have vulnerability fixes. |
 | `X.Y.Z-<date>.[hash]` | NO | The logging agent never updates. If you use this tag, make sure you are watching for new agent releases that have vulnerability fixes. |
-{: caption="Table 1. logging agent tags explained" caption-side="top"}
+{: caption="logging agent tags explained" caption-side="top"}
 
 Depending on the tag that you use, you must consider upgrading the logging agent image in your DevOps maintenance plan, to resolve vulnerabilities and apply agent enhancements and agent bug fixes. For example:
 - In a development environment, you can use a tag `X` and let auto-updates happen as new minor versions are released.
@@ -121,7 +121,7 @@ The following table outlines the logging agent versions that are available to co
 |--------------------------------|-----------------------------|-----------------------|----------------------------------------------|
 | `Standard Kubernetes cluster`  | ![Checkmark icon](../images/checkmark-icon.svg) | ![Checkmark icon](../images/checkmark-icon.svg) | ![Checkmark icon](../images/checkmark-icon.svg) |
 | `OpenShift Kubernetes cluster` | ![Checkmark icon](../images/checkmark-icon.svg) | ![Checkmark icon](../images/checkmark-icon.svg) | `Not available`                              |
-{: caption="Table 2. logging agent versions for Kubernetes clusters" caption-side="top"}
+{: caption="logging agent versions for Kubernetes clusters" caption-side="top"}
 
 
 The logging agent v2 is available only for Kubernetes 1.9+.
@@ -165,7 +165,7 @@ To stop your Kubernetes cluster from sending logs to your {{site.data.keyword.la
 |--------------------------------|------------------------------|
 | `Standard Kubernetes cluster`  | [Detaching a logging agent from a standard Kubernetes cluster](/docs/log-analysis?topic=log-analysis-detach_agent#detach_agent_kube) |
 | `OpenShift Kubernetes cluster` | [Detaching a logging agent from an Openshift Kubernetes cluster](/docs/log-analysis?topic=log-analysis-detach_agent#detach_agent_os) |
-{: caption="Table 10. Detaching a logging agent from a cluster" caption-side="top"}
+{: caption="Detaching a logging agent from a cluster" caption-side="top"}
 
 ## Running the agent as non-root
 {: #log_analysis_agent_image_kube_non-root}

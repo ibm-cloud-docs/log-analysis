@@ -52,7 +52,7 @@ The following table lists the roles that a user can have to complete the actions
 | `Cloud Object Storage`     | Administrator     | Allows the user to assign policies to users in the account to work with the {{site.data.keyword.cos_full_notm}} service. |
 | `Cloud Object Storage`     | Administrator  \n Editor | Allows the user to provision an instance of the {{site.data.keyword.cos_full_notm}} service.    |
 | `Cloud Object Storage`     | Administrator  \n Editor  \n Operator | Allows the user to create a service ID.    |
-{: caption="Table 1. Roles and actions" caption-side="top"}
+{: caption="Roles and actions" caption-side="top"}
 
 
 Complete the following steps to assign a user administrator role to the {{site.data.keyword.cos_full_notm}} service within the context of a resource group:
@@ -118,7 +118,7 @@ To manage buckets, your user must be granted permissions to work with buckets on
 | `Cloud Object Storage`     | Service role: Manager   | Allows the user to make objects public.                                                       |
 | `Cloud Object Storage`     | Service roles: Manager  \n Writer | Allows the user to create and destroy buckets and objects.                         |
 | `Cloud Object Storage`     | Service role: reader    | Allows the user to list and download objects.                                                 |
-{: caption="Table 1. Roles and actions to work with buckets" caption-side="top"}
+{: caption="Roles and actions to work with buckets" caption-side="top"}
 
 **Note:** To create a bucket, your user must have manager or writer permissions for the {{site.data.keyword.cos_full_notm}} instance.
 
@@ -262,7 +262,7 @@ The following table lists the policies that a user must have to configure archiv
 |--------------------------------|---------------------------|-------------------------------------|
 | `{{site.data.keyword.la_full_notm}}` | Platform role: Viewer     | Allows the user to view the list of service instances in the Observability Logging dashboard. |
 | `{{site.data.keyword.la_full_notm}}` | Service role: Manager      | Allows the user to launch the web UI and view logs in the web UI.                             |
-{: caption="Table 2. IAM policies" caption-side="top"}
+{: caption="IAM policies" caption-side="top"}
 
 For more information on how to configure these policies for a user, see [Granting permissions to a user to view logs](/docs/log-analysis?topic=log-analysis-work_iam#user_logdna).
 
@@ -307,7 +307,7 @@ Complete the following steps to configure archiving of your {{site.data.keyword.
     | Endpoint    | Set to the COS bucket private endpoint.              |
     | API Key     | Set to the API key associated to the COS service ID. |
     | Instance ID | Set to the COS instance ID.                          |
-    {: caption="Table 3. COS fields" caption-side="top"}
+    {: caption="COS fields" caption-side="top"}
 
 6. Click **Save**.
 

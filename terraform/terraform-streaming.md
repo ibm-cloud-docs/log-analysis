@@ -75,7 +75,7 @@ The following table lists input parameters that you can set in the `provider` bl
 |----------------|----------------------|-----------------------|
 | `servicekey`   | Required             | API key that you must use to validate your credentials with the logging instance. |
 | `url`          | Required            | API endpoint. For more information, see [API Endpoints](/docs/log-analysis?topic=log-analysis-endpoints#endpoints_api). |
-{: caption="Table 1. List of input parameters that you can set in the provider block of your Terraform" caption-side="top"}
+{: caption="List of input parameters that you can set in the provider block of your Terraform" caption-side="top"}
 
 For more information on how to use environment variables, see [Using environment variables](/docs/ibm-cloud-provider-for-terraform?topic=ibm-cloud-provider-for-terraform-provider-reference#env-vars).
 
@@ -176,7 +176,7 @@ Where
 | topic       | Enter the name of the topic.              |
 | user        | Set the value **token** for the user name.  |
 | password    | Enter the API key that is associated with the service credential that you want to use to authenticate {{site.data.keyword.la_short}} with {{site.data.keyword.messagehub}}. |
-{: caption="Table 1. Streaming fields" caption-side="top"}
+{: caption="Streaming fields" caption-side="top"}
 
 
 

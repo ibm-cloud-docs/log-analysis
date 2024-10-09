@@ -95,4 +95,4 @@ Full information about the new service is available in the [{{site.data.keyword.
 | Ongoing | End of marketing for new users. |
 | 30 November 2024 | End of marketing for existing {{site.data.keyword.la_full_notm}} and {{site.data.keyword.at_full_notm}} users.  \n  \n Users will not be able to provision new instances of {{site.data.keyword.la_full_notm}} or {{site.data.keyword.at_full_notm}}.
 | 30 March 2025| End of support and end of life of {{site.data.keyword.la_full_notm}} and {{site.data.keyword.at_full_notm}}.  \n  \n Any {{site.data.keyword.la_full_notm}} or {{site.data.keyword.at_full_notm}} instances still existing will be stopped and deleted.  \n  \n [Archived data](#laat-archive) is retained in the {{site.data.keyword.cos_full_notm}} bucket under the customer's control. |
-{: caption="Table 2. Deprecation timeline" caption-side="bottom"}
+{: caption="Deprecation timeline" caption-side="bottom"}

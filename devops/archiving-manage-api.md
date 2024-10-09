@@ -33,7 +33,7 @@ You can archive logs from an {{site.data.keyword.la_full_notm}} instance into a 
 |---------------------------|-------------------------------|
 | Platform role: `Viewer`     | Allows the user to view the list of service instances. |
 | Service role: `Manager`      | Allows the user to manage archiving by using the API.  |
-{: caption="Table 1. IAM roles" caption-side="top"}
+{: caption="IAM roles" caption-side="top"}
 
 For more information on how to configure policies for a user, see [Granting user permissions to a user or service ID](/docs/log-analysis?topic=log-analysis-iam_view_events).
 

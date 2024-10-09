@@ -189,7 +189,7 @@ To configure the logging agent by using `kubectl` commands, run the following co
 |------------------|---------|
 | Public endpoint  | `kubectl apply -f https://assets.<REGION>.logging.cloud.ibm.com/clients/logdna-agent/<VERSION>/agent-resources-openshift.yaml` |
 | Private endpoint | `kubectl apply -f https://assets.<REGION>.logging.cloud.ibm.com/clients/logdna-agent/<VERSION>/agent-resources-openshift-private.yaml` |
-{: caption="Table 1. Commands by endpoint type" caption-side="top"}
+{: caption="Commands by endpoint type" caption-side="top"}
 
 Where
 
@@ -227,7 +227,7 @@ Choose one of the following commands to install and configure the logging agent 
 | `Toronto (ca-tor)`       | `kubectl apply -f https://assets.ca-tor.logging.cloud.ibm.com/clients/logdna-agent-ds-os.yaml -n ibm-observe`       |
 | `Dallas (us-south)`      | `kubectl apply -f https://assets.us-south.logging.cloud.ibm.com/clients/logdna-agent-ds-os.yaml -n ibm-observe`       |
 | `Washington (us-east)`   | `kubectl apply -f https://assets.us-east.logging.cloud.ibm.com/clients/logdna-agent-ds-os.yaml -n ibm-observe`       |
-{: caption="Table 2. Commands by location when you use public endpoints" caption-side="top"}
+{: caption="Commands by location when you use public endpoints" caption-side="top"}
 {: #end-api-table-1}
 {: tab-title="Command (By using public endpoints)"}
 {: tab-group="agent"}
@@ -245,7 +245,7 @@ Choose one of the following commands to install and configure the logging agent 
 | `Toronto (ca-tor)`       | `kubectl apply -f https://assets.ca-tor.logging.cloud.ibm.com/clients/logdna-agent-ds-os-private.yaml -n ibm-observe`      |
 | `Dallas (us-south)`      | `kubectl apply -f https://assets.us-south.logging.cloud.ibm.com/clients/logdna-agent-ds-os-private.yaml -n ibm-observe`      |
 | `Washington (us-east)`   | `kubectl apply -f https://assets.us-east.logging.cloud.ibm.com/clients/logdna-agent-ds-os-private.yaml -n ibm-observe`      |
-{: caption="Table 3. Commands by location when you use private endpoints" caption-side="top"}
+{: caption="Commands by location when you use private endpoints" caption-side="top"}
 {: #end-api-table-2}
 {: tab-title="Command (By using private endpoints)"}
 {: tab-group="agent"}

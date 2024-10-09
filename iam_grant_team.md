@@ -54,7 +54,7 @@ The following table shows the user roles that you can grant a user to work with 
 | `ROLE_USER`          | `reader`         |
 | `ROLE_ADVANCED_USER` | `standard-member` |
 | `ROLE_ADMIN`         | `manager`        |
-{: caption="Table 1. List of user roles" caption-side="top"}
+{: caption="List of user roles" caption-side="top"}
 
 
 The following table shows the group roles that you can grant users to work within the context of a group in an {{site.data.keyword.la_short}} instance:
@@ -64,7 +64,7 @@ The following table shows the group roles that you can grant users to work withi
 | `ROLE_GROUP_READ`     | `reader`         | Custom group |
 | `ROLE_GROUP_EDIT`     | `standard-member` | Custom group |
 | `ROLE_GROUP_ADMIN`    | `manager`        | Custom group |
-{: caption="Table 2. List of group roles" caption-side="top"}
+{: caption="List of group roles" caption-side="top"}
 
 You can define in the {{site.data.keyword.la_short}} UI more groups to define different levels of access to data per group and set of users.
 

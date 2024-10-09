@@ -42,7 +42,7 @@ On the {{site.data.keyword.cloud_notm}}, configure an Ubuntu server to forward l
 3. Configure the logging agent in the Ubuntu server.
 4. Optionally, add additional directories to be monitored by the agent.
 
-![Component overview on the {{site.data.keyword.cloud_notm}}](../images/Log-Analysis-03-Ubuntu.svg "Component overview on the {{site.data.keyword.cloud_notm}}"){: caption="Figure 1. Component overview on the {{site.data.keyword.cloud_notm}}" caption-side="bottom"}
+![Component overview on the {{site.data.keyword.cloud_notm}}](../images/Log-Analysis-03-Ubuntu.svg "Component overview on the {{site.data.keyword.cloud_notm}}"){: caption="Component overview on the {{site.data.keyword.cloud_notm}}" caption-side="bottom"}
 
 In this tutorial, you will learn how to configure an Ubuntu server to forward logs to an {{site.data.keyword.la_full_notm}} instance.
 
@@ -66,7 +66,7 @@ Your {{site.data.keyword.IBM_notm}}ID must have assigned IAM policies for each o
 |--------------------------------------|----------------------------|---------|-----------|------------------------------|
 | Resource group **default**           |  Resource group            | Viewer  | us-south  | This policy is required to allow the user to see service instances in the Default resource group.    |
 | {{site.data.keyword.la_full_notm}} service |  Resource group            | Editor  | us-south  | This policy is required to allow the user to provision and administer the {{site.data.keyword.la_full_notm}} service in the default resource group.   |
-{: caption="Table 1. List of IAM policies required to complete the tutorial" caption-side="top"}
+{: caption="List of IAM policies required to complete the tutorial" caption-side="top"}
 
 The {{site.data.keyword.cloud_notm}} CLI must be installed. For more information, see [Installing the {{site.data.keyword.cloud_notm}} CLI](/docs/cli?topic=cli-install-ibmcloud-cli).
 

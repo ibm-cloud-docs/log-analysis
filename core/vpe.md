@@ -66,7 +66,7 @@ of the target region.
 | Tokyo (jp-tok) | api.private.jp-tok.logging.cloud.ibm.com  \n  \n logs.private.jp-tok.logging.cloud.ibm.com | crn:v1:bluemix:public:logdna:jp-tok:::endpoint:api.private.jp-tok.logging.cloud.ibm.com |
 | Toronto (ca-tor) | api.private.ca-tor.logging.cloud.ibm.com  \n  \n logs.private.ca-tor.logging.cloud.ibm.com | crn:v1:bluemix:public:logdna:ca-tor:::endpoint:api.private.ca-tor.logging.cloud.ibm.com |
 | Washington (us-east) | api.private.us-east.logging.cloud.ibm.com  \n  \n logs.private.us-east.logging.cloud.ibm.com | crn:v1:bluemix:public:logdna:us-east:::endpoint:api.private.us-east.logging.cloud.ibm.com |
-{: caption="Table 1. Lists private endpoints for interacting with {{site.data.keyword.la_full_notm}} APIs over IBM Cloud's private network" caption-side="top"}
+{: caption="Lists private endpoints for interacting with {{site.data.keyword.la_full_notm}} APIs over IBM Cloud's private network" caption-side="top"}
 
 ## Using Virtual Private Endpoints
 {: #using-vpes}
@@ -132,6 +132,3 @@ For more information, see [Setting up private service endpoints for {{site.data.
 - [Planning for virtual private endpoint gateways](/docs/vpc?topic=vpc-planning-considerations)
 - [Creating an endpoint gateway](/docs/vpc?topic=vpc-ordering-endpoint-gateway)
 - For further assistance, see the [FAQs for virtual private endpoints here](/docs/vpc?topic=vpc-faqs-vpe), and the `Troubleshooting VPE gateways` documentation that includes [how to fix communications issues here](/docs/vpc?topic=vpc-troubleshoot-cannot-communicate). 
-
-
-

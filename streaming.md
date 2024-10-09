@@ -28,11 +28,11 @@ When you stream data to data lakes, other analysis tools, or other SIEM tools, y
 
 You can stream data to an {{site.data.keyword.messagehub}} instance or to an {{site.data.keyword.la_full_notm}} instance. For example, when you enable streaming on an {{site.data.keyword.la_full_notm}} instance, you configure {{site.data.keyword.la_short}} to send data to an {{site.data.keyword.messagehub}} instance. Then, you can configure Kafka Connect to consume the data and forward it to your destination tool. Once the data is persisted within {{site.data.keyword.messagehub}}, you can configure any application or service to create a subscription and take action on log data being streamed.
 
-![Streaming example with Event Streams](images/la_streams.svg "Streaming examples with Event Streams"){: caption="Figure 1. Streaming example with Event Streams" caption-side="bottom"}
+![Streaming example with Event Streams](images/la_streams.svg "Streaming examples with Event Streams"){: caption="Streaming example with Event Streams" caption-side="bottom"}
 
 You can also also configure streaming from one {{site.data.keyword.la_full_notm}} instance to a second {{site.data.keyword.la_full_notm}} instance.
 
-![Log Analysis to Log Analysis streaming](images/la_to_la.svg "Log Analysis to Log Analysis streaming"){: caption="Figure 2. Log Analysis to Log Analysis streaming" caption-side="bottom"}
+![Log Analysis to Log Analysis streaming](images/la_to_la.svg "Log Analysis to Log Analysis streaming"){: caption="Log Analysis to Log Analysis streaming" caption-side="bottom"}
 
 You can only stream from one {{site.data.keyword.la_full_notm}} instance to one other {{site.data.keyword.la_full_notm}} instance. You cannot stream from the second {{site.data.keyword.la_full_notm}} instance to another {{site.data.keyword.la_full_notm}} instance.
 {: important}
@@ -127,4 +127,4 @@ The following {{site.data.keyword.at_short}} events are generated when you confi
 | `logdna.streaming-logs.send`              | This event is generated when there is a failure streaming data. |
 | `logdna.exclusion-rule.create`            | This event is generated when an streaming exclusion rule is configured. |
 | `logdna.exclusion-rule.delete`            | This event is generated when an streaming exclusion rule is deleted. |
-{: caption="Table 1. Events generated when configuring streaming" caption-side="bottom"}
+{: caption="Events generated when configuring streaming" caption-side="bottom"}

@@ -44,7 +44,7 @@ The following table outlines the actions that you can run to configure presets p
 | Get information about a specific preset                            | `GET`   | `<ENDPOINT>/v1/config/presetalert/<PRESET_ID>`          |
 | Modify an existing preset   | `PUT`    | `<ENDPOINT>/v1/config/presetalert/<PRESET_ID>` |
 | Delete a preset                               | `DELETE` | `<ENDPOINT>/v1/config/presetalert/<PRESET_ID>` |
-{: caption="Table 1. Preset configuration API endpoints" caption-side="top"}
+{: caption="Preset configuration API endpoints" caption-side="top"}
 
 Where `<PRESET_ID>` is the ID of a preset.
 
@@ -112,7 +112,7 @@ The following table indicates when the `name` parameter is required:
 | Modify an existing preset | `PUT`    | ![Check mark icon](images/checkmark-icon.svg "Check mark icon indicating required")|
 | Get preset information                           | `GET`   | |
 | Delete a preset                              | `DELETE` |  |
-{: caption="Table 2. Required status per method" caption-side="top"}
+{: caption="Required status per method" caption-side="top"}
 
 
 ### channels (array of objects)

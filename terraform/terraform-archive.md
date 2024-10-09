@@ -81,7 +81,7 @@ The following table lists input parameters that you can set in the `provider` bl
 |----------------|----------------------|-----------------------|
 | `servicekey`   | Required             | API key that you must use to validate your credentials with the logging instance. |
 | `url`          | Required            | API endpoint. For more information, see [API Endpoints](/docs/log-analysis?topic=log-analysis-endpoints#endpoints_api). |
-{: caption="Table 1. List of input parameters that you can set in the provider block of your Terraform" caption-side="top"}
+{: caption="List of input parameters that you can set in the provider block of your Terraform" caption-side="top"}
 
 For more information on how to use environment variables, see [Using environment variables](/docs/ibm-cloud-provider-for-terraform?topic=ibm-cloud-provider-for-terraform-provider-reference#env-vars).
 
@@ -182,7 +182,7 @@ Where
 | Endpoint    | Set to the COS bucket private endpoint.              |
 | API Key     | Set to the API key associated to the COS service ID. |
 | Instance ID | Set to the COS instance ID.                          |
-{: caption="Table 1. COS fields" caption-side="top"}
+{: caption="COS fields" caption-side="top"}
 
 
 ## Step 5. Configure archiving

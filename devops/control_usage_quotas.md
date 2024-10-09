@@ -198,7 +198,7 @@ Verify that each exclusion rule that you add behaves as expected. Improper confi
 
 Toggle the selection next to the exclusion rules to enable or disable the rule.
 
-![Example switch to enable or disable exclusion rule](../images/usage_quota_rule_switch.png "Example switch to enable or disable exclusion rule"){: caption="Figure 1. Example switch showing exclusion rule is enabled" caption-side="bottom"}
+![Example switch to enable or disable exclusion rule](../images/usage_quota_rule_switch.png "Example switch to enable or disable exclusion rule"){: caption="Example switch showing exclusion rule is enabled" caption-side="bottom"}
 
 #### Editing exclusion rules
 {: #editing_usage_rules}

@@ -70,7 +70,7 @@ The following table shows the public API endpoints:
 | `Tokyo (jp-tok)`       | `api.jp-tok.logging.cloud.ibm.com`   | 161.202.231.186 \n 128.168.96.179 \n 165.192.111.36 | TCP 443  \n TCP 80 |
 | `Toronto (ca-tor)`     | `api.ca-tor.logging.cloud.ibm.com`   | 169.53.161.75   \n 163.74.65.133  \n 163.75.73.42   | TCP 443  \n TCP 80 |
 | `Washington (us-east)` | `api.us-east.logging.cloud.ibm.com`  | 169.47.134.86   \n 169.60.72.62   \n 169.61.107.10  | TCP 443  \n TCP 80 |
-{: caption="Table 1. Lists of public API endpoints for interacting with {{site.data.keyword.la_full_notm}}" caption-side="top"}
+{: caption="Lists of public API endpoints for interacting with {{site.data.keyword.la_full_notm}}" caption-side="top"}
 
 `(*)` Indicates endpoints that are in plan to be supported.  See [Service IP changes](/docs/log-analysis?topic=log-analysis-service-ip-changes) for planned changes. These endpoints should be added to an allowlist in advance to avoid service interruptions.
 {: note}
@@ -93,7 +93,7 @@ The following table shows the private API endpoints:
 | `Tokyo (jp-tok)`       | `api.private.jp-tok.logging.cloud.ibm.com`   | 166.9.40.2    \n 166.9.42.3     \n 166.9.44.13  \n  \n 166.9.40.13 `(*)`  \n 166.9.42.72 `(*)`  \n 166.9.44.76 `(*)`  \n  \n 166.9.249.108 `(*)`  \n 166.9.249.137 `(*)`  \n 166.9.249.173 `(*)` | TCP 443  \n TCP 80 |
 | `Toronto (ca-tor)`     | `api.private.ca-tor.logging.cloud.ibm.com`   | 166.9.77.23   \n 166.9.76.26    \n 166.9.78.24  \n  \n 166.9.78.10 `(*)`  \n 166.9.76.10 `(*)`  \n 166.9.77.10 `(*)`  \n  \n 166.9.247.151 `(*)`  \n 166.9.247.182 `(*)`  \n 166.9.247.201 `(*)` | TCP 443  \n TCP 80 |
 | `Washington (us-east)` | `api.private.us-east.logging.cloud.ibm.com`  | 166.9.22.35   \n 166.9.20.72    \n 166.9.24.247  \n  \n 166.9.24.171 `(*)`  \n 166.9.22.194 `(*)`  \n 166.9.68.157 `(*)`  \n  \n 166.9.231.235 `(*)`  \n 166.9.232.23 `(*)`  \n 166.9.233.10 `(*)` | TCP 443  \n TCP 80 |
-{: caption="Table 2. Lists of private API endpoints for interacting with {{site.data.keyword.la_full_notm}}" caption-side="top"}
+{: caption="Lists of private API endpoints for interacting with {{site.data.keyword.la_full_notm}}" caption-side="top"}
 
 `(*)` Indicates endpoints that are in plan to be supported.  See [Service IP changes](/docs/log-analysis?topic=log-analysis-service-ip-changes) for planned changes. These endpoints should be added to an allowlist in advance to avoid service interruptions.
 {: note}
@@ -119,7 +119,7 @@ The following table shows the ingestion endpoints:
 | `Tokyo (jp-tok)`       | `logs.jp-tok.logging.cloud.ibm.com`   | 128.168.107.243 \n 165.192.100.74 \n 169.56.11.253  \n  \n 161.202.231.186 `(*)`  \n 128.168.96.179 `(*)`  \n 165.192.111.36 `(*)` | TCP 443  \n TCP 80 |
 | `Toronto (ca-tor)`     | `logs.ca-tor.logging.cloud.ibm.com`   | 163.74.65.131   \n 169.55.135.27  \n 163.75.66.243  \n  \n 169.53.161.75 `(*)`  \n 163.74.65.133 `(*)`  \n 163.75.73.42 `(*)` | TCP 443  \n TCP 80 |
 | `Washington (us-east)` | `logs.us-east.logging.cloud.ibm.com`  | 169.47.134.84   \n 169.60.98.94   \n 169.61.98.204  \n  \n 169.47.134.86 `(*)`  \n 169.60.72.62 `(*)`  \n 169.61.107.10 `(*)` | TCP 443  \n TCP 80 |
-{: caption="Table 3. Lists of public ingestion endpoints for interacting with {{site.data.keyword.la_full_notm}}" caption-side="top"}
+{: caption="Lists of public ingestion endpoints for interacting with {{site.data.keyword.la_full_notm}}" caption-side="top"}
 
 `(*)` Indicates endpoints that are in plan to be supported.  See [Service IP changes](/docs/log-analysis?topic=log-analysis-service-ip-changes) for planned changes. These endpoints should be added to an allowlist in advance to avoid service interruptions.
 {: note}
@@ -143,7 +143,7 @@ The following table shows the private ingestion endpoints:
 | `Tokyo (jp-tok)`         | `logs.private.jp-tok.logging.cloud.ibm.com`   | 166.9.40.3  \n 166.9.42.4   \n 166.9.44.71  \n  \n 166.9.40.13 `(*)`  \n 166.9.42.72 `(*)`  \n 166.9.44.76 `(*)`  \n  \n 166.9.249.108 `(*)`  \n 166.9.249.137 `(*)`  \n 166.9.249.173 `(*)` | TCP 443  \n TCP 80 |
 | `Toronto (ca-tor)`       | `logs.private.ca-tor.logging.cloud.ibm.com`   | 166.9.77.26 \n 166.9.76.29  \n 166.9.78.27  \n  \n 166.9.78.10 `(*)`  \n 166.9.76.10 `(*)`  \n 166.9.77.10 `(*)`  \n  \n 166.9.247.151 `(*)`  \n 166.9.247.182 `(*)`  \n 166.9.247.201 `(*)` | TCP 443  \n TCP 80 |
 | `Washington (us-east)`   | `logs.private.us-east.logging.cloud.ibm.com`  | 166.9.22.36 \n 166.9.20.73  \n 166.9.24.245  \n  \n 166.9.24.171 `(*)`  \n 166.9.22.194 `(*)`  \n 166.9.68.157 `(*)`  \n  \n 166.9.231.235 `(*)`  \n 166.9.232.23 `(*)`  \n 166.9.233.10 `(*)` | TCP 443  \n TCP 80 |
-{: caption="Table 4. Lists of private ingestion endpoints for interacting with {{site.data.keyword.la_full_notm}}" caption-side="top"}
+{: caption="Lists of private ingestion endpoints for interacting with {{site.data.keyword.la_full_notm}}" caption-side="top"}
 
 `(*)` Indicates endpoints that are in plan to be supported.  See [Service IP changes](/docs/log-analysis?topic=log-analysis-service-ip-changes) for planned changes. These endpoints should be added to an allowlist in advance to avoid service interruptions.
 {: note}
@@ -167,7 +167,7 @@ The following table shows the logging web UI endpoints:
 | `North America` | `Washington DC (us-east)` | `https://app.us-east.logging.cloud.ibm.com`  |
 | `North America` | `Toronto (ca-tor)`        | `https://app.ca-tor.logging.cloud.ibm.com`   |
 | `South America` | `Sao Paulo (br-sao)`      | `https://app.br-sao.logging.cloud.ibm.com`   |
-{: caption="Table 5. Lists of UI endpoints" caption-side="top"}
+{: caption="Lists of UI endpoints" caption-side="top"}
 
 
 
@@ -193,7 +193,7 @@ The following tables show the syslog public endpoints:
 | `Tokyo (jp-tok)`         | `syslog://syslog-a.jp-tok.logging.cloud.ibm.com`   | 128.168.95.2     \n 161.202.248.162 \n 165.192.100.77  |
 | `Toronto (ca-tor)`       | `syslog://syslog-a.ca-tor.logging.cloud.ibm.com`   | 163.75.66.13     \n 169.53.186.154  \n 163.74.69.234   |
 | `Washington (us-east)`   | `syslog://syslog-a.us-east.logging.cloud.ibm.com`  | 169.61.98.203    \n 169.47.34.203   \n 169.60.121.243  |
-{: caption="Table 6. List of syslog-a public endpoints" caption-side="top"}
+{: caption="List of syslog-a public endpoints" caption-side="top"}
 
 `(*)` Indicates endpoints that are in plan to be supported.  See [Service IP changes](/docs/log-analysis?topic=log-analysis-service-ip-changes) for planned changes. These endpoints should be added to an allowlist in advance to avoid service interruptions.
 {: note}
@@ -212,7 +212,7 @@ The following tables show the syslog public endpoints:
 | `Tokyo (jp-tok)`       | `syslog://syslog-u.jp-tok.logging.cloud.ibm.com`   | 165.192.100.76  \n 169.56.11.252    \n 128.168.107.244 |
 | `Toronto (ca-tor)`     | `syslog://syslog-u.ca-tor.logging.cloud.ibm.com`   | 163.75.66.11    \n  169.55.135.29   \n 163.74.69.236   |
 | `Washington (us-east)` | `syslog://syslog-u.us-east.logging.cloud.ibm.com`  | 169.47.34.204   \n 169.61.98.202    \n 169.60.98.91    |
-{: caption="Table 7. List of syslog-u public endpoints" caption-side="top"}
+{: caption="List of syslog-u public endpoints" caption-side="top"}
 
 `(*)` Indicates endpoints that are in plan to be supported.  See [Service IP changes](/docs/log-analysis?topic=log-analysis-service-ip-changes) for planned changes. These endpoints should be added to an allowlist in advance to avoid service interruptions.
 {: note}
@@ -235,7 +235,7 @@ The following table shows the syslog private endpoints:
 | `Tokyo (jp-tok)`       | `syslog-a.private.jp-tok.logging.cloud.ibm.com`   | 166.9.42.26  \n 166.9.40.23  \n 166.9.44.67  |
 | `Toronto (ca-tor)`     | `syslog-a.private.ca-tor.logging.cloud.ibm.com`   | 166.9.76.31  \n 166.9.77.28  \n 166.9.78.29  |
 | `Washington (us-east)` | `syslog-a.private.us-east.logging.cloud.ibm.com`  | 166.9.22.38  \n 166.9.20.76  \n 166.9.24.243 |
-{: caption="Table 8. Lists of syslog private endpoints" caption-side="top"}
+{: caption="Lists of syslog private endpoints" caption-side="top"}
 
 `(*)` Indicates endpoints that are in plan to be supported.  See [Service IP changes](/docs/log-analysis?topic=log-analysis-service-ip-changes) for planned changes. These endpoints should be added to an allowlist in advance to avoid service interruptions.
 {: note}
@@ -253,7 +253,7 @@ The following table shows the syslog private endpoints:
 | `Tokyo (jp-tok)`       | `syslog://syslog-u.private.jp-tok.logging.cloud.ibm.com`   | 166.9.42.27 \n 166.9.40.24 \n 166.9.44.73  |
 | `Toronto (ca-tor)`     | `syslog://syslog-u.private.ca-tor.logging.cloud.ibm.com`   | 166.9.76.32 \n 166.9.78.30 \n 166.9.77.29  |
 | `Washington (us-east)` | `syslog://syslog-u.private.us-east.logging.cloud.ibm.com`  | 166.9.22.39 \n 166.9.20.77 \n 166.9.24.244 |
-{: caption="Table 7. List of syslog-u public endpoints" caption-side="top"}
+{: caption="List of syslog-u public endpoints" caption-side="top"}
 
 `(*)` Indicates endpoints that are in plan to be supported.  See [Service IP changes](/docs/log-analysis?topic=log-analysis-service-ip-changes) for planned changes. These endpoints should be added to an allowlist in advance to avoid service interruptions.
 {: note}
@@ -278,7 +278,7 @@ The following table shows the syslog TLS endpoints:
 | `Tokyo (jp-tok)`         | `syslog-tls://syslog-a.jp-tok.logging.cloud.ibm.com`     | 128.168.95.2    \n 161.202.248.162 \n 165.192.100.77 |
 | `Toronto (ca-tor)`       | `syslog-tls://syslog-a.ca-tor.logging.cloud.ibm.com`     | 163.75.66.13    \n 163.74.69.234   \n 169.53.186.154 |
 | `Washington (us-east)`   | `syslog-tls://syslog-a.us-east.logging.cloud.ibm.com`    | 169.60.121.243  \n 169.61.98.203   \n 169.47.34.203  |
-{: caption="Table 9. Lists of Syslog-TLS endpoints" caption-side="top"}
+{: caption="Lists of Syslog-TLS endpoints" caption-side="top"}
 
 `(*)` Indicates endpoints that are in plan to be supported.  See [Service IP changes](/docs/log-analysis?topic=log-analysis-service-ip-changes) for planned changes. These endpoints should be added to an allowlist in advance to avoid service interruptions.
 {: note}
@@ -302,7 +302,7 @@ The following table shows the syslog TLS endpoints:
 | `Tokyo (jp-tok)`       | `syslog-tls://syslog-a.private.jp-tok.logging.cloud.ibm.com`   | 166.9.40.23 \n 166.9.42.26 \n 166.9.44.67  |
 | `Toronto (ca-tor)`     | `syslog-tls://syslog-a.private.ca-tor.logging.cloud.ibm.com`   | 166.9.76.31 \n 166.9.78.29 \n 166.9.77.28  |
 | `Washington (us-east)` | `syslog-tls://syslog-a.private.us-east.logging.cloud.ibm.com`  | 166.9.22.38 \n 166.9.20.76 \n 166.9.24.243 |
-{: caption="Table 9. Lists of Syslog-TLS endpoints" caption-side="top"}
+{: caption="Lists of Syslog-TLS endpoints" caption-side="top"}
 
 `(*)` Indicates endpoints that are in plan to be supported.  See [Service IP changes](/docs/log-analysis?topic=log-analysis-service-ip-changes) for planned changes. These endpoints should be added to an allowlist in advance to avoid service interruptions.
 {: note}

@@ -131,7 +131,6 @@ VMware vCenter Server® is a hosted private cloud that delivers the VMware vSphe
 
 The following graphic depicts the high-level architecture and components of a three node vCenter Server with NSX-T deployment.
 
-![Architecture of a vCenter Server NSX-T deployment](../images/Log-Analysis-05-VMware-vCenter-Architecture.svg "Architecture of a vCenter Server NSX-T deployment"){: caption="Figure 1. Architecture of a vCenter Server NSX-T deployment" caption-side="bottom"}
+![Architecture of a vCenter Server NSX-T deployment](../images/Log-Analysis-05-VMware-vCenter-Architecture.svg "Architecture of a vCenter Server NSX-T deployment"){: caption="Architecture of a vCenter Server NSX-T deployment" caption-side="bottom"}
 
 For more information on logging from VMware vCenter Server deployments, see [Logging for VMware vCenter Server deployments](/docs/log-analysis?topic=log-analysis-vmware-vcenter).
-
