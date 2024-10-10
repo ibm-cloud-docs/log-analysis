@@ -44,7 +44,7 @@ You can customize a logging agent by configuring parameters for Linux agents, or
 | `LOGDNA_EXCLUSION_REGEX_RULES` | `log.exclude.regex[]` | Regex custom rules that you can define to configure what log files to exclude from being monitored. |  | `/var/log/containers/**,/var/log/pods/**`  |
 | `LOGDNA_USE_SSL`          | `http.use_ssl` | Boolean that defines whether TLS 1.2 should be used when the agent sends logs to the logging instance.  \n The default value is set to `true`.  | `true` | Valid values are `true` and `false`. |
 | `LOGDNA_USE_COMPRESSION`  | `http.use_compression` | Boolean that defines whether compression is enabled when the agent sends logs to the logging instance.  \n  The default value is set to `true`. | `true` | `true` |
-| `LOGDNA_GZIP_LEVEL`       | `http.gzip_level` | Compression level for gzip.  \n Valid values are: `1`, `2`, `3`, `4`, `5`, `6`, `7`, `8`, `9`  \n When you set this variable to `1`, you are configuring the agent to use the fastest compression speed but at a lower ratio. When you set this variable to `9`, you are configuring the agent to use the highest compression ratio but at a lower speed.  | `2` | `6` |
+| `LOGDNA_GZIP_LEVEL`       | `http.gzip_level` | Compression level for gzip.  \n Valid values (`1`, `2`, `3`, `4`, `5`, `6`, `7`, `8`, `9`).  \n When you set this variable to `1`, you are configuring the agent to use the fastest compression speed but at a lower ratio. When you set this variable to `9`, you are configuring the agent to use the highest compression ratio but at a lower speed.  | `2` | `6` |
 | `LOGDNA_TAGS` | `http.params.tags` | Define tags to group hosts automatically into dynamic groups. |  | `prod,appA` |
 | `LOGDNA_MAC` | `http.params.mac` | MAC address that is attached as metadata to log lines. |  |  |
 | `LOGDNA_LOOKBACK` | `log.lookback` | Defines the lookback strategy on startup of the agent. | `smallfiles` | Valid values are: `smallfiles`, `start` or `none` |
@@ -97,7 +97,7 @@ You can customize a logging agent by configuring parameters for Linux agents, or
 | `LOGDNA_EXCLUDE_REGEX` | Regex custom rules that you can define to configure what log files to exclude from being monitored. | | `/var/log/containers/*,/var/log/pods/*`  |
 | `LDLOGSSL` | Boolean that defines whether TLS 1.2 should be used when the agent sends logs to the logging instance.  \n The default value is set to `true`. | `true` | `true` |
 | `COMPRESS` | Boolean that defines whether compression is enabled when the agent sends logs to the logging instance.  \n  The default value is set to `true`. | `true` | `true` |
-| `GZIP_COMPRESS_LEVEL` | Compression level for gzip.  \n Valid values are: `1`, `2`, `3`, `4`, `5`, `6`, `7`, `8`, `9`  \n When you set this variable to `1`, you are configuring the agent to use the fastest compression speed but at a lower ratio. When you set this variable to `9`, you are configuring the agent to use the highest compression ratio but at a lower speed.  | `2` | `6` |
+| `GZIP_COMPRESS_LEVEL` | Compression level for gzip.  \n Valid values ( `1`, `2`, `3`, `4`, `5`, `6`, `7`, `8`, `9`).  \n When you set this variable to `1`, you are configuring the agent to use the fastest compression speed but at a lower ratio. When you set this variable to `9`, you are configuring the agent to use the highest compression ratio but at a lower speed.  | `2` | `6` |
 | `LOGDNA_TAGS` | Define tags to group hosts automatically into dynamic groups. |  | `production,serviceA`  |
 {: caption="Tags that are available for the logging agent V2" caption-side="top"}
 
