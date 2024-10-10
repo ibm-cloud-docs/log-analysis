@@ -70,7 +70,7 @@ On the {{site.data.keyword.cloud_notm}}, configure a PowerVS instance to forward
 |--------------------------------------|----------------------------|---------|-----------|------------------------------|
 | Resource group **Default**           |  Resource group            | Viewer  | us-south  | This policy is required to allow the user to see service instances in the Default resource group.    |
 | {{site.data.keyword.la_full_notm}} service |  Resource group      | Editor  | us-south  | This policy is required to allow the user to provision and administer the {{site.data.keyword.la_full_notm}} service in the Default resource group.   |
-{: caption="Table 1. List of IAM policies" caption-side="top"}
+{: caption="List of IAM policies" caption-side="top"}
 
 Provision a service instance of {{site.data.keyword.la_short}} through the {{site.data.keyword.cloud_notm}} console. For more information, see [Provisioning an instance](/docs/log-analysis?topic=log-analysis-provision).
 

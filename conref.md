@@ -160,7 +160,7 @@ Use a user ID that is a member or an owner of an {{site.data.keyword.cloud_notm}
 |--------------------------------------|----------------------------|---------|-----------|------------------------------|
 | Resource group **Default**           |  Resource group            | Viewer  | us-south  | This policy is required to allow the user to see service instances in the Default resource group.    |
 | {{site.data.keyword.la_full_notm}} service |  Resource group      | Editor  | us-south  | This policy is required to allow the user to provision and administer the {{site.data.keyword.la_full_notm}} service in the Default resource group.   |
-{: caption="Table 1. List of IAM policies" caption-side="top"}
+{: caption="List of IAM policies" caption-side="top"}
 
 ### Provision an {{site.data.keyword.la_full_notm}} instance
 {: #windows_provision_la}

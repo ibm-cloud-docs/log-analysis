@@ -135,7 +135,7 @@ Choose one of the following commands to install and configure the logging agent:
 | `Tokyo (jp-tok)`         | `kubectl apply -f https://assets.jp-tok.logging.cloud.ibm.com/clients/agent-resources.yaml`       |
 | `Sydney (au-syd)`        | `kubectl apply -f https://assets.au-syd.logging.cloud.ibm.com/clients/agent-resources.yaml`        |
 | `Washington (us-east)`   | `kubectl apply -f https://assets.us-east.logging.cloud.ibm.com/clients/agent-resources.yaml`       |
-{: caption="Table 3. Commands by location when you use public endpoints" caption-side="top"}
+{: caption="Commands by location when you use public endpoints" caption-side="top"}
 {: #agent-table-3}
 {: tab-title="Command (By using public endpoints)"}
 {: tab-group="agent1"}
@@ -151,7 +151,7 @@ Choose one of the following commands to install and configure the logging agent:
 | `Tokyo (jp-tok)`         | `kubectl apply -f https://assets.jp-tok.logging.cloud.ibm.com/clients/agent-resources-private.yaml`   |
 | `Sydney (au-syd)`        | `kubectl apply -f https://assets.au-syd.logging.cloud.ibm.com/clients/agent-resources-private.yaml`   |
 | `Washington (us-east)`   | `kubectl apply -f https://assets.us-east.logging.cloud.ibm.com/clients/agent-resources-private.yaml`  |
-{: caption="Table 4. Commands by location when you use private endpoints" caption-side="top"}
+{: caption="Commands by location when you use private endpoints" caption-side="top"}
 {: #agent-table-4}
 {: tab-title="Command (By using private endpoints)"}
 {: tab-group="agent1"}

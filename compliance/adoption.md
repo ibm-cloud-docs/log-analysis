@@ -54,7 +54,7 @@ The following table highlights some of the key features per account management s
 | `Isolation of resources and services per account`     | ![Checkmark icon](../images/checkmark-icon.svg) | ![Checkmark icon](../images/checkmark-icon.svg) |
 | `Isolation of account settings`                       | ![Checkmark icon](../images/checkmark-icon.svg) | ![Checkmark icon](../images/checkmark-icon.svg) |
 | `IAM enabled`                                         | ![Checkmark icon](../images/checkmark-icon.svg) | ![Checkmark icon](../images/checkmark-icon.svg) |
-{: caption="Table 1. Types of accounts" caption-side="top"}
+{: caption="Types of accounts" caption-side="top"}
 
 
 In stand-alone accounts, you control access to resources by grouping them in resource groups, and configuring IAM policies that you assign to users and service IDs directly or through access groups. These policies define the level of access to work with services in the account. For example, you might have a stand-alone account where you run your development, pre-production, and production services and applications.
@@ -259,7 +259,7 @@ Define a minimum of 4 access groups:
 | `Managers`               | Users in this group should have permissions to fully manage the service in the {{site.data.keyword.cloud_notm}}. |
 | `Advanced service users` | Users in this group should have permissions to run advanced service tasks.  |
 | `Users`                  | Users in this group should have permissions to run basic tasks.  |
-{: caption="Table 2. List of access groups" caption-side="top"}
+{: caption="List of access groups" caption-side="top"}
 
 ### Policies
 {: #adoption_iam_policies}
@@ -293,7 +293,7 @@ Roles define the actions that a user or serviceID can run. There are different t
 | `Managers`               | Grant a policy for the resource group with platform role **editor**. Select the {{site.data.keyword.la_full_notm}} service, and select the platform role **editor**, and the service role **manager**. |
 | `Advanced service users` | Grant a policy for the resource group with platform role **viewer**. Select the {{site.data.keyword.la_full_notm}} service, and select the platform role **viewer**, and the service role **standard member**. |
 | `Users`                  | Grant a policy for the resource group with platform role **viewer**. Select the {{site.data.keyword.la_full_notm}} service, and select the platform role **viewer**, and the service role **reader**. |
-{: caption="Table 3. Roles per access group policy" caption-side="top"}
+{: caption="Roles per access group policy" caption-side="top"}
 
 **Every user that requires permissions to work with the {{site.data.keyword.la_full_notm}} service in your account must be assigned a resource group policy that includes the permissions for the {{site.data.keyword.la_full_notm}} service.**
 {: tip}
@@ -378,7 +378,7 @@ You can configure multiple notification channels. Valid channels are: `email`, `
 | `Slack`      | Slack is a collaborative tool that you can use to communicate and share information across 1 or more teams. **Define a Slack alert to inform about routine scenarios that you might want to monitor.** |
 | `PagerDuty`  | PagerDuty is an incident management tool that you can use to automate incident resolution and escalation, define on-call schedules and more. **Define a PagerDuty alert to be notified immediately so that you can take action promptly.**  |
 | `Webhook`    | A webhook is another method that you can configure to provide other applications information. **Define a webhook alert if you have a third party tool that you can configure with a logging instance via a webhook, and where you plan to manage notifications.** |
-{: caption="Table 4. Guidance for notification channel" caption-side="top"}
+{: caption="Guidance for notification channel" caption-side="top"}
 
 **Configure PagerDuty alerts to be notified immediately so that you can take action promptly on problems and automate their resolution. In addition, configure Slack alerts to share alerts and information.**
 {: tip}
@@ -447,7 +447,7 @@ When you plan the bucket for a logging instance, consider the following informat
 | `Long-term retention policy` [4]                      | Do you need to keep data for a long period of time?               | [Information about archiving COS files for long term storage](/docs/cloud-object-storage?topic=cloud-object-storage-archive) |
 | `Encryption of data at-rest with my own key` [5]      | Can I use my own key to encrypt data at-rest?                     | [Information about encryption of data at-rest](/docs/cloud-object-storage?topic=cloud-object-storage-encryption) |
 | `Data resiliency` [6]                                 | Do you need to store the data in a specific geographical location? | [Information about resiliency](/docs/cloud-object-storage/basics?topic=cloud-object-storage-endpoints) |
-{: caption="Table 5. COS bucket requirements" caption-side="top"}
+{: caption="COS bucket requirements" caption-side="top"}
 
 `[1]`: Data might sit untouched for long periods of time. For less active workloads, you can create buckets with different storage classes. For example, use the standard storage class for active workloads, where you need to access data at any time.
 
@@ -477,7 +477,7 @@ Use the following table to help you identify the features that you should consid
 | `Retention policy`                           | ![Checkmark icon](../images/checkmark-icon.svg) | ![Checkmark icon](../images/checkmark-icon.svg) | ![Checkmark icon](../images/checkmark-icon.svg) | ![Checkmark icon](../images/checkmark-icon.svg) |
 | `Expiration policy`                          | ![Checkmark icon](../images/checkmark-icon.svg) | ![Checkmark icon](../images/checkmark-icon.svg) | ![Checkmark icon](../images/checkmark-icon.svg) | ![Checkmark icon](../images/checkmark-icon.svg) |
 | `Long-term retention policy`                 | `NO`                            | `NO`                        | `NO`                             | `NO`                         |
-{: caption="Table 6. Disaster recovery or compliance requirements" caption-side="top"}
+{: caption="Disaster recovery or compliance requirements" caption-side="top"}
 {: #archive-table-4}
 {: tab-title="Disaster Recovery or compliance requirements"}
 {: tab-group="archive"}
@@ -491,7 +491,7 @@ Use the following table to help you identify the features that you should consid
 | `Retention policy`                           | ![Checkmark icon](../images/checkmark-icon.svg) | ![Checkmark icon](../images/checkmark-icon.svg) | ![Checkmark icon](../images/checkmark-icon.svg) | ![Checkmark icon](../images/checkmark-icon.svg) |
 | `Expiration policy`                          | ![Checkmark icon](../images/checkmark-icon.svg) | ![Checkmark icon](../images/checkmark-icon.svg) | ![Checkmark icon](../images/checkmark-icon.svg) | ![Checkmark icon](../images/checkmark-icon.svg) |
 | `Long-term retention policy`                 | `NO`                            | `NO`                        | `NO`                             | `NO`                         |
-{: caption="Table 7. Backup or access to data beyond the service plan days requirements" caption-side="top"}
+{: caption="Backup or access to data beyond the service plan days requirements" caption-side="top"}
 {: #archive-table-5}
 {: tab-title="Backup or access to data beyond the service plan days requirements"}
 {: tab-group="archive"}
@@ -535,7 +535,7 @@ If you need to use your own key to encrypt the data at-rest in a bucket, use the
 | `Retention policy` [15]                      | `NO`                            | `NO`                        | `NO`                             | `NO`                         |
 | `Expiration policy`                          | ![Checkmark icon](../images/checkmark-icon.svg) | ![Checkmark icon](../images/checkmark-icon.svg) | ![Checkmark icon](../images/checkmark-icon.svg) | ![Checkmark icon](../images/checkmark-icon.svg) |
 | `Long-term retention policy`                 | `NO`                            | `NO`                        | `NO`                             | `NO`                         |
-{: caption="Table 8. Use your own encryption key" caption-side="top"}
+{: caption="Use your own encryption key" caption-side="top"}
 
 `[15]`: Currently, you cannot use your own key with a bucket that has a retention policy configured.
 

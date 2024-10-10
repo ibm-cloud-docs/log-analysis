@@ -37,7 +37,7 @@ Review the following sections for the specific responsibilities for you and for 
 | `Monitor logs collected by logging agents`   | Provide images and instructions for how to install logging agents in environments that you want to monitor, such as Kubernetes, Linux, Openshift. | [Install and configure logging agents](/docs/log-analysis?topic=log-analysis-config_agent_kube_cluster).  \n Monitor that the agents are running in your environment. |
 | `Archive logs`  | Provide the ablity to archive to a client configured Cloud Object Storage (COS) location and archive data hourly. | [Configure Cloud Object Storage per your requirements.](/docs/log-analysis?topic=log-analysis-archiving#archiving_step3)  \n [Enable archiving of the logging instance.](/docs/log-analysis?topic=log-analysis-archiving) |
 | `Configuring exclusion rules for {{site.data.keyword.atracker_short}} hosted event search offerings` |  | Verify that each exclusion rule that you add behaves as expected. Inproper configured exclusion rules can result in data and cost spikes. For more information on how to use exclusion rules, see [Excluding data by using exclusion rules](/docs/log-analysis?topic=log-analysis-exclusion_rules), [Configuring conditional streaming](/docs/log-analysis?topic=log-analysis-streaming-conditional) and [Configuring usage quota exclusion rules](/docs/log-analysis?topic=log-analysis-control_usage_quotas#rules_usage_quota). |
-{: caption="Table 1. Responsibilities for incident and operations" caption-side="top"}
+{: caption="Responsibilities for incident and operations" caption-side="top"}
 
 
 
@@ -51,7 +51,7 @@ Review the following sections for the specific responsibilities for you and for 
 |---------------------------------------------------------|-----------------------|--------|
 | `Update the {{site.data.keyword.la_full_notm}} service` | Provide major, minor, and patch version updates for {{site.data.keyword.la_full_notm}} interfaces.  \n Document changes in the [logging release notes](https://docs.mezmo.com/changelog){: external} | Ensure that any logging agents that you have deployed are kept current. |
 | `Track versions of custom views, dashboards, screens, parsing templates, and alerts`    | `N/A` | Use your own change management process to control versions of logging resources such as views, dashboards, screens, parsing templates, and alerts`.  \n To learn how to export metadata, see [Export the configuration of resources in a logging instance](/docs/log-analysis?topic=log-analysis-reuse_resource_definitions#export_config_res).|
-{: caption="Table 2. Responsibilities for change management" caption-side="top"}
+{: caption="Responsibilities for change management" caption-side="top"}
 
 
 ## Identity and access management
@@ -62,7 +62,7 @@ Review the following sections for the specific responsibilities for you and for 
 |--------------------------------|-------------------------------------------------|-----------------------|
 | `Manage permissions`           | Provide the ability to restrict access to resouces.  \n {{site.data.keyword.IBM_notm}} is responsible for the security and compliance of {{site.data.keyword.la_full_notm}}. | Restrict access to resources by using Cloud IAM access policies by defining IAM policies to control which users within your account have access to the logging data.  \n [Learn more about controlling access through IAM](/docs/log-analysis?topic=log-analysis-work_iam)
 . |
-{: caption="Table 3. Responsibilities for identity and access management" caption-side="top"}
+{: caption="Responsibilities for identity and access management" caption-side="top"}
 
 
 
@@ -75,7 +75,7 @@ Review the following sections for the specific responsibilities for you and for 
 | Task                                       | {{site.data.keyword.IBM_notm}} Responsibilities | Your Responsibilities |
 |--------------------------------------------|-------------------------------------------------|-----------------------|
 | `Meet security and compliance objectives`  | Maintain controls that are commensurate to various industry compliance standards such as SOC2, PCI, HIPAA and Privacy Shield. For more information, see [Securing your data](/docs/log-analysis?topic=log-analysis-mng-data) | Set up and maintain security and regulation compliance for your apps and data.  This includes:  \n [Defining the account management strategy](/docs/log-analysis?topic=log-analysis-adoption#adoption_account)  \n [Configuring the accounts settings for compliance](/docs/log-analysis?topic=log-analysis-adoption#adoption_acc_settings)  \n Define IAM Strategy  \n [Define the notification strategy](/docs/log-analysis?topic=log-analysis-adoption#adoption_alerts) \n Ensure encryption of archived data by configuring a COS bucket that has full control over the data encryption keys that are used. [{{site.data.keyword.cos_full}} provides several options to encrypt your data.](/docs/cloud-object-storage?topic=cloud-object-storage-encryption) |
-{: caption="Table 4. Responsibilities for security and regulation compliance" caption-side="top"}
+{: caption="Responsibilities for security and regulation compliance" caption-side="top"}
 
 
 ## Disaster recovery
@@ -91,7 +91,7 @@ Review the following sections for the specific responsibilities for you and for 
 | `Backup the metadata of a logging instance`                          | Backup metadata that is used by the service.  | [Backup the metadata such as views, dashboards, screens, parsing templates, and alerts for each logging instance.](/docs/log-analysis?topic=log-analysis-reuse_resource_definitions#export_config_res) |
 | `Restore the metadata of a logging instance`                         | Restore metadata that is used by the service. | [Restore the metadata such as views, dashboards, screens, parsing templates, and alerts for each logging instance.](/docs/log-analysis?topic=log-analysis-reuse_resource_definitions#import_config) |
 | `Backup of the data` | `N/A` | [Configure archiving to retain a backup copy of the data.](/docs/log-analysis?topic=log-analysis-archiving) |
-{: caption="Table 5. Responsibilities for disaster recovery" caption-side="top"}
+{: caption="Responsibilities for disaster recovery" caption-side="top"}
 
 
 `[*]` Recovered and restarted service components will not have customer data reloaded.

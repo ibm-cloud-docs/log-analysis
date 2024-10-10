@@ -87,7 +87,7 @@ Use the following table to identify the platform role that you can grant a user 
 | `Create a service ID`                                                     | ![Check mark icon](images/checkmark-icon.svg "Check mark icon indicating correct usage")  | ![Check mark icon](images/checkmark-icon.svg "Check mark icon indicating correct usage")    |        |      |
 | `View details of a service instance`                                      | ![Check mark icon](images/checkmark-icon.svg "Check mark icon indicating correct usage")  | ![Check mark icon](images/checkmark-icon.svg "Check mark icon indicating correct usage")    | ![Check mark icon](images/checkmark-icon.svg "Check mark icon indicating correct usage")      | ![Check mark icon](images/checkmark-icon.svg "Check mark icon indicating correct usage")    |
 | `View service instances in the Observability Logging dashboard`           | ![Check mark icon](images/checkmark-icon.svg "Check mark icon indicating correct usage")  | ![Check mark icon](images/checkmark-icon.svg "Check mark icon indicating correct usage")    | ![Check mark icon](images/checkmark-icon.svg "Check mark icon indicating correct usage")      | ![Check mark icon](images/checkmark-icon.svg "Check mark icon indicating correct usage")    |
-{: caption="Table 1. IAM user platform roles and actions" caption-side="top"}
+{: caption="IAM user platform roles and actions" caption-side="top"}
 
 
 ## {{site.data.keyword.cloud_notm}} service roles
@@ -121,7 +121,7 @@ Use the following table to identify the service roles that you can grant a user 
 | `Use views to monitor logs`                                           | ![Check mark icon](images/checkmark-icon.svg "Check mark icon indicating correct usage")      | ![Check mark icon](images/checkmark-icon.svg "Check mark icon indicating correct usage")                    | ![Check mark icon](images/checkmark-icon.svg "Check mark icon indicating correct usage")    |
 | `Use dashboards to monitor logs`                                      | ![Check mark icon](images/checkmark-icon.svg "Check mark icon indicating correct usage")      | ![Check mark icon](images/checkmark-icon.svg "Check mark icon indicating correct usage")                    | ![Check mark icon](images/checkmark-icon.svg "Check mark icon indicating correct usage")    |
 | `Use screens to monitor logs`                                      | ![Check mark icon](images/checkmark-icon.svg "Check mark icon indicating correct usage")      | ![Check mark icon](images/checkmark-icon.svg "Check mark icon indicating correct usage")                    | ![Check mark icon](images/checkmark-icon.svg "Check mark icon indicating correct usage")    |
-{: caption="Table 2. IAM service roles and actions" caption-side="top"}
+{: caption="IAM service roles and actions" caption-side="top"}
 
 
 The **manager** service role maps directly to the logging admin role.
@@ -140,7 +140,7 @@ The following table identifies the IAM actions that are assigned to the platform
 | Service           | `manager`         | `logdna.dashboard.view`  \n `logdna.dashboard.manage` |
 | Service           | `writer`          | `logdna.dashboard.view`  \n `logdna.dashboard.member` |
 | Service           | `reader`          | `logdna.dashboard.view`  \n `logdna.dashboard.read` |
-{: caption="Table 3. IAM actions assigned to platform and service roles" caption-side="top"}
+{: caption="IAM actions assigned to platform and service roles" caption-side="top"}
 
 
 

@@ -5,7 +5,7 @@ toc:
     version: 2
     category: logging_monitoring
     audience: service
-    href: /docs/log-analysis?topic=log-analysis-getting-started#getting-started
+    href: /docs/log-analysis
     console-page: /observe/logging
     product-page: https://www.ibm.com/cloud/log-analysis
     path: log-analysis

@@ -37,7 +37,7 @@ Account management role                                            | Required to
 Administrator platform role                                        | Required to manage the service
 Manager service role                                               | Required to manage groups
 Platform role viewer, service role reader, or standard member      | Required to launch the logging instance
-{: caption="Table 1. Roles required for groups" caption-side="top"}
+{: caption="Roles required for groups" caption-side="top"}
 
 User roles defining permissions and access to manage auditing events are defined in {{site.data.keyword.iamlong}}.
 
@@ -122,7 +122,7 @@ Example Query              | Behavior                          | Example Matches
 `level:[warning,error]`    | Case-insensitive list of prefixes | warning, Warning, Warnings, error, ERROR, errors
 `level:===[warning,error]` | Case-sensitive list of prefixes   | warning, error
 `level:*`                  | Matches if the field exists       | All lines containing the field `level`
-{: caption="Table 2. Example access scope search queries" caption-side="top"}
+{: caption="Example access scope search queries" caption-side="top"}
 
 For example, if you have two apps (`myapp` and `myapp1`), then a service group with an access scope of  `app:myapp` will allow access to data from both apps. If the access scope is `app:===myapp`, then users in the group will only be able to access data from the `myapp` app.
 

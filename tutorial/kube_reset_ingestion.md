@@ -48,7 +48,7 @@ To complete the steps in this tutorial, your {{site.data.keyword.IBM_notm}}ID mu
 | Resource group **Default**           |  Resource group            | Viewer  | us-south  | This policy is required to allow the user to see service instances in the Default resource group.    |
 | {{site.data.keyword.la_full_notm}} service |  Resource group            | Editor  \n Manager  | us-south  | This policy is required to allow the user to reset the ingestion key.   |
 | Kubernetes cluster instance          |  Resource                  | Editor  | us-south  | This policy is required to delete and configure the secret and the logging agent in the Kubernetes cluster. |
-{: caption="Table 1. List of IAM policies required to complete the tutorial" caption-side="top"}
+{: caption="List of IAM policies required to complete the tutorial" caption-side="top"}
 
 For more information about the {{site.data.keyword.containerlong}} IAM roles, see [User access permissions](/docs/containers?topic=containers-access_reference#access_reference).
 

@@ -29,7 +29,7 @@ Review the following sample architecture for {{site.data.keyword.la_full_notm}},
 {{site.data.keyword.la_full_notm}} is a multi-tenant, regional service that is available in {{site.data.keyword.cloud_notm}}. You can use it to monitor your applications, platform resources, and infrastructure.
 
 
-![{{site.data.keyword.la_full_notm}}](../images/Log-Analysis-01-Architecture.svg "{{site.data.keyword.la_full_notm}} high level architecture"){: caption="Figure 1. Example services integration scenario." caption-side="bottom"}"
+![{{site.data.keyword.la_full_notm}}](../images/Log-Analysis-01-Architecture.svg "{{site.data.keyword.la_full_notm}} high level architecture"){: caption="Example services integration scenario." caption-side="bottom"}"
 
 The API server component provides a web and an API interface to the logging service.
 

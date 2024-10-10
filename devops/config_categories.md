@@ -41,7 +41,7 @@ The following table outlines the actions that you can run to manage categories p
 | Get information about a category               | `GET`    | `<ENDPOINT>/v1/config/categories/<TYPE>/<ID>` |
 | Modify a catagory                              | `PUT`    | `<ENDPOINT>/v1/config/categories/<TYPE>/<ID>` |
 | Delete a category                              | `DELETE` | `<ENDPOINT>/v1/config/categories/<TYPE>/<ID>` |
-{: caption="Table 1. Actions to manage categories" caption-side="top"}
+{: caption="Actions to manage categories" caption-side="top"}
 
 Where `<TYPE>` defines the type of category. Valid values are `views`, `boards`, or `screens`.
 
@@ -107,7 +107,7 @@ The following table indicates when the `name` parameter is required:
 | ----------------------------------------------------------------------|----------|--------------------------------------|
 | Create a new category for a given type.                          | `POST`   | ![Check mark icon](../images/checkmark-icon.svg "Check mark icon indicating required")|
 | Modify a category | `UPDATE`    | ![Check mark icon](../images/checkmark-icon.svg "Check mark icon indicating required")|
-{: caption="Table 2. Required status per method" caption-side="top"}
+{: caption="Required status per method" caption-side="top"}
 
 
 ## Examples of using the categories configuration API

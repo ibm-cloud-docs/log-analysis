@@ -79,7 +79,7 @@ Choose a source for your log data. Then, complete the steps:
 | Standard Kubernetes cluster | [Collecting and analyzing logs from a Kubernetes cluster](/docs/log-analysis?topic=log-analysis-kube#kube) |
 | Linux | [Collecting and analyzing logs from a Linux environment](/docs/log-analysis?topic=log-analysis-ubuntu#ubuntu) |
 | Windows Server | [Collecting and analyzing logs from Windows Server systems](/docs/log-analysis?topic=log-analysis-windows_serv) |
-{: caption="Table 1. Tutorials to get started working with the {{site.data.keyword.la_full_notm}} service" caption-side="top"}
+{: caption="Tutorials to get started working with the {{site.data.keyword.la_full_notm}} service" caption-side="top"}
 
 
 ## Step 3. Upgrade the plan

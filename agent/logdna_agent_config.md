@@ -51,7 +51,7 @@ You can customize a logging agent by configuring parameters for Linux agents, or
 | `LOGDNA_METRICS_PORT` | `log.metrics_port` | Port number to expose Prometheus metrics for the agent. |  |  |
 | `LOGDNA_LOG_K8S_EVENTS` |  | Boolean that defines if Kubernetes resource events are logged. | | |
 | `LOGDNA_USE_K8S_LOG_ENRICHMENT` |  | Set to enrich log lines from other pods by allowing the agent to query the K8s API. | `always` | Valid values are: `always`, `never` |
-{: caption="Table 4. Tags that are available for the logging agent V2" caption-side="top"}
+{: caption="Tags that are available for the logging agent V2" caption-side="top"}
 
 
 ## Environment variables for the V2 logging agent
@@ -76,7 +76,7 @@ You can customize a logging agent by configuring parameters for Linux agents, or
 | `LOGDNA_USE_COMPRESSION`  | Boolean that defines whether compression is enabled when the agent sends logs to the logging instance.  \n  The default value is set to `true`. | `true` | `true` |
 | `LOGDNA_GZIP_LEVEL`       | Compression level for gzip.  \n Valid values are: `1`, `2`, `3`, `4`, `5`, `6`, `7`, `8`, `9`  \n When you set this variable to `1`, you are configuring the agent to use the fastest compression speed but at a lower ratio. When you set this variable to `9`, you are configuring the agent to use the highest compression ratio but at a lower speed.  | `2` | `6` |
 | `LOGDNA_TAGS` | Define tags to group hosts automatically into dynamic groups. |  | `production,serviceA` |
-{: caption="Table 5. Tags that are available for the logging agent V2" caption-side="top"}
+{: caption="Tags that are available for the logging agent V2" caption-side="top"}
 
 ## Standard Kubernetes clusters: environment variables for the V1 logging agent
 {: #log_analysis_dna_agent_configure_std_kube_v1}
@@ -99,7 +99,7 @@ You can customize a logging agent by configuring parameters for Linux agents, or
 | `COMPRESS` | Boolean that defines whether compression is enabled when the agent sends logs to the logging instance.  \n  The default value is set to `true`. | `true` | `true` |
 | `GZIP_COMPRESS_LEVEL` | Compression level for gzip.  \n Valid values are: `1`, `2`, `3`, `4`, `5`, `6`, `7`, `8`, `9`  \n When you set this variable to `1`, you are configuring the agent to use the fastest compression speed but at a lower ratio. When you set this variable to `9`, you are configuring the agent to use the highest compression ratio but at a lower speed.  | `2` | `6` |
 | `LOGDNA_TAGS` | Define tags to group hosts automatically into dynamic groups. |  | `production,serviceA`  |
-{: caption="Table 6. Tags that are available for the logging agent V2" caption-side="top"}
+{: caption="Tags that are available for the logging agent V2" caption-side="top"}
 
 ### Linux: configuration parameters for V1 logging agent
 {: #log_analysis_agent_configure_linux_v1}
@@ -112,7 +112,7 @@ You can customize a logging agent by configuring parameters for Linux agents, or
 | `exclude_regex` | Define regex patterns to filter out any lines that match the pattern. Do not include leading and trailing `/`. |
 | `hostname` | Define the hostname. This value overrides the operating system hostname. |
 | `autoupdate` | Set to `1` to update the agent automatically when the public repo agent definition is updated. Set to `0` to disable this feature. |
-{: caption="Table 7. Configuration options for the logging agent V1" caption-side="top"}
+{: caption="Configuration options for the logging agent V1" caption-side="top"}
 
 
 ## Configuring tags to group data
@@ -128,7 +128,7 @@ You can configure tags at the agent level so that all lines that are sent by thi
 |--------------------------------|------------------------------|
 | `Kubernetes cluster`           | [Adding tags to logs from a Kubernetes cluster](/docs/log-analysis?topic=log-analysis-adding_tags#adding_tags_kube) |
 | `Linux Ubuntu or Debian`       | [Adding tags to logs from Linux Ubuntu or Debian](/docs/log-analysis?topic=log-analysis-adding_tags#adding_tags_linux) |
-{: caption="Table 8. Adding tags" caption-side="top"}
+{: caption="Adding tags" caption-side="top"}
 
 
 ### Exclude log files that are monitored by the agent

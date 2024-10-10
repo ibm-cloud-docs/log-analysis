@@ -43,7 +43,7 @@ On the {{site.data.keyword.cloud_notm}}, configure your Windows client to forwar
 2. Configure NXLog on the Windows system.
 3. Optionally, add additional directories to be monitored by the agent.
 
-![Component overview on the {{site.data.keyword.cloud_notm}}](../images/Log-Analysis-04-Windows.svg "Component overview on the {{site.data.keyword.cloud_notm}}"){: caption="Figure 1. Component overview" caption-side="bottom"}
+![Component overview on the {{site.data.keyword.cloud_notm}}](../images/Log-Analysis-04-Windows.svg "Component overview on the {{site.data.keyword.cloud_notm}}"){: caption="Component overview" caption-side="bottom"}
 
 In this tutorial, you will learn how to configure a Windows client system to forward logs to an {{site.data.keyword.la_full_notm}} instance.
 

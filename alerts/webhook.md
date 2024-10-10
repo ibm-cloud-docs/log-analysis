@@ -64,7 +64,7 @@ When you [configure an alert](/docs/log-analysis?topic=log-analysis-alerts) you 
     | `{{ line }}` | Text from the first matched line |
     | `{{ line_objects }}` | Array of line objects |
     | `{{ first_line_object }}` | First matched line object |
-    {: caption="Table 1. JSON tokens" caption-side="bottom"}
+    {: caption="JSON tokens" caption-side="bottom"}
 
      You can use dot or bracket notation to access array indexes and object properties.  For example, `{{ line_objects[0] }}` or `{{ first_line_object._line }}`.
      {: tip}

@@ -32,7 +32,7 @@ Before you start, check that your user ID has permissions to launch the web UI a
 | Platform role: `viewer`     | Allows the user to view the list of service instances in the Observability dashboard. |
 | Service role: `reader`      | Allows the user to launch the web UI and view events in the web UI.  |
 | Service role: `standard-member`      | Allows the user save a view based on a search.  |
-{: caption="Table 1. IAM roles" caption-side="top"}
+{: caption="IAM roles" caption-side="top"}
 
 For more information on how to configure policies for a user, see [Granting user permissions to a user or service ID](/docs/services/log-analysis?topic=log-analysis-iam_view_events#iam_view_events).
 
@@ -62,7 +62,7 @@ You can only search logs for the number of days that is specified through the in
 
 If you are searching for Windows logs, you must use double slashes (`//`) in the search query even though the console will show directories with single slashes.
 
-![Example search for Windows logs](images/windows-search.png "Example search for Windows logs"){: caption="Figure 1. Example search for Windows logs" caption-side="bottom"}
+![Example search for Windows logs](images/windows-search.png "Example search for Windows logs"){: caption="Example search for Windows logs" caption-side="bottom"}
 
 Complete the following steps:
 1. Enter a search query.
@@ -105,7 +105,7 @@ Valid values in ascending order of severity are shown in the following table.
 | `WARN` | A log entry providing information about an issue that might potentially indicate a problem. |
 | `ERROR`| A log entry indicating a problem with the operation of the service. |
 | `CRIT` | A log entry indicating a critial issue with the operation of the service. |
-{: caption="Table 2. Levels" caption-side="top"}
+{: caption="Levels" caption-side="top"}
 
 This is a list of possible values.  The actual available values will vary depending on the service or host generating the logs.
 {: important}
