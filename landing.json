@@ -1,0 +1,41 @@
+{
+    "version": 2,
+    "title": "IBM Log Analysis",
+    "introduction": "You can use IBM Log Analysis to manage operating system logs, application logs, and platform logs in the IBM Cloud. ",
+    "console_page": "/observe/logging",
+    "section_topics": {
+      "links": [
+        {
+            "title": "Deprecation of IBM Log Analysis and IBM Cloud Activity Tracker",
+            "href": "/docs/log-analysis?topic=log-analysis-deprecation"
+          },
+        {
+          "title": "Getting started with IBM Log Analysis",
+          "href": "/docs/log-analysis?topic=log-analysis-getting-started"
+        },
+        {
+          "title": "Managing access with IAM",
+          "href": "/docs/log-analysis?topic=log-analysis-iam"
+        },
+        {
+          "title": "Auditing events for IBM Log Analysis",
+          "href": "/docs/log-analysis?topic=log-analysis-at_events"
+        },
+        {
+          "title": "Understanding your responsibilities when using IBM Log Analysis",
+          "href": "/docs/log-analysis?topic=log-analysis-shared-responsibilities"
+        },
+        {
+          "title": "Frequently asked questions (FAQs)",
+          "href": "/docs/log-analysis?topic=log-analysis-faq"
+        }
+      ]
+    },
+    "section_devtools": {
+      "api": "/apidocs/log-analysis",
+      "cli": "/docs/log-analysis?topic=log-analysis-log-analysis-cli"
+    },
+    "section_updates": {
+      "view_more": "/docs/log-analysis?topic=log-analysis-log-analysis-release-notes"
+        }
+  }
