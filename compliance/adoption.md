@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2024
-lastupdated: "2024-05-24"
+lastupdated: "2024-10-29"
 
 keywords: IBM, Log Analysis, logging, regulated, highly available workloads
 
@@ -175,7 +175,7 @@ The service plan that you choose for a logging instance determines the number of
 **Choose your plan based on the number of days that you need to be able to search data online through the web UI.**
 {: tip}
 
-The HIPAA plan has a maximum of 25 users. If you need to grant permissions to more than 25 users, [open a support ticket](/docs/get-support).
+The HIPAA plan has a maximum of 25 users. If you need to grant permissions to more than 25 users, [open a support case](/docs/account?topic=account-open-case&interface=ui).
 
 
 ### Tags
@@ -351,7 +351,7 @@ Consider the following limitations:
 **If you have an additional firewall set up, or you have customized the firewall settings in your {{site.data.keyword.cloud_notm}} infrastructure, you must allow outgoing network traffic to the {{site.data.keyword.la_full_notm}} service on TCP port 443 and TCP port 80 in your firewall. The API endpoint is required for logging agent authentication.**
 {: tip}
 
-If you have an additional firewall set up, or you have customized the firewall settings in your {{site.data.keyword.cloud_notm}} infrastructure, and you want to configure the logging agent to connect to the logging instance through the private network, open a support ticket to request the private IP addresses that you must enable in your firewall. For information about opening an IBM support ticket, see [Getting support](/docs/get-support).
+If you have an additional firewall set up, or you have customized the firewall settings in your {{site.data.keyword.cloud_notm}} infrastructure, and you want to configure the logging agent to connect to the logging instance through the private network, open a support ticket to request the private IP addresses that you must enable in your firewall. For information about opening an IBM support ticket, see [Creating support cases](/docs/account?topic=account-open-case&interface=ui).
 {: tip}
 
 

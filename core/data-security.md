@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2024
-lastupdated: "2024-05-24"
+lastupdated: "2024-10-29"
 
 keywords: IBM, Log Analysis, logging, overview, personal data, data deletion, PHI, data, data security, log-analysis
 
@@ -121,7 +121,7 @@ You are responsible for deleting archived logs.
 
 When you delete a logging instance, user metadata such as views, alerts, dashboards, screens, and templates, is never deleted.
 
-You must open a case through support to request the data to be deleted. For more information, see [Open a support ticket](/docs/get-support).
+You must open a case through support to request the data to be deleted. For more information, see [Creating support cases](/docs/account?topic=account-open-case&interface=ui).
 
 You are responsible for deleting archived metadata.
 

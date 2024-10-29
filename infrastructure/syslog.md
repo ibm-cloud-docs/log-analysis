@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2024
-lastupdated: "2024-05-24"
+lastupdated: "2024-10-29"
 
 keywords: IBM, Log Analysis, logging, ingestion, python
 
@@ -28,7 +28,7 @@ You can send logs to an {{site.data.keyword.la_full_notm}} instance via Syslog. 
 
 {{../_include-segments/deprecation_notice.md}}
 
-To use a custom port to send logs via UDP, you can open an IBM support ticket. For information about opening an IBM support ticket, or about support levels and ticket severities, see [Getting support](/docs/get-support).
+To use a custom port to send logs via UDP, you can open an IBM support ticket. For information about opening an IBM support ticket, or about support levels and ticket severities, see [Creating support cases](/docs/account?topic=account-open-case&interface=ui).
 {: note}
 
 To configure syslog, you may need to enable a port to send logs via syslog to your logging instance. If you are using (a) the classic syslog protocol, (b) a custom port in `syslog-ng`, or (c) a custom port in `rsyslog`, there is no authentication available and anyone with knowledge of the endpoint can submit logs to your instance. As a result, depending on your environment, your use of the classic syslog protocol or custom port configurations with `syslog-ng` or `rsyslog` may present a significant security risk.  Use these configurations at your organization's own risk.  Validate with your compliance and security teams whether this security risk is acceptable to your organization.

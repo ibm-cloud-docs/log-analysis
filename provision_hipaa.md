@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2024
-lastupdated: "2024-05-24"
+lastupdated: "2024-10-29"
 
 keywords: IBM, Log Analysis, logging, overview
 
@@ -47,7 +47,7 @@ Accounts that enable the **HIPAA Supported setting** still have access to the fu
 ## Step 2. Provision your {{site.data.keyword.la_full_notm}} instances with the HIPAA service plan
 {: #compliance_hipaa_provision}
 
-The HIPAA plan allows a maximum of 25 team members per instance. If you need to grant permissions to more than 25 users, [open a support ticket](/docs/get-support).
+The HIPAA plan allows a maximum of 25 team members per instance. If you need to grant permissions to more than 25 users, [open a support case](/docs/account?topic=account-open-case&interface=ui).
 {: note}
 
 
