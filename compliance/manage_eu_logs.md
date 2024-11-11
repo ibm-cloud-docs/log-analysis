@@ -150,7 +150,7 @@ To learn how to configure archiving for your logging instance, see [Archiving lo
 
 You can use this service to analyze data from logging archived files in COS.
 
-Once you have the {{site.data.keyword.sqlquery_short}} service running on IBM Cloud, you can immediately start querying your data using the SQL Query user interface, programmatically by using either the REST API or the Python `ibmcloudsql` library, or write a serverless function by using {{site.data.keyword.openwhisk_short}}.
+Once you have the {{site.data.keyword.sqlquery_short}} service running on IBM Cloud, you can immediately start querying your data using the SQL Query user interface, programmatically by using either the REST API or the Python `ibmcloudsql` library.
 
 When you query logs, consider the following information:
 * You must provision an instance of the {{site.data.keyword.sqlquery_short}} service in Frankfurt.

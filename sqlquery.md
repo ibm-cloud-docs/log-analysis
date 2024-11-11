@@ -28,7 +28,7 @@ Each {{site.data.keyword.la_short}} instance has a service plan associated that 
 - The file name includes the ID of your {{site.data.keyword.la_short}} instance and the date of the records that are included in the file.
 - You can archive logging data to a COS bucket that is available in the same account or in a different account in {{site.data.keyword.cloud_notm}}.
 
-Once you have the {{site.data.keyword.sqlquery_short}} service running on {{site.data.keyword.cloud_notm}}, you can immediately start querying your data using the SQL Query user interface, programmatically by using either the REST API or the Python `ibmcloudsql` library, or write a serverless function by using {{site.data.keyword.openwhisk_short}}.
+Once you have the {{site.data.keyword.sqlquery_short}} service running on {{site.data.keyword.cloud_notm}}, you can immediately start querying your data using the SQL Query user interface, programmatically by using either the REST API or the Python `ibmcloudsql` library.
 
 When you query logs, consider the following information:
 * You must provision an instance of the {{site.data.keyword.sqlquery_short}} service.
@@ -317,7 +317,7 @@ To manage logs that are generated in your **EU-supported account** by using the 
 
 You can use this service to analyze data from logging archived files in COS.
 
-Once you have the {{site.data.keyword.sqlquery_short}} service running on IBM Cloud, you can immediately start querying your data using the SQL Query user interface, programmatically by using either the REST API or the Python `ibmcloudsql` library, or write a serverless function by using {{site.data.keyword.openwhisk_short}}.
+Once you have the {{site.data.keyword.sqlquery_short}} service running on IBM Cloud, you can immediately start querying your data using the SQL Query user interface, programmatically by using either the REST API or the Python `ibmcloudsql` library.
 
 When you query logs, consider the following information:
 * You must provision an instance of the {{site.data.keyword.sqlquery_short}} service in Frankfurt.
