@@ -2,7 +2,7 @@
 
 copyright:
   years: 2022, 2024
-lastupdated: "2024-05-24"
+lastupdated: "2024-11-13"
 
 keywords:
 
@@ -86,7 +86,7 @@ of the target region.
 
 3. Make sure your {{site.data.keyword.la_full_notm}} deployment's [private endpoint is enabled](/docs/log-analysis?topic=log-analysis-endpoints).
 
-4. In the {{site.data.keyword.cloud_notm}} console, click the menu icon and select **VPC** > **Infrastructure** > **Network** > **Virtual private endpoint gateways**. Create a VPE for your {{site.data.keyword.la_full_notm}} instances with the [following instruction](/docs/vpc?topic=vpc-about-vpe). 
+4. In the {{site.data.keyword.cloud_notm}} console, click the menu icon and select **Infrastructure > VPC Layout > Network > Virtual private endpoint gateways**. Create a VPE for your {{site.data.keyword.la_full_notm}} instances with the [following instruction](/docs/vpc?topic=vpc-about-vpe). 
 
 5. After you create your VPE, it might take a few minutes for the new VPE and pDNS to complete the process and begin working for your VPC. Completion is confirmed when you see an IP address set in the [details view](/docs/vpc?topic=vpc-vpe-viewing-details-of-an-endpoint-gateway) of the VPE. 
 
