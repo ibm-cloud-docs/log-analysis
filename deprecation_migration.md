@@ -21,8 +21,8 @@ The {{site.data.keyword.logs_full}} migration tool is a command line tool that y
 For full details about the migration process and tooling, see the [{{site.data.keyword.logs_full_notm}} documentation](/docs/cloud-logs), especially the topics in these sections:
 
 * [Migrating to {{site.data.keyword.logs_full_notm}}](/docs/cloud-logs?topic=cloud-logs-migration-intro) and the planning templates.
-* [Migration tool](/docs/cloud-logs?topic=cloud-logs-migration-tool).
-* The migrating topics required for your environment. For example, [Migrating instances](/docs/cloud-logs?topic=cloud-logs-migration-instance).
+* [Migration CLI](/docs/cloud-logs?topic=cloud-logs-migration_cli).
+* The migrating topics required for your environment. For example, [Migrating instance resources](/docs/cloud-logs?topic=cloud-logs-migration-instance-resources).
 
 
 {{_include-segments/deprecation_notice.md}}
