@@ -22,6 +22,9 @@ When you provision an instance of the {{site.data.keyword.la_full_notm}} service
 
 {{_include-segments/deprecation_notice.md}}
 
+{{site.data.keyword.la_full_notm}} ended marketing on 30 November 2024. You can no longer change service plans for existing {{site.data.keyword.la_full_notm}} instances.
+{: deprecated}
+
 [Learn more about service plans](/docs/log-analysis?topic=log-analysis-service_plans).
 
 ## Changing the service plan through the Observability dashboard
