@@ -2,7 +2,7 @@
 
 copyright:
   years:  2018, 2024
-lastupdated: "2024-05-24"
+lastupdated: "2024-12-10"
 
 keywords: IBM, Log Analysis, logging, service plan
 
