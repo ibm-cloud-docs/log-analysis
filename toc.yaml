@@ -252,6 +252,7 @@ toc:
             navtitle: Working with logs before a region is available
           - topic: manage-logs-to-new-region.md
             navtitle: Working with logs after a region is open for business
+      - move_region.md
       - core/ha_dr_steps.md
   - navgroup:
       id: reference
