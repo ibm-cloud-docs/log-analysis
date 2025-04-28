@@ -3,7 +3,6 @@ toc:
     subcollection: log-analysis
     service-name: logdna
     version: 2
-    category: logging_monitoring
     audience: service
     href: /docs/log-analysis
     console-page: /observe/logging
